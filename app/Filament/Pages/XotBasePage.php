@@ -258,7 +258,10 @@ abstract class XotBasePage extends Page implements HasForms
         }
 
         // Use method_exists to safely call hasPermissionTo
-        return $user->hasPermissionTo($permission);
+        /** @var bool $result */
+        $result = $user->hasPermissionTo($permission);
+
+        return $result;
     }
 
     /**
