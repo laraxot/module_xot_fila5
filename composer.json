@@ -73,11 +73,7 @@
         "nunomaduro/collision": "^8.6",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",
-<<<<<<< Updated upstream
-        
         "pestphp/pest-plugin-type-coverage": "*",
-=======
->>>>>>> Stashed changes
         "thecodingmachine/phpstan-safe-rule": "*",
         "nunomaduro/phpinsights": "*"
     },
@@ -90,7 +86,6 @@
         {
             "type": "path",
             "url": "../Tenant"
-<<<<<<< Updated upstream
         },
         {
             "type": "path",
@@ -100,8 +95,6 @@
             "type": "composer",
             "url": "https://packagist.org",
             "canonical": false
-=======
->>>>>>> Stashed changes
         }
     ],
     "autoload": {
