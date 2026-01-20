@@ -1,5 +1,6 @@
 # Analisi DRY e KISS - Architettura Modelli
 
+**Data**: 2025-10-15
 **Autore**: Claude Code Analysis
 **Obiettivo**: Identificare duplicazioni e complessità per rendere l'architettura più DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid)
 
@@ -38,15 +39,7 @@ abstract class BaseModel extends XotBaseModel {
 
 **Moduli analizzati**:
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
-<<<<<<< .merge_file_3qfri1
-- healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
-=======
-<<<<<<< HEAD
-- ModuloEsempio: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
-=======
-- ExternalProject: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+- Quaeris: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -90,21 +83,9 @@ protected function casts(): array {
 
 **Violazione DRY**: Cms e altri moduli ridichiarano casts già presenti nel parent
 
-<<<<<<< .merge_file_3qfri1
-### 4. **healthcare_app BaseModel - Pattern Anomalo**
+### 4. **Quaeris BaseModel - Pattern Anomalo**
 
-**Problema Critico**: `Modules\healthcare_app\Models\BaseModel` NON estende `XotBaseModel`:
-=======
-<<<<<<< HEAD
-### 4. **ModuloEsempio BaseModel - Pattern Anomalo**
-
-**Problema Critico**: `Modules\ModuloEsempio\Models\BaseModel` NON estende `XotBaseModel`:
-=======
-### 4. **ExternalProject BaseModel - Pattern Anomalo**
-
-**Problema Critico**: `Modules\ExternalProject\Models\BaseModel` NON estende `XotBaseModel`:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+**Problema Critico**: `Modules\Quaeris\Models\BaseModel` NON estende `XotBaseModel`:
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -115,11 +96,7 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia {
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_3qfri1
-    protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_PmbTJN
+    protected $connection = 'quaeris';
     protected $casts = ['published_at' => 'datetime', ...]; // Array invece di metodo
     // ... Ridefinisce tutto manualmente
 }
@@ -141,15 +118,7 @@ use HasXotFactory;
 use RelationX;
 use Updater;
 
-<<<<<<< .merge_file_3qfri1
-// healthcare_app/BaseModel duplica Updater:
-=======
-<<<<<<< HEAD
-// ModuloEsempio/BaseModel duplica Updater:
-=======
-// ExternalProject/BaseModel duplica Updater:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+// Quaeris/BaseModel duplica Updater:
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -195,33 +164,13 @@ abstract class XotBaseModel extends Model {
 - Serve aggiungere traits specifici (es: Notify → InteractsWithMedia)
 - Serve override di casts specifici (es: User → verified_at)
 
-<<<<<<< .merge_file_3qfri1
-### Soluzione 2: Correggere healthcare_app/BaseModel
+### Soluzione 2: Correggere Quaeris/BaseModel
 
-**Obiettivo**: Allineare healthcare_app all'architettura standard
-
-**Implementazione**:
-```php
-// Modules/healthcare_app/app/Models/BaseModel.php
-=======
-<<<<<<< HEAD
-### Soluzione 2: Correggere ModuloEsempio/BaseModel
-
-**Obiettivo**: Allineare ModuloEsempio all'architettura standard
+**Obiettivo**: Allineare Quaeris all'architettura standard
 
 **Implementazione**:
 ```php
-// Modules/ModuloEsempio/app/Models/BaseModel.php
-=======
-### Soluzione 2: Correggere ExternalProject/BaseModel
-
-**Obiettivo**: Allineare ExternalProject all'architettura standard
-
-**Implementazione**:
-```php
-// Modules/ExternalProject/app/Models/BaseModel.php
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+// Modules/Quaeris/app/Models/BaseModel.php
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -231,31 +180,13 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     use InteractsWithMedia;
     use HasExtraTrait;
 
-<<<<<<< .merge_file_3qfri1
-    protected $connection = 'healthcare_app'; // Auto-discovery se Soluzione 1 applicata
+    protected $connection = 'quaeris'; // Auto-discovery se Soluzione 1 applicata
 
-    protected $with = ['extra']; // Specifico healthcare_app
-
-    protected function casts(): array {
-        return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI healthcare_app, se necessari
-=======
-    protected $connection = 'modulo_esempio'; // Auto-discovery se Soluzione 1 applicata
-
-<<<<<<< HEAD
-    protected $with = ['extra']; // Specifico ModuloEsempio
+    protected $with = ['extra']; // Specifico Quaeris
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI ModuloEsempio, se necessari
-=======
-    protected $with = ['extra']; // Specifico ExternalProject
-
-    protected function casts(): array {
-        return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI ExternalProject, se necessari
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+            // Solo casts SPECIFICI Quaeris, se necessari
         ]);
     }
 }
@@ -348,15 +279,7 @@ Manutenibilità: +40%
 ## 🎯 Priorità di Implementazione
 
 ### 🔴 Priorità ALTA
-<<<<<<< .merge_file_3qfri1
-1. **Correggere healthcare_app/BaseModel** (non segue standard)
-=======
-<<<<<<< HEAD
-1. **Correggere ModuloEsempio/BaseModel** (non segue standard)
-=======
-1. **Correggere ExternalProject/BaseModel** (non segue standard)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+1. **Correggere Quaeris/BaseModel** (non segue standard)
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -372,18 +295,8 @@ Manutenibilità: +40%
 ### Fase 1: Auto-Discovery
 - `Modules/Xot/app/Models/XotBaseModel.php` (+15 righe)
 
-<<<<<<< .merge_file_3qfri1
-### Fase 2: Correzione healthcare_app
-- `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
-=======
-<<<<<<< HEAD
-### Fase 2: Correzione ModuloEsempio
-- `Modules/ModuloEsempio/app/Models/BaseModel.php` (refactor completo)
-=======
-### Fase 2: Correzione ExternalProject
-- `Modules/ExternalProject/app/Models/BaseModel.php` (refactor completo)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+### Fase 2: Correzione Quaeris
+- `Modules/Quaeris/app/Models/BaseModel.php` (refactor completo)
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -396,32 +309,14 @@ Manutenibilità: +40%
 ### Fase 4: Documentazione
 - `Modules/Xot/docs/models/MODEL_ARCHITECTURE.md` (questa guida)
 - `Modules/User/docs/models/README.md`
-<<<<<<< .merge_file_3qfri1
-- `Modules/healthcare_app/docs/models/README.md`
-=======
-<<<<<<< HEAD
-- `Modules/ModuloEsempio/docs/models/README.md`
-=======
-- `Modules/ExternalProject/docs/models/README.md`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+- `Modules/Quaeris/docs/models/README.md`
 
 ## ✅ Checklist Implementazione
 
 - [ ] Implementare `getConnectionName()` in XotBaseModel
 - [ ] Testare auto-discovery con modello test
-<<<<<<< .merge_file_3qfri1
-- [ ] Correggere `Modules/healthcare_app/app/Models/BaseModel.php`
-- [ ] Testare modelli healthcare_app con nuova struttura
-=======
-<<<<<<< HEAD
-- [ ] Correggere `Modules/ModuloEsempio/app/Models/BaseModel.php`
-- [ ] Testare modelli ModuloEsempio con nuova struttura
-=======
-- [ ] Correggere `Modules/ExternalProject/app/Models/BaseModel.php`
-- [ ] Testare modelli ExternalProject con nuova struttura
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+- [ ] Correggere `Modules/Quaeris/app/Models/BaseModel.php`
+- [ ] Testare modelli Quaeris con nuova struttura
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -433,20 +328,12 @@ Manutenibilità: +40%
 - [Laravel Model Connections](https://laravel.com/docs/12.x/eloquent#database-connections)
 - [XotBasePivot Implementation](../../app/Models/XotBasePivot.php) - Auto-discovery già implementato
 - [XotBaseMorphPivot Implementation](../../app/Models/XotBaseMorphPivot.php) - Auto-discovery già implementato
-- [CLAUDE.md](../../../claude.md) - Convenzioni architetturali
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni architetturali
 
 ## 🎓 Lezioni Apprese
 
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
-<<<<<<< .merge_file_3qfri1
-2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
-=======
-<<<<<<< HEAD
-2. **Consistenza è chiave**: ModuloEsempio devia dallo standard → maggiore complessità
-=======
-2. **Consistenza è chiave**: ExternalProject devia dallo standard → maggiore complessità
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+2. **Consistenza è chiave**: Quaeris devia dallo standard → maggiore complessità
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 
@@ -456,6 +343,7 @@ Manutenibilità: +40%
 **Next**: Implementare Soluzione 1 e 2 (Priorità ALTA)
 # Analisi DRY e KISS - Architettura Modelli
 
+**Data**: 2025-10-15
 **Autore**: Claude Code Analysis
 **Obiettivo**: Identificare duplicazioni e complessità per rendere l'architettura più DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid)
 
@@ -494,15 +382,7 @@ abstract class BaseModel extends XotBaseModel {
 
 **Moduli analizzati**:
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
-<<<<<<< .merge_file_3qfri1
-- healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
-=======
-<<<<<<< HEAD
-- ModuloEsempio: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
-=======
-- ExternalProject: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+- Quaeris: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -546,21 +426,9 @@ protected function casts(): array {
 
 **Violazione DRY**: Cms e altri moduli ridichiarano casts già presenti nel parent
 
-<<<<<<< .merge_file_3qfri1
-### 4. **healthcare_app BaseModel - Pattern Anomalo**
+### 4. **Quaeris BaseModel - Pattern Anomalo**
 
-**Problema Critico**: `Modules\healthcare_app\Models\BaseModel` NON estende `XotBaseModel`:
-=======
-<<<<<<< HEAD
-### 4. **ModuloEsempio BaseModel - Pattern Anomalo**
-
-**Problema Critico**: `Modules\ModuloEsempio\Models\BaseModel` NON estende `XotBaseModel`:
-=======
-### 4. **ExternalProject BaseModel - Pattern Anomalo**
-
-**Problema Critico**: `Modules\ExternalProject\Models\BaseModel` NON estende `XotBaseModel`:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+**Problema Critico**: `Modules\Quaeris\Models\BaseModel` NON estende `XotBaseModel`:
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -571,11 +439,7 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia {
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_3qfri1
-    protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_PmbTJN
+    protected $connection = 'quaeris';
     protected $casts = ['published_at' => 'datetime', ...]; // Array invece di metodo
     // ... Ridefinisce tutto manualmente
 }
@@ -597,15 +461,7 @@ use HasXotFactory;
 use RelationX;
 use Updater;
 
-<<<<<<< .merge_file_3qfri1
-// healthcare_app/BaseModel duplica Updater:
-=======
-<<<<<<< HEAD
-// ModuloEsempio/BaseModel duplica Updater:
-=======
-// ExternalProject/BaseModel duplica Updater:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+// Quaeris/BaseModel duplica Updater:
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -651,33 +507,13 @@ abstract class XotBaseModel extends Model {
 - Serve aggiungere traits specifici (es: Notify → InteractsWithMedia)
 - Serve override di casts specifici (es: User → verified_at)
 
-<<<<<<< .merge_file_3qfri1
-### Soluzione 2: Correggere healthcare_app/BaseModel
+### Soluzione 2: Correggere Quaeris/BaseModel
 
-**Obiettivo**: Allineare healthcare_app all'architettura standard
-
-**Implementazione**:
-```php
-// Modules/healthcare_app/app/Models/BaseModel.php
-=======
-<<<<<<< HEAD
-### Soluzione 2: Correggere ModuloEsempio/BaseModel
-
-**Obiettivo**: Allineare ModuloEsempio all'architettura standard
+**Obiettivo**: Allineare Quaeris all'architettura standard
 
 **Implementazione**:
 ```php
-// Modules/ModuloEsempio/app/Models/BaseModel.php
-=======
-### Soluzione 2: Correggere ExternalProject/BaseModel
-
-**Obiettivo**: Allineare ExternalProject all'architettura standard
-
-**Implementazione**:
-```php
-// Modules/ExternalProject/app/Models/BaseModel.php
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+// Modules/Quaeris/app/Models/BaseModel.php
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -687,31 +523,13 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     use InteractsWithMedia;
     use HasExtraTrait;
 
-<<<<<<< .merge_file_3qfri1
-    protected $connection = 'healthcare_app'; // Auto-discovery se Soluzione 1 applicata
+    protected $connection = 'quaeris'; // Auto-discovery se Soluzione 1 applicata
 
-    protected $with = ['extra']; // Specifico healthcare_app
-
-    protected function casts(): array {
-        return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI healthcare_app, se necessari
-=======
-    protected $connection = 'modulo_esempio'; // Auto-discovery se Soluzione 1 applicata
-
-<<<<<<< HEAD
-    protected $with = ['extra']; // Specifico ModuloEsempio
+    protected $with = ['extra']; // Specifico Quaeris
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI ModuloEsempio, se necessari
-=======
-    protected $with = ['extra']; // Specifico ExternalProject
-
-    protected function casts(): array {
-        return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI ExternalProject, se necessari
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+            // Solo casts SPECIFICI Quaeris, se necessari
         ]);
     }
 }
@@ -804,15 +622,7 @@ Manutenibilità: +40%
 ## 🎯 Priorità di Implementazione
 
 ### 🔴 Priorità ALTA
-<<<<<<< .merge_file_3qfri1
-1. **Correggere healthcare_app/BaseModel** (non segue standard)
-=======
-<<<<<<< HEAD
-1. **Correggere ModuloEsempio/BaseModel** (non segue standard)
-=======
-1. **Correggere ExternalProject/BaseModel** (non segue standard)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+1. **Correggere Quaeris/BaseModel** (non segue standard)
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -828,18 +638,8 @@ Manutenibilità: +40%
 ### Fase 1: Auto-Discovery
 - `Modules/Xot/app/Models/XotBaseModel.php` (+15 righe)
 
-<<<<<<< .merge_file_3qfri1
-### Fase 2: Correzione healthcare_app
-- `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
-=======
-<<<<<<< HEAD
-### Fase 2: Correzione ModuloEsempio
-- `Modules/ModuloEsempio/app/Models/BaseModel.php` (refactor completo)
-=======
-### Fase 2: Correzione ExternalProject
-- `Modules/ExternalProject/app/Models/BaseModel.php` (refactor completo)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+### Fase 2: Correzione Quaeris
+- `Modules/Quaeris/app/Models/BaseModel.php` (refactor completo)
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -852,32 +652,14 @@ Manutenibilità: +40%
 ### Fase 4: Documentazione
 - `Modules/Xot/docs/models/MODEL_ARCHITECTURE.md` (questa guida)
 - `Modules/User/docs/models/README.md`
-<<<<<<< .merge_file_3qfri1
-- `Modules/healthcare_app/docs/models/README.md`
-=======
-<<<<<<< HEAD
-- `Modules/ModuloEsempio/docs/models/README.md`
-=======
-- `Modules/ExternalProject/docs/models/README.md`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+- `Modules/Quaeris/docs/models/README.md`
 
 ## ✅ Checklist Implementazione
 
 - [ ] Implementare `getConnectionName()` in XotBaseModel
 - [ ] Testare auto-discovery con modello test
-<<<<<<< .merge_file_3qfri1
-- [ ] Correggere `Modules/healthcare_app/app/Models/BaseModel.php`
-- [ ] Testare modelli healthcare_app con nuova struttura
-=======
-<<<<<<< HEAD
-- [ ] Correggere `Modules/ModuloEsempio/app/Models/BaseModel.php`
-- [ ] Testare modelli ModuloEsempio con nuova struttura
-=======
-- [ ] Correggere `Modules/ExternalProject/app/Models/BaseModel.php`
-- [ ] Testare modelli ExternalProject con nuova struttura
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+- [ ] Correggere `Modules/Quaeris/app/Models/BaseModel.php`
+- [ ] Testare modelli Quaeris con nuova struttura
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -889,20 +671,12 @@ Manutenibilità: +40%
 - [Laravel Model Connections](https://laravel.com/docs/12.x/eloquent#database-connections)
 - [XotBasePivot Implementation](../../app/Models/XotBasePivot.php) - Auto-discovery già implementato
 - [XotBaseMorphPivot Implementation](../../app/Models/XotBaseMorphPivot.php) - Auto-discovery già implementato
-- [CLAUDE.md](../../../claude.md) - Convenzioni architetturali
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni architetturali
 
 ## 🎓 Lezioni Apprese
 
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
-<<<<<<< .merge_file_3qfri1
-2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
-=======
-<<<<<<< HEAD
-2. **Consistenza è chiave**: ModuloEsempio devia dallo standard → maggiore complessità
-=======
-2. **Consistenza è chiave**: ExternalProject devia dallo standard → maggiore complessità
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PmbTJN
+2. **Consistenza è chiave**: Quaeris devia dallo standard → maggiore complessità
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 

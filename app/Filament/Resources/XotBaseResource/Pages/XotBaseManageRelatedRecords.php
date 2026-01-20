@@ -26,8 +26,7 @@ use Override;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
-    use HasXotTable;
-    use InteractsWithForms;
+    use HasXotTable, InteractsWithForms;
     // protected static string $resource;
 
     /**
@@ -41,7 +40,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * Restituisce lo schema del form per i record correlati.
      *
-     * @return array<Component>
+     * @return array<\Filament\Schemas\Components\Component>
      */
     // abstract public static function getFormSchema(): array;
 
@@ -61,7 +60,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
-    protected function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [];
     }
@@ -72,7 +71,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-    #[\Override]
+    #[Override]
     public function getTableColumns(): array
     {
         return [
@@ -109,36 +108,12 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTableActions(): array
     {
-        // Preferisci la risorsa correlata per i record nested; altrimenti usa la risorsa della pagina.
-        $resource = static::$relatedResource ?? static::getResource();
-        // Mostra "view" solo se la risorsa correlata espone quella pagina.
-        $hasView = $resource::hasPage('view');
-
         return [
-            'view' => Action::make('view')
-                ->label('Visualizza')
-                ->icon('heroicon-o-eye')
-                ->visible(static fn (): bool => (bool) $hasView)
-                ->url(function (Model $record) use ($resource): string {
-                    // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
-                    $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
-                    // Fallback per contesti senza dati di request (es. test Livewire).
-                    if ('' === $url) {
-                        $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
-                    }
-
-                    return is_string($url) ? $url : (string) $url;
-                }),
             'edit' => Action::make('edit')
                 ->label('Modifica')
                 ->icon('heroicon-o-pencil')
-                ->url(function (Model $record) use ($resource): string {
-                    // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
-                    $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
-                    // Fallback per contesti senza dati di request (es. test Livewire).
-                    if ('' === $url) {
-                        $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
-                    }
+                ->url(function (Model $record): string {
+                    $url = static::getResource()::getUrl('edit', ['record' => $record]);
 
                     return is_string($url) ? $url : (string) $url;
                 }),

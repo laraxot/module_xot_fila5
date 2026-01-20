@@ -9,6 +9,8 @@ use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
@@ -20,8 +22,9 @@ use Webmozart\Assert\Assert;
 /**
  * @property Schema $form
  */
-class MetatagPage extends XotBasePage
+class MetatagPage extends XotBasePage implements HasForms
 {
+    use InteractsWithForms;
     use NavigationLabelTrait;
 
     public array $data = [];
@@ -79,7 +82,7 @@ class MetatagPage extends XotBasePage
 
         Notification::make()
             ->success()
-            ->title(__('filament-panels::resources/edit-record.notifications.saved.title'))
+            ->title(__('filament-panels::resources/pages/edit-record.notifications.saved.title'))
             ->send();
     }
 

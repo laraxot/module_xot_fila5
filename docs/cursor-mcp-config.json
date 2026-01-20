@@ -45,13 +45,6 @@
     "laravel-docs": {
         "command": "npx",
         "args": ["-y", "@assistant-ui/mcp-docs-server"]
-    },
-    "laravel-boost": {
-      "command": "./bashscripts/mcp/laravel-boost-wrapper.sh",
-      "args": [],
-      "env": {
-        "LARAVEL_PROJECT_ROOT": "./laravel"
-      }
     }
   }
 }

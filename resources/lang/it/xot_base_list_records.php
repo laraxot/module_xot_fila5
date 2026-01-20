@@ -6,26 +6,9 @@ return [
     'fields' => [
         'create' => [
             'label' => 'create',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
         ],
         'layout' => [
             'label' => 'layout',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
         ],
-    ],
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
     ],
 ];

@@ -25,11 +25,11 @@
         "POSTGRES_CONNECTION_STRING": "${DATABASE_URL}"
       }
     },
-    "laravel-boost": {
-      "command": "./bashscripts/mcp/laravel-boost-wrapper.sh",
-      "args": [],
+    "laravel-artisan": {
+      "command": "node",
+      "args": ["./laravel/Modules/Xot/docs/mcp-laravel-artisan-server.js"],
       "env": {
-        "LARAVEL_PROJECT_ROOT": "./laravel"
+        "LARAVEL_PATH": "./laravel"
       }
     },
     "fetch": {
