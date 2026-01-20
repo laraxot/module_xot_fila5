@@ -73,8 +73,11 @@
         "nunomaduro/collision": "^8.6",
         "orchestra/testbench": "*",
         "pestphp/pest": "*",
+<<<<<<< Updated upstream
         
         "pestphp/pest-plugin-type-coverage": "*",
+=======
+>>>>>>> Stashed changes
         "thecodingmachine/phpstan-safe-rule": "*",
         "nunomaduro/phpinsights": "*"
     },
@@ -82,10 +85,12 @@
         "pestphp/pest-plugin-laravel": "*",
         "spatie/laravel-error-solutions": "*"
     },
+    "repositories_comment": "Local path packages (coolsam/panel-modules) moved to root composer.json for proper priority. DO NOT add Packagist here - it must remain non-canonical in root.",
     "repositories": [
         {
             "type": "path",
             "url": "../Tenant"
+<<<<<<< Updated upstream
         },
         {
             "type": "path",
@@ -95,6 +100,8 @@
             "type": "composer",
             "url": "https://packagist.org",
             "canonical": false
+=======
+>>>>>>> Stashed changes
         }
     ],
     "autoload": {
@@ -103,7 +110,6 @@
             "Modules\\Xot\\Database\\Factories\\": "database/factories/",
             "Modules\\Xot\\Database\\Seeders\\": "database/seeders/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
-            
         },
         "psr-4_comment": {
             "Modules\\Xot\\Tests\\": "tests/"
