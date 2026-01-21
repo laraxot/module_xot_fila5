@@ -56,6 +56,7 @@ bashscripts/
 #### 8. **translations/** - Gestione Traduzioni
 - `fix_all_english_translations.sh` - Fix traduzioni inglesi
 - `fix_project_translations.sh` - Fix traduzioni progetto
+- `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `verify_translations_syntax.sh` - Verifica sintassi traduzioni
 
 #### 9. **utilities/** - Utilità Generali
@@ -138,3 +139,4 @@ Per mantenere questa organizzazione:
 
 *Ultimo aggiornamento: 2025-01-29*
 *Responsabile: sistema di automazione*
+*Responsabile: Sistema di Automazione Laraxot*
