@@ -53,3 +53,4 @@ Chart.register(ChartDataLabels);
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
 
 *Ultimo aggiornamento: 2026-01-30*
+
