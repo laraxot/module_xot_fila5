@@ -80,11 +80,7 @@ class ListContacts extends XotBaseListRecords
 ### Comando Artisan
 
 ```bash
-<<<<<<< .merge_file_n4rLqL
-php artisan make:filament-resource Contact --nested --module=healthcare_app
-=======
-php artisan make:filament-resource Contact --nested --module=ModuloEsempio
->>>>>>> .merge_file_dnlVwX
+php artisan make:filament-resource Contact --nested --module=Quaeris
 ```
 
 Questo comando crea automaticamente:
@@ -257,15 +253,9 @@ protected static ?string $relatedResource = ContactResource::class;
 
 ## Opportunità di Nesting per Moduli
 
-<<<<<<< .merge_file_n4rLqL
-### Modulo healthcare_app
+### Modulo Quaeris
 
-Vedi: [Modules/healthcare_app/docs/filament-nesting-opportunities.md](../../healthcare_app/docs/filament-nesting-opportunities.md)
-=======
-### Moduli con nested resources
-
-Vedi: [Filament Nesting Best Practices](../filament-nesting-best-practices.md)
->>>>>>> .merge_file_dnlVwX
+Vedi: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../Quaeris/docs/filament-nesting-opportunities.md)
 
 **Opportunità**:
 - Contact → Nested di SurveyPdf
@@ -274,7 +264,7 @@ Vedi: [Filament Nesting Best Practices](../filament-nesting-best-practices.md)
 
 ### Modulo Limesurvey
 
-Vedi: [Modules/Limesurvey/docs/filament-nesting-opportunities.md](../../limesurvey/docs/filament-nesting-opportunities.md)
+Vedi: [Modules/Limesurvey/docs/filament-nesting-opportunities.md](../../Limesurvey/docs/filament-nesting-opportunities.md)
 
 **Opportunità**:
 - LimeGroup → Nested di LimeSurvey
@@ -283,7 +273,7 @@ Vedi: [Modules/Limesurvey/docs/filament-nesting-opportunities.md](../../limesurv
 
 ### Modulo Cms
 
-Vedi: [Modules/Cms/docs/filament-nesting-opportunities.md](../../cms/docs/filament-nesting-opportunities.md)
+Vedi: [Modules/Cms/docs/filament-nesting-opportunities.md](../../Cms/docs/filament-nesting-opportunities.md)
 
 **Opportunità**:
 - Block → Nested di Page
@@ -292,7 +282,7 @@ Vedi: [Modules/Cms/docs/filament-nesting-opportunities.md](../../cms/docs/filame
 
 ### Modulo User
 
-Vedi: [Modules/User/docs/filament-nesting-opportunities.md](../../user/docs/filament-nesting-opportunities.md)
+Vedi: [Modules/User/docs/filament-nesting-opportunities.md](../../User/docs/filament-nesting-opportunities.md)
 
 **Opportunità**:
 - TeamInvitation → Nested di Team
@@ -373,15 +363,12 @@ Filament 5.x gestisce automaticamente i breadcrumbs per nested resources. Non se
 ## Collegamenti
 
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
-<<<<<<< .merge_file_n4rLqL
-- [healthcare_app Nesting Opportunities](../../healthcare_app/docs/filament-nesting-opportunities.md)
-=======
-- [Filament Nesting Best Practices](../filament-nesting-best-practices.md)
->>>>>>> .merge_file_dnlVwX
-- [Limesurvey Nesting Opportunities](../../limesurvey/docs/filament-nesting-opportunities.md)
-- [Cms Nesting Opportunities](../../cms/docs/filament-nesting-opportunities.md)
-- [User Nesting Opportunities](../../user/docs/filament-nesting-opportunities.md)
+- [Quaeris Nesting Opportunities](../../Quaeris/docs/filament-nesting-opportunities.md)
+- [Limesurvey Nesting Opportunities](../../Limesurvey/docs/filament-nesting-opportunities.md)
+- [Cms Nesting Opportunities](../../Cms/docs/filament-nesting-opportunities.md)
+- [User Nesting Opportunities](../../User/docs/filament-nesting-opportunities.md)
 
 ---
 
+**Ultimo Aggiornamento**: 2026-01-22  
 **Prossima Revisione**: 2026-02-22

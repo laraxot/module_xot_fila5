@@ -8,4 +8,5 @@ use Filament\Forms\Components\Placeholder;
 
 class XotBasePlaceholder extends Placeholder
 {
+    //
 }
