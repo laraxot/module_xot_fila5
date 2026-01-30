@@ -58,6 +58,10 @@ trait HasXotTable
     /**
      * Get table header actions.
      *
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
+     *
      * @return array<string, Action|ActionGroup>
      */
     public function getTableHeaderActions(): array
@@ -101,7 +105,7 @@ trait HasXotTable
      *
      * @return array<string, Tables\Columns\Column>
      */
-    abstract public function getTableColumns(): array;
+    abstract protected function getTableColumns(): array;
 
     /**
      * Get table filters form columns.
@@ -124,7 +128,7 @@ trait HasXotTable
     /**
      * Get table heading.
      */
-    public function getTableHeading(): ?string
+    protected function getTableHeading(): ?string
     {
         $key = static::getKeyTrans('table.heading');
         /** @var string|array<int|string,mixed>|null $trans */
@@ -139,7 +143,7 @@ trait HasXotTable
      *
      * @return array<string, Action>
      */
-    public function getTableEmptyStateActions(): array
+    protected function getTableEmptyStateActions(): array
     {
         return [];
     }
@@ -211,6 +215,10 @@ trait HasXotTable
     /**
      * Get table filters.
      *
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
+     *
      * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
      */
     public function getTableFilters(): array
@@ -220,6 +228,14 @@ trait HasXotTable
 
     /**
      * Get table actions.
+     *
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
+     *
+     * @return array<string, Action|ActionGroup>
+     */
+    /**
+     * @deprecated Override the `table()` method to configure the table.
      *
      * @return array<string, Action|ActionGroup>
      */
@@ -291,6 +307,10 @@ trait HasXotTable
 
     /**
      * Get table bulk actions.
+     *
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<string, BulkAction>
      */
