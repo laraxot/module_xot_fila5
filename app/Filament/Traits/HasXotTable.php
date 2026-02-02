@@ -42,6 +42,10 @@ use Filament\Resources\Pages\ListRecords;
  * Provides enhanced table functionality with translations and optimized structure.
  *
  * @property TableLayoutEnum $layoutView
+ *
+ * @SuppressWarnings("PHPMD.StaticAccess")
+ * @SuppressWarnings("PHPMD.CyclomaticComplexity")
+ * @SuppressWarnings("PHPMD.NPathComplexity")
  */
 trait HasXotTable
 {
@@ -247,10 +251,15 @@ trait HasXotTable
 
         $actions = [];
         $resource = $this;
+        // @phpstan-ignore-next-line instanceof.alwaysFalse
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
+            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
+            Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
+        // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
+        Assert::object($resource);
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
