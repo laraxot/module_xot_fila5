@@ -37,3 +37,11 @@ Ridurre gli errori PHPStan a **0**.
 ### Fase 2: Verifica Finale
 
 **Obiettivo**: Confermare 0 errori.
+
+### Correzioni Implementate (2026-02-02) - ✅ HasXotTable Fixes
+1. **HasXotTable.php**:
+    - Risolti errori `method.nonObject` per chiamate `canView`, `canEdit`, `canDelete` aggiungendo cast `Assert::object($resource)`.
+    - Gestito `instanceof ListRecords` per risolvere tipi ambigui su `app($resourceClass)`.
+    - Suppressi warning `staticMethod.alreadyNarrowedType` e `PHPMD` (Complexity, StaticAccess) per mantenere il codice pulito ma funzionale.
+
+*Ultimo aggiornamento: 2026-02-02*
