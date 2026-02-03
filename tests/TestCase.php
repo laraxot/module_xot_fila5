@@ -24,6 +24,13 @@ abstract class TestCase extends BaseTestCase
         parent::setUp();
 
         if (! self::$migrated) {
+<<<<<<< HEAD
+=======
+            $this->artisan('migrate:fresh', [
+                '--force' => true,
+            ]);
+
+>>>>>>> 2df1e4c (.)
             $this->artisan('module:migrate', [
                 '--force' => true,
             ]);
