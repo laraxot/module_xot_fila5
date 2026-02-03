@@ -5,9 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Array;
 
 use Filament\Support\RawJs;
-
-use function Safe\preg_match;
-
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -24,7 +21,7 @@ class ArrayToRawJsAction
     /**
      * Converte l'array in una stringa JavaScript (oggetto letterale) e restituisce RawJs.
      *
-     * @param array<string|mixed, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
+     * @param  array<string, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
      */
     public function execute(array $array): RawJs
     {
@@ -32,21 +29,21 @@ class ArrayToRawJsAction
         foreach ($array as $key => $value) {
             $k = $this->jsKey((string) $key);
             if ($value instanceof RawJs) {
-                $parts[] = $k.': '.$value->toHtml();
+                $parts[] = $k . ': ' . $value->toHtml();
             } elseif (is_array($value)) {
-                $parts[] = $k.': '.$this->execute($value)->toHtml();
+                $parts[] = $k . ': ' . $this->execute($value)->toHtml();
             } else {
-                $parts[] = $k.': '.$this->jsValue($value);
+                $parts[] = $k . ': ' . $this->jsValue($value);
             }
         }
 
-        return RawJs::make('{'.implode(', ', $parts).'}');
+        return RawJs::make('{' . implode(', ', $parts) . '}');
     }
 
     /** Chiave JS sicura per attributo HTML: identificatore o 'key'. */
     private function jsKey(string $key): string
     {
-        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $key) ? $key : "'".str_replace("'", "\\'", $key)."'";
+        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $key) ? $key : "'" . str_replace("'", "\\'", $key) . "'";
     }
 
     /** Valore JS sicuro per attributo HTML: niente virgolette doppie. */
@@ -61,7 +58,6 @@ class ArrayToRawJsAction
         if (is_numeric($value)) {
             return (string) $value;
         }
-
-        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], (string) $value)."'";
+        return "'" . str_replace(["\\", "'"], ["\\\\", "\\'"], (string) $value) . "'";
     }
 }
