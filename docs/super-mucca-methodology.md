@@ -1,20 +1,20 @@
 # 🐃 **Metodologia Super Mucca: AI-Native Edition**
 
-**Last Update**: 31 Gennaio 2026
-**Philosophy**: DRY + KISS + SOLID + **BOOSTED**
+**Ultimo aggiornamento**: 31 Gennaio 2026  
+**Filosofia**: DRY + KISS + SOLID + ROBUST
 
-In questa versione evoluta, integriamo il supporto nativo per gli strumenti di intelligenza artificiale (Windsurf, Cursor, Claude) tramite l'architettura **Laravel Boost**. L'AI non è solo un assistente, ma un membro del team che segue rigorosamente questi standard.
+Questa metodologia descrive uno standard di lavoro per l'AI che deve agire come membro del team e seguire regole documentate e verificabili.
 
 ## 🚀 **AI-Native Standards**
 
 ### 1. **Context-First Development**
-Ogni interazione con l'AI deve iniziare con l'acquisizione del contesto tramite **Boost MCP**:
-- **Database Schema**: L'AI deve ispezionare `boost:database-schema` prima di proporre modelli o migrazioni.
-- **Tinker Verification**: Le logiche complesse devono essere validate tramite `boost:tinker` eseguendo snippet di prova nel contesto reale.
-- **Guidelines**: L'AI deve rispettare le linee guida definite in `resources/boost/skills/`.
+Ogni interazione con l'AI deve iniziare con l'acquisizione del contesto tramite gli strumenti MCP disponibili:
+- **Schema DB**: ispezionare lo schema prima di proporre modelli o migrazioni.
+- **Verifica logiche**: validare le logiche complesse con strumenti di esecuzione controllata.
+- **Linee guida**: rispettare le regole locali documentate nelle cartelle `docs/`.
 
-### 2. **No services, Only Actions (Boosted)**
-L'AI deve sapere che in questo progetto usiamo il pattern **Action**. Ogni Action deve essere:
+### 2. **No services, Only Actions**
+Quando il progetto adotta il pattern **Action**, ogni Action deve essere:
 - **Atomica**: Una sola responsabilità.
 - **Queueable**: Estendere `Spatie\QueueableAction\QueueableAction`.
 - **Testabile**: Ogni Action deve avere un test Pest dedicato.
@@ -24,14 +24,14 @@ La documentazione non è opzionale. Ogni nuovo modulo deve generare:
 - `00-index.md`: Punto di ingresso.
 - `roadmap.md`: Visione futura.
 - `tasks/`: Task atomici per l'evoluzione.
-L'AI deve usare `boost:mcp` per assicurarsi che i link tra i documenti siano validi (DRY).
+L'AI deve usare strumenti di validazione per assicurarsi che i link tra i documenti siano validi (DRY).
 
-## 🛠️ **Boost Workflow**
+## 🛠️ **Workflow operativo**
 
-1.  **Analizza**: Usa `boost:route-inspector` e `boost:application-info` per capire dove inserire la nuova feature.
-2.  **Pianifica**: Crea un `implementation_plan.md` che faccia riferimento allo schema DB rilevato da Boost.
-3.  **Implementa**: Scrivi codice PHPStan Level 10 compliant. Usa `boost:tinker` per debuggare in tempo reale.
-4.  **Verifica**: Esegui i test Pest. Usa `boost:error-tracking` per catturare eventuali eccezioni silenziose.
+1. **Analizza**: usa gli strumenti disponibili per capire dove inserire la nuova feature.
+2. **Pianifica**: crea un `implementation_plan.md` che faccia riferimento allo schema DB osservato.
+3. **Implementa**: scrivi codice compatibile con il livello PHPStan richiesto dal progetto.
+4. **Verifica**: esegui i test disponibili e registra gli errori in modo tracciabile.
 
 ---
 *Documentazione conforme agli standard Laraxot - L'eccellenza è un'abitudine.*
