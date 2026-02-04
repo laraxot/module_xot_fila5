@@ -1,5 +1,6 @@
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
+**Data**: 2026-01-27  
 **Status**: ✅ Risolto  
 **Errore**: `Access level to Filament\Tables\Concerns\InteractsWithTable::getTableActions() must be public (as in class Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords)`
 
@@ -64,13 +65,8 @@ protected function getTableEmptyStateActions(): array
    - Aggiunta sezione "Errore InteractsWithTable"
    - Aggiornata data ultimo aggiornamento
 
-<<<<<<< .merge_file_4BpdVN
-3. **`Modules/healthcare_app/docs/question-chart-implementation-guide.md`**
+3. **`Modules/Quaeris/docs/question-chart-implementation-guide.md`**
    - Aggiunta nota critica sulla visibilità dei metodi `getTable*()`
-=======
-3. **Moduli che implementano nested resources con HasXotTable**
-   - Nota critica sulla visibilità dei metodi `getTable*()`
->>>>>>> .merge_file_PTMbQd
 
 ## Pattern Corretto
 
@@ -124,11 +120,7 @@ Dopo la correzione, l'errore non dovrebbe più verificarsi:
 
 ```bash
 # Test accesso pagina
-<<<<<<< .merge_file_4BpdVN
-curl http://healthcare_app.local/healthcare_app/admin/ats/survey-pdfs/16/question-charts/226
-=======
-curl http://app.local/admin/your-resource/16/related/226
->>>>>>> .merge_file_PTMbQd
+curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
 # ✅ Dovrebbe funzionare senza errori
 ```
 
@@ -144,3 +136,4 @@ curl http://app.local/admin/your-resource/16/related/226
 2. **Compatibilità Filament**: I trait di Filament (`InteractsWithTable`) hanno requisiti specifici di visibilità
 3. **Documentazione**: La documentazione esistente (`widget-method-visibility-rules.md`) era corretta ma non era stata applicata al trait base
 
+*Ultimo aggiornamento: 2026-01-27*
