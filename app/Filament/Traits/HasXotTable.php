@@ -252,6 +252,7 @@ trait HasXotTable
         $actions = [];
         $resource = $this;
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore-next-line instanceof.alwaysFalse
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
@@ -262,11 +263,21 @@ trait HasXotTable
         // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
 =======
+=======
+        // @phpstan-ignore-next-line instanceof.alwaysFalse
+>>>>>>> 480775d (.)
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
+            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
+            Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
+<<<<<<< HEAD
 >>>>>>> 2df1e4c (.)
+=======
+        // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
+        Assert::object($resource);
+>>>>>>> 480775d (.)
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
