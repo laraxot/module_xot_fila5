@@ -1,5 +1,4 @@
 # 📚 **Indice Documentazione Modulo Xot (Core Engine)**
-<<<<<<< HEAD
 
 **Last Update**: 31 Gennaio 2026
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -39,8 +38,6 @@
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 # Xot Module Documentation Index
-=======
->>>>>>> 2df1e4c (.)
 
 **Last Update**: 31 Gennaio 2026
 **Status**: ✅ PHPStan Level 10 Compliant

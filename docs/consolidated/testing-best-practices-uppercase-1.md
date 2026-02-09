@@ -33,31 +33,7 @@ test('widget can be rendered', function () {
 
 ### XotData Mock Pattern (Obbligatorio)
 
-```php
-function mockXotData(): void
-{
-    $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 
-    $mockXotData->shouldReceive('getUserClass')
-        ->andReturn(\Modules\User\Models\User::class);
-<<<<<<< HEAD
-        
-        ->andReturn(\Modules\<nome progetto>\Models\User::class);
-
-
-========
-        
->>>>>>> dd54b2b (.)
-=======
-        
->>>>>>> 2df1e4c (.)
-    $mockXotData->shouldReceive('make')
-        ->andReturn($mockXotData);
-
-    // ✅ CRITICO: Bind nel container
-    app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
-}
-```
 
 ## 🚨 **Regole Architetturali Critiche**
 
