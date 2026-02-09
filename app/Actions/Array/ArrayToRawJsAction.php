@@ -6,6 +6,7 @@ namespace Modules\Xot\Actions\Array;
 
 use Filament\Support\RawJs;
 use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\preg_match;
 
 /**
@@ -30,21 +31,21 @@ class ArrayToRawJsAction
         foreach ($array as $key => $value) {
             $k = $this->jsKey((string) $key);
             if ($value instanceof RawJs) {
-                $parts[] = $k . ': ' . $value->toHtml();
+                $parts[] = $k.': '.$value->toHtml();
             } elseif (is_array($value)) {
-                $parts[] = $k . ': ' . $this->execute($value)->toHtml();
+                $parts[] = $k.': '.$this->execute($value)->toHtml();
             } else {
-                $parts[] = $k . ': ' . $this->jsValue($value);
+                $parts[] = $k.': '.$this->jsValue($value);
             }
         }
 
-        return RawJs::make('{' . implode(', ', $parts) . '}');
+        return RawJs::make('{'.implode(', ', $parts).'}');
     }
 
     /** Chiave JS sicura per attributo HTML: identificatore o 'key'. */
     private function jsKey(string $key): string
     {
-        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $key) ? $key : "'" . str_replace("'", "\\'", $key) . "'";
+        return preg_match('/^[a-zA-Z_][a-zA-Z0-9_]*$/', $key) ? $key : "'".str_replace("'", "\\'", $key)."'";
     }
 
     /** Valore JS sicuro per attributo HTML: niente virgolette doppie. */
@@ -59,6 +60,7 @@ class ArrayToRawJsAction
         if (is_numeric($value)) {
             return (string) $value;
         }
-        return "'" . str_replace(["\\", "'"], ["\\\\", "\\'"], (string) $value) . "'";
+
+        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], (string) $value)."'";
     }
 }
