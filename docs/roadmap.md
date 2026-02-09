@@ -1,5 +1,4 @@
 # Xot Module Roadmap
-<<<<<<< HEAD
 
 "Il motore che muove l'universo Quaeris."
 
@@ -33,8 +32,6 @@ Consolidare Xot come un framework "Zero-Config" per Laravel 12, dove ogni nuovo 
 ---
 **Ultimo aggiornamento**: 31 Gennaio 2026
 # Roadmap Modulo Xot - Completamento e Miglioramenti
-=======
->>>>>>> 2df1e4c (.)
 
 "Il motore che muove l'universo Quaeris."
 

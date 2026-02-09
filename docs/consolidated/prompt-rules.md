@@ -1,5 +1,4 @@
 # Regole per i prompt condivisi
-<<<<<<< HEAD
 
 ## Regola universale
 I prompt condivisi devono essere **project-agnostic**:
@@ -28,8 +27,6 @@ I prompt condivisi devono essere **project-agnostic**:
 - [prompts consolidati](./prompts.md)
 - [indice documentazione](../00-index.md)
 # Regole per i Prompt
-=======
->>>>>>> 480775d (.)
 
 ## Regola universale
 I prompt condivisi devono essere **project-agnostic**:
