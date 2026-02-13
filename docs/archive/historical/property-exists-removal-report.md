@@ -1,6 +1,5 @@
 # Report Rimozione property_exists() - Modulo Xot
 
-**Data**: 2025-01-05
 **Autore**: Cascade AI
 **Stato**: ✅ COMPLETATO
 

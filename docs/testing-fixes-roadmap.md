@@ -1,6 +1,5 @@
 # Testing Fixes Roadmap - Correzione Test Falliti
 
-**Data**: 2025-01-22
 **Status**: In Progress
 **Principio Fondamentale**: Il sito funziona, quindi se un test fallisce è il test che sbaglia
 

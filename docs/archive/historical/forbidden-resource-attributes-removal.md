@@ -1,6 +1,5 @@
 # Rimozione Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
-**Data**: 2026-01-09  
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-2026-01-09.md`)
 
 ---
