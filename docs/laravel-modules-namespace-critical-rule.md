@@ -1,6 +1,5 @@
 # ⚠️ REGOLA CRITICA - Namespace Laravel Modules OBBLIGATORIA
 
-**Data**: 2025-01-22
 **Status**: ✅ Regola Critica OBBLIGATORIA
 **Fonte**: [Laravel Modules Documentation](https://laravelmodules.com/docs/12/getting-started/introduction)
 

@@ -729,7 +729,6 @@ Part of the Laraxot PTVX ecosystem.
 ---
 
 **Module**: Xot (Core Foundation)
-**Version**: 3.0.0
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 85%+ ✅
