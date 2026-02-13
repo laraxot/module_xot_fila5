@@ -1,6 +1,5 @@
 # Widget View Resolution - Risoluzione Automatica vs Manuale
 
-**Data**: 2025-01-27
 **Status**: ✅ RISOLTO
 **Problema**: `XotBaseWidget` sovrascriveva view definite manualmente
 

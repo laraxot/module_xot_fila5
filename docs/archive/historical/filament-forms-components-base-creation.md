@@ -1,6 +1,5 @@
 # Creazione Classi Base Forms Components - 2025-12-23
 
-**Data**: 2025-12-23
 **Obiettivo**: Creare classi base XotBase per Forms Components core seguendo la regola fondamentale
 
 ## ⚠️ Problema Identificato

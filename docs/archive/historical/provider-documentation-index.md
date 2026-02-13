@@ -252,7 +252,7 @@ When reviewing provider code:
 
 ---
 
-**Last Updated**: 2025-12-16
+
 **Maintainer**: Laraxot Team
 **Status**: ✅ Active Index
 

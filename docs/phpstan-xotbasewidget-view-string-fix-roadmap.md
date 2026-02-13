@@ -1,6 +1,5 @@
 # PHPStan Fix Roadmap - XotBaseWidget View-String Error
 
-**Data**: 2025-01-22
 **Status**: ✅ Completato
 **Errore**: 1 (risolto)
 **Modulo**: Xot

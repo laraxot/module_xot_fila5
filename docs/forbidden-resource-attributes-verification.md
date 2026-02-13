@@ -1,6 +1,5 @@
 # Verifica Proprietà Vietate in XotBaseResource - Report Completo
 
-**Data**: 2026-01-09  
 **Status**: ✅ **COMPLETATO**
 
 ---
