@@ -75,4 +75,6 @@ return [
             'lock_extended' => 'Durata del lock estesa',
         ],
     ],
+    'label' => 'Cache Lock',
+    'plural_label' => 'Cache Lock (Plurale)',
 ];
