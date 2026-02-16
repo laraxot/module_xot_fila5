@@ -927,6 +927,7 @@ class BlogPostsChartTest extends TestCase
 
 ---
 
+**Ultimo aggiornamento:** Dicembre 2025
 **Versione Filament:** 4.x
 **Chart.js:** 4.x
 **Framework:** Laraxot/PTVX
@@ -936,18 +937,10 @@ class BlogPostsChartTest extends TestCase
 
 ## 🎯 Standard 2026: Professional Charts & PDF
 
-<<<<<<< .merge_file_hi2xyZ
-Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito healthcare_app/PTVX:
-=======
-<<<<<<< HEAD
-Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Laraxot:
-=======
-Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito ExternalProject/PTVX:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PV5RFq
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
 
 ### 1. Configurazione Professionale
-Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)**.
+Consultare la guida **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)**.
 - Font unificati (Inter/Roboto).
 - Legende posizionate correttamente.
 - Gridline minimali.
@@ -959,5 +952,5 @@ Pattern:
 2.  Iniettare gli stessi dati del Dashboard (usando Actions).
 3.  Impostare `animation: false` nelle opzioni Chart.js per la stampa.
 
-Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
+Vedi: **[Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)**.
 

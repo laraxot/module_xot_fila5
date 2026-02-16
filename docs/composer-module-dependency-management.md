@@ -1,8 +1,6 @@
 # Composer and Module Dependency Management in Laraxot
 
-This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework.
-
-**Riferimento completo pacchetti**: [composer-packages-reference.md](../../../../docs/composer-packages-reference.md) Adherence to these guidelines is crucial for maintaining project stability, respecting the modular architecture, and leveraging the `wikimedia/composer-merge-plugin` effectively.
+This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework. Adherence to these guidelines is crucial for maintaining project stability, respecting the modular architecture, and leveraging the `wikimedia/composer-merge-plugin` effectively.
 
 ---
 
@@ -20,7 +18,6 @@ This document outlines the best practices and mandatory rules for managing Compo
 
 *   **Description**: All new Composer packages that are specific to a particular module (e.g., a calendar package for the `Meetup` module, a payment gateway for a `Billing` module) **must be installed within that module's `composer.json` file**, located at `Modules/{ModuleName}/composer.json`.
 *   **Motivation**: This practice ensures proper dependency encapsulation, prevents the root `composer.json` from becoming bloated with module-specific concerns, and aligns with the modular design philosophy. It leverages the `wikimedia/composer-merge-plugin` to correctly integrate these dependencies.
-*   **Esempio OAuth/Login (Modules/User/composer.json)**: Package come `socialiteproviders/microsoft`, `socialiteproviders/auth0` vanno nel modulo User perché riguardano autenticazione/login.
 *   **Example (`Modules/Meetup/composer.json`)**:
     ```json
     {
@@ -106,7 +103,6 @@ This document outlines the best practices and mandatory rules for managing Compo
 
 ## Related Documentation
 
-*   [User Composer Dependencies](../User/docs/composer-dependencies.md)
 *   [nWidart/laravel-modules GitHub Repository](https://github.com/nWidart/laravel-modules)
 *   [Laravel Modules Official Documentation](https://laravelmodules.com/docs/1/getting-started/introduction)
 *   [wikimedia/composer-merge-plugin GitHub Repository](https://github.com/wikimedia/composer-merge-plugin)

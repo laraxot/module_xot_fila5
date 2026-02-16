@@ -130,7 +130,7 @@ public function getUpcomingEvents(): Collection
 
 ## 🔗 Documentazione Correlata
 
-- [Code Improvements Analysis](./code-improvements-analysis-[date].md)
+- [Code Improvements Analysis](./code-improvements-analysis-[DATE].md)
 - [Super Mucca Methodology](./super-mucca-methodology-2026.md)
 - [Readme Consolidation Plan](./readme-consolidation-plan.md)
 
