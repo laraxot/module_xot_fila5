@@ -39,4 +39,6 @@ return [
             ],
         ],
     ],
+    'label' => 'Log',
+    'plural_label' => 'Log (Plurale)',
 ];

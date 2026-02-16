@@ -5,8 +5,8 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-            'label' => '',
-            'heading' => '',
+            'label' => 'Vuoto',
+            'heading' => 'Nessun Dato',
         ],
     ],
     'actions' => [
@@ -24,6 +24,31 @@ return [
             'icon' => 'il-mio-profilo',
             'label' => 'il-mio-profilo',
             'tooltip' => 'il-mio-profilo',
+        ],
+    ],
+    'label' => 'Main Dashboard',
+    'plural_label' => 'Main Dashboard (Plurale)',
+    'navigation' => [
+        'name' => 'Main Dashboard',
+        'plural' => 'Main Dashboard',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Main Dashboard',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
         ],
     ],
 ];

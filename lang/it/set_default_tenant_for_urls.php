@@ -287,7 +287,7 @@ return [
                 'placeholder' => 'zeusData.2',
                 'label' => 'zeusData.2',
             ],
-            [
+            4 => [
                 'description' => 'zeusData.4',
                 'helper_text' => 'zeusData.4',
                 'placeholder' => 'zeusData.4',
@@ -431,5 +431,18 @@ return [
         'Credenziali' => [
             'label' => 'Credenziali',
         ],
+    ],
+    'label' => 'Set Default Tenant For Urls',
+    'plural_label' => 'Set Default Tenant For Urls (Plurale)',
+    'navigation' => [
+        'name' => 'Set Default Tenant For Urls',
+        'plural' => 'Set Default Tenant For Urls',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Set Default Tenant For Urls',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
     ],
 ];

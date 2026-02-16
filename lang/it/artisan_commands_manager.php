@@ -65,4 +65,18 @@ return [
         ],
     ],
     'title' => 'artisan commands manager',
+    'label' => 'Artisan Commands Manager',
+    'plural_label' => 'Artisan Commands Manager (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
 ];

@@ -75,4 +75,28 @@ return [
             ],
         ],
     ],
+    'label' => 'Xot Service',
+    'plural_label' => 'Xot Service (Plurale)',
+    'navigation' => [
+        'name' => 'Xot Service',
+        'plural' => 'Xot Service',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Xot Service',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Xot Service',
+        ],
+        'edit' => [
+            'label' => 'Modifica Xot Service',
+        ],
+        'delete' => [
+            'label' => 'Elimina Xot Service',
+        ],
+    ],
 ];

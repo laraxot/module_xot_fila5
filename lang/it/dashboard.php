@@ -39,4 +39,6 @@ return [
             ],
         ],
     ],
+    'label' => 'Dashboard',
+    'plural_label' => 'Dashboard (Plurale)',
 ];
