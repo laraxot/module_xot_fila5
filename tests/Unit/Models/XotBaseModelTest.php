@@ -2,12 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Models;
-
+use Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\Updater;
-use Tests\TestCase;
 
 uses(TestCase::class);
 
@@ -52,7 +50,7 @@ test('xot base model has correct strict types declaration', function (): void {
 
     if ($filename) {
         $content = file_get_contents($filename);
-        expect($content)->toContain('');
+        expect($content)->toContain('declare(strict_types=1);');
     }
 });
 
@@ -77,13 +75,13 @@ test('xot base model has correct property types', function (): void {
     $perPageType = $perPageProperty->getType();
 
     // Some properties may not have explicit type declarations; in that case just ensure defaults are as expected
-    if (null !== $snakeType) {
+    if ($snakeType !== null) {
         expect($snakeType->getName())->toBe('bool');
     } else {
         expect(XotBaseModel::$snakeAttributes)->toBeTrue();
     }
 
-    if (null !== $perPageType) {
+    if ($perPageType !== null) {
         expect($perPageType->getName())->toBe('int');
     } else {
         expect($perPageProperty->getDefaultValue())->toBe(30);
