@@ -2,7 +2,6 @@
 
 ## Executive Summary
 
-**Analysis Date:** 2025-11-18
 **PHPStan Level:** Maximum (Level 10)
 **Total Errors Found:** 744
 **Files Analyzed:** 3,945
