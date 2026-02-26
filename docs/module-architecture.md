@@ -38,9 +38,6 @@
 
 <<<<<<< .merge_file_dqYiFM
 #### 3. **healthcare_app Module - Business Core**
-=======
-#### 3. **ModuloEsempio Module - Business Core**
->>>>>>> .merge_file_67LCr0
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -232,11 +229,7 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
-<<<<<<< .merge_file_dqYiFM
 **Dependencies**: Xot, healthcare_app
-=======
-**Dependencies**: Xot, ModuloEsempio
->>>>>>> .merge_file_67LCr0
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -284,11 +277,7 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
-<<<<<<< .merge_file_dqYiFM
 ├── healthcare_app (Business Core)
-=======
-├── ModuloEsempio (Business Core)
->>>>>>> .merge_file_67LCr0
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -447,6 +436,5 @@ public function register(): void
 
 ---
 
-**Analysis Date**: [DATE]
-**Architecture Health**: Good with some technical debt
+**Architecture Health**: Good with some technical debt  
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules

@@ -28,6 +28,7 @@ trait HasXotForm
 
     public function form(Schema $schema): Schema
     {
+        
         return $schema
             ->components($this->getFormSchema())
             ->columns(2)
