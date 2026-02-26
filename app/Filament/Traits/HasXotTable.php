@@ -49,6 +49,16 @@ use Webmozart\Assert\Assert;
  */
 trait HasXotTable
 {
+<<<<<<< HEAD
+=======
+    use InteractsWithTable {
+        table as tableOLD;
+        getTableHeaderActions as getTableHeaderActionsOLD;
+        getTableActions as getTableActionsOLD;
+        getTableBulkActions as getTableBulkActionsOLD;
+        getTableFilters as getTableFiltersOLD;
+    }
+>>>>>>> c76fdae73 (.)
     use TransTrait;
 
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
@@ -132,7 +142,7 @@ trait HasXotTable
     /**
      * Get table heading.
      */
-    protected function getTableHeading(): ?string
+    protected function getTableHeading(): \Illuminate\Contracts\Support\Htmlable|string|null
     {
         $key = static::getKeyTrans('table.heading');
         /** @var string|array<int|string,mixed>|null $trans */
