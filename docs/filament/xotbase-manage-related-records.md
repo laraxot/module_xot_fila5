@@ -11,6 +11,8 @@ inline within a parent resource (replaces RelationManagers).
 FilamentManageRelatedRecords (vendor Filament)
   └── XotBaseManageRelatedRecords (Xot)
         uses HasXotTable         ← full table scaffolding (columns, actions, table())
+        uses InteractsWithForms  ← form handling
+        uses NavigationLabelTrait
           └── ManageCharts, ManageSurveyPdfQuestionCharts, etc.
 ```
 
@@ -19,12 +21,12 @@ FilamentManageRelatedRecords (vendor Filament)
 | Method | Default behaviour | Override to change |
 |--------|------------------|--------------------|
 | `table()` | Full table: columns, header actions, record actions, bulk actions, filters, layout toggle | Rarely needed |
-| `getTableColumns()` | fallback `id`, `name`, `created_at` columns **senza label()** | Always override |
-| `getTableHeaderActions()` | `create` + associate/attach/layout toggle (dal trait `HasXotTable`) | Override `shouldShow*Action()` |
+| `getTableColumns()` | `id`, `name`, `created_at` text columns | Always override |
+| `getTableHeaderActions()` | `create` + optionally `associate` (see below) | Override `shouldShowAssociateAction()` |
 | `getTableActions()` | `view`, `edit`, `delete` (based on resource can*) + optional `detach` | `array_merge(parent::getTableActions(), [...])` to extend |
 | `getTableBulkActions()` | `DeleteBulkAction` | Override to replace |
 | `getTableFilters()` | Empty | Override to add filters |
-| `getHeaderActions()` | `[]` (nessun bottone di pagina; creazione solo da tabella) | Override to add page-level actions |
+| `getHeaderActions()` | `create` (page-level top button) | Return `[]` to suppress |
 | `getTableHeading()` | Translation key lookup | Override for custom heading |
 | `getDefaultTableSortColumn()` | `<table>.id` | Override |
 | `getDefaultTableSortDirection()` | `desc` | Override |
@@ -210,4 +212,4 @@ real fields, and `getFormSchema()` returns `[]`. The inline page `ManageQuestion
 calls `getFormSchemaBySurveyId()` correctly. The standalone page `EditQuestionChart` did
 not implement `getFormSchema()`, so the edit form was empty.
 
-See `laravel/Modules/<nome progetto>/docs/nested-resource-form-trap.md` for full analysis.
+See `laravel/Modules/Quaeris/docs/nested-resource-form-trap.md` for full analysis.
