@@ -1,6 +1,6 @@
-# IDE Helper Best Practices - <nome progetto>
+# IDE Helper Best Practices - LaravelPizza
 
-Documentazione completa sull'utilizzo di `barryvdh/laravel-ide-helper` nel progetto <nome progetto>.
+Documentazione completa sull'utilizzo di `barryvdh/laravel-ide-helper` nel progetto LaravelPizza.
 
 ---
 
@@ -42,7 +42,7 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 ### 1. Generate Models PHPDoc
 
 ```bash
-cd /var/www/_bases/base_<nome progetto>/laravel
+cd /var/www/_bases/base_laravelpizza/laravel
 php artisan ide-helper:models --write
 ```
 
@@ -186,36 +186,9 @@ class Event extends BaseModel
 # Già nel .gitignore del progetto
 ```
 
-### 4. ProfileContract — correzione obbligatoria dopo ide-helper (CRITICAL)
+### 4. Integrazione con PHPStan
 
-`ide-helper:models -W` genera automaticamente il tipo sbagliato per `$creator`, `$updater`, `$deleter`.
-
-**Il tipo generato (SBAGLIATO):**
-```php
-// ❌ ide-helper scrive la classe Profile concreta del modulo che trova
-* @property-read \Modules\Meetup\Models\Profile|null $creator
-* @property-read \Modules\Ptv\Models\Profile|null $updater
-```
-
-**Il tipo corretto (da ripristinare manualmente):**
-```php
-// ✅ SEMPRE l'interfaccia ProfileContract
-* @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
-* @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
-* @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
-```
-
-**Verifica dopo ogni esecuzione di ide-helper:**
-```bash
-grep -r "@property-read.*Models\\\\Profile.*\$(creator\|updater\|deleter)" Modules --include="*.php"
-```
-Se produce output: correggere quei file. Zero output = tutto ok.
-
-Rule dedicata: `.cursor/rules/profile-contract-docblock.mdc`
-
-### 5. Integrazione con PHPStan
-
-IDE Helper è **compatibile** con PHPStan Level 10, ma solo dopo la correzione del punto 4:
+IDE Helper è **compatibile** con PHPStan Level 10:
 
 ```bash
 # Verifica conformità
@@ -238,12 +211,7 @@ vim Modules/Meetup/database/migrations/2026_*_create_events_table.php
 php artisan migrate
 
 # 3. Rigenera PHPDoc
-php artisan ide-helper:models -W
-
-# 3b. Correggi ProfileContract (OBBLIGATORIO dopo ide-helper)
-# Verifica se ci sono tipi Profile concreti nei docblock
-grep -r "@property-read.*Models\\\\Profile.*\$(creator\|updater\|deleter)" Modules --include="*.php"
-# Se ci sono: correggi con \Modules\Xot\Contracts\ProfileContract|null
+php artisan ide-helper:models --write
 
 # 4. Verifica PHPStan
 ./vendor/bin/phpstan analyze Modules/Meetup --level=10
@@ -252,16 +220,6 @@ grep -r "@property-read.*Models\\\\Profile.*\$(creator\|updater\|deleter)" Modul
 git add .
 git commit -m "feat: add new fields to Event model"
 ```
-
-### Ambiente di esecuzione
-
-`ide-helper:models --write` o `-W` non va interpretato correttamente se il processo non puo' interrogare il database reale.
-
-Nel progetto molti modelli usano connessioni non standard (`activity`, `gdpr`, `xot`, oltre a `mysql`), quindi:
-
-- errori `SQLSTATE[HY000] [2002]` indicano spesso un problema di raggiungibilita' DB, non del model;
-- prima di correggere relation o phpdoc bisogna ripetere il comando in ambiente con MySQL locale raggiungibile;
-- solo il secondo run "live" puo' essere usato come base per valutare segnalazioni reali.
 
 ### Setup Nuovo Sviluppatore
 

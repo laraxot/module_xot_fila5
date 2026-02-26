@@ -1,14 +1,3 @@
----
-title: "Linee Guida per i Database in Laraxot"
-module: "Xot"
-type: how-to
-tags: [database, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "database guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Linee Guida per i Database in Laraxot
 
 Questo documento definisce le best practices per la gestione dei database nel framework Laraxot, inclusa la documentazione, la creazione di modelli e le migrazioni.

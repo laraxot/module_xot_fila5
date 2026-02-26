@@ -1,14 +1,3 @@
----
-title: "Testing Best Practices - Laraxot Framework"
-module: "Xot"
-type: concept
-tags: [testing, best, practices, uppercase]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing best practices uppercase"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -50,7 +39,7 @@ function mockXotData(): void
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
     
     $mockXotData->shouldReceive('getUserClass')
-        ->andReturn(\Modules\SaluteOra\Models\User::class);
+        ->andReturn(\Modules\<nome progetto>\Models\User::class);
         
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);

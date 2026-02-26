@@ -39,7 +39,7 @@ abstract class BaseModel extends XotBaseModel {
 
 **Moduli analizzati**:
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
-- Quaeris: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+- <nome progetto>: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -83,9 +83,9 @@ protected function casts(): array {
 
 **Violazione DRY**: Cms e altri moduli ridichiarano casts già presenti nel parent
 
-### 4. **Quaeris BaseModel - Pattern Anomalo**
+### 4. **<nome progetto> BaseModel - Pattern Anomalo**
 
-**Problema Critico**: `Modules\Quaeris\Models\BaseModel` NON estende `XotBaseModel`:
+**Problema Critico**: `Modules\<nome progetto>\Models\BaseModel` NON estende `XotBaseModel`:
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -96,7 +96,7 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia {
     use HasExtraTrait;
     use InteractsWithMedia;
 
-    protected $connection = 'quaeris';
+    protected $connection = '<nome progetto>';
     protected $casts = ['published_at' => 'datetime', ...]; // Array invece di metodo
     // ... Ridefinisce tutto manualmente
 }
@@ -118,7 +118,7 @@ use HasXotFactory;
 use RelationX;
 use Updater;
 
-// Quaeris/BaseModel duplica Updater:
+// <nome progetto>/BaseModel duplica Updater:
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -164,13 +164,13 @@ abstract class XotBaseModel extends Model {
 - Serve aggiungere traits specifici (es: Notify → InteractsWithMedia)
 - Serve override di casts specifici (es: User → verified_at)
 
-### Soluzione 2: Correggere Quaeris/BaseModel
+### Soluzione 2: Correggere <nome progetto>/BaseModel
 
-**Obiettivo**: Allineare Quaeris all'architettura standard
+**Obiettivo**: Allineare <nome progetto> all'architettura standard
 
 **Implementazione**:
 ```php
-// Modules/Quaeris/app/Models/BaseModel.php
+// Modules/<nome progetto>/app/Models/BaseModel.php
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -180,13 +180,13 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     use InteractsWithMedia;
     use HasExtraTrait;
 
-    protected $connection = 'quaeris'; // Auto-discovery se Soluzione 1 applicata
+    protected $connection = '<nome progetto>'; // Auto-discovery se Soluzione 1 applicata
 
-    protected $with = ['extra']; // Specifico Quaeris
+    protected $with = ['extra']; // Specifico <nome progetto>
 
     protected function casts(): array {
         return array_merge(parent::casts(), [
-            // Solo casts SPECIFICI Quaeris, se necessari
+            // Solo casts SPECIFICI <nome progetto>, se necessari
         ]);
     }
 }
@@ -279,7 +279,7 @@ Manutenibilità: +40%
 ## 🎯 Priorità di Implementazione
 
 ### 🔴 Priorità ALTA
-1. **Correggere Quaeris/BaseModel** (non segue standard)
+1. **Correggere <nome progetto>/BaseModel** (non segue standard)
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -295,8 +295,8 @@ Manutenibilità: +40%
 ### Fase 1: Auto-Discovery
 - `Modules/Xot/app/Models/XotBaseModel.php` (+15 righe)
 
-### Fase 2: Correzione Quaeris
-- `Modules/Quaeris/app/Models/BaseModel.php` (refactor completo)
+### Fase 2: Correzione <nome progetto>
+- `Modules/<nome progetto>/app/Models/BaseModel.php` (refactor completo)
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -309,14 +309,14 @@ Manutenibilità: +40%
 ### Fase 4: Documentazione
 - `Modules/Xot/docs/models/MODEL_ARCHITECTURE.md` (questa guida)
 - `Modules/User/docs/models/README.md`
-- `Modules/Quaeris/docs/models/README.md`
+- `Modules/<nome progetto>/docs/models/README.md`
 
 ## ✅ Checklist Implementazione
 
 - [ ] Implementare `getConnectionName()` in XotBaseModel
 - [ ] Testare auto-discovery con modello test
-- [ ] Correggere `Modules/Quaeris/app/Models/BaseModel.php`
-- [ ] Testare modelli Quaeris con nuova struttura
+- [ ] Correggere `Modules/<nome progetto>/app/Models/BaseModel.php`
+- [ ] Testare modelli <nome progetto> con nuova struttura
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -333,7 +333,7 @@ Manutenibilità: +40%
 ## 🎓 Lezioni Apprese
 
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
-2. **Consistenza è chiave**: Quaeris devia dallo standard → maggiore complessità
+2. **Consistenza è chiave**: <nome progetto> devia dallo standard → maggiore complessità
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 

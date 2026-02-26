@@ -1,14 +1,3 @@
----
-title: "XotComposer - Loop Infinito Fix"
-module: "Xot"
-type: concept
-tags: [view, composer, loop, infinite]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "view composer loop infinite fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotComposer - Loop Infinito Fix
 
 ## 🚨 Problema Critico Risolto
@@ -227,7 +216,7 @@ grep -r "auth()->user()" Modules/*/View/Composers/
 
 ## 🔗 Collegamenti
 
-- [XotComposer](/var/www/html/base_saluteora/laravel/Modules/Xot/app/View/Composers/XotComposer.php)
+- [XotComposer](/var/www/html/base_<nome progetto>/laravel/Modules/Xot/app/View/Composers/XotComposer.php)
 - [View Composer Laravel Docs](https://laravel.com/project_docs/views#view-composers)
 - [Container Resolution Laravel](https://laravel.com/project_docs/container)
 

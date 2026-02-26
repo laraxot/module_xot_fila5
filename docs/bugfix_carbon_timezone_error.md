@@ -70,10 +70,10 @@ public function registerTimezone(): void
 4. **Documentazione**: Consultare sempre la documentazione ufficiale delle librerie
 
 ## Collegamenti
-- [Carbon Documentation](https://carbon.nesbot.com/project_docs/)
-- [Laravel Timezone Configuration](https://laravel.com/project_docs/configuration#timezone)
+- [Carbon Documentation](https://carbon.nesbot.com/docs/)
+- [Laravel Timezone Configuration](https://laravel.com/docs/configuration#timezone)
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
-- [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
+- [Root Bugfix Guidelines](../../../docs/bugfix-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
