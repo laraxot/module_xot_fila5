@@ -1,14 +1,35 @@
-# DIVIETO ASSOLUTO DI IMPLEMENTARE table()
+# DIVIETO ASSOLUTO: MAI implementare table() — eccetto classi astratte
 
 ## Regola Fondamentale Inviolabile
 
-**Chi estende `XotBaseRelationManager` NON DEVE MAI implementare il metodo `table(Table $table): Table`.**
+**MAI usare il metodo `table(Table $table): Table`** nelle classi concrete. L'unica eccezione è `HasXotTable` che lo definisce come `final` e orchestra `getTableColumns()`, `getTableHeaderActions()`, ecc.
 
-Questa regola **NON HA ECCEZIONI** e si applica a tutti i RelationManager che estendono `XotBaseRelationManager`.
+**NON DEVE MAI implementare `table()`** chi estende:
+- `XotBaseRelationManager`
+- `XotBaseManageRelatedRecords` (pagine Manage* come ManagePdfStyle, ManageCharts)
+- `XotBaseTableWidget`
+
+Questa regola **NON HA ECCEZIONI**. Il metodo `table()` in `HasXotTable` è `final` e usa `getTableColumns()`, `getTableHeaderActions()`, ecc. Usare sempre `getTableColumns()` invece di delegare a `Resource::table()`.
+
+## Esempio ManagePdfStyle (ManageRelatedRecords)
+
+```php
+// ❌ ERRATO - delegare a Resource::table()
+public function table(Table $table): Table
+{
+    return PdfStyleResource::table($table);
+}
+
+// ✅ CORRETTO - override getTableColumns()
+public function getTableColumns(): array
+{
+    return PdfStyleResource::getTableColumnsSchema();
+}
+```
 
 ## Motivazione
 
-Il metodo `table()` è già implementato in `XotBaseRelationManager` e fa uso dei metodi:
+Il metodo `table()` è già implementato in `HasXotTable` (final) e fa uso dei metodi:
 - `getTableColumns()`
 - `getTableFilters()`
 - `getTableHeaderActions()`
@@ -21,6 +42,10 @@ Implementare `table()` in una classe derivata:
 3. **Interferisce** con il funzionamento del `LangServiceProvider`
 4. **Causa** comportamenti imprevedibili e difficili da debuggare
 
+## Regola Chiavi Stringhe — getTableColumns e getTableFilters
+
+**getTableColumns()** e **getTableFilters()** DEVONO SEMPRE restituire `array<string, ...>` — chiavi string obbligatorie, mai indici numerici. Vedi `.cursor/rules/gettablecolumns-string-keys.mdc`.
+
 ## Implementazione Corretta
 
 ```php
@@ -30,6 +55,7 @@ declare(strict_types=1);
 
 namespace Modules\NomeModulo\Filament\Resources\NomeResource\RelationManagers;
 
+use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class EsempioRelationManager extends XotBaseRelationManager
@@ -37,12 +63,14 @@ class EsempioRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'nomeRelazione';
 
     /**
-     * @return array<int, \Filament\Tables\Columns\Column>
+     * @return array<string, \Filament\Tables\Columns\Column>
+     * OBBLIGATORIO: chiavi string, mai indici numerici.
      */
     public function getTableColumns(): array
     {
         return [
-            // Definizione delle colonne
+            'name' => TextColumn::make('name'),
+            // Ogni colonna DEVE avere chiave stringa
         ];
     }
 
