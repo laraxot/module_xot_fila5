@@ -26,13 +26,14 @@ class ExportPdfAction extends Action
             ->tooltip(__('xot::actions.export_pdf.tooltip'))
             ->icon('ui-files.pdf')
             ->action(static function (ListRecords $livewire) {
+                
                 $filename =
                     class_basename($livewire).
                     '-'.
                     collect($livewire->tableFilters)->flatten()->implode('-').
                     '.pdf';
                 $query = $livewire->getFilteredTableQuery();
-                if (null === $query) {
+                if ($query === null) {
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();
@@ -40,8 +41,8 @@ class ExportPdfAction extends Action
                 $resource = $livewire->getResource();
                 $modelClass = $resource::getModel();
                 Assert::string($modelClass);
-                $view = app(GetViewByModelClassAction::class)->execute($modelClass, '.index.pdf');
-
+                $view = app(GetViewByModelClassAction::class)->execute($modelClass);
+                $view .= '.index.pdf';
                 $viewParams = [
                     'title' => $livewire->getTitle(),
                     'rows' => $rows,
