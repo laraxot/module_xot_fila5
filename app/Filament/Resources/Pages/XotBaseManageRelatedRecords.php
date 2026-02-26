@@ -7,6 +7,7 @@ namespace Modules\Xot\Filament\Resources\Pages;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Filament\Actions\Action;
+use Filament\Actions\AssociateAction;
 use Filament\Actions\CreateAction;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Schemas\Components\Component;
@@ -103,15 +104,21 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
     /**
      * Definisce le azioni dell'intestazione della tabella.
-     * Questo metodo può essere sovrascritto nelle classi figlie.
+     * Override shouldShowAssociateAction() in subclasses to add the associate action.
      *
      * @return array<string, Action>
      */
     public function getTableHeaderActions(): array
     {
-        return [
+        $actions = [
             'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
         ];
+
+        if ($this->shouldShowAssociateAction()) {
+            $actions['associate'] = AssociateAction::make();
+        }
+
+        return $actions;
     }
 
     public static function getNavigationLabel(): string
