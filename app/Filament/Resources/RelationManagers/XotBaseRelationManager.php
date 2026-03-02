@@ -76,7 +76,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $arr[1];
     }
 
-    public function form(Schema $schema): Schema
+    final public function form(Schema $schema): Schema
     {
         /** @var array<string, Component> $formSchema */
         $formSchema = $this->getFormSchema();
