@@ -9,10 +9,8 @@
 
 **Tutti i metodi Filament che restituiscono array DEVONO usare chiavi string quando possibile. Filament v4 accetta anche chiavi int, ma preferire sempre string.**
 
-**🚨 CRITICO per getTableColumns**: Il metodo `getTableColumns()` **DEVE SEMPRE** restituire `array<string, Column>` — le chiavi string sono **OBBLIGATORIE**, mai indici numerici. Vedi `.cursor/rules/gettablecolumns-string-keys.mdc`.
-
 Metodi interessati:
-- `getTableColumns()` → `array<string, Column>` (**OBBLIGATORIO** — sempre chiavi string)
+- `getTableColumns()` → `array<string, Column>` (preferito) o `array<string|int, Column>`
 - `getFormSchema()` → `array<string, Component>` (preferito) o `array<string|int, Component>`
 - `getTableBulkActions()` → `array<string, BulkAction>` (preferito) o `array<string|int, BulkAction>`
 - `getTableActions()` → `array<string, Action>` (preferito) o `array<string|int, Action>`

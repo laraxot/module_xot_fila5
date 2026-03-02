@@ -13,7 +13,7 @@ Questa regola si applica a **TUTTI** questi metodi:
 
 ### Resources e Pages
 - `getFormSchema()` → `array<string, Component>` (chiavi string obbligatorie)
-- `getTableColumns()` → `array<string, Column>` (**OBBLIGATORIO** — DEVE SEMPRE restituire chiavi string, mai indici numerici. Vedi `.cursor/rules/gettablecolumns-string-keys.mdc`)
+- `getTableColumns()` → `array<string, Column>` (chiavi string obbligatorie)
 - `getTableActions()` → `array<string, Action|ActionGroup>` (chiavi string obbligatorie)
 - `getTableBulkActions()` → `array<string, BulkAction>` (chiavi string obbligatorie)
 - `getTableFilters()` → `array<string, Filter>` (chiavi string obbligatorie)
