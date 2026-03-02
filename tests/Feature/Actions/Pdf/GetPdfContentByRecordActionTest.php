@@ -48,7 +48,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create();
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass($action);
+        $reflection = new \ReflectionClass($this->action);
         $method = $reflection->getMethod('generateViewName');
         $method->setAccessible(true);
 
@@ -66,7 +66,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass($action);
+        $reflection = new \ReflectionClass($this->action);
         $method = $reflection->getMethod('generateFilename');
         $method->setAccessible(true);
 
@@ -97,7 +97,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $record->nome = 'Mario';
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass($action);
+        $reflection = new \ReflectionClass($this->action);
         $method = $reflection->getMethod('generateFilename');
         $method->setAccessible(true);
 
@@ -115,7 +115,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create(['name' => 'Test User']);
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass($action);
+        $reflection = new \ReflectionClass($this->action);
         $method = $reflection->getMethod('prepareViewParameters');
         $method->setAccessible(true);
 

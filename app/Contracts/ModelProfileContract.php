@@ -32,7 +32,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Assign the given role to the model.
      *
-     * @param array<int, string|int|Role>|string|int|Role|Collection<int, Role> $roles
+     * @param array<int, string|int|\Spatie\Permission\Contracts\Role>|string|int|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role> $roles
      *
      * @return $this
      */
@@ -42,7 +42,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Determine if the model has (one of) the given role(s).
      *
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
+     * @param string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role> $roles
      */
     public function hasRole(
         string|int|array|Role|Collection $roles,
@@ -54,7 +54,7 @@ interface ModelProfileContract extends ModelContract
      *
      * Alias to hasRole() but without Guard controls
      *
-     * @param string|int|array<int, string|int|Role>|Role|Collection<int, Role> $roles
+     * @param string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role> $roles
      */
     public function hasAnyRole(string|int|array|Role|Collection $roles = [
     ]): bool;

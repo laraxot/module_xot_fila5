@@ -90,10 +90,8 @@ final class Module extends BaseModel
             ];
         });
 
-        $rows = array_values($modules);
-
-        /* @var array<int, array<string, mixed>> $rows */
-        return $rows;
+        /* @var array<int, array<string, mixed>> */
+        return array_values($modules);
     }
 
     protected function casts(): array

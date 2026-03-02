@@ -6,12 +6,11 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Contracts\Support\Htmlable;
-use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
@@ -50,6 +49,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
         return (string) $value;
     }
+
+    /**
+     * Restituisce lo schema del form per i record correlati.
+     *
+     * @return array<Component>
+     */
+    // abstract public static function getFormSchema(): array;
 
     /**
      * Configura lo schema per i record correlati.
@@ -99,7 +105,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return array<string, TextColumn>
      */
     #[\Override]
-    protected function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->label('ID')->sortable(),

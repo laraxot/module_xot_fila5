@@ -24,17 +24,6 @@ class RouteDynService
 
     /**
      * @param array<string, mixed> $v
-     */
-    private static function requireStringValue(array $v, string $key): string
-    {
-        Assert::keyExists($v, $key);
-        Assert::string($value = $v[$key], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-
-        return $value;
-    }
-
-    /**
-     * @param array<string, mixed> $v
      *
      * @return array<string, mixed>
      */
@@ -231,13 +220,8 @@ class RouteDynService
     public static function getMethod(array $v, ?string $_namespace): array
     {
         if (isset($v['method'])) {
-            $methods = array_values(array_filter(
-                Arr::wrap($v['method']),
-                static fn (mixed $method): bool => is_string($method),
-            ));
-
-            /* @var array<int, string> $methods */
-            return $methods;
+            /* @var array<int, string> */
+            return Arr::wrap($v['method']);
         }
 
         return ['get', 'post'];
@@ -307,7 +291,7 @@ class RouteDynService
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
-        if (! array_key_exists('name', $v) || null === $v['name']) {
+        if (null === $v['name']) {
             return;
         }
         $name = self::requireStringValue($v, 'name');
@@ -345,9 +329,8 @@ class RouteDynService
         $controller = self::getController($v, $namespace);
         foreach ($v['acts'] as $v1) {
             Assert::isArray($v1);
-            /** @var array<string, mixed> $act */
-            $act = $v1;
-            $act['controller'] = $controller;
+            /* @var array<string, mixed> $v1 */
+            $v1['controller'] = $controller;
 
             $method = self::getMethod($act, $namespace);
             $uri = self::getUri($act, $namespace);

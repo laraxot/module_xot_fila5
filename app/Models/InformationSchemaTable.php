@@ -7,6 +7,7 @@ namespace Modules\Xot\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
+use Modules\Tenant\Contracts\SushiToJsonContract;
 use Modules\Tenant\Models\Traits\SushiToJson;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
@@ -38,6 +39,8 @@ use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
  * @method static Builder<static>|InformationSchemaTable whereTableSchema($value)
  * @method static Builder<static>|InformationSchemaTable whereUpdatedAt($value)
  * @method static Builder<static>|InformationSchemaTable whereUpdatedBy($value)
+ * @method static int                                    getModelCount(class-string<Model> $modelClass)
+ * @method static void                                   updateModelCount(class-string<Model> $modelClass, int $total)
  *
  * @mixin \Eloquent
  */

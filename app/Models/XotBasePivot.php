@@ -63,7 +63,8 @@ abstract class XotBasePivot extends EloquentPivot
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
-            return $this->normalizeConnectionName($this->connection);
+            /* @var string */
+            return $this->connection;
         }
 
         // Extract module name from namespace: Modules\User\... → user

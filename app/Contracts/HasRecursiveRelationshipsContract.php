@@ -229,7 +229,7 @@ interface HasRecursiveRelationshipsContract
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @param Builder $query
+     * @param \Illuminate\Database\Query\Builder $query
      *
      * @return AdjacencyBuilder
      */

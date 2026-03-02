@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Database\Migrations;
 
-use Doctrine\DBAL\Schema\Index;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Migrations\Migration as LaravelMigration;
 use Illuminate\Database\Schema\Blueprint;
@@ -117,7 +116,7 @@ abstract class XotBaseMigration extends LaravelMigration
      *
      * @throws \Doctrine\DBAL\Exception
      *
-     * @return array<Index>
+     * @return array<\Doctrine\DBAL\Schema\Index>
      */
     // public function getTableIndexes(): array
     // {

@@ -84,7 +84,8 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
-            return $this->normalizeConnectionName($this->connection);
+            /* @var string */
+            return $this->connection;
         }
 
         // Extract module name from namespace: Modules\Rating\... → rating

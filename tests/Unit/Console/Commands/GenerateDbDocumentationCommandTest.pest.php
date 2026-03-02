@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Console\Commands;
-
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Tests\TestCase;

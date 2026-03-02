@@ -141,7 +141,7 @@ abstract class XotBasePage extends Page implements HasForms
         $modelNamespace = 'Modules\\'.$moduleName.'\\Models\\'.$modelName;
 
         // Verifica che la classe del modello esista
-        if (! class_exists($modelNamespace) || ! is_subclass_of($modelNamespace, Model::class)) {
+        if (! class_exists($modelNamespace)) {
             throw new \LogicException("Model class {$modelNamespace} does not exist");
         }
 
