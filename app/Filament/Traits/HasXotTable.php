@@ -132,7 +132,7 @@ trait HasXotTable
     /**
      * Get table heading.
      */
-    protected function getTableHeading(): \Illuminate\Contracts\Support\Htmlable|string|null
+    protected function getTableHeading(): ?string
     {
         $key = static::getKeyTrans('table.heading');
         /** @var string|array<int|string,mixed>|null $trans */
