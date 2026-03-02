@@ -10,11 +10,26 @@ uses(TestCase::class);
 
 describe('ModuleService', function () {
     beforeEach(function () {
-        $this->service = new ModuleService();
+        $this->service = (new ModuleService())->setName('TestModule');
     });
 
     it('can be instantiated', function () {
         expect($this->service)->toBeInstanceOf(ModuleService::class);
+    });
+
+    it('has correct module name property', function () {
+        $reflection = new ReflectionClass($this->service);
+        $nameProperty = $reflection->getProperty('name');
+        $nameProperty->setAccessible(true);
+
+        expect($nameProperty->getValue($this->service))->toBe('TestModule');
+    });
+
+    it('can be instantiated with different module names', function () {
+        $service1 = (new ModuleService())->setName('Chart');
+        $service2 = (new ModuleService())->setName('User');
+
+        expect($service1)->toBeInstanceOf(ModuleService::class)->and($service2)->toBeInstanceOf(ModuleService::class);
     });
 
     it('has getModels method', function () {
@@ -77,7 +92,7 @@ describe('ModuleService', function () {
     });
 
     it('handles empty module gracefully', function () {
-        $emptyService = new ModuleService()->setName('NonExistentModule');
+        $emptyService = (new ModuleService())->setName('NonExistentModule');
         $result = $emptyService->getModels();
 
         expect($result)->toBeArray()->and($result)->toBeEmpty();
