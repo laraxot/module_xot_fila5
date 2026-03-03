@@ -107,10 +107,7 @@
 - One class per file
 
 ## DOCUMENTATION
-- **MANDATORY**: Always study, update, and improve 'docs' folders BEFORE taking any action
-- **MANDATORY**: Before implementation, write the why, purpose, rationale, policy, vision, and philosophy of the task in the relevant module/theme docs
-- Treat `docs/` as the handoff layer between AI agents working on the same repository
-- Evaluate the creation of GitHub Issues or GitHub Discussions to track decisions and progress
+- Always consult docs folders before taking action
 - Never include specific absolute paths (e.g., base_*_fila5)
 - Document model relationships and field purposes
 - Add PHPDoc blocks to all classes and methods

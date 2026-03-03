@@ -61,7 +61,7 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-     base_<nome progetto>_fila5_mono/
+     base_predict_fila5_mono/
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
