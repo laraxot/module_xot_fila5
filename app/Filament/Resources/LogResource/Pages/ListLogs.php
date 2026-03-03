@@ -14,7 +14,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Override;
 
 /**
  * @see LogResource

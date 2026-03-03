@@ -6,7 +6,6 @@ namespace Modules\Xot\Models\Policies;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\CacheLock;
-use Override;
 
 class CacheLockPolicy extends XotBasePolicy
 {
