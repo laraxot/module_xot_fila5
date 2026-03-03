@@ -33,7 +33,7 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 
 ---
 
-**Ultimo aggiornamento**: 31 Gennaio 2026
+**
 # Roadmap Modulo Xot - Completamento e Miglioramenti
 
 "Il motore che muove l'universo Quaeris."
@@ -67,4 +67,4 @@ Consolidare Xot come un framework "Zero-Config" per Laravel 12, dove ogni nuovo 
 - [ ] 100% test coverage sui dispatcher di Actions.
 
 ---
-**Ultimo aggiornamento**: 31 Gennaio 2026
+**

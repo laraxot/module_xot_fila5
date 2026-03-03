@@ -542,4 +542,4 @@ Prima di committare modifiche ai modelli:
 - **Religion**: Strong typing attraverso PHPDoc e type hints
 - **Zen**: IDE intelligente = sviluppatore felice
 
-*Ultimo aggiornamento: 2026-02-26*
+*

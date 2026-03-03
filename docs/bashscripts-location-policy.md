@@ -150,7 +150,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
+**
 **Motivazione**: Enforcement della separazione tra codice applicativo e script operativi
 **Filosofia**: "Separazione delle responsabilità, organizzazione scalabile, deploy pulito"
 ## Regola Operativa Rafforzata
