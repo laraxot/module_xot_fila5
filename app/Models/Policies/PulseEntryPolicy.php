@@ -6,6 +6,7 @@ namespace Modules\Xot\Models\Policies;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\PulseEntry;
+use Override;
 
 class PulseEntryPolicy extends XotBasePolicy
 {
