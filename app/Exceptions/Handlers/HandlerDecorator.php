@@ -6,6 +6,7 @@ namespace Modules\Xot\Exceptions\Handlers;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
+use Throwable;
 
 class HandlerDecorator implements ExceptionHandler
 {

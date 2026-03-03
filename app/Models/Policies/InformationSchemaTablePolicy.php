@@ -6,6 +6,7 @@ namespace Modules\Xot\Models\Policies;
 
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\InformationSchemaTable;
+use Override;
 
 class InformationSchemaTablePolicy extends XotBasePolicy
 {
