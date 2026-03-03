@@ -261,7 +261,7 @@ public function it_can_render_edit_page()
  * @property string $table_name The name of the table
  * @property int $model_count The count of models in the table
  * @property \Illuminate\Support\Carbon|null $created_at When the record was created
- * @property \Illuminate\Support\Carbon|null $updated_at When the record was last updated
+ * @property \Illuminate\Support\Carbon|null $updated_at When the record was 
  *
  * @method static InformationSchemaTable|null find($id)
  * @method static \Illuminate\Database\Eloquent\Builder|InformationSchemaTable query()
