@@ -6,6 +6,9 @@ namespace Modules\Xot\Tests\Unit\Services;
 
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Services\ThemeService;
+use Modules\Xot\Tests\TestCase;
+
+uses(TestCase::class);
 
 it('sets and gets theme', function (): void {
     ThemeService::setTheme('test-theme');

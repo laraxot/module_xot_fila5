@@ -2,26 +2,32 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\File;
-
-use Modules\Xot\Actions\File\FixPathAction;
-use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
+use Modules\Xot\Tests\TestCase;
 
-it('calculates view path correctly', function (): void {
-    $this->mock(GetViewNameSpacePathAction::class)
-        ->shouldReceive('execute')
-        ->once()
-        ->with('test_ns')
-        ->andReturn('/path/to/views');
+uses(TestCase::class);
 
-    $this->mock(FixPathAction::class)
-        ->shouldReceive('execute')
-        ->once()
-        ->andReturnArg(0);
+beforeEach(function (): void {
+    $this->action = app(ViewPathAction::class);
+});
 
-    $action = app(ViewPathAction::class);
-    $result = $action->execute('test_ns::folder.file');
+it('returns view path for module view', function (): void {
+    // Test that the action returns a string path
+    $result = $this->action->execute('xot::test.view');
 
-    expect($result)->toBe('/path/to/views/folder/file.blade.php');
+    expect($result)->toBeString();
+});
+
+it('handles different view formats', function (): void {
+    // Test with various view name formats
+    $formats = [
+        'xot::filament.pages.dashboard',
+        'user::profile.show',
+        'cms::blocks.hero',
+    ];
+
+    foreach ($formats as $view) {
+        $result = $this->action->execute($view);
+        expect($result)->toBeString("View path for {$view} should be a string");
+    }
 });

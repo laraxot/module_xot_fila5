@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions;
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
@@ -11,6 +9,9 @@ use Modules\Xot\Actions\GetModelTypeByModelAction;
 use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Tests\Fixtures\DemoModel;
 use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
+use Tests\TestCase;
+
+uses(TestCase::class);
 
 it('gets model class by model type from morph map', function (): void {
     config()->set('morph_map', ['demo' => DemoModel::class]);
@@ -31,9 +32,8 @@ it('throws when model type key is missing in morph map', function (): void {
 
     try {
         app(GetModelClassByModelTypeAction::class)->execute('missing');
-    } catch (Throwable $e) {
-        expect($e)->toBeInstanceOf(InvalidArgumentException::class);
-
+    } catch (\Throwable $e) {
+        expect($e)->toBeInstanceOf(\InvalidArgumentException::class);
         return;
     }
     $this->fail('Exception not thrown');

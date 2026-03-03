@@ -2,36 +2,48 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Cast;
-
 use Illuminate\Database\Eloquent\Model;
-use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
+use Tests\TestCase;
 
-it('converts model attributes to array correctly', function (): void {
-    $model = new Activity();
-    $model->setRawAttributes(['name' => 'Test']);
+uses(TestCase::class);
+
+it('returns attributesToArray when model is healthy', function (): void {
+    $model = new class extends Model
+    {
+        protected $guarded = [];
+    };
+    $model->forceFill(['name' => 'Mario']);
 
     $action = app(SafeArrayByModelCastAction::class);
-    $result = $action->execute($model);
 
-    expect($result)->toBeArray();
-    expect($result)->toHaveKey('name');
+    expect($action->execute($model))->toHaveKey('name', 'Mario');
 });
 
-it('falls back to safeExecute on error', function (): void {
-    $model = \Mockery::mock(Model::class);
-    $model->shouldReceive('attributesToArray')->andThrow(new \Exception('Mock error'));
-    $model->shouldReceive('getAttributes')->andReturn(['name' => 'Fallback']);
-    $model->shouldReceive('getAttribute')->andReturn('Fallback');
-    // Allow any set call
-    $model->shouldReceive('setAttribute');
+it('falls back to safeExecute when attributesToArray fails', function (): void {
+    $model = new class extends Model
+    {
+        public function attributesToArray(): array
+        {
+            throw new Exception('boom');
+        }
+
+        public function getAttributes(): array
+        {
+            return ['ok' => '1', 'bad' => '2'];
+        }
+
+        public function getAttribute($key): mixed
+        {
+            if ('bad' === $key) {
+                throw new Error('cannot read');
+            }
+
+            return 'value';
+        }
+    };
 
     $action = app(SafeArrayByModelCastAction::class);
-    $result = $action->execute($model);
 
-    expect($result)->toBeArray();
-    expect($result)->toHaveKey('name', 'Fallback');
-
-    \Mockery::close();
+    expect($action->execute($model))->toBe(['ok' => 'value']);
 });

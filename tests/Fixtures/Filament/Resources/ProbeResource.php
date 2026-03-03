@@ -2,15 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Fixtures\Filament\Resources;
+namespace Modules\Xot\Filament\Resources;
 
+use Filament\Resources\Pages\Page;
 use Filament\Schemas\Components\Wizard\Step;
-use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Resources\ProbeResource\Pages\CreateProbe;
+use Modules\Xot\Filament\Resources\ProbeResource\Pages\EditProbe;
+use Modules\Xot\Filament\Resources\ProbeResource\Pages\ListProbes;
+use Modules\Xot\Filament\Resources\ProbeResource\Pages\ViewProbe;
+use Modules\Xot\Models\Probe;
 
 class ProbeResource extends XotBaseResource
 {
-    protected static string $module = 'Xot';
-
     protected static ?string $model = null;
 
     public static function getFormSchema(): array
@@ -38,3 +41,29 @@ class ProbeResource extends XotBaseResource
         static::$model = null;
     }
 }
+
+namespace Modules\Xot\Filament\Resources\ProbeResource\Pages;
+
+use Filament\Resources\Pages\Page;
+use Modules\Xot\Filament\Resources\ProbeResource;
+
+class ListProbes extends Page
+{
+    protected static string $resource = ProbeResource::class;
+}
+
+class CreateProbe extends Page
+{
+    protected static string $resource = ProbeResource::class;
+}
+
+class EditProbe extends Page
+{
+    protected static string $resource = ProbeResource::class;
+}
+
+class ViewProbe extends Page
+{
+    protected static string $resource = ProbeResource::class;
+}
+

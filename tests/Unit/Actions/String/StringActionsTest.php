@@ -8,11 +8,14 @@ use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 use Modules\Xot\Actions\String\SanitizeAction;
+use Tests\TestCase;
+
+uses(TestCase::class);
 
 test('get pronounceable password action works', function () {
     $action = app(GetPronounceablePasswordAction::class);
     $password = $action->execute(12);
-
+    
     expect(strlen($password))->toBeGreaterThanOrEqual(8); // min length logic inside
     // Should contain at least one digit and some characters from the special set
     expect($password)->toMatch('/[0-9]/');
@@ -22,7 +25,7 @@ test('get str between starts with action works', function () {
     $action = app(GetStrBetweenStartsWithAction::class);
     $body = 'prefix { content { inner } } suffix';
     $result = $action->execute($body, 'content', '{', '}');
-
+    
     expect($result)->toContain('content { inner }');
 });
 

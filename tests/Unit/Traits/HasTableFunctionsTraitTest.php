@@ -7,7 +7,11 @@ namespace Modules\Xot\Tests\Unit\Traits;
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasTableFunctionsTrait;
+use Mockery;
+
+uses(TestCase::class);
 
 it('gets table columns', function (): void {
     $class = new class {
@@ -23,11 +27,7 @@ it('gets table columns', function (): void {
 it('gets table actions', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;
-
-        protected function getResourceSlug(): string
-        {
-            return 'test-slug';
-        }
+        protected function getResourceSlug(): string { return 'test-slug'; }
     };
 
     $actions = $class->getTableActions();
@@ -49,12 +49,8 @@ it('gets table bulk actions', function (): void {
 it('has default resource slug', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;
-
         // Accessing protected method via reflection or public wrapper
-        public function getSlug(): string
-        {
-            return $this->getResourceSlug();
-        }
+        public function getSlug(): string { return $this->getResourceSlug(); }
     };
 
     expect($class->getSlug())->toBe('default');

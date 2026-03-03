@@ -4,41 +4,38 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
-use Illuminate\Support\Facades\File;
-use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
+use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
+use Tests\TestCase;
+use Illuminate\Support\Facades\File;
 
-it('gets tenant config array correctly', function (): void {
-    $configName = 'test_config';
-    $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
-    $configData = ['key' => 'value'];
+uses(TestCase::class);
 
-    File::put($tempPath, 'return '.var_export($configData, true).';');
-
-    $this->mock(GetTenantFilePathAction::class)
+test('get tenant config actions work', function () {
+    $name = 'test_config';
+    $path = tempnam(sys_get_temp_dir(), 'test_tenant_config') . '.php';
+    $data = ['foo' => 'bar'];
+    
+    File::put($path, "<?php return ['foo' => 'bar'];");
+    
+    $this->mock(GetTenantConfigPathAction::class)
         ->shouldReceive('execute')
-        ->once()
-        ->with($configName.'.php')
-        ->andReturn($tempPath);
-
+        ->with($name)
+        ->andReturn($path);
+        
     $action = app(GetTenantConfigArrayAction::class);
-    $result = $action->execute($configName);
-
-    expect($result)->toBe($configData);
-
-    File::delete($tempPath);
+    $result = $action->execute($name);
+    
+    expect($result)->toBe($data);
+    
+    File::delete($path);
 });
 
-it('returns empty array if tenant config file does not exist', function (): void {
-    $configName = 'non_existent';
-
-    $this->mock(GetTenantFilePathAction::class)
+test('get tenant config array action returns empty if file does not exist', function () {
+    $this->mock(GetTenantConfigPathAction::class)
         ->shouldReceive('execute')
-        ->once()
-        ->andReturn('/path/to/nothing.php');
-
+        ->andReturn('/non/existent/path.php');
+        
     $action = app(GetTenantConfigArrayAction::class);
-    $result = $action->execute($configName);
-
-    expect($result)->toBe([]);
+    expect($action->execute('invalid'))->toBe([]);
 });

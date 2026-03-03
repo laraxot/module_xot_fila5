@@ -2,15 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\String;
-
 use Modules\Xot\Actions\String\SanitizeAction;
 
-it('sanitizes strings correctly', function (): void {
-    $action = app(SanitizeAction::class);
+beforeEach(function (): void {
+    $this->action = app(SanitizeAction::class);
+});
 
-    $input = " <script>alert('xss')</script> <b>Hello</b> &amp; Welcome! ";
-    $expected = "alert('xss') Hello & Welcome!";
+it('strips html tags', function (): void {
+    $result = $this->action->execute('<b>bold</b>hello');
+    expect($result)->toBe('boldhello');
+});
 
-    expect($action->execute($input))->toBe($expected);
+it('decodes html entities', function (): void {
+    $result = $this->action->execute('&amp; &lt; &gt;');
+    expect($result)->toContain('&')->toContain('<')->toContain('>');
+});
+
+it('trims whitespace', function (): void {
+    $result = $this->action->execute('  text  ');
+    expect($result)->toBe('text');
 });

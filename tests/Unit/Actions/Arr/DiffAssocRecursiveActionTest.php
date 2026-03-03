@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
+use Tests\TestCase;
 
-it('calculates recursive diff correctly', function (): void {
+uses(TestCase::class);
+
+test('diff assoc recursive action works correctly', function () {
     $arr1 = [
         'a' => ['id' => 1, 'name' => 'Test'],
         'b' => ['id' => 2, 'name' => 'Test 2'],
@@ -23,7 +26,7 @@ it('calculates recursive diff correctly', function (): void {
         ->and($result['b'])->toBe(['id' => 2, 'name' => 'Test 2']);
 });
 
-it('handles numeric strings in diff', function (): void {
+test('diff assoc recursive action handles numeric strings', function () {
     $arr1 = [
         'a' => ['id' => '1', 'name' => 'Test'],
     ];
@@ -34,12 +37,15 @@ it('handles numeric strings in diff', function (): void {
     $action = app(DiffAssocRecursiveAction::class);
     $result = $action->execute($arr1, $arr2);
 
-    // fixType converts '1' to 1, so they should be equal
+    // fixType converts '1' to 1, so they should be equal and diff should be empty
     expect($result)->toBeEmpty();
 });
 
-it('throws exception for non-array items in fixType', function (): void {
-    $data = ['a' => 'not-an-array'];
-
-    expect(fn () => DiffAssocRecursiveAction::fixType($data))->toThrow(\Exception::class);
+test('diff assoc recursive action throws exception for non-array item', function () {
+    $arr1 = [
+        'a' => 'not an array',
+    ];
+    
+    $action = app(DiffAssocRecursiveAction::class);
+    expect(fn() => $action->execute($arr1, []))->toThrow(\Exception::class);
 });

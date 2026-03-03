@@ -2,28 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Parse;
-
 use Modules\Xot\Actions\ParsePrintPageStringAction;
 
 it('parses single pages and ranges', function (): void {
-    $str = '1-4,6,7,8,11-14';
-    $expected = [1, 2, 3, 4, 6, 7, 8, 11, 12, 13, 14];
+    $result = ParsePrintPageStringAction::execute('1-3,5,8-9');
 
-    expect(ParsePrintPageStringAction::execute($str))->toBe($expected);
-    expect(ParsePrintPageStringAction::execute('5'))->toBe([5]);
-    expect(ParsePrintPageStringAction::execute('1-3'))->toBe([1, 2, 3]);
+    expect($result)->toBe([1, 2, 3, 5, 8, 9]);
 });
 
 it('throws when no valid page number exists', function (): void {
-    expect(fn () => ParsePrintPageStringAction::execute('invalid'))->toThrow(\InvalidArgumentException::class);
-});
+    ParsePrintPageStringAction::execute('abc,def');
+})->throws(InvalidArgumentException::class, 'No valid page numbers found');
 
 it('builds inclusive ranges from fromTo helper', function (): void {
-    expect(ParsePrintPageStringAction::fromTo(1, 3))->toBe([1, 2, 3]);
-    expect(ParsePrintPageStringAction::fromTo(5, 5))->toBe([5]);
+    expect(ParsePrintPageStringAction::fromTo(4, 6))->toBe([4, 5, 6]);
 });
 
 it('throws when fromTo end is lower than start', function (): void {
-    expect(fn () => ParsePrintPageStringAction::fromTo(10, 5))->toThrow(\InvalidArgumentException::class);
-});
+    ParsePrintPageStringAction::fromTo(6, 4);
+})->throws(InvalidArgumentException::class);

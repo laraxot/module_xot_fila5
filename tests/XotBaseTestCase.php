@@ -4,32 +4,27 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests;
 
-use Illuminate\Database\DatabaseManager;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Translation\ArrayLoader;
-use Illuminate\Translation\Translator;
-use Modules\Tenant\Models\Tenant;
-use Modules\UI\Models\Asset;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 
 /**
  * Class XotBaseTestCase.
  *
- * Base test case for all modules.
- * Note: DatabaseTransactions is already included here to be shared by all tests.
+ * Base test case for all Laraxot modules.
+ * Centralizes application bootstrapping, common bindings, and test helpers.
+ * DRY + KISS + Laraxot: un solo posto per setup, mai estendere Illuminate\Foundation\Testing\TestCase.
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
     use CreatesApplication;
 
     /**
-     * @return array<int, class-string<ServiceProvider>>
+     * Package providers for module tests (Orchestra Testbench compatibility).
+     * I moduli che usano parent::getPackageProviders() ricevono XotServiceProvider.
+     *
+     * @return array<int, class-string<\Illuminate\Support\ServiceProvider>>
      */
     protected function getPackageProviders($app): array
     {
@@ -50,36 +45,12 @@ abstract class XotBaseTestCase extends BaseTestCase
         // This ensures the application is in a consistent state for unit tests.
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function ($app) {
-                return new Translator(
-                    new ArrayLoader(),
+                return new \Illuminate\Translation\Translator(
+                    new \Illuminate\Translation\ArrayLoader(),
                     'en'
                 );
             });
         }
-    }
-
-    protected function tearDown(): void
-    {
-        // Prevent connection accumulation across a long multi-connection suite.
-        try {
-            if (isset($this->app)) {
-                /** @var DatabaseManager $db */
-                $db = $this->app->make('db');
-
-                /** @var array<string, mixed> $connections */
-                $connections = (array) config('database.connections', []);
-                foreach (array_keys($connections) as $name) {
-                    $db->disconnect((string) $name);
-                }
-
-                $db->disconnect();
-                $db->purge();
-            }
-        } catch (\Throwable) {
-            // Ignore teardown disconnection issues to avoid masking test failures.
-        }
-
-        parent::tearDown();
     }
 
     /**
@@ -93,7 +64,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Get the user class from XotData.
      *
-     * @return class-string<Model&UserContract>
+     * @return class-string<\Illuminate\Database\Eloquent\Model&\Modules\Xot\Contracts\UserContract>
      */
     protected static function getUserClass(): string
     {
@@ -103,42 +74,12 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test user with optional attributes.
      *
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
         $userClass = static::getUserClass();
 
         return $userClass::factory()->create($attributes);
-    }
-
-    /**
-     * Create a test tenant with optional attributes.
-     *
-     * @param array<string, mixed> $attributes
-     */
-    protected static function createTestTenant(array $attributes = []): Tenant
-    {
-        return Tenant::factory()->create($attributes);
-    }
-
-    /**
-     * Create a test module with optional attributes.
-     *
-     * @param array<string, mixed> $attributes
-     */
-    protected static function createTestModule(array $attributes = []): Module
-    {
-        return Module::factory()->create($attributes);
-    }
-
-    /**
-     * Create a test asset with optional attributes.
-     *
-     * @param array<string, mixed> $attributes
-     */
-    protected static function createTestAsset(array $attributes = []): Asset
-    {
-        return Asset::factory()->create($attributes);
     }
 }
