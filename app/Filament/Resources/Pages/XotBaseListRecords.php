@@ -58,7 +58,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     {
         return ['id' => 'desc'];
     }
-    
+
     /**
      * Get the header actions.
      *
@@ -79,7 +79,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     protected function paginateTableQuery(Builder $query): Paginator
     {
         $paginator = $query->fastPaginate(
-            $this->getTableRecordsPerPage() === 'all' ? $query->count() : $this->getTableRecordsPerPage(),
+            'all' === $this->getTableRecordsPerPage() ? $query->count() : $this->getTableRecordsPerPage(),
         );
 
         Assert::isInstanceOf($paginator, Paginator::class);

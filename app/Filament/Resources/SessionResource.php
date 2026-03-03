@@ -8,7 +8,6 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Components\Component;
 use Modules\Xot\Models\Session;
-use Override;
 
 class SessionResource extends XotBaseResource
 {
