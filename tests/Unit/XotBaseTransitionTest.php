@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\States\Transitions\XotBaseTransition;
 use Modules\Notify\Datas\RecordNotificationData;
+use Modules\Xot\States\Transitions\XotBaseTransition;
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -11,7 +11,7 @@ uses(TestCase::class);
 describe('XotBaseTransition', function () {
     beforeEach(function () {
         // Create a test record
-        $this->record = new \Modules\User\Models\User();
+        $this->record = new Modules\User\Models\User();
         $this->record->id = '1';
         $this->record->name = 'Test User';
         $this->record->email = 'test@example.com';
@@ -31,7 +31,7 @@ describe('XotBaseTransition', function () {
             }
 
             /** @param array<string, mixed> $data */
-            public function sendRecipientNotification(\Modules\Notify\Datas\RecordNotificationData $recipient, array $data): void
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
             {
                 // Mock: evita invio reale e dipendenze (RecordNotification, getNotificationSlug su record)
             }
@@ -52,7 +52,7 @@ describe('XotBaseTransition', function () {
     });
 
     it('can send notifications without errors', function () {
-        expect(fn() => $this->transition->sendNotifications())->not->toThrow(Exception::class);
+        expect(fn () => $this->transition->sendNotifications())->not->toThrow(Exception::class);
     });
 
     it('returns correct notification recipients structure', function () {
@@ -63,7 +63,7 @@ describe('XotBaseTransition', function () {
 
     it('can send recipient notification', function () {
         $recipient = RecordNotificationData::from(['record' => $this->record, 'channel' => 'mail']);
-        expect(fn() => $this->transition->sendRecipientNotification($recipient, []))->not->toThrow(Exception::class);
+        expect(fn () => $this->transition->sendRecipientNotification($recipient, []))->not->toThrow(Exception::class);
     });
 
     it('validates abstract class structure', function () {
