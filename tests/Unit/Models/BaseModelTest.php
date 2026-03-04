@@ -18,7 +18,7 @@ if (! class_exists(TestConcreteBaseModel::class)) {
 }
 
 beforeEach(function () {
-    $this->baseModel = new TestConcreteBaseModel;
+    $this->baseModel = new TestConcreteBaseModel();
 });
 
 test('base model extends eloquent model', function () {
