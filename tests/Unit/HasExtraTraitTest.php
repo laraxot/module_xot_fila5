@@ -53,10 +53,9 @@ if (! class_exists(ExtraModelTest::class)) {
 
 describe('HasExtraTrait', function () {
     beforeEach(function () {
-        $this->testModel = new TestModelHasExtra;
+        $this->testModel = new TestModelHasExtra();
 
-        $this->mockExtra = new class extends Model implements ExtraContract
-        {
+        $this->mockExtra = new class extends Model implements ExtraContract {
             public $extra_attributes;
 
             public function __construct()
@@ -87,7 +86,7 @@ describe('HasExtraTrait', function () {
     });
 
     it('can get extra attributes', function () {
-        $extra = new ExtraModelTest;
+        $extra = new ExtraModelTest();
         // Since we can't easily mock SchemalessAttributes without a DB,
         // we'll just test the null path if we don't have a full setup.
         // But let's try to set the relation
