@@ -10,9 +10,11 @@ use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
 
-class TestConcreteXotBaseModel extends XotBaseModel
-{
-    protected $table = 'test_xot_table';
+if (! class_exists(TestConcreteXotBaseModel::class)) {
+    class TestConcreteXotBaseModel extends XotBaseModel
+    {
+        protected $table = 'test_xot_table';
+    }
 }
 
 describe('XotBaseModel Business Logic', function () {
@@ -21,7 +23,7 @@ describe('XotBaseModel Business Logic', function () {
     });
 
     test('xot base model can be instantiated via subclass', function () {
-        $model = new TestConcreteXotBaseModel();
+        $model = new TestConcreteXotBaseModel;
 
         expect($model)->toBeInstanceOf(XotBaseModel::class);
         expect($model)->toBeInstanceOf(Model::class);
