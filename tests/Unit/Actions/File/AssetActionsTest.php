@@ -9,7 +9,10 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetModulePathAction;
+use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
+
+uses(TestCase::class);
 
 it('handles absolute urls in AssetAction', function (): void {
     $action = app(AssetAction::class);

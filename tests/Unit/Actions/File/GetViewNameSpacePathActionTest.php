@@ -6,6 +6,10 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Tests\TestCase;
+use ReflectionClass;
+
+uses(TestCase::class);
 
 it('gets view namespace path from theme fallback correctly', function (): void {
     $ns = 'pub_theme';
@@ -15,7 +19,7 @@ it('gets view namespace path from theme fallback correctly', function (): void {
     $xotData = XotData::from(['pub_theme' => $themeName]);
 
     // Inject it into the singleton instance using reflection
-    $reflection = new \ReflectionClass(XotData::class);
+    $reflection = new ReflectionClass(XotData::class);
     $instanceProperty = $reflection->getProperty('instance');
     $instanceProperty->setAccessible(true);
     $instanceProperty->setValue(null, $xotData);

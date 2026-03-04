@@ -8,7 +8,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
-use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\TestCase;
+
+uses(TestCase::class);
 
 it('creates table index correctly', function (): void {
     // We use User model for testing as it surely has 'id' and 'email'
@@ -19,7 +21,8 @@ it('creates table index correctly', function (): void {
         $table->string('test_col');
     });
 
-    $modelClass = new class extends XotBaseModel {
+    $modelClass = new class extends \Modules\Xot\Models\XotBaseModel
+    {
         protected $table = 'test_index_table';
     };
     $modelClassName = get_class($modelClass);
@@ -43,7 +46,8 @@ it('throws exception for invalid model class', function (): void {
 });
 
 it('throws exception for missing table', function (): void {
-    $modelClass = new class extends XotBaseModel {
+    $modelClass = new class extends \Modules\Xot\Models\XotBaseModel
+    {
         protected $table = 'missing_table';
     };
     $modelClassName = get_class($modelClass);

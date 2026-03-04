@@ -14,42 +14,49 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 // Real classes instead of anonymous to avoid HasExtraTrait's naming logic failures
-class TestModelHasExtra extends Model
-{
-    use HasExtraTrait;
-
-    protected $table = 'test_models';
-    protected $fillable = ['id', 'name'];
-
-    public function getExtraClass(): string
+if (! class_exists(TestModelHasExtra::class)) {
+    class TestModelHasExtra extends Model
     {
-        return ExtraModelTest::class;
+        use HasExtraTrait;
+
+        protected $table = 'test_models';
+
+        protected $fillable = ['id', 'name'];
+
+        public function getExtraClass(): string
+        {
+            return ExtraModelTest::class;
+        }
     }
 }
 
-class ExtraModelTest extends Model implements ExtraContract
-{
-    protected $table = 'test_extras';
-    protected $fillable = ['model_id', 'model_type', 'extra_attributes'];
-
-    protected function casts(): array
+if (! class_exists(ExtraModelTest::class)) {
+    class ExtraModelTest extends Model implements ExtraContract
     {
-        return [
-            'extra_attributes' => 'collection',
-        ];
-    }
+        protected $table = 'test_extras';
 
-    public function model(): MorphTo
-    {
-        return $this->morphTo();
+        protected $fillable = ['model_id', 'model_type', 'extra_attributes'];
+
+        protected function casts(): array
+        {
+            return [
+                'extra_attributes' => 'collection',
+            ];
+        }
+
+        public function model(): MorphTo
+        {
+            return $this->morphTo();
+        }
     }
 }
 
 describe('HasExtraTrait', function () {
     beforeEach(function () {
-        $this->testModel = new TestModelHasExtra();
+        $this->testModel = new TestModelHasExtra;
 
-        $this->mockExtra = new class extends Model implements ExtraContract {
+        $this->mockExtra = new class extends Model implements ExtraContract
+        {
             public $extra_attributes;
 
             public function __construct()
@@ -80,7 +87,7 @@ describe('HasExtraTrait', function () {
     });
 
     it('can get extra attributes', function () {
-        $extra = new ExtraModelTest();
+        $extra = new ExtraModelTest;
         // Since we can't easily mock SchemalessAttributes without a DB,
         // we'll just test the null path if we don't have a full setup.
         // But let's try to set the relation

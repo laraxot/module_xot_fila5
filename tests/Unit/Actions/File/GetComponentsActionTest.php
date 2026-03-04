@@ -6,14 +6,19 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetComponentsAction;
+use Modules\Xot\Tests\TestCase;
 use Spatie\LaravelData\DataCollection;
+
+uses(TestCase::class);
 
 it('gets and caches components correctly', function (): void {
     $tempDir = sys_get_temp_dir().'/test_comps_'.uniqid();
     File::makeDirectory($tempDir);
 
     $compPath = $tempDir.'/TestComp.php';
-    $compContent = "namespace My\Test\Comps;
+    $compContent = "<?php
+
+namespace My\Test\Comps;
 
 class TestComp {}";
     File::put($compPath, $compContent);
@@ -46,7 +51,9 @@ it('skips abstract classes', function (): void {
     File::makeDirectory($tempDir);
 
     $compPath = $tempDir.'/AbstractComp.php';
-    File::put($compPath, "namespace My\Test\Comps; abstract class AbstractComp {}");
+    File::put($compPath, "<?php
+
+namespace My\Test\Comps; abstract class AbstractComp {}");
 
     if (! class_exists('My\Test\Comps\AbstractComp')) {
         eval("namespace My\Test\Comps; abstract class AbstractComp {}");
