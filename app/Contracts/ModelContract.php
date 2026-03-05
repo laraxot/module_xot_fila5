@@ -91,6 +91,8 @@ interface ModelContract
 
     /**
      * Get the value of the model's primary key.
+     *
+     * @return int|string|null
      */
     public function getKey();
 
@@ -100,6 +102,8 @@ interface ModelContract
      * @param string $key
      *
      * @phpstan-param string $key
+     *
+     * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Support\Collection<int, \Illuminate\Database\Eloquent\Model>|array<mixed>|scalar|null
      */
     public function getRelationValue($key);
 
