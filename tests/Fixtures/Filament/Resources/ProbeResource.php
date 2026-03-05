@@ -9,6 +9,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ProbeResource extends XotBaseResource
 {
+    protected static string $module = 'Xot';
+
     protected static ?string $model = null;
 
     public static function getFormSchema(): array
@@ -35,29 +37,4 @@ class ProbeResource extends XotBaseResource
     {
         static::$model = null;
     }
-}
-
-namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\Pages;
-
-use Filament\Resources\Pages\Page;
-use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
-
-class ListProbes extends Page
-{
-    protected static string $resource = ProbeResource::class;
-}
-
-class CreateProbe extends Page
-{
-    protected static string $resource = ProbeResource::class;
-}
-
-class EditProbe extends Page
-{
-    protected static string $resource = ProbeResource::class;
-}
-
-class ViewProbe extends Page
-{
-    protected static string $resource = ProbeResource::class;
 }
