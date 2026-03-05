@@ -103,7 +103,7 @@ interface ModelContract
      *
      * @phpstan-param string $key
      *
-     * @return \Illuminate\Database\Eloquent\Model|\Illuminate\Support\Collection<int, \Illuminate\Database\Eloquent\Model>|array<mixed>|scalar|null
+     * @return Model|\Illuminate\Support\Collection<int, Model>|array<mixed>|scalar|null
      */
     public function getRelationValue($key);
 

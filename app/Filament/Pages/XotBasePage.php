@@ -121,7 +121,7 @@ abstract class XotBasePage extends Page implements HasForms
                 throw new \LogicException(sprintf('Configured model %s is not a valid Eloquent model', $modelValue));
             }
 
-            /** @var class-string<Model> $modelValue */
+            /* @var class-string<Model> $modelValue */
             return $modelValue;
         }
 

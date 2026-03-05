@@ -327,7 +327,7 @@ class RouteDynService
             if (! is_array($sub)) {
                 continue;
             }
-            /** @var array<string, mixed> $sub */
+            /* @var array<string, mixed> $sub */
             $subs[] = $sub;
         }
         self::dynamic_route($subs, $sub_namespace, null, $curr);

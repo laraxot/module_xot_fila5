@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
-use BackedEnum;
 use Illuminate\Database\Eloquent\Relations\MorphPivot as EloquentMorphPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -89,7 +88,7 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
                 return $this->connection;
             }
 
-            if ($this->connection instanceof BackedEnum) {
+            if ($this->connection instanceof \BackedEnum) {
                 return (string) $this->connection->value;
             }
 

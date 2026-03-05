@@ -90,7 +90,7 @@ final class Module extends BaseModel
             ];
         });
 
-        /** @var array<int, array<string, mixed>> */
+        /* @var array<int, array<string, mixed>> */
         return array_values($modules);
     }
 
