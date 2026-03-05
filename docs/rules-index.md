@@ -60,6 +60,9 @@ See: [Action Usage Patterns](./actions/action-usage-patterns.md)
 ## Related Documentation
 - [README](./README.md)
 - [phpstan](./phpstan.md)
-- [Chaos Monkey Operability Rules](./chaos-monkey-operability-rules.md)
-- [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study-2026-03-02.md)
-- [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog-2026-03-02.md)
+
+## Pre-Edit Rule Link
+
+- [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
+- [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
+- [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
