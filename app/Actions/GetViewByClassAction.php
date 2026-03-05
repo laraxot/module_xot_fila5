@@ -28,7 +28,7 @@ class GetViewByClassAction
         $viewName ??= $this->getViewNameFromClass($class);
         /* @var view-string $viewName */
 
-        /* @var view-string $viewName */
+        /** @var view-string $viewName */
         return view($viewName, $params);
     }
 

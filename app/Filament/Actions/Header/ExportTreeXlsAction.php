@@ -49,15 +49,14 @@ class ExportTreeXlsAction extends Action
                 $resource = $livewire->getResource();
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {
-                    $fields = $resource::getXlsFields($tableFilters);
-                    // Convertiamo tutti i valori a stringhe
+                    $rawFields = $resource::getXlsFields($tableFilters);
                     $fields = array_values(array_map(
                         static fn (mixed $field): string => is_string($field) ? $field : (string) $field,
-                        (array) $fields,
+                        (array) $rawFields
                     ));
                 }
 
-                /* @var array<int, string> $fields */
+                /** @var array<int, string> $fields */
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
     }

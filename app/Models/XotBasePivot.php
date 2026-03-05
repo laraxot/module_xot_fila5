@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+use BackedEnum;
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -63,8 +64,17 @@ abstract class XotBasePivot extends EloquentPivot
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
-            /* @var string */
-            return $this->connection;
+            if (is_string($this->connection)) {
+                return $this->connection;
+            }
+
+            if ($this->connection instanceof BackedEnum) {
+                return (string) $this->connection->value;
+            }
+
+            if ($this->connection instanceof \UnitEnum) {
+                return $this->connection->name;
+            }
         }
 
         // Extract module name from namespace: Modules\User\... → user

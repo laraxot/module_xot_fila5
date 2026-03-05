@@ -87,7 +87,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
         ];
         $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
 
-        /*
+        /**
          * @var array<Component>
          */
         return Arr::only($all, $this->only);
