@@ -2,10 +2,7 @@
 
 ## Critical Architectural Rules
 
-1. **Laraxot Migration Philosophy**: In a module, for each table there must be only ONE migration responsible for its creation (`create_{table}_table.php`). Multiple migrations for the same table is a violation. To modify schema: study the existing migration, edit the SAME migration file, and UPDATE the timestamp in the filename so the new version can run forward again. NEVER create separate `add_column_to_table.php`, `add_*_to_{table}.php`, or `repair_*` migrations. Use tableUpdate() with hasColumn() checks for safe additions. Models strictly dependent on main_module (e.g. Profile): migration goes in the concrete model branch that owns the runtime connection. Use XotBaseMigration::convertIdFromUuidToBigintIfNeeded() for UUID→bigint conversion.
-2. **Database Safety Rule**: Never use `migrate:fresh`, never use `migrate --force`, and never use `RefreshDatabase`. The local database is evidence to inspect and evolve, not a sandbox to reset by default.
-3. **Markdown Filename Rule**: `.md` filenames must not contain dates. Use stable semantic names and put dates inside the document content if the context requires chronology.
-4. **GitHub Language and Metrics Rule**: Le GitHub Issue e le GitHub Discussion del progetto vanno scritte in italiano. Quando possibile, usare percentuali per esprimere avanzamento, rischio, copertura, priorita' o confidenza.
+1. **Laraxot Migration Philosophy**: In a module, for each table there must be only ONE migration responsible for its creation (`create_{table}_table.php`). Multiple migrations for the same table is a violation. To modify schema: edit the SAME migration file and UPDATE the timestamp in the filename. NEVER create separate `add_column_to_table.php` migrations. Use tableUpdate() with hasColumn() checks for safe additions. Models strictly dependent on main_module (e.g. Profile): migration goes in main module (<nome progetto>), NOT in User. Use XotBaseMigration::convertIdFromUuidToBigintIfNeeded() for UUID→bigint conversion.
 
 2. **NO property_exists() on Eloquent models**: Use hasAttribute(), isFillable() or Schema::hasColumn() instead, because model attributes are magical properties.
 

@@ -97,7 +97,7 @@ $dbName = 'file:memdb_test_'.Str::random(10).'?mode=memory&cache=shared';
 // ✅ CORRETTO - Usa sempre MySQL da .env.testing
 // Il file .env.testing definisce:
 // DB_CONNECTION=mysql
-// DB_DATABASE=laravelpizza_data_test  (suffisso "_test" obbligatorio)
+// DB_DATABASE=<nome progetto>_data_test  (suffisso "_test" obbligatorio)
 // DB_HOST=127.0.0.1
 // DB_PORT=3306
 
@@ -108,8 +108,8 @@ $dbName = 'file:memdb_test_'.Str::random(10).'?mode=memory&cache=shared';
 ### 3. Pattern Database Test
 ```bash
 # Schema: {nome_database_produzione}_test
-PRODUZIONE: laravelpizza_data    → TEST: laravelpizza_data_test
-PRODUZIONE: laravelpizza_user    → TEST: laravelpizza_user_test
+PRODUZIONE: <nome progetto>_data    → TEST: <nome progetto>_data_test
+PRODUZIONE: <nome progetto>_user    → TEST: <nome progetto>_user_test
 
 # Pattern: {nome}_test - SEMPRE e SOLO _test
 ```
@@ -144,7 +144,7 @@ APP_DEBUG=true
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laravelpizza_data_test          # Suffisso "_test" obbligatorio
+DB_DATABASE=<nome progetto>_data_test          # Suffisso "_test" obbligatorio
 DB_USERNAME=marco
 DB_PASSWORD=marco
 
@@ -207,7 +207,7 @@ abstract class TestCase extends BaseTestCase
 
 ## CreatesApplication - Caricamento .env.testing Obbligatorio
 
-**Problema**: Laravel può caricare `.env` invece di `.env.testing` a seconda dell'ordine di bootstrap. Se `env('DB_DATABASE')` restituisce il valore di produzione, `TenantServiceProvider` crea le connessioni modulo (activity, user, ecc.) puntando al DB di produzione. I test falliscono con `Table 'laravelpizza_data.activity_log' doesn't exist` perché cercano nel DB sbagliato.
+**Problema**: Laravel può caricare `.env` invece di `.env.testing` a seconda dell'ordine di bootstrap. Se `env('DB_DATABASE')` restituisce il valore di produzione, `TenantServiceProvider` crea le connessioni modulo (activity, user, ecc.) puntando al DB di produzione. I test falliscono con `Table '<nome progetto>_data.activity_log' doesn't exist` perché cercano nel DB sbagliato.
 
 **Soluzione**: Il trait `CreatesApplication` (Modules/Xot/tests/CreatesApplication.php) carica esplicitamente `.env.testing` PRIMA del bootstrap dell'app:
 
