@@ -6,7 +6,6 @@ namespace Modules\Xot\Filament\Resources\XotBaseResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -29,7 +28,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
     use HasXotTable;
     use HasXotForm;
-    
+
     // protected static string $resource;
 
     /**

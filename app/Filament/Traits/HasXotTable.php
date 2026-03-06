@@ -96,7 +96,7 @@ trait HasXotTable
                 ->icon('heroicon-o-link')
                 ->iconButton()
                 ->visible(fn (): bool => (bool) $resource->canAttach())
-                ;
+            ;
         }
 
         $actions['layout'] = TableLayoutToggleTableAction::make('layout');
