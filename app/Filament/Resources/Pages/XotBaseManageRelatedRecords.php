@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
+use Filament\Actions\CreateAction;
+use Filament\Infolists\Components\Component as InfolistComponent;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -56,7 +58,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Get the infolist schema.
      * This can be used to display metadata of the owner record.
      *
-     * @return array<int, Component>
+     * @return array<int|string, Component>
      */
     public function getInfolistSchema(): array
     {
@@ -64,18 +66,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
-     * Restituisce lo schema del form per i record correlati.
-     *
-     * @return array<Component>
-     */
-    // abstract public static function getFormSchema(): array;
-
-    /**
      * Configura lo schema per i record correlati.
      */
     public function schema(Schema $schema): Schema
     {
-        // getFormSchema() sempre ritorna array per definizione
         $formSchema = $this->getFormSchema();
 
         return $schema->components($formSchema);
