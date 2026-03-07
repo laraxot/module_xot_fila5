@@ -70,13 +70,14 @@ abstract class XotBaseModel extends Model
 Each module has its own BaseModel that extends XotBaseModel:
 
 ```php
+// Example from healthcare_app module
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
     use Cachable;
     use HasExtraTrait;
     use InteractsWithMedia;
 
-    protected $connection = 'module_name'; // Module-specific connection
+    protected $connection = 'healthcare_app'; // Module-specific connection
 
     protected $with = [
         'extra', // Always load extra fields
@@ -104,6 +105,7 @@ class SurveyPdf extends XotBaseModel // Never do this!
 
 ✅ **CORRECT:**
 ```php
+// In healthcare_app module
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```
 

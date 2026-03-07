@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament\Actions;
 
+use Filament\Actions\Action;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -20,7 +21,6 @@ class ViewCopyAction extends XotBaseAction
     public static function make(?string $name = null): static
     {
         $action = parent::make($name ?? 'view_copy');
-        $actionClass = static::class;
 
         return $action
             ->label('Copy View')
@@ -28,13 +28,15 @@ class ViewCopyAction extends XotBaseAction
             ->requiresConfirmation()
             ->modalHeading('Copy View')
             ->modalDescription('Are you sure you want to copy this view?')
-            ->action(static function (array $arguments, array $data) use ($actionClass): void {
-                /** @var self $service */
-                $service = app($actionClass);
-                $service->execute($arguments, $data);
+            ->action(function (array $arguments, array $data): void {
+                // Implementation for copying view logic
+                $this->execute($arguments, $data);
             });
     }
 
+    /**
+     * Execute the copy view action.
+     */
     public function execute(array $arguments, array $data): void
     {
         // TODO: Implement view copying logic
