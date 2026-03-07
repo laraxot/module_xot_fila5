@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -21,7 +23,7 @@ class AssetFactory extends Factory
     {
         return [
             'name' => $this->faker->word(),
-            'path' => '/assets/' . $this->faker->word() . '.css',
+            'path' => '/assets/'.$this->faker->word().'.css',
             'type' => 'css',
             'version' => '1.0.0',
             'is_public' => $this->faker->boolean(),
