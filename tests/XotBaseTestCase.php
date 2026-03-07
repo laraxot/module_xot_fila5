@@ -98,7 +98,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test user with optional attributes.
      *
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
@@ -110,7 +110,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test tenant with optional attributes.
      *
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestTenant(array $attributes = []): \Modules\Tenant\Models\Tenant
     {
@@ -120,7 +120,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test module with optional attributes.
      *
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestModule(array $attributes = []): \Modules\Xot\Models\Module
     {
@@ -130,7 +130,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test asset with optional attributes.
      *
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestAsset(array $attributes = []): \Modules\UI\Models\Asset
     {
