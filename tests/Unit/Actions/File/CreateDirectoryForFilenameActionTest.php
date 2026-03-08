@@ -14,7 +14,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    if (File::isDirectory($tempDir
+    if (File::isDirectory($tempDir)) {
         File::deleteDirectory($tempDir);
     }
 });
@@ -24,7 +24,7 @@ it('creates directory for filename', function (): void {
 
     $action->execute($filename);
 
-    expect(File::isDirectory($tempDir.'/nested/deep'));
+    expect(File::isDirectory($tempDir)).'/nested/deep'));
 });
 
 it('does nothing when directory already exists', function (): void {
@@ -34,7 +34,7 @@ it('does nothing when directory already exists', function (): void {
     // Should not throw
     $action->execute($filename);
 
-    expect(File::isDirectory($tempDir.'/existing'));
+    expect(File::isDirectory($tempDir)).'/existing'));
 });
 
 it('handles root level file', function (): void {
@@ -43,5 +43,5 @@ it('handles root level file', function (): void {
 
     $action->execute($filename);
 
-    expect(File::isDirectory($tempDir));
+    expect(File::isDirectory($tempDir))));
 });

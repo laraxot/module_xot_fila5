@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests;
 
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Modules\Tenant\Providers\TenantServiceProvider;
+use Modules\UI\Providers\UIServiceProvider;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Providers\XotServiceProvider;
@@ -12,18 +15,14 @@ use Modules\Xot\Providers\XotServiceProvider;
 /**
  * Class XotBaseTestCase.
  *
- * Base test case for all Laraxot modules.
- * Centralizes application bootstrapping, common bindings, and test helpers.
- * DRY + KISS + Laraxot: un solo posto per setup, mai estendere Illuminate\Foundation\Testing\TestCase.
+ * Base test case for all modules.
+ * Note: DatabaseTransactions is already included here to be shared by all tests.
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
     use CreatesApplication;
 
     /**
-     * Package providers for module tests (Orchestra Testbench compatibility).
-     * I moduli che usano parent::getPackageProviders() ricevono XotServiceProvider.
-     *
      * @return array<int, class-string<\Illuminate\Support\ServiceProvider>>
      */
     protected function getPackageProviders($app): array
@@ -43,8 +42,8 @@ abstract class XotBaseTestCase extends BaseTestCase
 
         // Bind translator only if not already resolved (needed for some Filament tests).
         // This ensures the application is in a consistent state for unit tests.
-        if (! $app->bound('translator'
-            $app->singleton('translator', function ($app
+        if (! $this->app->bound('translator')) {
+            $this->app->singleton('translator', function ($app) {
                 return new \Illuminate\Translation\Translator(
                     new \Illuminate\Translation\ArrayLoader(),
                     'en'
@@ -57,9 +56,9 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         // Prevent connection accumulation across a long multi-connection suite.
         try {
-            if (isset($app
+            if (isset($this->app)) {
                 /** @var \Illuminate\Database\DatabaseManager $db */
-                $db = $app->make('db');
+                $db = $this->app->make('db');
 
                 /** @var array<string, mixed> $connections */
                 $connections = (array) config('database.connections', []);
