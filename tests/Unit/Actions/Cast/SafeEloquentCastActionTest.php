@@ -63,7 +63,7 @@ it('casts generic typed getter and validation helpers', function (): void {
 it('checks condition and fallback helpers', function (): void {
     $this->model->setAttribute('nickname', 'SuperMario');
 
-    expect($this->action->hasAttributeCondition($this->model, 'age', fn (mixed $v) => (int) $v === 42))->toBeTrue()
+    expect($this->action->hasAttributeCondition($this->model, 'age', fn (mixed $v) => 42 === (int) $v))->toBeTrue()
         ->and($this->action->hasAttributeCondition($this->model, 'missing', fn (mixed $v) => true))->toBeFalse()
         ->and($this->action->getAttributeWithFallback($this->model, 'missing', 'nickname', 'string', 'n/a'))->toBe('SuperMario')
         ->and($this->action->getAttributeWithFallback($this->model, 'name', 'nickname', 'string', 'n/a'))->toBe('Mario');
