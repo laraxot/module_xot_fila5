@@ -86,7 +86,7 @@ class HealthPage extends XotBasePage
          */
         Health::checks($checks);
         Artisan::call(RunHealthChecksCommand::class);
-        $this->dispatch('refresh-component');
+        // @var mixed dispatch('refresh-component';
         Notification::make()
             ->title('Health check results refreshed')
             ->success()

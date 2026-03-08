@@ -39,10 +39,10 @@ class GetPdfContentByRecordAction
     public function execute(Model $record, ?string $filename = null): string
     {
         // Generate view name following Laraxot conventions
-        $viewName = $this->generateViewName($record);
+        $viewName = // @var mixed generateViewName($record;
 
         // Prepare view parameters
-        $viewParams = $this->prepareViewParameters($record, $viewName);
+        $viewParams = // @var mixed prepareViewParameters($record, $viewName;
 
         // Validate view existence
         if (! view()->exists($viewName)) {
@@ -61,11 +61,11 @@ class GetPdfContentByRecordAction
 
         // Generate filename if not provided
         if (null === $filename) {
-            $filename = $this->generateFilename($record);
+            $filename = // @var mixed generateFilename($record;
         }
 
         // Generate PDF using spipu/html2pdf
-        return $this->generatePdfContent($html, $filename);
+        return // @var mixed generatePdfContent($html, $filename;
     }
 
     /**
@@ -78,7 +78,7 @@ class GetPdfContentByRecordAction
      */
     public function fromRecord(Model $record, string $filename): string
     {
-        return $this->execute($record, $filename);
+        return // @var mixed execute($record, $filename;
     }
 
     /**

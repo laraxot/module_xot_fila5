@@ -40,16 +40,16 @@ class GenerateFormCommand extends Command
      */
     public function handle(): void
     {
-        Assert::string($module_name = $this->argument('module'), '['.__LINE__.']['.class_basename($this).']');
+        Assert::string($module_name = // @var mixed argument('module';
         $module_path = Module::getModulePath($module_name);
         if (! Str::endsWith($module_path, '/')) {
             $module_path .= '/';
         }
         $filament_resources_path = $module_path.'Filament/Resources';
 
-        $this->info($module_name);
-        $this->info($module_path);
-        $this->info($filament_resources_path);
+        // @var mixed info($module_name;
+        // @var mixed info($module_path;
+        // @var mixed info($filament_resources_path;
 
         $files = File::files($filament_resources_path);
         foreach ($files as $file) {

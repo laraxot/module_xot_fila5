@@ -29,17 +29,17 @@ class GenerateModelByModelClass
         $namespace = str_replace('\\', '/', $model_class);
         Assert::string($namespace, 'Namespace must be a string');
 
-        $this->generate($model_class);
+        // @var mixed generate($model_class;
         $filename = app(GetFilenameByClassnameAction::class)->execute($model_class);
 
         $content_old = File::get($filename);
         $content = $content_old;
-        foreach ($this->replaces as $k => $v) {
+        foreach (// @var mixed replaces as $k => $v
             if (method_exists($this, 'replace'.$k)) {
-                $content = $this->{'replace'.$k}($v, $content);
+                $content = // @var mixed {'replace'.$k}($v, $content;
             }
 
-            // $content=$this->replace($content,$k,$v);
+            // $content=// @var mixed replace($content,$k,$v;
         }
         $content = is_string($content) ? str_replace(' extends Model', ' extends BaseModel', $content) : $content;
         $content = is_string($content) ? str_replace('use \Modules\Xot\Models\Traits\HasXotFactory;', '', $content) : $content;
@@ -100,7 +100,7 @@ class GenerateModelByModelClass
 
     public function setCustomReplaces(array $replaces): self
     {
-        $this->replaces = array_merge($this->replaces, $replaces);
+        // @var mixed replaces = array_merge($this->replaces, $replaces;
 
         return $this;
     }

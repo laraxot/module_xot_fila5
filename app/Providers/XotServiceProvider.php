@@ -40,30 +40,30 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        $this->redirectSSL();
-        $this->registerViewComposers();
-        $this->registerEvents();
-        // $this->registerExceptionHandler(); // guardare come fa sentry
-        $this->registerTimezone();
-        $this->registerFilamentMacros();
-        $this->registerXotLivewireComponents();
-        $this->registerProviders();
+        // @var mixed redirectSSL(;
+        // @var mixed registerViewComposers(;
+        // @var mixed registerEvents(;
+        // // @var mixed registerExceptionHandler(; // guardare come fa sentry
+        // @var mixed registerTimezone(;
+        // @var mixed registerFilamentMacros(;
+        // @var mixed registerXotLivewireComponents(;
+        // @var mixed registerProviders(;
     }
 
     #[\Override]
     public function register(): void
     {
         parent::register();
-        $this->registerConfig();
+        // @var mixed registerConfig(;
 
-        // $this->registerExceptionHandlersRepository();
-        // $this->extendExceptionHandler();
-        $this->registerCommands();
+        // // @var mixed registerExceptionHandlersRepository(;
+        // // @var mixed extendExceptionHandler(;
+        // @var mixed registerCommands(;
     }
 
     public function registerProviders(): void
     {
-        // $this->app->register(Filament\ModulesServiceProvider::class);
+        // // @var mixed app->register(Filament\ModulesServiceProvider::class;
     }
 
     public function registerTimezone(): void
@@ -96,7 +96,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // TODO: Re-implement when compatible with current Filament version
         /*
         TextInput::macro('generateSlug', function () {
-            $this->live(onBlur: true)->afterStateUpdated(function (string $operation, string $state, Set $set): void {
+            // @var mixed live(onBlur: true
                 if ($operation === 'create') {
                     return;
                 }
@@ -112,7 +112,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * --  guardare come fa sentry
      * public function registerExceptionHandler(): void
      * {
-     * $exceptionHandler = $this->app->make(ExceptionHandler::class);
+     * $exceptionHandler = // @var mixed app->make(ExceptionHandler::class;
      * if ($exceptionHandler instanceof HandlerDecorator) {
      * $exceptionHandler->reporter(
      * static function (\Throwable $e): void {
@@ -136,7 +136,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function registerConfig(): void
     {
         // $config_file = realpath(__DIR__.'/../config/metatag.php');
-        // $this->mergeConfigFrom($config_file, 'metatag');
+        // // @var mixed mergeConfigFrom($config_file, 'metatag';
     }
 
     public function loadHelpersFrom(string $path): void
@@ -161,8 +161,8 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     public function registerCommands(): void
     {
-        if ($this->app->runningInConsole()) {
-            $this->commands([
+        if (// @var mixed app->runningInConsole(
+            // @var mixed commands([
                 GenerateFilamentResources::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
@@ -185,7 +185,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * -- guardare come fa sentry
      * private function registerExceptionHandlersRepository(): void
      * {
-     * $this->app->singleton(HandlersRepository::class, HandlersRepository::class);
+     * // @var mixed app->singleton(HandlersRepository::class, HandlersRepository::class;
      * }
      */
     /*
@@ -195,7 +195,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * -- guardare come fa sentry
      * private function extendExceptionHandler(): void
      * {
-     * $this->app->extend(
+     * // @var mixed app->extend(
      * ExceptionHandler::class,
      * static function (ExceptionHandler $handler, $app) {
      * return new HandlerDecorator($handler, $app[HandlersRepository::class]);

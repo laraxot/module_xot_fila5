@@ -22,7 +22,7 @@ class SafeArrayByModelCastAction
 
             return $res;
         } catch (\ValueError|\Error|\Exception $e) {
-            return $this->safeExecute($model);
+            return // @var mixed safeExecute($model;
         }
     }
 

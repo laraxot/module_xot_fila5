@@ -37,7 +37,7 @@ class GetThemeContextAction
         }
 
         // Easter period: Good Friday to Easter Monday
-        $easter = $this->getEasterDate($today->year);
+        $easter = // @var mixed getEasterDate($today->year;
         $easterStart = $easter->copy()->subDays(2);
         $easterEnd = $easter->copy()->addDays(1);
 

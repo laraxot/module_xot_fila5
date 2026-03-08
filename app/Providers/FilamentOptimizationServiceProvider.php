@@ -27,7 +27,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     public function register(): void
     {
         // Registra il config
-        $this->mergeConfigFrom(
+        // @var mixed mergeConfigFrom(
             base_path('config/filament_optimization.php'),
             'filament_optimization'
         );
@@ -40,22 +40,22 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     {
         // Applica ottimizzazioni solo se abilitato
         if (config('filament_optimization.memory.enabled', true)) {
-            $this->applyMemoryOptimizations();
+            // @var mixed applyMemoryOptimizations(;
         }
 
         // Configura query logging per performance monitoring
         if (config('filament_optimization.monitoring.log_slow_queries', true)) {
-            $this->configureQueryLogging();
+            // @var mixed configureQueryLogging(;
         }
 
         // Registra middleware di monitoraggio
         if (config('filament_optimization.monitoring.memory_profiling', false)) {
-            $this->registerMemoryMonitoring();
+            // @var mixed registerMemoryMonitoring(;
         }
 
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
-            $this->applyProductionOptimizations();
+            // @var mixed applyProductionOptimizations(;
         }
     }
 
@@ -82,7 +82,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
         // Limita il numero di query per richiesta in development
         if (app()->environment('local', 'development')) {
-            $this->limitQueriesInDevelopment();
+            // @var mixed limitQueriesInDevelopment(;
         }
     }
 
@@ -92,7 +92,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     private function configureQueryLogging(): void
     {
         // Abilita query logging solo per richieste Filament admin
-        if ($this->isFilamentAdminRequest()) {
+        if (// @var mixed isFilamentAdminRequest(
             DB::enableQueryLog();
 
             // Log delle query alla fine della richiesta
@@ -140,10 +140,10 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         DB::disableQueryLog();
 
         // Ottimizza la configurazione di Eloquent
-        $this->optimizeEloquentConfiguration();
+        // @var mixed optimizeEloquentConfiguration(;
 
         // Configura caching aggressivo
-        $this->configureAggressiveCaching();
+        // @var mixed configureAggressiveCaching(;
     }
 
     /**
@@ -180,7 +180,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         // Cache delle configurazioni
         if (config('filament_optimization.cache.module_configs', true)) {
             // Implementa caching per configurazioni moduli
-            $this->cacheModuleConfigurations();
+            // @var mixed cacheModuleConfigurations(;
         }
 
         // Cache delle navigation items

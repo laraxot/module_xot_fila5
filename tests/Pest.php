@@ -28,7 +28,7 @@ uses(TestCase::class)->in(__DIR__.'/Feature', __DIR__.'/Unit');
  */
 
 // expect()->extend('toBeOne', function () {
-//     return $this->toBe(1);
+//     return // @var mixed toBe(1;
 // });
 
 /*

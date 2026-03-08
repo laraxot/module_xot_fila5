@@ -31,6 +31,6 @@ trait HasUuid
      */
     public function initializeHasUuid(): void
     {
-        $this->mergeCasts(['uuid' => 'string']);
+        // @var mixed mergeCasts(['uuid' => 'string'];
     }
 }

@@ -185,11 +185,11 @@ class SafeEloquentCastAction
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
         return match ($type) {
-            'string' => $this->getStringAttribute($model, $attribute, is_string($default) ? $default : ''),
-            'int' => $this->getIntAttribute($model, $attribute, is_int($default) ? $default : 0),
-            'float' => $this->getFloatAttribute($model, $attribute, is_float($default) ? $default : 0.0),
-            'bool' => $this->getBooleanAttribute($model, $attribute, is_bool($default) ? $default : false),
-            'array' => $this->getArrayAttribute($model, $attribute, is_array($default) ? $default : []),
+            'string' => // @var mixed getStringAttribute($model, $attribute, is_string($default
+            'int' => // @var mixed getIntAttribute($model, $attribute, is_int($default
+            'float' => // @var mixed getFloatAttribute($model, $attribute, is_float($default
+            'bool' => // @var mixed getBooleanAttribute($model, $attribute, is_bool($default
+            'array' => // @var mixed getArrayAttribute($model, $attribute, is_array($default
             default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
@@ -233,7 +233,7 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($attribute);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
-        $value = $this->getTypedAttribute($model, $attribute, $type, $default);
+        $value = // @var mixed getTypedAttribute($model, $attribute, $type, $default;
 
         if (null !== $validator && ! $validator($value)) {
             return $default;
@@ -289,10 +289,10 @@ class SafeEloquentCastAction
         $primaryValue = $model->getAttribute($primaryAttribute);
 
         if (null !== $primaryValue) {
-            return $this->getTypedAttribute($model, $primaryAttribute, $type, $default);
+            return // @var mixed getTypedAttribute($model, $primaryAttribute, $type, $default;
         }
 
-        return $this->getTypedAttribute($model, $fallbackAttribute, $type, $default);
+        return // @var mixed getTypedAttribute($model, $fallbackAttribute, $type, $default;
     }
 
     /**

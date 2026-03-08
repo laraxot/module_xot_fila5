@@ -46,14 +46,14 @@ class ImportCsvAction
         $pdo = DB::connection($db)->getPdo();
 
         // Retrieve table columns
-        $columns = $this->getTableColumns($conn, $tbl);
+        $columns = // @var mixed getTableColumns($conn, $tbl;
 
         // Prepare fields for SQL query
-        $fieldsUp = $this->prepareFields($columns);
+        $fieldsUp = // @var mixed prepareFields($columns;
         $fieldsUpList = implode(', ', $fieldsUp);
 
         // Build SQL query
-        $sql = $this->buildSql($path, $db, $tbl, $fieldsUpList, $columns);
+        $sql = // @var mixed buildSql($path, $db, $tbl, $fieldsUpList, $columns;
         // Enable local infile
         $pdo->exec('SET GLOBAL local_infile=1;');
 

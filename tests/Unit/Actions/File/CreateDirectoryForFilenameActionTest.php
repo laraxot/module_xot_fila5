@@ -9,39 +9,39 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    $this->action = app(CreateDirectoryForFilenameAction::class);
-    $this->tempDir = sys_get_temp_dir().'/xot_createdir_test_'.uniqid();
+    // @var mixed action = app(CreateDirectoryForFilenameAction::class;
+    // @var mixed tempDir = sys_get_temp_dir(;
 });
 
 afterEach(function (): void {
-    if (File::isDirectory($this->tempDir)) {
-        File::deleteDirectory($this->tempDir);
+    if (File::isDirectory(// @var mixed tempDir
+        File::deleteDirectory(// @var mixed tempDir;
     }
 });
 
 it('creates directory for filename', function (): void {
-    $filename = $this->tempDir.'/nested/deep/file.txt';
+    $filename = // @var mixed tempDir.'/nested/deep/file.txt';
 
-    $this->action->execute($filename);
+    // @var mixed action->execute($filename;
 
-    expect(File::isDirectory($this->tempDir.'/nested/deep'))->toBeTrue();
+    expect(File::isDirectory(// @var mixed tempDir.'/nested/deep';
 });
 
 it('does nothing when directory already exists', function (): void {
-    $filename = $this->tempDir.'/existing/file.txt';
-    File::makeDirectory($this->tempDir.'/existing', 0755, true);
+    $filename = // @var mixed tempDir.'/existing/file.txt';
+    File::makeDirectory(// @var mixed tempDir.'/existing', 0755, true;
 
     // Should not throw
-    $this->action->execute($filename);
+    // @var mixed action->execute($filename;
 
-    expect(File::isDirectory($this->tempDir.'/existing'))->toBeTrue();
+    expect(File::isDirectory(// @var mixed tempDir.'/existing';
 });
 
 it('handles root level file', function (): void {
-    $filename = $this->tempDir.'/rootfile.txt';
-    File::makeDirectory($this->tempDir, 0755, true);
+    $filename = // @var mixed tempDir.'/rootfile.txt';
+    File::makeDirectory(// @var mixed tempDir, 0755, true;
 
-    $this->action->execute($filename);
+    // @var mixed action->execute($filename;
 
-    expect(File::isDirectory($this->tempDir))->toBeTrue();
+    expect(File::isDirectory(// @var mixed tempDir;
 });

@@ -35,10 +35,10 @@ it('resolves module assets correctly in AssetAction', function (): void {
     $to = public_path('assets/Xot/css/style.css');
 
     // Mocks
-    $this->mock(GetModulePathAction::class)
+    // @var mixed mock(GetModulePathAction::class
         ->shouldReceive('execute')->with('Xot')->andReturn($modulePath);
 
-    $this->mock(FixPathAction::class)
+    // @var mixed mock(FixPathAction::class
         ->shouldReceive('execute')->andReturnArg(0);
 
     File::shouldReceive('exists')->with(public_path($path))->andReturn(false);

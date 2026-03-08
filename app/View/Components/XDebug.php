@@ -29,7 +29,7 @@ class XDebug extends Component
     public function render(): View
     {
         /** @var string $view */
-        $view = app(GetViewAction::class)->execute($this->tpl);
+        $view = app(GetViewAction::class)->execute(// @var mixed tpl;
 
         if (! ViewFacade::exists($view)) {
             throw new \RuntimeException("View [{$view}] does not exist.");
@@ -39,7 +39,7 @@ class XDebug extends Component
 
         /** @var array<string, string> $view_params */
         $view_params = [
-            'html' => $this->debugStack(),
+            'html' => // @var mixed debugStack(
         ];
 
         return view($view, $view_params);

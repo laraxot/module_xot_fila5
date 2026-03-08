@@ -19,10 +19,10 @@ class PivotAction
 
         /*
          *
-         * $parent_panel = $this->panel->getParent();
+         * $parent_panel = // @var mixed panel->getParent(;
          * if (null !== $parent_panel) {
          * $parent_row = $parent_panel->getRow();
-         * $panel_name = $this->panel->getName();
+         * $panel_name = // @var mixed panel->getName(;
          * $parent_row->{$panel_name}()->updateExistingPivot($model->getKey(), $data);
          * }
          *

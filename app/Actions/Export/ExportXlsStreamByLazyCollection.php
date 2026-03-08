@@ -37,7 +37,7 @@ class ExportXlsStreamByLazyCollection
         $headers = [
             'Content-Disposition' => 'attachment; filename='.$filename,
         ];
-        $head = $this->headings($data, $transKey);
+        $head = // @var mixed headings($data, $transKey;
 
         return response()->stream(
             static function () use ($data, $head): void {

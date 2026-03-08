@@ -24,7 +24,7 @@ class GetViewByClassAction
      */
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
-        $viewName ??= $this->getViewNameFromClass($class);
+        $viewName ??= // @var mixed getViewNameFromClass($class;
 
         /* @var view-string $viewName */
         return view($viewName, $params);
