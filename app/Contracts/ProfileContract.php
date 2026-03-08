@@ -4,23 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Spatie\Permission\Contracts\Role;
 
 /**
  * Interface Modules\Xot\Contracts\ProfileContract.
  *
- * @property int $id
- * @property string|null $user_id
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string|null $full_name
- * @property-read UserContract|null $user
+ * @property int               $id
+ * @property string|null       $user_id
+ * @property string|null       $first_name
+ * @property string|null       $last_name
+ * @property string|null       $full_name
+ * @property UserContract|null $user
  *
- * @method bool isSuperAdmin()
+ * @method        bool            isSuperAdmin()
  * @method static ProfileContract make()
  */
 interface ProfileContract
@@ -43,24 +41,18 @@ interface ProfileContract
     /**
      * Assign the given role to the model.
      *
-     * @param array|string|int|Role|Collection $roles
      * @return $this
      */
     public function assignRole(array|string|int|Role|Collection $roles = []);
 
     /**
      * Determine if the model has (one of) the given role(s).
-     *
-     * @param string|int|array|Role|Collection $roles
-     * @param string|null $guard
-     * @return bool
      */
     public function hasRole(string|int|array|Role|Collection $roles, ?string $guard = null): bool;
 
     /**
      * Revoke the given role from the model.
      *
-     * @param string|int|array|Role|Collection $role
      * @return $this
      */
     public function removeRole(string|int|array|Role|Collection $role);
