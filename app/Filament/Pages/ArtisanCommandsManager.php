@@ -6,8 +6,6 @@ namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
-use Filament\Support\Enums\IconPosition;
-use Livewire\Attributes\On;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 
 class ArtisanCommandsManager extends XotBasePage
