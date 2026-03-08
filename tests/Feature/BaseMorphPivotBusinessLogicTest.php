@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\Xot\Models\BaseMorphPivot;
-use Modules\Xot\Tests\TestCase;
 
 class BaseMorphPivotBusinessLogicTest extends TestCase
 {
