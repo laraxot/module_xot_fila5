@@ -11,7 +11,6 @@ use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Nwidart\Modules\Facades\Module;
 
-
 it('handles absolute urls in AssetAction', function (): void {
     $action = app(AssetAction::class);
     $url = 'https://example.com/asset.js';

@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\File;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 
-
 it('gets tenant config array correctly', function (): void {
     $configName = 'test_config';
     $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';

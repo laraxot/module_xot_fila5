@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
 
-
 it('creates table index correctly', function (): void {
     // We use User model for testing as it surely has 'id' and 'email'
     // but we might want to avoid touching production tables.

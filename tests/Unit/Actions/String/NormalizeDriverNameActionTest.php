@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\String;
 
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 
-
 it('normalizes driver names correctly', function (): void {
     $action = app(NormalizeDriverNameAction::class);
 

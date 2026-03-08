@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
 
-
 beforeEach(function () {
     // Create a temporary directory for testing
     $testDir = sys_get_temp_dir();

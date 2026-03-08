@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Array\SaveJsonArrayAction;
 use Modules\Xot\Actions\Array\SavePhpArrayAction;
 
-
 test('save json array action works', function () {
     $data = ['foo' => 'bar'];
     $filename = tempnam(sys_get_temp_dir(), 'test_json').'.json';

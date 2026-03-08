@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Models\BaseModel;
 
-
 if (! class_exists(TestConcreteBaseModel::class)) {
     class TestConcreteBaseModel extends BaseModel
     {

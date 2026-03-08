@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Http;
 use Modules\Xot\Actions\Dummy\GetProductsArrayDummyAction;
 
-
 it('maps only expected keys for each product', function (): void {
     Http::fake([
         'dummyjson.com/products' => Http::response([

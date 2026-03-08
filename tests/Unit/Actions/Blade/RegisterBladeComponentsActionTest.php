@@ -9,7 +9,6 @@ use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
 
-
 it('registers blade components correctly', function (): void {
     $path = 'some/path';
     $namespace = 'Some\\Namespace';

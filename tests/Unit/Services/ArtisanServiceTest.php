@@ -10,8 +10,6 @@ use Modules\Xot\Services\ArtisanService;
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-
-
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
     Config::set('database.connections.mysql', [

@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-
 it('casts various values to string correctly', function (): void {
     $action = app(SafeStringCastAction::class);
 

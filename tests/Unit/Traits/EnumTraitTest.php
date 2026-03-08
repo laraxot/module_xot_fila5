@@ -9,7 +9,6 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
 use Modules\Xot\Traits\EnumTrait;
 
-
 it('gets label via translation', function (): void {
     // We expect translation keys like 'test_enum.alpha.label'
     // Since we don't have actual translations for TestEnum, it will likely return the key or fallback

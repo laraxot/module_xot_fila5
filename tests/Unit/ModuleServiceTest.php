@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Modules\Xot\Services\ModuleService;
 use Nwidart\Modules\Module;
 
-
 describe('ModuleService', function () {
     beforeEach(function () {
         $service = (new ModuleService());

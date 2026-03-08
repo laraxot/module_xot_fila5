@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Modules\Xot\Actions\File\SvgExistsAction;
 
-
 it('verifies svg existence', function (): void {
     // Factory is final, we check with a real instance if possible or just test logic flow
     $action = app(SvgExistsAction::class);

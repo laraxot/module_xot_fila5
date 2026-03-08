@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 
-
 test('save array action saves as php by default', function () {
     $data = ['foo' => 'bar'];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_array_php').'.php';
