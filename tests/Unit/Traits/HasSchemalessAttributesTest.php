@@ -27,7 +27,6 @@ if (! class_exists(TestModel::class)) {
     }
 }
 
-
 it('handles extra attributes scope', function (): void {
     $builder = \Mockery::mock(Builder::class);
     $schemaless = \Mockery::mock(SchemalessAttributes::class);

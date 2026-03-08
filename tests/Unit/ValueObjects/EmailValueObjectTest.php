@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\ValueObjects;
 
 use Modules\Xot\ValueObjects\EmailValueObject;
 
-
 it('accepts valid email', function (): void {
     $email = 'test@example.com';
     $vo = new EmailValueObject($email);

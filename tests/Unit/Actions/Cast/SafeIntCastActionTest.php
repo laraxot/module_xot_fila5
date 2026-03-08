@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 
-
 it('casts various values to integer correctly', function (): void {
     $action = app(SafeIntCastAction::class);
 

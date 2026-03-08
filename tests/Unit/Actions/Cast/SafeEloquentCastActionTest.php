@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 
-
 beforeEach(function (): void {
     $this->action = app(SafeEloquentCastAction::class);
     $this->model = new class extends Model {

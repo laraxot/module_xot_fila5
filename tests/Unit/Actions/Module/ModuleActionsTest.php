@@ -9,7 +9,6 @@ use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
-
 test('get module name by class action works', function () {
     $action = app(GetModuleNameByClassAction::class);
     expect($action->execute('Modules\User\Models\User'))->toBe('User');

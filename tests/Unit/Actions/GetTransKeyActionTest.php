@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions;
 
 use Modules\Xot\Actions\GetTransKeyAction;
 
-
 it('generates translation keys correctly', function (): void {
     $action = app(GetTransKeyAction::class);
 

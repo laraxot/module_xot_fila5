@@ -8,7 +8,6 @@ use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\GetViewByClassAction;
 
-
 test('get view actions work', function () {
     $classAction = app(GetViewByClassAction::class);
 

@@ -9,7 +9,6 @@ use Modules\Xot\Actions\ModelClass\UpdateCountAction;
 use Modules\Xot\Models\InformationSchemaTable;
 use Modules\Xot\Models\XotBaseModel;
 
-
 test('count actions work', function () {
     // InformationSchemaTable::getModelCount is called via static method
     // We cannot easily mock static methods on the model itself if it's not a facade or using a trait that allows it

@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Modules\Xot\Actions\Model\HasColumnAction;
 use Modules\Xot\Models\BaseModel;
 
-
 beforeEach(function (): void {
     $action = app(HasColumnAction::class);
 });

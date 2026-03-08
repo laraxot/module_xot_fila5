@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Parse;
 
 use Modules\Xot\Actions\ParsePrintPageStringAction;
 
-
 it('parses single pages and ranges', function (): void {
     $str = '1-4,6,7,8,11-14';
     $expected = [1, 2, 3, 4, 6, 7, 8, 11, 12, 13, 14];

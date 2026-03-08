@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Spatie\LaravelData\DataCollection;
 
-
 it('gets and caches components correctly', function (): void {
     $tempDir = sys_get_temp_dir().'/test_comps_'.uniqid();
     File::makeDirectory($tempDir);

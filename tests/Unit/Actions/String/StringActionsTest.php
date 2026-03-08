@@ -9,7 +9,6 @@ use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 use Modules\Xot\Actions\String\SanitizeAction;
 
-
 test('get pronounceable password action works', function () {
     $action = app(GetPronounceablePasswordAction::class);
     $password = $action->execute(12);

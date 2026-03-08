@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Modules\Xot\Actions\Array\DiffAssocRecursiveAction;
 
-
 test('diff assoc recursive action works correctly', function () {
     $arr1 = [
         'a' => ['id' => 1, 'name' => 'Test'],

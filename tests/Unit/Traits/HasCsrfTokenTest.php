@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Traits\HasCsrfToken;
 
-
 it('sets csrf token on mount', function (): void {
     $token = 'test-token-123';
 

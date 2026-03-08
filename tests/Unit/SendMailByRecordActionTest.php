@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 
-
 it('throws if record has no email', function (): void {
     $record = new class extends Model {
         public function option(string $key): ?string
