@@ -59,7 +59,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         // Only register if classes exist
         $routeProvider = $this->module_ns.'\Providers\RouteServiceProvider';
         $eventProvider = $this->module_ns.'\Providers\EventServiceProvider';
-        
+
         if (class_exists($routeProvider)) {
             $this->app->register($routeProvider);
         }
