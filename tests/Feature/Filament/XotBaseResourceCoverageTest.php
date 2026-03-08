@@ -11,7 +11,6 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 
-
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();
 

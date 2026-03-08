@@ -9,7 +9,6 @@ use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Traits\HasTableFunctionsTrait;
 
-
 it('gets table columns', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;

@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\DestroyAction;
 use Modules\Xot\Models\BaseModel;
 
-
 beforeEach(function (): void {
     $action = app(DestroyAction::class);
 });

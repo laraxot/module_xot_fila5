@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 
-
 if (! class_exists(TestConcreteXotBaseModel::class)) {
     class TestConcreteXotBaseModel extends XotBaseModel
     {

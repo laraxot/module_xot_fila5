@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Services;
 
 use Modules\Xot\Services\UrlService;
 
-
 it('can be instantiated', function (): void {
     $service = new UrlService();
     expect($service)->toBeInstanceOf(UrlService::class);

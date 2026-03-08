@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Nwidart\Modules\Facades\Module;
 
-
 it('gets module path from facade correctly', function (): void {
     Module::shouldReceive('getModulePath')
         ->once()

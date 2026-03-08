@@ -7,8 +7,6 @@ namespace Modules\Xot\Tests\Unit;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\ExtraContract;
 use Modules\Xot\Models\Traits\HasExtraTrait;
-
-
 // Real classes instead of anonymous to avoid HasExtraTrait's naming logic failures
 use Modules\Xot\Tests\Fixtures\Models\ExtraModelTest;
 use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;

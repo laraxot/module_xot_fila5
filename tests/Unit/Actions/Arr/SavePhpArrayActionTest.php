@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 
-
 beforeEach(function (): void {
     $action = app(SavePhpArrayAction::class);
     $tempDir = sys_get_temp_dir();

@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\ValueObjects;
 
 use Modules\Xot\ValueObjects\PhoneValueObject;
 
-
 it('accepts valid phone', function (): void {
     $phone = '+11234567890';
     $vo = PhoneValueObject::fromString($phone);

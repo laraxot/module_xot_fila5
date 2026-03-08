@@ -11,7 +11,6 @@ use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 use Nwidart\Modules\Facades\Module;
 
-
 test('fix path action works', function () {
     $action = app(FixPathAction::class);
     $path = 'some/path/with/mixed/slashes';

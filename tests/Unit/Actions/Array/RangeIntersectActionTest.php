@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Modules\Xot\Actions\Array\RangeIntersectAction;
 
-
 test('range intersect action handles basic intersection', function () {
     $action = app(RangeIntersectAction::class);
 

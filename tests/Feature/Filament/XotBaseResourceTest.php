@@ -9,7 +9,6 @@ use Filament\Schemas\Schema;
 use Modules\Xot\Filament\Resources\CacheResource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-
 covers(XotBaseResource::class);
 
 beforeEach(function () {

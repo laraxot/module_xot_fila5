@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit\Traits\Filament;
 use Illuminate\Support\Str;
 use Modules\Xot\Traits\Filament\HasCustomModelLabel;
 
-
 it('gets model label from property', function (): void {
     $class = new class {
         use HasCustomModelLabel;
