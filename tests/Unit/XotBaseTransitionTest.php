@@ -24,7 +24,7 @@ describe('XotBaseTransition', function () {
             public function getNotificationRecipients(): array
             {
                 return [
-                    'test_user' => RecordNotificationData::from(['record' => $record, 'channel' => 'mail']
+                    'test_user' => RecordNotificationData::from(['record' => $record, 'channel' => 'mail'])
                 ];
             }
 
