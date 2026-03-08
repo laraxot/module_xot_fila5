@@ -9,7 +9,7 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    // @var mixed action = app(HasColumnAction::class;
+    $action = app(HasColumnAction::class);
 });
 
 it('executes without errors', function (): void {
@@ -20,11 +20,11 @@ it('executes without errors', function (): void {
 
     // Just verify the action runs without throwing
     try {
-        $result = // @var mixed action->execute($model, 'id';
+        $result = $action->execute($model, 'id');
         expect($result)->toBeBool();
     } catch (Exception $e) {
         // Database may not be available in test environment
-        // @var mixed markTestSkipped('Database not available: '.$e->getMessage(;
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });
 
@@ -34,10 +34,10 @@ it('handles different tables', function (): void {
     };
 
     try {
-        $result = // @var mixed action->execute($model, 'id';
+        $result = $action->execute($model, 'id');
         expect($result)->toBeBool();
     } catch (Exception $e) {
-        // @var mixed markTestSkipped('Database not available: '.$e->getMessage(;
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });
 
@@ -47,9 +47,9 @@ it('returns boolean result', function (): void {
     };
 
     try {
-        $result = // @var mixed action->execute($model, 'nonexistent_xyz_123';
+        $result = $action->execute($model, 'nonexistent_xyz_123');
         expect($result)->toBeBool();
     } catch (Exception $e) {
-        // @var mixed markTestSkipped('Database not available: '.$e->getMessage(;
+        $this->markTestSkipped('Database not available: '.$e->getMessage());
     }
 });

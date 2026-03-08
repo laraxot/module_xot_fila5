@@ -26,8 +26,8 @@ class FeedFactory extends Factory
     public function definition(): array
     {
         return [
-            // 'created_at' => // @var mixed faker->dateTime,
-            // 'updated_at' => // @var mixed faker->dateTime,
+            // 'created_at' => $faker->dateTime,
+            // 'updated_at' => $faker->dateTime,
         ];
     }
 }

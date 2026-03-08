@@ -22,12 +22,12 @@ class WebhookErrorFormatter
         $email = $user->email ?? 'CLI User';
 
         return [
-            'message' => // @var mixed exception->getMessage(
-            'file' => // @var mixed exception->getFile(
-            'line' => // @var mixed exception->getLine(
-            'trace' => // @var mixed exception->getTraceAsString(
-            'exception' => sprintf('`%s` (Code `%s`)', get_class(// @var mixed exception
-            'thrown_in' => sprintf('`%s`:%d', // @var mixed exception->getFile(
+            'message' => $exception->getMessage(
+            'file' => $exception->getFile(
+            'line' => $exception->getLine(
+            'trace' => $exception->getTraceAsString(
+            'exception' => sprintf('`%s` (Code `%s`)', get_class($exception
+            'thrown_in' => sprintf('`%s`:%d', $exception->getFile(
             'user' => sprintf('%d <%s>', Auth::id() ?? 0, $email),
             'ip' => request()->ip(),
             'thrown_while_calling' => sprintf('[%s] %s', request()->getMethod(), request()->fullUrl()),
@@ -35,8 +35,8 @@ class WebhookErrorFormatter
             /*
              * 'exception_details' => sprintf(
              * "Trace:\n```json \n %s \n ```\n\n Previous: \n `%s`",
-             * json_encode(// @var mixed exception->getTrace(
-             * // @var mixed exception->getPrevious(
+             * json_encode($exception->getTrace(
+             * $exception->getPrevious(
              * ),
              */
         ];

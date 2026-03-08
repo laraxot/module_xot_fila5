@@ -37,7 +37,7 @@ class GetFactoryAction
         Assert::stringNotEmpty($model_class, 'Model class non può essere vuota');
         Assert::classExists($model_class, "La classe del modello {$model_class} non esiste");
 
-        $factory_class = // @var mixed getFactoryClass($model_class;
+        $factory_class = $this->getFactoryClass($model_class);
 
         if (class_exists($factory_class)) {
             /** @var Factory $factory */
@@ -53,7 +53,7 @@ class GetFactoryAction
             return $factory;
         }
 
-        // @var mixed createFactory($model_class;
+        $this->createFactory($model_class);
 
         // Lancia un'eccezione con informazioni specifiche
         throw new \Exception(sprintf('Generating Factory [%s] press [F5] to refresh page [%d][%s]', $factory_class, __LINE__, class_basename($this)));

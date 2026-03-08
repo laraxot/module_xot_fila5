@@ -35,12 +35,12 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
         ?string $transKey = null,
         array $fields = [],
     ) {
-        // // @var mixed headings = count($headings;
+        // $headings = count($headings);
 
-        // @var mixed transKey = $transKey;
-        // @var mixed fields = $fields;
+        $transKey = $transKey;
+        $fields = $fields;
 
-        // // @var mixed headings = $headings->toArray(;
+        // $headings = $headings->toArray();
     }
 
     /**
@@ -48,13 +48,13 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     public function map(mixed $row): array
     {
-        $rowArray = // @var mixed normalizeRow($row;
+        $rowArray = $this->normalizeRow($row);
 
-        if (empty(// @var mixed fields
+        if (empty($fields
             return $rowArray;
         }
 
-        return collect(// @var mixed fields
+        return collect($fields
             ->mapWithKeys(function (string $key) use ($rowArray): array {
                 return [$key => $rowArray[$key] ?? null];
             })
@@ -69,20 +69,20 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
 
     public function getHead(): Collection
     {
-        if (! empty(// @var mixed fields
-            return collect(// @var mixed fields;
+        if (! empty($fields
+            return collect($fields);
         }
 
-        $head = // @var mixed collection->first(;
-        $headArray = // @var mixed normalizeRow($head;
+        $head = $collection->first();
+        $headArray = $this->normalizeRow($head);
 
         return collect($headArray)->keys();
     }
 
     public function headings(): array
     {
-        $headings = // @var mixed getHead(;
-        $transKey = // @var mixed transKey;
+        $headings = $this->getHead();
+        $transKey = $transKey;
         $headings = app(TransCollectionAction::class)->execute($headings, $transKey);
 
         return $headings->toArray();
@@ -90,7 +90,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
 
     public function collection(): LazyCollection
     {
-        return // @var mixed collection;
+        return $collection;
     }
 
     /**
@@ -99,7 +99,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public function iterator(): \Iterator
     {
         /* @phpstan-ignore return.type */
-        return // @var mixed collection->getIterator(;
+        return $collection->getIterator();
     }
 
     /**

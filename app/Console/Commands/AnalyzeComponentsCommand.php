@@ -28,10 +28,10 @@ class AnalyzeComponentsCommand extends Command
      */
     public function handle(GetComponentsAction $getComponentsAction): int
     {
-        $module = // @var mixed option('module';
-        $type = // @var mixed option('type';
-        $prefixOption = // @var mixed option('prefix';
-        $forceOption = // @var mixed option('force';
+        $module = $this->option('module');
+        $type = $this->option('type');
+        $prefixOption = $this->option('prefix');
+        $forceOption = $this->option('force');
 
         // Type-safe casting of command options
         $prefix = is_string($prefixOption) ? $prefixOption : '';
@@ -44,7 +44,7 @@ class AnalyzeComponentsCommand extends Command
 
         $components = $getComponentsAction->execute($path, $namespace, $prefix, $force);
 
-        // @var mixed table(
+        $this->table(
             ['Componente', 'Tipo', 'Modulo', 'Path'],
             collect($components)->map(function ($component) {
                 // Type-safe component access

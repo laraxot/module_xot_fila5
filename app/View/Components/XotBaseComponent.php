@@ -82,7 +82,7 @@ abstract class XotBaseComponent extends IlluminateComponent
 
     public function render(): Renderable
     {
-        $view = // @var mixed getView(;
+        $view = $this->getView();
         /** @var view-string $view */
         $view_params = [
             'view' => $view,

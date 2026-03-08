@@ -17,7 +17,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivot = new BaseMorphPivot();
 
         // Assert
-        // @var mixed assertInstanceOf(Pivot::class, $pivot;
+        $this->assertInstanceOf(Pivot::class, $pivot);
     }
 
     /** @test */
@@ -31,7 +31,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $morphType = $pivot->morph_type;
 
         // Assert
-        // @var mixed assertEquals('App\Models\User', $morphType;
+        $this->assertEquals('App\Models\User', $morphType);
     }
 
     /** @test */
@@ -45,7 +45,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $morphId = $pivot->morph_id;
 
         // Assert
-        // @var mixed assertEquals(123, $morphId;
+        $this->assertEquals(123, $morphId);
     }
 
     /** @test */
@@ -59,7 +59,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $relatedType = $pivot->related_type;
 
         // Assert
-        // @var mixed assertEquals('App\Models\Post', $relatedType;
+        $this->assertEquals('App\Models\Post', $relatedType);
     }
 
     /** @test */
@@ -73,7 +73,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $relatedId = $pivot->related_id;
 
         // Assert
-        // @var mixed assertEquals(456, $relatedId;
+        $this->assertEquals(456, $relatedId);
     }
 
     /** @test */
@@ -85,12 +85,12 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivot->setAttribute('numeric_field', 42);
 
         // Act
-        $customField = $pivot->getAttribute('custom_field');
-        $numericField = $pivot->getAttribute('numeric_field');
+        $customField = $pivot->$this->getAttribute('custom_field');
+        $numericField = $pivot->$this->getAttribute('numeric_field');
 
         // Assert
-        // @var mixed assertEquals('custom_value', $customField;
-        // @var mixed assertEquals(42, $numericField;
+        $this->assertEquals('custom_value', $customField);
+        $this->assertEquals(42, $numericField);
     }
 
     /** @test */
@@ -107,8 +107,8 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $updatedAt = $pivot->updated_at;
 
         // Assert
-        // @var mixed assertEquals($now, $createdAt;
-        // @var mixed assertEquals($now, $updatedAt;
+        $this->assertEquals($now, $createdAt);
+        $this->assertEquals($now, $updatedAt);
     }
 
     /** @test */
@@ -123,7 +123,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotDeletedAt = $pivot->deleted_at;
 
         // Assert
-        // @var mixed assertEquals($deletedAt, $pivotDeletedAt;
+        $this->assertEquals($deletedAt, $pivotDeletedAt);
     }
 
     /** @test */
@@ -137,7 +137,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $tenantId = $pivot->tenant_id;
 
         // Assert
-        // @var mixed assertEquals(789, $tenantId;
+        $this->assertEquals(789, $tenantId);
     }
 
     /** @test */
@@ -151,7 +151,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $userId = $pivot->user_id;
 
         // Assert
-        // @var mixed assertEquals(101, $userId;
+        $this->assertEquals(101, $userId);
     }
 
     /** @test */
@@ -172,11 +172,11 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotMetadata = $pivot->metadata;
 
         // Assert
-        // @var mixed assertIsArray($pivotMetadata;
-        // @var mixed assertEquals('api', $pivotMetadata['source'];
-        // @var mixed assertEquals('192.168.1.1', $pivotMetadata['ip_address'];
-        // @var mixed assertEquals('Test Browser', $pivotMetadata['user_agent'];
-        // @var mixed assertEquals('session123', $pivotMetadata['session_id'];
+        $this->assertIsArray($pivotMetadata);
+        $this->assertEquals('api', $pivotMetadata['source']);
+        $this->assertEquals('192.168.1.1', $pivotMetadata['ip_address']);
+        $this->assertEquals('Test Browser', $pivotMetadata['user_agent']);
+        $this->assertEquals('session123', $pivotMetadata['session_id']);
     }
 
     /** @test */
@@ -198,10 +198,10 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotExtraData = $pivot->extra_data;
 
         // Assert
-        // @var mixed assertIsArray($pivotExtraData;
-        // @var mixed assertEquals('value1', $pivotExtraData['field1'];
-        // @var mixed assertEquals('value2', $pivotExtraData['field2'];
-        // @var mixed assertEquals('value', $pivotExtraData['nested']['key'];
+        $this->assertIsArray($pivotExtraData);
+        $this->assertEquals('value1', $pivotExtraData['field1']);
+        $this->assertEquals('value2', $pivotExtraData['field2']);
+        $this->assertEquals('value', $pivotExtraData['nested']['key']);
     }
 
     /** @test */
@@ -215,7 +215,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $status = $pivot->status;
 
         // Assert
-        // @var mixed assertEquals('active', $status;
+        $this->assertEquals('active', $status);
     }
 
     /** @test */
@@ -229,7 +229,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $priority = $pivot->priority;
 
         // Assert
-        // @var mixed assertEquals(5, $priority;
+        $this->assertEquals(5, $priority);
     }
 
     /** @test */
@@ -243,7 +243,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $sortOrder = $pivot->sort_order;
 
         // Assert
-        // @var mixed assertEquals(10, $sortOrder;
+        $this->assertEquals(10, $sortOrder);
     }
 
     /** @test */
@@ -258,7 +258,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotExpiresAt = $pivot->expires_at;
 
         // Assert
-        // @var mixed assertEquals($expiresAt, $pivotExpiresAt;
+        $this->assertEquals($expiresAt, $pivotExpiresAt);
     }
 
     /** @test */
@@ -273,7 +273,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotStartsAt = $pivot->starts_at;
 
         // Assert
-        // @var mixed assertEquals($startsAt, $pivotStartsAt;
+        $this->assertEquals($startsAt, $pivotStartsAt);
     }
 
     /** @test */
@@ -288,7 +288,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotEndsAt = $pivot->ends_at;
 
         // Assert
-        // @var mixed assertEquals($endsAt, $pivotEndsAt;
+        $this->assertEquals($endsAt, $pivotEndsAt);
     }
 
     /** @test */
@@ -302,13 +302,13 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $isActive = $pivot->is_active;
 
         // Assert
-        // @var mixed assertTrue($isActive;
+        $this->assertTrue($isActive);
 
         // Act - Deactivate
         $pivot->is_active = false;
 
         // Assert
-        // @var mixed assertFalse($pivot->is_active;
+        $this->assertFalse($pivot->is_active);
     }
 
     /** @test */
@@ -322,13 +322,13 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $isPublic = $pivot->is_public;
 
         // Assert
-        // @var mixed assertFalse($isPublic;
+        $this->assertFalse($isPublic);
 
         // Act - Make public
         $pivot->is_public = true;
 
         // Assert
-        // @var mixed assertTrue($pivot->is_public;
+        $this->assertTrue($pivot->is_public);
     }
 
     /** @test */
@@ -342,13 +342,13 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $isFeatured = $pivot->is_featured;
 
         // Assert
-        // @var mixed assertFalse($isFeatured;
+        $this->assertFalse($isFeatured);
 
         // Act - Make featured
         $pivot->is_featured = true;
 
         // Assert
-        // @var mixed assertTrue($pivot->is_featured;
+        $this->assertTrue($pivot->is_featured);
     }
 
     /** @test */
@@ -364,11 +364,11 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotTags = $pivot->tags;
 
         // Assert
-        // @var mixed assertIsArray($pivotTags;
-        // @var mixed assertContains('tag1', $pivotTags;
-        // @var mixed assertContains('tag2', $pivotTags;
-        // @var mixed assertContains('important', $pivotTags;
-        // @var mixed assertCount(3, $pivotTags;
+        $this->assertIsArray($pivotTags);
+        $this->assertContains('tag1', $pivotTags);
+        $this->assertContains('tag2', $pivotTags);
+        $this->assertContains('important', $pivotTags);
+        $this->assertCount(3, $pivotTags);
     }
 
     /** @test */
@@ -384,10 +384,10 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotCategories = $pivot->categories;
 
         // Assert
-        // @var mixed assertIsArray($pivotCategories;
-        // @var mixed assertContains('category1', $pivotCategories;
-        // @var mixed assertContains('category2', $pivotCategories;
-        // @var mixed assertCount(2, $pivotCategories;
+        $this->assertIsArray($pivotCategories);
+        $this->assertContains('category1', $pivotCategories);
+        $this->assertContains('category2', $pivotCategories);
+        $this->assertCount(2, $pivotCategories);
     }
 
     /** @test */
@@ -407,10 +407,10 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotPermissions = $pivot->permissions;
 
         // Assert
-        // @var mixed assertIsArray($pivotPermissions;
-        // @var mixed assertTrue($pivotPermissions['read'];
-        // @var mixed assertFalse($pivotPermissions['write'];
-        // @var mixed assertFalse($pivotPermissions['delete'];
+        $this->assertIsArray($pivotPermissions);
+        $this->assertTrue($pivotPermissions['read']);
+        $this->assertFalse($pivotPermissions['write']);
+        $this->assertFalse($pivotPermissions['delete']);
     }
 
     /** @test */
@@ -430,10 +430,10 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotSettings = $pivot->settings;
 
         // Assert
-        // @var mixed assertIsArray($pivotSettings;
-        // @var mixed assertTrue($pivotSettings['notifications'];
-        // @var mixed assertFalse($pivotSettings['auto_save'];
-        // @var mixed assertEquals(30, $pivotSettings['timeout'];
+        $this->assertIsArray($pivotSettings);
+        $this->assertTrue($pivotSettings['notifications']);
+        $this->assertFalse($pivotSettings['auto_save']);
+        $this->assertEquals(30, $pivotSettings['timeout']);
     }
 
     /** @test */
@@ -449,7 +449,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotNotes = $pivot->notes;
 
         // Assert
-        // @var mixed assertEquals($notes, $pivotNotes;
+        $this->assertEquals($notes, $pivotNotes);
     }
 
     /** @test */
@@ -465,7 +465,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotDescription = $pivot->description;
 
         // Assert
-        // @var mixed assertEquals($description, $pivotDescription;
+        $this->assertEquals($description, $pivotDescription);
     }
 
     /** @test */
@@ -481,7 +481,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotUrl = $pivot->url;
 
         // Assert
-        // @var mixed assertEquals($url, $pivotUrl;
+        $this->assertEquals($url, $pivotUrl);
     }
 
     /** @test */
@@ -497,7 +497,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotImageUrl = $pivot->image_url;
 
         // Assert
-        // @var mixed assertEquals($imageUrl, $pivotImageUrl;
+        $this->assertEquals($imageUrl, $pivotImageUrl);
     }
 
     /** @test */
@@ -513,7 +513,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotExternalId = $pivot->external_id;
 
         // Assert
-        // @var mixed assertEquals($externalId, $pivotExternalId;
+        $this->assertEquals($externalId, $pivotExternalId);
     }
 
     /** @test */
@@ -529,7 +529,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotSource = $pivot->source;
 
         // Assert
-        // @var mixed assertEquals($source, $pivotSource;
+        $this->assertEquals($source, $pivotSource);
     }
 
     /** @test */
@@ -545,7 +545,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotVersion = $pivot->version;
 
         // Assert
-        // @var mixed assertEquals($version, $pivotVersion;
+        $this->assertEquals($version, $pivotVersion);
     }
 
     /** @test */
@@ -561,7 +561,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotHash = $pivot->hash;
 
         // Assert
-        // @var mixed assertEquals($hash, $pivotHash;
+        $this->assertEquals($hash, $pivotHash);
     }
 
     /** @test */
@@ -577,7 +577,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotChecksum = $pivot->checksum;
 
         // Assert
-        // @var mixed assertEquals($checksum, $pivotChecksum;
+        $this->assertEquals($checksum, $pivotChecksum);
     }
 
     /** @test */
@@ -593,7 +593,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotSize = $pivot->size;
 
         // Assert
-        // @var mixed assertEquals($size, $pivotSize;
+        $this->assertEquals($size, $pivotSize);
     }
 
     /** @test */
@@ -609,7 +609,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotMimeType = $pivot->mime_type;
 
         // Assert
-        // @var mixed assertEquals($mimeType, $pivotMimeType;
+        $this->assertEquals($mimeType, $pivotMimeType);
     }
 
     /** @test */
@@ -625,7 +625,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotEncoding = $pivot->encoding;
 
         // Assert
-        // @var mixed assertEquals($encoding, $pivotEncoding;
+        $this->assertEquals($encoding, $pivotEncoding);
     }
 
     /** @test */
@@ -641,7 +641,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotLanguage = $pivot->language;
 
         // Assert
-        // @var mixed assertEquals($language, $pivotLanguage;
+        $this->assertEquals($language, $pivotLanguage);
     }
 
     /** @test */
@@ -657,7 +657,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotLocale = $pivot->locale;
 
         // Assert
-        // @var mixed assertEquals($locale, $pivotLocale;
+        $this->assertEquals($locale, $pivotLocale);
     }
 
     /** @test */
@@ -673,7 +673,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotTimezone = $pivot->timezone;
 
         // Assert
-        // @var mixed assertEquals($timezone, $pivotTimezone;
+        $this->assertEquals($timezone, $pivotTimezone);
     }
 
     /** @test */
@@ -689,7 +689,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotCurrency = $pivot->currency;
 
         // Assert
-        // @var mixed assertEquals($currency, $pivotCurrency;
+        $this->assertEquals($currency, $pivotCurrency);
     }
 
     /** @test */
@@ -705,7 +705,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotDecimalPlaces = $pivot->decimal_places;
 
         // Assert
-        // @var mixed assertEquals($decimalPlaces, $pivotDecimalPlaces;
+        $this->assertEquals($decimalPlaces, $pivotDecimalPlaces);
     }
 
     /** @test */
@@ -721,6 +721,6 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $pivotRoundingMode = $pivot->rounding_mode;
 
         // Assert
-        // @var mixed assertEquals($roundingMode, $pivotRoundingMode;
+        $this->assertEquals($roundingMode, $pivotRoundingMode);
     }
 }

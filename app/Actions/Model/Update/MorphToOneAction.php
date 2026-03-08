@@ -37,7 +37,7 @@ class MorphToOneAction
         Assert::isInstanceOf($relation, MorphToOne::class, 'Relation must be an instance of MorphToOne.');
 
         // Prepare the data for creation
-        $data = // @var mixed prepareData($relationDTO->data;
+        $data = $this->prepareData($relationDTO->data);
 
         // Create the related record
         $relation->create($data);

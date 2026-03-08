@@ -65,7 +65,7 @@ class ModulesOverviewWidget extends Widget
                     'name_lower' => $cfg['module_low'],
                     'url' => '/'.$cfg['module_low'].'/admin',
                     'icon' => $cfg['icon'] ?: 'heroicon-o-cube',
-                    'description' => // @var mixed getModuleDescription($cfg['module']
+                    'description' => $this->getModuleDescription($cfg['module']
                 ];
             }
 
@@ -73,7 +73,7 @@ class ModulesOverviewWidget extends Widget
         } catch (\Throwable $e) {
             Log::error('Errore nel caricamento moduli per widget: '.$e->getMessage());
 
-            return // @var mixed getDefaultModules(;
+            return $this->getDefaultModules();
         }
     }
 
@@ -98,14 +98,14 @@ class ModulesOverviewWidget extends Widget
                 'name_lower' => 'user',
                 'url' => '/user/admin',
                 'icon' => 'heroicon-o-users',
-                'description' => // @var mixed getModuleDescription('User'
+                'description' => $this->getModuleDescription('User'
             ],
             [
                 'name' => '<main module>',
                 'name_lower' => '<nome progetto>',
                 'url' => '/<nome progetto>/admin',
                 'icon' => 'heroicon-o-clipboard-document-list',
-                'description' => // @var mixed getModuleDescription('<main module>'
+                'description' => $this->getModuleDescription('<main module>'
             ],
         ];
     }

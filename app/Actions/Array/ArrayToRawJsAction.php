@@ -30,13 +30,13 @@ class ArrayToRawJsAction
     {
         $parts = [];
         foreach ($array as $key => $value) {
-            $k = // @var mixed jsKey((string;
+            $k = $this->jsKey((string));
             if ($value instanceof RawJs) {
                 $parts[] = $k.': '.$value->toHtml();
             } elseif (is_array($value)) {
-                $parts[] = $k.': '.// @var mixed execute($value;
+                $parts[] = $k.': '.$this->execute($value);
             } else {
-                $parts[] = $k.': '.// @var mixed jsValue($value;
+                $parts[] = $k.': '.$this->jsValue($value);
             }
         }
 

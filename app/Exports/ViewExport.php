@@ -30,13 +30,13 @@ class ViewExport implements FromView
      */
     public function __construct(View $view, ?string $transKey = null, ?array $fields = null)
     {
-        // @var mixed view = $view;
-        // @var mixed transKey = $transKey;
-        // @var mixed fields = $fields;
+        $view = $view;
+        $transKey = $transKey;
+        $fields = $fields;
     }
 
     public function view(): View
     {
-        return // @var mixed view;
+        return $view;
     }
 }

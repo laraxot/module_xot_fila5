@@ -22,12 +22,12 @@ class RouteCommandHandler implements CommandHandlerInterface
 
     public function handle(string $moduleName = ''): string
     {
-        $command = // @var mixed getCurrentCommand(;
+        $command = $this->getCurrentCommand();
 
         if (isset(self::ROUTE_COMMANDS[$command])) {
             $method = self::ROUTE_COMMANDS[$command];
 
-            return // @var mixed $method(;
+            return // @var mixed $method();
         }
 
         return '';

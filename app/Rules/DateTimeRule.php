@@ -56,9 +56,9 @@ class DateTimeRule implements Rule
  * ...
  * public function validationData() {
  * return array_merge(
- * // @var mixed all(
+ * $this->all(
  * [
- * 'number' => preg_replace("/[^0-9]/", "", // @var mixed number
+ * 'number' => preg_replace("/[^0-9]/", "", $number
  * ]
  * );
  * }
@@ -104,11 +104,11 @@ class DateTimeRule implements Rule
  *
  * protected function prepareForValidation()
  * {
- * // @var mixed merge([
- * 'title' => fix_typos(// @var mixed title
- * 'body' => filter_malicious_content(// @var mixed body
- * 'tags' => convert_comma_separated_values_to_array(// @var mixed tags
- * 'is_published' => (bool) // @var mixed is_published,
+ * $this->merge([
+ * 'title' => fix_typos($title
+ * 'body' => filter_malicious_content($body
+ * 'tags' => convert_comma_separated_values_to_array($tags
+ * 'is_published' => (bool) $is_published,
  * ]);
  * }
  * }

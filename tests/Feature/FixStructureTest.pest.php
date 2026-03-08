@@ -9,16 +9,16 @@ uses(TestCase::class);
 
 beforeEach(function () {
     // Create a temporary directory for testing
-    // @var mixed testDir = sys_get_temp_dir(;
-    mkdir(// @var mixed testDir, 0o755, true;
+    $testDir = sys_get_temp_dir();
+    mkdir($testDir, 0o755, true);
 
     // Set the working directory
-    chdir(// @var mixed testDir;
+    chdir($testDir);
 });
 
 afterEach(function () {
     // Clean up the test directory
-    // @var mixed rrmdir($this->testDir;
+    $this->rrmdir($this->testDir);
 });
 
 // Recursive function to remove a directory and its contents
@@ -41,7 +41,7 @@ function rrmdir($dir)
 
 test('creates necessary directories and files', function () {
     // Run the command
-    // @var mixed artisan('xot:fix-structure';
+    $this->artisan('xot:fix-structure');
 
     // Check if directories were created
     $directories = [
@@ -61,7 +61,7 @@ test('creates necessary directories and files', function () {
     ];
 
     foreach ($directories as $directory) {
-        // @var mixed assertDirectoryExists($this->testDir.'/'.$directory;
+        $this->assertDirectoryExists($this->testDir.'/'.$directory);
     }
 
     // Check if .gitkeep files were created in empty directories
@@ -75,30 +75,30 @@ test('creates necessary directories and files', function () {
     ];
 
     foreach ($gitkeepFiles as $file) {
-        // @var mixed assertFileExists($this->testDir.'/'.$file;
+        $this->assertFileExists($this->testDir.'/'.$file);
     }
 });
 
 test('does not overwrite existing files', function () {
     // Create a test file that should not be overwritten
     $testContent = 'Test content';
-    $testFile = // @var mixed testDir.'/routes/web.php';
+    $testFile = $testDir.'/routes/web.php';
     file_put_contents($testFile, $testContent);
 
     // Run the command
-    // @var mixed artisan('xot:fix-structure';
+    $this->artisan('xot:fix-structure');
 
     // Verify the file was not overwritten
-    // @var mixed assertStringEqualsFile($testFile, $testContent;
+    $this->assertStringEqualsFile($testFile, $testContent);
 });
 
 test('handles errors gracefully', function () {
     // Make a directory non-writable to test error handling
-    $nonWritableDir = // @var mixed testDir.'/app';
+    $nonWritableDir = $testDir.'/app';
     chmod($nonWritableDir, 0o555);
 
     // Run the command and expect an error
-    // @var mixed artisan('xot:fix-structure';
+    $this->artisan('xot:fix-structure');
 
     // Restore permissions
     chmod($nonWritableDir, 0o755);

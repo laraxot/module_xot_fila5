@@ -41,36 +41,36 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     public function handle(): int
     {
-        // @var mixed info('🐄 SuperMucca Filament Memory Optimizer';
-        // @var mixed newLine(;
+        $this->info('🐄 SuperMucca Filament Memory Optimizer');
+        $this->newLine();
 
-        $analyzeOnly = (bool) // @var mixed option('analyze';
-        $clearCache = (bool) // @var mixed option('clear-cache';
-        $verbose = (bool) // @var mixed option('verbose';
+        $analyzeOnly = (bool) $this->option('analyze');
+        $clearCache = (bool) $this->option('clear-cache');
+        $verbose = (bool) $this->option('verbose');
 
         if ($clearCache) {
-            // @var mixed clearAllCaches(;
+            $this->clearAllCaches();
         }
 
         // Analizza i problemi di memoria
-        $issues = // @var mixed analyzeMemoryIssues($verbose;
+        $issues = $this->analyzeMemoryIssues($verbose);
 
         if ($analyzeOnly) {
-            // @var mixed displayAnalysisResults($issues;
+            $this->displayAnalysisResults($issues);
 
             return self::SUCCESS;
         }
 
         // Applica le ottimizzazioni
-        // @var mixed applyOptimizations($issues, $verbose;
+        $this->applyOptimizations($issues, $verbose);
 
-        // @var mixed info('✅ Ottimizzazione completata!';
-        // @var mixed newLine(;
+        $this->info('✅ Ottimizzazione completata!');
+        $this->newLine();
 
-        // @var mixed info('Prossimi passi:';
-        // @var mixed line('1. Testa i pannelli admin per verificare le performance';
-        // @var mixed line('2. Monitora i log per eventuali errori';
-        // @var mixed line('3. Esegui: php artisan filament:optimize-memory --analyze per verificare';
+        $this->info('Prossimi passi:');
+        $this->line('1. Testa i pannelli admin per verificare le performance');
+        $this->line('2. Monitora i log per eventuali errori');
+        $this->line('3. Esegui: php artisan filament:optimize-memory --analyze per verificare');
 
         return self::SUCCESS;
     }
@@ -80,7 +80,7 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function clearAllCaches(): void
     {
-        // @var mixed info('🧹 Pulizia cache...';
+        $this->info('🧹 Pulizia cache...');
 
         $caches = [
             'config:clear' => 'Config cache',
@@ -90,12 +90,12 @@ class OptimizeFilamentMemoryCommand extends Command
         ];
 
         foreach ($caches as $command => $description) {
-            // @var mixed line("  - {$description}";
+            $this->line("  - {$description}");
             Artisan::call($command);
         }
 
-        // @var mixed info('✅ Cache pulite';
-        // @var mixed newLine(;
+        $this->info('✅ Cache pulite');
+        $this->newLine();
     }
 
     /**
@@ -105,18 +105,18 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function analyzeMemoryIssues(bool $verbose = false): array
     {
-        // @var mixed info('🔍 Analisi problemi di memoria...';
+        $this->info('🔍 Analisi problemi di memoria...');
 
         $issues = [
-            'models_with_eager_loading' => // @var mixed findModelsWithEagerLoading(
-            'heavy_widgets' => // @var mixed findHeavyWidgets(
-            'unoptimized_resources' => // @var mixed findUnoptimizedResources(
-            'migration_code_in_forms' => // @var mixed findMigrationCodeInForms(
-            'missing_pagination' => // @var mixed findMissingPagination(
+            'models_with_eager_loading' => $this->findModelsWithEagerLoading(
+            'heavy_widgets' => $this->findHeavyWidgets(
+            'unoptimized_resources' => $this->findUnoptimizedResources(
+            'migration_code_in_forms' => $this->findMigrationCodeInForms(
+            'missing_pagination' => $this->findMissingPagination(
         ];
 
         if ($verbose) {
-            // @var mixed displayDetailedIssues($issues;
+            $this->displayDetailedIssues($issues);
         }
 
         return $issues;
@@ -259,8 +259,8 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function displayAnalysisResults(array $issues): void
     {
-        // @var mixed info('📊 Risultati analisi:';
-        // @var mixed newLine(;
+        $this->info('📊 Risultati analisi:');
+        $this->newLine();
 
         $totalIssues = 0;
 
@@ -278,19 +278,19 @@ class OptimizeFilamentMemoryCommand extends Command
             };
 
             if ($count > 0) {
-                // @var mixed warn("⚠️  {$label}: {$count}";
+                $this->warn("⚠️  {$label}: {$count}");
             } else {
-                // @var mixed info("✅ {$label}: OK";
+                $this->info("✅ {$label}: OK");
             }
         }
 
-        // @var mixed newLine(;
+        $this->newLine();
 
         if ($totalIssues > 0) {
-            // @var mixed error("🚨 Trovati {$totalIssues} problemi di performance";
-            // @var mixed line('Esegui senza --analyze per applicare le correzioni automatiche';
+            $this->error("🚨 Trovati {$totalIssues} problemi di performance");
+            $this->line('Esegui senza --analyze per applicare le correzioni automatiche');
         } else {
-            // @var mixed info('🎉 Nessun problema di performance trovato!';
+            $this->info('🎉 Nessun problema di performance trovato!');
         }
     }
 
@@ -303,11 +303,11 @@ class OptimizeFilamentMemoryCommand extends Command
     {
         foreach ($issues as $type => $items) {
             if (is_array($items) && count($items) > 0) {
-                // @var mixed newLine(;
-                // @var mixed warn("Dettagli {$type}:";
+                $this->newLine();
+                $this->warn("Dettagli {$type}:");
                 foreach ($items as $item) {
                     $itemString = is_string($item) ? $item : (string) $item;
-                    // @var mixed line('  - '.str_replace(base_path(;
+                    $this->line('  - '.str_replace(base_path()));
                 }
             }
         }
@@ -320,18 +320,18 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function applyOptimizations(array $issues, bool $verbose = false): void
     {
-        // @var mixed info('🔧 Applicazione ottimizzazioni...';
+        $this->info('🔧 Applicazione ottimizzazioni...');
 
         // Ottimizzazione 1: Cache delle configurazioni
-        // @var mixed optimizeConfigurations(;
+        $this->optimizeConfigurations();
 
         // Ottimizzazione 2: Database
-        // @var mixed optimizeDatabase(;
+        $this->optimizeDatabase();
 
         // Ottimizzazione 3: Autoloader
-        // @var mixed optimizeAutoloader(;
+        $this->optimizeAutoloader();
 
-        // @var mixed info('✅ Ottimizzazioni applicate';
+        $this->info('✅ Ottimizzazioni applicate');
     }
 
     /**
@@ -339,7 +339,7 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function optimizeConfigurations(): void
     {
-        // @var mixed line('  - Ottimizzazione configurazioni...';
+        $this->line('  - Ottimizzazione configurazioni...');
 
         Artisan::call('config:cache');
         Artisan::call('route:cache');
@@ -351,7 +351,7 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function optimizeDatabase(): void
     {
-        // @var mixed line('  - Ottimizzazione database...';
+        $this->line('  - Ottimizzazione database...');
 
         // Ottimizza le tabelle MySQL se possibile
         try {
@@ -369,7 +369,7 @@ class OptimizeFilamentMemoryCommand extends Command
      */
     private function optimizeAutoloader(): void
     {
-        // @var mixed line('  - Ottimizzazione autoloader...';
+        $this->line('  - Ottimizzazione autoloader...');
 
         $process = new Process(['composer', 'dump-autoload', '--optimize']);
         $process->setWorkingDirectory(base_path());

@@ -20,7 +20,7 @@ class ModuleService
 
     public function __construct(string $name = '')
     {
-        // @var mixed name = $name;
+        $name = $name;
     }
 
     private static ?self $_instance = null;
@@ -52,7 +52,7 @@ class ModuleService
      */
     public function setName(string $name): self
     {
-        // @var mixed name = $name;
+        $name = $name;
 
         return $this;
     }
@@ -69,7 +69,7 @@ class ModuleService
          * return [];
          * }
          */
-        $mod = Module::find(// @var mixed name;
+        $mod = Module::find($name);
         if (! $mod instanceof \Nwidart\Modules\Module) {
             return [];
         }

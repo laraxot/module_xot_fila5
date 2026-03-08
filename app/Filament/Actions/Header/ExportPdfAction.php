@@ -21,7 +21,7 @@ class ExportPdfAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
-        // @var mixed translateLabel(
+        $this->translateLabel(
             ->label('')
             ->tooltip(__('xot::actions.export_pdf.tooltip'))
             ->icon('ui-files.pdf')

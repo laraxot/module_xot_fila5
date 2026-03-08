@@ -35,13 +35,13 @@ class GetTreeOptionsByModelClassAction
         foreach ($rows as $row) {
             /** @var HasRecursiveRelationshipsContract $row */
             $key = $row->getKey();
-            // @var mixed options[is_string($key
+            $options[is_string($key
                 ? $row
                 : (string) $row->getLabel();
-            // @var mixed parse($row;
+            $this->parse($row);
         }
 
-        return // @var mixed options;
+        return $options;
     }
 
     public function parse(HasRecursiveRelationshipsContract $model): void
@@ -49,7 +49,7 @@ class GetTreeOptionsByModelClassAction
         foreach ($model->children as $child) {
             /** @var HasRecursiveRelationshipsContract $child */
             $key = $child->getKey();
-            // @var mixed options[is_string($key
+            $options[is_string($key
                 Str::repeat('---', $child->depth).'   '.$child->getLabel();
         }
     }

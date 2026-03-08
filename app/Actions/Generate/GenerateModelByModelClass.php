@@ -29,20 +29,20 @@ class GenerateModelByModelClass
         $namespace = str_replace('\\', '/', $model_class);
         Assert::string($namespace, 'Namespace must be a string');
 
-        // @var mixed generate($model_class;
+        $this->generate($model_class);
         $filename = app(GetFilenameByClassnameAction::class)->execute($model_class);
 
         $content_old = File::get($filename);
         $content = $content_old;
-        foreach (// @var mixed replaces as $k => $v
+        foreach ($replaces as $k => $v
             if (method_exists($this, 'replace'.$k)) {
-                $content = // @var mixed {'replace'.$k}($v, $content;
+                $content = // @var mixed {'replace'.$k}($v, $content);
             }
 
-            // $content=// @var mixed replace($content,$k,$v;
+            // $content=$this->replace($content,$k,$v);
         }
         $content = is_string($content) ? str_replace(' extends Model', ' extends BaseModel', $content) : $content;
-        $content = is_string($content) ? str_replace('use \Modules\Xot\Models\Traits\HasXotFactory;', '', $content) : $content;
+        $content = is_string($content) ? str_replace('use \Modules\Xot\Models\Traits\HasXotFactory);', '', $content) : $content;
         Assert::string($content, '['.__LINE__.']['.class_basename($this).']');
 
         if ($content !== $content_old) {
@@ -59,7 +59,7 @@ class GenerateModelByModelClass
             $fillable_start = mb_strpos($content, 'protected $fillable'),
             '['.__LINE__.']['.class_basename($this).']',
         );
-        $fillable_end = mb_strpos($content, '];', $fillable_start);
+        $fillable_end = mb_strpos($content, ']);', $fillable_start);
         if (false === $table_start) {
             $before = mb_substr($content, 0, $fillable_end + 2);
             $after = mb_substr($content, $fillable_end + 2);
@@ -100,7 +100,7 @@ class GenerateModelByModelClass
 
     public function setCustomReplaces(array $replaces): self
     {
-        // @var mixed replaces = array_merge($this->replaces, $replaces;
+        $replaces = array_merge($this->replaces, $replaces);
 
         return $this;
     }

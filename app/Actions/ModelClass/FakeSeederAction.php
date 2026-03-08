@@ -39,7 +39,7 @@ class FakeSeederAction
 
         $qtyToDo = min($qty, self::MAX_RECORDS);
 
-        $factory = // @var mixed getModelFactory($modelClass;
+        $factory = $this->getModelFactory($modelClass);
         /** @var Collection<int, Model> $rows */
         $rows = $factory->count($qtyToDo)->make();
 
@@ -56,10 +56,10 @@ class FakeSeederAction
             $modelClass::insert($data);
         });
 
-        // @var mixed sendNotification($modelClass, $qtyToDo;
+        $this->sendNotification($modelClass, $qtyToDo);
 
         if ($qty > self::MAX_RECORDS) {
-            // @var mixed queueRemainingRecords($modelClass, $qty;
+            $this->queueRemainingRecords($modelClass, $qty);
         }
     }
 

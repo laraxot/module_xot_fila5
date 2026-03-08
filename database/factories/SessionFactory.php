@@ -26,7 +26,7 @@ class SessionFactory extends Factory
     public function definition(): array
     {
         return [
-            // 'id' => // @var mixed faker->word,
+            // 'id' => $faker->word,
         ];
     }
 }

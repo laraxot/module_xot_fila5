@@ -23,6 +23,6 @@ class ExtraModelTest extends Model implements ExtraContract
 
     public function model(): MorphTo
     {
-        return // @var mixed morphTo(;
+        return $this->morphTo();
     }
 }
