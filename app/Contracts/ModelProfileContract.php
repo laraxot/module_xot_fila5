@@ -36,7 +36,7 @@ interface ModelProfileContract extends ModelContract
      *
      * @return $this
      */
-    public function assignRole(array|string|int|Role|Collection $roles = [
+    public function assignRole(array|string|int|\Spatie\Permission\Contracts\Role|Collection $roles = [)
     ]);
 
     /**
@@ -56,7 +56,7 @@ interface ModelProfileContract extends ModelContract
      *
      * @param string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role> $roles
      */
-    public function hasAnyRole(string|int|array|Role|Collection $roles = [
+    public function hasAnyRole(string|int|array|\Spatie\Permission\Contracts\Role|Collection $roles = [)
     ]): bool;
 
     /**
