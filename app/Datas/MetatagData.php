@@ -283,8 +283,8 @@ class MetatagData extends Data implements Wireable
         }
 
         $custom = [];
-        foreach ($colors as $key => $value
-            if (Arr::has($value, 'color')) {
+        foreach ($filamentColors as $key => $value) {
+            if (is_array($value) && Arr::has($value, 'color')) {
                 $custom[$key] = (string) $value['color'];
             }
         }
@@ -421,7 +421,7 @@ class MetatagData extends Data implements Wireable
         $customColors = [];
 
         // Convert custom color format to Filament color format
-        foreach ($colors as $key => $value
+        foreach ($filamentColors as $key => $value) {
             if (is_array($value) && Arr::has($value, 'color')) {
                 // Convert single color value to array format for Filament compatibility
                 $colorValue = (string) $value['color'];
@@ -662,8 +662,8 @@ class MetatagData extends Data implements Wireable
             return $this;
         }
 
-        if (empty($title
-            $title = $title;
+        if (empty($title)) {
+            $title = $this->title;
         } else {
             $title = $title.' - '.$this->title;
         }
@@ -684,10 +684,10 @@ class MetatagData extends Data implements Wireable
             return $this;
         }
 
-        if (empty($description
-            $description = $description;
+        if (empty($description)) {
+            $description = $this->description;
         } else {
-            $description = $description.' '.$this->description;
+            $description = $description.' - '.$this->description;
         }
 
         return $this;
