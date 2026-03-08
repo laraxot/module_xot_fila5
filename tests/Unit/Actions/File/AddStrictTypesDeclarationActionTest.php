@@ -15,7 +15,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    if (File::isDirectory($tempDir
+    if (File::isDirectory($tempDir)) {
         File::deleteDirectory($tempDir);
     }
 });
