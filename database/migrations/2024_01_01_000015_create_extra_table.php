@@ -16,7 +16,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->increments('id');
             $table->uuidMorphs('model');
             // @phpstan-ignore-next-line method.notFound
@@ -25,19 +25,19 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            // if (! // @var mixed hasColumn('name'
+        $this->tableUpdate(function (Blueprint $table
+            // if (! $this->hasColumn('name'
             //    $table->string('name')->nullable();
             // }
-            // @var mixed updateTimestamps(
+            $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
-            // if (! // @var mixed hasIndex('morph_unique'
+            // if (! $this->hasIndex('morph_unique'
             //    $table->unique(['model_id', 'model_type'], 'morph_unique');
             // }
 
-            if (// @var mixed hasColumn('model_id'
+            if ($hasColumn('model_id'
                 $table->string('model_id', 36)->index()->change();
             }
         });

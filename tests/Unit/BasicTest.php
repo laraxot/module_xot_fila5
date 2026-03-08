@@ -9,7 +9,7 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class)->in(__DIR__);
 
 it('basic test works', function () {
-    // @var mixed assertTrue(true;
+    $this->assertTrue(true);
 });
 
 it('can create a test asset', function () {

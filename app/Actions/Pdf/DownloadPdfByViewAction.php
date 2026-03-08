@@ -30,7 +30,7 @@ class DownloadPdfByViewAction
         array $viewParams = [],
         ?string $filename = null,
     ): StreamedResponse {
-        $filename ??= // @var mixed deriveFilenameFromView($view;
+        $filename ??= $this->deriveFilenameFromView($view);
 
         return app(StreamDownloadPdfAction::class)->execute(
             html: null,

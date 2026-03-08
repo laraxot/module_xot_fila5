@@ -62,7 +62,7 @@ class SafeFloatCastAction
 
         // Se è una stringa, prova a convertirla
         if (is_string($value)) {
-            return // @var mixed parseStringToFloat($value, $default;
+            return $this->parseStringToFloat($value, $default);
         }
 
         // Se è un booleano, convertilo (true = 1.0, false = 0.0)
@@ -72,12 +72,12 @@ class SafeFloatCastAction
 
         // Se è un array e ha un solo elemento numerico
         if (is_array($value) && 1 === count($value)) {
-            return // @var mixed execute(reset($value;
+            return $this->execute(reset($value));
         }
 
         // Se è un oggetto con metodo __toString, prova a convertirlo
         if (is_object($value) && method_exists($value, '__toString')) {
-            return // @var mixed parseStringToFloat((string;
+            return $this->parseStringToFloat((string));
         }
 
         // Per tutti gli altri tipi, restituisci il default
@@ -109,7 +109,7 @@ class SafeFloatCastAction
      */
     public function executeWithRange(mixed $value, float $min, float $max, ?float $default = null): float
     {
-        $float = // @var mixed execute($value, $default;
+        $float = $this->execute($value, $default);
 
         // Clamp il valore tra min e max
         return max($min, min($max, $float));
@@ -141,7 +141,7 @@ class SafeFloatCastAction
      */
     public function executeWithPrecision(mixed $value, int $precision = 2, ?float $default = 0.0): float
     {
-        $float = // @var mixed execute($value, $default;
+        $float = $this->execute($value, $default);
 
         return round($float, max(0, $precision));
     }
@@ -170,7 +170,7 @@ class SafeFloatCastAction
      */
     public function executeAsPercentage(mixed $value, ?float $default = 0.0): float
     {
-        return // @var mixed executeWithRange($value, 0.0, 100.0, $default;
+        return $this->executeWithRange($value, 0.0, 100.0, $default);
     }
 
     /**
@@ -196,7 +196,7 @@ class SafeFloatCastAction
      */
     public function executeAsCurrency(mixed $value, ?float $default = 0.0): float
     {
-        $float = // @var mixed execute($value, $default;
+        $float = $this->execute($value, $default);
 
         return round(abs($float), 2);
     }

@@ -17,7 +17,7 @@ declare(strict_types=1);
         </x-slot>
 
         @php
-            $modules = // @var mixed getModules(;
+            $modules = $this->getModules();
         @endphp
 
         @if(count($modules) > 0)

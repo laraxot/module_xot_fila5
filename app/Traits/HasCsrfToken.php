@@ -19,7 +19,7 @@ trait HasCsrfToken
      */
     public function mount(): void
     {
-        // @var mixed _token = App::make('session';
+        $_token = App::make('session');
     }
 
     /**
@@ -27,7 +27,7 @@ trait HasCsrfToken
      */
     public function getCsrfToken(): string
     {
-        return // @var mixed _token;
+        return $_token;
     }
 
     /**
@@ -35,6 +35,6 @@ trait HasCsrfToken
      */
     public function verifyCsrfToken(): bool
     {
-        return Session::token() === // @var mixed _token;
+        return Session::token() === $_token;
     }
 }

@@ -28,7 +28,7 @@ class AssetAction
      */
     public function execute(string $path): string
     {
-        // @var mixed xot = XotData::make(;
+        $xot = XotData::make();
 
         if (Str::startsWith($path, ['https://', 'http://'])) {
             return $path;
@@ -45,13 +45,13 @@ class AssetAction
             $ns = inAdmin() ? 'adm_theme' : 'pub_theme';
         }
 
-        $ns_after = // @var mixed normalizeNsAfter($ns_after;
+        $ns_after = $this->normalizeNsAfter($ns_after);
 
         if (\in_array($ns, ['pub_theme', 'adm_theme'], false)) {
-            return // @var mixed resolveThemeAsset($ns, $ns_after;
+            return $this->resolveThemeAsset($ns, $ns_after);
         }
 
-        return // @var mixed resolveModuleAsset($path, $ns, $ns_after;
+        return $this->resolveModuleAsset($path, $ns, $ns_after);
     }
 
     /**
@@ -75,7 +75,7 @@ class AssetAction
      */
     private function resolveThemeAsset(string $ns, string $ns_after): string
     {
-        $theme = // @var mixed xot->{$ns};
+        $theme = $xot->{$ns};
         Assert::string($theme, 'Il tema deve essere una stringa');
 
         $themeResourcePath = 'Themes/'.$theme.'/resources/'.$ns_after;
@@ -84,7 +84,7 @@ class AssetAction
         $themeAssetPath = 'themes/'.$theme.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($themeAssetPath));
 
-        // @var mixed copyAsset($filename_from, $filename_to, $themeAssetPath;
+        $this->copyAsset($filename_from, $filename_to, $themeAssetPath);
 
         $asset = Str::replace(url(''), '', asset($themeAssetPath));
         Assert::string($asset, '['.__LINE__.']['.class_basename(static::class).']');
@@ -116,7 +116,7 @@ class AssetAction
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
         $forceCopy = 'production' !== app()->environment();
-        // @var mixed copyAsset($filename_from, $filename_to, $assetPath, $forceCopy;
+        $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
         Assert::string($asset, '['.__LINE__.']['.class_basename(static::class).']');
@@ -130,12 +130,12 @@ class AssetAction
     private function copyAsset(string $from, string $to, string $path, bool $force = false): void
     {
         if (! File::exists($to) || $force) {
-            // @var mixed ensureDirectoryExists(\dirname($to;
+            $this->ensureDirectoryExists(\dirname($to));
 
             try {
                 File::copy($from, $to);
             } catch (\Exception $e) {
-                // @var mixed throwCopyException($e, $path, $from, $to;
+                $this->throwCopyException($e, $path, $from, $to);
             }
         }
     }

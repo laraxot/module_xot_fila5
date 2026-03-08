@@ -63,25 +63,25 @@ class StateOverviewWidget extends XotBaseWidget
     protected function getViewData(): array
     {
         return [
-            'states' => // @var mixed getStates(
-            // 'title' => // @var mixed getWidgetTitle(
+            'states' => $this->getStates(
+            // 'title' => $this->getWidgetTitle(
         ];
     }
 
     protected function getCacheKey(): string
     {
         try {
-            $cacheKey = 'states-'.class_basename(// @var mixed model;
+            $cacheKey = 'states-'.class_basename($model);
             $cacheKey = Str::slug($cacheKey);
-            // @var mixed cacheKey = $cacheKey;
+            $cacheKey = $cacheKey;
 
             return $cacheKey;
         } catch (\Error $e) {
-            if ('' === // @var mixed cacheKey
-                // @var mixed cacheKey = Str::uuid(;
+            if ('' === $cacheKey
+                $cacheKey = Str::uuid();
             }
 
-            return // @var mixed cacheKey;
+            return $cacheKey;
         }
     }
 
@@ -92,7 +92,7 @@ class StateOverviewWidget extends XotBaseWidget
      */
     protected function getStates(): array
     {
-        $res = Cache::remember(// @var mixed getCacheKey(;
+        $res = Cache::remember($getCacheKey());
 
         Assert::isArray($res);
 
@@ -109,9 +109,9 @@ class StateOverviewWidget extends XotBaseWidget
     {
         $states = [];
 
-        $modelInstance = app(// @var mixed model;
+        $modelInstance = app($model);
 
-        $stateMappingCollection = // @var mixed stateClass::getStateMapping(;
+        $stateMappingCollection = $stateClass::getStateMapping();
         if (! is_object($stateMappingCollection) || ! method_exists($stateMappingCollection, 'toArray')) {
             return [];
         }
@@ -126,9 +126,9 @@ class StateOverviewWidget extends XotBaseWidget
             $states[] = [
                 'name' => $stateName,
                 'label' => $state->label(),
-                'icon' => // @var mixed cleanIconName($state->icon(
+                'icon' => $this->cleanIconName($state->icon(
                 'color' => $state->bgColor(),
-                'count' => // @var mixed getCountForState($stateName
+                'count' => $this->getCountForState($stateName
             ];
         }
 
@@ -143,7 +143,7 @@ class StateOverviewWidget extends XotBaseWidget
     protected function getCountForState(string $stateName): int
     {
         /** @var Builder<Model> $query */
-        $query = // @var mixed model::where('state', $stateName;
+        $query = $model::where('state', $stateName);
         $count = $query->count();
 
         return is_int($count) ? $count : (int) $count;

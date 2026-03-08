@@ -55,7 +55,7 @@ class CustomRelation extends Relation
      */
     public function addConstraints(): void
     {
-        \call_user_func(// @var mixed baseConstraints, $this;
+        \call_user_func($baseConstraints, $this);
     }
 
     /**
@@ -64,11 +64,11 @@ class CustomRelation extends Relation
     public function addEagerConstraints(array $models): void
     {
         // Parameter #1 $function of function call_user_func expects callable(): mixed, Closure|null given.
-        if (! \is_callable(// @var mixed eagerConstraints
+        if (! \is_callable($eagerConstraints
             throw new \Exception('eagerConstraints is not callable');
         }
 
-        \call_user_func(// @var mixed eagerConstraints, $this, $models;
+        \call_user_func($eagerConstraints, $this, $models);
     }
 
     /**
@@ -77,7 +77,7 @@ class CustomRelation extends Relation
     public function initRelation(array $models, $relation): array
     {
         foreach ($models as $model) {
-            $model->setRelation($relation, // @var mixed related->newCollection(;
+            $model->setRelation($relation, $related->newCollection());
         }
 
         return $models;
@@ -91,11 +91,11 @@ class CustomRelation extends Relation
     public function match(array $models, Collection $collection, $relation): array
     {
         // Trying to invoke Closure|null but it might not be a callable.
-        if (! \is_callable(// @var mixed eagerMatcher
+        if (! \is_callable($eagerMatcher
             throw new \Exception('eagerMatcher is not callable');
         }
 
-        $res = (// @var mixed eagerMatcher;
+        $res = ($eagerMatcher);
         Assert::isArray($res);
         Assert::allIsInstanceOf($res, Model::class);
 
@@ -110,7 +110,7 @@ class CustomRelation extends Relation
      */
     public function getResults(): Collection
     {
-        return // @var mixed get(;
+        return $this->get();
     }
 
     /**
@@ -121,12 +121,12 @@ class CustomRelation extends Relation
         // First we'll add the proper select columns onto the query so it is run with
         // the proper columns. Then, we will get the results and hydrate out pivot
         // models with the result of those columns as a separate model relation.
-        $columns = // @var mixed query->getQuery(;
+        $columns = $query->getQuery();
         if ($columns === ['*']) {
-            $columns = [// @var mixed related->getTable(;
+            $columns = [$related->getTable();
         }
 
-        $query = // @var mixed query->applyScopes(;
+        $query = $query->applyScopes();
         $models = $query->addSelect($columns)->getModels();
         // If we actually found models we will also eager load any relationships that
         // have been specified as needing to be eager loaded. This will solve the
@@ -139,7 +139,7 @@ class CustomRelation extends Relation
         Assert::allIsInstanceOf($models, Model::class);
 
         /* @var array<int, Model> $models */
-        return // @var mixed related->newCollection($models;
+        return $related->newCollection($models);
     }
 
     /*
@@ -153,6 +153,6 @@ class CustomRelation extends Relation
      * @return \Illuminate\Database\Eloquent\Builder
      */
     // public function where($column, $operator = null, $value = null, $boolean = 'and') {
-    //    return // @var mixed query->where($column, $operator, $value, $boolean;
+    //    return $query->where($column, $operator, $value, $boolean);
     // }
 }

@@ -211,11 +211,11 @@ class SafeObjectCastAction
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
         return match ($type) {
-            'string' => // @var mixed getStringProperty($object, $property, is_string($default
-            'int' => // @var mixed getIntProperty($object, $property, is_int($default
-            'float' => // @var mixed getFloatProperty($object, $property, is_float($default
-            'bool' => // @var mixed getBooleanProperty($object, $property, is_bool($default
-            'array' => // @var mixed getArrayProperty($object, $property, is_array($default
+            'string' => $this->getStringProperty($object, $property, is_string($default
+            'int' => $this->getIntProperty($object, $property, is_int($default
+            'float' => $this->getFloatProperty($object, $property, is_float($default
+            'bool' => $this->getBooleanProperty($object, $property, is_bool($default
+            'array' => $this->getArrayProperty($object, $property, is_array($default
             default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
@@ -263,7 +263,7 @@ class SafeObjectCastAction
         Assert::stringNotEmpty($property);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
-        $value = // @var mixed getTypedProperty($object, $property, $type, $default;
+        $value = $this->getTypedProperty($object, $property, $type, $default);
 
         if (null !== $validator && ! $validator($value)) {
             return $default;

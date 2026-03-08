@@ -19,7 +19,7 @@ class InformationSchemaTableFactory extends Factory
     public function definition(): array
     {
         /** @var string $tableName */
-        $tableName = // @var mixed faker->randomElement([
+        $tableName = $faker->randomElement([
             'users',
             'posts',
             'comments',
@@ -33,39 +33,39 @@ class InformationSchemaTableFactory extends Factory
 
         return [
             'table_catalog' => 'def',
-            'table_schema' => // @var mixed faker->randomElement(['<nome progetto>', 'public', 'main']
+            'table_schema' => $faker->randomElement(['<nome progetto>', 'public', 'main']
             'table_name' => $tableName,
-            'table_type' => // @var mixed faker->randomElement(['BASE TABLE', 'VIEW']
-            'engine' => // @var mixed faker->randomElement(['InnoDB', 'MyISAM']
-            'version' => // @var mixed faker->numberBetween(10, 11
-            'row_format' => // @var mixed faker->randomElement(['Dynamic', 'Fixed', 'Compressed']
-            'table_rows' => // @var mixed faker->numberBetween(0, 10000
-            'avg_row_length' => // @var mixed faker->numberBetween(50, 500
-            'data_length' => // @var mixed faker->numberBetween(1024, 1048576
-            'max_data_length' => // @var mixed faker->numberBetween(1048576, 10485760
-            'index_length' => // @var mixed faker->numberBetween(0, 524288
-            'data_free' => // @var mixed faker->numberBetween(0, 1024
-            'auto_increment' => // @var mixed faker->optional(
-            'create_time' => // @var mixed faker->dateTimeBetween('-1 year', 'now'
-            'update_time' => // @var mixed faker->optional(
-            'check_time' => // @var mixed faker->optional(
+            'table_type' => $faker->randomElement(['BASE TABLE', 'VIEW']
+            'engine' => $faker->randomElement(['InnoDB', 'MyISAM']
+            'version' => $faker->numberBetween(10, 11
+            'row_format' => $faker->randomElement(['Dynamic', 'Fixed', 'Compressed']
+            'table_rows' => $faker->numberBetween(0, 10000
+            'avg_row_length' => $faker->numberBetween(50, 500
+            'data_length' => $faker->numberBetween(1024, 1048576
+            'max_data_length' => $faker->numberBetween(1048576, 10485760
+            'index_length' => $faker->numberBetween(0, 524288
+            'data_free' => $faker->numberBetween(0, 1024
+            'auto_increment' => $faker->optional(
+            'create_time' => $faker->dateTimeBetween('-1 year', 'now'
+            'update_time' => $faker->optional(
+            'check_time' => $faker->optional(
             'table_collation' => 'utf8mb4_unicode_ci',
-            'checksum' => // @var mixed faker->optional(
+            'checksum' => $faker->optional(
             'create_options' => '',
-            'table_comment' => // @var mixed faker->optional(
+            'table_comment' => $faker->optional(
         ];
     }
 
     public function baseTable(): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'table_type' => 'BASE TABLE',
         ]);
     }
 
     public function view(): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'table_type' => 'VIEW',
         ]);
     }

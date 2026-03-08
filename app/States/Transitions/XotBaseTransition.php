@@ -24,7 +24,7 @@ abstract class XotBaseTransition extends Transition
 
     public function handle(): Model
     {
-        // @var mixed sendNotifications(;
+        $this->sendNotifications();
         $class = static::class;
 
         $stateNamespace = Str::of($class)->beforeLast('\Transitions\\')->toString();
@@ -32,18 +32,18 @@ abstract class XotBaseTransition extends Transition
         $newStateClass = $stateNamespace.'\\'.$stateClassName;
 
         /* @phpstan-ignore-next-line */
-        // @var mixed record->state = new $newStateClass($this->record;
-        // @var mixed record->save(;
+        $record->state = new $newStateClass($this->record);
+        $record->save();
 
-        return // @var mixed record;
+        return $record;
     }
 
     public function sendNotifications(): void
     {
-        $data = // @var mixed getNotificationData(;
-        $recipients = // @var mixed getNotificationRecipients(;
+        $data = $this->getNotificationData();
+        $recipients = $this->getNotificationRecipients();
         foreach ($recipients as $recipient) {
-            // @var mixed sendRecipientNotification($recipient, $data;
+            $this->sendRecipientNotification($recipient, $data);
         }
     }
 
@@ -53,10 +53,10 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationRecipients(): array
     {
         return [
-            // 'me' => // @var mixed record,
-            'me_mail' => RecordNotificationData::from(['record' => // @var mixed record, 'channel' => 'mail']
-            // 'patient' => // @var mixed record->patient,
-            // 'doctor' => // @var mixed record->doctor,
+            // 'me' => $record,
+            'me_mail' => RecordNotificationData::from(['record' => $record, 'channel' => 'mail']
+            // 'patient' => $record->patient,
+            // 'doctor' => $record->doctor,
             // 'patient_mail' => RecordNotificationData::from(['record' => $record->patient, 'channel' => 'mail']),
             // 'doctor_mail' => RecordNotificationData::from(['record' => $record->doctor, 'channel' => 'mail']),
         ];
@@ -78,7 +78,7 @@ abstract class XotBaseTransition extends Transition
         $type = $typeEnum instanceof \BackedEnum ? (string) $typeEnum->value : 'unknown';
 
         $slug =
-            class_basename(// @var mixed record
+            class_basename($record
             '-'.
             $type.
             '-'.
@@ -93,7 +93,7 @@ abstract class XotBaseTransition extends Transition
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {
-        $slug = // @var mixed getNotificationSlug($recipient->record;
+        $slug = $this->getNotificationSlug($recipient->record);
 
         if (! class_exists(RecordNotification::class)) {
             return;
@@ -101,12 +101,12 @@ abstract class XotBaseTransition extends Transition
 
         // RecordNotification resolves MailTemplate internally from slug (lazy resolution)
         // No need to pre-load MailTemplate - pass slug directly
-        $notify = new RecordNotification(// @var mixed record, $slug;
+        $notify = new RecordNotification($record, $slug);
         $mergeData = $data;
 
         $notify->mergeData($mergeData);
 
-        $attachments = // @var mixed getNotificationAttachments(;
+        $attachments = $this->getNotificationAttachments();
 
         $notify->addAttachments($attachments);
 
@@ -128,10 +128,10 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationData(): array
     {
         return [
-            'message' => // @var mixed message,
-            // 'appointment_date' => // @var mixed appointment->starts_at?->format('d/m/Y H:i'
-            // 'patient_name' => // @var mixed appointment->patient->name ?? 'N/A',
-            // 'doctor_name' => // @var mixed appointment->doctor->name ?? 'N/A',
+            'message' => $message,
+            // 'appointment_date' => $appointment->starts_at?->format('d/m/Y H:i'
+            // 'patient_name' => $appointment->patient->name ?? 'N/A',
+            // 'doctor_name' => $appointment->doctor->name ?? 'N/A',
         ];
     }
 }

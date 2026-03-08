@@ -27,7 +27,7 @@ class BelongsToManyAction
             \in_array('to', array_keys($relationDTO->data), false)
                 || \in_array('from', array_keys($relationDTO->data), false)
         ) {
-            // // @var mixed saveMultiselectTwoSides($row, $relation->name, $relation->data;
+            // $this->saveMultiselectTwoSides($row, $relation->name, $relation->data);
             Assert::isArray($to = $relationDTO->data['to'] ?? []);
             $rows->sync($to);
             $status = 'collegati ['.implode(', ', $to).'] ';

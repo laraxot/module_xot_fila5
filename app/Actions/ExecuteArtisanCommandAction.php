@@ -54,7 +54,7 @@ class ExecuteArtisanCommandAction
     {
         Assert::stringNotEmpty($command, 'Il comando non può essere vuoto');
 
-        if (! // @var mixed isCommandAllowed($command
+        if (! $this->isCommandAllowed($command
             throw new \RuntimeException("Comando non consentito: {$command}");
         }
 
@@ -139,6 +139,6 @@ class ExecuteArtisanCommandAction
     {
         Assert::stringNotEmpty($command, 'Il comando non può essere vuoto');
 
-        return in_array($command, // @var mixed allowedCommands, true;
+        return in_array($command, $allowedCommands, true);
     }
 }

@@ -22,7 +22,7 @@ class FilterFormWidget extends XotBaseWidget
     /*
     public function mount(): void
     {
-        // @var mixed form->fill(;
+        $form->fill();
     }
 
 
@@ -30,13 +30,13 @@ class FilterFormWidget extends XotBaseWidget
     public function applyFilters(): void
     {
         // Emetti un evento per aggiornare la pagina principale
-        // @var mixed dispatch('filtersUpdated', filters: $this->data;
+        $this->dispatch('filtersUpdated', filters: $this->data);
     }
 
     public function resetFilters(): void
     {
-        // @var mixed form->fill(;
-        // @var mixed dispatch('filtersUpdated', filters: [];
+        $form->fill();
+        $this->dispatch('filtersUpdated', filters: []);
     }
     */
 }

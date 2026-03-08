@@ -31,7 +31,7 @@ trait Updater
         /** @var class-string<ProfileContract&Model> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
 
-        return // @var mixed belongsTo($profileClass, 'created_by', 'user_id';
+        return $this->belongsTo($profileClass, 'created_by', 'user_id');
     }
 
     /**
@@ -42,7 +42,7 @@ trait Updater
         /** @var class-string<ProfileContract&Model> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
 
-        return // @var mixed belongsTo($profileClass, 'updated_by', 'user_id';
+        return $this->belongsTo($profileClass, 'updated_by', 'user_id');
     }
 
     /**
@@ -53,7 +53,7 @@ trait Updater
         /** @var class-string<ProfileContract&Model> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
 
-        return // @var mixed belongsTo($profileClass, 'deleted_by', 'user_id';
+        return $this->belongsTo($profileClass, 'deleted_by', 'user_id');
     }
 
     /**

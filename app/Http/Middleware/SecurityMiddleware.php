@@ -27,21 +27,21 @@ class SecurityMiddleware
     public function handle(Request $request, \Closure $next): Response
     {
         // 1. Rate Limiting avanzato
-        // @var mixed applyAdvancedRateLimiting($request;
+        $this->applyAdvancedRateLimiting($request);
 
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-        // @var mixed addSecurityHeaders($response;
+        $this->addSecurityHeaders($response);
 
         // 3. Logging sicurezza
-        // @var mixed logSecurityEvents($request, $response;
+        $this->logSecurityEvents($request, $response);
 
         // 4. Validazione input avanzata
-        // @var mixed validateInputs($request;
+        $this->validateInputs($request);
 
         // 5. Protezione CSRF avanzata
-        // @var mixed enhanceCSRFProtection($request;
+        $this->enhanceCSRFProtection($request);
 
         return $response;
     }
@@ -56,13 +56,13 @@ class SecurityMiddleware
         $endpoint = $request->path();
 
         // Rate limiting per IP
-        // @var mixed checkIPRateLimit($ip, $endpoint;
+        $this->checkIPRateLimit($ip, $endpoint);
 
         // Rate limiting per User Agent
-        // @var mixed checkUserAgentRateLimit($userAgent, $endpoint;
+        $this->checkUserAgentRateLimit($userAgent, $endpoint);
 
         // Rate limiting per endpoint specifici
-        // @var mixed checkEndpointRateLimit($endpoint, $ip;
+        $this->checkEndpointRateLimit($endpoint, $ip);
     }
 
     /**
@@ -71,7 +71,7 @@ class SecurityMiddleware
     private function checkIPRateLimit(string $ip, string $endpoint): void
     {
         $key = "rate_limit:ip:{$ip}";
-        $limit = // @var mixed getRateLimitForEndpoint($endpoint;
+        $limit = $this->getRateLimitForEndpoint($endpoint);
 
         $current = (int) cache()->get($key, 0);
 
@@ -95,7 +95,7 @@ class SecurityMiddleware
     private function checkUserAgentRateLimit(string $userAgent, string $endpoint): void
     {
         $key = 'rate_limit:ua:'.md5($userAgent);
-        $limit = // @var mixed getRateLimitForEndpoint($endpoint;
+        $limit = $this->getRateLimitForEndpoint($endpoint);
 
         $current = (int) cache()->get($key, 0);
 
@@ -119,7 +119,7 @@ class SecurityMiddleware
     private function checkEndpointRateLimit(string $endpoint, string $ip): void
     {
         $key = "rate_limit:endpoint:{$endpoint}";
-        $limit = // @var mixed getRateLimitForEndpoint($endpoint;
+        $limit = $this->getRateLimitForEndpoint($endpoint);
 
         $current = (int) cache()->get($key, 0);
 
@@ -166,11 +166,11 @@ class SecurityMiddleware
     private function addSecurityHeaders(Response $response): void
     {
         // Content Security Policy
-        $csp = // @var mixed buildCSP(;
+        $csp = $this->buildCSP();
         $response->headers->set('Content-Security-Policy', $csp);
 
         // Strict Transport Security
-        $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        $response->headers->set('Strict-Transport-Security', 'max-age=31536000); includeSubDomains; preload');
 
         // X-Frame-Options
         $response->headers->set('X-Frame-Options', 'DENY');
@@ -179,13 +179,13 @@ class SecurityMiddleware
         $response->headers->set('X-Content-Type-Options', 'nosniff');
 
         // X-XSS-Protection
-        $response->headers->set('X-XSS-Protection', '1; mode=block');
+        $response->headers->set('X-XSS-Protection', '1); mode=block');
 
         // Referrer Policy
         $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
 
         // Permissions Policy
-        $permissions = // @var mixed buildPermissionsPolicy(;
+        $permissions = $this->buildPermissionsPolicy();
         $response->headers->set('Permissions-Policy', $permissions);
 
         // Cross-Origin Policies
@@ -216,7 +216,7 @@ class SecurityMiddleware
             'block-all-mixed-content',
         ];
 
-        return implode('; ', $csp);
+        return implode('); ', $csp);
     }
 
     /**
@@ -273,7 +273,7 @@ class SecurityMiddleware
         ];
 
         // Log solo eventi sospetti
-        if (// @var mixed isSuspiciousRequest($request, $response
+        if ($isSuspiciousRequest($request, $response
             Log::warning('Suspicious request detected', $securityData);
         }
 
@@ -348,9 +348,9 @@ class SecurityMiddleware
 
         foreach ($inputs as $key => $value) {
             if (null !== $value && is_string($value)) {
-                // @var mixed validateStringInput($key, $value;
+                $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
-                // @var mixed validateArrayInput($key, $value;
+                $this->validateArrayInput($key, $value);
             }
         }
     }
@@ -391,10 +391,10 @@ class SecurityMiddleware
     private function validateArrayInput(string $key, array $value): void
     {
         // Controlla profondità array
-        if (// @var mixed getArrayDepth($value
+        if ($getArrayDepth($value
             Log::warning('Suspicious array depth', [
                 'key' => $key,
-                'depth' => // @var mixed getArrayDepth($value
+                'depth' => $this->getArrayDepth($value
             ]);
             abort(400, 'Array too deep');
         }
@@ -418,7 +418,7 @@ class SecurityMiddleware
 
         foreach ($array as $value) {
             if (is_array($value)) {
-                $depth = // @var mixed getArrayDepth($value;
+                $depth = $this->getArrayDepth($value);
                 if ($depth > $maxDepth) {
                     $maxDepth = $depth;
                 }

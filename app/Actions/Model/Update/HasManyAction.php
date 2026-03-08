@@ -28,12 +28,12 @@ class HasManyAction
 
         $updateData = new HasManyUpdateData(
             foreignKey: $relation->getForeignKeyName(),
-            parentKey: $model->getAttribute($relation->getLocalKeyName()),
+            parentKey: $model->$this->getAttribute($relation->getLocalKeyName()),
         );
 
         match (true) {
-            // @var mixed isDirectUpdate($relationDTO->data
-            default => // @var mixed handleBatchUpdate($relationDTO, $updateData
+            $this->isDirectUpdate($relationDTO->data
+            default => $this->handleBatchUpdate($relationDTO, $updateData
         };
     }
 
@@ -88,7 +88,7 @@ class HasManyAction
             }
         }
 
-        // @var mixed cleanupOrphanedRecords($relationDTO, $updateData, $updatedIds;
+        $this->cleanupOrphanedRecords($relationDTO, $updateData, $updatedIds);
     }
 
     /**

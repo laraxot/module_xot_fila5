@@ -26,9 +26,9 @@ class CacheLockFactory extends Factory
     public function definition(): array
     {
         return [
-            'key' => // @var mixed faker->word,
-            'owner' => // @var mixed faker->word,
-            'expiration' => // @var mixed faker->randomNumber(5
+            'key' => $faker->word,
+            'owner' => $faker->word,
+            'expiration' => $faker->randomNumber(5
         ];
     }
 }

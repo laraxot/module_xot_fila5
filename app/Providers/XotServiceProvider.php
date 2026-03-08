@@ -40,30 +40,30 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        // @var mixed redirectSSL(;
-        // @var mixed registerViewComposers(;
-        // @var mixed registerEvents(;
-        // // @var mixed registerExceptionHandler(; // guardare come fa sentry
-        // @var mixed registerTimezone(;
-        // @var mixed registerFilamentMacros(;
-        // @var mixed registerXotLivewireComponents(;
-        // @var mixed registerProviders(;
+        $this->redirectSSL();
+        $this->registerViewComposers();
+        $this->registerEvents();
+        // $this->registerExceptionHandler(); // guardare come fa sentry
+        $this->registerTimezone();
+        $this->registerFilamentMacros();
+        $this->registerXotLivewireComponents();
+        $this->registerProviders();
     }
 
     #[\Override]
     public function register(): void
     {
         parent::register();
-        // @var mixed registerConfig(;
+        $this->registerConfig();
 
-        // // @var mixed registerExceptionHandlersRepository(;
-        // // @var mixed extendExceptionHandler(;
-        // @var mixed registerCommands(;
+        // $this->registerExceptionHandlersRepository();
+        // $this->extendExceptionHandler();
+        $this->registerCommands();
     }
 
     public function registerProviders(): void
     {
-        // // @var mixed app->register(Filament\ModulesServiceProvider::class;
+        // $app->register(Filament\ModulesServiceProvider::class);
     }
 
     public function registerTimezone(): void
@@ -96,7 +96,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // TODO: Re-implement when compatible with current Filament version
         /*
         TextInput::macro('generateSlug', function () {
-            // @var mixed live(onBlur: true
+            $this->live(onBlur: true
                 if ($operation === 'create') {
                     return;
                 }
@@ -112,7 +112,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * --  guardare come fa sentry
      * public function registerExceptionHandler(): void
      * {
-     * $exceptionHandler = // @var mixed app->make(ExceptionHandler::class;
+     * $exceptionHandler = $app->make(ExceptionHandler::class);
      * if ($exceptionHandler instanceof HandlerDecorator) {
      * $exceptionHandler->reporter(
      * static function (\Throwable $e): void {
@@ -136,7 +136,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function registerConfig(): void
     {
         // $config_file = realpath(__DIR__.'/../config/metatag.php');
-        // // @var mixed mergeConfigFrom($config_file, 'metatag';
+        // $this->mergeConfigFrom($config_file, 'metatag');
     }
 
     public function loadHelpersFrom(string $path): void
@@ -161,8 +161,8 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     public function registerCommands(): void
     {
-        if (// @var mixed app->runningInConsole(
-            // @var mixed commands([
+        if ($this->app->runningInConsole()) {
+            $this->commands([
                 GenerateFilamentResources::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
@@ -185,7 +185,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * -- guardare come fa sentry
      * private function registerExceptionHandlersRepository(): void
      * {
-     * // @var mixed app->singleton(HandlersRepository::class, HandlersRepository::class;
+     * $app->singleton(HandlersRepository::class, HandlersRepository::class);
      * }
      */
     /*
@@ -195,7 +195,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * -- guardare come fa sentry
      * private function extendExceptionHandler(): void
      * {
-     * // @var mixed app->extend(
+     * $app->extend(
      * ExceptionHandler::class,
      * static function (ExceptionHandler $handler, $app) {
      * return new HandlerDecorator($handler, $app[HandlersRepository::class]);

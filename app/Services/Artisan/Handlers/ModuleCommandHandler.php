@@ -21,12 +21,12 @@ class ModuleCommandHandler implements CommandHandlerInterface
 
     public function handle(string $moduleName = ''): string
     {
-        $command = // @var mixed getCurrentCommand(;
+        $command = $this->getCurrentCommand();
 
         if (isset(self::MODULE_COMMANDS[$command])) {
             $method = self::MODULE_COMMANDS[$command];
 
-            return // @var mixed $method($moduleName;
+            return // @var mixed $method($moduleName);
         }
 
         return '';

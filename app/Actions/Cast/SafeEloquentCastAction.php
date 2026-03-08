@@ -39,7 +39,7 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($attribute);
 
         // Usa getAttribute invece di property_exists per evitare falsi positivi
-        return null !== $model->getAttribute($attribute);
+        return null !== $model->$this->getAttribute($attribute);
     }
 
     /**
@@ -54,7 +54,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         return null !== $value && '' !== $value;
     }
@@ -72,7 +72,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         if (null === $value) {
             return $default ?? '';
@@ -94,7 +94,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         if (null === $value) {
             return $default ?? 0;
@@ -116,7 +116,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         if (null === $value) {
             return $default ?? 0.0;
@@ -138,7 +138,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         if (null === $value) {
             return $default ?? false;
@@ -160,7 +160,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         if (null === $value) {
             return $default ?? [];
@@ -185,11 +185,11 @@ class SafeEloquentCastAction
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
         return match ($type) {
-            'string' => // @var mixed getStringAttribute($model, $attribute, is_string($default
-            'int' => // @var mixed getIntAttribute($model, $attribute, is_int($default
-            'float' => // @var mixed getFloatAttribute($model, $attribute, is_float($default
-            'bool' => // @var mixed getBooleanAttribute($model, $attribute, is_bool($default
-            'array' => // @var mixed getArrayAttribute($model, $attribute, is_array($default
+            'string' => $this->getStringAttribute($model, $attribute, is_string($default
+            'int' => $this->getIntAttribute($model, $attribute, is_int($default
+            'float' => $this->getFloatAttribute($model, $attribute, is_float($default
+            'bool' => $this->getBooleanAttribute($model, $attribute, is_bool($default
+            'array' => $this->getArrayAttribute($model, $attribute, is_array($default
             default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
@@ -207,7 +207,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $actualValue = $model->getAttribute($attribute);
+        $actualValue = $model->$this->getAttribute($attribute);
 
         return $actualValue === $expectedValue;
     }
@@ -233,7 +233,7 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($attribute);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
-        $value = // @var mixed getTypedAttribute($model, $attribute, $type, $default;
+        $value = $this->getTypedAttribute($model, $attribute, $type, $default);
 
         if (null !== $validator && ! $validator($value)) {
             return $default;
@@ -255,7 +255,7 @@ class SafeEloquentCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        $value = $model->getAttribute($attribute);
+        $value = $model->$this->getAttribute($attribute);
 
         if (null === $value) {
             return false;
@@ -286,13 +286,13 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($fallbackAttribute);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
 
-        $primaryValue = $model->getAttribute($primaryAttribute);
+        $primaryValue = $model->$this->getAttribute($primaryAttribute);
 
         if (null !== $primaryValue) {
-            return // @var mixed getTypedAttribute($model, $primaryAttribute, $type, $default;
+            return $this->getTypedAttribute($model, $primaryAttribute, $type, $default);
         }
 
-        return // @var mixed getTypedAttribute($model, $fallbackAttribute, $type, $default;
+        return $this->getTypedAttribute($model, $fallbackAttribute, $type, $default);
     }
 
     /**

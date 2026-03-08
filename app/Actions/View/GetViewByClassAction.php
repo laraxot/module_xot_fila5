@@ -40,13 +40,13 @@ class GetViewByClassAction
                 $prevValue = $after[$key - 1];
                 $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
 
-                $value = // @var mixed checkPrev($value, $prevValueStr;
+                $value = $this->checkPrev($value, $prevValueStr);
             }
             if ($key > 0 && isset($after[$key - 2])) {
                 $prevValue = $after[$key - 2];
                 $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
 
-                $value = // @var mixed checkPrev($value, $prevValueStr;
+                $value = $this->checkPrev($value, $prevValueStr);
             }
 
             return Str::of($value)->slug()->toString();

@@ -11,11 +11,11 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
-        if (! // @var mixed shouldRun(
+        if (! $this->shouldRun(
             return;
         }
         // -- CREATE --
-        // @var mixed tableCreate(function (Blueprint $table
+        $this->tableCreate(function (Blueprint $table
             $table->id();
             $table->unsignedInteger('bucket');
             $table->unsignedMediumInteger('period');

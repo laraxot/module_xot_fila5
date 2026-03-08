@@ -37,7 +37,7 @@ it('throws when model type key is missing in morph map', function (): void {
 
         return;
     }
-    // @var mixed fail('Exception not thrown';
+    $this->fail('Exception not thrown');
 });
 
 it('instantiates model by type when id is null', function (): void {

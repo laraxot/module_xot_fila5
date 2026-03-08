@@ -18,7 +18,6 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
-// Remove if not used elsewhere implicitly
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -34,47 +33,40 @@ abstract class XotBasePanelProvider extends PanelProvider
 
     public function panel(Panel $panel): Panel
     {
-        $moduleNamespace = // @var mixed getModuleNamespace(;
-        $moduleLow = Str::lower(// @var mixed module;
-        $mainModuleLow = Str::lower(XotData::make()->main_module); // Renamed to camelCase
+        $moduleNamespace = $this->getModuleNamespace();
+        $moduleLow = Str::lower($this->module);
+        $mainModuleLow = Str::lower(XotData::make()->main_module);
         $default = $mainModuleLow === $moduleLow;
 
         $panel = $panel
             ->default($default)
-            ->login() // UNCOMMENTED
-            // ->registration()
+            ->login()
             ->passwordReset()
-            // ->emailVerification()
-            // ->profile()
             ->sidebarFullyCollapsibleOnDesktop();
 
         $panel = app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
-        // ---------------------
+
         $panel->maxContentWidth('full')
-            ->topNavigation(// @var mixed topNavigation
-            ->globalSearch(// @var mixed globalSearch
+            ->topNavigation($this->topNavigation)
+            ->globalSearch($this->globalSearch)
             ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
-            ->navigation(// @var mixed navigation
-            // ->tenant($teamClass)
-            // ->tenant($teamClass,ownershipRelationship:'users')
-            // ->tenant($teamClass)
+            ->navigation($this->navigation)
             ->id($moduleLow.'::admin')
             ->path($moduleLow.'/admin')
-            // Configure Filament discovery for module components (unconditional; dirs are expected to exist)
             ->discoverResources(
-                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Resources'
+                in: base_path('Modules/'.$this->module.'/app/Filament/Resources'),
                 for: sprintf('%s\\Filament\\Resources', $moduleNamespace),
             )
             ->discoverPages(
-                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Pages'
+                in: base_path('Modules/'.$this->module.'/app/Filament/Pages'),
                 for: sprintf('%s\\Filament\\Pages', $moduleNamespace),
             )
             ->discoverWidgets(
-                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Widgets'
+                in: base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
                 for: sprintf('%s\\Filament\\Widgets', $moduleNamespace),
             )
             ->discoverClusters(
-                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Clusters'
+                in: base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
                 for: sprintf('%s\\Filament\\Clusters', $moduleNamespace),
             )
             ->middleware([
@@ -99,6 +91,6 @@ abstract class XotBasePanelProvider extends PanelProvider
     {
         Assert::string($ns = config('modules.namespace'));
 
-        return $ns.'\\'.// @var mixed module;
+        return $ns.'\\'.$this->module;
     }
 }

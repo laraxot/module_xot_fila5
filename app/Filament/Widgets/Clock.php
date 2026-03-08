@@ -16,13 +16,13 @@ class Clock extends Widget
 
     public function begin(): void
     {
-        // while (// @var mixed start >= 0
+        // while ($start >= 0
         $cond = true;
         while ($cond) {
             // Stream the current count to the browser...
-            // @var mixed stream(
+            $this->stream(
                 to: 'count',
-                content: // @var mixed start,
+                content: $start,
                 replace: true,
             );
 
@@ -30,9 +30,9 @@ class Clock extends Widget
             // sleep(1);
 
             // Decrement the counter...
-            // // @var mixed start = $this->start - 1;
-            // @var mixed start = (string;
-            if ('impossible' === // @var mixed start
+            // $start = $this->start - 1;
+            $start = (string);
+            if ('impossible' === $start
                 $cond = false;
             }
         }

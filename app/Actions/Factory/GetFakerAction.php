@@ -29,7 +29,7 @@ class GetFakerAction
         }
 
         $fakeableTypes = [
-            // 'enum' => '$faker->randomElement('.// @var mixed enumValues($table, $name
+            // 'enum' => '$faker->randomElement('.$this->enumValues($table, $name
             'string' => '$faker->word',
             'text' => '$faker->text',
             'date' => '$faker->date()',

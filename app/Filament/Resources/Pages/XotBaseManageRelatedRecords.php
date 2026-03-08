@@ -26,12 +26,12 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTitle(): string
     {
-        return static::transFunc(__FUNCTION__).' - '.// @var mixed getRecordTitle(;
+        return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
     }
 
     public function getRecordTitle(): string
     {
-        $value = // @var mixed getRecord(;
+        $value = $this->getRecord();
 
         return is_string($value) ? $value : (string) ($value ?? '');
     }
@@ -68,7 +68,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function schema(Schema $schema): Schema
     {
-        $formSchema = // @var mixed getFormSchema(;
+        $formSchema = $this->getFormSchema();
 
         return $schema->components($formSchema);
     }

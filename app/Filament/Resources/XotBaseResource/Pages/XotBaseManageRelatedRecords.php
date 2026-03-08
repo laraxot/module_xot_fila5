@@ -137,9 +137,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * public function table(Table $table): Table
      * {
      * return $table
-     * ->columns(// @var mixed getTableColumns(
-     * ->headerActions(// @var mixed getTableHeaderActions(
-     * ->actions(// @var mixed getTableActions(
+     * ->columns($getTableColumns(
+     * ->headerActions($getTableHeaderActions(
+     * ->actions($getTableActions(
      * ->bulkActions([])
      * ->emptyStateActions([
      * 'create' => CreateAction::make()
@@ -151,9 +151,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * public function table(Table $table): Table
      * {
      * return $table
-     * ->columns(// @var mixed getTableColumns(
-     * ->headerActions(// @var mixed getTableHeaderActions(
-     * ->actions(// @var mixed getTableActions(
+     * ->columns($getTableColumns(
+     * ->headerActions($getTableHeaderActions(
+     * ->actions($getTableActions(
      * ->bulkActions([])
      * ->emptyStateActions([
      * 'create' => CreateAction::make()
@@ -166,7 +166,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public function getTitle(): string
     {
         $resource = static::getResource();
-        $recordTitle = // @var mixed getRecordTitle(;
+        $recordTitle = $this->getRecordTitle();
         $relationship = static::getRelationshipName();
 
         $titleString = '';
