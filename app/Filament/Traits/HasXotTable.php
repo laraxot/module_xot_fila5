@@ -73,7 +73,7 @@ trait HasXotTable
         $resource = $this;
         /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
-            $resourceClass = $this->getResource();
+            $resourceClass = // @var mixed getResource(;
             // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
@@ -85,7 +85,7 @@ trait HasXotTable
 
         $actions['create'] = CreateAction::make();
 
-        if ($this->shouldShowAssociateAction()) {
+        if (// @var mixed shouldShowAssociateAction(
             $actions['associate'] = AssociateAction::make()
                 ->label('')
                 ->icon('heroicon-o-paper-clip');
@@ -111,7 +111,7 @@ trait HasXotTable
     public function getGridTableColumns(): array
     {
         return [
-            Stack::make($this->getTableColumns()),
+            Stack::make(// @var mixed getTableColumns(
         ];
     }
 
@@ -127,7 +127,7 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
-        $count = count($this->getTableFilters()) + 1;
+        $count = count(// @var mixed getTableFilters(;
 
         return min($count, 6);
     }
@@ -183,11 +183,11 @@ trait HasXotTable
     public function table(Table $table): Table
     {
         /*
-        $modelClass = $this->getModelClass();
+        $modelClass = // @var mixed getModelClass(;
         if (! app(TableExistsByModelClassActions::class)->execute($modelClass)) {
-            $this->notifyTableMissing();
+            // @var mixed notifyTableMissing(;
 
-            return $this->configureEmptyTable($table);
+            return // @var mixed configureEmptyTable($table;
         }
 
         //  @var Model $model
@@ -196,30 +196,30 @@ trait HasXotTable
         */
         // Configurazione base della tabella
         $table = $table
-            ->recordTitleAttribute($this->getTableRecordTitleAttribute())
-            ->heading($this->getTableHeading())
-            ->columns($this->layoutView->getTableColumns($this->getTableColumns(), $this->getGridTableColumns()))
-            ->contentGrid($this->layoutView->getTableContentGrid())
-            ->filters($this->getTableFilters())
+            ->recordTitleAttribute(// @var mixed getTableRecordTitleAttribute(
+            ->heading(// @var mixed getTableHeading(
+            ->columns(// @var mixed layoutView->getTableColumns($this->getTableColumns(
+            ->contentGrid(// @var mixed layoutView->getTableContentGrid(
+            ->filters(// @var mixed getTableFilters(
             ->filtersLayout(FiltersLayout::AboveContent)
-            ->filtersFormColumns($this->getTableFiltersFormColumns())
+            ->filtersFormColumns(// @var mixed getTableFiltersFormColumns(
             ->persistFiltersInSession()
-            ->headerActions($this->getTableHeaderActions())
-            ->recordActions($this->getTableActions())
-            ->toolbarActions($this->getTableBulkActions())
+            ->headerActions(// @var mixed getTableHeaderActions(
+            ->recordActions(// @var mixed getTableActions(
+            ->toolbarActions(// @var mixed getTableBulkActions(
             ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
-            ->emptyStateActions($this->getTableEmptyStateActions())
+            ->emptyStateActions(// @var mixed getTableEmptyStateActions(
             ->striped()
-            ->paginated($this->getTablePaginated());
+            ->paginated(// @var mixed getTablePaginated(;
 
         // Configurazioni opzionali personalizzabili
-        $sortColumn = $this->getDefaultTableSortColumn();
-        $sortDirection = $this->getDefaultTableSortDirection();
+        $sortColumn = // @var mixed getDefaultTableSortColumn(;
+        $sortDirection = // @var mixed getDefaultTableSortDirection(;
         if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
-        $pollInterval = $this->getTablePollInterval();
+        $pollInterval = // @var mixed getTablePollInterval(;
         if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
@@ -264,7 +264,7 @@ trait HasXotTable
         $resource = $this;
         /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
-            $resourceClass = $this->getResource();
+            $resourceClass = // @var mixed getResource(;
             // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
@@ -293,7 +293,7 @@ trait HasXotTable
                 ->visible(fn (Model $record): bool => (bool) $resource->canDelete($record));
         }
 
-        if ($this->shouldShowReplicateAction()) {
+        if (// @var mixed shouldShowReplicateAction(
             $actions['replicate'] = ReplicateAction::make()
                 ->iconButton();
         }
@@ -301,8 +301,8 @@ trait HasXotTable
         // Check if class has the getRelationship method
         // Note: In some contexts (ListRecords), getRelationship() may not exist
         // @phpstan-ignore-next-line function.alreadyNarrowedType (needed for contexts where method doesn't exist)
-        if ($this->shouldShowDetachAction() && method_exists($this, 'getRelationship')) {
-            $relationship = $this->getRelationship();
+        if (// @var mixed shouldShowDetachAction(
+            $relationship = // @var mixed getRelationship(;
 
             // Type guard: ensure relationship is an object with required methods
             // @phpstan-ignore-next-line function.alreadyNarrowedType (in RelationManager, always object; in ListRecords, may not be)
@@ -358,7 +358,7 @@ trait HasXotTable
     {
         // @phpstan-ignore-next-line
         if (method_exists($this, 'getRelationship')) {
-            $relationship = $this->getRelationship();
+            $relationship = // @var mixed getRelationship(;
             if ($relationship instanceof Relation) {
                 /* @var class-string<Model> */
                 return get_class($relationship->getModel());
@@ -366,7 +366,7 @@ trait HasXotTable
         }
 
         if (method_exists($this, 'getModel')) {
-            $model = $this->getModel();
+            $model = // @var mixed getModel(;
             // @phpstan-ignore-next-line
             if (is_string($model)) {
                 Assert::classExists($model);
@@ -394,7 +394,7 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
-        return $this->tableSearch ?? null;
+        return // @var mixed tableSearch ?? null;
     }
 
     protected function shouldShowAssociateAction(): bool
@@ -458,7 +458,7 @@ trait HasXotTable
     protected function getDefaultTableSortColumn(): ?string
     {
         try {
-            $modelClass = $this->getModelClass();
+            $modelClass = // @var mixed getModelClass(;
             /** @var Model $model */
             $model = app($modelClass);
             Assert::isInstanceOf($model, Model::class);
@@ -491,7 +491,7 @@ trait HasXotTable
      */
     protected function notifyTableMissing(): void
     {
-        $modelClass = $this->getModelClass();
+        $modelClass = // @var mixed getModelClass(;
         /** @var Model $model */
         $model = app($modelClass);
         Assert::isInstanceOf($model, Model::class);

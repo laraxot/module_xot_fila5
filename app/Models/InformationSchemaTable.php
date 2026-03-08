@@ -86,7 +86,7 @@ class InformationSchemaTable extends BaseModel
      */
     public function getSchema(): array
     {
-        return $this->schema;
+        return // @var mixed schema;
     }
 
     /**
@@ -96,7 +96,7 @@ class InformationSchemaTable extends BaseModel
      */
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        return // @var mixed getSushiRows(;
     }
 
     /**

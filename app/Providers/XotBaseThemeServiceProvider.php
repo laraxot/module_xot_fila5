@@ -20,24 +20,24 @@ abstract class XotBaseThemeServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        $this->loadViewsFrom($this->module_dir.'/../resources/views', $this->nameLower);
-        $this->loadTranslationsFrom($this->module_dir.'/../resources/lang', $this->nameLower);
-        $this->loadJsonTranslationsFrom($this->module_dir.'/../resources/lang');
-        $this->registerBladeComponents();
+        // @var mixed loadViewsFrom($this->module_dir.'/../resources/views', $this->nameLower;
+        // @var mixed loadTranslationsFrom($this->module_dir.'/../resources/lang', $this->nameLower;
+        // @var mixed loadJsonTranslationsFrom($this->module_dir.'/../resources/lang';
+        // @var mixed registerBladeComponents(;
     }
 
     public function register(): void
     {
-        $this->app->register($this->module_ns.'\Providers\RouteServiceProvider');
-        $this->app->register($this->module_ns.'\Providers\EventServiceProvider');
+        // @var mixed app->register($this->module_ns.'\Providers\RouteServiceProvider';
+        // @var mixed app->register($this->module_ns.'\Providers\EventServiceProvider';
     }
 
     protected function registerBladeComponents(): void
     {
-        $componentNamespace = $this->module_ns.'\View\Components';
-        Blade::componentNamespace($componentNamespace, $this->nameLower);
+        $componentNamespace = // @var mixed module_ns.'\View\Components';
+        Blade::componentNamespace($componentNamespace, // @var mixed nameLower;
 
         app(RegisterBladeComponentsAction::class)
-            ->execute($this->module_dir.'/../View/Components', $this->module_ns);
+            ->execute(// @var mixed module_dir.'/../View/Components', $this->module_ns;
     }
 }

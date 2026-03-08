@@ -32,8 +32,8 @@ class HasManyAction
         );
 
         match (true) {
-            $this->isDirectUpdate($relationDTO->data) => $this->handleDirectUpdate($relationDTO, $updateData),
-            default => $this->handleBatchUpdate($relationDTO, $updateData),
+            // @var mixed isDirectUpdate($relationDTO->data
+            default => // @var mixed handleBatchUpdate($relationDTO, $updateData
         };
     }
 
@@ -88,7 +88,7 @@ class HasManyAction
             }
         }
 
-        $this->cleanupOrphanedRecords($relationDTO, $updateData, $updatedIds);
+        // @var mixed cleanupOrphanedRecords($relationDTO, $updateData, $updatedIds;
     }
 
     /**

@@ -27,7 +27,7 @@ class CommandRegistry
 
     public function __construct()
     {
-        $this->registerDefaultHandlers();
+        // @var mixed registerDefaultHandlers(;
     }
 
     /**
@@ -35,7 +35,7 @@ class CommandRegistry
      */
     public function register(CommandHandlerInterface $handler): self
     {
-        $this->handlers[] = $handler;
+        // @var mixed handlers[] = $handler;
 
         return $this;
     }
@@ -45,7 +45,7 @@ class CommandRegistry
      */
     public function findHandler(string $command): ?CommandHandlerInterface
     {
-        foreach ($this->handlers as $handler) {
+        foreach (// @var mixed handlers as $handler
             if ($handler->supports($command)) {
                 return $handler;
             }
@@ -59,7 +59,7 @@ class CommandRegistry
      */
     private function registerDefaultHandlers(): void
     {
-        $this->register(new MigrationCommandHandler())
+        // @var mixed register(new MigrationCommandHandler(
             ->register(new CacheCommandHandler())
             ->register(new RouteCommandHandler())
             ->register(new ViewCommandHandler())

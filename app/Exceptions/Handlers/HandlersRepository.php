@@ -29,7 +29,7 @@ class HandlersRepository
      */
     public function addReporter(callable $reporter): int
     {
-        return array_unshift($this->reporters, $reporter);
+        return array_unshift(// @var mixed reporters, $reporter;
     }
 
     /**
@@ -37,7 +37,7 @@ class HandlersRepository
      */
     public function addRenderer(callable $renderer): int
     {
-        return array_unshift($this->renderers, $renderer);
+        return array_unshift(// @var mixed renderers, $renderer;
     }
 
     /**
@@ -45,7 +45,7 @@ class HandlersRepository
      */
     public function addConsoleRenderer(callable $renderer): int
     {
-        return array_unshift($this->consoleRenderers, $renderer);
+        return array_unshift(// @var mixed consoleRenderers, $renderer;
     }
 
     /**
@@ -54,8 +54,8 @@ class HandlersRepository
     public function getReportersByException(\Throwable $e): array
     {
         return array_filter(
-            $this->reporters,
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+            // @var mixed reporters,
+            fn (mixed $handler) => is_callable($handler) && // @var mixed handlesException($handler, $e
         );
     }
 
@@ -65,8 +65,8 @@ class HandlersRepository
     public function getRenderersByException(\Throwable $e): array
     {
         return array_filter(
-            $this->renderers,
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+            // @var mixed renderers,
+            fn (mixed $handler) => is_callable($handler) && // @var mixed handlesException($handler, $e
         );
     }
 
@@ -76,8 +76,8 @@ class HandlersRepository
     public function getConsoleRenderersByException(\Throwable $e): array
     {
         return array_filter(
-            $this->consoleRenderers,
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+            // @var mixed consoleRenderers,
+            fn (mixed $handler) => is_callable($handler) && // @var mixed handlesException($handler, $e
         );
     }
 

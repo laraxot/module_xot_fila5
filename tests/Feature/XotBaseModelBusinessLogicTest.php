@@ -20,8 +20,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $baseModel = new BaseModel();
 
         // Assert
-        $this->assertInstanceOf(XotBaseModel::class, $baseModel);
-        $this->assertInstanceOf(Model::class, $baseModel);
+        // @var mixed assertInstanceOf(XotBaseModel::class, $baseModel;
+        // @var mixed assertInstanceOf(Model::class, $baseModel;
     }
 
     /** @test */
@@ -31,9 +31,9 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $baseModel = new BaseModel();
 
         // Act & Assert
-        $this->assertTrue(method_exists($baseModel, 'getTable'));
-        $this->assertTrue(method_exists($baseModel, 'getConnection'));
-        $this->assertTrue(method_exists($baseModel, 'getKeyName'));
+        // @var mixed assertTrue(method_exists($baseModel, 'getTable';
+        // @var mixed assertTrue(method_exists($baseModel, 'getConnection';
+        // @var mixed assertTrue(method_exists($baseModel, 'getKeyName';
     }
 
     /** @test */
@@ -43,8 +43,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $baseModel = new BaseModel();
 
         // Assert
-        $this->assertInstanceOf(BaseModel::class, $baseModel);
-        $this->assertNotNull($baseModel);
+        // @var mixed assertInstanceOf(BaseModel::class, $baseModel;
+        // @var mixed assertNotNull($baseModel;
     }
 
     /** @test */
@@ -57,8 +57,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $tableName = $baseModel->getTable();
 
         // Assert
-        $this->assertIsString($tableName);
-        $this->assertNotEmpty($tableName);
+        // @var mixed assertIsString($tableName;
+        // @var mixed assertNotEmpty($tableName;
     }
 
     /** @test */
@@ -71,8 +71,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $connection = $baseModel->getConnection();
 
         // Assert
-        $this->assertNotNull($connection);
-        $this->assertInstanceOf(ConnectionInterface::class, $connection);
+        // @var mixed assertNotNull($connection;
+        // @var mixed assertInstanceOf(ConnectionInterface::class, $connection;
     }
 
     /** @test */
@@ -85,8 +85,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $keyName = $baseModel->getKeyName();
 
         // Assert
-        $this->assertIsString($keyName);
-        $this->assertEquals('id', $keyName);
+        // @var mixed assertIsString($keyName;
+        // @var mixed assertEquals('id', $keyName;
     }
 
     /** @test */
@@ -96,8 +96,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $module = new Module();
 
         // Act & Assert
-        $this->assertInstanceOf(XotBaseModel::class, $module);
-        $this->assertInstanceOf(Model::class, $module);
+        // @var mixed assertInstanceOf(XotBaseModel::class, $module;
+        // @var mixed assertInstanceOf(Model::class, $module;
     }
 
     /** @test */
@@ -112,9 +112,9 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $casts = $baseModel->getCasts();
 
         // Assert
-        $this->assertIsArray($fillable);
-        $this->assertIsArray($hidden);
-        $this->assertIsArray($casts);
+        // @var mixed assertIsArray($fillable;
+        // @var mixed assertIsArray($hidden;
+        // @var mixed assertIsArray($casts;
     }
 
     /** @test */
@@ -129,7 +129,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         // Nota: Non tutti i modelli base usano soft deletes
         // Questo test verifica solo la possibilità di configurazione
-        $this->assertTrue(true); // Placeholder per logica specifica
+        // @var mixed assertTrue(true; // Placeholder per logica specifica
     }
 
     /** @test */
@@ -143,7 +143,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
         // Nota: I modelli base possono avere configurazioni diverse
-        $this->assertIsBool($usesTimestamps);
+        // @var mixed assertIsBool($usesTimestamps;
     }
 
     /** @test */
@@ -158,7 +158,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         // Nota: Non tutti i modelli base usano tenant isolation
         // Questo test verifica solo la possibilità di configurazione
-        $this->assertTrue(true); // Placeholder per logica specifica
+        // @var mixed assertTrue(true; // Placeholder per logica specifica
     }
 
     /** @test */
@@ -173,7 +173,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         // Nota: Non tutti i modelli base usano audit trail
         // Questo test verifica solo la possibilità di configurazione
-        $this->assertTrue(true); // Placeholder per logica specifica
+        // @var mixed assertTrue(true; // Placeholder per logica specifica
     }
 
     /** @test */
@@ -186,8 +186,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $serialized = serialize($baseModel);
 
         // Assert
-        $this->assertIsString($serialized);
-        $this->assertNotEmpty($serialized);
+        // @var mixed assertIsString($serialized;
+        // @var mixed assertNotEmpty($serialized;
     }
 
     /** @test */
@@ -201,7 +201,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $unserialized = unserialize($serialized);
 
         // Assert
-        $this->assertInstanceOf(BaseModel::class, $unserialized);
+        // @var mixed assertInstanceOf(BaseModel::class, $unserialized;
     }
 
     /** @test */
@@ -214,9 +214,9 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $json = json_encode($baseModel);
 
         // Assert
-        $this->assertIsString($json);
-        $this->assertNotEmpty($json);
-        $this->assertNotFalse($json);
+        // @var mixed assertIsString($json;
+        // @var mixed assertNotEmpty($json;
+        // @var mixed assertNotFalse($json;
     }
 
     /** @test */
@@ -229,8 +229,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $array = $baseModel->toArray();
 
         // Assert
-        $this->assertIsArray($array);
-        $this->assertNotEmpty($array);
+        // @var mixed assertIsArray($array;
+        // @var mixed assertNotEmpty($array;
     }
 
     /** @test */
@@ -243,8 +243,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $json = $baseModel->toJson();
 
         // Assert
-        $this->assertIsString($json);
-        $this->assertNotEmpty($json);
+        // @var mixed assertIsString($json;
+        // @var mixed assertNotEmpty($json;
     }
 
     /** @test */
@@ -257,7 +257,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hasLoadMethod = method_exists($baseModel, 'load');
 
         // Assert
-        $this->assertTrue($hasLoadMethod);
+        // @var mixed assertTrue($hasLoadMethod;
     }
 
     /** @test */
@@ -271,8 +271,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hasSetAttributeMethod = method_exists($baseModel, 'setAttribute');
 
         // Assert
-        $this->assertTrue($hasGetAttributeMethod);
-        $this->assertTrue($hasSetAttributeMethod);
+        // @var mixed assertTrue($hasGetAttributeMethod;
+        // @var mixed assertTrue($hasSetAttributeMethod;
     }
 
     /** @test */
@@ -286,8 +286,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $guarded = $baseModel->getGuarded();
 
         // Assert
-        $this->assertIsArray($fillable);
-        $this->assertIsArray($guarded);
+        // @var mixed assertIsArray($fillable;
+        // @var mixed assertIsArray($guarded;
     }
 
     /** @test */
@@ -300,7 +300,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hasEvents = method_exists($baseModel, 'fireModelEvent');
 
         // Assert
-        $this->assertTrue($hasEvents);
+        // @var mixed assertTrue($hasEvents;
     }
 
     /** @test */
@@ -313,7 +313,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hasObservers = method_exists($baseModel, 'getObservableEvents');
 
         // Assert
-        $this->assertTrue($hasObservers);
+        // @var mixed assertTrue($hasObservers;
     }
 
     /** @test */
@@ -326,7 +326,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hasScopes = method_exists($baseModel, 'addGlobalScope');
 
         // Assert
-        $this->assertTrue($hasScopes);
+        // @var mixed assertTrue($hasScopes;
     }
 
     /** @test */
@@ -340,8 +340,8 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hasMutators = method_exists($baseModel, 'setAttribute');
 
         // Assert
-        $this->assertTrue($hasAccessors);
-        $this->assertTrue($hasMutators);
+        // @var mixed assertTrue($hasAccessors;
+        // @var mixed assertTrue($hasMutators;
     }
 
     /** @test */
@@ -354,7 +354,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $casts = $baseModel->getCasts();
 
         // Assert
-        $this->assertIsArray($casts);
+        // @var mixed assertIsArray($casts;
     }
 
     /** @test */
@@ -367,7 +367,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $dates = $baseModel->getDates();
 
         // Assert
-        $this->assertIsArray($dates);
+        // @var mixed assertIsArray($dates;
     }
 
     /** @test */
@@ -380,7 +380,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $hidden = $baseModel->getHidden();
 
         // Assert
-        $this->assertIsArray($hidden);
+        // @var mixed assertIsArray($hidden;
     }
 
     /** @test */
@@ -393,7 +393,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $visible = $baseModel->getVisible();
 
         // Assert
-        $this->assertIsArray($visible);
+        // @var mixed assertIsArray($visible;
     }
 
     /** @test */
@@ -406,7 +406,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $appends = $baseModel->getAppends();
 
         // Assert
-        $this->assertIsArray($appends);
+        // @var mixed assertIsArray($appends;
     }
 
     /** @test */
@@ -419,6 +419,6 @@ class XotBaseModelBusinessLogicTest extends TestCase
         $with = $baseModel->getWith();
 
         // Assert
-        $this->assertIsArray($with);
+        // @var mixed assertIsArray($with;
     }
 }

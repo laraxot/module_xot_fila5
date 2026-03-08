@@ -20,7 +20,7 @@ class ArtisanHeaderAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
-        $this->translateLabel()
+        // @var mixed translateLabel(
 
             // ->tooltip(__('xot::actions.export_xls'))
 
@@ -28,7 +28,7 @@ class ArtisanHeaderAction extends Action
             // ->icon('fas-file-excel')
             // ->icon('heroicon-o-arrow-down-tray')
             ->action(function (): void {
-                Assert::string($cmd = $this->getName());
+                Assert::string($cmd = // @var mixed getName(;
                 Artisan::call($cmd);
                 $output = Artisan::output();
                 Notification::make()

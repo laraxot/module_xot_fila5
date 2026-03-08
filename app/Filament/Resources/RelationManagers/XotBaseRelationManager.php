@@ -80,7 +80,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     final public function form(Schema $schema): Schema
     {
         /** @var array<string, Component> $formSchema */
-        $formSchema = $this->getFormSchema();
+        $formSchema = // @var mixed getFormSchema(;
 
         // Cast to Htmlable|string to match Schema::components() signature
         // Component implements Htmlable, so this is type-safe
@@ -92,7 +92,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
     public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        return // @var mixed getResource(;
     }
 
     /**
@@ -101,7 +101,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     #[\Override]
     protected function getTableColumns(): array
     {
-        $index = Arr::get($this->getResource()::getPages(), 'index');
+        $index = Arr::get(// @var mixed getResource(;
         if (! $index) {
             // throw new \Exception('Index page not found');
             return [];
@@ -206,11 +206,11 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
         $actions['delete_bulk'] = DeleteBulkAction::make()
             ->iconButton()
-            ->visible(fn (?Model $record): bool => $this->canDeleteBulk($record));
+            ->visible(fn (?Model $record): bool => // @var mixed canDeleteBulk($record;
 
         $actions['detach_bulk'] = DetachBulkAction::make()
             ->iconButton()
-            ->visible(fn (?Model $record): bool => $this->canDetachBulk($record));
+            ->visible(fn (?Model $record): bool => // @var mixed canDetachBulk($record;
 
         return $actions;
     }

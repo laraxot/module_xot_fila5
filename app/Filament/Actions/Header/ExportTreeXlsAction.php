@@ -29,7 +29,7 @@ class ExportTreeXlsAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
-        $this->translateLabel()
+        // @var mixed translateLabel(
             ->tooltip(__('xot::actions.export_xls'))
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')

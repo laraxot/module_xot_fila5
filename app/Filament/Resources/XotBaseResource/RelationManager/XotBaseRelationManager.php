@@ -42,7 +42,7 @@ abstract class XotBaseRelationManager extends RelationManager
 
     // final public function form(Schema $schema): Schema
     // {
-    //     return $schema->components($this->getFormSchema());
+    //     return $schema->components(// @var mixed getFormSchema(;
     // }
     /**
      * Get form schema.
@@ -51,7 +51,7 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     final public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        return // @var mixed getResource(;
     }
 
     /**
@@ -64,7 +64,7 @@ abstract class XotBaseRelationManager extends RelationManager
     {
         return [];
 
-        // return $this->getResource()::getTableColumns();
+        // return // @var mixed getResource(;
     }
 
     protected static function getPluralModelLabel(): string
@@ -75,14 +75,14 @@ abstract class XotBaseRelationManager extends RelationManager
     // public function table(Table $table): Table
     // {
     //     /** @var class-string<Model> $resource */
-    //     $resource = $this->getResource();
+    //     $resource = // @var mixed getResource(;
     //     Assert::classExists($resource);
     //     if (method_exists($resource, 'getTableColumns')) {
     //         /** @var array<string, Tables\Columns\Column> $columns */
     //         $columns = $resource::getTableColumns();
     //         return $table->columns($columns);
     //     }
-    //     return $table->columns($this->getTableColumns());
+    //     return $table->columns(// @var mixed getTableColumns(;
     // }
     // /**
     //  * Get table columns.

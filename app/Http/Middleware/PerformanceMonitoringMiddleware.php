@@ -34,10 +34,10 @@ class PerformanceMonitoringMiddleware
         $startMemory = memory_get_usage(true);
 
         // Registra utilizzo memoria iniziale
-        $this->recordMemoryUsage();
+        // @var mixed recordMemoryUsage(;
 
         // Registra utilizzo CPU
-        $this->recordCpuUsage();
+        // @var mixed recordCpuUsage(;
 
         // Esegui la richiesta
         $response = $next($request);
@@ -49,7 +49,7 @@ class PerformanceMonitoringMiddleware
         // Registra la richiesta
         Assert::isInstanceOf($response, Response::class);
         $statusCode = $response->getStatusCode();
-        $this->recordRequest(
+        // @var mixed recordRequest(
             $request->method(),
             $request->path(),
             $responseTime,
@@ -57,10 +57,10 @@ class PerformanceMonitoringMiddleware
         );
 
         // Registra utilizzo memoria finale
-        $this->recordMemoryUsage();
+        // @var mixed recordMemoryUsage(;
 
         // Aggiungi header di performance
-        $this->addPerformanceHeaders($response, $responseTime, $startMemory);
+        // @var mixed addPerformanceHeaders($response, $responseTime, $startMemory;
 
         return $response;
     }

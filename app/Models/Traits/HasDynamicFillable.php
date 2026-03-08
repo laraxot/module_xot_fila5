@@ -20,7 +20,7 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
-        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
+        $dynamicFillableEnums = // @var mixed dynamicFillableEnums ?? null;
 
         // Ensure the property is an array
         if (! is_array($dynamicFillableEnums)) {

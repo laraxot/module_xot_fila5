@@ -121,7 +121,7 @@ abstract class XotBaseState extends State implements StateContract
      */
     public function modalAction(array $arguments, array $data): void
     {
-        $this->processStateAction($arguments, $data);
+        // @var mixed processStateAction($arguments, $data;
     }
 
     /**
@@ -141,7 +141,7 @@ abstract class XotBaseState extends State implements StateContract
          *
          * $appointment?->state->transitionTo($stateClass,$message);
          */
-        $record = $this->getModel();
+        $record = // @var mixed getModel(;
         /* @phpstan-ignore-next-line */
         $record->state->transitionTo($stateClass, $message);
     }
@@ -154,7 +154,7 @@ abstract class XotBaseState extends State implements StateContract
     #[\Override]
     public function modalActionByRecord(Model $record, array $data): void
     {
-        $this->processStateActionByRecord($record, $data);
+        // @var mixed processStateActionByRecord($record, $data;
     }
 
     /**

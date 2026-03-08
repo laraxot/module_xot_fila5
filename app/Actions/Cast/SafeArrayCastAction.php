@@ -101,7 +101,7 @@ class SafeArrayCastAction
      */
     public function executeWithKeys(mixed $value, array $requiredKeys, ?array $default = []): array
     {
-        $array = $this->execute($value, $default);
+        $array = // @var mixed execute($value, $default;
 
         // Verifica che tutte le chiavi richieste siano presenti
         foreach ($requiredKeys as $key) {
@@ -127,7 +127,7 @@ class SafeArrayCastAction
      */
     public function executeWithFilter(mixed $value, array $allowedKeys, ?array $default = []): array
     {
-        $array = $this->execute($value, $default);
+        $array = // @var mixed execute($value, $default;
 
         // Filtra solo le chiavi permesse
         $flippedKeys = array_flip(array_filter($allowedKeys, fn ($key) => is_string($key) || is_int($key)));
@@ -146,7 +146,7 @@ class SafeArrayCastAction
      */
     public function executeWithValueType(mixed $value, string $valueType, ?array $default = []): array
     {
-        $array = $this->execute($value, $default);
+        $array = // @var mixed execute($value, $default;
 
         // Converte i valori al tipo richiesto
         switch ($valueType) {

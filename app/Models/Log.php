@@ -63,7 +63,7 @@ class Log extends BaseModel
 
     public function getFileContentAttribute(?string $value): ?string
     {
-        return File::get(storage_path('logs/'.$this->id.'.log'));
+        return File::get(storage_path('logs/'.// @var mixed id.'.log';
     }
 
     /** @return array<string, string> */

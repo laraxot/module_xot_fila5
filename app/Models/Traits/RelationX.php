@@ -40,12 +40,12 @@ trait RelationX
             Model::class,
             '['.__LINE__.']['.class_basename($this).']',
         );
-        $pivot = $this->guessPivot($related);
+        $pivot = // @var mixed guessPivot($related;
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
 
         $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
+        $dbName = // @var mixed getConnection(;
         $relatedDbName = $related_model->getConnection()->getDatabaseName();
         // if ($pivotDbName !== $dbName) {
         if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
@@ -58,7 +58,7 @@ trait RelationX
         }
         // }
 
-        return $this->belongsToMany(
+        return // @var mixed belongsToMany(
             related: $related,
             table: $table,
             foreignPivotKey: $foreignPivotKey,
@@ -92,18 +92,18 @@ trait RelationX
         ?string $relation = null,
         bool $inverse = false,
     ): MorphToMany {
-        $pivot = $this->guessMorphPivot($related);
+        $pivot = // @var mixed guessMorphPivot($related;
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
 
         $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
+        $dbName = // @var mixed getConnection(;
         // $relatedDbName = $related_model->getConnection()->getDatabaseName();
         if (null === $table) {
             $table = $pivot->getTable();
         }
 
-        return $this->morphToMany(
+        return // @var mixed morphToMany(
             related: $related,
             name: $name,
             table: $table,
@@ -124,7 +124,7 @@ trait RelationX
         $class = $this::class;
         $pivot_name = class_basename($related).'Morph';
 
-        $pivot_class = $this->guessPivotFullClass($pivot_name, $related, $class);
+        $pivot_class = // @var mixed guessPivotFullClass($pivot_name, $related, $class;
         $pivot = app($pivot_class);
         Assert::isInstanceOf($pivot, MorphPivot::class);
 
@@ -147,7 +147,7 @@ trait RelationX
         sort($model_names);
         $pivot_name = implode('', $model_names);
 
-        $pivot_class = $this->guessPivotFullClass($pivot_name, $related, $class);
+        $pivot_class = // @var mixed guessPivotFullClass($pivot_name, $related, $class;
 
         $pivot = app($pivot_class);
         Assert::isInstanceOf($pivot, Pivot::class);
@@ -160,19 +160,19 @@ trait RelationX
         $class ??= $this::class;
 
         // Try class-based pivot first
-        $pivot_class = $this->buildPivotClassName($class, $pivot_name);
+        $pivot_class = // @var mixed buildPivotClassName($class, $pivot_name;
         if (class_exists($pivot_class)) {
             return $pivot_class;
         }
 
         // Try related model-based pivot
-        $pivot_class = $this->buildPivotClassName($related, $pivot_name);
+        $pivot_class = // @var mixed buildPivotClassName($related, $pivot_name;
         if (class_exists($pivot_class)) {
             return $pivot_class;
         }
 
         // Try parent class if available
-        return $this->tryParentClassPivot($pivot_name, $related, $class);
+        return // @var mixed tryParentClassPivot($pivot_name, $related, $class;
     }
 
     private function buildPivotClassName(string $context, string $pivotName): string
@@ -187,12 +187,12 @@ trait RelationX
     {
         $parent_class = get_parent_class($class);
         if (false === $parent_class) {
-            return $this->buildPivotClassName($class, $pivot_name);
+            return // @var mixed buildPivotClassName($class, $pivot_name;
         }
 
         // If parent class ends with 'Morph', use it directly
         if (Str::endsWith($parent_class, 'Morph')) {
-            return $this->buildPivotClassName($class, $pivot_name);
+            return // @var mixed buildPivotClassName($class, $pivot_name;
         }
 
         // Otherwise, use parent class to build new pivot name
@@ -203,6 +203,6 @@ trait RelationX
         sort($model_names);
         $new_pivot_name = implode('', $model_names);
 
-        return $this->guessPivotFullClass($new_pivot_name, $related, $parent_class);
+        return // @var mixed guessPivotFullClass($new_pivot_name, $related, $parent_class;
     }
 }

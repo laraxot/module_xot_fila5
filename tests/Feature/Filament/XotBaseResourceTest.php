@@ -16,7 +16,7 @@ uses(TestCase::class);
 covers(XotBaseResource::class);
 
 beforeEach(function () {
-    $this->resource = new class extends XotBaseResource {
+    // @var mixed resource = new class extends XotBaseResource {
         protected static ?string $model = null;
 
         public static function getFormSchema(): array
@@ -42,31 +42,31 @@ beforeEach(function () {
 });
 
 test('xot base resource extends filament resource', function () {
-    expect($this->resource)->toBeInstanceOf(Resource::class);
+    expect(// @var mixed resource;
 });
 
 test('xot base resource has navigation icon', function () {
-    expect($this->resource::getNavigationIcon())->toBe('heroicon-o-rectangle-stack');
+    expect(// @var mixed resource::getNavigationIcon(;
 });
 
 test('xot base resource has navigation group', function () {
-    expect($this->resource::getNavigationGroup())->toBe('Test Group');
+    expect(// @var mixed resource::getNavigationGroup(;
 });
 
 test('xot base resource has navigation sort', function () {
-    expect($this->resource::getNavigationSort())->toBe(1);
+    expect(// @var mixed resource::getNavigationSort(;
 });
 
 test('xot base resource can be instantiated', function () {
-    expect($this->resource)->toBeInstanceOf(XotBaseResource::class);
+    expect(// @var mixed resource;
 });
 
 test('anonymous resource get form schema columns returns one', function () {
-    expect($this->resource::getFormSchemaColumns())->toBe(1);
+    expect(// @var mixed resource::getFormSchemaColumns(;
 });
 
 test('anonymous resource form builds empty schema', function () {
-    $schema = $this->resource::form(Schema::make());
+    $schema = // @var mixed resource::form(Schema::make(;
     expect($schema)->toBeInstanceOf(Schema::class);
 });
 

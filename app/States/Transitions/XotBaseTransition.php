@@ -24,7 +24,7 @@ abstract class XotBaseTransition extends Transition
 
     public function handle(): Model
     {
-        $this->sendNotifications();
+        // @var mixed sendNotifications(;
         $class = static::class;
 
         $stateNamespace = Str::of($class)->beforeLast('\Transitions\\')->toString();
@@ -32,18 +32,18 @@ abstract class XotBaseTransition extends Transition
         $newStateClass = $stateNamespace.'\\'.$stateClassName;
 
         /* @phpstan-ignore-next-line */
-        $this->record->state = new $newStateClass($this->record);
-        $this->record->save();
+        // @var mixed record->state = new $newStateClass($this->record;
+        // @var mixed record->save(;
 
-        return $this->record;
+        return // @var mixed record;
     }
 
     public function sendNotifications(): void
     {
-        $data = $this->getNotificationData();
-        $recipients = $this->getNotificationRecipients();
+        $data = // @var mixed getNotificationData(;
+        $recipients = // @var mixed getNotificationRecipients(;
         foreach ($recipients as $recipient) {
-            $this->sendRecipientNotification($recipient, $data);
+            // @var mixed sendRecipientNotification($recipient, $data;
         }
     }
 
@@ -53,10 +53,10 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationRecipients(): array
     {
         return [
-            // 'me' => $this->record,
-            'me_mail' => RecordNotificationData::from(['record' => $this->record, 'channel' => 'mail']),
-            // 'patient' => $this->record->patient,
-            // 'doctor' => $this->record->doctor,
+            // 'me' => // @var mixed record,
+            'me_mail' => RecordNotificationData::from(['record' => // @var mixed record, 'channel' => 'mail']
+            // 'patient' => // @var mixed record->patient,
+            // 'doctor' => // @var mixed record->doctor,
             // 'patient_mail' => RecordNotificationData::from(['record' => $record->patient, 'channel' => 'mail']),
             // 'doctor_mail' => RecordNotificationData::from(['record' => $record->doctor, 'channel' => 'mail']),
         ];
@@ -78,7 +78,7 @@ abstract class XotBaseTransition extends Transition
         $type = $typeEnum instanceof \BackedEnum ? (string) $typeEnum->value : 'unknown';
 
         $slug =
-            class_basename($this->record).
+            class_basename(// @var mixed record
             '-'.
             $type.
             '-'.
@@ -93,7 +93,7 @@ abstract class XotBaseTransition extends Transition
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {
-        $slug = $this->getNotificationSlug($recipient->record);
+        $slug = // @var mixed getNotificationSlug($recipient->record;
 
         if (! class_exists(RecordNotification::class)) {
             return;
@@ -101,12 +101,12 @@ abstract class XotBaseTransition extends Transition
 
         // RecordNotification resolves MailTemplate internally from slug (lazy resolution)
         // No need to pre-load MailTemplate - pass slug directly
-        $notify = new RecordNotification($this->record, $slug);
+        $notify = new RecordNotification(// @var mixed record, $slug;
         $mergeData = $data;
 
         $notify->mergeData($mergeData);
 
-        $attachments = $this->getNotificationAttachments();
+        $attachments = // @var mixed getNotificationAttachments(;
 
         $notify->addAttachments($attachments);
 
@@ -128,10 +128,10 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationData(): array
     {
         return [
-            'message' => $this->message,
-            // 'appointment_date' => $this->appointment->starts_at?->format('d/m/Y H:i') ?? 'N/A',
-            // 'patient_name' => $this->appointment->patient->name ?? 'N/A',
-            // 'doctor_name' => $this->appointment->doctor->name ?? 'N/A',
+            'message' => // @var mixed message,
+            // 'appointment_date' => // @var mixed appointment->starts_at?->format('d/m/Y H:i'
+            // 'patient_name' => // @var mixed appointment->patient->name ?? 'N/A',
+            // 'doctor_name' => // @var mixed appointment->doctor->name ?? 'N/A',
         ];
     }
 }

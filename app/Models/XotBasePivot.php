@@ -64,17 +64,17 @@ abstract class XotBasePivot extends EloquentPivot
      */
     public function getConnectionName(): ?string
     {
-        if (isset($this->connection)) {
-            if (is_string($this->connection)) {
-                return $this->connection;
+        if (isset(// @var mixed connection
+            if (is_string(// @var mixed connection
+                return // @var mixed connection;
             }
 
-            if ($this->connection instanceof \BackedEnum) {
-                return (string) $this->connection->value;
+            if (// @var mixed connection instanceof \BackedEnum
+                return (string) // @var mixed connection->value;
             }
 
-            if ($this->connection instanceof \UnitEnum) {
-                return $this->connection->name;
+            if (// @var mixed connection instanceof \UnitEnum
+                return // @var mixed connection->name;
             }
         }
 

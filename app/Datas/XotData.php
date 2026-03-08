@@ -96,7 +96,7 @@ class XotData extends Data implements Wireable
 
     public function isSuperAdmin(): bool
     {
-        $profile = $this->getProfileModel();
+        $profile = // @var mixed getProfileModel(;
         if ($profile->isSuperAdmin()) {
             return true;
         }
@@ -124,7 +124,7 @@ class XotData extends Data implements Wireable
 
     public function getUserByEmail(string $email): UserContract
     {
-        $user_class = $this->getUserClass();
+        $user_class = // @var mixed getUserClass(;
         $userInstance = new $user_class();
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
@@ -145,20 +145,20 @@ class XotData extends Data implements Wireable
      */
     public function getTeamClass(): string
     {
-        Assert::classExists($this->team_class, '['.__LINE__.']['.class_basename($this).']');
+        Assert::classExists(// @var mixed team_class, '['.__LINE__.']['.class_basename($this;
         // Assert::isInstanceOf($team_class, Model::class, '['.__LINE__.']['.class_basename($this).']');
         Assert::isAOf(
-            $this->team_class,
+            // @var mixed team_class,
             Model::class,
-            '['.__LINE__.']['.class_basename($this).']['.$this->team_class.']',
+            '['.__LINE__.']['.class_basename($this).']['.// @var mixed team_class.']',
         );
         Assert::implementsInterface(
-            $this->team_class,
+            // @var mixed team_class,
             TeamContract::class,
-            '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
+            '['.// @var mixed team_class.']['.__LINE__.']['.class_basename($this
         );
 
-        return $this->team_class;
+        return // @var mixed team_class;
     }
 
     /**
@@ -169,23 +169,23 @@ class XotData extends Data implements Wireable
     public function getTenantClass(): string
     {
         Assert::classExists(
-            $this->tenant_class,
-            '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']',
+            // @var mixed tenant_class,
+            '['.// @var mixed tenant_class.']['.__LINE__.']['.class_basename($this
         );
         // Assert::isInstanceOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']');
         // Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface(
-            $this->tenant_class,
+            // @var mixed tenant_class,
             TenantContract::class,
-            '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']',
+            '['.// @var mixed tenant_class.']['.__LINE__.']['.class_basename($this
         );
         Assert::isAOf(
-            $this->tenant_class,
+            // @var mixed tenant_class,
             Model::class,
-            '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
+            '['.__LINE__.']['.class_basename($this).']['.// @var mixed tenant_class.']',
         );
 
-        return $this->tenant_class;
+        return // @var mixed tenant_class;
     }
 
     /**
@@ -193,7 +193,7 @@ class XotData extends Data implements Wireable
      */
     public function getTenantResourceClass(): string
     {
-        $class = Str::of($this->tenant_class)
+        $class = Str::of(// @var mixed tenant_class
             ->replace('\Models\\', '\Filament\Resources\\')
             ->append('Resource')
             ->toString();
@@ -204,16 +204,16 @@ class XotData extends Data implements Wireable
 
     public function getTenantPivotClass(): string
     {
-        Assert::classExists($this->tenant_pivot_class, '['.__LINE__.']['.class_basename($this).']');
+        Assert::classExists(// @var mixed tenant_pivot_class, '['.__LINE__.']['.class_basename($this;
 
-        return $this->tenant_pivot_class;
+        return // @var mixed tenant_pivot_class;
     }
 
     public function getMembershipClass(): string
     {
-        Assert::classExists($this->membership_class, '['.__LINE__.']['.class_basename($this).']');
+        Assert::classExists(// @var mixed membership_class, '['.__LINE__.']['.class_basename($this;
 
-        return $this->membership_class;
+        return // @var mixed membership_class;
     }
 
     /**
@@ -221,7 +221,7 @@ class XotData extends Data implements Wireable
      */
     public function getProfileClass(): string
     {
-        $class = 'Modules\\'.$this->main_module.'\Models\Profile';
+        $class = 'Modules\\'.// @var mixed main_module.'\Models\Profile';
 
         // Verifica che la classe esista
         Assert::classExists($class, '['.$class.']['.__LINE__.']['.class_basename($this).']');
@@ -240,12 +240,12 @@ class XotData extends Data implements Wireable
 
     public function getHomeController(): string
     {
-        return 'Modules\\'.$this->main_module.'\Http\Controllers\HomeController';
+        return 'Modules\\'.// @var mixed main_module.'\Http\Controllers\HomeController';
     }
 
     public function getProfileModelByUserId(string $user_id): ProfileContract
     {
-        $profileClass = $this->getProfileClass();
+        $profileClass = // @var mixed getProfileClass(;
         /** @var Model&ProfileContract $profile */
         $profile = app($profileClass);
 
@@ -265,9 +265,9 @@ class XotData extends Data implements Wireable
 
     public function getProfileByEmail(string $email): ProfileContract
     {
-        $user = $this->getUserByEmail($email);
+        $user = // @var mixed getUserByEmail($email;
 
-        return $this->getProfileModelByUserId((string) $user->id);
+        return // @var mixed getProfileModelByUserId((string;
     }
 
     /**
@@ -292,19 +292,19 @@ class XotData extends Data implements Wireable
 
     public function getProfileModel(): ProfileContract
     {
-        if (null !== $this->profile) {
-            return $this->profile;
+        if (null !== // @var mixed profile
+            return // @var mixed profile;
         }
 
         $user_id = (string) authId();
-        $this->profile = $this->getProfileModelByUserId((string) $user_id);
+        // @var mixed profile = $this->getProfileModelByUserId((string;
         Assert::implementsInterface(
-            $this->profile,
+            // @var mixed profile,
             ProfileContract::class,
             '['.__LINE__.']['.class_basename($this).']',
         );
 
-        return $this->profile;
+        return // @var mixed profile;
     }
 
     /**
@@ -315,10 +315,10 @@ class XotData extends Data implements Wireable
     public function update(array $data): self
     {
         foreach ($data as $k => $v) {
-            $this->{$k} = $v;
+            // @var mixed {$k} = $v;
         }
 
-        // $this->save();
+        // // @var mixed save(;
         return $this;
     }
 
@@ -329,7 +329,7 @@ class XotData extends Data implements Wireable
 
     public function getPubThemeViewPath(string $key = ''): string
     {
-        $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
+        $path0 = base_path('Themes/'.// @var mixed pub_theme.'/resources/views/'.$key;
 
         try {
             return realpath($path0);
@@ -340,17 +340,17 @@ class XotData extends Data implements Wireable
 
     public function getPubThemePublicPath(string $key = ''): string
     {
-        return public_path('themes/'.$this->pub_theme.'/'.$key);
+        return public_path('themes/'.// @var mixed pub_theme.'/'.$key;
     }
 
     public function getPubThemePublicAsset(string $key = ''): string
     {
-        return asset('themes/'.$this->pub_theme.'/'.$key);
+        return asset('themes/'.// @var mixed pub_theme.'/'.$key;
     }
 
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
-        return base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
+        return base_path('Themes/'.// @var mixed pub_theme.'/resources/mail-layouts/'.$key;
     }
 
     /**
@@ -358,7 +358,7 @@ class XotData extends Data implements Wireable
      */
     public function getUserClassByType(string $type): string
     {
-        $user_class = $this->getUserClass();
+        $user_class = // @var mixed getUserClass(;
         $userInstance = app($user_class);
 
         if (! is_object($userInstance) || ! method_exists($userInstance, 'getChildTypes')) {
@@ -387,7 +387,7 @@ class XotData extends Data implements Wireable
 
     public function getUserResourceClassByType(string $type): string
     {
-        $class = $this->getUserClassByType($type);
+        $class = // @var mixed getUserClassByType($type;
 
         // Extract the module name from the class namespace
         $moduleName = Str::before(Str::after($class, 'Modules\\'), '\\');
@@ -418,7 +418,7 @@ class XotData extends Data implements Wireable
      */
     public function getUserChildTypes(): array
     {
-        $enum_class = $this->getUserChildTypeClass();
+        $enum_class = // @var mixed getUserChildTypeClass(;
 
         if (! enum_exists($enum_class)) {
             return [];
@@ -431,7 +431,7 @@ class XotData extends Data implements Wireable
 
     public function getUserChildTypeClass(): string
     {
-        $user_class = $this->getUserClass();
+        $user_class = // @var mixed getUserClass(;
         $user_instance = app($user_class);
 
         if (! is_object($user_instance) || ! method_exists($user_instance, 'getCasts')) {
@@ -464,12 +464,12 @@ class XotData extends Data implements Wireable
      */
     public function getProjectNamespace(): string
     {
-        return 'Modules\\'.$this->main_module;
+        return 'Modules\\'.// @var mixed main_module;
     }
 
     public function forceSSL(): bool
     {
-        if (! $this->force_ssl) {
+        if (! // @var mixed force_ssl
             return false;
         }
         if (isset($_SERVER['SERVER_NAME']) && 'localhost' === $_SERVER['SERVER_NAME']) {

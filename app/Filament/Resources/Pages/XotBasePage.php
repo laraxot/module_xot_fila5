@@ -50,8 +50,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
-        if (isset($this->view)) {
-            return $this->view;
+        if (isset(// @var mixed view
+            return // @var mixed view;
         }
 
         $view = Str::of(static::class)
@@ -111,7 +111,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getHeading(): string
     {
-        return $this->getTitle();
+        return // @var mixed getTitle(;
     }
 
     /**
@@ -119,7 +119,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function schema(Schema $schema): Schema
     {
-        return $schema->components($this->getFormSchema())
+        return $schema->components(// @var mixed getFormSchema(
             ->statePath('data')
             ->columns(2);
     }
@@ -132,10 +132,10 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     final public function form(Schema $schema): Schema
     {
         return $schema
-            ->components($this->getFormSchema())
-            ->model($this->getFormModel())
-            ->statePath($this->getFormStatePath())
-            ->operation($this->getFormContext())
+            ->components(// @var mixed getFormSchema(
+            ->model(// @var mixed getFormModel(
+            ->statePath(// @var mixed getFormStatePath(
+            ->operation(// @var mixed getFormContext(
             ->columns(2);
     }
 
@@ -209,7 +209,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      * public function mount(int|string $record): void
      * {
      * parent::mount($record);
-     * $this->form->fill($this->data ?? []);
+     * // @var mixed form->fill($this->data ?? [];
      * }
      */
     /**
@@ -220,8 +220,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     protected function getViewData(): array
     {
         return [
-            'data' => $this->data,
-            'record' => $this->record ?? null,
+            'data' => // @var mixed data,
+            'record' => // @var mixed record ?? null,
         ];
     }
 }

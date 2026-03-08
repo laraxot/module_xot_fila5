@@ -45,12 +45,12 @@ trait HasExtraTrait
         // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
         // Assert::implementsInterface($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
 
-        return $this->morphOne($extra_class, 'model');
+        return // @var mixed morphOne($extra_class, 'model';
     }
 
     public function getExtra(string $name): array|bool|float|int|string|null
     {
-        $extra = $this->extra;
+        $extra = // @var mixed extra;
         if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {
             return null;
         }
@@ -78,9 +78,9 @@ trait HasExtraTrait
      */
     public function setExtra(string $name, int|float|string|array|bool|null $value): void
     {
-        $extra = $this->extra;
+        $extra = // @var mixed extra;
         if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {
-            $extra = $this->extra()->firstOrCreate([], ['extra_attributes' => json_encode([])]);
+            $extra = // @var mixed extra(;
             if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {
                 return;
             }

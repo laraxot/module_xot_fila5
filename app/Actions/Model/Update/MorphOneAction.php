@@ -36,7 +36,7 @@ final class MorphOneAction
         Assert::isInstanceOf($relation, MorphOne::class, 'Relation must be an instance of MorphOne.');
 
         // Validate and prepare the data
-        $data = $this->validateAndPrepareData($relationDTO->data);
+        $data = // @var mixed validateAndPrepareData($relationDTO->data;
 
         // Update or create the related model
         if ($relation->exists()) {

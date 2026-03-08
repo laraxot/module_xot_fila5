@@ -165,11 +165,11 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function schema(Schema $schema): Schema
     {
-        $schema = $schema->components($this->getFormSchema());
+        $schema = $schema->components(// @var mixed getFormSchema(;
 
         $schema->statePath('data');
 
-        $debounce = $this->getAutosaveDebounce();
+        $debounce = // @var mixed getAutosaveDebounce(;
         if (null !== $debounce && method_exists($schema, 'autosaveDebounce')) {
             $schema->autosaveDebounce($debounce);
         }
@@ -184,7 +184,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getView(): string
     {
-        if ('' === $this->view) {
+        if ('' === // @var mixed view
             $view = app(GetViewByClassAction::class)->execute(static::class);
             if (view()->exists($view)) {
                 return (string) $view;
@@ -194,7 +194,7 @@ abstract class XotBasePage extends Page implements HasForms
             throw new \RuntimeException('Nessuna vista trovata per la classe: '.static::class);
         }
 
-        return $this->view;
+        return // @var mixed view;
     }
 
     /**
@@ -240,7 +240,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     protected function authorizeAccess(): void
     {
-        $this->authorize('view', static::class);
+        // @var mixed authorize('view', static::class;
     }
 
     /**
@@ -253,7 +253,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     protected function hasPermissionTo(string $permission): bool
     {
-        $user = $this->getUser();
+        $user = // @var mixed getUser(;
 
         // @phpstan-ignore-next-line
         if (! method_exists($user, 'hasPermissionTo')) {
@@ -273,7 +273,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     protected function resolveViewPath(): string
     {
-        $view = $this->getView();
+        $view = // @var mixed getView(;
         if (view()->exists($view)) {
             return $view;
         }
@@ -290,7 +290,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     protected function getQuery(): Builder
     {
-        $modelClass = $this->getModel();
+        $modelClass = // @var mixed getModel(;
 
         if (! class_exists($modelClass)) {
             throw new \LogicException("Model class {$modelClass} does not exist");

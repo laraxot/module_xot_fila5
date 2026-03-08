@@ -8,23 +8,23 @@ use Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    $this->action = app(SavePhpArrayAction::class);
-    $this->tempDir = sys_get_temp_dir().'/xot_save_php_'.uniqid();
-    mkdir($this->tempDir, 0755, true);
+    // @var mixed action = app(SavePhpArrayAction::class;
+    // @var mixed tempDir = sys_get_temp_dir(;
+    mkdir(// @var mixed tempDir, 0755, true;
 });
 
 afterEach(function (): void {
-    if (isset($this->tempDir) && is_dir($this->tempDir)) {
-        array_map('unlink', glob($this->tempDir.'/*') ?: []);
-        rmdir($this->tempDir);
+    if (isset(// @var mixed tempDir
+        array_map('unlink', glob(// @var mixed tempDir.'/*';
+        rmdir(// @var mixed tempDir;
     }
 });
 
 it('saves array to php file', function (): void {
     $data = ['a' => 1, 'b' => 'test'];
-    $path = $this->tempDir.'/data.php';
+    $path = // @var mixed tempDir.'/data.php';
 
-    $result = $this->action->execute($data, $path);
+    $result = // @var mixed action->execute($data, $path;
 
     expect($result)->toBeTrue();
     $loaded = require $path;
@@ -32,8 +32,8 @@ it('saves array to php file', function (): void {
 });
 
 it('saved file has strict types', function (): void {
-    $path = $this->tempDir.'/strict.php';
-    $this->action->execute(['x' => 1], $path);
+    $path = // @var mixed tempDir.'/strict.php';
+    // @var mixed action->execute(['x' => 1], $path;
 
     expect(file_get_contents($path))->toContain('declare(strict_types=1)');
 });

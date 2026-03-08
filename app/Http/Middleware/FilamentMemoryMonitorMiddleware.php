@@ -45,11 +45,11 @@ class FilamentMemoryMonitorMiddleware
         $memoryTotalMB = round($memoryEnd / 1024 / 1024, 2);
 
         // Determina se è una richiesta Filament admin
-        $isFilamentAdmin = $this->isFilamentAdminRequest($request);
+        $isFilamentAdmin = // @var mixed isFilamentAdminRequest($request;
 
         // Log solo per richieste Filament admin o se supera soglie
-        if ($isFilamentAdmin || $this->shouldLog($memoryUsedMB, $executionTime)) {
-            $this->logMemoryUsage($request, [
+        if ($isFilamentAdmin || // @var mixed shouldLog($memoryUsedMB, $executionTime
+            // @var mixed logMemoryUsage($request, [
                 'memory_used_mb' => $memoryUsedMB,
                 'memory_peak_mb' => $memoryPeakMB,
                 'memory_total_mb' => $memoryTotalMB,
@@ -117,7 +117,7 @@ class FilamentMemoryMonitorMiddleware
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
-        $logLevel = $this->determineLogLevel($metrics);
+        $logLevel = // @var mixed determineLogLevel($metrics;
 
         $message = sprintf(
             'Filament Memory Usage: %sMB used, %sMB peak, %sms execution time - %s %s',

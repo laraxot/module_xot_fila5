@@ -43,8 +43,8 @@ abstract class XotBaseTestCase extends BaseTestCase
 
         // Bind translator only if not already resolved (needed for some Filament tests).
         // This ensures the application is in a consistent state for unit tests.
-        if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', function ($app) {
+        if (! // @var mixed app->bound('translator'
+            // @var mixed app->singleton('translator', function ($app
                 return new \Illuminate\Translation\Translator(
                     new \Illuminate\Translation\ArrayLoader(),
                     'en'
@@ -57,9 +57,9 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         // Prevent connection accumulation across a long multi-connection suite.
         try {
-            if (isset($this->app)) {
+            if (isset(// @var mixed app
                 /** @var \Illuminate\Database\DatabaseManager $db */
-                $db = $this->app->make('db');
+                $db = // @var mixed app->make('db';
 
                 /** @var array<string, mixed> $connections */
                 $connections = (array) config('database.connections', []);
