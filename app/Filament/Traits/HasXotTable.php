@@ -7,18 +7,13 @@ namespace Modules\Xot\Filament\Traits;
 use Filament\Tables;
 use Filament\Tables\Actions\Action;
 use Filament\Tables\Actions\ActionGroup;
-use Filament\Tables\Actions\AttachAction;
-use Filament\Tables\Actions\CreateAction;
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Modules\UI\Enums\TableLayoutEnum;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 
 /**
  * Trait HasXotTable.
@@ -49,7 +44,7 @@ trait HasXotTable
      */
     public function getTableColumns(): array
     {
-        if ($this->layoutView === TableLayoutEnum::GRID) {
+        if (TableLayoutEnum::GRID === $this->layoutView) {
             return $this->getGridTableColumns();
         }
 
