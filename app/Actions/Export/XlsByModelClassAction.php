@@ -40,7 +40,7 @@ class XlsByModelClassAction
         Assert::classExists($modelClass);
         Assert::subclassOf($modelClass, Model::class);
 
-        $with = $this->getWithByIncludes($includes);
+        $with = // @var mixed getWithByIncludes($includes;
 
         // Creiamo l'istanza del modello e costruiamo la query
         /** @var Model $model */
@@ -88,7 +88,7 @@ class XlsByModelClassAction
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
         $collectionExport = new CollectionExport($rows, $transKey);
-        $filename = $this->getExportName($modelClass);
+        $filename = // @var mixed getExportName($modelClass;
 
         return Excel::download($collectionExport, $filename);
     }

@@ -21,12 +21,12 @@ class CacheCommandHandler implements CommandHandlerInterface
 
     public function handle(string $moduleName = ''): string
     {
-        $command = $this->getCurrentCommand();
+        $command = // @var mixed getCurrentCommand(;
 
         if (isset(self::CACHE_COMMANDS[$command])) {
             $method = self::CACHE_COMMANDS[$command];
 
-            return $this->$method();
+            return // @var mixed $method(;
         }
 
         return '';

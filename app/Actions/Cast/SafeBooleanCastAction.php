@@ -69,7 +69,7 @@ class SafeBooleanCastAction
 
         // Se è una stringa, convertila
         if (is_string($value)) {
-            return $this->parseStringToBool($value, $default);
+            return // @var mixed parseStringToBool($value, $default;
         }
 
         // Se è un array, convertilo (array vuoto = false, altri = true)
@@ -127,7 +127,7 @@ class SafeBooleanCastAction
         }
 
         // Fallback al comportamento standard
-        return $this->execute($value, $default);
+        return // @var mixed execute($value, $default;
     }
 
     /**
@@ -157,7 +157,7 @@ class SafeBooleanCastAction
         }
 
         // Fallback al comportamento standard
-        return $this->execute($value, $default);
+        return // @var mixed execute($value, $default;
     }
 
     /**

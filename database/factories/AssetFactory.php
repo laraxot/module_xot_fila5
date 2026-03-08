@@ -22,11 +22,11 @@ class AssetFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word(),
-            'path' => '/assets/'.$this->faker->word().'.css',
+            'name' => // @var mixed faker->word(
+            'path' => '/assets/'.// @var mixed faker->word(
             'type' => 'css',
             'version' => '1.0.0',
-            'is_public' => $this->faker->boolean(),
+            'is_public' => // @var mixed faker->boolean(
         ];
     }
 
@@ -35,7 +35,7 @@ class AssetFactory extends Factory
      */
     public function public(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return // @var mixed state(fn (array $attributes
             'is_public' => true,
         ]);
     }
@@ -45,7 +45,7 @@ class AssetFactory extends Factory
      */
     public function private(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return // @var mixed state(fn (array $attributes
             'is_public' => false,
         ]);
     }

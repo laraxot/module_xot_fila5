@@ -11,22 +11,22 @@ uses(TestCase::class);
 describe('XotBaseTransition', function () {
     beforeEach(function () {
         // Create a test record
-        $this->record = new Modules\User\Models\User();
-        $this->record->id = '1';
-        $this->record->name = 'Test User';
-        $this->record->email = 'test@example.com';
+        // @var mixed record = new Modules\User\Models\User(;
+        // @var mixed record->id = '1';
+        // @var mixed record->name = 'Test User';
+        // @var mixed record->email = 'test@example.com';
 
         // Create a concrete test transition class.
         // Override sendRecipientNotification con firma identica alla base per evitare Fatal error
         // (la base usa RecordNotificationData, non UserContract).
-        $this->transition = new class($this->record) extends XotBaseTransition {
+        // @var mixed transition = new class($this->record
             public static string $name = 'test_transition';
 
             #[Override]
             public function getNotificationRecipients(): array
             {
                 return [
-                    'test_user' => RecordNotificationData::from(['record' => $this->record, 'channel' => 'mail']),
+                    'test_user' => RecordNotificationData::from(['record' => // @var mixed record, 'channel' => 'mail']
                 ];
             }
 
@@ -39,31 +39,31 @@ describe('XotBaseTransition', function () {
     });
 
     it('can be instantiated', function () {
-        expect($this->transition)->toBeInstanceOf(XotBaseTransition::class);
+        expect(// @var mixed transition;
     });
 
     it('has static name property', function () {
-        expect($this->transition::$name)->toBe('test_transition');
+        expect(// @var mixed transition::$name;
     });
 
     it('can get record', function () {
-        $record = $this->transition->record;
-        expect($record)->toBe($this->record);
+        $record = // @var mixed transition->record;
+        expect($record)->toBe(// @var mixed record;
     });
 
     it('can send notifications without errors', function () {
-        expect(fn () => $this->transition->sendNotifications())->not->toThrow(Exception::class);
+        expect(fn () => // @var mixed transition->sendNotifications(;
     });
 
     it('returns correct notification recipients structure', function () {
-        $recipients = $this->transition->getNotificationRecipients();
+        $recipients = // @var mixed transition->getNotificationRecipients(;
         expect($recipients)->toBeArray()->toHaveKey('test_user');
         expect($recipients['test_user'])->toBeInstanceOf(RecordNotificationData::class);
     });
 
     it('can send recipient notification', function () {
-        $recipient = RecordNotificationData::from(['record' => $this->record, 'channel' => 'mail']);
-        expect(fn () => $this->transition->sendRecipientNotification($recipient, []))->not->toThrow(Exception::class);
+        $recipient = RecordNotificationData::from(['record' => // @var mixed record, 'channel' => 'mail'];
+        expect(fn () => // @var mixed transition->sendRecipientNotification($recipient, [];
     });
 
     it('validates abstract class structure', function () {

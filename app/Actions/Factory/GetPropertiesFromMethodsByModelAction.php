@@ -103,7 +103,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::stringNotEmpty($codeStr, 'Il corpo della funzione non può essere vuoto');
 
                 // Cerchiamo relazioni belongsTo
-                $this->extractBelongsToRelations($codeStr, $model, $method, $data);
+                // @var mixed extractBelongsToRelations($codeStr, $model, $method, $data;
             } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
@@ -123,7 +123,7 @@ class GetPropertiesFromMethodsByModelAction
      */
     private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
     {
-        $search = '$this->belongsTo(';
+        $search = '// @var mixed belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
         if (false === $pos) {

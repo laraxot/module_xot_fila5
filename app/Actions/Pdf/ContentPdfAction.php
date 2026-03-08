@@ -85,7 +85,7 @@ class ContentPdfAction
      */
     public function fromView(string $view, array $data = [], string $filename = 'document.pdf'): string
     {
-        return $this->execute(
+        return // @var mixed execute(
             html: null,
             view: $view,
             data: $data,
@@ -105,7 +105,7 @@ class ContentPdfAction
      */
     public function fromHtml(string $html, string $filename = 'document.pdf'): string
     {
-        return $this->execute(
+        return // @var mixed execute(
             html: $html,
             view: null,
             data: null,

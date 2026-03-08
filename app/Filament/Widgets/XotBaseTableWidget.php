@@ -27,7 +27,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     public function updateFilters(array $filters): void
     {
         // Forza refresh della tabella quando i filtri cambiano
-        $this->resetTable();
+        // @var mixed resetTable(;
     }
 
     /**
@@ -35,7 +35,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
      */
     public function tableOLD(Table $table): Table
     {
-        $query = $this->getTableQuery();
+        $query = // @var mixed getTableQuery(;
         if ($query instanceof Relation) {
             $query = $query->getQuery();
         }
@@ -43,7 +43,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
         /* @var Builder|null $query */
         return $table
             ->query($query)
-            ->columns($this->getTableColumns())
+            ->columns(// @var mixed getTableColumns(
             ->defaultSort('submitdate', 'desc')
             ->paginated([10, 25, 50, 100])
             ->poll('30s');
@@ -67,7 +67,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
     public function getTableSearch(): ?string
     {
-        $search = $this->tableSearch ?? null;
+        $search = // @var mixed tableSearch ?? null;
 
         if (! \is_string($search)) {
             return null;

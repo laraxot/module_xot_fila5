@@ -30,7 +30,7 @@ class ViewCopyAction extends XotBaseAction
             ->modalDescription('Are you sure you want to copy this view?')
             ->action(function (array $arguments, array $data): void {
                 // Implementation for copying view logic
-                $this->execute($arguments, $data);
+                // @var mixed execute($arguments, $data;
             });
     }
 

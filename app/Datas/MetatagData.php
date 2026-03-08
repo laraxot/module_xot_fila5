@@ -154,7 +154,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getBrandName(): string
     {
-        return $this->title;
+        return // @var mixed title;
     }
 
     /**
@@ -166,17 +166,17 @@ class MetatagData extends Data implements Wireable
     {
         try {
             /** @var string $path */
-            $path = app(AssetAction::class)->execute($this->logo_header);
+            $path = app(AssetAction::class)->execute(// @var mixed logo_header;
 
             return asset($path);
         } catch (\Throwable $e) {
-            return asset($this->logo_header);
+            return asset(// @var mixed logo_header;
         }
     }
 
     public function getBrandLogoPath(): string
     {
-        return app(AssetPathAction::class)->execute($this->logo_header);
+        return app(AssetPathAction::class)->execute(// @var mixed logo_header;
     }
 
     /**
@@ -187,11 +187,11 @@ class MetatagData extends Data implements Wireable
     {
         try {
             /** @var string $path */
-            $path = app(AssetAction::class)->execute($this->logo_header_dark);
+            $path = app(AssetAction::class)->execute(// @var mixed logo_header_dark;
 
             return asset($path);
         } catch (\Throwable $e) {
-            return asset($this->logo_header_dark);
+            return asset(// @var mixed logo_header_dark;
         }
     }
 
@@ -201,7 +201,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getBrandLogoHeight(): string
     {
-        return $this->logo_height;
+        return // @var mixed logo_height;
     }
 
     /**
@@ -216,7 +216,7 @@ class MetatagData extends Data implements Wireable
         try {
             // Get the asset path using AssetAction (same as getBrandLogo)
             /** @var string $assetPath */
-            $assetPath = app(AssetAction::class)->execute($this->logo_header);
+            $assetPath = app(AssetAction::class)->execute(// @var mixed logo_header;
 
             // Get the physical file path
             $physicalPath = public_path($assetPath);
@@ -230,7 +230,7 @@ class MetatagData extends Data implements Wireable
             $fileContent = File::get($physicalPath);
 
             // Get MIME type
-            $mimeType = $this->getMimeTypeFromPath($physicalPath);
+            $mimeType = // @var mixed getMimeTypeFromPath($physicalPath;
 
             // Convert to base64
             $base64Content = base64_encode($fileContent);
@@ -240,10 +240,10 @@ class MetatagData extends Data implements Wireable
         } catch (\Throwable $e) {
             // Fallback: try with the raw logo_header path
             try {
-                $fallbackPath = public_path($this->logo_header);
+                $fallbackPath = public_path(// @var mixed logo_header;
                 if (File::exists($fallbackPath)) {
                     $fileContent = File::get($fallbackPath);
-                    $mimeType = $this->getMimeTypeFromPath($fallbackPath);
+                    $mimeType = // @var mixed getMimeTypeFromPath($fallbackPath;
                     $base64Content = base64_encode($fileContent);
 
                     return "data:{$mimeType};base64,{$base64Content}";
@@ -253,7 +253,7 @@ class MetatagData extends Data implements Wireable
                 Log::warning('Could not generate base64 logo', [
                     'original_error' => $e->getMessage(),
                     'fallback_error' => $fallbackException->getMessage(),
-                    'logo_header' => $this->logo_header,
+                    'logo_header' => // @var mixed logo_header,
                 ]);
             }
 
@@ -270,7 +270,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getThemeColors(): array
     {
-        $filamentColors = $this->getFilamentColors();
+        $filamentColors = // @var mixed getFilamentColors(;
         $defaults = [];
 
         // Convert Filament color arrays to simple string format
@@ -282,7 +282,7 @@ class MetatagData extends Data implements Wireable
         }
 
         $custom = [];
-        foreach ($this->colors as $key => $value) {
+        foreach (// @var mixed colors as $key => $value
             if (Arr::has($value, 'color')) {
                 $custom[$key] = (string) $value['color'];
             }
@@ -300,11 +300,11 @@ class MetatagData extends Data implements Wireable
     public function getThemeSettings(): array
     {
         return [
-            'color_primary' => $this->color_primary,
-            'color_title' => $this->color_title,
-            'color_megamenu' => $this->color_megamenu,
-            'color_hamburger' => $this->color_hamburger,
-            'color_banner' => $this->color_banner,
+            'color_primary' => // @var mixed color_primary,
+            'color_title' => // @var mixed color_title,
+            'color_megamenu' => // @var mixed color_megamenu,
+            'color_hamburger' => // @var mixed color_hamburger,
+            'color_banner' => // @var mixed color_banner,
         ];
     }
 
@@ -314,7 +314,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getBrandDescription(): ?string
     {
-        return $this->description;
+        return // @var mixed description;
     }
 
     /**
@@ -326,9 +326,9 @@ class MetatagData extends Data implements Wireable
     public function getBrandSocialLinks(): array
     {
         return [
-            'facebook' => $this->facebook_href,
-            'twitter' => $this->twitter_href,
-            'youtube' => $this->youtube_href,
+            'facebook' => // @var mixed facebook_href,
+            'twitter' => // @var mixed twitter_href,
+            'youtube' => // @var mixed youtube_href,
         ];
     }
 
@@ -341,7 +341,7 @@ class MetatagData extends Data implements Wireable
     public function getBrandDimensions(): array
     {
         return [
-            'logo_height' => $this->logo_height,
+            'logo_height' => // @var mixed logo_height,
         ];
     }
 
@@ -354,9 +354,9 @@ class MetatagData extends Data implements Wireable
     public function getBrandSettings(): array
     {
         return [
-            'fastlink' => $this->fastlink,
-            'hide_megamenu' => $this->hide_megamenu,
-            'hero_type' => $this->hero_type,
+            'fastlink' => // @var mixed fastlink,
+            'hide_megamenu' => // @var mixed hide_megamenu,
+            'hero_type' => // @var mixed hero_type,
         ];
     }
 
@@ -366,16 +366,16 @@ class MetatagData extends Data implements Wireable
     public function getFavicon(): string
     {
         try {
-            return app(AssetAction::class)->execute($this->favicon);
+            return app(AssetAction::class)->execute(// @var mixed favicon;
         } catch (\Throwable $e) {
-            return asset($this->favicon);
+            return asset(// @var mixed favicon;
         }
     }
 
     public function getFaviconBySize(string $size, string $format): string
     {
         $xot = XotData::make();
-        // return app(AssetAction::class)->execute($this->favicon, $size, $format);
+        // return app(AssetAction::class)->execute(// @var mixed favicon, $size, $format;
         $file = 'favicon-'.$size.'.'.$format;
 
         return $xot->getPubThemePublicAsset($file);
@@ -386,9 +386,9 @@ class MetatagData extends Data implements Wireable
      */
     public function getColors(): array
     {
-        return $this->colors;
+        return // @var mixed colors;
 
-        // return $this->getThemeColors();
+        // return // @var mixed getThemeColors(;
     }
 
     /**
@@ -416,11 +416,11 @@ class MetatagData extends Data implements Wireable
      */
     public function getAllColors(): array
     {
-        $filamentColors = $this->getFilamentColors();
+        $filamentColors = // @var mixed getFilamentColors(;
         $customColors = [];
 
         // Convert custom color format to Filament color format
-        foreach ($this->colors as $key => $value) {
+        foreach (// @var mixed colors as $key => $value
             if (is_array($value) && Arr::has($value, 'color')) {
                 // Convert single color value to array format for Filament compatibility
                 $colorValue = (string) $value['color'];
@@ -439,12 +439,12 @@ class MetatagData extends Data implements Wireable
     public function getIcons(): array
     {
         return [
-            'logo' => $this->logo,
-            'logo_square' => $this->logo_square,
-            'logo_header' => $this->logo_header,
-            'logo_header_dark' => $this->logo_header_dark,
-            'logo_footer' => $this->logo_footer,
-            'favicon' => $this->favicon,
+            'logo' => // @var mixed logo,
+            'logo_square' => // @var mixed logo_square,
+            'logo_header' => // @var mixed logo_header,
+            'logo_header_dark' => // @var mixed logo_header_dark,
+            'logo_footer' => // @var mixed logo_footer,
+            'favicon' => // @var mixed favicon,
         ];
     }
 
@@ -456,8 +456,8 @@ class MetatagData extends Data implements Wireable
     public function getAlignment(): array
     {
         return [
-            'hide_megamenu' => $this->hide_megamenu,
-            'hero_type' => $this->hero_type,
+            'hide_megamenu' => // @var mixed hide_megamenu,
+            'hero_type' => // @var mixed hero_type,
         ];
     }
 
@@ -468,7 +468,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getSettings(): array
     {
-        return $this->getBrandSettings();
+        return // @var mixed getBrandSettings(;
     }
 
     /**
@@ -479,17 +479,17 @@ class MetatagData extends Data implements Wireable
     public function getMetaValues(): array
     {
         return [
-            'title' => $this->title,
-            'sitename' => $this->sitename,
-            'subtitle' => $this->subtitle,
-            'generator' => $this->generator,
-            'charset' => $this->charset,
-            'author' => $this->author,
-            'description' => $this->description,
-            'keywords' => $this->keywords,
-            'nome_regione' => $this->nome_regione,
-            'nome_comune' => $this->nome_comune,
-            'site_title' => $this->site_title,
+            'title' => // @var mixed title,
+            'sitename' => // @var mixed sitename,
+            'subtitle' => // @var mixed subtitle,
+            'generator' => // @var mixed generator,
+            'charset' => // @var mixed charset,
+            'author' => // @var mixed author,
+            'description' => // @var mixed description,
+            'keywords' => // @var mixed keywords,
+            'nome_regione' => // @var mixed nome_regione,
+            'nome_comune' => // @var mixed nome_comune,
+            'site_title' => // @var mixed site_title,
         ];
     }
 
@@ -500,7 +500,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getSocialCards(): array
     {
-        return $this->getBrandSocialLinks();
+        return // @var mixed getBrandSocialLinks(;
     }
 
     /**
@@ -511,11 +511,11 @@ class MetatagData extends Data implements Wireable
     public function getOpenGraph(): array
     {
         return [
-            'title' => $this->title,
-            'description' => $this->description,
+            'title' => // @var mixed title,
+            'description' => // @var mixed description,
             'type' => 'website',
             'url' => url()->current(),
-            'site_name' => $this->sitename,
+            'site_name' => // @var mixed sitename,
         ];
     }
 
@@ -528,9 +528,9 @@ class MetatagData extends Data implements Wireable
     {
         return [
             'card' => 'summary_large_image',
-            'title' => $this->title,
-            'description' => $this->description,
-            'site' => $this->twitter_href,
+            'title' => // @var mixed title,
+            'description' => // @var mixed description,
+            'site' => // @var mixed twitter_href,
         ];
     }
 
@@ -539,8 +539,8 @@ class MetatagData extends Data implements Wireable
      */
     public function getTitle(): string
     {
-        // return $this->getBrandName();
-        return $this->title;
+        // return // @var mixed getBrandName(;
+        return // @var mixed title;
     }
 
     /**
@@ -548,7 +548,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getLogoHeader(): string
     {
-        return $this->getBrandLogo();
+        return // @var mixed getBrandLogo(;
     }
 
     /**
@@ -556,7 +556,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getLogoHeaderDark(): string
     {
-        return $this->getDarkModeBrandLogo();
+        return // @var mixed getDarkModeBrandLogo(;
     }
 
     /**
@@ -564,7 +564,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getLogoHeight(): string
     {
-        return $this->getBrandLogoHeight();
+        return // @var mixed getBrandLogoHeight(;
     }
 
     public function getBrandLogoSvg(): string
@@ -577,7 +577,7 @@ class MetatagData extends Data implements Wireable
 
     public function getDescription(int $limit = 160): string
     {
-        return $this->description ?? '';
+        return // @var mixed description ?? '';
     }
 
     public function getKeywords(): string
@@ -661,10 +661,10 @@ class MetatagData extends Data implements Wireable
             return $this;
         }
 
-        if (empty($this->title)) {
-            $this->title = $title;
+        if (empty(// @var mixed title
+            // @var mixed title = $title;
         } else {
-            $this->title = $title.' - '.$this->title;
+            // @var mixed title = $title.' - '.$this->title;
         }
 
         return $this;
@@ -683,10 +683,10 @@ class MetatagData extends Data implements Wireable
             return $this;
         }
 
-        if (empty($this->description)) {
-            $this->description = $description;
+        if (empty(// @var mixed description
+            // @var mixed description = $description;
         } else {
-            $this->description = $description.' '.$this->description;
+            // @var mixed description = $description.' '.$this->description;
         }
 
         return $this;

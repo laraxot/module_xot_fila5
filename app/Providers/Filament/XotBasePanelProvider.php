@@ -34,8 +34,8 @@ abstract class XotBasePanelProvider extends PanelProvider
 
     public function panel(Panel $panel): Panel
     {
-        $moduleNamespace = $this->getModuleNamespace();
-        $moduleLow = Str::lower($this->module);
+        $moduleNamespace = // @var mixed getModuleNamespace(;
+        $moduleLow = Str::lower(// @var mixed module;
         $mainModuleLow = Str::lower(XotData::make()->main_module); // Renamed to camelCase
         $default = $mainModuleLow === $moduleLow;
 
@@ -51,10 +51,10 @@ abstract class XotBasePanelProvider extends PanelProvider
         $panel = app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
         // ---------------------
         $panel->maxContentWidth('full')
-            ->topNavigation($this->topNavigation)
-            ->globalSearch($this->globalSearch)
+            ->topNavigation(// @var mixed topNavigation
+            ->globalSearch(// @var mixed globalSearch
             ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
-            ->navigation($this->navigation)
+            ->navigation(// @var mixed navigation
             // ->tenant($teamClass)
             // ->tenant($teamClass,ownershipRelationship:'users')
             // ->tenant($teamClass)
@@ -62,19 +62,19 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->path($moduleLow.'/admin')
             // Configure Filament discovery for module components (unconditional; dirs are expected to exist)
             ->discoverResources(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Resources'),
+                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Resources'
                 for: sprintf('%s\\Filament\\Resources', $moduleNamespace),
             )
             ->discoverPages(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Pages'),
+                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Pages'
                 for: sprintf('%s\\Filament\\Pages', $moduleNamespace),
             )
             ->discoverWidgets(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
+                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Widgets'
                 for: sprintf('%s\\Filament\\Widgets', $moduleNamespace),
             )
             ->discoverClusters(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
+                in: base_path('Modules/'.// @var mixed module.'/app/Filament/Clusters'
                 for: sprintf('%s\\Filament\\Clusters', $moduleNamespace),
             )
             ->middleware([
@@ -99,6 +99,6 @@ abstract class XotBasePanelProvider extends PanelProvider
     {
         Assert::string($ns = config('modules.namespace'));
 
-        return $ns.'\\'.$this->module;
+        return $ns.'\\'.// @var mixed module;
     }
 }

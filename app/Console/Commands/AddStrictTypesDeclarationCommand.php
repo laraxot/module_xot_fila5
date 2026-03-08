@@ -32,30 +32,30 @@ class AddStrictTypesDeclarationCommand extends Command
     public function handle(AddStrictTypesDeclarationAction $action): int
     {
         $modulePath = base_path('Modules');
-        $moduleOption = $this->option('module');
-        $dryRun = $this->option('dry-run');
+        $moduleOption = // @var mixed option('module';
+        $dryRun = // @var mixed option('dry-run';
 
         if ($moduleOption && is_string($moduleOption)) {
             $modulePath .= '/'.$moduleOption;
             if (! File::isDirectory($modulePath)) {
-                $this->error("Il modulo {$moduleOption} non esiste");
+                // @var mixed error("Il modulo {$moduleOption} non esiste";
 
                 return 1;
             }
         }
 
-        $files = $this->findPhpFiles($modulePath);
+        $files = // @var mixed findPhpFiles($modulePath;
         $count = 0;
 
         foreach ($files as $file) {
             Assert::isInstanceOf($file, \SplFileInfo::class);
-            if ($this->shouldProcessFile($file)) {
+            if (// @var mixed shouldProcessFile($file
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
                     if (false === $fileName) {
                         $fileName = $file->getPathname();
                     }
-                    $this->info("Verrebbe processato: {$fileName}");
+                    // @var mixed info("Verrebbe processato: {$fileName}";
                     ++$count;
 
                     continue;
@@ -71,16 +71,16 @@ class AddStrictTypesDeclarationCommand extends Command
 
                 try {
                     $action->execute($path);
-                    $this->info("Aggiunta dichiarazione strict_types a: {$path}");
+                    // @var mixed info("Aggiunta dichiarazione strict_types a: {$path}";
                     ++$count;
                 } catch (\Exception $e) {
-                    $this->error("Errore nel processare {$path}: ".$e->getMessage());
+                    // @var mixed error("Errore nel processare {$path}: ".$e->getMessage(;
                 }
             }
         }
 
         $action = $dryRun ? 'Trovati' : 'Processati';
-        $this->info("{$action} {$count} file");
+        // @var mixed info("{$action} {$count} file";
 
         return 0;
     }
@@ -106,7 +106,7 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         // Verifica se il file è in un percorso escluso
-        foreach ($this->excludedPaths as $excludedPath) {
+        foreach (// @var mixed excludedPaths as $excludedPath
             if (str_contains($path, "/{$excludedPath}/")) {
                 return false;
             }

@@ -65,7 +65,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
     public function __construct()
     {
-        $this->resolveView();
+        // @var mixed resolveView(;
     }
 
     /**
@@ -85,10 +85,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      */
     public function form(Schema $schema): Schema
     {
-        $schema = $schema->components($this->getFormSchema());
+        $schema = $schema->components(// @var mixed getFormSchema(;
         $schema->statePath('data');
 
-        $model = $this->getFormModel();
+        $model = // @var mixed getFormModel(;
         if (null !== $model) {
             // Ensure model is compatible with Schema::model()
             if (\is_string($model)) {
@@ -107,7 +107,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
     public function getFormFill(): array
     {
-        $model = $this->getFormModel();
+        $model = // @var mixed getFormModel(;
         if (null === $model) {
             return [];
         }
@@ -220,7 +220,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
             ->toString();
 
         /** @var array<Htmlable|string> $schemaComponents */
-        $schemaComponents = $this->$schema();
+        $schemaComponents = // @var mixed $schema(;
 
         return Step::make($name)->schema($schemaComponents);
     }
@@ -229,18 +229,18 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         $defaultView = 'xot::filament.widgets.base';
 
-        if ($this->view !== $defaultView && view()->exists($this->view)) {
+        if (// @var mixed view !== $defaultView && view(
             return;
         }
 
         try {
             $view = app(GetViewByClassAction::class)->execute(static::class);
             if (view()->exists($view)) {
-                $this->view = $view;
+                // @var mixed view = $view;
             }
         } catch (\Exception $e) {
             /* @phpstan-ignore identical.alwaysTrue */
-            if ($this->view === $defaultView) {
+            if (// @var mixed view === $defaultView
                 throw $e;
             }
         }

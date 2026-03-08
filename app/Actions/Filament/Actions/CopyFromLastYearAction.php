@@ -31,7 +31,7 @@ class CopyFromLastYearAction extends XotBaseAction
             ->modalDescription('Are you sure you want to copy data from the previous year?')
             ->action(function (array $arguments, array $data): void {
                 // Implementation for copying from last year logic
-                $this->execute($arguments, $data);
+                // @var mixed execute($arguments, $data;
             });
     }
 

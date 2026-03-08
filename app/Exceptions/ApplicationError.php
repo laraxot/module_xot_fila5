@@ -24,19 +24,19 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
     public function toArray(): array
     {
         return [
-            'error' => $this->error,
-            'help' => $this->help,
+            'error' => // @var mixed error,
+            'help' => // @var mixed help,
         ];
     }
 
     #[\Override]
     public function jsonSerialize(): array
     {
-        return $this->toArray();
+        return // @var mixed toArray(;
     }
 
     public function toJson($options = 0): string
     {
-        return json_encode($this->jsonSerialize(), $options);
+        return json_encode(// @var mixed jsonSerialize(;
     }
 }
