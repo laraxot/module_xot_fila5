@@ -16,10 +16,10 @@ abstract class XotBaseTableAction extends Action
 {
     public function getRecord(bool $withDefault = true): ?Model
     {
-        if (// @var mixed record instanceof \Closure
+        if ($record instanceof \Closure
             return null;
         }
 
-        return // @var mixed record;
+        return $record;
     }
 }

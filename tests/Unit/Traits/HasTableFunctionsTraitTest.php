@@ -56,7 +56,7 @@ it('has default resource slug', function (): void {
         // Accessing protected method via reflection or public wrapper
         public function getSlug(): string
         {
-            return // @var mixed getResourceSlug(;
+            return $this->getResourceSlug();
         }
     };
 

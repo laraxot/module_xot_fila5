@@ -15,22 +15,22 @@ trait EnumTrait
 
     public function getLabel(): string
     {
-        return // @var mixed transClass(static::class, $this->value.'.label';
+        return $this->transClass(static::class, $this->value.'.label');
     }
 
     public function getColor(): string
     {
-        return // @var mixed transClass(static::class, $this->value.'.color';
+        return $this->transClass(static::class, $this->value.'.color');
     }
 
     public function getIcon(): string
     {
-        return // @var mixed transClass(static::class, $this->value.'.icon';
+        return $this->transClass(static::class, $this->value.'.icon');
     }
 
     public function getDescription(): string
     {
-        return // @var mixed transClass(static::class, $this->value.'.description';
+        return $this->transClass(static::class, $this->value.'.description');
     }
 
     /**
@@ -79,7 +79,7 @@ trait EnumTrait
      * ```php
      * $address_components = Place::$address_components;
      * foreach ($address_components as $el) {
-     *     if (! // @var mixed hasColumn($el
+     *     if (! $this->hasColumn($el
      *         $table->string($el)->nullable();
      *     }
      * }
@@ -88,13 +88,13 @@ trait EnumTrait
      * Usage in migrations:
      * ```php
      * // In CREATE block (no hasColumn checks needed):
-     * // @var mixed tableCreate(function (Blueprint $table
+     * $this->tableCreate(function (Blueprint $table
      *     $table->id();
      *     ContactTypeEnum::columns($table); // migration = null, adds all
      * });
      *
      * // In UPDATE block (with hasColumn checks):
-     * // @var mixed tableUpdate(function (Blueprint $table
+     * $this->tableUpdate(function (Blueprint $table
      *     ContactTypeEnum::columns($table, $this); // loops with checks
      * });
      * ```

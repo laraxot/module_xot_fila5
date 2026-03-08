@@ -67,8 +67,8 @@ class ExportXlsByCollection
         $spreadsheet = new Spreadsheet();
         $sheet = $spreadsheet->getActiveSheet();
 
-        // @var mixed writeHeader($sheet, $fields;
-        // @var mixed writeRows($sheet, $rows, $fields;
+        $this->writeHeader($sheet, $fields);
+        $this->writeRows($sheet, $rows, $fields);
 
         $writer = new Xlsx($spreadsheet);
         $writer->save($filename);
@@ -101,7 +101,7 @@ class ExportXlsByCollection
         $row = 2;
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
-                $value = // @var mixed extractValue($data, $field;
+                $value = $this->extractValue($data, $field);
                 $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
             }
             ++$row;

@@ -30,7 +30,7 @@ class RecordMail extends Mailable
      */
     public function __construct(array $data)
     {
-        // @var mixed recordData = $data;
+        $recordData = $data;
     }
 
     /**
@@ -40,6 +40,6 @@ class RecordMail extends Mailable
      */
     public function build(): self
     {
-        return // @var mixed view('xot::emails.record';
+        return $this->view('xot::emails.record');
     }
 }

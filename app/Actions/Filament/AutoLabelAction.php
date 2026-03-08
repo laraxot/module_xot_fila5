@@ -59,7 +59,7 @@ class AutoLabelAction
         Assert::stringNotEmpty($trans_key, 'La chiave di traduzione non può essere vuota');
 
         // Otteniamo il nome del componente
-        $componentName = // @var mixed getComponentName($component;
+        $componentName = $this->getComponentName($component);
         Assert::stringNotEmpty($componentName, 'Il nome del componente non può essere vuoto');
 
         // Costruiamo la chiave per l'etichetta

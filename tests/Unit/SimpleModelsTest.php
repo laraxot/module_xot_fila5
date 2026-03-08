@@ -31,5 +31,5 @@ it('can create a test module', function () {
 });
 
 it('can run migrations', function () {
-    // @var mixed artisan('migrate', ['--env' => 'testing', '--force' => true];
+    $this->artisan('migrate', ['--env' => 'testing', '--force' => true]);
 });

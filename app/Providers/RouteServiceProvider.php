@@ -43,9 +43,9 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot();
         $router = app(Router::class);
 
-        // // @var mixed registerLang(; // ✅ Temporaneamente disabilitato per debug
-        // @var mixed registerRoutePattern($router;
-        // @var mixed registerMyMiddleware($router;
+        // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
+        $this->registerRoutePattern($router);
+        $this->registerMyMiddleware($router);
     }
 
     /**
@@ -53,8 +53,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map(): void
     {
-        // @var mixed mapApiRoutes(;
-        // @var mixed mapWebRoutes(;
+        $this->mapApiRoutes();
+        $this->mapWebRoutes();
     }
 
     public function registerMyMiddleware(Router $router): void
@@ -69,7 +69,7 @@ class RouteServiceProvider extends ServiceProvider
         $user = request()->user();
         $lang = app()->getLocale();
         if ($user instanceof Model) {
-            $userLang = $user->getAttribute('lang');
+            $userLang = $user->$this->getAttribute('lang');
             if (is_string($userLang) && '' !== $userLang) {
                 $lang = $userLang;
             }
@@ -128,7 +128,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes(): void
     {
-        Route::middleware('web')->namespace(// @var mixed moduleNamespace;
+        Route::middleware('web')->namespace($moduleNamespace);
     }
 
     /**
@@ -139,7 +139,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('api')
             ->middleware('api')
-            ->namespace(// @var mixed moduleNamespace
+            ->namespace($moduleNamespace
             ->group(base_path('Modules/Xot/routes/api.php'));
     }
 

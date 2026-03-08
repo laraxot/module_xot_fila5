@@ -50,7 +50,7 @@ class SafeIntCastAction
 
         // Se è una stringa, prova a convertirla
         if (is_string($value)) {
-            return // @var mixed parseStringToInt($value, $default;
+            return $this->parseStringToInt($value, $default);
         }
 
         // Se è un booleano, convertilo (true = 1, false = 0)
@@ -60,12 +60,12 @@ class SafeIntCastAction
 
         // Se è un array e ha un solo elemento numerico
         if (is_array($value) && 1 === count($value)) {
-            return // @var mixed execute(reset($value;
+            return $this->execute(reset($value));
         }
 
         // Se è un oggetto con metodo __toString, prova a convertirlo
         if (is_object($value) && method_exists($value, '__toString')) {
-            return // @var mixed parseStringToInt((string;
+            return $this->parseStringToInt((string));
         }
 
         // Per tutti gli altri tipi, restituisci il default
@@ -97,7 +97,7 @@ class SafeIntCastAction
      */
     public function executeWithRange(mixed $value, int $min, int $max, ?int $default = null): int
     {
-        $int = // @var mixed execute($value, $default;
+        $int = $this->execute($value, $default);
 
         // Clamp il valore tra min e max
         return max($min, min($max, $int));
@@ -128,7 +128,7 @@ class SafeIntCastAction
      */
     public function executeAsId(mixed $value, ?int $default = 1): int
     {
-        $int = // @var mixed execute($value, $default;
+        $int = $this->execute($value, $default);
 
         return max(1, $int);
     }

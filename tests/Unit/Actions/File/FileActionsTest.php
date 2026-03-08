@@ -23,7 +23,7 @@ test('fix path action works', function () {
 });
 
 test('view path action works', function () {
-    // @var mixed mock(GetViewNameSpacePathAction::class
+    $this->mock(GetViewNameSpacePathAction::class
         ->shouldReceive('execute')
         ->with('test_ns')
         ->andReturn('/view/path');

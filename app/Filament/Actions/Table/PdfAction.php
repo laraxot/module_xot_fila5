@@ -17,7 +17,7 @@ class PdfAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
-        // @var mixed translateLabel(
+        $this->translateLabel(
             ->tooltip('pdf')
             ->openUrlInNewTab()
             // ->icon('heroicon-o-cloud-arrow-down')

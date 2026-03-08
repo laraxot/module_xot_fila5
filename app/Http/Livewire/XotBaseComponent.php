@@ -49,7 +49,7 @@ abstract class XotBaseComponent extends Component
     public function render(): Renderable
     {
         // per fare copia ed incolla
-        $view = // @var mixed getView(;
+        $view = $this->getView();
         $view_params = [
             'view' => $view,
         ];

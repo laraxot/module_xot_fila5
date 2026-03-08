@@ -17,9 +17,9 @@ use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;
 
 describe('HasExtraTrait', function () {
     beforeEach(function () {
-        // @var mixed testModel = new TestModelHasExtra(;
+        $testModel = new TestModelHasExtra();
 
-        // @var mixed mockExtra = new class extends Model implements ExtraContract {
+        $mockExtra = new class extends Model implements ExtraContract {
             public $extra_attributes;
 
             public function __construct()
@@ -29,7 +29,7 @@ describe('HasExtraTrait', function () {
 
             public function model()
             {
-                return // @var mixed morphTo(;
+                return $this->morphTo();
             }
         };
     });
@@ -40,12 +40,12 @@ describe('HasExtraTrait', function () {
     });
 
     it('has extra relationship method', function () {
-        expect(method_exists(// @var mixed testModel, 'extra';
+        expect(method_exists($testModel, 'extra'));
     });
 
     it('returns null for non-existent extra', function () {
-        // @var mixed testModel->setRelation('extra', null;
-        $result = // @var mixed testModel->getExtra('non_existent_key';
+        $testModel->setRelation('extra', null);
+        $result = $testModel->getExtra('non_existent_key');
         expect($result)->toBeNull();
     });
 
@@ -54,13 +54,13 @@ describe('HasExtraTrait', function () {
         // Since we can't easily mock SchemalessAttributes without a DB,
         // we'll just test the null path if we don't have a full setup.
         // But let's try to set the relation
-        // @var mixed testModel->setRelation('extra', $extra;
+        $testModel->setRelation('extra', $extra);
 
-        $result = // @var mixed testModel->getExtra('test_key';
+        $result = $testModel->getExtra('test_key');
         expect($result)->toBeNull(); // Because extra_attributes is empty/null
     });
 
     it('has setExtra method', function () {
-        expect(method_exists(// @var mixed testModel, 'setExtra';
+        expect(method_exists($testModel, 'setExtra'));
     });
 });

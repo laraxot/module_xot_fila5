@@ -55,7 +55,7 @@ class EnvData extends Data implements Wireable
 
         foreach ($data as $k => $v) {
             if (// @var mixed $k !== $v && (is_bool($v
-                $env_content = // @var mixed updateVar($k, $v, $env_content;
+                $env_content = $this->updateVar($k, $v, $env_content);
             }
         }
 
@@ -65,7 +65,7 @@ class EnvData extends Data implements Wireable
     public function updateVar(string $key, int|bool|string $value, string $env_content): string
     {
         $key = str($key)->upper()->toString();
-        $replace = // @var mixed getLine($key, $value;
+        $replace = $this->getLine($key, $value);
         $pos_start = mb_strpos($env_content, $key.'=');
         if (false === $pos_start) {
             // throw new \Exception('['.__LINE__.']['.class_basename($this).']');

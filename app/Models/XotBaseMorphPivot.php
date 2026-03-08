@@ -83,17 +83,17 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
      */
     public function getConnectionName(): ?string
     {
-        if (isset(// @var mixed connection
-            if (is_string(// @var mixed connection
-                return // @var mixed connection;
+        if (isset($connection
+            if (is_string($connection
+                return $connection;
             }
 
-            if (// @var mixed connection instanceof \BackedEnum
-                return (string) // @var mixed connection->value;
+            if ($connection instanceof \BackedEnum
+                return (string) $connection->value;
             }
 
-            if (// @var mixed connection instanceof \UnitEnum
-                return // @var mixed connection->name;
+            if ($connection instanceof \UnitEnum
+                return $connection->name;
             }
         }
 

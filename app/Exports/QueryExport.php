@@ -37,12 +37,12 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
     {
-        // @var mixed query = $query;
-        // @var mixed transKey = $transKey;
-        // @var mixed fields = $fields;
+        $query = $query;
+        $transKey = $transKey;
+        $fields = $fields;
 
         /*
-         * // @var mixed headings = collect($query->first(
+         * $headings = collect($query->first(
          * ->keys()
          * ->map(
          * function ($item) use ($transKey) {
@@ -64,8 +64,8 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     public function getHead(): Collection
     {
-        if (! empty(// @var mixed fields
-            return collect(array_values(// @var mixed fields
+        if (! empty($fields
+            return collect(array_values($fields
                 ->map(
                     static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
                 );
@@ -73,7 +73,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         /**
          * @var Arrayable<(int|string), mixed>|iterable<(int|string), mixed>|null
          */
-        $first = // @var mixed query->first(;
+        $first = $query->first();
         if (null === $first) {
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
@@ -82,7 +82,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         }
 
         /** @var Collection<int, int|string> $result */
-        $result = collect(array_keys(// @var mixed normalizeRow($first
+        $result = collect(array_keys($normalizeRow($first
             ->map(
                 static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
             );
@@ -93,7 +93,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public function headings(): array
     {
         /** @var Collection<int|string, mixed> $headingsWithKeys */
-        $headingsWithKeys = // @var mixed getHead(
+        $headingsWithKeys = $this->getHead(
             ->values()
             ->mapWithKeys(
                 static function (int|string $value, int $key): array {
@@ -103,7 +103,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
                 },
             );
 
-        $translated = app(TransCollectionAction::class)->execute($headingsWithKeys, // @var mixed transKey;
+        $translated = app(TransCollectionAction::class)->execute($headingsWithKeys, $transKey);
 
         return $translated->toArray();
     }
@@ -113,7 +113,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     public function query(): QueryBuilder|EloquentBuilder|Relation
     {
-        return // @var mixed query;
+        return $query;
 
         // ->orderBy('id');
     }
@@ -128,13 +128,13 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     public function map(mixed $row): array
     {
-        $rowArray = // @var mixed normalizeRow($row;
+        $rowArray = $this->normalizeRow($row);
 
-        if (empty(// @var mixed fields
+        if (empty($fields
             return $rowArray;
         }
 
-        return collect(// @var mixed fields
+        return collect($fields
             ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
                 $keyString = \is_string($field) ? $field : (string) $field;
 

@@ -133,12 +133,12 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        if (! isset(// @var mixed published_at
+        if (! isset($published_at
             return false;
         }
 
-        return null !== // @var mixed published_at
-               && // @var mixed published_at->isPast(;
+        return null !== $published_at
+               && $published_at->isPast();
     }
 
     /**
@@ -146,7 +146,7 @@ trait HasCommonScopes
      */
     public function isDraft(): bool
     {
-        return ! // @var mixed isPublished(;
+        return ! $this->isPublished();
     }
 
     /**
@@ -154,6 +154,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-        return isset(// @var mixed is_active;
+        return isset($is_active);
     }
 }

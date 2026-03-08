@@ -7,6 +7,8 @@ namespace Modules\Xot\Datas;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
@@ -14,9 +16,6 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-
-use function Safe\realpath;
-
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
@@ -35,14 +34,12 @@ class XotData extends Data implements Wireable
 
     public string $adm_home = '01';
 
-    public ?string $adm_theme = ''; // ' => 'AdminLTE',
+    public ?string $adm_theme = '';
 
-    // public bool $enable_ads;//' => '1',
     public string $primary_lang = 'it';
 
-    public string $pub_theme;
+    public string $pub_theme = 'One';
 
-    // ' => 'One',
     public string $search_action = 'it/videos';
 
     public bool $show_trans_key = false;
@@ -67,13 +64,13 @@ class XotData extends Data implements Wireable
 
     public bool $register_collective = false;
 
-    public string $team_class = 'Modules\User\Models\Team'; // = Team::class;
+    public string $team_class = 'Modules\User\Models\Team';
 
-    public string $tenant_class = 'Modules\User\Models\Tenant'; // = Team::class;
+    public string $tenant_class = 'Modules\User\Models\Tenant';
 
-    public string $membership_class = 'Modules\User\Models\Membership'; // = Membership::class;
+    public string $membership_class = 'Modules\User\Models\Membership';
 
-    public string $tenant_pivot_class = 'Modules\User\Models\TenantUser'; // = Membership::class;
+    public string $tenant_pivot_class = 'Modules\User\Models\TenantUser';
 
     public ?string $super_admin = null;
 
@@ -96,7 +93,7 @@ class XotData extends Data implements Wireable
 
     public function isSuperAdmin(): bool
     {
-        $profile = // @var mixed getProfileModel(;
+        $profile = $this->getProfileModel();
         if ($profile->isSuperAdmin()) {
             return true;
         }
@@ -122,98 +119,76 @@ class XotData extends Data implements Wireable
         return $class;
     }
 
-    public function getUserByEmail(string $email): UserContract
-    {
-        $user_class = // @var mixed getUserClass(;
-        $userInstance = new $user_class();
-        if (! in_array('email', $userInstance->getFillable(), true)) {
-            throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
-        }
-        $user = $user_class::firstOrCreate(['email' => $email]);
-        /*
-         * if (! $user) {
-         * throw new \Exception('user not found for email '.$email);
-         * }
-         */
-        Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
-
-        return $user;
-    }
-
     /**
      * @return class-string<Model&TeamContract>
      */
     public function getTeamClass(): string
     {
-        Assert::classExists(// @var mixed team_class, '['.__LINE__.']['.class_basename($this;
-        // Assert::isInstanceOf($team_class, Model::class, '['.__LINE__.']['.class_basename($this).']');
-        Assert::isAOf(
-            // @var mixed team_class,
-            Model::class,
-            '['.__LINE__.']['.class_basename($this).']['.// @var mixed team_class.']',
-        );
+        Assert::classExists($this->team_class, '['.__LINE__.']['.class_basename($this).']');
         Assert::implementsInterface(
-            // @var mixed team_class,
+            $this->team_class,
             TeamContract::class,
-            '['.// @var mixed team_class.']['.__LINE__.']['.class_basename($this
+            '['.__LINE__.']['.class_basename($this).']['.$this->team_class.']',
+        );
+        Assert::isAOf(
+            $this->team_class,
+            Model::class,
+            '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        return // @var mixed team_class;
+        return $this->team_class;
     }
 
     /**
-     * Undocumented function.
-     *
      * @return class-string<Model&TenantContract>
      */
     public function getTenantClass(): string
     {
-        Assert::classExists(
-            // @var mixed tenant_class,
-            '['.// @var mixed tenant_class.']['.__LINE__.']['.class_basename($this
-        );
-        // Assert::isInstanceOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']');
-        // Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface(
-            // @var mixed tenant_class,
+            $this->tenant_class,
             TenantContract::class,
-            '['.// @var mixed tenant_class.']['.__LINE__.']['.class_basename($this
+            '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']',
         );
         Assert::isAOf(
-            // @var mixed tenant_class,
+            $this->tenant_class,
             Model::class,
-            '['.__LINE__.']['.class_basename($this).']['.// @var mixed tenant_class.']',
+            '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']',
+        );
+        Assert::classExists(
+            $this->tenant_class,
+            '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-        return // @var mixed tenant_class;
+        return $this->tenant_class;
+    }
+
+    public function getTenantModel(): TenantContract
+    {
+        $class = Str::of($this->tenant_class)->toString();
+        /** @var TenantContract $model */
+        $model = new $class;
+
+        return $model;
     }
 
     /**
-     * @return class-string
+     * @return class-string<Model>
      */
-    public function getTenantResourceClass(): string
-    {
-        $class = Str::of(// @var mixed tenant_class
-            ->replace('\Models\\', '\Filament\Resources\\')
-            ->append('Resource')
-            ->toString();
-        Assert::classExists($class, '['.$class.']['.__LINE__.']['.class_basename($this).']');
-
-        return $class;
-    }
-
     public function getTenantPivotClass(): string
     {
-        Assert::classExists(// @var mixed tenant_pivot_class, '['.__LINE__.']['.class_basename($this;
+        Assert::classExists($this->tenant_pivot_class, '['.__LINE__.']['.class_basename($this).']');
 
-        return // @var mixed tenant_pivot_class;
+        return $this->tenant_pivot_class;
     }
 
+    /**
+     * @return class-string<Model>
+     */
     public function getMembershipClass(): string
     {
-        Assert::classExists(// @var mixed membership_class, '['.__LINE__.']['.class_basename($this;
+        Assert::classExists($this->membership_class, '['.__LINE__.']['.class_basename($this).']');
 
-        return // @var mixed membership_class;
+        return $this->membership_class;
     }
 
     /**
@@ -221,136 +196,101 @@ class XotData extends Data implements Wireable
      */
     public function getProfileClass(): string
     {
-        $class = 'Modules\\'.// @var mixed main_module.'\Models\Profile';
-
-        // Verifica che la classe esista
-        Assert::classExists($class, '['.$class.']['.__LINE__.']['.class_basename($this).']');
-
-        // Verifica che sia un Model e implementi ProfileContract
-        Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
+        $class = 'Modules\\'.$this->main_module.'\Models\Profile';
+        Assert::classExists($class, '['.$class.'] check main_module ['.$this->main_module.'] in xra.php');
         Assert::implementsInterface(
             $class,
             ProfileContract::class,
-            '['.__LINE__.']['.class_basename($this).']['.$class.']',
+            'class '.$class.' not implements ProfileContract',
         );
+        Assert::isAOf($class, Model::class, 'class '.$class.' not extends Model');
 
-        /* @var class-string<Model&ProfileContract> */
         return $class;
     }
 
-    public function getHomeController(): string
-    {
-        return 'Modules\\'.// @var mixed main_module.'\Http\Controllers\HomeController';
-    }
-
-    public function getProfileModelByUserId(string $user_id): ProfileContract
-    {
-        $profileClass = // @var mixed getProfileClass(;
-        /** @var Model&ProfileContract $profile */
-        $profile = app($profileClass);
-
-        Assert::isInstanceOf($profile, Model::class);
-        Assert::isArray($profile->getFillable(), 'getFillable() must return array');
-
-        if (! in_array('user_id', $profile->getFillable(), true)) {
-            throw new \Exception('add user_id to fillable on class '.$profileClass);
-        }
-
-        /** @var ProfileContract */
-        $res = $profile->firstOrCreate(['user_id' => $user_id]);
-        Assert::implementsInterface($res, ProfileContract::class);
-
-        return $res;
-    }
-
-    public function getProfileByEmail(string $email): ProfileContract
-    {
-        $user = // @var mixed getUserByEmail($email;
-
-        return // @var mixed getProfileModelByUserId((string;
-    }
-
     /**
-     * Verifica se l'utente autenticato è un super amministratore.
+     * @return class-string
      */
-    public function iAmSuperAdmin(): bool
+    public function getHomeControlerClass(): string
     {
-        $user = Auth::user();
-        if (null === $user) {
-            return false;
-        }
-
-        if (! method_exists($user, 'hasRole')) {
-            return false;
-        }
-
-        // Utilizziamo un'asserzione per garantire che hasRole restituisca un booleano
-        $result = $user->hasRole('super-admin');
-
-        return true === $result;
+        return 'Modules\\'.$this->main_module.'\Http\Controllers\HomeController';
     }
 
     public function getProfileModel(): ProfileContract
     {
-        if (null !== // @var mixed profile
-            return // @var mixed profile;
-        }
+        $profileClass = $this->getProfileClass();
 
-        $user_id = (string) authId();
-        // @var mixed profile = $this->getProfileModelByUserId((string;
-        Assert::implementsInterface(
-            // @var mixed profile,
-            ProfileContract::class,
-            '['.__LINE__.']['.class_basename($this).']',
-        );
-
-        return // @var mixed profile;
+        return $profileClass::make();
     }
 
-    /**
-     * Update the XotData instance.
-     *
-     * @param array<string, mixed> $data
-     */
-    public function update(array $data): self
+    public function getProfileModelByUserId(string $user_id): ProfileContract
+    {
+        $profileClass = $this->getProfileClass();
+
+        return $profileClass::query()->firstOrCreate(['user_id' => $user_id]);
+    }
+
+    public function getUserByEmail(string $email): UserContract
+    {
+        $userClass = $this->getUserClass();
+        /** @var UserContract|null $user */
+        $user = $userClass::query()->where('email', $email)->first();
+        Assert::notNull($user, 'User not found by email: '.$email);
+
+        return $user;
+    }
+
+    public function getProfileModelByEmail(string $email): ProfileContract
+    {
+        $user = $this->getUserByEmail($email);
+
+        return $this->getProfileModelByUserId((string) $user->getKey());
+    }
+
+    public function getProfile(): ProfileContract
+    {
+        if (null !== $this->profile) {
+            return $this->profile;
+        }
+
+        $user = Auth::user();
+        if (null !== $user) {
+            $this->profile = $this->getProfileModelByUserId((string) $user->getAuthIdentifier());
+
+            return $this->profile;
+        }
+
+        return $this->getProfileModel();
+    }
+
+    public function update(array $data): void
     {
         foreach ($data as $k => $v) {
-            // @var mixed {$k} = $v;
+            $this->{$k} = $v;
         }
-
-        // // @var mixed save(;
-        return $this;
+        // $this->save();
     }
 
-    public function save(): void
+    public function getPubThemeViewPath(string $key): string
     {
-        dddx('wip');
+        $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
+
+        return $path0;
     }
 
-    public function getPubThemeViewPath(string $key = ''): string
+    public function getPubThemePublicPath(string $key): string
     {
-        $path0 = base_path('Themes/'.// @var mixed pub_theme.'/resources/views/'.$key;
-
-        try {
-            return realpath($path0);
-        } catch (\Exception $e) {
-            throw new \Exception('realpath not find dir['.$path0.']'.PHP_EOL.'['.$e->getMessage().']');
-        }
+        return public_path('themes/'.$this->pub_theme.'/'.$key);
     }
 
-    public function getPubThemePublicPath(string $key = ''): string
+    public function getPubThemeAssetPath(string $key): string
     {
-        return public_path('themes/'.// @var mixed pub_theme.'/'.$key;
+        return asset('themes/'.$this->pub_theme.'/'.$key);
     }
 
-    public function getPubThemePublicAsset(string $key = ''): string
+    public function getPubThemeMailLayoutPath(string $key): string
     {
-        return asset('themes/'.// @var mixed pub_theme.'/'.$key;
-    }
-
-    public function getMailHtmlLayoutPath(string $key = ''): string
-    {
-        return base_path('Themes/'.// @var mixed pub_theme.'/resources/mail-layouts/'.$key;
+        return base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
     }
 
     /**
@@ -358,137 +298,87 @@ class XotData extends Data implements Wireable
      */
     public function getUserClassByType(string $type): string
     {
-        $user_class = // @var mixed getUserClass(;
-        $userInstance = app($user_class);
-
-        if (! is_object($userInstance) || ! method_exists($userInstance, 'getChildTypes')) {
-            throw new \Exception('getChildTypes method not found in class '.$user_class);
-        }
-
-        $types = $userInstance->getChildTypes();
-        if (! is_array($types) && ! ($types instanceof \ArrayAccess)) {
-            throw new \Exception('getChildTypes must return array or ArrayAccess');
-        }
-        $class = Arr::get($types, $type);
-        if (is_null($class)) {
-            throw new \Exception('type '.$type.' not found in class '.$user_class);
-        }
-
-        Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
-        Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
-        Assert::implementsInterface(
-            $class,
-            UserContract::class,
-            '['.__LINE__.']['.class_basename($this).']['.$class.']',
-        );
+        $user_class = $this->getUserClass();
+        /** @var Model&UserContract $user */
+        $user = new $user_class;
+        $type_field = $user->getTypeField();
+        /** @var class-string<Model&UserContract> $class */
+        $class = $user_class::query()->where($type_field, $type)->first()?->getMorphClass() ?? $user_class;
 
         return $class;
     }
 
-    public function getUserResourceClassByType(string $type): string
+    public function getUserModelByType(string $type): UserContract
     {
-        $class = // @var mixed getUserClassByType($type;
+        $class = $this->getUserClassByType($type);
+        /** @var UserContract $model */
+        $model = new $class;
 
-        // Extract the module name from the class namespace
-        $moduleName = Str::before(Str::after($class, 'Modules\\'), '\\');
-
-        // Build the resource class path
-        $resourceClass = Str::of($class)
-            ->replace('\\Models\\', '\\Filament\\Resources\\')
-            ->append('Resource')
-            ->toString();
-
-        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
-        if (! class_exists($resourceClass)) {
-            $resourceClass =
-                'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
-        }
-
-        if (! class_exists($resourceClass)) {
-            throw new \RuntimeException("Resource class not found for type: {$type}. Tried: {$resourceClass}");
-        }
-
-        return $resourceClass;
+        return $model;
     }
 
     /**
-     * Get user child types.
-     *
-     * @return array<int, mixed>
+     * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
-    public function getUserChildTypes(): array
-    {
-        $enum_class = // @var mixed getUserChildTypeClass(;
-
-        if (! enum_exists($enum_class)) {
-            return [];
-        }
-
-        return $enum_class::cases();
-        // $userInstance = app($user_class);
-        // return $userInstance->getChildTypes();
-    }
-
     public function getUserChildTypeClass(): string
     {
-        $user_class = // @var mixed getUserClass(;
-        $user_instance = app($user_class);
+        $user_class = $this->getUserClass();
+        /** @var \Modules\User\Models\User $user */
+        $user = new $user_class;
 
-        if (! is_object($user_instance) || ! method_exists($user_instance, 'getCasts')) {
-            throw new \Exception('getCasts method not found in class '.$user_class);
-        }
-
-        $castsResult = $user_instance->getCasts();
-        if (! is_array($castsResult) && ! ($castsResult instanceof \ArrayAccess)) {
-            throw new \Exception('getCasts must return array or ArrayAccess');
-        }
-
-        // $enum_class = Arr::get($user_class::casts(),'type',null);
-        $enum_class = Arr::get($castsResult, 'type', null);
-        if (null === $enum_class) {
-            $enum_class = Str::of($user_class)
-                ->replace('\\Models\\', '\\Enums\\')
-                ->append('TypeEnum')
-                ->toString();
-        }
-        Assert::stringNotEmpty($enum_class, 'enum_class is empty');
-
-        return $enum_class;
-
-        // $userInstance = app($user_class);
-        // return $userInstance->getChildTypes();
+        return $user->getChildTypeClass();
     }
 
     /**
-     * Get the project namespace dynamically.
+     * @return class-string
      */
-    public function getProjectNamespace(): string
+    public function getUserChildTypeEnumClass(): string
     {
-        return 'Modules\\'.// @var mixed main_module;
+        $enum_class = $this->getUserChildTypeClass();
+        if (! class_exists($enum_class)) {
+            Log::error('User child type enum class not found: '.$enum_class);
+        }
+
+        return $enum_class;
     }
 
-    public function forceSSL(): bool
+    public function getUserTypeEnumClass(): string
     {
-        if (! // @var mixed force_ssl
+        $user_class = $this->getUserClass();
+        /** @var \Modules\User\Models\User $user */
+        $user = new $user_class;
+
+        return $user->getTypeEnumClass();
+    }
+
+    public function getProfileModelByType(string $type): ProfileContract
+    {
+        $profileClass = $this->getProfileClass();
+        /** @var ProfileContract $model */
+        $model = new $profileClass;
+
+        return $model;
+    }
+
+    public function getMainModuleNamespace(): string
+    {
+        return 'Modules\\'.$this->main_module;
+    }
+
+    public function getForceSsl(): bool
+    {
+        if (! $this->force_ssl) {
             return false;
-        }
-        if (isset($_SERVER['SERVER_NAME']) && 'localhost' === $_SERVER['SERVER_NAME']) {
-            return false;
-        }
-        if (isset($_SERVER['SERVER_NAME']) && '127.0.0.1' === $_SERVER['SERVER_NAME']) {
-            return false;
-        }
-        // AWS ELB
-        if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && 'https' === $_SERVER['HTTP_X_FORWARDED_PROTO']) {
-            return true;
         }
 
-        // if(isset($_SERVER['SERVER_NAME']) && Str::endsWith($_SERVER['SERVER_NAME'],'.local')){
-        //    return false;
-        // }
-        // if(isset($_SERVER['REQUEST_SCHEME']) && 'https' == $_SERVER['REQUEST_SCHEME']){
-        //    return false;
-        // }
         return true;
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public function provides(): array
+    {
+        return [];
     }
 }

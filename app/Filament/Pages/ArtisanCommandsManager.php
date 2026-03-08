@@ -41,9 +41,9 @@ class ArtisanCommandsManager extends XotBasePage
 
     public function executeCommand(string $command): void
     {
-        // @var mixed reset(['output', 'status'];
-        // @var mixed currentCommand = $command;
-        // @var mixed isRunning = true;
+        $this->reset(['output', 'status']);
+        $currentCommand = $command;
+        $isRunning = true;
 
         try {
             app(ExecuteArtisanCommandAction::class)->execute($command);
@@ -54,28 +54,28 @@ class ArtisanCommandsManager extends XotBasePage
                 ->danger()
                 ->send();
 
-            // @var mixed isRunning = false;
+            $isRunning = false;
         }
     }
 
     #[On('artisan-command.started')]
     public function handleCommandStarted(string $command): void
     {
-        // @var mixed isRunning = true;
+        $isRunning = true;
     }
 
     #[On('artisan-command.output')]
     public function handleCommandOutput(string $command, string $output): void
     {
-        // @var mixed output[] = $output;
-        // @var mixed dispatch('terminal-update';
+        $output[] = $output;
+        $this->dispatch('terminal-update');
     }
 
     #[On('artisan-command.completed')]
     public function handleCommandCompleted(string $command): void
     {
-        // @var mixed status = 'completed';
-        // @var mixed isRunning = false;
+        $status = 'completed';
+        $isRunning = false;
 
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.notifications.success'))
@@ -86,9 +86,9 @@ class ArtisanCommandsManager extends XotBasePage
     #[On('artisan-command.failed')]
     public function handleCommandFailed(string $command, string $error): void
     {
-        // @var mixed status = 'failed';
-        // @var mixed isRunning = false;
-        // @var mixed output[] = "[ERROR] {$error}";
+        $status = 'failed';
+        $isRunning = false;
+        $output[] = "[ERROR] {$error}";
 
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.notifications.error'))
@@ -100,9 +100,9 @@ class ArtisanCommandsManager extends XotBasePage
     #[On('artisan-command.error')]
     public function handleCommandError(string $command, string $error): void
     {
-        // @var mixed status = 'failed';
-        // @var mixed isRunning = false;
-        // @var mixed output[] = "[ERROR] {$error}";
+        $status = 'failed';
+        $isRunning = false;
+        $output[] = "[ERROR] {$error}";
 
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.notifications.error'))
@@ -120,64 +120,64 @@ class ArtisanCommandsManager extends XotBasePage
                 ->color('primary')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('migrate'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('migrate'
             Action::make('filament_upgrade')
                 ->label((string) __('xot::artisan-commands-manager.commands.filament_upgrade.label'))
                 ->icon('heroicon-o-arrow-path')
                 ->color('warning')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('filament:upgrade'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('filament:upgrade'
             Action::make('filament_optimize')
                 ->label((string) __('xot::artisan-commands-manager.commands.filament_optimize.label'))
                 ->icon('heroicon-o-sparkles')
                 ->color('success')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('filament:optimize'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('filament:optimize'
             Action::make('view_cache')
                 ->label((string) __('xot::artisan-commands-manager.commands.view_cache.label'))
                 ->icon('heroicon-o-eye')
                 ->color('gray')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('view:cache'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('view:cache'
             Action::make('config_cache')
                 ->label((string) __('xot::artisan-commands-manager.commands.config_cache.label'))
                 ->icon('heroicon-o-cog-6-tooth')
                 ->color('gray')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('config:cache'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('config:cache'
             Action::make('route_cache')
                 ->label((string) __('xot::artisan-commands-manager.commands.route_cache.label'))
                 ->icon('heroicon-o-map')
                 ->color('gray')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('route:cache'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('route:cache'
             Action::make('event_cache')
                 ->label((string) __('xot::artisan-commands-manager.commands.event_cache.label'))
                 ->icon('heroicon-o-bell')
                 ->color('gray')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('event:cache'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('event:cache'
             Action::make('queue_restart')
                 ->label((string) __('xot::artisan-commands-manager.commands.queue_restart.label'))
                 ->icon('heroicon-o-arrow-path')
                 ->color('gray')
                 ->size('lg')
                 ->iconPosition(IconPosition::Before)
-                ->disabled(fn () => // @var mixed isRunning
-                ->action(fn () => // @var mixed executeCommand('queue:restart'
+                ->disabled(fn () => $isRunning
+                ->action(fn () => $this->executeCommand('queue:restart'
         ];
     }
 }

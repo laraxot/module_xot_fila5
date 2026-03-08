@@ -21,7 +21,7 @@ if (! class_exists(TestModel::class)) {
 
         public function save(array $options = [])
         {
-            // @var mixed saved = true;
+            $saved = true;
 
             return true;
         }

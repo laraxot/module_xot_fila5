@@ -19,7 +19,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        // @var mixed action = new GetPdfContentByRecordAction(;
+        $action = new GetPdfContentByRecordAction();
     }
 
     /** @test */
@@ -35,10 +35,10 @@ class GetPdfContentByRecordActionTest extends TestCase
         view()->addNamespace('user', resource_path('views'));
 
         // Act & Assert
-        // @var mixed expectException(\Exception::class;
-        // @var mixed expectExceptionMessage("View 'user::user.show.pdf' not found";
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessage("View 'user::user.show.pdf' not found");
 
-        // @var mixed action->execute($user;
+        $action->execute($user);
     }
 
     /** @test */
@@ -48,15 +48,15 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create();
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass(// @var mixed action;
+        $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateViewName');
         $method->setAccessible(true);
 
         // Act
-        $viewName = $method->invoke(// @var mixed action, $user;
+        $viewName = $method->invoke($action, $user);
 
         // Assert
-        // @var mixed assertEquals('user::user.show.pdf', $viewName;
+        $this->assertEquals('user::user.show.pdf', $viewName);
     }
 
     /** @test */
@@ -66,15 +66,15 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass(// @var mixed action;
+        $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
         $method->setAccessible(true);
 
         // Act
-        $filename = $method->invoke(// @var mixed action, $user;
+        $filename = $method->invoke($action, $user);
 
         // Assert
-        // @var mixed assertEquals('user_123_test-user.pdf', $filename;
+        $this->assertEquals('user_123_test-user.pdf', $filename);
     }
 
     /** @test */
@@ -97,15 +97,15 @@ class GetPdfContentByRecordActionTest extends TestCase
         $record->nome = 'Mario';
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass(// @var mixed action;
+        $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
         $method->setAccessible(true);
 
         // Act
-        $filename = $method->invoke(// @var mixed action, $record;
+        $filename = $method->invoke($action, $record);
 
         // Assert
-        // @var mixed assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename;
+        $this->assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
     }
 
     /** @test */
@@ -115,21 +115,21 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create(['name' => 'Test User']);
 
         // Use reflection to test protected method
-        $reflection = new \ReflectionClass(// @var mixed action;
+        $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('prepareViewParameters');
         $method->setAccessible(true);
 
         // Act
-        $params = $method->invoke(// @var mixed action, $user, 'user::user.show.pdf';
+        $params = $method->invoke($action, $user, 'user::user.show.pdf');
 
         // Assert
-        // @var mixed assertIsArray($params;
-        // @var mixed assertArrayHasKey('view', $params;
-        // @var mixed assertArrayHasKey('row', $params;
-        // @var mixed assertArrayHasKey('transKey', $params;
-        // @var mixed assertEquals('user::user.show.pdf', $params['view'];
-        // @var mixed assertSame($user, $params['row'];
-        // @var mixed assertEquals('user::users.fields', $params['transKey'];
+        $this->assertIsArray($params);
+        $this->assertArrayHasKey('view', $params);
+        $this->assertArrayHasKey('row', $params);
+        $this->assertArrayHasKey('transKey', $params);
+        $this->assertEquals('user::user.show.pdf', $params['view']);
+        $this->assertSame($user, $params['row']);
+        $this->assertEquals('user::users.fields', $params['transKey']);
     }
 
     /** @test */
@@ -139,10 +139,10 @@ class GetPdfContentByRecordActionTest extends TestCase
         $user = User::factory()->create();
 
         // Act & Assert
-        // @var mixed expectException(\Exception::class;
-        // @var mixed expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/";
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
-        // @var mixed action->execute($user;
+        $action->execute($user);
     }
 
     /** @test */
@@ -150,7 +150,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        // @var mixed markTestSkipped('Requires view mocking infrastructure';
+        $this->markTestSkipped('Requires view mocking infrastructure');
     }
 
     /** @test */
@@ -161,9 +161,9 @@ class GetPdfContentByRecordActionTest extends TestCase
         $customFilename = 'custom-report.pdf';
 
         // Act & Assert - Should use custom filename in error message
-        // @var mixed expectException(\Exception::class;
+        $this->expectException(\Exception::class);
 
-        // @var mixed action->execute($user, $customFilename;
+        $action->execute($user, $customFilename);
     }
 
     /** @test */
@@ -174,10 +174,10 @@ class GetPdfContentByRecordActionTest extends TestCase
         $filename = 'convenience-test.pdf';
 
         // Act & Assert
-        // @var mixed expectException(\Exception::class;
-        // @var mixed expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/";
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
-        // @var mixed action->fromRecord($user, $filename;
+        $action->fromRecord($user, $filename);
     }
 
     /** @test */
@@ -185,7 +185,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        // @var mixed markTestSkipped('Requires HTML2PDF mocking infrastructure';
+        $this->markTestSkipped('Requires HTML2PDF mocking infrastructure');
     }
 
     /** @test */
@@ -193,6 +193,6 @@ class GetPdfContentByRecordActionTest extends TestCase
     {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        // @var mixed markTestSkipped('Requires test view infrastructure';
+        $this->markTestSkipped('Requires test view infrastructure');
     }
 }

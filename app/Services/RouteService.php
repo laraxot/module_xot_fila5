@@ -211,9 +211,9 @@ class RouteService
 
         /*
          * return '?'.$lang; //da fixare dopo
-         * //$row=// @var mixed row;
+         * //$row= $row;
          * //$row->lang=$lang;
-         * //return '/wip'.// @var mixed url(;
+         * //return '/wip'.$this->url();
          * $route_name = \Route::currentRouteName();
          * $route_params = optional(\Route::current())->parameters();
          * $route_params['lang'] = $lang;

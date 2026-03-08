@@ -26,7 +26,7 @@ class CommandOutputEvent implements ShouldBroadcast
     public function broadcastOn(): array
     {
         return [
-            new Channel("command.{// @var mixed processId}"
+            new Channel("command.{$processId}"
         ];
     }
 
@@ -38,9 +38,9 @@ class CommandOutputEvent implements ShouldBroadcast
     public function broadcastWith(): array
     {
         return [
-            'processId' => // @var mixed processId,
-            'output' => // @var mixed output,
-            'type' => // @var mixed type,
+            'processId' => $processId,
+            'output' => $output,
+            'type' => $type,
             'timestamp' => now()->toIso8601String(),
         ];
     }

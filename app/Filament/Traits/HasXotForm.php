@@ -32,7 +32,7 @@ trait HasXotForm
     final public function form(Schema $schema): Schema
     {
         return $schema
-            ->components(// @var mixed getFormSchema(
+            ->components($getFormSchema(
             ->columns(2)
             ->statePath('data');
     }

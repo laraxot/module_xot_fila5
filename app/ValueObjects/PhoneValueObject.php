@@ -27,6 +27,6 @@ readonly class PhoneValueObject
 
     public function toString(): string
     {
-        return // @var mixed phone;
+        return $phone;
     }
 }

@@ -35,18 +35,18 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      */
     public function __construct(Collection $collection, ?string $transKey = null, array $fields = [])
     {
-        // @var mixed collection = $collection;
-        // @var mixed transKey = $transKey;
-        // @var mixed fields = $fields;
+        $collection = $collection;
+        $transKey = $transKey;
+        $fields = $fields;
     }
 
     public function getHead(): array
     {
-        if (\is_array(// @var mixed fields
-            return // @var mixed fields;
+        if (\is_array($fields
+            return $fields;
         }
 
-        $head = // @var mixed collection->first(;
+        $head = $collection->first();
         Assert::isInstanceOf($head, Model::class);
 
         return array_keys($head->getAttributes());
@@ -54,20 +54,20 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     public function headings(): array
     {
-        $headings = // @var mixed getHead(;
-        $transKey = // @var mixed transKey;
+        $headings = $this->getHead();
+        $transKey = $transKey;
 
         return app(TransArrayAction::class)->execute($headings, $transKey);
     }
 
     public function collection(): Collection
     {
-        return // @var mixed collection;
+        return $collection;
     }
 
     public function map(mixed $row): array
     {
-        if (null === // @var mixed fields || empty($this->fields
+        if (null === $fields || empty($this->fields
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
@@ -84,10 +84,10 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             });
         }
 
-        // return collect($row)->only(// @var mixed fields;
+        // return collect($row)->only($fields);
         $data = [];
 
-        foreach (// @var mixed fields as $field
+        foreach ($fields as $field
             $value = data_get($row, $field);
             if (\is_object($value)) {
                 if (enum_exists($value::class) && method_exists($value, 'getLabel')) {

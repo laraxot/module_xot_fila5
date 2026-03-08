@@ -12,13 +12,13 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class);
 
 it('calculates view path correctly', function (): void {
-    // @var mixed mock(GetViewNameSpacePathAction::class
+    $this->mock(GetViewNameSpacePathAction::class
         ->shouldReceive('execute')
         ->once()
         ->with('test_ns')
         ->andReturn('/path/to/views');
 
-    // @var mixed mock(FixPathAction::class
+    $this->mock(FixPathAction::class
         ->shouldReceive('execute')
         ->once()
         ->andReturnArg(0);
