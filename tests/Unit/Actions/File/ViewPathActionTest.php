@@ -9,13 +9,13 @@ use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 
 it('calculates view path correctly', function (): void {
-    $this->mock(GetViewNameSpacePathAction::class)
+    $this->mock(GetViewNameSpacePathAction::class
         ->shouldReceive('execute')
         ->once()
         ->with('test_ns')
         ->andReturn('/path/to/views');
 
-    $this->mock(FixPathAction::class)
+    $this->mock(FixPathAction::class
         ->shouldReceive('execute')
         ->once()
         ->andReturnArg(0);
