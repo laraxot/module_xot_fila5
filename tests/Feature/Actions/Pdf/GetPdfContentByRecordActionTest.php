@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
-use Modules\Xot\Tests\TestCase;
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
+use Modules\Xot\Tests\TestCase;
 
 /**
  * Test suite for GetPdfContentByRecordAction.
