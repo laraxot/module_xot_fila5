@@ -36,22 +36,22 @@ class EnvWidget extends Widget implements HasActions, HasForms
     {
         /** @var array<string, mixed> */
         $data = EnvData::make()->toArray();
-        $data = $data;
+        $this->data = $data;
 
-        $form->fill($this->data);
+        $this->form->fill($this->data);
     }
 
     public function schema(Schema $schema): Schema
     {
-        return $schema->components($getFormSchema());
+        return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
     }
 
     public function submit(): void
     {
-        if (! is_array($data
+        if (! is_array($this->data)) {
             return;
         }
-        EnvData::make()->update($data);
+        EnvData::make()->update($this->data);
         Notification::make()
             ->title('Saved successfully')
             ->success()
@@ -59,8 +59,8 @@ class EnvWidget extends Widget implements HasActions, HasForms
 
         /*
          * dddx([
-         * 'data' => $data,
-         * // 'data1' => $form->getState(
+         * 'data' => $this->data,
+         * // 'data1' => $this->form->getState(),
          * ]);
          */
     }
@@ -85,11 +85,10 @@ class EnvWidget extends Widget implements HasActions, HasForms
                 ->placeholder('AIzaSyAuB_...')
                 ->helperText('telegram_bot_token'),
         ];
-        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
 
-        /*
+        /**
          * @var array<Component>
          */
-        return Arr::only($all, $only);
+        return Arr::only($all, $this->only);
     }
 }

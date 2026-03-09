@@ -29,12 +29,6 @@
 - [Optimize Filament Memory Command](./memory-optimization-dashboard-fixes.md)
 - [Performance Analysis Guide](./performance-guidelines.md)
 
-### Filament
-- [HasXotForm form() DEVE essere final](./hasxotform-form-final.md) — Regola: form() final, usare getFormSchema()
-
-### PHPStan
-- [phpstan.neon immutabile](./phpstan-neon-immutable.md) — laravel/phpstan.neon è l'unico config, NON modificare, NON creare altri
-
 ### Error Prevention & Fixes
 - [Common PHPStan Errors & Solutions](./analisi-phpstan.md)
 - [Model Casting Migration Guide](./model-casting-rules.md)
@@ -69,21 +63,8 @@
 **Module Version**: 1.0  
 **Laravel Version**: 12.x  
 **PHP Version**: 8.2+  
-**
-## Regola Operativa Obbligatoria
+**Last Updated**: 2026-03-02
 
-- Prima di modificare codice: ragionare, studiare i docs del modulo/tema, aggiornare docs/rules/memory/skills.
-- Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
-- Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
-- Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
+## Dependency Intelligence
 
-## Coverage 100 Program
-
-- Regola: [Coverage 100% Full-Project Rule](../../../../docs/rules/coverage-100-full-project-rule.md)
-- Memory: [Coverage 100% Full-Project Memory](../../../../docs/memory/coverage-100-full-project-memory.md)
-- Skill: [Coverage 100% Full-Project Skill](../../../../docs/skills/coverage-100-full-project-skill.md)
-- Reference: [Pest coverage/type coverage + Laravel Modules tests](../../../../docs/testing/pest-coverage-type-coverage-laravel-modules-reference-2026-03-04.md)
-
-## Docs Governance
-
-- [Docs Health](./docs-health.md) - Stato qualità docs, checklist di confidenza e prossime azioni di manutenzione.
+- [Dependency intelligence](dependency-intelligence.md)

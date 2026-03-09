@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Override;
 use stdClass;
 use Webmozart\Assert\Assert;
 
@@ -44,7 +45,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
-        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
+        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
             return static::$resource;
         }
 
@@ -63,7 +64,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(class_exists($resource), 'Resource class does not exist: '.$resource);
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
-        /* @var class-string<XotBaseResource> $resource */
+        /** @var class-string<XotBaseResource> $resource */
         static::$resource = $resource;
 
         return static::$resource;
@@ -92,16 +93,16 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
     public function getFormSchema(): array
     {
-        return $this->getResource();
+        return $this->getResource()::getFormSchema();
     }
 
     /**
      * @return array<int|string, Column|LayoutComponent>
      */
-    #[\Override]
+    #[Override]
     protected function getTableColumns(): array
     {
-        $index = Arr::get($getResource());
+        $index = Arr::get($this->getResource()::getPages(), 'index');
         if (! $index) {
             // throw new \Exception('Index page not found');
             return [];
@@ -173,7 +174,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if (null === $record) {
+                if ($record === null) {
                     return false;
                 }
 
@@ -183,7 +184,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if (null === $record) {
+                if ($record === null) {
                     return false;
                 }
 
@@ -259,9 +260,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-    public function canDeleteBulk(Model|\stdClass|null $record): bool
+    public function canDeleteBulk(Model|stdClass|null $record): bool
     {
-        if ($record instanceof \stdClass) {
+        if ($record instanceof stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -272,9 +273,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-    public function canDetachBulk(Model|\stdClass|null $record): bool
+    public function canDetachBulk(Model|stdClass|null $record): bool
     {
-        if ($record instanceof \stdClass) {
+        if ($record instanceof stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
