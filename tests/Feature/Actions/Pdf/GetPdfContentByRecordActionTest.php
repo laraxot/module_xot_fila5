@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
+use Modules\Xot\Tests\TestCase;
+
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
@@ -18,7 +20,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $action = new GetPdfContentByRecordAction();
+        $this->action = new GetPdfContentByRecordAction();
     }
 
     /** @test */
@@ -37,7 +39,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectException(\Exception::class);
         $this->expectExceptionMessage("View 'user::user.show.pdf' not found");
 
-        $action->execute($user);
+        $this->action->execute($user);
     }
 
     /** @test */
@@ -141,7 +143,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectException(\Exception::class);
         $this->expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
-        $action->execute($user);
+        $this->action->execute($user);
     }
 
     /** @test */
@@ -162,7 +164,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         // Act & Assert - Should use custom filename in error message
         $this->expectException(\Exception::class);
 
-        $action->execute($user, $customFilename);
+        $this->action->execute($user, $customFilename);
     }
 
     /** @test */
@@ -176,7 +178,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectException(\Exception::class);
         $this->expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
-        $action->fromRecord($user, $filename);
+        $this->action->fromRecord($user, $filename);
     }
 
     /** @test */
