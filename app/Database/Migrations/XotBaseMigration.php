@@ -308,7 +308,7 @@ abstract class XotBaseMigration extends LaravelMigration
     public function updateUser(Blueprint $table): void
     {
         $methodName = 'updateUserKey'.Str::studly($model->getKeyType());
-        // @var mixed {$methodName}($table);
+        // Placeholder purged {$methodName}($table);
 
         if ($hasColumn('model_id'))
             $table->string('model_id', 36)->index()->change();
@@ -498,7 +498,7 @@ abstract class XotBaseMigration extends LaravelMigration
                     $data[$c] = $row->{$c};
                 }
             }
-            $uuidToBigintIdMapping[(string);
+            $uuidToBigintIdMapping[(string) $this->name;
             $conn->table($newTable)->insert($data);
             ++$newId;
         }
@@ -511,7 +511,7 @@ abstract class XotBaseMigration extends LaravelMigration
 
         foreach ($rows as $p) {
             $p = (object) $p;
-            $newId = $uuidToBigintIdMapping[(string);
+            $newId = $uuidToBigintIdMapping[(string) $this->name;
             if (null !== $newId) {
                 $conn->table($pivotTable)
                     ->where($fkColumn, $p->id)
