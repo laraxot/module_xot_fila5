@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
+use Modules\Xot\Tests\TestCase;
+
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
