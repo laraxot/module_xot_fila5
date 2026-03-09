@@ -4,13 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
-use Modules\Xot\Tests\TestCase;
-
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\TestCase;
 
 class XotBaseModelBusinessLogicTest extends TestCase
 {
