@@ -186,9 +186,36 @@ class Event extends BaseModel
 # Già nel .gitignore del progetto
 ```
 
-### 4. Integrazione con PHPStan
+### 4. ProfileContract — correzione obbligatoria dopo ide-helper (CRITICAL)
 
-IDE Helper è **compatibile** con PHPStan Level 10:
+`ide-helper:models -W` genera automaticamente il tipo sbagliato per `$creator`, `$updater`, `$deleter`.
+
+**Il tipo generato (SBAGLIATO):**
+```php
+// ❌ ide-helper scrive la classe Profile concreta del modulo che trova
+* @property-read \Modules\Meetup\Models\Profile|null $creator
+* @property-read \Modules\Ptv\Models\Profile|null $updater
+```
+
+**Il tipo corretto (da ripristinare manualmente):**
+```php
+// ✅ SEMPRE l'interfaccia ProfileContract
+* @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+* @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
+* @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+```
+
+**Verifica dopo ogni esecuzione di ide-helper:**
+```bash
+grep -r "@property-read.*Models\\\\Profile.*\$(creator\|updater\|deleter)" Modules --include="*.php"
+```
+Se produce output: correggere quei file. Zero output = tutto ok.
+
+Rule dedicata: `.cursor/rules/profile-contract-docblock.mdc`
+
+### 5. Integrazione con PHPStan
+
+IDE Helper è **compatibile** con PHPStan Level 10, ma solo dopo la correzione del punto 4:
 
 ```bash
 # Verifica conformità
@@ -211,7 +238,12 @@ vim Modules/Meetup/database/migrations/2026_*_create_events_table.php
 php artisan migrate
 
 # 3. Rigenera PHPDoc
-php artisan ide-helper:models --write
+php artisan ide-helper:models -W
+
+# 3b. Correggi ProfileContract (OBBLIGATORIO dopo ide-helper)
+# Verifica se ci sono tipi Profile concreti nei docblock
+grep -r "@property-read.*Models\\\\Profile.*\$(creator\|updater\|deleter)" Modules --include="*.php"
+# Se ci sono: correggi con \Modules\Xot\Contracts\ProfileContract|null
 
 # 4. Verifica PHPStan
 ./vendor/bin/phpstan analyze Modules/Meetup --level=10
