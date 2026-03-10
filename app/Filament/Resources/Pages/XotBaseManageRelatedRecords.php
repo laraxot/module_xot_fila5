@@ -4,24 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Pages;
 
-use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
-use Modules\Xot\Filament\Traits\HasXotTable;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-<<<<<<< HEAD
-use Filament\Forms\Concerns\InteractsWithForms;
-=======
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
->>>>>>> 2253954 (.)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-=======
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
->>>>>>> 2253954 (.)
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
 
@@ -59,13 +49,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
         return (string) $value;
     }
-
-    /**
-     * Restituisce lo schema del form per i record correlati.
-     *
-     * @return array<\Filament\Schemas\Components\Component>
-     */
-    // abstract public static function getFormSchema(): array;
 
     /**
      * Configura lo schema per i record correlati.
@@ -143,9 +126,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         ];
     }
 
-<<<<<<< HEAD
-    public static function getNavigationLabel(): string
-=======
     /**
      * Definisce le azioni per ogni riga della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
@@ -153,7 +133,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return array<string, Action>
      */
     protected function getTableActions(): array
->>>>>>> 2253954 (.)
+    {
+        return [];
+    }
+
+    public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
     }
