@@ -22,7 +22,6 @@ use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
@@ -50,7 +49,6 @@ use Webmozart\Assert\Assert;
  */
 trait HasXotTable
 {
-    use InteractsWithTable;
     use TransTrait;
 
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
@@ -64,12 +62,13 @@ trait HasXotTable
     /**
      * Get table header actions.
      *
-     * Filament 5.2 definisce getTableHeaderActions() come protected in HasHeader.
-     * Deve essere protected per evitare conflitti di visibilità.
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<string, Action|ActionGroup>
      */
-    protected function getTableHeaderActions(): array
+    public function getTableHeaderActions(): array
     {
         $resource = $this;
         /* @phpstan-ignore-next-line */
@@ -145,7 +144,7 @@ trait HasXotTable
     /**
      * Get table heading.
      */
-    protected function getTableHeading(): \Illuminate\Contracts\Support\Htmlable|string|null
+    protected function getTableHeading(): ?string
     {
         $key = static::getKeyTrans('table.heading');
         /** @var string|array<int|string,mixed>|null $trans */
@@ -166,8 +165,21 @@ trait HasXotTable
     }
 
     /**
-     * Table schema builder. FINAL: NON SOVRASCRIVERE — implementare getTableColumns(),
-     * getTableHeaderActions(), getTableActions(), getTableBulkActions().
+     * Configura una tabella Filament.
+     *
+     * Nota: Questo metodo è stato modificato per risolvere l'errore
+     * "Method Filament\Actions\Action::table does not exist" in Filament 3.
+     * La soluzione verifica l'esistenza dei metodi getTableHeaderActions(),
+     * getTableActions() e getTableBulkActions() prima di chiamarli,
+     * garantendo la compatibilità con diverse versioni di Filament.
+     *
+     * Problema: Il trait chiamava direttamente metodi che potrebbero non esistere
+     * nelle classi che lo utilizzano, causando errori in Filament 3.
+     *
+     * Soluzione: Verifica condizionale dell'esistenza dei metodi prima di chiamarli,
+     * mantenendo la retrocompatibilità e prevenendo errori.
+     *
+     * Ultimo aggiornamento: 10/2023
      */
     public function table(Table $table): Table
     {
@@ -219,12 +231,13 @@ trait HasXotTable
     /**
      * Get table filters.
      *
-     * Filament 5.2 definisce getTableFilters() come protected.
-     * Deve essere protected per evitare conflitti di visibilità.
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
      */
-    protected function getTableFilters(): array
+    public function getTableFilters(): array
     {
         return [];
     }
@@ -232,14 +245,17 @@ trait HasXotTable
     /**
      * Get table actions.
      *
-     * Filament 5.2 definisce getTableActions() come protected in HasActions.
-     * Deve essere protected per evitare conflitti di visibilità.
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+     * @return array<string, Action|ActionGroup>
+     */
+    /**
      * @deprecated override the `table()` method to configure the table
      *
      * @return array<string, Action|ActionGroup>
      */
-    protected function getTableActions(): array
+    public function getTableActions(): array
     {
         if ($this instanceof TableWidget) {
             return [];
@@ -315,12 +331,13 @@ trait HasXotTable
     /**
      * Get table bulk actions.
      *
-     * Filament 5.2 definisce getTableBulkActions() come protected in HasBulkActions.
-     * Deve essere protected per evitare conflitti di visibilità.
+     * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
+     * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
+     * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<string, BulkAction>
      */
-    protected function getTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [
             'delete' => DeleteBulkAction::make()
@@ -416,7 +433,7 @@ trait HasXotTable
     /**
      * Get header actions.
      *
-     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     * @return array<string, Action>
      */
     protected function getHeaderActions(): array
     {

@@ -4,31 +4,28 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Schemas\Schema;
+use Filament\Tables\Table;
+use Modules\UI\Enums\TableLayoutEnum;
 
 /**
- * Trait HasXotForm.
+ * Trait HasXotTable.
  *
- * Provides standardized form handling for Filament widgets and components.
- * Implementing classes must define getFormSchema() as public.
+ * Provides enhanced table functionality with translations and optimized structure.
  *
- * REGOLA CRITICA: Il metodo form() DEVE essere final. Le classi che usano questo
- * trait NON devono mai fare override di form() — devono adattarsi implementando
- * getFormSchema() che restituisce l'array di componenti.
+ * @property TableLayoutEnum $layoutView
  *
- * @see ../../docs/hasxotform-form-final.md
+ * @SuppressWarnings("PHPMD.StaticAccess")
+ * @SuppressWarnings("PHPMD.CyclomaticComplexity")
+ * @SuppressWarnings("PHPMD.NPathComplexity")
  */
 trait HasXotForm
 {
-    use InteractsWithForms;
-
     /** @var array<string, mixed> */
     public array $data = [];
 
-    /**
-     * Form schema builder. FINAL: non sovrascrivere — implementare getFormSchema().
-     */
+    abstract public function getFormSchema(): array;
+
     final public function form(Schema $schema): Schema
     {
         return $schema
