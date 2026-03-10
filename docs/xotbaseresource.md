@@ -75,6 +75,9 @@ class NotificationResource extends XotBaseResource
 
 ## Collegamenti Bidirezionali
 
+### Documentazione correlata
+- [hasxotform-form-final.md](hasxotform-form-final.md) — form() DEVE essere final, le classi si adattano con getFormSchema()
+
 ### Collegamenti nella Root
 - [Architettura Filament](../../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../../docs/architecture/resources.md)
