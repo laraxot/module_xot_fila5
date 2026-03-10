@@ -194,14 +194,11 @@ class MyPage extends XotBaseViewRecord
 
     public array $customData = [];  // Usa nome specifico
 
-    // Se la pagina/widget usa lo stack Xot (es. HasXotForm / XotBasePage),
-    // `form(Schema $schema)` è FINAL: non va sovrascritto.
-    // Implementare invece `getFormSchema()`.
-    public function getFormSchema(): array
+    public function form(Schema $schema): Schema
     {
-        return [
+        return $schema->components([
             // Definisci i campi del form
-        ];
+        ]);
     }
 }
 ```

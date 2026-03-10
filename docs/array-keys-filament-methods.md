@@ -70,13 +70,6 @@ public static function getFormSchema(): array
 }
 ```
 
-### ❌ ERRATO - array_values() sui metodi get*Actions/get*Columns
-
-```php
-// ❌ ERRATO - array_values() distrugge le chiavi string richieste da Filament
-return array_values($actions);  // Mai fare questo! Restituire $actions con chiavi intatte.
-```
-
 ### ❌ ERRATO - Array Numerico o Mixed Keys
 
 ```php
