@@ -24,13 +24,6 @@ Metodi interessati:
 ## ❌ Pattern SBAGLIATO
 
 ```php
-// ❌ SBAGLIATO - array_values() distrugge le chiavi string
-public function getHeaderActions(): array
-{
-    $actions = ['create' => CreateAction::make(), 'delete' => DeleteAction::make()];
-    return array_values($actions);  // ❌ Restituisce [0=>..., 1=>...] — chiavi perse!
-}
-
 // ❌ SBAGLIATO - Array numerico
 public function getTableActions(): array
 {

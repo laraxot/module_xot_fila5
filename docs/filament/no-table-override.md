@@ -2,11 +2,9 @@
 
 ## Regola Fondamentale Inviolabile
 
-**Chi estende `XotBaseRelationManager` o `XotBaseTableWidget` NON DEVE MAI implementare il metodo `table(Table $table): Table`.**
+**Chi estende `XotBaseRelationManager` NON DEVE MAI implementare il metodo `table(Table $table): Table`.**
 
-Questa regola **NON HA ECCEZIONI** e si applica a tutti i RelationManager e alle pagine Manage* che usano `HasXotTable`.
-
-**Nota tecnica:** Il metodo `table()` in `HasXotTable` non può essere `final` per conflitto con `Filament\Tables\Concerns\InteractsWithTable` (stesso metodo in due trait). La regola è comunque inviolabile: non sovrascrivere — implementare `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`.
+Questa regola **NON HA ECCEZIONI** e si applica a tutti i RelationManager che estendono `XotBaseRelationManager`.
 
 ## Motivazione
 
@@ -119,13 +117,9 @@ class EsempioRelationManager extends XotBaseRelationManager
 }
 ```
 
-## Pagine Manage* (XotBaseManageRelatedRecords)
-
-Le pagine che estendono `XotBaseManageRelatedRecords` (es. `ManageCharts`, `ManageMailTemplates`) usano `HasXotTable`. Anche per queste pagine vale il divieto: non implementare `table()`, usare `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()`.
-
 ## Procedure di Correzione
 
-Se trovi un `RelationManager` o una pagina `Manage*` che implementa il metodo `table()`:
+Se trovi un `RelationManager` che implementa il metodo `table()`:
 
 1. **Elimina completamente** il metodo `table()`
 2. **Crea o aggiorna** i metodi `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()` e `getTableBulkActions()`

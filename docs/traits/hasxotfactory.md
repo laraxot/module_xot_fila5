@@ -260,29 +260,6 @@ use HasXotFactory;
 use HasXotFactory;
 ```
 
-### HasFactory ridondante (ereditarietà)
-
-**Problema**: Aggiungere `use HasFactory` a modelli che estendono `BaseModel` del modulo.
-
-**Causa**: La catena di ereditarietà è: `Modello → BaseModel → XotBaseModel`. `XotBaseModel` usa già `HasXotFactory`, che usa `EloquentHasFactory` (HasFactory). La factory è già disponibile.
-
-**Soluzione**:
-```php
-// ❌ ERRATO - Ridondante
-class Team extends BaseTeam
-{
-    use HasFactory;  // ← NON SERVE! BaseTeam → BaseModel → XotBaseModel → HasXotFactory
-}
-
-// ✅ CORRETTO - Ereditato già dalla catena
-class Team extends BaseTeam
-{
-    // Nessun use HasFactory necessario
-}
-```
-
-**Catena**: `Team → BaseTeam → BaseModel → XotBaseModel` (usa `HasXotFactory` → `HasFactory`).
-
 ## Best Practices
 
 ### 1. Usa HasXotFactory in moduli custom
