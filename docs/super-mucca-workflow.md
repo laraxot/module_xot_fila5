@@ -21,7 +21,7 @@
 **TUTTI gli errori vanno corretti, NESSUNO ignorato**
 
 - Mai `@phpstan-ignore`
-- Mai modificare `phpstan.neon` per abbassare livello
+- Mai modificare `laravel/phpstan.neon` — è l'unico file di config, NON toccarlo, NON creare altri
 - Mai baseline per nascondere errori
 - Approccio: **Fix, don't ignore**
 

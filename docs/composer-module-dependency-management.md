@@ -21,6 +21,7 @@ This document outlines the best practices and mandatory rules for managing Compo
 *   **Description**: All new Composer packages that are specific to a particular module (e.g., a calendar package for the `Meetup` module, a payment gateway for a `Billing` module) **must be installed within that module's `composer.json` file**, located at `Modules/{ModuleName}/composer.json`.
 *   **Motivation**: This practice ensures proper dependency encapsulation, prevents the root `composer.json` from becoming bloated with module-specific concerns, and aligns with the modular design philosophy. It leverages the `wikimedia/composer-merge-plugin` to correctly integrate these dependencies.
 *   **Esempio OAuth/Login (Modules/User/composer.json)**: Package come `socialiteproviders/microsoft`, `socialiteproviders/auth0` vanno nel modulo User perché riguardano autenticazione/login.
+*   **Esempio Firebase/FCM (Modules/Notify/composer.json)**: Package come `kreait/laravel-firebase`, `laravel-notification-channels/fcm` vanno nel modulo Notify perché riguardano notifiche push. **MAI** metterli nel root `laravel/composer.json`.
 *   **Example (`Modules/Meetup/composer.json`)**:
     ```json
     {

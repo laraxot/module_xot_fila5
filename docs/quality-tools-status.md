@@ -13,7 +13,7 @@ Verificare e configurare tutti i tool di qualità del codice:
 **SUCCESSO TOTALE**: 0 errori PHPStan Level 10 su tutti i moduli!
 
 ### Configurazione
-- File: `phpstan.neon` (nella root Laravel)
+- File: `laravel/phpstan.neon` (unico file di config, **NON modificare**, NON creare altri)
 - Livello: max (Level 10)
 - Memoria: illimitata (`--memory-limit=-1`)
 
