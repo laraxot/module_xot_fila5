@@ -8,11 +8,20 @@ use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecord
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+<<<<<<< HEAD
 use Filament\Forms\Concerns\InteractsWithForms;
+=======
+use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
+>>>>>>> 2253954 (.)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Filament\Traits\HasXotForm;
+use Modules\Xot\Filament\Traits\HasXotTable;
+>>>>>>> 2253954 (.)
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
 
@@ -23,7 +32,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
     use HasXotForm;
     use HasXotTable;
-    use InteractsWithForms;
     use NavigationLabelTrait;
 
     // protected static string $resource;
@@ -84,7 +92,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Restituisce l'heading della tabella.
      * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
      */
-    protected function getTableHeading(): Htmlable|string|null
+    protected function getTableHeading(): \Illuminate\Contracts\Support\Htmlable|string|null
     {
         return $this->getTableHeadingFromTrait();
     }
@@ -107,7 +115,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * @return array<string, TextColumn>
      */
     #[Override]
-    public function getTableColumns(): array
+    protected function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->label('ID')->sortable(),
@@ -128,14 +136,24 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, Action>
      */
-    public function getTableHeaderActions(): array
+    protected function getTableHeaderActions(): array
     {
         return [
             'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
         ];
     }
 
+<<<<<<< HEAD
     public static function getNavigationLabel(): string
+=======
+    /**
+     * Definisce le azioni per ogni riga della tabella.
+     * Questo metodo può essere sovrascritto nelle classi figlie.
+     *
+     * @return array<string, Action>
+     */
+    protected function getTableActions(): array
+>>>>>>> 2253954 (.)
     {
         return static::transFunc(__FUNCTION__);
     }
