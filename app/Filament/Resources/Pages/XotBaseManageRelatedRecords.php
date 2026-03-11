@@ -16,7 +16,7 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
 
 /**
- * ---
+ * ---.
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -97,7 +97,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-    #[Override]
+    #[\Override]
     protected function getTableColumns(): array
     {
         return [

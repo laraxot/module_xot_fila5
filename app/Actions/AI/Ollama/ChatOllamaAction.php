@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\AI\Ollama;
 
-use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
@@ -68,7 +67,7 @@ class ChatOllamaAction
             ];
         } catch (GuzzleException $e) {
             Log::error('Ollama Chat API error', ['error' => $e->getMessage()]);
-            throw new Exception('Ollama API error: ' . $e->getMessage());
+            throw new \Exception('Ollama API error: '.$e->getMessage());
         }
     }
 
