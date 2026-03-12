@@ -8,9 +8,10 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
 use Safe\Exceptions\JsonException;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\json_decode;
+
+use Spatie\QueueableAction\QueueableAction;
 
 class GenerateOllamaAction
 {
@@ -41,6 +42,7 @@ class GenerateOllamaAction
      *     stream?: bool,
      *     options?: array<string, float|int>
      * } $options
+     *
      * @return array{
      *     response: string,
      *     done: bool,
@@ -63,7 +65,6 @@ class GenerateOllamaAction
 
         try {
             $response = $this->client->post('/api/generate', ['json' => $payload]);
-            /** @var mixed $decoded */
             $decoded = json_decode($response->getBody()->getContents(), true);
             $data = $decoded;
             if (! is_array($data)) {
