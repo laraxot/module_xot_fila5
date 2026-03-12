@@ -27,6 +27,6 @@ La governance corretta e' una sola: **livello MAX sempre**.
 ## Collegamenti
 
 - [Xot docs index](./README.md)
-- [Project error-fix workflow](../../../../docs/project/ERROR_FIX_WORKFLOW.md)
+- [Project error-fix workflow](../../../project_docs/ERROR_FIX_WORKFLOW.md)
 - [GitHub issue #1](https://github.com/laraxot/base_predict_fila5/issues/1)
 - [GitHub discussion #2](https://github.com/laraxot/base_predict_fila5/discussions/2)

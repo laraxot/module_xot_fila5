@@ -22,7 +22,7 @@ use Webmozart\Assert\Assert;
  *
  * @method static Builder when($value = null, callable $callback = null, callable $default = null)
  * @method static Builder whereBetween($column, iterable<int, mixed> $values, $boolean = 'and', $not = false)
- * @method static Builder selectRaw($expression, array<int, mixed> $bindings = [])                            ;
+ * @method static Builder selectRaw($expression, array<int, mixed> $bindings = []) ;
  * @method static Builder where($column, $operator = null, $value = null, $boolean = 'and')
  */
 class CustomRelation extends Relation
@@ -37,15 +37,15 @@ class CustomRelation extends Relation
         /**
          * The baseConstraints callback.
          */
-        protected \Closure $baseConstraints,
+        protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
          */
-        protected ?\Closure $eagerConstraints,
+        protected ?Closure $eagerConstraints,
         /**
          * The eager constraints model matcher.
          */
-        protected ?\Closure $eagerMatcher,
+        protected ?Closure $eagerMatcher,
     ) {
         parent::__construct($query, $model);
     }
@@ -99,8 +99,10 @@ class CustomRelation extends Relation
         Assert::isArray($res);
         Assert::allIsInstanceOf($res, Model::class);
 
-        /* @var array<int, Model> $res */
-        return $res;
+        /** @var array<int, Model> $models */
+        $models = array_values($res);
+
+        return $models;
     }
 
     /**

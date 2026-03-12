@@ -91,12 +91,11 @@ trait HasXotTable
                 ->icon('heroicon-o-paper-clip');
         }
 
-        if (method_exists($resource, 'canAttach')) {
+        if (is_object($resource) && method_exists($resource, 'canAttach')) {
             $actions['attach'] = AttachAction::make()
                 ->icon('heroicon-o-link')
                 ->iconButton()
-                ->visible(fn (): bool => (bool) $resource->canAttach())
-            ;
+                ->visible(fn (): bool => (bool) $resource->canAttach());
         }
 
         $actions['layout'] = TableLayoutToggleTableAction::make('layout');
@@ -216,12 +215,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if (null !== $sortColumn && null !== $sortDirection) {
+        if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if (null !== $pollInterval) {
+        if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
         }
 
@@ -351,9 +350,10 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
+     *
+     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {

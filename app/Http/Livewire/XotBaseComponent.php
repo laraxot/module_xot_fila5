@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Http\Livewire;
 
 // use Illuminate\Support\Carbon;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
