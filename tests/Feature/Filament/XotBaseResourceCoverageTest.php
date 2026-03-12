@@ -33,8 +33,7 @@ it('covers default page discovery including optional view page', function (): vo
 });
 
 it('covers translation helper key normalization', function (): void {
-    app()->instance(GetTransKeyAction::class, new class
-    {
+    app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
             return 'probe.cluster.pages.item_widget';
@@ -45,8 +44,7 @@ it('covers translation helper key normalization', function (): void {
 });
 
 it('covers translation helper edit and widget normalization branches', function (): void {
-    app()->instance(GetTransKeyAction::class, new class
-    {
+    app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
             return 'edit_';
@@ -55,8 +53,7 @@ it('covers translation helper edit and widget normalization branches', function 
 
     expect(ProbeResource::callGetKeyTrans('name'))->toBe('.name');
 
-    app()->instance(GetTransKeyAction::class, new class
-    {
+    app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
             return 'probe';
@@ -67,8 +64,7 @@ it('covers translation helper edit and widget normalization branches', function 
 });
 
 it('covers translation helper string path and missing key fallback', function (): void {
-    app()->instance(GetTransKeyAction::class, new class
-    {
+    app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
             return 'probe.messages';
@@ -82,8 +78,7 @@ it('covers translation helper string path and missing key fallback', function ()
 });
 
 it('covers translation helper array and fix fallback branches', function (): void {
-    app()->instance(GetTransKeyAction::class, new class
-    {
+    app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
             return 'probe.arr';
@@ -100,8 +95,7 @@ it('covers translation helper array and fix fallback branches', function (): voi
 });
 
 it('covers translation helper exception branch', function (): void {
-    app()->instance(GetTransKeyAction::class, new class
-    {
+    app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
             return 'probe.exceptions';
@@ -112,8 +106,7 @@ it('covers translation helper exception branch', function (): void {
 })->throws(\Exception::class);
 
 it('covers navigation badge success and fallback', function (): void {
-    app()->instance(CountAction::class, new class
-    {
+    app()->instance(CountAction::class, new class {
         public function execute(string $class): int
         {
             return 42;
@@ -122,8 +115,7 @@ it('covers navigation badge success and fallback', function (): void {
 
     expect(ProbeResource::getNavigationBadge())->toBe('42');
 
-    app()->instance(CountAction::class, new class
-    {
+    app()->instance(CountAction::class, new class {
         public function execute(string $class): int
         {
             throw new \Exception('boom');
@@ -134,8 +126,7 @@ it('covers navigation badge success and fallback', function (): void {
 });
 
 it('covers get attachments schema branches', function (): void {
-    $resourceNoAttachments = new class extends XotBaseResource
-    {
+    $resourceNoAttachments = new class extends XotBaseResource {
         protected static ?string $model = Probe::class;
 
         public static function getFormSchema(): array
@@ -150,8 +141,7 @@ it('covers get attachments schema branches', function (): void {
         eval(' class ProbeBadAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): string { return "invalid"; } }');
     }
 
-    $resourceBadAttachments = new class extends XotBaseResource
-    {
+    $resourceBadAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeBadAttachments::class;
 
         public static function getFormSchema(): array
@@ -166,11 +156,10 @@ it('covers get attachments schema branches', function (): void {
         eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
     }
 
-    app()->instance(GetAttachmentsSchemaAction::class, new class
-    {
+    app()->instance(GetAttachmentsSchemaAction::class, new class {
         public function execute(array $attachments, string $disk): array
         {
-            if ($attachments !== ['one', 'two'] || $disk !== 'attachments') {
+            if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
                 throw new \RuntimeException('unexpected attachments payload');
             }
 
@@ -178,8 +167,7 @@ it('covers get attachments schema branches', function (): void {
         }
     });
 
-    $resourceGoodAttachments = new class extends XotBaseResource
-    {
+    $resourceGoodAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeGoodAttachments::class;
 
         public static function getFormSchema(): array
@@ -212,7 +200,7 @@ it('covers step builder branches', function (): void {
 });
 
 it('covers simple base helpers', function (): void {
-    $resource = new ProbeResource;
+    $resource = new ProbeResource();
 
     expect(ProbeResource::getModuleName())->toStartWith('Xot')
         ->and($resource->hasCombinedRelationManagerTabsWithContent())->toBeTrue()

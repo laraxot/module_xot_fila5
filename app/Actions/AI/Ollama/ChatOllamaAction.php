@@ -8,9 +8,10 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
 use Safe\Exceptions\JsonException;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\json_decode;
+
+use Spatie\QueueableAction\QueueableAction;
 
 class ChatOllamaAction
 {
@@ -42,6 +43,7 @@ class ChatOllamaAction
      *     think?: string,
      *     options?: array<string, float|int>
      * } $options
+     *
      * @return array{
      *     content: string,
      *     thinking: string|null,
@@ -72,7 +74,6 @@ class ChatOllamaAction
 
         try {
             $response = $this->client->post('/api/chat', ['json' => $payload]);
-            /** @var mixed $decoded */
             $decoded = json_decode($response->getBody()->getContents(), true);
             $data = $decoded;
             if (! is_array($data)) {
