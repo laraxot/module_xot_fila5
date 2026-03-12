@@ -30,4 +30,4 @@ Regola architetturale canonica del progetto:
 ## Riferimenti
 
 - [product-docs-governance.md](../product-docs-governance.md)
-- [PRODUCT_DOCS_INDEX_2026_03_12.md](../../../project_docs/PRODUCT_DOCS_INDEX_2026_03_12.md)
+- [PRODUCT_DOCS_INDEX_2026_03_12.md](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
