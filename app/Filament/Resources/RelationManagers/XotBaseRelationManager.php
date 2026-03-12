@@ -44,7 +44,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
-        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
+        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
             return static::$resource;
         }
 
@@ -173,7 +173,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if ($record === null) {
+                if (null === $record) {
                     return false;
                 }
 
@@ -183,7 +183,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if ($record === null) {
+                if (null === $record) {
                     return false;
                 }
 
@@ -259,9 +259,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-    public function canDeleteBulk(Model|stdClass|null $record): bool
+    public function canDeleteBulk(Model|\stdClass|null $record): bool
     {
-        if ($record instanceof stdClass) {
+        if ($record instanceof \stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -272,9 +272,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-    public function canDetachBulk(Model|stdClass|null $record): bool
+    public function canDetachBulk(Model|\stdClass|null $record): bool
     {
-        if ($record instanceof stdClass) {
+        if ($record instanceof \stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
