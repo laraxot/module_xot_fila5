@@ -19,4 +19,4 @@ Regola operativa per questo repository:
 
 ## Indice centrale
 
-- [PRODUCT_DOCS_INDEX_2026_03_12.md](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+- [PRODUCT_DOCS_INDEX_2026_03_12.md](../../../project_docs/PRODUCT_DOCS_INDEX_2026_03_12.md)
