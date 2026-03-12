@@ -7,7 +7,10 @@ namespace Modules\Xot\Actions\AI\Ollama;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
+use Safe\Exceptions\JsonException;
 use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\json_decode;
 
 class ChatOllamaAction
 {
@@ -15,6 +18,7 @@ class ChatOllamaAction
 
     private Client $client;
 
+    /** @var array<string, float|int> */
     private array $defaultOptions = [
         'num_predict' => 256,
         'temperature' => 0.3,
@@ -31,14 +35,34 @@ class ChatOllamaAction
         ]);
     }
 
+    /**
+     * @param array{
+     *     model?: string,
+     *     stream?: bool,
+     *     think?: string,
+     *     options?: array<string, float|int>
+     * } $options
+     * @return array{
+     *     content: string,
+     *     thinking: string|null,
+     *     done: bool,
+     *     tokens: array{prompt: int, generated: int, total: int},
+     *     duration: array{total: int, prompt: int, generation: int}
+     * }
+     */
     public function execute(string $message, array $options = []): array
     {
+        $optionOverrides = $options['options'] ?? [];
+        if (! is_array($optionOverrides)) {
+            $optionOverrides = [];
+        }
+
         $payload = [
             'model' => $options['model'] ?? config('services.ollama.model', 'qwen2.5'),
             'messages' => [
                 ['role' => 'user', 'content' => $message],
             ],
-            'options' => array_merge($this->defaultOptions, $options['options'] ?? []),
+            'options' => array_merge($this->defaultOptions, $optionOverrides),
             'stream' => $options['stream'] ?? false,
         ];
 
@@ -48,26 +72,33 @@ class ChatOllamaAction
 
         try {
             $response = $this->client->post('/api/chat', ['json' => $payload]);
-            $data = json_decode($response->getBody()->getContents(), true);
+            /** @var mixed $decoded */
+            $decoded = json_decode($response->getBody()->getContents(), true);
+            $data = $decoded;
+            if (! is_array($data)) {
+                $data = [];
+            }
+
+            $messageData = isset($data['message']) && is_array($data['message']) ? $data['message'] : [];
 
             return [
-                'content' => $data['message']['content'] ?? '',
-                'thinking' => $data['message']['thinking'] ?? null,
-                'done' => $data['done'] ?? false,
+                'content' => is_string($messageData['content'] ?? null) ? $messageData['content'] : '',
+                'thinking' => is_string($messageData['thinking'] ?? null) ? $messageData['thinking'] : null,
+                'done' => (bool) ($data['done'] ?? false),
                 'tokens' => [
-                    'prompt' => $data['prompt_eval_count'] ?? 0,
-                    'generated' => $data['eval_count'] ?? 0,
-                    'total' => ($data['prompt_eval_count'] ?? 0) + ($data['eval_count'] ?? 0),
+                    'prompt' => (int) ($data['prompt_eval_count'] ?? 0),
+                    'generated' => (int) ($data['eval_count'] ?? 0),
+                    'total' => (int) ($data['prompt_eval_count'] ?? 0) + (int) ($data['eval_count'] ?? 0),
                 ],
                 'duration' => [
-                    'total' => $data['total_duration'] ?? 0,
-                    'prompt' => $data['prompt_eval_duration'] ?? 0,
-                    'generation' => $data['eval_duration'] ?? 0,
+                    'total' => (int) ($data['total_duration'] ?? 0),
+                    'prompt' => (int) ($data['prompt_eval_duration'] ?? 0),
+                    'generation' => (int) ($data['eval_duration'] ?? 0),
                 ],
             ];
-        } catch (GuzzleException $e) {
+        } catch (GuzzleException|JsonException $e) {
             Log::error('Ollama Chat API error', ['error' => $e->getMessage()]);
-            throw new \Exception('Ollama API error: '.$e->getMessage());
+            throw new \RuntimeException('Ollama API error: '.$e->getMessage(), 0, $e);
         }
     }
 

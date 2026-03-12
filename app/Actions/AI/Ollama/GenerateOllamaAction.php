@@ -7,7 +7,10 @@ namespace Modules\Xot\Actions\AI\Ollama;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
+use Safe\Exceptions\JsonException;
 use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\json_decode;
 
 class GenerateOllamaAction
 {
@@ -15,6 +18,7 @@ class GenerateOllamaAction
 
     private Client $client;
 
+    /** @var array<string, float|int> */
     private array $defaultOptions = [
         'num_predict' => 256,
         'temperature' => 0.3,
@@ -31,30 +35,52 @@ class GenerateOllamaAction
         ]);
     }
 
+    /**
+     * @param array{
+     *     model?: string,
+     *     stream?: bool,
+     *     options?: array<string, float|int>
+     * } $options
+     * @return array{
+     *     response: string,
+     *     done: bool,
+     *     tokens: array{prompt: int, generated: int}
+     * }
+     */
     public function execute(string $prompt, array $options = []): array
     {
+        $optionOverrides = $options['options'] ?? [];
+        if (! is_array($optionOverrides)) {
+            $optionOverrides = [];
+        }
+
         $payload = [
             'model' => $options['model'] ?? config('services.ollama.model', 'qwen2.5'),
             'prompt' => $prompt,
-            'options' => array_merge($this->defaultOptions, $options['options'] ?? []),
+            'options' => array_merge($this->defaultOptions, $optionOverrides),
             'stream' => $options['stream'] ?? false,
         ];
 
         try {
             $response = $this->client->post('/api/generate', ['json' => $payload]);
-            $data = json_decode($response->getBody()->getContents(), true);
+            /** @var mixed $decoded */
+            $decoded = json_decode($response->getBody()->getContents(), true);
+            $data = $decoded;
+            if (! is_array($data)) {
+                $data = [];
+            }
 
             return [
-                'response' => $data['response'] ?? '',
-                'done' => $data['done'] ?? false,
+                'response' => is_string($data['response'] ?? null) ? $data['response'] : '',
+                'done' => (bool) ($data['done'] ?? false),
                 'tokens' => [
-                    'prompt' => $data['prompt_eval_count'] ?? 0,
-                    'generated' => $data['eval_count'] ?? 0,
+                    'prompt' => (int) ($data['prompt_eval_count'] ?? 0),
+                    'generated' => (int) ($data['eval_count'] ?? 0),
                 ],
             ];
-        } catch (GuzzleException $e) {
+        } catch (GuzzleException|JsonException $e) {
             Log::error('Ollama Generate API error', ['error' => $e->getMessage()]);
-            throw new \Exception('Ollama API error: '.$e->getMessage());
+            throw new \RuntimeException('Ollama API error: '.$e->getMessage(), 0, $e);
         }
     }
 
