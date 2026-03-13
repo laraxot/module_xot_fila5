@@ -4,6 +4,8 @@
 - [**README.md**](readme.md) - General overview
 - [**Architecture**](architecture/architecture.md) - System architecture
 - [**Best Practices**](best-practices/best-practices.md) - Development guidelines
+- Docs-first governance: before editing code, study and improve local module docs and the active theme docs, then align global `docs/*` and evaluate GitHub Issue/Discussion tracking.
+- Post-edit PHP quality gate: after changing a PHP file, run `phpstan`, `phpmd`, `phpinsights`, then review/create the associated Pest test when the behavior is testable.
 
 ## 📖 Documentation by Category
 
@@ -37,6 +39,7 @@
 - [Testing Strategy](testing/testing-strategy.md)
 - [Complete Testing Guide](testing/testing.md)
 - [PHPStan Complete Guide](phpstan/phpstan-complete-guide.md)
+- [PHPStan Runtime Governance](phpstan-runtime-governance.md)
 
 ### 🌐 Translations & Localization
 - [Translation System](translations/translation-system.md)

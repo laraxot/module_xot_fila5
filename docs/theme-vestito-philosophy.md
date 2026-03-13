@@ -53,9 +53,9 @@ Themes/[ThemeName]/
 │   │   ├── layouts/
 │   │   └── pages/
 <<<<<<< .merge_file_jyGVlO
-├── _healthcare_app_fila4_mono.code-workspace
+├── _healthcare_app_fila5_mono.code-workspace
 =======
-├── _ptvx_fila4_mono.code-workspace
+├── _ptvx_fila5_mono.code-workspace
 >>>>>>> .merge_file_Y2wPxU
 ├── package.json
 ├── postcss.config.js
@@ -297,7 +297,7 @@ Themes implement accessibility features while maintaining module functionality:
 
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
-- Predictable view resolution
+- <nome progetto>able view resolution
 - Clear separation of concerns
 - Minimal configuration needed
 
