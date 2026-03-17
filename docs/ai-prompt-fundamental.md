@@ -1,5 +1,8 @@
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
 # Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono
+=======
+# Regole Fondamentali per Prompt AI - ModuloEsempio Fila5 Mono
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QZJXII
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
@@ -13,6 +16,9 @@ Tutti i prompt per generazione di codice, test, o modifiche devono includere que
 ```
 Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
 Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
+=======
+Create/Update code for ModuloEsempio Fila5 Mono with these CRITICAL rules:
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QZJXII
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
@@ -29,6 +35,9 @@ Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
 ```
 Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
 Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
+=======
+Create test for ProfileService in ModuloEsempio Fila5 Mono with these rules:
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QZJXII
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
@@ -41,6 +50,9 @@ Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
 ```
 Create ProfileService for healthcare_app Fila5 Mono following these patterns:
 Create ProfileService for ExternalProject Fila5 Mono following these patterns:
+=======
+Create ProfileService for ModuloEsempio Fila5 Mono following these patterns:
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QZJXII
 - Use Spatie QueueableAction pattern, not static service classes
 - Implement getOrCreateProfile with race condition handling:
@@ -54,6 +66,9 @@ Create ProfileService for ExternalProject Fila5 Mono following these patterns:
 ```
 Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono:
 Create Filament resource extending XotBaseResource for ExternalProject Fila5 Mono:
+=======
+Create Filament resource extending XotBaseResource for ModuloEsempio Fila5 Mono:
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QZJXII
 - Extend XotBaseResource, never Filament Resource directly
 - Implement getFormSchema() returning array
@@ -90,6 +105,11 @@ healthcare_app module specific requirements:
 ### Modulo ExternalProject
 ```
 ExternalProject module specific requirements:
+=======
+### Modulo ModuloEsempio
+```
+ModuloEsempio module specific requirements:
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_QZJXII
 - LimeSurvey integration with proper MySQL connections
 - Use SurveyResponse scopes, never direct table access

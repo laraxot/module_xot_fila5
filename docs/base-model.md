@@ -72,6 +72,9 @@ Each module has its own BaseModel that extends XotBaseModel:
 ```php
 // Example from healthcare_app module
 // Example from ExternalProject module
+=======
+// Example from ModuloEsempio module
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_MDxGG7
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
@@ -109,6 +112,9 @@ class SurveyPdf extends XotBaseModel // Never do this!
 ```php
 // In healthcare_app module
 // In ExternalProject module
+=======
+// In ModuloEsempio module
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_MDxGG7
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```

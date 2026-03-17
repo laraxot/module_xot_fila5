@@ -760,7 +760,12 @@ class ConnectionManagerService
     {
         return match($module) {
             'healthcare_app' => 'healthcare_app',
+=======
+<<<<<<< HEAD
             'ExternalProject' => '<nome progetto>',
+=======
+            'ModuloEsempio' => 'ptvx',
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
             'User' => 'user',
             'Notify' => 'notify',
@@ -846,6 +851,9 @@ class ContactValidationService
 ```php
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
+=======
+// Modules/ModuloEsempio/Contracts/ChartRendererContract.php
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
 interface ChartRendererContract
 {
@@ -855,6 +863,9 @@ interface ChartRendererContract
 
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
+=======
+// Modules/ModuloEsempio/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
 class PieChartRenderer implements ChartRendererContract
 {
@@ -1023,6 +1034,9 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 ```php
 // Modules/healthcare_app/Services/BulkProcessingService.php
 // Modules/ExternalProject/Services/BulkProcessingService.php
+=======
+// Modules/ModuloEsempio/Services/BulkProcessingService.php
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_szY6ZB
 class BulkProcessingService
 {

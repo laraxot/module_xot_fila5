@@ -355,6 +355,9 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
+=======
+- Namespace: `Modules\ExternalProject\Models\*` → Connection: `<nome progetto>`
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
@@ -1176,6 +1179,9 @@ public function getConnectionName(): ?string
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
+=======
+- Namespace: `Modules\ExternalProject\Models\*` → Connection: `<nome progetto>`
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 

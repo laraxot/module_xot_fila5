@@ -172,6 +172,10 @@ $result = $model->traitMethod();
 - [healthcare_app Corrections Parte 1](../healthcare_app/docs/phpstan-corrections-january-2026.md)
 - [healthcare_app Corrections Parte 2](../healthcare_app/docs/phpstan-corrections-january-2026-part2.md)
 - [PHPStan Code Quality Guide](../phpstan-code-quality-guide.md)
+=======
+- [ExternalProject Corrections Parte 1](../<nome progetto>/docs/phpstan-corrections-january-2026.md)
+- [ExternalProject Corrections Parte 2](../<nome progetto>/docs/phpstan-corrections-january-2026-part2.md)
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_o5BQpr
 
 ---

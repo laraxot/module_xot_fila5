@@ -38,6 +38,9 @@
 
 #### 3. **healthcare_app Module - Business Core**
 #### 3. **ExternalProject Module - Business Core**
+=======
+#### 3. **ModuloEsempio Module - Business Core**
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mjdk5z
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
@@ -232,6 +235,9 @@
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, healthcare_app
 **Dependencies**: Xot, ExternalProject
+=======
+**Dependencies**: Xot, ModuloEsempio
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mjdk5z
 
 **Key Components**:
@@ -282,6 +288,9 @@ Xot (Foundation)
 │   └── Tenant (Multi-tenancy)
 ├── healthcare_app (Business Core)
 ├── ExternalProject (Business Core)
+=======
+├── ModuloEsempio (Business Core)
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mjdk5z
 │   ├── Geo (Locations)
 │   ├── Media (Files)
@@ -393,6 +402,9 @@ public function register(): void
 - **UI**: Mixed test structure issues
 - **healthcare_app**: Missing module.json description
 - **ExternalProject**: Missing module.json description
+=======
+- **ModuloEsempio**: Missing module.json description
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mjdk5z
 
 #### 🔧 Technical Debt
@@ -406,6 +418,9 @@ public function register(): void
 - **User**: Authentication checks on every request
 - **healthcare_app**: Survey processing and reporting
 - **ExternalProject**: Survey processing and reporting
+=======
+- **ModuloEsempio**: Survey processing and reporting
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_mjdk5z
 - **Media**: File uploads and conversions
 - **Job**: Background processing

@@ -488,6 +488,9 @@ public static function getInstance(): self
 #### Connection Hardcoded Duplicata
 **Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
 **Problema**: `protected $connection = 'modulo_esempio';` ripetuto in tutti i modelli ModuloEsempio
+=======
+**Problema**: `protected $connection = '<nome progetto>';` ripetuto in tutti i modelli ExternalProject
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 >>>>>>> .merge_file_jGJkYm
 **Soluzione**: Centralizzare in BaseModel o configurazione
 

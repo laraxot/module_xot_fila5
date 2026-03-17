@@ -7,6 +7,9 @@
 #### Modules Without README.md
 - [ ] **healthcare_app** - Core business module needs comprehensive documentation
 - [ ] **ExternalProject** - Core business module needs comprehensive documentation
+=======
+- [ ] **ModuloEsempio** - Core business module needs comprehensive documentation
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_1GJSCv
 - [ ] **Limesurvey** - External integration documentation missing
 - [ ] **CloudStorage** - Cloud service integration patterns undocumented
@@ -232,6 +235,9 @@ php artisan laraxot:make:resource CustomerResource --module=CustomerManagement
 #### 1.1 Module Documentation (Weeks 1-2)
 - [ ] Create comprehensive README.md for healthcare_app module
 - [ ] Create comprehensive README.md for ExternalProject module
+=======
+- [ ] Create comprehensive README.md for ModuloEsempio module
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_1GJSCv
 - [ ] Document Limesurvey integration patterns
 - [ ] Create CloudStorage service documentation

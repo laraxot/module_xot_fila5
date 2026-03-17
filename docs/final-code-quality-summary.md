@@ -66,6 +66,9 @@ if (property_exists($stateObject, 'name')) {
 - **Cms**: Content management system
 - **healthcare_app**: Main application module
 - **ExternalProject**: Main application module
+=======
+- **ModuloEsempio**: Main application module
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_2nxxAY
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging

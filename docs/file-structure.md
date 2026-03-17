@@ -169,6 +169,9 @@ Modules/
 │   └── app/
 └── healthcare_app/
 └── ExternalProject/
+=======
+└── ModuloEsempio/
+>>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_WGxfyj
     ├── database/
     │   ├── factories/

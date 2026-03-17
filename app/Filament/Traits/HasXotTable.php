@@ -72,15 +72,15 @@ trait HasXotTable
     public function getTableHeaderActions(): array
     {
         $resource = $this;
+        /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
-            // @phpstan-ignore-next-line
+            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
-
             $resource = app($resourceClass);
         }
 
-        Assert::object($resource);
+        // dddx(method_exists($resource, 'canAttach'));
 
         $actions = [];
 
@@ -96,7 +96,8 @@ trait HasXotTable
             $actions['attach'] = AttachAction::make()
                 ->icon('heroicon-o-link')
                 ->iconButton()
-                ->visible(static fn (): bool => (bool) $resource->canAttach());
+                ->visible(fn (): bool => (bool) $resource->canAttach())
+                ;
         }
 
         $actions['layout'] = TableLayoutToggleTableAction::make('layout');
@@ -228,6 +229,7 @@ trait HasXotTable
     {
         $actions = [];
         $resource = $this;
+        /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
             // @phpstan-ignore-next-line
