@@ -112,7 +112,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
                 $totalTime = array_sum($times);
 
                 if ($totalQueries > 50 || $totalTime > 1000) {
-                    Log::info('High query count or time detected', [
+                    Log::debug('High query count or time detected', [
                         'total_queries' => $totalQueries,
                         'total_time' => $totalTime,
                         'url' => request()->fullUrl(),
@@ -247,7 +247,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
             return str_contains($path, '/admin') ||
                    str_ends_with($path, '/admin') ||
-                   preg_match('/\/(user|techplanner|cms|geo|notify|tenant)\/admin/', $path);
+                   preg_match('/\/(user|<nome progetto>|cms|geo|notify|tenant)\/admin/', $path);
         }
 
         return false;
