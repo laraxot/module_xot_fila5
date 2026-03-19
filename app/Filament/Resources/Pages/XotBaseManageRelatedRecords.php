@@ -11,6 +11,7 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
@@ -76,7 +77,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Restituisce l'heading della tabella.
      * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
      */
-    protected function getTableHeading(): Htmlable|string|null
+protected function getTableHeading(): Htmlable|string|null
     {
         return $this->getTableHeadingFromTrait();
     }
@@ -98,7 +99,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-    #[\Override]
+#[\Override]
     protected function getTableColumns(): array
     {
         return [
@@ -127,7 +128,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         ];
     }
 
-    /**
+/**
      * Definisce le azioni per ogni riga della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
@@ -136,10 +137,5 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     protected function getTableActions(): array
     {
         return [];
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return static::transFunc(__FUNCTION__);
     }
 }
