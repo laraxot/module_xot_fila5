@@ -245,7 +245,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         if (! app()->runningInConsole() && request()) {
             $path = request()->path();
 
-            return str_contains($path, '/admin')
+return str_contains($path, '/admin')
                    || str_ends_with($path, '/admin')
                    || preg_match('/\/(user|<nome progetto>|cms|geo|notify|tenant)\/admin/', $path);
         }
