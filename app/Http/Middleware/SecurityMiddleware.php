@@ -211,12 +211,39 @@ class SecurityMiddleware
 
         $csp = [
             "default-src 'self'",
+<<<<<<< Updated upstream
             "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com",
+||||||| Stash base
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com",
+=======
+            // Alpine.js + Livewire need 'unsafe-eval', Analytics + GSAP need cdn domains
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com",
+            // Tailwind needs Google Fonts + CDN
+>>>>>>> Stashed changes
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net",
+<<<<<<< Updated upstream
             "font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net",
             "img-src 'self' data: https: http: blob:",
+||||||| Stash base
+            "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
+            "img-src 'self' data: https: blob:",
+=======
+            // Browser extensions (autofill) need data: fonts
+            "font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net",
+            // Images: allow data: for base64, https: for external
+            "img-src 'self' data: https: blob:",
+            // Media: allow blob: for video/audio
+>>>>>>> Stashed changes
             "media-src 'self' blob:",
+<<<<<<< Updated upstream
             'connect-src '.implode(' ', array_unique($connectSources)),
+||||||| Stash base
+            "connect-src 'self' https: wss:",
+=======
+            // WebSocket + Analytics
+            "connect-src 'self' https: wss: https://www.google-analytics.com",
+            // No frames (security)
+>>>>>>> Stashed changes
             "frame-src 'none'",
             "object-src 'none'",
             "base-uri 'self'",
