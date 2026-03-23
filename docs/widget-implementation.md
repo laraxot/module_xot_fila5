@@ -1,7 +1,5 @@
 # Widget Implementation Rules - Xot Module
 
-Governance progetto: Form → XotBaseWidget, Griglia/Tabella → XotBaseTableWidget (ricerca, filtri, ordinamento). Vedi `docs/project/filament-form-table-widget-governance.md`.
-
 ## 🎯 Regole Fondamentali per Widget
 
 ### 1. **Tipi di Widget Disponibili**
@@ -419,8 +417,6 @@ class MyTableWidget extends XotBaseTableWidget
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 # Widget Implementation Rules - Xot Module
-
-Governance progetto: Form → XotBaseWidget, Griglia/Tabella → XotBaseTableWidget (ricerca, filtri, ordinamento). Vedi `docs/project/filament-form-table-widget-governance.md`.
 
 ## 🎯 Regole Fondamentali per Widget
 
