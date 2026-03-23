@@ -389,9 +389,7 @@ class User extends Model
 ```bash
 composer require --dev phpstan/phpstan
 composer require --dev larastan/larastan
-# PHPMD standalone `.phar` (non via Composer)
-curl -L https://phpmd.org/static/latest/phpmd.phar -o phpmd.phar
-chmod +x phpmd.phar
+composer require --dev phpmd/phpmd
 composer require --dev nunomaduro/phpinsights
 
 composer require webmozart/assert
@@ -420,7 +418,7 @@ php artisan ide-helper:models -W
 
 # Run checks
 ./vendor/bin/phpstan analyze --level=10
-php phpmd.phar app text phpmd.ruleset.xml
+./vendor/bin/phpmd app text phpmd.ruleset.xml
 php artisan insights
 ```
 
