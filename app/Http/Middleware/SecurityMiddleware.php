@@ -239,7 +239,7 @@ class SecurityMiddleware
         }
 
         $forwardedProto = request()->header('x-forwarded-proto');
-        if (is_string($forwardedProto) && strtolower($forwardedProto) === 'https') {
+        if (is_string($forwardedProto) && 'https' === strtolower($forwardedProto)) {
             return true;
         }
 
