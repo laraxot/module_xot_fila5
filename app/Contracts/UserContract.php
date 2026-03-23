@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
 use Laravel\Passport\TransientToken;
@@ -47,7 +46,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @mixin \Eloquent
  */
-interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable
+interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, MustVerifyEmail
 {
     /*
      * public function isSuperAdmin();

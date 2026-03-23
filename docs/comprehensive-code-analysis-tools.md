@@ -57,7 +57,11 @@ Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice dispo
 
 ```bash
 # Strumenti già installati
-composer require --dev phpstan/phpstan phpmd/phpmd friendsofphp/php-cs-fixer vimeo/psalm
+composer require --dev phpstan/phpstan friendsofphp/php-cs-fixer vimeo/psalm
+
+# PHPMD standalone `.phar` (non via Composer)
+curl -L https://phpmd.org/static/latest/phpmd.phar -o phpmd.phar
+chmod +x phpmd.phar
 
 # Strumenti aggiuntivi
 composer require --dev squizlabs/php_codesniffer
