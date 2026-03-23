@@ -208,7 +208,7 @@ describe('ModuleService Integration', function () {
     it('handles concurrent access correctly', function () {
         // Test multiple simultaneous calls
         $results = [];
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < 3; ++$i) {
             $service = new ModuleService('Xot');
             $results[] = $service->getModels();
         }
