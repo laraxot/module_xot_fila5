@@ -39,8 +39,7 @@ cd laravel
 ### Installazione Richiesta
 ```bash
 cd laravel
-curl -L https://phpmd.org/static/latest/phpmd.phar -o phpmd.phar
-chmod +x phpmd.phar
+composer require --dev phpmd/phpmd
 ```
 
 ### Configurazione Consigliata
@@ -62,7 +61,7 @@ Dopo installazione, creare `phpmd.xml`:
 
 ### Uso
 ```bash
-php phpmd.phar Modules text phpmd.xml
+./vendor/bin/phpmd Modules text phpmd.xml
 ```
 
 ### Problemi Noti
@@ -165,7 +164,7 @@ php -l path/to/modified/file.php
 ./vendor/bin/phpstan analyse Modules
 
 # 2. PHPMD (quando disponibile)
-php phpmd.phar Modules text phpmd.xml
+./vendor/bin/phpmd Modules text phpmd.xml
 
 # 3. PHPInsights (quando disponibile)
 ./vendor/bin/phpinsights analyse Modules --min-quality=90
@@ -180,7 +179,7 @@ php phpmd.phar Modules text phpmd.xml
 
 ## 🚀 Next Steps
 
-1. Installare PHPMD `.phar` (standalone): `curl -L https://phpmd.org/static/latest/phpmd.phar -o phpmd.phar && chmod +x phpmd.phar`
+1. Installare PHPMD: `composer require --dev phpmd/phpmd`
 2. Creare configurazione `phpmd.xml`
 3. Risolvere trait collision in `XotBasePage`
 4. Verificare e fixare PHPInsights configuration

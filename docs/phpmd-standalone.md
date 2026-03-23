@@ -1,6 +1,6 @@
 # PHPMD — Installazione Standalone
 
-**Versione**: v2.15.0+ (in `laravel/phpmd.phar`, con possibile copia in `laravel/tools/phpmd.phar`)
+**Versione**: v2.15.0+ (in `tools/phpmd.phar`)
 **Stato**: ✅ Installato
 
 ---
@@ -14,16 +14,14 @@ PHPMD (PHP Mess Detector) può avere dipendenze che confliggono con il core di L
 ## Utilizzo
 
 ```bash
-# Esegui da dentro la cartella `laravel/`
-
 # Versione
-php phpmd.phar --version
+php tools/phpmd.phar --version
 
-# Analisi di un modulo
-php phpmd.phar Modules/Rating/app text codesize,unusedcode,naming
+# Analisi di un modulo (usando il wrapper)
+bash tools/phpmd.sh Modules/Rating/app text codesize,unusedcode,naming
 
 # Analisi con ruleset specifico
-php phpmd.phar Modules/Rating/app text phpmd.ruleset.xml
+bash tools/phpmd.sh Modules/Rating/app text phpmd.ruleset.xml
 ```
 
 ---
@@ -32,9 +30,9 @@ php phpmd.phar Modules/Rating/app text phpmd.ruleset.xml
 
 ```
 laravel/
-├── phpmd.phar            # Eseguibile standalone (canonico)
-└── tools/
-    └── phpmd.phar        # Copia opzionale
+├── tools/
+│   ├── phpmd.sh          # Wrapper script
+│   └── phpmd.phar        # Eseguibile standalone
 ```
 
 ---
@@ -42,8 +40,8 @@ laravel/
 ## Aggiornamento
 
 ```bash
-curl -L https://phpmd.org/static/latest/phpmd.phar -o phpmd.phar
-chmod +x phpmd.phar
+curl -L https://phpmd.org/static/latest/phpmd.phar -o tools/phpmd.phar
+chmod +x tools/phpmd.phar
 ```
 
 ---
@@ -52,7 +50,7 @@ chmod +x phpmd.phar
 
 > [!IMPORTANT]
 > Quando devi eseguire PHPMD:
-> - **Usa**: `php phpmd.phar`
+> - **Usa**: `bash tools/phpmd.sh` o `php tools/phpmd.phar`
 > - **NON usare**: `./vendor/bin/phpmd`
 > - **NON aggiungere**: `phpmd/phpmd` nel `composer.json` principale se vuoi evitare conflitti.
 

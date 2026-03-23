@@ -32,12 +32,11 @@ PHPMD analizza il codice PHP per identificare:
 ### 📦 Installazione
 
 ```bash
-# Download standalone `.phar`
-curl -L https://phpmd.org/static/latest/phpmd.phar -o phpmd.phar
-chmod +x phpmd.phar
+# Installazione via Composer
+composer require --dev phpmd/phpmd
 
 # Verifica installazione
-php phpmd.phar --version
+./vendor/bin/phpmd --version
 ```
 
 ### ⚙️ Configurazione
