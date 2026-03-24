@@ -29,11 +29,8 @@ function rrmdir($dir)
     if (is_dir($dir)) {
         $objects = scandir($dir);
         foreach ($objects as $object) {
-<<<<<<< HEAD
-            if ('.' !== $object && '..' !== $object) {
-=======
             if ($object !== '.' && $object !== '..') {
->>>>>>> origin/dev
+
                 if (is_dir($dir.DIRECTORY_SEPARATOR.$object) && ! is_link($dir.'/'.$object)) {
                     rrmdir($dir.DIRECTORY_SEPARATOR.$object);
                 } else {
