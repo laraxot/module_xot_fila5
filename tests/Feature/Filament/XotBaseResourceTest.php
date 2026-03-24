@@ -12,7 +12,12 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class, RefreshDatabase::class);
 
 beforeEach(function () {
+<<<<<<< HEAD
     $this->resource = new class extends XotBaseResource {
+=======
+    $this->resource = new class extends XotBaseResource
+    {
+>>>>>>> origin/dev
         protected static ?string $model = null;
 
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
