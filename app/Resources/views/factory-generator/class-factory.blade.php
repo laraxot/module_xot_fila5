@@ -7,6 +7,10 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 <?php if (array_key_exists('remember_token', $properties)): ?>
 use Illuminate\Support\Str;
 <?php endif; ?>
@@ -31,3 +35,7 @@ class <?= $reflection->getShortName(); ?>Factory extends Factory
         ];
     }
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
