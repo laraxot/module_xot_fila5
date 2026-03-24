@@ -6,10 +6,5 @@ namespace Modules\Xot\Tests\Feature\Filament\MockResourceWithRelations\RelationM
 
 use Filament\Resources\RelationManagers\RelationManager;
 
-<<<<<<< HEAD
-class TestRelationManager extends RelationManager
-{
-}
-=======
 class TestRelationManager extends RelationManager {}
->>>>>>> origin/dev
+
