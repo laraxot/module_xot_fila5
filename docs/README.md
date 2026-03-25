@@ -169,6 +169,12 @@ updated: 2026-06-05
 
 Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] platform. Fornisce classi base, trait, servizi e configurazioni condivise da tutti gli altri moduli.
 
+## Principi (perché esiste)
+
+- **Coerenza**: un set unico di wrapper base (Filament/Laravel) per evitare divergenze fra moduli.
+- **DRY**: funzionalità trasversali centralizzate (azioni, helper, convenzioni).
+- **Qualità**: vincoli forti (PHPStan level 10, naming, traduzioni) per ridurre bug e “snowflake modules”.
+
 ## Architettura
 
 ### Classi Base Principali
@@ -197,6 +203,8 @@ Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] pla
 - [Documentazione Root](../../../docs/XOT_MODULE.md)
 - [Regole Architettura](./architecture/)
 - [PHPStan Configuration](./phpstan/)
+- [Metodologia GSD](../../../../docs/project/gsd-methodology.md)
+- [GSD templates locali](../../../../.gsd/README.md)
 
 ## Regole Critiche
 

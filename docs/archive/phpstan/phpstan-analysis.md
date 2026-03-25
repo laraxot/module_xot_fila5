@@ -4,6 +4,7 @@
 
 **NON è stato modificato** `phpstan.neon`
 **NON è stato modificato** `phpstan.neon`
+<<<<<<< HEAD
 **NON è stato modificato** `phpstan.neon`
 
 **NON è stato modificato** `phpstan.neon`
@@ -21,6 +22,8 @@
 
 **NON è stato modificato** `phpstan.neon`
 **NON è stato modificato** `phpstan.neon`
+=======
+>>>>>>> a01602c7 (.)
 
 **NON è stato modificato** `phpstan.neon`
 
@@ -86,11 +89,14 @@ Accesso a proprietà non definite nei modelli.
 - Contratti e interfacce
 
 ### 3. **<nome modulo>** (Applicazione) - 15% errori
+<<<<<<< HEAD
 
 ### 3. **<nome modulo>** (Applicazione) - 15% errori
 
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
 
+=======
+>>>>>>> a01602c7 (.)
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
 
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
@@ -132,10 +138,13 @@ Accesso a proprietà non definite nei modelli.
 
 1. `<nome modulo>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome modulo>/app/Models/*` - Proprietà e relazioni
+<<<<<<< HEAD
 
 1. `<nome modulo>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome modulo>/app/Models/*` - Proprietà e relazioni
 
+=======
+>>>>>>> a01602c7 (.)
 1. `<nome progetto>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome progetto>/app/Models/*` - Proprietà e relazioni
 
@@ -162,11 +171,14 @@ Correggere tutti gli errori nel modulo Xot per stabilizzare la base.
 Sistemare traits e contratti utilizzati in tutto il progetto.
 
 ### Fase 3: Applicazione (<nome modulo>, Geo, Cms)
+<<<<<<< HEAD
 
 ### Fase 3: Applicazione (<nome modulo>, Geo, Cms)
 
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
 
+=======
+>>>>>>> a01602c7 (.)
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
 
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)

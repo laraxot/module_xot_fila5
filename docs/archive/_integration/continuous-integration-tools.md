@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a01602c7 (.)
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->
@@ -32,6 +35,7 @@ https://grafikart.fr/tutoriels/grumphp-836
 ----------------------------------------------------------------------
 
 https://jakzal.github.io/toolbox/
+<<<<<<< HEAD
 # continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/continuous_integration_tools.txt -->
@@ -64,3 +68,5 @@ https://grafikart.fr/tutoriels/grumphp-836
 ----------------------------------------------------------------------
 
 https://jakzal.github.io/toolbox/
+=======
+>>>>>>> a01602c7 (.)

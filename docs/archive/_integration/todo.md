@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a01602c7 (.)
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

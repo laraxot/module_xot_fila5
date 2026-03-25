@@ -68,7 +68,20 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      *
      * @return array<int|string, Component>
      */
+<<<<<<< HEAD
     abstract public function getFormSchema(): array;
+=======
+<<<<<<< .merge_file_umPDPr
+    protected function getFormSchema(): array
+    {
+        // Implementazione default vuota
+        // Override nelle classi figlie se necessario
+        return [];
+    }
+=======
+    abstract public function getFormSchema(): array;
+>>>>>>> .merge_file_b6trfI
+>>>>>>> a01602c7 (.)
 
     /**
      * Configura il form del widget.

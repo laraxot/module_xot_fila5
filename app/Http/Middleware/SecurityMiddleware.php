@@ -188,8 +188,14 @@ class SecurityMiddleware
         $csp = $this->buildCSP();
         $response->headers->set('Content-Security-Policy', $csp);
 
+<<<<<<< HEAD
         // Strict Transport Security
         $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+=======
+        if ($isSecureTransport) {
+            $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        }
+>>>>>>> a01602c7 (.)
 
         // X-Frame-Options
         $response->headers->set('X-Frame-Options', 'DENY');
@@ -207,10 +213,18 @@ class SecurityMiddleware
         $permissions = $this->buildPermissionsPolicy();
         $response->headers->set('Permissions-Policy', $permissions);
 
+<<<<<<< HEAD
         // Cross-Origin Policies
         $response->headers->set('Cross-Origin-Embedder-Policy', 'require-corp');
         $response->headers->set('Cross-Origin-Opener-Policy', 'same-origin');
         $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin');
+=======
+        if ($isSecureTransport) {
+            $response->headers->set('Cross-Origin-Embedder-Policy', 'require-corp');
+            $response->headers->set('Cross-Origin-Opener-Policy', 'same-origin');
+            $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin');
+        }
+>>>>>>> a01602c7 (.)
     }
 
     /**
@@ -225,7 +239,11 @@ class SecurityMiddleware
             "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
             "img-src 'self' data: https: blob:",
             "media-src 'self' blob:",
+<<<<<<< HEAD
             "connect-src 'self' https: wss:",
+=======
+            'connect-src '.implode(' ', array_unique($connectSources)),
+>>>>>>> a01602c7 (.)
             "frame-src 'none'",
             "object-src 'none'",
             "base-uri 'self'",
@@ -238,6 +256,23 @@ class SecurityMiddleware
         return implode('; ', $csp);
     }
 
+<<<<<<< HEAD
+=======
+    private function isSecureTransport(): bool
+    {
+        if (request()->isSecure()) {
+            return true;
+        }
+
+        $forwardedProto = request()->header('x-forwarded-proto');
+        if (is_string($forwardedProto) && 'https' === strtolower($forwardedProto)) {
+            return true;
+        }
+
+        return false;
+    }
+
+>>>>>>> a01602c7 (.)
     /**
      * Costruisci Permissions Policy.
      */
@@ -254,7 +289,14 @@ class SecurityMiddleware
             'accelerometer=()',
             'ambient-light-sensor=()',
             'autoplay=()',
+<<<<<<< HEAD
             'battery=()',
+=======
+<<<<<<< .merge_file_BQ4DCt
+=======
+            'battery=()',
+>>>>>>> .merge_file_5Kf2Ks
+>>>>>>> a01602c7 (.)
             'bluetooth=()',
             'display-capture=()',
             'fullscreen=(self)',
@@ -264,7 +306,14 @@ class SecurityMiddleware
             'persistent-storage=(self)',
             'push=()',
             'screen-wake-lock=()',
+<<<<<<< HEAD
             'speaker=()',
+=======
+<<<<<<< .merge_file_BQ4DCt
+=======
+            'speaker=()',
+>>>>>>> .merge_file_5Kf2Ks
+>>>>>>> a01602c7 (.)
             'web-share=()',
             'xr-spatial-tracking=()',
         ];

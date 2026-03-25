@@ -82,5 +82,10 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Convenzioni di Namespace](modules/xot/project_docs/namespace_conventions.md)
 - [Struttura Moduli](modules/xot/project_docs/module_structure.md)
+=======
+- [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
+- [Struttura Moduli](../xot/docs/module_structure.md)
+>>>>>>> a01602c7 (.)

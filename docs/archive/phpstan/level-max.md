@@ -51,6 +51,7 @@ Trovati 4 errori al livello max.
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 
 ## Collegamenti tra versioni di level_max.md
+<<<<<<< HEAD
 * [level_max.md](laravel/modules/chart/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/reporting/project_docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/gdpr/project_docs/phpstan/level_max.md)
@@ -119,6 +120,8 @@ Trovati 4 errori al livello max.
 - [PSR-12: Standard di codifica](https://www.php-fig.org/psr/psr-12/)
 
 ## Collegamenti tra versioni di level_max.md
+=======
+>>>>>>> a01602c7 (.)
 * [level_max.md](laravel/modules/chart/docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/reporting/docs/phpstan/level_max.md)
 * [level_max.md](laravel/modules/gdpr/docs/phpstan/level_max.md)

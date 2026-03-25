@@ -54,6 +54,7 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_8.md
+<<<<<<< HEAD
 * [level_8.md](laravel/modules/chart/project_docs/phpstan/level_8.md)
 * [level_8.md](laravel/modules/reporting/project_docs/phpstan/level_8.md)
 * [level_8.md](laravel/modules/gdpr/project_docs/phpstan/level_8.md)
@@ -125,6 +126,8 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_8.md
+=======
+>>>>>>> a01602c7 (.)
 * [level_8.md](laravel/modules/chart/docs/phpstan/level_8.md)
 * [level_8.md](laravel/modules/reporting/docs/phpstan/level_8.md)
 * [level_8.md](laravel/modules/gdpr/docs/phpstan/level_8.md)

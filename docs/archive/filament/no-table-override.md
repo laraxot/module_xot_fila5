@@ -128,6 +128,7 @@ Se trovi un `RelationManager` che implementa il metodo `table()`:
 
 ## Link a Risorse Correlate
 
+<<<<<<< HEAD
 - [Regole per RelationManager](/project_docs/filament/relation_managers.md)
 - [Divieto di usare label(), placeholder() e helperText()](/laravel/modules/xot/project_docs/filament/no_labels.md)
 - [Esempio TeamsRelationManager](/laravel/modules/user/project_docs/filament/teams_relation_manager.md)
@@ -262,7 +263,13 @@ Se trovi un `RelationManager` che implementa il metodo `table()`:
 
 ## Link a Risorse Correlate
 
+=======
+>>>>>>> a01602c7 (.)
 - [Regole per RelationManager](/docs/filament/relation_managers.md)
 - [Divieto di usare label(), placeholder() e helperText()](/laravel/modules/xot/docs/filament/no_labels.md)
 - [Esempio TeamsRelationManager](/laravel/modules/user/docs/filament/teams_relation_manager.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+>>>>>>> a01602c7 (.)

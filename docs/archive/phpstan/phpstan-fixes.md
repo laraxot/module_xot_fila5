@@ -30,6 +30,7 @@
 **Soluzione**:
 - Aggiunto cast esplicito `@var array<string, mixed>` al risultato
 
+<<<<<<< HEAD
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
@@ -47,6 +48,8 @@
 
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 
+=======
+>>>>>>> a01602c7 (.)
 ### 4. <main module>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 
@@ -124,3 +127,7 @@
 - [Array Types Fixes](./phpstan-array-types-fixes.md)
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 6 Gennaio 2025*
+>>>>>>> a01602c7 (.)
