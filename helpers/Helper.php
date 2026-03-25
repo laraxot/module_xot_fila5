@@ -14,11 +14,20 @@ use Illuminate\Support\Str;
 use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\FixPathAction;
+<<<<<<< HEAD
+use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
+use Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe;
+use Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe;
 
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
 
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Datas\XotData;
+use Nwidart\Modules\Facades\Module;
+>>>>>>> a01602c7 (.)
 use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
@@ -31,6 +40,8 @@ if (! function_exists('isRunningTestBench')) {
     }
 }
 
+<<<<<<< HEAD
+=======
 if (! function_exists('snake_case')) {
     function snake_case(string $str): string
     {
@@ -84,6 +95,10 @@ if (! function_exists('hex2rgba')) {
         if ('#' === $color[0]) {
             $color = mb_substr($color, 1);
         }
+<<<<<<< .merge_file_eopxrw
+=======
+
+>>>>>>> .merge_file_o9Z4k6
         if (6 === mb_strlen($color)) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
         } elseif (3 === mb_strlen($color)) {
@@ -91,11 +106,16 @@ if (! function_exists('hex2rgba')) {
         } else {
             return $default;
         }
+
         $rgb = array_map('hexdec', $hex);
         if (-1.0 !== $opacity) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
+<<<<<<< .merge_file_eopxrw
+=======
+
+>>>>>>> .merge_file_o9Z4k6
             $output = 'rgba('.implode(',', $rgb).','.$opacity.')';
         } else {
             $output = 'rgb('.implode(',', $rgb).')';
@@ -105,6 +125,7 @@ if (! function_exists('hex2rgba')) {
     }
 }
 
+>>>>>>> a01602c7 (.)
 if (! function_exists('dddx')) {
     function dddx(mixed $params): void
     {
@@ -113,6 +134,13 @@ if (! function_exists('dddx')) {
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', $start);
         }
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_eopxrw
+=======
+
+>>>>>>> .merge_file_o9Z4k6
+>>>>>>> a01602c7 (.)
         $data = [
             '_' => $params,
             'line' => $tmp[0]['line'] ?? 'line-unknows',
@@ -128,6 +156,8 @@ if (! function_exists('dddx')) {
     }
 }
 
+<<<<<<< HEAD
+=======
 if (! function_exists('getFilename')) {
     function getFilename(array $params): string
     {
@@ -147,6 +177,7 @@ if (! function_exists('req_uri')) {
     }
 }
 
+>>>>>>> a01602c7 (.)
 if (! function_exists('in_admin')) {
     function in_admin(array $params = []): bool
     {
@@ -167,6 +198,68 @@ if (! function_exists('inAdmin')) {
         $segments = Request::segments();
 
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+<<<<<<< HEAD
+=======
+    }
+}
+
+if (! function_exists('isHome')) {
+    function isHome(): bool
+    {
+        if (URL::current() === url('')) {
+            return true;
+        }
+
+        return Route::is('home');
+    }
+}
+
+if (! function_exists('isAdminHome')) {
+    function isAdminHome(): bool
+    {
+        return URL::current() === route('admin.index');
+    }
+}
+
+if (! function_exists('isAdmin')) {
+    function isAdmin(): bool
+    {
+        return Route::is('*admin*');
+    }
+}
+
+if (! function_exists('fullTextWildcards')) {
+    function fullTextWildcards(string $term): string
+    {
+        $reservedSymbols = ['-', '+', '<', '>', '@', '(', ')', '~'];
+        $term = str_replace($reservedSymbols, '', $term);
+        $words = explode(' ', $term);
+        foreach ($words as $key => $word) {
+            if (mb_strlen($word) >= 3) {
+                $words[$key] = '+'.$word.'*';
+            }
+        }
+
+        return implode(' ', $words);
+    }
+}
+
+if (! function_exists('isContainer')) {
+    function isContainer(): bool
+    {
+        [$containers, $items] = params2ContainerItem();
+
+        return count($containers) > count($items);
+    }
+}
+
+if (! function_exists('isItem')) {
+    function isItem(): bool
+    {
+        [$containers, $items] = params2ContainerItem();
+
+        return count($containers) === count($items);
+>>>>>>> a01602c7 (.)
     }
 }
 
@@ -280,6 +373,13 @@ if (! function_exists('params2ContainerItem')) {
         }
         $container = [];
         $item = [];
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_eopxrw
+=======
+
+>>>>>>> .merge_file_o9Z4k6
+>>>>>>> a01602c7 (.)
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
@@ -294,6 +394,8 @@ if (! function_exists('params2ContainerItem')) {
     }
 }
 
+<<<<<<< HEAD
+=======
 if (! function_exists('getModelFields')) {
     function getModelFields(Model $model): array
     {
@@ -310,6 +412,7 @@ if (! function_exists('getModelByName')) {
 
             return $res;
         }
+
         $files_path = base_path('Modules').'/*/Models/*.php';
         Assert::isArray($files = glob($files_path));
         $path = Arr::first($files, function ($file) use ($name): bool {
@@ -318,9 +421,14 @@ if (! function_exists('getModelByName')) {
 
             return Str::snake($info['filename'] ?? '') === $name;
         });
+
         if (null === $path) {
             throw new Exception('['.$name.'] not in morph_map');
         }
+<<<<<<< .merge_file_eopxrw
+=======
+
+>>>>>>> .merge_file_o9Z4k6
         $path = app(FixPathAction::class)->execute($path);
         $info = pathinfo($path);
         $module_name = Str::between($path, 'Modules'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.'Models');
@@ -358,8 +466,12 @@ if (! function_exists('getModuleNameFromModelName')) {
         if (! is_string($model_class)) {
             throw new Exception('['.__LINE__.']');
         }
+
+<<<<<<< .merge_file_eopxrw
+=======
         Assert::isInstanceOf($model = app($model_class), Model::class);
 
+>>>>>>> .merge_file_o9Z4k6
         return getModuleNameFromModel($model);
     }
 }
@@ -371,6 +483,7 @@ if (! function_exists('getAllModules')) {
     }
 }
 
+>>>>>>> a01602c7 (.)
 if (! function_exists('xotModel')) {
     function xotModel(string $name): Model
     {
@@ -378,8 +491,17 @@ if (! function_exists('xotModel')) {
         if (! is_string($model_class)) {
             throw new Exception('['.__LINE__.']');
         }
+
+<<<<<<< HEAD
         Assert::isInstanceOf($res = app($model_class), Model::class);
 
+=======
+<<<<<<< .merge_file_eopxrw
+=======
+        Assert::isInstanceOf($res = app($model_class), Model::class);
+
+>>>>>>> .merge_file_o9Z4k6
+>>>>>>> a01602c7 (.)
         return $res;
     }
 }
@@ -413,10 +535,15 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
+<<<<<<< HEAD
             $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
+=======
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
+>>>>>>> a01602c7 (.)
         }
         $result = __($key, $safeReplace, $locale);
 
+<<<<<<< HEAD
         return is_string($result) ? $result : $key;
     }
 }
@@ -601,7 +728,9 @@ if (! function_exists('merge_translation_files')) {
             $merged = array_replace_recursive($merged, $mergedChunk);
         }
 
-        /** @phpstan-ignore return.type */
-        return $result;
+        return $merged;
+=======
+        return is_string($result) ? $result : (null === $result ? null : $key);
+>>>>>>> a01602c7 (.)
     }
 }

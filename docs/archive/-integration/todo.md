@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 
 =======
@@ -14,7 +13,3 @@ https://github.com/limewell/laravel-make-extender
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
 >>>>>>> a01602c7 (.)
-=======
-
-
->>>>>>> 64619e34 (.)

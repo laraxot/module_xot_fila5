@@ -61,14 +61,9 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 ## linkback
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [convenzioni di codice](project_docs/conventions.md)
 - [struttura progetto](project_docs/project-structure.md)
 =======
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
 >>>>>>> a01602c7 (.)
-=======
-- [convenzioni di codice](project_docs/conventions.md)
-- [struttura progetto](project_docs/project-structure.md)
->>>>>>> 64619e34 (.)

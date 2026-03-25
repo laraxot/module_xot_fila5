@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 ---
 module: theme
 topic: level
@@ -154,7 +151,3 @@ aurmich/dev
 * [level_9.md](laravel/modules/patient/docs/phpstan/level_9.md)
 * [level_9.md](laravel/modules/cms/docs/phpstan/level_9.md)
 >>>>>>> a01602c7 (.)
-=======
-
-See canonical documentation: ../../../Themes/docs/shared-components/level-9.md
->>>>>>> 64619e34 (.)

@@ -20,14 +20,10 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 <<<<<<< HEAD
-<<<<<<< HEAD
 DB_DATABASE=test_database
 =======
 DB_DATABASE=<nome progetto>_data_test
 >>>>>>> a01602c7 (.)
-=======
-DB_DATABASE=test_database
->>>>>>> 64619e34 (.)
 DB_USERNAME=root
 DB_PASSWORD=
 ```

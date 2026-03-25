@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 ---
 module: theme
 topic: error-curl
@@ -54,7 +51,3 @@ composer clearcache
 composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
 >>>>>>> a01602c7 (.)
-=======
-
-See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
->>>>>>> 64619e34 (.)
