@@ -54,7 +54,12 @@ abstract class XotBasePage extends Page implements HasForms
      *
      * @var array<string, mixed>
      */
-    public array $data = [];
+    /**
+     * Form data holder.
+     *
+     * @var array<string, mixed>
+     */
+    public ?array $data = [];
 
     /**
      * Vista predefinita per la pagina.
