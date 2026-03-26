@@ -76,11 +76,10 @@ if (! function_exists('hex2rgba')) {
             return $default;
         }
 
-        if ('#' === $color[0]) {
+        if ($color[0] === '#') {
             $color = mb_substr($color, 1);
         }
-
-        if (6 === mb_strlen($color)) {
+        if (mb_strlen($color) === 6) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
         } elseif (mb_strlen($color) === 3) {
             $hex = [$color[0].$color[0], $color[1].$color[1], $color[2].$color[2]];
@@ -93,7 +92,6 @@ if (! function_exists('hex2rgba')) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
-
             $output = 'rgba('.implode(',', $rgb).','.$opacity.')';
         } else {
             $output = 'rgb('.implode(',', $rgb).')';
@@ -111,7 +109,6 @@ if (! function_exists('dddx')) {
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', $start);
         }
-
         $data = [
             '_' => $params,
             'line' => $tmp[0]['line'] ?? 'line-unknows',
@@ -162,13 +159,13 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-        if ('admin' === Request::segment(2)) {
+        if (Request::segment(2) === 'admin') {
             return true;
         }
 
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
     }
 }
 
@@ -244,7 +241,6 @@ if (! function_exists('params2ContainerItem')) {
 
         $container = [];
         $item = [];
-
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
@@ -285,7 +281,7 @@ if (! function_exists('getModelByName')) {
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (null === $path) {
+        if ($path === null) {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
@@ -383,11 +379,11 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
+            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : (string) $v;
         }
 
         $result = __($key, $safeReplace, $locale);
 
-        return is_string($result) ? $result : (null === $result ? null : $key);
+        return is_string($result) ? $result : ($result === null ? null : $key);
     }
 }
