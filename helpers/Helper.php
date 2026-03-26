@@ -82,14 +82,14 @@ if (! function_exists('hex2rgba')) {
 
         if (6 === mb_strlen($color)) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
-        } elseif (3 === mb_strlen($color)) {
+        } elseif (mb_strlen($color) === 3) {
             $hex = [$color[0].$color[0], $color[1].$color[1], $color[2].$color[2]];
         } else {
             return $default;
         }
 
         $rgb = array_map('hexdec', $hex);
-        if (-1.0 !== $opacity) {
+        if ($opacity !== -1.0) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
@@ -234,7 +234,7 @@ if (! function_exists('isItem')) {
 if (! function_exists('params2ContainerItem')) {
     function params2ContainerItem(?array $params = null): array
     {
-        if (null === $params) {
+        if ($params === null) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -367,7 +367,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return null === $id ? null : (string) $id;
+            return $id === null ? null : (string) $id;
         } catch (Throwable $e) {
             return null;
         }
