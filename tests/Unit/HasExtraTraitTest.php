@@ -12,7 +12,8 @@ use Modules\Xot\Models\Traits\HasExtraTrait;
 describe('HasExtraTrait', function () {
     beforeEach(function () {
         // Create a test model that uses the trait
-        $this->testModel = new class extends Model {
+        $this->testModel = new class extends Model
+        {
             use HasExtraTrait;
 
             protected $table = 'test_models';
@@ -27,7 +28,8 @@ describe('HasExtraTrait', function () {
         };
 
         // Create a mock Extra class
-        $this->extraClass = new class extends Model implements ExtraContract {
+        $this->extraClass = new class extends Model implements ExtraContract
+        {
             protected $table = 'test_extras';
 
             protected $fillable = ['model_id', 'model_type', 'extra_attributes'];
@@ -67,7 +69,8 @@ describe('HasExtraTrait', function () {
 
     it('can set and get extra attributes', function () {
         // Mock the extra relationship
-        $mockExtra = new class {
+        $mockExtra = new class
+        {
             public $extra_attributes;
 
             public function __construct()
@@ -84,7 +87,8 @@ describe('HasExtraTrait', function () {
     });
 
     it('handles different data types correctly', function () {
-        $mockExtra = new class {
+        $mockExtra = new class
+        {
             public $extra_attributes;
 
             public function __construct()
@@ -114,13 +118,14 @@ describe('HasExtraTrait', function () {
     });
 
     it('throws exception for invalid data types', function () {
-        $mockExtra = new class {
+        $mockExtra = new class
+        {
             public $extra_attributes;
 
             public function __construct()
             {
                 $this->extra_attributes = collect([
-                    'invalid_value' => new \stdClass(), // Object that's not allowed
+                    'invalid_value' => new \stdClass, // Object that's not allowed
                 ]);
             }
         };
@@ -183,7 +188,8 @@ describe('HasExtraTrait', function () {
     });
 
     it('handles empty extra attributes', function () {
-        $mockExtra = new class {
+        $mockExtra = new class
+        {
             public $extra_attributes;
 
             public function __construct()
