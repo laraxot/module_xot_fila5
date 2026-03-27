@@ -206,7 +206,7 @@ trait HasXotTable
             ->persistFiltersInSession()
             ->headerActions($this->getTableHeaderActions())
             ->recordActions($this->getTableRecordActions())
-            //->actions($this->getTableActions())
+            // ->actions($this->getTableActions())
             ->toolbarActions($this->getTableBulkActions())
             ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
             ->emptyStateActions($this->getTableEmptyStateActions())
@@ -252,11 +252,10 @@ trait HasXotTable
      */
     public function getTableRecordActions(): array
     {
-    
         return $this->getTableActions();
     }
+
     /**
-     *
      * @return array<string, Action|ActionGroup>
      */
     public function getTableActions(): array
