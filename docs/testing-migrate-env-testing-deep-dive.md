@@ -33,7 +33,7 @@ Conclusione:
 Comando:
 
 ```bash
-DB_CONNECTION=sqlite DB_DATABASE=/var/www/_bases/base_<nome progetto>/laravel/database/testing.sqlite php artisan migrate --env=testing
+DB_CONNECTION=sqlite DB_DATABASE=. progetto>/laravel/database/testing.sqlite php artisan migrate --env=testing
 ```
 
 Esito:
