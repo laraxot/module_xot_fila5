@@ -264,9 +264,9 @@ File: `Modules/Xot/.mcp.json`
   "mcpServers": {
     "filesystem-xot": {
       "command": "npx",
-"args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_Quaeris_fila5_mono/laravel/Modules/Xot"],
+"args": ["-y", "@modelcontextprotocol/server-filesystem", "./laravel/Modules/Xot"],
       "env": {
-        "ALLOWED_DIRECTORIES": "/var/www/_bases/base_Quaeris_fila5_mono/laravel/Modules/Xot"
+        "ALLOWED_DIRECTORIES": "./laravel/Modules/Xot"
       },
       "trust": false,
       "includeTools": [
@@ -278,8 +278,8 @@ File: `Modules/Xot/.mcp.json`
     },
     "git-xot": {
       "command": "npx",
-"args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_Quaeris_fila5_mono"],
-      "cwd": "/var/www/_bases/base_Quaeris_fila5_mono/laravel/Modules/Xot",
+"args": ["-y", "@modelcontextprotocol/server-git", "--repository", ".
+      "cwd": "./laravel/Modules/Xot",
       "trust": false
     },
     "sequential-thinking-xot": {
