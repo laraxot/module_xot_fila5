@@ -207,7 +207,7 @@ public function getTableSearch(): ?string
 
 ### Pattern: Proprietà Pubbliche per Parametri Esterni
 
-Quando si passa un array di parametri a `Widget::make()`, Livewire 3.x può inizializzare **solo proprietà pubbliche**:
+Quando si passa un array di parametri a `Widget::make()`, Livewire 4.x può inizializzare **solo proprietà pubbliche**:
 
 ```php
 // ✅ CORRETTO: Proprietà public viene inizializzata automaticamente
