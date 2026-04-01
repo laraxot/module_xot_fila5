@@ -15,7 +15,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
 use Webmozart\Assert\Assert;
-
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
@@ -308,7 +307,7 @@ if (! function_exists('getModuleFromModel')) {
     {
         $class = $model::class;
         $module_name = Str::before(Str::after($class, 'Modules\\'), '\\Models\\');
-        $moduleRepository = app(Nwidart\Modules\Contracts\RepositoryInterface::class);
+        $moduleRepository = app(\Nwidart\Modules\Contracts\RepositoryInterface::class);
         Assert::isInstanceOf($res = $moduleRepository->find($module_name), Nwidart\Modules\Module::class);
 
         return $res;

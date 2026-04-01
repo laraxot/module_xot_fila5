@@ -146,6 +146,17 @@ public function __construct(array $data = [])
 }
 
 /**
+<<<<<<< HEAD
+=======
+ * Handle dynamic method calls.
+ */
+public function __call(string $method, array $parameters) // PRIMA DUPLICAZIONE
+{
+    // ...
+}
+
+/**
+>>>>>>> 013c0d2 (.)
  * Get the title.
  */
 public function getTitle(): string
