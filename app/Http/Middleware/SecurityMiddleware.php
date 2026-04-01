@@ -32,7 +32,7 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-        
+
         // Skip security headers for Debugbar routes in local environment
         // to allow Debugbar to function properly
         if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
@@ -57,7 +57,7 @@ class SecurityMiddleware
     private function isDebugbarRoute(Request $request): bool
     {
         $debugbarPrefix = config('debugbar.route_prefix', '_debugbar');
-        
+
         return str_starts_with($request->path(), $debugbarPrefix)
             || str_starts_with($request->path(), 'vendor/debugbar')
             || str_contains($request->path(), '_debugbar');
