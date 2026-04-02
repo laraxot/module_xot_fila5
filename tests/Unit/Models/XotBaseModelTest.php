@@ -84,13 +84,13 @@ test('xot base model has correct property types', function (): void {
     $perPageType = $perPageProperty->getType();
 
     // Some properties may not have explicit type declarations; in that case just ensure defaults are as expected
-    if (null !== $snakeType) {
+    if ($snakeType !== null) {
         expect($snakeType->getName())->toBe('bool');
     } else {
         expect(XotBaseModel::$snakeAttributes)->toBeTrue();
     }
 
-    if (null !== $perPageType) {
+    if ($perPageType !== null) {
         expect($perPageType->getName())->toBe('int');
     } else {
         expect($perPageProperty->getDefaultValue())->toBe(30);

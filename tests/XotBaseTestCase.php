@@ -51,7 +51,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function ($app) {
                 return new Translator(
-                    new ArrayLoader(),
+                    new ArrayLoader,
                     'en'
                 );
             });
@@ -103,7 +103,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test user with optional attributes.
      *
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
@@ -115,7 +115,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test tenant with optional attributes.
      *
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -125,7 +125,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test module with optional attributes.
      *
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -135,7 +135,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Create a test asset with optional attributes.
      *
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestAsset(array $attributes = []): Asset
     {
