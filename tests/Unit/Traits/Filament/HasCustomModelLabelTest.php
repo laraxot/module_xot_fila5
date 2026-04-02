@@ -8,7 +8,8 @@ use Illuminate\Support\Str;
 use Modules\Xot\Traits\Filament\HasCustomModelLabel;
 
 it('gets model label from property', function (): void {
-    $class = new class {
+    $class = new class
+    {
         use HasCustomModelLabel;
 
         public static string $modelLabel = 'Custom Label';
@@ -23,7 +24,8 @@ it('gets model label from property', function (): void {
 });
 
 it('gets model label from model name', function (): void {
-    $class = new class {
+    $class = new class
+    {
         use HasCustomModelLabel;
 
         public static function getModel(): string
@@ -37,7 +39,8 @@ it('gets model label from model name', function (): void {
 });
 
 it('gets plural model label from property', function (): void {
-    $class = new class {
+    $class = new class
+    {
         use HasCustomModelLabel;
 
         public static string $pluralModelLabel = 'Plural Labels';
@@ -52,7 +55,8 @@ it('gets plural model label from property', function (): void {
 });
 
 it('gets plural model label from singular label', function (): void {
-    $class = new class {
+    $class = new class
+    {
         use HasCustomModelLabel;
 
         public static function getModelLabel(): string
@@ -65,7 +69,8 @@ it('gets plural model label from singular label', function (): void {
 });
 
 it('gets navigation label', function (): void {
-    $class = new class {
+    $class = new class
+    {
         use HasCustomModelLabel;
 
         public static string $navigationLabel = 'Nav Label';
@@ -78,7 +83,8 @@ it('gets navigation label', function (): void {
 
     expect($class::getNavigationLabel())->toBe('Nav Label');
 
-    $classNoNav = new class {
+    $classNoNav = new class
+    {
         use HasCustomModelLabel;
 
         public static function getPluralModelLabel(): string
@@ -90,7 +96,8 @@ it('gets navigation label', function (): void {
 });
 
 it('gets breadcrumb', function (): void {
-    $class = new class {
+    $class = new class
+    {
         use HasCustomModelLabel;
 
         public static function getModelLabel(): string
