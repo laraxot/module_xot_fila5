@@ -17,7 +17,7 @@ class MakePdfSpatieTestAction
     /**
      * Build a minimal Spatie PDF download response from a generic test view.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function execute(
         array $data = [],
@@ -36,17 +36,17 @@ class MakePdfSpatieTestAction
                 $browsershot->showBackground();
 
                 $nodeBinary = config('laravel-pdf.browsershot.node_binary');
-                if (is_string($nodeBinary) && $nodeBinary !== '') {
+                if (is_string($nodeBinary) && '' !== $nodeBinary) {
                     $browsershot->setNodeBinary($nodeBinary);
                 }
 
                 $npmBinary = config('laravel-pdf.browsershot.npm_binary');
-                if (is_string($npmBinary) && $npmBinary !== '') {
+                if (is_string($npmBinary) && '' !== $npmBinary) {
                     $browsershot->setNpmBinary($npmBinary);
                 }
 
                 $chromePath = config('laravel-pdf.browsershot.chrome_path');
-                if (is_string($chromePath) && $chromePath !== '') {
+                if (is_string($chromePath) && '' !== $chromePath) {
                     $browsershot->setChromePath($chromePath);
                 }
             });

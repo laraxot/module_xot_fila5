@@ -43,8 +43,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
-    
-
     /**
      * Get the default sort column and direction.
      *
