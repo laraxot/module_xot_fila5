@@ -210,7 +210,6 @@ abstract class TestCase extends BaseTestCase
 
 ## Test Core Framework
 
-### Test MetatagData (Esistente - Aggiornato a Pest)
 
 ```php
 use Modules\Xot\Datas\MetatagData;

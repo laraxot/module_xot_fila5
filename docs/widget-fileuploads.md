@@ -248,4 +248,3 @@ Questo pattern si applica anche a:
 **Tipo**: Troubleshooting Guide
 **Modulo**: Xot (Base)
 **Applicabilità**: Tutti i widget con FileUpload che caricano dati esistenti
-**Aggiornato**: [DATE]

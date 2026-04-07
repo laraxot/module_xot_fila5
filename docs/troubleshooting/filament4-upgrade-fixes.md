@@ -70,7 +70,6 @@ Invece di correggere ogni singolo Dashboard, abbiamo centralizzato la soluzione 
 
 ### 1. Contratto CriteriEsclusioneContract
 **Errore**: Incompatibilità tipo di ritorno `Collection` vs `HasMany`
-**Soluzione**: Aggiornato contratto per utilizzare `HasMany<Model>`
 
 ### 2. Conflitto Trait in Widget
 **Errore**: Collisione tra `InteractsWithForms::__get` e `InteractsWithPageFilters::__get`

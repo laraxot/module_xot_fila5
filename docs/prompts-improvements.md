@@ -86,12 +86,6 @@ Sono stati migliorati tutti i prompt principali in `bashscripts/tools/prompts/` 
 ## Documentazione Aggiornata
 
 ### File Creati/Modificati
-- `bashscripts/tools/prompts/phpstan.txt` - Aggiornato
-- `bashscripts/tools/prompts/start.txt` - Aggiornato
-- `bashscripts/tools/prompts/global_context.txt` - Aggiornato
-- `bashscripts/tools/prompts/bugfix.txt` - Aggiornato
-- `bashscripts/tools/prompts/filament_class.txt` - Aggiornato
-- `bashscripts/tools/prompts/rules.txt` - Aggiornato
 - `laravel/.mcp.json` - Configurazione MCP aggiornata
 - `laravel/Modules/Xot/docs/prompts-improvements.md` - Questo documento
 

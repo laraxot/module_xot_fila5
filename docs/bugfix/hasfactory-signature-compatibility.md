@@ -97,7 +97,6 @@ abstract class BaseModel extends Model
    protected static function newFactory(): ?Factory
    ```
 
-3. **Aggiornato PHPDoc**:
    ```php
    /**
     * Create a new factory instance for the model.

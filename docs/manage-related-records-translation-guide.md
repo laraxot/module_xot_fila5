@@ -365,6 +365,5 @@ class ManageProjectActivities extends XotBaseManageRelatedRecords
 
 ---
 
-**Aggiornato**: 2026-02-18
 **Autore**: Laraxot Development Team
 **Versione**: 1.0

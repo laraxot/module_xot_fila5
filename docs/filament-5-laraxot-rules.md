@@ -257,7 +257,6 @@ La documentazione **DEVE** esplicitare cosa succede all’utente:
    - [ ] Revisionati i cambi automatici (per modulo)
 
 3. **Update pacchetto principale**
-   - [ ] Aggiornato `filament/filament` a `^5.0`
    - [ ] Eseguito `composer update`
    - [ ] Rimosso `filament/upgrade` dev
 
