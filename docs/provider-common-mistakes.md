@@ -111,7 +111,7 @@ class MeetupServiceProvider extends XotBaseServiceProvider
         // Duplicating what parent already does
         $this->registerViews();
         $this->registerTranslations();
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
         $this->registerLivewireComponents();
     }
 

@@ -383,7 +383,6 @@ class ContactEventSubscriber
     {
         return [
             ContactCreated::class => 'handleContactCreated',
-            ContactUpdated::class => 'handleContactUpdated',
         ];
     }
 }
@@ -1343,7 +1342,6 @@ class ContactEventSubscriber
     {
         return [
             ContactCreated::class => 'handleContactCreated',
-            ContactUpdated::class => 'handleContactUpdated',
         ];
     }
 }

@@ -112,7 +112,6 @@ class ActiveUsersWidget extends XotBaseWidget
                         ->label('Utenti attivi ora')
                         ->default($activeUsers)
                         ->disabled()
-                        ->hint('Aggiornato automaticamente ogni 30 secondi'),
                 ]),
         ];
     }
