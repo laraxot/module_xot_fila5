@@ -201,6 +201,7 @@ public function getLocalKeyName(): string
    - Aggiornata documentazione con nuovi metodi
 
 5. `Modules/Xot/docs/recursive-relationships-contract.md`
+   - Aggiornato changelog
 
 ## ✅ Checklist Verifica
 
