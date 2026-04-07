@@ -385,7 +385,6 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 - ✅ Corretto tipo di ritorno di `getParentKeyName()`: da `mixed` a `string`
 - ✅ Corretto tipo di ritorno di `getCustomPaths()`: da `array<string>` a `array<int|string, string>`
 - ✅ Allineato contratto con trait vendor `HasAdjacencyList` da `staudenmeir/laravel-adjacency-list`
-- ✅ Aggiornato `BaseTreeModel` in Limesurvey per usare `TypedHasRecursiveRelationships` invece del trait vendor diretto
 - ✅ Corretto `getLocalKeyName()` in `LimeQuestion` con return type `string`
 - ✅ Documentazione completa aggiunta con esempi e best practices
 - ✅ Verificato PHPStan livello 10: nessun errore

@@ -364,13 +364,11 @@ Aggiungere al pipeline CI:
 ## Checklist Completamento
 
 - [x] Ripristinato `HasXotFactory.php`
-- [x] Aggiornato `BasePivot.php`
 - [x] Creata documentazione trait
 - [x] Creata documentazione bugfix
 - [x] Eseguito `composer dump-autoload`
 - [x] Testato login funzionale
 - [x] Verificato nessun linter error
-- [x] Aggiornato changelog
 
 ## Timeline
 

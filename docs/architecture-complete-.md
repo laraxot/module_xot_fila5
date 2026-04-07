@@ -1,6 +1,5 @@
 # Xot Module - Complete Architecture Guide (2025)
 
-> **Last Updated:** 2025-11-19
 > **PHPStan Level:** 10
 > **Status:** Core Foundation Module
 

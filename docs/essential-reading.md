@@ -162,4 +162,3 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 
 **Creato:** [DATE]
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
-**Aggiornato:** Dopo risoluzione massiva merge conflicts

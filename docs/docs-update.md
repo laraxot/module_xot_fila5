@@ -57,7 +57,6 @@ Aggiornamento massivo documentazione progetto con:
 12. `helper-functions-dependency.md` - Dipendenze helper
 
 **Modulo Sigma** (aggiornato):
-13. `phpstan-fixes-2025.md` - Aggiornato con fix novembre
 
 **bashscripts** (3 file):
 14. `docs/mcp-configuration.md`
