@@ -6,6 +6,9 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -13,6 +16,23 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
+=======
+<<<<<<< HEAD
+use Filament\Forms\Concerns\InteractsWithForms;
+=======
+>>>>>>> 9506daa5 (.)
+use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Contracts\Support\Htmlable;
+use Modules\Xot\Filament\Traits\HasXotForm;
+use Modules\Xot\Filament\Traits\HasXotTable;
+<<<<<<< HEAD
+=======
+>>>>>>> 2253954 (.)
+>>>>>>> 4ffe7f41e (.)
+>>>>>>> 9506daa5 (.)
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Override;
 
@@ -76,7 +96,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Restituisce l'heading della tabella.
      * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
      */
+<<<<<<< HEAD
     protected function getTableHeading(): Htmlable|string|null
+=======
+<<<<<<< HEAD
+    protected function getTableHeading(): Htmlable|string|null
+=======
+    protected function getTableHeading(): \Illuminate\Contracts\Support\Htmlable|string|null
+>>>>>>> 4ffe7f41e (.)
+>>>>>>> 9506daa5 (.)
     {
         return $this->getTableHeadingFromTrait();
     }
@@ -98,7 +126,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+<<<<<<< HEAD
+    #[\Override]
+=======
+    #[Override]
+>>>>>>> 4ffe7f41e (.)
+>>>>>>> 9506daa5 (.)
     protected function getTableColumns(): array
     {
         return [
@@ -127,6 +163,26 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    /**
+     * Definisce le azioni per ogni riga della tabella.
+     * Questo metodo può essere sovrascritto nelle classi figlie.
+     *
+     * @return array<string, Action>
+     */
+    protected function getTableActions(): array
+    {
+        return [];
+    }
+
+=======
+<<<<<<< HEAD
+>>>>>>> 4ffe7f41e (.)
+    public static function getNavigationLabel(): string
+=======
+>>>>>>> 9506daa5 (.)
     /**
      * Definisce le azioni per ogni riga della tabella.
      * Questo metodo può essere sovrascritto nelle classi figlie.
