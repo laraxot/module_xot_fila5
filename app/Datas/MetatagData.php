@@ -140,7 +140,7 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('metatag');
+            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
             $data['description'] = TenantService::trans('metatag.description');
             self::$instance = self::from($data);
         }
