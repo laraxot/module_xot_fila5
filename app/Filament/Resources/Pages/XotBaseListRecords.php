@@ -8,9 +8,7 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
-use Filament\Tables;
 use Illuminate\Contracts\Pagination\Paginator;
-use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -45,36 +43,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
-    /**
+    /*
      * Get the table columns.
      *
      * @return array<string, Tables\Columns\Column>
-     */
-    abstract public function getTableColumns(): array;
-
-    /**
-     * Get the default table actions.
      *
-     * @return array<int, Tables\Actions\Action|Tables\Actions\ActionGroup>
+     * abstract public function getTableColumns(): array;
      */
-    protected function getDefaultTableActions(): array
-    {
-        return [
-            Tables\Actions\EditAction::make(),
-            Tables\Actions\DeleteAction::make(),
-        ];
-    }
-
-    /**
-     * Layout con columnSpanFull() automatico.
-     */
-    protected function getTableContent(): ?View
-    {
-        // @phpstan-ignore return.type
-        return view('filament.tables.table', [
-            'table' => $this->getTable(),
-        ])->with('columnSpanFull', true);
-    }
 
     /**
      * Get the default sort column and direction.

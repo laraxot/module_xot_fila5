@@ -490,7 +490,7 @@ public function boot(): void
 {
     $this->loadViewsFrom(__DIR__.'/../resources/views', 'activity');
     $this->loadTranslationsFrom(__DIR__.'/../lang', 'activity');
-    $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+    $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
     // ...tutto già fatto dal parent!
 }
 ```

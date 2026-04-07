@@ -133,6 +133,7 @@ Tutte le modifiche sono state verificate con successo utilizzando:
 ## Documentazione Aggiornata
 
 - **`laravel/Modules/Xot/docs/filament/xotbaseresource-architectural-rules.md`**: Creato nuovo documento che dettaglia le regole architetturali con dibattito interno e motivazione.
+- **`.cursor/rules/anti-redundancy-rules.mdc`**: Aggiornato con nuova sezione "Navigation Properties in XotBaseResource".
 
 ## Collegamenti
 
