@@ -94,6 +94,7 @@ docs/
 **File creati**:
 - `cursor-mcp-config.json` - Config pronta per Cursor
 - `windsurf-mcp-config.json` - Config pronta per Windsurf
+- Aggiornato `mcp-editors-configuration.md` con link ai file
 
 **Beneficio**: Copy-paste diretto senza dover scrivere config manualmente
 
@@ -355,6 +356,7 @@ docs/
 **File creati**:
 - `cursor-mcp-config.json` - Config pronta per Cursor
 - `windsurf-mcp-config.json` - Config pronta per Windsurf
+- Aggiornato `mcp-editors-configuration.md` con link ai file
 
 **Beneficio**: Copy-paste diretto senza dover scrivere config manualmente
 

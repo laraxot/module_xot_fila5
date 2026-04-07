@@ -479,5 +479,6 @@ rm Modules/Lang/project_docs/translation_notify_conversion.md
 **📈 Beneficio**: 99% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [filament-best-practices.md](filament-best-practices.md) | [conventions.md](conventions.md)
 
+**Aggiornato**: [DATE]
 **Categoria**: translations
 **Priorità**: CRITICA

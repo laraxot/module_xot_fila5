@@ -357,6 +357,7 @@ class ExampleResource extends XotBaseResource
                 ->toggleable(isToggledHiddenByDefault: true),
 
             Tables\Columns\TextColumn::make('updated_at')
+                ->label('Aggiornato il')
                 ->dateTime('d/m/Y H:i')
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
