@@ -43,13 +43,11 @@ class ExportXlsStreamByLazyCollection
             static function () use ($data, $head): void {
                 $file = fopen('php://output', 'w+');
 
-                // Assicuriamo che le intestazioni siano stringhe
                 $headStrings = array_map(strval(...), $head);
 
                 fputcsv($file, $headStrings);
 
-                foreach ($data as $key => $value) {
-                    // Gestiamo sia oggetti che possono essere convertiti ad array che array diretti
+                foreach ($data as $value) {
                     if (is_object($value) && method_exists($value, 'toArray')) {
                         /** @var array<string|int|float|bool|null> $rowData */
                         $rowData = $value->toArray();
@@ -57,10 +55,9 @@ class ExportXlsStreamByLazyCollection
                         /** @var array<string|int|float|bool|null> $rowData */
                         $rowData = $value;
                     } else {
-                        // Se non è né un oggetto con toArray né un array, saltiamo
                         continue;
                     }
-                    // Convertiamo tutti i valori in stringhe o null
+
                     $safeRowData = array_map(function ($item) {
                         if (null === $item) {
                             return '';
@@ -72,7 +69,6 @@ class ExportXlsStreamByLazyCollection
                     fputcsv($file, $safeRowData);
                 }
 
-                // Aggiungiamo righe vuote alla fine
                 $blanks = ["\t", "\t", "\t", "\t"];
                 fputcsv($file, $blanks);
                 fputcsv($file, $blanks);
@@ -97,7 +93,7 @@ class ExportXlsStreamByLazyCollection
     {
         $first = $data->first();
         if (! is_array($first) && (! is_object($first) || ! method_exists($first, 'toArray'))) {
-            return []; // Ritorna intestazioni vuote se non c'è un primo elemento valido
+            return [];
         }
 
         $headArray = is_array($first) ? $first : $first->toArray();
@@ -127,15 +123,9 @@ class ExportXlsStreamByLazyCollection
             });
         }
 
-<<<<<<< HEAD
         /** @var array<string> $headers */
         $headers = array_values($headings->map(strval(...))->toArray());
 
-=======
-        $headers = array_values($headings->map(strval(...))->toArray());
-
-        /* @var array<string> $headers */
->>>>>>> 9506daa5 (.)
         return $headers;
     }
 }
