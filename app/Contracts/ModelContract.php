@@ -91,22 +91,21 @@ interface ModelContract
 
     /**
      * Get the value of the model's primary key.
+     *
+     * Keep this signature aligned with Laravel Eloquent Model::getKey(),
+     * which currently has no declared return type.
      */
-    public function getKey(): mixed;
+    public function getKey();
 
     /**
      * Get a relationship.
      *
-     * <<<<<<< HEAD
-     * =======
-     *
-     * @param string $key
-     *
-     * >>>>>>> 9506daa5 (.)
+     * Keep this signature aligned with Laravel Eloquent Model::getRelationValue(),
+     * which currently accepts an untyped parameter and has no declared return type.
      *
      * @phpstan-param string $key
      */
-    public function getRelationValue(string $key): mixed;
+    public function getRelationValue($key);
 
     /**
      * Create a new instance of the given model.
