@@ -1,14 +1,3 @@
----
-title: "Roadmap Modulo Xot"
-module: "Xot"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ### Versione HEAD
 
 # Roadmap Modulo Xot

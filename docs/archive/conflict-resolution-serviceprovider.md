@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto: XotBaseServiceProvider"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, serviceprovider]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution serviceprovider"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto

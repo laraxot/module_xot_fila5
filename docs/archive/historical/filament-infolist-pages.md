@@ -1,14 +1,3 @@
----
-title: "Infolist Pages in Filament Resources"
-module: "Xot"
-type: concept
-tags: [filament, infolist, pages]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament infolist pages"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Infolist Pages in Filament Resources
 
 In the Laraxot framework, when creating a "View" page for a Filament resource that extends `Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord`, it is mandatory to implement the `getInfolistSchema()` method.

@@ -1,14 +1,3 @@
----
-title: "Guida alla Validazione con PHPStan Livello 7"
-module: "Xot"
-type: how-to
-tags: [phpstan, level7, guide, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level7 guide 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida alla Validazione con PHPStan Livello 7
 
 ## Introduzione

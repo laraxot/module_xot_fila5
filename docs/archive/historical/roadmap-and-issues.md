@@ -1,14 +1,3 @@
----
-title: "Xot Module - Roadmap, Issues & Optimization"
-module: "Xot"
-type: concept
-tags: [roadmap, issues]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap and issues"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Roadmap, Issues & Optimization
 
 **Modulo**: Xot (Core Framework Base)

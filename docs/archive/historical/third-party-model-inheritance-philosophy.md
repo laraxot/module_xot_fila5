@@ -1,14 +1,3 @@
----
-title: "Laraxot Third-Party Model Inheritance Philosophy"
-module: "Xot"
-type: concept
-tags: [third, party, model, inheritance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "third party model inheritance philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Third-Party Model Inheritance Philosophy
 
 ## Core Principle: Respect Package Architecture

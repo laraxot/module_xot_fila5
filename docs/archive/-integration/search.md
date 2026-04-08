@@ -1,16 +1,2 @@
----
-title: "_search"
-module: "Xot"
-type: concept
-tags: [search]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "search"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 
-
-
-https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations

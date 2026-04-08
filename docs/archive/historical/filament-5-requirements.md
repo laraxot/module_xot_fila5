@@ -1,14 +1,3 @@
----
-title: "Filament 5.x Requirements & Configuration"
-module: "Xot"
-type: concept
-tags: [filament, 5, requirements]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 5 requirements"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament 5.x Requirements & Configuration
 
 **Data Analisi**: 2026-01-30

@@ -45,7 +45,7 @@
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Gestione Traduzioni](../../translations.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](../../BEST-PRACTICES.md)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../Chart/project_docs/translations.md)
 * [translations.md](../../../Reporting/project_docs/translations.md)

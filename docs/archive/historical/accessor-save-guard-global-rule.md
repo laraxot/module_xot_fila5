@@ -1,14 +1,3 @@
----
-title: "Regola Globale: Guard su getKey() Prima di save() negli Accessor"
-module: "Xot"
-type: rule
-tags: [accessor, save, guard, global]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "accessor save guard global rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regola Globale: Guard su getKey() Prima di save() negli Accessor
 
 ## Analisi Business Logic

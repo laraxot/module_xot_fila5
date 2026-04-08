@@ -1,14 +1,3 @@
----
-title: "Polling nei Widget Filament"
-module: "Xot"
-type: concept
-tags: [filament, widgets, polling]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament widgets polling"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Polling nei Widget Filament
 
 Questo documento descrive come implementare il polling automatico nei widget Filament utilizzando il trait `CanPoll` nel progetto il progetto.

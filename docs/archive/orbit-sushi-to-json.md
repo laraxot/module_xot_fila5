@@ -1,14 +1,3 @@
----
-title: "Invece di usare Orbit {#invece-di-usare-orbit}"
-module: "Xot"
-type: concept
-tags: [orbit, sushi, json]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "orbit sushi to json"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 ---
 title: SushiToJsons/Orbit

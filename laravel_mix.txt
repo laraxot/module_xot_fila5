@@ -1,7 +1,3 @@
-# laravel_mix
-
-<!-- Contenuto migrato da _docs/laravel_mix.txt -->
-
 //-------------------------------------------------------------------------------------
 Use Laravel Mix without Laravel (using npm)
 https://dev.to/nickfrosty/use-laravel-mix-without-laravel-using-npm-m09
@@ -58,3 +54,4 @@ https://frostbutter.com/articles/use-laravel-mix-without-laravel-using-npm/
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
+

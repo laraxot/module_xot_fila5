@@ -134,4 +134,4 @@ Restituisce il percorso del favicon.
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
 - [PHPStan Common Exceptions](../PHPSTAN-COMMON-EXCEPTIONS.md)
-- [Data Queableactions](data-queableactions.md)
+- [Data Queableactions](../DATA-QUEABLEACTIONS.md)

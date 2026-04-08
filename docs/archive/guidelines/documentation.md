@@ -1,14 +1,3 @@
----
-title: "Linee Guida per la Documentazione"
-module: "Xot"
-type: concept
-tags: [documentation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Linee Guida per la Documentazione
 
 ## Principi Fondamentali
@@ -170,9 +159,9 @@ php artisan api:generate
 
 ## Collegamenti
 
-- [Convenzioni di Codice](README.md)
+- [Convenzioni di Codice](../conventions/readme.md)
 - [Architettura](../architecture/readme.md)
-- [Best Practices](README.md)
+- [Best Practices](../best-practices/readme.md)
 - [Markdown Guide](https://www.markdownguide.org)
 
 ## Collegamenti tra versioni di documentation.md

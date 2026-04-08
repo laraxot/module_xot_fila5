@@ -1,14 +1,3 @@
----
-title: "Livewire Component and Filament Widget Parameter Passing Guide"
-module: "Xot"
-type: concept
-tags: [livewire, filament, parameter, passing]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "livewire filament parameter passing"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Livewire Component and Filament Widget Parameter Passing Guide
 
 ## Overview

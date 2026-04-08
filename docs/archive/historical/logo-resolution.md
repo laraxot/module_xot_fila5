@@ -1,14 +1,3 @@
----
-title: "Risoluzione dei Loghi"
-module: "Xot"
-type: concept
-tags: [logo, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "logo resolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione dei Loghi
 
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
@@ -114,11 +103,11 @@ Per la versione dark:
 
 ### Collegamenti ad Altri Moduli
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
-- [Configurazione Generale](configuration.md)
+- [Configurazione Generale](CONFIGURATION.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
-- [Regole per la Case Sensitivity](directory-case-sensitivity.md)
-- [Regole per i Namespace](namespace-rules.md)
+- [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
+- [Regole per i Namespace](NAMESPACE-RULES.md)
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto

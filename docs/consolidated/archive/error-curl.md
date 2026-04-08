@@ -1,14 +1,3 @@
----
-title: "Error Curl"
-module: "Xot"
-type: concept
-tags: [error, curl]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "error curl"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 Download the latest cacert.pem file from
 https://curl.se/project_docs/caextract.html
 

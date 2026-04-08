@@ -1,14 +1,3 @@
----
-title: "Array Keys in Filament Methods - Regole Obbligatorie"
-module: "Xot"
-type: concept
-tags: [array, keys, filament, methods]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "array keys filament methods"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Array Keys in Filament Methods - Regole Obbligatorie
 
 **Data**: 2025-01-18

@@ -1,14 +1,3 @@
----
-title: "Module Path Error Resolution - Activity Assets Issue"
-module: "Xot"
-type: concept
-tags: [module, path, error, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module path error resolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02

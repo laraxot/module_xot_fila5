@@ -44,6 +44,6 @@ interface ModelContract
 
 ## Collegamenti
 - [Model Guidelines](../models/README.md)
-- [Database Guidelines](database-guidelines.md)
+- [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)

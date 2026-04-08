@@ -1,14 +1,3 @@
----
-title: "Integrazione con Laravel e Best Practices"
-module: "Xot"
-type: concept
-tags: [laravel]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laravel"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Integrazione con Laravel e Best Practices
 
 Questa guida si concentra su come integrare e utilizzare `Html2Pdf` in un'applicazione Laravel, seguendo le best practice specifiche del progetto Laraxot.

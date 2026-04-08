@@ -1,14 +1,3 @@
----
-title: "Verifica Proprietà Vietate in XotBaseResource - Report Completo"
-module: "Xot"
-type: rule
-tags: [forbidden, resource, attributes, verification]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "forbidden resource attributes verification"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Verifica Proprietà Vietate in XotBaseResource - Report Completo
 
 **Data**: 2026-01-09  

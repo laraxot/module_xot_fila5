@@ -1,14 +1,3 @@
----
-title: "Convenzioni di Nomenclatura in Laravel Modules"
-module: "Xot"
-type: concept
-tags: [naming, conventions, uppercase]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "naming conventions uppercase"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.
@@ -83,12 +72,6 @@ Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzar
 - **snake_case**: Tutte le lettere minuscole, parole separate da underscore (es. `user_profile`)
   - Usato per: Variabili, costanti di classe (non globali), nomi di file delle viste, tabelle del database, colonne del database
 
-- **camelCase**: Prima lettera minuscola, senza spazi o separatori (es. `getUserProfile`)
-  - Usato per: Metodi, funzioni, proprietà non statiche
-
-- **snake_case**: Tutte le lettere minuscole, parole separate da underscore (es. `user_profile`)
-  - Usato per: Variabili, costanti di classe (non globali), nomi di file delle viste, tabelle del database, colonne del database
-  
 - **UPPER_SNAKE_CASE**: Tutte le lettere maiuscole, parole separate da underscore (es. `MAX_LOGIN_ATTEMPTS`)
   - Usato per: Costanti globali, enums
 

@@ -1,14 +1,3 @@
----
-title: "Installazione di JpGraph"
-module: "Xot"
-type: how-to
-tags: [jpgraph, installation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "jpgraph installation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Installazione di JpGraph
 
 L’installazione di JpGraph e l’uso dei namespace sono gestiti dal **modulo Chart**. In questo progetto non si usa il pacchetto `jpgraph/jpgraph`; si usa **amenadiel/jpgraph** con namespace **Amenadiel\JpGraph\***.

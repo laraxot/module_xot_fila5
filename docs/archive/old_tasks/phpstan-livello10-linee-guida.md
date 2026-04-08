@@ -1,14 +1,3 @@
----
-title: "Linee Guida PHPStan Livello 10"
-module: "Xot"
-type: concept
-tags: [phpstan, livello10, linee, guida]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan livello10 linee guida"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione

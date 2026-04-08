@@ -1,14 +1,3 @@
----
-title: "Miglioramenti al Prompt docs.txt"
-module: "Xot"
-type: concept
-tags: [prompt, docs, improvements]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "prompt docs improvements"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**
@@ -80,7 +69,7 @@ Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Larav
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**
-> - [README.md documentazione generale](README.md)
+> - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)

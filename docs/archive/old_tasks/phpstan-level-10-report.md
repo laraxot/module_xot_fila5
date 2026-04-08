@@ -1,14 +1,3 @@
----
-title: "PHPStan Livello 10 (MAX) - Report Qualità Codice"
-module: "Xot"
-type: concept
-tags: [phpstan, level, 10, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level 10 report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi

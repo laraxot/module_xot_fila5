@@ -1,14 +1,3 @@
----
-title: "Gestione della Documentazione e delle Regole"
-module: "Xot"
-type: concept
-tags: [documentation, management]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation management"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Gestione della Documentazione e delle Regole
 
 ## Struttura della Documentazione
@@ -16,7 +5,7 @@ related:
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
-base_predict_fila5_mono/
+base_<nome progetto>_fila5_mono/
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli
@@ -167,7 +156,7 @@ Quando si identifica una nuova regola o pattern importante:
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
-base_predict_fila5_mono/
+base_<nome progetto>_fila5_mono/
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli

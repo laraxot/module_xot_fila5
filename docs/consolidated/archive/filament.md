@@ -45,7 +45,7 @@
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Integrazione Filament](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](../../BEST-PRACTICES.md)
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
 * [filament.md](../../../Chart/project_docs/filament.md)

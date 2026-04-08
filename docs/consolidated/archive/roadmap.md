@@ -242,7 +242,7 @@
 
 ### Collegamenti Interni
 - [Architettura](./structure.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](./BEST-PRACTICES.md)
 - [Testing](./testing-best-practices.md)
 
 ## Prossimi Passi
@@ -419,7 +419,7 @@
 
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](BEST-PRACTICES.md)
 - [Testing](testing.md)
 
 ### Versione HEAD

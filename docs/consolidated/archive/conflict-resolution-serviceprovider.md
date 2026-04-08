@@ -26,10 +26,10 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
-- [Best Practices Provider](best-practices.md)
+- [Best Practices Provider](./BEST-PRACTICES.md)
 - [docs/links.md globale](../../../../project_docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../project_docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
-- [docs/BEST-PRACTICES.md](best-practices.md)
+- [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)

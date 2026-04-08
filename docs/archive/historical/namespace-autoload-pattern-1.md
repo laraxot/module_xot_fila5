@@ -1,14 +1,3 @@
----
-title: "Pattern di Autoload nei Moduli Laravel"
-module: "Xot"
-type: pattern
-tags: [namespace, autoload, pattern, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "namespace autoload pattern 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Pattern di Autoload nei Moduli Laravel
 
 ## Il Pattern Corretto

@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitti"
-module: "Xot"
-type: concept
-tags: [risoluzione, conflitti]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "risoluzione conflitti"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitti
 
 ## Best Practices
@@ -17,7 +6,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
-- [Convenzioni Namespace](namespace-conventions.md)
+- [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 

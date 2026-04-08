@@ -1,14 +1,3 @@
----
-title: "Correzioni PHPStan - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [phpstan, corrections]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan corrections"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzioni PHPStan - Modulo Xot
 
 ## Panoramica
@@ -212,4 +201,5 @@ $averageTime = $count > 0 ? $totalTime / $count : 0.0;
 
 
 
+=======
 

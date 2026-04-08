@@ -1,14 +1,3 @@
----
-title: "convenzioni per namespace e percorsi dei moduli"
-module: "Xot"
-type: concept
-tags: [module, namespace, path, convention]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module namespace path convention"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso

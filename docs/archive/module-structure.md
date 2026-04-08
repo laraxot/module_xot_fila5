@@ -1,14 +1,3 @@
----
-title: "Struttura dei Moduli in <nome progetto>"
-module: "Xot"
-type: concept
-tags: [module, structure]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module structure"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Struttura dei Moduli in <nome progetto>
 
 Questo documento definisce le linee guida ufficiali per la struttura dei moduli all'interno del framework <nome progetto>.
@@ -179,15 +168,6 @@ ModuleName/
 - [Cms](../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../lang/docs/readme.md) - Traduzioni
 - [User](../user/docs/readme.md) - Gestione utenti
-- [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
-- [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
-- [Namespace Rules](./namespace-rules.md) - Regole per i namespace
-
-### Moduli Collegati
-- [UI](../UI/docs/README.md) - Componenti di interfaccia
-- [Cms](../Cms/docs/README.md) - Gestione contenuti
-- [Lang](../Lang/docs/README.md) - Traduzioni
-- [User](../User/docs/README.md) - Gestione utenti
 
 ## Struttura Dettagliata
 
@@ -410,67 +390,6 @@ User/
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
-
-### Modulo Cms
-- [Frontend](../cms/docs/frontend.md)
-- [Temi](../cms/docs/themes.md)
-- [Contenuti](../cms/docs/content.md)
-- [Convenzioni Filament](../cms/docs/convenzioni-namespace-filament.md)
-
-### Modulo Lang
-- [Traduzioni](../lang/docs/translations.md)
-- [Localizzazione](../lang/docs/localization.md)
-- [API Traduzioni](../lang/docs/api.md)
-
-### Modulo User
-- [Autenticazione](../user/docs/auth.md)
-- [Permessi](../user/docs/permissions.md)
-- [Profilo](../user/docs/profile.md)
-
-### Modulo Patient
-- [Gestione Pazienti](../patient/docs/patients.md)
-- [Cartelle Cliniche](../patient/docs/records.md)
-- [Appuntamenti](../patient/docs/appointments.md)
-
-### Modulo Dental
-- [Trattamenti](../dental/docs/treatments.md)
-- [Pianificazione](../dental/docs/planning.md)
-- [Documenti](../dental/docs/documents.md)
-
-### Modulo Tenant
-- [Multi-tenant](../tenant/docs/multi-tenant.md)
-- [Configurazione](../tenant/docs/configuration.md)
-- [Migrazione](../tenant/docs/migration.md)
-
-### Modulo Media
-- [Gestione File](../media/docs/files.md)
-- [Upload](../media/docs/upload.md)
-- [Storage](../media/docs/storage.md)
-
-### Modulo Notify
-- [Notifiche](../notify/docs/notifications.md)
-- [Email](../notify/docs/email.md)
-- [SMS](../notify/docs/sms.md)
-
-### Modulo Reporting
-- [Report](../reporting/docs/reports.md)
-- [Esportazione](../reporting/docs/export.md)
-- [Analytics](../reporting/docs/analytics.md)
-
-### Modulo Gdpr
-- [Privacy](../gdpr/docs/privacy.md)
-- [Consensi](../gdpr/docs/consents.md)
-- [Sicurezza](../gdpr/docs/security.md)
-
-### Modulo Job
-- [Jobs](../job/docs/jobs.md)
-- [Queue](../job/docs/queue.md)
-- [Scheduling](../job/docs/scheduling.md)
-
-### Modulo Chart
-- [Grafici](../Chart/docs/charts.md)
-- [Dashboard](../Chart/docs/dashboard.md)
-- [Visualizzazione](../Chart/docs/visualization.md)
 
 # Struttura dei Moduli Laravel
 

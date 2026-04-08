@@ -1,14 +1,3 @@
----
-title: "GitHub Workflows Standard - base_laravelpizza"
-module: "Xot"
-type: rule
-tags: [github, workflows, standard]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "github workflows standard"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # GitHub Workflows Standard - base_laravelpizza
 
 **Ultimo aggiornamento**: 2025-01-10

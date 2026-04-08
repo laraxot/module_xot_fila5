@@ -1,14 +1,3 @@
----
-title: "Analisi Completa del Codice - Sistema Laraxot"
-module: "Xot"
-type: concept
-tags: [comprehensive, code, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "comprehensive code analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -425,7 +414,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-- [Architettura Moduli](architecture.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -866,7 +855,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-- [Architettura Moduli](architecture.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

@@ -1,18 +1,7 @@
----
-title: "Regole per i Percorsi Relativi nella Documentazione"
-module: "Xot"
-type: rule
-tags: [relative, paths, rules, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "relative paths rules 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
-> - [README.md documentazione generale](README.md)
+> - [README.md documentazione generale](../../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
@@ -40,7 +29,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ### Da un file in un modulo verso la root
 
 ```markdown
-[Documentazione Root](README.md)
+[Documentazione Root](../../../../../docs/readme.md)
 ```
 
 ## Errori Comuni da Evitare

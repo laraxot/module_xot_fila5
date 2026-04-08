@@ -1,14 +1,3 @@
----
-title: "PHPStan Compliance - Xot Module"
-module: "Xot"
-type: concept
-tags: [phpstan, compliance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan compliance"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Compliance - Xot Module
 
 ## 📚 Documentazione Correlata
@@ -23,6 +12,7 @@ related:
 **Status:** 🔄 In Correzione  
 **Data Inizio:** 10 Ottobre 2025  
 **Target:** PHPStan Level 10 - 0 Errori
+=======
 ## Status: ✅ FULLY COMPLIANT
 
 **PHPStan Level:** 9 (Maximum)

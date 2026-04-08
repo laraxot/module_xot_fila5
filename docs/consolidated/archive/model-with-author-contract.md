@@ -27,7 +27,7 @@ interface ModelWithAuthorContract extends ModelContract
 
 ## Collegamenti
 - [ModelContract](model-contract.md)
-- [Database Guidelines](database-guidelines.md)
+- [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
 - [Documentazione root](../../../project_docs/PHPSTAN-FIXES-SUMMARY.md)

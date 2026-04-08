@@ -1,14 +1,3 @@
----
-title: "Best Practices per Volt e Folio"
-module: "Xot"
-type: concept
-tags: [volt, folio, best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "volt folio best practices 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati

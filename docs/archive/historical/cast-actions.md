@@ -1,14 +1,3 @@
----
-title: "Azioni di Cast Sicure - Sostituzione di property_exists"
-module: "Xot"
-type: concept
-tags: [cast, actions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "cast actions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Azioni di Cast Sicure - Sostituzione di property_exists
 
 ## Panoramica

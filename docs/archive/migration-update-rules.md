@@ -1,14 +1,3 @@
----
-title: "Regole generali per aggiornamento colonne e gestione errori schema"
-module: "Xot"
-type: rule
-tags: [migration, update, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration update rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole generali per aggiornamento colonne e gestione errori schema
 
 ## Collegamento bidirezionale

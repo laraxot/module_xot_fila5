@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitti Git - 6 Gennaio 2025"
-module: "Xot"
-type: concept
-tags: [git, conflicts, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -143,12 +132,6 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/modules/xot/docs/git-conflicts-resolution-2025-01-06.md)
-
-### Modulo User
-- [Theme Translation Conflicts](laravel/modules/user/docs/theme-translation-conflicts-resolution.md)
-
-### Modulo Xot
-- [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution.md)
 
 ## Best Practices Applicate
 

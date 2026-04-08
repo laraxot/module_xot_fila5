@@ -1,14 +1,3 @@
----
-title: "Trait Collision Resolution Summary"
-module: "Xot"
-type: pattern
-tags: [trait, collision, resolution, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "trait collision resolution fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Trait Collision Resolution Summary
 
 ## Issue

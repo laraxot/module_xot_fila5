@@ -1,14 +1,3 @@
----
-title: "Xot Module - PHPStan Level 10 Analysis (January 2026)"
-module: "Xot"
-type: concept
-tags: [phpstan, level10, complete]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 complete"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - PHPStan Level 10 Analysis (January 2026)
 
 ## 📊 Current Status

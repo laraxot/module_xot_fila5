@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-use BladeUI\Icons\Exceptions\CannotRegisterIconSet;
-use BladeUI\Icons\Exceptions\SvgNotFound;
 use BladeUI\Icons\Factory as BladeIconsFactory;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Config;
@@ -62,26 +60,15 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
-        // Blade UI Kit default set may already contain prefixes like "geo".
-        // Skip registration if the prefix would collide with the default set.
         $this->callAfterResolving(BladeIconsFactory::class, function (BladeIconsFactory $factory): void {
             try {
                 $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'assets');
                 $svgPath = $assetsPath.'/../svg';
-                if (! File::exists($svgPath)) {
-                    return;
-                }
-                // Check if prefix already registered to avoid collision with default set.
-                try {
-                    $factory->svg($this->nameLower.'::non-existent-test');
-                } catch (SvgNotFound $e) {
-                    // Prefix not registered yet — safe to add.
+                if (File::exists($svgPath)) {
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
-                } catch (CannotRegisterIconSet $e) {
-                    // Prefix collides — skip registration, SVGs served as static assets.
                 }
             } catch (\Throwable $e) {
-                // Ignore missing optional assets.
+                // Ignore - assets opzionali, modulo puo funzionare senza.
             }
         });
     }

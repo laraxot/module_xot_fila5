@@ -1,14 +1,3 @@
----
-title: "Gestione Domini e Configurazioni"
-module: "Xot"
-type: concept
-tags: [domain, configuration, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "domain configuration 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Gestione Domini e Configurazioni
 
 ## Prerequisiti

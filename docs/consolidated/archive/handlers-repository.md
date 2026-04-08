@@ -85,5 +85,5 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 ## Collegamenti
 - [Exception Handling Guide](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../formatters/README.md)
-- [PHPStan Level 9 Guide](phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
 - [Handlers Overview](./README.md)

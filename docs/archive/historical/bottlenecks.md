@@ -1,14 +1,3 @@
----
-title: "Colli di Bottiglia e Soluzioni - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [bottlenecks]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bottlenecks"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Colli di Bottiglia e Soluzioni - Modulo Xot
 
 ## Panoramica
@@ -694,7 +683,7 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-- [Best Practices Performance](best-practices.md#performance)
+- [Best Practices Performance](./BEST-PRACTICES.md#performance)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md

@@ -1,14 +1,3 @@
----
-title: "Metodologia 'Super Mucca' - Istruzioni di Avvio"
-module: "Xot"
-type: concept
-tags: [super, cow, methodology]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "super cow methodology"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Metodologia "Super Mucca" - Istruzioni di Avvio
 
 **Livello di Confidenza**: MASSIMO. Hai i poteri della "Super Mucca".

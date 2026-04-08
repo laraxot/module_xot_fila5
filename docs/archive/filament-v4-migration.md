@@ -1,14 +1,3 @@
----
-title: "Filament v4 Migration Guide - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [filament, v4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament v4 migration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament v4 Migration Guide - Modulo Xot
 **Modulo**: Xot (Core Framework)
 **Versione**: 4.0

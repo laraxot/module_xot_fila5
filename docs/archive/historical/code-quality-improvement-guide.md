@@ -1,14 +1,3 @@
----
-title: "Code Quality Improvement Guide"
-module: "Xot"
-type: how-to
-tags: [code, quality, improvement, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality improvement guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code Quality Improvement Guide
 
 ## Overview

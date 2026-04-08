@@ -1,14 +1,3 @@
----
-title: "Third-Party Model Integration - Quick Reference"
-module: "Xot"
-type: concept
-tags: [third, party, model, quick]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "third party model quick reference"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Third-Party Model Integration - Quick Reference
 
 ## 🚨 CRITICAL RULES

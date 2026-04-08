@@ -1,14 +1,3 @@
----
-title: "Form e Validazione nel Progetto il progetto"
-module: "Xot"
-type: concept
-tags: [forms, validation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "forms and validation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Form e Validazione nel Progetto il progetto
 

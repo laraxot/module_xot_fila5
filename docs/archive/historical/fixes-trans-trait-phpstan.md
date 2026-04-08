@@ -1,14 +1,3 @@
----
-title: "Fix PHPStan TransTrait - Tipizzazione Array Completa"
-module: "Xot"
-type: pattern
-tags: [fixes, trans, trait, phpstan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "fixes trans trait phpstan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27

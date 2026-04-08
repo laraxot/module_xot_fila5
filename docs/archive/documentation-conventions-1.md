@@ -1,14 +1,3 @@
----
-title: "Convenzioni per la documentazione in Laraxot PTVX"
-module: "Xot"
-type: concept
-tags: [documentation, conventions, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation conventions 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzioni per la documentazione in Laraxot PTVX
 
 ## Convenzioni di naming

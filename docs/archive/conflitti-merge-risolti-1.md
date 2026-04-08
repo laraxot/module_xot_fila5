@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitti di Merge"
-module: "Xot"
-type: concept
-tags: [conflitti, merge, risolti, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflitti merge risolti 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitti di Merge
 
 # Risoluzione Conflitti di Merge in <main module>

@@ -1,14 +1,3 @@
----
-title: "Error Curl 60 1"
-module: "Xot"
-type: concept
-tags: [error, curl, 60, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "error curl 60 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 

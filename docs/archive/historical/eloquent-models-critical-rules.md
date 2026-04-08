@@ -1,14 +1,3 @@
----
-title: "Eloquent Models - Regole Critiche per Laraxot PTVX"
-module: "Xot"
-type: rule
-tags: [eloquent, models, critical, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "eloquent models critical rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Eloquent Models - Regole Critiche per Laraxot PTVX
 
 ## DIVIETO ASSOLUTO: property_exists() con Modelli Eloquent

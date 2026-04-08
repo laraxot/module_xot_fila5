@@ -45,4 +45,4 @@
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Architettura Folio + Volt](../../FOLIO_VOLT_ARCHITECTURE.md)
-- [Best Practices](best-practices.md)
+- [Best Practices](../../BEST-PRACTICES.md)

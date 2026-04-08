@@ -1,7 +1,3 @@
-# regexp
-
-<!-- Contenuto migrato da _docs/regexp.txt -->
-
 //------------------------------
 strip_tags
 <[^>]*>(.*)<\/[^>]*>
@@ -11,9 +7,9 @@ strip_tags
 /<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/g;
 
 var text = '<div class="foo">bar</div>';
-text.replace(/(<([^>]+)>)/ig,"");
+text.replace(/(<([^>]+)>)/ig,""); 
 
-//----
+//---- 
 extract attribute data-
 
 (data-\w+)=["']?((?:.(?!["']?\s+(?:\S+)=|\s*\/?[>"']))+.)["']?

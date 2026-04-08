@@ -45,7 +45,7 @@
 
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
-- [Best Practices Testing](best-practices.md#testing)
+- [Best Practices Testing](../../BEST-PRACTICES.md#testing)
 - [PHPStan Progress](../../phpstan_progress.md)
 ## Collegamenti tra versioni di status.md
 * [status.md](../../../Xot/project_docs/roadmap/project_docs/status.md)

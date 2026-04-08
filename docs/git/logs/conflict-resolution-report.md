@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitti Git - Report di Intervento"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitti Git - Report di Intervento
 
 ## Panoramica
@@ -53,7 +42,6 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - Scelta la tipizzazione più specifica `array<string, array|string>` anziché la sintassi abbreviata `(array|string)[]`
 - Mantenuta la coerenza con la documentazione `@psalm-return`
 
-**Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 **Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../media/docs/conflitti_merge_risolti.md)
 
 ### 4. _components.json
@@ -94,7 +82,6 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 
 - [Risoluzione conflitti git generale](risoluzione_conflitti.md)
 - [Documentazione conflitti Modulo Xot](../conflicts/model_with_pos_contract_resolution.md)
-- [Documentazione conflitti Modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 - [Documentazione conflitti Modulo Media](../../media/docs/conflitti_merge_risolti.md)
 
 ## Test Effettuati

@@ -1,14 +1,3 @@
----
-title: "Struttura dei Moduli in il progetto"
-module: "Xot"
-type: concept
-tags: [module, structure, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module structure 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Struttura dei Moduli in il progetto
 
 ## Panoramica

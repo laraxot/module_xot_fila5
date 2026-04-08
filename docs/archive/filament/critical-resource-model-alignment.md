@@ -1,14 +1,3 @@
----
-title: "CRITICAL: Filament Resource-Model Alignment Rules"
-module: "Xot"
-type: concept
-tags: [critical, resource, model, alignment]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "critical resource model alignment"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # CRITICAL: Filament Resource-Model Alignment Rules
 
 ## 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO

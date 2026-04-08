@@ -1,14 +1,3 @@
----
-title: "Stato Avanzamento Risoluzione Conflitti Git"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, progress]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution progress"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Stato Avanzamento Risoluzione Conflitti Git
 
 ## Panoramica
@@ -100,7 +89,6 @@ Questo documento tiene traccia dello stato di avanzamento della risoluzione dei 
 - **File in corso**: 0 (0%)
 - **File da risolvere**: ~294 (98%)
 
-Ultimo aggiornamento: Gennaio 2025
 
 ## Prossimi Passaggi
 

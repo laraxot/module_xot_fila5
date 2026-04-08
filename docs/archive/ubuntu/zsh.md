@@ -1,14 +1,3 @@
----
-title: "Zsh"
-module: "Xot"
-type: concept
-tags: [zsh]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "zsh"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ~~~ bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 touch ~/.zshrc

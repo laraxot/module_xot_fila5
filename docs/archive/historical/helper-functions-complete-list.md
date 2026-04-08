@@ -1,14 +1,3 @@
----
-title: "Helper Functions Complete List - Xot Module"
-module: "Xot"
-type: concept
-tags: [helper, functions, complete, list]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "helper functions complete list"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Helper Functions Complete List - Xot Module
 
 ## 📋 Overview

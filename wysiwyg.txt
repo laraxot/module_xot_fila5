@@ -1,7 +1,3 @@
-# wysiwyg
-
-<!-- Contenuto migrato da _docs/wysiwyg.txt -->
-
 -------------------------------
 editor tiptap con livewire
 https://oliver.mx/tiptap-laravel
@@ -29,3 +25,4 @@ https://oliver.mx/tiptap-laravel
 --------------------------------
 --------------------------------
 --------------------------------
+

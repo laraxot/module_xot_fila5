@@ -1,14 +1,3 @@
----
-title: "Opportunità di Ottimizzazione DRY + KISS"
-module: "Xot"
-type: concept
-tags: [optimization, opportunities, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "optimization opportunities 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Opportunità di Ottimizzazione DRY + KISS
 
 ## Panoramica

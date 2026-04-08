@@ -1,14 +1,3 @@
----
-title: "Pacchetti del Modulo Xot"
-module: "Xot"
-type: concept
-tags: [packages]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "packages"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Pacchetti del Modulo Xot
 
 ## Pacchetti Utilizzati

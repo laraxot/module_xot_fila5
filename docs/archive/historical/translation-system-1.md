@@ -1,14 +1,3 @@
----
-title: "Sistema di Traduzione"
-module: "Xot"
-type: concept
-tags: [translation, system, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translation system 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()
@@ -240,7 +229,7 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md) 
-=
+========
 - [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)

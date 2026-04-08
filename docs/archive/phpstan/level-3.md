@@ -1,14 +1,3 @@
----
-title: "Rapporto PHPStan Livello 3 per il modulo Xot"
-module: "Xot"
-type: concept
-tags: [level, 3]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "level 3"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Rapporto PHPStan Livello 3 per il modulo Xot
 
 Data analisi: 2025-04-15 21:53:24

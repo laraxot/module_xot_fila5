@@ -1,14 +1,3 @@
----
-title: "Piano di Risoluzione Conflitti Git"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Piano di Risoluzione Conflitti Git
 
 ## Panoramica

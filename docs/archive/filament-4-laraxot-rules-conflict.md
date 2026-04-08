@@ -1,14 +1,3 @@
----
-title: "Filament 4 + Laraxot Rules - Xot Module"
-module: "Xot"
-type: rule
-tags: [filament, 4, laraxot, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 4 laraxot rules conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali
@@ -31,6 +20,10 @@ class MyPage extends XotBaseViewRecord
 ### 2. **Struttura Namespace Corretta**
 ```php
 // ✅ CORRETTO
+namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+
+// ❌ SBAGLIATO
+namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
@@ -80,6 +73,7 @@ class MyWidget extends Widget implements HasForms
 
 declare(strict_types=1);
 
+namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
@@ -103,6 +97,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
+namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -168,6 +163,10 @@ public function getFormSchema(): array
 ### 3. **Namespace Errati**
 ```php
 // ❌ SBAGLIATO
+namespace Modules\healthcare_app\App\Filament\Widgets;
+
+// ✅ CORRETTO
+namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\<nome progetto>\App\Filament\Widgets;
 
 // ✅ CORRETTO
@@ -182,11 +181,13 @@ namespace Modules\<nome progetto>\Filament\Widgets;
 
 declare(strict_types=1);
 
+namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 use Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 
 class ViewQuestionChart extends XotBaseViewRecord
@@ -231,6 +232,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
+namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Filament\Forms\Components\DatePicker;

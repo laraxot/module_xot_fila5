@@ -1,14 +1,3 @@
----
-title: "PHPStan Correction Session Report - November 2025"
-module: "Xot"
-type: concept
-tags: [phpstan, session, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan session report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Correction Session Report - November 2025
 
 ## Executive Summary
@@ -33,7 +22,7 @@ related:
 8. **DbForge** (155 files) - 0 errori ✅
 9. **Job** (251 files) - 0 errori ✅
 10. **Geo** (343 files) - 0 errori ✅
-11. **ModuloEsempio** (380 files) - 0 errori ✅
+11. **healthcare_app** (380 files) - 0 errori ✅
 12. **Cms** (431 files) - 0 errori ✅
 13. **Notify** (472 files) - 0 errori ✅
 14. **UI** (543 files) - 0 errori ✅ (completato!)

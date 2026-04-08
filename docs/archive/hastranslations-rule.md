@@ -1,14 +1,3 @@
----
-title: "🚨 REGOLA FONDAMENTALE: HasTranslations"
-module: "Xot"
-type: rule
-tags: [hastranslations, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hastranslations rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # 🚨 REGOLA FONDAMENTALE: HasTranslations
 

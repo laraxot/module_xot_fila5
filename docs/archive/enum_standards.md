@@ -1,14 +1,3 @@
----
-title: "Enum Standards in <nome progetto>"
-module: "Xot"
-type: rule
-tags: [enum, standards]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "enum standards"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Enum Standards in <nome progetto>
 
 This document defines the standards and best practices for working with Enums in the <nome progetto> project.

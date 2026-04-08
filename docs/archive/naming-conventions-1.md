@@ -1,14 +1,3 @@
----
-title: "Convenzioni di Nomenclatura in Laravel Modules"
-module: "Xot"
-type: concept
-tags: [naming, conventions, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "naming conventions 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.
@@ -62,7 +51,7 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 
 ## Collegamenti alla documentazione correlata
 - [Qualità del codice](./CODE_QUALITY.md)
-- [Tipi rigorosi PHP](php-strict-types.md)
+- [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
 - [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Best practice per i provider di servizi](service-provider-best-practices.md)
-- [Best practice per Filament](filament-best-practices.md)
+- [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+- [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)

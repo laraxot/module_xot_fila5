@@ -1,14 +1,3 @@
----
-title: "Creazione di Nuovi Moduli"
-module: "Xot"
-type: concept
-tags: [module, creation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module creation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Creazione di Nuovi Moduli
 
 ## Introduzione
@@ -196,6 +185,6 @@ NomeModulo/
 ## Link Utili
 - [service-provider-best-practices.md](service-provider-best-practices.md)
 - [blade-component-registration.md](blade-component-registration.md)
-- [XotBaseServiceProvider.md](xotbaseserviceprovider.md)
+- [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)

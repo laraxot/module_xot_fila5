@@ -1,14 +1,3 @@
----
-title: "Autonomous Priority Rule"
-module: "Xot"
-type: rule
-tags: [autonomous, priority, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "autonomous priority rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Autonomous Priority Rule
 
 **Date**: 2025-12-18

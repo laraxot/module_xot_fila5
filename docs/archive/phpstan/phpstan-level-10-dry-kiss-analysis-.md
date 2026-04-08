@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17"
-module: "Xot"
-type: concept
-tags: [phpstan, level, 10, dry]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level 10 dry kiss analysis "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17
 
 ## Executive Summary
@@ -79,7 +68,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-**File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
+**File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
 
 **Errori PHPStan Level 10**:
 ```
@@ -117,7 +106,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-| ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+| healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -160,7 +149,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-- ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+- healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -300,7 +289,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-**File**: `Modules/ModuloEsempio/app/Models/Contact.php`
+**File**: `Modules/healthcare_app/app/Models/Contact.php`
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -361,7 +350,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-**File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
+**File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -443,13 +432,13 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-- **ModuloEsempio**: 5 modelli
+- **healthcare_app**: 5 modelli
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-cd Modules/ModuloEsempio/app/Models
+cd Modules/healthcare_app/app/Models
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -468,7 +457,7 @@ done
 
 **Comando**:
 ```bash
-vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
+vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
 ```
 
 **Risultato**:
@@ -880,13 +869,13 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
+./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-- ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
+- healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
 
 ### Manual Code Review
 

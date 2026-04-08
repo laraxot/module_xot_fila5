@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17"
-module: "Xot"
-type: concept
-tags: [phpstan, level, 10, dry]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level 10 dry kiss analysis "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17
 
 ## Executive Summary

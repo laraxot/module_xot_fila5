@@ -1,14 +1,3 @@
----
-title: "Code e Job"
-module: "Xot"
-type: concept
-tags: [queues, jobs]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "queues jobs"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code e Job
 
 ## Configurazione Base
