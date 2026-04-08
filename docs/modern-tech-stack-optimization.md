@@ -1808,8 +1808,8 @@ class ContactDashboard extends Dashboard
         return [
             'overview' => [
                 'label' => 'Overview',
-'url' => route('filament.Quaeris.dashboard'),
-                'isActive' => request()->routeIs('filament.Quaeris.dashboard'),
+                'url' => route('filament.healthcare_app.dashboard'),
+                'isActive' => request()->routeIs('filament.healthcare_app.dashboard'),
             ],
             'analytics' => [
                 'label' => 'Analytics',
@@ -1818,8 +1818,8 @@ class ContactDashboard extends Dashboard
             ],
             'reports' => [
                 'label' => 'Reports',
-                'url' => route('filament.Quaeris.reports'),
-                'isActive' => request()->routeIs('filament.Quaeris.reports'),
+                'url' => route('filament.healthcare_app.reports'),
+                'isActive' => request()->routeIs('filament.healthcare_app.reports'),
             ],
         ];
     }

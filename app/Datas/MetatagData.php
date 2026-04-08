@@ -141,7 +141,7 @@ class MetatagData extends Data implements Wireable
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
             $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
-            $data['description'] = TenantService::trans('metatag.description');
+            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -583,17 +583,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return TenantService::trans('metatag.keywords');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return TenantService::trans('metatag.author');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return TenantService::trans('metatag.sitename');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
     }
 
     public function getRobots(): string
