@@ -91,28 +91,11 @@ trait HasXotTable
                 ->icon('heroicon-o-paper-clip');
         }
 
-<<<<<<< HEAD
         if (is_object($resource) && method_exists($resource, 'canAttach')) {
             $actions['attach'] = AttachAction::make()
                 ->icon('heroicon-o-link')
                 ->iconButton()
                 ->visible(fn (): bool => (bool) $resource->canAttach());
-=======
-<<<<<<< HEAD
-        if (is_object($resource) && method_exists($resource, 'canAttach')) {
-            $actions['attach'] = AttachAction::make()
-                ->icon('heroicon-o-link')
-                ->iconButton()
-                ->visible(fn (): bool => (bool) $resource->canAttach());
-=======
-        if (method_exists($resource, 'canAttach')) {
-            $actions['attach'] = AttachAction::make()
-                ->icon('heroicon-o-link')
-                ->iconButton()
-                ->visible(fn (): bool => (bool) $resource->canAttach())
-                ;
->>>>>>> 4ffe7f41e (.)
->>>>>>> 9506daa5 (.)
         }
 
         $actions['layout'] = TableLayoutToggleTableAction::make('layout');
