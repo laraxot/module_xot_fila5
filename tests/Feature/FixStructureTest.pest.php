@@ -3,17 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
-<<<<<<< HEAD
-=======
+<<<<<<< Updated upstream
 
 use Illuminate\Support\Facades\File;
-<<<<<<< HEAD
 =======
-use Illuminate\Support\Facades\Storage;
->>>>>>> 4ffe7f41e (.)
-
-use Illuminate\Support\Facades\File;
->>>>>>> 9506daa5 (.)
+>>>>>>> Stashed changes
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);

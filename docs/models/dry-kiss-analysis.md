@@ -41,7 +41,6 @@ abstract class BaseModel extends XotBaseModel {
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
 - healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 - ModuloEsempio: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
->>>>>>> .merge_file_PmbTJN
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -91,7 +90,6 @@ protected function casts(): array {
 ### 4. **ModuloEsempio BaseModel - Pattern Anomalo**
 
 **Problema Critico**: `Modules\ModuloEsempio\Models\BaseModel` NON estende `XotBaseModel`:
->>>>>>> .merge_file_PmbTJN
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -126,7 +124,6 @@ use Updater;
 
 // healthcare_app/BaseModel duplica Updater:
 // ModuloEsempio/BaseModel duplica Updater:
->>>>>>> .merge_file_PmbTJN
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -186,7 +183,6 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/ModuloEsempio/app/Models/BaseModel.php
->>>>>>> .merge_file_PmbTJN
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -208,7 +204,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI ModuloEsempio, se necessari
->>>>>>> .merge_file_PmbTJN
         ]);
     }
 }
@@ -303,7 +298,6 @@ Manutenibilità: +40%
 ### 🔴 Priorità ALTA
 1. **Correggere healthcare_app/BaseModel** (non segue standard)
 1. **Correggere ModuloEsempio/BaseModel** (non segue standard)
->>>>>>> .merge_file_PmbTJN
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -323,7 +317,6 @@ Manutenibilità: +40%
 - `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
 ### Fase 2: Correzione ModuloEsempio
 - `Modules/ModuloEsempio/app/Models/BaseModel.php` (refactor completo)
->>>>>>> .merge_file_PmbTJN
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -338,7 +331,6 @@ Manutenibilità: +40%
 - `Modules/User/docs/models/README.md`
 - `Modules/healthcare_app/docs/models/README.md`
 - `Modules/ModuloEsempio/docs/models/README.md`
->>>>>>> .merge_file_PmbTJN
 
 ## ✅ Checklist Implementazione
 
@@ -348,7 +340,6 @@ Manutenibilità: +40%
 - [ ] Testare modelli healthcare_app con nuova struttura
 - [ ] Correggere `Modules/ModuloEsempio/app/Models/BaseModel.php`
 - [ ] Testare modelli ModuloEsempio con nuova struttura
->>>>>>> .merge_file_PmbTJN
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -367,7 +358,6 @@ Manutenibilità: +40%
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
 2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
 2. **Consistenza è chiave**: ModuloEsempio devia dallo standard → maggiore complessità
->>>>>>> .merge_file_PmbTJN
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 
@@ -417,7 +407,6 @@ abstract class BaseModel extends XotBaseModel {
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
 - healthcare_app: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 - ModuloEsempio: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
->>>>>>> .merge_file_PmbTJN
 - UI: Vuoto (minimal)
 
 **Violazione DRY**: 📊 **93% di duplicazione** (14/15 BaseModel identici)
@@ -467,7 +456,6 @@ protected function casts(): array {
 ### 4. **ModuloEsempio BaseModel - Pattern Anomalo**
 
 **Problema Critico**: `Modules\ModuloEsempio\Models\BaseModel` NON estende `XotBaseModel`:
->>>>>>> .merge_file_PmbTJN
 
 ```php
 // ❌ ERRATO - Non segue l'architettura standard
@@ -502,7 +490,6 @@ use Updater;
 
 // healthcare_app/BaseModel duplica Updater:
 // ModuloEsempio/BaseModel duplica Updater:
->>>>>>> .merge_file_PmbTJN
 use Updater;  // ❌ Duplicato se estendesse XotBaseModel
 use HasExtraTrait;
 use InteractsWithMedia;
@@ -562,7 +549,6 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/ModuloEsempio/app/Models/BaseModel.php
->>>>>>> .merge_file_PmbTJN
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -584,7 +570,6 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI ModuloEsempio, se necessari
->>>>>>> .merge_file_PmbTJN
         ]);
     }
 }
@@ -679,7 +664,6 @@ Manutenibilità: +40%
 ### 🔴 Priorità ALTA
 1. **Correggere healthcare_app/BaseModel** (non segue standard)
 1. **Correggere ModuloEsempio/BaseModel** (non segue standard)
->>>>>>> .merge_file_PmbTJN
 2. **Implementare auto-discovery in XotBaseModel** (elimina 90% duplicazioni)
 
 ### 🟡 Priorità MEDIA
@@ -699,7 +683,6 @@ Manutenibilità: +40%
 - `Modules/healthcare_app/app/Models/BaseModel.php` (refactor completo)
 ### Fase 2: Correzione ModuloEsempio
 - `Modules/ModuloEsempio/app/Models/BaseModel.php` (refactor completo)
->>>>>>> .merge_file_PmbTJN
 
 ### Fase 3: Cleanup BaseModel
 - `Modules/Cms/app/Models/BaseModel.php` (rimuovi casts ridondanti)
@@ -714,7 +697,6 @@ Manutenibilità: +40%
 - `Modules/User/docs/models/README.md`
 - `Modules/healthcare_app/docs/models/README.md`
 - `Modules/ModuloEsempio/docs/models/README.md`
->>>>>>> .merge_file_PmbTJN
 
 ## ✅ Checklist Implementazione
 
@@ -724,7 +706,6 @@ Manutenibilità: +40%
 - [ ] Testare modelli healthcare_app con nuova struttura
 - [ ] Correggere `Modules/ModuloEsempio/app/Models/BaseModel.php`
 - [ ] Testare modelli ModuloEsempio con nuova struttura
->>>>>>> .merge_file_PmbTJN
 - [ ] Rimuovere casts ridondanti in Cms
 - [ ] Eliminare BaseModel non necessari (opzionale)
 - [ ] Aggiornare CLAUDE.md con nuove convenzioni
@@ -743,7 +724,6 @@ Manutenibilità: +40%
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
 2. **Consistenza è chiave**: healthcare_app devia dallo standard → maggiore complessità
 2. **Consistenza è chiave**: ModuloEsempio devia dallo standard → maggiore complessità
->>>>>>> .merge_file_PmbTJN
 3. **Less is more**: BaseModel vuoti sono OK se tutto viene ereditato correttamente
 4. **Namespace è informazione**: Usarlo per auto-discovery elimina configurazioni manuali
 
