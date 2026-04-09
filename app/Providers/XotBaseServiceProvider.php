@@ -68,7 +68,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
                 }
             } catch (\Throwable $e) {
+<<<<<<< Updated upstream
                 // Ignore - assets opzionali, modulo puo funzionare senza.
+=======
+                // Ignore - assets opzionali, modulo può funzionare senza.
+>>>>>>> Stashed changes
             }
         });
     }
@@ -83,6 +87,14 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
+<<<<<<< Updated upstream
+=======
+    /**
+     * Registra le traduzioni del modulo.
+     *
+     * @throws \Exception
+     */
+>>>>>>> Stashed changes
     public function registerTranslations(): void
     {
         if ('' === $this->name) {
@@ -179,8 +191,14 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 $filename = pathinfo($file, PATHINFO_FILENAME);
                 Config::set($this->nameLower.'.'.$filename, require $file);
             }
+<<<<<<< Updated upstream
         } catch (\Throwable $e) {
             // Ignore config registration failures for optional module config.
+=======
+        } catch (\Exception $e) {
+            // Ignore missing configuration
+            return;
+>>>>>>> Stashed changes
         }
     }
 }

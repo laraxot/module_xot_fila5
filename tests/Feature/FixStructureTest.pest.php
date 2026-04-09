@@ -3,8 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
+<<<<<<< Updated upstream
 
 use Illuminate\Support\Facades\File;
+=======
+>>>>>>> Stashed changes
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);

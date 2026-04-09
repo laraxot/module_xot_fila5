@@ -129,7 +129,10 @@ class ExportXlsStreamByLazyCollection
 
         /** @var array<string> $headers */
         $headers = array_values($headings->map(strval(...))->toArray());
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         return $headers;
     }
 }
