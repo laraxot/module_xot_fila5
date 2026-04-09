@@ -88,6 +88,18 @@ interface ModelContract
     public function toArray();
 
     /**
+     * Get the value of the model's primary key.
+     */
+    public function getKey();
+
+    /**
+     * Get a relationship.
+     *
+     * @phpstan-param string $key
+     */
+    public function getRelationValue($key);
+
+    /**
      * Create a new instance of the given model.
      *
      * @param array $attributes
