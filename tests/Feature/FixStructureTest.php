@@ -42,7 +42,7 @@ class FixStructureTest extends TestCase
         if (is_dir($dir)) {
             $objects = scandir($dir);
             foreach ($objects as $object) {
-                if ($object !== '.' && $object !== '..') {
+                if ('.' !== $object && '..' !== $object) {
                     if (is_dir($dir.DIRECTORY_SEPARATOR.$object) && ! is_link($dir.'/'.$object)) {
                         $this->rrmdir($dir.DIRECTORY_SEPARATOR.$object);
                     } else {
@@ -55,7 +55,7 @@ class FixStructureTest extends TestCase
     }
 
     #[Test]
-    public function test_move_to_app_functionality(): void
+    public function testMoveToAppFunctionality(): void
     {
         // Creiamo una struttura di directory di test
 <<<<<<< HEAD
@@ -87,7 +87,7 @@ class FixStructureTest extends TestCase
     }
 
     #[Test]
-    public function test_rename_to_lower_functionality(): void
+    public function testRenameToLowerFunctionality(): void
     {
         // Creiamo una struttura di directory di test
 <<<<<<< HEAD
@@ -119,7 +119,7 @@ class FixStructureTest extends TestCase
     }
 
     #[Test]
-    public function test_move_config_functionality(): void
+    public function testMoveConfigFunctionality(): void
     {
         // Creiamo una struttura di directory di test con entrambe le versioni
 <<<<<<< HEAD

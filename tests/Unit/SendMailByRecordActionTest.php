@@ -16,8 +16,7 @@ use Illuminate\Mail\Mailable;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 
 it('throws if record has no email', function (): void {
-    $record = new class extends Model
-    {
+    $record = new class extends Model {
         // no email attribute
         public function option(string $key): ?string
         {
@@ -26,9 +25,10 @@ it('throws if record has no email', function (): void {
 
         public function myLogs()
         {
-            return new class
-            {
-                public function create(array $data): void {}
+            return new class {
+                public function create(array $data): void
+                {
+                }
             };
         }
     };
