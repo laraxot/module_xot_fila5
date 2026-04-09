@@ -42,9 +42,7 @@ function mockXotData(): void
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
 
 
-========
         
->>>>>>>> bb980a213 (.):docs/consolidated/testing_best_practices_uppercase.md
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
