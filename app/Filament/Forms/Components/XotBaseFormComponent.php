@@ -53,10 +53,7 @@ abstract class XotBaseFormComponent extends Field
     {
         /** @var array<string, mixed> $rules */
         $rules = parent::getValidationRules();
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
         return $rules;
     }
 }
