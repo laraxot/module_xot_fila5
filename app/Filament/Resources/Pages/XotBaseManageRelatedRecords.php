@@ -98,11 +98,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-<<<<<<< Updated upstream
-    #[\Override]
-=======
     #[Override]
->>>>>>> Stashed changes
     protected function getTableColumns(): array
     {
         return [

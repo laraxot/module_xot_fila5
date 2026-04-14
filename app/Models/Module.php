@@ -92,10 +92,7 @@ final class Module extends BaseModel
 
         /** @var array<int, array<string, mixed>> $rows */
         $rows = array_values($modules);
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
         return $rows;
     }
 
