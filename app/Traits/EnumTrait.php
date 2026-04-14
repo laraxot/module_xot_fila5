@@ -15,22 +15,22 @@ trait EnumTrait
 
     public function getLabel(): string
     {
-        return $this->transClass(static::class, $this->value.'.label');
+        return $this->transClass(static::class, 'values.'.$this->value.'.label');
     }
 
     public function getColor(): string
     {
-        return $this->transClass(static::class, $this->value.'.color');
+        return $this->transClass(static::class, 'values.'.$this->value.'.color');
     }
 
     public function getIcon(): string
     {
-        return $this->transClass(static::class, $this->value.'.icon');
+        return $this->transClass(static::class, 'values.'.$this->value.'.icon');
     }
 
     public function getDescription(): string
     {
-        return $this->transClass(static::class, $this->value.'.description');
+        return $this->transClass(static::class, 'values.'.$this->value.'.description');
     }
 
     /**
@@ -100,8 +100,8 @@ trait EnumTrait
      * ```
      */
     /**
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+     * @param  Blueprint  $table  The table blueprint
+     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -110,7 +110,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-            if (null === $migration || ! $migration->hasColumn($name)) {
+            if ($migration === null || ! $migration->hasColumn($name)) {
                 $definition($table);
             }
         }
