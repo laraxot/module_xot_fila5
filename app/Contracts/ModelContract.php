@@ -15,18 +15,18 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Xot\Contracts\ModelContract.
  *
- * @property int         $id
- * @property int|null    $user_id
- * @property string|null $post_type
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property string|null $title
- * @property bool        $is_reclamed
- * @property bool        $table_enable
- * @property \Illuminate\Database\Eloquent\Relations\Pivot|null  $pivot
- * @property string      $tennant_name
+ * @property int                                                $id
+ * @property int|null                                           $user_id
+ * @property string|null                                        $post_type
+ * @property Carbon|null                                        $created_at
+ * @property Carbon|null                                        $updated_at
+ * @property string|null                                        $created_by
+ * @property string|null                                        $updated_by
+ * @property string|null                                        $title
+ * @property bool                                               $is_reclamed
+ * @property bool                                               $table_enable
+ * @property \Illuminate\Database\Eloquent\Relations\Pivot|null $pivot
+ * @property string                                             $tennant_name
  *
  * @method string    getRouteKey()
  * @method string    getRouteKeyName()
