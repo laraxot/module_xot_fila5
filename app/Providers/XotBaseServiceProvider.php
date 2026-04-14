@@ -83,11 +83,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
-    /**
-     * Registra le traduzioni del modulo.
-     *
-     * @throws \Exception
-     */
     public function registerTranslations(): void
     {
         if ('' === $this->name) {
