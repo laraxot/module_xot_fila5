@@ -1,37 +1,32 @@
-# Wiki Locale - Module Xot
+---
+title: "Wiki Index"
+module: "Xot"
+updated: "2026-04-15T08:28:51Z"
+---
 
-## Schema di Riferimento
+# Wiki Index — Xot
 
-Vedi [[../../../../docs/.schema/WIKI_SCHEMA.md|Schema Wiki Globale]]
+> **Purpose:** Content-oriented catalog of all wiki pages in this module.  
+> **Replaces embedding-based RAG at moderate scale (~100 sources).**
 
-## Struttura Locale
+## Concepts
 
-```
-wiki/
-├── concepts/       # Pattern e metodologie
-├── entities/       # Classi e componenti
-├── summaries/      # Sommari documenti
-├── comparisons/    # Confronti
-└── overviews/     # Panoramiche
-```
+_No concepts ingested yet. Drop raw documents in `../raw/articles/` and run ingest._
 
-## Pagine Compilate
+## Entities
 
-| Pagina | Tipo | Raw source | Data |
-|--------|------|------------|------|
-| [xot-module](./overviews/xot-module.md) | overview | xot-engine.md, module-architecture.md | 2026-04-15 |
+_No entities tracked yet._
 
-## Raw Sources Prioritari
+## Sources
 
-- `docs/xot-engine.md` — filosofia e classi fondamentali (**SSOT**)
-- `docs/module-architecture.md` — ecosistema moduli
-- `docs/testing-best-practices.md` — testing con XotBase*
-- `docs/00-INDEX.md` — indice modulo
+_No sources ingested yet._
 
-## Index Globale
+## Comparisons
 
-Vedi [[../../../../docs/wiki/index|Index Globale Wiki]]
+_No comparisons synthesized yet._
 
 ---
 
-*Ultimo aggiornamento: 2026-04-15*
+**Last Updated:** 2026-04-15T08:28:51Z  
+**Total Pages:** 0  
+**Total Raw Sources:** 0
