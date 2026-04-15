@@ -245,10 +245,15 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Inizializza lo stato del wizard: step da query + fill dati default.
      * Chiamare da mount() nel widget concreto dopo aver impostato le property locali.
+     *
+     * Chiama `form->fill()` per inizializzare la proprietà Livewire `$data` con tutte
+     * le chiavi dei campi del form. Senza questo, Livewire Entangle lancia errori
+     * "property cannot be found" perché `$data` è un array vuoto al momento dell'init Alpine.
      */
     protected function initWizardState(): void
     {
         $this->wizardStartStep = $this->resolveInitialStepFromQuery();
+        $this->form->fill($this->defaultFormData());
     }
 
     /**
