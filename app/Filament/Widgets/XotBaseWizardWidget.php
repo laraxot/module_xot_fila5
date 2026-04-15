@@ -5,15 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Actions\Action;
-use Filament\Resources\Pages\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-use Modules\Lang\Actions\Filament\AutoLabelAction;
-use Modules\Lang\Providers\LangServiceProvider;
 
 /**
  * Base per widget Filament che espongono un {@see Wizard} nello schema.
@@ -66,8 +63,8 @@ use Modules\Lang\Providers\LangServiceProvider;
  *
  * @see Wizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
- * @see LangServiceProvider
- * @see AutoLabelAction
+ * @see \Modules\Lang\Providers\LangServiceProvider
+ * @see \Modules\Lang\Actions\Filament\AutoLabelAction
  */
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
@@ -90,7 +87,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     protected function wizardMaxStep(): int
     {
-        return max(1, \count($this->getWizardSteps()));
+        return max(1, count($this->getWizardSteps()));
     }
 
     /**
@@ -108,21 +105,21 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         $wizard = $this->makeWizard($this->getWizardSteps())
-            // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
-            // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
-            // ->submitAction($this->getWizardSubmitAction());
-        ;
+            ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
+            ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
+            ->submitAction($this->getWizardSubmitAction());
 
         return [
             $wizard,
         ];
     }
 
+
     /**
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param array<int, Step> $steps
+     * @param  array<int, Step>  $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
@@ -133,10 +130,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
         if ($this->queryStepOverrideAllowed()) {
             $wizard->persistStepInQueryString('step');
-        }
-
-        if (! inAdmin()) {
-            $wizard = $wizard->view('pub_theme::components.wizard');
         }
 
         return $wizard;
@@ -157,6 +150,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Validazione custom per il wizard submission.
      * Da sovrascrivere nei widget di dominio per logiche custom.
      * Filament gestisce automaticamente la validation dei form fields.
+     *
+     * @return void
      */
     protected function validateWizardSubmission(): void
     {
@@ -169,8 +164,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Prepara i dati prima della creazione/aggiornamento.
      * Pattern ufficiale di Filament: mutateFormDataBeforeCreate/Update.
      *
-     * @param array<string, mixed> $data
-     *
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
     protected function prepareWizardFormData(array $data): array
@@ -208,15 +202,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         $steps = $this->getWizardSteps();
         $index = $this->wizardStartStep - 1; // 0-based index
 
-        $step = $steps[$index] ?? null;
-
-        if (null === $step) {
-            return null;
-        }
-
-        $label = $step->getLabel();
-
-        return is_string($label) && '' !== $label ? $label : null;
+        return $steps[$index]->getName() ?? null;
     }
 
     /**
@@ -267,21 +253,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function initWizardState(): void
     {
         $this->wizardStartStep = $this->resolveInitialStepFromQuery();
-
-        // Defensive: Filament's InteractsWithForms may initialize the Form at a different
-        // lifecycle moment; avoid fatal errors by falling back to populating $this->data
-        // when the Form instance is not yet available.
-        try {
-            if (isset($this->form) && is_object($this->form) && method_exists($this->form, 'fill')) {
-                $this->form->fill($this->defaultFormData());
-            } else {
-                // Initialize Livewire-bound data array to prevent Entangle errors in Alpine
-                $this->data = $this->defaultFormData();
-            }
-        } catch (\Throwable $e) {
-            // Best-effort fallback to ensure the widget renders even if form->fill fails
-            $this->data = $this->defaultFormData();
-        }
+        $this->form->fill($this->defaultFormData());
     }
 
     /**
@@ -350,19 +322,14 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             ->append('Schema')
             ->toString();
 
-        $labelKey = 'fixcity::ticket_wizard.steps.'.$name.'.label';
-        $label = __($labelKey);
-
         /** @var array<Htmlable|string> $schemaComponents */
         $schemaComponents = $this->$schema();
 
-        return Step::make($label)
-            ->label($label)
-            ->schema($schemaComponents);
+        return Step::make($name)->schema($schemaComponents);
     }
 
     /**
-     * Allineato a {@see HasWizard::hasSkippableSteps()}:
+     * Allineato a {@see \Filament\Resources\Pages\Concerns\HasWizard::hasSkippableSteps()}:
      * se `true`, gli step sono navigabili senza completare i campi obbligatori dello step corrente.
      * Per flussi cittadini (privacy, consensi) il default è `false`.
      */
@@ -403,7 +370,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         $raw = request()->query('step');
-        if (null === $raw || '' === $raw) {
+        if ($raw === null || $raw === '') {
             return 1;
         }
 
@@ -415,7 +382,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             if (str_contains((string) $raw, 'dati-della-segnalazione')) {
                 return 2;
             }
-
             // Default al primo passo per qualsiasi altro valore non numerico
             return 1;
         }
@@ -426,7 +392,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return 1;
         }
 
-        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
+        if (! $this->queryStepOverrideAllowed() && $step !== 1) {
             return 1;
         }
 
@@ -436,14 +402,13 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Appiattisce lo stato restituito da `getState()` se il `Wizard` e sotto la chiave wrapper.
      *
-     * @param array<string, mixed> $state
-     *
+     * @param  array<string, mixed>  $state
      * @return array<string, mixed>
      */
     protected function normalizeWizardFormState(array $state): array
     {
         $key = $this->getWizardSchemaWrapperKey();
-        if (isset($state[$key]) && \is_array($state[$key])) {
+        if (isset($state[$key]) && is_array($state[$key])) {
             return $this->stringKeyed($state[$key]);
         }
 
@@ -451,8 +416,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * @param array<mixed, mixed> $row
-     *
+     * @param  array<mixed, mixed>  $row
      * @return array<string, mixed>
      */
     protected function stringKeyed(array $row): array
@@ -472,14 +436,14 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function getWizardComponentKey(): string
     {
         $schema = $this->getSchema('form');
-        if (null === $schema) {
+        if ($schema === null) {
             throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
         }
 
         foreach ($schema->getComponents(withHidden: true) as $component) {
             if ($component instanceof Wizard) {
                 $key = $component->getKey();
-                if (null === $key || '' === $key) {
+                if ($key === null || $key === '') {
                     throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
                 }
 
@@ -502,13 +466,9 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return;
         }
 
-        $currentStepIndex = $wizard->getCurrentStepIndex();
-
         $this->callSchemaComponentMethod($key, 'nextStep', [
-            'currentStepIndex' => $currentStepIndex,
+            'currentStepIndex' => $wizard->getCurrentStepIndex(),
         ]);
-
-        $this->wizardStartStep = min($this->wizardMaxStep(), $currentStepIndex + 2);
     }
 
     /**
@@ -522,24 +482,10 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return;
         }
 
-        $currentStepIndex = $wizard->getCurrentStepIndex();
-
         $this->callSchemaComponentMethod($key, 'previousStep', [
-            'currentStepIndex' => $currentStepIndex,
-        ]);
-
-        $this->wizardStartStep = max(1, $currentStepIndex);
-    }
-
-    /**
-     * Naviga a uno step specifico per nome.
-     */
-    public function goToStep(string $stepName): void
-    {
-        $key = $this->getWizardComponentKey();
-
-        $this->callSchemaComponentMethod($key, 'goToStep', [
-            'step' => $stepName,
+            'currentStepIndex' => $wizard->getCurrentStepIndex(),
         ]);
     }
+
+
 }

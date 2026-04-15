@@ -21,6 +21,7 @@ Il modulo **Xot** è il nucleo fondativo dell'intero progetto Laraxot PTVX. Forn
 | `XotBaseResource` | Risorse Filament base | `Filament\Resources\Resource` |
 | `XotBaseServiceProvider` | ServiceProvider modulare | `Illuminate\Support\ServiceProvider` |
 | `XotBaseWidget` | Widget Filament base | `Filament\Widgets\Widget` |
+| `XotBaseWizardWidget` | Widget con form wizard multi-step (Filament `Wizard` / `Step`) | `XotBaseWidget` |
 
 ### Trait Fondamentali
 
@@ -29,6 +30,9 @@ Il modulo **Xot** è il nucleo fondativo dell'intero progetto Laraxot PTVX. Forn
 - `RelationX`: Relazioni many-to-many estese
 
 ## Collegamenti
+- [Vite Configuration](./vite-configuration.md)
+- [Theme Assets Workflow](./theme-assets-workflow.md)
+- [BMAD Method (progetto)](../../../docs/bmad/setup-guide.md) — processo AI/agile e artefatti `_bmad-output/`
 
 - [Documentazione Root](../../../docs/XOT_MODULE.md)
 - [Regole Architettura](./architecture/)
@@ -48,5 +52,7 @@ Il modulo **Xot** è il nucleo fondativo dell'intero progetto Laraxot PTVX. Forn
 - [UI Module](../UI/docs/)
 - [Tenant Module](../Tenant/docs/)
 
-## AI Workflows
-- [AI Methodologies](./ai-methodologies.md)
+## LLM Wiki Workflow
+
+- Canonical wiki layer: [../../../../docs/wiki/README.md](../../../../docs/wiki/README.md)
+- Governance page: [../../../../docs/wiki/concepts/llm-wiki-governance.md](../../../../docs/wiki/concepts/llm-wiki-governance.md)

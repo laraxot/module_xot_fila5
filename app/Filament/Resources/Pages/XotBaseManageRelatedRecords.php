@@ -16,7 +16,7 @@ use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 
 /**
- * ---.
+ * Base page for Filament related-record managers.
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
@@ -72,7 +72,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * @return array<string, TextColumn>
      */
-    #[\Override]
+    #[Override]
     protected function getTableColumns(): array
     {
         return [
