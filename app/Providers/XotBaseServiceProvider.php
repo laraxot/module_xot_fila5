@@ -68,7 +68,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
                 }
             } catch (\Throwable $e) {
-                // Ignore - assets opzionali, modulo puo funzionare senza.
+                // Ignore missing optional assets.
             }
         });
     }
