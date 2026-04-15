@@ -10,7 +10,6 @@ namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 
 /**
@@ -26,10 +25,9 @@ use Illuminate\Support\Carbon;
  * @property string|null $title
  * @property bool        $is_reclamed
  * @property bool        $table_enable
- * @property Pivot|null  $pivot
+ * @property \Illuminate\Database\Eloquent\Relations\Pivot|null  $pivot
  * @property string      $tennant_name
  *
- * @method mixed     getKey()
  * @method string    getRouteKey()
  * @method string    getRouteKeyName()
  * @method string    getTable()
@@ -88,18 +86,6 @@ interface ModelContract
      * @return array<mixed>
      */
     public function toArray();
-
-    /**
-     * Get the value of the model's primary key.
-     */
-    public function getKey(): mixed;
-
-    /**
-     * Get a relationship.
-     *
-     * @phpstan-param string $key
-     */
-    public function getRelationValue(string $key): mixed;
 
     /**
      * Create a new instance of the given model.
