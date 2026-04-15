@@ -114,12 +114,11 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         ];
     }
 
-
     /**
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param  array<int, Step>  $steps
+     * @param array<int, Step> $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
@@ -150,8 +149,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Validazione custom per il wizard submission.
      * Da sovrascrivere nei widget di dominio per logiche custom.
      * Filament gestisce automaticamente la validation dei form fields.
-     *
-     * @return void
      */
     protected function validateWizardSubmission(): void
     {
@@ -164,7 +161,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Prepara i dati prima della creazione/aggiornamento.
      * Pattern ufficiale di Filament: mutateFormDataBeforeCreate/Update.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
+     *
      * @return array<string, mixed>
      */
     protected function prepareWizardFormData(array $data): array
@@ -370,7 +368,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         $raw = request()->query('step');
-        if ($raw === null || $raw === '') {
+        if (null === $raw || '' === $raw) {
             return 1;
         }
 
@@ -382,6 +380,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             if (str_contains((string) $raw, 'dati-della-segnalazione')) {
                 return 2;
             }
+
             // Default al primo passo per qualsiasi altro valore non numerico
             return 1;
         }
@@ -392,7 +391,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return 1;
         }
 
-        if (! $this->queryStepOverrideAllowed() && $step !== 1) {
+        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
             return 1;
         }
 
@@ -402,7 +401,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Appiattisce lo stato restituito da `getState()` se il `Wizard` e sotto la chiave wrapper.
      *
-     * @param  array<string, mixed>  $state
+     * @param array<string, mixed> $state
+     *
      * @return array<string, mixed>
      */
     protected function normalizeWizardFormState(array $state): array
@@ -416,7 +416,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * @param  array<mixed, mixed>  $row
+     * @param array<mixed, mixed> $row
+     *
      * @return array<string, mixed>
      */
     protected function stringKeyed(array $row): array
@@ -436,14 +437,14 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function getWizardComponentKey(): string
     {
         $schema = $this->getSchema('form');
-        if ($schema === null) {
+        if (null === $schema) {
             throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
         }
 
         foreach ($schema->getComponents(withHidden: true) as $component) {
             if ($component instanceof Wizard) {
                 $key = $component->getKey();
-                if ($key === null || $key === '') {
+                if (null === $key || '' === $key) {
                     throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
                 }
 
@@ -486,6 +487,4 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             'currentStepIndex' => $wizard->getCurrentStepIndex(),
         ]);
     }
-
-
 }

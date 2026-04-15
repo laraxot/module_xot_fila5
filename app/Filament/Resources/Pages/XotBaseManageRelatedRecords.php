@@ -14,7 +14,6 @@ use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Override;
 
 /**
  * Base page for Filament related-record managers.
@@ -73,7 +72,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * @return array<string, TextColumn>
      */
-    #[Override]
+    #[\Override]
     protected function getTableColumns(): array
     {
         return [
