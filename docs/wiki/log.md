@@ -9,6 +9,17 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-04-20] pattern | UnitTestCase senza MySQL per test puri
+
+- **motivo**: `Modules\Geo\Tests\TestCase` richiedeva MySQL anche per 17 test puramente PHP → `PDOException` su ambienti senza DB configurato
+- **soluzione**: creato `UnitTestCase` in Geo che usa `CreatesApplication` (Xot) senza `DatabaseTransactions`
+- **pages**:
+  - `docs/wiki/concepts/unit-test-case-pattern.md` (**NUOVA**): template riutilizzabile per ogni modulo
+  - `docs/wiki/index.md`: aggiornato sezione Testing Patterns
+- **applicabilità**: pattern replicabile in qualsiasi modulo per test Pest/PHPUnit senza DB
+
+---
+
 _No activity yet. Start by ingesting raw documents._
 
 ### Format

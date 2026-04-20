@@ -14,6 +14,10 @@ Welcome to the **Xot** module knowledge base. This wiki is maintained by AI agen
 - [[XotBaseResource]]: Standardizing Filament resources.
 - [[Actions Over Services]]: The mandatory business logic pattern.
 
+## 🧪 Testing Patterns
+
+- [UnitTestCase Pattern](./concepts/unit-test-case-pattern.md): come creare test puri senza connessione MySQL — template `UnitTestCase` per ogni modulo basato su `CreatesApplication`
+
 ## 🔧 Components & Traits
 - [[HasXotTable]]: Automatic table naming.
 - [[HasExtra]]: Schemaless metadata management.
