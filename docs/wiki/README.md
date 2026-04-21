@@ -1,20 +1,16 @@
+<<<<<<< HEAD
 # LLM Wiki (module)
 
-Questa cartella contiene la wiki curata del modulo **Xot** per uso LLM.
+This folder is the module's LLM wiki (docs/wiki). Use it to store synthesized, curated docs optimized for LLM ingestion.
 
-Usa `docs/` come sorgente raw e `docs/wiki/` come livello compilato/sintetico.
+Structure:
+- raw/: original source docs
+- wiki/: distilled summaries and canonical pages for LLM
+- archived/: historical/obsolete docs
 
-## Cosa mettere qui
+Use qmd to serve or convert these documents (https://github.com/tobi/qmd).
+=======
+# LLM Wiki
 
-- sintesi riusabili
-- convenzioni e guardrail del modulo
-- pagine indice e log cronologico
-
-## Struttura consigliata
-
-- `docs/raw/` sorgenti originali (se presenti)
-- `docs/wiki/` pagine compilate per LLM
-- `docs/wiki/index.md` indice
-- `docs/wiki/log.md` log append-only
-
-QMD: [https://github.com/tobi/qmd](https://github.com/tobi/qmd)
+Questa cartella contiene pagine curate per l'uso con LLM (wiki). Mettere qui sintesi, convenzioni e pagine curate.
+>>>>>>> 3898c746b (.)
