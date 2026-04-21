@@ -59,9 +59,10 @@ docs/
 ### Regole Fondamentali (CRITICAL!)
 | File | Descrizione | Link |
 |------|-------------|------|
-| Directory Structure Rules | Vietati `lang/lang/` e `_docs/` | [directory-structure-rules.md](directory-structure-rules.md) |
-| no-root-docs-rule.md | Cartelle docs root VIETATE | [📖](./no-root-docs-rule.md) |
+| no-root-folders-rule.md | Lang/docs/tests nei moduli | [📖](../wiki/concepts/no-root-folders-rule.md) |
+| no-lang-lang-and-no-underscore-docs-rule.md | No lang/lang/ o _docs/ | [📖](../wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md) |
 | no-root-test-docs-rule.md | Test docs nei moduli/temi | [📖](./concepts/no-root-test-docs-rule.md) |
+| no-root-docs-rule.md | Cartelle docs root VIETATE | [📖](./no-root-docs-rule.md) |
 | DIRECTORY_STRUCTURE_RULES.md | Regole struttura directory | [📖](./DIRECTORY_STRUCTURE_RULES.md) |
 
 ### Architettura
@@ -69,6 +70,7 @@ docs/
 |------|-------------|------|
 | XOTBASE_ARCHITECTURE_PHILOSOPHY.md | **FILOSOFIA PROFONDA**: Perché estendere XotBase | [Link](./XOTBASE_ARCHITECTURE_PHILOSOPHY.md) |
 | ARCHITECTURE.md | Architettura tecnica del modulo | [Link](./ARCHITECTURE.md) |
+| accessor-delegation-pattern.md | **PATTERN SACRO**: Delegazione e auto-persistenza accessor | [Link](./accessor-delegation-pattern.md) |
 
 ### XotBase Rules (CRITICAL!)
 | File | Descrizione | Link |

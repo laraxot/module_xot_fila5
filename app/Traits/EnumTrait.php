@@ -100,8 +100,8 @@ trait EnumTrait
      * ```
      */
     /**
-     * @param  Blueprint  $table  The table blueprint
-     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
+     * @param Blueprint             $table     The table blueprint
+     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
@@ -110,7 +110,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-            if ($migration === null || ! $migration->hasColumn($name)) {
+            if (null === $migration || ! $migration->hasColumn($name)) {
                 $definition($table);
             }
         }
@@ -151,5 +151,17 @@ trait EnumTrait
     public static function getColumnDefinitions(): array
     {
         return [];
+    }
+
+    public static function toArray(): array
+    {
+        $cases = static::cases();
+        $result = [];
+        foreach ($cases as $item) {
+            $name = (string) $item->value;
+            $result[$name] = $item->getLabel();
+        }
+
+        return $result;
     }
 }

@@ -1,37 +1,31 @@
-# Wiki Locale - Module Xot
-
-## Schema di Riferimento
-
-Vedi [[../../../../docs/.schema/WIKI_SCHEMA.md|Schema Wiki Globale]]
-
-## Struttura Locale
-
-```
-wiki/
-├── concepts/       # Pattern e metodologie
-├── entities/       # Classi e componenti
-├── summaries/      # Sommari documenti
-├── comparisons/    # Confronti
-└── overviews/     # Panoramiche
-```
-
-## Pagine Compilate
-
-| Pagina | Tipo | Raw source | Data |
-|--------|------|------------|------|
-| [xot-module](./overviews/xot-module.md) | overview | xot-engine.md, module-architecture.md | 2026-04-15 |
-
-## Raw Sources Prioritari
-
-- `docs/xot-engine.md` — filosofia e classi fondamentali (**SSOT**)
-- `docs/module-architecture.md` — ecosistema moduli
-- `docs/testing-best-practices.md` — testing con XotBase*
-- `docs/00-INDEX.md` — indice modulo
-
-## Index Globale
-
-Vedi [[../../../../docs/wiki/index|Index Globale Wiki]]
-
+---
+module: Xot
+concept: Wiki Index
+last_updated: 2026-04-15
 ---
 
-*Ultimo aggiornamento: 2026-04-15*
+# Xot Module Wiki
+
+Welcome to the **Xot** module knowledge base. This wiki is maintained by AI agents using the Karpathy pattern.
+
+## 🏗️ Core Architecture
+- [[Architecture]]: Overview of the modular system.
+- [[BaseModel]]: The sacred inheritance chain for Eloquent models.
+- [[XotBaseResource]]: Standardizing Filament resources.
+- [[Actions Over Services]]: The mandatory business logic pattern.
+
+## 🧪 Testing Patterns
+
+- [UnitTestCase Pattern](./concepts/unit-test-case-pattern.md): come creare test puri senza connessione MySQL — template `UnitTestCase` per ogni modulo basato su `CreatesApplication`
+
+## 🔧 Components & Traits
+- [[HasXotTable]]: Automatic table naming.
+- [[HasExtra]]: Schemaless metadata management.
+- [[Updater]]: Creation and update tracking.
+
+## 🌐 Systems
+- [[Translation System]]: Automatic UI localization.
+- [[Database Architecture]]: Multi-module connection management.
+
+---
+**Main Project Wiki:** [[Project Home]]

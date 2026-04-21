@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Console\Commands;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-use Modules\Xot\Tests\TestCase;
->>>>>>> 4ffe7f41e (.)
->>>>>>> 9506daa5 (.)
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Tests\TestCase;
@@ -22,8 +15,8 @@ beforeEach(function () {
     $this->testOutputDir = storage_path('tests/docs');
 
     // Create test directory if it doesn't exist
-    if (! File::exists(dirname($this->testSchemaPath))) {
-        File::makeDirectory(dirname($this->testSchemaPath), 0o755, true);
+    if (! File::exists(\dirname($this->testSchemaPath))) {
+        File::makeDirectory(\dirname($this->testSchemaPath), 0o755, true);
     }
 
     // Create a test schema file
