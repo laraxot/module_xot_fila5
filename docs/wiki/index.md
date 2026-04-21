@@ -1,31 +1,24 @@
----
-module: Xot
-concept: Wiki Index
-last_updated: 2026-04-15
----
+# Wiki Locale Index
 
-# Xot Module Wiki
+## Karpathy LLM Wiki Standard
 
-Welcome to the **Xot** module knowledge base. This wiki is maintained by AI agents using the Karpathy pattern.
+- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Strict structural constraints.
+- [llm-wiki-standard](../../../../docs/wiki/concepts/karpathy-wiki.md): Repository mapping and knowledge lifecycle.
 
-## 🏗️ Core Architecture
-- [[Architecture]]: Overview of the modular system.
-- [[BaseModel]]: The sacred inheritance chain for Eloquent models.
-- [[XotBaseResource]]: Standardizing Filament resources.
-- [[Actions Over Services]]: The mandatory business logic pattern.
+## Sacred Hierarchy
 
-## 🧪 Testing Patterns
+- [concepts/](./concepts/): Architectural patterns and methodologies.
+- [entities/](./entities/): Key models and components.
+- [sources/](./sources/): Research data and external links.
+- [comparisons/](./comparisons/): Alternative implementations.
+- [decisions/](./decisions/): ADL (Architectural Decision Log).
+- [troubleshooting/](./troubleshooting/): Known issues and solutions.
+- [_archive/](./_archive/): Legacy documentation.
+- [_templates/](./_templates/): Standard templates.
 
-- [UnitTestCase Pattern](./concepts/unit-test-case-pattern.md): come creare test puri senza connessione MySQL — template `UnitTestCase` per ogni modulo basato su `CreatesApplication`
+## Compiled Pages
 
-## 🔧 Components & Traits
-- [[HasXotTable]]: Automatic table naming.
-- [[HasExtra]]: Schemaless metadata management.
-- [[Updater]]: Creation and update tracking.
-
-## 🌐 Systems
-- [[Translation System]]: Automatic UI localization.
-- [[Database Architecture]]: Multi-module connection management.
-
----
-**Main Project Wiki:** [[Project Home]]
+| Page | Type | Source | Updated |
+|------|------|--------|---------|
+| [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
+| [unit-test-case-pattern](./concepts/unit-test-case-pattern.md) | Concept | - | 2026-04-21 |
