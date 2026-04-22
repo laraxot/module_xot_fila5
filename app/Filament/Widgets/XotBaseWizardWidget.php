@@ -251,7 +251,21 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function initWizardState(): void
     {
         $this->wizardStartStep = $this->resolveInitialStepFromQuery();
-        $this->form->fill($this->defaultFormData());
+
+        // Defensive: Filament's InteractsWithForms may initialize the Form at a different
+        // lifecycle moment; avoid fatal errors by falling back to populating $this->data
+        // when the Form instance is not yet available.
+        try {
+            if (isset($this->form) && is_object($this->form) && method_exists($this->form, 'fill')) {
+                $this->form->fill($this->defaultFormData());
+            } else {
+                // Initialize Livewire-bound data array to prevent Entangle errors in Alpine
+                $this->data = $this->defaultFormData();
+            }
+        } catch (\Throwable $e) {
+            // Best-effort fallback to ensure the widget renders even if form->fill fails
+            $this->data = $this->defaultFormData();
+        }
     }
 
     /**
