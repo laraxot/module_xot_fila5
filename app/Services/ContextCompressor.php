@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
-use OpenAI\OpenAI;
-
 /**
- * ContextCompressor.
+ * ContextCompressor
  *
  * Lightweight utility to "compress" long text before sending to LLM APIs.
  * - If an OpenAI PHP client is installed and OPENAI_API_KEY set, it will attempt
@@ -22,6 +20,7 @@ class ContextCompressor
     /**
      * Compress text to approximately targetChars characters.
      *
+     * @param string $text
      * @param int $targetChars approximate target length in characters
      */
     public static function compress(string $text, int $targetChars = 20000): string
@@ -38,10 +37,10 @@ class ContextCompressor
                 // Use OpenAI client if installed. This code is defensive: if client API differs,
                 // avoid throwing fatal errors and fall back to local compression.
                 try {
-                    $client = OpenAI::client($apiKey);
+                    $client = \OpenAI\OpenAI::client($apiKey);
                     // Best-effort call: many SDKs expose different methods; attempt Responses API
                     if (method_exists($client, 'responses')) {
-                        $prompt = "Compress the following text preserving key facts and meaning. Target characters: {$targetChars}\n\n".$text;
+                        $prompt = "Compress the following text preserving key facts and meaning. Target characters: {$targetChars}\n\n" . $text;
                         $response = $client->responses->create([
                             'model' => 'gpt-4o-mini',
                             'input' => $prompt,
@@ -78,16 +77,16 @@ class ContextCompressor
         $out = '';
         foreach ($sentences as $s) {
             $s = trim($s);
-            if ('' === $s) {
+            if ($s === '') {
                 continue;
             }
-            if (mb_strlen($out.' '.$s) > $targetChars) {
+            if (mb_strlen($out . ' ' . $s) > $targetChars) {
                 break;
             }
-            $out = '' === $out ? $s : ($out.' '.$s);
+            $out = $out === '' ? $s : ($out . ' ' . $s);
         }
 
-        if (0 === mb_strlen($out)) {
+        if (mb_strlen($out) === 0) {
             return mb_substr($text, 0, $targetChars);
         }
 

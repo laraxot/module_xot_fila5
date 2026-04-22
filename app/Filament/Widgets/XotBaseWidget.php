@@ -17,6 +17,8 @@ use Illuminate\Support\Arr;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
+use Filament\Schemas\Concerns\InteractsWithSchemas;
+use Filament\Schemas\Contracts\HasSchemas;
 
 /**
  * Classe base astratta per tutti i widget Filament.
@@ -28,10 +30,11 @@ use Webmozart\Assert\Assert;
  * @property array<string, mixed>|null $data         Dati del form
  * @property Schema                    $form
  */
-abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
+abstract class XotBaseWidget extends FilamentWidget implements HasActions,/* HasForms, */HasSchemas
 {
     use InteractsWithActions;
-    use InteractsWithForms;
+    //use InteractsWithForms;
+    use InteractsWithSchemas;
     use TransTrait;
 
     public string $title = '';
@@ -205,6 +208,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
             if (view()->exists($view)) {
                 $this->view = $view;
             }
+            
         } catch (\Exception $e) {
             /* @phpstan-ignore identical.alwaysTrue */
             if ($this->view === $defaultView) {

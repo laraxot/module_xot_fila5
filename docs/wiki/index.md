@@ -4,6 +4,8 @@
 
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Strict structural constraints.
 - [llm-wiki-standard](../../../../docs/wiki/concepts/karpathy-wiki.md): Repository mapping and knowledge lifecycle.
+- [filament-summary-infolist-rule](../../../../../docs/wiki/concepts/filament-summary-infolist-rule.md): `getSummarySchema()` nei wizard usa Infolists, non `SchemaView`
+- [context-compression-discipline](../../../../../docs/wiki/concepts/context-compression-discipline.md): usare context-mode + QMD per evitare bloat in story BMAD e retrieval tecnico
 
 ## Sacred Hierarchy
 

@@ -49,8 +49,9 @@ class GetViewByClassAction
                 $value = $this->checkPrev($value, $prevValueStr);
             }
 
-            return Str::of($value)->slug()->toString();
+            return Str::of($value)->kebab()->slug()->toString();
         });
+        
 
         $implode = implode('.', $mapped);
         $views = [
