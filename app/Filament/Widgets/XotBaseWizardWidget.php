@@ -87,7 +87,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     protected function wizardMaxStep(): int
     {
-        return max(1, count($this->getWizardSteps()));
+        return max(1, \count($this->getWizardSteps()));
     }
 
     /**
@@ -408,7 +408,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function normalizeWizardFormState(array $state): array
     {
         $key = $this->getWizardSchemaWrapperKey();
-        if (isset($state[$key]) && is_array($state[$key])) {
+        if (isset($state[$key]) && \is_array($state[$key])) {
             return $this->stringKeyed($state[$key]);
         }
 
@@ -485,6 +485,18 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
         $this->callSchemaComponentMethod($key, 'previousStep', [
             'currentStepIndex' => $wizard->getCurrentStepIndex(),
+        ]);
+    }
+
+    /**
+     * Naviga a uno step specifico per nome.
+     */
+    public function goToStep(string $stepName): void
+    {
+        $key = $this->getWizardComponentKey();
+
+        $this->callSchemaComponentMethod($key, 'goToStep', [
+            'step' => $stepName,
         ]);
     }
 }
