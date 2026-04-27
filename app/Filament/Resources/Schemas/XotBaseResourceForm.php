@@ -1,8 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
@@ -25,7 +26,6 @@ class XotBaseResourceForm
     public static function getFormSchema(): array
     {
         return [
-           
         ];
     }
 
@@ -42,8 +42,6 @@ class XotBaseResourceForm
             ->prepend('get')
             ->append('Schema')
             ->toString();
-        
-        
 
         if (method_exists(static::class, $methodName)) {
             $schemaResult = static::$methodName();
@@ -53,6 +51,7 @@ class XotBaseResourceForm
             return Step::make($name)->schema($schemaComponents);
         }
         dddx($methodName);
+
         return Step::make($name)->schema([]);
     }
 }

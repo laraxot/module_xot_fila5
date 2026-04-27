@@ -9,8 +9,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Modules\Xot\Contracts\UserContract;
 use Illuminate\Auth\Access\Response;
+use Modules\Xot\Contracts\UserContract;
 
 // use Modules\Xot\Datas\XotData;
 

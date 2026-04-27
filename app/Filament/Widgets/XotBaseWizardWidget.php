@@ -202,13 +202,13 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
         $step = $steps[$index] ?? null;
 
-        if ($step === null) {
+        if (null === $step) {
             return null;
         }
 
         $label = $step->getLabel();
 
-        return is_string($label) && $label !== '' ? $label : null;
+        return is_string($label) && '' !== $label ? $label : null;
     }
 
     /**
