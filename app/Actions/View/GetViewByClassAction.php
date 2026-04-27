@@ -51,7 +51,6 @@ class GetViewByClassAction
 
             return Str::of($value)->kebab()->slug()->toString();
         });
-        
 
         $implode = implode('.', $mapped);
         $views = [
