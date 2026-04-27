@@ -10,6 +10,7 @@ namespace Modules\Xot\Models\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Modules\Xot\Contracts\UserContract;
+use Illuminate\Auth\Access\Response;
 
 // use Modules\Xot\Datas\XotData;
 
@@ -26,7 +27,7 @@ abstract class XotBasePolicy
         });
     }
 
-    public function viewAny(UserContract $userContract): bool
+    public function viewAny(UserContract $user): Response|bool
     {
         return false;
     }
