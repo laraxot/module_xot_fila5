@@ -10,6 +10,8 @@ use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Schemas\Components\Component;
+use Filament\Schemas\Concerns\InteractsWithSchemas;
+use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
 use Illuminate\Database\Eloquent\Model;
@@ -17,8 +19,6 @@ use Illuminate\Support\Arr;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
-use Filament\Schemas\Concerns\InteractsWithSchemas;
-use Filament\Schemas\Contracts\HasSchemas;
 
 /**
  * Classe base astratta per tutti i widget Filament.
@@ -30,10 +30,10 @@ use Filament\Schemas\Contracts\HasSchemas;
  * @property array<string, mixed>|null $data         Dati del form
  * @property Schema                    $form
  */
-abstract class XotBaseWidget extends FilamentWidget implements HasActions,/* HasForms, */HasSchemas
+abstract class XotBaseWidget extends FilamentWidget implements HasActions, /* HasForms, */ HasSchemas
 {
     use InteractsWithActions;
-    //use InteractsWithForms;
+    // use InteractsWithForms;
     use InteractsWithSchemas;
     use TransTrait;
 
@@ -208,7 +208,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions,/* Has
             if (view()->exists($view)) {
                 $this->view = $view;
             }
-            
         } catch (\Exception $e) {
             /* @phpstan-ignore identical.alwaysTrue */
             if ($this->view === $defaultView) {

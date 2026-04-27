@@ -1,9 +1,8 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Filament\Resources\Schemas;
 
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
@@ -26,6 +25,7 @@ class XotBaseResourceForm
     public static function getFormSchema(): array
     {
         return [
+           
         ];
     }
 
@@ -42,25 +42,17 @@ class XotBaseResourceForm
             ->prepend('get')
             ->append('Schema')
             ->toString();
-        $module_low = Str::of(static::class)->between('Modules\\', '\\Filament')->lower()->toString();
-        $group = Str::of(class_basename(static::class))->kebab()->toString();
-        $base_key = $module_low.'::'.$group.'.steps.';
-
-        $labelKey = $base_key.$name.'.label';
-        $descriptionKey = $base_key.$name.'.description';
+        
+        
 
         if (method_exists(static::class, $methodName)) {
             $schemaResult = static::$methodName();
             /** @var array<Htmlable|string> $schemaComponents */
             $schemaComponents = \is_array($schemaResult) ? array_values($schemaResult) : [];
 
-            return Step::make(__($labelKey))
-                ->label(__($labelKey))
-                ->description(__($descriptionKey))
-                ->schema($schemaComponents);
+            return Step::make($name)->schema($schemaComponents);
         }
         dddx($methodName);
-
-        return Step::make(__($labelKey))->schema([]);
+        return Step::make($name)->schema([]);
     }
 }

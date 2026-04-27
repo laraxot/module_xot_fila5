@@ -200,7 +200,15 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         $steps = $this->getWizardSteps();
         $index = $this->wizardStartStep - 1; // 0-based index
 
-        return $steps[$index]->getName() ?? null;
+        $step = $steps[$index] ?? null;
+
+        if ($step === null) {
+            return null;
+        }
+
+        $label = $step->getLabel();
+
+        return is_string($label) && $label !== '' ? $label : null;
     }
 
     /**
