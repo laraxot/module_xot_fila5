@@ -163,13 +163,13 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 
         $step = $steps[$index] ?? null;
 
-        if ($step === null) {
+        if (null === $step) {
             return null;
         }
 
         $label = $step->getLabel();
 
-        return is_string($label) && $label !== '' ? $label : null;
+        return is_string($label) && '' !== $label ? $label : null;
     }
 
     /**
@@ -450,9 +450,13 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
             return;
         }
 
+        $currentStepIndex = $wizard->getCurrentStepIndex();
+
         $this->callSchemaComponentMethod($key, 'nextStep', [
-            'currentStepIndex' => $wizard->getCurrentStepIndex(),
+            'currentStepIndex' => $currentStepIndex,
         ]);
+
+        $this->wizardStartStep = min($this->wizardMaxStep(), $currentStepIndex + 2);
     }
 
     /**
@@ -466,9 +470,13 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
             return;
         }
 
+        $currentStepIndex = $wizard->getCurrentStepIndex();
+
         $this->callSchemaComponentMethod($key, 'previousStep', [
-            'currentStepIndex' => $wizard->getCurrentStepIndex(),
+            'currentStepIndex' => $currentStepIndex,
         ]);
+
+        $this->wizardStartStep = max(1, $currentStepIndex);
     }
 
     /**

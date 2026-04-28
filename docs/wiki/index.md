@@ -1,24 +1,3 @@
----
-title: "Xot Module Wiki Index"
-type: index
-module: Xot
-tags: [xot, wiki, index, xotbase, migrations, phpstan]
-created: 2026-04-28
-updated: 2026-06-05
-qmd: "xot module wiki index XotBase migrations phpstan filament actions"
-issues:
-  - "https://github.com/laraxot/module_xot_fila5/issues/28"
-discussions:
-  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
-related:
-  - ./concepts/migration-update-timestamps-only.md
-  - ./concepts/module-model-artifact-parity.md
-  - ./concepts/ai-harness-xot-discipline.md
-  - ./concepts/second-brain-local-discipline.md
-  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
----
-
 # Xot Module LLM Wiki
 
 Indice operativo del wiki Xot (core framework).
@@ -36,9 +15,6 @@ Indice operativo del wiki Xot (core framework).
 
 ## Regole collegate
 
-- [ai-harness-xot-discipline.md](./concepts/ai-harness-xot-discipline.md) — harness agenti (canon moduli)
-- [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
 - [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
 - [laraxot-core](../../../../docs/wiki/concepts/laraxot-core.md): Core XotBase classes rules.
@@ -50,12 +26,37 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 ## Compiled Pages
 
-| Page | Type | Source | Updated |
-|------|------|--------|---------|
+| Pagina | Tipo | Argomento | Data |
+|--------|------|-----------|------|
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
-| [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
-| [unit-test-case-pattern](./concepts/unit-test-case-pattern.md) | Concept | - | 2026-04-21 |
-| [phpstan-cluster-map-and-false-friends](./concepts/phpstan-cluster-map-and-false-friends.md) | Concept | phpstan analyse Modules | 2026-04-23 |
-| [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | runtime verification | 2026-04-23 |
-| [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | codebase policy inheritance scan | 2026-04-27 |
-| [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | module policy inheritance mapping | 2026-04-27 |
+| [unit-test-case-pattern](./concepts/unit-test-case-pattern.md) | Concept | Test patterns | 2026-04-21 |
+| [phpstan-cluster-map-and-false-friends](./concepts/phpstan-cluster-map-and-false-friends.md) | Concept | PHPStan cluster | 2026-04-23 |
+| [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField | 2026-04-23 |
+| [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
+| [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
+
+## Best Practices
+
+- Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
+- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+- Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
+- PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
+
+## Bad Practices
+
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+- NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
+- NON dichiarare `$view` statica in XotBaseField - si calcola via `GetViewByClassAction`
+
+## False Friends
+
+- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
+- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
+
+## Troubleshooting
+
+| Pagina | Tipo | Argomento |
+|--------|------|-----------|
+| [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField runtime |
+
+Aggiornato: 2026-04-28

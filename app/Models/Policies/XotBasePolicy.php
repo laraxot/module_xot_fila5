@@ -11,7 +11,6 @@ namespace Modules\Xot\Models\Policies;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
 use Modules\Xot\Contracts\UserContract;
-use Illuminate\Auth\Access\Response;
 
 // use Modules\Xot\Datas\XotData;
 
