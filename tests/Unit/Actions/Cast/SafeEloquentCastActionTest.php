@@ -53,8 +53,8 @@ it('casts generic typed getter and validation helpers', function (): void {
         ->and($this->action->getTypedAttribute($this->model, 'active', 'bool'))->toBeTrue()
         ->and($this->action->getTypedAttribute($this->model, 'meta', 'array'))->toBe(['k' => 'v']);
 
-    $ok = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => $v === 42, 0);
-    $ko = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => $v === 0, 0);
+    $ok = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
+    $ko = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
 
     expect($ok)->toBe(42)->and($ko)->toBe(0);
 });
@@ -62,7 +62,7 @@ it('casts generic typed getter and validation helpers', function (): void {
 it('checks condition and fallback helpers', function (): void {
     $this->model->setAttribute('nickname', 'SuperMario');
 
-    expect($this->action->hasAttributeCondition($this->model, 'age', fn (mixed $v): bool => (int) $v === 42))->toBeTrue()
+    expect($this->action->hasAttributeCondition($this->model, 'age', fn (mixed $v): bool => 42 === (int) $v))->toBeTrue()
         ->and($this->action->hasAttributeCondition($this->model, 'missing', fn (): bool => true))->toBeFalse()
         ->and($this->action->getAttributeWithFallback($this->model, 'missing', 'nickname', 'string', 'n/a'))->toBe('SuperMario')
         ->and($this->action->getAttributeWithFallback($this->model, 'name', 'nickname', 'string', 'n/a'))->toBe('Mario');
