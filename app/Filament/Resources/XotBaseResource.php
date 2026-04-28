@@ -111,15 +111,12 @@ abstract class XotBaseResource extends FilamentResource
 
     final public static function form(Schema $schema): Schema
     {
-        // return AuthorForm::configure($schema);
+        //return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            $configured = $form_class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
+            return $form_class::configure($schema);
         }
-
+    
         /** @var array<Htmlable|string> $components */
         $components = static::getFormSchema();
 

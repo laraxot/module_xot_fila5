@@ -32,8 +32,7 @@ class SvgExistsAction
         if (str_starts_with($svgName, 'geo-')) {
             // Geo SVGs are in Modules/Geo/resources/svg/ — check file existence directly
             $relativePath = str_replace('geo-', '', $svgName);
-            $svgPath = base_path('Modules/Geo/resources/svg/'.$relativePath.'.svg');
-
+            $svgPath = base_path('Modules/Geo/resources/svg/' . $relativePath . '.svg');
             return file_exists($svgPath);
         }
 
