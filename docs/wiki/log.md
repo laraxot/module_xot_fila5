@@ -9,6 +9,28 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-04-27] governance | policy module matrix
+
+- aggiunta matrice modulo-per-modulo con base policy consigliata (`XotBasePolicy` vs `UserBasePolicy`).
+- inserite priorita' di allineamento per ridurre drift nei moduli ibridi.
+- nuova pagina: `docs/wiki/concepts/policy-module-matrix.md`.
+
+## [2026-04-27] governance | policy base strategy across modules
+
+- documentata strategia di base per scegliere tra `XotBasePolicy` e `UserBasePolicy`.
+- mantenuta separazione: `XotBasePolicy` come base tecnica cross-modulo, `UserBasePolicy` come specializzazione identity-domain.
+- nuovo decision tree operativo in `docs/wiki/concepts/policy-base-strategy.md`.
+
+## [2026-04-23] quality | PHPStan cluster map and false friends
+
+- Documentati i cluster statici ricorrenti emersi da `phpstan analyse Modules` con focus su Xot: `implode`, `array_fill_keys`, `mixed`, funzioni unsafe e mismatch con API Filament.
+- Nuova pagina: `docs/wiki/concepts/phpstan-cluster-map-and-false-friends.md`.
+
+## [2026-04-23] governance | XotBaseField calculated view rule
+
+- Formalizzata la regola corretta per i componenti che estendono `XotBaseField`: niente `protected string $view` nei singoli field, ma risoluzione centralizzata via `getDefaultView()` nel base class.
+- Verifica runtime eseguita sulla URL reale `tests/segnalazione-crea`: dopo il fix `CoordinatePicker` torna a renderizzare correttamente.
+
 ## [2026-04-22] ops | context-mode + QMD per story BMAD
 
 - **regola root**: `docs/wiki/concepts/context-compression-discipline.md`
@@ -50,3 +72,10 @@ _No activity yet. Start by ingesting raw documents._
 
 **Last Activity:** None  
 **Total Operations:** 0
+
+## [2026-04-27] cross-reference | Policy Decision
+- Linked: ../User/docs/wiki/concepts/policy-inheritance-boundary.md
+- Decision: Mantenere separazione XotBasePolicy (foundation) vs UserBasePolicy (application)
+- XotBasePolicy: zero dipendenze, system processes, API token
+- UserBasePolicy: Spatie Permission, user-authenticated, RBAC
+- Commit: docs: add cross-reference to policy boundary decision
