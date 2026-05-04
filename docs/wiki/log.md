@@ -9,6 +9,12 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-04-30] governance | Claude Code Laraxot rules path-scoped
+
+- aggiunta pagina `docs/wiki/concepts/claude-code-laraxot-rules-path-scoping.md`.
+- allineata la configurazione `.claude/rules` alla documentazione ufficiale Claude Code: le rules specifiche di codice devono avere frontmatter `paths`.
+- obiettivo: ridurre contesto always-on mantenendo attive le regole XotBase/Filament solo sui file pertinenti.
+
 ## [2026-04-28] dependency | matrice compatibilita' pacchetti Laravel 13 in Xot
 
 - verificata compatibilita' reale dei pacchetti rimossi nel passaggio a Laravel 13 con focus su runtime `php 8.3`.
