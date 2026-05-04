@@ -14,7 +14,8 @@ uses(RefreshDatabase::class);
 describe('XotBaseTransition', function () {
     beforeEach(function () {
         // Create a concrete test transition class
-        $this->transition = new class extends XotBaseTransition {
+        $this->transition = new class extends XotBaseTransition
+        {
             public static string $name = 'test_transition';
 
             #[Override]
@@ -34,7 +35,8 @@ describe('XotBaseTransition', function () {
         };
 
         // Create a test record
-        $this->record = new class extends Model implements UserContract {
+        $this->record = new class extends Model implements UserContract
+        {
             protected $table = 'test_users';
 
             protected $fillable = ['name', 'email'];
@@ -134,14 +136,16 @@ describe('XotBaseTransition', function () {
 
     it('processes recipients correctly in sendNotifications', function () {
         // Mock recipients with mixed types
-        $transition = new class extends XotBaseTransition {
+        $transition = new class extends XotBaseTransition
+        {
             public static string $name = 'test_mixed_transition';
 
             #[Override]
             public function getNotificationRecipients(): array
             {
                 return [
-                    'valid_user' => new class extends Model implements UserContract {
+                    'valid_user' => new class extends Model implements UserContract
+                    {
                         protected $table = 'test_users';
 
                         public function getAuthIdentifierName(): string
@@ -164,9 +168,7 @@ describe('XotBaseTransition', function () {
                             return null;
                         }
 
-                        public function setRememberToken($value): void
-                        {
-                        }
+                        public function setRememberToken($value): void {}
 
                         public function getRememberTokenName(): string
                         {
@@ -215,7 +217,7 @@ describe('XotBaseTransition', function () {
         $recipients = $this->transition->getNotificationRecipients();
 
         foreach ($recipients as $recipient) {
-            if (null !== $recipient) {
+            if ($recipient !== null) {
                 expect($recipient instanceof UserContract || $recipient instanceof Model)->toBeTrue();
             }
         }
