@@ -3,6 +3,17 @@
 declare(strict_types=1);
 
 return [
+    'actions' => [
+        'submit' => [
+            'label' => 'Invia',
+        ],
+        'previous' => [
+            'label' => 'Precedente',
+        ],
+        'next' => [
+            'label' => 'Successivo',
+        ],
+    ],
     'steps' => [
         'privacy' => [
             'label' => 'privacy',
@@ -29,7 +40,20 @@ return [
                         'label' => 'fixcity::ticket-form.steps.summary.label',
                     ],
                 ],
+                'privacy' => [
+                    'label' => [
+                        'label' => 'fixcity::ticket-form.steps.privacy.label',
+                    ],
+                ],
+                'data' => [
+                    'label' => [
+                        'label' => 'fixcity::ticket-form.steps.data.label',
+                    ],
+                ],
             ],
+        ],
+        'Privacy' => [
+            'label' => 'Privacy',
         ],
     ],
 ];
