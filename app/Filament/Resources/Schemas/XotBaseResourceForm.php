@@ -42,9 +42,9 @@ class XotBaseResourceForm
             ->prepend('get')
             ->append('Schema')
             ->toString();
-        $module_low=Str::of(static::class)->between('Modules\\', '\\Filament')->lower()->toString();
-        $group=Str::of(class_basename(static::class))->kebab()->toString();
-        $base_key=$module_low.'::'.$group.'.steps.';
+        $module_low = Str::of(static::class)->between('Modules\\', '\\Filament')->lower()->toString();
+        $group = Str::of(class_basename(static::class))->kebab()->toString();
+        $base_key = $module_low.'::'.$group.'.steps.';
 
         $labelKey = $base_key.$name.'.label';
         $descriptionKey = $base_key.$name.'.description';

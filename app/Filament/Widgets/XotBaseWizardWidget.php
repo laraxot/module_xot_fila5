@@ -108,9 +108,9 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         $wizard = $this->makeWizard($this->getWizardSteps())
-            //->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
-            //->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
-            //->submitAction($this->getWizardSubmitAction());
+            // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
+            // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
+            // ->submitAction($this->getWizardSubmitAction());
         ;
 
         return [
@@ -122,7 +122,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param  array<int, Step>  $steps
+     * @param array<int, Step> $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
@@ -135,8 +135,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             $wizard->persistStepInQueryString('step');
         }
 
-        if(!inAdmin()){
-            $wizard=$wizard->view('pub_theme::components.wizard');
+        if (! inAdmin()) {
+            $wizard = $wizard->view('pub_theme::components.wizard');
         }
 
         return $wizard;
@@ -169,7 +169,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Prepara i dati prima della creazione/aggiornamento.
      * Pattern ufficiale di Filament: mutateFormDataBeforeCreate/Update.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
+     *
      * @return array<string, mixed>
      */
     protected function prepareWizardFormData(array $data): array
@@ -209,13 +210,13 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
         $step = $steps[$index] ?? null;
 
-        if ($step === null) {
+        if (null === $step) {
             return null;
         }
 
         $label = $step->getLabel();
 
-        return is_string($label) && $label !== '' ? $label : null;
+        return is_string($label) && '' !== $label ? $label : null;
     }
 
     /**
@@ -402,7 +403,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         $raw = request()->query('step');
-        if ($raw === null || $raw === '') {
+        if (null === $raw || '' === $raw) {
             return 1;
         }
 
@@ -425,7 +426,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return 1;
         }
 
-        if (! $this->queryStepOverrideAllowed() && $step !== 1) {
+        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
             return 1;
         }
 
@@ -435,7 +436,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Appiattisce lo stato restituito da `getState()` se il `Wizard` e sotto la chiave wrapper.
      *
-     * @param  array<string, mixed>  $state
+     * @param array<string, mixed> $state
+     *
      * @return array<string, mixed>
      */
     protected function normalizeWizardFormState(array $state): array
@@ -449,7 +451,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * @param  array<mixed, mixed>  $row
+     * @param array<mixed, mixed> $row
+     *
      * @return array<string, mixed>
      */
     protected function stringKeyed(array $row): array
@@ -469,14 +472,14 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function getWizardComponentKey(): string
     {
         $schema = $this->getSchema('form');
-        if ($schema === null) {
+        if (null === $schema) {
             throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
         }
 
         foreach ($schema->getComponents(withHidden: true) as $component) {
             if ($component instanceof Wizard) {
                 $key = $component->getKey();
-                if ($key === null || $key === '') {
+                if (null === $key || '' === $key) {
                     throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
                 }
 
