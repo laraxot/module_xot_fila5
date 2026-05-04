@@ -9,6 +9,15 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-05-04] architecture | XotBaseWizardWidget view calculation rule
+
+- documentata regola architetturale: sottoclassi di `XotBaseWizardWidget` NON devono definire `$view` property
+- la view viene calcolata automaticamente: admin → default Filament, frontoffice → `pub_theme::components.wizard`
+- aggiunta documentazione: `docs/wiki/concepts/xotbasewizard-view-calculation.md`
+- creata regola Windsurf: `.windsurf/rules/xotbasewizard-no-view-property.mdc`
+- aggiornato PHPDoc in `XotBaseWizardWidget.php` con dettagli view resolution
+- audit: nessuna violazione trovata nei moduli esistenti
+
 ## [2026-04-30] governance | Claude Code Laraxot rules path-scoped
 
 - aggiunta pagina `docs/wiki/concepts/claude-code-laraxot-rules-path-scoping.md`.
