@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use OpenAI\OpenAI;
+
 /**
  * ContextCompressor.
  *
@@ -36,7 +38,7 @@ class ContextCompressor
                 // Use OpenAI client if installed. This code is defensive: if client API differs,
                 // avoid throwing fatal errors and fall back to local compression.
                 try {
-                    $client = \OpenAI\OpenAI::client($apiKey);
+                    $client = OpenAI::client($apiKey);
                     // Best-effort call: many SDKs expose different methods; attempt Responses API
                     if (method_exists($client, 'responses')) {
                         $prompt = "Compress the following text preserving key facts and meaning. Target characters: {$targetChars}\n\n".$text;

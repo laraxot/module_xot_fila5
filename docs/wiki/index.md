@@ -34,6 +34,8 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField | 2026-04-23 |
 | [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
 | [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
+| [laravel13-modular-package-compatibility-matrix](./concepts/laravel13-modular-package-compatibility-matrix.md) | Concept | Compatibilita' pacchetti modulo | 2026-04-28 |
+| [claude-code-laraxot-rules-path-scoping](./concepts/claude-code-laraxot-rules-path-scoping.md) | Concept | Claude Code rules path-scoped per Xot/Laraxot | 2026-04-30 |
 
 ## Best Practices
 
@@ -59,4 +61,4 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 |--------|------|-----------|
 | [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField runtime |
 
-Aggiornato: 2026-04-28
+Aggiornato: 2026-04-30

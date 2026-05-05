@@ -2,7 +2,7 @@
 
 **Status**: Active  
 **Created**: 2026-04-14  
-**Last Updated**: 2026-04-14  
+**Last Updated**: 2026-05-04  
 **Category**: Architecture / Rules / Filament  
 **Audience**: All developers working with wizard widgets
 
@@ -15,6 +15,16 @@
 Questa regola non e negoziabile. E la base del contratto architetturale Laraxot.
 
 **Nota (Filament pannello)**: su `CreateRecord` il trait `HasWizard` usa `getSteps()` / `hasSkippableSteps()` ([doc](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard)). Qui nel widget: `getWizardSteps()` / `hasSkippableWizardSteps()` su `XotBaseWizardWidget` — stesso componente `Wizard`, contesto frontoffice.
+
+### Filament `HasWizard` in vendor (non duplicare a caso)
+
+| Trait | Namespace | Contesto |
+|-------|-----------|----------|
+| `HasWizard` | `Filament\Actions\Concerns` | Wizard dentro **Action** (modale); API `steps()` |
+| `HasWizard` | `Filament\Resources\Pages\Concerns` | **Pagina** Resource: `form(Schema)` con `Wizard::make($this->getSteps())`, `hasSkippableSteps()` |
+| (wrapper) | `Filament\Resources\Pages\CreateRecord\Concerns\HasWizard` | Re-export del trait **Pages** |
+
+Il widget Livewire `XotBaseWizardWidget` **non** estende `CreateRecord` ne `Page`: **non** si puo attaccare il trait **Pages** senza rifattorare tutto il flusso `form(Schema)` della page. Si riusa lo stesso componente schema `Wizard` / `Step` e si allinea il comportamento (es. skippable steps). Story: `_bmad-output/implementation-artifacts/8-114-xotbasewizard-filament-haswizard-parity-segnalazione-crea-cta.md`.
 
 ---
 

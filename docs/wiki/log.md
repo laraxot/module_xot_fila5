@@ -9,6 +9,29 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-05-04] architecture | XotBaseWizardWidget view calculation rule
+
+- documentata regola architetturale: sottoclassi di `XotBaseWizardWidget` NON devono definire `$view` property
+- la view viene calcolata automaticamente: admin → default Filament, frontoffice → `pub_theme::components.wizard`
+- aggiunta documentazione: `docs/wiki/concepts/xotbasewizard-view-calculation.md`
+- creata regola Windsurf: `.windsurf/rules/xotbasewizard-no-view-property.mdc`
+- aggiornato PHPDoc in `XotBaseWizardWidget.php` con dettagli view resolution
+- audit: nessuna violazione trovata nei moduli esistenti
+
+## [2026-04-30] governance | Claude Code Laraxot rules path-scoped
+
+- aggiunta pagina `docs/wiki/concepts/claude-code-laraxot-rules-path-scoping.md`.
+- allineata la configurazione `.claude/rules` alla documentazione ufficiale Claude Code: le rules specifiche di codice devono avere frontmatter `paths`.
+- obiettivo: ridurre contesto always-on mantenendo attive le regole XotBase/Filament solo sui file pertinenti.
+
+## [2026-04-28] dependency | matrice compatibilita' pacchetti Laravel 13 in Xot
+
+- verificata compatibilita' reale dei pacchetti rimossi nel passaggio a Laravel 13 con focus su runtime `php 8.3`.
+- confermato che `fruitcake/laravel-debugbar` (`v4.2.8`) e' gia' dichiarato in `Modules/Xot/composer.json` (`require-dev`) e risolto nel lock root.
+- confermato owner runtime Xot per `fast-paginate` e `morph-to-one`; entrambi oggi bloccati per assenza di supporto stable a `Laravel 13`.
+- chiarito che `model-states` ha owner condiviso `UI` + `Xot`, mentre `responsecache` non ha integrazione runtime forte verificata nel codice corrente.
+- nuova pagina: `docs/wiki/concepts/laravel13-modular-package-compatibility-matrix.md`.
+
 ## [2026-04-27] governance | policy module matrix
 
 - aggiunta matrice modulo-per-modulo con base policy consigliata (`XotBasePolicy` vs `UserBasePolicy`).
