@@ -35,7 +35,9 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
     use InteractsWithActions;
-    use InteractsWithForms;
+
+    // use InteractsWithForms;
+    use InteractsWithSchemas;
     use TransTrait;
 
     public string $title = '';

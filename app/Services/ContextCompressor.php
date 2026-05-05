@@ -6,8 +6,6 @@ namespace Modules\Xot\Services;
 
 use OpenAI\OpenAI;
 
-use function Safe\preg_split;
-
 /**
  * ContextCompressor.
  *
@@ -32,9 +30,46 @@ class ContextCompressor
             return $text;
         }
 
-        $compressed = self::tryOpenAiCompression($text, $targetChars);
-        if (null !== $compressed) {
-            return mb_substr($compressed, 0, $targetChars);
+        // Try model-based compression if OpenAI PHP client is available and key set
+        try {
+            if (class_exists('OpenAI\OpenAI') && getenv('OPENAI_API_KEY')) {
+                $apiKey = getenv('OPENAI_API_KEY');
+                // Use OpenAI client if installed. This code is defensive: if client API differs,
+                // avoid throwing fatal errors and fall back to local compression.
+                try {
+                    $client = OpenAI::client($apiKey);
+                    // Best-effort call: many SDKs expose different methods; attempt Responses API
+                    if (method_exists($client, 'responses')) {
+                        $prompt = "Compress the following text preserving key facts and meaning. Target characters: {$targetChars}\n\n".$text;
+                        $response = $client->responses->create([
+                            'model' => 'gpt-4o-mini',
+                            'input' => $prompt,
+                            'max_output_tokens' => 3200,
+                        ]);
+
+                        // Attempt to extract text safely
+                        if (is_array($response) && isset($response['output']) && is_array($response['output'])) {
+                            // naive extraction
+                            foreach ($response['output'] as $o) {
+                                if (is_array($o) && isset($o['content']) && is_array($o['content'])) {
+                                    foreach ($o['content'] as $c) {
+                                        if (isset($c['text'])) {
+                                            $textOut = (string) $c['text'];
+                                            if (mb_strlen($textOut) > 0) {
+                                                return mb_substr($textOut, 0, $targetChars);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } catch (\Throwable $e) {
+                    // ignore and fallback
+                }
+            }
+        } catch (\Throwable $e) {
+            // ignore and fallback
         }
 
         return self::extractiveFallback($text, $targetChars);
