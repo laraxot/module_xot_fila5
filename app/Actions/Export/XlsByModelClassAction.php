@@ -57,7 +57,7 @@ class XlsByModelClassAction
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
-        if ([] !== $includes) {
+        if ($includes !== []) {
             $rows = $rows->map(static function ($item) use ($includes) {
                 $data = [];
                 foreach ($includes as $include) {
@@ -69,10 +69,10 @@ class XlsByModelClassAction
         }
 
         // Nascondiamo i campi esclusi
-        if ([] !== $excludes) {
+        if ($excludes !== []) {
             $rows = $rows->map(function ($item) use ($excludes) {
                 if (is_object($item) && method_exists($item, 'makeHidden')) {
-                    /* @var Model $item */
+                    /** @var Model $item */
                     return $item->makeHidden($excludes);
                 }
 
@@ -81,7 +81,7 @@ class XlsByModelClassAction
         }
 
         // Applichiamo il callback se fornito
-        if (null !== $callback) {
+        if ($callback !== null) {
             $rows = $rows->map($callback);
         }
 

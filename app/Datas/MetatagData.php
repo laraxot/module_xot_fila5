@@ -14,9 +14,7 @@ use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-
 use function Safe\file_get_contents;
-
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
@@ -62,7 +60,7 @@ class MetatagData extends Data implements Wireable
 {
     use WireableData;
 
-    public string $title = '';
+    public $title = '';
 
     public string $sitename = '';
 

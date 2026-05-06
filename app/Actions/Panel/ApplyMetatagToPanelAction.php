@@ -19,7 +19,6 @@ class ApplyMetatagToPanelAction
             $metatag = MetatagData::make();
 
             return $panel
-                // @phpstan-ignore argument.type
                 ->colors($metatag->getColors())
                 ->brandLogo($metatag->getBrandLogo())
                 ->brandName($metatag->getBrandName())

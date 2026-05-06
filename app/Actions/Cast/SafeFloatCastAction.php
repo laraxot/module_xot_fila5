@@ -71,7 +71,7 @@ class SafeFloatCastAction
         }
 
         // Se è un array e ha un solo elemento numerico
-        if (is_array($value) && 1 === count($value)) {
+        if (is_array($value) && count($value) === 1) {
             return $this->execute(reset($value), $default);
         }
 

@@ -18,9 +18,7 @@ class SafeArrayByModelCastAction
     {
         try {
             /** @var array<string, mixed> $res */
-            $res = $model->attributesToArray();
-
-            return $res;
+            return $model->attributesToArray();
         } catch (\ValueError|\Error|\Exception $e) {
             return $this->safeExecute($model);
         }
@@ -36,7 +34,6 @@ class SafeArrayByModelCastAction
             try {
                 $data[$key] = $model->$key;
 
-                /* @phpstan-ignore-next-line */
             } catch (\ValueError|\Error $e) {
             }
         }

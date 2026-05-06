@@ -30,7 +30,6 @@ class SanitizeFieldsHeaderAction extends Action
             ->action(function (ListRecords $livewire): void {
                 $resource = $livewire->getResource();
                 $modelClass = $resource::getModel();
-                // @phpstan-ignore staticMethod.nonObject
                 $rows = $modelClass::get();
                 if (! is_iterable($rows)) {
                     $rows = [];
@@ -47,7 +46,7 @@ class SanitizeFieldsHeaderAction extends Action
                         if ($string !== $item) {
                             $row->{$fieldName} = $string;
                             $save = true;
-                            ++$c;
+                            $c++;
                         }
                     }
                     if ($save) {

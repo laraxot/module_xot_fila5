@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Services;
 
 use OpenAI\OpenAI;
+use function Safe\preg_split;
 
 /**
  * ContextCompressor.
@@ -22,7 +23,7 @@ class ContextCompressor
     /**
      * Compress text to approximately targetChars characters.
      *
-     * @param int $targetChars approximate target length in characters
+     * @param  int  $targetChars  approximate target length in characters
      */
     public static function compress(string $text, int $targetChars = 20000): string
     {
@@ -40,9 +41,14 @@ class ContextCompressor
                 try {
                     $client = OpenAI::client($apiKey);
                     // Best-effort call: many SDKs expose different methods; attempt Responses API
-                    if (method_exists($client, 'responses')) {
+                    if (is_object($client) && method_exists($client, 'responses')) {
                         $prompt = "Compress the following text preserving key facts and meaning. Target characters: {$targetChars}\n\n".$text;
-                        $response = $client->responses->create([
+                        $responsesClient = $client->responses();
+                        if (! is_object($responsesClient) || ! method_exists($responsesClient, 'create')) {
+                            throw new \RuntimeException('Responses client unavailable');
+                        }
+
+                        $response = $responsesClient->create([
                             'model' => 'gpt-4o-mini',
                             'input' => $prompt,
                             'max_output_tokens' => 3200,
@@ -54,7 +60,7 @@ class ContextCompressor
                             foreach ($response['output'] as $o) {
                                 if (is_array($o) && isset($o['content']) && is_array($o['content'])) {
                                     foreach ($o['content'] as $c) {
-                                        if (isset($c['text'])) {
+                                        if (is_array($c) && isset($c['text']) && is_string($c['text'])) {
                                             $textOut = (string) $c['text'];
                                             if (mb_strlen($textOut) > 0) {
                                                 return mb_substr($textOut, 0, $targetChars);
@@ -77,17 +83,20 @@ class ContextCompressor
         $sentences = preg_split('/(?<=[.!?])\s+/u', strip_tags($text));
         $out = '';
         foreach ($sentences as $s) {
+            if (! is_string($s)) {
+                continue;
+            }
             $s = trim($s);
-            if ('' === $s) {
+            if ($s === '') {
                 continue;
             }
             if (mb_strlen($out.' '.$s) > $targetChars) {
                 break;
             }
-            $out = '' === $out ? $s : ($out.' '.$s);
+            $out = $out === '' ? $s : ($out.' '.$s);
         }
 
-        if (0 === mb_strlen($out)) {
+        if (mb_strlen($out) === 0) {
             return mb_substr($text, 0, $targetChars);
         }
 

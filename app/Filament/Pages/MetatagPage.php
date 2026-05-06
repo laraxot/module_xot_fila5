@@ -39,7 +39,6 @@ class MetatagPage extends XotBasePage
     {
         Assert::isArray($data = config('metatag'));
 
-        // @phpstan-ignore argument.type
         $this->form->fill($data);
     }
 

@@ -14,6 +14,7 @@ use Filament\Resources\Resource as FilamentResource;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
+use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
@@ -22,10 +23,9 @@ use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
 
 use function Safe\glob;
-
-use Webmozart\Assert\Assert;
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
@@ -39,7 +39,7 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -79,7 +79,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
-        if (null !== static::$model) {
+        if (static::$model !== null) {
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -113,7 +113,10 @@ abstract class XotBaseResource extends FilamentResource
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            return $form_class::configure($schema);
+            $configured = $form_class::configure($schema);
+            if ($configured instanceof Schema) {
+                return $configured;
+            }
         }
 
         /** @var array<Htmlable|string> $components */
@@ -144,7 +147,32 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
+        $infolist_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
+        if (class_exists($infolist_class) && method_exists($infolist_class, 'configure')) {
+            $configured = $infolist_class::configure($schema);
+            if ($configured instanceof Schema) {
+                return $configured;
+            }
+        }
+
         return $schema->components(static::getInfolistSchema());
+    }
+
+    public static function table(Table $table): Table
+    {
+        $table_class = static::class.'\Tables\\'.Str::of(class_basename(static::getModel()))
+            ->plural()
+            ->append('Table')
+            ->toString();
+
+        if (class_exists($table_class) && method_exists($table_class, 'configure')) {
+            $configured = $table_class::configure($table);
+            if ($configured instanceof Table) {
+                return $configured;
+            }
+        }
+
+        return parent::table($table);
     }
 
     /**
@@ -231,7 +259,7 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
-        if ([] === $filesResult) {
+        if ($filesResult === []) {
             return [];
         }
 
@@ -259,7 +287,6 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
-        // @phpstan-ignore-next-line
         if (! view()->exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
         }
