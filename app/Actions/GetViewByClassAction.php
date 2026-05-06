@@ -26,7 +26,7 @@ class GetViewByClassAction
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
-        /** @var view-string $viewName */
+        /* @var view-string $viewName */
 
         return ViewFacade::make($viewName, $params);
     }
@@ -44,7 +44,7 @@ class GetViewByClassAction
         $arr = explode('\\', $class);
 
         // Verifica che la classe sia nel namespace Modules
-        if ($arr[0] !== 'Modules') {
+        if ('Modules' !== $arr[0]) {
             throw new \InvalidArgumentException('Class must be in Modules namespace');
         }
 

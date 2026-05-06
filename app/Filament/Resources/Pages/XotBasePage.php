@@ -146,7 +146,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getModel(): string
     {
-        if (static::$model === null) {
+        if (null === static::$model) {
             throw new \LogicException('Model class not set for page: '.static::class);
         }
 
@@ -163,7 +163,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public static function getResources(): Collection
     {
-        /** @var Collection<int, string> $resources */
+        /* @var Collection<int, string> $resources */
         return collect([]);
     }
 

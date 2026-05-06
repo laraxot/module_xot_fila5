@@ -183,12 +183,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if ($sortColumn !== null && $sortDirection !== null) {
+        if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if ($pollInterval !== null) {
+        if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
 
@@ -299,28 +299,25 @@ trait HasXotTable
     /**
      * Get model class.
      *
+     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
-     *
-     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
         if ($this->isFilamentRelationshipTableContext()) {
             $relationship = $this->getRelationship();
             if ($relationship instanceof Relation) {
-                /** @var class-string<Model> */
+                /* @var class-string<Model> */
                 return get_class($relationship->getRelated());
             }
 
             if ($relationship instanceof Builder) {
-                /** @var class-string<Model> */
+                /* @var class-string<Model> */
                 return get_class($relationship->getModel());
             }
 
-            throw new \UnexpectedValueException(
-                'Unsupported relationship type for getModelClass: '.get_debug_type($relationship)
-            );
+            throw new \UnexpectedValueException('Unsupported relationship type for getModelClass: '.get_debug_type($relationship));
         }
 
         if (method_exists($this, 'getModel')) {
@@ -329,7 +326,7 @@ trait HasXotTable
                 Assert::classExists($model);
 
                 // Assert::isAOf($model, Model::class);
-                /** @var class-string<Model> */
+                /* @var class-string<Model> */
                 return $model;
             }
             if ($model instanceof Model) {

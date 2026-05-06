@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-use BackedEnum;
-use Closure;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
@@ -28,12 +26,12 @@ class XotBaseResourceInfolist
     }
 
     /**
-     * @param  array<int|string, Component|Htmlable|string>  $schema
+     * @param array<int|string, Component|Htmlable|string> $schema
      */
     protected static function getTabByName(
         string $name,
         array $schema,
-        string|BackedEnum|Htmlable|Closure|null $icon = null,
+        string|\BackedEnum|Htmlable|\Closure|null $icon = null,
         int $columns = 1,
     ): Tab {
         $moduleLow = Str::of(static::class)->between('Modules\\', '\\Filament')->lower()->toString();
@@ -46,7 +44,7 @@ class XotBaseResourceInfolist
             ->columns($columns)
             ->schema(array_values($schema));
 
-        if ($icon !== null) {
+        if (null !== $icon) {
             $tab->icon($icon);
         }
 

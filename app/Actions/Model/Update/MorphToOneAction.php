@@ -58,6 +58,6 @@ class MorphToOneAction
         }
 
         // Return the prepared data
-        return array_filter($data, static fn ($value) => $value !== null);
+        return array_filter($data, static fn ($value) => null !== $value);
     }
 }

@@ -59,12 +59,12 @@ class SafeBooleanCastAction
 
         // Se è un intero, convertilo (0 = false, altri = true)
         if (is_int($value)) {
-            return $value !== 0;
+            return 0 !== $value;
         }
 
         // Se è un float, convertilo (0.0 = false, altri = true)
         if (is_float($value)) {
-            return $value !== 0.0 && is_finite($value);
+            return 0.0 !== $value && is_finite($value);
         }
 
         // Se è una stringa, convertila
