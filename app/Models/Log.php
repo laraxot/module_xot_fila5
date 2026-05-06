@@ -49,7 +49,7 @@ class Log extends BaseModel
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-            if ('log' === $file->getExtension()) {
+            if ($file->getExtension() === 'log') {
                 $rows[] = [
                     'id' => $file->getFilenameWithoutExtension(),
                     'name' => $file->getFilenameWithoutExtension(),

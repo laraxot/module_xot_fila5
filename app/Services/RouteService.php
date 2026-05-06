@@ -32,7 +32,7 @@ class RouteService
         }
 
         // Se il primo segmento dell'URL è 'admin', siamo in modalità amministrazione
-        if ('admin' === Request::segment(1)) {
+        if (Request::segment(1) === 'admin') {
             return true;
         }
 
@@ -41,8 +41,8 @@ class RouteService
 
         // Se abbiamo almeno un segmento, è 'livewire' e la sessione 'in_admin' è true
         return (is_countable($segments) ? \count($segments) : 0) > 0
-            && 'livewire' === $segments[0]
-            && true === session('in_admin', false);
+            && $segments[0] === 'livewire'
+            && session('in_admin', false) === true;
     }
 
     /**
@@ -278,7 +278,7 @@ class RouteService
     public static function getAct(): string
     {
         $route_action = Route::currentRouteAction();
-        if (null === $route_action) {
+        if ($route_action === null) {
             throw new \Exception('$route_action is null');
         }
 
@@ -304,7 +304,7 @@ class RouteService
     public static function getModuleName(): string
     {
         $route_action = Route::currentRouteAction();
-        if (null === $route_action) {
+        if ($route_action === null) {
             throw new \Exception('$route_action is null');
         }
 
@@ -319,7 +319,7 @@ class RouteService
     public static function getControllerName(): string
     {
         $route_action = Route::currentRouteAction();
-        if (null === $route_action) {
+        if ($route_action === null) {
             throw new \Exception('$route_action is null');
         }
 
@@ -336,7 +336,11 @@ class RouteService
         $params = $routeCurrent instanceof \Illuminate\Routing\Route ? $routeCurrent->parameters() : [];
         [$containers] = params2ContainerItem($params);
 
-        $params['containers'] = implode('.', $containers);
+        $containerStrings = array_map(
+            static fn (mixed $container): string => is_scalar($container) ? (string) $container : '',
+            $containers
+        );
+        $params['containers'] = implode('.', $containerStrings);
 
         return collect($tmp_arr)
             ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))

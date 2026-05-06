@@ -110,7 +110,7 @@ trait EnumTrait
         // }
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
-            if (null === $migration || ! $migration->hasColumn($name)) {
+            if ($migration === null || ! $migration->hasColumn($name)) {
                 $definition($table);
             }
         }

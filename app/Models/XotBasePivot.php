@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
-
 use function Safe\preg_match;
 
 /**
@@ -34,24 +33,18 @@ abstract class XotBasePivot extends EloquentPivot
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
-     *
-     * @var bool
      */
     public static $snakeAttributes = true;
 
-    /** @var bool */
     public $incrementing = true;
 
-    /** @var int */
     protected $perPage = 30;
 
     /** @var list<string> */
     protected $appends = [];
 
-    /** @var string */
     protected $primaryKey = 'id';
 
-    /** @var string */
     protected $keyType = 'string';
 
     /**
@@ -69,7 +62,7 @@ abstract class XotBasePivot extends EloquentPivot
         // Extract module name from namespace: Modules\User\... → user
         $namespace = static::class;
         $matches = [];
-        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
+        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
             return strtolower($matches[1]);
         }
 

@@ -10,9 +10,7 @@ namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-
 use function Safe\file;
-
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
@@ -24,7 +22,7 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
-     * @param File $file Il file della risorsa Filament
+     * @param  File  $file  Il file della risorsa Filament
      *
      * @return int Numero di input aggiunti
      */
@@ -86,7 +84,12 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
-        $body = implode('', \array_slice($source, $start_line, $length));
+        $slice = \array_slice($source, $start_line, $length);
+        $bodyLines = array_values(array_filter(
+            $slice,
+            static fn (mixed $line): bool => is_string($line),
+        ));
+        $body = implode('', $bodyLines);
 
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);
@@ -95,7 +98,7 @@ class GenerateFormByFileAction
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
-                ++$inputCount;
+                $inputCount++;
             }
         }
 
@@ -105,7 +108,7 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-     * @param File $file Il file da analizzare
+     * @param  File  $file  Il file da analizzare
      */
     public function ddFile(File $file): void
     {

@@ -39,7 +39,7 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($attribute);
 
         // Usa getAttribute invece di property_exists per evitare falsi positivi
-        return null !== $model->getAttribute($attribute);
+        return $model->getAttribute($attribute) !== null;
     }
 
     /**
@@ -56,7 +56,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        return null !== $value && '' !== $value;
+        return $value !== null && $value !== '';
     }
 
     /**
@@ -74,7 +74,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? '';
         }
 
@@ -96,7 +96,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? 0;
         }
 
@@ -118,7 +118,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? 0.0;
         }
 
@@ -140,7 +140,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? false;
         }
 
@@ -162,7 +162,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? [];
         }
 
@@ -235,7 +235,7 @@ class SafeEloquentCastAction
 
         $value = $this->getTypedAttribute($model, $attribute, $type, $default);
 
-        if (null !== $validator && ! $validator($value)) {
+        if ($validator !== null && ! $validator($value)) {
             return $default;
         }
 
@@ -257,7 +257,7 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return false;
         }
 
@@ -288,7 +288,7 @@ class SafeEloquentCastAction
 
         $primaryValue = $model->getAttribute($primaryAttribute);
 
-        if (null !== $primaryValue) {
+        if ($primaryValue !== null) {
             return $this->getTypedAttribute($model, $primaryAttribute, $type, $default);
         }
 

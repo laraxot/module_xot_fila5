@@ -74,7 +74,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
          * @var Arrayable<(int|string), mixed>|iterable<(int|string), mixed>|null
          */
         $first = $this->query->first();
-        if (null === $first) {
+        if ($first === null) {
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
 
@@ -148,22 +148,22 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     private function normalizeRow(mixed $row): array
     {
-        if (null === $row) {
+        if ($row === null) {
             return [];
         }
 
         if ($row instanceof Arrayable) {
-            /* @var array<int|string, mixed> */
+            /** @var array<int|string, mixed> */
             return $row->toArray();
         }
 
         if (\is_array($row)) {
-            /* @var array<int|string, mixed> */
+            /** @var array<int|string, mixed> */
             return $row;
         }
 
         if ($row instanceof \Traversable) {
-            /* @var array<int|string, mixed> */
+            /** @var array<int|string, mixed> */
             return iterator_to_array($row);
         }
 

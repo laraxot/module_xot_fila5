@@ -26,8 +26,7 @@ class AutoLabelAction
     /**
      * Applica automaticamente le etichette ai componenti Filament.
      *
-     * @param Field|Component $component Il componente a cui applicare l'etichetta
-     *
+     * @param  Field|Component  $component  Il componente a cui applicare l'etichetta
      * @return Field|Component Il componente con l'etichetta applicata
      */
     public function execute(Field|Component $component): Field|Component
@@ -97,8 +96,7 @@ class AutoLabelAction
     /**
      * Get the component name based on its actual type.
      *
-     * @param Field|Component $component Il componente di cui ottenere il nome
-     *
+     * @param  Field|Component  $component  Il componente di cui ottenere il nome
      * @return string Il nome del componente
      */
     private function getComponentName(Field|Component $component): string
@@ -113,7 +111,6 @@ class AutoLabelAction
         // Per i componenti generali di Filament
         // PHPStan rileva che questo controllo è sempre vero per Component
         // ma lo manteniamo per chiarezza e per gestire eventuali cambiamenti futuri in Filament
-        // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($component, 'getStatePath')) {
             $statePath = $component->getStatePath();
 

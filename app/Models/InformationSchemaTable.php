@@ -153,7 +153,7 @@ class InformationSchemaTable extends BaseModel
             'table_name' => $table,
         ]);
 
-        if (null === $record->table_rows) {
+        if ($record->table_rows === null) {
             $record->update(['table_rows' => $model->count()]);
         }
 
