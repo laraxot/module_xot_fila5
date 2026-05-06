@@ -64,7 +64,7 @@ class SafeArrayCastAction
         }
 
         // Se è un oggetto stdClass, convertilo in array
-        if (is_object($value) && $value::class === 'stdClass') {
+        if (is_object($value) && 'stdClass' === $value::class) {
             return (array) $value;
         }
 

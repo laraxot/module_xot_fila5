@@ -82,7 +82,7 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         // Extract module name from namespace: Modules\Rating\... → rating
         $namespace = static::class;
         $matches = [];
-        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
+        if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
             return strtolower($matches[1]);
         }
 

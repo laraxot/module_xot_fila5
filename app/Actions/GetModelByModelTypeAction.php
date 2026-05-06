@@ -27,7 +27,7 @@ class GetModelByModelTypeAction
         Assert::isAOf($model_class, Model::class);
 
         /** @var class-string<Model> $model_class */
-        $model = $model_id !== null
+        $model = null !== $model_id
             ? $model_class::query()->find($model_id)
             : new $model_class;
 

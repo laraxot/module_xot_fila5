@@ -61,7 +61,7 @@ class GetViewByClassAction
             $module_low.'::'.$implode.$suffix,
         ];
         $view = Arr::first($views, static fn (string $candidate): bool => view()->exists($candidate));
-        if (! is_string($view) || $view === '') {
+        if (! is_string($view) || '' === $view) {
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 

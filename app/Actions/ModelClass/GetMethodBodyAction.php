@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\ModelClass;
 
+use function Safe\file;
+
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 

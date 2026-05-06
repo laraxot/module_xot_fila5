@@ -187,12 +187,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if ($sortColumn !== null && $sortDirection !== null) {
+        if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if ($pollInterval !== null) {
+        if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
 
@@ -305,10 +305,9 @@ trait HasXotTable
     /**
      * Get model class.
      *
+     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
-     *
-     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
@@ -317,29 +316,28 @@ trait HasXotTable
             /** @var Relation|Builder $relationship */
             $relationship = $this->getRelationship();
             if ($relationship instanceof Relation) {
-                $related = $relationship->getRelated();
-                Assert::isInstanceOf($related, Model::class);
-
-                return \get_class($related);
+                /* @var class-string<Model> */
+                return get_class($relationship->getRelated());
             }
 
             if ($relationship instanceof Builder) {
-                $model = $relationship->getModel();
-                Assert::isInstanceOf($model, Model::class);
-
-                return \get_class($model);
+                /* @var class-string<Model> */
+                return get_class($relationship->getModel());
             }
 
-            // @phpstan-ignore-next-line
             throw new \UnexpectedValueException('Unsupported relationship type for getModelClass: '.get_debug_type($relationship));
         }
 
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
 
-            // @var class-string<Model>
-            // @phpstan-ignore-next-line
-            Assert::string($model);
+                // Assert::isAOf($model, Model::class);
+                /* @var class-string<Model> */
+                return $model;
+            }
+            if ($model instanceof Model) {
+                /** @var class-string<Model> */
+                $className = get_class($model);
 
             Assert::classExists($model);
             // Assert::isAOf($model, Model::class);

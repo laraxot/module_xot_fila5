@@ -57,7 +57,7 @@ class ExportTreeXlsAction extends Action
                     ));
                 }
 
-                /** @var array<int, string> $fields */
+                /* @var array<int, string> $fields */
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
     }

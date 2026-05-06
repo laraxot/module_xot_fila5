@@ -52,7 +52,7 @@ trait RelationX
             $pivotDriver = $pivot->getConnection()->getDriverName();
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
-            if ($pivotDriver !== 'sqlite') {
+            if ('sqlite' !== $pivotDriver) {
                 $table = $pivotDbName.'.'.$table;
             }
         }
@@ -98,7 +98,7 @@ trait RelationX
         $pivotDbName = $pivot->getConnection()->getDatabaseName();
         $dbName = $this->getConnection()->getDatabaseName();
         // $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        if ($table === null) {
+        if (null === $table) {
             $table = $pivot->getTable();
         }
 
@@ -185,7 +185,7 @@ trait RelationX
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
-        if ($parent_class === false) {
+        if (false === $parent_class) {
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

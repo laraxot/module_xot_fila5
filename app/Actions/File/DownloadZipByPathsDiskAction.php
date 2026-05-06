@@ -31,13 +31,13 @@ class DownloadZipByPathsDiskAction
         // Assicurati che la directory temp esista
         Storage::disk('local')->makeDirectory('temp');
 
-        if ($zip->open($tempFilePath, \ZipArchive::CREATE) === true) {
+        if (true === $zip->open($tempFilePath, \ZipArchive::CREATE)) {
             foreach ($attachments as $attachment) {
                 $filePath = $attachment;
 
                 if (Storage::disk($disk)->exists($filePath)) {
                     $fileContent = Storage::disk($disk)->get($filePath);
-                    if ($fileContent !== null) {
+                    if (null !== $fileContent) {
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {

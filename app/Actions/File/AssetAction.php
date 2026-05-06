@@ -113,7 +113,7 @@ class AssetAction
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
-        $forceCopy = app()->environment() !== 'production';
+        $forceCopy = 'production' !== app()->environment();
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));

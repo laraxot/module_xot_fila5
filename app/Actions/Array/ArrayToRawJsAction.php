@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Array;
 
 use Filament\Support\RawJs;
+
+use function Safe\preg_match;
+
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;

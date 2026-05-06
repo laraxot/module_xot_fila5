@@ -44,7 +44,7 @@ class MeasureAction
 
         // Mostriamo una notifica con le metriche
         Notification::make()
-            ->title('Performance Metrics '.($label !== '' ? $label : 'Unnamed'))
+            ->title('Performance Metrics '.('' !== $label ? $label : 'Unnamed'))
             ->body($metrics['execution_time'].'  '.$metrics['memory_usage'])
             ->success()
             ->persistent()
@@ -52,7 +52,7 @@ class MeasureAction
 
         // Log::debug('Performance Metrics', $metrics);
 
-        /** @var T $result */
+        /* @var T $result */
         return $result;
     }
 }

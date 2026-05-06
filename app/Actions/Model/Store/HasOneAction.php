@@ -19,8 +19,8 @@ class HasOneAction
     {
         Assert::isInstanceOf($rows = $relationDTO->rows, HasOne::class);
 
-        if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
-            $related_id = $relationDTO->data[0];
+        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
+            $related_id = Arr::first($relationDTO->data);
             $related = $relationDTO->related->find($related_id);
             if (! $related instanceof Model) {
                 throw new \Exception('['.__LINE__.']['.class_basename($this).']');

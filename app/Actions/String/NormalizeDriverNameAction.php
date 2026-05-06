@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
+use function Safe\preg_replace;
+
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
