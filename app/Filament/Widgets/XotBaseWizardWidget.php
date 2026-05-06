@@ -62,7 +62,7 @@ use Modules\Lang\Providers\LangServiceProvider;
  * - Log dettagliato: compito del framework/logging.php, non del dominio
  *
  * @see Wizard
- * @see \Filament\Actions\Concerns\HasWizard
+ * @see HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
  * @see LangServiceProvider
  * @see AutoLabelAction
@@ -402,7 +402,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         $raw = request()->query('step');
-        if ($raw === null || $raw === '') {
+        if (null === $raw || '' === $raw) {
             return 1;
         }
 
@@ -425,7 +425,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return 1;
         }
 
-        if (! $this->queryStepOverrideAllowed() && $step !== 1) {
+        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
             return 1;
         }
 
@@ -479,14 +479,14 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function getWizardComponentKey(): string
     {
         $schema = $this->getSchema('form');
-        if ($schema === null) {
+        if (null === $schema) {
             throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
         }
 
         foreach ($schema->getComponents(withHidden: true) as $component) {
             if ($component instanceof Wizard) {
                 $key = $component->getKey();
-                if ($key === null || $key === '') {
+                if (null === $key || '' === $key) {
                     throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
                 }
 

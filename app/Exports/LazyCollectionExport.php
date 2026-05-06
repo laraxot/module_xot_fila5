@@ -27,7 +27,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-     * @param  array<int, string>  $fields
+     * @param array<int, string> $fields
      */
     public function __construct(
         public LazyCollection $collection,
@@ -105,22 +105,22 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
-        if ($row === null) {
+        if (null === $row) {
             return [];
         }
 
         if ($row instanceof Arrayable) {
-            /** @var array<int|string, mixed> */
+            /* @var array<int|string, mixed> */
             return $row->toArray();
         }
 
         if (is_array($row)) {
-            /** @var array<int|string, mixed> */
+            /* @var array<int|string, mixed> */
             return $row;
         }
 
         if ($row instanceof \Traversable) {
-            /** @var array<int|string, mixed> */
+            /* @var array<int|string, mixed> */
             return iterator_to_array($row);
         }
 
