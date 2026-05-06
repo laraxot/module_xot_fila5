@@ -5,14 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Helpers;
 
 use Illuminate\Support\Str;
-
 use function Safe\error_log;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
-
 use Webmozart\Assert\Assert;
 
 class ResourceFormSchemaGenerator
@@ -30,7 +28,7 @@ class ResourceFormSchemaGenerator
             $reflection = new \ReflectionClass($resourceClass);
             $filename = $reflection->getFileName();
 
-            if (false === $filename) {
+            if ($filename === false) {
                 throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
             }
 

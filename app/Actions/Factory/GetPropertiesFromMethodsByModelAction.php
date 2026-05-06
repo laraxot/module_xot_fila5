@@ -15,9 +15,7 @@ namespace Modules\Xot\Actions\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
-
 use function Safe\preg_replace;
-
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -53,7 +51,7 @@ class GetPropertiesFromMethodsByModelAction
                 $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
-                if (false === $filename) {
+                if ($filename === false) {
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
@@ -91,10 +89,10 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
-                $begin = false !== $begin ? $begin : 0;
+                $begin = $begin !== false ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
-                $end = false !== $end ? $end : mb_strlen($codeStr);
+                $end = $end !== false ? $end : mb_strlen($codeStr);
 
                 $length = $end - $begin + 1;
                 Assert::greaterThan($length, 0, 'La lunghezza del corpo della funzione deve essere positiva');
@@ -126,7 +124,7 @@ class GetPropertiesFromMethodsByModelAction
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
-        if (false === $pos) {
+        if ($pos === false) {
             return; // Il metodo non contiene una relazione belongsTo
         }
 

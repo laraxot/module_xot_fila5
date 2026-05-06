@@ -50,10 +50,6 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
-        if (isset($this->view)) {
-            return $this->view;
-        }
-
         $view = Str::of(static::class)
             ->after('Modules\\')
             ->before('\\Filament\\')
@@ -71,7 +67,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
     public function getViewTest(): string
     {
-        $class = __CLASS__;
+        $class = self::class;
         $module = Str::between($class, 'Modules\\', '\Filament');
 
         $after = explode('\\', Str::after($class, '\Filament\\'));
@@ -150,7 +146,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getModel(): string
     {
-        if (null === static::$model) {
+        if (static::$model === null) {
             throw new \LogicException('Model class not set for page: '.static::class);
         }
 
@@ -158,6 +154,17 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         $model = static::$model;
 
         return $model;
+    }
+
+    /**
+     * Get the resources associated with this page.
+     *
+     * @return Collection<int, string>
+     */
+    public static function getResources(): Collection
+    {
+        /** @var Collection<int, string> $resources */
+        return collect([]);
     }
 
     /**
@@ -178,19 +185,6 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     protected function getFormContext(): ?string
     {
         return 'edit';
-    }
-
-    /**
-     * Get the resources associated with this page.
-     *
-     * @return Collection<int, string>
-     */
-    public static function getResources(): Collection
-    {
-        /** @var Collection<int, string> $resources */
-        $resources = collect([]);
-
-        return $resources;
     }
 
     /**

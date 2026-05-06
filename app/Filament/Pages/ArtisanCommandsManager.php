@@ -15,20 +15,19 @@ use Modules\Xot\Actions\ExecuteArtisanCommandAction;
  */
 class ArtisanCommandsManager extends XotBasePage
 {
-    public array $output = [];
+    public $output = [];
 
-    public string $currentCommand = '';
+    public $currentCommand = '';
 
-    public string $status = '';
+    public $status = '';
 
-    public bool $isRunning = false;
+    public $isRunning = false;
 
     /**
      * Livewire event listeners for this component.
+     * Untyped to match HandlesEvents::$listeners.
      *
      * @var array<string, string>
-     *
-     * @phpstan-var array<string, string>
      */
     protected $listeners = [
         'refresh-component' => '$refresh',

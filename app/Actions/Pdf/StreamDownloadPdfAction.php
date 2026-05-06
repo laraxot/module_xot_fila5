@@ -29,7 +29,7 @@ class StreamDownloadPdfAction
         ?array $data = null,
         string $filename = 'my_doc.pdf',
     ): StreamedResponse {
-        if (null === $html && null !== $view) {
+        if ($html === null && $view !== null) {
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
             }

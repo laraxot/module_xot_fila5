@@ -103,7 +103,7 @@ abstract class XotBaseRelationManager extends RelationManager
         // Use static property if available
         if (isset(static::$resource) && is_string(static::$resource)) {
             if (is_subclass_of(static::$resource, XotBaseResource::class)) {
-                /* @var class-string<XotBaseResource> */
+                /** @var class-string<XotBaseResource> */
                 return static::$resource;
             }
         }
@@ -129,7 +129,7 @@ abstract class XotBaseRelationManager extends RelationManager
             throw new \Exception("{$resourceClass} must extend XotBaseResource");
         }
 
-        /* @var class-string<XotBaseResource> $resourceClass */
+        /** @var class-string<XotBaseResource> $resourceClass */
         return $resourceClass;
     }
 }

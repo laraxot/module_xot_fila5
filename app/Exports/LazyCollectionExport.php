@@ -9,7 +9,6 @@ use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
 // use Maatwebsite\Excel\Concerns\FromCollection;
 use Illuminate\Support\LazyCollection;
-use Iterator;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromIterator;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -28,7 +27,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     public array $fields = [];
 
     /**
-     * @param array<int, string> $fields
+     * @param  array<int, string>  $fields
      */
     public function __construct(
         public LazyCollection $collection,
@@ -98,7 +97,6 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     public function iterator(): \Iterator
     {
-        /* @phpstan-ignore return.type */
         return $this->collection->getIterator();
     }
 
@@ -107,22 +105,22 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
      */
     private function normalizeRow(mixed $row): array
     {
-        if (null === $row) {
+        if ($row === null) {
             return [];
         }
 
         if ($row instanceof Arrayable) {
-            /* @var array<int|string, mixed> */
+            /** @var array<int|string, mixed> */
             return $row->toArray();
         }
 
         if (is_array($row)) {
-            /* @var array<int|string, mixed> */
+            /** @var array<int|string, mixed> */
             return $row;
         }
 
         if ($row instanceof \Traversable) {
-            /* @var array<int|string, mixed> */
+            /** @var array<int|string, mixed> */
             return iterator_to_array($row);
         }
 

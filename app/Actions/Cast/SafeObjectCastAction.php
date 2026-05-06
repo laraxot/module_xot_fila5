@@ -54,7 +54,7 @@ class SafeObjectCastAction
         Assert::stringNotEmpty($property);
 
         $hasProperty = isset($object->{$property});
-        $isNotNull = $hasProperty && null !== $object->{$property};
+        $isNotNull = $hasProperty && $object->{$property} !== null;
 
         Assert::true(
             ! $hasProperty || $isNotNull,
@@ -82,7 +82,7 @@ class SafeObjectCastAction
 
         $value = $object->{$property};
 
-        return '' !== $value;
+        return $value !== '';
     }
 
     /**
@@ -265,7 +265,7 @@ class SafeObjectCastAction
 
         $value = $this->getTypedProperty($object, $property, $type, $default);
 
-        if (null !== $validator && ! $validator($value)) {
+        if ($validator !== null && ! $validator($value)) {
             return $default;
         }
 

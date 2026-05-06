@@ -39,7 +39,7 @@ class ExportXlsByQuery
         );
         // Note: QueryExport doesn't accept a limit parameter directly
         // If limit is needed, apply it to the query before passing to the exporter
-        if (null !== $limit) {
+        if ($limit !== null) {
             $query->limit($limit);
         }
 
