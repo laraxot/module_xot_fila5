@@ -19,10 +19,7 @@ abstract class XotBaseResourceTable
         $columns = static::getTableColumns();
 
         if (empty($columns)) {
-            throw new \InvalidArgumentException(
-                '['.static::class.'::getTableColumns()] cannot return an empty array. '
-                .'Study the related Model and Migration to determine the real columns.'
-            );
+            throw new \InvalidArgumentException('['.static::class.'::getTableColumns()] cannot return an empty array. Study the related Model and Migration to determine the real columns.');
         }
 
         return $table

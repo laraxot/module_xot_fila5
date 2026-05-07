@@ -24,6 +24,5 @@ class SessionForm extends XotBaseResourceForm
             KeyValue::make('payload')->columnSpanFull(),
             TextInput::make('last_activity')->required()->numeric(),
         ];
-
     }
 }

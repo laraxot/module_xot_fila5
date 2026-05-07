@@ -73,7 +73,7 @@ it('casts arrays', function (): void {
 });
 
 it('casts objects', function (): void {
-    $result = $this->action->execute(new stdClass);
+    $result = $this->action->execute(new stdClass());
     expect($result)->toBe(0.0)->toBeFloat();
 });
 
