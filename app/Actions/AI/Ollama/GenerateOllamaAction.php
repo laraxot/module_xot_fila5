@@ -8,9 +8,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
 use Safe\Exceptions\JsonException;
-
 use function Safe\json_decode;
-
 use Spatie\QueueableAction\QueueableAction;
 
 class GenerateOllamaAction

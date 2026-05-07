@@ -6,13 +6,13 @@ namespace Modules\Xot\Tests\Unit\ValueObjects;
 
 use Modules\Xot\ValueObjects\EmailValueObject;
 
-it('accepts valid email', function (): void {
+it('accepts valid email', function(): void {
     $email = 'test@example.com';
     $vo = new EmailValueObject($email);
     expect($vo->email)->toBe($email);
 });
 
-it('throws on invalid email', function (): void {
+it('throws on invalid email', function(): void {
     expect(fn () => new EmailValueObject('invalid-email'))
         ->toThrow(\InvalidArgumentException::class, 'Email address invalid-email is NOT valid.');
 });

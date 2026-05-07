@@ -71,5 +71,5 @@ interface ModelProfileContract extends ModelContract
      *
      * @return Builder|static
      */
-    public function newEloquentBuilder(Builder $query);
+    public function newEloquentBuilder(Builder $query): Builder|static;
 }

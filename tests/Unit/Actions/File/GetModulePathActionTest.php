@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Nwidart\Modules\Facades\Module;
 
-it('gets module path from facade correctly', function (): void {
+it('gets module path from facade correctly', function(): void {
     Module::shouldReceive('getModulePath')
         ->once()
         ->with('Xot')
@@ -20,7 +20,7 @@ it('gets module path from facade correctly', function (): void {
     expect($result)->toBe('/path/to/Xot/');
 });
 
-it('gets module path from fallback correctly', function (): void {
+it('gets module path from fallback correctly', function(): void {
     Module::shouldReceive('getModulePath')
         ->once()
         ->andThrow(new \Exception('Module not found'));

@@ -10,7 +10,6 @@ namespace Modules\Xot\Exceptions;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
-
 use function Safe\json_encode;
 
 readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonable

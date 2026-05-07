@@ -27,7 +27,7 @@ function makeSchemalessTestModel(): XotBaseModel
     };
 }
 
-it('handles extra attributes scope', function (): void {
+it('handles extra attributes scope', function(): void {
     $builder = \Mockery::mock(Builder::class);
     $schemaless = \Mockery::mock(SchemalessAttributes::class);
 
@@ -44,7 +44,7 @@ it('handles extra attributes scope', function (): void {
     \Mockery::close();
 });
 
-it('handles where extra attribute scope', function (): void {
+it('handles where extra attribute scope', function(): void {
     $builder = \Mockery::mock(Builder::class);
     $builder->shouldReceive('where')->with('extra_attributes->key', 'value')->andReturnSelf();
 
@@ -55,7 +55,7 @@ it('handles where extra attribute scope', function (): void {
     \Mockery::close();
 });
 
-it('gets and sets extra attributes', function (): void {
+it('gets and sets extra attributes', function(): void {
     $class = makeSchemalessTestModel();
 
     // Default
@@ -68,7 +68,7 @@ it('gets and sets extra attributes', function (): void {
     expect($class->hasExtraAttribute('baz'))->toBeFalse();
 });
 
-it('returns all extra attributes as array', function (): void {
+it('returns all extra attributes as array', function(): void {
     $class = makeSchemalessTestModel();
 
     expect($class->getExtraAttributes())->toBeArray()->toBeEmpty();
@@ -77,7 +77,7 @@ it('returns all extra attributes as array', function (): void {
     expect($class->getExtraAttributes())->toBe(['a' => 1]);
 });
 
-it('removes extra attribute', function (): void {
+it('removes extra attribute', function(): void {
     $class = makeSchemalessTestModel();
 
     $class->setExtraAttribute('temp', 'val');
@@ -87,7 +87,7 @@ it('removes extra attribute', function (): void {
     expect($class->hasExtraAttribute('temp'))->toBeFalse();
 });
 
-it('syncs extra attributes calls save', function (): void {
+it('syncs extra attributes calls save', function(): void {
     $testObject = makeSchemalessTestModel();
 
     $testObject->syncExtraAttributes();

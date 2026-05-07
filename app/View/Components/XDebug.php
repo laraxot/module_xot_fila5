@@ -8,7 +8,6 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\View\Component;
 use Modules\Xot\Actions\GetViewAction;
-
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 

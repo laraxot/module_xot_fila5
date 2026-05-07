@@ -10,7 +10,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Relations;
 
-use Closure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -100,9 +99,7 @@ class CustomRelation extends Relation
         Assert::allIsInstanceOf($res, Model::class);
 
         /** @var array<int, Model> $models */
-        $models = array_values($res);
-
-        return $models;
+        return array_values($res);
     }
 
     /**
@@ -140,7 +137,7 @@ class CustomRelation extends Relation
         Assert::isArray($models);
         Assert::allIsInstanceOf($models, Model::class);
 
-        /* @var array<int, Model> $models */
+        /** @var array<int, Model> $models */
         return $this->related->newCollection($models);
     }
 

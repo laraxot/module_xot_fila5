@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Config;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 
-it('delegates to tenant file path action with php filename', function (): void {
+it('delegates to tenant file path action with php filename', function(): void {
     $tenantPathAction = Mockery::mock(GetTenantFilePathAction::class);
     $tenantPathAction->shouldReceive('execute')
         ->once()

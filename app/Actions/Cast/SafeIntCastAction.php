@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Cast;
 
 use function Safe\preg_match;
-
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -59,7 +58,7 @@ class SafeIntCastAction
         }
 
         // Se è un array e ha un solo elemento numerico
-        if (is_array($value) && 1 === count($value)) {
+        if (is_array($value) && count($value) === 1) {
             return $this->execute(reset($value), $default);
         }
 
@@ -173,7 +172,7 @@ class SafeIntCastAction
 
         // Prova a estrarre solo i numeri
         $matches = [];
-        if (1 === preg_match('/^[+-]?[0-9]+/', $normalized, $matches) && ! empty($matches[0])) {
+        if (preg_match('/^[+-]?[0-9]+/', $normalized, $matches) === 1 && ! empty($matches[0])) {
             return (int) $matches[0];
         }
 

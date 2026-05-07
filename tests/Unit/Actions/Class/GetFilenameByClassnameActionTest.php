@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Class;
 use Modules\Xot\Actions\Class\GetFilenameByClassnameAction;
 use Modules\Xot\Models\Log;
 
-it('gets filename from classname correctly', function (): void {
+it('gets filename from classname correctly', function(): void {
     $action = app(GetFilenameByClassnameAction::class);
 
     $filename = $action->execute(Log::class);

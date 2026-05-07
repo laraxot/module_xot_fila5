@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 
-it('manages object properties safely', function (): void {
+it('manages object properties safely', function(): void {
     $obj = new \stdClass();
     $obj->name = 'Test Object';
     $obj->id = 123;
