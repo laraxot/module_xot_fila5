@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\String;
 
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 
-it('generates pronounceable password correctly', function (): void {
+it('generates pronounceable password correctly', function(): void {
     $action = app(GetPronounceablePasswordAction::class);
 
     $password = $action->execute(12);
@@ -17,7 +17,7 @@ it('generates pronounceable password correctly', function (): void {
     expect($password)->toMatch('/[A-Z]/'); // contains uppercase
 });
 
-it('handles small length correctly', function (): void {
+it('handles small length correctly', function(): void {
     $action = app(GetPronounceablePasswordAction::class);
     $password = $action->execute(2);
     expect(strlen($password))->toBeGreaterThanOrEqual(4);

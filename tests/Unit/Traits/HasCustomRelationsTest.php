@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
 use Modules\Xot\Traits\HasCustomRelations;
 
-it('creates custom relation', function (): void {
+it('creates custom relation', function(): void {
     $relatedModel = new class extends Model {
         protected $table = 'related';
     };

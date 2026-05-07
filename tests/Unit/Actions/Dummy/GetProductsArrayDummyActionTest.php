@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Dummy;
 use Illuminate\Support\Facades\Http;
 use Modules\Xot\Actions\Dummy\GetProductsArrayDummyAction;
 
-it('maps only expected keys for each product', function (): void {
+it('maps only expected keys for each product', function(): void {
     Http::fake([
         'dummyjson.com/products' => Http::response([
             'products' => [
@@ -42,7 +42,7 @@ it('maps only expected keys for each product', function (): void {
     ]);
 });
 
-it('returns empty item when product entry is not an array', function (): void {
+it('returns empty item when product entry is not an array', function(): void {
     Http::fake([
         'dummyjson.com/products' => Http::response([
             'products' => [

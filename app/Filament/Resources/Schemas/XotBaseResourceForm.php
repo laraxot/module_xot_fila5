@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
+use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
-use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str;
 
 class XotBaseResourceForm
@@ -23,6 +23,9 @@ class XotBaseResourceForm
         return 1;
     }
 
+    /**
+     * @return array<int|string, SchemaComponent>
+     */
     public static function getFormSchema(): array
     {
         return [
@@ -51,7 +54,7 @@ class XotBaseResourceForm
 
         if (method_exists(static::class, $methodName)) {
             $schemaResult = static::$methodName();
-            /** @var array<Htmlable|string> $schemaComponents */
+            /** @var array<int, SchemaComponent> $schemaComponents */
             $schemaComponents = \is_array($schemaResult) ? array_values($schemaResult) : [];
 
             return Step::make(__($labelKey))

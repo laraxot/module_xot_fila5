@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Traits\Filament;
 use Illuminate\Support\Str;
 use Modules\Xot\Traits\Filament\HasCustomModelLabel;
 
-it('gets model label from property', function (): void {
+it('gets model label from property', function(): void {
     $class = new class {
         use HasCustomModelLabel;
 
@@ -22,7 +22,7 @@ it('gets model label from property', function (): void {
     expect($class::getModelLabel())->toBe('Custom Label');
 });
 
-it('gets model label from model name', function (): void {
+it('gets model label from model name', function(): void {
     $class = new class {
         use HasCustomModelLabel;
 
@@ -36,7 +36,7 @@ it('gets model label from model name', function (): void {
     expect($class::getModelLabel())->toBe('User Invitation');
 });
 
-it('gets plural model label from property', function (): void {
+it('gets plural model label from property', function(): void {
     $class = new class {
         use HasCustomModelLabel;
 
@@ -51,7 +51,7 @@ it('gets plural model label from property', function (): void {
     expect($class::getPluralModelLabel())->toBe('Plural Labels');
 });
 
-it('gets plural model label from singular label', function (): void {
+it('gets plural model label from singular label', function(): void {
     $class = new class {
         use HasCustomModelLabel;
 
@@ -64,7 +64,7 @@ it('gets plural model label from singular label', function (): void {
     expect($class::getPluralModelLabel())->toBe('Categories');
 });
 
-it('gets navigation label', function (): void {
+it('gets navigation label', function(): void {
     $class = new class {
         use HasCustomModelLabel;
 
@@ -89,7 +89,7 @@ it('gets navigation label', function (): void {
     expect($classNoNav::getNavigationLabel())->toBe('Plurals');
 });
 
-it('gets breadcrumb', function (): void {
+it('gets breadcrumb', function(): void {
     $class = new class {
         use HasCustomModelLabel;
 

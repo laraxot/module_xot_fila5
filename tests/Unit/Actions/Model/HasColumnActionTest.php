@@ -7,11 +7,11 @@ namespace Modules\Xot\Tests\Unit\Actions\Model;
 use Modules\Xot\Actions\Model\HasColumnAction;
 use Modules\Xot\Models\BaseModel;
 
-beforeEach(function (): void {
+beforeEach(function(): void {
     $action = app(HasColumnAction::class);
 });
 
-it('executes without errors', function (): void {
+it('executes without errors', function(): void {
     // Use BaseModel which should have standard columns
     $model = new class extends BaseModel {
         protected $table = 'users';
@@ -27,7 +27,7 @@ it('executes without errors', function (): void {
     }
 });
 
-it('handles different tables', function (): void {
+it('handles different tables', function(): void {
     $model = new class extends BaseModel {
         protected $table = 'migrations';
     };
@@ -40,7 +40,7 @@ it('handles different tables', function (): void {
     }
 });
 
-it('returns boolean result', function (): void {
+it('returns boolean result', function(): void {
     $model = new class extends BaseModel {
         protected $table = 'users';
     };

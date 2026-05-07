@@ -10,7 +10,7 @@ use Modules\Xot\Actions\GetModelTypeByModelAction;
 use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Models\Log;
 
-it('resolves model types correctly', function (): void {
+it('resolves model types correctly', function(): void {
     Config::set('morph_map', ['log' => Log::class]);
 
     $classAction = app(GetModelClassByModelTypeAction::class);

@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 
-it('manages eloquent attributes safely', function (): void {
+it('manages eloquent attributes safely', function(): void {
     $model = \Mockery::mock(Activity::class);
     $model->shouldReceive('getAttribute')->with('name')->andReturn('Test User');
     $model->shouldReceive('getAttribute')->with('email')->andReturn('');

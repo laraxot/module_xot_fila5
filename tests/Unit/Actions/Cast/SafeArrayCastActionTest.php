@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 
-it('casts various values to array correctly', function (): void {
+it('casts various values to array correctly', function(): void {
     $action = app(SafeArrayCastAction::class);
 
     // Already array
@@ -56,7 +56,7 @@ it('casts various values to array correctly', function (): void {
     expect($action->execute(fopen('php://memory', 'r'), ['fallback']))->toBe(['fallback']);
 });
 
-it('validates required keys correctly', function (): void {
+it('validates required keys correctly', function(): void {
     $action = app(SafeArrayCastAction::class);
     $data = ['a' => 1, 'b' => 2];
 
@@ -64,14 +64,14 @@ it('validates required keys correctly', function (): void {
     expect($action->executeWithKeys($data, ['a', 'c'], ['error' => true]))->toBe(['error' => true]);
 });
 
-it('filters keys correctly', function (): void {
+it('filters keys correctly', function(): void {
     $action = app(SafeArrayCastAction::class);
     $data = ['a' => 1, 'b' => 2, 'c' => 3];
 
     expect($action->executeWithFilter($data, ['a', 'c']))->toBe(['a' => 1, 'c' => 3]);
 });
 
-it('casts values to specific type correctly', function (): void {
+it('casts values to specific type correctly', function(): void {
     $action = app(SafeArrayCastAction::class);
     $data = ['1', '2', '3'];
 
@@ -82,7 +82,7 @@ it('casts values to specific type correctly', function (): void {
     expect($action->executeWithValueType(['a', 'b'], 'invalid'))->toBe(['a', 'b']);
 });
 
-it('checks if value can be cast', function (): void {
+it('checks if value can be cast', function(): void {
     $action = app(SafeArrayCastAction::class);
     expect($action->canCast([]))->toBeTrue();
     expect($action->canCast(null))->toBeTrue();
@@ -90,7 +90,7 @@ it('checks if value can be cast', function (): void {
     expect($action->canCast(new \stdClass()))->toBeTrue();
 });
 
-it('uses static cast method correctly', function (): void {
+it('uses static cast method correctly', function(): void {
     expect(SafeArrayCastAction::cast(['foo' => 'bar']))->toBe(['foo' => 'bar']);
     expect(SafeArrayCastAction::castWithKeys(['a' => 1], ['a']))->toBe(['a' => 1]);
     expect(SafeArrayCastAction::castWithFilter(['a' => 1, 'b' => 2], ['a']))->toBe(['a' => 1]);

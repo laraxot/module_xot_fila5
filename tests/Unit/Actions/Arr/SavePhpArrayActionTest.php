@@ -6,20 +6,20 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 
-beforeEach(function (): void {
+beforeEach(function(): void {
     $this->action = app(SavePhpArrayAction::class);
     $this->tempDir = sys_get_temp_dir().'/xot_arr_php_'.uniqid();
     mkdir($this->tempDir, 0755, true);
 });
 
-afterEach(function (): void {
+afterEach(function(): void {
     if (isset($this->tempDir) && is_dir($this->tempDir)) {
         array_map('unlink', glob($this->tempDir.'/*') ?: []);
         rmdir($this->tempDir);
     }
 });
 
-it('saves array to php file', function (): void {
+it('saves array to php file', function(): void {
     $data = ['a' => 1, 'b' => 'test'];
     $path = $this->tempDir.'/data.php';
 
@@ -30,7 +30,7 @@ it('saves array to php file', function (): void {
     expect($loaded)->toBe($data);
 });
 
-it('saved file has strict types', function (): void {
+it('saved file has strict types', function(): void {
     $path = $this->tempDir.'/strict.php';
     $this->action->execute(['x' => 1], $path);
 

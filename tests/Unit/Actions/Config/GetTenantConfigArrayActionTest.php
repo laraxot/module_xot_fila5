@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Config;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 
-it('returns empty array when tenant config file does not exist', function (): void {
+it('returns empty array when tenant config file does not exist', function(): void {
     $pathAction = Mockery::mock(GetTenantConfigPathAction::class);
     $pathAction->shouldReceive('execute')
         ->once()
@@ -21,7 +21,7 @@ it('returns empty array when tenant config file does not exist', function (): vo
     expect($result)->toBe([]);
 });
 
-it('returns config array when file exists and contains array', function (): void {
+it('returns config array when file exists and contains array', function(): void {
     $path = sys_get_temp_dir().'/xot_tenant_config_'.uniqid('', true).'.php';
     file_put_contents($path, "<?php\nreturn ['driver' => 'smtp', 'port' => 25];\n");
 
@@ -41,7 +41,7 @@ it('returns config array when file exists and contains array', function (): void
     }
 });
 
-it('returns empty array when required file does not return an array', function (): void {
+it('returns empty array when required file does not return an array', function(): void {
     $path = sys_get_temp_dir().'/xot_tenant_config_scalar_'.uniqid('', true).'.php';
     file_put_contents($path, "<?php\nreturn 'not-array';\n");
 

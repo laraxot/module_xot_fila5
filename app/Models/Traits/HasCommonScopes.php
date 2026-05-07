@@ -137,7 +137,7 @@ trait HasCommonScopes
             return false;
         }
 
-        return null !== $this->published_at
+        return $this->published_at !== null
                && $this->published_at->isPast();
     }
 
@@ -154,6 +154,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-        return isset($this->is_active) && true === $this->is_active;
+        return isset($this->is_active) && $this->is_active === true;
     }
 }

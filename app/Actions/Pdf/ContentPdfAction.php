@@ -39,7 +39,7 @@ class ContentPdfAction
         string $_filename = 'my_doc.pdf',
     ): string {
         // Generate HTML content if view is provided
-        if (null === $html && null !== $view) {
+        if ($html === null && $view !== null) {
             if (! view()->exists($view)) {
                 throw new \Exception('View '.$view.' not found');
             }

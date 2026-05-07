@@ -13,7 +13,7 @@ class GetStrBetweenStartsWithAction
     public function execute(string $body, string $start, string $open, string $close): string
     {
         $pos = mb_strpos($body, $start);
-        if (false === $pos) {
+        if ($pos === false) {
             throw new \Exception("Cannot find {$start} in {$body} [".__LINE__.']['.__FILE__.']');
         }
         $pos1 = mb_strpos($body, $close, $pos);

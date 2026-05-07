@@ -11,15 +11,11 @@ class AnalyzeComponentsCommand extends Command
 {
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected $signature = 'xot:analyze-components {--module=} {--type=} {--prefix=} {--force}';
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Analizza i componenti del sistema';
 
@@ -39,8 +35,8 @@ class AnalyzeComponentsCommand extends Command
 
         // Type-safe module handling
         $moduleStr = is_string($module) ? $module : '';
-        $path = '' !== $moduleStr ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
-        $namespace = '' !== $moduleStr ? "Modules\\{$moduleStr}" : 'Modules';
+        $path = $moduleStr !== '' ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
+        $namespace = $moduleStr !== '' ? "Modules\\{$moduleStr}" : 'Modules';
 
         $components = $getComponentsAction->execute($path, $namespace, $prefix, $force);
 

@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Collection;
 use Illuminate\Support\Facades\Lang;
 use Modules\Xot\Actions\Collection\TransCollectionAction;
 
-it('translates collection items correctly', function (): void {
+it('translates collection items correctly', function(): void {
     $collection = collect(['apple', 'banana', 'orange.juice']);
     $transKey = 'fruits';
 
@@ -29,7 +29,7 @@ it('translates collection items correctly', function (): void {
     ]);
 });
 
-it('returns original items if transKey is null', function (): void {
+it('returns original items if transKey is null', function(): void {
     $collection = collect(['a', 1, null]);
     $action = app(TransCollectionAction::class);
     $result = $action->execute($collection, null);
@@ -37,7 +37,7 @@ it('returns original items if transKey is null', function (): void {
     expect($result->all())->toBe(['a', '1', '']);
 });
 
-it('returns original item if translation not found', function (): void {
+it('returns original item if translation not found', function(): void {
     $collection = collect(['unknown']);
     $action = app(TransCollectionAction::class);
     $result = $action->execute($collection, 'missing');

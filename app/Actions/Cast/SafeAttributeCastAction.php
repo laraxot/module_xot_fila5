@@ -39,7 +39,7 @@ class SafeAttributeCastAction
     {
         Assert::stringNotEmpty($attribute);
 
-        return null !== $model->getAttribute($attribute);
+        return $model->getAttribute($attribute) !== null;
     }
 
     /**
@@ -56,7 +56,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-        return null !== $value && '' !== $value;
+        return $value !== null && $value !== '';
     }
 
     /**
@@ -74,7 +74,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? '';
         }
 
@@ -96,7 +96,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? 0;
         }
 
@@ -118,7 +118,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? 0.0;
         }
 
@@ -140,7 +140,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? false;
         }
 
@@ -162,7 +162,7 @@ class SafeAttributeCastAction
 
         $value = $model->getAttribute($attribute);
 
-        if (null === $value) {
+        if ($value === null) {
             return $default ?? [];
         }
 
@@ -235,7 +235,7 @@ class SafeAttributeCastAction
 
         $value = $this->getTypedAttribute($model, $attribute, $type, $default);
 
-        if (null !== $validator && ! $validator($value)) {
+        if ($validator !== null && ! $validator($value)) {
             return $default;
         }
 
