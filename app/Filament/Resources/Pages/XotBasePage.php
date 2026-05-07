@@ -21,9 +21,9 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * This class provides common functionality for custom pages,
  * following the architectural pattern of never extending Filament classes directly.
  *
- * @property ?string              $model
+ * @property ?string $model
  * @property array<string, mixed> $data
- * @property Schema               $form
+ * @property Schema $form
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
 {
@@ -74,7 +74,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         $after[1] = Str::before($after[1], 'Resource');
         $after[3] = Str::before($after[3], $after[1]);
 
-        $after = collect($after)->map(function ($item) {
+        $after = collect($after)->map(static function ($item) {
             return Str::kebab($item);
             // return Str::snake($item);
         })->implode('.');
@@ -163,7 +163,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public static function getResources(): Collection
     {
-        /** @var Collection<int, string> $resources */
+        /* @var Collection<int, string> $resources */
+        // @phpstan-ignore-next-line
         return collect([]);
     }
 

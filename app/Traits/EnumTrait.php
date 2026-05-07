@@ -100,8 +100,8 @@ trait EnumTrait
      * ```
      */
     /**
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+     * @param  Blueprint  $table  The table blueprint
+     * @param  XotBaseMigration|null  $migration  XotBaseMigration instance for UPDATE context (provides hasColumn())
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {

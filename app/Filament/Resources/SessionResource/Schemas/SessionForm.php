@@ -6,13 +6,13 @@ namespace Modules\Xot\Filament\Resources\SessionResource\Schemas;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class SessionForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, Component>
+     * @return array<int|string, SchemaComponent>
      */
     public static function getFormSchema(): array
     {
@@ -24,5 +24,6 @@ class SessionForm extends XotBaseResourceForm
             KeyValue::make('payload')->columnSpanFull(),
             TextInput::make('last_activity')->required()->numeric(),
         ];
+
     }
 }

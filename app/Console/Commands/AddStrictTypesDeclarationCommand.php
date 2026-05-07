@@ -56,7 +56,7 @@ class AddStrictTypesDeclarationCommand extends Command
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
-                    ++$count;
+                    $count++;
 
                     continue;
                 }
@@ -72,7 +72,7 @@ class AddStrictTypesDeclarationCommand extends Command
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
-                    ++$count;
+                    $count++;
                 } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }

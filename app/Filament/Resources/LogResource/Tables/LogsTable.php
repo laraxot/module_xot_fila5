@@ -13,15 +13,14 @@ class LogsTable extends XotBaseResourceTable
     /**
      * @return array<string, Column>
      */
-    public function getTableColumns(): array
+    public static function getTableColumns(): array
     {
-        /*
-         * @return array<int|string, \Filament\Tables\Columns\Column>
-         */
         return [
-            'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'name' => TextColumn::make('name')->searchable()->sortable(),
+            'size' => TextColumn::make('size')->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }

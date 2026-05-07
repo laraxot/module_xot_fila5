@@ -4,29 +4,41 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Tables;
 
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\BulkAction;
+use Filament\Actions\BulkActionGroup;
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Table;
 
-class XotBaseResourceTable
+abstract class XotBaseResourceTable
 {
     public static function configure(Table $table): Table
     {
+        $columns = static::getTableColumns();
+
+        if (empty($columns)) {
+            throw new \InvalidArgumentException(
+                '['.static::class.'::getTableColumns()] cannot return an empty array. '
+                .'Study the related Model and Migration to determine the real columns.'
+            );
+        }
+
         return $table
-            ->columns(static::getTableColumns())
+            ->columns($columns)
             ->filters(static::getTableFilters())
             ->recordActions(static::getTableActions())
             ->toolbarActions(static::getTableBulkActions());
     }
 
     /**
-     * @return array<int|string, \Filament\Tables\Columns\Column>
+     * @return array<string, Column>
      */
-    public static function getTableColumns(): array
-    {
-        return [];
-    }
+    abstract public static function getTableColumns(): array;
 
     /**
-     * @return array<int|string, \Filament\Tables\Filters\BaseFilter>
+     * @return array<string, BaseFilter>
      */
     public static function getTableFilters(): array
     {
@@ -34,7 +46,7 @@ class XotBaseResourceTable
     }
 
     /**
-     * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     public static function getTableActions(): array
     {
@@ -42,7 +54,7 @@ class XotBaseResourceTable
     }
 
     /**
-     * @return array<int|string, \Filament\Actions\BulkAction|\Filament\Actions\BulkActionGroup>
+     * @return array<string, BulkAction|BulkActionGroup>
      */
     public static function getTableBulkActions(): array
     {
