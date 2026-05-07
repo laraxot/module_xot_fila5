@@ -12,10 +12,11 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+use Webmozart\Assert\Assert;
+
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
-use Webmozart\Assert\Assert;
 
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
@@ -253,7 +254,7 @@ class ArtisanService
     }
 
     /**
-     * @param array<string, mixed> $arguments
+     * @param  array<string, mixed>  $arguments
      */
     public static function exe(string $command, array $arguments = []): string
     {

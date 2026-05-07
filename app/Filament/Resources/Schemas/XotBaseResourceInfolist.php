@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\Schemas;
 
 use BackedEnum;
 use Closure;
+use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
@@ -16,11 +17,39 @@ class XotBaseResourceInfolist
 {
     public static function configure(Schema $schema): Schema
     {
-        return $schema->components(static::getInfolistSchema());
+        $components = static::getInfolistSchema();
+
+        if ($components === []) {
+            throw new \RuntimeException(sprintf(
+                'Infolist [%s] returned empty array from getInfolistSchema(). '
+                .'Every infolist MUST expose at least one entry. '
+                .'Use real fields from the related Model/migration/fillable — do not invent.',
+                static::class
+            ));
+        }
+
+        foreach (array_keys($components) as $key) {
+            if (! \is_string($key)) {
+                throw new \RuntimeException(sprintf(
+                    'Infolist [%s] returned a numeric-keyed array from getInfolistSchema(). '
+                    .'Keys MUST be strings (use the field name, e.g. "name" => TextEntry::make("name")).',
+                    static::class
+                ));
+            }
+        }
+
+        return $schema->components($components);
     }
 
     /**
-     * @return array<int|string, Component|Htmlable|string>
+     * @return array<string, Entry>
+     *
+     * ⚠️ REGOLA: l'array NON può essere vuoto!
+     * Per determinare i campi corretti:
+     * 1. Studiare il Model collegato (app/Models/<Name>.php)
+     * 2. Studiare la Migration (database/migrations/*_create_<names>_table.php)
+     * 3. Consultare $fillable nel model
+     * 4. Usare i campi reali del database, NON inventare campi
      */
     public static function getInfolistSchema(): array
     {

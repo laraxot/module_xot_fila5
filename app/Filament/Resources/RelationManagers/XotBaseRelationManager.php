@@ -62,7 +62,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(class_exists($resource), 'Resource class does not exist: '.$resource);
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
-        /** @var class-string<XotBaseResource> $resource */
+        /* @var class-string<XotBaseResource> $resource */
         static::$resource = $resource;
 
         return static::$resource;
@@ -163,6 +163,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         $actions = [];
         $me = $this;
+        // @phpstan-ignore-next-line
         if (method_exists($me, 'canAttach')) {
             $actions['attach'] = AttachAction::make()
                 ->icon('heroicon-o-link')
@@ -170,6 +171,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
                 ->tooltip(__('user::actions.attach.label'))
                 ->visible(static fn (?Model $_record): bool => $me->canAttach());
         }
+        // @phpstan-ignore-next-line
         if (method_exists($me, 'canCreate')) {
             $actions['create'] = CreateAction::make()
                 ->icon('heroicon-o-plus')

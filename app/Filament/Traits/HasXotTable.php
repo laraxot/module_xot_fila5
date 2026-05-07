@@ -74,10 +74,13 @@ trait HasXotTable
         $resource = $this;
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
-            if (is_string($resourceClass)) {
-                $resource = app($resourceClass);
-            }
+            // @phpstan-ignore-next-line
+            Assert::string($resourceClass);
+
+            $resource = app($resourceClass);
         }
+
+        Assert::object($resource);
 
         $actions = [];
 
@@ -93,7 +96,7 @@ trait HasXotTable
             $actions['attach'] = AttachAction::make()
                 ->icon('heroicon-o-link')
                 ->iconButton()
-                ->visible(fn (): bool => (bool) $resource->canAttach());
+                ->visible(static fn (): bool => (bool) $resource->canAttach());
         }
 
         $actions['layout'] = TableLayoutToggleTableAction::make('layout');
@@ -118,7 +121,7 @@ trait HasXotTable
      */
     public function getTableFiltersFormColumns(): int
     {
-        $count = count($this->getTableFilters()) + 1;
+        $count = \count($this->getTableFilters()) + 1;
 
         return min($count, 6);
     }
@@ -150,18 +153,18 @@ trait HasXotTable
      */
     public function table(Table $table): Table
     {
-        /*
-        $modelClass = $this->getModelClass();
-        if (! app(TableExistsByModelClassActions::class)->execute($modelClass)) {
-            $this->notifyTableMissing();
-
-            return $this->configureEmptyTable($table);
-        }
-
-        //  @var Model $model
-        $model = app($modelClass);
-        Assert::isInstanceOf($model, Model::class);
-        */
+        /**
+         * $modelClass = $this->getModelClass();
+         * if (! app(TableExistsByModelClassActions::class)->execute($modelClass)) {
+         * $this->notifyTableMissing();
+         *
+         * return $this->configureEmptyTable($table);
+         * }
+         *
+         * //  @var Model $model
+         * $model = app($modelClass);
+         * Assert::isInstanceOf($model, Model::class);
+         */
         // Configurazione base della tabella
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
@@ -227,35 +230,37 @@ trait HasXotTable
         $resource = $this;
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
-            if (is_string($resourceClass)) {
-                $resource = app($resourceClass);
-            }
+            // @phpstan-ignore-next-line
+            Assert::string($resourceClass);
+            $resource = app($resourceClass);
         }
+        Assert::object($resource);
 
         if (method_exists($resource, 'canView')) {
             $actions['view'] = ViewAction::make()
                 ->iconButton()
-                ->visible(fn (Model $record): bool => (bool) $resource->canView($record));
+                ->visible(static fn (Model $record): bool => (bool) $resource->canView($record));
         }
 
         if (method_exists($resource, 'canEdit')) {
             $actions['edit'] = EditAction::make()
                 ->iconButton()
-                ->visible(fn (Model $record): bool => (bool) $resource->canEdit($record));
+                ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record));
         }
 
         if (method_exists($resource, 'canDelete')) {
             $actions['delete'] = DeleteAction::make()
                 ->iconButton()
-                ->visible(fn (Model $record): bool => (bool) $resource->canDelete($record));
+                ->visible(static fn (Model $record): bool => (bool) $resource->canDelete($record));
         }
 
         if ($this->shouldShowReplicateAction()) {
             $actions['replicate'] = ReplicateAction::make()
                 ->iconButton();
         }
-
-        if ($this->shouldShowDetachAction() && $this->isFilamentRelationshipTableContext()) {
+        // @phpstan-ignore-next-line
+        if ($this->shouldShowDetachAction() && $this->isFilamentRelationshipTableContext() && method_exists($this, 'getRelationship')) {
+            /** @var Relation|Builder $relationship */
             $relationship = $this->getRelationship();
 
             if (method_exists($relationship, 'getTable')
@@ -263,7 +268,7 @@ trait HasXotTable
             ) {
                 $pivotClass = $relationship->getPivotClass();
 
-                if ((is_object($pivotClass) || is_string($pivotClass))
+                if ((\is_object($pivotClass) || \is_string($pivotClass))
                     && method_exists($pivotClass, 'getKeyName')
                 ) {
                     $actions['detach'] = DetachAction::make()
@@ -306,38 +311,42 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
-        if ($this->isFilamentRelationshipTableContext()) {
+        // @phpstan-ignore-next-line
+        if ($this->isFilamentRelationshipTableContext() && method_exists($this, 'getRelationship')) {
+            /** @var Relation|Builder $relationship */
             $relationship = $this->getRelationship();
             if ($relationship instanceof Relation) {
-                /** @var class-string<Model> */
-                return get_class($relationship->getRelated());
+                $related = $relationship->getRelated();
+                Assert::isInstanceOf($related, Model::class);
+
+                return \get_class($related);
             }
 
             if ($relationship instanceof Builder) {
-                /** @var class-string<Model> */
-                return get_class($relationship->getModel());
+                $model = $relationship->getModel();
+                Assert::isInstanceOf($model, Model::class);
+
+                return \get_class($model);
             }
 
-            throw new \UnexpectedValueException(
-                'Unsupported relationship type for getModelClass: '.get_debug_type($relationship)
-            );
+            // @phpstan-ignore-next-line
+            throw new \UnexpectedValueException('Unsupported relationship type for getModelClass: '.get_debug_type($relationship));
         }
 
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
-            if (is_string($model)) {
-                Assert::classExists($model);
 
-                // Assert::isAOf($model, Model::class);
-                /** @var class-string<Model> */
-                return $model;
-            }
-            if ($model instanceof Model) {
-                /** @var class-string<Model> */
-                $className = get_class($model);
+            // @var class-string<Model>
+            // @phpstan-ignore-next-line
+            Assert::string($model);
 
-                return $className;
-            }
+            Assert::classExists($model);
+            // Assert::isAOf($model, Model::class);
+            // Assert::isInstanceOf($model, Model::class);
+
+            // @var class-string<Model> $model
+            // @phpstan-ignore-next-line
+            return $model;
         }
 
         throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
@@ -368,7 +377,7 @@ trait HasXotTable
         $key = static::getKeyTrans('table.heading');
         $trans = trans($key);
 
-        if (! is_string($trans)) {
+        if (! \is_string($trans)) {
             return null;
         }
 
@@ -409,6 +418,7 @@ trait HasXotTable
             return true;
         }
 
+        // @phpstan-ignore-next-line
         return $this instanceof ManageRelatedRecords;
     }
 

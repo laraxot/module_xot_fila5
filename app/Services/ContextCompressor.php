@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Services;
 
 use OpenAI\OpenAI;
+
 use function Safe\preg_split;
 
 /**

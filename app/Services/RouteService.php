@@ -19,8 +19,7 @@ class RouteService
     /**
      * Verifica se l'utente è in modalità amministrazione.
      *
-     * @param array<string,string> $params Parametri aggiuntivi
-     *
+     * @param  array<string,string>  $params  Parametri aggiuntivi
      * @return bool True se l'utente è in modalità amministrazione, false altrimenti
      */
     public static function inAdmin(array $params = []): bool
@@ -46,7 +45,7 @@ class RouteService
     }
 
     /**
-     * @param array<string,string> $params
+     * @param  array<string,string>  $params
      */
     public static function urlAct(array $params): string
     {
@@ -99,7 +98,7 @@ class RouteService
     // se n=0 => 'container0'
     // se n=1 => 'containers.container1'
     /**
-     * @param array<string,string> $params
+     * @param  array<string,string>  $params
      */
     public static function getRoutenameN(array $params): string
     {
@@ -113,7 +112,7 @@ class RouteService
             $tmp[] = 'admin';
         }
 
-        for ($i = 0; $i <= $n; ++$i) {
+        for ($i = 0; $i <= $n; $i++) {
             $tmp[] = 'container'.$i;
         }
 
@@ -201,7 +200,7 @@ class RouteService
      * }
      */
     /**
-     * @param array<string,string> $params
+     * @param  array<string,string>  $params
      */
     public static function urlLang(array $params = []): string
     {

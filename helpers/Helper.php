@@ -15,10 +15,11 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
+use Webmozart\Assert\Assert;
+
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
-use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
@@ -234,8 +235,7 @@ if (! function_exists('isItem')) {
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @param array<string, mixed>|null $params
-     *
+     * @param  array<string, mixed>|null  $params
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array

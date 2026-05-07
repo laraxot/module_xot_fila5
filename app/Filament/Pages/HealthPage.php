@@ -83,7 +83,7 @@ class HealthPage extends XotBasePage
          * PHPStan Level 10: CpuLoadCheck, SecurityAdvisoriesCheck, and SmtpCheck
          * all extend Check, but their types are not recognized due to dynamic loading.
          * We suppress this specific error as the runtime type is guaranteed to be correct.
-         *
+         * @phpstan-ignore-next-line
          */
         Health::checks($checks);
         Artisan::call(RunHealthChecksCommand::class);

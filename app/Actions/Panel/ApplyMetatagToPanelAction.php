@@ -19,7 +19,7 @@ class ApplyMetatagToPanelAction
             $metatag = MetatagData::make();
 
             return $panel
-                ->colors($metatag->getColors())
+                ->colors($metatag->getThemeColors())
                 ->brandLogo($metatag->getBrandLogo())
                 ->brandName($metatag->getBrandName())
                 ->darkModeBrandLogo($metatag->getDarkModeBrandLogo())
