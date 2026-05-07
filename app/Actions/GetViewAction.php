@@ -15,9 +15,10 @@ class GetViewAction
     /**
      * Summary of execute.
      *
-     * @throws \Exception
      *
      * @return view-string
+     *
+     * @throws \Exception
      */
     public function execute(string $tpl = '', string $file0 = ''): string
     {

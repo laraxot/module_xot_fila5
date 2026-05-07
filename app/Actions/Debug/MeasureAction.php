@@ -16,9 +16,8 @@ class MeasureAction
     /**
      * Esegue una closure misurando il tempo di esecuzione e l'utilizzo di memoria.
      *
-     * @param \Closure():T $closure La closure da eseguire e misurare
-     * @param string       $label   Etichetta opzionale per identificare la misurazione
-     *
+     * @param  \Closure():T  $closure  La closure da eseguire e misurare
+     * @param  string  $label  Etichetta opzionale per identificare la misurazione
      * @return T Il risultato dell'esecuzione della closure
      */
     public function execute(\Closure $closure, string $label = ''): mixed

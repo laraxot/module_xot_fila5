@@ -9,6 +9,7 @@ use Filament\Actions\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
+use Filament\Support\Concerns\EvaluatesClosures;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
@@ -62,7 +63,7 @@ use Modules\Lang\Providers\LangServiceProvider;
  * - Log dettagliato: compito del framework/logging.php, non del dominio
  *
  * @see Wizard
- * @see \Filament\Actions\Concerns\HasWizard
+ * @see HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
  * @see LangServiceProvider
  * @see AutoLabelAction
@@ -70,6 +71,7 @@ use Modules\Lang\Providers\LangServiceProvider;
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
     use HasWizard; // Usa il trait ufficiale Filament per non reinventare la ruota
+    use EvaluatesClosures; // Adapter richiesto da HasWizard (evaluate())
 
     protected int|string|array $columnSpan = 'full';
 
@@ -86,11 +88,10 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     public function getFormSchema(): array
     {
-        $wizard = $this->makeWizard($this->getWizardSteps())
-            // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
-            // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
-            // ->submitAction($this->getWizardSubmitAction());
-        ;
+        $wizard = $this->makeWizard($this->getWizardSteps());
+        // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
+        // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
+        // ->submitAction($this->getWizardSubmitAction());
 
         return [
             $wizard,
@@ -114,8 +115,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         $this->callSchemaComponentMethod($key, 'nextStep', [
             'currentStepIndex' => $currentStepIndex,
         ]);
-
-        $this->wizardStartStep = min($this->wizardMaxStep(), $currentStepIndex + 2);
     }
 
     /**
@@ -134,8 +133,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         $this->callSchemaComponentMethod($key, 'previousStep', [
             'currentStepIndex' => $currentStepIndex,
         ]);
-
-        $this->wizardStartStep = max(1, $currentStepIndex);
     }
 
     /**
@@ -163,12 +160,12 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param array<int, Step> $steps
+     * @param  array<int, Step>  $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
         $wizard = Wizard::make($steps)
-            ->startOnStep(fn (): int => $this->getWizardStartStep()) // Usa HasWizard::getWizardStartStep()
+            ->startOnStep(fn (): int => $this->getWizardStartStep())
             ->columnSpanFull()
             ->skippable($this->hasSkippableWizardSteps());
 
@@ -219,8 +216,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Prepara i dati prima della creazione/aggiornamento.
      * Pattern ufficiale di Filament: mutateFormDataBeforeCreate/Update.
      *
-     * @param array<string, mixed> $data
-     *
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
     protected function prepareWizardFormData(array $data): array
@@ -248,7 +244,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     protected function isFirstStep(): bool
     {
-        return $this->wizardStartStep <= 1;
+        return $this->getWizardStartStep() <= 1;
     }
 
     /**
@@ -346,7 +342,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         return Action::make('submit')
-            ->submit('save')
+            ->action('submit')
             ->button();
     }
 
@@ -443,8 +439,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Appiattisce lo stato restituito da `getState()` se il `Wizard` e sotto la chiave wrapper.
      *
-     * @param array<string, mixed> $state
-     *
+     * @param  array<string, mixed>  $state
      * @return array<string, mixed>
      */
     protected function normalizeWizardFormState(array $state): array
@@ -458,8 +453,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * @param array<mixed, mixed> $row
-     *
+     * @param  array<mixed, mixed>  $row
      * @return array<string, mixed>
      */
     protected function stringKeyed(array $row): array

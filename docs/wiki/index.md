@@ -39,6 +39,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [why-xotbaseresourceform-superior](./concepts/why-xotbaseresourceform-superior.md) | Concept | Perché TicketForm pattern è superiore al Filament demo | 2026-05-05 |
 | [xotbase-resource-infolist-architecture](./concepts/xotbase-resource-infolist-architecture.md) | Concept | XotBaseResourceInfolist + TicketInfolist pattern | 2026-05-05 |
 | [filament-v5-hybrid-pattern](./concepts/filament-v5-hybrid-pattern.md) | Concept | Filament v5 configure() + XotBase hybrid pattern | 2026-05-05 |
+| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | XotBaseResourceTable empty-column enforcement rule | 2026-05-07 |
 
 ## Best Practices
 
@@ -46,6 +47,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
 - PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
+- Array con chiavi stringhe in Schemas/Tables (vedi [array-keys-rule](./array-keys-rule.md))
 
 ## Bad Practices
 

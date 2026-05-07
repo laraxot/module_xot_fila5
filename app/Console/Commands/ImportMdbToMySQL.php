@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
+
 use function Safe\shell_exec;
 
 class ImportMdbToMySQL extends Command
@@ -84,7 +85,7 @@ class ImportMdbToMySQL extends Command
     /**
      * Importa le tabelle in MySQL.
      *
-     * @param array<int, string> $tables
+     * @param  array<int, string>  $tables
      */
     private function importTablesIntoMySQL(array $tables, string $mysqlDb): void
     {

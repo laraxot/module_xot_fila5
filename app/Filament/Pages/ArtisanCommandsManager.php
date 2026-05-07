@@ -15,13 +15,14 @@ use Modules\Xot\Actions\ExecuteArtisanCommandAction;
  */
 class ArtisanCommandsManager extends XotBasePage
 {
-    public $output = [];
+    /** @var list<string> */
+    public array $output = [];
 
-    public $currentCommand = '';
+    public string $currentCommand = '';
 
-    public $status = '';
+    public string $status = '';
 
-    public $isRunning = false;
+    public bool $isRunning = false;
 
     /**
      * Livewire event listeners for this component.
