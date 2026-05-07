@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 
-it('calculates range intersection correctly', function (): void {
+it('calculates range intersection correctly', function(): void {
     $action = app(RangeIntersectAction::class);
 
     // Case 1: $a1 >= $a0 && $a1 <= $b0 && $b0 <= $b1

@@ -5,22 +5,17 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
-
 use function Safe\shell_exec;
 
 class ImportMdbToMySQL extends Command
 {
     /**
      * Il nome e la firma del comando.
-     *
-     * @var string
      */
     protected $signature = 'xot:import-mdb-to-mysql';
 
     /**
      * La descrizione del comando.
-     *
-     * @var string
      */
     protected $description = 'Importa un file .mdb in MySQL';
 

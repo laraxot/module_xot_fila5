@@ -53,13 +53,13 @@ class SendMailByRecordAction
         $subject = $record->option('mail_oggetto');
         $bodyHtml = $record->option('mail_testo');
 
-        if (! is_string($to)) {
+        if (! \is_string($to)) {
             throw new \InvalidArgumentException('Email must be a string');
         }
-        if (! is_string($subject)) {
+        if (! \is_string($subject)) {
             $subject = '';
         }
-        if (! is_string($bodyHtml)) {
+        if (! \is_string($bodyHtml)) {
             $bodyHtml = '';
         }
 
@@ -76,12 +76,8 @@ class SendMailByRecordAction
         );
         SmtpData::make()->send($emailData);
 
-        // myLogs è sempre disponibile su BaseModel
+        /** @var \Illuminate\Database\Eloquent\Relations\Relation $logs */
         $logs = $record->myLogs();
-        if (! is_object($logs) || ! method_exists($logs, 'create')) {
-            throw new \InvalidArgumentException('Model ['.$record::class.'] myLogs relation is invalid');
-        }
-
         $logs->create([
             'act' => 'sendMail',
             'handle' => authId(),

@@ -9,7 +9,7 @@ use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 
-it('extracts module name from class and model class', function (): void {
+it('extracts module name from class and model class', function(): void {
     $byClass = app(GetModuleNameByClassAction::class)->execute('Modules\\Cms\\Models\\Page');
     $byModelClass = app(GetModuleNameByModelClassAction::class)->execute('Modules\\Xot\\Models\\Module');
 
@@ -17,7 +17,7 @@ it('extracts module name from class and model class', function (): void {
         ->and($byModelClass)->toBe('Xot');
 });
 
-it('returns extracted fragment for non-module class signatures', function (): void {
+it('returns extracted fragment for non-module class signatures', function(): void {
     $byClass = app(GetModuleNameByClassAction::class)->execute('App\\Models\\User');
     $byModelClass = app(GetModuleNameByModelClassAction::class)->execute('App\\Models\\User');
 
@@ -25,7 +25,7 @@ it('returns extracted fragment for non-module class signatures', function (): vo
         ->and($byModelClass)->toBe('App');
 });
 
-it('delegates model instance class to model class action', function (): void {
+it('delegates model instance class to model class action', function(): void {
     $model = Mockery::mock(Model::class);
     $delegate = Mockery::mock(GetModuleNameByModelClassAction::class);
     $delegate->shouldReceive('execute')

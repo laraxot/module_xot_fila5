@@ -56,7 +56,7 @@ class CreateTableIndexByModelClassColumnsAction
         }
 
         // Add the index to the table
-        Schema::connection($connectionName)->table($tableName, function (Blueprint $table) use ($indexName, $columns): void {
+        Schema::connection($connectionName)->table($tableName, static function (Blueprint $table) use ($indexName, $columns): void {
             $table->index($columns, $indexName);
         });
 
@@ -96,19 +96,18 @@ class CreateTableIndexByModelClassColumnsAction
 
         // Query to check if the index exists
         $query = '
-        SELECT COUNT(*) 
-        FROM information_schema.statistics 
-        WHERE table_schema = ? 
-        AND table_name = ? 
+        SELECT COUNT(*)
+        FROM information_schema.statistics
+        WHERE table_schema = ?
+        AND table_name = ?
         AND index_name = ?;
     ';
 
         $formName = $connection->getDatabaseName();
         $result = $connection->selectOne($query, [$formName, $tableName, $indexName]);
 
-        $count = is_object($result) && isset($result->{'COUNT(*)'}) ? (int) $result->{'COUNT(*)'} : 0;
-
-        return $count > 0;
+        // @phpstan-ignore-next-line
+        return $result && $result->{'COUNT(*)'} > 0;
     }
 
     /*

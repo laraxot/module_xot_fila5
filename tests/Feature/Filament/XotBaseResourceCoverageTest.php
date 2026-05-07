@@ -15,24 +15,24 @@ use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
 
-it('covers model resolution and model cache', function (): void {
+it('covers model resolution and model cache', function(): void {
     ProbeResource::resetModelCache();
 
     expect(ProbeResource::getModel())->toBe(Probe::class)
         ->and(ProbeResource::getModel())->toBe(Probe::class);
 });
 
-it('covers default relation discovery with missing relation manager classes', function (): void {
+it('covers default relation discovery with missing relation manager classes', function(): void {
     expect(ProbeResource::getRelations())->toBe([]);
 });
 
-it('covers default page discovery including optional view page', function (): void {
+it('covers default page discovery including optional view page', function(): void {
     $pages = ProbeResource::getPages();
 
     expect($pages)->toHaveKeys(['index', 'create', 'edit', 'view']);
 });
 
-it('covers translation helper key normalization', function (): void {
+it('covers translation helper key normalization', function(): void {
     app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
@@ -43,7 +43,7 @@ it('covers translation helper key normalization', function (): void {
     expect(ProbeResource::callGetKeyTrans('title'))->toBe('probe.item_widget.title');
 });
 
-it('covers translation helper edit and widget normalization branches', function (): void {
+it('covers translation helper edit and widget normalization branches', function(): void {
     app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
@@ -63,7 +63,7 @@ it('covers translation helper edit and widget normalization branches', function 
     expect(ProbeResource::callGetKeyTrans('title_widget'))->toBe('probe.title');
 });
 
-it('covers translation helper string path and missing key fallback', function (): void {
+it('covers translation helper string path and missing key fallback', function(): void {
     app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
@@ -77,7 +77,7 @@ it('covers translation helper string path and missing key fallback', function ()
         ->and(ProbeResource::trans('missing'))->toBe('probe.messages.missing');
 });
 
-it('covers translation helper array and fix fallback branches', function (): void {
+it('covers translation helper array and fix fallback branches', function(): void {
     app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
@@ -94,7 +94,7 @@ it('covers translation helper array and fix fallback branches', function (): voi
         ->and(ProbeResource::trans('nonscalar'))->toBe('fix:probe.arr.nonscalar');
 });
 
-it('covers translation helper exception branch', function (): void {
+it('covers translation helper exception branch', function(): void {
     app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
@@ -105,7 +105,7 @@ it('covers translation helper exception branch', function (): void {
     ProbeResource::trans('missing', true);
 })->throws(\Exception::class);
 
-it('covers navigation badge success and fallback', function (): void {
+it('covers navigation badge success and fallback', function(): void {
     app()->instance(CountAction::class, new class {
         public function execute(string $class): int
         {
@@ -125,7 +125,7 @@ it('covers navigation badge success and fallback', function (): void {
     expect(ProbeResource::getNavigationBadge())->toBe('--');
 });
 
-it('covers get attachments schema branches', function (): void {
+it('covers get attachments schema branches', function(): void {
     $resourceNoAttachments = new class extends XotBaseResource {
         protected static ?string $model = Probe::class;
 
@@ -179,7 +179,7 @@ it('covers get attachments schema branches', function (): void {
     expect($resourceGoodAttachments::getAttachmentsSchema())->toBe(['schema']);
 });
 
-it('covers wizard submit action success and failure paths', function (): void {
+it('covers wizard submit action success and failure paths', function(): void {
     expect(fn () => ProbeResource::getWizardSubmitAction())->toThrow(\Exception::class);
 
     $tmpViewDir = sys_get_temp_dir().'/xot-resource-view-'.uniqid('', true);
@@ -194,12 +194,12 @@ it('covers wizard submit action success and failure paths', function (): void {
         ->and($html->toHtml())->toContain('submit');
 });
 
-it('covers step builder branches', function (): void {
+it('covers step builder branches', function(): void {
     expect(ProbeResource::callGetStepByName('custom_step'))->toBeInstanceOf(Step::class)
         ->and(ProbeResource::callGetStepByName('missing_step'))->toBeInstanceOf(Step::class);
 });
 
-it('covers simple base helpers', function (): void {
+it('covers simple base helpers', function(): void {
     $resource = new ProbeResource();
 
     expect(ProbeResource::getModuleName())->toStartWith('Xot')

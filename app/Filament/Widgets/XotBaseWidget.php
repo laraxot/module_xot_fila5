@@ -8,8 +8,6 @@ use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
@@ -142,7 +140,11 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $attributes = $model->attributesToArray();
 
         $fields = array_merge($fillable, $appends);
-        $fields = array_fill_keys(array_map(static fn (mixed $f): string => (string) $f, $fields), null);
+        $fields = array_values(array_filter(
+            $fields,
+            static fn (mixed $field): bool => is_string($field) || is_int($field),
+        ));
+        $fields = array_fill_keys($fields, null);
         $fields = array_merge($fields, $attributes);
         if (method_exists($model, 'getDataDefaults')) {
             /** @var array<string, mixed> $defaults */
@@ -197,6 +199,17 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
+     * Azioni form opzionali per viste che chiamano `$this->getFormActions()` (es. layout custom, footer azioni).
+     * I widget che non le usano restano con array vuoto.
+     *
+     * @return array<int|string, Action>
+     */
+    protected function getFormActions(): array
+    {
+        return [];
+    }
+
+    /**
      * Ottiene il modello per il form.
      * Può essere sovrascritto nelle classi figlie per fornire un modello specifico.
      */
@@ -223,8 +236,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     private function resolveView(): void
     {
         $defaultView = 'xot::filament.widgets.base';
+        $hadCustomViewRequested = $this->view !== $defaultView;
 
-        if ($this->view !== $defaultView && view()->exists($this->view)) {
+        if ($hadCustomViewRequested && view()->exists($this->view)) {
             return;
         }
 
@@ -233,8 +247,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
             if (view()->exists($view)) {
                 $this->view = $view;
             }
-        } catch (Exception $e) {
-            if (! view()->exists($this->view)) {
+        } catch (\Exception $e) {
+            if (! $hadCustomViewRequested) {
                 throw $e;
             }
         }

@@ -5,19 +5,47 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Table;
-use Modules\Xot\Filament\Traits\HasXotTable;
 
-abstract class XotBaseResourceTable
+class XotBaseResourceTable
 {
-    use HasXotTable;
-
-    public function configure(Table $table): Table
+    public static function configure(Table $table): Table
     {
-        return $this->table($table);
+        return $table
+            ->columns(static::getTableColumns())
+            ->filters(static::getTableFilters())
+            ->recordActions(static::getTableActions())
+            ->toolbarActions(static::getTableBulkActions());
     }
 
     /**
      * @return array<int|string, \Filament\Tables\Columns\Column>
      */
-    abstract public function getTableColumns(): array;
+    public static function getTableColumns(): array
+    {
+        return [];
+    }
+
+    /**
+     * @return array<int|string, \Filament\Tables\Filters\BaseFilter>
+     */
+    public static function getTableFilters(): array
+    {
+        return [];
+    }
+
+    /**
+     * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     */
+    public static function getTableActions(): array
+    {
+        return [];
+    }
+
+    /**
+     * @return array<int|string, \Filament\Actions\BulkAction|\Filament\Actions\BulkActionGroup>
+     */
+    public static function getTableBulkActions(): array
+    {
+        return [];
+    }
 }

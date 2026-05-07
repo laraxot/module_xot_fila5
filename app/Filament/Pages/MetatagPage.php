@@ -32,9 +32,10 @@ class MetatagPage extends XotBasePage
 
     public function mount(): void
     {
-        Assert::isArray($data = config('metatag'));
-
         /** @var array<string, mixed> $data */
+        $data = config('metatag');
+        Assert::isArray($data);
+
         $this->form->fill($data);
     }
 

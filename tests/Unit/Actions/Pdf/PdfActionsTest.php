@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Pdf\PdfByHtmlAction;
 use Modules\Xot\Actions\Pdf\PdfEngineEnum;
 
-it('executes pdf by html action correctly', function (): void {
+it('executes pdf by html action correctly', function(): void {
     // PDF Engines often require external binaries or heavy libraries
     // We try to test with a simple engine if possible, or just the logic flow
 

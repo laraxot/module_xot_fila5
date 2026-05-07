@@ -10,8 +10,6 @@ use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
-use Filament\Support\Components\Component;
-use Filament\Support\Facades\FilamentColor;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -154,12 +152,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-            if ('php' !== $file->getExtension()) {
+            if ($file->getExtension() !== 'php') {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-            if (false === $realPath) {
+            if ($realPath === false) {
                 continue;
             }
 
@@ -184,7 +182,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
         foreach ($components as $component) {
-            $component::configureUsing(function (Component $translatable): void {
+            $component::configureUsing(function (object $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {
                     $translatable->translateLabel();
                 }
@@ -246,7 +244,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     private function registerEvents(): void
     {
-        Event::listen(MigrationsEnded::class, static function (): void {
+        Event::listen(MigrationsEnded::class, static function(): void {
             // Artisan::call('ide-helper:models -r -W');
         });
     }

@@ -99,18 +99,18 @@ class FilterBuilder
                 DatePicker::make('until')
                     ->label('Until'),
             ])
-            ->query(function (Builder $query, array $data) use ($column): Builder {
+            ->query(static function (Builder $query, array $data) use ($column): Builder {
                 return $query
                     ->when(
                         $data['from'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
+                        static fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', \is_string($date) ? $date : (string) $date),
                     )
                     ->when(
                         $data['until'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
+                        static fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', \is_string($date) ? $date : (string) $date),
                     );
             })
-            ->indicateUsing(function (array $data) use ($label): ?string {
+            ->indicateUsing(static function (array $data) use ($label): ?string {
                 $from = $data['from'] ?? null;
                 $until = $data['until'] ?? null;
 
@@ -119,20 +119,20 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
-                    $fromStr = is_string($from) ? $from : (string) $from;
-                    $untilStr = is_string($until) ? $until : (string) $until;
+                    $fromStr = \is_string($from) ? $from : (string) $from;
+                    $untilStr = \is_string($until) ? $until : (string) $until;
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
-                    $fromStr = is_string($from) ? $from : (string) $from;
+                    $fromStr = \is_string($from) ? $from : (string) $from;
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
-                    $untilStr = is_string($until) ? $until : (string) $until;
+                    $untilStr = \is_string($until) ? $until : (string) $until;
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -262,6 +262,9 @@ class FilterBuilder
 
     /**
      * Trashed filter (for SoftDeletes).
+     *
+     * Note: This filter assumes the model uses SoftDeletes trait.
+     * PHPStan may not recognize withTrashed/onlyTrashed methods on base Builder.
      */
     public static function trashedFilter(): TernaryFilter
     {
@@ -271,9 +274,9 @@ class FilterBuilder
             ->trueLabel('Only trashed')
             ->falseLabel('Without trashed')
             ->queries(
-                true: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'only'),
-                false: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'without'),
-                blank: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'with'),
+                true: static fn (Builder $query) => $query->onlyTrashed(), // @phpstan-ignore method.notFound
+                false: static fn (Builder $query) => $query->withoutTrashed(), // @phpstan-ignore method.notFound
+                blank: static fn (Builder $query) => $query->withTrashed(), // @phpstan-ignore method.notFound
             );
     }
 

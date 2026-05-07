@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\String;
 
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 
-it('extracts string between markers correctly', function (): void {
+it('extracts string between markers correctly', function(): void {
     $action = app(GetStrBetweenStartsWithAction::class);
 
     $body = 'prefix { content { inner } } suffix';
@@ -15,7 +15,7 @@ it('extracts string between markers correctly', function (): void {
     expect($result)->toBe('content { inner }');
 });
 
-it('throws exception when start marker is missing', function (): void {
+it('throws exception when start marker is missing', function(): void {
     $action = app(GetStrBetweenStartsWithAction::class);
     expect(fn () => $action->execute('body', 'missing', '{', '}'))->toThrow(\Exception::class);
 });

@@ -60,7 +60,7 @@ class GetPdfContentByRecordAction
         }
 
         // Generate filename if not provided
-        if (null === $filename) {
+        if ($filename === null) {
             $filename = $this->generateFilename($record);
         }
 

@@ -15,11 +15,9 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
-
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
-
 use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
@@ -82,19 +80,19 @@ if (! function_exists('hex2rgba')) {
             return $default;
         }
 
-        if ('#' === $color[0]) {
+        if ($color[0] === '#') {
             $color = mb_substr($color, 1);
         }
-        if (6 === mb_strlen($color)) {
+        if (mb_strlen($color) === 6) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
-        } elseif (3 === mb_strlen($color)) {
+        } elseif (mb_strlen($color) === 3) {
             $hex = [$color[0].$color[0], $color[1].$color[1], $color[2].$color[2]];
         } else {
             return $default;
         }
 
         $rgb = array_map('hexdec', $hex);
-        if (-1.0 !== $opacity) {
+        if ($opacity !== -1.0) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
@@ -165,13 +163,13 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-        if ('admin' === Request::segment(2)) {
+        if (Request::segment(2) === 'admin') {
             return true;
         }
 
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
     }
 }
 
@@ -242,7 +240,7 @@ if (! function_exists('params2ContainerItem')) {
      */
     function params2ContainerItem(?array $params = null): array
     {
-        if (null === $params) {
+        if ($params === null) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -295,7 +293,7 @@ if (! function_exists('getModelByName')) {
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (! is_string($path)) {
+        if (! is_string($path) || $path === '') {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
@@ -378,7 +376,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return null === $id ? null : (string) $id;
+            return $id === null ? null : (string) $id;
         } catch (Throwable $e) {
             return null;
         }
@@ -394,7 +392,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
+            $safeReplace[$k] = is_scalar($v) || $v === null ? $v : (string) $v;
         }
 
         $result = __($key, $safeReplace, $locale);

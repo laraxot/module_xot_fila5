@@ -52,7 +52,7 @@ class AddStrictTypesDeclarationCommand extends Command
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
-                    if (false === $fileName) {
+                    if ($fileName === false) {
                         $fileName = $file->getPathname();
                     }
                     $this->info("Verrebbe processato: {$fileName}");
@@ -62,7 +62,7 @@ class AddStrictTypesDeclarationCommand extends Command
                 }
 
                 $path = $file->getRealPath();
-                if (false === $path) {
+                if ($path === false) {
                     continue;
                 }
 
@@ -101,7 +101,7 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         $path = $file->getRealPath();
-        if (false === $path) {
+        if ($path === false) {
             return false;
         }
 

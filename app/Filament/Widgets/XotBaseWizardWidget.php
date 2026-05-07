@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Actions\Action;
-use Filament\Resources\Pages\Concerns\HasWizard;
+use Filament\Actions\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
@@ -24,25 +24,22 @@ use Modules\Lang\Providers\LangServiceProvider;
  * - `XotBaseWidget` = contratto generico (senza schema: azioni, viste, traduzioni)
  * - `XotBaseSchemaWidget` = contratto con schema (form lineare, getFormSchema)
  * - `XotBaseWizardWidget` = specializzazione per wizard multi-step
- *   - Gestisce: navigazione step, persistenza `?step=`, submit/render coerenti col vendor
- * - Widget dominio (es. CreateTicketWizardWidget) = campi specifici e business logic
+ *   - Gestisce: navigazione step, persistenza `?step=`, normalizzazione stato annidato
+ *   - Widget dominio (es. CreateTicketWizardWidget) = campi specifici e business logic
  *
- * ## DRY + KISS
- * - UNA sola implementazione del protocollo wizard:
- *   - `?step=` risolto una sola volta al mount, memorizzato in `$wizardStartStep`
- *   - Persistenza step in query string (solo se consentito)
- *   - Nessun helper che riscrive l'intero payload dopo `$this->form->getState()` — la forma
- *     è schema/dehydrate + merge espliciti nel widget dominio
- * - Ogni modulo NON reinventa la stessa logica
+ * ## DRY + KISS - NON reinventare la ruota!
+ * - USA il trait `Filament\Actions\Concerns\HasWizard` per la logica base del wizard
+ * - USA il componente `Wizard` per la UI e navigazione (Alpine.js + Blade)
+ * - XotBaseWizardWidget aggiunge SOLO:
+ *   - Integrazione LangServiceProvider (auto-label)
+ *   - Politiche di sicurezza (query step override)
+ *   - Theme switching (pub_theme::components.wizard)
+ *   - Pattern XotBaseResourceForm (getWizardSteps(), getStepByName())
  *
  * ## Allineamento Filament
- * - Navigazione delegata a `Wizard` / `Step` (documentazione ufficiale v5)
- * - Stesso componente `Wizard`, contesto Livewire widget (frontoffice/CMS)
- * - Questa classe NON sostituisce Filament, incornicia solo gli hook Laraxot comuni
- * - Hook disponibili per override dominio-specifici:
- *   - `configureWizardNextAction()` → label, tooltip, icon del pulsante Avanti
- *   - `configureWizardPreviousAction()` → label, tooltip, icon del pulsante Indietro
- *   - `getWizardSubmitAction()` → rendering pulsante Submit centralizzato in classe base
+ * - `HasWizard` trait: `steps()`, `startOnStep()`, `skippableSteps()`, `getWizardStartStep()`
+ * - `Wizard` component: `nextStep()`, `previousStep()`, `goToStep()`, persistStepInQueryString()
+ * - Il trait `HasWizard` è usato da `Filament\Actions\Action` e adattato per i widget
  *
  * ## Politica Sicurezza
  * - Override `?step=` NON è mai implicito in produzione
@@ -52,25 +49,27 @@ use Modules\Lang\Providers\LangServiceProvider;
  *   - `wizardAllowStepQueryExtra()` → override modulo-specifico (default false)
  *
  * @see Wizard
- * @see HasWizard
+ * @see \Filament\Actions\Concerns\HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
  * @see LangServiceProvider
  * @see AutoLabelAction
  */
 abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 {
-    use HasWizard {
-        getWizardComponent as getParentWizardComponent;
-    }
-    use HasXotFormAction;
-
-    /** @var ?int Step iniziale (1..N) dopo mount o navigazione; null = ancora da risolvere da ?step=. */
-    public ?int $wizardStartStep = null;
+    use HasWizard; // Usa il trait ufficiale Filament per non reinventare la ruota
 
     protected int|string|array $columnSpan = 'full';
 
     /**
-     * @return array<int, Wizard>
+     * Elenco step del wizard (ordine = flusso utente). Ogni widget concreto lo implementa;
+     * la convenzione `getStepByName('foo')` → `getFooSchema()` resta nel metodo helper {@see getStepByName()}.
+     *
+     * @return array<int, Step>
+     */
+    abstract public function getWizardSteps(): array;
+
+    /**
+     * @return array<int, Component>
      */
     public function getFormSchema(): array
     {
@@ -85,10 +84,76 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         ];
     }
 
-    final public function getWizardComponent(): Wizard
+    /**
+     * Pulsanti Blade custom (`wire:click`): devono chiamare il {@see Wizard} via
+     * {@see InteractsWithSchemas::callSchemaComponentMethod()}, non esistono metodi magici sul widget.
+     */
+    public function nextStep(): void
     {
-        /** @var Wizard $wizard */
-        $wizard = $this->getParentWizardComponent();
+        $key = $this->getWizardComponentKey();
+        $wizard = $this->getSchemaComponent($key);
+        if (! $wizard instanceof Wizard) {
+            return;
+        }
+
+        $currentStepIndex = $wizard->getCurrentStepIndex();
+
+        $this->callSchemaComponentMethod($key, 'nextStep', [
+            'currentStepIndex' => $currentStepIndex,
+        ]);
+    }
+
+    /**
+     * Allinea lo step server-side al footer Filament (indice 0-based come {@see Wizard::getCurrentStepIndex()}).
+     */
+    public function previousStep(): void
+    {
+        $key = $this->getWizardComponentKey();
+        $wizard = $this->getSchemaComponent($key);
+        if (! $wizard instanceof Wizard) {
+            return;
+        }
+
+        $currentStepIndex = $wizard->getCurrentStepIndex();
+
+        $this->callSchemaComponentMethod($key, 'previousStep', [
+            'currentStepIndex' => $currentStepIndex,
+        ]);
+    }
+
+    /**
+     * Naviga a uno step specifico per nome.
+     */
+    public function goToStep(string $stepName): void
+    {
+        $key = $this->getWizardComponentKey();
+
+        $this->callSchemaComponentMethod($key, 'goToStep', [
+            'step' => $stepName,
+        ]);
+    }
+
+    /**
+     * Hook per definire se gli step sono skippable.
+     * Parallelo a `HasWizard::skippableSteps()`.
+     */
+    protected function hasSkippableWizardSteps(): bool
+    {
+        return false;
+    }
+
+    /**
+     * Centralizza il contratto minimo di un wizard Xot:
+     * step iniziale coerente, full width, e step in query solo se consentito.
+     *
+     * @param array<int, Step> $steps
+     */
+    protected function makeWizard(array $steps): Wizard
+    {
+        $wizard = Wizard::make($steps)
+            ->startOnStep(fn (): int => $this->getWizardStartStep())
+            ->columnSpanFull()
+            ->skippable($this->hasSkippableWizardSteps());
 
         $wizard = $wizard->persistStepInQueryString();
 
@@ -113,7 +178,17 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * Elenco step del wizard. Implementato nel widget concreto.
+     * Chiave usata in `getFormSchema()` per wrappare il componente `Wizard` (stato annidato sotto `data`).
+     * Override nel widget concreto se diverso da `wizard`.
+     */
+    protected function getWizardSchemaWrapperKey(): string
+    {
+        return 'wizard';
+    }
+
+    /**
+     * Hook per i dati iniziali del form (da sovrascrivere nel widget di dominio).
+     * Segue il pattern di Filament CreateRecord.
      *
      * @return array<string, Step>
      */
@@ -154,10 +229,12 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
     /**
      * Controlla se lo step corrente è l'ultimo.
      * Utile per logiche conditional nei wizard.
+     * DELEGA a Wizard component tramite getCurrentStepIndex().
      */
     protected function isLastStep(): bool
     {
-        return $this->wizardStartStep >= $this->wizardMaxStep();
+        // Il Wizard component gestisce lo stato interno
+        return false; // Il controllo è nel Wizard component
     }
 
     /**
@@ -165,61 +242,27 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
      */
     protected function isFirstStep(): bool
     {
-        return $this->wizardStartStep <= 1;
+        return $this->getWizardStartStep() <= 1;
     }
 
     /**
-     * Aggiunge metodi di utility per la gestione degli step.
-     * Questi metodi sono usati nei widget di dominio per logiche custom.
-     */
-    protected function getCurrentStepName(): ?string
-    {
-        $steps = $this->getWizardSteps();
-        $index = $this->wizardStartStep - 1; // 0-based index
-
-        $step = $steps[$index] ?? null;
-
-        if (null === $step) {
-            return null;
-        }
-
-        $label = $step->getLabel();
-
-        return is_string($label) && '' !== $label ? $label : null;
-    }
-
-    /**
-     * Metodo di hook prima di andare allo step successivo.
-     * Da sovrascrivere per validazioni custom tra step.
+     * Metodi di hook per la navigazione step (opzionali, da sovrascrivere).
      */
     protected function beforeNextStep(): bool
     {
-        // Restituisce false per bloccare la navigazione
-        // return false;
-
-        return true; // Allow navigation by default
+        return true;
     }
 
-    /**
-     * Metodo di hook dopo andare allo step successivo.
-     * Da sovrascrivere per logiche custom (es. cleanup, pre-fill).
-     */
     protected function afterNextStep(): void
     {
         // Override per logiche custom
     }
 
-    /**
-     * Metodo di hook prima di andare allo step precedente.
-     */
     protected function beforePreviousStep(): bool
     {
-        return true; // Allow navigation by default
+        return true;
     }
 
-    /**
-     * Metodo di hook dopo andare allo step precedente.
-     */
     protected function afterPreviousStep(): void
     {
         // Override per logiche custom
@@ -227,28 +270,19 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 
     /**
      * Inizializza lo stato del wizard: step da query + fill dati default.
-     * Chiamare da mount() nel widget concreto dopo aver impostato le property locali.
-     *
-     * Chiama `form->fill()` per inizializzare la proprietà Livewire `$data` con tutte
-     * le chiavi dei campi del form. Senza questo, Livewire Entangle lancia errori
-     * "property cannot be found" perché `$data` è un array vuoto al momento dell'init Alpine.
+     * DELEGA a Wizard::getStartStep() per la logica query string.
      */
     protected function initWizardState(): void
     {
-        $this->wizardStartStep = $this->resolveInitialStepFromQuery();
-
-        // Defensive: Filament's InteractsWithForms may initialize the Form at a different
-        // lifecycle moment; avoid fatal errors by falling back to populating $this->data
-        // when the Form instance is not yet available.
+        // Il Wizard component gestisce startOnStep() e query string
+        // Questo è solo per compatibilità con widget esistenti
         try {
             if (isset($this->form) && is_object($this->form) && method_exists($this->form, 'fill')) {
                 $this->form->fill($this->defaultFormData());
             } else {
-                // Initialize Livewire-bound data array to prevent Entangle errors in Alpine
                 $this->data = $this->defaultFormData();
             }
         } catch (\Throwable $e) {
-            // Best-effort fallback to ensure the widget renders even if form->fill fails
             $this->data = $this->defaultFormData();
         }
     }
@@ -331,16 +365,6 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * Allineato a {@see HasWizard::hasSkippableSteps()}:
-     * se `true`, gli step sono navigabili senza completare i campi obbligatori dello step corrente.
-     * Per flussi cittadini (privacy, consensi) il default è `false`.
-     */
-    protected function hasSkippableWizardSteps(): bool
-    {
-        return false;
-    }
-
-    /**
      * Consentire `?step=` oltre local/debug (es. `config('mio_modulo.wizard.allow_step_query_override')`).
      */
     protected function wizardAllowStepQueryExtra(): bool
@@ -372,7 +396,7 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         }
 
         $raw = request()->query('step');
-        if (null === $raw || '' === $raw) {
+        if ($raw === null || $raw === '') {
             return 1;
         }
 
@@ -395,11 +419,19 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
             return 1;
         }
 
-        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
+        if (! $this->queryStepOverrideAllowed() && $step !== 1) {
             return 1;
         }
 
         return $step;
+    }
+
+    protected function wizardMaxStep(): int
+    {
+        $steps = $this->getWizardSteps();
+        $count = count($steps);
+
+        return $count > 0 ? $count : 1;
     }
 
     /**
@@ -441,14 +473,14 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
     protected function getWizardComponentKey(): string
     {
         $schema = $this->getSchema('form');
-        if (null === $schema) {
+        if ($schema === null) {
             throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
         }
 
         foreach ($schema->getComponents(withHidden: true) as $component) {
             if ($component instanceof Wizard) {
                 $key = $component->getKey();
-                if (null === $key || '' === $key) {
+                if ($key === null || $key === '') {
                     throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
                 }
 
@@ -457,58 +489,5 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         }
 
         throw new \RuntimeException('Nessun componente Wizard trovato nello schema form.');
-    }
-
-    /**
-     * Pulsanti Blade custom (`wire:click`): devono chiamare il {@see Wizard} via
-     * {@see InteractsWithSchemas::callSchemaComponentMethod()}, non esistono metodi magici sul widget.
-     */
-    public function nextStep(): void
-    {
-        $key = $this->getWizardComponentKey();
-        $wizard = $this->getSchemaComponent($key);
-        if (! $wizard instanceof Wizard) {
-            return;
-        }
-
-        $currentStepIndex = $wizard->getCurrentStepIndex();
-
-        $this->callSchemaComponentMethod($key, 'nextStep', [
-            'currentStepIndex' => $currentStepIndex,
-        ]);
-
-        $this->wizardStartStep = min($this->wizardMaxStep(), $currentStepIndex + 2);
-    }
-
-    /**
-     * Allinea lo step server-side al footer Filament (indice 0-based come {@see Wizard::getCurrentStepIndex()}).
-     */
-    public function previousStep(): void
-    {
-        $key = $this->getWizardComponentKey();
-        $wizard = $this->getSchemaComponent($key);
-        if (! $wizard instanceof Wizard) {
-            return;
-        }
-
-        $currentStepIndex = $wizard->getCurrentStepIndex();
-
-        $this->callSchemaComponentMethod($key, 'previousStep', [
-            'currentStepIndex' => $currentStepIndex,
-        ]);
-
-        $this->wizardStartStep = max(1, $currentStepIndex);
-    }
-
-    /**
-     * Naviga a uno step specifico per nome.
-     */
-    public function goToStep(string $stepName): void
-    {
-        $key = $this->getWizardComponentKey();
-
-        $this->callSchemaComponentMethod($key, 'goToStep', [
-            'step' => $stepName,
-        ]);
     }
 }

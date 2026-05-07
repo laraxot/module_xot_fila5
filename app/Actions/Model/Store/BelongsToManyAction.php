@@ -31,7 +31,14 @@ class BelongsToManyAction
             Assert::isArray($to = $relationDTO->data['to'] ?? []);
             $to = array_map(static fn (mixed $id): string => (string) $id, $to);
             $rows->sync($to);
-            $status = 'collegati ['.implode(', ', $to).'] ';
+            $toLabels = array_values(array_filter(
+                $to,
+                static fn (mixed $item): bool => is_scalar($item),
+            ));
+            $status = 'collegati ['.implode(', ', array_map(
+                static fn (int|float|string|bool $item): string => (string) $item,
+                $toLabels,
+            )).'] ';
             Session::flash('status', $status);
 
             return;

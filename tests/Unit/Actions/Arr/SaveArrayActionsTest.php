@@ -9,7 +9,7 @@ use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 
-it('saves array as php file', function (): void {
+it('saves array as php file', function(): void {
     $data = ['foo' => 'bar', 'baz' => 123];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_').'.php';
 
@@ -25,7 +25,7 @@ it('saves array as php file', function (): void {
     File::delete($filename);
 });
 
-it('saves array as json file', function (): void {
+it('saves array as json file', function(): void {
     $data = ['foo' => 'bar', 'baz' => 123];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_').'.json';
 
@@ -41,7 +41,7 @@ it('saves array as json file', function (): void {
     File::delete($filename);
 });
 
-it('saves array via SaveArrayAction dispatcher', function (): void {
+it('saves array via SaveArrayAction dispatcher', function(): void {
     $data = ['foo' => 'bar'];
     $filenamePhp = tempnam(sys_get_temp_dir(), 'test_save_dispatch_').'.php';
     $filenameJson = tempnam(sys_get_temp_dir(), 'test_save_dispatch_').'.json';

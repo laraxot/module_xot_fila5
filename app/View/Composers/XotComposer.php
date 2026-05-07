@@ -26,7 +26,7 @@ class XotComposer
     /**
      * Undocumented function.
      *
-     * @param array<mixed|void> $arguments
+     * @param  array<mixed|void>  $arguments
      */
     public function __call(string $name, array $arguments): mixed
     {
@@ -68,7 +68,7 @@ class XotComposer
         $view->with('_theme', $this);
 
         if (class_exists('\Jenssegers\Agent\Agent')) {
-            $agent = new Agent();
+            $agent = new Agent;
             $view->with('isMobile', $agent->isMobile());
             $view->with('isTablet', $agent->isTablet());
             $view->with('isDesktop', $agent->isDesktop());
@@ -98,13 +98,19 @@ class XotComposer
         $metatag = MetatagData::make();
         $fun = 'get'.Str::studly($str);
         if (method_exists($metatag, $fun)) {
-            $value = $metatag->{$fun}();
+            $resolved = $metatag->{$fun}();
+            if (is_string($resolved) || is_bool($resolved) || $resolved === null) {
+                return $resolved;
+            }
 
-            return is_string($value) || is_bool($value) ? $value : null;
+            return null;
         }
 
-        $value = $metatag->{$str} ?? null;
+        $raw = $metatag->{$str};
+        if (is_string($raw) || is_bool($raw) || $raw === null) {
+            return $raw;
+        }
 
-        return is_string($value) || is_bool($value) ? $value : null;
+        return null;
     }
 }

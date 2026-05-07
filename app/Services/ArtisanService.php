@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
-use Exception;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
@@ -14,11 +13,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
-
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
-
 use Webmozart\Assert\Assert;
 
 if (! defined('STDIN')) {
@@ -45,11 +42,9 @@ class ArtisanService
         }
         switch ($act) {
             case 'migrate':
-                $defaultConn = Config::get('database.default');
-                $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
-                DB::purge($purgeConn);
-                DB::reconnect($purgeConn);
-                if ('' !== $module_name) {
+                DB::purge('mysql');
+                DB::reconnect('mysql');
+                if ($module_name !== '') {
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     return self::exe('module:migrate '.$module_name.' --force');
@@ -142,7 +137,7 @@ class ArtisanService
             $log = '';
         }
         $content = '';
-        if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -155,7 +150,7 @@ class ArtisanService
         /** @var array<int, string> $urls */
         $urls = [];
         $urlsRaw = $matches[1];
-        if ([] !== $urlsRaw) {
+        if ($urlsRaw !== []) {
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -214,7 +209,7 @@ class ArtisanService
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
                 // Parameter #1 $paths of static method Illuminate\Filesystem\Filesystem::delete() expects array|string, Symfony\Component\Finder\SplFileInfo given.
                 echo '<br/>'.$file->getRealPath();
 
@@ -230,7 +225,7 @@ class ArtisanService
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -246,7 +241,7 @@ class ArtisanService
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
-            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
                 // echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());

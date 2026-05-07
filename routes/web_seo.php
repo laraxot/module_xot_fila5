@@ -12,6 +12,6 @@ $middleware = [
 
 Route::middleware($middleware)
     ->namespace($namespace)
-    ->group(static function (): void {
+    ->group(static function(): void {
         Route::get('/sitemap.xml', 'SitemapXmlController')->name('sitemap_xml');
     });

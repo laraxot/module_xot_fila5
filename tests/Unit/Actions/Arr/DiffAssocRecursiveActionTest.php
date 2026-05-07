@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 
-it('calculates recursive diff correctly', function (): void {
+it('calculates recursive diff correctly', function(): void {
     $arr1 = [
         'a' => ['id' => 1, 'name' => 'Test'],
         'b' => ['id' => 2, 'name' => 'Test 2'],
@@ -23,7 +23,7 @@ it('calculates recursive diff correctly', function (): void {
         ->and($result['b'])->toBe(['id' => 2, 'name' => 'Test 2']);
 });
 
-it('handles numeric strings in diff', function (): void {
+it('handles numeric strings in diff', function(): void {
     $arr1 = [
         'a' => ['id' => '1', 'name' => 'Test'],
     ];
@@ -38,7 +38,7 @@ it('handles numeric strings in diff', function (): void {
     expect($result)->toBeEmpty();
 });
 
-it('throws exception for non-array items in fixType', function (): void {
+it('throws exception for non-array items in fixType', function(): void {
     $data = ['a' => 'not-an-array'];
 
     expect(fn () => DiffAssocRecursiveAction::fixType($data))->toThrow(\Exception::class);

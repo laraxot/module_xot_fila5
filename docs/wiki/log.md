@@ -31,6 +31,39 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-05-05] fix | PHPStan Error Resolution - spatie/browsershot (PACKAGE INSTALLATION)
+
+- **Problem**: PHPStan riportava `Class Spatie\Browsershot\Browsershot not found`
+- **Analysis**: Il codice che usa Browsershot è attivamente usato in produzione:
+  - `MakePdfSpatieTestAction` - Generazione PDF
+  - `ExportChartPngQueueableAction` - Export chart PNG
+  - `ExportChartSvgQueueableAction` - Export chart SVG
+  - Test: `MakePdfSpatieTestActionTest`
+- **Fix**: Aggiunto `"spatie/browsershot": "^5.0"` a `Modules/Xot/composer.json`
+- **Command**: `composer update spatie/browsershot`
+- **Philosophy**: Se il codice è usato → installa la dipendenza; se è dead code → rimuovi
+- **Status**: ⏳ Installing
+- **Story**: 8-121
+
+## [2026-05-05] fix | PHPStan Error Resolution - spatie/laravel-model-states (DEAD CODE REMOVAL)
+
+- **Problem**: PHPStan riportava `Class Spatie\ModelStates\State not found` in `XotBaseState` e `XotBaseTransition`
+- **Analysis**: Nessuna classe nel codebase estende `XotBaseState` o `XotBaseTransition` - codice orfano
+- **Attempted Fix #1**: Aggiungere `spatie/laravel-model-states` al composer.json
+- **Issue**: Conflitto di dipendenze con PHP 8.3 e illuminate/contracts
+- **Final Fix**: RIMOZIONE dead code (YAGNI principle - You Ain't Gonna Need It)
+- **Files Removed**:
+  - `Modules/Xot/app/States/XotBaseState.php`
+  - `Modules/Xot/app/States/Transitions/XotBaseTransition.php`
+  - `Modules/Xot/tests/Unit/XotBaseTransitionTest.php`
+  - `Modules/Xot/app/States/` directory (vuota)
+- **Philosophy**: 
+  - Zero tolerance per errori ignorati
+  - Se non puoi installare la dipendenza e il codice non è usato → rimuovi il codice
+  - YAGNI: Don't add functionality until you need it
+- **Status**: ✅ Risolto (rimosso ~20 errori PHPStan)
+- **Story**: 8-121
+
 ## [2026-05-04] architecture | XotBaseWizardWidget view calculation rule
 
 - documentata regola architetturale: sottoclassi di `XotBaseWizardWidget` NON devono definire `$view` property

@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 
-it('casts various values to integer correctly', function (): void {
+it('casts various values to integer correctly', function(): void {
     $action = app(SafeIntCastAction::class);
 
     // Integers
@@ -44,7 +44,7 @@ it('casts various values to integer correctly', function (): void {
     expect($action->execute($obj))->toBe(20);
 });
 
-it('clams integer within range correctly', function (): void {
+it('clams integer within range correctly', function(): void {
     $action = app(SafeIntCastAction::class);
 
     expect($action->executeWithRange(50, 0, 100))->toBe(50);
@@ -52,7 +52,7 @@ it('clams integer within range correctly', function (): void {
     expect($action->executeWithRange(150, 0, 100))->toBe(100);
 });
 
-it('casts as id correctly', function (): void {
+it('casts as id correctly', function(): void {
     $action = app(SafeIntCastAction::class);
 
     expect($action->executeAsId(10))->toBe(10);
@@ -60,7 +60,7 @@ it('casts as id correctly', function (): void {
     expect($action->executeAsId(-5))->toBe(1);
 });
 
-it('uses static int cast methods correctly', function (): void {
+it('uses static int cast methods correctly', function(): void {
     expect(SafeIntCastAction::cast('99'))->toBe(99);
     expect(SafeIntCastAction::castWithRange(200, 0, 50))->toBe(50);
     expect(SafeIntCastAction::castAsId(0))->toBe(1);
