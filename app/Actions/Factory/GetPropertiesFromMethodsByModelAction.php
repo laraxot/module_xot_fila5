@@ -21,8 +21,6 @@ use function Safe\preg_replace;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-use function Safe\preg_replace;
-
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
  *
@@ -35,7 +33,8 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le proprietà dai metodi di relazione del modello.
      *
-     * @param  Model  $model  Il modello da analizzare
+     * @param Model $model Il modello da analizzare
+     *
      * @return array<string, string> Dati estratti dalle relazioni
      */
     public function execute(Model $model): array
@@ -117,10 +116,10 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le relazioni belongsTo dal codice.
      *
-     * @param  string  $codeStr  Il codice da analizzare
-     * @param  Model  $model  Il modello
-     * @param  string  $method  Il nome del metodo
-     * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
+     * @param string                $codeStr Il codice da analizzare
+     * @param Model                 $model   Il modello
+     * @param string                $method  Il nome del metodo
+     * @param array<string, string> &$data   L'array in cui salvare i dati estratti
      */
     private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
     {

@@ -12,8 +12,6 @@ use function Safe\scandir;
 
 use Spatie\QueueableAction\QueueableAction;
 
-use function Safe\scandir;
-
 class GetModulePathAction
 {
     use QueueableAction;
@@ -21,7 +19,8 @@ class GetModulePathAction
     /**
      * Ottiene il percorso di un modulo.
      *
-     * @param  string  $moduleName  Il nome del modulo
+     * @param string $moduleName Il nome del modulo
+     *
      * @return string Il percorso completo del modulo
      */
     public function execute(string $moduleName): string

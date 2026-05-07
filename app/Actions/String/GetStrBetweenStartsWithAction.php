@@ -23,7 +23,7 @@ class GetStrBetweenStartsWithAction
             $body1 = mb_substr($body, $pos, $length);
             $open_count = mb_substr_count($body1, $open);
             $close_count = mb_substr_count($body1, $close);
-            $length++;
+            ++$length;
         } while ($open_count !== $close_count);
 
         return $body1;

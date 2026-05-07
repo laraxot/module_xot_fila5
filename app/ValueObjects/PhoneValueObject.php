@@ -13,7 +13,8 @@ readonly class PhoneValueObject
 {
     private function __construct(
         private string $phone,
-    ) {}
+    ) {
+    }
 
     public static function fromString(string $phone): self
     {

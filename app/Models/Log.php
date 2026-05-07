@@ -17,9 +17,9 @@ use Sushi\Sushi;
  *
  * @property string|null $id
  * @property string|null $name
- * @property int|null $size
+ * @property int|null    $size
  *
- * @method static LogFactory factory($count = null, $state = [])
+ * @method static LogFactory          factory($count = null, $state = [])
  * @method static Builder<static>|Log newModelQuery()
  * @method static Builder<static>|Log newQuery()
  * @method static Builder<static>|Log query()
@@ -29,7 +29,7 @@ use Sushi\Sushi;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
- * @property string|null $file_content
+ * @property string|null          $file_content
  * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent

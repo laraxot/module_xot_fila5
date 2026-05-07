@@ -17,8 +17,6 @@ use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
 
-use function Safe\file;
-
 class GenerateFormByFileAction
 {
     use QueueableAction;

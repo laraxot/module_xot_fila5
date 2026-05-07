@@ -12,8 +12,6 @@ use function Safe\preg_replace;
 
 use Webmozart\Assert\Assert;
 
-use function Safe\preg_replace;
-
 /**
  * Class RouteDynService.
  */
@@ -22,7 +20,8 @@ class RouteDynService
     private static string $namespace_start = '';
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
+     *
      * @return array<string, mixed>
      */
     public static function getGroupOpts(array $v, ?string $namespace): array
@@ -35,7 +34,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getPrefix(array $v, ?string $namespace): string
     {
@@ -54,7 +53,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getAs(array $v, ?string $_namespace): string
     {
@@ -79,7 +78,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -97,7 +96,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getAct(array $v, ?string $_namespace): string
     {
@@ -126,7 +125,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getParamName(array $v, ?string $_namespace): string
     {
@@ -142,7 +141,8 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
+     *
      * @return array<int, string>
      */
     public static function getParamsName(array $v, ?string $namespace): array
@@ -153,7 +153,8 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
+     *
      * @return array<string, mixed>
      */
     public static function getResourceOpts(array $v, ?string $namespace): array
@@ -181,7 +182,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getController(array $v, ?string $_namespace): string
     {
@@ -198,7 +199,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getUri(array $v, ?string $_namespace): string
     {
@@ -206,7 +207,8 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
+     *
      * @return array<int, string>
      */
     public static function getMethod(array $v, ?string $_namespace): array
@@ -225,7 +227,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function getUses(array $v, ?string $namespace): string
     {
@@ -236,7 +238,8 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
+     *
      * @return array<string, mixed>
      */
     public static function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -254,7 +257,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<int, array<string, mixed>>  $array
+     * @param array<int, array<string, mixed>> $array
      */
     public static function dynamic_route(
         array $array,
@@ -283,7 +286,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
@@ -298,7 +301,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -318,7 +321,7 @@ class RouteDynService
     }
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     public static function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -364,7 +367,7 @@ class RouteDynService
     // private static ?string $curr = null;
 
     /**
-     * @param  array<string, mixed>  $v
+     * @param array<string, mixed> $v
      */
     private static function requireStringValue(array $v, string $key): string
     {

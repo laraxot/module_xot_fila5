@@ -52,7 +52,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     /**
      * @template TModel of Model
      *
-     * @param  TModel  $model
+     * @param TModel $model
+     *
      * @return class-string<TModel>
      */
     private function eloquentClassString(Model $model): string

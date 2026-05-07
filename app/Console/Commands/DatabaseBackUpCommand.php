@@ -16,8 +16,6 @@ use function Safe\exec;
 
 use Webmozart\Assert\Assert;
 
-use function Safe\exec;
-
 class DatabaseBackUpCommand extends Command
 {
     /**

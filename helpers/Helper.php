@@ -236,7 +236,8 @@ if (! function_exists('isItem')) {
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @param  array<string, mixed>|null  $params
+     * @param array<string, mixed>|null $params
+     *
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array

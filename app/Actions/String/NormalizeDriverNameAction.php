@@ -8,8 +8,6 @@ use function Safe\preg_replace;
 
 use Webmozart\Assert\Assert;
 
-use function Safe\preg_replace;
-
 /**
  * Action per normalizzare i nomi dei driver.
  *

@@ -8,8 +8,6 @@ use function Safe\file_put_contents;
 
 use Spatie\QueueableAction\QueueableAction;
 
-use function Safe\file_put_contents;
-
 class SavePhpArrayAction
 {
     use QueueableAction;

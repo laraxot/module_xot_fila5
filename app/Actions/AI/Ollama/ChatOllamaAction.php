@@ -13,8 +13,6 @@ use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
 
-use function Safe\json_decode;
-
 class ChatOllamaAction
 {
     use QueueableAction;
@@ -45,6 +43,7 @@ class ChatOllamaAction
      *     think?: string,
      *     options?: array<string, float|int>
      * } $options
+     *
      * @return array{
      *     content: string,
      *     thinking: string|null,

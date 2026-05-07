@@ -13,9 +13,6 @@ use function Safe\preg_match;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
-use function Safe\json_encode;
-use function Safe\preg_match;
-
 /**
  * Middleware di sicurezza avanzato.
  *

@@ -160,7 +160,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param  array<int, Step>  $steps
+     * @param array<int, Step> $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
@@ -216,7 +216,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Prepara i dati prima della creazione/aggiornamento.
      * Pattern ufficiale di Filament: mutateFormDataBeforeCreate/Update.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
+     *
      * @return array<string, mixed>
      */
     protected function prepareWizardFormData(array $data): array
@@ -439,7 +440,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Appiattisce lo stato restituito da `getState()` se il `Wizard` e sotto la chiave wrapper.
      *
-     * @param  array<string, mixed>  $state
+     * @param array<string, mixed> $state
+     *
      * @return array<string, mixed>
      */
     protected function normalizeWizardFormState(array $state): array
@@ -453,7 +455,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * @param  array<mixed, mixed>  $row
+     * @param array<mixed, mixed> $row
+     *
      * @return array<string, mixed>
      */
     protected function stringKeyed(array $row): array

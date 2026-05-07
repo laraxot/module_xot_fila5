@@ -14,15 +14,13 @@ use function Safe\json_encode;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Webmozart\Assert\Assert;
 
-use function Safe\json_encode;
-
 /**
  * Modules\Xot\Models\HasExtraTrait.
  *
- * @property string $currency
- * @property float $price
- * @property string $price_complete
- * @property int $qty
+ * @property string             $currency
+ * @property float              $price
+ * @property string             $price_complete
+ * @property int                $qty
  * @property ExtraContract|null $extra
  */
 trait HasExtraTrait
@@ -76,7 +74,7 @@ trait HasExtraTrait
     }
 
     /**
-     * @param  int|float|string|array<string, mixed>|bool|null  $value
+     * @param int|float|string|array<string, mixed>|bool|null $value
      */
     public function setExtra(string $name, int|float|string|array|bool|null $value): void
     {

@@ -9,8 +9,6 @@ use function Safe\file;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-use function Safe\file;
-
 class GetMethodBodyAction
 {
     use QueueableAction;

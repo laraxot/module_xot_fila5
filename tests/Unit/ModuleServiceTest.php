@@ -11,7 +11,7 @@ uses(TestCase::class);
 
 describe('ModuleService', function () {
     beforeEach(function () {
-        $this->service = new ModuleService;
+        $this->service = new ModuleService();
     });
 
     it('can be instantiated', function () {

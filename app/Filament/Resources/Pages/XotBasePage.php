@@ -21,9 +21,9 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  * This class provides common functionality for custom pages,
  * following the architectural pattern of never extending Filament classes directly.
  *
- * @property ?string $model
+ * @property ?string              $model
  * @property array<string, mixed> $data
- * @property Schema $form
+ * @property Schema               $form
  */
 abstract class XotBasePage extends FilamentPage implements HasForms
 {

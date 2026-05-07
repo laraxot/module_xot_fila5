@@ -33,7 +33,7 @@ class BelongsToAction
          */
 
         if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
-            $related_id = Arr::first($relationDTO->data);
+            $related_id = $relationDTO->data[0] ?? null;
             if (null === $related_id) {
                 return;
             }

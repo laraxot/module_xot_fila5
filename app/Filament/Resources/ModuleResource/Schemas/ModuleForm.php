@@ -24,6 +24,5 @@ class ModuleForm extends XotBaseResourceForm
             'priority' => TextInput::make('priority'),
             'status' => Toggle::make('status'),
         ];
-
     }
 }

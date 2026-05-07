@@ -85,7 +85,7 @@ abstract class XotBasePage extends Page implements HasForms
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
         if ('' === $moduleName) {
-            throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
+            throw new \LogicException(\sprintf('Cannot extract module name from class %s', static::class));
         }
 
         return $moduleName;
@@ -139,7 +139,7 @@ abstract class XotBasePage extends Page implements HasForms
             ->toString();
 
         if ('' === $modelName) {
-            throw new \LogicException(sprintf('Cannot determine model name from class %s', static::class));
+            throw new \LogicException(\sprintf('Cannot determine model name from class %s', static::class));
         }
 
         $modelNamespace = 'Modules\\'.$moduleName.'\\Models\\'.$modelName;

@@ -13,8 +13,6 @@ use function Safe\preg_match;
 
 use Symfony\Component\Process\Process;
 
-use function Safe\preg_match;
-
 /**
  * Comando per ottimizzare la memory usage di Filament.
  * SuperMucca Memory Optimizer Command 🐄.
@@ -253,7 +251,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
-     * @param  array<string, mixed>  $issues
+     * @param array<string, mixed> $issues
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -295,7 +293,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
-     * @param  array<string, mixed>  $issues
+     * @param array<string, mixed> $issues
      */
     private function displayDetailedIssues(array $issues): void
     {
@@ -314,7 +312,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Applica le ottimizzazioni.
      *
-     * @param  array<string, mixed>  $issues
+     * @param array<string, mixed> $issues
      */
     private function applyOptimizations(array $issues, bool $verbose = false): void
     {

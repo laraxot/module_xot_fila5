@@ -26,6 +26,5 @@ class ExtraForm extends XotBaseResourceForm
                 ->reorderable()
                 ->columnSpanFull(),
         ];
-
     }
 }

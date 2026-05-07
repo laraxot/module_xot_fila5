@@ -18,13 +18,13 @@ use Webmozart\Assert\Assert;
 trait RelationX
 {
     /**
-     * @param  class-string<Model>  $related  Related model class
-     * @param  class-string<Model>|string|null  $_table  Pivot table name
-     * @param  string|null  $foreignPivotKey  Foreign pivot key
-     * @param  string|null  $relatedPivotKey  Related pivot key
-     * @param  string|null  $parentKey  Parent key
-     * @param  string|null  $relatedKey  Related key
-     * @param  string|null  $relation  Relation name
+     * @param class-string<Model>             $related         Related model class
+     * @param class-string<Model>|string|null $_table          Pivot table name
+     * @param string|null                     $foreignPivotKey Foreign pivot key
+     * @param string|null                     $relatedPivotKey Related pivot key
+     * @param string|null                     $parentKey       Parent key
+     * @param string|null                     $relatedKey      Related key
+     * @param string|null                     $relation        Relation name
      */
     public function belongsToManyX(
         string $related,
@@ -77,7 +77,8 @@ trait RelationX
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
      *
-     * @param  class-string<TRelatedModel>  $related
+     * @param class-string<TRelatedModel> $related
+     *
      * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
@@ -133,8 +134,8 @@ trait RelationX
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-     * @param  string  $related  The related model class name
-     * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
+     * @param string                   $related The related model class name
+     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
      */
     public function guessPivot(string $related, ?string $class = null): Pivot
     {

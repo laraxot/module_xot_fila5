@@ -15,9 +15,6 @@ use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-use function Safe\json_decode;
-use function Safe\json_encode;
-
 class GetComponentsAction
 {
     use QueueableAction;

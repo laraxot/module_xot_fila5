@@ -21,6 +21,5 @@ class CacheForm extends XotBaseResourceForm
             'expiration' => TextInput::make('expiration')->required()->numeric(),
             'value' => KeyValue::make('value')->columnSpanFull(),
         ];
-
     }
 }

@@ -18,7 +18,7 @@ use Webmozart\Assert\Assert;
 class ResourceFormSchemaGenerator
 {
     /**
-     * @param  class-string  $resourceClass
+     * @param class-string $resourceClass
      */
     public static function generateFormSchema(string $resourceClass): bool
     {

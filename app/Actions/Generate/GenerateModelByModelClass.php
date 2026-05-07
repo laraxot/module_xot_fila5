@@ -20,7 +20,7 @@ class GenerateModelByModelClass
     /**
      * Execute the function with the given model class.
      *
-     * @param  string  $model_class  the class name of the model
+     * @param string $model_class the class name of the model
      */
     public function execute(string $model_class): string
     {
@@ -72,7 +72,7 @@ class GenerateModelByModelClass
     /**
      * Create a factory for the given model class.
      *
-     * @param  string  $model_class  The class name of the model to create the factory for
+     * @param string $model_class The class name of the model to create the factory for
      */
     public function generate(string $model_class): void
     {
