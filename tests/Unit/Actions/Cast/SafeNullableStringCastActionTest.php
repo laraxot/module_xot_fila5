@@ -14,7 +14,7 @@ it('casts nullable string values consistently', function (): void {
     expect($action->execute(true))->toBe('1');
     expect($action->execute(null))->toBeNull();
     expect($action->execute([]))->toBeNull();
-    expect($action->execute(new \stdClass))->toBeNull();
+    expect($action->execute(new \stdClass()))->toBeNull();
 });
 
 it('uses static nullable string cast method correctly', function (): void {

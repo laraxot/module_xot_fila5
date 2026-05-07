@@ -20,6 +20,5 @@ class CacheLockForm extends XotBaseResourceForm
             'owner' => TextInput::make('owner')->required()->maxLength(255),
             'expiration' => TextInput::make('expiration')->required()->numeric(),
         ];
-
     }
 }

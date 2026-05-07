@@ -21,7 +21,7 @@ use Webmozart\Assert\Assert;
  *
  * @method static Builder when($value = null, callable $callback = null, callable $default = null)
  * @method static Builder whereBetween($column, iterable<int, mixed> $values, $boolean = 'and', $not = false)
- * @method static Builder selectRaw($expression, array<int, mixed> $bindings = []) ;
+ * @method static Builder selectRaw($expression, array<int, mixed> $bindings = [])                            ;
  * @method static Builder where($column, $operator = null, $value = null, $boolean = 'and')
  */
 class CustomRelation extends Relation
@@ -98,7 +98,7 @@ class CustomRelation extends Relation
         Assert::isArray($res);
         Assert::allIsInstanceOf($res, Model::class);
 
-        /** @var array<int, Model> $models */
+        /* @var array<int, Model> $models */
         return array_values($res);
     }
 
@@ -137,7 +137,7 @@ class CustomRelation extends Relation
         Assert::isArray($models);
         Assert::allIsInstanceOf($models, Model::class);
 
-        /** @var array<int, Model> $models */
+        /* @var array<int, Model> $models */
         return $this->related->newCollection($models);
     }
 

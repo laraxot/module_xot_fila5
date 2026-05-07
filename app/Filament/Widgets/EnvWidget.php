@@ -86,7 +86,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
                 ->helperText('telegram_bot_token'),
         ];
 
-        if ($this->only === []) {
+        if ([] === $this->only) {
             return $all;
         }
 

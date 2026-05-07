@@ -21,6 +21,5 @@ class LogForm extends XotBaseResourceForm
             'path' => TextInput::make('path')->required()->maxLength(255),
             'content' => Textarea::make('content')->columnSpanFull(),
         ];
-
     }
 }

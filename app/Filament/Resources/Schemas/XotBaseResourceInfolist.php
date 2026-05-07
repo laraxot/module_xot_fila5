@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-use BackedEnum;
-use Closure;
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Tabs\Tab;
@@ -19,22 +17,13 @@ class XotBaseResourceInfolist
     {
         $components = static::getInfolistSchema();
 
-        if ($components === []) {
-            throw new \RuntimeException(sprintf(
-                'Infolist [%s] returned empty array from getInfolistSchema(). '
-                .'Every infolist MUST expose at least one entry. '
-                .'Use real fields from the related Model/migration/fillable — do not invent.',
-                static::class
-            ));
+        if ([] === $components) {
+            throw new \RuntimeException(sprintf('Infolist [%s] returned empty array from getInfolistSchema(). Every infolist MUST expose at least one entry. Use real fields from the related Model/migration/fillable — do not invent.', static::class));
         }
 
         foreach (array_keys($components) as $key) {
             if (! \is_string($key)) {
-                throw new \RuntimeException(sprintf(
-                    'Infolist [%s] returned a numeric-keyed array from getInfolistSchema(). '
-                    .'Keys MUST be strings (use the field name, e.g. "name" => TextEntry::make("name")).',
-                    static::class
-                ));
+                throw new \RuntimeException(sprintf('Infolist [%s] returned a numeric-keyed array from getInfolistSchema(). Keys MUST be strings (use the field name, e.g. "name" => TextEntry::make("name")).', static::class));
             }
         }
 
@@ -57,12 +46,12 @@ class XotBaseResourceInfolist
     }
 
     /**
-     * @param  array<int|string, Component|Htmlable|string>  $schema
+     * @param array<int|string, Component|Htmlable|string> $schema
      */
     protected static function getTabByName(
         string $name,
         array $schema,
-        string|BackedEnum|Htmlable|Closure|null $icon = null,
+        string|\BackedEnum|Htmlable|\Closure|null $icon = null,
         int $columns = 1,
     ): Tab {
         $moduleLow = Str::of(static::class)->between('Modules\\', '\\Filament')->lower()->toString();
@@ -75,7 +64,7 @@ class XotBaseResourceInfolist
             ->columns($columns)
             ->schema(array_values($schema));
 
-        if ($icon !== null) {
+        if (null !== $icon) {
             $tab->icon($icon);
         }
 
