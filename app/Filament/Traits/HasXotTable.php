@@ -87,7 +87,7 @@ trait HasXotTable
 
         if ($this->shouldShowAssociateAction()) {
             $actions['associate'] = AssociateAction::make()
-                
+
                 ->icon('heroicon-o-paper-clip');
         }
 
@@ -340,7 +340,7 @@ trait HasXotTable
     {
         return [
             'delete' => DeleteBulkAction::make()
-                
+
                 ->icon('heroicon-o-trash')
                 ->color('danger')
                 ->requiresConfirmation(),
