@@ -2,27 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Filament\Resources\ModuleResource\Schemas;
+namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\Xot\app\Filament\Resources\ModuleResource\Schemas;
 
-use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ModuleForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
         return [
-            'name' => TextInput::make('name')->required(),
-            'description' => TextInput::make('description'),
-            'icon' => Select::make('icon')->options([]),
-            'priority' => TextInput::make('priority'),
-            'status' => Toggle::make('status'),
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
         ];
     }
 }
