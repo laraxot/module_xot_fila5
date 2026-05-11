@@ -71,6 +71,7 @@ class LimeJsonService
 
 // QuaerisService.php
 class QuaerisService
+>>>>>>> 551c768c4 (.)
 {
     use SingletonTrait;
     
@@ -545,6 +546,7 @@ class LimeJsonService
 
 // QuaerisService.php
 class QuaerisService
+>>>>>>> 551c768c4 (.)
 {
     use SingletonTrait;
     
@@ -613,7 +615,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

@@ -7,7 +7,6 @@ namespace Modules\Xot\Services;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Class RouteService.
@@ -17,8 +16,6 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class RouteService
 {
-    use QueueableAction;
-
     /**
      * Verifica se l'utente è in modalità amministrazione.
      *
@@ -339,10 +336,7 @@ class RouteService
         $params = $routeCurrent instanceof \Illuminate\Routing\Route ? $routeCurrent->parameters() : [];
         [$containers] = params2ContainerItem($params);
 
-        $params['containers'] = implode('.', array_map(
-            static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-            array_values($containers),
-        ));
+        $params['containers'] = implode('.', $containers);
 
         return collect($tmp_arr)
             ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))
@@ -352,9 +346,5 @@ class RouteService
                 return $params[$item] ?? $item;
             })
             ->implode('.');
-    }
-
-    public function execute(): void
-    {
     }
 }

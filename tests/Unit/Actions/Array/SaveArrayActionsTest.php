@@ -2,14 +2,11 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Array;
+
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Array\SaveJsonArrayAction;
 use Modules\Xot\Actions\Array\SavePhpArrayAction;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_decode;
-use function Safe\tempnam;
 
 test('save json array action works', function () {
     $data = ['foo' => 'bar'];
@@ -18,9 +15,12 @@ test('save json array action works', function () {
     $action = app(SaveJsonArrayAction::class);
     $result = $action->execute($data, $filename);
 
-    Assert::assertTrue($result);
+    expect($result)->toBeTrue()
+        ->and(File::exists($filename))->toBeTrue();
+
     $savedData = json_decode(File::get($filename), true);
-    Assert::assertSame($data, $savedData);
+    expect($savedData)->toBe($data);
+
     File::delete($filename);
 });
 
@@ -31,8 +31,11 @@ test('save php array action works', function () {
     $action = app(SavePhpArrayAction::class);
     $result = $action->execute($data, $filename);
 
-    Assert::assertTrue($result);
+    expect($result)->toBeTrue()
+        ->and(File::exists($filename))->toBeTrue();
+
     $savedData = include $filename;
-    Assert::assertSame($data, $savedData);
+    expect($savedData)->toBe($data);
+
     File::delete($filename);
 });

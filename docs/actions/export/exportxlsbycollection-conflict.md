@@ -1,4 +1,3 @@
-
 # Risoluzione Conflitto in ExportXlsByCollection
 
 ## Problema

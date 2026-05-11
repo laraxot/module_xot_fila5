@@ -2,15 +2,17 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\ValueObjects;
+
 use Modules\Xot\ValueObjects\PhoneValueObject;
-use PHPUnit\Framework\Assert;
 
 it('accepts valid phone', function (): void {
     $phone = '+11234567890';
     $vo = PhoneValueObject::fromString($phone);
-    Assert::assertSame($phone, $vo->toString());
+    expect($vo->toString())->toBe($phone);
 });
 
 it('throws on invalid phone', function (): void {
+    expect(fn () => PhoneValueObject::fromString('12345'))
+        ->toThrow(\InvalidArgumentException::class, 'It is not valid phone value');
 });

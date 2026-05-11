@@ -62,20 +62,20 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->path($moduleLow.'/admin')
             // Configure Filament discovery for module components (unconditional; dirs are expected to exist)
             ->discoverResources(
-                base_path('Modules/'.$this->module.'/app/Filament/Resources'),
-                sprintf('%s\\Filament\\Resources', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Resources'),
+                for: sprintf('%s\\Filament\\Resources', $moduleNamespace),
             )
             ->discoverPages(
-                base_path('Modules/'.$this->module.'/app/Filament/Pages'),
-                sprintf('%s\\Filament\\Pages', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Pages'),
+                for: sprintf('%s\\Filament\\Pages', $moduleNamespace),
             )
             ->discoverWidgets(
-                base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
-                sprintf('%s\\Filament\\Widgets', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
+                for: sprintf('%s\\Filament\\Widgets', $moduleNamespace),
             )
             ->discoverClusters(
-                base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
-                sprintf('%s\\Filament\\Clusters', $moduleNamespace),
+                in: base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
+                for: sprintf('%s\\Filament\\Clusters', $moduleNamespace),
             )
             ->middleware([
                 EncryptCookies::class,

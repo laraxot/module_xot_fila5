@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
@@ -12,9 +13,8 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
  * Widget per mostrare una panoramica dei moduli disponibili.
  * Utilizza l'action GetModulesNavigationItems per caricare dinamicamente i moduli.
  */
-class ModulesOverviewWidget extends XotBaseWidget
+class ModulesOverviewWidget extends Widget
 {
-    /** @var view-string */
     protected string $view = 'xot::filament.widgets.modules-overview';
 
     protected int|string|array $columnSpan = 'full';

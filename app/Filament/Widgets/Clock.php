@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-class Clock extends XotBaseWidget
+// use Symfony\Component\Console\Output\BufferedOutput;
+
+use Filament\Widgets\Widget;
+
+class Clock extends Widget
 {
     public string $start = '';
 
-    /** @var view-string */
     protected string $view = 'xot::filament.widgets.clock';
 
     public function begin(): void

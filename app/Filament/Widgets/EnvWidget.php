@@ -4,22 +4,32 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+use Filament\Actions\Concerns\InteractsWithActions;
+use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
+use Filament\Widgets\Widget;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
-class EnvWidget extends XotBaseSchemaWidget
+/**
+ * @property Schema $form
+ */
+class EnvWidget extends Widget implements HasActions, HasForms
 {
+    use InteractsWithActions;
+    use InteractsWithForms;
+
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
-    /** @var list<string> */
     public array $only = [];
 
-    /** @var view-string */
     protected string $view = 'xot::filament.widgets.env';
 
     public function mount(): void
@@ -29,6 +39,11 @@ class EnvWidget extends XotBaseSchemaWidget
         $this->data = $data;
 
         $this->form->fill($this->data);
+    }
+
+    public function schema(Schema $schema): Schema
+    {
+        return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
     }
 
     public function submit(): void

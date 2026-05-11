@@ -1,4 +1,3 @@
-
 # Filosofia dei Metodi Getter in Xot
 
 ## Principi Fondamentali

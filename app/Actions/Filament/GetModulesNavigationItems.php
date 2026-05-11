@@ -10,9 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
 use function Safe\json_encode;
@@ -37,8 +35,8 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
-        $modules = app(GetTenantModulesAction::class)->execute();
-        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
+        $modules = TenantService::allModules();
+        // TenantService::allModules() restituisce sempre array
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -124,6 +122,7 @@ class GetModulesNavigationItems
                         return false;
                     }
 
+                    /* @phpstan-ignore-next-line */
                     return (bool) $user->hasRole($role);
                 });
 
@@ -141,8 +140,8 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
-        $modules = app(GetTenantModulesAction::class)->execute();
-        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
+        $modules = TenantService::allModules();
+        // TenantService::allModules() restituisce sempre array
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 
@@ -173,11 +172,11 @@ class GetModulesNavigationItems
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
-                $navigation_sort = SafeIntCastAction::cast($config['navigation_sort'] ?? 1);
+                $navigation_sort = (int) ($config['navigation_sort'] ?? 1);
                 $out[] = [
                     'module' => $module,
                     'module_low' => $module_low,
-                    'icon' => SafeStringCastAction::cast($icon),
+                    'icon' => (string) $icon,
                     'sort' => $navigation_sort,
                 ];
             }

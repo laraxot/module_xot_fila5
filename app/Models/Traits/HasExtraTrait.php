@@ -23,13 +23,12 @@ use Webmozart\Assert\Assert;
  * @property int                $qty
  * @property ExtraContract|null $extra
  */
-/** @phpstan-ignore trait.unused */
 trait HasExtraTrait
 {
     /**
      * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
      *
-     * @return MorphOne<Model, $this>
+     * return MorphOne<ExtraContract>
      */
     public function extra(): MorphOne
     {
@@ -43,14 +42,12 @@ trait HasExtraTrait
             Model::class,
             '['.__LINE__.']['.class_basename($this).']['.$extra_class.']',
         );
+        // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
+        // Assert::implementsInterface($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
 
-        /** @var class-string<Model> $extraClass */
-        $extraClass = $extra_class;
-
-        return $this->morphOne($extraClass, 'model');
+        return $this->morphOne($extra_class, 'model');
     }
 
-    /** @return array<string, mixed>|bool|float|int|string|null */
     public function getExtra(string $name): array|bool|float|int|string|null
     {
         $extra = $this->extra;
@@ -66,16 +63,7 @@ trait HasExtraTrait
         $value = $attributes->get($name);
 
         if (\is_array($value)) {
-            $result = [];
-            foreach ($value as $key => $item) {
-                if (! \is_string($key)) {
-                    continue;
-                }
-
-                $result[$key] = $item;
-            }
-
-            return $result;
+            return $value;
         }
 
         if (\is_bool($value) || \is_float($value) || \is_int($value) || \is_string($value)) {

@@ -1,4 +1,3 @@
-
 # Il Tao del Codice
 
 ## Il Principio Fondamentale

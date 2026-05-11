@@ -109,6 +109,59 @@ This document outlines the best practices for maintaining high code quality with
 
 
 
+=======
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 17684f52 (.)
+=======
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 50d6b63f (.)
+>>>>>>> 17684f52 (.)
+=======
+>>>>>>> 88e35986 (.)
+=======
+>>>>>>> e0b8ebe3 (.)
+=======
+>>>>>>> cc52d333 (.)
+=======
+>>>>>>> 90d386aa (.)
+=======
+>>>>>>> 3eee6f79 (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 17684f52 (.)
+=======
+=======
+>>>>>>> 88e35986 (.)
+=======
+=======
+>>>>>>> e0b8ebe3 (.)
+=======
+=======
+>>>>>>> cc52d333 (.)
+=======
+=======
+>>>>>>> 90d386aa (.)
+=======
+=======
+>>>>>>> 3eee6f79 (.)
+=======
+=======
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+>>>>>>> 50d6b63f (.)
+>>>>>>> 551c768c4 (.)
+>>>>>>> 38b70c7ba (.)
 ## Code Quality Tools
 
 ### Automation Scripts
@@ -192,6 +245,63 @@ This document outlines the best practices for maintaining high code quality with
 
 
 
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 17684f52 (.)
+=======
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 50d6b63f (.)
+>>>>>>> 17684f52 (.)
+=======
+>>>>>>> 88e35986 (.)
+=======
+>>>>>>> e0b8ebe3 (.)
+=======
+>>>>>>> cc52d333 (.)
+=======
+>>>>>>> 90d386aa (.)
+=======
+>>>>>>> 3eee6f79 (.)
+=======
+>>>>>>> 399f46d3 (.)
+=======
+>>>>>>> 17684f52 (.)
+=======
+=======
+>>>>>>> 88e35986 (.)
+=======
+=======
+>>>>>>> e0b8ebe3 (.)
+=======
+=======
+>>>>>>> cc52d333 (.)
+=======
+=======
+>>>>>>> 90d386aa (.)
+=======
+=======
+>>>>>>> 3eee6f79 (.)
+=======
+=======
+>>>>>>> 5a14301c (.)
+=======
+>>>>>>> 399f46d3 (.)
+>>>>>>> laraxot/develop
+>>>>>>> 50d6b63f (.)
+>>>>>>> 551c768c4 (.)
+>>>>>>> 38b70c7ba (.)
 ## Common Issues and Fixes
 - **Type Errors**: Ensure all methods and functions have explicit return types and parameter types to avoid type-related bugs.
 - **Static Analysis Failures**: Address PHPStan errors by refining code or updating the baseline for existing code.
@@ -211,8 +321,8 @@ This document outlines the best practices for maintaining high code quality with
 - [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
 - [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
 - [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
-- [PHP Strict Types](php-strict-types.md)
+- [PHP Strict Types](./PHP-STRICT-TYPES.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Naming Conventions](naming-conventions.md)
-- [Service Provider Best Practices](service-provider-best-practices.md)
-- [Filament Best Practices](filament-best-practices.md)
+- [Naming Conventions](./NAMING-CONVENTIONS.md)
+- [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)

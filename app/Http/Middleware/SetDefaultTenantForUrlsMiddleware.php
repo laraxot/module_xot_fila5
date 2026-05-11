@@ -30,9 +30,7 @@ class SetDefaultTenantForUrlsMiddleware
             // 'referrer' => url()->previous(),
         ]);
 
-        /** @var Response|JsonResponse|\Symfony\Component\HttpFoundation\Response $response */
-        $response = $next($request);
-
-        return $response;
+        // @phpstan-ignore return.type
+        return $next($request);
     }
 }

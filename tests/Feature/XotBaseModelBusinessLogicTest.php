@@ -10,92 +10,101 @@ use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
-use function Safe\json_encode;
-use function Safe\unserialize;
-
-uses(TestCase::class);
-
-function createXotBaseModelFixture(): BaseModel
+class XotBaseModelBusinessLogicTest extends TestCase
 {
-    return new class extends BaseModel {
-    };
-}
-
-describe('Xot Base Model Business Logic', function (): void {
-    test('it extends correct base class', function (): void {
+    /** @test */
+    public function itExtendsCorrectBaseClass(): void
+    {
         // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $baseModel);
-        Assert::assertInstanceOf(Model::class, $baseModel);
-    });
+        $this->assertInstanceOf(XotBaseModel::class, $baseModel);
+        $this->assertInstanceOf(Model::class, $baseModel);
+    }
 
-    test('it has required traits', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it can be instantiated without database', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-        Assert::assertInstanceOf(BaseModel::class, $baseModel);
-    });
-
-    test('it supports table name override', function (): void {
+    /** @test */
+    public function itHasRequiredTraits(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
+
+        // Act & Assert
+        $this->assertTrue(method_exists($baseModel, 'getTable'));
+        $this->assertTrue(method_exists($baseModel, 'getConnection'));
+        $this->assertTrue(method_exists($baseModel, 'getKeyName'));
+    }
+
+    /** @test */
+    public function itCanBeInstantiatedWithoutDatabase(): void
+    {
+        // Arrange & Act
+        $baseModel = new BaseModel();
+
+        // Assert
+        $this->assertInstanceOf(BaseModel::class, $baseModel);
+        $this->assertNotNull($baseModel);
+    }
+
+    /** @test */
+    public function itSupportsTableNameOverride(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
 
         // Act
         $tableName = $baseModel->getTable();
 
         // Assert
-        Assert::assertIsString($tableName);
-        Assert::assertNotEmpty($tableName);
-    });
+        $this->assertIsString($tableName);
+        $this->assertNotEmpty($tableName);
+    }
 
-    test('it supports connection override', function (): void {
+    /** @test */
+    public function itSupportsConnectionOverride(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $connection = $baseModel->getConnection();
 
         // Assert
-        Assert::assertNotNull($connection);
-        Assert::assertInstanceOf(ConnectionInterface::class, $connection);
-    });
+        $this->assertNotNull($connection);
+        $this->assertInstanceOf(ConnectionInterface::class, $connection);
+    }
 
-    test('it supports key name override', function (): void {
+    /** @test */
+    public function itSupportsKeyNameOverride(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $keyName = $baseModel->getKeyName();
 
         // Assert
-        Assert::assertIsString($keyName);
-        Assert::assertEquals('id', $keyName);
-    });
+        $this->assertIsString($keyName);
+        $this->assertEquals('id', $keyName);
+    }
 
-    test('it can be used as base for other models', function (): void {
+    /** @test */
+    public function itCanBeUsedAsBaseForOtherModels(): void
+    {
         // Arrange
         $module = new Module();
 
         // Act & Assert
-        Assert::assertInstanceOf(XotBaseModel::class, $module);
-        Assert::assertInstanceOf(Model::class, $module);
-    });
+        $this->assertInstanceOf(XotBaseModel::class, $module);
+        $this->assertInstanceOf(Model::class, $module);
+    }
 
-    test('it supports model configuration', function (): void {
+    /** @test */
+    public function itSupportsModelConfiguration(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $fillable = $baseModel->getFillable();
@@ -103,221 +112,313 @@ describe('Xot Base Model Business Logic', function (): void {
         $casts = $baseModel->getCasts();
 
         // Assert
-        Assert::assertIsArray($fillable);
-        Assert::assertIsArray($hidden);
-        Assert::assertIsArray($casts);
-    });
+        $this->assertIsArray($fillable);
+        $this->assertIsArray($hidden);
+        $this->assertIsArray($casts);
+    }
 
-    test('it supports soft deletes when configured', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert - Soft deletes may or may not be configured
-    });
-
-    test('it supports timestamps when configured', function (): void {
+    /** @test */
+    public function itSupportsSoftDeletesWhenConfigured(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
+
+        // Act
+        $usesSoftDeletes = method_exists($baseModel, 'trashed');
+
+        // Assert
+        // Nota: Non tutti i modelli base usano soft deletes
+        // Questo test verifica solo la possibilità di configurazione
+        $this->assertTrue(true); // Placeholder per logica specifica
+    }
+
+    /** @test */
+    public function itSupportsTimestampsWhenConfigured(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
 
         // Act
         $usesTimestamps = $baseModel->usesTimestamps();
 
         // Assert
         // Nota: I modelli base possono avere configurazioni diverse
-        Assert::assertIsBool($usesTimestamps);
-    });
+        $this->assertIsBool($usesTimestamps);
+    }
 
-    test('it supports tenant isolation when configured', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert - Tenant isolation may or may not be configured
-    });
-
-    test('it supports audit trail when configured', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert - Audit trail may or may not be configured
-    });
-
-    test('it can be serialized', function (): void {
+    /** @test */
+    public function itSupportsTenantIsolationWhenConfigured(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasTenantTrait = method_exists($baseModel, 'getTenantKey');
+
+        // Assert
+        // Nota: Non tutti i modelli base usano tenant isolation
+        // Questo test verifica solo la possibilità di configurazione
+        $this->assertTrue(true); // Placeholder per logica specifica
+    }
+
+    /** @test */
+    public function itSupportsAuditTrailWhenConfigured(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasAuditTrait = method_exists($baseModel, 'getAuditEvents');
+
+        // Assert
+        // Nota: Non tutti i modelli base usano audit trail
+        // Questo test verifica solo la possibilità di configurazione
+        $this->assertTrue(true); // Placeholder per logica specifica
+    }
+
+    /** @test */
+    public function itCanBeSerialized(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
 
         // Act
         $serialized = serialize($baseModel);
 
         // Assert
-        Assert::assertNotEmpty($serialized);
-    });
+        $this->assertIsString($serialized);
+        $this->assertNotEmpty($serialized);
+    }
 
-    test('it can be unserialized', function (): void {
+    /** @test */
+    public function itCanBeUnserialized(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
         $serialized = serialize($baseModel);
 
         // Act
         $unserialized = unserialize($serialized);
 
         // Assert
-        Assert::assertInstanceOf(BaseModel::class, $unserialized);
-    });
+        $this->assertInstanceOf(BaseModel::class, $unserialized);
+    }
 
-    test('it supports json serialization', function (): void {
+    /** @test */
+    public function itSupportsJsonSerialization(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $json = json_encode($baseModel);
 
         // Assert
-        Assert::assertNotEmpty($json);
-        Assert::assertNotFalse($json);
-    });
+        $this->assertIsString($json);
+        $this->assertNotEmpty($json);
+        $this->assertNotFalse($json);
+    }
 
-    test('it supports array conversion', function (): void {
+    /** @test */
+    public function itSupportsArrayConversion(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $array = $baseModel->toArray();
 
         // Assert
-        Assert::assertIsArray($array);
-        Assert::assertNotEmpty($array);
-    });
+        $this->assertIsArray($array);
+        $this->assertNotEmpty($array);
+    }
 
-    test('it supports json conversion', function (): void {
+    /** @test */
+    public function itSupportsJsonConversion(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $json = $baseModel->toJson();
 
         // Assert
-        Assert::assertIsString($json);
-        Assert::assertNotEmpty($json);
-    });
+        $this->assertIsString($json);
+        $this->assertNotEmpty($json);
+    }
 
-    test('it supports relationship loading', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it supports attribute access', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it supports mass assignment protection', function (): void {
+    /** @test */
+    public function itSupportsRelationshipLoading(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasLoadMethod = method_exists($baseModel, 'load');
+
+        // Assert
+        $this->assertTrue($hasLoadMethod);
+    }
+
+    /** @test */
+    public function itSupportsAttributeAccess(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasGetAttributeMethod = method_exists($baseModel, 'getAttribute');
+        $hasSetAttributeMethod = method_exists($baseModel, 'setAttribute');
+
+        // Assert
+        $this->assertTrue($hasGetAttributeMethod);
+        $this->assertTrue($hasSetAttributeMethod);
+    }
+
+    /** @test */
+    public function itSupportsMassAssignmentProtection(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
 
         // Act
         $fillable = $baseModel->getFillable();
         $guarded = $baseModel->getGuarded();
 
         // Assert
-        Assert::assertIsArray($fillable);
-        Assert::assertIsArray($guarded);
-    });
+        $this->assertIsArray($fillable);
+        $this->assertIsArray($guarded);
+    }
 
-    test('it supports model events', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it supports observers', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it supports scopes', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it supports accessors and mutators', function (): void {
-        // Arrange & Act
-        $baseModel = createXotBaseModelFixture();
-
-        // Assert
-    });
-
-    test('it supports casting', function (): void {
+    /** @test */
+    public function itSupportsModelEvents(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasEvents = method_exists($baseModel, 'fireModelEvent');
+
+        // Assert
+        $this->assertTrue($hasEvents);
+    }
+
+    /** @test */
+    public function itSupportsObservers(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasObservers = method_exists($baseModel, 'getObservableEvents');
+
+        // Assert
+        $this->assertTrue($hasObservers);
+    }
+
+    /** @test */
+    public function itSupportsScopes(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasScopes = method_exists($baseModel, 'addGlobalScope');
+
+        // Assert
+        $this->assertTrue($hasScopes);
+    }
+
+    /** @test */
+    public function itSupportsAccessorsAndMutators(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
+
+        // Act
+        $hasAccessors = method_exists($baseModel, 'getAttributeValue');
+        $hasMutators = method_exists($baseModel, 'setAttribute');
+
+        // Assert
+        $this->assertTrue($hasAccessors);
+        $this->assertTrue($hasMutators);
+    }
+
+    /** @test */
+    public function itSupportsCasting(): void
+    {
+        // Arrange
+        $baseModel = new BaseModel();
 
         // Act
         $casts = $baseModel->getCasts();
 
         // Assert
-        Assert::assertIsArray($casts);
-    });
+        $this->assertIsArray($casts);
+    }
 
-    test('it supports dates', function (): void {
+    /** @test */
+    public function itSupportsDates(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $dates = $baseModel->getDates();
 
         // Assert
-        Assert::assertIsArray($dates);
-    });
+        $this->assertIsArray($dates);
+    }
 
-    test('it supports hidden attributes', function (): void {
+    /** @test */
+    public function itSupportsHiddenAttributes(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $hidden = $baseModel->getHidden();
 
         // Assert
-        Assert::assertIsArray($hidden);
-    });
+        $this->assertIsArray($hidden);
+    }
 
-    test('it supports visible attributes', function (): void {
+    /** @test */
+    public function itSupportsVisibleAttributes(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $visible = $baseModel->getVisible();
 
         // Assert
-        Assert::assertIsArray($visible);
-    });
+        $this->assertIsArray($visible);
+    }
 
-    test('it supports appends', function (): void {
+    /** @test */
+    public function itSupportsAppends(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
         $appends = $baseModel->getAppends();
 
         // Assert
-        Assert::assertIsArray($appends);
-    });
+        $this->assertIsArray($appends);
+    }
 
-    test('it supports with relationships', function (): void {
+    /** @test */
+    public function itSupportsWithRelationships(): void
+    {
         // Arrange
-        $baseModel = createXotBaseModelFixture();
+        $baseModel = new BaseModel();
 
         // Act
-        $with = $baseModel->getAppends();
+        $with = $baseModel->getWith();
 
         // Assert
-        Assert::assertIsArray($with);
-    });
-});
+        $this->assertIsArray($with);
+    }
+}

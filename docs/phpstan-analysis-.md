@@ -2,7 +2,6 @@
 
 ## Executive Summary
 
-**Analysis Date:** 2025-11-18
 **PHPStan Level:** Maximum (Level 10)
 **Total Errors Found:** 744
 **Files Analyzed:** 3,945
@@ -22,6 +21,7 @@
 
 #### healthcare_app Module (Complex Issues)
 #### ModuloEsempio Module (Complex Issues)
+>>>>>>> .merge_file_UR18fR
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -62,6 +62,7 @@ Class Modules\healthcare_app\Actions\Charts\Quantum\GenerateConsciousChartAction
 Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\ModuloEsempio\Actions\Charts\Quantum\GenerateConsciousChartAction
+>>>>>>> .merge_file_UR18fR
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -89,6 +90,7 @@ uses unknown trait Spatie\Queable\QueableAction.
 - `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `ModuloEsempio/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `ModuloEsempio/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+>>>>>>> .merge_file_UR18fR
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented
@@ -422,9 +424,6 @@ jobs:
 
 ### Module-Specific Documentation
 
-- [Geo Module Errors](../../Geo/docs/phpstan-errors-2025-12-16.md)
-- [Cms Module Errors](../../Cms/docs/phpstan-errors-2025-12-16.md)
-- [Activity Module Errors](../../Activity/docs/phpstan-errors-2025-12-16.md)
 - [Geo Module Errors](../../geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../activity/docs/phpstan-errors-2025-12-16.md)

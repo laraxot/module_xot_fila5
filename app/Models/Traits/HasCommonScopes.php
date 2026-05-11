@@ -28,15 +28,12 @@ use Illuminate\Database\Eloquent\Builder;
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
  */
-/** @phpstan-ignore trait.unused */
 trait HasCommonScopes
 {
     /**
      * Scope query to only active records.
      *
      * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -47,8 +44,6 @@ trait HasCommonScopes
 
     /**
      * Scope query to only inactive records.
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -62,8 +57,6 @@ trait HasCommonScopes
      *
      * Records with published_at <= now().
      *
-     * @param Builder<static> $query
-     *
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -76,8 +69,6 @@ trait HasCommonScopes
      * Scope query to draft (unpublished) records.
      *
      * Records with published_at = null or > now().
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -142,13 +133,12 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        $publishedAt = $this->getAttribute('published_at');
-
-        if (! $publishedAt instanceof \Illuminate\Support\Carbon) {
+        if (! isset($this->published_at)) {
             return false;
         }
 
-        return $publishedAt->isPast();
+        return null !== $this->published_at
+               && $this->published_at->isPast();
     }
 
     /**
@@ -164,6 +154,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-        return true === $this->getAttribute('is_active');
+        return isset($this->is_active) && true === $this->is_active;
     }
 }

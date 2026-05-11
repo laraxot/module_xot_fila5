@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 
 class SendMailByRecordsAction
@@ -13,7 +12,7 @@ class SendMailByRecordsAction
     use QueueableAction;
 
     /**
-     * @param Collection<int, Model> $records
+     * Undocumented function.
      */
     public function execute(Collection $records, string $mail_class): bool
     {

@@ -25,10 +25,6 @@ trait Updater
 {
     /**
      * Get the user who created the model.
-     *
-     * @return BelongsTo<Model&ProfileContract, $this>
-     *
-     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
      */
     public function creator(): BelongsTo
     {
@@ -40,10 +36,6 @@ trait Updater
 
     /**
      * Get the last user who updated the model.
-     *
-     * @return BelongsTo<Model&ProfileContract, $this>
-     *
-     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
      */
     public function updater(): BelongsTo
     {
@@ -55,10 +47,6 @@ trait Updater
 
     /**
      * Get the user who deleted the model.
-     *
-     * @return BelongsTo<Model&ProfileContract, $this>
-     *
-     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
      */
     public function deleter(): BelongsTo
     {

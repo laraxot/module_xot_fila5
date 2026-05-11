@@ -1,7 +1,5 @@
----
-module: theme
-topic: risks
-canonical: ../../../../Themes/docs/shared-components/04-risks-Modules.md
----
+# Risks and dependencies (Module Xot)
 
-See canonical documentation: ../../../../Themes/docs/shared-components/04-risks-Modules.md
+## Risks
+
+## Dependencies

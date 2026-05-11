@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\CollectionExport;
-use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -40,13 +39,8 @@ class ExportXlsByCollection
         // Assicuriamo che $fields sia un array di stringhe
         $stringFields = array_map(fn (mixed $field): string => (string) $field, array_values($fields));
 
-        /** @var Collection<int, mixed> $supportCollection */
-        $supportCollection = $collection instanceof EloquentCollection
-            ? Collection::make($collection->values()->all())
-            : Collection::make($collection->values()->all());
-
         $export = new CollectionExport(
-            collection: $supportCollection,
+            collection: $collection,
             transKey: $transKey,
             fields: $stringFields,
         );
@@ -91,7 +85,7 @@ class ExportXlsByCollection
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach ($fields as $col => $field) {
-            $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
+            $sheet->setCellValueByColumnAndRow($col + 1, 1, $field);
         }
     }
 
@@ -108,7 +102,7 @@ class ExportXlsByCollection
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
                 $value = $this->extractValue($data, $field);
-                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
+                $sheet->setCellValueByColumnAndRow($col + 1, $row, $value);
             }
             ++$row;
         }

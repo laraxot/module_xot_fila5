@@ -1,4 +1,3 @@
-
 # La Filosofia Zen dei Getter Semantici
 
 ## Il Principio Fondamentale

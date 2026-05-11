@@ -2,55 +2,45 @@
 
 declare(strict_types=1);
 
+namespace Modules\Xot\Tests\Unit\Traits;
+
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
+use Modules\Xot\Traits\HasCsrfToken;
 
 it('sets csrf token on mount', function (): void {
     $token = 'test-token-123';
 
-    $session = Mockery::mock();
-    $session->allows(['token' => $token]);
+    // Mock session token
+    $session = \Mockery::mock();
+    $session->shouldReceive('token')->andReturn($token);
     App::instance('session', $session);
 
     $class = new class {
-        public string $_token = '';
-
-        public function mount(): void
-        {
-            $this->_token = app('session')->token();
-        }
-
-        public function getCsrfToken(): string
-        {
-            return $this->_token;
-        }
+        use HasCsrfToken;
     };
 
     $class->mount();
 
-    Assert::assertSame($token, $class->getCsrfToken());
-    Mockery::close();
+    expect($class->getCsrfToken())->toBe($token);
+
+    \Mockery::close();
 });
 
 it('verifies csrf token', function (): void {
     $token = 'secret-token';
 
     $class = new class {
-        public string $_token = '';
-
-        public function verifyCsrfToken(): bool
-        {
-            return $this->_token === app('session')->token();
-        }
+        use HasCsrfToken;
     };
     $class->_token = $token;
 
-    Session::partialMock()->allows(['token' => $token]);
+    Session::shouldReceive('token')
+        ->twice()
+        ->andReturn($token, 'wrong-token');
 
-    Assert::assertTrue($class->verifyCsrfToken());
-    Mockery::close();
+    expect($class->verifyCsrfToken())->toBeTrue();
+    expect($class->verifyCsrfToken())->toBeFalse();
+
+    \Mockery::close();
 });

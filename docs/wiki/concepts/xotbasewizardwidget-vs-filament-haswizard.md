@@ -61,7 +61,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 {
     public int $wizardStartStep = 1;  // ← Duplicates getWizardStartStep()
     
-    abstract public function getSteps(): array;  // ← Duplicates getSteps()
+    abstract public function getWizardSteps(): array;  // ← Duplicates getSteps()
     
     protected function wizardMaxStep(): int;  // ← Not in Filament
     
@@ -75,7 +75,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
 | Feature | XotBaseWizardWidget | Filament HasWizard (Pages) | HasWizard (Actions) |
 |---------|--------------------|---------------------------|---------------------|
-| Step definition | `getSteps()` | `getSteps()` | `steps()` |
+| Step definition | `getWizardSteps()` | `getSteps()` | `steps()` |
 | Start step | `wizardStartStep` property | `getStartStep()` | `startOnStep()` |
 | Skippable | `hasSkippableWizardSteps()` | `hasSkippableSteps()` | `skippableSteps()` |
 | Max step | `wizardMaxStep()` | N/A | N/A |
@@ -108,7 +108,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         parent::mount();
         
         // Initialize wizard using HasWizard
-        $this->steps($this->getSteps());
+        $this->steps($this->getWizardSteps());
         $this->startOnStep($this->wizardStartStep);
     }
 }
@@ -122,7 +122,7 @@ Keep XotBaseWizardWidget but align API with HasWizard:
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
     // Rename to match HasWizard (Pages)
-    abstract public function getSteps(): array;
+    abstract public function getSteps(): array;  // Was: getWizardSteps()
     
     public function hasSkippableSteps(): bool  // Was: hasSkippableWizardSteps()
     {

@@ -10,6 +10,7 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Linee di codice eliminate**: ~200+
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
+>>>>>>> .merge_file_hFH7JJ
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
@@ -26,6 +27,7 @@ namespace Modules\healthcare_app\Models;
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\ModuloEsempio\Models;
+>>>>>>> .merge_file_hFH7JJ
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -55,6 +57,7 @@ abstract class BaseModel extends Model
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
+>>>>>>> .merge_file_hFH7JJ
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -351,6 +354,7 @@ BaseModel → BaseModelLang → Post
 |--------|--------|-------------|------------|-----------|
 | healthcare_app | BaseModel | 66 | 20 | -70% |
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
+>>>>>>> .merge_file_hFH7JJ
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |
@@ -490,9 +494,6 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 
 ## Link Correlati
 
-- [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
-- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
-- [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)

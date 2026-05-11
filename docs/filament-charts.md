@@ -921,7 +921,7 @@ class BlogPostsChartTest extends TestCase
 - [Awesome Chart.js](https://github.com/chartjs/awesome)
 
 ### Documentazione PTVX
-- [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
+- [Widget Implementation Rules](./widget_implementation_rules.md)
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 
@@ -938,6 +938,7 @@ class BlogPostsChartTest extends TestCase
 
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito healthcare_app/PTVX:
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Laraxot:
+>>>>>>> .merge_file_PV5RFq
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)**.
@@ -953,3 +954,4 @@ Pattern:
 3.  Impostare `animation: false` nelle opzioni Chart.js per la stampa.
 
 Vedi: **[Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)**.
+

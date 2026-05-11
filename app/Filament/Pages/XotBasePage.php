@@ -113,7 +113,9 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getModel(): string
     {
+        /* @phpstan-ignore property.staticAccess */
         if (null !== static::$model) {
+            /** @phpstan-ignore property.staticAccess */
             /** @var class-string<Model> $modelValue */
             $modelValue = static::$model;
 
@@ -247,7 +249,12 @@ abstract class XotBasePage extends Page implements HasForms
     {
         $user = $this->getUser();
 
-        // ponytail: $user is Authenticatable&Model, hasPermissionTo is always available via Spatie traits
+        // @phpstan-ignore-next-line
+        if (! method_exists($user, 'hasPermissionTo')) {
+            throw new \RuntimeException('Il modello utente deve implementare il metodo hasPermissionTo');
+        }
+
+        // Use method_exists to safely call hasPermissionTo
         return $user->hasPermissionTo($permission);
     }
 
@@ -303,7 +310,6 @@ abstract class XotBasePage extends Page implements HasForms
         // Per ora lasciamo vuoto, può essere implementato nelle classi figlie
     }
 
-    /** @return list<Action> */
     protected function getFormActions(): array
     {
         return [

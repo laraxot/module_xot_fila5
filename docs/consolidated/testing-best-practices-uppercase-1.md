@@ -39,8 +39,12 @@ function mockXotData(): void
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 
     $mockXotData->shouldReceive('getUserClass')
-        ->andReturn(\Modules\User\Models\User::class);
+        ->andReturn(\Modules\<nome progetto>\Models\User::class);
+
+
+========
         
+>>>>>>>> bb980a213 (.):docs/consolidated/testing_best_practices_uppercase.md
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 

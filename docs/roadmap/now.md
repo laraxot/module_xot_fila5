@@ -1,7 +1,7 @@
----
-module: theme
-topic: now
-canonical: ../../../../Themes/docs/shared-components/01-now-Modules.md
----
+# Now (Module Xot)
 
-See canonical documentation: ../../../../Themes/docs/shared-components/01-now-Modules.md
+## Stabilization
+
+## Bugfixes
+
+## Quality gates

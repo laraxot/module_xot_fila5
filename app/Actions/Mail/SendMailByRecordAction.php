@@ -63,29 +63,22 @@ class SendMailByRecordAction
             $bodyHtml = '';
         }
 
-        $pdfPath = app(PdfByModelAction::class)->execute(
-            model: $record,
-            out: 'path',
-        );
-        if (! is_string($pdfPath)) {
-            throw new \InvalidArgumentException('PDF attachment path must be a string');
-        }
-
         $emailData = new EmailData(
             recipient: $to,
             subject: $subject,
             body_html: $bodyHtml,
-            attachments: [$pdfPath],
+            attachments: [
+                app(PdfByModelAction::class)->execute(
+                    model: $record,
+                    out: 'path',
+                ),
+            ],
         );
         SmtpData::make()->send($emailData);
 
         // myLogs è sempre disponibile su BaseModel
-        $logs = $record->myLogs();
-        if (! is_object($logs) || ! method_exists($logs, 'create')) {
-            throw new \InvalidArgumentException('Model ['.$record::class.'] myLogs relation is invalid');
-        }
-
-        $logs->create([
+        /* @phpstan-ignore-next-line - Dynamic relationship method */
+        $record->myLogs()->create([
             'act' => 'sendMail',
             'handle' => authId(),
         ]);

@@ -7,8 +7,6 @@ namespace Modules\Xot\Rules;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Carbon;
 
-use function Safe\preg_replace;
-
 /**
  * Class DateTimeRule.
  */
@@ -20,7 +18,7 @@ class DateTimeRule implements Rule
      * @param string $attribute The attribute name being validated
      * @param mixed  $value     The value being validated
      */
-    public function passes(mixed $attribute, mixed $value): bool
+    public function passes($attribute, $value): bool
     {
         // dddx($attribute); //published_at
         // dddx($value); //10/10/2019 13:43

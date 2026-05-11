@@ -7,28 +7,21 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 it('calculates view path correctly', function (): void {
-    $nsMock = $this->createUnitMock(GetViewNameSpacePathAction::class);
-    $nsMock->method('execute')
+    $this->mock(GetViewNameSpacePathAction::class)
+        ->shouldReceive('execute')
+        ->once()
         ->with('test_ns')
-        ->willReturn('/path/to/views');
+        ->andReturn('/path/to/views');
 
-    app()->instance(GetViewNameSpacePathAction::class, $nsMock);
+    $this->mock(FixPathAction::class)
+        ->shouldReceive('execute')
+        ->once()
+        ->andReturnArg(0);
 
-    $fixMock = $this->createUnitMock(FixPathAction::class);
-    $fixMock->method('execute')
-        ->willReturnArgument(0);
-
-    app()->instance(FixPathAction::class, $fixMock);
     $action = app(ViewPathAction::class);
+    $result = $action->execute('test_ns::folder.file');
 
-    $result = $action->execute('Xot::dashboard.index');
-
-    Assert::assertIsString($result);
-    Assert::assertStringEndsWith('.blade.php', $result);
+    expect($result)->toBe('/path/to/views/folder/file.blade.php');
 });

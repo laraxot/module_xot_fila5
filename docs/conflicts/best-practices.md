@@ -1,4 +1,3 @@
-
 # Best Practices per la Risoluzione dei Conflitti
 
 ## Principi Generali

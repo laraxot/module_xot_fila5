@@ -2,27 +2,29 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\File;
+
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Nwidart\Modules\Facades\Module;
-use PHPUnit\Framework\Assert;
 
 it('gets module path from facade correctly', function (): void {
-    // Spy on Module facade
-    Module::partialMock()->allows([
-        'getModulePath' => function (string $module): string {
-            return 'Xot' === $module ? '/path/to/Xot/' : '';
-        },
-    ]);
+    Module::shouldReceive('getModulePath')
+        ->once()
+        ->with('Xot')
+        ->andReturn('/path/to/Xot/');
 
     $action = app(GetModulePathAction::class);
     $result = $action->execute('Xot');
 
-    Assert::assertSame('/path/to/Xot/', $result);
+    expect($result)->toBe('/path/to/Xot/');
 });
 
 it('gets module path from fallback correctly', function (): void {
+    Module::shouldReceive('getModulePath')
+        ->once()
+        ->andThrow(new \Exception('Module not found'));
+
     // We assume Modules directory exists in base_path
     $modulesPath = base_path('Modules');
     if (! File::exists($modulesPath)) {
@@ -35,17 +37,11 @@ it('gets module path from fallback correctly', function (): void {
         File::makeDirectory($dummyModule);
     }
 
-    // Spy on Module facade to throw exception, forcing fallback
-    Module::partialMock()->allows([
-        'getModulePath' => function (string $module): string {
-            throw new Exception('Module not found');
-        },
-    ]);
-
     $action = app(GetModulePathAction::class);
     // Case-insensitive search
     $result = $action->execute('testmodule');
 
-    Assert::assertSame($dummyModule, $result);
+    expect($result)->toBe($dummyModule);
+
     File::deleteDirectory($dummyModule);
 });

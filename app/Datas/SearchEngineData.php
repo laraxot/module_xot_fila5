@@ -9,8 +9,6 @@ use Spatie\LaravelData\Data;
 /**
  * Class SearchEngineData - Gestisce la configurazione dei motori di ricerca per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
- *
- * @phpstan-consistent-constructor
  */
 class SearchEngineData extends Data
 {
@@ -37,8 +35,8 @@ class SearchEngineData extends Data
     /**
      * Create a new instance of SearchEngineData with default values.
      */
-    public static function make(): self
+    public static function make(): static
     {
-        return new self();
+        return new static();
     }
 }

@@ -2,7 +2,7 @@
 
 **Status**: Active  
 **Created**: 2026-04-14  
-**Last Updated**: 2026-04-14  
+**Last Updated**: 2026-05-04  
 **Category**: Architecture / Rules / Filament  
 **Audience**: All developers working with wizard widgets
 
@@ -14,7 +14,17 @@
 
 Questa regola non e negoziabile. E la base del contratto architetturale Laraxot.
 
-**Nota (Filament pannello)**: su `CreateRecord` il trait `HasWizard` usa `getSteps()` / `hasSkippableSteps()` ([doc](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard)). Qui nel widget: `getSteps()` / `hasSkippableWizardSteps()` su `XotBaseWizardWidget` — stesso componente `Wizard`, contesto frontoffice.
+**Nota (Filament pannello)**: su `CreateRecord` il trait `HasWizard` usa `getSteps()` / `hasSkippableSteps()` ([doc](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard)). Qui nel widget: `getWizardSteps()` / `hasSkippableWizardSteps()` su `XotBaseWizardWidget` — stesso componente `Wizard`, contesto frontoffice.
+
+### Filament `HasWizard` in vendor (non duplicare a caso)
+
+| Trait | Namespace | Contesto |
+|-------|-----------|----------|
+| `HasWizard` | `Filament\Actions\Concerns` | Wizard dentro **Action** (modale); API `steps()` |
+| `HasWizard` | `Filament\Resources\Pages\Concerns` | **Pagina** Resource: `form(Schema)` con `Wizard::make($this->getSteps())`, `hasSkippableSteps()` |
+| (wrapper) | `Filament\Resources\Pages\CreateRecord\Concerns\HasWizard` | Re-export del trait **Pages** |
+
+Il widget Livewire `XotBaseWizardWidget` **non** estende `CreateRecord` ne `Page`: **non** si puo attaccare il trait **Pages** senza rifattorare tutto il flusso `form(Schema)` della page. Si riusa lo stesso componente schema `Wizard` / `Step` e si allinea il comportamento (es. skippable steps). Story: `_bmad-output/implementation-artifacts/8-114-xotbasewizard-filament-haswizard-parity-segnalazione-crea-cta.md`.
 
 ---
 
@@ -91,37 +101,36 @@ protected function resolveInitialStepFromQuery(): int
     // Tua implementazione custom...  // Duplicazione!
 }
 
-// ✅ CORRETTO (pattern attuale Filament)
-// Policy e persist query step gestite da XotBaseWizardWidget::getWizardComponent() + HasWizard
+// ✅ CORRETTO
+$this->wizardStartStep = $this->resolveInitialStepFromQuery();  // Ereditato da XotBaseWizardWidget
 ```
 
-**Perche**: `XotBaseWizardWidget` orchestra `HasWizard`, view tema e (dove abilitato) `persistStepInQueryString`; non introdurre resolver custom paralleli senza ADR.
+**Perche**: XotBaseWizardWidget gestisce:
+- Lettura sicura di `?step=` con validazione range 1..N
+- Policy sicurezza (solo local/debug/config-enabled)
+- Normalizzazione stato annidato
 
 ---
 
-### 5. NON aggiungi layer PHP che riscrive tutto lo stato dopo `getState()`
+### 5. NON dimenticherai `normalizeWizardFormState()` nel submit
 ```php
-// ❌ DA EVITARE (frattura col contratto Filament)
+// ❌ SBAGLIATO
 public function submit(): void
 {
-    $flat = $this->someNormalize($this->form->getState()); // duplica / diverge dallo schema
-    Model::create($flat);
+    $data = $this->form->getState();
+    // Usa $data direttamente...  // Stato annidato!
 }
 
-// ✅ PATTERN FIXCITY (ticket wizard)
+// ✅ CORRETTO
 public function submit(): void
 {
-    /** @var array<string, mixed> $data */
-    $data = $this->form->getState();
-    $userId = auth()->id();
-    if ($userId !== null) {
-        $data['owner_id'] ??= $userId;
-    }
-    Ticket::create($data);
+    $state = $this->form->getState();
+    $data = $this->normalizeWizardFormState($state);  // Appiattisce stato
+    // Ora $data['address'] funziona correttamente
 }
 ```
 
-**Perche**: la forma delle chiavi deve restare **ownership dello schema/dehydrate**. Se servono chiavi flat sul modello, si corregge **`TicketForm`/component** o cast/mutator sul modello — non una “normalizzazione universale” sulla base widget.
+**Perche**: Se il Wizard e wrappato da una chiave (es. `data['wizard']['address']`), devi appiattirlo per accedere a `data['address']`.
 
 ---
 
@@ -178,10 +187,10 @@ protected function getWizardSubmitAction(): Htmlable
 
 ---
 
-### 9. DEFINIRAI `getSteps()` come metodo pubblico
+### 9. DEFINIRAI `getWizardSteps()` come metodo pubblico
 ```php
 // ✅ CORRETTO
-public function getSteps(): array
+public function getWizardSteps(): array
 {
     return [
         $this->makeStepPrivacy(),
@@ -196,7 +205,7 @@ private function makeStepSummary(): Step { /* ... */ }
 ```
 
 **Perche**: 
-- Separazione delle responsabilita: base class chiama `getSteps()`, dominio definisce gli step
+- Separazione delle responsabilita: base class chiama `getWizardSteps()`, dominio definisce gli step
 - Ogni step builder e privato (incapsulamento dominio-specifico)
 
 ---
@@ -265,8 +274,8 @@ Prima di committare un wizard widget, verifica:
 - [ ] NO `->tooltip()` espliciti su azioni
 - [ ] NO `Log::error()` nel catch block
 - [ ] Usa `$this->resolveInitialStepFromQuery()` nel mount
-- [ ] Submit/persist usa `$this->form->getState()` senza riscrivere tutto il payload in helper generici (solo merge dominio documentati, es. `owner_id`)
-- [ ] `getSteps()` e pubblico
+- [ ] Usa `$this->normalizeWizardFormState()` nel submit (se stato annidato)
+- [ ] `getWizardSteps()` e pubblico
 - [ ] Step builders sono privati
 - [ ] Submit button segue pattern corretto (HTML nativo o tema)
 - [ ] Traduzioni seguono pattern `{namespace}::{widget_name}.*`

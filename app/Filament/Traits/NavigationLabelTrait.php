@@ -9,7 +9,7 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 
 trait NavigationLabelTrait
 {
-    use TransFuncTrait;
+    use TransTrait;
 
     // public function getModelLabel(): string
     // {

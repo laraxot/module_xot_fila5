@@ -7,9 +7,6 @@ namespace Modules\Xot\Casts;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Modules\Xot\ValueObjects\PhoneValueObject;
 
-/**
- * @implements CastsAttributes<PhoneValueObject, PhoneValueObject>
- */
 class PhoneCast implements CastsAttributes
 {
     /**

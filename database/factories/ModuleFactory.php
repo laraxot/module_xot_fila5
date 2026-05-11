@@ -16,9 +16,6 @@ class ModuleFactory extends Factory
 {
     protected $model = Module::class;
 
-    /**
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [

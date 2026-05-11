@@ -1,4 +1,3 @@
-
 # Filosofia dei Metodi Semantici
 
 ## Principio Fondamentale

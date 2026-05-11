@@ -1,4 +1,3 @@
-
 # La Via del Brand
 
 ## L'Essenza del Brand

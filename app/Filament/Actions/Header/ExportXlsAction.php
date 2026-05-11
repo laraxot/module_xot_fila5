@@ -67,8 +67,6 @@ class ExportXlsAction extends Action
                         );
                     }
                     Assert::isArray($fields);
-                } else {
-                    dddx('method xotFields does not exist in '.$resource);
                 }
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));

@@ -23,11 +23,11 @@ class XlsByModelClassAction
     /**
      * Esporta i dati di un modello in Excel.
      *
-     * @param class-string<Model>                                   $modelClass Classe del modello da esportare
-     * @param array<string, mixed>                                  $where      Condizioni where per la query
-     * @param array<int, string>                                    $includes   Relazioni o campi da includere
-     * @param array<int, string>                                    $excludes   Campi da escludere
-     * @param callable(array<string, mixed>|Model, int): mixed|null $callback   Callback per manipolare i dati
+     * @param string               $modelClass Classe del modello da esportare
+     * @param array<string, mixed> $where      Condizioni where per la query
+     * @param array<int, string>   $includes   Relazioni o campi da includere
+     * @param array<int, string>   $excludes   Campi da escludere
+     * @param callable|null        $callback   Callback per manipolare i dati
      */
     public function execute(
         string $modelClass,
@@ -53,7 +53,7 @@ class XlsByModelClassAction
         }
 
         // Otteniamo i risultati
-        /** @var \Illuminate\Database\Eloquent\Collection<int, Model> $rows */
+        /** @var Collection $rows */
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
@@ -68,9 +68,11 @@ class XlsByModelClassAction
             });
         }
 
+        // Nascondiamo i campi esclusi
         if ([] !== $excludes) {
             $rows = $rows->map(function ($item) use ($excludes) {
-                if ($item instanceof Model) {
+                if (is_object($item) && method_exists($item, 'makeHidden')) {
+                    /* @var Model $item */
                     return $item->makeHidden($excludes);
                 }
 
@@ -85,9 +87,7 @@ class XlsByModelClassAction
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
-        /** @var Collection<int, mixed> $exportRows */
-        $exportRows = $rows;
-        $collectionExport = new CollectionExport($exportRows, $transKey);
+        $collectionExport = new CollectionExport($rows, $transKey);
         $filename = $this->getExportName($modelClass);
 
         return Excel::download($collectionExport, $filename);
