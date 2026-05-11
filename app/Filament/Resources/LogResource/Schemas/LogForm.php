@@ -2,24 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Filament\Resources\LogResource\Schemas;
+namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\Xot\app\Filament\Resources\LogResource\Schemas;
 
-use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class LogForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
         return [
-            'name' => TextInput::make('name')->required()->maxLength(255),
-            'path' => TextInput::make('path')->required()->maxLength(255),
-            'content' => Textarea::make('content')->columnSpanFull(),
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
         ];
     }
 }
