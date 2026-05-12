@@ -7,7 +7,8 @@ sources:
   - laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php
 confidence: high
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-12
+last_change: 2026-05-12 - Now uses `use HasWizard` trait (Filament standard), renamed getWizardSteps() to getSteps(); TicketForm now returns array<int, Step>
 tags: [filament, wizard, haswizard, xotbasewizardwidget, architecture, reinventing-wheel]
 related:
   - ../../../../Fixcity/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md

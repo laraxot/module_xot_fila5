@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\app\Filament\Resources\ModuleResource\Schemas;
+namespace Modules\Xot\Filament\Resources\ModuleResource\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
