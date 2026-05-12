@@ -18,13 +18,13 @@ class GetSicureArrayByModelAction
     {
         try {
             return $model->attributesToArray();
-        // @phpstan-ignore-next-line
+            // @phpstan-ignore-next-line
         } catch (\Throwable $e) {
             $data = [];
             foreach ($model->getAttributes() as $key => $value) {
                 try {
                     $data[$key] = $model->$key;
-                // @phpstan-ignore-next-line
+                    // @phpstan-ignore-next-line
                 } catch (\Throwable $e) {
                 }
             }

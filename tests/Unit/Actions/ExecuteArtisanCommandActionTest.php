@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Process;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 
-it('executes allowed artisan command correctly', function(): void {
+it('executes allowed artisan command correctly', function (): void {
     Event::fake();
     Process::fake([
         'php artisan migrate' => Process::result('Migration successful', '', 0),
@@ -25,13 +25,13 @@ it('executes allowed artisan command correctly', function(): void {
     Event::assertDispatched('artisan-command.completed');
 });
 
-it('throws exception for forbidden artisan command', function(): void {
+it('throws exception for forbidden artisan command', function (): void {
     $action = app(ExecuteArtisanCommandAction::class);
 
     expect(fn () => $action->execute('tinker'))->toThrow(\RuntimeException::class, 'Comando non consentito');
 });
 
-it('handles failed artisan command correctly', function(): void {
+it('handles failed artisan command correctly', function (): void {
     Event::fake();
     Process::fake([
         'php artisan migrate' => Process::result('', 'Migration failed', 1),

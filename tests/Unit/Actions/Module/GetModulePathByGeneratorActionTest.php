@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Module;
 
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
-it('returns path using module_path helper in happy path', function(): void {
+it('returns path using module_path helper in happy path', function (): void {
     config()->set('modules.paths.generator.config.path', 'config');
 
     $result = app(GetModulePathByGeneratorAction::class)->execute('Xot', 'config');
@@ -14,7 +14,7 @@ it('returns path using module_path helper in happy path', function(): void {
     expect($result)->toContain('/Modules/Xot/config');
 });
 
-it('returns module path for another existing generator directory', function(): void {
+it('returns module path for another existing generator directory', function (): void {
     config()->set('modules.paths.generator.lang.path', 'lang');
 
     $result = app(GetModulePathByGeneratorAction::class)->execute('Xot', 'lang');

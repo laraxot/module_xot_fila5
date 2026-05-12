@@ -6,14 +6,15 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
 use Modules\Xot\Services\ArtisanService;
-use Tests\TestCase;
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
+use Tests\TestCase;
+
 uses(TestCase::class);
 
-beforeEach(function(): void {
+beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
     Config::set('database.connections.mysql', [
         'driver' => 'sqlite',
@@ -22,7 +23,7 @@ beforeEach(function(): void {
     ]);
 });
 
-test('artisan service act method returns empty string for unknown commands', function(): void {
+test('artisan service act method returns empty string for unknown commands', function (): void {
     Request::replace(['module' => '']);
 
     $result = ArtisanService::act('unknown-command');
@@ -30,7 +31,7 @@ test('artisan service act method returns empty string for unknown commands', fun
     expect($result)->toBe('');
 });
 
-test('artisan service act method handles migrate command', function(): void {
+test('artisan service act method handles migrate command', function (): void {
     Request::replace(['module' => '']);
 
     // Mock Artisan facade - DB::purge() and DB::reconnect() work with configured connection
@@ -44,7 +45,7 @@ test('artisan service act method handles migrate command', function(): void {
     expect(str_contains($result, 'Migration completed'))->toBeTrue();
 });
 
-test('artisan service act method handles module parameter', function(): void {
+test('artisan service act method handles module parameter', function (): void {
     Request::replace(['module' => 'TestModule']);
 
     Artisan::shouldReceive('call')->once()->andReturn(0);
@@ -59,7 +60,7 @@ test('artisan service act method handles module parameter', function(): void {
     expect(str_contains($result, 'Module migration'))->toBeTrue();
 });
 
-test('artisan service handles non-string module parameter', function(): void {
+test('artisan service handles non-string module parameter', function (): void {
     Request::replace(['module' => ['not', 'a', 'string']]);
 
     Artisan::shouldReceive('call')->once()->andReturn(0);

@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\View;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 
-it('converts class names to view names correctly', function(): void {
+it('converts class names to view names correctly', function (): void {
     $action = app(GetViewByClassAction::class);
 
     // Mock view existence for any call
@@ -25,7 +25,7 @@ it('converts class names to view names correctly', function(): void {
     expect($result)->toBeString();
 });
 
-it('handles singular previous parts correctly', function(): void {
+it('handles singular previous parts correctly', function (): void {
     $action = app(GetViewByClassAction::class);
 
     // Test checkPrev logic directly

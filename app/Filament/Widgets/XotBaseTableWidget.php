@@ -25,9 +25,9 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     /**
      * Modello per la tabella: solo ramo {@see getModel()} (mai contesto RelationManager).
      *
-     * @return class-string<Model>
-     *
      * @throws \Exception Se non viene trovata una classe modello valida
+     *
+     * @return class-string<Model>
      */
     public function getModelClass(): string
     {
@@ -36,9 +36,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
             if (is_string($model)) {
                 Assert::classExists($model);
                 if (! is_subclass_of($model, Model::class, true)) {
-                    throw new \InvalidArgumentException(
-                        'Expected Eloquent model class-string, got: '.$model
-                    );
+                    throw new \InvalidArgumentException('Expected Eloquent model class-string, got: '.$model);
                 }
 
                 return $model;
@@ -103,7 +101,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
             $query = $query->getQuery();
         }
 
-        /** @var Builder|null $query */
+        /* @var Builder|null $query */
         return $table
             ->query($query)
             ->columns($this->getTableColumns())
@@ -138,6 +136,6 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         $search = trim($search);
 
-        return $search !== '' ? $search : null;
+        return '' !== $search ? $search : null;
     }
 }

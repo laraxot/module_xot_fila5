@@ -100,7 +100,7 @@ class GetFactoryAction
         // Estraiamo il nome del modulo dal namespace della classe
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
-        if ($module_parts === '') {
+        if ('' === $module_parts) {
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 

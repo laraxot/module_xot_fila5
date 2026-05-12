@@ -88,8 +88,6 @@ interface ModelContract
 
     /**
      * Create a new instance of the given model.
-     *
-     * @return static
      */
     public function newInstance(array $attributes = [], bool $exists = false): static;
 

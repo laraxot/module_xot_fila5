@@ -98,7 +98,7 @@ class CustomRelation extends Relation
         Assert::isArray($res);
         Assert::allIsInstanceOf($res, Model::class);
 
-        /** @var array<int, Model> $models */
+        /* @var array<int, Model> $models */
         return array_values($res);
     }
 
@@ -137,7 +137,7 @@ class CustomRelation extends Relation
         Assert::isArray($models);
         Assert::allIsInstanceOf($models, Model::class);
 
-        /** @var array<int, Model> $models */
+        /* @var array<int, Model> $models */
         return $this->related->newCollection($models);
     }
 

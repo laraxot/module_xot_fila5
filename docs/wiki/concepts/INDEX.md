@@ -1,18 +1,11 @@
-# Xot Module - concepts Index
-
-## Purpose
-Index for Xot module concepts.
-
-## On-Demand Loading
-
-```bash
-qmd search "Xot concepts" --limit 5
-```
-
-## See Also
-- [Ridondanze cross-cutting (hub)](./ridondanze-cross-cutting-codebase.md)
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
-
 ---
-*Updated: 2026-05-11*
+title: "concepts index — Xot"
+type: index
+tags: [concepts, Xot]
+created: 2026-05-11
+updated: 2026-05-11
+---
+
+# concepts Index — Xot
+
+Concetti specifici del modulo Xot. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).

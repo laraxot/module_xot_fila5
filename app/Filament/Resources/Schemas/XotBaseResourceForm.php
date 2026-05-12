@@ -32,6 +32,9 @@ class XotBaseResourceForm
         ];
     }
 
+    /**
+     * @return array<int, Step>
+     */
     public static function getWizardSteps(): array
     {
         return [];
