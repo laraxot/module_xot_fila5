@@ -36,12 +36,12 @@ use Modules\Lang\Providers\LangServiceProvider;
  * ## Allineamento Filament
  * - Navigazione delegata a `Wizard` / `Step` (documentazione ufficiale v5)
  * - Parallelo concettuale con `CreateRecord\Concerns\HasWizard` (pannello): li `getSteps()` + `hasSkippableSteps()`;
- *   qui `getWizardSteps()` + {@see hasSkippableWizardSteps()} — stesso componente {@see Wizard}, contesto Livewire widget (frontoffice/CMS), non pagina Resource.
+ *   qui `getSteps()` + {@see hasSkippableSteps()} — stesso componente {@see Wizard}, contesto Livewire widget (frontoffice/CMS), non pagina Resource.
  * - Questa classe NON sostituisce Filament, incornicia solo gli hook Laraxot comuni
  * - Hook disponibili per override dominio-specifici:
  *   - `configureWizardNextAction()` → label, tooltip, icon del pulsante Avanti
  *   - `configureWizardPreviousAction()` → label, tooltip, icon del pulsante Indietro
- *   - `getWizardSubmitAction()` → rendering pulsante Submit centralizzato in classe base
+ *   - Il submit button wizard è fornito dal trait HasWizard
  *
  * ## Politica Sicurezza
  * - Override `?step=` NON e mai implicito in produzione
@@ -65,12 +65,17 @@ use Modules\Lang\Providers\LangServiceProvider;
  * - Log dettagliato: compito del framework/logging.php, non del dominio
  *
  * @see Wizard
- * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
+ * @see \Filament\Resources\Pages\Concerns\HasWizard
  * @see LangServiceProvider
  * @see AutoLabelAction
  */
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
+    use HasWizard {
+        // Override the getWizardComponent method to customize it for widgets
+        getWizardComponent as getParentWizardComponent;
+    }
+
     /** Step iniziale (1..N) calcolato da mount e da `?step=` se consentito. */
     public int $wizardStartStep = 1;
 
@@ -78,19 +83,49 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
     /**
      * Elenco step del wizard (ordine = flusso utente). Ogni widget concreto lo implementa;
-     * la convenzione `getStepByName('foo')` → `getFooSchema()` resta nel metodo helper {@see getStepByName()}.
+     * Nome allineato allo standard Filament HasWizard::getSteps().
      *
      * @return array<int, Step>
      */
-    abstract public function getWizardSteps(): array;
+    abstract public function getSteps(): array;
 
     /**
      * Numero massimo di step del wizard (per validare la query `step`).
-     * Default: numero di elementi restituiti da {@see getWizardSteps()} (come `count(getSteps())` nel trait Filament `HasWizard`).
+     * Default: numero di elementi restituiti da {@see getSteps()} — allineato al trait Filament `HasWizard`.
      */
     protected function wizardMaxStep(): int
     {
-        return max(1, \count($this->getWizardSteps()));
+        return max(1, \count($this->getSteps()));
+    }
+
+    /**
+     * Override HasWizard::getWizardComponent() to customize for widget context.
+     * This avoids calling getSubmitFormAction() and getCancelFormAction() which only exist on Resource Pages.
+     */
+    public function getWizardComponent(): Component
+    {
+        $wizard = $this->getParentWizardComponent();
+
+        if (! $wizard instanceof Wizard) {
+            return $wizard;
+        }
+
+        $wizard
+            ->startOnStep(fn (): int => $this->wizardStartStep)
+            ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
+            ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
+            ->columnSpanFull()
+            ->skippable($this->hasSkippableSteps());
+
+        if ($this->queryStepOverrideAllowed()) {
+            $wizard->persistStepInQueryString('step');
+        }
+
+        if (! inAdmin()) {
+            $wizard = $wizard->view('pub_theme::components.wizard');
+        }
+
+        return $wizard;
     }
 
     /**
@@ -107,39 +142,9 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     public function getFormSchema(): array
     {
-        $wizard = $this->makeWizard($this->getWizardSteps())
-            // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
-            // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
-            // ->submitAction($this->getWizardSubmitAction());
-        ;
-
         return [
-            $wizard,
+            $this->getWizardComponent(),
         ];
-    }
-
-    /**
-     * Centralizza il contratto minimo di un wizard Xot:
-     * step iniziale coerente, full width, e step in query solo se consentito.
-     *
-     * @param array<int, Step> $steps
-     */
-    protected function makeWizard(array $steps): Wizard
-    {
-        $wizard = Wizard::make($steps)
-            ->startOnStep(fn (): int => $this->wizardStartStep)
-            ->columnSpanFull()
-            ->skippable($this->hasSkippableWizardSteps());
-
-        if ($this->queryStepOverrideAllowed()) {
-            $wizard->persistStepInQueryString('step');
-        }
-
-        if (! inAdmin()) {
-            $wizard = $wizard->view('pub_theme::components.wizard');
-        }
-
-        return $wizard;
     }
 
     /**
@@ -205,7 +210,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     protected function getCurrentStepName(): ?string
     {
-        $steps = $this->getWizardSteps();
+        $steps = $this->getSteps();
         $index = $this->wizardStartStep - 1; // 0-based index
 
         $step = $steps[$index] ?? null;
@@ -317,56 +322,11 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * Bottone submit sull'ultimo step del wizard (centralizzato in base).
-     *
-     * **Protocollo di rendering** (in ordine di priorita):
-     * 1. Se esiste `pub_theme::filament.wizard.submit-button` nel tema attivo: usa view tema
-     * 2. Fallback Filament: `Action::make('submit')->submit('save')->button()`
-     *
-     * **Perche NON Action::submit('submit')**:
-     * Action::submit crea un form Filament → il form si chiama sempre 'form', non 'submit'.
-     * Soluzione corretta: `<button type="submit">` nativo che delega al `<form wire:submit>` Blade.
-     */
-    protected function getWizardSubmitAction(): Htmlable
-    {
-        /** @var view-string $submitView */
-        $submitView = 'pub_theme::filament.wizard.submit-button';
-
-        if (view()->exists($submitView)) {
-            return new HtmlString((string) view($submitView)->render());
-        }
-
-        return Action::make('submit')
-            ->submit('save')
-            ->button();
-    }
-
-    protected function getStepByName(string $name): Step
-    {
-        $schema = Str::of($name)
-            ->snake()
-            ->studly()
-            ->prepend('get')
-            ->append('Schema')
-            ->toString();
-
-        $labelKey = 'fixcity::ticket_wizard.steps.'.$name.'.label';
-        $label = __($labelKey);
-
-        /** @var array<Htmlable|string> $schemaComponents */
-        $schemaComponents = $this->$schema();
-
-        return Step::make($label)
-            ->label($label)
-            ->schema($schemaComponents);
-    }
-
-    /**
-     * Allineato a {@see HasWizard::hasSkippableSteps()}:
-     * se `true`, gli step sono navigabili senza completare i campi obbligatori dello step corrente.
+     * Override di {@see HasWizard::hasSkippableSteps()} — stesso nome standard Filament.
+     * Se `true`, gli step sono navigabili senza completare i campi obbligatori dello step corrente.
      * Per flussi cittadini (privacy, consensi) il default è `false`.
      */
-    protected function hasSkippableWizardSteps(): bool
+    protected function hasSkippableSteps(): bool
     {
         return false;
     }
