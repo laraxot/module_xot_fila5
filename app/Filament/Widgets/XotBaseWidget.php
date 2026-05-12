@@ -71,11 +71,17 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, /* Ha
 
     /**
      * Ottiene lo schema del form.
-     * Deve essere implementato nelle classi figlie.
+     *
+     * I widget lineari lo sovrascrivono. I widget basati su trait Filament
+     * dedicati, come HasWizard, possono lasciare il default vuoto perché il
+     * trait sostituisce i componenti del form nel proprio metodo form().
      *
      * @return array<int|string, Component>
      */
-    abstract public function getFormSchema(): array;
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     /**
      * Configura il form del widget.
