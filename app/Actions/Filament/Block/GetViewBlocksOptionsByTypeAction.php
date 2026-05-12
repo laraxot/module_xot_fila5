@@ -41,7 +41,7 @@ class GetViewBlocksOptionsByTypeAction
         $globPattern = $basePath.'/*/resources/views/components/blocks/'.$type.'/*.blade.php';
         $files = File::glob($globPattern);
 
-        if ($files === false) {
+        if (false === $files) {
             return []; // Ritorna un array vuoto se non ci sono file
         }
 

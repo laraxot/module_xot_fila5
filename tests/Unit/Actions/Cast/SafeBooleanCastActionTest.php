@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 
-it('casts various values to boolean correctly', function(): void {
+it('casts various values to boolean correctly', function (): void {
     $action = app(SafeBooleanCastAction::class);
 
     // Booleans

@@ -9,6 +9,14 @@ module: "Xot"
 
 ## Log Entries
 
+## [2026-05-08] governance | GSD canonical source
+
+- fissata regola: `GSD` significa sempre `Get Shit Done`
+- repository canonico: https://github.com/gsd-build/get-shit-done
+- docs canoniche: https://gsd-build-get-shit-done.mintlify.app/
+- nuova pagina: `docs/wiki/concepts/gsd-canonical-source.md`
+- uso Xot: BMAD per story/vincoli, GSD per piano/verifica, Ruflo per checkpoint
+
 ## [2026-05-05] fix | PHPStan Error Resolution - spatie/browsershot (PACKAGE INSTALLATION)
 
 - **Problem**: PHPStan riportava `Class Spatie\Browsershot\Browsershot not found`
@@ -135,3 +143,10 @@ _No activity yet. Start by ingesting raw documents._
 - XotBasePolicy: zero dipendenze, system processes, API token
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
+
+## [2026-05-07] ingest | Array Keys Rule
+- **Created**: [array-keys-rule.md](./array-keys-rule.md)
+- **Rule**: Tutti i metodi che restituiscono array DEVONO usare chiavi stringhe
+- **Reason**: Leggibilità, Type-safety (PHPStan L10), manutenzione, consistenza
+- **Updated**: XotBaseResourceTable return types, structure.txt, index.md
+- **Commit**: docs: add array-keys-rule for Filament schemas

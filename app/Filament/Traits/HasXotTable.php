@@ -156,7 +156,7 @@ trait HasXotTable
         /**
          * $modelClass = $this->getModelClass();
          * if (! app(TableExistsByModelClassActions::class)->execute($modelClass)) {
-         * $this->notifyTableMissing();
+         * $this->notifyTableMissing();.
          *
          * return $this->configureEmptyTable($table);
          * }

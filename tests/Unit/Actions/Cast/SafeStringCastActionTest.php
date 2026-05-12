@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-it('casts various values to string correctly', function(): void {
+it('casts various values to string correctly', function (): void {
     $action = app(SafeStringCastAction::class);
 
     expect($action->execute('test'))->toBe('test');
@@ -21,6 +21,6 @@ it('casts various values to string correctly', function(): void {
     expect($action->execute(new \stdClass()))->toBe('');
 });
 
-it('uses static string cast method correctly', function(): void {
+it('uses static string cast method correctly', function (): void {
     expect(SafeStringCastAction::cast(456))->toBe('456');
 });

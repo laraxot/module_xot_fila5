@@ -9,7 +9,7 @@ use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Traits\HasTableFunctionsTrait;
 
-it('gets table columns', function(): void {
+it('gets table columns', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;
     };
@@ -20,7 +20,7 @@ it('gets table columns', function(): void {
         ->and($columns['name'])->toBeInstanceOf(TextColumn::class);
 });
 
-it('gets table actions', function(): void {
+it('gets table actions', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;
 
@@ -36,7 +36,7 @@ it('gets table actions', function(): void {
         ->and($actions['delete'])->toBeInstanceOf(Action::class);
 });
 
-it('gets table bulk actions', function(): void {
+it('gets table bulk actions', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;
     };
@@ -46,7 +46,7 @@ it('gets table bulk actions', function(): void {
         ->and($bulkActions['delete'])->toBeInstanceOf(BulkAction::class);
 });
 
-it('has default resource slug', function(): void {
+it('has default resource slug', function (): void {
     $class = new class {
         use HasTableFunctionsTrait;
 

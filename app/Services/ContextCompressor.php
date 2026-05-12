@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Services;
 
 use OpenAI\OpenAI;
+
 use function Safe\preg_split;
 
 /**
@@ -23,7 +24,7 @@ class ContextCompressor
     /**
      * Compress text to approximately targetChars characters.
      *
-     * @param  int  $targetChars  approximate target length in characters
+     * @param int $targetChars approximate target length in characters
      */
     public static function compress(string $text, int $targetChars = 20000): string
     {
@@ -87,16 +88,16 @@ class ContextCompressor
                 continue;
             }
             $s = trim($s);
-            if ($s === '') {
+            if ('' === $s) {
                 continue;
             }
             if (mb_strlen($out.' '.$s) > $targetChars) {
                 break;
             }
-            $out = $out === '' ? $s : ($out.' '.$s);
+            $out = '' === $out ? $s : ($out.' '.$s);
         }
 
-        if (mb_strlen($out) === 0) {
+        if (0 === mb_strlen($out)) {
             return mb_substr($text, 0, $targetChars);
         }
 

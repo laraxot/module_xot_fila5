@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Modules\Xot\Actions\File\FixPathAction;
 
-it('normalizes path slashes correctly', function(): void {
+it('normalizes path slashes correctly', function (): void {
     $action = app(FixPathAction::class);
 
     $path = 'some/path\with/mixed\\slashes';

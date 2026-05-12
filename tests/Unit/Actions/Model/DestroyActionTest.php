@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\DestroyAction;
 use Modules\Xot\Models\BaseModel;
 
-beforeEach(function(): void {
+beforeEach(function (): void {
     $action = app(DestroyAction::class);
 });
 
-it('deletes model and returns it', function(): void {
+it('deletes model and returns it', function (): void {
     // Create a mock model that tracks delete calls
     $mockModel = new class extends BaseModel {
         public bool $deleted = false;
@@ -31,7 +31,7 @@ it('deletes model and returns it', function(): void {
         ->and($mockModel->deleted)->toBeTrue();
 });
 
-it('flashes status message on successful delete', function(): void {
+it('flashes status message on successful delete', function (): void {
     $mockModel = new class extends BaseModel {
         public function delete(): bool
         {
@@ -44,7 +44,7 @@ it('flashes status message on successful delete', function(): void {
     expect(Session::get('status'))->toBe('eliminato');
 });
 
-it('flashes failure message when delete returns false', function(): void {
+it('flashes failure message when delete returns false', function (): void {
     $mockModel = new class extends BaseModel {
         public function delete(): bool
         {
