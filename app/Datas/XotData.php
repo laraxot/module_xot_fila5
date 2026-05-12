@@ -401,7 +401,7 @@ class XotData extends Data implements Wireable
         // If the class doesn't exist, try the alternative path (app/Filament/Resources)
         if (! class_exists($resourceClass)) {
             $resourceClass =
-                'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
+                'Modules\\'.$moduleName.'\\Filament\\Resources\\'.class_basename($class).'Resource';
         }
 
         if (! class_exists($resourceClass)) {
