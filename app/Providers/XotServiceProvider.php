@@ -142,12 +142,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-            if ($file->getExtension() !== 'php') {
+            if ('php' !== $file->getExtension()) {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-            if ($realPath === false) {
+            if (false === $realPath) {
                 continue;
             }
 
@@ -234,7 +234,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     private function registerEvents(): void
     {
-        Event::listen(MigrationsEnded::class, static function(): void {
+        Event::listen(MigrationsEnded::class, static function (): void {
             // Artisan::call('ide-helper:models -r -W');
         });
     }

@@ -10,7 +10,7 @@ use Modules\User\Models\User;
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
 use Modules\Xot\Models\XotBaseModel;
 
-it('creates table index correctly', function(): void {
+it('creates table index correctly', function (): void {
     // We use User model for testing as it surely has 'id' and 'email'
     // but we might want to avoid touching production tables.
     // Let's create a temporary table.
@@ -37,12 +37,12 @@ it('creates table index correctly', function(): void {
     Schema::dropIfExists('test_index_table');
 });
 
-it('throws exception for invalid model class', function(): void {
+it('throws exception for invalid model class', function (): void {
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
     expect(fn () => $action->execute(\stdClass::class, ['col']))->toThrow(\InvalidArgumentException::class);
 });
 
-it('throws exception for missing table', function(): void {
+it('throws exception for missing table', function (): void {
     $modelClass = new class extends XotBaseModel {
         protected $table = 'missing_table';
     };

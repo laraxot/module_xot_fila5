@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\String;
 
 use Modules\Xot\Actions\String\SanitizeAction;
 
-it('sanitizes strings correctly', function(): void {
+it('sanitizes strings correctly', function (): void {
     $action = app(SanitizeAction::class);
 
     $input = " <script>alert('xss')</script> <b>Hello</b> &amp; Welcome! ";

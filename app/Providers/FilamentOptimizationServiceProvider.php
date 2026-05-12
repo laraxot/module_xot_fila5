@@ -10,9 +10,10 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
-use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
+
+use Webmozart\Assert\Assert;
 
 /**
  * Service Provider per ottimizzazioni Filament.
@@ -95,7 +96,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             DB::enableQueryLog();
 
             // Log delle query alla fine della richiesta
-            app()->terminating(function(): void {
+            app()->terminating(function (): void {
                 $queries = DB::getQueryLog();
                 Assert::isArray($queries);
                 /** @var array<int, array<string, mixed>> $queries */

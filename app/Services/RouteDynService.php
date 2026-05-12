@@ -7,7 +7,9 @@ namespace Modules\Xot\Services;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+
 use function Safe\preg_replace;
+
 use Webmozart\Assert\Assert;
 
 /**
@@ -43,7 +45,7 @@ class RouteDynService
         $name = self::requireStringValue($v, 'name');
         $prefix = mb_strtolower($name);
         $param_name = self::getParamName($v, $namespace);
-        if ($param_name !== '') {
+        if ('' !== $param_name) {
             return $prefix.'/{'.$param_name.'}';
         }
 
@@ -86,7 +88,7 @@ class RouteDynService
 
         $namespace = self::requireStringValue($v, 'name');
         $namespace = str_replace(['{', '}'], '', $namespace);
-        if ($namespace === '') {
+        if ('' === $namespace) {
             return null;
         }
 
@@ -170,7 +172,7 @@ class RouteDynService
             $opts['only'] = $v['only'];
         }
 
-        if ($param_name === '' && ! isset($opts['only'])) {
+        if ('' === $param_name && ! isset($opts['only'])) {
             $opts['only'] = ['index'];
         }
 
@@ -217,7 +219,7 @@ class RouteDynService
                 static fn (mixed $method): bool => is_string($method),
             ));
 
-            /** @var array<int, string> $methods */
+            /* @var array<int, string> $methods */
             return $methods;
         }
 
@@ -245,7 +247,7 @@ class RouteDynService
         $name = self::requireStringValue($v, 'name');
         $as = Str::slug($name);
         $uses = self::getUses($v, $namespace);
-        if ($curr !== null) {
+        if (null !== $curr) {
             $uses = '\\'.self::$namespace_start.'\\'.$curr.'\\'.$uses;
         } else {
             $uses = '\\'.self::$namespace_start.'\\'.$uses;
@@ -265,7 +267,7 @@ class RouteDynService
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
-        if ($namespace_start !== null) {
+        if (null !== $namespace_start) {
             self::$namespace_start = $namespace_start;
         }
 
@@ -288,7 +290,7 @@ class RouteDynService
      */
     public static function createRouteResource(array $v, ?string $namespace): void
     {
-        if (! array_key_exists('name', $v) || $v['name'] === null) {
+        if (! array_key_exists('name', $v) || null === $v['name']) {
             return;
         }
         $name = self::requireStringValue($v, 'name');
@@ -308,13 +310,13 @@ class RouteDynService
         }
 
         $sub_namespace = self::getNamespace($v, $namespace);
-        $curr = $curr === null ? $sub_namespace : $curr;
+        $curr = null === $curr ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
         $typedSubs = array_values(array_filter(
             $subs,
             static fn (mixed $sub): bool => is_array($sub),
         ));
-        /** @var array<int, array<string, mixed>> $typedSubs */
+        /* @var array<int, array<string, mixed>> $typedSubs */
         self::dynamic_route($typedSubs, $sub_namespace, null, $curr);
     }
 
@@ -346,7 +348,7 @@ class RouteDynService
      */
     public static function prefixedResourceNames(string $prefix): array
     {
-        if (mb_substr($prefix, -1) === '.') {
+        if ('.' === mb_substr($prefix, -1)) {
             $prefix = mb_substr($prefix, 0, -1);
         }
 

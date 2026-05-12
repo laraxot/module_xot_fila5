@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Traits\HasCsrfToken;
 
-it('sets csrf token on mount', function(): void {
+it('sets csrf token on mount', function (): void {
     $token = 'test-token-123';
 
     // Mock session token
@@ -27,7 +27,7 @@ it('sets csrf token on mount', function(): void {
     \Mockery::close();
 });
 
-it('verifies csrf token', function(): void {
+it('verifies csrf token', function (): void {
     $token = 'secret-token';
 
     $class = new class {

@@ -6,7 +6,7 @@ namespace Modules\Xot\Tests\Unit\Actions\String;
 
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 
-it('normalizes driver names correctly', function(): void {
+it('normalizes driver names correctly', function (): void {
     $action = app(NormalizeDriverNameAction::class);
 
     expect($action->execute('360-Dialog'))->toBe('360dialog');

@@ -10,40 +10,40 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
 use Modules\Xot\Traits\EnumTrait;
 
-it('gets label via translation', function(): void {
+it('gets label via translation', function (): void {
     // We expect translation keys like 'test_enum.alpha.label'
     // Since we don't have actual translations for TestEnum, it will likely return the key or fallback
     $label = TestEnum::ALPHA->getLabel();
     expect($label)->toBeString();
 });
 
-it('gets color via translation', function(): void {
+it('gets color via translation', function (): void {
     $color = TestEnum::ALPHA->getColor();
     expect($color)->toBeString();
 });
 
-it('gets icon via translation', function(): void {
+it('gets icon via translation', function (): void {
     $icon = TestEnum::ALPHA->getIcon();
     expect($icon)->toBeString();
 });
 
-it('gets description via translation', function(): void {
+it('gets description via translation', function (): void {
     $description = TestEnum::ALPHA->getDescription();
     expect($description)->toBeString();
 });
 
-it('gets searchable values', function(): void {
+it('gets searchable values', function (): void {
     expect(TestEnum::getSearchable())->toBe(['alpha', 'beta']);
 });
 
-it('gets form schema', function(): void {
+it('gets form schema', function (): void {
     $schema = TestEnum::getFormSchema();
     expect($schema)->toBeArray()
         ->and($schema)->toHaveCount(2)
         ->and($schema['alpha'])->toBeInstanceOf(TextInput::class);
 });
 
-it('adds columns to blueprint in create context', function(): void {
+it('adds columns to blueprint in create context', function (): void {
     $table = \Mockery::mock(Blueprint::class);
 
     // Expect string('alpha')->nullable()
@@ -62,7 +62,7 @@ it('adds columns to blueprint in create context', function(): void {
     expect(true)->toBeTrue(); // Assertion for mock execution
 });
 
-it('adds columns to blueprint in update context with hasColumn check', function(): void {
+it('adds columns to blueprint in update context with hasColumn check', function (): void {
     $table = \Mockery::mock(Blueprint::class);
     $migration = \Mockery::mock(XotBaseMigration::class);
 
@@ -84,7 +84,7 @@ it('adds columns to blueprint in update context with hasColumn check', function(
     expect(true)->toBeTrue();
 });
 
-it('updates columns calls columns', function(): void {
+it('updates columns calls columns', function (): void {
     $table = \Mockery::mock(Blueprint::class);
     $migration = \Mockery::mock(XotBaseMigration::class);
 
@@ -97,7 +97,7 @@ it('updates columns calls columns', function(): void {
     expect(true)->toBeTrue();
 });
 
-it('drops columns', function(): void {
+it('drops columns', function (): void {
     $table = \Mockery::mock(Blueprint::class);
     $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
 
@@ -107,11 +107,11 @@ it('drops columns', function(): void {
     expect(true)->toBeTrue();
 });
 
-it('gets column names', function(): void {
+it('gets column names', function (): void {
     expect(TestEnum::getColumnNames())->toBe(['alpha', 'beta']);
 });
 
-it('has default empty column definitions', function(): void {
+it('has default empty column definitions', function (): void {
     // Need a different enum without overrides
     $enum = new class {
         use EnumTrait;

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -76,7 +77,7 @@ class SendMailByRecordAction
         );
         SmtpData::make()->send($emailData);
 
-        /** @var \Illuminate\Database\Eloquent\Relations\Relation $logs */
+        /** @var Relation $logs */
         $logs = $record->myLogs();
         $logs->create([
             'act' => 'sendMail',

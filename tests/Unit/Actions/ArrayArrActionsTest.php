@@ -16,7 +16,7 @@ use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 use Modules\Xot\Actions\Array\SaveJsonArrayAction as ArraySaveJsonArrayAction;
 use Modules\Xot\Actions\Array\SavePhpArrayAction as ArraySavePhpArrayAction;
 
-it('normalizes nested numeric strings in diff fixType for Arr namespace', function(): void {
+it('normalizes nested numeric strings in diff fixType for Arr namespace', function (): void {
     $input = [
         ['a' => '1', 'b' => 'x'],
         ['c' => '2.5'],
@@ -30,11 +30,11 @@ it('normalizes nested numeric strings in diff fixType for Arr namespace', functi
     ]);
 });
 
-it('throws when fixType receives a non-array item for Arr namespace', function(): void {
+it('throws when fixType receives a non-array item for Arr namespace', function (): void {
     ArrDiffAssocRecursiveAction::fixType([['ok' => '1'], 'invalid']);
 })->throws(Exception::class);
 
-it('returns recursive diff in Arr namespace', function(): void {
+it('returns recursive diff in Arr namespace', function (): void {
     $action = new ArrDiffAssocRecursiveAction();
     $left = [
         ['id' => '1', 'name' => 'a'],
@@ -49,7 +49,7 @@ it('returns recursive diff in Arr namespace', function(): void {
     ]);
 });
 
-it('normalizes nested numeric strings in diff fixType for Array namespace', function(): void {
+it('normalizes nested numeric strings in diff fixType for Array namespace', function (): void {
     $input = [
         ['a' => '10', 'b' => 'x'],
     ];
@@ -61,11 +61,11 @@ it('normalizes nested numeric strings in diff fixType for Array namespace', func
     ]);
 });
 
-it('throws when fixType receives a non-array item for Array namespace', function(): void {
+it('throws when fixType receives a non-array item for Array namespace', function (): void {
     ArrayDiffAssocRecursiveAction::fixType([123]);
 })->throws(Exception::class);
 
-it('returns recursive diff in Array namespace', function(): void {
+it('returns recursive diff in Array namespace', function (): void {
     $action = new ArrayDiffAssocRecursiveAction();
     $left = [
         ['id' => '1', 'name' => 'alpha'],
@@ -80,7 +80,7 @@ it('returns recursive diff in Array namespace', function(): void {
     ]);
 });
 
-it('covers all branches of range intersect in Arr namespace', function(): void {
+it('covers all branches of range intersect in Arr namespace', function (): void {
     $action = new ArrRangeIntersectAction();
 
     expect($action->execute(1, 5, 2, 7))->toBe([2, 5])
@@ -92,7 +92,7 @@ it('covers all branches of range intersect in Arr namespace', function(): void {
         ->and($action->execute(4, 10, 2, 4))->toBe([4, 4]);
 });
 
-it('covers all branches of range intersect in Array namespace', function(): void {
+it('covers all branches of range intersect in Array namespace', function (): void {
     $action = new ArrayRangeIntersectAction();
 
     expect($action->execute(1, 5, 2, 7))->toBe([2, 5])
@@ -104,7 +104,7 @@ it('covers all branches of range intersect in Array namespace', function(): void
         ->and($action->execute(4, 10, 2, 4))->toBe([4, 4]);
 });
 
-it('writes JSON and PHP arrays via Arr actions', function(): void {
+it('writes JSON and PHP arrays via Arr actions', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -122,7 +122,7 @@ it('writes JSON and PHP arrays via Arr actions', function(): void {
         ->and((string) file_get_contents($phpFile))->toContain('return');
 });
 
-it('writes JSON and PHP arrays via Array actions', function(): void {
+it('writes JSON and PHP arrays via Array actions', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-array-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -140,7 +140,7 @@ it('writes JSON and PHP arrays via Array actions', function(): void {
         ->and((string) file_get_contents($phpFile))->toContain('return');
 });
 
-it('dispatches save strategy by format in SaveArrayAction', function(): void {
+it('dispatches save strategy by format in SaveArrayAction', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-save-array-action-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -152,12 +152,12 @@ it('dispatches save strategy by format in SaveArrayAction', function(): void {
         ->and($action->execute(['y' => 2], $phpFile, 'php'))->toBeTrue();
 });
 
-it('throws on unsupported save format in SaveArrayAction', function(): void {
+it('throws on unsupported save format in SaveArrayAction', function (): void {
     $action = new ArrSaveArrayAction();
     $action->execute(['x' => 1], '/tmp/unused', 'xml');
 })->throws(InvalidArgumentException::class);
 
-it('converts mixed PHP arrays to RawJs correctly', function(): void {
+it('converts mixed PHP arrays to RawJs correctly', function (): void {
     $action = new ArrayToRawJsAction();
 
     $raw = $action->execute([

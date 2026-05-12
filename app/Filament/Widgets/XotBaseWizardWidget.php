@@ -9,6 +9,7 @@ use Filament\Actions\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
+use Filament\Support\Concerns\EvaluatesClosures;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
@@ -62,14 +63,16 @@ use Modules\Lang\Providers\LangServiceProvider;
  * - Log dettagliato: compito del framework/logging.php, non del dominio
  *
  * @see Wizard
- * @see \Filament\Actions\Concerns\HasWizard
+ * @see HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
  * @see LangServiceProvider
  * @see AutoLabelAction
  */
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
-    use HasWizard; // Usa il trait ufficiale Filament per non reinventare la ruota
+    // Usa il trait ufficiale Filament per non reinventare la ruota
+    use EvaluatesClosures;
+    use HasWizard; // Adapter richiesto da HasWizard (evaluate())
 
     protected int|string|array $columnSpan = 'full';
 
@@ -86,11 +89,10 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     public function getFormSchema(): array
     {
-        $wizard = $this->makeWizard($this->getWizardSteps())
-            // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
-            // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
-            // ->submitAction($this->getWizardSubmitAction());
-        ;
+        $wizard = $this->makeWizard($this->getWizardSteps());
+        // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
+        // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
+        // ->submitAction($this->getWizardSubmitAction());
 
         return [
             $wizard,
@@ -342,7 +344,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         return Action::make('submit')
-            ->submit('save')
+            ->action('submit')
             ->button();
     }
 
@@ -398,7 +400,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         }
 
         $raw = request()->query('step');
-        if ($raw === null || $raw === '') {
+        if (null === $raw || '' === $raw) {
             return 1;
         }
 
@@ -421,7 +423,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
             return 1;
         }
 
-        if (! $this->queryStepOverrideAllowed() && $step !== 1) {
+        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
             return 1;
         }
 
@@ -475,14 +477,14 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     protected function getWizardComponentKey(): string
     {
         $schema = $this->getSchema('form');
-        if ($schema === null) {
+        if (null === $schema) {
             throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
         }
 
         foreach ($schema->getComponents(withHidden: true) as $component) {
             if ($component instanceof Wizard) {
                 $key = $component->getKey();
-                if ($key === null || $key === '') {
+                if (null === $key || '' === $key) {
                     throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
                 }
 

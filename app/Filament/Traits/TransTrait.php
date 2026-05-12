@@ -176,7 +176,7 @@ trait TransTrait
             return $trans;
         }
 
-        if ($trans === null) {
+        if (null === $trans) {
             $newTrans = Str::of($key)
                 ->between('::', '.')
                 ->replace('_', ' ')
@@ -259,7 +259,7 @@ trait TransTrait
         $namespace = static::class;
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
-        if ($moduleName === '') {
+        if ('' === $moduleName) {
             throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 

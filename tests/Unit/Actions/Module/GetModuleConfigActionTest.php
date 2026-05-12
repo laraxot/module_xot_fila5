@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Module;
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
-it('returns config array from module config file', function(): void {
+it('returns config array from module config file', function (): void {
     $tempDir = sys_get_temp_dir().'/xot_modcfg_'.uniqid('', true);
     mkdir($tempDir, 0755, true);
 
@@ -31,7 +31,7 @@ it('returns config array from module config file', function(): void {
     }
 });
 
-it('throws when config file is missing', function(): void {
+it('throws when config file is missing', function (): void {
     $pathAction = Mockery::mock(GetModulePathByGeneratorAction::class);
     $pathAction->shouldReceive('execute')
         ->once()
@@ -44,7 +44,7 @@ it('throws when config file is missing', function(): void {
         ->toThrow(Exception::class, 'Config file not found');
 });
 
-it('throws when config file does not return array', function(): void {
+it('throws when config file does not return array', function (): void {
     $tempDir = sys_get_temp_dir().'/xot_modcfg_scalar_'.uniqid('', true);
     mkdir($tempDir, 0755, true);
 

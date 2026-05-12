@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
-it('builds a streamed pdf download response for the generic test view', function(): void {
+it('builds a streamed pdf download response for the generic test view', function (): void {
     Facade::setFacadeApplication(app());
 
     $response = app(MakePdfSpatieTestAction::class)->execute([
