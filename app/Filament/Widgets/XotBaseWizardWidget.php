@@ -60,8 +60,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     abstract public function getSteps(): array;
 
-   
-
     /**
      * Costruisce il {@see Wizard} direttamente — NON tramite `getParentWizardComponent()`.
      *
