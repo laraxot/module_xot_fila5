@@ -155,6 +155,7 @@ abstract class XotBaseResource extends FilamentResource
         if (class_exists($class)) {
             return $class::configure($schema);
         }
+
         return $schema->components(static::getInfolistSchema());
     }
 
