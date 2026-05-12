@@ -13,7 +13,7 @@ related:
   - concepts/filament-wizard-architecture-right-way.md
 ---
 
-## Status: ✅ IMPLEMENTATO, RAFFINATO E DRY+KISS (2026-05-12)
+## Status: ✅ IMPLEMENTATO, RAFFINATO, DRY+KISS COMPLETO (2026-05-12)
 
 ## Motivazione
 
@@ -31,15 +31,21 @@ getSteps()            → return [] (override obbligatorio)
 hasSkippableSteps()   → return false
 ```
 
-### `getWizardComponent()` — override NECESSARIO
-`HasWizard::getWizardComponent()` chiama:
-- `$this->getCancelFormAction()` — esiste solo su `CreateRecord`/`EditRecord`, NON sui widget → **ORA DEFINITO** in XotBaseWizardWidget (ritorna `null`)
-- `$this->getSubmitFormAction()` — già definito in XotBaseWizardWidget
+### `getWizardComponent()` — override OBBLIGATORIO, NON chiamare il parent
 
-**Regola**: override SEMPRE su `XotBaseWizardWidget`, usa `makeWizard()` che aggiunge:
-- view tema pub_theme per frontoffice
+`HasWizard::getWizardComponent()` (rinominato `getParentWizardComponent()` via alias) chiama internamente:
+- `$this->getCancelFormAction()` — esiste solo su `CreateRecord`/`EditRecord`
+- `$this->getSubmitFormAction()` — idem
+- `$this->getSubmitFormLivewireMethodName()` — idem
+
+**`$this->getParentWizardComponent()` NON VA MAI CHIAMATO** — causerebbe `BadMethodCallException`.
+L'alias `getParentWizardComponent` esiste solo come documentazione dell'intenzione, non per l'uso runtime.
+
+**Regola**: costruire `Wizard::make($this->getSteps())` direttamente con la policy Laraxot:
+- `startOnStep()` con `$wizardStartStep`
 - `persistStepInQueryString` con policy sicurezza
 - `configureWizardNextAction` / `configureWizardPreviousAction` hooks
+- view `pub_theme::components.wizard` per frontoffice
 
 ### `getFormSchema()` — dead code ma necessario per il contratto
 `XotBaseWidget` dichiara `abstract public function getFormSchema(): array`.
@@ -60,7 +66,8 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
     abstract public function getSteps(): array; // standard Filament
 
-    // Unico punto di costruzione Wizard — policy Laraxot inline, NO makeWizard() intermedio
+    // NOTA: NON chiamare $this->getParentWizardComponent()
+    // Il trait chiama getCancelFormAction()/getSubmitFormAction() che NON esistono sui widget.
     public function getWizardComponent(): Component
     {
         $wizard = Wizard::make($this->getSteps())
@@ -84,12 +91,42 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 }
 ```
 
-### Metodi rimossi (erano viola di DRY+KISS)
+### Metodi rimossi (erano violazione di DRY+KISS)
 
 | Metodo | Motivo rimozione |
 |--------|------------------|
-| `makeWizard(array $steps)` | Wrapper intermedio inutile — logica ora inline in `getWizardComponent()` |
-| Bridge `getSteps()→getSteps()` | Abolito con rename a `getSteps()` standard Filament |
+| `makeWizard(array $steps)` | Wrapper intermedio — logica ora inline in `getWizardComponent()` |
+| `getWizardStartStep()` | Alias 1:1 di `getStartStep()` — viola KISS |
+| `getWizardSchemaWrapperKey()` | Usato solo da `normalizeWizardFormState()` (rimosso) |
+| `validateWizardSubmission()` | Corpo vuoto, mai chiamato da nessun widget |
+| `prepareWizardFormData(array $data)` | Funzione identità `return $data`, mai chiamata |
+| `isLastStep()` | Mai usato in tutto il codebase |
+| `isFirstStep()` | Mai usato in tutto il codebase |
+| `getCurrentStepName()` | Mai usato in tutto il codebase |
+| `beforeNextStep()` | Hook mai invocato nemmeno da `nextStep()` |
+| `afterNextStep()` | Hook mai invocato, corpo vuoto |
+| `beforePreviousStep()` | Hook mai invocato nemmeno da `previousStep()` |
+| `afterPreviousStep()` | Hook mai invocato, corpo vuoto |
+| `normalizeWizardFormState()` | Mai chiamato fuori dalla classe base |
+| `stringKeyed()` | Usato solo da `normalizeWizardFormState()` (rimosso) |
+
+### Metodi mantenuti (tutti con chiamanti reali)
+
+| Metodo | Chiamante |
+|--------|-----------|
+| `wizardMaxStep()` | `resolveInitialStepFromQuery()`, `nextStep()`, `previousStep()` |
+| `defaultFormData()` | `initWizardState()` |
+| `initWizardState()` | `mount()` nei widget dominio |
+| `configureWizardNextAction()` | `getWizardComponent()` |
+| `configureWizardPreviousAction()` | `getWizardComponent()` |
+| `hasSkippableSteps()` | `getWizardComponent()` |
+| `wizardAllowStepQueryExtra()` | `queryStepOverrideAllowed()` (overridato da `CreateTicketWizardWidget`) |
+| `queryStepOverrideAllowed()` | `getWizardComponent()`, `resolveInitialStepFromQuery()` |
+| `resolveInitialStepFromQuery()` | `initWizardState()` |
+| `getWizardComponentKey()` | `nextStep()`, `previousStep()` |
+| `nextStep()` | Blade `wire:click` |
+| `previousStep()` | Blade `wire:click` |
+| `goToStep()` | API pubblica Blade |
 
 ## Widget di dominio (pattern corretto)
 

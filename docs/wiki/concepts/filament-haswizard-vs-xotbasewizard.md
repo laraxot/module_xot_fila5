@@ -83,10 +83,12 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 Ma `XotBaseWidget::getFormSchema()` è `abstract` → PHP obbliga l'implementazione.
 **Soluzione**: `return []` con docblock esplicativo. Non rimuovere.
 
-### `getWizardComponent()` — OVERRIDE OBBLIGATORIO + DRY+KISS
+### `getWizardComponent()` — OVERRIDE OBBLIGATORIO, NON chiamare il parent
 
-Il trait chiama `getCancelFormAction()` che non esiste sui widget.
-Il metodo del trait viene rinominato con `as` per preservarlo se serve.
+Il trait chiama `getCancelFormAction()`, `getSubmitFormAction()` e `getSubmitFormLivewireMethodName()`
+che NON esistono sui widget. **`$this->getParentWizardComponent()` causerebbe `BadMethodCallException`.**
+
+L'alias `getParentWizardComponent` è nominale (documenta l'intenzione) — non invocarlo mai a runtime.
 Logica Laraxot inline — `makeWizard()` ABOLITO (era wrapper intermedio).
 
 ### Architettura finale (DRY + KISS)
