@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-use BladeUI\Icons\Exceptions\CannotRegisterIconSet;
 use BladeUI\Icons\Exceptions\SvgNotFound;
 use BladeUI\Icons\Factory as BladeIconsFactory;
 use Illuminate\Support\Facades\Blade;
@@ -58,7 +57,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-        if ($this->name === '') {
+        if ('' === $this->name) {
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -86,7 +85,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-        if ($this->name === '') {
+        if ('' === $this->name) {
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -96,7 +95,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerTranslations(): void
     {
-        if ($this->name === '') {
+        if ('' === $this->name) {
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -147,7 +146,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
-        if ($comps->count() === 0) {
+        if (0 === $comps->count()) {
             return;
         }
         $commands = $comps->toArray();
