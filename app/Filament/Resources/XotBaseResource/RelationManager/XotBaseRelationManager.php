@@ -47,7 +47,7 @@ abstract class XotBaseRelationManager extends RelationManager
     /**
      * Get form schema.
      *
-     * @return array<string|int, Component>
+     * @return array<string|int, mixed>
      */
     final public function getFormSchema(): array
     {

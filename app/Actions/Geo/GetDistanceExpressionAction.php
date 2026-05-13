@@ -19,11 +19,10 @@ class GetDistanceExpressionAction
     /**
      * Genera l'espressione SQL per calcolare la distanza tra due punti.
      *
-     * @param float       $latitude  Latitudine del punto di riferimento
-     * @param float       $longitude Longitudine del punto di riferimento
-     * @param string|null $alias     Alias per l'espressione (opzionale)
-     *
-     * @return string Espressione SQL per il calcolo della distanza
+     * @param  float  $latitude  Latitudine del punto di riferimento
+     * @param  float  $longitude  Longitudine del punto di riferimento
+     * @param  string|null  $alias  Alias per l'espressione (opzionale)
+     * @return Expression Espressione SQL per il calcolo della distanza
      */
     public function execute(
         float $latitude,
@@ -40,10 +39,11 @@ class GetDistanceExpressionAction
             ))
         ";
 
-        if (null !== $alias) {
+        if ($alias !== null) {
             $sql .= " AS {$alias}";
         }
 
-        return trim($sql);
+        /* @phpstan-ignore-next-line */
+        return DB::raw($sql);
     }
 }

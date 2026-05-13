@@ -12,6 +12,67 @@ module: "Xot"
 - Created module index.md
 - Ready for on-demand loading via QMD
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+## [2026-05-08] governance | GSD canonical source
+
+- fissata regola: `GSD` significa sempre `Get Shit Done`
+- repository canonico: https://github.com/gsd-build/get-shit-done
+- docs canoniche: https://gsd-build-get-shit-done.mintlify.app/
+- nuova pagina: `docs/wiki/concepts/gsd-canonical-source.md`
+- uso Xot: BMAD per story/vincoli, GSD per piano/verifica, Ruflo per checkpoint
+
+=======
+>>>>>>> 01dce8d29 (initial commit)
+## [2026-05-05] fix | PHPStan Error Resolution - spatie/browsershot (PACKAGE INSTALLATION)
+
+- **Problem**: PHPStan riportava `Class Spatie\Browsershot\Browsershot not found`
+- **Analysis**: Il codice che usa Browsershot è attivamente usato in produzione:
+  - `MakePdfSpatieTestAction` - Generazione PDF
+  - `ExportChartPngQueueableAction` - Export chart PNG
+  - `ExportChartSvgQueueableAction` - Export chart SVG
+  - Test: `MakePdfSpatieTestActionTest`
+- **Fix**: Aggiunto `"spatie/browsershot": "^5.0"` a `Modules/Xot/composer.json`
+- **Command**: `composer update spatie/browsershot`
+- **Philosophy**: Se il codice è usato → installa la dipendenza; se è dead code → rimuovi
+- **Status**: ⏳ Installing
+- **Story**: 8-121
+
+## [2026-05-05] fix | PHPStan Error Resolution - spatie/laravel-model-states (DEAD CODE REMOVAL)
+
+- **Problem**: PHPStan riportava `Class Spatie\ModelStates\State not found` in `XotBaseState` e `XotBaseTransition`
+- **Analysis**: Nessuna classe nel codebase estende `XotBaseState` o `XotBaseTransition` - codice orfano
+- **Attempted Fix #1**: Aggiungere `spatie/laravel-model-states` al composer.json
+- **Issue**: Conflitto di dipendenze con PHP 8.3 e illuminate/contracts
+- **Final Fix**: RIMOZIONE dead code (YAGNI principle - You Ain't Gonna Need It)
+- **Files Removed**:
+  - `Modules/Xot/app/States/XotBaseState.php`
+  - `Modules/Xot/app/States/Transitions/XotBaseTransition.php`
+  - `Modules/Xot/tests/Unit/XotBaseTransitionTest.php`
+  - `Modules/Xot/app/States/` directory (vuota)
+- **Philosophy**: 
+  - Zero tolerance per errori ignorati
+  - Se non puoi installare la dipendenza e il codice non è usato → rimuovi il codice
+  - YAGNI: Don't add functionality until you need it
+- **Status**: ✅ Risolto (rimosso ~20 errori PHPStan)
+- **Story**: 8-121
+
+## [2026-05-04] architecture | XotBaseWizardWidget view calculation rule
+
+- documentata regola architetturale: sottoclassi di `XotBaseWizardWidget` NON devono definire `$view` property
+- la view viene calcolata automaticamente: admin → default Filament, frontoffice → `pub_theme::components.wizard`
+- aggiunta documentazione: `docs/wiki/concepts/xotbasewizard-view-calculation.md`
+- creata regola Windsurf: `.windsurf/rules/xotbasewizard-no-view-property.mdc`
+- aggiornato PHPDoc in `XotBaseWizardWidget.php` con dettagli view resolution
+- audit: nessuna violazione trovata nei moduli esistenti
+
+## [2026-04-30] governance | Claude Code Laraxot rules path-scoped
+
+- aggiunta pagina `docs/wiki/concepts/claude-code-laraxot-rules-path-scoping.md`.
+- allineata la configurazione `.claude/rules` alla documentazione ufficiale Claude Code: le rules specifiche di codice devono avere frontmatter `paths`.
+- obiettivo: ridurre contesto always-on mantenendo attive le regole XotBase/Filament solo sui file pertinenti.
+
 ## [2026-04-28] dependency | matrice compatibilita' pacchetti Laravel 13 in Xot
 
 - verificata compatibilita' reale dei pacchetti rimossi nel passaggio a Laravel 13 con focus su runtime `php 8.3`.
@@ -47,13 +108,6 @@ module: "Xot"
 - **regola root**: `docs/wiki/concepts/context-compression-discipline.md`
 - **scope Xot**: base classes e documentazione framework vanno recuperate tramite QMD/context-mode con snippet minimi quando uno skill BMAD rischia il limite `131072 tokens`.
 - **verifica**: context-mode plugin/MCP connessi; QMD indicizza moduli/temi/root/bashscripts.
-
-## [2026-05-12] ops | opencode compaction overflow hardening
-
-- installato `@tarquinen/opencode-dcp@latest` nel config globale OpenCode.
-- creato `opencode.json` al git root con `compaction.auto=true`, `compaction.prune=true`, `compaction.reserved=40000`.
-- chiarito che il punto operativo corretto e' il git root, non `laravel/opencode.json`.
-- aggiornata la source wiki `sources/context-compression-and-retrieval.md` per riflettere il nuovo setup stabile.
 
 ## [2026-04-22] governance | Filament wizard summary via Infolists
 
@@ -97,3 +151,14 @@ _No activity yet. Start by ingesting raw documents._
 - XotBasePolicy: zero dipendenze, system processes, API token
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
+<<<<<<< HEAD
+
+## [2026-05-07] ingest | Array Keys Rule
+- **Created**: [array-keys-rule.md](./array-keys-rule.md)
+- **Rule**: Tutti i metodi che restituiscono array DEVONO usare chiavi stringhe
+- **Reason**: Leggibilità, Type-safety (PHPStan L10), manutenzione, consistenza
+- **Updated**: XotBaseResourceTable return types, structure.txt, index.md
+- **Commit**: docs: add array-keys-rule for Filament schemas
+=======
+>>>>>>> 01dce8d29 (initial commit)
+>>>>>>> e8a46704a (initial commit)

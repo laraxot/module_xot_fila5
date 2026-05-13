@@ -107,20 +107,15 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<int|string, Component|Htmlable|string>
      */
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
+    abstract public static function getFormSchema(): array;
 
     final public static function form(Schema $schema): Schema
     {
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            $configured = $form_class::configure($schema);
-            if ($configured instanceof Schema) {
-                return $configured;
-            }
+            /* @phpstan-ignore-next-line */
+            return $form_class::configure($schema);
         }
 
         /** @var array<int|string, Component|Htmlable|string> $components */
@@ -139,6 +134,7 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * Schema dell'infolist: tutte le risorse devono delegare qui.
      *
+     * @return array<string, \Filament\Schemas\Components\Component>
      * @return array<string, Component>
      */
     public static function getInfolistSchema(): array

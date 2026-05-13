@@ -50,6 +50,10 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
+        if ($this->view !== '') {
+            return $this->view;
+        }
+
         $view = Str::of(static::class)
             ->after('Modules\\')
             ->before('\\Filament\\')
