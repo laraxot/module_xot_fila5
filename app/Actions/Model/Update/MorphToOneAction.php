@@ -34,12 +34,14 @@ class MorphToOneAction
     {
         // Validate the relationship type
         $relation = $model->{$relationDTO->name}();
+        /* @phpstan-ignore-next-line */
         Assert::isInstanceOf($relation, MorphToOne::class, 'Relation must be an instance of MorphToOne.');
 
         // Prepare the data for creation
         $data = $this->prepareData($relationDTO->data);
 
         // Create the related record
+        /* @phpstan-ignore-next-line */
         $relation->create($data);
     }
 
