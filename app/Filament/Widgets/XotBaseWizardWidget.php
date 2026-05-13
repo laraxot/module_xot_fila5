@@ -71,7 +71,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
         // Customizzazioni Laraxot
         $wizard->startOnStep($this->wizardStartStep);
-        
+
         if (! inAdmin()) {
             $wizard = $wizard->view('pub_theme::components.wizard');
         }
