@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Xot\Filament\Resources\LogResource\Schemas;
+
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Section;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+
+class LogForm extends XotBaseResourceForm
+{
+    /**
+     * @return array<int|string, mixed>
+     */
+    public static function getFormSchema(): array
+    {
+        return [
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
+        ];
+    }
+}
