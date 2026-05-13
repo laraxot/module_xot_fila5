@@ -16,7 +16,6 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 
 /**
  * Undocumented class.

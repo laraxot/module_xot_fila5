@@ -55,10 +55,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         getWizardComponent as getParentWizardComponent;
     }
 
-    /** @var class-string */
-    protected static string $resource;
-
-    protected ?int $wizardStartStep = null;
+    use EvaluatesClosures;
 
     public int $wizardStartStep = 1;
 
@@ -74,8 +71,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     /**
      * Recupera lo step iniziale dall'URL o usa lo step iniziale di default.
      *
-     * Utilizza la proprietà $wizardStartStep se definita più avanti nel stack,
-     * altrimenti restituisce 1.
+     * @param array<int, Step> $steps
      */
     public function getStartStep(): int
     {
