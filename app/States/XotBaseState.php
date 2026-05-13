@@ -10,6 +10,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
+
 abstract class XotBaseState implements StateContract
 {
     use TransTrait;

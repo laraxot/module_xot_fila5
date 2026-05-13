@@ -52,9 +52,9 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         getWizardComponent as getParentWizardComponent;
     }
 
-    public int $wizardStartStep = 1;
-
     use EvaluatesClosures;
+
+    public int $wizardStartStep = 1;
 
     protected int|string|array $columnSpan = 'full';
 
@@ -143,7 +143,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param  array<int, Step>  $steps
+     * @param array<int, Step> $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
