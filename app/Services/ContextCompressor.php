@@ -83,9 +83,6 @@ class ContextCompressor
         $sentences = preg_split('/(?<=[.!?])\s+/u', strip_tags($text));
         $out = '';
         foreach ($sentences as $s) {
-            if (! is_string($s)) {
-                continue;
-            }
             $s = trim($s);
             if ($s === '') {
                 continue;

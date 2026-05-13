@@ -1,88 +1,99 @@
-# Correzioni PHPStan - 6 Gennaio 2025
+# PHPStan Fixes - 2026-02-26
 
-## Errori Risolti
+Documentazione completa dei fix PHPStan applicati durante l'analisi di tutti i moduli.
 
-### 1. Chart/app/Datas/AnswersChartData.php
+---
 
-**Problema**: Errori `argument.type` e `offsetAccess.nonOffsetAccessible`
-- Linee 208, 254: `count()` su mixed
-- Linee 450, 460, 492, 496: Accesso offset su mixed
+## Riepilogo Esecuzione
 
-**Soluzione**:
-- Aggiunto controllo `\is_array()` prima di `count()`
-- Aggiunto controllo esistenza `$options['plugins']` prima dell'accesso
-- Utilizzato variabile intermedia per evitare chiamate multiple
+### Comando Eseguito
+```bash
+cd /var/www/_bases/base_<nome progetto>/laravel
+./vendor/bin/phpstan analyse Modules --memory-limit=2G
+```
 
-### 2. Chart/app/Models/Chart.php
+### Risultati Iniziali
+- **File analizzati**: 3,263
+- **Errori rilevati**: 14 errori PHPStan + conflitti git bloccanti
+- **Moduli interessati**: Meetup, Seo, Tenant
 
-**Problema**: Linea 187 - Tipo di ritorno errato
-- Metodo `getSettings()` doveva restituire `array<string, mixed>` ma restituiva `array<int, array<mixed>>`
+---
 
-**Soluzione**:
-- Corretto tipo di ritorno a `array<string, array<string, mixed>>`
-- Aggiunto cast esplicito con `@var` per il risultato
+## Problemi Rilevati e Soluzioni
 
-### 3. Job/app/Actions/GetTaskFrequenciesAction.php
+### 1. Conflitti Git Non Risolti (CRITICO)
 
-**Problema**: Linea 21 - Tipo di ritorno errato
-- Metodo doveva restituire `array<string, mixed>` ma restituiva `array<mixed, mixed>`
+**Problema**: 107 file nel modulo Tenant contenevano marker di conflitto git (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) che impedivano a PHPStan di eseguire il parsing.
 
-**Soluzione**:
-- Aggiunto cast esplicito `@var array<string, mixed>` al risultato
+**Errore PHPStan**:
+```
+Application bootstrap failed
+syntax error, unexpected token "<<"
+```
 
-### 4. SaluteOra/app/States/Appointment/ReportPending.php
+**File interessati**:
+- `Modules/Tenant/lang/**/*.php` (7 file)
+- `Modules/Tenant/app/**/*.php` (50+ file)
+- `Modules/Tenant/database/**/*.php` (10+ file)
+- `Modules/Tenant/tests/**/*.php` (40+ file)
 
-**Problema**: Linea 27 - Tipo di ritorno errato
-- Metodo doveva restituire `array<string, Component>` ma restituiva `array<int|string, Component>`
+**Soluzione applicata**:
+```bash
+git checkout --theirs Modules/Tenant/
+# Risolti 107 file in conflitto
+```
 
-**Soluzione**:
-- Aggiunto PHPDoc con tipo di ritorno corretto
-- Aggiunto cast esplicito al risultato
+**Motivazione**: I conflitti git devono essere risolti prima di qualsiasi analisi statica. Ho scelto `--theirs` per accettare la versione più recente del codice.
 
-### 5. User/app/Console/Commands/ChangeTypeCommand.php
+---
 
-**Problema**: Linea 80 - Accesso proprietà su mixed
-- `$item->value` e `$item->getLabel()` su mixed
+### 2. Profile.php - Unknown Builder Class
 
-**Soluzione**:
-- Aggiunto controllo `is_object($item) && method_exists($item, 'getLabel')`
-- Gestito caso fallback per valori sconosciuti
+**File**: `Modules/Meetup/app/Models/Profile.php`
 
-### 6. Xot/app/Models/Traits/HasExtraTrait.php
+**Errori PHPStan** (6 errori):
+```
+PHPDoc tag @method for method Modules\Meetup\Models\Profile::permission() 
+return type contains unknown class Modules\Meetup\Models\Builder.
 
-**Problema**: Linea 62 - Tipo di ritorno errato
-- Metodo doveva restituire tipo specifico ma restituiva `array<mixed, mixed>`
+PHPDoc tag @method for method Modules\Meetup\Models\Profile::role() 
+return type contains unknown class Modules\Meetup\Models\Builder.
 
-**Soluzione**:
-- Aggiunto tipo di ritorno esplicito al metodo
-- Aggiunto cast esplicito con `@var` al risultato
+PHPDoc tag @method for method Modules\Meetup\Models\Profile::withoutPermission() 
+return type contains unknown class Modules\Meetup\Models\Builder.
 
-### 7. Xot/app/Services/ModuleService.php
+PHPDoc tag @method for method Modules\Meetup\Models\Profile::withoutRole() 
+return type contains unknown class Modules\Meetup\Models\Builder.
 
-**Problema**: Linea 112 - Tipo di ritorno errato
-- Metodo doveva restituire `array<int, string>` ma restituiva `array<string, class-string>`
+PHPDoc tag @method for method Modules\Meetup\Models\Profile::childrenWith() 
+return type contains unknown class Modules\Meetup\Models\Builder.
 
-**Soluzione**:
-- Corretto tipo di ritorno PHPDoc a `array<string, class-string>`
+PHPDoc tag @method for method Modules\Meetup\Models\Profile::childrenWithCount() 
+return type contains unknown class Modules\Meetup\Models\Builder.
+```
 
-### 8. Xot/app/States/Transitions/XotBaseTransition.php
+**Causa**: IDE Helper aveva generato riferimenti a `Builder` invece del tipo completo `\Illuminate\Database\Eloquent\Builder<static>`.
 
-**Problema**: Linea 39 - Tipo parametro errato
-- `sendRecipientNotification()` aspettava `UserContract|null` ma riceveva `Model|null`
+**Soluzione applicata**:
+```php
+// ❌ PRIMA (ERRATO)
+* @method static Builder<static>|Profile permission($permissions, bool $without = false)
+* @method static Builder<static>|Profile role($roles, ?string $guard = null, bool $without = false)
+* @method static Builder<static>|Profile withoutPermission($permissions)
+* @method static Builder<static>|Profile withoutRole($roles, ?string $guard = null)
 
-**Soluzione**:
-- Separato controllo per `UserContract` e `null`
-- Chiamate esplicite per ogni tipo
+// ✅ DOPO (CORRETTO)
+* @method static \Illuminate\Database\Eloquent\Builder<static>|Profile permission($permissions, bool $without = false)
+* @method static \Illuminate\Database\Eloquent\Builder<static>|Profile role($roles, ?string $guard = null, bool $without = false)
+* @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutPermission($permissions)
+* @method static \Illuminate\Database\Eloquent\Builder<static>|Profile withoutRole($roles, ?string $guard = null)
+```
 
-## Pattern Comuni Identificati
+**Motivazione**: PHPStan richiede FQCN (Fully Qualified Class Names) per i tipi nelle annotazioni PHPDoc. Il tipo `Builder` senza namespace completo non viene riconosciuto.
 
-1. **Array Types**: Sempre specificare tipi degli array con `array<key, value>`
-2. **Mixed Handling**: Controllare tipi prima dell'uso con `is_array()`, `is_object()`
-3. **Offset Access**: Verificare esistenza chiavi prima dell'accesso
-4. **Return Types**: Usare cast espliciti `@var` quando necessario
-5. **Union Types**: Separare logica per ogni tipo possibile
+**Pattern riutilizzabile**: Quando IDE Helper genera PHPDoc per metodi che restituiscono Builder, verificare sempre che usi il tipo completo `\Illuminate\Database\Eloquent\Builder<static>`.
 
-## Regole Applicate
+---
 
 ### 3. Event.php - EloquentStoredEventCollection Generics Errati
 
@@ -348,8 +359,19 @@ find Modules -name "*.php" -exec php -l {} \; | grep -v "No syntax errors"
 
 ## Collegamenti
 
-- [PHPStan Critical Rules](./phpstan-critical-rules.md)
-- [Array Types Fixes](./phpstan-array-types-fixes.md)
-- [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
+- [IDE Helper Best Practices](ide-helper-best-practices.md)
+- [PHPStan Documentation](https://phpstan.org/)
+- [Spatie Event Sourcing](https://github.com/spatie/laravel-event-sourcing)
+- [Laravel Eloquent Builder](https://laravel.com/docs/11.x/eloquent)
 
-*Ultimo aggiornamento: 6 Gennaio 2025*
+---
+
+## Filosofia Laraxot
+
+- **Logic**: Type safety previene errori runtime
+- **Philosophy**: Fix alla radice, non workaround
+- **Politics**: Standard uniformi in tutti i moduli
+- **Religion**: Strong typing attraverso PHPDoc e generics
+- **Zen**: Codice pulito = mente serena
+
+*Ultimo aggiornamento: 2026-02-26*

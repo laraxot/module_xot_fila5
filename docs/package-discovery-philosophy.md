@@ -341,6 +341,7 @@ The command discovered these categories:
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
+>>>>>>> .merge_file_UmUzT7
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights

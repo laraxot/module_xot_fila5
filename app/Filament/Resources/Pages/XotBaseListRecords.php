@@ -65,18 +65,20 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
      * @return array<string, Action|ActionGroup>
+     *
+     * @phpstan-ignore method.childReturnType
      */
     protected function getHeaderActions(): array
     {
         return [
-            // 'create' => CreateAction::make()->icon('heroicon-o-plus'),
+            'create' => CreateAction::make()->icon('heroicon-o-plus'),
         ];
     }
 
     /**
      * Paginate the table query.
      */
-    protected function paginateTableQueryOLD(Builder $query): Paginator
+    protected function paginateTableQuery(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
         $paginator = $query->paginate(

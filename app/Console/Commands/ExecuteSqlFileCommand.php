@@ -6,17 +6,24 @@ namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+
+use function Safe\file_get_contents;
+
 use Webmozart\Assert\Assert;
 
 class ExecuteSqlFileCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     *
+     * @var string
      */
-    protected $signature = 'xot:execute-sql-file';
+    protected $signature = 'xot:execute-sql';
 
     /**
      * The console command description.
+     *
+     * @var string
      */
     protected $description = 'Esegue un file .sql su un database specifico';
 
@@ -35,7 +42,7 @@ class ExecuteSqlFileCommand extends Command
         }
 
         // Leggi il contenuto del file
-        $sql = \Safe\file_get_contents($filePath);
+        $sql = file_get_contents($filePath);
 
         // Chiedi i dettagli del database
         $host = $this->ask('Inserisci l\'host del database', '127.0.0.1');

@@ -18,6 +18,30 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 trait HasSchemalessAttributes
 {
     /**
+     * Aggiunge extra_attributes al fillable.
+     *
+     * @return array<string>
+     */
+    protected function schemalessFillable(): array
+    {
+        return array_merge($this->fillable, [
+            'extra_attributes',
+        ]);
+    }
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function schemalessCasts(): array
+    {
+        return array_merge($this->casts ?? [], [
+            'extra_attributes' => SchemalessAttributes::class,
+        ]);
+    }
+
+    /**
      * Scope per filtrare per attributi schemaless.
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -89,29 +113,5 @@ trait HasSchemalessAttributes
     public function syncExtraAttributes(): void
     {
         $this->save();
-    }
-
-    /**
-     * Aggiunge extra_attributes al fillable.
-     *
-     * @return array<string>
-     */
-    protected function schemalessFillable(): array
-    {
-        return array_merge($this->fillable, [
-            'extra_attributes',
-        ]);
-    }
-
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function schemalessCasts(): array
-    {
-        return array_merge($this->casts ?? [], [
-            'extra_attributes' => SchemalessAttributes::class,
-        ]);
     }
 }

@@ -289,7 +289,7 @@ if (! function_exists('getModelByName')) {
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (! is_string($path) || '' === $path) {
+        if (null === $path) {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
@@ -381,7 +381,7 @@ if (! function_exists('authId')) {
 }
 
 if (! function_exists('trans_string')) {
-    function trans_string(string $key, array $replace = [], ?string $locale = null): ?string
+    function trans_string(string $key, array $replace = [], ?string $locale = null): string
     {
         $safeReplace = [];
         foreach ($replace as $k => $v) {
@@ -389,11 +389,11 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = is_scalar($v) || null === $v ? $v : (string) $v;
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
         }
 
         $result = __($key, $safeReplace, $locale);
 
-        return is_string($result) ? $result : (null === $result ? null : $key);
+        return is_string($result) ? $result : $key;
     }
 }

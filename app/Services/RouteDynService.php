@@ -213,7 +213,10 @@ class RouteDynService
      */
     public static function getUri(array $v, ?string $_namespace): string
     {
-        return self::requireStringValue($v, 'name');
+        $name = self::requireStringValue($v, 'name');
+
+        // return mb_strtolower(is_string($v) ? $v : (string) $v['name);
+        return $name;
     }
 
     /**
@@ -365,20 +368,6 @@ class RouteDynService
             'update' => $prefix.'.update',
             'destroy' => $prefix.'.destroy',
         ];
-    }
-
-    // Commentato: La proprietà $curr non viene mai letta, quindi potrebbe essere rimossa
-    // private static ?string $curr = null;
-
-    /**
-     * @param array<string, mixed> $v
-     */
-    private static function requireStringValue(array $v, string $key): string
-    {
-        Assert::keyExists($v, $key);
-        Assert::string($value = $v[$key], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-
-        return $value;
     }
 
     // --------------------------------------------------

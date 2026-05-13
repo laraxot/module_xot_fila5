@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Traits;
 
 use Filament\Schemas\Schema;
+use Filament\Tables\Table;
 use Modules\UI\Enums\TableLayoutEnum;
 
 /**
@@ -21,12 +22,7 @@ use Modules\UI\Enums\TableLayoutEnum;
 trait HasXotForm
 {
     /** @var array<string, mixed> */
-    /**
-     * Form data holder.
-     *
-     * @var array<string, mixed>
-     */
-    public ?array $data = [];
+    public array $data = [];
 
     abstract public function getFormSchema(): array;
 

@@ -24,11 +24,11 @@ use function Safe\json_encode;
  */
 trait HasExtraTrait
 {
-/**
-      * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
-      *
-      * return MorphOne<ExtraContract>
-      */
+    /**
+     * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
+     *
+     * return MorphOne<ExtraContract>
+     */
     public function extra(): MorphOne
     {
         $extra_class = Str::of(static::class)
@@ -41,8 +41,9 @@ trait HasExtraTrait
             Model::class,
             '['.__LINE__.']['.class_basename($this).']['.$extra_class.']',
         );
+        // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
+        // Assert::implementsInterface($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
 
-        /** @phpstan-ignore argument.type, argument.templateType */
         return $this->morphOne($extra_class, 'model');
     }
 

@@ -3,6 +3,7 @@
 ## Overview
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the healthcare_app_survey database used in the Limesurvey integration.
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the survey database used in the Limesurvey integration.
+>>>>>>> .merge_file_RSP9XD
 
 ## Available MCP Tools for Database Work
 
@@ -13,13 +14,14 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 {
   "command": "node",
   "args": [
-    "./bashscripts/mcp/mysql-db-connector.js"
+    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
   ]
 }
 ```
 
 **Use Cases for healthcare_app_survey Database**:
 **Use Cases for survey Database**:
+>>>>>>> .merge_file_RSP9XD
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`

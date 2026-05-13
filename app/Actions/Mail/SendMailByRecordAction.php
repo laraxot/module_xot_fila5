@@ -54,13 +54,13 @@ class SendMailByRecordAction
         $subject = $record->option('mail_oggetto');
         $bodyHtml = $record->option('mail_testo');
 
-        if (! \is_string($to)) {
+        if (! is_string($to)) {
             throw new \InvalidArgumentException('Email must be a string');
         }
-        if (! \is_string($subject)) {
+        if (! is_string($subject)) {
             $subject = '';
         }
-        if (! \is_string($bodyHtml)) {
+        if (! is_string($bodyHtml)) {
             $bodyHtml = '';
         }
 

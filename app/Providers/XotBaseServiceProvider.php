@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use BladeUI\Icons\Exceptions\CannotRegisterIconSet;
 use BladeUI\Icons\Exceptions\SvgNotFound;
 use BladeUI\Icons\Factory as BladeIconsFactory;
 use Illuminate\Support\Facades\Blade;
@@ -78,7 +79,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
                 }
             } catch (\Throwable $e) {
-                // Ignore - assets opzionali, modulo puo funzionare senza.
+                // Ignore missing optional assets.
             }
         });
     }
@@ -93,11 +94,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
-    /**
-     * Registra le traduzioni del modulo.
-     *
-     * @throws \Exception
-     */
     public function registerTranslations(): void
     {
         if ($this->name === '') {
@@ -148,7 +144,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $comps = app(GetComponentsAction::class)
             ->execute(
                 $this->module_dir.'/../Console/Commands',
-                'Modules\\'.$this->name.'\\Console\Commands',
+                'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
         if ($comps->count() === 0) {
@@ -196,7 +192,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             }
         } catch (\Throwable $e) {
             // Ignore config registration failures for optional module config.
-            return;
         }
     }
 }

@@ -6,7 +6,7 @@
 set -e
 
 MODULE_NAME="${1:-}"
-LARAVEL_ROOT="./laravel"
+LARAVEL_ROOT="/var/www/_bases/base_ptvx_fila4_mono/laravel"
 MODULE_PATH="${LARAVEL_ROOT}/Modules/${MODULE_NAME}"
 
 if [ -z "$MODULE_NAME" ]; then

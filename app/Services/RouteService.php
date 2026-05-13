@@ -330,7 +330,9 @@ class RouteService
         $controllerName = self::getControllerName();
         $tmp_arr = explode('\\', $controllerName);
 
-        $params = getRouteParameters();
+        $routeCurrent = Route::current();
+        /** @var array<string, mixed> $params */
+        $params = $routeCurrent instanceof \Illuminate\Routing\Route ? $routeCurrent->parameters() : [];
         [$containers] = params2ContainerItem($params);
 
         /** @var array<string> $containerValues */
@@ -339,7 +341,7 @@ class RouteService
 
         return collect($tmp_arr)
             ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))
-            ->map(static function ($item) use ($params) {
+            ->map(static function ($item) use ($params): mixed {
                 $item = Str::snake($item);
 
                 return $params[$item] ?? $item;

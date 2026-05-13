@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+use Modules\Tenant\Services\TenantService;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
@@ -85,7 +85,7 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
-            $data = app(GetTenantConfigArrayAction::class)->execute('xra');
+            $data = TenantService::getConfig('xra');
 
             self::$instance = self::from($data);
         }
@@ -118,7 +118,6 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
-        /** @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -137,7 +136,6 @@ class XotData extends Data implements Wireable
          */
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
 
-        /** @var UserContract $user */
         return $user;
     }
 
@@ -159,10 +157,7 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        /** @var class-string<Model&TeamContract> $class */
-        $class = $this->team_class;
-
-        return $class;
+        return $this->team_class;
     }
 
     /**
@@ -189,10 +184,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-        /** @var class-string<Model&TenantContract> $class */
-        $class = $this->tenant_class;
-
-        return $class;
+        return $this->tenant_class;
     }
 
     /**
@@ -241,7 +233,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /** @var class-string<Model&ProfileContract> $class */
+        /* @var class-string<Model&ProfileContract> */
         return $class;
     }
 
@@ -389,7 +381,6 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /** @var class-string<Model&UserContract> $class */
         return $class;
     }
 

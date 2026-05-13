@@ -12,7 +12,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
-use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
+use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Webmozart\Assert\Assert;
@@ -24,12 +24,7 @@ class MetatagPage extends XotBasePage
 {
     use NavigationLabelTrait;
 
-    /**
-     * Form data holder.
-     *
-     * @var array<string, mixed>
-     */
-    public ?array $data = [];
+    public array $data = [];
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
 
@@ -37,10 +32,9 @@ class MetatagPage extends XotBasePage
 
     public function mount(): void
     {
-        /** @var array<string, mixed> $data */
-        $data = config('metatag');
-        Assert::isArray($data);
+        Assert::isArray($data = config('metatag'));
 
+        // @phpstan-ignore argument.type
         $this->form->fill($data);
     }
 

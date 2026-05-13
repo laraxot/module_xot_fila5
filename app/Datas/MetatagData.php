@@ -9,8 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Livewire\Wireable;
-use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
-use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
+use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
@@ -140,8 +139,8 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
-            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
+            $data = TenantService::getConfig('metatag');
+            $data['description'] = TenantService::trans('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -276,7 +275,7 @@ class MetatagData extends Data implements Wireable
 
         // Convert Filament color arrays to simple string format
         foreach ($filamentColors as $key => $colorArray) {
-            if (\is_array($colorArray) && ! empty($colorArray)) {
+            if (is_array($colorArray) && ! empty($colorArray)) {
                 // Use the first color in the array as the default
                 $defaults[$key] = (string) $colorArray[0];
             }
@@ -422,7 +421,7 @@ class MetatagData extends Data implements Wireable
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
-            if (\is_array($value) && Arr::has($value, 'color')) {
+            if (is_array($value) && Arr::has($value, 'color')) {
                 // Convert single color value to array format for Filament compatibility
                 $colorValue = (string) $value['color'];
                 $customColors[$key] = [$colorValue];
@@ -583,17 +582,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
+        return TenantService::trans('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
+        return TenantService::trans('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
+        return TenantService::trans('metatag.sitename');
     }
 
     public function getRobots(): string
@@ -699,7 +698,7 @@ class MetatagData extends Data implements Wireable
      */
     private function getMimeTypeFromPath(string $filePath): string
     {
-        $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
+        $extension = \strtolower(\pathinfo($filePath, PATHINFO_EXTENSION));
 
         return match ($extension) {
             'png' => 'image/png',

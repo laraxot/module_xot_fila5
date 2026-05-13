@@ -12,10 +12,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Support\Carbon;
 use Laravel\Passport\Contracts\OAuthenticatable;
-use Laravel\Passport\Contracts\ScopeAuthorizable;
 use Laravel\Passport\PersonalAccessTokenResult;
+use Laravel\Passport\Token;
+use Laravel\Passport\TransientToken;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
@@ -59,8 +59,10 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
 
     /**
      * Get the access token currently associated with the user.
+     *
+     * @return Token|TransientToken|null
      */
-    public function token(): ?ScopeAuthorizable;
+    public function token();
 
     /**
      * Create a new personal access token for the user.
@@ -72,6 +74,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Passport API tokens support.
      */
+    // @phpstan-ignore-next-line interface should extend this contract
 
     /**
      * Determine if the model has (one of) the given role(s).
@@ -128,7 +131,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * @param  string|int|array|UserRole|Collection|\BackedEnum  ...$role
      * @return $this
      */
-    public function removeRole(string|int|array|UserRole|Collection|\BackedEnum ...$role);
+    public function removeRole(...$role);
 
     /**
      * Determine if the user owns the given team.

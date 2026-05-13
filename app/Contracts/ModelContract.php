@@ -76,15 +76,17 @@ interface ModelContract
 
     /**
      * Save the model to the database.
+     *
+     * @return bool
      */
-    public function save(array $options = []): bool;
+    public function save(array $options = []);
 
     /**
      * Convert the model instance to an array representation.
      *
      * @return array<mixed>
      */
-    public function toArray(): array;
+    public function toArray();
 
     /**
      * Create a new instance of the given model.
@@ -93,7 +95,7 @@ interface ModelContract
      * @param  bool  $exists
      * @return static
      */
-    public function newInstance(array $attributes = [], bool $exists = false): static;
+    public function newInstance($attributes = [], $exists = false);
 
     /*
      * Add a basic where clause to the query.

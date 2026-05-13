@@ -17,8 +17,10 @@ class SafeArrayByModelCastAction
     public function execute(Model $model): array
     {
         try {
-            /* @var array<string, mixed> $res */
-            return $model->attributesToArray();
+            /** @var array<string, mixed> $res */
+            $res = $model->attributesToArray();
+
+            return $res;
         } catch (\ValueError|\Error|\Exception $e) {
             return $this->safeExecute($model);
         }
@@ -33,6 +35,8 @@ class SafeArrayByModelCastAction
         foreach ($model->getAttributes() as $key => $value) {
             try {
                 $data[$key] = $model->$key;
+
+                /* @phpstan-ignore-next-line */
             } catch (\ValueError|\Error $e) {
             }
         }

@@ -1813,8 +1813,8 @@ class ContactDashboard extends Dashboard
             ],
             'analytics' => [
                 'label' => 'Analytics',
-                'url' => route('filament.Quaeris.analytics'),
-                'isActive' => request()->routeIs('filament.Quaeris.analytics'),
+                'url' => route('filament.healthcare_app.analytics'),
+                'isActive' => request()->routeIs('filament.healthcare_app.analytics'),
             ],
             'reports' => [
                 'label' => 'Reports',

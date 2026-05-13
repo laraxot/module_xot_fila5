@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Actions\Action;
-use Filament\Actions\Concerns\HasWizard;
+use Filament\Resources\Pages\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;

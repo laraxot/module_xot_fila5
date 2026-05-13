@@ -5,7 +5,7 @@
 
 set -e
 
-LARAVEL_ROOT="./laravel"
+LARAVEL_ROOT="/var/www/_bases/base_ptvx_fila4_mono/laravel"
 RESULTS_DIR="/tmp/module-analysis-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$RESULTS_DIR"
 
