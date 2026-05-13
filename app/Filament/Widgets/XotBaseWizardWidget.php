@@ -60,27 +60,28 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      */
     abstract public function getSteps(): array;
 
-   
-
     /**
-     * Costruisce il {@see Wizard} direttamente — NON tramite `getParentWizardComponent()`.
-     *
-     * `HasWizard::getWizardComponent()` chiama `->cancelAction(Action)` / `->submitAction(Action)`
-     * ma {@see Wizard::cancelAction()} accetta solo `string|Htmlable|null` — incompatibile
-     * con oggetti `Action` nel contesto widget → ViewException al render.
+     * Costruisce il {@see Wizard} usando getParentWizardComponent() per mantenere
+     * lo standard Filament HasWizard, poi applica customizzazioni Laraxot (view tema, start step).
      */
     public function getWizardComponent(): Component
     {
-        $wizard = Wizard::make($this->getSteps())
-            ->startOnStep($this->wizardStartStep)
-            ->skippable($this->hasSkippableSteps())
-            ->persistStepInQueryString('step');
+        /** @var Wizard $wizard */
+        $wizard = $this->getParentWizardComponent();
 
+        // Customizzazioni Laraxot
+        $wizard->startOnStep($this->wizardStartStep);
+        
         if (! inAdmin()) {
             $wizard = $wizard->view('pub_theme::components.wizard');
         }
 
         return $wizard;
+    }
+
+    public function getStartStep(): int
+    {
+        return $this->wizardStartStep;
     }
 
     /**
@@ -107,5 +108,13 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     {
         return Action::make('cancel')
             ->color('gray');
+    }
+
+    protected function getSubmitFormAction(): Action
+    {
+        return Action::make('submit')
+            ->label(__('filament-panels::resources/pages/create-record.form.actions.create.label'))
+            ->alpineClickHandler("\$wire.{$this->getSubmitFormLivewireMethodName()}()")
+            ->color('primary');
     }
 }
