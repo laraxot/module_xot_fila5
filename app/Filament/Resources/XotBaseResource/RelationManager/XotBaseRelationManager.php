@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\XotBaseResource\RelationManager;
 
 use Filament\Resources\RelationManagers\RelationManager;
-use Filament\Support\Components\Component;
 use Filament\Tables;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
