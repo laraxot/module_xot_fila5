@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\ModelClass;
 
-use function Safe\file;
-
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
+use function Safe\file;
 
 class GetMethodBodyAction
 {
@@ -24,6 +24,7 @@ class GetMethodBodyAction
         Assert::string($file_name = $table_method->getFileName());
         $source = file($file_name);
 
-        return implode('', \array_slice($source, $start_line, $length));
+        /* @phpstan-ignore-next-line */
+        return implode('', array_slice($source, $start_line, $length));
     }
 }

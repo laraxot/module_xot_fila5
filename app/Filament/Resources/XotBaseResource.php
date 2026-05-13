@@ -11,9 +11,10 @@ use Filament\Resources\RelationManagers\RelationGroup;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
 use Filament\Resources\Resource as FilamentResource;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
-use Filament\Support\Components\Component;
+use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
@@ -104,22 +105,20 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<int|string, Component|Htmlable|string>
      */
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
+    abstract public static function getFormSchema(): array;
 
     final public static function form(Schema $schema): Schema
     {
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
+            /* @phpstan-ignore-next-line */
             return $form_class::configure($schema);
         }
 
-        /** @var array<Htmlable|string> $components */
+        /** @var array<int|string, Component|Htmlable|string> $components */
         $components = static::getFormSchema();
 
         return $schema
@@ -136,6 +135,7 @@ abstract class XotBaseResource extends FilamentResource
      * Schema dell'infolist: tutte le risorse devono delegare qui.
      *
      * @return array<string, \Filament\Schemas\Components\Component>
+     * @return array<string, Component>
      */
     public static function getInfolistSchema(): array
     {

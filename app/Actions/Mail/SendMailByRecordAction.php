@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -18,8 +19,8 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
-     * @param Model  $record    Il record da utilizzare come dati per la mail
-     * @param string $mailClass La classe Mailable da utilizzare
+     * @param  Model  $record  Il record da utilizzare come dati per la mail
+     * @param  string  $mailClass  La classe Mailable da utilizzare
      */
     public function execute(Model $record, string $mailClass): void
     {
@@ -77,8 +78,9 @@ class SendMailByRecordAction
         SmtpData::make()->send($emailData);
 
         // myLogs è sempre disponibile su BaseModel
-        /* @phpstan-ignore-next-line - Dynamic relationship method */
-        $record->myLogs()->create([
+        /** @var Relation $logs */
+        $logs = $record->myLogs();
+        $logs->create([
             'act' => 'sendMail',
             'handle' => authId(),
         ]);
