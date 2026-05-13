@@ -1,0 +1,187 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Xot\States;
+
+use Filament\Forms\Components\Textarea;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Modules\Xot\Contracts\StateContract;
+use Modules\Xot\Filament\Traits\TransTrait;
+abstract class XotBaseState implements StateContract
+{
+    use TransTrait;
+
+    public static string $name;
+
+    public static function getName(): string
+    {
+        /* @phpstan-ignore-next-line */
+        return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
+    }
+
+    public function label(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.label');
+
+        // return 'Annullato';
+    }
+
+    public function color(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.color');
+    }
+
+    public function bgColor(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.bg_color');
+
+        // return 'info';
+    }
+
+    public function icon(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.icon');
+
+        // return 'heroicon-o-x-circle';
+    }
+
+    public function modalHeading(): string
+    {
+        return static::transClass(static::class, 'states.'.static::getName().'.modal_heading');
+
+        // return 'Annulla Appuntamento';
+    }
+
+    public function modalDescription(): string
+    {
+        // $appointment non utilizzata - rimossa
+
+        return static::transClass(static::class, 'states.'.static::getName().'.modal_description');
+
+        // return 'Sei sicuro di voler annullare questo appuntamento?';
+    }
+
+    public function modalFormSchema(): array
+    {
+        return [
+            'message' => Textarea::make('message')->required()->maxLength(255),
+        ];
+    }
+
+    /**
+     * Fill form data for modal.
+     *
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+     *
+     * @return array<string, mixed>
+     */
+    public function modalFillForm(array $arguments, array $data): array
+    {
+        return $data;
+    }
+
+    /**
+     * Fill form data for modal by record.
+     *
+     * @return array<string, mixed>
+     */
+    public function modalFillFormByRecord(Model $record): array
+    {
+        return [];
+    }
+
+    /**
+     * Execute modal action.
+     *
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+     */
+    public function modalAction(array $arguments, array $data): void
+    {
+        $this->processStateAction($arguments, $data);
+    }
+
+    /**
+     * Process state action.
+     *
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+     */
+    public function processStateAction(array $arguments, array $data): void
+    {
+        $message = Arr::get($data, 'message');
+        $stateClass = static::class;
+        /*
+         *
+         * $appointmentId = $arguments['appointment'];
+         * $appointment = Appointment::firstWhere('id',$appointmentId);
+         *
+         * $appointment?->state->transitionTo($stateClass,$message);
+         */
+        /* @phpstan-ignore-next-line */
+        $record = $this->getModel();
+        /* @phpstan-ignore-next-line */
+        $record->state->transitionTo($stateClass, $message);
+    }
+
+    /**
+     * Execute modal action by record.
+     *
+     * @param array<string, mixed> $data
+     */
+    public function modalActionByRecord(Model $record, array $data): void
+    {
+        $this->processStateActionByRecord($record, $data);
+    }
+
+    /**
+     * Process state action by record.
+     *
+     * @param array<string, mixed> $data
+     */
+    public function processStateActionByRecord(Model $record, array $data): void
+    {
+        $message = Arr::get($data, 'message');
+        $stateClass = static::class;
+        /*
+         *
+         * $appointmentId = $arguments['appointment'];
+         * $appointment = Appointment::firstWhere('id',$appointmentId);
+         *
+         * $appointment?->state->transitionTo($stateClass,$message);
+         */
+        /* @phpstan-ignore-next-line */
+        $record->state->transitionTo($stateClass, $message);
+    }
+
+    public function isMessageRequired(): bool
+    {
+        return false;
+    }
+
+    public function getModel(): ?Model
+    {
+        return null;
+    }
+
+    public static function getStateMapping(): array
+    {
+        return [];
+    }
+
+    public static function getOptions(): array
+    {
+        $states = static::getStateMapping();
+
+        $states = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
+            static::class,
+            'states.'.(is_string($state) ? $state : (string) $state).'.label',
+        ));
+
+        return $states;
+    }
+}
