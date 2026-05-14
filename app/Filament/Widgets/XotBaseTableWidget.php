@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Livewire\Attributes\On;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
@@ -23,11 +24,9 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     use InteractsWithPageFilters;
 
     /**
-     * Modello per la tabella: solo ramo {@see getModel()} (mai contesto RelationManager).
+     * @return class-string<Model>
      *
      * @throws \Exception Se non viene trovata una classe modello valida
-     *
-     * @return class-string<Model>
      */
     public function getModelClass(): string
     {
@@ -52,8 +51,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     /**
      * @template TModel of Model
      *
-     * @param TModel $model
-     *
+     * @param  TModel  $model
      * @return class-string<TModel>
      */
     private function eloquentClassString(Model $model): string
@@ -136,6 +134,6 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
 
         $search = trim($search);
 
-        return '' !== $search ? $search : null;
+        return $search !== '' ? $search : null;
     }
 }

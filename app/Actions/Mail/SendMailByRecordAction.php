@@ -19,8 +19,8 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
-     * @param Model  $record    Il record da utilizzare come dati per la mail
-     * @param string $mailClass La classe Mailable da utilizzare
+     * @param  Model  $record  Il record da utilizzare come dati per la mail
+     * @param  string  $mailClass  La classe Mailable da utilizzare
      */
     public function execute(Model $record, string $mailClass): void
     {
@@ -54,13 +54,13 @@ class SendMailByRecordAction
         $subject = $record->option('mail_oggetto');
         $bodyHtml = $record->option('mail_testo');
 
-        if (! \is_string($to)) {
+        if (! is_string($to)) {
             throw new \InvalidArgumentException('Email must be a string');
         }
-        if (! \is_string($subject)) {
+        if (! is_string($subject)) {
             $subject = '';
         }
-        if (! \is_string($bodyHtml)) {
+        if (! is_string($bodyHtml)) {
             $bodyHtml = '';
         }
 
@@ -77,6 +77,7 @@ class SendMailByRecordAction
         );
         SmtpData::make()->send($emailData);
 
+        // myLogs è sempre disponibile su BaseModel
         /** @var Relation $logs */
         $logs = $record->myLogs();
         $logs->create([

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Actions\Action;
-use Filament\Actions\Concerns\HasWizard;
+use Filament\Resources\Pages\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
@@ -19,84 +19,67 @@ use Modules\Lang\Providers\LangServiceProvider;
 /**
  * Base per widget Filament che espongono un {@see Wizard} nello schema.
  *
- * **Perche esiste (visione / filosofia / religione / zen)**:
+ * ## Architettura
  *
- * ## Separazione delle Responsabilita
- * - `XotBaseWidget` = contratto generico (form lineare, tabelle, statistiche)
- * - `XotBaseWizardWidget` = specializzazione per wizard multi-step
- *   - Gestisce: navigazione step, persistenza `?step=`, normalizzazione stato annidato
- *   - Widget dominio (es. CreateTicketWizardWidget) = campi specifici e business logic
+ * Usa `use HasWizard` (alias `getParentWizardComponent`) ma NON chiama il trait
+ * direttamente a runtime: `HasWizard::getWizardComponent()` chiama
+ * `->cancelAction(Action)` e `->submitAction(Action)` ma {@see Wizard::cancelAction()}
+ * accetta solo `string|Htmlable|null` — `Action` non è `Htmlable` nel contesto widget.
  *
- * ## DRY + KISS - NON reinventare la ruota!
- * - USA il trait `Filament\Actions\Concerns\HasWizard` per la logica base del wizard
- * - USA il componente `Wizard` per la UI e navigazione (Alpine.js + Blade)
- * - XotBaseWizardWidget aggiunge SOLO:
- *   - Integrazione LangServiceProvider (auto-label)
- *   - Politiche di sicurezza (query step override)
- *   - Theme switching (pub_theme::components.wizard)
- *   - Pattern XotBaseResourceForm (getWizardSteps(), getStepByName())
+ * La costruzione avviene direttamente con {@see Wizard::make()} + la view pub_theme
+ * che usa `$getCancelAction()` / `$getSubmitAction()` come Blade string/null.
  *
- * ## Allineamento Filament
- * - `HasWizard` trait: `steps()`, `startOnStep()`, `skippableSteps()`, `getWizardStartStep()`
- * - `Wizard` component: `nextStep()`, `previousStep()`, `goToStep()`, persistStepInQueryString()
- * - Il trait `HasWizard` è usato da `Filament\Actions\Action` e adattato per i widget
+ * ## Posizionamento step iniziale
+ * `getStartStep()` legge `?step=` dalla request per posizionare il wizard al mount.
+ * `persistStepInQueryString('step')` mantiene lo step nel URL durante la navigazione JS.
  *
- * ## Politica Sicurezza
- * - Override `?step=` NON e mai implicito in produzione
- * - Consentito SOLO se:
- *   - `app()->isLocal()` → true
- *   - `config('app.debug')` → true
- *   - `wizardAllowStepQueryExtra()` → override modulo-specifico (default false)
- *
- * ## Auto-Label e Traduzioni (LangServiceProvider)
- * - **REGOLA AUREA**: NON usare `->label()` o `->tooltip()` espliciti sui campi/azioni
- * - LangServiceProvider configura automaticamente label, placeholder, helperText, tooltip
- * - Pattern chiave: `{namespace}::{widget_name}.{type}.{field_name}.{property}`
- *   - Es: `fixcity::create_ticket_wizard.actions.next.label`
- *   - Es: `fixcity::create_ticket_wizard.fields.address.required`
- * - Il submit button wizard resta centralizzato qui, non nel widget dominio
- *
- * ## Log e Gestione Errori
- * - **NO `Log::error()` nei widget dominio** (filosofia Laraxot)
- * - Filament gestisce automaticamente la UI per validation errors
- * - Catch `\Throwable` solo per notifiche user-friendly generiche
- * - Log dettagliato: compito del framework/logging.php, non del dominio
+ * ## Politica Sicurezza ?step=
+ * Override numerico NON implicito in produzione (solo local/debug o `wizardAllowStepQueryExtra()`).
+ * Chiavi descrittive Filament (es. `form.step-2::data::wizard-step`) sempre accettate:
+ * vengono risolte a indice numerico tramite matching sul `getKey()` dello step.
  *
  * @see Wizard
  * @see HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
  * @see LangServiceProvider
  * @see AutoLabelAction
+ * @see FilamentView  (disponibile per override di getCancelFormAction nei widget dominio)
+ * @see Js            (disponibile per override di getCancelFormAction nei widget dominio)
  */
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
-    // Usa il trait ufficiale Filament per non reinventare la ruota
+    use HasWizard {
+        getWizardComponent as getParentWizardComponent;
+    }
+
+    public int $wizardStartStep = 1;
+
     use EvaluatesClosures;
-    use HasWizard; // Adapter richiesto da HasWizard (evaluate())
 
     protected int|string|array $columnSpan = 'full';
 
     /**
-     * Elenco step del wizard (ordine = flusso utente). Ogni widget concreto lo implementa;
-     * la convenzione `getStepByName('foo')` → `getFooSchema()` resta nel metodo helper {@see getStepByName()}.
+     * Elenco step del wizard. Implementato nel widget concreto.
      *
      * @return array<int, Step>
      */
-    abstract public function getWizardSteps(): array;
+    abstract public function getSteps(): array;
+
+    public function getWizardComponentKey(): string
+    {
+        return 'wizard';
+    }
 
     /**
-     * @return array<int, Component>
+     * Costruisce il {@see Wizard} usando getParentWizardComponent() per mantenere
+     * lo standard Filament HasWizard, poi applica customizzazioni Laraxot (view tema, start step).
      */
-    public function getFormSchema(): array
+    public function getWizardComponent(): Component
     {
-        $wizard = $this->makeWizard($this->getWizardSteps());
-        // ->nextAction(fn (Action $action): Action => $this->configureWizardNextAction($action))
-        // ->previousAction(fn (Action $action): Action => $this->configureWizardPreviousAction($action))
-        // ->submitAction($this->getWizardSubmitAction());
+        /** @var Wizard $wizard */
+        $wizard = $this->makeWizard($this->getSteps());
 
-        return [
-            $wizard,
-        ];
+        return $wizard;
     }
 
     /**
@@ -150,7 +133,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
     /**
      * Hook per definire se gli step sono skippable.
-     * Parallelo a `HasWizard::skippableSteps()`.
      */
     protected function hasSkippableWizardSteps(): bool
     {
@@ -161,18 +143,21 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
      * Centralizza il contratto minimo di un wizard Xot:
      * step iniziale coerente, full width, e step in query solo se consentito.
      *
-     * @param array<int, Step> $steps
+     * @param  array<int, Step>  $steps
      */
     protected function makeWizard(array $steps): Wizard
     {
         $wizard = Wizard::make($steps)
-            ->startOnStep(fn (): int => $this->getWizardStartStep())
+            ->startOnStep(fn (): int => $this->wizardStartStep)
             ->columnSpanFull()
             ->skippable($this->hasSkippableWizardSteps());
 
         if ($this->queryStepOverrideAllowed()) {
             $wizard->persistStepInQueryString('step');
         }
+
+        // Customizzazioni Laraxot
+        $wizard->startOnStep($this->wizardStartStep);
 
         if (! inAdmin()) {
             $wizard = $wizard->view('pub_theme::components.wizard');
@@ -181,72 +166,24 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         return $wizard;
     }
 
-    /**
-     * Chiave usata in `getFormSchema()` per wrappare il componente `Wizard` (stato annidato sotto `data`).
-     * Override nel widget concreto se diverso da `wizard`.
-     */
-    protected function getWizardSchemaWrapperKey(): string
+    public function getStartStep(): int
     {
-        return 'wizard';
+        return $this->wizardStartStep;
     }
 
     /**
-     * Hook per i dati iniziali del form (da sovrascrivere nel widget di dominio).
-     * Segue il pattern di Filament CreateRecord.
+     * Soddisfa il contratto astratto di {@see XotBaseWidget::getFormSchema()}.
      *
-     * @return array<string, mixed>
+     * @return array<int, Component>
      */
-    protected function defaultFormData(): array
+    public function getFormSchema(): array
     {
         return [];
     }
 
-    /**
-     * Validazione custom per il wizard submission.
-     * Da sovrascrivere nei widget di dominio per logiche custom.
-     * Filament gestisce automaticamente la validation dei form fields.
-     */
-    protected function validateWizardSubmission(): void
+    protected function hasSkippableSteps(): bool
     {
-        // Validazione di base gestita da Filament
-        // Override per logiche custom es:
-        // if ($this->isLastStep()) { $this->validateFinalStep(); }
-    }
-
-    /**
-     * Prepara i dati prima della creazione/aggiornamento.
-     * Pattern ufficiale di Filament: mutateFormDataBeforeCreate/Update.
-     *
-     * @param array<string, mixed> $data
-     *
-     * @return array<string, mixed>
-     */
-    protected function prepareWizardFormData(array $data): array
-    {
-        // Override per trasformazioni dati custom
-        // es: unset($data['field_temporaneo']);
-        // es: $data['calculated_field'] = $this->calculateSomething();
-
-        return $data;
-    }
-
-    /**
-     * Controlla se lo step corrente è l'ultimo.
-     * Utile per logiche conditional nei wizard.
-     * DELEGA a Wizard component tramite getCurrentStepIndex().
-     */
-    protected function isLastStep(): bool
-    {
-        // Il Wizard component gestisce lo stato interno
-        return false; // Il controllo è nel Wizard component
-    }
-
-    /**
-     * Controlla se lo step corrente è il primo.
-     */
-    protected function isFirstStep(): bool
-    {
-        return $this->getWizardStartStep() <= 1;
+        return $this->wizardStartStep <= 1;
     }
 
     /**
@@ -272,14 +209,25 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         // Override per logiche custom
     }
 
+    protected function queryStepOverrideAllowed(): bool
+    {
+        return $this->wizardAllowStepQueryExtra();
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    protected function defaultFormData(): array
+    {
+        return [];
+    }
+
     /**
      * Inizializza lo stato del wizard: step da query + fill dati default.
      * DELEGA a Wizard::getStartStep() per la logica query string.
      */
     protected function initWizardState(): void
     {
-        // Il Wizard component gestisce startOnStep() e query string
-        // Questo è solo per compatibilità con widget esistenti
         try {
             if (isset($this->form) && is_object($this->form) && method_exists($this->form, 'fill')) {
                 $this->form->fill($this->defaultFormData());
@@ -293,14 +241,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
     /**
      * Configura l'azione "Avanti" del wizard.
-     *
-     * **Default**: ritorna l'action senza modifiche.
-     * LangServiceProvider applica automaticamente label e tooltip via traduzione.
-     *
-     * Override nel widget dominio SOLO per:
-     * - Icon custom: `->icon('heroicon-o-arrow-right')`
-     * - Comportamento custom: `->requiresConfirmation()`
-     * - NON usare per `->label()` o `->tooltip()` (gia gestiti da LangServiceProvider)
      */
     protected function configureWizardNextAction(Action $action): Action
     {
@@ -309,14 +249,6 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
     /**
      * Configura l'azione "Indietro" del wizard.
-     *
-     * **Default**: ritorna l'action senza modifiche.
-     * LangServiceProvider applica automaticamente label e tooltip via traduzione.
-     *
-     * Override nel widget dominio SOLO per:
-     * - Icon custom: `->icon('heroicon-o-arrow-left')`
-     * - Comportamento custom: `->withoutFontWeight()`
-     * - NON usare per `->label()` o `->tooltip()` (gia gestiti da LangServiceProvider)
      */
     protected function configureWizardPreviousAction(Action $action): Action
     {
@@ -324,15 +256,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * Bottone submit sull'ultimo step del wizard (centralizzato in base).
-     *
-     * **Protocollo di rendering** (in ordine di priorita):
-     * 1. Se esiste `pub_theme::filament.wizard.submit-button` nel tema attivo: usa view tema
-     * 2. Fallback Filament: `Action::make('submit')->submit('save')->button()`
-     *
-     * **Perche NON Action::submit('submit')**:
-     * Action::submit crea un form Filament → il form si chiama sempre 'form', non 'submit'.
-     * Soluzione corretta: `<button type="submit">` nativo che delega al `<form wire:submit>` Blade.
+     * Bottone submit sull'ultimo step del wizard.
      */
     protected function getWizardSubmitAction(): Htmlable
     {
@@ -369,129 +293,34 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * Consentire `?step=` oltre local/debug (es. `config('mio_modulo.wizard.allow_step_query_override')`).
+     * Consentire `?step=` oltre local/debug.
      */
     protected function wizardAllowStepQueryExtra(): bool
     {
         return false;
     }
 
-    protected function queryStepOverrideAllowed(): bool
-    {
-        if (app()->isLocal()) {
-            return true;
-        }
-
-        if (config('app.debug', false)) {
-            return true;
-        }
-
-        return $this->wizardAllowStepQueryExtra();
-    }
-
-    /**
-     * Legge `?step=` come intero 1..wizardMaxStep() solo se {@see queryStepOverrideAllowed()} consente salti.
-     * Supporta sia passi numerici che descrittivi (per compatibilità con viste Blade personalizzate).
-     */
-    protected function resolveInitialStepFromQuery(): int
-    {
-        if (app()->runningInConsole()) {
-            return 1;
-        }
-
-        $raw = request()->query('step');
-        if (null === $raw || '' === $raw) {
-            return 1;
-        }
-
-        // Controlla se è un parametro descrittivo (usato da alcune viste Blade personalizzate)
-        if (! is_numeric($raw)) {
-            if (str_contains((string) $raw, 'riepilogo')) {
-                return 3;
-            }
-            if (str_contains((string) $raw, 'dati-della-segnalazione')) {
-                return 2;
-            }
-
-            // Default al primo passo per qualsiasi altro valore non numerico
-            return 1;
-        }
-
-        $step = (int) $raw;
-        $max = $this->wizardMaxStep();
-        if ($step < 1 || $step > $max) {
-            return 1;
-        }
-
-        if (! $this->queryStepOverrideAllowed() && 1 !== $step) {
-            return 1;
-        }
-
-        return $step;
-    }
-
     protected function wizardMaxStep(): int
     {
-        $steps = $this->getWizardSteps();
-        $count = count($steps);
-
-        return $count > 0 ? $count : 1;
+        return count($this->getSteps());
     }
 
-    /**
-     * Appiattisce lo stato restituito da `getState()` se il `Wizard` e sotto la chiave wrapper.
-     *
-     * @param array<string, mixed> $state
-     *
-     * @return array<string, mixed>
-     */
-    protected function normalizeWizardFormState(array $state): array
+    protected function getSubmitFormLivewireMethodName(): string
     {
-        $key = $this->getWizardSchemaWrapperKey();
-        if (isset($state[$key]) && \is_array($state[$key])) {
-            return $this->stringKeyed($state[$key]);
-        }
-
-        return $this->stringKeyed($state);
+        return 'submit';
     }
 
-    /**
-     * @param array<mixed, mixed> $row
-     *
-     * @return array<string, mixed>
-     */
-    protected function stringKeyed(array $row): array
+    protected function getCancelFormAction(): Action
     {
-        $out = [];
-        foreach ($row as $key => $value) {
-            $out[(string) $key] = $value;
-        }
-
-        return $out;
+        return Action::make('cancel')
+            ->color('gray');
     }
 
-    /**
-     * Chiave del componente {@see Wizard} nello schema `form` (es. `form.data::wizard`).
-     * Usata da {@see nextStep()} / {@see previousStep()} per delegare a Filament.
-     */
-    protected function getWizardComponentKey(): string
+    protected function getSubmitFormAction(): Action
     {
-        $schema = $this->getSchema('form');
-        if (null === $schema) {
-            throw new \RuntimeException('Schema [form] non trovato sul widget wizard.');
-        }
-
-        foreach ($schema->getComponents(withHidden: true) as $component) {
-            if ($component instanceof Wizard) {
-                $key = $component->getKey();
-                if (null === $key || '' === $key) {
-                    throw new \RuntimeException('Chiave Wizard vuota nello schema form.');
-                }
-
-                return $key;
-            }
-        }
-
-        throw new \RuntimeException('Nessun componente Wizard trovato nello schema form.');
+        return Action::make('submit')
+            ->label(__('filament-panels::resources/pages/create-record.form.actions.create.label'))
+            ->alpineClickHandler("\$wire.{$this->getSubmitFormLivewireMethodName()}()")
+            ->color('primary');
     }
 }

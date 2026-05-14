@@ -22,9 +22,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
     use HasXotForm;
     use HasXotTable;
-    use NavigationLabelTrait {
-        NavigationLabelTrait::trans as traitTrans;
-    }
+    use NavigationLabelTrait;
 
     protected static string $recordTitleAttribute = 'name';
 
@@ -58,14 +56,17 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 
-    public static function getNavigationLabel(): string
-    {
-        return static::transFunc(__FUNCTION__);
-    }
-
     protected function getTableHeading(): Htmlable|string|null
     {
         return $this->getTableHeadingFromTrait();
+    }
+
+    private function getTableHeadingFromTrait(): ?string
+    {
+        $key = static::getKeyTrans('table.heading');
+        $trans = trans($key);
+
+        return is_string($trans) && $trans !== $key ? $trans : null;
     }
 
     /**
@@ -105,11 +106,8 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 
-    private function getTableHeadingFromTrait(): ?string
+    public static function getNavigationLabel(): string
     {
-        $key = static::getKeyTrans('table.heading');
-        $trans = trans($key);
-
-        return is_string($trans) && $trans !== $key ? $trans : null;
+        return static::transFunc(__FUNCTION__);
     }
 }
