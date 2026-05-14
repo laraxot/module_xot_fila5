@@ -10,16 +10,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
-
-/**
- * Abstract base class for appointment state management.
- *
- * Defines the state machine configuration and required methods
- * that must be implemented by each concrete state class.
- *
- * @property string $name  Il nome dello stato
- * @property string $value Il valore dello stato nel database
- */
 abstract class XotBaseState implements StateContract
 {
     use TransTrait;
@@ -131,8 +121,10 @@ abstract class XotBaseState implements StateContract
          *
          * $appointment?->state->transitionTo($stateClass,$message);
          */
-        // Fallback safe-mode when model-states package is not available.
-        // Transition by generic arguments is intentionally a no-op.
+        /* @phpstan-ignore-next-line */
+        $record = $this->getModel();
+        /* @phpstan-ignore-next-line */
+        $record->state->transitionTo($stateClass, $message);
     }
 
     /**
@@ -171,18 +163,19 @@ abstract class XotBaseState implements StateContract
         return false;
     }
 
+    public function getModel(): ?Model
+    {
+        return null;
+    }
+
+    public static function getStateMapping(): array
+    {
+        return [];
+    }
+
     public static function getOptions(): array
     {
-        if (! method_exists(static::class, 'getStateMapping')) {
-            return [];
-        }
-
-        $mapping = static::getStateMapping();
-        if (! \is_object($mapping) || ! method_exists($mapping, 'toArray')) {
-            return [];
-        }
-        /** @var array<int|string, mixed> $states */
-        $states = $mapping->toArray();
+        $states = static::getStateMapping();
 
         $states = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
             static::class,

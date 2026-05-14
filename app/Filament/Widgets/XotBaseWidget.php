@@ -8,6 +8,8 @@ use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
@@ -24,11 +26,11 @@ use Webmozart\Assert\Assert;
  * Classe base astratta per tutti i widget Filament.
  * Fornisce funzionalità comuni e standardizzate per la gestione dei widget.
  *
- * @property bool                      $shouldRender Indica se il widget deve essere renderizzato
- * @property string                    $title        Titolo del widget
- * @property string                    $icon         Icona del widget
- * @property array<string, mixed>|null $data         Dati del form
- * @property Schema                    $form
+ * @property bool $shouldRender Indica se il widget deve essere renderizzato
+ * @property string $title Titolo del widget
+ * @property string $icon Icona del widget
+ * @property array<string, mixed>|null $data Dati del form
+ * @property Schema $form
  */
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
@@ -64,17 +66,22 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
     /**
      * Ottiene lo schema del form.
-     * Deve essere implementato nelle classi figlie.
+     *
+     * I widget lineari lo sovrascrivono. I widget basati su trait Filament
+     * dedicati, come HasWizard, possono lasciare il default vuoto perché il
+     * trait sostituisce i componenti del form nel proprio metodo form().
      *
      * @return array<int|string, Component>
      */
-    abstract public function getFormSchema(): array;
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     /**
      * Configura il form del widget.
      *
-     * @param Schema $schema Il form da configurare
-     *
+     * @param  Schema  $schema  Il form da configurare
      * @return Schema Il form configurato
      */
     public function form(Schema $schema): Schema
@@ -83,7 +90,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $schema->statePath('data');
 
         $model = $this->getFormModel();
-        if (null !== $model) {
+        if ($model !== null) {
             // Ensure model is compatible with Schema::model()
             if (\is_string($model)) {
                 if (class_exists($model) && is_subclass_of($model, Model::class)) {
@@ -99,10 +106,21 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return $schema;
     }
 
+    /**
+     * Azioni form opzionali per viste che chiamano `$this->getFormActions()` (es. layout custom, footer azioni).
+     * I widget che non le usano restano con array vuoto.
+     *
+     * @return array<int|string, Action>
+     */
+    protected function getFormActions(): array
+    {
+        return [];
+    }
+
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
-        if (null === $model) {
+        if ($model === null) {
             return [];
         }
         if (\is_string($model)) {
@@ -119,7 +137,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     $defaults = $model->getDataDefaults();
                     $merge1 = array_merge($defaults, $res);
                     $merge1 = Arr::map($merge1, static function ($value, string|int $key) use ($defaults) {
-                        if (null === $value) {
+                        if ($value === null) {
                             $value = Arr::get($defaults, $key, null);
                         }
 
@@ -140,11 +158,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $appends = $model->getAppends();
         $attributes = $model->attributesToArray();
 
+        /** @var array<int, string> $fields */
         $fields = array_merge($fillable, $appends);
-        $fields = array_values(array_filter(
-            $fields,
-            static fn (mixed $field): bool => is_string($field) || is_int($field),
-        ));
         $fields = array_fill_keys($fields, null);
         $fields = array_merge($fields, $attributes);
         if (method_exists($model, 'getDataDefaults')) {
@@ -200,17 +215,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
-     * Azioni form opzionali per viste che chiamano `$this->getFormActions()` (es. layout custom, footer azioni).
-     * I widget che non le usano restano con array vuoto.
-     *
-     * @return array<int|string, Action>
-     */
-    protected function getFormActions(): array
-    {
-        return [];
-    }
-
-    /**
      * Ottiene il modello per il form.
      * Può essere sovrascritto nelle classi figlie per fornire un modello specifico.
      */
@@ -237,9 +241,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     private function resolveView(): void
     {
         $defaultView = 'xot::filament.widgets.base';
-        $hadCustomViewRequested = $this->view !== $defaultView;
 
-        if ($hadCustomViewRequested && view()->exists($this->view)) {
+        if ($this->view !== $defaultView && view()->exists($this->view)) {
             return;
         }
 
@@ -249,7 +252,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                 $this->view = $view;
             }
         } catch (\Exception $e) {
-            if (! $hadCustomViewRequested) {
+            /* @phpstan-ignore identical.alwaysTrue */
+            if ($this->view === $defaultView) {
                 throw $e;
             }
         }

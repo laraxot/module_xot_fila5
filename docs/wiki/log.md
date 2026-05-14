@@ -16,21 +16,22 @@
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
-title: "Activity Log"
+title: "Xot Wiki Activity Log"
 module: "Xot"
 ---
 
-# Activity Log — Xot
+# Xot - Wiki Activity Log
 
-## [2026-06-05] docs | AI harness canon + stub moduli allineati
+## [2026-05-11] Wiki Structure Created
 
-- [ai-harness-xot-discipline.md](concepts/ai-harness-xot-discipline.md) — owner harness PHPStan/XotBase
-- Stub second-brain in 9+ moduli puntano a canon Xot + mappa HackerNoon #272
+- Created wiki structure: rules/, skills/, commands/, memories/, concepts/
+- Created INDEX.md for each section
+- Created module index.md
+- Ready for on-demand loading via QMD
 
-> **Purpose:** Append-only chronological activity record tracking ingests, queries, and lint passes.
-
-## Log Entries
-
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 ## [2026-05-08] governance | GSD canonical source
 
 - fissata regola: `GSD` significa sempre `Get Shit Done`
@@ -39,6 +40,8 @@ module: "Xot"
 - nuova pagina: `docs/wiki/concepts/gsd-canonical-source.md`
 - uso Xot: BMAD per story/vincoli, GSD per piano/verifica, Ruflo per checkpoint
 
+=======
+>>>>>>> 01dce8d29 (initial commit)
 ## [2026-05-05] fix | PHPStan Error Resolution - spatie/browsershot (PACKAGE INSTALLATION)
 
 - **Problem**: PHPStan riportava `Class Spatie\Browsershot\Browsershot not found`
@@ -172,6 +175,7 @@ _No activity yet. Start by ingesting raw documents._
 - XotBasePolicy: zero dipendenze, system processes, API token
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
+<<<<<<< HEAD
 
 ## [2026-05-07] ingest | Array Keys Rule
 - **Created**: [array-keys-rule.md](./array-keys-rule.md)
@@ -179,3 +183,6 @@ _No activity yet. Start by ingesting raw documents._
 - **Reason**: Leggibilità, Type-safety (PHPStan L10), manutenzione, consistenza
 - **Updated**: XotBaseResourceTable return types, structure.txt, index.md
 - **Commit**: docs: add array-keys-rule for Filament schemas
+=======
+>>>>>>> 01dce8d29 (initial commit)
+>>>>>>> e8a46704a (initial commit)

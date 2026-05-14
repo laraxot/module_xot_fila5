@@ -1,7 +1,5 @@
----
-module: theme
-topic: -search
-canonical: ../../../../Themes/docs/shared-components/-20.md
----
+# _search
 
-See canonical documentation: ../../../../Themes/docs/shared-components/-20.md
+<!-- Contenuto migrato da _docs/_search.txt -->
+
+https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations

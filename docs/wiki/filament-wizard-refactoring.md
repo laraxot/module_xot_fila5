@@ -25,12 +25,12 @@ By adopting the official `HasWizard` trait, we align with Filament's recommended
    - `getWizardSubmitAction()`
    remain unchanged to allow domain-specific customization
 
-4. **Kept abstract `getWizardSteps()`**
+4. **Kept abstract `getSteps()`**
    - Child widgets must still provide their step definitions
    - The trait respects this method to build the wizard
 
-5. **Mapped `getSteps()` to `getWizardSteps()`**
-   - Added `getSteps()` protected method delegating to `getWizardSteps()`
+5. **Mapped `getSteps()` to `getSteps()`**
+   - Added `getSteps()` protected method delegating to `getSteps()`
    - Added `getStartStep()` delegating to `$wizardStartStep`
 
 6. **Documentation**

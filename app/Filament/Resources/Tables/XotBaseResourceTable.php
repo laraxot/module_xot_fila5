@@ -14,7 +14,7 @@ use Filament\Tables\Table;
 
 abstract class XotBaseResourceTable
 {
-    public static function configure(Table $table): Table
+    final public static function configure(Table $table): Table
     {
         $columns = static::getTableColumns();
 
