@@ -19,12 +19,11 @@ class GetViewByClassAction
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group".
      *
-     * @param string $class  Il nome della classe da convertire
-     * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
+     * @param  string  $class  Il nome della classe da convertire
+     * @param  string  $suffix  Suffisso opzionale da aggiungere al nome della vista
+     * @return string Il nome della vista
      *
      * @throws \Exception Se la vista non esiste
-     *
-     * @return view-string Il nome della vista
      */
     public function execute(string $class, string $suffix = ''): string
     {
@@ -52,17 +51,15 @@ class GetViewByClassAction
             return Str::of($value)->kebab()->slug()->toString();
         });
 
-        $mappedStrings = array_values(array_filter(
-            $mapped,
-            static fn (mixed $value): bool => is_string($value),
-        ));
-        $implode = implode('.', $mappedStrings);
+        /** @var array<string> $mappedArr */
+        $mappedArr = array_values($mapped);
+        $implode = implode('.', $mappedArr);
         $views = [
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
         ];
-        $view = Arr::first($views, static fn (string $candidate): bool => view()->exists($candidate));
-        if (! is_string($view) || '' === $view) {
+        $view = Arr::first($views, view()->exists(...));
+        if ($view === null) {
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 

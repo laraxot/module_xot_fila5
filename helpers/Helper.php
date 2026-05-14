@@ -15,11 +15,9 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
-
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
-
 use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
@@ -285,20 +283,17 @@ if (! function_exists('getModelByName')) {
 
         $files_path = base_path('Modules').'/*/Models/*.php';
         Assert::isArray($files = glob($files_path));
-        $path = Arr::first($files, function (mixed $file) use ($name): bool {
-            if (! is_string($file)) {
-                return false;
-            }
-
-            $info = pathinfo($file);
+        $path = Arr::first($files, function ($file) use ($name): bool {
+            $info = pathinfo((string) $file);
 
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (! is_string($path) || '' === $path) {
+        if (null === $path) {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
+        Assert::string($path);
         $path = app(FixPathAction::class)->execute($path);
         $info = pathinfo($path);
         $module_name = Str::between($path, 'Modules'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.'Models');
@@ -394,7 +389,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = is_scalar($v) || null === $v ? $v : (string) $v;
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
         }
 
         $result = __($key, $safeReplace, $locale);

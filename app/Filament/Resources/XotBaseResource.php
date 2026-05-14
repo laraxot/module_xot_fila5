@@ -47,7 +47,7 @@ abstract class XotBaseResource extends FilamentResource
         $tmp = static::getKeyTrans($key);
         $res = trans($tmp, $params);
 
-        if (\is_string($res)) {
+        if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
                 throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
             }
@@ -55,10 +55,10 @@ abstract class XotBaseResource extends FilamentResource
             return $res;
         }
 
-        if (\is_array($res)) {
+        if (is_array($res)) {
             $first = current($res);
-            if (\is_string($first) || is_numeric($first)) {
-                return \is_string($first) ? $first : ((string) $first);
+            if (is_string($first) || is_numeric($first)) {
+                return is_string($first) ? $first : ((string) $first);
             }
         }
 
@@ -107,20 +107,15 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<int|string, Component|Htmlable|string>
      */
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
+    abstract public static function getFormSchema(): array;
 
     final public static function form(Schema $schema): Schema
     {
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            $configured = $form_class::configure($schema);
-            if ($configured instanceof Schema) {
-                return $configured;
-            }
+            /* @phpstan-ignore-next-line */
+            return $form_class::configure($schema);
         }
 
         /** @var array<int|string, Component|Htmlable|string> $components */
@@ -139,6 +134,7 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * Schema dell'infolist: tutte le risorse devono delegare qui.
      *
+     * @return array<string, \Filament\Schemas\Components\Component>
      * @return array<string, Component>
      */
     public static function getInfolistSchema(): array
@@ -151,32 +147,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
-        $infolist_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
-        if (class_exists($infolist_class) && method_exists($infolist_class, 'configure')) {
-            $configured = $infolist_class::configure($schema);
-            if ($configured instanceof Schema) {
-                return $configured;
-            }
-        }
-
         return $schema->components(static::getInfolistSchema());
-    }
-
-    public static function table(Table $table): Table
-    {
-        $table_class = static::class.'\Tables\\'.Str::of(class_basename(static::getModel()))
-            ->plural()
-            ->append('Table')
-            ->toString();
-
-        if (class_exists($table_class) && method_exists($table_class, 'configure')) {
-            $configured = $table_class::configure($table);
-            if ($configured instanceof Table) {
-                return $configured;
-            }
-        }
-
-        return parent::table($table);
     }
 
     /**

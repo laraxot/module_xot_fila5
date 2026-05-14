@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\CacheLockResource\Schemas;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class CacheLockForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, mixed>
      */
     public static function getFormSchema(): array
     {

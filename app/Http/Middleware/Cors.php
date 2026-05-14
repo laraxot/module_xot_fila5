@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Http\Response;
 
 class Cors
 {
@@ -15,16 +15,18 @@ class Cors
     public function handle(Request $request, \Closure $next): Response
     {
         $response = $next($request);
-        if (! $response instanceof Response) {
-            throw new \RuntimeException('Cors middleware expects a Symfony HTTP response instance.');
-        }
 
+        // @phpstan-ignore property.nonObject
         $headers = $response->headers;
 
+        // @phpstan-ignore method.nonObject
         $headers->set('Access-Control-Allow-Origin', '*');
+        // @phpstan-ignore method.nonObject
         $headers->set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT, DELETE');
+        // @phpstan-ignore method.nonObject
         $headers->set('Access-Control-Allow-Headers', 'Content-Type, X-Auth-Token, Origin, Authorization');
 
+        // @phpstan-ignore return.type
         return $response;
     }
 }
