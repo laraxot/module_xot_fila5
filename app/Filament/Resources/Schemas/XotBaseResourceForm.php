@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-use Closure;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
@@ -33,7 +32,7 @@ abstract class XotBaseResourceForm
      */
     final public static function configure(Schema $schema): Schema
     {
-        /** @var array<int, Closure|Htmlable|string> $formSchema */
+        /** @var array<int, \Closure|Htmlable|string> $formSchema */
         $formSchema = static::getFormSchema();
 
         return $schema
@@ -54,7 +53,7 @@ abstract class XotBaseResourceForm
     /**
      * Define the form components.
      *
-     * @return array<int, Closure|Htmlable|string> Component definitions for the form.
+     * @return array<int, \Closure|Htmlable|string> component definitions for the form
      */
     public static function getFormSchema(): array
     {
