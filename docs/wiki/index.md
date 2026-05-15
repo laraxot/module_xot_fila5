@@ -1,84 +1,94 @@
 ---
 title: "Xot Wiki Index"
 module: "Xot"
+type: "index"
+created: "2026-04-15"
+updated: "2026-05-14"
 ---
 
 # Xot Module Wiki
 
+**Scope**: Xot-specific knowledge only — Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament integration, migrations, translations.
+
+## Directory Structure
+
+```
+docs/wiki/
+├── concepts/          # Core Xot concepts and patterns
+├── rules/            # Xot-specific rules and governance
+├── skills/           # Xot development skills
+├── commands/         # Xot artisan commands
+├── memories/         # Xot development history
+├── entities/         # Xot domain entities
+├── decisions/        # Xot architectural decisions
+├── troubleshooting/  # Xot debugging guides
+├── comparisons/      # Xot vs alternatives
+├── overviews/        # Xot module overviews
+└── sources/          # Xot raw sources
+```
+
 ## Indices
-- [Rules](rules/INDEX.md)
-- [Skills](skills/INDEX.md)
-- [Commands](commands/INDEX.md)
-- [Memories](memories/INDEX.md)
-- [Concepts](concepts/INDEX.md)
+
+- [Rules](rules/INDEX.md) — Xot governance and constraints
+- [Skills](skills/INDEX.md) — Xot development competencies
+- [Commands](commands/INDEX.md) — Xot artisan commands
+- [Memories](memories/INDEX.md) — Xot development history
+- [Concepts](concepts/INDEX.md) — Core Xot patterns and architecture
 
 ## On-Demand Workflow
 
 ```bash
+# Search Xot-specific knowledge
 qmd search "Xot <topic>" --limit 5
+
+# Search within Xot wiki
+qmd search "<topic>" --path laravel/Modules/Xot/docs/wiki --limit 5
 ```
 
-<<<<<<< HEAD
----
-*Updated: 2026-05-11*
-=======
-- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
-- [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
-- [laraxot-core](../../../../docs/wiki/concepts/laraxot-core.md): Core XotBase classes rules.
-- [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md): Verify XotBase usage.
+## Key Concepts
 
-## Scopo Xot Module
+### Core Classes
+- **XotBaseWidget**: Base for all Filament widgets
+- **XotBaseWizardWidget**: Wizard implementation with HasWizard
+- **XotBaseResourceForm**: Form schemas with LangServiceProvider
+- **XotBaseResourceTable**: Table configurations
+- **XotBaseResource**: Resource definitions
 
-Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament integration, migrations, translations.
-
-## Compiled Pages
-
-| Pagina | Tipo | Argomento | Data |
-|--------|------|-----------|------|
-| [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
-| [unit-test-case-pattern](./concepts/unit-test-case-pattern.md) | Concept | Test patterns | 2026-04-21 |
-| [phpstan-cluster-map-and-false-friends](./concepts/phpstan-cluster-map-and-false-friends.md) | Concept | PHPStan cluster | 2026-04-23 |
-| [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField | 2026-04-23 |
-| [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
-| [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
-| [laravel13-modular-package-compatibility-matrix](./concepts/laravel13-modular-package-compatibility-matrix.md) | Concept | Compatibilita' pacchetti modulo | 2026-04-28 |
-| [claude-code-laraxot-rules-path-scoping](./concepts/claude-code-laraxot-rules-path-scoping.md) | Concept | Claude Code rules path-scoped per Xot/Laraxot | 2026-04-30 |
-| [why-xotbaseresourceform-superior](./concepts/why-xotbaseresourceform-superior.md) | Concept | Perché TicketForm pattern è superiore al Filament demo | 2026-05-05 |
-| [xotbase-resource-infolist-architecture](./concepts/xotbase-resource-infolist-architecture.md) | Concept | XotBaseResourceInfolist + TicketInfolist pattern | 2026-05-05 |
-| [filament-v5-hybrid-pattern](./concepts/filament-v5-hybrid-pattern.md) | Concept | Filament v5 configure() + XotBase hybrid pattern | 2026-05-05 |
-<<<<<<< HEAD
-| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | XotBaseResourceTable empty-column enforcement rule | 2026-05-07 |
-| [gsd-canonical-source](./concepts/gsd-canonical-source.md) | Concept | GSD = Get Shit Done, fonte canonica e uso con Xot | 2026-05-08 |
-=======
->>>>>>> 01dce8d29 (initial commit)
+### Key Patterns
+- **Actions over Services**: Always use Actions for business logic
+- **LangServiceProvider**: Automatic translations for UI elements
+- **Hybrid Filament Pattern**: configure() + XotBase classes
+- **PHPStan Level 10**: Strict type checking enforcement
 
 ## Best Practices
 
-- Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
-- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
-- Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
-- PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
-<<<<<<< HEAD
-- Array con chiavi stringhe in Schemas/Tables (vedi [array-keys-rule](./array-keys-rule.md))
-=======
->>>>>>> 01dce8d29 (initial commit)
+✅ **DO**:
+- Extend XotBase classes for all Filament components
+- Use Actions instead of Services for business logic
+- Implement `casts()` method instead of `$casts` property
+- Use string keys in Schema/Table arrays
+- Follow PHPStan Level 10 standards
 
-## Bad Practices
+❌ **DON'T**:
+- Create Service classes — use Actions only
+- Use `dehydrated(false)` in traits — breaks saving
+- Declare static `$view` in XotBaseField — calculated dynamically
+- Skip PHPStan validation
 
-- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
-- NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
-- NON dichiarare `$view` statica in XotBaseField - si calcola via `GetViewByClassAction`
+## Quick References
 
-## False Friends
+| Topic | Reference |
+|-------|-----------|
+| XotBase classes | [XotBaseResourceForm](concepts/why-xotbaseresourceform-superior.md) |
+| Wizard pattern | [XotBaseWizardWidget](concepts/xotbasewizardwidget-vs-filament-haswizard.md) |
+| PHPStan rules | [PHPStan Level 10](concepts/phpstan-level10.md) |
+| Actions pattern | [Actions over Services](../../docs/wiki/concepts/actions-over-services.md) |
 
-- `dehydrated(false)` sembra mantenere il campo nei dati ma blocca il salvataggio (vedi [coordinate-picker-filament5-save-pattern](../../Geo/docs/wiki/concepts/coordinate-picker-filament5-save-pattern.md))
-- `live()` in Filament non rende il campo sempre live - serve `$applyStateBindingModifiers()` (vedi [coordinate-picker-state-binding-rule](../../Geo/docs/wiki/concepts/coordinate-picker-state-binding-rule.md))
+## Recent Updates
 
-## Troubleshooting
+- **2026-05-14**: Improved CreateTicketWizardWidget architecture
+- **2026-05-13**: Fixed wizard multiple root elements issue
+- **2026-05-12**: XotBaseWizardWidget HasWizard integration complete
 
-| Pagina | Tipo | Argomento |
-|--------|------|-----------|
-| [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField runtime |
-
-Aggiornato: 2026-04-30
->>>>>>> e8a46704a (initial commit)
+---
+*Updated: 2026-05-14 — Claude Opus 4.7*

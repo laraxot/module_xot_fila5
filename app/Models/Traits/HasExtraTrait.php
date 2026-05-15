@@ -24,11 +24,11 @@ use function Safe\json_encode;
  */
 trait HasExtraTrait
 {
-/**
-      * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
-      *
-      * return MorphOne<ExtraContract>
-      */
+    /**
+     * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
+     *
+     * return MorphOne<ExtraContract>
+     */
     public function extra(): MorphOne
     {
         $extra_class = Str::of(static::class)
