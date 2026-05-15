@@ -17,7 +17,7 @@ class XotBaseResourceInfolist
     {
         $components = static::getInfolistSchema();
 
-        if ([] === $components) {
+        if ($components === []) {
             throw new \RuntimeException(sprintf('Infolist [%s] returned empty array from getInfolistSchema(). Every infolist MUST expose at least one entry. Use real fields from the related Model/migration/fillable — do not invent.', static::class));
         }
 
@@ -46,7 +46,7 @@ class XotBaseResourceInfolist
     }
 
     /**
-     * @param array<int|string, Component|Htmlable|string> $schema
+     * @param  array<int|string, Component|Htmlable|string>  $schema
      */
     protected static function getTabByName(
         string $name,
@@ -64,7 +64,7 @@ class XotBaseResourceInfolist
             ->columns($columns)
             ->schema(array_values($schema));
 
-        if (null !== $icon) {
+        if ($icon !== null) {
             $tab->icon($icon);
         }
 

@@ -12,17 +12,16 @@ namespace Modules\Xot\Filament\Actions\Header;
 // use Filament\Actions\Action;
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-use Webmozart\Assert\Assert;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 
 /**
  * Undocumented class.
  *
- * @property Model $record
+ * @property HasRecursiveRelationshipsContract $record
  */
 class ExportTreeXlsAction extends Action
 {
@@ -34,18 +33,15 @@ class ExportTreeXlsAction extends Action
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('heroicon-o-arrow-down-tray')
-            ->action(static function (Page $livewire, Model $record, $_data) {
+            ->action(static function (Page $livewire, HasRecursiveRelationshipsContract $record, $_data) {
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];
                 $filename = class_basename($livewire).'-'.collect($tableFilters)->flatten()->implode('-').'.xlsx';
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
-                // $query = $livewire->getFilteredTableQuery(); // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
-                // $rows = $query->get();
-                Assert::implementsInterface($record, HasRecursiveRelationshipsContract::class);
-                $rows = $record->descendantsAndSelf;
-                Assert::isInstanceOf($rows, Collection::class);
+                /** @var Collection<int, Model> $rows */
+                $rows = $record->descendantsAndSelf()->get();
                 $resource = $livewire->getResource();
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {

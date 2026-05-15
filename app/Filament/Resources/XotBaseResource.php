@@ -12,7 +12,6 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
 use Filament\Resources\Resource as FilamentResource;
 use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
@@ -21,17 +20,18 @@ use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
+use Modules\Xot\Filament\Traits\HasXotWizard;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
 
 use function Safe\glob;
-
-use Webmozart\Assert\Assert;
 
 /**
  * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
  */
 abstract class XotBaseResource extends FilamentResource
 {
+    use HasXotWizard;
     use NavigationLabelTrait;
 
     protected static ?string $model = null;
@@ -39,7 +39,7 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -79,7 +79,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
-        if (null !== static::$model) {
+        if (static::$model !== null) {
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -233,7 +233,7 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
-        if ([] === $filesResult) {
+        if ($filesResult === []) {
             return [];
         }
 
@@ -312,25 +312,5 @@ abstract class XotBaseResource extends FilamentResource
         }
 
         return $key;
-    }
-
-    protected static function getStepByName(string $name): Step
-    {
-        $methodName = Str::of($name)
-            ->snake()
-            ->studly()
-            ->prepend('get')
-            ->append('Schema')
-            ->toString();
-
-        if (method_exists(static::class, $methodName)) {
-            $schemaResult = static::$methodName();
-            /** @var array<Htmlable|string> $schemaComponents */
-            $schemaComponents = \is_array($schemaResult) ? array_values($schemaResult) : [];
-
-            return Step::make($name)->schema($schemaComponents);
-        }
-
-        return Step::make($name)->schema([]);
     }
 }
