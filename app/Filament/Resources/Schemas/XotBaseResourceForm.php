@@ -4,42 +4,60 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-use Filament\Schemas\Components\Wizard\Step;
+use Closure;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\Str;
+use Modules\Xot\Filament\Traits\HasXotWizard;
 
+/**
+ * Base class for resource form schemas.
+ *
+ * Provides:
+ * - `configure(Schema $schema)` to apply form components and column count.
+ * - `getFormSchemaColumns()` default column count (overrideable).
+ * - `getFormSchema()` default empty schema for concrete forms that only expose wizard steps.
+ *
+ * Steps are supplied via the {@see HasXotWizard} trait using `getSteps()`,
+ * which internally calls `getStepByName()` for each step name.
+ */
 abstract class XotBaseResourceForm
 {
-    /**
-     * @return array<int|string, mixed>
-     */
-    abstract public static function getFormSchema(): array;
+    use HasXotWizard;
 
     /**
-     * @return array<int, Step>
+     * Configure the form schema.
+     *
+     * Applies the components defined by {@see static::getFormSchema()}
+     * and sets the column count using {@see static::getFormSchemaColumns()}.
      */
-    public static function getWizardSteps(): array
+    final public static function configure(Schema $schema): Schema
     {
-        return [];
+        /** @var array<int, Closure|Htmlable|string> $formSchema */
+        $formSchema = static::getFormSchema();
+
+        return $schema
+            ->components($formSchema)
+            ->columns(static::getFormSchemaColumns());
     }
 
-    protected static function getStepByName(string $name): Step
+    /**
+     * Number of columns for the default form layout.
+     *
+     * Concrete classes may override to change the layout.
+     */
+    public static function getFormSchemaColumns(): int
     {
-        $methodName = Str::of($name)
-            ->snake()
-            ->studly()
-            ->prepend('get')
-            ->append('Schema')
-            ->toString();
+        return 1;
+    }
 
-        if (method_exists(static::class, $methodName)) {
-            $schemaResult = static::$methodName();
-            /** @var array<Htmlable|string> $schemaComponents */
-            $schemaComponents = \is_array($schemaResult) ? array_values($schemaResult) : [];
-
-            return Step::make($name)->schema($schemaComponents);
-        }
-
-        return Step::make($name)->schema([]);
+    /**
+     * Define the form components.
+     *
+     * @return array<int, Closure|Htmlable|string> Component definitions for the form.
+     */
+    public static function getFormSchema(): array
+    {
+        return [];
     }
 }

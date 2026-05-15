@@ -19,9 +19,9 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
- * @property ?string         $model
- * @property ?string         $resource
- * @property ?string         $slug
+ * @property ?string $model
+ * @property ?string $resource
+ * @property ?string $slug
  * @property TableLayoutEnum $layoutView
  */
 abstract class XotBaseListRecords extends FilamentListRecords
@@ -82,7 +82,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     {
         $perPage = $this->getTableRecordsPerPage();
         $paginator = $query->paginate(
-            'all' === $perPage ? $query->count() : (\is_int($perPage) ? $perPage : null),
+            $perPage === 'all' ? $query->count() : (\is_int($perPage) ? $perPage : null),
         );
 
         Assert::isInstanceOf($paginator, Paginator::class);

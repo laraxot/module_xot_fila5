@@ -12,17 +12,16 @@ namespace Modules\Xot\Filament\Actions\Header;
 // use Filament\Actions\Action;
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-use Webmozart\Assert\Assert;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
 
 /**
  * Undocumented class.
  *
- * @property \Modules\Xot\Contracts\HasRecursiveRelationshipsContract $record
+ * @property HasRecursiveRelationshipsContract $record
  */
 class ExportTreeXlsAction extends Action
 {
@@ -32,14 +31,14 @@ class ExportTreeXlsAction extends Action
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
             ->icon('heroicon-o-arrow-down-tray')
-            ->action(static function (Page $livewire, \Modules\Xot\Contracts\HasRecursiveRelationshipsContract $record, $_data) {
+            ->action(static function (Page $livewire, HasRecursiveRelationshipsContract $record, $_data) {
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];
                 $filename = class_basename($livewire).'-'.collect($tableFilters)->flatten()->implode('-').'.xlsx';
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
-                /** @var \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, Model> $rows */
+                /** @var Collection<int, Model> $rows */
                 $rows = $record->descendantsAndSelf()->get();
                 $resource = $livewire->getResource();
                 $fields = [];

@@ -6,13 +6,15 @@ namespace Modules\Xot\Filament\Widgets;
 
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Concerns\HasWizard;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Support\Concerns\EvaluatesClosures;
+use Filament\Support\Facades\FilamentView;
 use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\HtmlString;
-use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Js;
+
+use function request;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Providers\LangServiceProvider;
 
@@ -48,279 +50,124 @@ use Modules\Lang\Providers\LangServiceProvider;
  */
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
+    use EvaluatesClosures;
     use HasWizard {
         getWizardComponent as getParentWizardComponent;
     }
 
-    public int $wizardStartStep = 1;
+    /** @var class-string */
+    protected static string $resource;
 
-    use EvaluatesClosures;
+    protected ?int $wizardStartStep = null;
 
     protected int|string|array $columnSpan = 'full';
 
     /**
      * Elenco step del wizard. Implementato nel widget concreto.
      *
-     * @return array<int, Step>
+     * @return array<string, Step>
      */
     abstract public function getSteps(): array;
 
-    public function getWizardComponentKey(): string
-    {
-        return 'wizard';
-    }
-
     /**
-     * Costruisce il {@see Wizard} usando getParentWizardComponent() per mantenere
-     * lo standard Filament HasWizard, poi applica customizzazioni Laraxot (view tema, start step).
-     */
-    public function getWizardComponent(): Component
-    {
-        /** @var Wizard $wizard */
-        $wizard = $this->makeWizard($this->getSteps());
-
-        return $wizard;
-    }
-
-    /**
-     * Pulsanti Blade custom (`wire:click`): devono chiamare il {@see Wizard} via
-     * {@see InteractsWithSchemas::callSchemaComponentMethod()}, non esistono metodi magici sul widget.
-     */
-    public function nextStep(): void
-    {
-        $key = $this->getWizardComponentKey();
-        $wizard = $this->getSchemaComponent($key);
-        if (! $wizard instanceof Wizard) {
-            return;
-        }
-
-        $currentStepIndex = $wizard->getCurrentStepIndex();
-
-        $this->callSchemaComponentMethod($key, 'nextStep', [
-            'currentStepIndex' => $currentStepIndex,
-        ]);
-    }
-
-    /**
-     * Allinea lo step server-side al footer Filament (indice 0-based come {@see Wizard::getCurrentStepIndex()}).
-     */
-    public function previousStep(): void
-    {
-        $key = $this->getWizardComponentKey();
-        $wizard = $this->getSchemaComponent($key);
-        if (! $wizard instanceof Wizard) {
-            return;
-        }
-
-        $currentStepIndex = $wizard->getCurrentStepIndex();
-
-        $this->callSchemaComponentMethod($key, 'previousStep', [
-            'currentStepIndex' => $currentStepIndex,
-        ]);
-    }
-
-    /**
-     * Naviga a uno step specifico per nome.
-     */
-    public function goToStep(string $stepName): void
-    {
-        $key = $this->getWizardComponentKey();
-
-        $this->callSchemaComponentMethod($key, 'goToStep', [
-            'step' => $stepName,
-        ]);
-    }
-
-    /**
-     * Hook per definire se gli step sono skippable.
-     */
-    protected function hasSkippableWizardSteps(): bool
-    {
-        return false;
-    }
-
-    /**
-     * Centralizza il contratto minimo di un wizard Xot:
-     * step iniziale coerente, full width, e step in query solo se consentito.
+     * Recupera lo step iniziale dall'URL o usa lo step iniziale di default.
      *
-     * @param  array<int, Step>  $steps
+     * Utilizza la proprietà $wizardStartStep se definita più avanti nel stack,
+     * altrimenti restituisce 1.
      */
-    protected function makeWizard(array $steps): Wizard
-    {
-        $wizard = Wizard::make($steps)
-            ->startOnStep(fn (): int => $this->wizardStartStep)
-            ->columnSpanFull()
-            ->skippable($this->hasSkippableWizardSteps());
-
-        if ($this->queryStepOverrideAllowed()) {
-            $wizard->persistStepInQueryString('step');
-        }
-
-        // Customizzazioni Laraxot
-        $wizard->startOnStep($this->wizardStartStep);
-
-        if (! inAdmin()) {
-            $wizard = $wizard->view('pub_theme::components.wizard');
-        }
-
-        return $wizard;
-    }
-
     public function getStartStep(): int
     {
-        return $this->wizardStartStep;
+        // Check if step is specified in URL parameter
+        $stepParam = request('step');
+        if ($stepParam) {
+            $steps = $this->getSteps();
+            $stepKeys = array_keys($steps);
+            $index = array_search($stepParam, $stepKeys, true);
+            if ($index !== false) {
+                return $index + 1; // Convert to 1-based index
+            }
+        }
+
+        return $this->wizardStartStep ?? 1;
     }
 
-    /**
-     * Soddisfa il contratto astratto di {@see XotBaseWidget::getFormSchema()}.
-     *
-     * @return array<int, Component>
-     */
-    public function getFormSchema(): array
+    final public function getWizardComponent(): Wizard
     {
-        return [];
+        /** @var Wizard $wizard */
+        $wizard = $this->getParentWizardComponent();
+
+        $wizard = $wizard->persistStepInQueryString();
+
+        if (! inAdmin()) {
+         $wizard = $wizard->view('pub_theme::components.wizard');
+        }
+
+        return $wizard;
     }
 
     protected function hasSkippableSteps(): bool
     {
-        return $this->wizardStartStep <= 1;
-    }
-
-    /**
-     * Metodi di hook per la navigazione step (opzionali, da sovrascrivere).
-     */
-    protected function beforeNextStep(): bool
-    {
         return true;
-    }
-
-    protected function afterNextStep(): void
-    {
-        // Override per logiche custom
-    }
-
-    protected function beforePreviousStep(): bool
-    {
-        return true;
-    }
-
-    protected function afterPreviousStep(): void
-    {
-        // Override per logiche custom
-    }
-
-    protected function queryStepOverrideAllowed(): bool
-    {
-        return $this->wizardAllowStepQueryExtra();
-    }
-
-    /**
-     * @return array<string, mixed>
-     */
-    protected function defaultFormData(): array
-    {
-        return [];
-    }
-
-    /**
-     * Inizializza lo stato del wizard: step da query + fill dati default.
-     * DELEGA a Wizard::getStartStep() per la logica query string.
-     */
-    protected function initWizardState(): void
-    {
-        try {
-            if (isset($this->form) && is_object($this->form) && method_exists($this->form, 'fill')) {
-                $this->form->fill($this->defaultFormData());
-            } else {
-                $this->data = $this->defaultFormData();
-            }
-        } catch (\Throwable $e) {
-            $this->data = $this->defaultFormData();
-        }
-    }
-
-    /**
-     * Configura l'azione "Avanti" del wizard.
-     */
-    protected function configureWizardNextAction(Action $action): Action
-    {
-        return $action;
-    }
-
-    /**
-     * Configura l'azione "Indietro" del wizard.
-     */
-    protected function configureWizardPreviousAction(Action $action): Action
-    {
-        return $action;
-    }
-
-    /**
-     * Bottone submit sull'ultimo step del wizard.
-     */
-    protected function getWizardSubmitAction(): Htmlable
-    {
-        /** @var view-string $submitView */
-        $submitView = 'pub_theme::filament.wizard.submit-button';
-
-        if (view()->exists($submitView)) {
-            return new HtmlString((string) view($submitView)->render());
-        }
-
-        return Action::make('submit')
-            ->action('submit')
-            ->button();
-    }
-
-    protected function getStepByName(string $name): Step
-    {
-        $schema = Str::of($name)
-            ->snake()
-            ->studly()
-            ->prepend('get')
-            ->append('Schema')
-            ->toString();
-
-        $labelKey = 'fixcity::ticket_wizard.steps.'.$name.'.label';
-        $label = __($labelKey);
-
-        /** @var array<Htmlable|string> $schemaComponents */
-        $schemaComponents = $this->$schema();
-
-        return Step::make($label)
-            ->label($label)
-            ->schema($schemaComponents);
-    }
-
-    /**
-     * Consentire `?step=` oltre local/debug.
-     */
-    protected function wizardAllowStepQueryExtra(): bool
-    {
-        return false;
-    }
-
-    protected function wizardMaxStep(): int
-    {
-        return count($this->getSteps());
-    }
-
-    protected function getSubmitFormLivewireMethodName(): string
-    {
-        return 'submit';
     }
 
     protected function getCancelFormAction(): Action
     {
+        $url = $this->previousUrl ?? $this->getResourceUrl();
+        $spaUrl = is_string($url) ? $url : null;
+
         return Action::make('cancel')
+            ->label(__('filament-panels::resources/pages/edit-record.form.actions.cancel.label'))
+            ->alpineClickHandler(
+                FilamentView::hasSpaMode($spaUrl)
+                    ? 'document.referrer ? window.history.back() : Livewire.navigate('.Js::from($url).')'
+                    : 'document.referrer ? window.history.back() : (window.location.href = '.Js::from($url).')',
+            )
             ->color('gray');
+    }
+
+    /**
+     * @param  array<string, mixed>  $parameters
+     */
+    public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
+    {
+        if (filled($name) && ($name !== 'index') && method_exists($this, 'getRecord')) {
+            $parameters['record'] ??= $this->getRecord();
+        }
+
+        $url = static::getResource()::getUrl($name, $parameters, $isAbsolute, $panel, $tenant, $shouldGuessMissingParameters);
+
+        return is_string($url) ? $url : '';
+    }
+
+    /**
+     * @return class-string
+     */
+    public static function getResource(): string
+    {
+        /** @var class-string $resource */
+        $resource = static::$resource;
+
+        return $resource;
+    }
+
+    protected function getSaveFormAction(): Action
+    {
+        $hasFormWrapper = $this->hasFormWrapper();
+
+        return Action::make('save')
+            ->label(__('filament-panels::resources/pages/edit-record.form.actions.save.label'))
+            ->submit($hasFormWrapper ? $this->getSubmitFormLivewireMethodName() : null)
+            ->action($hasFormWrapper ? null : $this->getSubmitFormLivewireMethodName())
+            ->keyBindings(['mod+s']);
     }
 
     protected function getSubmitFormAction(): Action
     {
-        return Action::make('submit')
-            ->label(__('filament-panels::resources/pages/create-record.form.actions.create.label'))
-            ->alpineClickHandler("\$wire.{$this->getSubmitFormLivewireMethodName()}()")
-            ->color('primary');
+        return $this->getSaveFormAction();
+    }
+
+    protected function getSubmitFormLivewireMethodName(): string
+    {
+        return 'save';
     }
 }
