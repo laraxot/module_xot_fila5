@@ -72,7 +72,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasSc
      * dedicati, come HasWizard, possono lasciare il default vuoto perché il
      * trait sostituisce i componenti del form nel proprio metodo form().
      *
-     * @return array<int|string, Component|\Closure|\Illuminate\Contracts\Support\Htmlable|string> Component definitions for the form.
+     * @return array<int|string, Component|\Closure|\Illuminate\Contracts\Support\Htmlable|string> component definitions for the form
      */
     public function getFormSchema(): array
     {

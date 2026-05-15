@@ -13,10 +13,10 @@ use Filament\Support\Facades\FilamentView;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Js;
-
-use function request;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Providers\LangServiceProvider;
+
+use function request;
 
 /**
  * Base per widget Filament che espongono un {@see Wizard} nello schema.
@@ -76,12 +76,12 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     public function getStartStep(): int
     {
         // Check if step is specified in URL parameter
-        $stepParam = request('step');
+        $stepParam = \request('step');
         if ($stepParam) {
             $steps = $this->getSteps();
             $stepKeys = array_keys($steps);
             $index = array_search($stepParam, $stepKeys, true);
-            if ($index !== false) {
+            if (false !== $index) {
                 return $index + 1; // Convert to 1-based index
             }
         }
@@ -97,7 +97,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         $wizard = $wizard->persistStepInQueryString();
 
         if (! inAdmin()) {
-         $wizard = $wizard->view('pub_theme::components.wizard');
+            $wizard = $wizard->view('pub_theme::components.wizard');
         }
 
         return $wizard;
@@ -124,11 +124,11 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
     }
 
     /**
-     * @param  array<string, mixed>  $parameters
+     * @param array<string, mixed> $parameters
      */
     public function getResourceUrl(?string $name = null, array $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?Model $tenant = null, bool $shouldGuessMissingParameters = true): string
     {
-        if (filled($name) && ($name !== 'index') && method_exists($this, 'getRecord')) {
+        if (filled($name) && ('index' !== $name) && method_exists($this, 'getRecord')) {
             $parameters['record'] ??= $this->getRecord();
         }
 
