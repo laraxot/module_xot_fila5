@@ -16,6 +16,7 @@ use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -264,11 +265,10 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
-        // @phpstan-ignore-next-line
-        if (! view()->exists($submit_view)) {
+        if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
         }
-        $render = view($submit_view)->render();
+        $render = View::make($submit_view)->render();
 
         return new HtmlString($render);
     }
