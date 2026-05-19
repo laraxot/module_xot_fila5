@@ -69,14 +69,15 @@ abstract class XotBaseMigration extends LaravelMigration
         // Controllo che $filename sia valido prima di passarlo a Str::of()
         $mod_name = false !== $filename ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
 
+        /** @var class-string<Model> $modelClass */
         $modelClass = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
             ->replace('/', \DIRECTORY_SEPARATOR)
             ->toString();
 
         Assert::stringNotEmpty($modelClass);
         Assert::classExists($modelClass);
+        Assert::isAOf($modelClass, Model::class);
 
-        /* @var class-string<Model> $modelClass */
         $this->model_class = $modelClass;
 
         return $modelClass;

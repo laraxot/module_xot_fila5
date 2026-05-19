@@ -32,7 +32,7 @@ abstract class XotBaseResourceForm
      */
     final public static function configure(Schema $schema): Schema
     {
-        /** @var array<int, \Closure|Htmlable|string> $formSchema */
+        /** @var array<\Illuminate\Contracts\Support\Htmlable|string> $formSchema */
         $formSchema = static::getFormSchema();
 
         return $schema
@@ -53,7 +53,7 @@ abstract class XotBaseResourceForm
     /**
      * Define the form components.
      *
-     * @return array<int, \Closure|Htmlable|string> component definitions for the form
+     * @return array<\Illuminate\Contracts\Support\Htmlable|string> component definitions for the form
      */
     public static function getFormSchema(): array
     {

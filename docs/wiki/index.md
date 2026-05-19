@@ -86,6 +86,8 @@ qmd search "<topic>" --path laravel/Modules/Xot/docs/wiki --limit 5
 
 ## Recent Updates
 
+- **2026-05-19**: Achieved 100% PHPStan compliance across all Modules and created [PHPStan Perfection Guide](troubleshooting/phpstan-perfection-guide.md)
+- **2026-05-19**: Fixed Browsershot missing dependency and Laravel 12 version alignment [Troubleshooting](troubleshooting/browsershot-missing-dependency.md)
 - **2026-05-14**: Improved CreateTicketWizardWidget architecture
 - **2026-05-13**: Fixed wizard multiple root elements issue
 - **2026-05-12**: XotBaseWizardWidget HasWizard integration complete
