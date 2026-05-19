@@ -129,6 +129,7 @@ class XotData extends Data implements Wireable
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
+        /** @var Model&UserContract $user */
         $user = $user_class::firstOrCreate(['email' => $email]);
         /*
          * if (! $user) {
