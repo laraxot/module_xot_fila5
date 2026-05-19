@@ -13,6 +13,9 @@ class XotBaseResourceForm
 {
     public static function configure(Schema $schema): Schema
     {
+        /** @var array<Htmlable|string> $formSchema */
+        $formSchema = static::getFormSchema();
+
         return $schema
             ->components(static::getFormSchema())
             ->columns(static::getFormSchemaColumns());
@@ -24,7 +27,9 @@ class XotBaseResourceForm
     }
 
     /**
-     * @return array<string, \Filament\Schemas\Components\Component>
+     * Define the form components.
+     *
+     * @return array<Htmlable|string> component definitions for the form
      */
     public static function getFormSchema(): array
     {
