@@ -119,7 +119,7 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
-        /* @var class-string<Model&UserContract> $class */
+        /** @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -130,6 +130,7 @@ class XotData extends Data implements Wireable
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
+        /** @var Model&UserContract $user */
         $user = $user_class::firstOrCreate(['email' => $email]);
         /*
          * if (! $user) {
@@ -138,7 +139,6 @@ class XotData extends Data implements Wireable
          */
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
 
-        /* @var UserContract $user */
         return $user;
     }
 
@@ -236,7 +236,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /* @var class-string<Model&ProfileContract> $class */
+        /** @var class-string<Model&ProfileContract> $class */
         return $class;
     }
 
@@ -384,7 +384,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /* @var class-string<Model&UserContract> $class */
+        /** @var class-string<Model&UserContract> $class */
         return $class;
     }
 
