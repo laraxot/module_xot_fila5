@@ -6,11 +6,12 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 use function Safe\preg_match;
+
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
 
 /**
  * Middleware di sicurezza avanzato.
@@ -56,9 +57,6 @@ class SecurityMiddleware
     private function isDebugbarRoute(Request $request): bool
     {
         $debugbarPrefix = config('debugbar.route_prefix', '_debugbar');
-        if (! is_string($debugbarPrefix)) {
-            $debugbarPrefix = '_debugbar';
-        }
 
         return str_starts_with($request->path(), $debugbarPrefix)
             || str_starts_with($request->path(), 'vendor/debugbar')
@@ -297,7 +295,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
-        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
+        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -350,7 +348,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
+            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
                 return true;
             }
         }
@@ -366,7 +364,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-            if ($value !== null && is_string($value)) {
+            if (null !== $value && is_string($value)) {
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);

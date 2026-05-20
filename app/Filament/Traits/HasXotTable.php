@@ -87,7 +87,7 @@ trait HasXotTable
 
         if ($this->shouldShowAssociateAction()) {
             $actions['associate'] = AssociateAction::make()
-
+                ->label('')
                 ->icon('heroicon-o-paper-clip');
         }
 
@@ -182,6 +182,18 @@ trait HasXotTable
      */
     public function table(Table $table): Table
     {
+        /*
+        $modelClass = $this->getModelClass();
+        if (! app(TableExistsByModelClassActions::class)->execute($modelClass)) {
+            $this->notifyTableMissing();
+
+            return $this->configureEmptyTable($table);
+        }
+
+        //  @var Model $model
+        $model = app($modelClass);
+        Assert::isInstanceOf($model, Model::class);
+        */
         // Configurazione base della tabella
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
@@ -328,7 +340,7 @@ trait HasXotTable
     {
         return [
             'delete' => DeleteBulkAction::make()
-
+                ->label('')
                 ->icon('heroicon-o-trash')
                 ->color('danger')
                 ->requiresConfirmation(),

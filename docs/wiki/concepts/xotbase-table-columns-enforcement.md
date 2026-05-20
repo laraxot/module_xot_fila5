@@ -9,7 +9,6 @@ tags: [xotbase, filament, tables, enforcement]
 related:
   - xotbase-resource-form-pattern.md
   - ../../../../../../docs/wiki/concepts/xotbase-table-columns-enforcement.md
-  - ../../../../../../docs/wiki/rules/xot-base-resource-table-no-configure.md
 ---
 
 # Xot Module: XotBaseResourceTable Columns
@@ -26,5 +25,3 @@ related:
 Resources: CacheLock, Cache, Extra, Log, Module, Session
 
 Note: XotBaseResourceTable.php itself is the abstract base class (not counted above).
-
-**Contract**: le sottoclassi non ridefiniscono `configure()`; usare solo i metodi `getTable*`. Regola progetto: [`xot-base-resource-table-no-configure.md`](../../../../../../docs/wiki/rules/xot-base-resource-table-no-configure.md).

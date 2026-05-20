@@ -125,10 +125,6 @@ I seguenti metodi possono ritornare array vuoti (sono opzionali):
 
 Solo `getTableColumns()` e `getInfolistSchema()` sono obbligatori.
 
-### 8. Vietato `configure()` sulle Table che estendono XotBaseResourceTable
-
-`XotBaseResourceTable::configure()` è `final` e applica colonne, filtri e azioni tramite i `getTable*()`. **Non** aggiungere un secondo `configure()` nella sottoclasse (duplicazione e conflitto col contratto). Regola wiki: [`docs/wiki/rules/xot-base-resource-table-no-configure.md`](../../../../docs/wiki/rules/xot-base-resource-table-no-configure.md).
-
 ## File Corretti di Esempio
 
 ### LogsTable (Xot Module)

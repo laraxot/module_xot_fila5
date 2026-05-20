@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\ModelStates\State;
 
 /**
- * @property string $status
+ * @property State $status
  *
  * @phpstan-require-extends Model
  */

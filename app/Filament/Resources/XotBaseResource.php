@@ -11,12 +11,12 @@ use Filament\Resources\RelationManagers\RelationGroup;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
 use Filament\Resources\Resource as FilamentResource;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
-use Filament\Tables\Table;
+use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -105,7 +105,7 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * @return array<int|string, Component|Htmlable|string>
+     * @return array<string, Component>
      */
     abstract public static function getFormSchema(): array;
 
@@ -114,11 +114,10 @@ abstract class XotBaseResource extends FilamentResource
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            /* @phpstan-ignore-next-line */
             return $form_class::configure($schema);
         }
 
-        /** @var array<int|string, Component|Htmlable|string> $components */
+        /** @var array<Htmlable|string> $components */
         $components = static::getFormSchema();
 
         return $schema
@@ -135,7 +134,6 @@ abstract class XotBaseResource extends FilamentResource
      * Schema dell'infolist: tutte le risorse devono delegare qui.
      *
      * @return array<string, \Filament\Schemas\Components\Component>
-     * @return array<string, Component>
      */
     public static function getInfolistSchema(): array
     {
@@ -147,6 +145,11 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
+        $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
+        if (class_exists($class)) {
+            return $class::configure($schema);
+        }
+
         return $schema->components(static::getInfolistSchema());
     }
 
@@ -262,11 +265,10 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
-        // @phpstan-ignore-next-line
-        if (! view()->exists($submit_view)) {
+        if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
         }
-        $render = view($submit_view)->render();
+        $render = View::make($submit_view)->render();
 
         return new HtmlString($render);
     }

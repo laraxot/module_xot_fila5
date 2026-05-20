@@ -149,7 +149,7 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 - [ ] NO `Log::error()` nel catch block
 - [ ] Usa `$this->resolveInitialStepFromQuery()` nel mount
 - [ ] Usa `$this->normalizeWizardFormState()` nel submit (se stato annidato)
-- [ ] `getSteps()` e pubblico
+- [ ] `getWizardSteps()` e pubblico
 - [ ] Step builders sono privati
 - [ ] Submit button segue pattern corretto (HTML nativo o tema)
 - [ ] Step riepilogo usa Infolists (NON Blade partial)

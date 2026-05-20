@@ -1,17 +1,25 @@
-# Xot Module - skills Index
+---
+title: "Skills Index"
+type: "index"
+tags: [skills, filament, xotbase]
+module: "Xot"
+updated: 2026-05-12
+---
 
-## Purpose
-Index for Xot module skills.
+# Skills — Xot Module Wiki
 
-## On-Demand Loading
+> Skill on-demand per sviluppo Xot/Laraxot.
+
+## Available Skills
+
+- [filament-page-creation](./filament-page-creation.md) — come creare ListRecords/Create/Edit/View con XotBase; `$resource` protected static; no `->label()`
+
+## Usage
 
 ```bash
-qmd search "Xot skills" --limit 5
+qmd search "Xot skill filament" --limit 5
 ```
 
-## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
-
 ---
-*Updated: 2026-05-11*
+
+**Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

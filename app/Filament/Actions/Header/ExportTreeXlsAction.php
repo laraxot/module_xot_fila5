@@ -22,7 +22,7 @@ use Webmozart\Assert\Assert;
 /**
  * Undocumented class.
  *
- * @property \Modules\Xot\Contracts\HasRecursiveRelationshipsContract $record
+ * @property Model $record
  */
 class ExportTreeXlsAction extends Action
 {
@@ -31,16 +31,21 @@ class ExportTreeXlsAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
+            // ->icon('heroicon-o-cloud-arrow-down')
+            // ->icon('fas-file-excel')
             ->icon('heroicon-o-arrow-down-tray')
-            ->action(static function (Page $livewire, \Modules\Xot\Contracts\HasRecursiveRelationshipsContract $record, $_data) {
+            ->action(static function (Page $livewire, Model $record, $_data) {
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];
                 $filename = class_basename($livewire).'-'.collect($tableFilters)->flatten()->implode('-').'.xlsx';
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
-                /** @var \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, Model> $rows */
-                $rows = $record->descendantsAndSelf()->get();
+                // $query = $livewire->getFilteredTableQuery(); // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
+                // $rows = $query->get();
+                Assert::implementsInterface($record, HasRecursiveRelationshipsContract::class);
+                $rows = $record->descendantsAndSelf;
+                Assert::isInstanceOf($rows, Collection::class);
                 $resource = $livewire->getResource();
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {

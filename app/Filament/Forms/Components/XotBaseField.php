@@ -28,9 +28,6 @@ abstract class XotBaseField extends Field
             return parent::getView();
         }
 
-        /** @var view-string $view */
-        $view = app(GetViewByClassAction::class)->execute($class);
-
-        return $view;
+        return app(GetViewByClassAction::class)->execute($class);
     }
 }
