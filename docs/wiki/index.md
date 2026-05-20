@@ -1,27 +1,20 @@
----
-title: "Xot Wiki Index"
-module: "Xot"
----
+# Xot Module LLM Wiki
 
-# Xot Module Wiki
+Indice operativo del wiki Xot (core framework).
 
-## Indices
-- [Rules](rules/INDEX.md)
-- [Skills](skills/INDEX.md)
-- [Commands](commands/INDEX.md)
-- [Memories](memories/INDEX.md)
-- [Concepts](concepts/INDEX.md)
+## Struttura canonica (sacred)
 
-## On-Demand Workflow
+- [concepts/](./concepts/): Pattern architetturali e metodologie Xot/Laraxot.
+- [entities/](./entities/): Modelli e componenti chiave.
+- [sources/](./sources/): Dati di ricerca e link esterni.
+- [comparisons/](./comparisons/): Implementazioni alternative.
+- [decisions/](./decisions/): ADL (Architectural Decision Log).
+- [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
+- [_archive/](./_archive/): Documentazione legacy.
+- [_templates/](./_templates/): Template standard.
 
-```bash
-qmd search "Xot <topic>" --limit 5
-```
+## Regole collegate
 
-<<<<<<< HEAD
----
-*Updated: 2026-05-11*
-=======
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
 - [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
 - [laraxot-core](../../../../docs/wiki/concepts/laraxot-core.md): Core XotBase classes rules.
@@ -42,15 +35,6 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
 | [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
 | [laravel13-modular-package-compatibility-matrix](./concepts/laravel13-modular-package-compatibility-matrix.md) | Concept | Compatibilita' pacchetti modulo | 2026-04-28 |
-| [claude-code-laraxot-rules-path-scoping](./concepts/claude-code-laraxot-rules-path-scoping.md) | Concept | Claude Code rules path-scoped per Xot/Laraxot | 2026-04-30 |
-| [why-xotbaseresourceform-superior](./concepts/why-xotbaseresourceform-superior.md) | Concept | Perché TicketForm pattern è superiore al Filament demo | 2026-05-05 |
-| [xotbase-resource-infolist-architecture](./concepts/xotbase-resource-infolist-architecture.md) | Concept | XotBaseResourceInfolist + TicketInfolist pattern | 2026-05-05 |
-| [filament-v5-hybrid-pattern](./concepts/filament-v5-hybrid-pattern.md) | Concept | Filament v5 configure() + XotBase hybrid pattern | 2026-05-05 |
-<<<<<<< HEAD
-| [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | XotBaseResourceTable empty-column enforcement rule | 2026-05-07 |
-| [gsd-canonical-source](./concepts/gsd-canonical-source.md) | Concept | GSD = Get Shit Done, fonte canonica e uso con Xot | 2026-05-08 |
-=======
->>>>>>> 01dce8d29 (initial commit)
 
 ## Best Practices
 
@@ -58,10 +42,6 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
 - PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
-<<<<<<< HEAD
-- Array con chiavi stringhe in Schemas/Tables (vedi [array-keys-rule](./array-keys-rule.md))
-=======
->>>>>>> 01dce8d29 (initial commit)
 
 ## Bad Practices
 
@@ -80,5 +60,4 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 |--------|------|-----------|
 | [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField runtime |
 
-Aggiornato: 2026-04-30
->>>>>>> e8a46704a (initial commit)
+Aggiornato: 2026-04-28

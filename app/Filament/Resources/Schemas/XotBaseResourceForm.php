@@ -5,19 +5,30 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Schemas;
 
 use Filament\Schemas\Components\Wizard\Step;
+use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str;
 
-abstract class XotBaseResourceForm
+class XotBaseResourceForm
 {
-    /**
-     * @return array<int|string, mixed>
-     */
-    abstract public static function getFormSchema(): array;
+    public static function configure(Schema $schema): Schema
+    {
+        return $schema
+            ->components(static::getFormSchema())
+            ->columns(static::getFormSchemaColumns());
+    }
 
-    /**
-     * @return array<int, Step>
-     */
+    public static function getFormSchemaColumns(): int
+    {
+        return 1;
+    }
+
+    public static function getFormSchema(): array
+    {
+        return [
+        ];
+    }
+
     public static function getWizardSteps(): array
     {
         return [];
@@ -39,6 +50,7 @@ abstract class XotBaseResourceForm
 
             return Step::make($name)->schema($schemaComponents);
         }
+        dddx($methodName);
 
         return Step::make($name)->schema([]);
     }

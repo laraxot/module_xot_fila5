@@ -20,7 +20,7 @@ related:
 Subclasses only provide **static** methods:
 - `getFormSchema(): array` — returns array of Schema components
 - `getFormSchemaColumns(): int` — column count for form layout
-- `getSteps(): array` — wizard steps (if wizard)
+- `getWizardSteps(): array` — wizard steps (if wizard)
 
 ## Base Class Magic
 

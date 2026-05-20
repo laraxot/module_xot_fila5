@@ -72,7 +72,7 @@ use Filament\Resources\Pages\Concerns\HasWizard; // For Pages (CreateRecord, Edi
 abstract class XotBaseWizardWidget extends XotBaseWidget {
     // ✅ Already has:
     // - makeWizard() - wraps Wizard::make() with our defaults
-    // - getSteps() - abstract, implemented by child
+    // - getWizardSteps() - abstract, implemented by child
     // - initWizardState() - handles ?step= query
     // - configureWizardNextAction() - hook for "Avanti" button
     // - normalizeWizardFormState() - handles array key conversion
@@ -166,7 +166,7 @@ CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
 
 - [ ] Standard Filament wizard rendering
 - [ ] No theme overrides needed (uses vendor Blade directly)
-- [ ] Same `TicketForm::getSteps()` logic
+- [ ] Same `TicketForm::getWizardSteps()` logic
 - [ ] Different visual presentation (admin panel vs frontoffice)
 
 ## Quality Gates (MANDATORY After Every Change)
