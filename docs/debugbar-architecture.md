@@ -16,7 +16,7 @@ The debugbar was not appearing on `http://127.0.0.1:8000/it/tests/homepage` desp
 |-------|--------|
 | Package installed? | YES (`fruitcake/laravel-debugbar 4.2.x`) |
 | Service provider discovered? | YES (`php artisan package:discover` shows Laravel Debugbar as discovered) |
-| Response instrumentation? | ✅ YES — `fruitcake/laravel-debugbar` v4 usa listener `Illuminate\Foundation\Http\Events\RequestHandled` + `Terminating` (namespace `Fruitcake\\LaravelDebugbar`, non più `Barryvdh\\Debugbar\\Middleware\\InjectDebugbar` nel middleware stack web globale). |
+| Middleware registered? | ✅ YES (`Barryvdh\Debugbar\Middleware\InjectDebugbar` in web middleware group) |
 | Config file exists? | ✅ YES (`laravel/config/debugbar.php`) |
 | `APP_DEBUG` in .env? | ✅ `true` |
 | `DEBUGBAR_ENABLED` in .env? | ❌ **`false`** — THIS WAS THE PROBLEM |

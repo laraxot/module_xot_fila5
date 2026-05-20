@@ -9,7 +9,7 @@ use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 
 it('converts model attributes to array correctly', function (): void {
-    $model = new Activity;
+    $model = new Activity();
     $model->setRawAttributes(['name' => 'Test']);
 
     $action = app(SafeArrayByModelCastAction::class);

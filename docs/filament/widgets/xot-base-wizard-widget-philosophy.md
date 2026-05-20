@@ -37,7 +37,7 @@ Senza `XotBaseWizardWidget`, ogni modulo reinventa:
 
 **La soluzione**: UNA sola base class che gestisce il **protocollo**, il dominio gestisce il **contenuto**.
 
-Il contratto esplicito sulla base è `abstract public function getSteps(): array` (ordine degli step); `getFormSchema()` consuma solo API definite, così static analysis e IDE non inferiscono metodi fantasma.
+Il contratto esplicito sulla base è `abstract public function getWizardSteps(): array` (ordine degli step); `getFormSchema()` consuma solo API definite, così static analysis e IDE non inferiscono metodi fantasma.
 
 ---
 

@@ -7,8 +7,7 @@ sources:
   - laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php
 confidence: high
 created: 2026-05-04
-updated: 2026-05-12
-last_change: 2026-05-12 - Now uses `use HasWizard` trait (Filament standard), renamed getWizardSteps() to getSteps(); TicketForm now returns array<int, Step>
+updated: 2026-05-04
 tags: [filament, wizard, haswizard, xotbasewizardwidget, architecture, reinventing-wheel]
 related:
   - ../../../../Fixcity/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
@@ -62,7 +61,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 {
     public int $wizardStartStep = 1;  // ← Duplicates getWizardStartStep()
     
-    abstract public function getSteps(): array;  // ← Duplicates getSteps()
+    abstract public function getWizardSteps(): array;  // ← Duplicates getSteps()
     
     protected function wizardMaxStep(): int;  // ← Not in Filament
     
@@ -76,7 +75,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
 | Feature | XotBaseWizardWidget | Filament HasWizard (Pages) | HasWizard (Actions) |
 |---------|--------------------|---------------------------|---------------------|
-| Step definition | `getSteps()` | `getSteps()` | `steps()` |
+| Step definition | `getWizardSteps()` | `getSteps()` | `steps()` |
 | Start step | `wizardStartStep` property | `getStartStep()` | `startOnStep()` |
 | Skippable | `hasSkippableWizardSteps()` | `hasSkippableSteps()` | `skippableSteps()` |
 | Max step | `wizardMaxStep()` | N/A | N/A |
@@ -109,7 +108,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
         parent::mount();
         
         // Initialize wizard using HasWizard
-        $this->steps($this->getSteps());
+        $this->steps($this->getWizardSteps());
         $this->startOnStep($this->wizardStartStep);
     }
 }
@@ -123,7 +122,7 @@ Keep XotBaseWizardWidget but align API with HasWizard:
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
     // Rename to match HasWizard (Pages)
-    abstract public function getSteps(): array;  // Was: getSteps()
+    abstract public function getSteps(): array;  // Was: getWizardSteps()
     
     public function hasSkippableSteps(): bool  // Was: hasSkippableWizardSteps()
     {
