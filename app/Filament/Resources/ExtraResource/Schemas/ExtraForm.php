@@ -13,7 +13,6 @@ class ExtraForm extends XotBaseResourceForm
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-
     public static function getFormSchema(): array
     {
         return [
