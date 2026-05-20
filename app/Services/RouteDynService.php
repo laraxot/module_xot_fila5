@@ -357,14 +357,9 @@ class RouteDynService
 
         $sub_namespace = self::getNamespace($v, $namespace);
         $curr = null === $curr ? $sub_namespace : $curr;
-        $subsRaw = $v['subs'];
-        Assert::isArray($subsRaw);
-
-        $subsList = [];
-        foreach ($subsRaw as $subRaw) {
-            $subsList[] = self::normalizeRouteConfigRow($subRaw);
-        }
-
+        Assert::isArray($subs = $v['subs']);
+        /** @var array<int, array<string, mixed>> $subsList */
+        $subsList = array_values($subs);
         self::dynamic_route($subsList, $sub_namespace, null, $curr);
     }
 

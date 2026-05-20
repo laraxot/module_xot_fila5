@@ -27,9 +27,7 @@ class XotBaseResourceForm
     }
 
     /**
-     * Define the form components.
-     *
-     * @return array<Htmlable|string> component definitions for the form
+     * @return array<string, \Filament\Schemas\Components\Component>
      */
     public static function getFormSchema(): array
     {
