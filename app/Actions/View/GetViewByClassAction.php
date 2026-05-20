@@ -63,7 +63,7 @@ class GetViewByClassAction
         }
 
         if (view()->exists($view)) {
-            /** @var view-string $view */
+            /* @var view-string $view */
             return $view;
         }
         throw new \Exception('View not found: '.$view);
