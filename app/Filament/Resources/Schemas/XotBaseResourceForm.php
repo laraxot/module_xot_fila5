@@ -23,6 +23,9 @@ class XotBaseResourceForm
         return 1;
     }
 
+    /**
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
     public static function getFormSchema(): array
     {
         return [
