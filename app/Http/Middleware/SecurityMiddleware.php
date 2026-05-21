@@ -56,10 +56,7 @@ class SecurityMiddleware
      */
     private function isDebugbarRoute(Request $request): bool
     {
-        $debugbarPrefix = config('debugbar.route_prefix', '_debugbar');
-        if (! is_string($debugbarPrefix)) {
-            $debugbarPrefix = '_debugbar';
-        }
+        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
 
         return str_starts_with($request->path(), $debugbarPrefix)
             || str_starts_with($request->path(), 'vendor/debugbar')

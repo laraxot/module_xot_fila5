@@ -10,8 +10,9 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 class CacheLockForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, mixed>
+     * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+
     public static function getFormSchema(): array
     {
         return [

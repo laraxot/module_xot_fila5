@@ -89,9 +89,6 @@ class EnvWidget extends Widget implements HasActions, HasForms
 
         /** @var array<Component> $components */
         $components = array_values($selected);
-        if ([] === $this->only) {
-            return $all;
-        }
 
         return $components;
     }

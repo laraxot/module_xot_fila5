@@ -45,8 +45,10 @@ trait HasExtraTrait
         // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
         // Assert::implementsInterface($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
 
-        /* @phpstan-ignore argument.type, argument.templateType */
-        return $this->morphOne($extra_class, 'model');
+        /** @var class-string<Model> $extraClass */
+        $extraClass = $extra_class;
+
+        return $this->morphOne($extraClass, 'model');
     }
 
     public function getExtra(string $name): array|bool|float|int|string|null
