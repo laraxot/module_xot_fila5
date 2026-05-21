@@ -14,6 +14,7 @@ class ModuleForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
+
     public static function getFormSchema(): array
     {
         return [
