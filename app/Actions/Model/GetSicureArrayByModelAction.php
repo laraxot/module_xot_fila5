@@ -16,10 +16,23 @@ class GetSicureArrayByModelAction
      */
     public function execute(Model $model): array
     {
-        // Use getAttributes() directly to avoid potential exceptions from attributesToArray()
-        /** @var array<string, mixed> $res */
-        $res = $model->getAttributes();
+        try {
+            /** @var array<string, mixed> $res */
+            $res = $model->attributesToArray(); // "" is not a valid backing value for enum Modules\<main module>\Enums\OccurrenceFrequencyEnum
 
-        return $res;
+            return $res;
+        } catch (\ValueError $e) {
+            $data = [];
+            foreach ($model->getAttributes() as $key => $value) {
+                try {
+                    $data[$key] = $this->$key;
+
+                    /* @phpstan-ignore-next-line */
+                } catch (\ValueError $e) {
+                }
+            }
+
+            return $data;
+        }
     }
 }

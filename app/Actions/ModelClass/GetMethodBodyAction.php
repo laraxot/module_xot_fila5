@@ -24,7 +24,11 @@ class GetMethodBodyAction
         Assert::string($file_name = $table_method->getFileName());
         $source = file($file_name);
 
-        /* @phpstan-ignore-next-line */
-        return implode('', array_slice($source, $start_line, $length));
+        $body = '';
+        foreach (\array_slice($source, $start_line, $length) as $line) {
+            $body .= (string) $line;
+        }
+
+        return $body;
     }
 }

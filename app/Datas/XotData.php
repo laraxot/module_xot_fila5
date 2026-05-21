@@ -160,10 +160,10 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        /** @var class-string<Model&TeamContract> $class */
-        $class = $this->team_class;
+        /** @var class-string<Model&TeamContract> $teamClass */
+        $teamClass = $this->team_class;
 
-        return $class;
+        return $teamClass;
     }
 
     /**
@@ -190,10 +190,10 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-        /** @var class-string<Model&TenantContract> $class */
-        $class = $this->tenant_class;
+        /** @var class-string<Model&TenantContract> $tenantClass */
+        $tenantClass = $this->tenant_class;
 
-        return $class;
+        return $tenantClass;
     }
 
     /**
@@ -242,7 +242,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /** @var class-string<Model&ProfileContract> $class */
+        /* @var class-string<Model&ProfileContract> */
         return $class;
     }
 
@@ -407,7 +407,7 @@ class XotData extends Data implements Wireable
             ->append('Resource')
             ->toString();
 
-        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
+        // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
         if (! class_exists($resourceClass)) {
             $resourceClass =
                 'Modules\\'.$moduleName.'\\Filament\\Resources\\'.class_basename($class).'Resource';

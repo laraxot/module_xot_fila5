@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -78,9 +77,8 @@ class SendMailByRecordAction
         SmtpData::make()->send($emailData);
 
         // myLogs è sempre disponibile su BaseModel
-        /** @var Relation $logs */
-        $logs = $record->myLogs();
-        $logs->create([
+        /* @phpstan-ignore-next-line - Dynamic relationship method */
+        $record->myLogs()->create([
             'act' => 'sendMail',
             'handle' => authId(),
         ]);
