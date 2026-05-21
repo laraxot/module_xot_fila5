@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
-use Webmozart\Assert\Assert;
 
 use function Safe\define;
 use function Safe\fopen;
