@@ -180,9 +180,6 @@ trait HasXotTable
      *
      * Ultimo aggiornamento: 10/2023
      */
-
-   
-
     public function table(Table $table): Table
     {
         /*
