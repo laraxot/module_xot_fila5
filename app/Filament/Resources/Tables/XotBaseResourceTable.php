@@ -11,10 +11,11 @@ abstract class XotBaseResourceTable
 {
     use HasXotTable;
 
-    public static function configure( Table $table): Table
+    public static function configure(Table $table): Table
     {
         return $this->table($table);
     }
+
     /**
      * @return array<int|string, Column>
      */
