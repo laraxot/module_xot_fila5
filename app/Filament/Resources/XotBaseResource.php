@@ -114,7 +114,10 @@ abstract class XotBaseResource extends FilamentResource
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            return $form_class::configure($schema);
+            $configured = $form_class::configure($schema);
+            Assert::isInstanceOf($configured, Schema::class);
+
+            return $configured;
         }
 
         /** @var array<Htmlable|string> $components */
@@ -147,7 +150,10 @@ abstract class XotBaseResource extends FilamentResource
     {
         $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
         if (class_exists($class)) {
-            return $class::configure($schema);
+            $configured = $class::configure($schema);
+            Assert::isInstanceOf($configured, Schema::class);
+
+            return $configured;
         }
 
         return $schema->components(static::getInfolistSchema());

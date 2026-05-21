@@ -309,6 +309,18 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
     }
 
     /**
+     * Nome del metodo Livewire invocato da `<form wire:submit="...">`.
+     *
+     * Allineato a {@see \Filament\Forms\Commands\MakeLivewireFormCommand} / `LivewireFormView.stub`
+     * (`wire:submit="{{ submitAction }}"`). Nei wizard Laraxot il default è `submit()`; `save()` resta alias
+     * per compatibilità con `Action::submit('save')` del fallback Filament.
+     */
+    public function getFormSubmitAction(): string
+    {
+        return 'submit';
+    }
+
+    /**
      * Bottone submit sull'ultimo step del wizard (centralizzato in base).
      *
      * **Protocollo di rendering** (in ordine di priorita):

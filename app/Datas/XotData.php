@@ -119,6 +119,7 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
+        /** @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -169,7 +170,10 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        return $this->team_class;
+        /** @var class-string<Model&TeamContract> $teamClass */
+        $teamClass = $this->team_class;
+
+        return $teamClass;
     }
 
     /**
@@ -196,7 +200,10 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-        return $this->tenant_class;
+        /** @var class-string<Model&TenantContract> $tenantClass */
+        $tenantClass = $this->tenant_class;
+
+        return $tenantClass;
     }
 
     /**
@@ -393,6 +400,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
+        /** @var class-string<Model&UserContract> $class */
         return $class;
     }
 
