@@ -27,11 +27,6 @@ abstract class XotBaseMigration extends LaravelMigration
     /** @var class-string<Model>|null */
     protected ?string $model_class = null;
 
-    protected string $table_name = '';
-
-    /** @var array<string, int> */
-    protected array $uuidToBigintIdMapping = [];
-
     public function __construct()
     {
         $this->model_class ??= $this->getModelClass();
@@ -69,15 +64,15 @@ abstract class XotBaseMigration extends LaravelMigration
         // Controllo che $filename sia valido prima di passarlo a Str::of()
         $mod_name = false !== $filename ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
 
-        /** @var class-string<Model> $modelClass */
         $modelClass = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
             ->replace('/', \DIRECTORY_SEPARATOR)
             ->toString();
 
         Assert::stringNotEmpty($modelClass);
         Assert::classExists($modelClass);
-        Assert::isAOf($modelClass, Model::class);
+        Assert::subclassOf($modelClass, Model::class);
 
+        /** @var class-string<Model> $modelClass */
         $this->model_class = $modelClass;
 
         return $modelClass;
@@ -413,6 +408,13 @@ abstract class XotBaseMigration extends LaravelMigration
         return DB::connection($this->getConnection())->getDriverName();
     }
 
+    protected function isMysqlFamilyDriver(?string $driver = null): bool
+    {
+        $driver ??= $this->driver();
+
+        return in_array($driver, ['mysql', 'mariadb'], true);
+    }
+
     /**
      * Determine if the migration should run.
      * This method provides a hook for conditional migration execution.
@@ -477,6 +479,9 @@ abstract class XotBaseMigration extends LaravelMigration
         });
     }
 
+    /** @var array<string, int> */
+    protected array $uuidToBigintIdMapping = [];
+
     /**
      * @param \Closure(Blueprint): void                                                    $createNewTableSchema
      * @param list<string>                                                                 $dataColumns
@@ -495,7 +500,7 @@ abstract class XotBaseMigration extends LaravelMigration
                 $blueprint->uuid('uuid')->nullable()->after('id');
             }, $table);
             $conn->table($table)->update(['uuid' => DB::raw('id')]);
-            if ('mysql' === $conn->getDriverName()) {
+            if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
                 $conn->statement('ALTER TABLE '.$table.' MODIFY uuid CHAR(36) NOT NULL');
             }
         }
@@ -557,7 +562,7 @@ abstract class XotBaseMigration extends LaravelMigration
             }
         }
 
-        if ('mysql' === $conn->getDriverName()) {
+        if ($this->isMysqlFamilyDriver($conn->getDriverName())) {
             $db = $conn->getDatabaseName();
             $constraint = $conn->selectOne(
                 "SELECT CONSTRAINT_NAME FROM information_schema.TABLE_CONSTRAINTS 

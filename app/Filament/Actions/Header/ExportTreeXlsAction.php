@@ -12,16 +12,17 @@ namespace Modules\Xot\Filament\Actions\Header;
 // use Filament\Actions\Action;
 use Filament\Actions\Action;
 use Filament\Resources\Pages\Page;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
+use Webmozart\Assert\Assert;
 
 /**
  * Undocumented class.
  *
- * @property HasRecursiveRelationshipsContract $record
+ * @property Model $record
  */
 class ExportTreeXlsAction extends Action
 {
@@ -30,16 +31,23 @@ class ExportTreeXlsAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
+            // ->icon('heroicon-o-cloud-arrow-down')
+            // ->icon('fas-file-excel')
             ->icon('heroicon-o-arrow-down-tray')
-            ->action(static function (Page $livewire, HasRecursiveRelationshipsContract $record, $_data) {
+            ->action(static function (Page $livewire, Model $record, $_data) {
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];
                 $filename = class_basename($livewire).'-'.collect($tableFilters)->flatten()->implode('-').'.xlsx';
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
-                /** @var Collection<int, Model> $rows */
-                $rows = $record->descendantsAndSelf()->get();
+                // $query = $livewire->getFilteredTableQuery(); // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
+                // $rows = $query->get();
+                Assert::implementsInterface($record, HasRecursiveRelationshipsContract::class);
+                /** @var Model&HasRecursiveRelationshipsContract $treeRecord */
+                $treeRecord = $record;
+                $rows = $treeRecord->descendantsAndSelf;
+                Assert::isInstanceOf($rows, Collection::class);
                 $resource = $livewire->getResource();
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {

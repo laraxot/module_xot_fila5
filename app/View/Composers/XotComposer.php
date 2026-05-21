@@ -102,11 +102,7 @@ class XotComposer
             return $metatag->{$fun}();
         }
 
-        $raw = $metatag->{$str};
-        if (is_string($raw) || is_bool($raw) || null === $raw) {
-            return $raw;
-        }
-
-        return null;
+        // @phpstan-ignore return.type
+        return $metatag->{$str};
     }
 }

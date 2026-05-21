@@ -214,7 +214,7 @@ abstract class XotBaseResourceForm
     /**
      * Helper for wizard steps (optional override).
      */
-    public static function getSteps(): array
+    public static function getWizardSteps(): array
     {
         return [];
     }
@@ -395,13 +395,13 @@ class TicketForm extends XotBaseResourceForm
     {
         return $schema
             ->components([
-                Wizard::make(static::getSteps())
+                Wizard::make(static::getWizardSteps())
                     ->skippable()
                     ->persistStepInQueryString(),
             ]);
     }
     
-    public static function getSteps(): array
+    public static function getWizardSteps(): array
     {
         return [
             Step::make('privacy')

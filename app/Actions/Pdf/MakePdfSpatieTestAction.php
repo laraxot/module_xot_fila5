@@ -26,19 +26,14 @@ class MakePdfSpatieTestAction
         string $filename = 'spatie-pdf-test.pdf',
         string $view = 'xot::pdf.spatie-test',
     ): StreamedResponse {
-        /* @phpstan-ignore-next-line */
         $pdf = Pdf::view($view, [
             'title' => 'Spatie PDF Test',
             'generated_at' => now(),
             'payload' => $data,
         ])
-            /* @phpstan-ignore-next-line */
             ->format(Format::A4)
-            /* @phpstan-ignore-next-line */
             ->name($filename)
-            /* @phpstan-ignore-next-line */
             ->download()
-            /* @phpstan-ignore-next-line */
             ->withBrowsershot(function (Browsershot $browsershot): void {
                 $browsershot->showBackground();
 
@@ -60,7 +55,6 @@ class MakePdfSpatieTestAction
 
         return new StreamedResponse(
             static function () use ($pdf): void {
-                /* @phpstan-ignore-next-line */
                 echo base64_decode($pdf->base64());
             },
             200,

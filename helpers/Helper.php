@@ -13,7 +13,6 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
-use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
 
 use function Safe\define;
@@ -285,17 +284,20 @@ if (! function_exists('getModelByName')) {
 
         $files_path = base_path('Modules').'/*/Models/*.php';
         Assert::isArray($files = glob($files_path));
-        $path = Arr::first($files, function ($file) use ($name): bool {
-            $info = pathinfo((string) $file);
+        $path = Arr::first($files, function (mixed $file) use ($name): bool {
+            if (! is_string($file)) {
+                return false;
+            }
+
+            $info = pathinfo($file);
 
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (null === $path) {
+        if (! is_string($path)) {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
-        Assert::string($path);
         $path = app(FixPathAction::class)->execute($path);
         $info = pathinfo($path);
         $module_name = Str::between($path, 'Modules'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.'Models');
@@ -311,7 +313,7 @@ if (! function_exists('getModuleFromModel')) {
     {
         $class = $model::class;
         $module_name = Str::before(Str::after($class, 'Modules\\'), '\\Models\\');
-        $moduleRepository = app(RepositoryInterface::class);
+        $moduleRepository = app(Nwidart\Modules\Contracts\RepositoryInterface::class);
         Assert::isInstanceOf($res = $moduleRepository->find($module_name), Nwidart\Modules\Module::class);
 
         return $res;

@@ -86,8 +86,7 @@ class ExportXlsByCollection
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
         foreach ($fields as $col => $field) {
-            $colLetter = Coordinate::stringFromColumnIndex($col + 1);
-            $sheet->setCellValue($colLetter.'1', $field);
+            $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).'1', $field);
         }
     }
 
@@ -104,8 +103,7 @@ class ExportXlsByCollection
         foreach ($rows as $data) {
             foreach ($fields as $col => $field) {
                 $value = $this->extractValue($data, $field);
-                $colLetter = Coordinate::stringFromColumnIndex($col + 1);
-                $sheet->setCellValue($colLetter.$row, $value);
+                $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
             }
             ++$row;
         }

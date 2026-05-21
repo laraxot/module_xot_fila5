@@ -21,7 +21,6 @@ class MorphToOneAction
         //    return;
         // }
 
-        /* @phpstan-ignore-next-line */
         Assert::isInstanceOf($rows = $relationDTO->rows, MorphToOne::class);
 
         if (! isset($relationDTO->data['lang'])) {
@@ -29,7 +28,6 @@ class MorphToOneAction
         }
 
         // if ($rows !== null) {
-        /* @phpstan-ignore-next-line */
         $rows->create($relationDTO->data);
 
         // }

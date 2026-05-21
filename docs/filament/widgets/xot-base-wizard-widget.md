@@ -12,7 +12,7 @@ La regola non e' estetica: serve a tenere separati i widget-form generici dai wi
 ## Quando usarla
 
 - Il form principale è un **Wizard** (più `Step`), non un semplice elenco di campi.
-- Il widget concreto **deve** implementare `getSteps(): array` (metodo **astratto** sulla base): è il contratto esplicito per `getFormSchema()` / `makeWizard()`.
+- Il widget concreto **deve** implementare `getWizardSteps(): array` (metodo **astratto** sulla base): è il contratto esplicito per `getFormSchema()` / `makeWizard()`.
 - Vuoi **policy unica** su `?step=` (solo local/debug o override esplicito via `wizardAllowStepQueryExtra()`).
 - Lo schema wrappa il `Wizard` con una **chiave** (default `wizard` da `getWizardSchemaWrapperKey()`): serve `normalizeWizardFormState()` dopo `getState()`.
 
@@ -20,7 +20,7 @@ La regola non e' estetica: serve a tenere separati i widget-form generici dai wi
 
 Nel [pannello](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard) si usa il trait `CreateRecord\Concerns\HasWizard` con `getSteps()` e opzionalmente `hasSkippableSteps()`.
 
-In **frontoffice** (`XotBaseWizardWidget`): stesso componente `Wizard` / `Step`, ma entrypoint Livewire **widget** — `getSteps()` equivale a `getSteps()`, `hasSkippableWizardSteps()` a `hasSkippableSteps()`. Non si mischia il trait sul widget: il contesto non è una Resource page.
+In **frontoffice** (`XotBaseWizardWidget`): stesso componente `Wizard` / `Step`, ma entrypoint Livewire **widget** — `getWizardSteps()` equivale a `getSteps()`, `hasSkippableWizardSteps()` a `hasSkippableSteps()`. Non si mischia il trait sul widget: il contesto non è una Resource page.
 
 ## Quando restare su XotBaseWidget
 
@@ -30,7 +30,7 @@ Widget con form lineare, tabelle, statistiche: usare **`XotBaseWidget`** (o `Xot
 
 | Metodo | Ruolo |
 |--------|--------|
-| `wizardMaxStep()` | Numero massimo di step (default: `count(getSteps())`, minimo 1) |
+| `wizardMaxStep()` | Numero massimo di step (default: `count(getWizardSteps())`, minimo 1) |
 | `hasSkippableWizardSteps()` | Allineato a `HasWizard::hasSkippableSteps()` — default `false` (flussi con privacy/consensi restano sequenziali). |
 | `getWizardSchemaWrapperKey()` | Chiave array nello schema che contiene il `Wizard` (default `wizard`) |
 | `wizardAllowStepQueryExtra()` | `true` se in produzione si accetta override da config modulo (es. Fixcity) |
