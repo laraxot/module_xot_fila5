@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+use Webmozart\Assert\Assert;
 
 use function Safe\define;
 use function Safe\fopen;
@@ -44,10 +45,17 @@ class ArtisanService
         switch ($act) {
             case 'migrate':
                 $defaultConn = Config::get('database.default');
+<<<<<<< HEAD
                 $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
                 if ('' !== $module_name) {
+=======
+                $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
+                DB::purge($purgeConn);
+                DB::reconnect($purgeConn);
+                if ($module_name !== '') {
+>>>>>>> 93fecd1d (.)
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     return self::exe('module:migrate '.$module_name.' --force');

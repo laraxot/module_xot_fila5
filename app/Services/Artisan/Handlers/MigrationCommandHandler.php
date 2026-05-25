@@ -17,7 +17,11 @@ class MigrationCommandHandler implements CommandHandlerInterface
     public function handle(string $moduleName = ''): string
     {
         $defaultConn = Config::get('database.default');
+<<<<<<< HEAD
         $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
+=======
+        $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
+>>>>>>> 93fecd1d (.)
         DB::purge($purgeConn);
         DB::reconnect($purgeConn);
 
