@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit;
 
 use Modules\UI\Models\Asset;
 use Modules\Xot\Models\Module;
-use Modules\Xot\Tests\TestCase;
 
 it('can create a test asset', function () {
     $asset = Asset::factory()->create([

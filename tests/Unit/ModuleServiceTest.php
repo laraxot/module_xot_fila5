@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Modules\Xot\Services\ModuleService;
-use Modules\Xot\Tests\TestCase;
 
 describe('ModuleService', function () {
     beforeEach(function () {
-        $this->service = new ModuleService;
+        $this->service = new ModuleService();
     });
 
     it('can be instantiated', function () {
