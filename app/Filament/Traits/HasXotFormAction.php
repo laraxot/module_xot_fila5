@@ -4,29 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-use Filament\Schemas\Schema;
-use Filament\Tables\Table;
-use Modules\UI\Enums\TableLayoutEnum;
 use Filament\Actions\Action;
-use Filament\Resources\Pages\Concerns\HasWizard;
-use Filament\Schemas\Components\Wizard;
-use Filament\Schemas\Components\Wizard\Step;
-use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Facades\FilamentView;
-use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Js;
-use Modules\Lang\Actions\Filament\AutoLabelAction;
-use Modules\Lang\Providers\LangServiceProvider;
 
-/** 
+/**
  * Trait HasXotFormAction.
- *
- 
  */
 trait HasXotFormAction
 {
-
     /**
      * @return class-string
      */
@@ -87,5 +74,4 @@ trait HasXotFormAction
     {
         return 'save';
     }
-
 }
