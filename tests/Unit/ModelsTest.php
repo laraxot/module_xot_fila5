@@ -8,8 +8,7 @@ use Modules\Tenant\Models\Tenant;
 use Modules\UI\Models\Asset;
 use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
-
-uses(TestCase::class)->in(__DIR__);
+use Modules\Xot\Tests\TestCase;
 
 it('can create a test user', function () {
     $user = User::factory()->create([

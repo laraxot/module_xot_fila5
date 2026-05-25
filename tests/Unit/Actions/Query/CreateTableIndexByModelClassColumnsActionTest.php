@@ -19,7 +19,8 @@ it('creates table index correctly', function (): void {
         $table->string('test_col');
     });
 
-    $modelClass = new class extends XotBaseModel {
+    $modelClass = new class extends XotBaseModel
+    {
         protected $table = 'test_index_table';
     };
     $modelClassName = get_class($modelClass);
@@ -43,7 +44,8 @@ it('throws exception for invalid model class', function (): void {
 });
 
 it('throws exception for missing table', function (): void {
-    $modelClass = new class extends XotBaseModel {
+    $modelClass = new class extends XotBaseModel
+    {
         protected $table = 'missing_table';
     };
     $modelClassName = get_class($modelClass);
