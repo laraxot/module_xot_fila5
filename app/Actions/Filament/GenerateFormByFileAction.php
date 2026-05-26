@@ -86,11 +86,7 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
-        Assert::isArray($source);
-        $body = '';
-        foreach (\array_slice($source, $start_line, $length) as $line) {
-            $body .= (string) $line;
-        }
+        $body = implode('', \array_slice($source, $start_line, $length));
 
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);

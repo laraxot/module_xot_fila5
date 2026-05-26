@@ -1,14 +1,3 @@
----
-title: "Filament Version Declaration — {ModuleOrThemeName}"
-module: "Xot"
-type: concept
-tags: [filament, version]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament version"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)
