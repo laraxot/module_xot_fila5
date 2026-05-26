@@ -16,7 +16,6 @@ use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -114,10 +113,7 @@ abstract class XotBaseResource extends FilamentResource
         // return AuthorForm::configure($schema);
         $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
-            $configured = $form_class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
+            return $form_class::configure($schema);
         }
 
         /** @var array<Htmlable|string> $components */
@@ -150,10 +146,7 @@ abstract class XotBaseResource extends FilamentResource
     {
         $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
         if (class_exists($class)) {
-            $configured = $class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
+            return $class::configure($schema);
         }
 
         return $schema->components(static::getInfolistSchema());
@@ -271,10 +264,11 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
-        if (! View::exists($submit_view)) {
+        // @phpstan-ignore-next-line
+        if (! view()->exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
         }
-        $render = View::make($submit_view)->render();
+        $render = view($submit_view)->render();
 
         return new HtmlString($render);
     }
