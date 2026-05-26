@@ -14,7 +14,7 @@
 
 Questa regola non e negoziabile. E la base del contratto architetturale Laraxot.
 
-**Nota (Filament pannello)**: su `CreateRecord` il trait `HasWizard` usa `getSteps()` / `hasSkippableSteps()` ([doc](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard)). Qui nel widget: `getWizardSteps()` / `hasSkippableWizardSteps()` su `XotBaseWizardWidget` — stesso componente `Wizard`, contesto frontoffice.
+**Nota (Filament pannello)**: su `CreateRecord` il trait `HasWizard` usa `getSteps()` / `hasSkippableSteps()` ([doc](https://filamentphp.com/docs/5.x/resources/creating-records#using-a-wizard)). Qui nel widget: `getSteps()` / `hasSkippableWizardSteps()` su `XotBaseWizardWidget` — stesso componente `Wizard`, contesto frontoffice.
 
 ---
 
@@ -178,10 +178,10 @@ protected function getWizardSubmitAction(): Htmlable
 
 ---
 
-### 9. DEFINIRAI `getWizardSteps()` come metodo pubblico
+### 9. DEFINIRAI `getSteps()` come metodo pubblico
 ```php
 // ✅ CORRETTO
-public function getWizardSteps(): array
+public function getSteps(): array
 {
     return [
         $this->makeStepPrivacy(),
@@ -196,7 +196,7 @@ private function makeStepSummary(): Step { /* ... */ }
 ```
 
 **Perche**: 
-- Separazione delle responsabilita: base class chiama `getWizardSteps()`, dominio definisce gli step
+- Separazione delle responsabilita: base class chiama `getSteps()`, dominio definisce gli step
 - Ogni step builder e privato (incapsulamento dominio-specifico)
 
 ---
@@ -265,8 +265,8 @@ Prima di committare un wizard widget, verifica:
 - [ ] NO `->tooltip()` espliciti su azioni
 - [ ] NO `Log::error()` nel catch block
 - [ ] Usa `$this->resolveInitialStepFromQuery()` nel mount
-- [ ] Usa `$this->normalizeWizardFormState()` nel submit (se stato annidato)
-- [ ] `getWizardSteps()` e pubblico
+- [ ] Submit/persist usa `$this->form->getState()` senza riscrivere tutto il payload in helper generici (solo merge dominio documentati, es. `owner_id`)
+- [ ] `getSteps()` e pubblico
 - [ ] Step builders sono privati
 - [ ] Submit button segue pattern corretto (HTML nativo o tema)
 - [ ] Traduzioni seguono pattern `{namespace}::{widget_name}.*`

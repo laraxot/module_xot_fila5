@@ -40,7 +40,7 @@
         "spatie/cpu-load-health-check": "^1.0",
         "spatie/laravel-data": "^4.7",
         "spatie/laravel-health": "^1.29",
-        "spatie/laravel-model-states": "^2.14",
+        "spatie/laravel-model-states": "*",
         "spatie/laravel-model-status": "*",
         "spatie/laravel-package-tools": "*",
         "spatie/laravel-permission": "*",
@@ -61,7 +61,7 @@
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
         "fakerphp/faker": "^1.24",
-        "fruitcake/laravel-debugbar": "^4.2.8",
+        "fruitcake/laravel-debugbar": "^4.2",
         "larastan/larastan": "*",
         "laravel/boost": "^2.0",
         "laravel/pint": "^1.18",

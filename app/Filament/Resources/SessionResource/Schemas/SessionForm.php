@@ -6,14 +6,14 @@ namespace Modules\Xot\Filament\Resources\SessionResource\Schemas;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class SessionForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, \Filament\Schemas\Components\Component>
+     * @return array<int|string, Component>
      */
-
     public static function getFormSchema(): array
     {
         return [
