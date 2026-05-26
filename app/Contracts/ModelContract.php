@@ -29,22 +29,22 @@ use Illuminate\Support\Carbon;
  * @property Pivot|null  $pivot
  * @property string      $tennant_name
  *
- * @method string getRouteKey()
- * @method string getRouteKeyName()
- * @method string getTable()
- * @method mixed with($array)
- * @method array getFillable()
- * @method mixed fill($array)
- * @method mixed getConnection()
- * @method mixed update($params)
- * @method mixed delete()
- * @method mixed detach($params)
- * @method mixed attach($params)
- * @method array treeLabel()
- * @method array treeSons()
- * @method array toArray()
+ * @method string    getRouteKey()
+ * @method string    getRouteKeyName()
+ * @method string    getTable()
+ * @method mixed     with($array)
+ * @method array     getFillable()
+ * @method mixed     fill($array)
+ * @method mixed     getConnection()
+ * @method mixed     update($params)
+ * @method mixed     delete()
+ * @method mixed     detach($params)
+ * @method mixed     attach($params)
+ * @method array     treeLabel()
+ * @method array     treeSons()
+ * @method array     toArray()
  * @method BelongsTo user()
- * @method mixed getAttributeValue(string $key)
+ * @method mixed     getAttributeValue(string $key)
  *
  * @phpstan-require-extends Model
  *
@@ -105,8 +105,9 @@ interface ModelContract
     /**
      * Create a new instance of the given model.
      *
-     * @param  array  $attributes
-     * @param  bool  $exists
+     * @param array $attributes
+     * @param bool  $exists
+     *
      * @return static
      */
     public function newInstance($attributes = [], $exists = false);

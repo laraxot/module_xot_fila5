@@ -11,8 +11,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 uses(RefreshDatabase::class);
 
 beforeEach(function () {
-    $this->resource = new class extends XotBaseResource
-    {
+    $this->resource = new class extends XotBaseResource {
         protected static ?string $model = null;
 
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
