@@ -494,10 +494,6 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 <<<<<<< HEAD
 namespace Modules\Chart\Filament\Widgets;
-=======
-namespace Modules\ExternalProject\Filament\Widgets;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_E8WnLK
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -558,10 +554,6 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 <<<<<<< HEAD
 namespace Modules\Chart\Filament\Widgets;
-=======
-namespace Modules\ExternalProject\Filament\Widgets;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_E8WnLK
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -643,10 +635,6 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 <<<<<<< HEAD
 namespace Modules\Chart\Filament\Widgets;
-=======
-namespace Modules\ExternalProject\Filament\Widgets;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_E8WnLK
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;

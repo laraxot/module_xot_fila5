@@ -700,11 +700,6 @@ class healthcare_appService
 <<<<<<< HEAD
 // ModuloEsempioService.php
 class ModuloEsempioService
-=======
-// ExternalProjectService.php
-class ExternalProjectService
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_mQU6r8
 {
     use SingletonTrait;
 
@@ -1184,11 +1179,6 @@ class healthcare_appService
 <<<<<<< HEAD
 // ModuloEsempioService.php
 class ModuloEsempioService
-=======
-// ExternalProjectService.php
-class ExternalProjectService
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_mQU6r8
 {
     use SingletonTrait;
 

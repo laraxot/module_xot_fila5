@@ -454,10 +454,6 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Services/LimeJsonService.php`, `Modules/ModuloEsempio/app/Services/ModuloEsempioService.php`
-=======
-**File**: `Modules/ExternalProject/app/Services/LimeJsonService.php`, `Modules/ExternalProject/app/Services/ExternalProjectService.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 // DUPLICATO in LimeJsonService.php
@@ -469,10 +465,6 @@ public static function getInstance(): self
 =======
 <<<<<<< HEAD
     if (! self::$instance instanceof \Modules\ModuloEsempio\Services\LimeJsonService) {
-=======
-    if (! self::$instance instanceof \Modules\ExternalProject\Services\LimeJsonService) {
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
         self::$instance = new self();
     }
     return self::$instance;
@@ -491,14 +483,6 @@ private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\ModuloEsempio\Services\ModuloEsempioService) {
-=======
-// DUPLICATO in ExternalProjectService.php
-private static ?self $instance = null;
-public static function getInstance(): self
-{
-    if (! self::$instance instanceof \Modules\ExternalProject\Services\ExternalProjectService) {
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
         self::$instance = new self();
     }
     return self::$instance;
@@ -513,10 +497,6 @@ public static function getInstance(): self
 =======
 <<<<<<< HEAD
 **Problema**: `protected $connection = 'modulo_esempio';` ripetuto in tutti i modelli ModuloEsempio
-=======
-**Problema**: `protected $connection = '<nome progetto>';` ripetuto in tutti i modelli ExternalProject
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
@@ -527,10 +507,6 @@ public static function getInstance(): self
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/BaseModel.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -583,10 +559,6 @@ abstract class BaseUser extends Authenticatable implements
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/Customer.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/Customer.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 public function surveyPdfsActive()
@@ -604,10 +576,6 @@ public function surveyPdfsActive()
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Filament/Widgets/AlertWidget.php`
-=======
-**File**: `Modules/ExternalProject/app/Filament/Widgets/AlertWidget.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -635,10 +603,6 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/QuestionChart.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 public function participants(): CustomRelation
@@ -670,10 +634,6 @@ public function participants(): CustomRelation
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Actions/SendInviteAction.php`
-=======
-**File**: `Modules/ExternalProject/app/Actions/SendInviteAction.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 try {
@@ -698,10 +658,6 @@ try {
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
-=======
-**File**: `Modules/ExternalProject/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
 ```php
 // ContactResource.php
@@ -759,12 +715,6 @@ class healthcare_appServiceProvider extends XotBaseServiceProvider
 class ModuloEsempioServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'ModuloEsempio';
-=======
-class ExternalProjectServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'ExternalProject';
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -869,10 +819,6 @@ trait SingletonTrait
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/BaseModel.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -890,10 +836,6 @@ abstract class BaseModel extends Model implements ModelContract
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Repositories/SurveyFlipResponseRepository.php`
-=======
-**File**: `Modules/ExternalProject/app/Repositories/SurveyFlipResponseRepository.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_jGJkYm
 ```php
 class SurveyFlipResponseRepository
 {

@@ -74,7 +74,6 @@ protected function getTableEmptyStateActions(): array
 3. **`Modules/ExternalProject/docs/question-chart-implementation-guide.md`**
 >>>>>>> .merge_file_0hpKGV
    - Aggiunta nota critica sulla visibilità dei metodi `getTable*()`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
 
 ## Pattern Corretto
 

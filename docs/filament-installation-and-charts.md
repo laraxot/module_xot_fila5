@@ -328,10 +328,6 @@ public function panel(Panel $panel): Panel
 =======
 <<<<<<< HEAD
 // Modules/ModuloEsempio/app/Providers/Filament/AdminPanelProvider.php
-=======
-// Modules/ExternalProject/app/Providers/Filament/AdminPanelProvider.php
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_ZGnA1X
 // Modules/UI/app/Providers/Filament/AdminPanelProvider.php
 // Themes/Zero/app/Providers/Filament/AdminPanelProvider.php
 

@@ -17,10 +17,6 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 =======
 <<<<<<< HEAD
 2. **Filosofia ModuloEsempio**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
-=======
-2. **Filosofia ExternalProject**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_NNONjJ
 
 3. **Filosofia User**: Security-first, customization, extensibility, user-centric, harmony with Xot
 
@@ -36,10 +32,6 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 =======
 <<<<<<< HEAD
 - **ModuloEsempio**: Customer → SurveyPdf → Contact → QuestionChart workflow
-=======
-- **ExternalProject**: Customer → SurveyPdf → Contact → QuestionChart workflow
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_NNONjJ
 - **User**: Identity and access management (IAM)
 - **Tenant**: Multi-tenancy con connection-based isolation
 - **UI**: Componenti condivisi, design system
@@ -104,10 +96,6 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 =======
 <<<<<<< HEAD
 12. ModuloEsempio ✅ (corretto in questa sessione)
-=======
-12. ExternalProject ✅ (corretto in questa sessione)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_NNONjJ
 13. Tenant ✅
 14. UI ✅
 15. User ✅
@@ -124,10 +112,6 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 =======
 <<<<<<< HEAD
 ### ModuloEsempio - GetAnswersByQuestionChart.php (6 errori)
-=======
-### ExternalProject - GetAnswersByQuestionChart.php (6 errori)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_NNONjJ
 
 1. **Type narrowing per getDates()**: Aggiunto PHPDoc `@var array{dateFrom?: string|null, dateTo?: string|null}`
 2. **Array access su mixed**: Aggiunto `Assert::isArray($row)` prima di accesso
@@ -158,10 +142,6 @@ $valueArray = $labelData['value'];
 =======
 <<<<<<< HEAD
 1. `ModuloEsempio/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
-=======
-1. `ExternalProject/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_NNONjJ
 
 ## 🎯 Pattern Finali Documentati
 
@@ -206,11 +186,6 @@ $result = $model->traitMethod();
 =======
 <<<<<<< HEAD
 - [PHPStan Corrections - Modulo Esempio](../phpstan-code-quality-guide.md)
-=======
-- [ExternalProject Corrections Parte 1](../<nome progetto>/docs/phpstan-corrections-january-2026.md)
-- [ExternalProject Corrections Parte 2](../<nome progetto>/docs/phpstan-corrections-january-2026-part2.md)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_NNONjJ
 
 ---
 

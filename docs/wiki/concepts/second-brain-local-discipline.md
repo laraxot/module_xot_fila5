@@ -3,15 +3,7 @@ title: "Second Brain Local Discipline"
 type: concept
 tags: [second-brain, llm-wiki, on-demand, local-docs]
 created: 2026-05-19
-updated: 2026-06-05
-qmd: "second brain local discipline module theme wiki on-demand xot canonical"
-issues:
-  - "https://github.com/laraxot/module_xot_fila5/issues/28"
-discussions:
-  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
-related:
-  - ./ai-harness-xot-discipline.md
-  - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+updated: 2026-05-22
 ---
 
 # Second Brain Local Discipline

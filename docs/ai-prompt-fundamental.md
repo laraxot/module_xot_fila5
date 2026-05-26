@@ -3,10 +3,6 @@
 =======
 <<<<<<< HEAD
 # Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono
-=======
-# Regole Fondamentali per Prompt AI - ModuloEsempio Fila5 Mono
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_QZJXII
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
 
@@ -22,10 +18,6 @@ Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
 =======
 <<<<<<< HEAD
 Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
-=======
-Create/Update code for ModuloEsempio Fila5 Mono with these CRITICAL rules:
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_QZJXII
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
 3. ALWAYS copy .env.testing to .env before running tests: cp .env.testing .env
@@ -44,10 +36,6 @@ Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
 =======
 <<<<<<< HEAD
 Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
-=======
-Create test for ProfileService in ModuloEsempio Fila5 Mono with these rules:
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_QZJXII
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
 - Use MySQL testing configuration (.env.testing with "_test" databases)
@@ -62,10 +50,6 @@ Create ProfileService for healthcare_app Fila5 Mono following these patterns:
 =======
 <<<<<<< HEAD
 Create ProfileService for ExternalProject Fila5 Mono following these patterns:
-=======
-Create ProfileService for ModuloEsempio Fila5 Mono following these patterns:
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_QZJXII
 - Use Spatie QueueableAction pattern, not static service classes
 - Implement getOrCreateProfile with race condition handling:
   try/catch on firstOrFail() then create()
@@ -81,10 +65,6 @@ Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono
 =======
 <<<<<<< HEAD
 Create Filament resource extending XotBaseResource for ExternalProject Fila5 Mono:
-=======
-Create Filament resource extending XotBaseResource for ModuloEsempio Fila5 Mono:
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_QZJXII
 - Extend XotBaseResource, never Filament Resource directly
 - Implement getFormSchema() returning array
 - NEVER implement getTableColumns() method
@@ -123,12 +103,6 @@ healthcare_app module specific requirements:
 ### Modulo ExternalProject
 ```
 ExternalProject module specific requirements:
-=======
-### Modulo ModuloEsempio
-```
-ModuloEsempio module specific requirements:
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_QZJXII
 - LimeSurvey integration with proper MySQL connections
 - Use SurveyResponse scopes, never direct table access
 - Multi-database configuration with "_test" suffixes

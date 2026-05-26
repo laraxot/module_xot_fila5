@@ -155,10 +155,6 @@ namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\
 =======
 <<<<<<< HEAD
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_P23loR
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
@@ -168,10 +164,6 @@ use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\Questi
 =======
 <<<<<<< HEAD
 use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
-use Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_P23loR
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -218,10 +210,6 @@ namespace Modules\healthcare_app\Filament\Widgets;
 =======
 <<<<<<< HEAD
 namespace Modules\ExternalProject\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_P23loR
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -288,13 +276,6 @@ namespace Modules\ExternalProject\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\ExternalProject\Models\QuestionChart;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources;
-
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\ModuloEsempio\Models\QuestionChart;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_P23loR
 
 class QuestionChartResource extends XotBaseResource
 {

@@ -103,14 +103,6 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`modulo_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
-=======
-**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: app_data.customer_user`
-
-## Causa Radice
-
-Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`app_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_8r6DIJ
 
 ## Soluzione Implementata
 
@@ -153,10 +145,6 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 =======
 <<<<<<< HEAD
 - **Modulo con database separato**: Customer-User relationships
-=======
-- **ExternalProject Module**: Customer-User relationships
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_8r6DIJ
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 

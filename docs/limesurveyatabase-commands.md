@@ -3,10 +3,6 @@
 =======
 <<<<<<< HEAD
 # Database Analysis Commands and Tools for app_survey
-=======
-# Database Analysis Commands and Tools for ptvx_survey
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_EFCVrf
 
 ## Essential Database Queries
 
@@ -88,13 +84,6 @@ mcp mysql --database=txaesfry_app_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
-=======
-mcp mysql --database=txaesfry_ptvx_survey
-
-# Execute complex queries
-mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_ptvx_survey' AND table_name LIKE 'lime_survey_%'"
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_EFCVrf
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -206,13 +195,6 @@ mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
-=======
-mysqldump -u[user] -p[pass] txaesfry_ptvx_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
-
-# Backup question structure
-mysqldump -u[user] -p[pass] txaesfry_ptvx_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_EFCVrf
 ```
 
 ### 2. Data Validation Script
@@ -261,10 +243,6 @@ LEFT JOIN (
 =======
 <<<<<<< HEAD
     AND table_schema = 'txaesfry_app_survey'
-=======
-    AND table_schema = 'txaesfry_ptvx_survey'
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_EFCVrf
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -277,10 +255,6 @@ LEFT JOIN (
 =======
 <<<<<<< HEAD
     AND table_schema = 'txaesfry_app_survey'
-=======
-    AND table_schema = 'txaesfry_ptvx_survey'
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_EFCVrf
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
@@ -290,7 +264,3 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 =======
 <<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
-=======
-These commands and tools provide comprehensive access to analyze, maintain, and optimize the ptvx_survey database used by the Limesurvey integration.
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_EFCVrf

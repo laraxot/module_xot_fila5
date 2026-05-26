@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\BaseModel;
-use Modules\Xot\Tests\TestCase;
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel

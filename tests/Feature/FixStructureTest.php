@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
-use PHPUnit\Framework\Attributes\Test;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 /**
  * Test per verificare il corretto funzionamento dello script fix_structure.sh.

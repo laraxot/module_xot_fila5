@@ -4,15 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Filament\Actions\Action;
 use Filament\Resources\Pages\Concerns\HasWizard;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
-use Filament\Support\Facades\FilamentView;
-use function request;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Js;
-use Illuminate\Support\Str;
 use Modules\Xot\Filament\Traits\HasXotFormAction;
 
 /**
@@ -69,8 +63,6 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 
     protected int|string|array $columnSpan = 'full';
 
-    
-
     /**
      * @return array<int, Wizard>
      */
@@ -89,11 +81,7 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         $wizard = $wizard->persistStepInQueryString();
 
         if (! inAdmin()) {
-            /** @var view-string $wizardView */
-            $wizardView = 'pub_theme::components.wizard';
-            if (view()->exists($wizardView)) {
-                $wizard = $wizard->view($wizardView);
-            }
+            $wizard = $wizard->view('pub_theme::components.wizard');
         }
 
         return $wizard;
@@ -110,8 +98,4 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
      * @return array<string, Step>
      */
     abstract public function getSteps(): array;
-
-
-
-   
 }

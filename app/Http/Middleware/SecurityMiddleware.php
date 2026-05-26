@@ -46,6 +46,18 @@ class SecurityMiddleware
     }
 
     /**
+     * Check if the request is for Debugbar routes.
+     */
+    private function isDebugbarRoute(Request $request): bool
+    {
+        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
+
+        return str_starts_with($request->path(), $debugbarPrefix)
+            || str_starts_with($request->path(), 'vendor/debugbar')
+            || str_contains($request->path(), '_debugbar');
+    }
+
+    /**
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void

@@ -10,8 +10,6 @@ use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 
-uses(TestCase::class)->in(__DIR__);
-
 it('can create a test user', function () {
     $user = User::factory()->create([
         'name' => 'Test User',

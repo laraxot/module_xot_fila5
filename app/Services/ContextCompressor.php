@@ -33,7 +33,7 @@ class ContextCompressor
         }
 
         $compressed = self::tryOpenAiCompression($text, $targetChars);
-        if ($compressed !== null) {
+        if (null !== $compressed) {
             return mb_substr($compressed, 0, $targetChars);
         }
 
@@ -44,7 +44,7 @@ class ContextCompressor
     {
         try {
             $apiKey = getenv('OPENAI_API_KEY');
-            if (! class_exists('OpenAI\OpenAI') || ! is_string($apiKey) || $apiKey === '') {
+            if (! class_exists('OpenAI\OpenAI') || ! is_string($apiKey) || '' === $apiKey) {
                 return null;
             }
 
@@ -86,7 +86,7 @@ class ContextCompressor
             foreach ($outputItem['content'] as $contentItem) {
                 if (is_array($contentItem) && isset($contentItem['text']) && is_string($contentItem['text'])) {
                     $textOut = trim($contentItem['text']);
-                    if ($textOut !== '') {
+                    if ('' !== $textOut) {
                         return $textOut;
                     }
                 }

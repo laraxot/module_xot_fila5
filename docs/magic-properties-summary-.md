@@ -21,10 +21,6 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 =======
 <<<<<<< HEAD
 ### ✅ ExternalProject Module
-=======
-### ✅ ModuloEsempio Module
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_sPUeNX
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module

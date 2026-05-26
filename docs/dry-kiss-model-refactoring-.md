@@ -13,10 +13,6 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 =======
 <<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
-=======
-- **Moduli interessati**: 4 (Geo, Cms, ExternalProject, User)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_hFH7JJ
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
@@ -36,14 +32,6 @@ namespace Modules\healthcare_app\Models;
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\ModuloEsempio\Models;
-=======
-### 1. ❌ ExternalProject\Models\BaseModel estendeva Model invece di XotBaseModel
-
-**Prima** (VIOLAZIONE CRITICA):
-```php
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_hFH7JJ
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -80,10 +68,6 @@ namespace Modules\healthcare_app\Models;
 =======
 <<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
-=======
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_hFH7JJ
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -387,10 +371,6 @@ BaseModel → BaseModelLang → Post
 =======
 <<<<<<< HEAD
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
-=======
-| ExternalProject | BaseModel | 66 | 20 | -70% |
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_hFH7JJ
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |

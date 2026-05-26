@@ -70,10 +70,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 =======
 <<<<<<< HEAD
 │ - Modules/ModuloEsempio/Models/Contact                            │
-=======
-│ - Modules/ExternalProject/Models/Contact                            │
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -203,10 +199,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 =======
 <<<<<<< HEAD
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
-=======
-- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ExternalProject)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -252,10 +244,6 @@ class Tenant extends BaseModel
 =======
 <<<<<<< HEAD
 - `Modules/ModuloEsempio/Models/Contact.php`
-=======
-- `Modules/ExternalProject/Models/Contact.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -376,10 +364,6 @@ public function getConnectionName(): ?string
 =======
 <<<<<<< HEAD
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
-=======
-- Namespace: `Modules\ExternalProject\Models\*` → Connection: `<nome progetto>`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -590,13 +574,6 @@ namespace Modules\healthcare_app\Models;
 
 ```php
 namespace Modules\ModuloEsempio\Models;
-=======
-### Esempio 4: BaseModel con Traits Specifici (ExternalProject Module)
-
-```php
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -611,10 +588,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 =======
 <<<<<<< HEAD
  * Base Model per ModuloEsempio module.
-=======
- * Base Model per ExternalProject module.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -646,10 +619,6 @@ namespace Modules\healthcare_app\Models;
 =======
 <<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
-=======
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 
 class Contact extends BaseModel
 {
@@ -714,10 +683,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 =======
 <<<<<<< HEAD
 // Modules/ModuloEsempio/Models/BaseModel.php
-=======
-// Modules/ExternalProject/Models/BaseModel.php
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -946,10 +911,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 =======
 <<<<<<< HEAD
 │ - Modules/ModuloEsempio/Models/Contact                            │
-=======
-│ - Modules/ExternalProject/Models/Contact                            │
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -1079,10 +1040,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 =======
 <<<<<<< HEAD
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
-=======
-- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ExternalProject)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -1128,10 +1085,6 @@ class Tenant extends BaseModel
 =======
 <<<<<<< HEAD
 - `Modules/ModuloEsempio/Models/Contact.php`
-=======
-- `Modules/ExternalProject/Models/Contact.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -1252,10 +1205,6 @@ public function getConnectionName(): ?string
 =======
 <<<<<<< HEAD
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
-=======
-- Namespace: `Modules\ExternalProject\Models\*` → Connection: `<nome progetto>`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -1466,13 +1415,6 @@ namespace Modules\healthcare_app\Models;
 
 ```php
 namespace Modules\ModuloEsempio\Models;
-=======
-### Esempio 4: BaseModel con Traits Specifici (ExternalProject Module)
-
-```php
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -1487,10 +1429,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 =======
 <<<<<<< HEAD
  * Base Model per ModuloEsempio module.
-=======
- * Base Model per ExternalProject module.
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -1522,10 +1460,6 @@ namespace Modules\healthcare_app\Models;
 =======
 <<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
-=======
-namespace Modules\ExternalProject\Models;
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 
 class Contact extends BaseModel
 {
@@ -1590,10 +1524,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 =======
 <<<<<<< HEAD
 // Modules/ModuloEsempio/Models/BaseModel.php
-=======
-// Modules/ExternalProject/Models/BaseModel.php
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 use InteractsWithMedia;
 use HasExtraTrait;
 

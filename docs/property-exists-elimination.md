@@ -57,10 +57,6 @@ $user->hasAttribute('name');  // true
 =======
 <<<<<<< HEAD
 | **ModuloEsempio** | 1 | 1 | ~2 min |
-=======
-| **ExternalProject** | 1 | 1 | ~2 min |
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_pCHHin
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -80,10 +76,6 @@ $user->hasAttribute('name');  // true
 =======
 <<<<<<< HEAD
 ✅ ModuloEsempio: 0 errori su file modificato
-=======
-✅ ExternalProject: 0 errori su file modificato
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_pCHHin
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -255,10 +247,6 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 =======
 <<<<<<< HEAD
 ### ModuloEsempio (1 file)
-=======
-### ExternalProject (1 file)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_pCHHin
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -331,10 +319,6 @@ if (isset($media->file_name)) {
 =======
 <<<<<<< HEAD
 | **ModuloEsempio** | ⚠️ 64 errori* | - | - |
-=======
-| **ExternalProject** | ⚠️ 64 errori* | - | - |
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_pCHHin
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -591,10 +575,6 @@ Ogni modulo ha ora:
 =======
 <<<<<<< HEAD
 **ModuloEsempio** (64 errori):
-=======
-**ExternalProject** (64 errori):
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_pCHHin
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media

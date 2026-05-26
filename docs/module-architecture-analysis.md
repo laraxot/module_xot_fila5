@@ -41,10 +41,6 @@
 =======
 <<<<<<< HEAD
 #### 3. **ExternalProject Module - Business Core**
-=======
-#### 3. **ModuloEsempio Module - Business Core**
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -241,10 +237,6 @@
 =======
 <<<<<<< HEAD
 **Dependencies**: Xot, ExternalProject
-=======
-**Dependencies**: Xot, ModuloEsempio
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -297,10 +289,6 @@ Xot (Foundation)
 =======
 <<<<<<< HEAD
 ├── ExternalProject (Business Core)
-=======
-├── ModuloEsempio (Business Core)
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -414,10 +402,6 @@ public function register(): void
 =======
 <<<<<<< HEAD
 - **ExternalProject**: Missing module.json description
-=======
-- **ModuloEsempio**: Missing module.json description
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -433,10 +417,6 @@ public function register(): void
 =======
 <<<<<<< HEAD
 - **ExternalProject**: Survey processing and reporting
-=======
-- **ModuloEsempio**: Survey processing and reporting
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 

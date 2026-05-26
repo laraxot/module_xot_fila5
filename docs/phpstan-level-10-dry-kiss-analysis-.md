@@ -73,10 +73,6 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
-=======
-**File**: `Modules/ExternalProject/app/Models/Contact.php` (809 righe!)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 
 **Errori PHPStan Level 10**:
 ```
@@ -119,10 +115,6 @@ if ($body_html === null) { ... }
 =======
 <<<<<<< HEAD
 | ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
-| ExternalProject | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -170,10 +162,6 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 =======
 <<<<<<< HEAD
 - ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
-- ExternalProject module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -318,10 +306,6 @@ protected function casts(): array
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/Contact.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -387,10 +371,6 @@ Contact.php (809 lines) →
 =======
 <<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
-=======
-**File**: `Modules/ExternalProject/app/Models/QuestionChart.php`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -477,10 +457,6 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 =======
 <<<<<<< HEAD
 - **ModuloEsempio**: 5 modelli
-=======
-- **ExternalProject**: 5 modelli
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
@@ -491,10 +467,6 @@ cd Modules/healthcare_app/app/Models
 =======
 <<<<<<< HEAD
 cd Modules/ModuloEsempio/app/Models
-=======
-cd Modules/ExternalProject/app/Models
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -518,10 +490,6 @@ vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quie
 =======
 <<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
-=======
-vendor/bin/pint Modules/User/app/Models Modules/ExternalProject/app/Models --quiet
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 ```
 
 **Risultato**:
@@ -938,10 +906,6 @@ $activeUsers = User::active()->get(); // ✅ Works!
 =======
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
-=======
-./vendor/bin/phpstan analyse Modules/ExternalProject/app/Models --level=10
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 ```
 
 **Results**:
@@ -952,10 +916,6 @@ $activeUsers = User::active()->get(); // ✅ Works!
 =======
 <<<<<<< HEAD
 - ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
-- ExternalProject: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_cxjpJD
 
 ### Manual Code Review
 

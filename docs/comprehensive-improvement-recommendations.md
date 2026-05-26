@@ -764,10 +764,6 @@ class ConnectionManagerService
 =======
 <<<<<<< HEAD
             'ExternalProject' => '<nome progetto>',
-=======
-            'ModuloEsempio' => 'ptvx',
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_szY6ZB
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -855,10 +851,6 @@ class ContactValidationService
 =======
 <<<<<<< HEAD
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
-=======
-// Modules/ModuloEsempio/Contracts/ChartRendererContract.php
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_szY6ZB
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
@@ -870,10 +862,6 @@ interface ChartRendererContract
 =======
 <<<<<<< HEAD
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
-=======
-// Modules/ModuloEsempio/Services/Chart/Renderers/PieChartRenderer.php
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_szY6ZB
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -1044,10 +1032,6 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 =======
 <<<<<<< HEAD
 // Modules/ExternalProject/Services/BulkProcessingService.php
-=======
-// Modules/ModuloEsempio/Services/BulkProcessingService.php
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_szY6ZB
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void

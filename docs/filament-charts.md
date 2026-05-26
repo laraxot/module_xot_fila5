@@ -941,10 +941,6 @@ Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in a
 =======
 <<<<<<< HEAD
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Laraxot:
-=======
-Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito ExternalProject/PTVX:
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_PV5RFq
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)**.

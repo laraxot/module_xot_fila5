@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\Updater;
-use Modules\Xot\Tests\TestCase;
 
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);
