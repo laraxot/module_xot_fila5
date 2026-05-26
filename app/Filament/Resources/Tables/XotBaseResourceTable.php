@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Tables;
 
-<<<<<<< HEAD
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Traits\HasXotTable;
-=======
-use Filament\Tables\Columns\Column;
->>>>>>> 93fecd1d (.)
 
 abstract class XotBaseResourceTable
 {
@@ -17,7 +14,7 @@ abstract class XotBaseResourceTable
 
     public static function configure(Table $table): Table
     {
-        return $this->table($table);
+        return (new static())->table($table);
     }
 
     /**
