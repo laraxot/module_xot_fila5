@@ -1,67 +1,68 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    /*
-      |--------------------------------------------------------------------------
-      | Exception Language Lines
-      |--------------------------------------------------------------------------
-      |
-      | The following language lines are used in Exceptions thrown throughout the system.
-      | Regardless where it is placed, a button can be listed here so it is easily
-      | found in a intuitive way.
-      |
-      |--------------------------------------------------------------------------
-     */
-
-    'backend' => [
-        'access' => [
-            'roles' => [
-                'already_exists' => 'Esse papel j√° existe. Por favor, escolha um nome diferente.',
-                'cant_delete_admin' => 'Voc√™ n√£o pode excluir o papel de Administrador.',
-                'create_error' => 'Houve um problema ao criar esse papel. Por favor, tente novamente.',
-                'delete_error' => 'Houve um problema ao excluir esse papel. Por favor, tente novamente.',
-                'has_users' => 'Voc√™ n√£o pode excluir um papel com usu√°rios associados..',
-                'needs_permission' => 'Voc√™ deve selecionar pelo menos uma permiss√£o para este papel.',
-                'not_found' => 'Este papel n√£o existe.',
-                'update_error' => 'Houve um problema ao atualizar esse papel. Por favor, tente novamente.',
-            ],
-            'users' => [
-                'cant_deactivate_self' => 'Voc√™ n√£o pode fazer isso com voc√™ mesmo.',
-                'cant_delete_self' => 'Voc√™ n√£o pode se excluir.',
-                'cant_restore' => 'This user is not deleted so it can not be restored.',
-                'create_error' => 'Houve um problema ao criar esse usu√°rio. Por favor, tente novamente.',
-                'delete_error' => 'Houve um problema ao excluir esse usu√°rio. Por favor, tente novamente.',
-                'delete_first' => 'This user must be deleted first before it can be destroyed permanently.',
-                'email_error' => 'Esse endere√ßo de e-mail pertence a um usu√°rio diferente.',
-                'mark_error' => 'Houve um problema ao atualizar esse usu√°rio. Por favor, tente novamente',
-                'not_found' => 'Esse usu√°rio n√£o existe.',
-                'restore_error' => 'Houve um problema ao restaurar esse usu√°rio. Por favor, tente novamente.',
-                'role_needed_create' => 'Voc√™ deve escolher pelo menos uma fun√ß√£o.',
-                'role_needed' => 'Voc√™ deve escolher pelo menos uma fun√ß√£o.',
-                'update_error' => 'Houve um problema ao atualizar esse usu√°rio. Por favor, tente novamente.',
-                'update_password_error' => 'Houve um problema ao alterar a senha do usu√°rio. Por favor, tente novamente.',
-            ],
-        ],
-    ],
-    'frontend' => [
-        'auth' => [
-            'confirmation' => [
-                'already_confirmed' => 'Sua conta j√° est√° confirmada.',
-                'confirm' => 'Confirme sua conta!',
-                'created_confirm' => 'Sua conta foi criada com sucesso. Enviamos um e-mail para voc√™ confirmar a sua conta.',
-                'mismatch' => 'Seu c√≥digo de confirma√ß√£o n√£o corresponde.',
-                'not_found' => 'Esse c√≥digo de confirma√ß√£o n√£o existe.',
-                'resend' => 'Sua conta n√£o est√° confirmada. Por favor, clique no link de confirma√ß√£o em seu e-mail, ou <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">clique aqui</a> para reenviar o e-mail de confirma√ß√£o.',
-                'success' => 'Sua conta foi confirmada com sucesso!',
-                'resent' => 'Um novo e-mail de confirma√ß√£o foi enviado para voc√™.',
-            ],
-            'deactivated' => 'Sua conta foi desativada.',
-            'email_taken' => 'Esse endere√ßo de e-mail j√° foi utilizado.',
-            'password' => [
-                'change_mismatch' => 'Essa n√£o √© a sua senha antiga.',
-            ],
-        ],
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |/|*|
+| | | | | | |||-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| | | | | | ||| |E|x|c|e|p|t|i|o|n| |L|a|n|g|u|a|g|e| |L|i|n|e|s|
+| | | | | | |||-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| | | | | | |||
+| | | | | | ||| |T|h|e| |f|o|l|l|o|w|i|n|g| |l|a|n|g|u|a|g|e| |l|i|n|e|s| |a|r|e| |u|s|e|d| |i|n| |E|x|c|e|p|t|i|o|n|s| |t|h|r|o|w|n| |t|h|r|o|u|g|h|o|u|t| |t|h|e| |s|y|s|t|e|m|.|
+| | | | | | ||| |R|e|g|a|r|d|l|e|s|s| |w|h|e|r|e| |i|t| |i|s| |p|l|a|c|e|d|,| |a| |b|u|t|t|o|n| |c|a|n| |b|e| |l|i|s|t|e|d| |h|e|r|e| |s|o| |i|t| |i|s| |e|a|s|i|l|y|
+| | | | | | ||| |f|o|u|n|d| |i|n| |a| |i|n|t|u|i|t|i|v|e| |w|a|y|.|
+| | | | | | |||
+| | | | | | |||-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+| | | | | |*|/|
+|
+| | | | |'|b|a|c|k|e|n|d|'| |=|>| |[|
+| | | | | | | | |'|a|c|c|e|s|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|r|o|l|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|a|l|r|e|a|d|y|_|e|x|i|s|t|s|'| |=|>| |'|E|s|s|e| |p|a|p|e|l| |j|√|°| |e|x|i|s|t|e|.| |P|o|r| |f|a|v|o|r|,| |e|s|c|o|l|h|a| |u|m| |n|o|m|e| |d|i|f|e|r|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|t|_|d|e|l|e|t|e|_|a|d|m|i|n|'| |=|>| |'|V|o|c|√|™| |n|√|£|o| |p|o|d|e| |e|x|c|l|u|i|r| |o| |p|a|p|e|l| |d|e| |A|d|m|i|n|i|s|t|r|a|d|o|r|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|r|e|a|t|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |c|r|i|a|r| |e|s|s|e| |p|a|p|e|l|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|l|e|t|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |e|x|c|l|u|i|r| |e|s|s|e| |p|a|p|e|l|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|h|a|s|_|u|s|e|r|s|'| |=|>| |'|V|o|c|√|™| |n|√|£|o| |p|o|d|e| |e|x|c|l|u|i|r| |u|m| |p|a|p|e|l| |c|o|m| |u|s|u|√|°|r|i|o|s| |a|s|s|o|c|i|a|d|o|s|.|.|'|,|
+| | | | | | | | | | | | | | | | |'|n|e|e|d|s|_|p|e|r|m|i|s|s|i|o|n|'| |=|>| |'|V|o|c|√|™| |d|e|v|e| |s|e|l|e|c|i|o|n|a|r| |p|e|l|o| |m|e|n|o|s| |u|m|a| |p|e|r|m|i|s|s|√|£|o| |p|a|r|a| |e|s|t|e| |p|a|p|e|l|.|'|,|
+| | | | | | | | | | | | | | | | |'|n|o|t|_|f|o|u|n|d|'| |=|>| |'|E|s|t|e| |p|a|p|e|l| |n|√|£|o| |e|x|i|s|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|u|p|d|a|t|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |a|t|u|a|l|i|z|a|r| |e|s|s|e| |p|a|p|e|l|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|u|s|e|r|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|c|a|n|t|_|d|e|a|c|t|i|v|a|t|e|_|s|e|l|f|'| |=|>| |'|V|o|c|√|™| |n|√|£|o| |p|o|d|e| |f|a|z|e|r| |i|s|s|o| |c|o|m| |v|o|c|√|™| |m|e|s|m|o|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|t|_|d|e|l|e|t|e|_|s|e|l|f|'| |=|>| |'|V|o|c|√|™| |n|√|£|o| |p|o|d|e| |s|e| |e|x|c|l|u|i|r|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|t|_|r|e|s|t|o|r|e|'| |=|>| |'|T|h|i|s| |u|s|e|r| |i|s| |n|o|t| |d|e|l|e|t|e|d| |s|o| |i|t| |c|a|n| |n|o|t| |b|e| |r|e|s|t|o|r|e|d|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|r|e|a|t|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |c|r|i|a|r| |e|s|s|e| |u|s|u|√|°|r|i|o|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|l|e|t|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |e|x|c|l|u|i|r| |e|s|s|e| |u|s|u|√|°|r|i|o|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|l|e|t|e|_|f|i|r|s|t|'| |=|>| |'|T|h|i|s| |u|s|e|r| |m|u|s|t| |b|e| |d|e|l|e|t|e|d| |f|i|r|s|t| |b|e|f|o|r|e| |i|t| |c|a|n| |b|e| |d|e|s|t|r|o|y|e|d| |p|e|r|m|a|n|e|n|t|l|y|.|'|,|
+| | | | | | | | | | | | | | | | |'|e|m|a|i|l|_|e|r|r|o|r|'| |=|>| |'|E|s|s|e| |e|n|d|e|r|e|√|ß|o| |d|e| |e|-|m|a|i|l| |p|e|r|t|e|n|c|e| |a| |u|m| |u|s|u|√|°|r|i|o| |d|i|f|e|r|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|m|a|r|k|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |a|t|u|a|l|i|z|a|r| |e|s|s|e| |u|s|u|√|°|r|i|o|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|'|,|
+| | | | | | | | | | | | | | | | |'|n|o|t|_|f|o|u|n|d|'| |=|>| |'|E|s|s|e| |u|s|u|√|°|r|i|o| |n|√|£|o| |e|x|i|s|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|r|e|s|t|o|r|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |r|e|s|t|a|u|r|a|r| |e|s|s|e| |u|s|u|√|°|r|i|o|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|r|o|l|e|_|n|e|e|d|e|d|_|c|r|e|a|t|e|'| |=|>| |'|V|o|c|√|™| |d|e|v|e| |e|s|c|o|l|h|e|r| |p|e|l|o| |m|e|n|o|s| |u|m|a| |f|u|n|√|ß|√|£|o|.|'|,|
+| | | | | | | | | | | | | | | | |'|r|o|l|e|_|n|e|e|d|e|d|'| |=|>| |'|V|o|c|√|™| |d|e|v|e| |e|s|c|o|l|h|e|r| |p|e|l|o| |m|e|n|o|s| |u|m|a| |f|u|n|√|ß|√|£|o|.|'|,|
+| | | | | | | | | | | | | | | | |'|u|p|d|a|t|e|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |a|t|u|a|l|i|z|a|r| |e|s|s|e| |u|s|u|√|°|r|i|o|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|u|p|d|a|t|e|_|p|a|s|s|w|o|r|d|_|e|r|r|o|r|'| |=|>| |'|H|o|u|v|e| |u|m| |p|r|o|b|l|e|m|a| |a|o| |a|l|t|e|r|a|r| |a| |s|e|n|h|a| |d|o| |u|s|u|√|°|r|i|o|.| |P|o|r| |f|a|v|o|r|,| |t|e|n|t|e| |n|o|v|a|m|e|n|t|e|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|f|r|o|n|t|e|n|d|'| |=|>| |[|
+| | | | | | | | |'|a|u|t|h|'| |=|>| |[|
+| | | | | | | | | | | | |'|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|a|l|r|e|a|d|y|_|c|o|n|f|i|r|m|e|d|'| |=|>| |'|S|u|a| |c|o|n|t|a| |j|√|°| |e|s|t|√|°| |c|o|n|f|i|r|m|a|d|a|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|C|o|n|f|i|r|m|e| |s|u|a| |c|o|n|t|a|!|'|,|
+| | | | | | | | | | | | | | | | |'|c|r|e|a|t|e|d|_|c|o|n|f|i|r|m|'| |=|>| |'|S|u|a| |c|o|n|t|a| |f|o|i| |c|r|i|a|d|a| |c|o|m| |s|u|c|e|s|s|o|.| |E|n|v|i|a|m|o|s| |u|m| |e|-|m|a|i|l| |p|a|r|a| |v|o|c|√|™| |c|o|n|f|i|r|m|a|r| |a| |s|u|a| |c|o|n|t|a|.|'|,|
+| | | | | | | | | | | | | | | | |'|m|i|s|m|a|t|c|h|'| |=|>| |'|S|e|u| |c|√|≥|d|i|g|o| |d|e| |c|o|n|f|i|r|m|a|√|ß|√|£|o| |n|√|£|o| |c|o|r|r|e|s|p|o|n|d|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|n|o|t|_|f|o|u|n|d|'| |=|>| |'|E|s|s|e| |c|√|≥|d|i|g|o| |d|e| |c|o|n|f|i|r|m|a|√|ß|√|£|o| |n|√|£|o| |e|x|i|s|t|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|r|e|s|e|n|d|'| |=|>| |'|S|u|a| |c|o|n|t|a| |n|√|£|o| |e|s|t|√|°| |c|o|n|f|i|r|m|a|d|a|.| |P|o|r| |f|a|v|o|r|,| |c|l|i|q|u|e| |n|o| |l|i|n|k| |d|e| |c|o|n|f|i|r|m|a|√|ß|√|£|o| |e|m| |s|e|u| |e|-|m|a|i|l|,| |o|u| |<|a| |h|r|e|f|=|"|'|.|r|o|u|t|e|(|'|f|r|o|n|t|e|n|d|.|a|u|t|h|.|a|c|c|o|u|n|t|.|c|o|n|f|i|r|m|.|r|e|s|e|n|d|'|,| |'|:|u|s|e|r|_|i|d|'|)|.|'|"|>|c|l|i|q|u|e| |a|q|u|i|<|/|a|>| |p|a|r|a| |r|e|e|n|v|i|a|r| |o| |e|-|m|a|i|l| |d|e| |c|o|n|f|i|r|m|a|√|ß|√|£|o|.|'|,|
+| | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|S|u|a| |c|o|n|t|a| |f|o|i| |c|o|n|f|i|r|m|a|d|a| |c|o|m| |s|u|c|e|s|s|o|!|'|,|
+| | | | | | | | | | | | | | | | |'|r|e|s|e|n|t|'| |=|>| |'|U|m| |n|o|v|o| |e|-|m|a|i|l| |d|e| |c|o|n|f|i|r|m|a|√|ß|√|£|o| |f|o|i| |e|n|v|i|a|d|o| |p|a|r|a| |v|o|c|√|™|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|d|e|a|c|t|i|v|a|t|e|d|'| |=|>| |'|S|u|a| |c|o|n|t|a| |f|o|i| |d|e|s|a|t|i|v|a|d|a|.|'|,|
+| | | | | | | | | | | | |'|e|m|a|i|l|_|t|a|k|e|n|'| |=|>| |'|E|s|s|e| |e|n|d|e|r|e|√|ß|o| |d|e| |e|-|m|a|i|l| |j|√|°| |f|o|i| |u|t|i|l|i|z|a|d|o|.|'|,|
+| | | | | | | | | | | | |'|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|c|h|a|n|g|e|_|m|i|s|m|a|t|c|h|'| |=|>| |'|E|s|s|a| |n|√|£|o| |√|©| |a| |s|u|a| |s|e|n|h|a| |a|n|t|i|g|a|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+|]|;|
+|

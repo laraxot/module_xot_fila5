@@ -17,7 +17,7 @@ beforeEach(function (): void {
 afterEach(function (): void {
     if (isset($this->tempDir) && file_exists($this->tempDir)) {
         $files = glob($this->tempDir.'/*');
-        if (false !== $files) {
+        if ($files !== false) {
             array_map('unlink', $files);
         }
         rmdir($this->tempDir);

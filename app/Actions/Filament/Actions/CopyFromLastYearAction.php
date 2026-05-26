@@ -43,7 +43,7 @@ class CopyFromLastYearAction extends XotBaseAction
             return;
         }
 
-        if (! is_string($year) && null !== $year) {
+        if (! is_string($year) && $year !== null) {
             return;
         }
 

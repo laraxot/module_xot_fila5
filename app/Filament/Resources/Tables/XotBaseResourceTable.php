@@ -11,13 +11,13 @@ abstract class XotBaseResourceTable
 {
     use HasXotTable;
 
-    public static function configure(Table $table): Table
+    public function configure(Table $table): Table
     {
         return $this->table($table);
     }
 
     /**
-     * @return array<int|string, Column>
+     * @return array<int|string, \Filament\Tables\Columns\Column>
      */
     abstract public function getTableColumns(): array;
 }
