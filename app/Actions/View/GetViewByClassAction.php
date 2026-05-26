@@ -24,7 +24,7 @@ class GetViewByClassAction
      *
      * @throws \Exception Se la vista non esiste
      *
-     * @return string Il nome della vista
+     * @return view-string
      */
     public function execute(string $class, string $suffix = ''): string
     {
