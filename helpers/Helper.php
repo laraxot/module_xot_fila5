@@ -285,17 +285,13 @@ if (! function_exists('getModelByName')) {
 
         $files_path = base_path('Modules').'/*/Models/*.php';
         Assert::isArray($files = glob($files_path));
-        $path = Arr::first($files, function (mixed $file) use ($name): bool {
-            if (! is_string($file)) {
-                return false;
-            }
-
+        $path = Arr::first($files, function (string $file) use ($name): bool {
             $info = pathinfo($file);
 
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (! is_string($path)) {
+        if (null === $path) {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
