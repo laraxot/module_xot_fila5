@@ -7,13 +7,11 @@ namespace Modules\Xot\Tests\Feature\Filament;
 use Filament\Resources\Resource;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Xot\Tests\TestCase;
 
 uses(RefreshDatabase::class);
 
 beforeEach(function () {
-    $this->resource = new class extends XotBaseResource
-    {
+    $this->resource = new class extends XotBaseResource {
         protected static ?string $model = null;
 
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';

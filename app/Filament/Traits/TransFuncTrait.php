@@ -97,7 +97,7 @@ trait TransFuncTrait
             return $trans;
         }
 
-        if ($trans === null) {
+        if (null === $trans) {
             $newTrans = Str::of($key)
                 ->between('::', '.')
                 ->replace('_', ' ')
