@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Modules\UI\Models\Asset;
+use Modules\Xot\Tests\TestCase;
 
 it('basic test works', function () {
     $this->assertTrue(true);
