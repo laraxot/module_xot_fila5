@@ -9,10 +9,11 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\TestCase;
 
-uses(TestCase::class, RefreshDatabase::class);
+uses(RefreshDatabase::class);
 
 beforeEach(function () {
-    $this->resource = new class extends XotBaseResource {
+    $this->resource = new class extends XotBaseResource
+    {
         protected static ?string $model = null;
 
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
@@ -20,6 +21,26 @@ beforeEach(function () {
         protected static string|\UnitEnum|null $navigationGroup = 'Test Group';
 
         protected static ?int $navigationSort = 1;
+
+        public static function getNavigationIcon(): string
+        {
+            return 'heroicon-o-rectangle-stack';
+        }
+
+        public static function getNavigationGroup(): string
+        {
+            return 'Test Group';
+        }
+
+        public static function getNavigationSort(): int
+        {
+            return 1;
+        }
+
+        public static function getFormSchema(): array
+        {
+            return [];
+        }
     };
 });
 
