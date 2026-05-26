@@ -119,6 +119,7 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
+        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -129,6 +130,7 @@ class XotData extends Data implements Wireable
         if (! in_array('email', $userInstance->getFillable(), true)) {
             throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
+        /** @var Model&UserContract $user */
         $user = $user_class::firstOrCreate(['email' => $email]);
         /*
          * if (! $user) {
@@ -158,7 +160,10 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        return $this->team_class;
+        /** @var class-string<Model&TeamContract> $teamClass */
+        $teamClass = $this->team_class;
+
+        return $teamClass;
     }
 
     /**
@@ -185,7 +190,10 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-        return $this->tenant_class;
+        /** @var class-string<Model&TenantContract> $tenantClass */
+        $tenantClass = $this->tenant_class;
+
+        return $tenantClass;
     }
 
     /**
@@ -234,7 +242,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /* @var class-string<Model&ProfileContract> */
+        /* @var class-string<Model&ProfileContract> $class */
         return $class;
     }
 
@@ -382,6 +390,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
+        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -398,10 +407,10 @@ class XotData extends Data implements Wireable
             ->append('Resource')
             ->toString();
 
-        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
+        // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
         if (! class_exists($resourceClass)) {
             $resourceClass =
-                'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
+                'Modules\\'.$moduleName.'\\Filament\\Resources\\'.class_basename($class).'Resource';
         }
 
         if (! class_exists($resourceClass)) {
