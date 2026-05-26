@@ -8,6 +8,7 @@ use Modules\Tenant\Models\Tenant;
 use Modules\UI\Models\Asset;
 use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

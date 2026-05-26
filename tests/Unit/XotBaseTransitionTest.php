@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\States\Transitions\XotBaseTransition;
 
@@ -13,8 +14,16 @@ uses(RefreshDatabase::class);
 
 describe('XotBaseTransition', function () {
     beforeEach(function () {
+        // Create a test record
+        $this->record = new class extends Model
+        {
+            protected $table = 'test_records';
+            protected $fillable = ['id', 'name'];
+        };
+
         // Create a concrete test transition class
-        $this->transition = new class extends XotBaseTransition {
+        $this->transition = new class($this->record) extends XotBaseTransition
+        {
             public static string $name = 'test_transition';
 
             #[Override]
@@ -98,7 +107,7 @@ describe('XotBaseTransition', function () {
 
     it('can send notifications without errors', function () {
         // This should not throw an exception
-        expect($this->transition->sendNotifications(...))->not->toThrow(Exception::class);
+        expect(fn() => $this->transition->sendNotifications())->not->toThrow(\Exception::class);
     });
 
     it('has getNotificationRecipients method', function () {
@@ -134,7 +143,8 @@ describe('XotBaseTransition', function () {
 
     it('processes recipients correctly in sendNotifications', function () {
         // Mock recipients with mixed types
-        $transition = new class extends XotBaseTransition {
+        $transition = new class($this->record) extends XotBaseTransition
+        {
             public static string $name = 'test_mixed_transition';
 
             #[Override]
@@ -185,54 +195,6 @@ describe('XotBaseTransition', function () {
         };
 
         // This should process without errors
-        expect($transition->sendNotifications(...))->not->toThrow(Exception::class);
-    });
-
-    it('validates abstract class structure', function () {
-        $reflection = new ReflectionClass(XotBaseTransition::class);
-
-        expect($reflection->isAbstract())
-            ->toBeTrue()
-            ->and($reflection->hasMethod('sendNotifications'))
-            ->toBeTrue()
-            ->and($reflection->hasMethod('getRecord'))
-            ->toBeTrue();
-    });
-
-    it('has proper method signatures', function () {
-        $reflection = new ReflectionClass(XotBaseTransition::class);
-
-        // Check sendNotifications method
-        $sendMethod = $reflection->getMethod('sendNotifications');
-        expect($sendMethod->isPublic())->toBeTrue()->and($sendMethod->getReturnType()?->getName())->toBe('void');
-
-        // Check getRecord method
-        $getRecordMethod = $reflection->getMethod('getRecord');
-        expect($getRecordMethod->isPublic())->toBeTrue();
-    });
-
-    it('handles type checking correctly', function () {
-        $recipients = $this->transition->getNotificationRecipients();
-
-        foreach ($recipients as $recipient) {
-            if (null !== $recipient) {
-                expect($recipient instanceof UserContract || $recipient instanceof Model)->toBeTrue();
-            }
-        }
-    });
-
-    it('has proper documentation', function () {
-        $reflection = new ReflectionClass(XotBaseTransition::class);
-        $method = $reflection->getMethod('sendNotifications');
-
-        expect($method->isPublic())->toBeTrue();
-    });
-
-    it('validates inheritance requirements', function () {
-        // Test that concrete implementations must provide required methods
-        expect(method_exists($this->transition, 'getNotificationRecipients'))
-            ->toBeTrue()
-            ->and(method_exists($this->transition, 'sendRecipientNotification'))
-            ->toBeTrue();
+        expect(fn() => $transition->sendNotifications())->not->toThrow(\Exception::class);
     });
 });

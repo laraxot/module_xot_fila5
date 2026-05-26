@@ -13,9 +13,12 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    if (isset($tempDir))
-        array_map('unlink', glob($tempDir.'/*'));
-        rmdir($tempDir);
+    if (isset($this->tempDir) && file_exists($this->tempDir)) {
+        $files = glob($this->tempDir.'/*');
+        if ($files !== false) {
+            array_map('unlink', $files);
+        }
+        rmdir($this->tempDir);
     }
 });
 

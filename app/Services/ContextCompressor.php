@@ -24,7 +24,7 @@ class ContextCompressor
     /**
      * Compress text to approximately targetChars characters.
      *
-     * @param int $targetChars approximate target length in characters
+     * @param  int  $targetChars  approximate target length in characters
      */
     public static function compress(string $text, int $targetChars = 20000): string
     {
@@ -33,7 +33,7 @@ class ContextCompressor
         }
 
         $compressed = self::tryOpenAiCompression($text, $targetChars);
-        if (null !== $compressed) {
+        if ($compressed !== null) {
             return mb_substr($compressed, 0, $targetChars);
         }
 
@@ -44,7 +44,7 @@ class ContextCompressor
     {
         try {
             $apiKey = getenv('OPENAI_API_KEY');
-            if (! class_exists('OpenAI\OpenAI') || ! is_string($apiKey) || '' === $apiKey) {
+            if (! class_exists('OpenAI\OpenAI') || ! is_string($apiKey) || $apiKey === '') {
                 return null;
             }
 
@@ -86,7 +86,7 @@ class ContextCompressor
             foreach ($outputItem['content'] as $contentItem) {
                 if (is_array($contentItem) && isset($contentItem['text']) && is_string($contentItem['text'])) {
                     $textOut = trim($contentItem['text']);
-                    if ('' !== $textOut) {
+                    if ($textOut !== '') {
                         return $textOut;
                     }
                 }
@@ -106,16 +106,16 @@ class ContextCompressor
             }
 
             $s = trim($s);
-            if ('' === $s) {
+            if ($s === '') {
                 continue;
             }
             if (mb_strlen($out.' '.$s) > $targetChars) {
                 break;
             }
-            $out = '' === $out ? $s : ($out.' '.$s);
+            $out = $out === '' ? $s : ($out.' '.$s);
         }
 
-        if (0 === mb_strlen($out)) {
+        if (mb_strlen($out) === 0) {
             return mb_substr($text, 0, $targetChars);
         }
 

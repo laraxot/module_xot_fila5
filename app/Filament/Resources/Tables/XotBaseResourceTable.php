@@ -15,7 +15,7 @@ abstract class XotBaseResourceTable
     use HasXotTable;
     use TransTrait;
 
-    public static function configure(Table $table): Table
+    public function configure(Table $table): Table
     {
         if (self::class === static::class) {
             throw new \LogicException('XotBaseResourceTable::configure() must be called on a concrete table class.');
@@ -28,7 +28,7 @@ abstract class XotBaseResourceTable
     }
 
     /**
-     * @return array<int|string, Column>
+     * @return array<int|string, \Filament\Tables\Columns\Column>
      */
     abstract public function getTableColumns(): array;
 }

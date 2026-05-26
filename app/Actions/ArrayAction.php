@@ -26,10 +26,8 @@ class ArrayAction
     }
 
     /**
-     * @param array<int|string, mixed> $array1
-     * @param array<int|string, mixed> $array2
-     *
-     * @return array<int|string, mixed>
+     * @param  array  $array1
+     * @param  array  $array2
      */
     public static function diff_assoc_recursive(array $array1, array $array2): array
     {

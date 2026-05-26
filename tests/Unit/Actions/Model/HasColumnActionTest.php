@@ -13,7 +13,8 @@ beforeEach(function (): void {
 
 it('executes without errors', function (): void {
     // Use BaseModel which should have standard columns
-    $model = new class extends BaseModel {
+    $model = new class extends BaseModel
+    {
         protected $table = 'users';
     };
 
@@ -28,7 +29,8 @@ it('executes without errors', function (): void {
 });
 
 it('handles different tables', function (): void {
-    $model = new class extends BaseModel {
+    $model = new class extends BaseModel
+    {
         protected $table = 'migrations';
     };
 
@@ -41,7 +43,8 @@ it('handles different tables', function (): void {
 });
 
 it('returns boolean result', function (): void {
-    $model = new class extends BaseModel {
+    $model = new class extends BaseModel
+    {
         protected $table = 'users';
     };
 

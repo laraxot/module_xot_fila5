@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Unit;
 
 use Modules\UI\Models\Asset;
 use Modules\Xot\Models\Module;
+use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 
