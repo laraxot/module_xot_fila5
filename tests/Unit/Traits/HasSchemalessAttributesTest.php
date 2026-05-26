@@ -11,8 +11,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 function makeSchemalessTestModel(): XotBaseModel
 {
-    return new class extends XotBaseModel
-    {
+    return new class extends XotBaseModel {
         use HasSchemalessAttributes;
 
         public $extra_attributes;

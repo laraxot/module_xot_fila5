@@ -19,11 +19,11 @@ class GetPdfContentByRecordActionTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->action = new GetPdfContentByRecordAction;
+        $this->action = new GetPdfContentByRecordAction();
     }
 
     /** @test */
-    public function it_generates_pdf_content_from_record(): void
+    public function itGeneratesPdfContentFromRecord(): void
     {
         // Arrange
         $user = User::factory()->create([
@@ -42,7 +42,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_generates_correct_view_name(): void
+    public function itGeneratesCorrectViewName(): void
     {
         // Arrange
         $user = User::factory()->create();
@@ -60,7 +60,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_generates_correct_filename_for_basic_model(): void
+    public function itGeneratesCorrectFilenameForBasicModel(): void
     {
         // Arrange
         $user = User::factory()->create(['id' => 123, 'name' => 'Test User']);
@@ -78,11 +78,10 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_generates_enhanced_filename_for_performance_models(): void
+    public function itGeneratesEnhancedFilenameForPerformanceModels(): void
     {
         // Arrange - Create a mock model with performance fields
-        $record = new class extends Model
-        {
+        $record = new class extends Model {
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
@@ -110,7 +109,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_prepares_correct_view_parameters(): void
+    public function itPreparesCorrectViewParameters(): void
     {
         // Arrange
         $user = User::factory()->create(['name' => 'Test User']);
@@ -134,7 +133,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_throws_exception_for_missing_view(): void
+    public function itThrowsExceptionForMissingView(): void
     {
         // Arrange
         $user = User::factory()->create();
@@ -147,7 +146,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_throws_exception_for_empty_html_content(): void
+    public function itThrowsExceptionForEmptyHtmlContent(): void
     {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
@@ -155,7 +154,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_uses_custom_filename_when_provided(): void
+    public function itUsesCustomFilenameWhenProvided(): void
     {
         // Arrange
         $user = User::factory()->create();
@@ -168,7 +167,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_handles_from_record_convenience_method(): void
+    public function itHandlesFromRecordConvenienceMethod(): void
     {
         // Arrange
         $user = User::factory()->create();
@@ -182,7 +181,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_logs_errors_when_pdf_generation_fails(): void
+    public function itLogsErrorsWhenPdfGenerationFails(): void
     {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
@@ -190,7 +189,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     }
 
     /** @test */
-    public function it_returns_valid_pdf_content_when_view_exists(): void
+    public function itReturnsValidPdfContentWhenViewExists(): void
     {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
