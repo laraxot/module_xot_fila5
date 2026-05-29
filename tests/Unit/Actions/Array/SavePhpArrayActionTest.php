@@ -17,7 +17,7 @@ beforeEach(function (): void {
 afterEach(function (): void {
     if (isset($this->tempDir) && file_exists($this->tempDir)) {
         $files = glob($this->tempDir.'/*');
-        if ($files !== false) {
+        if (false !== $files) {
             foreach ($files as $f) {
                 unlink($f);
             }
