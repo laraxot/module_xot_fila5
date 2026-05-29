@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Notify\Datas\RecordNotificationData;
-use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\States\Transitions\XotBaseTransition;
 
 uses(RefreshDatabase::class);
@@ -15,15 +14,13 @@ uses(RefreshDatabase::class);
 describe('XotBaseTransition', function () {
     beforeEach(function () {
         // Create a test record
-        $this->record = new class extends Model
-        {
+        $this->record = new class extends Model {
             protected $table = 'test_records';
             protected $fillable = ['id', 'name'];
         };
 
         // Create a concrete test transition class
-        $this->transition = new class($this->record) extends XotBaseTransition
-        {
+        $this->transition = new class($this->record) extends XotBaseTransition {
             public static string $name = 'test_transition';
 
             public function getNotificationRecipients(): array
@@ -65,7 +62,7 @@ describe('XotBaseTransition', function () {
 
     it('can send notifications without errors', function () {
         // This should not throw an exception
-        expect(fn() => $this->transition->sendNotifications())->not->toThrow(\Exception::class);
+        expect(fn () => $this->transition->sendNotifications())->not->toThrow(\Exception::class);
     });
 
     it('has getNotificationRecipients method', function () {
@@ -91,8 +88,7 @@ describe('XotBaseTransition', function () {
 
     it('processes recipients correctly in sendNotifications', function () {
         // Mock recipients with mixed types
-        $transition = new class($this->record) extends XotBaseTransition
-        {
+        $transition = new class($this->record) extends XotBaseTransition {
             public static string $name = 'test_mixed_transition';
 
             public function getNotificationRecipients(): array
@@ -110,6 +106,6 @@ describe('XotBaseTransition', function () {
         };
 
         // This should process without errors
-        expect(fn() => $transition->sendNotifications())->not->toThrow(\Exception::class);
+        expect(fn () => $transition->sendNotifications())->not->toThrow(\Exception::class);
     });
 });
