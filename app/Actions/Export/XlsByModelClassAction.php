@@ -53,7 +53,7 @@ class XlsByModelClassAction
         }
 
         // Otteniamo i risultati
-        /** @var \Illuminate\Database\Eloquent\Collection<int, Model> $rows */
+        /** @var Collection $rows */
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
@@ -87,9 +87,7 @@ class XlsByModelClassAction
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
-        /** @var Collection<int, mixed> $exportRows */
-        $exportRows = $rows;
-        $collectionExport = new CollectionExport($exportRows, $transKey);
+        $collectionExport = new CollectionExport($rows, $transKey);
         $filename = $this->getExportName($modelClass);
 
         return Excel::download($collectionExport, $filename);

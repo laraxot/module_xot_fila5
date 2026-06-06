@@ -619,13 +619,6 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-- [Performance Guide](./PERFORMANCE_GUIDE.md)
-
----
-
-**Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI
@@ -700,10 +693,18 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
+<<<<<<< .merge_file_DivG4C
 // healthcare_appService.php
 class healthcare_appService
+=======
+<<<<<<< HEAD
 // ModuloEsempioService.php
 class ModuloEsempioService
+=======
+// ExternalProjectService.php
+class ExternalProjectService
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> .merge_file_mQU6r8
 {
     use SingletonTrait;
 
@@ -1176,10 +1177,18 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
+<<<<<<< .merge_file_DivG4C
 // healthcare_appService.php
 class healthcare_appService
+=======
+<<<<<<< HEAD
 // ModuloEsempioService.php
 class ModuloEsempioService
+=======
+// ExternalProjectService.php
+class ExternalProjectService
+>>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
+>>>>>>> .merge_file_mQU6r8
 {
     use SingletonTrait;
 
@@ -1254,13 +1263,6 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-- [Performance Guide](./PERFORMANCE_GUIDE.md)
-
----
-
-**Data Creazione**: 2025-01-06
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI

@@ -139,7 +139,6 @@ return array(
 - **File standardizzati**: 15 file principali
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
-- **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 - **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 
 #### File Completati
@@ -255,8 +254,6 @@ return [
 
 ## Collegamenti
 
-- [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
-- [Xot Best Practices](../../laravel/Modules/Xot/docs/translations-best-practices.md)
 - [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
 - [Laraxot Conventions](laraxot-conventions.md)
@@ -275,4 +272,3 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
-*Ultimo aggiornamento: Giugno 2025*

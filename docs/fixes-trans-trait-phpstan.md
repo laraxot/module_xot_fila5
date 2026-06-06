@@ -1,6 +1,5 @@
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
-## Data: 2025-01-27
 ## Data: [DATE]
 
 ## Problema Identificato

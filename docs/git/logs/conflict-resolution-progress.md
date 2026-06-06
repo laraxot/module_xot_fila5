@@ -89,17 +89,9 @@ Questo documento tiene traccia dello stato di avanzamento della risoluzione dei 
 - **File in corso**: 0 (0%)
 - **File da risolvere**: ~294 (98%)
 
-<<<<<<< HEAD
-=======
-Ultimo aggiornamento: Gennaio 2025
->>>>>>> laraxot/dev
 
 ## Prossimi Passaggi
 
 1. Continuare la risoluzione dei conflitti nel modulo Xot, in particolare nei contratti e interfacce
 2. Procedere con la documentazione aggiornata per ogni file risolto
-<<<<<<< HEAD
 3. Eseguire test per verificare il funzionamento corretto delle modifiche
-=======
-3. Eseguire test per verificare il funzionamento corretto delle modifiche
->>>>>>> laraxot/dev

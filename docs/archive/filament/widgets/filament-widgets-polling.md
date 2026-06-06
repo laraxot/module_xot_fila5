@@ -43,17 +43,17 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 class DashboardStatsWidget extends XotBaseWidget
 {
     use CanPoll;
-    
+
     // Personalizzare l'intervallo di polling (default: 5s)
     protected static ?string $pollingInterval = '10s';
-    
+
     // Opzionale: sovrascrivere il metodo getPollingInterval
     protected function getPollingInterval(): ?string
     {
         // Logica personalizzata per determinare l'intervallo
         return static::$pollingInterval;
     }
-    
+
     // Il contenuto del widget verrà aggiornato automaticamente
     public function getFormSchema(): array
     {
@@ -96,15 +96,15 @@ use Filament\Forms\Components\Card;
 class ActiveUsersWidget extends XotBaseWidget
 {
     use CanPoll;
-    
+
     protected static ?string $pollingInterval = '30s';
     protected int | string | array $columnSpan = 'full';
     public string $title = 'Utenti Attivi';
-    
+
     public function getFormSchema(): array
     {
         $activeUsers = $this->getActiveUsers();
-        
+
         return [
             'stats' => Card::make()
                 ->schema([
@@ -275,8 +275,8 @@ Questa funzionalità è compatibile con:
 
 ## Collegamenti Bidirezionali
 
-- [README.md](../../README.md) - Indice principale della documentazione
+- [README.md](../../readme.md) - Indice principale della documentazione
 - [xot-base-widget.md](./xot-base-widget.md) - Documentazione su XotBaseWidget
-- [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
-- [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
+- [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament
+- [MODULE_STRUCTURE.md](../../module_structure.md) - Struttura standard dei moduli
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/widgets/installation)

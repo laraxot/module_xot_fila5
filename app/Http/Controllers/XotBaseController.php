@@ -22,8 +22,6 @@ class XotBaseController extends RoutingController
 
     /**
      * success response method.
-     *
-     * @param array<string, mixed> $result
      */
     public function sendResponse(string $message, array $result): JsonResponse
     {
@@ -38,8 +36,6 @@ class XotBaseController extends RoutingController
 
     /**
      * return error response.
-     *
-     * @param array<string, mixed> $errorMessages
      */
     public function sendError(string $error, array $errorMessages = [], int $code = 404): JsonResponse
     {

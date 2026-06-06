@@ -148,7 +148,6 @@ Ogni modulo deve avere:
 
 ## Collegamenti
 
-- [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
 ```
 
@@ -180,12 +179,6 @@ Ogni modulo deve avere:
 ---
 
 **Creato**: [DATE]
-- [Sigma Implementation](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
-- [Pattern Template](../../Sigma/docs/accessor-refactoring-philosophy.md)
-
----
-
-**Creato**: 2025-01-29
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
 **Timeline**: 3 settimane per audit completo

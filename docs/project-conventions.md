@@ -12,7 +12,6 @@
 
 2. **Nessuna data nel nome file**
    - ✅ CORRETTO: `phpstan-fixes.md`, `roadmap.md`
-   - ❌ SBAGLIATO: `phpstan-fixes-2025-10-10.md`, `ROADMAP_2025.md`
    - ❌ SBAGLIATO: `phpstan-fixes-[DATE].md`, `ROADMAP_2025.md`
    - **Motivo**: Le date nei nomi file causano duplicazione, rendono difficile il refactoring e non riflettono lo stato corrente del documento
 
@@ -55,9 +54,6 @@
 **REGOLE OBBLIGATORIE:**
 
 1. **SEMPRE link relativi, MAI assoluti**
-   - ✅ CORRETTO: `[Documentazione](../Xot/docs/architecture.md)`
-   - ✅ CORRETTO: `[Esempio](./examples/example.md)`
-   - ❌ SBAGLIATO: `[Doc](/var/www/laravel/Modules/Xot/docs/architecture.md)`
    - ✅ CORRETTO: `[Documentazione](../xot/docs/architecture.md)`
    - ✅ CORRETTO: `[Esempio](./examples/example.md)`
    - ❌ SBAGLIATO: `[Doc](/var/www/laravel/modules/xot/docs/architecture.md)`
@@ -140,7 +136,6 @@ bashscripts/
 # Script Name: describe-what-this-does.sh
 # Description: Brief description of what this script does
 # Author: [Author Name]
-# Date: [Creation Date]
 # Usage: ./script-name.sh [arguments]
 #
 
@@ -240,7 +235,6 @@ find Modules -name "*.md" ! -name "README.md" -exec bash -c '
 
 ---
 
-**Last Updated**: 2025-10-11
 
 **Status**: ✅ ACTIVE STANDARD
 **Compliance**: MANDATORY for all modules and themes

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-class FilterFormWidget extends XotBaseSchemaWidget
+class FilterFormWidget extends XotBaseWidget
 {
     // protected static string $view = 'filament.resources.your-resource.widgets.filter-form-widget';
 

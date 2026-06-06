@@ -1,6 +1,5 @@
 ## stato analisi phpstan
 
-- **data**: 2025-11-12
 - **data**: [DATE]
 - **ambito**: `Modules/Xot`
 - **comando**: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`

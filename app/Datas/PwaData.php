@@ -9,8 +9,6 @@ use Spatie\LaravelData\Data;
 /**
  * Class PwaData - Gestisce la configurazione PWA per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
- *
- * @phpstan-consistent-constructor
  */
 class PwaData extends Data
 {
@@ -44,8 +42,8 @@ class PwaData extends Data
     /**
      * Create a new instance of PwaData with default values.
      */
-    public static function make(): self
+    public static function make(): static
     {
-        return new self();
+        return new static();
     }
 }

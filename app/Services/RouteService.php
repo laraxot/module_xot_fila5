@@ -331,19 +331,14 @@ class RouteService
         $controllerName = self::getControllerName();
         $tmp_arr = explode('\\', $controllerName);
 
-        $routeCurrent = Route::current();
-        /** @var array<string, mixed> $params */
-        $params = $routeCurrent instanceof \Illuminate\Routing\Route ? $routeCurrent->parameters() : [];
+        $params = getRouteParameters();
         [$containers] = params2ContainerItem($params);
 
-        $params['containers'] = implode('.', array_map(
-            static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-            array_values($containers),
-        ));
+        $params['containers'] = implode('.', $containers);
 
         return collect($tmp_arr)
             ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))
-            ->map(static function ($item) use ($params): mixed {
+            ->map(static function ($item) use ($params) {
                 $item = Str::snake($item);
 
                 return $params[$item] ?? $item;

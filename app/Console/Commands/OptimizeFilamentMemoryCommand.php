@@ -8,7 +8,6 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\preg_match;
 
@@ -307,8 +306,8 @@ class OptimizeFilamentMemoryCommand extends Command
                 $this->newLine();
                 $this->warn("Dettagli {$type}:");
                 foreach ($items as $item) {
-                    $itemString = SafeStringCastAction::cast($item);
-                    $this->line('  - '.str_replace(base_path(), '', $itemString));
+                    $itemString = is_string($item) ? $item : (string) $item;
+                    $this->line('  - '.str_replace(base_path(), '', (string) $itemString));
                 }
             }
         }

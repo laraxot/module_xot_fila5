@@ -312,7 +312,6 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-*Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
@@ -631,7 +630,7 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
-*Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
+

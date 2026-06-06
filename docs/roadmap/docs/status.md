@@ -51,9 +51,3 @@
 * [status.md](../../../xot/docs/roadmap/docs/status.md)
 * [status.md](../../../xot/docs/roadmap/testing/status.md)
 * [status.md](../../../xot/docs/roadmap/security/status.md)
-- [Linee Guida Documentazione](../../DOCUMENTATION-GUIDELINES.md)
-- [Best Practices](../../BEST-PRACTICES.md)
-## Collegamenti tra versioni di status.md
-* [status.md](../../../Xot/docs/roadmap/docs/status.md)
-* [status.md](../../../Xot/docs/roadmap/testing/status.md)
-* [status.md](../../../Xot/docs/roadmap/security/status.md)

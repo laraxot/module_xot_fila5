@@ -1,4 +1,5 @@
-**Data**: 2025-12-23
+# Analisi PHPStan - Tutti i Moduli
+
 **Obiettivo**: Analisi sistematica completa di tutti i moduli con PHPStan
 **Livello**: max
 **Status Finale**: ✅ **TUTTI I MODULI PULITI**
@@ -74,10 +75,3 @@ Tutti gli errori e le correzioni sono documentati in:
 - **Livello PHPStan**: max
 
 **Risultato**: Codicebase completamente compliant con PHPStan livello max! 🎉
----
-module: theme
-topic: phpstan-analysis-all-modules
-canonical: ../../../Themes/docs/shared-components/phpstan-all-modules.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-all-modules.md

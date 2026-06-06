@@ -1,6 +1,3 @@
-# Laraxot MeetupServiceProvider Refactor - 2025-12-16
-
-**Data**: 2025-12-16
 # Laraxot MeetupServiceProvider Refactor - [DATE]
 
 **Analista**: Super Mucca AI

@@ -9,7 +9,6 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
@@ -18,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
-use function Safe\realpath;
 
 use Webmozart\Assert\Assert;
 
@@ -46,10 +44,8 @@ class ArtisanService
         }
         switch ($act) {
             case 'migrate':
-                $defaultConn = Config::get('database.default');
-                $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
-                DB::purge($purgeConn);
-                DB::reconnect($purgeConn);
+                DB::purge('mysql');
+                DB::reconnect('mysql');
                 if ('' !== $module_name) {
                     echo '<h3>Module '.$module_name.'</h3>';
 

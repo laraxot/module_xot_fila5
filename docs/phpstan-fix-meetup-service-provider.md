@@ -1,6 +1,3 @@
-# PHPStan Fix - MeetupServiceProvider - 2025-12-16
-
-**Data**: 2025-12-16
 # PHPStan Fix - MeetupServiceProvider - [DATE]
 
 **Analista**: Super Mucca AI

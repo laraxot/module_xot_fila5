@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\String;
+
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 use Modules\Xot\Actions\String\SanitizeAction;
-use PHPUnit\Framework\Assert;
 
 test('get pronounceable password action works', function () {
     $action = app(GetPronounceablePasswordAction::class);
     $password = $action->execute(12);
 
-    Assert::assertGreaterThanOrEqual(8, strlen($password)); // min length logic inside
+    expect(strlen($password))->toBeGreaterThanOrEqual(8); // min length logic inside
     // Should contain at least one digit and some characters from the special set
-    Assert::assertMatchesRegularExpression('/[0-9]/', (string) $password);
+    expect($password)->toMatch('/[0-9]/');
 });
 
 test('get str between starts with action works', function () {
@@ -23,17 +23,17 @@ test('get str between starts with action works', function () {
     $body = 'prefix { content { inner } } suffix';
     $result = $action->execute($body, 'content', '{', '}');
 
-    Assert::assertStringContainsString((string) 'content { inner }', (string) $result);
+    expect($result)->toContain('content { inner }');
 });
 
 test('normalize driver name action works', function () {
     $action = app(NormalizeDriverNameAction::class);
-    Assert::assertSame('360dialog', $action->execute('360-Dialog'));
-    Assert::assertSame('mydriver', $action->execute('My_Driver'));
+    expect($action->execute('360-Dialog'))->toBe('360dialog')
+        ->and($action->execute('My_Driver'))->toBe('mydriver');
 });
 
 test('sanitize action works', function () {
     $action = app(SanitizeAction::class);
     $input = '  <p>Hello &amp; World</p>  ';
-    Assert::assertSame('Hello & World', $action->execute($input));
+    expect($action->execute($input))->toBe('Hello & World');
 });

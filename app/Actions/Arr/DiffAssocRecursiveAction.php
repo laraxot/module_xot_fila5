@@ -14,9 +14,7 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
-     * @param array<string, mixed> $data
-     *
-     * @return array<string, mixed>
+     * Undocumented function.
      */
     public static function fixType(array $data): array
     {
@@ -38,10 +36,7 @@ class DiffAssocRecursiveAction
     }
 
     /**
-     * @param array<string, mixed> $arr_1
-     * @param array<string, mixed> $arr_2
-     *
-     * @return array<string, mixed>
+     * ---.
      */
     public function execute(array $arr_1, array $arr_2): array
     {
@@ -52,7 +47,7 @@ class DiffAssocRecursiveAction
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {
-                throw $exception;
+                dddx(['err' => $exception->getMessage(), 'value' => $value, 'key' => $key, 'arr_2' => $arr_2]);
             }
         });
 

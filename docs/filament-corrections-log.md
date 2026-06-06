@@ -1,6 +1,5 @@
 # Log delle Correzioni Filament
 
-## Data: 2024-12-19
 ## Data: [DATE]
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**

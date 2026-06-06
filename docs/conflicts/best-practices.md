@@ -74,7 +74,6 @@ namespace Modules\ModuleName\App\Models;
 
 ## Collegamenti Correlati
 
-- [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
 - [Convenzioni Namespace](../namespace-conventions.md)
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)

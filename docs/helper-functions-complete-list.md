@@ -362,7 +362,6 @@ composer dump-autoload
 
 ---
 
-**Last Updated**: 2 Dicembre 2025
 
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅

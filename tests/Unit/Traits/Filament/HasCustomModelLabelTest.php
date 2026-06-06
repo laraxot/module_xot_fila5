@@ -2,37 +2,102 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
-use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
-use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;
-use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPluralProbe;
-use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPropertyProbe;
-use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromPropertyProbe;
-use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromSingularProbe;
-use PHPUnit\Framework\Assert;
+namespace Modules\Xot\Tests\Unit\Traits\Filament;
+
+use Illuminate\Support\Str;
+use Modules\Xot\Traits\Filament\HasCustomModelLabel;
 
 it('gets model label from property', function (): void {
-    Assert::assertSame('Custom Label', ModelLabelFromPropertyProbe::getModelLabel());
+    $class = new class {
+        use HasCustomModelLabel;
+
+        public static string $modelLabel = 'Custom Label';
+
+        public static function getModel(): string
+        {
+            return 'App\Models\User';
+        }
+    };
+
+    expect($class::getModelLabel())->toBe('Custom Label');
 });
 
 it('gets model label from model name', function (): void {
-    Assert::assertSame('User Invitation', ModelLabelFromModelNameProbe::getModelLabel());
+    $class = new class {
+        use HasCustomModelLabel;
+
+        public static function getModel(): string
+        {
+            return 'App\Models\UserInvitation';
+        }
+    };
+
+    // Str::title(Str::snake('UserInvitation', ' ')) -> 'User Invitation'
+    expect($class::getModelLabel())->toBe('User Invitation');
 });
 
 it('gets plural model label from property', function (): void {
-    Assert::assertSame('Plural Labels', PluralModelLabelFromPropertyProbe::getPluralModelLabel());
+    $class = new class {
+        use HasCustomModelLabel;
+
+        public static string $pluralModelLabel = 'Plural Labels';
+
+        public static function getModelLabel(): string
+        {
+            return 'Label';
+        }
+    };
+
+    expect($class::getPluralModelLabel())->toBe('Plural Labels');
 });
 
 it('gets plural model label from singular label', function (): void {
-    Assert::assertSame('Categories', PluralModelLabelFromSingularProbe::getPluralModelLabel());
+    $class = new class {
+        use HasCustomModelLabel;
+
+        public static function getModelLabel(): string
+        {
+            return 'Category';
+        }
+    };
+
+    expect($class::getPluralModelLabel())->toBe('Categories');
 });
 
 it('gets navigation label', function (): void {
-    Assert::assertSame('Nav Label', NavigationLabelFromPropertyProbe::getNavigationLabel());
-    Assert::assertSame('Plurals', NavigationLabelFromPluralProbe::getNavigationLabel());
+    $class = new class {
+        use HasCustomModelLabel;
+
+        public static string $navigationLabel = 'Nav Label';
+
+        public static function getPluralModelLabel(): string
+        {
+            return 'Plurals';
+        }
+    };
+
+    expect($class::getNavigationLabel())->toBe('Nav Label');
+
+    $classNoNav = new class {
+        use HasCustomModelLabel;
+
+        public static function getPluralModelLabel(): string
+        {
+            return 'Plurals';
+        }
+    };
+    expect($classNoNav::getNavigationLabel())->toBe('Plurals');
 });
 
 it('gets breadcrumb', function (): void {
-    Assert::assertSame('Bread', BreadcrumbProbe::getBreadcrumb());
+    $class = new class {
+        use HasCustomModelLabel;
+
+        public static function getModelLabel(): string
+        {
+            return 'Bread';
+        }
+    };
+
+    expect($class::getBreadcrumb())->toBe('Bread');
 });

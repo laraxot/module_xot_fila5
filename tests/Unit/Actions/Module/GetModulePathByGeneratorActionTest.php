@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Module;
+
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-use PHPUnit\Framework\Assert;
 
 it('returns path using module_path helper in happy path', function (): void {
     config()->set('modules.paths.generator.config.path', 'config');
 
     $result = app(GetModulePathByGeneratorAction::class)->execute('Xot', 'config');
 
-    Assert::assertStringContainsString((string) '/Modules/Xot/config', (string) $result);
+    expect($result)->toContain('/Modules/Xot/config');
 });
 
 it('returns module path for another existing generator directory', function (): void {
@@ -19,5 +19,5 @@ it('returns module path for another existing generator directory', function (): 
 
     $result = app(GetModulePathByGeneratorAction::class)->execute('Xot', 'lang');
 
-    Assert::assertStringContainsString((string) '/Modules/Xot/lang', (string) $result);
+    expect($result)->toContain('/Modules/Xot/lang');
 });

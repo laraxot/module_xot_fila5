@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-use BladeUI\Icons\Exceptions\SvgNotFound;
 use BladeUI\Icons\Factory as BladeIconsFactory;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Config;
@@ -35,6 +34,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     protected string $module_base_ns;
 
+    /**
+     * Boot the application events.
+     */
     public function boot(): void
     {
         $this->registerTranslations();
@@ -46,6 +48,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerCommands();
     }
 
+    /**
+     * Register the service provider.
+     */
     public function register(): void
     {
         $this->nameLower = Str::lower($this->name);
@@ -61,28 +66,47 @@ abstract class XotBaseServiceProvider extends ServiceProvider
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
-        // Blade UI Kit default set may already contain prefixes like "geo".
-        // Skip registration if the prefix would collide with the default set.
         $this->callAfterResolving(BladeIconsFactory::class, function (BladeIconsFactory $factory): void {
             try {
                 $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'assets');
                 $svgPath = $assetsPath.'/../svg';
-                if (! File::exists($svgPath)) {
-                    return;
-                }
-                // Check if prefix already registered to avoid collision with default set.
-                try {
-                    $factory->svg($this->nameLower.'::non-existent-test');
-                } catch (SvgNotFound $e) {
-                    // Prefix not registered yet — safe to add.
+                if (File::exists($svgPath)) {
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
                 }
             } catch (\Throwable $e) {
-                // Ignore missing optional assets.
+                // Ignore - assets opzionali, modulo può funzionare senza
             }
         });
+
+        // $svgPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'svg');
+        /*
+         * Assert::string($relativePath = config('modules.paths.generator.assets.path'));
+         *
+         * try {
+         * $svgPath = module_path($this->name, $relativePath.'/../svg');
+         * if (! is_string($svgPath)) {
+         * throw new \Exception('Invalid SVG path');
+         * }
+         * $resolvedPath = $svgPath;
+         * $svgPath = $resolvedPath;
+         * } catch (\Error $e) {
+         * $svgPath = base_path('Modules/'.$this->name.'/'.$relativePath.'/../svg');
+         * if (! is_string($svgPath)) {
+         * throw new \Exception('Invalid fallback SVG path');
+         * }
+         * }
+         *
+         * $basePath = base_path(DIRECTORY_SEPARATOR);
+         * $svgPath = str_replace($basePath, '', $svgPath);
+         *
+         * Config::set('blade-icons.sets.'.$this->nameLower.'.path', $svgPath);
+         * Config::set('blade-icons.sets.'.$this->nameLower.'.prefix', $this->nameLower);
+         */
     }
 
+    /**
+     * Register views.
+     */
     public function registerViews(): void
     {
         if ('' === $this->name) {
@@ -90,9 +114,18 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         }
 
         $viewPath = module_path($this->name, 'resources/views');
+        // if (! is_string($viewPath)) {
+        //    throw new \Exception('Invalid view path');
+        // }
+
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
+    /**
+     * Registra le traduzioni del modulo.
+     *
+     * @throws \Exception
+     */
     public function registerTranslations(): void
     {
         if ('' === $this->name) {
@@ -104,6 +137,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->loadJsonTranslationsFrom($langPath);
     }
 
+    /**
+     * Register an additional directory of factories.
+     */
     public function registerFactories(): void
     {
         if (! app()->environment('production')) {
@@ -114,11 +150,15 @@ abstract class XotBaseServiceProvider extends ServiceProvider
     public function registerBladeComponents(): void
     {
         $componentViewPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-view');
-
         try {
             Blade::anonymousComponentPath($componentViewPath);
         } catch (\Exception $e) {
-            // Ignore invalid or unavailable anonymous component paths.
+            // Ignore missing component view path
+            dddx([
+                'name' => $this->name,
+                'componentViewPath' => $componentViewPath,
+                'e' => $e->getMessage(),
+            ]);
         }
 
         $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
@@ -129,6 +169,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         app(RegisterBladeComponentsAction::class)->execute($componentClassPath, $this->module_ns);
     }
 
+    /**
+     * Register Livewire components.
+     */
     public function registerLivewireComponents(): void
     {
         $prefix = '';
@@ -161,12 +204,19 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->commands($commands);
     }
 
-    /** @return array<int, string> */
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array<int, string>
+     */
     public function provides(): array
     {
         return [];
     }
 
+    /**
+     * Restituisce il path della cartella lang del modulo, con fallback robusto.
+     */
     protected function getLangPath(): string
     {
         try {
@@ -176,22 +226,28 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         }
     }
 
+    /**
+     * Register config.
+     */
     protected function registerConfig(): void
     {
         try {
             $configPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'config');
+
             $files = File::glob($configPath.'/*.php');
 
             foreach ($files as $file) {
                 if (! is_string($file)) {
                     continue;
                 }
-
-                $filename = pathinfo($file, PATHINFO_FILENAME);
-                Config::set($this->nameLower.'.'.$filename, require $file);
+                $content = File::getRequire($file);
+                $info = pathinfo($file);
+                $key = $this->nameLower.'::'.$info['filename'];
+                Config::set($key, $content);
             }
-        } catch (\Throwable $e) {
-            // Ignore config registration failures for optional module config.
+        } catch (\Exception $e) {
+            // Ignore missing configuration
+            return;
         }
     }
 }

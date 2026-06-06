@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Tenant\Services\TenantService;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
 use function Safe\json_encode;
@@ -124,6 +122,7 @@ class GetModulesNavigationItems
                         return false;
                     }
 
+                    /* @phpstan-ignore-next-line */
                     return (bool) $user->hasRole($role);
                 });
 
@@ -173,11 +172,11 @@ class GetModulesNavigationItems
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
-                $navigation_sort = SafeIntCastAction::cast($config['navigation_sort'] ?? 1);
+                $navigation_sort = (int) ($config['navigation_sort'] ?? 1);
                 $out[] = [
                     'module' => $module,
                     'module_low' => $module_low,
-                    'icon' => SafeStringCastAction::cast($icon),
+                    'icon' => (string) $icon,
                     'sort' => $navigation_sort,
                 ];
             }

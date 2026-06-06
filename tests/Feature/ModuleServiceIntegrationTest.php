@@ -2,19 +2,22 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Feature;
+
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Services\ModuleService;
-use PHPUnit\Framework\Assert;
 
 describe('ModuleService Integration', function () {
     beforeEach(function () {
+        $this->service = new ModuleService('Xot');
     });
 
     it('integrates with Nwidart Modules system', function () {
-        Assert::assertTrue(class_exists('Nwidart\Modules\Facades\Module'));
-        Assert::assertTrue(class_exists('Nwidart\Modules\Module'));
+        expect(class_exists('Nwidart\Modules\Facades\Module'))
+            ->toBeTrue()
+            ->and(class_exists('Nwidart\Modules\Module'))
+            ->toBeTrue();
     });
 
     it('can find existing modules', function () {
@@ -23,85 +26,89 @@ describe('ModuleService Integration', function () {
         $userService = new ModuleService('User');
         $xotService = new ModuleService('Xot');
 
-        Assert::assertInstanceOf(ModuleService::class, $chartService);
-
-        Assert::assertInstanceOf(ModuleService::class, $userService);
-
-        Assert::assertInstanceOf(ModuleService::class, $xotService);
+        expect($chartService)
+            ->toBeInstanceOf(ModuleService::class)
+            ->and($userService)
+            ->toBeInstanceOf(ModuleService::class)
+            ->and($xotService)
+            ->toBeInstanceOf(ModuleService::class);
     });
 
     it('returns models from existing modules', function () {
         // Test with Chart module (we know it exists)
         $chartService = new ModuleService('Chart');
-        /** @var array<int|string, class-string> $models */
         $models = $chartService->getModels();
+
+        expect($models)->toBeArray();
 
         // Should contain Chart model
         $hasChartModel = false;
         foreach ($models as $key => $modelClass) {
-            if (is_string($modelClass) && str_contains($modelClass, 'Chart\\Models\\Chart')) {
+            if (str_contains($modelClass, 'Chart\\Models\\Chart')) {
                 $hasChartModel = true;
                 break;
             }
         }
 
-        Assert::assertTrue($hasChartModel);
+        expect($hasChartModel)->toBeTrue();
     });
 
     it('handles User module models correctly', function () {
         $userService = new ModuleService('User');
-        /** @var array<int|string, class-string> $models */
         $models = $userService->getModels();
+
+        expect($models)->toBeArray();
 
         // Check for common User module models
         $modelClasses = array_values($models);
         $hasUserModels = false;
 
         foreach ($modelClasses as $modelClass) {
-            if (is_string($modelClass) && str_contains($modelClass, 'User\\Models\\')) {
+            if (str_contains($modelClass, 'User\\Models\\')) {
                 $hasUserModels = true;
                 break;
             }
         }
 
-        Assert::assertTrue($hasUserModels);
+        expect($hasUserModels)->toBeTrue();
     });
 
     it('filters abstract models correctly', function () {
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
 
         // BaseModel should not be included (it's abstract)
         $modelNames = array_keys($models);
-        Assert::assertStringNotContainsString('base_model', implode(',', $modelNames));
+        expect($modelNames)->not->toContain('base_model');
     });
 
     it('returns class strings as values', function () {
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
 
         foreach ($models as $key => $modelClass) {
-            Assert::assertIsString($key);
-            Assert::assertIsString($modelClass);
-            Assert::assertTrue(str_contains($modelClass, 'Modules\\'));
+            expect($key)
+                ->toBeString()
+                ->and($modelClass)
+                ->toBeString()
+                ->and(str_contains($modelClass, 'Modules\\'))
+                ->toBeTrue();
         }
     });
 
     it('handles reflection operations safely', function () {
         // Test that reflection operations don't cause crashes
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
 
         // Test each returned model class
         foreach ($models as $modelClass) {
-            Assert::assertTrue(is_string($modelClass) && (class_exists($modelClass) || interface_exists($modelClass)));
+            expect(class_exists($modelClass) || interface_exists($modelClass))->toBeTrue();
         }
     });
 
     it('processes module directory structure', function () {
         // Test that the service can process module directories
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
+
+        expect($models)->toBeArray();
     });
 
     it('handles snake_case conversion correctly', function () {
@@ -109,12 +116,12 @@ describe('ModuleService Integration', function () {
         $testString = 'TestModelName';
         $snakeCase = Str::snake($testString);
 
-        Assert::assertSame('test_model_name', $snakeCase);
+        expect($snakeCase)->toBe('test_model_name');
     });
 
     it('integrates with Laravel filesystem', function () {
         // Test filesystem operations
-        Assert::assertTrue(class_exists('Illuminate\Support\Facades\File'));
+        expect(class_exists('Illuminate\Support\Facades\File'))->toBeTrue();
     });
 
     it('can handle multiple module instances', function () {
@@ -126,8 +133,9 @@ describe('ModuleService Integration', function () {
         ];
 
         foreach ($services as $service) {
-            Assert::assertInstanceOf(ModuleService::class, $service);
+            expect($service)->toBeInstanceOf(ModuleService::class);
             $models = $service->getModels();
+            expect($models)->toBeArray();
         }
     });
 
@@ -136,7 +144,7 @@ describe('ModuleService Integration', function () {
         $nonExistentService = new ModuleService('NonExistentModule');
         $models = $nonExistentService->getModels();
 
-        Assert::assertEmpty($models);
+        expect($models)->toBeArray()->and($models)->toBeEmpty();
     });
 
     it('handles namespace construction correctly', function () {
@@ -145,19 +153,17 @@ describe('ModuleService Integration', function () {
         $models = $chartService->getModels();
 
         foreach ($models as $modelClass) {
-            Assert::assertStringContainsString('Modules\\Chart\\', (string) $modelClass);
+            expect($modelClass)->toContain('Modules\\Chart\\');
         }
     });
 
     it('processes file extensions correctly', function () {
         // Test that only .php files are processed
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
 
         // All returned classes should be valid PHP classes
         foreach ($models as $modelClass) {
-            Assert::assertTrue(is_string($modelClass));
-            Assert::assertGreaterThan(0, strlen((string) $modelClass));
+            expect(is_string($modelClass))->toBeTrue()->and(strlen($modelClass))->toBeGreaterThan(0);
         }
     });
 
@@ -170,19 +176,25 @@ describe('ModuleService Integration', function () {
         ];
 
         foreach ($edgeCaseServices as $service) {
+            expect($service->getModels(...))->not->toThrow(Exception::class);
         }
     });
 
     it('validates return type consistency', function () {
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
+
+        expect($models)->toBeArray();
 
         // Validate that all keys are strings and all values are class strings
         foreach ($models as $key => $value) {
-            Assert::assertIsString($key);
-            Assert::assertIsString($value);
-            Assert::assertGreaterThan(0, strlen($key));
-            Assert::assertGreaterThan(0, strlen($value));
+            expect($key)
+                ->toBeString()
+                ->and($value)
+                ->toBeString()
+                ->and(strlen($key))
+                ->toBeGreaterThan(0)
+                ->and(strlen($value))
+                ->toBeGreaterThan(0);
         }
     });
 
@@ -190,7 +202,7 @@ describe('ModuleService Integration', function () {
         // Test service container integration
         $serviceFromContainer = app(ModuleService::class, ['name' => 'TestModule']);
 
-        Assert::assertInstanceOf(ModuleService::class, $serviceFromContainer);
+        expect($serviceFromContainer)->toBeInstanceOf(ModuleService::class);
     });
 
     it('handles concurrent access correctly', function () {
@@ -202,54 +214,52 @@ describe('ModuleService Integration', function () {
         }
 
         // All results should be consistent
-        Assert::assertSame($results[0], $results[1]);
-        Assert::assertSame($results[0], $results[2]);
+        expect($results[0])->toBe($results[1])->and($results[1])->toBe($results[2]);
     });
 
     it('validates module path resolution', function () {
         // Test that module paths are resolved correctly
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
 
         foreach ($models as $modelClass) {
             // Each model class should follow the correct namespace pattern
-            Assert::assertMatchesRegularExpression('/^Modules\\\\[A-Za-z]+\\\\Models\\\\[A-Za-z]+$/', (string) $modelClass);
+            expect($modelClass)->toMatch('/^Modules\\\\[A-Za-z]+\\\\Models\\\\[A-Za-z]+$/');
         }
     });
 
     it('handles file system operations safely', function () {
         // Test file system operations
-        $xotService = new ModuleService('Xot');
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
+
+        // Should not cause file system errors
+        expect($models)->toBeArray();
     });
 
     it('integrates with Laravel string helpers', function () {
         // Test string helper integration
-        Assert::assertTrue(class_exists('Illuminate\Support\Str'));
+        expect(class_exists('Illuminate\Support\Str'))->toBeTrue();
+
         $testStudly = Str::studly('test_string');
-        Assert::assertSame('TestString', $testStudly);
+        expect($testStudly)->toBe('TestString');
     });
 
     it('validates class instantiation patterns', function () {
         // Test that the service follows proper instantiation patterns
-        $xotService = new ModuleService('Xot');
-        $reflection = new ReflectionClass($xotService);
+        $reflection = new ReflectionClass($this->service);
         $constructor = $reflection->getConstructor();
 
-        Assert::assertNotNull($constructor);
-        Assert::assertTrue($constructor->isPublic());
+        expect($constructor)->not->toBeNull()->and($constructor->isPublic())->toBeTrue();
     });
 
     it('can handle model discovery efficiently', function () {
         // Test performance of model discovery
-        $xotService = new ModuleService('Xot');
         $startTime = microtime(true);
 
-        $models = $xotService->getModels();
+        $models = $this->service->getModels();
 
         $endTime = microtime(true);
         $executionTime = $endTime - $startTime;
 
-        Assert::assertLessThan(5.0, $executionTime); // Should complete within 5 seconds
+        expect($models)->toBeArray()->and($executionTime)->toBeLessThan(5.0); // Should complete within 5 seconds
     });
 });

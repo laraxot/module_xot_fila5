@@ -21,7 +21,6 @@ class MorphToManyAction
 {
     use QueueableAction;
 
-    /** @var Collection<int, mixed> */
     public Collection $res;
 
     /**

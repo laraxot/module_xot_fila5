@@ -256,7 +256,6 @@ class ValidationServiceProvider extends ServiceProvider
 }
 ```
 
-## 🔧 Merge Conflicts Resolution - 2025-11-04
 ## 🔧 Merge Conflicts Resolution - [DATE]
 
 ### Problema Risolto
@@ -335,7 +334,6 @@ vendor/bin/pint --dirty Modules/Xot/app
 ```
 
 ### References
-- [Merge Conflict Resolution 2025-11-04](./merge-conflict-resolution-2025-11-04.md) - Report completo
 - [Merge Conflict Resolution [DATE]](./merge-conflict-resolution-[DATE].md) - Report completo
 - [File Locking Pattern](./file-locking-pattern.md) - Nuova regola fondamentale
 - [RouteServiceProvider Documentation](./consolidated/route-service-provider.md) - Linee guida esistenti

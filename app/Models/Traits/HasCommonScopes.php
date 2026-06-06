@@ -35,8 +35,6 @@ trait HasCommonScopes
      *
      * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
      *
-     * @param Builder<static> $query
-     *
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -46,8 +44,6 @@ trait HasCommonScopes
 
     /**
      * Scope query to only inactive records.
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -61,8 +57,6 @@ trait HasCommonScopes
      *
      * Records with published_at <= now().
      *
-     * @param Builder<static> $query
-     *
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -75,8 +69,6 @@ trait HasCommonScopes
      * Scope query to draft (unpublished) records.
      *
      * Records with published_at = null or > now().
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -145,7 +137,8 @@ trait HasCommonScopes
             return false;
         }
 
-        return $this->published_at->isPast();
+        return null !== $this->published_at
+               && $this->published_at->isPast();
     }
 
     /**

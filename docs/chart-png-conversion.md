@@ -693,7 +693,6 @@ private function validateSvg(string $svg): bool
 
 ---
 
-**Last Updated:** 2025-12-09
 **
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
