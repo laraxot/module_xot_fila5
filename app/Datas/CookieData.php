@@ -12,9 +12,9 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
- * @param bool $accept
+ * @param bool   $accept
  * @param string $type
- * @param int $durationDays
+ * @param int    $durationDays
  * @param string $policyUrl
  * @param string $bannerStyle
  */
