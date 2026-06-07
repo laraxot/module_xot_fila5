@@ -34,7 +34,7 @@ class MetatagPage extends XotBasePage
     {
         Assert::isArray($data = config('metatag'));
 
-        /** @var array<string, mixed> $data */
+        /* @var array<string, mixed> $data */
         $this->form->fill($data);
     }
 

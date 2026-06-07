@@ -12,11 +12,11 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
- * @param string $driver
+ * @param string                    $driver
  * @param array<string, int|string> $smtpConfig
- * @param array<string, string> $fromConfig
- * @param string|null $replyTo
- * @param bool $verifyPeer
+ * @param array<string, string>     $fromConfig
+ * @param string|null               $replyTo
+ * @param bool                      $verifyPeer
  */
 final class MailData extends Data
 {
