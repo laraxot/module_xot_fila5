@@ -92,6 +92,8 @@ DatePicker::make('field_name')
 3. Mantieni consistenza nei nomi dei metodi in tutto il progetto
 4. Aggiorna questa documentazione quando trovi nuovi metodi o pattern utili
 ## Collegamenti tra versioni di FILAMENT_COMPONENTS.md
+* [FILAMENT_COMPONENTS.md](../../../Xot/project_docs/FILAMENT_COMPONENTS.md)
+* [FILAMENT_COMPONENTS.md](../../../../Themes/One/project_docs/FILAMENT_COMPONENTS.md)
 * [FILAMENT_COMPONENTS.md](../../../xot/project_docs/filament_components.md)
 * [FILAMENT_COMPONENTS.md](../../../../themes/one/project_docs/filament_components.md)
 
@@ -103,6 +105,7 @@ DatePicker::make('field_name')
 - Il metodo per le colonne della tabella deve essere sempre getTableColumns.
 - Ogni correzione deve essere documentata qui e in FILAMENT_TABLE_COLUMNS.md.
 
+**Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 # Componenti Filament - Guida di Riferimento
 
@@ -198,6 +201,8 @@ DatePicker::make('field_name')
 3. Mantieni consistenza nei nomi dei metodi in tutto il progetto
 4. Aggiorna questa documentazione quando trovi nuovi metodi o pattern utili
 ## Collegamenti tra versioni di FILAMENT_COMPONENTS.md
+* [FILAMENT_COMPONENTS.md](../../../Xot/docs/FILAMENT_COMPONENTS.md)
+* [FILAMENT_COMPONENTS.md](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 * [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
 * [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
 
@@ -209,4 +214,5 @@ DatePicker::make('field_name')
 - Il metodo per le colonne della tabella deve essere sempre getTableColumns.
 - Ogni correzione deve essere documentata qui e in FILAMENT_TABLE_COLUMNS.md.
 
+**Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
 **Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)

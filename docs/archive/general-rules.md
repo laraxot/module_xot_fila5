@@ -118,6 +118,8 @@ Questo documento contiene le regole generali che devono essere seguite in tutto 
 
 ## Collegamenti Bidirezionali
 - Questo documento è collegato alle documentazioni dei seguenti moduli:
+  - [Patient Module Documentation](../../../Patient/docs/doctor-model-update.md)
+  - [User Module Documentation](../../../User/docs/user-model-guidelines.md)
   - [Patient Module Documentation](../../../patient/docs/doctor-model-update.md)
   - [User Module Documentation](../../../user/docs/user-model-guidelines.md)
 

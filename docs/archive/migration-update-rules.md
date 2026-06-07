@@ -2,6 +2,8 @@
 
 ## Collegamento bidirezionale
 - Questo file è collegato a casi specifici documentati nei moduli, ad esempio:
+  [Modules/Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md)
+  [Modules/Performance/project_docs/organizzativa-migration-errors.md](../../Performance/project_docs/organizzativa-migration-errors.md)
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../performance/docs/organizzativa-migration-errors.md)
   [Modules/Performance/project_docs/organizzativa-migration-errors.md](../../performance/project_docs/organizzativa-migration-errors.md)
 
@@ -26,6 +28,7 @@
 
 ## Collegamento bidirezionale
 - Questo file è collegato a casi specifici documentati nei moduli, ad esempio:
+  [Modules/Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md)
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../performance/docs/organizzativa-migration-errors.md)
 
 ## Caso pratico: Performance

@@ -226,22 +226,16 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     {
         $actions = [];
         $me = $this;
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($me, 'canAttach')) {
-            $actions['attach'] = AttachAction::make()
-                ->icon('heroicon-o-link')
-                ->iconButton()
-                ->tooltip(__('user::actions.attach.label'))
-                ->visible(static fn (?Model $_record): bool => $me->canAttach());
-        }
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($me, 'canCreate')) {
-            $actions['create'] = CreateAction::make()
-                ->icon('heroicon-o-plus')
-                ->iconButton()
-                ->tooltip(static::trans('actions.create.tooltip'))
-                ->visible(static fn (?Model $_record): bool => $me->canCreate());
-        }
+        $actions['attach'] = AttachAction::make()
+            ->icon('heroicon-o-link')
+            ->iconButton()
+            ->tooltip(__('user::actions.attach.label'))
+            ->visible(static fn (?Model $_record): bool => $me->canAttach());
+        $actions['create'] = CreateAction::make()
+            ->icon('heroicon-o-plus')
+            ->iconButton()
+            ->tooltip(static::trans('actions.create.tooltip'))
+            ->visible(static fn (?Model $_record): bool => $me->canCreate());
 
         return $actions;
     }

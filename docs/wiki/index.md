@@ -1,3 +1,24 @@
+---
+title: "Xot Module Wiki Index"
+type: index
+module: Xot
+tags: [xot, wiki, index, xotbase, migrations, phpstan]
+created: 2026-04-28
+updated: 2026-06-05
+qmd: "xot module wiki index XotBase migrations phpstan filament actions"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./concepts/migration-update-timestamps-only.md
+  - ./concepts/module-model-artifact-parity.md
+  - ./concepts/ai-harness-xot-discipline.md
+  - ./concepts/second-brain-local-discipline.md
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+---
+
 # Xot Module LLM Wiki
 
 Indice operativo del wiki Xot (core framework).
@@ -15,6 +36,9 @@ Indice operativo del wiki Xot (core framework).
 
 ## Regole collegate
 
+- [ai-harness-xot-discipline.md](./concepts/ai-harness-xot-discipline.md) — harness agenti (canon moduli)
+- [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
 - [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
 - [laraxot-core](../../../../docs/wiki/concepts/laraxot-core.md): Core XotBase classes rules.
@@ -28,6 +52,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
+| [filament-widgets-domain-folder-naming](./concepts/filament-widgets-domain-folder-naming.md) | Concept | Widget: `Widgets\{Domain}\{Role}Widget` (mai `TicketViewWidget`) | 2026-06-03 |
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |
@@ -37,6 +62,7 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
 | [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
 | [laravel13-modular-package-compatibility-matrix](./concepts/laravel13-modular-package-compatibility-matrix.md) | Concept | Compatibilita' pacchetti modulo | 2026-04-28 |
+| [module-model-artifact-parity](./concepts/module-model-artifact-parity.md) | Concept | N modelli owner = N migrate + factory + seeder; audit cross-modulo | 2026-06-05 |
 
 ## Best Practices
 
