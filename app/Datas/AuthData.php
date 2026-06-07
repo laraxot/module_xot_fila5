@@ -12,13 +12,13 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
- * @param string $guard
- * @param array<string> $guards
+ * @param string                               $guard
+ * @param array<string>                        $guards
  * @param array<string, array<string, string>> $providers
- * @param bool $verifyEmail
- * @param int $passwordResetTimeout
- * @param array<string, bool|int|string> $throttle
- * @param array<string, bool> $social
+ * @param bool                                 $verifyEmail
+ * @param int                                  $passwordResetTimeout
+ * @param array<string, bool|int|string>       $throttle
+ * @param array<string, bool>                  $social
  */
 final class AuthData extends Data
 {
