@@ -1,5 +1,6 @@
 # Troubleshooting: Livewire 404 Error
 
+**Data**: 11 Novembre 2025
 **Errore**: `404 Not Found` su `/livewire/update`
 
 ## 🔍 Problema
@@ -18,21 +19,13 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 
 ```bash
 # Configurazione .env
-<<<<<<< .merge_file_RoEyv0
 APP_URL=http://healthcare_app.local
-=======
-APP_URL=http://ptvx.local
->>>>>>> .merge_file_VpEl3g
 
 # Browser accede a
 http://127.0.0.1:8000
 ```
 
-<<<<<<< .merge_file_RoEyv0
 **Risultato**: Livewire genera URL con `healthcare_app.local` ma browser invia richieste a `127.0.0.1:8000` → 404
-=======
-**Risultato**: Livewire genera URL con `ptvx.local` ma browser invia richieste a `127.0.0.1:8000` → 404
->>>>>>> .merge_file_VpEl3g
 
 ## ✅ Soluzioni
 
@@ -48,11 +41,7 @@ APP_URL=http://127.0.0.1:8000
 APP_URL=http://localhost:8000
 
 # Se accedi tramite dominio locale
-<<<<<<< .merge_file_RoEyv0
 APP_URL=http://healthcare_app.local
-=======
-APP_URL=http://ptvx.local
->>>>>>> .merge_file_VpEl3g
 ```
 
 **Dopo la modifica**:
@@ -64,34 +53,19 @@ php artisan optimize:clear
 
 ### Soluzione 2: Aggiungere Host al Sistema
 
-<<<<<<< .merge_file_RoEyv0
 Se vuoi usare `healthcare_app.local`, aggiungi al file hosts:
 
 **Linux/Mac**: `/etc/hosts`
 ```
 127.0.0.1 healthcare_app.local
-=======
-Se vuoi usare `ptvx.local`, aggiungi al file hosts:
-
-**Linux/Mac**: `/etc/hosts`
-```
-127.0.0.1 ptvx.local
->>>>>>> .merge_file_VpEl3g
 ```
 
 **Windows**: `C:\Windows\System32\drivers\etc\hosts`
 ```
-<<<<<<< .merge_file_RoEyv0
 127.0.0.1 healthcare_app.local
 ```
 
 Poi accedi tramite: `http://healthcare_app.local:8000`
-=======
-127.0.0.1 ptvx.local
-```
-
-Poi accedi tramite: `http://ptvx.local:8000`
->>>>>>> .merge_file_VpEl3g
 
 ### Soluzione 3: Trusted Proxies (Per Ambienti Complessi)
 
@@ -162,22 +136,14 @@ APP_URL=http://127.0.0.1:8000
 
 ```bash
 # .env per sviluppo con virtual host
-<<<<<<< .merge_file_RoEyv0
 APP_URL=http://healthcare_app.local
-=======
-APP_URL=http://ptvx.local
->>>>>>> .merge_file_VpEl3g
 ```
 
 ### Produzione
 
 ```bash
 # .env per produzione
-<<<<<<< .merge_file_RoEyv0
 APP_URL=https://healthcare_app.com
-=======
-APP_URL=https://ptvx.com
->>>>>>> .merge_file_VpEl3g
 ```
 
 ## 🔧 Comandi Rapidi Fix

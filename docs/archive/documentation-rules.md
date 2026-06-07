@@ -4,6 +4,7 @@ Questo documento serve come indice centrale per tutta la documentazione del prog
 
 ## Linee Guida Generali
 Le linee guida complete per la documentazione sono disponibili in:
+- [Linee Guida per la Documentazione](../../../Xot/project_docs/guidelines/documentation.md)
 - [Linee Guida per la Documentazione](../../../xot/project_docs/guidelines/documentation.md)
 
 ## Documentazione per Modulo
@@ -61,6 +62,58 @@ Le linee guida complete per la documentazione sono disponibili in:
 - [Changelog](../../../xot/project_docs/changelog/readme.md)
 - [Contributing](../../../xot/project_docs/contributing.md)
 - [Security](../../../xot/project_docs/security.md)
+- [Xot Module](../../../Xot/docs/README.md)
+- [UI Module](../../../UI/docs/README.md)
+- [CMS Module](../../../Cms/docs/README.md)
+
+### Business
+- [Patient Module](../../../Patient/docs/README.md)
+- [Dental Module](../../../Dental/docs/README.md)
+
+### Supporto
+- [Reporting Module](../../../Reporting/docs/README.md)
+- [User Module](../../../User/docs/README.md)
+
+## Documentazione Tecnica
+- [Architettura](../../../Xot/docs/architecture/README.md)
+- [API Documentation](../../../Xot/docs/api/README.md)
+- [Testing](../../../Xot/docs/testing/README.md)
+
+## Guide e Tutorial
+- [Guida all'Installazione](../../../Xot/docs/installation.md)
+- [Guida allo Sviluppo](../../../Xot/docs/development/README.md)
+- [Troubleshooting](../../../Xot/docs/troubleshooting/README.md)
+
+## Risorse Aggiuntive
+- [Changelog](../../../Xot/docs/changelog/README.md)
+- [Contributing](../../../Xot/docs/contributing.md)
+- [Security](../../../Xot/docs/security.md)
+- [Xot Module](../../../Xot/project_docs/README.md)
+- [UI Module](../../../UI/project_docs/README.md)
+- [CMS Module](../../../Cms/project_docs/README.md)
+
+### Business
+- [Patient Module](../../../Patient/project_docs/README.md)
+- [Dental Module](../../../Dental/project_docs/README.md)
+
+### Supporto
+- [Reporting Module](../../../Reporting/project_docs/README.md)
+- [User Module](../../../User/project_docs/README.md)
+
+## Documentazione Tecnica
+- [Architettura](../../../Xot/project_docs/architecture/README.md)
+- [API Documentation](../../../Xot/project_docs/api/README.md)
+- [Testing](../../../Xot/project_docs/testing/README.md)
+
+## Guide e Tutorial
+- [Guida all'Installazione](../../../Xot/project_docs/installation.md)
+- [Guida allo Sviluppo](../../../Xot/project_docs/development/README.md)
+- [Troubleshooting](../../../Xot/project_docs/troubleshooting/README.md)
+
+## Risorse Aggiuntive
+- [Changelog](../../../Xot/project_docs/changelog/README.md)
+- [Contributing](../../../Xot/project_docs/contributing.md)
+- [Security](../../../Xot/project_docs/security.md)
 # Regole di Documentazione
 
 ## Panoramica
@@ -73,6 +126,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+- [README](../README.md) - Panoramica del modulo Xot
+- [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
+- [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 
 ## Validazione dei Collegamenti
 
@@ -81,6 +138,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 ```
@@ -93,6 +152,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
 
 ### Checklist di Validazione
@@ -102,6 +165,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 
 ## Validazione dei Collegamenti
@@ -111,6 +175,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 ```
@@ -123,6 +189,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
 
 ### Checklist di Validazione
@@ -132,6 +202,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
+- [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 
 ## Validazione dei Collegamenti
@@ -141,6 +212,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 ```
@@ -153,6 +226,10 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento Correlato](../Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
 
 ### Checklist di Validazione

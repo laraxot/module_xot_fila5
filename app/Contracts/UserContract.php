@@ -30,6 +30,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @property string|null               $id
  * @property string|null               $email
+ * @property \Illuminate\Support\Carbon|null $email_verified_at
  * @property string|null               $first_name
  * @property string|null               $last_name
  * @property string|null               $full_name
@@ -74,8 +75,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Passport API tokens support.
      */
-    // @phpstan-ignore-next-line interface should extend this contract
-
     /**
      * Determine if the model has (one of) the given role(s).
      */

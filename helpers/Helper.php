@@ -402,3 +402,10 @@ if (! function_exists('trans_string')) {
         return is_string($result) ? $result : $key;
     }
 }
+
+if (! function_exists('isJson')) {
+    function isJson(string $string): bool
+    {
+        return json_validate($string);
+    }
+}

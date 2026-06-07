@@ -665,7 +665,8 @@ if ($modifiedContent === null || $modifiedContent === '') { ... }
 if (file_put_contents($file, $modifiedContent) === false) { ... }
 
 // Dopo:
-if (\Safeile_put_contents($file, $modifiedContent) <= 0) { ... }
+if (\Safe
+ile_put_contents($file, $modifiedContent) <= 0) { ... }
 ```
 
 Queste modifiche garantiscono che:
@@ -804,3 +805,5 @@ private function exportTablesToCSV(string $mdbFile): array
 - [Array Types Fixes](./phpstan-array-types-fixes.md)
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
+*Ultimo aggiornamento: 6 Gennaio 2025*
+*Ultimo aggiornamento: 6 Gennaio 2025*
