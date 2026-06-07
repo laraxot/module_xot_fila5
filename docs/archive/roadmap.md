@@ -243,6 +243,13 @@
 ### Collegamenti Interni
 - [Architettura](./structure.md)
 - [Best Practices](./best-practices.md)
+- [Roadmap Modulo User](../User/project_docs/roadmap.md)
+- [Roadmap Modulo Lang](../Lang/project_docs/roadmap.md)
+- [Roadmap Modulo UI](../UI/project_docs/roadmap.md)
+
+### Collegamenti Interni
+- [Architettura](./structure.md)
+- [Best Practices](./BEST-PRACTICES.md)
 - [Testing](./testing-best-practices.md)
 
 ## Prossimi Passi
@@ -419,6 +426,7 @@
 
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
+- [Best Practices](BEST-PRACTICES.md)
 - [Best Practices](best-practices.md)
 - [Testing](testing.md)
 
@@ -443,6 +451,20 @@
 * [roadmap.md](../../../patient/project_docs/roadmap.md)
 * [roadmap.md](../../../cms/project_docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/project_docs/roadmap.md)
+* [roadmap.md](../../../Gdpr/project_docs/roadmap.md)
+* [roadmap.md](../../../Notify/project_docs/roadmap.md)
+* [roadmap.md](../../../Xot/project_docs/roadmap.md)
+* [roadmap.md](../../../Dental/project_docs/roadmap.md)
+* [roadmap.md](../../../User/project_docs/roadmap.md)
+* [roadmap.md](../../../UI/project_docs/roadmap.md)
+* [roadmap.md](../../../Lang/project_docs/roadmap.md)
+* [roadmap.md](../../../Job/project_docs/roadmap.md)
+* [roadmap.md](../../../Media/project_docs/roadmap.md)
+* [roadmap.md](../../../Tenant/project_docs/roadmap.md)
+* [roadmap.md](../../../Activity/project_docs/roadmap.md)
+* [roadmap.md](../../../Patient/project_docs/roadmap.md)
+* [roadmap.md](../../../Cms/project_docs/roadmap.md)
+* [roadmap.md](../../../../Themes/One/project_docs/roadmap.md)
 
 ---
 

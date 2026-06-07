@@ -1,5 +1,6 @@
 # Documentation Cleanup & Reorganization - Action Plan
 
+**Date**: 2025-10-17
 **Date**: [DATE]
 **Status**: 🐮 SUPER MUCCA MODE ACTIVATED
 **Scope**: Complete documentation overhaul across all modules and themes
@@ -10,6 +11,7 @@
 - **2789 non-compliant .md files** (uppercase, dates, duplicates)
 - Multiple duplicate files with variations (file.md, file_backup.md, file-duplicate.md)
 - Inconsistent naming (kebab-case, snake_case, PascalCase mixed)
+- Date-suffixed files (dry-kiss-analysis-2025-10-15.md)
 - Date-suffixed files (dry-kiss-analysis-[DATE].md)
 - Outdated/obsolete documentation
 - Missing documentation for core features
@@ -21,6 +23,7 @@
 1. ✅ **kebab-case**: `model-architecture.md`
 2. ❌ **snake_case**: `model_architecture.md`
 3. ❌ **PascalCase**: `ModelArchitecture.md`
+4. ❌ **Dates**: `analysis-2025-10-15.md`
 4. ❌ **Dates**: `analysis-[DATE].md`
 5. ❌ **Duplicates**: `file-duplicate.md`, `file-backup.md`
 
@@ -54,7 +57,7 @@ For each module, create/update:
 2. **Rename files** - Apply kebab-case consistently
 3. **Remove dates** - Update content, remove date from filename
 4. **Consolidate** - Merge similar/overlapping docs
-5. **Archive obsolete** - Move to `docs/archive/` if needed
+5. **Archive obsolete** - Move to `docs/archived/` if needed
 
 ### Phase 5: Quality Assurance
 1. PHPStan level 10 on all modified code
@@ -73,11 +76,7 @@ Based on importance and interdependencies:
 3. **Tenant** - Multi-tenancy
 
 ### Tier 2 - Major Business Logic
-<<<<<<< .merge_file_AuvUpZ
 4. **healthcare_app** - Survey management (main application)
-=======
-4. **ModuloEsempio** - Survey management (main application)
->>>>>>> .merge_file_x1UrIb
 5. **Limesurvey** - Survey integration
 6. **Cms** - Content management
 7. **Notify** - Notifications (email/SMS)
@@ -150,7 +149,7 @@ done
 
 ## 📝 Notes
 
-- Keep `docs/archive/` for historical documentation
+- Keep `docs/archived/` for historical documentation
 - Document reasons for major architectural decisions
 - Include practical examples in all guides
 - Link related documentation between modules

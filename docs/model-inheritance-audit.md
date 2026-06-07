@@ -27,6 +27,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 #### User
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
 
 ---
@@ -147,10 +148,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< .merge_file_a0qsiM
 #### healthcare_app
-=======
-<<<<<<< HEAD
 #### ModuloEsempio
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
@@ -208,10 +206,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< .merge_file_a0qsiM
 - ❌ healthcare_app
-=======
-<<<<<<< HEAD
 - ❌ ModuloEsempio
 
 **Totale**: 4/13 moduli (31%)
@@ -228,11 +223,8 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< .merge_file_a0qsiM
 | healthcare_app | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | healthcare_app | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-<<<<<<< HEAD
 | ModuloEsempio | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | ModuloEsempio | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
@@ -250,10 +242,7 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< .merge_file_a0qsiM
 2. **healthcare_app** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-<<<<<<< HEAD
 2. **ModuloEsempio** - BaseModel e ContactSimple (modulo specifico del progetto)
 
 ### 🟡 Media Priorità
@@ -289,10 +278,7 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< .merge_file_a0qsiM
 3. ⏳ **healthcare_app** - Da correggere (BaseModel + ContactSimple)
-=======
-<<<<<<< HEAD
 3. ⏳ **ModuloEsempio** - Da correggere (BaseModel + ContactSimple)
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
@@ -315,10 +301,7 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< .merge_file_a0qsiM
 - `healthcare_app/BaseModel.php` - Implementa `HasMedia`
-=======
-<<<<<<< HEAD
 - `ModuloEsempio/BaseModel.php` - Implementa `HasMedia`
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
@@ -337,6 +320,10 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
+- [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
+- [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
+- [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+- [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
@@ -370,6 +357,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 #### User
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 - **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
 
 ---
@@ -490,10 +478,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< .merge_file_a0qsiM
 #### healthcare_app
-=======
-<<<<<<< HEAD
 #### ModuloEsempio
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
@@ -551,10 +536,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< .merge_file_a0qsiM
 - ❌ healthcare_app
-=======
-<<<<<<< HEAD
 - ❌ ModuloEsempio
 
 **Totale**: 4/13 moduli (31%)
@@ -571,11 +553,8 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< .merge_file_a0qsiM
 | healthcare_app | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | healthcare_app | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-<<<<<<< HEAD
 | ModuloEsempio | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | ModuloEsempio | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
@@ -593,10 +572,7 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< .merge_file_a0qsiM
 2. **healthcare_app** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-<<<<<<< HEAD
 2. **ModuloEsempio** - BaseModel e ContactSimple (modulo specifico del progetto)
 
 ### 🟡 Media Priorità
@@ -632,10 +608,7 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< .merge_file_a0qsiM
 3. ⏳ **healthcare_app** - Da correggere (BaseModel + ContactSimple)
-=======
-<<<<<<< HEAD
 3. ⏳ **ModuloEsempio** - Da correggere (BaseModel + ContactSimple)
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
@@ -658,10 +631,7 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< .merge_file_a0qsiM
 - `healthcare_app/BaseModel.php` - Implementa `HasMedia`
-=======
-<<<<<<< HEAD
 - `ModuloEsempio/BaseModel.php` - Implementa `HasMedia`
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
@@ -680,6 +650,10 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
+- [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
+- [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
+- [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+- [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)

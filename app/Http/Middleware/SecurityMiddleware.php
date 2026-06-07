@@ -32,7 +32,12 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-        $this->addSecurityHeaders($response);
+
+        // Skip security headers for Debugbar routes in local environment
+        // to allow Debugbar to function properly
+        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
+            $this->addSecurityHeaders($response);
+        }
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);

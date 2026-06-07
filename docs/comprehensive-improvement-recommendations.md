@@ -759,10 +759,7 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
-<<<<<<< .merge_file_kwG20C
             'healthcare_app' => 'healthcare_app',
-=======
-<<<<<<< HEAD
             'ExternalProject' => '<nome progetto>',
             'User' => 'user',
             'Notify' => 'notify',
@@ -846,10 +843,7 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
-<<<<<<< .merge_file_kwG20C
 // Modules/healthcare_app/Contracts/ChartRendererContract.php
-=======
-<<<<<<< HEAD
 // Modules/ExternalProject/Contracts/ChartRendererContract.php
 interface ChartRendererContract
 {
@@ -857,10 +851,7 @@ interface ChartRendererContract
     public function render(array $data, array $config): string;
 }
 
-<<<<<<< .merge_file_kwG20C
 // Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
-=======
-<<<<<<< HEAD
 // Modules/ExternalProject/Services/Chart/Renderers/PieChartRenderer.php
 class PieChartRenderer implements ChartRendererContract
 {
@@ -1027,10 +1018,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
-<<<<<<< .merge_file_kwG20C
 // Modules/healthcare_app/Services/BulkProcessingService.php
-=======
-<<<<<<< HEAD
 // Modules/ExternalProject/Services/BulkProcessingService.php
 class BulkProcessingService
 {

@@ -1,7 +1,4 @@
-<<<<<<< .merge_file_A577Ol
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
-=======
-<<<<<<< HEAD
 # Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing
@@ -13,10 +10,7 @@
 Tutti i prompt per generazione di codice, test, o modifiche devono includere queste regole fondamentali:
 
 ```
-<<<<<<< .merge_file_A577Ol
 Create/Update code for healthcare_app Fila5 Mono with these CRITICAL rules:
-=======
-<<<<<<< HEAD
 Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
 1. NEVER use SQLite for testing - ALWAYS MySQL with "_test" suffixed databases
 2. NEVER use RefreshDatabase trait - ALWAYS use DatabaseTransactions
@@ -31,10 +25,7 @@ Create/Update code for ExternalProject Fila5 Mono with these CRITICAL rules:
 
 ### Per Test Generation
 ```
-<<<<<<< .merge_file_A577Ol
 Create test for ProfileService in healthcare_app Fila5 Mono with these rules:
-=======
-<<<<<<< HEAD
 Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
 - Use DatabaseTransactions trait, NEVER RefreshDatabase
 - Test concurrent profile creation with first() + try/catch pattern
@@ -45,10 +36,7 @@ Create test for ProfileService in ExternalProject Fila5 Mono with these rules:
 
 ### Per Service Creation
 ```
-<<<<<<< .merge_file_A577Ol
 Create ProfileService for healthcare_app Fila5 Mono following these patterns:
-=======
-<<<<<<< HEAD
 Create ProfileService for ExternalProject Fila5 Mono following these patterns:
 - Use Spatie QueueableAction pattern, not static service classes
 - Implement getOrCreateProfile with race condition handling:
@@ -60,10 +48,7 @@ Create ProfileService for ExternalProject Fila5 Mono following these patterns:
 
 ### Per Filament Resources
 ```
-<<<<<<< .merge_file_A577Ol
 Create Filament resource extending XotBaseResource for healthcare_app Fila5 Mono:
-=======
-<<<<<<< HEAD
 Create Filament resource extending XotBaseResource for ExternalProject Fila5 Mono:
 - Extend XotBaseResource, never Filament Resource directly
 - Implement getFormSchema() returning array
@@ -94,12 +79,9 @@ Xot module base requirements:
 - PHPStan Level 10 compliance mandatory
 ```
 
-<<<<<<< .merge_file_A577Ol
 ### Modulo healthcare_app
 ```
 healthcare_app module specific requirements:
-=======
-<<<<<<< HEAD
 ### Modulo ExternalProject
 ```
 ExternalProject module specific requirements:

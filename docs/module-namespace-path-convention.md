@@ -1,3 +1,5 @@
+- [convenzioni di codice](docs/conventions.md)
+- [struttura progetto](docs/project-structure.md)
 ---
 module: theme
 topic: module-namespace-path-convention

@@ -2,6 +2,7 @@
 
 ## Problema Risolto
 
+**Data**: 26 Settembre 2025
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
 
 ## Causa Radice
@@ -73,6 +74,7 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
@@ -90,14 +92,17 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Problema Risolto
 
-<<<<<<< .merge_file_is5nTU
+**Data**: 26 Settembre 2025
+**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
+
+## Causa Radice
+
+Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: healthcare_app_data.customer_user`
 
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`healthcare_app_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
-=======
-<<<<<<< HEAD
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: modulo_data.customer_user`
 
 ## Causa Radice
@@ -140,10 +145,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - ✅ Multi-tenancy cross-database
 
 ### Moduli Affetti
-<<<<<<< .merge_file_is5nTU
 - **healthcare_app Module**: Customer-User relationships
-=======
-<<<<<<< HEAD
 - **Modulo con database separato**: Customer-User relationships
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
@@ -172,11 +174,9 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Riferimenti
 
-<<<<<<< .merge_file_is5nTU
+- [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 - [Customer User Fix Summary](../../healthcare_app/docs/customer_user_fix_summary.md)
-=======
-- [Customer User Fix Summary](../filament/relationx-sqlite-cross-database-fix.md)
->>>>>>> .merge_file_8r6DIJ
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 

@@ -22,7 +22,7 @@ class FieldRefreshAction extends Action
         $this->translateLabel();
         $this->icon('heroicon-o-arrow-path')
             ->label('')
-            ->tooltip(__('xot::field_refresh_action.tooltip.label'))
+            ->tooltip('Ricalcola valore')
             ->action(function ($record, Set $set): void {
                 $name = $this->getName();
                 if (null === $name) {

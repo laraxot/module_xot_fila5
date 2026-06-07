@@ -64,10 +64,7 @@ try {
 
 ## Module-Specific Considerations
 
-<<<<<<< .merge_file_LR0Vbe
 ### healthcare_app Module
-=======
-<<<<<<< HEAD
 ### ExternalProject Module
 - Optimize survey contact imports
 - Implement JSON payload persistence

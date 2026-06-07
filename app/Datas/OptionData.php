@@ -9,6 +9,8 @@ use Spatie\LaravelData\Data;
 /**
  * Class OptionData - Gestisce le opzioni di configurazione per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
+ *
+ * @phpstan-consistent-constructor
  */
 class OptionData extends Data
 {
@@ -31,8 +33,8 @@ class OptionData extends Data
     /**
      * Create a new instance of OptionData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

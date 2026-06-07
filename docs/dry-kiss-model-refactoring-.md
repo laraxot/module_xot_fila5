@@ -8,10 +8,7 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
-<<<<<<< .merge_file_iHlsSF
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
-=======
-<<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
@@ -19,14 +16,11 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 ## Problemi Identificati e Risolti
 
-<<<<<<< .merge_file_iHlsSF
 ### 1. ❌ healthcare_app\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
 ### 1. ❌ ModuloEsempio\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
@@ -45,11 +39,7 @@ abstract class BaseModel extends Model
 
     public $incrementing = true;
     public $timestamps = true;
-<<<<<<< .merge_file_iHlsSF
     protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_hFH7JJ
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -63,10 +53,7 @@ abstract class BaseModel extends Model
 
 **Dopo** (✅ DRY & KISS):
 ```php
-<<<<<<< .merge_file_iHlsSF
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
 
 use Modules\Xot\Models\XotBaseModel;
@@ -77,11 +64,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_iHlsSF
     protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_hFH7JJ
     protected $with = ['extra'];
 }
 ```
@@ -366,10 +349,7 @@ BaseModel → BaseModelLang → Post
 
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
-<<<<<<< .merge_file_iHlsSF
 | healthcare_app | BaseModel | 66 | 20 | -70% |
-=======
-<<<<<<< HEAD
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
@@ -510,6 +490,9 @@ grep -h "class Base.*Model extends" Modules/*/app/Models/Base*.php | sort | uniq
 
 ## Link Correlati
 
+- [User Module Model Inheritance Rules](../../User/docs/model-inheritance-rules.md)
+- [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
+- [Geo Model Inheritance Pattern](../../Geo/docs/model-inheritance-pattern.md)
 - [User Module Model Inheritance Rules](../../user/docs/model-inheritance-rules.md)
 - [CLAUDE.md - Eloquent Models Section](../../../CLAUDE.md#eloquent-models)
 - [Geo Model Inheritance Pattern](../../geo/docs/model-inheritance-pattern.md)

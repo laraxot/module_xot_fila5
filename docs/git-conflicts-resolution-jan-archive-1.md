@@ -1,6 +1,7 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
+## Data: [DATE]
 
 ## Contesto
 Sono stati identificati e risolti conflitti Git in diversi file del progetto <nome progetto>, coinvolgendo moduli Geo, User e tema Two.
@@ -132,7 +133,14 @@ php artisan lang:check
 - [Theme Translation Conflicts](laravel/Modules/User/docs/theme-translation-conflicts-resolution.md)
 
 ### Modulo Xot
-- [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution.md)
+- [Git Conflicts Resolution](laravel/modules/xot/docs/git-conflicts-resolution-[date].md)
+- [Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
+
+### Modulo User
+- [Theme Translation Conflicts](laravel/Modules/User/docs/theme-translation-conflicts-resolution.md)
+
+### Modulo Xot
+- [Git Conflicts Resolution](laravel/Modules/Xot/docs/git-conflicts-resolution-2025-01-06.md)
 
 ## Best Practices Applicate
 
@@ -189,6 +197,17 @@ php artisan lang:check
 ### Documentazione Moduli
 - [Geo Conflict Resolution](laravel/Modules/Geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/docs/theme-translation-conflicts-resolution.md)
+
+### Documentazione Generale
+- [Translation Standards](../../docs/translation-standards.md)
+- [PHPStan Guidelines](../../docs/phpstan_usage.md)
+- [Git Best Practices](../../docs/git-best-practices.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+- [Geo Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
+- [User Theme Conflicts](laravel/modules/user/docs/theme-translation-conflicts-resolution.md)
 
 ### Documentazione Generale
 - [Translation Standards](../../docs/translation-standards.md)

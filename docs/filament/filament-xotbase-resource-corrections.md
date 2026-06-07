@@ -1,3 +1,7 @@
+*Ultimo aggiornamento: 2025-08-04*
+*Modulo: Xot*
+*Categoria: Filament*
+*Status: ✅ Correzioni Implementate*
 ---
 module: theme
 topic: filament-xotbase-resource-corrections

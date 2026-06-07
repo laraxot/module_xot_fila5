@@ -41,7 +41,7 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
     public function infolist(Schema $schema): Schema
     {
         $record = $this->getInfolistRecord();
-        if (null !== $record) {
+        if ($record !== null) {
             $schema->record($record);
         }
 

@@ -68,10 +68,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-<<<<<<< .merge_file_VsGTK8
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
-=======
-<<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
 
 **Errori PHPStan Level 10**:
@@ -110,10 +107,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-<<<<<<< .merge_file_VsGTK8
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
-<<<<<<< HEAD
 | ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
@@ -157,10 +151,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-<<<<<<< .merge_file_VsGTK8
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
-<<<<<<< HEAD
 - ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - Altri moduli: ~51 file
 
@@ -301,10 +292,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-<<<<<<< .merge_file_VsGTK8
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
-=======
-<<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php`
 **Righe**: 809 (!!!)
 **Metodi**: 40+
@@ -366,10 +354,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-<<<<<<< .merge_file_VsGTK8
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
-=======
-<<<<<<< HEAD
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
 **Righe**: 882 (!)
 
@@ -452,20 +437,14 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-<<<<<<< .merge_file_VsGTK8
 - **healthcare_app**: 5 modelli
-=======
-<<<<<<< HEAD
 - **ModuloEsempio**: 5 modelli
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-<<<<<<< .merge_file_VsGTK8
 cd Modules/healthcare_app/app/Models
-=======
-<<<<<<< HEAD
 cd Modules/ModuloEsempio/app/Models
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
@@ -485,10 +464,7 @@ done
 
 **Comando**:
 ```bash
-<<<<<<< .merge_file_VsGTK8
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
-=======
-<<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
 ```
 
@@ -901,20 +877,14 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-<<<<<<< .merge_file_VsGTK8
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
-=======
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-<<<<<<< .merge_file_VsGTK8
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
-<<<<<<< HEAD
 - ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
 
 ### Manual Code Review
@@ -976,6 +946,8 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 ## Related Documentation
 
 - [DRY/KISS Model Refactoring (2025-10-15)](./dry-kiss-model-refactoring-2025-10-15.md)
+- [Model Inheritance Rules (User Module)](../../User/docs/model-inheritance-rules.md)
+- [Model Usage in Themes](../../../Themes/Zero/docs/model-usage-in-themes.md)
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)

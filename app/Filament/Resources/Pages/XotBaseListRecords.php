@@ -65,8 +65,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
      * @return array<string, Action|ActionGroup>
-     *
-     * @phpstan-ignore method.childReturnType
      */
     protected function getHeaderActions(): array
     {
@@ -78,7 +76,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Paginate the table query.
      */
-    protected function paginateTableQuery(Builder $query): Paginator
+    protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
         $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);

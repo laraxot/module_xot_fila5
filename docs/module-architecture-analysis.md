@@ -36,10 +36,7 @@
 - Multi-tenant aware models
 - Social authentication integration
 
-<<<<<<< .merge_file_CPFULP
 #### 3. **healthcare_app Module - Business Core**
-=======
-<<<<<<< HEAD
 #### 3. **ExternalProject Module - Business Core**
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
@@ -232,10 +229,7 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
-<<<<<<< .merge_file_CPFULP
 **Dependencies**: Xot, healthcare_app
-=======
-<<<<<<< HEAD
 **Dependencies**: Xot, ExternalProject
 
 **Key Components**:
@@ -284,10 +278,7 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
-<<<<<<< .merge_file_CPFULP
 ├── healthcare_app (Business Core)
-=======
-<<<<<<< HEAD
 ├── ExternalProject (Business Core)
 │   ├── Geo (Locations)
 │   ├── Media (Files)
@@ -397,10 +388,7 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
-<<<<<<< .merge_file_CPFULP
 - **healthcare_app**: Missing module.json description
-=======
-<<<<<<< HEAD
 - **ExternalProject**: Missing module.json description
 
 #### 🔧 Technical Debt
@@ -412,10 +400,7 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
-<<<<<<< .merge_file_CPFULP
 - **healthcare_app**: Survey processing and reporting
-=======
-<<<<<<< HEAD
 - **ExternalProject**: Survey processing and reporting
 - **Media**: File uploads and conversions
 - **Job**: Background processing
@@ -447,6 +432,7 @@ public function register(): void
 
 ---
 
+**Analysis Date**: 2025-11-17
 **Analysis Date**: [DATE]
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules

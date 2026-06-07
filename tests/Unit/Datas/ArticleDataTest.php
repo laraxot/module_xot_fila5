@@ -5,22 +5,22 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Datas;
 
 use Modules\Xot\Datas\ArticleData;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\TestCase;
 
-uses(TestCase::class);
-
-describe('Article Data', function (): void {
-    test('can create article data with defaults', function (): void {
+class ArticleDataTest extends TestCase
+{
+    public function testCanCreateArticleDataWithDefaults(): void
+    {
         $data = ArticleData::make();
 
-        Assert::assertInstanceOf(ArticleData::class, $data);
-        Assert::assertEquals(['post', 'page', 'news'], $data->types);
-        Assert::assertEquals([], $data->categories);
-        Assert::assertEquals('markdown', $data->editor);
-    });
+        $this->assertInstanceOf(ArticleData::class, $data);
+        $this->assertEquals(['post', 'page', 'news'], $data->types);
+        $this->assertEquals([], $data->categories);
+        $this->assertEquals('markdown', $data->editor);
+    }
 
-    test('can create article data with custom values', function (): void {
+    public function testCanCreateArticleDataWithCustomValues(): void
+    {
         $data = new ArticleData(
             types: ['blog', 'article'],
             categories: ['tech', 'news'],
@@ -29,9 +29,9 @@ describe('Article Data', function (): void {
             features: ['enable_comments' => false],
         );
 
-        Assert::assertEquals(['blog', 'article'], $data->types);
-        Assert::assertEquals(['tech', 'news'], $data->categories);
-        Assert::assertEquals('wysiwyg', $data->editor);
-        Assert::assertFalse($data->features['enable_comments']);
-    });
-});
+        $this->assertEquals(['blog', 'article'], $data->types);
+        $this->assertEquals(['tech', 'news'], $data->categories);
+        $this->assertEquals('wysiwyg', $data->editor);
+        $this->assertFalse($data->features['enable_comments']);
+    }
+}

@@ -1,5 +1,6 @@
 # Model Architecture - Guida Completa
 
+**Data**: 2025-10-16
 **Modulo**: Xot (Base Module)
 **Autore**: Claude Code Analysis
 
@@ -65,10 +66,7 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ Livello 3: Concrete Models                                 │
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
-<<<<<<< .merge_file_wLxo3j
 │ - Modules/healthcare_app/Models/Contact                            │
-=======
-<<<<<<< HEAD
 │ - Modules/ModuloEsempio/Models/Contact                            │
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
@@ -194,10 +192,7 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 
 **Scopo**:
 - Definire la connection specifica del modulo
-<<<<<<< .merge_file_wLxo3j
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
-=======
-<<<<<<< HEAD
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
@@ -239,10 +234,7 @@ class Tenant extends BaseModel
 
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
-<<<<<<< .merge_file_wLxo3j
 - `Modules/healthcare_app/Models/Contact.php`
-=======
-<<<<<<< HEAD
 - `Modules/ModuloEsempio/Models/Contact.php`
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
@@ -359,10 +351,8 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
-<<<<<<< .merge_file_wLxo3j
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
-=======
-<<<<<<< HEAD
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
@@ -563,13 +553,10 @@ class ModelHasRole extends BaseMorphPivot
 }
 ```
 
-<<<<<<< .merge_file_wLxo3j
 ### Esempio 4: BaseModel con Traits Specifici (healthcare_app Module)
 
 ```php
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
 ### Esempio 4: BaseModel con Traits Specifici (ModuloEsempio Module)
 
 ```php
@@ -583,10 +570,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
-<<<<<<< .merge_file_wLxo3j
  * Base Model per healthcare_app module.
-=======
-<<<<<<< HEAD
  * Base Model per ModuloEsempio module.
  *
  * Aggiunge supporto per:
@@ -600,11 +584,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_wLxo3j
     protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_flnzoR
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -614,10 +594,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 Poi i modelli concreti ereditano tutto:
 
 ```php
-<<<<<<< .merge_file_wLxo3j
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
 
 class Contact extends BaseModel
@@ -678,10 +655,7 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
-<<<<<<< .merge_file_wLxo3j
 // Modules/healthcare_app/Models/BaseModel.php
-=======
-<<<<<<< HEAD
 // Modules/ModuloEsempio/Models/BaseModel.php
 use InteractsWithMedia;
 use HasExtraTrait;
@@ -813,6 +787,8 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 
@@ -841,6 +817,7 @@ A: Estendi comunque BaseModel, ma usa `setTable()` nel costruttore o in metodi f
 **Prossimo aggiornamento**: Dopo implementazione auto-discovery in XotBaseModel
 # Model Architecture - Guida Completa
 
+**Data**: 2025-10-16
 **Modulo**: Xot (Base Module)
 **Autore**: Claude Code Analysis
 
@@ -906,10 +883,7 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ Livello 3: Concrete Models                                 │
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
-<<<<<<< .merge_file_wLxo3j
 │ - Modules/healthcare_app/Models/Contact                            │
-=======
-<<<<<<< HEAD
 │ - Modules/ModuloEsempio/Models/Contact                            │
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
@@ -1035,10 +1009,7 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 
 **Scopo**:
 - Definire la connection specifica del modulo
-<<<<<<< .merge_file_wLxo3j
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
-=======
-<<<<<<< HEAD
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
@@ -1080,10 +1051,7 @@ class Tenant extends BaseModel
 
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
-<<<<<<< .merge_file_wLxo3j
 - `Modules/healthcare_app/Models/Contact.php`
-=======
-<<<<<<< HEAD
 - `Modules/ModuloEsempio/Models/Contact.php`
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
@@ -1200,10 +1168,8 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
-<<<<<<< .merge_file_wLxo3j
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
-=======
-<<<<<<< HEAD
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
@@ -1404,13 +1370,10 @@ class ModelHasRole extends BaseMorphPivot
 }
 ```
 
-<<<<<<< .merge_file_wLxo3j
 ### Esempio 4: BaseModel con Traits Specifici (healthcare_app Module)
 
 ```php
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
 ### Esempio 4: BaseModel con Traits Specifici (ModuloEsempio Module)
 
 ```php
@@ -1424,10 +1387,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
-<<<<<<< .merge_file_wLxo3j
  * Base Model per healthcare_app module.
-=======
-<<<<<<< HEAD
  * Base Model per ModuloEsempio module.
  *
  * Aggiunge supporto per:
@@ -1441,11 +1401,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< .merge_file_wLxo3j
     protected $connection = 'healthcare_app';
-=======
-    protected $connection = 'modulo_esempio';
->>>>>>> .merge_file_flnzoR
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -1455,10 +1411,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 Poi i modelli concreti ereditano tutto:
 
 ```php
-<<<<<<< .merge_file_wLxo3j
 namespace Modules\healthcare_app\Models;
-=======
-<<<<<<< HEAD
 namespace Modules\ModuloEsempio\Models;
 
 class Contact extends BaseModel
@@ -1519,10 +1472,7 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
-<<<<<<< .merge_file_wLxo3j
 // Modules/healthcare_app/Models/BaseModel.php
-=======
-<<<<<<< HEAD
 // Modules/ModuloEsempio/Models/BaseModel.php
 use InteractsWithMedia;
 use HasExtraTrait;
@@ -1654,6 +1604,8 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 

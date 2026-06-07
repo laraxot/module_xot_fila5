@@ -9,6 +9,8 @@ use Spatie\LaravelData\Data;
 /**
  * Class NotificationData - Gestisce la configurazione delle notifiche per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
+ *
+ * @phpstan-consistent-constructor
  */
 class NotificationData extends Data
 {
@@ -55,8 +57,8 @@ class NotificationData extends Data
     /**
      * Create a new instance of NotificationData with default values.
      */
-    public static function make(): static
+    public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

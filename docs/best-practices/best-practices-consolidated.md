@@ -1,3 +1,6 @@
+*Ultimo aggiornamento: 2025-08-04*
+*Modulo: Xot*
+*Categoria: Best Practices*
 ---
 module: theme
 topic: best-practices-consolidated

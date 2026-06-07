@@ -167,10 +167,7 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
-<<<<<<< .merge_file_mXG7e7
 └── healthcare_app/
-=======
-<<<<<<< HEAD
 └── ExternalProject/
     ├── database/
     │   ├── factories/

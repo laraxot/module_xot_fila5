@@ -14,6 +14,7 @@ use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
+use Modules\Xot\Support\PaDesignColors;
 
 use function Safe\file_get_contents;
 
@@ -140,7 +141,7 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('metatag');
+            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
             $data['description'] = TenantService::trans('metatag.description');
             self::$instance = self::from($data);
         }
@@ -395,18 +396,11 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-     * @return array<string, array<int, string>>
+     * @return array<string, array<int, string>|string>
      */
     public function getFilamentColors(): array
     {
-        return [
-            'danger' => Color::Red,
-            'gray' => Color::Zinc,
-            'info' => Color::Blue,
-            'primary' => Color::Amber,
-            'success' => Color::Green,
-            'warning' => Color::Amber,
-        ];
+        return PaDesignColors::filamentPalette();
     }
 
     /**
@@ -419,6 +413,19 @@ class MetatagData extends Data implements Wireable
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
+        $normalizedFilamentColors = [];
+
+        foreach ($filamentColors as $key => $value) {
+            if (is_array($value)) {
+                $normalizedFilamentColors[$key] = array_values(array_map(
+                    static fn (mixed $color): string => (string) $color,
+                    $value,
+                ));
+                continue;
+            }
+
+            $normalizedFilamentColors[$key] = [(string) $value];
+        }
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
@@ -429,7 +436,7 @@ class MetatagData extends Data implements Wireable
             }
         }
 
-        return array_merge($filamentColors, $customColors);
+        return array_merge($normalizedFilamentColors, $customColors);
     }
 
     /**

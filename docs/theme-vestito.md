@@ -52,10 +52,7 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
-<<<<<<< .merge_file_F5Y95F
 ├── _healthcare_app_fila5_mono.code-workspace
-=======
-<<<<<<< HEAD
 ├── _app_fila5_mono.code-workspace
 ├── package.json
 ├── postcss.config.js

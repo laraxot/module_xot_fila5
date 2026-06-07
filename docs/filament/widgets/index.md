@@ -1,18 +1,4 @@
-# Filament Widgets
-
-## Panoramica
-
-Questa sezione documenta l'implementazione e l'utilizzo dei widget Filament nel progetto. I widget forniscono componenti riutilizzabili per dashboard e interfacce amministrative.
-
-## Struttura
-
-Il sistema di widget è organizzato attorno a classi base che forniscono funzionalità comuni e standardizzano l'implementazione.
-
-## Widget Disponibili
-
-### Widget Base
-
-- [XotBaseWidget](../xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
+- [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
 
 ## Best Practices
 
@@ -29,6 +15,63 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 class DashboardStatsWidget extends XotBaseWidget
 {
     protected static string $view = 'dashboard::widgets.stats';
+
+    protected function getData(): array
+    {
+        return [
+            'totalUsers' => User::count(),
+            'activeUsers' => User::where('active', true)->count(),
+        ];
+    }
+}
+```
+# Wizard Widget Documentation — Indice Completo
+
+**Status**: Active  
+**Created**: 2026-04-14  
+**Last Updated**: 2026-04-14  
+**Category**: Architecture / Documentation Index  
+**Audience**: All developers
+
+---
+
+## Panoramica
+
+Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ricerca rapida e prevenzione duplicati.
+
+---
+
+## Documenti Principali (Canonici)
+
+### 📚 Xot Module (Base Class)
+
+| Documento | Scopo | Quando Leggere |
+|---|---|---|
+| [wizard-widget-rules.md](./wizard-widget-rules.md) | **I 10 Comandamenti** - regole pratiche da seguire SEMPRE | Prima di scrivere qualsiasi wizard widget |
+| [xot-base-wizard-widget-philosophy.md](./xot-base-wizard-widget-philosophy.md) | **Filosofia Completa** - perché, visione, religione, zen | Per capire il "perché" profondo |
+| [widget-method-architecture.md](./widget-method-architecture.md) | **Anti-Pattern: Metodi Privati Inutili** - quando separare/inline | Prima di creare metodi privati |
+| [override-pattern-philosophy.md](./override-pattern-philosophy.md) | **Anti-Pattern: Hook Inutili** - quando usare override diretto | Prima di creare hook protected |
+| [infolists-for-summary.md](./infolists-for-summary.md) | **Infolists per Riepilogo** - summary strutturato vs prime content | Quando creare step di riepilogo |
+| [submit-button-placement.md](./submit-button-placement.md) | **Submit Button nella Base** - Protocollo vs Contenuto | Per capire dove mettere getWizardSubmitAction() |
+| [no-label-placeholder-religion.md](./no-label-placeholder-religion.md) | **RELIGIONE: NO Label/Placeholder** - MAI usarli | **PRIMA DI SCRIVERE qualsiasi componente Filament** |
+| [xot-base-wizard-widget.md](./xot-base-wizard-widget.md) | **Reference Tecnico** - metodi, hook, signature | Per consultazione rapida |
+
+---
+
+### 📚 Fixcity Module (Example Implementation)
+
+| Documento | Scopo | Quando Leggere |
+|---|---|---|
+| [filament-wizard-pattern.md](../../../Fixcity/docs/filament-wizard-pattern.md) | Pattern implementativo con esempi | Per vedere codice reale |
+| [filament-wizard-rule.md](../../../Fixcity/docs/filament-wizard-rule.md) | Regole specifiche Fixcity | Per module-specific conventions |
+| [CreateTicketWizardWidget.md](../../../Fixcity/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
+| [ticket-wizard-frontoffice.md](../../../Fixcity/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
+
+---
+
+## Ricerca Rapida per Argomento
+
+### 🔴 URGENTE: Devo Usare ->label() o ->placeholder()?
 
 **ASSOLUTAMENTE NO!** → Leggi: [no-label-placeholder-religion.md](./no-label-placeholder-religion.md)  
 **Regola**: LangServiceProvider li applica automaticamente. MAI usarli espliciti.  

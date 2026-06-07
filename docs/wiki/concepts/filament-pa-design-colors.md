@@ -10,8 +10,8 @@ Un solo SSoT per i colori Filament su **backoffice** e **widget FO** (login, wiz
 |-------|--------|
 | `Modules\Xot\Support\PaDesignColors` | `PRIMARY_HEX` `#007A52`, `INSTITUTIONAL_BLUE_HEX` `#0066CC`, `filamentPalette()` |
 | `MetatagData::getFilamentColors()` | Delega a `PaDesignColors::filamentPalette()` |
-| `ApplyMetatagToPanelAction` | `->colors($metatag->getFilamentColors())` su ogni `XotBasePanelProvider` |
-| `FrontPanelProvider` (Cms) | Stessa palette via `MetatagData::make()->getFilamentColors()` |
+| `ApplyMetatagToPanelAction` | `->colors($metatag->getAllColors())` su ogni `XotBasePanelProvider` |
+| `FrontPanelProvider` (Cms) | Stessa palette via `MetatagData::make()->getAllColors()` |
 | `XotServiceProvider::registerPaFilamentColors()` | `FilamentColor::register(PaDesignColors::filamentPalette())` — widget FO senza panel (login, wizard) |
 
 ## Palette Filament

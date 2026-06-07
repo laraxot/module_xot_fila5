@@ -28,7 +28,6 @@ abstract class XotBaseState implements StateContract
 
     public static function getName(): string
     {
-        /* @phpstan-ignore-next-line */
         return static::$name ?? Str::of(class_basename(static::class))->snake()->toString();
     }
 

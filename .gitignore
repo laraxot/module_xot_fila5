@@ -123,6 +123,8 @@ Thumbs.db
 # ==============================================
 docs/phpstan/
 docs/cache/
+docs/archive/
+docs/archive/**
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
@@ -170,4 +172,3 @@ _docs/
 *.orig
 *.rej
 *~head
-
