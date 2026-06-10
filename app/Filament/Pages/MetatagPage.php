@@ -15,7 +15,6 @@ use Filament\Support\Colors\Color;
 use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Webmozart\Assert\Assert;
 
 /**
  * @property Schema $form
@@ -93,7 +92,7 @@ class MetatagPage extends XotBasePage
             ->send();
     }
 
-    /** @return list<\Filament\Actions\Action> */
+    /** @return list<Action> */
     protected function getFormActions(): array
     {
         return [

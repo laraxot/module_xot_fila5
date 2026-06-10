@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Support;
 
-use Closure;
 use Modules\Xot\Contracts\PdfBuilderContract;
 use Webmozart\Assert\Assert;
 
@@ -36,7 +35,7 @@ final class PdfBuilderAdapter implements PdfBuilderContract
         return $this;
     }
 
-    public function withBrowsershot(Closure $callback): PdfBuilderContract
+    public function withBrowsershot(\Closure $callback): PdfBuilderContract
     {
         $this->builder = $this->callBuilderMethod('withBrowsershot', [$callback]);
 

@@ -9,7 +9,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 
@@ -29,22 +28,22 @@ use Illuminate\Support\Carbon;
  * @property Pivot|null  $pivot
  * @property string      $tennant_name
  *
- * @method string    getRouteKey()
- * @method string    getRouteKeyName()
- * @method string    getTable()
- * @method mixed     with(array<string, mixed> $array)
- * @method list<string> getFillable()
- * @method mixed     fill(array<string, mixed> $array)
- * @method mixed     getConnection()
- * @method mixed     update(array<string, mixed> $params)
- * @method mixed     delete()
- * @method mixed     detach(mixed $params)
- * @method mixed     attach(mixed $params)
- * @method array<string, mixed> treeLabel()
- * @method array<string, mixed> treeSons()
- * @method array<string, mixed> toArray()
+ * @method string                                                          getRouteKey()
+ * @method string                                                          getRouteKeyName()
+ * @method string                                                          getTable()
+ * @method mixed                                                           with(array<string, mixed> $array)
+ * @method list<string>                                                    getFillable()
+ * @method mixed                                                           fill(array<string, mixed> $array)
+ * @method mixed                                                           getConnection()
+ * @method mixed                                                           update(array<string, mixed> $params)
+ * @method mixed                                                           delete()
+ * @method mixed                                                           detach(mixed $params)
+ * @method mixed                                                           attach(mixed $params)
+ * @method array<string, mixed>                                            treeLabel()
+ * @method array<string, mixed>                                            treeSons()
+ * @method array<string, mixed>                                            toArray()
  * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
- * @method mixed     getAttributeValue(string $key)
+ * @method mixed                                                           getAttributeValue(string $key)
  *
  * @phpstan-require-extends Model
  *

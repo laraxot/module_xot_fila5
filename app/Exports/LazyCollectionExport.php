@@ -8,7 +8,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
-use Iterator;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromIterator;
 use Maatwebsite\Excel\Concerns\WithHeadings;
@@ -113,9 +112,9 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
     }
 
     /**
-     * @return Iterator<int, mixed>
+     * @return \Iterator<int, mixed>
      */
-    public function iterator(): Iterator
+    public function iterator(): \Iterator
     {
         return new \ArrayIterator(iterator_to_array($this->collection->getIterator(), false));
     }
