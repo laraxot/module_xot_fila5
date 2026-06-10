@@ -151,23 +151,6 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         return array_merge($fields, $attributes);
     }
 
-    /**
-     * @param array<mixed> $values
-     *
-     * @return array<string, mixed>
-     */
-    private static function normalizeFormFill(array $values): array
-    {
-        $normalized = [];
-        foreach ($values as $key => $value) {
-            if (is_string($key)) {
-                $normalized[$key] = $value;
-            }
-        }
-
-        return $normalized;
-    }
-
     public function mount(): void
     {
         $this->form->fill([]);

@@ -171,6 +171,7 @@ abstract class XotBaseState implements StateContract
         return false;
     }
 
+    /** @return array<string, mixed> */
     public static function getOptions(): array
     {
         if (! method_exists(static::class, 'getStateMapping')) {
@@ -188,6 +189,8 @@ abstract class XotBaseState implements StateContract
             static::class,
             'states.'.(is_string($state) ? $state : (string) $state).'.label',
         ));
+
+        /** @var array<string, mixed> $states */
 
         return $states;
     }
