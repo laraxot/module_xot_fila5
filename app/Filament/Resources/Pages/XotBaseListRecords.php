@@ -75,6 +75,10 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * Paginate the table query.
+     *
+     * @param Builder<\Illuminate\Database\Eloquent\Model> $query
+     *
+     * @return Paginator<int, \Illuminate\Database\Eloquent\Model>
      */
     protected function paginateTableQueryOLD(Builder $query): Paginator
     {

@@ -98,6 +98,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return $schema;
     }
 
+    /** @return array<string, mixed> */
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
@@ -124,13 +125,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
                         return $value;
                     });
-                    $res = $merge1;
+                    $res = [];
+                    foreach ($merge1 as $key => $value) {
+                        $res[(string) $key] = $value;
+                    }
                 }
 
-                return $res;
+                return self::normalizeFormFill($res);
             } catch (\Exception $e) {
                 // Se toArray() fallisce (problemi con enum), usa getAttributes()
-                return $model->getAttributes();
+                return self::normalizeFormFill($model->getAttributes());
             }
         }
 
@@ -148,7 +152,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
             $fields = array_merge($fields, $defaults);
         }
 
-        return $fields;
+        return self::normalizeFormFill($fields);
     }
 
     /**
@@ -236,5 +240,20 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                 throw $e;
             }
         }
+    }
+
+    /**
+     * @param array<int|string, mixed> $data
+     *
+     * @return array<string, mixed>
+     */
+    protected static function normalizeFormFill(array $data): array
+    {
+        $normalized = [];
+        foreach ($data as $key => $value) {
+            $normalized[(string) $key] = $value;
+        }
+
+        return $normalized;
     }
 }

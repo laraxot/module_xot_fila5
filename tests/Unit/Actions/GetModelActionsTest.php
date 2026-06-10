@@ -67,40 +67,6 @@ it('throws when model id is provided but record is missing', function (): void {
 
 it('returns snake model type from model contract instance', function (): void {
     $model = new class extends Model implements ModelContract {
-        public function withoutRelations()
-        {
-            return $this;
-        }
-
-        public function forceFill(array $attributes)
-        {
-            parent::forceFill($attributes);
-
-            return $this;
-        }
-
-        public function save(array $options = [])
-        {
-            return true;
-        }
-
-        public function toArray()
-        {
-            return [];
-        }
-
-        public function getKey()
-        {
-        }
-
-        public function getRelationValue($key)
-        {
-        }
-
-        public function newInstance($attributes = [], $exists = false)
-        {
-            return parent::newInstance($attributes, $exists);
-        }
     };
 
     $result = app(GetModelTypeByModelAction::class)->execute($model);

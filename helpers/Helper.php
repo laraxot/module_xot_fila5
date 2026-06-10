@@ -133,6 +133,7 @@ if (! function_exists('dddx')) {
 }
 
 if (! function_exists('getFilename')) {
+    /** @param array<string, mixed> $params */
     function getFilename(array $params): string
     {
         $tmp = debug_backtrace();
@@ -152,6 +153,7 @@ if (! function_exists('req_uri')) {
 }
 
 if (! function_exists('in_admin')) {
+    /** @param array<string, mixed> $params */
     function in_admin(array $params = []): bool
     {
         return inAdmin($params);
@@ -159,6 +161,7 @@ if (! function_exists('in_admin')) {
 }
 
 if (! function_exists('inAdmin')) {
+    /** @param array<string, mixed> $params */
     function inAdmin(array $params = []): bool
     {
         if (isset($params['in_admin'])) {
@@ -267,6 +270,7 @@ if (! function_exists('params2ContainerItem')) {
 }
 
 if (! function_exists('getModelFields')) {
+    /** @return array<int, string> */
     function getModelFields(Model $model): array
     {
         return $model->getConnection()->getSchemaBuilder()->getColumnListing($model->getTable());
@@ -345,9 +349,17 @@ if (! function_exists('getModuleNameFromModelName')) {
 }
 
 if (! function_exists('getAllModules')) {
+    /** @return array<string, mixed> */
     function getAllModules(): array
     {
-        return Module::all();
+        $modules = Module::all();
+        $normalized = [];
+
+        foreach ($modules as $name => $module) {
+            $normalized[(string) $name] = $module;
+        }
+
+        return $normalized;
     }
 }
 
@@ -386,6 +398,7 @@ if (! function_exists('authId')) {
 }
 
 if (! function_exists('trans_string')) {
+    /** @param array<string, mixed> $replace */
     function trans_string(string $key, array $replace = [], ?string $locale = null): string
     {
         $safeReplace = [];

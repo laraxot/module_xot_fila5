@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+use Webmozart\Assert\Assert;
 
+/** @template-covariant TFactory of Factory */
 trait HasXotFactory
 {
+    /** @use EloquentHasFactory<TFactory> */
     use EloquentHasFactory {
         newFactory as parentNewFactory;
     }
@@ -17,10 +21,22 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
-     * @return Factory<static>
+     * @return Factory<covariant Model>
      */
     protected static function newFactory(): Factory
     {
-        return app(GetFactoryAction::class)->execute(static::class);
+        $action = app(GetFactoryAction::class);
+        $factoryClass = $action->getFactoryClass(static::class);
+
+        if (! class_exists($factoryClass)) {
+            $action->createFactory(static::class);
+            Assert::classExists($factoryClass);
+        }
+
+        $factory = $factoryClass::new();
+
+        Assert::isInstanceOf($factory, Factory::class);
+
+        return $factory;
     }
 }

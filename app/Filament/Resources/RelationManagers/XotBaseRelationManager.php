@@ -90,6 +90,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $schema->components($components);
     }
 
+    /** @return array<int|string, \Filament\Schemas\Components\Component> */
     public function getFormSchema(): array
     {
         return $this->getResource()::getFormSchema();

@@ -113,3 +113,11 @@ Verification:
 cd laravel && ./vendor/bin/phpstan analyse Modules
 # 4993 file, [OK] No errors
 ```
+
+## Fix STORY-287 (2026-06-09): Modules/Xot zero errori
+
+Baseline 205 → 0. Batch Contracts/Datas/Traits (14), Actions (43), Models/Filament/Exports (34).
+
+Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `EnumTrait::toArray()` → `array<int|string, string>`.
+
+Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
