@@ -35,7 +35,7 @@ use Illuminate\Support\Carbon;
  * @method string    getRouteKeyName()
  * @method string    getTable()
  * @method mixed     with($array)
- * @method array     getFillable()
+ * @method array<string, mixed> getFillable()
  * @method mixed     fill($array)
  * @method mixed     getConnection()
  * @method mixed     update($params)
@@ -43,10 +43,10 @@ use Illuminate\Support\Carbon;
  * @method mixed     detach($params)
  * @method mixed     attach($params)
  * @method mixed     save($params)
- * @method array     treeLabel()
- * @method array     treeSons()
- * @method array     toArray()
- * @method BelongsTo user()
+ * @method array<string, mixed> treeLabel()
+ * @method array<string, mixed> treeSons()
+ * @method array<string, mixed> toArray()
+ * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
  *
  * @phpstan-require-extends Model
  *
@@ -54,9 +54,15 @@ use Illuminate\Support\Carbon;
  */
 interface ModelContactContract
 {
+    /**
+     * @return array<int, string>
+     */
     public function getNotifyVia(): array;
 
     public function sendEmailCallback(): void;
 
+    /**
+     * @param array<string, mixed> $data
+     */
     public function increase(string $what, array $data): void;
 }

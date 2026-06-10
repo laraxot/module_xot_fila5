@@ -23,21 +23,21 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * @property int               $id
  * @property string            $name
  * @property int               $depth
- * @property Collection<Model> $children
- * @property int|null          $children_count
- * @property Collection<Model> $ancestors                  The model's recursive parents.
- * @property int|null          $ancestors_count
- * @property Collection<Model> $ancestorsAndSelf           The model's recursive parents and itself.
- * @property int|null          $ancestors_and_self_count
- * @property Collection<Model> $bloodline                  The model's ancestors, descendants and itself.
- * @property int|null          $bloodline_count
- * @property Collection<Model> $childrenAndSelf            The model's direct children and itself.
- * @property int|null          $children_and_self_count
- * @property Collection<Model> $descendants                The model's recursive children.
- * @property int|null          $descendants_count
- * @property Collection<Model> $descendantsAndSelf         The model's recursive children and itself.
- * @property int|null          $descendants_and_self_count
- * @property Collection<Model> $parentAndSelf              The model's direct parent and itself.
+ * @property Collection<int, Model> $children
+ * @property int|null                 $children_count
+ * @property Collection<int, Model>   $ancestors                  The model's recursive parents.
+ * @property int|null                 $ancestors_count
+ * @property Collection<int, Model>   $ancestorsAndSelf           The model's recursive parents and itself.
+ * @property int|null                 $ancestors_and_self_count
+ * @property Collection<int, Model>   $bloodline                  The model's ancestors, descendants and itself.
+ * @property int|null                 $bloodline_count
+ * @property Collection<int, Model>   $childrenAndSelf            The model's direct children and itself.
+ * @property int|null                 $children_and_self_count
+ * @property Collection<int, Model>   $descendants                The model's recursive children.
+ * @property int|null                 $descendants_count
+ * @property Collection<int, Model>   $descendantsAndSelf         The model's recursive children and itself.
+ * @property int|null                 $descendants_and_self_count
+ * @property Collection<int, Model>   $parentAndSelf              The model's direct parent and itself.
  * @property int|null          $parent_and_self_count
  *
  * @phpstan-require-extends Model
@@ -114,96 +114,44 @@ interface HasRecursiveRelationshipsContract
      */
     public function getExpressionName();
 
-    /**
-     * Get the model's ancestors.
-     *
-     * @return Ancestors
-     */
-    public function ancestors();
+    /** @return Ancestors<Model, Model> */
+    public function ancestors(): Ancestors;
 
-    /**
-     * Get the model's ancestors and itself.
-     *
-     * @return Ancestors
-     */
-    public function ancestorsAndSelf();
+    /** @return Ancestors<Model, Model> */
+    public function ancestorsAndSelf(): Ancestors;
 
-    /**
-     * Get the model's bloodline.
-     *
-     * @return Bloodline
-     */
-    public function bloodline();
+    /** @return Bloodline<Model, Model> */
+    public function bloodline(): Bloodline;
 
-    /**
-     * Get the model's children.
-     *
-     * @return HasMany
-     */
-    public function children();
+    /** @return HasMany<Model, Model> */
+    public function children(): HasMany;
 
-    /**
-     * Get the model's children and itself.
-     *
-     * @return Descendants
-     */
-    public function childrenAndSelf();
+    /** @return Descendants<Model, Model> */
+    public function childrenAndSelf(): Descendants;
 
-    /**
-     * Get the model's descendants.
-     *
-     * @return Descendants
-     */
-    public function descendants();
+    /** @return Descendants<Model, Model> */
+    public function descendants(): Descendants;
 
-    /**
-     * Get the model's descendants and itself.
-     *
-     * @return Descendants
-     */
-    public function descendantsAndSelf();
+    /** @return Descendants<Model, Model> */
+    public function descendantsAndSelf(): Descendants;
 
-    /**
-     * Get the model's parent.
-     *
-     * @return BelongsTo
-     */
-    public function parent();
+    /** @return BelongsTo<Model, Model> */
+    public function parent(): BelongsTo;
 
-    /**
-     * Get the model's parent and itself.
-     *
-     * @return Ancestors
-     */
-    public function parentAndSelf();
+    /** @return Ancestors<Model, Model> */
+    public function parentAndSelf(): Ancestors;
 
-    /**
-     * Get the model's root ancestor.
-     *
-     * @return RootAncestor
-     */
-    public function rootAncestor();
+    /** @return RootAncestor<Model, Model> */
+    public function rootAncestor(): RootAncestor;
 
-    /**
-     * Get the model's root ancestor or self.
-     *
-     * @return RootAncestorOrSelf
-     */
-    public function rootAncestorOrSelf();
+    /** @return RootAncestorOrSelf<Model, Model> */
+    public function rootAncestorOrSelf(): RootAncestorOrSelf;
 
-    /**
-     * Get the model's siblings.
-     *
-     * @return Siblings
-     */
-    public function siblings();
+    /** @return Siblings<Model, Model> */
+    public function siblings(): Siblings;
 
-    /**
-     * Get the model's siblings and itself.
-     *
-     * @return Siblings
-     */
-    public function siblingsAndSelf();
+    /** @return Siblings<Model, Model> */
+    public function siblingsAndSelf(): Siblings;
 
     /**
      * Get the first segment of the model's path.
@@ -227,22 +175,16 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute(string $attribute);
 
     /**
-     * Create a new Eloquent query builder for the model.
-     *
-     * @param Builder $query
-     *
-     * @return AdjacencyBuilder
+     * @param  \Illuminate\Database\Query\Builder  $query
+     * @return \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder<\Illuminate\Database\Eloquent\Model>
      */
-    public function newEloquentBuilder($query);
+    public function newEloquentBuilder($query): AdjacencyBuilder;
 
     /**
-     * Create a new Eloquent Collection instance.
-     *
-     * @param list<static> $models
-     *
-     * @return Collection
+     * @param  list<\Illuminate\Database\Eloquent\Model>  $models
+     * @return \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, \Illuminate\Database\Eloquent\Model>
      */
-    public function newCollection(array $models = []);
+    public function newCollection(array $models = []): Collection;
 
     /**
      * added by XOT, viene utilizzato nelle options delle select.

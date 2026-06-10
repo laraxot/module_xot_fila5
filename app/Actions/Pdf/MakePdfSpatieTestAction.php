@@ -6,9 +6,8 @@ namespace Modules\Xot\Actions\Pdf;
 
 use function Safe\base64_decode;
 
-use Spatie\Browsershot\Browsershot;
-use Spatie\LaravelPdf\Enums\Format;
-use Spatie\LaravelPdf\Facades\Pdf;
+use Modules\Xot\Contracts\PdfBuilderContract;
+use Modules\Xot\Support\PdfBuilderAdapter;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
@@ -26,32 +25,7 @@ class MakePdfSpatieTestAction
         string $filename = 'spatie-pdf-test.pdf',
         string $view = 'xot::pdf.spatie-test',
     ): StreamedResponse {
-        $pdf = Pdf::view($view, [
-            'title' => 'Spatie PDF Test',
-            'generated_at' => now(),
-            'payload' => $data,
-        ])
-            ->format(Format::A4)
-            ->name($filename)
-            ->download()
-            ->withBrowsershot(function (Browsershot $browsershot): void {
-                $browsershot->showBackground();
-
-                $nodeBinary = config('laravel-pdf.browsershot.node_binary');
-                if (is_string($nodeBinary) && '' !== $nodeBinary) {
-                    $browsershot->setNodeBinary($nodeBinary);
-                }
-
-                $npmBinary = config('laravel-pdf.browsershot.npm_binary');
-                if (is_string($npmBinary) && '' !== $npmBinary) {
-                    $browsershot->setNpmBinary($npmBinary);
-                }
-
-                $chromePath = config('laravel-pdf.browsershot.chrome_path');
-                if (is_string($chromePath) && '' !== $chromePath) {
-                    $browsershot->setChromePath($chromePath);
-                }
-            });
+        $pdf = $this->makePdfBuilder($view, $data, $filename);
 
         return new StreamedResponse(
             static function () use ($pdf): void {

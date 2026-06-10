@@ -153,13 +153,13 @@ trait EnumTrait
         return [];
     }
 
+    /** @return array<int|string, string> */
     public static function toArray(): array
     {
         $cases = static::cases();
         $result = [];
         foreach ($cases as $item) {
-            $name = (string) $item->value;
-            $result[$name] = $item->getLabel();
+            $result[(string) $item->value] = (string) $item->getLabel();
         }
 
         return $result;

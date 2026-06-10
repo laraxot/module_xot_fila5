@@ -32,10 +32,20 @@ class MetatagPage extends XotBasePage
 
     public function mount(): void
     {
-        Assert::isArray($data = config('metatag'));
+        $config = config('metatag');
+        if (! is_array($config)) {
+            $config = [];
+        }
 
-        /* @var array<string, mixed> $data */
-        $this->form->fill($data);
+        $state = [];
+        foreach ($config as $key => $value) {
+            if (! is_string($key)) {
+                continue;
+            }
+            $state[$key] = $value;
+        }
+
+        $this->form->fill($state);
     }
 
     public function schema(Schema $schema): Schema
@@ -83,6 +93,7 @@ class MetatagPage extends XotBasePage
             ->send();
     }
 
+    /** @return list<\Filament\Actions\Action> */
     protected function getFormActions(): array
     {
         return [
