@@ -190,7 +190,7 @@ abstract class XotBaseState implements StateContract
             'states.'.(is_string($state) ? $state : (string) $state).'.label',
         ));
 
-        /** @var array<string, mixed> $states */
+        /* @var array<string, mixed> $states */
 
         return $states;
     }

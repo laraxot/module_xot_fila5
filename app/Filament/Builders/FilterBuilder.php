@@ -278,7 +278,7 @@ class FilterBuilder
     }
 
     /**
-     * @param Builder<\Illuminate\Database\Eloquent\Model> $query
+     * @param Builder<Model> $query
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -286,9 +286,9 @@ class FilterBuilder
     }
 
     /**
-     * @param Builder<\Illuminate\Database\Eloquent\Model> $query
+     * @param Builder<Model> $query
      *
-     * @return Builder<\Illuminate\Database\Eloquent\Model>
+     * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder
     {
