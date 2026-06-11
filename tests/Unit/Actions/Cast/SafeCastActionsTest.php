@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Collection;
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;

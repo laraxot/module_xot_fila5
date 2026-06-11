@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\Artisan;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
 use PHPUnit\Framework\Assert;
 
 it('can create a test module', function () {
-                $module = ModuleFactory::new()->createOne([
+    $module = ModuleFactory::new()->createOne([
         'name' => 'TestModule',
         'enabled' => true,
     ]);
@@ -20,5 +20,5 @@ it('can create a test module', function () {
 });
 
 it('can run migrations', function () {
-                Artisan::call('migrate', ['--env' => 'testing', '--force' => true]);
+    Artisan::call('migrate', ['--env' => 'testing', '--force' => true]);
 });

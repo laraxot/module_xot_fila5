@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -14,6 +14,7 @@ use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
 use PHPUnit\Framework\Assert;
+
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 
@@ -108,7 +109,7 @@ it('covers translation helper exception branch', function (): void {
     $threwException = false;
     try {
         ProbeResource::trans('missing', true);
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         $threwException = true;
     }
     Assert::assertTrue($threwException);
@@ -126,7 +127,7 @@ it('covers navigation badge success and fallback', function (): void {
     app()->instance(CountAction::class, new class {
         public function execute(string $class): int
         {
-            throw new \Exception('boom');
+            throw new Exception('boom');
         }
     });
 
@@ -165,12 +166,13 @@ it('covers get attachments schema branches', function (): void {
     app()->instance(GetAttachmentsSchemaAction::class, new class {
         /**
          * @param string[] $attachments
+         *
          * @return string[]
          */
         public function execute(array $attachments, string $disk): array
         {
             if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
-                throw new \RuntimeException('unexpected attachments payload');
+                throw new RuntimeException('unexpected attachments payload');
             }
 
             return ['schema'];

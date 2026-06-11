@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament\Block;
 
-use function Safe\glob;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

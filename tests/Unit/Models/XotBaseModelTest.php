@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\Updater;
@@ -53,14 +53,14 @@ test('xot base model has correct property types', function (): void {
     $perPageType = $perPageProperty->getType();
 
     if (null !== $snakeType) {
-        Assert::assertInstanceOf(\ReflectionNamedType::class, $snakeType);
+        Assert::assertInstanceOf(ReflectionNamedType::class, $snakeType);
         Assert::assertSame('bool', $snakeType->getName());
     } else {
         Assert::assertTrue(XotBaseModel::$snakeAttributes);
     }
 
     if (null !== $perPageType) {
-        Assert::assertInstanceOf(\ReflectionNamedType::class, $perPageType);
+        Assert::assertInstanceOf(ReflectionNamedType::class, $perPageType);
         Assert::assertSame('int', $perPageType->getName());
     } else {
         Assert::assertSame(30, $perPageProperty->getDefaultValue());

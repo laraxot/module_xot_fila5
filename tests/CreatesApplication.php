@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-use function Safe\realpath;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
+
+use function Safe\realpath;
 
 /**
  * Trait CreatesApplication.

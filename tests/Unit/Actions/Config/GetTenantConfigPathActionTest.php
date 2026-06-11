@@ -7,13 +7,13 @@ namespace Modules\Xot\Tests\Unit\Actions\Config;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\Test;
 
 class GetTenantConfigPathActionTest extends TestCase
 {
     #[Test]
-    public function delegates_to_tenant_file_path_action_with_php_filename(): void
+    public function delegatesToTenantFilePathActionWithPhpFilename(): void
     {
         $tenantPathAction = $this->createMock(GetTenantFilePathAction::class);
         $tenantPathAction->expects($this->once())

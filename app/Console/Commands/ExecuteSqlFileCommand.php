@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Console\Commands;
 
-use function Safe\exec;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 

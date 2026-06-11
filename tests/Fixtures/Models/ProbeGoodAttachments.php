@@ -6,9 +6,6 @@ namespace Modules\Xot\Tests\Fixtures\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-
-
-
 class ProbeGoodAttachments extends Model
 {
     protected $guarded = [];
