@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Array\ArrayToRawJsAction;
 use PHPUnit\Framework\Assert;

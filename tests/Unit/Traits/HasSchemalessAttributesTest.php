@@ -13,26 +13,26 @@ uses(TestCase::class);
 
 it('handles extra attributes scope', function (): void {
     /** @var MockInterface&Builder<SchemalessTestModel> $builder */
-    $builder = \Mockery::mock(Builder::class);
+    $builder = Mockery::mock(Builder::class);
 
     $model = new SchemalessTestModel();
     $model->extra_attributes = SchemalessAttributes::createForModel($model, 'extra_attributes');
 
     $result = $model->scopeWithExtraAttributes($builder);
     Assert::assertSame($builder, $result);
-    \Mockery::close();
+    Mockery::close();
 });
 
 it('handles where extra attribute scope', function (): void {
     /** @var MockInterface&Builder<SchemalessTestModel> $builder */
-    $builder = \Mockery::mock(Builder::class);
+    $builder = Mockery::mock(Builder::class);
     $builder->allows(['where' => $builder]);
 
     $model = new SchemalessTestModel();
 
     $result = $model->scopeWhereExtraAttribute($builder, 'key', 'value');
     Assert::assertSame($builder, $result);
-    \Mockery::close();
+    Mockery::close();
 });
 
 it('gets and sets extra attributes', function (): void {

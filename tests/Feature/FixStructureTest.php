@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Feature;
 
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Attributes\Test;
+
 use function Safe\chdir;
 use function Safe\chmod;
 use function Safe\exec;
@@ -15,7 +16,6 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\scandir;
 use function Safe\unlink;
-
 
 class FixStructureTest extends TestCase
 {

@@ -56,6 +56,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Activity\Tests\Feature;
 
 use Closure;
@@ -99,6 +100,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Activity\Tests\Unit;
 
 use Closure;
@@ -142,6 +144,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Activity\Tests\Unit\Actions;
 
 use Closure;
@@ -185,6 +188,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Feature;
 
 use Closure;
@@ -228,6 +232,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Feature\Auth;
 
 use Closure;
@@ -271,6 +276,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Feature\Frontoffice;
 
 use Closure;
@@ -314,6 +320,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
 
 use Closure;
@@ -357,6 +364,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit;
 
 use Closure;
@@ -400,6 +408,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Actions;
 
 use Closure;
@@ -443,6 +452,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Actions\View;
 
 use Closure;
@@ -486,6 +496,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Datas;
 
 use Closure;
@@ -529,6 +540,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament;
 
 use Closure;
@@ -572,6 +584,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament\Clusters\Appearance\Pages;
 
 use Closure;
@@ -615,6 +628,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament\Fields;
 
 use Closure;
@@ -658,6 +672,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament\Forms\Components;
 
 use Closure;
@@ -701,6 +716,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament\Front\Pages;
 
 use Closure;
@@ -744,6 +760,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament\Pages;
 
 use Closure;
@@ -787,6 +804,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Filament\Resources;
 
 use Closure;
@@ -830,6 +848,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Http\Controllers\Admin;
 
 use Closure;
@@ -873,6 +892,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Http\Middleware;
 
 use Closure;
@@ -916,6 +936,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Http\View\Composers;
 
 use Closure;
@@ -959,6 +980,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Http\Volt;
 
 use Closure;
@@ -1002,6 +1024,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Http\Volt\Password;
 
 use Closure;
@@ -1045,6 +1068,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Middleware;
 
 use Closure;
@@ -1088,6 +1112,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Models;
 
 use Closure;
@@ -1131,6 +1156,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Models\Policies;
 
 use Closure;
@@ -1174,6 +1200,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Models\Traits;
 
 use Closure;
@@ -1217,6 +1244,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Providers;
 
 use Closure;
@@ -1260,6 +1288,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Support;
 
 use Closure;
@@ -1303,6 +1332,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\View;
 
 use Closure;
@@ -1346,6 +1376,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\View\Components;
 
 use Closure;
@@ -1389,6 +1420,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\View\Composers;
 
 use Closure;
@@ -1432,6 +1464,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Cms\Tests\Unit\Views;
 
 use Closure;
@@ -1475,6 +1508,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Fixcity\Tests\Unit\Actions;
 
 use Closure;
@@ -1518,6 +1552,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Fixcity\Tests\Unit\Enums;
 
 use Closure;
@@ -1561,6 +1596,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Fixcity\Tests\Unit\Models;
 
 use Closure;
@@ -1604,6 +1640,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Gdpr\Tests\Feature;
 
 use Closure;
@@ -1647,6 +1684,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Gdpr\Tests\Unit\Actions;
 
 use Closure;
@@ -1690,6 +1728,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Gdpr\Tests\Unit\Filament\Resources;
 
 use Closure;
@@ -1733,6 +1772,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Gdpr\Tests\Unit\Models;
 
 use Closure;
@@ -1776,6 +1816,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Gdpr\Tests\Unit\Providers;
 
 use Closure;
@@ -1819,6 +1860,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Gdpr\Tests\Unit\Traits;
 
 use Closure;
@@ -1862,6 +1904,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Feature;
 
 use Closure;
@@ -1905,6 +1948,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Feature\Filament\Forms\Components;
 
 use Closure;
@@ -1948,6 +1992,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit;
 
 use Closure;
@@ -1991,6 +2036,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions;
 
 use Closure;
@@ -2034,6 +2080,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\Bing;
 
 use Closure;
@@ -2077,6 +2124,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\Elevation;
 
 use Closure;
@@ -2120,6 +2168,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\GoogleMaps;
 
 use Closure;
@@ -2163,6 +2212,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\Here;
 
 use Closure;
@@ -2206,6 +2256,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\IPGeolocation;
 
 use Closure;
@@ -2249,6 +2300,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\LocationIQ;
 
 use Closure;
@@ -2292,6 +2344,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\Mapbox;
 
 use Closure;
@@ -2335,6 +2388,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Actions\Nominatim;
 
 use Closure;
@@ -2378,6 +2432,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\DataTransferObjects;
 
 use Closure;
@@ -2421,6 +2476,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Datas;
 
 use Closure;
@@ -2464,6 +2520,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Enums;
 
 use Closure;
@@ -2507,6 +2564,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Filament;
 
 use Closure;
@@ -2550,6 +2608,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Filament\Forms;
 
 use Closure;
@@ -2593,6 +2652,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Filament\Forms\Components;
 
 use Closure;
@@ -2636,6 +2696,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Models;
 
 use Closure;
@@ -2679,6 +2740,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Models\Policies;
 
 use Closure;
@@ -2722,6 +2784,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Services;
 
 use Closure;
@@ -2765,6 +2828,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Traits;
 
 use Closure;
@@ -2808,6 +2872,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Geo\Tests\Unit\Transformers;
 
 use Closure;
@@ -2851,6 +2916,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Feature;
 
 use Closure;
@@ -2894,6 +2960,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Actions;
 
 use Closure;
@@ -2937,6 +3004,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Actions\Command;
 
 use Closure;
@@ -2980,6 +3048,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Enums;
 
 use Closure;
@@ -3023,6 +3092,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Events;
 
 use Closure;
@@ -3066,6 +3136,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Models;
 
 use Closure;
@@ -3109,6 +3180,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Providers;
 
 use Closure;
@@ -3152,6 +3224,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Job\Tests\Unit\Services;
 
 use Closure;
@@ -3195,6 +3268,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Lang\Tests\Unit\Actions;
 
 use Closure;
@@ -3238,6 +3312,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Lang\Tests\Unit\Models;
 
 use Closure;
@@ -3281,6 +3356,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Media\Tests\Unit\Actions;
 
 use Closure;
@@ -3324,6 +3400,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Media\Tests\Unit\Models;
 
 use Closure;
@@ -3367,6 +3444,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Feature;
 
 use Closure;
@@ -3410,6 +3488,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit;
 
 use Closure;
@@ -3453,6 +3532,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions;
 
 use Closure;
@@ -3496,6 +3576,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions\Mail;
 
 use Closure;
@@ -3539,6 +3620,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme;
 
 use Closure;
@@ -3582,6 +3664,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme\Attachment;
 
 use Closure;
@@ -3625,6 +3708,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
 use Closure;
@@ -3668,6 +3752,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions\Telegram;
 
 use Closure;
@@ -3711,6 +3796,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp;
 
 use Closure;
@@ -3754,6 +3840,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Channels;
 
 use Closure;
@@ -3797,6 +3884,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Console;
 
 use Closure;
@@ -3840,6 +3928,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Console\Commands;
 
 use Closure;
@@ -3883,6 +3972,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Datas;
 
 use Closure;
@@ -3926,6 +4016,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Datas\SMS;
 
 use Closure;
@@ -3969,6 +4060,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Emails;
 
 use Closure;
@@ -4012,6 +4104,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Enums;
 
 use Closure;
@@ -4055,6 +4148,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Factories;
 
 use Closure;
@@ -4098,6 +4192,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Filament\Actions;
 
 use Closure;
@@ -4141,6 +4236,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Filament\Forms\Components;
 
 use Closure;
@@ -4184,6 +4280,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Filament\Pages;
 
 use Closure;
@@ -4227,6 +4324,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Filament\Resources;
 
 use Closure;
@@ -4270,6 +4368,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Models;
 
 use Closure;
@@ -4313,6 +4412,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Models\Policies;
 
 use Closure;
@@ -4356,6 +4456,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Models\Traits;
 
 use Closure;
@@ -4399,6 +4500,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Notifications;
 
 use Closure;
@@ -4442,6 +4544,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Notifications\Channels;
 
 use Closure;
@@ -4485,6 +4588,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Providers;
 
 use Closure;
@@ -4528,6 +4632,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Notify\Tests\Unit\Traits;
 
 use Closure;
@@ -4571,6 +4676,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Feature;
 
 use Closure;
@@ -4614,6 +4720,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Unit\Actions;
 
 use Closure;
@@ -4657,6 +4764,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Unit\Data;
 
 use Closure;
@@ -4700,6 +4808,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Unit\Facades;
 
 use Closure;
@@ -4743,6 +4852,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Unit\Filament\Widgets;
 
 use Closure;
@@ -4786,6 +4896,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Unit\Providers;
 
 use Closure;
@@ -4829,6 +4940,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Seo\Tests\Unit\Services;
 
 use Closure;
@@ -4872,6 +4984,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Integration;
 
 use Closure;
@@ -4915,6 +5028,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Integration\Traits;
 
 use Closure;
@@ -4958,6 +5072,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Performance;
 
 use Closure;
@@ -5001,6 +5116,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit;
 
 use Closure;
@@ -5044,6 +5160,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Actions;
 
 use Closure;
@@ -5087,6 +5204,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Actions\Config;
 
 use Closure;
@@ -5130,6 +5248,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Actions\Domains;
 
 use Closure;
@@ -5173,6 +5292,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown;
 
 use Closure;
@@ -5216,6 +5336,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Actions\Models;
 
 use Closure;
@@ -5259,6 +5380,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Models;
 
 use Closure;
@@ -5302,6 +5424,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Tenant\Tests\Unit\Traits;
 
 use Closure;
@@ -5345,6 +5468,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Feature;
 
 use Closure;
@@ -5388,6 +5512,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Feature\Filament\Widgets;
 
 use Closure;
@@ -5431,6 +5556,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit;
 
 use Closure;
@@ -5474,6 +5600,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit\Components;
 
 use Closure;
@@ -5517,6 +5644,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit\Datas;
 
 use Closure;
@@ -5560,6 +5688,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit\Enums;
 
 use Closure;
@@ -5603,6 +5732,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Closure;
@@ -5646,6 +5776,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit\Models;
 
 use Closure;
@@ -5689,6 +5820,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\UI\Tests\Unit\Widgets;
 
 use Closure;
@@ -5732,6 +5864,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature;
 
 use Closure;
@@ -5775,6 +5908,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Actions;
 
 use Closure;
@@ -5818,6 +5952,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Actions\Passport;
 
 use Closure;
@@ -5861,6 +5996,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Closure;
@@ -5904,6 +6040,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Auth;
 
 use Closure;
@@ -5947,6 +6084,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Authentication;
 
 use Closure;
@@ -5990,6 +6128,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament;
 
 use Closure;
@@ -6033,6 +6172,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Actions;
 
 use Closure;
@@ -6076,6 +6216,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
 use Closure;
@@ -6119,6 +6260,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Resources;
 
 use Closure;
@@ -6162,6 +6304,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Closure;
@@ -6205,6 +6348,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
 use Closure;
@@ -6248,6 +6392,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Closure;
@@ -6291,6 +6436,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
 
 use Closure;
@@ -6334,6 +6480,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Models;
 
 use Closure;
@@ -6377,6 +6524,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Feature\Passport;
 
 use Closure;
@@ -6420,6 +6568,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit;
 
 use Closure;
@@ -6463,6 +6612,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Actions;
 
 use Closure;
@@ -6506,6 +6656,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Actions\Otp;
 
 use Closure;
@@ -6549,6 +6700,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Actions\Passport;
 
 use Closure;
@@ -6592,6 +6744,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Actions\Socialite;
 
 use Closure;
@@ -6635,6 +6788,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
 use Closure;
@@ -6678,6 +6832,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Actions\User;
 
 use Closure;
@@ -6721,6 +6876,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Console;
 
 use Closure;
@@ -6764,6 +6920,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Datas;
 
 use Closure;
@@ -6807,6 +6964,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Enums;
 
 use Closure;
@@ -6850,6 +7008,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Events;
 
 use Closure;
@@ -6893,6 +7052,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Facades;
 
 use Closure;
@@ -6936,6 +7096,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Filament\Widgets;
 
 use Closure;
@@ -6979,6 +7140,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Mail;
 
 use Closure;
@@ -7022,6 +7184,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Models;
 
 use Closure;
@@ -7065,6 +7228,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Models\Policies;
 
 use Closure;
@@ -7108,6 +7272,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Passport;
 
 use Closure;
@@ -7151,6 +7316,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\QuickWins;
 
 use Closure;
@@ -7194,6 +7360,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Rules;
 
 use Closure;
@@ -7237,6 +7404,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\User\Tests\Unit\Traits;
 
 use Closure;
@@ -7280,6 +7448,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Feature;
 
 use Closure;
@@ -7323,6 +7492,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Feature\Filament;
 
 use Closure;
@@ -7366,6 +7536,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit;
 
 use Closure;
@@ -7409,6 +7580,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions;
 
 use Closure;
@@ -7452,6 +7624,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Closure;
@@ -7495,6 +7668,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Closure;
@@ -7538,6 +7712,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Closure;
@@ -7581,6 +7756,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Class;
 
 use Closure;
@@ -7624,6 +7800,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Collection;
 
 use Closure;
@@ -7667,6 +7844,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Closure;
@@ -7710,6 +7888,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Debug;
 
 use Closure;
@@ -7753,6 +7932,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Dummy;
 
 use Closure;
@@ -7796,6 +7976,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Closure;
@@ -7839,6 +8020,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Model;
 
 use Closure;
@@ -7882,6 +8064,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\ModelClass;
 
 use Closure;
@@ -7925,6 +8108,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Module;
 
 use Closure;
@@ -7968,6 +8152,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Parse;
 
 use Closure;
@@ -8011,6 +8196,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Pdf;
 
 use Closure;
@@ -8054,6 +8240,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Query;
 
 use Closure;
@@ -8097,6 +8284,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\String;
 
 use Closure;
@@ -8140,6 +8328,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\View;
 
 use Closure;
@@ -8183,6 +8372,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Models;
 
 use Closure;
@@ -8226,6 +8416,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Services;
 
 use Closure;
@@ -8269,6 +8460,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Traits;
 
 use Closure;
@@ -8312,6 +8504,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\Traits\Filament;
 
 use Closure;
@@ -8355,6 +8548,7 @@ function uses(string ...$classes): PestTestCall
 {
     return new PestTestCall(\uses(...$classes));
 }
+
 namespace Modules\Xot\Tests\Unit\ValueObjects;
 
 use Closure;

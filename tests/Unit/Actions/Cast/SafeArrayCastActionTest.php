@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use PHPUnit\Framework\Assert;
+
 use function Safe\fopen;
 
 it('casts various values to array correctly', function (): void {
@@ -18,7 +19,7 @@ it('casts various values to array correctly', function (): void {
     // Collection
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     // stdClass
-    $obj = new \stdClass();
+    $obj = new stdClass();
     $obj->c = 3;
     Assert::assertSame(['c' => 3], $action->execute($obj));
     // Object with toArray
@@ -82,7 +83,7 @@ it('checks if value can be cast', function (): void {
     Assert::assertTrue($action->canCast([]));
     Assert::assertTrue($action->canCast(null));
     Assert::assertTrue($action->canCast('str'));
-    Assert::assertTrue($action->canCast(new \stdClass()));
+    Assert::assertTrue($action->canCast(new stdClass()));
 });
 
 it('uses static cast method correctly', function (): void {
