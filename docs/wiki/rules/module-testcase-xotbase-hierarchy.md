@@ -4,8 +4,7 @@ type: rule
 module: Xot
 tags: [testing, testcase, xotbase, nwidart, modules, pest]
 created: 2026-06-10
-updated: 2026-06-11
-reverified: 2026-06-11
+updated: 2026-06-10
 status: enforced
 qmd: "module tests TestCase extends XotBaseTestCase nwidart Tests BaseTestCase dev-only"
 issues:
@@ -79,8 +78,7 @@ Moduli senza `tests/TestCase.php` dedicato (Blog, AI): usano Pest `uses()` o tes
 Key changes per modulo allineato:
 - Removed `use CreatesApplication;` (inherited from `XotBaseTestCase`)
 - Removed `use Modules\Xot\Providers\XotServiceProvider;` (registered in parent)
-- Changed `getPackageProviders($app)` to `getPackageProviders(Application $app)` with `...parent::getPackageProviders($app)`
-- Added `use Illuminate\Foundation\Application;` import
+- Changed `getPackageProviders($app)` to `getPackageProviders(mixed $app)` with `...parent::getPackageProviders($app)`
 - Rating: replaced app-level `Tests\CreatesApplication` with `XotBaseTestCase`
 
 ## Anti-pattern
@@ -99,7 +97,6 @@ This bypasses the shared platform layer and duplicates setup across modules.
 ## Correct pattern
 
 ```php
-use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\Xot\Tests\XotBaseTestCase;
 
@@ -107,7 +104,7 @@ abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
 
-    protected function getPackageProviders(Application $app): array
+    protected function getPackageProviders(mixed $app): array
     {
         return [
             ...parent::getPackageProviders($app),
