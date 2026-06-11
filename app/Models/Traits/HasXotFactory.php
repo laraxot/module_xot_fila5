@@ -7,7 +7,6 @@ namespace Modules\Xot\Models\Traits;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Webmozart\Assert\Assert;
 

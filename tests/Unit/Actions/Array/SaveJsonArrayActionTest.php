@@ -39,7 +39,9 @@ class SaveJsonArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-    public function testSaves_array_to_json(): void
+
+    #[Test]
+    public function savesArrayToJson(): void
     {
         $path = $this->tempDir.'/d.json';
         $result = app(SaveJsonArrayAction::class)->execute(['k' => 'v'], $path);

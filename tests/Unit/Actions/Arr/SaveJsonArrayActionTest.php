@@ -39,7 +39,9 @@ class SaveJsonArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-    public function testSaves_array_to_json_file(): void
+
+    #[Test]
+    public function savesArrayToJsonFile(): void
     {
         $data = ['key' => 'value', 'nested' => ['a' => 1]];
         $path = $this->tempDir.'/data.json';
@@ -49,7 +51,9 @@ class SaveJsonArrayActionTest extends TestCase
 
         Assert::assertTrue(file_exists($path));
     }
-    public function testSaves_empty_array(): void
+
+    #[Test]
+    public function savesEmptyArray(): void
     {
         $path = $this->tempDir.'/empty.json';
         $result = app(SaveJsonArrayAction::class)->execute([], $path);

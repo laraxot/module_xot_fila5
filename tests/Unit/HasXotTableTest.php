@@ -61,10 +61,7 @@ it('tests table method with all methods implemented', function (): void {
         ->allows(['execute' => true]);
 
     /** @var HasTableWithXotTestClass&MockInterface $mock */
-    $mock = \Mockery::mock(HasTableWithXotTestClass::class)
-        ->makePartial()
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
+    $mock = Mockery::mock(HasTableWithXotTestClass::class)->makePartial()->shouldDeferMissing();
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -94,10 +91,7 @@ it('tests table method with no optional methods implemented', function (): void 
         ->allows(['execute' => true]);
 
     /** @var HasTableWithoutOptionalMethodsTestClass&MockInterface $mock */
-    $mock = \Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)
-        ->makePartial()
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
+    $mock = Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)->makePartial()->shouldDeferMissing();
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',

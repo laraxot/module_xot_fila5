@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
+
 use function Safe\chdir;
 use function Safe\chmod;
 use function Safe\exec;

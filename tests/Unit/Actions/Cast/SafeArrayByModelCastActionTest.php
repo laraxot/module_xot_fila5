@@ -13,7 +13,8 @@ use PHPUnit\Framework\Attributes\Test;
 
 class SafeArrayByModelCastActionTest extends TestCase
 {
-    public function testConverts_model_attributes_to_array_correctly(): void
+    #[Test]
+    public function convertsModelAttributesToArrayCorrectly(): void
     {
         $model = new Activity();
         $model->setRawAttributes(['name' => 'Test']);
@@ -24,7 +25,9 @@ class SafeArrayByModelCastActionTest extends TestCase
         Assert::assertIsArray($result);
         Assert::assertArrayHasKey('name', $result);
     }
-    public function testFalls_back_to_safeExecute_on_error(): void
+
+    #[Test]
+    public function fallsBackToSafeExecuteOnError(): void
     {
         $model = $this->createUnitMock(Model::class);
         $model->method('attributesToArray')->willThrowException(new \Exception('Mock error'));

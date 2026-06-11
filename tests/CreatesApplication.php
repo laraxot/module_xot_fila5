@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Modules\Xot\Tests;
+
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
 
