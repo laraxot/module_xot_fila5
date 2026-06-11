@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Support;
 
-
-
-
-
-
-
-
 final class PestTestCall
 {
     public function __construct(private readonly object $call)
@@ -62,9 +55,8 @@ final class PestTestCall
         return $this->forward('afterEach', [$callback]);
     }
 
-    
     /**
-     * @param class-string|string $abstract
+     * @param class-string|string          $abstract
      * @param (callable(mixed): void)|null $mock
      */
     public function mock(string $abstract, ?callable $mock = null): self
@@ -72,7 +64,7 @@ final class PestTestCall
         return $this->forward('mock', [$abstract, $mock]);
     }
 
-/**
+    /**
      * @param array<array-key, mixed> $arguments
      */
     private function forward(string $method, array $arguments): self

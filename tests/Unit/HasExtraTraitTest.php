@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
-use function Safe\class_uses;
-
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Modules\Xot\Contracts\ExtraContract;
 use Modules\Xot\Models\Traits\HasExtraTrait;
@@ -13,12 +11,15 @@ use Modules\Xot\Tests\Fixtures\Models\ExtraModelTest;
 use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 uses(TestCase::class);
 
 /**
- * @param  array<string, mixed>  $values
+ * @param array<string, mixed> $values
  */
 function makeExtraWithValues(array $values): ExtraModelTest
 {

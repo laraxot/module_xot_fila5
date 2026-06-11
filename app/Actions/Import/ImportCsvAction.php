@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Import;
 
-use function Safe\exec;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\DB;

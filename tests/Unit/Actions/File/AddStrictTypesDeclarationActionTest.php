@@ -7,8 +7,8 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AddStrictTypesDeclarationAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\Test;
 
 class AddStrictTypesDeclarationActionTest extends TestCase
 {
@@ -31,7 +31,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
     }
 
     #[Test]
-    public function adds_strict_types_declaration_to_php_file(): void
+    public function addsStrictTypesDeclarationToPhpFile(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
@@ -43,7 +43,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
     }
 
     #[Test]
-    public function does_not_duplicate_strict_types_if_already_present(): void
+    public function doesNotDuplicateStrictTypesIfAlreadyPresent(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\n\n\nnamespace Test;");
@@ -55,7 +55,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
     }
 
     #[Test]
-    public function handles_file_with_existing_namespace(): void
+    public function handlesFileWithExistingNamespace(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\n\n\nclass TestAction {}");

@@ -68,10 +68,9 @@ class FakeSeederAction
      *
      * @param class-string<Model> $modelClass
      *
-     * @return Factory<Model>
-     *
      * @throws \RuntimeException
      *
+     * @return Factory<Model>
      * @return Factory<Model>
      */
     private function getModelFactory(string $modelClass): Factory
