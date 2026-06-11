@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -37,7 +37,6 @@ it('creates table index correctly', function (): void {
 
 it('throws exception for invalid model class', function (): void {
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
-
 });
 
 it('throws exception for missing table', function (): void {
@@ -47,5 +46,4 @@ it('throws exception for missing table', function (): void {
     $modelClassName = get_class($modelClass);
 
     $action = app(CreateTableIndexByModelClassColumnsAction::class);
-
 });

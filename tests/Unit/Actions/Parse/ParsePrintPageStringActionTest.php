@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\ParsePrintPageStringAction;
 use PHPUnit\Framework\Assert;
 
@@ -16,7 +16,6 @@ it('parses single pages and ranges', function (): void {
 });
 
 it('throws when no valid page number exists', function (): void {
-
 });
 
 it('builds inclusive ranges from fromTo helper', function (): void {
@@ -25,5 +24,4 @@ it('builds inclusive ranges from fromTo helper', function (): void {
 });
 
 it('throws when fromTo end is lower than start', function (): void {
-
 });

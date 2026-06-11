@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Models\XotBaseModel;
@@ -43,8 +43,12 @@ test('safe object cast action works', function (): void {
     Assert::assertSame('test', $action->getTypedProperty($obj, 'str', 'string'));
     Assert::assertTrue($action->hasPropertyValue($obj, 'str', 'test'));
     Assert::assertFalse($action->hasPropertyValue($obj, 'str', 'wrong'));
-    Assert::assertSame(0, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool { return $v > 200; }, 0));
-    Assert::assertSame(123, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool { return $v > 100; }));
+    Assert::assertSame(0, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool {
+        return $v > 200;
+    }, 0));
+    Assert::assertSame(123, $action->getValidatedProperty($obj, 'int', 'int', function (mixed $v): bool {
+        return $v > 100;
+    }));
     Assert::assertTrue($action->hasMethod($obj, 'testMethod'));
     Assert::assertFalse($action->hasMethod($obj, 'invalid'));
     Assert::assertSame('def', $action->callMethodSafely($obj, 'invalid', [], 'def'));
@@ -77,8 +81,12 @@ test('safe eloquent cast action works', function (): void {
     Assert::assertSame('test', $action->getStringAttribute($model, 'str'));
     Assert::assertSame('test', $action->getTypedAttribute($model, 'str', 'string'));
     Assert::assertTrue($action->hasAttributeValue($model, 'str', 'test'));
-    Assert::assertSame(123, $action->getValidatedAttribute($model, 'int', 'int', function (mixed $v): bool { return $v > 100; }));
-    Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (mixed $v): bool { return 123 === $v; }));
+    Assert::assertSame(123, $action->getValidatedAttribute($model, 'int', 'int', function (mixed $v): bool {
+        return $v > 100;
+    }));
+    Assert::assertTrue($action->hasAttributeCondition($model, 'int', function (mixed $v): bool {
+        return 123 === $v;
+    }));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'str', 'null_val', 'string'));
     Assert::assertSame('test', $action->getAttributeWithFallback($model, 'null_val', 'str', 'string'));
     Assert::assertSame(123, SafeEloquentCastAction::get($model, 'int', 'int'));

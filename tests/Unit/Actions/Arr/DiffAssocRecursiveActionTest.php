@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use PHPUnit\Framework\Assert;
 
@@ -40,7 +40,7 @@ it('throws exception for non-array items in fixType', function (): void {
     try {
         DiffAssocRecursiveAction::fixType(['a' => 'not-an-array']);
         Assert::fail('Expected exception not thrown');
-    } catch (\Exception) {
+    } catch (Exception) {
         // Expected
     }
 });
