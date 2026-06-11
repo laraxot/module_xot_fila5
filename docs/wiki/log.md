@@ -1,3 +1,36 @@
+---
+title: "Activity Log"
+type: log
+module: Xot
+tags: [xot, phpstan, pest, qmd]
+created: 2026-04-20
+updated: 2026-06-10
+qmd: "Xot log phpstan pest bridge discipline"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+---
+
+## [2026-06-10] testing | Module TestCase XotBase hierarchy
+
+- Aggiunto `rules/module-testcase-xotbase-hierarchy.md`.
+- Decisione verificata: XotBaseTestCase non estende `Nwidart\Modules\Tests\BaseTestCase` perche' la classe non esiste in `nwidart/laravel-modules v13.0.0`.
+- Activity/Xot TestCase usano XotBaseTestCase; transazioni e connessioni restano nei TestCase dei moduli.
+
+
+## [2026-06-10] testing | module TestCase hierarchy XotBase
+
+- Canon: `Modules/<Module>/tests/TestCase.php` -> `Modules\Xot\Tests\XotBaseTestCase` -> `Illuminate\Foundation\Testing\TestCase`.
+- Scartata ipotesi `Nwidart\Modules\Tests\BaseTestCase`: nel package installato v13.0.0 e' dev-only/non autoloadata.
+- Nuove pagine: `rules/module-testcase-xotbase-hierarchy.md`, `memories/testcase-hierarchy-nwidart-dev-only.md`.
+- Coordinamento: issue Xot #33, discussion Xot #34.
+
+## [2026-06-10] phpstan | Pest bridge discipline
+
+- Aggiunto `concepts/phpstan-pest-bridge-discipline.md`.
+- Xot puo' ospitare helper/bridge riusabili, ma i test dei moduli restano Pest e `laravel/phpstan.neon` resta dell'utente.
+
 ## [2026-06-07] phpstan | DTO factory self per run Modules no-flag
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules` -> **4993 file, [OK] No errors**.

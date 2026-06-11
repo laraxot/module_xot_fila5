@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\File;
-
+uses(\Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Datas\XotData;
+use PHPUnit\Framework\Assert;
 
 it('gets view namespace path from theme fallback correctly', function (): void {
     $ns = 'pub_theme';
-    $themeName = 'TestTheme';
+$themeName = 'TestTheme';
 
     // Create a concrete instance of XotData
     $xotData = XotData::from(['pub_theme' => $themeName]);
@@ -23,8 +23,7 @@ it('gets view namespace path from theme fallback correctly', function (): void {
     $action = app(GetViewNameSpacePathAction::class);
     $result = $action->execute($ns);
 
-    expect($result)->toBe(base_path('Themes/'.$themeName));
-
+    Assert::assertSame(base_path('Themes/'.$themeName), $result);
     // Reset instance for other tests
     $instanceProperty->setValue(null, null);
 });

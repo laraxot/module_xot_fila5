@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
+namespace Modules\Xot\Tests\Unit\Support;
 
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
-/**
- * Dummy class that uses HasTable and HasXotTable traits for testing.
- */
 class HasTableWithXotTestClass
 {
     use HasXotTable;
@@ -18,13 +15,14 @@ class HasTableWithXotTestClass
     public function getLayoutView(): mixed
     {
         $mock = \Mockery::mock();
-        $mock->shouldReceive('getTableColumns')->andReturn([]);
-        $mock->shouldReceive('getTableContentGrid')->andReturn([]);
+        $mock->allows(['getTableColumns' => []]);
+        $mock->allows(['getTableContentGrid' => []]);
 
         return $mock;
     }
 
     #[\Override]
+    /** @return array<int, mixed> */
     public function getTableColumns(): array
     {
         return [];
@@ -32,7 +30,10 @@ class HasTableWithXotTestClass
 
     public function getTable(): Table
     {
-        return \Mockery::mock(Table::class);
+        $mock = \Mockery::mock(Table::class);
+
+        /** @var Table $mock */
+        return $mock;
     }
 
     public function getTablePage(): ?int
@@ -55,6 +56,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableFilters(): array
     {
         return [];
@@ -65,6 +67,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableFilterState(string $_name): ?array
     {
         return [];
@@ -80,6 +83,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableColumnSearchIndicators(): array
     {
         return [];
@@ -90,6 +94,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableRecords(): array
     {
         return [];
@@ -105,6 +110,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return Collection<int, mixed> */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
         return new Collection();
@@ -120,6 +126,7 @@ class HasTableWithXotTestClass
         return 0;
     }
 
+    /** @return array<int, mixed> */
     public function getAllSelectableTableRecordKeys(): array
     {
         return [];

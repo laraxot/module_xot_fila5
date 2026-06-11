@@ -99,8 +99,8 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
-     * @param array<int, Model>           $models
-     * @param Collection<int, Model>      $collection
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
      *
      * @return array<int, Model>
      */

@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
-use function Safe\base64_decode;
-
 use Modules\Xot\Contracts\PdfBuilderContract;
 use Modules\Xot\Support\PdfBuilderAdapter;
+
+use function Safe\base64_decode;
+
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 

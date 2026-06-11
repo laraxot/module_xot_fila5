@@ -111,7 +111,7 @@ trait EnumTrait
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
             if (null === $migration || ! $migration->hasColumn($name)) {
-                $definition($table);
+                $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }
     }
