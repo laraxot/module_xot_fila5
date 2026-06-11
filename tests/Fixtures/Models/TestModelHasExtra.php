@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Fixtures\Models;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Traits\HasExtraTrait;
 
+
 class TestModelHasExtra extends Model
 {
     use HasExtraTrait;
