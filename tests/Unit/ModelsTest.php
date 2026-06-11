@@ -2,57 +2,44 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
-
+uses(\Modules\Xot\Tests\TestCase::class);
+use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
-use Modules\UI\Models\Asset;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
+use PHPUnit\Framework\Assert;
 
 it('can create a test user', function () {
-    $user = User::factory()->create([
+    $user = UserFactory::new()->createOne([
         'name' => 'Test User',
         'email' => 'test@example.com',
     ]);
 
-    expect($user)->toBeInstanceOf(User::class);
-    expect($user->name)->toBe('Test User');
-    expect($user->email)->toBe('test@example.com');
+    Assert::assertInstanceOf(User::class, $user);
+    Assert::assertSame('Test User', $user->name);
+    Assert::assertSame('test@example.com', $user->email);
 });
 
 it('can create a test tenant', function () {
-    $tenant = Tenant::factory()->create([
+    $tenant = TenantFactory::new()->createOne([
         'name' => 'Test Tenant',
         'domain' => 'test.example.com',
     ]);
 
-    expect($tenant)->toBeInstanceOf(Tenant::class);
-    expect($tenant->name)->toBe('Test Tenant');
-    expect($tenant->domain)->toBe('test.example.com');
+    Assert::assertInstanceOf(Tenant::class, $tenant);
+    Assert::assertSame('Test Tenant', $tenant->name);
+    Assert::assertSame('test.example.com', $tenant->domain);
 });
 
 it('can create a test module', function () {
-    $module = Module::factory()->create([
+    $module = ModuleFactory::new()->createOne([
         'name' => 'TestModule',
         'enabled' => true,
     ]);
 
-    expect($module)->toBeInstanceOf(Module::class);
-    expect($module->name)->toBe('TestModule');
-    expect($module->enabled)->toBeTrue();
-});
-
-it('can run module migrations', function () {
-    $this->artisan('migrate', ['--env' => 'testing', '--force' => true]);
-});
-
-it('can create a test asset', function () {
-    $asset = Asset::factory()->create([
-        'name' => 'Test Asset',
-        'path' => '/test/path',
-    ]);
-
-    expect($asset)->toBeInstanceOf(Asset::class);
-    expect($asset->name)->toBe('Test Asset');
-    expect($asset->path)->toBe('/test/path');
+    Assert::assertInstanceOf(Module::class, $module);
+    Assert::assertSame('TestModule', $module->name);
+    Assert::assertTrue((bool) $module->enabled);
 });

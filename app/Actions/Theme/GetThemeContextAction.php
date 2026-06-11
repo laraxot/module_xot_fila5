@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Theme;
 
+use function Safe\copy;
 use Carbon\Carbon;
 use Spatie\QueueableAction\QueueableAction;
 
