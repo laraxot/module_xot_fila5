@@ -4,7 +4,7 @@ type: concept
 module: Xot
 tags: [testing, pest, phpstan, laravel-modules, xotbasetestcase, architecture]
 created: 2026-06-10
-updated: 2026-06-11
+updated: 2026-06-10
 qmd: "testcase xotbasetestcase nwidart laravel modules pest phpstan hierarchy"
 issues:
   - https://github.com/laraxot/base_fixcity_fila5/issues/316
@@ -98,20 +98,10 @@ abstract class TestCase extends XotBaseTestCase
 
 Tests remain Pest. Prefer `uses(Modules\<Module>\Tests\TestCase::class)` in each Pest file. Avoid module-level `pest()->extend(...)->in(...)` when PHPStan reports Pest internal APIs as `method.internalClass`.
 
-## PHPUnit config
-
-Use only `laravel/phpunit.xml` from `laravel/`:
-
-```bash
-./vendor/bin/pest Modules/<Module>/tests/ --configuration phpunit.xml
-```
-
-See [phpunit-central-config-only.md](../rules/phpunit-central-config-only.md).
-
 ## Verification
 
 ```bash
 cd laravel
 ./vendor/bin/phpstan analyse Modules/<Module>/tests/TestCase.php Modules/Xot/tests/XotBaseTestCase.php
-./vendor/bin/pest Modules/<Module>/tests --configuration phpunit.xml --filter="relevant test"
+./vendor/bin/pest Modules/<Module>/tests --filter="relevant test"
 ```

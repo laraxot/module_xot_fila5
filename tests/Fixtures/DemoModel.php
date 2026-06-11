@@ -6,6 +6,9 @@ namespace Modules\Xot\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 
+
+
+
 class DemoModel extends Model
 {
     protected $table = 'demo_models';

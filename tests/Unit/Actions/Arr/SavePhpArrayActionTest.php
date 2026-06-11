@@ -5,39 +5,60 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
+use function Safe\glob;
+use function Safe\mkdir;
+use function Safe\rmdir;
+use function Safe\unlink;
 
-beforeEach(function (): void {
-    $this->action = app(SavePhpArrayAction::class);
-    $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
-    if (! file_exists($this->tempDir)) {
-        mkdir($this->tempDir, 0755, true);
-    }
-});
-
-afterEach(function (): void {
-    if (isset($this->tempDir) && file_exists($this->tempDir)) {
-        $files = glob($this->tempDir.'/*');
-        if (false !== $files) {
-            array_map('unlink', $files);
+class SavePhpArrayActionTest extends TestCase
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->action = app(SavePhpArrayAction::class);
+        $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
+        if (! file_exists($this->tempDir)) {
+            mkdir($this->tempDir, 0755, true);
         }
-        rmdir($this->tempDir);
     }
-});
 
-it('saves array to php file', function (): void {
-    $data = ['a' => 1, 'b' => 'test'];
-    $path = $this->tempDir.'/data.php';
+    protected function tearDown(): void
+    {
+        if (isset($this->tempDir) && file_exists($this->tempDir)) {
+            $dir = $this->tempDir;
+            $files = glob($dir.'/*');
+            foreach ($files as $file) {
+                $this->assertIsString($file);
+                unlink($file);
+            }
+            rmdir($dir);
+        }
+        parent::tearDown();
+    }
 
-    $result = $this->action->execute($data, $path);
+    #[Test]
+    public function saves_array_to_php_file(): void
+    {
+        $data = ['a' => 1, 'b' => 'test'];
+        $path = $this->tempDir.'/data.php';
 
-    expect($result)->toBeTrue();
-    $loaded = require $path;
-    expect($loaded)->toBe($data);
-});
+        $result = app(SavePhpArrayAction::class)->execute($data, $path);
 
-it('saved file has strict types', function (): void {
-    $path = $this->tempDir.'/strict.php';
-    $this->action->execute(['x' => 1], $path);
+        Assert::assertTrue($result);
+        $loaded = require $path;
+        Assert::assertSame($data, $loaded);
+    }
 
-    expect(file_get_contents($path))->toContain('declare(strict_types=1)');
-});
+    #[Test]
+    public function saved_file_has_strict_types(): void
+    {
+        $path = $this->tempDir.'/strict.php';
+        app(SavePhpArrayAction::class)->execute(['x' => 1], $path);
+
+        Assert::assertStringContainsString('declare(strict_types=1)', file_get_contents($path));
+    }
+}

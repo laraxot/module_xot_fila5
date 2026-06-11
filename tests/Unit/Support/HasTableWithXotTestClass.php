@@ -28,14 +28,11 @@ class HasTableWithXotTestClass
         return [];
     }
 
-    /**
-     * @return Table&\Mockery\MockInterface
-     */
     public function getTable(): Table
     {
-        /** @var Table&\Mockery\MockInterface $mock */
         $mock = \Mockery::mock(Table::class);
 
+        /** @var Table $mock */
         return $mock;
     }
 

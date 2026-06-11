@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+use function Safe\copy;
 use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

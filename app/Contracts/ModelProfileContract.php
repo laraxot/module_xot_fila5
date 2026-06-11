@@ -69,7 +69,7 @@ interface ModelProfileContract extends ModelContract
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @param  Builder<Model>  $query
+     * @param Builder<Model> $query
      *
      * @return Builder<Model>
      */

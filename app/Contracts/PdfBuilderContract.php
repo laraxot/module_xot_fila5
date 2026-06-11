@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
-use Closure;
-
 interface PdfBuilderContract
 {
     public function format(string $format): self;
@@ -15,9 +13,9 @@ interface PdfBuilderContract
     public function download(): self;
 
     /**
-     * @param Closure(object): void $callback
+     * @param \Closure(object): void $callback
      */
-    public function withBrowsershot(Closure $callback): self;
+    public function withBrowsershot(\Closure $callback): self;
 
     public function base64(): string;
 }

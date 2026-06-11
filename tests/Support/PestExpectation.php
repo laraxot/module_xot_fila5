@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Support;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
-/**
- * @property self $not Negated expectation (resolved via __get).
- */
+
+
+
+
+use ArrayAccess;
+use Countable;
+use Traversable;
 final class PestExpectation
 {
     public function __construct(
@@ -20,7 +23,7 @@ final class PestExpectation
 
     public function __get(string $name): self
     {
-        if ('not' === $name) {
+        if ($name === 'not') {
             return $this->not();
         }
 
@@ -155,8 +158,8 @@ final class PestExpectation
         foreach ($needles as $needle) {
             if (is_string($this->value)) {
                 $this->negated
-                    ? Assert::assertStringNotContainsString(SafeStringCastAction::cast($needle), $this->value)
-                    : Assert::assertStringContainsString(SafeStringCastAction::cast($needle), $this->value);
+                    ? Assert::assertStringNotContainsString((string) $needle, $this->value)
+                    : Assert::assertStringContainsString((string) $needle, $this->value);
 
                 continue;
             }
@@ -176,7 +179,7 @@ final class PestExpectation
             Assert::fail('Expected key must be an integer or string.');
         }
 
-        if ($this->value instanceof \ArrayAccess) {
+        if ($this->value instanceof ArrayAccess) {
             $exists = $this->value->offsetExists($key);
             $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
 
@@ -209,7 +212,7 @@ final class PestExpectation
         $exists = property_exists($this->value, $property) || isset($this->value->{$property});
         $this->negated ? Assert::assertFalse($exists) : Assert::assertTrue($exists);
 
-        if (2 === func_num_args() && ! $this->negated) {
+        if (func_num_args() === 2 && ! $this->negated) {
             Assert::assertEquals($expectedValue, $this->value->{$property});
         }
 
@@ -231,8 +234,8 @@ final class PestExpectation
     public function toMatch(string $pattern): self
     {
         $this->negated
-            ? Assert::assertDoesNotMatchRegularExpression($pattern, SafeStringCastAction::cast($this->value))
-            : Assert::assertMatchesRegularExpression($pattern, SafeStringCastAction::cast($this->value));
+            ? Assert::assertDoesNotMatchRegularExpression($pattern, (string) $this->value)
+            : Assert::assertMatchesRegularExpression($pattern, (string) $this->value);
 
         return $this;
     }
@@ -305,26 +308,26 @@ final class PestExpectation
 
     public function toStartWith(string $prefix): self
     {
-        if ('' === $prefix) {
+        if ($prefix === '') {
             Assert::fail('Expected a non-empty prefix.');
         }
 
         $this->negated
-            ? Assert::assertStringStartsNotWith($prefix, SafeStringCastAction::cast($this->value))
-            : Assert::assertStringStartsWith($prefix, SafeStringCastAction::cast($this->value));
+            ? Assert::assertStringStartsNotWith($prefix, (string) $this->value)
+            : Assert::assertStringStartsWith($prefix, (string) $this->value);
 
         return $this;
     }
 
     public function toEndWith(string $suffix): self
     {
-        if ('' === $suffix) {
+        if ($suffix === '') {
             Assert::fail('Expected a non-empty suffix.');
         }
 
         $this->negated
-            ? Assert::assertStringEndsNotWith($suffix, SafeStringCastAction::cast($this->value))
-            : Assert::assertStringEndsWith($suffix, SafeStringCastAction::cast($this->value));
+            ? Assert::assertStringEndsNotWith($suffix, (string) $this->value)
+            : Assert::assertStringEndsWith($suffix, (string) $this->value);
 
         return $this;
     }
@@ -370,11 +373,11 @@ final class PestExpectation
     }
 
     /**
-     * @return array<array-key, mixed>|\Countable
+     * @return array<array-key, mixed>|Countable
      */
-    private function normaliseCountable(mixed $value): array|\Countable
+    private function normaliseCountable(mixed $value): array|Countable
     {
-        if ($value instanceof \Countable) {
+        if ($value instanceof Countable) {
             return $value;
         }
 
@@ -386,7 +389,7 @@ final class PestExpectation
      */
     private function normaliseIterable(mixed $value): array
     {
-        if ($value instanceof \Traversable) {
+        if ($value instanceof Traversable) {
             return iterator_to_array($value);
         }
 
