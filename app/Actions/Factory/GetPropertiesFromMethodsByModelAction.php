@@ -12,6 +12,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Factory;
 
+use function Safe\file;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;

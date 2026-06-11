@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Exports;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
-use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Collection as SupportCollection;
 use Maatwebsite\Excel\Concerns\Exportable;
 use Maatwebsite\Excel\Concerns\FromCollection;
@@ -38,7 +38,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
     /**
      * @param SupportCollection<int, mixed>|EloquentCollection<int, Model> $collection
-     * @param array<int, string>                                             $fields
+     * @param array<int, string>                                           $fields
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {

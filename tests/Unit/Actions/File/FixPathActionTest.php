@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\File;
-
+uses(\Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\File\FixPathAction;
+use PHPUnit\Framework\Assert;
 
 it('normalizes path slashes correctly', function (): void {
     $action = app(FixPathAction::class);
@@ -12,5 +12,5 @@ it('normalizes path slashes correctly', function (): void {
     $path = 'some/path\with/mixed\\slashes';
     $expected = str_replace(['/', '\\'], [DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR], $path);
 
-    expect($action->execute($path))->toBe($expected);
+    Assert::assertSame($expected, $action->execute($path));
 });

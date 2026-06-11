@@ -20,25 +20,25 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
- * @property int               $id
- * @property string            $name
- * @property int               $depth
+ * @property int                    $id
+ * @property string                 $name
+ * @property int                    $depth
  * @property Collection<int, Model> $children
- * @property int|null                 $children_count
- * @property Collection<int, Model>   $ancestors                  The model's recursive parents.
- * @property int|null                 $ancestors_count
- * @property Collection<int, Model>   $ancestorsAndSelf           The model's recursive parents and itself.
- * @property int|null                 $ancestors_and_self_count
- * @property Collection<int, Model>   $bloodline                  The model's ancestors, descendants and itself.
- * @property int|null                 $bloodline_count
- * @property Collection<int, Model>   $childrenAndSelf            The model's direct children and itself.
- * @property int|null                 $children_and_self_count
- * @property Collection<int, Model>   $descendants                The model's recursive children.
- * @property int|null                 $descendants_count
- * @property Collection<int, Model>   $descendantsAndSelf         The model's recursive children and itself.
- * @property int|null                 $descendants_and_self_count
- * @property Collection<int, Model>   $parentAndSelf              The model's direct parent and itself.
- * @property int|null          $parent_and_self_count
+ * @property int|null               $children_count
+ * @property Collection<int, Model> $ancestors                  The model's recursive parents.
+ * @property int|null               $ancestors_count
+ * @property Collection<int, Model> $ancestorsAndSelf           The model's recursive parents and itself.
+ * @property int|null               $ancestors_and_self_count
+ * @property Collection<int, Model> $bloodline                  The model's ancestors, descendants and itself.
+ * @property int|null               $bloodline_count
+ * @property Collection<int, Model> $childrenAndSelf            The model's direct children and itself.
+ * @property int|null               $children_and_self_count
+ * @property Collection<int, Model> $descendants                The model's recursive children.
+ * @property int|null               $descendants_count
+ * @property Collection<int, Model> $descendantsAndSelf         The model's recursive children and itself.
+ * @property int|null               $descendants_and_self_count
+ * @property Collection<int, Model> $parentAndSelf              The model's direct parent and itself.
+ * @property int|null               $parent_and_self_count
  *
  * @phpstan-require-extends Model
  *
@@ -115,43 +115,43 @@ interface HasRecursiveRelationshipsContract
     public function getExpressionName();
 
     /** @return Ancestors<Model, Model> */
-    public function ancestors(): Ancestors;
+    public function ancestors();
 
     /** @return Ancestors<Model, Model> */
-    public function ancestorsAndSelf(): Ancestors;
+    public function ancestorsAndSelf();
 
     /** @return Bloodline<Model, Model> */
-    public function bloodline(): Bloodline;
+    public function bloodline();
 
     /** @return HasMany<Model, Model> */
-    public function children(): HasMany;
+    public function children();
 
     /** @return Descendants<Model, Model> */
-    public function childrenAndSelf(): Descendants;
+    public function childrenAndSelf();
 
     /** @return Descendants<Model, Model> */
-    public function descendants(): Descendants;
+    public function descendants();
 
     /** @return Descendants<Model, Model> */
-    public function descendantsAndSelf(): Descendants;
+    public function descendantsAndSelf();
 
     /** @return BelongsTo<Model, Model> */
-    public function parent(): BelongsTo;
+    public function parent();
 
     /** @return Ancestors<Model, Model> */
-    public function parentAndSelf(): Ancestors;
+    public function parentAndSelf();
 
     /** @return RootAncestor<Model, Model> */
-    public function rootAncestor(): RootAncestor;
+    public function rootAncestor();
 
     /** @return RootAncestorOrSelf<Model, Model> */
-    public function rootAncestorOrSelf(): RootAncestorOrSelf;
+    public function rootAncestorOrSelf();
 
     /** @return Siblings<Model, Model> */
-    public function siblings(): Siblings;
+    public function siblings();
 
     /** @return Siblings<Model, Model> */
-    public function siblingsAndSelf(): Siblings;
+    public function siblingsAndSelf();
 
     /**
      * Get the first segment of the model's path.
@@ -175,16 +175,18 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute(string $attribute);
 
     /**
-     * @param  \Illuminate\Database\Query\Builder  $query
-     * @return \Staudenmeir\LaravelAdjacencyList\Eloquent\Builder<\Illuminate\Database\Eloquent\Model>
+     * @param Builder $query
+     *
+     * @return AdjacencyBuilder<Model>
      */
-    public function newEloquentBuilder($query): AdjacencyBuilder;
+    public function newEloquentBuilder($query);
 
     /**
-     * @param  list<\Illuminate\Database\Eloquent\Model>  $models
-     * @return \Staudenmeir\LaravelAdjacencyList\Eloquent\Collection<int, \Illuminate\Database\Eloquent\Model>
+     * @param list<Model> $models
+     *
+     * @return Collection<int, Model>
      */
-    public function newCollection(array $models = []): Collection;
+    public function newCollection(array $models = []);
 
     /**
      * added by XOT, viene utilizzato nelle options delle select.

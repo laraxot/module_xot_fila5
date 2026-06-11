@@ -6,46 +6,64 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AddStrictTypesDeclarationAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\Assert;
 
-beforeEach(function (): void {
-    $this->action = app(AddStrictTypesDeclarationAction::class);
-    $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_strict_types_'.uniqid();
-    File::makeDirectory($this->tempDir, 0755, true);
-});
+class AddStrictTypesDeclarationActionTest extends TestCase
+{
+    protected string $workDir;
 
-afterEach(function (): void {
-    if (File::isDirectory($this->tempDir)) {
-        File::deleteDirectory($this->tempDir);
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->action = app(AddStrictTypesDeclarationAction::class);
+        $this->workDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_strict_types_'.uniqid();
+        File::makeDirectory($this->workDir, 0755, true);
     }
-});
 
-it('adds strict types declaration to php file', function (): void {
-    $file = $this->tempDir.'/test.php';
-    File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
+    protected function tearDown(): void
+    {
+        if (File::isDirectory($this->workDir)) {
+            File::deleteDirectory($this->workDir);
+        }
+        parent::tearDown();
+    }
 
-    $this->action->execute($file);
+    #[Test]
+    public function adds_strict_types_declaration_to_php_file(): void
+    {
+        $file = $this->workDir.'/test.php';
+        File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
 
-    $content = File::get($file);
-    expect($content)->toContain('declare(strict_types=1)');
-});
+        app(AddStrictTypesDeclarationAction::class)->execute($file);
 
-it('does not duplicate strict types if already present', function (): void {
-    $file = $this->tempDir.'/test.php';
-    File::put($file, "<?php\n\n\n\nnamespace Test;");
+        $content = File::get($file);
+        Assert::assertStringContainsString('declare(strict_types=1)', $content);
+    }
 
-    $this->action->execute($file);
+    #[Test]
+    public function does_not_duplicate_strict_types_if_already_present(): void
+    {
+        $file = $this->workDir.'/test.php';
+        File::put($file, "<?php\n\n\n\nnamespace Test;");
 
-    $content = File::get($file);
-    expect(substr_count($content, 'declare(strict_types=1)'))->toBe(1);
-});
+        app(AddStrictTypesDeclarationAction::class)->execute($file);
 
-it('handles file with existing namespace', function (): void {
-    $file = $this->tempDir.'/test.php';
-    File::put($file, "<?php\n\n\n\nclass TestAction {}");
+        $content = File::get($file);
+        Assert::assertSame(1, substr_count($content, 'declare(strict_types=1)'));
+    }
 
-    $this->action->execute($file);
+    #[Test]
+    public function handles_file_with_existing_namespace(): void
+    {
+        $file = $this->workDir.'/test.php';
+        File::put($file, "<?php\n\n\n\nclass TestAction {}");
 
-    $content = File::get($file);
-    expect($content)->toContain('declare(strict_types=1)')
-        ->and($content)->toContain('class TestAction {}');
-});
+        app(AddStrictTypesDeclarationAction::class)->execute($file);
+
+        $content = File::get($file);
+        Assert::assertStringContainsString('declare(strict_types=1)', $content);
+        Assert::assertStringContainsString('class TestAction {}', $content);
+    }
+}
