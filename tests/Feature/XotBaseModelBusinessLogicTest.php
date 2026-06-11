@@ -11,15 +11,16 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_encode;
 use function Safe\unserialize;
-
 
 class XotBaseModelBusinessLogicTest extends TestCase
 {
     private function createBaseModel(): BaseModel
     {
-        return new class extends BaseModel {};
+        return new class extends BaseModel {
+        };
     }
 
     /** @test */

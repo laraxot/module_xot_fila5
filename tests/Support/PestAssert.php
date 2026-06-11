@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Support;
 
-use ArrayAccess;
-use Countable;
 use PHPUnit\Framework\Assert;
-use Throwable;
-use Traversable;
 
 /**
  * PHPStan-safe assertion facade for Pest test closures.
@@ -97,13 +93,13 @@ final class PestAssert
             Assert::fail('Expected count must be an integer.');
         }
 
-        if ($actual instanceof Countable) {
+        if ($actual instanceof \Countable) {
             Assert::assertCount($expectedCount, $actual);
 
             return;
         }
 
-        if ($actual instanceof Traversable) {
+        if ($actual instanceof \Traversable) {
             $actual = iterator_to_array($actual);
         }
 
@@ -129,7 +125,7 @@ final class PestAssert
             return;
         }
 
-        if ($actual instanceof Traversable) {
+        if ($actual instanceof \Traversable) {
             $actual = iterator_to_array($actual);
         }
 
@@ -145,7 +141,7 @@ final class PestAssert
             return;
         }
 
-        if ($actual instanceof Traversable) {
+        if ($actual instanceof \Traversable) {
             $actual = iterator_to_array($actual);
         }
 
@@ -165,7 +161,7 @@ final class PestAssert
             return;
         }
 
-        if ($actual instanceof ArrayAccess) {
+        if ($actual instanceof \ArrayAccess) {
             Assert::assertTrue($actual->offsetExists($key));
 
             return;
@@ -186,7 +182,7 @@ final class PestAssert
             return;
         }
 
-        if ($actual instanceof ArrayAccess) {
+        if ($actual instanceof \ArrayAccess) {
             Assert::assertFalse($actual->offsetExists($key));
 
             return;
@@ -261,7 +257,7 @@ final class PestAssert
 
     public static function in(mixed $actual, mixed $expectedValues): void
     {
-        if ($expectedValues instanceof Traversable) {
+        if ($expectedValues instanceof \Traversable) {
             $expectedValues = iterator_to_array($expectedValues);
         }
 
@@ -273,7 +269,7 @@ final class PestAssert
     {
         Assert::assertIsString($prefix);
 
-        if ($prefix === '') {
+        if ('' === $prefix) {
             Assert::fail('Expected a non-empty prefix.');
         }
 
@@ -284,7 +280,7 @@ final class PestAssert
     {
         Assert::assertIsString($suffix);
 
-        if ($suffix === '') {
+        if ('' === $suffix) {
             Assert::fail('Expected a non-empty suffix.');
         }
 
@@ -329,7 +325,7 @@ final class PestAssert
     /**
      * @param array<array-key, mixed> $constraints
      */
-    private static function assertThrownExceptionMatches(Throwable $exception, array $constraints): void
+    private static function assertThrownExceptionMatches(\Throwable $exception, array $constraints): void
     {
         foreach ($constraints as $constraint) {
             if (is_string($constraint) && class_exists($constraint) && is_a($constraint, \Throwable::class, true)) {
@@ -338,7 +334,7 @@ final class PestAssert
                 continue;
             }
 
-            if (is_string($constraint) && $constraint !== '') {
+            if (is_string($constraint) && '' !== $constraint) {
                 Assert::assertStringContainsString($constraint, $exception->getMessage());
             }
         }

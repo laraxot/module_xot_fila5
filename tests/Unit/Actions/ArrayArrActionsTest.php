@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Filament\Support\RawJs;
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction as ArrDiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction as ArrRangeIntersectAction;
@@ -15,6 +15,7 @@ use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 use Modules\Xot\Actions\Array\SaveJsonArrayAction as ArraySaveJsonArrayAction;
 use Modules\Xot\Actions\Array\SavePhpArrayAction as ArraySavePhpArrayAction;
 use PHPUnit\Framework\Assert;
+
 use function Safe\file_get_contents;
 use function Safe\mkdir;
 
@@ -36,7 +37,7 @@ it('throws when fixType receives a non-array item for Arr namespace', function (
     try {
         ArrDiffAssocRecursiveAction::fixType(['items' => ['a' => '1'], 'invalid' => 'string']);
         Assert::fail('Expected exception not thrown');
-    } catch (\Exception) {
+    } catch (Exception) {
         // Expected
     }
 });
@@ -72,7 +73,7 @@ it('throws when fixType receives a non-array item for Array namespace', function
     try {
         ArrayDiffAssocRecursiveAction::fixType(['items' => 123]);
         Assert::fail('Expected exception not thrown');
-    } catch (\Exception) {
+    } catch (Exception) {
         // Expected
     }
 });
@@ -169,7 +170,7 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
         $action = new ArrSaveArrayAction();
         $action->execute(['x' => 1], '/tmp/unused', 'xml');
         Assert::fail('Expected exception not thrown');
-    } catch (\InvalidArgumentException) {
+    } catch (InvalidArgumentException) {
         // Expected
     }
 });

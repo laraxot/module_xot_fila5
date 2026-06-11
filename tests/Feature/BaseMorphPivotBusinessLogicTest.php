@@ -5,11 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
-use Modules\Xot\Models\BaseMorphPivot;
 use Modules\Xot\Tests\Fixtures\Models\TestConcreteMorphPivot;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 
 class BaseMorphPivotBusinessLogicTest extends TestCase
 {

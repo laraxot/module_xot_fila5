@@ -6,9 +6,9 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Modules\Xot\Actions\Array\SaveArrayAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
-use function Safe\file_get_contents;
+use PHPUnit\Framework\Attributes\Test;
+
 use function Safe\glob;
 use function Safe\mkdir;
 use function Safe\rmdir;
@@ -41,7 +41,7 @@ class SaveArrayActionTest extends TestCase
     }
 
     #[Test]
-    public function saves_array_in_json_format(): void
+    public function savesArrayInJsonFormat(): void
     {
         $path = $this->tempDir.'/data.json';
 
@@ -51,7 +51,7 @@ class SaveArrayActionTest extends TestCase
     }
 
     #[Test]
-    public function saves_array_in_php_format_by_default(): void
+    public function savesArrayInPhpFormatByDefault(): void
     {
         $path = $this->tempDir.'/data.php';
 
@@ -62,7 +62,7 @@ class SaveArrayActionTest extends TestCase
     }
 
     #[Test]
-    public function throws_for_unsupported_format(): void
+    public function throwsForUnsupportedFormat(): void
     {
         try {
             app(SaveArrayAction::class)->execute([], $this->tempDir.'/invalid.txt', 'xml');

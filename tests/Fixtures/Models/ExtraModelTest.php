@@ -29,7 +29,7 @@ class ExtraModelTest extends Model implements ExtraContract
     }
 
     /**
-     * @return MorphTo<\Illuminate\Database\Eloquent\Model, $this>
+     * @return MorphTo<Model, $this>
      */
     public function model(): MorphTo
     {

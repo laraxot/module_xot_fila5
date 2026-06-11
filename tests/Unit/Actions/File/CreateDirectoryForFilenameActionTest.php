@@ -7,8 +7,8 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\CreateDirectoryForFilenameAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\Test;
 
 class CreateDirectoryForFilenameActionTest extends TestCase
 {
@@ -33,7 +33,7 @@ class CreateDirectoryForFilenameActionTest extends TestCase
     }
 
     #[Test]
-    public function creates_directory_for_filename(): void
+    public function createsDirectoryForFilename(): void
     {
         $filename = $this->workDir.'/nested/deep/file.txt';
 
@@ -43,7 +43,7 @@ class CreateDirectoryForFilenameActionTest extends TestCase
     }
 
     #[Test]
-    public function does_nothing_when_directory_already_exists(): void
+    public function doesNothingWhenDirectoryAlreadyExists(): void
     {
         $filename = $this->workDir.'/existing/file.txt';
         File::makeDirectory($this->workDir.'/existing', 0755, true);
@@ -54,7 +54,7 @@ class CreateDirectoryForFilenameActionTest extends TestCase
     }
 
     #[Test]
-    public function handles_root_level_file(): void
+    public function handlesRootLevelFile(): void
     {
         $filename = $this->workDir.'/rootfile.txt';
         File::makeDirectory($this->workDir, 0755, true);

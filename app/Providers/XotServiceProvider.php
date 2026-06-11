@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
-use function Safe\realpath;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -26,6 +25,9 @@ use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
+
+use function Safe\realpath;
+
 use Webmozart\Assert\Assert;
 
 /**

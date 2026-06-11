@@ -12,7 +12,7 @@ uses(TestCase::class);
 it('sets csrf token on mount', function (): void {
     $token = 'test-token-123';
 
-    $session = \Mockery::mock();
+    $session = Mockery::mock();
     $session->allows(['token' => $token]);
     App::instance('session', $session);
 
@@ -33,7 +33,7 @@ it('sets csrf token on mount', function (): void {
     $class->mount();
 
     Assert::assertSame($token, $class->getCsrfToken());
-    \Mockery::close();
+    Mockery::close();
 });
 
 it('verifies csrf token', function (): void {
@@ -52,5 +52,5 @@ it('verifies csrf token', function (): void {
     Session::partialMock()->allows(['token' => $token]);
 
     Assert::assertTrue($class->verifyCsrfToken());
-    \Mockery::close();
+    Mockery::close();
 });

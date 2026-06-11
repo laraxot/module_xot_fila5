@@ -31,7 +31,7 @@ class HasTableWithoutOptionalMethodsTestClass
     {
         $mock = \Mockery::mock(Table::class);
 
-        /** @var Table $mock */
+        /* @var Table $mock */
         return $mock;
     }
 

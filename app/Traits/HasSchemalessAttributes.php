@@ -49,7 +49,8 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -64,7 +65,8 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
