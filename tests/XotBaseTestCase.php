@@ -5,18 +5,17 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests;
 
 use Illuminate\Database\DatabaseManager;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
-use ReflectionClass;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\User\Database\Factories\UserFactory;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Datas\XotData;
@@ -133,7 +132,7 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     protected function prepareSharedFixcitySqliteForTesting(): void
     {
-        if ($this->app === null) {
+        if (null === $this->app) {
             $this->refreshApplication();
         }
 
@@ -146,7 +145,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
@@ -159,7 +158,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
-        if ($sqliteConnections === []) {
+        if ([] === $sqliteConnections) {
             return;
         }
 
@@ -171,7 +170,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $database = $this->app->make('db');
         $primaryConnection = $database->connection($primaryName);
 
-        $managerReflection = new ReflectionClass($database);
+        $managerReflection = new \ReflectionClass($database);
         $connectionsProperty = $managerReflection->getProperty('connections');
         $connectionsProperty->setAccessible(true);
 

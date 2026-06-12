@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
@@ -26,8 +26,8 @@ it('throws when morph map config is not an array', function (): void {
     try {
         app(GetModelClassByModelTypeAction::class)->execute('demo');
         Assert::fail('Expected exception not thrown');
-    } catch (\Exception $e) {
-        Assert::assertInstanceOf(\Exception::class, $e);
+    } catch (Exception $e) {
+        Assert::assertInstanceOf(Exception::class, $e);
     }
 });
 
@@ -36,8 +36,9 @@ it('throws when model type key is missing in morph map', function (): void {
 
     try {
         app(GetModelClassByModelTypeAction::class)->execute('missing');
-    } catch (\Throwable $e) {
-        Assert::assertInstanceOf(\InvalidArgumentException::class, $e);
+    } catch (Throwable $e) {
+        Assert::assertInstanceOf(InvalidArgumentException::class, $e);
+
         return;
     }
     Assert::fail('Exception not thrown');
@@ -69,8 +70,8 @@ it('throws when model id is provided but record is missing', function (): void {
     try {
         app(GetModelByModelTypeAction::class)->execute('demo', '999999');
         Assert::fail('Expected exception not thrown');
-    } catch (\Exception $e) {
-        Assert::assertInstanceOf(\Exception::class, $e);
+    } catch (Exception $e) {
+        Assert::assertInstanceOf(Exception::class, $e);
     }
 });
 

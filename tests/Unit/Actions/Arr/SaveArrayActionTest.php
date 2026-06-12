@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_decode;
 use function Safe\tempnam;
 
@@ -37,5 +38,4 @@ test('save array action saves as json', function () {
 
 test('save array action throws exception for unsupported format', function () {
     $action = app(SaveArrayAction::class);
-
 });

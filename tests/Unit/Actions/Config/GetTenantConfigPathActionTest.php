@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 
 class GetTenantConfigPathActionTest extends TestCase
 {
-    public function testDelegates_to_tenant_file_path_action_with_php_filename(): void
+    public function testDelegatesToTenantFilePathActionWithPhpFilename(): void
     {
         $tenantPathAction = $this->createMock(GetTenantFilePathAction::class);
         $tenantPathAction->expects($this->once())

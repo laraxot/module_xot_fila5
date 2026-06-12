@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
@@ -29,7 +29,7 @@ it('delegates model instance class to model class action', function (): void {
     $model = new class extends Model {
         protected $table = 'test';
     };
-    $delegate = \Mockery::mock(GetModuleNameByModelClassAction::class);
+    $delegate = Mockery::mock(GetModuleNameByModelClassAction::class);
     $delegate->allows(['execute' => 'Delegated']);
     app()->instance(GetModuleNameByModelClassAction::class, $delegate);
 

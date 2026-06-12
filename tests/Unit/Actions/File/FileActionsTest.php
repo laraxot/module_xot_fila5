@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -19,8 +19,8 @@ test('fix path action works', function (): void {
 });
 
 test('view path action works', function (): void {
-    $mock = \Mockery::mock(GetViewNameSpacePathAction::class);
-    /** @phpstan-ignore-next-line Mockery expectation chain not resolvable without extension */
+    $mock = Mockery::mock(GetViewNameSpacePathAction::class);
+    /* @phpstan-ignore-next-line Mockery expectation chain not resolvable without extension */
     $mock->shouldReceive('execute')->with('test_ns')->andReturn('/view/path');
 
     app()->instance(GetViewNameSpacePathAction::class, $mock);

@@ -6,9 +6,6 @@ namespace Modules\Xot\Tests\Fixtures;
 
 use Modules\Xot\Actions\GetTransKeyAction;
 
-
-
-
 class TransKeyCaller
 {
     public function executeWithoutClass(): string

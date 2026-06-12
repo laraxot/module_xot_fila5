@@ -12,11 +12,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Factory;
 
-use function Safe\file;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
 
+use function Safe\file;
 use function Safe\preg_replace;
 
 use Spatie\QueueableAction\QueueableAction;

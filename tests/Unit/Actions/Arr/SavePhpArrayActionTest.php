@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\mkdir;
@@ -38,7 +39,8 @@ class SavePhpArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-    public function testSaves_array_to_php_file(): void
+
+    public function testSavesArrayToPhpFile(): void
     {
         $data = ['a' => 1, 'b' => 'test'];
         $path = $this->tempDir.'/data.php';
@@ -49,7 +51,8 @@ class SavePhpArrayActionTest extends TestCase
         $loaded = require $path;
         Assert::assertSame($data, $loaded);
     }
-    public function testSaved_file_has_strict_types(): void
+
+    public function testSavedFileHasStrictTypes(): void
     {
         $path = $this->tempDir.'/strict.php';
         app(SavePhpArrayAction::class)->execute(['x' => 1], $path);

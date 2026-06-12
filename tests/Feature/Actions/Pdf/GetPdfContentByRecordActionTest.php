@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -18,6 +17,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         parent::setUp();
         $this->action = new GetPdfContentByRecordAction();
     }
+
     public function testItGeneratesPdfContentFromRecord(): void
     {
         // Arrange
@@ -35,6 +35,7 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         app(GetPdfContentByRecordAction::class)->execute($user);
     }
+
     public function testItGeneratesCorrectViewName(): void
     {
         // Arrange
@@ -53,6 +54,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         // Assert
         Assert::assertEquals('user::user.show.pdf', $viewName);
     }
+
     public function testItGeneratesCorrectFilenameForBasicModel(): void
     {
         // Arrange
@@ -71,6 +73,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         // Assert
         Assert::assertEquals('user_123_test-user.pdf', $filename);
     }
+
     public function testItGeneratesEnhancedFilenameForPerformanceModels(): void
     {
         // Arrange - Create a mock model with performance fields
@@ -102,6 +105,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         // Assert
         Assert::assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
     }
+
     public function testItPreparesCorrectViewParameters(): void
     {
         // Arrange
@@ -126,6 +130,7 @@ class GetPdfContentByRecordActionTest extends TestCase
         Assert::assertSame($user, $params['row']);
         Assert::assertEquals('user::users.fields', $params['transKey']);
     }
+
     public function testItThrowsExceptionForMissingView(): void
     {
         // Arrange
@@ -137,12 +142,14 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         app(GetPdfContentByRecordAction::class)->execute($user);
     }
+
     public function testItThrowsExceptionForEmptyHtmlContent(): void
     {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
         $this->markTestSkipped('Requires view mocking infrastructure');
     }
+
     public function testItUsesCustomFilenameWhenProvided(): void
     {
         // Arrange
@@ -154,6 +161,7 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
     }
+
     public function testItHandlesFromRecordConvenienceMethod(): void
     {
         // Arrange
@@ -166,12 +174,14 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
     }
+
     public function testItLogsErrorsWhenPdfGenerationFails(): void
     {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
         $this->markTestSkipped('Requires HTML2PDF mocking infrastructure');
     }
+
     public function testItReturnsValidPdfContentWhenViewExists(): void
     {
         // This test would require creating actual test views

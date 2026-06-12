@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Filament\Resources\Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
