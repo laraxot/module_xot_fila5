@@ -40,9 +40,7 @@ class SavePhpArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function savesArrayToPhpFile(): void
+    public function testSaves_array_to_php_file(): void
     {
         $data = ['a' => 1, 'b' => 'test'];
         $path = $this->tempDir.'/data.php';
@@ -53,9 +51,7 @@ class SavePhpArrayActionTest extends TestCase
         $loaded = require $path;
         Assert::assertSame($data, $loaded);
     }
-
-    #[Test]
-    public function savedFileHasStrictTypes(): void
+    public function testSaved_file_has_strict_types(): void
     {
         $path = $this->tempDir.'/strict.php';
         app(SavePhpArrayAction::class)->execute(['x' => 1], $path);

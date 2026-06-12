@@ -52,7 +52,7 @@ class DiffAssocRecursiveAction
             try {
                 return ! \in_array($value, $arr_2, false);
             } catch (\Exception $exception) {
-                dddx(['err' => $exception->getMessage(), 'value' => $value, 'key' => $key, 'arr_2' => $arr_2]);
+                throw $exception;
             }
         });
 

@@ -39,9 +39,7 @@ class SaveArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function savesArrayInJsonFormat(): void
+    public function testSaves_array_in_json_format(): void
     {
         $path = $this->tempDir.'/data.json';
 
@@ -49,9 +47,7 @@ class SaveArrayActionTest extends TestCase
 
         Assert::assertTrue($result);
     }
-
-    #[Test]
-    public function savesArrayInPhpFormatByDefault(): void
+    public function testSaves_array_in_php_format_by_default(): void
     {
         $path = $this->tempDir.'/data.php';
 
@@ -60,9 +56,7 @@ class SaveArrayActionTest extends TestCase
 
         Assert::assertNotNull(require $path);
     }
-
-    #[Test]
-    public function throwsForUnsupportedFormat(): void
+    public function testThrows_for_unsupported_format(): void
     {
         try {
             app(SaveArrayAction::class)->execute([], $this->tempDir.'/invalid.txt', 'xml');

@@ -9,7 +9,9 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
+use ReflectionClass;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use Modules\Tenant\Database\Factories\TenantFactory;
@@ -118,5 +120,68 @@ abstract class XotBaseTestCase extends BaseTestCase
     protected static function createTestModule(array $attributes = []): Module
     {
         return ModuleFactory::new()->createOne($attributes);
+    }
+
+    /**
+     * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
+     *
+     * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
+     * each opening their own transaction causes "database is locked". Sharing the
+     * primary PDO lets DatabaseTransactions roll back all module writes together.
+     *
+     * Call before parent::setUp() when the test case uses DatabaseTransactions.
+     */
+    protected function prepareSharedFixcitySqliteForTesting(): void
+    {
+        if ($this->app === null) {
+            $this->refreshApplication();
+        }
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        /** @var list<string> $sqliteConnections */
+        $sqliteConnections = [];
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $sqliteConnections[] = $connection;
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            $this->app['config']->set("database.connections.{$connection}.busy_timeout", 10000);
+        }
+
+        foreach ($sqliteConnections as $connection) {
+            DB::purge($connection);
+        }
+
+        if ($sqliteConnections === []) {
+            return;
+        }
+
+        $primaryName = in_array('sqlite', $sqliteConnections, true)
+            ? 'sqlite'
+            : $sqliteConnections[0];
+
+        /** @var DatabaseManager $database */
+        $database = $this->app->make('db');
+        $primaryConnection = $database->connection($primaryName);
+
+        $managerReflection = new ReflectionClass($database);
+        $connectionsProperty = $managerReflection->getProperty('connections');
+        $connectionsProperty->setAccessible(true);
+
+        /** @var array<string, mixed> $resolved */
+        $resolved = $connectionsProperty->getValue($database);
+
+        foreach ($sqliteConnections as $connection) {
+            $resolved[$connection] = $primaryConnection;
+        }
+
+        $connectionsProperty->setValue($database, $resolved);
     }
 }

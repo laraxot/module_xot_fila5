@@ -40,9 +40,7 @@ class SavePhpArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function savesArrayToPhp(): void
+    public function testSaves_array_to_php(): void
     {
         $path = $this->tempDir.'/d.php';
         $data = ['a' => 1];

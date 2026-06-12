@@ -15,8 +15,7 @@ use function Safe\tempnam;
 
 class GetTenantConfigActionsTest extends TestCase
 {
-    #[Test]
-    public function getsTenantConfigArrayCorrectly(): void
+    public function testGets_tenant_config_array_correctly(): void
     {
         $configName = 'test_config';
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
@@ -38,9 +37,7 @@ class GetTenantConfigActionsTest extends TestCase
         Assert::assertSame($configData, $result);
         File::delete($tempPath);
     }
-
-    #[Test]
-    public function returnsEmptyArrayIfTenantConfigFileDoesNotExist(): void
+    public function testReturns_empty_array_if_tenant_config_file_does_not_exist(): void
     {
         $configName = 'non_existent';
 

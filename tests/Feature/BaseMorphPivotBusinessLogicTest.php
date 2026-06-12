@@ -11,8 +11,7 @@ use PHPUnit\Framework\Assert;
 
 class BaseMorphPivotBusinessLogicTest extends TestCase
 {
-    /** @test */
-    public function itExtendsPivotClass(): void
+    public function testItExtendsPivotClass(): void
     {
         // Arrange & Act
         $pivot = new TestConcreteMorphPivot();
@@ -20,9 +19,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertInstanceOf(Pivot::class, $pivot);
     }
-
-    /** @test */
-    public function itCanManageMorphType(): void
+    public function testItCanManageMorphType(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -34,9 +31,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals('App\Models\User', $morphType);
     }
-
-    /** @test */
-    public function itCanManageMorphId(): void
+    public function testItCanManageMorphId(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -48,9 +43,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals(123, $morphId);
     }
-
-    /** @test */
-    public function itCanManageRelatedType(): void
+    public function testItCanManageRelatedType(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -62,9 +55,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals('App\Models\Post', $relatedType);
     }
-
-    /** @test */
-    public function itCanManageRelatedId(): void
+    public function testItCanManageRelatedId(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -76,9 +67,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals(456, $relatedId);
     }
-
-    /** @test */
-    public function itCanManagePivotAttributes(): void
+    public function testItCanManagePivotAttributes(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -95,9 +84,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertEquals('custom_value', $customField);
         Assert::assertEquals(42, $numericField);
     }
-
-    /** @test */
-    public function itCanManageTimestamps(): void
+    public function testItCanManageTimestamps(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -113,9 +100,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertEquals($now, $createdAt);
         Assert::assertEquals($now, $updatedAt);
     }
-
-    /** @test */
-    public function itCanManageSoftDeletes(): void
+    public function testItCanManageSoftDeletes(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -128,9 +113,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($deletedAt, $pivotDeletedAt);
     }
-
-    /** @test */
-    public function itCanManageTenantId(): void
+    public function testItCanManageTenantId(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -142,9 +125,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals(789, $tenantId);
     }
-
-    /** @test */
-    public function itCanManageUserId(): void
+    public function testItCanManageUserId(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -156,9 +137,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals(101, $userId);
     }
-
-    /** @test */
-    public function itCanManageMetadata(): void
+    public function testItCanManageMetadata(): void
     {
         // Arrange
         $metadata = [
@@ -182,9 +161,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertEquals('Test Browser', $pivotMetadata['user_agent']);
         Assert::assertEquals('session123', $pivotMetadata['session_id']);
     }
-
-    /** @test */
-    public function itCanManageExtraData(): void
+    public function testItCanManageExtraData(): void
     {
         // Arrange
         $extraData = [
@@ -210,9 +187,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         $nested = $pivotExtraData['nested'];
         Assert::assertEquals('value', $nested['key']);
     }
-
-    /** @test */
-    public function itCanManageStatus(): void
+    public function testItCanManageStatus(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -225,9 +200,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals('active', $status);
     }
-
-    /** @test */
-    public function itCanManagePriority(): void
+    public function testItCanManagePriority(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -240,9 +213,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals(5, $priority);
     }
-
-    /** @test */
-    public function itCanManageSortOrder(): void
+    public function testItCanManageSortOrder(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -255,9 +226,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals(10, $sortOrder);
     }
-
-    /** @test */
-    public function itCanManageExpiresAt(): void
+    public function testItCanManageExpiresAt(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -270,9 +239,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($expiresAt, $pivotExpiresAt);
     }
-
-    /** @test */
-    public function itCanManageStartsAt(): void
+    public function testItCanManageStartsAt(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -285,9 +252,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($startsAt, $pivotStartsAt);
     }
-
-    /** @test */
-    public function itCanManageEndsAt(): void
+    public function testItCanManageEndsAt(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -300,9 +265,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($endsAt, $pivotEndsAt);
     }
-
-    /** @test */
-    public function itCanManageIsActive(): void
+    public function testItCanManageIsActive(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -320,9 +283,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertFalse((bool) $pivot->getAttribute('is_active'));
     }
-
-    /** @test */
-    public function itCanManageIsPublic(): void
+    public function testItCanManageIsPublic(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -340,9 +301,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_public'));
     }
-
-    /** @test */
-    public function itCanManageIsFeatured(): void
+    public function testItCanManageIsFeatured(): void
     {
         // Arrange
         $pivot = new TestConcreteMorphPivot();
@@ -360,9 +319,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     }
-
-    /** @test */
-    public function itCanManageTags(): void
+    public function testItCanManageTags(): void
     {
         // Arrange
         $tags = ['tag1', 'tag2', 'important'];
@@ -381,9 +338,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertContains('important', $pivotTags);
         Assert::assertCount(3, $pivotTags);
     }
-
-    /** @test */
-    public function itCanManageCategories(): void
+    public function testItCanManageCategories(): void
     {
         // Arrange
         $categories = ['category1', 'category2'];
@@ -401,9 +356,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertContains('category2', $pivotCategories);
         Assert::assertCount(2, $pivotCategories);
     }
-
-    /** @test */
-    public function itCanManagePermissions(): void
+    public function testItCanManagePermissions(): void
     {
         // Arrange
         $permissions = [
@@ -425,9 +378,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertFalse($pivotPermissions['write']);
         Assert::assertFalse($pivotPermissions['delete']);
     }
-
-    /** @test */
-    public function itCanManageSettings(): void
+    public function testItCanManageSettings(): void
     {
         // Arrange
         $settings = [
@@ -449,9 +400,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         Assert::assertFalse($pivotSettings['auto_save']);
         Assert::assertEquals(30, $pivotSettings['timeout']);
     }
-
-    /** @test */
-    public function itCanManageNotes(): void
+    public function testItCanManageNotes(): void
     {
         // Arrange
         $notes = 'This is a test note for the pivot relationship';
@@ -465,9 +414,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($notes, $pivotNotes);
     }
-
-    /** @test */
-    public function itCanManageDescription(): void
+    public function testItCanManageDescription(): void
     {
         // Arrange
         $description = 'Test description for pivot relationship';
@@ -481,9 +428,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($description, $pivotDescription);
     }
-
-    /** @test */
-    public function itCanManageUrl(): void
+    public function testItCanManageUrl(): void
     {
         // Arrange
         $url = 'https://example.com/pivot/123';
@@ -497,9 +442,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($url, $pivotUrl);
     }
-
-    /** @test */
-    public function itCanManageImageUrl(): void
+    public function testItCanManageImageUrl(): void
     {
         // Arrange
         $imageUrl = 'https://example.com/images/pivot.jpg';
@@ -513,9 +456,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($imageUrl, $pivotImageUrl);
     }
-
-    /** @test */
-    public function itCanManageExternalId(): void
+    public function testItCanManageExternalId(): void
     {
         // Arrange
         $externalId = 'ext_12345';
@@ -529,9 +470,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($externalId, $pivotExternalId);
     }
-
-    /** @test */
-    public function itCanManageSource(): void
+    public function testItCanManageSource(): void
     {
         // Arrange
         $source = 'api_import';
@@ -545,9 +484,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($source, $pivotSource);
     }
-
-    /** @test */
-    public function itCanManageVersion(): void
+    public function testItCanManageVersion(): void
     {
         // Arrange
         $version = '1.2.3';
@@ -561,9 +498,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($version, $pivotVersion);
     }
-
-    /** @test */
-    public function itCanManageHash(): void
+    public function testItCanManageHash(): void
     {
         // Arrange
         $hash = 'abc123def456';
@@ -577,9 +512,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($hash, $pivotHash);
     }
-
-    /** @test */
-    public function itCanManageChecksum(): void
+    public function testItCanManageChecksum(): void
     {
         // Arrange
         $checksum = 'sha256:abc123def456';
@@ -593,9 +526,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($checksum, $pivotChecksum);
     }
-
-    /** @test */
-    public function itCanManageSize(): void
+    public function testItCanManageSize(): void
     {
         // Arrange
         $size = 1024;
@@ -610,9 +541,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($size, $pivotSize);
     }
-
-    /** @test */
-    public function itCanManageMimeType(): void
+    public function testItCanManageMimeType(): void
     {
         // Arrange
         $mimeType = 'application/json';
@@ -626,9 +555,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($mimeType, $pivotMimeType);
     }
-
-    /** @test */
-    public function itCanManageEncoding(): void
+    public function testItCanManageEncoding(): void
     {
         // Arrange
         $encoding = 'UTF-8';
@@ -642,9 +569,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($encoding, $pivotEncoding);
     }
-
-    /** @test */
-    public function itCanManageLanguage(): void
+    public function testItCanManageLanguage(): void
     {
         // Arrange
         $language = 'en';
@@ -658,9 +583,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($language, $pivotLanguage);
     }
-
-    /** @test */
-    public function itCanManageLocale(): void
+    public function testItCanManageLocale(): void
     {
         // Arrange
         $locale = 'en_US';
@@ -674,9 +597,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($locale, $pivotLocale);
     }
-
-    /** @test */
-    public function itCanManageTimezone(): void
+    public function testItCanManageTimezone(): void
     {
         // Arrange
         $timezone = 'Europe/Rome';
@@ -690,9 +611,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($timezone, $pivotTimezone);
     }
-
-    /** @test */
-    public function itCanManageCurrency(): void
+    public function testItCanManageCurrency(): void
     {
         // Arrange
         $currency = 'EUR';
@@ -706,9 +625,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($currency, $pivotCurrency);
     }
-
-    /** @test */
-    public function itCanManageDecimalPlaces(): void
+    public function testItCanManageDecimalPlaces(): void
     {
         // Arrange
         $decimalPlaces = 2;
@@ -723,9 +640,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertEquals($decimalPlaces, $pivotDecimalPlaces);
     }
-
-    /** @test */
-    public function itCanManageRoundingMode(): void
+    public function testItCanManageRoundingMode(): void
     {
         // Arrange
         $roundingMode = 'half_up';

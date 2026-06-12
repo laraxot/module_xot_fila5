@@ -29,9 +29,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function addsStrictTypesDeclarationToPhpFile(): void
+    public function testAdds_strict_types_declaration_to_php_file(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
@@ -41,9 +39,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
         $content = File::get($file);
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     }
-
-    #[Test]
-    public function doesNotDuplicateStrictTypesIfAlreadyPresent(): void
+    public function testDoes_not_duplicate_strict_types_if_already_present(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\n\n\nnamespace Test;");
@@ -53,9 +49,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
         $content = File::get($file);
         Assert::assertSame(1, substr_count($content, 'declare(strict_types=1)'));
     }
-
-    #[Test]
-    public function handlesFileWithExistingNamespace(): void
+    public function testHandles_file_with_existing_namespace(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\n\n\nclass TestAction {}");

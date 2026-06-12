@@ -12,8 +12,7 @@ use PHPUnit\Framework\Attributes\Test;
 
 class GetTenantConfigPathActionTest extends TestCase
 {
-    #[Test]
-    public function delegatesToTenantFilePathActionWithPhpFilename(): void
+    public function testDelegates_to_tenant_file_path_action_with_php_filename(): void
     {
         $tenantPathAction = $this->createMock(GetTenantFilePathAction::class);
         $tenantPathAction->expects($this->once())

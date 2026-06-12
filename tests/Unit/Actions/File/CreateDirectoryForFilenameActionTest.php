@@ -31,9 +31,7 @@ class CreateDirectoryForFilenameActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function createsDirectoryForFilename(): void
+    public function testCreates_directory_for_filename(): void
     {
         $filename = $this->workDir.'/nested/deep/file.txt';
 
@@ -41,9 +39,7 @@ class CreateDirectoryForFilenameActionTest extends TestCase
 
         Assert::assertTrue(File::isDirectory($this->workDir.'/nested/deep'));
     }
-
-    #[Test]
-    public function doesNothingWhenDirectoryAlreadyExists(): void
+    public function testDoes_nothing_when_directory_already_exists(): void
     {
         $filename = $this->workDir.'/existing/file.txt';
         File::makeDirectory($this->workDir.'/existing', 0755, true);
@@ -52,9 +48,7 @@ class CreateDirectoryForFilenameActionTest extends TestCase
 
         Assert::assertTrue(File::isDirectory($this->workDir.'/existing'));
     }
-
-    #[Test]
-    public function handlesRootLevelFile(): void
+    public function testHandles_root_level_file(): void
     {
         $filename = $this->workDir.'/rootfile.txt';
         File::makeDirectory($this->workDir, 0755, true);

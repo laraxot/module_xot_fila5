@@ -113,7 +113,10 @@
     "autoload-dev": {
         "psr-4": {
             "Modules\\Xot\\Tests\\": "tests/"
-        }
+        },
+        "files": [
+            "tests/Support/helpers.php"
+        ]
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
