@@ -35,11 +35,11 @@ class GetModuleConfigAction
                 continue;
             }
 
-            /** @var string $key */
+            /* @var string $key */
             $normalized[$key] = $value;
         }
 
-        /** @var array<string, mixed> $normalized */
+        /* @var array<string, mixed> $normalized */
         return $normalized;
     }
 }
