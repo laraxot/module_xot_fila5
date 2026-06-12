@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Services\ModuleService;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 describe('ModuleService Integration', function () {
     beforeEach(function () {

@@ -4,7 +4,7 @@ type: log
 module: Xot
 tags: [xot, phpstan, pest, qmd]
 created: 2026-04-20
-updated: 2026-06-10
+updated: 2026-06-12
 qmd: "Xot log phpstan pest bridge discipline"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -12,6 +12,11 @@ discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
 
+## [2026-06-12] testing | Pest global class imports
+
+- Aggiunto `rules/pest-global-class-imports.md`.
+- Durante STORY-345 i run coverage hanno evidenziato warning PHP da `use ReflectionClass;` in test senza namespace.
+- Regola: rimuovere l'import globale inutile; l'uso diretto `new ReflectionClass(...)` resta valido nei file global namespace.
 ## [2026-06-10] testing | Module TestCase XotBase hierarchy
 
 - Aggiunto `rules/module-testcase-xotbase-hierarchy.md`.
