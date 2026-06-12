@@ -29,10 +29,31 @@ class CopyFromLastYearAction extends XotBaseAction
             ->modalHeading('Copy Data from Last Year')
             ->modalDescription('Are you sure you want to copy data from the previous year?')
             ->action(function (array $arguments, array $data) use ($action): void {
-                /* @var array<string, mixed> $arguments */
-                /* @var array<string, mixed> $data */
-                $action->execute($arguments, $data);
+                $action->execute(
+                    self::normalizeStringKeyArray($arguments),
+                    self::normalizeStringKeyArray($data),
+                );
             });
+    }
+
+    /**
+     * @param array<string|int, mixed> $input
+     * @return array<string, mixed>
+     */
+    private static function normalizeStringKeyArray(array $input): array
+    {
+        /** @var array<string, mixed> $normalized */
+        $normalized = [];
+
+        foreach ($input as $key => $value) {
+            if (! is_string($key)) {
+                continue;
+            }
+
+            $normalized[$key] = $value;
+        }
+
+        return $normalized;
     }
 
     /**

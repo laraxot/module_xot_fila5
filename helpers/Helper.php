@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Filament\Facades\Filament;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -439,7 +440,7 @@ if (! function_exists('actingAs')) {
      *
      * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function actingAs($user = null, $driver = null): Illuminate\Testing\TestResponse
+    function actingAs(Illuminate\Contracts\Auth\Authenticatable|int|string|null $user = null, ?string $driver = null): Illuminate\Testing\TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
