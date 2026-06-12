@@ -13,7 +13,7 @@ namespace Modules\Xot\Tests\Support;
 
 final class PestTestCall
 {
-    public function __construct(private readonly object $call)
+    public function __construct(private readonly ?object $call = null)
     {
     }
 

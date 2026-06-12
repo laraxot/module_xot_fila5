@@ -6,7 +6,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Modules\Xot\Actions\Array\SavePhpArrayAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
 use function Safe\glob;
 use function Safe\mkdir;
@@ -39,9 +38,7 @@ class SavePhpArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function saves_array_to_php(): void
+    public function testSaves_array_to_php(): void
     {
         $path = $this->tempDir.'/d.php';
         $data = ['a' => 1];

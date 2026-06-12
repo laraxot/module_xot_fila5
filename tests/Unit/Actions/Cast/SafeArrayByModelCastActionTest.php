@@ -8,13 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
 
 class SafeArrayByModelCastActionTest extends TestCase
 {
-    #[Test]
-    public function converts_model_attributes_to_array_correctly(): void
+    public function testConverts_model_attributes_to_array_correctly(): void
     {
         $model = new Activity();
         $model->setRawAttributes(['name' => 'Test']);
@@ -25,9 +23,7 @@ class SafeArrayByModelCastActionTest extends TestCase
         Assert::assertIsArray($result);
         Assert::assertArrayHasKey('name', $result);
     }
-
-    #[Test]
-    public function falls_back_to_safeExecute_on_error(): void
+    public function testFalls_back_to_safeExecute_on_error(): void
     {
         $model = $this->createUnitMock(Model::class);
         $model->method('attributesToArray')->willThrowException(new \Exception('Mock error'));

@@ -31,9 +31,14 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'actions',
         'bulkActions',
         'actionsPosition',
+        'recordActions',
+        'toolbarActions',
+        'recordActionsPosition',
         'emptyStateActions',
         'striped',
         'paginated',
+        'defaultSort',
+        'poll',
     ];
 
     $allows = [];
@@ -55,7 +60,10 @@ it('tests table method with all methods implemented', function (): void {
         ->allows(['execute' => true]);
 
     /** @var HasTableWithXotTestClass&MockInterface $mock */
-    $mock = \Mockery::mock(HasTableWithXotTestClass::class)->makePartial()->shouldDeferMissing();
+    $mock = \Mockery::mock(HasTableWithXotTestClass::class)
+        ->makePartial()
+        ->shouldAllowMockingProtectedMethods()
+        ->shouldDeferMissing();
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -66,6 +74,9 @@ it('tests table method with all methods implemented', function (): void {
         'getTableFilters' => [],
         'getTableFiltersFormColumns' => 1,
         'getTableEmptyStateActions' => [],
+        'getDefaultTableSortColumn' => null,
+        'getDefaultTableSortDirection' => null,
+        'getTablePollInterval' => null,
     ]);
 
     /** @var MockInterface&Table $tableMock */
@@ -82,7 +93,10 @@ it('tests table method with no optional methods implemented', function (): void 
         ->allows(['execute' => true]);
 
     /** @var HasTableWithoutOptionalMethodsTestClass&MockInterface $mock */
-    $mock = \Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)->makePartial()->shouldDeferMissing();
+    $mock = \Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)
+        ->makePartial()
+        ->shouldAllowMockingProtectedMethods()
+        ->shouldDeferMissing();
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',
@@ -93,6 +107,9 @@ it('tests table method with no optional methods implemented', function (): void 
         'getTableBulkActions' => [],
         'getTableFiltersFormColumns' => 1,
         'getTableEmptyStateActions' => [],
+        'getDefaultTableSortColumn' => null,
+        'getDefaultTableSortDirection' => null,
+        'getTablePollInterval' => null,
     ]);
 
     /** @var MockInterface&Table $tableMock */
