@@ -436,11 +436,9 @@ if (! function_exists('isJson')) {
 
 if (! function_exists('actingAs')) {
     /**
-     * @param string|null $driver
-     *
      * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function actingAs(Illuminate\Contracts\Auth\Authenticatable|int|string|null $user = null, ?string $driver = null): Illuminate\Testing\TestResponse
+    function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): Illuminate\Testing\TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
