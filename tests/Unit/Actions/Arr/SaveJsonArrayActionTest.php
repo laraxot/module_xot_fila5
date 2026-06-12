@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
@@ -40,8 +39,7 @@ class SaveJsonArrayActionTest extends TestCase
         parent::tearDown();
     }
 
-    #[Test]
-    public function savesArrayToJsonFile(): void
+    public function testSavesArrayToJsonFile(): void
     {
         $data = ['key' => 'value', 'nested' => ['a' => 1]];
         $path = $this->tempDir.'/data.json';
@@ -52,8 +50,7 @@ class SaveJsonArrayActionTest extends TestCase
         Assert::assertTrue(file_exists($path));
     }
 
-    #[Test]
-    public function savesEmptyArray(): void
+    public function testSavesEmptyArray(): void
     {
         $path = $this->tempDir.'/empty.json';
         $result = app(SaveJsonArrayAction::class)->execute([], $path);

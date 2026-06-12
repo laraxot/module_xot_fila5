@@ -9,14 +9,12 @@ use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
 use function Safe\tempnam;
 
 class GetTenantConfigActionsTest extends TestCase
 {
-    #[Test]
-    public function getsTenantConfigArrayCorrectly(): void
+    public function testGetsTenantConfigArrayCorrectly(): void
     {
         $configName = 'test_config';
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
@@ -39,8 +37,7 @@ class GetTenantConfigActionsTest extends TestCase
         File::delete($tempPath);
     }
 
-    #[Test]
-    public function returnsEmptyArrayIfTenantConfigFileDoesNotExist(): void
+    public function testReturnsEmptyArrayIfTenantConfigFileDoesNotExist(): void
     {
         $configName = 'non_existent';
 

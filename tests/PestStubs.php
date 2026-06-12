@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Pest Laravel helper stubs for PHPStan.
  *
@@ -21,7 +22,6 @@ use Illuminate\Testing\TestResponse;
 /**
  * Authenticate as a given model or ID.
  *
- * @param  Authenticatable|int|string|null  $user
  * @return TestResponse<Response>
  */
 function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
@@ -32,8 +32,9 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
 /**
  * Perform a GET request.
  *
- * @param  string|array<string, mixed>  $uri
- * @param  array<string, mixed>  $options
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $options
+ *
  * @return TestResponse<Response>
  */
 function get(string|array $uri = '', array $options = []): TestResponse
@@ -44,9 +45,10 @@ function get(string|array $uri = '', array $options = []): TestResponse
 /**
  * Perform a POST request.
  *
- * @param  string|array<string, mixed>  $uri
- * @param  array<string, mixed>  $data
- * @param  array<string, mixed>  $options
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $options
+ *
  * @return TestResponse<Response>
  */
 function post(string|array $uri, array $data = [], array $options = []): TestResponse
@@ -57,8 +59,9 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
 /**
  * Perform a PUT request.
  *
- * @param  string|array<string, mixed>  $uri
- * @param  array<string, mixed>  $data
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ *
  * @return TestResponse<Response>
  */
 function put(string|array $uri, array $data = []): TestResponse
@@ -69,8 +72,9 @@ function put(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a PATCH request.
  *
- * @param  string|array<string, mixed>  $uri
- * @param  array<string, mixed>  $data
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ *
  * @return TestResponse<Response>
  */
 function patch(string|array $uri, array $data = []): TestResponse
@@ -81,7 +85,8 @@ function patch(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a DELETE request.
  *
- * @param  string|array<string, mixed>  $uri
+ * @param string|array<string, mixed> $uri
+ *
  * @return TestResponse<Response>
  */
 function delete(string|array $uri): TestResponse
@@ -92,7 +97,8 @@ function delete(string|array $uri): TestResponse
 /**
  * Perform a HEAD request.
  *
- * @param  string|array<string, mixed>  $uri
+ * @param string|array<string, mixed> $uri
+ *
  * @return TestResponse<Response>
  */
 function head(string|array $uri): TestResponse
@@ -103,7 +109,8 @@ function head(string|array $uri): TestResponse
 /**
  * Perform an OPTIONS request.
  *
- * @param  string|array<string, mixed>  $uri
+ * @param string|array<string, mixed> $uri
+ *
  * @return TestResponse<Response>
  */
 function options(string|array $uri): TestResponse
@@ -123,8 +130,6 @@ function followingRedirects(int $number = 5): TestResponse
 
 /**
  * Define a test case.
- *
- * @return mixed
  */
 function test(string $description, ?\Closure $closure = null): mixed
 {
@@ -133,8 +138,6 @@ function test(string $description, ?\Closure $closure = null): mixed
 
 /**
  * Define a test case.
- *
- * @return mixed
  */
 function it(string $description, ?\Closure $closure = null): mixed
 {
@@ -143,8 +146,6 @@ function it(string $description, ?\Closure $closure = null): mixed
 
 /**
  * Define a test group.
- *
- * @return mixed
  */
 function describe(string $description, \Closure $closure): mixed
 {
@@ -153,8 +154,6 @@ function describe(string $description, \Closure $closure): mixed
 
 /**
  * Define a before each hook.
- *
- * @return mixed
  */
 function beforeEach(\Closure $closure): mixed
 {
@@ -163,8 +162,6 @@ function beforeEach(\Closure $closure): mixed
 
 /**
  * Define an after each hook.
- *
- * @return mixed
  */
 function afterEach(\Closure $closure): mixed
 {
@@ -174,8 +171,7 @@ function afterEach(\Closure $closure): mixed
 /**
  * Define a test class.
  *
- * @param  class-string  ...$classes
- * @return mixed
+ * @param class-string ...$classes
  */
 function uses(string ...$classes): mixed
 {

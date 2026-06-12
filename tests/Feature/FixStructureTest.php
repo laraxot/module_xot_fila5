@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 
 use function Safe\chdir;
 use function Safe\chmod;
@@ -63,6 +62,7 @@ class FixStructureTest extends TestCase
             rmdir($dir);
         }
     }
+
     public function testMoveToAppFunctionality(): void
     {
         // Creiamo una struttura di directory di test
@@ -83,6 +83,7 @@ class FixStructureTest extends TestCase
         static::assertFileExists($this->testDir.'/app/Actions/test.php');
         static::assertDirectoryDoesNotExist($this->testDir.'/Actions');
     }
+
     public function testRenameToLowerFunctionality(): void
     {
         // Creiamo una struttura di directory di test
@@ -103,6 +104,7 @@ class FixStructureTest extends TestCase
         static::assertFileExists($this->testDir.'/config/test.php');
         static::assertDirectoryDoesNotExist($this->testDir.'/Config');
     }
+
     public function testMoveConfigFunctionality(): void
     {
         // Creiamo una struttura di directory di test con entrambe le versioni

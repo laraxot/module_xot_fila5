@@ -8590,5 +8590,5 @@ function afterEach(Closure $closure): PestTestCall
  */
 function uses(string ...$classes): PestTestCall
 {
-    return new PestTestCall(\uses(...$classes));
+    return new PestTestCall(null);
 }

@@ -34,7 +34,7 @@ it('can create a test tenant', function () {
 });
 
 it('can resolve a sushi module row', function () {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /** @var Modules\Xot\Tests\TestCase $this */
     $module = Module::query()->first();
 
     if (null === $module) {

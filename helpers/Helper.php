@@ -395,121 +395,112 @@ if (! function_exists('isJson')) {
 
 if (! function_exists('actingAs')) {
     /**
-     * @param  mixed  $user
-     * @param  string|null  $driver
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @param string|null $driver
+     *
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function actingAs($user = null, $driver = null): \Illuminate\Testing\TestResponse
+    function actingAs($user = null, $driver = null): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('get')) {
     /**
-     * @param string $uri
      * @param array<string, mixed> $options
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     *
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function get(string $uri = '', array $options = []): \Illuminate\Testing\TestResponse
+    function get(string $uri = '', array $options = []): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('post')) {
     /**
-     * @param string $uri
-     * @param mixed $data
      * @param array<string, mixed> $options
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     *
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function post(string $uri, mixed $data = [], array $options = []): \Illuminate\Testing\TestResponse
+    function post(string $uri, mixed $data = [], array $options = []): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('put')) {
     /**
-     * @param string $uri
-     * @param mixed $data
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function put(string $uri, mixed $data = []): \Illuminate\Testing\TestResponse
+    function put(string $uri, mixed $data = []): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('patch')) {
     /**
-     * @param string $uri
-     * @param mixed $data
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function patch(string $uri, mixed $data = []): \Illuminate\Testing\TestResponse
+    function patch(string $uri, mixed $data = []): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('delete')) {
     /**
-     * @param string $uri
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function delete(string $uri): \Illuminate\Testing\TestResponse
+    function delete(string $uri): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('head')) {
     /**
-     * @param string $uri
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function head(string $uri): \Illuminate\Testing\TestResponse
+    function head(string $uri): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('options')) {
     /**
-     * @param string $uri
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function options(string $uri): \Illuminate\Testing\TestResponse
+    function options(string $uri): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('followingRedirects')) {
     /**
-     * @param int $number
-     * @return \Illuminate\Testing\TestResponse<\Illuminate\Http\Response>
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function followingRedirects(int $number = 5): \Illuminate\Testing\TestResponse
+    function followingRedirects(int $number = 5): Illuminate\Testing\TestResponse
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('test')) {
     /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function test(string $title, \Closure $callback): void
+    function test(string $title, Closure $callback): void
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
 
 if (! function_exists('describe')) {
     /** @param  string  $title  @param  \Closure  $callback  @return void */
-    function describe(string $title, \Closure $callback): void
+    function describe(string $title, Closure $callback): void
     {
-        throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }

@@ -9,12 +9,10 @@ use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 
 class RegisterBladeComponentsActionTest extends TestCase
 {
-    #[Test]
-    public function registersBladeComponentsCorrectly(): void
+    public function testRegistersBladeComponentsCorrectly(): void
     {
         $path = 'some/path';
         $namespace = 'Some\\Namespace';
@@ -44,8 +42,7 @@ class RegisterBladeComponentsActionTest extends TestCase
         $action->execute($path, $namespace, $prefix);
     }
 
-    #[Test]
-    public function doesNothingIfNoComponentsFound(): void
+    public function testDoesNothingIfNoComponentsFound(): void
     {
         $path = 'empty/path';
         $namespace = 'Empty\\Namespace';

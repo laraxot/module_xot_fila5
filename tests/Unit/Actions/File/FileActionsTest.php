@@ -20,11 +20,9 @@ test('fix path action works', function (): void {
 });
 
 test('view path action works', function (): void {
-    /** @var Modules\Xot\Tests\TestCase $this */
-    $mock = $this->createUnitMock(GetViewNameSpacePathAction::class);
-    $mock->method('execute')
-        ->with('test_ns')
-        ->willReturn('/view/path');
+    $mock = Mockery::mock(GetViewNameSpacePathAction::class);
+    /* @phpstan-ignore-next-line Mockery expectation chain not resolvable without extension */
+    $mock->shouldReceive('execute')->with('test_ns')->andReturn('/view/path');
 
     app()->instance(GetViewNameSpacePathAction::class, $mock);
 

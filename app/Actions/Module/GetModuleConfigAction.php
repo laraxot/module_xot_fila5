@@ -22,13 +22,12 @@ class GetModuleConfigAction
             throw new \Exception('Config file not found: '.$configFile);
         }
 
-        /** @var mixed $loaded */
         $loaded = File::getRequire($configFile);
         if (! is_array($loaded)) {
             throw new \Exception('Config file must return array: '.$configFile);
         }
 
-        /** @var array<string, mixed> $loaded */
+        /* @var array<string, mixed> $loaded */
         return $loaded;
     }
 }
