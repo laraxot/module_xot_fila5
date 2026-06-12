@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Database\Migrations;
 
-use function Safe\rename;
-use function Safe\copy;
 use Doctrine\DBAL\Schema\Index;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Migrations\Migration as LaravelMigration;
@@ -17,6 +15,9 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+
+use function Safe\copy;
+
 use Webmozart\Assert\Assert;
 
 /**

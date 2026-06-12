@@ -11,16 +11,18 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_encode;
 use function Safe\unserialize;
-
 
 class XotBaseModelBusinessLogicTest extends TestCase
 {
     private function createBaseModel(): BaseModel
     {
-        return new class extends BaseModel {};
+        return new class extends BaseModel {
+        };
     }
+
     public function testItExtendsCorrectBaseClass(): void
     {
         // Arrange & Act
@@ -30,6 +32,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertInstanceOf(XotBaseModel::class, $baseModel);
         Assert::assertInstanceOf(Model::class, $baseModel);
     }
+
     public function testItHasRequiredTraits(): void
     {
         // Arrange & Act
@@ -37,6 +40,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItCanBeInstantiatedWithoutDatabase(): void
     {
         // Arrange & Act
@@ -45,6 +49,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertInstanceOf(BaseModel::class, $baseModel);
     }
+
     public function testItSupportsTableNameOverride(): void
     {
         // Arrange
@@ -57,6 +62,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsString($tableName);
         Assert::assertNotEmpty($tableName);
     }
+
     public function testItSupportsConnectionOverride(): void
     {
         // Arrange
@@ -69,6 +75,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertNotNull($connection);
         Assert::assertInstanceOf(ConnectionInterface::class, $connection);
     }
+
     public function testItSupportsKeyNameOverride(): void
     {
         // Arrange
@@ -81,6 +88,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsString($keyName);
         Assert::assertEquals('id', $keyName);
     }
+
     public function testItCanBeUsedAsBaseForOtherModels(): void
     {
         // Arrange
@@ -90,6 +98,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertInstanceOf(XotBaseModel::class, $module);
         Assert::assertInstanceOf(Model::class, $module);
     }
+
     public function testItSupportsModelConfiguration(): void
     {
         // Arrange
@@ -105,6 +114,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsArray($hidden);
         Assert::assertIsArray($casts);
     }
+
     public function testItSupportsSoftDeletesWhenConfigured(): void
     {
         // Arrange & Act
@@ -112,6 +122,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert - Soft deletes may or may not be configured
     }
+
     public function testItSupportsTimestampsWhenConfigured(): void
     {
         // Arrange
@@ -124,6 +135,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Nota: I modelli base possono avere configurazioni diverse
         Assert::assertIsBool($usesTimestamps);
     }
+
     public function testItSupportsTenantIsolationWhenConfigured(): void
     {
         // Arrange & Act
@@ -131,6 +143,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert - Tenant isolation may or may not be configured
     }
+
     public function testItSupportsAuditTrailWhenConfigured(): void
     {
         // Arrange & Act
@@ -138,6 +151,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert - Audit trail may or may not be configured
     }
+
     public function testItCanBeSerialized(): void
     {
         // Arrange
@@ -149,6 +163,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertNotEmpty($serialized);
     }
+
     public function testItCanBeUnserialized(): void
     {
         // Arrange
@@ -161,6 +176,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertInstanceOf(BaseModel::class, $unserialized);
     }
+
     public function testItSupportsJsonSerialization(): void
     {
         // Arrange
@@ -173,6 +189,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertNotEmpty($json);
         Assert::assertNotFalse($json);
     }
+
     public function testItSupportsArrayConversion(): void
     {
         // Arrange
@@ -185,6 +202,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsArray($array);
         Assert::assertNotEmpty($array);
     }
+
     public function testItSupportsJsonConversion(): void
     {
         // Arrange
@@ -197,6 +215,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsString($json);
         Assert::assertNotEmpty($json);
     }
+
     public function testItSupportsRelationshipLoading(): void
     {
         // Arrange & Act
@@ -204,6 +223,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItSupportsAttributeAccess(): void
     {
         // Arrange & Act
@@ -211,6 +231,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItSupportsMassAssignmentProtection(): void
     {
         // Arrange
@@ -224,6 +245,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsArray($fillable);
         Assert::assertIsArray($guarded);
     }
+
     public function testItSupportsModelEvents(): void
     {
         // Arrange & Act
@@ -231,6 +253,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItSupportsObservers(): void
     {
         // Arrange & Act
@@ -238,6 +261,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItSupportsScopes(): void
     {
         // Arrange & Act
@@ -245,6 +269,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItSupportsAccessorsAndMutators(): void
     {
         // Arrange & Act
@@ -252,6 +277,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
 
         // Assert
     }
+
     public function testItSupportsCasting(): void
     {
         // Arrange
@@ -263,6 +289,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($casts);
     }
+
     public function testItSupportsDates(): void
     {
         // Arrange
@@ -274,6 +301,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($dates);
     }
+
     public function testItSupportsHiddenAttributes(): void
     {
         // Arrange
@@ -285,6 +313,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($hidden);
     }
+
     public function testItSupportsVisibleAttributes(): void
     {
         // Arrange
@@ -296,6 +325,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($visible);
     }
+
     public function testItSupportsAppends(): void
     {
         // Arrange
@@ -307,6 +337,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($appends);
     }
+
     public function testItSupportsWithRelationships(): void
     {
         // Arrange

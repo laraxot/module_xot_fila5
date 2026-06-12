@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
-use function Safe\realpath;
 use Exception;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Support\Renderable;
@@ -19,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
+use function Safe\realpath;
 
 use Webmozart\Assert\Assert;
 

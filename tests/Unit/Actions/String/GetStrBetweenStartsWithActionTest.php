@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use PHPUnit\Framework\Assert;
 
@@ -17,5 +17,4 @@ it('extracts string between markers correctly', function (): void {
 
 it('throws exception when start marker is missing', function (): void {
     $action = app(GetStrBetweenStartsWithAction::class);
-
 });

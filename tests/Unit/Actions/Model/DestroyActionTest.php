@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\DestroyAction;
 use Modules\Xot\Models\BaseModel;
 use PHPUnit\Framework\Assert;
 
 it('deletes model and returns it', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
-        $mockModel = new class extends BaseModel {
+    /** @var Modules\Xot\Tests\TestCase $this */
+    $mockModel = new class extends BaseModel {
         public bool $deleted = false;
 
         public function delete(): bool
@@ -28,7 +28,7 @@ it('deletes model and returns it', function (): void {
 });
 
 it('flashes status message on successful delete', function (): void {
-        $mockModel = new class extends BaseModel {
+    $mockModel = new class extends BaseModel {
         public function delete(): bool
         {
             return true;
@@ -41,7 +41,7 @@ it('flashes status message on successful delete', function (): void {
 });
 
 it('flashes failure message when delete returns false', function (): void {
-        $mockModel = new class extends BaseModel {
+    $mockModel = new class extends BaseModel {
         public function delete(): bool
         {
             return false;

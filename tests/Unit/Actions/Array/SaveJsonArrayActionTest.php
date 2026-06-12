@@ -7,6 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Array;
 use Modules\Xot\Actions\Array\SaveJsonArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\json_decode;
@@ -37,7 +38,8 @@ class SaveJsonArrayActionTest extends TestCase
         }
         parent::tearDown();
     }
-    public function testSaves_array_to_json(): void
+
+    public function testSavesArrayToJson(): void
     {
         $path = $this->tempDir.'/d.json';
         $result = app(SaveJsonArrayAction::class)->execute(['k' => 'v'], $path);

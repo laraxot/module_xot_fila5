@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 
 class SafeAttributeCastActionTest extends TestCase
 {
-    public function testManages_eloquent_attributes_safely(): void
+    public function testManagesEloquentAttributesSafely(): void
     {
         $model = $this->createUnitMock(Activity::class);
         $model->method('getAttribute')->willReturnMap([

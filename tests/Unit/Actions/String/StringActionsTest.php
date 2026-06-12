@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
@@ -23,7 +23,7 @@ test('get str between starts with action works', function () {
     $body = 'prefix { content { inner } } suffix';
     $result = $action->execute($body, 'content', '{', '}');
 
-    Assert::assertStringContainsString((string)'content { inner }', (string)$result);
+    Assert::assertStringContainsString((string) 'content { inner }', (string) $result);
 });
 
 test('normalize driver name action works', function () {

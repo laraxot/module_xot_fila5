@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
 use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;

@@ -21,18 +21,18 @@ use PHPUnit\Framework\MockObject\MockObject;
  * DatabaseTransactions handles rollback between tests.
  *
  * @property object|null $action
- * @property Model|null $model
+ * @property Model|null  $model
  * @property object|null $service
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
- * @property Model|null $testModel
+ * @property Model|null  $testModel
  * @property object|null $extraClass
- * @property Model|null $baseModel
+ * @property Model|null  $baseModel
  * @property string|null $testDir
- * @property mixed $saved
- * @property mixed $extra_attributes
+ * @property mixed       $saved
+ * @property mixed       $extra_attributes
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -97,7 +97,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $class
+     * @param class-string<T> $class
+     *
      * @return T
      */
     public function getAction(string $class): object
@@ -111,7 +112,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -121,8 +122,9 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $abstract
-     * @param  (\Closure(MockInterface&T): void)|null  $callback
+     * @param class-string<T>                        $abstract
+     * @param (\Closure(MockInterface&T): void)|null $callback
+     *
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -159,7 +161,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $class
+     * @param class-string<T> $class
+     *
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject

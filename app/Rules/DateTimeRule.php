@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Rules;
 
-use function Safe\preg_replace;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Carbon;
+
+use function Safe\preg_replace;
 
 /**
  * Class DateTimeRule.

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Request;
 use Modules\Xot\Services\ArtisanService;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
