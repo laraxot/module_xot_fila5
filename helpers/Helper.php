@@ -399,7 +399,7 @@ if (! function_exists('actingAs')) {
      *
      * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
      */
-    function actingAs($user = null, $driver = null): Illuminate\Testing\TestResponse
+    function actingAs(Illuminate\Contracts\Auth\Authenticatable|int|string|null $user = null, ?string $driver = null): Illuminate\Testing\TestResponse
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }

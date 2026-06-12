@@ -27,7 +27,19 @@ class GetModuleConfigAction
             throw new \Exception('Config file must return array: '.$configFile);
         }
 
-        /* @var array<string, mixed> $loaded */
-        return $loaded;
+        /** @var array<string, mixed> $normalized */
+        $normalized = [];
+
+        foreach ($loaded as $key => $value) {
+            if (! is_string($key)) {
+                continue;
+            }
+
+            /** @var string $key */
+            $normalized[$key] = $value;
+        }
+
+        /** @var array<string, mixed> $normalized */
+        return $normalized;
     }
 }
