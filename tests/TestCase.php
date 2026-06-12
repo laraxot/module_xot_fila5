@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 use Mockery\MockInterface;
 use PHPUnit\Framework\Assert;
@@ -36,6 +37,9 @@ use PHPUnit\Framework\MockObject\MockObject;
 abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
+
+    /** @var list<string> */
+    protected $connectionsToTransact = ['sqlite', 'user', 'tenant', 'xot'];
 
     public mixed $action = null;
 
@@ -69,6 +73,25 @@ abstract class TestCase extends XotBaseTestCase
     protected function getPackageProviders(\Illuminate\Foundation\Application $app): array
     {
         return parent::getPackageProviders($app);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
     }
 
     /**

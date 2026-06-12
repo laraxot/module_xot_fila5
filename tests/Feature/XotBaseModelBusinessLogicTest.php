@@ -21,9 +21,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
     {
         return new class extends BaseModel {};
     }
-
-    /** @test */
-    public function itExtendsCorrectBaseClass(): void
+    public function testItExtendsCorrectBaseClass(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
@@ -32,18 +30,14 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertInstanceOf(XotBaseModel::class, $baseModel);
         Assert::assertInstanceOf(Model::class, $baseModel);
     }
-
-    /** @test */
-    public function itHasRequiredTraits(): void
+    public function testItHasRequiredTraits(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itCanBeInstantiatedWithoutDatabase(): void
+    public function testItCanBeInstantiatedWithoutDatabase(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
@@ -51,9 +45,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertInstanceOf(BaseModel::class, $baseModel);
     }
-
-    /** @test */
-    public function itSupportsTableNameOverride(): void
+    public function testItSupportsTableNameOverride(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -65,9 +57,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsString($tableName);
         Assert::assertNotEmpty($tableName);
     }
-
-    /** @test */
-    public function itSupportsConnectionOverride(): void
+    public function testItSupportsConnectionOverride(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -79,9 +69,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertNotNull($connection);
         Assert::assertInstanceOf(ConnectionInterface::class, $connection);
     }
-
-    /** @test */
-    public function itSupportsKeyNameOverride(): void
+    public function testItSupportsKeyNameOverride(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -93,9 +81,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsString($keyName);
         Assert::assertEquals('id', $keyName);
     }
-
-    /** @test */
-    public function itCanBeUsedAsBaseForOtherModels(): void
+    public function testItCanBeUsedAsBaseForOtherModels(): void
     {
         // Arrange
         $module = new Module();
@@ -104,9 +90,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertInstanceOf(XotBaseModel::class, $module);
         Assert::assertInstanceOf(Model::class, $module);
     }
-
-    /** @test */
-    public function itSupportsModelConfiguration(): void
+    public function testItSupportsModelConfiguration(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -121,18 +105,14 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsArray($hidden);
         Assert::assertIsArray($casts);
     }
-
-    /** @test */
-    public function itSupportsSoftDeletesWhenConfigured(): void
+    public function testItSupportsSoftDeletesWhenConfigured(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert - Soft deletes may or may not be configured
     }
-
-    /** @test */
-    public function itSupportsTimestampsWhenConfigured(): void
+    public function testItSupportsTimestampsWhenConfigured(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -144,27 +124,21 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Nota: I modelli base possono avere configurazioni diverse
         Assert::assertIsBool($usesTimestamps);
     }
-
-    /** @test */
-    public function itSupportsTenantIsolationWhenConfigured(): void
+    public function testItSupportsTenantIsolationWhenConfigured(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert - Tenant isolation may or may not be configured
     }
-
-    /** @test */
-    public function itSupportsAuditTrailWhenConfigured(): void
+    public function testItSupportsAuditTrailWhenConfigured(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert - Audit trail may or may not be configured
     }
-
-    /** @test */
-    public function itCanBeSerialized(): void
+    public function testItCanBeSerialized(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -175,9 +149,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertNotEmpty($serialized);
     }
-
-    /** @test */
-    public function itCanBeUnserialized(): void
+    public function testItCanBeUnserialized(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -189,9 +161,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertInstanceOf(BaseModel::class, $unserialized);
     }
-
-    /** @test */
-    public function itSupportsJsonSerialization(): void
+    public function testItSupportsJsonSerialization(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -203,9 +173,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertNotEmpty($json);
         Assert::assertNotFalse($json);
     }
-
-    /** @test */
-    public function itSupportsArrayConversion(): void
+    public function testItSupportsArrayConversion(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -217,9 +185,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsArray($array);
         Assert::assertNotEmpty($array);
     }
-
-    /** @test */
-    public function itSupportsJsonConversion(): void
+    public function testItSupportsJsonConversion(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -231,27 +197,21 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsString($json);
         Assert::assertNotEmpty($json);
     }
-
-    /** @test */
-    public function itSupportsRelationshipLoading(): void
+    public function testItSupportsRelationshipLoading(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itSupportsAttributeAccess(): void
+    public function testItSupportsAttributeAccess(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itSupportsMassAssignmentProtection(): void
+    public function testItSupportsMassAssignmentProtection(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -264,45 +224,35 @@ class XotBaseModelBusinessLogicTest extends TestCase
         Assert::assertIsArray($fillable);
         Assert::assertIsArray($guarded);
     }
-
-    /** @test */
-    public function itSupportsModelEvents(): void
+    public function testItSupportsModelEvents(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itSupportsObservers(): void
+    public function testItSupportsObservers(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itSupportsScopes(): void
+    public function testItSupportsScopes(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itSupportsAccessorsAndMutators(): void
+    public function testItSupportsAccessorsAndMutators(): void
     {
         // Arrange & Act
         $baseModel = $this->createBaseModel();
 
         // Assert
     }
-
-    /** @test */
-    public function itSupportsCasting(): void
+    public function testItSupportsCasting(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -313,9 +263,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($casts);
     }
-
-    /** @test */
-    public function itSupportsDates(): void
+    public function testItSupportsDates(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -326,9 +274,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($dates);
     }
-
-    /** @test */
-    public function itSupportsHiddenAttributes(): void
+    public function testItSupportsHiddenAttributes(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -339,9 +285,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($hidden);
     }
-
-    /** @test */
-    public function itSupportsVisibleAttributes(): void
+    public function testItSupportsVisibleAttributes(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -352,9 +296,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($visible);
     }
-
-    /** @test */
-    public function itSupportsAppends(): void
+    public function testItSupportsAppends(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();
@@ -365,9 +307,7 @@ class XotBaseModelBusinessLogicTest extends TestCase
         // Assert
         Assert::assertIsArray($appends);
     }
-
-    /** @test */
-    public function itSupportsWithRelationships(): void
+    public function testItSupportsWithRelationships(): void
     {
         // Arrange
         $baseModel = $this->createBaseModel();

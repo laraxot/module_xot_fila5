@@ -1,0 +1,183 @@
+<?php
+/**
+ * Pest Laravel helper stubs for PHPStan.
+ *
+ * This file provides the missing `Pest\Laravel\*` functions that PHPStan
+ * cannot resolve from the Pest extension alone.
+ *
+ * IMPORTANT:
+ * - Do not call these functions in production code.
+ * - This file is only for static analysis and test helper convenience.
+ */
+
+declare(strict_types=1);
+
+namespace Pest\Laravel;
+
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Http\Response;
+use Illuminate\Testing\TestResponse;
+
+/**
+ * Authenticate as a given model or ID.
+ *
+ * @param  Authenticatable|int|string|null  $user
+ * @return TestResponse<Response>
+ */
+function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a GET request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @param  array<string, mixed>  $options
+ * @return TestResponse<Response>
+ */
+function get(string|array $uri = '', array $options = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a POST request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @param  array<string, mixed>  $data
+ * @param  array<string, mixed>  $options
+ * @return TestResponse<Response>
+ */
+function post(string|array $uri, array $data = [], array $options = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a PUT request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @param  array<string, mixed>  $data
+ * @return TestResponse<Response>
+ */
+function put(string|array $uri, array $data = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a PATCH request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @param  array<string, mixed>  $data
+ * @return TestResponse<Response>
+ */
+function patch(string|array $uri, array $data = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a DELETE request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @return TestResponse<Response>
+ */
+function delete(string|array $uri): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a HEAD request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @return TestResponse<Response>
+ */
+function head(string|array $uri): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform an OPTIONS request.
+ *
+ * @param  string|array<string, mixed>  $uri
+ * @return TestResponse<Response>
+ */
+function options(string|array $uri): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Set the number of redirects to follow.
+ *
+ * @return TestResponse<Response>
+ */
+function followingRedirects(int $number = 5): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Define a test case.
+ *
+ * @return mixed
+ */
+function test(string $description, ?\Closure $closure = null): mixed
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Define a test case.
+ *
+ * @return mixed
+ */
+function it(string $description, ?\Closure $closure = null): mixed
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Define a test group.
+ *
+ * @return mixed
+ */
+function describe(string $description, \Closure $closure): mixed
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Define a before each hook.
+ *
+ * @return mixed
+ */
+function beforeEach(\Closure $closure): mixed
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Define an after each hook.
+ *
+ * @return mixed
+ */
+function afterEach(\Closure $closure): mixed
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Define a test class.
+ *
+ * @param  class-string  ...$classes
+ * @return mixed
+ */
+function uses(string ...$classes): mixed
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}

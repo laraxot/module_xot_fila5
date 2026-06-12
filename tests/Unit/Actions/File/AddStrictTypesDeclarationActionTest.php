@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AddStrictTypesDeclarationAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
 
 class AddStrictTypesDeclarationActionTest extends TestCase
@@ -29,9 +28,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
         }
         parent::tearDown();
     }
-
-    #[Test]
-    public function adds_strict_types_declaration_to_php_file(): void
+    public function testAdds_strict_types_declaration_to_php_file(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
@@ -41,9 +38,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
         $content = File::get($file);
         Assert::assertStringContainsString('declare(strict_types=1)', $content);
     }
-
-    #[Test]
-    public function does_not_duplicate_strict_types_if_already_present(): void
+    public function testDoes_not_duplicate_strict_types_if_already_present(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\n\n\nnamespace Test;");
@@ -53,9 +48,7 @@ class AddStrictTypesDeclarationActionTest extends TestCase
         $content = File::get($file);
         Assert::assertSame(1, substr_count($content, 'declare(strict_types=1)'));
     }
-
-    #[Test]
-    public function handles_file_with_existing_namespace(): void
+    public function testHandles_file_with_existing_namespace(): void
     {
         $file = $this->workDir.'/test.php';
         File::put($file, "<?php\n\n\n\nclass TestAction {}");

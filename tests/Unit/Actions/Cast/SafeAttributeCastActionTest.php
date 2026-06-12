@@ -7,13 +7,11 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Assert;
 
 class SafeAttributeCastActionTest extends TestCase
 {
-    #[Test]
-    public function manages_eloquent_attributes_safely(): void
+    public function testManages_eloquent_attributes_safely(): void
     {
         $model = $this->createUnitMock(Activity::class);
         $model->method('getAttribute')->willReturnMap([

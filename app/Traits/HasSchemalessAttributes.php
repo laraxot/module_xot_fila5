@@ -7,6 +7,8 @@ namespace Modules\Xot\Traits;
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
+use function Safe\json_encode;
+
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
@@ -73,11 +75,32 @@ trait HasSchemalessAttributes
     }
 
     /**
+     * Spatie persiste extra_attributes come array sul modello dopo set/forget.
+     * Re-idratare sempre il wrapper prima di leggere o scrivere.
+     */
+    protected function extraAttributesWrapper(): SchemalessAttributes
+    {
+        if ($this->extra_attributes instanceof SchemalessAttributes) {
+            return $this->extra_attributes;
+        }
+
+        $raw = $this->attributes['extra_attributes'] ?? null;
+        if (is_array($raw)) {
+            $this->attributes['extra_attributes'] = json_encode($raw);
+        }
+
+        $wrapper = SchemalessAttributes::createForModel($this, 'extra_attributes');
+        $this->extra_attributes = $wrapper;
+
+        return $wrapper;
+    }
+
+    /**
      * Get un valore da extra_attributes.
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {
-        return $this->extra_attributes?->get($key, $default) ?? $default;
+        return $this->extraAttributesWrapper()->get($key, $default);
     }
 
     /**
@@ -85,11 +108,8 @@ trait HasSchemalessAttributes
      */
     public function setExtraAttribute(string $key, mixed $value): void
     {
-        if (! $this->extra_attributes instanceof SchemalessAttributes) {
-            $this->extra_attributes = SchemalessAttributes::createForModel($this, 'extra_attributes');
-        }
-
-        $this->extra_attributes->set($key, $value);
+        $this->extraAttributesWrapper()->set($key, $value);
+        $this->syncExtraAttributesWrapper();
     }
 
     /**
@@ -99,7 +119,7 @@ trait HasSchemalessAttributes
      */
     public function getExtraAttributes(): array
     {
-        $raw = $this->extra_attributes?->all() ?? [];
+        $raw = $this->extraAttributesWrapper()->all();
         $result = [];
 
         foreach ($raw as $key => $value) {
@@ -116,7 +136,7 @@ trait HasSchemalessAttributes
      */
     public function hasExtraAttribute(string $key): bool
     {
-        return $this->extra_attributes?->has($key) ?? false;
+        return $this->extraAttributesWrapper()->has($key);
     }
 
     /**
@@ -124,7 +144,18 @@ trait HasSchemalessAttributes
      */
     public function removeExtraAttribute(string $key): void
     {
-        $this->extra_attributes?->forget($key);
+        $this->extraAttributesWrapper()->forget($key);
+        $this->syncExtraAttributesWrapper();
+    }
+
+    protected function syncExtraAttributesWrapper(): void
+    {
+        $raw = $this->attributes['extra_attributes'] ?? null;
+        if (is_array($raw)) {
+            $this->attributes['extra_attributes'] = json_encode($raw);
+        }
+
+        $this->extra_attributes = SchemalessAttributes::createForModel($this, 'extra_attributes');
     }
 
     /**
