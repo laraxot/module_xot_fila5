@@ -24,12 +24,23 @@ trait CreatesApplication
     {
         // Get base path (assuming tests are in Modules/{Module}/tests/)
         $basePath = realpath(__DIR__.'/../../../');
+        $testingEnvPath = $basePath.'/.env.testing';
 
         // Explicitly set the base path before requiring bootstrap/app.php
         $_ENV['APP_BASE_PATH'] = $basePath;
 
-        /** @var Application $app */
-        $app = require $basePath.'/bootstrap/app.php';
+        $appEnv = $_ENV['APP_ENV'] ?? getenv('APP_ENV') ?: 'local';
+        if ($appEnv === 'testing' && ! is_readable($testingEnvPath)) {
+            throw new \RuntimeException(
+                'laravel/.env.testing mancante. Rigenerare da .env: ./bashscripts/tools/sync-env-testing.sh'
+            );
+        }
+
+        $app = $this->loadLaravelApplication($basePath.'/bootstrap/app.php');
+
+        if ($appEnv === 'testing' && is_readable($testingEnvPath)) {
+            $app->loadEnvironmentFrom('.env.testing');
+        }
 
         // Bind essential paths if they are not correctly resolved
         $app->instance('path.base', $basePath);
@@ -37,7 +48,12 @@ trait CreatesApplication
         $app->bind('path.storage', fn () => $basePath.'/storage');
 
         // Bootstrap kernel to ensure all service providers and aliases are registered
-        $app->make(Kernel::class)->bootstrap();
+        $kernel = $app->make(Kernel::class);
+        if (! $kernel instanceof Kernel) {
+            throw new \RuntimeException('Console kernel must implement Illuminate\Contracts\Console\Kernel.');
+        }
+
+        $kernel->bootstrap();
         $app->boot(); // Ensure all service providers are booted
 
         // CRITICAL: DO NOT force database connections!
@@ -47,4 +63,15 @@ trait CreatesApplication
 
         return $app;
     }
+
+    private function loadLaravelApplication(string $bootstrapPath): Application
+    {
+        $app = require $bootstrapPath;
+        if (! $app instanceof Application) {
+            throw new \RuntimeException('bootstrap/app.php must return an Application instance.');
+        }
+
+        return $app;
+    }
+
 }
