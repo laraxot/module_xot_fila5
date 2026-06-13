@@ -9,7 +9,7 @@ use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
 it('gets module path from facade correctly', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     Module::shouldReceive('getModulePath')
         ->once()
         ->with('Xot')
@@ -22,7 +22,7 @@ it('gets module path from facade correctly', function (): void {
 });
 
 it('gets module path from fallback correctly', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     Module::shouldReceive('getModulePath')
         ->once()
         ->andThrow(new Exception('Module not found'));

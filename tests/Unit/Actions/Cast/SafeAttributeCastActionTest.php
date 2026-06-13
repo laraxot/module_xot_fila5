@@ -9,11 +9,11 @@ use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
-$model = $this->createUnitMock(Activity::class);
+        $model = $this->createUnitMock(Activity::class);
         $model->method('getAttribute')->willReturnMap([
             ['name', 'Test User'],
             ['email', ''],

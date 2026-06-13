@@ -9,11 +9,11 @@ use Modules\Xot\Tests\Fixtures\Models\TestConcreteMorphPivot;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
     test('it extends pivot class', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $pivot = new TestConcreteMorphPivot();
 
         // Assert
@@ -21,7 +21,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage morph type', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('morph_type', 'App\Models\User');
 
@@ -33,7 +33,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage morph id', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('morph_id', 123);
 
@@ -45,7 +45,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage related type', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('related_type', 'App\Models\Post');
 
@@ -57,7 +57,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage related id', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('related_id', 456);
 
@@ -69,7 +69,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage pivot attributes', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('custom_field', 'custom_value');
         $pivot->setAttribute('numeric_field', 42);
@@ -86,7 +86,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage timestamps', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $now = now();
         $pivot->setAttribute('created_at', $now);
@@ -102,7 +102,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage soft deletes', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $deletedAt = now();
         $pivot->setAttribute('deleted_at', $deletedAt);
@@ -115,7 +115,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage tenant id', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('tenant_id', 789);
 
@@ -127,7 +127,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage user id', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('user_id', 101);
 
@@ -139,7 +139,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage metadata', function (): void {
-// Arrange
+        // Arrange
         $metadata = [
             'source' => 'api',
             'ip_address' => '192.168.1.1',
@@ -163,7 +163,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage extra data', function (): void {
-// Arrange
+        // Arrange
         $extraData = [
             'field1' => 'value1',
             'field2' => 'value2',
@@ -189,7 +189,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage status', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('status', 'active');
 
@@ -202,7 +202,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage priority', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('priority', 5);
 
@@ -215,7 +215,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage sort order', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('sort_order', 10);
 
@@ -228,7 +228,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage expires at', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $expiresAt = now()->addDays(30);
         $pivot->setAttribute('expires_at', $expiresAt);
@@ -241,7 +241,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage starts at', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $startsAt = now()->addHours(2);
         $pivot->setAttribute('starts_at', $startsAt);
@@ -254,7 +254,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage ends at', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $endsAt = now()->addDays(7);
         $pivot->setAttribute('ends_at', $endsAt);
@@ -267,7 +267,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage is active', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('is_active', true);
 
@@ -285,7 +285,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage is public', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('is_public', false);
 
@@ -303,7 +303,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage is featured', function (): void {
-// Arrange
+        // Arrange
         $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('is_featured', false);
 
@@ -321,7 +321,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage tags', function (): void {
-// Arrange
+        // Arrange
         $tags = ['tag1', 'tag2', 'important'];
 
         $pivot = new TestConcreteMorphPivot();
@@ -340,7 +340,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage categories', function (): void {
-// Arrange
+        // Arrange
         $categories = ['category1', 'category2'];
 
         $pivot = new TestConcreteMorphPivot();
@@ -358,7 +358,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage permissions', function (): void {
-// Arrange
+        // Arrange
         $permissions = [
             'read' => true,
             'write' => false,
@@ -380,7 +380,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage settings', function (): void {
-// Arrange
+        // Arrange
         $settings = [
             'notifications' => true,
             'auto_save' => false,
@@ -402,7 +402,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage notes', function (): void {
-// Arrange
+        // Arrange
         $notes = 'This is a test note for the pivot relationship';
 
         $pivot = new TestConcreteMorphPivot();
@@ -416,7 +416,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage description', function (): void {
-// Arrange
+        // Arrange
         $description = 'Test description for pivot relationship';
 
         $pivot = new TestConcreteMorphPivot();
@@ -430,7 +430,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage url', function (): void {
-// Arrange
+        // Arrange
         $url = 'https://example.com/pivot/123';
 
         $pivot = new TestConcreteMorphPivot();
@@ -444,7 +444,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage image url', function (): void {
-// Arrange
+        // Arrange
         $imageUrl = 'https://example.com/images/pivot.jpg';
 
         $pivot = new TestConcreteMorphPivot();
@@ -458,7 +458,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage external id', function (): void {
-// Arrange
+        // Arrange
         $externalId = 'ext_12345';
 
         $pivot = new TestConcreteMorphPivot();
@@ -472,7 +472,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage source', function (): void {
-// Arrange
+        // Arrange
         $source = 'api_import';
 
         $pivot = new TestConcreteMorphPivot();
@@ -486,7 +486,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage version', function (): void {
-// Arrange
+        // Arrange
         $version = '1.2.3';
 
         $pivot = new TestConcreteMorphPivot();
@@ -500,7 +500,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage hash', function (): void {
-// Arrange
+        // Arrange
         $hash = 'abc123def456';
 
         $pivot = new TestConcreteMorphPivot();
@@ -514,7 +514,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage checksum', function (): void {
-// Arrange
+        // Arrange
         $checksum = 'sha256:abc123def456';
 
         $pivot = new TestConcreteMorphPivot();
@@ -528,7 +528,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage size', function (): void {
-// Arrange
+        // Arrange
         $size = 1024;
 
         $pivot = new TestConcreteMorphPivot();
@@ -543,7 +543,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage mime type', function (): void {
-// Arrange
+        // Arrange
         $mimeType = 'application/json';
 
         $pivot = new TestConcreteMorphPivot();
@@ -557,7 +557,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage encoding', function (): void {
-// Arrange
+        // Arrange
         $encoding = 'UTF-8';
 
         $pivot = new TestConcreteMorphPivot();
@@ -571,7 +571,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage language', function (): void {
-// Arrange
+        // Arrange
         $language = 'en';
 
         $pivot = new TestConcreteMorphPivot();
@@ -585,7 +585,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage locale', function (): void {
-// Arrange
+        // Arrange
         $locale = 'en_US';
 
         $pivot = new TestConcreteMorphPivot();
@@ -599,7 +599,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage timezone', function (): void {
-// Arrange
+        // Arrange
         $timezone = 'Europe/Rome';
 
         $pivot = new TestConcreteMorphPivot();
@@ -613,7 +613,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage currency', function (): void {
-// Arrange
+        // Arrange
         $currency = 'EUR';
 
         $pivot = new TestConcreteMorphPivot();
@@ -627,7 +627,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage decimal places', function (): void {
-// Arrange
+        // Arrange
         $decimalPlaces = 2;
 
         $pivot = new TestConcreteMorphPivot();
@@ -642,7 +642,7 @@ describe('Base Morph Pivot Business Logic', function (): void {
     });
 
     test('it can manage rounding mode', function (): void {
-// Arrange
+        // Arrange
         $roundingMode = 'half_up';
 
         $pivot = new TestConcreteMorphPivot();
