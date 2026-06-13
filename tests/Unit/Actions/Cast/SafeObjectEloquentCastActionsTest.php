@@ -7,7 +7,7 @@ use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 
 test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);

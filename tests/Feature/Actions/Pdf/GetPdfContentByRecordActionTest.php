@@ -10,15 +10,15 @@ use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-$this->action = new GetPdfContentByRecordAction();
+    $this->action = new GetPdfContentByRecordAction();
 });
 
 describe('Get Pdf Content By Record Action', function (): void {
     test('it generates pdf content from record', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne([
             'name' => 'Test User',
             'email' => 'test@example.com',
@@ -35,7 +35,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it generates correct view name', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
@@ -53,7 +53,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it generates correct filename for basic model', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
@@ -71,7 +71,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it generates enhanced filename for performance models', function (): void {
-// Arrange - Create a mock model with performance fields
+        // Arrange - Create a mock model with performance fields
         $record = new class extends Model {
             protected $table = 'test_performance';
 
@@ -102,7 +102,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it prepares correct view parameters', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
@@ -126,7 +126,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it throws exception for missing view', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne();
 
         // Act & Assert
@@ -137,13 +137,13 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it throws exception for empty html content', function (): void {
-// This test would require mocking view rendering to return empty content
+        // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
         $this->skipTest('Requires view mocking infrastructure');
     });
 
     test('it uses custom filename when provided', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne();
         $customFilename = 'custom-report.pdf';
 
@@ -154,7 +154,7 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it handles from record convenience method', function (): void {
-// Arrange
+        // Arrange
         $user = UserFactory::new()->createOne();
         $filename = 'convenience-test.pdf';
 
@@ -166,13 +166,13 @@ describe('Get Pdf Content By Record Action', function (): void {
     });
 
     test('it logs errors when pdf generation fails', function (): void {
-// This test would require mocking HTML2PDF to throw exceptions
+        // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
         $this->skipTest('Requires HTML2PDF mocking infrastructure');
     });
 
     test('it returns valid pdf content when view exists', function (): void {
-// This test would require creating actual test views
+        // This test would require creating actual test views
         // Implementation depends on test view infrastructure
         $this->skipTest('Requires test view infrastructure');
     });

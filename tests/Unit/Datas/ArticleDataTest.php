@@ -8,11 +8,11 @@ use Modules\Xot\Datas\ArticleData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Article Data', function (): void {
     test('can create article data with defaults', function (): void {
-$data = ArticleData::make();
+        $data = ArticleData::make();
 
         Assert::assertInstanceOf(ArticleData::class, $data);
         Assert::assertEquals(['post', 'page', 'news'], $data->types);
@@ -21,7 +21,7 @@ $data = ArticleData::make();
     });
 
     test('can create article data with custom values', function (): void {
-$data = new ArticleData(
+        $data = new ArticleData(
             types: ['blog', 'article'],
             categories: ['tech', 'news'],
             editor: 'wysiwyg',

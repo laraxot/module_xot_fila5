@@ -5,21 +5,19 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
 use function Safe\chdir;
 use function Safe\chmod;
 use function Safe\exec;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
-use function Safe\rmdir;
-use function Safe\scandir;
-use function Safe\unlink;
-use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     // Creiamo una directory temporanea per i test
     $this->testDir = sys_get_temp_dir().'/fix_structure_test_'.uniqid();
     mkdir($this->testDir, 0o755, true);
@@ -29,17 +27,16 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /** @var TestCase $this */
     // Puliamo la directory di test
     if (is_string($this->testDir)) {
         $this->rrmdir($this->testDir);
     }
-
 });
 
 describe('Fix Structure', function (): void {
     test('move to app functionality', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Actions', 0o755, true);
         file_put_contents($this->testDir.'/Actions/test.php', 'echo "test";');
@@ -60,7 +57,7 @@ describe('Fix Structure', function (): void {
     });
 
     test('rename to lower functionality', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         // Creiamo una struttura di directory di test
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/test.php', 'echo "test";');
@@ -81,7 +78,7 @@ describe('Fix Structure', function (): void {
     });
 
     test('move config functionality', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         // Creiamo una struttura di directory di test con entrambe le versioni
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/main.php', 'echo "main";');

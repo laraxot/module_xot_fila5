@@ -11,11 +11,11 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Safe Array By Model Cast Action', function (): void {
     test('converts model attributes to array correctly', function (): void {
-$model = new Activity();
+        $model = new Activity();
         $model->setRawAttributes(['name' => 'Test']);
 
         $action = app(SafeArrayByModelCastAction::class);
@@ -26,7 +26,7 @@ $model = new Activity();
     });
 
     test('falls back to safe execute on error', function (): void {
-$model = $this->createUnitMock(Model::class);
+        $model = $this->createUnitMock(Model::class);
         $model->method('attributesToArray')->willThrowException(new \Exception('Mock error'));
         $model->method('getAttributes')->willReturn(['name' => 'Fallback']);
         $model->method('getAttribute')->willReturn('Fallback');
