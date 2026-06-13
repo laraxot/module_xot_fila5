@@ -119,6 +119,75 @@ function options(string|array $uri): TestResponse
 }
 
 /**
+ * Perform a JSON GET request.
+ *
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $headers
+ *
+ * @return TestResponse<Response>
+ */
+function getJson(string|array $uri, array $headers = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a JSON POST request.
+ *
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+ *
+ * @return TestResponse<Response>
+ */
+function postJson(string|array $uri, array $data = [], array $headers = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a JSON PUT request.
+ *
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+ *
+ * @return TestResponse<Response>
+ */
+function putJson(string|array $uri, array $data = [], array $headers = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a JSON PATCH request.
+ *
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+ *
+ * @return TestResponse<Response>
+ */
+function patchJson(string|array $uri, array $data = [], array $headers = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
+ * Perform a JSON DELETE request.
+ *
+ * @param string|array<string, mixed> $uri
+ * @param array<string, mixed>        $data
+ * @param array<string, mixed>        $headers
+ *
+ * @return TestResponse<Response>
+ */
+function deleteJson(string|array $uri, array $data = [], array $headers = []): TestResponse
+{
+    throw new \RuntimeException('Stub: This function is meant for static analysis only.');
+}
+
+/**
  * Set the number of redirects to follow.
  *
  * @return TestResponse<Response>

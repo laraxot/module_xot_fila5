@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
-use Mockery\MockInterface;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\MockObject\MockObject;
+use Mockery\MockInterface;
+use function Safe\rmdir;
+use function Safe\scandir;
+use function Safe\unlink;
 
 /**
  * Base test case for Xot module.
@@ -21,18 +24,18 @@ use PHPUnit\Framework\MockObject\MockObject;
  * DatabaseTransactions handles rollback between tests.
  *
  * @property object|null $action
- * @property Model|null  $model
+ * @property Model|null $model
  * @property object|null $service
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
- * @property Model|null  $testModel
+ * @property Model|null $testModel
  * @property object|null $extraClass
- * @property Model|null  $baseModel
+ * @property Model|null $baseModel
  * @property string|null $testDir
- * @property mixed       $saved
- * @property mixed       $extra_attributes
+ * @property mixed $saved
+ * @property mixed $extra_attributes
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -43,7 +46,7 @@ abstract class TestCase extends XotBaseTestCase
 
     public mixed $action = null;
 
-    public ?Model $model = null;
+    public mixed $model = null;
 
     public mixed $service = null;
 
@@ -55,11 +58,11 @@ abstract class TestCase extends XotBaseTestCase
 
     public mixed $resource = null;
 
-    public ?Model $testModel = null;
+    public mixed $testModel = null;
 
     public mixed $extraClass = null;
 
-    public ?Model $baseModel = null;
+    public mixed $baseModel = null;
 
     public ?string $testDir = null;
 
@@ -70,7 +73,7 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @return array<int, class-string<ServiceProvider>>
      */
-    protected function getPackageProviders(\Illuminate\Foundation\Application $app): array
+    protected function getPackageProviders(Application $app): array
     {
         return parent::getPackageProviders($app);
     }
@@ -85,7 +88,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -97,8 +100,7 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param class-string<T> $class
-     *
+     * @param  class-string<T>  $class
      * @return T
      */
     public function getAction(string $class): object
@@ -112,19 +114,10 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $data
-     */
-    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
-    {
-        $this->assertDatabaseHas($table, $data, $connection);
-    }
-
-    /**
      * @template T of object
      *
-     * @param class-string<T>                        $abstract
-     * @param (\Closure(MockInterface&T): void)|null $callback
-     *
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -136,7 +129,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param class-string<\Throwable> $exception
+     * @param  class-string<\Throwable>  $exception
      */
     public function expectThrowable(string $exception): void
     {
@@ -159,14 +152,31 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @template T of object
-     *
-     * @param class-string<T> $class
-     *
-     * @return MockObject&T
+     * Recursively remove a directory and all its contents.
      */
-    public function createUnitMock(string $class): MockObject
+    public function rrmdir(string $dir): void
     {
-        return $this->createMock($class);
+        if (! is_dir($dir)) {
+            return;
+        }
+
+        /** @var array<int, string> $files */
+        $files = scandir($dir);
+
+        foreach ($files as $file) {
+            if ($file === '.' || $file === '..') {
+                continue;
+            }
+
+            $path = $dir.'/'.$file;
+            if (is_dir($path) && ! is_link($path)) {
+                $this->rrmdir($path);
+                continue;
+            }
+
+            unlink($path);
+        }
+
+        rmdir($dir);
     }
 }

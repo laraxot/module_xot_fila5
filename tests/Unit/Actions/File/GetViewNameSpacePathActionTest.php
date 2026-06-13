@@ -8,6 +8,7 @@ use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
 it('gets view namespace path from theme fallback correctly', function (): void {
+    /** @var \Modules\Xot\Tests\TestCase $this */
     $ns = 'pub_theme';
     $themeName = 'TestTheme';
 

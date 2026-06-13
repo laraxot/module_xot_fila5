@@ -10,18 +10,15 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-class ModuleBusinessLogicTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(\Modules\Xot\Tests\TestCase::class);
 
-        $this->markTestSkipped('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
-    }
+beforeEach(function (): void {
+skip('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
+});
 
-    public function testCanCreateModule(): void
-    {
-        $moduleData = [
+describe('Module Business Logic', function (): void {
+    test('can create module', function (): void {
+$moduleData = [
             'name' => 'TestModule',
             'slug' => 'test-module',
             'version' => '1.0.0',
@@ -31,7 +28,7 @@ class ModuleBusinessLogicTest extends TestCase
 
         $module = Module::create($moduleData);
 
-        $this->assertDatabaseHas('modules', [
+        $this->assertDatabaseHasRow('modules', [
             'id' => $module->id,
             'name' => 'TestModule',
             'slug' => 'test-module',
@@ -43,11 +40,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertEquals('test-module', $module->slug);
         Assert::assertEquals('1.0.0', $module->version);
         Assert::assertTrue((bool) $module->enabled);
-    }
+    });
 
-    public function testCanEnableAndDisableModule(): void
-    {
-        $module = ModuleFactory::new()->createOne(['enabled' => false]);
+    test('can enable and disable module', function (): void {
+$module = ModuleFactory::new()->createOne(['enabled' => false]);
 
         $module->update(['enabled' => true]);
         $freshModule = $module->fresh();
@@ -58,26 +54,24 @@ class ModuleBusinessLogicTest extends TestCase
         $freshModule = $module->fresh();
         Assert::assertNotNull($freshModule);
         Assert::assertFalse((bool) $freshModule->enabled);
-    }
+    });
 
-    public function testCanUpdateModuleVersion(): void
-    {
-        $module = ModuleFactory::new()->createOne(['version' => '1.0.0']);
+    test('can update module version', function (): void {
+$module = ModuleFactory::new()->createOne(['version' => '1.0.0']);
 
         $module->update(['version' => '2.0.0']);
 
         $freshModule = $module->fresh();
         Assert::assertNotNull($freshModule);
         Assert::assertEquals('2.0.0', $freshModule->version);
-        $this->assertDatabaseHas('modules', [
+        $this->assertDatabaseHasRow('modules', [
             'id' => $module->id,
             'version' => '2.0.0',
         ], 'sushi');
-    }
+    });
 
-    public function testCanManageModuleDependencies(): void
-    {
-        $module = ModuleFactory::new()->createOne([
+    test('can manage module dependencies', function (): void {
+$module = ModuleFactory::new()->createOne([
             'dependencies' => ['user', 'auth'],
         ]);
 
@@ -87,11 +81,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertContains('user', $dependencies);
         Assert::assertContains('auth', $dependencies);
         Assert::assertCount(2, $dependencies);
-    }
+    });
 
-    public function testCanValidateModuleSlugUniqueness(): void
-    {
-        ModuleFactory::new()->createOne(['slug' => 'unique-module']);
+    test('can validate module slug uniqueness', function (): void {
+ModuleFactory::new()->createOne(['slug' => 'unique-module']);
 
         try {
             Module::create([
@@ -104,11 +97,10 @@ class ModuleBusinessLogicTest extends TestCase
         } catch (QueryException $e) {
             Assert::assertInstanceOf(QueryException::class, $e);
         }
-    }
+    });
 
-    public function testCanManageModuleConfiguration(): void
-    {
-        $config = [
+    test('can manage module configuration', function (): void {
+$config = [
             'setting1' => 'value1',
             'setting2' => 'value2',
             'nested' => [
@@ -125,22 +117,20 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertEquals('value1', $moduleConfig['setting1']);
         Assert::assertEquals('value2', $moduleConfig['setting2']);
         Assert::assertEquals('value', $moduleConfig['nested']['key']);
-    }
+    });
 
-    public function testCanCheckModuleStatus(): void
-    {
-        $enabledModule = ModuleFactory::new()->createOne(['enabled' => true]);
+    test('can check module status', function (): void {
+$enabledModule = ModuleFactory::new()->createOne(['enabled' => true]);
         $disabledModule = ModuleFactory::new()->createOne(['enabled' => false]);
 
         Assert::assertTrue((bool) $enabledModule->enabled);
         Assert::assertFalse((bool) $disabledModule->enabled);
         Assert::assertTrue(true === $enabledModule->enabled);
         Assert::assertTrue(false === $disabledModule->enabled);
-    }
+    });
 
-    public function testCanManageModuleMetadata(): void
-    {
-        $metadata = [
+    test('can manage module metadata', function (): void {
+$metadata = [
             'author' => 'Test Author',
             'website' => 'https://example.com',
             'license' => 'MIT',
@@ -158,26 +148,24 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertEquals('MIT', $moduleMetadata['license']);
         Assert::assertContains('test', $moduleMetadata['tags']);
         Assert::assertContains('example', $moduleMetadata['tags']);
-    }
+    });
 
-    public function testCanValidateModuleVersionFormat(): void
-    {
-        $validVersions = ['1.0.0', '2.1.3', '10.5.2', '0.1.0'];
+    test('can validate module version format', function (): void {
+$validVersions = ['1.0.0', '2.1.3', '10.5.2', '0.1.0'];
 
         foreach ($validVersions as $version) {
             $module = ModuleFactory::new()->createOne(['version' => $version]);
 
             Assert::assertEquals($version, $module->version);
-            $this->assertDatabaseHas('modules', [
+            $this->assertDatabaseHasRow('modules', [
                 'id' => $module->id,
                 'version' => $version,
             ], 'sushi');
         }
-    }
+    });
 
-    public function testCanManageModuleInstallationDate(): void
-    {
-        $installationDate = now()->subDays(30);
+    test('can manage module installation date', function (): void {
+$installationDate = now()->subDays(30);
         $module = ModuleFactory::new()->createOne([
             'installation_date' => $installationDate,
         ]);
@@ -185,15 +173,14 @@ class ModuleBusinessLogicTest extends TestCase
         $moduleInstalledAt = $module->installation_date;
 
         Assert::assertEquals($installationDate, $moduleInstalledAt);
-        $this->assertDatabaseHas('modules', [
+        $this->assertDatabaseHasRow('modules', [
             'id' => $module->id,
             'installation_date' => $installationDate,
         ], 'sushi');
-    }
+    });
 
-    public function testCanManageModuleUpdateHistory(): void
-    {
-        $updateHistory = [
+    test('can manage module update history', function (): void {
+$updateHistory = [
             [
                 'version' => '1.0.0',
                 'date' => '2024-01-01',
@@ -217,11 +204,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertEquals('Initial release', $moduleUpdateHistory[0]['changes']);
         Assert::assertEquals('1.1.0', $moduleUpdateHistory[1]['version']);
         Assert::assertEquals('Bug fixes and improvements', $moduleUpdateHistory[1]['changes']);
-    }
+    });
 
-    public function testCanCheckModuleCompatibility(): void
-    {
-        $module = ModuleFactory::new()->createOne([
+    test('can check module compatibility', function (): void {
+$module = ModuleFactory::new()->createOne([
             'laravel_version' => '^10.0',
             'php_version' => '^8.1',
         ]);
@@ -231,11 +217,10 @@ class ModuleBusinessLogicTest extends TestCase
 
         Assert::assertEquals('^10.0', $laravelVersion);
         Assert::assertEquals('^8.1', $phpVersion);
-    }
+    });
 
-    public function testCanManageModulePermissions(): void
-    {
-        $permissions = [
+    test('can manage module permissions', function (): void {
+$permissions = [
             'module.read',
             'module.write',
             'module.delete',
@@ -251,11 +236,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertContains('module.write', $modulePermissions);
         Assert::assertContains('module.delete', $modulePermissions);
         Assert::assertCount(3, $modulePermissions);
-    }
+    });
 
-    public function testCanManageModuleRoutes(): void
-    {
-        $routes = [
+    test('can manage module routes', function (): void {
+$routes = [
             'web' => ['prefix' => 'module', 'middleware' => ['web']],
             'api' => ['prefix' => 'api/module', 'middleware' => ['api']],
         ];
@@ -270,11 +254,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertArrayHasKey('api', $moduleRoutes);
         Assert::assertEquals('module', $moduleRoutes['web']['prefix']);
         Assert::assertEquals('api/module', $moduleRoutes['api']['prefix']);
-    }
+    });
 
-    public function testCanManageModuleAssets(): void
-    {
-        $assets = [
+    test('can manage module assets', function (): void {
+$assets = [
             'css' => ['app.css', 'vendor.css'],
             'js' => ['app.js', 'vendor.js'],
             'images' => ['logo.png', 'icon.svg'],
@@ -292,11 +275,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertContains('app.css', $moduleAssets['css']);
         Assert::assertContains('app.js', $moduleAssets['js']);
         Assert::assertContains('logo.png', $moduleAssets['images']);
-    }
+    });
 
-    public function testCanManageModuleSettings(): void
-    {
-        $settings = [
+    test('can manage module settings', function (): void {
+$settings = [
             'debug' => false,
             'cache' => true,
             'timeout' => 30,
@@ -314,11 +296,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertEquals(30, $moduleSettings['timeout']);
         Assert::assertContains('feature1', $moduleSettings['features']);
         Assert::assertContains('feature2', $moduleSettings['features']);
-    }
+    });
 
-    public function testCanValidateModuleRequiredFields(): void
-    {
-        $requiredFields = ['name', 'slug', 'version'];
+    test('can validate module required fields', function (): void {
+$requiredFields = ['name', 'slug', 'version'];
 
         foreach ($requiredFields as $field) {
             $moduleData = [
@@ -337,11 +318,10 @@ class ModuleBusinessLogicTest extends TestCase
                 Assert::assertInstanceOf(QueryException::class, $e);
             }
         }
-    }
+    });
 
-    public function testCanManageModuleActivationWorkflow(): void
-    {
-        $module = ModuleFactory::new()->createOne([
+    test('can manage module activation workflow', function (): void {
+$module = ModuleFactory::new()->createOne([
             'enabled' => false,
             'activation_date' => null,
         ]);
@@ -365,11 +345,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertNotNull($freshModule);
         Assert::assertFalse((bool) $freshModule->enabled);
         Assert::assertNotNull($freshModule->deactivation_date);
-    }
+    });
 
-    public function testCanTrackModuleUsageStatistics(): void
-    {
-        $usageStats = [
+    test('can track module usage statistics', function (): void {
+$usageStats = [
             'total_requests' => 1000,
             'unique_users' => 150,
             'last_used' => now()->subHours(2),
@@ -387,11 +366,10 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertNotNull($usage_statistics['last_used']);
         Assert::assertContains('feature1', $usage_statistics['popular_features']);
         Assert::assertContains('feature2', $usage_statistics['popular_features']);
-    }
+    });
 
-    public function testCanManageModuleErrorLogging(): void
-    {
-        $errorLog = [
+    test('can manage module error logging', function (): void {
+$errorLog = [
             [
                 'level' => 'error',
                 'message' => 'Test error message',
@@ -411,5 +389,5 @@ class ModuleBusinessLogicTest extends TestCase
         Assert::assertEquals('Test error message', $module_error_log[0]['message']);
         Assert::assertEquals('test.php', $module_error_log[0]['context']['file']);
         Assert::assertEquals(42, $module_error_log[0]['context']['line']);
-    }
-}
+    });
+});
