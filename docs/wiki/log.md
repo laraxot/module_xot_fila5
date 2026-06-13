@@ -4,13 +4,22 @@ type: log
 module: Xot
 tags: [xot, phpstan, pest, qmd]
 created: 2026-04-20
-updated: 2026-06-12
+updated: 2026-06-13
 qmd: "Xot log phpstan pest bridge discipline"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
+
+---
+
+## [2026-06-13] docs | Hub platform-completion-roadmap + gate PHPStan zero
+
+- Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) — SSoT completamento 16 moduli + 4 temi.
+- Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+- Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
+- Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
 ## [2026-06-12] testing | Pest global class imports
 

@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
+
+uses(\Modules\Xot\Tests\TestCase::class);
 
 test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);
@@ -15,7 +16,6 @@ test('safe object cast action works', function (): void {
         public int $int = 123;
         public float $float = 12.3;
         public bool $bool = true;
-        /** @var array<string, int> */
         /** @var array<string, int> */
         public array $arr = ['a' => 1];
         public mixed $null_val;

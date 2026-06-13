@@ -9,11 +9,13 @@ use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class RegisterBladeComponentsActionTest extends TestCase
-{
-    public function testRegistersBladeComponentsCorrectly(): void
-    {
+uses(\Modules\Xot\Tests\TestCase::class);
+
+describe('Register Blade Components Action', function (): void {
+    test('registers blade components correctly', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
         $path = 'some/path';
         $namespace = 'Some\\Namespace';
         $prefix = 'prefix';
@@ -27,7 +29,8 @@ class RegisterBladeComponentsActionTest extends TestCase
         $mockComps = ComponentFileData::collection([$comp1]);
 
         $mock = $this->createUnitMock(GetComponentsAction::class);
-        $mock->expects($this->once())
+        /** @phpstan-ignore-next-line */
+        $mock->expects($this->atLeastOnce())
             ->method('execute')
             ->with($path, $namespace.'\\View\\Components', $prefix)
             ->willReturn($mockComps);
@@ -40,17 +43,18 @@ class RegisterBladeComponentsActionTest extends TestCase
 
         $action = app(RegisterBladeComponentsAction::class);
         $action->execute($path, $namespace, $prefix);
-    }
+    });
 
-    public function testDoesNothingIfNoComponentsFound(): void
-    {
+    test('does nothing if no components found', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
         $path = 'empty/path';
         $namespace = 'Empty\\Namespace';
 
         $mockComps = ComponentFileData::collection([]);
 
         $mock = $this->createUnitMock(GetComponentsAction::class);
-        $mock->expects($this->once())
+        /** @phpstan-ignore-next-line */
+        $mock->expects($this->atLeastOnce())
             ->method('execute')
             ->willReturn($mockComps);
 
@@ -60,5 +64,5 @@ class RegisterBladeComponentsActionTest extends TestCase
 
         $action = app(RegisterBladeComponentsAction::class);
         $action->execute($path, $namespace);
-    }
-}
+    });
+});

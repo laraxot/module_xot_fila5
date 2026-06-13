@@ -4,7 +4,7 @@ type: index
 module: Xot
 tags: [xot, wiki, index, xotbase, migrations, phpstan]
 created: 2026-04-28
-updated: 2026-06-12
+updated: 2026-06-13
 qmd: "xot module wiki index XotBase migrations phpstan filament actions pest ReflectionClass global imports"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -61,7 +61,8 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
-| [filament-widgets-domain-folder-naming](./concepts/filament-widgets-domain-folder-naming.md) | Concept | Widget: `Widgets\{Domain}\{Role}Widget` (mai `TicketViewWidget`) | 2026-06-03 |
+| [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |

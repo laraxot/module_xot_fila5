@@ -10,17 +10,15 @@ use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-class GetPdfContentByRecordActionTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->action = new GetPdfContentByRecordAction();
-    }
+uses(\Modules\Xot\Tests\TestCase::class);
 
-    public function testItGeneratesPdfContentFromRecord(): void
-    {
-        // Arrange
+beforeEach(function (): void {
+$this->action = new GetPdfContentByRecordAction();
+});
+
+describe('Get Pdf Content By Record Action', function (): void {
+    test('it generates pdf content from record', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne([
             'name' => 'Test User',
             'email' => 'test@example.com',
@@ -34,11 +32,10 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectThrowableMessage("View 'user::user.show.pdf' not found");
 
         app(GetPdfContentByRecordAction::class)->execute($user);
-    }
+    });
 
-    public function testItGeneratesCorrectViewName(): void
-    {
-        // Arrange
+    test('it generates correct view name', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
@@ -53,11 +50,10 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         // Assert
         Assert::assertEquals('user::user.show.pdf', $viewName);
-    }
+    });
 
-    public function testItGeneratesCorrectFilenameForBasicModel(): void
-    {
-        // Arrange
+    test('it generates correct filename for basic model', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
@@ -72,11 +68,10 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         // Assert
         Assert::assertEquals('user_123_test-user.pdf', $filename);
-    }
+    });
 
-    public function testItGeneratesEnhancedFilenameForPerformanceModels(): void
-    {
-        // Arrange - Create a mock model with performance fields
+    test('it generates enhanced filename for performance models', function (): void {
+// Arrange - Create a mock model with performance fields
         $record = new class extends Model {
             protected $table = 'test_performance';
 
@@ -104,11 +99,10 @@ class GetPdfContentByRecordActionTest extends TestCase
 
         // Assert
         Assert::assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
-    }
+    });
 
-    public function testItPreparesCorrectViewParameters(): void
-    {
-        // Arrange
+    test('it prepares correct view parameters', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
@@ -129,11 +123,10 @@ class GetPdfContentByRecordActionTest extends TestCase
         Assert::assertEquals('user::user.show.pdf', $params['view']);
         Assert::assertSame($user, $params['row']);
         Assert::assertEquals('user::users.fields', $params['transKey']);
-    }
+    });
 
-    public function testItThrowsExceptionForMissingView(): void
-    {
-        // Arrange
+    test('it throws exception for missing view', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne();
 
         // Act & Assert
@@ -141,18 +134,16 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
         app(GetPdfContentByRecordAction::class)->execute($user);
-    }
+    });
 
-    public function testItThrowsExceptionForEmptyHtmlContent(): void
-    {
-        // This test would require mocking view rendering to return empty content
+    test('it throws exception for empty html content', function (): void {
+// This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        $this->markTestSkipped('Requires view mocking infrastructure');
-    }
+        $this->skipTest('Requires view mocking infrastructure');
+    });
 
-    public function testItUsesCustomFilenameWhenProvided(): void
-    {
-        // Arrange
+    test('it uses custom filename when provided', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne();
         $customFilename = 'custom-report.pdf';
 
@@ -160,11 +151,10 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectThrowable(\Exception::class);
 
         app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
-    }
+    });
 
-    public function testItHandlesFromRecordConvenienceMethod(): void
-    {
-        // Arrange
+    test('it handles from record convenience method', function (): void {
+// Arrange
         $user = UserFactory::new()->createOne();
         $filename = 'convenience-test.pdf';
 
@@ -173,19 +163,17 @@ class GetPdfContentByRecordActionTest extends TestCase
         $this->expectThrowableMessageMatches("/View 'user::user\.show\.pdf' not found/");
 
         app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
-    }
+    });
 
-    public function testItLogsErrorsWhenPdfGenerationFails(): void
-    {
-        // This test would require mocking HTML2PDF to throw exceptions
+    test('it logs errors when pdf generation fails', function (): void {
+// This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        $this->markTestSkipped('Requires HTML2PDF mocking infrastructure');
-    }
+        $this->skipTest('Requires HTML2PDF mocking infrastructure');
+    });
 
-    public function testItReturnsValidPdfContentWhenViewExists(): void
-    {
-        // This test would require creating actual test views
+    test('it returns valid pdf content when view exists', function (): void {
+// This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        $this->markTestSkipped('Requires test view infrastructure');
-    }
-}
+        $this->skipTest('Requires test view infrastructure');
+    });
+});
