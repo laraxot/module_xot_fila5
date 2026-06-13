@@ -982,6 +982,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Cms\Tests\Unit;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Cms\Tests\Unit\Actions;
 
 use Closure;
@@ -1033,6 +1071,451 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Cms\Tests\Unit\Actions\View;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Datas;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament\Clusters\Appearance\Pages;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament\Fields;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament\Forms\Components;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament\Front\Pages;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament\Pages;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Filament\Resources;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Http\Controllers\Admin;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Http\Middleware;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Http\View\Composers;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Cms\Tests\Unit\Http\Volt;
 
 use Closure;
@@ -1084,6 +1567,81 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Cms\Tests\Unit\Http\Volt\Password;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Middleware;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Cms\Tests\Unit\Models;
 
 use Closure;
@@ -1135,6 +1693,118 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Cms\Tests\Unit\Models\Policies;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Models\Traits;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Cms\Tests\Unit\Providers;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Cms\Tests\Unit\Support;
 
 use Closure;
@@ -7000,6 +7670,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Tenant\Tests\Unit\Actions\Domains;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown;
 
 use Closure;
@@ -8020,6 +8728,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Feature\Actions\Passport;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Closure;
@@ -8071,6 +8817,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Feature\Auth;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Feature\Authentication;
 
 use Closure;
@@ -8326,6 +9110,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Resources;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Closure;
@@ -8785,6 +9607,118 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Unit\Actions\Otp;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\User\Tests\Unit\Actions\Passport;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\User\Tests\Unit\Actions\Socialite;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
 use Closure;
@@ -8887,6 +9821,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Unit\Console;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Unit\Datas;
 
 use Closure;
@@ -8938,6 +9910,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Unit\Enums;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Unit\Events;
 
 use Closure;
@@ -8989,6 +9999,118 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\User\Tests\Unit\Facades;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\User\Tests\Unit\Filament\Widgets;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\User\Tests\Unit\Mail;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\User\Tests\Unit\Models;
 
 use Closure;
@@ -10060,6 +11182,44 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Xot\Tests\Unit\Actions;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Closure;
@@ -10264,6 +11424,81 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Xot\Tests\Unit\Actions\Class;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\Collection;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Closure;
@@ -10315,6 +11550,81 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+
+namespace Modules\Xot\Tests\Unit\Actions\Debug;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\Dummy;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Closure;
@@ -10458,6 +11768,413 @@ function beforeEach(Closure $closure): void
 /**
  * @param-closure-this \Modules\Xot\Tests\TestCase $closure
  */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\Module;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\Parse;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\Pdf;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\Query;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\String;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Actions\View;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Models;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Services;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Traits;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\Traits\Filament;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Xot\Tests\Unit\ValueObjects;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+function describe(string $description, Closure $closure): void
+{
+}
+
+function beforeEach(Closure $closure): void
+{
+}
+
 function afterEach(Closure $closure): void
 {
 }
