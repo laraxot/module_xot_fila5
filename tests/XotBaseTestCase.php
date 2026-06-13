@@ -20,17 +20,145 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
+use Mockery\MockInterface;
 use Modules\Xot\Providers\XotServiceProvider;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 
 /**
  * Class XotBaseTestCase.
  *
  * Shared bootstrap base test case for module tests.
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
+ *
+ * @property object|null $action
+ * @property Model|null $model
+ * @property object|null $service
+ * @property object|null $widget
+ * @property string|null $tempDir
+ * @property object|null $record
+ * @property object|null $transition
+ * @property object|null $resource
+ * @property Model|null $testModel
+ * @property object|null $extraClass
+ * @property Model|null $baseModel
+ * @property string|null $testDir
+ * @property string|null $workDir
+ * @property mixed $saved
+ * @property mixed $extra_attributes
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
     use CreatesApplication;
+
+    public mixed $action = null;
+
+    public mixed $model = null;
+
+    public mixed $service = null;
+
+    public mixed $widget = null;
+
+    public mixed $tempDir = null;
+
+    public mixed $record = null;
+
+    public mixed $transition = null;
+
+    public mixed $resource = null;
+
+    public mixed $testModel = null;
+
+    public mixed $extraClass = null;
+
+    public mixed $baseModel = null;
+
+    public ?string $testDir = null;
+
+    public ?string $workDir = null;
+
+    public mixed $saved = null;
+
+    public mixed $extra_attributes = null;
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
+    {
+        $this->assertDatabaseHas($table, $data, $connection);
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
+    {
+        $this->assertDatabaseMissing($table, $data, $connection);
+    }
+
+    public function assertDatabaseCountRow(string $table, int $count, ?string $connection = null): void
+    {
+        $this->assertDatabaseCount($table, $count, $connection);
+    }
+
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $class
+     * @return MockObject&T
+     */
+    public function createUnitMock(string $class): MockObject
+    {
+        return $this->createMock($class);
+    }
+
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(\Mockery\MockInterface&T): void)|null  $callback
+     * @return \Mockery\MockInterface&T
+     */
+    public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
+    {
+        /** @var \Mockery\MockInterface&T $mock */
+        $mock = $this->mock($abstract, $callback);
+
+        return $mock;
+    }
+
+    /**
+     * @phpstan-ignore return.internalClass
+     */
+    public function expectsOnce(): InvokedCount
+    {
+        return $this->once();
+    }
+
+    /**
+     * @phpstan-ignore return.internalClass
+     */
+    public function expectsExactly(int $count): InvokedCount
+    {
+        return $this->exactly($count);
+    }
+
+    public function skipTest(string $message = ''): never
+    {
+        $this->markTestSkipped($message);
+    }
+
+    /**
+     * @param  class-string<\Throwable>  $exceptionClass
+     */
+    public function expectApplicationException(string $exceptionClass, ?string $message = null): void
+    {
+        $this->expectException($exceptionClass);
+        if ($message !== null) {
+            $this->expectExceptionMessage($message);
+        }
+    }
 
     /**
      * @return array<int, class-string<ServiceProvider>>
@@ -49,7 +177,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function ($app) {
                 return new Translator(
-                    new ArrayLoader(),
+                    new ArrayLoader,
                     'en'
                 );
             });
@@ -93,7 +221,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
@@ -106,7 +234,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -114,7 +242,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -132,7 +260,7 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     protected function prepareSharedFixcitySqliteForTesting(): void
     {
-        if (null === $this->app) {
+        if ($this->app === null) {
             $this->refreshApplication();
         }
 
@@ -145,7 +273,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
                 continue;
             }
 
@@ -158,7 +286,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
-        if ([] === $sqliteConnections) {
+        if ($sqliteConnections === []) {
             return;
         }
 
@@ -182,5 +310,38 @@ abstract class XotBaseTestCase extends BaseTestCase
         }
 
         $connectionsProperty->setValue($database, $resolved);
+    }
+
+    public function bindInstance(string $abstract, object $instance): void
+    {
+        $this->instance($abstract, $instance);
+    }
+
+    public function disableExceptionHandling(): void
+    {
+        $this->withoutExceptionHandling();
+    }
+
+    public function enableExceptionHandling(): void
+    {
+        $this->withExceptionHandling();
+    }
+
+    /**
+     * @param  class-string<\Throwable>  $exception
+     */
+    public function expectThrowable(string $exception): void
+    {
+        $this->expectException($exception);
+    }
+
+    public function expectThrowableMessage(string $message): void
+    {
+        $this->expectExceptionMessage($message);
+    }
+
+    public function expectThrowableMessageMatches(string $pattern): void
+    {
+        $this->expectExceptionMessageMatches($pattern);
     }
 }

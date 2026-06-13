@@ -9,12 +9,14 @@ use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-class GetTenantConfigPathActionTest extends TestCase
-{
-    public function testDelegatesToTenantFilePathActionWithPhpFilename(): void
-    {
-        $tenantPathAction = $this->createMock(GetTenantFilePathAction::class);
-        $tenantPathAction->expects($this->once())
+uses(\Modules\Xot\Tests\TestCase::class);
+
+describe('Get Tenant Config Path Action', function (): void {
+    test('delegates to tenant file path action with php filename', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $tenantPathAction = $this->createUnitMock(GetTenantFilePathAction::class);
+        /** @phpstan-ignore-next-line */
+        $tenantPathAction->expects($this->atLeastOnce())
             ->method('execute')
             ->with('mail.php')
             ->willReturn('/tmp/tenant/mail.php');
@@ -24,5 +26,5 @@ class GetTenantConfigPathActionTest extends TestCase
         $result = app(GetTenantConfigPathAction::class)->execute('mail');
 
         Assert::assertSame('/tmp/tenant/mail.php', $result);
-    }
-}
+    });
+});

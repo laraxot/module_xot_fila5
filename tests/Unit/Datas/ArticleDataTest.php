@@ -8,21 +8,20 @@ use Modules\Xot\Datas\ArticleData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-class ArticleDataTest extends TestCase
-{
-    public function testCanCreateArticleDataWithDefaults(): void
-    {
-        $data = ArticleData::make();
+uses(\Modules\Xot\Tests\TestCase::class);
+
+describe('Article Data', function (): void {
+    test('can create article data with defaults', function (): void {
+$data = ArticleData::make();
 
         Assert::assertInstanceOf(ArticleData::class, $data);
         Assert::assertEquals(['post', 'page', 'news'], $data->types);
         Assert::assertEquals([], $data->categories);
         Assert::assertEquals('markdown', $data->editor);
-    }
+    });
 
-    public function testCanCreateArticleDataWithCustomValues(): void
-    {
-        $data = new ArticleData(
+    test('can create article data with custom values', function (): void {
+$data = new ArticleData(
             types: ['blog', 'article'],
             categories: ['tech', 'news'],
             editor: 'wysiwyg',
@@ -34,5 +33,5 @@ class ArticleDataTest extends TestCase
         Assert::assertEquals(['tech', 'news'], $data->categories);
         Assert::assertEquals('wysiwyg', $data->editor);
         Assert::assertFalse($data->features['enable_comments']);
-    }
-}
+    });
+});

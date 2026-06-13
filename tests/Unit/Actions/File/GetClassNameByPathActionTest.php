@@ -10,7 +10,8 @@ use PHPUnit\Framework\Assert;
 use function Safe\tempnam;
 
 it('gets class name from path correctly', function (): void {
-    $tempPath = tempnam(sys_get_temp_dir(), 'test_class_').'.php';
+    $tempFile = tempnam(sys_get_temp_dir(), 'test_class_');
+    $tempPath = $tempFile.'.php';
     $content = "<?php\n\nnamespace My\\Test\\Namespace;
 \n\nclass MyTestClass {}\n";
     File::put($tempPath, $content);
@@ -23,7 +24,8 @@ it('gets class name from path correctly', function (): void {
 });
 
 it('gets class name from path without namespace correctly', function (): void {
-    $tempPath = tempnam(sys_get_temp_dir(), 'test_class_no_ns_').'.php';
+    $tempFile = tempnam(sys_get_temp_dir(), 'test_class_no_ns_');
+    $tempPath = $tempFile.'.php';
     $content = "<?php\n\nclass MyNoNsClass {}\n";
     File::put($tempPath, $content);
 
