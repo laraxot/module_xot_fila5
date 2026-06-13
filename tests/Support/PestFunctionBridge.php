@@ -24,37 +24,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Activity\Tests\Feature;
@@ -68,37 +62,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Activity\Tests\Unit;
@@ -112,37 +100,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Activity\Tests\Unit\Actions;
@@ -156,37 +138,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Feature;
@@ -200,37 +176,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Feature\Auth;
@@ -244,37 +214,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Feature\Frontoffice;
@@ -288,37 +252,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
@@ -332,37 +290,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit;
@@ -376,37 +328,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Actions;
@@ -420,37 +366,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Actions\View;
@@ -464,37 +404,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Datas;
@@ -508,37 +442,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament;
@@ -552,37 +480,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament\Clusters\Appearance\Pages;
@@ -596,37 +518,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament\Fields;
@@ -640,37 +556,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament\Forms\Components;
@@ -684,37 +594,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament\Front\Pages;
@@ -728,37 +632,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament\Pages;
@@ -772,37 +670,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Filament\Resources;
@@ -816,37 +708,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Http\Controllers\Admin;
@@ -860,37 +746,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Http\Middleware;
@@ -904,37 +784,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Http\View\Composers;
@@ -948,37 +822,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Http\Volt;
@@ -992,37 +860,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Http\Volt\Password;
@@ -1036,37 +898,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Middleware;
@@ -1080,37 +936,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Models;
@@ -1124,37 +974,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Models\Policies;
@@ -1168,37 +1012,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Models\Traits;
@@ -1212,37 +1050,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Providers;
@@ -1256,37 +1088,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Support;
@@ -1300,37 +1126,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\View;
@@ -1344,37 +1164,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\View\Components;
@@ -1388,37 +1202,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\View\Composers;
@@ -1432,37 +1240,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Cms\Tests\Unit\Views;
@@ -1476,37 +1278,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Fixcity\Tests\Unit\Actions;
@@ -1520,37 +1316,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Fixcity\Tests\Unit\Enums;
@@ -1564,37 +1354,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Fixcity\Tests\Unit\Models;
@@ -1608,37 +1392,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Gdpr\Tests\Feature;
@@ -1652,37 +1430,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Gdpr\Tests\Unit\Actions;
@@ -1696,37 +1468,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Gdpr\Tests\Unit\Filament\Resources;
@@ -1740,37 +1506,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Gdpr\Tests\Unit\Models;
@@ -1784,37 +1544,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Gdpr\Tests\Unit\Providers;
@@ -1828,37 +1582,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Gdpr\Tests\Unit\Traits;
@@ -1872,37 +1620,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Feature;
@@ -1916,37 +1658,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Feature\Filament\Forms\Components;
@@ -1960,37 +1696,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit;
@@ -2004,37 +1734,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions;
@@ -2048,37 +1772,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\Bing;
@@ -2092,37 +1810,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\Elevation;
@@ -2136,37 +1848,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\GoogleMaps;
@@ -2180,37 +1886,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\Here;
@@ -2224,37 +1924,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\IPGeolocation;
@@ -2268,37 +1962,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\LocationIQ;
@@ -2312,37 +2000,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\Mapbox;
@@ -2356,37 +2038,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Actions\Nominatim;
@@ -2400,37 +2076,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\DataTransferObjects;
@@ -2444,37 +2114,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Datas;
@@ -2488,37 +2152,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Enums;
@@ -2532,37 +2190,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Filament;
@@ -2576,37 +2228,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Filament\Forms;
@@ -2620,37 +2266,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Filament\Forms\Components;
@@ -2664,37 +2304,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Models;
@@ -2708,37 +2342,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Models\Policies;
@@ -2752,37 +2380,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Services;
@@ -2796,37 +2418,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Traits;
@@ -2840,37 +2456,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Geo\Tests\Unit\Transformers;
@@ -2884,37 +2494,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Feature;
@@ -2928,37 +2532,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Actions;
@@ -2972,37 +2570,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
@@ -3016,37 +2608,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Enums;
@@ -3060,37 +2646,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Events;
@@ -3104,37 +2684,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Models;
@@ -3148,37 +2722,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Providers;
@@ -3192,37 +2760,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Job\Tests\Unit\Services;
@@ -3236,37 +2798,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Lang\Tests\Unit\Actions;
@@ -3280,37 +2836,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Lang\Tests\Unit\Models;
@@ -3324,37 +2874,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Media\Tests\Unit\Actions;
@@ -3368,37 +2912,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Media\Tests\Unit\Models;
@@ -3412,37 +2950,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Feature;
@@ -3456,37 +2988,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit;
@@ -3500,37 +3026,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions;
@@ -3544,37 +3064,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions\Mail;
@@ -3588,37 +3102,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme;
@@ -3632,37 +3140,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme\Attachment;
@@ -3676,37 +3178,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
@@ -3720,37 +3216,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions\Telegram;
@@ -3764,37 +3254,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp;
@@ -3808,37 +3292,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Channels;
@@ -3852,37 +3330,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Console;
@@ -3896,37 +3368,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Console\Commands;
@@ -3940,37 +3406,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Datas;
@@ -3984,37 +3444,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Datas\SMS;
@@ -4028,37 +3482,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Emails;
@@ -4072,37 +3520,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Enums;
@@ -4116,37 +3558,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Factories;
@@ -4160,37 +3596,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Filament\Actions;
@@ -4204,37 +3634,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Filament\Forms\Components;
@@ -4248,37 +3672,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Filament\Pages;
@@ -4292,37 +3710,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Filament\Resources;
@@ -4336,37 +3748,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Models;
@@ -4380,37 +3786,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Models\Policies;
@@ -4424,37 +3824,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Models\Traits;
@@ -4468,37 +3862,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Notifications;
@@ -4512,37 +3900,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Notifications\Channels;
@@ -4556,37 +3938,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Providers;
@@ -4600,37 +3976,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Notify\Tests\Unit\Traits;
@@ -4644,37 +4014,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Feature;
@@ -4688,37 +4052,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Unit\Actions;
@@ -4732,37 +4090,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Unit\Data;
@@ -4776,37 +4128,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Unit\Facades;
@@ -4820,37 +4166,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Unit\Filament\Widgets;
@@ -4864,37 +4204,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Unit\Providers;
@@ -4908,37 +4242,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Seo\Tests\Unit\Services;
@@ -4952,37 +4280,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Integration;
@@ -4996,37 +4318,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Integration\Traits;
@@ -5040,37 +4356,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Performance;
@@ -5084,37 +4394,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit;
@@ -5128,37 +4432,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Actions;
@@ -5172,37 +4470,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Actions\Config;
@@ -5216,37 +4508,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Actions\Domains;
@@ -5260,37 +4546,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown;
@@ -5304,37 +4584,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Actions\Models;
@@ -5348,37 +4622,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Models;
@@ -5392,37 +4660,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Tenant\Tests\Unit\Traits;
@@ -5436,37 +4698,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Feature;
@@ -5480,37 +4736,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Feature\Filament\Widgets;
@@ -5524,37 +4774,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit;
@@ -5568,37 +4812,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit\Components;
@@ -5612,37 +4850,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit\Datas;
@@ -5656,37 +4888,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit\Enums;
@@ -5700,37 +4926,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
@@ -5744,37 +4964,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit\Models;
@@ -5788,37 +5002,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\UI\Tests\Unit\Widgets;
@@ -5832,37 +5040,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature;
@@ -5876,37 +5078,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Actions;
@@ -5920,37 +5116,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Actions\Passport;
@@ -5964,37 +5154,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Actions\Socialite;
@@ -6008,37 +5192,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Auth;
@@ -6052,37 +5230,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Authentication;
@@ -6096,37 +5268,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament;
@@ -6140,37 +5306,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Actions;
@@ -6184,37 +5344,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Clusters;
@@ -6228,37 +5382,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Clusters\Passport\Resources;
@@ -6272,37 +5420,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Pages;
@@ -6316,37 +5458,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Resources;
@@ -6360,37 +5496,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Widgets;
@@ -6404,37 +5534,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
@@ -6448,37 +5572,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Models;
@@ -6492,37 +5610,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Feature\Passport;
@@ -6536,37 +5648,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit;
@@ -6580,37 +5686,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Actions;
@@ -6624,37 +5724,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Actions\Otp;
@@ -6668,37 +5762,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Actions\Passport;
@@ -6712,37 +5800,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Actions\Socialite;
@@ -6756,37 +5838,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
@@ -6800,37 +5876,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Actions\User;
@@ -6844,37 +5914,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Console;
@@ -6888,37 +5952,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Datas;
@@ -6932,37 +5990,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Enums;
@@ -6976,37 +6028,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Events;
@@ -7020,37 +6066,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Facades;
@@ -7064,37 +6104,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Filament\Widgets;
@@ -7108,37 +6142,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Mail;
@@ -7152,37 +6180,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Models;
@@ -7196,37 +6218,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Models\Policies;
@@ -7240,37 +6256,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Passport;
@@ -7284,37 +6294,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\QuickWins;
@@ -7328,37 +6332,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Rules;
@@ -7372,37 +6370,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\User\Tests\Unit\Traits;
@@ -7416,37 +6408,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Feature;
@@ -7460,37 +6446,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Feature\Filament;
@@ -7504,37 +6484,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit;
@@ -7548,37 +6522,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions;
@@ -7592,37 +6560,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
@@ -7636,37 +6598,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Array;
@@ -7680,37 +6636,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
@@ -7724,37 +6674,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Class;
@@ -7768,37 +6712,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Collection;
@@ -7812,37 +6750,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Config;
@@ -7856,37 +6788,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Debug;
@@ -7900,37 +6826,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Dummy;
@@ -7944,37 +6864,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
@@ -7988,37 +6902,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Model;
@@ -8032,37 +6940,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\ModelClass;
@@ -8076,37 +6978,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Module;
@@ -8120,37 +7016,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Parse;
@@ -8164,37 +7054,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Pdf;
@@ -8208,37 +7092,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\Query;
@@ -8252,37 +7130,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\String;
@@ -8296,37 +7168,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Actions\View;
@@ -8340,37 +7206,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Models;
@@ -8384,37 +7244,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Services;
@@ -8428,37 +7282,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Traits;
@@ -8472,37 +7320,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\Traits\Filament;
@@ -8516,37 +7358,31 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
 
 namespace Modules\Xot\Tests\Unit\ValueObjects;
@@ -8560,35 +7396,29 @@ function expect(mixed $value = null): PestExpectation
     return new PestExpectation($value);
 }
 
-function test(string $description, ?Closure $closure = null): PestTestCall
+function test(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function it(string $description, ?Closure $closure = null): PestTestCall
+function it(string $description, ?Closure $closure = null): void
 {
-    return new PestTestCall(null);
 }
 
-function describe(string $description, Closure $closure): PestTestCall
+function describe(string $description, Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function beforeEach(Closure $closure): PestTestCall
+function beforeEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
-function afterEach(Closure $closure): PestTestCall
+function afterEach(Closure $closure): void
 {
-    return new PestTestCall(null);
 }
 
 /**
  * @param class-string ...$classes
  */
-function uses(string ...$classes): PestTestCall
+function uses(string ...$classes): void
 {
-    return new PestTestCall(null);
 }
