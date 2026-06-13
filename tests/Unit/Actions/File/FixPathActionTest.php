@@ -7,7 +7,7 @@ use Modules\Xot\Actions\File\FixPathAction;
 use PHPUnit\Framework\Assert;
 
 it('normalizes path slashes correctly', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /** @var Modules\Xot\Tests\TestCase $this */
     $action = app(FixPathAction::class);
 
     $path = 'some/path\with/mixed\\slashes';

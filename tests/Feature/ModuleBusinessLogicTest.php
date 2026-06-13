@@ -10,15 +10,15 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-skip('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
+    skip('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
 });
 
 describe('Module Business Logic', function (): void {
     test('can create module', function (): void {
-$moduleData = [
+        $moduleData = [
             'name' => 'TestModule',
             'slug' => 'test-module',
             'version' => '1.0.0',
@@ -43,7 +43,7 @@ $moduleData = [
     });
 
     test('can enable and disable module', function (): void {
-$module = ModuleFactory::new()->createOne(['enabled' => false]);
+        $module = ModuleFactory::new()->createOne(['enabled' => false]);
 
         $module->update(['enabled' => true]);
         $freshModule = $module->fresh();
@@ -57,7 +57,7 @@ $module = ModuleFactory::new()->createOne(['enabled' => false]);
     });
 
     test('can update module version', function (): void {
-$module = ModuleFactory::new()->createOne(['version' => '1.0.0']);
+        $module = ModuleFactory::new()->createOne(['version' => '1.0.0']);
 
         $module->update(['version' => '2.0.0']);
 
@@ -71,7 +71,7 @@ $module = ModuleFactory::new()->createOne(['version' => '1.0.0']);
     });
 
     test('can manage module dependencies', function (): void {
-$module = ModuleFactory::new()->createOne([
+        $module = ModuleFactory::new()->createOne([
             'dependencies' => ['user', 'auth'],
         ]);
 
@@ -84,7 +84,7 @@ $module = ModuleFactory::new()->createOne([
     });
 
     test('can validate module slug uniqueness', function (): void {
-ModuleFactory::new()->createOne(['slug' => 'unique-module']);
+        ModuleFactory::new()->createOne(['slug' => 'unique-module']);
 
         try {
             Module::create([
@@ -100,7 +100,7 @@ ModuleFactory::new()->createOne(['slug' => 'unique-module']);
     });
 
     test('can manage module configuration', function (): void {
-$config = [
+        $config = [
             'setting1' => 'value1',
             'setting2' => 'value2',
             'nested' => [
@@ -120,7 +120,7 @@ $config = [
     });
 
     test('can check module status', function (): void {
-$enabledModule = ModuleFactory::new()->createOne(['enabled' => true]);
+        $enabledModule = ModuleFactory::new()->createOne(['enabled' => true]);
         $disabledModule = ModuleFactory::new()->createOne(['enabled' => false]);
 
         Assert::assertTrue((bool) $enabledModule->enabled);
@@ -130,7 +130,7 @@ $enabledModule = ModuleFactory::new()->createOne(['enabled' => true]);
     });
 
     test('can manage module metadata', function (): void {
-$metadata = [
+        $metadata = [
             'author' => 'Test Author',
             'website' => 'https://example.com',
             'license' => 'MIT',
@@ -151,7 +151,7 @@ $metadata = [
     });
 
     test('can validate module version format', function (): void {
-$validVersions = ['1.0.0', '2.1.3', '10.5.2', '0.1.0'];
+        $validVersions = ['1.0.0', '2.1.3', '10.5.2', '0.1.0'];
 
         foreach ($validVersions as $version) {
             $module = ModuleFactory::new()->createOne(['version' => $version]);
@@ -165,7 +165,7 @@ $validVersions = ['1.0.0', '2.1.3', '10.5.2', '0.1.0'];
     });
 
     test('can manage module installation date', function (): void {
-$installationDate = now()->subDays(30);
+        $installationDate = now()->subDays(30);
         $module = ModuleFactory::new()->createOne([
             'installation_date' => $installationDate,
         ]);
@@ -180,7 +180,7 @@ $installationDate = now()->subDays(30);
     });
 
     test('can manage module update history', function (): void {
-$updateHistory = [
+        $updateHistory = [
             [
                 'version' => '1.0.0',
                 'date' => '2024-01-01',
@@ -207,7 +207,7 @@ $updateHistory = [
     });
 
     test('can check module compatibility', function (): void {
-$module = ModuleFactory::new()->createOne([
+        $module = ModuleFactory::new()->createOne([
             'laravel_version' => '^10.0',
             'php_version' => '^8.1',
         ]);
@@ -220,7 +220,7 @@ $module = ModuleFactory::new()->createOne([
     });
 
     test('can manage module permissions', function (): void {
-$permissions = [
+        $permissions = [
             'module.read',
             'module.write',
             'module.delete',
@@ -239,7 +239,7 @@ $permissions = [
     });
 
     test('can manage module routes', function (): void {
-$routes = [
+        $routes = [
             'web' => ['prefix' => 'module', 'middleware' => ['web']],
             'api' => ['prefix' => 'api/module', 'middleware' => ['api']],
         ];
@@ -257,7 +257,7 @@ $routes = [
     });
 
     test('can manage module assets', function (): void {
-$assets = [
+        $assets = [
             'css' => ['app.css', 'vendor.css'],
             'js' => ['app.js', 'vendor.js'],
             'images' => ['logo.png', 'icon.svg'],
@@ -278,7 +278,7 @@ $assets = [
     });
 
     test('can manage module settings', function (): void {
-$settings = [
+        $settings = [
             'debug' => false,
             'cache' => true,
             'timeout' => 30,
@@ -299,7 +299,7 @@ $settings = [
     });
 
     test('can validate module required fields', function (): void {
-$requiredFields = ['name', 'slug', 'version'];
+        $requiredFields = ['name', 'slug', 'version'];
 
         foreach ($requiredFields as $field) {
             $moduleData = [
@@ -321,7 +321,7 @@ $requiredFields = ['name', 'slug', 'version'];
     });
 
     test('can manage module activation workflow', function (): void {
-$module = ModuleFactory::new()->createOne([
+        $module = ModuleFactory::new()->createOne([
             'enabled' => false,
             'activation_date' => null,
         ]);
@@ -348,7 +348,7 @@ $module = ModuleFactory::new()->createOne([
     });
 
     test('can track module usage statistics', function (): void {
-$usageStats = [
+        $usageStats = [
             'total_requests' => 1000,
             'unique_users' => 150,
             'last_used' => now()->subHours(2),
@@ -369,7 +369,7 @@ $usageStats = [
     });
 
     test('can manage module error logging', function (): void {
-$errorLog = [
+        $errorLog = [
             [
                 'level' => 'error',
                 'message' => 'Test error message',
