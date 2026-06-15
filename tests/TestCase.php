@@ -9,8 +9,9 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
-use PHPUnit\Framework\Assert;
 use Mockery\MockInterface;
+use PHPUnit\Framework\Assert;
+
 use function Safe\rmdir;
 use function Safe\scandir;
 use function Safe\unlink;
@@ -24,18 +25,18 @@ use function Safe\unlink;
  * DatabaseTransactions handles rollback between tests.
  *
  * @property object|null $action
- * @property Model|null $model
+ * @property Model|null  $model
  * @property object|null $service
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
- * @property Model|null $testModel
+ * @property Model|null  $testModel
  * @property object|null $extraClass
- * @property Model|null $baseModel
+ * @property Model|null  $baseModel
  * @property string|null $testDir
- * @property mixed $saved
- * @property mixed $extra_attributes
+ * @property mixed       $saved
+ * @property mixed       $extra_attributes
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -88,7 +89,7 @@ abstract class TestCase extends XotBaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
@@ -100,7 +101,8 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $class
+     * @param class-string<T> $class
+     *
      * @return T
      */
     public function getAction(string $class): object
@@ -116,8 +118,9 @@ abstract class TestCase extends XotBaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $abstract
-     * @param  (\Closure(MockInterface&T): void)|null  $callback
+     * @param class-string<T>                        $abstract
+     * @param (\Closure(MockInterface&T): void)|null $callback
+     *
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -129,7 +132,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-     * @param  class-string<\Throwable>  $exception
+     * @param class-string<\Throwable> $exception
      */
     public function expectThrowable(string $exception): void
     {
@@ -164,7 +167,7 @@ abstract class TestCase extends XotBaseTestCase
         $files = scandir($dir);
 
         foreach ($files as $file) {
-            if ($file === '.' || $file === '..') {
+            if ('.' === $file || '..' === $file) {
                 continue;
             }
 
