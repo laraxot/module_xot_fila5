@@ -151,7 +151,7 @@ if (! function_exists('getRouteParameters')) {
         }
 
         $route = Route::current();
-        if ($route === null) {
+        if (null === $route) {
             return [];
         }
 
