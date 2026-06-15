@@ -26,7 +26,7 @@ abstract class XotBaseResourceTable
     }
 
     /**
-     * @return array<int|string, \Filament\Tables\Columns\Column>
+     * @return array<int|string, Column>
      */
     abstract public function getTableColumns(): array;
 }
