@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('manages object properties safely', function (): void {
     $obj = new stdClass();

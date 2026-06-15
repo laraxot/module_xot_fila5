@@ -11,7 +11,7 @@ use Spatie\LaravelData\DataCollection;
 uses(TestCase::class);
 
 it('gets and caches components correctly', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /** @var TestCase $this */
     $tempDir = sys_get_temp_dir().'/test_comps_'.uniqid();
     File::makeDirectory($tempDir);
 
@@ -40,7 +40,7 @@ class TestComp {}";
 });
 
 it('skips abstract classes', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /** @var TestCase $this */
     $tempDir = sys_get_temp_dir().'/test_comps_abstract_'.uniqid();
     File::makeDirectory($tempDir);
 

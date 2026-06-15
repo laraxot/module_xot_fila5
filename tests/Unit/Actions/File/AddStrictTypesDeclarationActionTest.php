@@ -8,13 +8,11 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AddStrictTypesDeclarationAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
-use function Pest\Laravel\put;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     $this->action = app(AddStrictTypesDeclarationAction::class);
     $this->workDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_strict_types_'.uniqid();
     assert(is_string($this->workDir));
@@ -22,7 +20,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
+    /* @var \Modules\Xot\Tests\TestCase $this */
     assert(is_string($this->workDir));
     if (File::isDirectory($this->workDir)) {
         File::deleteDirectory($this->workDir);
@@ -31,7 +29,7 @@ afterEach(function (): void {
 
 describe('Add Strict Types Declaration Action', function (): void {
     test('adds strict types declaration to php file', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $file = $this->workDir.'/test.php';
         Assert::assertIsString($this->workDir);
         File::put($file, "<?php\n\nnamespace Test;\n\nclass TestClass {}");
@@ -44,7 +42,7 @@ describe('Add Strict Types Declaration Action', function (): void {
     });
 
     test('does not duplicate strict types if already present', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $file = $this->workDir.'/test.php';
         Assert::assertIsString($this->workDir);
         File::put($file, "<?php\n\n\n\nnamespace Test;");
@@ -57,7 +55,7 @@ describe('Add Strict Types Declaration Action', function (): void {
     });
 
     test('handles file with existing namespace', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $file = $this->workDir.'/test.php';
         Assert::assertIsString($this->workDir);
         File::put($file, "<?php\n\n\n\nclass TestAction {}");

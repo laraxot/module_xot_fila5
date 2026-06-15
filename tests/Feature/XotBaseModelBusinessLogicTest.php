@@ -11,10 +11,11 @@ use Modules\Xot\Models\Module;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_encode;
 use function Safe\unserialize;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 function createXotBaseModelFixture(): BaseModel
 {
@@ -24,7 +25,7 @@ function createXotBaseModelFixture(): BaseModel
 
 describe('Xot Base Model Business Logic', function (): void {
     test('it extends correct base class', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
@@ -33,14 +34,14 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it has required traits', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it can be instantiated without database', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
@@ -48,7 +49,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports table name override', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -60,7 +61,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports connection override', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -72,7 +73,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports key name override', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -84,7 +85,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it can be used as base for other models', function (): void {
-// Arrange
+        // Arrange
         $module = new Module();
 
         // Act & Assert
@@ -93,7 +94,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports model configuration', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -108,14 +109,14 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports soft deletes when configured', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert - Soft deletes may or may not be configured
     });
 
     test('it supports timestamps when configured', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -127,21 +128,21 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports tenant isolation when configured', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert - Tenant isolation may or may not be configured
     });
 
     test('it supports audit trail when configured', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert - Audit trail may or may not be configured
     });
 
     test('it can be serialized', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -152,7 +153,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it can be unserialized', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
         $serialized = serialize($baseModel);
 
@@ -164,7 +165,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports json serialization', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -176,7 +177,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports array conversion', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -188,7 +189,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports json conversion', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -200,21 +201,21 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports relationship loading', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports attribute access', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports mass assignment protection', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -227,35 +228,35 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports model events', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports observers', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports scopes', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports accessors and mutators', function (): void {
-// Arrange & Act
+        // Arrange & Act
         $baseModel = createXotBaseModelFixture();
 
         // Assert
     });
 
     test('it supports casting', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -266,7 +267,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports dates', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -277,7 +278,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports hidden attributes', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -288,7 +289,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports visible attributes', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -299,7 +300,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports appends', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act
@@ -310,7 +311,7 @@ describe('Xot Base Model Business Logic', function (): void {
     });
 
     test('it supports with relationships', function (): void {
-// Arrange
+        // Arrange
         $baseModel = createXotBaseModelFixture();
 
         // Act

@@ -9,13 +9,13 @@ use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Get Tenant Config Path Action', function (): void {
     test('delegates to tenant file path action with php filename', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $tenantPathAction = $this->createUnitMock(GetTenantFilePathAction::class);
-        /** @phpstan-ignore-next-line */
+        /* @phpstan-ignore-next-line */
         $tenantPathAction->expects($this->atLeastOnce())
             ->method('execute')
             ->with('mail.php')
