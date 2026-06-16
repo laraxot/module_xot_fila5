@@ -30,7 +30,6 @@ use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Actions\Model\TableExistsByModelClassActions;
@@ -358,8 +357,8 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
-        /** @phpstan-ignore-next-line function.alreadyNarrowedType */
-if (method_exists($this, 'getModel')) {
+        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
+        if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
             Assert::classExists($model);
