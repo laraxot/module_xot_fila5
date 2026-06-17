@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
