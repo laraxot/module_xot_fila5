@@ -5,13 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-use PHPUnit\Framework\Assert;
+use Modules\Xot\Tests\TestCase;
 
-use function Safe\file_get_contents;
-use function Safe\glob;
-use function Safe\preg_match;
-
-uses(\Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
  * @return list<array{0: string, 1: string}>
@@ -28,9 +24,7 @@ function filamentConcreteResourceClasses(): array
     $cases = [];
     $modulesRoot = base_path('Modules');
 
-    foreach (glob($modulesRoot.'/*/app/Filament/Resources/*Resource.php') as $file) {
-        Assert::assertIsString($file);
-
+    foreach (glob($modulesRoot.'/*/app/Filament/Resources/*Resource.php') ?: [] as $file) {
         $resourceName = basename($file, '.php');
         if (in_array($resourceName, $skip, true)) {
             continue;
@@ -57,20 +51,21 @@ function filamentConcreteResourceClasses(): array
 function filamentResolveModelBasename(string $resourceFile, string $resourceName): string
 {
     $content = file_get_contents($resourceFile);
+    if (false !== $content) {
+        foreach (explode("\n", $content) as $line) {
+            $trimmed = ltrim($line);
+            if (str_starts_with($trimmed, '//') || str_starts_with($trimmed, '*')) {
+                continue;
+            }
 
-    foreach (explode("\n", $content) as $line) {
-        $trimmed = ltrim($line);
-        if (str_starts_with($trimmed, '//') || str_starts_with($trimmed, '*')) {
-            continue;
-        }
+            if (! preg_match('/protected\s+static\s+\?string\s+\$model\s*=\s*([^;]+);/', $line, $m)) {
+                continue;
+            }
 
-        if (! preg_match('/protected\s+static\s+\?string\s+\$model\s*=\s*([^;]+);/', $line, $m)) {
-            continue;
-        }
-
-        $expr = trim($m[1]);
-        if (preg_match('/^((?:\\\\)?[\w\\\\]+)::class$/', $expr, $m2)) {
-            return class_basename(ltrim($m2[1], '\\'));
+            $expr = trim($m[1]);
+            if (preg_match('/^((?:\\\\)?[\w\\\\]+)::class$/', $expr, $m2)) {
+                return class_basename(ltrim($m2[1], '\\'));
+            }
         }
     }
 
@@ -84,7 +79,7 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
     }
 
     $content = file_get_contents($path);
-    if (! preg_match('/function\s+'.preg_quote($method, '/').'\s*\([^)]*\)[^{]*\{([^}]*)\}/s', $content, $m)) {
+    if (false === $content || ! preg_match('/function\s+'.preg_quote($method, '/').'\s*\([^)]*\)[^{]*\{([^}]*)\}/s', $content, $m)) {
         return false;
     }
 
@@ -104,32 +99,27 @@ test('every concrete filament resource has populated schemas and table classes',
         $infolistPath = $baseDir.'/Schemas/'.$modelBasename.'Infolist.php';
         $tablesDir = $baseDir.'/Tables';
 
-        Assert::assertTrue(
-            filamentSchemaIsPopulated($formPath, 'getFormSchema'),
-            "Missing or empty form schema: {$formPath}",
-        );
+        expect(filamentSchemaIsPopulated($formPath, 'getFormSchema'))
+            ->toBeTrue("Missing or empty form schema: {$formPath}");
 
-        Assert::assertTrue(
-            filamentSchemaIsPopulated($infolistPath, 'getInfolistSchema'),
-            "Missing or empty infolist schema: {$infolistPath}",
-        );
+        expect(filamentSchemaIsPopulated($infolistPath, 'getInfolistSchema'))
+            ->toBeTrue("Missing or empty infolist schema: {$infolistPath}");
 
-        $tableFiles = glob($tablesDir.'/*Table.php');
-        Assert::assertCount(1, $tableFiles, "Expected exactly one table class in {$tablesDir}");
+        $tableFiles = glob($tablesDir.'/*Table.php') ?: [];
+        expect($tableFiles)->toHaveCount(1, "Expected exactly one table class in {$tablesDir}");
 
         $tableFile = $tableFiles[0];
-        Assert::assertIsString($tableFile);
         $tableClass = "Modules\\{$moduleName}\\Filament\\Resources\\{$resourceName}\\Tables\\".basename($tableFile, '.php');
-        Assert::assertTrue(class_exists($tableClass));
+        expect(class_exists($tableClass))->toBeTrue();
 
         $table = app($tableClass);
-        Assert::assertInstanceOf(XotBaseResourceTable::class, $table);
+        expect($table)->toBeInstanceOf(XotBaseResourceTable::class);
 
         $columns = $table->getTableColumns();
-        Assert::assertNotEmpty($columns);
+        expect($columns)->toBeArray()->not->toBeEmpty();
 
         foreach (array_keys($columns) as $key) {
-            Assert::assertIsString($key);
+            expect($key)->toBeString();
         }
     }
 });
