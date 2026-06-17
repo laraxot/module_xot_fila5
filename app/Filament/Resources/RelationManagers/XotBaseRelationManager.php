@@ -21,6 +21,7 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use stdClass;
 use Webmozart\Assert\Assert;
@@ -30,7 +31,10 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseRelationManager extends FilamentRelationManager
 {
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
 
     protected static string $relationship = '';
 

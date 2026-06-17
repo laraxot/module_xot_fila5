@@ -30,7 +30,6 @@ use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Actions\Model\TableExistsByModelClassActions;
@@ -358,29 +357,15 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
-        if (method_exists($this, 'getRelationship')) {
-            $relationship = $this->getRelationship();
-            if ($relationship instanceof Relation) {
-                $modelClass = get_class($relationship->getModel());
-                Assert::subclassOf($modelClass, Model::class);
-
-                /* @var class-string<Model> $modelClass */
-                return $modelClass;
-            }
-        }
-
+        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
-            if (is_string($model)) {
-                Assert::classExists($model);
-                Assert::subclassOf($model, Model::class);
+            Assert::string($model);
+            Assert::classExists($model);
+            Assert::subclassOf($model, Model::class);
 
-                /* @var class-string<Model> $model */
-                return $model;
-            }
-            if ($model instanceof Model) {
-                return $model::class;
-            }
+            /* @var class-string<Model> $model */
+            return $model;
         }
 
         throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
