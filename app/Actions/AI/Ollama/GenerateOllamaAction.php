@@ -7,11 +7,11 @@ namespace Modules\Xot\Actions\AI\Ollama;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Safe\Exceptions\JsonException;
 
 use function Safe\json_decode;
 
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class GenerateOllamaAction
