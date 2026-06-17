@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
@@ -121,11 +122,11 @@ class FilamentMemoryMonitorMiddleware
 
         $message = sprintf(
             'Filament Memory Usage: %sMB used, %sMB peak, %sms execution time - %s %s',
-            (string) $metrics['memory_used_mb'],
-            (string) $metrics['memory_peak_mb'],
-            (string) $metrics['execution_time_ms'],
-            (string) $metrics['method'],
-            (string) $metrics['url']
+            SafeStringCastAction::cast($metrics['memory_used_mb']),
+            SafeStringCastAction::cast($metrics['memory_peak_mb']),
+            SafeStringCastAction::cast($metrics['execution_time_ms']),
+            SafeStringCastAction::cast($metrics['method']),
+            SafeStringCastAction::cast($metrics['url'])
         );
 
         // Aggiungi contesto aggiuntivo
