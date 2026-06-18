@@ -11,6 +11,7 @@ use Safe\Exceptions\JsonException;
 
 use function Safe\json_decode;
 
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class GenerateOllamaAction
@@ -75,8 +76,8 @@ class GenerateOllamaAction
                 'response' => is_string($data['response'] ?? null) ? $data['response'] : '',
                 'done' => (bool) ($data['done'] ?? false),
                 'tokens' => [
-                    'prompt' => (int) ($data['prompt_eval_count'] ?? 0),
-                    'generated' => (int) ($data['eval_count'] ?? 0),
+                    'prompt' => SafeIntCastAction::cast($data['prompt_eval_count'] ?? 0),
+                    'generated' => SafeIntCastAction::cast($data['eval_count'] ?? 0),
                 ],
             ];
         } catch (GuzzleException|JsonException $e) {
