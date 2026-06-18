@@ -2,18 +2,5 @@
 legacy/
 legacy/**
 
-# Backup locali (script conflitti / editor — mai committare)
-*.bak
-*.backup
-*.backup.*
-*.backup-*
-*.backup_*
-
-# Copie residue merge/rebase
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*.orig
-*.rej
-*~head
+See canonical documentation: ../../../Themes/docs/shared-components/.gitignore-Modules
+consolidated
