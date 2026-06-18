@@ -8,7 +8,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 /**
- * @property-read self $not Negated expectation (resolved via __get).
+ * @property self $not Negated expectation (resolved via __get).
  */
 final class PestExpectation
 {
