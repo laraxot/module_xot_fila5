@@ -28,8 +28,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     use HasXotTable;
 
-    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
-
     /**
      * Get the resource class name.
      *
