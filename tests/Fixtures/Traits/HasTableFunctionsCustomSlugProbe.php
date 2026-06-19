@@ -6,9 +6,14 @@ namespace Modules\Xot\Tests\Fixtures\Traits;
 
 use Modules\Xot\Traits\HasTableFunctionsTrait;
 
-class HasTableFunctionsTraitProbe
+class HasTableFunctionsCustomSlugProbe
 {
     use HasTableFunctionsTrait;
+
+    protected function getResourceSlug(): string
+    {
+        return 'test-slug';
+    }
 
     public function exposeResourceSlug(): string
     {
