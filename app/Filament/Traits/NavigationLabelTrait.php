@@ -9,7 +9,7 @@ use Modules\Xot\Actions\File\SvgExistsAction;
 
 trait NavigationLabelTrait
 {
-    use TransTrait;
+    use TransFuncTrait;
 
     // public function getModelLabel(): string
     // {
@@ -55,7 +55,7 @@ trait NavigationLabelTrait
 
         $value = intval($res);
 
-        if (0 === $value) {
+        if ($value === 0) {
             $key = static::getKeyTransFunc(__FUNCTION__);
             $value = rand(1, 100);
             app(SaveTransAction::class)->execute($key, $value);
