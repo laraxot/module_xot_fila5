@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\AssociateAction;
@@ -136,7 +135,7 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
-                        if ($state === null || $state === '') {
+                        if (null === $state || '' === $state) {
                             return $labelText.': —';
                         }
 
@@ -223,12 +222,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if ($sortColumn !== null && $sortDirection !== null) {
+        if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if ($pollInterval !== null) {
+        if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
 
@@ -357,9 +356,9 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @return class-string<Model>
+     * @throws \Exception Se non viene trovata una classe modello valida
      *
-     * @throws Exception Se non viene trovata una classe modello valida
+     * @return class-string<Model>
      */
     public function getModelClass(): string
     {
@@ -373,9 +372,7 @@ trait HasXotTable
             return $model;
         }
 
-        throw new Exception(
-            'No model found in '.class_basename(self::class).'::'.__FUNCTION__
-        );
+        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
@@ -387,13 +384,13 @@ trait HasXotTable
     {
         $search = $this->tableSearch ?? null;
 
-        return $search !== null ? SafeStringCastAction::cast($search) : null;
+        return null !== $search ? SafeStringCastAction::cast($search) : null;
     }
 
     /**
      * Get list table columns.
      *
-     * @return array<string, Tables\Columns\Column>
+     * @return array<string, Column>
      */
     abstract protected function getTableColumns(): array;
 
@@ -503,7 +500,7 @@ trait HasXotTable
             Assert::isInstanceOf($model, Model::class);
 
             return $model->getTable().'.id';
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return null;
         }
     }

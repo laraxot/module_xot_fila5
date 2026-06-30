@@ -105,7 +105,7 @@ trait TransFuncTrait
             return $trans;
         }
 
-        if ($trans === null) {
+        if (null === $trans) {
             return static::persistGeneratedTransFuncLabel($key);
         }
 

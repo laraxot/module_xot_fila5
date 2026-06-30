@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions\Handlers;
 
-use Closure;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use ReflectionClass;
-use ReflectionFunction;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 class HandlerDecorator implements ExceptionHandler
@@ -35,8 +32,8 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
-    ) {}
-
+    ) {
+    }
 
     /**
      * @param array<int, mixed> $parameters
@@ -173,14 +170,14 @@ class HandlerDecorator implements ExceptionHandler
      */
     protected function handlesException(callable $handler, \Throwable $e): bool
     {
-        $reflection = new ReflectionFunction(
-            $handler instanceof Closure ? $handler : Closure::fromCallable($handler),
+        $reflection = new \ReflectionFunction(
+            $handler instanceof \Closure ? $handler : \Closure::fromCallable($handler),
         );
 
         if (! ($params = $reflection->getParameters())) {
             return false;
         }
 
-        return $params[0]->getClass() instanceof ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
     }
 }

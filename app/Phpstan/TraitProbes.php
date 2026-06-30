@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Phpstan;
 
-use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Models\Traits\HasCommonScopes;
+use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Traits\HasCustomRelations;
 use Modules\Xot\Traits\HasSchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
