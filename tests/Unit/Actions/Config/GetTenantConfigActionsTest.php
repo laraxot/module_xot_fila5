@@ -24,11 +24,16 @@ describe('Get Tenant Config Actions', function (): void {
     $action = app(GetTenantConfigArrayAction::class);
     $result = $action->execute($configName);
 
-        // Replace GetTenantFilePathAction with a spy that returns the temp path
-        $getTenantFilePathAction = new class($tempPath) extends GetTenantFilePathAction {
-            public function __construct(private string $tempPath)
-            {
-            }
+        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+<<<<<<< HEAD
+        $mock->expects($this->expectsAtLeastOnce())
+=======
+        /* @phpstan-ignore-next-line */
+        $mock->expects($this->atLeastOnce())
+>>>>>>> 64619e34 (.)
+            ->method('execute')
+            ->with($configName.'.php')
+            ->willReturn($tempPath);
 
             public function execute(string $configName): string
             {
@@ -48,13 +53,15 @@ describe('Get Tenant Config Actions', function (): void {
     test('returns empty array if tenant config file does not exist', function (): void {
         $configName = 'non_existent';
 
-        // Replace GetTenantFilePathAction with a spy that returns a non-existent path
-        $getTenantFilePathAction = new class extends GetTenantFilePathAction {
-            public function execute(string $configName): string
-            {
-                return '/path/to/nothing.php';
-            }
-        };
+        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+<<<<<<< HEAD
+        $mock->expects($this->expectsAtLeastOnce())
+=======
+        /* @phpstan-ignore-next-line */
+        $mock->expects($this->atLeastOnce())
+>>>>>>> 64619e34 (.)
+            ->method('execute')
+            ->willReturn('/path/to/nothing.php');
 
         app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
 

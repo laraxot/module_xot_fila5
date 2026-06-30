@@ -168,9 +168,7 @@ _docs/
 *.orig
 *.rej
 *~headagentdb.rvf
+<<<<<<< HEAD
 audit-coverage/
-.vscode/
-.devcontainer/
-.vscode/
-.claude-audit/
-docs/assets/
+=======
+>>>>>>> 64619e34 (.)

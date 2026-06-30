@@ -76,6 +76,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, /* Ha
      * @return array<int|string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     abstract public function getFormSchema(): array;
 =======
 <<<<<<< .merge_file_umPDPr
@@ -89,6 +90,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, /* Ha
     abstract public function getFormSchema(): array;
 >>>>>>> .merge_file_b6trfI
 >>>>>>> a01602c7 (.)
+=======
+    abstract public function getFormSchema(): array;
+>>>>>>> 64619e34 (.)
 
     /**
      * Configura il form del widget.

@@ -1,8 +1,5 @@
 ---
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
@@ -46,15 +43,22 @@ issues:
 >>>>>>> 64619e34 (.)
 =======
   - "https://github.com/laraxot/base_predict_fila5/issues/237"
->>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+title: "Activity Log"
+type: log
+module: Xot
+tags: [xot, phpstan, pest, qmd]
+created: 2026-04-20
+updated: 2026-06-29
+qmd: "Xot log phpstan pest bridge discipline"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+>>>>>>> 64619e34 (.)
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
@@ -221,12 +225,6 @@ discussions:
 - Nuova action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
 - Aggiornato `bashscripts/tools/prompts/start.txt` con gate, tabelle e verifica `jq`.
 >>>>>>> 64619e34 (.)
-=======
-## [2026-06-30] composer | gate start.txt + autoload runtime temi
-
-- Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
-- Action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
->>>>>>> 61938ca4 (delete .claude-audit/)
 - Pagina: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 
 ## [2026-06-30] composer | root skeleton allineato a FixCity
@@ -538,12 +536,7 @@ _No activity yet. Start by ingesting raw documents._
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
 =======
 >>>>>>> 64619e34 (.)
-=======
-
-2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
->>>>>>> 61938ca4 (delete .claude-audit/)

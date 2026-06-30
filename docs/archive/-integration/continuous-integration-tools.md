@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # _continuous_integration_tools
 
@@ -33,5 +34,7 @@ https://grafikart.fr/tutoriels/grumphp-836
 
 https://jakzal.github.io/toolbox/
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 
 

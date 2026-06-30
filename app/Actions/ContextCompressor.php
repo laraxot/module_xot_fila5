@@ -2,23 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Actions;
+namespace Modules\Xot\Services;
 
 use OpenAI\OpenAI;
 
 use function Safe\preg_split;
 
-use Spatie\QueueableAction\QueueableAction;
-
 /**
- * ContextCompressorAction.
+ * ContextCompressor.
  *
  * Lightweight utility to "compress" long text before sending to LLM APIs.
+ * - If an OpenAI PHP client is installed and OPENAI_API_KEY set, it will attempt
+ *   a model-based compression (best-effort, non-fatal).
+ * - Otherwise it falls back to a naive extractive summarization (sentence-based)
+ *   to reduce character length under a target.
+ *
+ * This class is intentionally conservative to avoid hard runtime dependencies.
  */
-class ContextCompressorAction
+class ContextCompressor
 {
-    use QueueableAction;
-
     /**
      * Compress text to approximately targetChars characters.
      *
@@ -118,9 +120,5 @@ class ContextCompressorAction
         }
 
         return $out;
-    }
-
-    public function execute(): void
-    {
     }
 }

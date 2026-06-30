@@ -134,6 +134,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 
     public static function getNavigationLabel(): string
     {
@@ -147,6 +150,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
         return is_string($trans) && $trans !== $key ? $trans : null;
     }
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 }

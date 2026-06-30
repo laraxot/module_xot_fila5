@@ -17,6 +17,12 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
+use PHPUnit\Framework\MockObject\MockObject;
+<<<<<<< HEAD
+use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
+=======
+>>>>>>> 64619e34 (.)
+use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 
 /**
  * Class XotBaseTestCase.
@@ -139,6 +145,17 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $this->exactly($count);
     }
 
+<<<<<<< HEAD
+    /**
+     * @phpstan-ignore return.internalClass
+     */
+    public function expectsAtLeastOnce(): InvokedAtLeastOnce
+    {
+        return $this->atLeastOnce();
+    }
+
+=======
+>>>>>>> 64619e34 (.)
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);

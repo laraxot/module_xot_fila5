@@ -135,9 +135,6 @@ Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `Enu
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 
 ## Fix 2026-06-30: fatal trait collision + tail Modules/
 
@@ -172,8 +169,5 @@ cd laravel && ./vendor/bin/phpstan analyse Modules
 ```
 
 Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
-<<<<<<< HEAD
 =======
 >>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)

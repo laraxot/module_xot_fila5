@@ -16,13 +16,17 @@ it('delegates to tenant file path action with php filename', function (): void {
 
 describe('Get Tenant Config Path Action', function (): void {
     test('delegates to tenant file path action with php filename', function (): void {
-        // Replace GetTenantFilePathAction with a spy that returns a specific path
-        $tenantPathAction = new class extends GetTenantFilePathAction {
-            public function execute(string $configName): string
-            {
-                return '/tmp/tenant/'.$configName.'.php';
-            }
-        };
+        /** @var TestCase $this */
+        $tenantPathAction = $this->createUnitMock(GetTenantFilePathAction::class);
+<<<<<<< HEAD
+        $tenantPathAction->expects($this->expectsAtLeastOnce())
+=======
+        /* @phpstan-ignore-next-line */
+        $tenantPathAction->expects($this->atLeastOnce())
+>>>>>>> 64619e34 (.)
+            ->method('execute')
+            ->with('mail.php')
+            ->willReturn('/tmp/tenant/mail.php');
 
     $result = app(GetTenantConfigPathAction::class)->execute('mail');
 

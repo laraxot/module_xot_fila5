@@ -137,6 +137,7 @@ abstract class TestCase extends BaseTestCase
 ## Important Rules
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ### Never Use `migrate:fresh` in Tests (CRITICAL)
 
@@ -156,6 +157,8 @@ php artisan migrate:fresh --env=testing --force
 Then never repeat it again in the suite.
 
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 ### Never Use RefreshDatabase
 
 The project uses `DatabaseTransactions` instead of `RefreshDatabase` because:

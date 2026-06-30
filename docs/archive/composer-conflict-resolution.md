@@ -5,6 +5,9 @@
 
 ## Cosa
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 - Rimozione dei marker di conflitto Git in `composer.json`
 - Eliminazione dell'inserimento errato del branch alias `aurmich/dev` nelle sezioni `require-comment` e `require-dev-comment`, che non fanno parte della configurazione delle dipendenze
 - Conservazione delle sezioni `require` e `require-dev` pulite, mantenendo solo le dipendenze ufficiali documentate nel modulo Xot
@@ -14,20 +17,28 @@
 Vedi `/docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
 - Rimozione dei marker di conflitto in `composer.json`.
 - Rimozione dei marker di conflitto  in `composer.json`.
+<<<<<<< HEAD
 =======
 - Rimozione dei marker di conflitto in `composer.json`.
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 
 - Rimozione dei marker di conflitto (``, `=======`, `aurmich/dev`) in `composer.json`.
 - Eliminazione dell’inserimento errato del branch alias `aurmich/dev` nelle sezioni `require-comment` e `require-dev-comment`, che non fanno parte della configurazione delle dipendenze.
 - Conservazione delle sezioni `require` e `require-dev` pulite, mantenendo solo le dipendenze ufficiali documentate nel modulo Xot.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Rimozione dei marker di conflitto in `composer.json`.=======
 
 =======
 - Rimozione dei marker di conflitto in `composer.json`.
 >>>>>>> a01602c7 (.)
+=======
+- Rimozione dei marker di conflitto in `composer.json`.=======
+
+>>>>>>> 64619e34 (.)
 - Rimozione dei marker di conflitto in `composer.json`.
 - Rimozione dei marker di conflitto (``, `=======`, `aurmich/dev`) in `composer.json`.
 - Eliminazione dell’inserimento errato del branch alias `aurmich/dev` nelle sezioni `require-comment` e `require-dev-comment`, che non fanno parte della configurazione delle dipendenze.
@@ -36,7 +47,11 @@ Vedi `/docs/xot_conflict_links.md` per la mappatura dei file documentati localme
 
 ## Collegamento alla doc root
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi `/project_docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
 =======
 Vedi `/docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
 >>>>>>> a01602c7 (.)
+=======
+Vedi `/project_docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
+>>>>>>> 64619e34 (.)

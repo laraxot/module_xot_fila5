@@ -9,10 +9,14 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 @isset($properties['remember_token'])
 =======
 <?php if (array_key_exists('remember_token', $properties)): ?>
 >>>>>>> a01602c7 (.)
+=======
+@isset($properties['remember_token'])
+>>>>>>> 64619e34 (.)
 use Illuminate\Support\Str;
 @endisset
 use {{ $reflection->getName() }};

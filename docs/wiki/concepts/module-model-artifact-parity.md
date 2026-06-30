@@ -2,26 +2,19 @@
 type: concept
 module: Xot
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
   - ../../../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md
   - ../../module-directory-structure-rule.md
-<<<<<<< HEAD
 =======
 updated: 2026-06-05
 qmd: "xot module model migration factory seeder parity audit cross module"
 >>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 ---
 
 # Module model artifact parity
 
-<<<<<<< HEAD
 <<<<<<< HEAD
 ## Regola N = N = N
 
@@ -99,4 +92,35 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 >>>>>>> 64619e34 (.)
 =======
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
->>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+## Scopo
+
+Ogni modulo Laraxot deve essere **completo** rispetto ai modelli che possiede: stesso numero di migrazioni `create_*`, factory e seeder entità.
+
+## Regola N = N = N = N
+
+Vedi [architecture-module-model-artifact-parity.md](../../../../../docs/wiki/bmad/architecture-module-model-artifact-parity.md).
+
+## Audit automatico
+
+```bash
+bashscripts/tools/audit-module-artifact-parity.sh <ModuleName>
+```
+
+## Struttura attesa
+
+```
+Modules/{Module}/
+├── app/Models/           # modelli owner
+├── database/
+│   ├── migrations/       # N × create_{table}_table
+│   ├── factories/        # N × {Model}Factory
+│   └── seeders/          # N × {Model}Seeder + opz. {Module}DatabaseSeeder
+```
+
+## Collegamenti
+
+- [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
+- [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
+- [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
+>>>>>>> 64619e34 (.)

@@ -4,14 +4,10 @@ type: concept
 tags: [second-brain, llm-wiki, on-demand, local-docs]
 created: 2026-05-19
 <<<<<<< HEAD
-<<<<<<< HEAD
 updated: 2026-07-01
 =======
 updated: 2026-06-05
 >>>>>>> 64619e34 (.)
-=======
-updated: 2026-07-01
->>>>>>> 61938ca4 (delete .claude-audit/)
 qmd: "second brain local discipline module theme wiki on-demand xot canonical"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -59,14 +55,10 @@ Distillato Fixcity — **non** copiare i tip nel bootstrap:
 | Fase | Tip | Azione agente |
 |------|-----|----------------|
 <<<<<<< HEAD
-<<<<<<< HEAD
 | Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
 =======
 | Checkpoint | 001 | `git status`; patch forward-only; no `stash`/`reset` senza ordine utente |
 >>>>>>> 64619e34 (.)
-=======
-| Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
->>>>>>> 61938ca4 (delete .claude-audit/)
 | Piano | 003/017 | QMD + wiki → piano breve → act |
 | Contesto | 009/013 | `llm-wiki-qmd.sh search -n 5`; no dump cartelle intere |
 | Spec | 008 | BMAD story + dev-story prima del codice |
@@ -97,10 +89,6 @@ Before closing a docs update in this module/theme:
 - [ai-harness-xot-discipline.md](./ai-harness-xot-discipline.md)
 - [on-demand-pattern.md](../../../../../../docs/wiki/rules/on-demand-pattern.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
 =======
 >>>>>>> 64619e34 (.)
-=======
-- [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
->>>>>>> 61938ca4 (delete .claude-audit/)

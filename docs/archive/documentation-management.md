@@ -6,6 +6,7 @@ La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 base_predict_fila5_mono/
 =======
 base_<nome progetto>_fila5_mono/
@@ -165,6 +166,9 @@ base_predict_fila5_mono/
 =======
 base_predict_fila3_mono/
 >>>>>>> a01602c7 (.)
+=======
+base_<nome progetto>_fila5_mono/
+>>>>>>> 64619e34 (.)
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli

@@ -66,6 +66,9 @@ aurmich/dev
 
 ## Collegamenti tra versioni di level_6.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 * [level_6.md](laravel/modules/chart/project_docs/phpstan/level_6.md)
 * [level_6.md](laravel/modules/reporting/project_docs/phpstan/level_6.md)
 * [level_6.md](laravel/modules/gdpr/project_docs/phpstan/level_6.md)
@@ -137,8 +140,11 @@ aurmich/dev
 aurmich/dev
 
 ## Collegamenti tra versioni di level_6.md
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 * [level_6.md](laravel/modules/chart/docs/phpstan/level_6.md)
 * [level_6.md](laravel/modules/reporting/docs/phpstan/level_6.md)
 * [level_6.md](laravel/modules/gdpr/docs/phpstan/level_6.md)

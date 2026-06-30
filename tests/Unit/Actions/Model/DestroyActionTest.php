@@ -2,16 +2,23 @@
 
 declare(strict_types=1);
 
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\Session;
 use Modules\Xot\Actions\Model\DestroyAction;
 use Modules\Xot\Models\BaseModel;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {
-    /** @var TestCase $this */
+=======
+use PHPUnit\Framework\Assert;
+
+it('deletes model and returns it', function (): void {
+    /** @var Modules\Xot\Tests\TestCase $this */
+>>>>>>> 64619e34 (.)
     $mockModel = new class extends BaseModel {
         public bool $deleted = false;
 

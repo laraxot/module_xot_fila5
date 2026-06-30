@@ -13,13 +13,9 @@ related:
   - ../../../../../../bashscripts/ai/rules/composer-root-skeleton-modular.md
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
 <<<<<<< HEAD
-<<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
 =======
 >>>>>>> 64619e34 (.)
-=======
-  - ./composer-merge-plugin-modules-only.md
->>>>>>> 61938ca4 (delete .claude-audit/)
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -81,7 +77,6 @@ Questa e' la boundary corretta:
 Confronto 2026-06-30:
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
@@ -93,9 +88,3 @@ Confronto 2026-06-30:
 
 `cd laravel && composer update -W`
 >>>>>>> 64619e34 (.)
-=======
-- **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
-- **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
-
-`cd laravel && composer validate && composer show --direct`
->>>>>>> 61938ca4 (delete .claude-audit/)

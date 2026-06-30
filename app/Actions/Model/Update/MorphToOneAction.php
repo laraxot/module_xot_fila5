@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
+use Modules\Xot\Support\MorphToOneRelationSupport;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -39,7 +40,11 @@ class MorphToOneAction
         // Prepare the data for creation
         $data = $this->prepareData($relationDTO->data);
 
+<<<<<<< HEAD
         app(CreateMorphToOneRelatedModelAction::class)->execute($relation, $data);
+=======
+        MorphToOneRelationSupport::create($relation, $data);
+>>>>>>> 64619e34 (.)
     }
 
     /**

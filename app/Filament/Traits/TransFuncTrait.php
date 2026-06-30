@@ -97,14 +97,12 @@ trait TransFuncTrait
             return $trans;
         }
 
+<<<<<<< HEAD
         if (null === $trans) {
-            $newTrans = Str::of($key)
-                ->between('::', '.')
-                ->replace('_', ' ')
-                ->toString();
-            app(SaveTransAction::class)->execute($key, $newTrans);
-
-            return $newTrans;
+=======
+        if ($trans === null) {
+>>>>>>> 64619e34 (.)
+            return static::persistGeneratedTransFuncLabel($key);
         }
 
         return 'fix:'.$key;
