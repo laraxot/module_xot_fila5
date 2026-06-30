@@ -13,9 +13,7 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
-        HandlersRepository $repository,
     ) {
-        $this->repository = $repository;
     }
 
     /**
@@ -83,5 +81,21 @@ class HandlerDecorator implements ExceptionHandler
     public function shouldReport(\Throwable $e): bool
     {
         return $this->defaultHandler->shouldReport($e);
+    }
+
+    /**
+     * Determine whether the given handler can handle the provided exception.
+     */
+    protected function handlesException(callable $handler, \Throwable $e): bool
+    {
+        $reflection = new \ReflectionFunction(
+            $handler instanceof \Closure ? $handler : \Closure::fromCallable($handler),
+        );
+
+        if (! ($params = $reflection->getParameters())) {
+            return false;
+        }
+
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
     }
 }
