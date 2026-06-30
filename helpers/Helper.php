@@ -546,15 +546,15 @@ if (! function_exists('xotPhpstanTraitProbeClasses')) {
     function xotPhpstanTraitProbeClasses(): array
     {
         return [
-            \Modules\Geo\Phpstan\GeoTraitPhpstanProbe::class,
-            \Modules\Geo\Phpstan\HasAddressPhpstanProbe::class,
-            \Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe::class,
-            \Modules\Geo\Phpstan\HasAddressesPhpstanProbe::class,
-            \Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe::class,
-            \Modules\Notify\Phpstan\HasContactPhpstanProbe::class,
-            \Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe::class,
-            \Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe::class,
-            \Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe::class,
+            Modules\Geo\Phpstan\GeoTraitPhpstanProbe::class,
+            Modules\Geo\Phpstan\HasAddressPhpstanProbe::class,
+            Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe::class,
+            Modules\Geo\Phpstan\HasAddressesPhpstanProbe::class,
+            Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe::class,
+            Modules\Notify\Phpstan\HasContactPhpstanProbe::class,
+            Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe::class,
+            Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe::class,
+            Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe::class,
         ];
     }
 }
