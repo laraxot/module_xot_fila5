@@ -134,4 +134,3 @@
 - [Filament Class Extension Rules](../filament-class-extension-rules.md)
 
 *Ultimo aggiornamento: 2026-01-22*
-*Ultimo aggiornamento: 2026-01-22*

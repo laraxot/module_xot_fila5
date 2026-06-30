@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Phpstan;
 
-use Illuminate\Support\Carbon;
-use Modules\Xot\Models\Traits\HasCommonScopes;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Models\Traits\HasCommonScopes;
 use Modules\Xot\Traits\HasCustomRelations;
 use Modules\Xot\Traits\HasSchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
@@ -20,8 +19,8 @@ abstract class XotPhpstanProbeModel extends XotBaseModel
 }
 
 /**
- * @property bool|null   $is_active
- * @property Carbon|null $published_at
+ * @property bool|null                       $is_active
+ * @property \Illuminate\Support\Carbon|null $published_at
  */
 final class HasCommonScopesPhpstanProbe extends XotPhpstanProbeModel
 {

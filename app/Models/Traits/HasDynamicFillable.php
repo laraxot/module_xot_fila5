@@ -10,8 +10,8 @@ trait HasDynamicFillable
     /**
      * Overrides the default getFillable method to include fields from specified Enums.
      *
-     * Models using this trait can override getDynamicFillableEnums() with the
-     * fully qualified class names of Enums whose cases should be added to fillable.
+     * Models using this trait should define a protected array property `$dynamicFillableEnums`
+     * containing the fully qualified class names of Enums whose cases should be added to fillable.
      *
      * Example: protected array $dynamicFillableEnums = [AddressItemEnum::class, ContactTypeEnum::class];
      *
@@ -21,7 +21,12 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
-        $dynamicFillableEnums = $this->getDynamicFillableEnums();
+        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
+
+        // Ensure the property is an array
+        if (! is_array($dynamicFillableEnums)) {
+            return $fillable;
+        }
 
         foreach ($dynamicFillableEnums as $enumClass) {
             if (! is_string($enumClass) || '' === $enumClass) {
@@ -51,13 +56,5 @@ trait HasDynamicFillable
 
         // Ensure unique values and reset keys for cleanliness
         return array_values(array_unique($fillable));
-    }
-
-    /**
-     * @return array<int, class-string<\UnitEnum>>
-     */
-    protected function getDynamicFillableEnums(): array
-    {
-        return [];
     }
 }

@@ -34,48 +34,6 @@ if (! function_exists('isRunningTestBench')) {
     }
 }
 
-if (! function_exists('snake_case')) {
-    function snake_case(string $str): string
-    {
-        return Str::snake($str);
-    }
-}
-
-if (! function_exists('str_slug')) {
-    function str_slug(string $str): string
-    {
-        return Str::slug($str);
-    }
-}
-
-if (! function_exists('str_singular')) {
-    function str_singular(string $str): string
-    {
-        return Str::singular($str);
-    }
-}
-
-if (! function_exists('starts_with')) {
-    function starts_with(string $str, string $str1): bool
-    {
-        return Str::startsWith($str, $str1);
-    }
-}
-
-if (! function_exists('ends_with')) {
-    function ends_with(string $str, string $str1): bool
-    {
-        return Str::endsWith($str, $str1);
-    }
-}
-
-if (! function_exists('str_contains')) {
-    function str_contains(string $str, string $str1): bool
-    {
-        return Str::contains($str, $str1);
-    }
-}
-
 if (! function_exists('hex2rgba')) {
     function hex2rgba(string $color, float $opacity = -1.0): string
     {
@@ -294,7 +252,7 @@ if (! function_exists('params2ContainerItem')) {
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
-            if (! empty($matches)) {
+            if (count($matches) >= 3) {
                 $sk = $matches[1];
                 $sv = $matches[2];
                 ${$sk}[$sv] = $v;
@@ -576,5 +534,27 @@ if (! function_exists('describe')) {
     function describe(string $title, Closure $callback): void
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('xotPhpstanTraitProbeClasses')) {
+    /**
+     * Registers library trait probe hosts for PHPStan (tests/ are excluded from scan).
+     *
+     * @return list<class-string>
+     */
+    function xotPhpstanTraitProbeClasses(): array
+    {
+        return [
+            \Modules\Geo\Phpstan\GeoTraitPhpstanProbe::class,
+            \Modules\Geo\Phpstan\HasAddressPhpstanProbe::class,
+            \Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe::class,
+            \Modules\Geo\Phpstan\HasAddressesPhpstanProbe::class,
+            \Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe::class,
+            \Modules\Notify\Phpstan\HasContactPhpstanProbe::class,
+            \Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe::class,
+            \Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe::class,
+            \Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe::class,
+        ];
     }
 }

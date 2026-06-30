@@ -122,49 +122,36 @@ Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `Enu
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
 
-## Fix #4 (2026-07-01): sweep moduli — TestWidget ponytail
+## Fix 2026-06-30: fatal trait collision + tail Modules/
 
-### Contesto
+### Problema 1 — PHPStan non partiva (fatal)
 
-Sweep `php -d memory_limit=4G ./vendor/bin/phpstan analyse Modules/<modulo> --level=10` su 16 moduli (esclusi `Incentivi`, `Pdnd`).
+`BaseUser` usa `HasTeams` e `HasSpatiePermission` (Spatie `HasRoles::teams()`). Collisione su `teams()`.
 
-### Risultato
+### Soluzione
 
-| Modulo | Errori |
-|--------|--------|
-| Activity, IndennitaCondizioniLavoro, IndennitaResponsabilita, Job, Lang, Media, Notify, Performance, Progressioni, Ptv, Rating, Sigma, Tenant, UI, User, Xot | 0 |
+```php
+use HasSpatiePermission, HasTeams {
+    HasTeams::teams insteadof HasSpatiePermission;
+    HasSpatiePermission::teams as spatieTeams;
+}
+```
 
-### Azione unica codice
+Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 
-Rimosso `Modules/Xot/app/Filament/Widgets/TestWidget.php`:
+### Problema 2 — `UserContract::teams()` generics
 
-- `property.defaultValue` su `$view` (`view-string`) — vista blade inesistente
-- Duplicato di `Modules/UI/Filament/Widgets/TestWidget` (unico usato in `UI/Filament/Pages/Dashboard.php`)
-- Pattern ponytail: codice morto → delete, non PHPDoc/`@phpstan-ignore`
+`static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
 
-### Note operative
+### Problema 3 — `Article::scopePublishedUntilToday()`
 
-- `User` richiede `php -d memory_limit=4G` (OOM worker 512M altrimenti)
-- `Helper.php` `params2ContainerItem()`: `preg_match` già senza `is_string()` ridondante su `$matches[1|2]`
-- Sigma `FunctionExtra`: `GgFilterData::normalizeListaTipoCodice()` restituisce `?string` — guard `isset && is_string` ridondante già assente
+Return type `EloquentBuilder|QueryBuilder` con classe `QueryBuilder` inesistente nel modulo → solo `EloquentBuilder`.
 
 ### Verifica
 
 ```bash
-cd laravel && php -d memory_limit=4G ./vendor/bin/phpstan analyse Modules/Xot --level=10
-# [OK] No errors
+cd laravel && ./vendor/bin/phpstan analyse Modules
+# [OK] No errors — 5357 file
 ```
 
-## Fix #5 (2026-07-01): Laravel 13 — tipi nativi su proprietà ereditate
-
-### EventServiceProvider (Lang, Progressioni, Rating, Sigma, Tenant, Ptv)
-
-Rimosso tipo nativo su `$listen` / `$shouldDiscoverEvents` dove la base Laravel non lo definisce. Vedi [Lang troubleshooting](../../Lang/docs/wiki/troubleshooting/phpstan-fixes.md).
-
-### `BaseScheda::$with` (Ptv)
-
-`protected array $with` → `protected $with` con `@var list<string>` — `Model::$with` non è tipizzato in Laravel 13.
-
-### `EnteMatrRelationship::anag()` (Sigma)
-
-Return `HasOne` (non `HasOne|BelongsTo`) — `hasOneByEnteMatr()` restituisce sempre `HasOne`; union incompatibile con `BaseScheda::anag(): HasOne`.
+Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)

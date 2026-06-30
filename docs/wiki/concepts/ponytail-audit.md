@@ -1,21 +1,21 @@
 # Ponytail audit — Xot
 
-**Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.
+**Run:** 2026-06-30
 
-- [Hub audit](../../../../../../docs/audit/ponytail-audit.md)
-- [Remediation](../../../../../../docs/project/ponytail-audit-remediation.md)
-- [Findings Xot](../../ponytail-audit-over-engineering.md)
+Documento canonico: [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)
 
-Aggiornare solo finding e stato specifici di questo modulo.
+## Vincoli
 
-## Run #4 (2026-07-01)
+- `MetatagData`, `XotData` — **non** DTO passivi
+- `spatie/laravel-permission` — resta in `composer.json`
+- `helpers/Helper.php` (minuscolo) — autoload `files`
 
-| Taglio | Stato |
-|--------|-------|
-| `Actions/Array/` → solo `Actions/Arr/` | ✅ |
-| `GetViewByClassAction` root | ✅ |
-| `ModelWith*Contract` (4 file) | ✅ |
-| `helpers/Helper.php` API morta | ✅ parziale |
-| `ArtisanService`, `RouteDynService` | ✅ già assenti |
+## Top tagli
 
-PHPStan `Modules/Xot`: 0 errori.
+| Tag | Cosa | Righe ~ |
+|-----|------|---------|
+| `delete` | `ArtisanService` stack, `RouteDynService` | ~1k |
+| `delete` | `Actions/Array/` duplicato, contratti morti | ~700 |
+| `shrink` | API morta `MetatagData`, `Helper.php` monolite | fase 2 |
+
+Vedi [xotdata-metatagdata-not-simple-dto.md](../reference/xotdata-metatagdata-not-simple-dto.md).
