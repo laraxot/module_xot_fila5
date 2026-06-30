@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Illuminate\Testing\TestResponse;
 use Modules\Geo\Phpstan\GeoTraitPhpstanProbe;
 use Modules\Geo\Phpstan\HasAddressesPhpstanProbe;
@@ -20,6 +21,9 @@ use Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe;
 use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+=======
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+>>>>>>> 64619e34 (.)
 use Modules\Xot\Actions\File\FixPathAction;
 <<<<<<< HEAD
 use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
@@ -32,8 +36,17 @@ use function Safe\preg_match;
 =======
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
+use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< HEAD
 >>>>>>> a01602c7 (.)
+=======
+
+use function Safe\define;
+use function Safe\glob;
+use function Safe\preg_match;
+
+>>>>>>> 64619e34 (.)
 use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
@@ -101,10 +114,6 @@ if (! function_exists('hex2rgba')) {
         if ('#' === $color[0]) {
             $color = mb_substr($color, 1);
         }
-<<<<<<< .merge_file_eopxrw
-=======
-
->>>>>>> .merge_file_o9Z4k6
         if (6 === mb_strlen($color)) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
         } elseif (3 === mb_strlen($color)) {
@@ -118,10 +127,6 @@ if (! function_exists('hex2rgba')) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
-<<<<<<< .merge_file_eopxrw
-=======
-
->>>>>>> .merge_file_o9Z4k6
             $output = 'rgba('.implode(',', $rgb).','.$opacity.')';
         } else {
             $output = 'rgb('.implode(',', $rgb).')';
@@ -141,12 +146,15 @@ if (! function_exists('dddx')) {
             define('LARAVEL_START', $start);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_eopxrw
 =======
 
 >>>>>>> .merge_file_o9Z4k6
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
         $data = [
             '_' => $params,
             'line' => $tmp[0]['line'] ?? 'line-unknows',
@@ -167,6 +175,7 @@ if (! function_exists('dddx')) {
 <<<<<<< HEAD
 =======
 if (! function_exists('getFilename')) {
+    /** @param array<string, mixed> $params */
     function getFilename(array $params): string
     {
         $tmp = debug_backtrace();
@@ -211,6 +220,40 @@ if (! function_exists('inAdmin')) {
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
 <<<<<<< HEAD
 =======
+    }
+}
+
+if (! function_exists('getRouteParameters')) {
+    /**
+     * Parametri della route corrente (es. anno, stabi, repar nei contesti admin progressioni).
+     *
+     * @return array<string, mixed>
+     */
+    function getRouteParameters(): array
+    {
+        if (app()->runningInConsole()) {
+            return [];
+        }
+
+        $route = Route::current();
+        if (null === $route) {
+            return [];
+        }
+
+        $params = $route->parameters();
+        if (! is_array($params)) {
+            return [];
+        }
+
+        /** @var array<string, mixed> $result */
+        $result = [];
+        foreach ($params as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
     }
 }
 
@@ -293,12 +336,15 @@ if (! function_exists('params2ContainerItem')) {
         $container = [];
         $item = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< .merge_file_eopxrw
 =======
 
 >>>>>>> .merge_file_o9Z4k6
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
@@ -316,6 +362,7 @@ if (! function_exists('params2ContainerItem')) {
 <<<<<<< HEAD
 =======
 if (! function_exists('getModelFields')) {
+    /** @return array<int, string> */
     function getModelFields(Model $model): array
     {
         return $model->getConnection()->getSchemaBuilder()->getColumnListing($model->getTable());
@@ -334,20 +381,20 @@ if (! function_exists('getModelByName')) {
 
         $files_path = base_path('Modules').'/*/Models/*.php';
         Assert::isArray($files = glob($files_path));
-        $path = Arr::first($files, function ($file) use ($name): bool {
-            Assert::string($file, __FILE__.':'.__LINE__.' - Helper');
+        $path = Arr::first($files, function (mixed $file) use ($name): bool {
+            if (! is_string($file)) {
+                return false;
+            }
+
             $info = pathinfo($file);
 
             return Str::snake($info['filename'] ?? '') === $name;
         });
 
-        if (null === $path) {
+        if (! is_string($path)) {
             throw new Exception('['.$name.'] not in morph_map');
         }
-<<<<<<< .merge_file_eopxrw
-=======
 
->>>>>>> .merge_file_o9Z4k6
         $path = app(FixPathAction::class)->execute($path);
         $info = pathinfo($path);
         $module_name = Str::between($path, 'Modules'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.'Models');
@@ -363,7 +410,8 @@ if (! function_exists('getModuleFromModel')) {
     {
         $class = $model::class;
         $module_name = Str::before(Str::after($class, 'Modules\\'), '\\Models\\');
-        Assert::isInstanceOf($res = app('module')->find($module_name), Nwidart\Modules\Module::class);
+        $moduleRepository = app(RepositoryInterface::class);
+        Assert::isInstanceOf($res = $moduleRepository->find($module_name), Nwidart\Modules\Module::class);
 
         return $res;
     }
@@ -386,19 +434,24 @@ if (! function_exists('getModuleNameFromModelName')) {
             throw new Exception('['.__LINE__.']');
         }
 
-<<<<<<< .merge_file_eopxrw
-=======
         Assert::isInstanceOf($model = app($model_class), Model::class);
 
->>>>>>> .merge_file_o9Z4k6
         return getModuleNameFromModel($model);
     }
 }
 
 if (! function_exists('getAllModules')) {
+    /** @return array<string, mixed> */
     function getAllModules(): array
     {
-        return Module::all();
+        $modules = Module::all();
+        $normalized = [];
+
+        foreach ($modules as $name => $module) {
+            $normalized[(string) $name] = $module;
+        }
+
+        return $normalized;
     }
 }
 
@@ -412,6 +465,7 @@ if (! function_exists('xotModel')) {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::isInstanceOf($res = app($model_class), Model::class);
 
 =======
@@ -421,6 +475,10 @@ if (! function_exists('xotModel')) {
 
 >>>>>>> .merge_file_o9Z4k6
 >>>>>>> a01602c7 (.)
+=======
+        Assert::isInstanceOf($res = app($model_class), Model::class);
+
+>>>>>>> 64619e34 (.)
         return $res;
     }
 }
@@ -449,15 +507,22 @@ if (! function_exists('trans_string')) {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
 =======
             $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
 >>>>>>> a01602c7 (.)
+=======
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
+>>>>>>> 64619e34 (.)
         }
 
         $result = __($key, $safeReplace, $locale);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
         return is_string($result) ? $result : $key;
     }
 }
@@ -481,9 +546,15 @@ if (! function_exists('isJson')) {
 
 if (! function_exists('actingAs')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -493,9 +564,15 @@ if (! function_exists('get')) {
     /**
      * @param array<string, mixed> $options
      *
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function get(string $uri = '', array $options = []): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -505,9 +582,15 @@ if (! function_exists('post')) {
     /**
      * @param array<string, mixed> $options
      *
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function post(string $uri, mixed $data = [], array $options = []): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function post(string $uri, mixed $data = [], array $options = []): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -515,9 +598,15 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function put(string $uri, mixed $data = []): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function put(string $uri, mixed $data = []): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -525,9 +614,15 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function patch(string $uri, mixed $data = []): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function patch(string $uri, mixed $data = []): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -535,9 +630,15 @@ if (! function_exists('patch')) {
 
 if (! function_exists('delete')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function delete(string $uri): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function delete(string $uri): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -545,9 +646,15 @@ if (! function_exists('delete')) {
 
 if (! function_exists('head')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function head(string $uri): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function head(string $uri): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -555,9 +662,15 @@ if (! function_exists('head')) {
 
 if (! function_exists('options')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function options(string $uri): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function options(string $uri): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -565,9 +678,15 @@ if (! function_exists('options')) {
 
 if (! function_exists('followingRedirects')) {
     /**
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function followingRedirects(int $number = 5): TestResponse
+=======
+     * @return Illuminate\Testing\TestResponse<Illuminate\Http\Response>
+     */
+    function followingRedirects(int $number = 5): Illuminate\Testing\TestResponse
+>>>>>>> 64619e34 (.)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -586,6 +705,7 @@ if (! function_exists('describe')) {
     function describe(string $title, Closure $callback): void
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
+<<<<<<< HEAD
     }
 }
 
@@ -666,5 +786,7 @@ if (! function_exists('merge_translation_files')) {
 =======
         return is_string($result) ? $result : (null === $result ? null : $key);
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
     }
 }

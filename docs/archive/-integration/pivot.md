@@ -1,11 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 # _pivot
+=======
+>>>>>>> 64619e34 (.)
 
-<!-- Contenuto migrato da _docs/_pivot.txt -->
 
+<<<<<<< HEAD
 https://github.com/larastan/larastan/issues/515
 
 **
@@ -26,3 +29,5 @@ class UserResource extends JsonResource
       }
 }
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)

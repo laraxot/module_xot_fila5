@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 # Documentazione
 
 Questo documento serve come indice centrale per tutta la documentazione del progetto.
@@ -62,8 +65,11 @@ Le linee guida complete per la documentazione sono disponibili in:
 - [Changelog](../../../xot/project_docs/changelog/readme.md)
 - [Contributing](../../../xot/project_docs/contributing.md)
 - [Security](../../../xot/project_docs/security.md)
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 # Regole di Documentazione
 
 ## Panoramica
@@ -73,16 +79,22 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+<<<<<<< HEAD
 =======
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 
 ## Validazione dei Collegamenti
 
@@ -92,12 +104,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 =======
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 [Documento in Root](../../../project_docs/documento.md)
 >>>>>>> a01602c7 (.)
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> 64619e34 (.)
 ```
 
 ### Formato Non Corretto
@@ -105,15 +122,21 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 # Collegamenti Non Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+<<<<<<< HEAD
 =======
 [Documento Correlato](Modules/Xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 ```
 
 ### Checklist di Validazione
@@ -124,10 +147,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> a01602c7 (.)
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> 64619e34 (.)
 
 ## Validazione dei Collegamenti
 
@@ -137,12 +164,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 =======
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 [Documento in Root](../../../project_docs/documento.md)
 >>>>>>> a01602c7 (.)
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> 64619e34 (.)
 ```
 
 ### Formato Non Corretto
@@ -150,15 +182,21 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 # Collegamenti Non Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+<<<<<<< HEAD
 =======
 [Documento Correlato](Modules/Xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 ```
 
 ### Checklist di Validazione
@@ -169,10 +207,14 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> a01602c7 (.)
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> 64619e34 (.)
 
 ## Validazione dei Collegamenti
 
@@ -182,12 +224,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 =======
 [Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
 [Documento in Root](../../../project_docs/documento.md)
 >>>>>>> a01602c7 (.)
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> 64619e34 (.)
 ```
 
 ### Formato Non Corretto
@@ -195,15 +242,21 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 
 # Collegamenti Non Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento Correlato](../xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+<<<<<<< HEAD
 =======
 [Documento Correlato](Modules/Xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 ```
 
 ### Checklist di Validazione

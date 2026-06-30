@@ -12,7 +12,10 @@ discussions:
 related:
   - ../../../../../../bashscripts/ai/rules/composer-root-skeleton-modular.md
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
+<<<<<<< HEAD
   - ./composer-merge-plugin-modules-only.md
+=======
+>>>>>>> 64619e34 (.)
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
   - ./theme-psr4-autoload-without-merge.md
 ---
@@ -73,7 +76,15 @@ Questa e' la boundary corretta:
 
 Confronto 2026-06-30:
 
+<<<<<<< HEAD
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 - **Predict** (canonico attuale): root piu' stretto — solo tre `require`, autoload solo `App\\`/`Tests\\`, nessun merge temi; responsecache e tool dev nei moduli o `.phar`.
 
 `cd laravel && composer validate && composer show --direct`
+=======
+- FixCity: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`, merge solo `Modules/*/composer.json`.
+- Predict prima della correzione: root con dipendenze funzionali, `Modules\\`, `Database\\Seeders\\` e temi in autoload, merge anche dei temi.
+- Predict dopo la correzione: root riallineato allo skeleton modulare; autoload temi/seeders legacy via `RegisterRuntimePsr4NamespacesAction`.
+
+`cd laravel && composer update -W`
+>>>>>>> 64619e34 (.)

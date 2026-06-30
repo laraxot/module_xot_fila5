@@ -57,6 +57,9 @@ Questo documento descrive le regole e le best practices per i prompt di document
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
 [Documento in Root](../../../project_docs/documento.md)
@@ -338,8 +341,11 @@ Questo documento descrive le regole e le best practices per i prompt di document
 [Documento in Sottodirectory](./sottodirectory/documento.md)
 [Documento in Modulo Altro](../../altromodulo/docs/documento.md)
 [Documento in Root](../../../../docs/documento.md)
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 ```
 
 ### Formato Non Corretto
@@ -348,9 +354,13 @@ Questo documento descrive le regole e le best practices per i prompt di document
 # Collegamenti Non Corretti
 [Documento Correlato](../xot/docs/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento Correlato](../xot/docs/documento.md)
 =======
 >>>>>>> a01602c7 (.)
+=======
+[Documento Correlato](../xot/docs/documento.md)
+>>>>>>> 64619e34 (.)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
 ```

@@ -8,6 +8,9 @@ Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo 
 
 **Collegamento bidirezionale:**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 - [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
@@ -32,8 +35,11 @@ Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi,
 Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo immediatamente evidente la logica di aggregazione utilizzata.
 
 **Collegamento bidirezionale:**
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 - [Motivazione e applicazione nel modulo Performance](../../performance/docs/azioni_organizzativa.md)
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
@@ -75,7 +81,11 @@ class AdminPanelProvider extends Modules\Xot\Providers\Filament\XotBasePanelProv
   - [Esempio e memo nel modulo Performance](../../Performance/docs/azioni_organizzativa.md#memo-e-regole-operative-permanenti-per-evitare-perdita-di-tempo-e-memoria)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
 =======
 > **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
 >>>>>>> a01602c7 (.)
+=======
+> **Nota**: Consulta sempre questa sezione prima di aggiungere nuovi model o azioni di aggregazione in qualsiasi modulo che si rifà alle regole Xot. In caso di dubbio, aggiorna prima la documentazione e confronta con le regole generali.
+>>>>>>> 64619e34 (.)

@@ -20,7 +20,11 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
+<<<<<<< HEAD
      * @return TFactory
+=======
+     * @return Factory<covariant Model>
+>>>>>>> 64619e34 (.)
      */
     protected static function newFactory()
     {

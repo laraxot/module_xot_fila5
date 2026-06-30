@@ -2,8 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
+=======
+use Modules\Xot\Datas\MetatagData;
+use Modules\Xot\Support\PaDesignColors;
+>>>>>>> 64619e34 (.)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -25,7 +30,11 @@ test('getFilamentColors restituisce i colori Filament corretti', function (): vo
     Assert::assertArrayHasKey('success', $colors);
     Assert::assertArrayHasKey('warning', $colors);
     Assert::assertIsString($colors['primary'][600] ?? null);
+<<<<<<< HEAD
     Assert::assertEquals(app(PaDesignColorsAction::class)->filamentPalette(), $colors);
+=======
+    Assert::assertEquals(PaDesignColors::filamentPalette(), $colors);
+>>>>>>> 64619e34 (.)
 });
 
 test('getColors gestisce correttamente i colori personalizzati', function () {

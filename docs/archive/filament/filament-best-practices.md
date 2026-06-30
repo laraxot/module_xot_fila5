@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Best Practices
 
 ## Visibilità dei Metodi
@@ -66,13 +67,28 @@ public function getTableActions(): array
 - [Best Practices PHP](../php-strict-types.md)
 =======
 # Best Practices per Risorse Filament in Laraxot
+=======
+# Filament Best Practices
+>>>>>>> 64619e34 (.)
 
-Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.
+## Visibilità dei Metodi
 
-## Estensione delle Classi Base
+### Principio di Liskov
+Quando si estendono le classi base di Filament o XotBase, è fondamentale rispettare il principio di sostituzione di Liskov. Questo significa che:
+- La visibilità dei metodi non può essere ridotta nelle classi figlie
+- I tipi di ritorno devono essere compatibili
+- I parametri devono essere compatibili
 
-### Risorse
+### Metodi Comuni e loro Visibilità
+| Metodo | Classe Base | Visibilità Richiesta |
+|--------|-------------|---------------------|
+| getTableActions() | XotBaseListRecords | public |
+| getFormSchema() | XotBaseCreateRecord | public |
+| getFormSchema() | XotBaseEditRecord | public |
+| getHeaderActions() | XotBaseListRecords | public |
+| getTableColumns() | XotBaseListRecords | public |
 
+<<<<<<< HEAD
 1. **SEMPRE** estendere `Modules\Xot\Filament\Resources\XotBaseResource`:
    ```php
    // CORRETTO ✅
@@ -81,16 +97,30 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    // ERRATO ❌
    class ClienteResource extends Resource
    ```
+=======
+### Esempi di Implementazione Corretta
+>>>>>>> 64619e34 (.)
 
-2. **SEMPRE** impostare correttamente le proprietà statiche:
-   ```php
-   protected static ?string $model = Cliente::class;
-   protected static ?string $navigationIcon = 'heroicon-o-users';
-   protected static ?string $cluster = ClienteCluster::class; // Se applicabile
-   ```
+```php
+class ListPosts extends XotBaseListRecords
+{
+    public function getTableActions(): array
+    {
+        return [
+            // Le tue azioni personalizzate
+        ];
+    }
 
-### Pagine
+    public function getTableColumns(): array
+    {
+        return [
+            // Le tue colonne personalizzate
+        ];
+    }
+}
+```
 
+<<<<<<< HEAD
 1. Per le pagine di **creazione**:
    ```php
    // CORRETTO ✅
@@ -117,9 +147,25 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    // ERRATO ❌
    class ListClienti extends ListRecords
    ```
+=======
+### Errori Comuni da Evitare
 
-## Definizione dei Form
+1. Riduzione della Visibilità
+```php
+// ❌ SBAGLIATO: Riduzione della visibilità
+protected function getTableActions(): array
 
+// ✅ CORRETTO: Mantenimento della visibilità
+public function getTableActions(): array
+```
+>>>>>>> 64619e34 (.)
+
+2. Tipo di Ritorno Incompatibile
+```php
+// ❌ SBAGLIATO: Tipo di ritorno incompatibile
+public function getTableActions(): Collection
+
+<<<<<<< HEAD
 1. **SEMPRE** utilizzare `getFormSchema()` invece di `form()`:
    ```php
    // CORRETTO ✅
@@ -260,3 +306,14 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 >>>>>>> a01602c7 (.)
+=======
+// ✅ CORRETTO: Tipo di ritorno compatibile
+public function getTableActions(): array
+```
+
+## Collegamenti
+- [Documentazione Filament Ufficiale](https://filamentphp.com/)
+- [Principio di Sostituzione di Liskov](https://it.wikipedia.org/wiki/Principio_di_sostituzione_di_Liskov)
+- [Best Practices PHP](../php-strict-types.md)
+- [Best Practices PHP](../php-strict-types.md)
+>>>>>>> 64619e34 (.)

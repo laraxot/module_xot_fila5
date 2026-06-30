@@ -189,6 +189,7 @@ class SecurityMiddleware
         $response->headers->set('Content-Security-Policy', $csp);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Strict Transport Security
         $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
 =======
@@ -196,6 +197,10 @@ class SecurityMiddleware
             $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
         }
 >>>>>>> a01602c7 (.)
+=======
+        // Strict Transport Security
+        $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+>>>>>>> 64619e34 (.)
 
         // X-Frame-Options
         $response->headers->set('X-Frame-Options', 'DENY');
@@ -214,10 +219,14 @@ class SecurityMiddleware
         $response->headers->set('Permissions-Policy', $permissions);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
         // Cross-Origin Policies
         $response->headers->set('Cross-Origin-Embedder-Policy', 'require-corp');
         $response->headers->set('Cross-Origin-Opener-Policy', 'same-origin');
         $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin');
+<<<<<<< HEAD
 =======
         if ($isSecureTransport) {
             $response->headers->set('Cross-Origin-Embedder-Policy', 'require-corp');
@@ -225,6 +234,8 @@ class SecurityMiddleware
             $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin');
         }
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
     }
 
     /**
@@ -240,10 +251,14 @@ class SecurityMiddleware
             "img-src 'self' data: https: blob:",
             "media-src 'self' blob:",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "connect-src 'self' https: wss:",
 =======
             'connect-src '.implode(' ', array_unique($connectSources)),
 >>>>>>> a01602c7 (.)
+=======
+            "connect-src 'self' https: wss:",
+>>>>>>> 64619e34 (.)
             "frame-src 'none'",
             "object-src 'none'",
             "base-uri 'self'",
@@ -256,6 +271,7 @@ class SecurityMiddleware
         return implode('; ', $csp);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     private function isSecureTransport(): bool
@@ -273,6 +289,8 @@ class SecurityMiddleware
     }
 
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
     /**
      * Costruisci Permissions Policy.
      */
@@ -290,6 +308,7 @@ class SecurityMiddleware
             'ambient-light-sensor=()',
             'autoplay=()',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'battery=()',
 =======
 <<<<<<< .merge_file_BQ4DCt
@@ -297,6 +316,9 @@ class SecurityMiddleware
             'battery=()',
 >>>>>>> .merge_file_5Kf2Ks
 >>>>>>> a01602c7 (.)
+=======
+            'battery=()',
+>>>>>>> 64619e34 (.)
             'bluetooth=()',
             'display-capture=()',
             'fullscreen=(self)',
@@ -307,6 +329,7 @@ class SecurityMiddleware
             'push=()',
             'screen-wake-lock=()',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'speaker=()',
 =======
 <<<<<<< .merge_file_BQ4DCt
@@ -314,6 +337,9 @@ class SecurityMiddleware
             'speaker=()',
 >>>>>>> .merge_file_5Kf2Ks
 >>>>>>> a01602c7 (.)
+=======
+            'speaker=()',
+>>>>>>> 64619e34 (.)
             'web-share=()',
             'xr-spatial-tracking=()',
         ];

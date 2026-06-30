@@ -17,6 +17,10 @@ class UrlAction
 
     public function __construct()
     {
+<<<<<<< HEAD:app/Actions/UrlAction.php
+=======
+        // ---
+>>>>>>> 64619e34 (.):app/Services/UrlService.php
     }
 
     public static function getInstance(): self

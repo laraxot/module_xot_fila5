@@ -13,8 +13,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     /* @var TestCase $this */
     $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
+=======
+    skip('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
+>>>>>>> 64619e34 (.)
 });
 
 describe('Module Business Logic', function (): void {

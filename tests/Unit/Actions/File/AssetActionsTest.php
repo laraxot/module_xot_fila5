@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\File;
-
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
@@ -12,16 +11,21 @@ use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
 uses(TestCase::class);
+=======
+>>>>>>> 64619e34 (.)
 
 it('handles absolute urls in AssetAction', function (): void {
+    /** @var Modules\Xot\Tests\TestCase $this */
     $action = app(AssetAction::class);
     $url = 'https://example.com/asset.js';
     Assert::assertSame($url, $action->execute($url));
 });
 
 it('returns path if asset already exists in public folder', function (): void {
+    /** @var Modules\Xot\Tests\TestCase $this */
     $path = 'css/app.css';
     File::shouldReceive('exists')->with(public_path($path))->andReturn(true);
 
@@ -30,6 +34,7 @@ it('returns path if asset already exists in public folder', function (): void {
 });
 
 it('resolves module assets correctly in AssetAction', function (): void {
+    /** @var Modules\Xot\Tests\TestCase $this */
     $path = 'Xot::css/style.css';
     $modulePath = '/var/www/Modules/Xot';
     $from = $modulePath.'/resources/css/style.css';

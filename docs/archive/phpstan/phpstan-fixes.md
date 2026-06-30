@@ -31,6 +31,9 @@
 - Aggiunto cast esplicito `@var array<string, mixed>` al risultato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
@@ -48,8 +51,11 @@
 
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 ### 4. <main module>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 
@@ -128,6 +134,9 @@
 - [PHPStan Level 10 Guidelines](./phpstan-level10-guidelines.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 6 Gennaio 2025*
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)

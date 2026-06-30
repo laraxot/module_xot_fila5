@@ -14,8 +14,11 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class ModuleAction
 {
+<<<<<<< HEAD:app/Actions/ModuleAction.php
     use QueueableAction;
 
+=======
+>>>>>>> 64619e34 (.):app/Services/ModuleService.php
     public string $name = '';
 
     private static ?self $_instance = null;
@@ -25,6 +28,14 @@ class ModuleAction
         $this->name = $name;
     }
 
+<<<<<<< HEAD:app/Actions/ModuleAction.php
+=======
+    /**
+     * getInstance.
+     *
+     * this method will return instance of the class
+     */
+>>>>>>> 64619e34 (.):app/Services/ModuleService.php
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {

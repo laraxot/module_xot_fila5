@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> 64619e34 (.)
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\AssociateAction;
@@ -121,7 +125,11 @@ trait HasXotTable
      *
      * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
      *
+<<<<<<< HEAD
      * @return array<int, Column|ColumnGroup|LayoutComponent>
+=======
+     * @return array<int, Tables\Columns\Column|Stack>
+>>>>>>> 64619e34 (.)
      */
     public function getGridTableColumns(): array
     {
@@ -135,7 +143,11 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
+<<<<<<< HEAD
                         if (null === $state || '' === $state) {
+=======
+                        if ($state === null || $state === '') {
+>>>>>>> 64619e34 (.)
                             return $labelText.': —';
                         }
 
@@ -222,12 +234,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if (null !== $sortColumn && null !== $sortDirection) {
+        if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if (null !== $pollInterval) {
+        if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
         }
 
@@ -356,9 +368,9 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
-     *
      * @return class-string<Model>
+     *
+     * @throws Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
@@ -372,7 +384,9 @@ trait HasXotTable
             return $model;
         }
 
-        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new Exception(
+            'No model found in '.class_basename(self::class).'::'.__FUNCTION__
+        );
     }
 
     /**
@@ -384,13 +398,21 @@ trait HasXotTable
     {
         $search = $this->tableSearch ?? null;
 
+<<<<<<< HEAD
         return null !== $search ? SafeStringCastAction::cast($search) : null;
+=======
+        return $search !== null ? SafeStringCastAction::cast($search) : null;
+>>>>>>> 64619e34 (.)
     }
 
     /**
      * Get list table columns.
      *
+<<<<<<< HEAD
      * @return array<string, Column>
+=======
+     * @return array<string, Tables\Columns\Column>
+>>>>>>> 64619e34 (.)
      */
     abstract protected function getTableColumns(): array;
 
@@ -426,7 +448,11 @@ trait HasXotTable
     /**
      * Get table empty state actions.
      *
+<<<<<<< HEAD
      * @return array<int|string, Action>
+=======
+     * @return array<string, Action>
+>>>>>>> 64619e34 (.)
      */
     protected function getTableEmptyStateActions(): array
     {
@@ -500,7 +526,7 @@ trait HasXotTable
             Assert::isInstanceOf($model, Model::class);
 
             return $model->getTable().'.id';
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return null;
         }
     }

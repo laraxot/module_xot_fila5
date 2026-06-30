@@ -18,10 +18,14 @@ class ExecuteArtisanCommandAction
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Lista dei comandi consentiti per motivi di sicurezza.
 =======
      * Lista dei comandi consentiti per motivi di sicurezza (match esatto).
 >>>>>>> a01602c7 (.)
+=======
+     * Lista dei comandi consentiti per motivi di sicurezza.
+>>>>>>> 64619e34 (.)
      *
      * @var array<int, string>
      */
@@ -34,6 +38,7 @@ class ExecuteArtisanCommandAction
         'route:cache',
         'event:cache',
         'queue:restart',
+<<<<<<< HEAD
 <<<<<<< HEAD
         'passport:install --uuids',
 =======
@@ -48,6 +53,9 @@ class ExecuteArtisanCommandAction
     private array $allowedCommandPrefixes = [
         'passport:install',
 >>>>>>> a01602c7 (.)
+=======
+        'passport:install --uuids',
+>>>>>>> 64619e34 (.)
         'passport:keys',
         'passport:purge',
         'passport:hash',
@@ -157,6 +165,7 @@ class ExecuteArtisanCommandAction
         Assert::stringNotEmpty($command, 'Il comando non può essere vuoto');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return in_array($command, $this->allowedCommands, true);
 =======
         if (in_array($command, $this->allowedCommands, true)) {
@@ -171,5 +180,8 @@ class ExecuteArtisanCommandAction
 
         return false;
 >>>>>>> a01602c7 (.)
+=======
+        return in_array($command, $this->allowedCommands, true);
+>>>>>>> 64619e34 (.)
     }
 }

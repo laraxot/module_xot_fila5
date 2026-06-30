@@ -10,8 +10,13 @@ declare(strict_types=1);
  * test files. Runtime Pest remains unchanged because this file is a static
  * analysis bridge under the analyzed Modules tree, not a Pest bootstrap file.
  */
+<<<<<<< HEAD
 // Generated at: 2026-07-01T08:18:29+00:00
 // Namespaces: 210.
+=======
+// Generated at: 2026-06-17T15:23:42+00:00
+// Namespaces: 208.
+>>>>>>> 64619e34 (.)
 
 namespace Modules\AI\Tests;
 
@@ -65,6 +70,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -74,6 +80,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\AI\Tests\Support;
 
 use Closure;
@@ -126,6 +134,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -135,6 +144,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\AI\Tests\Unit\Actions;
 
 use Closure;
@@ -187,6 +198,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -196,6 +208,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\AI\Tests\Unit\Services;
 
 use Closure;
@@ -248,6 +262,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -257,6 +272,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests;
 
 use Closure;
@@ -309,6 +326,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -318,6 +336,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Feature;
 
 use Closure;
@@ -370,6 +390,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -379,6 +400,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Fixtures;
 
 use Closure;
@@ -431,6 +454,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -440,6 +464,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit;
 
 use Closure;
@@ -492,6 +518,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -501,6 +528,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit\Actions;
 
 use Closure;
@@ -553,6 +582,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -562,6 +592,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit\Events;
 
 use Closure;
@@ -614,6 +646,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -623,6 +656,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit\Listeners;
 
 use Closure;
@@ -675,6 +710,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -684,6 +720,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit\Models;
 
 use Closure;
@@ -736,6 +774,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -745,6 +784,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit\Providers;
 
 use Closure;
@@ -797,6 +838,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -806,6 +848,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Activity\Tests\Unit\Traits;
 
 use Closure;
@@ -858,6 +902,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -867,6 +912,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests;
 
 use Closure;
@@ -919,6 +966,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -928,6 +976,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Feature;
 
 use Closure;
@@ -980,6 +1030,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -989,6 +1040,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Feature\Auth;
 
 use Closure;
@@ -1041,6 +1094,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1050,6 +1104,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Feature\Frontoffice;
 
 use Closure;
@@ -1102,6 +1158,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1111,6 +1168,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
 
 use Closure;
@@ -1163,6 +1222,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1172,6 +1232,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Unit\Actions;
 
 use Closure;
@@ -1224,6 +1286,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1233,6 +1296,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Unit\Http\Volt;
 
 use Closure;
@@ -1285,6 +1350,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1294,6 +1360,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Unit\Models;
 
 use Closure;
@@ -1346,6 +1414,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1355,6 +1424,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Cms\Tests\Unit\Support;
 
 use Closure;
@@ -1407,6 +1478,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1416,6 +1488,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Comment\Tests;
 
 use Closure;
@@ -1468,6 +1542,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1538,6 +1613,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Comment\Tests\Support;
 
 use Closure;
@@ -1590,12 +1667,636 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
  * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
+=======
+namespace Modules\Fixcity\Tests;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Feature;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Feature\Api;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Feature\Database;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Feature\Filament;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Feature\Livewire;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Unit\Actions;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Unit\Enums;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Unit\Models;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Unit\Services;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Unit\Support;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+namespace Modules\Fixcity\Tests\Unit\ViewModels;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Fixcity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+>>>>>>> 64619e34 (.)
 {
 }
 
@@ -1651,6 +2352,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1660,6 +2362,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Feature;
 
 use Closure;
@@ -1712,6 +2416,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1721,6 +2426,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Feature\Auth;
 
 use Closure;
@@ -1773,6 +2480,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1843,6 +2551,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Unit\Actions;
 
 use Closure;
@@ -1895,6 +2605,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1904,6 +2615,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Unit\Filament\Resources;
 
 use Closure;
@@ -1956,6 +2669,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -1965,6 +2679,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Unit\Models;
 
 use Closure;
@@ -2017,6 +2733,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2026,6 +2743,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Unit\Providers;
 
 use Closure;
@@ -2078,6 +2797,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2087,6 +2807,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Gdpr\Tests\Unit\Traits;
 
 use Closure;
@@ -2139,6 +2861,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2148,6 +2871,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests;
 
 use Closure;
@@ -2200,6 +2925,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2209,6 +2935,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Feature;
 
 use Closure;
@@ -2261,6 +2989,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2270,6 +2999,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Feature\Filament\Forms\Components;
 
 use Closure;
@@ -2322,6 +3053,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2331,6 +3063,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Fixtures;
 
 use Closure;
@@ -2383,6 +3117,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2453,6 +3188,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Support;
 
 use Closure;
@@ -2505,6 +3242,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2514,6 +3252,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit;
 
 use Closure;
@@ -2566,6 +3306,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2575,6 +3316,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions;
 
 use Closure;
@@ -2627,6 +3370,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2636,6 +3380,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\Bing;
 
 use Closure;
@@ -2688,6 +3434,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2697,6 +3444,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\Elevation;
 
 use Closure;
@@ -2749,6 +3498,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2758,6 +3508,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\GoogleMaps;
 
 use Closure;
@@ -2810,6 +3562,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2819,6 +3572,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\Here;
 
 use Closure;
@@ -2871,6 +3626,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2880,6 +3636,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\IPGeolocation;
 
 use Closure;
@@ -2932,6 +3690,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -2941,6 +3700,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\LocationIQ;
 
 use Closure;
@@ -2993,6 +3754,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3002,6 +3764,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\Mapbox;
 
 use Closure;
@@ -3054,6 +3818,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3063,6 +3828,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Actions\Nominatim;
 
 use Closure;
@@ -3115,6 +3882,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3124,6 +3892,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\DataTransferObjects;
 
 use Closure;
@@ -3176,6 +3946,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3185,6 +3956,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Datas;
 
 use Closure;
@@ -3237,6 +4010,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3246,6 +4020,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Enums;
 
 use Closure;
@@ -3298,6 +4074,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3307,6 +4084,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Filament;
 
 use Closure;
@@ -3359,6 +4138,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3368,6 +4148,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Filament\Forms;
 
 use Closure;
@@ -3420,6 +4202,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3429,6 +4212,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Filament\Forms\Components;
 
 use Closure;
@@ -3481,6 +4266,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3490,6 +4276,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Filament\Widgets;
 
 use Closure;
@@ -3542,6 +4330,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3551,6 +4340,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Models;
 
 use Closure;
@@ -3603,6 +4394,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3612,6 +4404,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Models\Policies;
 
 use Closure;
@@ -3664,6 +4458,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3673,6 +4468,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Services;
 
 use Closure;
@@ -3725,6 +4522,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3734,6 +4532,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Traits;
 
 use Closure;
@@ -3786,6 +4586,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3795,6 +4596,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Geo\Tests\Unit\Transformers;
 
 use Closure;
@@ -3847,6 +4650,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3856,6 +4660,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests;
 
 use Closure;
@@ -3908,6 +4714,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3917,6 +4724,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Feature;
 
 use Closure;
@@ -3969,6 +4778,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -3978,6 +4788,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Actions;
 
 use Closure;
@@ -4030,6 +4842,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4039,6 +4852,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Actions\Command;
 
 use Closure;
@@ -4091,6 +4906,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4100,6 +4916,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Enums;
 
 use Closure;
@@ -4152,6 +4970,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4161,6 +4980,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Events;
 
 use Closure;
@@ -4213,6 +5034,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4222,6 +5044,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Models;
 
 use Closure;
@@ -4274,6 +5098,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4283,6 +5108,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Providers;
 
 use Closure;
@@ -4335,6 +5162,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4344,6 +5172,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Job\Tests\Unit\Services;
 
 use Closure;
@@ -4396,6 +5226,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4466,6 +5297,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Lang\Tests;
 
 use Closure;
@@ -4518,6 +5351,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4527,6 +5361,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Lang\Tests\Unit\Actions;
 
 use Closure;
@@ -4579,6 +5415,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4588,6 +5425,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Lang\Tests\Unit\Models;
 
 use Closure;
@@ -4640,6 +5479,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4649,6 +5489,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Media\Tests;
 
 use Closure;
@@ -4701,6 +5543,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4710,6 +5553,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Media\Tests\Feature;
 
 use Closure;
@@ -4762,6 +5607,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4771,6 +5617,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Media\Tests\Filament\Resources;
 
 use Closure;
@@ -4823,6 +5671,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4832,6 +5681,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Media\Tests\Unit\Actions;
 
 use Closure;
@@ -4884,6 +5735,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4893,6 +5745,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Media\Tests\Unit\Models;
 
 use Closure;
@@ -4945,6 +5799,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -4954,6 +5809,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests;
 
 use Closure;
@@ -5006,6 +5863,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5015,6 +5873,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Feature;
 
 use Closure;
@@ -5067,6 +5927,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5076,6 +5937,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Fixtures;
 
 use Closure;
@@ -5128,6 +5991,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5137,6 +6001,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit;
 
 use Closure;
@@ -5189,6 +6055,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5198,6 +6065,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions;
 
 use Closure;
@@ -5250,6 +6119,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5259,6 +6129,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions\Mail;
 
 use Closure;
@@ -5311,6 +6183,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5320,6 +6193,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme;
 
 use Closure;
@@ -5372,6 +6247,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5381,6 +6257,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme\Attachment;
 
 use Closure;
@@ -5433,6 +6311,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5442,6 +6321,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
 use Closure;
@@ -5494,6 +6375,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5503,6 +6385,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions\Telegram;
 
 use Closure;
@@ -5555,6 +6439,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5564,6 +6449,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp;
 
 use Closure;
@@ -5616,6 +6503,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5625,6 +6513,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Channels;
 
 use Closure;
@@ -5677,6 +6567,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5686,6 +6577,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Console;
 
 use Closure;
@@ -5738,6 +6631,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5747,6 +6641,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Console\Commands;
 
 use Closure;
@@ -5799,6 +6695,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5808,6 +6705,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Datas;
 
 use Closure;
@@ -5860,12 +6759,64 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
  * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
+=======
+namespace Modules\Notify\Tests\Unit\Datas\SMS;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+>>>>>>> 64619e34 (.)
 {
 }
 
@@ -5921,6 +6872,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5930,6 +6882,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Enums;
 
 use Closure;
@@ -5982,6 +6936,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -5991,6 +6946,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Factories;
 
 use Closure;
@@ -6043,6 +7000,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6052,6 +7010,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Filament\Actions;
 
 use Closure;
@@ -6104,6 +7064,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6113,6 +7074,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Filament\Forms\Components;
 
 use Closure;
@@ -6165,6 +7128,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6174,6 +7138,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Filament\Pages;
 
 use Closure;
@@ -6226,6 +7192,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6235,6 +7202,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Filament\Resources;
 
 use Closure;
@@ -6287,6 +7256,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6296,6 +7266,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Models;
 
 use Closure;
@@ -6348,6 +7320,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6357,6 +7330,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Models\Policies;
 
 use Closure;
@@ -6409,6 +7384,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6418,6 +7394,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Models\Traits;
 
 use Closure;
@@ -6470,6 +7448,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6479,6 +7458,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Notifications;
 
 use Closure;
@@ -6531,6 +7512,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6540,6 +7522,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Notifications\Channels;
 
 use Closure;
@@ -6592,6 +7576,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -6601,6 +7586,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Notify\Tests\Unit\Providers;
 
 use Closure;
@@ -6653,12 +7640,64 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
  * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
+=======
+namespace Modules\Notify\Tests\Unit\Services;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+>>>>>>> 64619e34 (.)
 {
 }
 
@@ -6714,6 +7753,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7272,6 +8312,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Rating\Tests;
 
 use Closure;
@@ -7324,12 +8366,64 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
  * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
+=======
+namespace Modules\Rating\Tests\Feature;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Rating\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Rating\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Rating\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Rating\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Rating\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+>>>>>>> 64619e34 (.)
 {
 }
 
@@ -7385,6 +8479,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7394,6 +8489,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests;
 
 use Closure;
@@ -7446,6 +8543,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7455,6 +8553,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Feature;
 
 use Closure;
@@ -7507,6 +8607,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7516,6 +8617,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Unit\Actions;
 
 use Closure;
@@ -7568,6 +8671,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7577,6 +8681,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Unit\Data;
 
 use Closure;
@@ -7629,6 +8735,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7638,6 +8745,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Unit\Facades;
 
 use Closure;
@@ -7690,6 +8799,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7699,6 +8809,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Unit\Filament\Widgets;
 
 use Closure;
@@ -7751,6 +8863,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7760,6 +8873,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Unit\Providers;
 
 use Closure;
@@ -7812,6 +8927,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7821,6 +8937,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Seo\Tests\Unit\Services;
 
 use Closure;
@@ -7873,6 +8991,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7882,6 +9001,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests;
 
 use Closure;
@@ -7934,6 +9055,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -7943,6 +9065,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Feature;
 
 use Closure;
@@ -7995,6 +9119,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8065,6 +9190,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Integration;
 
 use Closure;
@@ -8117,6 +9244,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8126,6 +9254,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Integration\Traits;
 
 use Closure;
@@ -8178,6 +9308,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8187,6 +9318,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Performance;
 
 use Closure;
@@ -8239,6 +9372,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8248,6 +9382,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit;
 
 use Closure;
@@ -8300,6 +9436,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8309,6 +9446,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit\Actions;
 
 use Closure;
@@ -8361,6 +9500,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8370,6 +9510,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit\Actions\Config;
 
 use Closure;
@@ -8422,6 +9564,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8492,6 +9635,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown;
 
 use Closure;
@@ -8544,6 +9689,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8553,6 +9699,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit\Actions\Models;
 
 use Closure;
@@ -8605,6 +9753,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8614,6 +9763,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit\Models;
 
 use Closure;
@@ -8666,6 +9817,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8675,6 +9827,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Tenant\Tests\Unit\Traits;
 
 use Closure;
@@ -8727,6 +9881,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8736,6 +9891,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests;
 
 use Closure;
@@ -8788,6 +9945,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8797,6 +9955,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Feature;
 
 use Closure;
@@ -8849,6 +10009,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8858,6 +10019,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Feature\Filament\Widgets;
 
 use Closure;
@@ -8910,6 +10073,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8919,6 +10083,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Support;
 
 use Closure;
@@ -8971,6 +10137,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -8980,6 +10147,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit;
 
 use Closure;
@@ -9032,6 +10201,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9041,6 +10211,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Components;
 
 use Closure;
@@ -9093,6 +10265,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9102,6 +10275,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Datas;
 
 use Closure;
@@ -9154,6 +10329,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9163,6 +10339,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Enums;
 
 use Closure;
@@ -9215,6 +10393,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9224,6 +10403,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
 use Closure;
@@ -9276,6 +10457,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9285,6 +10467,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Models;
 
 use Closure;
@@ -9337,6 +10521,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9407,6 +10592,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Widgets;
 
 use Closure;
@@ -9459,6 +10646,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9468,6 +10656,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\UI\Tests\Unit\Widgets\Fixtures;
 
 use Closure;
@@ -9520,6 +10710,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9529,6 +10720,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests;
 
 use Closure;
@@ -9581,6 +10774,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9590,6 +10784,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Fakes;
 
 use Closure;
@@ -9642,6 +10838,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9651,6 +10848,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature;
 
 use Closure;
@@ -9703,6 +10902,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9712,6 +10912,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Actions;
 
 use Closure;
@@ -9764,6 +10966,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9773,6 +10976,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Closure;
@@ -9825,6 +11030,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9834,6 +11040,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Authentication;
 
 use Closure;
@@ -9886,6 +11094,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9895,6 +11104,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Database\Migrations;
 
 use Closure;
@@ -9947,6 +11158,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -9956,6 +11168,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Filament;
 
 use Closure;
@@ -10008,6 +11222,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10017,6 +11232,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Filament\Actions;
 
 use Closure;
@@ -10069,6 +11286,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10078,6 +11296,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
 use Closure;
@@ -10130,6 +11350,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10139,6 +11360,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Closure;
@@ -10191,6 +11414,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10200,6 +11424,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
 use Closure;
@@ -10252,6 +11478,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10261,6 +11488,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Closure;
@@ -10313,12 +11542,64 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
  * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
+=======
+namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+>>>>>>> 64619e34 (.)
 {
 }
 
@@ -10374,6 +11655,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10383,6 +11665,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Feature\Passport;
 
 use Closure;
@@ -10435,6 +11719,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10505,6 +11790,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Traits;
 
 use Closure;
@@ -10557,6 +11844,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10566,6 +11854,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit;
 
 use Closure;
@@ -10618,6 +11908,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10627,6 +11918,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures;
 
 use Closure;
@@ -10679,6 +11972,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10688,6 +11982,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
 use Closure;
@@ -10740,6 +12036,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10749,6 +12046,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Database\Seeders;
 
 use Closure;
@@ -10801,6 +12100,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10810,6 +12110,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Datas;
 
 use Closure;
@@ -10862,6 +12164,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10871,6 +12174,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Events;
 
 use Closure;
@@ -10923,6 +12228,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10932,6 +12238,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Models;
 
 use Closure;
@@ -10984,6 +12292,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -10993,6 +12302,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Models\Fixtures;
 
 use Closure;
@@ -11045,12 +12356,64 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
  * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
+=======
+namespace Modules\User\Tests\Unit\Models\Traits;
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+>>>>>>> 64619e34 (.)
 {
 }
 
@@ -11106,6 +12469,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11115,6 +12479,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\QuickWins\Fixtures;
 
 use Closure;
@@ -11167,6 +12533,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11176,6 +12543,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Traits;
 
 use Closure;
@@ -11228,6 +12597,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11237,6 +12607,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\User\Tests\Unit\Traits\Fixtures;
 
 use Closure;
@@ -11289,6 +12661,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11298,6 +12671,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests;
 
 use Closure;
@@ -11350,6 +12725,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11359,6 +12735,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Feature;
 
 use Closure;
@@ -11411,6 +12789,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11420,6 +12799,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
 use Closure;
@@ -11472,6 +12853,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11481,6 +12863,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Feature\Filament;
 
 use Closure;
@@ -11533,6 +12917,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11542,6 +12927,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Feature\Filament\MockResourceWithRelations\RelationManagers;
 
 use Closure;
@@ -11594,6 +12981,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11603,6 +12991,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures;
 
 use Closure;
@@ -11655,6 +13045,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11664,6 +13055,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures\Enums;
 
 use Closure;
@@ -11716,6 +13109,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11725,6 +13119,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources;
 
 use Closure;
@@ -11777,6 +13173,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11786,6 +13183,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\Pages;
 
 use Closure;
@@ -11838,6 +13237,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11847,6 +13247,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\RelationManagers;
 
 use Closure;
@@ -11899,6 +13301,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11908,6 +13311,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures\Models;
 
 use Closure;
@@ -11960,6 +13365,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -11969,6 +13375,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Fixtures\Traits;
 
 use Closure;
@@ -12021,6 +13429,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12030,6 +13439,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Support;
 
 use Closure;
@@ -12081,6 +13492,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12090,6 +13502,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit;
 
 use Closure;
@@ -12142,6 +13556,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12151,6 +13566,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Closure;
@@ -12203,6 +13620,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12212,6 +13630,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Closure;
@@ -12264,6 +13684,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12273,6 +13694,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Actions\Blade;
 
 use Closure;
@@ -12325,6 +13748,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12334,6 +13758,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Closure;
@@ -12386,6 +13812,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12395,6 +13822,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Closure;
@@ -12447,6 +13876,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12456,6 +13886,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Closure;
@@ -12508,6 +13940,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12578,6 +14011,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Datas;
 
 use Closure;
@@ -12630,6 +14065,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12639,6 +14075,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Closure;
@@ -12691,6 +14129,7 @@ function uses(string ...$classes): void
 {
 }
 
+<<<<<<< HEAD
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
@@ -12700,6 +14139,8 @@ function skip(mixed ...$arguments): void
 {
 }
 
+=======
+>>>>>>> 64619e34 (.)
 namespace Modules\Xot\Tests\Unit\Support;
 
 use Closure;
@@ -12751,6 +14192,7 @@ function afterEach(Closure $closure): void
 function uses(string ...$classes): void
 {
 }
+<<<<<<< HEAD
 
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
@@ -12821,3 +14263,5 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
+=======
+>>>>>>> 64619e34 (.)

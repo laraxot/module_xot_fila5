@@ -172,4 +172,7 @@ _docs/
 *.orig
 *.rej
 *~headagentdb.rvf
+<<<<<<< HEAD
 audit-coverage/
+=======
+>>>>>>> 64619e34 (.)

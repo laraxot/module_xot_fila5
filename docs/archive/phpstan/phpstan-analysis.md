@@ -5,6 +5,9 @@
 **NON è stato modificato** `phpstan.neon`
 **NON è stato modificato** `phpstan.neon`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 **NON è stato modificato** `phpstan.neon`
 
 **NON è stato modificato** `phpstan.neon`
@@ -22,8 +25,11 @@
 
 **NON è stato modificato** `phpstan.neon`
 **NON è stato modificato** `phpstan.neon`
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 
 **NON è stato modificato** `phpstan.neon`
 
@@ -90,6 +96,7 @@ Accesso a proprietà non definite nei modelli.
 
 ### 3. **<nome modulo>** (Applicazione) - 15% errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### 3. **<nome modulo>** (Applicazione) - 15% errori
 
@@ -97,6 +104,11 @@ Accesso a proprietà non definite nei modelli.
 
 =======
 >>>>>>> a01602c7 (.)
+=======
+
+### 3. **<nome modulo>** (Applicazione) - 15% errori
+
+>>>>>>> 64619e34 (.)
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
 
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
@@ -107,6 +119,11 @@ Accesso a proprietà non definite nei modelli.
 
 ### 3. **<nome progetto>** (Applicazione) - 15% errori
 
+<<<<<<< HEAD
+=======
+### 3. **<nome progetto>** (Applicazione) - 15% errori
+
+>>>>>>> 64619e34 (.)
 - Risorse Filament
 - Modelli dominio
 - Widget personalizzati
@@ -139,12 +156,18 @@ Accesso a proprietà non definite nei modelli.
 1. `<nome modulo>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome modulo>/app/Models/*` - Proprietà e relazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 
 1. `<nome modulo>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome modulo>/app/Models/*` - Proprietà e relazioni
 
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 1. `<nome progetto>/app/Filament/Resources/*` - Form schemas e table columns
 2. `<nome progetto>/app/Models/*` - Proprietà e relazioni
 
@@ -172,6 +195,7 @@ Sistemare traits e contratti utilizzati in tutto il progetto.
 
 ### Fase 3: Applicazione (<nome modulo>, Geo, Cms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Fase 3: Applicazione (<nome modulo>, Geo, Cms)
 
@@ -179,6 +203,11 @@ Sistemare traits e contratti utilizzati in tutto il progetto.
 
 =======
 >>>>>>> a01602c7 (.)
+=======
+
+### Fase 3: Applicazione (<nome modulo>, Geo, Cms)
+
+>>>>>>> 64619e34 (.)
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
 
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
@@ -189,6 +218,11 @@ Sistemare traits e contratti utilizzati in tutto il progetto.
 
 ### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
 
+<<<<<<< HEAD
+=======
+### Fase 3: Applicazione (<nome progetto>, Geo, Cms)
+
+>>>>>>> 64619e34 (.)
 Correggere errori specifici dell'applicazione.
 
 ### Fase 4: Verifica Finale

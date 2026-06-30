@@ -9,6 +9,10 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\GetTransKeyAction;
+>>>>>>> 64619e34 (.)
 use Webmozart\Assert\Assert;
 
 trait TransTrait

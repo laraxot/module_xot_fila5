@@ -42,8 +42,12 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract                    $currentTeam
  * @property ProfileContract|null            $profile
  * @property Collection<int, UserRole>       $roles
+<<<<<<< HEAD
  * @property Collection<int, Team>           $membershipTeams
  * @property Collection<int, Model>          $teams
+=======
+ * @property Collection<int, Team>           $teams
+>>>>>>> 64619e34 (.)
  * @property Collection<int, Tenant>         $tenants
  *
  * @phpstan-require-extends Model
@@ -132,11 +136,17 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function roles(): BelongsToMany;
 
     /**
+<<<<<<< HEAD
      * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
      *
      * @return BelongsToMany<Model, $this>
      *
      * @phpstan-ignore generics.notSubtype
+=======
+     * Get the user's teams.
+     *
+     * @return BelongsToMany<Model, Model>
+>>>>>>> 64619e34 (.)
      */
     public function teams(): BelongsToMany;
 

@@ -22,9 +22,13 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+<<<<<<< HEAD
 use Modules\Xot\Actions\PaDesignColorsAction;
+=======
+>>>>>>> 64619e34 (.)
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
 
 use function Safe\realpath;
@@ -120,7 +124,11 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     public function registerPaFilamentColors(): void
     {
+<<<<<<< HEAD
         FilamentColor::register(app(PaDesignColorsAction::class)->filamentPalette());
+=======
+        FilamentColor::register(PaDesignColors::filamentPalette());
+>>>>>>> 64619e34 (.)
     }
 
     public function registerFilamentMacros(): void

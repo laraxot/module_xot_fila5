@@ -1,8 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> a01602c7 (.)
+=======
+
+
+>>>>>>> 64619e34 (.)
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

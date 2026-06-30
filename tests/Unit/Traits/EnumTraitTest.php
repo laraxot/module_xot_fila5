@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Traits;
-
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -52,6 +50,10 @@ it('adds columns to blueprint in create context', function (): void {
 });
 
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
+<<<<<<< HEAD
+=======
+    /** @var TestCase $this */
+>>>>>>> 64619e34 (.)
     $migration = $this->createUnitMock(XotBaseMigration::class);
     $migration->method('hasColumn')
         ->willReturnMap([
@@ -71,6 +73,10 @@ it('adds columns to blueprint in update context with hasColumn check', function 
 });
 
 it('updates columns calls columns', function (): void {
+<<<<<<< HEAD
+=======
+    /** @var TestCase $this */
+>>>>>>> 64619e34 (.)
     $column = $this->createUnitMock(Blueprint::class);
     $column->method('nullable')->willReturnSelf();
 
@@ -84,6 +90,10 @@ it('updates columns calls columns', function (): void {
 });
 
 it('drops columns', function (): void {
+<<<<<<< HEAD
+=======
+    /** @var TestCase $this */
+>>>>>>> 64619e34 (.)
     $table = $this->createUnitMock(Blueprint::class);
     $table->method('dropColumn')
         ->with(['alpha', 'beta']);

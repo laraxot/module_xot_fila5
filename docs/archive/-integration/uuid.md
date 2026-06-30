@@ -1,12 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 # _uuid
+=======
+>>>>>>> 64619e34 (.)
 
-<!-- Contenuto migrato da _docs/_uuid.txt -->
 
+<<<<<<< HEAD
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)

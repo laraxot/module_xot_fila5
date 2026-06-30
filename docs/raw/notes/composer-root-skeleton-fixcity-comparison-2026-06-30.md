@@ -11,6 +11,7 @@ source:
 
 # Confronto composer root FixCity vs Predict
 
+<<<<<<< HEAD
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
@@ -33,6 +34,24 @@ Root allineato e piu' stretto di FixCity:
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
+=======
+## Osservazione
+
+FixCity usa un root `composer.json` minimo:
+
+- `php`
+- `laravel/framework`
+- `nwidart/laravel-modules`
+- merge plugin su `Modules/*/composer.json`
+- autoload solo `App\\` e seeders root
+
+Predict aveva invece:
+
+- dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
+- `Modules\\` nell'autoload root;
+- merge di `Themes/*/composer.json`;
+- configurazione merge-plugin piu' ampia del necessario.
+>>>>>>> 64619e34 (.)
 
 ## Regola dedotta
 

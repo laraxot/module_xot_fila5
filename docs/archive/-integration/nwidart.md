@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 # _nwidart
@@ -9,4 +10,7 @@ https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3
 
 https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3
 >>>>>>> a01602c7 (.)
+=======
+
+>>>>>>> 64619e34 (.)
 

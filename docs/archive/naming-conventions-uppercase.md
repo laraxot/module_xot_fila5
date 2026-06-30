@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.
@@ -56,8 +59,11 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](./service-provider-best-practices.md)
 - [Best practice per Filament](./filament-best-practices.md)
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -69,6 +75,7 @@ Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzar
 - **PascalCase**: Prima lettera maiuscola, senza spazi o separatori (es. `UserProfile`)
   - Usato per: Nomi di classi, interfacce, enumerazioni, nomi dei moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 - **camelCase**: Prima lettera minuscola, senza spazi o separatori (es. `getUserProfile`)
   - Usato per: Metodi, funzioni, proprietà non statiche
@@ -78,13 +85,20 @@ Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzar
 
 =======
   
+=======
+
+>>>>>>> 64619e34 (.)
 - **camelCase**: Prima lettera minuscola, senza spazi o separatori (es. `getUserProfile`)
   - Usato per: Metodi, funzioni, proprietà non statiche
-  
+
 - **snake_case**: Tutte le lettere minuscole, parole separate da underscore (es. `user_profile`)
   - Usato per: Variabili, costanti di classe (non globali), nomi di file delle viste, tabelle del database, colonne del database
+<<<<<<< HEAD
   
 >>>>>>> a01602c7 (.)
+=======
+
+>>>>>>> 64619e34 (.)
 - **UPPER_SNAKE_CASE**: Tutte le lettere maiuscole, parole separate da underscore (es. `MAX_LOGIN_ATTEMPTS`)
   - Usato per: Costanti globali, enums
 
@@ -110,10 +124,14 @@ namespace Modules\NomeModulo;
 Il service provider principale di un modulo deve:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Avere il nome che termina con `ServiceProvider`
 =======
 1. Avere il nome che termina con `ServiceProvider` 
 >>>>>>> a01602c7 (.)
+=======
+1. Avere il nome che termina con `ServiceProvider`
+>>>>>>> 64619e34 (.)
 2. Estendere `XotBaseServiceProvider`
 3. Definire una proprietà `$name` con il nome del modulo in **PascalCase**
 

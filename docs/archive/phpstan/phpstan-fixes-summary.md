@@ -5,6 +5,9 @@
 **NON è stato modificato** `phpstan.neon`
 **NON è stato modificato** `phpstan.neon`
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 **NON è stato modificato** `phpstan.neon`
 
 **NON è stato modificato** `phpstan.neon`
@@ -22,8 +25,11 @@
 
 **NON è stato modificato** `phpstan.neon`
 **NON è stato modificato** `phpstan.neon`
+<<<<<<< HEAD
 =======
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 
 **NON è stato modificato** `phpstan.neon`
 
@@ -241,6 +247,7 @@ Questi errori non compromettono la funzionalità e possono essere risolti in una
 
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome modulo>, Geo, Cms, <main module>) sono completamente conformi al livello 9 di PHPStan.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome modulo>, Geo, Cms, <main module>) sono completamente conformi al livello 9 di PHPStan.
 
@@ -249,6 +256,10 @@ Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli
 =======
 >>>>>>> a01602c7 (.)
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <nome progetto>) sono completamente conformi al livello 9 di PHPStan.
+=======
+
+Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome modulo>, Geo, Cms, <main module>) sono completamente conformi al livello 9 di PHPStan.
+>>>>>>> 64619e34 (.)
 
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <nome progetto>) sono completamente conformi al livello 9 di PHPStan.
 
@@ -256,6 +267,13 @@ Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli
 
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <nome progetto>) sono completamente conformi al livello 9 di PHPStan.
 
+<<<<<<< HEAD
+=======
+Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <nome progetto>) sono completamente conformi al livello 9 di PHPStan.
+
+Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <nome progetto>) sono completamente conformi al livello 9 di PHPStan.
+
+>>>>>>> 64619e34 (.)
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <main module>) sono completamente conformi al livello 9 di PHPStan.
 
 Il progetto ha raggiunto un livello di type safety eccellente con il 99.1% degli errori PHPStan risolti. I moduli critici (Xot, User, <nome progetto>, Geo, Cms, <nome progetto>) sono completamente conformi al livello 9 di PHPStan.

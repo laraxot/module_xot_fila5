@@ -24,7 +24,12 @@ describe('Get Tenant Config Actions', function (): void {
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+<<<<<<< HEAD
         $mock->expects($this->expectsAtLeastOnce())
+=======
+        /* @phpstan-ignore-next-line */
+        $mock->expects($this->atLeastOnce())
+>>>>>>> 64619e34 (.)
             ->method('execute')
             ->with($configName.'.php')
             ->willReturn($tempPath);
@@ -43,7 +48,12 @@ describe('Get Tenant Config Actions', function (): void {
         $configName = 'non_existent';
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+<<<<<<< HEAD
         $mock->expects($this->expectsAtLeastOnce())
+=======
+        /* @phpstan-ignore-next-line */
+        $mock->expects($this->atLeastOnce())
+>>>>>>> 64619e34 (.)
             ->method('execute')
             ->willReturn('/path/to/nothing.php');
 

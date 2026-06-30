@@ -15,7 +15,12 @@ describe('Get Tenant Config Path Action', function (): void {
     test('delegates to tenant file path action with php filename', function (): void {
         /** @var TestCase $this */
         $tenantPathAction = $this->createUnitMock(GetTenantFilePathAction::class);
+<<<<<<< HEAD
         $tenantPathAction->expects($this->expectsAtLeastOnce())
+=======
+        /* @phpstan-ignore-next-line */
+        $tenantPathAction->expects($this->atLeastOnce())
+>>>>>>> 64619e34 (.)
             ->method('execute')
             ->with('mail.php')
             ->willReturn('/tmp/tenant/mail.php');

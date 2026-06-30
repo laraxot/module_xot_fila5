@@ -105,7 +105,11 @@ trait TransFuncTrait
             return $trans;
         }
 
+<<<<<<< HEAD
         if (null === $trans) {
+=======
+        if ($trans === null) {
+>>>>>>> 64619e34 (.)
             return static::persistGeneratedTransFuncLabel($key);
         }
 
