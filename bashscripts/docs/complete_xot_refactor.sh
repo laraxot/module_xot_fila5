@@ -199,7 +199,7 @@ class MyResource extends XotBaseResource
     /**
      * @return array<int, \Filament\Schemas\Components\Component>
      */
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return [
             TextInput::make('name'),
