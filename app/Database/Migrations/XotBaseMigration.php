@@ -13,8 +13,13 @@ use Illuminate\Database\Schema\ForeignIdColumnDefinition;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+
+use function Safe\copy;
+
 use Webmozart\Assert\Assert;
 
 /**
@@ -93,13 +98,6 @@ abstract class XotBaseMigration extends LaravelMigration
         }
 
         return Schema::connection($connectionName);
-    }
-
-    protected function isMysqlFamilyDriver(?string $driver = null): bool
-    {
-        $driver ??= DB::connection($this->model->getConnectionName())->getDriverName();
-
-        return in_array($driver, ['mysql', 'mariadb'], true);
     }
 
     /**
@@ -283,31 +281,16 @@ abstract class XotBaseMigration extends LaravelMigration
     protected function extractPrimaryKeyCount(mixed $result): int
     {
         if (is_array($result)) {
-            return isset($result['count']) ? (int) $result['count'] : 0;
+            return isset($result['count']) ? SafeIntCastAction::cast($result['count']) : 0;
         }
 
         if (is_object($result)) {
             $resultAsArray = (array) $result;
 
-            return isset($resultAsArray['count']) ? (int) $resultAsArray['count'] : 0;
+            return isset($resultAsArray['count']) ? SafeIntCastAction::cast($resultAsArray['count']) : 0;
         }
 
         return 0;
-    }
-
-    public function timestamps(Blueprint $table, bool $hasSoftDeletes = false): void
-    {
-        $xot = XotData::make();
-        $userClass = $xot->getUserClass();
-
-        $table->timestamps();
-        $table->foreignIdFor($userClass, 'user_id')->nullable();
-        $table->foreignIdFor($userClass, 'updated_by')->nullable();
-        $table->foreignIdFor($userClass, 'created_by')->nullable();
-
-        if ($hasSoftDeletes) {
-            $table->softDeletes();
-        }
     }
 
     public function updateTimestamps(Blueprint $table, bool $hasSoftDeletes = false): void
@@ -549,7 +532,7 @@ abstract class XotBaseMigration extends LaravelMigration
                     $data[$c] = $row->{$c};
                 }
             }
-            $this->uuidToBigintIdMapping[(string) $row->id] = $newId;
+            $this->uuidToBigintIdMapping[SafeStringCastAction::cast($row->id)] = $newId;
             $conn->table($newTable)->insert($data);
             ++$newId;
         }
@@ -562,11 +545,11 @@ abstract class XotBaseMigration extends LaravelMigration
 
         foreach ($rows as $p) {
             $p = (object) $p;
-            $newId = $this->uuidToBigintIdMapping[(string) $p->id] ?? null;
+            $newId = $this->uuidToBigintIdMapping[SafeStringCastAction::cast($p->id)] ?? null;
             if (null !== $newId) {
                 $conn->table($pivotTable)
                     ->where($fkColumn, $p->id)
-                    ->update([$fkColumn => (string) $newId]);
+                    ->update([$fkColumn => SafeStringCastAction::cast($newId)]);
             }
         }
 
@@ -579,7 +562,7 @@ abstract class XotBaseMigration extends LaravelMigration
                 [$db, $pivotTable, '%'.$fkColumn.'%']
             );
             $constraintName = is_object($constraint) && isset($constraint->CONSTRAINT_NAME)
-                ? (string) $constraint->CONSTRAINT_NAME
+                ? SafeStringCastAction::cast($constraint->CONSTRAINT_NAME)
                 : null;
             if (null !== $constraintName) {
                 $conn->statement('ALTER TABLE '.$pivotTable.' DROP INDEX '.$constraintName);

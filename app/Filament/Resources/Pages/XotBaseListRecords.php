@@ -28,8 +28,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     use HasXotTable;
 
-    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
-
     /**
      * Get the resource class name.
      *
@@ -65,8 +63,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
      * @return array<string, Action|ActionGroup>
-     *
-     * @phpstan-ignore method.childReturnType
      */
     protected function getHeaderActions(): array
     {
@@ -77,6 +73,10 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * Paginate the table query.
+     *
+     * @param Builder<\Illuminate\Database\Eloquent\Model> $query
+     *
+     * @return Paginator<int, \Illuminate\Database\Eloquent\Model>
      */
     protected function paginateTableQueryOLD(Builder $query): Paginator
     {

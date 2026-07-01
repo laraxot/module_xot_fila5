@@ -10,7 +10,10 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\strtotime;
 
@@ -101,11 +104,11 @@ class FilterBuilder
                 return $query
                     ->when(
                         $data['from'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
                     )
                     ->when(
                         $data['until'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -117,20 +120,20 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
-                    $fromStr = is_string($from) ? $from : (string) $from;
-                    $untilStr = is_string($until) ? $until : (string) $until;
+                    $fromStr = SafeStringCastAction::cast($from);
+                    $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
-                    $fromStr = is_string($from) ? $from : (string) $from;
+                    $fromStr = SafeStringCastAction::cast($from);
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
-                    $untilStr = is_string($until) ? $until : (string) $until;
+                    $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -260,11 +263,6 @@ class FilterBuilder
 
     /**
      * Trashed filter (for SoftDeletes).
-     *
-     * Note: This filter assumes the model uses SoftDeletes trait.
-     * PHPStan may not recognize withTrashed/onlyTrashed methods on base Builder.
-     *
-     * @phpstan-ignore-next-line
      */
     public static function trashedFilter(): TernaryFilter
     {
@@ -274,12 +272,38 @@ class FilterBuilder
             ->trueLabel('Only trashed')
             ->falseLabel('Without trashed')
             ->queries(
-                /* @phpstan-ignore-next-line */
-                true: fn (Builder $query) => $query->onlyTrashed(),
-                /* @phpstan-ignore-next-line */
-                false: fn (Builder $query) => $query->withoutTrashed(),
-                /* @phpstan-ignore-next-line */
-                blank: fn (Builder $query) => $query->withTrashed(),
+                true: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'only'),
+                false: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'without'),
+                blank: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'with'),
             );
+    }
+
+    /**
+     * @param Builder<Model> $query
+     */
+    private static function modelUsesSoftDeletes(Builder $query): bool
+    {
+        return in_array(SoftDeletes::class, class_uses_recursive($query->getModel()), true);
+    }
+
+    /**
+     * @param Builder<Model> $query
+     *
+     * @return Builder<Model>
+     */
+    private static function applyTrashedQuery(Builder $query, string $mode): Builder
+    {
+        if (! self::modelUsesSoftDeletes($query)) {
+            return $query;
+        }
+
+        $column = $query->getModel()->qualifyColumn('deleted_at');
+        $query = $query->withoutGlobalScope(SoftDeletingScope::class);
+
+        return match ($mode) {
+            'only' => $query->whereNotNull($column),
+            'without' => $query->whereNull($column),
+            default => $query,
+        };
     }
 }

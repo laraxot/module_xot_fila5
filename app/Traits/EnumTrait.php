@@ -33,6 +33,17 @@ trait EnumTrait
         return $this->transClass(static::class, 'values.'.$this->value.'.description');
     }
 
+    public function getTooltip(): string
+    {
+        return $this->transClass(self::class, 'values.'.$this->value.'.tooltip');
+    }
+
+    public function getHelperText(): string
+    {
+        return $this->transClass(self::class, 'values.'.$this->value.'.helper_text');
+    }
+
+
     /**
      * @return array<string>
      */
@@ -111,7 +122,7 @@ trait EnumTrait
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
             if (null === $migration || ! $migration->hasColumn($name)) {
-                $definition($table);
+                $definition($table); // @phpstan-ignore callable.nonCallable
             }
         }
     }
@@ -139,7 +150,7 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
-        return array_map(fn ($case) => (string) $case->value, static::cases());
+        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
     }
 
     /**
@@ -153,13 +164,13 @@ trait EnumTrait
         return [];
     }
 
+    /** @return array<int|string, string> */
     public static function toArray(): array
     {
         $cases = static::cases();
         $result = [];
         foreach ($cases as $item) {
-            $name = (string) $item->value;
-            $result[$name] = $item->getLabel();
+            $result[(string) $item->value] = (string) $item->getLabel();
         }
 
         return $result;
