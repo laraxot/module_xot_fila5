@@ -15,6 +15,7 @@ use Modules\Geo\Phpstan\GeoTraitPhpstanProbe;
 use Modules\Geo\Phpstan\HasAddressesPhpstanProbe;
 use Modules\Geo\Phpstan\HasAddressPhpstanProbe;
 use Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe;
+use Modules\Job\Phpstan\FormatSecondsPhpstanProbe;
 use Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe;
 use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -323,6 +324,7 @@ if (! function_exists('xotPhpstanTraitProbeClasses')) {
             HasCommonScopesPhpstanProbe::class,
             HasCustomRelationsPhpstanProbe::class,
             HasSchemalessAttributesPhpstanProbe::class,
+            FormatSecondsPhpstanProbe::class,
         ];
     }
 }
