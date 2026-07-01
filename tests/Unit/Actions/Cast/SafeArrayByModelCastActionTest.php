@@ -15,7 +15,7 @@ uses(TestCase::class);
 
 describe('Safe Array By Model Cast Action', function (): void {
     test('converts model attributes to array correctly', function (): void {
-        $model = new Activity;
+        $model = new Activity();
         $model->setRawAttributes(['name' => 'Test']);
 
         $action = app(SafeArrayByModelCastAction::class);
