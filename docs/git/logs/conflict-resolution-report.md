@@ -43,6 +43,10 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - Mantenuta la coerenza con la documentazione `@psalm-return`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+**Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+>>>>>>> laraxot/dev
 =======
 **Documentazione correlata**: [CONFLITTI_MERGE_RISOLTI.md](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 >>>>>>> laraxot/dev
@@ -87,6 +91,10 @@ Questo documento descrive le risoluzioni applicate ai file con conflitti git ide
 - [Risoluzione conflitti git generale](risoluzione_conflitti.md)
 - [Documentazione conflitti Modulo Xot](../conflicts/model_with_pos_contract_resolution.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- [Documentazione conflitti Modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
+>>>>>>> laraxot/dev
 =======
 - [Documentazione conflitti Modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
 >>>>>>> laraxot/dev
@@ -104,7 +112,11 @@ I file modificati sono stati analizzati con particolare attenzione a:
 ## Conclusioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tutti i conflitti git identificati sono stati risolti con successo, ripristinando la coerenza del codice e mantenendo le convenzioni del progetto. È stata data priorità alla qualità del codice, alla tipizzazione forte e alla documentazione adeguata.
+=======
+Tutti i conflitti git identificati sono stati risolti con successo, ripristinando la coerenza del codice e mantenendo le convenzioni del progetto. È stata data priorità alla qualità del codice, alla tipizzazione forte e alla documentazione adeguata.
+>>>>>>> laraxot/dev
 =======
 Tutti i conflitti git identificati sono stati risolti con successo, ripristinando la coerenza del codice e mantenendo le convenzioni del progetto. È stata data priorità alla qualità del codice, alla tipizzazione forte e alla documentazione adeguata.
 >>>>>>> laraxot/dev

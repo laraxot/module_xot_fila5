@@ -20,7 +20,10 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Actions\Filament\GetPanelsNavigationItems;
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
@@ -103,8 +106,12 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
             ]);
         $navs = app(GetModulesNavigationItems::class)->execute();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $navs1 = app(GetPanelsNavigationItems::class)->execute();
         $panel->navigationItems($navs1);
+=======
+        $panel->navigationItems($navs);
+>>>>>>> laraxot/dev
 =======
         $panel->navigationItems($navs);
 >>>>>>> laraxot/dev

@@ -295,7 +295,11 @@ if (! function_exists('params2ContainerItem')) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (isset($matches[1], $matches[2])) {
+=======
+            if (! empty($matches)) {
+>>>>>>> laraxot/dev
 =======
             if (! empty($matches)) {
 >>>>>>> laraxot/dev

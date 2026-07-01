@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -106,6 +107,8 @@ test('handles errors gracefully', function () {
     chmod($nonWritableDir, 0o755);
 });
 =======
+=======
+>>>>>>> laraxot/dev
 |<|?|p|h|p|
 |
 |d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
@@ -212,5 +215,9 @@ test('handles errors gracefully', function () {
 | | | | |/|/| |R|e|s|t|o|r|e| |p|e|r|m|i|s|s|i|o|n|s|
 | | | | |c|h|m|o|d|(|$|n|o|n|W|r|i|t|a|b|l|e|D|i|r|,| |0|o|7|5|5|)|;|
 |}|)|;|
+<<<<<<< HEAD
+|
+>>>>>>> laraxot/dev
+=======
 |
 >>>>>>> laraxot/dev
