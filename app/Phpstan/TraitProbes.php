@@ -20,7 +20,7 @@ abstract class XotPhpstanProbeModel extends XotBaseModel
 }
 
 /**
- * @property bool|null $is_active
+ * @property bool|null   $is_active
  * @property Carbon|null $published_at
  */
 final class HasCommonScopesPhpstanProbe extends XotPhpstanProbeModel

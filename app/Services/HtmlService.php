@@ -30,6 +30,7 @@ use Spipu\Html2Pdf\Html2Pdf;
 class HtmlService
 {
     use QueueableAction;
+
     public static function toPdf(
         string $html,
         string $out = 'show',
