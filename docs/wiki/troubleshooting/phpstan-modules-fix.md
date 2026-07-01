@@ -3,21 +3,26 @@ title: "PHPStan Modules Fix 2026-05-05"
 type: troubleshooting
 sources: ["phpstan-full.txt"]
 confidence: verified
-created: 2026-05-05
-updated: 2026-05-05
-tags: [phpstan, modules, fix, safe-functions, type-declarations]
+updated: 2026-06-30
+tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
-  - concepts/why-xotbaseresourceform-superior.md
+  - concepts/phpstan-level10.md
+  - concepts/phpstan-trait-probes.md
+  - concepts/xot-seed-model-once.md
+qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
 
 # PHPStan Modules Fix - 2026-05-05
 
 ## Issue Summary
 
-Esecuzione di `php vendor/bin/phpstan analyse Modules --level=5` ha rilevato **24 errori** iniziali, ridotti a **5 errori** dopo fix sistematici.
+```bash
+cd laravel && ./vendor/bin/phpstan clear-result-cache
+cd laravel && ./vendor/bin/phpstan analyse Modules
+```
 
-## Errori Classificati
+Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non modificare** `phpstan.neon` — fix solo su codice PHP/test.
 
 ### 1. Missing Dependencies (Ignored in phpstan.neon)
 - `class.notFound` per `Spatie\LaravelPdf\*`, `Fidum\EloquentMorphToOne\*` (non installate)
@@ -28,8 +33,50 @@ Esecuzione di `php vendor/bin/phpstan analyse Modules --level=5` ha rilevato **2
 - `MakePdfSpatieTestAction.php`: aggiunto `use function Safe\base64_decode;`
 - `SocialiteProviderSettingsPage.php`: aggiunto `use function Safe\chmod;`
 
-### 3. Type Mismatch in PHPDoc (Fixed ✅)
-- `SocialiteProviderSettingsPage.php`: corretto annotazioni `@var array<string, array<string, mixed>>` → `@var array<string, mixed>` per `$google`, `$github`, `$microsoft`
+## Fix strutturali (ponytail — una guard condivisa)
+
+### Seeders — `xotSeedModelOnce()`
+
+~100+ errori `method.nonObject` su `Model::factory()->count(1)->create()` in entity seeders.
+
+**SSoT:** `xotSeedModelOnce(string $modelClass)` in `Modules/Xot/helpers/Helper.php` → delega a `GetFactoryAction`.
+
+```php
+// ❌ PHPStan non risolve la catena factory su stringhe dinamiche
+Article::factory()->count(1)->create();
+
+// ✅
+xotSeedModelOnce(Article::class);
+```
+
+### Pest — stub globali + bridge namespace
+
+| Componente | Path | Ruolo |
+|------------|------|-------|
+| Stub globali | `Helper.php` | `expect`, `it`, `test`, `uses`, `beforeEach`, … |
+| `PestUsesChain` | `Xot/tests/Support/PestUsesChain.php` | `uses(...)->beforeEach()` tipizzato |
+| Bridge per modulo | `Xot/tests/Support/PestFunctionBridge.php` | `uses()` → `PestUsesChain` per 192 namespace |
+
+Rigenerazione bridge:
+
+```bash
+php bashscripts/tools/generate-pest-phpstan-bridge.php
+php bashscripts/tools/fix-pest-phpstan-test-patterns.php
+```
+
+### Factory — `HasXotFactory`
+
+`newFactory()` annotato `@return TFactory` per risolvere la catena generica sui modelli Xot.
+
+### Trait probe Notify
+
+`Modules/Notify/app/Phpstan/HasContactPhpstanProbe.php` registrato in `xotPhpstanTraitProbeClasses()` (valori `::class`, non stringhe).
+
+### Test mock User — `RelationX`
+
+`MockUserWithTeams` (test) deve `use RelationX` se usa `HasTeams` (metodo `belongsToManyX`).
+
+## Blocker bootstrap risolti (sessioni precedenti)
 
 ### 4. Return Type Covariance (Open)
 - `LanguageSwitcherWidget.php`: `getAvailableLocales()` e `getDefaultLanguages()` ritornano `Collection<int, array{}>` ma PHPDoc dichiara tipo più specifico

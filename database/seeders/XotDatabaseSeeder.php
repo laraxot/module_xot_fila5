@@ -17,8 +17,31 @@ class XotDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Model::unguard();
+        if ($this->command !== null) {
 
-        // $this->call("OthersTableSeeder");
+            $this->command->info('XotDatabaseSeeder: entity seeders…');
+
+        }
+
+        $this->call([
+            CacheSeeder::class,
+            CacheLockSeeder::class,
+            ExtraSeeder::class,
+            FeedSeeder::class,
+            HealthCheckResultHistoryItemSeeder::class,
+            InformationSchemaTableSeeder::class,
+            LogSeeder::class,
+            ModuleSeeder::class,
+            PulseAggregateSeeder::class,
+            PulseEntrySeeder::class,
+            PulseValueSeeder::class,
+            SessionSeeder::class,
+        ]);
+
+        if ($this->command !== null) {
+
+            $this->command->info('XotDatabaseSeeder: completato.');
+
+        }
     }
 }
