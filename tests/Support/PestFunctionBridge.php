@@ -26,32 +26,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\AI\Tests\Support;
 
@@ -67,32 +79,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\AI\Tests\Unit\Actions;
 
@@ -108,32 +132,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\AI\Tests\Unit\Services;
 
@@ -149,32 +185,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests;
 
@@ -189,32 +237,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Feature;
 
@@ -230,32 +290,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Fixtures;
 
@@ -271,32 +343,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit;
 
@@ -312,32 +396,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit\Actions;
 
@@ -353,32 +449,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit\Events;
 
@@ -394,32 +502,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit\Listeners;
 
@@ -435,32 +555,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit\Models;
 
@@ -476,32 +608,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit\Providers;
 
@@ -517,32 +661,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Activity\Tests\Unit\Traits;
 
@@ -558,32 +714,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests;
 
@@ -598,32 +766,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Feature;
 
@@ -639,32 +819,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Feature\Auth;
 
@@ -680,32 +872,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Feature\Frontoffice;
 
@@ -721,32 +925,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes;
 
@@ -762,32 +978,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Unit\Actions;
 
@@ -803,32 +1031,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Unit\Http\Volt;
 
@@ -844,32 +1084,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Unit\Models;
 
@@ -885,32 +1137,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Cms\Tests\Unit\Support;
 
@@ -926,32 +1190,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Comment\Tests;
 
@@ -966,32 +1242,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Comment\Tests\Fixtures\Concerns;
 
@@ -1007,32 +1295,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Comment\Tests\Support;
 
@@ -1048,32 +1348,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests;
 
@@ -1088,32 +1400,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Feature;
 
@@ -1129,32 +1453,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Feature\Auth;
 
@@ -1170,32 +1506,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Fixtures;
 
@@ -1211,32 +1559,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Unit\Actions;
 
@@ -1252,32 +1612,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Unit\Filament\Resources;
 
@@ -1293,32 +1665,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Unit\Models;
 
@@ -1334,32 +1718,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Unit\Providers;
 
@@ -1375,32 +1771,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Gdpr\Tests\Unit\Traits;
 
@@ -1416,32 +1824,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests;
 
@@ -1456,32 +1876,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Feature;
 
@@ -1497,32 +1929,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Feature\Filament\Forms\Components;
 
@@ -1538,32 +1982,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Fixtures;
 
@@ -1579,32 +2035,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Fixtures\Traits;
 
@@ -1620,32 +2088,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Support;
 
@@ -1661,32 +2141,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit;
 
@@ -1702,32 +2194,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions;
 
@@ -1743,32 +2247,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\Bing;
 
@@ -1784,32 +2300,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\Elevation;
 
@@ -1825,32 +2353,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\GoogleMaps;
 
@@ -1866,32 +2406,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\Here;
 
@@ -1907,32 +2459,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\IPGeolocation;
 
@@ -1948,32 +2512,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\LocationIQ;
 
@@ -1989,32 +2565,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\Mapbox;
 
@@ -2030,32 +2618,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Actions\Nominatim;
 
@@ -2071,32 +2671,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\DataTransferObjects;
 
@@ -2112,32 +2724,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Datas;
 
@@ -2153,32 +2777,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Enums;
 
@@ -2194,32 +2830,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Filament;
 
@@ -2235,32 +2883,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Filament\Forms;
 
@@ -2276,32 +2936,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Filament\Forms\Components;
 
@@ -2317,32 +2989,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Filament\Widgets;
 
@@ -2358,32 +3042,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Models;
 
@@ -2399,32 +3095,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Models\Policies;
 
@@ -2440,32 +3148,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Services;
 
@@ -2481,32 +3201,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Traits;
 
@@ -2522,32 +3254,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Geo\Tests\Unit\Transformers;
 
@@ -2563,32 +3307,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Lang\Tests;
 
@@ -2603,32 +3359,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Lang\Tests\Unit\Actions;
 
@@ -2644,32 +3412,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Lang\Tests\Unit\Models;
 
@@ -2685,32 +3465,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Media\Tests;
 
@@ -2725,32 +3517,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Media\Tests\Feature;
 
@@ -2766,32 +3570,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Media\Tests\Filament\Resources;
 
@@ -2807,32 +3623,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Media\Tests\Unit\Actions;
 
@@ -2848,32 +3676,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Media\Tests\Unit\Models;
 
@@ -2889,32 +3729,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests;
 
@@ -2929,32 +3781,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Feature;
 
@@ -2970,32 +3834,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Fixtures;
 
@@ -3011,32 +3887,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit;
 
@@ -3052,32 +3940,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions;
 
@@ -3093,32 +3993,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions\Mail;
 
@@ -3134,32 +4046,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme;
 
@@ -3175,32 +4099,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme\Attachment;
 
@@ -3216,32 +4152,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
@@ -3257,32 +4205,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions\Telegram;
 
@@ -3298,32 +4258,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp;
 
@@ -3339,32 +4311,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Channels;
 
@@ -3380,32 +4364,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Console;
 
@@ -3421,32 +4417,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Console\Commands;
 
@@ -3462,32 +4470,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Datas;
 
@@ -3503,32 +4523,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Datas\SMS;
 
@@ -3544,32 +4576,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Emails;
 
@@ -3585,32 +4629,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Enums;
 
@@ -3626,32 +4682,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Factories;
 
@@ -3667,32 +4735,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Filament\Actions;
 
@@ -3708,32 +4788,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Filament\Forms\Components;
 
@@ -3749,32 +4841,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Filament\Pages;
 
@@ -3790,32 +4894,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Filament\Resources;
 
@@ -3831,32 +4947,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Models;
 
@@ -3872,32 +5000,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Models\Policies;
 
@@ -3913,32 +5053,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Models\Traits;
 
@@ -3954,32 +5106,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Notifications;
 
@@ -3995,32 +5159,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Notifications\Channels;
 
@@ -4036,32 +5212,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Providers;
 
@@ -4077,32 +5265,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Services;
 
@@ -4118,32 +5318,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Notify\Tests\Unit\Traits;
 
@@ -4159,32 +5371,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests;
 
@@ -4199,32 +5423,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Feature;
 
@@ -4240,32 +5476,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Feature\Predict;
 
@@ -4281,32 +5529,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Feature\PredictiveMarkets;
 
@@ -4322,32 +5582,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Feature\Seeders;
 
@@ -4363,32 +5635,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Unit;
 
@@ -4404,32 +5688,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Unit\Actions;
 
@@ -4445,32 +5741,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Unit\Actions\CalculateLmsrQuantity;
 
@@ -4486,32 +5794,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Predict\Tests\Unit\Projectors;
 
@@ -4527,32 +5847,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Rating\Tests;
 
@@ -4567,32 +5899,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Rating\Tests\Feature;
 
@@ -4608,32 +5952,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Rating\Tests\Unit;
 
@@ -4649,32 +6005,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests;
 
@@ -4689,32 +6057,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Feature;
 
@@ -4730,32 +6110,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Fixtures\Traits;
 
@@ -4771,32 +6163,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Integration;
 
@@ -4812,32 +6216,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Integration\Traits;
 
@@ -4853,32 +6269,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Performance;
 
@@ -4894,32 +6322,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit;
 
@@ -4935,32 +6375,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Actions;
 
@@ -4976,32 +6428,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Actions\Config;
 
@@ -5017,32 +6481,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Actions\Domains;
 
@@ -5058,32 +6534,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown;
 
@@ -5099,32 +6587,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Actions\Models;
 
@@ -5140,32 +6640,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Models;
 
@@ -5181,32 +6693,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Tenant\Tests\Unit\Traits;
 
@@ -5222,32 +6746,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests;
 
@@ -5262,32 +6798,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Feature;
 
@@ -5303,32 +6851,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Feature\Filament\Widgets;
 
@@ -5344,32 +6904,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Support;
 
@@ -5385,32 +6957,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit;
 
@@ -5426,32 +7010,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Components;
 
@@ -5467,32 +7063,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Datas;
 
@@ -5508,32 +7116,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Enums;
 
@@ -5549,32 +7169,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Filament\Widgets;
 
@@ -5590,32 +7222,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Models;
 
@@ -5631,32 +7275,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Traits;
 
@@ -5672,32 +7328,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Widgets;
 
@@ -5713,32 +7381,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\UI\Tests\Unit\Widgets\Fixtures;
 
@@ -5754,32 +7434,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests;
 
@@ -5794,32 +7486,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Fakes;
 
@@ -5835,32 +7539,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature;
 
@@ -5876,32 +7592,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Actions;
 
@@ -5917,32 +7645,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Actions\Socialite;
 
@@ -5958,32 +7698,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Authentication;
 
@@ -5999,32 +7751,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Database\Migrations;
 
@@ -6040,32 +7804,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament;
 
@@ -6081,32 +7857,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament\Actions;
 
@@ -6122,32 +7910,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
@@ -6163,32 +7963,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
@@ -6204,32 +8016,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
@@ -6245,32 +8069,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
@@ -6286,32 +8122,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
 
@@ -6327,32 +8175,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Models;
 
@@ -6368,32 +8228,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Feature\Passport;
 
@@ -6409,32 +8281,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Support;
 
@@ -6450,32 +8334,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Traits;
 
@@ -6491,32 +8387,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit;
 
@@ -6532,32 +8440,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures;
 
@@ -6573,32 +8493,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
@@ -6614,32 +8546,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Database\Seeders;
 
@@ -6655,32 +8599,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Datas;
 
@@ -6696,32 +8652,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Events;
 
@@ -6737,32 +8705,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Models;
 
@@ -6778,32 +8758,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Models\Fixtures;
 
@@ -6819,32 +8811,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Models\Traits;
 
@@ -6860,32 +8864,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Models\Traits\Fixtures;
 
@@ -6901,32 +8917,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\QuickWins\Fixtures;
 
@@ -6942,32 +8970,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Traits;
 
@@ -6983,32 +9023,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\User\Tests\Unit\Traits\Fixtures;
 
@@ -7024,32 +9076,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests;
 
@@ -7064,32 +9128,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Feature;
 
@@ -7105,32 +9181,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
@@ -7146,32 +9234,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Feature\Filament;
 
@@ -7187,32 +9287,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Feature\Filament\MockResourceWithRelations\RelationManagers;
 
@@ -7228,32 +9340,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures;
 
@@ -7269,32 +9393,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures\Enums;
 
@@ -7310,32 +9446,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources;
 
@@ -7351,32 +9499,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\Pages;
 
@@ -7392,32 +9552,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\RelationManagers;
 
@@ -7433,32 +9605,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures\Models;
 
@@ -7474,32 +9658,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Fixtures\Traits;
 
@@ -7515,32 +9711,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Support;
 
@@ -7555,32 +9763,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit;
 
@@ -7596,32 +9816,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
@@ -7637,32 +9869,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
@@ -7678,32 +9922,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\Blade;
 
@@ -7719,32 +9975,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
@@ -7760,32 +10028,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
@@ -7801,32 +10081,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
@@ -7842,32 +10134,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Datas;
 
@@ -7883,32 +10187,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Filament;
 
@@ -7924,32 +10240,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Support;
 
@@ -7965,32 +10293,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Actions\Model;
 
@@ -8006,32 +10346,44 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
 
 namespace Modules\Xot\Tests\Unit\Traits;
 
@@ -8047,29 +10399,41 @@ function expect(mixed $value = null): PestExpectation
 /**
  * @param-closure-this TestCase $closure
  */
-function test(string $description, ?Closure $closure = null): void {}
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function it(string $description, ?Closure $closure = null): void {}
+function it(string $description, ?Closure $closure = null): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function describe(string $description, Closure $closure): void {}
+function describe(string $description, Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function beforeEach(Closure $closure): void {}
+function beforeEach(Closure $closure): void
+{
+}
 
 /**
  * @param-closure-this TestCase $closure
  */
-function afterEach(Closure $closure): void {}
+function afterEach(Closure $closure): void
+{
+}
 
 /**
- * @param  class-string  ...$classes
+ * @param class-string ...$classes
  */
-function uses(string ...$classes): void {}
+function uses(string ...$classes): void
+{
+}
