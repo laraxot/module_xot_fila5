@@ -67,9 +67,7 @@ final class PanelModuleSupport
     public static function navigationLabel(Panel $panel): string
     {
         $name = Arr::get(self::moduleConfig($panel), 'name');
-        if (! is_string($name) || '' === $name) {
-            return self::moduleName($panel);
-        }
+        Assert::string($name, sprintf('[%s] module config missing name', $panel->getId()));
 
         return $name;
     }
@@ -77,9 +75,7 @@ final class PanelModuleSupport
     public static function navigationIcon(Panel $panel): string
     {
         $icon = Arr::get(self::moduleConfig($panel), 'icon');
-        if (! is_string($icon) || '' === $icon) {
-            return 'heroicon-o-cube';
-        }
+        Assert::string($icon, sprintf('[%s] module config missing icon', $panel->getId()));
 
         return $icon;
     }
