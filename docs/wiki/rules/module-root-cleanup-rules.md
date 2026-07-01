@@ -1,64 +1,46 @@
 ---
-title: "Module Root Cleanup Rules"
+title: "Module root cleanup rules"
 type: rule
-tags: [module, structure, cleanup, naming]
+tags: [module, structure, cleanup, naming, root-hygiene]
 created: 2026-01-21
 updated: 2026-07-01
-qmd: module root no txt files no uppercase folders only readme nwidart sacred manifest never delete
+qmd: "module root no txt files no uppercase folders only readme"
 issues: []
 discussions: []
 related:
-  - ../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
-  - ../../../../../../docs/wiki/memories/nwidart-sacred-manifests-incident.md
+  - ../../../../../../docs/wiki/memories/module-root-hygiene.md
+  - ../concepts/module-root-uppercase-folders-archive.md
 ---
 
-# Module Root Cleanup Rules
+# Module root cleanup rules
 
-## Regole obbligatorie per la root dei moduli
+## Root `laravel/Modules/<Modulo>/`
 
-### File .txt
-- **VIETATO**: Nessun file `.txt` nella root del modulo
-- Tutti i file `.txt` devono essere rimossi o convertiti in `.md` e spostati in `docs/`
+### File `.txt`
 
-### File .md
-- **OBBLIGATORIO**: Solo `README.md` nella root del modulo
-- Tutti gli altri file `.md` devono essere:
-  1. Studiati e valutati
-  2. Sistematizzati (aggiunto frontmatter se necessario)
-  3. Spostati in `docs/` (preferibilmente `docs/wiki/` per documentazione conoscenza)
+- **Vietato** nella root
+- Spostare in `docs/raw/root-import/` (nome lowercase) o convertire in `.md` se è conoscenza da wiki
 
-### Cartelle con caratteri maiuscoli
-- **VIETATO**: Nessuna cartella con caratteri maiuscoli nella root del modulo
-- Tutte le cartelle devono essere lowercase con underscore o dash (es. `app/`, `database/`, `config/`)
-- Cartelle con maiuscole devono essere eliminate o rinominate in lowercase
+### File `.md`
 
-## Mai toccare (nwidart)
+- **Solo** `README.md` in root
+- Tutti gli altri: studiare → sistemare (frontmatter se wiki) → `docs/raw/` o `docs/wiki/`
+- Nomi: minuscolo, trattini, **no date** nel filename
 
-`composer.json`, `module.json`, `package.json`, `vite.config.js`, `.github/` — vedi [nwidart-module-skeleton-contract.md](../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md).
+### Cartelle
 
-```bash
-bash bashscripts/tools/guard-nwidart-module-skeleton.sh
-bash bashscripts/tools/audit-module-sacred-artifacts.sh
-```
+- Solo **lowercase** alla root (`app`, `config`, `database`, `docs`, `helpers`, …)
+- **Vietato**: `Config/`, `Helpers/`, `Services/`, `Datas/`, `Filament/` alla root del modulo
+- Canonico Xot: `app/Datas/`, `app/Filament/`, `app/Helpers/`, `helpers/Helper.php`, `config/`
 
-## Azione di cleanup
-
-Per ogni modulo:
+## Audit e fix automatici
 
 ```bash
-cd Modules/<Modulo>
-
-# 1. Trova file .txt nella root
-find . -maxdepth 1 -name "*.txt" -type f
-
-# 2. Trova file .md nella root (escluso README.md)
-find . -maxdepth 1 -name "*.md" -type f | grep -v README.md
-
-# 3. Trova cartelle con maiuscoli nella root
-find . -maxdepth 1 -type d | grep -E "[A-Z]"
+bash bashscripts/tools/audit-module-root-hygiene.sh
+bash bashscripts/tools/audit-module-root-hygiene.sh Notify
+bash bashscripts/tools/fix-module-root-hygiene.sh
 ```
 
-## Canon
+## Check pre-commit
 
-- Questa regola deve essere applicata a tutti i moduli
-- Check periodico prima di commit
+Eseguire l'audit prima di commit che toccano la root di un modulo.
