@@ -4404,9 +4404,6 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
-<<<<<<< HEAD
-
-=======
 namespace Modules\Job\Tests\Unit\Traits;
 
 use Closure;
@@ -4467,7 +4464,6 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
->>>>>>> 7949283d (.)
 namespace Modules\Lang\Tests;
 
 use Closure;
@@ -12525,9 +12521,6 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
-<<<<<<< HEAD
-
-=======
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Closure;
@@ -12588,7 +12581,6 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
->>>>>>> 7949283d (.)
 namespace Modules\Xot\Tests\Unit\Actions\Blade;
 
 use Closure;
