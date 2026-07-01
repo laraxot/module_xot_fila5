@@ -6,9 +6,12 @@ namespace Modules\Xot\Services;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Tenant;
+use Spatie\QueueableAction\QueueableAction;
 
 class XotService
 {
+    use QueueableAction;
+
     /**
      * Get the tenant class name.
      *
@@ -18,4 +21,6 @@ class XotService
     {
         return Tenant::class;
     }
+
+    public function execute(): void {}
 }
