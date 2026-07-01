@@ -59,7 +59,10 @@ abstract class XotBasePanelProvider extends PanelProvider
             // ->tenant($teamClass,ownershipRelationship:'users')
             // ->tenant($teamClass)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->icons(['navigation'=>'heroicon-o-cube'])
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
             ->id($moduleLow.'::admin')
@@ -106,8 +109,11 @@ abstract class XotBasePanelProvider extends PanelProvider
         return $ns.'\\'.$this->module;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 }

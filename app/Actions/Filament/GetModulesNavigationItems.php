@@ -21,7 +21,10 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 /**
@@ -41,7 +44,10 @@ class GetModulesNavigationItems
     {
         $navs = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 

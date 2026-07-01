@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Test',
         'group' => 'Sviluppo',
@@ -43,6 +44,8 @@ return [
             'label' => 'Elimina Test',
         ],
 =======
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Test', 'group' => 'Sviluppo', 'icon' => 'heroicon-o-beaker', 'sort' => 999],
     'label' => 'Test',
     'plural_label' => 'Test (Plurale)',
@@ -57,6 +60,9 @@ return [
         'create' => ['label' => 'Crea Test'],
         'edit' => ['label' => 'Modifica Test'],
         'delete' => ['label' => 'Elimina Test'],
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
 ];
