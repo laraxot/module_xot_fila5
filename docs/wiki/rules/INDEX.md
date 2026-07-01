@@ -10,10 +10,6 @@ updated: 2026-06-10
 
 > Regole critiche Xot/Laraxot. Load on-demand.
 
-**Context safety (obbligatorio per agenti Kilo):**
-- [context-overflow-prevention](../../../../../docs/wiki/rules/context-overflow-prevention.md)
-- [kilo-autocompact-thrashing-prevention](../../../../../docs/wiki/how-to/kilo-autocompact-thrashing-prevention.md) — **usa solo token-optimizer_smart_* + compress + acm_prune** (evita "Autocompact is thrashing")
-
 ## Available Rules
 - [module-testcase-xotbase-hierarchy](./module-testcase-xotbase-hierarchy.md) — ✅ ENFORCED — `Modules/<Module>/tests/TestCase.php` estende `XotBaseTestCase`; `Nwidart\Modules\Tests\BaseTestCase` NON disponibile in v13.0.0; 16/16 moduli migrati (2026-06-10)
 - [context-overflow-prevention](../../../../../docs/wiki/rules/context-overflow-prevention.md) — prevenzione 262K token overflow; file vietati; tool output compression

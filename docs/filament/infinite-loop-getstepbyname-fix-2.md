@@ -1,12 +1,20 @@
-# Loop infinito `getStepByName()` — nota di consolidamento
+# CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
-Questo documento è stato **consolidato** nel file canonico nella stessa cartella:
+## 🚨 **PROBLEMA CRITICO RISOLTO**
 
-- [Infinite loop fix (canonico)](./infinite-loop-getstepbyname-fix.md)
+### **Sintomo**
+```
+Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames
+```
 
-**Motivo**: copie duplicate (`fix-2`, marcatori di merge e paragrafi ripetuti) riducono la qualità del second brain.
+### **Causa Root**
+Errore di sintassi PHP nel metodo `getStepByName()` di `XotBaseResource`:
 
-Per Filament wizard / `XotBaseResource`, cercare anche:
+```php
+// ❌ ERRATO - Causava loop infinito
+return Forms\Components\Wizard\Step::make($name)
+    ->schema(static::$schema());
+```
 
 ### **Correzione Applicata**
 ```php

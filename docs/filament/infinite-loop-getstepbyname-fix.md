@@ -116,8 +116,9 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 
 ## 🔗 **Collegamenti**
 
-### **File modificati**
-- [XotBaseResource.php](../../app/Filament/Resources/XotBaseResource.php) — fix principale
+### **File Modificati**
+- [XotBaseResource.php](../../../Modules/Xot/app/Filament/Resources/XotBaseResource.php) - Fix principale
+- [DoctorResource.php](../../../Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php) - Utilizzo step
 
 ### **Documentazione Correlata**
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)

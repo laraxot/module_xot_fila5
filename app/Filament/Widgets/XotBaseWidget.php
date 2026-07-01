@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
@@ -259,4 +258,3 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return $normalized;
     }
 }
-

@@ -41,7 +41,7 @@
         "spatie/cpu-load-health-check": "^1.0",
         "spatie/laravel-data": "^4.7",
         "spatie/laravel-health": "^1.29",
-        "spatie/laravel-model-states": "^2.14",
+        "spatie/laravel-model-states": "*",
         "spatie/laravel-model-status": "*",
         "spatie/laravel-package-tools": "*",
         "spatie/laravel-permission": "*",

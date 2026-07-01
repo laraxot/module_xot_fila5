@@ -75,6 +75,7 @@ abstract class XotBaseMigration extends LaravelMigration
 
         Assert::stringNotEmpty($modelClass);
         Assert::classExists($modelClass);
+        Assert::subclassOf($modelClass, Model::class);
 
         /* @var class-string<Model> $modelClass */
         $this->model_class = $modelClass;
@@ -396,6 +397,13 @@ abstract class XotBaseMigration extends LaravelMigration
     protected function driver(): string
     {
         return DB::connection($this->getConnection())->getDriverName();
+    }
+
+    protected function isMysqlFamilyDriver(?string $driver = null): bool
+    {
+        $driver ??= $this->driver();
+
+        return in_array($driver, ['mysql', 'mariadb'], true);
     }
 
     /**

@@ -53,7 +53,7 @@ class GetViewByClassAction
             return Str::of($value)->kebab()->slug()->toString();
         });
 
-        $implode = implode('.', $mapped);
+        $implode = Arr::join(array_values($mapped), '.');
         $views = [
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
@@ -64,6 +64,7 @@ class GetViewByClassAction
         }
 
         if (view()->exists($view)) {
+            /* @var view-string $view */
             return $view;
         }
         throw new \Exception('View not found: '.$view);

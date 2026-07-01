@@ -20,10 +20,6 @@ use function Safe\json_encode;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
  * Ottimizzata per ridurre memory usage.
@@ -40,10 +36,6 @@ class GetModulesNavigationItems
     public function execute(): array
     {
         $navs = [];
-<<<<<<< HEAD
-        
-=======
->>>>>>> laraxot/dev
 
         $modules = TenantService::allModules();
         // TenantService::allModules() restituisce sempre array
