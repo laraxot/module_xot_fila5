@@ -8,7 +8,6 @@ use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 uses(TestCase::class);
 
@@ -18,7 +17,7 @@ it('gets view namespace path from theme fallback correctly', function (): void {
 
     $xotData = XotData::from(['pub_theme' => $themeName]);
 
-    $reflection = new ReflectionClass(XotData::class);
+    $reflection = new \ReflectionClass(XotData::class);
     $instanceProperty = $reflection->getProperty('instance');
     $instanceProperty->setAccessible(true);
     $instanceProperty->setValue(null, $xotData);
