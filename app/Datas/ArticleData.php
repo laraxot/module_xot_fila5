@@ -11,26 +11,14 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
- *
- * @param array<int, string> $types
- * @param array<int, string> $categories
- * @param string $editor
- * @param array<string, string> $defaultMeta
- * @param array<string, bool> $features
  */
 final class ArticleData extends Data
 {
     /**
-     * @param array<int, string>    $types             Tipi di articolo disponibili
-     * @param array<int, string>    $categories        Categorie disponibili
-     * @param bool                  $enable_comments   Se abilitare i commenti
-     * @param bool                  $moderate_comments Se moderare i commenti
-     * @param string                $editor            Tipo di editor (markdown, wysiwyg)
-     * @param bool                  $enable_rating     Se abilitare le valutazioni
-     * @param array<string, string> $default_meta      Meta tag predefiniti
-     * @param bool                  $show_author       Se mostrare l'autore
-     * @param bool                  $show_date         Se mostrare la data
-     * @param bool                  $show_reading_time Se mostrare il tempo di lettura
+     * @param array<int, string>    $types
+     * @param array<int, string>    $categories
+     * @param array<string, string> $defaultMeta
+     * @param array<string, bool>   $features
      */
     public function __construct(
         public readonly array $types = ['post', 'page', 'news'],
@@ -41,9 +29,14 @@ final class ArticleData extends Data
             'description' => '',
             'keywords' => '',
         ],
-        public readonly bool $show_author = true,
-        public readonly bool $show_date = true,
-        public readonly bool $show_reading_time = true,
+        public readonly array $features = [
+            'enable_comments' => true,
+            'moderate_comments' => true,
+            'enable_rating' => false,
+            'show_author' => true,
+            'show_date' => true,
+            'show_reading_time' => true,
+        ],
     ) {
     }
 
@@ -52,6 +45,6 @@ final class ArticleData extends Data
      */
     public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

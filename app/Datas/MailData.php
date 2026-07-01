@@ -11,38 +11,28 @@ use Spatie\LaravelData\Data;
  * Utilizzato nel contesto dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
- *
- * @param string $driver
- * @param array<string, int|string> $smtpConfig
- * @param array<string, string> $fromConfig
- * @param string|null $replyTo
- * @param bool $verifyPeer
  */
 final class MailData extends Data
 {
     /**
-     * @param string      $driver       Driver per l'invio delle email
-     * @param string      $host         Host SMTP
-     * @param int         $port         Porta SMTP
-     * @param string      $encryption   Tipo di encryption (tls, ssl)
-     * @param string      $username     Username SMTP
-     * @param string      $password     Password SMTP
-     * @param string      $from_address Indirizzo mittente
-     * @param string      $from_name    Nome mittente
-     * @param string|null $reply_to     Indirizzo per le risposte
-     * @param bool        $verify_peer  Verifica certificato peer SSL
+     * @param array<string, int|string> $smtpConfig
+     * @param array<string, string>     $fromConfig
      */
     public function __construct(
         public readonly string $driver = 'smtp',
-        public readonly string $host = 'smtp.mailtrap.io',
-        public readonly int $port = 2525,
-        public readonly string $encryption = 'tls',
-        public readonly string $username = '',
-        public readonly string $password = '',
-        public readonly string $from_address = 'no-reply@example.com',
-        public readonly string $from_name = 'Laraxot App',
-        public readonly ?string $reply_to = null,
-        public readonly bool $verify_peer = true,
+        public readonly array $smtpConfig = [
+            'host' => 'smtp.mailtrap.io',
+            'port' => 2525,
+            'encryption' => 'tls',
+            'username' => '',
+            'password' => '',
+        ],
+        public readonly array $fromConfig = [
+            'address' => 'no-reply@example.com',
+            'name' => 'Laraxot App',
+        ],
+        public readonly ?string $replyTo = null,
+        public readonly bool $verifyPeer = true,
     ) {
     }
 
@@ -51,6 +41,6 @@ final class MailData extends Data
      */
     public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

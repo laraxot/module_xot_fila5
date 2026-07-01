@@ -14,6 +14,7 @@ use Filament\Resources\Resource as FilamentResource;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
+use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
@@ -104,14 +105,15 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<int|string, \Filament\Schemas\Components\Component>
      */
     abstract public static function getFormSchema(): array;
 
     final public static function form(Schema $schema): Schema
     {
         // return AuthorForm::configure($schema);
-        $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
+        $name = class_basename(static::getModel());
+        $form_class = static::class.'\Schemas\\'.$name.'Form';
         if (class_exists($form_class)) {
             return $form_class::configure($schema);
         }
@@ -122,6 +124,21 @@ abstract class XotBaseResource extends FilamentResource
         return $schema
             ->components($components)
             ->columns(static::getFormSchemaColumns());
+    }
+
+    public static function table(Table $table): Table
+    {
+        $name = class_basename(static::getModel());
+        $name_plural = Str::plural($name);
+        $class = static::class.'\Tables\\'.$name_plural.'Table';
+        if (class_exists($class)) {
+            $configured = $class::configure($table);
+            Assert::isInstanceOf($configured, Table::class);
+
+            return $configured;
+        }
+
+        return $table;
     }
 
     public static function getFormSchemaColumns(): int

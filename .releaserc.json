@@ -1,20 +1,40 @@
 {
-  "branches": ["main", "develop"],
+  "branches": [
+    "main",
+    "master",
+    {
+      "name": "dev",
+      "prerelease": "dev"
+    }
+  ],
+  "tagFormat": "xot-v${version}",
   "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
     [
-      "@semantic-release/git",
+      "@semantic-release/commit-analyzer",
       {
-        "assets": ["CHANGELOG.md", "package.json", "composer.json"],
-        "message": "chore(release): v${nextRelease.version} [skip ci]\n\nCo-authored-by: Semantic Release Bot <bot@github.local>"
+        "preset": "conventionalcommits"
       }
     ],
     [
-      "@semantic-release/github",
+      "@semantic-release/release-notes-generator",
       {
-        "releasedLabels": ["released"]
+        "preset": "conventionalcommits"
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    "@semantic-release/github",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]
   ]

@@ -6,6 +6,7 @@ namespace Modules\Xot\Actions\Tree;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use Spatie\QueueableAction\QueueableAction;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection as TreeCollection;
@@ -27,8 +28,7 @@ class GetTreeOptionsByModelClassAction
         /** @var HasRecursiveRelationshipsContract $model */
         $model = new $class();
 
-        /** @var Collection<int, HasRecursiveRelationshipsContract> $collection */
-        // @phpstan-ignore generics.notSubtype
+        /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */
         $collection = $model->newQuery()->get();
         $rows = $collection->toTree();
 
@@ -37,7 +37,7 @@ class GetTreeOptionsByModelClassAction
                 continue;
             }
             $key = $row->getKey();
-            $this->options[(string) $key] = $row->getLabel();
+            $this->options[SafeStringCastAction::cast($key)] = $row->getLabel();
             $this->parse($row);
         }
 
@@ -49,7 +49,7 @@ class GetTreeOptionsByModelClassAction
         foreach ($model->children as $child) {
             /** @var HasRecursiveRelationshipsContract $child */
             $key = $child->getKey();
-            $this->options[(string) $key] =
+            $this->options[SafeStringCastAction::cast($key)] =
                 Str::repeat('---', $child->depth).'   '.$child->getLabel();
         }
     }

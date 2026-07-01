@@ -11,25 +11,14 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
- *
- * @param string $guard
- * @param array<string> $guards
- * @param array<string, array<string, string>> $providers
- * @param bool $verifyEmail
- * @param int $passwordResetTimeout
- * @param array<string, bool|int|string> $throttle
- * @param array<string, bool> $social
  */
 final class AuthData extends Data
 {
     /**
-     * @param string $guard                  Guard predefinita
-     * @param array  $guards                 Guards disponibili
-     * @param array  $providers              Provider di autenticazione
-     * @param bool   $verify_email           Se richiedere verifica email
-     * @param int    $password_reset_timeout Password reset timeout in minuti
-     * @param array  $throttle               Configurazione throttling
-     * @param array  $social                 Provider social abilitati
+     * @param array<string>                        $guards
+     * @param array<string, array<string, string>> $providers
+     * @param array<string, bool|int|string>       $throttle
+     * @param array<string, bool>                  $social
      */
     public function __construct(
         public readonly string $guard = 'web',
@@ -58,6 +47,6 @@ final class AuthData extends Data
      */
     public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

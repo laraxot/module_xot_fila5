@@ -15,3 +15,18 @@ class HasTableFunctionsTraitProbe
         return $this->getResourceSlug();
     }
 }
+
+class HasTableFunctionsCustomSlugProbe
+{
+    use HasTableFunctionsTrait;
+
+    protected function getResourceSlug(): string
+    {
+        return 'test-slug';
+    }
+
+    public function exposeResourceSlug(): string
+    {
+        return $this->getResourceSlug();
+    }
+}

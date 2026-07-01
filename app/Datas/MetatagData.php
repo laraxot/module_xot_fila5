@@ -13,6 +13,7 @@ use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
+use Modules\Xot\Support\PaDesignColors;
 
 use function Safe\file_get_contents;
 
@@ -383,6 +384,8 @@ class MetatagData extends Data implements Wireable
 
     /**
      * @deprecated Use getThemeColors() instead as it better reflects the semantic purpose
+     *
+     * @return array<string, array{key?: string, color: string, hex?: string}>
      */
     public function getColors(): array
     {

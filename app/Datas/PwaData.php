@@ -46,6 +46,6 @@ class PwaData extends Data
      */
     public static function make(): self
     {
-        return new static();
+        return new self();
     }
 }

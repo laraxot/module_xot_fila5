@@ -3,23 +3,20 @@ title: "NO git restore — studia vecchia versione"
 type: rule
 tags: [git, recovery, study, refactoring]
 created: 2026-01-21
-updated: 2026-07-01
+updated: 2026-01-21
 qmd: never use git restore always study old version create better
 issues: []
 discussions: []
-related:
-  - ../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md
-  - ../../../../../../docs/wiki/memories/no-git-restore-study-improve.md
+related: []
 ---
 
 # NO git restore — studia vecchia versione
 
 ## Regola assoluta
 
-**MAI** usare `git restore`, `git checkout --` o `git checkout HEAD --` per recuperare file.
-**MAI** `git show REF:path > path` (copia cieca).
+**MAI** usare `git restore` per recuperare file.
 
-Git va solo in avanti. Se hai cancellato o modificato un file critico:
+Git va solo in avanti. Se hai cancellato o modificato un file critico (composer.json, module.json, package.json, .github/, etc.):
 
 1. Studia la vecchia versione con `git show`
 2. Capisci perché esisteva
@@ -29,10 +26,14 @@ Git va solo in avanti. Se hai cancellato o modificato un file critico:
 ## Comandi corretti
 
 ```bash
-bash bashscripts/tools/study-nwidart-missing-files.sh Predict
-git log --oneline -5 -- laravel/Modules/Predict/composer.json
-git show HEAD:laravel/Modules/Predict/composer.json
-# leggi, confronta, poi riscrivi con edit tool (versione migliorata)
+# Studia vecchia versione
+git show HEAD:Modules/<Modulo>/composer.json
+
+# Studia diff per capire cosa è cambiato
+git diff HEAD -- Modules/<Modulo>/composer.json
+
+# Crea versione migliorata basata sulla vecchia
+# (scrivi il file nuovo)
 ```
 
 ## Vietato
@@ -60,6 +61,5 @@ git checkout -- Modules/<Modulo>/composer.json
 
 ## Canon
 
-- Hub repo: [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)
-- Cursor on-demand: `.cursor/rules/no-git-restore-forward-only.mdc`
+- Regola on-demand attiva sempre
 - Studia → Capisci → Migliora → Applica

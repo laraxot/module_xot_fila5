@@ -11,6 +11,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
+  - ./phpstan-trait-probes.md
   - ../log.md
 ---
 

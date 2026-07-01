@@ -18,6 +18,7 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
@@ -35,9 +36,7 @@ use Webmozart\Assert\Assert;
 abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasForms
 {
     use InteractsWithActions;
-
-    // use InteractsWithForms;
-    use InteractsWithSchemas;
+    use InteractsWithForms;
     use TransTrait;
 
     public string $title = '';
@@ -101,17 +100,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return $schema;
     }
 
-    /**
-     * Azioni form opzionali per viste che chiamano `$this->getFormActions()` (es. layout custom, footer azioni).
-     * I widget che non le usano restano con array vuoto.
-     *
-     * @return array<int|string, Action>
-     */
-    protected function getFormActions(): array
-    {
-        return [];
-    }
-
+    /** @return array<string, mixed> */
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
@@ -138,13 +127,16 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
 
                         return $value;
                     });
-                    $res = $merge1;
+                    $res = [];
+                    foreach ($merge1 as $key => $value) {
+                        $res[(string) $key] = $value;
+                    }
                 }
 
-                return $res;
-            } catch (Exception $e) {
+                return self::normalizeFormFill($res);
+            } catch (\Exception $e) {
                 // Se toArray() fallisce (problemi con enum), usa getAttributes()
-                return $model->getAttributes();
+                return self::normalizeFormFill($model->getAttributes());
             }
         }
 
@@ -154,7 +146,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $attributes = $model->attributesToArray();
 
         $fields = array_merge($fillable, $appends);
-        $fields = array_fill_keys($fields, null);
+        $fields = array_fill_keys(array_map(static fn (mixed $f): string => SafeStringCastAction::cast($f), $fields), null);
         $fields = array_merge($fields, $attributes);
         if (method_exists($model, 'getDataDefaults')) {
             /** @var array<string, mixed> $defaults */
@@ -162,7 +154,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
             $fields = array_merge($fields, $defaults);
         }
 
-        return $fields;
+        return self::normalizeFormFill($fields);
     }
 
     /**
@@ -185,7 +177,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         $submit_view = 'pub_theme::filament.wizard.submit-button';
 
         if (! view()->exists($submit_view)) {
-            throw new Exception("View {$submit_view} does not exist");
+            throw new \Exception("View {$submit_view} does not exist");
         }
 
         return Action::make('submit')
@@ -246,11 +238,25 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                 $this->view = $view;
             }
         } catch (\Exception $e) {
-            /* @phpstan-ignore identical.alwaysTrue */
-            if ($this->view === $defaultView) {
+            if (! view()->exists($this->view)) {
                 throw $e;
             }
         }
+    }
+
+    /**
+     * @param array<int|string, mixed> $data
+     *
+     * @return array<string, mixed>
+     */
+    protected static function normalizeFormFill(array $data): array
+    {
+        $normalized = [];
+        foreach ($data as $key => $value) {
+            $normalized[(string) $key] = $value;
+        }
+
+        return $normalized;
     }
 }
 

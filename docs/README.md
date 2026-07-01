@@ -18,6 +18,20 @@ Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modula
 - **Estensibilità**: Progettato per facilitare l'aggiunta di nuovi moduli e l'espansione delle funzionalità esistenti.
 - **Manutenibilità**: Codice pulito, ben documentato e supportato da strumenti di analisi statica.
 
+### 🏗️ **Module Directory Structure Standard**
+To ensure consistent autoloading and architectural integrity, all modules must follow this structure:
+- **app/**: Contains all PHP code (Actions, Models, etc.). Mapped to `Modules\{Module}\` in `composer.json`.
+- **database/**: strictly lowercase.
+- **Forbidden**: Capitalized directories at the root level (e.g., `Actions/`, `Database/`) are forbidden.
+
+## 📚 **Quick Navigation**
+
+- **[Architecture Patterns](./architecture-patterns.md)** — Complete design patterns, class hierarchies, traits ecosystem
+- **[Documentation Index](./INDEX.md)** — Full table of contents and component reference
+- **[XOTBASE_ARCHITECTURE_PHILOSOPHY.md](./XOTBASE_ARCHITECTURE_PHILOSOPHY.md)** — Core design philosophy
+
+---
+
 ## ⚡ **Architettura Core**
 
 ### 🏗️ **Base Classes Pattern**
@@ -89,7 +103,13 @@ enum UserStatus: string implements XotBaseEnum
 }
 ```
 
-## 🛠️ **Sviluppo e Qualità**
+### 🛠️ **Sviluppo e Qualità**
+
+### Analisi Statica (PHPStan)
+Per garantire la stabilità di tutto l'ecosistema, l'analisi deve essere eseguita con memoria illimitata per evitare crash dei parallel workers:
+```bash
+php -d memory_limit=-1 ./vendor/bin/phpstan analyse Modules/
+```
 
 ### Convenzioni
 - **Namespace**: I namespace dei moduli **NON** devono includere il segmento `app`.
@@ -200,3 +220,22 @@ Il modulo **Xot** è il nucleo fondativo dell'intero progetto [PROJECT_NAME] pla
 - [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
 - [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
 - [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+---
+
+## ✅ PHPStan Status — Verifica 2026-07-01
+
+| Data | Livello | Errori |
+|------|---------|--------|
+| 2026-07-01 | max | **0** |
+
+```bash
+./vendor/bin/phpstan analyze Modules/Xot --level=max --memory-limit=512M
+# [OK] No errors
+```
+
+Modulo conforme alle regole Laraxot:
+- Classi Filament estendono XotBase (mai direttamente Filament)
+- Nessun label/placeholder/tooltip hardcoded
+- Nessun BadgeColumn (usa TextColumn::make()->badge())
+- Actions usano QueueableAction pattern
+- Nessun Service tradizionale
