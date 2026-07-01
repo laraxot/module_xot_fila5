@@ -43,6 +43,7 @@ function xotPhpstanTraitProbeClasses(): array
         \Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe::class,
         \Modules\Notify\Phpstan\HasContactPhpstanProbe::class,
         \Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe::class,
+        \Modules\Job\Phpstan\FormatSecondsPhpstanProbe::class,
         // ...
     ];
 }
