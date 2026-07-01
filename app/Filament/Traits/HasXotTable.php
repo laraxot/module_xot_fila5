@@ -30,9 +30,11 @@ use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
+use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
+use Modules\UI\Filament\Traits\HasTableLayoutPage;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Model\TableExistsByModelClassActions;
 use Webmozart\Assert\Assert;
 
@@ -49,9 +51,19 @@ use Webmozart\Assert\Assert;
  */
 trait HasXotTable
 {
+    use HasTableLayoutPage;
     use TransTrait;
 
     public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
+
+    public function bootHasXotTable(): void
+    {
+        if (! $this instanceof Component) {
+            return;
+        }
+
+        $this->mountTableLayoutFromSession();
+    }
 
     protected static bool $canReplicate = false;
 
@@ -106,12 +118,33 @@ trait HasXotTable
     /**
      * Get grid table columns.
      *
+     * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
+     *
      * @return array<int, Tables\Columns\Column|Stack>
      */
     public function getGridTableColumns(): array
     {
+        $columns = [];
+
+        foreach (array_values($this->getTableColumns()) as $column) {
+            $gridColumn = clone $column;
+
+            if ($gridColumn instanceof TextColumn) {
+                $label = $gridColumn->getLabel();
+                $labelText = $label instanceof \Illuminate\Contracts\Support\Htmlable
+                    ? strip_tags($label->toHtml())
+                    : (string) $label;
+
+                $gridColumn->formatStateUsing(
+                    fn (mixed $state): string => $labelText.': '.(null === $state || '' === $state ? '—' : (string) $state),
+                );
+            }
+
+            $columns[] = $gridColumn;
+        }
+
         return [
-            Stack::make($this->getTableColumns()),
+            Stack::make($columns)->space(1),
         ];
     }
 
@@ -146,11 +179,13 @@ trait HasXotTable
     protected function getTableHeading(): ?string
     {
         $key = static::getKeyTrans('table.heading');
-        /** @var string|array<int|string,mixed>|null $trans */
-        // @phpstan-ignore-next-line
         $trans = trans($key);
 
-        return is_string($trans) && $trans !== $key ? $trans : null;
+        if (! is_string($trans)) {
+            return null;
+        }
+
+        return $trans !== $key ? $trans : null;
     }
 
     /**
@@ -198,9 +233,9 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-            ->columns($this->layoutView->getTableColumns($this->getTableColumns(), $this->getGridTableColumns()))
+            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
-            ->filters($this->getTableFilters())
+            ->filters($this->getTableFilters()) // @phpstan-ignore argument.type
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->persistFiltersInSession()
@@ -356,32 +391,15 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
-        // @phpstan-ignore-next-line
-        if (method_exists($this, 'getRelationship')) {
-            $relationship = $this->getRelationship();
-            if ($relationship instanceof Relation) {
-                /* @var class-string<Model> */
-                return get_class($relationship->getModel());
-            }
-        }
-
+        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
-            // @phpstan-ignore-next-line
-            if (is_string($model)) {
-                Assert::classExists($model);
+            Assert::string($model);
+            Assert::classExists($model);
+            Assert::subclassOf($model, Model::class);
 
-                // Assert::isAOf($model, Model::class);
-                /* @var class-string<Model> */
-                // @phpstan-ignore-next-line
-                return $model;
-            }
-            // @phpstan-ignore-next-line
-            if ($model instanceof Model) {
-                /* @var class-string<Model> */
-                // @phpstan-ignore-next-line
-                return $model::class;
-            }
+            /* @var class-string<Model> $model */
+            return $model;
         }
 
         throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
@@ -394,7 +412,9 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
-        return $this->tableSearch ?? null;
+        $search = $this->tableSearch ?? null;
+
+        return null !== $search ? SafeStringCastAction::cast($search) : null;
     }
 
     protected function shouldShowAssociateAction(): bool

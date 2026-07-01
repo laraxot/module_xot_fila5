@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
+/** @phpstan-ignore trait.unused */
 trait HasDynamicFillable
 {
     /**

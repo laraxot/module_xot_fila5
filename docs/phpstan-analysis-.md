@@ -2,6 +2,7 @@
 
 ## Executive Summary
 
+**Analysis Date:** 2025-11-18
 **PHPStan Level:** Maximum (Level 10)
 **Total Errors Found:** 744
 **Files Analyzed:** 3,945
@@ -421,6 +422,9 @@ jobs:
 
 ### Module-Specific Documentation
 
+- [Geo Module Errors](../../Geo/docs/phpstan-errors-2025-12-16.md)
+- [Cms Module Errors](../../Cms/docs/phpstan-errors-2025-12-16.md)
+- [Activity Module Errors](../../Activity/docs/phpstan-errors-2025-12-16.md)
 - [Geo Module Errors](../../geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../activity/docs/phpstan-errors-2025-12-16.md)
