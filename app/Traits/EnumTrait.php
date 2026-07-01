@@ -43,7 +43,6 @@ trait EnumTrait
         return $this->transClass(self::class, 'values.'.$this->value.'.helper_text');
     }
 
-
     /**
      * @return array<string>
      */
