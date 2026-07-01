@@ -59,8 +59,17 @@ function xotPhpstanTraitProbeClasses(): array
 ## Anti-pattern (revertiti in sessione 2026-06)
 
 - `HasCommonScopes` su `XotBaseModel` → conflitto con scope Blog
-- `TypedHasRecursiveRelationships` su `BaseTreeModel` → ~39 errori
-- Probe Rating (`HasRatingsTrait`) → ~54 errori senza wiring completo
+- `TypedHasRecursiveRelationships` — trait rimosso (STORY-346); **mai** probe
+- Probe Rating legacy (`HasRatingsTrait`, `RatingTrait`) → ~54 errori; SSoT = `HasRating` + `RatingPhpstanTraitProbe`
+- Probe Notify notification traits (`HasTenantNotifications`, …) → `$tenant_id` / contesto tenant mancante; usare `@phpstan-ignore trait.unused`
+
+### Guard script
+
+```bash
+bash bashscripts/tools/archive-invalid-phpstan-probes.sh
+```
+
+Archivia in-place (`.bak`) probe invalidi sotto `Models/` o probe Xot recursive.
 
 ## Verifica
 
@@ -68,7 +77,17 @@ function xotPhpstanTraitProbeClasses(): array
 cd laravel
 ./vendor/bin/phpstan clear-result-cache
 ./vendor/bin/phpstan analyse Modules --no-progress
+# atteso: [OK] No errors (app + database + tests, 2026-06-30)
 ```
+
+### Fix correlati (2026-06-30)
+
+| Area | Fix |
+|------|-----|
+| `xotSeedModelOnce` | `GetFactoryAction` istanziato direttamente (no `app()` mixed) + `createOne()` |
+| `XotBaseTestCase` | Bug ricorsivi: `createUnitMock`, `assertDatabase*Row`, `skipTest` → delega PHPUnit |
+| `RatingFactory` (Predict) | `$model = Predict\Models\Rating` (non Rating module base) |
+| Test factory | `fix-test-factory-createone.php` — `create()` → `createOne()` dove N=1 |
 
 ## Collegamenti
 

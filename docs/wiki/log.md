@@ -1,11 +1,17 @@
 ---
 
 
-## [2026-06-30] prompts | start.txt v18 — PHPStan gate corrente obbligatorio
+## [2026-06-30] governance | no legacy folders + model seeder parity
 
-- `--markdown` senza `--phpstan` dichiarato valido solo per task non-PHP.
-- Per PHP/PHPStan/quality gate serve `run-session-gate.sh --markdown --phpstan` o full scan reale.
-- Baseline zero: mai dichiararla senza output del run corrente.
+- Rimossa ogni eccezione per cartelle `legacy/`, anche sotto `docs/`.
+- Ribadito: `node_modules/` solo locale per build, mai nel repository.
+- Rafforzata regola: X modelli owner persistenti = X migrazioni canoniche + X seeder canonici; no seeder demo in cartelle parallele.
+
+## [2026-06-30] parità modello — 1 migrazione + 1 seeder
+
+- Hub: [module-model-migration-seeder-parity.md](../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md)
+- Seeder parity: User 37/37, Job 15/15, Predict 16/16, Lang OK
+- Backlog: consolidamento migrazioni duplicate (GAP migration)
 
 title: "Activity Log"
 type: log
@@ -40,6 +46,14 @@ discussions:
 - `run-session-gate.sh` allineato a §1.6.
 
 **Ultimo run:** 2026-06-30 run #4 (remediation wave — lang, test, seeders, wire-elements)
+
+## [2026-06-30] parità modello — 1 migrazione + 1 seeder (repo-wide)
+
+- Regola canonica: [module-model-migration-seeder-parity.md](../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md)
+- Script: `ensure-module-entity-seeders.sh` (+~120 stub), `audit-module-artifact-parity.sh`
+- Seeder parity OK: User 37/37, Job 15/15, Predict 16/16, Lang 3/3
+- Backlog: migrazioni duplicate `add_*` / `create_*` multipli (GAP migration resta su 12+ moduli)
+- Gate: `run-session-gate.sh` §1.1c
 
 ## [2026-06-30] regola no-Legacy folders — User lang + Predict seeders
 

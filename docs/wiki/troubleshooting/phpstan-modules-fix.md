@@ -4,10 +4,13 @@ type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
 updated: 2026-06-30
-tags: [phpstan, modules, bootstrap, comment, blog, media]
+tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
   - concepts/phpstan-level10.md
+  - concepts/phpstan-trait-probes.md
+  - concepts/xot-seed-model-once.md
+qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
 
 # PHPStan su `Modules` — stato e fix
@@ -15,17 +18,61 @@ related:
 ## Comando canonico
 
 ```bash
+cd laravel && ./vendor/bin/phpstan clear-result-cache
 cd laravel && ./vendor/bin/phpstan analyse Modules
 ```
 
-Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`.
+Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non modificare** `phpstan.neon` — fix solo su codice PHP/test.
 
 ## Stato attuale (2026-06-30)
 
 - `./vendor/bin/phpstan analyse Modules` → **0 errori**, exit 0
 - Moduli analizzati: AI, Activity, Blog, Cms, Comment, Gdpr, Geo, Job, Lang, Media, Notify, Predict, Rating, Seo, Tenant, UI, User, Xot
 
-## Blocker bootstrap risolti in questa sessione
+## Fix strutturali (ponytail — una guard condivisa)
+
+### Seeders — `xotSeedModelOnce()`
+
+~100+ errori `method.nonObject` su `Model::factory()->count(1)->create()` in entity seeders.
+
+**SSoT:** `xotSeedModelOnce(string $modelClass)` in `Modules/Xot/helpers/Helper.php` → delega a `GetFactoryAction`.
+
+```php
+// ❌ PHPStan non risolve la catena factory su stringhe dinamiche
+Article::factory()->count(1)->create();
+
+// ✅
+xotSeedModelOnce(Article::class);
+```
+
+### Pest — stub globali + bridge namespace
+
+| Componente | Path | Ruolo |
+|------------|------|-------|
+| Stub globali | `Helper.php` | `expect`, `it`, `test`, `uses`, `beforeEach`, … |
+| `PestUsesChain` | `Xot/tests/Support/PestUsesChain.php` | `uses(...)->beforeEach()` tipizzato |
+| Bridge per modulo | `Xot/tests/Support/PestFunctionBridge.php` | `uses()` → `PestUsesChain` per 192 namespace |
+
+Rigenerazione bridge:
+
+```bash
+php bashscripts/tools/generate-pest-phpstan-bridge.php
+php bashscripts/tools/fix-pest-phpstan-test-patterns.php
+```
+
+### Factory — `HasXotFactory`
+
+`newFactory()` annotato `@return TFactory` per risolvere la catena generica sui modelli Xot.
+
+### Trait probe Notify
+
+`Modules/Notify/app/Phpstan/HasContactPhpstanProbe.php` registrato in `xotPhpstanTraitProbeClasses()` (valori `::class`, non stringhe).
+
+### Test mock User — `RelationX`
+
+`MockUserWithTeams` (test) deve `use RelationX` se usa `HasTeams` (metodo `belongsToManyX`).
+
+## Blocker bootstrap risolti (sessioni precedenti)
 
 ### Vendor corrotto
 
