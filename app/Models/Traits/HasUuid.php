@@ -22,7 +22,7 @@ trait HasUuid
     {
         static::creating(static function (Model $model): void {
             $uuid = $model->getAttribute('uuid');
-            if ($uuid === null || $uuid === '') {
+            if (null === $uuid || '' === $uuid) {
                 $model->setAttribute('uuid', (string) Str::uuid());
             }
         });

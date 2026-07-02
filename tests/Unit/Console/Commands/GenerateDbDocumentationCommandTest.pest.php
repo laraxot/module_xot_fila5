@@ -7,10 +7,11 @@ namespace Modules\Xot\Tests\Unit\Console\Commands;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Tests\TestCase;
-use Webmozart\Assert\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\json_encode;
+
+use Webmozart\Assert\Assert;
 
 uses(TestCase::class);
 
