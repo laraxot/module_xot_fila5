@@ -21,7 +21,6 @@ use Webmozart\Assert\Assert;
 
 /**
  * @see https://github.com/mpociot/laravel-test-factory-helper/blob/master/src/Console/GenerateCommand.php#L213
- *
  * @deprecated Use Model::factory() directly instead. This action is a thin wrapper
  *             around Laravel's native factory resolution.
  *             ponytail: exists because legacy code calls it, but new code should
