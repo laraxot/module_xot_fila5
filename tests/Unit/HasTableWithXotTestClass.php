@@ -18,21 +18,28 @@ class HasTableWithXotTestClass
     public function getLayoutView(): mixed
     {
         $mock = \Mockery::mock();
-        $mock->shouldReceive('getTableColumns')->andReturn([]);
-        $mock->shouldReceive('getTableContentGrid')->andReturn([]);
+        $mock->allows(['getTableColumns' => []]);
+        $mock->allows(['getTableContentGrid' => []]);
 
         return $mock;
     }
 
     #[\Override]
+    /** @return array<int, mixed> */
     public function getTableColumns(): array
     {
         return [];
     }
 
+    /**
+     * @return Table&\Mockery\MockInterface
+     */
     public function getTable(): Table
     {
-        return \Mockery::mock(Table::class);
+        /** @var Table&\Mockery\MockInterface $mock */
+        $mock = \Mockery::mock(Table::class);
+
+        return $mock;
     }
 
     public function getTablePage(): ?int
@@ -55,6 +62,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableFilters(): array
     {
         return [];
@@ -65,6 +73,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed>|null */
     public function getTableFilterState(string $_name): ?array
     {
         return [];
@@ -80,6 +89,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableColumnSearchIndicators(): array
     {
         return [];
@@ -90,6 +100,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return array<int, mixed> */
     public function getTableRecords(): array
     {
         return [];
@@ -105,6 +116,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+    /** @return Collection<int, mixed> */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
         return new Collection();
@@ -120,6 +132,7 @@ class HasTableWithXotTestClass
         return 0;
     }
 
+    /** @return array<int, mixed> */
     public function getAllSelectableTableRecordKeys(): array
     {
         return [];
