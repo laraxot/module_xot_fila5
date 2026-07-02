@@ -8,7 +8,6 @@ use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
 use Modules\Xot\Actions\GetModelClassByModelTypeAction;
 use Modules\Xot\Actions\GetModelTypeByModelAction;
-use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Tests\Fixtures\DemoModel;
 use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
 use PHPUnit\Framework\Assert;
@@ -77,7 +76,7 @@ it('throws when model id is provided but record is missing', function (): void {
 });
 
 it('returns snake model type from model contract instance', function (): void {
-    $model = new class extends Model implements ModelContract {
+    $model = new class extends Model {
     };
 
     $result = app(GetModelTypeByModelAction::class)->execute($model);

@@ -10,6 +10,9 @@ use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecord
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotForm;
@@ -33,11 +36,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public static function getNavigationGroup(): string
     {
         return '';
-    }
-
-    public function getTitle(): string
-    {
-        return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
     }
 
     public function getRecordTitle(): string
@@ -92,9 +90,50 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * @return array<string, Action>
      */
-    protected function getTableActions(): array
+    public function getTableActions(): array
     {
-        return [];
+        $resource = static::$relatedResource ?? static::getResource();
+        $hasView = $resource::hasPage('view');
+
+        return [
+            'view' => Action::make('view')
+                ->label('Visualizza')
+                ->icon('heroicon-o-eye')
+                ->visible(static fn (): bool => (bool) $hasView)
+                ->url(function (Model $record) use ($resource): string {
+                    $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
+                    if ('' === $url) {
+                        $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
+                    }
+
+                    return SafeStringCastAction::cast($url);
+                }),
+            'edit' => Action::make('edit')
+                ->label('Modifica')
+                ->icon('heroicon-o-pencil')
+                ->url(function (Model $record) use ($resource): string {
+                    $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
+                    if ('' === $url) {
+                        $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
+                    }
+
+                    return SafeStringCastAction::cast($url);
+                }),
+        ];
+    }
+
+    public function getTitle(): string
+    {
+        $resource = static::getResource();
+        $recordTitle = $this->getRecordTitle();
+        $relationship = static::getRelationshipName();
+
+        $titleString = (string) $recordTitle;
+
+        return Str::of($relationship)
+            ->title()
+            ->prepend($titleString.' - ')
+            ->toString();
     }
 
     public static function getNavigationLabel(): string

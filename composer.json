@@ -53,7 +53,6 @@
         "spipu/html2pdf": "^5.2",
         "staudenmeir/eloquent-has-many-deep": "*",
         "staudenmeir/laravel-adjacency-list": "*",
-        "symfony/dom-crawler": "*",
         "thecodingmachine/safe": "*",
         "tightenco/parental": "*"
     },
