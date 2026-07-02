@@ -6,7 +6,6 @@ use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,8 +23,6 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
-use Nwidart\Modules\Contracts\RepositoryInterface;
-use Nwidart\Modules\Facades\Module;
 
 use function Safe\define;
 use function Safe\preg_match;
@@ -67,11 +64,16 @@ if (! function_exists('dddx')) {
     }
 }
 
-if (! function_exists('in_admin')) {
+if (! function_exists('getFilename')) {
     /** @param array<string, mixed> $params */
-    function in_admin(array $params = []): bool
+    function getFilename(array $params): string
     {
-        return inAdmin($params);
+        $tmp = debug_backtrace();
+        $class = class_basename($tmp[1]['class'] ?? 'class-unknown');
+        $func = $tmp[1]['function'] ?? 'function-unknown';
+        $params_list = collect($params)->except(['_token', '_method'])->implode('_');
+
+        return Str::slug(str_replace('Controller', '', $class).'_'.str_replace('do_', '', $func).'_'.$params_list);
     }
 }
 
@@ -90,6 +92,40 @@ if (! function_exists('inAdmin')) {
         $segments = Request::segments();
 
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+    }
+}
+
+if (! function_exists('getRouteParameters')) {
+    /**
+     * Parametri della route corrente (es. anno, stabi, repar nei contesti admin progressioni).
+     *
+     * @return array<string, mixed>
+     */
+    function getRouteParameters(): array
+    {
+        if (app()->runningInConsole()) {
+            return [];
+        }
+
+        $route = Route::current();
+        if (null === $route) {
+            return [];
+        }
+
+        $params = $route->parameters();
+        if (! is_array($params)) {
+            return [];
+        }
+
+        /** @var array<string, mixed> $result */
+        $result = [];
+        foreach ($params as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
     }
 }
 

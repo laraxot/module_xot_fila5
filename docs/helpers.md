@@ -33,36 +33,6 @@ if (isRunningTestBench()) {
 
 ---
 
-### `snake_case(string $str): string`
-
-Converte una stringa in formato snake_case.
-
-**Scopo**: Compatibilità con Laravel < 6.0 e utilità comune.
-
-**Uso**:
-```php
-$snake = snake_case('HelloWorld'); // 'hello_world'
-```
-
-**Implementazione**: Usa `Str::snake()` di Laravel.
-
----
-
-### `str_slug(string $str): string`
-
-Genera uno slug da una stringa.
-
-**Scopo**: Compatibilità con Laravel < 6.0 e utilità comune.
-
-**Uso**:
-```php
-$slug = str_slug('Hello World'); // 'hello-world'
-```
-
-**Implementazione**: Usa `Str::slug()` di Laravel.
-
----
-
 ### `dddx(mixed $params): string`
 
 Debug esteso: logga i dati e ritorna JSON formattato.
@@ -305,6 +275,53 @@ function authId(): string|int|null {
 
 ---
 
-**Last Updated**: 2025-01-02
+## 🧹 Cleanup log (2026-07-02)
+
+`ponytail-audit` flagged a set of global function wrappers in `Helper.php` as dead
+code: zero call sites in `Modules/**/*.php`, verified with a project-wide `grep`
+(not limited to `Modules/`), including blade views, config, and routes.
+
+**Removed** (each was a thin `Str::*`/native wrapper with no callers):
+
+- `snake_case`, `str_slug`, `str_singular`, `starts_with`, `ends_with` —
+  Laravel < 6 string-helper polyfills, unused; `Str::snake/slug/singular/startsWith/endsWith`
+  are used directly everywhere instead.
+- `str_contains` — dead on arrival: PHP 8 ships a native `str_contains()`, so
+  `function_exists('str_contains')` is always `true` and this block never loaded.
+- `hex2rgba` — unused color-conversion helper.
+- `req_uri` — unused `$_SERVER['REQUEST_URI']` wrapper.
+- `in_admin` — unused alias/delegate of `inAdmin()`. `inAdmin()` itself is kept
+  (14 real call sites).
+- `isHome`, `isAdminHome`, `isAdmin`, `fullTextWildcards`, `isContainer`, `isItem`
+  — unused route/text helpers.
+- `getModelFields`, `getModelByName`, `getModuleFromModel`, `getModuleNameFromModel`,
+  `getModuleNameFromModelName`, `getAllModules` — unused model/module lookup helpers
+  (superseded by Action classes such as `GetAllModelsByModuleNameAction`).
+
+The one non-obvious grep hit, `str_slug(...)` in
+`Modules/Xot/app/Datas/PdfData.php:108`, turned out to be inside a `/* ... */`
+block comment (already-dead, commented-out code), so no call site needed
+updating.
+
+**Kept** (verified live, or intentional): `isRunningTestBench`, `dddx`,
+`getFilename`, `inAdmin`, `getRouteParameters`, `params2ContainerItem` (2 real
+call sites), `xotModel`, `profile`, `authId`, `trans_string`, `isJson`,
+`xotSeedModelOnce`, and the Pest Laravel Helper Stubs block
+(`actingAs`/`get`/`post`/`put`/`patch`/`delete`/`head`/`options`/
+`followingRedirects`/`test`/`describe`) — an intentional PHPStan-only shim for
+Pest test files.
+
+Also removed now-unused `use` imports left behind by the deletions: `Arr`,
+`URL`, `Nwidart\Modules\Contracts\RepositoryInterface`,
+`Nwidart\Modules\Facades\Module`, `Safe\glob`.
+
+See also: [ponytail-audit-2026-07-02.md](./ponytail-audit-2026-07-02.md) for
+the module's other audit findings (unrelated: `.gitkeep` scaffolds, Contracts
+YAGNI review, Volt/Folio providers).
+
+---
+
+**Last Updated**: 2026-07-02
+
 **PHPStan Level**: 10 compliant
 **Status**: ✅ Production Ready
