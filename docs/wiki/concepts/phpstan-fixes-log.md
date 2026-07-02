@@ -34,7 +34,43 @@ Nota: **`composer run go`** non eseguito in questa sessione: contiene `rm -rf da
 - [php84-upgrade-extension-checklist.md](php84-upgrade-extension-checklist.md)
 - [laravel13-modular-package-compatibility-matrix.md](laravel13-modular-package-compatibility-matrix.md)
 
-## Fix #2: DTO concrete factory `self` instead of `new static()`
+## Fix #N: Sessione 2026-07-01 — bootstrap PHPStan e batch Table PHPDoc
+
+### Problema
+
+- `composer update` necessario: lock disallineato, `larastan` assente.
+- Bootstrap Larastan falliva: namespace errato `Module\Xot\...`, `MixedChartsTable::getTableColumns()` static vs parent instance.
+- ~4725 errori su `Modules/` dopo sblocco (Quaeris ~2609, Chart ~556, Tenant ~501).
+
+### Fix applicati (forward-only)
+
+| File / area | Fix |
+|-------------|-----|
+| `MixedChartsTable.php` | `getTableColumns()` non static; PHPDoc `array<string, Column>` |
+| `QuestionChartsTable.php` | import `Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable` |
+| `JobBatchsTable.php` | namespace `Modules\Job\Filament\...`; rimosso PHPDoc duplicato malformato |
+| 7× `*Table.php` | rimosso `@return array<int\|string, ...>` interno (phpDoc.parseError) |
+| 4× Quaeris Filament | `namespace Modules\Quaeris\app\` → `Modules\Quaeris\` |
+
+### Verifica parziale
+
+```bash
+cd laravel
+./vendor/bin/phpstan analyse Modules/Chart/.../MixedChartsTable.php  # OK
+./vendor/bin/phpstan analyse Modules/Job/.../JobBatchsTable.php      # OK
+```
+
+### Prossimi passi (swarm)
+
+1. Moduli piccoli: Job, Lang, Activity, Gdpr, Media (gate per modulo).
+2. Quaeris: batch namespace `app\` errati + `method.internalClass` / Filament generics.
+3. Trait probe: [phpstan-trait-probes.md](phpstan-trait-probes.md) per `trait.unused`.
+4. Script: `bash bashscripts/tools/phpstan-module.sh {Modulo}`.
+
+### Nota neon
+
+`larastan.noEnvCallsOutsideOfConfig` in ignoreErrors non matcha su alcuni moduli → WARN PHPStan (solo utente modifica `phpstan.neon`).
+
 
 ### Problem
 

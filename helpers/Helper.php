@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
@@ -12,17 +13,17 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
+use Webmozart\Assert\Assert;
 
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
-
-use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
@@ -294,15 +295,7 @@ if (! function_exists('params2ContainerItem')) {
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            if (isset($matches[1], $matches[2])) {
-=======
             if (! empty($matches)) {
->>>>>>> laraxot/dev
-=======
-            if (! empty($matches)) {
->>>>>>> laraxot/dev
                 $sk = $matches[1];
                 $sv = $matches[2];
                 ${$sk}[$sv] = $v;
@@ -464,6 +457,38 @@ if (! function_exists('isJson')) {
     function isJson(string $string): bool
     {
         return json_validate($string);
+    }
+}
+
+if (! function_exists('xotSeedModelOnce')) {
+    /**
+     * Seed exactly one model instance via its factory (idempotent entity seeder).
+     *
+     * @template TModel of Model
+     *
+     * @param  class-string<TModel>  $modelClass
+     *
+     * @return TModel
+     */
+    function xotSeedModelOnce(string $modelClass): Model
+    {
+        Assert::classExists($modelClass);
+
+        /** @var Builder<Model> $query */
+        $query = $modelClass::query();
+
+        if ($query->exists()) {
+            $existing = $query->first();
+            Assert::isInstanceOf($existing, $modelClass);
+
+            return $existing;
+        }
+
+        $factory = (new GetFactoryAction())->execute($modelClass);
+        $model = $factory->createOne();
+        Assert::isInstanceOf($model, $modelClass);
+
+        return $model;
     }
 }
 

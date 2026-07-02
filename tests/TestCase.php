@@ -35,6 +35,8 @@ use function Safe\unlink;
  * @property object|null $extraClass
  * @property Model|null  $baseModel
  * @property string|null $testDir
+ * @property string|null $testSchemaPath
+ * @property string|null $testOutputDir
  * @property mixed       $saved
  * @property mixed       $extra_attributes
  */
@@ -66,6 +68,10 @@ abstract class TestCase extends XotBaseTestCase
     public mixed $baseModel = null;
 
     public ?string $testDir = null;
+
+    public ?string $testSchemaPath = null;
+
+    public ?string $testOutputDir = null;
 
     public mixed $saved = null;
 
