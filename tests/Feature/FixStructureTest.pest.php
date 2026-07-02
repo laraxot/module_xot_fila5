@@ -7,8 +7,8 @@ namespace Modules\Xot\Tests\Feature;
 use Illuminate\Testing\PendingCommand;
 use Modules\Xot\Tests\TestCase;
 
-use function Safe\chmod;
 use function Safe\chdir;
+use function Safe\chmod;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 
@@ -21,7 +21,7 @@ beforeEach(function (): void {
 });
 
 afterEach(function (): void {
-    if (is_string($this->testDir) && $this->testDir !== '') {
+    if (is_string($this->testDir) && '' !== $this->testDir) {
         $this->rrmdir($this->testDir);
     }
 });
