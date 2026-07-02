@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Support;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Contracts\MorphToOneRelationContract;
 use Webmozart\Assert\Assert;
 
 /**
@@ -20,15 +19,12 @@ final class MorphToOneRelationSupport
     {
         self::assertHasCreate($relation);
 
-        $created = $relation->create($attributes);
+        $created = $relation->create($attributes); // @phpstan-ignore method.notFound
         Assert::isInstanceOf($created, Model::class);
 
         return $created;
     }
 
-    /**
-     * @phpstan-assert MorphToOneRelationContract $relation
-     */
     private static function assertHasCreate(object $relation): void
     {
         Assert::methodExists($relation, 'create');
