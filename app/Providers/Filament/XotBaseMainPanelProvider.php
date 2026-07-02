@@ -98,9 +98,9 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
-        $navs = app(GetModulesNavigationItems::class)->execute();
+        //$navs = app(GetModulesNavigationItems::class)->execute();
         $panelNavs = app(GetPanelsNavigationItems::class)->execute();
-        $panel->navigationItems(array_merge($navs, $panelNavs));
+        $panel->navigationItems($panelNavs);
 
         // Temporaneamente disabilitato per debug tenancy
         // $profile_url = MyProfilePage::getUrl(panel: $panel->getId());

@@ -341,11 +341,6 @@ class XotData extends Data implements Wireable
         return $this;
     }
 
-    public function save(): void
-    {
-        dddx('wip');
-    }
-
     public function getPubThemeViewPath(string $key = ''): string
     {
         $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
