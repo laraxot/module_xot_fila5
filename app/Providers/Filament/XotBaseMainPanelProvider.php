@@ -98,7 +98,7 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
-        //$navs = app(GetModulesNavigationItems::class)->execute();
+        // $navs = app(GetModulesNavigationItems::class)->execute();
         $panelNavs = app(GetPanelsNavigationItems::class)->execute();
         $panel->navigationItems($panelNavs);
 
