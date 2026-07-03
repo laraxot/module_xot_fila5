@@ -1,92 +1,90 @@
-# XotBaseResource — pattern Filament
+# XotBaseResource Pattern
 
 ## Panoramica
 
-`XotBaseResource` estende `Filament\Resources\Resource` e centralizza form, tabelle, pagine, relazioni e navigazione (DRY).
+`XotBaseResource` estende `Resource` di Filament e centralizza configurazione comune (DRY).
 
-## Metodi finali (non sovrascrivere)
+## Metodi Finali (NON sovrascrivere)
 
-- `form()` — delega a `getFormSchema()`
-- `table()` — delega a colonne/azioni via `XotBaseListRecords`
+- `form()` — delegato a `getFormSchema()`
+- `table()` — delegato a `XotBaseListRecords::getListTableColumns()`
 
-## Cosa implementare nella Resource figlia
+## Metodi da Implementare nella Resource
 
-| Metodo | Obbligatorio | Note |
-| :--- | :---: | :--- |
-| `getFormSchema()` | sì | Array con chiavi stringa |
-| `getPages()` | no | Solo se servono view, pagine custom o naming Page non standard |
-| `getRelations()` | no | Solo se ci sono RelationManager; non dichiarare `return []` |
-| `getTableColumns()` | no | Colonne in `ListRecords::getListTableColumns()` |
+- `getFormSchema(): array` — schema del form (obbligatorio)
 
-## `getPages()` — quando non dichiararlo
+## Metodi NON Necessari nella Resource
 
-Se la Resource espone solo list/create/edit e le classi Page rispettano la convenzione della base, **non** implementare `getPages()`.
+- `getTableColumns()` — **NON richiesto**, gestito da `XotBaseListRecords::getListTableColumns()` nella pagina ListRecords
+- `getPages()` — NON necessario se standard (CRUD)
+- `getTableActions()` — NON necessario se standard
+Il `XotBaseResource` è una classe astratta che estende il `Resource` di Filament e fornisce una base comune per tutte le risorse dei moduli. Questo pattern segue il principio DRY (Don't Repeat Yourself) centralizzando la configurazione comune delle risorse.
 
-Dettaglio, tabella naming ed esempi: [getpages-redundancy-rule.md](./getpages-redundancy-rule.md).
+## Caratteristiche Principali
 
-```php
-// ✅ Resource minimale
-class CoeffResource extends XotBaseResource
-{
-    protected static ?string $model = Coeff::class;
+### 1. Metodi Finali
+- Il metodo `form()` è dichiarato come `final` e non può essere sovrascritto
+- Utilizzare `getFormSchema()` per personalizzare lo schema del form
+- Il metodo `table()` è dichiarato come `final` e non può essere sovrascritto
+- Utilizzare `getTableColumns()` per personalizzare le colonne della tabella
 
-  /**
-   * @return array<string, \Filament\Schemas\Components\Component>
-   */
-    public static function getFormSchema(): array
-    {
-        return [ /* ... */ ];
-    }
-}
-```
+### 2. Metodi da Implementare
+- `getFormSchema()`: array - Definisce lo schema del form
+- `getTableColumns()`: array - Definisce le colonne della tabella
+- `getRelations()`: array - Definisce le relazioni della risorsa
+- `getPages()`: array - Definisce le pagine associate alla risorsa
 
-Page attese (namespace `{Resource}\Pages\`):
+### 3. Personalizzazione
+Ogni modulo può personalizzare:
+- Lo schema del form attraverso `getFormSchema()`
+- Le colonne della tabella attraverso `getTableColumns()`
+- Le relazioni attraverso `getRelations()`
+- Le pagine attraverso `getPages()`
 
-- `List{Str::plural($name)}` — es. `ListCoeffs` per `CoeffResource`
-- `Create{$name}` — es. `CreateCoeff`
-- `Edit{$name}` — es. `EditCoeff`
-- `View{$name}` — opzionale; la base la registra solo se la classe esiste
-
-## Namespace e tipizzazione
-
-- Namespace: `Modules\{ModuleName}\Filament\Resources`
-- `declare(strict_types=1);` obbligatorio
-- Non dichiarare `$navigationIcon`, `$navigationGroup`, `$navigationSort`, `$translationPrefix` (gestiti altrove)
-- Mai `->label()` sui componenti Filament
-
-## Esempio completo minimale
+## Utilizzo
 
 ```php
-<?php
+namespace Modules\YourModule\Filament\Resources;
 
-declare(strict_types=1);
-
-namespace Modules\Example\Filament\Resources;
-
-use Modules\Example\Models\Example;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-class ExampleResource extends XotBaseResource
-{
-    protected static ?string $model = Example::class;
+use Modules\Xot\Filament\Resources\XotBaseResource;
 
-    /**
-     * @return array<string, \Filament\Schemas\Components\Component>
-     */
+class YourResource extends XotBaseResource
+{
+    protected static ?string $model = YourModel::class;
+
     public static function getFormSchema(): array
     {
         return [
-            // campi con chiavi stringa
+            // Definisci qui lo schema del form
         ];
     }
+
+    public static function getTableColumns(): array
+    {
+        return [
+            // Definisci qui le colonne della tabella
+        ];
+    }
+    // getTableColumns() NON necessario - gestito da XotBaseListRecords
 }
 ```
 
-## Collegamenti
+## Best Practices
 
-- [getpages-redundancy-rule.md](./getpages-redundancy-rule.md)
-- [resources/architecture/forbidden-methods.md](./resources/architecture/forbidden-methods.md)
-- [filament-class-extension-rules.md](../filament-class-extension-rules.md)
-- [../filament-resource-rules.md](../filament-resource-rules.md)
+1. NON sovrascrivere `form()` e `table()` (sono `final`)
+2. Le colonne tabella vanno in `ListRecords::getListTableColumns()`, NON nella Resource
+3. Namespace: `Modules\{ModuleName}\Filament\Resources`
+4. `declare(strict_types=1)` obbligatorio
 
-*Ultimo aggiornamento: giugno 2025*
+Per la guida completa: `filament-class-extension-rules.md`
+1. Non sovrascrivere i metodi `form()` e `table()`
+2. Utilizzare i metodi `getFormSchema()` e `getTableColumns()` per la personalizzazione
+3. Mantenere la coerenza dei namespace seguendo la convenzione `Modules\{ModuleName}\Filament\Resources`
+4. Documentare eventuali personalizzazioni specifiche del modulo
+
+## Note Tecniche
+- Il resource utilizza `strict_types=1`
+- Supporta la configurazione dei metatag attraverso `MetatagData`
+- Integra con il sistema di moduli Laravel attraverso la configurazione `modules.namespace`

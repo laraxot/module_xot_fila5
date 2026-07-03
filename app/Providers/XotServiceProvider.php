@@ -25,9 +25,6 @@ use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
-
-use function Safe\realpath;
-
 use Webmozart\Assert\Assert;
 
 /**

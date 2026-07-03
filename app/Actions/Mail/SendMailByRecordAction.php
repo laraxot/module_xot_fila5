@@ -63,19 +63,16 @@ class SendMailByRecordAction
             $bodyHtml = '';
         }
 
-        $pdfPath = app(PdfByModelAction::class)->execute(
-            model: $record,
-            out: 'path',
-        );
-        if (! is_string($pdfPath)) {
-            throw new \InvalidArgumentException('PDF attachment path must be a string');
-        }
-
         $emailData = new EmailData(
             recipient: $to,
             subject: $subject,
             body_html: $bodyHtml,
-            attachments: [$pdfPath],
+            attachments: [
+                app(PdfByModelAction::class)->execute(
+                    model: $record,
+                    out: 'path',
+                ),
+            ],
         );
         SmtpData::make()->send($emailData);
 

@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Helpers;
 
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\error_log;
 use function Safe\file_get_contents;
@@ -100,7 +99,7 @@ class ResourceFormSchemaGenerator
                     }
                 }
             } catch (\Exception $e) {
-                $results['skipped'][] = is_string($file) ? $file : (SafeStringCastAction::cast($file).': '.$e->getMessage());
+                $results['skipped'][] = is_string($file) ? $file : (((string) $file).': '.$e->getMessage());
             }
         }
 

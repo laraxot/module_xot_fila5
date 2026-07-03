@@ -10,7 +10,6 @@ namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\file;
 
@@ -90,7 +89,7 @@ class GenerateFormByFileAction
         Assert::isArray($source);
         $body = '';
         foreach (\array_slice($source, $start_line, $length) as $line) {
-            $body .= SafeStringCastAction::cast($line);
+            $body .= (string) $line;
         }
 
         // Otteniamo i metodi della classe risorsa

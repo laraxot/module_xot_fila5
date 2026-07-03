@@ -134,7 +134,7 @@ class XotData extends Data implements Wireable
         /** @var (Model&UserContract)|null $user */
         $user = $user_class::query()->where('email', $email)->first();
 
-        if (null === $user) {
+        if ($user === null) {
             throw new \Exception('user not found for email '.$email);
         }
 

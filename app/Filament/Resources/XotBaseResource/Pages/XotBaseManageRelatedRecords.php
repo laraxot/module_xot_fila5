@@ -14,8 +14,6 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Override;
 
@@ -28,10 +26,7 @@ use Override;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
-    use HasRelationshipModelClass;
-    use HasXotTable {
-        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-    }
+    use HasXotTable;
     use InteractsWithForms;
     // protected static string $resource;
 
@@ -132,7 +127,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
-                    return SafeStringCastAction::cast($url);
+                    return is_string($url) ? $url : (string) $url;
                 }),
             'edit' => Action::make('edit')
                 ->label('Modifica')
@@ -145,7 +140,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
-                    return SafeStringCastAction::cast($url);
+                    return is_string($url) ? $url : (string) $url;
                 }),
             // 'view' => Action::make('view')
             //     ->label('Visualizza')

@@ -2,9 +2,21 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Tests\TestCase;
+namespace Modules\Xot\Tests\Unit;
 
-uses(TestCase::class);
+use Modules\UI\Models\Asset;
 
-it('basic test works', function (): void {
+it('basic test works', function () {
+    $this->assertTrue(true);
+});
+
+it('can create a test asset', function () {
+    $asset = Asset::factory()->create([
+        'name' => 'Test Asset',
+        'path' => '/test/path',
+    ]);
+
+    expect($asset)->toBeInstanceOf(Asset::class);
+    expect($asset->name)->toBe('Test Asset');
+    expect($asset->path)->toBe('/test/path');
 });

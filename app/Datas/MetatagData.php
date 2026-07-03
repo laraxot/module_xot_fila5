@@ -384,8 +384,6 @@ class MetatagData extends Data implements Wireable
 
     /**
      * @deprecated Use getThemeColors() instead as it better reflects the semantic purpose
-     *
-     * @return array<string, array{key?: string, color: string, hex?: string}>
      */
     public function getColors(): array
     {

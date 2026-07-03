@@ -10,7 +10,6 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 use Filament\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
-use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByQuery;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
@@ -84,15 +83,13 @@ class ExportXlsLazyAction extends Action
                 }
 
                 $lazyCursor = $lazy->cursor();
-                /** @var LazyCollection<int, mixed> $exportCollection */
-                $exportCollection = $lazyCursor->map(static fn (mixed $row): mixed => $row);
 
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
-                        ->execute($exportCollection, $filename, $transKey, array_values($fields));
+                        ->execute($lazyCursor, $filename, $transKey, array_values($fields));
                 }
 
-                return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, array_values($fields));
+                return app(ExportXlsByLazyCollection::class)->execute($lazyCursor, $filename, array_values($fields));
             });
     }
 

@@ -13,9 +13,6 @@ class SaveJsonArrayAction
 {
     use QueueableAction;
 
-    /**
-     * @param array<string, mixed> $data
-     */
     public function execute(array $data, string $filename): bool
     {
         $content = json_encode($data, JSON_PRETTY_PRINT);

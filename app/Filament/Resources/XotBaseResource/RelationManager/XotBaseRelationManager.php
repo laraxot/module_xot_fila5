@@ -9,7 +9,6 @@ use Filament\Support\Components\Component;
 use Filament\Tables;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
 /**
@@ -17,10 +16,7 @@ use Modules\Xot\Filament\Traits\HasXotTable;
  */
 abstract class XotBaseRelationManager extends RelationManager
 {
-    use HasRelationshipModelClass;
-    use HasXotTable {
-        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-    }
+    use HasXotTable;
 
     protected static string $relationship = '';
 

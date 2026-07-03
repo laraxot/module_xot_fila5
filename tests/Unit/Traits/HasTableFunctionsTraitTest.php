@@ -2,39 +2,60 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Traits;
+
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsCustomSlugProbe;
-use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsTraitProbe;
-use PHPUnit\Framework\Assert;
+use Modules\Xot\Traits\HasTableFunctionsTrait;
 
 it('gets table columns', function (): void {
-    $probe = new HasTableFunctionsTraitProbe();
+    $class = new class {
+        use HasTableFunctionsTrait;
+    };
 
-    $columns = $probe->getTableColumns();
-    Assert::assertInstanceOf(TextColumn::class, $columns['name']);
-    Assert::assertArrayHasKey('id', $columns);
+    $columns = $class->getTableColumns();
+    expect($columns)->toBeArray()
+        ->and($columns['id'])->toBeInstanceOf(TextColumn::class)
+        ->and($columns['name'])->toBeInstanceOf(TextColumn::class);
 });
 
 it('gets table actions', function (): void {
-    $probe = new HasTableFunctionsCustomSlugProbe();
+    $class = new class {
+        use HasTableFunctionsTrait;
 
-    $actions = $probe->getTableActions();
-    Assert::assertInstanceOf(Action::class, $actions['delete']);
-    Assert::assertArrayHasKey('edit', $actions);
+        protected function getResourceSlug(): string
+        {
+            return 'test-slug';
+        }
+    };
+
+    $actions = $class->getTableActions();
+    expect($actions)->toBeArray()
+        ->and($actions['edit'])->toBeInstanceOf(Action::class)
+        ->and($actions['delete'])->toBeInstanceOf(Action::class);
 });
 
 it('gets table bulk actions', function (): void {
-    $probe = new HasTableFunctionsTraitProbe();
+    $class = new class {
+        use HasTableFunctionsTrait;
+    };
 
-    $bulkActions = $probe->getTableBulkActions();
-    Assert::assertInstanceOf(BulkAction::class, $bulkActions['delete']);
+    $bulkActions = $class->getTableBulkActions();
+    expect($bulkActions)->toBeArray()
+        ->and($bulkActions['delete'])->toBeInstanceOf(BulkAction::class);
 });
 
 it('has default resource slug', function (): void {
-    $probe = new HasTableFunctionsTraitProbe();
+    $class = new class {
+        use HasTableFunctionsTrait;
 
-    Assert::assertSame('default', $probe->exposeResourceSlug());
+        // Accessing protected method via reflection or public wrapper
+        public function getSlug(): string
+        {
+            return $this->getResourceSlug();
+        }
+    };
+
+    expect($class->getSlug())->toBe('default');
 });

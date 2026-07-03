@@ -28,7 +28,6 @@ class EnvWidget extends Widget implements HasActions, HasForms
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
-    /** @var list<string> */
     public array $only = [];
 
     protected string $view = 'xot::filament.widgets.env';

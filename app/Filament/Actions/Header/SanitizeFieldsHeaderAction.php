@@ -19,7 +19,6 @@ use Webmozart\Assert\Assert;
 
 class SanitizeFieldsHeaderAction extends Action
 {
-    /** @var list<string> */
     public array $fields = [];
 
     protected function setUp(): void
@@ -63,9 +62,6 @@ class SanitizeFieldsHeaderAction extends Action
             });
     }
 
-    /**
-     * @param list<string> $fields
-     */
     public function setFields(array $fields): self
     {
         $this->fields = $fields;

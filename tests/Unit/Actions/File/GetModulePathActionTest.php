@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\File;
+
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Nwidart\Modules\Facades\Module;
-use PHPUnit\Framework\Assert;
 
 it('gets module path from facade correctly', function (): void {
-    /* @var \Modules\Xot\Tests\TestCase $this */
     Module::shouldReceive('getModulePath')
         ->once()
         ->with('Xot')
@@ -18,14 +17,13 @@ it('gets module path from facade correctly', function (): void {
     $action = app(GetModulePathAction::class);
     $result = $action->execute('Xot');
 
-    Assert::assertSame('/path/to/Xot/', $result);
+    expect($result)->toBe('/path/to/Xot/');
 });
 
 it('gets module path from fallback correctly', function (): void {
-    /* @var \Modules\Xot\Tests\TestCase $this */
     Module::shouldReceive('getModulePath')
         ->once()
-        ->andThrow(new Exception('Module not found'));
+        ->andThrow(new \Exception('Module not found'));
 
     // We assume Modules directory exists in base_path
     $modulesPath = base_path('Modules');
@@ -43,6 +41,7 @@ it('gets module path from fallback correctly', function (): void {
     // Case-insensitive search
     $result = $action->execute('testmodule');
 
-    Assert::assertSame($dummyModule, $result);
+    expect($result)->toBe($dummyModule);
+
     File::deleteDirectory($dummyModule);
 });

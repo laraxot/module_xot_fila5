@@ -6,7 +6,6 @@ namespace Modules\Xot\Actions\View;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -39,13 +38,13 @@ class GetViewByClassAction
         $mapped = Arr::map($after, function (string $value, int $key) use ($after) {
             if ($key > 0 && isset($after[$key - 1])) {
                 $prevValue = $after[$key - 1];
-                $prevValueStr = SafeStringCastAction::cast($prevValue);
+                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
             if ($key > 0 && isset($after[$key - 2])) {
                 $prevValue = $after[$key - 2];
-                $prevValueStr = SafeStringCastAction::cast($prevValue);
+                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }

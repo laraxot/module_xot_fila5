@@ -31,4 +31,4 @@ _docs/
 *.backup
 *.backup.*
 *.backup-*
-*.backup_*agentdb.rvf
+*.backup_*

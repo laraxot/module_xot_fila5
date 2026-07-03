@@ -13,9 +13,6 @@ use Illuminate\Contracts\Support\Jsonable;
 
 use function Safe\json_encode;
 
-/**
- * @implements Arrayable<string, string>
- */
 readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonable
 {
     public function __construct(
@@ -24,7 +21,6 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
     ) {
     }
 
-    /** @return array<string, string> */
     public function toArray(): array
     {
         return [
@@ -33,7 +29,6 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
         ];
     }
 
-    /** @return array<string, string> */
     #[\Override]
     public function jsonSerialize(): array
     {

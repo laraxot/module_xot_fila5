@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
-use Illuminate\Support\Facades\View as ViewFacade;
-use Illuminate\View\View;
-use Modules\Xot\Actions\GetViewByClassAction;
-use PHPUnit\Framework\Assert;
+namespace Modules\Xot\Tests\Unit\Actions;
 
-test('get view actions work', function (): void {
+use Illuminate\Contracts\View\View as ViewContract;
+use Illuminate\Support\Facades\View;
+use Modules\Xot\Actions\GetViewByClassAction;
+
+test('get view actions work', function () {
     $classAction = app(GetViewByClassAction::class);
 
-    $mockView = Mockery::mock(View::class);
-    $mockView->allows(['getName' => 'test-view-action']);
+    $mockView = \Mockery::mock(ViewContract::class);
+    $mockView->shouldReceive('getName')->andReturn('test-view-action');
 
-    ViewFacade::partialMock()->allows(['make' => $mockView]);
+    View::shouldReceive('make')
+        ->andReturn($mockView);
 
     $view = $classAction->execute('Modules\Xot\Actions\TestViewAction');
-    Assert::assertInstanceOf(View::class, $view);
-    Assert::assertSame('test-view-action', $view->getName());
+    expect($view->getName())->toBe('test-view-action');
 });

@@ -8,7 +8,6 @@ use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\StateContract;
 use Modules\Xot\Filament\Traits\TransTrait;
 
@@ -172,9 +171,6 @@ abstract class XotBaseState implements StateContract
         return false;
     }
 
-    /**
-     * @return array<string, mixed>
-     */
     public static function getOptions(): array
     {
         if (! method_exists(static::class, 'getStateMapping')) {
@@ -185,17 +181,14 @@ abstract class XotBaseState implements StateContract
         if (! \is_object($mapping) || ! method_exists($mapping, 'toArray')) {
             return [];
         }
-        /** @var array<string, mixed> $states */
+        /** @var array<int|string, mixed> $states */
         $states = $mapping->toArray();
 
-        $labels = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
+        $states = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
             static::class,
-            'states.'.SafeStringCastAction::cast($state).'.label',
+            'states.'.(is_string($state) ? $state : (string) $state).'.label',
         ));
 
-        /** @var array<string, mixed> $result */
-        $result = $labels;
-
-        return $result;
+        return $states;
     }
 }

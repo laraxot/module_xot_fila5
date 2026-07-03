@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
@@ -24,23 +25,23 @@ use Illuminate\Support\Carbon;
  * @property UserContract|null  $user
  * @property UserContract|null  $author
  *
- * @method mixed                                                           getKey()
- * @method string                                                          getRouteKey()
- * @method string                                                          getRouteKeyName()
- * @method string                                                          getTable()
- * @method mixed                                                           with($array)
- * @method array<string, mixed>                                            getFillable()
- * @method mixed                                                           fill($array)
- * @method mixed                                                           getConnection()
- * @method mixed                                                           update($params)
- * @method mixed                                                           delete()
- * @method mixed                                                           detach($params)
- * @method mixed                                                           attach($params)
- * @method mixed                                                           save($params)
- * @method array<string, mixed>                                            treeLabel()
- * @method array<string, mixed>                                            treeSons()
- * @method array<string, mixed>                                            toArray()
- * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
+ * @method mixed     getKey()
+ * @method string    getRouteKey()
+ * @method string    getRouteKeyName()
+ * @method string    getTable()
+ * @method mixed     with($array)
+ * @method array     getFillable()
+ * @method mixed     fill($array)
+ * @method mixed     getConnection()
+ * @method mixed     update($params)
+ * @method mixed     delete()
+ * @method mixed     detach($params)
+ * @method mixed     attach($params)
+ * @method mixed     save($params)
+ * @method array     treeLabel()
+ * @method array     treeSons()
+ * @method array     toArray()
+ * @method BelongsTo user()
  *
  * @phpstan-require-extends Model
  *

@@ -49,7 +49,7 @@ class HasManyAction
 
     private function handleDirectUpdate(RelationData $relationDTO, HasManyUpdateData $updateData): void
     {
-        /** @var Builder<Model> $query */
+        /** @var Builder $query */
         $query = $relationDTO->related->newQuery();
 
         $query->where($updateData->foreignKey, $updateData->parentKey)->update([$updateData->foreignKey => null]);

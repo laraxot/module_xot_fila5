@@ -11,22 +11,16 @@ class HandlersRepository
 {
     /**
      * The custom handlers reporting exceptions.
-     *
-     * @var array<int, callable>
      */
     protected array $reporters = [];
 
     /**
      * The custom handlers rendering exceptions.
-     *
-     * @var array<int, callable>
      */
     protected array $renderers = [];
 
     /**
      * The custom handlers rendering exceptions in console.
-     *
-     * @var array<int, callable>
      */
     protected array $consoleRenderers = [];
 
@@ -56,8 +50,6 @@ class HandlersRepository
 
     /**
      * Retrieve all reporters handling the given exception.
-     *
-     * @return array<int, callable>
      */
     public function getReportersByException(\Throwable $e): array
     {
@@ -69,8 +61,6 @@ class HandlersRepository
 
     /**
      * Retrieve all renderers handling the given exception.
-     *
-     * @return array<int, callable>
      */
     public function getRenderersByException(\Throwable $e): array
     {
@@ -82,8 +72,6 @@ class HandlersRepository
 
     /**
      * Retrieve all console renderers handling the given exception.
-     *
-     * @return array<int, callable>
      */
     public function getConsoleRenderersByException(\Throwable $e): array
     {

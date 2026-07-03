@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Cast;
+
 use Modules\Xot\Actions\Cast\SafeNullableStringCastAction;
-use PHPUnit\Framework\Assert;
 
 it('casts nullable string values consistently', function (): void {
     $action = app(SafeNullableStringCastAction::class);
 
-    Assert::assertSame('test', $action->execute('test'));
-    Assert::assertSame('123', $action->execute(123));
-    Assert::assertSame('1', $action->execute(true));
-    Assert::assertNull($action->execute(null));
-    Assert::assertNull($action->execute([]));
-    Assert::assertNull($action->execute(new stdClass()));
+    expect($action->execute('test'))->toBe('test');
+    expect($action->execute(123))->toBe('123');
+    expect($action->execute(true))->toBe('1');
+    expect($action->execute(null))->toBeNull();
+    expect($action->execute([]))->toBeNull();
+    expect($action->execute(new \stdClass()))->toBeNull();
 });
 
 it('uses static nullable string cast method correctly', function (): void {
-    Assert::assertSame('456', SafeNullableStringCastAction::cast(456));
-    Assert::assertNull(SafeNullableStringCastAction::cast(null));
+    expect(SafeNullableStringCastAction::cast(456))->toBe('456');
+    expect(SafeNullableStringCastAction::cast(null))->toBeNull();
 });

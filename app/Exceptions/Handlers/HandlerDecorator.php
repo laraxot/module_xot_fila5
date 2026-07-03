@@ -18,9 +18,6 @@ class HandlerDecorator implements ExceptionHandler
         $this->repository = $repository;
     }
 
-    /**
-     * @param array<int, mixed> $parameters
-     */
     public function __call(string $name, array $parameters): mixed
     {
         /** @var callable */

@@ -1,4 +1,5 @@
 {
+    "name": "laraxot/module_xot_fila3",
     "name": "laraxot/module_xot_fila5",
     "description": "xot module, heart of the laraxot repository",
     "keywords": [
@@ -20,7 +21,6 @@
     ],
     "require": {
         "php": "^8.3",
-        "awobaz/compoships": "^3.0",
         "calebporzio/sushi": "^2.5",
         "coolsam/panel-modules": "*",
         "doctrine/dbal": "*",
@@ -29,7 +29,7 @@
         "guzzlehttp/guzzle": "*",
         "laravel/folio": "^1.1",
         "laravel/framework": "^13.0",
-        "laravel/pennant": "*",
+        "laravel/pennant": "^1.11",
         "laravel/pulse": "^1.2",
         "laravel/tinker": "*",
         "livewire/flux": "^2.1.1",
@@ -45,16 +45,16 @@
         "spatie/laravel-model-status": "*",
         "spatie/laravel-package-tools": "*",
         "spatie/laravel-permission": "*",
-        "spatie/laravel-queueable-action": "*",
-        "spatie/laravel-responsecache": "*",
-        "spatie/laravel-schemaless-attributes": "*",
-        "spatie/laravel-sluggable": "*",
+        "spatie/laravel-queueable-action": "^2.16",
+        "spatie/laravel-responsecache": "^7.6",
+        "spatie/laravel-schemaless-attributes": "^2.5",
+        "spatie/laravel-sluggable": "^3.6",
         "spatie/laravel-tags": "*",
         "spipu/html2pdf": "^5.2",
         "staudenmeir/eloquent-has-many-deep": "*",
-        "staudenmeir/laravel-adjacency-list": "*",
+        "staudenmeir/laravel-adjacency-list": "^1.22",
         "symfony/dom-crawler": "*",
-        "thecodingmachine/safe": "*",
+        "thecodingmachine/safe": "^3.0",
         "tightenco/parental": "*"
     },
     "require_comment": {
@@ -101,17 +101,19 @@
             "Modules\\Xot\\": "app/",
             "Modules\\Xot\\Database\\Factories\\": "database/factories/",
             "Modules\\Xot\\Database\\Seeders\\": "database/seeders/",
-            "Modules\\Xot\\Tests\\": "tests/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
+        },
+        "psr-4_comment": {
+            "Modules\\Xot\\Tests\\": "tests/"
         },
         "files": [
             "helpers/Helper.php"
         ]
     },
     "autoload-dev": {
-        "files": [
-            "tests/Support/helpers.php"
-        ]
+        "psr-4": {
+            "Modules\\Xot\\Tests\\": "tests/"
+        }
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",

@@ -18,9 +18,6 @@ class ProbeResource extends XotBaseResource
         return [];
     }
 
-    /**
-     * @return array<int, string>
-     */
     public static function getCustomStepSchema(): array
     {
         return ['ok'];

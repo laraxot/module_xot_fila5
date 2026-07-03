@@ -2,24 +2,25 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Cast;
+
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use PHPUnit\Framework\Assert;
 
 it('casts various values to string correctly', function (): void {
     $action = app(SafeStringCastAction::class);
 
-    Assert::assertSame('test', $action->execute('test'));
-    Assert::assertSame('', $action->execute(null));
-    Assert::assertSame('1', $action->execute(true));
-    Assert::assertSame('0', $action->execute(false));
-    Assert::assertSame('123', $action->execute(123));
-    Assert::assertSame('1.23', $action->execute(1.23));
+    expect($action->execute('test'))->toBe('test');
+    expect($action->execute(null))->toBe('');
+    expect($action->execute(true))->toBe('1');
+    expect($action->execute(false))->toBe('0');
+    expect($action->execute(123))->toBe('123');
+    expect($action->execute(1.23))->toBe('1.23');
+
     // Non-scalar
-    Assert::assertSame('', $action->execute(['a']));
-    Assert::assertSame('', $action->execute(new stdClass()));
+    expect($action->execute(['a']))->toBe('');
+    expect($action->execute(new \stdClass()))->toBe('');
 });
 
 it('uses static string cast method correctly', function (): void {
-    Assert::assertSame('456', SafeStringCastAction::cast(456));
+    expect(SafeStringCastAction::cast(456))->toBe('456');
 });

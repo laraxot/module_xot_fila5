@@ -11,15 +11,15 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param array<int, string> $types
+ * @param array<int, string> $categories
+ * @param string $editor
+ * @param array<string, string> $defaultMeta
+ * @param array<string, bool> $features
  */
 final class ArticleData extends Data
 {
-    /**
-     * @param array<int, string>    $types
-     * @param array<int, string>    $categories
-     * @param array<string, string> $defaultMeta
-     * @param array<string, bool>   $features
-     */
     public function __construct(
         public readonly array $types = ['post', 'page', 'news'],
         public readonly array $categories = [],

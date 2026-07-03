@@ -15,7 +15,6 @@ use Spatie\LaravelData\Data;
  */
 class RelationData extends Data
 {
-    /** @var Relation<Model, Model, mixed> */
     public Relation $rows;
 
     /** @var array<string, mixed> */

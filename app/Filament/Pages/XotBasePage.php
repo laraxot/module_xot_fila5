@@ -307,7 +307,6 @@ abstract class XotBasePage extends Page implements HasForms
         // Per ora lasciamo vuoto, può essere implementato nelle classi figlie
     }
 
-    /** @return list<Action> */
     protected function getFormActions(): array
     {
         return [

@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Arr;
+
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_decode;
-use function Safe\tempnam;
 
 test('save array action saves as php by default', function () {
     $data = ['foo' => 'bar'];
@@ -17,9 +14,12 @@ test('save array action saves as php by default', function () {
     $action = app(SaveArrayAction::class);
     $result = $action->execute($data, $filename);
 
-    Assert::assertTrue($result);
+    expect($result)->toBeTrue()
+        ->and(File::exists($filename))->toBeTrue();
+
     $savedData = include $filename;
-    Assert::assertSame($data, $savedData);
+    expect($savedData)->toBe($data);
+
     File::delete($filename);
 });
 
@@ -30,12 +30,16 @@ test('save array action saves as json', function () {
     $action = app(SaveArrayAction::class);
     $result = $action->execute($data, $filename, 'json');
 
-    Assert::assertTrue($result);
+    expect($result)->toBeTrue()
+        ->and(File::exists($filename))->toBeTrue();
+
     $savedData = json_decode(File::get($filename), true);
-    Assert::assertSame($data, $savedData);
+    expect($savedData)->toBe($data);
+
     File::delete($filename);
 });
 
 test('save array action throws exception for unsupported format', function () {
     $action = app(SaveArrayAction::class);
+    expect(fn () => $action->execute([], 'test.txt', 'txt'))->toThrow(\InvalidArgumentException::class);
 });

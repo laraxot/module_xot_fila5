@@ -13,13 +13,8 @@ use Illuminate\Database\Schema\ForeignIdColumnDefinition;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
-
-use function Safe\copy;
-
 use Webmozart\Assert\Assert;
 
 /**
@@ -281,13 +276,13 @@ abstract class XotBaseMigration extends LaravelMigration
     protected function extractPrimaryKeyCount(mixed $result): int
     {
         if (is_array($result)) {
-            return isset($result['count']) ? SafeIntCastAction::cast($result['count']) : 0;
+            return isset($result['count']) ? (int) $result['count'] : 0;
         }
 
         if (is_object($result)) {
             $resultAsArray = (array) $result;
 
-            return isset($resultAsArray['count']) ? SafeIntCastAction::cast($resultAsArray['count']) : 0;
+            return isset($resultAsArray['count']) ? (int) $resultAsArray['count'] : 0;
         }
 
         return 0;
@@ -532,7 +527,7 @@ abstract class XotBaseMigration extends LaravelMigration
                     $data[$c] = $row->{$c};
                 }
             }
-            $this->uuidToBigintIdMapping[SafeStringCastAction::cast($row->id)] = $newId;
+            $this->uuidToBigintIdMapping[(string) $row->id] = $newId;
             $conn->table($newTable)->insert($data);
             ++$newId;
         }
@@ -545,11 +540,11 @@ abstract class XotBaseMigration extends LaravelMigration
 
         foreach ($rows as $p) {
             $p = (object) $p;
-            $newId = $this->uuidToBigintIdMapping[SafeStringCastAction::cast($p->id)] ?? null;
+            $newId = $this->uuidToBigintIdMapping[(string) $p->id] ?? null;
             if (null !== $newId) {
                 $conn->table($pivotTable)
                     ->where($fkColumn, $p->id)
-                    ->update([$fkColumn => SafeStringCastAction::cast($newId)]);
+                    ->update([$fkColumn => (string) $newId]);
             }
         }
 
@@ -562,7 +557,7 @@ abstract class XotBaseMigration extends LaravelMigration
                 [$db, $pivotTable, '%'.$fkColumn.'%']
             );
             $constraintName = is_object($constraint) && isset($constraint->CONSTRAINT_NAME)
-                ? SafeStringCastAction::cast($constraint->CONSTRAINT_NAME)
+                ? (string) $constraint->CONSTRAINT_NAME
                 : null;
             if (null !== $constraintName) {
                 $conn->statement('ALTER TABLE '.$pivotTable.' DROP INDEX '.$constraintName);

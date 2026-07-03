@@ -28,7 +28,7 @@ trait HasExtraTrait
     /**
      * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
      *
-     * @return MorphOne<Model, $this>
+     * return MorphOne<ExtraContract>
      */
     public function extra(): MorphOne
     {
@@ -49,7 +49,6 @@ trait HasExtraTrait
         return $this->morphOne($extraClass, 'model');
     }
 
-    /** @return array<string, mixed>|bool|float|int|string|null */
     public function getExtra(string $name): array|bool|float|int|string|null
     {
         $extra = $this->extra;
@@ -65,16 +64,7 @@ trait HasExtraTrait
         $value = $attributes->get($name);
 
         if (\is_array($value)) {
-            $result = [];
-            foreach ($value as $key => $item) {
-                if (! \is_string($key)) {
-                    continue;
-                }
-
-                $result[$key] = $item;
-            }
-
-            return $result;
+            return $value;
         }
 
         if (\is_bool($value) || \is_float($value) || \is_int($value) || \is_string($value)) {
