@@ -11,6 +11,14 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param bool                                                          $enable
+ * @param string                                                        $driver
+ * @param array<string, string|int>                                     $plans
+ * @param string                                                        $currency
+ * @param array<int, class-string<\Illuminate\Database\Eloquent\Model>> $allowedModels
+ * @param bool                                                          $trialEnabled
+ * @param int                                                           $trialDays
  */
 final class SubscriptionData extends Data
 {

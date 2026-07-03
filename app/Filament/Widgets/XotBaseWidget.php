@@ -134,7 +134,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                     }
                 }
 
-                return self::normalizeFormFill($res);
+                return $res;
             } catch (\Exception $e) {
                 // Se toArray() fallisce (problemi con enum), usa getAttributes()
                 return self::normalizeFormFill($model->getAttributes());
@@ -243,20 +243,5 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
                 throw $e;
             }
         }
-    }
-
-    /**
-     * @param array<int|string, mixed> $data
-     *
-     * @return array<string, mixed>
-     */
-    protected static function normalizeFormFill(array $data): array
-    {
-        $normalized = [];
-        foreach ($data as $key => $value) {
-            $normalized[(string) $key] = $value;
-        }
-
-        return $normalized;
     }
 }

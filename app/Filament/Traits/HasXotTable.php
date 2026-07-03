@@ -362,14 +362,29 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
-        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
+        if (method_exists($this, 'getRelationship')) {
+            $relationship = $this->getRelationship();
+            if ($relationship instanceof Relation) {
+                $modelClass = get_class($relationship->getModel());
+                Assert::subclassOf($modelClass, Model::class);
+
+                /* @var class-string<Model> $modelClass */
+                return $modelClass;
+            }
+        }
+
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
             Assert::classExists($model);
             Assert::subclassOf($model, Model::class);
 
-            return $model;
+                /* @var class-string<Model> $model */
+                return $model;
+            }
+            if ($model instanceof Model) {
+                return $model::class;
+            }
         }
 
         throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);

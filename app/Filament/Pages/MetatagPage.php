@@ -36,15 +36,8 @@ class MetatagPage extends XotBasePage
             $config = [];
         }
 
-        $state = [];
-        foreach ($config as $key => $value) {
-            if (! is_string($key)) {
-                continue;
-            }
-            $state[$key] = $value;
-        }
-
-        $this->form->fill($state);
+        /* @var array<string, mixed> $data */
+        $this->form->fill($data);
     }
 
     public function schema(Schema $schema): Schema

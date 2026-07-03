@@ -11,6 +11,13 @@ use Spatie\LaravelData\Data;
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  *
  * @phpstan-consistent-constructor
+ *
+ * @param string             $disk
+ * @param array<int, string> $disks
+ * @param array<int, string> $allowedExt
+ * @param int                $maxSize
+ * @param string             $routePrefix
+ * @param bool               $enableCrop
  */
 final class FilemanagerData extends Data
 {
