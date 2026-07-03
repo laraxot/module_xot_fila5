@@ -14,7 +14,7 @@ use Webmozart\Assert\Assert;
 final class MorphToOneRelationSupport
 {
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     public static function create(object $relation, array $attributes): Model
     {

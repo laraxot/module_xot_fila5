@@ -364,7 +364,7 @@ trait HasXotTable
                 $modelClass = get_class($relationship->getModel());
                 Assert::subclassOf($modelClass, Model::class);
 
-                /** @var class-string<Model> $modelClass */
+                /* @var class-string<Model> $modelClass */
                 return $modelClass;
             }
         }
@@ -375,7 +375,7 @@ trait HasXotTable
                 Assert::classExists($model);
                 Assert::subclassOf($model, Model::class);
 
-                /** @var class-string<Model> $model */
+                /* @var class-string<Model> $model */
                 return $model;
             }
             if ($model instanceof Model) {

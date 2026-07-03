@@ -12,12 +12,12 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
- * @param string $disk
+ * @param string             $disk
  * @param array<int, string> $disks
  * @param array<int, string> $allowedExt
- * @param int $maxSize
- * @param string $routePrefix
- * @param bool $enableCrop
+ * @param int                $maxSize
+ * @param string             $routePrefix
+ * @param bool               $enableCrop
  */
 final class FilemanagerData extends Data
 {
