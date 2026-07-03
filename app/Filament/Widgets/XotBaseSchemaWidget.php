@@ -9,8 +9,6 @@ use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Arr;
-use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Webmozart\Assert\Assert;
 
 /**
@@ -32,7 +30,7 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
- * @property Schema $form
+ * @property Schema                    $form
  * @property array<string, mixed>|null $data
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
@@ -83,12 +81,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
             $method = static::schemaMethod();
 
             if (! method_exists($formClass, $method)) {
-                throw new \LogicException(sprintf(
-                    'formClass()=%s must expose method %s() (widget %s).',
-                    $formClass,
-                    $method,
-                    static::class,
-                ));
+                throw new \LogicException(sprintf('formClass()=%s must expose method %s() (widget %s).', $formClass, $method, static::class));
             }
 
             /** @var array<int|string, Component> $components */
@@ -109,11 +102,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     protected static function resourceFormSchema(string $formClass, string $method): array
     {
         if (! method_exists($formClass, $method)) {
-            throw new \InvalidArgumentException(sprintf(
-                'Resource form schema method %s::%s() does not exist.',
-                $formClass,
-                $method,
-            ));
+            throw new \InvalidArgumentException(sprintf('Resource form schema method %s::%s() does not exist.', $formClass, $method));
         }
 
         /** @var callable(): array<int|string, Component> $callable */
@@ -164,6 +153,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 
     /**
      * @param array<mixed> $values
+     *
      * @return array<string, mixed>
      */
     private static function normalizeFormFill(array $values): array
