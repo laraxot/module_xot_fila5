@@ -3,7 +3,7 @@ title: "Second Brain Local Discipline"
 type: concept
 tags: [second-brain, llm-wiki, on-demand, local-docs]
 created: 2026-05-19
-updated: 2026-06-05
+updated: 2026-07-01
 qmd: "second brain local discipline module theme wiki on-demand xot canonical"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -50,7 +50,7 @@ Distillato Fixcity — **non** copiare i tip nel bootstrap:
 
 | Fase | Tip | Azione agente |
 |------|-----|----------------|
-| Checkpoint | 001 | `git status`; patch forward-only; no `stash`/`reset` senza ordine utente |
+| Checkpoint | 001 | `git status`; patch forward-only; **mai** `git restore` — [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md) |
 | Piano | 003/017 | QMD + wiki → piano breve → act |
 | Contesto | 009/013 | `llm-wiki-qmd.sh search -n 5`; no dump cartelle intere |
 | Spec | 008 | BMAD story + dev-story prima del codice |
@@ -71,6 +71,7 @@ Before closing a docs update in this module/theme:
 4. Frontmatter: `issues` + `discussions` URL **numerati e pertinenti** — `validate-wiki-frontmatter.sh`.
 5. Link it from `index.md` when it should be discoverable by future agents.
 6. Append `log.md` for reusable decisions.
+7. On bugfix/runtime errors: apply [bugfix-business-logic-before-type.md](../../../../../../docs/wiki/patterns/bugfix-business-logic-before-type.md) before patching types.
 
 ## Root References
 
@@ -79,3 +80,4 @@ Before closing a docs update in this module/theme:
 - [ai-harness-module-discipline.md](../../docs/wiki/concepts/ai-harness-module-discipline.md)
 - [ai-harness-xot-discipline.md](./ai-harness-xot-discipline.md)
 - [on-demand-pattern.md](../../../../../../docs/wiki/rules/on-demand-pattern.md)
+- [git-forward-only-study-old-version.md](../../../../../../docs/wiki/concepts/git-forward-only-study-old-version.md)

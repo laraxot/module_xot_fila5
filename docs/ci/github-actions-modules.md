@@ -10,10 +10,11 @@ Definire il set di GitHub Actions che ogni modulo e ogni tema deve avere nella p
 Modules/<Modulo>/
   .github/
     workflows/
-      semantic-release.yml      # npx semantic-release (canonico STORY-131)
-      semantic-versioning.yml   # Tag semver opzionale (github-tag-action)
-      update-changelog.yml     # CHANGELOG su evento release
-      roadmap-check.yml       # Verifica docs/roadmap.md
+      semantic-release.yml         # npx semantic-release (canonico STORY-131)
+      semantic-versioning.yml      # Tag semver opzionale (github-tag-action)
+      update-changelog.yml         # CHANGELOG su evento release
+      contributor-analytics.yml    # git-fame: LOC per contributor × estensione (STORY-355)
+      roadmap-check.yml            # Verifica docs/roadmap.md (opzionale)
 ```
 
 Per i temi: `Themes/<Tema>/.github/workflows/` con gli stessi file.

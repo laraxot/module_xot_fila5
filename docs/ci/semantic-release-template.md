@@ -8,14 +8,14 @@ Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owne
 
 - Workflow: `laravel/Modules/Gdpr/.github/workflows/semantic-release.yml`
 - Config: `laravel/Modules/Lang/.releaserc.json` (changelog + git)
-- Template copiabile: `bashscripts/ci/templates/`
+- Template: `bashscripts/ci/templates/github/workflows/`
 
 ## Scaffold
 
 ```bash
 chmod +x bashscripts/ci/scaffold-module-github-workflows.sh
-./bashscripts/ci/scaffold-module-github-workflows.sh laravel/Modules/Geo
-./bashscripts/ci/scaffold-module-github-workflows.sh laravel/Themes/Sixteen
+./bashscripts/ci/scaffold-module-github-workflows.sh laravel/Modules/Geo geo
+./bashscripts/ci/scaffold-module-github-workflows.sh laravel/Themes/TwentyOne theme-twentyone
 ```
 
 Crea:

@@ -19,6 +19,7 @@ class UpdateAction
 
     /**
      * @param array<string, mixed> $data
+     * @param array<string, mixed> $rules
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
