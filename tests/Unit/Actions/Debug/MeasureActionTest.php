@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Debug;
-
 use Modules\Xot\Actions\Debug\MeasureAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('measures performance', function (): void {
     $action = app(MeasureAction::class);

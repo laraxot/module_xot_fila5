@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Pdf;
-
-use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Pdf\PdfByHtmlAction;
 use Modules\Xot\Actions\Pdf\PdfEngineEnum;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('executes pdf by html action correctly', function (): void {
     // PDF Engines often require external binaries or heavy libraries

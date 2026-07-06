@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Cast;
-
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('casts various values to integer correctly', function (): void {
     $action = app(SafeIntCastAction::class);

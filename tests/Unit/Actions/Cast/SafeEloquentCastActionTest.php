@@ -2,25 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Cast;
-
-use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
-
-beforeEach(function (): void {
-    $action = app(SafeEloquentCastAction::class);
-    $model = new class extends Model {
-        protected $guarded = [];
-    };
-    $model->forceFill([
-        'name' => 'Mario',
-        'age' => '42',
-        'score' => '12.5',
-        'active' => '1',
-        'meta' => ['k' => 'v'],
-        'empty' => '',
-    ]);
-});
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('checks attribute presence and emptiness', function (): void {
     expect($action->hasAttribute($this->model, 'name'))

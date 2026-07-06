@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Arr;
-
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+use PHPUnit\Framework\Assert;
+
+use function Safe\json_decode;
+use function Safe\tempnam;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];

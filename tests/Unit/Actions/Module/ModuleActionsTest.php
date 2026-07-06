@@ -2,14 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Module;
-
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
-test('get module name by class action works', function () {
+use function Safe\mkdir;
+use function Safe\tempnam;
+use function Safe\unlink;
+uses(Modules\Xot\Tests\TestCase::class);
+
+test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);
     expect($action->execute('Modules\User\Models\User'))->toBe('User');
 });

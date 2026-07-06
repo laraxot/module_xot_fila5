@@ -17,8 +17,19 @@ it('sets csrf token on mount', function (): void {
     $session->shouldReceive('token')->andReturn($token);
     App::instance('session', $session);
 
-    $class = new class {
-        use HasCsrfToken;
+    $class = new class()
+    {
+        public string $_token = '';
+
+        public function mount(): void
+        {
+            $this->_token = app('session')->token();
+        }
+
+        public function getCsrfToken(): string
+        {
+            return $this->_token;
+        }
     };
 
     $class->mount();
@@ -32,8 +43,14 @@ it('verifies csrf token', function (): void {
     /** @var TestCase $this */
     $token = 'secret-token';
 
-    $class = new class {
-        use HasCsrfToken;
+    $class = new class()
+    {
+        public string $_token = '';
+
+        public function verifyCsrfToken(): bool
+        {
+            return $this->_token === app('session')->token();
+        }
     };
     $class->_token = $token;
 

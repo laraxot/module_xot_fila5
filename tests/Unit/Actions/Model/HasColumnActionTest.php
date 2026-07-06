@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Model;
-
 use Modules\Xot\Actions\Model\HasColumnAction;
 use Modules\Xot\Models\BaseModel;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 beforeEach(function (): void {
     $action = app(HasColumnAction::class);

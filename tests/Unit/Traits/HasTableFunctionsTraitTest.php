@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Traits;
-
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Traits\HasTableFunctionsTrait;
+use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsCustomSlugProbe;
+use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsTraitProbe;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets table columns', function (): void {
     $class = new class {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Parse;
-
 use Modules\Xot\Actions\ParsePrintPageStringAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('parses single pages and ranges', function (): void {
     $str = '1-4,6,7,8,11-14';

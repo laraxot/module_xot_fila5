@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Cast;
-
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
-
-beforeEach(function (): void {
-    $this->action = app(SafeFloatCastAction::class);
-});
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('casts float values', function (): void {
     $result = $this->action->execute(123.45);

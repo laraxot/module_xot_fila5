@@ -2,18 +2,11 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\Xot\Tests\Unit\Actions\Pdf;
-
-use Illuminate\Support\Facades\Facade;
-use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-
-=======
 use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\StreamedResponse;
+uses(Modules\Xot\Tests\TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);
 

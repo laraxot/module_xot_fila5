@@ -11,15 +11,45 @@ use Modules\Xot\States\Transitions\XotBaseTransition;
 
 uses(RefreshDatabase::class);
 
-describe('XotBaseTransition', function () {
-    beforeEach(function () {
-        // Create a concrete test transition class
-        $this->transition = new class extends XotBaseTransition {
+describe('XotBaseTransition', function (): void {
+    it('can be instantiated', function (): void {
+        [, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertInstanceOf(XotBaseTransition::class, $transition);
+    });
+
+    it('has static name property', function (): void {
+        [, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertTrue(property_exists($transition, 'name'));
+    });
+
+    it('has record property', function (): void {
+        [, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertTrue(property_exists($transition, 'record'));
+    });
+
+    it('can get record', function (): void {
+        [$record, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertSame($record, $transition->record);
+    });
+
+    it('has sendNotifications method', function (): void {
+        [, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertTrue(method_exists($transition, 'sendNotifications'));
+    });
+
+    it('can send notifications without errors', function (): void {
+        $record = UserFactory::new()->createOne();
+
+        $transition = new class($record) extends XotBaseTransition
+        {
             public static string $name = 'test_transition';
 
-            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
-            {
-            }
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
         };
 
         $transition->sendNotifications();
@@ -34,7 +64,8 @@ describe('XotBaseTransition', function () {
     it('returns correct notification recipients structure', function (): void {
         $record = UserFactory::new()->createOne();
 
-        $transition = new class($record) extends XotBaseTransition {
+        $transition = new class($record) extends XotBaseTransition
+        {
             public static string $name = 'test_transition';
         };
 
@@ -54,7 +85,8 @@ describe('XotBaseTransition', function () {
         /** @var TestCase $this */
         $record = UserFactory::new()->createOne();
 
-        $transition = new class($record) extends XotBaseTransition {
+        $transition = new class($record) extends XotBaseTransition
+        {
             public static string $name = 'test_mixed_transition';
 
             /**
@@ -68,11 +100,7 @@ describe('XotBaseTransition', function () {
                 ];
             }
 
-            #[Override]
-            public function sendRecipientNotification(?UserContract $recipient): void
-            {
-                // Mock implementation
-            }
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void {}
         };
 
         // Create a test record

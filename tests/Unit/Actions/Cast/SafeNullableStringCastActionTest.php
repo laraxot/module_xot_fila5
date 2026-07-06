@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Cast;
-
 use Modules\Xot\Actions\Cast\SafeNullableStringCastAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('casts nullable string values consistently', function (): void {
     $action = app(SafeNullableStringCastAction::class);

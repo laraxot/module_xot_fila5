@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Feature\Filament;
-
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -14,6 +12,11 @@ use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
+use PHPUnit\Framework\Assert;
+
+use function Safe\file_put_contents;
+use function Safe\mkdir;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();

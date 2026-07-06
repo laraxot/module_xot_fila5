@@ -4,17 +4,24 @@ declare(strict_types=1);
 
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Response;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
+use Illuminate\Testing\TestResponse;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
 use Webmozart\Assert\Assert;
+
+use function Safe\define;
+use function Safe\glob;
+use function Safe\preg_match;
 
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
@@ -75,18 +82,19 @@ if (! function_exists('hex2rgba')) {
         if (empty($color)) {
             return $default;
         }
-        if ('#' === $color[0]) {
+
+        if ($color[0] === '#') {
             $color = mb_substr($color, 1);
         }
-        if (6 === mb_strlen($color)) {
+        if (mb_strlen($color) === 6) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
-        } elseif (3 === mb_strlen($color)) {
+        } elseif (mb_strlen($color) === 3) {
             $hex = [$color[0].$color[0], $color[1].$color[1], $color[2].$color[2]];
         } else {
             return $default;
         }
         $rgb = array_map('hexdec', $hex);
-        if (-1.0 !== $opacity) {
+        if ($opacity !== -1.0) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
@@ -154,12 +162,47 @@ if (! function_exists('inAdmin')) {
         if (isset($params['in_admin'])) {
             return (bool) $params['in_admin'];
         }
-        if ('admin' === Request::segment(2)) {
+
+        if (Request::segment(2) === 'admin') {
             return true;
         }
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
+    }
+}
+
+if (! function_exists('getRouteParameters')) {
+    /**
+     * Parametri della route corrente (es. anno, stabi, repar nei contesti admin progressioni).
+     *
+     * @return array<string, mixed>
+     */
+    function getRouteParameters(): array
+    {
+        if (app()->runningInConsole()) {
+            return [];
+        }
+
+        $route = Route::current();
+        if ($route === null) {
+            return [];
+        }
+
+        $params = $route->parameters();
+        if (! is_array($params)) {
+            return [];
+        }
+
+        /** @var array<string, mixed> $result */
+        $result = [];
+        foreach ($params as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
     }
 }
 
@@ -223,9 +266,13 @@ if (! function_exists('isItem')) {
 }
 
 if (! function_exists('params2ContainerItem')) {
+    /**
+     * @param  array<string, mixed>|null  $params
+     * @return array{0: array<string, mixed>, 1: array<string, mixed>}
+     */
     function params2ContainerItem(?array $params = null): array
     {
-        if (null === $params) {
+        if ($params === null) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -351,7 +398,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return null === $id ? null : (string) $id;
+            return $id === null ? null : (string) $id;
         } catch (Throwable $e) {
             return null;
         }
@@ -366,10 +413,136 @@ if (! function_exists('trans_string')) {
             if (! is_string($k)) {
                 continue;
             }
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
+
+            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
         }
         $result = __($key, $safeReplace, $locale);
 
-        return is_string($result) ? $result : (null === $result ? null : $key);
+        return is_string($result) ? $result : $key;
+    }
+}
+
+if (! function_exists('isJson')) {
+    function isJson(string $string): bool
+    {
+        return json_validate($string);
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
+| Pest Laravel Helper Stubs
+|--------------------------------------------------------------------------
+|
+| Stubs for Pest global testing functions.
+| These eliminate 'function not found' errors from PHPStan.
+|
+*/
+
+if (! function_exists('actingAs')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('get')) {
+    /**
+     * @param  array<string, mixed>  $options
+     * @return TestResponse<Response>
+     */
+    function get(string $uri = '', array $options = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('post')) {
+    /**
+     * @param  array<string, mixed>  $options
+     * @return TestResponse<Response>
+     */
+    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('put')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function put(string $uri, mixed $data = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('patch')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function patch(string $uri, mixed $data = []): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('delete')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function delete(string $uri): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('head')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function head(string $uri): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('options')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function options(string $uri): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('followingRedirects')) {
+    /**
+     * @return TestResponse<Response>
+     */
+    function followingRedirects(int $number = 5): TestResponse
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('test')) {
+    /** @param  string  $title  @param  \Closure  $callback  @return void */
+    function test(string $title, Closure $callback): void
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
+    }
+}
+
+if (! function_exists('describe')) {
+    /** @param  string  $title  @param  \Closure  $callback  @return void */
+    function describe(string $title, Closure $callback): void
+    {
+        throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\File;
-
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 use Nwidart\Modules\Facades\Module;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 test('fix path action works', function () {
     $action = app(FixPathAction::class);

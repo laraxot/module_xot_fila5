@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions;
+use Illuminate\Support\Facades\View as ViewFacade;
+use Illuminate\View\View;
+use Modules\Xot\Actions\GetViewByClassAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\Support\Facades\View;

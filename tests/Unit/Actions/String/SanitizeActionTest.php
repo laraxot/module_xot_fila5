@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\String;
-
 use Modules\Xot\Actions\String\SanitizeAction;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('sanitizes strings correctly', function (): void {
     $action = app(SanitizeAction::class);

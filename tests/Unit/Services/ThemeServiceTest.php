@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Services;
-
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Services\ThemeService;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('sets and gets theme', function (): void {
     ThemeService::setTheme('test-theme');

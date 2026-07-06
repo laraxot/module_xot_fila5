@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\Module;
-
 use Modules\Xot\Actions\Module\GetModuleConfigAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+use PHPUnit\Framework\Assert;
+
+use function Safe\file_put_contents;
+use function Safe\mkdir;
+use function Safe\rmdir;
+use function Safe\unlink;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('returns config array from module config file', function (): void {
     $tempDir = sys_get_temp_dir().'/xot_modcfg_'.uniqid('', true);

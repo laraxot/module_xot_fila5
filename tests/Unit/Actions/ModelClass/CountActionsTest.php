@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Actions\ModelClass;
-
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
 use Modules\Xot\Models\InformationSchemaTable;
 use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 test('count actions work', function () {
     // InformationSchemaTable::getModelCount is called via static method

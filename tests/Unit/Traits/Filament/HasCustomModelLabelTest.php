@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit\Traits\Filament;
-
-use Illuminate\Support\Str;
-use Modules\Xot\Traits\Filament\HasCustomModelLabel;
+use Modules\Xot\Tests\Fixtures\Traits\BreadcrumbProbe;
+use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromModelNameProbe;
+use Modules\Xot\Tests\Fixtures\Traits\ModelLabelFromPropertyProbe;
+use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPluralProbe;
+use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPropertyProbe;
+use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromPropertyProbe;
+use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromSingularProbe;
+use PHPUnit\Framework\Assert;
+uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets model label from property', function (): void {
     $class = new class {

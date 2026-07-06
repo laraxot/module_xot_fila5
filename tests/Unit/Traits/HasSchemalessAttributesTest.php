@@ -30,6 +30,6 @@ it('creates schemaless attributes for the requested column', function (): void {
 
     Assert::assertInstanceOf(
         SchemalessAttributes::class,
-        $model->getSchemalessAttributes('extra_attributes')
+        $model->extra_attributes
     );
 });
