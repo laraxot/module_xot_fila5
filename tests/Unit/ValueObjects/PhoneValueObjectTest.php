@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\ValueObjects\PhoneValueObject;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('accepts valid phone', function (): void {

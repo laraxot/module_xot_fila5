@@ -6,6 +6,7 @@ use Filament\Resources\Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('xot base resource extends filament resource', function (): void {

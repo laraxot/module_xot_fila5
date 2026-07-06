@@ -7,6 +7,7 @@ use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;
 use Modules\Xot\Actions\String\SanitizeAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('get pronounceable password action works', function () {

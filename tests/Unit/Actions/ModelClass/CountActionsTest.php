@@ -6,6 +6,7 @@ use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('count actions work', function (): void {

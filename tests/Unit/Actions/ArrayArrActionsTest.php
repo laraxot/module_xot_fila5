@@ -18,6 +18,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\mkdir;
+
 uses(TestCase::class);
 
 it('normalizes nested numeric strings in diff fixType for Arr namespace', function (): void {

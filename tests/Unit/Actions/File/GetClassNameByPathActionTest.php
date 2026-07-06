@@ -7,6 +7,7 @@ use Modules\Xot\Actions\File\GetClassNameByPathAction;
 use PHPUnit\Framework\Assert;
 
 use function Safe\tempnam;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets class name from path correctly', function (): void {
