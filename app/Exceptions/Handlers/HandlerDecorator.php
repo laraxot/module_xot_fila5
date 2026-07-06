@@ -19,7 +19,7 @@ class HandlerDecorator implements ExceptionHandler
     }
 
     /**
-     * @param array<int, mixed> $parameters
+     * @param  array<int, mixed>  $parameters
      */
     public function __call(string $name, array $parameters): mixed
     {

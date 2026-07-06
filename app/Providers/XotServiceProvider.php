@@ -25,10 +25,9 @@ use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
+use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
-
-use Webmozart\Assert\Assert;
 
 /**
  * Class XotServiceProvider.
@@ -157,12 +156,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-            if ('php' !== $file->getExtension()) {
+            if ($file->getExtension() !== 'php') {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-            if (false === $realPath) {
+            if ($realPath === false) {
                 continue;
             }
 
