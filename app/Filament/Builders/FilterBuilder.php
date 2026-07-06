@@ -277,11 +277,18 @@ class FilterBuilder
             );
     }
 
+    /**
+     * @param Builder<\Illuminate\Database\Eloquent\Model> $query
+     */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
         return in_array(SoftDeletes::class, class_uses_recursive($query->getModel()), true);
     }
 
+    /**
+     * @param Builder<\Illuminate\Database\Eloquent\Model> $query
+     * @return Builder<\Illuminate\Database\Eloquent\Model>
+     */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder
     {
         if (! self::modelUsesSoftDeletes($query)) {

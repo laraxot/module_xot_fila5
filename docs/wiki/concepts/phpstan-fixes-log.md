@@ -113,3 +113,45 @@ Verification:
 cd laravel && ./vendor/bin/phpstan analyse Modules
 # 4993 file, [OK] No errors
 ```
+
+## Fix STORY-287 (2026-06-09): Modules/Xot zero errori
+
+Baseline 205 → 0. Batch Contracts/Datas/Traits (14), Actions (43), Models/Filament/Exports (34).
+
+Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `EnumTrait::toArray()` → `array<int|string, string>`.
+
+Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
+
+## Fix 2026-06-30: fatal trait collision + tail Modules/
+
+### Problema 1 — PHPStan non partiva (fatal)
+
+`BaseUser` usa `HasTeams` e `HasSpatiePermission` (Spatie `HasRoles::teams()`). Collisione su `teams()`.
+
+### Soluzione
+
+```php
+use HasSpatiePermission, HasTeams {
+    HasTeams::teams insteadof HasSpatiePermission;
+    HasSpatiePermission::teams as spatieTeams;
+}
+```
+
+Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
+
+### Problema 2 — `UserContract::teams()` generics
+
+`static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
+
+### Problema 3 — `Article::scopePublishedUntilToday()`
+
+Return type `EloquentBuilder|QueryBuilder` con classe `QueryBuilder` inesistente nel modulo → solo `EloquentBuilder`.
+
+### Verifica
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules
+# [OK] No errors — 5357 file
+```
+
+Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
