@@ -13,7 +13,7 @@ uses(TestCase::class);
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $model = $this->createUnitMock(Activity::class);
         $model->method('getAttribute')->willReturnMap([
             ['name', 'Test User'],

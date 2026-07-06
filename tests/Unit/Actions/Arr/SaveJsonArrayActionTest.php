@@ -18,15 +18,15 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
-        $this->action = app(SaveJsonArrayAction::class);
+    /* @var \Modules\Xot\Tests\TestCase $this */
+    $this->action = app(SaveJsonArrayAction::class);
     $this->tempDir = sys_get_temp_dir().'/xot_arr_'.uniqid();
     mkdir($this->tempDir, 0755, true);
 });
 
 afterEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
-        if (isset($this->tempDir) && is_dir($this->tempDir)) {
+    /** @var TestCase $this */
+    if (isset($this->tempDir) && is_dir($this->tempDir)) {
         $dir = $this->tempDir;
         $files = glob($dir.'/*');
         foreach ($files as $file) {
@@ -39,7 +39,7 @@ afterEach(function (): void {
 
 describe('Save Json Array Action', function (): void {
     test('saves array to json file', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $data = ['key' => 'value', 'nested' => ['a' => 1]];
         $path = $this->tempDir.'/data.json';
 
@@ -50,7 +50,7 @@ describe('Save Json Array Action', function (): void {
     });
 
     test('saves empty array', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $path = $this->tempDir.'/empty.json';
         $result = app(SaveJsonArrayAction::class)->execute([], $path);
 

@@ -10,8 +10,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('sets csrf token on mount', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
-        $token = 'test-token-123';
+    /** @var TestCase $this */
+    $token = 'test-token-123';
 
     $session = Mockery::mock();
     $session->allows(['token' => $token]);
@@ -38,8 +38,8 @@ it('sets csrf token on mount', function (): void {
 });
 
 it('verifies csrf token', function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
-        $token = 'secret-token';
+    /** @var TestCase $this */
+    $token = 'secret-token';
 
     $class = new class {
         public string $_token = '';
