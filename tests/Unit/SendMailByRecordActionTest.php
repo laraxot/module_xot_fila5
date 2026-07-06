@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit;
+
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
+use Modules\Xot\Tests\TestCase;
+
+uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
-    /** @var Modules\Xot\Tests\TestCase $this */
     $record = new class extends Model {
         public function option(string $key): null
         {
@@ -25,7 +28,7 @@ it('throws if record has no email', function (): void {
         }
     };
 
-    $this->expectThrowable(InvalidArgumentException::class);
+    $this->expectThrowable(\InvalidArgumentException::class);
 
-    app(SendMailByRecordAction::class)->execute($record, stdClass::class);
+    app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
 });
