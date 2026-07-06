@@ -7,6 +7,7 @@ use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('extracts module name from class and model class', function (): void {

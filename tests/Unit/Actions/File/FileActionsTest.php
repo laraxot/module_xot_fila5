@@ -9,6 +9,7 @@ use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('fix path action works', function () {

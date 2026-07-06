@@ -38,7 +38,7 @@ it('can resolve a sushi module row', function () {
     /** @var TestCase $this */
     $module = Module::query()->first();
 
-    if ($module === null) {
+    if (null === $module) {
         $this->markTestSkipped('No nwidart modules registered in test runtime.');
     }
 

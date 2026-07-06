@@ -7,6 +7,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 uses(TestCase::class, RefreshDatabase::class);

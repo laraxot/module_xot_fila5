@@ -10,6 +10,7 @@ use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Tests\Fixtures\DemoModel;
 use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets model class by model type from morph map', function (): void {

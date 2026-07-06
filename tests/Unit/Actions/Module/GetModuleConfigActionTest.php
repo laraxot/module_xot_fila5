@@ -10,6 +10,7 @@ use function Safe\file_put_contents;
 use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('returns config array from module config file', function (): void {

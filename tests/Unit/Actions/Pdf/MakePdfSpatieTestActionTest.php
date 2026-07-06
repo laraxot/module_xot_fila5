@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\StreamedResponse;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 uses(Modules\Xot\Tests\TestCase::class);

@@ -10,6 +10,7 @@ use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use function Safe\mkdir;
 use function Safe\tempnam;
 use function Safe\unlink;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('get module name by class action works', function (): void {

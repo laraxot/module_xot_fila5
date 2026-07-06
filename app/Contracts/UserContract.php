@@ -28,21 +28,21 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 /**
  * Modules\Xot\Contracts\UserContract.
  *
- * @property string|null $id
- * @property string|null $email
- * @property Carbon|null $email_verified_at
- * @property string|null $first_name
- * @property string|null $last_name
- * @property string|null $full_name
- * @property string|null $name
- * @property string|null $phone
- * @property string|null $type
- * @property string|null $current_team_id
- * @property TeamContract $currentTeam
- * @property ProfileContract|null $profile
+ * @property string|null               $id
+ * @property string|null               $email
+ * @property Carbon|null               $email_verified_at
+ * @property string|null               $first_name
+ * @property string|null               $last_name
+ * @property string|null               $full_name
+ * @property string|null               $name
+ * @property string|null               $phone
+ * @property string|null               $type
+ * @property string|null               $current_team_id
+ * @property TeamContract              $currentTeam
+ * @property ProfileContract|null      $profile
  * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team> $teams
- * @property Collection<int, Tenant> $tenants
+ * @property Collection<int, Team>     $teams
+ * @property Collection<int, Tenant>   $tenants
  *
  * @phpstan-require-extends Model
  *
@@ -66,7 +66,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Create a new personal access token for the user.
      *
-     * @param  array<int, string>  $scopes
+     * @param array<int, string> $scopes
+     *
      * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
@@ -79,7 +80,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Determine if the model has (one of) the given role(s).
      */
     /**
-     * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>  $roles
+     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole> $roles
      */
     public function hasRole(
         string|int|array|UserRole|Collection $roles,
@@ -89,7 +90,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Assign the given role to the model.
      *
-     * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
+     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
+     *
      * @return $this
      */
     public function assignRole(array|string|int|UserRole|Collection $roles = []);
@@ -97,7 +99,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Remove all current roles and set the given ones.
      *
-     * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
+     * @param array<int|string>|string|int|UserRole|Collection<int, UserRole> $roles
+     *
      * @return $this
      */
     public function syncRoles(array|string|int|UserRole|Collection $roles = []);
@@ -141,7 +144,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Revoke the given role from the model.
      *
-     * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum  ...$role
+     * @param string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum ...$role
+     *
      * @return $this
      */
     public function removeRole(string|int|array|UserRole|Collection|\BackedEnum ...$role);

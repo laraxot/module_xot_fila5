@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('converts class names to view names correctly', function (): void {

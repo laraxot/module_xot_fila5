@@ -11,8 +11,7 @@ uses(TestCase::class);
 
 it('throws if record has no email', function (): void {
     /** @var TestCase $this */
-    $record = new class() extends Model
-    {
+    $record = new class extends Model {
         public function option(string $key): null
         {
             return null;
@@ -20,10 +19,11 @@ it('throws if record has no email', function (): void {
 
         public function myLogs()
         {
-            return new class()
-            {
+            return new class {
                 /** @param array<mixed> $data */
-                public function create(array $data): void {}
+                public function create(array $data): void
+                {
+                }
             };
         }
     };
