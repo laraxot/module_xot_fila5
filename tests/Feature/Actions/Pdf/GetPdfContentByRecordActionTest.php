@@ -17,15 +17,15 @@ class GetPdfContentByRecordActionTest extends TestCase
     private GetPdfContentByRecordAction $action;
 
 beforeEach(function (): void {
-    /** @var \Modules\Xot\Tests\TestCase $this */
-        $this->action = new GetPdfContentByRecordAction();
+    /* @var \Modules\Xot\Tests\TestCase $this */
+    $this->action = new GetPdfContentByRecordAction();
 });
 
     /** @test */
     public function itGeneratesPdfContentFromRecord(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne([
             'name' => 'Test User',
             'email' => 'test@example.com',
@@ -45,7 +45,7 @@ beforeEach(function (): void {
     public function itGeneratesCorrectViewName(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
@@ -64,7 +64,7 @@ beforeEach(function (): void {
     public function itGeneratesCorrectFilenameForBasicModel(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
@@ -83,7 +83,7 @@ beforeEach(function (): void {
     public function itGeneratesEnhancedFilenameForPerformanceModels(): void
     {
         // Arrange - Create a mock model with performance fields
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $record = new class extends Model {
             protected $table = 'test_performance';
 
@@ -115,7 +115,7 @@ beforeEach(function (): void {
     public function itPreparesCorrectViewParameters(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
@@ -140,7 +140,7 @@ beforeEach(function (): void {
     public function itThrowsExceptionForMissingView(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         // Act & Assert
@@ -155,7 +155,7 @@ beforeEach(function (): void {
     {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         $this->skipTest('Requires view mocking infrastructure');
     });
 
@@ -163,7 +163,7 @@ beforeEach(function (): void {
     public function itUsesCustomFilenameWhenProvided(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
         $customFilename = 'custom-report.pdf';
 
@@ -177,7 +177,7 @@ beforeEach(function (): void {
     public function itHandlesFromRecordConvenienceMethod(): void
     {
         // Arrange
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
         $filename = 'convenience-test.pdf';
 
@@ -193,7 +193,7 @@ beforeEach(function (): void {
     {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         $this->skipTest('Requires HTML2PDF mocking infrastructure');
     });
 
@@ -202,7 +202,7 @@ beforeEach(function (): void {
     {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /* @var \Modules\Xot\Tests\TestCase $this */
         $this->skipTest('Requires test view infrastructure');
     });
 });

@@ -23,7 +23,7 @@ it('converts model attributes to array correctly', function (): void {
     });
 
     test('falls back to safe execute on error', function (): void {
-        /** @var \Modules\Xot\Tests\TestCase $this */
+        /** @var TestCase $this */
         $model = $this->createUnitMock(Model::class);
         $model->method('attributesToArray')->willThrowException(new \Exception('Mock error'));
         $model->method('getAttributes')->willReturn(['name' => 'Fallback']);
