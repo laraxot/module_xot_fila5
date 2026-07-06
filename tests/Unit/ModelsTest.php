@@ -2,13 +2,17 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit;
+
 use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('can create a test user', function () {
     $email = 'test-'.uniqid('', true).'@example.com';
@@ -34,7 +38,6 @@ it('can create a test tenant', function () {
 });
 
 it('can resolve a sushi module row', function () {
-    /** @var Modules\Xot\Tests\TestCase $this */
     $module = Module::query()->first();
 
     if (null === $module) {
