@@ -4404,6 +4404,7 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
+
 namespace Modules\Job\Tests\Unit\Traits;
 
 use Closure;
@@ -4459,11 +4460,12 @@ function uses(string ...$classes): void
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
- * @param  string|bool  ...$arguments
+ * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
 {
 }
+
 namespace Modules\Lang\Tests;
 
 use Closure;
@@ -12261,6 +12263,7 @@ function uses(string ...$classes): void
 function skip(mixed ...$arguments): void
 {
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
 use Closure;
@@ -12316,11 +12319,12 @@ function uses(string ...$classes): void
 /**
  * Pest skip helper — stub per PHPStan (runtime: Pest globale).
  *
- * @param  string|bool  ...$arguments
+ * @param string|bool ...$arguments
  */
 function skip(mixed ...$arguments): void
 {
 }
+
 namespace Modules\Xot\Tests\Unit\Actions\Blade;
 
 use Closure;

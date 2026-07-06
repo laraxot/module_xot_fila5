@@ -67,7 +67,7 @@ final class PanelModuleSupport
     public static function navigationLabel(Panel $panel): string
     {
         $name = Arr::get(self::moduleConfig($panel), 'name');
-        if (! is_string($name) || $name === '') {
+        if (! is_string($name) || '' === $name) {
             return self::moduleName($panel);
         }
 
@@ -77,7 +77,7 @@ final class PanelModuleSupport
     public static function navigationIcon(Panel $panel): string
     {
         $icon = Arr::get(self::moduleConfig($panel), 'icon');
-        if (! is_string($icon) || $icon === '') {
+        if (! is_string($icon) || '' === $icon) {
             return 'heroicon-o-cube';
         }
 
