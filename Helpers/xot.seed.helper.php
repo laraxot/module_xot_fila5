@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Xot Seeder Helper Functions
+ * Xot Seeder Helper Functions.
  *
  * This file contains helper functions for seeding data with Xot modules
  * The functions ensure that models are only seeded once
@@ -14,10 +14,9 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Cache;
 
 /**
- * Seed a model once per application lifetime
+ * Seed a model once per application lifetime.
  *
  * @param string $modelClass The model class to seed (e.g., '\Modules\Notify\Models\NotificationType')
- * @return void
  */
 function xotSeedModelOnce(string $modelClass): void
 {
@@ -37,13 +36,14 @@ function xotSeedModelOnce(string $modelClass): void
     if ($modelInstance->newQuery()->count() > 0) {
         // Model already exists, mark as seeded
         Cache::put($cacheKey, true, 24 * 60 * 60); // Cache for 24 hours
+
         return;
     }
 
     // Get the seeds from the seeder class
     // This assumes there's a standard seeder file named with the format
     // {ModelName}Seeder.php in the seeders directory
-    $seederClass = $modelClass . "Seeder";
+    $seederClass = $modelClass.'Seeder';
 
     try {
         // Check if seeder class exists
@@ -51,15 +51,14 @@ function xotSeedModelOnce(string $modelClass): void
             // Create seeder instance and run its seed method
             $seeder = new $seederClass();
 
-            if ($seeder instanceof Seeder && is_callable([$seeder, "run"])) {
-                $seeder->{"run"}();
+            if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
+                $seeder->{'run'}();
 
                 // Mark as seeded
                 Cache::put($cacheKey, true, 24 * 60 * 60);
             }
         }
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         // Log error but don't crash
-
     }
 }
