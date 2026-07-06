@@ -1,3 +1,10 @@
+## [2026-07-06] membershipTeams non appartiene a UserContract
+
+- `membershipTeams()` e un alias concreto di `HasTeams::teams()` su `BaseUser`, non una capability cross-module richiesta da `Modules\Xot\Contracts\UserContract`.
+- Non dichiararlo nel contratto Xot: `BelongsToMany` e invariante su `TDeclaringModel` e l'interfaccia non puo esprimere correttamente `$this` sul model concreto senza violare il bound `Model`.
+- Lasciare il tipo preciso sul trait/model User e sulle fixture che lo testano; i call-site che risolvono `UserContract` devono restringere a `BaseUser` prima di chiamare `membershipTeams()`.
+- Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules` -> `[OK] No errors`.
+
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)

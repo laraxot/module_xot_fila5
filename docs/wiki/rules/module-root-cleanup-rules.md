@@ -4,11 +4,13 @@ type: rule
 tags: [module, theme, structure, cleanup, naming, root-hygiene]
 created: 2026-01-21
 updated: 2026-07-08
-qmd: "module theme root no txt max four md readme changelog license agents nwidart"
+qmd: "module theme root no txt max four md readme changelog license agents nwidart no uppercase folders sacred manifest never delete"
 issues:
   - "https://github.com/laraxot/base_ptvx_fila5/issues/124"
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/39"
 discussions:
   - "https://github.com/laraxot/base_ptvx_fila5/discussions/273"
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
 related:
   - ../../../../../../docs/wiki/memories/module-theme-root-hygiene.md
   - ../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
@@ -67,3 +69,27 @@ bash bashscripts/tools/guard-nwidart-module-skeleton.sh
 ## Scope
 
 Moduli: `laravel/Modules/<Modulo>/` · Temi: `laravel/Themes/<Tema>/` — **solo root**, non sottocartelle.
+
+Per ogni modulo:
+
+```bash
+cd Modules/<Modulo>
+
+# 1. Trova file .txt nella root
+find . -maxdepth 1 -name "*.txt" -type f
+
+# 2. Trova file .md nella root (escluso README.md)
+find . -maxdepth 1 -name "*.md" -type f | grep -v README.md
+
+# 3. Trova cartelle con maiuscoli nella root
+find . -maxdepth 1 -type d | grep -E "[A-Z]"
+```
+
+## Stato Xot 2026-07-06
+
+Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Providers/` non esistono nella root di `Modules/Xot`. La root Xot contiene solo `README.md` come markdown e nessun `.txt`.
+
+## Canon
+
+- Questa regola deve essere applicata a tutti i moduli
+- Check periodico prima di commit
