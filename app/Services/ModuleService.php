@@ -7,7 +7,6 @@ namespace Modules\Xot\Services;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
-use Spatie\QueueableAction\QueueableAction;
 use stdClass;
 
 // ----------- Requests ----------
@@ -17,8 +16,6 @@ use stdClass;
  */
 class ModuleService
 {
-    use QueueableAction;
-
     public string $name = '';
 
     private static ?self $_instance = null;
@@ -117,9 +114,5 @@ class ModuleService
         }
 
         return $data;
-    }
-
-    public function execute(): void
-    {
     }
 }

@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Relations\Pivot;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
@@ -42,8 +41,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract                    $currentTeam
  * @property ProfileContract|null            $profile
  * @property Collection<int, UserRole>       $roles
- * @property Collection<int, Team>           $membershipTeams
- * @property Collection<int, Model>          $teams
+ * @property Collection<int, Team>           $teams
  * @property Collection<int, Tenant>         $tenants
  *
  * @phpstan-require-extends Model
@@ -132,22 +130,11 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function roles(): BelongsToMany;
 
     /**
-     * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
+     * Get the user's teams.
      *
-     * @return BelongsToMany<Model, $this>
-     *
-     * @phpstan-ignore generics.notSubtype
+     * @return BelongsToMany<Model, Model>
      */
     public function teams(): BelongsToMany;
-
-    /**
-     * Laraxot team membership (Jetstream-style pivot).
-     *
-     * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
-     *
-     * @phpstan-ignore generics.notSubtype
-     */
-    public function membershipTeams(): BelongsToMany;
 
     /**
      * Get the user's tenants.

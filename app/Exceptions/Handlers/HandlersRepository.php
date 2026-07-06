@@ -63,7 +63,7 @@ class HandlersRepository
     {
         return array_filter(
             $this->reporters,
-            fn (callable $handler): bool => $this->handlesException($handler, $e),
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
         );
     }
 
@@ -76,7 +76,7 @@ class HandlersRepository
     {
         return array_filter(
             $this->renderers,
-            fn (callable $handler): bool => $this->handlesException($handler, $e),
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
         );
     }
 
@@ -89,7 +89,7 @@ class HandlersRepository
     {
         return array_filter(
             $this->consoleRenderers,
-            fn (callable $handler): bool => $this->handlesException($handler, $e),
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
         );
     }
 

@@ -16,9 +16,6 @@ class HealthCheckResultHistoryItemFactory extends Factory
 {
     protected $model = HealthCheckResultHistoryItem::class;
 
-    /**
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [

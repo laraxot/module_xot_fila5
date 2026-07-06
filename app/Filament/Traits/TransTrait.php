@@ -9,6 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\GetTransKeyAction;
 use Webmozart\Assert\Assert;
 
 trait TransTrait
@@ -27,7 +28,6 @@ trait TransTrait
     {
         $tmp = static::getKeyTrans($key);
         /** @var array<string, mixed>|Translator|string $res */
-        // @phpstan-ignore argument.type (trans() $replace param: already typed correctly at method signature)
         $res = trans($tmp, $params);
 
         if (is_string($res)) {
@@ -102,7 +102,7 @@ trait TransTrait
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
      * @param string                               $key         La chiave di traduzione specifica
-     * @param array<string, bool|float|int|string|null> $replace     Parametri di sostituzione per la traduzione
+     * @param array<string, bool|float|int|string> $replace     Parametri di sostituzione per la traduzione
      * @param string|null                          $locale      Locale da utilizzare (null = locale corrente)
      * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *
@@ -121,7 +121,6 @@ trait TransTrait
         $slug = collect($p_arr)->map(Str::kebab(...))->implode('.');
 
         $translationKey = $moduleNameLow.'::'.$slug.'.'.$key;
-        // @phpstan-ignore argument.type (__() $replace param: already typed correctly at method signature)
         $translation = __($translationKey, $replace, $locale);
 
         if ($translation === $translationKey && App::environment('local', 'development', 'testing')) {
@@ -142,7 +141,7 @@ trait TransTrait
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
      * @param string                               $key         La chiave di traduzione specifica
-     * @param array<string, bool|float|int|string|null> $replace     Parametri di sostituzione per la traduzione
+     * @param array<string, bool|float|int|string> $replace     Parametri di sostituzione per la traduzione
      * @param string|null                          $locale      Locale da utilizzare (null = locale corrente)
      * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
      *

@@ -274,35 +274,6 @@ class RouteDynService
     }
 
     /**
-     * Garantisce che una riga di config route sia una mappa chiave stringa (come nei YAML associativi).
-     * Consumata sia per gli elementi delle liste `subs` sia per righe ricorsive in {@see dynamic_route()}.
-     *
-     * @return array<string, mixed>
-     */
-    private static function normalizeRouteConfigRow(mixed $raw): array
-    {
-        Assert::isArray($raw);
-        $assoc = [];
-        foreach ($raw as $key => $value) {
-            Assert::string(
-                $key,
-                sprintf(
-                    '%s: each route configuration row must use string keys (associative YAML map); got %s',
-                    __FILE__.':'.__LINE__,
-                    class_basename(self::class)
-                )
-            );
-            $assoc[$key] = $value;
-        }
-
-        return $assoc;
-    }
-
-    /**
-     * Mount ricorsivo di gruppi di route da config (YAML/PHP).
-     *
-     * Ogni elemento è normalizzato in {@see normalizeRouteConfigRow()}: deve essere una riga associative map.
-     *
      * @param array<int, array<string, mixed>> $array
      */
     public static function dynamic_route(
