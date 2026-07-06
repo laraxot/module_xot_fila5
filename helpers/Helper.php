@@ -11,19 +11,9 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Illuminate\Testing\TestResponse;
-use Modules\Geo\Phpstan\GeoTraitPhpstanProbe;
-use Modules\Geo\Phpstan\HasAddressesPhpstanProbe;
-use Modules\Geo\Phpstan\HasAddressPhpstanProbe;
-use Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe;
-use Modules\Job\Phpstan\FormatSecondsPhpstanProbe;
-use Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe;
-use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
-use Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe;
-use Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe;
 
 use function Safe\define;
 use function Safe\preg_match;
@@ -310,25 +300,3 @@ if (! function_exists('xotSeedModelOnce')) {
     }
 }
 
-if (! function_exists('xotPhpstanTraitProbeClasses')) {
-    /**
-     * Registers library trait probe hosts for PHPStan (Pest bridge in PestFunctionBridge.php).
-     *
-     * @return list<class-string>
-     */
-    function xotPhpstanTraitProbeClasses(): array
-    {
-        return [
-            GeoTraitPhpstanProbe::class,
-            HasAddressPhpstanProbe::class,
-            HasPlaceTraitPhpstanProbe::class,
-            HasAddressesPhpstanProbe::class,
-            HasStrictTranslationsPhpstanProbe::class,
-            HasContactPhpstanProbe::class,
-            HasCommonScopesPhpstanProbe::class,
-            HasCustomRelationsPhpstanProbe::class,
-            HasSchemalessAttributesPhpstanProbe::class,
-            FormatSecondsPhpstanProbe::class,
-        ];
-    }
-}
