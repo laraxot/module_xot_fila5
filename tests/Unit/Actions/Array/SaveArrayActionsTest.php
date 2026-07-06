@@ -9,6 +9,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 use function Safe\tempnam;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('save json array action works', function () {

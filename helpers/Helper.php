@@ -19,11 +19,12 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
-use Webmozart\Assert\Assert;
 
 use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
+
+use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
@@ -85,19 +86,19 @@ if (! function_exists('hex2rgba')) {
             return $default;
         }
 
-        if ($color[0] === '#') {
+        if ('#' === $color[0]) {
             $color = mb_substr($color, 1);
         }
-        if (mb_strlen($color) === 6) {
+        if (6 === mb_strlen($color)) {
             $hex = [$color[0].$color[1], $color[2].$color[3], $color[4].$color[5]];
-        } elseif (mb_strlen($color) === 3) {
+        } elseif (3 === mb_strlen($color)) {
             $hex = [$color[0].$color[0], $color[1].$color[1], $color[2].$color[2]];
         } else {
             return $default;
         }
 
         $rgb = array_map('hexdec', $hex);
-        if ($opacity !== -1.0) {
+        if (-1.0 !== $opacity) {
             if ($opacity < 0 || $opacity > 1) {
                 $opacity = 1.0;
             }
@@ -171,13 +172,13 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-        if (Request::segment(2) === 'admin') {
+        if ('admin' === Request::segment(2)) {
             return true;
         }
 
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
+        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
     }
 }
 
@@ -194,7 +195,7 @@ if (! function_exists('getRouteParameters')) {
         }
 
         $route = Route::current();
-        if ($route === null) {
+        if (null === $route) {
             return [];
         }
 
@@ -276,12 +277,13 @@ if (! function_exists('isItem')) {
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @param  array<string, mixed>|null  $params
+     * @param array<string, mixed>|null $params
+     *
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
-        if ($params === null) {
+        if (null === $params) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -426,7 +428,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return $id === null ? null : (string) $id;
+            return null === $id ? null : (string) $id;
         } catch (Throwable $e) {
             return null;
         }
@@ -443,7 +445,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -481,7 +483,8 @@ if (! function_exists('actingAs')) {
 
 if (! function_exists('get')) {
     /**
-     * @param  array<string, mixed>  $options
+     * @param array<string, mixed> $options
+     *
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -492,7 +495,8 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
-     * @param  array<string, mixed>  $options
+     * @param array<string, mixed> $options
+     *
      * @return TestResponse<Response>
      */
     function post(string $uri, mixed $data = [], array $options = []): TestResponse

@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Modules\Xot\Actions\Class\GetFilenameByClassnameAction;
 use Modules\Xot\Models\Log;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets filename from classname correctly', function (): void {

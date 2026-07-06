@@ -8,6 +8,7 @@ use Modules\User\Models\User;
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('creates table index correctly', function (): void {

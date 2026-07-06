@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\View\View;
 use Modules\Xot\Actions\GetViewByClassAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('get view actions work', function (): void {

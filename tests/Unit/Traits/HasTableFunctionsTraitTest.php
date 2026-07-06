@@ -8,6 +8,7 @@ use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsCustomSlugProbe;
 use Modules\Xot\Tests\Fixtures\Traits\HasTableFunctionsTraitProbe;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets table columns', function (): void {

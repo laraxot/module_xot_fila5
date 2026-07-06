@@ -10,6 +10,7 @@ use Modules\Xot\Tests\Fixtures\Traits\NavigationLabelFromPropertyProbe;
 use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromPropertyProbe;
 use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromSingularProbe;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets model label from property', function (): void {

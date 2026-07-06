@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('calculates recursive diff correctly', function (): void {

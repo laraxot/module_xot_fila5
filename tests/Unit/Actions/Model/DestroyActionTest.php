@@ -12,8 +12,7 @@ uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {
     /** @var TestCase $this */
-    $mockModel = new class() extends BaseModel
-    {
+    $mockModel = new class extends BaseModel {
         public bool $deleted = false;
 
         public function delete(): bool
@@ -31,8 +30,7 @@ it('deletes model and returns it', function (): void {
 });
 
 it('flashes status message on successful delete', function (): void {
-    $mockModel = new class() extends BaseModel
-    {
+    $mockModel = new class extends BaseModel {
         public function delete(): bool
         {
             return true;
@@ -45,8 +43,7 @@ it('flashes status message on successful delete', function (): void {
 });
 
 it('flashes failure message when delete returns false', function (): void {
-    $mockModel = new class() extends BaseModel
-    {
+    $mockModel = new class extends BaseModel {
         public function delete(): bool
         {
             return false;

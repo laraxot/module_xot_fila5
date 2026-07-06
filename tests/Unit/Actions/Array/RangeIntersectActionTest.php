@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Actions\Array\RangeIntersectAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 test('range intersect action handles basic intersection', function () {

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('generates pronounceable password correctly', function (): void {
