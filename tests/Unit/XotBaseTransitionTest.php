@@ -17,7 +17,49 @@ describe('XotBaseTransition', function () {
         $this->transition = new class extends XotBaseTransition {
             public static string $name = 'test_transition';
 
-            #[Override]
+            public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
+            {
+            }
+        };
+
+        $transition->sendNotifications();
+    });
+
+    it('has getNotificationRecipients method', function (): void {
+        [, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertTrue(method_exists($transition, 'getNotificationRecipients'));
+    });
+
+    it('returns correct notification recipients structure', function (): void {
+        $record = UserFactory::new()->createOne();
+
+        $transition = new class($record) extends XotBaseTransition {
+            public static string $name = 'test_transition';
+        };
+
+        $recipients = $transition->getNotificationRecipients();
+
+        Assert::assertArrayHasKey('me_mail', $recipients);
+        Assert::assertInstanceOf(RecordNotificationData::class, $recipients['me_mail']);
+    });
+
+    it('has sendRecipientNotification method', function (): void {
+        [, $transition] = xotBaseTransitionFixture();
+
+        Assert::assertTrue(method_exists($transition, 'sendRecipientNotification'));
+    });
+
+    it('processes recipients correctly in sendNotifications', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $record = UserFactory::new()->createOne();
+
+        $transition = new class($record) extends XotBaseTransition {
+            public static string $name = 'test_mixed_transition';
+
+            /**
+             * @return array<string, RecordNotificationData>
+             */
             public function getNotificationRecipients(): array
             {
                 return [

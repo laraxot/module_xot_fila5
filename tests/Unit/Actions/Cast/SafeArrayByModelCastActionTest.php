@@ -15,23 +15,25 @@ it('converts model attributes to array correctly', function (): void {
     $action = app(SafeArrayByModelCastAction::class);
     $result = $action->execute($model);
 
-    expect($result)->toBeArray();
-    expect($result)->toHaveKey('name');
-});
+        $action = app(SafeArrayByModelCastAction::class);
+        $result = $action->execute($model);
 
-it('falls back to safeExecute on error', function (): void {
-    $model = \Mockery::mock(Model::class);
-    $model->shouldReceive('attributesToArray')->andThrow(new \Exception('Mock error'));
-    $model->shouldReceive('getAttributes')->andReturn(['name' => 'Fallback']);
-    $model->shouldReceive('getAttribute')->andReturn('Fallback');
-    // Allow any set call
-    $model->shouldReceive('setAttribute');
+        Assert::assertIsArray($result);
+        Assert::assertArrayHasKey('name', $result);
+    });
 
-    $action = app(SafeArrayByModelCastAction::class);
-    $result = $action->execute($model);
+    test('falls back to safe execute on error', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $model = $this->createUnitMock(Model::class);
+        $model->method('attributesToArray')->willThrowException(new \Exception('Mock error'));
+        $model->method('getAttributes')->willReturn(['name' => 'Fallback']);
+        $model->method('getAttribute')->willReturn('Fallback');
 
-    expect($result)->toBeArray();
-    expect($result)->toHaveKey('name', 'Fallback');
+        $action = app(SafeArrayByModelCastAction::class);
+        $result = $action->execute($model);
 
-    \Mockery::close();
+        Assert::assertIsArray($result);
+        Assert::assertArrayHasKey('name', $result);
+        Assert::assertSame('Fallback', $result['name']);
+    });
 });

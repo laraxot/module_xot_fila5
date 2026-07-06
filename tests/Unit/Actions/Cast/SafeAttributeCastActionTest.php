@@ -15,7 +15,17 @@ it('manages eloquent attributes safely', function (): void {
     $model->shouldReceive('getAttribute')->with('active')->andReturn(1);
     $model->shouldReceive('getAttribute')->with('missing')->andReturn(null);
 
-    $action = app(SafeAttributeCastAction::class);
+describe('Safe Attribute Cast Action', function (): void {
+    test('manages eloquent attributes safely', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $model = $this->createUnitMock(Activity::class);
+        $model->method('getAttribute')->willReturnMap([
+            ['name', 'Test User'],
+            ['email', ''],
+            ['id', 123],
+            ['active', 1],
+            ['missing', null],
+        ]);
 
     // hasAttribute
     expect($action->hasAttribute($model, 'name'))->toBeTrue();

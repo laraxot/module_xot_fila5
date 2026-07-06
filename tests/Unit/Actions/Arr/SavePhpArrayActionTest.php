@@ -7,32 +7,45 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 
 beforeEach(function (): void {
-    $action = app(SavePhpArrayAction::class);
-    $tempDir = sys_get_temp_dir();
-    mkdir($tempDir, 0755, true);
-});
-
-afterEach(function (): void {
-    if (isset($tempDir))
-        array_map('unlink', glob($tempDir.'/*'));
-        rmdir($tempDir);
+    /** @var \Modules\Xot\Tests\TestCase $this */
+        $this->action = app(SavePhpArrayAction::class);
+    $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
+    if (! file_exists($this->tempDir)) {
+        mkdir($this->tempDir, 0755, true);
     }
 });
 
-it('saves array to php file', function (): void {
-    $data = ['a' => 1, 'b' => 'test'];
-    $path = $this->tempDir.'/data.php';
+afterEach(function (): void {
+    /** @var \Modules\Xot\Tests\TestCase $this */
+        if (isset($this->tempDir) && file_exists($this->tempDir)) {
+        $dir = $this->tempDir;
+        $files = glob($dir.'/*');
+        foreach ($files as $file) {
+            $this->assertIsString($file);
+            unlink($file);
+        }
+        rmdir($dir);
+    }
+});
+
+describe('Save Php Array Action', function (): void {
+    test('saves array to php file', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $data = ['a' => 1, 'b' => 'test'];
+        $path = $this->tempDir.'/data.php';
 
     $result = $this->action->execute($data, $path);
 
-    expect($result)->toBeTrue();
-    $loaded = require $path;
-    expect($loaded)->toBe($data);
-});
+        Assert::assertTrue($result);
+        $loaded = require $path;
+        Assert::assertSame($data, $loaded);
+    });
 
-it('saved file has strict types', function (): void {
-    $path = $tempDir.'/strict.php';
-    $action->execute(['x' => 1], $path);
+    test('saved file has strict types', function (): void {
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $path = $this->tempDir.'/strict.php';
+        app(SavePhpArrayAction::class)->execute(['x' => 1], $path);
 
-    expect(file_get_contents($path))->toContain('declare(strict_types=1)');
+        Assert::assertStringContainsString('declare(strict_types=1)', file_get_contents($path));
+    });
 });

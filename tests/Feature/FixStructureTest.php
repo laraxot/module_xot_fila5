@@ -18,9 +18,12 @@ class FixStructureTest extends TestCase
     {
         parent::setUp();
 
-        // Creiamo una directory temporanea per i test
+beforeEach(function (): void {
+    /* @var \Modules\Xot\Tests\TestCase $this */
+    // Creiamo una directory temporanea per i test
+    /** @var \Modules\Xot\Tests\TestCase $this */
         $this->testDir = sys_get_temp_dir().'/fix_structure_test_'.uniqid();
-        mkdir($this->testDir, 0o755, true);
+    mkdir($this->testDir, 0o755, true);
 
         // Impostiamo la directory di lavoro
         chdir($this->testDir);
@@ -58,6 +61,7 @@ class FixStructureTest extends TestCase
     public function testMoveToAppFunctionality(): void
     {
         // Creiamo una struttura di directory di test
+        /** @var \Modules\Xot\Tests\TestCase $this */
         mkdir($this->testDir.'/Actions', 0o755, true);
         file_put_contents($this->testDir.'/Actions/test.php', 'echo "test";');
 
@@ -80,6 +84,7 @@ class FixStructureTest extends TestCase
     public function testRenameToLowerFunctionality(): void
     {
         // Creiamo una struttura di directory di test
+        /** @var \Modules\Xot\Tests\TestCase $this */
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/test.php', 'echo "test";');
 
@@ -102,6 +107,7 @@ class FixStructureTest extends TestCase
     public function testMoveConfigFunctionality(): void
     {
         // Creiamo una struttura di directory di test con entrambe le versioni
+        /** @var \Modules\Xot\Tests\TestCase $this */
         mkdir($this->testDir.'/Config', 0o755, true);
         file_put_contents($this->testDir.'/Config/main.php', 'echo "main";');
 

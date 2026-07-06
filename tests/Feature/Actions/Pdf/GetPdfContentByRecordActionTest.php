@@ -16,17 +16,17 @@ class GetPdfContentByRecordActionTest extends TestCase
 {
     private GetPdfContentByRecordAction $action;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
+beforeEach(function (): void {
+    /** @var \Modules\Xot\Tests\TestCase $this */
         $this->action = new GetPdfContentByRecordAction();
-    }
+});
 
     /** @test */
     public function itGeneratesPdfContentFromRecord(): void
     {
         // Arrange
-        $user = User::factory()->create([
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne([
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
@@ -45,7 +45,8 @@ class GetPdfContentByRecordActionTest extends TestCase
     public function itGeneratesCorrectViewName(): void
     {
         // Arrange
-        $user = User::factory()->create();
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
         $reflection = new \ReflectionClass($action);
@@ -63,7 +64,8 @@ class GetPdfContentByRecordActionTest extends TestCase
     public function itGeneratesCorrectFilenameForBasicModel(): void
     {
         // Arrange
-        $user = User::factory()->create(['id' => 123, 'name' => 'Test User']);
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne(['id' => 123, 'name' => 'Test User']);
 
         // Use reflection to test protected method
         $reflection = new \ReflectionClass($action);
@@ -81,6 +83,7 @@ class GetPdfContentByRecordActionTest extends TestCase
     public function itGeneratesEnhancedFilenameForPerformanceModels(): void
     {
         // Arrange - Create a mock model with performance fields
+        /** @var \Modules\Xot\Tests\TestCase $this */
         $record = new class extends Model {
             protected $table = 'test_performance';
 
@@ -112,7 +115,8 @@ class GetPdfContentByRecordActionTest extends TestCase
     public function itPreparesCorrectViewParameters(): void
     {
         // Arrange
-        $user = User::factory()->create(['name' => 'Test User']);
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
         $reflection = new \ReflectionClass($action);
@@ -136,7 +140,8 @@ class GetPdfContentByRecordActionTest extends TestCase
     public function itThrowsExceptionForMissingView(): void
     {
         // Arrange
-        $user = User::factory()->create();
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne();
 
         // Act & Assert
         $this->expectException(\Exception::class);
@@ -150,14 +155,16 @@ class GetPdfContentByRecordActionTest extends TestCase
     {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        $this->markTestSkipped('Requires view mocking infrastructure');
-    }
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $this->skipTest('Requires view mocking infrastructure');
+    });
 
     /** @test */
     public function itUsesCustomFilenameWhenProvided(): void
     {
         // Arrange
-        $user = User::factory()->create();
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne();
         $customFilename = 'custom-report.pdf';
 
         // Act & Assert - Should use custom filename in error message
@@ -170,7 +177,8 @@ class GetPdfContentByRecordActionTest extends TestCase
     public function itHandlesFromRecordConvenienceMethod(): void
     {
         // Arrange
-        $user = User::factory()->create();
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne();
         $filename = 'convenience-test.pdf';
 
         // Act & Assert
@@ -185,14 +193,16 @@ class GetPdfContentByRecordActionTest extends TestCase
     {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        $this->markTestSkipped('Requires HTML2PDF mocking infrastructure');
-    }
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $this->skipTest('Requires HTML2PDF mocking infrastructure');
+    });
 
     /** @test */
     public function itReturnsValidPdfContentWhenViewExists(): void
     {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        $this->markTestSkipped('Requires test view infrastructure');
-    }
-}
+        /** @var \Modules\Xot\Tests\TestCase $this */
+        $this->skipTest('Requires test view infrastructure');
+    });
+});
