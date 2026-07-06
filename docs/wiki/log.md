@@ -16,12 +16,13 @@
 title: "Activity Log"
 type: log
 module: Xot
-tags: [xot, phpstan, pest, qmd]
+tags: [xot, phpstan, pest, qmd, ponytail-audit]
 created: 2026-04-20
-updated: 2026-06-29
-qmd: "Xot log phpstan pest bridge discipline"
+updated: 2026-06-30
+qmd: "Xot log phpstan pest bridge discipline ponytail audit"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
+  - "https://github.com/laraxot/base_predict_fila5/issues/237"
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
@@ -440,3 +441,5 @@ _No activity yet. Start by ingesting raw documents._
 - XotBasePolicy: zero dipendenze, system processes, API token
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
+
+2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa

@@ -9,7 +9,6 @@ use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
 uses(TestCase::class);
 

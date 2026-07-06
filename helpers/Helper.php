@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,8 +21,9 @@ use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Datas\XotData;
+use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
+use Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe;
+use Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe;
 
 use function Safe\define;
 use function Safe\preg_match;
@@ -64,16 +65,11 @@ if (! function_exists('dddx')) {
     }
 }
 
-if (! function_exists('getFilename')) {
+if (! function_exists('in_admin')) {
     /** @param array<string, mixed> $params */
-    function getFilename(array $params): string
+    function in_admin(array $params = []): bool
     {
-        $tmp = debug_backtrace();
-        $class = class_basename($tmp[1]['class'] ?? 'class-unknown');
-        $func = $tmp[1]['function'] ?? 'function-unknown';
-        $params_list = collect($params)->except(['_token', '_method'])->implode('_');
-
-        return Str::slug(str_replace('Controller', '', $class).'_'.str_replace('do_', '', $func).'_'.$params_list);
+        return inAdmin($params);
     }
 }
 
@@ -92,40 +88,6 @@ if (! function_exists('inAdmin')) {
         $segments = Request::segments();
 
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
-    }
-}
-
-if (! function_exists('getRouteParameters')) {
-    /**
-     * Parametri della route corrente (es. anno, stabi, repar nei contesti admin progressioni).
-     *
-     * @return array<string, mixed>
-     */
-    function getRouteParameters(): array
-    {
-        if (app()->runningInConsole()) {
-            return [];
-        }
-
-        $route = Route::current();
-        if (null === $route) {
-            return [];
-        }
-
-        $params = $route->parameters();
-        if (! is_array($params)) {
-            return [];
-        }
-
-        /** @var array<string, mixed> $result */
-        $result = [];
-        foreach ($params as $key => $value) {
-            if (is_string($key)) {
-                $result[$key] = $value;
-            }
-        }
-
-        return $result;
     }
 }
 
@@ -150,7 +112,7 @@ if (! function_exists('params2ContainerItem')) {
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
             preg_match($pattern, $k, $matches);
-            if (! empty($matches)) {
+            if (count($matches) >= 3) {
                 $sk = $matches[1];
                 $sv = $matches[2];
                 ${$sk}[$sv] = $v;
@@ -211,38 +173,6 @@ if (! function_exists('isJson')) {
     function isJson(string $string): bool
     {
         return json_validate($string);
-    }
-}
-
-if (! function_exists('xotSeedModelOnce')) {
-    /**
-     * Seed exactly one model instance via its factory (idempotent entity seeder).
-     *
-     * @template TModel of Model
-     *
-     * @param class-string<TModel> $modelClass
-     *
-     * @return TModel
-     */
-    function xotSeedModelOnce(string $modelClass): Model
-    {
-        Assert::classExists($modelClass);
-
-        /** @var Builder<Model> $query */
-        $query = $modelClass::query();
-
-        if ($query->exists()) {
-            $existing = $query->first();
-            Assert::isInstanceOf($existing, $modelClass);
-
-            return $existing;
-        }
-
-        $factory = (new GetFactoryAction())->execute($modelClass);
-        $model = $factory->createOne();
-        Assert::isInstanceOf($model, $modelClass);
-
-        return $model;
     }
 }
 

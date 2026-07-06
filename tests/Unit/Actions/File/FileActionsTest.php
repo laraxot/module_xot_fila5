@@ -12,7 +12,6 @@ use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
 test('fix path action works', function (): void {
-    /** @var Modules\Xot\Tests\TestCase $this */
     $action = app(FixPathAction::class);
     $path = 'some/path/with/mixed/slashes';
     $expected = str_replace(['/', '\\'], [DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR], $path);

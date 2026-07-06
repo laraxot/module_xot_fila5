@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Mixins\PanelMixin;
@@ -62,6 +63,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     #[\Override]
     public function register(): void
     {
+        $this->registerRuntimePsr4Autoload();
         parent::register();
         $this->registerConfig();
 
@@ -78,6 +80,23 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function registerProviders(): void
     {
         // $this->app->register(Filament\ModulesServiceProvider::class);
+    }
+
+    private function registerRuntimePsr4Autoload(): void
+    {
+        $autoloadPath = base_path('vendor/autoload.php');
+
+        if (! is_file($autoloadPath)) {
+            return;
+        }
+
+        $loader = require $autoloadPath;
+
+        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
     }
 
     public function registerTimezone(): void

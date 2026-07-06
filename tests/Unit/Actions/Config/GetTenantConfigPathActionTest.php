@@ -8,7 +8,6 @@ use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
 uses(TestCase::class);
 

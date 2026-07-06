@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\CreateDirectoryForFilenameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
 uses(TestCase::class);
 

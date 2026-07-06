@@ -26,12 +26,6 @@ use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 
-use function Safe\rmdir;
-use function Safe\scandir;
-use function Safe\unlink;
-
-use Webmozart\Assert\Assert;
-
 /**
  * Class XotBaseTestCase.
  *
@@ -51,8 +45,6 @@ use Webmozart\Assert\Assert;
  * @property Model|null  $baseModel
  * @property string|null $testDir
  * @property string|null $workDir
- * @property string|null $testSchemaPath
- * @property string|null $testOutputDir
  * @property mixed       $saved
  * @property mixed       $extra_attributes
  */
@@ -85,10 +77,6 @@ abstract class XotBaseTestCase extends BaseTestCase
     public ?string $testDir = null;
 
     public ?string $workDir = null;
-
-    public ?string $testSchemaPath = null;
-
-    public ?string $testOutputDir = null;
 
     public mixed $saved = null;
 
@@ -369,30 +357,5 @@ abstract class XotBaseTestCase extends BaseTestCase
     public function expectThrowableMessageMatches(string $pattern): void
     {
         $this->expectExceptionMessageMatches($pattern);
-    }
-
-    public function rrmdir(string $dir): void
-    {
-        if (! is_dir($dir)) {
-            return;
-        }
-
-        $items = scandir($dir);
-        Assert::allString($items);
-
-        foreach ($items as $item) {
-            if ('.' === $item || '..' === $item) {
-                continue;
-            }
-
-            $path = $dir.'/'.$item;
-            if (is_dir($path) && ! is_link($path)) {
-                $this->rrmdir($path);
-            } else {
-                unlink($path);
-            }
-        }
-
-        rmdir($dir);
     }
 }
