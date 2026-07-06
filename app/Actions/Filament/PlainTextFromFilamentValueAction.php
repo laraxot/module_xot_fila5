@@ -7,7 +7,6 @@ namespace Modules\Xot\Actions\Filament;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Contracts\Support\Htmlable;
 use Spatie\QueueableAction\QueueableAction;
-use Stringable;
 
 /**
  * Plain text for Filament grid labels — Htmlable, enum HasLabel, scalar.
@@ -26,7 +25,7 @@ class PlainTextFromFilamentValueAction
             return $value;
         }
 
-        if (is_scalar($value) || $value instanceof Stringable) {
+        if (is_scalar($value) || $value instanceof \Stringable) {
             return (string) $value;
         }
 
@@ -34,7 +33,7 @@ class PlainTextFromFilamentValueAction
             return $this->execute($value->getLabel(), $fallback);
         }
 
-        if (is_scalar($fallback) || $fallback instanceof Stringable) {
+        if (is_scalar($fallback) || $fallback instanceof \Stringable) {
             return (string) $fallback;
         }
 
