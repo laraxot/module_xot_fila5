@@ -13,7 +13,8 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\Xot\Tests\TestCase $this */
-    $this->action = app(AddStrictTypesDeclarationAction::class);
+    /** @var \Modules\Xot\Tests\TestCase $this */
+        $this->action = app(AddStrictTypesDeclarationAction::class);
     $this->workDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_strict_types_'.uniqid();
     assert(is_string($this->workDir));
     File::makeDirectory($this->workDir, 0755, true);
@@ -21,7 +22,8 @@ beforeEach(function (): void {
 
 afterEach(function (): void {
     /* @var \Modules\Xot\Tests\TestCase $this */
-    assert(is_string($this->workDir));
+    /** @var \Modules\Xot\Tests\TestCase $this */
+        assert(is_string($this->workDir));
     if (File::isDirectory($this->workDir)) {
         File::deleteDirectory($this->workDir);
     }
