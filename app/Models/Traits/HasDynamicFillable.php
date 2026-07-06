@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-use BackedEnum;
-use UnitEnum;
-
+/** @phpstan-ignore trait.unused */
 trait HasDynamicFillable
 {
     /**

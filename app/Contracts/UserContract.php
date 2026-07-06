@@ -42,7 +42,8 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract                    $currentTeam
  * @property ProfileContract|null            $profile
  * @property Collection<int, UserRole>       $roles
- * @property Collection<int, Team>           $teams
+ * @property Collection<int, Team>           $membershipTeams
+ * @property Collection<int, Model>          $teams
  * @property Collection<int, Tenant>         $tenants
  *
  * @phpstan-require-extends Model
