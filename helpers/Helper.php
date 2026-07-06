@@ -299,4 +299,3 @@ if (! function_exists('xotSeedModelOnce')) {
             ->createOne();
     }
 }
-
