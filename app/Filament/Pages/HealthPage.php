@@ -39,7 +39,11 @@ use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
 class HealthPage extends XotBasePage
 {
     /**
+     * <<<<<<< HEAD
      * Untyped to match HandlesEvents::$listeners.
+     *
+     * =======
+     * >>>>>>> origin/dev
      *
      * @var array<string, string>
      */

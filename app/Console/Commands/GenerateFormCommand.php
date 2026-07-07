@@ -19,11 +19,21 @@ class GenerateFormCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     * <<<<<<< HEAD
+     * =======.
+     *
+     * @var string
+     *             >>>>>>> origin/dev
      */
     protected $signature = 'xot:generate-form {module}';
 
     /**
      * The console command description.
+     * <<<<<<< HEAD
+     * =======.
+     *
+     * @var string
+     *             >>>>>>> origin/dev
      */
     protected $description = 'fill form with inputs';
 

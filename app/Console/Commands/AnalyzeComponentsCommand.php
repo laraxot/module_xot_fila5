@@ -11,11 +11,21 @@ class AnalyzeComponentsCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     * <<<<<<< HEAD
+     * =======.
+     *
+     * @var string
+     *             >>>>>>> origin/dev
      */
     protected $signature = 'xot:analyze-components {--module=} {--type=} {--prefix=} {--force}';
 
     /**
      * The console command description.
+     * <<<<<<< HEAD
+     * =======.
+     *
+     * @var string
+     *             >>>>>>> origin/dev
      */
     protected $description = 'Analizza i componenti del sistema';
 
