@@ -10,6 +10,10 @@ use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
+<<<<<<< HEAD
+=======
+use Filament\Support\Components\Component;
+>>>>>>> origin/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -172,10 +176,16 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
         foreach ($components as $component) {
+<<<<<<< HEAD
             $component::configureUsing(function (object $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {
                     $translatable->translateLabel();
                 }
+=======
+            $component::configureUsing(function (Component $translatable): void {
+                /* @phpstan-ignore method.notFound */
+                $translatable->translateLabel();
+>>>>>>> origin/dev
             });
         }
     }

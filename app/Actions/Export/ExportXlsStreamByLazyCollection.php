@@ -50,10 +50,17 @@ class ExportXlsStreamByLazyCollection
 
                 foreach ($data as $key => $value) {
                     // Gestiamo sia oggetti che possono essere convertiti ad array che array diretti
+<<<<<<< HEAD
                     if (\is_object($value) && method_exists($value, 'toArray')) {
                         /** @var array<string|int|float|bool|null> $rowData */
                         $rowData = $value->toArray();
                     } elseif (\is_array($value)) {
+=======
+                    if (is_object($value) && method_exists($value, 'toArray')) {
+                        /** @var array<string|int|float|bool|null> $rowData */
+                        $rowData = $value->toArray();
+                    } elseif (is_array($value)) {
+>>>>>>> origin/dev
                         /** @var array<string|int|float|bool|null> $rowData */
                         $rowData = $value;
                     } else {
@@ -61,12 +68,20 @@ class ExportXlsStreamByLazyCollection
                         continue;
                     }
                     // Convertiamo tutti i valori in stringhe o null
+<<<<<<< HEAD
                     $safeRowData = array_map(static function ($item) {
+=======
+                    $safeRowData = array_map(function ($item) {
+>>>>>>> origin/dev
                         if (null === $item) {
                             return '';
                         }
 
+<<<<<<< HEAD
                         return \is_string($item) ? $item : ((string) $item);
+=======
+                        return is_string($item) ? $item : ((string) $item);
+>>>>>>> origin/dev
                     }, $rowData);
 
                     fputcsv($file, $safeRowData);
@@ -96,11 +111,19 @@ class ExportXlsStreamByLazyCollection
     public function headings(LazyCollection $data, ?string $transKey = null): array
     {
         $first = $data->first();
+<<<<<<< HEAD
         if (! \is_array($first) && (! \is_object($first) || ! method_exists($first, 'toArray'))) {
             return []; // Ritorna intestazioni vuote se non c'è un primo elemento valido
         }
 
         $headArray = \is_array($first) ? $first : $first->toArray();
+=======
+        if (! is_array($first) && (! is_object($first) || ! method_exists($first, 'toArray'))) {
+            return []; // Ritorna intestazioni vuote se non c'è un primo elemento valido
+        }
+
+        $headArray = is_array($first) ? $first : $first->toArray();
+>>>>>>> origin/dev
 
         /**
          * @var array<string, mixed>    $headArray
@@ -113,23 +136,38 @@ class ExportXlsStreamByLazyCollection
                 $key = $transKey.'.fields.'.$item;
                 $trans = trans($key);
                 if ($trans !== $key) {
+<<<<<<< HEAD
                     return \is_string($trans) ? $trans : $item;
+=======
+                    return is_string($trans) ? $trans : $item;
+>>>>>>> origin/dev
                 }
 
                 Assert::string($item1 = Str::replace('.', '_', $item), '['.__LINE__.']['.self::class.']');
                 $key = $transKey.'.fields.'.$item1;
                 $trans = trans($key);
                 if ($trans !== $key) {
+<<<<<<< HEAD
                     return \is_string($trans) ? $trans : $item;
+=======
+                    return is_string($trans) ? $trans : $item;
+>>>>>>> origin/dev
                 }
 
                 return $item;
             });
         }
 
+<<<<<<< HEAD
         /** @var list<string> $result */
         $result = array_values($headings->map(strval(...))->toArray());
 
         return $result;
+=======
+        $headers = array_values($headings->map(strval(...))->toArray());
+
+        /* @var array<string> $headers */
+        return $headers;
+>>>>>>> origin/dev
     }
 }

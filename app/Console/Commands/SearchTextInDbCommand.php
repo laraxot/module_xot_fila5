@@ -12,7 +12,11 @@ use function Safe\json_encode;
 
 class SearchTextInDbCommand extends Command
 {
+<<<<<<< HEAD
     protected $signature = 'xot:search-text-in-db {search : The text to search for} {--tables=* : Optional specific tables to search in}';
+=======
+    protected $signature = 'db:search-text {search : The text to search for} {--tables=* : Optional specific tables to search in}';
+>>>>>>> origin/dev
 
     protected $description = 'Search for text in all database tables or specific tables';
 

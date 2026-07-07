@@ -11,6 +11,10 @@ namespace Modules\Xot\Actions\Model;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< HEAD
+=======
+use ReflectionClass;
+>>>>>>> origin/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetAllModelsByModuleNameAction

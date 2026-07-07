@@ -30,6 +30,7 @@ class BelongsToManyAction
             // $this->saveMultiselectTwoSides($row, $relation->name, $relation->data);
             Assert::isArray($to = $relationDTO->data['to'] ?? []);
             $rows->sync($to);
+<<<<<<< HEAD
             $toLabels = array_values(array_filter(
                 $to,
                 static fn (mixed $item): bool => is_scalar($item),
@@ -38,6 +39,9 @@ class BelongsToManyAction
                 static fn (int|float|string|bool $item): string => (string) $item,
                 $toLabels,
             )).'] ';
+=======
+            $status = 'collegati ['.implode(', ', $to).'] ';
+>>>>>>> origin/dev
             Session::flash('status', $status);
 
             return;

@@ -60,6 +60,12 @@ final class Module extends BaseModel
         'colors',
     ];
 
+<<<<<<< HEAD
+=======
+    /**
+     * @var string
+     */
+>>>>>>> origin/dev
     protected $connection = 'xot';
 
     /**
@@ -79,7 +85,11 @@ final class Module extends BaseModel
                 'name' => $module->getName(),
                 // 'alias' => $module->getAlias(),
                 'description' => $module->getDescription(),
+<<<<<<< HEAD
                 'status' => $module->isEnabled(), // Fixed PHPDoc issue from earlier analysis
+=======
+                'status' => $module->isEnabled(),
+>>>>>>> origin/dev
                 'priority' => $module->get('priority'),
                 'path' => $module->getPath(),
                 'icon' => Arr::get($config, 'icon', 'heroicon-o-question-mark-circle'),
@@ -87,9 +97,15 @@ final class Module extends BaseModel
             ];
         });
 
+<<<<<<< HEAD
         /** @var array<int, array<string, mixed>> */
         $rows = array_values($modules);
 
+=======
+        $rows = array_values($modules);
+
+        /* @var array<int, array<string, mixed>> $rows */
+>>>>>>> origin/dev
         return $rows;
     }
 

@@ -14,6 +14,7 @@ class LogsTable extends XotBaseResourceTable
      * @return array<string, Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getTableColumns(): array
     {
         return [
@@ -23,6 +24,8 @@ class LogsTable extends XotBaseResourceTable
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
 =======
+=======
+>>>>>>> origin/dev
     public function getTableColumns(): array
     {
         /*
@@ -32,7 +35,10 @@ class LogsTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable(),
             'name' => TextColumn::make('name')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         ];
     }
 }

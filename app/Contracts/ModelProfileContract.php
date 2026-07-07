@@ -68,6 +68,13 @@ interface ModelProfileContract extends ModelContract
 
     /**
      * Create a new Eloquent query builder for the model.
+<<<<<<< HEAD
      */
     public function newEloquentBuilder(Builder $query): Builder|static;
+=======
+     *
+     * @return Builder|static
+     */
+    public function newEloquentBuilder(Builder $query);
+>>>>>>> origin/dev
 }

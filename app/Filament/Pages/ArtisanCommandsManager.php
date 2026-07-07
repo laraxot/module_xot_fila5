@@ -15,7 +15,10 @@ use Modules\Xot\Actions\ExecuteArtisanCommandAction;
  */
 class ArtisanCommandsManager extends XotBasePage
 {
+<<<<<<< HEAD
     /** @var list<string> */
+=======
+>>>>>>> origin/dev
     public array $output = [];
 
     public string $currentCommand = '';
@@ -26,9 +29,16 @@ class ArtisanCommandsManager extends XotBasePage
 
     /**
      * Livewire event listeners for this component.
+<<<<<<< HEAD
      * Untyped to match HandlesEvents::$listeners.
      *
      * @var array<string, string>
+=======
+     *
+     * @var array<string, string>
+     *
+     * @phpstan-var array<string, string>
+>>>>>>> origin/dev
      */
     protected $listeners = [
         'refresh-component' => '$refresh',

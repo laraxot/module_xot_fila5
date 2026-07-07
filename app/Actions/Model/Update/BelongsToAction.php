@@ -33,7 +33,12 @@ class BelongsToAction
          */
 
         if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
+<<<<<<< HEAD
             $related_id = $relationDTO->data[0] ?? null;
+=======
+            /** @phpstan-ignore-next-line argument.unresolvableType */
+            $related_id = Arr::first($relationDTO->data);
+>>>>>>> origin/dev
             if (null === $related_id) {
                 return;
             }
@@ -71,7 +76,11 @@ class BelongsToAction
             $relationName = Str::camel($relationDTO->name);
             $relation = $model->{$relationName};
 
+<<<<<<< HEAD
             if (! \is_object($relation) || ! method_exists($relation, 'update')) {
+=======
+            if (! is_object($relation) || ! method_exists($relation, 'update')) {
+>>>>>>> origin/dev
                 return;
             }
 

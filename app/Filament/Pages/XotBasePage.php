@@ -32,7 +32,10 @@ use Modules\Xot\Filament\Traits\TransTrait;
  *
  * @property ?string              $model Il modello associato alla pagina
  * @property array<string, mixed> $data  I dati del form
+<<<<<<< HEAD
  * @property Schema               $form  Schema form gestito da Filament tramite InteractsWithForms
+=======
+>>>>>>> origin/dev
  *
  * @see \Modules\Xot\docs\xotbasepage_implementation.md Documentazione completa
  */
@@ -80,7 +83,11 @@ abstract class XotBasePage extends Page implements HasForms
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
         if ('' === $moduleName) {
+<<<<<<< HEAD
             throw new \LogicException(\sprintf('Cannot extract module name from class %s', static::class));
+=======
+            throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
+>>>>>>> origin/dev
         }
 
         return $moduleName;
@@ -114,7 +121,13 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getModel(): string
     {
+<<<<<<< HEAD
         if (null !== static::$model) {
+=======
+        /* @phpstan-ignore property.staticAccess */
+        if (null !== static::$model) {
+            /** @phpstan-ignore property.staticAccess */
+>>>>>>> origin/dev
             /** @var class-string<Model> $modelValue */
             $modelValue = static::$model;
 
@@ -134,7 +147,11 @@ abstract class XotBasePage extends Page implements HasForms
             ->toString();
 
         if ('' === $modelName) {
+<<<<<<< HEAD
             throw new \LogicException(\sprintf('Cannot determine model name from class %s', static::class));
+=======
+            throw new \LogicException(sprintf('Cannot determine model name from class %s', static::class));
+>>>>>>> origin/dev
         }
 
         $modelNamespace = 'Modules\\'.$moduleName.'\\Models\\'.$modelName;
@@ -248,9 +265,16 @@ abstract class XotBasePage extends Page implements HasForms
     {
         $user = $this->getUser();
 
+<<<<<<< HEAD
         // if (! method_exists($user, 'hasPermissionTo')) {
         //    throw new \RuntimeException('Il modello utente deve implementare il metodo hasPermissionTo');
         // }
+=======
+        // @phpstan-ignore-next-line
+        if (! method_exists($user, 'hasPermissionTo')) {
+            throw new \RuntimeException('Il modello utente deve implementare il metodo hasPermissionTo');
+        }
+>>>>>>> origin/dev
 
         // Use method_exists to safely call hasPermissionTo
         return $user->hasPermissionTo($permission);

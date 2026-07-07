@@ -47,11 +47,14 @@ return [
         'delete' => [
             'label' => 'Elimina Actions',
         ],
+<<<<<<< HEAD
         'previous' => [
             'label' => 'Indietro',
         ],
         'next' => [
             'label' => 'Avanti',
         ],
+=======
+>>>>>>> origin/dev
     ],
 ];

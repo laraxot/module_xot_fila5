@@ -14,6 +14,10 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Arr;
+>>>>>>> origin/dev
 use Modules\Xot\Datas\EnvData;
 
 /**
@@ -27,7 +31,10 @@ class EnvWidget extends Widget implements HasActions, HasForms
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
+<<<<<<< HEAD
     /** @var list<string> */
+=======
+>>>>>>> origin/dev
     public array $only = [];
 
     protected string $view = 'xot::filament.widgets.env';
@@ -66,7 +73,11 @@ class EnvWidget extends Widget implements HasActions, HasForms
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
+=======
+     * @return array<Component>
+>>>>>>> origin/dev
      */
     public function getFormSchema(): array
     {
@@ -85,6 +96,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
                 ->placeholder('AIzaSyAuB_...')
                 ->helperText('telegram_bot_token'),
         ];
+<<<<<<< HEAD
 
         if ([] === $this->only) {
             return $all;
@@ -104,5 +116,13 @@ class EnvWidget extends Widget implements HasActions, HasForms
         }
 
         return $selected;
+=======
+        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
+
+        /** @var array<Component> $components */
+        $components = array_values($selected);
+
+        return $components;
+>>>>>>> origin/dev
     }
 }

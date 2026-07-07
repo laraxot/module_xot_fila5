@@ -12,10 +12,17 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\Contracts\ScopeAuthorizable;
 use Laravel\Passport\PersonalAccessTokenResult;
+=======
+use Laravel\Passport\Contracts\OAuthenticatable;
+use Laravel\Passport\PersonalAccessTokenResult;
+use Laravel\Passport\Token;
+use Laravel\Passport\TransientToken;
+>>>>>>> origin/dev
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
@@ -30,7 +37,10 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @property string|null               $id
  * @property string|null               $email
+<<<<<<< HEAD
  * @property Carbon|null               $email_verified_at
+=======
+>>>>>>> origin/dev
  * @property string|null               $first_name
  * @property string|null               $last_name
  * @property string|null               $full_name
@@ -60,8 +70,15 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
 
     /**
      * Get the access token currently associated with the user.
+<<<<<<< HEAD
      */
     public function token(): ?ScopeAuthorizable;
+=======
+     *
+     * @return Token|TransientToken|null
+     */
+    public function token();
+>>>>>>> origin/dev
 
     /**
      * Create a new personal access token for the user.
@@ -73,6 +90,10 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Passport API tokens support.
      */
+<<<<<<< HEAD
+=======
+    // @phpstan-ignore-next-line interface should extend this contract
+>>>>>>> origin/dev
 
     /**
      * Determine if the model has (one of) the given role(s).
@@ -126,9 +147,17 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Revoke the given role from the model.
      *
+<<<<<<< HEAD
      * @return $this
      */
     public function removeRole(string|int|array|UserRole|Collection|\BackedEnum ...$role);
+=======
+     * @param string|int|array|UserRole|Collection|\BackedEnum ...$role
+     *
+     * @return $this
+     */
+    public function removeRole(...$role);
+>>>>>>> origin/dev
 
     /**
      * Determine if the user owns the given team.

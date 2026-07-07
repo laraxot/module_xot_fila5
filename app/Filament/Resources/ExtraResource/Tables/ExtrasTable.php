@@ -5,14 +5,18 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\ExtraResource\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 =======
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class ExtrasTable extends XotBaseResourceTable
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, Column>
@@ -27,6 +31,8 @@ class ExtrasTable extends XotBaseResourceTable
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
 =======
+=======
+>>>>>>> origin/dev
     public function getTableColumns(): array
     {
         /*
@@ -36,7 +42,10 @@ class ExtrasTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime(),
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         ];
     }
 }

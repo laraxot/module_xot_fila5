@@ -7,20 +7,28 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Schemas;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component as SchemaComponent;
 =======
 use Filament\Schemas\Components\Component;
 >>>>>>> 40b96bcd6 (.)
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> origin/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class CacheForm extends XotBaseResourceForm
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int|string, SchemaComponent>
 =======
      * @return array<int|string, Component>
 >>>>>>> 40b96bcd6 (.)
+=======
+     * @return array<int|string, Component>
+>>>>>>> origin/dev
      */
     public static function getFormSchema(): array
     {

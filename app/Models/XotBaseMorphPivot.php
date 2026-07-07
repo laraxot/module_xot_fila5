@@ -34,27 +34,51 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
     use HasXotFactory;
     use Updater;
 
+<<<<<<< HEAD
     public $incrementing = true;
 
+=======
+    /** @var bool */
+    public $incrementing = true;
+
+    /** @var bool */
+>>>>>>> origin/dev
     public $timestamps = true;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
+=======
+     *
+     * @var bool
+>>>>>>> origin/dev
      */
     public static $snakeAttributes = true;
 
     /**
      * The number of models to return for pagination.
+<<<<<<< HEAD
+=======
+     *
+     * @var int
+>>>>>>> origin/dev
      */
     protected $perPage = 30;
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
     protected $primaryKey = 'id';
 
+=======
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+>>>>>>> origin/dev
     protected $keyType = 'string';
 
     /** @var list<string> */

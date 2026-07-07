@@ -11,10 +11,16 @@ use Filament\Resources\RelationManagers\RelationGroup;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
 use Filament\Resources\Resource as FilamentResource;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
+=======
+use Filament\Schemas\Components\Wizard\Step;
+use Filament\Schemas\Schema;
+use Filament\Support\Components\Component;
+>>>>>>> origin/dev
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
@@ -47,7 +53,11 @@ abstract class XotBaseResource extends FilamentResource
         $tmp = static::getKeyTrans($key);
         $res = trans($tmp, $params);
 
+<<<<<<< HEAD
         if (\is_string($res)) {
+=======
+        if (is_string($res)) {
+>>>>>>> origin/dev
             if ($exceptionIfNotExist && $res === $tmp) {
                 throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
             }
@@ -55,10 +65,17 @@ abstract class XotBaseResource extends FilamentResource
             return $res;
         }
 
+<<<<<<< HEAD
         if (\is_array($res)) {
             $first = current($res);
             if (\is_string($first) || is_numeric($first)) {
                 return \is_string($first) ? $first : ((string) $first);
+=======
+        if (is_array($res)) {
+            $first = current($res);
+            if (is_string($first) || is_numeric($first)) {
+                return is_string($first) ? $first : ((string) $first);
+>>>>>>> origin/dev
             }
         }
 
@@ -105,6 +122,7 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int|string, Component|Htmlable|string>
      */
     public static function getFormSchema(): array
@@ -124,6 +142,15 @@ abstract class XotBaseResource extends FilamentResource
         }
 
         /** @var array<int|string, Component|Htmlable|string> $components */
+=======
+     * @return array<string, Component>
+     */
+    abstract public static function getFormSchema(): array;
+
+    final public static function form(Schema $schema): Schema
+    {
+        /** @var array<Htmlable|string> $components */
+>>>>>>> origin/dev
         $components = static::getFormSchema();
 
         return $schema
@@ -139,7 +166,11 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * Schema dell'infolist: tutte le risorse devono delegare qui.
      *
+<<<<<<< HEAD
      * @return array<string, Component>
+=======
+     * @return array<string, \Filament\Schemas\Components\Component>
+>>>>>>> origin/dev
      */
     public static function getInfolistSchema(): array
     {
@@ -151,6 +182,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
+<<<<<<< HEAD
         $infolist_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
         if (class_exists($infolist_class) && method_exists($infolist_class, 'configure')) {
             $configured = $infolist_class::configure($schema);
@@ -179,6 +211,11 @@ abstract class XotBaseResource extends FilamentResource
         return parent::table($table);
     }
 
+=======
+        return $schema->components(static::getInfolistSchema());
+    }
+
+>>>>>>> origin/dev
     /**
      * @return array<string, mixed>
      */

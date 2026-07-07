@@ -29,7 +29,11 @@ class HandlerDecorator implements ExceptionHandler
     public function report(\Throwable $e): void
     {
         foreach ($this->repository->getReportersByException($e) as $reporter) {
+<<<<<<< HEAD
             if (\is_callable($reporter)) {
+=======
+            if (is_callable($reporter)) {
+>>>>>>> origin/dev
                 $reporter($e);
             }
         }
@@ -40,7 +44,11 @@ class HandlerDecorator implements ExceptionHandler
     public function render($request, \Throwable $e): SymfonyResponse
     {
         foreach ($this->repository->getRenderersByException($e) as $renderer) {
+<<<<<<< HEAD
             if (\is_callable($renderer)) {
+=======
+            if (is_callable($renderer)) {
+>>>>>>> origin/dev
                 $response = $renderer($e, $request);
                 if ($response instanceof SymfonyResponse) {
                     return $response;
@@ -51,15 +59,29 @@ class HandlerDecorator implements ExceptionHandler
         return $this->defaultHandler->render($request, $e);
     }
 
+<<<<<<< HEAD
     public function renderForConsole($output, \Throwable $e): void
     {
         foreach ($this->repository->getConsoleRenderersByException($e) as $renderer) {
             if (\is_callable($renderer)) {
+=======
+    /**
+     * @phpstan-ignore-next-line
+     */
+    public function renderForConsole($output, \Throwable $e): void
+    {
+        foreach ($this->repository->getConsoleRenderersByException($e) as $renderer) {
+            if (is_callable($renderer)) {
+>>>>>>> origin/dev
                 $renderer($e, $output);
             }
         }
 
+<<<<<<< HEAD
         /* @phpstan-ignore method.internal */
+=======
+        /* @phpstan-ignore-next-line */
+>>>>>>> origin/dev
         $this->defaultHandler->renderForConsole($output, $e);
     }
 

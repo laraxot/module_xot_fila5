@@ -51,7 +51,10 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     final public function getFormSchema(): array
     {
+<<<<<<< HEAD
         // @phpstan-ignore-next-line
+=======
+>>>>>>> origin/dev
         return $this->getResource()::getFormSchema();
     }
 
@@ -102,7 +105,11 @@ abstract class XotBaseRelationManager extends RelationManager
     protected function getResource(): string
     {
         // Use static property if available
+<<<<<<< HEAD
         if (isset(static::$resource) && \is_string(static::$resource)) {
+=======
+        if (isset(static::$resource) && is_string(static::$resource)) {
+>>>>>>> origin/dev
             if (is_subclass_of(static::$resource, XotBaseResource::class)) {
                 /* @var class-string<XotBaseResource> */
                 return static::$resource;

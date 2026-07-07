@@ -21,6 +21,7 @@ interface PassportHasApiTokensContract
 {
     /**
      * Get all of the user's registered OAuth clients.
+<<<<<<< HEAD
      */
     public function clients(): HasMany;
 
@@ -33,6 +34,26 @@ interface PassportHasApiTokensContract
      * Get the current access token being used by the user.
      */
     public function token(): Token|TransientToken|null;
+=======
+     *
+     * @return HasMany
+     */
+    public function clients();
+
+    /**
+     * Get all of the access tokens for the user.
+     *
+     * @return HasMany
+     */
+    public function tokens();
+
+    /**
+     * Get the current access token being used by the user.
+     *
+     * @return Token|TransientToken|null
+     */
+    public function token();
+>>>>>>> origin/dev
 
     /**
      * Determine if the current API token has a given scope.

@@ -14,25 +14,49 @@ use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+<<<<<<< HEAD
 
 /**
  * Base page for Filament related-record managers.
+=======
+use Override;
+
+/**
+ * ---.
+>>>>>>> origin/dev
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
     use HasXotForm;
     use HasXotTable;
+<<<<<<< HEAD
     use NavigationLabelTrait {
         NavigationLabelTrait::trans as traitTrans;
     }
 
     protected static string $recordTitleAttribute = 'name';
 
+=======
+    use NavigationLabelTrait;
+
+    // protected static string $resource;
+    protected static string $recordTitleAttribute = 'name';
+
+    /**
+     * Restituisce il gruppo di navigazione (override opzionale).
+     */
+>>>>>>> origin/dev
     public static function getNavigationGroup(): string
     {
         return '';
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Restituisce il titolo della pagina.
+     */
+>>>>>>> origin/dev
     public function getTitle(): string
     {
         return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
@@ -45,12 +69,29 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return (string) $value;
     }
 
+<<<<<<< HEAD
     public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
     }
 
     /**
+=======
+    /**
+     * Configura lo schema per i record correlati.
+     */
+    public function schema(Schema $schema): Schema
+    {
+        // getFormSchema() sempre ritorna array per definizione
+        $formSchema = $this->getFormSchema();
+
+        return $schema->components($formSchema);
+    }
+
+    /**
+     * Restituisce lo schema del form per i record correlati.
+     *
+>>>>>>> origin/dev
      * @return array<Component>
      */
     public function getFormSchema(): array
@@ -58,17 +99,41 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 
+<<<<<<< HEAD
     public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
     }
 
+=======
+    /**
+     * Restituisce l'heading della tabella.
+     * Override esplicito per compatibilità con Filament 5.2 (Htmlable|string|null).
+     */
+>>>>>>> origin/dev
     protected function getTableHeading(): Htmlable|string|null
     {
         return $this->getTableHeadingFromTrait();
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Chiamata interna per getTableHeading (evita ricorsione con HasXotTable).
+     */
+    private function getTableHeadingFromTrait(): ?string
+    {
+        $key = static::getKeyTrans('table.heading');
+        $trans = trans($key);
+
+        return is_string($trans) && $trans !== $key ? $trans : null;
+    }
+
+    /**
+     * Definisce le colonne della tabella per la visualizzazione dei record correlati.
+     * Questo metodo può essere sovrascritto nelle classi figlie.
+     *
+>>>>>>> origin/dev
      * @return array<string, TextColumn>
      */
     #[\Override]
@@ -88,6 +153,12 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Definisce le azioni dell'intestazione della tabella.
+     * Questo metodo può essere sovrascritto nelle classi figlie.
+     *
+>>>>>>> origin/dev
      * @return array<string, Action>
      */
     protected function getTableHeaderActions(): array
@@ -98,6 +169,12 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Definisce le azioni per ogni riga della tabella.
+     * Questo metodo può essere sovrascritto nelle classi figlie.
+     *
+>>>>>>> origin/dev
      * @return array<string, Action>
      */
     protected function getTableActions(): array
@@ -105,11 +182,17 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return [];
     }
 
+<<<<<<< HEAD
     private function getTableHeadingFromTrait(): ?string
     {
         $key = static::getKeyTrans('table.heading');
         $trans = trans($key);
 
         return is_string($trans) && $trans !== $key ? $trans : null;
+=======
+    public static function getNavigationLabel(): string
+    {
+        return static::transFunc(__FUNCTION__);
+>>>>>>> origin/dev
     }
 }
