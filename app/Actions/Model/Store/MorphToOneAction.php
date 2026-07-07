@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Store;
 
+use Fidum\EloquentMorphToOne\MorphToOne;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Datas\RelationData as RelationDTO;
-use Modules\Xot\Support\MorphToOneRelationSupport;
 use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class MorphToOneAction
 {
@@ -20,13 +21,14 @@ class MorphToOneAction
         //    return;
         // }
 
-        $rows = $relationDTO->rows;
+        Assert::isInstanceOf($rows = $relationDTO->rows, MorphToOne::class);
 
         if (! isset($relationDTO->data['lang'])) {
             $relationDTO->data['lang'] = App::getLocale();
         }
 
-        MorphToOneRelationSupport::create($rows, $relationDTO->data);
+        // if ($rows !== null) {
+        $rows->create($relationDTO->data);
 
         // }
         // } else {

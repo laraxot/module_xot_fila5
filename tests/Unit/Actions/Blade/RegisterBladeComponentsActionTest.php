@@ -8,58 +8,47 @@ use Illuminate\Support\Facades\Blade;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
-use Modules\Xot\Tests\TestCase;
 
-uses(TestCase::class);
+it('registers blade components correctly', function (): void {
+    $path = 'some/path';
+    $namespace = 'Some\\Namespace';
+    $prefix = 'prefix';
 
-describe('Register Blade Components Action', function (): void {
-    test('registers blade components correctly', function (): void {
-        /** @var TestCase $this */
-        $path = 'some/path';
-        $namespace = 'Some\\Namespace';
-        $prefix = 'prefix';
+    $comp1 = ComponentFileData::from([
+        'name' => 'test-comp',
+        'ns' => 'Some\\Namespace\\View\\Components\\TestComp',
+        'class' => 'TestComp',
+    ]);
 
-        $comp1 = ComponentFileData::from([
-            'name' => 'test-comp',
-            'ns' => 'Some\\Namespace\\View\\Components\\TestComp',
-            'class' => 'TestComp',
-        ]);
+    $mockComps = ComponentFileData::collection([$comp1]);
 
-        $mockComps = ComponentFileData::collection([$comp1]);
+    $this->mock(GetComponentsAction::class)
+        ->shouldReceive('execute')
+        ->once()
+        ->with($path, $namespace.'\\View\\Components', $prefix)
+        ->andReturn($mockComps);
 
-        $mock = $this->createUnitMock(GetComponentsAction::class);
-        $mock->expects($this->expectsAtLeastOnce())
-            ->method('execute')
-            ->with($path, $namespace.'\\View\\Components', $prefix)
-            ->willReturn($mockComps);
+    Blade::shouldReceive('component')
+        ->once()
+        ->with('test-comp', 'Some\\Namespace\\View\\Components\\TestComp');
 
-        app()->instance(GetComponentsAction::class, $mock);
+    $action = app(RegisterBladeComponentsAction::class);
+    $action->execute($path, $namespace, $prefix);
+});
 
-        Blade::partialMock()->allows([
-            'component' => null,
-        ]);
+it('does nothing if no components found', function (): void {
+    $path = 'empty/path';
+    $namespace = 'Empty\\Namespace';
 
-        $action = app(RegisterBladeComponentsAction::class);
-        $action->execute($path, $namespace, $prefix);
-    });
+    $mockComps = ComponentFileData::collection([]);
 
-    test('does nothing if no components found', function (): void {
-        /** @var TestCase $this */
-        $path = 'empty/path';
-        $namespace = 'Empty\\Namespace';
+    $this->mock(GetComponentsAction::class)
+        ->shouldReceive('execute')
+        ->once()
+        ->andReturn($mockComps);
 
-        $mockComps = ComponentFileData::collection([]);
+    Blade::shouldReceive('component')->never();
 
-        $mock = $this->createUnitMock(GetComponentsAction::class);
-        $mock->expects($this->expectsAtLeastOnce())
-            ->method('execute')
-            ->willReturn($mockComps);
-
-        app()->instance(GetComponentsAction::class, $mock);
-
-        // Blade facade mock skipped
-
-        $action = app(RegisterBladeComponentsAction::class);
-        $action->execute($path, $namespace);
-    });
+    $action = app(RegisterBladeComponentsAction::class);
+    $action->execute($path, $namespace);
 });

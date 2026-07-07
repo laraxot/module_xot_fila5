@@ -18,17 +18,13 @@ use Webmozart\Assert\Assert;
 trait RelationX
 {
     /**
-     * @template TRelatedModel of Model
-     *
-     * @param class-string<TRelatedModel>     $related         Related model class
+     * @param class-string<Model>             $related         Related model class
      * @param class-string<Model>|string|null $_table          Pivot table name
      * @param string|null                     $foreignPivotKey Foreign pivot key
      * @param string|null                     $relatedPivotKey Related pivot key
      * @param string|null                     $parentKey       Parent key
      * @param string|null                     $relatedKey      Related key
      * @param string|null                     $relation        Relation name
-     *
-     * @return BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'>
      */
     public function belongsToManyX(
         string $related,
@@ -39,7 +35,6 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
     ): BelongsToMany {
-        Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf(
             $related_model = app($related),
             Model::class,

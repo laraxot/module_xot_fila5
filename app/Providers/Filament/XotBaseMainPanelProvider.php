@@ -19,7 +19,6 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
-use Modules\Xot\Actions\Filament\GetPanelsNavigationItems;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
 use Modules\Xot\Filament\Pages\MainDashboard;
 
@@ -98,9 +97,8 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
-        // $navs = app(GetModulesNavigationItems::class)->execute();
-        $panelNavs = app(GetPanelsNavigationItems::class)->execute();
-        $panel->navigationItems($panelNavs);
+        $navs = app(GetModulesNavigationItems::class)->execute();
+        $panel->navigationItems($navs);
 
         // Temporaneamente disabilitato per debug tenancy
         // $profile_url = MyProfilePage::getUrl(panel: $panel->getId());

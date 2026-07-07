@@ -2,7 +2,6 @@
 
 ## Problema Risolto
 
-**Data**: 26 Settembre 2025
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
 
 ## Causa Radice
@@ -74,7 +73,6 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
-- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
@@ -92,12 +90,6 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Problema Risolto
 
-**Data**: 26 Settembre 2025
-**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
-
-## Causa Radice
-
-Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: healthcare_app_data.customer_user`
 
 ## Causa Radice
@@ -108,6 +100,7 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`modulo_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+>>>>>>> .merge_file_8r6DIJ
 
 ## Soluzione Implementata
 
@@ -147,6 +140,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 ### Moduli Affetti
 - **healthcare_app Module**: Customer-User relationships
 - **Modulo con database separato**: Customer-User relationships
+>>>>>>> .merge_file_8r6DIJ
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 
@@ -174,8 +168,6 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Riferimenti
 
-- [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
-- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 - [Customer User Fix Summary](../../healthcare_app/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)

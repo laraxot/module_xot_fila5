@@ -43,11 +43,16 @@ class FakeSeederAction
         /** @var Collection<int, Model> $rows */
         $rows = $factory->count($qtyToDo)->make();
 
-        /** @var Collection<int, Collection<int, Model>> $chunks */
+        /** @var Collection<int, Collection> $chunks */
         $chunks = $rows->chunk(self::CHUNK_SIZE);
 
         $chunks->each(function (Collection $chunk) use ($modelClass): void {
-            $data = $chunk->map(fn (Model $item) => $item->getAttributes())->all();
+            /** @var array<int, array<string, mixed>> $data */
+            $data = $chunk->map(function ($item) {
+                assert($item instanceof Model);
+
+                return $item->getAttributes();
+            })->all();
             $modelClass::insert($data);
         });
 
@@ -64,17 +69,11 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass
      *
      * @throws \RuntimeException
-     *
-     * @return Factory<Model>
-     * @return Factory<Model>
      */
     private function getModelFactory(string $modelClass): Factory
     {
         if (method_exists($modelClass, 'factory')) {
-            /** @var Factory<Model> $factory */
-            $factory = $modelClass::factory();
-
-            return $factory;
+            return $modelClass::factory();
         }
 
         throw new \RuntimeException("Unable to create factory for model: {$modelClass}");

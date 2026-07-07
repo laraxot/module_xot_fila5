@@ -11,13 +11,12 @@ use Filament\Resources\RelationManagers\RelationGroup;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
 use Filament\Resources\Resource as FilamentResource;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
-use Filament\Support\Components\Component;
 use Filament\Tables\Table;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -48,7 +47,7 @@ abstract class XotBaseResource extends FilamentResource
         $tmp = static::getKeyTrans($key);
         $res = trans($tmp, $params);
 
-        if (is_string($res)) {
+        if (\is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
                 throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
             }
@@ -56,10 +55,10 @@ abstract class XotBaseResource extends FilamentResource
             return $res;
         }
 
-        if (is_array($res)) {
+        if (\is_array($res)) {
             $first = current($res);
-            if (is_string($first) || is_numeric($first)) {
-                return is_string($first) ? $first : ((string) $first);
+            if (\is_string($first) || is_numeric($first)) {
+                return \is_string($first) ? $first : ((string) $first);
             }
         }
 
@@ -106,43 +105,30 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * @return array<int|string, \Filament\Schemas\Components\Component>
+     * @return array<int|string, Component|Htmlable|string>
      */
-    abstract public static function getFormSchema(): array;
+    public static function getFormSchema(): array
+    {
+        return [];
+    }
 
     final public static function form(Schema $schema): Schema
     {
         // return AuthorForm::configure($schema);
-        $name = class_basename(static::getModel());
-        $form_class = static::class.'\Schemas\\'.$name.'Form';
+        $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
         if (class_exists($form_class)) {
             $configured = $form_class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
+            if ($configured instanceof Schema) {
+                return $configured;
+            }
         }
 
-        /** @var array<Htmlable|string> $components */
+        /** @var array<int|string, Component|Htmlable|string> $components */
         $components = static::getFormSchema();
 
         return $schema
             ->components($components)
             ->columns(static::getFormSchemaColumns());
-    }
-
-    public static function table(Table $table): Table
-    {
-        $name = class_basename(static::getModel());
-        $name_plural = Str::plural($name);
-        $class = static::class.'\Tables\\'.$name_plural.'Table';
-        if (class_exists($class)) {
-            $configured = $class::configure($table);
-            Assert::isInstanceOf($configured, Table::class);
-
-            return $configured;
-        }
-
-        return $table;
     }
 
     public static function getFormSchemaColumns(): int
@@ -153,7 +139,7 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * Schema dell'infolist: tutte le risorse devono delegare qui.
      *
-     * @return array<string, \Filament\Schemas\Components\Component>
+     * @return array<string, Component>
      */
     public static function getInfolistSchema(): array
     {
@@ -165,15 +151,32 @@ abstract class XotBaseResource extends FilamentResource
      */
     final public static function infolist(Schema $schema): Schema
     {
-        $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
-        if (class_exists($class)) {
-            $configured = $class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
+        $infolist_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
+        if (class_exists($infolist_class) && method_exists($infolist_class, 'configure')) {
+            $configured = $infolist_class::configure($schema);
+            if ($configured instanceof Schema) {
+                return $configured;
+            }
         }
 
         return $schema->components(static::getInfolistSchema());
+    }
+
+    public static function table(Table $table): Table
+    {
+        $table_class = static::class.'\Tables\\'.Str::of(class_basename(static::getModel()))
+            ->plural()
+            ->append('Table')
+            ->toString();
+
+        if (class_exists($table_class) && method_exists($table_class, 'configure')) {
+            $configured = $table_class::configure($table);
+            if ($configured instanceof Table) {
+                return $configured;
+            }
+        }
+
+        return parent::table($table);
     }
 
     /**
@@ -227,10 +230,13 @@ abstract class XotBaseResource extends FilamentResource
         /** @var class-string<Page> $view */
         $view = $view;
 
-        $pages = [];
-        $pages['index'] = $index::route('/');
-        $pages['create'] = $create::route('/create');
-        $pages['edit'] = $edit::route('/{record}/edit');
+        /** @var array<string, PageRegistration> $pages */
+        $pages = [
+            'index' => $index::route('/'),
+            'create' => $create::route('/create'),
+            'edit' => $edit::route('/{record}/edit'),
+            // 'view' => $view::route('/{record}'),
+        ];
 
         if (class_exists($view)) {
             $pages['view'] = $view::route('/{record}');
@@ -285,10 +291,11 @@ abstract class XotBaseResource extends FilamentResource
     public static function getWizardSubmitAction(): Htmlable
     {
         $submit_view = 'pub_theme::filament.wizard.submit-button';
-        if (! View::exists($submit_view)) {
+        // @phpstan-ignore-next-line
+        if (! view()->exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
         }
-        $render = View::make($submit_view)->render();
+        $render = view($submit_view)->render();
 
         return new HtmlString($render);
     }

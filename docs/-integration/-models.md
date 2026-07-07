@@ -1,7 +1,6 @@
----
-module: theme
-topic: -models
-canonical: ../../../../Themes/docs/shared-components/-11.md
----
+# _models
 
-See canonical documentation: ../../../../Themes/docs/shared-components/-11.md
+<!-- Contenuto migrato da _docs/_models.txt -->
+
+multi key, fixing lazy loading
+https://github.com/topclaudy/compoships

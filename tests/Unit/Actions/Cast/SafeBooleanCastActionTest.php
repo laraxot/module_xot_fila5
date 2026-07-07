@@ -2,31 +2,37 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Cast;
+
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
-use PHPUnit\Framework\Assert;
 
 it('casts various values to boolean correctly', function (): void {
     $action = app(SafeBooleanCastAction::class);
 
     // Booleans
-    Assert::assertTrue($action->execute(true));
-    Assert::assertFalse($action->execute(false));
+    expect($action->execute(true))->toBeTrue();
+    expect($action->execute(false))->toBeFalse();
+
     // Null
-    Assert::assertTrue($action->execute(null, true));
+    expect($action->execute(null, true))->toBeTrue();
+
     // Integers
-    Assert::assertTrue($action->execute(1));
-    Assert::assertFalse($action->execute(0));
+    expect($action->execute(1))->toBeTrue();
+    expect($action->execute(0))->toBeFalse();
+
     // Floats
-    Assert::assertTrue($action->execute(1.1));
-    Assert::assertFalse($action->execute(0.0));
+    expect($action->execute(1.1))->toBeTrue();
+    expect($action->execute(0.0))->toBeFalse();
+
     // Strings
-    Assert::assertTrue($action->execute('true'));
-    Assert::assertTrue($action->execute('yes'));
-    Assert::assertFalse($action->execute('false'));
-    Assert::assertFalse($action->execute('no'));
-    Assert::assertFalse($action->execute(''));
+    expect($action->execute('true'))->toBeTrue();
+    expect($action->execute('yes'))->toBeTrue();
+    expect($action->execute('false'))->toBeFalse();
+    expect($action->execute('no'))->toBeFalse();
+
+    expect($action->execute(''))->toBeFalse();
+
     // Arrays
-    Assert::assertTrue($action->execute(['a']));
-    Assert::assertFalse($action->execute([]));
+    expect($action->execute(['a']))->toBeTrue();
+    expect($action->execute([]))->toBeFalse();
 });

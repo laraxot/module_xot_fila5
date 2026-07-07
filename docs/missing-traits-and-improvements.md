@@ -612,13 +612,13 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-- [Performance Guide](./PERFORMANCE_GUIDE.md)
+- [Analisi Completa Codice](./comprehensive_code_analysis.md)
+- [Architettura Moduli](./architecture.md)
+- [Performance Guide](./performance_guide.md)
 
 ---
 
-**Data Creazione**: 2025-01-06
+**Data Creazione**: [DATE]
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI
@@ -693,8 +693,11 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-// QuaerisService.php
-class QuaerisService
+// healthcare_appService.php
+class healthcare_appService
+// ModuloEsempioService.php
+class ModuloEsempioService
+>>>>>>> .merge_file_mQU6r8
 {
     use SingletonTrait;
 
@@ -1167,8 +1170,11 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-// QuaerisService.php
-class QuaerisService
+// healthcare_appService.php
+class healthcare_appService
+// ModuloEsempioService.php
+class ModuloEsempioService
+>>>>>>> .merge_file_mQU6r8
 {
     use SingletonTrait;
 
@@ -1236,13 +1242,13 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
-- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](./ARCHITECTURE.md)
-- [Performance Guide](./PERFORMANCE_GUIDE.md)
+- [Analisi Completa Codice](./comprehensive_code_analysis.md)
+- [Architettura Moduli](./architecture.md)
+- [Performance Guide](./performance_guide.md)
 
 ---
 
-**Data Creazione**: 2025-01-06
+**Data Creazione**: [DATE]
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI

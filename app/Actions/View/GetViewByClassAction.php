@@ -6,7 +6,6 @@ namespace Modules\Xot\Actions\View;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -25,7 +24,7 @@ class GetViewByClassAction
      *
      * @throws \Exception Se la vista non esiste
      *
-     * @return view-string
+     * @return view-string Il nome della vista
      */
     public function execute(string $class, string $suffix = ''): string
     {
@@ -39,13 +38,13 @@ class GetViewByClassAction
         $mapped = Arr::map($after, function (string $value, int $key) use ($after) {
             if ($key > 0 && isset($after[$key - 1])) {
                 $prevValue = $after[$key - 1];
-                $prevValueStr = SafeStringCastAction::cast($prevValue);
+                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
             if ($key > 0 && isset($after[$key - 2])) {
                 $prevValue = $after[$key - 2];
-                $prevValueStr = SafeStringCastAction::cast($prevValue);
+                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
@@ -53,18 +52,21 @@ class GetViewByClassAction
             return Str::of($value)->kebab()->slug()->toString();
         });
 
-        $implode = Arr::join(array_values($mapped), '.');
+        $mappedStrings = array_values(array_filter(
+            $mapped,
+            static fn (mixed $value): bool => is_string($value),
+        ));
+        $implode = implode('.', $mappedStrings);
         $views = [
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
         ];
-        $view = Arr::first($views, view()->exists(...));
-        if (null === $view) {
+        $view = Arr::first($views, static fn (string $candidate): bool => view()->exists($candidate));
+        if (! is_string($view) || '' === $view) {
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 
         if (view()->exists($view)) {
-            /* @var view-string $view */
             return $view;
         }
         throw new \Exception('View not found: '.$view);

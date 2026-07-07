@@ -36,13 +36,9 @@ public function getTableHeaderActions(): array
     // - Create
     // - Associate (opzionale)
     // - Attach (opzionale)
-    // - Layout Toggle (TableLayoutToggleTableAction — lista ↔ griglia)
+    // - Layout Toggle
 }
 ```
-
-### Layout lista / griglia
-
-La proprietà Livewire `$layoutView` (`TableLayoutEnum`) guida colonne e `contentGrid()`. Il bottone **Cambia layout** deve mantenerla allineata alla sessione. Dettaglio: [contratto layout tabella](../table-layout-toggle-contract.md), [bugfix UI](../../../UI/docs/bugfix-table-layout-toggle-not-working.md).
 
 ### Colonne
 ```php
@@ -61,7 +57,6 @@ public function getListTableColumns(): array
             ->label('Dati Lavoratore')
             ->view('filament.tables.columns.worker-data'), // Esempio di vista custom
     ];
-    // Definisce le colonne per il layout lista
 }
 
 public function getGridTableColumns(): array
@@ -83,10 +78,6 @@ public function getGridTableColumns(): array
 - **❌ ERRATO**: Array con indici numerici diretti.
 - **✅ CORRETTO**: `return ['column_key' => TextColumn::make('column_name'), ...];`
 
-
-    // Definisce le colonne per il layout griglia
-}
-```
 
 ### Filtri
 ```php

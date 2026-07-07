@@ -1,5 +1,4 @@
 
-
 ---
 title: No Console
 description: No Console Administrator

@@ -6,7 +6,6 @@ namespace Modules\Xot\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Webmozart\Assert\Assert;
@@ -144,7 +143,7 @@ class GetPdfContentByRecordAction
     {
         $modelName = class_basename($record::class);
         $recordKey = $record->getKey();
-        $baseFilename = mb_strtolower($modelName).'_'.SafeStringCastAction::cast($recordKey ?? 'unknown');
+        $baseFilename = mb_strtolower($modelName).'_'.(string) ($recordKey ?? 'unknown');
 
         // Enhanced filename for records with identification fields
         if (isset($record->matr, $record->cognome, $record->nome)) {
@@ -152,7 +151,7 @@ class GetPdfContentByRecordAction
             $cognome = is_string($record->cognome) ? $record->cognome : 'unknown';
             $nome = is_string($record->nome) ? $record->nome : 'unknown';
 
-            return 'scheda_'.SafeStringCastAction::cast($recordKey ?? 'unknown').'_'.$matr.'_'.$cognome.'_'.$nome.'.pdf';
+            return 'scheda_'.(string) ($recordKey ?? 'unknown').'_'.$matr.'_'.$cognome.'_'.$nome.'.pdf';
         }
 
         // Enhanced filename for records with name field

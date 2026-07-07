@@ -72,7 +72,7 @@ class ImportCsvAction
     /**
      * Get table columns excluding certain fields.
      *
-     * @return array<int, ColumnData>
+     * @return array<ColumnData>
      */
     private function getTableColumns(Builder $conn, string $tbl): array
     {
@@ -96,7 +96,7 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
-     * @param array<int, ColumnData> $columns
+     * @param array<ColumnData> $columns
      *
      * @return array<string>
      */
@@ -111,7 +111,7 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
-     * @param array<int, ColumnData> $columns
+     * @param array<ColumnData> $columns
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -143,13 +143,11 @@ class ImportCsvAction
     /**
      * Transform columns into ColumnData objects.
      *
-     * @param array<int, string> $columns
+     * @param array<string> $columns
      *
      * @return array<ColumnData>
      *
      * @deprecated this method is currently unused but kept for future expansion
-     *
-     * @phpstan-ignore method.unused
      */
     private function transformColumnsToColumnData(array $columns): array
     {

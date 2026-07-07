@@ -10,11 +10,9 @@ use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
-use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
 
@@ -30,26 +28,17 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     use HasXotTable;
 
-    /**
-     * @param array<string, bool|float|int|string|null> $params
-     */
-    public static function trans(string $key, array $params = []): string
-    {
-        $resourceClass = static::getResource();
-
-        return $resourceClass::trans($key, false, $params);
-    }
+    public TableLayoutEnum $layoutView = TableLayoutEnum::LIST;
 
     /**
      * Get the resource class name.
      *
-     * @return class-string<XotBaseResource>
+     * @return class-string
      */
     public static function getResource(): string
     {
         $resource = Str::of(static::class)->before('\\Pages\\')->toString();
         Assert::classExists($resource);
-        Assert::subclassOf($resource, XotBaseResource::class);
 
         return $resource;
     }
@@ -86,17 +75,17 @@ abstract class XotBaseListRecords extends FilamentListRecords
 
     /**
      * Paginate the table query.
-     *
-     * @param Builder<Model> $query
-     *
-     * @return Paginator<int, Model>
      */
-    protected function paginateTableQueryOLD(Builder $query): Paginator
+    protected function paginateTableQuery(Builder $query): Paginator
     {
-        $perPage = $this->getTableRecordsPerPage();
-        $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
+        $perPageRaw = $this->getTableRecordsPerPage();
+        $perPage = 'all' === $perPageRaw
+            ? $query->count()
+            : (is_int($perPageRaw) ? $perPageRaw : null);
 
-        $paginator = $query->paginate($perPageValue);
+        $paginator = $query->paginate(
+            $perPage,
+        );
 
         Assert::isInstanceOf($paginator, Paginator::class);
 

@@ -22,7 +22,7 @@ class GetComponentsAction
     /**
      * Undocumented function.
      *
-     * @return DataCollection<int, ComponentFileData>
+     * @return DataCollection<ComponentFileData>
      */
     public function execute(
         string $path,
@@ -52,9 +52,10 @@ class GetComponentsAction
                 $content = File::get($components_json),
                 '['.__LINE__.']['.class_basename(static::class).']',
             );
-            $decoded = json_decode($content, true);
-            /** @var array<int, array<string, mixed>> $comps */
-            $comps = is_array($decoded) ? array_values($decoded) : [];
+            $comps = json_decode($content, false);
+            if (! is_array($comps)) {
+                $comps = [];
+            }
 
             return ComponentFileData::collection($comps);
         }

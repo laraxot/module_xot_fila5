@@ -13,7 +13,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Descendants;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\RootAncestor;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\RootAncestorOrSelf;
 use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
-use Webmozart\Assert\Assert;
 
 /**
  * Wrapper trait that re-exposes the vendor recursive relationship helpers
@@ -38,7 +37,6 @@ trait TypedHasRecursiveRelationships
         childrenAndSelf as protected vendorChildrenAndSelf;
         descendants as protected vendorDescendants;
         descendantsAndSelf as protected vendorDescendantsAndSelf;
-        parent as protected vendorParent;
         parentAndSelf as protected vendorParentAndSelf;
         rootAncestor as protected vendorRootAncestor;
         rootAncestorOrSelf as protected vendorRootAncestorOrSelf;
@@ -51,58 +49,44 @@ trait TypedHasRecursiveRelationships
 
     public function getParentKeyName(): string
     {
-        $value = $this->vendorGetParentKeyName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetParentKeyName();
     }
 
     public function getQualifiedParentKeyName(): string
     {
-        $value = $this->vendorGetQualifiedParentKeyName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetQualifiedParentKeyName();
     }
 
     public function getLocalKeyName(): string
     {
-        $value = $this->vendorGetLocalKeyName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetLocalKeyName();
     }
 
     public function getQualifiedLocalKeyName(): string
     {
-        $value = $this->vendorGetQualifiedLocalKeyName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetQualifiedLocalKeyName();
     }
 
     public function getDepthName(): string
     {
-        $value = $this->vendorGetDepthName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetDepthName();
     }
 
     public function getPathName(): string
     {
-        $value = $this->vendorGetPathName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetPathName();
     }
 
     public function getPathSeparator(): string
     {
-        $value = $this->vendorGetPathSeparator();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetPathSeparator();
     }
 
     /**
@@ -110,190 +94,109 @@ trait TypedHasRecursiveRelationships
      */
     public function getCustomPaths(): array
     {
-        $paths = $this->vendorGetCustomPaths();
-        Assert::isArray($paths);
-
-        $result = [];
-        foreach ($paths as $key => $value) {
-            Assert::string($value);
-            $result[$key] = $value;
-        }
-
-        return $result;
+        /* @var array<int|string, string> $paths */
+        return $this->vendorGetCustomPaths();
     }
 
     public function getExpressionName(): string
     {
-        $value = $this->vendorGetExpressionName();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetExpressionName();
     }
 
-    /**
-     * @return Ancestors<static, static>
-     */
     public function ancestors(): Ancestors
     {
-        $relation = $this->vendorAncestors();
-        Assert::isInstanceOf($relation, Ancestors::class);
-
-        return $relation;
+        /* @var Ancestors $relation */
+        return $this->vendorAncestors();
     }
 
-    /**
-     * @return Ancestors<static, static>
-     */
     public function ancestorsAndSelf(): Ancestors
     {
-        $relation = $this->vendorAncestorsAndSelf();
-        Assert::isInstanceOf($relation, Ancestors::class);
-
-        return $relation;
+        /* @var Ancestors $relation */
+        return $this->vendorAncestorsAndSelf();
     }
 
-    /**
-     * @return Bloodline<static, static>
-     */
     public function bloodline(): Bloodline
     {
-        $relation = $this->vendorBloodline();
-        Assert::isInstanceOf($relation, Bloodline::class);
-
-        return $relation;
+        /* @var Bloodline $relation */
+        return $this->vendorBloodline();
     }
 
-    /**
-     * @return HasMany<static, static>
-     */
     public function children(): HasMany
     {
-        $relation = $this->vendorChildren();
-        Assert::isInstanceOf($relation, HasMany::class);
-
-        return $relation;
+        /* @var HasMany $relation */
+        return $this->vendorChildren();
     }
 
-    /**
-     * @return Descendants<static, static>
-     */
     public function childrenAndSelf(): Descendants
     {
-        $relation = $this->vendorChildrenAndSelf();
-        Assert::isInstanceOf($relation, Descendants::class);
-
-        return $relation;
+        /* @var Descendants $relation */
+        return $this->vendorChildrenAndSelf();
     }
 
-    /**
-     * @return Descendants<static, static>
-     */
     public function descendants(): Descendants
     {
-        $relation = $this->vendorDescendants();
-        Assert::isInstanceOf($relation, Descendants::class);
-
-        return $relation;
+        /* @var Descendants $relation */
+        return $this->vendorDescendants();
     }
 
-    /**
-     * @return Descendants<static, static>
-     */
     public function descendantsAndSelf(): Descendants
     {
-        $relation = $this->vendorDescendantsAndSelf();
-        Assert::isInstanceOf($relation, Descendants::class);
-
-        return $relation;
+        /* @var Descendants $relation */
+        return $this->vendorDescendantsAndSelf();
     }
 
-    /**
-     * @return BelongsTo<static, static>
-     */
     public function parent(): BelongsTo
     {
-        $relation = $this->vendorParent();
-        Assert::isInstanceOf($relation, BelongsTo::class);
-
-        return $relation;
+        /* @var BelongsTo $relation */
+        return $this->VendorHasRecursiveRelationships::parent();
     }
 
-    /**
-     * @return Ancestors<static, static>
-     */
     public function parentAndSelf(): Ancestors
     {
-        $relation = $this->vendorParentAndSelf();
-        Assert::isInstanceOf($relation, Ancestors::class);
-
-        return $relation;
+        /* @var Ancestors $relation */
+        return $this->vendorParentAndSelf();
     }
 
-    /**
-     * @return RootAncestor<static, static>
-     */
     public function rootAncestor(): RootAncestor
     {
-        $relation = $this->vendorRootAncestor();
-        Assert::isInstanceOf($relation, RootAncestor::class);
-
-        return $relation;
+        /* @var RootAncestor $relation */
+        return $this->vendorRootAncestor();
     }
 
-    /**
-     * @return RootAncestorOrSelf<static, static>
-     */
     public function rootAncestorOrSelf(): RootAncestorOrSelf
     {
-        $relation = $this->vendorRootAncestorOrSelf();
-        Assert::isInstanceOf($relation, RootAncestorOrSelf::class);
-
-        return $relation;
+        /* @var RootAncestorOrSelf $relation */
+        return $this->vendorRootAncestorOrSelf();
     }
 
-    /**
-     * @return Siblings<static, static>
-     */
     public function siblings(): Siblings
     {
-        $relation = $this->vendorSiblings();
-        Assert::isInstanceOf($relation, Siblings::class);
-
-        return $relation;
+        /* @var Siblings $relation */
+        return $this->vendorSiblings();
     }
 
-    /**
-     * @return Siblings<static, static>
-     */
     public function siblingsAndSelf(): Siblings
     {
-        $relation = $this->vendorSiblingsAndSelf();
-        Assert::isInstanceOf($relation, Siblings::class);
-
-        return $relation;
+        /* @var Siblings $relation */
+        return $this->vendorSiblingsAndSelf();
     }
 
     public function getFirstPathSegment(): string
     {
-        $value = $this->vendorGetFirstPathSegment();
-        Assert::string($value);
-
-        return $value;
+        /* @var string $value */
+        return $this->vendorGetFirstPathSegment();
     }
 
     public function hasNestedPath(): bool
     {
-        $result = $this->vendorHasNestedPath();
-        Assert::boolean($result);
-
-        return $result;
+        /* @var bool $result */
+        return $this->vendorHasNestedPath();
     }
 
     public function isIntegerAttribute(string $attribute): bool
     {
-        $result = $this->vendorIsIntegerAttribute($attribute);
-        Assert::boolean($result);
-
-        return $result;
+        /* @var bool $result */
+        return $this->vendorIsIntegerAttribute($attribute);
     }
 }

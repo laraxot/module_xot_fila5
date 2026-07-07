@@ -107,7 +107,7 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
+public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -150,12 +150,13 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
-[guida principale](../../../docs/guide.md)
+[guida principale](../../../../docs/guide.md)
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
+[user docs](../../user/docs/user-guide.md)
 ```
 
 ### All'interno dello stesso modulo
@@ -238,7 +239,7 @@ find . -name "readme.md" -o -name "Readme.md"
 ## 📈 Metriche Miglioramento
 
 - **File rinominati**: 25
-- **File duplicati rimossi**: 12
+- **File duplicati rimossi**: 12  
 - **File archiviati**: 13
 - **File corrotti eliminati**: 3
 - **File README corretti**: 6

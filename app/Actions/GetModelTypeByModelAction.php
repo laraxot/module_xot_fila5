@@ -8,8 +8,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Modules\Xot\Contracts\ModelContract;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetModelTypeByModelAction
@@ -19,7 +19,7 @@ class GetModelTypeByModelAction
     /**
      * Execute the action.
      */
-    public function execute(Model $modelContract): string
+    public function execute(ModelContract $modelContract): string
     {
         return Str::snake(class_basename($modelContract));
     }

@@ -31,8 +31,6 @@ class MainDashboard extends XotBaseDashboard
      */
     public static function getSlug(?Panel $panel = null): string
     {
-        unset($panel);
-
         return 'dashboard';
     }
 
@@ -66,11 +64,14 @@ class MainDashboard extends XotBaseDashboard
     /**
      * Ottiene i widget da visualizzare nella dashboard.
      *
-     * @return array<string, mixed>
+     * @return array<int, string>
      */
     public function getWidgets(): array
     {
-        return [];
+        return [
+            // Widget per mostrare i moduli disponibili
+            // Modules\Xot\Filament\Widgets\ModulesOverviewWidget::class,
+        ];
     }
 
     /**

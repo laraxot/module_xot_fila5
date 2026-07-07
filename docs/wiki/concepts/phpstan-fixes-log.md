@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+## [2026-07-06] membershipTeams non appartiene a UserContract
+
+- `membershipTeams()` e un alias concreto di `HasTeams::teams()` su `BaseUser`, non una capability cross-module richiesta da `Modules\Xot\Contracts\UserContract`.
+- Non dichiararlo nel contratto Xot: `BelongsToMany` e invariante su `TDeclaringModel` e l interfaccia non puo esprimere correttamente `` come `$this` sul model concreto; sull interfaccia non e dichiarabile senza violare il bound `Model`.
+- Lasciare il tipo preciso sul trait/model User e sulle fixture che lo testano.
+
+>>>>>>> 40b96bcd6 (.)
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)
@@ -12,6 +21,13 @@ Class Modules\Xot\States\XotBaseState extends unknown class Spatie\ModelStates\S
 Class Modules\Xot\States\Transitions\XotBaseTransition extends unknown class Spatie\ModelStates\Transition
 ```
 
+<<<<<<< HEAD
+### Root Cause
+Il package `spatie/laravel-model-states` era documentato come parte dell'architettura ma non era incluso in `composer.json`.
+
+### Solution
+1. Aggiunto `
+=======
 ### Root Cause (aggiornato 2026-05-21)
 
 - Dichiarato in `Modules/Xot/composer.json` (`^2.14`) e root `laravel/composer.json`, ma **non installato** (assente da `composer.lock` / `vendor/`).
@@ -34,43 +50,7 @@ Nota: **`composer run go`** non eseguito in questa sessione: contiene `rm -rf da
 - [php84-upgrade-extension-checklist.md](php84-upgrade-extension-checklist.md)
 - [laravel13-modular-package-compatibility-matrix.md](laravel13-modular-package-compatibility-matrix.md)
 
-## Fix #N: Sessione 2026-07-01 — bootstrap PHPStan e batch Table PHPDoc
-
-### Problema
-
-- `composer update` necessario: lock disallineato, `larastan` assente.
-- Bootstrap Larastan falliva: namespace errato `Module\Xot\...`, `MixedChartsTable::getTableColumns()` static vs parent instance.
-- ~4725 errori su `Modules/` dopo sblocco (Quaeris ~2609, Chart ~556, Tenant ~501).
-
-### Fix applicati (forward-only)
-
-| File / area | Fix |
-|-------------|-----|
-| `MixedChartsTable.php` | `getTableColumns()` non static; PHPDoc `array<string, Column>` |
-| `QuestionChartsTable.php` | import `Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable` |
-| `JobBatchsTable.php` | namespace `Modules\Job\Filament\...`; rimosso PHPDoc duplicato malformato |
-| 7× `*Table.php` | rimosso `@return array<int\|string, ...>` interno (phpDoc.parseError) |
-| 4× Quaeris Filament | `namespace Modules\Quaeris\app\` → `Modules\Quaeris\` |
-
-### Verifica parziale
-
-```bash
-cd laravel
-./vendor/bin/phpstan analyse Modules/Chart/.../MixedChartsTable.php  # OK
-./vendor/bin/phpstan analyse Modules/Job/.../JobBatchsTable.php      # OK
-```
-
-### Prossimi passi (swarm)
-
-1. Moduli piccoli: Job, Lang, Activity, Gdpr, Media (gate per modulo).
-2. Quaeris: batch namespace `app\` errati + `method.internalClass` / Filament generics.
-3. Trait probe: [phpstan-trait-probes.md](phpstan-trait-probes.md) per `trait.unused`.
-4. Script: `bash bashscripts/tools/phpstan-module.sh {Modulo}`.
-
-### Nota neon
-
-`larastan.noEnvCallsOutsideOfConfig` in ignoreErrors non matcha su alcuni moduli → WARN PHPStan (solo utente modifica `phpstan.neon`).
-
+## Fix #2: DTO concrete factory `self` instead of `new static()`
 
 ### Problem
 
@@ -157,37 +137,4 @@ Baseline 205 → 0. Batch Contracts/Datas/Traits (14), Actions (43), Models/Fila
 Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `EnumTrait::toArray()` → `array<int|string, string>`.
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
-
-## Fix 2026-06-30: fatal trait collision + tail Modules/
-
-### Problema 1 — PHPStan non partiva (fatal)
-
-`BaseUser` usa `HasTeams` e `HasSpatiePermission` (Spatie `HasRoles::teams()`). Collisione su `teams()`.
-
-### Soluzione
-
-```php
-use HasSpatiePermission, HasTeams {
-    HasTeams::teams insteadof HasSpatiePermission;
-    HasSpatiePermission::teams as spatieTeams;
-}
-```
-
-Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
-
-### Problema 2 — `UserContract::teams()` generics
-
-`static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
-
-### Problema 3 — `Article::scopePublishedUntilToday()`
-
-Return type `EloquentBuilder|QueryBuilder` con classe `QueryBuilder` inesistente nel modulo → solo `EloquentBuilder`.
-
-### Verifica
-
-```bash
-cd laravel && ./vendor/bin/phpstan analyse Modules
-# [OK] No errors — 5357 file
-```
-
-Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
+>>>>>>> 40b96bcd6 (.)

@@ -35,6 +35,15 @@
 3. **Custom step navigation**: Reimplements `nextStep()`, `previousStep()` (already in `Wizard` component)
 4. **Missing**: Does not use `HasWizard` trait
 
+<<<<<<< HEAD
+### What XotBaseWizardWidget Adds (Legitimate)
+- `wizardMaxStep()` - max step calculation
+- `getWizardSchemaWrapperKey()` - wrapper key for nested state
+- `makeWizard()` - centralizes wizard creation with project-specific logic
+- `normalizeWizardFormState()` - normalizes form state
+- `queryStepOverrideAllowed()` - security check for step override
+- LangServiceProvider integration notes
+=======
 ### Cosa aggiunge oggi `XotBaseWizardWidget` (legittimo)
 
 > Nota: le sezioni **Issues** sopra sono storiche; il file sorgente attuale **usa** `Filament\Resources\Pages\Concerns\HasWizard` e `final getWizardComponent()`.
@@ -43,6 +52,7 @@
 - `persistStepInQueryString()` sul componente vendor
 - `abstract getSteps()` per delegare allo schema modulo (es. `TicketForm::getSteps()`)
 - **Nessun** `normalizeWizardFormState()` sulla base: la forma dello stato per `create` è schema/dehydrate + widget dominio
+>>>>>>> 40b96bcd6 (.)
 
 ## Solution: Use HasWizard + Extend
 

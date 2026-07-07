@@ -14,10 +14,7 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Override;
 
 /**
  * Classe base per la gestione delle relazioni nelle risorse Filament.
@@ -28,10 +25,7 @@ use Override;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
-    use HasRelationshipModelClass;
-    use HasXotTable {
-        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-    }
+    use HasXotTable;
     use InteractsWithForms;
     // protected static string $resource;
 
@@ -59,16 +53,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         $formSchema = $this->getFormSchema();
 
         return $schema->components($formSchema);
-    }
-
-    /**
-     * Restituisce lo schema del form per i record correlati.
-     *
-     * @return array<Component>
-     */
-    protected function getFormSchema(): array
-    {
-        return [];
     }
 
     /**
@@ -132,7 +116,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
-                    return SafeStringCastAction::cast($url);
+                    return is_string($url) ? $url : (string) $url;
                 }),
             'edit' => Action::make('edit')
                 ->label('Modifica')
@@ -145,7 +129,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
-                    return SafeStringCastAction::cast($url);
+                    return is_string($url) ? $url : (string) $url;
                 }),
             // 'view' => Action::make('view')
             //     ->label('Visualizza')
@@ -202,5 +186,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
             ->title()
             ->prepend($titleString.' - ')
             ->toString();
+    }
+
+    /**
+     * Restituisce lo schema del form per i record correlati.
+     *
+     * @return array<Component>
+     */
+    protected function getFormSchema(): array
+    {
+        return [];
     }
 }

@@ -3,6 +3,20 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+    'actions' => [
+        'submit' => [
+            'label' => 'Invia',
+        ],
+        'previous' => [
+            'label' => 'Precedente',
+        ],
+        'next' => [
+            'label' => 'Successivo',
+        ],
+    ],
+=======
+>>>>>>> 40b96bcd6 (.)
     'steps' => [
         'privacy' => [
             'label' => 'privacy',
@@ -13,49 +27,39 @@ return [
         'summary' => [
             'label' => 'summary',
         ],
-    ],
-    'fields' => [
-        'id' => [
-            'label' => 'id',
-            'placeholder' => 'id',
-            'helper_text' => 'id',
-            'description' => 'id',
+<<<<<<< HEAD
+        'Riepilogo' => [
+            'label' => 'Riepilogo',
         ],
-        'name' => [
-            'label' => 'name',
-            'placeholder' => 'name',
-            'helper_text' => 'name',
-            'description' => 'name',
+        'Dati di segnalazione' => [
+            'label' => 'Dati di segnalazione',
         ],
-        'field_name' => [
-            'label' => 'field_name',
-            'placeholder' => 'field_name',
-            'helper_text' => 'field_name',
-            'description' => 'field_name',
+        'Autorizzazioni e condizioni' => [
+            'label' => 'Autorizzazioni e condizioni',
         ],
-        'op' => [
-            'label' => 'op',
-            'placeholder' => 'op',
-            'helper_text' => 'op',
-            'description' => 'op',
+        'fixcity::ticket-form' => [
+            'steps' => [
+                'summary' => [
+                    'label' => [
+                        'label' => 'fixcity::ticket-form.steps.summary.label',
+                    ],
+                ],
+                'privacy' => [
+                    'label' => [
+                        'label' => 'fixcity::ticket-form.steps.privacy.label',
+                    ],
+                ],
+                'data' => [
+                    'label' => [
+                        'label' => 'fixcity::ticket-form.steps.data.label',
+                    ],
+                ],
+            ],
         ],
-        'value' => [
-            'label' => 'value',
-            'placeholder' => 'value',
-            'helper_text' => 'value',
-            'description' => 'value',
+        'Privacy' => [
+            'label' => 'Privacy',
         ],
-        'type' => [
-            'label' => 'type',
-            'placeholder' => 'type',
-            'helper_text' => 'type',
-            'description' => 'type',
-        ],
-        'anno' => [
-            'label' => 'anno',
-            'placeholder' => 'anno',
-            'helper_text' => 'anno',
-            'description' => 'anno',
-        ],
+=======
+>>>>>>> 40b96bcd6 (.)
     ],
 ];

@@ -10,8 +10,7 @@ use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecord
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
+use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
@@ -21,12 +20,11 @@ use Modules\Xot\Filament\Traits\NavigationLabelTrait;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
-    use HasRelationshipModelClass;
     use HasXotForm;
-    use HasXotTable {
-        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    use HasXotTable;
+    use NavigationLabelTrait {
+        NavigationLabelTrait::trans as traitTrans;
     }
-    use NavigationLabelTrait;
 
     protected static string $recordTitleAttribute = 'name';
 
@@ -35,11 +33,16 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return '';
     }
 
+    public function getTitle(): string
+    {
+        return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
+    }
+
     public function getRecordTitle(): string
     {
         $value = $this->record->{static::$recordTitleAttribute};
 
-        return SafeStringCastAction::cast($value);
+        return (string) $value;
     }
 
     public function schema(Schema $schema): Schema
@@ -53,6 +56,16 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     public function getFormSchema(): array
     {
         return [];
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return static::transFunc(__FUNCTION__);
+    }
+
+    protected function getTableHeading(): Htmlable|string|null
+    {
+        return $this->getTableHeadingFromTrait();
     }
 
     /**
@@ -87,54 +100,16 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * @return array<string, Action>
      */
-    public function getTableActions(): array
+    protected function getTableActions(): array
     {
-        $resource = static::$relatedResource ?? static::getResource();
-        $hasView = $resource::hasPage('view');
-
-        return [
-            'view' => Action::make('view')
-                ->label('Visualizza')
-                ->icon('heroicon-o-eye')
-                ->visible(static fn (): bool => (bool) $hasView)
-                ->url(function (Model $record) use ($resource): string {
-                    $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
-                    if ('' === $url) {
-                        $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
-                    }
-
-                    return SafeStringCastAction::cast($url);
-                }),
-            'edit' => Action::make('edit')
-                ->label('Modifica')
-                ->icon('heroicon-o-pencil')
-                ->url(function (Model $record) use ($resource): string {
-                    $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
-                    if ('' === $url) {
-                        $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
-                    }
-
-                    return SafeStringCastAction::cast($url);
-                }),
-        ];
+        return [];
     }
 
-    public function getTitle(): string
+    private function getTableHeadingFromTrait(): ?string
     {
-        $resource = static::getResource();
-        $recordTitle = $this->getRecordTitle();
-        $relationship = static::getRelationshipName();
+        $key = static::getKeyTrans('table.heading');
+        $trans = trans($key);
 
-        $titleString = (string) $recordTitle;
-
-        return Str::of($relationship)
-            ->title()
-            ->prepend($titleString.' - ')
-            ->toString();
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return static::transFunc(__FUNCTION__);
+        return is_string($trans) && $trans !== $key ? $trans : null;
     }
 }

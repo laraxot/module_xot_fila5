@@ -2,15 +2,17 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\ValueObjects;
+
 use Modules\Xot\ValueObjects\EmailValueObject;
-use PHPUnit\Framework\Assert;
 
 it('accepts valid email', function (): void {
     $email = 'test@example.com';
     $vo = new EmailValueObject($email);
-    Assert::assertSame($email, $vo->email);
+    expect($vo->email)->toBe($email);
 });
 
 it('throws on invalid email', function (): void {
+    expect(fn () => new EmailValueObject('invalid-email'))
+        ->toThrow(\InvalidArgumentException::class, 'Email address invalid-email is NOT valid.');
 });

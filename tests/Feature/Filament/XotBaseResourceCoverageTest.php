@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Feature\Filament;
+
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -13,28 +14,22 @@ use Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource;
 use Modules\Xot\Tests\Fixtures\Models\Probe;
 use Modules\Xot\Tests\Fixtures\Models\ProbeBadAttachments;
 use Modules\Xot\Tests\Fixtures\Models\ProbeGoodAttachments;
-use PHPUnit\Framework\Assert;
-
-use function Safe\file_put_contents;
-use function Safe\mkdir;
 
 it('covers model resolution and model cache', function (): void {
     ProbeResource::resetModelCache();
 
-    Assert::assertSame(Probe::class, ProbeResource::getModel());
+    expect(ProbeResource::getModel())->toBe(Probe::class)
+        ->and(ProbeResource::getModel())->toBe(Probe::class);
 });
 
 it('covers default relation discovery with missing relation manager classes', function (): void {
-    Assert::assertSame([], ProbeResource::getRelations());
+    expect(ProbeResource::getRelations())->toBe([]);
 });
 
 it('covers default page discovery including optional view page', function (): void {
     $pages = ProbeResource::getPages();
 
-    Assert::assertArrayHasKey('index', $pages);
-    Assert::assertArrayHasKey('create', $pages);
-    Assert::assertArrayHasKey('edit', $pages);
-    Assert::assertArrayHasKey('view', $pages);
+    expect($pages)->toHaveKeys(['index', 'create', 'edit', 'view']);
 });
 
 it('covers translation helper key normalization', function (): void {
@@ -45,7 +40,7 @@ it('covers translation helper key normalization', function (): void {
         }
     });
 
-    Assert::assertSame('probe.item_widget.title', ProbeResource::callGetKeyTrans('title'));
+    expect(ProbeResource::callGetKeyTrans('title'))->toBe('probe.item_widget.title');
 });
 
 it('covers translation helper edit and widget normalization branches', function (): void {
@@ -56,7 +51,8 @@ it('covers translation helper edit and widget normalization branches', function 
         }
     });
 
-    Assert::assertSame('.name', ProbeResource::callGetKeyTrans('name'));
+    expect(ProbeResource::callGetKeyTrans('name'))->toBe('.name');
+
     app()->instance(GetTransKeyAction::class, new class {
         public function execute(string $class): string
         {
@@ -64,7 +60,7 @@ it('covers translation helper edit and widget normalization branches', function 
         }
     });
 
-    Assert::assertSame('probe.title', ProbeResource::callGetKeyTrans('title_widget'));
+    expect(ProbeResource::callGetKeyTrans('title_widget'))->toBe('probe.title');
 });
 
 it('covers translation helper string path and missing key fallback', function (): void {
@@ -77,8 +73,8 @@ it('covers translation helper string path and missing key fallback', function ()
 
     app('translator')->addLines(['probe.messages.ok' => 'Done'], app()->getLocale());
 
-    Assert::assertSame('Done', ProbeResource::trans('ok'));
-    Assert::assertSame('probe.messages.missing', ProbeResource::trans('missing'));
+    expect(ProbeResource::trans('ok'))->toBe('Done')
+        ->and(ProbeResource::trans('missing'))->toBe('probe.messages.missing');
 });
 
 it('covers translation helper array and fix fallback branches', function (): void {
@@ -94,8 +90,8 @@ it('covers translation helper array and fix fallback branches', function (): voi
         'probe.arr.nonscalar' => [['x' => 1]],
     ], app()->getLocale());
 
-    Assert::assertSame('123', ProbeResource::trans('scalar'));
-    Assert::assertSame('fix:probe.arr.nonscalar', ProbeResource::trans('nonscalar'));
+    expect(ProbeResource::trans('scalar'))->toBe('123')
+        ->and(ProbeResource::trans('nonscalar'))->toBe('fix:probe.arr.nonscalar');
 });
 
 it('covers translation helper exception branch', function (): void {
@@ -106,14 +102,8 @@ it('covers translation helper exception branch', function (): void {
         }
     });
 
-    $threwException = false;
-    try {
-        ProbeResource::trans('missing', true);
-    } catch (Exception $e) {
-        $threwException = true;
-    }
-    Assert::assertTrue($threwException);
-});
+    ProbeResource::trans('missing', true);
+})->throws(\Exception::class);
 
 it('covers navigation badge success and fallback', function (): void {
     app()->instance(CountAction::class, new class {
@@ -123,15 +113,16 @@ it('covers navigation badge success and fallback', function (): void {
         }
     });
 
-    Assert::assertSame('42', ProbeResource::getNavigationBadge());
+    expect(ProbeResource::getNavigationBadge())->toBe('42');
+
     app()->instance(CountAction::class, new class {
         public function execute(string $class): int
         {
-            throw new Exception('boom');
+            throw new \Exception('boom');
         }
     });
 
-    Assert::assertSame('--', ProbeResource::getNavigationBadge());
+    expect(ProbeResource::getNavigationBadge())->toBe('--');
 });
 
 it('covers get attachments schema branches', function (): void {
@@ -144,7 +135,8 @@ it('covers get attachments schema branches', function (): void {
         }
     };
 
-    Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
+    expect($resourceNoAttachments::getAttachmentsSchema())->toBe([]);
+
     if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeBadAttachments')) {
         eval(' class ProbeBadAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): string { return "invalid"; } }');
     }
@@ -158,21 +150,17 @@ it('covers get attachments schema branches', function (): void {
         }
     };
 
-    Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
+    expect($resourceBadAttachments::getAttachmentsSchema())->toBe([]);
+
     if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeGoodAttachments')) {
         eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
     }
 
     app()->instance(GetAttachmentsSchemaAction::class, new class {
-        /**
-         * @param string[] $attachments
-         *
-         * @return string[]
-         */
         public function execute(array $attachments, string $disk): array
         {
             if ($attachments !== ['one', 'two'] || 'attachments' !== $disk) {
-                throw new RuntimeException('unexpected attachments payload');
+                throw new \RuntimeException('unexpected attachments payload');
             }
 
             return ['schema'];
@@ -188,10 +176,12 @@ it('covers get attachments schema branches', function (): void {
         }
     };
 
-    Assert::assertSame(['schema'], $resourceGoodAttachments::getAttachmentsSchema());
+    expect($resourceGoodAttachments::getAttachmentsSchema())->toBe(['schema']);
 });
 
 it('covers wizard submit action success and failure paths', function (): void {
+    expect(fn () => ProbeResource::getWizardSubmitAction())->toThrow(\Exception::class);
+
     $tmpViewDir = sys_get_temp_dir().'/xot-resource-view-'.uniqid('', true);
     $viewPath = $tmpViewDir.'/filament/wizard';
     mkdir($viewPath, 0777, true);
@@ -200,22 +190,22 @@ it('covers wizard submit action success and failure paths', function (): void {
     view()->addNamespace('pub_theme', $tmpViewDir);
 
     $html = ProbeResource::getWizardSubmitAction();
-    Assert::assertInstanceOf(HtmlString::class, $html);
-    Assert::assertStringContainsString('submit', (string) $html->toHtml());
+    expect($html)->toBeInstanceOf(HtmlString::class)
+        ->and($html->toHtml())->toContain('submit');
 });
 
 it('covers step builder branches', function (): void {
-    Assert::assertInstanceOf(Step::class, ProbeResource::callGetStepByName('missing_step'));
-    Assert::assertInstanceOf(Step::class, ProbeResource::callGetStepByName('custom_step'));
+    expect(ProbeResource::callGetStepByName('custom_step'))->toBeInstanceOf(Step::class)
+        ->and(ProbeResource::callGetStepByName('missing_step'))->toBeInstanceOf(Step::class);
 });
 
 it('covers simple base helpers', function (): void {
     $resource = new ProbeResource();
 
-    Assert::assertSame([], ProbeResource::getInfolistSchema());
-    Assert::assertSame([], ProbeResource::extendTableCallback());
-    Assert::assertSame([], ProbeResource::extendFormCallback());
-    Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
-    Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
-    Assert::assertGreaterThan(0, ProbeResource::getFormSchemaColumns());
+    expect(ProbeResource::getModuleName())->toStartWith('Xot')
+        ->and($resource->hasCombinedRelationManagerTabsWithContent())->toBeTrue()
+        ->and(ProbeResource::getFormSchemaColumns())->toBe(1)
+        ->and(ProbeResource::getInfolistSchema())->toBe([])
+        ->and(ProbeResource::extendTableCallback())->toBe([])
+        ->and(ProbeResource::extendFormCallback())->toBe([]);
 });

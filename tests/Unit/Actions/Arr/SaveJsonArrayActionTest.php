@@ -5,17 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Arr;
 
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-use function Safe\file_get_contents;
-use function Safe\glob;
-use function Safe\json_decode;
-use function Safe\mkdir;
-use function Safe\rmdir;
-use function Safe\unlink;
-
-uses(TestCase::class);
 
 beforeEach(function (): void {
     $this->action = app(SaveJsonArrayAction::class);
@@ -25,32 +14,26 @@ beforeEach(function (): void {
 
 afterEach(function (): void {
     if (isset($this->tempDir) && is_dir($this->tempDir)) {
-        $dir = $this->tempDir;
-        $files = glob($dir.'/*');
-        foreach ($files as $file) {
-            $this->assertIsString($file);
-            unlink($file);
-        }
-        rmdir($dir);
+        array_map('unlink', glob($this->tempDir.'/*') ?: []);
+        rmdir($this->tempDir);
     }
 });
 
-describe('Save Json Array Action', function (): void {
-    test('saves array to json file', function (): void {
-        $data = ['key' => 'value', 'nested' => ['a' => 1]];
-        $path = $this->tempDir.'/data.json';
+it('saves array to json file', function (): void {
+    $data = ['key' => 'value', 'nested' => ['a' => 1]];
+    $path = $this->tempDir.'/data.json';
 
-        $result = app(SaveJsonArrayAction::class)->execute($data, $path);
-        Assert::assertSame($data, $result);
+    $result = $this->action->execute($data, $path);
 
-        Assert::assertTrue(file_exists($path));
-    });
+    expect($result)->toBeTrue()
+        ->and(file_exists($path))->toBeTrue()
+        ->and(json_decode(file_get_contents($path), true))->toBe($data);
+});
 
-    test('saves empty array', function (): void {
-        $path = $this->tempDir.'/empty.json';
-        $result = app(SaveJsonArrayAction::class)->execute([], $path);
+it('saves empty array', function (): void {
+    $path = $this->tempDir.'/empty.json';
+    $result = $this->action->execute([], $path);
 
-        Assert::assertSame([], $result);
-        Assert::assertSame([], json_decode(file_get_contents($path), true));
-    });
+    expect($result)->toBeTrue()
+        ->and(json_decode(file_get_contents($path), true))->toBe([]);
 });

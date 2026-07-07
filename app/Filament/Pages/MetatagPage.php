@@ -15,6 +15,7 @@ use Filament\Support\Colors\Color;
 use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
 
 /**
  * @property Schema $form
@@ -31,12 +32,10 @@ class MetatagPage extends XotBasePage
 
     public function mount(): void
     {
-        $config = config('metatag');
-        if (! is_array($config)) {
-            $config = [];
-        }
+        /** @var array<string, mixed> $data */
+        $data = config('metatag');
+        Assert::isArray($data);
 
-        /* @var array<string, mixed> $data */
         $this->form->fill($data);
     }
 
@@ -77,7 +76,7 @@ class MetatagPage extends XotBasePage
     public function save(): void
     {
         $data = $this->form->getState();
-        app(SaveTenantConfigAction::class)->execute('metatag', $data);
+        TenantService::saveConfig('metatag', $data);
 
         Notification::make()
             ->success()
@@ -85,7 +84,6 @@ class MetatagPage extends XotBasePage
             ->send();
     }
 
-    /** @return list<Action> */
     protected function getFormActions(): array
     {
         return [

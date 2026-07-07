@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+namespace Modules\Xot\Tests\Unit\Actions\Arr;
+
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
-use PHPUnit\Framework\Assert;
-
-use function Safe\json_decode;
-use function Safe\tempnam;
 
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];
@@ -19,10 +16,12 @@ it('saves array as php file', function (): void {
     $action = app(SavePhpArrayAction::class);
     $result = $action->execute($data, $filename);
 
-    Assert::assertTrue($result);
-    Assert::assertTrue(File::exists($filename));
+    expect($result)->toBeTrue();
+    expect(File::exists($filename))->toBeTrue();
+
     $savedData = include $filename;
-    Assert::assertSame($data, $savedData);
+    expect($savedData)->toBe($data);
+
     File::delete($filename);
 });
 
@@ -33,10 +32,12 @@ it('saves array as json file', function (): void {
     $action = app(SaveJsonArrayAction::class);
     $result = $action->execute($data, $filename);
 
-    Assert::assertTrue($result);
-    Assert::assertTrue(File::exists($filename));
+    expect($result)->toBeTrue();
+    expect(File::exists($filename))->toBeTrue();
+
     $savedData = json_decode(File::get($filename), true);
-    Assert::assertSame($data, $savedData);
+    expect($savedData)->toBe($data);
+
     File::delete($filename);
 });
 
@@ -47,8 +48,10 @@ it('saves array via SaveArrayAction dispatcher', function (): void {
 
     $action = app(SaveArrayAction::class);
 
-    Assert::assertTrue($action->execute($data, $filenamePhp, 'php'));
-    Assert::assertTrue($action->execute($data, $filenameJson, 'json'));
+    expect($action->execute($data, $filenamePhp, 'php'))->toBeTrue();
+    expect($action->execute($data, $filenameJson, 'json'))->toBeTrue();
+
+    expect(fn () => $action->execute($data, 'test.txt', 'txt'))->toThrow(\InvalidArgumentException::class);
 
     File::delete($filenamePhp);
     File::delete($filenameJson);

@@ -10,9 +10,6 @@ use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
-use Filament\Panel;
-use Filament\Support\Components\Component;
-use Filament\Support\Facades\FilamentColor;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -22,15 +19,9 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
-use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Mixins\PanelMixin;
-use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
-
-use function Safe\realpath;
-
 use Webmozart\Assert\Assert;
 
 /**
@@ -54,16 +45,13 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
-        $this->registerPaFilamentColors();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
-        $this->registerFilamentPanelMacros();
     }
 
     #[\Override]
     public function register(): void
     {
-        $this->registerRuntimePsr4Autoload();
         parent::register();
         $this->registerConfig();
 
@@ -72,31 +60,9 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerCommands();
     }
 
-    public function registerFilamentPanelMacros(): void
-    {
-        Panel::mixin(new PanelMixin());
-    }
-
     public function registerProviders(): void
     {
         // $this->app->register(Filament\ModulesServiceProvider::class);
-    }
-
-    private function registerRuntimePsr4Autoload(): void
-    {
-        $autoloadPath = base_path('vendor/autoload.php');
-
-        if (! is_file($autoloadPath)) {
-            return;
-        }
-
-        $loader = require $autoloadPath;
-
-        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
-            return;
-        }
-
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -121,14 +87,6 @@ class XotServiceProvider extends XotBaseServiceProvider
         );
         TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
-    }
-
-    /**
-     * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
-     */
-    public function registerPaFilamentColors(): void
-    {
-        FilamentColor::register(PaDesignColors::filamentPalette());
     }
 
     public function registerFilamentMacros(): void
@@ -214,7 +172,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
         foreach ($components as $component) {
-            $component::configureUsing(function (Component $translatable): void {
+            $component::configureUsing(function (object $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {
                     $translatable->translateLabel();
                 }

@@ -9,12 +9,10 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Livewire\Wireable;
-use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
-use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
+use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-use Modules\Xot\Support\PaDesignColors;
 
 use function Safe\file_get_contents;
 
@@ -141,8 +139,8 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
-            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
+            $data = TenantService::getConfig('metatag');
+            $data['description'] = TenantService::trans('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -264,6 +262,10 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
+     * Get the theme colors.
+     * This method reflects the semantic purpose of getting theme colors,
+     * rather than exposing the raw color data structure.
+     *
      * @return array<string, string>
      */
     public function getThemeColors(): array
@@ -273,7 +275,7 @@ class MetatagData extends Data implements Wireable
 
         // Convert Filament color arrays to simple string format
         foreach ($filamentColors as $key => $colorArray) {
-            if (is_array($colorArray) && ! empty($colorArray)) {
+            if (\is_array($colorArray) && ! empty($colorArray)) {
                 // Use the first color in the array as the default
                 $defaults[$key] = (string) $colorArray[0];
             }
@@ -381,8 +383,6 @@ class MetatagData extends Data implements Wireable
 
     /**
      * @deprecated Use getThemeColors() instead as it better reflects the semantic purpose
-     *
-     * @return array<string, array{key?: string, color: string, hex?: string}>
      */
     public function getColors(): array
     {
@@ -394,11 +394,18 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-     * @return array<string, array<int, string>|string>
+     * @return array<string, array<int, string>>
      */
     public function getFilamentColors(): array
     {
-        return PaDesignColors::filamentPalette();
+        return [
+            'danger' => Color::Red,
+            'gray' => Color::Zinc,
+            'info' => Color::Blue,
+            'primary' => Color::Amber,
+            'success' => Color::Green,
+            'warning' => Color::Amber,
+        ];
     }
 
     /**
@@ -411,30 +418,17 @@ class MetatagData extends Data implements Wireable
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
-        $normalizedFilamentColors = [];
-
-        foreach ($filamentColors as $key => $value) {
-            if (is_array($value)) {
-                $normalizedFilamentColors[$key] = array_values(array_map(
-                    static fn (mixed $color): string => (string) $color,
-                    $value,
-                ));
-                continue;
-            }
-
-            $normalizedFilamentColors[$key] = [(string) $value];
-        }
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
-            if (is_array($value) && Arr::has($value, 'color')) {
+            if (\is_array($value) && Arr::has($value, 'color')) {
                 // Convert single color value to array format for Filament compatibility
                 $colorValue = (string) $value['color'];
                 $customColors[$key] = [$colorValue];
             }
         }
 
-        return array_merge($normalizedFilamentColors, $customColors);
+        return array_merge($filamentColors, $customColors);
     }
 
     /**
@@ -588,17 +582,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
+        return TenantService::trans('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
+        return TenantService::trans('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
+        return TenantService::trans('metatag.sitename');
     }
 
     public function getRobots(): string
@@ -704,7 +698,7 @@ class MetatagData extends Data implements Wireable
      */
     private function getMimeTypeFromPath(string $filePath): string
     {
-        $extension = \strtolower(\pathinfo($filePath, PATHINFO_EXTENSION));
+        $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
 
         return match ($extension) {
             'png' => 'image/png',

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
 /**
@@ -16,23 +15,22 @@ use Illuminate\Support\Str;
 trait HasUuid
 {
     /**
-     * Boot the trait.
-     */
-    protected static function bootHasUuid(): void
-    {
-        static::creating(static function (Model $model): void {
-            $uuid = $model->getAttribute('uuid');
-            if (null === $uuid || '' === $uuid) {
-                $model->setAttribute('uuid', (string) Str::uuid());
-            }
-        });
-    }
-
-    /**
      * Initialize the trait.
      */
     public function initializeHasUuid(): void
     {
         $this->mergeCasts(['uuid' => 'string']);
+    }
+
+    /**
+     * Boot the trait.
+     */
+    protected static function bootHasUuid(): void
+    {
+        static::creating(static function ($model): void {
+            if (empty($model->uuid)) {
+                $model->uuid = (string) Str::uuid();
+            }
+        });
     }
 }

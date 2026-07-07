@@ -155,3 +155,4 @@ Chart.register(ChartDataLabels);
 
 - [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/upgrade-guide)
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
+

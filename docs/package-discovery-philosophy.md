@@ -339,7 +339,9 @@ The command discovered these categories:
 **Module Packages**:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
+>>>>>>> .merge_file_UmUzT7
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -350,7 +352,7 @@ Each module uses this pattern:
 
 ```json
 {
-    "name": "laraxot/module_user_fila3",
+    "name": "laraxot/module_user_fila5",
     "extra": {
         "laravel": {
             "providers": [
@@ -543,7 +545,7 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 ---
 
 **Document Version**: 1.0
-**Last Updated**: 2026-01-12
+
 **Status**: Living document - update as understanding deepens
 **Philosophy**: Super Mucca methodology applied
 

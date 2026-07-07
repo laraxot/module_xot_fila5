@@ -9,6 +9,7 @@ use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
 /**
@@ -149,23 +150,6 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $fields = array_fill_keys($keys, null);
 
         return array_merge($fields, $attributes);
-    }
-
-    /**
-     * @param array<mixed> $values
-     *
-     * @return array<string, mixed>
-     */
-    private static function normalizeFormFill(array $values): array
-    {
-        $normalized = [];
-        foreach ($values as $key => $value) {
-            if (is_string($key)) {
-                $normalized[$key] = $value;
-            }
-        }
-
-        return $normalized;
     }
 
     public function mount(): void

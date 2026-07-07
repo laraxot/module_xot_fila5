@@ -44,7 +44,7 @@ class AutoLabelAction
             $class = $component::class;
         }
 
-        if (is_object($class)) {
+        if (\is_object($class)) {
             $class = $class::class;
         }
 
@@ -66,8 +66,7 @@ class AutoLabelAction
         $label_key = $trans_key.'.fields.'.$componentName.'.label';
         $label = trans($label_key);
 
-        /** @var string $label */
-        if ($label !== $label_key) {
+        if (\is_string($label)) {
             if ($label_key === $label) {
                 // Se la traduzione non esiste, creiamone una utilizzando il nome del componente
                 $label_value = $componentName;
@@ -76,7 +75,7 @@ class AutoLabelAction
                 $label_key1 = $trans_key.'.fields.'.$componentName;
                 $label1 = trans($label_key1);
 
-                if ($label_key1 !== $label1) {
+                if ($label_key1 !== $label1 && \is_string($label1)) {
                     $label_value = $label1;
                 }
 
@@ -105,14 +104,31 @@ class AutoLabelAction
     private function getComponentName(Field|Component $component): string
     {
         // Per i componenti Field di Filament
-        if ($component instanceof Field) {
+        if (method_exists($component, 'getName')) {
             $name = $component->getName();
 
-            return (string) $name;
+            return \is_string($name) ? $name : ((string) $name);
         }
 
-        $statePath = $component->getStatePath();
+        // Per i componenti generali di Filament
+        // PHPStan rileva che questo controllo è sempre vero per Component
+        // ma lo manteniamo per chiarezza e per gestire eventuali cambiamenti futuri in Filament
+        if (method_exists($component, 'getStatePath')) { // @phpstan-ignore function.alreadyNarrowedType
+            $statePath = $component->getStatePath();
 
-        return $statePath ?? class_basename($component);
+            return $statePath ?? class_basename($component);
+        }
+
+        // Fallback a reflection per altri casi
+        $reflectionClass = new \ReflectionClass($component);
+        if ($reflectionClass->hasProperty('name') && $reflectionClass->getProperty('name')->isPublic()) {
+            $property = $reflectionClass->getProperty('name');
+            Assert::string($value = $property->getValue($component));
+
+            return $value;
+        }
+
+        // Ultima risorsa: ritorniamo il nome della classe
+        return class_basename($component);
     }
 }
