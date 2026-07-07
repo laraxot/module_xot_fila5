@@ -76,6 +76,10 @@ class CustomRelation extends Relation
      */
     public function initRelation(array $models, $relation): array
     {
+        if (! \is_string($relation)) {
+            throw new \Exception('relation is not a string');
+        }
+
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -88,7 +92,13 @@ class CustomRelation extends Relation
      *
      * @return array<int, Model>
      */
-    public function match(array $models, Collection $collection, $relation): array
+    /**
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+     *
+     * @return array<int, Model>
+     */
+    public function match(array $models, Collection $collection, mixed $relation): array
     {
         // Trying to invoke Closure|null but it might not be a callable.
         if (! \is_callable($this->eagerMatcher)) {

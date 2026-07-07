@@ -31,7 +31,9 @@ use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Str;
+use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
@@ -371,7 +373,7 @@ trait HasXotTable
             return $model;
         }
 
-        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
