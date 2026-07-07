@@ -11,7 +11,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Relations;
 
 use Closure;
-use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -71,7 +70,7 @@ class CustomRelation extends Relation
     {
         // Parameter #1 $function of function call_user_func expects callable(): mixed, Closure|null given.
         if (! \is_callable($this->eagerConstraints)) {
-            throw new Exception('eagerConstraints is not callable');
+            throw new \Exception('eagerConstraints is not callable');
         }
 
         \call_user_func($this->eagerConstraints, $this, $models);
@@ -88,7 +87,7 @@ class CustomRelation extends Relation
     public function initRelation(array $models, mixed $relation): array
     {
         if (! \is_string($relation)) {
-            throw new Exception('relation is not a string');
+            throw new \Exception('relation is not a string');
         }
 
         foreach ($models as $model) {
@@ -104,7 +103,7 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
-     * @param array<int, Model> $models
+     * @param array<int, Model>      $models
      * @param Collection<int, Model> $collection
      *
      * @return array<int, Model>
@@ -113,7 +112,7 @@ class CustomRelation extends Relation
     {
         // Trying to invoke Closure|null but it might not be a callable.
         if (! \is_callable($this->eagerMatcher)) {
-            throw new Exception('eagerMatcher is not callable');
+            throw new \Exception('eagerMatcher is not callable');
         }
 
         $res = ($this->eagerMatcher)($models, $collection, $relation, $this);
@@ -166,7 +165,7 @@ class CustomRelation extends Relation
         Assert::isArray($models);
         Assert::allIsInstanceOf($models, Model::class);
 
-        /** @var array<int, Model> $models */
+        /* @var array<int, Model> $models */
         return $this->related->newCollection($models);
     }
 
