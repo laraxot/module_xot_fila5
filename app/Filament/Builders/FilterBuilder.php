@@ -23,15 +23,9 @@ use function Safe\strtotime;
  * across List pages in all modules.
  *
  * Usage:
- * ```php
- * public function getTableFilters(): array
- * {
- *     return [
- *         FilterBuilder::activeToggle(),
- *         FilterBuilder::selectFromModel('category', Category::class),
- *     ];
- * }
- * ```
+ *
+ * Use this builder from resource table filter methods to compose common
+ * Filament filters without duplicating filter callbacks.
  */
 class FilterBuilder
 {
