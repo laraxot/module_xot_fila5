@@ -39,11 +39,12 @@ use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
 class HealthPage extends XotBasePage
 {
     /**
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * Untyped to match HandlesEvents::$listeners.
      *
-=======
->>>>>>> origin/dev
+     * =======
+     * >>>>>>> origin/dev
+     *
      * @var array<string, string>
      */
     protected $listeners = ['refresh-component' => '$refresh'];

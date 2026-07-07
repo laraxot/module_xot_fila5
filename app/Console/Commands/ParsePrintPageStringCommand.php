@@ -15,21 +15,21 @@ class ParsePrintPageStringCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
+     * <<<<<<< HEAD
+     * =======.
      *
      * @var string
->>>>>>> origin/dev
+     *             >>>>>>> origin/dev
      */
     protected $signature = 'xot:parse-print-page {str}';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
+     * <<<<<<< HEAD
+     * =======.
      *
      * @var string
->>>>>>> origin/dev
+     *             >>>>>>> origin/dev
      */
     protected $description = ' esplode';
 
