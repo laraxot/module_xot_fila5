@@ -32,7 +32,9 @@ use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Str;
+use RuntimeException;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
@@ -311,22 +313,10 @@ trait HasXotTable
         if ($this->shouldShowDetachAction() && method_exists($this, 'getRelationship')) {
             $relationship = $this->getRelationship();
 
-            // @phpstan-ignore-next-line function.alreadyNarrowedType
-            // (in RelationManager, always object; in ListRecords, may not be)
-            if (is_object($relationship)
-                && method_exists($relationship, 'getTable')
-                && method_exists($relationship, 'getPivotClass')
-            ) {
-                $pivotClass = $relationship->getPivotClass();
-
-                // Type guard: ensure pivotClass is object/string with getKeyName method
-                if ((is_object($pivotClass) || is_string($pivotClass))
-                    && method_exists($pivotClass, 'getKeyName')
-                ) {
-                    $actions['detach'] = DetachAction::make()
-                        ->iconButton()
-                        ->tooltip((string) __('user::actions.detach'));
-                }
+            if ($relationship instanceof BelongsToMany) {
+                $actions['detach'] = DetachAction::make()
+                    ->iconButton()
+                    ->tooltip((string) __('user::actions.detach'));
             }
         }
 
@@ -387,7 +377,7 @@ trait HasXotTable
             }
         }
 
-        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**

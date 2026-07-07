@@ -77,7 +77,7 @@ class MetatagPage extends XotBasePage
     public function save(): void
     {
         $data = $this->form->getState();
-        TenantService::saveConfig('metatag', $data);
+        app(SaveTenantConfigAction::class)->execute('metatag', $data);
 
         Notification::make()
             ->success()

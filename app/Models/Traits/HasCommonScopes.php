@@ -35,8 +35,6 @@ trait HasCommonScopes
      *
      * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
      *
-     * @param Builder<static> $query
-     *
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -46,8 +44,6 @@ trait HasCommonScopes
 
     /**
      * Scope query to only inactive records.
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -60,8 +56,6 @@ trait HasCommonScopes
      * Scope query to published records.
      *
      * Records with published_at <= now().
-     *
-     * @param Builder<static> $query
      *
      * @return Builder<static>
      */
@@ -76,8 +70,6 @@ trait HasCommonScopes
      *
      * Records with published_at = null or > now().
      *
-     * @param Builder<static> $query
-     *
      * @return Builder<static>
      */
     public function scopeDraft(Builder $query): Builder
@@ -91,7 +83,8 @@ trait HasCommonScopes
     /**
      * Scope query to records created after a date.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeCreatedAfter(Builder $query, mixed $date): Builder
@@ -102,7 +95,8 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeCreatedBefore(Builder $query, mixed $date): Builder
@@ -113,7 +107,8 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
@@ -124,7 +119,8 @@ trait HasCommonScopes
     /**
      * Scope query to records created by a specific user.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
@@ -141,7 +137,8 @@ trait HasCommonScopes
             return false;
         }
 
-        return $this->published_at->isPast();
+        return null !== $this->published_at
+               && $this->published_at->isPast();
     }
 
     /**
@@ -157,6 +154,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-        return isset($this->is_active) && $this->is_active === true;
+        return isset($this->is_active) && true === $this->is_active;
     }
 }
