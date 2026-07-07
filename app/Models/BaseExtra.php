@@ -51,6 +51,10 @@ abstract class BaseExtra extends BaseModel implements ExtraContract
 {
     use SchemalessAttributesTrait;
 
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> origin/dev
     protected $connection = 'xot';
 
     protected $fillable = [

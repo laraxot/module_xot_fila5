@@ -28,6 +28,10 @@ class GetSchemaManagerByModelClassAction
         // In Laravel 9+ il metodo getDoctrineSchemaManager è stato deprecato
         // ma getDoctrineConnection() non esiste, dobbiamo usare getDoctrineSchemaManager direttamente
         if (method_exists($connection, 'getDoctrineSchemaManager')) {
+<<<<<<< HEAD
+=======
+            /** @phpstan-ignore deprecated.method */
+>>>>>>> origin/dev
             $schemaManager = $connection->getDoctrineSchemaManager();
 
             Assert::isInstanceOf($schemaManager, AbstractSchemaManager::class);

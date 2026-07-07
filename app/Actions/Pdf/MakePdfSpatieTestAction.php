@@ -5,16 +5,22 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Pdf;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\Browsershot\Browsershot;
 use Spatie\LaravelPdf\Enums\Format;
 use Spatie\LaravelPdf\Facades\Pdf;
 =======
+=======
+>>>>>>> origin/dev
 use Modules\Xot\Contracts\PdfBuilderContract;
 use Modules\Xot\Support\PdfBuilderAdapter;
 
 use function Safe\base64_decode;
 
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
@@ -32,6 +38,7 @@ class MakePdfSpatieTestAction
         string $filename = 'spatie-pdf-test.pdf',
         string $view = 'xot::pdf.spatie-test',
     ): StreamedResponse {
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var \Spatie\LaravelPdf\PdfBuilder $pdfBuilder */
         $pdfBuilder = Pdf::view($view, [
@@ -69,12 +76,17 @@ class MakePdfSpatieTestAction
                 $base64 = $pdfBuilder->base64();
                 echo \Safe\base64_decode($base64);
 =======
+=======
+>>>>>>> origin/dev
         $pdf = $this->makePdfBuilder($view, $data, $filename);
 
         return new StreamedResponse(
             static function () use ($pdf): void {
                 echo base64_decode($pdf->base64());
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
             },
             200,
             [
@@ -84,7 +96,10 @@ class MakePdfSpatieTestAction
         );
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/dev
 
     /**
      * @param array<string, mixed> $data
@@ -133,5 +148,8 @@ class MakePdfSpatieTestAction
                 }
             });
     }
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 }

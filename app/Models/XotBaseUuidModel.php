@@ -13,8 +13,15 @@ abstract class XotBaseUuidModel extends XotBaseModel
 {
     public $incrementing = false;
 
+<<<<<<< HEAD
     public $timestamps = true;
 
+=======
+    /** @var bool */
+    public $timestamps = true;
+
+    /** @var int */
+>>>>>>> origin/dev
     protected $perPage = 30;
 
     protected $keyType = 'string';

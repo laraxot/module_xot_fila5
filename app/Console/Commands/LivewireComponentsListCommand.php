@@ -16,11 +16,21 @@ class LivewireComponentsListCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> origin/dev
      */
     protected $signature = 'xot:livewire-list';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> origin/dev
      */
     protected $description = ' rilevare tutti i componenti registrati di Livewire';
 

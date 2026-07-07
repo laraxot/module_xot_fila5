@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Nwidart\Modules\Contracts\RepositoryInterface;
 use Nwidart\Modules\Facades\Module;
 
@@ -20,6 +21,9 @@ use function Safe\define;
 use function Safe\glob;
 use function Safe\preg_match;
 
+=======
+use Nwidart\Modules\Facades\Module;
+>>>>>>> origin/dev
 use Webmozart\Assert\Assert;
 
 if (! function_exists('isRunningTestBench')) {
@@ -81,7 +85,10 @@ if (! function_exists('hex2rgba')) {
         if (empty($color)) {
             return $default;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         if ('#' === $color[0]) {
             $color = mb_substr($color, 1);
         }
@@ -92,7 +99,10 @@ if (! function_exists('hex2rgba')) {
         } else {
             return $default;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         $rgb = array_map('hexdec', $hex);
         if (-1.0 !== $opacity) {
             if ($opacity < 0 || $opacity > 1) {
@@ -111,7 +121,11 @@ if (! function_exists('dddx')) {
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
+<<<<<<< HEAD
         $start = defined('LARAVEL_START') ? (float) LARAVEL_START : microtime(true);
+=======
+        $start = defined('LARAVEL_START') ? LARAVEL_START : microtime(true);
+>>>>>>> origin/dev
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', $start);
         }
@@ -119,15 +133,24 @@ if (! function_exists('dddx')) {
             '_' => $params,
             'line' => $tmp[0]['line'] ?? 'line-unknows',
             'file' => app(FixPathAction::class)->execute($tmp[0]['file'] ?? 'file-unknown'),
+<<<<<<< HEAD
             'time' => microtime(true) - $start,
             'memory_taken' => round(memory_get_peak_usage() / (1024 * 1024), 2).' MB',
         ];
 
+=======
+            'time' => microtime(true) - (float) $start,
+            'memory_taken' => round(memory_get_peak_usage() / (1024 * 1024), 2).' MB',
+        ];
+>>>>>>> origin/dev
         if (File::exists($data['file']) && Str::startsWith($data['file'], app(FixPathAction::class)->execute(storage_path('framework/views')))) {
             $content = File::get($data['file']);
             $data['view_file'] = app(FixPathAction::class)->execute(Str::between($content, '/**PATH ', ' ENDPATH**/'));
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         dd($data);
     }
 }
@@ -164,11 +187,17 @@ if (! function_exists('inAdmin')) {
         if (isset($params['in_admin'])) {
             return (bool) $params['in_admin'];
         }
+<<<<<<< HEAD
 
         if ('admin' === Request::segment(2)) {
             return true;
         }
 
+=======
+        if ('admin' === Request::segment(2)) {
+            return true;
+        }
+>>>>>>> origin/dev
         $segments = Request::segments();
 
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
@@ -235,11 +264,14 @@ if (! function_exists('isItem')) {
 }
 
 if (! function_exists('params2ContainerItem')) {
+<<<<<<< HEAD
     /**
      * @param array<string, mixed>|null $params
      *
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
+=======
+>>>>>>> origin/dev
     function params2ContainerItem(?array $params = null): array
     {
         if (null === $params) {
@@ -249,7 +281,10 @@ if (! function_exists('params2ContainerItem')) {
                 $params = $route_current->parameters();
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         $container = [];
         $item = [];
         foreach ($params as $k => $v) {
@@ -282,6 +317,7 @@ if (! function_exists('getModelByName')) {
 
             return $res;
         }
+<<<<<<< HEAD
 
         $files_path = base_path('Modules').'/*/Models/*.php';
         Assert::isArray($files = glob($files_path));
@@ -290,15 +326,27 @@ if (! function_exists('getModelByName')) {
                 return false;
             }
 
+=======
+        $files_path = base_path('Modules').'/*/Models/*.php';
+        Assert::isArray($files = glob($files_path));
+        $path = Arr::first($files, function ($file) use ($name): bool {
+            Assert::string($file, __FILE__.':'.__LINE__.' - Helper');
+>>>>>>> origin/dev
             $info = pathinfo($file);
 
             return Str::snake($info['filename'] ?? '') === $name;
         });
+<<<<<<< HEAD
 
         if (! is_string($path) || '' === $path) {
             throw new Exception('['.$name.'] not in morph_map');
         }
 
+=======
+        if (null === $path) {
+            throw new Exception('['.$name.'] not in morph_map');
+        }
+>>>>>>> origin/dev
         $path = app(FixPathAction::class)->execute($path);
         $info = pathinfo($path);
         $module_name = Str::between($path, 'Modules'.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR.'Models');
@@ -314,8 +362,12 @@ if (! function_exists('getModuleFromModel')) {
     {
         $class = $model::class;
         $module_name = Str::before(Str::after($class, 'Modules\\'), '\\Models\\');
+<<<<<<< HEAD
         $moduleRepository = app(RepositoryInterface::class);
         Assert::isInstanceOf($res = $moduleRepository->find($module_name), Nwidart\Modules\Module::class);
+=======
+        Assert::isInstanceOf($res = app('module')->find($module_name), Nwidart\Modules\Module::class);
+>>>>>>> origin/dev
 
         return $res;
     }
@@ -337,7 +389,10 @@ if (! function_exists('getModuleNameFromModelName')) {
         if (! is_string($model_class)) {
             throw new Exception('['.__LINE__.']');
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         Assert::isInstanceOf($model = app($model_class), Model::class);
 
         return getModuleNameFromModel($model);
@@ -358,7 +413,10 @@ if (! function_exists('xotModel')) {
         if (! is_string($model_class)) {
             throw new Exception('['.__LINE__.']');
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dev
         Assert::isInstanceOf($res = app($model_class), Model::class);
 
         return $res;
@@ -386,13 +444,18 @@ if (! function_exists('authId')) {
 }
 
 if (! function_exists('trans_string')) {
+<<<<<<< HEAD
     function trans_string(string $key, array $replace = [], ?string $locale = null): string
+=======
+    function trans_string(string $key, array $replace = [], ?string $locale = null): ?string
+>>>>>>> origin/dev
     {
         $safeReplace = [];
         foreach ($replace as $k => $v) {
             if (! is_string($k)) {
                 continue;
             }
+<<<<<<< HEAD
 
             $safeReplace[$k] = is_scalar($v) || null === $v ? $v : (string) $v;
         }
@@ -400,5 +463,12 @@ if (! function_exists('trans_string')) {
         $result = __($key, $safeReplace, $locale);
 
         return is_string($result) ? $result : $key;
+=======
+            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : (string) $v;
+        }
+        $result = __($key, $safeReplace, $locale);
+
+        return is_string($result) ? $result : (null === $result ? null : $key);
+>>>>>>> origin/dev
     }
 }

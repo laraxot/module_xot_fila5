@@ -13,6 +13,11 @@ class TestWidget extends Widget
 {
     /**
      * @phpstan-var view-string
+<<<<<<< HEAD
+=======
+     *
+     * @phpstan-ignore-next-line
+>>>>>>> origin/dev
      */
     protected string $view = 'xot::filament.widgets.test';
 

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
@@ -59,6 +60,8 @@ abstract class XotBaseResourceTable
         return [];
     }
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -86,5 +89,8 @@ abstract class XotBaseResourceTable
      * @return array<int|string, Column>
      */
     abstract public function getTableColumns(): array;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 }

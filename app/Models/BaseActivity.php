@@ -13,5 +13,9 @@ use Spatie\Activitylog\Models\Activity as SpatieActivity;
  */
 abstract class BaseActivity extends SpatieActivity
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> origin/dev
     protected $connection = 'activity';
 }

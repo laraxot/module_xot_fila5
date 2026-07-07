@@ -27,6 +27,7 @@ class SvgExistsAction
             return false;
         }
 
+<<<<<<< HEAD
         // BladeUI Kit icon check: only for standard sets (heroicon-*, etc.)
         // Geo SVGs use "geo-" prefix (e.g., "geo-magnifying-glass") — served via <img> or Lit JS, not BladeUI Kit
         if (str_starts_with($svgName, 'geo-')) {
@@ -37,6 +38,8 @@ class SvgExistsAction
             return file_exists($svgPath);
         }
 
+=======
+>>>>>>> origin/dev
         /** @var IconFactory $iconsFactory */
         $iconsFactory = App::make(IconFactory::class);
         try {

@@ -23,6 +23,7 @@ class GetMethodBodyAction
         $length = $end_line - $start_line;
         Assert::string($file_name = $table_method->getFileName());
         $source = file($file_name);
+<<<<<<< HEAD
         $slice = \array_slice($source, $start_line, $length);
         $methodLines = array_values(array_filter(
             $slice,
@@ -30,5 +31,9 @@ class GetMethodBodyAction
         ));
 
         return implode('', $methodLines);
+=======
+
+        return implode('', \array_slice($source, $start_line, $length));
+>>>>>>> origin/dev
     }
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\HasWizard;
 use Filament\Schemas\Components\Component;
@@ -17,11 +18,16 @@ use Illuminate\Support\Str;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
 use Modules\Lang\Providers\LangServiceProvider;
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Resources\Pages\Concerns\HasWizard;
 use Filament\Schemas\Components\Wizard;
 use Filament\Schemas\Components\Wizard\Step;
 use Modules\Xot\Filament\Traits\HasXotFormAction;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 
 /**
  * Base per widget Filament che espongono un {@see Wizard} nello schema.
@@ -29,6 +35,7 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  * **Perche esiste (visione / filosofia / religione / zen)**:
  *
  * ## Separazione delle Responsabilita
+<<<<<<< HEAD
 <<<<<<< HEAD
  * - `XotBaseWidget` = contratto generico (form lineare, tabelle, statistiche)
  * - `XotBaseWizardWidget` = specializzazione per wizard multi-step
@@ -52,6 +59,8 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  * ## Politica Sicurezza
  * - Override `?step=` NON e mai implicito in produzione
 =======
+=======
+>>>>>>> origin/dev
  * - `XotBaseWidget` = contratto generico (senza schema: azioni, viste, traduzioni)
  * - `XotBaseSchemaWidget` = contratto con schema (form lineare, getFormSchema)
  * - `XotBaseWizardWidget` = specializzazione per wizard multi-step
@@ -77,12 +86,16 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  *
  * ## Politica Sicurezza
  * - Override `?step=` NON è mai implicito in produzione
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
  * - Consentito SOLO se:
  *   - `app()->isLocal()` → true
  *   - `config('app.debug')` → true
  *   - `wizardAllowStepQueryExtra()` → override modulo-specifico (default false)
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * ## Auto-Label e Traduzioni (LangServiceProvider)
  * - **REGOLA AUREA**: NON usare `->label()` o `->tooltip()` espliciti sui campi/azioni
@@ -100,6 +113,8 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  *
 =======
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
  * @see Wizard
  * @see HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
@@ -107,11 +122,14 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  * @see AutoLabelAction
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class XotBaseWizardWidget extends XotBaseWidget
 {
     use HasWizard; // Usa il trait ufficiale Filament per non reinventare la ruota
     use EvaluatesClosures; // Adapter richiesto da HasWizard (evaluate())
 =======
+=======
+>>>>>>> origin/dev
 abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 {
     use HasWizard {
@@ -121,11 +139,15 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 
     /** @var ?int Step iniziale (1..N) dopo mount o navigazione; null = ancora da risolvere da ?step=. */
     public ?int $wizardStartStep = null;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 
     protected int|string|array $columnSpan = 'full';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Elenco step del wizard (ordine = flusso utente). Ogni widget concreto lo implementa;
      * la convenzione `getStepByName('foo')` → `getFooSchema()` resta nel metodo helper {@see getStepByName()}.
@@ -227,6 +249,8 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         if (! inAdmin()) {
             $wizard = $wizard->view('pub_theme::components.wizard');
 =======
+=======
+>>>>>>> origin/dev
      * @return array<int, Wizard>
      */
     public function getFormSchema(): array
@@ -249,12 +273,16 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
             if (view()->exists($wizardView)) {
                 $wizard = $wizard->view($wizardView);
             }
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         }
 
         return $wizard;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Chiave usata in `getFormSchema()` per wrappare il componente `Wizard` (stato annidato sotto `data`).
@@ -331,10 +359,14 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 =======
     protected function hasSkippableSteps(): bool
 >>>>>>> 40b96bcd6 (.)
+=======
+    protected function hasSkippableSteps(): bool
+>>>>>>> origin/dev
     {
         return true;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected function afterNextStep(): void
     {
@@ -574,11 +606,16 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
         throw new \RuntimeException('Nessun componente Wizard trovato nello schema form.');
     }
 =======
+=======
+>>>>>>> origin/dev
     /**
      * Elenco step del wizard. Implementato nel widget concreto.
      *
      * @return array<string, Step>
      */
     abstract public function getSteps(): array;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 }

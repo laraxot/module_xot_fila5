@@ -7,6 +7,10 @@ namespace Modules\Xot\Services;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< HEAD
+=======
+use stdClass;
+>>>>>>> origin/dev
 
 // ----------- Requests ----------
 

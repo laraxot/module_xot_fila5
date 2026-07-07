@@ -5,15 +5,21 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Schemas;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 use Illuminate\Support\Str;
 
 class XotBaseResourceForm
@@ -32,10 +38,14 @@ class XotBaseResourceForm
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int|string, SchemaComponent>
 =======
      * @return array<string, Component>
 >>>>>>> 40b96bcd6 (.)
+=======
+     * @return array<string, Component>
+>>>>>>> origin/dev
      */
     public static function getFormSchema(): array
     {
@@ -44,8 +54,11 @@ class XotBaseResourceForm
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getWizardSteps(): array
 =======
+=======
+>>>>>>> origin/dev
     /**
      * Elenco degli step Wizard per form multi‑passaggio (nome ufficiale allineato a Filament **`HasWizard::getSteps()`**).
      * I form lineari lo lasciano vuoto.
@@ -53,7 +66,10 @@ class XotBaseResourceForm
      * @return array<string, Step>
      */
     public static function getSteps(): array
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
     {
         return [];
     }
@@ -66,6 +82,7 @@ class XotBaseResourceForm
             ->prepend('get')
             ->append('Schema')
             ->toString();
+<<<<<<< HEAD
 <<<<<<< HEAD
         $module_low = Str::of(static::class)->between('Modules\\', '\\Filament')->lower()->toString();
         $group = Str::of(class_basename(static::class))->kebab()->toString();
@@ -88,6 +105,8 @@ class XotBaseResourceForm
 
         return Step::make(__($labelKey))->schema([]);
 =======
+=======
+>>>>>>> origin/dev
 
         if (method_exists(static::class, $methodName)) {
             $schemaResult = static::$methodName();
@@ -99,6 +118,9 @@ class XotBaseResourceForm
         dddx($methodName);
 
         return Step::make($name)->schema([]);
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
     }
 }

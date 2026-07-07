@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\Relation;
+=======
+>>>>>>> origin/dev
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -46,6 +49,7 @@ class SendMailByRecordAction
         }
 
         if (! method_exists($record, 'myLogs')) {
+<<<<<<< HEAD
             throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
         }
 
@@ -61,6 +65,22 @@ class SendMailByRecordAction
             $subject = '';
         }
         if (! \is_string($bodyHtml)) {
+=======
+            throw new \InvalidArgumentException('Model must implement myLogs method');
+        }
+
+        $to = $record->email;
+        $subject = $record->option('mail_oggetto');
+        $bodyHtml = $record->option('mail_testo');
+
+        if (! is_string($to)) {
+            throw new \InvalidArgumentException('Email must be a string');
+        }
+        if (! is_string($subject)) {
+            $subject = '';
+        }
+        if (! is_string($bodyHtml)) {
+>>>>>>> origin/dev
             $bodyHtml = '';
         }
 
@@ -77,9 +97,15 @@ class SendMailByRecordAction
         );
         SmtpData::make()->send($emailData);
 
+<<<<<<< HEAD
         /** @var Relation $logs */
         $logs = $record->myLogs();
         $logs->create([
+=======
+        // myLogs è sempre disponibile su BaseModel
+        /* @phpstan-ignore-next-line - Dynamic relationship method */
+        $record->myLogs()->create([
+>>>>>>> origin/dev
             'act' => 'sendMail',
             'handle' => authId(),
         ]);

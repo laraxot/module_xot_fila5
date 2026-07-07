@@ -50,6 +50,13 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
+<<<<<<< HEAD
+=======
+        if (isset($this->view)) {
+            return $this->view;
+        }
+
+>>>>>>> origin/dev
         $view = Str::of(static::class)
             ->after('Modules\\')
             ->before('\\Filament\\')
@@ -67,14 +74,22 @@ abstract class XotBasePage extends FilamentPage implements HasForms
 
     public function getViewTest(): string
     {
+<<<<<<< HEAD
         $class = self::class;
+=======
+        $class = __CLASS__;
+>>>>>>> origin/dev
         $module = Str::between($class, 'Modules\\', '\Filament');
 
         $after = explode('\\', Str::after($class, '\Filament\\'));
         $after[1] = Str::before($after[1], 'Resource');
         $after[3] = Str::before($after[3], $after[1]);
 
+<<<<<<< HEAD
         $after = collect($after)->map(static function ($item) {
+=======
+        $after = collect($after)->map(function ($item) {
+>>>>>>> origin/dev
             return Str::kebab($item);
             // return Str::snake($item);
         })->implode('.');
@@ -157,6 +172,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     }
 
     /**
+<<<<<<< HEAD
      * Get the resources associated with this page.
      *
      * @return Collection<int, string>
@@ -169,6 +185,8 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Get the form model for the page.
      * Filament compatibility method.
      *
@@ -189,6 +207,22 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the resources associated with this page.
+     *
+     * @return Collection<int, string>
+     */
+    public static function getResources(): Collection
+    {
+        /** @var Collection<int, string> $resources */
+        $resources = collect([]);
+
+        return $resources;
+    }
+
+    /**
+>>>>>>> origin/dev
      * Get the form schema for the page.
      *
      * @return array<int|string, Component>

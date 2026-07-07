@@ -15,22 +15,38 @@ trait EnumTrait
 
     public function getLabel(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.label');
+=======
+        return $this->transClass(static::class, $this->value.'.label');
+>>>>>>> origin/dev
     }
 
     public function getColor(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.color');
+=======
+        return $this->transClass(static::class, $this->value.'.color');
+>>>>>>> origin/dev
     }
 
     public function getIcon(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.icon');
+=======
+        return $this->transClass(static::class, $this->value.'.icon');
+>>>>>>> origin/dev
     }
 
     public function getDescription(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, 'values.'.$this->value.'.description');
+=======
+        return $this->transClass(static::class, $this->value.'.description');
+>>>>>>> origin/dev
     }
 
     /**
@@ -152,6 +168,7 @@ trait EnumTrait
     {
         return [];
     }
+<<<<<<< HEAD
 
     public static function toArray(): array
     {
@@ -164,4 +181,6 @@ trait EnumTrait
 
         return $result;
     }
+=======
+>>>>>>> origin/dev
 }

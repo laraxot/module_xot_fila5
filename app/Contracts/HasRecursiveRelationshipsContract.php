@@ -53,6 +53,7 @@ interface HasRecursiveRelationshipsContract
 
     /**
      * Get the name of the parent key column.
+<<<<<<< HEAD
      */
     public function getParentKeyName(): string;
 
@@ -85,12 +86,61 @@ interface HasRecursiveRelationshipsContract
      * Get the path separator.
      */
     public function getPathSeparator(): string;
+=======
+     *
+     * @return string
+     */
+    public function getParentKeyName();
+
+    /**
+     * Get the qualified parent key column.
+     *
+     * @return string
+     */
+    public function getQualifiedParentKeyName();
+
+    /**
+     * Get the name of the local key column.
+     *
+     * @return string
+     */
+    public function getLocalKeyName();
+
+    /**
+     * Get the qualified local key column.
+     *
+     * @return string
+     */
+    public function getQualifiedLocalKeyName();
+
+    /**
+     * Get the name of the depth column.
+     *
+     * @return string
+     */
+    public function getDepthName();
+
+    /**
+     * Get the name of the path column.
+     *
+     * @return string
+     */
+    public function getPathName();
+
+    /**
+     * Get the path separator.
+     *
+     * @return string
+     */
+    public function getPathSeparator();
+>>>>>>> origin/dev
 
     /**
      * Get the additional custom paths.
      *
      * @return array<string>
      */
+<<<<<<< HEAD
     public function getCustomPaths(): array;
 
     /**
@@ -182,13 +232,151 @@ interface HasRecursiveRelationshipsContract
      * Create a new Eloquent query builder for the model.
      */
     public function newEloquentBuilder(Builder $query): AdjacencyBuilder;
+=======
+    public function getCustomPaths();
+
+    /**
+     * Get the name of the common table expression.
+     *
+     * @return string
+     */
+    public function getExpressionName();
+
+    /**
+     * Get the model's ancestors.
+     *
+     * @return Ancestors
+     */
+    public function ancestors();
+
+    /**
+     * Get the model's ancestors and itself.
+     *
+     * @return Ancestors
+     */
+    public function ancestorsAndSelf();
+
+    /**
+     * Get the model's bloodline.
+     *
+     * @return Bloodline
+     */
+    public function bloodline();
+
+    /**
+     * Get the model's children.
+     *
+     * @return HasMany
+     */
+    public function children();
+
+    /**
+     * Get the model's children and itself.
+     *
+     * @return Descendants
+     */
+    public function childrenAndSelf();
+
+    /**
+     * Get the model's descendants.
+     *
+     * @return Descendants
+     */
+    public function descendants();
+
+    /**
+     * Get the model's descendants and itself.
+     *
+     * @return Descendants
+     */
+    public function descendantsAndSelf();
+
+    /**
+     * Get the model's parent.
+     *
+     * @return BelongsTo
+     */
+    public function parent();
+
+    /**
+     * Get the model's parent and itself.
+     *
+     * @return Ancestors
+     */
+    public function parentAndSelf();
+
+    /**
+     * Get the model's root ancestor.
+     *
+     * @return RootAncestor
+     */
+    public function rootAncestor();
+
+    /**
+     * Get the model's root ancestor or self.
+     *
+     * @return RootAncestorOrSelf
+     */
+    public function rootAncestorOrSelf();
+
+    /**
+     * Get the model's siblings.
+     *
+     * @return Siblings
+     */
+    public function siblings();
+
+    /**
+     * Get the model's siblings and itself.
+     *
+     * @return Siblings
+     */
+    public function siblingsAndSelf();
+
+    /**
+     * Get the first segment of the model's path.
+     *
+     * @return string
+     */
+    public function getFirstPathSegment();
+
+    /**
+     * Determine whether the model's path is nested.
+     *
+     * @return bool
+     */
+    public function hasNestedPath();
+
+    /**
+     * Determine if an attribute is an integer.
+     *
+     * @return bool
+     */
+    public function isIntegerAttribute(string $attribute);
+
+    /**
+     * Create a new Eloquent query builder for the model.
+     *
+     * @param Builder $query
+     *
+     * @return AdjacencyBuilder
+     */
+    public function newEloquentBuilder($query);
+>>>>>>> origin/dev
 
     /**
      * Create a new Eloquent Collection instance.
      *
      * @param list<static> $models
+<<<<<<< HEAD
      */
     public function newCollection(array $models = []): Collection;
+=======
+     *
+     * @return Collection
+     */
+    public function newCollection(array $models = []);
+>>>>>>> origin/dev
 
     /**
      * added by XOT, viene utilizzato nelle options delle select.

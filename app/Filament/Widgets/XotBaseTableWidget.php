@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+=======
+>>>>>>> origin/dev
 use Filament\Tables\Table;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
@@ -14,7 +17,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Livewire\Attributes\On;
 use Modules\Xot\Filament\Traits\HasXotTable;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
+=======
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> origin/dev
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
@@ -23,6 +30,7 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     use InteractsWithPageFilters;
 
     /**
+<<<<<<< HEAD
      * Modello per la tabella: solo ramo {@see getModel()} (mai contesto RelationManager).
      *
      * @throws \Exception Se non viene trovata una classe modello valida
@@ -82,6 +90,8 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
+=======
+>>>>>>> origin/dev
      * Ascolta evento di aggiornamento filtri.
      */
     #[On('filterUpdate')]

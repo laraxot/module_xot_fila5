@@ -29,13 +29,17 @@ class ContextCompressor
     public static function compress(string $text, int $targetChars = 20000): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Quick return if already short
 =======
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         if (mb_strlen($text) <= $targetChars) {
             return $text;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Try model-based compression if OpenAI PHP client is available and key set
         try {
@@ -86,6 +90,8 @@ class ContextCompressor
 
         // Fallback: extractive sentence accumulator
 =======
+=======
+>>>>>>> origin/dev
         $compressed = self::tryOpenAiCompression($text, $targetChars);
         if (null !== $compressed) {
             return mb_substr($compressed, 0, $targetChars);
@@ -152,7 +158,10 @@ class ContextCompressor
 
     private static function extractiveFallback(string $text, int $targetChars): string
     {
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         $sentences = preg_split('/(?<=[.!?])\s+/u', strip_tags($text));
         $out = '';
         foreach ($sentences as $s) {
@@ -160,9 +169,13 @@ class ContextCompressor
                 continue;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 40b96bcd6 (.)
+=======
+
+>>>>>>> origin/dev
             $s = trim($s);
             if ('' === $s) {
                 continue;

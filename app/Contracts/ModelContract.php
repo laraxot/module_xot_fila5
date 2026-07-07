@@ -29,6 +29,10 @@ use Illuminate\Support\Carbon;
  * @property Pivot|null  $pivot
  * @property string      $tennant_name
  *
+<<<<<<< HEAD
+=======
+ * @method mixed     getKey()
+>>>>>>> origin/dev
  * @method string    getRouteKey()
  * @method string    getRouteKeyName()
  * @method string    getTable()
@@ -76,20 +80,55 @@ interface ModelContract
 
     /**
      * Save the model to the database.
+<<<<<<< HEAD
      */
     public function save(array $options = []): bool;
+=======
+     *
+     * @return bool
+     */
+    public function save(array $options = []);
+>>>>>>> origin/dev
 
     /**
      * Convert the model instance to an array representation.
      *
      * @return array<mixed>
      */
+<<<<<<< HEAD
     public function toArray(): array;
 
     /**
      * Create a new instance of the given model.
      */
     public function newInstance(array $attributes = [], bool $exists = false): static;
+=======
+    public function toArray();
+
+    /**
+     * Get the value of the model's primary key.
+     */
+    public function getKey();
+
+    /**
+     * Get a relationship.
+     *
+     * @param string $key
+     *
+     * @phpstan-param string $key
+     */
+    public function getRelationValue($key);
+
+    /**
+     * Create a new instance of the given model.
+     *
+     * @param array $attributes
+     * @param bool  $exists
+     *
+     * @return static
+     */
+    public function newInstance($attributes = [], $exists = false);
+>>>>>>> origin/dev
 
     /*
      * Add a basic where clause to the query.

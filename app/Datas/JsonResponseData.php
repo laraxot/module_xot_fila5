@@ -18,7 +18,10 @@ class JsonResponseData extends Data
 
     public ?int $code = null;
 
+<<<<<<< HEAD
     /** @var array<string, mixed> */
+=======
+>>>>>>> origin/dev
     public array $data = [];
 
     public int $status = 200;

@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> origin/dev
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;

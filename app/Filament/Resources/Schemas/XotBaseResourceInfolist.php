@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Schemas;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Tabs\Tab;
@@ -72,6 +73,8 @@ class XotBaseResourceInfolist
         return $tab;
     }
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 
@@ -86,5 +89,8 @@ abstract class XotBaseResourceInfolist
      * @return array<string, Component>
      */
     abstract public static function getInfolistSchema(): array;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 }

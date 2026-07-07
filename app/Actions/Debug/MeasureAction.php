@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Debug;
 
+<<<<<<< HEAD
+=======
+use Closure;
+>>>>>>> origin/dev
 use Filament\Notifications\Notification;
 
 /**

@@ -34,18 +34,37 @@ abstract class XotBasePivot extends EloquentPivot
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
      */
     public static $snakeAttributes = true;
 
     public $incrementing = true;
 
+=======
+     *
+     * @var bool
+     */
+    public static $snakeAttributes = true;
+
+    /** @var bool */
+    public $incrementing = true;
+
+    /** @var int */
+>>>>>>> origin/dev
     protected $perPage = 30;
 
     /** @var list<string> */
     protected $appends = [];
 
+<<<<<<< HEAD
     protected $primaryKey = 'id';
 
+=======
+    /** @var string */
+    protected $primaryKey = 'id';
+
+    /** @var string */
+>>>>>>> origin/dev
     protected $keyType = 'string';
 
     /**

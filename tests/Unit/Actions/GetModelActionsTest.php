@@ -91,10 +91,18 @@ it('returns snake model type from model contract instance', function (): void {
 
         public function getKey()
         {
+<<<<<<< HEAD
+=======
+            return null;
+>>>>>>> origin/dev
         }
 
         public function getRelationValue($key)
         {
+<<<<<<< HEAD
+=======
+            return null;
+>>>>>>> origin/dev
         }
 
         public function newInstance($attributes = [], $exists = false)

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Xot\Tests\Unit\Actions\Pdf;
 
 use Illuminate\Support\Facades\Facade;
@@ -10,6 +11,8 @@ use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 =======
+=======
+>>>>>>> origin/dev
 use Illuminate\Support\Facades\Facade;
 use Modules\Xot\Actions\Pdf\MakePdfSpatieTestAction;
 use PHPUnit\Framework\Assert;
@@ -17,7 +20,10 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 uses(Modules\Xot\Tests\TestCase::class);
 
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 it('builds a streamed pdf download response for the generic test view', function (): void {
     Facade::setFacadeApplication(app());
 
@@ -28,6 +34,7 @@ it('builds a streamed pdf download response for the generic test view', function
     ]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     expect($response)->toBeInstanceOf(StreamedResponse::class)
         ->and($response->headers->get('Content-Type'))->toBe('application/pdf')
         ->and($response->headers->get('content-disposition'))->toContain('attachment;')
@@ -37,4 +44,9 @@ it('builds a streamed pdf download response for the generic test view', function
     Assert::assertSame('application/pdf', $response->headers->get('Content-Type'));
     Assert::assertStringContainsString('spatie-pdf-test.pdf', (string) $response->headers->get('content-disposition'));
 >>>>>>> 40b96bcd6 (.)
+=======
+    Assert::assertInstanceOf(StreamedResponse::class, $response);
+    Assert::assertSame('application/pdf', $response->headers->get('Content-Type'));
+    Assert::assertStringContainsString('spatie-pdf-test.pdf', (string) $response->headers->get('content-disposition'));
+>>>>>>> origin/dev
 });

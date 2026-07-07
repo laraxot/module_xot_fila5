@@ -12,6 +12,10 @@ namespace Modules\Xot\Models;
  */
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> origin/dev
     protected $connection = 'xot';
 
     /** @return array<string, class-string|string> */
