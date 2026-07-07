@@ -34,7 +34,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Str;
-use RuntimeException;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
@@ -362,7 +361,7 @@ trait HasXotTable
             return $model;
         }
 
-        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
