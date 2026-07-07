@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\States;
 
 use Filament\Forms\Components\Textarea;
+use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -74,6 +75,9 @@ abstract class XotBaseState implements StateContract
         // return 'Sei sicuro di voler annullare questo appuntamento?';
     }
 
+    /**
+     * @return array<string, Component>
+     */
     public function modalFormSchema(): array
     {
         return [
@@ -185,16 +189,19 @@ abstract class XotBaseState implements StateContract
         if (! \is_object($mapping) || ! method_exists($mapping, 'toArray')) {
             return [];
         }
-        /** @var array<string, mixed> $states */
         $states = $mapping->toArray();
+        if (! \is_array($states)) {
+            return [];
+        }
 
-        $labels = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
-            static::class,
-            'states.'.SafeStringCastAction::cast($state).'.label',
-        ));
-
-        /** @var array<string, mixed> $result */
-        $result = $labels;
+        $result = [];
+        foreach (array_keys($states) as $state) {
+            $stateName = SafeStringCastAction::cast($state);
+            $result[$stateName] = static::transClass(
+                static::class,
+                'states.'.$stateName.'.label',
+            );
+        }
 
         return $result;
     }
