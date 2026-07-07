@@ -24,7 +24,7 @@ class GetViewByClassAction
      *
      * @throws \Exception Se la vista non esiste
      *
-     * @return view-string Il nome della vista
+     * @return string Il nome della vista
      */
     public function execute(string $class, string $suffix = ''): string
     {
@@ -61,8 +61,8 @@ class GetViewByClassAction
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
         ];
-        $view = Arr::first($views, static fn (string $candidate): bool => view()->exists($candidate));
-        if (! is_string($view) || '' === $view) {
+        $view = Arr::first($views, view()->exists(...));
+        if (null === $view) {
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 

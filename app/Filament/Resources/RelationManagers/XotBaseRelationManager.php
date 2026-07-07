@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
+use stdClass;
 use Webmozart\Assert\Assert;
 
 /**
@@ -279,5 +280,130 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         }
 
         return $assoc;
+    }
+
+    // */
+    /**
+     * Get table actions.
+     *
+     * CRITICO: Deve essere PUBLIC perché Filament\Tables\Concerns\InteractsWithTable
+     * richiede che questo metodo sia pubblico.
+     *
+     * @return array<string, Action>
+     */
+    public function getTableActions(): array
+    {
+        $actions = [];
+        $me = $this;
+        $actions['edit'] = EditAction::make()
+            ->iconButton()
+            ->visible(static function (?Model $record) use ($me): bool {
+                if (null === $record) {
+                    return false;
+                }
+
+                return $me->canEdit($record);
+            });
+
+        $actions['detach'] = DetachAction::make()
+            ->iconButton()
+            ->visible(static function (?Model $record) use ($me): bool {
+                if (null === $record) {
+                    return false;
+                }
+
+                return $me->canDetach($record);
+            });
+
+        return $actions;
+    }
+
+    /**
+     * Get table bulk actions.
+     *
+     * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
+     *
+     * @return array<string, BulkAction>
+     */
+    public function getTableBulkActions(): array
+    {
+        $actions = [];
+
+        $actions['delete_bulk'] = DeleteBulkAction::make()
+            ->iconButton()
+            ->visible(fn (?Model $record): bool => $this->canDeleteBulk($record));
+
+        $actions['detach_bulk'] = DetachBulkAction::make()
+            ->iconButton()
+            ->visible(fn (?Model $record): bool => $this->canDetachBulk($record));
+
+        return $actions;
+    }
+
+    /**
+     * Get table header actions.
+     *
+     * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
+     *
+     * @return array<string, Action>
+     */
+    public function getTableHeaderActions(): array
+    {
+        $actions = [];
+        $me = $this;
+        // @phpstan-ignore function.alreadyNarrowedType
+        if (method_exists($me, 'canAttach')) {
+            $actions['attach'] = AttachAction::make()
+                ->icon('heroicon-o-link')
+                ->iconButton()
+                ->tooltip(__('user::actions.attach.label'))
+                ->visible(static fn (?Model $_record): bool => $me->canAttach());
+        }
+        // @phpstan-ignore function.alreadyNarrowedType
+        if (method_exists($me, 'canCreate')) {
+            $actions['create'] = CreateAction::make()
+                ->icon('heroicon-o-plus')
+                ->iconButton()
+                ->tooltip(static::trans('actions.create.tooltip'))
+                ->visible(static fn (?Model $_record): bool => $me->canCreate());
+        }
+
+        return $actions;
+    }
+
+    public function getTableFilters(): array
+    {
+        return [];
+    }
+
+    // public function getRelationship(): \Illuminate\Database\Eloquent\Relations\Relation|\Illuminate\Database\Eloquent\Builder
+    // {
+    //    return parent::getRelationship();
+    // }
+
+    /**
+     * Determine if the bulk delete action can be performed on the given record.
+     */
+    public function canDeleteBulk(Model|\stdClass|null $record): bool
+    {
+        if ($record instanceof \stdClass) {
+            // For stdClass records (lightweight bulk operations), allow by default
+            return true;
+        }
+
+        return true;
+    }
+
+    /**
+     * Determine if the bulk detach action can be performed on the given record.
+     */
+    public function canDetachBulk(Model|\stdClass|null $record): bool
+    {
+        if ($record instanceof \stdClass) {
+            // For stdClass records (lightweight bulk operations), allow by default
+            return true;
+        }
+
+        return true;
     }
 }

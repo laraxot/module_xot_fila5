@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Dummy;
 
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Http;
 use Spatie\QueueableAction\QueueableAction;
@@ -23,6 +24,7 @@ class GetProductsArrayDummyAction
         // API
         $response = Http::get('https://dummyjson.com/products');
 
+        /* @var Response $response */
         Assert::isArray($products = $response->json());
         Assert::isArray($products['products']);
 

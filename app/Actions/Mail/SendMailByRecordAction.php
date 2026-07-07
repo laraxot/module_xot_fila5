@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -46,7 +45,7 @@ class SendMailByRecordAction
         }
 
         if (! method_exists($record, 'myLogs')) {
-            throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
+            throw new \InvalidArgumentException('Model must implement myLogs method');
         }
 
         $to = $record->email;
@@ -54,7 +53,7 @@ class SendMailByRecordAction
         $subject = $record->option('mail_oggetto');
         $bodyHtml = $record->option('mail_testo');
 
-        if (! \is_string($to)) {
+        if (! is_string($to)) {
             throw new \InvalidArgumentException('Email must be a string');
         }
         if (! \is_string($subject)) {

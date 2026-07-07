@@ -30,7 +30,6 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @property string|null               $id
  * @property string|null               $email
- * @property Carbon|null               $email_verified_at
  * @property string|null               $first_name
  * @property string|null               $last_name
  * @property string|null               $full_name
@@ -125,6 +124,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
 
     /**
      * Revoke the given role from the model.
+     *
+     * @param string|int|array|UserRole|Collection|\BackedEnum ...$role
      *
      * @return $this
      */

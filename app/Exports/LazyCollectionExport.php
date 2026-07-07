@@ -116,7 +116,7 @@ class LazyCollectionExport implements FromIterator, ShouldQueue, WithHeadings, W
             return $row->toArray();
         }
 
-        if (\is_array($row)) {
+        if (is_array($row)) {
             /* @var array<int|string, mixed> */
             return $row;
         }

@@ -78,7 +78,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                     $factory->add($this->nameLower, ['path' => $svgPath, 'prefix' => $this->nameLower]);
                 }
             } catch (\Throwable $e) {
-                // Ignore missing optional assets.
+                // Ignore - assets opzionali, modulo può funzionare senza
             }
         });
     }
@@ -93,6 +93,11 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->loadViewsFrom($viewPath, $this->nameLower);
     }
 
+    /**
+     * Registra le traduzioni del modulo.
+     *
+     * @throws \Exception
+     */
     public function registerTranslations(): void
     {
         if ('' === $this->name) {
@@ -118,7 +123,12 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         try {
             Blade::anonymousComponentPath($componentViewPath);
         } catch (\Exception $e) {
-            // Ignore invalid or unavailable anonymous component paths.
+            // Ignore missing component view path
+            dddx([
+                'name' => $this->name,
+                'componentViewPath' => $componentViewPath,
+                'e' => $e->getMessage(),
+            ]);
         }
 
         $componentClassPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'component-class');
@@ -189,8 +199,9 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 $filename = pathinfo($file, PATHINFO_FILENAME);
                 Config::set($this->nameLower.'.'.$filename, require $file);
             }
-        } catch (\Throwable $e) {
-            // Ignore config registration failures for optional module config.
+        } catch (\Exception $e) {
+            // Ignore missing configuration
+            return;
         }
     }
 }

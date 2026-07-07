@@ -175,6 +175,21 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, /* Ha
         return static::transFunc(__FUNCTION__);
     }
 
+    public function getWizardSubmitAction(): Action
+    {
+        /** @var view-string $submit_view */
+        $submit_view = 'pub_theme::filament.wizard.submit-button';
+
+        if (! view()->exists($submit_view)) {
+            throw new \Exception("View {$submit_view} does not exist");
+        }
+
+        return Action::make('submit')
+            ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+            ->submit('save')
+            ->view((string) $submit_view);
+    }
+
     /**
      * Azioni form opzionali per viste che chiamano `$this->getFormActions()` (es. layout custom, footer azioni).
      * I widget che non le usano restano con array vuoto.
@@ -210,7 +225,8 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, /* Ha
                 $this->view = $view;
             }
         } catch (\Exception $e) {
-            if (! $hadCustomViewRequested) {
+            /* @phpstan-ignore identical.alwaysTrue */
+            if ($this->view === $defaultView) {
                 throw $e;
             }
         }

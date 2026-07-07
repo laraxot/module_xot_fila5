@@ -272,9 +272,12 @@ class FilterBuilder
             ->trueLabel('Only trashed')
             ->falseLabel('Without trashed')
             ->queries(
-                true: static fn (Builder $query) => $query->onlyTrashed(), // @phpstan-ignore method.notFound
-                false: static fn (Builder $query) => $query->withoutTrashed(), // @phpstan-ignore method.notFound
-                blank: static fn (Builder $query) => $query->withTrashed(), // @phpstan-ignore method.notFound
+                /* @phpstan-ignore-next-line */
+                true: fn (Builder $query) => $query->onlyTrashed(),
+                /* @phpstan-ignore-next-line */
+                false: fn (Builder $query) => $query->withoutTrashed(),
+                /* @phpstan-ignore-next-line */
+                blank: fn (Builder $query) => $query->withTrashed(),
             );
     }
 }

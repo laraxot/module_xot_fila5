@@ -61,7 +61,7 @@ class ExportXlsStreamByLazyCollection
                         continue;
                     }
                     // Convertiamo tutti i valori in stringhe o null
-                    $safeRowData = array_map(static function ($item) {
+                    $safeRowData = array_map(function ($item) {
                         if (null === $item) {
                             return '';
                         }
@@ -127,9 +127,9 @@ class ExportXlsStreamByLazyCollection
             });
         }
 
-        /** @var list<string> $result */
-        $result = array_values($headings->map(strval(...))->toArray());
+        $headers = array_values($headings->map(strval(...))->toArray());
 
-        return $result;
+        /* @var array<string> $headers */
+        return $headers;
     }
 }

@@ -44,6 +44,7 @@ test('artisan service act method handles migrate command', function (): void {
 
     expect($result)->toBeString();
     /* @var string $result */
+    // @phpstan-ignore-next-line - Pest expectation method
     expect(str_contains($result, 'Migration completed'))->toBeTrue();
 });
 
@@ -59,6 +60,7 @@ test('artisan service act method handles module parameter', function (): void {
 
     expect($result)->toBeString();
     /* @var string $result */
+    // @phpstan-ignore-next-line - Pest expectation method
     expect(str_contains($result, 'Module migration'))->toBeTrue();
 });
 
@@ -72,5 +74,6 @@ test('artisan service handles non-string module parameter', function (): void {
 
     expect($result)->toBeString();
     /* @var string $result */
+    // @phpstan-ignore-next-line - Pest expectation method
     expect(str_contains($result, 'Migration'))->toBeTrue();
 });
