@@ -129,7 +129,7 @@ class NotifyServiceProvider extends XotBaseServiceProvider
 - **Gestione errori e logging**: loggare i casi di fallback e le eccezioni non bloccanti.
 - **Pattern di override**: ogni override deve chiamare sempre `parent::method()`. Vietato cambiare la visibilità delle proprietà/metodi ereditati.
 - **Testabilità**: usare metodi protected per facilitare il mocking nei test.
-- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](registerbladeicons.md), con fallback e validazione dei path.
+- **Registrazione icone Blade**: seguire il pattern documentato in [registerBladeIcons.md](./registerBladeIcons.md), con fallback e validazione dei path.
 
 ### Consigli di miglioramento
 - Centralizzare la gestione dei path (views, lang, svg, ecc.) in un helper o trait.
@@ -161,7 +161,7 @@ public function boot(): void
 
 ### Collegamenti
 - [Best practices per i provider](./service-provider-best-practices.md)
-- [Registrazione icone Blade](registerbladeicons.md)
+- [Registrazione icone Blade](./registerBladeIcons.md)
 
 ## Gestione dei Path delle Traduzioni
 
@@ -195,7 +195,7 @@ $this->loadTranslationsFrom($langPath, $this->nameLower);
 Applicare la stessa regola per la registrazione delle traduzioni JSON.
 
 **Collegamento:**
-Vedi anche [registerBladeIcons.md](registerbladeicons.md) per la gestione centralizzata dei path.
+Vedi anche [registerBladeIcons.md](./registerBladeIcons.md) per la gestione centralizzata dei path.
 
 ## Console Commands: Religione, Politica, Filosofia, Zen
 

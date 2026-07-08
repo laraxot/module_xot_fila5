@@ -69,8 +69,8 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-// QuaerisService.php
-class QuaerisService
+// <nome progetto>Service.php
+class <nome progetto>Service
 {
     use SingletonTrait;
 
@@ -543,8 +543,8 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-// QuaerisService.php
-class QuaerisService
+// <nome progetto>Service.php
+class <nome progetto>Service
 {
     use SingletonTrait;
 
@@ -613,7 +613,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-- [Architettura Moduli](architecture.md)
+- [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

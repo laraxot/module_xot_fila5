@@ -1,15 +1,24 @@
+# Xot Module - Roadmap, Issues & Optimization
+
+**Modulo**: Xot (Core Framework Base)
+**Data Analisi**: 1 Ottobre 2025
+**Maintainer**: Laraxot Core Team
+**Status PHPStan**: ⚠️ 9 errori (Level 9)
+
 ---
-module: Xot
-topic: legacy-roadmap-and-issues
-canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
-updated: 2026-07-15
----
 
-# Roadmap and issues (redirect)
+## 📊 STATO ATTUALE
 
-Documentazione canonica spostata:
+### Completezza Funzionale: 95%
 
-See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+| Area | Completezza | Note |
+|------|-------------|------|
+| Base Classes | 100% | XotBaseResource, XotBasePage, XotBaseWidget |
+| Service Providers | 100% | XotBaseServiceProvider completo |
+| Traits | 95% | HasXotTable, Updater, ecc. |
+| Actions Framework | 90% | Completo, manca documentazione |
+| Contracts | 90% | Manca isSuperAdmin() in ProfileContract |
+| Type Safety | 98% | 9 errori PHPStan da risolvere |
 
 ---
 
