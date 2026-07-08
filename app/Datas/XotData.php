@@ -86,7 +86,7 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
-            $data = TenantService::getConfig('xra');
+            $data = app(GetTenantConfigArrayAction::class)->execute('xra');
 
             self::$instance = self::from($data);
         }

@@ -36,12 +36,7 @@
 - Multi-tenant aware models
 - Social authentication integration
 
-#### 3. **healthcare_app Module - Business Core**
-#### 3. **ExternalProject Module - Business Core**
-=======
-#### 3. **ModuloEsempio Module - Business Core**
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
+#### 3. **Quaeris Module - Business Core**
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -233,12 +228,7 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
-**Dependencies**: Xot, healthcare_app
-**Dependencies**: Xot, ExternalProject
-=======
-**Dependencies**: Xot, ModuloEsempio
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
+**Dependencies**: Xot, Quaeris
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -286,12 +276,7 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
-├── healthcare_app (Business Core)
-├── ExternalProject (Business Core)
-=======
-├── ModuloEsempio (Business Core)
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
+├── Quaeris (Business Core)
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -400,12 +385,7 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
-- **healthcare_app**: Missing module.json description
-- **ExternalProject**: Missing module.json description
-=======
-- **ModuloEsempio**: Missing module.json description
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
+- **Quaeris**: Missing module.json description
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -416,12 +396,7 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
-- **healthcare_app**: Survey processing and reporting
-- **ExternalProject**: Survey processing and reporting
-=======
-- **ModuloEsempio**: Survey processing and reporting
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_mjdk5z
+- **Quaeris**: Survey processing and reporting
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 
@@ -452,6 +427,6 @@ public function register(): void
 
 ---
 
-**Analysis Date**: [DATE]
+**Analysis Date**: 2025-11-17
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
