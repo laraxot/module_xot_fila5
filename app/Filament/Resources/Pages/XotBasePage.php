@@ -50,7 +50,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
-        if ($this->view !== 'filament-panels::pages.page') {
+        if ('filament-panels::pages.page' !== $this->view) {
             return $this->view;
         }
 

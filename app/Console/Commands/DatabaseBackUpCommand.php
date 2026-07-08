@@ -11,10 +11,9 @@ namespace Modules\Xot\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
+use Webmozart\Assert\Assert;
 
 use function Safe\exec;
-
-use Webmozart\Assert\Assert;
 
 class DatabaseBackUpCommand extends Command
 {
@@ -33,18 +32,14 @@ class DatabaseBackUpCommand extends Command
     protected $description = 'Dump your Mysql database to a file';
 
     /**
-     * Create a new command instance.
-     */
-
-    /**
      * Execute the console command.
      */
     public function handle(): void
     {
         $filename = 'backup-'.Carbon::now()->format('Y-m-d').'.gz';
-        $backup_path = storage_path('app/backup/'.$filename);
+        $backupPath = storage_path('app/backup/'.$filename);
         Assert::string(
-            $backup_path = Str::replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $backup_path),
+            $backupPath = Str::replace(['/', '\\'], [\DIRECTORY_SEPARATOR, \DIRECTORY_SEPARATOR], $backupPath),
             'wip',
         );
         Assert::string($user = config('database.connections.mysql.username'));
@@ -61,7 +56,7 @@ class DatabaseBackUpCommand extends Command
             ' '.
             $database.
             '  | gzip > '.
-            $backup_path;
+            $backupPath;
 
         $returnVar = null;
         $output = null;
