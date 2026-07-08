@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services;
 
+use OpenAI\OpenAI;
+
 use function Safe\preg_split;
 
 /**
@@ -46,7 +48,7 @@ class ContextCompressor
                 return null;
             }
 
-            $client = \OpenAI\OpenAI::client($apiKey);
+            $client = OpenAI::client($apiKey);
             if (! is_object($client)) {
                 return null;
             }
