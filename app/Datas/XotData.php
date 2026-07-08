@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
