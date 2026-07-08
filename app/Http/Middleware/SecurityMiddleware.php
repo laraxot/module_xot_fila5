@@ -404,6 +404,8 @@ class SecurityMiddleware
 
     /**
      * Valida input array.
+     *
+     * @param array<mixed> $value
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -428,6 +430,8 @@ class SecurityMiddleware
 
     /**
      * Ottieni profondità array.
+     *
+     * @param array<mixed> $array
      */
     private function getArrayDepth(array $array): int
     {
