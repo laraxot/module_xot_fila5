@@ -1,0 +1,367 @@
+{
+  "version": "0.2.2",
+  "timestamp": "2026-07-09T18:24:02.787Z",
+  "project": {
+    "name": "Xot",
+    "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot",
+    "languages": {
+      "Markdown": 4031,
+      "JSON": 15,
+      "YAML": 1,
+      "PHP": 1521,
+      "XML": 1,
+      "JavaScript": 10,
+      "Shell": 7,
+      "CSS": 2,
+      "SCSS": 2
+    },
+    "frameworks": [
+      "TailwindCSS"
+    ],
+    "totalFiles": 5590,
+    "totalLines": 648056,
+    "hasTests": true,
+    "hasDependencyFile": true,
+    "dependencyFile": "package.json",
+    "dependencies": {
+      "@tailwindcss/forms": "^0.5.7",
+      "@tailwindcss/typography": "^0.5.13",
+      "autoprefixer": "^10.4.19",
+      "axios": "^1.17.0",
+      "cross-env": "^5.1.4",
+      "laravel-mix": "^6.0.49",
+      "laravel-mix-merge-manifest": "^0.1.2",
+      "laravel-vite-plugin": "^1.2.0",
+      "lodash": "^4.17.21",
+      "postcss": "^8.4.38",
+      "postcss-nesting": "^12.1.4",
+      "tailwindcss": "^3.4.3",
+      "tippy.js": "^6.3.7",
+      "vite": "^6.4.3"
+    },
+    "testFrameworks": [],
+    "packageManager": "npm"
+  },
+  "overallScore": 67,
+  "overallGrade": "C",
+  "categories": [
+    {
+      "category": "security",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "quality",
+      "score": 15,
+      "grade": "F",
+      "findings": [
+        {
+          "id": "QUA-001",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Providers/FilamentOptimizationServiceProvider.php:102 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Providers/FilamentOptimizationServiceProvider.php",
+          "line": 102,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-002",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Actions/Export/ExportXlsStreamByLazyCollection.php:65 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Actions/Export/ExportXlsStreamByLazyCollection.php",
+          "line": 65,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-003",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Actions/File/DownloadZipByPathsDiskAction.php:41 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Actions/File/DownloadZipByPathsDiskAction.php",
+          "line": 41,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-004",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Actions/Model/GetAllModelsByModuleNameAction.php:60 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Actions/Model/GetAllModelsByModuleNameAction.php",
+          "line": 60,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-005",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Console/Commands/AddStrictTypesDeclarationCommand.php:55 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Console/Commands/AddStrictTypesDeclarationCommand.php",
+          "line": 55,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-006",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Console/Commands/OptimizeFilamentMemoryCommand.php:146 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Console/Commands/OptimizeFilamentMemoryCommand.php",
+          "line": 146,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-007",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Console/Commands/SearchTextInDbCommand.php:95 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Console/Commands/SearchTextInDbCommand.php",
+          "line": 95,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-008",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Filament/Traits/HasXotTable.php:156 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Filament/Traits/HasXotTable.php",
+          "line": 156,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-009",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Filament/Widgets/XotBaseWidget.php:123 — nesting depth of 7. This hurts readability and testability.",
+          "file": "app/Filament/Widgets/XotBaseWidget.php",
+          "line": 123,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-010",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Filament/Actions/Header/ExportXlsAction.php:52 — nesting depth of 7. This hurts readability and testability.",
+          "file": "app/Filament/Actions/Header/ExportXlsAction.php",
+          "line": 52,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-011",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Filament/Actions/Header/ExportXlsLazyAction.php:53 — nesting depth of 7. This hurts readability and testability.",
+          "file": "app/Filament/Actions/Header/ExportXlsLazyAction.php",
+          "line": 53,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-012",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php:49 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php",
+          "line": 49,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        },
+        {
+          "id": "QUA-013",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Deep Nesting Detected",
+          "description": "app/Filament/Actions/Table/ExportXlsTableAction.php:57 — nesting depth of 6. This hurts readability and testability.",
+          "file": "app/Filament/Actions/Table/ExportXlsTableAction.php",
+          "line": 57,
+          "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+        }
+      ],
+      "summary": ""
+    },
+    {
+      "category": "performance",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "architecture",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "dependencies",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "testing",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    },
+    {
+      "category": "documentation",
+      "score": 80,
+      "grade": "B",
+      "findings": [],
+      "summary": ""
+    }
+  ],
+  "allFindings": [
+    {
+      "id": "QUA-001",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Providers/FilamentOptimizationServiceProvider.php:102 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Providers/FilamentOptimizationServiceProvider.php",
+      "line": 102,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-002",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Actions/Export/ExportXlsStreamByLazyCollection.php:65 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Actions/Export/ExportXlsStreamByLazyCollection.php",
+      "line": 65,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-003",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Actions/File/DownloadZipByPathsDiskAction.php:41 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Actions/File/DownloadZipByPathsDiskAction.php",
+      "line": 41,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-004",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Actions/Model/GetAllModelsByModuleNameAction.php:60 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Actions/Model/GetAllModelsByModuleNameAction.php",
+      "line": 60,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-005",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Console/Commands/AddStrictTypesDeclarationCommand.php:55 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Console/Commands/AddStrictTypesDeclarationCommand.php",
+      "line": 55,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-006",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Console/Commands/OptimizeFilamentMemoryCommand.php:146 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Console/Commands/OptimizeFilamentMemoryCommand.php",
+      "line": 146,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-007",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Console/Commands/SearchTextInDbCommand.php:95 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Console/Commands/SearchTextInDbCommand.php",
+      "line": 95,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-008",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Filament/Traits/HasXotTable.php:156 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Filament/Traits/HasXotTable.php",
+      "line": 156,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-009",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Filament/Widgets/XotBaseWidget.php:123 — nesting depth of 7. This hurts readability and testability.",
+      "file": "app/Filament/Widgets/XotBaseWidget.php",
+      "line": 123,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-010",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Filament/Actions/Header/ExportXlsAction.php:52 — nesting depth of 7. This hurts readability and testability.",
+      "file": "app/Filament/Actions/Header/ExportXlsAction.php",
+      "line": 52,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-011",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Filament/Actions/Header/ExportXlsLazyAction.php:53 — nesting depth of 7. This hurts readability and testability.",
+      "file": "app/Filament/Actions/Header/ExportXlsLazyAction.php",
+      "line": 53,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-012",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php:49 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php",
+      "line": 49,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    },
+    {
+      "id": "QUA-013",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Deep Nesting Detected",
+      "description": "app/Filament/Actions/Table/ExportXlsTableAction.php:57 — nesting depth of 6. This hurts readability and testability.",
+      "file": "app/Filament/Actions/Table/ExportXlsTableAction.php",
+      "line": 57,
+      "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
+    }
+  ],
+  "criticalCount": 0,
+  "highCount": 0,
+  "mediumCount": 13,
+  "lowCount": 0,
+  "aiPowered": false,
+  "durationMs": 1158
+}

@@ -17,9 +17,61 @@ use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
-    use HasXotTable;
+    use HasXotTable {
+        getGridTableColumns as private xotGetGridTableColumns;
+        getTablePaginated as private xotGetTablePaginated;
+        getSearchableColumns as private xotSearchableColumns;
+        getHeaderActions as private xotGetHeaderActions;
+    }
     use InteractsWithPageFilters;
     use TransTrait;
+
+    /**
+     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     */
+    public function getGridTableColumns(): array
+    {
+        return $this->xotGetGridTableColumns();
+    }
+
+    /**
+     * @return bool|array<int|string>
+     */
+    protected function getTablePaginated(): bool|array
+    {
+        $paginated = $this->xotGetTablePaginated();
+
+        if (is_bool($paginated)) {
+            return $paginated;
+        }
+
+        /** @var array<int|string> $options */
+        $options = $paginated;
+
+        return $options;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function getSearchableColumns(): array
+    {
+        /** @var array<string> $columns */
+        $columns = $this->xotSearchableColumns();
+
+        return $columns;
+    }
+
+    /**
+     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     */
+    protected function getHeaderActions(): array
+    {
+        /** @var array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup> $actions */
+        $actions = $this->xotGetHeaderActions();
+
+        return $actions;
+    }
 
     /**
      * Ascolta evento di aggiornamento filtri.

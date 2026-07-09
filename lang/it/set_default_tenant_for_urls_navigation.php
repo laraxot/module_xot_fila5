@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types=1);
+
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: split from set_default_tenant_for_urls.php for maintainability (<500 LOC).
+// Canon: Modules/Xot/docs/wiki/concepts/claude-audit-static.md
+// File: lang/it/set_default_tenant_for_urls_navigation.php
+return array (
+  'navigation' => 
+  array (
+    'name' => 'Set Default Tenant For Urls',
+    'plural' => 'Set Default Tenant For Urls',
+    'group' => 
+    array (
+      'name' => 'General',
+      'description' => 'General Settings',
+    ),
+    'label' => 'Set Default Tenant For Urls',
+    'sort' => 1,
+    'icon' => 'heroicon-o-collection',
+  ),
+);

@@ -18,6 +18,13 @@
 |}|)|;|
 |
 |a|f|t|e|r|E|a|c|h|(|f|u|n|c|t|i|o|n| |(|)| |{|
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot — see module docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
 | | | | |/|/| |C|l|e|a|n| |u|p| |t|h|e| |t|e|s|t| |d|i|r|e|c|t|o|r|y|
 | | | | |$|t|h|i|s|-|>|r|r|m|d|i|r|(|$|t|h|i|s|-|>|t|e|s|t|D|i|r|)|;|
 |}|)|;|

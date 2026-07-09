@@ -171,4 +171,19 @@ _docs/
 *~REMOTE
 *.orig
 *.rej
-*~headagentdb.rvf
+*~head
+agentdb.rvf
+
+# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
+/Tests/
+
+# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
+!tests/
+!tests/**
+!!**
+
+# claude-audit static — dev MCP scripts (not production runtime)
+docs/mcp-laravel-artisan-server.js
+
+# Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
+Services/

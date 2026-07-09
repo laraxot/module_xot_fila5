@@ -25,6 +25,9 @@ class ListModules extends XotBaseListRecords
 
     protected static string $resource = ModuleResource::class;
 
+    /**
+     * @return array<int, Stack>
+     */
     #[\Override]
     public function getGridTableColumns(): array
     {
@@ -49,7 +52,7 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
-     * @return array<BaseFilter>
+     * @return array<string, \Filament\Tables\Filters\BaseFilter>
      */
     #[\Override]
     public function getTableFilters(): array
@@ -68,7 +71,7 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
-     * @return array<Action|ActionGroup>
+     * @return array<int|string, Action|ActionGroup>
      */
     #[\Override]
     public function getTableActions(): array

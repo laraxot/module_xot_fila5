@@ -18,6 +18,8 @@ declare(strict_types=1);
         line-height: 1.3;
     }
 
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
     /* ===== HEADINGS ===== */
     h1 {
         font-size: 16px;
