@@ -7,9 +7,9 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/lang/en/exceptions.php
 return [
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
     /*
     |--------------------------------------------------------------------------
     | Exception Language Lines
