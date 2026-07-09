@@ -8,16 +8,15 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/smsPurchaseCredit.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'REf#',
-    'title' => 'Package Name',
-    'price' => 'Package Price',
-    'credits' => 'Package Credits',
-    'status' => 'Status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'Sms Purchase Credit Management',
-  'active' => 'Active Sms Purchase Credit',
-);
+return [
+    'table' => [
+        'id' => 'REf#',
+        'title' => 'Package Name',
+        'price' => 'Package Price',
+        'credits' => 'Package Credits',
+        'status' => 'Status',
+        'created_at' => 'Created At',
+    ],
+    'management' => 'Sms Purchase Credit Management',
+    'active' => 'Active Sms Purchase Credit',
+];

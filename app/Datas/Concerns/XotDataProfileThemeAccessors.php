@@ -8,13 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use Modules\User\Contracts\TeamContract;
-use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
+
+use Webmozart\Assert\Assert;
 
 trait XotDataProfileThemeAccessors
 {

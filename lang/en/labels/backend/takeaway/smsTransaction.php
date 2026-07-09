@@ -8,40 +8,35 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/smsTransaction.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'tabs' => 
-  array (
-    'titles' => 
-    array (
-      'overview' => 'Overview',
-      'history' => 'History',
-    ),
-    'content' => 
-    array (
-      'overview' => 
-      array (
+return [
+    'tabs' => [
+        'titles' => [
+            'overview' => 'Overview',
+            'history' => 'History',
+        ],
+        'content' => [
+            'overview' => [
+                'merchant_id' => 'Restaurant Name',
+                'credits' => 'Credits',
+                'status' => 'Status',
+                'created_at' => 'Created At',
+                'desc' => 'Description',
+                'last_updated' => 'Last Updated',
+            ],
+        ],
+    ],
+    'table' => [
+        'id' => 'Id',
         'merchant_id' => 'Restaurant Name',
+        'sms_package_id' => 'Package Name',
         'credits' => 'Credits',
         'status' => 'Status',
+        'paid_by' => 'Paid By',
         'created_at' => 'Created At',
-        'desc' => 'Description',
-        'last_updated' => 'Last Updated',
-      ),
-    ),
-  ),
-  'table' => 
-  array (
-    'id' => 'Id',
-    'merchant_id' => 'Restaurant Name',
-    'sms_package_id' => 'Package Name',
-    'credits' => 'Credits',
-    'status' => 'Status',
-    'paid_by' => 'Paid By',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'Sms Transaction Management',
-  'active' => 'Active Sms Transaction',
-  'create' => 'Create Sms Transaction',
-  'edit' => 'Edit Sms Transaction',
-  'view' => 'View Sms Transaction',
-);
+    ],
+    'management' => 'Sms Transaction Management',
+    'active' => 'Active Sms Transaction',
+    'create' => 'Create Sms Transaction',
+    'edit' => 'Edit Sms Transaction',
+    'view' => 'View Sms Transaction',
+];

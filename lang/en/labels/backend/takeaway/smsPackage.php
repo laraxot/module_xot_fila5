@@ -8,44 +8,39 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/smsPackage.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'tabs' => 
-  array (
-    'content' => 
-    array (
-      'overview' => 
-      array (
+return [
+    'tabs' => [
+        'content' => [
+            'overview' => [
+                'title' => 'Title',
+                'desc' => 'Description',
+                'price' => 'Price',
+                'dis_price' => 'Discount',
+                'credit_limit' => 'Credit Limit',
+                'status' => 'Status',
+                'created_at' => 'Created At',
+                'last_updated' => 'Last Updated',
+                'type' => 'Type',
+            ],
+        ],
+        'titles' => [
+            'overview' => 'Overview',
+            'history' => 'History',
+        ],
+    ],
+    'table' => [
+        'id' => 'Id',
         'title' => 'Title',
-        'desc' => 'Description',
+        'description' => 'Description',
         'price' => 'Price',
         'dis_price' => 'Discount',
         'credit_limit' => 'Credit Limit',
         'status' => 'Status',
         'created_at' => 'Created At',
-        'last_updated' => 'Last Updated',
-        'type' => 'Type',
-      ),
-    ),
-    'titles' => 
-    array (
-      'overview' => 'Overview',
-      'history' => 'History',
-    ),
-  ),
-  'table' => 
-  array (
-    'id' => 'Id',
-    'title' => 'Title',
-    'description' => 'Description',
-    'price' => 'Price',
-    'dis_price' => 'Discount',
-    'credit_limit' => 'Credit Limit',
-    'status' => 'Status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'SmsPackage Management',
-  'active' => 'Active SmsPackage',
-  'create' => 'Create SmsPackage',
-  'edit' => 'Edit SmsPackage',
-  'view' => 'View SmsPackage',
-);
+    ],
+    'management' => 'SmsPackage Management',
+    'active' => 'Active SmsPackage',
+    'create' => 'Create SmsPackage',
+    'edit' => 'Edit SmsPackage',
+    'view' => 'View SmsPackage',
+];

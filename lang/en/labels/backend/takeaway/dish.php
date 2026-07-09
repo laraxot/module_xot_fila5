@@ -8,26 +8,23 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/dish.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'Id',
-    'name' => 'Name',
-    'status' => 'Status',
-    'icon' => 'Icon',
-    'created_at' => 'Created At',
-  ),
-  'tabs' => 
-  array (
-    'titles' => 
-    array (
-      'overview' => 'Overview',
-      'history' => 'History',
-    ),
-  ),
-  'management' => 'Dish Management',
-  'view' => 'View Dish',
-  'create' => 'Create Dish',
-  'edit' => 'Edit Dish',
-  'active' => 'Active Dish',
-);
+return [
+    'table' => [
+        'id' => 'Id',
+        'name' => 'Name',
+        'status' => 'Status',
+        'icon' => 'Icon',
+        'created_at' => 'Created At',
+    ],
+    'tabs' => [
+        'titles' => [
+            'overview' => 'Overview',
+            'history' => 'History',
+        ],
+    ],
+    'management' => 'Dish Management',
+    'view' => 'View Dish',
+    'create' => 'Create Dish',
+    'edit' => 'Edit Dish',
+    'active' => 'Active Dish',
+];

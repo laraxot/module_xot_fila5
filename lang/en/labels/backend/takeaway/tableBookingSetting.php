@@ -8,9 +8,9 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/tableBookingSetting.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'management' => 'Table Booking Setting Management',
-  'edit' => 'Edit Table Booking Setting',
-  'maximum_tables_to_book_a_day' => 'Maximum Tables To Book A Day',
-  'monday' => 'Monday',
-);
+return [
+    'management' => 'Table Booking Setting Management',
+    'edit' => 'Edit Table Booking Setting',
+    'maximum_tables_to_book_a_day' => 'Maximum Tables To Book A Day',
+    'monday' => 'Monday',
+];

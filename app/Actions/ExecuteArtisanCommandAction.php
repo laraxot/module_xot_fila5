@@ -106,12 +106,12 @@ class ExecuteArtisanCommandAction
      */
     private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
     {
-        if ($data === '') {
+        if ('' === $data) {
             return;
         }
 
         $formatted = trim($data);
-        if ($formatted === '') {
+        if ('' === $formatted) {
             return;
         }
 

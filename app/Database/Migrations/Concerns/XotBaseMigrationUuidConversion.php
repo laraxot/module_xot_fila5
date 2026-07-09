@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-use function Safe\copy;
-
 trait XotBaseMigrationUuidConversion
 {
     /**

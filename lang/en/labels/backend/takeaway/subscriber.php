@@ -8,17 +8,16 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/subscriber.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'Id',
-    'subscribe_email' => 'Subscriber Email',
-    'subscribe_ip' => 'Subscriber Ip',
-    'created_at' => 'Created At',
-    'status' => 'Status',
-    'customer_id' => 'Customer Id',
-    'total_price' => 'Total Price',
-  ),
-  'management' => 'Subscriber Management',
-  'active' => 'Active Subscriber',
-);
+return [
+    'table' => [
+        'id' => 'Id',
+        'subscribe_email' => 'Subscriber Email',
+        'subscribe_ip' => 'Subscriber Ip',
+        'created_at' => 'Created At',
+        'status' => 'Status',
+        'customer_id' => 'Customer Id',
+        'total_price' => 'Total Price',
+    ],
+    'management' => 'Subscriber Management',
+    'active' => 'Active Subscriber',
+];

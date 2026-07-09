@@ -8,7 +8,7 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/smsAlertsetting.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'management' => 'Sms Alert Setting Management',
-  'active' => 'Sms Alert Setting',
-);
+return [
+    'management' => 'Sms Alert Setting Management',
+    'active' => 'Sms Alert Setting',
+];

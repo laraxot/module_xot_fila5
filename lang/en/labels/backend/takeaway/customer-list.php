@@ -8,14 +8,13 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/customer-list.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'ID',
-    'customer_name' => 'Customer Name',
-    'status' => 'Status',
-    'created_date' => 'Created At',
-  ),
-  'active' => 'Customer List',
-  'management' => 'Customer Management',
-);
+return [
+    'table' => [
+        'id' => 'ID',
+        'customer_name' => 'Customer Name',
+        'status' => 'Status',
+        'created_date' => 'Created At',
+    ],
+    'active' => 'Customer List',
+    'management' => 'Customer Management',
+];

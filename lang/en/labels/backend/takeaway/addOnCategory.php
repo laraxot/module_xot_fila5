@@ -8,38 +8,33 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/addOnCategory.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'ID',
-    'addon_cat_item_name' => 'AddOn Category Name',
-    'addon_cat_desc' => 'AddOn Category Description',
-    'status' => 'Status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'AddOn Category Managment',
-  'create' => 'Create AddOn Category ',
-  'edit' => 'Edit AddOn Category',
-  'active' => 'Active AddOn Category',
-  'view' => 'View',
-  'tabs' => 
-  array (
-    'content' => 
-    array (
-      'overview' => 
-      array (
-        'name' => 'Name',
-        'desc' => 'Description',
+return [
+    'table' => [
+        'id' => 'ID',
+        'addon_cat_item_name' => 'AddOn Category Name',
+        'addon_cat_desc' => 'AddOn Category Description',
         'status' => 'Status',
         'created_at' => 'Created At',
-        'last_updated' => 'Last Updated',
-        'deleted_at' => 'Deleted At',
-      ),
-    ),
-    'titles' => 
-    array (
-      'overview' => 'Overview',
-      'history' => 'History',
-    ),
-  ),
-);
+    ],
+    'management' => 'AddOn Category Managment',
+    'create' => 'Create AddOn Category ',
+    'edit' => 'Edit AddOn Category',
+    'active' => 'Active AddOn Category',
+    'view' => 'View',
+    'tabs' => [
+        'content' => [
+            'overview' => [
+                'name' => 'Name',
+                'desc' => 'Description',
+                'status' => 'Status',
+                'created_at' => 'Created At',
+                'last_updated' => 'Last Updated',
+                'deleted_at' => 'Deleted At',
+            ],
+        ],
+        'titles' => [
+            'overview' => 'Overview',
+            'history' => 'History',
+        ],
+    ],
+];

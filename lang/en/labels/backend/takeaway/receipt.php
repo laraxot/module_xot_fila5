@@ -8,7 +8,7 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/receipt.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'management' => 'Receipt Management',
-  'active' => 'Active Receipt',
-);
+return [
+    'management' => 'Receipt Management',
+    'active' => 'Active Receipt',
+];

@@ -8,20 +8,19 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/commission.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'Id',
-    'payment_method' => 'Payment Method',
-    'total_price' => 'Total Price',
-    'comission_amount' => 'Commission Amount',
-    'commission_price' => 'Commission Price',
-    'net_amount' => 'Net Amount',
-    'date' => 'Date',
-    'delivery_date' => 'Delivery Date',
-  ),
-  'management' => 'Commission Management',
-  'active' => 'Active Commission',
-  'start_date' => 'Start Date',
-  'end_date' => 'End Date',
-);
+return [
+    'table' => [
+        'id' => 'Id',
+        'payment_method' => 'Payment Method',
+        'total_price' => 'Total Price',
+        'comission_amount' => 'Commission Amount',
+        'commission_price' => 'Commission Price',
+        'net_amount' => 'Net Amount',
+        'date' => 'Date',
+        'delivery_date' => 'Delivery Date',
+    ],
+    'management' => 'Commission Management',
+    'active' => 'Active Commission',
+    'start_date' => 'Start Date',
+    'end_date' => 'End Date',
+];

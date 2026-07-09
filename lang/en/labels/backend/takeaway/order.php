@@ -8,13 +8,12 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/order.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'Id',
-    'created_at' => 'Created At',
-    'status' => 'Status',
-    'customer_name' => 'Customer Name',
-    'total_price' => 'Total Price',
-  ),
-);
+return [
+    'table' => [
+        'id' => 'Id',
+        'created_at' => 'Created At',
+        'status' => 'Status',
+        'customer_name' => 'Customer Name',
+        'total_price' => 'Total Price',
+    ],
+];

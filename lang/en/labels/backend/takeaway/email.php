@@ -8,7 +8,7 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/email.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'active' => 'Active Email',
-  'management' => 'Email Management',
-);
+return [
+    'active' => 'Active Email',
+    'management' => 'Email Management',
+];
