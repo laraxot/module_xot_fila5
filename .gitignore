@@ -185,3 +185,4 @@ docs/mcp-laravel-artisan-server.js
 # Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
 Services/
 tests/AuditCoverage
+docs/legacy
