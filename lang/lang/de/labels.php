@@ -7,10 +7,10 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/lang/de/labels.php
 return [
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
     'general' => [
         'all' => 'Alle',
         'yes' => 'Ja',
