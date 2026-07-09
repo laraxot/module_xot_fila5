@@ -47,19 +47,11 @@ bash bashscripts/tools/run-claude-audit-all-modules-static.sh
 
 ## Moduli a 80/0 (perfezione static, luglio 2026)
 
-**16/18:** Activity, AI, Blog, Cms, Comment, Fixcity, Gdpr, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User.
+**18/18:** Activity, AI, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User, Xot.
 
-**In corso (quality nesting / large file):** Geo (~22 finding), Xot (~14 finding) — split trait/file + early-return refactor.
+Verifica swarm: `bash bashscripts/tools/swarm-claude-audit-modules.sh`
 
-Doc modulo: `Modules/{Fixcity,UI}/docs/wiki/concepts/claude-audit-static.md` (lang split, trait ViewModel, blade pricing partials, Playwright env).
-
-## Moduli in corso (finding residui)
-
-| Modulo | Score | Finding | Azione |
-|--------|-------|---------|--------|
-| Geo | 64 | 27 | split/refactor JS mappa (`map-lit.js`, nesting) |
-| User | 65 | 176 | `BaseUser`, `HasTeams`, `TestCase`, test grandi |
-| Xot | 64 | 28 | `HasXotTable`, `ArrayService`, nesting console |
+**90–100** richiede `ANTHROPIC_API_KEY` e `npx claude-audit Modules/<Modulo>/` (senza `--static`).
 
 ## Blade doc-ratio
 

@@ -11,7 +11,6 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
-describe('Base Morph Pivot Business Logic', function (): void {
     test('it extends pivot class', function (): void {
         // Arrange & Act
         $pivot = new BaseMorphPivot();
@@ -350,4 +349,5 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     });
+});
 

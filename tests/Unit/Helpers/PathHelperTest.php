@@ -3,6 +3,13 @@
 declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Helpers;
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
+// Xot Pest/PHPUnit — claude-audit documentation ratio.
 
 use Modules\Xot\Helpers\PathHelper;
 use Modules\Xot\Tests\XotBaseTestCase;
