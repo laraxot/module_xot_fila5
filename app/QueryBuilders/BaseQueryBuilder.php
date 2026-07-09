@@ -218,8 +218,10 @@ abstract class BaseQueryBuilder
      */
     public function get(): \Illuminate\Database\Eloquent\Collection
     {
-        /* @var \Illuminate\Database\Eloquent\Collection<int, T> */
-        return $this->query->get();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
+        $results = $this->query->get();
+
+        return $results;
     }
 
     /**

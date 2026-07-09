@@ -12,7 +12,6 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
-describe('Base Morph Pivot Business Logic', function (): void {
     test('it extends pivot class', function (): void {
         // Arrange & Act
         $pivot = new TestConcreteMorphPivot();
@@ -320,4 +319,5 @@ describe('Base Morph Pivot Business Logic', function (): void {
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     });
+});
 
