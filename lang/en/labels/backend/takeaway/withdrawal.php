@@ -8,20 +8,19 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/withdrawal.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'date' => 'Date',
-    'merchant' => 'Restaurant Name',
-    'amount' => 'Amount',
-    'payment_type' => 'Payment Type',
-    'from_balance' => 'From Balance',
-    'payment_method' => 'Payment Method',
-    'account' => 'Account',
-    'status' => 'Status',
-    'date_to_process' => 'Date To Process',
-    'created_at' => 'Created At',
-    'merchant_id' => 'Merchant Name',
-    'bank_name' => 'Bank Name',
-  ),
-);
+return [
+    'table' => [
+        'date' => 'Date',
+        'merchant' => 'Restaurant Name',
+        'amount' => 'Amount',
+        'payment_type' => 'Payment Type',
+        'from_balance' => 'From Balance',
+        'payment_method' => 'Payment Method',
+        'account' => 'Account',
+        'status' => 'Status',
+        'date_to_process' => 'Date To Process',
+        'created_at' => 'Created At',
+        'merchant_id' => 'Merchant Name',
+        'bank_name' => 'Bank Name',
+    ],
+];

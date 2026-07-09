@@ -302,6 +302,7 @@ trait MetatagDataBrandThemeAccessors
 
         return array_merge($normalizedFilamentColors, $customColors);
     }
+
     /**
      * Get MIME type from file path extension.
      * Helper method for getBrandLogoBase64().

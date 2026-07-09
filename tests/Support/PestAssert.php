@@ -18,7 +18,7 @@ final class PestAssert
     public static function same(mixed $expected, mixed $actual): void
     {
         Assert::assertSame($expected, $actual);
-// Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
     }
 
     public static function notSame(mixed $expected, mixed $actual): void

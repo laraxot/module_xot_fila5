@@ -8,17 +8,16 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/dishes.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'view' => 'View',
-  'table' => 
-  array (
-    'id' => 'Id',
-    'name' => 'Name',
-    'status' => 'status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'Management',
-  'create' => 'Create',
-  'dish_name' => 'Dish Name',
-  'type' => 'Type',
-);
+return [
+    'view' => 'View',
+    'table' => [
+        'id' => 'Id',
+        'name' => 'Name',
+        'status' => 'status',
+        'created_at' => 'Created At',
+    ],
+    'management' => 'Management',
+    'create' => 'Create',
+    'dish_name' => 'Dish Name',
+    'type' => 'Type',
+];

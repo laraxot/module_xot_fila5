@@ -8,8 +8,8 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/dashboard.php
 // Split from labels/backend.php
 
-return array (
-  'merchant_registration_list' => 'Restaurant Registration List',
-  'merchant_payment_list' => 'Restaurant Payment Manager',
-  'order_list' => 'Order List',
-);
+return [
+    'merchant_registration_list' => 'Restaurant Registration List',
+    'merchant_payment_list' => 'Restaurant Payment Manager',
+    'order_list' => 'Order List',
+];

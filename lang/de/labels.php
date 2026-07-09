@@ -7,15 +7,15 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/de/labels.php
 return [
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
     'general' => [
         'all' => 'Alle',
         'yes' => 'Ja',

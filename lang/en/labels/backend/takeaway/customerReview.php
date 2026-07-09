@@ -8,19 +8,18 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/customerReview.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'Id',
-    'customer' => 'Customer',
-    'rating' => 'Rating',
-    'comments' => 'Comments',
-    'status' => 'Status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'Customer Review Management',
-  'active' => ' Customer Review',
-  'view' => 'View Customer Review',
-  'create' => 'Create Customer Review',
-  'edit' => 'Edit Customer Review',
-);
+return [
+    'table' => [
+        'id' => 'Id',
+        'customer' => 'Customer',
+        'rating' => 'Rating',
+        'comments' => 'Comments',
+        'status' => 'Status',
+        'created_at' => 'Created At',
+    ],
+    'management' => 'Customer Review Management',
+    'active' => ' Customer Review',
+    'view' => 'View Customer Review',
+    'create' => 'Create Customer Review',
+    'edit' => 'Edit Customer Review',
+];

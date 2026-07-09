@@ -8,27 +8,24 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/Ingredient.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'tabs' => 
-  array (
-    'titles' => 
-    array (
-      'overview' => 'Overview',
-      'history' => 'History',
-    ),
-  ),
-  'table' => 
-  array (
-    'id' => 'Id',
-    'ing_name' => 'ingredient Name',
-    'status' => 'Status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'Ingredient Management',
-  'create' => 'Create Ingredient',
-  'ing_name' => 'Ingredient Name',
-  'status' => 'Ingredient Status',
-  'edit' => 'Edit Ingredient',
-  'active' => 'Active Ingredient',
-  'view' => 'View Ingredient',
-);
+return [
+    'tabs' => [
+        'titles' => [
+            'overview' => 'Overview',
+            'history' => 'History',
+        ],
+    ],
+    'table' => [
+        'id' => 'Id',
+        'ing_name' => 'ingredient Name',
+        'status' => 'Status',
+        'created_at' => 'Created At',
+    ],
+    'management' => 'Ingredient Management',
+    'create' => 'Create Ingredient',
+    'ing_name' => 'Ingredient Name',
+    'status' => 'Ingredient Status',
+    'edit' => 'Edit Ingredient',
+    'active' => 'Active Ingredient',
+    'view' => 'View Ingredient',
+];

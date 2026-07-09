@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
+
 // Xot — domain PHP (claude-audit documentation ratio).
 // Xot — domain PHP (claude-audit documentation ratio).
 // Xot — domain PHP (claude-audit documentation ratio).

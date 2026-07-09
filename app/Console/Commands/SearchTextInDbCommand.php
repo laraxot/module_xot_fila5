@@ -18,7 +18,7 @@ class SearchTextInDbCommand extends Command
 
     public function handle(): int
     {
-// Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
         $searchString = $this->argument('search');
         if (! is_string($searchString)) {
             $this->error('Search string must be a valid string');

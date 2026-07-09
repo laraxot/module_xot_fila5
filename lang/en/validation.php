@@ -7,33 +7,33 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/en/validation.php
 return [
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot — see module docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
     'accepted' => 'The :attribute rmust be accepted.',
     'active_url' => 'The :attribute is not a valid URL.',
     'after' => 'The :attribute must be a date after :date.',

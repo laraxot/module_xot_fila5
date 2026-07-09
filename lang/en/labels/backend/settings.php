@@ -8,6 +8,6 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/settings.php
 // Split from labels/backend.php
 
-return array (
-  'settings' => 'Settings',
-);
+return [
+    'settings' => 'Settings',
+];

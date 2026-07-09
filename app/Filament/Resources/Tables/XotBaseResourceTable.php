@@ -84,7 +84,7 @@ abstract class XotBaseResourceTable
     }
 
     /**
-     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+     * @return array<int, Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
      */
     public function getGridTableColumns(): array
     {

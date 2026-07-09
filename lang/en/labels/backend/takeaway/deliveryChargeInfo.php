@@ -8,6 +8,6 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/deliveryChargeInfo.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'set' => 'Deliver Charges',
-);
+return [
+    'set' => 'Deliver Charges',
+];

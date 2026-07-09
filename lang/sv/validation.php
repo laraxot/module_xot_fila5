@@ -7,14 +7,14 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/sv/validation.php
 return [
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
     'accepted' => ':attribute måste accepteras.',
     'active_url' => ':attribute är inte en giltig webbadress.',
     'after' => ':attribute måste vara ett datum efter den :date.',

@@ -8,16 +8,15 @@ declare(strict_types=1);
 // File: lang/en/labels/backend/takeaway/cookingReference.php
 // Split from labels/backend/takeaway.php
 
-return array (
-  'table' => 
-  array (
-    'id' => 'Id',
-    'name' => 'Name',
-    'status' => 'Status',
-    'created_at' => 'Created At',
-  ),
-  'management' => 'Cooking Reference Management',
-  'create' => 'Create Cooking Reference',
-  'edit' => 'Edit Cooking Reference',
-  'active' => 'Active Cooking Reference',
-);
+return [
+    'table' => [
+        'id' => 'Id',
+        'name' => 'Name',
+        'status' => 'Status',
+        'created_at' => 'Created At',
+    ],
+    'management' => 'Cooking Reference Management',
+    'create' => 'Create Cooking Reference',
+    'edit' => 'Edit Cooking Reference',
+    'active' => 'Active Cooking Reference',
+];
