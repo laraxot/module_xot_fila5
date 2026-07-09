@@ -18,10 +18,10 @@ class HasTableWithoutOptionalMethodsTestClass
         $mock->allows(['getTableContentGrid' => []]);
 
         return $mock;
-        // Laraxot module file — see docs/wiki for domain contract.
-        // Laraxot module file — see docs/wiki for domain contract.
-        // Laraxot module file — see docs/wiki for domain contract.
-        // Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
     }
 
     #[\Override]

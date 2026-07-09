@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\Xot\Models\BaseMorphPivot;
 use Modules\Xot\Tests\TestCase;
 
-class BaseMorphPivotBusinessLogicTest extends TestCase
-{
-    /** @test */
-    public function itExtendsPivotClass(): void
-    {
+uses(TestCase::class);
+
+describe('Base Morph Pivot Business Logic', function (): void {
+describe('Base Morph Pivot Business Logic', function (): void {
+    test('it extends pivot class', function (): void {
         // Arrange & Act
         $pivot = new BaseMorphPivot();
 
@@ -350,5 +350,7 @@ class BaseMorphPivotBusinessLogicTest extends TestCase
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     });
+
+    test('it can manage tags', function (): void {
 });
 

@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
+use function Safe\copy;
+
 trait XotBaseMigrationUuidConversion
 {
     /**
@@ -36,19 +38,10 @@ trait XotBaseMigrationUuidConversion
 
         /** @var list<string> $typedDataColumns */
         $typedDataColumns = array_values($dataColumns);
-        /** @var array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure} $conversionOptions */
-        $conversionOptions = [];
-        if (isset($options['pivot_table']) && is_string($options['pivot_table'])) {
-            $conversionOptions['pivot_table'] = $options['pivot_table'];
-        }
-        if (isset($options['pivot_fk']) && is_string($options['pivot_fk'])) {
-            $conversionOptions['pivot_fk'] = $options['pivot_fk'];
-        }
-        if (isset($options['pivot_post_update']) && $options['pivot_post_update'] instanceof \Closure) {
-            $conversionOptions['pivot_post_update'] = $options['pivot_post_update'];
-        }
+        /** @var array<string, mixed> $typedOptions */
+        $typedOptions = $options;
 
-        $this->performUuidToBigintConversion($table, $createNewTableSchema, $typedDataColumns, $conversionOptions);
+        $this->performUuidToBigintConversion($table, $createNewTableSchema, $typedDataColumns, $typedOptions);
     }
 
     protected function isUuidColumnType(string $type): bool

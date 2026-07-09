@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Feature;
 
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\Xot\Tests\Fixtures\Models\TestConcreteMorphPivot;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -11,7 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
-    describe('Base Morph Pivot Business Logic (attributes continued)', function (): void {
+describe('Base Morph Pivot Business Logic (attributes continued)', function (): void {
         // Arrange
         $tags = ['tag1', 'tag2', 'important'];
 

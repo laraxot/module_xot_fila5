@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
+use Modules\Xot\Support\PaDesignColors;
 
 trait MetatagDataBrandThemeAccessors
 {
@@ -264,7 +264,7 @@ trait MetatagDataBrandThemeAccessors
      */
     public function getFilamentColors(): array
     {
-        return app(GetPaFilamentPaletteAction::class)->execute();
+        return PaDesignColors::filamentPalette();
     }
 
     /**
@@ -302,7 +302,6 @@ trait MetatagDataBrandThemeAccessors
 
         return array_merge($normalizedFilamentColors, $customColors);
     }
-
     /**
      * Get MIME type from file path extension.
      * Helper method for getBrandLogoBase64().

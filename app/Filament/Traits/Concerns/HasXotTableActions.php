@@ -35,7 +35,7 @@ use Webmozart\Assert\Assert;
 trait HasXotTableActions
 {
     /**
-     * @return array<string|int, BaseFilter|TernaryFilter>
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter|\Filament\Tables\Filters\TernaryFilter>
      */
     public function getTableFilters(): array
     {
@@ -69,6 +69,9 @@ trait HasXotTableActions
         return $actions;
     }
 
+    /**
+     * @return object
+     */
     private function resolveTableActionResource(): object
     {
         $resource = $this;
@@ -177,9 +180,10 @@ trait HasXotTableActions
     /**
      * Get model class.
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
+     *
+     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
@@ -205,7 +209,7 @@ trait HasXotTableActions
     {
         $search = $this->tableSearch ?? null;
 
-        return null !== $search ? SafeStringCastAction::cast($search) : null;
+        return $search !== null ? SafeStringCastAction::cast($search) : null;
     }
 
     /**

@@ -110,7 +110,7 @@ class ExecuteArtisanCommandAction
     }
 
     /**
-     * @param  array<int, string>  $output
+     * @param array<int, string> $output
      */
     private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
     {

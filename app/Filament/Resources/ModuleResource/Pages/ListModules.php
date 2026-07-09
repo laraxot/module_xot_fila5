@@ -52,7 +52,7 @@ class ListModules extends XotBaseListRecords
     /**
      * Undocumented function.
      *
-     * @return array<string, BaseFilter>
+     * @return array<string, \Filament\Tables\Filters\BaseFilter>
      */
     #[\Override]
     public function getTableFilters(): array

@@ -16,6 +16,10 @@ class ListCacheLocks extends XotBaseListRecords
      * @return array<string, TextColumn>
      */
     #[\Override]
+    /**
+     * @return array<string, TextColumn>
+     */
+    #[\Override]
     public function getTableColumns(): array
     {
         return [

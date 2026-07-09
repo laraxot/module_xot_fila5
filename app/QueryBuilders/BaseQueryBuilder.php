@@ -75,6 +75,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition to the query.
+     *
+     * @return static
      */
     public function where(string $column, mixed $value): static
     {
@@ -85,6 +87,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where condition with operator to the query.
+     *
+     * @return static
      */
     public function whereOperator(string $column, string $operator, mixed $value): static
     {
@@ -97,6 +101,8 @@ abstract class BaseQueryBuilder
      * Apply a where in condition to the query.
      *
      * @param array<mixed> $values
+     *
+     * @return static
      */
     public function whereIn(string $column, array $values): static
     {
@@ -109,6 +115,8 @@ abstract class BaseQueryBuilder
      * Apply a where not in condition to the query.
      *
      * @param array<mixed> $values
+     *
+     * @return static
      */
     public function whereNotIn(string $column, array $values): static
     {
@@ -119,6 +127,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where null condition to the query.
+     *
+     * @return static
      */
     public function whereNull(string $column): static
     {
@@ -129,6 +139,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Apply a where not null condition to the query.
+     *
+     * @return static
      */
     public function whereNotNull(string $column): static
     {
@@ -141,6 +153,8 @@ abstract class BaseQueryBuilder
      * Apply a where between condition to the query.
      *
      * @param array<int, mixed> $values
+     *
+     * @return static
      */
     public function whereBetween(string $column, array $values): static
     {
@@ -151,10 +165,12 @@ abstract class BaseQueryBuilder
 
     /**
      * Order results by a column in ascending order.
+     *
+     * @return static
      */
     public function orderBy(string $column, string $direction = 'asc'): static
     {
-        if ('asc' !== $direction && 'desc' !== $direction) {
+        if ($direction !== 'asc' && $direction !== 'desc') {
             $direction = 'asc';
         }
 
@@ -165,6 +181,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Order results by a column in descending order.
+     *
+     * @return static
      */
     public function orderByDesc(string $column): static
     {
@@ -173,6 +191,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Limit the number of results.
+     *
+     * @return static
      */
     public function limit(int $value): static
     {
@@ -183,6 +203,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Skip a number of results (offset).
+     *
+     * @return static
      */
     public function skip(int $value): static
     {
@@ -195,6 +217,8 @@ abstract class BaseQueryBuilder
      * Get eager loading relations.
      *
      * @param array<string> $relations
+     *
+     * @return static
      */
     public function with(array $relations): static
     {
@@ -205,6 +229,8 @@ abstract class BaseQueryBuilder
 
     /**
      * Eager load a single relation.
+     *
+     * @return static
      */
     public function load(string $relation): static
     {
@@ -218,10 +244,8 @@ abstract class BaseQueryBuilder
      */
     public function get(): \Illuminate\Database\Eloquent\Collection
     {
-        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
-        $results = $this->query->get();
-
-        return $results;
+        /** @var \Illuminate\Database\Eloquent\Collection<int, T> */
+        return $this->query->get();
     }
 
     /**
@@ -231,7 +255,7 @@ abstract class BaseQueryBuilder
      */
     public function first(): ?Model
     {
-        /* @var T|null */
+        /** @var T|null */
         return $this->query->first();
     }
 
@@ -242,7 +266,7 @@ abstract class BaseQueryBuilder
      */
     public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
     {
-        /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
+        /** @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
         return $this->query->paginate($perPage);
     }
 
