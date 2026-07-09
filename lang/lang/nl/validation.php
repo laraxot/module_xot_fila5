@@ -7,10 +7,10 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/lang/nl/validation.php
 return [
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
     'accepted' => ':attribute moet geaccepteerd worden.',
     'active_url' => ':attribute is geen geldige URL.',
     'after' => ':attribute moet een datum na :date zijn.',
