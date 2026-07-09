@@ -176,10 +176,12 @@ agentdb.rvf
 # Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
 !tests/
 !tests/**
-!!**
+!audit-coverage/
+!audit-coverage/**
 
 # claude-audit static — dev MCP scripts (not production runtime)
 docs/mcp-laravel-artisan-server.js
 
 # Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
 Services/
+tests/AuditCoverage

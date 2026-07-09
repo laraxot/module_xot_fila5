@@ -36,10 +36,19 @@ trait XotBaseMigrationUuidConversion
 
         /** @var list<string> $typedDataColumns */
         $typedDataColumns = array_values($dataColumns);
-        /** @var array<string, mixed> $typedOptions */
-        $typedOptions = $options;
+        /** @var array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure} $conversionOptions */
+        $conversionOptions = [];
+        if (isset($options['pivot_table']) && is_string($options['pivot_table'])) {
+            $conversionOptions['pivot_table'] = $options['pivot_table'];
+        }
+        if (isset($options['pivot_fk']) && is_string($options['pivot_fk'])) {
+            $conversionOptions['pivot_fk'] = $options['pivot_fk'];
+        }
+        if (isset($options['pivot_post_update']) && $options['pivot_post_update'] instanceof \Closure) {
+            $conversionOptions['pivot_post_update'] = $options['pivot_post_update'];
+        }
 
-        $this->performUuidToBigintConversion($table, $createNewTableSchema, $typedDataColumns, $typedOptions);
+        $this->performUuidToBigintConversion($table, $createNewTableSchema, $typedDataColumns, $conversionOptions);
     }
 
     protected function isUuidColumnType(string $type): bool
