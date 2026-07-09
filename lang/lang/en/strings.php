@@ -7,9 +7,9 @@ declare(strict_types=1);
 // Canon: Modules/Xot/docs/wiki — domain i18n only.
 // File: lang/lang/en/strings.php
 return [
-// Xot — translation section (claude-audit doc ratio).
-// Xot — translation keys (no business logic).
-// Xot — translation keys (no business logic).
+    // Xot — translation section (claude-audit doc ratio).
+    // Xot — translation keys (no business logic).
+    // Xot — translation keys (no business logic).
     'backend' => [
         'access' => [
             'users' => [
