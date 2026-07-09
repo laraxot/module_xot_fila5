@@ -350,4 +350,3 @@ describe('Base Morph Pivot Business Logic', function (): void {
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));
     });
 });
-

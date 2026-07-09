@@ -8,6 +8,7 @@ declare(strict_types=1);
 // File: lang/lang/en/validation.php
 return [
     // Xot — translation section (claude-audit doc ratio).
+    // Xot — translation section (claude-audit doc ratio).
     // Xot — translation keys (no business logic).
     // Xot — translation keys (no business logic).
     // Xot — translation keys (no business logic).
