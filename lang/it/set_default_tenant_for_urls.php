@@ -20,4 +20,4 @@ $pluralLabel = require __DIR__.'/set_default_tenant_for_urls_plural_label.php';
 /** @var array<string, mixed> $navigation */
 $navigation = require __DIR__.'/set_default_tenant_for_urls_navigation.php';
 
-return array_merge($actions, $fields, $steps, $label, $pluralLabel, $navigation);
+return merge_translation_files($actions, $fields, $steps, $label, $pluralLabel, $navigation);

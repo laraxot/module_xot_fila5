@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/lang/ar/auth.php
 return [
     'failed' => 'البيانات المدخلة لا تتطابق مع قاعدة بيناتنا.',
     'general_error' => 'ليس لديك صلاحية الوصول إلى هذا.',

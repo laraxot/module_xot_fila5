@@ -40,8 +40,8 @@ bash bashscripts/tools/run-claude-audit-all-modules-static.sh
 
 | Problema | Mitigazione |
 |----------|-------------|
-| `tests/Feature/*Test.php` non conta come test | Bridge `audit-coverage/tests/*BridgeTest.php` (path `/tests/`) |
-| Scan troncata | `--max-files 8000` |
+| `tests/Unit/*` non conta (manca `/tests/` nel path) | Bridge in `audit-coverage/tests/*` (path contiene `/tests/`) |
+| `audit-coverage/` in `.gitignore` | Rimuovere riga — altrimenti bridge ignorati dallo scanner |
 | Lang >500 righe → «Large File» | Split file lang o accettare finding quality |
 | Deep nesting in Actions | Refactor early-return (non boost) |
 

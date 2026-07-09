@@ -1,15 +1,15 @@
 {
   "version": "0.2.2",
-  "timestamp": "2026-07-09T18:24:02.787Z",
+  "timestamp": "2026-07-09T18:48:11.940Z",
   "project": {
     "name": "Xot",
     "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot",
     "languages": {
-      "Markdown": 4031,
+      "Markdown": 4282,
       "JSON": 15,
       "YAML": 1,
-      "PHP": 1521,
-      "XML": 1,
+      "PHP": 1534,
+      "XML": 2,
       "JavaScript": 10,
       "Shell": 7,
       "CSS": 2,
@@ -18,8 +18,8 @@
     "frameworks": [
       "TailwindCSS"
     ],
-    "totalFiles": 5590,
-    "totalLines": 648056,
+    "totalFiles": 5855,
+    "totalLines": 663380,
     "hasTests": true,
     "hasDependencyFile": true,
     "dependencyFile": "package.json",
@@ -42,7 +42,7 @@
     "testFrameworks": [],
     "packageManager": "npm"
   },
-  "overallScore": 67,
+  "overallScore": 65,
   "overallGrade": "C",
   "categories": [
     {
@@ -54,11 +54,20 @@
     },
     {
       "category": "quality",
-      "score": 15,
+      "score": 5,
       "grade": "F",
       "findings": [
         {
           "id": "QUA-001",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Large File — Consider Splitting",
+          "description": "app/Datas/MetatagData.php has 720 lines. Large files are hard to test, review, and maintain.",
+          "file": "app/Datas/MetatagData.php",
+          "fix": "Split into smaller, focused modules. Follow the Single Responsibility Principle."
+        },
+        {
+          "id": "QUA-002",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -68,7 +77,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-002",
+          "id": "QUA-003",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -78,7 +87,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-003",
+          "id": "QUA-004",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -88,7 +97,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-004",
+          "id": "QUA-005",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -98,7 +107,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-005",
+          "id": "QUA-006",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -108,7 +117,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-006",
+          "id": "QUA-007",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -118,7 +127,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-007",
+          "id": "QUA-008",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -128,17 +137,26 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-008",
+          "id": "QUA-009",
+          "category": "quality",
+          "severity": "medium",
+          "title": "Large File — Consider Splitting",
+          "description": "app/Filament/Traits/HasXotTable.php has 577 lines. Large files are hard to test, review, and maintain.",
+          "file": "app/Filament/Traits/HasXotTable.php",
+          "fix": "Split into smaller, focused modules. Follow the Single Responsibility Principle."
+        },
+        {
+          "id": "QUA-010",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
-          "description": "app/Filament/Traits/HasXotTable.php:156 — nesting depth of 6. This hurts readability and testability.",
+          "description": "app/Filament/Traits/HasXotTable.php:141 — nesting depth of 6. This hurts readability and testability.",
           "file": "app/Filament/Traits/HasXotTable.php",
-          "line": 156,
+          "line": 141,
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-009",
+          "id": "QUA-011",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -148,7 +166,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-010",
+          "id": "QUA-012",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -158,7 +176,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-011",
+          "id": "QUA-013",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -168,7 +186,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-012",
+          "id": "QUA-014",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -178,7 +196,7 @@
           "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
         },
         {
-          "id": "QUA-013",
+          "id": "QUA-015",
           "category": "quality",
           "severity": "medium",
           "title": "Deep Nesting Detected",
@@ -231,6 +249,15 @@
       "id": "QUA-001",
       "category": "quality",
       "severity": "medium",
+      "title": "Large File — Consider Splitting",
+      "description": "app/Datas/MetatagData.php has 720 lines. Large files are hard to test, review, and maintain.",
+      "file": "app/Datas/MetatagData.php",
+      "fix": "Split into smaller, focused modules. Follow the Single Responsibility Principle."
+    },
+    {
+      "id": "QUA-002",
+      "category": "quality",
+      "severity": "medium",
       "title": "Deep Nesting Detected",
       "description": "app/Providers/FilamentOptimizationServiceProvider.php:102 — nesting depth of 6. This hurts readability and testability.",
       "file": "app/Providers/FilamentOptimizationServiceProvider.php",
@@ -238,7 +265,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-002",
+      "id": "QUA-003",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -248,7 +275,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-003",
+      "id": "QUA-004",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -258,7 +285,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-004",
+      "id": "QUA-005",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -268,7 +295,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-005",
+      "id": "QUA-006",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -278,7 +305,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-006",
+      "id": "QUA-007",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -288,7 +315,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-007",
+      "id": "QUA-008",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -298,17 +325,26 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-008",
+      "id": "QUA-009",
+      "category": "quality",
+      "severity": "medium",
+      "title": "Large File — Consider Splitting",
+      "description": "app/Filament/Traits/HasXotTable.php has 577 lines. Large files are hard to test, review, and maintain.",
+      "file": "app/Filament/Traits/HasXotTable.php",
+      "fix": "Split into smaller, focused modules. Follow the Single Responsibility Principle."
+    },
+    {
+      "id": "QUA-010",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
-      "description": "app/Filament/Traits/HasXotTable.php:156 — nesting depth of 6. This hurts readability and testability.",
+      "description": "app/Filament/Traits/HasXotTable.php:141 — nesting depth of 6. This hurts readability and testability.",
       "file": "app/Filament/Traits/HasXotTable.php",
-      "line": 156,
+      "line": 141,
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-009",
+      "id": "QUA-011",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -318,7 +354,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-010",
+      "id": "QUA-012",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -328,7 +364,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-011",
+      "id": "QUA-013",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -338,7 +374,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-012",
+      "id": "QUA-014",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -348,7 +384,7 @@
       "fix": "Use early returns, extract functions, or restructure logic to reduce nesting. Aim for max depth of 3."
     },
     {
-      "id": "QUA-013",
+      "id": "QUA-015",
       "category": "quality",
       "severity": "medium",
       "title": "Deep Nesting Detected",
@@ -360,8 +396,8 @@
   ],
   "criticalCount": 0,
   "highCount": 0,
-  "mediumCount": 13,
+  "mediumCount": 15,
   "lowCount": 0,
   "aiPowered": false,
-  "durationMs": 1158
+  "durationMs": 521
 }

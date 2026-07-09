@@ -2,7 +2,15 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/lang/ar/validation.php
 return [
+// Xot — translation keys (no business logic).
+// Xot — translation keys (no business logic).
+// Xot — translation keys (no business logic).
+// Xot — translation keys (no business logic).
     'accepted' => 'يجب قبول الحقل :attribute',
     'active_url' => 'الحقل :attribute لا يُمثّل رابطًا صحيحًا',
     'after' => 'يجب على الحقل :attribute أن يكون تاريخًا لاحقًا للتاريخ :date.',

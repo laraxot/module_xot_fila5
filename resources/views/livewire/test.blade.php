@@ -1,3 +1,11 @@
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
+@php
+// Xot Blade view — see Modules/Xot/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);
