@@ -300,6 +300,25 @@ if (! function_exists('xotSeedModelOnce')) {
     }
 }
 
+if (! function_exists('normalize_string_key_array')) {
+    /**
+     * @param  array<mixed, mixed>  $array
+     * @return array<string, mixed>
+     */
+    function normalize_string_key_array(array $array): array
+    {
+        $normalized = [];
+        foreach ($array as $key => $value) {
+            if (! is_string($key)) {
+                throw new InvalidArgumentException('Array keys must be strings.');
+            }
+            $normalized[$key] = $value;
+        }
+
+        return $normalized;
+    }
+}
+
 if (! function_exists('require_translation_file')) {
     /**
      * @return array<string, mixed>
@@ -311,8 +330,7 @@ if (! function_exists('require_translation_file')) {
             throw new InvalidArgumentException("Translation file [{$path}] must return array.");
         }
 
-        /* @var array<string, mixed> $loaded */
-        return $loaded;
+        return normalize_string_key_array($loaded);
     }
 }
 
