@@ -302,7 +302,8 @@ if (! function_exists('xotSeedModelOnce')) {
 
 if (! function_exists('normalize_string_key_array')) {
     /**
-     * @param  array<mixed, mixed>  $array
+     * @param array<mixed, mixed> $array
+     *
      * @return array<string, mixed>
      */
     function normalize_string_key_array(array $array): array
