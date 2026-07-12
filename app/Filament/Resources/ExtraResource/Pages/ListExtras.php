@@ -21,6 +21,9 @@ class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
 
+    /**
+     * @return array<string, TextColumn>
+     */
     #[\Override]
     public function getTableColumns(): array
     {

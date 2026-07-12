@@ -6,10 +6,13 @@ namespace Modules\Xot\Actions\Model;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Facades\Schema;
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 class TableExistsByModelClassActions
 {
+    use QueueableAction;
+
     public function execute(string $modelClass): bool
     {
         if (! class_exists($modelClass)) {

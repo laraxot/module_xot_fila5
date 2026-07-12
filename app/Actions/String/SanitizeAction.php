@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\preg_replace;
 
 class SanitizeAction
 {
+    use QueueableAction;
+
     public function execute(string $str): string
     {
         $str = strip_tags($str);

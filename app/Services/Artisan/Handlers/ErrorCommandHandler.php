@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Artisan\Handlers;
 
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
+use Modules\Xot\Services\Artisan\Contracts\CommandHandlerContract;
 use Modules\Xot\Services\ArtisanService;
 use Webmozart\Assert\Assert;
 
 /**
  * Handles error-related artisan commands.
  */
-class ErrorCommandHandler implements CommandHandlerInterface
+class ErrorCommandHandler implements CommandHandlerContract
 {
     private const ERROR_COMMANDS = ['error', 'error-show', 'error-clear'];
 

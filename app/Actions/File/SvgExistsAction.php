@@ -6,6 +6,7 @@ namespace Modules\Xot\Actions\File;
 
 use BladeUI\Icons\Factory as IconFactory;
 use Illuminate\Support\Facades\App;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Verifica l'esistenza di un SVG registrato utilizzando BladeUI Icons.
@@ -14,11 +15,12 @@ use Illuminate\Support\Facades\App;
  */
 class SvgExistsAction
 {
+    use QueueableAction;
+
     /**
      * Verifica se l'SVG esiste nei set di icone registrati.
      *
-     * @param string $svgName Il nome dell'SVG da verificare (es: 'heroicon-o-user')
-     *
+     * @param  string  $svgName  Il nome dell'SVG da verificare (es: 'heroicon-o-user')
      * @return bool true se l'SVG esiste, false altrimenti
      */
     public function execute(string $svgName): bool

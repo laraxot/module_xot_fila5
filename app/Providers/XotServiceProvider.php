@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Support\PaDesignColors;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\View\Composers\XotComposer;
 
 use function Safe\realpath;
@@ -120,7 +120,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     public function registerPaFilamentColors(): void
     {
-        FilamentColor::register(PaDesignColors::filamentPalette());
+        FilamentColor::register(app(GetPaFilamentPaletteAction::class)->execute());
     }
 
     public function registerFilamentMacros(): void

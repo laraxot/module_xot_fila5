@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Artisan\Handlers;
 
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
+use Modules\Xot\Services\Artisan\Contracts\CommandHandlerContract;
 use Modules\Xot\Services\ArtisanService;
 
 /**
  * Handles optimization-related artisan commands.
  */
-class OptimizeCommandHandler implements CommandHandlerInterface
+class OptimizeCommandHandler implements CommandHandlerContract
 {
     public function handle(string $moduleName = ''): string
     {

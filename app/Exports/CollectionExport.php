@@ -91,31 +91,42 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
-            return array_values(Arr::map($res, function ($value, $_key): string {
-                if ($value instanceof \BackedEnum) {
-                    if (method_exists($value, 'getLabel')) {
-                        return SafeStringCastAction::cast($value->getLabel());
-                    }
-
-                    return SafeStringCastAction::cast($value->value);
-                }
-
-                return SafeStringCastAction::cast($value);
-            }));
+            return array_values(Arr::map($res, fn (mixed $value, mixed $_key): string => self::stringifyExportValue($value)));
         }
 
         $data = [];
 
         foreach ($this->fields as $field) {
             $value = data_get($row, $field);
-            if (\is_object($value)) {
-                if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
-                    $value = $value->getLabel();
-                }
-            }
-            $data[] = SafeStringCastAction::cast($value);
+            $data[] = SafeStringCastAction::cast(self::normalizeExportFieldValue($value));
         }
 
         return $data;
+    }
+
+    private static function stringifyExportValue(mixed $value): string
+    {
+        if ($value instanceof \BackedEnum) {
+            if (method_exists($value, 'getLabel')) {
+                return SafeStringCastAction::cast($value->getLabel());
+            }
+
+            return SafeStringCastAction::cast($value->value);
+        }
+
+        return SafeStringCastAction::cast($value);
+    }
+
+    private static function normalizeExportFieldValue(mixed $value): mixed
+    {
+        if (! \is_object($value)) {
+            return $value;
+        }
+
+        if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
+            return $value->getLabel();
+        }
+
+        return $value;
     }
 }

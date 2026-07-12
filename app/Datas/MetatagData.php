@@ -13,7 +13,7 @@ use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-use Modules\Xot\Support\PaDesignColors;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 
 use function Safe\file_get_contents;
 
@@ -397,7 +397,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getFilamentColors(): array
     {
-        return PaDesignColors::filamentPalette();
+        return app(GetPaFilamentPaletteAction::class)->execute();
     }
 
     /**

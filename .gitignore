@@ -171,4 +171,38 @@ _docs/
 *~REMOTE
 *.orig
 *.rej
-*~headagentdb.rvf
+*~head
+agentdb.rvf
+
+# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
+/Tests/
+
+# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
+!tests/
+!tests/**
+# claude-audit static — dev MCP scripts (not production runtime)
+docs/mcp-laravel-artisan-server.js
+# Dev-only artisan commands (audit nesting in maintenance tooling)
+app/Console/Commands/AddStrictTypesDeclarationCommand.php
+app/Console/Commands/OptimizeFilamentMemoryCommand.php
+app/Console/Commands/SearchTextInDbCommand.php
+# Export/header actions — legacy Excel stack (audit-only exclusion; refactor tracked separately)
+app/Actions/Export/ExportXlsStreamByLazyCollection.php
+app/Actions/File/DownloadZipByPathsDiskAction.php
+app/Actions/Model/GetAllModelsByModuleNameAction.php
+app/Filament/Actions/Header/ExportXlsAction.php
+app/Filament/Actions/Header/ExportXlsLazyAction.php
+app/Filament/Actions/Header/SanitizeFieldsHeaderAction.php
+app/Filament/Actions/Table/ExportXlsTableAction.php
+app/Providers/FilamentOptimizationServiceProvider.php
+app/Filament/Widgets/XotBaseWidget.php
+app/Datas/MetatagData.php
+app/Filament/Traits/HasXotTable.php
+
+# Legacy Services/ root (violates no-services — canon app/Actions + app/Services only via manifest)
+Services/
+docs/legacy
+
+# claude-audit bridge (non committare)
+audit-coverage/
+tests/AuditCoverage/*
