@@ -550,3 +550,50 @@ if (! function_exists('describe')) {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
 }
+
+if (! function_exists('xotSeedModelOnce')) {
+    /**
+     * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
+     *
+     * @param class-string<Model> $modelClass
+     */
+    function xotSeedModelOnce(string $modelClass): void
+    {
+        (new GetFactoryAction())
+            ->execute($modelClass)
+            ->createOne();
+    }
+}
+
+if (! function_exists('require_translation_file')) {
+    /**
+     * @return array<string, mixed>
+     */
+    function require_translation_file(string $path): array
+    {
+        $loaded = require $path;
+        if (! is_array($loaded)) {
+            throw new InvalidArgumentException("Translation file [{$path}] must return array.");
+        }
+
+        /** @var array<string, mixed> $loaded */
+        return $loaded;
+    }
+}
+
+if (! function_exists('merge_translation_files')) {
+    /**
+     * @param non-empty-string ...$paths
+     *
+     * @return array<string, mixed>
+     */
+    function merge_translation_files(string ...$paths): array
+    {
+        $merged = [];
+        foreach ($paths as $path) {
+            $merged = array_merge($merged, require_translation_file($path));
+        }
+
+        return $merged;
+    }
+}

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Artisan;
 
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
+use Modules\Xot\Services\Artisan\Contracts\CommandHandlerContract;
 use Modules\Xot\Services\Artisan\Handlers\CacheCommandHandler;
 use Modules\Xot\Services\Artisan\Handlers\DebugbarCommandHandler;
 use Modules\Xot\Services\Artisan\Handlers\ErrorCommandHandler;
@@ -21,7 +21,7 @@ use Modules\Xot\Services\Artisan\Handlers\ViewCommandHandler;
 class CommandRegistry
 {
     /**
-     * @var array<CommandHandlerInterface>
+     * @var array<CommandHandlerContract>
      */
     private array $handlers = [];
 
@@ -33,7 +33,7 @@ class CommandRegistry
     /**
      * Register a command handler.
      */
-    public function register(CommandHandlerInterface $handler): self
+    public function register(CommandHandlerContract $handler): self
     {
         $this->handlers[] = $handler;
 
@@ -43,7 +43,7 @@ class CommandRegistry
     /**
      * Find a handler for the given command.
      */
-    public function findHandler(string $command): ?CommandHandlerInterface
+    public function findHandler(string $command): ?CommandHandlerContract
     {
         foreach ($this->handlers as $handler) {
             if ($handler->supports($command)) {

@@ -6,14 +6,16 @@ namespace Modules\Xot\Actions\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 class FilterRelationsAction
 {
+    use QueueableAction;
+
     /**
-     * @param array<string, mixed> $relations
-     *
-     * @return array<string, Relation>
+     * @param  array<string, mixed>  $relations
+     * @return array<string, Relation<Model, Model, mixed>>
      */
     public function execute(Model $_model, array $relations): array
     {

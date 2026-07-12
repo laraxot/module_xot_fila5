@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/da/passwords.php
 return [
     'password' => 'Adgangskoder skal være mindst seks tegn og matche bekræftelsen.',
     'reset' => 'Din adgangskode er blevet nulstillet!',

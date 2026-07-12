@@ -17,11 +17,7 @@ it('gets and caches components correctly', function (): void {
 
 class TestComp {}";
     File::put($compPath, $compContent);
-
-    // We need the class to exist for reflection
-    if (! class_exists('My\Test\Comps\TestComp')) {
-        eval("namespace My\Test\Comps; class TestComp {}");
-    }
+    require_once $compPath;
 
     $action = app(GetComponentsAction::class);
     $result = $action->execute($tempDir, 'My/Test/Comps', 'prefix-');
@@ -47,10 +43,7 @@ it('skips abstract classes', function (): void {
 
     $compPath = $tempDir.'/AbstractComp.php';
     File::put($compPath, "namespace My\Test\Comps; abstract class AbstractComp {}");
-
-    if (! class_exists('My\Test\Comps\AbstractComp')) {
-        eval("namespace My\Test\Comps; abstract class AbstractComp {}");
-    }
+    require_once $compPath;
 
     $action = app(GetComponentsAction::class);
     $result = $action->execute($tempDir, 'My/Test/Comps', 'prefix-');

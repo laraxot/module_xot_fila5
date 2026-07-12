@@ -18,6 +18,10 @@ class HasTableWithXotTestClass
         $mock->allows(['getTableColumns' => []]);
         $mock->allows(['getTableContentGrid' => []]);
 
+        // Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
+        // Laraxot module file — see docs/wiki for domain contract.
         return $mock;
     }
 

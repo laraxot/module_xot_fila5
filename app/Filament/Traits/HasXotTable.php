@@ -116,6 +116,8 @@ trait HasXotTable
         $columns = [];
 
         foreach (array_values($this->getTableColumns()) as $column) {
+            Assert::isInstanceOf($column, Column::class);
+            /** @var Column $gridColumn */
             $gridColumn = clone $column;
 
             if ($gridColumn instanceof TextColumn) {
@@ -190,10 +192,15 @@ trait HasXotTable
          * Assert::isInstanceOf($model, Model::class);
          */
         // Configurazione base della tabella
+        /** @var array<string, Column|ColumnGroup|LayoutComponent> $listColumns */
+        $listColumns = $this->getTableColumns();
+        /** @var array<int, Column|ColumnGroup|LayoutComponent> $gridColumns */
+        $gridColumns = $this->getGridTableColumns();
+
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-            ->columns($this->layoutView->getTableColumns($this->getTableColumns(), $this->getGridTableColumns()))
+            ->columns($this->layoutView->getTableColumns($listColumns, $gridColumns))
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)

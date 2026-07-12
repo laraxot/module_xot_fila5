@@ -12,7 +12,7 @@ class SendMailByRecordsAction
     use QueueableAction;
 
     /**
-     * Undocumented function.
+     * @param  Collection<int, Model>  $records
      */
     public function execute(Collection $records, string $mail_class): bool
     {

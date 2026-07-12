@@ -6,6 +6,9 @@ namespace Modules\Xot\Tests\Unit;
 
 use Filament\Support\Colors\Color;
 use Modules\Xot\Datas\MetatagData;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 /*
  * Test che la classe MetatagData possa essere istanziata correttamente.
@@ -25,14 +28,14 @@ test('getFilamentColors restituisce i colori Filament corretti', function () {
     $metatagData = new MetatagData();
     $colors = $metatagData->getFilamentColors();
 
-    expect($colors)
-        ->toBeArray()
-        ->and($colors)
-        ->toHaveKeys(['danger', 'gray', 'info', 'primary', 'success', 'warning'])
-        ->and($colors['danger'])
-        ->toBe(Color::Red)
-        ->and($colors['primary'])
-        ->toBe(Color::Amber);
+    Assert::assertArrayHasKey('danger', $colors);
+    Assert::assertArrayHasKey('gray', $colors);
+    Assert::assertArrayHasKey('info', $colors);
+    Assert::assertArrayHasKey('primary', $colors);
+    Assert::assertArrayHasKey('success', $colors);
+    Assert::assertArrayHasKey('warning', $colors);
+    Assert::assertIsString($colors['primary'][600] ?? null);
+    Assert::assertEquals(app(GetPaFilamentPaletteAction::class)->execute(), $colors);
 });
 
 /*

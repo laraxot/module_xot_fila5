@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Artisan\Handlers;
 
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
+use Modules\Xot\Services\Artisan\Contracts\CommandHandlerContract;
 use Modules\Xot\Services\ArtisanService;
 use Webmozart\Assert\Assert;
 
 /**
  * Handles route-related artisan commands.
  */
-class RouteCommandHandler implements CommandHandlerInterface
+class RouteCommandHandler implements CommandHandlerContract
 {
     private const ROUTE_COMMANDS = [
         'routelist' => 'listRoutes',

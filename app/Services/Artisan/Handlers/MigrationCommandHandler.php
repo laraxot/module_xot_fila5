@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace Modules\Xot\Services\Artisan\Handlers;
 
 use Illuminate\Support\Facades\DB;
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
+use Modules\Xot\Services\Artisan\Contracts\CommandHandlerContract;
 use Modules\Xot\Services\ArtisanService;
 
 /**
  * Handles migration-related artisan commands.
  */
-class MigrationCommandHandler implements CommandHandlerInterface
+class MigrationCommandHandler implements CommandHandlerContract
 {
     public function handle(string $moduleName = ''): string
     {

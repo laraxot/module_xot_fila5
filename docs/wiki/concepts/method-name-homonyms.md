@@ -98,7 +98,7 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 - `Xot` · `MySqlAdapter` · `Modules/Xot/app/Services/Trend/Adapters/MySqlAdapter.php`
 - `Xot` · `PgsqlAdapter` · `Modules/Xot/app/Services/Trend/Adapters/PgsqlAdapter.php`
 - `Xot` · `SqliteAdapter` · `Modules/Xot/app/Services/Trend/Adapters/SqliteAdapter.php`
-- `Xot` · `PdfBuilderAdapter` · `Modules/Xot/app/Support/PdfBuilderAdapter.php`
+- `Xot` · `PdfBuilderAdapter` · `Modules/Xot/app/Adapters/PdfBuilderAdapter.php`
 
 #### `getModuleName` — 5 classi
 

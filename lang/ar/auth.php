@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/ar/auth.php
 return [
     'failed' => 'البيانات المدخلة لا تتطابق مع قاعدة بيناتنا.',
     'general_error' => 'ليس لديك صلاحية الوصول إلى هذا.',

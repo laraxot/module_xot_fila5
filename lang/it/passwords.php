@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/it/passwords.php
 return [
     'password' => 'Le password devono essere di almeno 6 caratteri e devono coincidere.',
     'reset' => 'La password è stata reimpostata!',

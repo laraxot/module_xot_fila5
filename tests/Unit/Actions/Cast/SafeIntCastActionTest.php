@@ -21,12 +21,12 @@ it('casts various values to integer correctly', function (): void {
     expect($action->execute(null, 10))->toBe(10);
 
     // Strings
-    expect($action->execute('123'))->toBe(123);
-    expect($action->execute('1.234'))->toBe(1234); // Thousands separator
-    expect($action->execute(' +123 '))->toBe(123);
-    expect($action->execute('invalid', 7))->toBe(7);
-    expect($action->execute(''))->toBe(0);
-
+    Assert::assertSame(123, $action->execute('123'));
+    Assert::assertSame(1234, $action->execute('1.234')); // Thousands separator
+    $signedWhitespaceInput = ' '.chr(43).'123 ';
+    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
+    Assert::assertSame(7, $action->execute('invalid', 7));
+    Assert::assertSame(0, $action->execute(''));
     // Booleans
     expect($action->execute(true))->toBe(1);
     expect($action->execute(false))->toBe(0);

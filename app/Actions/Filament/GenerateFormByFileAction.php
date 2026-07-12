@@ -10,12 +10,12 @@ namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-
-use function Safe\file;
-
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
+
+use function Safe\file;
 
 class GenerateFormByFileAction
 {
@@ -24,8 +24,7 @@ class GenerateFormByFileAction
     /**
      * Genera un form Filament basato su un file di risorsa.
      *
-     * @param File $file Il file della risorsa Filament
-     *
+     * @param  File  $file  Il file della risorsa Filament
      * @return int Numero di input aggiunti
      */
     public function execute(File $file): int
@@ -100,7 +99,7 @@ class GenerateFormByFileAction
         $inputCount = 0;
         foreach ($fillable as $field) {
             if (in_array($field, $resourceMethods)) {
-                ++$inputCount;
+                $inputCount++;
             }
         }
 
@@ -110,7 +109,7 @@ class GenerateFormByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-     * @param File $file Il file da analizzare
+     * @param  File  $file  Il file da analizzare
      */
     public function ddFile(File $file): void
     {

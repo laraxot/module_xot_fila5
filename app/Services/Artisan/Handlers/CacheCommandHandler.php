@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Artisan\Handlers;
 
-use Modules\Xot\Services\Artisan\Contracts\CommandHandlerInterface;
+use Modules\Xot\Services\Artisan\Contracts\CommandHandlerContract;
 use Modules\Xot\Services\ArtisanService;
 use Webmozart\Assert\Assert;
 
 /**
  * Handles cache-related artisan commands.
  */
-class CacheCommandHandler implements CommandHandlerInterface
+class CacheCommandHandler implements CommandHandlerContract
 {
     private const CACHE_COMMANDS = [
         'clear' => 'clearAll',

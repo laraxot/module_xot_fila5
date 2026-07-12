@@ -67,10 +67,6 @@ php artisan migrate
 
 Activity, Comment, Gdpr, Job, Rating, UI (e altri con stesso pattern nel `TestCase`).
 
-## Helper traduzioni correlato
-
-`require_translation_file()` in `Modules/Xot/helpers/Helper.php` — carica file lang con `require`, valida chiavi `string`, ritorno `array<string, mixed>` (PHPStan L10). Consumer: loader lang split (es. Job `job.php`).
-
 ## Backlink
 
 - [module-testcase-xotbase-hierarchy.md](../concepts/module-testcase-xotbase-hierarchy.md)

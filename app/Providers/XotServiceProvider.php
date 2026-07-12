@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\View\Composers\XotComposer;
 
 use function Safe\realpath;
@@ -90,6 +91,14 @@ class XotServiceProvider extends XotBaseServiceProvider
         );
         TimePicker::configureUsing(fn (TimePicker $component) => $component->timezone($timezone));
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
+    }
+
+    /**
+     * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
+     */
+    public function registerPaFilamentColors(): void
+    {
+        FilamentColor::register(app(GetPaFilamentPaletteAction::class)->execute());
     }
 
     public function registerFilamentMacros(): void

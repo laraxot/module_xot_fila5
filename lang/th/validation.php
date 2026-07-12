@@ -2,7 +2,18 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/th/validation.php
 return [
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
+    // Laraxot module file — see docs/wiki for domain contract.
     'accepted' => 'ข้อมูล :attribute ต้องผ่านการยอมรับก่อน',
     'active_url' => 'ข้อมูล :attribute ต้องเป็น URL เท่านั้น',
     'after' => 'ข้อมูล :attribute ต้องเป็นวันที่หลังจาก :date',

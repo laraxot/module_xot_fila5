@@ -1,4 +1,6 @@
-# Queueable Actions
+# Queueable Actions — Xot Module Doctrine
+
+> Philosophy: the best code is the code you never wrote. Actions are the only place for business logic. No controllers, no repositories, no inline instantiation of collaborators.
 
 ## Panoramica
 
@@ -105,6 +107,54 @@ class ProcessDoctorModerationActionTest extends TestCase
     }
 }
 ```
+
+## Project Rules (non-negotiable)
+
+1. **Every class in `app/Actions/` must be a Queueable Action**
+   ```php
+   use Spatie\QueueableAction\QueueableAction;
+
+   class DoSomethingAction
+   {
+       use QueueableAction;
+
+       public function execute(...): mixed { ... }
+   }
+   ```
+
+2. **The only public entry point is `execute()`**
+   - Forbidden: `handle()`, `process()`, `run()`, `recordSubject()`, `log()`.
+   - Call actions with `app(DoSomethingAction::class)->execute(...)`.
+
+3. **No repository pattern**
+   - Do not create `*Repository` classes.
+   - Do not inject repositories.
+   - Query logic belongs in small Queueable Actions or model scopes.
+
+4. **No inline instantiation in constructor defaults**
+   ```php
+   // ❌ Wrong
+   public function __construct(
+       private ActivityQueryRepository $queryRepository = new ActivityQueryRepository,
+       private ActivityMaintenanceAction $maintenanceAction = new ActivityMaintenanceAction,
+   ) {}
+
+   // ✅ Correct
+   public function __construct(
+       private ActivityQueryRepository $queryRepository,
+   ) {}
+   ```
+
+5. **Retiring files**
+   - Never `rm` a migration or source file.
+   - Never move files to an `archive/` directory.
+   - Rename with `.old` suffix (e.g. `2026_02_13_171410_fix_causer_id_to_uuid.php.old`).
+
+6. **YAGNI / Ponytail**
+   - Reuse existing code first.
+   - Use stdlib / native Laravel before adding dependencies.
+   - One line when one line is enough.
+   - Never compromise security, validation, error handling, or accessibility.
 
 ## Best Practices
 

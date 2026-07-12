@@ -35,6 +35,10 @@ class ViewCopyAction extends XotBaseAction
             });
     }
 
+    /**
+     * @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $data
+     */
     public function execute(array $arguments, array $data): void
     {
         // TODO: Implement view copying logic

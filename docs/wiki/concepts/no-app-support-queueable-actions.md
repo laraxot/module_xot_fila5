@@ -3,7 +3,7 @@ title: "no app/Support — Actions e Adapters"
 type: concept
 tags: [xot, actions, adapters, queueable-action, support, refactor]
 created: 2026-07-12
-updated: 2026-07-13
+updated: 2026-07-12
 qmd: "Xot module no app Support PanelModule PdfBuilder PaDesignColors MorphToOne"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
@@ -28,16 +28,8 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 | `PanelModuleResolver` | `Adapters/Filament/PanelModuleAdapter` |
 | `PanelModuleSupport` | Eliminato (duplicato morto) |
 | `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
-| `PaDesignColors` | `Actions/PaDesignColorsAction` (`filamentPalette()` + `execute()`) |
+| `PaDesignColors` | `Actions/Design/GetPaFilamentPaletteAction` |
 | `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
-
-## Chiusura `app/Services` (2026-07-13)
-
-- `HtmlService::toPdf()` → `Actions/Html/HtmlToPdfAction`.
-- `RouteService` → otto Action nel contesto `Actions/Route/`, una per use case.
-- Il solo chiamante runtime storico di `RouteService::inAdmin()` usa ora l'helper globale canonico.
-- Nessuna facade multi-metodo e nessuna injection Action→Action: il bordo pubblico resta
-  `app(Action::class)->execute(...)`.
 
 ## Perché
 

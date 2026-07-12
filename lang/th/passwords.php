@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/th/passwords.php
 return [
     'password' => 'รหัสผ่านต้องมีความยาวอย่างน้อยหกตัวอักษรและต้องตรงกับช่องยืนยันรหัสผ่าน',
     'reset' => 'ทำการตั้งค่ารหัสผ่านใหม่แล้ว!',

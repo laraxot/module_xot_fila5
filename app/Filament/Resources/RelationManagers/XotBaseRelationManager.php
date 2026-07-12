@@ -16,6 +16,7 @@ use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManag
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
@@ -30,7 +31,69 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseRelationManager extends FilamentRelationManager
 {
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+        getGridTableColumns as private xotGetGridTableColumns;
+        getTablePaginated as private xotGetTablePaginated;
+        getSearchableColumns as private xotSearchableColumns;
+        getHeaderActions as private xotGetHeaderActions;
+    }
+
+    /**
+     * @return array<int, Column|ColumnGroup|LayoutComponent>
+     */
+    public function getGridTableColumns(): array
+    {
+        return $this->xotGetGridTableColumns();
+    }
+
+    /**
+     * @return bool|array<int|string>
+     */
+    protected function getTablePaginated(): bool|array
+    {
+        $paginated = $this->xotGetTablePaginated();
+
+        if (is_bool($paginated)) {
+            return $paginated;
+        }
+
+        /** @var array<int|string> $options */
+        $options = $paginated;
+
+        return $options;
+    }
+
+    /**
+     * @return array<string>
+     */
+    protected function getSearchableColumns(): array
+    {
+        /** @var array<string> $columns */
+        $columns = $this->xotSearchableColumns();
+
+        return $columns;
+    }
+
+    /**
+     * @return array<string, Action>
+     */
+    protected function getHeaderActions(): array
+    {
+        /** @var array<string, Action> $actions */
+        $actions = $this->xotGetHeaderActions();
+
+        return $actions;
+    }
+
+    /**
+     * @param array<string, bool|float|int|string|null> $params
+     */
+    public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
+    {
+        return static::$resource::trans($key, $exceptionIfNotExist, $params);
+    }
 
     protected static string $relationship = '';
 

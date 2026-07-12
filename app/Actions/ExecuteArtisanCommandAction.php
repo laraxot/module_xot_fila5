@@ -48,16 +48,15 @@ class ExecuteArtisanCommandAction
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
-     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
-     *
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-     *
+     * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
      * @return array{
      *     command: string,
      *     output: array<int, string>,
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
+     *
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      */
     public function execute(string $command): array
     {
@@ -79,50 +78,23 @@ class ExecuteArtisanCommandAction
                 ->timeout(300)
                 ->start();
 
-            // Cattura l'output in tempo reale
             while ($process->running()) {
-                $data = $process->latestOutput();
-                if (! empty($data)) {
-                    $formattedData = trim($data);
-                    if (! empty($formattedData)) {
-                        $output[] = $formattedData;
-                        Event::dispatch('artisan-command.output', [$command, $formattedData]);
-                    }
-                }
-
-                $errorData = $process->latestErrorOutput();
-                if (! empty($errorData)) {
-                    $formattedError = trim($errorData);
-                    if (! empty($formattedError)) {
-                        $output[] = '[ERROR] '.$formattedError;
-                        Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$formattedError]);
-                    }
-                }
-
-                usleep(50000); // 50ms di pausa per evitare sovraccarico della CPU
+                $this->appendProcessStream($process->latestOutput(), $command, $output);
+                $this->appendProcessStream($process->latestErrorOutput(), $command, $output, true);
+                usleep(50000);
             }
 
             $result = $process->wait();
 
-            // Cattura qualsiasi output residuo
-            $finalOutput = trim($result->output());
-            if (! empty($finalOutput)) {
-                $output[] = $finalOutput;
-                Event::dispatch('artisan-command.output', [$command, $finalOutput]);
-            }
-
-            $finalErrorOutput = trim($result->errorOutput());
-            if (! empty($finalErrorOutput)) {
-                $output[] = '[ERROR] '.$finalErrorOutput;
-                Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$finalErrorOutput]);
-            }
+            $this->appendProcessStream($result->output(), $command, $output);
+            $this->appendProcessStream($result->errorOutput(), $command, $output, true);
 
             if ($result->successful()) {
                 $status = 'completed';
                 Event::dispatch('artisan-command.completed', [$command]);
             } else {
                 $status = 'failed';
-                Event::dispatch('artisan-command.failed', [$command, $finalErrorOutput]);
+                Event::dispatch('artisan-command.failed', [$command, $result->errorOutput()]);
             }
 
             return [
@@ -138,10 +110,28 @@ class ExecuteArtisanCommandAction
     }
 
     /**
+     * @param  array<int, string>  $output
+     */
+    private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
+    {
+        if ($data === '') {
+            return;
+        }
+
+        $formatted = trim($data);
+        if ($formatted === '') {
+            return;
+        }
+
+        $line = $isError ? '[ERROR] '.$formatted : $formatted;
+        $output[] = $line;
+        Event::dispatch('artisan-command.output', [$command, $line]);
+    }
+
+    /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
-     * @param string $command Il comando da verificare
-     *
+     * @param  string  $command  Il comando da verificare
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

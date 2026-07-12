@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
+use InvalidArgumentException;
 use Spatie\QueueableAction\QueueableAction;
+use Throwable;
 use Webmozart\Assert\Assert;
 
 /**
@@ -27,11 +29,20 @@ class SafeObjectCastAction
     use QueueableAction;
 
     /**
+     * Ottiene una proprieta con cast sicuro usando l'entrypoint canonico delle action.
+     *
+     * Il tipo supportato e string, int, float, bool o array.
+     */
+    public function execute(object $object, string $property, string $type = 'string', mixed $default = null): mixed
+    {
+        return $this->getTypedProperty($object, $property, $type, $default);
+    }
+
+    /**
      * Verifica se un oggetto ha una proprietà specifica.
      *
-     * @param object $object   L'oggetto da verificare
-     * @param string $property Il nome della proprietà
-     *
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
      * @return bool True se l'oggetto ha la proprietà
      */
     public function hasProperty(object $object, string $property): bool
@@ -44,9 +55,8 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore non null.
      *
-     * @param object $object   L'oggetto da verificare
-     * @param string $property Il nome della proprietà
-     *
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
      * @return bool True se l'oggetto ha la proprietà con valore non null
      */
     public function hasNonNullProperty(object $object, string $property): bool
@@ -54,7 +64,7 @@ class SafeObjectCastAction
         Assert::stringNotEmpty($property);
 
         $hasProperty = isset($object->{$property});
-        $isNotNull = $hasProperty && null !== $object->{$property};
+        $isNotNull = $hasProperty && $object->{$property} !== null;
 
         Assert::true(
             ! $hasProperty || $isNotNull,
@@ -67,9 +77,8 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha una proprietà con valore non vuoto.
      *
-     * @param object $object   L'oggetto da verificare
-     * @param string $property Il nome della proprietà
-     *
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
      * @return bool True se l'oggetto ha la proprietà con valore non vuoto
      */
     public function hasNonEmptyProperty(object $object, string $property): bool
@@ -82,16 +91,15 @@ class SafeObjectCastAction
 
         $value = $object->{$property};
 
-        return '' !== $value;
+        return $value !== '';
     }
 
     /**
      * Ottiene una proprietà con cast sicuro a string.
      *
-     * @param object      $object   L'oggetto da cui ottenere la proprietà
-     * @param string      $property Il nome della proprietà
-     * @param string|null $default  Valore di default se la proprietà non esiste o è null
-     *
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string|null  $default  Valore di default se la proprietà non esiste o è null
      * @return string Il valore della proprietà convertito in string
      */
     public function getStringProperty(object $object, string $property, ?string $default = ''): string
@@ -110,10 +118,9 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a int.
      *
-     * @param object   $object   L'oggetto da cui ottenere la proprietà
-     * @param string   $property Il nome della proprietà
-     * @param int|null $default  Valore di default se la proprietà non esiste o è null
-     *
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  int|null  $default  Valore di default se la proprietà non esiste o è null
      * @return int Il valore della proprietà convertito in int
      */
     public function getIntProperty(object $object, string $property, ?int $default = 0): int
@@ -132,10 +139,9 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a float.
      *
-     * @param object     $object   L'oggetto da cui ottenere la proprietà
-     * @param string     $property Il nome della proprietà
-     * @param float|null $default  Valore di default se la proprietà non esiste o è null
-     *
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  float|null  $default  Valore di default se la proprietà non esiste o è null
      * @return float Il valore della proprietà convertito in float
      */
     public function getFloatProperty(object $object, string $property, ?float $default = 0.0): float
@@ -154,10 +160,9 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a boolean.
      *
-     * @param object    $object   L'oggetto da cui ottenere la proprietà
-     * @param string    $property Il nome della proprietà
-     * @param bool|null $default  Valore di default se la proprietà non esiste o è null
-     *
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  bool|null  $default  Valore di default se la proprietà non esiste o è null
      * @return bool Il valore della proprietà convertito in boolean
      */
     public function getBooleanProperty(object $object, string $property, ?bool $default = false): bool
@@ -176,11 +181,10 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a array.
      *
-     * @param object     $object   L'oggetto da cui ottenere la proprietà
-     * @param string     $property Il nome della proprietà
-     * @param array|null $default  Valore di default se la proprietà non esiste o è null
-     *
-     * @return array Il valore della proprietà convertito in array
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  array<int|string, mixed>|null  $default  Valore di default se la proprietà non esiste o è null
+     * @return array<int|string, mixed> Il valore della proprietà convertito in array
      */
     public function getArrayProperty(object $object, string $property, ?array $default = []): array
     {
@@ -198,11 +202,10 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con cast sicuro a un tipo specifico.
      *
-     * @param object $object   L'oggetto da cui ottenere la proprietà
-     * @param string $property Il nome della proprietà
-     * @param string $type     Il tipo di cast desiderato (string, int, float, bool, array)
-     * @param mixed  $default  Valore di default se la proprietà non esiste o è null
-     *
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
+     * @param  mixed  $default  Valore di default se la proprietà non esiste o è null
      * @return mixed Il valore della proprietà convertito nel tipo specificato
      */
     public function getTypedProperty(object $object, string $property, string $type, mixed $default = null): mixed
@@ -215,18 +218,21 @@ class SafeObjectCastAction
             'int' => $this->getIntProperty($object, $property, is_int($default) ? $default : null),
             'float' => $this->getFloatProperty($object, $property, is_float($default) ? $default : null),
             'bool' => $this->getBooleanProperty($object, $property, is_bool($default) ? $default : null),
-            'array' => $this->getArrayProperty($object, $property, is_array($default) ? $default : null),
-            default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
+            'array' => $this->getArrayProperty(
+                $object,
+                $property,
+                is_array($default) ? app(SafeArrayCastAction::class)->execute($default) : null,
+            ),
+            default => throw new InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
 
     /**
      * Verifica se un oggetto ha una proprietà con valore specifico.
      *
-     * @param object $object        L'oggetto da verificare
-     * @param string $property      Il nome della proprietà
-     * @param mixed  $expectedValue Il valore atteso
-     *
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $property  Il nome della proprietà
+     * @param  mixed  $expectedValue  Il valore atteso
      * @return bool True se l'oggetto ha la proprietà con il valore atteso
      */
     public function hasPropertyValue(object $object, string $property, mixed $expectedValue): bool
@@ -245,12 +251,11 @@ class SafeObjectCastAction
     /**
      * Ottiene una proprietà con validazione di tipo e valore.
      *
-     * @param object        $object    L'oggetto da cui ottenere la proprietà
-     * @param string        $property  Il nome della proprietà
-     * @param string        $type      Il tipo di cast desiderato
-     * @param callable|null $validator Funzione di validazione opzionale
-     * @param mixed         $default   Valore di default se la validazione fallisce
-     *
+     * @param  object  $object  L'oggetto da cui ottenere la proprietà
+     * @param  string  $property  Il nome della proprietà
+     * @param  string  $type  Il tipo di cast desiderato
+     * @param  callable|null  $validator  Funzione di validazione opzionale
+     * @param  mixed  $default  Valore di default se la validazione fallisce
      * @return mixed Il valore della proprietà validato e convertito
      */
     public function getValidatedProperty(
@@ -265,7 +270,7 @@ class SafeObjectCastAction
 
         $value = $this->getTypedProperty($object, $property, $type, $default);
 
-        if (null !== $validator && ! $validator($value)) {
+        if ($validator !== null && ! $validator($value)) {
             return $default;
         }
 
@@ -275,9 +280,8 @@ class SafeObjectCastAction
     /**
      * Verifica se un oggetto ha un metodo specifico.
      *
-     * @param object $object L'oggetto da verificare
-     * @param string $method Il nome del metodo
-     *
+     * @param  object  $object  L'oggetto da verificare
+     * @param  string  $method  Il nome del metodo
      * @return bool True se l'oggetto ha il metodo
      */
     public function hasMethod(object $object, string $method): bool
@@ -290,11 +294,10 @@ class SafeObjectCastAction
     /**
      * Esegue un metodo su un oggetto in modo sicuro.
      *
-     * @param object $object     L'oggetto su cui eseguire il metodo
-     * @param string $method     Il nome del metodo
-     * @param array  $parameters I parametri del metodo
-     * @param mixed  $default    Valore di default se il metodo non esiste o fallisce
-     *
+     * @param  object  $object  L'oggetto su cui eseguire il metodo
+     * @param  string  $method  Il nome del metodo
+     * @param  array<mixed>  $parameters  I parametri del metodo
+     * @param  mixed  $default  Valore di default se il metodo non esiste o fallisce
      * @return mixed Il risultato del metodo o il valore di default
      */
     public function callMethodSafely(
@@ -311,7 +314,7 @@ class SafeObjectCastAction
 
         try {
             return $object->{$method}(...$parameters);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             return $default;
         }
     }

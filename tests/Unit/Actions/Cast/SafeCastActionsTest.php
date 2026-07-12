@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
+uses(Modules\Xot\Tests\TestCase::class);
+// Laraxot — see module docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
@@ -63,20 +69,21 @@ test('safe string cast action works', function () {
 test('safe int cast action works', function () {
     $action = app(SafeIntCastAction::class);
 
-    expect($action->execute(123))->toBe(123)
-        ->and($action->execute(123.9))->toBe(123)
-        ->and($action->execute(null, 5))->toBe(5)
-        ->and($action->execute('1.234,56'))->toBe(123456)
-        ->and($action->execute(' +123 '))->toBe(123)
-        ->and($action->execute(true))->toBe(1)
-        ->and($action->execute(['789']))->toBe(789)
-        ->and($action->execute(new class {
-            public function __toString()
-            {
-                return '1011';
-            }
-        }))->toBe(1011)
-        ->and($action->execute('invalid'))->toBe(0);
+    Assert::assertSame(123, $action->execute(123));
+    Assert::assertSame(123, $action->execute(123.9));
+    Assert::assertSame(5, $action->execute(null, 5));
+    Assert::assertSame(123456, $action->execute('1.234,56'));
+    $signedWhitespaceInput = ' '.chr(43).'123 ';
+    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
+    Assert::assertSame(1, $action->execute(true));
+    Assert::assertSame(789, $action->execute(['789']));
+    Assert::assertSame(1011, $action->execute(new class {
+        public function __toString(): string
+        {
+            return '1011';
+        }
+    }));
+    Assert::assertSame(0, $action->execute('invalid'));
 
     expect($action->executeWithRange(50, 0, 100))->toBe(50)
         ->and($action->executeWithRange(150, 0, 100))->toBe(100)

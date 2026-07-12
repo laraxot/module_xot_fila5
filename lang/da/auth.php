@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/da/auth.php
 return [
     'failed' => 'Disse legitimationsoplysninger passer ikke vores optegnelser.',
     'general_error' => 'Du har ikke adgang til at udføre denne handling.',

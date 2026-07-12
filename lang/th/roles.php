@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/th/roles.php
 return [
     'administrator' => 'แอดมิน',
     'user' => 'ผู้ใช้',

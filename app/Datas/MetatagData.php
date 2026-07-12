@@ -14,6 +14,7 @@ use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 
 use function Safe\file_get_contents;
 
@@ -399,14 +400,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getFilamentColors(): array
     {
-        return [
-            'danger' => Color::Red,
-            'gray' => Color::Zinc,
-            'info' => Color::Blue,
-            'primary' => Color::Amber,
-            'success' => Color::Green,
-            'warning' => Color::Amber,
-        ];
+        return app(GetPaFilamentPaletteAction::class)->execute();
     }
 
     /**

@@ -4,15 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
-use function Safe\file_put_contents;
-
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\VarExporter\VarExporter;
+
+use function Safe\file_put_contents;
 
 class SavePhpArrayAction
 {
     use QueueableAction;
 
+    /**
+     * @param  array<int|string, mixed>  $data
+     */
     public function execute(array $data, string $filename): bool
     {
         $exported = VarExporter::export($data);

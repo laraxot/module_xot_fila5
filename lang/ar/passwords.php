@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// Canon: Modules/Xot/docs/wiki — domain i18n only.
+// File: lang/ar/passwords.php
 return [
     'password' => 'كلمة المرور يجب أن تحتوي على 6 أحرف على الأقل وتطابق التأكيد.',
     'reset' => 'لقد تم إعادة تعيين كلمة مرورك!',

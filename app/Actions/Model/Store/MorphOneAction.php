@@ -10,6 +10,8 @@ use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+use function Safe\json_decode;
+
 class MorphOneAction
 {
     use QueueableAction;

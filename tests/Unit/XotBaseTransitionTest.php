@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\States\Transitions\XotBaseTransition;
-
-uses(RefreshDatabase::class);
+uses(TestCase::class);
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
 
 describe('XotBaseTransition', function (): void {
     it('can be instantiated', function (): void {

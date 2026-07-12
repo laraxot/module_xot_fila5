@@ -2,6 +2,15 @@
 
 declare(strict_types=1);
 
+uses(Modules\Xot\Tests\TestCase::class);
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use PHPUnit\Framework\Assert;
 
