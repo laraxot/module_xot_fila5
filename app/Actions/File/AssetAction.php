@@ -8,10 +8,11 @@ use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 use function Safe\copy;
+
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class AssetAction
 {
@@ -22,10 +23,11 @@ class AssetAction
     /**
      * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
      *
-     * @param  string  $path  Il percorso dell'asset
-     * @return string Il percorso pubblico dell'asset
+     * @param string $path Il percorso dell'asset
      *
-     * @throws Exception Se il file sorgente non esiste o non può essere copiato
+     * @throws \Exception Se il file sorgente non esiste o non può essere copiato
+     *
+     * @return string Il percorso pubblico dell'asset
      */
     public function execute(string $path): string
     {
@@ -110,13 +112,13 @@ class AssetAction
             if (isRunningTestBench()) {
                 return $originalPath;
             }
-            throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
+            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
         }
 
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
-        $forceCopy = app()->environment() !== 'production';
+        $forceCopy = 'production' !== app()->environment();
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
         $asset = Str::replace(url(''), '', asset($assetPath));
@@ -135,7 +137,7 @@ class AssetAction
 
             try {
                 File::copy($from, $to);
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 $this->throwCopyException($e, $path, $from, $to);
             }
         }
@@ -154,9 +156,9 @@ class AssetAction
     /**
      * Throws a formatted exception for a file copy error.
      */
-    private function throwCopyException(Exception $e, string $path, string $from, string $to): void
+    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
     {
-        throw new Exception('message:['.$e->getMessage().']
+        throw new \Exception('message:['.$e->getMessage().']
             public_path ['.public_path().']
             path ['.$path.']
             file from ['.$from.']

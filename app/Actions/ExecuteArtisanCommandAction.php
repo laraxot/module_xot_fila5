@@ -39,15 +39,16 @@ class ExecuteArtisanCommandAction
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
-     * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
+     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
+     *
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+     *
      * @return array{
      *     command: string,
      *     output: array<int, string>,
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
-     *
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      */
     public function execute(string $command): array
     {
@@ -101,16 +102,16 @@ class ExecuteArtisanCommandAction
     }
 
     /**
-     * @param  array<int, string>  $output
+     * @param array<int, string> $output
      */
     private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
     {
-        if ($data === '') {
+        if ('' === $data) {
             return;
         }
 
         $formatted = trim($data);
-        if ($formatted === '') {
+        if ('' === $formatted) {
             return;
         }
 
@@ -122,7 +123,8 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
-     * @param  string  $command  Il comando da verificare
+     * @param string $command Il comando da verificare
+     *
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

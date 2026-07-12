@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
-use Modules\Xot\Contracts\PdfBuilderContract;
 use Modules\Xot\Adapters\PdfBuilderAdapter;
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
+use Modules\Xot\Contracts\PdfBuilderContract;
 
 use function Safe\base64_decode;
+
+use Spatie\QueueableAction\QueueableAction;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class MakePdfSpatieTestAction
 {
@@ -18,7 +19,7 @@ class MakePdfSpatieTestAction
     /**
      * Build a minimal Spatie PDF download response from a generic test view.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function execute(
         array $data = [],
@@ -40,7 +41,7 @@ class MakePdfSpatieTestAction
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     private function makePdfBuilder(string $view, array $data, string $filename): PdfBuilderContract
     {
@@ -71,17 +72,17 @@ class MakePdfSpatieTestAction
                 $browsershot->showBackground();
 
                 $nodeBinary = config('laravel-pdf.browsershot.node_binary');
-                if (is_string($nodeBinary) && $nodeBinary !== '' && method_exists($browsershot, 'setNodeBinary')) {
+                if (is_string($nodeBinary) && '' !== $nodeBinary && method_exists($browsershot, 'setNodeBinary')) {
                     $browsershot->setNodeBinary($nodeBinary);
                 }
 
                 $npmBinary = config('laravel-pdf.browsershot.npm_binary');
-                if (is_string($npmBinary) && $npmBinary !== '' && method_exists($browsershot, 'setNpmBinary')) {
+                if (is_string($npmBinary) && '' !== $npmBinary && method_exists($browsershot, 'setNpmBinary')) {
                     $browsershot->setNpmBinary($npmBinary);
                 }
 
                 $chromePath = config('laravel-pdf.browsershot.chrome_path');
-                if (is_string($chromePath) && $chromePath !== '' && method_exists($browsershot, 'setChromePath')) {
+                if (is_string($chromePath) && '' !== $chromePath && method_exists($browsershot, 'setChromePath')) {
                     $browsershot->setChromePath($chromePath);
                 }
             });

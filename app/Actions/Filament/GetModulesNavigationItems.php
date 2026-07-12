@@ -14,10 +14,11 @@ use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
+
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
@@ -114,7 +115,7 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
-                    if ($user === null) {
+                    if (null === $user) {
                         return false;
                     }
 

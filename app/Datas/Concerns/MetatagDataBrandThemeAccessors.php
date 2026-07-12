@@ -8,10 +8,10 @@ use Filament\Support\Colors\Color;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 
 trait MetatagDataBrandThemeAccessors
 {

@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Livewire\Wireable;
 use Modules\Tenant\Services\TenantService;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 
 use function Safe\file_get_contents;
 

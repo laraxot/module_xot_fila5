@@ -22,9 +22,9 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\View\Composers\XotComposer;
 
 use function Safe\realpath;
