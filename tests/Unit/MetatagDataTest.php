@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
-
-use Filament\Support\Colors\Color;
-use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
+use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

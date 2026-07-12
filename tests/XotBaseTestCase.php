@@ -342,39 +342,24 @@ abstract class XotBaseTestCase extends BaseTestCase
         $doc = 'laravel/Modules/Xot/docs/wiki/concepts/fixcity-data-sqlite-pest-bootstrap.md';
 
         if (! is_file($database)) {
-            throw new \RuntimeException(
-                'Pest bootstrap blocked: fixcity_data.sqlite missing at '.$database.'. '
-                .'Restore from team backup or run forward-only migrate once (no migrate:fresh, no --force). '
-                .'See '.$doc
-            );
+            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite missing at '.$database.'. Restore from team backup or run forward-only migrate once (no migrate:fresh, no --force). See '.$doc);
         }
 
         $size = filesize($database);
         if (false === $size || $size < 100) {
-            throw new \RuntimeException(
-                'Pest bootstrap blocked: fixcity_data.sqlite is empty or truncated at '.$database
-                .' ('.(false === $size ? 'unknown' : (string) $size).' bytes). '
-                .'Do not use touch — copy a migrated file or run `cd laravel && php artisan migrate` (forward-only). '
-                .'See '.$doc
-            );
+            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite is empty or truncated at '.$database.' ('.(false === $size ? 'unknown' : (string) $size).' bytes). Do not use touch — copy a migrated file or run `cd laravel && php artisan migrate` (forward-only). See '.$doc);
         }
 
         $handle = fopen($database, 'rb');
         if (false === $handle) {
-            throw new \RuntimeException(
-                'Pest bootstrap blocked: cannot read fixcity_data.sqlite at '.$database
-            );
+            throw new \RuntimeException('Pest bootstrap blocked: cannot read fixcity_data.sqlite at '.$database);
         }
 
         $header = fread($handle, 16);
         fclose($handle);
 
         if (false === $header || ! str_starts_with($header, 'SQLite format 3')) {
-            throw new \RuntimeException(
-                'Pest bootstrap blocked: fixcity_data.sqlite is not a valid SQLite database at '.$database.'. '
-                .'Replace with a migrated database (forward-only `php artisan migrate`). '
-                .'See '.$doc
-            );
+            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite is not a valid SQLite database at '.$database.'. Replace with a migrated database (forward-only `php artisan migrate`). See '.$doc);
         }
     }
 

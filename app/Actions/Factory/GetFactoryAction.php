@@ -28,10 +28,11 @@ class GetFactoryAction
     /**
      * Execute the function with the given model class.
      *
-     * @param  string  $model_class  the class name of the model
-     * @return Factory<covariant Model>
+     * @param string $model_class the class name of the model
      *
      * @throws \Exception when the factory file cannot be loaded or generated
+     *
+     * @return Factory<covariant Model>
      */
     public function execute(string $model_class): Factory
     {
@@ -63,7 +64,8 @@ class GetFactoryAction
     /**
      * Get the factory class name for a model class.
      *
-     * @param  string  $model_class  The model class name
+     * @param string $model_class The model class name
+     *
      * @return string The fully qualified factory class name
      */
     public function getFactoryClass(string $model_class): string
@@ -88,7 +90,7 @@ class GetFactoryAction
     /**
      * Create a factory for the given model class.
      *
-     * @param  string  $model_class  The class name of the model to create the factory for
+     * @param string $model_class The class name of the model to create the factory for
      */
     public function createFactory(string $model_class): void
     {
@@ -100,7 +102,7 @@ class GetFactoryAction
         // Estraiamo il nome del modulo dal namespace della classe
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
-        if ($module_parts === '') {
+        if ('' === $module_parts) {
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
@@ -122,7 +124,7 @@ class GetFactoryAction
     {
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
-        if ($module_parts === '') {
+        if ('' === $module_parts) {
             throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
@@ -153,7 +155,8 @@ class GetFactoryAction
     }
 
     /**
-     * @param  class-string  $factory_class
+     * @param class-string $factory_class
+     *
      * @return Factory<covariant Model>
      */
     private function instantiateFactory(string $factory_class): Factory
