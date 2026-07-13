@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Composer;
 
 use Composer\Autoload\ClassLoader;
-use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Registra PSR-4 fuori dal root composer.json (temi e seeders legacy app-level).
@@ -15,8 +14,6 @@ use Spatie\QueueableAction\QueueableAction;
  */
 final class RegisterRuntimePsr4NamespacesAction
 {
-    use QueueableAction;
-
     /**
      * @return array<string, string|list<string>>
      */

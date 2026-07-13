@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
-use Modules\Xot\Adapters\PdfBuilderAdapter;
 use Modules\Xot\Contracts\PdfBuilderContract;
+use Modules\Xot\Adapters\PdfBuilderAdapter;
 
 use function Safe\base64_decode;
 

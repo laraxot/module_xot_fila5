@@ -31,7 +31,6 @@ use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -116,8 +115,6 @@ trait HasXotTable
         $columns = [];
 
         foreach (array_values($this->getTableColumns()) as $column) {
-            Assert::isInstanceOf($column, Column::class);
-            /** @var Column $gridColumn */
             $gridColumn = clone $column;
 
             if ($gridColumn instanceof TextColumn) {
@@ -192,15 +189,10 @@ trait HasXotTable
          * Assert::isInstanceOf($model, Model::class);
          */
         // Configurazione base della tabella
-        /** @var array<string, Column|ColumnGroup|LayoutComponent> $listColumns */
-        $listColumns = $this->getTableColumns();
-        /** @var array<int, Column|ColumnGroup|LayoutComponent> $gridColumns */
-        $gridColumns = $this->getGridTableColumns();
-
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->getTableHeading())
-            ->columns($this->layoutView->getTableColumns($listColumns, $gridColumns))
+            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->getTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
@@ -295,12 +287,16 @@ trait HasXotTable
             /** @var Relation|Builder $relationship */
             $relationship = $this->getRelationship();
 
-            if (method_exists($relationship, 'getTable')
+            // @phpstan-ignore-next-line function.alreadyNarrowedType
+            // (in RelationManager, always object; in ListRecords, may not be)
+            if (is_object($relationship)
+                && method_exists($relationship, 'getTable')
                 && method_exists($relationship, 'getPivotClass')
             ) {
                 $pivotClass = $relationship->getPivotClass();
 
-                if ((\is_object($pivotClass) || \is_string($pivotClass))
+                // Type guard: ensure pivotClass is object/string with getKeyName method
+                if ((is_object($pivotClass) || is_string($pivotClass))
                     && method_exists($pivotClass, 'getKeyName')
                 ) {
                     $actions['detach'] = DetachAction::make()
@@ -380,7 +376,7 @@ trait HasXotTable
             return $model;
         }
 
-        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**

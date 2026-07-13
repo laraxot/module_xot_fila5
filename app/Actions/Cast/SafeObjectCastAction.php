@@ -27,16 +27,6 @@ class SafeObjectCastAction
     use QueueableAction;
 
     /**
-     * Ottiene una proprieta con cast sicuro usando l'entrypoint canonico delle action.
-     *
-     * Il tipo supportato e string, int, float, bool o array.
-     */
-    public function execute(object $object, string $property, string $type = 'string', mixed $default = null): mixed
-    {
-        return $this->getTypedProperty($object, $property, $type, $default);
-    }
-
-    /**
      * Verifica se un oggetto ha una proprietà specifica.
      *
      * @param object $object   L'oggetto da verificare

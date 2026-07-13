@@ -79,23 +79,50 @@ class ExecuteArtisanCommandAction
                 ->timeout(300)
                 ->start();
 
+            // Cattura l'output in tempo reale
             while ($process->running()) {
-                $this->appendProcessStream($process->latestOutput(), $command, $output);
-                $this->appendProcessStream($process->latestErrorOutput(), $command, $output, true);
-                usleep(50000);
+                $data = $process->latestOutput();
+                if (! empty($data)) {
+                    $formattedData = trim($data);
+                    if (! empty($formattedData)) {
+                        $output[] = $formattedData;
+                        Event::dispatch('artisan-command.output', [$command, $formattedData]);
+                    }
+                }
+
+                $errorData = $process->latestErrorOutput();
+                if (! empty($errorData)) {
+                    $formattedError = trim($errorData);
+                    if (! empty($formattedError)) {
+                        $output[] = '[ERROR] '.$formattedError;
+                        Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$formattedError]);
+                    }
+                }
+
+                usleep(50000); // 50ms di pausa per evitare sovraccarico della CPU
             }
 
             $result = $process->wait();
 
-            $this->appendProcessStream($result->output(), $command, $output);
-            $this->appendProcessStream($result->errorOutput(), $command, $output, true);
+            // Cattura qualsiasi output residuo
+            $finalOutput = trim($result->output());
+            if (! empty($finalOutput)) {
+                $output[] = $finalOutput;
+                Event::dispatch('artisan-command.output', [$command, $finalOutput]);
+            }
+
+            $finalErrorOutput = trim($result->errorOutput());
+            if (! empty($finalErrorOutput)) {
+                $output[] = '[ERROR] '.$finalErrorOutput;
+                Event::dispatch('artisan-command.output', [$command, '[ERROR] '.$finalErrorOutput]);
+            }
 
             if ($result->successful()) {
                 $status = 'completed';
                 Event::dispatch('artisan-command.completed', [$command]);
             } else {
                 $status = 'failed';
-                Event::dispatch('artisan-command.failed', [$command, $result->errorOutput()]);
+                Event::dispatch('artisan-command.failed', [$command, $finalErrorOutput]);
             }
 
             return [
@@ -108,25 +135,6 @@ class ExecuteArtisanCommandAction
             Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
             throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
-    }
-
-    /**
-     * @param array<int, string> $output
-     */
-    private function appendProcessStream(string $data, string $command, array &$output, bool $isError = false): void
-    {
-        if ('' === $data) {
-            return;
-        }
-
-        $formatted = trim($data);
-        if ('' === $formatted) {
-            return;
-        }
-
-        $line = $isError ? '[ERROR] '.$formatted : $formatted;
-        $output[] = $line;
-        Event::dispatch('artisan-command.output', [$command, $line]);
     }
 
     /**

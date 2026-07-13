@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Format;
 
+use Error;
+
 class PgsqlFormatAction extends BaseFormatAction
 {
     #[\Override]
@@ -15,7 +17,7 @@ class PgsqlFormatAction extends BaseFormatAction
             'day' => 'YYYY-MM-DD',
             'month' => 'YYYY-MM',
             'year' => 'YYYY',
-            default => throw new \InvalidArgumentException('Invalid interval.'),
+            default => throw new Error('Invalid interval.'),
         };
 
         return sprintf("to_char(%s, '%s')", $column, $format);

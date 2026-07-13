@@ -6,13 +6,10 @@ namespace Modules\Xot\Actions\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 class FilterRelationsAction
 {
-    use QueueableAction;
-
     /**
      * @param array<string, mixed> $relations
      *

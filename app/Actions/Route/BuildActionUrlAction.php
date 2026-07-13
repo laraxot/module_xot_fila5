@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
-use Illuminate\Routing\Route;
-use Illuminate\Routing\Router;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -19,15 +18,16 @@ class BuildActionUrlAction
         $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
         $row = $params['row'] ?? (object) [];
         $query = is_array($params['query'] ?? null) ? $params['query'] : [];
-        $route = request()->route();
-        if (! $route instanceof Route || null === $route->getName()) {
+        $routeName = Route::currentRouteName();
+
+        if (null === $routeName) {
             return '#'.$action;
         }
 
-        $target = Str::beforeLast($route->getName(), '.').'.'.$action;
-        $routeParams = $route->parameters();
-        $router = app(Router::class);
+        $target = Str::beforeLast($routeName, '.').'.'.$action;
+        $route = Route::current();
+        $routeParams = $route instanceof \Illuminate\Routing\Route ? $route->parameters() : [];
 
-        return $router->has($target) ? route($target, array_merge($routeParams, [$row], $query)) : '#'.$target;
+        return Route::has($target) ? route($target, array_merge($routeParams, [$row], $query)) : '#'.$target;
     }
 }

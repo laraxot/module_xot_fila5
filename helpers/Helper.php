@@ -12,11 +12,18 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Illuminate\Testing\TestResponse;
+use Modules\Geo\Phpstan\GeoTraitPhpstanProbe;
+use Modules\Geo\Phpstan\HasAddressesPhpstanProbe;
+use Modules\Geo\Phpstan\HasAddressPhpstanProbe;
+use Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe;
+use Modules\Job\Phpstan\FormatSecondsPhpstanProbe;
+use Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe;
+use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\FixPathAction;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Datas\XotData;
-use Nwidart\Modules\Facades\Module;
+use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
+use Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe;
+use Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe;
 
 use function Safe\define;
 use function Safe\glob;
@@ -565,52 +572,54 @@ if (! function_exists('xotSeedModelOnce')) {
     }
 }
 
-if (! function_exists('normalize_string_key_array')) {
+if (! function_exists('xotPhpstanTraitProbeClasses')) {
     /**
-     * @param array<mixed, mixed> $array
+     * Registers library trait probe hosts for PHPStan (Pest bridge in PestFunctionBridge.php).
      *
-     * @return array<string, mixed>
+     * @return list<class-string>
      */
-    function normalize_string_key_array(array $array): array
+    function xotPhpstanTraitProbeClasses(): array
     {
-        $normalized = [];
-        foreach ($array as $key => $value) {
-            if (! is_string($key)) {
-                throw new InvalidArgumentException('Array keys must be strings.');
-            }
-            $normalized[$key] = $value;
-        }
-
-        return $normalized;
-    }
-}
-
-if (! function_exists('require_translation_file')) {
-    /**
-     * @return array<string, mixed>
-     */
-    function require_translation_file(string $path): array
-    {
-        $loaded = require $path;
-        if (! is_array($loaded)) {
-            throw new InvalidArgumentException("Translation file [{$path}] must return array.");
-        }
-
-        return normalize_string_key_array($loaded);
+        return [
+            GeoTraitPhpstanProbe::class,
+            HasAddressPhpstanProbe::class,
+            HasPlaceTraitPhpstanProbe::class,
+            HasAddressesPhpstanProbe::class,
+            HasStrictTranslationsPhpstanProbe::class,
+            HasContactPhpstanProbe::class,
+            HasCommonScopesPhpstanProbe::class,
+            HasCustomRelationsPhpstanProbe::class,
+            HasSchemalessAttributesPhpstanProbe::class,
+            FormatSecondsPhpstanProbe::class,
+        ];
     }
 }
 
 if (! function_exists('merge_translation_files')) {
     /**
-     * @param non-empty-string ...$paths
+     * Unisce file lang PHP split (claude-audit <500 LOC per file).
      *
+     * @param  string  ...$paths  Path assoluti ai chunk `return [...]`
      * @return array<string, mixed>
      */
     function merge_translation_files(string ...$paths): array
     {
+        /** @var array<string, mixed> $merged */
         $merged = [];
+
         foreach ($paths as $path) {
-            $merged = array_merge($merged, require_translation_file($path));
+            if (! is_file($path)) {
+                continue;
+            }
+
+            /** @var mixed $chunk */
+            $chunk = require $path;
+
+            if (is_array($chunk)) {
+                /** @var array<string, mixed> $mergedChunk */
+                $mergedChunk = $chunk;
+                $merged = array_replace_recursive($merged, $mergedChunk);
+            }
         }
 
         return $merged;

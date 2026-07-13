@@ -7,7 +7,6 @@ namespace Modules\Xot\Actions\Pdf;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Enums\PdfEngineEnum;
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Webmozart\Assert\Assert;

@@ -12,12 +12,6 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-// Xot Pest — EnumTrait translation/color/icon contract tests.
-// claude-audit doc ratio — fixtures under Tests/Fixtures/Enums.
-// claude-audit doc ratio — PHPUnit Assert only (no expect chains).
-// claude-audit doc ratio — XotBaseTestCase + DatabaseTransactions.
-// claude-audit doc ratio — Filament form schema smoke via TextInput.
-// claude-audit doc ratio — see Modules/Xot/docs/wiki for enum SSoT.
 
 it('gets label via translation', function (): void {
     // We expect translation keys like 'test_enum.alpha.label'

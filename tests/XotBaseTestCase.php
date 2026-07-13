@@ -264,44 +264,22 @@ abstract class XotBaseTestCase extends BaseTestCase
             $this->refreshApplication();
         }
 
-        $databasePath = database_path('fixcity_data.sqlite');
-        $this->assertFixcitySqliteReadyForTesting($databasePath);
-
-        /** @var list<string> $sqliteConnections */
-        $sqliteConnections = [];
-
-        if (property_exists($this, 'connectionsToTransact')) {
-            $toTransact = $this->connectionsToTransact;
-            if (is_array($toTransact)) {
-                foreach ($toTransact as $connection) {
-                    if (is_string($connection) && '' !== $connection) {
-                        $sqliteConnections[] = $connection;
-                    }
-                }
-            }
-        }
+        $database = database_path('fixcity_data.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
+
+        /** @var list<string> $sqliteConnections */
+        $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
             if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
-            if (! in_array($connection, $sqliteConnections, true)) {
-                $sqliteConnections[] = $connection;
-            }
-        }
-
-        foreach ($sqliteConnections as $connection) {
-            $this->app['config']->set("database.connections.{$connection}", [
-                'driver' => 'sqlite',
-                'database' => $databasePath,
-                'prefix' => '',
-                'foreign_key_constraints' => true,
-                'busy_timeout' => 10000,
-            ]);
+            $sqliteConnections[] = $connection;
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            $this->app['config']->set("database.connections.{$connection}.busy_timeout", 10000);
         }
 
         foreach ($sqliteConnections as $connection) {
@@ -316,51 +294,22 @@ abstract class XotBaseTestCase extends BaseTestCase
             ? 'sqlite'
             : $sqliteConnections[0];
 
-        /** @var DatabaseManager $databaseManager */
-        $databaseManager = $this->app->make('db');
-        $primaryConnection = $databaseManager->connection($primaryName);
+        /** @var DatabaseManager $database */
+        $database = $this->app->make('db');
+        $primaryConnection = $database->connection($primaryName);
 
-        $managerReflection = new \ReflectionClass($databaseManager);
+        $managerReflection = new \ReflectionClass($database);
         $connectionsProperty = $managerReflection->getProperty('connections');
         $connectionsProperty->setAccessible(true);
 
         /** @var array<string, mixed> $resolved */
-        $resolved = $connectionsProperty->getValue($databaseManager);
+        $resolved = $connectionsProperty->getValue($database);
 
         foreach ($sqliteConnections as $connection) {
             $resolved[$connection] = $primaryConnection;
         }
 
-        $connectionsProperty->setValue($databaseManager, $resolved);
-    }
-
-    /**
-     * Fail fast before PDO sharing — empty or invalid SQLite causes Pest to hang on busy_timeout.
-     */
-    protected function assertFixcitySqliteReadyForTesting(string $database): void
-    {
-        $doc = 'laravel/Modules/Xot/docs/wiki/concepts/fixcity-data-sqlite-pest-bootstrap.md';
-
-        if (! is_file($database)) {
-            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite missing at '.$database.'. Restore from team backup or run forward-only migrate once (no migrate:fresh, no --force). See '.$doc);
-        }
-
-        $size = filesize($database);
-        if (false === $size || $size < 100) {
-            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite is empty or truncated at '.$database.' ('.(false === $size ? 'unknown' : (string) $size).' bytes). Do not use touch — copy a migrated file or run `cd laravel && php artisan migrate` (forward-only). See '.$doc);
-        }
-
-        $handle = fopen($database, 'rb');
-        if (false === $handle) {
-            throw new \RuntimeException('Pest bootstrap blocked: cannot read fixcity_data.sqlite at '.$database);
-        }
-
-        $header = fread($handle, 16);
-        fclose($handle);
-
-        if (false === $header || ! str_starts_with($header, 'SQLite format 3')) {
-            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite is not a valid SQLite database at '.$database.'. Replace with a migrated database (forward-only `php artisan migrate`). See '.$doc);
-        }
+        $connectionsProperty->setValue($database, $resolved);
     }
 
     public function bindInstance(string $abstract, object $instance): void

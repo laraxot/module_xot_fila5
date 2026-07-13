@@ -91,7 +91,7 @@ class SafeArrayCastAction
     }
 
     /**
-     * @param array<int|string, mixed> $array
+     * @param array<mixed, mixed> $array
      *
      * @return array<string, mixed>
      */
@@ -110,7 +110,7 @@ class SafeArrayCastAction
      * Converte un valore in array con validazione di chiavi richieste.
      *
      * @param mixed                         $value        Il valore da convertire
-     * @param array<int|string>             $requiredKeys Chiavi che devono essere presenti
+     * @param array<int, string>            $requiredKeys Chiavi che devono essere presenti
      * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
@@ -136,7 +136,7 @@ class SafeArrayCastAction
      * Converte un valore in array con filtro di chiavi.
      *
      * @param mixed                         $value       Il valore da convertire
-     * @param array<int|string>             $allowedKeys Solo queste chiavi saranno mantenute
+     * @param array<int, string>            $allowedKeys Solo queste chiavi saranno mantenute
      * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse
@@ -208,7 +208,7 @@ class SafeArrayCastAction
      * Metodo statico per cast con chiavi richieste.
      *
      * @param mixed                         $value        Il valore da convertire
-     * @param array<int|string>             $requiredKeys Chiavi che devono essere presenti
+     * @param array<int, string>            $requiredKeys Chiavi che devono essere presenti
      * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
@@ -222,7 +222,7 @@ class SafeArrayCastAction
      * Metodo statico per cast con filtro di chiavi.
      *
      * @param mixed                         $value       Il valore da convertire
-     * @param array<int|string>             $allowedKeys Solo queste chiavi saranno mantenute
+     * @param array<int, string>            $allowedKeys Solo queste chiavi saranno mantenute
      * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse

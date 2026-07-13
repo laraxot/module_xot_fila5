@@ -77,7 +77,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-    protected $connection = 'quaeris'; // Module-specific connection
+    protected $connection = 'module_name'; // Module-specific connection
 
     protected $with = [
         'extra', // Always load extra fields
@@ -124,6 +124,19 @@ The module BaseModel is where you add:
 - Module-specific traits (Cachable, HasMedia, etc.)
 - Module-specific relationship loading
 - Module-specific configurations
+
+### Rule 4: Use Contracts for Auditing PHPDocs (CRITICAL)
+Always use `\Modules\Xot\Contracts\ProfileContract|null` for auditing properties managed by the `Updater` trait (`creator`, `updater`, `deleter`). NEVER use the concrete `Profile` model of the module to avoid tight coupling and ensure modular decoupling.
+
+✅ **CORRECT:**
+```php
+/**
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $updater
+ * @property-read \Modules\Xot\Contracts\ProfileContract|null $deleter
+ */
+class Event extends BaseModel { ... }
+```
 
 ## Authentication Model Pattern
 
@@ -193,7 +206,7 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
-- Predictable patterns
+- <nome progetto>able patterns
 - Minimal configuration needed
 
 ## Type Safety and Contracts

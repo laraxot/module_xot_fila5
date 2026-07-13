@@ -3,11 +3,6 @@
 declare(strict_types=1);
 
 uses(Modules\Xot\Tests\TestCase::class);
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
@@ -73,8 +68,7 @@ test('safe int cast action works', function () {
     Assert::assertSame(123, $action->execute(123.9));
     Assert::assertSame(5, $action->execute(null, 5));
     Assert::assertSame(123456, $action->execute('1.234,56'));
-    $signedWhitespaceInput = ' '.chr(43).'123 ';
-    Assert::assertSame(123, $action->execute($signedWhitespaceInput));
+    Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
     Assert::assertSame(1011, $action->execute(new class {

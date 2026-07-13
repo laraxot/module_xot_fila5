@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\define;
 use function Safe\fopen;
@@ -104,6 +105,7 @@ class ArtisanAction
             case 'error-clear':
                 return self::errorClear();
             case 'spatiecache-clear':
+
             default:
                 return '';
         }

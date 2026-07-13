@@ -6,7 +6,6 @@ namespace Modules\Xot\Actions\File;
 
 use BladeUI\Icons\Factory as IconFactory;
 use Illuminate\Support\Facades\App;
-use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Verifica l'esistenza di un SVG registrato utilizzando BladeUI Icons.
@@ -15,8 +14,6 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class SvgExistsAction
 {
-    use QueueableAction;
-
     /**
      * Verifica se l'SVG esiste nei set di icone registrati.
      *

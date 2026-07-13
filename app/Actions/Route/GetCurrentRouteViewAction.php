@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
-use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -14,28 +14,25 @@ class GetCurrentRouteViewAction
 
     public function execute(): string
     {
-        $route = request()->route();
-        if (! $route instanceof Route) {
+        $routeAction = Route::currentRouteAction();
+        if (null === $routeAction) {
             throw new \RuntimeException('Current route action is not available.');
         }
 
-        $routeAction = $route->getActionName();
         $controller = Str::between($routeAction, 'Http\\Controllers\\', 'Controller');
+        $route = Route::current();
         /** @var array<string, mixed> $params */
         $params = [];
-        foreach ($route->parameters() as $key => $value) {
+        foreach ($route instanceof \Illuminate\Routing\Route ? $route->parameters() : [] as $key => $value) {
             if (is_string($key)) {
                 $params[$key] = $value;
             }
         }
 
+        [$containers] = params2ContainerItem($params);
         $params['containers'] = implode('.', array_map(
             static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-            array_values(array_filter(
-                $params,
-                static fn (string $key): bool => str_starts_with($key, 'container'),
-                ARRAY_FILTER_USE_KEY,
-            )),
+            array_values($containers),
         ));
 
         return collect(explode('\\', $controller))

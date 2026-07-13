@@ -34,7 +34,7 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
-     * @param array<array-key, mixed> $input
+     * @param array<string|int, mixed> $input
      *
      * @return array<string, mixed>
      */

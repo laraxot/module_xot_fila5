@@ -18,12 +18,6 @@ describe('HasExtraTrait', function () {
             protected $table = 'test_models';
 
 uses(TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 
             // Mock the getExtraClass method
             public function getExtraClass(): string

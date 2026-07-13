@@ -7,10 +7,10 @@ namespace Modules\Xot\Actions;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_replace;
 
-use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 /**
@@ -324,9 +324,8 @@ class RouteDynAction
         $sub_namespace = self::getNamespace($v, $namespace);
         $curr = null === $curr ? $sub_namespace : $curr;
         Assert::isArray($subs = $v['subs']);
-        /** @var array<int, array<string, mixed>> $subsList */
-        $subsList = array_values($subs);
-        self::dynamic_route($subsList, $sub_namespace, null, $curr);
+        /* @var array<int, array<string, mixed>> $subs */
+        self::dynamic_route($subs, $sub_namespace, null, $curr);
     }
 
     /**

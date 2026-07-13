@@ -81,7 +81,6 @@ abstract class XotBaseState extends State implements StateContract
         // return 'Sei sicuro di voler annullare questo appuntamento?';
     }
 
-    #[\Override]
     public function modalFormSchema(): array
     {
         return [
@@ -186,11 +185,21 @@ abstract class XotBaseState extends State implements StateContract
     {
         $states = static::getStateMapping()->toArray();
 
-        $states = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
+        $mapping = static::getStateMapping();
+        if (! \is_object($mapping) || ! method_exists($mapping, 'toArray')) {
+            return [];
+        }
+        /** @var array<string, mixed> $states */
+        $states = $mapping->toArray();
+
+        $labels = Arr::map($states, fn ($_stateClass, $state) => static::transClass(
             static::class,
-            'states.'.(is_string($state) ? $state : (string) $state).'.label',
+            'states.'.SafeStringCastAction::cast($state).'.label',
         ));
 
-        return $states;
+        /** @var array<string, mixed> $result */
+        $result = $labels;
+
+        return $result;
     }
 }

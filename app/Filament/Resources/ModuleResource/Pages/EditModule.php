@@ -70,4 +70,20 @@ class EditModule extends XotBaseEditRecord
          * Config::set('modules.colors', $colorsConfig);
          */
     }
+
+    /**
+     * @param array<mixed, mixed> $config
+     *
+     * @return array<string, mixed>
+     */
+    private function normalizeConfigArray(array $config): array
+    {
+        $normalized = [];
+
+        foreach ($config as $key => $value) {
+            $normalized[(string) $key] = $value;
+        }
+
+        return $normalized;
+    }
 }

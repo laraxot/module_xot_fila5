@@ -81,7 +81,70 @@ class HandlerDecorator implements ExceptionHandler
 
     public function consoleRenderer(callable $renderer): int
     {
-        return $this->repository->addConsoleRenderer($renderer);
+        return $this->addConsoleRenderer($renderer);
+    }
+
+    /**
+     * Register a custom handler to report exceptions.
+     */
+    private function addReporter(callable $reporter): int
+    {
+        return array_unshift($this->reporters, $reporter);
+    }
+
+    /**
+     * Register a custom handler to render exceptions.
+     */
+    private function addRenderer(callable $renderer): int
+    {
+        return array_unshift($this->renderers, $renderer);
+    }
+
+    /**
+     * Register a custom handler to render exceptions in console.
+     */
+    private function addConsoleRenderer(callable $renderer): int
+    {
+        return array_unshift($this->consoleRenderers, $renderer);
+    }
+
+    /**
+     * Retrieve all reporters handling the given exception.
+     *
+     * @return array<int, callable>
+     */
+    private function getReportersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->reporters,
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+        );
+    }
+
+    /**
+     * Retrieve all renderers handling the given exception.
+     *
+     * @return array<int, callable>
+     */
+    private function getRenderersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->renderers,
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+        );
+    }
+
+    /**
+     * Retrieve all console renderers handling the given exception.
+     *
+     * @return array<int, callable>
+     */
+    private function getConsoleRenderersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->consoleRenderers,
+            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+        );
     }
 
     public function shouldReport(\Throwable $e): bool

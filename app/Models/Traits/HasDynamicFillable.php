@@ -29,11 +29,16 @@ trait HasDynamicFillable
     {
         $fillable = parent::getFillable();
 
-        foreach ($this->getDynamicFillableEnums() as $enumClass) {
-            foreach ($enumClass::cases() as $case) {
-                if ($case instanceof \BackedEnum) {
-                    $fillable[] = (string) $case->value;
-                }
+        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
+
+        // Ensure the property is an array
+        if (! is_array($dynamicFillableEnums)) {
+            return $fillable;
+        }
+
+        foreach ($dynamicFillableEnums as $enumClass) {
+            if (! is_string($enumClass) || '' === $enumClass) {
+                continue;
             }
         }
 

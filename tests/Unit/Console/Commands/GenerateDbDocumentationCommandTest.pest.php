@@ -18,14 +18,6 @@
 | | | | |i|f| |(|!| |F|i|l|e|:|:|e|x|i|s|t|s|(||d|i|r|n|a|m|e|(|$|t|h|i|s|-|>|t|e|s|t|S|c|h|e|m|a|P|a|t|h|)|)|)| |{|
 | | | | | | | | |F|i|l|e|:|:|m|a|k|e|D|i|r|e|c|t|o|r|y|(||d|i|r|n|a|m|e|(|$|t|h|i|s|-|>|t|e|s|t|S|c|h|e|m|a|P|a|t|h|)|,| |0|o|7|5|5|,| |t|r|u|e|)|;|
 | | | | |}|
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 |
 | | | | |/|/| |C|r|e|a|t|e| |a| |t|e|s|t| |s|c|h|e|m|a| |f|i|l|e|
 | | | | |$|t|e|s|t|S|c|h|e|m|a| |=| |[|

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Format;
 
+use Error;
+
 class MySqlFormatAction extends BaseFormatAction
 {
     #[\Override]
@@ -15,7 +17,7 @@ class MySqlFormatAction extends BaseFormatAction
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
-            default => throw new \InvalidArgumentException('Invalid interval.'),
+            default => throw new Error('Invalid interval.'),
         };
 
         return sprintf("date_format(%s, '%s')", $column, $format);

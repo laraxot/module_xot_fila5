@@ -94,7 +94,7 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
-     * @param array<int, int|string> $updatedIds
+     * @param array<int|string> $updatedIds
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

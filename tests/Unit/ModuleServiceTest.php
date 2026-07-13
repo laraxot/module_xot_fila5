@@ -2,16 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Unit;
-
-use Modules\Xot\Services\ModuleService;
-use Tests\TestCase;
+use Modules\Xot\Actions\ModuleAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-describe('ModuleService', function () {
-    beforeEach(function () {
-        $this->service = new ModuleService();
+describe('ModuleAction', function (): void {
+    $service = new ModuleAction();
+
+    it('can be instantiated', function () use ($service): void {
+        Assert::assertInstanceOf(ModuleAction::class, $service);
     });
 
     it('can be instantiated', function () {

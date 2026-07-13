@@ -13,13 +13,13 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
 use function Safe\realpath;
 use function Safe\scandir;
-
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
+use function strlen;
 
 /**
  * Classe wrapper che raccoglie i metodi legacy di FileService in un'unica
@@ -597,8 +597,7 @@ class FileAction
     // *
 
     /**
-     * @param array<string> $files
-     *
+     * @param  array<string>  $files
      * @return array<string>
      */
     public static function viewNamespaceToUrl(array $files): array
@@ -726,8 +725,7 @@ class FileAction
     */
 
     /**
-     * @param array<int, string> $except
-     *
+     * @param  array<int, string>  $except
      * @return array<int, string>
      */
     public static function allDirectories(string $path, array $except = [], string $dir = ''): array
@@ -901,15 +899,6 @@ class FileAction
         $key = self::getConfigKey($to);
 
         Arr::set($data, $key, $from_value);
-
-        $saveData = [];
-        foreach ($data as $dataKey => $value) {
-            if (! is_string($dataKey)) {
-                throw new \UnexpectedValueException('Config keys must be strings.');
-            }
-
-            $saveData[$dataKey] = $value;
-        }
         /*
         dddx([
             'from_value'=>$from_value,
@@ -921,7 +910,7 @@ class FileAction
         ]);
         */
 
-        app(SaveArrayAction::class)->execute(data: $saveData, filename: $to_path);
+        app(SaveArrayAction::class)->execute(data: $data, filename: $to_path);
     }
 
     /**

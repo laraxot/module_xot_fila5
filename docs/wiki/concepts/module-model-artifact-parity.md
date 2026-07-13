@@ -23,14 +23,15 @@ bashscripts/tools/audit-module-artifact-parity.sh <ModuleName>
 
 ## Struttura attesa
 
-```
-Modules/{Module}/
-├── app/Models/           # modelli owner
-├── database/
-│   ├── migrations/       # N × create_{table}_table
-│   ├── factories/        # N × {Model}Factory
-│   └── seeders/          # N × {Model}Seeder + opz. {Module}DatabaseSeeder
-```
+## Esclusi dal conteggio
+
+- `abstract` / `Base*`
+- `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
+- Wrapper cross-modulo (es. `Predict\Models\User`)
+
+## Backlog migrazioni
+
+Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `create_*`. Consolidare nella migrazione canonica — vedi [migration-philosophy-rule.md](../../../../../../docs/project/migration-philosophy-rule.md).
 
 ## Collegamenti
 
