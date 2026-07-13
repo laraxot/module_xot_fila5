@@ -3,14 +3,6 @@
 declare(strict_types=1);
 
 uses(Modules\Xot\Tests\TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 use Filament\Schemas\Components\Wizard\Step;
 use Illuminate\Support\HtmlString;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
@@ -153,6 +145,9 @@ it('covers get attachments schema branches', function (): void {
     };
 
     Assert::assertSame([], $resourceNoAttachments::getAttachmentsSchema());
+    if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeBadAttachments')) {
+        eval(' class ProbeBadAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): string { return "invalid"; } }');
+    }
 
     $resourceBadAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeBadAttachments::class;
@@ -164,6 +159,9 @@ it('covers get attachments schema branches', function (): void {
     };
 
     Assert::assertSame([], $resourceBadAttachments::getAttachmentsSchema());
+    if (! class_exists('Modules\\Xot\\Tests\\Fixtures\\Models\\ProbeGoodAttachments')) {
+        eval(' class ProbeGoodAttachments extends \\Illuminate\\Database\\Eloquent\\Model { public static function getAttachments(): array { return ["one", 7, "two"]; } }');
+    }
 
     app()->instance(GetAttachmentsSchemaAction::class, new class {
         /**

@@ -74,7 +74,7 @@ class EditModule extends XotBaseEditRecord
     }
 
     /**
-     * @param array<array-key, mixed> $config
+     * @param array<mixed, mixed> $config
      *
      * @return array<string, mixed>
      */

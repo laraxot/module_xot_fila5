@@ -28,16 +28,6 @@ class SafeAttributeCastAction
     use QueueableAction;
 
     /**
-     * Ottiene un attributo con cast sicuro usando l'entrypoint canonico delle action.
-     *
-     * Il tipo supportato e string, int, float, bool o array.
-     */
-    public function execute(Model $model, string $attribute, string $type = 'string', mixed $default = null): mixed
-    {
-        return $this->getTypedAttribute($model, $attribute, $type, $default);
-    }
-
-    /**
      * Verifica se un attributo esiste e ha un valore non null su un modello.
      *
      * @param Model  $model     Il modello Eloquent

@@ -51,7 +51,7 @@ class ExportXlsTableAction extends Action
                     $rawFields = $livewire_class::getXlsFields($livewire->tableFilters);
                     Assert::isArray($rawFields);
 
-                    // Ensure fields are properly formatted as array
+                    // Ensure fields are properly formatted as array<int, string>
                     $fields = [];
                     foreach ($rawFields as $key => $field) {
                         if (is_string($field)) {

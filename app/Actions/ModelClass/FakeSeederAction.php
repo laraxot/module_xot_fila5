@@ -47,7 +47,12 @@ class FakeSeederAction
         $chunks = $rows->chunk(self::CHUNK_SIZE);
 
         $chunks->each(function (Collection $chunk) use ($modelClass): void {
-            $data = $chunk->map(fn (Model $item) => $item->getAttributes())->all();
+            /** @var array<int, array<string, mixed>> $data */
+            $data = $chunk->map(function ($item) {
+                assert($item instanceof Model);
+
+                return $item->getAttributes();
+            })->all();
             $modelClass::insert($data);
         });
 

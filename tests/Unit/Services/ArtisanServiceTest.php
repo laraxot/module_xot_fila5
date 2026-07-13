@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
-use Modules\Xot\Services\ArtisanService;
+use Modules\Xot\Actions\ArtisanAction;
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
@@ -22,7 +22,8 @@ beforeEach(function (): void {
 test('artisan service act method returns empty string for unknown commands', function (): void {
     Request::replace(['module' => '']);
 
-    $result = ArtisanService::act('unknown-command');
+    $result = ArtisanAction::act
+('unknown-command');
 
     // @phpstan-ignore-next-line - Pest expectation method
     expect($result)->toBe('');
@@ -35,7 +36,8 @@ test('artisan service act method handles migrate command', function (): void {
     Artisan::shouldReceive('call')->once()->andReturn(0);
     Artisan::shouldReceive('output')->once()->andReturn('Migration completed');
 
-    $result = ArtisanService::act('migrate');
+    $result = ArtisanAction::act
+('migrate');
 
     // @phpstan-ignore-next-line - Pest expectation method
     expect($result)->toBeString();
@@ -50,7 +52,8 @@ test('artisan service act method handles module parameter', function (): void {
     Artisan::shouldReceive('output')->once()->andReturn('Module migration');
 
     ob_start();
-    $result = ArtisanService::act('migrate');
+    $result = ArtisanAction::act
+('migrate');
     ob_end_clean();
 
     // @phpstan-ignore-next-line - Pest expectation method
@@ -65,7 +68,8 @@ test('artisan service handles non-string module parameter', function (): void {
     Artisan::shouldReceive('call')->once()->andReturn(0);
     Artisan::shouldReceive('output')->once()->andReturn('Migration');
 
-    $result = ArtisanService::act('migrate');
+    $result = ArtisanAction::act
+('migrate');
 
     // @phpstan-ignore-next-line - Pest expectation method
     expect($result)->toBeString();

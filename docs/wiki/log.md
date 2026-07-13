@@ -27,12 +27,6 @@ discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
 
-## [2026-07-12] deadcode | swarm — Actions duplicate root/Array
-
-- Rimosso `Actions/GetViewByClassAction.php` (root legacy) — 0 consumer prod; canonico `Actions/View/GetViewByClassAction`
-- Rimossa cartella `Actions/Array/` (6 file mirror di `Actions/Arr/`) + test `tests/Unit/Actions/Array/` + `ViewActionsTest.php`
-- Issue [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372)
-
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.

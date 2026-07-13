@@ -27,7 +27,7 @@ use function Safe\preg_match;
  */
 abstract class XotBasePivot extends EloquentPivot
 {
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use Updater;
 

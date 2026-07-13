@@ -102,6 +102,7 @@ class XotBaseEditRecord
 
 ## Collegamenti Bidirezionali
 - [README](README.md)
+- [README](readme.md)
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -289,6 +290,8 @@ class PolizzaConvenzioneController extends XotBaseController
 ## Collegamenti tra versioni di base-classes.md
 * [base-classes.md](../../../Xot/docs/base-classes.md)
 * [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
+* [base-classes.md](../../../xot/docs/base-classes.md)
+* [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
 
 ### Versione Incoming
 

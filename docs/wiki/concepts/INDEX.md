@@ -20,3 +20,5 @@ qmd search "Xot concepts" --limit 5
 ---
 *Updated: 2026-05-11*
 - [xotbase-filament-widget-hierarchy](./xotbase-filament-widget-hierarchy.md)
+- [phpstan-trait-probes](./phpstan-trait-probes.md) — trait `unused` → probe host + registry Helper
+- [no-app-support-queueable-actions](./no-app-support-queueable-actions.md) — Services/Support migrati a Action contestuali con `QueueableAction::execute()`.

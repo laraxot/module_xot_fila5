@@ -17,12 +17,6 @@ use function Safe\class_uses;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 uses(TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 
 /**
  * @param array<string, mixed> $values

@@ -1,6 +1,8 @@
 # Code Quality Audit Completo - Gennaio 2025
 
 **Data**: 2025-01-22
+# Code Quality Audit Completo
+
 **PHPStan Level**: 10
 **Status Generale**: ✅ **0 ERRORI**
 
@@ -25,6 +27,7 @@ Tutti i moduli sono stati analizzati e risultano conformi a PHPStan livello 10.
 
 ### ✅ Completati
 - **Rating**: [code-quality-analysis.md](../Rating/docs/code-quality-analysis.md)
+- **Rating**: [code-quality-analysis.md](../rating/docs/code-quality-analysis.md)
   - PHPStan: 0 errori
   - PHPDoc: Completo
   - Type Coverage: 100%

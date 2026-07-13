@@ -1,15 +1,3 @@
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
-@php
-// Xot Blade view — see Modules/Xot/docs/wiki.
-@endphp
-
 <?php
 
 declare(strict_types=1);
@@ -30,12 +18,6 @@ declare(strict_types=1);
                 @include($header_view)
             </div>
         @endif
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
     </div>
 
     <div class="card mb-3">

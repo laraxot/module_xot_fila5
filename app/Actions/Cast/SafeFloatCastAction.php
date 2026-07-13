@@ -6,8 +6,6 @@ namespace Modules\Xot\Actions\Cast;
 
 use function Safe\preg_replace;
 
-use Spatie\QueueableAction\QueueableAction;
-
 /**
  * Action per convertire in modo sicuro un valore mixed in float.
  *
@@ -37,8 +35,6 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class SafeFloatCastAction
 {
-    use QueueableAction;
-
     /**
      * Converte in modo sicuro un valore mixed in float.
      *

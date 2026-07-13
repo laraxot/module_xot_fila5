@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
-use Spatie\QueueableAction\QueueableAction;
-
 /**
  * Action per convertire in modo sicuro un valore mixed in string.
  *
@@ -14,8 +12,6 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class SafeStringCastAction
 {
-    use QueueableAction;
-
     /**
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?

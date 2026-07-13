@@ -6,9 +6,10 @@ namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
-/** @template TFactory of Factory */
+/** @template-covariant TFactory of Factory */
 trait HasXotFactory
 {
     /** @use EloquentHasFactory<TFactory> */
@@ -21,7 +22,7 @@ trait HasXotFactory
      *
      * @return TFactory
      */
-    protected static function newFactory(): Factory
+    protected static function newFactory()
     {
         /** @var TFactory $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);

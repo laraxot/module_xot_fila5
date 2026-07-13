@@ -612,6 +612,13 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+- [Analisi Completa Codice](./comprehensive_code_analysis.md)
+- [Architettura Moduli](./architecture.md)
+- [Performance Guide](./performance_guide.md)
+
+---
+
+**Data Creazione**: [DATE]
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
@@ -693,8 +700,10 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-// QuaerisService.php
-class QuaerisService
+// healthcare_appService.php
+class healthcare_appService
+// ModuloEsempioService.php
+class ModuloEsempioService
 {
     use SingletonTrait;
 
@@ -1167,8 +1176,10 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-// QuaerisService.php
-class QuaerisService
+// healthcare_appService.php
+class healthcare_appService
+// ModuloEsempioService.php
+class ModuloEsempioService
 {
     use SingletonTrait;
 
@@ -1236,6 +1247,13 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+- [Analisi Completa Codice](./comprehensive_code_analysis.md)
+- [Architettura Moduli](./architecture.md)
+- [Performance Guide](./performance_guide.md)
+
+---
+
+**Data Creazione**: [DATE]
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Performance Guide](./PERFORMANCE_GUIDE.md)

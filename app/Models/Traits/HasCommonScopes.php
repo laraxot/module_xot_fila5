@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Carbon;
 
 /**
  * Common query scopes for Laraxot models.
@@ -29,9 +27,6 @@ use Illuminate\Support\Carbon;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
- *
- * @property bool|null   $is_active
- * @property Carbon|null $published_at
  */
 trait HasCommonScopes
 {
@@ -72,10 +67,8 @@ trait HasCommonScopes
      */
     public function scopePublished(Builder $query): Builder
     {
-        $query->whereNotNull('published_at');
-        $query->where('published_at', '<=', now());
-
-        return $query;
+        return $query->whereNotNull('published_at')
+            ->where('published_at', '<=', now());
     }
 
     /**
@@ -148,11 +141,13 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        if (! $this->published_at instanceof CarbonInterface) {
+        $publishedAt = $this->published_at;
+
+        if (! $publishedAt instanceof \Illuminate\Support\Carbon) {
             return false;
         }
 
-        return $this->published_at->isPast();
+        return $publishedAt->isPast();
     }
 
     /**

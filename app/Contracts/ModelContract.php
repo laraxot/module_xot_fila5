@@ -31,7 +31,7 @@ use Illuminate\Support\Carbon;
  * @method string                                                          getRouteKey()
  * @method string                                                          getRouteKeyName()
  * @method string                                                          getTable()
- * @method mixed                                                           with(array<int, string> $array)
+ * @method mixed                                                           with(array<string, mixed> $array)
  * @method list<string>                                                    getFillable()
  * @method mixed                                                           fill(array<string, mixed> $array)
  * @method mixed                                                           getConnection()

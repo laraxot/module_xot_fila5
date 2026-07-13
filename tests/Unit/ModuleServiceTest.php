@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Services\ModuleService;
+use Modules\Xot\Actions\ModuleAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-describe('ModuleService', function (): void {
-    $service = new ModuleService();
+describe('ModuleAction', function (): void {
+    $service = new ModuleAction();
 
     it('can be instantiated', function () use ($service): void {
-        Assert::assertInstanceOf(ModuleService::class, $service);
+        Assert::assertInstanceOf(ModuleAction::class, $service);
     });
 
     it('has getModels method', function () use ($service): void {

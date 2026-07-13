@@ -9,10 +9,12 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Livewire\Wireable;
-use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
+use Modules\Xot\Actions\PaDesignColorsAction;
 
 use function Safe\file_get_contents;
 
@@ -139,8 +141,8 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('metatag');
-            $data['description'] = app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.description');
+            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
+            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -262,6 +264,10 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
+     * Get the theme colors.
+     * This method reflects the semantic purpose of getting theme colors,
+     * rather than exposing the raw color data structure.
+     *
      * @return array<string, string>
      */
     public function getThemeColors(): array
@@ -396,7 +402,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getFilamentColors(): array
     {
-        return app(GetPaFilamentPaletteAction::class)->execute();
+        return app(PaDesignColorsAction::class)->filamentPalette();
     }
 
     /**
@@ -586,17 +592,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.keywords');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.author');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.sitename');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
     }
 
     public function getRobots(): string

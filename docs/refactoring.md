@@ -63,3 +63,4 @@ class YourModel extends Model
 - [Laravel Relationships](https://laravel.com/docs/relationships)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - [Best Practices](BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)

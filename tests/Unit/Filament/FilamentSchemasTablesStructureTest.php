@@ -12,10 +12,6 @@ use function Safe\glob;
 use function Safe\preg_match;
 
 uses(\Modules\Xot\Tests\TestCase::class);
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
 
 /**
  * @return list<array{0: string, 1: string}>

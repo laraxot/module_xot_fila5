@@ -14,11 +14,6 @@ use function Safe\file_get_contents;
 use function Safe\mkdir;
 
 uses(TestCase::class);
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
-// Xot Pest/PHPUnit — claude-audit documentation ratio.
 
 it('normalizes nested numeric strings in diff fixType', function (): void {
     $input = ['items' => [

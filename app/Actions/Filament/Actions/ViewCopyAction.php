@@ -29,12 +29,11 @@ class ViewCopyAction extends XotBaseAction
             ->modalHeading('Copy View')
             ->modalDescription('Are you sure you want to copy this view?')
             ->action(static function (array $arguments, array $data) use ($actionClass): void {
+                /** @var array<string, mixed> $arguments */
+                /** @var array<string, mixed> $data */
                 /** @var self $service */
                 $service = app($actionClass);
-                $service->execute(
-                    array_filter($arguments, 'is_string', ARRAY_FILTER_USE_KEY),
-                    array_filter($data, 'is_string', ARRAY_FILTER_USE_KEY),
-                );
+                $service->execute($arguments, $data);
             });
     }
 
