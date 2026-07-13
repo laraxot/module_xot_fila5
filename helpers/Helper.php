@@ -615,11 +615,21 @@ if (! function_exists('merge_translation_files')) {
             /** @var mixed $chunk */
             $chunk = require $path;
 
-            if (is_array($chunk)) {
-                /** @var array<string, mixed> $mergedChunk */
-                $mergedChunk = $chunk;
-                $merged = array_replace_recursive($merged, $mergedChunk);
+            if (! is_array($chunk)) {
+                continue;
             }
+
+            $mergedChunk = [];
+            foreach ($chunk as $key => $value) {
+                if (! is_string($key)) {
+                    throw new \UnexpectedValueException('Translation keys must be strings.');
+                }
+
+                $mergedChunk[$key] = $value;
+            }
+
+            $merged = array_replace_recursive($merged, $mergedChunk);
+
         }
 
         return $merged;

@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Str;
+use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetCurrentRouteViewAction
@@ -14,16 +15,16 @@ class GetCurrentRouteViewAction
 
     public function execute(): string
     {
-        $routeAction = Route::currentRouteAction();
-        if (null === $routeAction) {
-            throw new \RuntimeException('Current route action is not available.');
+        $route = request()->route();
+        if (! $route instanceof Route) {
+            throw new RuntimeException('Current route action is not available.');
         }
 
+        $routeAction = $route->getActionName();
         $controller = Str::between($routeAction, 'Http\\Controllers\\', 'Controller');
-        $route = Route::current();
         /** @var array<string, mixed> $params */
         $params = [];
-        foreach ($route instanceof \Illuminate\Routing\Route ? $route->parameters() : [] as $key => $value) {
+        foreach ($route->parameters() as $key => $value) {
             if (is_string($key)) {
                 $params[$key] = $value;
             }

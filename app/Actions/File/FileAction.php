@@ -899,6 +899,15 @@ class FileAction
         $key = self::getConfigKey($to);
 
         Arr::set($data, $key, $from_value);
+
+        $saveData = [];
+        foreach ($data as $dataKey => $value) {
+            if (! is_string($dataKey)) {
+                throw new \UnexpectedValueException('Config keys must be strings.');
+            }
+
+            $saveData[$dataKey] = $value;
+        }
         /*
         dddx([
             'from_value'=>$from_value,
@@ -910,7 +919,7 @@ class FileAction
         ]);
         */
 
-        app(SaveArrayAction::class)->execute(data: $data, filename: $to_path);
+        app(SaveArrayAction::class)->execute(data: $saveData, filename: $to_path);
     }
 
     /**

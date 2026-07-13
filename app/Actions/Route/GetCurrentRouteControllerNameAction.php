@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Str;
+use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetCurrentRouteControllerNameAction
@@ -14,11 +15,12 @@ class GetCurrentRouteControllerNameAction
 
     public function execute(): string
     {
-        $routeAction = Route::currentRouteAction();
-        if (null === $routeAction) {
-            throw new \RuntimeException('Current route action is not available.');
+        $route = request()->route();
+        if (! $route instanceof Route) {
+            throw new RuntimeException('Current route action is not available.');
         }
 
+        $routeAction = $route->getActionName();
         return Str::between($routeAction, 'Http\\Controllers\\', 'Controller');
     }
 }

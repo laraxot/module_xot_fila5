@@ -141,7 +141,7 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        $publishedAt = $this->published_at;
+        $publishedAt = $this->getAttribute('published_at');
 
         if (! $publishedAt instanceof \Illuminate\Support\Carbon) {
             return false;
@@ -163,6 +163,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-        return isset($this->is_active) && true === $this->is_active;
+        return true === $this->getAttribute('is_active');
     }
 }
