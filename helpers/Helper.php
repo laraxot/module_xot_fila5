@@ -569,14 +569,36 @@ if (! function_exists('merge_translation_files')) {
      * @param string $first First translation file path
      * @param string ...$rest Additional translation file paths
      *
+     * @param string ...$paths Path assoluti ai chunk `return [...]`
+     *
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array
     {
-        $result = (array) require $first;
+        /** @var array<string, mixed> $merged */
+        $merged = [];
 
-        foreach ($rest as $file) {
-            $result = array_replace_recursive($result, (array) require $file);
+        foreach ($paths as $path) {
+            if (! is_file($path)) {
+                continue;
+            }
+
+            $chunk = require $path;
+
+            if (! is_array($chunk)) {
+                continue;
+            }
+
+            $mergedChunk = [];
+            foreach ($chunk as $key => $value) {
+                if (! is_string($key)) {
+                    throw new UnexpectedValueException('Translation keys must be strings.');
+                }
+
+                $mergedChunk[$key] = $value;
+            }
+
+            $merged = array_replace_recursive($merged, $mergedChunk);
         }
 
         /** @phpstan-ignore return.type */
