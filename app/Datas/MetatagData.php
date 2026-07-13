@@ -9,7 +9,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Actions\Design\GetPaFilamentPaletteAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
@@ -140,8 +139,8 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
-            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
+            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('metatag');
+            $data['description'] = app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -576,17 +575,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
+        return app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
+        return app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
+        return app(\Modules\Tenant\Actions\Translations\TranslateTenantKeyAction::class)->execute('metatag.sitename');
     }
 
     public function getRobots(): string

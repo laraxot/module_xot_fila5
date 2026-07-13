@@ -58,4 +58,4 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules
 ## Collegamenti
 
 - [phpstan-neon-immutable.md](../../phpstan-neon-immutable.md)
-- [Chat sessione 2026-06-13](../../../../../../docs/chat/2026-06-13-phpstan-modules-zero-errors.md)
+- [Chat sessione 2026-06-13](../../../../../../docs/chat/phpstan-modules-zero-errors.md)

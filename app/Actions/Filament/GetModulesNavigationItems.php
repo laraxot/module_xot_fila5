@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Modules\Tenant\Services\TenantService;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 
 use function Safe\json_encode;
@@ -35,8 +36,8 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
-        $modules = TenantService::allModules();
-        // TenantService::allModules() restituisce sempre array
+        $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
+        // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -140,8 +141,8 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
-        $modules = TenantService::allModules();
-        // TenantService::allModules() restituisce sempre array
+        $modules = app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute();
+        // app(\Modules\Tenant\Actions\Modules\GetTenantModulesAction::class)->execute() restituisce sempre array
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 
