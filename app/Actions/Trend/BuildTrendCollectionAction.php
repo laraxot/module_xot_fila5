@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Trend;
 
 use Carbon\CarbonPeriod;
-use Error;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -39,7 +38,7 @@ class BuildTrendCollectionAction
         string $dateColumn = 'created_at',
         string $dateAlias = 'date',
         string $aggregateColumn = '*',
-        string $aggregate = 'count'
+        string $aggregate = 'count',
     ): Collection {
         $this->query = $query;
         $this->start = $start;
@@ -109,7 +108,7 @@ class BuildTrendCollectionAction
             'mysql' => app(MySqlFormatAction::class),
             'sqlite' => app(SqliteFormatAction::class),
             'pgsql' => app(PgsqlFormatAction::class),
-            default => throw new Error('Unsupported database driver.'),
+            default => throw new \Error('Unsupported database driver.'),
         };
 
         return $formatAction->execute($this->dateColumn, $this->interval);
@@ -123,7 +122,7 @@ class BuildTrendCollectionAction
             'day' => 'Y-m-d',
             'month' => 'Y-m',
             'year' => 'Y',
-            default => throw new Error('Invalid interval.'),
+            default => throw new \Error('Invalid interval.'),
         };
     }
 }
