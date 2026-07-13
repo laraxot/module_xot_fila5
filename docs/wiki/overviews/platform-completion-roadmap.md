@@ -121,7 +121,7 @@ Documento **hub** dopo gate ingresso chef (2026-06-13). Ogni modulo/tema ha dett
 
 1. PHPStan zero → 2. `docs/chat/INDEX.md` → 3. QMD search → 4. GitHub issue/discussion owner → 5. STORY → 6. codice.
 
-Chat sessione: [docs/chat/2026-06-13-phpstan-modules-second-brain-docs.md](../../../../../docs/chat/2026-06-13-phpstan-modules-second-brain-docs.md).
+Chat sessione: [docs/chat/phpstan-modules-second-brain-docs.md](../../../../../docs/chat/phpstan-modules-second-brain-docs.md).
 
 ## Definition of Done piattaforma
 

@@ -41,7 +41,7 @@ Module TestCase -> Modules\Xot\Tests\XotBaseTestCase -> Illuminate\Foundation\Te
 - Official docs studied: `https://laravelmodules.com/docs/13/advanced/tests`
 - Local package checked: `laravel/vendor/nwidart/laravel-modules/composer.json`
 - GitHub tag v13.0.0: `tests/BaseTestCase.php` (Orchestra Testbench, dev-only)
-- Brainstorm: [docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md](../../../../../../docs/chat/2026-06-10-testcase-brainstorm-activity-nwidart.md)
+- Brainstorm: [docs/chat/testcase-brainstorm-activity-nwidart.md](../../../../../../docs/chat/testcase-brainstorm-activity-nwidart.md)
 
 ## Practical implication
 

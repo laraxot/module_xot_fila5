@@ -7,7 +7,6 @@ namespace Modules\Xot\Datas;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
@@ -82,7 +81,7 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
-            $data = TenantService::getConfig('xra');
+            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('xra');
 
             self::$instance = self::from($data);
         }

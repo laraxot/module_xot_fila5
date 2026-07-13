@@ -12,7 +12,6 @@ use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Colors\Color;
-use Modules\Tenant\Services\TenantService;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 
@@ -84,7 +83,7 @@ class MetatagPage extends XotBasePage
     public function save(): void
     {
         $data = $this->form->getState();
-        TenantService::saveConfig('metatag', $data);
+        app(\Modules\Tenant\Actions\Config\SaveTenantConfigAction::class)->execute('metatag', $data);
 
         Notification::make()
             ->success()
