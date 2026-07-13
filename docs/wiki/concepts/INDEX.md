@@ -22,3 +22,4 @@ qmd search "Xot concepts" --limit 5
 - [xotbase-filament-widget-hierarchy](./xotbase-filament-widget-hierarchy.md)
 - [phpstan-trait-probes](./phpstan-trait-probes.md) — trait `unused` → probe host + registry Helper
 - [no-app-support-queueable-actions](./no-app-support-queueable-actions.md) — Services/Support migrati a Action contestuali con `QueueableAction::execute()`.
+- [trend-action-delegation](./trend-action-delegation.md) — Action come confine; motore SQL/periodi delegato a `flowframe/laravel-trend`.

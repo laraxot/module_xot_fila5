@@ -10,8 +10,7 @@ class BuildLanguageUrlAction
 {
     use QueueableAction;
 
-    /** @param array<string, mixed> $_params */
-    public function execute(array $_params = []): string
+    public function execute(): string
     {
         return '?';
     }

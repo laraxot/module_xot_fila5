@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
-use Illuminate\Support\Facades\Request;
 use Spatie\QueueableAction\QueueableAction;
 
 class IsAdminRouteAction
@@ -18,11 +17,11 @@ class IsAdminRouteAction
             return (bool) $params['in_admin'];
         }
 
-        if ('admin' === Request::segment(1)) {
+        if ('admin' === request()->segment(1)) {
             return true;
         }
 
-        $segments = Request::segments();
+        $segments = request()->segments();
 
         return [] !== $segments && 'livewire' === $segments[0] && true === session('in_admin', false);
     }
