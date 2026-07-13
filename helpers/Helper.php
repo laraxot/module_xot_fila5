@@ -599,7 +599,8 @@ if (! function_exists('merge_translation_files')) {
     /**
      * Unisce file lang PHP split (claude-audit <500 LOC per file).
      *
-     * @param  string  ...$paths  Path assoluti ai chunk `return [...]`
+     * @param string ...$paths Path assoluti ai chunk `return [...]`
+     *
      * @return array<string, mixed>
      */
     function merge_translation_files(string ...$paths): array
@@ -612,7 +613,6 @@ if (! function_exists('merge_translation_files')) {
                 continue;
             }
 
-            /** @var mixed $chunk */
             $chunk = require $path;
 
             if (! is_array($chunk)) {

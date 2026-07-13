@@ -13,8 +13,8 @@ use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
-use Modules\Xot\Datas\Transformers\AssetTransformer;
 use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Datas\Transformers\AssetTransformer;
 
 use function Safe\file_get_contents;
 

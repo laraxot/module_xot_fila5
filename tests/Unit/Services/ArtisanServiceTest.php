@@ -28,8 +28,7 @@ beforeEach(function (): void {
 test('artisan service act method returns empty string for unknown commands', function (): void {
     Request::replace(['module' => '']);
 
-    $result = ArtisanAction::act
-('unknown-command');
+    $result = ArtisanAction::act('unknown-command');
 
     expect($result)->toBe('');
 });
@@ -41,8 +40,7 @@ test('artisan service act method handles migrate command', function (): void {
     Artisan::shouldReceive('call')->once()->andReturn(0);
     Artisan::shouldReceive('output')->once()->andReturn('Migration completed');
 
-    $result = ArtisanAction::act
-('migrate');
+    $result = ArtisanAction::act('migrate');
 
     expect($result)->toBeString();
     /* @var string $result */
@@ -57,8 +55,7 @@ test('artisan service act method handles module parameter', function (): void {
     Artisan::shouldReceive('output')->once()->andReturn('Module migration');
 
     ob_start();
-    $result = ArtisanAction::act
-('migrate');
+    $result = ArtisanAction::act('migrate');
     ob_end_clean();
 
     expect($result)->toBeString();
@@ -73,8 +70,7 @@ test('artisan service handles non-string module parameter', function (): void {
     Artisan::shouldReceive('call')->once()->andReturn(0);
     Artisan::shouldReceive('output')->once()->andReturn('Migration');
 
-    $result = ArtisanAction::act
-('migrate');
+    $result = ArtisanAction::act('migrate');
 
     expect($result)->toBeString();
     /* @var string $result */
