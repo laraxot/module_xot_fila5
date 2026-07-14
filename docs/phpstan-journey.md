@@ -1,3 +1,14 @@
+---
+title: "🌟 Il Viaggio verso l'Illuminazione PHPStan"
+module: "Xot"
+type: concept
+tags: [phpstan, journey]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan journey"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🌟 Il Viaggio verso l'Illuminazione PHPStan
 
 ## La Via dei Nove Moduli Perfetti

@@ -1,3 +1,14 @@
+---
+title: "Aggiornamento Linee Guida Critiche - Agosto 2025"
+module: "Xot"
+type: how-to
+tags: [critical, guidelines, update]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "critical guidelines update"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Aggiornamento Linee Guida Critiche - Agosto 2025
 
 ## 1. VIOLAZIONE GRAVE: Cartella Docs Root

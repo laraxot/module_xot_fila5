@@ -1,3 +1,14 @@
+---
+title: "Convenzioni Naming Campi Database"
+module: "Xot"
+type: concept
+tags: [field, naming]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "field naming"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Convenzioni Naming Campi Database
 
 ## Regole Fondamentali

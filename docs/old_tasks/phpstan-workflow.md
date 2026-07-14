@@ -1,3 +1,14 @@
+---
+title: "Workflow Analisi PHPStan"
+module: "Xot"
+type: concept
+tags: [phpstan, workflow]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan workflow"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Workflow Analisi PHPStan
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](documentation_management.md)

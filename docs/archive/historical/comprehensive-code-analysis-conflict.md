@@ -1,3 +1,14 @@
+---
+title: "Analisi Completa del Codice - Sistema Laraxot"
+module: "Xot"
+type: concept
+tags: [comprehensive, code, analysis, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "comprehensive code analysis conflict"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica

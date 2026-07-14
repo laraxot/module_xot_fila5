@@ -1,3 +1,14 @@
+---
+title: "Package Discovery - Philosophy, Logic & Zen"
+module: "Xot"
+type: concept
+tags: [package, discovery, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "package discovery philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Package Discovery - Philosophy, Logic & Zen
 
 ## Executive Summary

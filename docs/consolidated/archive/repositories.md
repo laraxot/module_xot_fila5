@@ -1,3 +1,14 @@
+---
+title: "repositories"
+module: "Xot"
+type: concept
+tags: [repositories]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "repositories"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # repositories
 
 <!-- Contenuto migrato da _docs/repositories.txt -->

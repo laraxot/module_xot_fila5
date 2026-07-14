@@ -1,3 +1,14 @@
+---
+title: "Report Conflitti Git - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Report Conflitti Git - Modulo Xot
 
 ## Data

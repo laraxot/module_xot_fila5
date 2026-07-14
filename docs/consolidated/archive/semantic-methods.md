@@ -1,3 +1,14 @@
+---
+title: "Filosofia dei Metodi Semantici"
+module: "Xot"
+type: concept
+tags: [semantic, methods]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "semantic methods"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filosofia dei Metodi Semantici
 
 ## Principio Fondamentale

@@ -1,3 +1,14 @@
+---
+title: "CoolModules Double Registration Fix"
+module: "Xot"
+type: concept
+tags: [coolmodulesouble, registration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "coolmodulesouble registration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # CoolModules Double Registration Fix
 
 ## 🚨 Problema Identificato

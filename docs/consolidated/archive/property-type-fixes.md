@@ -1,3 +1,14 @@
+---
+title: "Property Type Fixes for Xot Module"
+module: "Xot"
+type: concept
+tags: [property, type, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property type fixes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Property Type Fixes for Xot Module
 
 ## Missing Property Types

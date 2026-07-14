@@ -1,3 +1,14 @@
+---
+title: "Nota Architetturale: Rimozione `user_id` da `XotBaseMigration::timestamps()` (2026-03-06)"
+module: "Xot"
+type: concept
+tags: [migration, timestamps, audit, user]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration timestamps audit user id issue"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Nota Architetturale: Rimozione `user_id` da `XotBaseMigration::timestamps()` (2026-03-06)
 
 ## Situazione Rilevata

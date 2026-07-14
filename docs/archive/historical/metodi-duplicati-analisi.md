@@ -1,3 +1,14 @@
+---
+title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
+module: "Xot"
+type: concept
+tags: [metodi, duplicati, analisi]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "metodi duplicati analisi"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨

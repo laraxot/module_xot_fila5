@@ -1,3 +1,14 @@
+---
+title: "REPORT FINALE: Eliminazione property_exists() da Eloquent Models"
+module: "Xot"
+type: concept
+tags: [property, exists, final, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property exists final report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: 2025-11-05

@@ -1,3 +1,14 @@
+---
+title: "Guida al Riavvio del Sistema Dopo Validazione PHPStan"
+module: "Xot"
+type: concept
+tags: [restart, after, phpstan, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "restart after phpstan 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida al Riavvio del Sistema Dopo Validazione PHPStan
 
 ## Introduzione

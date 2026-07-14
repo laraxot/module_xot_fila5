@@ -1,3 +1,14 @@
+---
+title: "Componenti PDF Riutilizzabili"
+module: "Xot"
+type: concept
+tags: [pdf, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pdf components"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Componenti PDF Riutilizzabili
 
 ## Panoramica

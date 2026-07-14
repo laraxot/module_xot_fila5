@@ -1,3 +1,14 @@
+---
+title: "Architettura Filament-Xot"
+module: "Xot"
+type: concept
+tags: [xot, filament, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot filament architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Architettura Filament-Xot
 
 ## Panoramica

@@ -1,3 +1,14 @@
+---
+title: "Regole per URL e Route in il progetto"
+module: "Xot"
+type: concept
+tags: [url, e, route]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "url e route"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole per URL e Route in il progetto
 
 ## Introduzione

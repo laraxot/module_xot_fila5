@@ -1,3 +1,14 @@
+---
+title: "Troubleshooting: Livewire 404 Error"
+module: "Xot"
+type: concept
+tags: [troubleshooting, livewire]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "troubleshooting livewire"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Troubleshooting: Livewire 404 Error
 
 **Errore**: `404 Not Found` su `/livewire/update`

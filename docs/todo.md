@@ -1,3 +1,14 @@
+---
+title: "Todo"
+module: "Xot"
+type: concept
+tags: [todo]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "todo"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
 

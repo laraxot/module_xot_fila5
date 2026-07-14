@@ -1,3 +1,14 @@
+---
+title: "🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, gennaio]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes gennaio"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  

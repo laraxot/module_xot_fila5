@@ -1,3 +1,14 @@
+---
+title: "XotComposer - Loop Infinito Fix"
+module: "Xot"
+type: concept
+tags: [view, composer, loop, infinite]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "view composer loop infinite fix 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotComposer - Loop Infinito Fix
 
 ## 🚨 Problema Critico Risolto

@@ -1,3 +1,14 @@
+---
+title: "InformationSchemaTable"
+module: "Xot"
+type: concept
+tags: [information, schema, table]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "information schema table"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # InformationSchemaTable
 
 ## Descrizione

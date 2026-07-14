@@ -1,3 +1,14 @@
+---
+title: "XotBaseWidget"
+module: "Xot"
+type: concept
+tags: [xotbasewidget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbasewidget"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseWidget
 
 ## Panoramica

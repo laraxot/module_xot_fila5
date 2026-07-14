@@ -1,3 +1,14 @@
+---
+title: "Modern Tech Stack Optimization Guide"
+module: "Xot"
+type: concept
+tags: [modern, tech, stack, optimization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "modern tech stack optimization 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Modern Tech Stack Optimization Guide
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 

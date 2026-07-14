@@ -1,3 +1,14 @@
+---
+title: "Standard per le Migrazioni in <nome progetto>"
+module: "Xot"
+type: rule
+tags: [migration, standards, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration standards 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Standard per le Migrazioni in <nome progetto>
 
 ## Introduzione

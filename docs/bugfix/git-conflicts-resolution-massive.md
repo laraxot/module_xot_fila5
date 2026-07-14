@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Massiva Conflitti Git - 323 File"
+module: "Xot"
+type: concept
+tags: [git, conflicts, resolution, massive]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git conflicts resolution massive"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Massiva Conflitti Git - 323 File
 
 ## Data

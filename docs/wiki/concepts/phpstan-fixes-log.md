@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes Log - Story 8-121"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, log]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes log"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)

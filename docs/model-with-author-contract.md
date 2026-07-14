@@ -1,3 +1,14 @@
+---
+title: "ModelWithAuthorContract"
+module: "Xot"
+type: concept
+tags: [model, author, contract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model with author contract"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ModelWithAuthorContract
 
 Il `ModelWithAuthorContract` è un'interfaccia che estende `ModelContract` e definisce il contratto per i modelli che necessitano di tracciare l'autore e l'editor delle modifiche.

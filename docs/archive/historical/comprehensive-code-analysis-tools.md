@@ -1,3 +1,14 @@
+---
+title: "🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE"
+module: "Xot"
+type: concept
+tags: [comprehensive, code, analysis, tools]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "comprehensive code analysis tools"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: 2025-01-27

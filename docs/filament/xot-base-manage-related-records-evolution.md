@@ -1,3 +1,14 @@
+---
+title: "Evolution of XotBaseManageRelatedRecords"
+module: "Xot"
+type: concept
+tags: [xot, base, manage, related]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot base manage related records evolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Evolution of XotBaseManageRelatedRecords
 
 ## Current State Analysis

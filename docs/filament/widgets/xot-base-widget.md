@@ -1,3 +1,14 @@
+---
+title: "XotBaseWidget"
+module: "Xot"
+type: concept
+tags: [xot, base, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot base widget"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseWidget
 
 La classe astratta `XotBaseWidget` fornisce una base comune per tutti i widget Filament nel modulo Xot.

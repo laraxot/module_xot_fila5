@@ -1,3 +1,14 @@
+---
+title: "Componenti Filament Personalizzati in Laraxot"
+module: "Xot"
+type: concept
+tags: [componenti, personalizzati]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "componenti personalizzati"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Componenti Filament Personalizzati in Laraxot
 
 Questo documento descrive i componenti personalizzati di Filament disponibili nel framework Laraxot e come utilizzarli correttamente.

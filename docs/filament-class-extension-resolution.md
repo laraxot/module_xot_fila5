@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitti Git - Filament Class Extension Rules"
+module: "Xot"
+type: concept
+tags: [filament, class, extension, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament class extension resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Conflitti Git - Filament Class Extension Rules
 
 ## Data Risoluzione

@@ -1,3 +1,14 @@
+---
+title: "Log delle Correzioni Filament"
+module: "Xot"
+type: concept
+tags: [filament, corrections, log]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament corrections log"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19

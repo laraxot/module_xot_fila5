@@ -1,3 +1,14 @@
+---
+title: "Chart PNG Conversion Guide"
+module: "Xot"
+type: concept
+tags: [chart, png, conversion]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chart png conversion"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Chart PNG Conversion Guide
 
 ## 📋 Overview

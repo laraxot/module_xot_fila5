@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes Report - Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fixes Report - Gennaio 2025
 
 ## 📊 Stato Finale - PERFEZIONE ASSOLUTA! 👑✨

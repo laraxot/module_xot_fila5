@@ -1,3 +1,14 @@
+---
+title: "Verifica Testing e PHPStan - Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [testing, phpstan, verification, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing phpstan verification 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Verifica Testing e PHPStan - Gennaio 2025
 
 **Data verifica**: 18 Gennaio 2025

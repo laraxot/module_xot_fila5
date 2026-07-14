@@ -1,3 +1,14 @@
+---
+title: "Xot Lang Path Policy"
+module: "Xot"
+type: rule
+tags: [lang, path, policy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang path policy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Lang Path Policy
 
 ## Rule

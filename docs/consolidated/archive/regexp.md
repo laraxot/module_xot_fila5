@@ -1,3 +1,14 @@
+---
+title: "regexp"
+module: "Xot"
+type: concept
+tags: [regexp]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "regexp"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # regexp
 
 <!-- Contenuto migrato da _docs/regexp.txt -->

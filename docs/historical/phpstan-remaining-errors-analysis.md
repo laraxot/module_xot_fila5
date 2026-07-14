@@ -1,3 +1,14 @@
+---
+title: "PHPStan Remaining Errors Analysis"
+module: "Xot"
+type: concept
+tags: [phpstan, remaining, errors, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan remaining errors analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Remaining Errors Analysis
 
 **Data:** 2025-01-10

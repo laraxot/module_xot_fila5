@@ -1,3 +1,14 @@
+---
+title: "Correzione e miglioramento: GetYearFilter.php (2025-04-16)"
+module: "Xot"
+type: concept
+tags: [filter]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filter"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzione e miglioramento: GetYearFilter.php (2025-04-16)
 
 ## Contesto

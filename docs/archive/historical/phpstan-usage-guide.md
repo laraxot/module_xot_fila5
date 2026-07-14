@@ -1,3 +1,14 @@
+---
+title: "Guida all'Utilizzo di PHPStan nel Framework Laraxot <nome progetto>"
+module: "Xot"
+type: how-to
+tags: [phpstan, usage, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan usage guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida all'Utilizzo di PHPStan nel Framework Laraxot <nome progetto>
 
 ## Introduzione

@@ -1,3 +1,14 @@
+---
+title: "Roadmap Xot"
+module: "Xot"
+type: concept
+tags: [legacy, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy roadmap"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Roadmap Xot
 
 Roadmap operativo del module **Xot**, suddiviso in file tematici.

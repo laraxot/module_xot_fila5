@@ -1,3 +1,14 @@
+---
+title: "Magic Properties in Laravel Eloquent Models"
+module: "Xot"
+type: concept
+tags: [magic, properties]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "magic properties"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Magic Properties in Laravel Eloquent Models
 
 ## Overview

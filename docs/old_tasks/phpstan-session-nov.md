@@ -1,3 +1,14 @@
+---
+title: "PHPStan Correzioni - Sessione Novembre 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, session, nov]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan session nov"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10

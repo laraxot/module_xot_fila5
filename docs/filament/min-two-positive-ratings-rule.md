@@ -1,3 +1,14 @@
+---
+title: "Regola business: almeno 2 valutazioni > 0 nelle pagine Compila"
+module: "Xot"
+type: rule
+tags: [min, two, positive, ratings]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "min two positive ratings rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regola business: almeno 2 valutazioni > 0 nelle pagine Compila
 
 ## Obiettivo

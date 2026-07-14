@@ -1,3 +1,14 @@
+---
+title: "Case-Insensitive File Conflicts"
+module: "Xot"
+type: concept
+tags: [case, conflicts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "case conflicts"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Case-Insensitive File Conflicts
 
 Elenco dei duplicati case-insensitive nel modulo `Xot`:

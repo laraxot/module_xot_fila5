@@ -1,3 +1,14 @@
+---
+title: "Analisi e Risoluzione Colli di Bottiglia - Modulo Media"
+module: "Xot"
+type: concept
+tags: [media]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Media
 
 ## 1. Upload Performance (Priorità: Alta)

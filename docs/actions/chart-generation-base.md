@@ -1,3 +1,14 @@
+---
+title: "Chart Generation Actions - Base Implementation"
+module: "Xot"
+type: concept
+tags: [chart, generation, base]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chart generation base"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Chart Generation Actions - Base Implementation
 
 ## Overview

@@ -1,3 +1,14 @@
+---
+title: "SEO Guidelines"
+module: "Xot"
+type: how-to
+tags: [seo, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "seo guidelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # SEO Guidelines
 
 ## Overview

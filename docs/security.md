@@ -1,3 +1,14 @@
+---
+title: "Sicurezza"
+module: "Xot"
+type: concept
+tags: [security]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "security"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Sicurezza
 
 ## Configurazione Base

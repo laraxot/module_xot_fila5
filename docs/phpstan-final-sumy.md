@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 - Riepilogo Finale Gennaio 2026"
+module: "Xot"
+type: concept
+tags: [phpstan, final, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan final sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 - Riepilogo Finale Gennaio 2026
 
 **Status**: ✅ ANALISI COMPLETA ESTRATTA

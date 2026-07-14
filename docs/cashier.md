@@ -1,3 +1,14 @@
+---
+title: "Cashier"
+module: "Xot"
+type: concept
+tags: [cashier]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cashier"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 Create a Laravel Marketplace with Stripe using Cashier and this package
 https://hbakouane.medium.com/create-a-laravel-marketplace-with-stripe-using-cashier-and-this-package-9bbf56078215
 

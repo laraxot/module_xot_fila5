@@ -1,3 +1,14 @@
+---
+title: "Sistema Traduzioni - Documentazione Consolidata DRY + KISS"
+module: "Xot"
+type: concept
+tags: [translation, system]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation system"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Sistema Traduzioni - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di traduzione del progetto

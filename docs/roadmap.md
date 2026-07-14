@@ -1,3 +1,14 @@
+---
+title: "Roadmap Modulo Xot - Completamento e Miglioramenti"
+module: "Xot"
+type: concept
+tags: [roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Roadmap Modulo Xot - Completamento e Miglioramenti
 
 **Data Creazione**: 2026-01-02

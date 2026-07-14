@@ -19,22 +19,20 @@ use Illuminate\Database\Eloquent\Model;
  *         ->wherePriority('high')
  *         ->orderByCreatedAt('desc')
  *         ->get();
- *
- * @template T of Model
  */
 abstract class BaseQueryBuilder
 {
     /**
      * The underlying Eloquent query builder instance.
      *
-     * @var Builder<T>
+     * @var Builder<Model>
      */
     protected Builder $query;
 
     /**
      * Create a new query builder instance.
      *
-     * @param Builder<T>|null $query
+     * @param Builder<Model>|null $query
      */
     public function __construct(?Builder $query = null)
     {
@@ -44,20 +42,21 @@ abstract class BaseQueryBuilder
     /**
      * Get the model class this query builder is for.
      *
-     * @return class-string<T>
+     * @return class-string<Model>
      */
     abstract protected function getModel(): string;
 
     /**
      * Create a new query builder instance for the model.
      *
-     * @return Builder<T>
+     * @return Builder<Model>
      */
     protected function makeQuery(): Builder
     {
+        /** @var class-string<Model> $modelClass */
         $modelClass = $this->getModel();
 
-        /** @var Builder<T> $query */
+        /** @var Builder<Model> $query */
         $query = $modelClass::query();
 
         return $query;
@@ -66,7 +65,7 @@ abstract class BaseQueryBuilder
     /**
      * Get the underlying Eloquent query builder.
      *
-     * @return Builder<T>
+     * @return Builder<Model>
      */
     public function getQuery(): Builder
     {
@@ -214,11 +213,11 @@ abstract class BaseQueryBuilder
     /**
      * Get all results from the query.
      *
-     * @return \Illuminate\Database\Eloquent\Collection<int, T>
+     * @return \Illuminate\Database\Eloquent\Collection<int, Model>
      */
     public function get(): \Illuminate\Database\Eloquent\Collection
     {
-        /** @var \Illuminate\Database\Eloquent\Collection<int, T> $results */
+        /** @var \Illuminate\Database\Eloquent\Collection<int, Model> $results */
         $results = $this->query->get();
 
         return $results;
@@ -227,23 +226,24 @@ abstract class BaseQueryBuilder
     /**
      * Get the first result from the query.
      *
-     * @return T|null
+     * @return Model|null
      */
     public function first(): ?Model
     {
-        /* @var T|null */
         return $this->query->first();
     }
 
     /**
      * Get results with pagination.
      *
-     * @return \Illuminate\Pagination\LengthAwarePaginator<int, T>
+     * @return \Illuminate\Pagination\LengthAwarePaginator<int, Model>
      */
     public function paginate(int $perPage = 15): \Illuminate\Pagination\LengthAwarePaginator
     {
-        /* @var \Illuminate\Pagination\LengthAwarePaginator<int, T> */
-        return $this->query->paginate($perPage);
+        /** @var \Illuminate\Pagination\LengthAwarePaginator<int, Model> $result */
+        $result = $this->query->paginate($perPage);
+
+        return $result;
     }
 
     /**

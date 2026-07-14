@@ -1,3 +1,14 @@
+---
+title: "Decisione: Esecuzione php artisan view:cache"
+module: "Xot"
+type: concept
+tags: [view, cache, execution, decision]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "view cache execution decision"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Decisione: Esecuzione php artisan view:cache
 
 **Data**: 2025-01-22

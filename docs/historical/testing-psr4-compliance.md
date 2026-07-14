@@ -1,3 +1,14 @@
+---
+title: "PSR-4 Compliance per Test - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [testing, psr4, compliance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing psr4 compliance"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PSR-4 Compliance per Test - Modulo Xot
 
 ## Problema Identificato

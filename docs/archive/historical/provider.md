@@ -1,3 +1,14 @@
+---
+title: "Service Provider in il progetto"
+module: "Xot"
+type: concept
+tags: [provider]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "provider"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Service Provider in il progetto
 
 Il service provider è responsabile della registrazione e configurazione del tema. Ogni tema deve avere il proprio service provider.

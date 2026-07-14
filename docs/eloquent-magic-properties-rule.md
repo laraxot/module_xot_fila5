@@ -1,3 +1,14 @@
+---
+title: "Eloquent Magic Properties - Regola Assoluta"
+module: "Xot"
+type: rule
+tags: [eloquent, magic, properties, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "eloquent magic properties rule"
+related:
+  - "./phpstan-roadmap-completo.md"
+---
 # Eloquent Magic Properties - Regola Assoluta
 
 ## 🔥 REGOLA FONDAMENTALE

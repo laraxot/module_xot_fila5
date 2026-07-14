@@ -1,3 +1,14 @@
+---
+title: "PHPStan Error Resolution Roadmap - Xot Module"
+module: "Xot"
+type: concept
+tags: [phpstan, fix, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fix roadmap"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Error Resolution Roadmap - Xot Module
 
 ## Executive Summary

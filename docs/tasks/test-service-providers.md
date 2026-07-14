@@ -1,3 +1,14 @@
+---
+title: "Task: Test Service Providers"
+module: "Xot"
+type: concept
+tags: [test, service, providers]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test service providers"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Test Service Providers
 
 **Modulo**: Xot  

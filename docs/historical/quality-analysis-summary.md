@@ -1,3 +1,14 @@
+---
+title: "Riepilogo Analisi Qualità Codice Completa"
+module: "Xot"
+type: concept
+tags: [quality, analysis, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality analysis summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Riepilogo Analisi Qualità Codice Completa
 
 **Data**: 2025-12-23

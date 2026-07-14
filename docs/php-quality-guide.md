@@ -1,3 +1,14 @@
+---
+title: "PHPStan Code Quality Guide - Laraxot"
+module: "Xot"
+type: how-to
+tags: [php, quality, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "php quality guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10

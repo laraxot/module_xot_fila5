@@ -1,3 +1,14 @@
+---
+title: "Testing Guide - Modulo Xot"
+module: "Xot"
+type: how-to
+tags: [testing, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Guide - Modulo Xot
 
 ## Introduzione

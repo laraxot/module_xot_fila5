@@ -1,3 +1,14 @@
+---
+title: "Servizi del Modulo Xot"
+module: "Xot"
+type: concept
+tags: [services]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "services"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Servizi del Modulo Xot
 
 ## LangService

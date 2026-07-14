@@ -1,3 +1,14 @@
+---
+title: "Dependencies (Module Xot)"
+module: "Xot"
+type: concept
+tags: [dependencies]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dependencies"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Dependencies (Module Xot)
 
 Canonical dependency map:

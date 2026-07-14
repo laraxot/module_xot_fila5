@@ -1,3 +1,14 @@
+---
+title: "Testing Guidelines - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [testing]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Guidelines - Modulo Xot
 
 ## Framework di Testing: Pest

@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitto in SushiToJsons"
+module: "Xot"
+type: concept
+tags: [sushitojsons, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sushitojsons conflict"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Conflitto in SushiToJsons
 
 ## Panoramica

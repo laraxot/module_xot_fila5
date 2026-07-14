@@ -1,3 +1,14 @@
+---
+title: "HasRecursiveRelationshipsContract - Documentazione Completa"
+module: "Xot"
+type: concept
+tags: [recursive, relationships, contract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "recursive relationships contract"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # HasRecursiveRelationshipsContract - Documentazione Completa
 
 ## 📋 Panoramica

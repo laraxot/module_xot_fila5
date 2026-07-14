@@ -1,3 +1,14 @@
+---
+title: "Struttura dei Prompt"
+module: "Xot"
+type: concept
+tags: [prompts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "prompts"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:

@@ -1,3 +1,14 @@
+---
+title: "RouteServiceProvider nei Moduli <nome progetto>"
+module: "Xot"
+type: concept
+tags: [route, service, provider]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "route service provider"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # RouteServiceProvider nei Moduli <nome progetto>
 
 Questo documento descrive le linee guida per l'implementazione corretta del RouteServiceProvider nei moduli <nome progetto>.

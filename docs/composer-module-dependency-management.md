@@ -1,3 +1,14 @@
+---
+title: "Composer and Module Dependency Management in Laraxot"
+module: "Xot"
+type: concept
+tags: [composer, module, dependency, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "composer module dependency management"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Composer and Module Dependency Management in Laraxot
 
 This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework.

@@ -1,3 +1,14 @@
+---
+title: "Auth"
+module: "Xot"
+type: concept
+tags: [auth]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 ~~~ php
 <?php
 

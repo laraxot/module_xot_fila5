@@ -1,3 +1,14 @@
+---
+title: "Strategia Risoluzione Errori PHPStan - 1565 Errori"
+module: "Xot"
+type: concept
+tags: [phpstan, error, resolution, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan error resolution strategy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Strategia Risoluzione Errori PHPStan - 1565 Errori
 
 ## Status Iniziale

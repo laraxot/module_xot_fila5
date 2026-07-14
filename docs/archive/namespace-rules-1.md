@@ -1,3 +1,14 @@
+---
+title: "Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)"
+module: "Xot"
+type: rule
+tags: [namespace, rules, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "namespace rules 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)
 
 ## Regola Fondamentale

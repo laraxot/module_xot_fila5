@@ -1,3 +1,14 @@
+---
+title: "SaveJsonArrayAction"
+module: "Xot"
+type: concept
+tags: [save, json, array, action]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "save json array action"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # SaveJsonArrayAction
 
 L'azione `SaveJsonArrayAction` è responsabile del salvataggio di array in formato JSON su file.

@@ -1,3 +1,14 @@
+---
+title: "PHPInsights — Installazione Standalone"
+module: "Xot"
+type: concept
+tags: [phpinsights, standalone]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpinsights standalone"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPInsights — Installazione Standalone
 
 **Versione**: v2.12.0+ (isolata in `tools/phpinsights/`)

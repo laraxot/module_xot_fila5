@@ -1,3 +1,14 @@
+---
+title: "File Naming and Case Sensitivity - Project-Wide Rules"
+module: "Xot"
+type: concept
+tags: [file, naming, case, sensitivity]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "file naming case sensitivity"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # File Naming and Case Sensitivity - Project-Wide Rules
 
 ## 🔴 Problema Critico

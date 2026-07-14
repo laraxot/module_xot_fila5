@@ -1,3 +1,14 @@
+---
+title: "Verifica Mapping Classi Filament → XotBase"
+module: "Xot"
+type: concept
+tags: [filament, class, mapping, verification]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament class mapping verification"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Verifica Mapping Classi Filament → XotBase
 
 **Data**: 2025-12-23

@@ -1,3 +1,14 @@
+---
+title: "Laraxot Testing Philosophy: The Unified Approach"
+module: "Xot"
+type: concept
+tags: [testing, philosophy, unified]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing philosophy unified"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Testing Philosophy: The Unified Approach
 
 ## The Contradiction We Discovered (2026-01-09)

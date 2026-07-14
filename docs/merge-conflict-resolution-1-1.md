@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Merge Conflicts Massivi - 2025-11-04"
+module: "Xot"
+type: concept
+tags: [merge, conflict, resolution, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "merge conflict resolution 1 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale

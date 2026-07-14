@@ -1,3 +1,14 @@
+---
+title: "Documentation Cleanup & Reorganization - Action Plan"
+module: "Xot"
+type: concept
+tags: [cleanup, action, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cleanup action plan"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Documentation Cleanup & Reorganization - Action Plan
 
 **Date**: 2025-10-17

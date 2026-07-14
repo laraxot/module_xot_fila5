@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo User"
+module: "Xot"
+type: concept
+tags: [phpstan, level10, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

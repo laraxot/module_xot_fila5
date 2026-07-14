@@ -1,3 +1,14 @@
+---
+title: "Advanced Notification Patterns and Architectural Insights"
+module: "Xot"
+type: concept
+tags: [advanced, notification, architectural, insights]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "advanced notification architectural insights"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Advanced Notification Patterns and Architectural Insights
 
 ## Overview

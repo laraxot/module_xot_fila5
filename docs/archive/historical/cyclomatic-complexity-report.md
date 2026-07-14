@@ -1,3 +1,14 @@
+---
+title: "Cyclomatic Complexity Report - Module: Xot"
+module: "Xot"
+type: concept
+tags: [cyclomatic, complexity, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cyclomatic complexity report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Cyclomatic Complexity Report - Module: Xot
 
 **Generated:** 2025-10-01 19:44:12

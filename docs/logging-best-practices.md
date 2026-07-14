@@ -1,3 +1,14 @@
+---
+title: "Logging Best Practices - Critical Performance Guidelines"
+module: "Xot"
+type: concept
+tags: [logging, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logging best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview

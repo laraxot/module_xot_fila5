@@ -1,3 +1,14 @@
+---
+title: "Linee Guida per l'Ereditarietà da Classi Filament"
+module: "Xot"
+type: how-to
+tags: [filament, inheritance, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament inheritance guidelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Linee Guida per l'Ereditarietà da Classi Filament
 
 ## Problema di Compatibilità con Metodi Statici/Non Statici

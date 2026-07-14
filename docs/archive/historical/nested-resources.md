@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Nested Resource Implementation Guide"
+module: "Xot"
+type: concept
+tags: [nested, resources]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "nested resources"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Nested Resource Implementation Guide
 
 ## Overview

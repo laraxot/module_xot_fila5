@@ -1,3 +1,14 @@
+---
+title: "Report Consolidamento Documentazione - 27 Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [docs, consolidation, report, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "docs consolidation report conflict"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Report Consolidamento Documentazione - 27 Gennaio 2025
 
 ## Panoramica

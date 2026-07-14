@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Analysis - 2025-03-11"
+module: "Xot"
+type: concept
+tags: [level, 10, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "level 10 analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 Analysis - 2025-03-11
 
 ## Overview

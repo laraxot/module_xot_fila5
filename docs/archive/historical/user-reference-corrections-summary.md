@@ -1,3 +1,14 @@
+---
+title: "User Reference Corrections Summary - Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [user, reference, corrections, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user reference corrections summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # User Reference Corrections Summary - Gennaio 2025
 
 **Data**: 2025-01-10

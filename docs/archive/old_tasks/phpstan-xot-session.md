@@ -1,3 +1,14 @@
+---
+title: "phpstan xot session"
+module: "Xot"
+type: concept
+tags: [phpstan, xot, session]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan xot session"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # phpstan xot session
 
 ## stato interventi

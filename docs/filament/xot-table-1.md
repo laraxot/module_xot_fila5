@@ -1,3 +1,14 @@
+---
+title: "HasXotTable Trait per Filament in Laraxot PTVX"
+module: "Xot"
+type: concept
+tags: [xot, table, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot table 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica

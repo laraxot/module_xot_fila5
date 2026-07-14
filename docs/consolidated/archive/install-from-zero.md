@@ -1,3 +1,14 @@
+---
+title: "Install From Zero"
+module: "Xot"
+type: how-to
+tags: [install, zero]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "install from zero"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 #Install from zero
 
 ~~~ bash

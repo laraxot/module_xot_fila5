@@ -1,3 +1,14 @@
+---
+title: "Regole generali su roles, permissions e guard_name"
+module: "Xot"
+type: concept
+tags: [roles, permissions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roles permissions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole generali su roles, permissions e guard_name
 
 ## Regola generale

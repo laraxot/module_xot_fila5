@@ -1,3 +1,14 @@
+---
+title: "La Filosofia Zen dei Getter Semantici"
+module: "Xot"
+type: concept
+tags: [getter, zen]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "getter zen"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # La Filosofia Zen dei Getter Semantici
 

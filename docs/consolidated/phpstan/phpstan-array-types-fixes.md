@@ -1,3 +1,14 @@
+---
+title: "PHPStan Array Types Fixes - Patterns & Solutions"
+module: "Xot"
+type: concept
+tags: [phpstan, array, types, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan array types fixes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Array Types Fixes - Patterns & Solutions
 
 **Status**: 🎉 **COMPLETATO** - TUTTI GLI ERRORI RISOLTI! (832 → 0)

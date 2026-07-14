@@ -1,3 +1,14 @@
+---
+title: "Riassunto Filosofia Laraxot - Gennaio 2026"
+module: "Xot"
+type: concept
+tags: [laraxot, philosophy, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot philosophy summary "
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Riassunto Filosofia Laraxot - Gennaio 2026
 
 **Data**: 8 Gennaio 2026

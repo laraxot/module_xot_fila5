@@ -1,3 +1,14 @@
+---
+title: "Laraxot Philosophy - Complete Analysis"
+module: "Xot"
+type: concept
+tags: [laraxot, philosophy, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot philosophy complete"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Philosophy - Complete Analysis
 
 ## 🏛️ Architectural Religion

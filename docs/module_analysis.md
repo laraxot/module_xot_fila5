@@ -1,3 +1,14 @@
+---
+title: "Modulo Xot - Framework Base e Architettura"
+module: "Xot"
+type: concept
+tags: [module, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Modulo Xot - Framework Base e Architettura
 
 ## Scopo Principale

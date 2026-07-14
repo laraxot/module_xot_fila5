@@ -1,3 +1,14 @@
+---
+title: "Action Pattern and Service Provider Architecture: The Sacred Systems"
+module: "Xot"
+type: concept
+tags: [action, service, provider, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "action service provider architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Action Pattern and Service Provider Architecture: The Sacred Systems
 
 ## Action Pattern: The Sacred Business Logic Container

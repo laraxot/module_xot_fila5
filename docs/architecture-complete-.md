@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Complete Architecture Guide (2025)"
+module: "Xot"
+type: concept
+tags: [architecture, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture complete "
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19

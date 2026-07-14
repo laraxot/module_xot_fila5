@@ -1,3 +1,14 @@
+---
+title: "ModelWithPosContract"
+module: "Xot"
+type: concept
+tags: [model, pos, contract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model with pos contract"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ModelWithPosContract
 
 Il `ModelWithPosContract` è un'interfaccia che definisce il contratto per i modelli che necessitano di gestire una posizione ordinale.

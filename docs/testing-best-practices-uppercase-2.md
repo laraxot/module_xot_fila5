@@ -1,3 +1,14 @@
+---
+title: "Testing Best Practices - Laraxot Framework"
+module: "Xot"
+type: concept
+tags: [testing, best, practices, uppercase]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing best practices uppercase 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**

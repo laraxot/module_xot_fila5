@@ -1,3 +1,14 @@
+---
+title: "Panel Provider Patterns - XotBasePanelProvider e XotBaseMainPanelProvider"
+module: "Xot"
+type: pattern
+tags: [panel, provider, patterns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "panel provider patterns"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Panel Provider Patterns - XotBasePanelProvider e XotBaseMainPanelProvider
 
 ## Pattern Obbligatorio: Assegnazione Valore di Ritorno Actions

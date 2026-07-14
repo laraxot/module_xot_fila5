@@ -1,3 +1,14 @@
+---
+title: "Path Resolution Fixes per Filament"
+module: "Xot"
+type: concept
+tags: [path, resolution, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "path resolution fixes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Path Resolution Fixes per Filament
 
 ## Path Type Issues

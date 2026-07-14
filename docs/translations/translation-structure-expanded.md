@@ -1,3 +1,14 @@
+---
+title: "Translation Structure Expanded"
+module: "Xot"
+type: concept
+tags: [translation, structure, expanded]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation structure expanded"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
 

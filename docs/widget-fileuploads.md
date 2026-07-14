@@ -1,3 +1,14 @@
+---
+title: "Widget FileUpload Errors - Troubleshooting Guide"
+module: "Xot"
+type: concept
+tags: [widget, fileuploads]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget fileuploads"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Widget FileUpload Errors - Troubleshooting Guide
 
 ## Errore: "foreach() argument must be of type array|object, string given"

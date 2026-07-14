@@ -1,3 +1,14 @@
+---
+title: "Miglioramenti al Prompt docs.txt"
+module: "Xot"
+type: concept
+tags: [prompt, docs, improvements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "prompt docs improvements"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**

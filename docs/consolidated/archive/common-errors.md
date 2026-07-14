@@ -1,3 +1,14 @@
+---
+title: "Errori Comuni e Soluzioni"
+module: "Xot"
+type: concept
+tags: [common, errors]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "common errors"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Errori Comuni e Soluzioni
 
 ## Introduzione

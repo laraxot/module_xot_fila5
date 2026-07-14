@@ -1,3 +1,14 @@
+---
+title: "Regole Generali di Sviluppo del Progetto"
+module: "Xot"
+type: rule
+tags: [development, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "development rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti

@@ -1,3 +1,14 @@
+---
+title: "Linee Guida per la Documentazione in Laraxot"
+module: "Xot"
+type: how-to
+tags: [documentation, guidelines, 1, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation guidelines 1 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # Linee Guida per la Documentazione in Laraxot
 

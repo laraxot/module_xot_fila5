@@ -1,3 +1,14 @@
+---
+title: "Module Documentation Standard"
+module: "Xot"
+type: rule
+tags: [module, documentation, standard]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module documentation standard"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Module Documentation Standard
 
 This document defines the standard structure and format for module documentation in the Laraxot architecture.

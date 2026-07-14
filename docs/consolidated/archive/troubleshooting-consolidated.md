@@ -1,3 +1,14 @@
+---
+title: "Troubleshooting - Documentazione Consolidata DRY + KISS"
+module: "Xot"
+type: concept
+tags: [troubleshooting, consolidated]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "troubleshooting consolidated"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto

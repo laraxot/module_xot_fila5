@@ -1,3 +1,14 @@
+---
+title: "Guida alla Migrazione Filament 4"
+module: "Xot"
+type: how-to
+tags: [filament, 4, migration, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 4 migration guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida alla Migrazione Filament 4
 
 ## Cambiamenti Principali da Filament 3 a Filament 4

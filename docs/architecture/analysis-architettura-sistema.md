@@ -1,3 +1,14 @@
+---
+title: "Analisi dell'Architettura del Sistema il progetto"
+module: "Xot"
+type: concept
+tags: [analysis, architettura, sistema]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "analysis architettura sistema"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi dell'Architettura del Sistema il progetto
 
 ## Panoramica Architetturale

@@ -1,3 +1,14 @@
+---
+title: "TestCase Migration Rule - VERSIONE CORRETTA"
+module: "Xot"
+type: rule
+tags: [testcase, migrate, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testcase migrate rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # TestCase Migration Rule - VERSIONE CORRETTA
 
 ## REGOLA FONDAMENTALE: No Migration nel TestCase

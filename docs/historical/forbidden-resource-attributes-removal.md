@@ -1,3 +1,14 @@
+---
+title: "Rimozione Proprietà Vietate da XotBaseResource - Analisi e Implementazione"
+module: "Xot"
+type: rule
+tags: [forbidden, resource, attributes, removal]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "forbidden resource attributes removal"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Rimozione Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
 **Data**: 2026-01-09  

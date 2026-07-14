@@ -1,3 +1,14 @@
+---
+title: "Chart Generation Actions - Spatie Queueable Guide"
+module: "Xot"
+type: concept
+tags: [chart, generation, actions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chart generation actions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Chart Generation Actions - Spatie Queueable Guide
 
 ## 📋 Overview

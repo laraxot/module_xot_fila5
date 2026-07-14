@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitti Git - 6 Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [gits, resolution, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "gits resolution 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: [DATE]

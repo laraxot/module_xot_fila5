@@ -1,3 +1,14 @@
+---
+title: "Analisi DRY e KISS - Architettura Modelli"
+module: "Xot"
+type: concept
+tags: [dry, kiss, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dry kiss analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi DRY e KISS - Architettura Modelli
 
 **Data**: 2025-10-15

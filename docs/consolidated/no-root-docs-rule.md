@@ -1,3 +1,14 @@
+---
+title: "REGOLA CRITICA: Cartelle docs root VIETATE"
+module: "Xot"
+type: rule
+tags: [no, root, docs, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "no root docs rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # REGOLA CRITICA: Cartelle docs root VIETATE
 
 ## CARTELLE CHE NON DEVONO MAI ESISTERE:

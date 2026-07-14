@@ -1,3 +1,14 @@
+---
+title: "Miglioramenti Documentazione - Novembre 2025"
+module: "Xot"
+type: concept
+tags: [docs, improvements, nov]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "docs improvements nov"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Miglioramenti Documentazione - Novembre 2025
 
 ## 🎯 Obiettivo

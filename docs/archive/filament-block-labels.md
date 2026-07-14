@@ -1,3 +1,14 @@
+---
+title: "Filament Block Label Guidelines"
+module: "Xot"
+type: concept
+tags: [filament, block, labels]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament block labels"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Block Label Guidelines
 
 > Questo documento è un collegamento alla documentazione principale sulle convenzioni per le etichette nei Filament Blocks.

@@ -1,3 +1,14 @@
+---
+title: "Processo Decisionale 'Super Mucca' - La Litigata Interna"
+module: "Xot"
+type: concept
+tags: [decision, making, process, super]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "decision making process super mucca"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Data**: 2025-01-22

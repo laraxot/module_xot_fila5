@@ -1,3 +1,14 @@
+---
+title: "Filament V5 Widgets Guide - Modulo Xot"
+module: "Xot"
+type: how-to
+tags: [filament, v5, widgets, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament v5 widgets guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament V5 Widgets Guide - Modulo Xot
 
 **Data**: 2026-03-23  

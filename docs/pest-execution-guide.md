@@ -1,3 +1,14 @@
+---
+title: "Pest Testing - Guida Esecuzione dalla Cartella Laravel"
+module: "Xot"
+type: how-to
+tags: [pest, execution, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pest execution guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pest Testing - Guida Esecuzione dalla Cartella Laravel
 
 **Data**: 9 Gennaio 2026  

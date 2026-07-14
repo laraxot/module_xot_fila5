@@ -1,3 +1,14 @@
+---
+title: "Ottimizzazioni Super DRY + KISS - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [ottimizzazioni, super, dry, kiss]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni super dry kiss"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Ottimizzazioni Super DRY + KISS - Modulo Xot
 
 ## 🎯 Panoramica

@@ -1,3 +1,14 @@
+---
+title: "GSD Canonical Source"
+module: "Xot"
+type: concept
+tags: [gsd, canonical, source]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "gsd canonical source"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # GSD Canonical Source
 
 ## Regola

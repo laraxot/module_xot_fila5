@@ -1,3 +1,14 @@
+---
+title: "TestCase Setup - Critical Rules"
+module: "Xot"
+type: rule
+tags: [testcase, setup, critical, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testcase setup critical rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # TestCase Setup - Critical Rules
 
 ## REGOLE FONDAMENTALI

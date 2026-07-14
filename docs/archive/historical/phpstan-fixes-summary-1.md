@@ -1,3 +1,14 @@
+---
+title: "Riassunto delle Correzioni per PHPStan Livello 9"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, summary, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes summary 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Riassunto delle Correzioni per PHPStan Livello 9
 
 Questo documento riassume i problemi comuni riscontrati con PHPStan livello 9 e le relative soluzioni, basato su un'analisi dettagliata del codice.

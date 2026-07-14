@@ -1,3 +1,14 @@
+---
+title: "Laraxot Development Workflow - Detailed Guide"
+module: "Xot"
+type: concept
+tags: [development, workflow, detailed]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "development workflow detailed"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Development Workflow - Detailed Guide
 
 ## 🚀 Development Lifecycle

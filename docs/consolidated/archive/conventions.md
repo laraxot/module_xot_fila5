@@ -1,3 +1,14 @@
+---
+title: "Convenzioni di Naming"
+module: "Xot"
+type: concept
+tags: [conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conventions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Convenzioni di Naming
 
 ## Struttura delle Cartelle nei Moduli

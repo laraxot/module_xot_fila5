@@ -1,3 +1,14 @@
+---
+title: "Super Mucca Optimization - Jan 2025"
+module: "Xot"
+type: concept
+tags: [super, mucca, optimization, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "super mucca optimization 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Super Mucca Optimization - Jan 2025
 
 **Module**: Xot

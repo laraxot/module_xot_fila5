@@ -1,3 +1,14 @@
+---
+title: "Come Aumentare il Livello di Confidenza — Second Brain Framework"
+module: "Xot"
+type: concept
+tags: [confidence, building]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "confidence building"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Come Aumentare il Livello di Confidenza — Second Brain Framework
 
 **Autore:** Claude Code  

@@ -1,3 +1,14 @@
+---
+title: "Database Testing Pattern"
+module: "Xot"
+type: pattern
+tags: [database, testing, pattern]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "database testing pattern"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Database Testing Pattern
 
 ## Overview

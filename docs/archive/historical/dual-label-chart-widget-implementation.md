@@ -1,3 +1,14 @@
+---
+title: "SimpleChartWidget - Analisi Qualità del Codice e Best Practices"
+module: "Xot"
+type: concept
+tags: [dual, label, chart, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dual label chart widget implementation"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

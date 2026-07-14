@@ -1,3 +1,14 @@
+---
+title: "Code Quality Improvements - Documento Consolidato"
+module: "Xot"
+type: concept
+tags: [code, quality, improvements, consolidated]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality improvements consolidated"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Code Quality Improvements - Documento Consolidato
 
 **Data creazione**: 2025-01-22

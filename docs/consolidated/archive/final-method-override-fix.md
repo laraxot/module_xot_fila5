@@ -1,3 +1,14 @@
+---
+title: "Correzione Errori Override Metodi Final"
+module: "Xot"
+type: concept
+tags: [final, method, override, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "final method override fix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzione Errori Override Metodi Final
 
 ## Problema Identificato (2025-01-06)

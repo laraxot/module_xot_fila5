@@ -1,3 +1,14 @@
+---
+title: "Rapporto PHPStan Livello 5 per il modulo Xot"
+module: "Xot"
+type: concept
+tags: [level, 5]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "level 5"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 
 

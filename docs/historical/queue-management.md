@@ -1,3 +1,14 @@
+---
+title: "Gestione Code"
+module: "Xot"
+type: concept
+tags: [queue, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "queue management"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Gestione Code
 
 ## Configurazione Base

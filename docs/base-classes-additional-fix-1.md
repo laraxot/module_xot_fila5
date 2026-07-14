@@ -1,3 +1,14 @@
+---
+title: "Correzione Classi Base Aggiuntive - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [base, classes, additional, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "base classes additional fix 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzione Classi Base Aggiuntive - Modulo Xot
 
 **Data:** 15 Ottobre 2025  

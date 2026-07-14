@@ -1,3 +1,14 @@
+---
+title: "Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono"
+module: "Xot"
+type: rule
+tags: [ai, prompt, fundamental, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ai prompt fundamental rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 
 ## 🚨 REGOLA ASSOLUTA: Database Testing

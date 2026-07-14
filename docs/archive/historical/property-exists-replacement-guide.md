@@ -1,3 +1,14 @@
+---
+title: "Guida Pratica: Sostituzione di property_exists() per Eloquent"
+module: "Xot"
+type: how-to
+tags: [property, exists, replacement, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property exists replacement guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida Pratica: Sostituzione di property_exists() per Eloquent
 
 ## Filosofia

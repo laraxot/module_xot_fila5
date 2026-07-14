@@ -1,3 +1,14 @@
+---
+title: "Autoload Configuration Audit Report"
+module: "Xot"
+type: concept
+tags: [autoload, audit, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "autoload audit report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Autoload Configuration Audit Report
 
 ## Standard Configuration

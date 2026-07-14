@@ -1,3 +1,14 @@
+---
+title: "Analisi Violazioni Critiche XotBaseResource"
+module: "Xot"
+type: concept
+tags: [critical, violations]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "critical violations"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi Violazioni Critiche XotBaseResource
 
 ## 🚨 Violazioni Identificate

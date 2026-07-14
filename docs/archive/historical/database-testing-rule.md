@@ -1,3 +1,14 @@
+---
+title: "🚨 DATABASE TESTING RULE - MySQL con Suffisso '_test'"
+module: "Xot"
+type: rule
+tags: [database, testing, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "database testing rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🚨 DATABASE TESTING RULE - MySQL con Suffisso "_test"
 
 ## 📋 Regola Fondamentale

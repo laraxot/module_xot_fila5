@@ -1,3 +1,14 @@
+---
+title: "Analisi e Risoluzione Colli di Bottiglia - Modulo Patient"
+module: "Xot"
+type: concept
+tags: [patient]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "patient"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Patient
 
 ## 1. Timeline Cartella Clinica (Priorità: Alta)

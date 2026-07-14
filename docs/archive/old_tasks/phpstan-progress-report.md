@@ -1,3 +1,14 @@
+---
+title: "PHPStan Error Resolution - Progress Report"
+module: "Xot"
+type: concept
+tags: [phpstan, progress, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan progress report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Error Resolution - Progress Report
 
 ## Current Status

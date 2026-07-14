@@ -1,3 +1,14 @@
+---
+title: "Database Architecture in Laraxot"
+module: "Xot"
+type: concept
+tags: [database, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "database architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Database Architecture in Laraxot
 
 ## Modular Connection Isolation (Mandatory Rule)

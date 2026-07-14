@@ -1,3 +1,14 @@
+---
+title: "XotBaseWizardWidget — Filosofia Completa"
+module: "Xot"
+type: concept
+tags: [xot, base, wizard, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot base wizard widget philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseWizardWidget — Filosofia Completa
 
 **Status**: Active  

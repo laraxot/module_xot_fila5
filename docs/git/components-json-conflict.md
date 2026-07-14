@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitto in _components.json"
+module: "Xot"
+type: concept
+tags: [components, json, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "components json conflict"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Conflitto in _components.json
 
 ## Panoramica

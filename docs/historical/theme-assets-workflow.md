@@ -1,3 +1,14 @@
+---
+title: "🎨 Theme Assets Workflow - CSS/JS Frontend"
+module: "Xot"
+type: concept
+tags: [theme, assets, workflow]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme assets workflow"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🎨 Theme Assets Workflow - CSS/JS Frontend
 
 **⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.

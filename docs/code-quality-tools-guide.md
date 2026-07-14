@@ -1,3 +1,14 @@
+---
+title: "🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP"
+module: "Xot"
+type: how-to
+tags: [code, quality, tools, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality tools guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP
 
 **Data Creazione**: 2025-01-27

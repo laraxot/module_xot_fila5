@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes Progress Report - March 18, 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, progress]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan progress"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fixes Progress Report - March 18, 2025
 
 ## Progress Summary

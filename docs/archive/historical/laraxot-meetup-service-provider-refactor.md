@@ -1,3 +1,14 @@
+---
+title: "Laraxot MeetupServiceProvider Refactor - 2025-12-16"
+module: "Xot"
+type: concept
+tags: [laraxot, meetup, service, provider]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot meetup service provider refactor"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot MeetupServiceProvider Refactor - 2025-12-16
 
 **Data**: 2025-12-16

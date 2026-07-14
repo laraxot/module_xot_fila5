@@ -1,3 +1,14 @@
+---
+title: "Helper Functions - Xot Module"
+module: "Xot"
+type: concept
+tags: [helpers]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "helpers"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Helper Functions - Xot Module
 
 **Purpose**: Funzioni helper globali per utilità comuni nel framework Laraxot

@@ -1,3 +1,14 @@
+---
+title: "Theme"
+module: "Xot"
+type: concept
+tags: [theme]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 https://fly.io/laravel-bytes/filamentphp-adding-some-style/
 ### Versione HEAD
 

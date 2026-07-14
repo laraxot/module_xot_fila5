@@ -1,3 +1,14 @@
+---
+title: "Laraxot Migration Philosophy - Core Principles"
+module: "Xot"
+type: concept
+tags: [laraxot, migration, philosophy, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot migration philosophy sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Migration Philosophy - Core Principles
 
 ## The Fundamental Rule

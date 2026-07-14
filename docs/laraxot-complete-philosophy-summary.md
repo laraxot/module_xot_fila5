@@ -1,3 +1,14 @@
+---
+title: "Laraxot Complete Philosophy Summary"
+module: "Xot"
+type: concept
+tags: [laraxot, complete, philosophy, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot complete philosophy summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Complete Philosophy Summary
 
 ## 🎯 Core Principles

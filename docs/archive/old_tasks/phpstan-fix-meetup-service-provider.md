@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fix - MeetupServiceProvider - 2025-12-16"
+module: "Xot"
+type: concept
+tags: [phpstan, fix, meetup, service]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fix meetup service provider"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fix - MeetupServiceProvider - 2025-12-16
 
 **Data**: 2025-12-16  

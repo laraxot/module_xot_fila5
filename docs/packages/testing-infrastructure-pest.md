@@ -1,3 +1,14 @@
+---
+title: "Infrastruttura di Testing con Pest - Laraxot PTVX"
+module: "Xot"
+type: concept
+tags: [testing, infrastructure, pest]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing infrastructure pest"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Infrastruttura di Testing con Pest - Laraxot PTVX
 
 L'architettura di testing è progettata per garantire isolamento e performance in un ambiente multi-database MySQL.

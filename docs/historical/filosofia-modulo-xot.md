@@ -1,3 +1,14 @@
+---
+title: "Analisi Approfondita del Modulo Xot"
+module: "Xot"
+type: concept
+tags: [filosofia, modulo, xot]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filosofia modulo xot"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi Approfondita del Modulo Xot
 
 > **Generato**: 2025-12-24

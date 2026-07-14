@@ -1,3 +1,14 @@
+---
+title: "⚠️ REGOLA CRITICA - Namespace Laravel Modules OBBLIGATORIA"
+module: "Xot"
+type: rule
+tags: [laravel, modules, namespace, critical]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel modules namespace critical rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ⚠️ REGOLA CRITICA - Namespace Laravel Modules OBBLIGATORIA
 
 **Data**: 2025-01-22

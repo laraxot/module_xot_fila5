@@ -1,3 +1,14 @@
+---
+title: "Task: Test Actions"
+module: "Xot"
+type: concept
+tags: [test, actions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test actions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Test Actions
 
 **Modulo**: Xot  

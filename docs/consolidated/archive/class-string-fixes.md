@@ -1,3 +1,14 @@
+---
+title: "Class-String Return Type Fixes for Xot Module"
+module: "Xot"
+type: concept
+tags: [class, string, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "class string fixes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Class-String Return Type Fixes for Xot Module
 
 ## Method Return Type Issues

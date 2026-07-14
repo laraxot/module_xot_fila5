@@ -1,3 +1,14 @@
+---
+title: "REGOLA CRITICA: MySQL Only per Testing - Nessun SQLite"
+module: "Xot"
+type: rule
+tags: [mysql, only, testing, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mysql only testing rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # REGOLA CRITICA: MySQL Only per Testing - Nessun SQLite
 
 **Status**: ✅ REGOLA ASSOLUTA - NESSUNA ECCEZIONE  

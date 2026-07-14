@@ -1,3 +1,14 @@
+---
+title: "XotComposer"
+module: "Xot"
+type: concept
+tags: [xot, composer]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot composer"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotComposer
 
 Il `XotComposer` è un view composer che gestisce la composizione delle viste per il modulo Xot. Si occupa di iniettare dati comuni in tutte le viste che lo utilizzano.

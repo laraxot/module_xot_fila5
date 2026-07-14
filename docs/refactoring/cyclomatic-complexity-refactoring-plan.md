@@ -1,3 +1,14 @@
+---
+title: "Cyclomatic Complexity Refactoring Plan - Module Xot"
+module: "Xot"
+type: concept
+tags: [cyclomatic, complexity, refactoring, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cyclomatic complexity refactoring plan"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Cyclomatic Complexity Refactoring Plan - Module Xot
 
 **Created:** 2025-10-01

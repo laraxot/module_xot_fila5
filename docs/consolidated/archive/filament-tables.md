@@ -1,3 +1,14 @@
+---
+title: "Gestione delle Tabelle in Filament"
+module: "Xot"
+type: concept
+tags: [filament, tables]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament tables"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Gestione delle Tabelle in Filament
 
 Questo documento definisce le linee guida per l'implementazione delle tabelle Filament nel progetto <nome progetto>, utilizzando il trait `HasXotTable`.

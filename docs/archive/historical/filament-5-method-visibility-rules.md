@@ -1,3 +1,14 @@
+---
+title: "Filament 5 Method Visibility Rules"
+module: "Xot"
+type: rule
+tags: [filament, 5, method, visibility]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 5 method visibility rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament 5 Method Visibility Rules
 
 **Created:** January 2026

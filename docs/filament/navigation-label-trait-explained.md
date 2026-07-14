@@ -1,3 +1,14 @@
+---
+title: "NavigationLabelTrait - Sistema di Traduzione Automatica Navigation"
+module: "Xot"
+type: pattern
+tags: [navigation, label, trait, explained]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation label trait explained"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # NavigationLabelTrait - Sistema di Traduzione Automatica Navigation
 
 ## Overview

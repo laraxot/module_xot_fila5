@@ -1,3 +1,14 @@
+---
+title: "Task: Test Base Classes"
+module: "Xot"
+type: concept
+tags: [test, base, classes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test base classes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Test Base Classes
 
 **Modulo**: Xot  

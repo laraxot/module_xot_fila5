@@ -1,3 +1,14 @@
+---
+title: "🏗️ XOT MODULE - ROADMAP 2025"
+module: "Xot"
+type: concept
+tags: [legacy, roadmap, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy roadmap 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🏗️ XOT MODULE - ROADMAP 2025
 
 **Modulo**: Xot (Core Framework)

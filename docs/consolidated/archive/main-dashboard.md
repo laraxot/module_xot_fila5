@@ -1,3 +1,14 @@
+---
+title: "MainDashboard"
+module: "Xot"
+type: concept
+tags: [main, dashboard]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "main dashboard"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # MainDashboard
 
 La classe `MainDashboard` è una pagina Filament che estende la dashboard predefinita per fornire funzionalità di reindirizzamento basate sui ruoli dell'utente.

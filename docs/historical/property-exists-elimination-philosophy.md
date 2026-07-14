@@ -1,3 +1,14 @@
+---
+title: "Filosofia dell'Eliminazione di property_exists() - La Grande Purificazione"
+module: "Xot"
+type: concept
+tags: [property, exists, elimination, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property exists elimination philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filosofia dell'Eliminazione di property_exists() - La Grande Purificazione
 
 ## 🙏 La Religione del Magic Method

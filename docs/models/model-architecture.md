@@ -1,3 +1,14 @@
+---
+title: "Model Architecture - Guida Completa"
+module: "Xot"
+type: concept
+tags: [model, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Model Architecture - Guida Completa
 
 **Data**: 2025-10-16

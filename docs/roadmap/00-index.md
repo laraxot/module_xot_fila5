@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Roadmap"
+module: "Xot"
+type: concept
+tags: [00, index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "00 index"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Roadmap
 
 > Motore core Laraxot. Framework Zero-Config per Laravel 12.

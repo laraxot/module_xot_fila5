@@ -1,3 +1,14 @@
+---
+title: "Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto"
+module: "Xot"
+type: concept
+tags: [quality, tools, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality tools philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto
 
 ## 🎯 Overview - I Tre Pilastri

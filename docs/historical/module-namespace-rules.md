@@ -1,3 +1,14 @@
+---
+title: "Regola generale: Label e traduzioni in Filament"
+module: "Xot"
+type: rule
+tags: [module, namespace, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module namespace rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola

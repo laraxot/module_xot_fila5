@@ -1,3 +1,14 @@
+---
+title: "Aggiornamento File di Traduzione xot_base.php"
+module: "Xot"
+type: concept
+tags: [xot, base, translation, update]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot base translation update 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Aggiornamento File di Traduzione xot_base.php
 
 ## Data Aggiornamento

@@ -1,3 +1,14 @@
+---
+title: "Architettura Widget — La Filosofia dei Metodi Privati"
+module: "Xot"
+type: concept
+tags: [widget, method, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget method architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Architettura Widget — La Filosofia dei Metodi Privati
 
 **Status**: Active  

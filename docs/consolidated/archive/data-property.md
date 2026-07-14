@@ -1,3 +1,14 @@
+---
+title: "Proprietà `$data` in XotBaseWidget: COMPONENTE CRITICO DEL SISTEMA"
+module: "Xot"
+type: concept
+tags: [data, property]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "data property"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Proprietà `$data` in XotBaseWidget: COMPONENTE CRITICO DEL SISTEMA
 
 ## ⚠️ AVVISO CRITICO

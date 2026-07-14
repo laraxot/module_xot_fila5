@@ -1,3 +1,14 @@
+---
+title: "PHPStan Errori Modulo Xot - [DATE]"
+module: "Xot"
+type: concept
+tags: [phpstan, errors]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan errors"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Errori Modulo Xot - [DATE]
 
 ## Analisi Completa

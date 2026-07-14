@@ -1,3 +1,14 @@
+---
+title: "Policy Inheritance Rule"
+module: "Xot"
+type: rule
+tags: [policy, inheritance, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policy inheritance rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Policy Inheritance Rule
 
 ## ⚖️ Decision: Base Policy Hierarchy

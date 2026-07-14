@@ -1,3 +1,14 @@
+---
+title: "Analisi della Discrepanza tra Namespace e Struttura Directory nei Moduli Laraxot"
+module: "Xot"
+type: concept
+tags: [structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "structure"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 ### Versione HEAD
 
 # Analisi della Discrepanza tra Namespace e Struttura Directory nei Moduli Laraxot

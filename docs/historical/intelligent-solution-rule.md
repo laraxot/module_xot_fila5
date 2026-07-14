@@ -1,3 +1,14 @@
+---
+title: "Regola Critica: Soluzione Intelligente e Professionale"
+module: "Xot"
+type: rule
+tags: [intelligent, solution, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "intelligent solution rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regola Critica: Soluzione Intelligente e Professionale
 
 **Data**: 2025-01-22

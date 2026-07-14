@@ -1,3 +1,14 @@
+---
+title: "PHPStan Guidelines and Best Practices"
+module: "Xot"
+type: how-to
+tags: [phpstan, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan guidelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Guidelines and Best Practices
 
 ## Overview

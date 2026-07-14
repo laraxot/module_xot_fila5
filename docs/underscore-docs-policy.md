@@ -1,3 +1,14 @@
+---
+title: "Underscore Docs Policy"
+module: "Xot"
+type: rule
+tags: [underscore, docs, policy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "underscore docs policy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Underscore Docs Policy
 
 ## Regola

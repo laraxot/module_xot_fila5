@@ -1,3 +1,14 @@
+---
+title: "PHPStan Code Quality Guide"
+module: "Xot"
+type: rule
+tags: [phpstan, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Code Quality Guide
 
 **Principi**: DRY + KISS + SOLID + Robust

@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Comprehensive Analysis"
+module: "Xot"
+type: concept
+tags: [module, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Comprehensive Analysis
 
 ## Module Overview

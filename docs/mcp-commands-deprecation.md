@@ -1,3 +1,14 @@
+---
+title: "Deprecazione Comandi MCP e Migrazione Azioni Database"
+module: "Xot"
+type: concept
+tags: [mcp, commands, deprecation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp commands deprecation"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Deprecazione Comandi MCP e Migrazione Azioni Database
 
 ## Panoramica

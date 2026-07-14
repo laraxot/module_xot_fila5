@@ -1,3 +1,14 @@
+---
+title: "Filament 5.x Installation and Chart Widget Guide"
+module: "Xot"
+type: how-to
+tags: [filament, installation, charts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament installation and charts"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament 5.x Installation and Chart Widget Guide
 
 ## Overview

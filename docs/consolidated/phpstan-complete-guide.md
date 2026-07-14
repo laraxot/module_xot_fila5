@@ -1,3 +1,14 @@
+---
+title: "PHPStan Complete Guide - Consolidated"
+module: "Xot"
+type: how-to
+tags: [phpstan, complete, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Complete Guide - Consolidated
 
 ## Overview

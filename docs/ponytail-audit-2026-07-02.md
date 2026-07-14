@@ -1,3 +1,14 @@
+---
+title: "Ponytail-audit 2026-07-02: Xot module findings"
+module: "Xot"
+type: concept
+tags: [ponytail, audit, 2026, 07]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ponytail audit 2026 07 02"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Ponytail-audit 2026-07-02: Xot module findings
 
 Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://github.com/laraxot/base_quaeris_fila5/issues/100), [#102](https://github.com/laraxot/base_quaeris_fila5/issues/102) and [#111](https://github.com/laraxot/base_quaeris_fila5/issues/111), summarized in discussion [#114](https://github.com/laraxot/base_quaeris_fila5/discussions/114).

@@ -1,3 +1,14 @@
+---
+title: "User Reference Corrections Summary - Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [user, reference, corrections, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user reference corrections sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # User Reference Corrections Summary - Gennaio 2025
 
 **Obiettivo**: Correggere tutti i riferimenti a `App\Models\User` che non esiste

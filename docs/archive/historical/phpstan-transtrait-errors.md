@@ -1,3 +1,14 @@
+---
+title: "PHPStan Errors - TransTrait.php"
+module: "Xot"
+type: pattern
+tags: [phpstan, transtrait, errors]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan transtrait errors"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Errors - TransTrait.php
 
 **Date**: 2025-12-16

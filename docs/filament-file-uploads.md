@@ -1,3 +1,14 @@
+---
+title: "Gestione dei File Upload in Filament"
+module: "Xot"
+type: concept
+tags: [filament, file, uploads]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament file uploads"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Gestione dei File Upload in Filament
 
 ## Panoramica

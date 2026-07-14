@@ -1,3 +1,14 @@
+---
+title: "Laravel 11+ Casts Pattern - CRITICAL UPDATE"
+module: "Xot"
+type: pattern
+tags: [laravel, 11, casts, pattern]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel 11 casts pattern"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laravel 11+ Casts Pattern - CRITICAL UPDATE
 
 ## ⚠️ DEPRECATED: `protected $casts` Property

@@ -1,3 +1,14 @@
+---
+title: "Browsershot Missing Dependency"
+module: "Xot"
+type: concept
+tags: [browsershot, missing, dependency]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "browsershot missing dependency"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Browsershot Missing Dependency
 
 ## Problem

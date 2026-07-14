@@ -1,3 +1,14 @@
+---
+title: "Gestione Token CSRF nei Widget XotBase"
+module: "Xot"
+type: concept
+tags: [csrf, token, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "csrf token management"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Gestione Token CSRF nei Widget XotBase
 
 ## Descrizione

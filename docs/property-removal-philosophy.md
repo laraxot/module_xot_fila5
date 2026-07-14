@@ -1,3 +1,14 @@
+---
+title: "Filosofia della Rimozione Proprietà in XotBaseResource"
+module: "Xot"
+type: concept
+tags: [property, removal, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property removal philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filosofia della Rimozione Proprietà in XotBaseResource
 
 **Data**: 2026-01-09  

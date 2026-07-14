@@ -1,3 +1,14 @@
+---
+title: "Bug Fix: Duplicazione If Statement in HasXotTable.php"
+module: "Xot"
+type: concept
+tags: [bugfix, hasxottable, duplicate, if]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bugfix hasxottable duplicate if"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0  

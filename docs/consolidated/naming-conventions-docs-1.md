@@ -1,3 +1,14 @@
+---
+title: "Convenzioni di Naming nella Documentazione"
+module: "Xot"
+type: concept
+tags: [naming, conventions, docs, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "naming conventions docs 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Convenzioni di Naming nella Documentazione
 
 ## Regola: Nome del Progetto nei Moduli

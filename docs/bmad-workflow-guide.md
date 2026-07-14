@@ -1,3 +1,14 @@
+---
+title: "BMAD Workflow Guide for Laraxot"
+module: "Xot"
+type: how-to
+tags: [bmad, workflow, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bmad workflow guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # BMAD Workflow Guide for Laraxot
 
 ## Overview

@@ -1,3 +1,14 @@
+---
+title: "PHPStan Batch Fixes - Novembre 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, batch, nov]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan batch nov"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Batch Fixes - Novembre 2025
 
 ## Sessione Correzione Modulo per Modulo

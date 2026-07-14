@@ -1,3 +1,14 @@
+---
+title: "Array Keys Rule for Filament Schemas"
+module: "Xot"
+type: rule
+tags: [array, keys, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "array keys rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Array Keys Rule for Filament Schemas
 
 ## Regola

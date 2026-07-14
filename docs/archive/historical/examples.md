@@ -1,3 +1,14 @@
+---
+title: "💡 **Esempi Modulo Xot**"
+module: "Xot"
+type: concept
+tags: [examples]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "examples"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 💡 **Esempi Modulo Xot**
 
 ## 📋 **Panoramica**

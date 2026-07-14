@@ -1,3 +1,14 @@
+---
+title: "PHPStan Errors - XotBaseRelationManager"
+module: "Xot"
+type: concept
+tags: [phpstan, errors, xotbaserelationmanager]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan errors xotbaserelationmanager"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Errors - XotBaseRelationManager
 
 **Data**: 2025-12-23

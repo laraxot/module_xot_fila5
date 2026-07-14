@@ -1,3 +1,14 @@
+---
+title: "PHPStan Analysis Summary - Comprehensive Error Report"
+module: "Xot"
+type: concept
+tags: [phpstan, analysis, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan analysis summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Analysis Summary - Comprehensive Error Report
 
 ## Overview

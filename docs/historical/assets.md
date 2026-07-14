@@ -1,3 +1,14 @@
+---
+title: "Assets in il progetto"
+module: "Xot"
+type: concept
+tags: [assets]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "assets"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Assets in il progetto
 
 Gli assets sono le risorse statiche (CSS, JavaScript, immagini, font) utilizzate dal tema. Ogni tema può definire i propri assets.

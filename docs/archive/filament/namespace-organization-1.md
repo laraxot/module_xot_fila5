@@ -1,3 +1,14 @@
+---
+title: "Organizzazione dei Namespace Filament nel Modulo Xot"
+module: "Xot"
+type: concept
+tags: [namespace, organization, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "namespace organization 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base

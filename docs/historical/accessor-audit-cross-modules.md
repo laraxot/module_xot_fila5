@@ -1,3 +1,14 @@
+---
+title: "Audit Cross-Modules: Accessor con save() senza Guard"
+module: "Xot"
+type: concept
+tags: [accessor, audit, cross, modules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "accessor audit cross modules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Audit Cross-Modules: Accessor con save() senza Guard
 
 ## Obiettivo Audit

@@ -1,3 +1,14 @@
+---
+title: "Task: Migliorare Type Safety nei Filament Traits - Xot"
+module: "Xot"
+type: pattern
+tags: [task, type, safety, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "task type safety filament traits"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Migliorare Type Safety nei Filament Traits - Xot
 
 **Modulo**: Xot

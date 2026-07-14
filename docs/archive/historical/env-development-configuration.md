@@ -1,3 +1,14 @@
+---
+title: "Configurazione .env Development in Laraxot"
+module: "Xot"
+type: concept
+tags: [env, development, configuration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "env development configuration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Configurazione .env Development in Laraxot
 
 ## Panoramica

@@ -1,3 +1,14 @@
+---
+title: "Guida agli Stili, Tabelle e Immagini"
+module: "Xot"
+type: concept
+tags: [styling]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "styling"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.

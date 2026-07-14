@@ -1,3 +1,14 @@
+---
+title: "Collegamenti al Modulo Cms"
+module: "Xot"
+type: concept
+tags: [cms, link]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cms link"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Collegamenti al Modulo Cms
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Xot e il modulo Cms.

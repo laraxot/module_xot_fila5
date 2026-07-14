@@ -1,3 +1,14 @@
+---
+title: "Pattern Specifici PHPStan Level 10"
+module: "Xot"
+type: pattern
+tags: [phpstan, specific, patterns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan specific patterns"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pattern Specifici PHPStan Level 10
 
 Questo documento raccoglie pattern specifici per risolvere errori PHPStan a livello 10, complementare alla guida generale.

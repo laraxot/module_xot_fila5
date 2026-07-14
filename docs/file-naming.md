@@ -1,3 +1,14 @@
+---
+title: "Regole di Naming per File"
+module: "Xot"
+type: concept
+tags: [file, naming]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "file naming"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive

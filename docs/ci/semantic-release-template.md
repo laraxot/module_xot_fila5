@@ -1,3 +1,14 @@
+---
+title: "Template semantic-release (moduli e temi)"
+module: "Xot"
+type: concept
+tags: [semantic, release, template]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "semantic release template"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Template semantic-release (moduli e temi)
 
 ## Scopo

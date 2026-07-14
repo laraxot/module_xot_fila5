@@ -1,3 +1,14 @@
+---
+title: "Data Objects"
+module: "Xot"
+type: concept
+tags: [data, objects, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "data objects 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Data Objects
 
 ## Principi Fondamentali

@@ -1,3 +1,14 @@
+---
+title: "Architettura XotBase - Sistema Completo Wrapper Filament"
+module: "Xot"
+type: concept
+tags: [xotbase, architecture, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbase architecture complete"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Architettura XotBase - Sistema Completo Wrapper Filament
 
 ## Filosofia Fondamentale

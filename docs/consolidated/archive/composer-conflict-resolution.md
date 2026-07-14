@@ -1,3 +1,14 @@
+---
+title: "Risoluzione conflitto composer.json (Xot)"
+module: "Xot"
+type: concept
+tags: [composer, conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "composer conflict resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione conflitto composer.json (Xot)
 
 ## Intent

@@ -1,3 +1,14 @@
+---
+title: "Convenzioni per Form Schema in Filament"
+module: "Xot"
+type: concept
+tags: [filament, form, schema, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament form schema conventions 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Convenzioni per Form Schema in Filament
 
 ## Regola Fondamentale

@@ -1,3 +1,14 @@
+---
+title: "Testing Complete Guide - Consolidated"
+module: "Xot"
+type: how-to
+tags: [testing, complete, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Complete Guide - Consolidated
 
 ## Overview

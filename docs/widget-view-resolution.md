@@ -1,3 +1,14 @@
+---
+title: "Widget View Resolution - Risoluzione Automatica vs Manuale"
+module: "Xot"
+type: concept
+tags: [widget, view, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget view resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Widget View Resolution - Risoluzione Automatica vs Manuale
 
 **Data**: 2025-01-27

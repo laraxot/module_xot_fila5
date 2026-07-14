@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+module: "Xot"
+type: concept
+tags: [phpstan, compliance, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan compliance status"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10  

@@ -1,3 +1,14 @@
+---
+title: "Testing Fixes Progress - Sessione 2025-01-22"
+module: "Xot"
+type: concept
+tags: [testing, progress, session, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing progress session 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22

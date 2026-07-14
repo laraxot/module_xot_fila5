@@ -1,3 +1,14 @@
+---
+title: "Best Practices per Model States e Transizioni Custom"
+module: "Xot"
+type: concept
+tags: [model, states, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model states best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom

@@ -1,3 +1,14 @@
+---
+title: "Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti"
+module: "Xot"
+type: concept
+tags: [merge, conflicts, resolution, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "merge conflicts resolution roadmap"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti
 
 **Data**: 2025-01-22

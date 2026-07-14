@@ -1,3 +1,14 @@
+---
+title: "Xot Module - PHPStan Level 10 Errors Resolution Roadmap"
+module: "Xot"
+type: concept
+tags: [phpstans, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstans resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
 **Modulo**: Xot (Base Module)  

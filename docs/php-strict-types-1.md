@@ -1,3 +1,14 @@
+---
+title: "PHP Strict Types in Laravel Modules"
+module: "Xot"
+type: concept
+tags: [php, strict, types, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "php strict types 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHP Strict Types in Laravel Modules
 
 ## Overview

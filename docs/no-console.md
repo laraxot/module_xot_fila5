@@ -1,3 +1,14 @@
+---
+title: "No Console {#no-console}"
+module: "Xot"
+type: concept
+tags: [no, console]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "no console"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 
 ---

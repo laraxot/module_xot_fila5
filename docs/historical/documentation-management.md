@@ -1,3 +1,14 @@
+---
+title: "Gestione della Documentazione e delle Regole"
+module: "Xot"
+type: concept
+tags: [documentation, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation management"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Gestione della Documentazione e delle Regole
 
 ## Struttura della Documentazione

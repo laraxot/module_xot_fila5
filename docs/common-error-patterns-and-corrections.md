@@ -1,3 +1,14 @@
+---
+title: "Common Error Patterns and Corrections in Laraxot"
+module: "Xot"
+type: pattern
+tags: [common, error, patterns, corrections]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "common error patterns and corrections"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Common Error Patterns and Corrections in Laraxot
 
 This document outlines the most common error patterns identified in the Laraxot codebase and their correction strategies, following DRY + KISS + SOLID + Robust principles.

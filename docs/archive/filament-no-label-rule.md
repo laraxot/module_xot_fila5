@@ -1,3 +1,14 @@
+---
+title: "REGOLA CRITICA: MAI ->label() nei Componenti Filament"
+module: "Xot"
+type: rule
+tags: [filament, no, label, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament no label rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # REGOLA CRITICA: MAI ->label() nei Componenti Filament
 
 ## Principio Fondamentale

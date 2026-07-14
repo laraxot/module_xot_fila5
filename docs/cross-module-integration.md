@@ -1,3 +1,14 @@
+---
+title: "Integrazione Cross-Module - Laraxot PTVX"
+module: "Xot"
+type: concept
+tags: [cross, module, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cross module integration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Integrazione Cross-Module - Laraxot PTVX
 
 ## Panoramica

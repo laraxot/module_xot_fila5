@@ -1,3 +1,14 @@
+---
+title: "ArtisanService Refactoring Report"
+module: "Xot"
+type: concept
+tags: [artisan, service, refactoring, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "artisan service refactoring report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ArtisanService Refactoring Report
 
 **Date:** 2025-10-01

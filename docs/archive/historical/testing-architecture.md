@@ -1,3 +1,14 @@
+---
+title: "Testing Architecture and Pest Setup"
+module: "Xot"
+type: concept
+tags: [testing, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Architecture and Pest Setup
 
 ## Overview

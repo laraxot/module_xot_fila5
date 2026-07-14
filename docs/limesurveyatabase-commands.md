@@ -1,3 +1,14 @@
+---
+title: "Database Analysis Commands and Tools for healthcare_app_survey"
+module: "Xot"
+type: concept
+tags: [limesurveyatabase, commands]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "limesurveyatabase commands"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Database Analysis Commands and Tools for healthcare_app_survey
 # Database Analysis Commands and Tools for app_survey
 

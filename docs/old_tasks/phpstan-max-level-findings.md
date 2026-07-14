@@ -1,3 +1,14 @@
+---
+title: "PHPStan MAX Level Findings - Xot Module"
+module: "Xot"
+type: concept
+tags: [phpstan, max, level, findings]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan max level findings"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan MAX Level Findings - Xot Module
 
 **Data**: 2025-10-10  

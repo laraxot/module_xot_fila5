@@ -1,3 +1,14 @@
+---
+title: "Testing con Pest PHP"
+module: "Xot"
+type: concept
+tags: [testing, pest, php]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing pest php"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing con Pest PHP
 
 ## Introduzione

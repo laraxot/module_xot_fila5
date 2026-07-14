@@ -1,3 +1,14 @@
+---
+title: "Risoluzione del Conflitto in ModelWithPosContract.php"
+module: "Xot"
+type: concept
+tags: [modelwithposcontract, conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "modelwithposcontract conflict resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione del Conflitto in ModelWithPosContract.php
 
 ## Problema

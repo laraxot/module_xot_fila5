@@ -1,3 +1,14 @@
+---
+title: "Filament - Guida Completa Consolidata"
+module: "Xot"
+type: concept
+tags: [filament, consolidated]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament consolidated"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: [DATE]

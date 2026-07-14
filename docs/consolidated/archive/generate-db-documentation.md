@@ -1,3 +1,14 @@
+---
+title: "GenerateDbDocumentationCommand"
+module: "Xot"
+type: concept
+tags: [generate, db, documentation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "generate db documentation"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # GenerateDbDocumentationCommand
 
 ## Descrizione

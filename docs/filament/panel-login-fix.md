@@ -1,3 +1,14 @@
+---
+title: "Filament Panel Login Fix"
+module: "Xot"
+type: concept
+tags: [panel, login, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "panel login fix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Panel Login Fix
 
 This document details the fix applied to `XotBasePanelProvider.php` to resolve a critical login functionality issue affecting all Filament panels extending this base provider.

@@ -1,3 +1,14 @@
+---
+title: "XotBase Extension Rules - Comprehensive Guide"
+module: "Xot"
+type: rule
+tags: [xotbase, extension, rules, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbase extension rules 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBase Extension Rules - Comprehensive Guide
 
 ## 🚨 Critical Architectural Rule

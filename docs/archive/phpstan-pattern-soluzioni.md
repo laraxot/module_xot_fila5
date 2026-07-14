@@ -1,3 +1,14 @@
+---
+title: "Pattern e Soluzioni per PHPStan Livello 10 - Modulo Xot"
+module: "Xot"
+type: pattern
+tags: [phpstan, pattern, soluzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan pattern soluzioni"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # Pattern e Soluzioni per PHPStan Livello 10 - Modulo Xot
 

@@ -1,3 +1,14 @@
+---
+title: "Pagine Dashboard Filament - Best Practices"
+module: "Xot"
+type: concept
+tags: [dashboard, pages]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dashboard pages"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pagine Dashboard Filament - Best Practices
 
 ## Panoramica

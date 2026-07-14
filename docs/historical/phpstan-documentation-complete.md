@@ -1,3 +1,14 @@
+---
+title: "PHPStan Documentation - Completion Summary"
+module: "Xot"
+type: concept
+tags: [phpstan, documentation, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan documentation complete"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Documentation - Completion Summary
 
 **Date**: 2025-12-16

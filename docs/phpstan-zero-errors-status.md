@@ -1,3 +1,14 @@
+---
+title: "PHPStan level-max: percorso verso zero errori su tutto Modules/"
+module: "Xot"
+type: concept
+tags: [phpstan, zero, errors, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan zero errors status"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan level-max: percorso verso zero errori su tutto Modules/
 
 Stato reale al 2026-07-03, misurato con:

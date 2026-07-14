@@ -1,3 +1,14 @@
+---
+title: "Xot Contracts and Interfaces Documentation"
+module: "Xot"
+type: concept
+tags: [contracts, interfaces]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "contracts and interfaces"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23

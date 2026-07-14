@@ -1,3 +1,14 @@
+---
+title: "xotbasepage: implementazione e best practices"
+module: "Xot"
+type: concept
+tags: [xotbasepage, implementation, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbasepage implementation 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # xotbasepage: implementazione e best practices
 
 ## descrizione

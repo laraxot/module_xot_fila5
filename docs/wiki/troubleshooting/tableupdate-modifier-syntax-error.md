@@ -1,3 +1,14 @@
+---
+title: "`tableUpdate` and Modifier Methods (`->after()`, `->change()`)"
+module: "Xot"
+type: concept
+tags: [tableupdate, modifier, syntax, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "tableupdate modifier syntax error"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # `tableUpdate` and Modifier Methods (`->after()`, `->change()`)
 
 ## Context

@@ -1,3 +1,14 @@
+---
+title: "Regole per Model Casting in Laraxot - CRITICO"
+module: "Xot"
+type: rule
+tags: [model, casting, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model casting rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole per Model Casting in Laraxot - CRITICO
 
 ## ERRORE ARCHITETTURALE GRAVE: Proprietà $casts Deprecata

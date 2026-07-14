@@ -1,3 +1,14 @@
+---
+title: "Pattern e Soluzioni per PHPStan Livello 10 - Modulo Xot"
+module: "Xot"
+type: pattern
+tags: [phpstan, pattern, soluzioni, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan pattern soluzioni 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pattern e Soluzioni per PHPStan Livello 10 - Modulo Xot
 
 Questo documento raccoglie i pattern comuni di errori PHPStan di livello 10 nel modulo Xot e le soluzioni standard implementate.

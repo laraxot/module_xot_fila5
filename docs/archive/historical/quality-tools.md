@@ -1,3 +1,14 @@
+---
+title: "Quality Tools: PHPMD, PHP-CS-Fixer, Laravel Pint, Psalm, PHPQA, actionlint, CodeRabbit"
+module: "Xot"
+type: concept
+tags: [quality, tools]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality tools"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Quality Tools: PHPMD, PHP-CS-Fixer, Laravel Pint, Psalm, PHPQA, actionlint, CodeRabbit
 
 This guide standardizes how we study, run, and maintain code quality tools across modules and themes without breaking the site. Always use dry-run/report modes first and integrate changes incrementally.

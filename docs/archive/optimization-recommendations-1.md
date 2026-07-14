@@ -1,3 +1,14 @@
+---
+title: "Raccomandazioni di Ottimizzazione - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [optimization, recommendations, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "optimization recommendations 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici

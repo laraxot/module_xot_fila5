@@ -1,3 +1,14 @@
+---
+title: "Sessione Super Mucca - 2025-01-22"
+module: "Xot"
+type: concept
+tags: [super, mucca, session]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "super mucca session"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Sessione Super Mucca - 2025-01-22
 
 **Data**: 2025-01-22

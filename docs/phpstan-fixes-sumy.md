@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes Summary - 18 Agosto 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fixes Summary - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

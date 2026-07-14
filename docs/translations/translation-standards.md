@@ -1,3 +1,14 @@
+---
+title: "Translation Standards"
+module: "Xot"
+type: rule
+tags: [translation, standards]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation standards"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 
 #### File Completati

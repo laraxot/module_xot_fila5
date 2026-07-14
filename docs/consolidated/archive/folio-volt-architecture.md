@@ -1,3 +1,14 @@
+---
+title: "Architettura Folio + Volt + Filament in il progetto"
+module: "Xot"
+type: concept
+tags: [folio, volt, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "folio volt architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica

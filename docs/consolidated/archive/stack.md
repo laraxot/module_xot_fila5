@@ -1,3 +1,14 @@
+---
+title: "Stack Tecnologico Standard"
+module: "Xot"
+type: concept
+tags: [stack]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "stack"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Stack Tecnologico Standard
 
 Questo documento definisce lo stack tecnologico standard utilizzato in tutti i moduli.

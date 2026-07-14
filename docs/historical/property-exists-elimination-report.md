@@ -1,3 +1,14 @@
+---
+title: "Eliminazione property_exists() - Report Completo"
+module: "Xot"
+type: concept
+tags: [property, exists, elimination, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property exists elimination report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Eliminazione property_exists() - Report Completo
 
 **Data Intervento**: 5 Novembre 2025

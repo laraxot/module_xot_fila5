@@ -1,3 +1,14 @@
+---
+title: "Adjacency List Best Practices"
+module: "Xot"
+type: concept
+tags: [adjacency, list, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "adjacency list best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Adjacency List Best Practices
 
 > Questo documento sostituisce `nestedset-migration-best-practices.md` (legacy).

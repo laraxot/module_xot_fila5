@@ -1,3 +1,14 @@
+---
+title: "ModelWithUserContract"
+module: "Xot"
+type: concept
+tags: [model, user, contract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model with user contract"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ModelWithUserContract
 
 ## Descrizione

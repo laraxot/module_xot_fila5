@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 - Status Completo Progetto"
+module: "Xot"
+type: concept
+tags: [phpstan, level10, complete, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 complete status"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 - Status Completo Progetto
 
 **Data**: 2026-01-27  

@@ -1,3 +1,14 @@
+---
+title: "Quaeris Fila4 Mono - Filosofia Completa del Progetto"
+module: "Xot"
+type: concept
+tags: [complete, project, understanding]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "complete project understanding"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
 
 ## Logica (Logic)

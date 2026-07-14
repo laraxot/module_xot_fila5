@@ -1,3 +1,14 @@
+---
+title: "Linee Guida per le Risorse Filament nel Progetto"
+module: "Xot"
+type: concept
+tags: [filament, resourcelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament resourcelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Linee Guida per le Risorse Filament nel Progetto
 # Linee Guida per le Risorse Filament nel Progetto <nome progetto>
 # Linee Guida per le Risorse Filament nel Progetto <nome progetto>

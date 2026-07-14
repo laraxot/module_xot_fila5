@@ -1,3 +1,14 @@
+---
+title: "🎯 **Strategia Correzione 406 Errori PHPStan Level 10**"
+module: "Xot"
+type: concept
+tags: [phpstan, errors, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan errors strategy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🎯 **Strategia Correzione 406 Errori PHPStan Level 10**
 
 **Data**: 11 Novembre 2025

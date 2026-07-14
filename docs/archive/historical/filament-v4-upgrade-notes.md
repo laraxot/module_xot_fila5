@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Filament v4 Upgrade Notes"
+module: "Xot"
+type: concept
+tags: [filament, v4, upgrade, notes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament v4 upgrade notes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Filament v4 Upgrade Notes
 
 This document outlines specific considerations and changes for the `Xot` module, particularly concerning its foundational `XotBaseSection` component, during the Filament v4 upgrade process. For a comprehensive overview of the Filament v4 upgrade, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/filament_v4_upgrade.md).

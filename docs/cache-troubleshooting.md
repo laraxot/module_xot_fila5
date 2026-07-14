@@ -1,3 +1,14 @@
+---
+title: "Cache troubleshooting (module Xot)"
+module: "Xot"
+type: concept
+tags: [cache, troubleshooting]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cache troubleshooting"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Cache troubleshooting (module Xot)
 
 Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"

@@ -1,3 +1,14 @@
+---
+title: "Task: Best Practices Guide"
+module: "Xot"
+type: how-to
+tags: [best, practices, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "best practices guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Best Practices Guide
 
 **Modulo**: Xot  

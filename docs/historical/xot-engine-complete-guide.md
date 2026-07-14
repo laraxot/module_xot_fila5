@@ -1,3 +1,14 @@
+---
+title: "🚀 XOT - IL MOTORE FONDAMENTALE DI LARAXOT"
+module: "Xot"
+type: how-to
+tags: [xot, engine, complete, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot engine complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🚀 XOT - IL MOTORE FONDAMENTALE DI LARAXOT
 
 ## 📋 INDICE

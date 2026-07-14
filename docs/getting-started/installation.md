@@ -1,3 +1,14 @@
+---
+title: "Guida all'Installazione Base <nome progetto>"
+module: "Xot"
+type: how-to
+tags: [installation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "installation"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida all'Installazione Base <nome progetto>
 
 ## Prerequisiti

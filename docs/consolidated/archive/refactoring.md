@@ -1,3 +1,14 @@
+---
+title: "Refactoring del Modulo Xot"
+module: "Xot"
+type: concept
+tags: [refactoring]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "refactoring"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Refactoring del Modulo Xot
 
 ## Trait Rimossi

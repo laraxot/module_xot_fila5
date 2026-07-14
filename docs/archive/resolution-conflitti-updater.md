@@ -1,3 +1,14 @@
+---
+title: "Risoluzione conflitti su Trait Updater"
+module: "Xot"
+type: concept
+tags: [resolution, conflitti, updater]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resolution conflitti updater"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione conflitti su Trait Updater
 
 ## File coinvolto

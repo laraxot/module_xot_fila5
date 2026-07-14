@@ -1,3 +1,14 @@
+---
+title: "Service Provider: Best Practices in Laraxot"
+module: "Xot"
+type: concept
+tags: [service, provider, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "service provider best practices 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Service Provider: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione dei Service Provider all'interno del framework Laraxot.

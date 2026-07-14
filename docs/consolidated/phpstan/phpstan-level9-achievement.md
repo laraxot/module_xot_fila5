@@ -1,3 +1,14 @@
+---
+title: "🏆 PHPStan Level 9 Achievement - Framework Xot"
+module: "Xot"
+type: concept
+tags: [phpstan, level9, achievement]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level9 achievement"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🏆 PHPStan Level 9 Achievement - Framework Xot
 
 **Data**: 18 Agosto 2025

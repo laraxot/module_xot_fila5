@@ -1,3 +1,14 @@
+---
+title: "Filament Class Extension Rules"
+module: "Xot"
+type: rule
+tags: [extension, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "extension rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Class Extension Rules
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase

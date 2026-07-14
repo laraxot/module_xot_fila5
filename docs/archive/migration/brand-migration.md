@@ -1,3 +1,14 @@
+---
+title: "Migrazione al Nuovo Sistema Brand"
+module: "Xot"
+type: concept
+tags: [brand, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "brand migration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # Migrazione al Nuovo Sistema Brand
 

@@ -1,3 +1,14 @@
+---
+title: "Why XotBaseResourceForm Pattern is Superior to Filament Demo Pure-Static Classes"
+module: "Xot"
+type: concept
+tags: [why, xotbaseresourceform, superior]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "why xotbaseresourceform superior"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Why XotBaseResourceForm Pattern is Superior to Filament Demo Pure-Static Classes
 
 **Date:** 2026-05-05

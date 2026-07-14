@@ -1,3 +1,14 @@
+---
+title: "ERRORE CRITICO: Mai Estendere Classi Filament Direttamente"
+module: "Xot"
+type: concept
+tags: [mai, estendere, filament, direttamente]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mai estendere filament direttamente"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ERRORE CRITICO: Mai Estendere Classi Filament Direttamente
 
 ## ⚠️ REGOLA FONDAMENTALE LARAXOT

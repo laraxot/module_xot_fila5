@@ -1,3 +1,14 @@
+---
+title: "Case Sensitivity Rules - Xot Module"
+module: "Xot"
+type: rule
+tags: [case, sensitivity, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "case sensitivity rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Case Sensitivity Rules - Xot Module
 
 ## Problema / Problem

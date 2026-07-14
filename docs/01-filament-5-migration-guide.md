@@ -1,3 +1,14 @@
+---
+title: "🛠️ Filament 5.x Core Migration Guide"
+module: "Xot"
+type: how-to
+tags: [01, filament, 5, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "01 filament 5 migration guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🛠️ Filament 5.x Core Migration Guide
 
 This guide outlines the mandatory steps for upgrading Laraxot modules to Filament 5.x.

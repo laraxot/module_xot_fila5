@@ -1,3 +1,14 @@
+---
+title: "Fix Race Condition firstOrCreate con UUID - 2026-01-22"
+module: "Xot"
+type: concept
+tags: [firstorcreate, race, condition, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "firstorcreate race condition fix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  

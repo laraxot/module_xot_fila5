@@ -1,3 +1,14 @@
+---
+title: "Policy Inheritance Strategy in Laraxot"
+module: "Xot"
+type: rule
+tags: [policy, inheritance, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policy inheritance strategy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Policy Inheritance Strategy in Laraxot
 
 ## 🔴 REGOLA CRITICA: mai cancellare policy modello

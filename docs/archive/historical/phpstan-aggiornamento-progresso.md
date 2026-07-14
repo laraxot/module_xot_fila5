@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 - Aggiornamento Roadmap Completa"
+module: "Xot"
+type: concept
+tags: [phpstan, aggiornamento, progresso]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan aggiornamento progresso"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 - Aggiornamento Roadmap Completa
 
 ## Stato Attuale (Post Correzioni)

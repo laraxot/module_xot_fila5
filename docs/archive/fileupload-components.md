@@ -1,3 +1,14 @@
+---
+title: "FileUpload Components in XotBaseResource"
+module: "Xot"
+type: concept
+tags: [fileupload, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fileupload components"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # FileUpload Components in XotBaseResource
 
 ## Overview

@@ -1,3 +1,14 @@
+---
+title: "Collegamento Bidirezionale: Regole Filament e Namespace (Cms)"
+module: "Xot"
+type: concept
+tags: [cms, filament, link]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cms filament link"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Collegamento Bidirezionale: Regole Filament e Namespace (Cms)
 
 Le regole generali per Filament, namespace e traduzioni sono definite in:

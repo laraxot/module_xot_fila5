@@ -1,3 +1,14 @@
+---
+title: "MCP Quick Start Guide"
+module: "Xot"
+type: concept
+tags: [mcp, quickstart]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp quickstart"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # MCP Quick Start Guide
 
 ## Setup Rapido per il Nostro Progetto

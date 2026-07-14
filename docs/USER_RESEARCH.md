@@ -1,3 +1,14 @@
+---
+title: "Xot Module - User Research"
+module: "Xot"
+type: concept
+tags: [USER, RESEARCH]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user research"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - User Research
 
 **Module:** Xot  

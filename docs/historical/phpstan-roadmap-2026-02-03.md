@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Roadmap - Xot Module"
+module: "Xot"
+type: concept
+tags: [phpstan, roadmap, 2026, 02]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan roadmap 2026 02 03"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 Roadmap - Xot Module
 
 **Data**: 2026-02-03

@@ -1,3 +1,14 @@
+---
+title: "Trait Mancanti e Miglioramenti Architetturali"
+module: "Xot"
+type: pattern
+tags: [missing, traits, improvements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "missing traits and improvements"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Trait Mancanti e Miglioramenti Architetturali
 
 ## Panoramica

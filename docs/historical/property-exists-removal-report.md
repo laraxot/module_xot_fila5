@@ -1,3 +1,14 @@
+---
+title: "Report Rimozione property_exists() - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [property, exists, removal, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "property exists removal report"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Report Rimozione property_exists() - Modulo Xot
 
 **Data**: 2025-01-05

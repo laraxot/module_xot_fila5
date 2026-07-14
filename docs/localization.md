@@ -1,3 +1,14 @@
+---
+title: "Guida alla Localizzazione nel Framework Laraxot <nome progetto>"
+module: "Xot"
+type: concept
+tags: [localization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "localization"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida alla Localizzazione nel Framework Laraxot <nome progetto>
 
 ## Introduzione

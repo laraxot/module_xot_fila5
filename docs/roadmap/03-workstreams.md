@@ -1,3 +1,14 @@
+---
+title: "Workstreams - Xot"
+module: "Xot"
+type: concept
+tags: [03, workstreams]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "03 workstreams"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Workstreams - Xot
 
 ## WS1 Architecture

@@ -1,3 +1,14 @@
+---
+title: "Architecture Best Practices 1"
+module: "Xot"
+type: concept
+tags: [architecture, best, practices, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture best practices 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 ## Convenzioni di naming per le azioni (Actions)
 
 Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi, valutatore_id, ecc.), si raccomanda l'uso esplicito del suffisso `By<Chiave>` nel nome della classe. Esempio:

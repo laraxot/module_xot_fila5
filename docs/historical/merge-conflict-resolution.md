@@ -1,3 +1,14 @@
+---
+title: "Log Risoluzione Conflitti Git (Merge Conflict Resolution Log)"
+module: "Xot"
+type: concept
+tags: [merge, conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "merge conflict resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Log Risoluzione Conflitti Git (Merge Conflict Resolution Log)
 
 Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi incontrati durante lo sviluppo del progetto Quaeris.

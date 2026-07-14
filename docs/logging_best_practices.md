@@ -1,3 +1,14 @@
+---
+title: "Logging Best Practices - 2026-03-02"
+module: "Xot"
+type: concept
+tags: [logging, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logging best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Logging Best Practices - 2026-03-02
 
 ## Problem Analysis

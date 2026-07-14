@@ -1,3 +1,14 @@
+---
+title: "Analisi e Risoluzione Colli di Bottiglia - Modulo Notify"
+module: "Xot"
+type: concept
+tags: [notify]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "notify"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Notify
 
 ## 1. Queue Processing (Priorità: Alta)

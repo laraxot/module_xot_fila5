@@ -1,3 +1,14 @@
+---
+title: "Architectural Rules & Guidelines"
+module: "Xot"
+type: rule
+tags: [architecture, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

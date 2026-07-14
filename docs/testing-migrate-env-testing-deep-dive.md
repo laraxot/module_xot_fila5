@@ -1,3 +1,14 @@
+---
+title: "Deep Dive: `php artisan migrate --env=testing` (2026-03-06)"
+module: "Xot"
+type: concept
+tags: [testing, migrate, env, testing]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing migrate env testing deep dive"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Deep Dive: `php artisan migrate --env=testing` (2026-03-06)
 
 ## Scope

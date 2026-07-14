@@ -1,3 +1,14 @@
+---
+title: "Xot Module Test Coverage"
+module: "Xot"
+type: concept
+tags: [coverage]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "coverage"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module Test Coverage
 
 ## Overview

@@ -1,3 +1,14 @@
+---
+title: "MCP Server Consigliati per il Modulo Xot"
+module: "Xot"
+type: concept
+tags: [mcp, server, recommended]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp server recommended"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # MCP Server Consigliati per il Modulo Xot
 

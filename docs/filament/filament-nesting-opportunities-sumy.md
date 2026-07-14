@@ -1,3 +1,14 @@
+---
+title: "Filament 5.x Nested Resources - Riepilogo Opportunità"
+module: "Xot"
+type: concept
+tags: [filament, nesting, opportunities, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament nesting opportunities sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament 5.x Nested Resources - Riepilogo Opportunità
 
 **Data Analisi**: 2026-01-22  

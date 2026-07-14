@@ -1,4 +1,15 @@
 ---
+title: "Error Curl"
+module: "Xot"
+type: concept
+tags: [error, curl]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "error curl"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+---
 module: theme
 topic: error-curl
 canonical: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md

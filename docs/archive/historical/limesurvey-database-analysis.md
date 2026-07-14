@@ -1,3 +1,14 @@
+---
+title: "Limesurvey Database Analysis - quaeris_survey"
+module: "Xot"
+type: concept
+tags: [limesurvey, database, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "limesurvey database analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Limesurvey Database Analysis - quaeris_survey
 
 ## Overview

@@ -1,3 +1,14 @@
+---
+title: "Underscore Directories Rule - No _docs/"
+module: "Xot"
+type: rule
+tags: [UNDERSCORE, DOCS, RULE]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "underscore docs rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale

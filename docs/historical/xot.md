@@ -1,3 +1,14 @@
+---
+title: "Modulo Xot"
+module: "Xot"
+type: concept
+tags: [xot]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Modulo Xot
 
 ## Descrizione

@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, 3]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes 3"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.

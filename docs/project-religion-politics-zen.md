@@ -1,3 +1,14 @@
+---
+title: "Filosofia, Religione, Politica e Zen del Progetto Laravel Pizza"
+module: "Xot"
+type: concept
+tags: [project, religion, politics, zen]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "project religion politics zen"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filosofia, Religione, Politica e Zen del Progetto Laravel Pizza
 
 ## 🧠 Logica del Progetto

@@ -1,3 +1,14 @@
+---
+title: "Zsh"
+module: "Xot"
+type: concept
+tags: [zsh]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "zsh"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 link: https://www.reddit.com/r/bash/comments/12lz3kb/is_it_possible_to_make_zsh_look_like_gitbash/
 
 touch ~/.zshrc

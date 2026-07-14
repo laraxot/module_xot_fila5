@@ -1,3 +1,14 @@
+---
+title: "Linee Guida per RelationManager e Tabelle Personalizzate Xot in Filament"
+module: "Xot"
+type: concept
+tags: [filament, relationmanager, e, tabelle]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament relationmanager e tabelle xot"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Linee Guida per RelationManager e Tabelle Personalizzate Xot in Filament
 
 Questa documentazione descrive come implementare e configurare i `RelationManager` e le loro tabelle all'interno dell'ecosistema PTVX/Laraxot, utilizzando le classi base e i trait forniti dal modulo `Xot`.

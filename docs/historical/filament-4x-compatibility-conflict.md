@@ -1,3 +1,14 @@
+---
+title: "Compatibilità Filament 4.x - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [filament, 4x, compatibility, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 4x compatibility conflict"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Compatibilità Filament 4.x - Modulo Xot
 
 **Data**: 2025-01-27

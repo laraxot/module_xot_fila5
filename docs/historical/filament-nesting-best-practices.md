@@ -1,3 +1,14 @@
+---
+title: "Filament Nesting - Best Practices per Laraxot"
+module: "Xot"
+type: concept
+tags: [filament, nesting, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament nesting best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Nesting - Best Practices per Laraxot
 
 ## 📋 Introduzione
