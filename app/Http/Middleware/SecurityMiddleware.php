@@ -404,6 +404,7 @@ class SecurityMiddleware
 
     /**
      * Valida input array.
+     *
      * @param array<array-key, mixed> $value
      */
     private function validateArrayInput(string $key, array $value): void

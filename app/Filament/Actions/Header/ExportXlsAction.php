@@ -38,7 +38,6 @@ class ExportXlsAction extends Action
                     throw new \Exception('Query is null');
                 }
                 $rows = $query->get();
-                
 
                 $resource = $livewire->getResource();
 
@@ -68,7 +67,7 @@ class ExportXlsAction extends Action
                         );
                     }
                     Assert::isArray($fields);
-                }else{
+                } else {
                     dddx('method xotFields does not exist in '.$resource);
                 }
 
