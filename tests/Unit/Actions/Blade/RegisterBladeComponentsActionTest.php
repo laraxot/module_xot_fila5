@@ -29,11 +29,15 @@ describe('Register Blade Components Action', function (): void {
 
         $mock = $this->createUnitMock(GetComponentsAction::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $mock->expects($this->expectsAtLeastOnce())
 =======
         /* @phpstan-ignore-next-line */
         $mock->expects($this->atLeastOnce())
 >>>>>>> 64619e34 (.)
+=======
+        $mock->expects($this->expectsAtLeastOnce())
+>>>>>>> 61938ca4 (delete .claude-audit/)
             ->method('execute')
             ->with($path, $namespace.'\\View\\Components', $prefix)
             ->willReturn($mockComps);
@@ -60,11 +64,15 @@ describe('Register Blade Components Action', function (): void {
 
         $mock = $this->createUnitMock(GetComponentsAction::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $mock->expects($this->expectsAtLeastOnce())
 =======
         /* @phpstan-ignore-next-line */
         $mock->expects($this->atLeastOnce())
 >>>>>>> 64619e34 (.)
+=======
+        $mock->expects($this->expectsAtLeastOnce())
+>>>>>>> 61938ca4 (delete .claude-audit/)
             ->method('execute')
             ->willReturn($mockComps);
 

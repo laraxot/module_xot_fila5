@@ -9,8 +9,12 @@ use Modules\Xot\Adapters\PdfBuilderAdapter;
 use Modules\Xot\Contracts\PdfBuilderContract;
 =======
 use Modules\Xot\Contracts\PdfBuilderContract;
+<<<<<<< HEAD
 use Modules\Xot\Support\PdfBuilderAdapter;
 >>>>>>> 64619e34 (.)
+=======
+use Modules\Xot\Adapters\PdfBuilderAdapter;
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
 use function Safe\base64_decode;
 

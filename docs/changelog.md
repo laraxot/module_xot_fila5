@@ -1,6 +1,7 @@
 # Changelog - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -73,6 +74,8 @@ All notable changes to `:package_name` will be documented in this file.
 - Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
 - Link relativi ai documenti di dettaglio
 - Focus su COSA è cambiato e PERCHÉ
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -112,13 +115,13 @@ All notable changes to `:package_name` will be documented in this file.
 #### Added
 - **File Locking Pattern** - Nuova regola fondamentale per modifiche sicure
 - **Documentazione:**
-  - `merge-conflict-resolution.md` - Report tecnico
+  - `merge-conflict-resolution-2025-11-04.md` - Report tecnico
   - `lessons-learned-2025-11-04-merge-conflicts.md` - Processo filosofico
   - `file-locking-pattern.md` - Pattern documentation
   - `documentation-consolidation-strategy.md` - Piano riduzione docs
   - `index.md` - Indice navigazione 2,560 docs
   - `essential-reading.md` - Top 10 docs da leggere
-  - `project-best-practices.md` - Best practices aggiornate
+  - `project-best-practices-2025.md` - Best practices aggiornate
 
 #### Removed
 - Centinaia di linee duplicate da merge conflicts
@@ -200,6 +203,7 @@ All notable changes to `:package_name` will be documented in this file.
 
 ### Documenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
@@ -210,6 +214,12 @@ All notable changes to `:package_name` will be documented in this file.
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution.md) - Latest fix
 >>>>>>> 64619e34 (.)
+=======
+- [README.md](./docs/README.md) - Entry point
+- [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
+- [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
+- [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
 ### Repository
 - **Branch:** develop
@@ -222,7 +232,11 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Versioning:** [Semantic Versioning](https://semver.org/)
 =======
 **Versioning:** [Semantic Versioning](https://semver.org/)
 >>>>>>> 64619e34 (.)
+=======
+**Versioning:** [Semantic Versioning](https://semver.org/)
+>>>>>>> 61938ca4 (delete .claude-audit/)

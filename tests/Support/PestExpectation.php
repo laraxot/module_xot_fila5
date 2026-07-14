@@ -119,6 +119,7 @@ final class PestExpectation
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function toBeEmpty(string $message = ''): self
     {
         if ($this->negated) {
@@ -131,6 +132,15 @@ final class PestExpectation
     {
         $this->negated ? Assert::assertNotEmpty($this->value) : Assert::assertEmpty($this->value);
 >>>>>>> 64619e34 (.)
+=======
+    public function toBeEmpty(string $message = ''): self
+    {
+        if ($this->negated) {
+            Assert::assertNotEmpty($this->value, $message);
+        } else {
+            Assert::assertEmpty($this->value, $message);
+        }
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
         return $this;
     }
@@ -301,6 +311,9 @@ final class PestExpectation
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
     public function toBeBetween(float|int $min, float|int $max): self
     {
         if ($this->negated) {
@@ -316,8 +329,11 @@ final class PestExpectation
         return $this;
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
     /**
      * @param iterable<mixed> $expectedValues
      */

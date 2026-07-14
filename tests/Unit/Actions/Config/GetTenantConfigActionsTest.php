@@ -26,11 +26,15 @@ describe('Get Tenant Config Actions', function (): void {
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $mock->expects($this->expectsAtLeastOnce())
 =======
         /* @phpstan-ignore-next-line */
         $mock->expects($this->atLeastOnce())
 >>>>>>> 64619e34 (.)
+=======
+        $mock->expects($this->expectsAtLeastOnce())
+>>>>>>> 61938ca4 (delete .claude-audit/)
             ->method('execute')
             ->with($configName.'.php')
             ->willReturn($tempPath);
@@ -55,11 +59,15 @@ describe('Get Tenant Config Actions', function (): void {
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $mock->expects($this->expectsAtLeastOnce())
 =======
         /* @phpstan-ignore-next-line */
         $mock->expects($this->atLeastOnce())
 >>>>>>> 64619e34 (.)
+=======
+        $mock->expects($this->expectsAtLeastOnce())
+>>>>>>> 61938ca4 (delete .claude-audit/)
             ->method('execute')
             ->willReturn('/path/to/nothing.php');
 

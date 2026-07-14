@@ -3,24 +3,35 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\Xot\Tests\Unit;
 
 =======
 uses(Modules\Xot\Tests\TestCase::class);
 >>>>>>> 64619e34 (.)
+=======
+namespace Modules\Xot\Tests\Unit;
+
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\UI\Models\Asset;
 use Modules\User\Models\User;
 use Modules\Xot\Models\Module;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 =======
 use PHPUnit\Framework\Assert;
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
 it('can create a test user', function () {
     $user = User::factory()->create([
@@ -46,9 +57,12 @@ it('can create a test tenant', function () {
 
 it('can resolve a sushi module row', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /** @var Modules\Xot\Tests\TestCase $this */
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
     $module = Module::query()->first();
 
     if (null === $module) {

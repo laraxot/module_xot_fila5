@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
-use Modules\Xot\Support\MorphToOneRelationSupport;
+use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -41,10 +41,14 @@ class MorphToOneAction
         $data = $this->prepareData($relationDTO->data);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         app(CreateMorphToOneRelatedModelAction::class)->execute($relation, $data);
 =======
         MorphToOneRelationSupport::create($relation, $data);
 >>>>>>> 64619e34 (.)
+=======
+        app(CreateMorphToOneRelatedModelAction::class)->execute($relation, $data);
+>>>>>>> 61938ca4 (delete .claude-audit/)
     }
 
     /**
