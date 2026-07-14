@@ -17,11 +17,11 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======.
  *
  * @phpstan-ignore trait.unused
->>>>>>> 2353ccee (.)
+ * >>>>>>> 2353ccee (.)
  */
 trait HasCustomRelations
 {

@@ -18,7 +18,7 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * <<<<<<< HEAD
      * <<<<<<< HEAD
      * <<<<<<< HEAD
@@ -33,9 +33,9 @@ trait HasXotFactory
      *                                  =======
      * @return TFactory
      *                                  >>>>>>> 4784e8f0 (.)
-=======
+     *                                  =======
      * @return TFactory
->>>>>>> 2353ccee (.)
+     *                                  >>>>>>> 2353ccee (.)
      */
     protected static function newFactory()
     {
