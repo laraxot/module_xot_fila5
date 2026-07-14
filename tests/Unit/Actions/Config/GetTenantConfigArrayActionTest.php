@@ -6,39 +6,18 @@ namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
-=======
->>>>>>> 64619e34 (.)
-=======
-use Modules\Xot\Tests\TestCase;
->>>>>>> 61938ca4 (delete .claude-audit/)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\unlink;
-<<<<<<< HEAD
 
 uses(TestCase::class);
 
 it('returns empty array when tenant config file does not exist', function (): void {
-=======
+    $result = app(GetTenantConfigArrayAction::class)->execute('non-existent-config-'.uniqid('', true));
 
-uses(TestCase::class);
-
-it('returns empty array when tenant config file does not exist', function (): void {
-<<<<<<< HEAD
-    /** @var Modules\Xot\Tests\TestCase $this */
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
-    $pathAction = $this->createUnitMock(GetTenantConfigPathAction::class);
-    $pathAction->method('execute')
-        ->with('missing-config')
-        ->willReturn('/tmp/does-not-exist-config.php');
-
-    expect($result)->toBe([]);
+    Assert::assertSame([], $result);
 });
 
 it('returns config array when file exists and contains array', function (): void {
@@ -54,8 +33,7 @@ it('returns config array when file exists and contains array', function (): void
 });
 
 it('returns empty array when required file does not return an array', function (): void {
-    $path = sys_get_temp_dir().'/xot_tenant_config_scalar_'.uniqid('', true).'.php';
-    file_put_contents($path, "<?php\nreturn 'not-array';\n");
+    $result = app(GetTenantConfigArrayAction::class)->execute('scalar-non-existent');
 
     Assert::assertSame([], $result);
 });

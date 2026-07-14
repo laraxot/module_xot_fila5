@@ -11,17 +11,8 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
     /* @var TestCase $this */
     $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
-=======
-    skip('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
->>>>>>> 64619e34 (.)
-=======
-    /* @var TestCase $this */
-    $this->skipTest('Module is Sushi read-only (getRows from nwidart); CRUD tests need rewrite against live schema.');
->>>>>>> 61938ca4 (delete .claude-audit/)
 });
 
 it('can enable and disable module', function () {

@@ -4,15 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Xot\Actions\ModuleAction;
-=======
-use Modules\Xot\Services\ModuleService;
->>>>>>> 64619e34 (.)
-=======
-use Modules\Xot\Actions\ModuleAction;
->>>>>>> 61938ca4 (delete .claude-audit/)
 use PHPUnit\Framework\Assert;
 
 describe('ModuleAction Integration', function () {
@@ -33,40 +25,20 @@ describe('ModuleAction Integration', function () {
         $userService = new ModuleAction('User');
         $xotService = new ModuleAction('Xot');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         Assert::assertInstanceOf(ModuleAction::class, $chartService);
 
         Assert::assertInstanceOf(ModuleAction::class, $userService);
 
         Assert::assertInstanceOf(ModuleAction::class, $xotService);
-=======
-        Assert::assertInstanceOf(ModuleService::class, $chartService);
-=======
-        Assert::assertInstanceOf(ModuleAction::class, $chartService);
->>>>>>> 61938ca4 (delete .claude-audit/)
 
         Assert::assertInstanceOf(ModuleAction::class, $userService);
 
-<<<<<<< HEAD
-        Assert::assertInstanceOf(ModuleService::class, $xotService);
->>>>>>> 64619e34 (.)
-=======
         Assert::assertInstanceOf(ModuleAction::class, $xotService);
->>>>>>> 61938ca4 (delete .claude-audit/)
     });
 
     it('returns models from existing modules', function () {
         // Test with Chart module (we know it exists)
-<<<<<<< HEAD
-<<<<<<< HEAD
         $chartService = new ModuleAction('Chart');
-=======
-        $chartService = new ModuleService('Chart');
->>>>>>> 64619e34 (.)
-=======
-        $chartService = new ModuleAction('Chart');
->>>>>>> 61938ca4 (delete .claude-audit/)
         /** @var array<int|string, class-string> $models */
         $models = $chartService->getModels();
 
@@ -85,15 +57,7 @@ describe('ModuleAction Integration', function () {
     });
 
     it('handles User module models correctly', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $userService = new ModuleAction('User');
-=======
-        $userService = new ModuleService('User');
->>>>>>> 64619e34 (.)
-=======
-        $userService = new ModuleAction('User');
->>>>>>> 61938ca4 (delete .claude-audit/)
         /** @var array<int|string, class-string> $models */
         $models = $userService->getModels();
 
@@ -114,15 +78,7 @@ describe('ModuleAction Integration', function () {
     });
 
     it('filters abstract models correctly', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
 
         // BaseModel should not be included (it's abstract)
@@ -131,15 +87,7 @@ describe('ModuleAction Integration', function () {
     });
 
     it('returns class strings as values', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
 
         foreach ($models as $key => $modelClass) {
@@ -154,15 +102,7 @@ describe('ModuleAction Integration', function () {
 
     it('handles reflection operations safely', function () {
         // Test that reflection operations don't cause crashes
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
 
         // Test each returned model class
@@ -173,15 +113,7 @@ describe('ModuleAction Integration', function () {
 
     it('processes module directory structure', function () {
         // Test that the service can process module directories
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
     });
 
@@ -207,15 +139,7 @@ describe('ModuleAction Integration', function () {
         ];
 
         foreach ($services as $service) {
-<<<<<<< HEAD
-<<<<<<< HEAD
             Assert::assertInstanceOf(ModuleAction::class, $service);
-=======
-            Assert::assertInstanceOf(ModuleService::class, $service);
->>>>>>> 64619e34 (.)
-=======
-            Assert::assertInstanceOf(ModuleAction::class, $service);
->>>>>>> 61938ca4 (delete .claude-audit/)
             $models = $service->getModels();
             expect($models)->toBeArray();
         }
@@ -241,15 +165,7 @@ describe('ModuleAction Integration', function () {
 
     it('processes file extensions correctly', function () {
         // Test that only .php files are processed
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
 
         // All returned classes should be valid PHP classes
@@ -272,15 +188,7 @@ describe('ModuleAction Integration', function () {
     });
 
     it('validates return type consistency', function () {
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
 
         // Validate that all keys are strings and all values are class strings
@@ -300,15 +208,7 @@ describe('ModuleAction Integration', function () {
         // Test service container integration
         $serviceFromContainer = app(ModuleAction::class, ['name' => 'TestModule']);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         Assert::assertInstanceOf(ModuleAction::class, $serviceFromContainer);
-=======
-        Assert::assertInstanceOf(ModuleService::class, $serviceFromContainer);
->>>>>>> 64619e34 (.)
-=======
-        Assert::assertInstanceOf(ModuleAction::class, $serviceFromContainer);
->>>>>>> 61938ca4 (delete .claude-audit/)
     });
 
     it('handles concurrent access correctly', function () {
@@ -325,15 +225,7 @@ describe('ModuleAction Integration', function () {
 
     it('validates module path resolution', function () {
         // Test that module paths are resolved correctly
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
 
         foreach ($models as $modelClass) {
@@ -344,15 +236,7 @@ describe('ModuleAction Integration', function () {
 
     it('handles file system operations safely', function () {
         // Test file system operations
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $models = $xotService->getModels();
     });
 
@@ -366,15 +250,7 @@ describe('ModuleAction Integration', function () {
 
     it('validates class instantiation patterns', function () {
         // Test that the service follows proper instantiation patterns
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $reflection = new ReflectionClass($xotService);
         $constructor = $reflection->getConstructor();
 
@@ -383,15 +259,7 @@ describe('ModuleAction Integration', function () {
 
     it('can handle model discovery efficiently', function () {
         // Test performance of model discovery
-<<<<<<< HEAD
-<<<<<<< HEAD
         $xotService = new ModuleAction('Xot');
-=======
-        $xotService = new ModuleService('Xot');
->>>>>>> 64619e34 (.)
-=======
-        $xotService = new ModuleAction('Xot');
->>>>>>> 61938ca4 (delete .claude-audit/)
         $startTime = microtime(true);
 
         $models = $this->service->getModels();

@@ -12,11 +12,6 @@ use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-
-uses(TestCase::class);
-=======
->>>>>>> 64619e34 (.)
 
 uses(TestCase::class);
 
@@ -46,9 +41,7 @@ it('resolves module assets correctly in AssetAction', function (): void {
 
     // Replace GetModulePathAction with a spy
     $getModulePathAction = new class($modulePath) extends GetModulePathAction {
-        public function __construct(private string $modulePath)
-        {
-        }
+        public function __construct(private string $modulePath) {}
 
         public function execute(string $module): string
         {
@@ -91,7 +84,7 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-            return 'User' === $module ? '/path/to/User/' : '';
+            return $module === 'User' ? '/path/to/User/' : '';
         },
     ]);
 

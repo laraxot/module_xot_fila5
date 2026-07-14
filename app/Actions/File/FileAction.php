@@ -20,12 +20,6 @@ use function Safe\json_decode;
 use function Safe\realpath;
 use function Safe\scandir;
 
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
-
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 /**
  * Classe wrapper che raccoglie i metodi legacy di FileService in un'unica
  * QueueableAction. I metodi più usati sono stati estratti in action dedicate
@@ -602,12 +596,8 @@ class FileAction
     // *
 
     /**
-<<<<<<< HEAD
      * @param array<string> $files
      *
-=======
-     * @param  array<string>  $files
->>>>>>> 61938ca4 (delete .claude-audit/)
      * @return array<string>
      */
     public static function viewNamespaceToUrl(array $files): array
@@ -735,12 +725,8 @@ class FileAction
     */
 
     /**
-<<<<<<< HEAD
      * @param array<int, string> $except
      *
-=======
-     * @param  array<int, string>  $except
->>>>>>> 61938ca4 (delete .claude-audit/)
      * @return array<int, string>
      */
     public static function allDirectories(string $path, array $except = [], string $dir = ''): array

@@ -29,19 +29,7 @@ it('throws if record has no email', function (): void {
         }
     };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     $this->expectThrowable(\InvalidArgumentException::class);
 
     app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
-=======
-    $this->expectThrowable(InvalidArgumentException::class);
-
-    app(SendMailByRecordAction::class)->execute($record, stdClass::class);
->>>>>>> 64619e34 (.)
-=======
-    $this->expectThrowable(\InvalidArgumentException::class);
-
-    app(SendMailByRecordAction::class)->execute($record, \stdClass::class);
->>>>>>> 61938ca4 (delete .claude-audit/)
 });

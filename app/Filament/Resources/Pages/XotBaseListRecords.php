@@ -29,15 +29,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     use HasXotTable;
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param array<string, bool|float|int|string|null> $params
-=======
-     * @param  array<string, bool|float|int|string|null>  $params
->>>>>>> 64619e34 (.)
-=======
-     * @param array<string, bool|float|int|string|null> $params
->>>>>>> 61938ca4 (delete .claude-audit/)
      */
     public static function trans(string $key, array $params = []): string
     {
@@ -94,30 +86,14 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Paginate the table query.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param Builder<Model> $query
-=======
-     * @param  Builder<Model>  $query
->>>>>>> 64619e34 (.)
-=======
-     * @param Builder<Model> $query
->>>>>>> 61938ca4 (delete .claude-audit/)
      *
      * @return Paginator<int, Model>
      */
     protected function paginateTableQuery(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
-<<<<<<< HEAD
-<<<<<<< HEAD
         $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
-=======
-        $perPageValue = $perPage === 'all' ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
->>>>>>> 64619e34 (.)
-=======
-        $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
->>>>>>> 61938ca4 (delete .claude-audit/)
 
         $paginator = $query->paginate($perPageValue);
 

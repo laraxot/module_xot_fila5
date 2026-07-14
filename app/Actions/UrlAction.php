@@ -17,13 +17,6 @@ class UrlAction
 
     public function __construct()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD:app/Actions/UrlAction.php
-=======
-        // ---
->>>>>>> 64619e34 (.):app/Services/UrlService.php
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
     }
 
     public static function getInstance(): self

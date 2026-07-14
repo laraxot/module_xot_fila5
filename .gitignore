@@ -168,16 +168,8 @@ _docs/
 *.orig
 *.rej
 *~headagentdb.rvf
-<<<<<<< HEAD
-<<<<<<< HEAD
-audit-coverage/
-=======
->>>>>>> 64619e34 (.)
-=======
 audit-coverage/
 .vscode/
 .devcontainer/
 .vscode/
-.claude-audit/
->>>>>>> 61938ca4 (delete .claude-audit/)
 .claude-audit/

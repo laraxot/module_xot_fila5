@@ -8,26 +8,14 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 use Spatie\QueueableAction\QueueableAction;
-<<<<<<< HEAD
-=======
-use stdClass;
->>>>>>> 61938ca4 (delete .claude-audit/)
 
 /**
  * Class ModuleAction.
  */
 class ModuleAction
 {
-<<<<<<< HEAD
-<<<<<<< HEAD:app/Actions/ModuleAction.php
     use QueueableAction;
 
-=======
->>>>>>> 64619e34 (.):app/Services/ModuleService.php
-=======
-    use QueueableAction;
-
->>>>>>> 61938ca4 (delete .claude-audit/)
     public string $name = '';
 
     private static ?self $_instance = null;
@@ -37,17 +25,6 @@ class ModuleAction
         $this->name = $name;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD:app/Actions/ModuleAction.php
-=======
-    /**
-     * getInstance.
-     *
-     * this method will return instance of the class
-     */
->>>>>>> 64619e34 (.):app/Services/ModuleService.php
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {

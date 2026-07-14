@@ -7,11 +7,10 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
 
 use function Safe\copy;
-
 use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
-use Webmozart\Assert\Assert;
 
 class AssetAction
 {

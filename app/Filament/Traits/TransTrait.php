@@ -9,13 +9,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Xot\Actions\GetTransKeyAction;
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 use Webmozart\Assert\Assert;
 
 trait TransTrait

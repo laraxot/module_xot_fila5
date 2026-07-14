@@ -41,6 +41,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract                    $currentTeam
  * @property ProfileContract|null            $profile
  * @property Collection<int, UserRole>       $roles
+<<<<<<< HEAD
  *                                                              <<<<<<< HEAD
  *                                                              <<<<<<< HEAD
  * @property Collection<int, Team>           $membershipTeams
@@ -52,6 +53,10 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property Collection<int, Team>           $membershipTeams
  * @property Collection<int, Model>          $teams
  *                                                              >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+ * @property Collection<int, Team>           $membershipTeams
+ * @property Collection<int, Model>          $teams
+>>>>>>> 4784e8f0 (.)
  * @property Collection<int, Tenant>         $tenants
  *
  * @phpstan-require-extends Model
@@ -133,13 +138,17 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     public function roles(): BelongsToMany;
 
     /**
+<<<<<<< HEAD
      * <<<<<<< HEAD
      * <<<<<<< HEAD
+=======
+>>>>>>> 4784e8f0 (.)
      * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
      *
      * @return BelongsToMany<Model, $this>
      *
      * @phpstan-ignore generics.notSubtype
+<<<<<<< HEAD
      * =======
      * Get the user's teams.
      *
@@ -151,6 +160,8 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @phpstan-ignore generics.notSubtype
      * >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 4784e8f0 (.)
      */
     public function teams(): BelongsToMany;
 
