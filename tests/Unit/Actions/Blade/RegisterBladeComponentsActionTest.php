@@ -14,11 +14,6 @@ it('registers blade components correctly', function (): void {
 
 describe('Register Blade Components Action', function (): void {
     test('registers blade components correctly', function (): void {
-<<<<<<< HEAD
-        $path = 'Modules/Xot/resources/views/components';
-        $namespace = 'Modules\\Xot\\View\\Components';
-        $prefix = 'xot::';
-=======
         /** @var TestCase $this */
         $path = 'some/path';
         $namespace = 'Some\\Namespace';
@@ -43,7 +38,6 @@ describe('Register Blade Components Action', function (): void {
         Blade::partialMock()->allows([
             'component' => null,
         ]);
->>>>>>> 2353ccee (.)
 
         $action = app(RegisterBladeComponentsAction::class);
         $action->execute($path, $namespace, $prefix);
@@ -57,8 +51,6 @@ describe('Register Blade Components Action', function (): void {
         $path = sys_get_temp_dir().'/empty-components-'.uniqid();
         $namespace = 'Empty\\Namespace';
 
-<<<<<<< HEAD
-=======
         $mockComps = ComponentFileData::collection([]);
 
         $mock = $this->createUnitMock(GetComponentsAction::class);
@@ -69,8 +61,6 @@ describe('Register Blade Components Action', function (): void {
         app()->instance(GetComponentsAction::class, $mock);
 
         // Blade facade mock skipped
-
->>>>>>> 2353ccee (.)
         $action = app(RegisterBladeComponentsAction::class);
         $action->execute($path, $namespace);
 

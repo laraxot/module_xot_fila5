@@ -20,7 +20,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
 {
     use InteractsWithSchemas;
 
-    /** @phpstan-ignore property.defaultValue */
+    /** @var view-string */
     protected string $view = 'xot::filament.widgets.infolist';
 
     protected int|string|array $columnSpan = 'full';

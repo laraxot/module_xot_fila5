@@ -10,21 +10,6 @@ use PHPUnit\Framework\Assert;
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
-<<<<<<< HEAD
-        $model = new class extends Activity {
-            public function getAttribute($key): mixed
-            {
-                return match ($key) {
-                    'name' => 'Test User',
-                    'email' => '',
-                    'id' => 123,
-                    'active' => 1,
-                    'missing' => null,
-                    default => null,
-                };
-            }
-        };
-=======
         $model = $this->createUnitMock(Activity::class);
         $model->method('getAttribute')->willReturnMap([
             ['name', 'Test User'],
@@ -33,7 +18,6 @@ describe('Safe Attribute Cast Action', function (): void {
             ['active', 1],
             ['missing', null],
         ]);
->>>>>>> 2353ccee (.)
 
     // hasAttribute
     expect($action->hasAttribute($model, 'name'))->toBeTrue();
