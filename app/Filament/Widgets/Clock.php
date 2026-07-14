@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
 class Clock extends XotBaseWidget
 {
     public string $start = '';
