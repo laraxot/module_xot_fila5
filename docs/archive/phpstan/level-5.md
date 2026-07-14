@@ -1,10 +1,10 @@
-# Rapporto PHPStan Livello 7 per il modulo Xot
+# Rapporto PHPStan Livello 5 per il modulo Xot
 
-Data analisi: 2025-04-15 21:55:11
+Data analisi: 2025-04-15 21:54:17
 
 ## Riepilogo
 
-Trovati 4 errori al livello 7.
+Trovati 4 errori al livello 5.
 
 ## Errori e suggerimenti
 
@@ -53,29 +53,29 @@ aurmich/dev
 aurmich/dev
 aurmich/dev
 
-## Collegamenti tra versioni di level_7.md
-* [level_7.md](laravel/modules/chart/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/reporting/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/gdpr/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/notify/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/xot/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/dental/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/user/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/ui/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/lang/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/job/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/media/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/tenant/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/activity/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/patient/project_docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/cms/project_docs/phpstan/level_7.md)
-# Rapporto PHPStan Livello 7 per il modulo Xot
+## Collegamenti tra versioni di level_5.md
+* [level_5.md](laravel/modules/chart/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/reporting/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/gdpr/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/notify/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/xot/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/dental/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/user/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/ui/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/lang/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/job/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/media/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/tenant/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/activity/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/patient/project_docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/cms/project_docs/phpstan/level_5.md)
+# Rapporto PHPStan Livello 5 per il modulo Xot
 
-Data analisi: 2025-04-15 21:55:11
+Data analisi: 2025-04-15 21:54:17
 
 ## Riepilogo
 
-Trovati 4 errori al livello 7.
+Trovati 4 errori al livello 5.
 
 ## Errori e suggerimenti
 
@@ -124,19 +124,19 @@ aurmich/dev
 aurmich/dev
 aurmich/dev
 
-## Collegamenti tra versioni di level_7.md
-* [level_7.md](laravel/modules/chart/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/reporting/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/gdpr/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/notify/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/xot/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/dental/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/user/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/ui/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/lang/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/job/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/media/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/tenant/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/activity/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/patient/docs/phpstan/level_7.md)
-* [level_7.md](laravel/modules/cms/docs/phpstan/level_7.md)
+## Collegamenti tra versioni di level_5.md
+* [level_5.md](laravel/modules/chart/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/reporting/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/gdpr/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/notify/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/xot/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/dental/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/user/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/ui/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/lang/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/job/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/media/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/tenant/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/activity/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/patient/docs/phpstan/level_5.md)
+* [level_5.md](laravel/modules/cms/docs/phpstan/level_5.md)

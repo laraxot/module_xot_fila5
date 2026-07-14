@@ -101,3 +101,5 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 - `Modules/Xot/docs/wiki/concepts/xotbasepolicy-architecture.md`
 - `Modules/User/docs/wiki/concepts/userpolicy-domain-specific.md`
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)

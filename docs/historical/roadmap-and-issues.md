@@ -4,7 +4,6 @@ topic: legacy-roadmap-ands
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
 ---
 
-<<<<<<< HEAD:docs/archive/historical/roadmap-and-issues.md
 ## 📊 STATO ATTUALE
 
 ### Completezza Funzionale: 95%
@@ -332,6 +331,3 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
->>>>>>> 64619e34 (.):docs/roadmap/legacy/legacy-roadmap-ands.md

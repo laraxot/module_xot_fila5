@@ -116,10 +116,6 @@ Questa risoluzione garantisce:
 ## Collegamento con la Documentazione Principale
 
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../project_docs/logs/conflict_resolution_progress.md).
 # Risoluzione Conflitto in ModelWithPosContract
 
@@ -239,8 +235,3 @@ Questa risoluzione garantisce:
 ## Collegamento con la Documentazione Principale
 
 Per una panoramica di tutti i conflitti risolti, vedere il documento principale sulla [risoluzione dei conflitti nel progetto](../../../../../docs/logs/conflict_resolution_progress.md).
-<<<<<<< HEAD
-=======
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)

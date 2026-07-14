@@ -11,8 +11,6 @@ source:
 
 # Confronto composer root FixCity vs Predict
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
@@ -35,11 +33,6 @@ Root allineato e piu' stretto di FixCity:
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
-=======
-## Osservazione
-=======
-## Osservazione FixCity
->>>>>>> 61938ca4 (delete .claude-audit/)
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
 
@@ -49,26 +42,10 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Debito FixCity (non replicare in Predict)
 
-<<<<<<< HEAD
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
 - `Modules\\` nell'autoload root;
 - merge di `Themes/*/composer.json`;
 - configurazione merge-plugin piu' ampia del necessario.
->>>>>>> 64619e34 (.)
-=======
-- `spatie/laravel-responsecache` nel root — gia' owner in `Modules/Xot`
-- `phpmd/phpmd` in `require-dev` root — usare `.phar` standalone
-- `Database\\Seeders\\` in autoload root — in Predict via `RegisterRuntimePsr4NamespacesAction`
-
-## Stato Predict (canonico 2026-06-30)
-
-Root allineato e piu' stretto di FixCity:
-
-- `require` solo tre package skeleton
-- autoload solo `App\\` e `Tests\\`
-- nessun merge `Themes/*/composer.json`
-- temi/seeders: runtime PSR-4 Xot
->>>>>>> 61938ca4 (delete .claude-audit/)
 
 ## Regola dedotta
 

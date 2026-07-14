@@ -46,3 +46,5 @@ composer clearcache
 
 composer config --global cafile PATH/TO/cacert.pem
 composer config --global capath PATH/TO/DIRECTORY/WHERE cacert.pem is placed
+
+See canonical documentation: ../../../../Themes/docs/shared-components/error-curl-60-Modules.md
