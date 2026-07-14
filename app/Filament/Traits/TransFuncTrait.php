@@ -106,10 +106,14 @@ trait TransFuncTrait
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $trans) {
 =======
         if ($trans === null) {
 >>>>>>> 64619e34 (.)
+=======
+        if (null === $trans) {
+>>>>>>> 61938ca4 (delete .claude-audit/)
             return static::persistGeneratedTransFuncLabel($key);
         }
 

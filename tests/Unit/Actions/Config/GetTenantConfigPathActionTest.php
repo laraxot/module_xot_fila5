@@ -16,11 +16,15 @@ describe('Get Tenant Config Path Action', function (): void {
         /** @var TestCase $this */
         $tenantPathAction = $this->createUnitMock(GetTenantFilePathAction::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $tenantPathAction->expects($this->expectsAtLeastOnce())
 =======
         /* @phpstan-ignore-next-line */
         $tenantPathAction->expects($this->atLeastOnce())
 >>>>>>> 64619e34 (.)
+=======
+        $tenantPathAction->expects($this->expectsAtLeastOnce())
+>>>>>>> 61938ca4 (delete .claude-audit/)
             ->method('execute')
             ->with('mail.php')
             ->willReturn('/tmp/tenant/mail.php');

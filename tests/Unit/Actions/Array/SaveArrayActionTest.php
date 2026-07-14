@@ -54,36 +54,49 @@ use function Safe\unlink;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->action = app(SaveArrayAction::class);
-    $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
-    if (! file_exists($this->tempDir)) {
-        mkdir($this->tempDir, 0755, true);
+/** @var string|null $arrayTestTempDir */
+$arrayTestTempDir = null;
+
+beforeEach(function () use (&$arrayTestTempDir): void {
+    $arrayTestTempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
+    if (! file_exists($arrayTestTempDir)) {
+        mkdir($arrayTestTempDir, 0755, true);
     }
 });
 
-afterEach(function (): void {
-    if (isset($this->tempDir) && file_exists($this->tempDir)) {
-        $dir = $this->tempDir;
-        $files = glob($dir.'/*');
-        foreach ($files as $file) {
-            $this->assertIsString($file);
+afterEach(function () use (&$arrayTestTempDir): void {
+    if (! is_string($arrayTestTempDir) || ! file_exists($arrayTestTempDir)) {
+        return;
+    }
+
+    foreach (glob($arrayTestTempDir.'/*') ?: [] as $file) {
+        if (is_string($file)) {
             unlink($file);
         }
-        rmdir($dir);
     }
+
+    rmdir($arrayTestTempDir);
+    $arrayTestTempDir = null;
 });
 
+<<<<<<< HEAD
 describe('Save Array Action', function (): void {
     test('saves array in json format', function (): void {
         $path = $this->tempDir.'/data.json';
 >>>>>>> 64619e34 (.)
+=======
+describe('Save Array Action', function () use (&$arrayTestTempDir): void {
+    test('saves array in json format', function () use (&$arrayTestTempDir): void {
+        Assert::assertIsString($arrayTestTempDir);
+        $path = $arrayTestTempDir.'/data.json';
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
         $result = app(SaveArrayAction::class)->execute(['a' => 1], $path, 'json');
 
         Assert::assertTrue($result);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     test('saves array in php format by default', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
@@ -103,17 +116,28 @@ describe('Save Array Action', function (): void {
 =======
     test('saves array in php format by default', function (): void {
         $path = $this->tempDir.'/data.php';
+=======
+    test('saves array in php format by default', function () use (&$arrayTestTempDir): void {
+        Assert::assertIsString($arrayTestTempDir);
+        $path = $arrayTestTempDir.'/data.php';
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
         $result = app(SaveArrayAction::class)->execute(['b' => 2], $path);
-        Assert::assertSame(['b' => 2], $result);
+        Assert::assertTrue($result);
 
-        Assert::assertNotNull(require $path);
+        Assert::assertSame(['b' => 2], require $path);
     });
 
-    test('throws for unsupported format', function (): void {
+    test('throws for unsupported format', function () use (&$arrayTestTempDir): void {
+        Assert::assertIsString($arrayTestTempDir);
+
         try {
+<<<<<<< HEAD
             app(SaveArrayAction::class)->execute([], $this->tempDir.'/invalid.txt', 'xml');
 >>>>>>> 64619e34 (.)
+=======
+            app(SaveArrayAction::class)->execute([], $arrayTestTempDir.'/invalid.txt', 'xml');
+>>>>>>> 61938ca4 (delete .claude-audit/)
             Assert::fail('Expected exception not thrown');
         } catch (\InvalidArgumentException) {
             // Expected

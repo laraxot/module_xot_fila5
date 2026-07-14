@@ -22,10 +22,15 @@
 ## 🧹 Manutenzione
 - 🗑️ [Cleanup Plan](./cleanup-action-plan.md) - Strategia per consolidare documenti accumulati.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
 =======
 >>>>>>> 64619e34 (.)
+=======
+- 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
+- ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
 ## 🔗 Moduli Dipendenti
 - Tutti i moduli del sistema dipendono da **Xot**.
@@ -34,6 +39,7 @@
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 # Xot Module Documentation Index
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 ## Core Architecture
@@ -91,6 +97,8 @@
 # Xot Module Documentation Index
 
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
 
 ## Roadmap
@@ -169,7 +177,11 @@
 ## Dependency Intelligence
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
 =======
 - [Dependency intelligence](dependency-intelligence.md)
 >>>>>>> 64619e34 (.)
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> 61938ca4 (delete .claude-audit/)

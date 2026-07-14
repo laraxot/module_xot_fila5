@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use Illuminate\Testing\TestResponse;
 use Modules\Geo\Phpstan\GeoTraitPhpstanProbe;
 use Modules\Geo\Phpstan\HasAddressesPhpstanProbe;
@@ -21,6 +24,7 @@ use Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe;
 use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+<<<<<<< HEAD
 =======
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 >>>>>>> 64619e34 (.)
@@ -41,9 +45,14 @@ use Nwidart\Modules\Facades\Module;
 <<<<<<< HEAD
 >>>>>>> a01602c7 (.)
 =======
+=======
+use Modules\Xot\Actions\File\FixPathAction;
+use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
+use Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe;
+use Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe;
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
 use function Safe\define;
-use function Safe\glob;
 use function Safe\preg_match;
 
 >>>>>>> 64619e34 (.)
@@ -59,6 +68,7 @@ if (! function_exists('isRunningTestBench')) {
     }
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 if (! function_exists('snake_case')) {
@@ -137,6 +147,8 @@ if (! function_exists('hex2rgba')) {
 }
 
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 if (! function_exists('dddx')) {
     function dddx(mixed $params): void
     {
@@ -173,6 +185,7 @@ if (! function_exists('dddx')) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 if (! function_exists('getFilename')) {
     /** @param array<string, mixed> $params */
@@ -195,6 +208,8 @@ if (! function_exists('req_uri')) {
 }
 
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 if (! function_exists('in_admin')) {
     /** @param array<string, mixed> $params */
     function in_admin(array $params = []): bool
@@ -223,6 +238,7 @@ if (! function_exists('inAdmin')) {
     }
 }
 
+<<<<<<< HEAD
 if (! function_exists('getRouteParameters')) {
     /**
      * Parametri della route corrente (es. anno, stabi, repar nei contesti admin progressioni).
@@ -317,6 +333,8 @@ if (! function_exists('isItem')) {
     }
 }
 
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 if (! function_exists('params2ContainerItem')) {
     /**
      * @param array<string, mixed>|null $params
@@ -359,6 +377,7 @@ if (! function_exists('params2ContainerItem')) {
     }
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 if (! function_exists('getModelFields')) {
@@ -456,6 +475,8 @@ if (! function_exists('getAllModules')) {
 }
 
 >>>>>>> a01602c7 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 if (! function_exists('xotModel')) {
     function xotModel(string $name): Model
     {
@@ -473,6 +494,7 @@ if (! function_exists('xotModel')) {
 =======
         Assert::isInstanceOf($res = app($model_class), Model::class);
 
+<<<<<<< HEAD
 >>>>>>> .merge_file_o9Z4k6
 >>>>>>> a01602c7 (.)
 =======
@@ -483,6 +505,8 @@ if (! function_exists('xotModel')) {
     }
 }
 
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 if (! function_exists('authId')) {
     function authId(): ?string
     {
@@ -547,6 +571,7 @@ if (! function_exists('isJson')) {
 if (! function_exists('actingAs')) {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
@@ -555,6 +580,11 @@ if (! function_exists('actingAs')) {
      */
     function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function actingAs(Authenticatable|int|string|null $user = null, ?string $driver = null): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -565,6 +595,7 @@ if (! function_exists('get')) {
      * @param array<string, mixed> $options
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -573,6 +604,11 @@ if (! function_exists('get')) {
      */
     function get(string $uri = '', array $options = []): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function get(string $uri = '', array $options = []): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -583,6 +619,7 @@ if (! function_exists('post')) {
      * @param array<string, mixed> $options
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return TestResponse<Response>
      */
     function post(string $uri, mixed $data = [], array $options = []): TestResponse
@@ -591,6 +628,11 @@ if (! function_exists('post')) {
      */
     function post(string $uri, mixed $data = [], array $options = []): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function post(string $uri, mixed $data = [], array $options = []): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -598,6 +640,7 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return TestResponse<Response>
      */
@@ -607,6 +650,11 @@ if (! function_exists('put')) {
      */
     function put(string $uri, mixed $data = []): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function put(string $uri, mixed $data = []): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -614,6 +662,7 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return TestResponse<Response>
      */
@@ -623,6 +672,11 @@ if (! function_exists('patch')) {
      */
     function patch(string $uri, mixed $data = []): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function patch(string $uri, mixed $data = []): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -630,6 +684,7 @@ if (! function_exists('patch')) {
 
 if (! function_exists('delete')) {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return TestResponse<Response>
      */
@@ -639,6 +694,11 @@ if (! function_exists('delete')) {
      */
     function delete(string $uri): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function delete(string $uri): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -646,6 +706,7 @@ if (! function_exists('delete')) {
 
 if (! function_exists('head')) {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return TestResponse<Response>
      */
@@ -655,6 +716,11 @@ if (! function_exists('head')) {
      */
     function head(string $uri): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function head(string $uri): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -662,6 +728,7 @@ if (! function_exists('head')) {
 
 if (! function_exists('options')) {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return TestResponse<Response>
      */
@@ -671,6 +738,11 @@ if (! function_exists('options')) {
      */
     function options(string $uri): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function options(string $uri): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -678,6 +750,7 @@ if (! function_exists('options')) {
 
 if (! function_exists('followingRedirects')) {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return TestResponse<Response>
      */
@@ -687,6 +760,11 @@ if (! function_exists('followingRedirects')) {
      */
     function followingRedirects(int $number = 5): Illuminate\Testing\TestResponse
 >>>>>>> 64619e34 (.)
+=======
+     * @return TestResponse<Response>
+     */
+    function followingRedirects(int $number = 5): TestResponse
+>>>>>>> 61938ca4 (delete .claude-audit/)
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
     }
@@ -788,5 +866,83 @@ if (! function_exists('merge_translation_files')) {
 >>>>>>> a01602c7 (.)
 =======
 >>>>>>> 64619e34 (.)
+    }
+}
+
+if (! function_exists('xotSeedModelOnce')) {
+    /**
+     * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
+     *
+     * @param class-string<Model> $modelClass
+     */
+    function xotSeedModelOnce(string $modelClass): void
+    {
+        (new GetFactoryAction())
+            ->execute($modelClass)
+            ->createOne();
+    }
+}
+
+if (! function_exists('xotPhpstanTraitProbeClasses')) {
+    /**
+     * Registers library trait probe hosts for PHPStan (Pest bridge in PestFunctionBridge.php).
+     *
+     * @return list<class-string>
+     */
+    function xotPhpstanTraitProbeClasses(): array
+    {
+        return [
+            GeoTraitPhpstanProbe::class,
+            HasAddressPhpstanProbe::class,
+            HasPlaceTraitPhpstanProbe::class,
+            HasAddressesPhpstanProbe::class,
+            HasStrictTranslationsPhpstanProbe::class,
+            HasContactPhpstanProbe::class,
+            HasCommonScopesPhpstanProbe::class,
+            HasCustomRelationsPhpstanProbe::class,
+            HasSchemalessAttributesPhpstanProbe::class,
+            FormatSecondsPhpstanProbe::class,
+        ];
+    }
+}
+
+if (! function_exists('merge_translation_files')) {
+    /**
+     * Unisce file lang PHP split (claude-audit <500 LOC per file).
+     *
+     * @param  string  ...$paths  Path assoluti ai chunk `return [...]`
+     * @return array<string, mixed>
+     */
+    function merge_translation_files(string ...$paths): array
+    {
+        /** @var array<string, mixed> $merged */
+        $merged = [];
+
+        foreach ($paths as $path) {
+            if (! is_file($path)) {
+                continue;
+            }
+
+            /** @var mixed $chunk */
+            $chunk = require $path;
+
+            if (! is_array($chunk)) {
+                continue;
+            }
+
+            $mergedChunk = [];
+            foreach ($chunk as $key => $value) {
+                if (! is_string($key)) {
+                    throw new \UnexpectedValueException('Translation keys must be strings.');
+                }
+
+                $mergedChunk[$key] = $value;
+            }
+
+            $merged = array_replace_recursive($merged, $mergedChunk);
+
+        }
+
+        return $merged;
     }
 }

@@ -30,6 +30,9 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 | Fixcity | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 ## Inventario quantitativo (2026-06-30)
 
 Comando: `bash bashscripts/tools/audit-policy-inventory.sh`
@@ -43,17 +46,24 @@ Comando: `bash bashscripts/tools/audit-policy-inventory.sh`
 
 Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/policy-module-inventory.md)
 
+<<<<<<< HEAD
 =======
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 ## Note pratiche
 
 - i base policy locali di modulo sono utili, ma dovrebbero derivare da una linea guida esplicita (Xot-first o User-first)
 - evitare policy nuove "isolated" senza estendere una base condivisa, salvo eccezioni documentate
 - in caso di dubbio, default su `XotBasePolicy`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 =======
 >>>>>>> 64619e34 (.)
+=======
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
 ## Miglioramenti consigliati
 

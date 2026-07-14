@@ -3,12 +3,16 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 use Modules\Xot\Tests\TestCase;
+<<<<<<< HEAD
 =======
 uses(Modules\Xot\Tests\TestCase::class);
 use Filament\Support\RawJs;
@@ -23,11 +27,14 @@ use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
 use Modules\Xot\Actions\Array\SaveJsonArrayAction as ArraySaveJsonArrayAction;
 use Modules\Xot\Actions\Array\SavePhpArrayAction as ArraySavePhpArrayAction;
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\mkdir;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 uses(TestCase::class);
 
@@ -35,6 +42,11 @@ it('normalizes nested numeric strings in diff fixType', function (): void {
 =======
 it('normalizes nested numeric strings in diff fixType for Arr namespace', function (): void {
 >>>>>>> 64619e34 (.)
+=======
+uses(TestCase::class);
+
+it('normalizes nested numeric strings in diff fixType', function (): void {
+>>>>>>> 61938ca4 (delete .claude-audit/)
     $input = ['items' => [
         ['a' => '1', 'b' => 'x'],
         ['c' => '2.5'],
@@ -49,6 +61,7 @@ it('normalizes nested numeric strings in diff fixType for Arr namespace', functi
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('throws when fixType receives a non-array item', function (): void {
     try {
         DiffAssocRecursiveAction::fixType(['items' => ['a' => '1'], 'invalid' => 'string']);
@@ -57,6 +70,11 @@ it('throws when fixType receives a non-array item for Arr namespace', function (
     try {
         ArrDiffAssocRecursiveAction::fixType(['items' => ['a' => '1'], 'invalid' => 'string']);
 >>>>>>> 64619e34 (.)
+=======
+it('throws when fixType receives a non-array item', function (): void {
+    try {
+        DiffAssocRecursiveAction::fixType(['items' => ['a' => '1'], 'invalid' => 'string']);
+>>>>>>> 61938ca4 (delete .claude-audit/)
         Assert::fail('Expected exception not thrown');
     } catch (Exception) {
         // Expected
@@ -64,12 +82,17 @@ it('throws when fixType receives a non-array item for Arr namespace', function (
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('returns recursive diff', function (): void {
     $action = new DiffAssocRecursiveAction();
 =======
 it('returns recursive diff in Arr namespace', function (): void {
     $action = new ArrDiffAssocRecursiveAction();
 >>>>>>> 64619e34 (.)
+=======
+it('returns recursive diff', function (): void {
+    $action = new DiffAssocRecursiveAction();
+>>>>>>> 61938ca4 (delete .claude-audit/)
     $left = ['items' => [
         ['id' => '1', 'name' => 'a'],
         ['id' => '2', 'name' => 'b'],
@@ -83,6 +106,7 @@ it('returns recursive diff in Arr namespace', function (): void {
     ], $action->execute($left, $right)['items']);
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 it('covers all branches of range intersect', function (): void {
     $action = new RangeIntersectAction();
@@ -136,6 +160,10 @@ it('returns recursive diff in Array namespace', function (): void {
 
 it('covers all branches of range intersect in Arr namespace', function (): void {
     $action = new ArrRangeIntersectAction();
+=======
+it('covers all branches of range intersect', function (): void {
+    $action = new RangeIntersectAction();
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
     Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
     Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
@@ -146,6 +174,7 @@ it('covers all branches of range intersect in Arr namespace', function (): void 
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
+<<<<<<< HEAD
 it('covers all branches of range intersect in Array namespace', function (): void {
     $action = new ArrayRangeIntersectAction();
 
@@ -160,6 +189,9 @@ it('covers all branches of range intersect in Array namespace', function (): voi
 
 it('writes JSON and PHP arrays via Arr actions', function (): void {
 >>>>>>> 64619e34 (.)
+=======
+it('writes JSON and PHP arrays', function (): void {
+>>>>>>> 61938ca4 (delete .claude-audit/)
     $tmpDir = sys_get_temp_dir().'/xot-arr-actions-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
@@ -168,6 +200,7 @@ it('writes JSON and PHP arrays via Arr actions', function (): void {
 
     $jsonAction = new SaveJsonArrayAction();
     $phpAction = new SavePhpArrayAction();
+<<<<<<< HEAD
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
     Assert::assertFileExists($phpFile);
@@ -188,6 +221,8 @@ it('writes JSON and PHP arrays via Array actions', function (): void {
 
     $jsonAction = new ArraySaveJsonArrayAction();
     $phpAction = new ArraySavePhpArrayAction();
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
     Assert::assertFileExists($phpFile);
@@ -213,10 +248,14 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
 it('throws on unsupported save format in SaveArrayAction', function (): void {
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $action = new SaveArrayAction();
 =======
         $action = new ArrSaveArrayAction();
 >>>>>>> 64619e34 (.)
+=======
+        $action = new SaveArrayAction();
+>>>>>>> 61938ca4 (delete .claude-audit/)
         $action->execute(['x' => 1], '/tmp/unused', 'xml');
         Assert::fail('Expected exception not thrown');
     } catch (InvalidArgumentException) {
@@ -225,6 +264,7 @@ it('throws on unsupported save format in SaveArrayAction', function (): void {
 <<<<<<< HEAD
 =======
 });
+<<<<<<< HEAD
 
 it('converts mixed PHP arrays to RawJs correctly', function (): void {
     $action = new ArrayToRawJsAction();
@@ -249,3 +289,5 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
     Assert::assertStringContainsString('formatter: value => value * 2', $js);
 >>>>>>> 64619e34 (.)
 });
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)

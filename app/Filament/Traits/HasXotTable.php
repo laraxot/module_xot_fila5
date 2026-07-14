@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\AssociateAction;
@@ -126,10 +129,14 @@ trait HasXotTable
      * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int, Column|ColumnGroup|LayoutComponent>
 =======
      * @return array<int, Tables\Columns\Column|Stack>
 >>>>>>> 64619e34 (.)
+=======
+     * @return array<int, Column|ColumnGroup|LayoutComponent>
+>>>>>>> 61938ca4 (delete .claude-audit/)
      */
     public function getGridTableColumns(): array
     {
@@ -144,10 +151,14 @@ trait HasXotTable
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         if (null === $state || '' === $state) {
 =======
                         if ($state === null || $state === '') {
 >>>>>>> 64619e34 (.)
+=======
+                        if (null === $state || '' === $state) {
+>>>>>>> 61938ca4 (delete .claude-audit/)
                             return $labelText.': —';
                         }
 
@@ -234,12 +245,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if ($sortColumn !== null && $sortDirection !== null) {
+        if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if ($pollInterval !== null) {
+        if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
 
@@ -368,9 +379,9 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @return class-string<Model>
+     * @throws \Exception Se non viene trovata una classe modello valida
      *
-     * @throws Exception Se non viene trovata una classe modello valida
+     * @return class-string<Model>
      */
     public function getModelClass(): string
     {
@@ -384,9 +395,7 @@ trait HasXotTable
             return $model;
         }
 
-        throw new Exception(
-            'No model found in '.class_basename(self::class).'::'.__FUNCTION__
-        );
+        throw new \Exception('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
@@ -399,20 +408,28 @@ trait HasXotTable
         $search = $this->tableSearch ?? null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return null !== $search ? SafeStringCastAction::cast($search) : null;
 =======
         return $search !== null ? SafeStringCastAction::cast($search) : null;
 >>>>>>> 64619e34 (.)
+=======
+        return null !== $search ? SafeStringCastAction::cast($search) : null;
+>>>>>>> 61938ca4 (delete .claude-audit/)
     }
 
     /**
      * Get list table columns.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Column>
 =======
      * @return array<string, Tables\Columns\Column>
 >>>>>>> 64619e34 (.)
+=======
+     * @return array<string, Column>
+>>>>>>> 61938ca4 (delete .claude-audit/)
      */
     abstract protected function getTableColumns(): array;
 
@@ -449,10 +466,14 @@ trait HasXotTable
      * Get table empty state actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int|string, Action>
 =======
      * @return array<string, Action>
 >>>>>>> 64619e34 (.)
+=======
+     * @return array<int|string, Action>
+>>>>>>> 61938ca4 (delete .claude-audit/)
      */
     protected function getTableEmptyStateActions(): array
     {
@@ -526,7 +547,7 @@ trait HasXotTable
             Assert::isInstanceOf($model, Model::class);
 
             return $model->getTable().'.id';
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             return null;
         }
     }

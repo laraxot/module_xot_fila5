@@ -6,6 +6,10 @@ namespace Modules\Xot\Actions\Route;
 
 use Illuminate\Routing\Route;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
+=======
+use RuntimeException;
+>>>>>>> 61938ca4 (delete .claude-audit/)
 use Spatie\QueueableAction\QueueableAction;
 
 class GetCurrentRouteActionNameAction
@@ -16,7 +20,11 @@ class GetCurrentRouteActionNameAction
     {
         $route = request()->route();
         if (! $route instanceof Route) {
+<<<<<<< HEAD
             throw new \RuntimeException('Current route action is not available.');
+=======
+            throw new RuntimeException('Current route action is not available.');
+>>>>>>> 61938ca4 (delete .claude-audit/)
         }
 
         $routeAction = $route->getActionName();
