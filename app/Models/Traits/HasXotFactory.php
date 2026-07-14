@@ -20,7 +20,7 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -31,9 +31,9 @@ trait HasXotFactory
      *                                  =======
      * @return TFactory
      *                                  >>>>>>> 61938ca4 (delete .claude-audit/)
-=======
+     *                                  =======
      * @return TFactory
->>>>>>> 4784e8f0 (.)
+     *                                  >>>>>>> 4784e8f0 (.)
      */
     protected static function newFactory()
     {

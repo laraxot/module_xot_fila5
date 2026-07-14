@@ -9,7 +9,6 @@ use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
@@ -52,7 +51,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     /**
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
-     *
      */
     /** @var view-string */
     protected string $view = '_params_xot';

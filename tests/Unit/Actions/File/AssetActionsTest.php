@@ -41,7 +41,9 @@ it('resolves module assets correctly in AssetAction', function (): void {
 
     // Replace GetModulePathAction with a spy
     $getModulePathAction = new class($modulePath) extends GetModulePathAction {
-        public function __construct(private string $modulePath) {}
+        public function __construct(private string $modulePath)
+        {
+        }
 
         public function execute(string $module): string
         {
@@ -84,7 +86,7 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-            return $module === 'User' ? '/path/to/User/' : '';
+            return 'User' === $module ? '/path/to/User/' : '';
         },
     ]);
 
