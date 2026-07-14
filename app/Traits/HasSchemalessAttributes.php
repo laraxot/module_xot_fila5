@@ -17,6 +17,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * seguendo le best practices di Spatie.
  *
  * @see https://github.com/spatie/laravel-schemaless-attributes
+ *
+ * @phpstan-ignore trait.unused
  */
 trait HasSchemalessAttributes
 {

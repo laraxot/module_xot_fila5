@@ -24,7 +24,7 @@ use Webmozart\Assert\Assert;
  *
  * @method Builder<Model> when(mixed $value = null, ?callable $callback = null, ?callable $default = null)
  * @method Builder<Model> whereBetween(string $column, iterable<int, mixed> $values, string $boolean = 'and', bool $not = false)
- * @method Builder<Model> selectRaw(string $expression, array<int, mixed> $bindings = [])
+ * @method Builder<Model> selectRaw(string $expression, array<int|string, mixed> $bindings = [])
  * @method Builder<Model> where(string|\Closure|\Illuminate\Contracts\Database\Query\Expression $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  */
 class CustomRelation extends Relation
@@ -81,8 +81,12 @@ class CustomRelation extends Relation
      *
      * @return array<int, Model>
      */
-    public function initRelation(array $models, $relation): array
+    public function initRelation(array $models, mixed $relation): array
     {
+        if (! \is_string($relation)) {
+            throw new \Exception('relation is not a string');
+        }
+
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -101,7 +105,7 @@ class CustomRelation extends Relation
      *
      * @return array<int, Model>
      */
-    public function match(array $models, Collection $collection, $relation): array
+    public function match(array $models, Collection $collection, mixed $relation): array
     {
         // Trying to invoke Closure|null but it might not be a callable.
         if (! \is_callable($this->eagerMatcher)) {

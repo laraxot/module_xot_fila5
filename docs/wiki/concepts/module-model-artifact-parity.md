@@ -3,13 +3,17 @@ type: concept
 module: Xot
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)
 updated: 2026-06-30
 qmd: "xot module model migration factory seeder parity audit N equals N"
 related:
   - ../../../../../../docs/wiki/concepts/module-model-migration-seeder-parity.md
   - ../../module-directory-structure-rule.md
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 updated: 2026-06-05
@@ -17,12 +21,17 @@ qmd: "xot module model migration factory seeder parity audit cross module"
 >>>>>>> 64619e34 (.)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)
 ---
 
 # Module model artifact parity
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2353ccee (.)
 ## Regola N = N = N
 
 Ogni modulo Laraxot deve essere **completo** rispetto ai modelli che possiede: stesso numero di migrazioni `create_*`, factory e seeder entità.
@@ -42,7 +51,11 @@ bashscripts/tools/audit-module-artifact-parity.sh <ModuleName>
 ## Esclusi dal conteggio
 
 - `abstract` / `Base*`
+<<<<<<< HEAD
 - `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
+=======
+- `TestModel`, `TestSushiModel`
+>>>>>>> 2353ccee (.)
 - Wrapper cross-modulo (es. `Predict\Models\User`)
 
 ## Backlog migrazioni
@@ -52,6 +65,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 ## Collegamenti
 
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+<<<<<<< HEAD
 =======
 ## Scopo
 =======
@@ -147,3 +161,5 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 =======
 - [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)

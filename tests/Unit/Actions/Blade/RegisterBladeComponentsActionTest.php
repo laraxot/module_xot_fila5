@@ -14,9 +14,36 @@ it('registers blade components correctly', function (): void {
 
 describe('Register Blade Components Action', function (): void {
     test('registers blade components correctly', function (): void {
+<<<<<<< HEAD
         $path = 'Modules/Xot/resources/views/components';
         $namespace = 'Modules\\Xot\\View\\Components';
         $prefix = 'xot::';
+=======
+        /** @var TestCase $this */
+        $path = 'some/path';
+        $namespace = 'Some\\Namespace';
+        $prefix = 'prefix';
+
+        $comp1 = ComponentFileData::from([
+            'name' => 'test-comp',
+            'ns' => 'Some\\Namespace\\View\\Components\\TestComp',
+            'class' => 'TestComp',
+        ]);
+
+        $mockComps = ComponentFileData::collection([$comp1]);
+
+        $mock = $this->createUnitMock(GetComponentsAction::class);
+        $mock->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->with($path, $namespace.'\\View\\Components', $prefix)
+            ->willReturn($mockComps);
+
+        app()->instance(GetComponentsAction::class, $mock);
+
+        Blade::partialMock()->allows([
+            'component' => null,
+        ]);
+>>>>>>> 2353ccee (.)
 
         $action = app(RegisterBladeComponentsAction::class);
         $action->execute($path, $namespace, $prefix);
@@ -30,6 +57,20 @@ describe('Register Blade Components Action', function (): void {
         $path = sys_get_temp_dir().'/empty-components-'.uniqid();
         $namespace = 'Empty\\Namespace';
 
+<<<<<<< HEAD
+=======
+        $mockComps = ComponentFileData::collection([]);
+
+        $mock = $this->createUnitMock(GetComponentsAction::class);
+        $mock->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->willReturn($mockComps);
+
+        app()->instance(GetComponentsAction::class, $mock);
+
+        // Blade facade mock skipped
+
+>>>>>>> 2353ccee (.)
         $action = app(RegisterBladeComponentsAction::class);
         $action->execute($path, $namespace);
 

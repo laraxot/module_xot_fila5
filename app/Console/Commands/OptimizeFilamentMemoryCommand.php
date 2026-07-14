@@ -107,7 +107,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Analizza i problemi di memoria.
      *
-     * @return array<string, mixed>
+     * @return array<string, array<int, string>>
      */
     private function analyzeMemoryIssues(bool $verbose = false): array
     {
@@ -131,7 +131,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova modelli con eager loading eccessivo.
      *
-     * @return array<string>
+     * @return array<int, string>
      */
     private function findModelsWithEagerLoading(): array
     {
@@ -161,7 +161,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova widget pesanti.
      *
-     * @return array<string>
+     * @return array<int, string>
      */
     private function findHeavyWidgets(): array
     {
@@ -187,7 +187,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova risorse non ottimizzate.
      *
-     * @return array<string>
+     * @return array<int, string>
      */
     private function findUnoptimizedResources(): array
     {
@@ -211,7 +211,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova codice di migrazione nei form.
      *
-     * @return array<string>
+     * @return array<int, string>
      */
     private function findMigrationCodeInForms(): array
     {
@@ -237,7 +237,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Trova risorse senza paginazione.
      *
-     * @return array<string>
+     * @return array<int, string>
      */
     private function findMissingPagination(): array
     {
@@ -261,7 +261,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
-     * @param array<string, mixed> $issues
+     * @param array<string, array<int, string>> $issues
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -303,7 +303,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
-     * @param array<string, mixed> $issues
+     * @param array<string, array<int, string>> $issues
      */
     private function displayDetailedIssues(array $issues): void
     {
@@ -322,7 +322,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Applica le ottimizzazioni.
      *
-     * @param array<string, mixed> $issues
+     * @param array<string, array<int, string>> $issues
      */
     private function applyOptimizations(array $issues, bool $verbose = false): void
     {

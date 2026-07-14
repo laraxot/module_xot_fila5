@@ -6,6 +6,7 @@ tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 updated: 2026-06-30
 =======
 updated: 2026-06-13
@@ -13,6 +14,9 @@ updated: 2026-06-13
 =======
 updated: 2026-06-30
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+updated: 2026-06-30
+>>>>>>> 2353ccee (.)
 qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -35,6 +39,7 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 - Bridge `PestFunctionBridge.php`: `uses|test|it|describe` → `void`; `expect()` → `PestExpectation` (evita `function.resultUnused` e catene `function.void`).
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Rigenerare bridge: `php bashscripts/tools/generate-pest-phpstan-bridge.php` (195 namespace, 2026-06-30).
 =======
 - Bridge `PestFunctionBridge.php`: `uses|test|it|describe` → `void`; `expect()` → `PestExpectation` (evita `function.resultUnused` e catene `function.void`).
@@ -42,6 +47,9 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 =======
 - Rigenerare bridge: `php bashscripts/tools/generate-pest-phpstan-bridge.php` (195 namespace, 2026-06-30).
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+- Rigenerare bridge: `php bashscripts/tools/generate-pest-phpstan-bridge.php` (195 namespace, 2026-06-30).
+>>>>>>> 2353ccee (.)
 - `uses(\Modules\<M>\Tests\TestCase::class)` sempre **dopo** gli `import use` nel file Pest.
 
 ## Helper XotBaseTestCase (usare nei moduli)
@@ -71,6 +79,7 @@ Centralizzare solo se il pattern e' usato da piu' moduli:
 - helper per database assertion senza `$this` ambiguo;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
 =======
 - helper per factory `createOne()` e narrowing del modello;
@@ -78,6 +87,9 @@ Centralizzare solo se il pattern e' usato da piu' moduli:
 =======
 - helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+- helper per factory `createOne()` e narrowing del modello (`bashscripts/tools/fix-test-factory-createone.php`);
+>>>>>>> 2353ccee (.)
 - wrapper assertion per stringhe, array shape o class-string.
 
 Non centralizzare fix one-shot di un singolo test Activity.

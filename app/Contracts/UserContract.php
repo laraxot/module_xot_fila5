@@ -45,18 +45,11 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *                                                              <<<<<<< HEAD
  *                                                              <<<<<<< HEAD
  * @property Collection<int, Team>           $membershipTeams
- * @property Collection<int, Model>          $teams
- *                                                              =======
+<<<<<<< HEAD
  * @property Collection<int, Team>           $teams
- *                                                              >>>>>>> 64619e34 (.)
- *                                                              =======
- * @property Collection<int, Team>           $membershipTeams
+=======
  * @property Collection<int, Model>          $teams
- *                                                              >>>>>>> 61938ca4 (delete .claude-audit/)
- *                                                              =======
- * @property Collection<int, Team>           $membershipTeams
- * @property Collection<int, Model>          $teams
- *                                                              >>>>>>> 4784e8f0 (.)
+>>>>>>> 2353ccee (.)
  * @property Collection<int, Tenant>         $tenants
  *
  * @phpstan-require-extends Model

@@ -65,7 +65,7 @@ abstract class XotBaseTransition extends Transition
     /**
      * Get notification attachments.
      *
-     * @return array<int, array<string, string>>
+     * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
      */
     public function getNotificationAttachments(): array
     {

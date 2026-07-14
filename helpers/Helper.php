@@ -292,6 +292,7 @@ if (! function_exists('xotSeedModelOnce')) {
             ->createOne();
     }
 }
+<<<<<<< HEAD
 
 if (! function_exists('merge_translation_files')) {
     /**
@@ -314,3 +315,5 @@ if (! function_exists('merge_translation_files')) {
         return $result;
     }
 }
+=======
+>>>>>>> 2353ccee (.)
