@@ -41,3 +41,14 @@ QUEUE_CONNECTION=sync
 ### Struttura del TestCase
 
 Ogni modulo dovrebbe avere un TestCase base nella cartella `tests/`:
+
+#### Example
+```php
+/** @var \Mockery\MockInterface&MyAction $mock */
+$mock = \Mockery::mock(MyAction::class);
+
+/** @var \Mockery\Expectation $expectation */
+$expectation = $mock->shouldReceive('execute');
+$expectation->with($param)->andReturn($result);
+```
+This pattern ensures PHPStan successfully validates the chain at Level 10.

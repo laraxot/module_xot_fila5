@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Filament Best Practices
 
 ## Visibilità dei Metodi
@@ -65,11 +63,6 @@ public function getTableActions(): array
 - [Principio di Sostituzione di Liskov](https://it.wikipedia.org/wiki/Principio_di_sostituzione_di_Liskov)
 - [Best Practices PHP](../php-strict-types.md)
 - [Best Practices PHP](../php-strict-types.md)
-=======
-# Best Practices per Risorse Filament in Laraxot
-=======
-# Filament Best Practices
->>>>>>> 64619e34 (.)
 
 ## Visibilità dei Metodi
 
@@ -88,7 +81,6 @@ Quando si estendono le classi base di Filament o XotBase, è fondamentale rispet
 | getHeaderActions() | XotBaseListRecords | public |
 | getTableColumns() | XotBaseListRecords | public |
 
-<<<<<<< HEAD
 1. **SEMPRE** estendere `Modules\Xot\Filament\Resources\XotBaseResource`:
    ```php
    // CORRETTO ✅
@@ -97,9 +89,6 @@ Quando si estendono le classi base di Filament o XotBase, è fondamentale rispet
    // ERRATO ❌
    class ClienteResource extends Resource
    ```
-=======
-### Esempi di Implementazione Corretta
->>>>>>> 64619e34 (.)
 
 ```php
 class ListPosts extends XotBaseListRecords
@@ -120,7 +109,6 @@ class ListPosts extends XotBaseListRecords
 }
 ```
 
-<<<<<<< HEAD
 1. Per le pagine di **creazione**:
    ```php
    // CORRETTO ✅
@@ -147,25 +135,12 @@ class ListPosts extends XotBaseListRecords
    // ERRATO ❌
    class ListClienti extends ListRecords
    ```
-=======
-### Errori Comuni da Evitare
-
-1. Riduzione della Visibilità
-```php
-// ❌ SBAGLIATO: Riduzione della visibilità
-protected function getTableActions(): array
-
-// ✅ CORRETTO: Mantenimento della visibilità
-public function getTableActions(): array
-```
->>>>>>> 64619e34 (.)
 
 2. Tipo di Ritorno Incompatibile
 ```php
 // ❌ SBAGLIATO: Tipo di ritorno incompatibile
 public function getTableActions(): Collection
 
-<<<<<<< HEAD
 1. **SEMPRE** utilizzare `getFormSchema()` invece di `form()`:
    ```php
    // CORRETTO ✅
@@ -305,15 +280,3 @@ public function getTableActions(): Collection
 * [filament_best_practices.md](../filament_best_practices.md)
 * [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
->>>>>>> a01602c7 (.)
-=======
-// ✅ CORRETTO: Tipo di ritorno compatibile
-public function getTableActions(): array
-```
-
-## Collegamenti
-- [Documentazione Filament Ufficiale](https://filamentphp.com/)
-- [Principio di Sostituzione di Liskov](https://it.wikipedia.org/wiki/Principio_di_sostituzione_di_Liskov)
-- [Best Practices PHP](../php-strict-types.md)
-- [Best Practices PHP](../php-strict-types.md)
->>>>>>> 64619e34 (.)

@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 # Convenzioni dei Namespace nel Modulo Xot
 
 ## Panoramica
 Questo documento definisce le convenzioni per l'organizzazione dei namespace nel modulo Xot.
-<<<<<<< HEAD
 
 ## Struttura Base
 - `Xot\App`: Classi principali dell'applicazione
@@ -594,10 +589,6 @@ php scripts/check-namespaces.php
  aurmich/dev
  aurmich/dev
 Seguire queste convenzioni di namespace aiuterà a mantenere un codebase coerente e a evitare errori comuni durante l'analisi statica del codice con PHPStan.
-=======
-# Convenzioni per i Namespace nei Moduli
-=======
->>>>>>> 64619e34 (.)
 
 ## Struttura Base
 - `Xot\App`: Classi principali dell'applicazione
@@ -660,13 +651,7 @@ namespace Modules\Rating\App\Actions;
 namespace Modules\Rating\App\Console\Commands;
 ```
 
-<<<<<<< HEAD
 ### Versione Incoming
-=======
-## Attenzione: Errore comune con il namespace delle Actions
-
-Un errore particolarmente frequente riguarda le Actions. La convenzione corretta è la seguente:
->>>>>>> 64619e34 (.)
 
 - ✅ **CORRETTO**: `namespace Modules\Xot\Actions;`
 
@@ -1176,11 +1161,7 @@ class UserServiceProvider extends \Modules\Xot\Providers\XotBaseServiceProvider 
 Per verificare che tutti i file rispettino queste convenzioni, sono disponibili script automatici nella cartella `scripts` che analizzano la struttura del progetto e segnalano eventuali anomalie.
 
 ```bash
-<<<<<<< HEAD
 grep -r "namespace Modules\\\\.*\\\\App\\\\" Modules
-=======
-php scripts/check-namespaces.php
->>>>>>> 64619e34 (.)
 ```
 
 ## Riferimenti
@@ -1189,7 +1170,6 @@ php scripts/check-namespaces.php
 - [Laravel Namespacing Conventions](https://laravel.com/project_docs/master/structure)
 - [Nwidart/Laravel-Modules Documentation](https://nwidart.com/laravel-modules/v6/introduction)
 
-<<<<<<< HEAD
 # phpstan.neon
 parameters:
   checkMissingIterableValueType: false
@@ -1214,10 +1194,3 @@ php artisan cache:clear
 php artisan config:clear
 php artisan view:clear
 ```
->>>>>>> a01602c7 (.)
-=======
- aurmich/dev
- aurmich/dev
- aurmich/dev
-Seguire queste convenzioni di namespace aiuterà a mantenere un codebase coerente e a evitare errori comuni durante l'analisi statica del codice con PHPStan.
->>>>>>> 64619e34 (.)

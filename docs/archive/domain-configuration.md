@@ -76,8 +76,6 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
 - [Risoluzione dei Loghi](logo_resolution.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
@@ -101,13 +99,6 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Documentazione Temi](../../cms/project_docs/theming.md)
 - [Standard Interfaccia](../../../project_docs/standards/interface_guidelines.md)
 - [Best Practices](../../../project_docs/standards/best_practices.md)
-=======
-- [Configurazione Generale](CONFIGURATION.md)
-- [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
-=======
-- [Configurazione Generale](configuration.md)
-- [Risoluzione dei Loghi](logo_resolution.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
->>>>>>> 64619e34 (.)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 - [Linee Guida per i Loghi](../../../project_docs/standards/logo_guidelines.md)
@@ -124,20 +115,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Troubleshooting](troubleshooting.md)
 
 ## Vedi Anche
-<<<<<<< HEAD
 - [Documentazione UI](../../UI/docs/configuration.md)
 - [Documentazione Media](../../Media/docs/assets.md)
 - [Documentazione Temi](../../Cms/docs/theming.md)
 - [Standard Interfaccia](../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../docs/standards/best_practices.md)
->>>>>>> a01602c7 (.)
-=======
-- [Documentazione UI](../../ui/project_docs/configuration.md)
-- [Documentazione Media](../../media/project_docs/assets.md)
-- [Documentazione Temi](../../cms/project_docs/theming.md)
-- [Standard Interfaccia](../../../project_docs/standards/interface_guidelines.md)
-- [Best Practices](../../../project_docs/standards/best_practices.md)
->>>>>>> 64619e34 (.)
 
 # Configurazione Basata sul Dominio
 
@@ -208,10 +190,6 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
    - Assicurarsi che tutte le versioni necessarie del logo siano presenti
 
 ## Collegamenti
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 - [Configurazione Generale](configuration.md)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -388,11 +366,5 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti
 - [Configurazione Generale](configuration.md)
-<<<<<<< HEAD
-=======
-- [Configurazione Generale](CONFIGURATION.md)
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)

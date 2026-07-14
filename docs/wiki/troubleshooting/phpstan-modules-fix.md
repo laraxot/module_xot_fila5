@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2353ccee (.)
 title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
@@ -13,10 +8,7 @@ tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
   - concepts/phpstan-level10.md
-<<<<<<< HEAD
   - concepts/phpstan-trait-probes.md
-=======
->>>>>>> 2353ccee (.)
   - concepts/xot-seed-model-once.md
 qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
@@ -72,13 +64,10 @@ php bashscripts/tools/fix-pest-phpstan-test-patterns.php
 
 `newFactory()` annotato `@return TFactory` per risolvere la catena generica sui modelli Xot.
 
-<<<<<<< HEAD
 ### Trait probe Notify
 
 `Modules/Notify/app/Phpstan/HasContactPhpstanProbe.php` registrato in `xotPhpstanTraitProbeClasses()` (valori `::class`, non stringhe).
 
-=======
->>>>>>> 2353ccee (.)
 ### Test mock User — `RelationX`
 
 `MockUserWithTeams` (test) deve `use RelationX` se usa `HasTeams` (metodo `belongsToManyX`).
@@ -132,12 +121,6 @@ php artisan about
 - [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
-<<<<<<< HEAD
-=======
-title: "PHPStan Modules Fix 2026-05-05"
-=======
-title: "PHPStan Modules — stato e fix"
->>>>>>> 61938ca4 (delete .claude-audit/)
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
@@ -256,15 +239,6 @@ php artisan about
 
 ## Related
 
-<<<<<<< HEAD
 - [phpstan-cluster-map-and-false-friends](concepts/phpstan-cluster-map-and-false-friends.md)
 - [safe-functions-rule](../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [phpstan-level10](concepts/phpstan-level10.md)
->>>>>>> 64619e34 (.)
-=======
-- [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
-- [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
-- [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)

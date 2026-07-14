@@ -88,10 +88,6 @@ return [
 
 - [Regole Traduzioni Xot](translation_rules.md)
 - [Best Practices Traduzioni](translations-best-practices.md)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
 
 # Aggiornamento File di Traduzione xot_base.php
@@ -185,13 +181,4 @@ return [
 - [Regole Traduzioni Xot](translation_rules.md)
 - [Best Practices Traduzioni](translations-best-practices.md)
 - [Documentazione Principale Traduzioni](../../../../docs/translation_rules.md)
-<<<<<<< HEAD
 
-=======
-- [Documentazione Principale Traduzioni](../../../docs/translation_rules.md)
-
-*Ultimo aggiornamento: 27 Gennaio 2025*
->>>>>>> a01602c7 (.)
-=======
-
->>>>>>> 64619e34 (.)

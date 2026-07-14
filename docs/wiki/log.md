@@ -1,11 +1,4 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)
 
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
@@ -20,10 +13,6 @@
 - Seeder parity: User 37/37, Job 15/15, Predict 16/16, Lang OK
 - Backlog: consolidamento migrazioni duplicate (GAP migration)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2353ccee (.)
 title: "Activity Log"
 type: log
 module: Xot
@@ -34,10 +23,6 @@ qmd: "Xot log phpstan pest bridge discipline ponytail audit"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
   - "https://github.com/laraxot/base_predict_fila5/issues/237"
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 title: "Activity Log"
 type: log
 module: Xot
@@ -47,24 +32,10 @@ updated: 2026-06-30
 qmd: "Xot log phpstan pest bridge discipline ponytail audit"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
-<<<<<<< HEAD
->>>>>>> 64619e34 (.)
-=======
-  - "https://github.com/laraxot/base_predict_fila5/issues/237"
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)
 discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)
 ## [2026-06-30] ponytail audit remediation — repo-wide
 
 - Delete dead: `RouteDynService`, `ContextCompressor`, UI NullMap stack, Geo probe test dupes.
@@ -193,16 +164,14 @@ discussions:
 
 - `start.txt` v6: hub [llm-wiki.md](../../../../../../docs/wiki/index/llm-wiki.md), [sacred-artifacts-never-delete.md](../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md), [quality-gate-canonical-commands.md](../../../../../../docs/wiki/concepts/quality-gate-canonical-commands.md).
 - Gate §1.5 `guard-model-policy-delete.sh`; §1.4 `laravel-model-policies-sacred.mdc`; fallback `grep` se `rg` assente.
-- Prompt fratelli con `<<<<<<<`: WARN (non bloccante sessione); solo `start.txt`/`rules.txt` bloccanti.
-- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
+- Prompt fratelli con `- PHPStan: exit 124 timeout documentato; `find` cartelle root PHP mirato (esclude legacy `Config/`).
 - `prompts/README.md`: `start.txt` come primo step Quick Start.
 
 ## [2026-06-30] prompts | start.txt v5 — gate infrastruttura e igiene
 
 - `start.txt` v5: sezioni `.claude` junction, ponytail, ponytail-audit hub, policy/actions protetti, fallback PHPStan modulo/file, anti-append ricorsivo.
 - `rules.txt`: conflitti Git risolti forward-only; allineato a policy stub + Queueable Actions + migrations.
-- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `<<<<<<<` (esclusi start.txt e rules.txt); runtime PSR-4 ok; composer skeleton ok; PHPStan full-scan timeout/output binario noto.
-
+- Gate sessione: git pulito; conflitti PHP ok; 16 prompt fratelli ancora con `
 ## [2026-06-30] prompts | start.txt v4 — gate one-shot e igiene prompt
 
 - `start.txt` v4: blocco **gate rapido one-shot**, regola igiene (no append query utente), `find -mindepth 1` per audit cartelle, link a `module-root-php-folders-forbidden.md`, `start.txt` canonico se `rules.txt` in conflitto.
@@ -219,30 +188,10 @@ discussions:
 - Nuova pagina Xot: [`composer-merge-plugin-modules-only.md`](concepts/composer-merge-plugin-modules-only.md).
 - Raw confronto aggiornato: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2353ccee (.)
 ## [2026-06-30] composer | gate start.txt + autoload runtime temi
 
 - Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
 - Action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
-<<<<<<< HEAD
-=======
-## [2026-06-30] composer | gate start.txt + autoload runtime temi
-
-- Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
-- Nuova action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
-- Aggiornato `bashscripts/tools/prompts/start.txt` con gate, tabelle e verifica `jq`.
->>>>>>> 64619e34 (.)
-=======
-## [2026-06-30] composer | gate start.txt + autoload runtime temi
-
-- Root `composer.json`: solo `App\\` e `Tests\\` in autoload (skeleton nwidart).
-- Action: `RegisterRuntimePsr4NamespacesAction` per temi e seeders legacy app.
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)
 - Pagina: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 
 ## [2026-06-30] composer | root skeleton allineato a FixCity
@@ -504,18 +453,5 @@ _No activity yet. Start by ingesting raw documents._
 - XotBasePolicy: zero dipendenze, system processes, API token
 - UserBasePolicy: Spatie Permission, user-authenticated, RBAC
 - Commit: docs: add cross-reference to policy boundary decision
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
-=======
->>>>>>> 64619e34 (.)
-=======
-
-2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
-
-2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
->>>>>>> 2353ccee (.)

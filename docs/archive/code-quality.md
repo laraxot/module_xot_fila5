@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 # Laraxot Code Quality Standards
 
 ## Overview
@@ -286,11 +282,6 @@ unset($translations['existing_key']); // MAI!
 ---
 
 *"Nel codice Laraxot, ogni riga è un verso della sinfonia dell'architettura perfetta."*
-<<<<<<< HEAD
-=======
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview

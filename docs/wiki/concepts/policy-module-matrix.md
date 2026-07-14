@@ -48,6 +48,8 @@ Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/
 - evitare policy nuove "isolated" senza estendere una base condivisa, salvo eccezioni documentate
 - in caso di dubbio, default su `XotBasePolicy`
 - **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+- **non eliminare** policy modello perché sembrano stub: vedi [model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 
 ## Miglioramenti consigliati
 
