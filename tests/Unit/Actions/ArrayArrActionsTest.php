@@ -68,7 +68,6 @@ it('covers all branches of range intersect', function (): void {
     Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
-
 it('covers all branches of range intersect in Array namespace', function (): void {
     $action = new ArrayRangeIntersectAction();
 

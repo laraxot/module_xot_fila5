@@ -25,7 +25,7 @@ test('view path action works', function (): void {
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
         public function execute(string $namespace): string
         {
-            return $namespace === 'test_ns' ? '/view/path' : '';
+            return 'test_ns' === $namespace ? '/view/path' : '';
         }
     };
 
@@ -44,7 +44,7 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-            return $module === 'test_module' ? '/module/path/' : '';
+            return 'test_module' === $module ? '/module/path/' : '';
         },
     ]);
 

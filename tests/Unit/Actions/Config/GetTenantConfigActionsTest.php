@@ -26,7 +26,9 @@ describe('Get Tenant Config Actions', function (): void {
 
         // Replace GetTenantFilePathAction with a spy that returns the temp path
         $getTenantFilePathAction = new class($tempPath) extends GetTenantFilePathAction {
-            public function __construct(private string $tempPath) {}
+            public function __construct(private string $tempPath)
+            {
+            }
 
             public function execute(string $configName): string
             {
