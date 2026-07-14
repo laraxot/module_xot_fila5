@@ -177,3 +177,4 @@ audit-coverage/
 .devcontainer/
 .vscode/
 .claude-audit/
+docs/assets/
