@@ -7,12 +7,11 @@ declare(strict_types=1);
  * This file provides the function signature for static analysis.
  * At runtime, the actual implementation is in Helper.php.
  */
-
 if (! function_exists('merge_translation_files')) {
     /**
      * Merge multiple PHP translation files into a single array.
      *
-     * @param string $first First translation file path
+     * @param string $first   First translation file path
      * @param string ...$rest Additional translation file paths
      *
      * @return array<string, mixed>
@@ -25,7 +24,7 @@ if (! function_exists('merge_translation_files')) {
             $result = array_replace_recursive($result, (array) require $file);
         }
 
-        /** @phpstan-ignore return.type */
+        /* @phpstan-ignore return.type */
         return $result;
     }
 }
