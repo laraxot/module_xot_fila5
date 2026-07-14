@@ -8,11 +8,7 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\ModuleAction;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 describe('ModuleAction Integration', function () {
-=======
-describe('ModuleService Integration', function () {
->>>>>>> 2353ccee (.)
     beforeEach(function () {
     });
 

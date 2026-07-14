@@ -8,12 +8,6 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
 use Spatie\QueueableAction\QueueableAction;
-<<<<<<< HEAD:app/Actions/ModuleAction.php
-=======
-use stdClass;
-
-// ----------- Requests ----------
->>>>>>> 2353ccee (.):app/Services/ModuleService.php
 
 /**
  * Class ModuleAction.

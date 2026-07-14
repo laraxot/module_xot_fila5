@@ -2,20 +2,13 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Filament\Support\RawJs;
-use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
-=======
->>>>>>> 2353ccee (.)
+
 use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
-<<<<<<< HEAD
-use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
-=======
->>>>>>> 2353ccee (.)
+
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -83,16 +76,6 @@ it('writes JSON and PHP arrays', function (): void {
 
     $jsonAction = new SaveJsonArrayAction();
     $phpAction = new SavePhpArrayAction();
-<<<<<<< HEAD
-
-    Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
-    Assert::assertFileExists($phpFile);
-    Assert::assertStringContainsString('return', file_get_contents($phpFile));
-    Assert::assertTrue($jsonAction->execute(['a' => 1], $jsonFile));
-    Assert::assertFileExists($jsonFile);
-    Assert::assertStringContainsString('"a"', file_get_contents($jsonFile));
-=======
->>>>>>> 2353ccee (.)
 
     Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
     Assert::assertFileExists($phpFile);

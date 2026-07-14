@@ -52,9 +52,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
-    /** @var view-string */
-    /** @phpstan-ignore property.defaultValue */
-    protected string $view = '_params_xot';
+    protected string $view = 'xot::filament.widgets.base';
 
     protected int|string|array $columnSpan = 'full';
 

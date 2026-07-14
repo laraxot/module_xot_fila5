@@ -17,12 +17,14 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\Xot\Models\HasExtraTrait.
  *
+ *
  * @property string             $currency
  * @property float              $price
  * @property string             $price_complete
  * @property int                $qty
  * @property ExtraContract|null $extra
  */
+/** @phpstan-ignore trait.unused */
 trait HasExtraTrait
 {
     /**
