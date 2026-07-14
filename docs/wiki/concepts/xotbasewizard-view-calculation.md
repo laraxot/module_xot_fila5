@@ -1,3 +1,14 @@
+---
+title: "XotBaseWizardWidget View Calculation"
+module: "Xot"
+type: concept
+tags: [xotbasewizard, view, calculation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbasewizard view calculation"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseWizardWidget View Calculation
 
 ## Overview
@@ -54,11 +65,7 @@ class MyWizardWidget extends XotBaseWizardWidget
 {
     // NO $view property - inherited from parent
     
-<<<<<<< HEAD
     public function getWizardSteps(): array
-=======
-    public function getSteps(): array
->>>>>>> 40b96bcd6 (.)
     {
         return [
             Step::make('step1', Step1Form::class),

@@ -1,3 +1,14 @@
+---
+title: "Dashboard Troubleshooting"
+module: "Xot"
+type: concept
+tags: [dashboard, troubleshooting]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dashboard troubleshooting"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Dashboard Troubleshooting
 
 ## Livewire Attribute Error

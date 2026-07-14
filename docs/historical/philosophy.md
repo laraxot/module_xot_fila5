@@ -1,3 +1,14 @@
+---
+title: "Xot Module: Philosophy, Purpose, and Design Principles"
+module: "Xot"
+type: concept
+tags: [philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025

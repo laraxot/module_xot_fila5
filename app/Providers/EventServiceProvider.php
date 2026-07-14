@@ -16,17 +16,7 @@ class EventServiceProvider extends BaseEventServiceProvider
     protected $listen = [];
 
     /**
-     * <<<<<<< HEAD
-     * =======
-     * Indicates if events should be discovered.
-     *
-     * @var bool
-     */
-    protected static $shouldDiscoverEvents = true;
-
-    /**
-     * >>>>>>> origin/dev
-     * Configure the proper event listeners for email verification.
+     *      *      * Configure the proper event listeners for email verification.
      */
     protected function configureEmailVerification(): void
     {

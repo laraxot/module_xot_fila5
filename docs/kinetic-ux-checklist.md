@@ -1,3 +1,14 @@
+---
+title: "kinetic ux checklist (xot)"
+module: "Xot"
+type: concept
+tags: [kinetic, ux, checklist]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "kinetic ux checklist"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # kinetic ux checklist (xot)
 
 ## scopo

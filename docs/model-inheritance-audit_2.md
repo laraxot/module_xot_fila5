@@ -1,3 +1,14 @@
+---
+title: "Audit Ereditarietà Modelli - Tutti i Moduli"
+module: "Xot"
+type: concept
+tags: [model, inheritance, audit, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model inheritance audit 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit
@@ -147,13 +158,6 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-#### Quaeris
-=======
-#### <nome progetto>
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
@@ -211,13 +215,6 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- ❌ Quaeris
-=======
-- ❌ <nome progetto>
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 
 **Totale**: 4/13 moduli (31%)
@@ -234,15 +231,6 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-| <nome progetto> | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| <nome progetto> | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
 
@@ -259,13 +247,6 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-2. **<nome progetto>** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 
 ### 🟡 Media Priorità
@@ -286,13 +267,6 @@ Per verificare tutti i moduli:
 
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules
-=======
-cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 
 for module in */; do
@@ -308,13 +282,6 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-3. ⏳ **<nome progetto>** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
@@ -337,13 +304,6 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-- `<nome progetto>/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 

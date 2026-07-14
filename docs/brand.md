@@ -1,3 +1,14 @@
+---
+title: "Filosofia del Brand nel Sistema"
+module: "Xot"
+type: concept
+tags: [brand]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "brand"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # Filosofia del Brand nel Sistema
 

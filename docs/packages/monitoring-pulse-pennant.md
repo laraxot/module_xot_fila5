@@ -1,3 +1,14 @@
+---
+title: "Monitoring e Feature Management - Laravel 12"
+module: "Xot"
+type: concept
+tags: [monitoring, pulse, pennant]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "monitoring pulse pennant"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Monitoring e Feature Management - Laravel 12
 
 L'integrazione di Laravel Pulse e Pennant fornisce strumenti avanzati per il controllo in tempo reale e il rilascio graduale delle funzionalità.

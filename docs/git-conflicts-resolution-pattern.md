@@ -1,3 +1,14 @@
+---
+title: "Git Conflicts Resolution Pattern"
+module: "Xot"
+type: pattern
+tags: [git, conflicts, resolution, pattern]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git conflicts resolution pattern"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Git Conflicts Resolution Pattern
 
 ## Overview

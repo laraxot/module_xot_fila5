@@ -1,3 +1,14 @@
+---
+title: "Regole per i file di traduzione in Laraxot PTVX"
+module: "Xot"
+type: rule
+tags: [translation, rules, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation rules 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole per i file di traduzione in Laraxot PTVX
 
 ## Struttura dei file di traduzione

@@ -1,3 +1,14 @@
+---
+title: "Analisi Funzionamento Script ai_init.sh"
+module: "Xot"
+type: concept
+tags: [ai, init, script, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ai init script analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi Funzionamento Script ai_init.sh
 
 ## Situazione Attuale

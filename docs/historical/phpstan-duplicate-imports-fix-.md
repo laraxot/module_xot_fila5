@@ -1,3 +1,14 @@
+---
+title: "PHPStan Duplicate Imports Fix - 2026-01-05"
+module: "Xot"
+type: concept
+tags: [phpstan, duplicate, imports, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan duplicate imports fix "
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Duplicate Imports Fix - 2026-01-05
 
 ## Analisi Errori PHPStan Modulo Xot

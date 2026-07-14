@@ -1,3 +1,14 @@
+---
+title: "Organizzazione Cartella BashScripts"
+module: "Xot"
+type: concept
+tags: [bashscripts, organization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bashscripts organization"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Organizzazione Cartella BashScripts
 
 ## Regola Fondamentale

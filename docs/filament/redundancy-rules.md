@@ -1,3 +1,14 @@
+---
+title: "Regole Anti-Ridondanza per XotBase Classes"
+module: "Xot"
+type: rule
+tags: [redundancy, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole Anti-Ridondanza per XotBase Classes
 
 ## Principio Fondamentale: DRY (Don't Repeat Yourself)

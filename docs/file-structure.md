@@ -1,3 +1,14 @@
+---
+title: "Laraxot File Structure Philosophy"
+module: "Xot"
+type: concept
+tags: [file, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "file structure"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot File Structure Philosophy
 
 ## Core Principle: Single Source of Truth for Database Files

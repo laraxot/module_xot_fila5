@@ -1,3 +1,14 @@
+---
+title: "Regola Globale: Metodo getTableColumns per Filament Table"
+module: "Xot"
+type: concept
+tags: [filament, table, columns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament table columns"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regola Globale: Metodo getTableColumns per Filament Table
 
 ## Descrizione

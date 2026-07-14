@@ -1,3 +1,14 @@
+---
+title: "Status Quality Tools - Novembre 2025"
+module: "Xot"
+type: concept
+tags: [quality, tools, status, nov2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality tools status nov2025"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Status Quality Tools - Novembre 2025
 
 ## 🎯 Obiettivo

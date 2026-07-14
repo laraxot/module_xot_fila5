@@ -1,3 +1,14 @@
+---
+title: "PDF Actions - Panoramica Tecnica"
+module: "Xot"
+type: concept
+tags: [pdf, actions, overview]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pdf actions overview"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PDF Actions - Panoramica Tecnica
 
 ## 📋 Overview

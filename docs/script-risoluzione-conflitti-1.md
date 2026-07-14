@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
 
 ## SCRIPT CREATI
@@ -200,12 +199,3 @@ La **SUPER MUCCA** 🐄 ha processato tutti i file e risolto ogni conflitto pren
 
 *Script creati il: 2025-09-18*  
 *Poteri della Super Mucca: ATTIVATI* 🐄✨
-=======
----
-module: theme
-topic: script-risoluzione-conflitti-1
-canonical: ../../../Themes/docs/shared-components/SCRIPT_RISOLUZIONE_CONFLITTI.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/SCRIPT_RISOLUZIONE_CONFLITTI.md
->>>>>>> 40b96bcd6 (.)

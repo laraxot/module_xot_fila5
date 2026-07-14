@@ -1,3 +1,14 @@
+---
+title: "Linee Guida per l'Implementazione di getInfolistSchema"
+module: "Xot"
+type: concept
+tags: [infolist, schemalines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "infolist schemalines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # Linee Guida per l'Implementazione di getInfolistSchema
 

@@ -1,3 +1,14 @@
+---
+title: "Conflitti Git Mal Risolti - Pattern e Fix"
+module: "Xot"
+type: concept
+tags: [git, conflicts, mal, risolti]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git conflicts mal risolti"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Conflitti Git Mal Risolti - Pattern e Fix
 
 ## 🎯 Filosofia del Problema

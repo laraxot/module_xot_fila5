@@ -1,3 +1,14 @@
+---
+title: "XotBaseManageRelatedRecords — Reference"
+module: "Xot"
+type: concept
+tags: [xotbase, manage, related, records]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbase manage related records"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseManageRelatedRecords — Reference
 
 `Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords`

@@ -1,3 +1,14 @@
+---
+title: "Xot - Sprint Planning Meeting"
+module: "Xot"
+type: concept
+tags: [sprint, planning, meeting]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sprint planning meeting"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo Core Framework.

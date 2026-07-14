@@ -1,3 +1,14 @@
+---
+title: "Sistema di Prompt per la Documentazione"
+module: "Xot"
+type: concept
+tags: [documentation, prompt, system]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation prompt system"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica

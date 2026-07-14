@@ -1,3 +1,14 @@
+---
+title: "ModelInputContract"
+module: "Xot"
+type: concept
+tags: [model, input, contract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model input contract"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ModelInputContract
 
 ## Descrizione

@@ -1,3 +1,14 @@
+---
+title: "MCP Servers - Module Context"
+module: "Xot"
+type: concept
+tags: [MCP, SERVERS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp servers"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # MCP Servers - Module Context
 
 **Module**: Xot (Base Framework)  

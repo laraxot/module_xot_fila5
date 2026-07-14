@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17"
+module: "Xot"
+type: concept
+tags: [phpstan, level, 10, dry]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level 10 dry kiss analysis 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17
 
 ## Executive Summary
@@ -935,11 +946,7 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 
 ## Related Documentation
 
-<<<<<<< HEAD
 - [DRY/KISS Model Refactoring (2025-10-15)](./dry-kiss-model-refactoring-2025-10-15.md)
-=======
-- [DRY/KISS Model Refactoring (2025-10-15)](./dry-kiss-model-refactoring.md)
->>>>>>> 40b96bcd6 (.)
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)

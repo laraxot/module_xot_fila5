@@ -1,3 +1,14 @@
+---
+title: "Why XotBaseResourceForm Pattern is Superior to Filament Demo Pure-Static Classes"
+module: "Xot"
+type: concept
+tags: [why, xotbaseresourceform, superior]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "why xotbaseresourceform superior"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Why XotBaseResourceForm Pattern is Superior to Filament Demo Pure-Static Classes
 
 **Date:** 2026-05-05
@@ -41,11 +52,7 @@ class TicketForm extends XotBaseResourceForm {
         ];
     }
     
-<<<<<<< HEAD
     public static function getWizardSteps(): array {
-=======
-    public static function getSteps(): array {
->>>>>>> 40b96bcd6 (.)
         return [static::getStepByName('privacy'), ...];
     }
 }
@@ -60,11 +67,7 @@ class TicketForm extends XotBaseResourceForm {
 - Easy to add new languages (it, en, etc.)
 
 ### 2. Wizard-Ready Architecture
-<<<<<<< HEAD
 - `getWizardSteps()` returns `array<int, Step>`
-=======
-- `getSteps()` returns `array<int, Step>`
->>>>>>> 40b96bcd6 (.)
 - `getStepByName()` dynamically resolves steps via `Str::of()` transformation
 - Lang keys auto-generated: `fixcity::ticket-resource.steps.privacy.label`
 - Supports multi-step flows out of the box
@@ -118,11 +121,7 @@ TextEntry::make('review_type')
 
 1. ✅ All Form classes MUST extend `XotBaseResourceForm`
 2. ✅ NO `->label()` or `->tooltip()` in module code
-<<<<<<< HEAD
 3. ✅ Use `getWizardSteps()` + `getStepByName()` for multi-step forms
-=======
-3. ✅ Use `getSteps()` + `getStepByName()` for multi-step forms
->>>>>>> 40b96bcd6 (.)
 4. ✅ Use Infolist entries (`TextEntry`, `ImageEntry`) for summaries
 5. ✅ Use `SafeStringCastAction::cast()` for translation casting
 6. ✅ Use `Get $get` and `Set $set` for dynamic values

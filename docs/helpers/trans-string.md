@@ -1,3 +1,14 @@
+---
+title: "trans_string() - Helper Translation Type-Safe"
+module: "Xot"
+type: concept
+tags: [trans, string]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "trans string"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # trans_string() - Helper Translation Type-Safe
 
 ## Scopo (Purpose)

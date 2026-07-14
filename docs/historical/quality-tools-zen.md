@@ -1,3 +1,14 @@
+---
+title: "Lo Zen degli Strumenti di Qualità PHP - La Grande Unificazione"
+module: "Xot"
+type: concept
+tags: [quality, tools, zen]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality tools zen"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Lo Zen degli Strumenti di Qualità PHP - La Grande Unificazione
 
 **Data**: 2025-01-05

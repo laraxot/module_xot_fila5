@@ -1,3 +1,14 @@
+---
+title: "Xot Module - User Contract Improvements"
+module: "Xot"
+type: concept
+tags: [user, contract, improvements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user contract improvements"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - User Contract Improvements
 
 ## Overview

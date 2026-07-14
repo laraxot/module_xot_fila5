@@ -1,3 +1,14 @@
+---
+title: "Pest Testing - Stato Attuale e Roadmap"
+module: "Xot"
+type: concept
+tags: [pest, testing, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pest testing status"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pest Testing - Stato Attuale e Roadmap
 
 **Data**: 9 Gennaio 2026  

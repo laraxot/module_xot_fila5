@@ -1,3 +1,14 @@
+---
+title: "PHPStan Analysis Report - All Modules"
+module: "Xot"
+type: concept
+tags: [phpstan, analysis, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan analysis 4"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Analysis Report - All Modules
 
 **Date**: 2025-12-16
@@ -56,11 +67,7 @@ Possibly invalid array key type mixed
 
 **Fix Complexity**: ⭐⭐ (Medium - Requires enum refactoring)
 
-<<<<<<< HEAD
 **See**: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
-=======
-**See**: `Modules/Geo/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
 
 ---
 
@@ -86,11 +93,7 @@ Possibly invalid array key type mixed
 
 **Fix Complexity**: ⭐⭐ (Medium - Requires namespace fixes and interface updates)
 
-<<<<<<< HEAD
 **See**: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
-=======
-**See**: `Modules/Cms/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
 
 ---
 
@@ -114,11 +117,7 @@ public function snapshots()    // ❌ No return type
 
 **Fix Complexity**: ⭐ (Very Easy - Just add `: HasMany` return types)
 
-<<<<<<< HEAD
 **See**: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
-=======
-**See**: `Modules/Activity/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
 
 ---
 
@@ -161,11 +160,7 @@ public static function getModuleName(): string
 }
 ```
 
-<<<<<<< HEAD
 **See**: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
-=======
-**See**: `Modules/Xot/docs/phpstan-transtrait-errors.md`
->>>>>>> 40b96bcd6 (.)
 
 ---
 
@@ -267,17 +262,10 @@ jobs:
 
 ### Module-Specific Documentation
 
-<<<<<<< HEAD
 - [Geo Module Errors](../../Geo/docs/phpstan-errors-2025-12-16.md)
 - [Cms Module Errors](../../Cms/docs/phpstan-errors-2025-12-16.md)
 - [Activity Module Errors](../../Activity/docs/phpstan-errors-2025-12-16.md)
 - [Xot Module TransTrait Errors](phpstan-transtrait-errors-2025-12-16.md)
-=======
-- [Geo Module Errors](../../Geo/docs/phpstan-errors.md)
-- [Cms Module Errors](../../Cms/docs/phpstan-errors.md)
-- [Activity Module Errors](../../Activity/docs/phpstan-errors.md)
-- [Xot Module TransTrait Errors](phpstan-transtrait-errors.md)
->>>>>>> 40b96bcd6 (.)
 
 ### PHPStan Documentation
 

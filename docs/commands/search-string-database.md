@@ -1,3 +1,14 @@
+---
+title: "SearchStringInDatabaseCommand"
+module: "Xot"
+type: concept
+tags: [search, string, database]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "search string database"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # SearchStringInDatabaseCommand
 
 ## Descrizione

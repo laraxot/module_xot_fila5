@@ -1,3 +1,14 @@
+---
+title: "Fix PHPStan Modelli - Generics e Tipizzazione Completa"
+module: "Xot"
+type: concept
+tags: [fixes, models, generics, phpstan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fixes models generics phpstan"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27

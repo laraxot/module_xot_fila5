@@ -1,3 +1,14 @@
+---
+title: "Task: Aumentare Copertura Test - Xot"
+module: "Xot"
+type: concept
+tags: [task, aumentare, copertura, test]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "task aumentare copertura test"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Aumentare Copertura Test - Xot
 
 **Modulo**: Xot

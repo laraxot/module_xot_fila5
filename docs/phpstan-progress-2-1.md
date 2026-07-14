@@ -1,3 +1,14 @@
+---
+title: "PHPStan Progress Report - 2025-10-13"
+module: "Xot"
+type: concept
+tags: [phpstan, progress, 2, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan progress 2 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary
@@ -29,21 +40,13 @@
    - Enhanced Tenant model PHPDoc
    - Fixed Pest.php configuration
    - Fixed BaseModelTest
-<<<<<<< HEAD
    - **Status**: Documented in `Modules/Tenant/docs/phpstan-fixes-2025-10-13.md`
-=======
-   - **Status**: Documented in `Modules/Tenant/docs/phpstan-fixes.md`
->>>>>>> 40b96bcd6 (.)
 
 2. **Gdpr** - 57 → 18 errors (68% reduction, 39 fixed) 📊
    - Enhanced Consent model with missing properties
    - Added user() relationship
    - Fixed Pest.php expect extension
-<<<<<<< HEAD
    - **Status**: Documented in `Modules/Gdpr/docs/phpstan-fixes-2025-10-13.md`
-=======
-   - **Status**: Documented in `Modules/Gdpr/docs/phpstan-fixes.md`
->>>>>>> 40b96bcd6 (.)
 
 ### ⏳ Pending Modules (by priority)
 1. Media - 140 errors
@@ -292,17 +295,10 @@ Based on current pace:
 
 ### Documentation Created
 1. `Modules/Xot/docs/documentation-conventions.md` - Naming conventions (PHP vs .md files)
-<<<<<<< HEAD
 2. `Modules/Xot/docs/phpstan-progress-2025-10-13.md` - This comprehensive report
 3. `Modules/Tenant/docs/phpstan-fixes-2025-10-13.md` - Tenant-specific fixes
 4. `Modules/Tenant/tests/Feature/README.md` - Skipped test explanation
 5. `Modules/Gdpr/docs/phpstan-fixes-2025-10-13.md` - Gdpr-specific fixes
-=======
-2. `Modules/Xot/docs/phpstan-progress.md` - This comprehensive report
-3. `Modules/Tenant/docs/phpstan-fixes.md` - Tenant-specific fixes
-4. `Modules/Tenant/tests/Feature/README.md` - Skipped test explanation
-5. `Modules/Gdpr/docs/phpstan-fixes.md` - Gdpr-specific fixes
->>>>>>> 40b96bcd6 (.)
 
 ### Challenges Encountered
 1. **Linter Interference**: Auto-application of `@phpstan-ignore-line` conflicts with project policy

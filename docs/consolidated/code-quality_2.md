@@ -1,3 +1,14 @@
+---
+title: "Code Quality Guidelines for Laravel Modules"
+module: "Xot"
+type: concept
+tags: [code, quality, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview
@@ -39,7 +50,6 @@ This document outlines the best practices for maintaining high code quality with
 ### 5. Dependency Injection
 - Use dependency injection to avoid direct instantiation of dependencies, promoting testability and flexibility.
 
-<<<<<<< HEAD
 
 
 
@@ -110,109 +120,19 @@ This document outlines the best practices for maintaining high code quality with
 
 
 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 50d6b63f (.)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 5a14301c (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
 >>>>>>> 17684f52 (.)
-=======
->>>>>>> 5a14301c (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 5a14301c (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 50d6b63f (.)
->>>>>>> 17684f52 (.)
-=======
->>>>>>> 88e35986 (.)
-=======
->>>>>>> e0b8ebe3 (.)
-=======
->>>>>>> cc52d333 (.)
-=======
->>>>>>> 90d386aa (.)
 =======
 >>>>>>> 3eee6f79 (.)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5a14301c (.)
 =======
 >>>>>>> 399f46d3 (.)
 =======
 >>>>>>> 17684f52 (.)
-<<<<<<< HEAD
 >>>>>>> ce6fc085 (.)
-=======
-=======
->>>>>>> 88e35986 (.)
-<<<<<<< HEAD
 >>>>>>> 2bad128c (.)
-=======
-=======
->>>>>>> e0b8ebe3 (.)
-<<<<<<< HEAD
 >>>>>>> 358ba79a7 (.)
-=======
-=======
->>>>>>> cc52d333 (.)
-<<<<<<< HEAD
 >>>>>>> f8f76a284 (.)
-=======
-=======
->>>>>>> 90d386aa (.)
-<<<<<<< HEAD
 >>>>>>> 5e6e0d054 (.)
-=======
-=======
->>>>>>> 3eee6f79 (.)
-<<<<<<< HEAD
 >>>>>>> 0117b849c (.)
-=======
-=======
->>>>>>> 5a14301c (.)
 =======
 >>>>>>> 399f46d3 (.)
 >>>>>>> 50d6b63f (.)
@@ -232,7 +152,6 @@ This document outlines the best practices for maintaining high code quality with
 - [fix_docs_case](../../../../../bashscripts/project_docs/docs/fix_docs_case.md) - Standardizzazione automatica dei nomi file nella documentazione
 - Eseguire gli script di automazione regolarmente per mantenere la coerenza del codice
 
-<<<<<<< HEAD
 
 
 
@@ -302,36 +221,6 @@ This document outlines the best practices for maintaining high code quality with
 
 
 
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 50d6b63f (.)
 >>>>>>> 5a14301c (.)
 =======
 >>>>>>> 399f46d3 (.)
@@ -346,9 +235,6 @@ This document outlines the best practices for maintaining high code quality with
 =======
 >>>>>>> 399f46d3 (.)
 =======
-<<<<<<< HEAD
-=======
->>>>>>> 5a14301c (.)
 =======
 >>>>>>> 399f46d3 (.)
 =======
@@ -364,44 +250,16 @@ This document outlines the best practices for maintaining high code quality with
 >>>>>>> 90d386aa (.)
 =======
 >>>>>>> 3eee6f79 (.)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5a14301c (.)
 =======
 >>>>>>> 399f46d3 (.)
 =======
 >>>>>>> 17684f52 (.)
-<<<<<<< HEAD
 >>>>>>> ce6fc085 (.)
-=======
-=======
->>>>>>> 88e35986 (.)
-<<<<<<< HEAD
 >>>>>>> 2bad128c (.)
-=======
-=======
->>>>>>> e0b8ebe3 (.)
-<<<<<<< HEAD
 >>>>>>> 358ba79a7 (.)
-=======
-=======
->>>>>>> cc52d333 (.)
-<<<<<<< HEAD
 >>>>>>> f8f76a284 (.)
-=======
-=======
->>>>>>> 90d386aa (.)
-<<<<<<< HEAD
 >>>>>>> 5e6e0d054 (.)
-=======
-=======
->>>>>>> 3eee6f79 (.)
-<<<<<<< HEAD
 >>>>>>> 0117b849c (.)
-=======
-=======
->>>>>>> 5a14301c (.)
 =======
 >>>>>>> 399f46d3 (.)
 >>>>>>> laraxot/develop

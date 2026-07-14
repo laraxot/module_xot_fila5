@@ -1,3 +1,14 @@
+---
+title: "Risoluzione conflitto XotBaseRouteServiceProvider.php"
+module: "Xot"
+type: concept
+tags: [xotbaserouteserviceprovider, conflict, resolution, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbaserouteserviceprovider conflict resolution 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione conflitto XotBaseRouteServiceProvider.php
 
 ## Problema

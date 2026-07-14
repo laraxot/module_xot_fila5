@@ -1,3 +1,14 @@
+---
+title: "Best Practices Progetto Laraxot PTVX - 2025"
+module: "Xot"
+type: concept
+tags: [project, best, practices, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "project best practices 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Best Practices Progetto Laraxot PTVX - 2025
 
 > **Documento Master** - Regole fondamentali aggiornate dopo risoluzione massiva merge conflicts
@@ -112,11 +123,7 @@ architecture-overview.md
 # ❌ SBAGLIATO
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
-<<<<<<< HEAD
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
-=======
-analysis.md      # date in name (use CHANGELOG.md)
->>>>>>> 40b96bcd6 (.)
 ```
 
 ### 8. DRY Principle
@@ -182,9 +189,6 @@ if (!$condition) {
 }
 
 // ❌ LASCIARE MARKER GIT
-<<<<<<< HEAD
-=======
->>>>>>> commit-hash
 =======
 >>>>>>> 40b96bcd6 (.)
 ```

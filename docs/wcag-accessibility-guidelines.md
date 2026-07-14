@@ -1,3 +1,14 @@
+---
+title: "WCAG Accessibility Guidelines"
+module: "Xot"
+type: how-to
+tags: [wcag, accessibility, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "wcag accessibility guidelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # WCAG Accessibility Guidelines
 
 ## Overview

@@ -1,3 +1,14 @@
+---
+title: "Implementation Summary: Filament Extension Rules & PHPStan Return Type Fixes"
+module: "Xot"
+type: concept
+tags: [implementation, filament, phpstanes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "implementation filament phpstanes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Implementation Summary: Filament Extension Rules & PHPStan Return Type Fixes
 
 **Date**: [DATE]

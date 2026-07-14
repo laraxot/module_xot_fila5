@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Asana MCP Integration Guide"
+module: "Xot"
+type: concept
+tags: [mcp, asana, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp asana integration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Asana MCP Integration Guide
 
 **Versione**: 1.0.0

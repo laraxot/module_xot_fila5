@@ -1,3 +1,14 @@
+---
+title: "PHPStan Documentation - Completion Summary"
+module: "Xot"
+type: concept
+tags: [phpstan, documentation, complete, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan documentation complete 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Documentation - Completion Summary
 
 **Date**: 2025-12-16
@@ -11,22 +22,14 @@
 ### 1. Module-Specific Error Documentation
 
 #### ✅ **Geo Module** (~50+ errors)
-<<<<<<< HEAD
 **File**: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
-=======
-**File**: `Modules/Geo/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
 - ~50+ errors in AddressItemEnum.php
 - Undefined enum constants
 - Mixed type issues
 - **Priority**: P0 - Critical
 
 #### ✅ **Cms Module** (~15 errors)
-<<<<<<< HEAD
 **File**: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
-=======
-**File**: `Modules/Cms/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
 - HasBlocks.php: Wrong DataCollection usage
 - Section.php: Wrong BlockData namespace
 - VerifyComponent.php: Missing UserContract methods
@@ -34,21 +37,13 @@
 - **Priority**: P0 - Critical
 
 #### ✅ **Activity Module** (2 errors)
-<<<<<<< HEAD
 **File**: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
-=======
-**File**: `Modules/Activity/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
 - HasEvents.php: Missing return types on relationship methods
 - Easy fix: Just add `: HasMany` return types
 - **Priority**: P2 - Medium
 
 #### ✅ **Xot Module** (~10 errors)
-<<<<<<< HEAD
 **File**: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
-=======
-**File**: `Modules/Xot/docs/phpstan-transtrait-errors.md`
->>>>>>> 40b96bcd6 (.)
 - TransTrait.php: Calls undefined `getModuleName()` in some contexts
 - Affects XotBaseBlock, XotBaseCluster
 - **Priority**: P2 - Medium
@@ -57,11 +52,7 @@
 
 ### 2. Comprehensive Summary Report
 
-<<<<<<< HEAD
 **File**: `Modules/Xot/docs/phpstan-analysis-2025-12-16.md`
-=======
-**File**: `Modules/Xot/docs/phpstan-analysis.md`
->>>>>>> 40b96bcd6 (.)
 
 **Contents:**
 - Executive summary of all 169 errors across 3,738 files
@@ -122,20 +113,12 @@ All created documentation includes:
 **Target**: Reduce errors from 169 to <100
 
 1. **Geo/AddressItemEnum.php** (~50 errors)
-<<<<<<< HEAD
    - Read: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
-=======
-   - Read: `Modules/Geo/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
    - Fix: Verify all enum cases are defined
    - Test: `./vendor/bin/phpstan analyse Modules/Geo`
 
 2. **Cms Multiple Files** (~15 errors)
-<<<<<<< HEAD
    - Read: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
-=======
-   - Read: `Modules/Cms/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
    - Fix: DataCollection → BlockData::collection(), namespaces
    - Test: `./vendor/bin/phpstan analyse Modules/Cms`
 
@@ -143,20 +126,12 @@ All created documentation includes:
 **Target**: Reduce errors to <50
 
 3. **Activity/HasEvents.php** (2 errors)
-<<<<<<< HEAD
    - Read: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
-=======
-   - Read: `Modules/Activity/docs/phpstan-errors.md`
->>>>>>> 40b96bcd6 (.)
    - Fix: Add `: HasMany` return types
    - Test: `./vendor/bin/phpstan analyse Modules/Activity`
 
 4. **Xot/TransTrait.php** (~10 errors)
-<<<<<<< HEAD
    - Read: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
-=======
-   - Read: `Modules/Xot/docs/phpstan-transtrait-errors.md`
->>>>>>> 40b96bcd6 (.)
    - Fix: Add `getModuleName()` to XotBaseBlock and XotBaseCluster
    - Test: `./vendor/bin/phpstan analyse Modules/Xot`
 
@@ -174,7 +149,6 @@ All created documentation includes:
 ```
 Modules/
 ├── Geo/docs/
-<<<<<<< HEAD
 │   └── phpstan-errors-2025-12-16.md                    ← ~50+ errors documented
 ├── Cms/docs/
 │   └── phpstan-errors-2025-12-16.md                    ← ~15 errors documented
@@ -184,17 +158,6 @@ Modules/
     ├── phpstan-analysis-2025-12-16.md                  ← Comprehensive summary
     ├── phpstan-transtrait-errors-2025-12-16.md         ← ~10 errors documented
     └── phpstan-documentation-complete-2025-12-16.md    ← This file
-=======
-│   └── phpstan-errors.md                    ← ~50+ errors documented
-├── Cms/docs/
-│   └── phpstan-errors.md                    ← ~15 errors documented
-├── Activity/docs/
-│   └── phpstan-errors.md                    ← 2 errors documented
-└── Xot/docs/
-    ├── phpstan-analysis.md                  ← Comprehensive summary
-    ├── phpstan-transtrait-errors.md         ← ~10 errors documented
-    └── phpstan-documentation-complete.md    ← This file
->>>>>>> 40b96bcd6 (.)
 ```
 
 ---

@@ -1,3 +1,14 @@
+---
+title: "📚 **Indice Documentazione Modulo Xot (Core Engine)**"
+module: "Xot"
+type: concept
+tags: [00, index, v2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "00 index v2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 📚 **Indice Documentazione Modulo Xot (Core Engine)**
 
 **Last Update**: 5 Febbraio 2026

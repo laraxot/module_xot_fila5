@@ -1,3 +1,14 @@
+---
+title: "Aggiornamento Importante: ai_init.sh Script"
+module: "Xot"
+type: concept
+tags: [ai, init, script, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ai init script fix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Aggiornamento Importante: ai_init.sh Script
 
 ## Problema Risolto

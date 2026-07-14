@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Riassunto Filosofia Laraxot - Gennaio 2026
 
 **Data**: 8 Gennaio 2026
@@ -190,12 +189,3 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 **Ultimo Aggiornamento**: 8 Gennaio 2026
 **Stato**: Documento Vivo - Aggiornare con nuove scoperte
 **Principio**: La documentazione è la memoria viva del sistema
-=======
----
-module: theme
-topic: laraxot-philosophy-summary-1
-canonical: ../../../Themes/docs/shared-components/laraxot-philosophy-summary-.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/laraxot-philosophy-summary-.md
->>>>>>> 40b96bcd6 (.)

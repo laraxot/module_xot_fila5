@@ -1,3 +1,14 @@
+---
+title: "Regola Post-Edit: Verifica Qualità Obbligatoria"
+module: "Xot"
+type: concept
+tags: [post, edit, quality, verification]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "post edit quality verification"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regola Post-Edit: Verifica Qualità Obbligatoria
 
 ## Regola Fondamentale

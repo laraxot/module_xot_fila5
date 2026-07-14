@@ -1,3 +1,14 @@
+---
+title: "UI/UX Design Guidelines"
+module: "Xot"
+type: how-to
+tags: [ui, ux, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ui ux guidelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # UI/UX Design Guidelines
 
 ## Overview

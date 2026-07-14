@@ -1,3 +1,14 @@
+---
+title: "StreamDownloadPdfAction Documentation"
+module: "Xot"
+type: concept
+tags: [pdf, streamownload, action]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pdf streamownload action"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # StreamDownloadPdfAction Documentation
 
 ## Overview

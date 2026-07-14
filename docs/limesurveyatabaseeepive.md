@@ -1,3 +1,14 @@
+---
+title: "Limesurvey Survey Data Analysis - Database Deep Dive"
+module: "Xot"
+type: concept
+tags: [limesurveyatabaseeepive]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "limesurveyatabaseeepive"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Limesurvey Survey Data Analysis - Database Deep Dive
 
 ## Database Connections Overview
@@ -25,17 +36,10 @@ The system utilizes three main database connections:
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to healthcare_app functionality
 =======
-<<<<<<< HEAD
 ### 2. ExternalProject Database (`<nome progetto>` connection) 
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to ExternalProject functionality
-=======
-### 2. ModuloEsempio Database (`ptvx` connection) 
-- **Purpose**: Application-specific data including survey mappings
-- **Key tables**:
-  - `survey_pdfs` - Links Limesurvey surveys to ModuloEsempio functionality
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
 >>>>>>> .merge_file_8KalrD
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings

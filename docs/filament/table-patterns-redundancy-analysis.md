@@ -1,3 +1,14 @@
+---
+title: "Table Resources: Pattern Redundancy Analysis"
+module: "Xot"
+type: pattern
+tags: [table, patterns, redundancy, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "table patterns redundancy analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Table Resources: Pattern Redundancy Analysis
 
 **Data:** 2026-05-26  

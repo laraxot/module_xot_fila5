@@ -1,3 +1,14 @@
+---
+title: "Guida upgrade Filament 5 - Modulo Xot"
+module: "Xot"
+type: how-to
+tags: [filament, 5, upgrade, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 5 upgrade guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Guida upgrade Filament 5 - Modulo Xot
 
 **Riferimento ufficiale:** <https://filamentphp.com/docs/5.x/upgrade-guide>

@@ -1,3 +1,14 @@
+---
+title: "Analisi PHPStan - 17 Dicembre 2025"
+module: "Xot"
+type: concept
+tags: [phpstan, analysis, 6]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan analysis 6"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi PHPStan - 17 Dicembre 2025
 
 ## Riepilogo

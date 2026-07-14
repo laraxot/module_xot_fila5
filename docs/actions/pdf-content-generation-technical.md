@@ -1,3 +1,14 @@
+---
+title: "GetPdfContentByRecordAction - Documentazione Tecnica"
+module: "Xot"
+type: concept
+tags: [pdf, content, generation, technical]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pdf content generation technical"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # GetPdfContentByRecordAction - Documentazione Tecnica
 
 ## 📋 Overview

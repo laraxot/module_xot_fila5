@@ -1,3 +1,14 @@
+---
+title: "Analisi degli Errori PHPStan (Livello 9)"
+module: "Xot"
+type: concept
+tags: [phpstan, errors, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan errors analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi degli Errori PHPStan (Livello 9)
 
 ## Panoramica degli Errori

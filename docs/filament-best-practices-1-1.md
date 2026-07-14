@@ -1,3 +1,14 @@
+---
+title: "Best Practices per Risorse Filament in Laraxot"
+module: "Xot"
+type: concept
+tags: [filament, best, practices, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament best practices 1 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Best Practices per Risorse Filament in Laraxot
 
 Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.
@@ -150,12 +161,6 @@ use Modules\SaluteMo\Filament\Resources\ReportResource;
 namespace Modules\SaluteMo\Filament\Resources\ReportResource\Pages;
 
 use Modules\SaluteMo\Filament\Resources\ReportResource;
-<<<<<<< HEAD
-=======
-namespace Modules\SaluteMo\Filament\Resources\ReportResource\Pages;
-
-use Modules\SaluteMo\Filament\Resources\ReportResource;
->>>>>>> 472bd9dc (.)
 =======
 =======
 namespace Modules\SaluteMo\Filament\Resources\ReportResource\Pages;
@@ -394,12 +399,6 @@ use Modules\SaluteMo\Filament\Resources\AppointmentResource;
 namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
 
 use Modules\SaluteMo\Filament\Resources\AppointmentResource;
-<<<<<<< HEAD
-=======
-namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
-
-use Modules\SaluteMo\Filament\Resources\AppointmentResource;
->>>>>>> 472bd9dc (.)
 =======
 =======
 namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
@@ -574,12 +573,6 @@ use Modules\SaluteMo\Filament\Resources\AppointmentResource;
 namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
 
 use Modules\SaluteMo\Filament\Resources\AppointmentResource;
-<<<<<<< HEAD
-=======
-namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
-
-use Modules\SaluteMo\Filament\Resources\AppointmentResource;
->>>>>>> 472bd9dc (.)
 =======
 =======
 namespace Modules\SaluteMo\Filament\Resources\AppointmentResource\Pages;
@@ -674,9 +667,6 @@ class CreateAppointment extends XotBaseCreateRecord
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
->>>>>>> ab5b3a4f (.)
 =======
 >>>>>>> 88e745db5 (.)
 =======
@@ -696,9 +686,6 @@ namespace Modules\<nome modulo>\Filament\Resources;
 use Modules\<nome modulo>\Filament\Resources\ReportResource\Pages;
 use Modules\<nome progetto>\Models\Report;
 use Modules\<nome progetto>\Models\Report;
-<<<<<<< HEAD
-=======
->>>>>>> 5a14301c (.)
 =======
 >>>>>>> d86d643a (.)
 =======
@@ -735,9 +722,6 @@ namespace Modules\SaluteMo\Filament\Resources;
 use Modules\SaluteMo\Filament\Resources\ReportResource\Pages;
 use Modules\<nome progetto>\Models\Report;
 use Modules\SaluteOra\Models\Report;
-<<<<<<< HEAD
-=======
->>>>>>> ab5b3a4f (.)
 use Modules\<nome modulo>\Models\Report;
 =======
 =======
@@ -765,10 +749,6 @@ use Modules\<nome modulo>\Models\Report;
 use Modules\<nome modulo>\Models\Report;
 use Modules\<nome modulo>\Models\Report;
 use Modules\SaluteOra\Models\Report;
-<<<<<<< HEAD
-=======
-use Modules\<nome modulo>\Models\Report;
->>>>>>> 472bd9dc (.)
 =======
 =======
 use Modules\<nome modulo>\Models\Report;

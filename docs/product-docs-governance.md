@@ -1,3 +1,14 @@
+---
+title: "Product Docs Governance"
+module: "Xot"
+type: concept
+tags: [product, docs, governance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "product docs governance"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Product Docs Governance
 
 Regola operativa per questo repository:

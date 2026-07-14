@@ -1,3 +1,14 @@
+---
+title: "Standalone Pages vs Resource Pages in Filament 4"
+module: "Xot"
+type: concept
+tags: [standalone, vs, resource, pages]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "standalone vs resource pages"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Standalone Pages vs Resource Pages in Filament 4
 
 ## Business Logic

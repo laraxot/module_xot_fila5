@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi
@@ -217,12 +216,3 @@ vendor/bin/phpstan analyse --level=8 --error-format=github
 - [Assert Best Practices](https://github.com/webmozarts/assert)
 - [PHP Type System](https://www.php.net/manual/en/language.types.php)
 - [Generics in PHP](https://phpstan.org/blog/generics-in-php-using-phpdocs)
-=======
----
-module: theme
-topic: phpstan-level
-canonical: ../../../Themes/docs/shared-components/phpstan-level-10.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level-10.md
->>>>>>> 40b96bcd6 (.)

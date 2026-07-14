@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitto in MediaConvertResource"
+module: "Xot"
+type: concept
+tags: [media, convert, resource, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media convert resource conflict"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Conflitto in MediaConvertResource
 
 ## Panoramica

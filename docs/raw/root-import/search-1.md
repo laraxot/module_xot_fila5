@@ -1,13 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> a01602c7 (.)
-=======
-
-
->>>>>>> 64619e34 (.)
+---
+title: "_search"
+module: "Xot"
+type: concept
+tags: [search, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "search 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # _search
 
 <!-- Contenuto migrato da _docs/_search.txt -->

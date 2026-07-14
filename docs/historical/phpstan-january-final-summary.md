@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 - Riepilogo Finale Gennaio 2026"
+module: "Xot"
+type: concept
+tags: [phpstan, january, final, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan january final summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 - Riepilogo Finale Gennaio 2026
 
 **Data**: 2026-01-02

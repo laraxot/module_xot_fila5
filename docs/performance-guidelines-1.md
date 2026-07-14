@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose
@@ -442,12 +441,3 @@ public function processData(): void
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 
 
-=======
----
-module: theme
-topic: performance-guidelines-1
-canonical: ../../../Themes/docs/shared-components/PERFORMANCE_GUIDELINES.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/PERFORMANCE_GUIDELINES.md
->>>>>>> 40b96bcd6 (.)

@@ -1,3 +1,14 @@
+---
+title: "Trait HasTeams"
+module: "Xot"
+type: concept
+tags: [has, teams]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "has teams"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Trait HasTeams
 
 ## Descrizione

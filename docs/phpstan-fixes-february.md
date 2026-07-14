@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes - 2026-02-26"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, february]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes february"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fixes - 2026-02-26
 
 Documentazione completa dei fix PHPStan applicati durante l'analisi di tutti i moduli.

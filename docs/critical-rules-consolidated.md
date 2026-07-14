@@ -1,3 +1,14 @@
+---
+title: "🎯 CRITICAL RULES CONSOLIDATED - Laraxot Architecture"
+module: "Xot"
+type: rule
+tags: [critical, rules, consolidated]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "critical rules consolidated"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🎯 CRITICAL RULES CONSOLIDATED - Laraxot Architecture
 
 ## 🚨 REGOLE ASSOLUTE DA RISPETTARE

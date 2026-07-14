@@ -1,3 +1,14 @@
+---
+title: "Ponytail Docs Lifecycle"
+module: "Xot"
+type: concept
+tags: [ponytail, docs, lifecycle]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ponytail docs lifecycle"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Ponytail Docs Lifecycle
 
 Xot is the shared base module, so its docs pattern should be the boring default for other modules.

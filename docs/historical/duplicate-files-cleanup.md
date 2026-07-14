@@ -1,3 +1,14 @@
+---
+title: "Pulizia File Duplicati Case-Insensitive"
+module: "Xot"
+type: concept
+tags: [duplicate, files, cleanup]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "duplicate files cleanup"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pulizia File Duplicati Case-Insensitive
 
 ## 📋 File Duplicati Identificati

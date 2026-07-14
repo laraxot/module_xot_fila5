@@ -1,3 +1,14 @@
+---
+title: "IDE Helper Models Governance"
+module: "Xot"
+type: concept
+tags: [ide, helper, models, governance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ide helper models governance"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # IDE Helper Models Governance
 
 ## Regola locale

@@ -1,3 +1,14 @@
+---
+title: "WebhookErrorFormatter"
+module: "Xot"
+type: concept
+tags: [webhook, error, formatter]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "webhook error formatter"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # WebhookErrorFormatter
 
 ## Descrizione

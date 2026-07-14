@@ -1,3 +1,14 @@
+---
+title: "PHPStan Roadmap - Xot Module"
+module: "Xot"
+type: concept
+tags: [phpstan, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan roadmap"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Roadmap - Xot Module
 
 > **Date**: 2026-01-14

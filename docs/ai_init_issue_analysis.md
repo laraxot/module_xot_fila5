@@ -1,3 +1,14 @@
+---
+title: "Aggiornamento Documentazione - Problema con ai_init.sh"
+module: "Xot"
+type: concept
+tags: [ai, init, issue, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ai init issue analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
 ## Problema Identificato

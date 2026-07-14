@@ -1,3 +1,14 @@
+---
+title: "Spatie Permission Team Boundary"
+module: "Xot"
+type: concept
+tags: [spatie, permission, team, boundary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "spatie permission team boundary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Spatie Permission Team Boundary
 
 ## Rule

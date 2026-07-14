@@ -1,3 +1,14 @@
+---
+title: "Best Practices per Proprietà Modelli Eloquent - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [eloquent, properties, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "eloquent properties best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)

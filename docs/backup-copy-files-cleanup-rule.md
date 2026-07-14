@@ -1,3 +1,14 @@
+---
+title: "Backup and Copy Files Cleanup Rule"
+module: "Xot"
+type: rule
+tags: [backup, copy, files, cleanup]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "backup copy files cleanup rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Backup and Copy Files Cleanup Rule
 
 > **Rule**: Backup and copy files MUST NOT exist in the repository.

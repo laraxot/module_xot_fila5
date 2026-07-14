@@ -1,3 +1,14 @@
+---
+title: "Metodi duplicati — Xot"
+module: "Xot"
+type: concept
+tags: [duplicate, methods]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "duplicate methods"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Metodi duplicati — Xot
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

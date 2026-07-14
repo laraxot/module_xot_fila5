@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale
@@ -81,9 +80,7 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 14. **EditProfile.php**
     - Marker di merge conflict GIT non risolti:
       ```
-      =======
-      >>>>>>> 041533e (.)
-      =======
+            =======
       >>>>>>> 00a34d0 (.)
       ```
 

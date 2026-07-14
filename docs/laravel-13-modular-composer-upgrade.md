@@ -1,3 +1,14 @@
+---
+title: "Laravel 13 modular Composer upgrade"
+module: "Xot"
+type: concept
+tags: [laravel, 13, modular, composer]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel 13 modular composer upgrade"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laravel 13 modular Composer upgrade
 
 ## Purpose

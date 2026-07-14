@@ -1,3 +1,14 @@
+---
+title: "Convenzioni per i Namespace nei Moduli"
+module: "Xot"
+type: concept
+tags: [namespace, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "namespace conventions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Convenzioni per i Namespace nei Moduli
 
 ## Struttura Base

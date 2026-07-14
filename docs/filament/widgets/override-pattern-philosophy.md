@@ -1,3 +1,14 @@
+---
+title: "Override Pattern — La Filosofia degli Hook Inutili"
+module: "Xot"
+type: pattern
+tags: [override, pattern, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "override pattern philosophy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Override Pattern — La Filosofia degli Hook Inutili
 
 **Status**: Applied — anti-pattern rimosso da XotBaseWizardWidget e CreateTicketWizardWidget  

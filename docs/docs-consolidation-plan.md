@@ -1,3 +1,14 @@
+---
+title: "📋 Piano di Consolidamento Documentazione - Laraxot PTVX"
+module: "Xot"
+type: concept
+tags: [docs, consolidation, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "docs consolidation plan"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 📋 Piano di Consolidamento Documentazione - Laraxot PTVX
 
 ## 🚨 **Violazioni Identificate**

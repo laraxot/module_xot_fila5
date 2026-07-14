@@ -1,3 +1,14 @@
+---
+title: "Workspace File Naming Rule"
+module: "Xot"
+type: rule
+tags: [workspace, file, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "workspace file rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Workspace File Naming Rule
 
 ## Rule

@@ -1,3 +1,14 @@
+---
+title: "User Research: Xot Framework"
+module: "Xot"
+type: concept
+tags: [user, research]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user research"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # User Research: Xot Framework
 
 ## 🔬 Research Goals

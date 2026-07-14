@@ -1,3 +1,14 @@
+---
+title: "Violazioni Architetturali e Correzioni - Pattern XotData"
+module: "Xot"
+type: concept
+tags: [architecture, violations, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture violations and fixes 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**

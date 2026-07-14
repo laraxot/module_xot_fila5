@@ -1,3 +1,14 @@
+---
+title: "Git Conflict Inventory"
+module: "Xot"
+type: concept
+tags: [git, merge, conflict, inventory]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git merge conflict inventory 2026 04 28"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Git Conflict Inventory
 
 - Date: 2026-04-28
@@ -76,8 +87,4 @@
 ## Notes
 
 - Inventory generated from `rg -l "^(<<<<<<<|=======|>>>>>>>)"`.
-<<<<<<< HEAD
 - Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
-=======
-- Use this list as a volatile coordination map; re-open each file before editing because other agents may resolve items in parallel.
->>>>>>> 40b96bcd6 (.)

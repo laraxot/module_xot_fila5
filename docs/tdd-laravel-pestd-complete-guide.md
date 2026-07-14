@@ -1,3 +1,14 @@
+---
+title: "Test-Driven Development (TDD) in Laravel Modules with Pest"
+module: "Xot"
+type: how-to
+tags: [tdd, laravel, pestd, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "tdd laravel pestd complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Test-Driven Development (TDD) in Laravel Modules with Pest
 
 > **CRITICAL RULE**: This document provides the complete TDD workflow for Laravel Modules using Pest PHP. Follow these patterns EXACTLY for 100% test coverage.

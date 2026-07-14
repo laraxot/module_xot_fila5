@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 - Successo Totale (Novembre 2025)"
+module: "Xot"
+type: concept
+tags: [phpstan, level10, success, nov2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 success nov2025"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 - Successo Totale (Novembre 2025)
 
 ## 🎯 Obiettivo Raggiunto

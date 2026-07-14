@@ -1,3 +1,14 @@
+---
+title: "Task: Documentare Actions Framework - Xot"
+module: "Xot"
+type: concept
+tags: [task, documentare, actions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "task documentare actions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Documentare Actions Framework - Xot
 
 **Modulo**: Xot

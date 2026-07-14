@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit
@@ -317,12 +316,3 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../app/Models/XotBaseMorphPivot.php)
-=======
----
-module: theme
-topic: model-inheritance-audit-1
-canonical: ../../../Themes/docs/shared-components/MODEL_INHERITANCE_AUDIT.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/MODEL_INHERITANCE_AUDIT.md
->>>>>>> 40b96bcd6 (.)

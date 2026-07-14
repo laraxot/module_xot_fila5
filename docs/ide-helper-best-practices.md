@@ -1,3 +1,14 @@
+---
+title: "IDE Helper Best Practices - <nome progetto>"
+module: "Xot"
+type: concept
+tags: [ide, helper, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ide helper best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # IDE Helper Best Practices - <nome progetto>
 
 Documentazione completa sull'utilizzo di `barryvdh/laravel-ide-helper` nel progetto <nome progetto>.

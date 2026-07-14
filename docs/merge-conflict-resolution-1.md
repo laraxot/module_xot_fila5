@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Merge Conflicts Massivi - 2025-11-04"
+module: "Xot"
+type: concept
+tags: [merge, conflict, resolution, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "merge conflict resolution 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale
@@ -80,10 +91,7 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 14. **EditProfile.php**
     - Marker di merge conflict GIT non risolti:
       ```
-<<<<<<< HEAD
-      =======
-      >>>>>>> 041533e (.)
-      =======
+            =======
       >>>>>>> 00a34d0 (.)
 =======
 >>>>>>> 40b96bcd6 (.)
@@ -281,8 +289,4 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)
 - [Code Quality Standards](./code-quality-standards.md)
-<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
->>>>>>> 40b96bcd6 (.)

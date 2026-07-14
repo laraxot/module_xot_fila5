@@ -1,3 +1,14 @@
+---
+title: "Correzioni nel Modulo Xot"
+module: "Xot"
+type: concept
+tags: [modulees]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "modulees"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzioni nel Modulo Xot
 
 ## Nuovi Errori PHPStan (Livello 2)

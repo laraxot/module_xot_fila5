@@ -1,3 +1,14 @@
+---
+title: "Filament Table & Infolist Rules"
+module: "Xot"
+type: rule
+tags: [filament, table, infolist, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament table infolist rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Table & Infolist Rules
 
 ## Regole per Table e Infolist in Laraxot

@@ -1,3 +1,14 @@
+---
+title: "Regole per i Prompt"
+module: "Xot"
+type: rule
+tags: [prompt, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "prompt rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole per i Prompt
 
 ## Regola Universale

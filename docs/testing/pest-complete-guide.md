@@ -1,3 +1,14 @@
+---
+title: "Laraxot Pest PHP Testing Guide"
+module: "Xot"
+type: how-to
+tags: [pest, complete, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pest complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Pest PHP Testing Guide
 
 ## Panoramica

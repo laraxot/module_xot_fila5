@@ -1,3 +1,14 @@
+---
+title: "🐃 **Metodologia Super Mucca: AI-Native Edition**"
+module: "Xot"
+type: concept
+tags: [super, mucca, methodology]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "super mucca methodology"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🐃 **Metodologia Super Mucca: AI-Native Edition**
 
 **Ultimo aggiornamento**: 31 Gennaio 2026  

@@ -2,10 +2,10 @@
 title: "Correzioni PHPStan - Modulo Xot"
 module: "Xot"
 type: concept
-tags: [phpstan, fixes, 2025]
+tags: [phpstan, fixes, 2]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan fixes 2025"
+qmd: "phpstan fixes 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---

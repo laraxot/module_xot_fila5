@@ -1,3 +1,14 @@
+---
+title: "DRY & KISS Refactoring - Modelli Base"
+module: "Xot"
+type: concept
+tags: [DRY, KISS, REFACTORING]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dry kiss refactoring"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # DRY & KISS Refactoring - Modelli Base
 
 ## Data: 15 Ottobre 2025

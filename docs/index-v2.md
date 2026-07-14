@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Xot (Core Engine)**
 
 **Last Update**: 5 Febbraio 2026
@@ -39,12 +38,3 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
----
-module: theme
-topic: index-v2
-canonical: ../../../Themes/docs/shared-components/00-index-v2.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/00-index-v2.md
->>>>>>> 40b96bcd6 (.)

@@ -1,3 +1,14 @@
+---
+title: "PHPStan Analysis Report - 2025-12-18"
+module: "Xot"
+type: concept
+tags: [phpstan, analysis, december]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan analysis december"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Analysis Report - 2025-12-18
 
 ## Summary

@@ -1,3 +1,14 @@
+---
+title: "Gap Analysis - Missing Patterns & Documentation"
+module: "Xot"
+type: concept
+tags: [gap, missings]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "gap missings"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Gap Analysis - Missing Patterns & Documentation
 
 ## 🔍 Comprehensive Analysis of Missing Elements

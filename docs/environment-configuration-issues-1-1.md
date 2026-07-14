@@ -1,3 +1,14 @@
+---
+title: "Problemi di Configurazione Variabili d'Ambiente - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [environment, configuration, issues, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "environment configuration issues 1 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap

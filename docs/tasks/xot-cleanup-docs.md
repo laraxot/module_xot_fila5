@@ -1,3 +1,14 @@
+---
+title: "Task: Xot Docs Cleanup"
+module: "Xot"
+type: concept
+tags: [xot, cleanup, docs]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xot cleanup docs"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Xot Docs Cleanup
 
 ## 📋 Obiettivo

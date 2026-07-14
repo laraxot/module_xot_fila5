@@ -1,3 +1,14 @@
+---
+title: "Bootstrap cache stale entries fix"
+module: "Xot"
+type: concept
+tags: [bootstrap, cache, stale, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bootstrap cache stale fix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Bootstrap cache stale entries fix
 
 ## Problem pattern

@@ -1,3 +1,14 @@
+---
+title: "Regole Generali sulle State Machine"
+module: "Xot"
+type: concept
+tags: [state, machine, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "state machine 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole Generali sulle State Machine
 
 ## Transizioni

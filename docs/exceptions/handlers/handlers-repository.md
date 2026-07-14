@@ -1,3 +1,14 @@
+---
+title: "HandlersRepository"
+module: "Xot"
+type: concept
+tags: [handlers, repository]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "handlers repository"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # HandlersRepository
 
 ## Descrizione

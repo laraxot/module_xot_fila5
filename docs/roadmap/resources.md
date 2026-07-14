@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Resources"
+module: "Xot"
+type: concept
+tags: [resources]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resources"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Resources
 
 ## 📋 Table of Contents

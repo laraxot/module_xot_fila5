@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitto in GetViewByClassAction"
+module: "Xot"
+type: concept
+tags: [getviewbyclassaction]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "getviewbyclassaction"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 
 # Risoluzione Conflitto in GetViewByClassAction
 

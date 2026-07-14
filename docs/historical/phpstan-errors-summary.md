@@ -1,3 +1,14 @@
+---
+title: "PHPStan Level 10 Errors Summary - 2026-01-09"
+module: "Xot"
+type: concept
+tags: [phpstan, errors, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan errors summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Level 10 Errors Summary - 2026-01-09
 
 **Data**: 2026-01-09  

@@ -1,3 +1,14 @@
+---
+title: "XotBaseServiceProvider: Architettura, Ruolo e Best Practice"
+module: "Xot"
+type: concept
+tags: [service, provider]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "service provider"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseServiceProvider: Architettura, Ruolo e Best Practice
 
 ## Ruolo della Classe

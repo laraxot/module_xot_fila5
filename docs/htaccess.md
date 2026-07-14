@@ -1,3 +1,14 @@
+---
+title: "Start Cache control"
+module: "Xot"
+type: concept
+tags: [htaccess]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "htaccess"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 https://frostbutter.com/articles/htaccess-cache-control-for-a-faster-website/
 
 # Start Cache control

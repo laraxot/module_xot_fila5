@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fatal Errors: Eloquent Property Redeclaration"
+module: "Xot"
+type: concept
+tags: [phpstan, fatal, errors, eloquent]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fatal errors eloquent properties"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Fatal Errors: Eloquent Property Redeclaration
 
 ## Problem

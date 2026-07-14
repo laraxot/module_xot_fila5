@@ -1,3 +1,14 @@
+---
+title: "XotBaseField View Resolution Rule"
+module: "Xot"
+type: concept
+tags: [xotbasefield, view, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbasefield view resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # XotBaseField View Resolution Rule
 
 ## Rule

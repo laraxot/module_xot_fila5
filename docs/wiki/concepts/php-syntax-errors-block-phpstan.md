@@ -1,3 +1,14 @@
+---
+title: "PHP Syntax Errors Block PHPStan Analysis"
+module: "Xot"
+type: concept
+tags: [php, syntax, errors, block]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "php syntax errors block phpstan"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHP Syntax Errors Block PHPStan Analysis
 
 ## Problem

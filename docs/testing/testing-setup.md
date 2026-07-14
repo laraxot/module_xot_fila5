@@ -1,3 +1,14 @@
+---
+title: "Pest Testing Setup for Laraxot Modular Architecture"
+module: "Xot"
+type: how-to
+tags: [testing, setup]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing setup"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Pest Testing Setup for Laraxot Modular Architecture
 
 This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.

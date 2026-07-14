@@ -1,3 +1,14 @@
+---
+title: "Module Directory Structure Rule"
+module: "Xot"
+type: rule
+tags: [module, directory, structure, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module directory structure rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Module Directory Structure Rule
 
 > **Regola**: Le cartelle dei moduli devono seguire la struttura standard Laravel/Packt.

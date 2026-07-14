@@ -1,3 +1,14 @@
+---
+title: "Aggiornamento Mapping Classi Filament - [DATE]"
+module: "Xot"
+type: concept
+tags: [filament, class, mapping, update]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament class mapping update"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Aggiornamento Mapping Classi Filament - [DATE]
 
 **Obiettivo**: Verificare e correggere mapping classi nel file `filament_class.txt`

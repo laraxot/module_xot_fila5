@@ -1,3 +1,14 @@
+---
+title: "Censimento File con Marker"
+module: "Xot"
+type: concept
+tags: [merge, conflicts, census]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "merge conflicts census"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Censimento File con Marker
 
 > **Ultimo aggiornamento**: Novembre 2025

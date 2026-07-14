@@ -1,3 +1,14 @@
+---
+title: "Indice task - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [tasks, index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "tasks index"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Indice task - Modulo Xot
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.

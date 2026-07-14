@@ -1,3 +1,14 @@
+---
+title: "Common Filament Trait Conflicts - Xot Module"
+module: "Xot"
+type: pattern
+tags: [common, filament, trait, conflicts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "common filament trait conflicts 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -384,13 +395,6 @@ foreach ($properties as $property) {
 
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-**File**: `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)
 
 ---
@@ -523,11 +527,4 @@ class MyPage extends XotBaseViewRecord
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
-=======
-- `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
->>>>>>> laraxot/develop
 >>>>>>> 551c768c4 (.)

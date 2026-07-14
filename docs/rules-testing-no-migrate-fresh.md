@@ -1,3 +1,14 @@
+---
+title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
+module: "Xot"
+type: rule
+tags: [rules, testing, no, migrate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "rules testing no migrate fresh"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule

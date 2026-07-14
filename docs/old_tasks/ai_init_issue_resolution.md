@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Problema con ai_init.sh"
+module: "Xot"
+type: concept
+tags: [ai, init, issue, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ai init issue resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione Problema con ai_init.sh
 
 ## Problema Risolto

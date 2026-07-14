@@ -1,3 +1,14 @@
+---
+title: "Laravel 12 Best Practices - Laraxot PTVX"
+module: "Xot"
+type: concept
+tags: [laravel, 12, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel 12 best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laravel 12 Best Practices - Laraxot PTVX
 
 Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12.

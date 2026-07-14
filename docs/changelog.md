@@ -1,3 +1,14 @@
+---
+title: "Changelog - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [changelog]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "changelog"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Changelog - Modulo Xot
 
 ## [2025-06-04] - Sessione Fix Critica

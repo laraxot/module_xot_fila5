@@ -1,3 +1,14 @@
+---
+title: "Strategia di Consolidamento Documentazione - Moduli Laraxot"
+module: "Xot"
+type: concept
+tags: [documentation, consolidation, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation consolidation strategy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Strategia di Consolidamento Documentazione - Moduli Laraxot
 
 ## 🎯 Obiettivo

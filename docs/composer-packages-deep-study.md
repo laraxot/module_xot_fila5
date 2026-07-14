@@ -1,3 +1,14 @@
+---
+title: "Composer Packages Deep Study (2026-03-02)"
+module: "Xot"
+type: concept
+tags: [composer, packages, deep, study]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "composer packages deep study"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Composer Packages Deep Study (2026-03-02)
 
 Source: `composer show --format=json` run from `laravel/` on 2026-03-02.

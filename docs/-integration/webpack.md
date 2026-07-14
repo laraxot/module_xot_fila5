@@ -1,3 +1,14 @@
+---
+title: "webpack"
+module: "Xot"
+type: concept
+tags: [webpack]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "webpack"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # webpack
 
 <!-- Contenuto migrato da _docs/webpack.txt -->

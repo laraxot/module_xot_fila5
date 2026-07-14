@@ -1,3 +1,14 @@
+---
+title: "Best Practices per Risorse Filament in Laraxot"
+module: "Xot"
+type: concept
+tags: [filament, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Best Practices per Risorse Filament in Laraxot
 
 Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.

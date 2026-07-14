@@ -1,3 +1,14 @@
+---
+title: "📚 JpGraph Class Reference - Analisi Completta 2024"
+module: "Xot"
+type: how-to
+tags: [filament, 5, chart, widgets]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 5 chart widgets complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 📚 JpGraph Class Reference - Analisi Completta 2024
 
 ## 🎯 **Introduzione alla Documentazione JpGraph**

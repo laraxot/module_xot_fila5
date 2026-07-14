@@ -1,3 +1,14 @@
+---
+title: "Regole Generali del Progetto"
+module: "Xot"
+type: concept
+tags: [general]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "general"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole Generali del Progetto
 
 Questo documento contiene le regole generali che devono essere seguite in tutto il progetto  per garantire coerenza e qualità del codice.

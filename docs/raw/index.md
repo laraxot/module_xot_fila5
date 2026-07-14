@@ -1,3 +1,14 @@
+---
+title: "Raw Sources — Xot"
+module: "Xot"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Raw Sources — Xot
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

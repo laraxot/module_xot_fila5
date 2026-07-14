@@ -1,3 +1,14 @@
+---
+title: "Task 001: Improve Core Framework and Base Classes"
+module: "Xot"
+type: concept
+tags: [001, core, framework, improvements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "001 core framework improvements"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task 001: Improve Core Framework and Base Classes
 
 ## Description

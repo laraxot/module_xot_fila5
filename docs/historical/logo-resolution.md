@@ -1,3 +1,14 @@
+---
+title: "Risoluzione dei Loghi"
+module: "Xot"
+type: concept
+tags: [logo, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logo resolution"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Risoluzione dei Loghi
 
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).

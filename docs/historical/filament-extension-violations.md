@@ -1,3 +1,14 @@
+---
+title: "Filament Extension Violations Report"
+module: "Xot"
+type: concept
+tags: [filament, extension, violations]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament extension violations"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Extension Violations Report
 
 **Date**: 2025-12-18

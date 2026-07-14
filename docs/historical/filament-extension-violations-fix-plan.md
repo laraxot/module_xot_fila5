@@ -1,3 +1,14 @@
+---
+title: "Filament Extension Rules - Correzioni Violazioni Critiche"
+module: "Xot"
+type: concept
+tags: [filament, extension, violations, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament extension violations fix plan"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament Extension Rules - Correzioni Violazioni Critiche
 
 ## 🎯 Analisi Violazioni - 30 Dicembre 2025

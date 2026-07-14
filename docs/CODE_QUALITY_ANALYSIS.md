@@ -1,3 +1,14 @@
+---
+title: "Code Quality Analysis - Xot Module"
+module: "Xot"
+type: concept
+tags: [CODE, QUALITY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality analysis"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Code Quality Analysis - Xot Module
 
 ## 📊 Overview

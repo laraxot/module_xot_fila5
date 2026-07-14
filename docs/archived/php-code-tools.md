@@ -1,3 +1,14 @@
+---
+title: "Php Code Tools"
+module: "Xot"
+type: concept
+tags: [php, code, tools]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "php code tools"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 https://github.com/PHPCheckstyle/phpcheckstyle
 
 https://scrutinizer-ci.com/

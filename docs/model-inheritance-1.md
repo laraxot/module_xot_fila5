@@ -1,3 +1,14 @@
+---
+title: "Audit Ereditarietà Modelli - Tutti i Moduli"
+module: "Xot"
+type: concept
+tags: [model, inheritance, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model inheritance 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit

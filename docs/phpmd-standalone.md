@@ -1,3 +1,14 @@
+---
+title: "PHPMD — Installazione Standalone"
+module: "Xot"
+type: concept
+tags: [phpmd, standalone]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpmd standalone"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPMD — Installazione Standalone
 
 **Versione**: v2.15.0+ (in `tools/phpmd.phar`)

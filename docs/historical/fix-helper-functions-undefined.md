@@ -1,3 +1,14 @@
+---
+title: "Fix: Helper Functions Undefined - Analisi e Risoluzione"
+module: "Xot"
+type: concept
+tags: [fix, helper, functions, undefined]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fix helper functions undefined"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Fix: Helper Functions Undefined - Analisi e Risoluzione
 
 ## 🐛 Problema Originale

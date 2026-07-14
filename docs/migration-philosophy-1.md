@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Laraxot Migration Philosophy - Single Source of Truth
 
 ## The Sacred Rule
@@ -155,12 +154,3 @@ php artisan migrate --path=Modules/User/database/migrations/2026_03_12_171000_cr
 
 - 2026-03-12: Added forbidden commands section after user correction
 - 2026-03-12: Documented after user correction on migration naming
-=======
----
-module: theme
-topic: migration-philosophy-1
-canonical: ../../../Themes/docs/shared-components/MIGRATION_PHILOSOPHY.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/MIGRATION_PHILOSOPHY.md
->>>>>>> 40b96bcd6 (.)

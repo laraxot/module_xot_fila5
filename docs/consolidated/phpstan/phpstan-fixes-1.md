@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan Livello 7 - Modulo Xot"
+module: "Xot"
+type: concept
+tags: [phpstan, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Correzioni PHPStan Livello 7 - Modulo Xot
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate.

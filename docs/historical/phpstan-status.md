@@ -1,3 +1,14 @@
+---
+title: "PHPStan Status - Xot Module"
+module: "Xot"
+type: concept
+tags: [phpstan, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan status"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Status - Xot Module
 
 ## Current Status: ✅ PASSED

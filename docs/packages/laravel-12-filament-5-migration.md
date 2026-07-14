@@ -1,3 +1,14 @@
+---
+title: "Migrazione a Laravel 12 e Filament 5"
+module: "Xot"
+type: concept
+tags: [laravel, 12, filament, 5]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laravel 12 filament 5 migration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Migrazione a Laravel 12 e Filament 5
 
 Linee guida critiche per l'aggiornamento e la manutenzione dei moduli.

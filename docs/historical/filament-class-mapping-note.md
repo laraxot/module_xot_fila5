@@ -1,3 +1,14 @@
+---
+title: "Nota: Forms Components Base Classes"
+module: "Xot"
+type: concept
+tags: [filament, class, mapping, note]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament class mapping note"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Nota: Forms Components Base Classes
 
 **Data**: 2025-12-23

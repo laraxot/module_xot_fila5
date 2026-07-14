@@ -1,3 +1,14 @@
+---
+title: "Architectural Rule: Avoid `property_exists()` on Eloquent Models"
+module: "Xot"
+type: concept
+tags: [no, property, exists, models]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "no property exists on models"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Architectural Rule: Avoid `property_exists()` on Eloquent Models
 
 ## **CRITICAL LARAXOT PRINCIPLE**

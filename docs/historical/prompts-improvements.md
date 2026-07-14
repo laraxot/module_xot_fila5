@@ -1,3 +1,14 @@
+---
+title: "Miglioramenti Prompt - Laraxot Framework"
+module: "Xot"
+type: concept
+tags: [prompts, improvements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "prompts improvements"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Miglioramenti Prompt - Laraxot Framework
 
 **Data**: 2026-01-12  

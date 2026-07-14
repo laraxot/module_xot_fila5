@@ -1,3 +1,14 @@
+---
+title: "🚨 COMANDAMENTO PSR-4 LARAXOT - STRUTTURA SACRA"
+module: "Xot"
+type: concept
+tags: [psr4, laraxot, commandment]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "psr4 laraxot commandment"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🚨 COMANDAMENTO PSR-4 LARAXOT - STRUTTURA SACRA
 
 ## 📖 REGOLA FONDAMENTALE

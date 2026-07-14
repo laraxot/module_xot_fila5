@@ -1,3 +1,14 @@
+---
+title: "🧘 Laraxot Religion: Guida per Fix PHPStan"
+module: "Xot"
+type: concept
+tags: [laraxot, religion, phpstan, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot religion phpstan fixes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🧘 Laraxot Religion: Guida per Fix PHPStan
 
 > **Ogni fix deve rispettare la filosofia, religione, politica e zen di Laraxot**

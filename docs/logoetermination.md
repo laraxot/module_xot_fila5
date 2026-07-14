@@ -1,3 +1,14 @@
+---
+title: "Determinazione del Logo Basata sul Dominio"
+module: "Xot"
+type: concept
+tags: [logoetermination]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logoetermination"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Determinazione del Logo Basata sul Dominio
 
 ## Introduzione

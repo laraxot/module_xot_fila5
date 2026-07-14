@@ -1,3 +1,14 @@
+---
+title: "TransTrait"
+module: "Xot"
+type: pattern
+tags: [trans, trait]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "trans trait"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # TransTrait
 
 ## Descrizione

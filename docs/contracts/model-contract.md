@@ -1,3 +1,14 @@
+---
+title: "ModelContract"
+module: "Xot"
+type: concept
+tags: [model, contract]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model contract"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # ModelContract
 
 ## Descrizione

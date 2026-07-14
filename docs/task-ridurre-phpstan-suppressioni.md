@@ -1,3 +1,14 @@
+---
+title: "Task: Ridurre Suppressioni PHPStan Inline - Xot"
+module: "Xot"
+type: concept
+tags: [task, ridurre, phpstan, suppressioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "task ridurre phpstan suppressioni"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Task: Ridurre Suppressioni PHPStan Inline - Xot
 
 **Modulo**: Xot

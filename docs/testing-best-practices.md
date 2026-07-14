@@ -1,3 +1,14 @@
+---
+title: "Testing Best Practices - Modules/Xot"
+module: "Xot"
+type: concept
+tags: [testing, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Testing Best Practices - Modules/Xot
 
 This document outlines best practices for writing and maintaining Pest tests under the Xot module, specifically addressing static analysis type safety.

@@ -1,3 +1,14 @@
+---
+title: "Conflict Resolution January 2026"
+module: "Xot"
+type: concept
+tags: [conflict, resolution, january]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution january"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Conflict Resolution January 2026
 
 ## Logo SVG

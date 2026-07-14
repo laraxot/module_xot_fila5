@@ -1,3 +1,14 @@
+---
+title: "Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)"
+module: "Xot"
+type: concept
+tags: [lessons, learnedmerge, conflicts, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lessons learnedmerge conflicts 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 
 ## 🎯 Missione Completata
@@ -113,11 +124,7 @@ ps -p $PID  # ✅ Running!
 ### 9. **MIGLIORAMENTO**
 
 Creati 3 nuovi documenti:
-<<<<<<< HEAD
 1. `merge-conflict-resolution-2025-11-04.md` - Report tecnico dettagliato
-=======
-1. `merge-conflict-resolution.md` - Report tecnico dettagliato
->>>>>>> 40b96bcd6 (.)
 2. `file-locking-pattern.md` - Nuova regola fondamentale
 3. `lessons-learned-2025-11-04-merge-conflicts.md` - Questo documento
 
@@ -187,9 +194,6 @@ public null|string $var = null;
 ### Pattern 5: Git Markers Non Risolti
 ```php
 // ❌ Conflict markers left in code
-<<<<<<< HEAD
-=======
->>>>>>> commit-hash
 =======
 >>>>>>> 40b96bcd6 (.)
 ```
@@ -246,11 +250,7 @@ public null|string $var = null;
 
 ## 💾 Documentazione Creata
 
-<<<<<<< HEAD
 1. **merge-conflict-resolution-2025-11-04.md**
-=======
-1. **merge-conflict-resolution.md**
->>>>>>> 40b96bcd6 (.)
    - Report tecnico completo
    - Pattern identificati
    - Script utilizzati
@@ -326,11 +326,7 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 
 ## 📚 References
 
-<<<<<<< HEAD
 - [Merge Conflict Resolution Report](./merge-conflict-resolution-2025-11-04.md)
-=======
-- [Merge Conflict Resolution Report](./merge-conflict-resolution.md)
->>>>>>> 40b96bcd6 (.)
 - [File Locking Pattern](./file-locking-pattern.md)
 - [Service Providers](./service-providers.md)
 - [Laraxot Architecture Rules](./laraxot-architecture-rules.md)

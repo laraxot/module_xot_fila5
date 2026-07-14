@@ -1,3 +1,14 @@
+---
+title: "Policy module matrix"
+module: "Xot"
+type: rule
+tags: [policy, module, matrix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policy module matrix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Policy module matrix
 
 ## Scopo

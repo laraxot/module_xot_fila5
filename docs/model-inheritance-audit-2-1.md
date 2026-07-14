@@ -1,3 +1,14 @@
+---
+title: "Audit Ereditarietà Modelli - Tutti i Moduli"
+module: "Xot"
+type: concept
+tags: [model, inheritance, audit, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model inheritance audit 2 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit
@@ -148,10 +159,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 ---
 
 #### Quaeris
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
 **Modelli da correggere**:
@@ -209,10 +217,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Chart
 - ❌ Geo
 - ❌ Quaeris
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 
 **Totale**: 4/13 moduli (31%)
 
@@ -230,10 +235,7 @@ class TestSushiModel extends BaseModel  // ✅
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
 | Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
 
 **Totale**: 11 file da correggere
@@ -250,10 +252,7 @@ class TestSushiModel extends BaseModel  // ✅
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
 2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 
 ### 🟡 Media Priorità
 3. **Chart** - BaseModel
@@ -274,10 +273,7 @@ Per verificare tutti i moduli:
 ```bash
 #!/bin/bash
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 
 for module in */; do
     echo "=== Checking $module ==="
@@ -293,10 +289,7 @@ done
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
 3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
 6. ⏳ **Job** - Da correggere (TaskComment)
@@ -319,10 +312,7 @@ Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
 - `Quaeris/BaseModel.php` - Implementa `HasMedia`
-<<<<<<< HEAD
 >>>>>>> 551c768c4 (.)
-=======
->>>>>>> 40b96bcd6 (.)
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
 `XotBaseModel` è compatibile con `HasMedia` di Spatie.

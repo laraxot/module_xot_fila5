@@ -1,3 +1,14 @@
+---
+title: "Infolist per Summary e Author Sections"
+module: "Xot"
+type: concept
+tags: [infolist, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "infolist for summary"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Infolist per Summary e Author Sections
 
 ## Overview

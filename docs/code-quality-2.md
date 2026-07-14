@@ -1,3 +1,14 @@
+---
+title: "Code Quality Audit Completo - Gennaio 2025"
+module: "Xot"
+type: concept
+tags: [code, quality, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Code Quality Audit Completo - Gennaio 2025
 
 **PHPStan Level**: 10

@@ -1,4 +1,20 @@
-# 📚 Xot Module - Documentation Index
+---
+title: "Xot Module Documentation Index"
+module: "Xot"
+type: concept
+tags: [00, INDEX]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "00 index"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+## 🏛️ Architettura Core
+- 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
+- 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
+- ⚙️ [Action Architecture](./action-service-provider-architecture.md) - Pattern per Actions atomiche e testabili.
+- 🧩 [Service Providers](./service-provider-architecture.md) - Ciclo di vita e boot dei moduli.
+- 🔢 [EnumTrait Pattern](./enum-trait-pattern.md) - Standard per Enums con traduzioni e UI Filament.
 
 ## 🏷️ Naming & Quality Standards
 - 📜 [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md) - La bibbia del Livello 10.

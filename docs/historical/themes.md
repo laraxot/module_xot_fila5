@@ -1,3 +1,14 @@
+---
+title: "Temi in il progetto"
+module: "Xot"
+type: concept
+tags: [themes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "themes"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Temi in il progetto
 
 il progetto utilizza un sistema di temi basato su Filament 3.3. Ogni tema è un pacchetto Laravel indipendente che può essere installato e configurato separatamente.

@@ -1,3 +1,14 @@
+---
+title: "Goals - Xot"
+module: "Xot"
+type: concept
+tags: [02, goals]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "02 goals"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Goals - Xot
 
 ## Short Term

@@ -1,3 +1,14 @@
+---
+title: "Configurazione MCP per iFlow"
+module: "Xot"
+type: concept
+tags: [mcp, iflow, configuration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp iflow configuration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Configurazione MCP per iFlow
 
 ## Panoramica

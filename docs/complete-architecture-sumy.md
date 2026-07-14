@@ -1,3 +1,14 @@
+---
+title: "Laraxot: Complete Architecture Documentation"
+module: "Xot"
+type: concept
+tags: [complete, architecture, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "complete architecture sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot: Complete Architecture Documentation
 
 ## Table of Contents

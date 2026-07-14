@@ -1,3 +1,14 @@
+---
+title: "Lessons Learned – Consolidated Rules (2025-08-25)"
+module: "Xot"
+type: concept
+tags: [lessons, learned, aug2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lessons learned aug2025"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Lessons Learned – Consolidated Rules (2025-08-25)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).

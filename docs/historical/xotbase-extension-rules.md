@@ -1,3 +1,14 @@
+---
+title: "Regole di Estensione XotBase - Guida di Riferimento"
+module: "Xot"
+type: rule
+tags: [xotbase, extension, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbase extension rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole di Estensione XotBase - Guida di Riferimento
 
 ## 🚨 REGOLA CRITICA FONDAMENTALE

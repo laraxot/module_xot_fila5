@@ -1,3 +1,14 @@
+---
+title: "PHPStan Syntax Errors Fix - Xot Module"
+module: "Xot"
+type: concept
+tags: [phpstan, syntax, errors, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan syntax errors fix"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Syntax Errors Fix - Xot Module
 
 **Data**: 2026-01-09  

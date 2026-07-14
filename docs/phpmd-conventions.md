@@ -1,3 +1,14 @@
+---
+title: "🔧 PHPMD Convenzioni Laraxot"
+module: "Xot"
+type: concept
+tags: [phpmd, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpmd conventions"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🔧 PHPMD Convenzioni Laraxot
 
 **Scope**: Tutti i moduli FixCity (Laraxot PTVX)  

@@ -1,3 +1,14 @@
+---
+title: "Chart.js Datalabels Plugin Implementation in Xot Module"
+module: "Xot"
+type: concept
+tags: [chartjsatalabels, xot, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "chartjsatalabels xot integration"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview

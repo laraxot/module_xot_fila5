@@ -1,3 +1,14 @@
+---
+title: "Regola Critica: NO Services - Solo Spatie QueueableActions"
+module: "Xot"
+type: rule
+tags: [critical, no, services, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "critical no services rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regola Critica: NO Services - Solo Spatie QueueableActions
 
 **Data Creazione**: [DATE]

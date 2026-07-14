@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Technical Debt"
+module: "Xot"
+type: concept
+tags: [technical, debt]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "technical debt"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Technical Debt
 
 ## 📋 Table of Contents

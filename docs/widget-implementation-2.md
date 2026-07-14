@@ -1,3 +1,14 @@
+---
+title: "Widget Implementation Rules - Xot Module"
+module: "Xot"
+type: concept
+tags: [widget, implementation, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget implementation 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget

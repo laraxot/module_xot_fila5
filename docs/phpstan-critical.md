@@ -1,3 +1,14 @@
+---
+title: "PHPStan Critical Rules - INTOCCABILE"
+module: "Xot"
+type: concept
+tags: [phpstan, critical]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan critical"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Critical Rules - INTOCCABILE
 
 ## 🚨 REGOLA ASSOLUTA 🚨

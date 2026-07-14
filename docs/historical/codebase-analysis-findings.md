@@ -1,3 +1,14 @@
+---
+title: "Analisi Completa del Codice - Regole Filament e property_exists"
+module: "Xot"
+type: concept
+tags: [codebase, analysis, findings]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "codebase analysis findings"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Analisi Completa del Codice - Regole Filament e property_exists
 
 ## Riepilogo Trovato

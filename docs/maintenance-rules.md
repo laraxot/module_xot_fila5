@@ -1,3 +1,14 @@
+---
+title: "Maintenance Rules"
+module: "Xot"
+type: rule
+tags: [maintenance, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "maintenance rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Maintenance Rules
 
 **Rule:** Before modifying any file, always study, update, and improve the documentation (`docs` folders) inside the relevant module and theme.

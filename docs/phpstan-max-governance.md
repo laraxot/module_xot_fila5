@@ -1,3 +1,14 @@
+---
+title: "PHPStan Max Governance"
+module: "Xot"
+type: concept
+tags: [phpstan, max, governance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan max governance"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # PHPStan Max Governance
 
 ## Scopo

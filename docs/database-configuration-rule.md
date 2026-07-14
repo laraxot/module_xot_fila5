@@ -1,3 +1,14 @@
+---
+title: "Database Configuration Rule - Laraxot Architecture"
+module: "Xot"
+type: rule
+tags: [database, configuration, rule]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "database configuration rule"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Database Configuration Rule - Laraxot Architecture
 
 ## 🚨 CRITICAL RULE: NEVER ADD MANUAL MODULE CONNECTIONS TO database.php

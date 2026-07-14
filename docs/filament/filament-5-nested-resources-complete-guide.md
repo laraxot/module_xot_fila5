@@ -1,3 +1,14 @@
+---
+title: "🎯 Filament 5.x Nested Resources - Guida Completa 2024"
+module: "Xot"
+type: how-to
+tags: [filament, 5, nested, resources]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament 5 nested resources complete guide"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024
 
 ## 📋 **Introduzione a Nested Resources**

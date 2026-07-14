@@ -1,3 +1,14 @@
+---
+title: "Xot - Product Strategy"
+module: "Xot"
+type: concept
+tags: [product, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "product strategy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot - Product Strategy
 
 > Strategia prodotto. Modulo Core Framework.

@@ -1,3 +1,14 @@
+---
+title: "Xot Module - Overview"
+module: "Xot"
+type: concept
+tags: [overview]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "overview"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Xot Module - Overview
 
 ## 📋 Table of Contents

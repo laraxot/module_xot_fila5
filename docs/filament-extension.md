@@ -1,3 +1,14 @@
+---
+title: "pattern di estensione filament"
+module: "Xot"
+type: concept
+tags: [filament, extension]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament extension"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # pattern di estensione filament
 
 ## regola fondamentale

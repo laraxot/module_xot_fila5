@@ -1,3 +1,14 @@
+---
+title: "Laraxot Architecture: The 10 Commandments of Xot (Quick Reference)"
+module: "Xot"
+type: concept
+tags: [laraxot, 10, commandments, wiki]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "laraxot 10 commandments wiki"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Laraxot Architecture: The 10 Commandments of Xot (Quick Reference)
 
 This document provides a quick reference to the 10 inviolable architectural commandments enforced by the `Xot` module, which is the foundational core of the Laraxot framework. Adhering to these rules is paramount for maintaining code quality, consistency, and future compatibility.

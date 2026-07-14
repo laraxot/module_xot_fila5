@@ -1,3 +1,14 @@
+---
+title: "Debugbar Architecture"
+module: "Xot"
+type: concept
+tags: [debugbar, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "debugbar architecture"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Debugbar Architecture
 
 ## Overview
@@ -14,15 +25,9 @@ The debugbar was not appearing on `http://127.0.0.1:8000/it/tests/homepage` desp
 
 | Check | Result |
 |-------|--------|
-<<<<<<< HEAD
 | Package installed? | ✅ YES (`barryvdh/laravel-debugbar 3.16.5` - same package, old name alias) |
 | Service provider discovered? | ✅ YES (`php artisan package:discover` shows `barryvdh/laravel-debugbar ... DONE`) |
 | Middleware registered? | ✅ YES (`Barryvdh\Debugbar\Middleware\InjectDebugbar` in web middleware group) |
-=======
-| Package installed? | YES (`fruitcake/laravel-debugbar 4.2.x`) |
-| Service provider discovered? | YES (`php artisan package:discover` shows Laravel Debugbar as discovered) |
-| Response instrumentation? | ✅ YES — `fruitcake/laravel-debugbar` v4 usa listener `Illuminate\Foundation\Http\Events\RequestHandled` + `Terminating` (namespace `Fruitcake\\LaravelDebugbar`, non più `Barryvdh\\Debugbar\\Middleware\\InjectDebugbar` nel middleware stack web globale). |
->>>>>>> 40b96bcd6 (.)
 | Config file exists? | ✅ YES (`laravel/config/debugbar.php`) |
 | `APP_DEBUG` in .env? | ✅ `true` |
 | `DEBUGBAR_ENABLED` in .env? | ❌ **`false`** — THIS WAS THE PROBLEM |
@@ -41,11 +46,7 @@ In this project, the Xot module declares debugbar as a dependency in its `compos
 ```json
 {
   "require-dev": {
-<<<<<<< HEAD
     "fruitcake/laravel-debugbar": "^3.16"
-=======
-    "fruitcake/laravel-debugbar": "^4.2.8"
->>>>>>> 40b96bcd6 (.)
   }
 }
 ```
@@ -72,30 +73,15 @@ This means Xot's `require-dev` dependencies are **merged into the root composer.
 
 ### Cleanup: Duplicate Package Names
 
-<<<<<<< HEAD
 Xot's `composer.json` previously had BOTH:
-=======
-Older Composer attempts used either the previous package name or a Laravel 12-only line:
-
->>>>>>> 40b96bcd6 (.)
 ```json
 "barryvdh/laravel-debugbar": "^3.14",
 "fruitcake/laravel-debugbar": "^3.16"
 ```
 
-<<<<<<< HEAD
 These resolve to the **same package**. `barryvdh/laravel-debugbar` was renamed to `fruitcake/laravel-debugbar` but the old name is kept as an alias for backward compatibility.
 
 **Action:** Remove the duplicate `barryvdh/laravel-debugbar` entry, keeping only `fruitcake/laravel-debugbar`.
-=======
-For Laravel 13, use the canonical package name and the 4.2 line:
-
-```json
-"fruitcake/laravel-debugbar": "^4.2.8"
-```
-
-The root `laravel/composer.json` must not duplicate debugbar. Xot owns the dev-tool declaration and Composer merges it into the root dependency graph.
->>>>>>> 40b96bcd6 (.)
 
 ## Configuration
 
@@ -149,20 +135,9 @@ DEBUGBAR_ENABLED=false
 1. **Check .env:** `DEBUGBAR_ENABLED=true` (or remove line to follow `APP_DEBUG`)
 2. **Clear config:** `php artisan config:clear`
 3. **Check runtime config:** `php artisan tinker --execute="var_dump(config('debugbar.enabled'));"`
-<<<<<<< HEAD
 4. **Verify middleware:** `php artisan tinker --execute="print_r(app('Illuminate\Contracts\Http\Kernel')->getMiddlewareGroups()['web']);"`
 5. **Check package discovery:** `php artisan package:discover 2>&1 | grep -i debug`
 6. **Verify HTML injection:** `curl -s http://127.0.0.1:8000/some-page | grep -i debugbar`
-=======
-4. **Provider / stack:** Debugbar non è più un middleware web globale `InjectDebugbar`; in v4 viene montato tramite [`Fruitcake\LaravelDebugbar\ServiceProvider`](https://github.com/fruitcake/laravel-debugbar) e listener sugli eventi HTTP. Ignorare stack trace nei dump HTML storici che citano ancora `Barryvdh\Debugbar\Middleware\InjectDebugbar`.
-
-### Composer nel sotto-progetto `Modules/Xot`
-
-Il `composer.json` del modulo può creare un `Modules/Xot/vendor/` locale. Se una installazione precedente è **parziale** (file mancanti in `vendor/`), `composer dump-autoload` fallisce con «does not appear to be a file nor a folder». In quel caso: `rm -rf laravel/Modules/Xot/vendor`, poi ripetere `composer require` da `Modules/Xot`, quindi `rm -rf vendor` e dalla root `laravel/` eseguire `composer install` o `composer go` secondo la procedura di squadra.
-5. **Tema Sixteen / parity CSS:** il file [`ticket-parity.css`](../../../Themes/Sixteen/resources/css/ticket-parity.css) è importato da `Themes/Sixteen/resources/css/app.css`. Se `#phpdebugbar` ha `display: none !important` **globale**, la barra resta invisibile anche col backend OK — gli screenshot parity usano solo `body.parity-capture-hide-dev-overlays`.
-6. **Check package discovery:** `php artisan package:discover 2>&1 | grep -i debug`
-7. **Verify HTML injection:** `curl -s http://127.0.0.1:8000/some-page | grep -i debugbar`
->>>>>>> 40b96bcd6 (.)
 
 ## Security Warning
 

@@ -1,3 +1,14 @@
+---
+title: "Module Quality Analysis Summary"
+module: "Xot"
+type: concept
+tags: [module, quality, analysis, sumy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module quality analysis sumy"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Module Quality Analysis Summary
 
 **Date**: [DATE]

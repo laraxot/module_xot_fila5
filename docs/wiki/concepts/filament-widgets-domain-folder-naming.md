@@ -1,3 +1,14 @@
+---
+title: "Filament widgets: cartella dominio + classe ruolo"
+module: "Xot"
+type: concept
+tags: [filament, widgets, domain, folder]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament widgets domain folder naming"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Filament widgets: cartella dominio + classe ruolo
 
 ## Religione

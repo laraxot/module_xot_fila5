@@ -1,3 +1,14 @@
+---
+title: "Trait HasAuthenticationLogTrait"
+module: "Xot"
+type: concept
+tags: [has, authentication, log]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "has authentication log"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

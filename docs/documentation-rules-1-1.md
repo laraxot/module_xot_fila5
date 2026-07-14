@@ -1,3 +1,14 @@
+---
+title: "Regole di Documentazione"
+module: "Xot"
+type: rule
+tags: [documentation, rules, 1, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation rules 1 1"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
 # Regole di Documentazione
 
 ## Panoramica
@@ -19,10 +30,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `/var/www/html/` o simili
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 40b96bcd6 (.)
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `saluteora` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -46,10 +53,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `saluteora` o altri nomi specifici
-<<<<<<< HEAD
-=======
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
->>>>>>> 472bd9dc (.)
 =======
 =======
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -111,9 +114,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> d86d643a (.)
 =======
 >>>>>>> 472bd9dc (.)
 =======
@@ -144,9 +144,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> 5a14301c (.)
 =======
 =======
 >>>>>>> 9e42a036 (.)
@@ -157,9 +154,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> d86d643a (.)
 =======
 >>>>>>> 5a14301c (.)
 =======
@@ -198,11 +192,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
 >>>>>>> 28fc70fe (.)
 >>>>>>> 851793957 (.)
-=======
->>>>>>> 551c768c4 (.)
 =======
 >>>>>>> 40b96bcd6 (.)
 ```
@@ -224,10 +215,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `/var/www/html/` o simili
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 40b96bcd6 (.)
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `saluteora` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -251,10 +238,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `saluteora` o altri nomi specifici
-<<<<<<< HEAD
-=======
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
->>>>>>> 472bd9dc (.)
 =======
 =======
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -316,9 +299,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> d86d643a (.)
 =======
 >>>>>>> 472bd9dc (.)
 =======
@@ -349,9 +329,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> 5a14301c (.)
 =======
 =======
 >>>>>>> 9e42a036 (.)
@@ -362,9 +339,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> d86d643a (.)
 =======
 >>>>>>> 5a14301c (.)
 =======
@@ -403,11 +377,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
 >>>>>>> 28fc70fe (.)
 >>>>>>> 851793957 (.)
-=======
->>>>>>> 551c768c4 (.)
 =======
 >>>>>>> 40b96bcd6 (.)
 ```
@@ -430,10 +401,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che iniziano con `/var/www/html/` o simili
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 40b96bcd6 (.)
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `saluteora` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -457,10 +424,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `saluteora` o altri nomi specifici
-<<<<<<< HEAD
-=======
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
->>>>>>> 472bd9dc (.)
 =======
 =======
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -522,9 +485,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> d86d643a (.)
 =======
 >>>>>>> 472bd9dc (.)
 =======
@@ -555,9 +515,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> 5a14301c (.)
 =======
 =======
 >>>>>>> 9e42a036 (.)
@@ -568,9 +525,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
-=======
->>>>>>> d86d643a (.)
 =======
 >>>>>>> 5a14301c (.)
 =======
@@ -609,11 +563,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-<<<<<<< HEAD
 >>>>>>> 28fc70fe (.)
 >>>>>>> 851793957 (.)
-=======
->>>>>>> 551c768c4 (.)
 =======
 >>>>>>> 40b96bcd6 (.)
 ```
