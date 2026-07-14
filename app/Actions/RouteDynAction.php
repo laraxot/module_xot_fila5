@@ -7,10 +7,10 @@ namespace Modules\Xot\Actions;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_replace;
 
+use Spatie\QueueableAction\QueueableAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
