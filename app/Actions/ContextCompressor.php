@@ -5,9 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 use OpenAI\OpenAI;
-use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_split;
+
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * ContextCompressorAction.
