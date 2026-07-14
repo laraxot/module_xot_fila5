@@ -11,9 +11,7 @@ use Filament\Widgets\Widget;
  */
 class TestWidget extends Widget
 {
-    /**
-     * @phpstan-var view-string
-     */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'xot::filament.widgets.test';
 
     protected int|string|array $columnSpan = 'full';

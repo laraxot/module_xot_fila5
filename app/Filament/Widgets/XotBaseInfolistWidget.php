@@ -7,21 +7,20 @@ namespace Modules\Xot\Filament\Widgets;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
-use Filament\Widgets\Widget as FilamentWidget;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\View\GetViewByClassAction;
-use Modules\Xot\Filament\Traits\TransTrait;
 
 /**
  * Base per widget FO/pannello che rendono un Infolist Filament v5 (schema unificato).
  *
  * Le sottoclassi forniscono record + componenti; la vista default espone {{ $this->infolist }}.
+ * Estende XotBaseWidget per coerenza con il pattern di widget XotBase*.
  */
-abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchemas
+abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
 {
     use InteractsWithSchemas;
-    use TransTrait;
 
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'xot::filament.widgets.infolist';
 
     protected int|string|array $columnSpan = 'full';

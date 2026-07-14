@@ -28,4 +28,12 @@ qmd search "Xot rule filament" --limit 5
 ---
 
 **Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
 - [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
+=======
+- [no-direct-filament-widget-extension](./no-direct-filament-widget-extension.md)
+>>>>>>> 64619e34 (.)
+=======
+- [no-legacy-folders-code](./no-legacy-folders-code.md) — vietato `Legacy/`/`Old/` nel codice PHP; superato → `.bak` stesso path (2026-06-30)
+>>>>>>> 61938ca4 (delete .claude-audit/)

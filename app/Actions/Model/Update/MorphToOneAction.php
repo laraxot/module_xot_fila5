@@ -6,9 +6,8 @@ namespace Modules\Xot\Actions\Model\Update;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
-use Modules\Xot\Datas\RelationData as RelationDTO;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
-use Spatie\QueueableAction\QueueableAction;
+use Modules\Xot\Datas\RelationData as RelationDTO;
 
 /**
  * Class MorphToOneAction.
@@ -19,7 +18,7 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class MorphToOneAction
 {
-    use QueueableAction;
+    use \Spatie\QueueableAction\QueueableAction;
 
     /**
      * Execute the action to create a MorphToOne relationship.

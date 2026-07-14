@@ -65,4 +65,14 @@
 - [General Troubleshooting](troubleshooting.md)
 
 ---
+<<<<<<< HEAD
+<<<<<<< HEAD
 *Last update: January 2025*
+=======
+*Last update: January 2025*
+
+- [Conflict Resolution](conflict-resolution.md)
+>>>>>>> a01602c7 (.)
+=======
+*Last update: January 2025*
+>>>>>>> 64619e34 (.)

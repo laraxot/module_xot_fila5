@@ -6,7 +6,6 @@ namespace Modules\Xot\Actions\Route;
 
 use Illuminate\Routing\Route;
 use Illuminate\Support\Str;
-use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetCurrentRouteViewAction
@@ -17,7 +16,7 @@ class GetCurrentRouteViewAction
     {
         $route = request()->route();
         if (! $route instanceof Route) {
-            throw new RuntimeException('Current route action is not available.');
+            throw new \RuntimeException('Current route action is not available.');
         }
 
         $routeAction = $route->getActionName();
@@ -30,10 +29,13 @@ class GetCurrentRouteViewAction
             }
         }
 
-        [$containers] = params2ContainerItem($params);
         $params['containers'] = implode('.', array_map(
             static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-            array_values($containers),
+            array_values(array_filter(
+                $params,
+                static fn (string $key): bool => str_starts_with($key, 'container'),
+                ARRAY_FILTER_USE_KEY,
+            )),
         ));
 
         return collect(explode('\\', $controller))

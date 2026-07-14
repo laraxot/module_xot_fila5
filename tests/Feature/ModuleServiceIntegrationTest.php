@@ -28,6 +28,10 @@ describe('ModuleAction Integration', function () {
         Assert::assertInstanceOf(ModuleAction::class, $userService);
 
         Assert::assertInstanceOf(ModuleAction::class, $xotService);
+
+        Assert::assertInstanceOf(ModuleAction::class, $userService);
+
+        Assert::assertInstanceOf(ModuleAction::class, $xotService);
     });
 
     it('returns models from existing modules', function () {

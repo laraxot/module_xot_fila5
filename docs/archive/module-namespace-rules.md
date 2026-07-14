@@ -19,6 +19,10 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 - [docs root](../../../../project_docs/actions.md)
 - [docs Lang](../../lang/project_docs/filament-label.md)
 
@@ -45,4 +49,14 @@
 ## Collegamenti
 - [docs root](../../../../../docs/actions.md)
 - [docs Lang](../../lang/docs/filament-label.md)
+<<<<<<< HEAD
 
+=======
+- [docs root](../../../../docs/actions.md)
+- [docs Lang](../../Lang/docs/filament-label.md)
+
+Ultimo aggiornamento: maggio 2025.
+>>>>>>> a01602c7 (.)
+=======
+
+>>>>>>> 64619e34 (.)

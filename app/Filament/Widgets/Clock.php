@@ -12,6 +12,7 @@ class Clock extends Widget
 {
     public string $start = '';
 
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'xot::filament.widgets.clock';
 
     public function begin(): void

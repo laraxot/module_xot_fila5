@@ -6,21 +6,23 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
-use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
-        $model = $this->createUnitMock(Activity::class);
-        $model->method('getAttribute')->willReturnMap([
-            ['name', 'Test User'],
-            ['email', ''],
-            ['id', 123],
-            ['active', 1],
-            ['missing', null],
-        ]);
+        $model = new class extends Activity {
+            public function getAttribute($key): mixed
+            {
+                return match ($key) {
+                    'name' => 'Test User',
+                    'email' => '',
+                    'id' => 123,
+                    'active' => 1,
+                    'missing' => null,
+                    default => null,
+                };
+            }
+        };
 
         $action = app(SafeAttributeCastAction::class);
 

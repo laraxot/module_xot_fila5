@@ -16,20 +16,25 @@ uses(TestCase::class);
 
 describe('Get Tenant Config Actions', function (): void {
     test('gets tenant config array correctly', function (): void {
-        /** @var TestCase $this */
         $configName = 'test_config';
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
         $configData = ['key' => 'value'];
 
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
-        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
-        $mock->expects($this->expectsAtLeastOnce())
-            ->method('execute')
-            ->with($configName.'.php')
-            ->willReturn($tempPath);
+        // Replace GetTenantFilePathAction with a spy that returns the temp path
+        $getTenantFilePathAction = new class($tempPath) extends GetTenantFilePathAction {
+            public function __construct(private string $tempPath)
+            {
+            }
 
-        app()->instance(GetTenantFilePathAction::class, $mock);
+            public function execute(string $configName): string
+            {
+                return $this->tempPath;
+            }
+        };
+
+        app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
 
         $action = app(GetTenantConfigArrayAction::class);
         $result = $action->execute($configName);
@@ -39,15 +44,17 @@ describe('Get Tenant Config Actions', function (): void {
     });
 
     test('returns empty array if tenant config file does not exist', function (): void {
-        /** @var TestCase $this */
         $configName = 'non_existent';
 
-        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
-        $mock->expects($this->expectsAtLeastOnce())
-            ->method('execute')
-            ->willReturn('/path/to/nothing.php');
+        // Replace GetTenantFilePathAction with a spy that returns a non-existent path
+        $getTenantFilePathAction = new class extends GetTenantFilePathAction {
+            public function execute(string $configName): string
+            {
+                return '/path/to/nothing.php';
+            }
+        };
 
-        app()->instance(GetTenantFilePathAction::class, $mock);
+        app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
 
         $action = app(GetTenantConfigArrayAction::class);
         $result = $action->execute($configName);

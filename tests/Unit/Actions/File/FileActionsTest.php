@@ -19,11 +19,15 @@ test('fix path action works', function (): void {
 });
 
 test('view path action works', function (): void {
-    $mock = Mockery::mock(GetViewNameSpacePathAction::class);
-    /* @phpstan-ignore-next-line Mockery expectation chain not resolvable without extension */
-    $mock->shouldReceive('execute')->with('test_ns')->andReturn('/view/path');
+    // Replace GetViewNameSpacePathAction with a spy that returns test path
+    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
+        public function execute(string $namespace): string
+        {
+            return 'test_ns' === $namespace ? '/view/path' : '';
+        }
+    };
 
-    app()->instance(GetViewNameSpacePathAction::class, $mock);
+    app()->instance(GetViewNameSpacePathAction::class, $getViewNameSpacePathAction);
 
     $action = app(ViewPathAction::class);
     $result = $action->execute('test_ns::folder.view');
@@ -35,9 +39,12 @@ test('view path action works', function (): void {
 });
 
 test('asset path action works', function (): void {
-    Module::shouldReceive('getModulePath')
-        ->with('test_module')
-        ->andReturn('/module/path/');
+    // Spy on Module facade
+    Module::partialMock()->allows([
+        'getModulePath' => function (string $module): string {
+            return 'test_module' === $module ? '/module/path/' : '';
+        },
+    ]);
 
     $action = app(AssetPathAction::class);
     Assert::assertSame('/module/path/resources/css/style.css', $action->execute('test_module::css/style.css'));

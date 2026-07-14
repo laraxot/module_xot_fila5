@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 # Struttura dei Moduli in <nome progetto>
 
 Questo documento definisce le linee guida ufficiali per la struttura dei moduli all'interno del framework <nome progetto>.
@@ -122,6 +126,11 @@ class BlogServiceProvider extends XotBaseServiceProvider {
     }
 }
 ```
+<<<<<<< HEAD
+=======
+>>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
 # Struttura dei Moduli in il progetto
 
 ## Panoramica
@@ -158,6 +167,8 @@ ModuleName/
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
+<<<<<<< HEAD
 - [README](../readme.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -168,6 +179,28 @@ ModuleName/
 - [Cms](../cms/docs/readme.md) - Gestione contenuti
 - [Lang](../lang/docs/readme.md) - Traduzioni
 - [User](../user/docs/readme.md) - Gestione utenti
+=======
+- [README](../README.md) - Panoramica del modulo Xot
+=======
+- [README](../readme.md) - Panoramica del modulo Xot
+>>>>>>> 64619e34 (.)
+- [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
+- [Case Sensitivity](./directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](./namespace-rules.md) - Regole per i namespace
+
+### Moduli Collegati
+<<<<<<< HEAD
+- [UI](../UI/docs/README.md) - Componenti di interfaccia
+- [Cms](../Cms/docs/README.md) - Gestione contenuti
+- [Lang](../Lang/docs/README.md) - Traduzioni
+- [User](../User/docs/README.md) - Gestione utenti
+>>>>>>> a01602c7 (.)
+=======
+- [UI](../ui/docs/readme.md) - Componenti di interfaccia
+- [Cms](../cms/docs/readme.md) - Gestione contenuti
+- [Lang](../lang/docs/readme.md) - Traduzioni
+- [User](../user/docs/readme.md) - Gestione utenti
+>>>>>>> 64619e34 (.)
 
 ## Struttura Dettagliata
 
@@ -325,10 +358,15 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 64619e34 (.)
 - [Componenti Volt](../ui/docs/components/volt.md)
 - [Layout](../ui/docs/layouts.md)
 - [Temi](../ui/docs/themes.md)
 - [Best Practices](../ui/docs/best-practices.md)
+<<<<<<< HEAD
 
 ### Modulo Cms
 - [Frontend](../cms/docs/frontend.md)
@@ -390,6 +428,81 @@ User/
 - [Grafici](../chart/docs/charts.md)
 - [Dashboard](../chart/docs/dashboard.md)
 - [Visualizzazione](../chart/docs/visualization.md)
+=======
+- [Componenti Volt](../UI/docs/components/volt.md)
+- [Layout](../UI/docs/layouts.md)
+- [Temi](../UI/docs/themes.md)
+- [Best Practices](../UI/docs/best-practices.md)
+=======
+>>>>>>> 64619e34 (.)
+
+### Modulo Cms
+- [Frontend](../cms/docs/frontend.md)
+- [Temi](../cms/docs/themes.md)
+- [Contenuti](../cms/docs/content.md)
+- [Convenzioni Filament](../cms/docs/convenzioni-namespace-filament.md)
+
+### Modulo Lang
+- [Traduzioni](../lang/docs/translations.md)
+- [Localizzazione](../lang/docs/localization.md)
+- [API Traduzioni](../lang/docs/api.md)
+
+### Modulo User
+- [Autenticazione](../user/docs/auth.md)
+- [Permessi](../user/docs/permissions.md)
+- [Profilo](../user/docs/profile.md)
+
+### Modulo Patient
+- [Gestione Pazienti](../patient/docs/patients.md)
+- [Cartelle Cliniche](../patient/docs/records.md)
+- [Appuntamenti](../patient/docs/appointments.md)
+
+### Modulo Dental
+- [Trattamenti](../dental/docs/treatments.md)
+- [Pianificazione](../dental/docs/planning.md)
+- [Documenti](../dental/docs/documents.md)
+
+### Modulo Tenant
+- [Multi-tenant](../tenant/docs/multi-tenant.md)
+- [Configurazione](../tenant/docs/configuration.md)
+- [Migrazione](../tenant/docs/migration.md)
+
+### Modulo Media
+- [Gestione File](../media/docs/files.md)
+- [Upload](../media/docs/upload.md)
+- [Storage](../media/docs/storage.md)
+
+### Modulo Notify
+- [Notifiche](../notify/docs/notifications.md)
+- [Email](../notify/docs/email.md)
+- [SMS](../notify/docs/sms.md)
+
+### Modulo Reporting
+- [Report](../reporting/docs/reports.md)
+- [Esportazione](../reporting/docs/export.md)
+- [Analytics](../reporting/docs/analytics.md)
+
+### Modulo Gdpr
+- [Privacy](../gdpr/docs/privacy.md)
+- [Consensi](../gdpr/docs/consents.md)
+- [Sicurezza](../gdpr/docs/security.md)
+
+### Modulo Job
+- [Jobs](../job/docs/jobs.md)
+- [Queue](../job/docs/queue.md)
+- [Scheduling](../job/docs/scheduling.md)
+
+### Modulo Chart
+<<<<<<< HEAD
+- [Grafici](../Chart/docs/charts.md)
+- [Dashboard](../Chart/docs/dashboard.md)
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> a01602c7 (.)
+=======
+- [Grafici](../chart/docs/charts.md)
+- [Dashboard](../chart/docs/dashboard.md)
+- [Visualizzazione](../chart/docs/visualization.md)
+>>>>>>> 64619e34 (.)
 
 # Struttura dei Moduli Laravel
 
@@ -532,4 +645,12 @@ Se trovi una directory con case errato:
 6. Committa le modifiche
 
 ## Collegamenti tra versioni di module_structure.md
+<<<<<<< HEAD
+<<<<<<< HEAD
 * [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
+=======
+* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
+>>>>>>> a01602c7 (.)
+=======
+* [module_structure.md](../../../../../docs/error_analysis/module_structure.md)
+>>>>>>> 64619e34 (.)

@@ -173,3 +173,8 @@ _docs/
 *.rej
 *~headagentdb.rvf
 audit-coverage/
+.vscode/
+.devcontainer/
+.vscode/
+.claude-audit/
+docs/assets/

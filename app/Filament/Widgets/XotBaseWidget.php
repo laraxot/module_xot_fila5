@@ -9,7 +9,6 @@ use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
@@ -53,7 +52,9 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
      */
-    protected string $view = 'xot::filament.widgets.base';
+    /** @var view-string */
+    /** @phpstan-ignore property.defaultValue */
+    protected string $view = '_params_xot';
 
     protected int|string|array $columnSpan = 'full';
 
@@ -61,14 +62,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         $this->resolveView();
     }
-
-    /**
-     * Ottiene lo schema del form.
-     * Deve essere implementato nelle classi figlie.
-     *
-     * @return array<int|string, Component>
-     */
-    abstract public function getFormSchema(): array;
 
     /**
      * Configura il form del widget.

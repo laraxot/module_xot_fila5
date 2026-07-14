@@ -11,19 +11,9 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Illuminate\Testing\TestResponse;
-use Modules\Geo\Phpstan\GeoTraitPhpstanProbe;
-use Modules\Geo\Phpstan\HasAddressesPhpstanProbe;
-use Modules\Geo\Phpstan\HasAddressPhpstanProbe;
-use Modules\Geo\Phpstan\HasPlaceTraitPhpstanProbe;
-use Modules\Job\Phpstan\FormatSecondsPhpstanProbe;
-use Modules\Lang\Phpstan\HasStrictTranslationsPhpstanProbe;
-use Modules\Notify\Phpstan\HasContactPhpstanProbe;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-use Modules\Xot\Phpstan\HasCommonScopesPhpstanProbe;
-use Modules\Xot\Phpstan\HasCustomRelationsPhpstanProbe;
-use Modules\Xot\Phpstan\HasSchemalessAttributesPhpstanProbe;
 
 use function Safe\define;
 use function Safe\preg_match;
@@ -310,66 +300,24 @@ if (! function_exists('xotSeedModelOnce')) {
     }
 }
 
-if (! function_exists('xotPhpstanTraitProbeClasses')) {
-    /**
-     * Registers library trait probe hosts for PHPStan (Pest bridge in PestFunctionBridge.php).
-     *
-     * @return list<class-string>
-     */
-    function xotPhpstanTraitProbeClasses(): array
-    {
-        return [
-            GeoTraitPhpstanProbe::class,
-            HasAddressPhpstanProbe::class,
-            HasPlaceTraitPhpstanProbe::class,
-            HasAddressesPhpstanProbe::class,
-            HasStrictTranslationsPhpstanProbe::class,
-            HasContactPhpstanProbe::class,
-            HasCommonScopesPhpstanProbe::class,
-            HasCustomRelationsPhpstanProbe::class,
-            HasSchemalessAttributesPhpstanProbe::class,
-            FormatSecondsPhpstanProbe::class,
-        ];
-    }
-}
-
 if (! function_exists('merge_translation_files')) {
     /**
-     * Unisce file lang PHP split (claude-audit <500 LOC per file).
+     * Merge multiple PHP translation files into a single array.
      *
-     * @param  string  ...$paths  Path assoluti ai chunk `return [...]`
+     * @param string $first First translation file path
+     * @param string ...$rest Additional translation file paths
+     *
      * @return array<string, mixed>
      */
-    function merge_translation_files(string ...$paths): array
+    function merge_translation_files(string $first, string ...$rest): array
     {
-        /** @var array<string, mixed> $merged */
-        $merged = [];
+        $result = (array) require $first;
 
-        foreach ($paths as $path) {
-            if (! is_file($path)) {
-                continue;
-            }
-
-            /** @var mixed $chunk */
-            $chunk = require $path;
-
-            if (! is_array($chunk)) {
-                continue;
-            }
-
-            $mergedChunk = [];
-            foreach ($chunk as $key => $value) {
-                if (! is_string($key)) {
-                    throw new \UnexpectedValueException('Translation keys must be strings.');
-                }
-
-                $mergedChunk[$key] = $value;
-            }
-
-            $merged = array_replace_recursive($merged, $mergedChunk);
-
+        foreach ($rest as $file) {
+            $result = array_replace_recursive($result, (array) require $file);
         }
 
-        return $merged;
+        /** @phpstan-ignore return.type */
+        return $result;
     }
 }
