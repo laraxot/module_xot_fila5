@@ -9,10 +9,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use InvalidArgumentException;
 use Modules\Xot\Datas\TrendData;
 use Spatie\QueueableAction\QueueableAction;
-use UnexpectedValueException;
 
 class BuildTrendCollectionAction
 {
@@ -21,7 +19,8 @@ class BuildTrendCollectionAction
     /**
      * @template TModel of Model
      *
-     * @param  Builder<TModel>  $query
+     * @param Builder<TModel> $query
+     *
      * @return Collection<int, TrendData>
      */
     public function execute(
@@ -46,13 +45,13 @@ class BuildTrendCollectionAction
             'max' => $trend->max($aggregateColumn),
             'sum' => $trend->sum($aggregateColumn),
             'count' => $trend->count($aggregateColumn),
-            default => throw new InvalidArgumentException('Unsupported trend aggregate.'),
+            default => throw new \InvalidArgumentException('Unsupported trend aggregate.'),
         };
 
         return $values
             ->map(static function (mixed $value): TrendData {
                 if (! $value instanceof TrendValue) {
-                    throw new UnexpectedValueException('Trend returned an invalid value.');
+                    throw new \UnexpectedValueException('Trend returned an invalid value.');
                 }
 
                 return TrendData::from([

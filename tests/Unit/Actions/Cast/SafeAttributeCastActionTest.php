@@ -6,26 +6,23 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
-
-it('manages eloquent attributes safely', function (): void {
-    $model = \Mockery::mock(Activity::class);
-    $model->shouldReceive('getAttribute')->with('name')->andReturn('Test User');
-    $model->shouldReceive('getAttribute')->with('email')->andReturn('');
-    $model->shouldReceive('getAttribute')->with('id')->andReturn(123);
-    $model->shouldReceive('getAttribute')->with('active')->andReturn(1);
-    $model->shouldReceive('getAttribute')->with('missing')->andReturn(null);
+use PHPUnit\Framework\Assert;
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
-        /** @var TestCase $this */
-        $model = $this->createUnitMock(Activity::class);
-        $model->method('getAttribute')->willReturnMap([
-            ['name', 'Test User'],
-            ['email', ''],
-            ['id', 123],
-            ['active', 1],
-            ['missing', null],
-        ]);
+        $model = new class extends Activity {
+            public function getAttribute($key): mixed
+            {
+                return match ($key) {
+                    'name' => 'Test User',
+                    'email' => '',
+                    'id' => 123,
+                    'active' => 1,
+                    'missing' => null,
+                    default => null,
+                };
+            }
+        };
 
     // hasAttribute
     expect($action->hasAttribute($model, 'name'))->toBeTrue();

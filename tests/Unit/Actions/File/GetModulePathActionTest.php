@@ -10,10 +10,12 @@ use PHPUnit\Framework\Assert;
 uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets module path from facade correctly', function (): void {
-    Module::shouldReceive('getModulePath')
-        ->once()
-        ->with('Xot')
-        ->andReturn('/path/to/Xot/');
+    // Spy on Module facade
+    Module::partialMock()->allows([
+        'getModulePath' => function (string $module): string {
+            return 'Xot' === $module ? '/path/to/Xot/' : '';
+        },
+    ]);
 
     $action = app(GetModulePathAction::class);
     $result = $action->execute('Xot');
@@ -22,10 +24,6 @@ it('gets module path from facade correctly', function (): void {
 });
 
 it('gets module path from fallback correctly', function (): void {
-    Module::shouldReceive('getModulePath')
-        ->once()
-        ->andThrow(new \Exception('Module not found'));
-
     // We assume Modules directory exists in base_path
     $modulesPath = base_path('Modules');
     if (! File::exists($modulesPath)) {
@@ -37,6 +35,13 @@ it('gets module path from fallback correctly', function (): void {
     if (! File::exists($dummyModule)) {
         File::makeDirectory($dummyModule);
     }
+
+    // Spy on Module facade to throw exception, forcing fallback
+    Module::partialMock()->allows([
+        'getModulePath' => function (string $module): string {
+            throw new Exception('Module not found');
+        },
+    ]);
 
     $action = app(GetModulePathAction::class);
     // Case-insensitive search

@@ -15,30 +15,52 @@ it('gets tenant config array correctly', function (): void {
 
     File::put($tempPath, 'return '.var_export($configData, true).';');
 
-    $this->mock(GetTenantFilePathAction::class)
-        ->shouldReceive('execute')
-        ->once()
-        ->with($configName.'.php')
-        ->andReturn($tempPath);
+describe('Get Tenant Config Actions', function (): void {
+    test('gets tenant config array correctly', function (): void {
+        $configName = 'test_config';
+        $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
+        $configData = ['key' => 'value'];
 
     $action = app(GetTenantConfigArrayAction::class);
     $result = $action->execute($configName);
 
-    expect($result)->toBe($configData);
+        // Replace GetTenantFilePathAction with a spy that returns the temp path
+        $getTenantFilePathAction = new class($tempPath) extends GetTenantFilePathAction {
+            public function __construct(private string $tempPath)
+            {
+            }
 
-    File::delete($tempPath);
-});
+            public function execute(string $configName): string
+            {
+                return $this->tempPath;
+            }
+        };
 
-it('returns empty array if tenant config file does not exist', function (): void {
-    $configName = 'non_existent';
+        app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
 
-    $this->mock(GetTenantFilePathAction::class)
-        ->shouldReceive('execute')
-        ->once()
-        ->andReturn('/path/to/nothing.php');
+        $action = app(GetTenantConfigArrayAction::class);
+        $result = $action->execute($configName);
 
-    $action = app(GetTenantConfigArrayAction::class);
-    $result = $action->execute($configName);
+        Assert::assertSame($configData, $result);
+        File::delete($tempPath);
+    });
 
-    expect($result)->toBe([]);
+    test('returns empty array if tenant config file does not exist', function (): void {
+        $configName = 'non_existent';
+
+        // Replace GetTenantFilePathAction with a spy that returns a non-existent path
+        $getTenantFilePathAction = new class extends GetTenantFilePathAction {
+            public function execute(string $configName): string
+            {
+                return '/path/to/nothing.php';
+            }
+        };
+
+        app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
+
+        $action = app(GetTenantConfigArrayAction::class);
+        $result = $action->execute($configName);
+
+        Assert::assertSame([], $result);
+    });
 });

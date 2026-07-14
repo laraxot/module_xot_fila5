@@ -19,7 +19,20 @@ trait HasXotFactory
     /**
      * Create a new factory instance for the model.
      *
-     * @return Factory<static>
+     * <<<<<<< HEAD
+     * <<<<<<< HEAD
+     * <<<<<<< HEAD
+     *
+     * @return TFactory
+     *                                  =======
+     * @return Factory<covariant Model>
+     *                                  >>>>>>> 64619e34 (.)
+     *                                  =======
+     * @return TFactory
+     *                                  >>>>>>> 61938ca4 (delete .claude-audit/)
+     *                                  =======
+     * @return TFactory
+     *                                  >>>>>>> 4784e8f0 (.)
      */
     protected static function newFactory()
     {

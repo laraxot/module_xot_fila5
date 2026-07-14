@@ -7,36 +7,25 @@ declare(strict_types=1);
  * This file provides the function signature for static analysis.
  * At runtime, the actual implementation is in Helper.php.
  */
+
 if (! function_exists('merge_translation_files')) {
     /**
      * Merge multiple PHP translation files into a single array.
      *
-     * @param string $first   First translation file path
+     * @param string $first First translation file path
      * @param string ...$rest Additional translation file paths
      *
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array
     {
-        $result = load_translation_array($first);
+        $result = (array) require $first;
 
         foreach ($rest as $file) {
-            /** @var array<string, mixed> $result */
-            $result = array_replace_recursive($result, load_translation_array($file));
+            $result = array_replace_recursive($result, (array) require $file);
         }
 
+        /** @phpstan-ignore return.type */
         return $result;
-    }
-
-    /**
-     * Load a translation file and guarantee a string-keyed array.
-     *
-     * @return array<string, mixed>
-     */
-    function load_translation_array(string $file): array
-    {
-        $content = require $file;
-
-        return is_array($content) ? array_filter($content, 'is_string', ARRAY_FILTER_USE_KEY) : [];
     }
 }

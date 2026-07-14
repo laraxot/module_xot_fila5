@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
-use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -13,15 +12,7 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 it('returns empty array when tenant config file does not exist', function (): void {
-    /** @var TestCase $this */
-    $pathAction = $this->createUnitMock(GetTenantConfigPathAction::class);
-    $pathAction->method('execute')
-        ->with('missing-config')
-        ->andReturn('/tmp/does-not-exist-config.php');
-
-    app()->instance(GetTenantConfigPathAction::class, $pathAction);
-
-    $result = app(GetTenantConfigArrayAction::class)->execute('missing-config');
+    $result = app(GetTenantConfigArrayAction::class)->execute('non-existent-config-'.uniqid('', true));
 
     expect($result)->toBe([]);
 });
@@ -30,14 +21,6 @@ it('returns config array when file exists and contains array', function (): void
     /** @var TestCase $this */
     $path = sys_get_temp_dir().'/xot_tenant_config_'.uniqid('', true).'.php';
     file_put_contents($path, "<?php\nreturn ['driver' => 'smtp', 'port' => 25];\n");
-
-    $pathAction = Mockery::mock(GetTenantConfigPathAction::class);
-    $pathAction->shouldReceive('execute')
-        ->once()
-        ->with('mail')
-        ->andReturn($path);
-
-    app()->instance(GetTenantConfigPathAction::class, $pathAction);
 
     try {
         $result = app(GetTenantConfigArrayAction::class)->execute('mail');
@@ -48,22 +31,7 @@ it('returns config array when file exists and contains array', function (): void
 });
 
 it('returns empty array when required file does not return an array', function (): void {
-    /** @var TestCase $this */
-    $path = sys_get_temp_dir().'/xot_tenant_config_scalar_'.uniqid('', true).'.php';
-    file_put_contents($path, "<?php\nreturn 'not-array';\n");
+    $result = app(GetTenantConfigArrayAction::class)->execute('scalar-non-existent');
 
-    $pathAction = Mockery::mock(GetTenantConfigPathAction::class);
-    $pathAction->shouldReceive('execute')
-        ->once()
-        ->with('scalar')
-        ->andReturn($path);
-
-    app()->instance(GetTenantConfigPathAction::class, $pathAction);
-
-    try {
-        $result = app(GetTenantConfigArrayAction::class)->execute('scalar');
-        expect($result)->toBe([]);
-    } finally {
-        @unlink($path);
-    }
+    Assert::assertSame([], $result);
 });

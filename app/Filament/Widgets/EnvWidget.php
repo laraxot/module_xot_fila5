@@ -30,6 +30,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
     /** @var list<string> */
     public array $only = [];
 
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'xot::filament.widgets.env';
 
     public function mount(): void

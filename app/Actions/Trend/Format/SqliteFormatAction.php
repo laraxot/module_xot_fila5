@@ -15,7 +15,7 @@ class SqliteFormatAction extends BaseFormatAction
             'day' => '%Y-%m-%d',
             'month' => '%Y-%m',
             'year' => '%Y',
-            default => throw new \Error('Invalid interval.'),
+            default => throw new \InvalidArgumentException('Invalid interval.'),
         };
 
         return sprintf("strftime('%s', %s)", $format, $column);

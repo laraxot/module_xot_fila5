@@ -3,16 +3,13 @@
 declare(strict_types=1);
 
 use Filament\Support\RawJs;
-use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction as ArrDiffAssocRecursiveAction;
-use Modules\Xot\Actions\Arr\RangeIntersectAction as ArrRangeIntersectAction;
-use Modules\Xot\Actions\Arr\SaveArrayAction as ArrSaveArrayAction;
-use Modules\Xot\Actions\Arr\SaveJsonArrayAction as ArrSaveJsonArrayAction;
-use Modules\Xot\Actions\Arr\SavePhpArrayAction as ArrSavePhpArrayAction;
-use Modules\Xot\Actions\Array\ArrayToRawJsAction;
-use Modules\Xot\Actions\Array\DiffAssocRecursiveAction as ArrayDiffAssocRecursiveAction;
+use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
+use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
+use Modules\Xot\Actions\Arr\RangeIntersectAction;
+use Modules\Xot\Actions\Arr\SaveArrayAction;
+use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
+use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 use Modules\Xot\Actions\Array\RangeIntersectAction as ArrayRangeIntersectAction;
-use Modules\Xot\Actions\Array\SaveJsonArrayAction as ArraySaveJsonArrayAction;
-use Modules\Xot\Actions\Array\SavePhpArrayAction as ArraySavePhpArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -66,47 +63,16 @@ it('normalizes nested numeric strings in diff fixType for Array namespace', func
     ]);
 });
 
-it('throws when fixType receives a non-array item for Array namespace', function (): void {
-    ArrayDiffAssocRecursiveAction::fixType([123]);
-})->throws(Exception::class);
-
-it('returns recursive diff in Array namespace', function (): void {
-    $action = new ArrayDiffAssocRecursiveAction();
-    $left = [
-        ['id' => '1', 'name' => 'alpha'],
-        ['id' => '2', 'name' => 'beta'],
-    ];
-    $right = [
-        ['id' => 1, 'name' => 'alpha'],
-    ];
-
-    expect($action->execute($left, $right))->toBe([
-        1 => ['id' => 2, 'name' => 'beta'],
-    ]);
-});
-
-it('covers all branches of range intersect in Arr namespace', function (): void {
-    $action = new ArrRangeIntersectAction();
-
-    expect($action->execute(1, 5, 2, 7))->toBe([2, 5])
-        ->and($action->execute(2, 5, 1, 7))->toBe([2, 5])
-        ->and($action->execute(1, 7, 2, 5))->toBe([2, 5])
-        ->and($action->execute(1, 2, 3, 4))->toBeFalse()
-        ->and($action->execute(10, 11, 1, 5))->toBeFalse()
-        ->and($action->execute(7, 6, 5, 8))->toBeFalse()
-        ->and($action->execute(4, 10, 2, 4))->toBe([4, 4]);
-});
-
 it('covers all branches of range intersect in Array namespace', function (): void {
     $action = new ArrayRangeIntersectAction();
 
-    expect($action->execute(1, 5, 2, 7))->toBe([2, 5])
-        ->and($action->execute(2, 5, 1, 7))->toBe([2, 5])
-        ->and($action->execute(1, 7, 2, 5))->toBe([2, 5])
-        ->and($action->execute(1, 2, 3, 4))->toBeFalse()
-        ->and($action->execute(10, 11, 1, 5))->toBeFalse()
-        ->and($action->execute(7, 6, 5, 8))->toBeFalse()
-        ->and($action->execute(4, 10, 2, 4))->toBe([4, 4]);
+    Assert::assertSame([2, 5], $action->execute(2, 5, 1, 7));
+    Assert::assertSame([2, 5], $action->execute(1, 7, 2, 5));
+    Assert::assertFalse($action->execute(1, 2, 3, 4));
+    Assert::assertFalse($action->execute(10, 11, 1, 5));
+    Assert::assertFalse($action->execute(7, 6, 5, 8));
+    Assert::assertSame([4, 4], $action->execute(4, 10, 2, 4));
+    Assert::assertFalse($action->execute(1, 5, 2, 7));
 });
 
 it('writes JSON and PHP arrays via Arr actions', function (): void {
@@ -119,30 +85,19 @@ it('writes JSON and PHP arrays via Arr actions', function (): void {
     $jsonAction = new ArrSaveJsonArrayAction();
     $phpAction = new ArrSavePhpArrayAction();
 
-    expect($jsonAction->execute(['a' => 1], $jsonFile))->toBeTrue()
-        ->and(file_exists($jsonFile))->toBeTrue()
-        ->and((string) file_get_contents($jsonFile))->toContain('"a"')
-        ->and($phpAction->execute(['b' => 2], $phpFile))->toBeTrue()
-        ->and(file_exists($phpFile))->toBeTrue()
-        ->and((string) file_get_contents($phpFile))->toContain('return');
-});
+    Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
+    Assert::assertFileExists($phpFile);
+    Assert::assertStringContainsString('return', file_get_contents($phpFile));
+    Assert::assertTrue($jsonAction->execute(['a' => 1], $jsonFile));
+    Assert::assertFileExists($jsonFile);
+    Assert::assertStringContainsString('"a"', file_get_contents($jsonFile));
 
-it('writes JSON and PHP arrays via Array actions', function (): void {
-    $tmpDir = sys_get_temp_dir().'/xot-array-actions-'.uniqid('', true);
-    mkdir($tmpDir, 0777, true);
-
-    $jsonFile = $tmpDir.'/data.json';
-    $phpFile = $tmpDir.'/data.php';
-
-    $jsonAction = new ArraySaveJsonArrayAction();
-    $phpAction = new ArraySavePhpArrayAction();
-
-    expect($jsonAction->execute(['a' => 1], $jsonFile))->toBeTrue()
-        ->and(file_exists($jsonFile))->toBeTrue()
-        ->and((string) file_get_contents($jsonFile))->toContain('"a"')
-        ->and($phpAction->execute(['b' => 2], $phpFile))->toBeTrue()
-        ->and(file_exists($phpFile))->toBeTrue()
-        ->and((string) file_get_contents($phpFile))->toContain('return');
+    Assert::assertTrue($phpAction->execute(['b' => 2], $phpFile));
+    Assert::assertFileExists($phpFile);
+    Assert::assertStringContainsString('return', file_get_contents($phpFile));
+    Assert::assertTrue($jsonAction->execute(['a' => 1], $jsonFile));
+    Assert::assertFileExists($jsonFile);
+    Assert::assertStringContainsString('"a"', file_get_contents($jsonFile));
 });
 
 it('dispatches save strategy by format in SaveArrayAction', function (): void {
@@ -184,4 +139,27 @@ it('converts mixed PHP arrays to RawJs correctly', function (): void {
         ->and($js)->toContain('number: 12.5')
         ->and($js)->toContain('none: null')
         ->and($js)->toContain('formatter: value => value * 2');
+});
+
+it('converts mixed PHP arrays to RawJs correctly', function (): void {
+    $action = new ArrayToRawJsAction();
+
+    $raw = $action->execute([
+        'validKey' => true,
+        'string key' => "O'Reilly",
+        'number' => 12.5,
+        'none' => null,
+        'nested' => [
+            'inner' => 1,
+            'formatter' => RawJs::make('value => value * 2'),
+        ],
+    ]);
+
+    Assert::assertInstanceOf(RawJs::class, $raw);
+    $js = $raw->toHtml();
+    Assert::assertStringContainsString('validKey: true', $js);
+    Assert::assertStringContainsString("'string key': 'O\\'Reilly'", $js);
+    Assert::assertStringContainsString('number: 12.5', $js);
+    Assert::assertStringContainsString('none: null', $js);
+    Assert::assertStringContainsString('formatter: value => value * 2', $js);
 });

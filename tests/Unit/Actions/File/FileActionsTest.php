@@ -20,11 +20,16 @@ test('fix path action works', function () {
     expect($action->execute($path))->toBe($expected);
 });
 
-test('view path action works', function () {
-    $this->mock(GetViewNameSpacePathAction::class)
-        ->shouldReceive('execute')
-        ->with('test_ns')
-        ->andReturn('/view/path');
+test('view path action works', function (): void {
+    // Replace GetViewNameSpacePathAction with a spy that returns test path
+    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
+        public function execute(string $namespace): string
+        {
+            return 'test_ns' === $namespace ? '/view/path' : '';
+        }
+    };
+
+    app()->instance(GetViewNameSpacePathAction::class, $getViewNameSpacePathAction);
 
     $action = app(ViewPathAction::class);
     $result = $action->execute('test_ns::folder.view');
@@ -35,10 +40,13 @@ test('view path action works', function () {
     expect($result)->toBe($expected);
 });
 
-test('asset path action works', function () {
-    Module::shouldReceive('getModulePath')
-        ->with('test_module')
-        ->andReturn('/module/path/');
+test('asset path action works', function (): void {
+    // Spy on Module facade
+    Module::partialMock()->allows([
+        'getModulePath' => function (string $module): string {
+            return 'test_module' === $module ? '/module/path/' : '';
+        },
+    ]);
 
     $action = app(AssetPathAction::class);
     expect($action->execute('test_module::css/style.css'))->toBe('/module/path/resources/css/style.css');

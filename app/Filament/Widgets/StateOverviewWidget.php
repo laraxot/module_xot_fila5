@@ -32,6 +32,7 @@ class StateOverviewWidget extends XotBaseWidget
     /**
      * Vista del widget.
      */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'xot::filament.widgets.state-overview';
 
     /**

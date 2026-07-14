@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * Class MorphToOneAction.
@@ -21,7 +19,7 @@ use Webmozart\Assert\Assert;
  */
 class MorphToOneAction
 {
-    use QueueableAction;
+    use \Spatie\QueueableAction\QueueableAction;
 
     /**
      * Execute the action to create a MorphToOne relationship.

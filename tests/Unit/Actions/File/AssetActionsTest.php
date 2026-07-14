@@ -22,7 +22,11 @@ it('handles absolute urls in AssetAction', function (): void {
 it('returns path if asset already exists in public folder', function (): void {
     /** @var TestCase $this */
     $path = 'css/app.css';
-    File::shouldReceive('exists')->with(public_path($path))->andReturn(true);
+
+    // Spy on File facade to simulate existing file
+    File::partialMock()->allows([
+        'exists' => true,
+    ]);
 
     $action = app(AssetAction::class);
     expect($action->execute($path))->toBe($path);
@@ -35,19 +39,42 @@ it('resolves module assets correctly in AssetAction', function (): void {
     $from = $modulePath.'/resources/css/style.css';
     $to = public_path('assets/Xot/css/style.css');
 
-    // Mocks
-    $this->mock(GetModulePathAction::class)
-        ->shouldReceive('execute')->with('Xot')->andReturn($modulePath);
+    // Replace GetModulePathAction with a spy
+    $getModulePathAction = new class($modulePath) extends GetModulePathAction {
+        public function __construct(private string $modulePath)
+        {
+        }
 
-    $this->mock(FixPathAction::class)
-        ->shouldReceive('execute')->andReturnArg(0);
+        public function execute(string $module): string
+        {
+            return $this->modulePath;
+        }
+    };
 
-    File::shouldReceive('exists')->with(public_path($path))->andReturn(false);
-    File::shouldReceive('exists')->with($from)->andReturn(true);
-    File::shouldReceive('exists')->with($to)->andReturn(true);
-    // Since we are not in production, forceCopy will be true, we might need more mocks for copy
-    File::shouldReceive('exists')->with(dirname($to))->andReturn(true);
-    File::shouldReceive('copy')->once();
+    app()->instance(GetModulePathAction::class, $getModulePathAction);
+
+    // Replace FixPathAction with a spy (identity function)
+    $fixPathAction = new class extends FixPathAction {
+        public function execute(string $path): string
+        {
+            return $path;
+        }
+    };
+
+    app()->instance(FixPathAction::class, $fixPathAction);
+
+    // Spy on File facade for all file operations
+    File::partialMock()->allows([
+        'exists' => function (string $checkPath) use ($path, $from, $to): bool {
+            return in_array($checkPath, [
+                public_path($path),
+                $from,
+                $to,
+                dirname($to),
+            ], true) && $checkPath !== public_path($path);
+        },
+        'copy' => true,
+    ]);
 
     $action = app(AssetAction::class);
     $result = $action->execute($path);
@@ -56,10 +83,12 @@ it('resolves module assets correctly in AssetAction', function (): void {
 });
 
 it('calculates asset path correctly in AssetPathAction', function (): void {
-    Module::shouldReceive('getModulePath')
-        ->once()
-        ->with('User')
-        ->andReturn('/path/to/User/');
+    // Spy on Module facade
+    Module::partialMock()->allows([
+        'getModulePath' => function (string $module): string {
+            return 'User' === $module ? '/path/to/User/' : '';
+        },
+    ]);
 
     $action = app(AssetPathAction::class);
     $result = $action->execute('User::js/app.js');

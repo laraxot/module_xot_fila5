@@ -15,7 +15,7 @@ class PgsqlFormatAction extends BaseFormatAction
             'day' => 'YYYY-MM-DD',
             'month' => 'YYYY-MM',
             'year' => 'YYYY',
-            default => throw new \Error('Invalid interval.'),
+            default => throw new \InvalidArgumentException('Invalid interval.'),
         };
 
         return sprintf("to_char(%s, '%s')", $column, $format);
