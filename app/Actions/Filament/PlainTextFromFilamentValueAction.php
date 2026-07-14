@@ -7,13 +7,6 @@ namespace Modules\Xot\Actions\Filament;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Contracts\Support\Htmlable;
 use Spatie\QueueableAction\QueueableAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Stringable;
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
 
 /**
  * Plain text for Filament grid labels — Htmlable, enum HasLabel, scalar.
@@ -32,15 +25,7 @@ class PlainTextFromFilamentValueAction
             return $value;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (is_scalar($value) || $value instanceof \Stringable) {
-=======
-        if (is_scalar($value) || $value instanceof Stringable) {
->>>>>>> 64619e34 (.)
-=======
-        if (is_scalar($value) || $value instanceof \Stringable) {
->>>>>>> 61938ca4 (delete .claude-audit/)
             return (string) $value;
         }
 
@@ -48,15 +33,7 @@ class PlainTextFromFilamentValueAction
             return $this->execute($value->getLabel(), $fallback);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (is_scalar($fallback) || $fallback instanceof \Stringable) {
-=======
-        if (is_scalar($fallback) || $fallback instanceof Stringable) {
->>>>>>> 64619e34 (.)
-=======
-        if (is_scalar($fallback) || $fallback instanceof \Stringable) {
->>>>>>> 61938ca4 (delete .claude-audit/)
             return (string) $fallback;
         }
 

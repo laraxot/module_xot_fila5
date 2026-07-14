@@ -96,18 +96,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     {
         return [];
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
 
     public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
     }
-<<<<<<< HEAD
-=======
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)
 }

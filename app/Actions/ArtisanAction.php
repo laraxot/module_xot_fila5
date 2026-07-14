@@ -19,7 +19,6 @@ use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
-use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 if (! defined('STDIN')) {
@@ -105,10 +104,6 @@ class ArtisanAction
             case 'error-clear':
                 return self::errorClear();
             case 'spatiecache-clear':
-<<<<<<< HEAD
-=======
-
->>>>>>> 61938ca4 (delete .claude-audit/)
             default:
                 return '';
         }

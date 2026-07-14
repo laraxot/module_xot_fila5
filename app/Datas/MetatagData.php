@@ -15,7 +15,6 @@ use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-use Modules\Xot\Actions\PaDesignColorsAction;
 
 use function Safe\file_get_contents;
 
@@ -403,15 +402,7 @@ class MetatagData extends Data implements Wireable
      */
     public function getFilamentColors(): array
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
         return app(PaDesignColorsAction::class)->filamentPalette();
-=======
-        return PaDesignColors::filamentPalette();
->>>>>>> 64619e34 (.)
-=======
-        return app(PaDesignColorsAction::class)->filamentPalette();
->>>>>>> 61938ca4 (delete .claude-audit/)
     }
 
     /**

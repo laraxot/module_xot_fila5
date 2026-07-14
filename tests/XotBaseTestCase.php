@@ -23,14 +23,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
-=======
->>>>>>> 64619e34 (.)
-=======
-use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
->>>>>>> 61938ca4 (delete .claude-audit/)
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
 
 /**
@@ -154,10 +147,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $this->exactly($count);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
     /**
      * @phpstan-ignore return.internalClass
      */
@@ -166,11 +155,6 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $this->atLeastOnce();
     }
 
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);

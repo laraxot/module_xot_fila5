@@ -52,8 +52,10 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     /**
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
+     *
      */
-    protected string $view = 'xot::filament.widgets.base';
+    /** @var view-string */
+    protected string $view = '_params_xot';
 
     protected int|string|array $columnSpan = 'full';
 
@@ -61,31 +63,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     {
         $this->resolveView();
     }
-
-    /**
-     * Ottiene lo schema del form.
-     * Deve essere implementato nelle classi figlie.
-     *
-     * @return array<int|string, Component>
-     */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    abstract public function getFormSchema(): array;
-=======
-<<<<<<< .merge_file_umPDPr
-    protected function getFormSchema(): array
-    {
-        // Implementazione default vuota
-        // Override nelle classi figlie se necessario
-        return [];
-    }
-=======
-    abstract public function getFormSchema(): array;
->>>>>>> .merge_file_b6trfI
->>>>>>> a01602c7 (.)
-=======
-    abstract public function getFormSchema(): array;
->>>>>>> 64619e34 (.)
 
     /**
      * Configura il form del widget.
