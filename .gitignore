@@ -184,3 +184,4 @@ audit-coverage/
 .vscode/
 .claude-audit/
 >>>>>>> 61938ca4 (delete .claude-audit/)
+.claude-audit/
