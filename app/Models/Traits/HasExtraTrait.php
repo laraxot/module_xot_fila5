@@ -17,7 +17,6 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\Xot\Models\HasExtraTrait.
  *
- *
  * @property string             $currency
  * @property float              $price
  * @property string             $price_complete

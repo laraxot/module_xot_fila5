@@ -10,7 +10,6 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 class EnvWidget extends XotBaseSchemaWidget
 {
