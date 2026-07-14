@@ -22,11 +22,19 @@ describe('Get Tenant Config Actions', function (): void {
 
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
+<<<<<<< HEAD
         // Replace GetTenantFilePathAction with a spy that returns the temp path
         $getTenantFilePathAction = new class($tempPath) extends GetTenantFilePathAction {
             public function __construct(private string $tempPath)
             {
             }
+=======
+        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+        $mock->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->with($configName.'.php')
+            ->willReturn($tempPath);
+>>>>>>> 2353ccee (.)
 
             public function execute(string $configName): string
             {
@@ -46,6 +54,7 @@ describe('Get Tenant Config Actions', function (): void {
     test('returns empty array if tenant config file does not exist', function (): void {
         $configName = 'non_existent';
 
+<<<<<<< HEAD
         // Replace GetTenantFilePathAction with a spy that returns a non-existent path
         $getTenantFilePathAction = new class extends GetTenantFilePathAction {
             public function execute(string $configName): string
@@ -53,6 +62,12 @@ describe('Get Tenant Config Actions', function (): void {
                 return '/path/to/nothing.php';
             }
         };
+=======
+        $mock = $this->createUnitMock(GetTenantFilePathAction::class);
+        $mock->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->willReturn('/path/to/nothing.php');
+>>>>>>> 2353ccee (.)
 
         app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
 

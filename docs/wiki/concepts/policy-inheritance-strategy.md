@@ -2,8 +2,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)
 ## 🔴 REGOLA CRITICA: mai cancellare policy modello
 
 `app/Models/Policies/{Model}Policy.php` è **obbligatoria** per Laravel/Filament anche se il body è solo `class XPolicy extends *BasePolicy {}`.
@@ -17,10 +20,13 @@ Regola agenti: [bashscripts/ai/.agents/docs/rules/model-policy-never-delete.md](
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 64619e34 (.)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)
 ## REGOLA PERMANENTE: Gerarchia corretta delle Policy Base
 
 ### Panoramica
@@ -111,6 +117,7 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 - `Modules/User/docs/wiki/concepts/userpolicy-domain-specific.md`
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 =======
 - Root wiki: `docs/wiki/concepts/laraxot-policy-inheritance.md`
@@ -118,3 +125,6 @@ grep -r "extends.*XotBasePolicy" laravel/Modules/User/app/Models/Policies/
 =======
 - Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+- Root wiki: [docs/wiki/concepts/model-policy-laravel-contract.md](../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md)
+>>>>>>> 2353ccee (.)

@@ -23,6 +23,7 @@
 - 🗑️ [Cleanup Plan](./cleanup-action-plan.md) - Strategia per consolidare documenti accumulati.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
 =======
@@ -31,6 +32,10 @@
 - 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
 - ✅ [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - Include la chiusura di HtmlService e la scomposizione di RouteService in Action contestuali con ingresso unico `execute()`.
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+- 🪮 [Ponytail audit over-engineering](./ponytail-audit-over-engineering.md) - GetFactoryAction, contracts, vincoli MetatagData/XotData.
+- 🔁 [Migrazione Services -> QueueableAction](./wiki/decisions/services-to-actions-migration.md) - UrlService/ThemeService/HtmlService migrati ad Actions; ConfigService/XotService/ArrayService/ProfileTest archiviati in .bak (codice morto); ArtisanService/RouteService/ModuleService/Translators/Trend lasciati intatti per sessione dedicata.
+>>>>>>> 2353ccee (.)
 
 ## 🔗 Moduli Dipendenti
 - Tutti i moduli del sistema dipendono da **Xot**.
@@ -39,6 +44,7 @@
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 # Xot Module Documentation Index
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -99,6 +105,8 @@
 >>>>>>> 64619e34 (.)
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)
 > **Core Framework Module** - Provides base classes and shared functionality for all modules
 
 ## Roadmap
@@ -178,6 +186,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
 =======
 - [Dependency intelligence](dependency-intelligence.md)
@@ -185,3 +194,6 @@
 =======
 - [Dependency intelligence](dependency-intelligence.md)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> 2353ccee (.)

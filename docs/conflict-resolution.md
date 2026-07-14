@@ -33,6 +33,7 @@
 
 ---
 Ultimo aggiornamento: 2025-01-06
+<<<<<<< HEAD
 ---
 module: theme
 topic: conflict-resolution
@@ -91,3 +92,5 @@ canonical: ../../../Themes/docs/shared-components/conflict-resolution-report.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-report.md
 >>>>>>> 64619e34 (.)
+=======
+>>>>>>> 2353ccee (.)

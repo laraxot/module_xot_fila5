@@ -2,11 +2,16 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e questo progetto aderisce a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 =======
+=======
+Tutte le modifiche significative al modulo Xot saranno documentate in questo file.
+
+>>>>>>> 2353ccee (.)
 ## [2025-06-04] - Sessione Fix Critica
 >>>>>>> 64619e34 (.)
 
@@ -74,6 +79,7 @@ All notable changes to `:package_name` will be documented in this file.
 - Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
 - Link relativi ai documenti di dettaglio
 - Focus su COSA è cambiato e PERCHÉ
+<<<<<<< HEAD
 =======
 >>>>>>> 61938ca4 (delete .claude-audit/)
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
@@ -240,3 +246,5 @@ All notable changes to `:package_name` will be documented in this file.
 =======
 **Versioning:** [Semantic Versioning](https://semver.org/)
 >>>>>>> 61938ca4 (delete .claude-audit/)
+=======
+>>>>>>> 2353ccee (.)

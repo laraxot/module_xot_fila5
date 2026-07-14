@@ -13,6 +13,7 @@ uses(TestCase::class);
 
 describe('Get Tenant Config Path Action', function (): void {
     test('delegates to tenant file path action with php filename', function (): void {
+<<<<<<< HEAD
         // Replace GetTenantFilePathAction with a spy that returns a specific path
         $tenantPathAction = new class extends GetTenantFilePathAction {
             public function execute(string $configName): string
@@ -20,6 +21,14 @@ describe('Get Tenant Config Path Action', function (): void {
                 return '/tmp/tenant/'.$configName.'.php';
             }
         };
+=======
+        /** @var TestCase $this */
+        $tenantPathAction = $this->createUnitMock(GetTenantFilePathAction::class);
+        $tenantPathAction->expects($this->expectsAtLeastOnce())
+            ->method('execute')
+            ->with('mail.php')
+            ->willReturn('/tmp/tenant/mail.php');
+>>>>>>> 2353ccee (.)
 
         app()->instance(GetTenantFilePathAction::class, $tenantPathAction);
 

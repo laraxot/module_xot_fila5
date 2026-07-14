@@ -22,6 +22,7 @@ describe('Safe Array By Model Cast Action', function (): void {
     });
 
     test('falls back to safe execute on error', function (): void {
+<<<<<<< HEAD
         $model = new class extends Model {
             public function attributesToArray(): array
             {
@@ -38,6 +39,12 @@ describe('Safe Array By Model Cast Action', function (): void {
                 return 'Fallback';
             }
         };
+=======
+        $model = $this->createUnitMock(Model::class);
+        $model->method('attributesToArray')->willThrowException(new \Exception('Mock error'));
+        $model->method('getAttributes')->willReturn(['name' => 'Fallback']);
+        $model->method('getAttribute')->willReturn('Fallback');
+>>>>>>> 2353ccee (.)
 
         $action = app(SafeArrayByModelCastAction::class);
         $result = $action->execute($model);

@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
+<<<<<<< HEAD
         $model = new class extends Activity {
             public function getAttribute($key): mixed
             {
@@ -23,6 +24,16 @@ describe('Safe Attribute Cast Action', function (): void {
                 };
             }
         };
+=======
+        $model = $this->createUnitMock(Activity::class);
+        $model->method('getAttribute')->willReturnMap([
+            ['name', 'Test User'],
+            ['email', ''],
+            ['id', 123],
+            ['active', 1],
+            ['missing', null],
+        ]);
+>>>>>>> 2353ccee (.)
 
         $action = app(SafeAttributeCastAction::class);
 

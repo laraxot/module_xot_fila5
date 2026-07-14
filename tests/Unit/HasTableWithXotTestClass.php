@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< HEAD
 // Xot Pest/PHPUnit — claude-audit documentation ratio.
 // Xot Pest/PHPUnit — claude-audit documentation ratio.
 
+=======
+>>>>>>> 2353ccee (.)
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
 use Modules\Xot\Filament\Traits\HasXotTable;

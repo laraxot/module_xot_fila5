@@ -130,7 +130,11 @@ class HandlerDecorator implements ExceptionHandler
     {
         return array_filter(
             $this->reporters,
+<<<<<<< HEAD
             fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+=======
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+>>>>>>> 2353ccee (.)
         );
     }
 
@@ -143,7 +147,11 @@ class HandlerDecorator implements ExceptionHandler
     {
         return array_filter(
             $this->renderers,
+<<<<<<< HEAD
             fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+=======
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+>>>>>>> 2353ccee (.)
         );
     }
 
@@ -156,7 +164,11 @@ class HandlerDecorator implements ExceptionHandler
     {
         return array_filter(
             $this->consoleRenderers,
+<<<<<<< HEAD
             fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+=======
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+>>>>>>> 2353ccee (.)
         );
     }
 
