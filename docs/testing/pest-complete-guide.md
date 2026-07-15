@@ -411,9 +411,6 @@ it('can create user', function () {
 - Esegui le migrazioni appropriate per la connessione specifica del modulo
 - Assicurati che il percorso delle migrazioni sia corretto
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## CI/CD Integration with GitHub Actions
 
 ### Database setup in CI (two test databases required)
@@ -487,10 +484,6 @@ php artisan migrate --env=testing --force
 ## Correzione nota: MySQL, non SQLite
 
 Questo progetto usa **MySQL** per i test (non SQLite in-memory), per garantire parità con la produzione. Il file `.env.testing` configura `DB_CONNECTION=mysql` con `DB_DATABASE=<nome progetto>_data_test`. I TestCase dei moduli usano `DatabaseTransactions` per isolare senza distruggere il DB.
-
->>>>>>> a01602c7 (.)
-=======
->>>>>>> 64619e34 (.)
 ## Conclusione
 
 Questa configurazione garantisce che Pest funzioni correttamente con l'architettura modulare di Laraxot, rispettando i principi di modularità e mantenendo la separazione tra i componenti del sistema. Seguendo queste regole, tutti i test saranno conformi all'architettura Laraxot e funzioneranno correttamente.
