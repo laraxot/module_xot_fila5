@@ -148,7 +148,6 @@ class ImportCsvAction
      * @return array<ColumnData>
      *
      * @deprecated this method is currently unused but kept for future expansion
-     *
      */
     private function transformColumnsToColumnData(array $columns): array
     {
