@@ -138,9 +138,14 @@ use HasSpatiePermission, HasTeams {
 
 Wiki: [User trait-alias-conflict-resolution](../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md)
 
-### Problema 2 — `UserContract::teams()` generics
+### Problema 2 — `UserContract` relation generics (`generics.notSubtype`)
 
-`static(UserContract)` non è sottotipo di `Model` su `BelongsToMany`. Allineato a `BelongsToMany<Model&TeamContract, $this>` + `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`).
+Su un'interfaccia con `@phpstan-require-extends Model`, `$this` nel secondo template di `HasOne`/`BelongsToMany` non è sottotipo di `TDeclaringModel` (Model). Pattern canonico Laraxot (come `ProfileContract::user()` → `BelongsTo<Model&UserContract, Model>`):
+
+- declaring model: `Model&static` (o `Model` plain) — **non** `$this(UserContract)`
+- es.: `HasOne<Model&ProfileContract, Model&static>`, `BelongsToMany<Model, Model&static>`
+
+Issue #175 — niente `@phpstan-ignore` su queste relazioni.
 
 ### Problema 3 — `Article::scopePublishedUntilToday()`
 
