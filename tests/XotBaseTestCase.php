@@ -131,25 +131,16 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $mock;
     }
 
-    /**
-     * @phpstan-ignore return.internalClass
-     */
     public function expectsOnce(): InvokedCount
     {
         return $this->once();
     }
 
-    /**
-     * @phpstan-ignore return.internalClass
-     */
     public function expectsExactly(int $count): InvokedCount
     {
         return $this->exactly($count);
     }
 
-    /**
-     * @phpstan-ignore return.internalClass
-     */
     public function expectsAtLeastOnce(): InvokedAtLeastOnce
     {
         return $this->atLeastOnce();

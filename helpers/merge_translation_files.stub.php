@@ -24,7 +24,6 @@ if (! function_exists('merge_translation_files')) {
             $result = array_replace_recursive($result, (array) require $file);
         }
 
-        /* @phpstan-ignore return.type */
         return $result;
     }
 }

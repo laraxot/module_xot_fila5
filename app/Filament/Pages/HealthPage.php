@@ -82,7 +82,6 @@ class HealthPage extends XotBasePage
          * all extend Check, but their types are not recognized due to dynamic loading.
          * We suppress this specific error as the runtime type is guaranteed to be correct.
          *
-         * @phpstan-ignore-next-line argument.type
          */
         Health::checks($checks);
         Artisan::call(RunHealthChecksCommand::class);

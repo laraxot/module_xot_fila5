@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -196,7 +197,7 @@ class GetPdfContentByRecordAction
             // Generate and return PDF content as binary string
             return $html2pdf->output('', 'S'); // 'S' returns string content
         } catch (\Exception $e) {
-            \Log::error('PDF generation failed in GetPdfContentByRecordAction', [
+            Log::error('PDF generation failed in GetPdfContentByRecordAction', [
                 'filename' => $filename,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
