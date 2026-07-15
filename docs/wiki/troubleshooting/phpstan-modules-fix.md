@@ -3,7 +3,7 @@ title: "PHPStan Modules — stato e fix"
 type: troubleshooting
 sources: ["phpstan analyse Modules"]
 confidence: verified
-updated: 2026-06-30
+updated: 2026-07-15
 tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
@@ -11,6 +11,10 @@ related:
   - concepts/phpstan-trait-probes.md
   - concepts/xot-seed-model-once.md
 qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
+issues:
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/711"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 ---
 
 # PHPStan su `Modules` — stato e fix
@@ -18,16 +22,18 @@ qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ## Comando canonico
 
 ```bash
-cd laravel && ./vendor/bin/phpstan clear-result-cache
-cd laravel && ./vendor/bin/phpstan analyse Modules
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan clear-result-cache
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules --no-progress
 ```
 
 Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non modificare** `phpstan.neon` — fix solo su codice PHP/test.
 
-## Stato attuale (2026-06-30)
+## Stato attuale (2026-07-15 sessione 3)
 
-- `./vendor/bin/phpstan analyse Modules` → **0 errori**, exit 0
-- Moduli analizzati: AI, Activity, Blog, Cms, Comment, Gdpr, Geo, Job, Lang, Media, Notify, Predict, Rating, Seo, Tenant, UI, User, Xot
+- `phpstan analyse Modules` → **0 errori**, exit 0 (swarm 112→0)
+- Log: `build/phpstan/phpstan_modules_2026-07-15-session3-final.log`
+- Handoff: `docs/chat/phpstan-modules-swarm-session3.md`
+- Pattern Xot: `UserContract` generics (`Model&static`), `HealthPage` `Check[]`, stub merge translations typed
 
 ## Fix strutturali (ponytail — una guard condivisa)
 
