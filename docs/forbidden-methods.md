@@ -1,14 +1,3 @@
----
-title: "Metodi da NON implementare in classi che estendono XotBaseResource"
-module: "Xot"
-type: rule
-tags: [forbidden, methods]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "forbidden methods"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Metodi da NON implementare in classi che estendono XotBaseResource
 
 ## Regola fondamentale

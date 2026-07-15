@@ -1,14 +1,3 @@
----
-title: "Comandi Console in Moduli Laraxot"
-module: "Xot"
-type: how-to
-tags: [tutorial]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "tutorial"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 https://fly.io/laravel-bytes/console-applications-with-laravel-zero/
 
 # Comandi Console in Moduli Laraxot

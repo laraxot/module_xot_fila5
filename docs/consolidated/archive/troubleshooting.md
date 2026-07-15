@@ -1,14 +1,3 @@
----
-title: "Risoluzione Problemi PHPStan"
-module: "Xot"
-type: concept
-tags: [troubleshooting]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "troubleshooting"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Problemi PHPStan
 
 ## Errore Vite Manifest

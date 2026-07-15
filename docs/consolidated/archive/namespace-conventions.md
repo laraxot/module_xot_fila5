@@ -1,14 +1,3 @@
----
-title: "Convenzioni dei Namespace nel Modulo Xot"
-module: "Xot"
-type: concept
-tags: [namespace, conventions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "namespace conventions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzioni dei Namespace nel Modulo Xot
 
 ## Panoramica

@@ -1,14 +1,3 @@
----
-title: "Correzioni Effettuate per Errori PHPStan"
-module: "Xot"
-type: concept
-tags: [fixes, effettuate]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "fixes effettuate"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzioni Effettuate per Errori PHPStan
 
 Questo documento riassume le correzioni applicate per risolvere gli errori PHPStan di livello 9 nel codice.

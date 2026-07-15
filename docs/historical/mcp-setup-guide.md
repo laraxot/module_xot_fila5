@@ -1,14 +1,3 @@
----
-title: "Model Context Protocol (MCP) Setup Guide"
-module: "Xot"
-type: how-to
-tags: [mcp, setup, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp setup guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Model Context Protocol (MCP) Setup Guide
 
 ## Overview

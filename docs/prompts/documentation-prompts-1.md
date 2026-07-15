@@ -1,14 +1,3 @@
----
-title: "Prompt di Documentazione"
-module: "Xot"
-type: concept
-tags: [documentation, prompts, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation prompts 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Prompt di Documentazione
 
 ## Panoramica

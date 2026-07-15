@@ -1,14 +1,3 @@
----
-title: "Xot Module - Model Classification"
-module: "Xot"
-type: concept
-tags: [model, classification]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "model classification"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)

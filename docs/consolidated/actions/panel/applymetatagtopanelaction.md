@@ -1,14 +1,3 @@
----
-title: "ApplyMetatagToPanelAction"
-module: "Xot"
-type: concept
-tags: [applymetatagtopanelaction]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "applymetatagtopanelaction"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ApplyMetatagToPanelAction
 
 ## Descrizione
@@ -46,5 +35,5 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 - [MetatagData](../../datas/MetatagData.md)
 - [Filament Best Practices](../../filament-best-practices.md)
 - [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md)
-- [Filament Best Practices](../../FILAMENT-BEST-PRACTICES.md)
+- [Filament Best Practices](filament-best-practices.md)
 - [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md)

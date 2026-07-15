@@ -1,14 +1,3 @@
----
-title: "XotBaseRelationManager per Laraxot PTVX"
-module: "Xot"
-type: concept
-tags: [relation, managers, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "relation managers 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica

@@ -1,14 +1,3 @@
----
-title: "Modulo Xot - Ottimizzazioni per Modularità"
-module: "Xot"
-type: concept
-tags: [modularity, optimizations]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "modularity optimizations"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Modulo Xot - Ottimizzazioni per Modularità
 
 ## Problemi Identificati

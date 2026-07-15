@@ -1,14 +1,3 @@
----
-title: "Mass Fix Errori Sintassi PHP"
-module: "Xot"
-type: concept
-tags: [syntax, errors, mass, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "syntax errors mass fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Mass Fix Errori Sintassi PHP
 
 > **Versione**: 1.0

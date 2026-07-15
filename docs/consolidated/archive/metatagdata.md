@@ -1,14 +1,3 @@
----
-title: "MetatagData"
-module: "Xot"
-type: concept
-tags: [metatagdata]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "metatagdata"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MetatagData
 
 ## Descrizione
@@ -145,4 +134,4 @@ Restituisce il percorso del favicon.
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
 - [PHPStan Common Exceptions](../PHPSTAN-COMMON-EXCEPTIONS.md)
-- [Data Queableactions](../DATA-QUEABLEACTIONS.md)
+- [Data Queableactions](data-queableactions.md)

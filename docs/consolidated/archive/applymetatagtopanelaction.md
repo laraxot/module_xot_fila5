@@ -1,14 +1,3 @@
----
-title: "ApplyMetatagToPanelAction"
-module: "Xot"
-type: concept
-tags: [applymetatagtopanelaction]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "applymetatagtopanelaction"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ApplyMetatagToPanelAction
 
 ## Descrizione
@@ -25,7 +14,7 @@ Applica le configurazioni metatag al pannello Filament.
 - `Panel` - Il pannello configurato
 
 ## Dipendenze
-- [MetatagData](../../datas/MetatagData.md)
+- [MetatagData](metatagdata.md)
 
 ## Errori PHPStan Comuni
 1. Chiamata al metodo inesistente `getColors()`
@@ -43,8 +32,8 @@ Applica le configurazioni metatag al pannello Filament.
 La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `getColors()` a `getFilamentColors()`. Questo metodo è specificamente progettato per restituire i colori nel formato richiesto da Filament.
 
 ## Collegamenti
-- [MetatagData](../../datas/MetatagData.md)
+- [MetatagData](metatagdata.md)
 - [Filament Best Practices](../../filament-best-practices.md)
-- [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md)
-- [Filament Best Practices](../../FILAMENT-BEST-PRACTICES.md)
-- [PHPStan Common Exceptions](../../PHPSTAN-COMMON-EXCEPTIONS.md)
+- [PHPStan Common Exceptions](phpstan-common-exceptions.md)
+- [Filament Best Practices](filament-best-practices.md)
+- [PHPStan Common Exceptions](phpstan-common-exceptions.md)

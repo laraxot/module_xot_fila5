@@ -1,14 +1,3 @@
----
-title: "Laraxot Migration Philosophy - Single Source of Truth"
-module: "Xot"
-type: concept
-tags: [MIGRATION, PHILOSOPHY]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Migration Philosophy - Single Source of Truth
 
 ## The Sacred Rule

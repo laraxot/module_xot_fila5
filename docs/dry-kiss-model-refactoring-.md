@@ -1,14 +1,3 @@
----
-title: "DRY/KISS Model Refactoring Analysis - 2025-10-15"
-module: "Xot"
-type: concept
-tags: [dry, kiss, model, refactoring]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "dry kiss model refactoring "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
 
 ## Executive Summary

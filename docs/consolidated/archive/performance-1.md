@@ -1,14 +1,3 @@
----
-title: "_performance"
-module: "Xot"
-type: concept
-tags: [performance, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "performance 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # _performance
 
 <!-- Contenuto migrato da _docs/_performance.txt -->

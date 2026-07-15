@@ -1,14 +1,3 @@
----
-title: "Documentation Organization Guide"
-module: "Xot"
-type: how-to
-tags: [docs, organization, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "docs organization guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Documentation Organization Guide
 
 > **Guida completa per organizzare e mantenere la documentazione dei moduli**

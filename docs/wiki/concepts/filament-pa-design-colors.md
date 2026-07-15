@@ -1,14 +1,3 @@
----
-title: "Filament — palette PA Design Comuni"
-module: "Xot"
-type: concept
-tags: [filament, pa, design, colors]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament pa design colors"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament — palette PA Design Comuni
 
 ## Scopo

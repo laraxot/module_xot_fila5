@@ -1,14 +1,3 @@
----
-title: "Pagine Dashboard Filament - Documentazione Root"
-module: "Xot"
-type: concept
-tags: [filament, dashboard, pages]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament dashboard pages"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Pagine Dashboard Filament - Documentazione Root
 
 ## Panoramica

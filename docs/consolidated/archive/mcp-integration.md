@@ -1,14 +1,3 @@
----
-title: "Integrazione dei Server MCP con il Modulo Xot"
-module: "Xot"
-type: concept
-tags: [mcp, integration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp integration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Integrazione dei Server MCP con il Modulo Xot
 
 ## Panoramica

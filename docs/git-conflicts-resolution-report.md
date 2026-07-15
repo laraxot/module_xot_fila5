@@ -1,14 +1,3 @@
----
-title: "Report Risoluzione Conflitti Git - PTVX"
-module: "Xot"
-type: concept
-tags: [git, conflicts, resolution, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Report Risoluzione Conflitti Git - PTVX
 
 ## Riepilogo

@@ -1,14 +1,3 @@
----
-title: "Analisi e Risoluzione Colli di Bottiglia - Modulo UI"
-module: "Xot"
-type: concept
-tags: [ui]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ui"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi e Risoluzione Colli di Bottiglia - Modulo UI
 
 ## 1. Performance Re-render (Priorità: Alta)

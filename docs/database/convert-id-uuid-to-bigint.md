@@ -1,14 +1,3 @@
----
-title: "convertIdFromUuidToBigintIfNeeded - Metodo XotBaseMigration"
-module: "Xot"
-type: concept
-tags: [convert, id, uuid, bigint]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "convert id uuid to bigint"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # convertIdFromUuidToBigintIfNeeded - Metodo XotBaseMigration
 
 ## Scopo

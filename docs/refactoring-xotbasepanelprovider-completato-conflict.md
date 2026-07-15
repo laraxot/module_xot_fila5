@@ -1,14 +1,3 @@
----
-title: "✅ REFACTORING XotBasePanelProvider COMPLETATO"
-module: "Xot"
-type: concept
-tags: [refactoring, xotbasepanelprovider, completato, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "refactoring xotbasepanelprovider completato conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ✅ REFACTORING XotBasePanelProvider COMPLETATO
 
 ## OBIETTIVI RAGGIUNTI

@@ -1,14 +1,3 @@
----
-title: "Laraxot Philosophy - Quick Reference"
-module: "Xot"
-type: concept
-tags: [laraxot, philosophy, quick, reference]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laraxot philosophy quick reference"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Philosophy - Quick Reference
 
 ## 🚨 CRITICAL RULES

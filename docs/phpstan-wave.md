@@ -1,14 +1,3 @@
----
-title: "Phpstan Wave"
-module: "Xot"
-type: concept
-tags: [phpstan, wave]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan wave"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 <?php
 
 declare(strict_types=1);

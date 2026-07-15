@@ -1,14 +1,3 @@
----
-title: "Analisi Pacchetti Installati - <nome progetto> Fila5 Mono"
-module: "Xot"
-type: how-to
-tags: [installed, packages, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "installed packages analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi Pacchetti Installati - <nome progetto> Fila5 Mono
 
 Documentazione generata il 2026-02-26 basata su `composer show`.

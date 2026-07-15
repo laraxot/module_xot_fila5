@@ -1,14 +1,3 @@
----
-title: "Errore Cache Path Mancante"
-module: "Xot"
-type: concept
-tags: [cache, path]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "cache path"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Errore Cache Path Mancante
 
 ## Descrizione dell'Errore

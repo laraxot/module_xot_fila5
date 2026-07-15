@@ -1,14 +1,3 @@
----
-title: "Filament Integration in Laraxot"
-module: "Xot"
-type: concept
-tags: [filament, integration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament integration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Integration in Laraxot
 
 ## Resource Implementation

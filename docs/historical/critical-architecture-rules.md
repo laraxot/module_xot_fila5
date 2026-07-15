@@ -1,14 +1,3 @@
----
-title: "Regole Critiche di Architettura Laraxot"
-module: "Xot"
-type: rule
-tags: [critical, architecture, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "critical architecture rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole Critiche di Architettura Laraxot
 
 **ULTIMO AGGIORNAMENTO**: 2025-01-XX

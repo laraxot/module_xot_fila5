@@ -1,14 +1,3 @@
----
-title: "Ottimizzazione Re-render Folio + Volt"
-module: "Xot"
-type: concept
-tags: [folio, volt]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "folio volt"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Ottimizzazione Re-render Folio + Volt
 
 ## Stato
@@ -56,4 +45,4 @@ related:
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Architettura Folio + Volt](../../FOLIO_VOLT_ARCHITECTURE.md)
-- [Best Practices](../../BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)

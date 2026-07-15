@@ -1,14 +1,3 @@
----
-title: "Laravel XOT Architecture Documentation"
-module: "Xot"
-type: concept
-tags: [laraxot]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laraxot"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laravel XOT Architecture Documentation
 
 ## Overview

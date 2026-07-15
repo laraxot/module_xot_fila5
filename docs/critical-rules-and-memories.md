@@ -1,14 +1,3 @@
----
-title: "Laravel Pizza Project Rules and Memories"
-module: "Xot"
-type: rule
-tags: [critical, rules, memories]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "critical rules and memories"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laravel Pizza Project Rules and Memories
 
 ## Critical Architectural Rules

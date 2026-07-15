@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Fix Implementation Plan"
-module: "Xot"
-type: concept
-tags: [fix, implementation, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "fix implementation plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 Fix Implementation Plan
 
 ## Overview

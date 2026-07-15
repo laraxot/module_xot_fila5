@@ -1,14 +1,3 @@
----
-title: "Convenzione Naming File Test - Xot Module"
-module: "Xot"
-type: concept
-tags: [test, naming, convention]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "test naming convention"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzione Naming File Test - Xot Module
 
 **Modulo:** Xot (Core Framework)

@@ -1,14 +1,3 @@
----
-title: "Analisi Metodi Duplicati - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [analisi, metodi, duplicati]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "analisi metodi duplicati"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi Metodi Duplicati - Modulo Xot
 
 ## 🐄✨ Riferimenti Principali

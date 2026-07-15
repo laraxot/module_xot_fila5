@@ -1,14 +1,3 @@
----
-title: "Claude Code Laraxot Rules Path Scoping"
-module: "Xot"
-type: rule
-tags: [claude, code, laraxot, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "claude code laraxot rules path scoping"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Claude Code Laraxot Rules Path Scoping
 
 ## Decisione

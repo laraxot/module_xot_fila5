@@ -1,14 +1,3 @@
----
-title: "Xot Module - Core Foundation"
-module: "Xot"
-type: concept
-tags: [readme, new]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme new"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
@@ -676,7 +665,7 @@ Located in `bashscripts/`:
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
-See [CHANGELOG.md](./CHANGELOG.md) for full history.
+See [CHANGELOG.md](changelog.md) for full history.
 
 ---
 

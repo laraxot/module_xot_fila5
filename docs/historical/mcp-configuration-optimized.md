@@ -1,14 +1,3 @@
----
-title: "Configurazione MCP Ottimizzata per base_techplanner_fila4_mono"
-module: "Xot"
-type: concept
-tags: [mcp, configuration, optimized]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp configuration optimized"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
 
 **Data Creazione**: 2025-01-27

@@ -1,14 +1,3 @@
----
-title: "Filament Resource Creation Fix - Risoluzione Errori di Compatibilità"
-module: "Xot"
-type: concept
-tags: [filament, resource, creation, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament resource creation fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Resource Creation Fix - Risoluzione Errori di Compatibilità
 
 ## Problema

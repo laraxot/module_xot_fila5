@@ -1,14 +1,3 @@
----
-title: "Studio TDD, Pest e Laravel Modules"
-module: "Xot"
-type: concept
-tags: [tdd, pest, study]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "tdd pest study"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Studio TDD, Pest e Laravel Modules
 
 ## Riferimenti Studiate

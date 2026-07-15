@@ -51,8 +51,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     /**
      * Vista predefinita per widget che estendono XotBaseWidget.
      * Deve essere sovrascritta nelle classi figlie.
-     *
-     * @var view-string
      */
     protected string $view = 'xot::filament.widgets.base';
 

@@ -1,14 +1,3 @@
----
-title: "Best Practices - Documentazione Consolidata DRY + KISS"
-module: "Xot"
-type: concept
-tags: [best, practices, consolidated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "best practices consolidated"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Best Practices - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le best practices del progetto

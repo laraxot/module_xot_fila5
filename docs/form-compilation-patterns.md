@@ -1,14 +1,3 @@
----
-title: "Form Compilation Patterns - Laraxot Standards"
-module: "Xot"
-type: pattern
-tags: [form, compilation, patterns]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "form compilation patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Form Compilation Patterns - Laraxot Standards
 
 **Project**: PTVX Fila5 Mono  

@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto: XotBaseServiceProvider"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, serviceprovider]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution serviceprovider"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto
@@ -37,10 +26,10 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
-- [Best Practices Provider](./BEST-PRACTICES.md)
+- [Best Practices Provider](best-practices.md)
 - [docs/links.md globale](../../../../project_docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../project_docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
-- [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+- [docs/BEST-PRACTICES.md](best-practices.md)

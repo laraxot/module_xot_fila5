@@ -1,14 +1,3 @@
----
-title: "PHPStan Session - Gennaio 2026 - Riepilogo Completo"
-module: "Xot"
-type: concept
-tags: [phpstan, session, januarysummary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan session januarysummary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
 **Data**: 2026-01-22  

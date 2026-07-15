@@ -1,14 +1,3 @@
----
-title: "Laraxot Migration Architecture Philosophy"
-module: "Xot"
-type: concept
-tags: [migration, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Migration Architecture Philosophy
 
 ## Core Migration Principles

@@ -1,14 +1,3 @@
----
-title: "Panoramica del Progetto <nome progetto>"
-module: "Xot"
-type: concept
-tags: [overview]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "overview"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Panoramica del Progetto <nome progetto>
 
 ## Cos'è <nome progetto>

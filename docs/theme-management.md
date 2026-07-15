@@ -1,14 +1,3 @@
----
-title: "Gestione del Tema"
-module: "Xot"
-type: concept
-tags: [theme, management]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "theme management"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Gestione del Tema
 

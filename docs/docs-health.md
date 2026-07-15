@@ -1,14 +1,3 @@
----
-title: "Docs Health - Xot"
-module: "Xot"
-type: concept
-tags: [docs, health]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "docs health"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Docs Health - Xot
 
 ## Snapshot

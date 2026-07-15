@@ -1,14 +1,3 @@
----
-title: "ApplyMetatagToPanelAction"
-module: "Xot"
-type: concept
-tags: [metatag, panel, action]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "metatag panel action"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ApplyMetatagToPanelAction
 
 ## Descrizione
@@ -41,7 +30,7 @@ L'azione accetta un'istanza di `Panel` come parametro di riferimento e applica l
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
 - [PHPStan Guidelines](../PHPSTAN-LEVEL9-GUIDE.md)
-- [Spatie QueueableAction Documentation](../DATA-QUEABLEACTIONS.md)
+- [Spatie QueueableAction Documentation](data-queableactions.md)
 
 ## Modifiche e Miglioramenti
 - Risoluzione dei conflitti di merge

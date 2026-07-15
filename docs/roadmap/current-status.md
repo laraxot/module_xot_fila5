@@ -1,14 +1,3 @@
----
-title: "Xot Module - Current Status"
-module: "Xot"
-type: concept
-tags: [current, status]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "current status"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Current Status
 
 ## 📋 Table of Contents

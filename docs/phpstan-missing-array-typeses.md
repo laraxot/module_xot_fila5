@@ -1,14 +1,3 @@
----
-title: "PHPStan Missing Array Types Fixes - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [phpstan, missing, array, typeses]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan missing array typeses"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Missing Array Types Fixes - Modulo Xot
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

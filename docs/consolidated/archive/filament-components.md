@@ -1,14 +1,3 @@
----
-title: "Componenti Filament - Guida di Riferimento"
-module: "Xot"
-type: concept
-tags: [filament, components]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament components"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Componenti Filament - Guida di Riferimento
 
 ## FileUpload Component

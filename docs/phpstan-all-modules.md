@@ -1,14 +1,3 @@
----
-title: "Analisi PHPStan - Tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [phpstan, all, modules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan all modules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi PHPStan - Tutti i Moduli
 
 **Obiettivo**: Analisi sistematica completa di tutti i moduli con PHPStan

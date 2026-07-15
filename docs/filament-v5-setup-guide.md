@@ -1,14 +1,3 @@
----
-title: "🎨 FILAMENT V5 SETUP GUIDE - Base Predict Fila5"
-module: "Xot"
-type: how-to
-tags: [filament, v5, setup, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament v5 setup guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🎨 FILAMENT V5 SETUP GUIDE - Base Predict Fila5
 
 **Version**: 5.x  

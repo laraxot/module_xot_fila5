@@ -1,14 +1,3 @@
----
-title: "Piano Correzione Warning PHPMD - XotBaseRelationManager"
-module: "Xot"
-type: concept
-tags: [phpmd, fixes, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd fixes plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Piano Correzione Warning PHPMD - XotBaseRelationManager
 
 **Data**: 2025-12-23

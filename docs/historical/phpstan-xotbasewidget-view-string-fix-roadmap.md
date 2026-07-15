@@ -1,14 +1,3 @@
----
-title: "PHPStan Fix Roadmap - XotBaseWidget View-String Error"
-module: "Xot"
-type: concept
-tags: [phpstan, xotbasewidget, view, string]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan xotbasewidget view string fix roadmap"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Fix Roadmap - XotBaseWidget View-String Error
 
 **Data**: 2025-01-22

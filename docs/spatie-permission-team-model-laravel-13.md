@@ -1,14 +1,3 @@
----
-title: "Spatie Permission team model on Laravel 13"
-module: "Xot"
-type: concept
-tags: [spatie, permission, team, model]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "spatie permission team model laravel 13"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Spatie Permission team model on Laravel 13
 
 ## Why Xot cares

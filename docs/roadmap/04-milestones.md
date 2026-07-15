@@ -1,14 +1,3 @@
----
-title: "Milestones - Xot"
-module: "Xot"
-type: concept
-tags: [04, milestones]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "04 milestones"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Milestones - Xot
 
 ## M1 Documentation Baseline

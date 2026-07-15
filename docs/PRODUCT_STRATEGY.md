@@ -1,14 +1,3 @@
----
-title: "Xot Module - Product Strategy"
-module: "Xot"
-type: concept
-tags: [PRODUCT, STRATEGY]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "product strategy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Product Strategy
 
 **Module:** Xot  

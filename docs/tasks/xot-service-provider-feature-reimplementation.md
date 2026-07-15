@@ -1,14 +1,3 @@
----
-title: "Task: XotServiceProvider Feature Re-implementation"
-module: "Xot"
-type: concept
-tags: [xot, service, provider, feature]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot service provider feature reimplementation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Task: XotServiceProvider Feature Re-implementation
 
 **Modulo**: Xot  

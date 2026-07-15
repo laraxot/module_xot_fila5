@@ -1,14 +1,3 @@
----
-title: "Report Risoluzione Conflitti Git - Develop Branch"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Report Risoluzione Conflitti Git - Develop Branch
 

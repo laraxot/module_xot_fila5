@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Fixes - Xot Module"
-module: "Xot"
-type: concept
-tags: [phpstan, level10, xot, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 xot fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 Fixes - Xot Module
 
 ## 📋 Riepilogo Intervento

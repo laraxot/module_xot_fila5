@@ -1,14 +1,3 @@
----
-title: "Strategia Risoluzione Conflitti Git - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [git, conflicts, resolution, strategy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts resolution strategy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Strategia Risoluzione Conflitti Git - Modulo Xot
 
 ## Contesto

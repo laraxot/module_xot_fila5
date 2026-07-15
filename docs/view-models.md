@@ -1,14 +1,3 @@
----
-title: "View Models"
-module: "Xot"
-type: concept
-tags: [view, models]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "view models"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
 

@@ -1,14 +1,3 @@
----
-title: "XotBasePage getModel() Fix - Risoluzione Errore Static/Non-Static"
-module: "Xot"
-type: concept
-tags: [xotbasepage, getmodel, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbasepage getmodel fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBasePage getModel() Fix - Risoluzione Errore Static/Non-Static
 
 ## Problema

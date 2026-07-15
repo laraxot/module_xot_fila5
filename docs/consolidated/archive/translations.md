@@ -1,14 +1,3 @@
----
-title: "Ottimizzazione Cache Traduzioni"
-module: "Xot"
-type: concept
-tags: [translations]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translations"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Ottimizzazione Cache Traduzioni
 
 ## Stato
@@ -56,7 +45,7 @@ related:
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Gestione Traduzioni](../../translations.md)
-- [Best Practices](../../BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)
 ## Collegamenti tra versioni di translations.md
 * [translations.md](../../../Chart/project_docs/translations.md)
 * [translations.md](../../../Reporting/project_docs/translations.md)

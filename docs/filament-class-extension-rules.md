@@ -1,14 +1,3 @@
----
-title: "Filament Class Extension Rules - Laraxot Framework"
-module: "Xot"
-type: rule
-tags: [filament, class, extension, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament class extension rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Class Extension Rules - Laraxot Framework
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase

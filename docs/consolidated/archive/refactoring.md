@@ -1,14 +1,3 @@
----
-title: "Refactoring del Modulo Xot"
-module: "Xot"
-type: concept
-tags: [refactoring]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "refactoring"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Refactoring del Modulo Xot
 
 ## Trait Rimossi
@@ -73,4 +62,4 @@ class YourModel extends Model
 ## Collegamenti
 - [Laravel Relationships](https://laravel.com/project_docs/relationships)
 - [Spatie Laravel Data](https://spatie.be/project_docs/laravel-data)
-- [Best Practices](BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)

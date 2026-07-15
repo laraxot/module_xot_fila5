@@ -1,14 +1,3 @@
----
-title: "Export XLS - File di traduzione"
-module: "Xot"
-type: concept
-tags: [export, xls]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "export xls"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Export XLS - File di traduzione
 

@@ -1,14 +1,3 @@
----
-title: "InformationSchemaTable"
-module: "Xot"
-type: concept
-tags: [information, schema, table]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "information schema table"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # InformationSchemaTable
 
 ## Descrizione
@@ -52,7 +41,7 @@ class InformationSchemaTable extends Model
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
-- [Database Guidelines](../DATABASE-GUIDELINES.md)
-- [Schema Documentation](../DIRECTORY-STRUCTURE-GUIDE.md)
+- [Database Guidelines](database-guidelines.md)
+- [Schema Documentation](directory-structure-guide.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Model Best Practices](../models/README.md)

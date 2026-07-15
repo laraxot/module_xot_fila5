@@ -1,14 +1,3 @@
----
-title: "Real Data vs Mock Testing Strategy - Xot Module"
-module: "Xot"
-type: concept
-tags: [real, data, vs, mock]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "real data vs mock testing strategy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Real Data vs Mock Testing Strategy - Xot Module
 
 ## 🎯 Strategic Testing Approaches

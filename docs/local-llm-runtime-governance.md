@@ -1,14 +1,3 @@
----
-title: "Local LLM Runtime Governance"
-module: "Xot"
-type: concept
-tags: [local, llm, runtime, governance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "local llm runtime governance"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Local LLM Runtime Governance
 
 ## Perche' esiste

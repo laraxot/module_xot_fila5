@@ -1,14 +1,3 @@
----
-title: "Directory Structure Rules - No Duplications (DRY)"
-module: "Xot"
-type: rule
-tags: [DIRECTORY, STRUCTURE, RULES]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "directory structure rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Directory Structure Rules - No Duplications (DRY)
 
 ## Regola Fondamentale

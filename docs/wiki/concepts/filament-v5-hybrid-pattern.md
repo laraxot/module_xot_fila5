@@ -1,14 +1,3 @@
----
-title: "Filament v5 Hybrid Pattern (XotBase + configure())"
-module: "Xot"
-type: pattern
-tags: [filament, v5, hybrid, pattern]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament v5 hybrid pattern"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament v5 Hybrid Pattern (XotBase + configure())
 
 **Status**: 🟡 Draft (Pending Story 8-91 Implementation)  

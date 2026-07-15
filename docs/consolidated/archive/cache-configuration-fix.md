@@ -1,14 +1,3 @@
----
-title: "Risoluzione Errore Configurazione Cache"
-module: "Xot"
-type: concept
-tags: [cache, configuration, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "cache configuration fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Errore Configurazione Cache
 
 ## Problema

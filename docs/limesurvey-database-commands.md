@@ -1,14 +1,3 @@
----
-title: "Database Analysis Commands and Tools for quaeris_survey"
-module: "Xot"
-type: concept
-tags: [limesurvey, database, commands]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "limesurvey database commands"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Database Analysis Commands and Tools for quaeris_survey
 
 ## Essential Database Queries

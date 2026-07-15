@@ -1,14 +1,3 @@
----
-title: "Regole per le Risorse Filament in <nome progetto>"
-module: "Xot"
-type: rule
-tags: [filament, resource, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament resource rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole per le Risorse Filament in <nome progetto>
 
 ## Panoramica

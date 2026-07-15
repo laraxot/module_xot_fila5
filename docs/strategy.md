@@ -1,14 +1,3 @@
----
-title: "Product Strategy: Xot Core"
-module: "Xot"
-type: concept
-tags: [strategy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "strategy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Product Strategy: Xot Core
 
 ## 🌍 Market Context

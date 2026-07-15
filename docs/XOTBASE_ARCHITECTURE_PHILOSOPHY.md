@@ -1,14 +1,3 @@
----
-title: "🧘 XotBase Architecture - Philosophy & Zen"
-module: "Xot"
-type: concept
-tags: [XOTBASE, ARCHITECTURE, PHILOSOPHY]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbase architecture philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🧘 XotBase Architecture - Philosophy & Zen
 
 **Path**: `Modules/Xot/docs/XOTBASE_ARCHITECTURE_PHILOSOPHY.md`  

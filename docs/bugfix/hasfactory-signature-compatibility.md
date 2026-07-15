@@ -1,14 +1,3 @@
----
-title: "Bugfix: HasFactory newFactory() Signature Compatibility"
-module: "Xot"
-type: concept
-tags: [hasfactory, signature, compatibility]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hasfactory signature compatibility"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Bugfix: HasFactory newFactory() Signature Compatibility
 
 **Data Fix**: 11 Novembre 2025

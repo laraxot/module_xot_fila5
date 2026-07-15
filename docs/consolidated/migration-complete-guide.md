@@ -1,14 +1,3 @@
----
-title: "Migration Complete Guide - Consolidated"
-module: "Xot"
-type: how-to
-tags: [migration, complete, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration complete guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migration Complete Guide - Consolidated
 
 ## Overview

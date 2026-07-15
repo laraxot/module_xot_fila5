@@ -1,14 +1,3 @@
----
-title: "📝 Documentazione Conflitti Git"
-module: "Xot"
-type: concept
-tags: [git, conflict, template]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflict template"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 📝 Documentazione Conflitti Git
 
 ## 🔍 Analisi Conflitto

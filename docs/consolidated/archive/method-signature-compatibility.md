@@ -1,14 +1,3 @@
----
-title: "errore di compatibilità nelle firme dei metodi"
-module: "Xot"
-type: concept
-tags: [method, signature, compatibility]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "method signature compatibility"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # errore di compatibilità nelle firme dei metodi
 
 ## problema

@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Compliance - Xot Module"
-module: "Xot"
-type: concept
-tags: [phpstan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 Compliance - Xot Module
 
 > **Status**: ✅ Level 10 Achieved

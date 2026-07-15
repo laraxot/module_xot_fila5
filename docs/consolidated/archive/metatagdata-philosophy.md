@@ -1,14 +1,3 @@
----
-title: "Filosofia dei Getter Semantici in MetatagData"
-module: "Xot"
-type: concept
-tags: [metatagdata, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "metatagdata philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filosofia dei Getter Semantici in MetatagData
 
 ## Premessa

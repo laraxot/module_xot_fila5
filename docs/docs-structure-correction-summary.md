@@ -1,14 +1,3 @@
----
-title: "Correzione Struttura Cartelle Docs - Riepilogo Completo"
-module: "Xot"
-type: concept
-tags: [docs, structure, correction, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "docs structure correction summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -211,7 +200,7 @@ find laravel/Themes -name "docs" -type d
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
-- [Struttura Progetto](project-structure.md)
+- [Struttura Progetto](PROJECT-STRUCTURE.md)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---

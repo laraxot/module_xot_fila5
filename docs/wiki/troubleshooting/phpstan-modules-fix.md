@@ -239,6 +239,6 @@ php artisan about
 
 ## Related
 
-- [phpstan-cluster-map-and-false-friends](concepts/phpstan-cluster-map-and-false-friends.md)
-- [safe-functions-rule](../../../../docs/wiki/concepts/safe-functions-rule.md)
-- [phpstan-level10](concepts/phpstan-level10.md)
+- [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
+- [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
+- [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)

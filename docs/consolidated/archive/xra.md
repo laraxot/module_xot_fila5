@@ -1,14 +1,3 @@
----
-title: "Xra"
-module: "Xot"
-type: concept
-tags: [xra]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xra"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ~~~ php
 <?php
 

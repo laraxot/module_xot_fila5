@@ -1,14 +1,3 @@
----
-title: "📚 Xot Module - Documentation Index"
-module: "Xot"
-type: concept
-tags: [index, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "index 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 📚 Xot Module - Documentation Index
 
 **Path**: `laravel/Modules/Xot/docs/`  

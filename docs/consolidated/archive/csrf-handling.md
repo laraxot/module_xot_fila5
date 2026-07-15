@@ -1,14 +1,3 @@
----
-title: "CSRF Token Handling in Xot"
-module: "Xot"
-type: concept
-tags: [csrf, handling]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "csrf handling"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # CSRF Token Handling in Xot
 
 ## Table of Contents

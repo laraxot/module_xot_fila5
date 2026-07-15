@@ -1,14 +1,3 @@
----
-title: "Filosofia dei Metodi Getter in Xot"
-module: "Xot"
-type: concept
-tags: [getter]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "getter"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Filosofia dei Metodi Getter in Xot
 

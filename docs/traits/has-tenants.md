@@ -1,14 +1,3 @@
----
-title: "Trait HasTenants"
-module: "Xot"
-type: concept
-tags: [has, tenants]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "has tenants"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Trait HasTenants
 
 ## Descrizione

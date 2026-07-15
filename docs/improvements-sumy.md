@@ -1,14 +1,3 @@
----
-title: "Riepilogo Miglioramenti e Analisi - [DATE]"
-module: "Xot"
-type: concept
-tags: [improvements, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "improvements sumy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Riepilogo Miglioramenti e Analisi - [DATE]
 
 **Metodologia**: Super Mucca  

@@ -1,14 +1,3 @@
----
-title: "Code Quality Improvements - Xot Module"
-module: "Xot"
-type: concept
-tags: [code, quality, improvements]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality improvements"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code Quality Improvements - Xot Module
 
 ## Overview

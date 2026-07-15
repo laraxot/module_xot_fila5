@@ -1,14 +1,3 @@
----
-title: "Correzione Classi Data Mancanti in Laraxot"
-module: "Xot"
-type: concept
-tags: [missing, data, classes, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "missing data classes fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzione Classi Data Mancanti in Laraxot
 
 ## Analisi del Problema

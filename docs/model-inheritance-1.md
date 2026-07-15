@@ -1,14 +1,3 @@
----
-title: "Audit Ereditarietà Modelli - Tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [model, inheritance, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "model inheritance 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit
@@ -320,7 +309,7 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 ## Collegamenti
 
 - [DRY/KISS Analysis](../../../../dry_kiss_analysis.md) - **Analisi completa duplicazioni e piano refactoring**
-- [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
+- [DRY/KISS Refactoring](DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
 - [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
 - [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)

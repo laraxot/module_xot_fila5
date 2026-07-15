@@ -1,14 +1,3 @@
----
-title: "Testing - Documentazione Consolidata DRY + KISS"
-module: "Xot"
-type: concept
-tags: [testing, consolidated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing consolidated"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Testing - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di testing del progetto

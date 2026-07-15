@@ -1,14 +1,3 @@
----
-title: "Laraxot Architecture: Philosophy, Religion, Politics, and Zen"
-module: "Xot"
-type: concept
-tags: [laraxot, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laraxot architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)

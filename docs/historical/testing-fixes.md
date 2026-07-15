@@ -1,14 +1,3 @@
----
-title: "🧪 Fix Testing Issues - Laravel 12 Migration"
-module: "Xot"
-type: concept
-tags: [testing, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🧪 Fix Testing Issues - Laravel 12 Migration
 
 ## Panoramica

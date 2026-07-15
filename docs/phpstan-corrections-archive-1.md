@@ -1,14 +1,3 @@
----
-title: "PHPStan Corrections - Gennaio 2026"
-module: "Xot"
-type: concept
-tags: [phpstan, corrections, archive, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan corrections archive 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Corrections - Gennaio 2026
 
 **Data**: 2026-01-22  

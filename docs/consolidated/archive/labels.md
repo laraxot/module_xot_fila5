@@ -1,14 +1,3 @@
----
-title: "Labels - File di traduzione"
-module: "Xot"
-type: concept
-tags: [labels]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "labels"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Labels - File di traduzione
 
 Il file `labels.php` contiene tutte le etichette e i testi utilizzati nel modulo Xot.

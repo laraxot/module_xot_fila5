@@ -1,14 +1,3 @@
----
-title: "Filament 5.x Migration Guide"
-module: "Xot"
-type: concept
-tags: [filament4, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament4 migration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament 5.x Migration Guide
 
 **Data**: 2026-01-30

@@ -1,14 +1,3 @@
----
-title: "Template Gestione Conflitti Git - README.md"
-module: "Xot"
-type: concept
-tags: [git, conflict, readme, md]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflict readme md"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Template Gestione Conflitti Git - README.md
 
 ## File: bashscripts/README.md

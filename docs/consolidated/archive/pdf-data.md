@@ -1,14 +1,3 @@
----
-title: "PdfData"
-module: "Xot"
-type: concept
-tags: [pdf, data]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "pdf data"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PdfData
 
 La classe PdfData è un Data Object che gestisce la configurazione e i dati per la generazione di PDF nel modulo Xot.

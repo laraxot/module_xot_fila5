@@ -1,14 +1,3 @@
----
-title: "RelationX Trait"
-module: "Xot"
-type: concept
-tags: [RelationX]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "relationx"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # RelationX Trait
 
 ## Scopo Business

@@ -1,14 +1,3 @@
----
-title: "spatie/laravel-schemaless-attributes — Central Reference"
-module: "Xot"
-type: concept
-tags: [spatie, schemaless, attributes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "spatie schemaless attributes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # spatie/laravel-schemaless-attributes — Central Reference
 
 **Package**: [`spatie/laravel-schemaless-attributes`](https://github.com/spatie/laravel-schemaless-attributes)

@@ -1,14 +1,3 @@
----
-title: "Helper Autoload Compatibility"
-module: "Xot"
-type: concept
-tags: [helper, autoload, compatibility]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "helper autoload compatibility"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Helper Autoload Compatibility
 
 ## Problema

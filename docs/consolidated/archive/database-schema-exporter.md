@@ -1,14 +1,3 @@
----
-title: "DatabaseSchemaExporter Command Documentation"
-module: "Xot"
-type: concept
-tags: [database, schema, exporter]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "database schema exporter"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # DatabaseSchemaExporter Command Documentation
 
 ## Overview

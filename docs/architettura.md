@@ -1,14 +1,3 @@
----
-title: "Architettura Modulo Xot - Widgets & Wizards"
-module: "Xot"
-type: concept
-tags: [architettura]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "architettura"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Architettura Modulo Xot - Widgets & Wizards
 
 ## XotBaseWizardWidget

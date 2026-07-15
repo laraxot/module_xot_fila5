@@ -1,14 +1,3 @@
----
-title: "Safe Casting Actions - DRY & KISS Implementation"
-module: "Xot"
-type: concept
-tags: [safe, casting, actions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "safe casting actions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Safe Casting Actions - DRY & KISS Implementation
 
 ## Overview

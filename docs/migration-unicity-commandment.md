@@ -1,14 +1,3 @@
----
-title: "🚨 COMANDAMENTO ASSOLUTO - UNICITÀ MIGRATION"
-module: "Xot"
-type: concept
-tags: [migration, unicity, commandment]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration unicity commandment"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🚨 COMANDAMENTO ASSOLUTO - UNICITÀ MIGRATION
 
 ## 📖 REGOLA SACRA

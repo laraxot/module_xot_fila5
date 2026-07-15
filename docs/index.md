@@ -1,14 +1,3 @@
----
-title: "📚 Index of Xot Module Documentation"
-module: "Xot"
-type: concept
-tags: [index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 📚 Index of Xot Module Documentation
 
 ## 🎯 Quick Start

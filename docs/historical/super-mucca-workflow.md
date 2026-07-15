@@ -1,14 +1,3 @@
----
-title: "Super Mucca Workflow - Metodologia Completa"
-module: "Xot"
-type: concept
-tags: [super, mucca, workflow]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "super mucca workflow"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Super Mucca Workflow - Metodologia Completa
 
 **Poteri**: Massima Confidenza + Zero Compromessi + Correzione Completa

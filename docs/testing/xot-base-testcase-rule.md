@@ -1,14 +1,3 @@
----
-title: "XotBaseTestCase: La Nostra Religione del Testing (Laraxot Zen)"
-module: "Xot"
-type: rule
-tags: [xot, base, testcase, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base testcase rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseTestCase: La Nostra Religione del Testing (Laraxot Zen)
 
 ## 🧘‍♂️ La Visione e la Filosofia

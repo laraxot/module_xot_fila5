@@ -1,14 +1,3 @@
----
-title: "Risks - Xot"
-module: "Xot"
-type: concept
-tags: [05, risks]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "05 risks"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risks - Xot
 
 ## Top Risks

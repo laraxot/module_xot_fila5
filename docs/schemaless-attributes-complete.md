@@ -1,14 +1,3 @@
----
-title: "Schemaless Attributes - Pattern Completi PTVX v3.0"
-module: "Xot"
-type: concept
-tags: [schemaless, attributes, complete]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "schemaless attributes complete"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Schemaless Attributes - Pattern Completi PTVX v3.0
 
 ## 🎯 **OVERVIEW**

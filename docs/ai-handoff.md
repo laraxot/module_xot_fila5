@@ -1,14 +1,3 @@
----
-title: "ai handoff"
-module: "Xot"
-type: concept
-tags: [ai, handoff]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ai handoff"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ai handoff
 
 ## regole non negoziabili

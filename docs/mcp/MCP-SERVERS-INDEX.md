@@ -1,14 +1,3 @@
----
-title: "MCP Servers Configuration - Master Index"
-module: "Xot"
-type: concept
-tags: [MCP, SERVERS, INDEX]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp servers index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MCP Servers Configuration - Master Index
 
 **Ultimo aggiornamento**: 2026-06-04  

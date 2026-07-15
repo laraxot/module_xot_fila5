@@ -1,14 +1,3 @@
----
-title: "Linee Guida per PHPStan Livello 10 - Regole Comuni"
-module: "Xot"
-type: how-to
-tags: [level10, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "level10 guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto.

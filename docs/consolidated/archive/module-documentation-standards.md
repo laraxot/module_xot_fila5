@@ -1,14 +1,3 @@
----
-title: "Standard di Documentazione dei Moduli"
-module: "Xot"
-type: rule
-tags: [module, documentation, standards]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module documentation standards"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Standard di Documentazione dei Moduli
 
 ## Regola: Nessun Riferimento al Progetto Specifico

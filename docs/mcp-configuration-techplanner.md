@@ -1,14 +1,3 @@
----
-title: "🤖 Configurazione MCP per TechPlanner Fila4 Mono"
-module: "Xot"
-type: concept
-tags: [mcp, configuration, techplanner]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp configuration techplanner"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🤖 Configurazione MCP per TechPlanner Fila4 Mono
 
 ## Panoramica

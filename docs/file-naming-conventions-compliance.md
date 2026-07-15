@@ -1,14 +1,3 @@
----
-title: "File Naming Conventions Compliance - 2026-01-09"
-module: "Xot"
-type: concept
-tags: [file, naming, conventions, compliance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "file naming conventions compliance"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  

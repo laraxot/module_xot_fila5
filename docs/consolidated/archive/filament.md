@@ -1,14 +1,3 @@
----
-title: "Ottimizzazione Form Filament"
-module: "Xot"
-type: concept
-tags: [filament]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Ottimizzazione Form Filament
 
 ## Stato
@@ -56,7 +45,7 @@ related:
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
 - [Integrazione Filament](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md)
-- [Best Practices](../../BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
 * [filament.md](../../../Chart/project_docs/filament.md)

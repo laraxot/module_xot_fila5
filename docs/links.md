@@ -1,14 +1,3 @@
----
-title: "Links"
-module: "Xot"
-type: concept
-tags: [links]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "links"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Links
 
 ## Documentazione Generale
@@ -59,7 +48,7 @@ related:
 
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
-- [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 

@@ -1,14 +1,3 @@
----
-title: "Debugbar Architecture"
-module: "Xot"
-type: concept
-tags: [debugbar, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "debugbar architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Debugbar Architecture
 
 ## Overview

@@ -1,14 +1,3 @@
----
-title: "Stato Testing"
-module: "Xot"
-type: concept
-tags: [status]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "status"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Stato Testing
 
 ## Stato
@@ -56,7 +45,7 @@ related:
 
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
-- [Best Practices Testing](../../BEST-PRACTICES.md#testing)
+- [Best Practices Testing](best-practices.md#testing)
 - [PHPStan Progress](../../phpstan_progress.md)
 ## Collegamenti tra versioni di status.md
 * [status.md](../../../Xot/project_docs/roadmap/project_docs/status.md)

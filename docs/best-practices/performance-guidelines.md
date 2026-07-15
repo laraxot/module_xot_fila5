@@ -1,14 +1,3 @@
----
-title: "Performance Guidelines - Xot Module"
-module: "Xot"
-type: how-to
-tags: [performance, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "performance guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose

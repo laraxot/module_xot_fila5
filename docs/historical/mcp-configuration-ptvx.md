@@ -1,14 +1,3 @@
----
-title: "Configurazione MCP per base_ptvx_fila4_mono"
-module: "Xot"
-type: concept
-tags: [mcp, configuration, ptvx]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp configuration ptvx"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Configurazione MCP per base_ptvx_fila4_mono
 
 **Data Creazione**: 2026-01-12  

@@ -1,14 +1,3 @@
----
-title: "ServiceProvider Common Errors - Lessons Learned"
-module: "Xot"
-type: concept
-tags: [serviceprovider, common, errors]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "serviceprovider common errors"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ServiceProvider Common Errors - Lessons Learned
 
 **Data**: 2025-01-10

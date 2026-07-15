@@ -1,14 +1,3 @@
----
-title: "Filament 5 + Laraxot Rules - Xot Module"
-module: "Xot"
-type: rule
-tags: [filament, 5, laraxot, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 5 laraxot rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament 5 + Laraxot Rules - Xot Module
 
 ## 🎯 Obiettivo

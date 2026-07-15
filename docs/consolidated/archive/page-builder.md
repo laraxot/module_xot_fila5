@@ -1,14 +1,3 @@
----
-title: "page_builder"
-module: "Xot"
-type: concept
-tags: [page, builder]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "page builder"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # page_builder
 
 <!-- Contenuto migrato da _docs/page_builder.txt -->

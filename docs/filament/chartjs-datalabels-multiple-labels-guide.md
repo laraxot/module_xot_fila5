@@ -1,14 +1,3 @@
----
-title: "Multiple Labels con chartjs-plugin-datalabels (Xot Base)"
-module: "Xot"
-type: how-to
-tags: [chartjs, datalabels, multiple, labels]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "chartjs datalabels multiple labels guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Multiple Labels con chartjs-plugin-datalabels (Xot Base)
 
 **Versione:** 1.0  

@@ -1,14 +1,3 @@
----
-title: "Roadmap Modulo Xot"
-module: "Xot"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ### Versione HEAD
 
 # Roadmap Modulo Xot
@@ -253,7 +242,7 @@ related:
 
 ### Collegamenti Interni
 - [Architettura](./structure.md)
-- [Best Practices](./BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)
 - [Testing](./testing-best-practices.md)
 
 ## Prossimi Passi
@@ -430,7 +419,7 @@ related:
 
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
-- [Best Practices](BEST-PRACTICES.md)
+- [Best Practices](best-practices.md)
 - [Testing](testing.md)
 
 ### Versione HEAD

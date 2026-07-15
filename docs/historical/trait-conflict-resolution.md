@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto Trait: NavigationLabelTrait e XotBasePage"
-module: "Xot"
-type: pattern
-tags: [trait, conflict, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "trait conflict resolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitto Trait: NavigationLabelTrait e XotBasePage
 
 ## Problema

@@ -1,14 +1,3 @@
----
-title: "Standard di Traduzione - Documentazione Root"
-module: "Xot"
-type: rule
-tags: [translation, standards]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translation standards"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica

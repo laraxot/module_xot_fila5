@@ -1,14 +1,3 @@
----
-title: "Fasi di sviluppo - Xot Module"
-module: "Xot"
-type: concept
-tags: [phases]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phases"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Fasi di sviluppo - Xot Module
 
 ## Fase 1: Framework Stabilization (Completed)

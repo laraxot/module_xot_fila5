@@ -1,14 +1,3 @@
----
-title: "Translation Directory Structure"
-module: "Xot"
-type: concept
-tags: [TRANSLATION, STRUCTURE]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translation structure"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy

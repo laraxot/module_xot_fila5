@@ -1,14 +1,3 @@
----
-title: "Google Drive"
-module: "Xot"
-type: concept
-tags: [google, drive]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "google drive"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 passo passo + screenshot di dove prendere le varie key
 https://gist.github.com/mehranhadidi/38e38b80e3d533650ed2b94a0f95f7f1

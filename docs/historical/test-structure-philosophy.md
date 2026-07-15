@@ -1,14 +1,3 @@
----
-title: "Laraxot Test Structure Philosophy"
-module: "Xot"
-type: concept
-tags: [test, structure, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "test structure philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Test Structure Philosophy
 
 ## Core Principle: Single Test Directory Structure

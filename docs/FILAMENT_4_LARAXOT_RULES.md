@@ -1,14 +1,3 @@
----
-title: "Filament 4 + Laraxot Rules - Xot Module"
-module: "Xot"
-type: rule
-tags: [FILAMENT, 4, LARAXOT, RULES]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 4 laraxot rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali

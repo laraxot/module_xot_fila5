@@ -1,14 +1,3 @@
----
-title: "Translations - Documentazione Consolidata DRY + KISS"
-module: "Xot"
-type: concept
-tags: [translations, consolidated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translations consolidated"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Translations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione traduzioni del progetto

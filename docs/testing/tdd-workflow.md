@@ -1,14 +1,3 @@
----
-title: "TDD Workflow - Laraxot"
-module: "Xot"
-type: concept
-tags: [tdd, workflow]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "tdd workflow"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # TDD Workflow - Laraxot
 
 ## Ciclo RED-GREEN-REFACTOR

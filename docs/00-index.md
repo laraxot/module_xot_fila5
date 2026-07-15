@@ -1,14 +1,3 @@
----
-title: "Xot Module Documentation Index"
-module: "Xot"
-type: concept
-tags: [00, index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "00 index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.

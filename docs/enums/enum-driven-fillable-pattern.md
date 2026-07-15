@@ -1,14 +1,3 @@
----
-title: "Enum-Driven Fillable Pattern - Laraxot Architecture"
-module: "Xot"
-type: pattern
-tags: [enum, driven, fillable, pattern]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "enum driven fillable pattern"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Enum-Driven Fillable Pattern - Laraxot Architecture
 
 ## Philosophy

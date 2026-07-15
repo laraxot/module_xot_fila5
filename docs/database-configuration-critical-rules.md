@@ -1,14 +1,3 @@
----
-title: "Database Configuration - Critical Rules"
-module: "Xot"
-type: rule
-tags: [database, configuration, critical, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "database configuration critical rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Database Configuration - Critical Rules
 
 ## REGOLE FONDAMENTALI

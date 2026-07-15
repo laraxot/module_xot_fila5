@@ -1,14 +1,3 @@
----
-title: "Code Quality Standards - Xot Module"
-module: "Xot"
-type: rule
-tags: [CODE, QUALITY, STANDARDS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality standards"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code Quality Standards - Xot Module
 
 ## 🎯 Purpose
@@ -493,7 +482,7 @@ public function user(): BelongsTo
 
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
-- [Performance Optimization](./performance-optimization.md)
+- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.

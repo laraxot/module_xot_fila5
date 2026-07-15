@@ -1,14 +1,3 @@
----
-title: "Gestione Tipi Collection in PHPStan - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [phpstan, collection, types]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan collection types"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Gestione Tipi Collection in PHPStan - Modulo Xot
 
 ## Overview

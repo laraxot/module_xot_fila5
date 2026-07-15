@@ -1,14 +1,3 @@
----
-title: "XotBaseComponent"
-module: "Xot"
-type: concept
-tags: [xot, base, component]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base component"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseComponent
 
 XotBaseComponent è la classe base astratta per tutti i componenti view nel modulo Xot. Fornisce funzionalità comuni e struttura di base per i componenti personalizzati.

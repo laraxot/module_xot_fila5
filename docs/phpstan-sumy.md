@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 - Riepilogo Gennaio 2026"
-module: "Xot"
-type: concept
-tags: [phpstan, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan sumy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 - Riepilogo Gennaio 2026
 
 **Status**: ✅ QUICK WINS COMPLETATI

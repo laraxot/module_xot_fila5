@@ -1,14 +1,3 @@
----
-title: "Filament Resource Creation Fix - Risoluzione Errori di Compatibilità"
-module: "Xot"
-type: concept
-tags: [filament, resource, creation, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament resource creation fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Resource Creation Fix - Risoluzione Errori di Compatibilità
 
 ## Problema
@@ -153,7 +142,7 @@ Il comando `GenerateFilamentResources` genera automaticamente resources per tutt
 ## Collegamenti e Riferimenti
 
 - [XotBasePage getModel() Fix](./xotbasepage-getmodel-fix.md)
-- [Architettura Laraxot](../readme.md)
+- [Architettura Laraxot](README.md)
 - [Comando GenerateFilamentResources](../../app/Console/Commands/GenerateFilamentResources.php)
 - [Documentazione Filament](https://filamentphp.com/docs)
 

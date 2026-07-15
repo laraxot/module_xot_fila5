@@ -1,14 +1,3 @@
----
-title: "PHPStan Cluster Map And False Friends"
-module: "Xot"
-type: concept
-tags: [phpstan, cluster, map, false]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan cluster map and false friends"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Cluster Map And False Friends
 
 ## Contesto

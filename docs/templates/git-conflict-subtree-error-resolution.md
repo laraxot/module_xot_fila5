@@ -1,14 +1,3 @@
----
-title: "Template Gestione Conflitti Git - git_subtree_error_resolution.md"
-module: "Xot"
-type: concept
-tags: [git, conflict, subtree, error]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflict subtree error resolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Template Gestione Conflitti Git - git_subtree_error_resolution.md
 
 ## File: bashscripts/git_subtree_error_resolution.md

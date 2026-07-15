@@ -1,14 +1,3 @@
----
-title: "Xot - Product Roadmap"
-module: "Xot"
-type: concept
-tags: [product, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "product roadmap"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot - Product Roadmap
 
 > Documento vivente. Modulo.

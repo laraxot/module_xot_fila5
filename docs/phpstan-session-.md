@@ -1,14 +1,3 @@
----
-title: "Sessione PHPStan - 2026-01-05"
-module: "Xot"
-type: concept
-tags: [phpstan, session]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan session "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Sessione PHPStan - 2026-01-05
 
 ## Panoramica

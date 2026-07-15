@@ -1,14 +1,3 @@
----
-title: "Sprint Planning: Xot Infrastructure"
-module: "Xot"
-type: concept
-tags: [sprint, planning]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "sprint planning"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Sprint Planning: Xot Infrastructure
 
 ## 🏁 Sprint Goal

@@ -1,14 +1,3 @@
----
-title: "Linee Guida PHPStan Livello 10"
-module: "Xot"
-type: concept
-tags: [phpstan, livello10, linee, guida]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan livello10 linee guida"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione
@@ -102,8 +91,8 @@ public function processValue(?string $value): string
 ## Collegamenti Correlati
 
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
-- [Best Practices](./BEST-PRACTICES.md)
-- [Code Standards](./CODE-STANDARDS.md)
+- [Best Practices](best-practices.md)
+- [Code Standards](code-standards.md)
 - [Risoluzione Conflitti](./CONFLITTI_MERGE_RISOLTI.md)
 
 # Linee Guida per PHPStan Livello 10 - Regole Comuni

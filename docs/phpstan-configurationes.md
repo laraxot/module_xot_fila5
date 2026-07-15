@@ -1,14 +1,3 @@
----
-title: "PHPStan Configuration Fixes - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [phpstan, configurationes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan configurationes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Configuration Fixes - Modulo Xot
 
 ## Panoramica

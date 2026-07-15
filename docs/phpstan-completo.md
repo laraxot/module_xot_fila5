@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 - Roadmap Completa per tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [phpstan, completo]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan completo"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 - Roadmap Completa per tutti i Moduli
 
 ## Stato Attuale

@@ -1,14 +1,3 @@
----
-title: "🏗️ **Xot Module** - Il Cuore del Framework Laraxot"
-module: "Xot"
-type: concept
-tags: [readme]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)

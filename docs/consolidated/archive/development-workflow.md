@@ -1,14 +1,3 @@
----
-title: "Development Workflow in Laraxot"
-module: "Xot"
-type: concept
-tags: [development, workflow]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "development workflow"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Development Workflow in Laraxot
 
 ## Creating New Resources

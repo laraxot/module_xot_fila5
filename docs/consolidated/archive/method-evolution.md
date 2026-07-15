@@ -1,14 +1,3 @@
----
-title: "Evoluzione dei metodi in XotBaseResource"
-module: "Xot"
-type: concept
-tags: [method, evolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "method evolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Evoluzione dei metodi in XotBaseResource
 
 ## Metodi deprecati vs attuali

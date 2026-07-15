@@ -1,14 +1,3 @@
----
-title: "Regole Fondamentali per i Metodi Filament - Aggiornamento"
-module: "Xot"
-type: rule
-tags: [filament, array, typing, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament array typing rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole Fondamentali per i Metodi Filament - Aggiornamento
 
 ## Tipizzazione Corretta degli Array - Distinzione per Contesto

@@ -1,14 +1,3 @@
----
-title: "Gestione del tipo `mixed` in PHP e Soluzioni per PHPStan"
-module: "Xot"
-type: concept
-tags: [mixed, type, solutions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mixed type solutions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Gestione del tipo `mixed` in PHP e Soluzioni per PHPStan
 
 ## Cos'è il tipo `mixed`?

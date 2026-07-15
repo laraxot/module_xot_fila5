@@ -1,14 +1,3 @@
----
-title: "HasXotTable Zen"
-module: "Xot"
-type: concept
-tags: [hasxottable, zen]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hasxottable zen"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # HasXotTable Zen
 
 ## Philosophy

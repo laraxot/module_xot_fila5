@@ -71,13 +71,80 @@ related:
 1. **Da modulo a root**: Ogni documento in un modulo deve linkare alla documentazione root correlata:
    ```markdown
    Vedi anche: [Documentazione generale](/docs/nome_documento.md)
-   Vedi anche: [Documentazione generale](/project_docs/nome_documento.md)
+- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
+
+- [Documentazione generale](../../../project_docs/documentation_rules.md)
+- [Convenzioni di naming in generale](../../../project_docs/naming_conventions.md)
+- [Regole per ServiceProvider](../../indennitacondizionilavoro/project_docs/service_provider.md)
+- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
+
+# Convenzioni per la documentazione in Laraxot PTVX
+
+## Convenzioni di naming
+
+### Regole fondamentali
+1. **Nomi file in minuscolo**: Tutti i file nelle cartelle `docs` DEVONO avere nomi in minuscolo
+   - ❌ ERRATO: `phpstan_fixes.md`, `SERVICE_PROVIDER.md`
+   - ✅ CORRETTO: `phpstan_fixes.md`, `service_provider.md`
+
+2. **Unica eccezione**: L'unico file che può contenere maiuscole è `README.md`
+
+3. **Nomi cartelle in minuscolo**: Tutte le sottocartelle nelle directory `docs` DEVONO avere nomi in minuscolo
+   - ❌ ERRATO: `PHPStan`, `Models`, `UI_COMPONENTS`
+   - ✅ CORRETTO: `phpstan`, `models`, `ui_components`
+
+### Struttura dei file di documentazione
+1. **Intestazione**: Ogni file di documentazione deve iniziare con un'intestazione che includa:
+   - Titolo del documento
+   - Breve descrizione
+   - Data di ultima modifica
+   - Autore/i (opzionale)
+
+2. **Struttura dei contenuti**: Utilizzare titoli e sottotitoli organizzati in modo gerarchico:
+   ```markdown
+   # Titolo principale
+
+   ## Sezione 1
+
+   ### Sottosezione 1.1
+
+   ### Sottosezione 1.2
+
+   ## Sezione 2
+   ```
+
+3. **Esempi di codice**: Utilizzare blocchi di codice con indicazione del linguaggio:
+   ```markdown
+   ```php
+   // Codice PHP qui
+   ```
+   ```
+
+4. **Note e avvertimenti**: Utilizzare un formato standard per note e avvertimenti:
+   ```markdown
+   > **Nota**: Informazione importante.
+
+   > **Attenzione**: Avvertimento critico.
+   ```
+
+## Organizzazione della documentazione
+
+### Posizionamento
+1. **Regole generali**: Le regole e documentazione generali vanno nella cartella `docs` del modulo Xot
+
+2. **Documentazione specifica**: La documentazione specifica di un modulo va nella cartella `docs` del modulo corrispondente
+
+3. **Documentazione di funzionalità**: La documentazione di funzionalità specifiche va in sottocartelle appropriate
+
+### Collegamenti bidirezionali
+1. **Da modulo a root**: Ogni documento in un modulo deve linkare alla documentazione root correlata:
+   ```markdown
+   Vedi anche: [Documentazione generale](/docs/nome_documento.md)
    ```
 
 2. **Da root a modulo**: La documentazione root deve linkare ai documenti specifici dei moduli:
    ```markdown
    Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/docs/nome_documento.md)
-   Vedi anche: [Implementazione nel modulo Xot](/laravel/modules/xot/project_docs/nome_documento.md)
    ```
 
 ## Manutenzione della documentazione
@@ -112,6 +179,11 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 - `rename_docs_files.sh`: Rinominare file e cartelle secondo le convenzioni
 
 ## Collegamenti a documentazione correlata
+
+- [Documentazione generale](../../../../docs/documentation_rules.md)
+- [Convenzioni di naming in generale](../../../../docs/naming_conventions.md)
+- [Regole per ServiceProvider](../../indennitacondizionilavoro/docs/service_provider.md)
+- [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 

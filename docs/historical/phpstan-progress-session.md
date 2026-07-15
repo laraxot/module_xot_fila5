@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 - Sessione di Correzione"
-module: "Xot"
-type: concept
-tags: [phpstan, progress, session]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan progress session"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 - Sessione di Correzione
 
 **Data**: 9 Gennaio 2026  

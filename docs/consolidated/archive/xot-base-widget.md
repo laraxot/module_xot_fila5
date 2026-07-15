@@ -1,14 +1,3 @@
----
-title: "XotBaseWidget"
-module: "Xot"
-type: concept
-tags: [xot, base, widget]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base widget"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseWidget
 
 La classe astratta `XotBaseWidget` fornisce una base comune per tutti i widget Filament nel modulo Xot.
@@ -178,8 +167,8 @@ Questo trait permette al widget di aggiornarsi automaticamente a intervalli rego
 ## Collegamenti Bidirezionali
 
 - [README.md](../../README.md) - Indice principale della documentazione
-- [DIRECTORY-CASE-SENSITIVITY.md](../../DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity delle directory
-- [NAMESPACE-RULES.md](../../NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+- [DIRECTORY-CASE-SENSITIVITY.md](directory-case-sensitivity.md) - Regole per la case sensitivity delle directory
+- [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](../../FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [MODULE_STRUCTURE.md](../../MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [Documentazione Filament](https://filamentphp.com/project_docs/3.x/widgets/installation)

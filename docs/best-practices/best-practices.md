@@ -1,14 +1,3 @@
----
-title: "🔧 **Best Practices Modulo Xot**"
-module: "Xot"
-type: concept
-tags: [best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "best practices"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🔧 **Best Practices Modulo Xot**
 
 ## 📋 **Panoramica**

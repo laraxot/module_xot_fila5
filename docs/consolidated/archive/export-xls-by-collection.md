@@ -1,14 +1,3 @@
----
-title: "ExportXlsByCollection"
-module: "Xot"
-type: concept
-tags: [export, xls, by, collection]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "export xls by collection"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ExportXlsByCollection
 
 Questa action è responsabile dell'esportazione di collezioni di dati in formato Excel (XLSX). Supporta sia l'utilizzo di Maatwebsite/Excel che PhpSpreadsheet direttamente.

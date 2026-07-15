@@ -1,14 +1,3 @@
----
-title: "Filament Actions - String Keys Requirement"
-module: "Xot"
-type: concept
-tags: [filament, actions, string, keys]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament actions string keys 2"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Actions - String Keys Requirement
 
 ## Critical Type Rule

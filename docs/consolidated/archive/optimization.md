@@ -1,14 +1,3 @@
----
-title: "Ottimizzazione Performance"
-module: "Xot"
-type: concept
-tags: [optimization]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "optimization"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Ottimizzazione Performance
 
 ## Stato
@@ -56,7 +45,7 @@ related:
 
 ## Collegamenti
 - [Roadmap Principale](../../roadmap.md)
-- [Best Practices Performance](../../BEST-PRACTICES.md#performance)
+- [Best Practices Performance](best-practices.md#performance)
 - [Performance Guidelines](../../performance/optimization.md)
 ## Collegamenti tra versioni di optimization.md
 * [optimization.md](../../../Xot/project_docs/roadmap/performance/optimization.md)

@@ -1,14 +1,3 @@
----
-title: "Ottimizzazioni Modulo Xot - DRY + KISS"
-module: "Xot"
-type: concept
-tags: [ottimizzazioni, modulo, xot]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ottimizzazioni modulo xot"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## Panoramica

@@ -12,7 +12,7 @@ related:
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0
-> **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -174,4 +174,4 @@ done
 **Stato**: ✅ RISOLTO
 **Autore Fix**: AI Assistant
 **Review**: Pending
-**Data**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+**Data**: Vedi [CHANGELOG.md](changelog.md)

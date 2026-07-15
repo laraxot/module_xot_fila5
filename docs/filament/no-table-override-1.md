@@ -1,14 +1,3 @@
----
-title: "DIVIETO ASSOLUTO DI IMPLEMENTARE table()"
-module: "Xot"
-type: concept
-tags: [no, table, override, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "no table override 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # DIVIETO ASSOLUTO DI IMPLEMENTARE table()
 
 ## Regola Fondamentale Inviolabile

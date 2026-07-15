@@ -1,14 +1,3 @@
----
-title: "Guida alle Traduzioni per XotBaseManageRelatedRecords"
-module: "Xot"
-type: how-to
-tags: [manage, related, records, translation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "manage related records translation guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida alle Traduzioni per XotBaseManageRelatedRecords
 
 ## Panoramica

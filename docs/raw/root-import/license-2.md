@@ -1,14 +1,3 @@
----
-title: "License 2"
-module: "Xot"
-type: concept
-tags: [license, 2]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "license 2"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 The MIT License (MIT)
 
 Copyright (c) :vendor_name <author@domain.com>

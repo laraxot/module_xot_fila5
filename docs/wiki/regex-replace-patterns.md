@@ -1,14 +1,3 @@
----
-title: "Regex Replace Patterns"
-module: "Xot"
-type: pattern
-tags: [regex, replace, patterns]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "regex replace patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 -------------------------
 relatedUrl\(\['related_name'[ ]?=>[ ]?'([^ ]*)',[ ]?'act'[ ]?=>[ ]?'([a-zA-Z_]*)'\]\)
 relatedUrl('$1','$2')

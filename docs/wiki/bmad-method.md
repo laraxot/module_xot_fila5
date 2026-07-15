@@ -1,14 +1,3 @@
----
-title: "BMAD Method v6.3 operativo nel progetto"
-module: "Xot"
-type: concept
-tags: [bmad, method]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bmad method"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # BMAD Method v6.3 operativo nel progetto
 
 ## Regola pratica

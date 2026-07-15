@@ -1,14 +1,3 @@
----
-title: "Links"
-module: "Xot"
-type: concept
-tags: [links]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "links"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Links
 
 ## Documentazione Generale
@@ -207,9 +196,9 @@ related:
 - [Chart](../Chart/docs/README.md) - Grafici
 
 ## Collegamenti tra versioni di LINKS.md
-* [LINKS.md](../../../Xot/docs/LINKS.md)
-* [LINKS.md](../../../User/docs/LINKS.md)
-* [LINKS.md](../../../UI/docs/LINKS.md)
+* [LINKS.md](links.md)
+* [LINKS.md](links.md)
+* [LINKS.md](links.md)
 * [LINKS.md](../../../Cms/docs/LINKS.md)
 * [LINKS.md](../../../../Themes/One/docs/LINKS.md)
 

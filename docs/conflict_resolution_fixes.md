@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitti Git - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [conflict, resolution, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitti Git - Modulo Xot
 
 ## Panoramica

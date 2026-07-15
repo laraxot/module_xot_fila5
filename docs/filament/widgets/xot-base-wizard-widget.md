@@ -1,14 +1,3 @@
----
-title: "XotBaseWizardWidget"
-module: "Xot"
-type: concept
-tags: [xot, base, wizard, widget]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base wizard widget"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseWizardWidget
 
 Classe astratta: `Modules\Xot\Filament\Widgets\XotBaseWizardWidget`  

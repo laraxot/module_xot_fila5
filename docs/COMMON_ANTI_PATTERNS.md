@@ -1,14 +1,3 @@
----
-title: "Common Anti-Patterns - Xot Module"
-module: "Xot"
-type: pattern
-tags: [COMMON, ANTI, PATTERNS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "common anti patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Common Anti-Patterns - Xot Module
 
 ## 🚨 Anti-Patterns to Avoid

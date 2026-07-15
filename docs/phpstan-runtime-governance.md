@@ -1,14 +1,3 @@
----
-title: "PHPStan Runtime Governance"
-module: "Xot"
-type: concept
-tags: [phpstan, runtime, governance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan runtime governance"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Runtime Governance
 
 ## Regola locale

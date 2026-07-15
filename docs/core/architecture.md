@@ -1,14 +1,3 @@
----
-title: "Architettura Modulo Xot"
-module: "Xot"
-type: concept
-tags: [architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Architettura Modulo Xot
 
 ## 🏗️ Panoramica Architetturale

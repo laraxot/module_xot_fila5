@@ -1,14 +1,3 @@
----
-title: "Configurazione Tabelle Widget - Pattern e Regole"
-module: "Xot"
-type: concept
-tags: [widget, table, configuration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "widget table configuration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Configurazione Tabelle Widget - Pattern e Regole
 
 **Data Creazione**: 2025-01-27  

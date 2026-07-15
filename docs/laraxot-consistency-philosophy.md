@@ -1,14 +1,3 @@
----
-title: "Laraxot Consistency Philosophy - Complete Guide"
-module: "Xot"
-type: concept
-tags: [laraxot, consistency, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laraxot consistency philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Consistency Philosophy - Complete Guide
 
 ## Core Principle: Consistency Above All

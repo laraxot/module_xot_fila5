@@ -1,14 +1,3 @@
----
-title: "Xot Activity Log"
-module: "Xot"
-type: concept
-tags: [log]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "log"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Activity Log
 
 > **Module**: Xot

@@ -1,14 +1,3 @@
----
-title: "PHPStan Correction Session Report - November 2025"
-module: "Xot"
-type: concept
-tags: [phpstan, session, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan session report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Correction Session Report - November 2025
 
 ## Executive Summary

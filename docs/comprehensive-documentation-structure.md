@@ -1,14 +1,3 @@
----
-title: "Comprehensive Documentation Structure"
-module: "Xot"
-type: concept
-tags: [comprehensive, documentation, structure]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "comprehensive documentation structure"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Comprehensive Documentation Structure
 
 ## 🏗️ Documentation Architecture

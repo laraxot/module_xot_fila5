@@ -1,14 +1,3 @@
----
-title: "Correzioni Implementate - Regola Critica XotBaseResource"
-module: "Xot"
-type: concept
-tags: [filament, xotbase, resource, corrections]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament xotbase resource corrections"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzioni Implementate - Regola Critica XotBaseResource
 
 ## 🚨 Regola Critica Violata

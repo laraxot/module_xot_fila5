@@ -1,14 +1,3 @@
----
-title: "PHPStan Action Plan - 2025-11-18"
-module: "Xot"
-type: concept
-tags: [phpstan, action, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan action plan "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Action Plan - 2025-11-18
 
 ## Executive Summary

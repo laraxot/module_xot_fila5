@@ -1,14 +1,3 @@
----
-title: "Inizializzazione dei Widget XotBaseWidget"
-module: "Xot"
-type: concept
-tags: [widgets, initialization]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "widgets initialization"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Inizializzazione dei Widget XotBaseWidget
 
 ## ⚠️ Problema delle Signature (Incompatibilità)

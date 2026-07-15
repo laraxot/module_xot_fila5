@@ -1,14 +1,3 @@
----
-title: "PHPStan Livello 10 - Audit Completo Progetto"
-module: "Xot"
-type: concept
-tags: [phpstan, level10, complete, audit]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level10 complete audit"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Livello 10 - Audit Completo Progetto
 
 ## Data Audit

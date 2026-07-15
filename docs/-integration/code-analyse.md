@@ -1,14 +1,3 @@
----
-title: "code_analyse"
-module: "Xot"
-type: concept
-tags: [code, analyse]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code analyse"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # code_analyse
 
 <!-- Contenuto migrato da _docs/code_analyse.txt -->

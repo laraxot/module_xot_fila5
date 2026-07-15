@@ -1,14 +1,3 @@
----
-title: "Limesurvey Survey Data Analysis - Database Deep Dive"
-module: "Xot"
-type: concept
-tags: [limesurveyatabaseeepive]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "limesurveyatabaseeepive"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Limesurvey Survey Data Analysis - Database Deep Dive
 
 ## Database Connections Overview

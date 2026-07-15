@@ -1,14 +1,3 @@
----
-title: "Laraxot Code Quality Standards"
-module: "Xot"
-type: concept
-tags: [code, quality]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Code Quality Standards
 
 ## Overview

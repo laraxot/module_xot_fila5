@@ -1,14 +1,3 @@
----
-title: "SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX"
-module: "Xot"
-type: concept
-tags: [simplechartwidget, problems, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "simplechartwidget problems analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica

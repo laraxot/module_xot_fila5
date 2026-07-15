@@ -1,14 +1,3 @@
----
-title: "Test del Modulo Performance"
-module: "Xot"
-type: concept
-tags: [performance, module]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "performance module"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Test del Modulo Performance
 
 ## Struttura dei Test

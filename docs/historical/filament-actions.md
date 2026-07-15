@@ -1,14 +1,3 @@
----
-title: "Azioni Filament"
-module: "Xot"
-type: concept
-tags: [filament, actions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament actions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Azioni Filament
 
 ## Best Practices per le Azioni

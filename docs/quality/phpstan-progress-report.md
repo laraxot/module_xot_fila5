@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Enforcement - Progress Report"
-module: "Xot"
-type: concept
-tags: [phpstan, progress, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan progress report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 Enforcement - Progress Report
 
 **Session Date**: 2025-10-22

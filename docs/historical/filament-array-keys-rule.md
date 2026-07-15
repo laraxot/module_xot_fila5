@@ -1,14 +1,3 @@
----
-title: "Filament Array Keys Rule - Array con Chiavi String"
-module: "Xot"
-type: rule
-tags: [filament, array, keys, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament array keys rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Array Keys Rule - Array con Chiavi String
 
 **Data**: 2025-01-10

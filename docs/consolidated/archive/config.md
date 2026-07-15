@@ -1,14 +1,3 @@
----
-title: "Configurazione in il progetto"
-module: "Xot"
-type: concept
-tags: [config]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "config"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Configurazione in il progetto
 
 La configurazione del tema è gestita attraverso file di configurazione che definiscono le impostazioni del tema.

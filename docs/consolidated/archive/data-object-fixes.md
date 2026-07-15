@@ -1,14 +1,3 @@
----
-title: "Correzioni agli oggetti Data nel framework Laraxot"
-module: "Xot"
-type: concept
-tags: [data, object, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "data object fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzioni agli oggetti Data nel framework Laraxot
 
 ## Problema di Inizializzazione XotData in AssetAction

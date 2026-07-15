@@ -1,14 +1,3 @@
----
-title: "Metodologia Super Mucca - Guida Completa 2026"
-module: "Xot"
-type: concept
-tags: [super, mucca, methodology]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "super mucca methodology "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Metodologia Super Mucca - Guida Completa 2026
 
 **Data**: 2026-01-09  

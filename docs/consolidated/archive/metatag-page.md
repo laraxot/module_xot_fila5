@@ -1,14 +1,3 @@
----
-title: "MetatagPage"
-module: "Xot"
-type: concept
-tags: [metatag, page]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "metatag page"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MetatagPage
 
 La classe `MetatagPage` è una pagina Filament che gestisce la configurazione dei metatag del sito.

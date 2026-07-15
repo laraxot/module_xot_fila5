@@ -1,14 +1,3 @@
----
-title: "La Filosofia Zen Avanzata dei Getter Semantici"
-module: "Xot"
-type: pattern
-tags: [getter, zen, advanced]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "getter zen advanced"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # La Filosofia Zen Avanzata dei Getter Semantici
 
 ## Il Tao del Codice Pulito

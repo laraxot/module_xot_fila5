@@ -1,14 +1,3 @@
----
-title: "Documentazione Modulo Xot"
-module: "Xot"
-type: concept
-tags: [index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Documentazione Modulo Xot
 
 ## Introduzione
@@ -32,7 +21,7 @@ Questo documento fornisce un indice della documentazione del modulo Xot, organiz
 
 ## Testing e Quality
 - [Testing](./testing.md) - Testing e quality assurance (usare Pest come test runner)
-- [Best Practices](./BEST-PRACTICES.md) - Linee guida generali
+- [Best Practices](best-practices.md) - Linee guida generali
 - [Security](./security.md) - Sicurezza e hardening
 - [PHPStan Level 10](./PHPSTAN_LIVELLO10_LINEE_GUIDA.md) - Linee guida PHPStan livello 10
 

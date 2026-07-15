@@ -1,14 +1,3 @@
----
-title: "XotBaseRelationManager Static Access Fixes"
-module: "Xot"
-type: concept
-tags: [static, access, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "static access fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseRelationManager Static Access Fixes
 
 ## Static Access to Instance Property Issue

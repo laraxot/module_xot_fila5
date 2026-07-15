@@ -1,14 +1,3 @@
----
-title: "Ordine di Implementazione il progetto"
-module: "Xot"
-type: concept
-tags: [ordine, implementation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ordine implementation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Ordine di Implementazione il progetto
 
 ## Sequenza di Installazione e Configurazione

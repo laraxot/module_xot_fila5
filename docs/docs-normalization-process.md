@@ -1,14 +1,3 @@
----
-title: "Processo di Normalizzazione Documentazione"
-module: "Xot"
-type: concept
-tags: [docs, normalization, process]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "docs normalization process"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Processo di Normalizzazione Documentazione
 
 ## Scopo

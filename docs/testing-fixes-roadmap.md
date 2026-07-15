@@ -1,14 +1,3 @@
----
-title: "Testing Fixes Roadmap - Correzione Test Falliti"
-module: "Xot"
-type: concept
-tags: [testing, fixes, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing fixes roadmap"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Testing Fixes Roadmap - Correzione Test Falliti
 
 **Data**: 2025-01-22

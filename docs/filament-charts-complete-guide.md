@@ -1,14 +1,3 @@
----
-title: "Filament Charts - Guida Completa per PTVX"
-module: "Xot"
-type: how-to
-tags: [filament, charts, complete, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament charts complete guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Charts - Guida Completa per PTVX
 
 ## 📋 Panoramica
@@ -932,7 +921,7 @@ class BlogPostsChartTest extends TestCase
 - [Awesome Chart.js](https://github.com/chartjs/awesome)
 
 ### Documentazione PTVX
-- [Widget Implementation Rules](./widget_implementation_rules.md)
+- [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 

@@ -1,14 +1,3 @@
----
-title: "Guida a Filament"
-module: "Xot"
-type: how-to
-tags: [filament, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida a Filament
 
 ## Risorse Utili

@@ -1,14 +1,3 @@
----
-title: "Comandi di Importazione MDB"
-module: "Xot"
-type: concept
-tags: [import, mdb]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "import mdb"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Comandi di Importazione MDB
 
 ## Panoramica

@@ -1,14 +1,3 @@
----
-title: "PHPStan HasXotTable Trait Type Safety Fixes - February 2026"
-module: "Xot"
-type: pattern
-tags: [phpstan, hasxottable, trait, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan hasxottable trait fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan HasXotTable Trait Type Safety Fixes - February 2026
 
 ## Data

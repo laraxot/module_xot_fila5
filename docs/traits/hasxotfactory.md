@@ -1,14 +1,3 @@
----
-title: "HasXotFactory Trait"
-module: "Xot"
-type: concept
-tags: [hasxotfactory]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hasxotfactory"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # HasXotFactory Trait
 
 ## Panoramica

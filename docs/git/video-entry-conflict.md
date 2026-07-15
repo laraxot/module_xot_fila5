@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto in VideoEntry"
-module: "Xot"
-type: concept
-tags: [video, entry, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "video entry conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione Conflitto in VideoEntry
 
 ## Panoramica

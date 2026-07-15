@@ -1,14 +1,3 @@
----
-title: "Panoramica delle Blade Icons in Xot"
-module: "Xot"
-type: concept
-tags: [blade, icons, overview]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "blade icons overview"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Panoramica delle Blade Icons in Xot
 
 ## Introduzione
@@ -17,7 +6,7 @@ Le Blade Icons sono un componente fondamentale del sistema di interfaccia utente
 ## Componenti Principali
 
 ### Registrazione delle Icons
-Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerBladeIcons.md).
+Per una comprensione dettagliata del processo di registrazione delle icone, consultare la [documentazione completa del metodo registerBladeIcons](registerbladeicons.md).
 
 ### Struttura delle Directory
 ```
@@ -39,5 +28,5 @@ Modules/
 ```
 
 ## Risorse Aggiuntive
-- [Documentazione dettagliata di registerBladeIcons](registerBladeIcons.md)
+- [Documentazione dettagliata di registerBladeIcons](registerbladeicons.md)
 - [Guida all'implementazione delle icone personalizzate](custom-icons-implementation.md)

@@ -1,14 +1,3 @@
----
-title: "🐄 SUPER MUCCA - Script Risoluzione Conflitti Git"
-module: "Xot"
-type: concept
-tags: [script, risoluzione, conflitti]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "script risoluzione conflitti"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
 

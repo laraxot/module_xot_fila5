@@ -1,14 +1,3 @@
----
-title: "Laraxot Architecture Rules - Xot Module"
-module: "Xot"
-type: rule
-tags: [laraxot, architecture, rules, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laraxot architecture rules conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Architecture Rules - Xot Module
 
 ## 🎯 Regole Fondamentali Laraxot

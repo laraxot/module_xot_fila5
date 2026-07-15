@@ -1,14 +1,3 @@
----
-title: "Piano Consolidamento File readme.md Duplicati"
-module: "Xot"
-type: concept
-tags: [readme, consolidation, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme consolidation plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  

@@ -1,14 +1,3 @@
----
-title: "Testing del Brand"
-module: "Xot"
-type: concept
-tags: [brand, testing]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "brand testing"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Testing del Brand
 
 ## Principi di Testing

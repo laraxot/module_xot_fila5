@@ -1,14 +1,3 @@
----
-title: "WebhookErrorFormatter"
-module: "Xot"
-type: concept
-tags: [webhook, error, formatter]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "webhook error formatter"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # WebhookErrorFormatter
 
 ## Descrizione
@@ -57,5 +46,5 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 ## Collegamenti
 - [Error Handling Guidelines](../../EXCEPTION-HANDLING-GUIDE.md)
 - [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
-- [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
+- [PHPStan Level 9 Guide](phpstan-level9-guide.md)
 - [Error Formatters Overview](../README.md)

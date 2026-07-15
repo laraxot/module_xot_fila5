@@ -1,14 +1,3 @@
----
-title: "Traduzioni: Best Practices in Laraxot"
-module: "Xot"
-type: concept
-tags: [translations, best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translations best practices"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Traduzioni: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per la gestione delle traduzioni all'interno del framework Laraxot.

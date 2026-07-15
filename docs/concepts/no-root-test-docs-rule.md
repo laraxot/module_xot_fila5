@@ -1,14 +1,3 @@
----
-title: "REGOLA CRITICA: Test Docs NEI MODULI/TEMI"
-module: "Xot"
-type: rule
-tags: [no, root, test, docs]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "no root test docs rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # REGOLA CRITICA: Test Docs NEI MODULI/TEMI
 
 ## PROBLEMA

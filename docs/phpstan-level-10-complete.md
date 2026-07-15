@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 - Completamento Totale ✅"
-module: "Xot"
-type: concept
-tags: [phpstan, level, 10, complete]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level 10 complete"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 - Completamento Totale ✅
 
 **Data**: 9 Gennaio 2026  

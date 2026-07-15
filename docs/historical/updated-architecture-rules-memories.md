@@ -1,14 +1,3 @@
----
-title: "Laraxot Architecture Rules and Memory Updates"
-module: "Xot"
-type: rule
-tags: [updated, architecture, rules, memories]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "updated architecture rules memories"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles

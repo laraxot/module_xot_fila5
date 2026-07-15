@@ -1,14 +1,3 @@
----
-title: "Riepilogo Analisi Qualità Codice - 2025-01-22"
-module: "Xot"
-type: concept
-tags: [analysis, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "analysis summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Riepilogo Analisi Qualità Codice - 2025-01-22
 
 ## 🎯 Obiettivo

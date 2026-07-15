@@ -1,14 +1,3 @@
----
-title: "PHPStan Patterns - Dicembre 2025"
-module: "Xot"
-type: pattern
-tags: [phpstan, patterns, dec]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan patterns dec"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Patterns - Dicembre 2025
 
 ## 🎯 Nuovi Pattern Scoperti

@@ -1,14 +1,3 @@
----
-title: "Task: Consolidare Documentazione Duplicata - Xot"
-module: "Xot"
-type: concept
-tags: [task, consolidare, documentazione]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "task consolidare documentazione"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Task: Consolidare Documentazione Duplicata - Xot
 
 **Modulo**: Xot

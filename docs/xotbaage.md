@@ -1,14 +1,3 @@
----
-title: "XotBasePage - Classe Base per le Pagine Filament"
-module: "Xot"
-type: concept
-tags: [xotbaage]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbaage"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBasePage - Classe Base per le Pagine Filament
 
 ## Descrizione

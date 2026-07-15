@@ -1,14 +1,3 @@
----
-title: "Blocchi UI in il progetto"
-module: "Xot"
-type: concept
-tags: [blocks]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "blocks"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Blocchi UI in il progetto
 
 I blocchi UI sono componenti riutilizzabili per la costruzione delle pagine. Ogni blocco è un componente Blade che può essere utilizzato in qualsiasi vista del tema.

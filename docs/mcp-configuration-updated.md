@@ -1,14 +1,3 @@
----
-title: "MCP Server Configuration - Xot Module (Updated)"
-module: "Xot"
-type: concept
-tags: [mcp, configuration, updated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp configuration updated"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MCP Server Configuration - Xot Module (Updated)
 
 

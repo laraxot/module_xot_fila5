@@ -1,14 +1,3 @@
----
-title: "Indice Filosofico Completo - Tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [philosophy, master, index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "philosophy master index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Indice Filosofico Completo - Tutti i Moduli
 
 **Data Creazione**: 2025-12-23

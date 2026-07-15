@@ -1,14 +1,3 @@
----
-title: "Task: Consolidamento Documentazione"
-module: "Xot"
-type: concept
-tags: [consolidamento, documentazione]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "consolidamento documentazione"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Task: Consolidamento Documentazione
 
 **Modulo**: Xot  

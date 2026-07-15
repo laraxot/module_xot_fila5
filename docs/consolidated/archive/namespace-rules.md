@@ -1,14 +1,3 @@
----
-title: "Regole per i Namespace nei Moduli Laraxot"
-module: "Xot"
-type: rule
-tags: [namespace, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "namespace rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole per i Namespace nei Moduli Laraxot
 
 Questo documento definisce le regole ufficiali per l'utilizzo dei namespace all'interno dei moduli Laraxot.

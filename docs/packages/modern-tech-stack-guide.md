@@ -1,14 +1,3 @@
----
-title: "Guida al Modern Tech Stack - Laraxot PTVX"
-module: "Xot"
-type: how-to
-tags: [modern, tech, stack, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "modern tech stack guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida al Modern Tech Stack - Laraxot PTVX
 
 Questa guida delinea come utilizzare al meglio i pacchetti installati per mantenere l'architettura pulita e performante.

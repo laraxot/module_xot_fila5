@@ -1,14 +1,3 @@
----
-title: "NO Label/Placeholder — La Religione dell'Auto-Label"
-module: "Xot"
-type: concept
-tags: [no, label, placeholder, religion]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "no label placeholder religion"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # NO Label/Placeholder — La Religione dell'Auto-Label
 
 **Status**: Active  

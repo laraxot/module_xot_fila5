@@ -1,14 +1,3 @@
----
-title: "Xot Services/Support → Actions migration"
-module: "Xot"
-type: concept
-tags: [xot, services, support, actions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot services support to actions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Services/Support → Actions migration
 
 Deleted dead `app/Services/` and `app/Support/` files that had zero callers or were already replaced by Actions/Adapters.

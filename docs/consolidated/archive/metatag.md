@@ -1,14 +1,3 @@
----
-title: "Metatag"
-module: "Xot"
-type: concept
-tags: [metatag]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "metatag"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ~~~ php
 <?php
 declare(strict_types=1);

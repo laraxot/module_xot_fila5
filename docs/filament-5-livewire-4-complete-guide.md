@@ -1,14 +1,3 @@
----
-title: "Guida Completa: Upgrade Filament 5 + Livewire 4 - Modulo Xot"
-module: "Xot"
-type: how-to
-tags: [filament, 5, livewire, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 5 livewire 4 complete guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida Completa: Upgrade Filament 5 + Livewire 4 - Modulo Xot
 
 

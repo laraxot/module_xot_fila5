@@ -1,14 +1,3 @@
----
-title: "Chaos Monkey Operability Rules (Xot)"
-module: "Xot"
-type: rule
-tags: [chaos, monkey, operability, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "chaos monkey operability rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Chaos Monkey Operability Rules (Xot)
 
 ## Scopo

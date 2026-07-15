@@ -1,14 +1,3 @@
----
-title: "Task: Xot Filament v5 Alignment (Clusters)"
-module: "Xot"
-type: concept
-tags: [xot, filament, v5]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot filament v5"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Task: Xot Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

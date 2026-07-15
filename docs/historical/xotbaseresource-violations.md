@@ -1,14 +1,3 @@
----
-title: "VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX"
-module: "Xot"
-type: concept
-tags: [xotbaseresource, violations]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbaseresource violations"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX
 
 ## 🚨 ERRORI GRAVISSIMI DA EVITARE SEMPRE

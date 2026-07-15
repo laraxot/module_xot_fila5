@@ -1,14 +1,3 @@
----
-title: "Script di Risoluzione Conflitti Git - FixCity Project"
-module: "Xot"
-type: concept
-tags: [script, risoluzione, conflitti, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "script risoluzione conflitti conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica

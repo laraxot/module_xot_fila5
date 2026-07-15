@@ -1,14 +1,3 @@
----
-title: "TestCase SQLite to MySQL Fix - Xot Module"
-module: "Xot"
-type: concept
-tags: [testcase, sqlite, mysql, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testcase sqlite to mysql fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # TestCase SQLite to MySQL Fix - Xot Module
 
 ## Problema Identificato

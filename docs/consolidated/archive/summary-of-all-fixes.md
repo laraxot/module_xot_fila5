@@ -1,14 +1,3 @@
----
-title: "Riepilogo Fix PHPStan per Filament/Laraxot"
-module: "Xot"
-type: concept
-tags: [summary, all, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "summary of all fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Riepilogo Fix PHPStan per Filament/Laraxot
 
 ## Contesto Architetturale

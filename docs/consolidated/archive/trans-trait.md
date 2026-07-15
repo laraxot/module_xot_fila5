@@ -1,14 +1,3 @@
----
-title: "TransTrait"
-module: "Xot"
-type: pattern
-tags: [trans, trait]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "trans trait"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # TransTrait
 
 ## Descrizione
@@ -56,5 +45,5 @@ class MyResource
 
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
-- [Translation Guidelines](../TRANSLATIONS-BEST-PRACTICES.md)
+- [Translation Guidelines](translations-best-practices.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)

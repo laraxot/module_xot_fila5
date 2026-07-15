@@ -1,14 +1,3 @@
----
-title: "XotBaseResource Return Type Fixes"
-module: "Xot"
-type: concept
-tags: [return, type, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "return type fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseResource Return Type Fixes
 
 ## getRelations() Return Type Issue

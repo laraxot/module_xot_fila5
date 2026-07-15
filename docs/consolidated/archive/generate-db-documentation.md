@@ -1,14 +1,3 @@
----
-title: "GenerateDbDocumentationCommand"
-module: "Xot"
-type: concept
-tags: [generate, db, documentation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "generate db documentation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # GenerateDbDocumentationCommand
 
 ## Descrizione
@@ -47,6 +36,6 @@ php artisan xot:generate-db-documentation {schema_file} {output_dir?}
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
-- [Database Guidelines](../DATABASE-GUIDELINES.md)
-- [Documentation Guidelines](../DOCUMENTATION-GUIDELINES.md)
+- [Database Guidelines](database-guidelines.md)
+- [Documentation Guidelines](documentation-guidelines.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)

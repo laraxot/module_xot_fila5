@@ -1,14 +1,3 @@
----
-title: "Regole per i Collegamenti nella Documentazione"
-module: "Xot"
-type: concept
-tags: [collegamenti, relativi]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "collegamenti relativi"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole per i Collegamenti nella Documentazione
 
 ## Utilizzo Esclusivo di Collegamenti Relativi

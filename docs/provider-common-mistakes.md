@@ -1,14 +1,3 @@
----
-title: "Provider Common Mistakes - Comprehensive Guide"
-module: "Xot"
-type: concept
-tags: [provider, common, mistakes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "provider common mistakes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Provider Common Mistakes - Comprehensive Guide
 
 **Last Updated**: 2025-12-16

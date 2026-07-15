@@ -1,14 +1,3 @@
----
-title: "MCP (Model Context Protocol) - Guida Completa"
-module: "Xot"
-type: concept
-tags: [mcp, servers]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp servers"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MCP (Model Context Protocol) - Guida Completa
 
 ## Indice

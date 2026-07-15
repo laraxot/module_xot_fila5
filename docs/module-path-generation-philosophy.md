@@ -1,14 +1,3 @@
----
-title: "Module Path Generation - Philosophy and Business Logic"
-module: "Xot"
-type: concept
-tags: [module, path, generation, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module path generation philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: 2026-01-02

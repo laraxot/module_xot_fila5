@@ -1,14 +1,3 @@
----
-title: "Git Forward-Only Rule"
-module: "Xot"
-type: rule
-tags: [git, forward, only, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git forward only rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Git Forward-Only Rule
 
 ## 🔥 Regola Assoluta: Mai Tornare Indietro

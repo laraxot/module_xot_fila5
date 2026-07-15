@@ -1,14 +1,3 @@
----
-title: "Development Guidelines - Xot Module"
-module: "Xot"
-type: how-to
-tags: [development, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "development guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Development Guidelines - Xot Module
 
 ## Panoramica
