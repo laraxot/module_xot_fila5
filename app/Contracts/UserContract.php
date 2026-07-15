@@ -61,7 +61,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * @return HasOne<Model&ProfileContract, $this>
      *
-     * @phpstan-ignore generics.notSubtype
      */
     public function profile(): HasOne;
 
@@ -136,7 +135,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @return BelongsToMany<Model, $this>
      *
-     * @phpstan-ignore generics.notSubtype
      */
     public function teams(): BelongsToMany;
 
@@ -145,7 +143,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
      *
-     * @phpstan-ignore generics.notSubtype
      */
     public function membershipTeams(): BelongsToMany;
 
@@ -154,7 +151,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @return BelongsToMany<Model, $this>
      *
-     * @phpstan-ignore generics.notSubtype
      */
     public function tenants(): BelongsToMany;
 
