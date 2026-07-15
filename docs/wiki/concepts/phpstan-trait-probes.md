@@ -4,11 +4,7 @@ type: concept
 module: Xot
 tags: [phpstan, trait, probe, xot, second-brain]
 created: 2026-06-30
-<<<<<<< HEAD
 updated: 2026-07-13
-=======
-updated: 2026-07-08
->>>>>>> 2353ccee (.)
 qmd: "phpstan trait probe unused trait xotPhpstanTraitProbeClasses Helper scanFiles"
 related:
   - ./phpstan-fixes-log.md
@@ -61,7 +57,6 @@ function xotPhpstanTraitProbeClasses(): array
 | Trait su modello produzione causa fatal/collision | **Non** wire su modello — solo probe |
 | Trait già su modello base (es. `RelationX`) | Nessun probe |
 
-<<<<<<< HEAD
 ## Attributi Eloquent nei trait riusabili
 
 Un trait non deve presumere che ogni host dichiari in PHPDoc le sue proprietà
@@ -75,9 +70,6 @@ $publishedAt = $this->getAttribute('published_at');
 
 return $publishedAt instanceof Carbon && $publishedAt->isPast();
 ```
-
-=======
->>>>>>> 2353ccee (.)
 ## Anti-pattern (revertiti in sessione 2026-06)
 
 - `HasCommonScopes` su `XotBaseModel` → conflitto con scope Blog

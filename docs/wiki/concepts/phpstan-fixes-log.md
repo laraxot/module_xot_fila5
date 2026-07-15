@@ -134,14 +134,6 @@ Baseline 205 → 0. Batch Contracts/Datas/Traits (14), Actions (43), Models/Fila
 Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `EnumTrait::toArray()` → `array<int|string, string>`.
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)
-
 ## Fix 2026-06-30: fatal trait collision + tail Modules/
 
 ### Problema 1 — PHPStan non partiva (fatal)
@@ -174,12 +166,4 @@ cd laravel && ./vendor/bin/phpstan analyse Modules
 # [OK] No errors — 5357 file
 ```
 
-<<<<<<< HEAD
 Trait probe registry: [phpstan-trait-probes](./phpstan-trait-probes.md)
-<<<<<<< HEAD
-=======
->>>>>>> 64619e34 (.)
-=======
->>>>>>> 61938ca4 (delete .claude-audit/)
-=======
->>>>>>> 2353ccee (.)

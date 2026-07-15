@@ -45,11 +45,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *                                                              <<<<<<< HEAD
  *                                                              <<<<<<< HEAD
  * @property Collection<int, Team>           $membershipTeams
- *                                                              <<<<<<< HEAD
  * @property Collection<int, Team>           $teams
- *                                                              =======
- * @property Collection<int, Model>          $teams
- *                                                              >>>>>>> 2353ccee (.)
  * @property Collection<int, Tenant>         $tenants
  *
  * @phpstan-require-extends Model
