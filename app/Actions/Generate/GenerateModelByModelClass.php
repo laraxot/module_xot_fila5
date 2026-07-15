@@ -15,6 +15,7 @@ class GenerateModelByModelClass
 {
     use QueueableAction;
 
+    /** @var array<string, string> */
     public array $replaces = [];
 
     /**

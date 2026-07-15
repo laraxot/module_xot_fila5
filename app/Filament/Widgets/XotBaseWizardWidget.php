@@ -48,6 +48,8 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  * @see Wizard
  * @see HasWizard
  * @see \Filament\Resources\Pages\CreateRecord\Concerns\HasWizard
+ * @see LangServiceProvider
+ * @see AutoLabelAction
  */
 abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
 {

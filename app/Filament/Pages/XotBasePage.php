@@ -113,9 +113,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getModel(): string
     {
-        /* @phpstan-ignore property.staticAccess */
         if (null !== static::$model) {
-            /** @phpstan-ignore property.staticAccess */
             /** @var class-string<Model> $modelValue */
             $modelValue = static::$model;
 
@@ -305,6 +303,7 @@ abstract class XotBasePage extends Page implements HasForms
         // Per ora lasciamo vuoto, può essere implementato nelle classi figlie
     }
 
+    /** @return list<Action> */
     protected function getFormActions(): array
     {
         return [

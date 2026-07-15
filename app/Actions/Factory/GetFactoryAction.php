@@ -13,6 +13,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Factory;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
@@ -41,24 +42,28 @@ class GetFactoryAction
 
         $factory_class = $this->getFactoryClass($model_class);
 
+        if (! class_exists($factory_class)) {
+            $this->loadFactoryFromDisk($model_class);
+        }
+
         if (class_exists($factory_class)) {
-            /** @var Factory $factory */
-            $factory = $factory_class::new();
-
-            // Verifichiamo che il risultato sia effettivamente un'istanza di Factory
-            Assert::isInstanceOf(
-                $factory,
-                Factory::class,
-                "La classe {$factory_class}::new() non ha restituito un'istanza di Factory",
-            );
-
-            return $factory;
+            return $this->instantiateFactory($factory_class);
         }
 
         $this->createFactory($model_class);
+        $this->loadFactoryFromDisk($model_class);
 
-        // Lancia un'eccezione con informazioni specifiche
-        throw new \Exception(sprintf('Generating Factory [%s] press [F5] to refresh page [%d][%s]', $factory_class, __LINE__, class_basename($this)));
+        Assert::classExists(
+            $factory_class,
+            sprintf(
+                'Factory [%s] could not be loaded. If the file exists on disk, run composer dump-autoload. [%d][%s]',
+                $factory_class,
+                __LINE__,
+                class_basename($this),
+            ),
+        );
+
+        return $this->instantiateFactory($factory_class);
     }
 
     /**
@@ -96,6 +101,18 @@ class GetFactoryAction
     {
         Assert::stringNotEmpty($model_class, 'Model class non può essere vuota');
         Assert::classExists($model_class, "La classe del modello {$model_class} non esiste");
+
+        $factory_class = $this->getFactoryClass($model_class);
+
+        if (class_exists($factory_class)) {
+            return;
+        }
+
+        $this->loadFactoryFromDisk($model_class);
+
+        if (is_file($this->getFactoryPath($model_class))) {
+            return;
+        }
 
         $model_name = class_basename($model_class);
 

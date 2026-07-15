@@ -4,30 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-/**
- * Extends the model's fillable list with the values of one or more backed enums.
- *
- * Consumers declare which enums contribute fillable field names by
- * implementing {@see self::getDynamicFillableEnums()}, returning an array
- * of backed enum class-strings. Each case's scalar value is treated as a
- * column/attribute name and merged into the static `$fillable` array.
- */
+/** @phpstan-ignore trait.unused */
 trait HasDynamicFillable
 {
     /**
-     * @return array<int, class-string<\UnitEnum>>
-     */
-    protected function getDynamicFillableEnums(): array
-    {
-        return [];
-    }
-
-    /**
-     * @return array<int, string>
+     * Overrides the default getFillable method to include fields from specified Enums.
+     *
+     * Models using this trait should define a protected array property `$dynamicFillableEnums`
+     * containing the fully qualified class names of Enums whose cases should be added to fillable.
+     *
+     * Example: protected array $dynamicFillableEnums = [AddressItemEnum::class, ContactTypeEnum::class];
+     *
+     * @return list<string>
      */
     public function getFillable(): array
     {
-        $fillable = parent::getFillable();
+        $fillable = array_values(parent::getFillable());
 
         $dynamicFillableEnums = $this->getDynamicFillableEnums();
 

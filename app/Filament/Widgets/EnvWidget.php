@@ -51,7 +51,7 @@ class EnvWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<Component>
      */
     public function getFormSchema(): array
     {

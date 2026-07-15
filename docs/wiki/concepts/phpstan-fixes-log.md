@@ -12,13 +12,6 @@ Class Modules\Xot\States\XotBaseState extends unknown class Spatie\ModelStates\S
 Class Modules\Xot\States\Transitions\XotBaseTransition extends unknown class Spatie\ModelStates\Transition
 ```
 
-<<<<<<< HEAD
-### Root Cause
-Il package `spatie/laravel-model-states` era documentato come parte dell'architettura ma non era incluso in `composer.json`.
-
-### Solution
-1. Aggiunto `
-=======
 ### Root Cause (aggiornato 2026-05-21)
 
 - Dichiarato in `Modules/Xot/composer.json` (`^2.14`) e root `laravel/composer.json`, ma **non installato** (assente da `composer.lock` / `vendor/`).

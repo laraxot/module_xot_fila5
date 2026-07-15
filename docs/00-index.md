@@ -97,8 +97,8 @@
 - [Module Dependency Management](./composer-module-dependency-management.md)
 - [Composer Packages Reference](../../../../docs/composer-packages-reference.md) - Mappatura pacchetti per modulo
 - [Inventario completo 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Tutti i pacchetti con versione e descrizione
-- [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study-2026-03-02.md)
-- [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog-2026-03-02.md) - Studio completo package-by-package da `composer show`
+- [Composer Packages Deep Study (2026-03-02)](./composer-packages-deep-study.md)
+- [Composer Packages Full Catalog (2026-03-02)](./composer-packages-full-catalog.md) - Studio completo package-by-package da `composer show`
 - [Database Connection Configuration](./database-configuration-critical-rules.md)
 
 ### Development Standards
@@ -106,7 +106,6 @@
 - [Code Quality Workflow](./code-quality-tools-guide.md)
 - [TDD Laravel Pest Complete Guide](./tdd-laravel-pestd-complete-guide.md) ⭐ NEW
 - [Testing Best Practices](./testing-best-practices.md)
-- [Kinetic UX Checklist](./kinetic-ux-checklist.md) — Motion/micro‑interazioni: regole, accessibilità e performance
 
 ### Memory & Performance
 - [Filament Memory Optimization](./memory-optimization.md)

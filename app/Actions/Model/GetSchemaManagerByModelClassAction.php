@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model;
 
+use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Spatie\QueueableAction\QueueableAction;

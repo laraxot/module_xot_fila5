@@ -109,24 +109,6 @@ This document outlines the best practices for maintaining high code quality with
 
 
 
->>>>>>> 17684f52 (.)
-=======
->>>>>>> 3eee6f79 (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 17684f52 (.)
->>>>>>> ce6fc085 (.)
->>>>>>> 2bad128c (.)
->>>>>>> 358ba79a7 (.)
->>>>>>> f8f76a284 (.)
->>>>>>> 5e6e0d054 (.)
->>>>>>> 0117b849c (.)
-=======
->>>>>>> 399f46d3 (.)
->>>>>>> 50d6b63f (.)
->>>>>>> 551c768c4 (.)
->>>>>>> 38b70c7ba (.)
 ## Code Quality Tools
 
 ### Automation Scripts
@@ -210,51 +192,6 @@ This document outlines the best practices for maintaining high code quality with
 
 
 
->>>>>>> 5a14301c (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 5a14301c (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 17684f52 (.)
-=======
->>>>>>> 5a14301c (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 50d6b63f (.)
->>>>>>> 17684f52 (.)
-=======
->>>>>>> 88e35986 (.)
-=======
->>>>>>> e0b8ebe3 (.)
-=======
->>>>>>> cc52d333 (.)
-=======
->>>>>>> 90d386aa (.)
-=======
->>>>>>> 3eee6f79 (.)
-=======
->>>>>>> 399f46d3 (.)
-=======
->>>>>>> 17684f52 (.)
->>>>>>> ce6fc085 (.)
->>>>>>> 2bad128c (.)
->>>>>>> 358ba79a7 (.)
->>>>>>> f8f76a284 (.)
->>>>>>> 5e6e0d054 (.)
->>>>>>> 0117b849c (.)
-=======
->>>>>>> 399f46d3 (.)
->>>>>>> laraxot/develop
->>>>>>> 50d6b63f (.)
->>>>>>> 551c768c4 (.)
->>>>>>> 38b70c7ba (.)
 ## Common Issues and Fixes
 - **Type Errors**: Ensure all methods and functions have explicit return types and parameter types to avoid type-related bugs.
 - **Static Analysis Failures**: Address PHPStan errors by refining code or updating the baseline for existing code.

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
-use Fidum\EloquentMorphToOne\MorphToOne;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
@@ -31,11 +30,11 @@ class MorphToOneAction
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
-        // Validate the relationship type
         $relation = $model->{$relationDTO->name}();
-        Assert::isInstanceOf($relation, MorphToOne::class, 'Relation must be an instance of MorphToOne.');
+        if (! is_object($relation)) {
+            throw new \InvalidArgumentException('Relation must be an object.');
+        }
 
-        // Prepare the data for creation
         $data = $this->prepareData($relationDTO->data);
 
         app(CreateMorphToOneRelatedModelAction::class)->execute($relation, $data);

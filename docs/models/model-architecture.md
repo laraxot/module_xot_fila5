@@ -1,5 +1,6 @@
 # Model Architecture - Guida Completa
 
+**Data**: 2025-10-16
 **Modulo**: Xot (Base Module)
 **Autore**: Claude Code Analysis
 
@@ -67,7 +68,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
 │ - Modules/ModuloEsempio/Models/Contact                            │
->>>>>>> .merge_file_flnzoR
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -194,7 +194,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
->>>>>>> .merge_file_flnzoR
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -237,7 +236,6 @@ class Tenant extends BaseModel
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
 - `Modules/ModuloEsempio/Models/Contact.php`
->>>>>>> .merge_file_flnzoR
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -353,12 +351,9 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
-=======
-- Namespace: `Modules\ExternalProject\Models\*` → Connection: `<nome progetto>`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -566,7 +561,6 @@ namespace Modules\healthcare_app\Models;
 
 ```php
 namespace Modules\ModuloEsempio\Models;
->>>>>>> .merge_file_flnzoR
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -578,7 +572,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 /**
  * Base Model per healthcare_app module.
  * Base Model per ModuloEsempio module.
->>>>>>> .merge_file_flnzoR
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -603,7 +596,6 @@ Poi i modelli concreti ereditano tutto:
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
->>>>>>> .merge_file_flnzoR
 
 class Contact extends BaseModel
 {
@@ -665,7 +657,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
 // Modules/ModuloEsempio/Models/BaseModel.php
->>>>>>> .merge_file_flnzoR
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -796,6 +787,8 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 
@@ -824,6 +817,7 @@ A: Estendi comunque BaseModel, ma usa `setTable()` nel costruttore o in metodi f
 **Prossimo aggiornamento**: Dopo implementazione auto-discovery in XotBaseModel
 # Model Architecture - Guida Completa
 
+**Data**: 2025-10-16
 **Modulo**: Xot (Base Module)
 **Autore**: Claude Code Analysis
 
@@ -891,7 +885,6 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/TeamUser                              │
 │ - Modules/healthcare_app/Models/Contact                            │
 │ - Modules/ModuloEsempio/Models/Contact                            │
->>>>>>> .merge_file_flnzoR
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -1018,7 +1011,6 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 - Definire la connection specifica del modulo
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in healthcare_app)
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in ModuloEsempio)
->>>>>>> .merge_file_flnzoR
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -1061,7 +1053,6 @@ class Tenant extends BaseModel
 - `Modules/User/Models/Tenant.php`
 - `Modules/healthcare_app/Models/Contact.php`
 - `Modules/ModuloEsempio/Models/Contact.php`
->>>>>>> .merge_file_flnzoR
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -1177,12 +1168,9 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
+**Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) per proposta di implementazione).
 - Namespace: `Modules\healthcare_app\Models\*` → Connection: `healthcare_app`
 - Namespace: `Modules\ModuloEsempio\Models\*` → Connection: `modulo_esempio`
-=======
-- Namespace: `Modules\ExternalProject\Models\*` → Connection: `<nome progetto>`
->>>>>>> 8116fe6a (docs: replace project-specific references with generic placeholders across documentation)
->>>>>>> .merge_file_flnzoR
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -1390,7 +1378,6 @@ namespace Modules\healthcare_app\Models;
 
 ```php
 namespace Modules\ModuloEsempio\Models;
->>>>>>> .merge_file_flnzoR
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -1402,7 +1389,6 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 /**
  * Base Model per healthcare_app module.
  * Base Model per ModuloEsempio module.
->>>>>>> .merge_file_flnzoR
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -1427,7 +1413,6 @@ Poi i modelli concreti ereditano tutto:
 ```php
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
->>>>>>> .merge_file_flnzoR
 
 class Contact extends BaseModel
 {
@@ -1489,7 +1474,6 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 // Modules/healthcare_app/Models/BaseModel.php
 // Modules/ModuloEsempio/Models/BaseModel.php
->>>>>>> .merge_file_flnzoR
 use InteractsWithMedia;
 use HasExtraTrait;
 
@@ -1620,6 +1604,8 @@ it('tracks who created the record', function () {
 - [XotBaseModel.php](../../app/Models/XotBaseModel.php) - Base class per modelli standard
 - [XotBasePivot.php](../../app/Models/XotBasePivot.php) - Base class per pivot tables
 - [XotBaseMorphPivot.php](../../app/Models/XotBaseMorphPivot.php) - Base class per morph pivots
+- [DRY-KISS-ANALYSIS.md](./DRY-KISS-ANALYSIS.md) - Analisi duplicazioni e proposte miglioramento
+- [CLAUDE.md](../../../CLAUDE.md) - Convenzioni generali del progetto
 - [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) - Analisi duplicazioni e proposte miglioramento
 - [CLAUDE.md](../../../claude.md) - Convenzioni generali del progetto
 

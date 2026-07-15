@@ -1,9 +1,9 @@
 ---
 title: "Composer root skeleton modulare"
 type: concept
-tags: [composer, xot, merge-plugin, model-states, filament]
+tags: [composer, xot, merge-plugin, nwidart, laravel-modules, skeleton]
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-30
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/30"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/305"
@@ -19,7 +19,7 @@ related:
 
 # Composer root skeleton (Xot)
 
-Owner di `filament/filament` e `spatie/laravel-model-states` (^2.14) in `Modules/Xot/composer.json`.
+Il root `laravel/composer.json` e' lo skeleton dell'applicazione. Non e' il catalogo delle dipendenze funzionali dei moduli.
 
 ## Regola
 

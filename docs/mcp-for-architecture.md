@@ -105,10 +105,6 @@ SELECT
 FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE TABLE_SCHEMA = 'healthcare_app_data'
 WHERE TABLE_SCHEMA = 'app_data'
-=======
-WHERE TABLE_SCHEMA = 'ptvx_data'
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
   AND REFERENCED_TABLE_NAME IS NOT NULL;
 
 -- Analizza tenant isolation
@@ -118,10 +114,6 @@ SELECT
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA LIKE 'healthcare_app_%'
 WHERE TABLE_SCHEMA LIKE 'app_%'
-=======
-WHERE TABLE_SCHEMA LIKE 'ptvx_%'
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
   AND COLUMN_NAME LIKE '%tenant%'
 GROUP BY TABLE_NAME;
 
@@ -132,10 +124,6 @@ SELECT
 FROM INFORMATION_SCHEMA.STATISTICS
 WHERE TABLE_SCHEMA = 'healthcare_app_data'
 WHERE TABLE_SCHEMA = 'app_data'
-=======
-WHERE TABLE_SCHEMA = 'ptvx_data'
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
   AND SEQ_IN_INDEX = 1
 GROUP BY TABLE_NAME, COLUMN_NAME
 HAVING COUNT(*) < 3;
@@ -190,10 +178,6 @@ https://www.php-fig.org/psr/psr-12/
     "Modules/User/app/Models/BaseModel.php",
     "Modules/healthcare_app/app/Models/BaseModel.php",
     "Modules/ExternalProject/app/Models/BaseModel.php",
-=======
-    "Modules/ModuloEsempio/app/Models/BaseModel.php",
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
     "Modules/Xot/Tests/Architecture/BaseModelTest.php"
   ]
 }
@@ -290,12 +274,6 @@ File: `Modules/Xot/.mcp.json`
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"
-=======
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot"],
-      "env": {
-        "ALLOWED_DIRECTORIES": "/var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot"
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
       },
       "trust": false,
       "includeTools": [
@@ -311,11 +289,6 @@ File: `Modules/Xot/.mcp.json`
       "cwd": "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot",
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_app_fila5_mono"],
       "cwd": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot",
-=======
-      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_ptvx_fila5_mono"],
-      "cwd": "/var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot",
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
       "trust": false
     },
     "sequential-thinking-xot": {
@@ -372,10 +345,6 @@ File: `Modules/Xot/.mcp.json`
     "Modules/User/app/Models/BaseModel.php",
     "Modules/healthcare_app/app/Models/BaseModel.php",
     "Modules/ExternalProject/app/Models/BaseModel.php",
-=======
-    "Modules/ModuloEsempio/app/Models/BaseModel.php",
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ydlJ4t
     "Modules/Xot/Models/XotBaseModel.php"
   ],
   "rationale": "Module sovereignty and Laraxot philosophy",

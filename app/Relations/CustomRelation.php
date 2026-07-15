@@ -63,6 +63,9 @@ class CustomRelation extends Relation
     /**
      * Set the constraints for an eager load of the relation.
      */
+    /**
+     * @param array<int, Model> $models
+     */
     public function addEagerConstraints(array $models): void
     {
         // Parameter #1 $function of function call_user_func expects callable(): mixed, Closure|null given.
@@ -134,6 +137,11 @@ class CustomRelation extends Relation
 
     /**
      * Execute the query as a "select" statement.
+     */
+    /**
+     * @param array<int, string>|string $columns
+     *
+     * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection
     {

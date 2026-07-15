@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Tables\Table;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
@@ -13,63 +11,20 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Livewire\Attributes\On;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Webmozart\Assert\Assert;
+use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
     use HasXotTable;
     use InteractsWithPageFilters;
-
-    /**
-     * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
-     */
-    public function getGridTableColumns(): array
-    {
-        return $this->xotGetGridTableColumns();
-    }
-
-    /**
-     * @return bool|array<int|string>
-     */
-    protected function getTablePaginated(): bool|array
-    {
-        $paginated = $this->xotGetTablePaginated();
-
-        if (is_bool($paginated)) {
-            return $paginated;
-        }
-
-        /** @var array<int|string> $options */
-        $options = $paginated;
-
-        return $options;
-    }
-
-    /**
-     * @return array<string>
-     */
-    protected function getSearchableColumns(): array
-    {
-        /** @var array<string> $columns */
-        $columns = $this->xotSearchableColumns();
-
-        return $columns;
-    }
-
-    /**
-     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
-     */
-    protected function getHeaderActions(): array
-    {
-        /** @var array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup> $actions */
-        $actions = $this->xotGetHeaderActions();
-
-        return $actions;
-    }
+    use TransTrait;
 
     /**
      * Ascolta evento di aggiornamento filtri.
+     *
+     * @param array<string, mixed> $filters
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
@@ -107,10 +62,10 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     public function getTableRecordKey(Model|array $record): string
     {
         if (\is_array($record)) {
-            return (string) ($record['_id'] ?? $record['id'] ?? '');
+            return SafeStringCastAction::cast($record['_id'] ?? $record['id'] ?? '');
         }
 
-        return (string) ($record->_id ?? $record->id ?? '');
+        return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
 
     public function getTableSearch(): ?string

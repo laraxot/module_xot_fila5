@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
+uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
-
-uses(Modules\Xot\Tests\TestCase::class);
 
 it('gets module path from facade correctly', function (): void {
     // Spy on Module facade
@@ -20,7 +19,7 @@ it('gets module path from facade correctly', function (): void {
     $action = app(GetModulePathAction::class);
     $result = $action->execute('Xot');
 
-    expect($result)->toBe('/path/to/Xot/');
+    Assert::assertSame('/path/to/Xot/', $result);
 });
 
 it('gets module path from fallback correctly', function (): void {
@@ -47,7 +46,6 @@ it('gets module path from fallback correctly', function (): void {
     // Case-insensitive search
     $result = $action->execute('testmodule');
 
-    expect($result)->toBe($dummyModule);
-
+    Assert::assertSame($dummyModule, $result);
     File::deleteDirectory($dummyModule);
 });

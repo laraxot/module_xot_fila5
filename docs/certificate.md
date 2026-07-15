@@ -65,21 +65,8 @@ https://hackr.io/blog/top-laravel-interview-questions-and-answers
 
 https://learning.shine.com/talenteconomy/interview-questions/laravel-interview-questions-answers/
 
-
 https://www.learnvern.com/laravel-tutorial
 
 https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!
 
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
-
-
-
-
-
-
-
-
-
-
-
-

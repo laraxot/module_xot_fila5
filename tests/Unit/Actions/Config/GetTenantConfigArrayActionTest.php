@@ -32,7 +32,7 @@ it('returns config array when file exists and contains array', function (): void
 
     try {
         $result = app(GetTenantConfigArrayAction::class)->execute('mail');
-        expect($result)->toBe(['driver' => 'smtp', 'port' => 25]);
+        Assert::assertSame(['driver' => 'smtp', 'port' => 25], $result);
     } finally {
         @unlink($path);
     }

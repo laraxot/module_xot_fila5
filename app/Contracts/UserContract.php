@@ -12,10 +12,11 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Support\Carbon;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Laravel\Passport\Contracts\OAuthenticatable;
-use Laravel\Passport\Contracts\ScopeAuthorizable;
 use Laravel\Passport\PersonalAccessTokenResult;
+use Laravel\Passport\Token;
+use Laravel\Passport\TransientToken;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
@@ -41,7 +42,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract                    $currentTeam
  * @property ProfileContract|null            $profile
  * @property Collection<int, UserRole>       $roles
- *                                                               *                                                               *                                                               * @property Collection<int, Team>           $membershipTeams
+ * @property Collection<int, Team>           $membershipTeams
  * @property Collection<int, Team>           $teams
  * @property Collection<int, Tenant>         $tenants
  *
@@ -57,12 +58,19 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * public function areas();
      * public function avatar();
      */
+    /**
+     * @return HasOne<Model&ProfileContract, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
+     */
     public function profile(): HasOne;
 
     /**
      * Get the access token currently associated with the user.
+     *
+     * @return Token|TransientToken|null
      */
-    public function token(): ?ScopeAuthorizable;
+    public function token();
 
     /**
      * Create a new personal access token for the user.
@@ -76,7 +84,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Passport API tokens support.
      */
-
     /**
      * Determine if the model has (one of) the given role(s).
      */
@@ -95,7 +102,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @return $this
      */
-    public function assignRole(array|string|int|UserRole|Collection $roles = []);
+    public function assignRole(array|string|int|UserRole|Collection $roles = []): static;
 
     /**
      * Remove all current roles and set the given ones.
@@ -104,7 +111,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @return $this
      */
-    public function syncRoles(array|string|int|UserRole|Collection $roles = []);
+    public function syncRoles(array|string|int|UserRole|Collection $roles = []): static;
 
     /**
      * Determine if the model has (one of) the given permission(s).
@@ -121,31 +128,33 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
     /**
      * Get the user's roles.
      */
+    /** @return BelongsToMany<Model, Model> */
     public function roles(): BelongsToMany;
 
     /**
-     * <<<<<<< HEAD
-     * <<<<<<< HEAD
-     * <<<<<<< HEAD
-     *      * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
+     * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
      *
      * @return BelongsToMany<Model, $this>
      *
      * @phpstan-ignore generics.notSubtype
-     *      *      *                                          *      */
+     */
     public function teams(): BelongsToMany;
 
     /**
-     * Get the teams the user belongs to (excluding owned teams).
+     * Laraxot team membership (Jetstream-style pivot).
      *
-     * Aliased from HasTeams::teams() on BaseUser via `use ... { HasTeams::teams as membershipTeams; }`.
+     * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
      *
-     * @return BelongsToMany<Model&TeamContract, Model, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @phpstan-ignore generics.notSubtype
      */
     public function membershipTeams(): BelongsToMany;
 
     /**
      * Get the user's tenants.
+     *
+     * @return BelongsToMany<Model, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
      */
     public function tenants(): BelongsToMany;
 
@@ -156,7 +165,7 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      *
      * @return $this
      */
-    public function removeRole(string|int|array|UserRole|Collection|\BackedEnum ...$role);
+    public function removeRole(...$role);
 
     /**
      * Determine if the user owns the given team.

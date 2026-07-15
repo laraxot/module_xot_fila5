@@ -103,6 +103,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+*.backup-*
+*.backup_*
 *.bak
 *.bakcup
 *.new
@@ -121,6 +123,8 @@ Thumbs.db
 # ==============================================
 docs/phpstan/
 docs/cache/
+docs/archive/
+docs/archive/**
 
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)

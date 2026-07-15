@@ -49,7 +49,7 @@ class SafeArrayCastAction
     {
         // Se è già un array, restituiscilo direttamente
         if (is_array($value)) {
-            return $value;
+            return $this->normalizeArray($value);
         }
 
         // Se è null, restituisci il default
@@ -61,7 +61,7 @@ class SafeArrayCastAction
         if (is_object($value) && method_exists($value, 'toArray')) {
             $result = $value->toArray();
 
-            return is_array($result) ? $result : ($default ?? []);
+            return is_array($result) ? $this->normalizeArray($result) : ($default ?? []);
         }
 
         // Se è un oggetto stdClass, convertilo in array
@@ -73,17 +73,17 @@ class SafeArrayCastAction
         if (is_object($value) && method_exists($value, '__toArray')) {
             $result = $value->__toArray();
 
-            return is_array($result) ? $result : ($default ?? []);
+            return is_array($result) ? $this->normalizeArray($result) : ($default ?? []);
         }
 
         // Se è un oggetto con proprietà pubbliche, convertilo in array
         if (is_object($value)) {
-            return get_object_vars($value);
+            return $this->normalizeArray(get_object_vars($value));
         }
 
         // Se è uno scalare, avvolgilo in un array
         if (is_scalar($value)) {
-            return [$value];
+            return $this->normalizeArray([$value]);
         }
 
         // Per tutti gli altri tipi, restituisci il default
@@ -121,9 +121,6 @@ class SafeArrayCastAction
 
         // Verifica che tutte le chiavi richieste siano presenti
         foreach ($requiredKeys as $key) {
-            if (! is_string($key) && ! is_int($key)) {
-                continue;
-            }
             if (! array_key_exists($key, $array)) {
                 return $default ?? [];
             }

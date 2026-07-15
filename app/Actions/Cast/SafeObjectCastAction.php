@@ -104,7 +104,7 @@ class SafeObjectCastAction
 
         $value = $object->{$property};
 
-        return (string) $value;
+        return SafeStringCastAction::cast($value);
     }
 
     /**
@@ -187,7 +187,7 @@ class SafeObjectCastAction
         Assert::stringNotEmpty($property);
 
         if (! isset($object->{$property})) {
-            return $default ?? [];
+            return app(SafeArrayCastAction::class)->execute([], $default);
         }
 
         $value = $object->{$property};

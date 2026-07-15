@@ -118,10 +118,6 @@ public function createUser(array $data): User
 
 ### healthcare_app Module
 ### ExternalProject Module
-=======
-### ModuloEsempio Module
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_DQ6zl7
 
 - Document survey management workflows
 - Document reporting and analytics features

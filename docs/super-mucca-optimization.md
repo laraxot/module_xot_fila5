@@ -24,10 +24,6 @@
 
 ### 4. Multi-Module Optimization (Chart, Notify, DbForge, healthcare_app, User)
 ### 4. Multi-Module Optimization (Chart, Notify, DbForge, ExternalProject, User)
-=======
-### 4. Multi-Module Optimization (Chart, Notify, DbForge, ModuloEsempio, User)
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ufdRfK
 - **Chart**: ✅ **VERIFIED**
     - Fixed `base64_decode` type errors using `Webmozart\Assert::string` pattern.
     - Verified strict types compliance.
@@ -41,10 +37,6 @@
     - **Issue**: `XotBaseSection` (from Module Xot) causes `class.notFound` errors in PHPStan analysis for `OauthClientResource`. Requires investigation into `Modules\Xot` vs `Modules\User` dependency loading or Filament version compatibility.
 - **healthcare_app**: 🔄 **VERIFYING**
 - **ExternalProject**: 🔄 **VERIFYING**
-=======
-- **ModuloEsempio**: 🔄 **VERIFYING**
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ufdRfK
     - **SurveyController**:
         - Fixed `buildSuccessResponse` docblock types (`Contact` model).
         - Fixed property access `$user->customers` -> `$user->tenants` (referencing `UserContract`).
@@ -64,14 +56,6 @@
 - **Resolved Issues**:
     - **User**: Fixed syntax errors in `AuthenticationLogResource` (conflict resolution) and `ViewPasswordReset`.
     - **ExternalProject**: Fixed `DashboardV2` widget imports.
-=======
-- **Scope**: `Tenant`, `Lang`, `Media`, `UI`, `Activity`, `CloudStorage`, `Cms`, `Gdpr`, `Geo`, `Job`, `Limesurvey`, `User`, `ModuloEsempio`
-- **Status**: ✅ **VERIFIED** (PHPStan Level 10 - 4204 files)
-- **Resolved Issues**:
-    - **User**: Fixed syntax errors in `AuthenticationLogResource` (conflict resolution) and `ViewPasswordReset`.
-    - **ModuloEsempio**: Fixed `DashboardV2` widget imports.
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_ufdRfK
     - **UI**: Fixed `RadioBadge` PHPDoc syntax.
     - **Global**: 0 Errors found across entire codebase.
 

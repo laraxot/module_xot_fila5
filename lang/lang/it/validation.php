@@ -2,15 +2,7 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/lang/it/validation.php
 return [
-    // Xot — translation keys (no business logic).
-    // Xot — translation keys (no business logic).
-    // Xot — translation keys (no business logic).
-    // Xot — translation keys (no business logic).
     'accepted' => ':attribute deve essere accettato.',
     'active_url' => ':attribute non è un URL valido.',
     'after' => ':attribute deve essere una data successiva a :date.',

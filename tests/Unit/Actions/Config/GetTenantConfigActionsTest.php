@@ -7,13 +7,12 @@ namespace Modules\Xot\Tests\Unit\Actions\Config;
 use Illuminate\Support\Facades\File;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-it('gets tenant config array correctly', function (): void {
-    $configName = 'test_config';
-    $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
-    $configData = ['key' => 'value'];
+use function Safe\tempnam;
 
-    File::put($tempPath, 'return '.var_export($configData, true).';');
+uses(TestCase::class);
 
 describe('Get Tenant Config Actions', function (): void {
     test('gets tenant config array correctly', function (): void {
@@ -21,8 +20,7 @@ describe('Get Tenant Config Actions', function (): void {
         $tempPath = tempnam(sys_get_temp_dir(), 'test_config_').'.php';
         $configData = ['key' => 'value'];
 
-    $action = app(GetTenantConfigArrayAction::class);
-    $result = $action->execute($configName);
+        File::put($tempPath, 'return '.var_export($configData, true).';');
 
         $mock = $this->createUnitMock(GetTenantFilePathAction::class);
         $mock->expects($this->expectsAtLeastOnce())

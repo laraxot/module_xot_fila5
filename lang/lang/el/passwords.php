@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/lang/el/passwords.php
 return [
     'password' => 'Passwords must be at least  characters and match the confirmation.',
     'reset' => 'Your password has been reset!',

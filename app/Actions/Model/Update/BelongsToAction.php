@@ -71,7 +71,7 @@ class BelongsToAction
             $relationName = Str::camel($relationDTO->name);
             $relation = $model->{$relationName};
 
-            if (! \is_object($relation) || ! method_exists($relation, 'update')) {
+            if (! is_object($relation) || ! method_exists($relation, 'update')) {
                 return;
             }
 

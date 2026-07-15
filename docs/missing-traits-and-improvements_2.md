@@ -69,7 +69,6 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
->>>>>>> 551c768c4 (.)
 {
     use SingletonTrait;
     
@@ -542,7 +541,6 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
->>>>>>> 551c768c4 (.)
 {
     use SingletonTrait;
     

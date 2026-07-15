@@ -9,13 +9,30 @@ use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 class HandlerDecorator implements ExceptionHandler
 {
-    protected HandlersRepository $repository;
+    /**
+     * The custom handlers reporting exceptions.
+     *
+     * @var array<int, callable>
+     */
+    protected array $reporters = [];
+
+    /**
+     * The custom handlers rendering exceptions.
+     *
+     * @var array<int, callable>
+     */
+    protected array $renderers = [];
+
+    /**
+     * The custom handlers rendering exceptions in console.
+     *
+     * @var array<int, callable>
+     */
+    protected array $consoleRenderers = [];
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
-        HandlersRepository $repository,
     ) {
-        $this->repository = $repository;
     }
 
     /**
@@ -31,8 +48,8 @@ class HandlerDecorator implements ExceptionHandler
 
     public function report(\Throwable $e): void
     {
-        foreach ($this->repository->getReportersByException($e) as $reporter) {
-            if (\is_callable($reporter)) {
+        foreach ($this->getReportersByException($e) as $reporter) {
+            if (is_callable($reporter)) {
                 $reporter($e);
             }
         }
@@ -42,8 +59,8 @@ class HandlerDecorator implements ExceptionHandler
 
     public function render($request, \Throwable $e): SymfonyResponse
     {
-        foreach ($this->repository->getRenderersByException($e) as $renderer) {
-            if (\is_callable($renderer)) {
+        foreach ($this->getRenderersByException($e) as $renderer) {
+            if (is_callable($renderer)) {
                 $response = $renderer($e, $request);
                 if ($response instanceof SymfonyResponse) {
                     return $response;
@@ -54,29 +71,25 @@ class HandlerDecorator implements ExceptionHandler
         return $this->defaultHandler->render($request, $e);
     }
 
-    /**
-     * @phpstan-ignore-next-line
-     */
     public function renderForConsole($output, \Throwable $e): void
     {
-        foreach ($this->repository->getConsoleRenderersByException($e) as $renderer) {
-            if (\is_callable($renderer)) {
+        foreach ($this->getConsoleRenderersByException($e) as $renderer) {
+            if (is_callable($renderer)) {
                 $renderer($e, $output);
             }
         }
 
-        /* @phpstan-ignore-next-line */
-        $this->defaultHandler->renderForConsole($output, $e);
+        $this->__call('renderForConsole', [$output, $e]);
     }
 
     public function reporter(callable $reporter): int
     {
-        return $this->repository->addReporter($reporter);
+        return $this->addReporter($reporter);
     }
 
     public function renderer(callable $renderer): int
     {
-        return $this->repository->addRenderer($renderer);
+        return $this->addRenderer($renderer);
     }
 
     public function consoleRenderer(callable $renderer): int
@@ -150,5 +163,21 @@ class HandlerDecorator implements ExceptionHandler
     public function shouldReport(\Throwable $e): bool
     {
         return $this->defaultHandler->shouldReport($e);
+    }
+
+    /**
+     * Determine whether the given handler can handle the provided exception.
+     */
+    protected function handlesException(callable $handler, \Throwable $e): bool
+    {
+        $reflection = new \ReflectionFunction(
+            $handler instanceof \Closure ? $handler : \Closure::fromCallable($handler),
+        );
+
+        if (! ($params = $reflection->getParameters())) {
+            return false;
+        }
+
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
     }
 }

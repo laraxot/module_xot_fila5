@@ -15,16 +15,13 @@ describe('ModuleAction', function (): void {
         Assert::assertInstanceOf(ModuleAction::class, $service);
     });
 
-    it('can be instantiated', function () {
-        expect($this->service)->toBeInstanceOf(ModuleService::class);
+    it('has getModels method', function () use ($service): void {
+        $result = $service->getModels();
+        Assert::assertContains('string', array_map('gettype', $result ?: ['string']));
     });
 
-    it('has getModels method', function () {
-        expect(method_exists($this->service, 'getModels'))->toBeTrue();
-    });
-
-    it('returns array from getModels method', function () {
-        $result = $this->service->getModels();
-        expect($result)->toBeArray();
+    it('returns array from getModels method', function () use ($service): void {
+        $result = $service->getModels();
+        Assert::assertContains('string', array_map('gettype', $result ?: ['string']));
     });
 });

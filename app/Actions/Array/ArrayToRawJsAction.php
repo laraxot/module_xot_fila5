@@ -63,6 +63,6 @@ class ArrayToRawJsAction
             return (string) $value;
         }
 
-        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], (string) $value)."'";
+        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], SafeStringCastAction::cast($value))."'";
     }
 }

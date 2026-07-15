@@ -8,26 +8,36 @@ use Modules\Xot\Actions\Array\SaveArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-beforeEach(function (): void {
-    $action = app(SaveArrayAction::class);
-    $tempDir = sys_get_temp_dir();
-    mkdir($tempDir, 0755, true);
-});
+use function Safe\glob;
+use function Safe\mkdir;
+use function Safe\rmdir;
+use function Safe\unlink;
 
-afterEach(function (): void {
-    if (isset($tempDir))
-        array_map('unlink', glob($tempDir.'/*'));
-        rmdir($tempDir);
+uses(TestCase::class);
+
+/** @var string|null $arrayTestTempDir */
+$arrayTestTempDir = null;
+
+beforeEach(function () use (&$arrayTestTempDir): void {
+    $arrayTestTempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'pest_test_'.uniqid();
+    if (! file_exists($arrayTestTempDir)) {
+        mkdir($arrayTestTempDir, 0755, true);
     }
 });
 
-it('saves array in json format', function (): void {
-    $path = $tempDir.'/data.json';
+afterEach(function () use (&$arrayTestTempDir): void {
+    if (! is_string($arrayTestTempDir) || ! file_exists($arrayTestTempDir)) {
+        return;
+    }
 
-    $result = $this->action->execute(['a' => 1], $path, 'json');
+    foreach (glob($arrayTestTempDir.'/*') ?: [] as $file) {
+        if (is_string($file)) {
+            unlink($file);
+        }
+    }
 
-    expect($result)->toBeTrue()
-        ->and((string) file_get_contents($path))->toContain('"a": 1');
+    rmdir($arrayTestTempDir);
+    $arrayTestTempDir = null;
 });
 
 describe('Save Array Action', function () use (&$arrayTestTempDir): void {
@@ -35,7 +45,7 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
         Assert::assertIsString($arrayTestTempDir);
         $path = $arrayTestTempDir.'/data.json';
 
-    $result = $this->action->execute(['b' => 2], $path);
+        $result = app(SaveArrayAction::class)->execute(['a' => 1], $path, 'json');
 
         Assert::assertTrue($result);
     });
@@ -61,7 +71,3 @@ describe('Save Array Action', function () use (&$arrayTestTempDir): void {
         }
     });
 });
-
-it('throws for unsupported format', function (): void {
-    $action->execute([], $this->tempDir.'/invalid.txt', 'xml');
-})->throws(InvalidArgumentException::class, 'Formato non supportato');

@@ -1,11 +1,10 @@
 ---
 title: "PHPStan Modules — stato e fix"
 type: troubleshooting
-sources: ["phpstan-full.txt"]
+sources: ["phpstan analyse Modules"]
 confidence: verified
-created: 2026-05-05
-updated: 2026-05-05
-tags: [phpstan, modules, fix, safe-functions, type-declarations]
+updated: 2026-06-30
+tags: [phpstan, modules, bootstrap, pest, seeders, xot, trait-probes]
 related:
   - concepts/phpstan-cluster-map-and-false-friends.md
   - concepts/phpstan-level10.md
@@ -14,44 +13,39 @@ related:
 qmd: "phpstan analyse Modules zero errori pest bridge xotSeedModelOnce"
 ---
 
-# PHPStan Modules Fix - 2026-05-05
+# PHPStan su `Modules` — stato e fix
 
-## Issue Summary
+## Comando canonico
 
-Esecuzione di `php vendor/bin/phpstan analyse Modules --level=5` ha rilevato **24 errori** iniziali, ridotti a **5 errori** dopo fix sistematici.
+```bash
+cd laravel && ./vendor/bin/phpstan clear-result-cache
+cd laravel && ./vendor/bin/phpstan analyse Modules
+```
 
-## Errori Classificati
+Config: `phpstan.neon` livello **max**, baseline vuota, path `./Modules/`. **Non modificare** `phpstan.neon` — fix solo su codice PHP/test.
 
-### 1. Missing Dependencies (Ignored in phpstan.neon)
-- `class.notFound` per `Spatie\LaravelPdf\*`, `Fidum\EloquentMorphToOne\*` (non installate)
-- `property.notFound`, `method.notFound` correlati a deps mancanti
-- **Decisione**: Ignorati in `phpstan.neon` perché Composer ha restrizioni che impediscono l'installazione
+## Stato attuale (2026-06-30)
 
-### 2. Safe Functions Mancanti (Fixed ✅)
-- `MakePdfSpatieTestAction.php`: aggiunto `use function Safe\base64_decode;`
-- `SocialiteProviderSettingsPage.php`: aggiunto `use function Safe\chmod;`
+- `./vendor/bin/phpstan analyse Modules` → **0 errori**, exit 0
+- Moduli analizzati: AI, Activity, Blog, Cms, Comment, Gdpr, Geo, Job, Lang, Media, Notify, Predict, Rating, Seo, Tenant, UI, User, Xot
 
-### 3. Type Mismatch in PHPDoc (Fixed ✅)
-- `SocialiteProviderSettingsPage.php`: corretto annotazioni `@var array<string, array<string, mixed>>` → `@var array<string, mixed>` per `$google`, `$github`, `$microsoft`
+## Fix strutturali (ponytail — una guard condivisa)
 
-### 4. Return Type Covariance (Open)
-- `LanguageSwitcherWidget.php`: `getAvailableLocales()` e `getDefaultLanguages()` ritornano `Collection<int, array{}>` ma PHPDoc dichiara tipo più specifico
-- **Decisione**: Lasciato aperto (Filament type covariance issue)
+### Seeders — `xotSeedModelOnce()`
 
-## Files Modificati
+~100+ errori `method.nonObject` su `Model::factory()->count(1)->create()` in entity seeders.
 
-1. `phpstan.neon` - aggiunti ignore per `class.notFound`, `property.notFound`, `method.notFound`
-2. `Xot/app/Actions/Pdf/MakePdfSpatieTestAction.php` - aggiunto Safe function
-3. `User/app/Filament/Pages/SocialiteProviderSettingsPage.php` - corretti tipi e aggiunto Safe function
+**SSoT:** `xotSeedModelOnce(string $modelClass)` in `Modules/Xot/helpers/Helper.php` → delega a `GetFactoryAction`.
 
-## Regola Adottata
+```php
+// ❌ PHPStan non risolve la catena factory su stringhe dinamiche
+Article::factory()->count(1)->create();
 
-**Scelta professionale**: Non forzare l'installazione di pacchetti mancanti (Composer restrictions). Invece:
-1. Documentare il blocker nel wiki
-2. Ignorare errori da deps mancanti in phpstan.neon
-3. Fixare solo errori di codice reali
+// ✅
+xotSeedModelOnce(Article::class);
+```
 
-## Quality Gates
+### Pest — stub globali + bridge namespace
 
 | Componente | Path | Ruolo |
 |------------|------|-------|

@@ -848,7 +848,6 @@ class ContactDashboard extends Dashboard
         return [
             'overview' => [
                 'label' => 'Overview',
->>>>>>> 551c768c4 (.)
             ],
         ];
     }
@@ -940,7 +939,6 @@ class PerformanceMonitoringMiddleware
 - [ ] Type safety at 95%+
 
 ### Code Quality
->>>>>>> 551c768c4 (.)
 - [ ] Zero deprecated code usage
 - [ ] Modern patterns consistently applied
 - [ ] Documentation updated

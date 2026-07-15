@@ -384,7 +384,6 @@ foreach ($properties as $property) {
 
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
->>>>>>> 551c768c4 (.)
 
 ---
 
@@ -516,4 +515,3 @@ class MyPage extends XotBaseViewRecord
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
->>>>>>> 551c768c4 (.)

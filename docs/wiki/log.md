@@ -276,33 +276,21 @@ discussions:
 
 ## [2026-05-26] docs | codice nominale pivot / ThemeComposer / ProfileFactory scan
 
-- **Problem**: PHPStan riportava `Class Spatie\Browsershot\Browsershot not found`
-- **Analysis**: Il codice che usa Browsershot è attivamente usato in produzione:
-  - `MakePdfSpatieTestAction` - Generazione PDF
-  - `ExportChartPngQueueableAction` - Export chart PNG
-  - `ExportChartSvgQueueableAction` - Export chart SVG
-  - Test: `MakePdfSpatieTestActionTest`
-- **Fix**: Aggiunto `"spatie/browsershot": "^5.0"` a `Modules/Xot/composer.json`
-- **Command**: `composer update spatie/browsershot`
-- **Philosophy**: Se il codice è usato → installa la dipendenza; se è dead code → rimuovi
-- **Status**: ⏳ Installing
-- **Story**: 8-121
+- **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md) §5; modulo Cms **[`docs/redundancy-report.md`](../../../../Cms/docs/redundancy-report.md)** §5; [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (riga Cms).
 
-## [2026-05-05] fix | PHPStan Error Resolution - spatie/laravel-model-states (DEAD CODE REMOVAL)
+## [2026-05-25] docs | audit profondo ridondanze — second brain ripulito da merge-marker
 
 - **Obiettivo**: consolidare osservabilità delle ripetizioni (codice + documentazione) senza toccare applicativo.
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 
-## [2026-05-04] architecture | XotBaseWizardWidget view calculation rule
+## [2026-05-24] refactor | wizard — normalizzazione stato **rimossa dalla base**
 
-- documentata regola architetturale: sottoclassi di `XotBaseWizardWidget` NON devono definire `$view` property
-- la view viene calcolata automaticamente: admin → default Filament, frontoffice → `pub_theme::components.wizard`
-- aggiunta documentazione: `docs/wiki/concepts/xotbasewizard-view-calculation.md`
-- creata regola Windsurf: `.windsurf/rules/xotbasewizard-no-view-property.mdc`
-- aggiornato PHPDoc in `XotBaseWizardWidget.php` con dettagli view resolution
-- audit: nessuna violazione trovata nei moduli esistenti
+- **Motivo progetto**: il submit deve usare **`$this->form->getState()`** così come lo espone Filament/schema, senza helper PHP che appiattiscono wrapper (`wizard`) nel widget base.
+- **Codice**: `XotBaseWizardWidget` contiene solo costruzione `Wizard` + policy `?step=` + vista tema; **nessun** `normalizeWizardFormState()` / `getWizardSchemaWrapperKey()` sulla classe.
+- **Fixcity**: `CreateTicketWizardWidget::submit()` legge `getState()` e fa merge opzionale `owner_id` se auth; vedi [`CreateTicketWizardWidget.php`](../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php).
 
-## [2026-04-30] governance | Claude Code Laraxot rules path-scoped
+## [2026-05-24] refactor | wizard — normalizzazione stato dentro `XotBaseWizardWidget` (niente trait file) — **superata**
 
 - **Nota storica**: per un breve periodo i metodi `normalizeWizardFormState` erano stati spostati sulla base al posto del trait file; **da 2026-05-24 (direzione corrente)** quei metodi non esistono più: vedi voce sopra.
 
@@ -359,6 +347,14 @@ discussions:
 - chiarito che `model-states` ha owner condiviso `UI` + `Xot`, mentre `responsecache` non ha integrazione runtime forte verificata nel codice corrente.
 - nuova pagina: `docs/wiki/concepts/laravel13-modular-package-compatibility-matrix.md`.
 
+## [2026-06-30] governance | Composer root skeleton modulare
+
+- Confrontato `base_fixcity_fila5/laravel/composer.json` con Predict.
+- Aggiornata la regola: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`.
+- Chiariti anti-pattern: niente `Modules\\`, `Database\\Seeders\\` o `Themes\\*\\` nell'autoload root, niente merge dei temi, niente dipendenze funzionali nel root.
+- Raw note: `docs/raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md`.
+- Wiki: `docs/wiki/concepts/composer-root-skeleton-modular.md`.
+
 ## [2026-04-27] governance | policy module matrix
 
 - aggiunta matrice modulo-per-modulo con base policy consigliata (`XotBasePolicy` vs `UserBasePolicy`).
@@ -386,6 +382,13 @@ discussions:
 - **regola root**: `docs/wiki/concepts/context-compression-discipline.md`
 - **scope Xot**: base classes e documentazione framework vanno recuperate tramite QMD/context-mode con snippet minimi quando uno skill BMAD rischia il limite `131072 tokens`.
 - **verifica**: context-mode plugin/MCP connessi; QMD indicizza moduli/temi/root/bashscripts.
+
+## [2026-05-12] ops | opencode compaction overflow hardening
+
+- installato `@tarquinen/opencode-dcp@latest` nel config globale OpenCode.
+- creato `opencode.json` al git root con `compaction.auto=true`, `compaction.prune=true`, `compaction.reserved=40000`.
+- chiarito che il punto operativo corretto e' il git root, non `laravel/opencode.json`.
+- aggiornata la source wiki `sources/context-compression-and-retrieval.md` per riflettere il nuovo setup stabile.
 
 ## [2026-04-22] governance | Filament wizard summary via Infolists
 

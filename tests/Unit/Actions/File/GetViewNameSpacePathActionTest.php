@@ -15,7 +15,6 @@ it('gets view namespace path from theme fallback correctly', function (): void {
     $ns = 'pub_theme';
     $themeName = 'TestTheme';
 
-    // Create a concrete instance of XotData
     $xotData = XotData::from(['pub_theme' => $themeName]);
 
     $reflection = new \ReflectionClass(XotData::class);

@@ -7,10 +7,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Blade;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Tests\TestCase;
 
-it('registers blade components correctly', function (): void {
-    $path = 'some/path';
-    $namespace = 'Some\\Namespace';
-    $prefix = 'prefix';
+uses(TestCase::class);
 
 describe('Register Blade Components Action', function (): void {
     test('registers blade components correctly', function (): void {

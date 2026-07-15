@@ -11,6 +11,7 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
 /** @template TFactory of Factory */
 trait HasXotFactory
 {
+    /** @use EloquentHasFactory<TFactory> */
     use EloquentHasFactory {
         newFactory as parentNewFactory;
     }
@@ -22,6 +23,9 @@ trait HasXotFactory
      */
     protected static function newFactory()
     {
-        return app(GetFactoryAction::class)->execute(static::class);
+        /** @var TFactory $factory */
+        $factory = app(GetFactoryAction::class)->execute(static::class);
+
+        return $factory;
     }
 }

@@ -5,157 +5,140 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
-use Modules\Xot\Models\BaseMorphPivot;
+use Modules\Xot\Tests\Fixtures\Models\TestConcreteMorphPivot;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 describe('Base Morph Pivot Business Logic', function (): void {
     test('it extends pivot class', function (): void {
         // Arrange & Act
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
 
         // Assert
-        $this->assertInstanceOf(Pivot::class, $pivot);
-    }
+        Assert::assertInstanceOf(Pivot::class, $pivot);
+    });
 
-    /** @test */
-    public function itCanManageMorphType(): void
-    {
+    test('it can manage morph type', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->morph_type = 'App\Models\User';
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('morph_type', 'App\Models\User');
 
         // Act
-        $morphType = $pivot->morph_type;
+        $morphType = $pivot->getAttribute('morph_type');
 
         // Assert
-        $this->assertEquals('App\Models\User', $morphType);
-    }
+        Assert::assertEquals('App\Models\User', $morphType);
+    });
 
-    /** @test */
-    public function itCanManageMorphId(): void
-    {
+    test('it can manage morph id', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->morph_id = 123;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('morph_id', 123);
 
         // Act
-        $morphId = $pivot->morph_id;
+        $morphId = $pivot->getAttribute('morph_id');
 
         // Assert
-        $this->assertEquals(123, $morphId);
-    }
+        Assert::assertEquals(123, $morphId);
+    });
 
-    /** @test */
-    public function itCanManageRelatedType(): void
-    {
+    test('it can manage related type', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->related_type = 'App\Models\Post';
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('related_type', 'App\Models\Post');
 
         // Act
-        $relatedType = $pivot->related_type;
+        $relatedType = $pivot->getAttribute('related_type');
 
         // Assert
-        $this->assertEquals('App\Models\Post', $relatedType);
-    }
+        Assert::assertEquals('App\Models\Post', $relatedType);
+    });
 
-    /** @test */
-    public function itCanManageRelatedId(): void
-    {
+    test('it can manage related id', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->related_id = 456;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('related_id', 456);
 
         // Act
-        $relatedId = $pivot->related_id;
+        $relatedId = $pivot->getAttribute('related_id');
 
         // Assert
-        $this->assertEquals(456, $relatedId);
-    }
+        Assert::assertEquals(456, $relatedId);
+    });
 
-    /** @test */
-    public function itCanManagePivotAttributes(): void
-    {
+    test('it can manage pivot attributes', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
         $pivot->setAttribute('custom_field', 'custom_value');
         $pivot->setAttribute('numeric_field', 42);
 
         // Act
-        $customField = $pivot->$this->getAttribute('custom_field');
-        $numericField = $pivot->$this->getAttribute('numeric_field');
+        /** @var string $customField */
+        $customField = $pivot->getAttribute('custom_field');
+        /** @var int $numericField */
+        $numericField = $pivot->getAttribute('numeric_field');
 
         // Assert
-        $this->assertEquals('custom_value', $customField);
-        $this->assertEquals(42, $numericField);
-    }
+        Assert::assertEquals('custom_value', $customField);
+        Assert::assertEquals(42, $numericField);
+    });
 
-    /** @test */
-    public function itCanManageTimestamps(): void
-    {
+    test('it can manage timestamps', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
         $now = now();
-        $pivot->created_at = $now;
-        $pivot->updated_at = $now;
+        $pivot->setAttribute('created_at', $now);
+        $pivot->setAttribute('updated_at', $now);
 
         // Act
-        $createdAt = $pivot->created_at;
-        $updatedAt = $pivot->updated_at;
+        $createdAt = $pivot->getAttribute('created_at');
+        $updatedAt = $pivot->getAttribute('updated_at');
 
         // Assert
-        $this->assertEquals($now, $createdAt);
-        $this->assertEquals($now, $updatedAt);
-    }
+        Assert::assertEquals($now, $createdAt);
+        Assert::assertEquals($now, $updatedAt);
+    });
 
-    /** @test */
-    public function itCanManageSoftDeletes(): void
-    {
+    test('it can manage soft deletes', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
         $deletedAt = now();
-        $pivot->deleted_at = $deletedAt;
+        $pivot->setAttribute('deleted_at', $deletedAt);
 
         // Act
-        $pivotDeletedAt = $pivot->deleted_at;
+        $pivotDeletedAt = $pivot->getAttribute('deleted_at');
 
         // Assert
-        $this->assertEquals($deletedAt, $pivotDeletedAt);
-    }
+        Assert::assertEquals($deletedAt, $pivotDeletedAt);
+    });
 
-    /** @test */
-    public function itCanManageTenantId(): void
-    {
+    test('it can manage tenant id', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->tenant_id = 789;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('tenant_id', 789);
 
         // Act
-        $tenantId = $pivot->tenant_id;
+        $tenantId = $pivot->getAttribute('tenant_id');
 
         // Assert
-        $this->assertEquals(789, $tenantId);
-    }
+        Assert::assertEquals(789, $tenantId);
+    });
 
-    /** @test */
-    public function itCanManageUserId(): void
-    {
+    test('it can manage user id', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->user_id = 101;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('user_id', 101);
 
         // Act
-        $userId = $pivot->user_id;
+        $userId = $pivot->getAttribute('user_id');
 
         // Assert
-        $this->assertEquals(101, $userId);
-    }
+        Assert::assertEquals(101, $userId);
+    });
 
-    /** @test */
-    public function itCanManageMetadata(): void
-    {
+    test('it can manage metadata', function (): void {
         // Arrange
         $metadata = [
             'source' => 'api',
@@ -164,23 +147,22 @@ describe('Base Morph Pivot Business Logic', function (): void {
             'session_id' => 'session123',
         ];
 
-        $pivot = new BaseMorphPivot();
-        $pivot->metadata = $metadata;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('metadata', $metadata);
 
         // Act
-        $pivotMetadata = $pivot->metadata;
+        /** @var array<string, string> $pivotMetadata */
+        $pivotMetadata = $pivot->getAttribute('metadata');
 
         // Assert
-        $this->assertIsArray($pivotMetadata);
-        $this->assertEquals('api', $pivotMetadata['source']);
-        $this->assertEquals('192.168.1.1', $pivotMetadata['ip_address']);
-        $this->assertEquals('Test Browser', $pivotMetadata['user_agent']);
-        $this->assertEquals('session123', $pivotMetadata['session_id']);
-    }
+        Assert::assertIsArray($pivotMetadata);
+        Assert::assertEquals('api', $pivotMetadata['source']);
+        Assert::assertEquals('192.168.1.1', $pivotMetadata['ip_address']);
+        Assert::assertEquals('Test Browser', $pivotMetadata['user_agent']);
+        Assert::assertEquals('session123', $pivotMetadata['session_id']);
+    });
 
-    /** @test */
-    public function itCanManageExtraData(): void
-    {
+    test('it can manage extra data', function (): void {
         // Arrange
         $extraData = [
             'field1' => 'value1',
@@ -190,161 +172,149 @@ describe('Base Morph Pivot Business Logic', function (): void {
             ],
         ];
 
-        $pivot = new BaseMorphPivot();
-        $pivot->extra_data = $extraData;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('extra_data', $extraData);
 
         // Act
-        $pivotExtraData = $pivot->extra_data;
+        /** @var array<string, mixed> $pivotExtraData */
+        $pivotExtraData = $pivot->getAttribute('extra_data');
 
         // Assert
-        $this->assertIsArray($pivotExtraData);
-        $this->assertEquals('value1', $pivotExtraData['field1']);
-        $this->assertEquals('value2', $pivotExtraData['field2']);
-        $this->assertEquals('value', $pivotExtraData['nested']['key']);
-    }
+        Assert::assertIsArray($pivotExtraData);
+        Assert::assertEquals('value1', $pivotExtraData['field1']);
+        Assert::assertEquals('value2', $pivotExtraData['field2']);
+        /** @var array<string, string> $nested */
+        $nested = $pivotExtraData['nested'];
+        Assert::assertEquals('value', $nested['key']);
+    });
 
-    /** @test */
-    public function itCanManageStatus(): void
-    {
+    test('it can manage status', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->status = 'active';
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('status', 'active');
 
         // Act
-        $status = $pivot->status;
+        /** @var string $status */
+        $status = $pivot->getAttribute('status');
 
         // Assert
-        $this->assertEquals('active', $status);
-    }
+        Assert::assertEquals('active', $status);
+    });
 
-    /** @test */
-    public function itCanManagePriority(): void
-    {
+    test('it can manage priority', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->priority = 5;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('priority', 5);
 
         // Act
-        $priority = $pivot->priority;
+        /** @var int $priority */
+        $priority = $pivot->getAttribute('priority');
 
         // Assert
-        $this->assertEquals(5, $priority);
-    }
+        Assert::assertEquals(5, $priority);
+    });
 
-    /** @test */
-    public function itCanManageSortOrder(): void
-    {
+    test('it can manage sort order', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->sort_order = 10;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('sort_order', 10);
 
         // Act
-        $sortOrder = $pivot->sort_order;
+        /** @var int $sortOrder */
+        $sortOrder = $pivot->getAttribute('sort_order');
 
         // Assert
-        $this->assertEquals(10, $sortOrder);
-    }
+        Assert::assertEquals(10, $sortOrder);
+    });
 
-    /** @test */
-    public function itCanManageExpiresAt(): void
-    {
+    test('it can manage expires at', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
         $expiresAt = now()->addDays(30);
-        $pivot->expires_at = $expiresAt;
+        $pivot->setAttribute('expires_at', $expiresAt);
 
         // Act
-        $pivotExpiresAt = $pivot->expires_at;
+        $pivotExpiresAt = $pivot->getAttribute('expires_at');
 
         // Assert
-        $this->assertEquals($expiresAt, $pivotExpiresAt);
-    }
+        Assert::assertEquals($expiresAt, $pivotExpiresAt);
+    });
 
-    /** @test */
-    public function itCanManageStartsAt(): void
-    {
+    test('it can manage starts at', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
         $startsAt = now()->addHours(2);
-        $pivot->starts_at = $startsAt;
+        $pivot->setAttribute('starts_at', $startsAt);
 
         // Act
-        $pivotStartsAt = $pivot->starts_at;
+        $pivotStartsAt = $pivot->getAttribute('starts_at');
 
         // Assert
-        $this->assertEquals($startsAt, $pivotStartsAt);
-    }
+        Assert::assertEquals($startsAt, $pivotStartsAt);
+    });
 
-    /** @test */
-    public function itCanManageEndsAt(): void
-    {
+    test('it can manage ends at', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
+        $pivot = new TestConcreteMorphPivot();
         $endsAt = now()->addDays(7);
-        $pivot->ends_at = $endsAt;
+        $pivot->setAttribute('ends_at', $endsAt);
 
         // Act
-        $pivotEndsAt = $pivot->ends_at;
+        $pivotEndsAt = $pivot->getAttribute('ends_at');
 
         // Assert
-        $this->assertEquals($endsAt, $pivotEndsAt);
-    }
+        Assert::assertEquals($endsAt, $pivotEndsAt);
+    });
 
-    /** @test */
-    public function itCanManageIsActive(): void
-    {
+    test('it can manage is active', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->is_active = true;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('is_active', true);
 
         // Act
-        $isActive = $pivot->is_active;
+        $isActive = $pivot->getAttribute('is_active');
 
         // Assert
-        $this->assertTrue($isActive);
+        Assert::assertTrue((bool) $isActive);
 
         // Act - Deactivate
-        $pivot->is_active = false;
+        $pivot->setAttribute('is_active', false);
 
         // Assert
-        $this->assertFalse($pivot->is_active);
-    }
+        Assert::assertFalse((bool) $pivot->getAttribute('is_active'));
+    });
 
-    /** @test */
-    public function itCanManageIsPublic(): void
-    {
+    test('it can manage is public', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->is_public = false;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('is_public', false);
 
         // Act
-        $isPublic = $pivot->is_public;
+        $isPublic = $pivot->getAttribute('is_public');
 
         // Assert
-        $this->assertFalse($isPublic);
+        Assert::assertFalse((bool) $isPublic);
 
         // Act - Make public
-        $pivot->is_public = true;
+        $pivot->setAttribute('is_public', true);
 
         // Assert
-        $this->assertTrue($pivot->is_public);
-    }
+        Assert::assertTrue((bool) $pivot->getAttribute('is_public'));
+    });
 
-    /** @test */
-    public function itCanManageIsFeatured(): void
-    {
+    test('it can manage is featured', function (): void {
         // Arrange
-        $pivot = new BaseMorphPivot();
-        $pivot->is_featured = false;
+        $pivot = new TestConcreteMorphPivot();
+        $pivot->setAttribute('is_featured', false);
 
         // Act
-        $isFeatured = $pivot->is_featured;
+        $isFeatured = $pivot->getAttribute('is_featured');
 
         // Assert
-        $this->assertFalse($isFeatured);
+        Assert::assertFalse((bool) $isFeatured);
 
         // Act - Make featured
-        $pivot->is_featured = true;
+        $pivot->setAttribute('is_featured', true);
 
         // Assert
         Assert::assertTrue((bool) $pivot->getAttribute('is_featured'));

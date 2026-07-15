@@ -19,25 +19,15 @@ describe('Safe Attribute Cast Action', function (): void {
             ['missing', null],
         ]);
 
-    // hasAttribute
-    expect($action->hasAttribute($model, 'name'))->toBeTrue();
-    expect($action->hasAttribute($model, 'missing'))->toBeFalse();
+        $action = app(SafeAttributeCastAction::class);
 
-    // hasNonEmptyAttribute
-    expect($action->hasNonEmptyAttribute($model, 'name'))->toBeTrue();
-    expect($action->hasNonEmptyAttribute($model, 'email'))->toBeFalse();
-
-    // getStringAttribute
-    expect($action->getStringAttribute($model, 'name'))->toBe('Test User');
-
-    // getIntAttribute
-    expect($action->getIntAttribute($model, 'id'))->toBe(123);
-
-    // getBooleanAttribute
-    expect($action->getBooleanAttribute($model, 'active'))->toBeTrue();
-
-    // hasAttributeValue
-    expect($action->hasAttributeValue($model, 'id', 123))->toBeTrue();
-
-    \Mockery::close();
+        Assert::assertTrue($action->hasAttribute($model, 'name'));
+        Assert::assertFalse($action->hasAttribute($model, 'missing'));
+        Assert::assertTrue($action->hasNonEmptyAttribute($model, 'name'));
+        Assert::assertFalse($action->hasNonEmptyAttribute($model, 'email'));
+        Assert::assertSame('Test User', $action->getStringAttribute($model, 'name'));
+        Assert::assertSame(123, $action->getIntAttribute($model, 'id'));
+        Assert::assertTrue($action->getBooleanAttribute($model, 'active'));
+        Assert::assertTrue($action->hasAttributeValue($model, 'id', 123));
+    });
 });

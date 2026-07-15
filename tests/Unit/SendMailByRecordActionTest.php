@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Mail\Mailable;
 use Modules\Xot\Actions\Mail\SendMailByRecordAction;
 use Modules\Xot\Tests\TestCase;
 
@@ -18,7 +17,7 @@ it('throws if record has no email', function (): void {
             return null;
         }
 
-        public function myLogs()
+        public function myLogs(): object
         {
             return new class {
                 /** @param array<mixed> $data */

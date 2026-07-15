@@ -18,7 +18,7 @@ uses(TestCase::class);
 it('handles absolute urls in AssetAction', function (): void {
     $action = app(AssetAction::class);
     $url = 'https://example.com/asset.js';
-    expect($action->execute($url))->toBe($url);
+    Assert::assertSame($url, $action->execute($url));
 });
 
 it('returns path if asset already exists in public folder', function (): void {
@@ -30,7 +30,7 @@ it('returns path if asset already exists in public folder', function (): void {
     ]);
 
     $action = app(AssetAction::class);
-    expect($action->execute($path))->toBe($path);
+    Assert::assertSame($path, $action->execute($path));
 });
 
 it('resolves module assets correctly in AssetAction', function (): void {
@@ -79,7 +79,7 @@ it('resolves module assets correctly in AssetAction', function (): void {
     $action = app(AssetAction::class);
     $result = $action->execute($path);
 
-    expect($result)->toContain('assets/Xot/css/style.css');
+    Assert::assertStringContainsString('assets/Xot/css/style.css', $result);
 });
 
 it('calculates asset path correctly in AssetPathAction', function (): void {
@@ -93,5 +93,5 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
     $action = app(AssetPathAction::class);
     $result = $action->execute('User::js/app.js');
 
-    expect($result)->toBe('/path/to/User/resources/js/app.js');
+    Assert::assertSame('/path/to/User/resources/js/app.js', $result);
 });

@@ -10,9 +10,11 @@ use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
+use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
 
@@ -41,12 +43,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Get the resource class name.
      *
-     * @return class-string
+     * @return class-string<XotBaseResource>
      */
     public static function getResource(): string
     {
         $resource = Str::of(static::class)->before('\\Pages\\')->toString();
         Assert::classExists($resource);
+        Assert::subclassOf($resource, XotBaseResource::class);
 
         return $resource;
     }
@@ -73,8 +76,6 @@ abstract class XotBaseListRecords extends FilamentListRecords
      * Get the header actions.
      *
      * @return array<string, Action|ActionGroup>
-     *
-     * @phpstan-ignore method.childReturnType
      */
     protected function getHeaderActions(): array
     {
@@ -90,7 +91,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
      *
      * @return Paginator<int, Model>
      */
-    protected function paginateTableQuery(Builder $query): Paginator
+    protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
         $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);

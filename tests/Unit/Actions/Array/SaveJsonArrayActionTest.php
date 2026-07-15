@@ -8,10 +8,21 @@ use Modules\Xot\Actions\Array\SaveJsonArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-beforeEach(function (): void {
-    $action = app(SaveJsonArrayAction::class);
-    $tempDir = sys_get_temp_dir();
-    mkdir($tempDir, 0755, true);
+use function Safe\file_get_contents;
+use function Safe\glob;
+use function Safe\json_decode;
+use function Safe\mkdir;
+use function Safe\rmdir;
+use function Safe\unlink;
+
+uses(TestCase::class);
+
+/** @var string|null $arrayTestTempDir */
+$arrayTestTempDir = null;
+
+beforeEach(function () use (&$arrayTestTempDir): void {
+    $arrayTestTempDir = sys_get_temp_dir().'/xot_array_'.uniqid();
+    mkdir($arrayTestTempDir, 0755, true);
 });
 
 afterEach(function () use (&$arrayTestTempDir): void {
@@ -23,8 +34,10 @@ afterEach(function () use (&$arrayTestTempDir): void {
         if (is_string($file)) {
             unlink($file);
         }
-        rmdir($this->tempDir);
     }
+
+    rmdir($arrayTestTempDir);
+    $arrayTestTempDir = null;
 });
 
 describe('Save Json Array Action', function () use (&$arrayTestTempDir): void {

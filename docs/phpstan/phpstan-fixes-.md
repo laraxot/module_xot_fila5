@@ -41,18 +41,11 @@ related:
 **Soluzione**:
 - Aggiunto cast esplicito `@var array<string, mixed>` al risultato
 
-### 4. <nome progetto>/app/States/Appointment/ReportPending.php
-### 4. <nome progetto>/app/States/Appointment/ReportPending.php
-### 4. <nome progetto>/app/States/Appointment/ReportPending.php
-
 ### 4. <main module>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <main module>/app/States/Appointment/ReportPending.php
-
-### 4. <nome progetto>/app/States/Appointment/ReportPending.php
-
 ### 4. <main module>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php
 ### 4. <nome progetto>/app/States/Appointment/ReportPending.php

@@ -273,7 +273,7 @@ class MetatagData extends Data implements Wireable
 
         // Convert Filament color arrays to simple string format
         foreach ($filamentColors as $key => $colorArray) {
-            if (\is_array($colorArray) && ! empty($colorArray)) {
+            if (is_array($colorArray) && ! empty($colorArray)) {
                 // Use the first color in the array as the default
                 $defaults[$key] = (string) $colorArray[0];
             }
@@ -381,6 +381,8 @@ class MetatagData extends Data implements Wireable
 
     /**
      * @deprecated Use getThemeColors() instead as it better reflects the semantic purpose
+     *
+     * @return array<string, array{key?: string, color: string, hex?: string}>
      */
     public function getColors(): array
     {
@@ -392,7 +394,7 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-     * @return array<string, array<int, string>>
+     * @return array<string, array<int, string>|string>
      */
     public function getFilamentColors(): array
     {
@@ -409,17 +411,30 @@ class MetatagData extends Data implements Wireable
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
+        $normalizedFilamentColors = [];
+
+        foreach ($filamentColors as $key => $value) {
+            if (is_array($value)) {
+                $normalizedFilamentColors[$key] = array_values(array_map(
+                    static fn (mixed $color): string => (string) $color,
+                    $value,
+                ));
+                continue;
+            }
+
+            $normalizedFilamentColors[$key] = [(string) $value];
+        }
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
-            if (\is_array($value) && Arr::has($value, 'color')) {
+            if (is_array($value) && Arr::has($value, 'color')) {
                 // Convert single color value to array format for Filament compatibility
                 $colorValue = (string) $value['color'];
                 $customColors[$key] = [$colorValue];
             }
         }
 
-        return array_merge($filamentColors, $customColors);
+        return array_merge($normalizedFilamentColors, $customColors);
     }
 
     /**
@@ -689,7 +704,7 @@ class MetatagData extends Data implements Wireable
      */
     private function getMimeTypeFromPath(string $filePath): string
     {
-        $extension = strtolower(pathinfo($filePath, PATHINFO_EXTENSION));
+        $extension = \strtolower(\pathinfo($filePath, PATHINFO_EXTENSION));
 
         return match ($extension) {
             'png' => 'image/png',

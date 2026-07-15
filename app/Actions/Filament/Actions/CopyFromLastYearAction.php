@@ -29,7 +29,10 @@ class CopyFromLastYearAction extends XotBaseAction
             ->modalHeading('Copy Data from Last Year')
             ->modalDescription('Are you sure you want to copy data from the previous year?')
             ->action(function (array $arguments, array $data) use ($action): void {
-                $action->execute($arguments, $data);
+                $action->execute(
+                    self::normalizeStringKeyArray($arguments),
+                    self::normalizeStringKeyArray($data),
+                );
             });
     }
 

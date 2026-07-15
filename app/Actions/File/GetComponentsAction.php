@@ -22,7 +22,7 @@ class GetComponentsAction
     /**
      * Undocumented function.
      *
-     * @return DataCollection<ComponentFileData>
+     * @return DataCollection<int, ComponentFileData>
      */
     public function execute(
         string $path,

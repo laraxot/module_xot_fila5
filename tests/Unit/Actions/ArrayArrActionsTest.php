@@ -19,14 +19,14 @@ it('normalizes nested numeric strings in diff fixType', function (): void {
     $input = ['items' => [
         ['a' => '1', 'b' => 'x'],
         ['c' => '2.5'],
-    ];
+    ]];
 
-    $normalized = ArrDiffAssocRecursiveAction::fixType($input);
+    $normalized = DiffAssocRecursiveAction::fixType($input);
 
-    expect($normalized)->toBe([
+    Assert::assertSame([
         ['a' => 1, 'b' => 'x'],
         ['c' => 2.5],
-    ]);
+    ], $normalized['items']);
 });
 
 it('throws when fixType receives a non-array item', function (): void {
@@ -43,14 +43,14 @@ it('returns recursive diff', function (): void {
     $left = ['items' => [
         ['id' => '1', 'name' => 'a'],
         ['id' => '2', 'name' => 'b'],
-    ];
-    $right = [
+    ]];
+    $right = ['items' => [
         ['id' => 2, 'name' => 'b'],
-    ];
+    ]];
 
-    expect($action->execute($left, $right))->toBe([
+    Assert::assertSame([
         ['id' => 1, 'name' => 'a'],
-    ]);
+    ], $action->execute($left, $right)['items']);
 });
 
 it('covers all branches of range intersect', function (): void {
@@ -87,12 +87,12 @@ it('dispatches save strategy by format in SaveArrayAction', function (): void {
     $tmpDir = sys_get_temp_dir().'/xot-save-array-action-'.uniqid('', true);
     mkdir($tmpDir, 0777, true);
 
-    $action = new ArrSaveArrayAction();
+    $action = new SaveArrayAction();
     $jsonFile = $tmpDir.'/one.json';
     $phpFile = $tmpDir.'/one.php';
 
-    expect($action->execute(['x' => 1], $jsonFile, 'json'))->toBeTrue()
-        ->and($action->execute(['y' => 2], $phpFile, 'php'))->toBeTrue();
+    Assert::assertTrue($action->execute(['x' => 1], $jsonFile, 'json'));
+    Assert::assertTrue($action->execute(['y' => 2], $phpFile, 'php'));
 });
 
 it('throws on unsupported save format in SaveArrayAction', function (): void {

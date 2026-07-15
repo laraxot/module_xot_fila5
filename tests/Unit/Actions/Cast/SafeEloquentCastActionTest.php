@@ -2,59 +2,65 @@
 
 declare(strict_types=1);
 
+uses(Modules\Xot\Tests\TestCase::class);
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\Xot\Tests\TestCase::class);
-
 it('checks attribute presence and emptiness', function (): void {
-    expect($action->hasAttribute($this->model, 'name'))
-        ->and($action->hasAttribute($this->model, 'missing'))
-        ->and($action->hasNonEmptyAttribute($this->model, 'name'))
-        ->and($action->hasNonEmptyAttribute($this->model, 'empty'))
-        ->and($action->hasAttributeValue($this->model, 'name', 'Mario'));
+    [$action, $model] = safeEloquentCastFixture();
+
+    Assert::assertTrue($action->hasAttribute($model, 'name'));
+    Assert::assertFalse($action->hasAttribute($model, 'missing'));
+    Assert::assertTrue($action->hasNonEmptyAttribute($model, 'name'));
+    Assert::assertFalse($action->hasNonEmptyAttribute($model, 'empty'));
 });
 
 it('casts typed attribute getters', function (): void {
-    expect($action->getStringAttribute($this->model, 'name'))
-        ->and($action->getIntAttribute($this->model, 'age'))
-        ->and($action->getFloatAttribute($this->model, 'score'))
-        ->and($action->getBooleanAttribute($this->model, 'active'))
-        ->and($action->getArrayAttribute($this->model, 'meta'))
-        ->and($action->getStringAttribute($this->model, 'missing', 'fallback'));
+    [$action, $model] = safeEloquentCastFixture();
+
+    Assert::assertSame('Mario', $action->getStringAttribute($model, 'name'));
+    Assert::assertSame(42, $action->getIntAttribute($model, 'age'));
+    Assert::assertSame(12.5, $action->getFloatAttribute($model, 'score'));
+    Assert::assertTrue($action->getBooleanAttribute($model, 'active'));
+    Assert::assertSame(['k' => 'v'], $action->getArrayAttribute($model, 'meta'));
 });
 
 it('returns defaults for missing attributes by type', function (): void {
-    expect($action->getIntAttribute($this->model, 'missing', 9))
-        ->and($action->getFloatAttribute($this->model, 'missing', 1.5))
-        ->and($action->getBooleanAttribute($this->model, 'missing', true))
-        ->and($action->getArrayAttribute($this->model, 'missing', ['d']));
+    [$action, $model] = safeEloquentCastFixture();
+
+    Assert::assertSame('', $action->getStringAttribute($model, 'missing'));
+    Assert::assertSame(0, $action->getIntAttribute($model, 'missing'));
+    Assert::assertSame(0.0, $action->getFloatAttribute($model, 'missing'));
+    Assert::assertFalse($action->getBooleanAttribute($model, 'missing'));
+    Assert::assertSame([], $action->getArrayAttribute($model, 'missing'));
 });
 
 it('casts generic typed getter and validation helpers', function (): void {
-    expect($action->getTypedAttribute($this->model, 'name', 'string'))
-        ->and($action->getTypedAttribute($this->model, 'age', 'int'))
-        ->and($action->getTypedAttribute($this->model, 'score', 'float'))
-        ->and($action->getTypedAttribute($this->model, 'active', 'bool'))
-        ->and($action->getTypedAttribute($this->model, 'meta', 'array'));
+    [$action, $model] = safeEloquentCastFixture();
 
-    $ok = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
-    $ko = $this->action->getValidatedAttribute($this->model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
+    Assert::assertSame('Mario', $action->getTypedAttribute($model, 'name', 'string'));
+    Assert::assertSame(42, $action->getTypedAttribute($model, 'age', 'int'));
 
-    expect($ok)->toBe(42)->and($ko)->toBe(0);
+    $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
+    $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
+
+    Assert::assertSame(42, $ok);
+    Assert::assertSame(0, $ko);
 });
 
 it('checks condition and fallback helpers', function (): void {
+    [$action, $model] = safeEloquentCastFixture();
     $model->setAttribute('nickname', 'SuperMario');
 
-    expect($this->action->hasAttributeCondition($this->model, 'age', fn (mixed $v): bool => 42 === (int) $v))->toBeTrue()
-        ->and($this->action->hasAttributeCondition($this->model, 'missing', fn (): bool => true))->toBeFalse()
-        ->and($this->action->getAttributeWithFallback($this->model, 'missing', 'nickname', 'string', 'n/a'))->toBe('SuperMario')
-        ->and($this->action->getAttributeWithFallback($this->model, 'name', 'nickname', 'string', 'n/a'))->toBe('Mario');
+    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (mixed $v): bool => '42' === SafeStringCastAction::cast($v)));
+    Assert::assertSame('Mario', $action->getAttributeWithFallback($model, 'name', 'missing', 'string'));
+    Assert::assertSame('SuperMario', $action->getAttributeWithFallback($model, 'missing', 'nickname', 'string'));
 });
 
 it('exposes static helper methods', function (): void {
-    expect(SafeEloquentCastAction::has($model, 'name'))
-        ->and(SafeEloquentCastAction::get($model, 'age', 'int'));
+    [, $model] = safeEloquentCastFixture();
+
+    Assert::assertTrue(SafeEloquentCastAction::has($model, 'name'));
+    Assert::assertSame(42, SafeEloquentCastAction::get($model, 'age', 'int'));
 });

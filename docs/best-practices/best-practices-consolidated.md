@@ -7,5 +7,4 @@ topic: best-practices-consolidated
 canonical: ../../../../Themes/docs/shared-components/best-practices-consolidated.md
 ---
 
-*Modulo: Xot*
-*Categoria: Best Practices*
+See canonical documentation: ../../../../Themes/docs/shared-components/best-practices-consolidated.md

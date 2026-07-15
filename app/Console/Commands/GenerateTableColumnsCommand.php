@@ -19,21 +19,15 @@ class GenerateTableColumnsCommand extends Command
 {
     /**
      * The name and signature of the console command.
-     * <<<<<<< HEAD
-     * =======.
      *
      * @var string
-     *             >>>>>>> origin/dev
      */
     protected $signature = 'xot:generate-table-columns {module}';
 
     /**
      * The console command description.
-     * <<<<<<< HEAD
-     * =======.
      *
      * @var string
-     *             >>>>>>> origin/dev
      */
     protected $description = 'refresh table columns';
 

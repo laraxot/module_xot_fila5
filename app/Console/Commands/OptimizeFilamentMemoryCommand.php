@@ -8,6 +8,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\preg_match;
 
@@ -21,11 +22,8 @@ class OptimizeFilamentMemoryCommand extends Command
 {
     /**
      * The name and signature of the console command.
-     * <<<<<<< HEAD
-     * =======.
      *
      * @var string
-     *             >>>>>>> origin/dev
      */
     protected $signature = 'filament:optimize-memory 
                             {--clear-cache : Clear all caches before optimization}
@@ -34,11 +32,8 @@ class OptimizeFilamentMemoryCommand extends Command
 
     /**
      * The console command description.
-     * <<<<<<< HEAD
-     * =======.
      *
      * @var string
-     *             >>>>>>> origin/dev
      */
     protected $description = 'Optimize Filament admin panels for better memory usage';
 
@@ -312,8 +307,8 @@ class OptimizeFilamentMemoryCommand extends Command
                 $this->newLine();
                 $this->warn("Dettagli {$type}:");
                 foreach ($items as $item) {
-                    $itemString = is_string($item) ? $item : (string) $item;
-                    $this->line('  - '.str_replace(base_path(), '', (string) $itemString));
+                    $itemString = SafeStringCastAction::cast($item);
+                    $this->line('  - '.str_replace(base_path(), '', $itemString));
                 }
             }
         }

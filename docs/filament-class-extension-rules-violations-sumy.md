@@ -45,10 +45,6 @@ Rimuovere tutte le proprietà e metodi vietati dalle classi che estendono `XotBa
 
 ### Modulo healthcare_app (5 Resources + 7 Pages)
 ### Modulo ExternalProject (5 Resources + 7 Pages)
-=======
-### Modulo ModuloEsempio (5 Resources + 7 Pages)
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_7adEeS
 6. ContactResource - 1 violazione rimossa
 7. CustomerResource - 2 violazioni rimosse
 8. QuestionChartResource - 1 violazione rimossa

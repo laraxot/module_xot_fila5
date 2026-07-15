@@ -6,6 +6,7 @@ namespace Modules\Xot\Actions\View;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -38,13 +39,13 @@ class GetViewByClassAction
         $mapped = Arr::map($after, function (string $value, int $key) use ($after) {
             if ($key > 0 && isset($after[$key - 1])) {
                 $prevValue = $after[$key - 1];
-                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
+                $prevValueStr = SafeStringCastAction::cast($prevValue);
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
             if ($key > 0 && isset($after[$key - 2])) {
                 $prevValue = $after[$key - 2];
-                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
+                $prevValueStr = SafeStringCastAction::cast($prevValue);
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
@@ -52,11 +53,7 @@ class GetViewByClassAction
             return Str::of($value)->kebab()->slug()->toString();
         });
 
-        $mappedStrings = array_values(array_filter(
-            $mapped,
-            static fn (mixed $value): bool => is_string($value),
-        ));
-        $implode = implode('.', $mappedStrings);
+        $implode = Arr::join(array_values($mapped), '.');
         $views = [
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
@@ -67,6 +64,7 @@ class GetViewByClassAction
         }
 
         if (view()->exists($view)) {
+            /* @var view-string $view */
             return $view;
         }
         throw new \Exception('View not found: '.$view);

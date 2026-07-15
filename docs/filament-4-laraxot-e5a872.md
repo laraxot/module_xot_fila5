@@ -28,13 +28,6 @@ namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources
 
 // ❌ SBAGLIATO
 namespace Modules\ExternalProject\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-
-// ❌ SBAGLIATO
-namespace Modules\ModuloEsempio\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 ```
 
 ### 3. **Uso di Schema invece di Form**
@@ -82,10 +75,6 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -110,10 +99,6 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -186,13 +171,6 @@ namespace Modules\ExternalProject\App\Filament\Widgets;
 
 // ✅ CORRETTO
 namespace Modules\ExternalProject\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\App\Filament\Widgets;
-
-// ✅ CORRETTO
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 ```
 
 ## 🔧 Implementazione Corretta
@@ -205,20 +183,12 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 namespace Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
-=======
-namespace Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 use Modules\ExternalProject\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
-=======
-use Modules\ModuloEsempio\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -264,10 +234,6 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\ExternalProject\Filament\Widgets;
-=======
-namespace Modules\ModuloEsempio\Filament\Widgets;
->>>>>>> f04e1ab44 (refactor: update project references from <nome progetto> to PTVX)
->>>>>>> .merge_file_KMwnwL
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;

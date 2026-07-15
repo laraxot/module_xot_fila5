@@ -10,6 +10,8 @@ use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
+use Filament\Support\Components\Component;
+use Filament\Support\Facades\FilamentColor;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -50,6 +52,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
+        $this->registerPaFilamentColors();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
@@ -57,6 +60,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     #[\Override]
     public function register(): void
     {
+        $this->registerRuntimePsr4Autoload();
         parent::register();
         $this->registerConfig();
 
@@ -68,6 +72,23 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function registerProviders(): void
     {
         // $this->app->register(Filament\ModulesServiceProvider::class);
+    }
+
+    private function registerRuntimePsr4Autoload(): void
+    {
+        $autoloadPath = base_path('vendor/autoload.php');
+
+        if (! is_file($autoloadPath)) {
+            return;
+        }
+
+        $loader = require $autoloadPath;
+
+        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -185,7 +206,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
         foreach ($components as $component) {
-            $component::configureUsing(function (object $translatable): void {
+            $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {
                     $translatable->translateLabel();
                 }

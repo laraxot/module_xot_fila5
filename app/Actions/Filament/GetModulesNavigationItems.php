@@ -124,7 +124,6 @@ class GetModulesNavigationItems
                         return false;
                     }
 
-                    /* @phpstan-ignore-next-line */
                     return (bool) $user->hasRole($role);
                 });
 
@@ -174,11 +173,11 @@ class GetModulesNavigationItems
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
-                $navigation_sort = (int) ($config['navigation_sort'] ?? 1);
+                $navigation_sort = SafeIntCastAction::cast($config['navigation_sort'] ?? 1);
                 $out[] = [
                     'module' => $module,
                     'module_low' => $module_low,
-                    'icon' => (string) $icon,
+                    'icon' => SafeStringCastAction::cast($icon),
                     'sort' => $navigation_sort,
                 ];
             }

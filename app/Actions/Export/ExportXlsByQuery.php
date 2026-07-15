@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Export;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\QueryExport;
 use Spatie\QueueableAction\QueueableAction;
