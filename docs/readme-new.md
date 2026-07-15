@@ -1,14 +1,3 @@
----
-title: "Xot Module - Core Foundation"
-module: "Xot"
-type: concept
-tags: [readme, new]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme new"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
@@ -693,7 +682,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for full history.
 - Real-time update support for widgets
 - Advanced caching strategies
 
-See [ROADMAP.md](./ROADMAP.md) for details.
+See [ROADMAP.md](roadmap.md) for details.
 
 ---
 

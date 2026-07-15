@@ -1,14 +1,3 @@
----
-title: "MCP (Model Context Protocol) Integration"
-module: "Xot"
-type: concept
-tags: [mcp, readme, section]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp readme section"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MCP (Model Context Protocol) Integration
 
 ## Cosa è MCP?

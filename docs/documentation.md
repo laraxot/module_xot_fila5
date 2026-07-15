@@ -1,14 +1,3 @@
----
-title: "Documentazione"
-module: "Xot"
-type: concept
-tags: [documentation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Documentazione
 
 ## Struttura della Documentazione
@@ -52,8 +41,8 @@ Modules/[Nome]/
 
 ## Collegamenti
 - [Indice della Documentazione](../docs/INDEX.md)
-- [Regole del Progetto](../docs/RULES.md)
-- [Struttura dei Moduli](../docs/STRUCTURE.md)
+- [Regole del Progetto](rules.md)
+- [Struttura dei Moduli](structure.md)
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
 * [documentation.md](../../../Xot/docs/documentation.md)

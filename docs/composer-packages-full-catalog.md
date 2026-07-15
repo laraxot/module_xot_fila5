@@ -1,14 +1,3 @@
----
-title: "Composer Packages Full Catalog (2026-03-02)"
-module: "Xot"
-type: concept
-tags: [composer, packages, full, catalog]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "composer packages full catalog"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Composer Packages Full Catalog (2026-03-02)
 
 This document is generated from `composer show --format=json` and represents a full package-by-package study baseline.

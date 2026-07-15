@@ -1,14 +1,3 @@
----
-title: "Redundancy Report — Modulo Xot"
-module: "Xot"
-type: concept
-tags: [redundancy, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Redundancy Report — Modulo Xot
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan

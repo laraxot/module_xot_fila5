@@ -1,14 +1,3 @@
----
-title: "Risoluzione della Disputa Zen: Priorità e Approccio Laraxot"
-module: "Xot"
-type: pattern
-tags: [zen, argument, resolution]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "zen argument resolution"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione della Disputa Zen: Priorità e Approccio Laraxot
 
 ## 🥊 La Disputa Interiore

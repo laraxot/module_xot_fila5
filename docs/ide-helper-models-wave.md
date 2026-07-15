@@ -1,14 +1,3 @@
----
-title: "IDE Helper Models Wave - 2026-03-10"
-module: "Xot"
-type: concept
-tags: [ide, helper, models, wave]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ide helper models wave"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # IDE Helper Models Wave - 2026-03-10
 
 ## Scopo

@@ -1,14 +1,3 @@
----
-title: "TechPlanner Theme Two - Implementazione Notes"
-module: "Xot"
-type: concept
-tags: [theme, two, implementation, notes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "theme two implementation notes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # TechPlanner Theme Two - Implementazione Notes
 ## Homepage Redesign based on Target Site Analysis
 

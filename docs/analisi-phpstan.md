@@ -1,14 +1,3 @@
----
-title: "Analisi PHPStan - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [analisi, phpstan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "analisi phpstan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi PHPStan - Modulo Xot
 
 ## Panoramica

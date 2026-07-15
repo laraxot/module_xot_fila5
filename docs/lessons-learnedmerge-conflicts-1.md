@@ -1,14 +1,3 @@
----
-title: "Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)"
-module: "Xot"
-type: concept
-tags: [lessons, learnedmerge, conflicts, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lessons learnedmerge conflicts 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 
 ## 🎯 Missione Completata

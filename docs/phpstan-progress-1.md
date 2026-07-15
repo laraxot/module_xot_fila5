@@ -1,14 +1,3 @@
----
-title: "PHPStan Progress Report - [DATE]"
-module: "Xot"
-type: concept
-tags: [phpstan, progress, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan progress 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Progress Report - [DATE]
 
 ## Executive Summary

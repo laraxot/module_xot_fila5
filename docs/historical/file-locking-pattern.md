@@ -1,14 +1,3 @@
----
-title: "File Locking Pattern - Prevenzione Race Conditions"
-module: "Xot"
-type: pattern
-tags: [file, locking, pattern]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "file locking pattern"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # File Locking Pattern - Prevenzione Race Conditions
 
 ## 🔐 Filosofia

@@ -1,32 +1,16 @@
 ---
-title: "PHPStan Level 10 Roadmap - Xot Module"
-module: "Xot"
+title: "Phpstan Roadmap"
 type: concept
-tags: [phpstan, roadmap, 2026, 02]
+status: deprecated
+module: "Xot"
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan roadmap 2026 02 03"
+qmd: "deprecated phpstan-roadmap"
 related:
-  - "./eloquent-magic-properties-rule.md"
+  - "./phpstan-roadmap.md"
 ---
-# PHPStan Level 10 Roadmap - Xot Module
+# Phpstan Roadmap
 
-**Data**: 2026-02-03
-**Status**: ✅ Completato
-**Errori Totali**: 1
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
-## Errori Identificati
-
-### Models
-- [x] `app/Models/Module.php:65` - `property.phpDocType` - PHPDoc type `string|null` of property `$connection` is not covariant with overridden property in `BaseModel`.
-
-## Pattern di Correzione
-- **property.phpDocType**: Allineare il tipo della proprietà `$connection` con quello della classe base (`BaseModel`). Se la classe base lo dichiara come `string`, non può essere `string|null` nella sottoclasse (Liskov Substitution Principle).
-
-## Prossimi Passi
-- [x] Correggere `Module.php`
-- [x] Verificare con PHPStan
-
-## Verifica
-
-- [x] `./vendor/bin/phpstan analyse Modules --level=10`
+Vedi il file canonico: [phpstan-roadmap.md](./phpstan-roadmap.md)

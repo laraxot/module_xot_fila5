@@ -12,7 +12,7 @@ related:
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
-> - [README.md documentazione generale](../../../../../docs/readme.md)
+> - [README.md documentazione generale](README.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
@@ -40,7 +40,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ### Da un file in un modulo verso la root
 
 ```markdown
-[Documentazione Root](../../../../../docs/readme.md)
+[Documentazione Root](README.md)
 ```
 
 ## Errori Comuni da Evitare

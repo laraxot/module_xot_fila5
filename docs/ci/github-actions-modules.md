@@ -1,14 +1,3 @@
----
-title: "GitHub Actions per moduli e temi (CI)"
-module: "Xot"
-type: concept
-tags: [github, actions, modules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "github actions modules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # GitHub Actions per moduli e temi (CI)
 
 ## Scopo

@@ -1,14 +1,3 @@
----
-title: "Esecuzione Corretta di PHPStan in Laraxot <nome progetto>"
-module: "Xot"
-type: concept
-tags: [phpstan, usage]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan usage"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Esecuzione Corretta di PHPStan in Laraxot <nome progetto>
 
 ## Regola Principale

@@ -1,14 +1,3 @@
----
-title: "MCP for Architecture - Xot Module"
-module: "Xot"
-type: concept
-tags: [mcp, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp for architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MCP for Architecture - Xot Module
 
 ## Overview

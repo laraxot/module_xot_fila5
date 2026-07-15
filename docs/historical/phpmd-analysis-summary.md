@@ -1,14 +1,3 @@
----
-title: "Riepilogo Analisi PHPMD - Tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [phpmd, analysis, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd analysis summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Riepilogo Analisi PHPMD - Tutti i Moduli
 
 **Data**: 2025-12-23

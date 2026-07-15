@@ -1,14 +1,3 @@
----
-title: "Regole Environment Development vs Testing in Laraxot"
-module: "Xot"
-type: rule
-tags: [environment, development, vs, testing]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "environment development vs testing rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole Environment Development vs Testing in Laraxot
 
 ## Panoramica

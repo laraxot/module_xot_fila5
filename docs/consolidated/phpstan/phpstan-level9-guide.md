@@ -1,14 +1,3 @@
----
-title: "Guida alla Risoluzione degli Errori PHPStan Livello 9"
-module: "Xot"
-type: how-to
-tags: [phpstan, level9, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level9 guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida alla Risoluzione degli Errori PHPStan Livello 9
 
 Questa guida documenta i pattern di errore più comuni trovati durante l'analisi di livello 9 con PHPStan e le strategie per risolverli.

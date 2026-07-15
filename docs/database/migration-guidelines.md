@@ -1,14 +1,3 @@
----
-title: "Migration Guidelines for Project Modules"
-module: "Xot"
-type: how-to
-tags: [migration, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migration Guidelines for Project Modules
 
 ## Overview
@@ -51,3 +40,8 @@ return new class extends XotBaseMigration
 - [Code Quality](../code_quality.md)
 - [Root Documentation](../../../../project_docs/collegamenti-documentazione.md)
 - [Database Guidelines](../database_guidelines.md)
+- [User Module Database Errors](../../User/project_docs/DATABASE_ERRORS.md)
+- [Xot Base Classes](../XOT_BASE_CLASSES.md)
+- [Code Quality](code_quality.md)
+- [Root Documentation](../../../../project_docs/collegamenti-documentazione.md)
+- [Database Guidelines](database_guidelines.md)

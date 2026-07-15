@@ -1,14 +1,3 @@
----
-title: "Rules"
-module: "Xot"
-type: rule
-tags: [rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 ## Regole di naming per le azioni
 
 - Le azioni che operano su una chiave specifica devono utilizzare la forma `By<Key>` (es. `UpdateRestiPondByValutatoreIdAction`).

@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto in ExportXlsByView"
-module: "Xot"
-type: concept
-tags: [exportxlsbyview]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "exportxlsbyview"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Risoluzione Conflitto in ExportXlsByView
 

@@ -1,14 +1,3 @@
----
-title: "Template Gestione Conflitti Git - package.json"
-module: "Xot"
-type: concept
-tags: [git, conflict, package, json]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflict package json"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Template Gestione Conflitti Git - package.json
 
 ## File: bashscripts/package.json

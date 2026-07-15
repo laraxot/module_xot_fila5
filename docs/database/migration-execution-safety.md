@@ -1,14 +1,3 @@
----
-title: "Migration Execution Safety Rule"
-module: "Xot"
-type: concept
-tags: [migration, execution, safety]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration execution safety"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migration Execution Safety Rule
 
 ## Absolute rule

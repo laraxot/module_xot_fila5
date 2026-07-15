@@ -1,14 +1,3 @@
----
-title: "Architettura Avanzata del Framework Xot basata sui Principi Filament"
-module: "Xot"
-type: concept
-tags: [advanced, framework, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "advanced framework architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Architettura Avanzata del Framework Xot basata sui Principi Filament
 
 ## Introduzione

@@ -1,14 +1,3 @@
----
-title: "PHPStan - Guida Completa Consolidata"
-module: "Xot"
-type: concept
-tags: [phpstan, consolidated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan consolidated"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: [DATE]

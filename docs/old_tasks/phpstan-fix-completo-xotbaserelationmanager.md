@@ -1,14 +1,3 @@
----
-title: "Correzione Completa PHPStan - XotBaseRelationManager ✅"
-module: "Xot"
-type: concept
-tags: [phpstan, fix, completo, xotbaserelationmanager]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fix completo xotbaserelationmanager"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzione Completa PHPStan - XotBaseRelationManager ✅
 
 **Data**: 2025-12-23  

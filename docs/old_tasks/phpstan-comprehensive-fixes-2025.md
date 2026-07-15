@@ -1,11 +1,16 @@
 ---
-title: "Phpstan Comprehensive Fixes 2025"
-module: "Xot"
+title: "Phpstan Comprehensive Fixes"
 type: concept
-tags: [phpstan, comprehensive, fixes, 2025]
+status: deprecated
+module: "Xot"
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan comprehensive fixes 2025"
+qmd: "deprecated phpstan-comprehensive-fixes"
 related:
-  - "./eloquent-magic-properties-rule.md"
+  - "./phpstan-comprehensive-fixes.md"
 ---
+# Phpstan Comprehensive Fixes
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-comprehensive-fixes.md](./phpstan-comprehensive-fixes.md)

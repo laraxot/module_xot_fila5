@@ -1,14 +1,3 @@
----
-title: "Report Normalizzazione Documentazione"
-module: "Xot"
-type: concept
-tags: [normalization, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "normalization report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Report Normalizzazione Documentazione
 
 ## Data: Gennaio 2025

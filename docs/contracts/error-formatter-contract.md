@@ -1,14 +1,3 @@
----
-title: "ErrorFormatterContract"
-module: "Xot"
-type: concept
-tags: [error, formatter, contract]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "error formatter contract"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ErrorFormatterContract
 
 ## Descrizione

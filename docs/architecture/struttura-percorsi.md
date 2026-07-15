@@ -1,14 +1,3 @@
----
-title: "Struttura dei percorsi nel progetto <nome progetto>"
-module: "Xot"
-type: concept
-tags: [struttura, percorsi]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "struttura percorsi"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Struttura dei percorsi nel progetto <nome progetto>
 
 ## Regola fondamentale

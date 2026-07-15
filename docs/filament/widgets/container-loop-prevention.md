@@ -1,14 +1,3 @@
----
-title: "Container Loop Prevention"
-module: "Xot"
-type: concept
-tags: [container, loop, prevention]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "container loop prevention"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Container Loop Prevention
 
 ## Root Cause Analysis (RCA)

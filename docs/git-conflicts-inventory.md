@@ -1,14 +1,3 @@
----
-title: "Inventario Conflitti Git - Xot Module"
-module: "Xot"
-type: concept
-tags: [git, conflicts, inventory]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git conflicts inventory"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Inventario Conflitti Git - Xot Module
 
 ## File con conflitti di merge non risolti

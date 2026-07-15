@@ -1,14 +1,3 @@
----
-title: "Filament v5 Migration - Xot"
-module: "Xot"
-type: concept
-tags: [filament, v5, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament v5 migration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament v5 Migration - Xot
 
 **Task ID**: XOT-FEATURE-001

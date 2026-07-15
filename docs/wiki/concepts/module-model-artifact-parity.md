@@ -29,6 +29,7 @@ bashscripts/tools/audit-module-artifact-parity.sh <ModuleName>
 ## Esclusi dal conteggio
 
 - `abstract` / `Base*`
+- `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
 - Wrapper cross-modulo (es. `Predict\Models\User`)
 
 ## Backlog migrazioni

@@ -1,14 +1,3 @@
----
-title: "Filament HasWizard Concern vs XotBaseWizardWidget"
-module: "Xot"
-type: concept
-tags: [filament, haswizard, vs, xotbasewizard]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament haswizard vs xotbasewizard"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament HasWizard Concern vs XotBaseWizardWidget
 
 ## Date

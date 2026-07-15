@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 - Filament Actions String Keys Rule"
-module: "Xot"
-type: rule
-tags: [PHPSTAN, FILAMENT, ACTIONS, RULE]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan filament actions rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 - Filament Actions String Keys Rule
 
 ## Critical Requirement

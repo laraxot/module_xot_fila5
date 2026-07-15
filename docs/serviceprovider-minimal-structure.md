@@ -1,14 +1,3 @@
----
-title: "ServiceProvider Minimal Structure - Laraxot"
-module: "Xot"
-type: concept
-tags: [serviceprovider, minimal, structure]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "serviceprovider minimal structure"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ServiceProvider Minimal Structure - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10

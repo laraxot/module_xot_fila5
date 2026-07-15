@@ -1,14 +1,3 @@
----
-title: "Riepilogo Analisi PHPMD - Tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [phpmd, analysis, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd analysis sumy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Riepilogo Analisi PHPMD - Tutti i Moduli
 
 **Strumento**: PHPMD (PHP Mess Detector)

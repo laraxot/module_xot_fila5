@@ -1,14 +1,3 @@
----
-title: "SearchStringInDatabaseCommand"
-module: "Xot"
-type: concept
-tags: [search, string, database]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "search string database"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # SearchStringInDatabaseCommand
 
 ## Descrizione
@@ -39,6 +28,6 @@ php artisan xot:search-string-in-database {search_string} {--table=} {--column=}
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
 ## Collegamenti
-- [Database Guidelines](../database-guidelines.md)
+- [Database Guidelines](database-guidelines.md)
 - [Performance Guidelines](../performance/database-queries.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)

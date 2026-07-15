@@ -1,14 +1,3 @@
----
-title: "Aggiornamento Documentazione - 2 Dicembre 2025"
-module: "Xot"
-type: concept
-tags: [docs, update]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "docs update"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Aggiornamento Documentazione - 2 Dicembre 2025
 
 ## 🎯 Obiettivo

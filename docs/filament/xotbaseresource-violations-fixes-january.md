@@ -1,14 +1,3 @@
----
-title: "Correzioni Violazioni XotBaseResource - Gennaio 2026"
-module: "Xot"
-type: concept
-tags: [xotbaseresource, violations, fixes, january]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbaseresource violations fixes january"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato

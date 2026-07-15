@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Enforcement - Session 2 Final Report"
-module: "Xot"
-type: concept
-tags: [phpstan, session, 2, final]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan session 2 final report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 Enforcement - Session 2 Final Report
 
 **Date**: 2025-10-22

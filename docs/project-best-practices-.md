@@ -1,14 +1,3 @@
----
-title: "Best Practices Progetto Laraxot PTVX - 2025"
-module: "Xot"
-type: concept
-tags: [project, best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "project best practices "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Best Practices Progetto Laraxot PTVX - 2025
 
 > **Documento Master** - Regole fondamentali aggiornate dopo risoluzione massiva merge conflicts

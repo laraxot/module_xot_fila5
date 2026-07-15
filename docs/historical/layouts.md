@@ -1,14 +1,3 @@
----
-title: "Layout in il progetto"
-module: "Xot"
-type: concept
-tags: [layouts]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "layouts"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Layout in il progetto
 
 I layout sono i template base che definiscono la struttura delle pagine. Ogni tema può definire i propri layout.

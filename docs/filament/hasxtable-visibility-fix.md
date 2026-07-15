@@ -1,14 +1,3 @@
----
-title: "Fix Visibilità Metodi HasXotTable - 2026-01-27"
-module: "Xot"
-type: concept
-tags: [hasxtable, visibility, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hasxtable visibility fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Status**: ✅ Risolto  

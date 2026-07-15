@@ -1,14 +1,3 @@
----
-title: "ApplyMetatagToPanelAction"
-module: "Xot"
-type: concept
-tags: [applymetatagtopanelaction]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "applymetatagtopanelaction"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ApplyMetatagToPanelAction
 
 ## Descrizione
@@ -49,6 +38,7 @@ In caso di errore durante l'applicazione dei metatag:
 - L'applicazione continua a funzionare
 
 ## Collegamenti
+- [MetatagData](metatagdata.md)
 - [MetatagData](../datas/metatagdata.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
 

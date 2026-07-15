@@ -1,14 +1,3 @@
----
-title: "Chart Export Guide - PNG e SVG"
-module: "Xot"
-type: how-to
-tags: [chart, export, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "chart export guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Chart Export Guide - PNG e SVG
 
 ## 📋 Panoramica

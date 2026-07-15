@@ -1,14 +1,3 @@
----
-title: "HandlerDecorator"
-module: "Xot"
-type: concept
-tags: [handler, decorator]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "handler decorator"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # HandlerDecorator
 
 ## Descrizione

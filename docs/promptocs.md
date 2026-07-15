@@ -1,14 +1,3 @@
----
-title: "Analisi e Miglioramenti del Prompt docs.txt"
-module: "Xot"
-type: concept
-tags: [promptocs]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "promptocs"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi e Miglioramenti del Prompt docs.txt
 
 > **Collegamenti correlati**

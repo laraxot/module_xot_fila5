@@ -1,14 +1,3 @@
----
-title: "Regole Visibilità Metodi Widget - HasXotTable"
-module: "Xot"
-type: rule
-tags: [widget, method, visibility, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "widget method visibility rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole Visibilità Metodi Widget - HasXotTable
 
 **Data Creazione**: 2025-01-27  

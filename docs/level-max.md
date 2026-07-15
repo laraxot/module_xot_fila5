@@ -1,14 +1,3 @@
----
-title: "Rapporto PHPStan Livello max per il modulo Xot"
-module: "Xot"
-type: concept
-tags: [level, max]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "level max"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Rapporto PHPStan Livello max per il modulo Xot
 
 Data analisi: [DATE] 21:56:24

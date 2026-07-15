@@ -1,14 +1,3 @@
----
-title: "Changelog - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [changelog, 3]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "changelog 3"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.

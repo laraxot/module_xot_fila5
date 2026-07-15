@@ -1,14 +1,3 @@
----
-title: "Xot Module - PHPStan Fix Plan"
-module: "Xot"
-type: concept
-tags: [phpstan, fix, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fix plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - PHPStan Fix Plan
 
 ## Current Status

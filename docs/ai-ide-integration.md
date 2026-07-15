@@ -1,14 +1,3 @@
----
-title: "AI/IDE Integration Guide - Xot Module"
-module: "Xot"
-type: concept
-tags: [ai, ide, integration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ai ide integration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # AI/IDE Integration Guide - Xot Module
 
 ## Overview

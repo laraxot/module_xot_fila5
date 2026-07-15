@@ -1,14 +1,3 @@
----
-title: "Riepilogo Rimozione Violazioni XotBaseResource - 2026-01-21"
-module: "Xot"
-type: rule
-tags: [filament, class, extension, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament class extension rules violations summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Riepilogo Rimozione Violazioni XotBaseResource - 2026-01-21
 
 **Status**: ✅ Completato  

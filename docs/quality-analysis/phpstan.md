@@ -1,14 +1,3 @@
----
-title: "PHPStan Analysis and Legacy Cleanup (2026-05-13)"
-module: "Xot"
-type: concept
-tags: [phpstan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Analysis and Legacy Cleanup (2026-05-13)
 
 ## Overview

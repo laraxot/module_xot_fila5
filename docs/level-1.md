@@ -1,14 +1,3 @@
----
-title: "PHPStan Report - Livello 10"
-module: "Xot"
-type: concept
-tags: [level, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "level 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Report - Livello 10
 
 ## Errori rilevati

@@ -1,14 +1,3 @@
----
-title: "Module System and BaseModel Pattern: The Sacred Architecture"
-module: "Xot"
-type: pattern
-tags: [base, model, pattern]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "base model pattern"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Module System and BaseModel Pattern: The Sacred Architecture
 
 ## Module System Architecture

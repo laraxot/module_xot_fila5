@@ -1,14 +1,3 @@
----
-title: "EnumTrait Pattern - Standard Architetturale per Enums"
-module: "Xot"
-type: pattern
-tags: [enum, trait, pattern]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "enum trait pattern"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # EnumTrait Pattern - Standard Architetturale per Enums
 
 ## Scopo

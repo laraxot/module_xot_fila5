@@ -1,14 +1,3 @@
----
-title: "Xot Module — daisyUI Reference"
-module: "Xot"
-type: concept
-tags: [DAISYUI]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "daisyui"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module — daisyUI Reference
 
 ## Panoramica

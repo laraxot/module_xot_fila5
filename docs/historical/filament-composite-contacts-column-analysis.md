@@ -1,14 +1,3 @@
----
-title: "Analisi e Implementazione Colonna Composita 'Contatti' - TechPlanner"
-module: "Xot"
-type: concept
-tags: [filament, composite, contacts, column]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament composite contacts column analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi e Implementazione Colonna Composita "Contatti" - TechPlanner
 
 ## Richiesta Utente

@@ -1,14 +1,3 @@
----
-title: "PHPStan Best Practices per Relazioni Eloquent"
-module: "Xot"
-type: concept
-tags: [phpstan, relationship, best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan relationship best practices"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Best Practices per Relazioni Eloquent
 
 ## Regola Fondamentale

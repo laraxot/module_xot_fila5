@@ -1,14 +1,3 @@
----
-title: "bmad method in laraxot"
-module: "Xot"
-type: concept
-tags: [bmad, method]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bmad method"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # bmad method in laraxot
 
 ## scopo

@@ -1,14 +1,3 @@
----
-title: "Pdf To Txt"
-module: "Xot"
-type: concept
-tags: [pdf, txt]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "pdf to txt"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 

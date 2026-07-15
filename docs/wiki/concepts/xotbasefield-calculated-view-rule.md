@@ -1,14 +1,3 @@
----
-title: "XotBaseField Calculated View Rule"
-module: "Xot"
-type: rule
-tags: [xotbasefield, calculated, view, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbasefield calculated view rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseField Calculated View Rule
 
 ## Context

@@ -1,14 +1,3 @@
----
-title: "Refactor Radicale DRY + KISS - Riepilogo Completo"
-module: "Xot"
-type: concept
-tags: [refactor, dry, kiss, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "refactor dry kiss sumy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali

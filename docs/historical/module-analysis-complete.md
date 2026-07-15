@@ -1,14 +1,3 @@
----
-title: "Analisi Completa Modulo Xot - Factory, Seeder e Test"
-module: "Xot"
-type: concept
-tags: [module, analysis, complete]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module analysis complete"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi Completa Modulo Xot - Factory, Seeder e Test
 
 ## 📊 Panoramica Generale

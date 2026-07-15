@@ -1,14 +1,3 @@
----
-title: "PHPStan Error Patterns and Solutions Guide"
-module: "Xot"
-type: pattern
-tags: [phpstan, error, patterns]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan error patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Error Patterns and Solutions Guide
 
 ## Common PHPStan Error Patterns

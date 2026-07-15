@@ -1,14 +1,3 @@
----
-title: "La Via del Brand"
-module: "Xot"
-type: concept
-tags: [brand, way]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "brand way"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # La Via del Brand
 

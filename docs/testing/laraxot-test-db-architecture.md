@@ -1,14 +1,3 @@
----
-title: "Laraxot Test Architecture - Database Management without RefreshDatabase"
-module: "Xot"
-type: concept
-tags: [laraxot, test, db, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laraxot test db architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laraxot Test Architecture - Database Management without RefreshDatabase
 
 ## Introduzione

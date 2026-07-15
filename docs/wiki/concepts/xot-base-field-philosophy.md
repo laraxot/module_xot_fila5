@@ -1,14 +1,3 @@
----
-title: "XotBaseField Philosophy"
-module: "Xot"
-type: concept
-tags: [xot, base, field, philosophy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base field philosophy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseField Philosophy
 
 ## The Rule of Lineage

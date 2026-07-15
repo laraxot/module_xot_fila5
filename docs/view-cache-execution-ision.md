@@ -1,14 +1,3 @@
----
-title: "Decisione: Esecuzione php artisan view:cache"
-module: "Xot"
-type: concept
-tags: [view, cache, execution, ision]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "view cache execution ision"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Decisione: Esecuzione php artisan view:cache
 
 **Metodologia**: Super Mucca - La Litigata Interna

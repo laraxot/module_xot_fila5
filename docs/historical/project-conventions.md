@@ -1,14 +1,3 @@
----
-title: "Project Conventions and Standards"
-module: "Xot"
-type: concept
-tags: [project, conventions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "project conventions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Project Conventions and Standards
 
 ## File Naming Standards

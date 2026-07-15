@@ -1,14 +1,3 @@
----
-title: "Task: PdfEngineEnum Implementation"
-module: "Xot"
-type: concept
-tags: [pdf, engine, enum, implementation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "pdf engine enum implementation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Task: PdfEngineEnum Implementation
 
 **Modulo**: Xot  

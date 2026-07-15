@@ -1,14 +1,3 @@
----
-title: "Xot Module - Future Enhancements"
-module: "Xot"
-type: concept
-tags: [future, enhancements]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "future enhancements"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Future Enhancements
 
 ## 📋 Table of Contents

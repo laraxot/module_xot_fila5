@@ -1,14 +1,3 @@
----
-title: "Regola struttura path per i moduli Laravel"
-module: "Xot"
-type: concept
-tags: [modules, path, structure]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "modules path structure"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.

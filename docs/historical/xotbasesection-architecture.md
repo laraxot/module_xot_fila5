@@ -1,14 +1,3 @@
----
-title: "XotBaseSection Architecture Guide"
-module: "Xot"
-type: concept
-tags: [xotbasesection, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbasesection architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseSection Architecture Guide
 
 ## Overview

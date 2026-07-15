@@ -1,14 +1,3 @@
----
-title: "Risoluzione degli Errori PHPStan Relativi ai Tipi Generici nelle Relazioni Eloquent"
-module: "Xot"
-type: concept
-tags: [phpstan, generic, types]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan generic types"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Risoluzione degli Errori PHPStan Relativi ai Tipi Generici nelle Relazioni Eloquent
 
 Questo documento fornisce linee guida per risolvere gli errori PHPStan di livello 9 relativi ai tipi generici nelle relazioni Eloquent nei modelli Laravel.

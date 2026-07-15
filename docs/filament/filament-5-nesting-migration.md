@@ -1,14 +1,3 @@
----
-title: "Migrazione a Filament 5.x Native Nesting"
-module: "Xot"
-type: concept
-tags: [filament, 5, nesting, migration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 5 nesting migration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migrazione a Filament 5.x Native Nesting
 
 **Data Analisi**: 2026-01-22  

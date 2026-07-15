@@ -1,14 +1,3 @@
----
-title: "Magic Properties Cleanup Report - [DATE]"
-module: "Xot"
-type: concept
-tags: [magic, properties, sumy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "magic properties sumy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Magic Properties Cleanup Report - [DATE]
 
 ## Summary

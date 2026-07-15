@@ -1,14 +1,3 @@
----
-title: "Quality Improvements Summary - November 18, 2025"
-module: "Xot"
-type: concept
-tags: [quality, improvements]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "quality improvements"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Quality Improvements Summary - November 18, 2025
 
 ## Overview

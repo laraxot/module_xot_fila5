@@ -1,14 +1,3 @@
----
-title: "Convenzioni per Data Objects e QueueableActions"
-module: "Xot"
-type: concept
-tags: [data, queableactions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "data queableactions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzioni per Data Objects e QueueableActions
 
 Questo documento definisce le convenzioni per l'utilizzo dei Data Objects e QueueableActions nel framework Laraxot <nome progetto>, con una chiara preferenza per le librerie Spatie rispetto agli approcci tradizionali.

@@ -1,14 +1,3 @@
----
-title: "Infolists per Riepilogo — Regola Corretta"
-module: "Xot"
-type: concept
-tags: [infolists, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "infolists for summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Infolists per Riepilogo — Regola Corretta
 
 **Status**: Active  

@@ -1,14 +1,3 @@
----
-title: "PHPMD Analysis Report & Refactoring Plan - Xot Module"
-module: "Xot"
-type: concept
-tags: [phpmd, analysis, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd analysis report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPMD Analysis Report & Refactoring Plan - Xot Module
 
 **Date:** 2026-01-05

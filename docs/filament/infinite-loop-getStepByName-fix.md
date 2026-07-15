@@ -1,14 +1,3 @@
----
-title: "CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource"
-module: "Xot"
-type: concept
-tags: [infinite, loop, getStepByName, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "infinite loop getstepbyname fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**

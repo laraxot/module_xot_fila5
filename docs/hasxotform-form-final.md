@@ -1,14 +1,3 @@
----
-title: "HasXotForm: form() DEVE essere final"
-module: "Xot"
-type: concept
-tags: [hasxotform, form, final]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "hasxotform form final"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # HasXotForm: form() DEVE essere final
 
 ## Regola critica

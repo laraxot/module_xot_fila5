@@ -1,14 +1,3 @@
----
-title: "Pagine Dashboard Filament - Best Practices"
-module: "Xot"
-type: concept
-tags: [dashboard, pages]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "dashboard pages"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Pagine Dashboard Filament - Best Practices
 
 ## Panoramica
@@ -202,6 +191,7 @@ Il modulo Xot è il modulo core e potrebbe non necessitare di una dashboard trad
 
 - [XotBasePanelProvider](./xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](./filament_integration.md) - Integrazione generale Filament
+- [Best Practices](best-practices.md) - Best practices generali
 - [Best Practices](./best-practices.md) - Best practices generali
 
 ## Collegamenti

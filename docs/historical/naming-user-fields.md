@@ -1,14 +1,3 @@
----
-title: "Convenzione Naming Campi Utente: `first_name` e `last_name`"
-module: "Xot"
-type: concept
-tags: [naming, user, fields]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "naming user fields"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzione Naming Campi Utente: `first_name` e `last_name`
 
 ## Regola Fondamentale

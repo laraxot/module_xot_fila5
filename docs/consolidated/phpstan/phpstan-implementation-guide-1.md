@@ -1,14 +1,3 @@
----
-title: "Guida Pratica all'Implementazione delle Soluzioni PHPStan"
-module: "Xot"
-type: how-to
-tags: [phpstan, implementation, guide, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan implementation guide 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Guida Pratica all'Implementazione delle Soluzioni PHPStan
 
 Questo documento fornisce una guida pratica su come implementare le soluzioni ai problemi più comuni rilevati da PHPStan a livello 9 nel framework Laraxot <nome progetto>.

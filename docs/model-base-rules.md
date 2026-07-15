@@ -1,14 +1,3 @@
----
-title: "Regole di Estensione dei Modelli Laraxot"
-module: "Xot"
-type: rule
-tags: [model, base, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "model base rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole di Estensione dei Modelli Laraxot
 
 ## Regola Fondamentale di Ereditarietà

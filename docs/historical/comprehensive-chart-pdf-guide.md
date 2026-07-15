@@ -1,14 +1,3 @@
----
-title: "Comprehensive Chart and PDF Generation Guide for Laraxot"
-module: "Xot"
-type: how-to
-tags: [comprehensive, chart, pdf, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "comprehensive chart pdf guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Comprehensive Chart and PDF Generation Guide for Laraxot
 
 ## Table of Contents

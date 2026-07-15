@@ -1,14 +1,3 @@
----
-title: "Regole di Namespace"
-module: "Xot"
-type: rule
-tags: [namespace, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "namespace rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole di Namespace
 
 ## Struttura dei Namespace

@@ -1,14 +1,3 @@
----
-title: "⚡ Xot — English presentation"
-module: "Xot"
-type: concept
-tags: [readme, en]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme en"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)

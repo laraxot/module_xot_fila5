@@ -1,14 +1,3 @@
----
-title: "XotBaseRelationManager Typed Property Fix"
-module: "Xot"
-type: concept
-tags: [relation, manager, typed, property]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "relation manager typed property fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseRelationManager Typed Property Fix
 
 ## Problema

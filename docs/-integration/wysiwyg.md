@@ -1,14 +1,3 @@
----
-title: "wysiwyg"
-module: "Xot"
-type: concept
-tags: [wysiwyg]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "wysiwyg"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # wysiwyg
 
 <!-- Contenuto migrato da _docs/wysiwyg.txt -->

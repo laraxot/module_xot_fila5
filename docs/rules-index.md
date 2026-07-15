@@ -1,14 +1,3 @@
----
-title: "Xot Module Rules Index"
-module: "Xot"
-type: rule
-tags: [rules, index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "rules index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module Rules Index
 
 ## Overview

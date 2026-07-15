@@ -1,14 +1,3 @@
----
-title: "PHPStan Fixes Log - Story 8-121"
-module: "Xot"
-type: concept
-tags: [phpstan, fixes, log]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes log"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Fixes Log - Story 8-121
 
 > **Story**: 8-121 - PHPStan Full Compliance (Zero Errors, No Ignoring)
@@ -139,7 +128,6 @@ Baseline 205 → 0. Batch Contracts/Datas/Traits (14), Actions (43), Models/Fila
 Pattern: `BelongsTo<Model&ProfileContract, $this>`, `array<string, mixed>`, `EnumTrait::toArray()` → `array<int|string, string>`.
 
 Chat: `docs/chat/story-287-xot-phpstan-session.md` · Issues: module_xot #32, base #313
-
 ## Fix 2026-06-30: fatal trait collision + tail Modules/
 
 ### Problema 1 — PHPStan non partiva (fatal)

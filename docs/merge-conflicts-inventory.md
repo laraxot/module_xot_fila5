@@ -1,14 +1,3 @@
----
-title: "Merge Conflicts Inventory"
-module: "Xot"
-type: concept
-tags: [merge, conflicts, inventory]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "merge conflicts inventory"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12

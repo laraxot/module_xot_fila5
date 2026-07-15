@@ -1,14 +1,3 @@
----
-title: "Architectural Zen: Reuse over Invention"
-module: "Xot"
-type: concept
-tags: [architectural, principles]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "architectural principles"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Architectural Zen: Reuse over Invention
 
 ## 1. Vision

@@ -1,14 +1,3 @@
----
-title: "Componenti PDF Riutilizzabili"
-module: "Xot"
-type: concept
-tags: [pdf, components]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "pdf components"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Componenti PDF Riutilizzabili
 
@@ -164,7 +153,7 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
-- [README Principale](../readme.md)
+- [README Principale](README.md)
 
 ## Note di Sviluppo
 

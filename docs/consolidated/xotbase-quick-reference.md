@@ -1,14 +1,3 @@
----
-title: "🚀 XotBase Quick Reference"
-module: "Xot"
-type: concept
-tags: [xotbase, quick, reference]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbase quick reference"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🚀 XotBase Quick Reference
 
 ## ⚡ Immediate Action Required

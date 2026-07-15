@@ -1,14 +1,3 @@
----
-title: "Gestione Errori (Best Practice Xot)"
-module: "Xot"
-type: concept
-tags: [error, handling]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "error handling"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Gestione Errori (Best Practice Xot)
 
 ## Errori Comuni e Soluzioni Aggiornati

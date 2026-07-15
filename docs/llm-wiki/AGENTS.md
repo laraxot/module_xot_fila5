@@ -1,14 +1,3 @@
----
-title: "Xot Module LLM Wiki Agent Instructions"
-module: "Xot"
-type: concept
-tags: [AGENTS]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "agents"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

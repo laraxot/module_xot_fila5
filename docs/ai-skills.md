@@ -1,14 +1,3 @@
----
-title: "Ai Skills"
-module: "Xot"
-type: concept
-tags: [ai, skills]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ai skills"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
  # Agent skills nei moduli
 
 ## Scopo

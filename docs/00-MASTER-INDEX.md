@@ -1,14 +1,3 @@
----
-title: "🌐 Laraxot Master Documentation Index"
-module: "Xot"
-type: concept
-tags: [00, MASTER, INDEX]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "00 master index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🌐 Laraxot Master Documentation Index
 
 **Status**: Active / Sanity Layer  

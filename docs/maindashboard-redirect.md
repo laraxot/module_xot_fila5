@@ -1,14 +1,3 @@
----
-title: "Fix Redirect Loop - MainDashboard"
-module: "Xot"
-type: concept
-tags: [maindashboard, redirect]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "maindashboard redirect"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Fix Redirect Loop - MainDashboard
 
 ## Problema Risolto

@@ -1,14 +1,3 @@
----
-title: "Policy base strategy"
-module: "Xot"
-type: rule
-tags: [policy, base, strategy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "policy base strategy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Policy base strategy
 
 ## Obiettivo

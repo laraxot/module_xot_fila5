@@ -1,14 +1,3 @@
----
-title: "Product Requirements Document (PRD) - Xot Module"
-module: "Xot"
-type: concept
-tags: [PRD]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "prd"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot

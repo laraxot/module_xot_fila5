@@ -1,14 +1,3 @@
----
-title: "Architettura Helper Functions - Analisi e Fix"
-module: "Xot"
-type: concept
-tags: [helpers, architecture, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "helpers architecture analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Architettura Helper Functions - Analisi e Fix
 
 ## 🔍 Problema Identificato

@@ -1,14 +1,3 @@
----
-title: "Lang Root Governance"
-module: "Xot"
-type: concept
-tags: [lang, root, governance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang root governance"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Lang Root Governance
 
 ## Regola

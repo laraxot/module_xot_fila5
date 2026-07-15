@@ -1,14 +1,3 @@
----
-title: "XotBaseWizardWidget View Calculation"
-module: "Xot"
-type: concept
-tags: [xotbasewizard, view, calculation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbasewizard view calculation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseWizardWidget View Calculation
 
 ## Overview

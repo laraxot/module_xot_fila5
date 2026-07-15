@@ -1,14 +1,3 @@
----
-title: "Wizard Widget Documentation — Indice Completo"
-module: "Xot"
-type: concept
-tags: [index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 - [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
 
 ## Best Practices

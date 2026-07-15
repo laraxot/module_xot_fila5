@@ -1,14 +1,3 @@
----
-title: "Provider Documentation Index"
-module: "Xot"
-type: concept
-tags: [provider, documentation, index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "provider documentation index"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Provider Documentation Index
 
 **Purpose**: Central index for all ServiceProvider documentation in Laraxot architecture

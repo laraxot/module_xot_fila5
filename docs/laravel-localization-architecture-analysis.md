@@ -1,14 +1,3 @@
----
-title: "Laravel Localization Architecture Analysis"
-module: "Xot"
-type: concept
-tags: [laravel, localization, architecture, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laravel localization architecture analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Laravel Localization Architecture Analysis
 
 ## Critical Discovery: Laravel Localization + Folio Incompatibility

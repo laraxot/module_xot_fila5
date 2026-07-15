@@ -1,14 +1,3 @@
----
-title: "Relazioni Avanzate e Database - Laraxot PTVX"
-module: "Xot"
-type: concept
-tags: [database, advanced, relationships]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "database advanced relationships"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Relazioni Avanzate e Database - Laraxot PTVX
 
 L'architettura database utilizza librerie specializzate per gestire la complessità dei dati senza compromettere le performance.

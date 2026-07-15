@@ -1,14 +1,3 @@
----
-title: "Gestione Domini e Configurazioni"
-module: "Xot"
-type: concept
-tags: [domain, configuration, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "domain configuration 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Gestione Domini e Configurazioni
 
 ## Prerequisiti
@@ -92,7 +81,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 - [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
-- [Documentazione Principale](../../../../docs/readme.md)
+- [Documentazione Principale](README.md)
 - [Standard di Progetto](../../../../docs/standards/readme.md)
 - [Gestione Media](../../media/docs/readme.md)
 - [Gestione UI](../../ui/docs/readme.md)

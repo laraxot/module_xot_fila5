@@ -1,14 +1,3 @@
----
-title: "PSR-4 Autoload Remediation (2026-03-09)"
-module: "Xot"
-type: concept
-tags: [psr4, autoload, remediation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "psr4 autoload remediation"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PSR-4 Autoload Remediation (2026-03-09)
 
 ## Contesto

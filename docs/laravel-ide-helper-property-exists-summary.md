@@ -1,14 +1,3 @@
----
-title: "Summary: laravel-ide-helper e Eliminazione property_exists()"
-module: "Xot"
-type: concept
-tags: [laravel, ide, helper, property]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laravel ide helper property exists summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Summary: laravel-ide-helper e Eliminazione property_exists()
 
 ## Lavoro Completato

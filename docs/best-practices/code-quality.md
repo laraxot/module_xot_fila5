@@ -1,14 +1,3 @@
----
-title: "Code Quality Guidelines for Laravel Modules"
-module: "Xot"
-type: concept
-tags: [code, quality]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview
@@ -74,3 +63,13 @@ This document outlines the best practices for maintaining high code quality with
 - [Naming Conventions](./naming-conventions.md)
 - [Service Provider Best Practices](./service-provider-best-practices.md)
 - [Filament Best Practices](./filament-best-practices.md)
+- [Xot Base Classes](../Xot/project_docs/XOT_BASE_CLASSES.md)
+- [Filament Extension Pattern](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN.md)
+- [Filament Extension Pattern Analysis](../../Notify/project_docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
+- [Patient Module - Namespace Conventions](../../Patient/project_docs/NAMESPACE_CONVENTIONS.md)
+- [Patient Module - Validation Errors](../../Patient/project_docs/VALIDATION_ERRORS.md)
+- [PHP Strict Types](./PHP-STRICT-TYPES.md)
+- [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
+- [Naming Conventions](./NAMING-CONVENTIONS.md)
+- [Service Provider Best Practices](service-provider-best-practices.md)
+- [Filament Best Practices](filament-best-practices.md)

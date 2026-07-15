@@ -1,14 +1,3 @@
----
-title: "Migration Guidelines for Project Modules"
-module: "Xot"
-type: concept
-tags: [migrationlines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migrationlines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migration Guidelines for Project Modules
 
 ## Overview

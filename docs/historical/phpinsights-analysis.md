@@ -1,14 +1,3 @@
----
-title: "Analisi PHPInsights - Tutti i Moduli"
-module: "Xot"
-type: concept
-tags: [phpinsights, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpinsights analysis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi PHPInsights - Tutti i Moduli
 
 **Data**: 2025-12-23

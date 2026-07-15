@@ -1,14 +1,3 @@
----
-title: "Integrazione Folio, Volt e Filament"
-module: "Xot"
-type: concept
-tags: [folio, volt, filament, integration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "folio volt filament integration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Integrazione Folio, Volt e Filament
 
 > **NOTA**: Questo documento è stato unificato con la documentazione sull'architettura Folio + Volt + Filament. Consulta il documento aggiornato nel link sottostante.

@@ -1,14 +1,3 @@
----
-title: "Code Quality Standards - Xot Module"
-module: "Xot"
-type: rule
-tags: [code, quality, standards]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality standards"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code Quality Standards - Xot Module
 
 ## 🎯 Purpose

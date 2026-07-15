@@ -1,14 +1,3 @@
----
-title: "Auto Routes"
-module: "Xot"
-type: concept
-tags: [auto, routes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "auto routes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 /it/tests
 va a prendere il modello "home" e vede se esiste la relazione "tests" se esiste usa quelle, altrimenti
 va a prendere il "singolar" di tests e va nel solito file xra.php

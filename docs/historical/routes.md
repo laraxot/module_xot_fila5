@@ -1,14 +1,3 @@
----
-title: "Route"
-module: "Xot"
-type: concept
-tags: [routes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "routes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Route
 
 ## Configurazione Base

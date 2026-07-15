@@ -1,14 +1,3 @@
----
-title: "Analisi Qualità Codice - Tutti i Moduli (PHPMD)"
-module: "Xot"
-type: concept
-tags: [quality, analysis, all, modules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "quality analysis all modules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Data**: 2025-12-23

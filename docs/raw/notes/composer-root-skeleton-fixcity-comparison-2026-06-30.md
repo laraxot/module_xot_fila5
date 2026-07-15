@@ -1,15 +1,17 @@
 ---
-title: "Confronto composer root FixCity vs Predict"
-type: raw-note
-module: Xot
-created: 2026-06-30
-tags: [composer, nwidart, laravel-modules, fixcity, predict]
-source:
-  - /var/www/_bases/base_fixcity_fila5/laravel/composer.json
-  - /var/www/_bases/base_predict_fila5/laravel/composer.json
+title: "Composer Root Skeleton Fixcity Comparison"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated composer-root-skeleton-fixcity-comparison"
+related:
+  - "./composer-root-skeleton-fixcity-comparison.md"
 ---
+# Composer Root Skeleton Fixcity Comparison
 
-# Confronto composer root FixCity vs Predict
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ## Osservazione FixCity
 

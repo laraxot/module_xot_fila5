@@ -1,14 +1,3 @@
----
-title: "ModelContract"
-module: "Xot"
-type: concept
-tags: [model, contract]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "model contract"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ModelContract
 
 ## Descrizione
@@ -54,7 +43,7 @@ interface ModelContract
 5. Integrazione con Laravel Eloquent
 
 ## Collegamenti
-- [Model Guidelines](../models/readme.md)
-- [Database Guidelines](../database-guidelines.md)
-- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
-- [Contracts Overview](./readme.md)
+- [Model Guidelines](../models/README.md)
+- [Database Guidelines](database-guidelines.md)
+- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+- [Contracts Overview](./README.md)

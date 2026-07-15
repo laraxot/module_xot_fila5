@@ -1,14 +1,3 @@
----
-title: "Log Correzioni PHPStan - Gennaio 2026 (Trinità: Xot, User, UI)"
-module: "Xot"
-type: concept
-tags: [phpstan, fix, log]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fix log"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Log Correzioni PHPStan - Gennaio 2026 (Trinità: Xot, User, UI)
 
 ## 🎯 Obiettivo

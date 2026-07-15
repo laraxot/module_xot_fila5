@@ -1,14 +1,3 @@
----
-title: "Regola Critica: getTableColumns e getTableFilters — chiavi stringhe obbligatorie"
-module: "Xot"
-type: concept
-tags: [gettablecolumns, string, keys]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "gettablecolumns string keys"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regola Critica: getTableColumns e getTableFilters — chiavi stringhe obbligatorie
 
 ## Regola Fondamentale

@@ -1,14 +1,3 @@
----
-title: "PHPStan Audit Completo - 2025-01-27"
-module: "Xot"
-type: concept
-tags: [phpstan, audit]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan audit"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Audit Completo - 2025-01-27
 
 ## Obiettivo

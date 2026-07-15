@@ -1,14 +1,3 @@
----
-title: "Struttura Traduzioni Espansa - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [translation, structure, expanded]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translation structure expanded"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo

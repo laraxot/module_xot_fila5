@@ -1,14 +1,3 @@
----
-title: "Pest PHP Configuration Guide - Laraxot Architecture"
-module: "Xot"
-type: how-to
-tags: [pest, configuration, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "pest configuration guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Pest PHP Configuration Guide - Laraxot Architecture
 
 ## Introduzione

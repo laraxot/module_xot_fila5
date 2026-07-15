@@ -1,14 +1,3 @@
----
-title: "Common Filament Trait Conflicts - Xot Module"
-module: "Xot"
-type: pattern
-tags: [common, filament, traits, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "common filament traits 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica

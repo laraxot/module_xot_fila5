@@ -1,14 +1,3 @@
----
-title: "Product Launch Plan: Xot v1.0"
-module: "Xot"
-type: concept
-tags: [launch, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "launch plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Product Launch Plan: Xot v1.0
 
 ## 🚀 Launch Overview

@@ -1,14 +1,3 @@
----
-title: "List Records in Filament"
-module: "Xot"
-type: concept
-tags: [listrecords]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "listrecords"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # List Records in Filament
 
 > **AGGIORNAMENTO 2025-05-28:**

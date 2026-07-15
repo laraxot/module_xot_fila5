@@ -1,14 +1,3 @@
----
-title: "heretic llm e laraxot"
-module: "Xot"
-type: concept
-tags: [heretic, llm]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "heretic llm"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # heretic llm e laraxot
 
 ## cos'è heretic (sintesi)

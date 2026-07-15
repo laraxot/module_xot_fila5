@@ -1,14 +1,3 @@
----
-title: "Processo Decisionale 'Super Mucca' - La Litigata Interna"
-module: "Xot"
-type: concept
-tags: [ision, making, process, super]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "ision making process super mucca"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Filosofia**: DRY + KISS + Documentazione Prima

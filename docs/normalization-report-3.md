@@ -1,14 +1,3 @@
----
-title: "Report Normalizzazione Documentazione - Gennaio 2025"
-module: "Xot"
-type: concept
-tags: [normalization, report, 3]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "normalization report 3"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Report Normalizzazione Documentazione - Gennaio 2025
 
 ## Azioni Completate

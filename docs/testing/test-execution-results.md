@@ -1,14 +1,3 @@
----
-title: "Test Execution Results - Initial Run"
-module: "Xot"
-type: concept
-tags: [test, execution, results]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "test execution results"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Test Execution Results - Initial Run
 
 ## Summary

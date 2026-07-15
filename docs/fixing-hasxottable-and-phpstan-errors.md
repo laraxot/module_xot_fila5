@@ -1,14 +1,3 @@
----
-title: "Fixing HasXotTable Trait Errors"
-module: "Xot"
-type: concept
-tags: [fixing, hasxottable, phpstan, errors]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "fixing hasxottable and phpstan errors"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Fixing HasXotTable Trait Errors
 
 ## Problem

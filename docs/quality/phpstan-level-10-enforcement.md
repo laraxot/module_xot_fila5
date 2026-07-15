@@ -1,14 +1,3 @@
----
-title: "PHPStan Level 10 Enforcement - Quality Initiative"
-module: "Xot"
-type: concept
-tags: [phpstan, level, 10, enforcement]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level 10 enforcement"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Level 10 Enforcement - Quality Initiative
 
 **Date**: 2025-10-22

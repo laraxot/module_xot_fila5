@@ -1,14 +1,3 @@
----
-title: "Pattern per Riferimenti User - Laraxot"
-module: "Xot"
-type: pattern
-tags: [user, reference, pattern]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "user reference pattern"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Pattern per Riferimenti User - Laraxot
 
 **Data**: 2025-01-10

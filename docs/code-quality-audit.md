@@ -1,14 +1,3 @@
----
-title: "Code Quality Audit Completo - Gennaio 2025"
-module: "Xot"
-type: concept
-tags: [code, quality, audit]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code quality audit"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Code Quality Audit Completo - Gennaio 2025
 
 **Data**: 2025-01-22

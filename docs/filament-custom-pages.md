@@ -1,14 +1,3 @@
----
-title: "Filament Custom Pages - Documentazione Modulo Xot"
-module: "Xot"
-type: concept
-tags: [filament, custom, pages]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament custom pages"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Custom Pages - Documentazione Modulo Xot
 
 ## Overview

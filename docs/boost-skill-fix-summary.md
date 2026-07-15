@@ -1,14 +1,3 @@
----
-title: "Boost Skill Fix Summary - Xot Module"
-module: "Xot"
-type: concept
-tags: [boost, skill, fix, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "boost skill fix summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Boost Skill Fix Summary - Xot Module
 
 **Date**: 2026-03-02  

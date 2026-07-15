@@ -1,14 +1,3 @@
----
-title: "Bugfix Session - 4 Gennaio 2025"
-module: "Xot"
-type: concept
-tags: [bugfix, session, 2]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bugfix session 2"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo

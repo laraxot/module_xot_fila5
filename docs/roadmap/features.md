@@ -1,14 +1,3 @@
----
-title: "Xot Module - Features"
-module: "Xot"
-type: concept
-tags: [features]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "features"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot Module - Features
 
 ## 📋 Table of Contents

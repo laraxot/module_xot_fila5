@@ -1,14 +1,3 @@
----
-title: "phpstan.neon immutabile"
-module: "Xot"
-type: concept
-tags: [phpstan, neon, immutable]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan neon immutable"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # phpstan.neon immutabile
 
 ## Regola critica

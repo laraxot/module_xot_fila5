@@ -1,14 +1,3 @@
----
-title: "Correzioni Critiche PHPMD - Analisi e Piano"
-module: "Xot"
-type: concept
-tags: [phpmd, critical, fixes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpmd critical fixes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Correzioni Critiche PHPMD - Analisi e Piano
 
 **Data**: 2025-12-23

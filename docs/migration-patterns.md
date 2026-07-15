@@ -1,14 +1,3 @@
----
-title: "Migration Patterns & Best Practices"
-module: "Xot"
-type: pattern
-tags: [migration, patterns]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migration Patterns & Best Practices
 
 **Project**: PTVX Fila5 Mono  

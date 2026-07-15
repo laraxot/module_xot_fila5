@@ -1,14 +1,3 @@
----
-title: "Migrazioni - Documentazione Consolidata DRY + KISS"
-module: "Xot"
-type: concept
-tags: [migration, consolidated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "migration consolidated"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Migrazioni - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di migrazione del progetto

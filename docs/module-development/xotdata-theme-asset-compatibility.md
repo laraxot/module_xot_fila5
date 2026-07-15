@@ -1,14 +1,3 @@
----
-title: "XotData Theme Asset Compatibility"
-module: "Xot"
-type: concept
-tags: [xotdata, theme, asset, compatibility]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotdata theme asset compatibility"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotData Theme Asset Compatibility
 
 ## Regola

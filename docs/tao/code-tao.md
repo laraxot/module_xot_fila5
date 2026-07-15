@@ -1,14 +1,3 @@
----
-title: "Il Tao del Codice"
-module: "Xot"
-type: concept
-tags: [code, tao]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "code tao"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Il Tao del Codice
 

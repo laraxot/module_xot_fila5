@@ -1,14 +1,3 @@
----
-title: "PSR-4 Autoload Cleanup (2026-03-09)"
-module: "Xot"
-type: concept
-tags: [psr4, autoload, cleanup]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "psr4 autoload cleanup"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PSR-4 Autoload Cleanup (2026-03-09)
 
 ## Context

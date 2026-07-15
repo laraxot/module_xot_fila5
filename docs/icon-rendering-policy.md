@@ -1,14 +1,3 @@
----
-title: "Icon Rendering Policy"
-module: "Xot"
-type: rule
-tags: [icon, rendering, policy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "icon rendering policy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Icon Rendering Policy
 
 ## Regola

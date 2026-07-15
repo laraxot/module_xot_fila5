@@ -1,14 +1,3 @@
----
-title: "Xot - Product Launch Plan"
-module: "Xot"
-type: concept
-tags: [product, launch, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "product launch plan"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot - Product Launch Plan
 
 > Piano di lancio. Modulo Core Framework.

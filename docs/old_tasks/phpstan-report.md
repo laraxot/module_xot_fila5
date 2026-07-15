@@ -1,14 +1,3 @@
----
-title: "Report PHPStan - Modulo User"
-module: "Xot"
-type: concept
-tags: [phpstan, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan report"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Report PHPStan - Modulo User
 
 ## Stato Attuale

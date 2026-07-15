@@ -1,14 +1,3 @@
----
-title: "Fixing Access Level and Parameter Initialization Issues"
-module: "Xot"
-type: concept
-tags: [access, level, parameter, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "access level parameter fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Fixing Access Level and Parameter Initialization Issues
 
 ## Issue 1: Access Level Mismatch in getTableHeaderActions()

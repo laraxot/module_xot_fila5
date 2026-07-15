@@ -1,14 +1,3 @@
----
-title: "PHP Insights Analysis Report - Xot Module"
-module: "Xot"
-type: concept
-tags: [phpinsights, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpinsights report "
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHP Insights Analysis Report - Xot Module
 
 **Module:** Xot (Core Module)

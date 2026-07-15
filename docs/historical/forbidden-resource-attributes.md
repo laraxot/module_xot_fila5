@@ -1,14 +1,3 @@
----
-title: "Forbidden Attributes in XotBaseResource Classes"
-module: "Xot"
-type: rule
-tags: [forbidden, resource, attributes]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "forbidden resource attributes"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Forbidden Attributes in XotBaseResource Classes
 
 ## Date: 2026-01-09

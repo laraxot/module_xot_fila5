@@ -1,14 +1,3 @@
----
-title: "HandlersRepository"
-module: "Xot"
-type: concept
-tags: [handlers, repository]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "handlers repository"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # HandlersRepository
 
 ## Descrizione
@@ -94,7 +83,7 @@ $repository->addConsoleRenderer(function (\Throwable $e, $output) {
 - Gestire correttamente le eccezioni annidate
 
 ## Collegamenti
-- [Exception Handling Guide](../exception-handling-guide.md)
-- [Error Formatters](../formatters/readme.md)
-- [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
-- [Handlers Overview](./readme.md)
+- [Exception Handling Guide](../EXCEPTION-HANDLING-GUIDE.md)
+- [Error Formatters](../formatters/README.md)
+- [PHPStan Level 9 Guide](phpstan-level9-guide.md)
+- [Handlers Overview](./README.md)

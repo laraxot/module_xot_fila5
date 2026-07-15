@@ -1,14 +1,3 @@
----
-title: "ModelContactContract"
-module: "Xot"
-type: concept
-tags: [model, contact, contract]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "model contact contract"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # ModelContactContract
 
 ## Descrizione

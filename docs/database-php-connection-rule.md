@@ -1,14 +1,3 @@
----
-title: "REGOLA CRITICA: config/database.php"
-module: "Xot"
-type: rule
-tags: [database, php, connection, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "database php connection rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # REGOLA CRITICA: config/database.php
 
 ## NESSUNA connessione hardcoded per i moduli!

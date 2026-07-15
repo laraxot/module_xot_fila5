@@ -1,14 +1,3 @@
----
-title: "Theme System: The 'Vestito' (Clothing) Philosophy"
-module: "Xot"
-type: concept
-tags: [theme, vestito]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "theme vestito"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Theme System: The "Vestito" (Clothing) Philosophy
 
 ## Core Concept: Theme as "Vestito"

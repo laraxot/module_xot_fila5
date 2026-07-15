@@ -1,14 +1,3 @@
----
-title: "PHPStan Perfection Guide"
-module: "Xot"
-type: how-to
-tags: [phpstan, perfection, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan perfection guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Perfection Guide
 
 This guide documents the patterns and strategies used to achieve 100% PHPStan (Level Max) compliance across all Laraxot modules.

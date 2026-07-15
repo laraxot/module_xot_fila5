@@ -1,14 +1,3 @@
----
-title: "OpenCode & GSD — Allineamento Schema Agenti"
-module: "Xot"
-type: concept
-tags: [opencode, gsd, config]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "opencode gsd config"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # OpenCode & GSD — Allineamento Schema Agenti
 
 **Rule type**: infrastructure / config alignment

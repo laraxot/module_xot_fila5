@@ -1,14 +1,3 @@
----
-title: "Panel Provider in Modulo Xot"
-module: "Xot"
-type: concept
-tags: [panel, provider]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "panel provider"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Panel Provider in Modulo Xot
 
 ## XotBaseMainPanelProvider

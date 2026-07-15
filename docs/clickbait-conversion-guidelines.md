@@ -1,14 +1,3 @@
----
-title: "Clickbait & Conversion Guidelines"
-module: "Xot"
-type: how-to
-tags: [clickbait, conversion, guidelines]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "clickbait conversion guidelines"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Clickbait & Conversion Guidelines
 
 ## Overview

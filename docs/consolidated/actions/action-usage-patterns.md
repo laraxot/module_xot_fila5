@@ -1,14 +1,3 @@
----
-title: "Action Usage Patterns - Regole Fondamentali"
-module: "Xot"
-type: pattern
-tags: [action, usage, patterns]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "action usage patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Action Usage Patterns - Regole Fondamentali
 
 ## 🎯 **REGOLA CRITICA: Pattern di Uso delle Action**

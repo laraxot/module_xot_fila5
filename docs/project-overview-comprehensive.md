@@ -1,14 +1,3 @@
----
-title: "🏗️ TechPlanner Fila4 Mono - Panoramica Completa del Progetto"
-module: "Xot"
-type: concept
-tags: [project, overview, comprehensive]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "project overview comprehensive"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🏗️ TechPlanner Fila4 Mono - Panoramica Completa del Progetto
 
 ## 📋 Sommario

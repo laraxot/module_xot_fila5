@@ -2,10 +2,10 @@
 title: "PHPStan Session - Gennaio 2026 - Riepilogo Completo"
 module: "Xot"
 type: concept
-tags: [phpstan, session, january, summary]
+tags: [phpstan, session, january, 2026]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan session january summary"
+qmd: "phpstan session january 2026 summary"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
@@ -255,7 +255,7 @@ Eseguire PHPStan su tutti i moduli, comprendere logica, politica, business logic
 
 ## 📖 Documentazione Aggiornata
 
-- ✅ `Modules/Xot/docs/phpstan-corrections-archive-1.md` - Documentazione completa correzioni
+- ✅ `Modules/Xot/docs/phpstan-corrections-january-2026.md` - Documentazione completa correzioni
 - ✅ `Modules/Xot/docs/phpstan-session-january-2026-summary.md` - Questo file
 
 ---

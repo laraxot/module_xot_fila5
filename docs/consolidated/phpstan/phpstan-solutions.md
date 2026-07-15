@@ -1,14 +1,3 @@
----
-title: "Soluzioni per Errori PHPStan di Livello 9"
-module: "Xot"
-type: concept
-tags: [phpstan, solutions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan solutions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Soluzioni per Errori PHPStan di Livello 9
 
 Questo documento contiene soluzioni comuni per risolvere i vari tipi di errori rilevati da PHPStan a livello 9, con esempi pratici e best practices.

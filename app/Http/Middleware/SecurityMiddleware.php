@@ -32,12 +32,7 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-
-        // Skip security headers for Debugbar routes in local environment
-        // to allow Debugbar to function properly
-        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
-            $this->addSecurityHeaders($response);
-        }
+        $this->addSecurityHeaders($response);
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -49,18 +44,6 @@ class SecurityMiddleware
         $this->enhanceCSRFProtection($request);
 
         return $response;
-    }
-
-    /**
-     * Check if the request is for Debugbar routes.
-     */
-    private function isDebugbarRoute(Request $request): bool
-    {
-        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
-
-        return str_starts_with($request->path(), $debugbarPrefix)
-            || str_starts_with($request->path(), 'vendor/debugbar')
-            || str_contains($request->path(), '_debugbar');
     }
 
     /**
@@ -404,8 +387,6 @@ class SecurityMiddleware
 
     /**
      * Valida input array.
-     *
-     * @param array<array-key, mixed> $value
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -430,8 +411,6 @@ class SecurityMiddleware
 
     /**
      * Ottieni profondità array.
-     *
-     * @param array<array-key, mixed> $array
      */
     private function getArrayDepth(array $array): int
     {

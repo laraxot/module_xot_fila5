@@ -1,14 +1,3 @@
----
-title: "Translation Complete Guide - Consolidated"
-module: "Xot"
-type: how-to
-tags: [translation, complete, guide]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "translation complete guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Translation Complete Guide - Consolidated
 
 ## Overview

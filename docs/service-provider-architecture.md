@@ -1,14 +1,3 @@
----
-title: "Architettura Service Provider in Laraxot/PTVX"
-module: "Xot"
-type: concept
-tags: [service, provider, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "service provider architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Architettura Service Provider in Laraxot/PTVX
 
 ## Panoramica Business Logic

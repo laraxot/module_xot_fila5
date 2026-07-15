@@ -1,14 +1,3 @@
----
-title: "XotBasePage InteractsWithForms Conflict Fix"
-module: "Xot"
-type: concept
-tags: [xotbasepage, interactswithforms, fix]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbasepage interactswithforms fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBasePage InteractsWithForms Conflict Fix
 
 ## Data: Febbraio 2026

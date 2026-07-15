@@ -1,14 +1,3 @@
----
-title: "Data Objects in Laraxot"
-module: "Xot"
-type: concept
-tags: [data, objects]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "data objects"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Data Objects in Laraxot
 

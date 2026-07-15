@@ -1,14 +1,3 @@
----
-title: "Filament Nested Resources: Stato in v5.x"
-module: "Xot"
-type: concept
-tags: [filament, nested, resources, v5]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament nested resources v5 status"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament Nested Resources: Stato in v5.x
 
 ## Scoperta Critica: Filament 5.x NON Supporta Nested Resources

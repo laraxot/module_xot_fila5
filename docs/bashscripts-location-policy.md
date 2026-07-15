@@ -1,14 +1,3 @@
----
-title: "Policy Posizione Script Bash (VINCOLANTE)"
-module: "Xot"
-type: rule
-tags: [bashscripts, location, policy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bashscripts location policy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Policy Posizione Script Bash (VINCOLANTE)
 
 ## 🚫 Regola Assoluta
@@ -156,7 +145,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 ## 📚 Collegamenti
 
 - [Laraxot Architecture](./architecture.md)
-- [Project Structure Guidelines](./project-structure.md)
+- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---

@@ -1,14 +1,3 @@
----
-title: "Convenzioni di Naming per i Test - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [naming, conventions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "naming conventions"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Convenzioni di Naming per i Test - Modulo Xot
 
 ## Riferimento Principale

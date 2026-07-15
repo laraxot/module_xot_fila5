@@ -1,14 +1,3 @@
----
-title: "Action Execution and Dependency Injection Rules in Laraxot"
-module: "Xot"
-type: rule
-tags: [01, standard, patterns]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "01 standard patterns"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Action Execution and Dependency Injection Rules in Laraxot
 
 This document details mandatory rules and best practices for executing Spatie Queueable Actions and managing dependency injection within business logic classes, especially Actions. Adherence to these guidelines is crucial for maintaining architectural consistency, testability, queueability, and aligning with the Laraxot philosophy.

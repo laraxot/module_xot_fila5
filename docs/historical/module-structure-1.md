@@ -1,14 +1,3 @@
----
-title: "Struttura dei Moduli in il progetto"
-module: "Xot"
-type: concept
-tags: [module, structure, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module structure 1"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Struttura dei Moduli in il progetto
 
 ## Panoramica
@@ -47,8 +36,8 @@ ModuleName/
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
-- [Case Sensitivity](./DIRECTORY-CASE-SENSITIVITY.md) - Regole per la case sensitivity
-- [Namespace Rules](./NAMESPACE-RULES.md) - Regole per i namespace
+- [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
+- [Namespace Rules](namespace-rules.md) - Regole per i namespace
 
 ### Moduli Collegati
 - [UI](../UI/docs/README.md) - Componenti di interfaccia

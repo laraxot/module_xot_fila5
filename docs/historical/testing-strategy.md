@@ -1,14 +1,3 @@
----
-title: "Testing Strategy: MySQL-Based Testing Without RefreshDatabase"
-module: "Xot"
-type: concept
-tags: [testing, strategy]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing strategy"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Testing Strategy: MySQL-Based Testing Without RefreshDatabase
 
 ## Overview

@@ -1,14 +1,3 @@
----
-title: "XotBasePlaceholder Component"
-module: "Xot"
-type: concept
-tags: [xot, base, placeholder]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base placeholder"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBasePlaceholder Component
 
 ## Obiettivo

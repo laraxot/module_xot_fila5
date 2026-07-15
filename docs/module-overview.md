@@ -1,14 +1,3 @@
----
-title: "Xot module overview"
-module: "Xot"
-type: concept
-tags: [module, overview]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "module overview"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Xot module overview
 
 ## Scopo ("perché esiste")

@@ -1,14 +1,3 @@
----
-title: "🧠 Comprensione Business Logic dei Moduli TechPlanner"
-module: "Xot"
-type: concept
-tags: [business, logic, understanding]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "business logic understanding"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🧠 Comprensione Business Logic dei Moduli TechPlanner
 
 ## Panoramica

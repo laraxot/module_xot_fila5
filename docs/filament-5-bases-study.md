@@ -1,14 +1,3 @@
----
-title: "Filament 5 Bases Study (2026-03-02)"
-module: "Xot"
-type: concept
-tags: [filament, 5, bases, study]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 5 bases study"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament 5 Bases Study (2026-03-02)
 
 ## Scope

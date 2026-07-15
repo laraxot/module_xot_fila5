@@ -1,14 +1,3 @@
----
-title: "Risoluzione Conflitto in ExportXlsByCollection"
-module: "Xot"
-type: concept
-tags: [exportxlsbycollection]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "exportxlsbycollection"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 
 # Risoluzione Conflitto in ExportXlsByCollection
 

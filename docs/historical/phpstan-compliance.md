@@ -1,14 +1,3 @@
----
-title: "PHPStan Compliance - Xot Module"
-module: "Xot"
-type: concept
-tags: [phpstan, compliance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan compliance"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Compliance - Xot Module
 
 ## 📚 Documentazione Correlata

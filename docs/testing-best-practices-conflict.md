@@ -1,14 +1,3 @@
----
-title: "Testing Best Practices - Laraxot Framework"
-module: "Xot"
-type: concept
-tags: [testing, best, practices, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing best practices conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**

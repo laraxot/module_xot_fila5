@@ -1,14 +1,3 @@
----
-title: "📖 Letture Essenziali - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [essential, reading]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "essential reading"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 📖 Letture Essenziali - Modulo Xot
 
 > **10 documenti fondamentali** da leggere per comprendere il modulo core Xot

@@ -1,14 +1,3 @@
----
-title: "XotBaseResourceTable: Static Method Context Bug Fix"
-module: "Xot"
-type: concept
-tags: [xot, base, resource, table]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xot base resource table fix"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseResourceTable: Static Method Context Bug Fix
 
 **Data:** 2026-05-26  

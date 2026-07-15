@@ -1,14 +1,3 @@
----
-title: "Configurazione MCP per Claude Code"
-module: "Xot"
-type: concept
-tags: [mcp, claude, code, configuration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp claude code configuration"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Configurazione MCP per Claude Code
 
 ## Panoramica

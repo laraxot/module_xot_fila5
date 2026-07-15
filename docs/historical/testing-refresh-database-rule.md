@@ -1,14 +1,3 @@
----
-title: "Critical Rule: Never Use RefreshDatabase Trait"
-module: "Xot"
-type: rule
-tags: [testing, refresh, database, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing refresh database rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Critical Rule: Never Use RefreshDatabase Trait
 
 ## Overview

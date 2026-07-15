@@ -1,14 +1,3 @@
----
-title: "Autoload Configuration Standard"
-module: "Xot"
-type: rule
-tags: [autoload, configuration, standard]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "autoload configuration standard"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Autoload Configuration Standard
 
 ## Overview

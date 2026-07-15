@@ -1,14 +1,3 @@
----
-title: "PHPStan Fixes Progress - Modulo Xot"
-module: "Xot"
-type: concept
-tags: [phpstan, fixes, progress]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes progress"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Fixes Progress - Modulo Xot
 
 ## Sessione di Correzione - Ottobre 2025

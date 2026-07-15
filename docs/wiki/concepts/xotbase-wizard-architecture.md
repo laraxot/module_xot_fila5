@@ -1,14 +1,3 @@
----
-title: "XotBaseWizardWidget Architecture - Zen Philosophy"
-module: "Xot"
-type: concept
-tags: [xotbase, wizard, architecture]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbase wizard architecture"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseWizardWidget Architecture - Zen Philosophy
 
 **Date:** 2026-05-05

@@ -1,14 +1,3 @@
----
-title: "Regole di Ereditarietà dei Modelli - Laraxot PTVX"
-module: "Xot"
-type: rule
-tags: [model, inheritance, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "model inheritance rules"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regole di Ereditarietà dei Modelli - Laraxot PTVX
 
 ## Principio Fondamentale

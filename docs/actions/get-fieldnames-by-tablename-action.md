@@ -1,14 +1,3 @@
----
-title: "GetFieldnamesByTablenameAction"
-module: "Xot"
-type: concept
-tags: [get, fieldnames, by, tablename]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "get fieldnames by tablename action"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # GetFieldnamesByTablenameAction
 
 Questa action è responsabile del recupero dei nomi dei campi di una tabella del database.

@@ -1,14 +1,3 @@
----
-title: "Filament"
-module: "Xot"
-type: concept
-tags: [readme]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "readme"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Filament
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.

@@ -1,14 +1,3 @@
----
-title: "Pwa"
-module: "Xot"
-type: concept
-tags: [pwa]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "pwa"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/
 https://devcoffee-pwa.netlify.app/
 

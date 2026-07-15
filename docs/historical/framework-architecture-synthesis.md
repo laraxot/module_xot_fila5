@@ -1,14 +1,3 @@
----
-title: "Sintesi: Applicazione dei Principi Architetturali ai Moduli LaravelPizza"
-module: "Xot"
-type: concept
-tags: [framework, architecture, synthesis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "framework architecture synthesis"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Sintesi: Applicazione dei Principi Architetturali ai Moduli LaravelPizza
 
 ## Introduzione

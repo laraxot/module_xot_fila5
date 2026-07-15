@@ -1,14 +1,3 @@
----
-title: "Regola `getPages()` ridondante su `XotBaseResource`"
-module: "Xot"
-type: rule
-tags: [getpages, redundancy, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "getpages redundancy rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Regola `getPages()` ridondante su `XotBaseResource`
 
 ## Scopo

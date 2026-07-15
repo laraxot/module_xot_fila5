@@ -1,14 +1,3 @@
----
-title: "nWidart/laravel-modules - Guida Completa"
-module: "Xot"
-type: how-to
-tags: [nwidart, laravel, modules, complete]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "nwidart laravel modules complete guide"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # nWidart/laravel-modules - Guida Completa
 
 **Data Creazione:** Gennaio 2026  

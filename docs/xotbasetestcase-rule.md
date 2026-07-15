@@ -1,14 +1,3 @@
----
-title: "XotBaseTestCase - Testing Architecture Rule"
-module: "Xot"
-type: rule
-tags: [xotbasetestcase, rule]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "xotbasetestcase rule"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # XotBaseTestCase - Testing Architecture Rule
 
 ## Regola Fondamentale

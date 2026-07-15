@@ -1,14 +1,3 @@
----
-title: "MCP (Management Control Panel) Tools for Database Analysis"
-module: "Xot"
-type: concept
-tags: [mcpatabase, tools]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcpatabase tools"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview

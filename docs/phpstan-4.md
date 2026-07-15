@@ -1,14 +1,3 @@
----
-title: "PHPStan Analysis Report - 18 Agosto 2025"
-module: "Xot"
-type: concept
-tags: [phpstan, 4]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan 4"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

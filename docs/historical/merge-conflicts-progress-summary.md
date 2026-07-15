@@ -1,14 +1,3 @@
----
-title: "Summary Progresso Risoluzione Merge Conflicts"
-module: "Xot"
-type: concept
-tags: [merge, conflicts, progress, summary]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "merge conflicts progress summary"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Data**: 2025-01-22

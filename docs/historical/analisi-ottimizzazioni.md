@@ -1,14 +1,3 @@
----
-title: "🔧 analisi e ottimizzazioni - modulo xot (core)"
-module: "Xot"
-type: concept
-tags: [analisi, ottimizzazioni]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "analisi ottimizzazioni"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🔧 analisi e ottimizzazioni - modulo xot (core)
 
 ## 🎯 panoramica analisi

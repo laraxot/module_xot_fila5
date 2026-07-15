@@ -1,14 +1,3 @@
----
-title: "Submit Button Placement — La Filosofia del Protocollo"
-module: "Xot"
-type: concept
-tags: [submit, button, placement]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "submit button placement"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # Submit Button Placement — La Filosofia del Protocollo
 
 **Status**: Active  

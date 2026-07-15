@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-<<<<<<< HEAD
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Tabs\Tab;
@@ -12,9 +11,9 @@ use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str;
 
-class XotBaseResourceInfolist
+abstract class XotBaseResourceInfolist
 {
-    public static function configure(Schema $schema): Schema
+    final public static function configure(Schema $schema): Schema
     {
         $components = static::getInfolistSchema();
 
@@ -32,7 +31,7 @@ class XotBaseResourceInfolist
     }
 
     /**
-     * @return array<string, Entry>
+     * @return array<string, Entry|Component>
      *
      * ⚠️ REGOLA: l'array NON può essere vuoto!
      * Per determinare i campi corretti:
@@ -41,10 +40,7 @@ class XotBaseResourceInfolist
      * 3. Consultare $fillable nel model
      * 4. Usare i campi reali del database, NON inventare campi
      */
-    public static function getInfolistSchema(): array
-    {
-        return [];
-    }
+    abstract public static function getInfolistSchema(): array;
 
     /**
      * @param array<int|string, Component|Htmlable|string> $schema
@@ -71,20 +67,4 @@ class XotBaseResourceInfolist
 
         return $tab;
     }
-=======
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Schema;
-
-abstract class XotBaseResourceInfolist
-{
-    final public static function configure(Schema $schema): Schema
-    {
-        return $schema->components(static::getInfolistSchema());
-    }
-
-    /**
-     * @return array<string, Component>
-     */
-    abstract public static function getInfolistSchema(): array;
->>>>>>> 40b96bcd6 (.)
 }

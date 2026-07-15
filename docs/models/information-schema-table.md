@@ -1,14 +1,3 @@
----
-title: "InformationSchemaTable"
-module: "Xot"
-type: concept
-tags: [information, schema, table]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "information schema table"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # InformationSchemaTable
 
 ## Descrizione
@@ -55,4 +44,8 @@ class InformationSchemaTable extends Model
 - [Database Guidelines](../database-guidelines.md)
 - [Schema Documentation](../directory-structure-guide.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
-- [Model Best Practices](../models/readme.md)
+- [Model Best Practices](README.md)
+- [Database Guidelines](database-guidelines.md)
+- [Schema Documentation](directory-structure-guide.md)
+- [PHPStan Level 9 Guide](phpstan-level9-guide.md)
+- [Model Best Practices](../models/README.md)

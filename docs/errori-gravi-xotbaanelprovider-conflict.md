@@ -1,14 +1,3 @@
----
-title: "🚨 ERRORI GRAVI COMMESSI IN XotBasePanelProvider.php"
-module: "Xot"
-type: concept
-tags: [errori, gravi, xotbaanelprovider, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "errori gravi xotbaanelprovider conflict"
-related:
-  - "./eloquent-magic-properties-rule.md"
----
 # 🚨 ERRORI GRAVI COMMESSI IN XotBasePanelProvider.php
 
 ## ANALISI DEGLI ERRORI COMMESSI
