@@ -403,12 +403,6 @@ parameters:
 			path: app/Database/Migrations/XotBaseMigration.php
 
 		-
-			message: '#^Trait Modules\\Xot\\Datas\\Concerns\\MetatagDataBrandThemeAccessors is used zero times and is not analysed\.$#'
-			identifier: trait.unused
-			count: 1
-			path: app/Datas/Concerns/MetatagDataBrandThemeAccessors.php
-
-		-
 			message: '#^Trait Modules\\Xot\\Datas\\Concerns\\XotDataProfileThemeAccessors is used zero times and is not analysed\.$#'
 			identifier: trait.unused
 			count: 1
