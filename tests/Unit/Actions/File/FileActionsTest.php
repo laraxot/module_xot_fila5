@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
+use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
@@ -20,10 +21,11 @@ test('fix path action works', function (): void {
 
 test('view path action works', function (): void {
     // Replace GetViewNameSpacePathAction with a spy that returns test path
-    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
+    $getViewNameSpacePathAction = new class() extends GetViewNameSpacePathAction
+    {
         public function execute(string $namespace): string
         {
-            return 'test_ns' === $namespace ? '/view/path' : '';
+            return $namespace === 'test_ns' ? '/view/path' : '';
         }
     };
 
@@ -42,7 +44,7 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-            return 'test_module' === $module ? '/module/path/' : '';
+            return $module === 'test_module' ? '/module/path/' : '';
         },
     ]);
 

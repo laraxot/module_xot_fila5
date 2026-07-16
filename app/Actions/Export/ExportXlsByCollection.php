@@ -26,10 +26,10 @@ class ExportXlsByCollection
     /**
      * Esporta una collezione in Excel.
      *
-     * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $collection La collezione da esportare
-     * @param string                                                       $filename   Nome del file Excel
-     * @param string|null                                                  $transKey   Chiave di traduzione per i campi
-     * @param array<int, string>                                           $fields     Campi da includere nell'export
+     * @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $collection  La collezione da esportare
+     * @param  string  $filename  Nome del file Excel
+     * @param  string|null  $transKey  Chiave di traduzione per i campi
+     * @param  array<int, string>  $fields  Campi da includere nell'export
      */
     public function execute(
         Collection|EloquentCollection $collection,
@@ -57,10 +57,9 @@ class ExportXlsByCollection
     /**
      * Esporta una collezione in Excel utilizzando PhpSpreadsheet direttamente.
      *
-     * @param Collection<int|string, mixed>|EloquentCollection<int, Model> $rows     La collezione da esportare
-     * @param array<int, string>                                           $fields   Campi da includere nell'export
-     * @param string                                                       $filename Nome del file Excel
-     *
+     * @param  Collection<int|string, mixed>|EloquentCollection<int, Model>  $rows  La collezione da esportare
+     * @param  array<int, string>  $fields  Campi da includere nell'export
+     * @param  string  $filename  Nome del file Excel
      * @return string Il percorso del file generato
      */
     public function executeWithSpreadsheet(Collection|EloquentCollection $rows, array $fields, string $filename): string
@@ -85,8 +84,8 @@ class ExportXlsByCollection
     /**
      * Scrive l'intestazione nel foglio Excel.
      *
-     * @param Worksheet          $sheet  Il foglio Excel
-     * @param array<int, string> $fields I campi da utilizzare come intestazioni
+     * @param  Worksheet  $sheet  Il foglio Excel
+     * @param  array<int, string>  $fields  I campi da utilizzare come intestazioni
      */
     protected function writeHeader(Worksheet $sheet, array $fields): void
     {
@@ -98,9 +97,9 @@ class ExportXlsByCollection
     /**
      * Scrive le righe nel foglio di lavoro.
      *
-     * @param Worksheet                     $sheet  Il foglio di lavoro
-     * @param Collection<int|string, mixed> $rows   I dati da scrivere
-     * @param array<int, string>            $fields I campi da utilizzare per le colonne
+     * @param  Worksheet  $sheet  Il foglio di lavoro
+     * @param  Collection<int|string, mixed>  $rows  I dati da scrivere
+     * @param  array<int, string>  $fields  I campi da utilizzare per le colonne
      */
     protected function writeRows(Worksheet $sheet, Collection $rows, array $fields): void
     {
@@ -110,16 +109,15 @@ class ExportXlsByCollection
                 $value = $this->extractValue($data, $field);
                 $sheet->setCellValue(Coordinate::stringFromColumnIndex($col + 1).(string) $row, $value);
             }
-            ++$row;
+            $row++;
         }
     }
 
     /**
      * Estrae il valore da un oggetto o array usando il campo specificato.
      *
-     * @param mixed  $data  I dati da cui estrarre il valore
-     * @param string $field Il campo da estrarre
-     *
+     * @param  mixed  $data  I dati da cui estrarre il valore
+     * @param  string  $field  Il campo da estrarre
      * @return mixed Il valore estratto
      */
     protected function extractValue(mixed $data, string $field): mixed
@@ -131,8 +129,7 @@ class ExportXlsByCollection
     /**
      * Converte EloquentCollection in Support\Collection mantenendo i dati.
      *
-     * @param EloquentCollection<int, Model> $eloquentCollection
-     *
+     * @param  EloquentCollection<int, Model>  $eloquentCollection
      * @return Collection<int, mixed>
      */
     protected function convertToSupportCollection(EloquentCollection $eloquentCollection): Collection

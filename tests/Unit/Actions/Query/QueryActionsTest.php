@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Illuminate\Support\Facades\DB;
 use Modules\Xot\Actions\Query\StartQueryLogAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('start query log action works', function (): void {

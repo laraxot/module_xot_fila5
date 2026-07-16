@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use Composer\Autoload\ClassLoader;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -26,10 +27,9 @@ use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\View\Composers\XotComposer;
+use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
-
-use Webmozart\Assert\Assert;
 
 /**
  * Class XotServiceProvider.
@@ -84,7 +84,7 @@ class XotServiceProvider extends XotBaseServiceProvider
 
         $loader = require $autoloadPath;
 
-        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
+        if (! $loader instanceof ClassLoader) {
             return;
         }
 
@@ -176,12 +176,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-            if ('php' !== $file->getExtension()) {
+            if ($file->getExtension() !== 'php') {
                 continue;
             }
 
             $realPath = $file->getRealPath();
-            if (false === $realPath) {
+            if ($realPath === false) {
                 continue;
             }
 

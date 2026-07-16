@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\Theme\GetThemeAction;
 use Modules\Xot\Actions\Theme\GetThemePathAction;
 use Modules\Xot\Actions\Theme\IsThemeAction;
 use Modules\Xot\Actions\Theme\SetThemeAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 it('sets and gets theme', function (): void {

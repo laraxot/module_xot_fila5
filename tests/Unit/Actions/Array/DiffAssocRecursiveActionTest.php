@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Actions\Array\DiffAssocRecursiveAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('diff assoc recursive action works correctly', function () {

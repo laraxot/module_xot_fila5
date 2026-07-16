@@ -10,6 +10,8 @@ namespace Modules\Xot\Filament\Actions\Table;
 
 use Filament\Actions\Action;
 use Filament\Resources\RelationManagers\RelationManager;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -38,11 +40,11 @@ class ExportXlsTableAction extends Action
                 $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
-                if (null === $query) {
+                if ($query === null) {
                     throw new \Exception('Query is null');
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
-                /** @var \Illuminate\Database\Eloquent\Builder<\Illuminate\Database\Eloquent\Model> $eloquentQuery */
+                /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
                 /** @var array<int, string> $fields */

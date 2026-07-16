@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\fopen;
@@ -23,7 +24,8 @@ it('casts various values to array correctly', function (): void {
     $obj->c = 3;
     Assert::assertSame(['c' => 3], $action->execute($obj));
     // Object with toArray
-    $objToArray = new class {
+    $objToArray = new class()
+    {
         /** @return array<string, int> */
         public function toArray(): array
         {
@@ -32,7 +34,8 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['d' => 4], $action->execute($objToArray));
     // Object with __toArray
-    $objUnderscoreToArray = new class {
+    $objUnderscoreToArray = new class()
+    {
         /** @return array<string, int> */
         public function __toArray(): array
         {
@@ -41,7 +44,8 @@ it('casts various values to array correctly', function (): void {
     };
     Assert::assertSame(['e' => 5], $action->execute($objUnderscoreToArray));
     // Regular object (public properties)
-    $regObj = new class {
+    $regObj = new class()
+    {
         public int $f = 6;
     };
     Assert::assertSame(['f' => 6], $action->execute($regObj));

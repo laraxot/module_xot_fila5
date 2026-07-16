@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -14,8 +15,9 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class XotBaseModel extends EloquentModel
 {
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
+
     use RelationX;
     use Updater;
 

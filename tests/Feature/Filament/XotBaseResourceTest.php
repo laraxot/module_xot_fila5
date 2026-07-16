@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Filament\Resources\Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('xot base resource extends filament resource', function (): void {

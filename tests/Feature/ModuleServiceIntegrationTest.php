@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\ModuleAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 describe('ModuleAction Integration', function () {
-    beforeEach(function () {
-    });
+    beforeEach(function () {});
 
     it('integrates with Nwidart Modules system', function () {
         Assert::assertTrue(class_exists('Nwidart\Modules\Facades\Module'));
@@ -200,7 +200,7 @@ describe('ModuleAction Integration', function () {
     it('handles concurrent access correctly', function () {
         // Test multiple simultaneous calls
         $results = [];
-        for ($i = 0; $i < 3; ++$i) {
+        for ($i = 0; $i < 3; $i++) {
             $service = new ModuleAction('Xot');
             $results[] = $service->getModels();
         }

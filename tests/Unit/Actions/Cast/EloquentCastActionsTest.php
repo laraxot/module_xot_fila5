@@ -2,14 +2,16 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('safe array by model cast action works', function () {
-    $model = new class extends XotBaseModel {
+    $model = new class() extends XotBaseModel
+    {
         protected $attributes = [
             'id' => 1,
             'name' => 'Test',
@@ -25,7 +27,8 @@ test('safe array by model cast action works', function () {
 });
 
 test('safe attribute cast action works', function () {
-    $model = new class extends XotBaseModel {
+    $model = new class() extends XotBaseModel
+    {
         protected $attributes = [
             'str' => 'test',
             'int' => 123,

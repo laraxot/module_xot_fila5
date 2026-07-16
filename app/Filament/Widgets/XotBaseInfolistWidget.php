@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 
@@ -31,7 +33,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
-     * @return array<int|string, \Filament\Schemas\Components\Component|\Illuminate\Contracts\Support\Htmlable|string>
+     * @return array<int|string, Component|Htmlable|string>
      */
     abstract protected function getInfolistSchema(): array;
 
@@ -40,7 +42,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     public function infolist(Schema $schema): Schema
     {
         $record = $this->getInfolistRecord();
-        if (null !== $record) {
+        if ($record !== null) {
             $schema->record($record);
         }
 

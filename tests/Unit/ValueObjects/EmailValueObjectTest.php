@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
+uses(TestCase::class);
+use Modules\Xot\Tests\TestCase;
 use Modules\Xot\ValueObjects\EmailValueObject;
 use PHPUnit\Framework\Assert;
 
@@ -12,5 +13,4 @@ it('accepts valid email', function (): void {
     Assert::assertSame($email, $vo->email);
 });
 
-it('throws on invalid email', function (): void {
-});
+it('throws on invalid email', function (): void {});
