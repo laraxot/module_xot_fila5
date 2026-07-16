@@ -196,7 +196,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         }
     }
 
-
     protected function registerPublicAssets(): void
     {
         if ('' === $this->name) {
@@ -212,8 +211,6 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $destinationPath = public_path(
             'assets/'.$this->nameLower
         );
-
-        
 
         $this->publishes(
             [
