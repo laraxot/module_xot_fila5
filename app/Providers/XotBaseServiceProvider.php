@@ -44,6 +44,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         $this->registerLivewireComponents();
         $this->registerBladeComponents();
         $this->registerCommands();
+        $this->registerPublicAssets();
     }
 
     public function register(): void
@@ -193,5 +194,35 @@ abstract class XotBaseServiceProvider extends ServiceProvider
         } catch (\Throwable $e) {
             // Ignore config registration failures for optional module config.
         }
+    }
+
+
+    protected function registerPublicAssets(): void
+    {
+        if ('' === $this->name) {
+            throw new \Exception('name is empty on ['.static::class.']');
+        }
+
+        $sourcePath = module_path($this->name, 'public');
+
+        if (! File::isDirectory($sourcePath)) {
+            return;
+        }
+
+        $destinationPath = public_path(
+            'assets/'.$this->nameLower
+        );
+
+        
+
+        $this->publishes(
+            [
+                $sourcePath => $destinationPath,
+            ],
+            [
+                'module-assets',
+                $this->nameLower.'-assets',
+            ],
+        );
     }
 }

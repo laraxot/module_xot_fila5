@@ -49,12 +49,15 @@ trait TransFuncTrait
             /** @var array<string, mixed>|Translator|string $trans */
             $trans = trans($key);
         } catch (\TypeError $e) {
+            /*
             dddx([
                 'e' => $e,
                 'key' => $key,
             ]);
+            */
+            return 'fix:'.$key;
 
-            return null;
+            //return null;
         }
 
         if ($key !== $trans) {

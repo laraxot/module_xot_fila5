@@ -90,14 +90,29 @@ abstract class XotBaseMigration extends LaravelMigration
 
     public function getConn(): Builder
     {
+        return Schema::connection($this->resolveConnectionName());
+    }
+
+    /**
+     * Resolve the model's connection name, falling back to the default
+     * connection when it points at the optional 'user' connection but that
+     * connection has no configured database (see config/database.php: the
+     * 'user' connection's placeholder defaults were removed so this
+     * getDatabaseName() check is meaningful instead of always-truthy).
+     * Shared by getConn() and getConnection() so Laravel's Migrator — which
+     * calls getConnection() directly to decide transaction wrapping — gets
+     * the same fallback instead of eagerly connecting to 'user'.
+     */
+    private function resolveConnectionName(): string
+    {
         $connectionName = $this->model->getConnectionName();
-        // 如果连接名是 'user' 但数据库不存在，使用默认连接
         if ('user' === $connectionName && ! DB::connection($connectionName)->getDatabaseName()) {
             $default = config('database.default');
-            $connectionName = is_string($default) ? $default : 'mariadb';
+
+            return is_string($default) ? $default : 'mariadb';
         }
 
-        return Schema::connection($connectionName);
+        return $connectionName ?? 'mariadb';
     }
 
     /**
@@ -373,14 +388,13 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
-     * Get the migration connection name.
-     */
-    /**
-     * Get the migration connection name.
+     * Get the migration connection name. Laravel's Migrator calls this
+     * directly to decide transaction wrapping, so it must apply the same
+     * 'user'-connection fallback as getConn() — see resolveConnectionName().
      */
     public function getConnection(): ?string
     {
-        return $this->model->getConnectionName();
+        return $this->resolveConnectionName();
     }
 
     /**

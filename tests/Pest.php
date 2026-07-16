@@ -7,3 +7,5 @@ declare(strict_types=1);
  * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
  * Ogni file test dichiara uses(Modules\Xot\Tests\TestCase::class).
  */
+
+require_once __DIR__.'/PestStubs.php';

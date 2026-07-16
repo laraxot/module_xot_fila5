@@ -8,16 +8,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
-use Filament\Actions\Action;
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
-class ExportXlsTableAction extends Action
+class ExportXlsTableAction extends XotBaseAction
 {
     protected function setUp(): void
     {
@@ -40,7 +40,7 @@ class ExportXlsTableAction extends Action
                 $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
-                if (null === $query) {
+                if ($query === null) {
                     throw new \Exception('Query is null');
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
