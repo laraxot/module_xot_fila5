@@ -2,13 +2,14 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\fopen;
+
+uses(TestCase::class);
 
 it('casts various values to array correctly', function (): void {
     $action = app(SafeArrayCastAction::class);

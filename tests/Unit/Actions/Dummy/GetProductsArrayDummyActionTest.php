@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\Http;
 use Modules\Xot\Actions\Dummy\GetProductsArrayDummyAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('maps only expected keys for each product', function (): void {
     Http::fake([

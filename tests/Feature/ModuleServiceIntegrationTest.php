@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\ModuleAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('ModuleAction Integration', function () {
     beforeEach(function () {

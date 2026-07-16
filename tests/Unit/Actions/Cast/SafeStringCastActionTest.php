@@ -2,10 +2,11 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('casts various values to string correctly', function (): void {
     $action = app(SafeStringCastAction::class);

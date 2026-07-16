@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\Artisan;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('can create a test module', function () {
     $module = ModuleFactory::new()->createOne([

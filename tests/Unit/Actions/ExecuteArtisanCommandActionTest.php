@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Process;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('executes allowed artisan command correctly', function (): void {
     Event::fake();

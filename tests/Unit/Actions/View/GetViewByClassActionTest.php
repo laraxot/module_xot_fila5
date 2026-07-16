@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('converts class names to view names correctly', function (): void {
     $action = app(GetViewByClassAction::class);

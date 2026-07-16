@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -11,6 +10,8 @@ use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('fix path action works', function (): void {
     $action = app(FixPathAction::class);

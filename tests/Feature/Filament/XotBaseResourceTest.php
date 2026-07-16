@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Filament\Resources\Resource;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('xot base resource extends filament resource', function (): void {
     Assert::assertInstanceOf(Resource::class, new NavigationProbeResource());

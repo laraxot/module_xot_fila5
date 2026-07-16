@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\GetModelByModelTypeAction;
@@ -13,6 +12,8 @@ use Modules\Xot\Tests\Fixtures\DemoModel;
 use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('gets model class by model type from morph map', function (): void {
     config()->set('morph_map', ['demo' => DemoModel::class]);

@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Tests\TestCase;
@@ -10,6 +9,8 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 use function Safe\tempnam;
+
+uses(TestCase::class);
 
 test('save array action saves as php by default', function () {
     $data = ['foo' => 'bar'];

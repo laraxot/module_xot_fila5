@@ -2,13 +2,14 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Module\GetModuleNameByClassAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelAction;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('extracts module name from class and model class', function (): void {
     $byClass = app(GetModuleNameByClassAction::class)->execute('Modules\\Cms\\Models\\Page');

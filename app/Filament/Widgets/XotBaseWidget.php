@@ -65,7 +65,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      * Schema del form del widget. Vuoto di default per i widget senza form
      * (es. widget di sola visualizzazione); i widget con form lo sovrascrivono.
      *
-     * @return array<int, mixed>
+     * @return array<Htmlable|string>
      */
     public function getFormSchema(): array
     {
