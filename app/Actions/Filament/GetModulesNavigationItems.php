@@ -38,7 +38,6 @@ class GetModulesNavigationItems
         $navs = [];
 
         $modules = app(GetTenantModulesAction::class)->execute();
-        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
         // Pre-load user roles to avoid N+1 queries
         /** @var Authenticatable|null $user */
         $user = Auth::user();
@@ -142,7 +141,6 @@ class GetModulesNavigationItems
     public function getCachedModuleConfigs(): array
     {
         $modules = app(GetTenantModulesAction::class)->execute();
-        // app(GetTenantModulesAction::class)->execute() restituisce sempre array
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 

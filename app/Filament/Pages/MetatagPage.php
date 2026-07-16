@@ -83,6 +83,7 @@ class MetatagPage extends XotBasePage
 
     public function save(): void
     {
+        /** @var array<string, mixed> $data */
         $data = $this->form->getState();
         app(SaveTenantConfigAction::class)->execute('metatag', $data);
 
