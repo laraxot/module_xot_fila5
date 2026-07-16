@@ -35,6 +35,10 @@ Deleted dead `app/Services/` and `app/Support/` files that had zero callers or w
 | `Modules/Xot/tests/Unit/Services/ArtisanServiceTest.php` | `ArtisanService::act` → `ArtisanAction::act` |
 | `Modules/Notify/tests/Unit/Actions/NotifyTheme/Attachment/PdfTest.php` | assertion updated for `HtmlAction` import |
 
+## Ri-verifica 2026-07-16
+
+`Services/RouteService.php` era ricomparso (probabile merge/sync multi-repo, vedi [[project_xot_tenant_bootstrap_break]]) nonostante fosse già stato marcato deleted qui. Nessun chiamante nel repo (`rg` su namespace e su ogni metodo pubblico: `inAdmin`, `urlAct`, `getRoutenameN`, `urlLang`, `getAct`, `getModuleName`, `getControllerName`, `getView`); `getView`/`getRoutenameN` risultano già coperti da `Actions/GetViewAction` e `Actions/Route/BuildNestedRouteNameAction`. Il riferimento a `Modules\Tenant\...\MorphMapConfigResolver` in questa tabella non esiste più: il modulo Tenant non ha più `app/Services/Config/Resolvers/`. Rinominato in `.bak` (forward-only, mai `git rm`); `app/Services/` in Xot non contiene più codice PHP vivo.
+
 ## Quality gates
 
 - **phpstan**: pre-existing 58 errors, none introduced by this change

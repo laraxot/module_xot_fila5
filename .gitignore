@@ -179,3 +179,4 @@ audit-coverage/
 .claude-audit/
 docs/assets/
 Helpers/
+tests/AuditCoverage
