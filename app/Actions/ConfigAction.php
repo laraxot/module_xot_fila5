@@ -11,7 +11,9 @@ class ConfigAction
 {
     private static ?self $instance = null;
 
-    public function __construct() {}
+    public function __construct()
+    {
+    }
 
     public static function getInstance(): self
     {

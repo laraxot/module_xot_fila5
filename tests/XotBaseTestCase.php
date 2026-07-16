@@ -33,20 +33,20 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
  *
  * @property object|null $action
- * @property Model|null $model
+ * @property Model|null  $model
  * @property object|null $service
  * @property object|null $widget
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
- * @property Model|null $testModel
+ * @property Model|null  $testModel
  * @property object|null $extraClass
- * @property Model|null $baseModel
+ * @property Model|null  $baseModel
  * @property string|null $testDir
  * @property string|null $workDir
- * @property mixed $saved
- * @property mixed $extra_attributes
+ * @property mixed       $saved
+ * @property mixed       $extra_attributes
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
@@ -83,7 +83,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     public mixed $extra_attributes = null;
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -91,7 +91,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
     {
@@ -106,7 +106,8 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $class
+     * @param class-string<T> $class
+     *
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject
@@ -117,8 +118,9 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
-     * @param  class-string<T>  $abstract
-     * @param  (\Closure(MockInterface&T): void)|null  $callback
+     * @param class-string<T>                        $abstract
+     * @param (\Closure(MockInterface&T): void)|null $callback
+     *
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -150,12 +152,12 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param  class-string<\Throwable>  $exceptionClass
+     * @param class-string<\Throwable> $exceptionClass
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
-        if ($message !== null) {
+        if (null !== $message) {
             $this->expectExceptionMessage($message);
         }
     }
@@ -221,7 +223,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
@@ -234,7 +236,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -245,7 +247,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -263,7 +265,7 @@ abstract class XotBaseTestCase extends BaseTestCase
      */
     protected function prepareSharedFixcitySqliteForTesting(): void
     {
-        if ($this->app === null) {
+        if (null === $this->app) {
             $this->refreshApplication();
         }
 
@@ -276,7 +278,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         $sqliteConnections = [];
 
         foreach (array_keys($connections) as $connection) {
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
@@ -289,7 +291,7 @@ abstract class XotBaseTestCase extends BaseTestCase
             DB::purge($connection);
         }
 
-        if ($sqliteConnections === []) {
+        if ([] === $sqliteConnections) {
             return;
         }
 
@@ -331,7 +333,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * @param  class-string<\Throwable>  $exception
+     * @param class-string<\Throwable> $exception
      */
     public function expectThrowable(string $exception): void
     {

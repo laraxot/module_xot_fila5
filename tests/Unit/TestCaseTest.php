@@ -9,17 +9,17 @@ use Modules\Xot\Tests\XotBaseTestCase;
 
 class TestCaseTest extends XotBaseTestCase
 {
-    public function test_base_test_case_boots_the_xot_service_provider(): void
+    public function testBaseTestCaseBootsTheXotServiceProvider(): void
     {
         $this->assertTrue($this->app->providerIsLoaded(XotServiceProvider::class));
     }
 
-    public function test_app_is_available_in_test(): void
+    public function testAppIsAvailableInTest(): void
     {
         $this->assertNotNull($this->app);
     }
 
-    public function test_generate_unique_email(): void
+    public function testGenerateUniqueEmail(): void
     {
         $email1 = self::generateUniqueEmail();
         $email2 = self::generateUniqueEmail();

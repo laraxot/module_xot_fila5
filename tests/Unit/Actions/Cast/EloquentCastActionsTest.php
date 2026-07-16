@@ -10,8 +10,7 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 test('safe array by model cast action works', function () {
-    $model = new class() extends XotBaseModel
-    {
+    $model = new class extends XotBaseModel {
         protected $attributes = [
             'id' => 1,
             'name' => 'Test',
@@ -27,8 +26,7 @@ test('safe array by model cast action works', function () {
 });
 
 test('safe attribute cast action works', function () {
-    $model = new class() extends XotBaseModel
-    {
+    $model = new class extends XotBaseModel {
         protected $attributes = [
             'str' => 'test',
             'int' => 123,
