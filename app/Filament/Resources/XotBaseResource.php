@@ -30,7 +30,7 @@ use function Safe\glob;
 use Webmozart\Assert\Assert;
 
 /**
- * @method static string getUrl(string $name, array<string, mixed> $parameters = [], bool $isAbsolute = true)
+ * @method static string getUrl(?string $name = null, array<string, mixed> $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?\Illuminate\Database\Eloquent\Model $tenant = null, bool $shouldGuessMissingParameters = false, ?string $configuration = null)
  */
 abstract class XotBaseResource extends FilamentResource
 {
