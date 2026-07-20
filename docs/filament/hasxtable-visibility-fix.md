@@ -134,3 +134,24 @@ curl http://healthcare_app.local/healthcare_app/admin/ats/survey-pdfs/16/questio
 1. **Principio di Liskov**: Quando si estende una classe o si usa un trait, la visibilità dei metodi non può essere ridotta
 2. **Compatibilità Filament**: I trait di Filament (`InteractsWithTable`) hanno requisiti specifici di visibilità
 3. **Documentazione**: La documentazione esistente (`widget-method-visibility-rules.md`) era corretta ma non era stata applicata al trait base
+
+---
+## Merged from hasxtable-visibility-fix-2026-01-27.md
+
+---
+title: "Hasxtable Visibility Fix"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated hasxtable-visibility-fix"
+related:
+  - "./hasxtable-visibility-fix.md"
+---
+# Hasxtable Visibility Fix
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [hasxtable-visibility-fix.md](./hasxtable-visibility-fix.md)
+

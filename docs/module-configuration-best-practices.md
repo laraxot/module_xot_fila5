@@ -1,3 +1,23 @@
+---
+title: "Module Configuration Best Practices"
+type: rule
+tags: [xot, module, configuration, best-practices]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "configurazione modulo best practice laraxot xot"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards.md
+  - ./code-quality-standards-legacy.md
+---
+
 # Module Configuration Best Practices
 
 ## 📋 Overview

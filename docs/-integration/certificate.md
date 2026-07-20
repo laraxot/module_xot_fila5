@@ -120,3 +120,16 @@ https://www.learnvern.com/laravel-tutorial
 https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!
 
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
+
+
+---
+## Merged from -certificate.md
+
+---
+module: theme
+topic: -certificate
+canonical: ../../../../Themes/docs/shared-components/-4.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/-4.md
+

@@ -59,3 +59,9 @@ namespace Modules\YourModule\App\Filament\Resources; // ❌ Wrong (contains App)
 
 *Keep this file visible during development!*
 
+
+
+---
+## From XOTBASE-QUICK-REFERENCE.md
+
+

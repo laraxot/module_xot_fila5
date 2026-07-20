@@ -66,6 +66,9 @@ abstract class XotBaseTransition
      *
      * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
      */
+    /**
+     * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
+     */
     public function getNotificationAttachments(): array
     {
         return [];

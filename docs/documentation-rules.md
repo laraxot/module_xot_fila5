@@ -182,3 +182,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - La documentazione deve evolversi insieme al codice
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 
+
+
+---
+## Merged from documentation_rules.md
+
+

@@ -1,3 +1,23 @@
+---
+title: "Code Quality Standards — Xot Module"
+type: rule
+tags: [xot, code-quality, standards, phpstan]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "standard qualita codice modulo xot phpstan strict types best practice"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards-legacy.md
+  - ./common-anti-patterns.md
+---
+
 # Code Quality Standards - Xot Module
 
 ## 🎯 Purpose

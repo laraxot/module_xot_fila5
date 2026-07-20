@@ -38,3 +38,16 @@ Per far funzionare correttamente lo script, è necessario:
 1. Rimuovere le cartelle reali `.cursor`, `.claude`, `.windsurf` dalla root del progetto
 2. Eseguire nuovamente lo script `ai_init.sh`
 3. Verificare che tutti i collegamenti simbolici vengano creati correttamente
+
+
+---
+## Merged from ai_init_script_analysis.md
+
+---
+module: theme
+topic: ai_init_script_analysis
+canonical: ../../../Themes/docs/shared-components/ai-init-script-analysis-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ai-init-script-analysis-1.md
+

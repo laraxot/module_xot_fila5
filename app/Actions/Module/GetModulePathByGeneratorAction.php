@@ -4,11 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Module;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 
 class GetModulePathByGeneratorAction
 {
+    use QueueableAction;
+
     public function execute(string $moduleName, string $generatorPath): string
     {
         $relativePath = Config::string('modules.paths.generator.'.$generatorPath.'.path');

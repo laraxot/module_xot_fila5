@@ -442,3 +442,16 @@ public function getThemeColors(): array
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Errori risolti**: ExportXls*, Collection chain inference, Model property access, Array type mismatches
+
+
+---
+## Merged from phpstan_collection_types.md
+
+---
+module: theme
+topic: phpstan_collection_types
+canonical: ../../../../../Themes/docs/shared-components/phpstan-collection-types-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-collection-types-1.md
+

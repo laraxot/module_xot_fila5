@@ -1,3 +1,22 @@
+---
+title: "Filament 5 Laraxot rules"
+description: "Regole canoniche per usare Filament 5 nei moduli Laraxot."
+type: rule
+status: active
+version: "5.x"
+tags: [filament, blade, livewire, view-cache, laraxot]
+created: "2026-03-02"
+updated: "2026-07-20"
+issues: ["https://github.com/laraxot/base_quaeris_fila5/issues/1"]
+discussions: ["https://github.com/laraxot/base_quaeris_fila5/discussions/1"]
+related:
+  - "./filament-5-upgrade-guide.md"
+  - "./filament-5-livewire-4-complete-guide.md"
+  - "./filament-custom-pages.md"
+  - "./filament-v5-widgets-guide.md"
+  - "./view-cache-execution-decision.md"
+---
+
 # Filament 5 + Laraxot Rules - Xot Module
 
 ## 🎯 Obiettivo
@@ -192,6 +211,8 @@ Filament 5 introduce cambi a livello di API e di ecosistema. Dal punto di vista 
 2. **Schemas, Forms, Tables, Infolists**
    - Filament 5 continua il modello “schema-based” introdotto in v4.
    - Le regole di `filament-4-laraxot-rules.md` su uso di `Schema`, `getFormSchema()`, `getInfolistSchema()`, `getTableColumns()` restano valide e devono essere aggiornate solo per adeguarsi a nuove API o deprecation v5.
+   - Nelle view Livewire usare il form HTML nativo `<form wire:submit="metodo">` con `{{ $this->form }}`. Il componente `<x-filament-schemas::form>` non esiste in Filament 5 e blocca `php artisan view:cache`.
+   - Fonte: [Rendering a form in a Blade view](https://filamentphp.com/docs/5.x/components/form).
 
 3. **Actions, Notifications, Widgets**
    - Azioni custom Filament continuano a seguire le regole Laraxot esistenti (override `setUp()`, niente stringhe hardcoded, traduzioni centralizzate, ecc.).

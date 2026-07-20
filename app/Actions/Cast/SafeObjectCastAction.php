@@ -6,6 +6,7 @@ namespace Modules\Xot\Actions\Cast;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use InvalidArgumentException;
 
 /**
  * Action per gestire in modo sicuro l'accesso alle proprietà degli oggetti generici.
@@ -220,7 +221,7 @@ class SafeObjectCastAction
                 $property,
                 is_array($default) ? app(SafeArrayCastAction::class)->execute($default) : null,
             ),
-            default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
+            default => throw new InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
 

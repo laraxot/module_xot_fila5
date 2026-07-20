@@ -12,3 +12,16 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
+
+
+---
+## Merged from -todo.md
+
+---
+module: theme
+topic: -todo
+canonical: ../../../../Themes/docs/shared-components/-14.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/-14.md
+

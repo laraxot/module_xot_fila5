@@ -237,3 +237,16 @@ class_alias(AppointmentTypeEnum::class, 'Modules\\<nome progetto>\\Enums\\Appoin
 1. **Class not found**: Ensure the class name matches the filename exactly
 2. **Translation not working**: Verify the translation key exists in the language files
 3. **Backward compatibility issues**: Check that the alias is correctly defined
+
+
+---
+## Merged from enum_standards.md
+
+---
+module: theme
+topic: enum_standards
+canonical: ../../../Themes/docs/shared-components/enum-standards-2.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/enum-standards-2.md
+

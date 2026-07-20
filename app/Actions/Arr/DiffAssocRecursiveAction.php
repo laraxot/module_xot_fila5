@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Arr;
 
 use Spatie\QueueableAction\QueueableAction;
+use Exception;
 
 /**
  * ---.
@@ -22,7 +23,7 @@ class DiffAssocRecursiveAction
     {
         $collection = collect($data)->map(static function ($item) {
             if (! is_array($item)) {
-                throw new \Exception('['.__LINE__.']['.self::class.']');
+                throw new Exception('['.__LINE__.']['.self::class.']');
             }
 
             return collect($item)->map(static function ($item0) {
@@ -51,7 +52,7 @@ class DiffAssocRecursiveAction
         $ris = $coll_1->filter(static function ($value, $key) use ($arr_2) {
             try {
                 return ! \in_array($value, $arr_2, false);
-            } catch (\Exception $exception) {
+            } catch (Exception $exception) {
                 throw $exception;
             }
         });

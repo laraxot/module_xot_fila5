@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use Exception;
 
 /**
  * Class MorphToManyAction.
@@ -30,7 +31,7 @@ class MorphToManyAction
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
      *
-     * @throws \Exception When data is not in correct format or relation is invalid
+     * @throws Exception When data is not in correct format or relation is invalid
      */
     public function execute(Model $row, RelationDTO $relationDTO): void
     {
@@ -47,7 +48,7 @@ class MorphToManyAction
         }
 
         if (! \is_array($data)) {
-            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+            throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }
 
         if (! Arr::isAssoc($data)) {

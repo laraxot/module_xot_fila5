@@ -1,3 +1,23 @@
+---
+title: "Common Anti-Patterns — Xot Module"
+type: rule
+tags: [xot, anti-patterns, code-quality, filament]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "anti pattern comuni da evitare modulo xot best practice"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards.md
+  - ./code-quality-standards-legacy.md
+---
+
 # Common Anti-Patterns - Xot Module
 
 ## 🚨 Anti-Patterns to Avoid

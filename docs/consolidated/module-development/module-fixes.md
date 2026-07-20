@@ -1590,3 +1590,16 @@ $count = CountAction::execute(User::class);
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
 - [ ] Aggiungere test di performance
+
+
+---
+## Merged from module_fixes.md
+
+---
+module: theme
+topic: module_fixes
+canonical: ../../../../../Themes/docs/shared-components/module-fixes-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-fixes-1.md
+

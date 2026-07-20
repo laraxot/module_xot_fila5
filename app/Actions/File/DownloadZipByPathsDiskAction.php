@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use ZipArchive;
 
 class DownloadZipByPathsDiskAction
 {
@@ -26,13 +27,13 @@ class DownloadZipByPathsDiskAction
         $zipPath = 'temp/'.$zipFileName;
 
         // Crea un file temporaneo per lo ZIP usando Storage
-        $zip = new \ZipArchive();
+        $zip = new ZipArchive();
         $tempFilePath = storage_path('app/'.$zipPath);
 
         // Assicurati che la directory temp esista
         Storage::disk('local')->makeDirectory('temp');
 
-        if (true === $zip->open($tempFilePath, \ZipArchive::CREATE)) {
+        if (true === $zip->open($tempFilePath, ZipArchive::CREATE)) {
             foreach ($attachments as $attachment) {
                 $filePath = $attachment;
 

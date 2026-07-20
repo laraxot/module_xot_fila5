@@ -161,3 +161,25 @@ git log --oneline -1
 **CRITICAL NOTE FOR FUTURE COMMITS**:  
 Read `ERROR-ANALYSIS-HELPERS-CAPITALIZATION.md` and `ERROR-ANALYSIS-FOLDER-RENAME-GOLDEN-RULE.md` before making any similar refactors.
 
+
+
+---
+## Merged from qa-verification-2026-06-30.md
+
+---
+title: "Qa Verification"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated QA-VERIFICATION"
+related:
+  - "./qa-verification.md"
+---
+# Qa Verification
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [QA-VERIFICATION.md](./qa-verification.md)
+

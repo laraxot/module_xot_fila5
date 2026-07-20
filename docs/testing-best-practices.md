@@ -1,3 +1,23 @@
+---
+title: "Testing Best Practices — Modules/Xot"
+type: rule
+tags: [xot, testing, pest, phpstan]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "testing best practice pest modulo xot type safety static analysis"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards.md
+  - ./code-quality-standards-legacy.md
+---
+
 # Testing Best Practices - Modules/Xot
 
 This document outlines best practices for writing and maintaining Pest tests under the Xot module, specifically addressing static analysis type safety.

@@ -276,3 +276,16 @@ class CoolModulesServiceProvider extends PackageServiceProvider
 **Tipo**: Bug Fix - Duplicate Registration
 **Impatto**: UI/UX Improvement
 **Priorità**: Media (non bloccante ma fastidioso)
+
+
+---
+## Merged from coolmodules_double_registration_fix.md
+
+---
+module: theme
+topic: coolmodules_double_registration_fix
+canonical: ../../../../../Themes/docs/shared-components/coolmodules-double-registration-fix-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/coolmodules-double-registration-fix-1.md
+

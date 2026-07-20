@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trend\Format;
 
+use Spatie\QueueableAction\QueueableAction;
+
 class SqliteFormatAction extends BaseFormatAction
 {
+    use QueueableAction;
+
     #[\Override]
     public function execute(string $column, string $interval): string
     {

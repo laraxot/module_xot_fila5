@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\Cast;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use InvalidArgumentException;
 
 /**
  * Action per gestire in modo sicuro i cast degli attributi Eloquent.
@@ -194,7 +195,7 @@ class SafeEloquentCastAction
                 $attribute,
                 is_array($default) ? app(SafeArrayCastAction::class)->execute($default) : null,
             ),
-            default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
+            default => throw new InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
 

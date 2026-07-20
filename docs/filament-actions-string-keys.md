@@ -1,3 +1,23 @@
+---
+title: "Filament Actions — String Keys Requirement"
+type: rule
+tags: [xot, filament, actions, phpstan]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "filament actions chiavi stringa requisito critico type safety"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards.md
+  - ./code-quality-standards-legacy.md
+---
+
 # Filament Actions - String Keys Requirement
 
 ## Critical Type Rule

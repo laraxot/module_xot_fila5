@@ -378,3 +378,16 @@ NomeModulo/
 - [XotBaseServiceProvider.md](XotBaseServiceProvider.md)
 - [XotBaseRouteServiceProvider.md](XotBaseRouteServiceProvider.md)
 - [XotBaseEventServiceProvider.md](XotBaseEventServiceProvider.md)
+
+
+---
+## Merged from module_creation.md
+
+---
+module: theme
+topic: module_creation
+canonical: ../../../../../Themes/docs/shared-components/module-creation-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-creation-1.md
+

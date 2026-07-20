@@ -591,3 +591,20 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 *Architecture Version: XotBase 2.0*
 *Last Updated: 2025-08-27*  
 *Architecture Version: XotBase 2.0*
+
+
+---
+## From XOTBASE-EXTENSION-RULES.md
+
+---
+title: "XOTBASE EXTENSION RULES"
+module: "Xot"
+type: rule
+tags: [XOTBASE, EXTENSION, RULES]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbase extension rules"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use RuntimeException;
 
 /**
  * Class HasOneAction.
@@ -28,7 +29,7 @@ class HasOneAction
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      *
      * @throws \InvalidArgumentException When relationship type is invalid
-     * @throws \RuntimeException         When relationship data is invalid
+     * @throws RuntimeException         When relationship data is invalid
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
@@ -44,7 +45,7 @@ class HasOneAction
 
         // Validate that the relationship data is not empty
         if (empty($relationDTO->data)) {
-            throw new \RuntimeException('Relationship data cannot be empty');
+            throw new RuntimeException('Relationship data cannot be empty');
         }
 
         // Check if the related model exists

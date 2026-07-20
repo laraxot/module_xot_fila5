@@ -17,6 +17,7 @@ use function Safe\file;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
+use ReflectionClass;
 
 class GenerateFormByFileAction
 {
@@ -72,7 +73,7 @@ class GenerateFormByFileAction
 
         $fillable = $modelInstance->getFillable();
 
-        $reflection_class = new \ReflectionClass($class_name);
+        $reflection_class = new ReflectionClass($class_name);
 
         // Verifichiamo che il metodo form esista
         if (! $reflection_class->hasMethod('form')) {

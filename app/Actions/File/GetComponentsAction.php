@@ -14,6 +14,8 @@ use function Safe\json_encode;
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use Exception;
+use ReflectionClass;
 
 class GetComponentsAction
 {
@@ -91,11 +93,11 @@ class GetComponentsAction
 
             try {
                 if (! class_exists($comp_ns)) {
-                    throw new \Exception("La classe {$comp_ns} non esiste");
+                    throw new Exception("La classe {$comp_ns} non esiste");
                 }
 
                 /** @var class-string<object> $comp_ns */
-                $reflection = new \ReflectionClass($comp_ns);
+                $reflection = new ReflectionClass($comp_ns);
                 if ($reflection->isAbstract()) {
                     continue;
                 }
@@ -105,7 +107,7 @@ class GetComponentsAction
                     'class' => $class_name,
                     'ns' => $comp_ns,
                 ])->toArray();
-            } catch (\Exception $e) {
+            } catch (Exception $e) {
                 /*
                  * dddx([
                  * 'comp_name' => $comp_name,

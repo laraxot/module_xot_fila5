@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use Exception;
 
 class StoreAction
 {
@@ -50,7 +51,7 @@ class StoreAction
             $action = app($action_class);
             Assert::object($action);
             if (! method_exists($action, 'execute')) {
-                throw new \Exception('method [execute] not found in ['.$action_class.']');
+                throw new Exception('method [execute] not found in ['.$action_class.']');
             }
             $action->execute($model, $relation);
         }

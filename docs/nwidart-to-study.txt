@@ -5,3 +5,14 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
+
+---
+## Merged from nwidart_to_study.txt
+
+---
+module: theme
+topic: nwidart_to_study
+canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md

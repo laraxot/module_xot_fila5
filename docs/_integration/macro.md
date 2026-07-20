@@ -4,3 +4,9 @@
 
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 
+
+
+---
+## Merged from -macro.md
+
+

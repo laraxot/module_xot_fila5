@@ -10,6 +10,7 @@ use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use InvalidArgumentException;
 
 class SendMailByRecordAction
 {
@@ -37,15 +38,15 @@ class SendMailByRecordAction
 
         // Verifica che il model abbia le proprietà/metodi necessari
         if (($record->email ?? null) === null || empty($record->email)) {
-            throw new \InvalidArgumentException('Model must have email property');
+            throw new InvalidArgumentException('Model must have email property');
         }
 
         if (! method_exists($record, 'option')) {
-            throw new \InvalidArgumentException('Model must implement option method');
+            throw new InvalidArgumentException('Model must implement option method');
         }
 
         if (! method_exists($record, 'myLogs')) {
-            throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
+            throw new InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
         }
 
         $to = $record->email;
@@ -54,7 +55,7 @@ class SendMailByRecordAction
         $bodyHtml = $record->option('mail_testo');
 
         if (! is_string($to)) {
-            throw new \InvalidArgumentException('Email must be a string');
+            throw new InvalidArgumentException('Email must be a string');
         }
         if (! is_string($subject)) {
             $subject = '';
@@ -68,7 +69,7 @@ class SendMailByRecordAction
             out: 'path',
         );
         if (! is_string($pdfPath)) {
-            throw new \InvalidArgumentException('PDF attachment path must be a string');
+            throw new InvalidArgumentException('PDF attachment path must be a string');
         }
 
         $emailData = new EmailData(
@@ -82,7 +83,7 @@ class SendMailByRecordAction
         // myLogs è sempre disponibile su BaseModel
         $logs = $record->myLogs();
         if (! is_object($logs) || ! method_exists($logs, 'create')) {
-            throw new \InvalidArgumentException('Model ['.$record::class.'] myLogs relation is invalid');
+            throw new InvalidArgumentException('Model ['.$record::class.'] myLogs relation is invalid');
         }
 
         $logs->create([

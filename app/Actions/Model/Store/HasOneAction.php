@@ -10,6 +10,7 @@ use Illuminate\Support\Arr;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+use Exception;
 
 class HasOneAction
 {
@@ -23,7 +24,7 @@ class HasOneAction
             $related_id = reset($relationDTO->data);
             $related = $relationDTO->related->find($related_id);
             if (! $related instanceof Model) {
-                throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+                throw new Exception('['.__LINE__.']['.class_basename($this).']');
             }
 
             $rows->save($related);
@@ -35,7 +36,7 @@ class HasOneAction
          * $rows = $relation->rows;
          * try {
          * $related = $rows->create($relation->data);
-         * } catch (\Exception $e) {
+         * } catch (Exception $e) {
          * // "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY' (SQL: insert into `liveuser_users` (`first_name`, `last_name`, `email`, `auth_user_id`, `created_by`, `updated_by`, `updated_at`, `created_at`) values (gfdsfs, fdsfds, fds
          * // dddx(['e' => $e->getMessage(), 'data' => $data]);
          * $related = $rows->update($relation->data);

@@ -1,3 +1,23 @@
+---
+title: "Regole di Estensione XotBase — Guida di Riferimento"
+type: rule
+tags: [xot, xotbase, extension, architecture]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "regole estensione xotbase guida riferimento regola critica fondamentale"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards.md
+  - ./code-quality-standards-legacy.md
+---
+
 # Regole di Estensione XotBase - Guida di Riferimento
 
 ## 🚨 REGOLA CRITICA FONDAMENTALE

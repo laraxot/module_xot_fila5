@@ -24,3 +24,16 @@ Il file conteneva marker di conflitto git  all'interno del metodo `boot()`, con 
 
 ## Collegamento alla doc root
 Vedi `/docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
+
+
+---
+## Merged from xotbaserouteserviceprovider_conflict_resolution.md
+
+---
+module: theme
+topic: xotbaserouteserviceprovider_conflict_resolution
+canonical: ../../../Themes/docs/shared-components/xotbaserouteserviceprovider-conflict-resolution-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xotbaserouteserviceprovider-conflict-resolution-1.md
+

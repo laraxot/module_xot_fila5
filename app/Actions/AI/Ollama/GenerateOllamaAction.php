@@ -13,6 +13,7 @@ use Safe\Exceptions\JsonException;
 use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
+use RuntimeException;
 
 class GenerateOllamaAction
 {
@@ -82,7 +83,7 @@ class GenerateOllamaAction
             ];
         } catch (GuzzleException|JsonException $e) {
             Log::error('Ollama Generate API error', ['error' => $e->getMessage()]);
-            throw new \RuntimeException('Ollama API error: '.$e->getMessage(), 0, $e);
+            throw new RuntimeException('Ollama API error: '.$e->getMessage(), 0, $e);
         }
     }
 

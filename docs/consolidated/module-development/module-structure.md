@@ -927,3 +927,16 @@ Se trovi una directory con case errato:
 
 ## Collegamenti tra versioni di module_structure.md
 * [module_structure.md](../../../../project_docs/error_analysis/module_structure.md)
+
+
+---
+## Merged from module_structure.md
+
+---
+module: theme
+topic: module_structure
+canonical: ../../../../../Themes/docs/shared-components/module-structure-2.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/module-structure-2.md
+

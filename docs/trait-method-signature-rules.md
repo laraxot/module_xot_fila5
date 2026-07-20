@@ -1,3 +1,23 @@
+---
+title: "Trait Method Signature Rules"
+type: rule
+tags: [xot, traits, phpstan, static-methods]
+module: Xot
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "regole firma metodi trait static vs non static modulo xot"
+issues:
+  - "https://github.com/laraxot/module_xot_fila5/issues/28"
+discussions:
+  - "https://github.com/laraxot/module_xot_fila5/discussions/29"
+related:
+  - ./00-index.md
+  - ./00-INDEX.md
+  - ./index.md
+  - ./code-quality-standards.md
+  - ./code-quality-standards-legacy.md
+---
+
 # Trait Method Signature Rules
 
 ## 🚨 Critical Rule: Static vs Non-Static Methods

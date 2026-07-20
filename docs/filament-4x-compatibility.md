@@ -5,3 +5,8 @@ canonical: ../../../Themes/docs/shared-components/filament-4x-compatibility-conf
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-4x-compatibility-conflict.md
+
+---
+## Merged from filament_4x_compatibility.md
+
+

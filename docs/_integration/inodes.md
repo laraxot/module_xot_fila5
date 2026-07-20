@@ -40,3 +40,9 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 
 --------------------------------------------------------------
 
+
+
+---
+## Merged from -inodes.md
+
+

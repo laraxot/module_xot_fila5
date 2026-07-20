@@ -33,3 +33,9 @@ https://docs.meilisearch.com/learn/advanced/filtering_and_faceted_search.html
 
 https://appdividend.com/2022/03/01/how-to-create-filters-in-laravel/  !
 
+
+
+---
+## Merged from -filters.md
+
+

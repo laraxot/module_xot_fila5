@@ -1021,3 +1021,16 @@ php artisan cache:clear
 php artisan config:clear
 php artisan view:clear
 ```
+
+
+---
+## Merged from namespace_conventions.md
+
+---
+module: theme
+topic: namespace_conventions
+canonical: ../../../../Themes/docs/shared-components/namespace-conventions-2.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/namespace-conventions-2.md
+

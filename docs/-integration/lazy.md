@@ -20,3 +20,16 @@ https://github.com/ressio/lazy-load-xt
 https://github.com/aFarkas/lazysizes
 
 https://lazy-loading.firebaseapp.com/lazy_loading_lib.html
+
+
+---
+## Merged from -lazy.md
+
+---
+module: theme
+topic: -lazy
+canonical: ../../../../Themes/docs/shared-components/-6.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/-6.md
+

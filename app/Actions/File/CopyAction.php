@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\File;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Spatie\QueueableAction\QueueableAction;
+use Exception;
 
 class CopyAction
 {
@@ -17,7 +18,7 @@ class CopyAction
         if (! File::exists(\dirname($to))) {
             try {
                 File::makeDirectory(\dirname($to), 0o755, true, true);
-            } catch (\Exception $e) {
+            } catch (Exception $e) {
                 Log::error(
                     'Caught exception: '.
                     $e->getMessage().
@@ -37,8 +38,8 @@ class CopyAction
         // not rewite
         try {
             File::copy($from, $to);
-        } catch (\Exception $exception) {
-            throw new \Exception('Unable to copy
+        } catch (Exception $exception) {
+            throw new Exception('Unable to copy
                     from ['.$from.']
                     to ['.$to.']
                     message ['.$exception->getMessage().']', $exception->getCode(), $exception, );

@@ -4,3 +4,9 @@
 
 https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations
 
+
+
+---
+## Merged from -search.md
+
+

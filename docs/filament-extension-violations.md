@@ -108,3 +108,16 @@ According to the Filament Class Extension Rules:
 
 **Created**: 2025-12-18
 **Last Updated**: 2025-12-18
+
+
+---
+## Merged from filament_extension_violations.md
+
+---
+module: theme
+topic: filament_extension_violations
+canonical: ../../../Themes/docs/shared-components/filament-extension-violations-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-extension-violations-1.md
+

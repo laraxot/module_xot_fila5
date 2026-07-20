@@ -10,3 +10,16 @@ https://github.com/topclaudy/compoships
 
 multi key, fixing lazy loading
 https://github.com/topclaudy/compoships
+
+
+---
+## Merged from -models.md
+
+---
+module: theme
+topic: -models
+canonical: ../../../../Themes/docs/shared-components/-11.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/-11.md
+

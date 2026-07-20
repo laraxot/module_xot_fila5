@@ -32,3 +32,25 @@ Removing these directories and applying targeted fixes has resulted in **0 error
 **See also:**
 - [ERRORE CRITICO: Mai Estendere Classi Filament Direttamente](../errori-critici/mai-estendere-filament-direttamente.md)
 - [Directory Structure Rules](../../docs/wiki/rules/directory-structure.md)
+
+
+---
+## Merged from phpstan-2026-05-13.md
+
+---
+title: "Phpstan"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan"
+related:
+  - "./phpstan.md"
+---
+# Phpstan
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan.md](./phpstan.md)
+

@@ -126,3 +126,16 @@ Questo pattern consente:
 6. Le eccezioni sono gestite e documentate
 7. I valori null sono esplicitamente dichiarati
 8. Le strutture dati complesse sono tipizzate con array shapes
+
+
+---
+## Merged from phpstan_call_dynamic_panel_metatagdata.md
+
+---
+module: theme
+topic: phpstan_call_dynamic_panel_metatagdata
+canonical: ../../../../../Themes/docs/shared-components/phpstan-call-dynamic-panel-metatagdata-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-call-dynamic-panel-metatagdata-1.md
+

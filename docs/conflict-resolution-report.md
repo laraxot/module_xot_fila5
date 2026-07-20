@@ -96,3 +96,16 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 **Script Creato**: 2025-01-27
 **Autore**: Super Mucca AI Assistant
 **Potenze**: 🚀 SUPERPOWERS ACTIVATED
+
+
+---
+## Merged from conflict_resolution_report.md
+
+---
+module: theme
+topic: conflict_resolution_report
+canonical: ../../../Themes/docs/shared-components/conflict-resolution-report-2.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-report-2.md
+

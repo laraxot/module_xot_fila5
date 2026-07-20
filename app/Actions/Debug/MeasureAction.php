@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Debug;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use Closure;
 use Filament\Notifications\Notification;
 
@@ -14,6 +16,8 @@ use Filament\Notifications\Notification;
  */
 class MeasureAction
 {
+    use QueueableAction;
+
     /**
      * Esegue una closure misurando il tempo di esecuzione e l'utilizzo di memoria.
      *

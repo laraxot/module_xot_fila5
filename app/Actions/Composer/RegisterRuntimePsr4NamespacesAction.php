@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Composer;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use Composer\Autoload\ClassLoader;
 
 /**
@@ -14,6 +16,8 @@ use Composer\Autoload\ClassLoader;
  */
 final class RegisterRuntimePsr4NamespacesAction
 {
+    use QueueableAction;
+
     /**
      * @return array<string, string|list<string>>
      */

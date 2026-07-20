@@ -8,3 +8,9 @@ https://github.com/limewell/laravel-make-extender
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 
+
+
+---
+## Merged from -todo.md
+
+

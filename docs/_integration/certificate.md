@@ -60,3 +60,9 @@ https://www.objectivequiz.com/objective-questions/programming-technologies/larav
 
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
 
+
+
+---
+## Merged from -certificate.md
+
+

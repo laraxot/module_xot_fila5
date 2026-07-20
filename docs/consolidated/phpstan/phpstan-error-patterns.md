@@ -724,3 +724,16 @@ public function callIfExists(object $object, string $method, array $params = [])
 ```
 
 By following these patterns and solutions, you can prevent common PHPStan errors and create more robust, type-safe code.
+
+
+---
+## Merged from phpstan_error_patterns.md
+
+---
+module: theme
+topic: phpstan_error_patterns
+canonical: ../../../../../Themes/docs/shared-components/phpstan-error-patterns-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-error-patterns-1.md
+

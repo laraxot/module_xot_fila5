@@ -592,3 +592,16 @@ Questi pattern rappresentano le soluzioni standard da adottare in tutto il modul
 * [phpstan_pattern_soluzioni.md](../phpstan_pattern_soluzioni.md)
 
 ---
+
+
+---
+## Merged from phpstan_pattern_soluzioni.md
+
+---
+module: theme
+topic: phpstan_pattern_soluzioni
+canonical: ../../../../../Themes/docs/shared-components/phpstan-pattern-soluzioni-2.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-pattern-soluzioni-2.md
+

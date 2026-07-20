@@ -186,3 +186,20 @@ public function panel(Panel $panel): Panel
 - [Configurazione Moduli](../../../project_docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+
+
+---
+## From PANEL-PROVIDER.md
+
+---
+title: "PANEL PROVIDER"
+module: "Xot"
+type: concept
+tags: [PANEL, PROVIDER]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "panel provider"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+

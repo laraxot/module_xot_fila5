@@ -4,12 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trans;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Webmozart\Assert\Assert;
 
 class GetTransFilenameAction
 {
+    use QueueableAction;
+
     public function execute(string $filename): string
     {
         $lang = app()->getLocale();

@@ -248,3 +248,25 @@ php artisan about
 - [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)
 - [safe-functions-rule](../../../../../docs/wiki/concepts/safe-functions-rule.md)
 - [llm-wiki-qmd-workflow](../../../../../docs/project/llm-wiki-qmd-workflow.md)
+
+
+---
+## Merged from phpstan-modules-fix-2026-05-05.md
+
+---
+title: "Phpstan Modules Fix"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan-modules-fix"
+related:
+  - "./phpstan-modules-fix.md"
+---
+# Phpstan Modules Fix
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-modules-fix.md](./phpstan-modules-fix.md)
+

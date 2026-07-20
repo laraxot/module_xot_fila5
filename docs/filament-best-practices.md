@@ -1011,3 +1011,9 @@ Appointment::where('doctor_id', $doctorId)
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
 
+
+
+---
+## Merged from filament_best_practices.md
+
+

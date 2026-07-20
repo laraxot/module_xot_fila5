@@ -385,3 +385,16 @@ class MyModel extends BaseModel
 * [phpstan_workflow.md](../phpstan_workflow.md)
 
 ---
+
+
+---
+## Merged from phpstan_workflow.md
+
+---
+module: theme
+topic: phpstan_workflow
+canonical: ../../../../../Themes/docs/shared-components/phpstan-workflow-1-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/phpstan-workflow-1-1.md
+

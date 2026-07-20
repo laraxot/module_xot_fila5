@@ -21,3 +21,9 @@ https://github.com/overtrue/phplint
 
 https://phpmd.org/
 
+
+
+---
+## Merged from --php-code-analysis-tools.md
+
+

@@ -15,3 +15,25 @@ The **Xot** module is fully compliant with PHPStan Level 10. No errors were repo
 ## Future Goals
 - Maintain 0 errors.
 - Periodic review of ignored errors (if any exist in `phpstan.neon`, though none should).
+
+
+---
+## Merged from phpstan-roadmap-2026-02-03.md
+
+---
+title: "Phpstan Roadmap"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated phpstan-roadmap"
+related:
+  - "./phpstan-roadmap.md"
+---
+# Phpstan Roadmap
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [phpstan-roadmap.md](./phpstan-roadmap.md)
+

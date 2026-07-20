@@ -22,3 +22,9 @@ class UserResource extends JsonResource
       }
 }
 
+
+
+---
+## Merged from -pivot.md
+
+

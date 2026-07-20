@@ -616,3 +616,16 @@ return array_merge(
 
 *Ultimo aggiornamento: Giugno 2025*
 *Autore: Analisi Automatica del Progetto*
+
+
+---
+## Merged from optimization_opportunities.md
+
+---
+module: theme
+topic: optimization_opportunities
+canonical: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
+
