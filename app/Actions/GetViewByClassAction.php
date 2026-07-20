@@ -8,7 +8,6 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
-use InvalidArgumentException;
 
 /**
  * Classe per ottenere una vista basata su una classe.
@@ -46,7 +45,7 @@ class GetViewByClassAction
 
         // Verifica che la classe sia nel namespace Modules
         if ('Modules' !== $arr[0]) {
-            throw new InvalidArgumentException('Class must be in Modules namespace');
+            throw new \InvalidArgumentException('Class must be in Modules namespace');
         }
 
         $module = $arr[1];

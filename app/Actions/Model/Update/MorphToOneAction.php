@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\App;
 use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
-use InvalidArgumentException;
 
 /**
  * Class MorphToOneAction.
@@ -28,13 +27,13 @@ class MorphToOneAction
      * @param Model       $model       The parent model
      * @param RelationDTO $relationDTO Data transfer object containing relationship information
      *
-     * @throws InvalidArgumentException When relation type is invalid
+     * @throws \InvalidArgumentException When relation type is invalid
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
         $relation = $model->{$relationDTO->name}();
         if (! is_object($relation)) {
-            throw new InvalidArgumentException('Relation must be an object.');
+            throw new \InvalidArgumentException('Relation must be an object.');
         }
 
         $data = $this->prepareData($relationDTO->data);

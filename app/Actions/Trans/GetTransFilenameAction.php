@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Trans;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 class GetTransFilenameAction

@@ -9,7 +9,6 @@ use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use RuntimeException;
 
 class GetSchemaManagerByModelClassAction
 {
@@ -38,6 +37,6 @@ class GetSchemaManagerByModelClassAction
         }
 
         // Se in futuro il metodo getDoctrineConnection diventa disponibile, possiamo usare questo
-        throw new RuntimeException('Non è possibile ottenere lo schema manager Doctrine per questo modello.');
+        throw new \RuntimeException('Non è possibile ottenere lo schema manager Doctrine per questo modello.');
     }
 }

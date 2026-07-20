@@ -11,7 +11,6 @@ namespace Modules\Xot\Actions;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use Exception;
 
 class GetModelByModelTypeAction
 {
@@ -33,7 +32,7 @@ class GetModelByModelTypeAction
             : new $model_class();
 
         if (! $model instanceof Model) {
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
+            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 
         return $model;

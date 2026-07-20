@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use function Safe\preg_replace;
+
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Action per convertire in modo sicuro un valore mixed in float.

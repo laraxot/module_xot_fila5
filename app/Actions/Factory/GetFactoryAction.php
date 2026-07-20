@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use InvalidArgumentException;
 
 /**
  * @see https://github.com/mpociot/laravel-test-factory-helper/blob/master/src/Console/GenerateCommand.php#L213
@@ -121,7 +120,7 @@ class GetFactoryAction
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
         if ('' === $module_parts) {
-            throw new InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
+            throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
         $module_name = is_string($module_parts) ? $module_parts : ((string) $module_parts);
@@ -143,7 +142,7 @@ class GetFactoryAction
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
         if ('' === $module_parts) {
-            throw new InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
+            throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
         $module_name = is_string($module_parts) ? $module_parts : ((string) $module_parts);

@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Process;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use RuntimeException;
 
 /**
  * Classe per eseguire comandi Artisan in modo sicuro.
@@ -42,7 +41,7 @@ class ExecuteArtisanCommandAction
      *
      * @param string $command Il comando Artisan da eseguire (senza "php artisan")
      *
-     * @throws RuntimeException Se il comando non è consentito o si verifica un errore
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
      *
      * @return array{
      *     command: string,
@@ -56,7 +55,7 @@ class ExecuteArtisanCommandAction
         Assert::stringNotEmpty($command, 'Il comando non può essere vuoto');
 
         if (! $this->isCommandAllowed($command)) {
-            throw new RuntimeException("Comando non consentito: {$command}");
+            throw new \RuntimeException("Comando non consentito: {$command}");
         }
 
         /** @var array<int, string> $output */
@@ -125,7 +124,7 @@ class ExecuteArtisanCommandAction
             ];
         } catch (\Throwable $e) {
             Event::dispatch('artisan-command.error', [$command, $e->getMessage()]);
-            throw new RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
+            throw new \RuntimeException("Errore durante l'esecuzione del comando {$command}: {$e->getMessage()}", (int) $e->getCode(), $e);
         }
     }
 

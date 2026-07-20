@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 class FilterRelationsAction

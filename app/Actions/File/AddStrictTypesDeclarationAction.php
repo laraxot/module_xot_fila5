@@ -6,8 +6,6 @@ namespace Modules\Xot\Actions\File;
 
 use Illuminate\Support\Facades\File;
 use Spatie\QueueableAction\QueueableAction;
-use InvalidArgumentException;
-use RuntimeException;
 
 /**
  * Aggiunge la dichiarazione strict_types ai file PHP che ne sono sprovvisti.
@@ -22,7 +20,7 @@ class AddStrictTypesDeclarationAction
     public function execute(string $filePath): void
     {
         if (! File::exists($filePath)) {
-            throw new InvalidArgumentException("Il file {$filePath} non esiste");
+            throw new \InvalidArgumentException("Il file {$filePath} non esiste");
         }
 
         $content = File::get($filePath);
@@ -35,7 +33,7 @@ class AddStrictTypesDeclarationAction
         // Trova la posizione del tag di apertura PHP
         $phpTagPos = strpos($content, '<?php');
         if (false === $phpTagPos) {
-            throw new RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
+            throw new \RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
         }
 
         // Trova la prima riga non vuota dopo il tag PHP

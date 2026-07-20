@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Module;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
+use Spatie\QueueableAction\QueueableAction;
 
 class GetModulePathByGeneratorAction
 {

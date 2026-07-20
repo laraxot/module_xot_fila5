@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Composer;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use Composer\Autoload\ClassLoader;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Registra PSR-4 fuori dal root composer.json (temi e seeders legacy app-level).

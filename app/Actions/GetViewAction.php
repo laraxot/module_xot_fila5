@@ -7,7 +7,6 @@ namespace Modules\Xot\Actions;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\FixPathAction;
 use Spatie\QueueableAction\QueueableAction;
-use Exception;
 
 class GetViewAction
 {
@@ -16,7 +15,7 @@ class GetViewAction
     /**
      * Summary of execute.
      *
-     * @throws Exception
+     * @throws \Exception
      *
      * @return view-string
      */
@@ -73,7 +72,7 @@ class GetViewAction
         // }
         // $view è sempre stringa perché costruita da stringhe
         if (! view()->exists($view)) {
-            throw new Exception('View ['.$view.'] not found');
+            throw new \Exception('View ['.$view.'] not found');
         }
 
         return $view;

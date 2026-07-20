@@ -12,7 +12,6 @@ use Illuminate\Support\Str;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use Exception;
 
 class BelongsToAction
 {
@@ -46,7 +45,7 @@ class BelongsToAction
             }
 
             if (! $related instanceof Model) {
-                throw new Exception('Expected a single model, got null or invalid object.');
+                throw new \Exception('Expected a single model, got null or invalid object.');
             }
             $res = $rows->associate($related);
             $res->save();
@@ -58,7 +57,7 @@ class BelongsToAction
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
             if (null === $sub) {
-                throw new Exception('['.__LINE__.']['.class_basename($this).']');
+                throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 
             app(RelationAction::class)->execute($sub, $relationDTO->data);

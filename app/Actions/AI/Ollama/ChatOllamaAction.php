@@ -13,7 +13,6 @@ use Safe\Exceptions\JsonException;
 use function Safe\json_decode;
 
 use Spatie\QueueableAction\QueueableAction;
-use RuntimeException;
 
 class ChatOllamaAction
 {
@@ -101,7 +100,7 @@ class ChatOllamaAction
             ];
         } catch (GuzzleException|JsonException $e) {
             Log::error('Ollama Chat API error', ['error' => $e->getMessage()]);
-            throw new RuntimeException('Ollama API error: '.$e->getMessage(), 0, $e);
+            throw new \RuntimeException('Ollama API error: '.$e->getMessage(), 0, $e);
         }
     }
 

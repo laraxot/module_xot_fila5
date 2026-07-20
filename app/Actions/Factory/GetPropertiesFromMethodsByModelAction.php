@@ -21,9 +21,6 @@ use function Safe\preg_replace;
 
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use Exception;
-use ReflectionMethod;
-use SplFileObject;
 
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
@@ -54,7 +51,7 @@ class GetPropertiesFromMethodsByModelAction
 
             // Utilizziamo la reflection per ispezionare il codice
             try {
-                $reflection = new ReflectionMethod($model, $method);
+                $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
                 if (false === $filename) {
@@ -64,7 +61,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::fileExists($filename, "Il file {$filename} non esiste");
 
                 // Leggiamo il contenuto del metodo
-                $file = new SplFileObject($filename);
+                $file = new \SplFileObject($filename);
 
                 $file->seek($reflection->getStartLine() - 1);
                 $startLine = $file->key();
@@ -108,7 +105,7 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Cerchiamo relazioni belongsTo
                 $this->extractBelongsToRelations($codeStr, $model, $method, $data);
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
             }
@@ -145,7 +142,7 @@ class GetPropertiesFromMethodsByModelAction
 
             // Verifichiamo che il metodo getForeignKeyName esista
             if (! method_exists($relationObj, 'getForeignKeyName')) {
-                throw new Exception('Il metodo getForeignKeyName non esiste nella relazione');
+                throw new \Exception('Il metodo getForeignKeyName non esiste nella relazione');
             }
 
             // Otteniamo il nome della chiave esterna
@@ -160,7 +157,7 @@ class GetPropertiesFromMethodsByModelAction
             // Assert::isCallable rimosso - metodo verificato a compile time
 
             $type = 'factory('.$relatedClass.'::class)';
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
             return;
         }

@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use function Safe\preg_replace;
 
+use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 /**

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Store;
 
+use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-use Exception;
 
 class HasOneAction
 {
@@ -24,7 +24,7 @@ class HasOneAction
             $related_id = reset($relationDTO->data);
             $related = $relationDTO->related->find($related_id);
             if (! $related instanceof Model) {
-                throw new Exception('['.__LINE__.']['.class_basename($this).']');
+                throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 
             $rows->save($related);

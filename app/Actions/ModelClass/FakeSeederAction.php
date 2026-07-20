@@ -10,8 +10,6 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Spatie\QueueableAction\QueueableAction;
-use InvalidArgumentException;
-use RuntimeException;
 
 class FakeSeederAction
 {
@@ -27,7 +25,7 @@ class FakeSeederAction
      * @param class-string<Model> $modelClass The fully qualified model class name
      * @param int<1, max>         $qty        Number of records to generate
      *
-     * @throws InvalidArgumentException When model class is invalid
+     * @throws \InvalidArgumentException When model class is invalid
      */
     public function execute(string $modelClass, int $qty): void
     {
@@ -36,7 +34,7 @@ class FakeSeederAction
                 || ! is_subclass_of($modelClass, Model::class)
                 || ! in_array(HasFactory::class, class_uses_recursive($modelClass), strict: true)
         ) {
-            throw new InvalidArgumentException("Invalid model class or missing HasFactory trait: {$modelClass}");
+            throw new \InvalidArgumentException("Invalid model class or missing HasFactory trait: {$modelClass}");
         }
 
         $qtyToDo = min($qty, self::MAX_RECORDS);
@@ -65,7 +63,7 @@ class FakeSeederAction
      *
      * @param class-string<Model> $modelClass
      *
-     * @throws RuntimeException
+     * @throws \RuntimeException
      *
      * @return Factory<Model>
      * @return Factory<Model>
@@ -79,7 +77,7 @@ class FakeSeederAction
             return $factory;
         }
 
-        throw new RuntimeException("Unable to create factory for model: {$modelClass}");
+        throw new \RuntimeException("Unable to create factory for model: {$modelClass}");
     }
 
     /**

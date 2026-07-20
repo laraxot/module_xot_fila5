@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-use Spatie\QueueableAction\QueueableAction;
-
 use BladeUI\Icons\Factory as IconFactory;
 use Illuminate\Support\Facades\App;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Verifica l'esistenza di un SVG registrato utilizzando BladeUI Icons.
