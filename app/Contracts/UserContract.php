@@ -60,7 +60,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      */
     /**
      * @return HasOne<Model&ProfileContract, Model&static>
-     *
      */
     public function profile(): HasOne;
 
@@ -134,7 +133,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Spatie Permission — team pivot for role scoping ({@see \Spatie\Permission\Traits\HasRoles::teams()}).
      *
      * @return BelongsToMany<Model, Model&static>
-     *
      */
     public function teams(): BelongsToMany;
 
@@ -142,7 +140,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Laraxot team membership (Jetstream-style pivot).
      *
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
-     *
      */
     public function membershipTeams(): BelongsToMany;
 
@@ -150,7 +147,6 @@ interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, M
      * Get the user's tenants.
      *
      * @return BelongsToMany<Model, Model&static>
-     *
      */
     public function tenants(): BelongsToMany;
 
