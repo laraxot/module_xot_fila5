@@ -11,7 +11,6 @@ use Illuminate\Support\Str;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
-use RuntimeException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -77,7 +76,7 @@ abstract class XotBaseModel extends EloquentModel
         });
 
         if (! isset($object['object'])) {
-            throw new RuntimeException('Unable to resolve caller object for getClassName()');
+            throw new \RuntimeException('Unable to resolve caller object for getClassName()');
         }
 
         $objectClass = $object['object']::class;
