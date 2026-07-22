@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
-use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Actions\Config\GetTenantConfigPathAction;
@@ -14,7 +13,7 @@ use function Safe\unlink;
 
 it('returns empty array when tenant config file does not exist', function (): void {
     /** @var GetTenantConfigPathAction&MockInterface $pathAction */
-    $pathAction = Mockery::mock(GetTenantConfigPathAction::class);
+    $pathAction = \Mockery::mock(GetTenantConfigPathAction::class);
     $pathAction->allows(['execute' => '/tmp/does-not-exist-config.php']);
 
     app()->instance(GetTenantConfigPathAction::class, $pathAction);
@@ -29,7 +28,7 @@ it('returns config array when file exists and contains array', function (): void
     file_put_contents($path, "<?php\nreturn ['driver' => 'smtp', 'port' => 25];\n");
 
     /** @var GetTenantConfigPathAction&MockInterface $pathAction */
-    $pathAction = Mockery::mock(GetTenantConfigPathAction::class);
+    $pathAction = \Mockery::mock(GetTenantConfigPathAction::class);
     $pathAction->allows(['execute' => $path]);
 
     app()->instance(GetTenantConfigPathAction::class, $pathAction);
@@ -47,7 +46,7 @@ it('returns empty array when required file does not return an array', function (
     file_put_contents($path, "<?php\nreturn 'not-array';\n");
 
     /** @var GetTenantConfigPathAction&MockInterface $pathAction */
-    $pathAction = Mockery::mock(GetTenantConfigPathAction::class);
+    $pathAction = \Mockery::mock(GetTenantConfigPathAction::class);
     $pathAction->allows(['execute' => $path]);
 
     app()->instance(GetTenantConfigPathAction::class, $pathAction);
