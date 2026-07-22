@@ -4,25 +4,38 @@ type: concept
 module: Xot
 tags: [phpstan, trait, probe, xot, second-brain]
 created: 2026-06-30
-updated: 2026-07-13
-qmd: "phpstan trait probe unused trait xotPhpstanTraitProbeClasses Helper scanFiles"
+updated: 2026-07-22
+qmd: "phpstan trait probe unused trait xotPhpstanTraitProbeClasses Helper scanFiles DEPRECATED"
 related:
   - ./phpstan-fixes-log.md
   - ../memories/phpstan-remediation-swarm.md
   - ../../../User/docs/wiki/concepts/trait-alias-conflict-resolution.md
+  - ../../../../../../docs/wiki/rules/no-phpstan-probe-models.md
+  - ../../../../Job/docs/wiki/concepts/phpstan-format-seconds-trait-probe.md
 ---
 
-# PHPStan trait probes
+# PHPStan trait probes — **DEPRECATED**
 
-## Problema
+> **2026-07-22:** `app/Phpstan/` e `*PhpstanProbe*` sono **vietati**.
+> Canon: [`no-phpstan-probe-models`](../../../../../../docs/wiki/rules/no-phpstan-probe-models.md).
+> Per `trait.unused`: `@phpstan-ignore trait.unused` sul trait, oppure consumatori reali / test con classe anonima.
+> Il registry `xotPhpstanTraitProbeClasses()` è stato rimosso.
 
-PHPStan segnala `trait.unused` su trait di libreria usati solo nei test o via composizione dinamica (`belongsToManyX`, Spatie, ecc.). Aggiungere i trait ai modelli di produzione può causare collisioni (es. `HasCommonScopes` vs `scopePublished()` su `Blog\Article`).
+## Problema (storico)
 
-## Soluzione — probe host + registry
+PHPStan segnalava `trait.unused` su trait usati solo nei test o via discovery Filament. I probe host erano un workaround — ora proibiti.
 
-1. **Classe probe** per modulo in `Modules/{Mod}/app/Phpstan/TraitProbes.php` (o file dedicato): estende `XotBaseModel`, `use` del trait da analizzare, `$table` fittizio.
-2. **Registry centralizzato** in `Modules/Xot/helpers/Helper.php` → `xotPhpstanTraitProbeClasses(): list<class-string>`.
-3. **`phpstan.neon`** include `Helper.php` in `scanFiles` (già configurato).
+## Soluzione attuale (obbligatoria)
+
+1. **Consumatore reale** (widget/model/action) che fa `use Trait`.
+2. **Test Pest** con classe anonima `use Trait` (es. `FormatSecondsTest`).
+3. Solo se ancora `trait.unused`: `@phpstan-ignore trait.unused` nel docblock del trait.
+
+## Soluzione legacy — probe host + registry (NON usare)
+
+~~1. Classe probe in `Modules/{Mod}/app/Phpstan/`~~
+~~2. Registry `xotPhpstanTraitProbeClasses()`~~
+~~3. scanFiles in phpstan.neon~~
 
 ### Esempio probe
 
