@@ -6,9 +6,13 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+use RuntimeException;
+use Webmozart\Assert\Assert;
 
 /**
  * Class XotBaseModel.
@@ -59,5 +63,31 @@ abstract class XotBaseModel extends EloquentModel
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+    }
+
+    /**
+     * Resolve the concrete model class for the caller's module.
+     *
+     * @return class-string<EloquentModel>
+     */
+    public static function getClassName(): string
+    {
+        $object = Arr::first(debug_backtrace(), function (array $value) {
+            return isset($value['object']);
+        });
+
+        if (! isset($object['object'])) {
+            throw new RuntimeException('Unable to resolve caller object for getClassName()');
+        }
+
+        $objectClass = $object['object']::class;
+        $namespace = Str::beforeLast($objectClass, '\Models\\');
+        $className = Str::afterLast(static::class, '\\');
+
+        $res = $namespace.'\\Models\\'.$className;
+        Assert::classExists($res);
+        Assert::subclassOf($res, EloquentModel::class);
+
+        return $res;
     }
 }
