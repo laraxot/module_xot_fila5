@@ -1,0 +1,20 @@
+---
+module: theme
+topic: phpstan-baseline-initial
+canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+
+
+---
+## Merged from phpstan_baseline_initial.txt
+
+---
+module: theme
+topic: phpstan_baseline_initial
+canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+
