@@ -53,3 +53,16 @@ Niente reset/squash/force per aggirare LFS.
 `module_user_fila5`: `laraxot` tip `3ea7273a` (`0 0`); `provtv` **merge-base vuoto** → STOP (no merge/force).
 Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
 
+### Caso Xot 2026-07-23 (laraxot allineato, provtv unrelated — di nuovo)
+
+Working tree pulito, nessun merge/rebase in corso. `laraxot/dev`: **`0 0`**, nessuna
+azione necessaria. `provtv/dev`: **behind 40 / ahead 12**, `git merge-base HEAD
+provtv/dev` → **vuoto** (storie non correlate), nonostante la risoluzione
+"unrelated" già documentata sopra (righe 30-34) — sembra essere ridivergiuto
+(reset/force-push lato `provtv` dopo quella risoluzione, o quella sessione ha
+risolto solo `laraxot`). **Non tentato `--allow-unrelated-histories`** per
+istruzione esplicita di questo giro (rischio noto: centinaia di conflitti add/add,
+visto su Modules/UI, parte di un loop automatico che disfa fix manuali). Lasciato a
+decisione umana. Nessun push necessario (nulla da pushare su `laraxot`, `provtv`
+non toccato).
+
