@@ -4,8 +4,8 @@ type: index
 module: Xot
 tags: [xot, wiki, index, xotbase, migrations, phpstan]
 created: 2026-04-28
-updated: 2026-06-13
-qmd: "xot module wiki index XotBase migrations phpstan filament actions pest ReflectionClass global imports"
+updated: 2026-07-24
+qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -15,12 +15,20 @@ related:
   - ./concepts/module-model-artifact-parity.md
   - ./concepts/ai-harness-xot-discipline.md
   - ./concepts/second-brain-local-discipline.md
+  - ./concepts/no-domain-actions-in-xot.md
   - ./rules/module-testcase-xotbase-hierarchy.md
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+  - ../../../../../docs/wiki/rules/domain-actions-belong-to-domain-module.md
 ---
 
 # Xot Module LLM Wiki
+
+## Boundaries (2026-07-24)
+
+- [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) — niente `Actions/AI|Geo|…`
+- Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md)
+- AI owner: [ollama-actions-ownership](../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
 
 Indice operativo del wiki Xot (core framework).
 
