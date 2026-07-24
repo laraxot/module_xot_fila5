@@ -5,48 +5,46 @@ type: concept
 status: approved
 tags: [filament, blade, form, view-cache, cross-module]
 created: "2026-07-20"
-updated: "2026-07-20"
+updated: "2026-07-24"
 related:
-  - "../../../../../docs/chat/filament-schemas-form-component-missing.md"
-  - "../../../../../docs/wiki/rules/multi-agent-lock-coordination.md"
+  - "../../filament-v5-form-wrapper-blade-pattern.md"
+  - "../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md"
+  - "../../../../../../docs/wiki/memories/view-cache-gate-mandatory.md"
 ---
 
 # Wrapper form nelle Filament Page custom
 
 ## Regola
 
-Per avvolgere `{{ $this->form }}` in una Page Filament 5 custom (non un Resource), usa un `<form>` HTML semplice con `wire:submit`, **non** un componente Blade come `<x-filament-schemas::form>` — non esiste in nessuna versione di `filament/schemas` (verificato: `vendor/filament/schemas/resources/views/components/` contiene solo `grid.blade.php` e `fieldset.blade.php`; zero occorrenze nel sorgente ufficiale `filamentphp/filament`).
+Per avvolgere `{{ $this->form }}` in Page/widget Filament 5: **`<form wire:submit>`**, non `<x-filament-schemas::form>`.
 
-## Pattern verificato (fonte: filamentphp/demo, resources/views/livewire/form.blade.php)
+Fonte: [filamentphp.com/docs/5.x/components/form](https://filamentphp.com/docs/5.x/components/form) + demo `resources/views/livewire/form.blade.php`.
 
 ```blade
 <form wire:submit="save">
     {{ $this->form }}
-
-    <x-filament::button type="submit">
-        {{ __('Save') }}
-    </x-filament::button>
+    <x-filament::button type="submit">{{ __('Save') }}</x-filament::button>
 </form>
+<x-filament-actions::modals />
 ```
 
-## Stato in questo repo
+## Override vendor (rimosso)
 
-Ci sono 12 view (`Modules/{Cms,User,Xot}/resources/views/filament/...`) scritte con `<x-filament-schemas::form wire:submit="...">`. Invece di editare ciascuna, il fix è un **singolo view override Laravel**:
+Un override `laravel/resources/views/vendor/filament-schemas/components/form.blade.php`
+(alias `<form {{ $attributes }}>{{ $slot }}</form>`) è esistito come rete di
+sicurezza, ma `laravel/resources/views/vendor/` è **gitignored** e viene
+azzerata da `composer run go` (`rm -rf ./resources/views/vendor/` +
+`vendor:publish --all` — quest'ultimo non lo ricrea, perché `filament/schemas`
+non pubblica alcun `form.blade.php`). Rimosso e non recuperabile (2026-07-24).
 
-`laravel/resources/views/vendor/filament-schemas/components/form.blade.php`:
+Il fix ora dipende **solo** dai 12 consumer diretti (vedi tabella sopra), non
+più da un override. Se `composer run go` (o qualsiasi `rm -rf resources/views/vendor`)
+gira di nuovo, il fix resta valido — verificalo comunque con `view:cache`.
 
-```blade
-<form {{ $attributes }}>
-    {{ $slot }}
-</form>
-```
-
-Questo fa risolvere il componente inesistente come alias del `<form>` nativo, senza toccare i 12 consumer. Vedi `docs/chat/filament-schemas-form-component-missing.md` per il dettaglio della ricerca e lo stato del coordinamento multi-agente (questo file è stato rimosso per errore da agenti concorrenti più volte — non cancellarlo senza controllare `php artisan view:cache` prima).
-
-## Verifica
+## Verifica (obbligatoria)
 
 ```bash
 cd laravel && php artisan view:cache
 ```
 
-Deve completare senza `InvalidArgumentException: Unable to locate a class or view for component [filament-schemas::form]`.
+Exit 0. Verificato 2026-07-24 su questo checkout.
