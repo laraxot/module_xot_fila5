@@ -15,7 +15,7 @@ use Spatie\LaravelData\DataCollection;
 uses(TestCase::class);
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 it('registers blade components correctly', function (): void {
@@ -31,9 +31,9 @@ it('registers blade components correctly', function (): void {
 
     $mockComps = new DataCollection(ComponentFileData::class, [$comp1]);
 
-    $mock = Mockery::mock(GetComponentsAction::class);
+    $mock = \Mockery::mock(GetComponentsAction::class);
     $expectation = $mock->shouldReceive('execute');
-    assert($expectation instanceof \Mockery\Expectation);
+    assert($expectation instanceof Mockery\Expectation);
     $expectation
         ->once()
         ->with($path, $namespace.'\\View\\Components', $prefix)
@@ -55,9 +55,9 @@ it('does nothing if no components found', function (): void {
 
     $mockComps = new DataCollection(ComponentFileData::class, []);
 
-    $mock = Mockery::mock(GetComponentsAction::class);
+    $mock = \Mockery::mock(GetComponentsAction::class);
     $expectation = $mock->shouldReceive('execute');
-    assert($expectation instanceof \Mockery\Expectation);
+    assert($expectation instanceof Mockery\Expectation);
     $expectation->once()->andReturn($mockComps);
 
     app()->instance(GetComponentsAction::class, $mock);
