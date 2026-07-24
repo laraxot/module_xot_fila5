@@ -8,19 +8,27 @@ use Illuminate\Support\Facades\Blade;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
+use Modules\Xot\Tests\TestCase;
+use Spatie\LaravelData\DataCollection;
+
+uses(TestCase::class);
 
 it('registers blade components correctly', function (): void {
     $path = 'some/path';
     $namespace = 'Some\\Namespace';
     $prefix = 'prefix';
 
-    $comp1 = ComponentFileData::from([)
+    $comp1 = ComponentFileData::from([
         'name' => 'test-comp',
         'ns' => 'Some\\Namespace\\View\\Components\\TestComp',
         'class' => 'TestComp',
     ]);
 
-    $mockComps = ComponentFileData::collection([$comp1]);
+    // ComponentFileData::collection() expects raw array data (it calls
+    // self::collect()), not already-hydrated Data instances — passing
+    // instances breaks Spatie's transformation pipeline at runtime.
+    // Build the DataCollection directly from the hydrated instance instead.
+    $mockComps = new DataCollection(ComponentFileData::class, [$comp1]);
 
     $this->mock(GetComponentsAction::class)
         ->shouldReceive('execute')
@@ -40,7 +48,7 @@ it('does nothing if no components found', function (): void {
     $path = 'empty/path';
     $namespace = 'Empty\\Namespace';
 
-    $mockComps = ComponentFileData::collection([]);
+    $mockComps = new DataCollection(ComponentFileData::class, []);
 
     $this->mock(GetComponentsAction::class)
         ->shouldReceive('execute')
