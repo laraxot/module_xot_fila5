@@ -55,7 +55,8 @@ abstract class XotBaseModel extends EloquentModel
      *
      * Do **not** call as `CriteriOption::getClassName()` — LSB would stay on the prototype.
      *
-     * @param  class-string<EloquentModel>  $fallback  Prototype FQCN (basename reused; used if sibling missing)
+     * @param class-string<EloquentModel> $fallback Prototype FQCN (basename reused; used if sibling missing)
+     *
      * @return class-string<EloquentModel>
      */
     public static function getClassName(string $fallback): string
@@ -68,14 +69,14 @@ abstract class XotBaseModel extends EloquentModel
             ->append('\\'.$short)
             ->toString();
 
-        if (is_string($candidate) && $candidate !== '' && class_exists($candidate)) {
+        if (is_string($candidate) && '' !== $candidate && class_exists($candidate)) {
             Assert::subclassOf($candidate, EloquentModel::class);
 
-            /** @var class-string<EloquentModel> $candidate */
+            /* @var class-string<EloquentModel> $candidate */
             return $candidate;
         }
 
-        /** @var class-string<EloquentModel> $fallback */
+        /* @var class-string<EloquentModel> $fallback */
         return $fallback;
     }
 

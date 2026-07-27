@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Blade;
 
-use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
@@ -27,7 +26,7 @@ it('registers blade components correctly', function (): void {
     ]);
 
     /** @var GetComponentsAction&MockInterface $getComponents */
-    $getComponents = Mockery::mock(GetComponentsAction::class);
+    $getComponents = \Mockery::mock(GetComponentsAction::class);
     $getComponents->allows(['execute' => $mockComps]);
     app()->instance(GetComponentsAction::class, $getComponents);
 
@@ -46,7 +45,7 @@ it('does nothing if no components found', function (): void {
     $mockComps = ComponentFileData::collection([]);
 
     /** @var GetComponentsAction&MockInterface $getComponents */
-    $getComponents = Mockery::mock(GetComponentsAction::class);
+    $getComponents = \Mockery::mock(GetComponentsAction::class);
     $getComponents->allows(['execute' => $mockComps]);
     app()->instance(GetComponentsAction::class, $getComponents);
 
