@@ -49,6 +49,7 @@ use Webmozart\Assert\Assert;
  * Provides enhanced table functionality with translations and optimized structure.
  *
  * @property TableLayoutEnum $layoutView
+ * @property string|null $tableSearch
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
@@ -371,9 +372,23 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
-        $search = $this->tableSearch;
+        if (! property_exists($this, 'tableSearch')) {
+            return null;
+        }
 
+<<<<<<< HEAD
         return null !== $search ? SafeStringCastAction::cast($search) : null;
+=======
+        $tableSearch = $this->tableSearch;
+
+        if (! filled($tableSearch)) {
+            return null;
+        }
+
+        $trimmed = Str::trim(SafeStringCastAction::cast($tableSearch));
+
+        return $trimmed !== '' ? $trimmed : null;
+>>>>>>> 60535eec (Ignore .claude-audit)
     }
 
     /**
