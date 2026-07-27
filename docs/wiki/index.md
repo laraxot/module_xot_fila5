@@ -119,6 +119,7 @@ Aggiornato: 2026-07-27
 
 | Argomento | Doc |
 |-----------|-----|
+| Doppia registrazione provider | [module-providers-dual-registration-mandatory.md](./concepts/module-providers-dual-registration-mandatory.md) |
 | Trinità panel Filament (SSoT) | [module-filament-panel-triad.md](./concepts/module-filament-panel-triad.md) |
 | `config/config.php` | [module-config-php-religion.md](./concepts/module-config-php-religion.md) |
 | `AdminPanelProvider` + doppia registrazione | [module-admin-panel-provider-mandatory.md](./concepts/module-admin-panel-provider-mandatory.md) |
