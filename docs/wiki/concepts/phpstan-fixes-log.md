@@ -11,6 +11,7 @@
 - Fix: implementato `XotBaseModel::getClassName(string $fallback)` (sibling nello stesso `Models\` di `static`); chiamate `static::getClassName(CriteriOption::class)`.
 - Canon: [xotbasemodel-get-class-name.md](./xotbasemodel-get-class-name.md) · Ptv [criteri-model-class-resolution.md](../../../Ptv/docs/wiki/concepts/criteri-model-class-resolution.md)
 - Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules` → `[OK] No errors`.
+- Rivalida sera: `Modules` + `Modules Themes` → 0; `Themes` alone = ignore unmatched — [phpstan-stale-ignore-pattern](../../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
 
 # PHPStan Fixes Log - Story 8-121
 
