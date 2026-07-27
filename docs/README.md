@@ -3,7 +3,7 @@ title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
 tags: [module, documentation, framework, template]
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-27
 ---
 
 # 🏗️ Xot Module - Il Cuore del Framework Laraxot
@@ -14,7 +14,9 @@ updated: 2026-07-14
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![Modular Architecture](https://img.shields.io/badge/Architecture-Modular%20Monolith-yellow.svg)](https://martinfowler.com/articles/modular-monolith.html)
 
-> **🚀 Xot Module**: Framework base e cuore architetturale di Laraxot - fornisce classi base, traits, convenzioni e infrastruttura core per tutti i moduli dell'ecosistema.
+> **🚀 Xot Module**: Framework base e cuore architetturale di Laraxot.
+
+**Wiki operativo (2026-07-27):** [wiki/index.md](./wiki/index.md) — trinità panel (`config.php` + `AdminPanelProvider` + `Dashboard.php`), tenant `modules_statuses`.
 
 ## 📋 Overview
 
@@ -249,18 +251,18 @@ All modules depend on **Xot**. Never have circular dependencies.
 
 ## 🔗 Related Documentation
 
-- [Module Documentation Pattern](../../../docs/wiki/rules/module-documentation-pattern.md)
+- [Module Documentation Pattern](../../../../docs/wiki/rules/module-documentation-pattern.md)
 - [Architecture Rules](../../../docs/wiki/rules/)
 - [PHPStan Configuration](../../../phpstan.neon)
 - [Testing Guidelines](../../../docs/wiki/standards/)
 
 ### Moduli Dipendenti
 
-- [User Module](../User/docs/README.md) - Authentication & Authorization
-- [Cms Module](../Cms/docs/README.md) - Content Management
-- [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy
-- [Lang Module](../Lang/docs/README.md) - Translations
-- [Notify Module](../Notify/docs/README.md) - Notifications
+- [User Module](../../User/docs/README.md) - Authentication & Authorization
+- [Cms Module](../../Cms/docs/README.md) - Content Management
+- [Tenant Module](../../Tenant/docs/README.md) - Multi-tenancy
+- [Lang Module](../../Lang/docs/README.md) - Translations
+- [Notify Module](../../Notify/docs/README.md) - Notifications
 
 ## 🗺️ Roadmap
 
@@ -280,9 +282,9 @@ All modules depend on **Xot**. Never have circular dependencies.
 
 ## Standard Rules & Workflow
 
-- [[BMAD Method](../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../docs/wiki/concepts/llm-wiki-governance.md)]
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ---
 
