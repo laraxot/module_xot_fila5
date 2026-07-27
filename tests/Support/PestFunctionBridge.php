@@ -10,20 +10,88 @@ declare(strict_types=1);
  * test files. Runtime Pest remains unchanged because this file is a static
  * analysis bridge under the analyzed Modules tree, not a Pest bootstrap file.
  */
+<<<<<<< HEAD
 // Generated at: 2026-07-27T12:46:11+00:00
 // Namespaces: 216.
 // Unnamespaced test files: 787.
+=======
+// Generated at: 2026-07-22T20:16:21+00:00
+// Namespaces: 202.
 
+namespace Modules\AI\Tests {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+>>>>>>> ef8836ec (.)
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\AI\Tests\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\AI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -74,18 +142,76 @@ namespace Modules\AI\Tests\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\AI\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\AI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -198,18 +324,76 @@ namespace Modules\AI\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\AI\Tests\Unit\Services {
+<<<<<<< HEAD
     use Closure;
     use Modules\AI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -266,12 +450,70 @@ namespace Modules\AI\Tests\Unit\Support {
     use Closure;
     use Modules\AI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\AI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Activity\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -322,18 +564,76 @@ namespace Modules\AI\Tests\Unit\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -384,18 +684,76 @@ namespace Modules\Activity\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -446,18 +804,76 @@ namespace Modules\Activity\Tests\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Security {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -508,18 +924,76 @@ namespace Modules\Activity\Tests\Security {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -570,18 +1044,76 @@ namespace Modules\Activity\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -632,18 +1164,76 @@ namespace Modules\Activity\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit\Events {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -694,18 +1284,76 @@ namespace Modules\Activity\Tests\Unit\Events {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit\Listeners {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -756,18 +1404,76 @@ namespace Modules\Activity\Tests\Unit\Listeners {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -818,18 +1524,76 @@ namespace Modules\Activity\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit\Providers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -880,18 +1644,76 @@ namespace Modules\Activity\Tests\Unit\Providers {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Activity\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Activity\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -948,12 +1770,70 @@ namespace Modules\AiAssistant\Tests\Feature {
     use Closure;
     use Modules\AiAssistant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Activity\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Chart\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1128,17 +2008,70 @@ namespace Modules\Catalog\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Chart\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Chart\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Chart\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Chart\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Chart\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests {
-    use Closure;
-    use Modules\Xot\Tests\Support\PestExpectation;
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1189,18 +2122,76 @@ namespace Modules\Cms\Tests {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1251,18 +2242,76 @@ namespace Modules\Cms\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Feature\Auth {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1313,18 +2362,76 @@ namespace Modules\Cms\Tests\Feature\Auth {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Feature\Frontoffice {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1375,18 +2482,76 @@ namespace Modules\Cms\Tests\Feature\Frontoffice {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1437,18 +2602,76 @@ namespace Modules\Cms\Tests\Feature\Frontoffice\FolioRoutes {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1499,18 +2722,76 @@ namespace Modules\Cms\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Unit\Http\Volt {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1561,18 +2842,76 @@ namespace Modules\Cms\Tests\Unit\Http\Volt {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1623,18 +2962,76 @@ namespace Modules\Cms\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Cms\Tests\Unit\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\Cms\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1691,12 +3088,70 @@ namespace Modules\Compliance\Tests\Unit {
     use Closure;
     use Modules\Compliance\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Cms\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\DbForge\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -1753,12 +3208,70 @@ namespace Modules\Customer\Tests\Feature {
     use Closure;
     use Modules\Customer\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\DbForge\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\DbForge\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\DbForge\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\DbForge\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\DbForge\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Gdpr\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2243,18 +3756,76 @@ namespace Modules\EnergyBroker\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2305,18 +3876,76 @@ namespace Modules\Gdpr\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Feature\Auth {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2367,18 +3996,76 @@ namespace Modules\Gdpr\Tests\Feature\Auth {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2429,18 +4116,76 @@ namespace Modules\Gdpr\Tests\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2491,18 +4236,76 @@ namespace Modules\Gdpr\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Unit\Filament\Resources {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2553,18 +4356,76 @@ namespace Modules\Gdpr\Tests\Unit\Filament\Resources {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2615,18 +4476,76 @@ namespace Modules\Gdpr\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Unit\Providers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2677,18 +4596,76 @@ namespace Modules\Gdpr\Tests\Unit\Providers {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Gdpr\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Gdpr\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2739,17 +4716,70 @@ namespace Modules\Gdpr\Tests\Unit\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Gdpr\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests {
-    use Closure;
-    use Modules\Xot\Tests\Support\PestExpectation;
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2800,18 +4830,76 @@ namespace Modules\Geo\Tests {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2862,18 +4950,76 @@ namespace Modules\Geo\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Feature\Filament\Forms\Components {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2924,18 +5070,76 @@ namespace Modules\Geo\Tests\Feature\Filament\Forms\Components {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -2986,18 +5190,76 @@ namespace Modules\Geo\Tests\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Fixtures\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3048,18 +5310,76 @@ namespace Modules\Geo\Tests\Fixtures\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3110,18 +5430,76 @@ namespace Modules\Geo\Tests\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3172,18 +5550,76 @@ namespace Modules\Geo\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3234,18 +5670,76 @@ namespace Modules\Geo\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\Bing {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3296,18 +5790,76 @@ namespace Modules\Geo\Tests\Unit\Actions\Bing {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\Elevation {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3358,18 +5910,76 @@ namespace Modules\Geo\Tests\Unit\Actions\Elevation {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\GeoData {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3420,18 +6030,76 @@ namespace Modules\Geo\Tests\Unit\Actions\GeoData {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\GoogleMaps {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3482,18 +6150,76 @@ namespace Modules\Geo\Tests\Unit\Actions\GoogleMaps {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\Here {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3544,18 +6270,76 @@ namespace Modules\Geo\Tests\Unit\Actions\Here {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\IPGeolocation {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3606,18 +6390,76 @@ namespace Modules\Geo\Tests\Unit\Actions\IPGeolocation {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\LocationIQ {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3668,18 +6510,76 @@ namespace Modules\Geo\Tests\Unit\Actions\LocationIQ {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\Mapbox {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3730,18 +6630,76 @@ namespace Modules\Geo\Tests\Unit\Actions\Mapbox {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Actions\Nominatim {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3792,18 +6750,76 @@ namespace Modules\Geo\Tests\Unit\Actions\Nominatim {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Adapters {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3854,18 +6870,76 @@ namespace Modules\Geo\Tests\Unit\Adapters {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\DataTransferObjects {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3916,18 +6990,76 @@ namespace Modules\Geo\Tests\Unit\DataTransferObjects {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Datas {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -3978,18 +7110,76 @@ namespace Modules\Geo\Tests\Unit\Datas {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Enums {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4040,18 +7230,76 @@ namespace Modules\Geo\Tests\Unit\Enums {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Filament {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4102,18 +7350,76 @@ namespace Modules\Geo\Tests\Unit\Filament {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Filament\Forms {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4164,18 +7470,76 @@ namespace Modules\Geo\Tests\Unit\Filament\Forms {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Filament\Forms\Components {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4226,18 +7590,76 @@ namespace Modules\Geo\Tests\Unit\Filament\Forms\Components {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Filament\Widgets {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4288,18 +7710,76 @@ namespace Modules\Geo\Tests\Unit\Filament\Widgets {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4350,18 +7830,76 @@ namespace Modules\Geo\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Models\Policies {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4412,18 +7950,76 @@ namespace Modules\Geo\Tests\Unit\Models\Policies {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4474,18 +8070,76 @@ namespace Modules\Geo\Tests\Unit\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Geo\Tests\Unit\Transformers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Geo\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4542,12 +8196,70 @@ namespace Modules\HR\Tests\Feature {
     use Closure;
     use Modules\HR\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Geo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Job\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4598,18 +8310,76 @@ namespace Modules\HR\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4660,18 +8430,76 @@ namespace Modules\Job\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4722,18 +8550,76 @@ namespace Modules\Job\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Actions\Command {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4784,18 +8670,76 @@ namespace Modules\Job\Tests\Unit\Actions\Command {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Actions\Schedule {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4846,18 +8790,76 @@ namespace Modules\Job\Tests\Unit\Actions\Schedule {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Enums {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4908,18 +8910,76 @@ namespace Modules\Job\Tests\Unit\Enums {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Events {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -4970,18 +9030,76 @@ namespace Modules\Job\Tests\Unit\Events {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5032,18 +9150,76 @@ namespace Modules\Job\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Providers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5156,18 +9332,137 @@ namespace Modules\Job\Tests\Unit\Services {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Job\Tests\Unit\Services {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Job\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Job\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5218,18 +9513,137 @@ namespace Modules\Job\Tests\Unit\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
 }
 
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Job\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Lang\Tests {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Lang\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Lang\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5280,18 +9694,76 @@ namespace Modules\Lang\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Lang\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Lang\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5348,12 +9820,131 @@ namespace Modules\Lang\Tests\Unit\Services {
     use Closure;
     use Modules\Lang\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Lang\Tests\Unit\Services {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Lang\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Limesurvey\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5404,18 +9995,259 @@ namespace Modules\Lang\Tests\Unit\Services {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
 }
 
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Limesurvey\Tests\Feature {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Limesurvey\Tests\Unit {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Limesurvey\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Media\Tests {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Media\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Media\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5466,18 +10298,76 @@ namespace Modules\Media\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Media\Tests\Filament\Resources {
+<<<<<<< HEAD
     use Closure;
     use Modules\Media\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5528,18 +10418,76 @@ namespace Modules\Media\Tests\Filament\Resources {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Media\Tests\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\Media\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5590,18 +10538,76 @@ namespace Modules\Media\Tests\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Media\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Media\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5652,18 +10658,76 @@ namespace Modules\Media\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Media\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Media\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5714,18 +10778,137 @@ namespace Modules\Media\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
 }
 
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Media\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Notify\Tests {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5776,18 +10959,76 @@ namespace Modules\Notify\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5838,18 +11079,76 @@ namespace Modules\Notify\Tests\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5900,18 +11199,76 @@ namespace Modules\Notify\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -5962,18 +11319,76 @@ namespace Modules\Notify\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions\Mail {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6024,18 +11439,76 @@ namespace Modules\Notify\Tests\Unit\Actions\Mail {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6086,18 +11559,76 @@ namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme\Attachment {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6148,18 +11679,76 @@ namespace Modules\Notify\Tests\Unit\Actions\NotifyTheme\Attachment {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions\SMS {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6210,18 +11799,76 @@ namespace Modules\Notify\Tests\Unit\Actions\SMS {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions\Telegram {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6272,18 +11919,76 @@ namespace Modules\Notify\Tests\Unit\Actions\Telegram {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Actions\WhatsApp {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6334,18 +12039,76 @@ namespace Modules\Notify\Tests\Unit\Actions\WhatsApp {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Channels {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6396,18 +12159,76 @@ namespace Modules\Notify\Tests\Unit\Channels {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Console {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6458,18 +12279,76 @@ namespace Modules\Notify\Tests\Unit\Console {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Console\Commands {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6520,18 +12399,76 @@ namespace Modules\Notify\Tests\Unit\Console\Commands {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Datas {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6582,18 +12519,76 @@ namespace Modules\Notify\Tests\Unit\Datas {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Datas\SMS {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6644,18 +12639,76 @@ namespace Modules\Notify\Tests\Unit\Datas\SMS {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Emails {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6706,18 +12759,76 @@ namespace Modules\Notify\Tests\Unit\Emails {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Enums {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6768,18 +12879,76 @@ namespace Modules\Notify\Tests\Unit\Enums {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Factories {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6830,18 +12999,76 @@ namespace Modules\Notify\Tests\Unit\Factories {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Filament\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6892,18 +13119,76 @@ namespace Modules\Notify\Tests\Unit\Filament\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Filament\Forms\Components {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -6954,18 +13239,76 @@ namespace Modules\Notify\Tests\Unit\Filament\Forms\Components {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Filament\Pages {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7016,18 +13359,76 @@ namespace Modules\Notify\Tests\Unit\Filament\Pages {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Filament\Resources {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7078,18 +13479,76 @@ namespace Modules\Notify\Tests\Unit\Filament\Resources {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7140,18 +13599,76 @@ namespace Modules\Notify\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Models\Policies {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7202,18 +13719,76 @@ namespace Modules\Notify\Tests\Unit\Models\Policies {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Models\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7264,18 +13839,76 @@ namespace Modules\Notify\Tests\Unit\Models\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Notifications {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7326,18 +13959,76 @@ namespace Modules\Notify\Tests\Unit\Notifications {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Notifications\Channels {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7388,18 +14079,76 @@ namespace Modules\Notify\Tests\Unit\Notifications\Channels {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Providers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7512,18 +14261,76 @@ namespace Modules\Notify\Tests\Unit\Services {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Notify\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Notify\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -7580,12 +14387,70 @@ namespace Modules\PublicProcurement\Tests\Unit {
     use Closure;
     use Modules\PublicProcurement\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Notify\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Seo\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8194,17 +15059,70 @@ namespace Modules\Seo\Tests\Unit\Services {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Seo\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Seo\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Seo\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Seo\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Seo\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests {
-    use Closure;
-    use Modules\Xot\Tests\Support\PestExpectation;
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8255,18 +15173,76 @@ namespace Modules\Tenant\Tests {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8317,18 +15293,137 @@ namespace Modules\Tenant\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Tenant\Tests\Fixtures\Traits {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Integration {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8379,18 +15474,76 @@ namespace Modules\Tenant\Tests\Integration {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Integration\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8441,18 +15594,76 @@ namespace Modules\Tenant\Tests\Integration\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Performance {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8503,18 +15714,76 @@ namespace Modules\Tenant\Tests\Performance {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8565,18 +15834,76 @@ namespace Modules\Tenant\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8627,18 +15954,76 @@ namespace Modules\Tenant\Tests\Unit\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Actions\Config {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8689,18 +16074,76 @@ namespace Modules\Tenant\Tests\Unit\Actions\Config {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Actions\Domains {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8751,18 +16194,76 @@ namespace Modules\Tenant\Tests\Unit\Actions\Domains {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Actions\Markdown {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8813,18 +16314,76 @@ namespace Modules\Tenant\Tests\Unit\Actions\Markdown {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Actions\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8875,18 +16434,76 @@ namespace Modules\Tenant\Tests\Unit\Actions\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -8937,18 +16554,76 @@ namespace Modules\Tenant\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Tenant\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Tenant\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9005,12 +16680,70 @@ namespace Modules\TimberBilling\Tests\Unit {
     use Closure;
     use Modules\TimberBilling\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
 
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Tenant\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\UI\Tests {
+>>>>>>> ef8836ec (.)
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9061,18 +16794,76 @@ namespace Modules\TimberBilling\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9123,18 +16914,76 @@ namespace Modules\UI\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Feature\Filament\Widgets {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9185,18 +17034,76 @@ namespace Modules\UI\Tests\Feature\Filament\Widgets {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9247,18 +17154,76 @@ namespace Modules\UI\Tests\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9309,18 +17274,76 @@ namespace Modules\UI\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Components {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9371,18 +17394,76 @@ namespace Modules\UI\Tests\Unit\Components {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Datas {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9433,18 +17514,76 @@ namespace Modules\UI\Tests\Unit\Datas {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Enums {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9495,18 +17634,76 @@ namespace Modules\UI\Tests\Unit\Enums {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Filament\Widgets {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9557,18 +17754,76 @@ namespace Modules\UI\Tests\Unit\Filament\Widgets {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9619,18 +17874,76 @@ namespace Modules\UI\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9681,18 +17994,76 @@ namespace Modules\UI\Tests\Unit\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Widgets {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9743,18 +18114,76 @@ namespace Modules\UI\Tests\Unit\Widgets {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\UI\Tests\Unit\Widgets\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\UI\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9805,18 +18234,137 @@ namespace Modules\UI\Tests\Unit\Widgets\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
 }
 
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\UI\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\User\Tests {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Fakes {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9867,18 +18415,76 @@ namespace Modules\User\Tests\Fakes {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9929,18 +18535,76 @@ namespace Modules\User\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -9991,18 +18655,76 @@ namespace Modules\User\Tests\Feature\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Actions\Socialite {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10053,18 +18775,76 @@ namespace Modules\User\Tests\Feature\Actions\Socialite {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Authentication {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10115,18 +18895,76 @@ namespace Modules\User\Tests\Feature\Authentication {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Database\Migrations {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10177,18 +19015,76 @@ namespace Modules\User\Tests\Feature\Database\Migrations {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10239,18 +19135,76 @@ namespace Modules\User\Tests\Feature\Filament {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament\Actions {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10301,18 +19255,76 @@ namespace Modules\User\Tests\Feature\Filament\Actions {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament\Clusters {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10363,18 +19375,76 @@ namespace Modules\User\Tests\Feature\Filament\Clusters {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament\Pages {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10425,18 +19495,76 @@ namespace Modules\User\Tests\Feature\Filament\Pages {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament\Resources {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10487,18 +19615,76 @@ namespace Modules\User\Tests\Feature\Filament\Resources {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament\Widgets {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10549,18 +19735,76 @@ namespace Modules\User\Tests\Feature\Filament\Widgets {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Filament\Widgets\Auth {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10611,18 +19855,76 @@ namespace Modules\User\Tests\Feature\Filament\Widgets\Auth {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10673,18 +19975,76 @@ namespace Modules\User\Tests\Feature\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Feature\Passport {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10735,18 +20095,76 @@ namespace Modules\User\Tests\Feature\Passport {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10797,18 +20215,76 @@ namespace Modules\User\Tests\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10859,18 +20335,76 @@ namespace Modules\User\Tests\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10921,18 +20455,76 @@ namespace Modules\User\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -10983,18 +20575,76 @@ namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11045,18 +20695,76 @@ namespace Modules\User\Tests\Unit\Actions\Socialite\Utils {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Datas {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11107,18 +20815,76 @@ namespace Modules\User\Tests\Unit\Datas {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Events {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11169,18 +20935,76 @@ namespace Modules\User\Tests\Unit\Events {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11231,18 +21055,76 @@ namespace Modules\User\Tests\Unit\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Models\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11293,18 +21175,76 @@ namespace Modules\User\Tests\Unit\Models\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Models\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11355,18 +21295,76 @@ namespace Modules\User\Tests\Unit\Models\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Models\Traits\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11417,18 +21415,76 @@ namespace Modules\User\Tests\Unit\Models\Traits\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\QuickWins\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11479,18 +21535,76 @@ namespace Modules\User\Tests\Unit\QuickWins\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11541,18 +21655,76 @@ namespace Modules\User\Tests\Unit\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\User\Tests\Unit\Traits\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\User\Tests\TestCase;
     use Modules\Xot\Tests\Support\PestExpectation;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11789,17 +21961,70 @@ namespace Modules\WorkOrder\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\User\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests {
-    use Closure;
-    use Modules\Xot\Tests\Support\PestExpectation;
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11850,18 +22075,76 @@ namespace Modules\Xot\Tests {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Feature {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11912,18 +22195,76 @@ namespace Modules\Xot\Tests\Feature {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Feature\Actions\Pdf {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -11974,18 +22315,76 @@ namespace Modules\Xot\Tests\Feature\Actions\Pdf {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Feature\Filament {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12036,18 +22435,76 @@ namespace Modules\Xot\Tests\Feature\Filament {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Feature\Filament\MockResourceWithRelations\RelationManagers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12098,18 +22555,76 @@ namespace Modules\Xot\Tests\Feature\Filament\MockResourceWithRelations\RelationM
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12160,18 +22675,76 @@ namespace Modules\Xot\Tests\Fixtures {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures\Enums {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12222,18 +22795,76 @@ namespace Modules\Xot\Tests\Fixtures\Enums {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12284,18 +22915,76 @@ namespace Modules\Xot\Tests\Fixtures\Filament\Resources {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\Pages {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12346,18 +23035,76 @@ namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\Pages {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\RelationManagers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12408,18 +23155,76 @@ namespace Modules\Xot\Tests\Fixtures\Filament\Resources\ProbeResource\RelationMa
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures\Models {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12470,18 +23275,76 @@ namespace Modules\Xot\Tests\Fixtures\Models {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Fixtures\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12532,17 +23395,75 @@ namespace Modules\Xot\Tests\Fixtures\Traits {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12593,18 +23514,76 @@ namespace Modules\Xot\Tests\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12655,18 +23634,76 @@ namespace Modules\Xot\Tests\Unit {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Actions\Arr {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12717,18 +23754,76 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Actions\Array {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12841,18 +23936,137 @@ namespace Modules\Xot\Tests\Unit\Actions\Blade {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
+namespace Modules\Xot\Tests\Unit\Actions\Blade {
+
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
+
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Actions\Cast {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12903,18 +24117,76 @@ namespace Modules\Xot\Tests\Unit\Actions\Cast {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Actions\Config {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -12965,18 +24237,76 @@ namespace Modules\Xot\Tests\Unit\Actions\Config {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Actions\File {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13027,18 +24357,76 @@ namespace Modules\Xot\Tests\Unit\Actions\File {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Actions\Model {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13089,18 +24477,76 @@ namespace Modules\Xot\Tests\Unit\Actions\Model {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Datas {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13151,18 +24597,76 @@ namespace Modules\Xot\Tests\Unit\Datas {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Filament {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13213,18 +24717,76 @@ namespace Modules\Xot\Tests\Unit\Filament {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Helpers {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13275,18 +24837,76 @@ namespace Modules\Xot\Tests\Unit\Helpers {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Support {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13337,18 +24957,76 @@ namespace Modules\Xot\Tests\Unit\Support {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
 }
 
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
+}
 namespace Modules\Xot\Tests\Unit\Traits {
+<<<<<<< HEAD
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> ef8836ec (.)
 
-    function expect(mixed $value = null): PestExpectation
-    {
-        return new PestExpectation($value);
-    }
+use Closure;
+use Modules\Xot\Tests\Support\PestExpectation;
 
+<<<<<<< HEAD
     /**
      * @param-closure-this TestCase $closure
      */
@@ -13461,4 +25139,61 @@ namespace {
     function skip(mixed ...$arguments): void
     {
     }
+=======
+function expect(mixed $value = null): PestExpectation
+{
+    return new PestExpectation($value);
+>>>>>>> ef8836ec (.)
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function test(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function it(string $description, ?Closure $closure = null): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function describe(string $description, Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function beforeEach(Closure $closure): void
+{
+}
+
+/**
+ * @param-closure-this \Modules\Xot\Tests\TestCase $closure
+ */
+function afterEach(Closure $closure): void
+{
+}
+
+/**
+ * @param class-string ...$classes
+ */
+function uses(string ...$classes): void
+{
+}
+
+/**
+ * Pest skip helper — stub per PHPStan (runtime: Pest globale).
+ *
+ * @param  string|bool  ...$arguments
+ */
+function skip(mixed ...$arguments): void
+{
+}
 }
