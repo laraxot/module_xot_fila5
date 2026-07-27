@@ -38,7 +38,7 @@ module_activity_fila5  →  _module_activity.code-workspace
 
 Moduli solo monorepo (remote `base_*`): fallback `_module_{alias}` da `module.json`.
 
-Fix: `bash bashscripts/tools/fix-module-theme-workspaces.sh`
+Fix: `bash bashscripts/tools/fix-module-theme-root-hygiene.sh` (completo) · `fix-module-theme-workspaces.sh` (solo workspace)
 
 ## 3. IDE folders — vietate in root
 
