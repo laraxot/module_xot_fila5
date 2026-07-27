@@ -41,6 +41,7 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use RuntimeException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -136,7 +137,7 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
-                        if (null === $state || '' === $state) {
+                        if ($state === null || $state === '') {
                             return $labelText.': —';
                         }
 
@@ -223,12 +224,12 @@ trait HasXotTable
         // Configurazioni opzionali personalizzabili
         $sortColumn = $this->getDefaultTableSortColumn();
         $sortDirection = $this->getDefaultTableSortDirection();
-        if (null !== $sortColumn && null !== $sortDirection) {
+        if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if (null !== $pollInterval) {
+        if ($pollInterval !== null) {
             $table = $table->poll($pollInterval);
         }
 
@@ -345,9 +346,10 @@ trait HasXotTable
     /**
      * Get model class.
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
+     *
+     * @throws \Exception Se non viene trovata una classe modello valida
      */
     public function getModelClass(): string
     {
@@ -361,7 +363,7 @@ trait HasXotTable
             return $model;
         }
 
-        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
@@ -371,9 +373,9 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
-        $search = $this->tableSearch ?? null;
+        $search = $this->tableSearch;
 
-        return null !== $search ? SafeStringCastAction::cast($search) : null;
+        return $search !== null ? SafeStringCastAction::cast($search) : null;
     }
 
     /**
