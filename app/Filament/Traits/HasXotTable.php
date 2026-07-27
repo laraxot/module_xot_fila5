@@ -376,19 +376,7 @@ trait HasXotTable
             return null;
         }
 
-<<<<<<< HEAD
         return null !== $search ? SafeStringCastAction::cast($search) : null;
-=======
-        $tableSearch = $this->tableSearch;
-
-        if (! filled($tableSearch)) {
-            return null;
-        }
-
-        $trimmed = Str::trim(SafeStringCastAction::cast($tableSearch));
-
-        return $trimmed !== '' ? $trimmed : null;
->>>>>>> 60535eec (Ignore .claude-audit)
     }
 
     /**
