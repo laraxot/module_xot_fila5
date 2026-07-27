@@ -4,13 +4,10 @@ type: concept
 module: Xot
 tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
-<<<<<<< HEAD
 updated: 2026-07-24
 qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
-=======
 updated: 2026-07-22
 qmd: "Xot phpstan pest bridge discipline Assert method.internalClass Mockery allows"
->>>>>>> ef8836ec (.)
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
