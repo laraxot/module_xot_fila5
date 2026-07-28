@@ -13,14 +13,14 @@ use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
 
 /**
- * @method string               getId()
- * @method string               getName()
- * @method NwidartModule        getModule()
+ * @method string getId()
+ * @method string getName()
+ * @method NwidartModule getModule()
  * @method array<string, mixed> getConfig()
  * @method array<string, mixed> getModuleConfig()
- * @method string               getNavigationLabel()
- * @method string               getNavigationIcon()
- * @method int                  getNavigationSort()
+ * @method string getNavigationLabel()
+ * @method string getNavigationIcon()
+ * @method int getNavigationSort()
  */
 class PanelMixin
 {
@@ -31,9 +31,8 @@ class PanelMixin
     {
         return function (): string {
             $id = $this->getId();
-            $name = Str::before($id, '::');
 
-            return $name;
+            return Str::before($id, '::');
         };
     }
 
@@ -44,9 +43,8 @@ class PanelMixin
     {
         return function (): NwidartModule {
             $name = $this->getName();
-            $module = Module::find($name);
 
-            return $module;
+            return Module::find($name);
         };
     }
 
@@ -57,9 +55,8 @@ class PanelMixin
     {
         return function (): array {
             $name = $this->getName();
-            $config = Config::array($name);
 
-            return $config;
+            return Config::array($name);
         };
     }
 

@@ -15,11 +15,18 @@ discussions:
 
 # Activity Log — Xot
 
+<<<<<<< HEAD
+## [2026-07-22] cleanup | Support + Services.old
+
+- Cancellati `app/Support/` (orfani già migrati ad Actions/Adapters) e `app/Services.old/` (archivio confuso).
+- Canon: [no-services-no-support-queueable-actions](./concepts/no-services-no-support-queueable-actions.md) · [no-app-support-queueable-actions](./concepts/no-app-support-queueable-actions.md).
+=======
 ## [2026-07-24] architecture | no domain Actions in Xot
 
 - Concept: [no-domain-actions-in-xot.md](concepts/no-domain-actions-in-xot.md)
 - Rimosse/spostate: AI/Ollama → AI, ContextCompressor → AI, Geo duplicati eliminati
 - Root: `domain-actions-belong-to-domain-module` · skill `xot-is-framework-base`
+>>>>>>> 09d6105 (.)
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
 

@@ -7,9 +7,11 @@ namespace Modules\Xot\Models;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Support\Str;
+use Illuminate\Support\Arr;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+
 use Webmozart\Assert\Assert;
 
 /**
@@ -47,37 +49,38 @@ abstract class XotBaseModel extends EloquentModel
     ];
 
     /**
-     * Sibling model in the same `Models\` namespace as the calling leaf (`static::class`).
-     *
-     * Call from the leaf/base that owns the relation context, e.g. from `BaseScheda`:
-     * `static::getClassName(CriteriOption::class)` → `Progressioni\Models\CriteriOption`
-     * when `static` is `Progressioni\Models\Scheda`.
-     *
-     * Do **not** call as `CriteriOption::getClassName()` — LSB would stay on the prototype.
-     *
-     * @param class-string<EloquentModel> $fallback Prototype FQCN (basename reused; used if sibling missing)
+     * Resolve the concrete model class for the caller's module.
      *
      * @return class-string<EloquentModel>
      */
-    public static function getClassName(string $fallback): string
+    public static function getClassName(): string
     {
-        Assert::subclassOf($fallback, EloquentModel::class);
 
-        $short = class_basename($fallback);
-        $candidate = Str::of(static::class)
-            ->beforeLast('\\')
-            ->append('\\'.$short)
-            ->toString();
+        $object = Arr::first(debug_backtrace(), function (array $value) {
+            return isset($value['object']) &&
+            ( Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\') );
+        });
 
-        if (is_string($candidate) && '' !== $candidate && class_exists($candidate)) {
-            Assert::subclassOf($candidate, EloquentModel::class);
-
-            /* @var class-string<EloquentModel> $candidate */
-            return $candidate;
+        if (! isset($object['object'])) {
+            throw new \RuntimeException('Unable to resolve caller object for getClassName()');
         }
 
-        /* @var class-string<EloquentModel> $fallback */
-        return $fallback;
+        $objectClass = $object['object']::class;
+        if (method_exists($object['object'], 'getModelClass')){
+            $objectClass = $object['object']->getModelClass();
+        }
+
+
+        $namespace = Str::beforeLast($objectClass, '\Models\\');
+        $className = Str::afterLast(static::class, '\\');
+        //dddx(['namespace'=>$namespace, 'className'=>$className,'static'=>static::class]);
+
+
+        $res = $namespace . '\\Models\\' . $className;
+        Assert::classExists($res);
+        Assert::subclassOf($res, EloquentModel::class);
+
+        return $res;
     }
 
     /** @return array<string, string> */

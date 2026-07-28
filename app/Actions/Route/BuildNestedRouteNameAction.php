@@ -4,20 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Route;
 
+use Modules\Xot\Datas\RouteParamsData;
 use Spatie\QueueableAction\QueueableAction;
 
 class BuildNestedRouteNameAction
 {
     use QueueableAction;
 
-    /** @param array<string, mixed> $params */
-    public function execute(array $params): string
+    public function execute(RouteParamsData $params): string
     {
-        $depth = is_numeric($params['n'] ?? null) ? (int) $params['n'] : 0;
-        $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
-        $parts = inAdmin($params) ? ['admin'] : [];
+        $depth = $params->n ?? 0;
+        $action = $params->act ?? 'show';
+        $parts = inAdmin(['in_admin' => $params->in_admin]) ? ['admin'] : [];
 
-        for ($i = 0; $i <= $depth; ++$i) {
+        for ($i = 0; $i <= $depth; $i++) {
             $parts[] = 'container'.$i;
         }
 

@@ -6,6 +6,8 @@ namespace Modules\Xot\Filament\Widgets;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 class StatesChartWidget extends XotBaseChartWidget
 {
@@ -49,8 +51,11 @@ class StatesChartWidget extends XotBaseChartWidget
                 ->groupBy('state')
                 ->get();
             foreach ($rows as $row) {
-                $state = (string) ($row->state ?? '');
-                $states[$state] = (int) ($row->count ?? 0);
+                /** @var string $state */
+                $state = SafeStringCastAction::cast($row->state ?? '');
+                /** @var int $count */
+                $count = (int) ($row->count ?? 0);
+                $states[$state] = $count;
             }
 
             $data = [];

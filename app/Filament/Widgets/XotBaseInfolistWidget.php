@@ -42,7 +42,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     public function infolist(Schema $schema): Schema
     {
         $record = $this->getInfolistRecord();
-        if (null !== $record) {
+        if ($record !== null) {
             $schema->record($record);
         }
 
@@ -68,6 +68,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
                 $this->view = $view;
             }
         } catch (\Exception) {
+            // Keep the default view if the class-based view cannot be resolved.
         }
     }
 }

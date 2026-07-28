@@ -895,4 +895,9 @@ Se incontri problemi:
 ---
 
 *Documento mantenuto da: Marco Sottana*
+<<<<<<< HEAD
+*Ultimo aggiornamento: 2026-01-30*
+*Progetto: Laraxot / base_laravelpizza*
+=======
 *Progetto: Laraxot / base_<nome progetto>*
+>>>>>>> 09d6105 (.)

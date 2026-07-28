@@ -14,16 +14,13 @@ class CreateMorphToOneRelatedModelAction
     use QueueableAction;
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     public function execute(object $relation, array $attributes): Model
     {
         $this->assertHasCreate($relation);
 
-        $created = $relation->create($attributes);
-        Assert::isInstanceOf($created, Model::class);
-
-        return $created;
+        return $relation->create($attributes);
     }
 
     /**

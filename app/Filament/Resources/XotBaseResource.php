@@ -24,10 +24,9 @@ use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Webmozart\Assert\Assert;
 
 use function Safe\glob;
-
-use Webmozart\Assert\Assert;
 
 /**
  * @method static string getUrl(?string $name = null, array<string, mixed> $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?\Illuminate\Database\Eloquent\Model $tenant = null, bool $shouldGuessMissingParameters = false, ?string $configuration = null)
@@ -41,7 +40,7 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -81,7 +80,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
-        if (null !== static::$model) {
+        if (static::$model !== null) {
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -115,6 +114,7 @@ abstract class XotBaseResource extends FilamentResource
         // return AuthorForm::configure($schema);
         $name = class_basename(static::getModel());
         $form_class = static::class.'\Schemas\\'.$name.'Form';
+
         if (class_exists($form_class)) {
             $configured = $form_class::configure($schema);
             Assert::isInstanceOf($configured, Schema::class);
@@ -166,6 +166,7 @@ abstract class XotBaseResource extends FilamentResource
     final public static function infolist(Schema $schema): Schema
     {
         $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
+
         if (class_exists($class)) {
             $configured = $class::configure($schema);
             Assert::isInstanceOf($configured, Schema::class);
@@ -257,7 +258,7 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
-        if ([] === $filesResult) {
+        if ($filesResult === []) {
             return [];
         }
 

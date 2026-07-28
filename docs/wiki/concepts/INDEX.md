@@ -9,6 +9,13 @@ Index for Xot module concepts.
 qmd search "Xot concepts" --limit 5
 ```
 
+<<<<<<< HEAD
+## See Also
+- [field-refresh-action](./field-refresh-action.md) — ricalcolo campo form dal record tramite getter studly
+- [composer-merge-plugin-modules-only](./composer-merge-plugin-modules-only.md) — merge solo moduli, mai temi
+- [composer-root-skeleton-modular](./composer-root-skeleton-modular.md) — Root Composer minimo: skeleton Laravel + `nwidart/laravel-modules`; moduli owner delle dipendenze.
+- [module-testcase-xotbase-hierarchy](./module-testcase-xotbase-hierarchy.md) — TestCase moduli -> XotBaseTestCase; Nwidart v13 non fornisce BaseTestCase.
+=======
 ## Moduli & skeleton (2026-07-27)
 
 - [module-theme-root-hygiene.md](./module-theme-root-hygiene.md) — root lowercase, workspace, IDE folders vietate
@@ -34,6 +41,7 @@ qmd search "Xot concepts" --limit 5
 - [xotbasemodel-get-class-name.md](./xotbasemodel-get-class-name.md) — sibling model nel namespace leaf (`static::getClassName`)
 - [phpstan-trait-probes.md](./phpstan-trait-probes.md) — trait `unused` → probe host
 - [trend-action-delegation.md](./trend-action-delegation.md) — Action come confine
+>>>>>>> 09d6105 (.)
 - [Ridondanze cross-cutting (hub)](./ridondanze-cross-cutting-codebase.md)
 
 ## Composer

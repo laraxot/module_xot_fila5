@@ -7,7 +7,8 @@ _bmad-output
 .claude-audit
 .devcontainer
 _docs
-docs/archive
+docs/archive/
+docs/archive/**
 docs/archived
 docs/legacy
 docs/workbench
@@ -148,7 +149,21 @@ docs/**/bashscripts/
 .vscode/
 .windsurf/
 .claude
+.claude-audit/
+Helpers/
+
+# Local vector DB (agent tooling)
+ruvector.db
 
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
+
+# LFS image files (removed from git history via filter-repo, 2026-07-28)
+# See docs/LFS_RESOLUTION_2026_07_28.md
+docs/assets/images/
+docs/assets/img/
+docs/screenshots/
+packages/coolsam/panel-modules/img*.png
+resources/assets/img/
+resources/img/
