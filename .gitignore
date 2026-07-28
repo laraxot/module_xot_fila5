@@ -167,3 +167,4 @@ docs/screenshots/
 packages/coolsam/panel-modules/img*.png
 resources/assets/img/
 resources/img/
+phpstan*
