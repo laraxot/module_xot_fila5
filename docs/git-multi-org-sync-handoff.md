@@ -3,7 +3,11 @@ title: "Handoff multi-org sync (STORY-003)"
 type: handoff
 tags: [git, multi-org, bmad, story-003]
 created: 2026-07-21
+<<<<<<< HEAD
+updated: 2026-07-21
+=======
 updated: 2026-07-23
+>>>>>>> 09d6105 (.)
 module: "Xot"
 issues:
   - "https://github.com/provtv/module_xot_fila5/issues/14"
@@ -41,6 +45,8 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 ## Note owner
 
 Seguire sync multi-org e mantenere docs allineate alla story.
+<<<<<<< HEAD
+=======
 
 ### Playbook push dual-remote (2026-07-22)
 
@@ -52,3 +58,4 @@ Forward-only: niente reset/squash/force per aggirare LFS.
 
 `merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
 [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
+>>>>>>> 09d6105 (.)

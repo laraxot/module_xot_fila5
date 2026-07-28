@@ -181,8 +181,10 @@ See `app/Models/` directory for complete list.
 - `config/xot.php` - Main configuration
 
 ### Core Classes
-- `app/Support/` - Utility classes
+- `app/Actions/` - QueueableAction (use case)
+- `app/Adapters/` - Binding multi-metodo (Filament, PDF, …)
 - `app/Contracts/` - Interface definitions
+- ~~`app/Support/` / `app/Services.old/`~~ — **vietati** ([no-services-no-support](wiki/concepts/no-services-no-support-queueable-actions.md))
 
 ### Database
 - `database/migrations/` - Schema migrations

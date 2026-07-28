@@ -1,14 +1,28 @@
+---
+title: "phpstan.neon immutabile (Xot bridge)"
+type: concept
+tags: [phpstan, neon, immutable, agents]
+created: 2026-06-11
+updated: 2026-07-22
+qmd: "phpstan neon immutabile solo utente laravel phpstan no temp"
+issues:
+  - "https://github.com/provtv/base_ptv_fila5/issues/180"
+related:
+  - "../../../../docs/wiki/guidelines/phpstan-config-immutability.md"
+  - "../../../../docs/wiki/memories/phpstan-neon-immutable-agents.md"
+---
+
 # phpstan.neon immutabile
 
-## Regola critica
+## Regola critica (sacro)
 
-`laravel/phpstan.neon` è l'unico file di configurazione PHPStan del progetto. È quello da usare con PHPStan.
+`laravel/phpstan.neon` è l'**unico** config PHPStan. **Solo l'utente** lo modifica.
 
 ## Vietato
 
-- ❌ Modificare `laravel/phpstan.neon`
-- ❌ Creare file `phpstan.neon.dist` in moduli
-- ❌ Creare altri file di configurazione PHPStan
+- Modificare `laravel/phpstan.neon`
+- Creare `phpstan.neon.dist` / neon temp / `-c` verso altri file
+- Bypass `excludePaths` con clone di config
 
 ## Comando
 
@@ -17,7 +31,8 @@ cd laravel
 ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ```
 
-## Collegamenti
+## Canon root
 
-- [phpstan-neon-immutable.mdc](../../../.cursor/rules/phpstan-neon-immutable.mdc)
-- [phpstan-no-level-parameter.md](../../../.cursor/rules/phpstan-no-level-parameter.md)
+- [phpstan-config-immutability.md](../../../../docs/wiki/guidelines/phpstan-config-immutability.md)
+- [phpstan-neon-immutable-agents.md](../../../../docs/wiki/memories/phpstan-neon-immutable-agents.md)
+- `.cursor/rules/phpstan-neon-immutable.mdc`

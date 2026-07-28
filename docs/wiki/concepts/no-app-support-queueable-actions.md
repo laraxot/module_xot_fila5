@@ -3,8 +3,8 @@ title: "no app/Support — Actions e Adapters"
 type: concept
 tags: [xot, actions, adapters, queueable-action, support, refactor]
 created: 2026-07-12
-updated: 2026-07-13
-qmd: "Xot module no app Support PanelModule PdfBuilder PaDesignColors MorphToOne"
+updated: 2026-07-22
+qmd: "Xot module no app Support PanelModule PdfBuilder PaDesignColors MorphToOne Services.old"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
@@ -31,6 +31,12 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 | `PaDesignColors` | `Actions/PaDesignColorsAction` (`filamentPalette()` + `execute()`) |
 | `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
 
+## Stato 2026-07-22
+
+- `app/Support/` — **assente** (ri-cancellata se ricomparsa; 0 caller PHP).
+- `app/Services.old/` — **cancellata** (archivio confuso; mapping già in questa wiki).
+- Canon: Actions + Adapters only.
+
 ## Chiusura `app/Services` (2026-07-13)
 
 - `HtmlService::toPdf()` → `Actions/Html/HtmlToPdfAction`.
@@ -43,7 +49,7 @@ Nel modulo Xot **non** esiste più `app/Support/`. Multi-metodo su contratti/fra
 
 - **Adapter**: binding multi-metodo (`PdfBuilderContract`, Filament Panel ↔ nwidart)
 - **Action**: palette PA, create MorphToOne — un entrypoint `execute()`
-- `MetatagData` / `XotServiceProvider` delegano a `GetPaFilamentPaletteAction`
+- `MetatagData` / `XotServiceProvider` delegano a `PaDesignColorsAction`
 
 ## Collegamenti
 

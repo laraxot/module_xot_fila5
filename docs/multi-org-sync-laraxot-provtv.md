@@ -3,7 +3,11 @@ title: "Sincronizzazione multi-organizzazione (laraxot + provtv)"
 type: concept
 tags: [git, sync, multi-org, laraxot, provtv, quality-gates]
 created: "2026-07-21"
+<<<<<<< HEAD
+updated: "2026-07-21"
+=======
 updated: "2026-07-23"
+>>>>>>> 09d6105 (.)
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
 ---
@@ -39,6 +43,8 @@ Prima di un merge/rebase su questo repo, controllare sempre `git remote -v` e
 sincronizzare **tutti** i remote elencati, non solo `origin`/`provtv`. Mai forzare
 push distruttivi su storie scollegate: preferire `--allow-unrelated-histories` e
 revisione manuale dei conflitti reali.
+<<<<<<< HEAD
+=======
 
 ### Playbook push dual-remote (2026-07-22, canon UI)
 
@@ -66,3 +72,4 @@ visto su Modules/UI, parte di un loop automatico che disfa fix manuali). Lasciat
 decisione umana. Nessun push necessario (nulla da pushare su `laraxot`, `provtv`
 non toccato).
 
+>>>>>>> 09d6105 (.)
