@@ -55,8 +55,13 @@ abstract class XotBaseModel extends EloquentModel
     public static function getClassName(): string
     {
         $object = Arr::first(debug_backtrace(), function (array $value) {
+<<<<<<< .merge_file_KQAodo
             return isset($value['object']) &&
             (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
+=======
+            return isset($value['object'])
+            && (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
+>>>>>>> .merge_file_SX7vob
         });
 
         if (! isset($object['object'])) {

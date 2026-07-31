@@ -84,8 +84,14 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
      * @phpstan-return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+=======
+     * @return array<int|string, Action|ActionGroup>
+     *
+     * @phpstan-return array<int|string, Action|ActionGroup>
+>>>>>>> .merge_file_BgW57S
      */
     public function getTableHeaderActions(): array
     {
@@ -127,8 +133,14 @@ trait HasXotTable
      *
      * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
      * @phpstan-return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component>
+=======
+     * @return array<int, Column|ColumnGroup|LayoutComponent>
+     *
+     * @phpstan-return array<int, Column|ColumnGroup|LayoutComponent>
+>>>>>>> .merge_file_BgW57S
      */
     public function getGridTableColumns(): array
     {
@@ -248,8 +260,14 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<string|int, \Filament\Tables\Filters\Filter|\Filament\Tables\Filters\TernaryFilter|\Filament\Tables\Filters\BaseFilter>
      * @phpstan-return array<string|int, \Filament\Tables\Filters\Filter|\Filament\Tables\Filters\TernaryFilter|\Filament\Tables\Filters\BaseFilter>
+=======
+     * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
+     *
+     * @phpstan-return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
+>>>>>>> .merge_file_BgW57S
      */
     public function getTableFilters(): array
     {
@@ -262,14 +280,26 @@ trait HasXotTable
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
      * @phpstan-return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+=======
+     * @return array<int|string, Action|ActionGroup>
+     *
+     * @phpstan-return array<int|string, Action|ActionGroup>
+>>>>>>> .merge_file_BgW57S
      */
     /**
      * @deprecated override the `table()` method to configure the table
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
      * @phpstan-return array<int|string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+=======
+     * @return array<int|string, Action|ActionGroup>
+     *
+     * @phpstan-return array<int|string, Action|ActionGroup>
+>>>>>>> .merge_file_BgW57S
      */
     public function getTableActions(): array
     {
@@ -339,8 +369,14 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<int|string, \Filament\Actions\BulkAction>
      * @phpstan-return array<int|string, \Filament\Actions\BulkAction>
+=======
+     * @return array<int|string, BulkAction>
+     *
+     * @phpstan-return array<int|string, BulkAction>
+>>>>>>> .merge_file_BgW57S
      */
     public function getTableBulkActions(): array
     {
@@ -436,8 +472,14 @@ trait HasXotTable
     /**
      * Get table empty state actions.
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<int|string, \Filament\Actions\Action>
      * @phpstan-return array<int|string, \Filament\Actions\Action>
+=======
+     * @return array<int|string, Action>
+     *
+     * @phpstan-return array<int|string, Action>
+>>>>>>> .merge_file_BgW57S
      */
     protected function getTableEmptyStateActions(): array
     {
@@ -477,8 +519,14 @@ trait HasXotTable
     /**
      * Get header actions.
      *
+<<<<<<< .merge_file_t7FwcW
      * @return array<string, \Filament\Actions\Action>
      * @phpstan-return array<string, \Filament\Actions\Action>
+=======
+     * @return array<string, Action>
+     *
+     * @phpstan-return array<string, Action>
+>>>>>>> .merge_file_BgW57S
      */
     protected function getHeaderActions(): array
     {
@@ -492,6 +540,10 @@ trait HasXotTable
      * Can return bool (true/false) or array of page sizes [10, 25, 50, 100].
      *
      * @return bool|array<int, int|string>
+<<<<<<< .merge_file_t7FwcW
+=======
+     *
+>>>>>>> .merge_file_BgW57S
      * @phpstan-return bool|array<int|string>
      */
     protected function getTablePaginated(): bool|array
@@ -575,6 +627,10 @@ trait HasXotTable
      * Get searchable columns.
      *
      * @return array<string>
+<<<<<<< .merge_file_t7FwcW
+=======
+     *
+>>>>>>> .merge_file_BgW57S
      * @phpstan-return array<int, string>
      */
     protected function getSearchableColumns(): array

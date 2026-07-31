@@ -11,9 +11,15 @@ class IsAdminRouteAction
 {
     use QueueableAction;
 
+<<<<<<< .merge_file_OP4yG5
     public function execute(RouteParamsData $params = new RouteParamsData): bool
     {
         if ($params->in_admin !== null) {
+=======
+    public function execute(RouteParamsData $params = new RouteParamsData()): bool
+    {
+        if (null !== $params->in_admin) {
+>>>>>>> .merge_file_cRJjJd
             return $params->in_admin;
         }
 

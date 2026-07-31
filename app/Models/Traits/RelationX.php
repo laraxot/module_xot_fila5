@@ -38,7 +38,11 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
     ): BelongsToMany {
+<<<<<<< .merge_file_ik0BFT
         /** @var class-string<TRelatedModel> $related */
+=======
+        /* @var class-string<TRelatedModel> $related */
+>>>>>>> .merge_file_KvRHqm
         Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf(
             $related_model = app($related),
@@ -99,7 +103,11 @@ trait RelationX
         ?string $relation = null,
         bool $inverse = false,
     ): MorphToMany {
+<<<<<<< .merge_file_ik0BFT
         /** @var class-string<TRelatedModel> $related */
+=======
+        /* @var class-string<TRelatedModel> $related */
+>>>>>>> .merge_file_KvRHqm
         Assert::subclassOf($related, Model::class);
         $pivot = $this->guessMorphPivot($related);
         $table = $pivot->getTable();
