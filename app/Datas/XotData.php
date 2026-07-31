@@ -346,14 +346,22 @@ class XotData extends Data implements Wireable
         dddx('wip');
     }
 
+    /**
+     * Path to pub theme Blade views. Missing dirs (incomplete theme / tests) return
+     * the unresolved path; callers must check File::exists() (see FolioVoltServiceProvider).
+     */
     public function getPubThemeViewPath(string $key = ''): string
     {
         $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
 
+        if (! is_dir($path0)) {
+            return $path0;
+        }
+
         try {
             return realpath($path0);
-        } catch (\Exception $e) {
-            throw new \Exception('realpath not find dir['.$path0.']'.PHP_EOL.'['.$e->getMessage().']');
+        } catch (\Exception) {
+            return $path0;
         }
     }
 
