@@ -4,6 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
+use Modules\Xot\Actions\Cast\SafeFloatCastAction;
+
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -91,7 +97,7 @@ class SafeArrayCastAction
     }
 
     /**
-     * @param array<mixed, mixed> $array
+     * @param array<int|string, mixed> $array
      *
      * @return array<string, mixed>
      */
@@ -110,7 +116,7 @@ class SafeArrayCastAction
      * Converte un valore in array con validazione di chiavi richieste.
      *
      * @param mixed                         $value        Il valore da convertire
-     * @param array<int, string>            $requiredKeys Chiavi che devono essere presenti
+     * @param array<int|string>             $requiredKeys Chiavi che devono essere presenti
      * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
@@ -133,7 +139,7 @@ class SafeArrayCastAction
      * Converte un valore in array con filtro di chiavi.
      *
      * @param mixed                         $value       Il valore da convertire
-     * @param array<int, string>            $allowedKeys Solo queste chiavi saranno mantenute
+     * @param array<int|string>             $allowedKeys Solo queste chiavi saranno mantenute
      * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse
@@ -143,7 +149,7 @@ class SafeArrayCastAction
         $array = $this->execute($value, $default);
 
         // Filtra solo le chiavi permesse
-        $flippedKeys = array_flip(array_filter($allowedKeys, fn ($key) => is_string($key) || is_int($key)));
+        $flippedKeys = array_flip($allowedKeys);
 
         return array_intersect_key($array, $flippedKeys);
     }
@@ -205,7 +211,7 @@ class SafeArrayCastAction
      * Metodo statico per cast con chiavi richieste.
      *
      * @param mixed                         $value        Il valore da convertire
-     * @param array<int, string>            $requiredKeys Chiavi che devono essere presenti
+     * @param array<int|string>             $requiredKeys Chiavi che devono essere presenti
      * @param array<int|string, mixed>|null $default      Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
@@ -219,7 +225,7 @@ class SafeArrayCastAction
      * Metodo statico per cast con filtro di chiavi.
      *
      * @param mixed                         $value       Il valore da convertire
-     * @param array<int, string>            $allowedKeys Solo queste chiavi saranno mantenute
+     * @param array<int|string>             $allowedKeys Solo queste chiavi saranno mantenute
      * @param array<int|string, mixed>|null $default     Valore di default se la conversione fallisce
      *
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse

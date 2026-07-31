@@ -2,15 +2,16 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Modules\Xot\Services\ModuleService;
+use Modules\Xot\Actions\ModuleAction;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-describe('ModuleService Integration', function () {
-    beforeEach(function () {
-    });
+uses(TestCase::class);
+
+describe('ModuleAction Integration', function () {
+    beforeEach(function () {});
 
     it('integrates with Nwidart Modules system', function () {
         Assert::assertTrue(class_exists('Nwidart\Modules\Facades\Module'));
@@ -19,20 +20,24 @@ describe('ModuleService Integration', function () {
 
     it('can find existing modules', function () {
         // Test with known existing modules
-        $chartService = new ModuleService('Chart');
-        $userService = new ModuleService('User');
-        $xotService = new ModuleService('Xot');
+        $chartService = new ModuleAction('Chart');
+        $userService = new ModuleAction('User');
+        $xotService = new ModuleAction('Xot');
 
-        Assert::assertInstanceOf(ModuleService::class, $chartService);
+        Assert::assertInstanceOf(ModuleAction::class, $chartService);
 
-        Assert::assertInstanceOf(ModuleService::class, $userService);
+        Assert::assertInstanceOf(ModuleAction::class, $userService);
 
-        Assert::assertInstanceOf(ModuleService::class, $xotService);
+        Assert::assertInstanceOf(ModuleAction::class, $xotService);
+
+        Assert::assertInstanceOf(ModuleAction::class, $userService);
+
+        Assert::assertInstanceOf(ModuleAction::class, $xotService);
     });
 
     it('returns models from existing modules', function () {
         // Test with Chart module (we know it exists)
-        $chartService = new ModuleService('Chart');
+        $chartService = new ModuleAction('Chart');
         /** @var array<int|string, class-string> $models */
         $models = $chartService->getModels();
 
@@ -49,7 +54,7 @@ describe('ModuleService Integration', function () {
     });
 
     it('handles User module models correctly', function () {
-        $userService = new ModuleService('User');
+        $userService = new ModuleAction('User');
         /** @var array<int|string, class-string> $models */
         $models = $userService->getModels();
 
@@ -68,7 +73,7 @@ describe('ModuleService Integration', function () {
     });
 
     it('filters abstract models correctly', function () {
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
 
         // BaseModel should not be included (it's abstract)
@@ -77,7 +82,7 @@ describe('ModuleService Integration', function () {
     });
 
     it('returns class strings as values', function () {
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
 
         foreach ($models as $key => $modelClass) {
@@ -89,7 +94,7 @@ describe('ModuleService Integration', function () {
 
     it('handles reflection operations safely', function () {
         // Test that reflection operations don't cause crashes
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
 
         // Test each returned model class
@@ -100,7 +105,7 @@ describe('ModuleService Integration', function () {
 
     it('processes module directory structure', function () {
         // Test that the service can process module directories
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
     });
 
@@ -119,21 +124,21 @@ describe('ModuleService Integration', function () {
 
     it('can handle multiple module instances', function () {
         $services = [
-            new ModuleService('Chart'),
-            new ModuleService('User'),
-            new ModuleService('Xot'),
-            new ModuleService('Job'),
+            new ModuleAction('Chart'),
+            new ModuleAction('User'),
+            new ModuleAction('Xot'),
+            new ModuleAction('Job'),
         ];
 
         foreach ($services as $service) {
-            Assert::assertInstanceOf(ModuleService::class, $service);
+            Assert::assertInstanceOf(ModuleAction::class, $service);
             $models = $service->getModels();
         }
     });
 
     it('validates module existence checking', function () {
         // Test with non-existent module
-        $nonExistentService = new ModuleService('NonExistentModule');
+        $nonExistentService = new ModuleAction('NonExistentModule');
         $models = $nonExistentService->getModels();
 
         Assert::assertEmpty($models);
@@ -141,7 +146,7 @@ describe('ModuleService Integration', function () {
 
     it('handles namespace construction correctly', function () {
         // Test namespace building logic
-        $chartService = new ModuleService('Chart');
+        $chartService = new ModuleAction('Chart');
         $models = $chartService->getModels();
 
         foreach ($models as $modelClass) {
@@ -151,7 +156,7 @@ describe('ModuleService Integration', function () {
 
     it('processes file extensions correctly', function () {
         // Test that only .php files are processed
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
 
         // All returned classes should be valid PHP classes
@@ -164,9 +169,9 @@ describe('ModuleService Integration', function () {
     it('handles exception scenarios gracefully', function () {
         // Test various edge cases that might cause exceptions
         $edgeCaseServices = [
-            new ModuleService(''),
-            new ModuleService('InvalidModule'),
-            new ModuleService('Test123'),
+            new ModuleAction(''),
+            new ModuleAction('InvalidModule'),
+            new ModuleAction('Test123'),
         ];
 
         foreach ($edgeCaseServices as $service) {
@@ -174,7 +179,7 @@ describe('ModuleService Integration', function () {
     });
 
     it('validates return type consistency', function () {
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
 
         // Validate that all keys are strings and all values are class strings
@@ -188,16 +193,16 @@ describe('ModuleService Integration', function () {
 
     it('can work with Laravel service container', function () {
         // Test service container integration
-        $serviceFromContainer = app(ModuleService::class, ['name' => 'TestModule']);
+        $serviceFromContainer = app(ModuleAction::class, ['name' => 'TestModule']);
 
-        Assert::assertInstanceOf(ModuleService::class, $serviceFromContainer);
+        Assert::assertInstanceOf(ModuleAction::class, $serviceFromContainer);
     });
 
     it('handles concurrent access correctly', function () {
         // Test multiple simultaneous calls
         $results = [];
-        for ($i = 0; $i < 3; ++$i) {
-            $service = new ModuleService('Xot');
+        for ($i = 0; $i < 3; $i++) {
+            $service = new ModuleAction('Xot');
             $results[] = $service->getModels();
         }
 
@@ -208,7 +213,7 @@ describe('ModuleService Integration', function () {
 
     it('validates module path resolution', function () {
         // Test that module paths are resolved correctly
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
 
         foreach ($models as $modelClass) {
@@ -219,7 +224,7 @@ describe('ModuleService Integration', function () {
 
     it('handles file system operations safely', function () {
         // Test file system operations
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $models = $xotService->getModels();
     });
 
@@ -232,7 +237,7 @@ describe('ModuleService Integration', function () {
 
     it('validates class instantiation patterns', function () {
         // Test that the service follows proper instantiation patterns
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $reflection = new ReflectionClass($xotService);
         $constructor = $reflection->getConstructor();
 
@@ -242,7 +247,7 @@ describe('ModuleService Integration', function () {
 
     it('can handle model discovery efficiently', function () {
         // Test performance of model discovery
-        $xotService = new ModuleService('Xot');
+        $xotService = new ModuleAction('Xot');
         $startTime = microtime(true);
 
         $models = $xotService->getModels();

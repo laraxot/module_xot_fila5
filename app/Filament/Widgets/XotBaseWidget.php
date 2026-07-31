@@ -9,7 +9,6 @@ use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
 use Filament\Widgets\Widget as FilamentWidget;
@@ -63,12 +62,15 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
     }
 
     /**
-     * Ottiene lo schema del form.
-     * Deve essere implementato nelle classi figlie.
+     * Schema del form del widget. Vuoto di default per i widget senza form
+     * (es. widget di sola visualizzazione); i widget con form lo sovrascrivono.
      *
-     * @return array<int|string, Component>
+     * @return array<Htmlable|string>
      */
-    abstract public function getFormSchema(): array;
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     /**
      * Configura il form del widget.

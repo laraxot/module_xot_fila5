@@ -8,14 +8,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
-use Filament\Actions\Action;
 use Filament\Resources\RelationManagers\RelationManager;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
-class ExportXlsTableAction extends Action
+class ExportXlsTableAction extends XotBaseAction
 {
     protected function setUp(): void
     {
@@ -42,7 +44,7 @@ class ExportXlsTableAction extends Action
                     throw new \Exception('Query is null');
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder
-                /** @var \Illuminate\Database\Eloquent\Builder<\Illuminate\Database\Eloquent\Model> $eloquentQuery */
+                /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
                 /** @var array<int, string> $fields */
@@ -51,7 +53,7 @@ class ExportXlsTableAction extends Action
                     $rawFields = $livewire_class::getXlsFields($livewire->tableFilters);
                     Assert::isArray($rawFields);
 
-                    // Ensure fields are properly formatted as array<int, string>
+                    // Ensure fields are properly formatted as array
                     $fields = [];
                     foreach ($rawFields as $key => $field) {
                         if (is_string($field)) {

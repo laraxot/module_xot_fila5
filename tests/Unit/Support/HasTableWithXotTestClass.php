@@ -6,11 +6,17 @@ namespace Modules\Xot\Tests\Unit\Support;
 
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
+use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
+/**
+ * @property string|null $tableSearch
+ */
 class HasTableWithXotTestClass
 {
     use HasXotTable;
+
+    public ?string $tableSearch = null;
 
     public function getLayoutView(): mixed
     {
@@ -29,11 +35,11 @@ class HasTableWithXotTestClass
     }
 
     /**
-     * @return Table&\Mockery\MockInterface
+     * @return Table&MockInterface
      */
     public function getTable(): Table
     {
-        /** @var Table&\Mockery\MockInterface $mock */
+        /** @var Table&MockInterface $mock */
         $mock = \Mockery::mock(Table::class);
 
         return $mock;
@@ -116,7 +122,7 @@ class HasTableWithXotTestClass
     /** @return Collection<int, mixed> */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
-        return new Collection();
+        return new Collection;
     }
 
     public function getAllTableRecordsCount(): int
@@ -225,42 +231,26 @@ class HasTableWithXotTestClass
         return null;
     }
 
-    public function deselectAllTableRecords(): void
-    {
-    }
+    public function deselectAllTableRecords(): void {}
 
-    public function mountTableAction(): void
-    {
-    }
+    public function mountTableAction(): void {}
 
-    public function mountTableBulkAction(): void
-    {
-    }
+    public function mountTableBulkAction(): void {}
 
     public function mountedTableActionRecord(): mixed
     {
         return null;
     }
 
-    public function replaceMountedTableAction(): void
-    {
-    }
+    public function replaceMountedTableAction(): void {}
 
-    public function replaceMountedTableBulkAction(): void
-    {
-    }
+    public function replaceMountedTableBulkAction(): void {}
 
-    public function resetTableSearch(): void
-    {
-    }
+    public function resetTableSearch(): void {}
 
-    public function resetTableColumnSearch(): void
-    {
-    }
+    public function resetTableColumnSearch(): void {}
 
-    public function toggleTableReordering(): void
-    {
-    }
+    public function toggleTableReordering(): void {}
 
     public function parseTableFilterName(): string
     {

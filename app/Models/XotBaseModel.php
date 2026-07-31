@@ -4,18 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+use Webmozart\Assert\Assert;
 
 /**
  * Class XotBaseModel.
  */
 abstract class XotBaseModel extends EloquentModel
 {
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
+
     use RelationX;
     use Updater;
 
@@ -41,6 +46,39 @@ abstract class XotBaseModel extends EloquentModel
     protected $hidden = [
         // 'password'
     ];
+
+    /**
+     * Resolve the concrete model class for the caller's module.
+     *
+     * @return class-string<EloquentModel>
+     */
+    public static function getClassName(): string
+    {
+        $object = Arr::first(debug_backtrace(), function (array $value) {
+            return isset($value['object']) &&
+            (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
+        });
+
+        if (! isset($object['object'])) {
+            throw new \RuntimeException('Unable to resolve caller object for getClassName()');
+        }
+
+        $objectClass = $object['object']::class;
+        if (method_exists($object['object'], 'getModelClass')) {
+            $objectClass = $object['object']->getModelClass();
+        }
+        Assert::string($objectClass);
+        /** @var string $objectClass */
+        $namespace = Str::beforeLast((string) $objectClass, '\Models\\');
+        $className = Str::afterLast(static::class, '\\');
+        // dddx(['namespace'=>$namespace, 'className'=>$className,'static'=>static::class]);
+
+        $res = $namespace.'\\Models\\'.$className;
+        Assert::classExists($res);
+        Assert::subclassOf($res, EloquentModel::class);
+
+        return $res;
+    }
 
     /** @return array<string, string> */
     protected function casts(): array

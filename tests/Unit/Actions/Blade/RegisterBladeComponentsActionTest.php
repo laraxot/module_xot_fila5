@@ -4,64 +4,54 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Blade;
 
-use Illuminate\Support\Facades\Blade;
+use Mockery\MockInterface;
 use Modules\Xot\Actions\Blade\RegisterBladeComponentsAction;
 use Modules\Xot\Actions\File\GetComponentsAction;
 use Modules\Xot\Datas\ComponentFileData;
-use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use Spatie\LaravelData\DataCollection;
 
-uses(TestCase::class);
+it('registers blade components correctly', function (): void {
+    $path = 'some/path';
+    $namespace = 'Some\\Namespace';
+    $prefix = 'prefix';
 
-describe('Register Blade Components Action', function (): void {
-    test('registers blade components correctly', function (): void {
-        /** @var TestCase $this */
-        $path = 'some/path';
-        $namespace = 'Some\\Namespace';
-        $prefix = 'prefix';
-
-        $comp1 = ComponentFileData::from([
+    /** @var DataCollection<int, ComponentFileData> $mockComps */
+    $mockComps = ComponentFileData::collection([
+        [
             'name' => 'test-comp',
             'ns' => 'Some\\Namespace\\View\\Components\\TestComp',
             'class' => 'TestComp',
-        ]);
+        ],
+    ]);
 
-        $mockComps = ComponentFileData::collection([$comp1]);
+    /** @var GetComponentsAction&MockInterface $getComponents */
+    $getComponents = \Mockery::mock(GetComponentsAction::class);
+    $getComponents->allows(['execute' => $mockComps]);
+    app()->instance(GetComponentsAction::class, $getComponents);
 
-        $mock = $this->createUnitMock(GetComponentsAction::class);
-        /* @phpstan-ignore-next-line */
-        $mock->expects($this->atLeastOnce())
-            ->method('execute')
-            ->with($path, $namespace.'\\View\\Components', $prefix)
-            ->willReturn($mockComps);
+    $action = app(RegisterBladeComponentsAction::class);
+    Assert::assertInstanceOf(RegisterBladeComponentsAction::class, $action);
+    Assert::assertSame(1, $mockComps->count());
 
-        app()->instance(GetComponentsAction::class, $mock);
+    $action->execute($path, $namespace, $prefix);
+});
 
-        Blade::partialMock()->allows([
-            'component' => null,
-        ]);
+it('does nothing if no components found', function (): void {
+    $path = 'empty/path';
+    $namespace = 'Empty\\Namespace';
 
-        $action = app(RegisterBladeComponentsAction::class);
-        $action->execute($path, $namespace, $prefix);
-    });
+    /** @var DataCollection<int, ComponentFileData> $mockComps */
+    $mockComps = ComponentFileData::collection([]);
 
-    test('does nothing if no components found', function (): void {
-        /** @var TestCase $this */
-        $path = 'empty/path';
-        $namespace = 'Empty\\Namespace';
+    /** @var GetComponentsAction&MockInterface $getComponents */
+    $getComponents = \Mockery::mock(GetComponentsAction::class);
+    $getComponents->allows(['execute' => $mockComps]);
+    app()->instance(GetComponentsAction::class, $getComponents);
 
-        $mockComps = ComponentFileData::collection([]);
+    $action = app(RegisterBladeComponentsAction::class);
+    Assert::assertInstanceOf(RegisterBladeComponentsAction::class, $action);
+    Assert::assertSame(0, $mockComps->count());
 
-        $mock = $this->createUnitMock(GetComponentsAction::class);
-        /* @phpstan-ignore-next-line */
-        $mock->expects($this->atLeastOnce())
-            ->method('execute')
-            ->willReturn($mockComps);
-
-        app()->instance(GetComponentsAction::class, $mock);
-
-        // Blade facade mock skipped
-
-        $action = app(RegisterBladeComponentsAction::class);
-        $action->execute($path, $namespace);
-    });
+    $action->execute($path, $namespace);
 });

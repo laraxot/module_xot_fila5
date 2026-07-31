@@ -20,14 +20,13 @@ trait RelationX
     /**
      * @template TRelatedModel of Model
      *
-     * @param class-string<TRelatedModel>     $related         Related model class
-     * @param class-string<Model>|string|null $_table          Pivot table name
-     * @param string|null                     $foreignPivotKey Foreign pivot key
-     * @param string|null                     $relatedPivotKey Related pivot key
-     * @param string|null                     $parentKey       Parent key
-     * @param string|null                     $relatedKey      Related key
-     * @param string|null                     $relation        Relation name
-     *
+     * @param  class-string<TRelatedModel>  $related  Related model class
+     * @param  class-string<Model>|string|null  $_table  Pivot table name
+     * @param  string|null  $foreignPivotKey  Foreign pivot key
+     * @param  string|null  $relatedPivotKey  Related pivot key
+     * @param  string|null  $parentKey  Parent key
+     * @param  string|null  $relatedKey  Related key
+     * @param  string|null  $relation  Relation name
      * @return BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'>
      */
     public function belongsToManyX(
@@ -39,6 +38,7 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
     ): BelongsToMany {
+        /** @var class-string<TRelatedModel> $related */
         Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf(
             $related_model = app($related),
@@ -57,13 +57,14 @@ trait RelationX
             $pivotDriver = $pivot->getConnection()->getDriverName();
             // Only add database prefix for non-SQLite drivers
             // SQLite doesn't support database.table syntax
-            if ('sqlite' !== $pivotDriver) {
+            if ($pivotDriver !== 'sqlite') {
                 $table = $pivotDbName.'.'.$table;
             }
         }
         // }
 
-        return $this->belongsToMany(
+        /** @var BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'> $relationInstance */
+        $relationInstance = $this->belongsToMany(
             related: $related,
             table: $table,
             foreignPivotKey: $foreignPivotKey,
@@ -75,6 +76,8 @@ trait RelationX
             ->using($pivot::class)
             ->withPivot($pivotFields)
             ->withTimestamps();
+
+        return $relationInstance;
     }
 
     /**
@@ -82,8 +85,7 @@ trait RelationX
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
      *
-     * @param class-string<TRelatedModel> $related
-     *
+     * @param  class-string<TRelatedModel>  $related
      * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
@@ -97,18 +99,19 @@ trait RelationX
         ?string $relation = null,
         bool $inverse = false,
     ): MorphToMany {
+        /** @var class-string<TRelatedModel> $related */
+        Assert::subclassOf($related, Model::class);
         $pivot = $this->guessMorphPivot($related);
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
 
-        $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
         // $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        if (null === $table) {
+        if ($table === null) {
             $table = $pivot->getTable();
         }
 
-        return $this->morphToMany(
+        /** @var MorphToMany<TRelatedModel, $this, MorphPivot, 'pivot'> $relationInstance */
+        $relationInstance = $this->morphToMany(
             related: $related,
             name: $name,
             table: $table,
@@ -122,6 +125,8 @@ trait RelationX
             ->using($pivot::class)
             ->withPivot($pivotFields)
             ->withTimestamps();
+
+        return $relationInstance;
     }
 
     public function guessMorphPivot(string $related, ?string $_class = null): MorphPivot
@@ -139,8 +144,8 @@ trait RelationX
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-     * @param string                   $related The related model class name
-     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
+     * @param  string  $related  The related model class name
+     * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
      */
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
@@ -191,7 +196,7 @@ trait RelationX
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
-        if (false === $parent_class) {
+        if ($parent_class === false) {
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

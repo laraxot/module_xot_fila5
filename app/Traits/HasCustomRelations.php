@@ -18,6 +18,7 @@ use Webmozart\Assert\Assert;
 /**
  * Trait HasCustomRelations.
  */
+// @phpstan-ignore trait.unused
 trait HasCustomRelations
 {
     public function customRelation(

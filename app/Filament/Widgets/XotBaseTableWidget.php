@@ -17,9 +17,9 @@ use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
-    // use TransTrait;
     use HasXotTable;
     use InteractsWithPageFilters;
+    use TransTrait;
 
     /**
      * Ascolta evento di aggiornamento filtri.
@@ -66,18 +66,5 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
         }
 
         return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
-    }
-
-    public function getTableSearch(): ?string
-    {
-        $search = $this->tableSearch ?? null;
-
-        if (! \is_string($search)) {
-            return null;
-        }
-
-        $search = trim($search);
-
-        return '' !== $search ? $search : null;
     }
 }
