@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use Composer\Autoload\ClassLoader;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -21,9 +22,10 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Support\PaDesignColors;
 use Modules\Xot\View\Composers\XotComposer;
 
 use function Safe\realpath;
@@ -59,6 +61,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     #[\Override]
     public function register(): void
     {
+        $this->registerRuntimePsr4Autoload();
         parent::register();
         $this->registerConfig();
 
@@ -70,6 +73,23 @@ class XotServiceProvider extends XotBaseServiceProvider
     public function registerProviders(): void
     {
         // $this->app->register(Filament\ModulesServiceProvider::class);
+    }
+
+    private function registerRuntimePsr4Autoload(): void
+    {
+        $autoloadPath = base_path('vendor/autoload.php');
+
+        if (! is_file($autoloadPath)) {
+            return;
+        }
+
+        $loader = require $autoloadPath;
+
+        if (! $loader instanceof ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -101,7 +121,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      */
     public function registerPaFilamentColors(): void
     {
-        FilamentColor::register(PaDesignColors::filamentPalette());
+        FilamentColor::register(app(PaDesignColorsAction::class)->filamentPalette());
     }
 
     public function registerFilamentMacros(): void

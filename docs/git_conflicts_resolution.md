@@ -133,6 +133,7 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
+- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution.md)
 
 ## Best Practices Applicate
 

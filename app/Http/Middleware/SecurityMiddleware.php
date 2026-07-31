@@ -34,12 +34,7 @@ class SecurityMiddleware
         // 2. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-
-        // Skip security headers for Debugbar routes in local environment
-        // to allow Debugbar to function properly
-        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
-            $this->addSecurityHeaders($response);
-        }
+        $this->addSecurityHeaders($response);
 
         // 3. Logging sicurezza
         $this->logSecurityEvents($request, $response);
@@ -51,18 +46,6 @@ class SecurityMiddleware
         $this->enhanceCSRFProtection($request);
 
         return $response;
-    }
-
-    /**
-     * Check if the request is for Debugbar routes.
-     */
-    private function isDebugbarRoute(Request $request): bool
-    {
-        $debugbarPrefix = SafeStringCastAction::cast(config('debugbar.route_prefix', '_debugbar'));
-
-        return str_starts_with($request->path(), $debugbarPrefix)
-            || str_starts_with($request->path(), 'vendor/debugbar')
-            || str_contains($request->path(), '_debugbar');
     }
 
     /**
@@ -92,6 +75,7 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -116,6 +100,7 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -140,6 +125,7 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -407,7 +393,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
-     * @param array<int|string, mixed> $value
+     * @param array<array-key, mixed> $value
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -433,7 +419,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
-     * @param array<int|string, mixed> $array
+     * @param array<array-key, mixed> $array
      */
     private function getArrayDepth(array $array): int
     {
@@ -460,7 +446,9 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
-            if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
+            /** @var string $tokenStr */
+            $tokenStr = SafeStringCastAction::cast($token);
+            if (! $token || ! hash_equals(session()->token(), $tokenStr)) {
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

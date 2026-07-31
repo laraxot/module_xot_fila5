@@ -120,13 +120,24 @@ class FilamentMemoryMonitorMiddleware
     {
         $logLevel = $this->determineLogLevel($metrics);
 
+        /** @var string $memUsed */
+        $memUsed = SafeStringCastAction::cast($metrics['memory_used_mb']);
+        /** @var string $memPeak */
+        $memPeak = SafeStringCastAction::cast($metrics['memory_peak_mb']);
+        /** @var string $execTime */
+        $execTime = SafeStringCastAction::cast($metrics['execution_time_ms']);
+        /** @var string $method */
+        $method = SafeStringCastAction::cast($metrics['method']);
+        /** @var string $url */
+        $url = SafeStringCastAction::cast($metrics['url']);
+
         $message = sprintf(
             'Filament Memory Usage: %sMB used, %sMB peak, %sms execution time - %s %s',
-            SafeStringCastAction::cast($metrics['memory_used_mb']),
-            SafeStringCastAction::cast($metrics['memory_peak_mb']),
-            SafeStringCastAction::cast($metrics['execution_time_ms']),
-            SafeStringCastAction::cast($metrics['method']),
-            SafeStringCastAction::cast($metrics['url'])
+            $memUsed,
+            $memPeak,
+            $execTime,
+            $method,
+            $url
         );
 
         // Aggiungi contesto aggiuntivo

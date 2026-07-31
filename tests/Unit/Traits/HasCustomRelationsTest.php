@@ -2,18 +2,22 @@
 
 declare(strict_types=1);
 
-uses(Modules\Xot\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
+use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\HasCustomRelations;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
+
 it('creates custom relation', function (): void {
-    $relatedModel = new class extends Model {
+    $relatedModel = new class extends Model
+    {
         protected $table = 'related';
     };
 
-    $parentModel = new class extends Model {
+    $parentModel = new class extends Model
+    {
         use HasCustomRelations;
 
         protected $table = 'parent';

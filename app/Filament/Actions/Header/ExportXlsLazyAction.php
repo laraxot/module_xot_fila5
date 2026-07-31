@@ -8,16 +8,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Header;
 
-use Filament\Actions\Action;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByQuery;
 use Modules\Xot\Actions\Export\ExportXlsStreamByLazyCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
-class ExportXlsLazyAction extends Action
+class ExportXlsLazyAction extends XotBaseAction
 {
     protected function setUp(): void
     {

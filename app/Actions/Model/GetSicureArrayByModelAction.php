@@ -23,10 +23,11 @@ class GetSicureArrayByModelAction
             return $res;
         } catch (\ValueError|\Error $e) {
             $data = [];
-            foreach ($model->getAttributes() as $key => $value) {
+            foreach (array_keys($model->getAttributes()) as $key) {
                 try {
                     $data[(string) $key] = $model->getAttribute((string) $key);
                 } catch (\ValueError) {
+                    // Skip attributes whose accessor/cast cannot resolve the raw value.
                 }
             }
 

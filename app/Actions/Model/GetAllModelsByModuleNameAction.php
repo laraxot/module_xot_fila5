@@ -42,7 +42,7 @@ class GetAllModelsByModuleNameAction
             $ext = '.php';
             // dddx(['ext' => $file->getExtension(), get_class_methods($file)]);
             if (Str::endsWith($filename, $ext)) {
-                $tmp = new \stdClass();
+                $tmp = new \stdClass;
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
                 // dddx(['name' => $name, 'name1' => $file->getFilenameWithoutExtension()]);
                 /**
@@ -61,6 +61,7 @@ class GetAllModelsByModuleNameAction
                         $data[$tmp->name] = $tmp->class;
                     }
                 } catch (\Exception) {
+                    // Skip files whose class name does not resolve to an existing/valid class.
                 }
             }
         }

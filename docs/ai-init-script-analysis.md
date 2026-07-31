@@ -1,5 +1,7 @@
 # Analisi Funzionamento Script ai_init.sh
 
+> **Deprecato (2026-07-28).** Il modello shadow per-IDE è sostituito dalla SSoT unica `bashscripts/ai/.agents` e dagli script `sync-ide-junctions.sh` / `sync-wiki-junctions.sh`. Vedi [ide-agents-junctions.md](ide-agents-junctions.md).
+
 ## Situazione Attuale
 
 Dopo aver analizzato il funzionamento dello script `bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:

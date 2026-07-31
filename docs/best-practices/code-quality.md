@@ -71,5 +71,5 @@ This document outlines the best practices for maintaining high code quality with
 - [PHP Strict Types](./PHP-STRICT-TYPES.md)
 - [PHPStan Implementation Guide](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
 - [Naming Conventions](./NAMING-CONVENTIONS.md)
-- [Service Provider Best Practices](./SERVICE-PROVIDER-BEST-PRACTICES.md)
-- [Filament Best Practices](./FILAMENT-BEST-PRACTICES.md)
+- [Service Provider Best Practices](service-provider-best-practices.md)
+- [Filament Best Practices](filament-best-practices.md)

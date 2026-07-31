@@ -72,7 +72,7 @@ class ColumnBuilder
             ->sortable()
             ->searchable()
             ->limit(50)
-            ->tooltip(static fn ($record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title) : '')
+            ->tooltip(static fn ($record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title ?? null) : '')
             ->toggleable();
     }
 
@@ -111,7 +111,7 @@ class ColumnBuilder
         return TextColumn::make('description')
             ->label(__('xot::fields.description.label'))
             ->limit($limit)
-            ->tooltip(static fn ($record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description) : '')
+            ->tooltip(static fn ($record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description ?? null) : '')
             ->toggleable();
     }
 

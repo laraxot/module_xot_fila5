@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Builders;
 
+use function Safe\date;
+
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
@@ -24,15 +26,9 @@ use function Safe\strtotime;
  * across List pages in all modules.
  *
  * Usage:
- * ```php
- * public function getTableFilters(): array
- * {
- *     return [
- *         FilterBuilder::activeToggle(),
- *         FilterBuilder::selectFromModel('category', Category::class),
- *     ];
- * }
- * ```
+ *
+ * Use this builder from resource table filter methods to compose common
+ * Filament filters without duplicating filter callbacks.
  */
 class FilterBuilder
 {
@@ -120,19 +116,23 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
+                    /** @var string $fromStr */
                     $fromStr = SafeStringCastAction::cast($from);
+                    /** @var string $untilStr */
                     $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
+                    /** @var string $fromStr */
                     $fromStr = SafeStringCastAction::cast($from);
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
+                    /** @var string $untilStr */
                     $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));

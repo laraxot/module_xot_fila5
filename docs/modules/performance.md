@@ -8,24 +8,15 @@ Il modulo Performance gestisce le valutazioni delle performance e la distribuzio
 
 Il modulo Performance mantiene documentazione dettagliata nelle seguenti aree:
 
-- [Struttura e Funzionamento Generale](../performance/docs/readme.md)
-- [Struttura e Funzionamento Generale](../performance/docs/readme.md)
-- [Modelli](../performance/docs/models.md)
-- [Flusso di Calcolo Performance Organizzativa](../performance/docs/organizzativa-flow.md)
-- [Modelli Performance Organizzativa](../performance/docs/organizzativa-models.md)
-- [Raccomandazioni PHPStan](../performance/docs/organizzativa-phpstan-recommendations.md)
-- [Raw SQL vs Eloquent](../performance/docs/raw-vs-eloquent.md)
-- [Redistribuzione Resti per Valutatore](../performance/docs/redistribuire-resti-per-valutatore.md)
-- [Convenzioni del Modulo](../performance/docs/convenzioni-modulo.md)
-- [Struttura e Funzionamento Generale](../Performance/docs/readme.md)
-- [Struttura e Funzionamento Generale](../Performance/docs/README.md)
-- [Modelli](../Performance/docs/models.md)
-- [Flusso di Calcolo Performance Organizzativa](../Performance/docs/organizzativa-flow.md)
-- [Modelli Performance Organizzativa](../Performance/docs/organizzativa-models.md)
-- [Raccomandazioni PHPStan](../Performance/docs/organizzativa-phpstan-recommendations.md)
-- [Raw SQL vs Eloquent](../Performance/docs/raw-vs-eloquent.md)
-- [Redistribuzione Resti per Valutatore](../Performance/docs/redistribuire-resti-per-valutatore.md)
-- [Convenzioni del Modulo](../Performance/docs/convenzioni-modulo.md)
+- [Struttura e Funzionamento Generale](laravel/modules/performance/project_docs/readme.md)
+- [Struttura e Funzionamento Generale](laravel/modules/performance/project_docs/readme.md)
+- [Modelli](laravel/modules/performance/project_docs/models.md)
+- [Flusso di Calcolo Performance Organizzativa](laravel/modules/performance/project_docs/organizzativa-flow.md)
+- [Modelli Performance Organizzativa](laravel/modules/performance/project_docs/organizzativa-models.md)
+- [Raccomandazioni PHPStan](laravel/modules/performance/project_docs/organizzativa-phpstan-recommendations.md)
+- [Raw SQL vs Eloquent](laravel/modules/performance/project_docs/raw-vs-eloquent.md)
+- [Redistribuzione Resti per Valutatore](laravel/modules/performance/project_docs/redistribuire-resti-per-valutatore.md)
+- [Convenzioni del Modulo](laravel/modules/performance/project_docs/convenzioni-modulo.md)
 
 ## Risorse Filament
 
@@ -43,11 +34,7 @@ Il modulo implementa diverse risorse Filament per la gestione delle performance:
 
 ## Collegamenti alle Linee Guida Generali
 
-- [Convenzioni di Namespace](../xot/docs/namespace-conventions.md)
-- [Convenzioni di Naming](../xot/docs/naming-conventions.md)
-- [Guide PHPStan Livello 9](../xot/docs/phpstan-level9-guide.md)
-- [QueueableActions](../xot/docs/queueable-actions.md)
-- [Convenzioni di Namespace](../Xot/docs/NAMESPACE-CONVENTIONS.md)
-- [Convenzioni di Naming](../Xot/docs/naming-conventions.md)
-- [Guide PHPStan Livello 9](../Xot/docs/PHPSTAN-LEVEL9-GUIDE.md)
-- [QueueableActions](../Xot/docs/queueable-actions.md)
+- [Convenzioni di Namespace](laravel/modules/xot/project_docs/namespace-conventions.md)
+- [Convenzioni di Naming](laravel/modules/xot/project_docs/naming-conventions.md)
+- [Guide PHPStan Livello 9](laravel/modules/xot/project_docs/phpstan-level9-guide.md)
+- [QueueableActions](laravel/modules/xot/project_docs/queueable-actions.md)

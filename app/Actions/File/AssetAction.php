@@ -11,12 +11,12 @@ use Modules\Xot\Datas\XotData;
 
 use function Safe\copy;
 
-use Spatie\QueueableAction\QueueableAction;
+use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
 class AssetAction
 {
-    use QueueableAction;
+    use QueueableActionTrait;
 
     private XotData $xot;
 
