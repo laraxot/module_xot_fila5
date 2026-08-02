@@ -27,7 +27,7 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 | Lang | policy tramite `LangBasePolicy` locale neutra | `XotBasePolicy` via base locale | mantenere |
 | Gdpr | policy tramite `GdprBasePolicy` locale neutra | `XotBasePolicy` via base locale | mantenere |
 | Tenant | policy tramite `TenantBasePolicy` locale | `XotBasePolicy` via base locale, `UserBasePolicy` solo se ACL identity-heavy | revisione leggera |
-| Fixcity | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
+| Application | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
 
 ## Inventario quantitativo (2026-06-30)
 
@@ -37,7 +37,7 @@ Comando: `bash bashscripts/tools/audit-policy-inventory.sh`
 |--------|----------------|------|
 | Job | 15/15 | gold standard — `ExportPolicy extends JobBasePolicy {}` |
 | User | 37 | orphan intenzionali: `BaseUserPolicy`, `BaseTeamPolicy` |
-| Blog, Predict | 0 | ereditarietà Article / ArticleResource — vedi [policy-module-inventory.md](../../../../../../docs/wiki/concepts/policy-module-inventory.md) |
+| Blog, Forecast | 0 | ereditarietà Article / ArticleResource — vedi [policy-module-inventory.md](../../../../../../docs/wiki/concepts/policy-module-inventory.md) |
 | Comment, UI, Tenant | gap | remediation = **creare** policy, mai delete altrove |
 
 Hub completo: [policy-module-inventory.md](../../../../../../docs/wiki/concepts/policy-module-inventory.md)

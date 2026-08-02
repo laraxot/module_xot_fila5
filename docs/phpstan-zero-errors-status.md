@@ -20,7 +20,7 @@ richiede giudizio ingegneristico per-caso (non e' scriptabile in massa), non sol
 | Cms | 72 | |
 | Lang | 68 | |
 | Tenant | 43 | |
-| TechPlanner | 42 | |
+| PlanningModule | 42 | |
 | Comment | 38 | |
 | Rating | 25 | |
 | Gdpr | 19 | |
@@ -55,7 +55,7 @@ Distribuzione per categoria (top):
 Xot: 465 -> 147 errori. Vedi `docs/chat/phpstan-zero-errors.md` (root del progetto) per il log
 dettagliato di coordinamento multi-agente e i fix applicati in questa sessione (ExtraContract,
 CollectionExport, LazyCollectionExport). Issue GitHub di tracking:
-https://github.com/laraxot/base_techplanner_fila5/issues/34
+https://github.com/laraxot/base_ptvx_fila5/issues/34
 
 ## Come continuare
 

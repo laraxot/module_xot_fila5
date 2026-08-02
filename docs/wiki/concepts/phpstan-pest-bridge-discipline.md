@@ -4,13 +4,8 @@ type: concept
 module: Xot
 tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
-<<<<<<< HEAD
-updated: 2026-07-24
-qmd: "Xot phpstan pest bridge discipline public assertions tests stay pest helper"
-=======
 updated: 2026-07-22
 qmd: "Xot phpstan pest bridge discipline Assert method.internalClass Mockery allows"
->>>>>>> ef8836ec (.)
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -46,7 +41,7 @@ Xot e' il posto giusto per pattern condivisi di test/static analysis, ma il brid
 ## Pattern moduli (2026-06-13)
 
 - **Activity:** batch 7 file — `expect()` → `Assert::assert*()`; [completion-status](../../../Activity/docs/wiki/overviews/completion-status.md)
-- **Fixcity:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Fixcity/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
+- **Application:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Application/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
 - **Notify:** `notificationManager()` + trait doubles — [phpstan-pest-test-doubles](../../../Notify/docs/wiki/concepts/phpstan-pest-test-doubles.md)
 - **Xot:** test File — no `@var TestCase $this` se la closure non usa `$this`; no `assertIsString(tempnam())`
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [PHPSTAN-BEST-PRACTICES](../PHPSTAN-BEST-PRACTICES.md) §7–8)

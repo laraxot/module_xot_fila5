@@ -19,13 +19,13 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 
 ```bash
 # Configurazione .env
-APP_URL=http://quaeris.local
+APP_URL=http://survey_module.local
 
 # Browser accede a
 http://127.0.0.1:8000
 ```
 
-**Risultato**: Livewire genera URL con `quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
+**Risultato**: Livewire genera URL con `survey_module.local` ma browser invia richieste a `127.0.0.1:8000` → 404
 
 ## ✅ Soluzioni
 
@@ -41,7 +41,7 @@ APP_URL=http://127.0.0.1:8000
 APP_URL=http://localhost:8000
 
 # Se accedi tramite dominio locale
-APP_URL=http://quaeris.local
+APP_URL=http://survey_module.local
 ```
 
 **Dopo la modifica**:
@@ -53,19 +53,19 @@ php artisan optimize:clear
 
 ### Soluzione 2: Aggiungere Host al Sistema
 
-Se vuoi usare `quaeris.local`, aggiungi al file hosts:
+Se vuoi usare `survey_module.local`, aggiungi al file hosts:
 
 **Linux/Mac**: `/etc/hosts`
 ```
-127.0.0.1 quaeris.local
+127.0.0.1 survey_module.local
 ```
 
 **Windows**: `C:\Windows\System32\drivers\etc\hosts`
 ```
-127.0.0.1 quaeris.local
+127.0.0.1 survey_module.local
 ```
 
-Poi accedi tramite: `http://quaeris.local:8000`
+Poi accedi tramite: `http://survey_module.local:8000`
 
 ### Soluzione 3: Trusted Proxies (Per Ambienti Complessi)
 
@@ -136,14 +136,14 @@ APP_URL=http://127.0.0.1:8000
 
 ```bash
 # .env per sviluppo con virtual host
-APP_URL=http://quaeris.local
+APP_URL=http://survey_module.local
 ```
 
 ### Produzione
 
 ```bash
 # .env per produzione
-APP_URL=https://quaeris.com
+APP_URL=https://survey_module.com
 ```
 
 ## 🔧 Comandi Rapidi Fix

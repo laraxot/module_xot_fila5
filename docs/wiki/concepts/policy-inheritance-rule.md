@@ -19,7 +19,7 @@ We maintain two main levels of base policies to ensure DRY principles while keep
 ## 🔄 Separation of Concerns
 
 - **Separation:** Keep them separate to avoid bloating `Xot` with User-specific logic. `Xot` is the foundation; `User` is a functional module.
-- **Generic Policies:** Policies for specific modules (e.g., `Fixcity`) should extend `XotBasePolicy` by default unless they need standard user-ownership logic provided by `UserBasePolicy`.
+- **Generic Policies:** Policies for specific modules (e.g., `Application`) should extend `XotBasePolicy` by default unless they need standard user-ownership logic provided by `UserBasePolicy`.
 
 ## 🛠️ Improvements Needed
 - **Genericity:** `UserBasePolicy` currently contains `Ticket` type-hints. This is a violation of KISS/DRY for a *Base* policy.

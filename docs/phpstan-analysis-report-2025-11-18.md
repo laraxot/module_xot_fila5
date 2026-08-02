@@ -19,7 +19,7 @@
   - Array access on mixed types
   - Invalid binary operations
 
-#### Quaeris Module (Complex Issues)
+#### SurveyModule Module (Complex Issues)
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -54,9 +54,9 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 #### Missing Class Definitions
 ```php
 // ❌ Quantum-related classes not found
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\SurveyModule\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\SurveyModule\Actions\Charts\Quantum\GenerateConsciousChartAction
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -74,11 +74,11 @@ uses unknown trait Spatie\Queable\QueableAction.
 3. **Function Safety**: Missing Safe library imports
 4. **Return Types**: Incorrect PHPDoc return types
 
-#### Quaeris Module Issues
+#### SurveyModule Module Issues
 **Primary Files:**
-- `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
-- `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
-- `Quaeris/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+- `SurveyModule/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
+- `SurveyModule/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
+- `SurveyModule/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented
@@ -755,7 +755,7 @@ test('it can create and manage tenants', function (): void {
 - ✅ **check-all-modules.sh** - Controllo batch tutti i moduli
 
 ### Path Corretti
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+- ✅ **mysql-db-connector.js** - Path corretto a `base_ptvx_fila5_mono`
 
 ---
 
@@ -1076,7 +1076,7 @@ class MyModel extends BaseModel
   - Array access on mixed types
   - Invalid binary operations
 
-#### Quaeris Module (Complex Issues)
+#### SurveyModule Module (Complex Issues)
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -1111,9 +1111,9 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 #### Missing Class Definitions
 ```php
 // ❌ Quantum-related classes not found
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\SurveyModule\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
+Class Modules\SurveyModule\Actions\Charts\Quantum\GenerateConsciousChartAction
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -1131,11 +1131,11 @@ uses unknown trait Spatie\Queable\QueableAction.
 3. **Function Safety**: Missing Safe library imports
 4. **Return Types**: Incorrect PHPDoc return types
 
-#### Quaeris Module Issues
+#### SurveyModule Module Issues
 **Primary Files:**
-- `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
-- `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
-- `Quaeris/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
+- `SurveyModule/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
+- `SurveyModule/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
+- `SurveyModule/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented

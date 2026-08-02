@@ -16,7 +16,7 @@ rm Modules/Activity/docs/readme.md
 rm Modules/UI/docs/readme.md
 
 # ROADMAP.md (MAIUSCOLO) è corretto, elimina minuscolo
-rm Modules/Fixcity/docs/roadmap.md
+rm Modules/Application/docs/roadmap.md
 
 # ListRecords.md (PascalCase) è corretto, elimina minuscolo
 rm Modules/UI/docs/filament/listrecords.md

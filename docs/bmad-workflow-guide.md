@@ -110,7 +110,7 @@ Include:
 
 **Prompt Example**:
 ```
-Research domain "Survey analytics and prediction markets"
+Research domain "Survey analytics and forecast markets"
 
 Cover:
 - Domain concepts (response rates, completion metrics, LMSR)
@@ -230,7 +230,7 @@ Requirements:
 - Regulatory constraints (GDPR, ATS)
 
 ## 6. Dependencies
-- External systems (LimeSurvey, Quaeris)
+- External systems (LimeSurvey, SurveyModule)
 - Internal modules (Chart, Xot, UI)
 
 ## 7. Risks
@@ -339,15 +339,15 @@ Context:
 - Spatie Queueable Actions
 
 Requirements:
-- Custom questions in Modules/Quaeris/app/Actions/QuestionChart/Custom/
+- Custom questions in Modules/SurveyModule/app/Actions/QuestionChart/Custom/
 - DTOs in Modules/Chart/app/Datas/
-- Widgets in Modules/Quaeris/app/Filament/Widgets/
+- Widgets in Modules/SurveyModule/app/Filament/Widgets/
 - PDF export via Spatie Queueable Action
 
 Constraints:
 - NEVER create Service classes (use Actions)
 - ALWAYS extend XotBase classes
-- NEVER cross-database join (quaeris_data vs quaeris_survey)
+- NEVER cross-database join (survey_module_data vs survey_module_survey)
 - MySQL strict mode compliance
 ```
 
@@ -578,14 +578,14 @@ Why this story matters
 5. Run quality gates
 
 ## Technical Notes
-- Use Contact::on('quaeris_data') for database connection
+- Use Contact::on('survey_module_data') for database connection
 - Use groupBy() instead of groupByRaw() for MySQL strict mode
 - Convert array to DataCollection explicitly
 
 ## Related Files
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
+- `Modules/SurveyModule/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 - `Modules/Chart/app/Datas/ChartData.php`
-- `Modules/Quaeris/tests/Feature/MailResponseRateTest.php`
+- `Modules/SurveyModule/tests/Feature/MailResponseRateTest.php`
 ```
 
 #### Step 4.4: Validate Story (Recommended)
@@ -746,7 +746,7 @@ What is the user value?
 ### Modules as BMAD Domains
 
 Each module is a domain:
-- **Quaeris**: Survey analytics, dashboards
+- **SurveyModule**: Survey analytics, dashboards
 - **Chart**: Chart DTOs, data structures
 - **Xot**: Base classes, migrations, translations
 - **UI**: Frontend components, styling
@@ -860,10 +860,10 @@ Understand → Plan → Implement → Verify → Document
 
 ```bash
 # Brainstorming
-/bmad-brainstorming "DashboardV3 prediction market widget"
+/bmad-brainstorming "DashboardV3 forecast market widget"
 
 # Domain research
-/bmad-bmm-domain-research "Prediction market analytics"
+/bmad-bmm-domain-research "Forecast market analytics"
 
 # Technical research
 /bmad-bmm-technical-research "Real-time chart updates in Filament"
@@ -873,20 +873,20 @@ Understand → Plan → Implement → Verify → Document
 
 ```bash
 # Create PRD
-/bmad-bmm-create-prd "DashboardV3 Prediction Market Widget"
+/bmad-bmm-create-prd "DashboardV3 Forecast Market Widget"
 
 # Validate PRD
 /bmad-bmm-validate-prd
 
 # Create UX design
-/bmad-bmm-create-ux-design "Prediction Market Widget"
+/bmad-bmm-create-ux-design "Forecast Market Widget"
 ```
 
 #### Phase 3: Solutioning (2 hours)
 
 ```bash
 # Create architecture
-/bmad-bmm-create-architecture "Prediction Market Widget"
+/bmad-bmm-create-architecture "Forecast Market Widget"
 
 # Create epics and stories
 /bmad-bmm-create-epics-and-stories
@@ -902,7 +902,7 @@ Understand → Plan → Implement → Verify → Document
 /bmad-bmm-sprint-planning
 
 # Create story
-/bmad-bmm-create-story "US-001: PredictionMarketWidget"
+/bmad-bmm-create-story "US-001: ForecastMarketWidget"
 
 # Develop story
 /bmad-bmm-dev-story "stories/US-001.md"

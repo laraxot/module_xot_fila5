@@ -201,7 +201,7 @@ return $publishedAt instanceof Carbon && $publishedAt->isPast();
 |------|-----|
 | `xotSeedModelOnce` | `GetFactoryAction` istanziato direttamente (no `app()` mixed) + `createOne()` |
 | `XotBaseTestCase` | Bug ricorsivi: `createUnitMock`, `assertDatabase*Row`, `skipTest` → delega PHPUnit |
-| `RatingFactory` (Predict) | `$model = Predict\Models\Rating` (non Rating module base) |
+| `RatingFactory` (Forecast) | `$model = Forecast\Models\Rating` (non Rating module base) |
 | Test factory | `fix-test-factory-createone.php` — `create()` → `createOne()` dove N=1 |
 
 ## Collegamenti

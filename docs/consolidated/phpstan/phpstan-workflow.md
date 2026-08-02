@@ -60,7 +60,7 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-     base_predict_fila3_mono/
+     base_ptvx_fila3_mono/
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -142,7 +142,7 @@ class MyModel extends BaseModel
 ### Architettura Modulare
 Il progetto utilizza un'architettura modulare con Laravel Modules:
 - **Xot**: Modulo core con funzionalità fondamentali
-- **TechPlanner**: Modulo principale per la pianificazione tecnica
+- **PlanningModule**: Modulo principale per la pianificazione tecnica
 - **User**: Gestione utenti e autenticazione
 - **UI**: Componenti frontend e temi
 - **Media**: Gestione file e media
@@ -265,7 +265,7 @@ Il progetto utilizza un'architettura modulare con Laravel Modules:
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-     base_predict_fila3_mono/
+     base_ptvx_fila3_mono/
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf

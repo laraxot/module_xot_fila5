@@ -34,16 +34,16 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 
 **Errore**:
 ```
-PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
+PHPDoc tag @property-read contains unknown class Modules\Application\Models\Profile
 ```
 
-**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
+**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Application\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
 
 **Prima**:
 ```php
 /**
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
+ * @property-read \Modules\Application\Models\Profile|null $creator
+ * @property-read \Modules\Application\Models\Profile|null $updater
  */
 class AuthenticationLog extends BaseModel
 ```
@@ -59,7 +59,7 @@ class AuthenticationLog extends BaseModel
 
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Application\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 ```
 
 **Risultato**: ✅ 0 errori PHPStan Level 10 per questa categoria
@@ -424,7 +424,7 @@ class User extends BaseModel
 
 **Comando**:
 ```bash
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Application\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 ```
 
 **Risultato**:

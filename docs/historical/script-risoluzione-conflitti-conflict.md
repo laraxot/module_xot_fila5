@@ -1,8 +1,8 @@
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -85,7 +85,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -123,19 +123,19 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -197,11 +197,11 @@ declare(strict_types=1);
 // 4. Aggiungere PHPDoc per metodi pubblici
 ```
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -284,7 +284,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -322,25 +322,25 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -423,7 +423,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -461,11 +461,11 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -548,7 +548,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -586,11 +586,11 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -673,7 +673,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -711,11 +711,11 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -798,7 +798,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -836,11 +836,11 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
-# Script di Risoluzione Conflitti Git - FixCity Project
+# Script di Risoluzione Conflitti Git - Application Project
 
 ## Panoramica
 
-Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto Application, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
 
 ## Workflow Sistematico
 
@@ -923,7 +923,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -998,7 +998,7 @@ BEGIN { skip = 0 }
 - `Modules/Xot/`
 - `Modules/Geo/`
 - `Modules/User/`
-- `Modules/TechPlanner/`
+- ``
 - `Modules/Employee/`
 - File di configurazione root
 
@@ -1044,7 +1044,7 @@ return [
 
 #### File di Documentazione
 ```markdown
-# Titolo Documento - FixCity Project
+# Titolo Documento - Application Project
 
 ## Sezione
 
@@ -1146,7 +1146,7 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 - [ ] Compatibilità Laravel 11
 
 ### Per Ogni File di Documentazione
-- [ ] Riferimenti aggiornati a FixCity
+- [ ] Riferimenti aggiornati a Application
 - [ ] Backlink bidirezionali
 - [ ] Coerenza terminologica
 - [ ] Struttura markdown valida
@@ -1204,7 +1204,7 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 - [ ] Compatibilità Laravel 11
 
 ### Per Ogni File di Documentazione
-- [ ] Riferimenti aggiornati a FixCity
+- [ ] Riferimenti aggiornati a Application
 - [ ] Backlink bidirezionali
 - [ ] Coerenza terminologica
 - [ ] Struttura markdown valida
@@ -1262,7 +1262,7 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 - [ ] Compatibilità Laravel 11
 
 ### Per Ogni File di Documentazione
-- [ ] Riferimenti aggiornati a FixCity
+- [ ] Riferimenti aggiornati a Application
 - [ ] Backlink bidirezionali
 - [ ] Coerenza terminologica
 - [ ] Struttura markdown valida

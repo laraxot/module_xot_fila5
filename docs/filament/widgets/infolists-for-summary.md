@@ -41,10 +41,10 @@ TextEntry::make('review_title')
 
 ---
 
-## Implementazione modulo Fixcity (riferimento)
+## Implementazione modulo Application (riferimento)
 
-- Classe aggregatrice degli entry sul wizard ticket: [`TicketFormReviewInfolist`](../../../Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketFormReviewInfolist.php)
-- Guida operativa modulo: [`filament-summary-infolist-guidance.md`](../../../Fixcity/docs/filament-summary-infolist-guidance.md)
+- Classe aggregatrice degli entry sul wizard ticket: [`TicketFormReviewInfolist`](../../../Application/app/Filament/Resources/TicketResource/Schemas/TicketFormReviewInfolist.php)
+- Guida operativa modulo: [`filament-summary-infolist-guidance.md`](../../../Application/docs/filament-summary-infolist-guidance.md)
 
 ---
 
@@ -72,7 +72,7 @@ Text::make(new HtmlString('<p>Informativa privacy...</p>'))
 
 ```php
 // ❌ Sbagliato
-SchemaView::make('fixcity::filament.widgets.partials.ticket-create-wizard-summary')
+SchemaView::make('application::filament.widgets.partials.ticket-create-wizard-summary')
 ```
 
 Perche:

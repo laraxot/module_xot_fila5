@@ -467,7 +467,7 @@ class ArticlesTable extends XotBaseResourceTable
 ### Internal
 - Story 8-91: `.planning/stories/8-91-filament-v5-schemas-structure-refactor.story.md`
 - XotBase Classes: `Modules/Xot/app/Filament/Resources/Schemas/`
-- Current TicketForm: `Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php`
+- Current TicketForm: `Modules/Application/app/Filament/Resources/TicketResource/Schemas/TicketForm.php`
 
 ## Migration Status
 
@@ -477,7 +477,7 @@ class ArticlesTable extends XotBaseResourceTable
 | Cms | 🔴 Pending | Agent 1 | Pilot module |
 | Blog | 🔴 Pending | Agent 2 | After Cms |
 | User | 🔴 Pending | Agent 3 | Complex, many resources |
-| Fixcity | 🟡 Partial | - | TicketForm already evolved |
+| Application | 🟡 Partial | - | TicketForm already evolved |
 | Geo | 🔴 Pending | Agent 4 | Map components |
 
 ---

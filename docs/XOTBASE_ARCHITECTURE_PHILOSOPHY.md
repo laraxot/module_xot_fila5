@@ -32,12 +32,12 @@ Modules\Xot\Filament\Widgets\XotBaseTableWidget
     │ - getTableColumns() standardizzato
     │ - Record key univoco
     │
-Modules\Predict\Filament\Widgets\OutcomesTableWidget
+Modules\Forecast\Filament\Widgets\OutcomesTableWidget
     ↑
     │ Implementa business logic specifica
     │ - table() method
-    │ - getTableQuery() per Predict
-    │ - getTableColumns() per Predict
+    │ - getTableQuery() per Forecast
+    │ - getTableColumns() per Forecast
     │ - Actions, Filters, BulkActions
 ```
 
@@ -72,7 +72,7 @@ class OutcomesTableWidget extends XotBaseTableWidget
 {
     // Scrivi SOLO business logic specifica
     public function getTableQuery() {
-        return RatingMorph::query()->where('model_type', Predict::class);
+        return RatingMorph::query()->where('model_type', Forecast::class);
     }
     
     public function getTableColumns(): array {
@@ -203,7 +203,7 @@ public function getTableRecordKey(Model $record): string {
 
 5. **Thou shalt implement getTableColumns**
    - Array di colonne Filament
-   - Label i18n (`__('predict::labels.outcome')`)
+   - Label i18n (`__('forecast::labels.outcome')`)
    - ✅ Standardizzato
 
 6. **Thou shalt respect Livewire keys**
@@ -244,7 +244,7 @@ public function getTableRecordKey(Model $record): string {
 ```php
 <?php
 
-namespace Modules\Predict\Filament\Widgets;
+namespace Modules\Forecast\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
@@ -254,23 +254,23 @@ class OutcomesTableWidget extends XotBaseTableWidget
     
     protected int|string|array $columnSpan = 'full';
     
-    public ?Predict $predict = null;
+    public ?Forecast $forecast = null;
     
-    public function mount(?Predict $predict = null): void
+    public function mount(?Forecast $forecast = null): void
     {
-        $this->predict = $predict;
+        $this->forecast = $forecast;
     }
     
     // ✅ OVERRIDE getTableQuery per business logic specifica
     protected function getTableQuery(): Builder|Relation
     {
-        if (!$this->predict instanceof Predict) {
+        if (!$this->forecast instanceof Forecast) {
             return RatingMorph::query()->whereNull('id');
         }
         
         return RatingMorph::query()
-            ->where('model_type', $this->predict::class)
-            ->where('model_id', $this->predict->getKey())
+            ->where('model_type', $this->forecast::class)
+            ->where('model_id', $this->forecast->getKey())
             ->with('rating');
     }
     
@@ -279,11 +279,11 @@ class OutcomesTableWidget extends XotBaseTableWidget
     {
         return [
             'outcome' => Tables\Columns\TextColumn::make('rating.title')
-                ->label(__('predict::labels.outcome', 'Outcome'))
+                ->label(__('forecast::labels.outcome', 'Outcome'))
                 ->searchable()
                 ->sortable(),
             'percentage' => Tables\Columns\TextColumn::make('percentage')
-                ->label(__('predict::labels.probability', 'Probability'))
+                ->label(__('forecast::labels.probability', 'Probability'))
                 ->numeric()
                 ->sortable()
                 ->suffix('%'),
@@ -295,7 +295,7 @@ class OutcomesTableWidget extends XotBaseTableWidget
     {
         return [
             'backOutcome' => Action::make('backOutcome')
-                ->label(__('predict::actions.back_this_outcome'))
+                ->label(__('forecast::actions.back_this_outcome'))
                 ->action(fn (RatingMorph $record) => $this->backOutcome($record)),
         ];
     }
@@ -316,7 +316,7 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ```php
 <?php
 
-namespace Modules\Predict\Filament\Widgets;
+namespace Modules\Forecast\Filament\Widgets;
 
 use Filament\Widgets\TableWidget; // ❌ SBAGLIATO!
 
@@ -368,14 +368,14 @@ class OutcomesTableWidget extends TableWidget // ❌ SBAGLIATO!
 | Da | A | Tipo |
 |----|---|------|
 | XotBase Philosophy | [XotBaseTableWidget Source](../../app/Filament/Widgets/XotBaseTableWidget.php) | Implementation |
-| XotBase Philosophy | [OutcomesTableWidget Example](../../Modules/Predict/Filament/Widgets/OutcomesTableWidget.php) | Example |
+| XotBase Philosophy | [OutcomesTableWidget Example](../../Modules/Forecast/Filament/Widgets/OutcomesTableWidget.php) | Example |
 | XotBase Philosophy | [HasXotTable Trait](../../Modules/Xot/Filament/Traits/HasXotTable.php) | Dependency |
 
 ### Verso Questo Documento
 
 | Da | A | Tipo |
 |----|---|------|
-| [Predict Module Index](../00-INDEX.md) | XotBase Philosophy | Reference |
+| [Forecast Module Index](../00-INDEX.md) | XotBase Philosophy | Reference |
 | [Architecture Index](./01-architecture/00-INDEX.md) | XotBase Philosophy | Parent |
 | [Filament Widgets Rule](../../docs/project/FILAMENT_WIDGETS_FOR_LISTS_RULE.md) | XotBase Philosophy | Reference |
 

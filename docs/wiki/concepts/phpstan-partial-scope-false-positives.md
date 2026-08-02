@@ -20,8 +20,8 @@ analizzato. Esempio reale (2026-07-06):
 
 - `Modules/Geo/app/Models/Traits/GeoTrait.php` → `trait.unused` quando si
   analizza solo `Modules/Geo`, ma **nessun errore** analizzando
-  `Modules/Geo Modules/TechPlanner` insieme, perché l'unico `use GeoTrait;`
-  reale è in `Modules/TechPlanner/app/Models/Worker.php`.
+  `Modules/Geo Modules/PlanningModule` insieme, perché l'unico `use GeoTrait;`
+  reale è in `app/Models/Worker.php`.
 - Stesso pattern per `HasPlaceTrait`, `HasAddresses` (Geo) e
   `SushiToPhpArray` (Tenant, usato da `Modules/User/app/Models/SocialProvider.php`).
 

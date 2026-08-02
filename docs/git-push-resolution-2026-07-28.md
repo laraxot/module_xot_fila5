@@ -21,11 +21,7 @@ Completare il push del modulo Xot a `provtv/dev` risolvendo conflitti di merge, 
 
 ```php
 // ❌ PRIMA (conflitto):
-<<<<<<< HEAD
-@return BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>
-=======
 @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
->>>>>>> 09d6105 (.)
 
 // ✅ DOPO (risolto):
 @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
@@ -72,8 +68,6 @@ git rm resources/img/favicon_io.zip
 ```php
 // ❌ PRIMA:
 use Illuminate\Support\Arr;
-<<<<<<< HEAD
-=======
 // assente
 
 use RuntimeException;

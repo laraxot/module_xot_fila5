@@ -1,4 +1,4 @@
-# 🎨 FILAMENT V5 SETUP GUIDE - Base Predict Fila5
+# 🎨 FILAMENT V5 SETUP GUIDE - Base Forecast Fila5
 
 **Version**: 5.x  
 **Last Updated**: 2026-03-21  
@@ -189,7 +189,7 @@ npm run build
     <body class="{{ $bodyClass }} antialiased text-base leading-relaxed bg-slate-950 text-slate-100">
         {{-- Skip to Content (WCAG 2.2 AA) --}}
         <a href="#main-content" class="sr-only focus:not-sr-only">
-            {{ __('predict::predict.labels.navigation.skip_to_content') }}
+            {{ __('forecast::forecast.labels.navigation.skip_to_content') }}
         </a>
 
         {{-- Main Content --}}
@@ -222,7 +222,7 @@ use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
-class PredictTableWidget extends XotBaseTableWidget
+class ForecastTableWidget extends XotBaseTableWidget
 {
     public function table(Table $table): Table
     {
@@ -238,7 +238,7 @@ class PredictTableWidget extends XotBaseTableWidget
 
 **View**:
 ```blade
-@livewire(\Modules\Predict\Filament\Widgets\PredictTableWidget::class)
+@livewire(\Modules\Forecast\Filament\Widgets\ForecastTableWidget::class)
 ```
 
 ---
@@ -388,7 +388,7 @@ return [
 // ✅ CORRETTO
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
-class PredictTableWidget extends XotBaseTableWidget
+class ForecastTableWidget extends XotBaseTableWidget
 {
     // ...
 }
@@ -396,7 +396,7 @@ class PredictTableWidget extends XotBaseTableWidget
 // ❌ SBAGLIATO
 use Filament\Widgets\TableWidget;
 
-class PredictTableWidget extends TableWidget  // NO!
+class ForecastTableWidget extends TableWidget  // NO!
 {
     // ...
 }
@@ -459,22 +459,22 @@ class PredictTableWidget extends TableWidget  // NO!
 Ogni modulo può avere il proprio CSS:
 
 ```css
-/* Modules/Predict/resources/css/predict.css */
+/* Modules/Forecast/resources/css/forecast.css */
 
-/* Predict-specific Filament overrides */
+/* Forecast-specific Filament overrides */
 .fi-ta-content-grid {
     gap: 1.5rem;
 }
 
-/* Custom Predict styles */
-.predict-card {
+/* Custom Forecast styles */
+.forecast-card {
     @apply rounded-2xl bg-white/5 backdrop-blur-sm;
 }
 ```
 
 **Import in app.css**:
 ```css
-@import '../../Modules/Predict/resources/css/predict.css';
+@import '../../Modules/Forecast/resources/css/forecast.css';
 ```
 
 ---
@@ -579,10 +579,10 @@ php artisan view:clear
 ### Documentazione Progetto
 - `docs/project/VOLT_CLASS_BASED_COMPONENTS.md`
 - `docs/project/FILAMENT_WIDGETS_FOR_LISTS_RULE.md`
-- `Modules/Predict/docs/FILAMENT_TABLE_FEATURES_IMPLEMENTED.md`
+- `Modules/Forecast/docs/FILAMENT_TABLE_FEATURES_IMPLEMENTED.md`
 
 ### GitHub Issues
-- [Filament v5 Migration](https://github.com/laraxot/base_predict_fila5/issues/TBD)
+- [Filament v5 Migration](https://github.com/laraxot/base_ptvx_fila5/issues/TBD)
 
 ---
 

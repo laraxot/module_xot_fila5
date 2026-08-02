@@ -7,7 +7,7 @@ created: 2026-06-13
 updated: 2026-06-13
 qmd: "Xot Tests autoload XotBaseTestCase class not found phpstan composer psr-4"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/330"
+  - "https://github.com/laraxot/base_application_fila5/issues/330"
 related:
   - ../../../../../../docs/wiki/PHPSTAN-INDEX.md
   - ../../../../../../docs/wiki/memories/phpstan-neon-immutable-agents.md
@@ -30,7 +30,7 @@ In `Modules/Xot/composer.json` l'autoload PSR-4 era incoerente:
 
 - `autoload` conteneva `Modules\Xot\tests\` (minuscolo) via chiave commentata
 - `autoload-dev` conteneva `Modules\Xot\Tests\` (ma non risolveva per PHPStan/composer merge)
-- I file test usavano `namespace Modules\{Mod}\Tests\...` mentre Activity/Fixcity/User/Xot avevano ancora `tests` minuscolo
+- I file test usavano `namespace Modules\{Mod}\Tests\...` mentre Activity/Application/User/Xot avevano ancora `tests` minuscolo
 
 `class_exists('Modules\Xot\Tests\XotBaseTestCase')` restituiva **false** → catena TestCase rotta su tutti i moduli.
 
@@ -38,7 +38,7 @@ In `Modules/Xot/composer.json` l'autoload PSR-4 era incoerente:
 
 1. **`Modules/Xot/composer.json`**: registrare `Modules\Xot\Tests\` in `autoload.psr-4` (produzione), rimuovere mapping minuscolo.
 2. **`composer dump-autoload`**
-3. **Normalizzare namespace** `Modules\{Mod}\tests` → `Modules\{Mod}\Tests` in Activity, Fixcity, User, Xot.
+3. **Normalizzare namespace** `Modules\{Mod}\tests` → `Modules\{Mod}\Tests` in Activity, Application, User, Xot.
 4. **`PestFunctionBridge.php`**: `uses|test|it|describe` → `void`; `expect()` → `PestExpectation` (catene tipizzate).
 5. **Pest in file namespaced**: `uses(\Modules\Geo\Tests\TestCase::class)` sempre FQCN; `uses()` **dopo** gli `import use`.
 

@@ -9,7 +9,7 @@
 
 ## 🎯 OVERVIEW
 
-Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
+Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto Application. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
 
 ### 🛠️ Strumenti Integrati
 - **PHPMD**: PHP Mess Detector - Rilevamento code smells
@@ -44,14 +44,14 @@ composer require --dev phpmd/phpmd
 #### File: `phpmd.xml`
 ```xml
 <?xml version="1.0"?>
-<ruleset name="FixCity Code Quality Rules"
+<ruleset name="Application Code Quality Rules"
          xmlns="http://pmd.sf.net/ruleset/1.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
                              http://pmd.sf.net/ruleset_xml_schema.xsd"
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
-    <description>FixCity PHP Mess Detector Rules</description>
+    <description>Application PHP Mess Detector Rules</description>
 
     <!-- Code Size Rules -->
     <rule ref="rulesets/codesize.xml">
@@ -122,7 +122,7 @@ composer require --dev phpmd/phpmd
 #### Analisi Moduli
 ```bash
 # Analisi modulo specifico
-./vendor/bin/phpmd Modules/Fixcity/app/ text phpmd.xml
+./vendor/bin/phpmd Modules/Application/app/ text phpmd.xml
 
 # Analisi tutti i moduli
 ./vendor/bin/phpmd Modules/ text phpmd.xml
@@ -245,7 +245,7 @@ composer require laravel/pint --dev
 #### Formattazione Moduli
 ```bash
 # Formattazione singolo modulo
-./vendor/bin/pint Modules/Fixcity/
+./vendor/bin/pint Modules/Application/
 
 # Formattazione tutti i moduli
 ./vendor/bin/pint Modules/
@@ -724,7 +724,7 @@ jobs:
 ./scripts/generate-quality-report.sh
 
 # Report per modulo
-./scripts/generate-module-report.sh Fixcity
+./scripts/generate-module-report.sh Application
 
 # Report per tema
 ./scripts/generate-theme-report.sh Sixteen
@@ -812,4 +812,4 @@ jobs:
 
 ---
 
-*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
+*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto Application.*

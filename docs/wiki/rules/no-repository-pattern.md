@@ -38,7 +38,7 @@ Laraxot **non** usa il Repository pattern per l'accesso ai dati di dominio.
 
 - `Modules/Xot/app/Repositories/` (incluso `BaseRepository.php`)
 - `Modules/Xot/app/Contracts/RepositoryContract.php`
-- `Modules/Fixcity/app/Repositories/` + `TicketRepositoryContract.php`
+- `Modules/Application/app/Repositories/` + `TicketRepositoryContract.php`
 - `Modules/Comment`, `Geo`, `Seo` — cartelle `app/Repositories/` (solo `.gitkeep`)
 - Stub `repository.stub` (se presente in generatori)
 

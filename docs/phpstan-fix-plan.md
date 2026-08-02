@@ -374,7 +374,7 @@ After fixing Xot module:
 
 1. Fix Blog module errors (6 errors)
 2. Fix Cms module remaining errors (8 errors)
-3. Fix Fixcity module errors (45 errors)
+3. Fix Application module errors (45 errors)
 4. Fix Geo module errors (10 errors)
 5. Fix remaining module errors (66 errors)
 

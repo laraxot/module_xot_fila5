@@ -16,7 +16,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
       "args": [
         "-y",
         "@modelcontextprotocol/server-mysql",
-        "marco:marco@localhost:3306/quaeris_survey"
+        "marco:marco@localhost:3306/survey_module_survey"
       ]
     },
     "fetch": {

@@ -21,11 +21,11 @@ related:
 
 Un solo punto di lettura che **aggrega tipi di ripetizioni** osservati nel monorepo (moduli Laraxot + temi Sixteen/TwentyOne) senza ricopiare lunghi estratti tecnici già pubblicati altrove.
 
-**Audit documentazione:** 2026-05-21–22. **Audit statico file identici:** vedi baseline in [`byte-identical-files-static-scan.md`](../redundancy/byte-identical-files-static-scan.md); **audit olistico 2026-05-25**: [`audit-profondo-ridondanze-holistic.md`](../redundancy/audit-profondo-ridondanze-holistic.md). **Schede atomiche** (OAuth, widget auth, DTO, Rating, Fixcity, scaffold temi): [`redundancy-catalog.md`](./redundancy-catalog.md).
+**Audit documentazione:** 2026-05-21–22. **Audit statico file identici:** vedi baseline in [`byte-identical-files-static-scan.md`](../redundancy/byte-identical-files-static-scan.md); **audit olistico 2026-05-25**: [`audit-profondo-ridondanze-holistic.md`](../redundancy/audit-profondo-ridondanze-holistic.md). **Schede atomiche** (OAuth, widget auth, DTO, Rating, Application, scaffold temi): [`redundancy-catalog.md`](./redundancy-catalog.md).
 
 ## Ridondanza byte-identica (checksum), moduli + temi
 
-Pass SHA256 senza interprete AST: sintesi e pattern in **[byte-identical-files-static-scan.md](../redundancy/byte-identical-files-static-scan.md)** — include baseline 2026-05-23 e **riesame 2026-05-25**. Tracker [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89) · [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+Pass SHA256 senza interprete AST: sintesi e pattern in **[byte-identical-files-static-scan.md](../redundancy/byte-identical-files-static-scan.md)** — include baseline 2026-05-23 e **riesame 2026-05-25**. Tracker [#89](https://github.com/laraxot/base_application_fila5/issues/89) · [#90](https://github.com/laraxot/base_application_fila5/issues/90).
 
 ## Volumi documentazione moduli (indicativo)
 
@@ -35,7 +35,7 @@ Pass SHA256 senza interprete AST: sintesi e pattern in **[byte-identical-files-s
 | User | 3071 | **`legacy/` ~723**, logout, phpstan |
 | Notify | 1821 | scaffold + notify |
 | Lang, Geo, Cms, UI | 784–947 | scaffold batch |
-| Fixcity | 202 | dominio prodotto |
+| Application | 202 | dominio prodotto |
 
 ~**57%** dei `.md` modulo è in Xot + User + Notify. Dettaglio temi: **[ridondanze-documentazione-temi.md](../../../../../Themes/docs/ridondanze-documentazione-temi.md)**.
 

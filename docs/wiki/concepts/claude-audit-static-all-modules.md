@@ -9,7 +9,7 @@ qmd: "claude-audit static 80 tetto 100 AI tutti moduli audit-coverage boost"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/30"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/304"
+  - "https://github.com/laraxot/base_application_fila5/discussions/304"
 related:
   - ../../../../../../bashscripts/tools/run-claude-audit-all-modules-static.sh
   - ../../../../../../bashscripts/tools/claude-audit-module-static-boost.sh
@@ -47,7 +47,7 @@ bash bashscripts/tools/run-claude-audit-all-modules-static.sh
 
 ## Moduli a 80/0 (perfezione static, luglio 2026)
 
-**18/18:** Activity, AI, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User, Xot.
+**18/18:** Activity, AI, Blog, Cms, Comment, Application, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User, Xot.
 
 Verifica swarm: `bash bashscripts/tools/swarm-claude-audit-modules.sh`
 
@@ -59,7 +59,7 @@ claude-audit conta solo righe `//` `#` `*` `/*` — **non** `{{--`. Boost blade 
 
 ## Lang >500 righe
 
-Split con `bashscripts/tools/split-module-lang-monolith-for-audit.php` — vedi Fixcity/UI `claude-audit-static.md`.
+Split con `bashscripts/tools/split-module-lang-monolith-for-audit.php` — vedi Application/UI `claude-audit-static.md`.
 
 ## `--max-files`
 

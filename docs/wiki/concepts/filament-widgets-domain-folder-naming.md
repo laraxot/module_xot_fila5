@@ -14,8 +14,8 @@
 
 - **Politica modulare:** un widget = un ruolo su un aggregato (`Ticket`, `Auth`, `Rating`).
 - **DRY nei namespace:** `ViewWidget` è leggibile nel contesto `Ticket\`; niente prefissi `Ticket*` su ogni file.
-- **KISS in CMS JSON:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
-- **Allineamento risorse:** `GetViewByClassAction` risolve `fixcity::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+- **KISS in CMS JSON:** `Modules\Application\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
+- **Allineamento risorse:** `GetViewByClassAction` risolve `application::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
 
 ## Struttura file
 
@@ -40,14 +40,14 @@ Modules/<Modulo>/resources/views/filament/widgets/
   "type": "widget",
   "data": {
     "view": "ui::components.blocks.widget.simple",
-    "widget": "Modules\\Fixcity\\Filament\\Widgets\\Ticket\\ViewWidget"
+    "widget": "Modules\\Application\\Filament\\Widgets\\Ticket\\ViewWidget"
   }
 }
 ```
 
-## Esempio Fixcity FO
+## Esempio Application FO
 
-- Classe: `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget`
+- Classe: `Modules\Application\Filament\Widgets\Ticket\ViewWidget`
 - Base: `XotBaseInfolistWidget`
 - Schema: `TicketInfolist::getInfolistSchema()`
 - Pagina: `tickets.view.json`
@@ -59,6 +59,6 @@ Widget ancora in root `Widgets/` con prefisso entità (`CreateTicketWizardWidget
 ## Collegamenti
 
 - [ticket-fo-detail-filament-widget-infolist](../../../../../../docs/wiki/decisions/ticket-fo-detail-filament-widget-infolist.md)
-- [tickets-view-cms-folio-page](../../../Fixcity/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Fixcity)
+- [tickets-view-cms-folio-page](../../../Application/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Application)
 - [GetViewByClassAction](../../app/Actions/View/GetViewByClassAction.php)
 - Regola Cursor: `.cursor/rules/filament-widget-domain-folder.mdc`

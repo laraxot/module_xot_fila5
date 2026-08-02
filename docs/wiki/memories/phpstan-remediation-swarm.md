@@ -1,10 +1,10 @@
 ---
 title: "PHPStan Remediation Swarm — Lessons"
 type: concept
-tags: [phpstan, larastan, remediation, xot, techplanner]
+tags: [phpstan, larastan, remediation, xot, planning_module]
 created: 2026-06-06
 updated: 2026-06-06
-qmd: "phpstan remediation swarm TechPlanner main_module XotData Larastan BelongsTo Profile"
+qmd: "phpstan remediation swarm PlanningModule main_module XotData Larastan BelongsTo Profile"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -18,22 +18,22 @@ related:
 
 # PHPStan Remediation Swarm — Lessons
 
-Runbook for the recurring **30-error tail** seen in swarm PHPStan passes on TechPlanner (`phpstan-run5` pattern). Fixes target root cause, not baselines or `@phpstan-ignore`.
+Runbook for the recurring **30-error tail** seen in swarm PHPStan passes on PlanningModule (`phpstan-run5` pattern). Fixes target root cause, not baselines or `@phpstan-ignore`.
 
-## 1. Bootstrap: pin `main_module` to TechPlanner
+## 1. Bootstrap: pin `main_module` to PlanningModule
 
-**Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Fixcity\Models\Profile`.
+**Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Application\Models\Profile`.
 
 **Root cause:** Larastan resolves `Updater::deleter()` / `creator()` / `updater()` via `XotData::getProfileClass()` at analysis time. A stale or cross-tenant `main_module` points at a module that is not in this mono-repo.
 
 **Fix:** In `laravel/phpstan_bootstrap.php`, after Laravel boot:
 
 ```php
-config(['xra.main_module' => 'TechPlanner']);
+config(['xra.main_module' => 'PlanningModule']);
 // reset XotData::$instance singleton, then XotData::make()
 ```
 
-**Lesson:** PHPStan bootstrap is part of the tenant contract — not optional. TechPlanner Profile lives in `Modules\TechPlanner\Models\Profile`.
+**Lesson:** PHPStan bootstrap is part of the tenant contract — not optional. PlanningModule Profile lives in `Modules\PlanningModule\Models\Profile`.
 
 ## 2. `HasDynamicFillable` — no `??` on declared arrays
 
@@ -110,6 +110,6 @@ Target: **0 errors**, empty baseline.
 
 ## False friends (do not “fix”)
 
-- Do not replace `ProfileContract` PHPDoc with concrete Fixcity class — fix bootstrap `main_module`.
+- Do not replace `ProfileContract` PHPDoc with concrete Application class — fix bootstrap `main_module`.
 - Do not add `@phpstan-ignore` for Safe functions — import Safe variants.
 - Do not widen enum unions to silence `mapWithKeys` — type the callback return `array<string, string>`.

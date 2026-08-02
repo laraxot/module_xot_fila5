@@ -7,9 +7,9 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "migration foreignIdFor XotBaseMigration cross-database user_id constrained"
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
+  - ""
 discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+  - ""
 related:
   - ./migration-update-timestamps-only.md
   - ../../../../../docs/wiki/concepts/migration-foreign-id-for.md

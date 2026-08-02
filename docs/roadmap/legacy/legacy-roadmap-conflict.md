@@ -11,7 +11,7 @@
 
 ## 🎯 MODULE OVERVIEW
 
-Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+Il modulo **Xot** è il cuore architetturale del sistema Application, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
 
 ### 🏗️ Architettura Modulo
 ```
@@ -431,7 +431,7 @@ Xot Module (Core Framework)
 
 ## 🔗 INTEGRATION POINTS
 
-### 🎫 Fixcity Module
+### 🎫 Application Module
 - [ ] Base classes for ticket management
 - [ ] Workflow actions for tickets
 - [ ] Notification services

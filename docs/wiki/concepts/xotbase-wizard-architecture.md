@@ -28,7 +28,7 @@
            │                                    │
            ▼                                    ▼
 http://127.0.0.1:8000/it/tests/segnalazione-crea
-           (citizen frontoffice)              http://127.0.0.1:8000/fixcity/admin/tickets/create
+           (citizen frontoffice)              http://127.0.0.1:8000/application/admin/tickets/create
                                             (admin panel)
 
 SAME Wizard component, DIFFERENT "dresses" (CSS/Blade in theme)
@@ -140,7 +140,7 @@ Filament\Schemas\Components\Wizard (vendor)
     ↑
 XotBaseWizardWidget (Modules/Xot - our base)
     ↑
-CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
+CreateTicketWizardWidget (Modules/Application - concrete widget)
 ```
 
 **Each layer adds value:**
@@ -160,7 +160,7 @@ CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
 - [ ] CSS in `laravel/Themes/Sixteen/resources/css/app.css`
 - [ ] Run `npm run build && npm run copy` after CSS changes
 
-### Admin (`/fixcity/admin/tickets/create`)
+### Admin (`/application/admin/tickets/create`)
 
 - [ ] Standard Filament wizard rendering
 - [ ] No theme overrides needed (uses vendor Blade directly)
@@ -173,13 +173,13 @@ CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
 
 ```bash
 cd laravel
-php vendor/bin/phpstan analyse Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php --level=5
+php vendor/bin/phpstan analyse Modules/Application/app/Filament/Widgets/CreateTicketWizardWidget.php --level=5
 ```
 
 ### 2. PHPMD (.phar version)
 
 ```bash
-php /home/zorin/.local/bin/phpmd.phar laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php text cleancode
+php /home/zorin/.local/bin/phpmd.phar laravel/Modules/Application/app/Filament/Widgets/CreateTicketWizardWidget.php text cleancode
 ```
 
 ### 3. PHP Insights
@@ -193,7 +193,7 @@ php vendor/bin/phpinsights analyse --no-interaction
 
 ```bash
 cd laravel
-php vendor/bin/pint Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php --format=agent
+php vendor/bin/pint Modules/Application/app/Filament/Widgets/CreateTicketWizardWidget.php --format=agent
 ```
 
 ### 5. Pest Tests
@@ -231,8 +231,8 @@ npx playwright test --grep "admin tickets create"
 ## Files to Study
 
 - `laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php` ✅ (base widget)
-- `laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php` ✅ (concrete widget)
-- `laravel/Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php` ✅ (form schema)
+- `laravel/Modules/Application/app/Filament/Widgets/CreateTicketWizardWidget.php` ✅ (concrete widget)
+- `laravel/Modules/Application/app/Filament/Resources/TicketResource/Schemas/TicketForm.php` ✅ (form schema)
 - `vendor/filament/schemas/src/Components/Wizard.php` ✅ (Filament core)
 - `vendor/filament/schemas/resources/views/components/wizard.blade.php` ✅ (Filament Blade)
 
@@ -240,7 +240,7 @@ npx playwright test --grep "admin tickets create"
 
 After understanding and implementing:
 1. Update `laravel/Modules/Xot/docs/wiki/concepts/xotbase-wizard-architecture.md`
-2. Update `laravel/Modules/Fixcity/docs/wiki/concepts/wizard-zen-philosophy.md`
+2. Update `laravel/Modules/Application/docs/wiki/concepts/wizard-zen-philosophy.md`
 3. Update `laravel/Themes/Sixteen/docs/wiki/concepts/theme-dress-pattern.md`
 4. Update all `docs/wiki/index.md` with new entries
 5. Update `docs/wiki/log.md` with 2026-05-05 entry

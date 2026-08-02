@@ -85,7 +85,7 @@ lascia un controllo eseguibile sul contratto pubblico.
 Durante la sessione il disco root dell'host (`/dev/nvme0n1p6`, 460G) e'
 arrivato al 100% di utilizzo (free sceso fino a pochi MB, in oscillazione),
 verosimilmente per attivita' parallela di altri agenti sullo stesso host
-(Geo/Notify/User/Predict in lavoro contemporaneo, come da contesto del
+(Geo/Notify/User/Forecast in lavoro contemporaneo, come da contesto del
 task). Questo ha causato fallimenti intermittenti `ENOSPC` su tool di
 scrittura/esecuzione. Per prudenza la quality gate completa
 (PHPStan livello 10, PHPMD, PHPInsights, Pest) NON e' stata eseguita in

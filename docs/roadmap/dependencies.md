@@ -174,7 +174,7 @@ Xot (Foundation)
 - **Seo**: Extends XotBaseModel
 - **Tenant**: Extends XotBaseModel
 - **UI**: Extends XotBaseModel
-- **Fixcity**: Extends XotBaseModel
+- **Application**: Extends XotBaseModel
 - **Blog**: Extends XotBaseModel
 - **Comment**: Extends XotBaseModel
 - **Gdpr**: Extends XotBaseModel
@@ -187,8 +187,8 @@ Xot (Foundation)
 - **User → Media**: User media
 - **User → Notify**: User notifications
 - **Cms → Media**: CMS media
-- **Fixcity → Geo**: Location data
-- **Fixcity → Rating**: Rating system
+- **Application → Geo**: Location data
+- **Application → Rating**: Rating system
 
 ## Dependency Graph
 

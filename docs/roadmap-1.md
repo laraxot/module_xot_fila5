@@ -10,7 +10,7 @@
 
 ## 🎯 MODULE OVERVIEW
 
-Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+Il modulo **Xot** è il cuore architetturale del sistema Application, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
 
 ### 🏗️ Architettura Modulo
 ```
@@ -170,13 +170,13 @@ Xot Module (Core Framework)
 
 #### 📋 Features
 - [ ] **Smart Caching** (Priority: MEDIUM)
-  - [ ] ML-based cache prediction
+  - [ ] ML-based cache forecast
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
   - [ ] Performance optimization
 
-- [ ] **Predictive Services** (Priority: MEDIUM)
-  - [ ] Load prediction
+- [ ] **Forecasting Services** (Priority: MEDIUM)
+  - [ ] Load forecast
   - [ ] Resource optimization
   - [ ] Performance forecasting
   - [ ] Anomaly detection
@@ -189,7 +189,7 @@ Xot Module (Core Framework)
 
 #### 🎯 Success Criteria
 - [ ] AI caching working
-- [ ] Predictive services active
+- [ ] Forecasting services active
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
 
@@ -341,7 +341,7 @@ Xot Module (Core Framework)
 - [ ] AI research and planning
 - [ ] ML model development
 - [ ] Smart caching implementation
-- [ ] Predictive services
+- [ ] Forecasting services
 
 #### May 2025
 - [ ] AI integration testing
@@ -427,7 +427,7 @@ Xot Module (Core Framework)
 
 ## 🔗 INTEGRATION POINTS
 
-### 🎫 Fixcity Module
+### 🎫 Application Module
 - [ ] Base classes for ticket management
 - [ ] Workflow actions for tickets
 - [ ] Notification services

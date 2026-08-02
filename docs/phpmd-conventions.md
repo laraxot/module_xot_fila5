@@ -1,6 +1,6 @@
 # 🔧 PHPMD Convenzioni Laraxot
 
-**Scope**: Tutti i moduli FixCity (Laraxot PTVX)  
+**Scope**: Tutti i moduli Application (Laraxot PTVX)  
 **Ultimo Aggiornamento**: 2026-06-19  
 **Stato**: ✅ Attivo
 

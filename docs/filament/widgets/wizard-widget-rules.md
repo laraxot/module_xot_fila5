@@ -34,7 +34,7 @@ TextInput::make('address')
 **Perche**: LangServiceProvider configura automaticamente label, placeholder, helperText, tooltip per TUTTI i componenti Filament via `AutoLabelAction`.
 
 **Pattern chiave**: `{namespace}::{widget_snake_case}.{type}.{name}.{property}`  
-**Esempio**: `fixcity::create_ticket_wizard.fields.address.label`
+**Esempio**: `application::create_ticket_wizard.fields.address.label`
 
 ---
 
@@ -108,7 +108,7 @@ public function submit(): void
     Model::create($flat);
 }
 
-// ✅ PATTERN FIXCITY (ticket wizard)
+// ✅ PATTERN APPLICATION (ticket wizard)
 public function submit(): void
 {
     /** @var array<string, mixed> $data */
@@ -251,8 +251,8 @@ CreateTicketWizardWidget (dominio concreto: creazione ticket)
 - [XotBaseWizardWidget Philosophy](./xot-base-wizard-widget-philosophy.md)
 - [LangServiceProvider Auto-Label](../../../../Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](../../../../Lang/app/Actions/Filament/AutoLabelAction.php)
-- [CreateTicketWizardWidget Example](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
-- [Filament Wizard Rules (Fixcity)](../../../../Fixcity/docs/filament-wizard-rule.md)
+- [CreateTicketWizardWidget Example](../../../../Application/app/Filament/Widgets/CreateTicketWizardWidget.php)
+- [Filament Wizard Rules (Application)](../../../../Application/docs/filament-wizard-rule.md)
 
 ---
 

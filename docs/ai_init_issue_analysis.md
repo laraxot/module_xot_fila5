@@ -36,5 +36,5 @@ Non:
 
 ## Conseguenza pratica
 
-- Source: `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/.gemini`
-- Target symlink: `/var/www/_bases/base_quaeris_fila4_mono/.gemini`
+- Source: `/var/www/_bases/base_survey_module_fila4_mono/bashscripts/ai/.gemini`
+- Target symlink: `/var/www/_bases/base_survey_module_fila4_mono/.gemini`

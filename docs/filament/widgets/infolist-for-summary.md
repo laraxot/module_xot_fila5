@@ -192,7 +192,7 @@ TextEntry::make('review_images_count')
     ->state(function (Get $get): string {
         $images = $get('images');
         $count = is_array($images) ? count($images) : 0;
-        return trans_choice('fixcity::ticket.messages.images_uploaded.text', $count);
+        return trans_choice('application::ticket.messages.images_uploaded.text', $count);
     }),
 ```
 
@@ -240,5 +240,5 @@ Se vedi documentazione o tutorial che dicono "non puoi mixare Forms e Infolists"
 ## Vedi anche
 
 - [Location Spinner UX](../../../Geo/docs/location-spinner-ux.md) — GPS button con spinner
-- [Ticket Wizard Frontoffice](../../../Fixcity/docs/ticket-wizard-frontoffice.md) — Architettura wizard
-- [Filament Wizard Rule](../../../Fixcity/docs/filament-wizard-rule.md) — NO Blade step management
+- [Ticket Wizard Frontoffice](../../../Application/docs/ticket-wizard-frontoffice.md) — Architettura wizard
+- [Filament Wizard Rule](../../../Application/docs/filament-wizard-rule.md) — NO Blade step management

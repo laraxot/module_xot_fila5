@@ -15,10 +15,6 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\Route\GetRouteParametersAction;
-<<<<<<< .merge_file_ApxAzv
-use Webmozart\Assert\Assert;
-=======
->>>>>>> .merge_file_dcvrz7
 
 use function Safe\define;
 use function Safe\preg_match;
@@ -26,13 +22,7 @@ use function Safe\preg_match;
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
-<<<<<<< .merge_file_ApxAzv
-        /** @var mixed $pathResult */
         $pathResult = app(FixPathAction::class)->execute('\vendor\orchestra\testbench-core\laravel');
-        /** @var mixed $baseResult */
-=======
-        $pathResult = app(FixPathAction::class)->execute('\vendor\orchestra\testbench-core\laravel');
->>>>>>> .merge_file_dcvrz7
         $baseResult = app(FixPathAction::class)->execute(base_path());
 
         $path = is_string($pathResult) ? $pathResult : '';
@@ -51,10 +41,6 @@ if (! function_exists('dddx')) {
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', $start);
         }
-<<<<<<< .merge_file_ApxAzv
-        /** @var mixed $fileResult */
-=======
->>>>>>> .merge_file_dcvrz7
         $fileResult = app(FixPathAction::class)->execute($tmp[0]['file'] ?? 'file-unknown');
         $file = is_string($fileResult) ? $fileResult : 'file-unknown';
 
@@ -67,21 +53,11 @@ if (! function_exists('dddx')) {
         ];
 
         if (File::exists($data['file'])) {
-<<<<<<< .merge_file_ApxAzv
-            /** @var mixed $storageResult */
-=======
->>>>>>> .merge_file_dcvrz7
             $storageResult = app(FixPathAction::class)->execute(storage_path('framework/views'));
             $storagePath = is_string($storageResult) ? $storageResult : '';
             if (Str::startsWith($data['file'], $storagePath)) {
                 $content = File::get($data['file']);
-<<<<<<< .merge_file_ApxAzv
-                /** @var mixed $betweenResult */
                 $betweenResult = Str::between($content, '/**PATH ', ' ENDPATH**/');
-                /** @var mixed $viewResult */
-=======
-                $betweenResult = Str::between($content, '/**PATH ', ' ENDPATH**/');
->>>>>>> .merge_file_dcvrz7
                 $viewResult = app(FixPathAction::class)->execute(is_string($betweenResult) ? $betweenResult : '');
                 $data['view_file'] = is_string($viewResult) ? $viewResult : '';
             }
@@ -114,19 +90,11 @@ if (! function_exists('inAdmin')) {
         /** @var iterable<int|string, string>|null $segments */
         $segments = Request::segments();
 
-<<<<<<< .merge_file_ApxAzv
         if (! is_array($segments) || count($segments) === 0) {
             return false;
         }
 
         return $segments[0] === 'livewire' && session('in_admin') === true;
-=======
-        if (! is_array($segments) || 0 === count($segments)) {
-            return false;
-        }
-
-        return 'livewire' === $segments[0] && true === session('in_admin');
->>>>>>> .merge_file_dcvrz7
     }
 }
 
@@ -149,20 +117,12 @@ if (! function_exists('params2ContainerItem')) {
         $item = [];
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
-<<<<<<< .merge_file_ApxAzv
             if (preg_match($pattern, $k, $matches) !== 1) {
-=======
-            if (1 !== preg_match($pattern, $k, $matches)) {
->>>>>>> .merge_file_dcvrz7
                 continue;
             }
             $sk = $matches[1] ?? '';
             $sv = $matches[2] ?? '';
-<<<<<<< .merge_file_ApxAzv
             if ($sk !== '' && $sv !== '') {
-=======
-            if ('' !== $sk && '' !== $sv) {
->>>>>>> .merge_file_dcvrz7
                 ${$sk}[$sv] = $v;
             }
         }
@@ -175,11 +135,14 @@ if (! function_exists('xotModel')) {
     function xotModel(string $name): Model
     {
         $model_class = config('morph_map.'.$name);
-        if (! is_string($model_class)) {
+        if (! is_string($model_class) || ! class_exists($model_class)) {
             throw new Exception('['.__LINE__.']');
         }
 
-        Assert::isInstanceOf($res = app($model_class), Model::class);
+        $res = app($model_class);
+        if (! $res instanceof Model) {
+            throw new Exception('['.__LINE__.']');
+        }
 
         return $res;
     }
@@ -191,11 +154,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-<<<<<<< .merge_file_ApxAzv
             return $id === null ? null : strval($id);
-=======
-            return null === $id ? null : strval($id);
->>>>>>> .merge_file_dcvrz7
         } catch (Throwable) {
             return null;
         }
@@ -344,11 +303,7 @@ if (! function_exists('describe')) {
 
 if (! function_exists('xotSeedModelOnce')) {
     /**
-<<<<<<< .merge_file_ApxAzv
      * @param  class-string<Model>  $modelClass
-=======
-     * @param class-string<Model> $modelClass
->>>>>>> .merge_file_dcvrz7
      */
     function xotSeedModelOnce(string $modelClass): void
     {

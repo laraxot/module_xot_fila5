@@ -69,10 +69,10 @@ namespace Modules\<nome progetto>\App\Controllers;
 
 // CORRETTO
 namespace Modules\<nome progetto>\Controllers;
-namespace Modules\SaluteOra\App\Controllers;
+namespace Modules\Application\App\Controllers;
 
 // CORRETTO
-namespace Modules\SaluteOra\Controllers;
+namespace Modules\Application\Controllers;
 ```
 
 ## esempi corretti vs errati
@@ -84,10 +84,10 @@ namespace Modules\<nome progetto>\Models;
 namespace Modules\User\Services;
 namespace Modules\Tenant\Repositories;
 namespace Modules\<nome progetto>\Filament\Resources;
-namespace Modules\SaluteOra\Models;
+namespace Modules\Application\Models;
 namespace Modules\User\Services;
 namespace Modules\Tenant\Repositories;
-namespace Modules\SaluteOra\Filament\Resources;
+namespace Modules\Application\Filament\Resources;
 ```
 
 ### errati ✗
@@ -97,10 +97,10 @@ namespace Modules\<nome progetto>\App\Models;           // errato: 'App' nel nam
 namespace Modules\User\App\Services;              // errato: 'App' nel namespace
 namespace Modules\Tenant\app\Repositories;        // errato: 'app' nel namespace
 namespace App\Modules\<nome progetto>\Controllers;      // errato: struttura completamente sbagliata
-namespace Modules\SaluteOra\App\Models;           // errato: 'App' nel namespace
+namespace Modules\Application\App\Models;           // errato: 'App' nel namespace
 namespace Modules\User\App\Services;              // errato: 'App' nel namespace
 namespace Modules\Tenant\app\Repositories;        // errato: 'app' nel namespace
-namespace App\Modules\SaluteOra\Controllers;      // errato: struttura completamente sbagliata
+namespace App\Modules\Application\Controllers;      // errato: struttura completamente sbagliata
 ```
 
 ## struttura fisica vs namespace
@@ -110,16 +110,16 @@ namespace App\Modules\SaluteOra\Controllers;      // errato: struttura completam
 Anche se i file sono fisicamente collocati in una directory `app/`, il namespace **non deve mai riflettere** questa struttura.
 
 ```
-Percorso fisico:    /Modules/SaluteOra/app/Models/Patient.php
-Namespace corretto: namespace Modules\SaluteOra\Models;
+Percorso fisico:    /Modules/Application/app/Models/Patient.php
+Namespace corretto: namespace Modules\Application\Models;
 ```
 
 ### mappatura corretta percorso-namespace
 
 | percorso fisico | namespace corretto |
 |-----------------|--------------------|
-| `/Modules/SaluteOra/app/Models/Patient.php` | `Modules\SaluteOra\Models` |
-| `/Modules/SaluteOra/app/Filament/Resources/PatientResource.php` | `Modules\SaluteOra\Filament\Resources` |
+| `/Modules/Application/app/Models/Patient.php` | `Modules\Application\Models` |
+| `/Modules/Application/app/Filament/Resources/PatientResource.php` | `Modules\Application\Filament\Resources` |
 | `/Modules/Xot/app/Providers/XotServiceProvider.php` | `Modules\Xot\Providers` |
 
 ### struttura directory completa
@@ -136,16 +136,16 @@ Modules/
       Filament/
         Resources/
           PatientResource.php  // namespace Modules\<nome progetto>\Filament\Resources;
-  SaluteOra/
+  Application/
     app/                        // directory fisica
       Console/
         Commands/
-          ImportPatient.php     // namespace Modules\SaluteOra\Console\Commands;
+          ImportPatient.php     // namespace Modules\Application\Console\Commands;
       Models/
-        Patient.php            // namespace Modules\SaluteOra\Models;
+        Patient.php            // namespace Modules\Application\Models;
       Filament/
         Resources/
-          PatientResource.php  // namespace Modules\SaluteOra\Filament\Resources;
+          PatientResource.php  // namespace Modules\Application\Filament\Resources;
 ```
 
 ## come verificare i namespace
@@ -163,7 +163,7 @@ Prima di committare un file, verifica sempre che:
 Utilizza phpstan per verificare automaticamente i namespace:
 
 ```bash
-php artisan phpstan:analyse --level=1 Modules/SaluteOra
+php artisan phpstan:analyse --level=1 Modules/Application
 ```
 
 ## motivazione di questa convenzione
@@ -190,10 +190,10 @@ namespace Modules\<nome progetto>\App\Console\Commands;
 
 // CORRETTO ✓
 namespace Modules\<nome progetto>\Console\Commands;
-namespace Modules\SaluteOra\App\Console\Commands;
+namespace Modules\Application\App\Console\Commands;
 
 // CORRETTO ✓
-namespace Modules\SaluteOra\Console\Commands;
+namespace Modules\Application\Console\Commands;
 ```
 
 ### Conseguenze dell'Errore
@@ -209,7 +209,7 @@ namespace Modules\SaluteOra\Console\Commands;
 Utilizzare grep per trovare tutti i file con namespace errato:
 
 ```bash
-grep -r "namespace Modules\\\\.*\\\\App\\\\" /var/www/html/base_saluteora/laravel/Modules
+grep -r "namespace Modules\\\\.*\\\\App\\\\" /var/www/html/base_application/laravel/Modules
 ```
 
 ### PHP Stan

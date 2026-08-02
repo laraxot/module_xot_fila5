@@ -1,4 +1,4 @@
-# Filament Class Extension Rules - base_techplanner_fila5_mono
+# Filament Class Extension Rules - base_ptvx_fila5
 
 Questa pagina esiste per compatibilità e storico del modulo.
 

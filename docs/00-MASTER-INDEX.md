@@ -29,9 +29,9 @@
 
 ## 🏗 Module-Specific Documentation
 
-- **[Fixcity Module](../../Fixcity/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+- **[Application Module](../../Application/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
 - **[Geo Module](../../Geo/docs/INDEX.md)**: Geolocation and Map components.
-- **[Predict Module](../../Predict/docs/00-INDEX.md)**: Outcomes and Market logic.
+- **[Forecast Module](../../Forecast/docs/00-INDEX.md)**: Outcomes and Market logic.
 
 ---
 

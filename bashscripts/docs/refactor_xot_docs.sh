@@ -342,7 +342,7 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
 
 ### Consistency
 - Uniform behavior across modules
-- Predictable patterns for developers
+- Deterministic patterns for developers
 - Reduced learning curve
 
 ### Quality

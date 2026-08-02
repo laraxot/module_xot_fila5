@@ -6,9 +6,9 @@ created: 2026-07-09
 updated: 2026-07-09
 qmd: "claude-audit static tutti moduli 80/100 max-files 2000 boost audit-coverage"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/704"
+  - "https://github.com/laraxot/base_application_fila5/issues/704"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/705"
+  - "https://github.com/laraxot/base_application_fila5/discussions/705"
 related:
   - ../../../../docs/wiki/guidelines/claude-audit-static-free-tier.md
   - ../../../../bashscripts/tools/run-claude-audit-all-modules-static.sh
@@ -37,7 +37,7 @@ bash bashscripts/tools/run-claude-audit-module-static.sh Activity
 bash bashscripts/tools/run-claude-audit-all-modules-static.sh
 
 # Boost: bridge PHPUnit + doc-ratio + rm vendor/node_modules locale
-bash bashscripts/tools/claude-audit-module-static-boost.sh Fixcity
+bash bashscripts/tools/claude-audit-module-static-boost.sh Application
 bash bashscripts/tools/run-claude-audit-all-modules-boost.sh
 ```
 
@@ -65,7 +65,7 @@ Activity, Comment, Gdpr, Rating, Seo, Tenant.
 
 ## Moduli con debito strutturale (serve story dedicata)
 
-Fixcity, Geo, User, Xot, Blog, UI — large lang, deep nesting, legacy JS/Services.
+Application, Geo, User, Xot, Blog, UI — large lang, deep nesting, legacy JS/Services.
 
 ### Baseline executor 2026-07-09 (post boost parziale)
 

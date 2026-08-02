@@ -20,20 +20,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -41,14 +33,22 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 
@@ -70,15 +70,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato]([project-root]/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/application/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\application\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
@@ -101,20 +101,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -122,14 +114,22 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 
@@ -151,15 +151,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato]([project-root]/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/application/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\application\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
@@ -183,20 +183,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
@@ -204,14 +196,22 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
-- MAI usare percorsi che includono `saluteora` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
+- MAI usare percorsi che includono `application` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 - MAI usare percorsi che includono `<nome progetto>` o altri nomi specifici
 
@@ -233,15 +233,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
+[Documento Correlato]([project-root]/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/application/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\application\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+[Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```

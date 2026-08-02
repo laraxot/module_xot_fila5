@@ -34,16 +34,16 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 
 **Errore**:
 ```
-PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
+PHPDoc tag @property-read contains unknown class Modules\Application\Models\Profile
 ```
 
-**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
+**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Application\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
 
 **Prima**:
 ```php
 /**
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
+ * @property-read \Modules\Application\Models\Profile|null $creator
+ * @property-read \Modules\Application\Models\Profile|null $updater
  */
 class AuthenticationLog extends BaseModel
 ```
@@ -59,7 +59,7 @@ class AuthenticationLog extends BaseModel
 
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Application\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 ```
 
 **Risultato**: ✅ 0 errori PHPStan Level 10 per questa categoria
@@ -68,7 +68,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
+**File**: `Modules/SurveyModule/app/Models/Contact.php` (809 righe!)
 
 **Errori PHPStan Level 10**:
 ```
@@ -106,7 +106,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+| SurveyModule | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -149,7 +149,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+- SurveyModule module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -289,7 +289,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-**File**: `Modules/Quaeris/app/Models/Contact.php`
+**File**: `Modules/SurveyModule/app/Models/Contact.php`
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -350,7 +350,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+**File**: `Modules/SurveyModule/app/Models/QuestionChart.php`
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -419,7 +419,7 @@ class User extends BaseModel
 
 **Comando**:
 ```bash
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Application\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 ```
 
 **Risultato**:
@@ -432,13 +432,13 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-- **Quaeris**: 5 modelli
+- **SurveyModule**: 5 modelli
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-cd Modules/Quaeris/app/Models
+cd Modules/SurveyModule/app/Models
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -457,7 +457,7 @@ done
 
 **Comando**:
 ```bash
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
+vendor/bin/pint Modules/User/app/Models Modules/SurveyModule/app/Models --quiet
 ```
 
 **Risultato**:
@@ -869,13 +869,13 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
+./vendor/bin/phpstan analyse Modules/SurveyModule/app/Models --level=10
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
+- SurveyModule: ⚠️ 21 errors (Contact.php - needs refactoring)
 
 ### Manual Code Review
 
@@ -989,16 +989,16 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 
 **Errore**:
 ```
-PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
+PHPDoc tag @property-read contains unknown class Modules\Application\Models\Profile
 ```
 
-**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
+**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Application\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
 
 **Prima**:
 ```php
 /**
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
+ * @property-read \Modules\Application\Models\Profile|null $creator
+ * @property-read \Modules\Application\Models\Profile|null $updater
  */
 class AuthenticationLog extends BaseModel
 ```
@@ -1014,7 +1014,7 @@ class AuthenticationLog extends BaseModel
 
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Application\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 ```
 
 **Risultato**: ✅ 0 errori PHPStan Level 10 per questa categoria
@@ -1023,7 +1023,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
+**File**: `Modules/SurveyModule/app/Models/Contact.php` (809 righe!)
 
 **Errori PHPStan Level 10**:
 ```
@@ -1061,7 +1061,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+| SurveyModule | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -1104,7 +1104,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+- SurveyModule module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -1244,7 +1244,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-**File**: `Modules/Quaeris/app/Models/Contact.php`
+**File**: `Modules/SurveyModule/app/Models/Contact.php`
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -1305,7 +1305,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+**File**: `Modules/SurveyModule/app/Models/QuestionChart.php`
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -1374,7 +1374,7 @@ class User extends BaseModel
 
 **Comando**:
 ```bash
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Application\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 ```
 
 **Risultato**:
@@ -1387,13 +1387,13 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-- **Quaeris**: 5 modelli
+- **SurveyModule**: 5 modelli
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-cd Modules/Quaeris/app/Models
+cd Modules/SurveyModule/app/Models
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -1412,7 +1412,7 @@ done
 
 **Comando**:
 ```bash
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
+vendor/bin/pint Modules/User/app/Models Modules/SurveyModule/app/Models --quiet
 ```
 
 **Risultato**:
@@ -1824,13 +1824,13 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
+./vendor/bin/phpstan analyse Modules/SurveyModule/app/Models --level=10
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
+- SurveyModule: ⚠️ 21 errors (Contact.php - needs refactoring)
 
 ### Manual Code Review
 

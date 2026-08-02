@@ -5,7 +5,7 @@
 
 ## Issue Overview
 
-The `boost:add-skill` command was failing across the entire FixCity platform due to missing Laravel framework dependencies.
+The `boost:add-skill` command was failing across the entire Application platform due to missing Laravel framework dependencies.
 
 ## Root Cause
 

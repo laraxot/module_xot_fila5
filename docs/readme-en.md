@@ -8,7 +8,7 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+[![Application Platform](https://img.shields.io/badge/Platform-Application-008758.svg)](#)
 
 > **Laraxot DNA.** BaseModel, XotBaseServiceProvider, Filament bases — conventions that keep 20+ modules aligned.
 
@@ -16,7 +16,7 @@
 
 ## Why it exists
 
-No FixCity without Xot: internal framework preventing duplication and architectural drift.
+No Application without Xot: internal framework preventing duplication and architectural drift.
 
 ## Superpowers
 
@@ -53,4 +53,4 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-**Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+**Module** `xot` · **Laraxot** · **Application Platform** · PHPStan 10 · Filament 5

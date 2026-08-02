@@ -24,7 +24,7 @@ In **frontoffice** ora si **`use`** lo stesso `Filament\Resources\Pages\Concerns
 
 ## Persistenza dopo submit
 
-**Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)).
+**Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Application/app/Filament/Widgets/CreateTicketWizardWidget.php)).
 
 Perché: evitare doppioni e "middleware" PHP fragili quando Filament già definisce dove vivono i campi nello stato.
 
@@ -36,7 +36,7 @@ Widget con form lineare, tabelle, statistiche: usare **`XotBaseWidget`** (o `Xot
 
 | Metodo | Ruolo |
 |--------|--------|
-| `getSteps()` | Metodo (**astratto**); nella Fixcity delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
+| `getSteps()` | Metodo (**astratto**); nella Application delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
 | `hasSkippableSteps()` | Su **`XotBaseWizardWidget`** default **`true`** (UX pubblica); **`HasWizard`** Filament sarebbe **`false`** — override nelle sottoclassi se servono step "bloccati" |
 | `wizardAllowStepQueryExtra()` | Consenti salti fuori primo step anche in prod (override modulo) |
 | `getWizardComponent()` | **`final`**: `pub_theme::components.wizard` fuori admin + `persistStepInQueryString` |
@@ -65,12 +65,12 @@ Decisione tecnica storica / anti-pattern evitati: [`wiki/filament-wizard-refacto
 
 Implementazione: `laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php`
 
-Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
+Esempio dominio: `Modules\Application\Filament\Widgets\CreateTicketWizardWidget`
 
 ## Collegamenti
 
 - [XotBaseWidget](./xot-base-widget.md)
 - [Indice widget Filament](./index.md)
-- [Ticket wizard Fixcity](../../../Fixcity/docs/ticket-wizard-frontoffice.md)
-- [Pattern wizard Fixcity](../../../Fixcity/docs/filament-wizard-pattern.md)
+- [Ticket wizard Application](../../../Application/docs/ticket-wizard-frontoffice.md)
+- [Pattern wizard Application](../../../Application/docs/filament-wizard-pattern.md)
 - [Regole di qualità](../../../../../../docs/wiki/rules/quality-gate-after-edit.md)

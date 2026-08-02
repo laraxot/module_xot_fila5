@@ -7,7 +7,7 @@ created: 2026-06-05
 updated: 2026-07-24
 qmd: "xotbase schemawidget filament 5 HasSchemas formClass getState"
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
+  - "https://github.com/laraxot/base_ptvx_fila5/issues/18"
 related:
   - ./wiki/concepts/filament-page-form-wrapper.md
   - ./filament-v5-form-wrapper-blade-pattern.md

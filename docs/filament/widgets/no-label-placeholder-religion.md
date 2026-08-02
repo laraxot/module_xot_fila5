@@ -232,17 +232,17 @@ TextInput::make('address')
 
 // 2. Deriva chiave traduzione:
 //    - Classe chiamante: CreateTicketWizardWidget
-//    - Namespace: fixcity
+//    - Namespace: application
 //    - Widget name: create_ticket_wizard
 //    - Component type: fields
 //    - Field name: address
-//    → fixcity::create_ticket_wizard.fields.address.label
+//    → application::create_ticket_wizard.fields.address.label
 
 // 3. Applica traduzione automaticamente:
-//    $component->label(trans('fixcity::create_ticket_wizard.fields.address.label'))
+//    $component->label(trans('application::create_ticket_wizard.fields.address.label'))
 
 // 4. Se traduzione non esiste, la crea:
-//    SaveTransAction::save('fixcity::create_ticket_wizard.fields.address.label', 'Indirizzo')
+//    SaveTransAction::save('application::create_ticket_wizard.fields.address.label', 'Indirizzo')
 ```
 
 **Risultato**:
@@ -290,7 +290,7 @@ TextInput::make('address')  // → LangServiceProvider applica 'Indirizzo'
 // Devo cercare tutti i ->label('Indirizzo') e cambiare
 
 // ✅ DOPO: cambio label → cambio 1 file (lang)
-// Cambio solo fixcity::create_ticket_wizard.fields.address.label
+// Cambio solo application::create_ticket_wizard.fields.address.label
 ```
 
 ---
@@ -396,9 +396,9 @@ Vedi sezione "Script Pre-Commit" sopra.
 grep -r "->label(" laravel/Modules/ --include="*.php"
 grep -r "->placeholder(" laravel/Modules/ --include="*.php"
 
-# Cerca solo in Fixcity
-grep -r "->label(" laravel/Modules/Fixcity/ --include="*.php"
-grep -r "->placeholder(" laravel/Modules/Fixcity/ --include="*.php"
+# Cerca solo in Application
+grep -r "->label(" laravel/Modules/Application/ --include="*.php"
+grep -r "->placeholder(" laravel/Modules/Application/ --include="*.php"
 ```
 
 ---
@@ -423,7 +423,7 @@ TextInput::make('address')
 
 ```bash
 # Verifica che traduzioni esistano
-cat laravel/Modules/Fixcity/resources/lang/it/create_ticket_wizard.php
+cat laravel/Modules/Application/resources/lang/it/create_ticket_wizard.php
 
 # Se non esistono, LangServiceProvider le crea automaticamente
 # al primo accesso della pagina

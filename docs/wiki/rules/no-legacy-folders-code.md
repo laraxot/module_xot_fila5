@@ -13,7 +13,7 @@ discussions:
 related:
   - ../../../../../../docs/wiki/concepts/no-legacy-folders-code.md
   - ../log.md
-  - ../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md
+  - ../../../Forecast/docs/wiki/concepts/seeder-canonical-orchestrator.md
 ---
 
 # Niente cartelle Legacy nel codice PHP
@@ -22,4 +22,4 @@ Regola cross-modulo: vedi hub progetto [no-legacy-folders-code.md](../../../../.
 
 **TL;DR:** codice superato → `file.php.bak` nello **stesso** path; orchestrator unico (`*DatabaseSeeder`); niente `Legacy/` sotto `app/`, `database/`, `database/seeders/`.
 
-Correzione anti-pattern 2026-06-30: rimossa idea `database/seeders/Legacy/` su Predict — mai reintrodurre.
+Correzione anti-pattern 2026-06-30: rimossa idea `database/seeders/Legacy/` su Forecast — mai reintrodurre.

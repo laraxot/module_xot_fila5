@@ -55,10 +55,10 @@
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Categorie multilingua
 
-4. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
+4. **`laravel/Modules/Forecast/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
    - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseCreateRecord`
-   - **Impatto**: Coerenza nel modulo Predict
+   - **Impatto**: Coerenza nel modulo Forecast
 
 5. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/EditPageContent.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
@@ -75,10 +75,10 @@
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Modifica categorie multilingua
 
-8. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
+8. **`laravel/Modules/Forecast/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseEditRecord`
-   - **Impatto**: Coerenza nel modulo Predict
+   - **Impatto**: Coerenza nel modulo Forecast
 
 9. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ViewPageContent.php`**
    - **Prima**: `extends ViewRecord` + `use ViewRecord\Concerns\Translatable`
