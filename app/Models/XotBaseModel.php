@@ -14,10 +14,9 @@ use Modules\Xot\Traits\Updater;
 use Webmozart\Assert\Assert;
 
 abstract class XotBaseModel extends EloquentModel
-{/**
- * @phpstan-use HasXotFactory<\Modules\Xot\Database\Factories\XotBaseModelFactory, XotBaseModel>
- */
-use HasXotFactory;
+{
+    /** @phpstan-ignore-next-line */
+    use HasXotFactory;
 
     use RelationX;
     use Updater;
