@@ -173,3 +173,7 @@ yarn.lock
 phpmd*
 /.ai*
 /_bmad
+/bashscripts
+/_docs
+/docs/archive
+/docs/legacy
