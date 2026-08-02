@@ -5,42 +5,18 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
-use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 
 use function Safe\preg_match;
 
-/**
- * Base Pivot class for all modules.
- *
- * Centralizes common Pivot configurations and behaviors.
- * The $connection is automatically set based on the child class namespace.
- *
- * @property string|int $id
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
- * @property string|int|null $created_by
- * @property string|int|null $updated_by
- * @property string|int|null $deleted_by
- */
 abstract class XotBasePivot extends EloquentPivot
 {
-    /** @phpstan-use HasXotFactory<Factory<static>, static> */
     use HasXotFactory;
 
     use Updater;
 
-    /**
-     * Indicates whether attributes are snake cased on arrays.
-     *
-     * @see https://laravel-news.com/6-eloquent-secrets
-     *
-     * @var bool
-     */
     public static $snakeAttributes = true;
 
     /** @var bool */
@@ -58,12 +34,6 @@ abstract class XotBasePivot extends EloquentPivot
     /** @var string */
     protected $keyType = 'string';
 
-    /**
-     * Get the database connection for the model.
-     *
-     * Automatically determines connection from child class namespace.
-     * Example: Modules\User\Models\MyPivot → 'user'
-     */
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
@@ -93,9 +63,6 @@ abstract class XotBasePivot extends EloquentPivot
         return $connection;
     }
 
-    /**
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [

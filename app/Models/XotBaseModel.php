@@ -13,24 +13,13 @@ use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 use Webmozart\Assert\Assert;
 
-/**
- * Class XotBaseModel.
- */
 abstract class XotBaseModel extends EloquentModel
 {
-    /** @phpstan-use HasXotFactory<Factory<static>, static> */
     use HasXotFactory;
 
     use RelationX;
     use Updater;
 
-    /**
-     * Indicates whether attributes are snake cased on arrays.
-     *
-     * @see https://laravel-news.com/6-eloquent-secrets
-     *
-     * @var bool
-     */
     public static $snakeAttributes = true;
 
     /** @var int */
@@ -47,11 +36,6 @@ abstract class XotBaseModel extends EloquentModel
         // 'password'
     ];
 
-    /**
-     * Resolve the concrete model class for the caller's module.
-     *
-     * @return class-string<EloquentModel>
-     */
     public static function getClassName(): string
     {
         $object = Arr::first(debug_backtrace(), function (array $value) {
