@@ -17,6 +17,8 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  *
  * @template TFactory of Factory<covariant Model>
  * @template TModel of Model
+ *
+ * @phpstan-ignore missingType.generics — Dynamic factory resolution; concrete models resolve at runtime
  */
 trait HasXotFactory
 {
