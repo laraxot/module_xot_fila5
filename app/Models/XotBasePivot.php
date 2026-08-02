@@ -12,8 +12,10 @@ use Modules\Xot\Traits\Updater;
 use function Safe\preg_match;
 
 abstract class XotBasePivot extends EloquentPivot
-{
-    use HasXotFactory;
+{/**
+ * @phpstan-use HasXotFactory<\Modules\Xot\Database\Factories\XotBasePivotFactory, XotBasePivot>
+ */
+use HasXotFactory;
 
     use Updater;
 
