@@ -34,7 +34,7 @@ XotBaseWizardWidget         (abstract)
    - getSubmitFormLivewireMethodName(): 'save'
         |
         v
-CreateTicketWizardWidget    (concrete, Fixcity)
+CreateTicketWizardWidget    (concrete, Application)
    - getSteps(): array      [privacy, data, summary]
    - mount(): $this->wizardStartStep = 1;   ← dynamic property
 ```
@@ -335,11 +335,11 @@ Vantaggi:
 ## Cross-reference
 
 - `Modules/Xot/docs/architettura.md` — vista d'insieme su Xot widgets.
-- `Modules/Fixcity/docs/wiki/concepts/wizard-step-index-and-map-integration-rule.md`
+- `Modules/Application/docs/wiki/concepts/wizard-step-index-and-map-integration-rule.md`
   — convenzioni sul tracking dello step lato Livewire.
-- `Modules/Fixcity/docs/wiki/concepts/wizard-zen-philosophy.md` — pattern
-  consigliati per i wizard del dominio Fixcity.
-- `Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php` —
+- `Modules/Application/docs/wiki/concepts/wizard-zen-philosophy.md` — pattern
+  consigliati per i wizard del dominio Application.
+- `Modules/Application/app/Filament/Widgets/CreateTicketWizardWidget.php` —
   consumer del widget base.
 
 ---

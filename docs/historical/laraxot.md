@@ -1053,7 +1053,7 @@ return new AddressData(
 #### Widget Issues
 - Percorsi viste non corretti
   - Soluzione: Spostare in `resources/views/filament/widgets/`
-  - Aggiornare percorsi a `techplanner::filament.widgets.*`
+  - Aggiornare percorsi a `planning_module::filament.widgets.*`
 
 #### XotBaseListRecords Issues
 - Access level methods
@@ -2263,7 +2263,7 @@ Prima di creare nuovi file:
 ├── laravel/                # Core Laravel
 │   ├── Modules/           # Directory moduli
 │   │   ├── Xot/
-│   │   ├── Fixcity/
+│   │   ├── Application/
 │   │   └── ...
 │   ├── Themes/           # Directory temi
 │   │   ├── Sixteen/
@@ -2277,15 +2277,15 @@ Prima di creare nuovi file:
 
 #### ✅ Percorsi Corretti
 ```
-laravel/Modules/Fixcity/app/Datas/ReportData.php
-laravel/Modules/Fixcity/app/Models/Report.php
+laravel/Modules/Application/app/Datas/ReportData.php
+laravel/Modules/Application/app/Models/Report.php
 laravel/Themes/Sixteen/dist/
 ```
 
 #### ❌ Percorsi Errati da Rimuovere
 ```
-F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
-F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+F:\var\www\application\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\application\Modules\Application\     # ❌ ERRATO: manca laravel\
 ```
 
 ### Note Importanti
@@ -2438,17 +2438,17 @@ laravel/Modules/[ModuleName]/
 ### Uso dei Componenti
 ```blade
 {{-- Il componente sarà disponibile automaticamente --}}
-<x-fixcity::blocks.ticket_list.agid />
+<x-application::blocks.ticket_list.agid />
 ```
 
 ### ❌ Da Evitare
 ```php
 // ❌ NON necessario - i componenti sono già autoregistrati
-class FixcityServiceProvider extends ServiceProvider
+class ApplicationServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Blade::component('fixcity-ticket-list-agid', SomeComponent::class); // Non necessario
+        Blade::component('application-ticket-list-agid', SomeComponent::class); // Non necessario
     }
 }
 ```
@@ -2523,35 +2523,35 @@ class XotBaseServiceProvider extends ServiceProvider
 
 ### Percorso Base del Progetto
 ```
-F:\var\www\fixcity\              # Root del progetto
+F:\var\www\application\              # Root del progetto
 └── laravel\                     # ⚠️ Tutti i moduli vanno qui dentro
     └── Modules\                 # Directory corretta per i moduli
 ```
 
 ### ✅ Percorsi Corretti
 ```
-F:\var\www\fixcity\laravel\Modules\Fixcity\app\Datas\ReportData.php
-F:\var\www\fixcity\laravel\Modules\Fixcity\app\Models\Report.php
-F:\var\www\fixcity\laravel\Themes\Sixteen\dist\
+F:\var\www\application\laravel\Modules\Application\app\Datas\ReportData.php
+F:\var\www\application\laravel\Modules\Application\app\Models\Report.php
+F:\var\www\application\laravel\Themes\Sixteen\dist\
 ```
 
 ### ❌ Percorsi Errati da Rimuovere
 ```
-F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
-F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+F:\var\www\application\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\application\Modules\Application\     # ❌ ERRATO: manca laravel\
 ```
 
 ### Verifica Prima di Creare Nuovi File
-1. Assicurarsi di essere in `F:\var\www\fixcity\laravel\Modules\`
+1. Assicurarsi di essere in `F:\var\www\application\laravel\Modules\`
 2. Controllare il composer.json del modulo
 3. Verificare il namespace corretto
-4. Mai creare file direttamente in `F:\var\www\fixcity\Modules\`
+4. Mai creare file direttamente in `F:\var\www\application\Modules\`
 
 # Comandi Artisan
 
 ## Posizione Corretta
 ```
-F:\var\www\fixcity\
+F:\var\www\application\
 └── laravel\              # ⚠️ Directory dove si trova artisan
     ├── artisan           # Eseguibile artisan
     ├── Modules\
@@ -2564,10 +2564,10 @@ F:\var\www\fixcity\
 ```bash
 
 # Posizionarsi nella directory laravel
-cd F:\var\www\fixcity\laravel
+cd F:\var\www\application\laravel
 
 # Eseguire i comandi da qui
-php artisan module:seed Fixcity
+php artisan module:seed Application
 php artisan migrate
 php artisan config:clear
 ```
@@ -2576,19 +2576,19 @@ php artisan config:clear
 ```bash
 
 # ❌ ERRATO: dalla root del progetto
-cd F:\var\www\fixcity
-php artisan module:seed Fixcity  # Non funzionerà
+cd F:\var\www\application
+php artisan module:seed Application  # Non funzionerà
 
 # ❌ ERRATO: dalla directory Modules
-cd F:\var\www\fixcity\laravel\Modules
-php artisan module:seed Fixcity  # Non funzionerà
+cd F:\var\www\application\laravel\Modules
+php artisan module:seed Application  # Non funzionerà
 ```
 
 ## Comandi Comuni
 ```bash
 
-# Dalla directory F:\var\www\fixcity\laravel
-php artisan module:seed Fixcity          # Seeding modulo
+# Dalla directory F:\var\www\application\laravel
+php artisan module:seed Application          # Seeding modulo
 php artisan module:make-model Report     # Creare model
 php artisan module:make-factory Report   # Creare factory
 php artisan module:make-seeder Report    # Creare seeder
@@ -2596,12 +2596,12 @@ php artisan module:make-seeder Report    # Creare seeder
 
 ## Note Importanti
 1. **Directory di Lavoro**:
-   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\fixcity\laravel`
+   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\application\laravel`
    - Il file `artisan` si trova in questa directory
    - L'autoload e le configurazioni sono relative a questa directory
 
 2. **Percorsi nei Comandi**:
-   - I percorsi nei comandi sono relativi a `F:\var\www\fixcity\laravel`
+   - I percorsi nei comandi sono relativi a `F:\var\www\application\laravel`
    - Usare percorsi relativi quando possibile
    - Per percorsi assoluti, usare `base_path()` che punta a `laravel/`
 
@@ -2621,7 +2621,7 @@ Prima di creare qualsiasi file in un modulo, controllare sempre il `composer.jso
 {
     "autoload": {
         "psr-4": {
-            "Modules\\Fixcity\\": "app/"     // ✅ Il namespace punta a app/
+            "Modules\\Application\\": "app/"     // ✅ Il namespace punta a app/
             // oppure
             "Modules\\UI\\": ""              // ⚠️ Il namespace punta alla root del modulo
         }
@@ -2633,17 +2633,17 @@ Prima di creare qualsiasi file in un modulo, controllare sempre il `composer.jso
 
 #### Modulo con namespace in "app/"
 ```
-Modules/Fixcity/composer.json:
-"Modules\\Fixcity\\": "app/"
+Modules/Application/composer.json:
+"Modules\\Application\\": "app/"
 
 ✅ Percorsi Corretti:
-laravel/Modules/Fixcity/app/Providers/FixcityServiceProvider.php
-laravel/Modules/Fixcity/app/View/Components/Blocks/TicketList/Agid.php
-laravel/Modules/Fixcity/app/Models/Report.php
+laravel/Modules/Application/app/Providers/ApplicationServiceProvider.php
+laravel/Modules/Application/app/View/Components/Blocks/TicketList/Agid.php
+laravel/Modules/Application/app/Models/Report.php
 
 ❌ Percorsi Errati:
-laravel/Modules/Fixcity/Providers/FixcityServiceProvider.php
-laravel/Modules/Fixcity/View/Components/Blocks/TicketList/Agid.php
+laravel/Modules/Application/Providers/ApplicationServiceProvider.php
+laravel/Modules/Application/View/Components/Blocks/TicketList/Agid.php
 ```
 
 #### Modulo con namespace nella root
@@ -2674,10 +2674,10 @@ laravel/Modules/UI/app/View/Components/Button.php
 3. **Validazione Percorsi**:
    ```php
    // ✅ Corretto: Usa il namespace definito in composer.json
-   namespace Modules\Fixcity\View\Components;  // Sarà in app/View/Components
+   namespace Modules\Application\View\Components;  // Sarà in app/View/Components
 
    // ❌ Errato: Ignora il namespace mapping
-   namespace Modules\Fixcity\Components;       // Percorso non mappato
+   namespace Modules\Application\Components;       // Percorso non mappato
    ```
 
 # Views e Temi
@@ -2704,7 +2704,7 @@ Quando si usa una notazione del tipo `pub_theme::path.to.view`:
 3. **❌ Errori Comuni**:
    ```
    // ❌ ERRATO: Cercare le views del tema nel modulo
-   Modules/Fixcity/resources/views/livewire/auth/login.blade.php
+   Modules/Application/resources/views/livewire/auth/login.blade.php
 
    // ✅ CORRETTO: Views del tema vanno nel tema
    Themes/Sixteen/resources/views/livewire/auth/login.blade.php
@@ -3953,7 +3953,7 @@ laravel/Modules/[ModuleName]/
 
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
-- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
+- Esempio: `Modules/Application/resources/svg/application.svg`
 
 ## Registrazione Automatica
 
@@ -3994,10 +3994,10 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 
 ```blade
 {{-- Uso come componente --}}
-<x-fixcity-icon class="w-6 h-6" />
+<x-application-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
-@include('svg::fixcity')
+@include('svg::application')
 ```
 
 ## Best Practices
@@ -4036,10 +4036,10 @@ Se l'icona non viene visualizzata:
 ### 2. Problemi di Stile
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
-<x-fixcity-icon width="24" height="24" />
+<x-application-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
-<x-fixcity-icon class="w-6 h-6 text-gray-500" />
+<x-application-icon class="w-6 h-6 text-gray-500" />
 ```
 
 ### 3. Debug
@@ -5201,12 +5201,12 @@ Modules/YourModule/
 
 ### ✅ CORRETTO: Include il Resource nel namespace
 ```php
-namespace Modules\Fixcity\Filament\Resources\TicketResource\RelationManagers;
+namespace Modules\Application\Filament\Resources\TicketResource\RelationManagers;
 ```
 
 ### ❌ ERRATO: Namespace generico
 ```php
-namespace Modules\Fixcity\Filament\Resources\RelationManagers;
+namespace Modules\Application\Filament\Resources\RelationManagers;
 ```
 
 ## Best Practices
@@ -6657,7 +6657,7 @@ laravel/Modules/[ModuleName]/
 
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
-- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
+- Esempio: `Modules/Application/resources/svg/application.svg`
 
 ## Registrazione Automatica
 
@@ -6698,10 +6698,10 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 
 ```blade
 {{-- Uso come componente --}}
-<x-fixcity-icon class="w-6 h-6" />
+<x-application-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
-@include('svg::fixcity')
+@include('svg::application')
 ```
 
 ## Best Practices
@@ -6740,10 +6740,10 @@ Se l'icona non viene visualizzata:
 ### 2. Problemi di Stile
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
-<x-fixcity-icon width="24" height="24" />
+<x-application-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
-<x-fixcity-icon class="w-6 h-6 text-gray-500" />
+<x-application-icon class="w-6 h-6 text-gray-500" />
 ```
 
 ### 3. Debug
@@ -7767,7 +7767,7 @@ use Modules\Ticket\Models\Ticket as Model;  // ❌ ERRATO
 ```php
 <?php
 
-namespace Modules\Fixcity\Models;
+namespace Modules\Application\Models;
 
 use Modules\Ticket\Models\Ticket as BaseTicket;
 
@@ -8546,7 +8546,7 @@ protected function getHeaderWidgets(): array
 // In ClientMapWidget.php
 class ClientMapWidget extends Widget
 {
-    protected static string $view = 'techplanner::filament.widgets.map';
+    protected static string $view = 'planning_module::filament.widgets.map';
 
     public function getViewData(): array
     {
@@ -8607,7 +8607,7 @@ protected function getHeaderWidgets(): array
 class ClientMapWidget extends Widget
 {
     // Definizione della vista
-    protected static string $view = 'techplanner::filament.widgets.map';
+    protected static string $view = 'planning_module::filament.widgets.map';
 
     // Metodo per fornire dati alla vista
     public function getViewData(): array
@@ -8768,7 +8768,7 @@ use Filament\Widgets\Widget;
 #[Reactive]
 class ClientMapWidget extends Widget
 {
-    protected static string $view = 'techplanner::filament.widgets.map';
+    protected static string $view = 'planning_module::filament.widgets.map';
 
     public function getViewData(): array
     {

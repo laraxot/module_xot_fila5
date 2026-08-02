@@ -236,7 +236,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
+     * Point every sqlite connection at module_data.sqlite and share one PDO.
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
      * each opening their own transaction causes "database is locked". Sharing the
@@ -244,13 +244,13 @@ abstract class XotBaseTestCase extends BaseTestCase
      *
      * Call before parent::setUp() when the test case uses DatabaseTransactions.
      */
-    protected function prepareSharedFixcitySqliteForTesting(): void
+    protected function prepareSharedModuleSqliteForTesting(): void
     {
         if ($this->app === null) {
             $this->refreshApplication();
         }
 
-        $database = database_path('fixcity_data.sqlite');
+        $database = database_path('module_data.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);

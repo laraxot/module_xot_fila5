@@ -170,7 +170,7 @@ Prima di commitare modifiche ai widget:
 ## Riferimenti
 
 - `docs/project/FILAMENT_V5_WIDGETS_UPGRADE_GUIDE.md`
-- `Modules/Predict/docs/FILAMENT_V5_WIDGETS_GUIDE.md`
+- `Modules/Forecast/docs/FILAMENT_V5_WIDGETS_GUIDE.md`
 - [Filament 5.x Widgets](https://filamentphp.com/docs/5.x/widgets/overview)
 
 ---

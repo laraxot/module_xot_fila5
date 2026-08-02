@@ -15,7 +15,7 @@ La cartella `lang/lang/` non deve esistere.
 
 ## Stato verificato
 
-Nel repository `base_predict_fila5` i file sotto `laravel/Modules/Xot/lang/lang/<locale>/...` risultano duplicati del path corretto `laravel/Modules/Xot/lang/<locale>/...`, quindi il livello `lang/lang` e' rumore architetturale e va rimosso.
+Nel repository `base_ptvx_fila5` i file sotto `laravel/Modules/Xot/lang/lang/<locale>/...` risultano duplicati del path corretto `laravel/Modules/Xot/lang/<locale>/...`, quindi il livello `lang/lang` e' rumore architetturale e va rimosso.
 
 ## Regola operativa
 

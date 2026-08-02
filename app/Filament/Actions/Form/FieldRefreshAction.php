@@ -25,11 +25,7 @@ class FieldRefreshAction extends XotBaseAction
             ->tooltip('Ricalcola valore')
             ->action(function (mixed $record, Set $set): void {
                 $name = $this->getName();
-<<<<<<< .merge_file_9RCDZZ
                 if (! is_string($name) || $name === '') {
-=======
-                if (! is_string($name) || '' === $name) {
->>>>>>> .merge_file_h6FSV5
                     Notification::make()
                         ->title('Errore')
                         ->body('Nome campo non valido')

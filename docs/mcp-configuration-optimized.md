@@ -1,4 +1,4 @@
-# Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
+# Configurazione MCP Ottimizzata per base_planning_module_fila4_mono
 
 **Data Creazione**: 2025-01-27
 **Ultimo Aggiornamento**: 2025-01-27
@@ -12,7 +12,7 @@
 
 ## 🎯 Scopo del Documento
 
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_planning_module_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 
 ---
 

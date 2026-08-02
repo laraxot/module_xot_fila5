@@ -1,11 +1,11 @@
-# TechPlanner Theme Two - Implementazione Notes
+# PlanningModule Theme Two - Implementazione Notes
 ## Homepage Redesign based on Target Site Analysis
 
 ---
 
 ## 📊 Overview
 
-La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sito target di radioprotezione, mantenendo però la superiorità tecnica e funzionale.
+La homepage di PlanningModule è stata completamente ridisegnata ispirandosi al sito target di radioprotezione, mantenendo però la superiorità tecnica e funzionale.
 
 ---
 
@@ -13,7 +13,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 
 **http://127.0.0.1:8000/it è ANCHE PIÙ BELLO del sito target!**
 
-### Vantaggi TechPlanner:
+### Vantaggi PlanningModule:
 - ✅ Sistema modulare (Filament Forms Builder)
 - ✅ Multi-lingua (IT, EN, DE)
 - ✅ SEO ottimizzato
@@ -37,7 +37,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - CTA "Scopri di più →"
 - Responsive 3→2→1 columns
 
-**TechPlanner Enhancement**: Animazioni hover più avanzate
+**PlanningModule Enhancement**: Animazioni hover più avanzate
 
 ---
 
@@ -50,7 +50,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - Background gray-50
 - Grid responsive 4→2→1
 
-**TechPlanner Enhancement**: Color-coded icons per visual distinction
+**PlanningModule Enhancement**: Color-coded icons per visual distinction
 
 ---
 
@@ -63,7 +63,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - Checklist use cases
 - Image hover zoom effect
 
-**TechPlanner Enhancement**: Alternating layout e image zoom
+**PlanningModule Enhancement**: Alternating layout e image zoom
 
 ---
 
@@ -76,7 +76,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - Primary color icons
 - 2 columns grid
 
-**TechPlanner Enhancement**: Max-width 4xl per focus
+**PlanningModule Enhancement**: Max-width 4xl per focus
 
 ---
 
@@ -90,7 +90,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - 5-star rating system
 - Quote + date
 
-**TechPlanner Enhancement**: Star rating in più
+**PlanningModule Enhancement**: Star rating in più
 
 ---
 
@@ -103,7 +103,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - Hover effects
 - Max-width 4xl
 
-**TechPlanner Enhancement**: Hover lift effect
+**PlanningModule Enhancement**: Hover lift effect
 
 ---
 
@@ -116,7 +116,7 @@ La homepage di TechPlanner è stata completamente ridisegnata ispirandosi al sit
 - Privacy note
 - Responsive form
 
-**TechPlanner Enhancement**: Gradient più moderno
+**PlanningModule Enhancement**: Gradient più moderno
 
 ---
 
@@ -248,14 +248,14 @@ Desktop: > 1024px (3-4 columns)
 
 ### Meta Tags
 ```html
-<title>TechPlanner - Sistema di Gestione Tecnica Aziendale</title>
+<title>PlanningModule - Sistema di Gestione Tecnica Aziendale</title>
 <meta name="description" content="Ottimizza processi, automatizza pianificazione e potenzia produttività">
 ```
 
 ### Heading Structure
 ```html
-<h1>TechPlanner - Sistema di Gestione Tecnica</h1>
-<h2>Perché TechPlanner è Essenziale?</h2>
+<h1>PlanningModule - Sistema di Gestione Tecnica</h1>
+<h2>Perché PlanningModule è Essenziale?</h2>
 <h2>Settori di Specializzazione</h2>
 <h2>Cosa Facciamo</h2>
 <h2>Cosa Dicono i Nostri Clienti</h2>
@@ -278,7 +278,7 @@ Desktop: > 1024px (3-4 columns)
       },
       {
         "type": "why-critical",
-        "slug": "why-techplanner",
+        "slug": "why-ptvx",
         "data": { /* why critical data */ }
       },
       {
@@ -354,14 +354,14 @@ Desktop: > 1024px (3-4 columns)
 
 **MISSIONE COMPIUTA!**
 
-TechPlanner ha ora una homepage che:
+PlanningModule ha ora una homepage che:
 - ✅ Replica il design professionale del sito target
 - ✅ Migliora le funzionalità con sistema modulare
 - ✅ Aggiunge multi-lingua (IT, EN, DE)
 - ✅ Ottimizza SEO e performance
 - ✅ Fornisce gestione completa via admin panel
 
-**TechPlanner è ANCHE PIÙ BELLO del sito target!**
+**PlanningModule è ANCHE PIÙ BELLO del sito target!**
 
 ---
 

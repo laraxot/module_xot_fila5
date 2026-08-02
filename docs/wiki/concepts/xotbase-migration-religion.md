@@ -7,9 +7,9 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "XotBaseMigration migration convention create table model updateTimestamps no Migration class"
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
+  - ""
 discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+  - ""
 related:
   - ./migration-foreign-id-for.md
   - ./migration-update-timestamps-only.md

@@ -148,7 +148,7 @@ echo "CONTEXT7_API_KEY=xxx" >> .env
 |--------|---------|-----|
 | pagespeed-insights | `pagespeed-insights-mcp` | `GOOGLE_API_KEY` |
 | google-search-console | `mcp-server-google-search-console` | `GSC_SERVICE_ACCOUNT_KEY_FILE` |
-| mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `FIXCITY_BASE_URL` |
+| mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `APPLICATION_BASE_URL` |
 
 Hub: [mcp-validation-quality-gate.md](../../../../docs/wiki/mcp-validation-quality-gate.md)
 

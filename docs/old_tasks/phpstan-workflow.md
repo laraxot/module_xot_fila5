@@ -60,7 +60,7 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-     base_predict_fila5_mono/
+     base_ptvx_fila5_mono/
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf

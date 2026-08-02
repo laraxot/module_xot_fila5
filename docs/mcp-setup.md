@@ -20,7 +20,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
       "args": [
         "-y",
         "@modelcontextprotocol/server-mysql",
-"marco:marco@localhost:3306/Quaeris_survey"
+"marco:marco@localhost:3306/SurveyModule_survey"
       ]
     },
     "fetch": {
@@ -42,7 +42,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-"/var/www/_bases/base_Quaeris_fila5_mono/laravel"
+"/var/www/_bases/base_SurveyModule_fila5_mono/laravel"
       ]
     },
     "git": {

@@ -42000,14 +42000,14 @@
       "norm_label": ".createtestmodule()"
     },
     {
-      "label": ".prepareSharedFixcitySqliteForTesting()",
+      "label": ".prepareSharedApplicationSqliteForTesting()",
       "file_type": "code",
       "source_file": "tests/XotBaseTestCase.php",
       "source_location": "L247",
       "_origin": "ast",
-      "id": "tests_xotbasetestcase_xotbasetestcase_preparesharedfixcitysqlitefortesting",
+      "id": "tests_xotbasetestcase_xotbasetestcase_preparesharedapplicationsqlitefortesting",
       "community": 66,
-      "norm_label": ".preparesharedfixcitysqlitefortesting()"
+      "norm_label": ".preparesharedapplicationsqlitefortesting()"
     },
     {
       "label": ".bindInstance()",
@@ -122950,7 +122950,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_xotbasetestcase_xotbasetestcase",
-      "target": "tests_xotbasetestcase_xotbasetestcase_preparesharedfixcitysqlitefortesting",
+      "target": "tests_xotbasetestcase_xotbasetestcase_preparesharedapplicationsqlitefortesting",
       "confidence_score": 1.0
     },
     {

@@ -6,8 +6,8 @@ confidence: high
 created: 2026-05-07
 updated: 2026-07-16
 qmd: "xotbase filament mirror inheritance"
-issues: ["https://github.com/laraxot/base_techplanner_fila5/issues/45"]
-discussions: ["https://github.com/laraxot/base_techplanner_fila5/discussions/12"]
+issues: [""]
+discussions: [""]
 tags: [xotbase, filament, tables, enforcement]
 related:
   - xotbase-resource-form-pattern.md

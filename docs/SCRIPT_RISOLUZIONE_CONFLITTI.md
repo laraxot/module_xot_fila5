@@ -71,7 +71,7 @@ Gli script risolvono i conflitti Git prendendo sempre la **"incoming change"** (
 - `Modules/Xot/`
 - `Modules/Geo/`
 - `Modules/User/`
-- `Modules/TechPlanner/`
+- ``
 - `Modules/Employee/`
 - File di configurazione root
 

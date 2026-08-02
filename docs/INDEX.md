@@ -238,7 +238,7 @@ $result = $action->execute($data);
 ### Other Modules Depending on Xot
 - **AI** — Uses core utilities
 - **Geo** — Extends Xot models
-- **Fixcity** — Uses services and traits
+- **Application** — Uses services and traits
 - **User** — Extends Xot base models
 - **Cms** — Implements Xot patterns
 - **Notify** — Uses Xot events

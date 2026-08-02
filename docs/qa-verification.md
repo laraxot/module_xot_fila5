@@ -91,7 +91,7 @@ git log --oneline -1
 
 ### Documentation Created
 - ✅ `laravel/Modules/Xot/docs/ERROR-ANALYSIS-HELPERS-CAPITALIZATION.md`
-- ✅ `laravel/Modules/Predict/docs/ERROR-ANALYSIS-FOLDER-RENAME-GOLDEN-RULE.md`
+- ✅ `laravel/Modules/Forecast/docs/ERROR-ANALYSIS-FOLDER-RENAME-GOLDEN-RULE.md`
 - ✅ `laravel/Modules/Xot/docs/QA-VERIFICATION-2026-06-30.md` (this file)
 
 ### Files Recovered
@@ -127,7 +127,7 @@ git log --oneline -1
 - Always run `composer dump-autoload` when modifying autoload paths
 
 ### Memory System Updated
-✅ Added to `/home/zorin/.claude/projects/-var-www--bases-base-predict-fila5/memory/`:
+✅ Added to `/home/zorin/.claude/projects/-var-www--bases-base-forecast-fila5/memory/`:
 - `feedback_folder_rename_golden_rule.md`
 - Updated `MEMORY.md` index
 

@@ -10,7 +10,7 @@ created: 2026-05-04
 updated: 2026-05-04
 tags: [filament, wizard, haswizard, xotbasewizardwidget, architecture, reinventing-wheel]
 related:
-  - ../../../../Fixcity/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
+  - ../../../../Application/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
   - ../../../docs/wiki/concepts/laraxot-widget-vs-page-architecture.md
 ---
 
@@ -143,7 +143,7 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
 ## Visual Parity: The "Avanti" Button Problem
 
-**Issue**: Frontoffice wizard (`/it/tests/segnalazione-crea`) missing "Avanti" button compared to admin (`/fixcity/admin/tickets/create`).
+**Issue**: Frontoffice wizard (`/it/tests/segnalazione-crea`) missing "Avanti" button compared to admin (`/application/admin/tickets/create`).
 
 ### Root Cause
 

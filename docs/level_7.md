@@ -22,7 +22,7 @@ Trovati 4 errori al livello 7.
 
 ## Errori e suggerimenti
 
-### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/Export/ExportXlsByView.php`
+### File: `[project-root]/laravel/Modules/Xot/app/Actions/Export/ExportXlsByView.php`
 
 #### Linea 40: Syntax error, unexpected T_SR on line 40
 
@@ -40,7 +40,7 @@ Trovati 4 errori al livello 7.
 - Le variabili siano inizializzate prima dell'uso
 - I nomi di metodi e proprietà siano corretti
 
-### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/View/GetViewByClassAction.php`
+### File: `[project-root]/laravel/Modules/Xot/app/Actions/View/GetViewByClassAction.php`
 
 #### Linea 47: Syntax error, unexpected T_SR on line 47
 

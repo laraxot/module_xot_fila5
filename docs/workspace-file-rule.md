@@ -17,7 +17,7 @@ The file MUST be named: `_<module_name_in_snake_case>.code-workspace`
 
 ## Rationale
 
-1. **Consistency**: One module = one workspace file with predictable naming
+1. **Consistency**: One module = one workspace file with deterministic naming
 2. **Discoverability**: Developers can immediately find the workspace file for any module
 3. **IDE Configuration**: Each module's VSCode workspace settings are contained in a single, clearly-identified file
 4. **Version Control**: Prevents confusion about which workspace file is authoritative

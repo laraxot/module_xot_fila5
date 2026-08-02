@@ -77,7 +77,7 @@ class PathHelperTest extends XotBaseTestCase
 
     public function testFilamentResourcesPathConstruction(): void
     {
-        $result = PathHelper::filamentResourcesPath('Fixcity');
+        $result = PathHelper::filamentResourcesPath('User');
 
         $this->assertStringContainsString('Filament', $result);
         $this->assertStringContainsString('Resources', $result);

@@ -2,7 +2,7 @@
 
 ## Regola
 
-Nel repository `base_predict_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+Nel repository `base_ptvx_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
 
 Anche le varianti annidate come `docs/_docs/` sono vietate.
 

@@ -6,9 +6,9 @@
 
 **USARE SEMPRE MySQL con suffisso "_test":**
 - `DB_CONNECTION=mysql` ✅
-- `DB_DATABASE=quaeris_data_test` ✅  
-- `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
-- `DB_DATABASE_USER=quaeris_user_test` ✅
+- `DB_DATABASE=survey_module_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=survey_module_survey_test` ✅
+- `DB_DATABASE_USER=survey_module_user_test` ✅
 
 ## 🚫 MAI USARE
 

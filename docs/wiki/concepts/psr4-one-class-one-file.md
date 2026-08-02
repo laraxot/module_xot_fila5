@@ -6,9 +6,9 @@ created: 2026-07-16
 updated: 2026-07-16
 qmd: "xot psr-4 composer class file fixture action filename"
 issues:
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
+  - ""
 discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+  - ""
 related:
   - "../../../../../../docs/wiki/rules/namespace-structure-rules.md"
 ---

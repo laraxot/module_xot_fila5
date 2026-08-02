@@ -58,14 +58,14 @@ Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ri
 
 ---
 
-### 📚 Fixcity Module (Example Implementation)
+### 📚 Application Module (Example Implementation)
 
 | Documento | Scopo | Quando Leggere |
 |---|---|---|
-| [filament-wizard-pattern.md](../../../Fixcity/docs/filament-wizard-pattern.md) | Pattern implementativo con esempi | Per vedere codice reale |
-| [filament-wizard-rule.md](../../../Fixcity/docs/filament-wizard-rule.md) | Regole specifiche Fixcity | Per module-specific conventions |
-| [CreateTicketWizardWidget.md](../../../Fixcity/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
-| [ticket-wizard-frontoffice.md](../../../Fixcity/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
+| [filament-wizard-pattern.md](../../../Application/docs/filament-wizard-pattern.md) | Pattern implementativo con esempi | Per vedere codice reale |
+| [filament-wizard-rule.md](../../../Application/docs/filament-wizard-rule.md) | Regole specifiche Application | Per module-specific conventions |
+| [CreateTicketWizardWidget.md](../../../Application/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
+| [ticket-wizard-frontoffice.md](../../../Application/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
 
 ---
 
@@ -193,7 +193,7 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 ### Implementazioni
 
 - [XotBaseWizardWidget](../../app/Filament/Widgets/XotBaseWizardWidget.php)
-- [CreateTicketWizardWidget](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
+- [CreateTicketWizardWidget](../../../Application/app/Filament/Widgets/CreateTicketWizardWidget.php)
 - [LangServiceProvider](../../../Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](../../../Lang/app/Actions/Filament/AutoLabelAction.php)
 

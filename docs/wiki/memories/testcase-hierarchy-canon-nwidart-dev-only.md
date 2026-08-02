@@ -67,7 +67,7 @@ XotBaseTestCase **is** the Laraxot platform layer for testing — not a wrapper 
 ## Audit (16/16 modules)
 
 All Laraxot modules (as of 2026-06-10) extend XotBaseTestCase correctly:
-- Activity, Blog, Comment, Cms, Fixcity, Gdpr, Geo, Job, JobBatch, Lang, Media, Notify, Rating, Tenant, UI, User, Xot
+- Activity, Blog, Comment, Cms, Application, Gdpr, Geo, Job, JobBatch, Lang, Media, Notify, Rating, Tenant, UI, User, Xot
 
 ## Revisit Only If
 

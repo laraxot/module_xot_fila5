@@ -28,7 +28,7 @@ Quando dobbiamo mostrare icone o SVG nel progetto, la priorita' e':
 ```
 
 ```blade
-@svg('predict-bottlecap', 'w-5 h-5')
+@svg('forecast-bottlecap', 'w-5 h-5')
 ```
 
 ### Da evitare se non necessario

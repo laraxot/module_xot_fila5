@@ -483,7 +483,7 @@ Modules/UI/resources/views/components/ui/
 
 ### Livello 9+ Obbligatorio
 ```bash
-cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_<nome progetto>on/laravel
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 
@@ -715,7 +715,7 @@ return new class extends XotBaseMigration {
 **Soluzione**:
 ```bash
 # Eseguire da directory Laravel
-cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_<nome progetto>on/laravel
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 

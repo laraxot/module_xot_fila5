@@ -372,7 +372,7 @@ Rimossi anche file spazzatura non previsti dalla checklist originale:
 (duplicato byte-identico di `_xot.code-workspace`, la regola ammette un solo
 `*.code-workspace`), `Modules/Activity/.md` (file vuoto), due varianti
 duplicate di `.docs-directory-violation-reminder.md` in `Modules/Cms`
-(contaminazione da un progetto diverso, `base_saluteora`, non pertinente a
+(contaminazione da un progetto diverso, `base_application`, non pertinente a
 questo repo).
 
 **Conflitto aperto, non risolto unilateralmente**: la lista "File Consentiti

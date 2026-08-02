@@ -127,7 +127,7 @@ All 16 module TestCase files now extend `XotBaseTestCase`.
 | Notify | BaseTestCase | ✅ migrated |
 | Gdpr | BaseTestCase | ✅ migrated |
 | Job | BaseTestCase | ✅ migrated |
-| Fixcity | BaseTestCase | ✅ migrated |
+| Application | BaseTestCase | ✅ migrated |
 | Tenant | BaseTestCase | ✅ migrated |
 | Seo | BaseTestCase | ✅ migrated |
 | Rating | Tests\CreatesApplication (app) | ✅ migrated |

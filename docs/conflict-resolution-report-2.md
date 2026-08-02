@@ -17,8 +17,8 @@ Risoluzione automatica di tutti i conflitti Git presenti nel progetto prendendo 
 - **Risoluzione**: ✅ Presa versione develop (più pulita e ottimizzata)
 - **Risultato**: Codice unificato senza duplicazioni
 
-### 2. TechPlanner AdminPanelProvider.php
-- **Percorso**: `Modules/TechPlanner/app/Providers/Filament/AdminPanelProvider.php`
+### 2. PlanningModule AdminPanelProvider.php
+- **Percorso**: `app/Providers/Filament/AdminPanelProvider.php`
 - **Conflitti**: Import statements, widget configuration
 - **Risoluzione**: ✅ Presa versione develop (imports corretti)
 - **Risultato**: Widgets configurati correttamente

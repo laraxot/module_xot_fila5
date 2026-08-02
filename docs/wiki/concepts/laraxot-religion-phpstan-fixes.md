@@ -237,7 +237,7 @@ Ogni fix deve includere:
 ## Related
 
 - [[../architecture/laraxot-philosophy]] - Filosofia completa
-- [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
+- [[../../../../../docs/ZEN_OF_APPLICATION.md]] - Zen di Application
 - [[./phpstan-fix-patterns]] - Pattern specifici per fix
 
 ---

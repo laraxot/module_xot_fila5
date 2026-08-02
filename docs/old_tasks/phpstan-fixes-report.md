@@ -24,7 +24,7 @@
 ```
 
 Verifica modulo per modulo - **TUTTI PULITI**:
-- ✅ Activity, AI, Blog, Cms, Comment, Fixcity
+- ✅ Activity, AI, Blog, Cms, Comment, Application
 - ✅ Gdpr, Geo, Job, Lang, Media, Notify  
 - ✅ Rating, Seo, Tenant, UI, User, Xot
 
@@ -36,7 +36,7 @@ Verifica modulo per modulo - **TUTTI PULITI**:
 - **Blog/app**: 0 errori critici ✅
 - **Cms/app**: 0 errori critici ✅
 - **Comment/app**: 0 errori critici ✅
-- **Fixcity/app**: 0 errori critici ✅
+- **Application/app**: 0 errori critici ✅
 - **Gdpr/app**: 0 errori critici ✅
 - **Geo/app**: 0 errori critici ✅
 - **Job/app**: 0 errori critici ✅
@@ -316,7 +316,7 @@ Le classi anonime nei test causano errori PHPStan perché l'analisi statica non 
 | Blog     | 0              | ✅ PULITO |
 | Cms      | 0              | ✅ PULITO |
 | Comment  | 0              | ✅ PULITO |
-| Fixcity  | 0              | ✅ PULITO |
+| Application  | 0              | ✅ PULITO |
 | Gdpr     | 0              | ✅ PULITO |
 | Geo      | 0              | ✅ PULITO |
 | Job      | 0              | ✅ PULITO |

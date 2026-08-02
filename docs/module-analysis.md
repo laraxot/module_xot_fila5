@@ -347,7 +347,7 @@ class CreateYourTable extends XotBaseMigration
 - [ ] AI-powered development tools
 - [ ] Automated code suggestions
 - [ ] Intelligent refactoring
-- [ ] Performance prediction
+- [ ] Performance forecast
 
 ## Best Practices
 

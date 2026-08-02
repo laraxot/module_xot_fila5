@@ -27,7 +27,7 @@ Hub progetto: [module-model-migration-seeder-parity.md](../../../../../../docs/w
 ## Audit
 
 ```bash
-bash bashscripts/tools/audit-module-artifact-parity.sh Predict
+bash bashscripts/tools/audit-module-artifact-parity.sh Forecast
 bash bashscripts/tools/audit-all-modules-artifact-parity.sh
 bash bashscripts/tools/ensure-module-entity-seeders.sh Job   # stub mancanti
 ```
@@ -38,7 +38,7 @@ Gate sessione: `run-session-gate.sh` §1.1c.
 
 - `abstract` / `Base*`
 - `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
-- Wrapper cross-modulo (es. `Predict\Models\User`)
+- Wrapper cross-modulo (es. `Forecast\Models\User`)
 
 ## Backlog migrazioni
 
@@ -46,7 +46,7 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 ## Collegamenti
 
-- [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+- [Forecast seeder-canonical-orchestrator.md](../../../Forecast/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 
 Per ogni modulo, ogni **modello owner** in `app/Models/`:
 
@@ -63,7 +63,7 @@ Hub progetto: [module-model-migration-seeder-parity.md](../../../../../../docs/w
 ## Audit
 
 ```bash
-bash bashscripts/tools/audit-module-artifact-parity.sh Predict
+bash bashscripts/tools/audit-module-artifact-parity.sh Forecast
 bash bashscripts/tools/audit-all-modules-artifact-parity.sh
 bash bashscripts/tools/ensure-module-entity-seeders.sh Job   # stub mancanti
 ```
@@ -74,7 +74,7 @@ Gate sessione: `run-session-gate.sh` §1.1c.
 
 - `abstract` / `Base*`
 - `*PhpstanTraitProbe`, `TestModel`, `TestSushiModel`
-- Wrapper cross-modulo (es. `Predict\Models\User`)
+- Wrapper cross-modulo (es. `Forecast\Models\User`)
 
 ## Backlog migrazioni
 
@@ -82,8 +82,8 @@ Seeder parity ≠ migration parity: molti moduli hanno `add_*` / duplicati `crea
 
 ## Collegamenti
 
-- [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+- [Forecast seeder-canonical-orchestrator.md](../../../Forecast/docs/wiki/concepts/seeder-canonical-orchestrator.md)
 - [module-directory-structure-rule.md](../../module-directory-structure-rule.md)
 - [MIGRATION_PHILOSOPHY.md](../../MIGRATION_PHILOSOPHY.md)
 - [data-sacred](../../../../../../docs/wiki/rules/data-sacred-no-destructive-db.md)
-- [Predict seeder-canonical-orchestrator.md](../../../Predict/docs/wiki/concepts/seeder-canonical-orchestrator.md)
+- [Forecast seeder-canonical-orchestrator.md](../../../Forecast/docs/wiki/concepts/seeder-canonical-orchestrator.md)

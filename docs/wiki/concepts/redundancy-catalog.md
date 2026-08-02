@@ -6,8 +6,8 @@ confidence: high
 created: 2026-05-21
 updated: 2026-05-26
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
+  - "https://github.com/laraxot/base_application_fila5/issues/89"
+  - "https://github.com/laraxot/base_application_fila5/issues/90"
 tags: [redundancy, dry, filament, laraxot, documentation]
 related:
   - ../../../../docs/redundancy-report.md
@@ -47,14 +47,14 @@ Il modulo **Xot** ospita classi base e pattern Filament riusati ovunque. Questa 
 | Media | [`has-media-form-duplication.md`](../../../../Media/docs/wiki/redundancy/has-media-form-duplication.md) | HasMediaForm |
 | Rating | [`duplicate-ratings-table-migrations.md`](../../../../Rating/docs/wiki/redundancy/duplicate-ratings-table-migrations.md) | Table + migration |
 | Cms | [`redundancy-report.md`](../../../../Cms/docs/redundancy-report.md) | BaseTreeModel, BaseModelLang, ThemeComposer clone, Appearance |
-| Fixcity | [`duplicated-comments-relation-manager.md`](../../../../Fixcity/docs/wiki/redundancy/duplicated-comments-relation-manager.md) | Comments RM ×2 |
-| Fixcity | [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md) | Superfici copy con altri moduli |
+| Application | [`duplicated-comments-relation-manager.md`](../../../../Application/docs/wiki/redundancy/duplicated-comments-relation-manager.md) | Comments RM ×2 |
+| Application | [`application-cross-module-duplicate-surfaces.md`](../../../../Application/docs/wiki/redundancy/application-cross-module-duplicate-surfaces.md) | Superfici copy con altri moduli |
 | Sixteen | [`duplicated-blade-blocks.md`](../../../../../Themes/Sixteen/docs/wiki/redundancy/duplicated-blade-blocks.md) | Blade blocks |
 | Themes hub | [`scaffold-llm-wiki-duplication.md`](../../../../../Themes/docs/wiki/redundancy/scaffold-llm-wiki-duplication.md) | ON-DEMAND ×17 moduli |
 
 ## Tracker GitHub (esecuzione)
 
-Epic [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) · P0 [#100](https://github.com/laraxot/base_fixcity_fila5/issues/100) User · P1 [#101](https://github.com/laraxot/base_fixcity_fila5/issues/101) · Docs [#102](https://github.com/laraxot/base_fixcity_fila5/issues/102)–[#104](https://github.com/laraxot/base_fixcity_fila5/issues/104) · Refactor [#105](https://github.com/laraxot/base_fixcity_fila5/issues/105) [#106](https://github.com/laraxot/base_fixcity_fila5/issues/106) · Cluster [#95](https://github.com/laraxot/base_fixcity_fila5/issues/95)–[#99](https://github.com/laraxot/base_fixcity_fila5/issues/99).
+Epic [#90](https://github.com/laraxot/base_application_fila5/issues/90) · P0 [#100](https://github.com/laraxot/base_application_fila5/issues/100) User · P1 [#101](https://github.com/laraxot/base_application_fila5/issues/101) · Docs [#102](https://github.com/laraxot/base_application_fila5/issues/102)–[#104](https://github.com/laraxot/base_application_fila5/issues/104) · Refactor [#105](https://github.com/laraxot/base_application_fila5/issues/105) [#106](https://github.com/laraxot/base_application_fila5/issues/106) · Cluster [#95](https://github.com/laraxot/base_application_fila5/issues/95)–[#99](https://github.com/laraxot/base_application_fila5/issues/99).
 
 ## Ridondanza *nel design* delle classi Xot (trait / provider)
 

@@ -2328,7 +2328,7 @@
       "tests_xotbasetestcase_xotbasetestcase_expectthrowablemessagematches",
       "tests_xotbasetestcase_xotbasetestcase_generateuniqueemail",
       "tests_xotbasetestcase_xotbasetestcase_getuserclass",
-      "tests_xotbasetestcase_xotbasetestcase_preparesharedfixcitysqlitefortesting",
+      "tests_xotbasetestcase_xotbasetestcase_preparesharedapplicationsqlitefortesting",
       "tests_xotbasetestcase_xotbasetestcase_setup",
       "tests_xotbasetestcase_xotbasetestcase_skiptest"
     ],

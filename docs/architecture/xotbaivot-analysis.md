@@ -32,7 +32,7 @@
 ├── User/Models/BaseMorphPivot.php         ← DUPLICATO
 ├── Blog/Models/BasePivot.php              ← DUPLICATO
 ├── Blog/Models/BaseMorphPivot.php         ← DUPLICATO
-├── Fixcity/Models/BasePivot.php           ← DUPLICATO
+├── Application/Models/BasePivot.php           ← DUPLICATO
 ├── Geo/Models/BasePivot.php               ← DUPLICATO
 ├── Geo/Models/BaseMorphPivot.php          ← DUPLICATO
 ├── Notify/Models/BasePivot.php            ← DUPLICATO
@@ -84,7 +84,7 @@ use Updater;  // Presente in TUTTI
 
 ```php
 // ❌ VARIA PER MODULO
-protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
+protected $connection = 'user';    // o 'blog', 'application', 'geo', ...
 ```
 
 ---

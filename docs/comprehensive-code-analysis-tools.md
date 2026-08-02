@@ -9,7 +9,7 @@
 
 ## 🎯 OVERVIEW
 
-Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto FixCity. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.
+Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto Application. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.
 
 ### 🛠️ Strumenti per Stack Tecnologico
 
@@ -463,4 +463,4 @@ chmod +x scripts/*.sh
 
 ---
 
-*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto Application.*

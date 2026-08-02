@@ -82,7 +82,7 @@ class XotBaseResourceForm
 **Extensions in Modules:**
 
 ```php
-// Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
+// Modules/Application/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
 class TicketForm extends XotBaseResourceForm
 {
     public static function getFormSchema(): array
@@ -126,12 +126,12 @@ class TicketForm extends XotBaseResourceForm
 
 ### 4. **LangServiceProvider Integration (Right Speech)**
 - NO `->label()` or `->tooltip()` in form fields
-- Labels come from `fixcity::ticket-wizard.steps.privacy.label`
+- Labels come from `application::ticket-wizard.steps.privacy.label`
 - Single source of truth for translations
 
 ### 5. **Module Boundary (Universal Love)**
 - `XotBaseResourceForm` = foundation (shared by all modules)
-- `TicketForm` = specialization (Fixcity-specific)
+- `TicketForm` = specialization (Application-specific)
 - Clear separation: base vs concrete
 
 ## When to Use Which

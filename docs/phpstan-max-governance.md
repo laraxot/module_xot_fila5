@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Nel progetto `base_predict_fila5` PHPStan non si usa a livelli intermedi come obiettivo finale.
+Nel progetto `base_ptvx_fila5` PHPStan non si usa a livelli intermedi come obiettivo finale.
 La governance corretta e' una sola: **livello MAX sempre**.
 
 ## Regola
@@ -28,5 +28,5 @@ La governance corretta e' una sola: **livello MAX sempre**.
 
 - [Xot docs index](./README.md)
 - [Project error-fix workflow](../../../../docs/project/ERROR_FIX_WORKFLOW.md)
-- [GitHub issue #1](https://github.com/laraxot/base_predict_fila5/issues/1)
-- [GitHub discussion #2](https://github.com/laraxot/base_predict_fila5/discussions/2)
+- [GitHub issue #1](https://github.com/laraxot/base_ptvx_fila5/issues/1)
+- [GitHub discussion #2](https://github.com/laraxot/base_ptvx_fila5/discussions/2)

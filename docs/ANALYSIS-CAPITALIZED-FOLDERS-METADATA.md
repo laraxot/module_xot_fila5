@@ -26,10 +26,10 @@ Rinominare con `.bak` permette a:
 
 | Cartella | Contenuto | Razionale |
 |----------|-----------|-----------|
-| `Predict/Actions.bak` | LoadPredictDataAction, BuildOrderBookAction, ecc. | Dovrebbe stare in `app/Actions/` |
-| `Predict/Console.bak` | CreateMultiOutcomePredictsCommand | Dovrebbe stare in `app/Console/Commands/` |
-| `Predict/Database.bak` | 6 Seeders | Dovrebbe stare in `database/seeders/` |
-| `Predict/Filament.bak` | OutcomesTableWidget, FeaturedPredictsWidget | Dovrebbe stare in `app/Filament/Widgets/` |
+| `Forecast/Actions.bak` | LoadForecastDataAction, BuildOrderBookAction, ecc. | Dovrebbe stare in `app/Actions/` |
+| `Forecast/Console.bak` | CreateMultiOutcomeForecastsCommand | Dovrebbe stare in `app/Console/Commands/` |
+| `Forecast/Database.bak` | 6 Seeders | Dovrebbe stare in `database/seeders/` |
+| `Forecast/Filament.bak` | OutcomesTableWidget, FeaturedForecastsWidget | Dovrebbe stare in `app/Filament/Widgets/` |
 | `Xot/Datas.bak` | XotData.php (stub → app/Datas/XotData.php) | Stub legacy; real impl in app/ |
 | `Xot/Filament.bak` | XotBasePlaceholder form component | Dovrebbe stare in `app/Filament/Forms/Components/` |
 | `Xot/Helpers.bak` | Helper.php, PathHelper.php | Dovrebbe stare in `app/Helpers/` |
@@ -144,25 +144,25 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
 ### 3.1 PHPStan (Level 10 - strictest)
 ```bash
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
+cd /var/www/_bases/base_ptvx_fila5/laravel/Modules/Xot
 vendor/bin/phpstan analyse --level=max app/Datas/XotData.php
 ```
 
 ### 3.2 PHPMD (via ./tools)
 ```bash
-cd /var/www/_bases/base_predict_fila5
+cd /var/www/_bases/base_ptvx_fila5
 ./tools/phpmd-check.sh laravel/Modules/Xot/app/Datas/XotData.php
 ```
 
 ### 3.3 PHPInsights
 ```bash
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
+cd /var/www/_bases/base_ptvx_fila5/laravel/Modules/Xot
 vendor/bin/phpinsights
 ```
 
 ### 3.4 Application Runtime
 ```bash
-cd /var/www/_bases/base_predict_fila5
+cd /var/www/_bases/base_ptvx_fila5
 php artisan serve --host=0.0.0.0 --port=8000
 # Test: curl http://localhost:8000/health
 ```
@@ -208,13 +208,13 @@ php artisan serve --host=0.0.0.0 --port=8000
 
 ### Immediate Actions
 1. [ ] Run QA checklist on all modified Data objects
-2. [ ] Consolidate Actions from `Predict/Actions.bak/` into `app/Actions/`
-3. [ ] Move Seeders from `Predict/Database.bak/` to `database/seeders/`
+2. [ ] Consolidate Actions from `Forecast/Actions.bak/` into `app/Actions/`
+3. [ ] Move Seeders from `Forecast/Database.bak/` to `database/seeders/`
 4. [ ] Investigate `Notify/Modules.bak` — is it dead code?
 
 ### Refactor Opportunities
 - Merge `Xot/helpers.bak` into canonical `Xot/Helpers.bak`
-- Create `app/Filament/` structure in each module (Predict, Xot, ecc.)
+- Create `app/Filament/` structure in each module (Forecast, Xot, ecc.)
 - Consolidate Config from `Job/Config.bak` and `UI/Config.bak` into `config/`
 
 ---
