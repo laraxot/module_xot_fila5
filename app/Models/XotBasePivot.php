@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
-use Modules\Xot\Database\Factories\XotBasePivotFactory;
 
 use function Safe\preg_match;
 
@@ -30,7 +29,7 @@ use function Safe\preg_match;
  */
 abstract class XotBasePivot extends EloquentPivot
 {
-    /** @phpstan-ignore-next-line */
+    /** @phpstan-use HasXotFactory<Factory<static>, static> */
     use HasXotFactory;
 
     use Updater;

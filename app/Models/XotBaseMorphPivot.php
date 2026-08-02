@@ -33,7 +33,7 @@ use function Safe\preg_match;
  */
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
-    /** @phpstan-ignore-next-line */
+    /** @phpstan-use HasXotFactory<Factory<static>, static> */
     use HasXotFactory;
 
     use Updater;
