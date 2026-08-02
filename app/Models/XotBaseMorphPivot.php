@@ -5,35 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphPivot as EloquentMorphPivot;
-use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 
 use function Safe\preg_match;
 
-/**
- * Base MorphPivot class for all modules.
- *
- * Centralizes common MorphPivot configurations and behaviors.
- * The $connection is automatically set based on the child class namespace.
- *
- * @property string|int $id
- * @property string $morph_type
- * @property string|int $morph_id
- * @property string|null $related_type
- * @property string|int|null $related_id
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
- * @property string|int|null $created_by
- * @property string|int|null $updated_by
- * @property string|int|null $deleted_by
- */
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
-    /** @phpstan-use HasXotFactory<Factory<static>, static> */
     use HasXotFactory;
 
     use Updater;
@@ -44,20 +23,8 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
     /** @var bool */
     public $timestamps = true;
 
-    /**
-     * Indicates whether attributes are snake cased on arrays.
-     *
-     * @see https://laravel-news.com/6-eloquent-secrets
-     *
-     * @var bool
-     */
     public static $snakeAttributes = true;
 
-    /**
-     * The number of models to return for pagination.
-     *
-     * @var int
-     */
     protected $perPage = 30;
 
     /** @var list<string> */
@@ -79,12 +46,6 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         'note',
     ];
 
-    /**
-     * Get the database connection for the model.
-     *
-     * Automatically determines connection from child class namespace.
-     * Example: Modules\Rating\Models\RatingMorph → 'rating'
-     */
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
@@ -114,9 +75,6 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
         return $connection;
     }
 
-    /**
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
