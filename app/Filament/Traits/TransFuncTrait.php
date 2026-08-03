@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-use Illuminate\Contracts\Translation\Translator;
-use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Str;
-use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 
 /**
@@ -35,59 +33,26 @@ trait TransFuncTrait
     public static function transFunc(string $func): string
     {
         $key = static::getKeyTransFunc($func);
-        $trans = static::resolveTransFuncValue($key);
+        $trans = static::getTransFuncValue($key);
 
         return static::formatTransFuncResult($key, $trans);
     }
 
     /**
-     * @return string|array<int|string, mixed>|Translator|null
+     * @return string|array<string, mixed>|null
+     *
+     * @phpstan-ignore missingType.iterableValue
      */
-    protected static function resolveTransFuncValue(string $key): string|array|Translator|null
+    protected static function getTransFuncValue(string $key): array|string|null
     {
-        try {
-            /** @var array<string, mixed>|Translator|string $trans */
-            $trans = trans($key);
-        } catch (\TypeError $e) {
-            /*
-            dddx([
-                'e' => $e,
-                'key' => $key,
-            ]);
-            */
-            return 'fix:'.$key;
-
-            // return null;
-        }
-
-        if ($key !== $trans) {
-            return $trans;
-        }
-
-        $group = Str::of($key)->before('.')->toString();
-        $item = Str::of($key)->after($group.'.')->toString();
-        /** @var array<string, mixed>|Translator|string $group_arr */
-        $group_arr = trans($group);
-        if (! is_array($group_arr)) {
-            return $trans;
-        }
-
-        $transValue = Arr::get($group_arr, $item);
-        if (is_string($transValue) || is_numeric($transValue)) {
-            return is_string($transValue) ? $transValue : (string) $transValue;
-        }
-
-        if (is_array($transValue)) {
-            return $transValue;
-        }
+        // use Lang::get to ensure Translator objects are not returned
+        /** @var array<string, mixed>|string $trans */
+        $trans = Lang::get($key);
 
         return $trans;
     }
 
-    /**
-     * @param string|array<int|string, mixed>|Translator|null $trans
-     */
-    protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
+    protected static function formatTransFuncResult(string $key, mixed $trans): string
     {
         if (is_numeric($trans)) {
             return strval($trans);
@@ -96,33 +61,14 @@ trait TransFuncTrait
         if (is_array($trans)) {
             $first = current($trans);
             if (is_string($first) || is_numeric($first)) {
-                return is_string($first) ? $first : ((string) $first);
+                return is_string($first) ? $first : (string) $first;
             }
         }
 
         if (is_string($trans)) {
-            if ($trans === $key) {
-                return static::persistGeneratedTransFuncLabel($key);
-            }
-
             return $trans;
         }
 
-        if (null === $trans) {
-            return static::persistGeneratedTransFuncLabel($key);
-        }
-
-        return 'fix:'.$key;
-    }
-
-    protected static function persistGeneratedTransFuncLabel(string $key): string
-    {
-        $newTrans = Str::of($key)
-            ->between('::', '.')
-            ->replace('_', ' ')
-            ->toString();
-        app(SaveTransAction::class)->execute($key, $newTrans);
-
-        return $newTrans;
+        return $key;
     }
 }

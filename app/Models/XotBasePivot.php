@@ -4,18 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
+use Modules\Xot\Database\Factories\XotBasePivotFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 
 use function Safe\preg_match;
 
 abstract class XotBasePivot extends EloquentPivot
-{/**
- * @phpstan-use HasXotFactory<\Modules\Xot\Database\Factories\XotBasePivotFactory, XotBasePivot>
- */
-use HasXotFactory;
+{
+    /**
+     * @phpstan-use HasXotFactory<XotBasePivotFactory, XotBasePivot>
+     */
+    use HasXotFactory;
 
     use Updater;
 

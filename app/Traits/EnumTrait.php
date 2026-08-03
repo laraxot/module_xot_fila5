@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 namespace Modules\Xot\Traits;
@@ -9,58 +8,102 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Filament\Traits\TransTrait;
 
+/**
+ * Shared trait for all enums used in the project.
+ */
 trait EnumTrait
 {
     use TransTrait;
 
+    /**
+     * Get a translated label for this enum value via transClass().
+     *
+     * @return string the localized label
+     */
     public function getLabel(): string
     {
-        return $this->transClass(static::class, 'values.'.$this->value.'.label');
-    }
-
-    public function getColor(): string
-    {
-        return $this->transClass(static::class, 'values.'.$this->value.'.color');
-    }
-
-    public function getIcon(): string
-    {
-        return $this->transClass(static::class, 'values.'.$this->value.'.icon');
-    }
-
-    public function getDescription(): string
-    {
-        return $this->transClass(static::class, 'values.'.$this->value.'.description');
-    }
-
-    public function getTooltip(): string
-    {
-        return $this->transClass(self::class, 'values.'.$this->value.'.tooltip');
-    }
-
-    public function getHelperText(): string
-    {
-        return $this->transClass(self::class, 'values.'.$this->value.'.helper_text');
+        return $this->transClass(static::class, 'values.' . $this->value . '.label');
     }
 
     /**
-     * @return array<string>
+     * Get the colour associated with this enum value via transClass().
+     *
+     * @return string the colour code
+     */
+    public function getColor(): string
+    {
+        return $this->transClass(static::class, 'values.' . $this->value . '.color');
+    }
+
+    /**
+     * Get the icon associated with this enum value via transClass().
+     *
+     * @return string the icon identifier
+     */
+    public function getIcon(): string
+    {
+        return $this->transClass(static::class, 'values.' . $this->value . '.icon');
+    }
+
+    /**
+     * Get the description of this enum value via transClass().
+     *
+     * @return string the localized description
+     */
+    public function getDescription(): string
+    {
+        return $this->transClass(static::class, 'values.' . $this->value . '.description');
+    }
+
+    /**
+     * Get the tooltip text for this enum value via transClass().
+     *
+     * @return string the tooltip text
+     */
+    public function getTooltip(): string
+    {
+        return $this->transClass(static::class, 'values.' . $this->value . '.tooltip');
+    }
+
+    /**
+     * Get the helper text for this enum value via transClass().
+     *
+     * @return string the helper text
+     */
+    public function getHelperText(): string
+    {
+        return $this->transClass(static::class, 'values.' . $this->value . '.helper_text');
+    }
+
+    /**
+     * Get all searchable enum values as a list of strings.
+     *
+     * @return list<string> the list of searchable values
      */
     public static function getSearchable(): array
     {
-        return array_map(fn ($item) => (string) $item->value, static::cases());
+        /** @var list<string> $result */
+        $result = [];
+        foreach (static::cases() as $item) {
+            $result[] = (string) $item->value;
+        }
+
+        return $result;
     }
 
     /**
-     * @return array<int|string, TextInput>
+     * Build a mapping of form components (one per enum case).
+     *
+     * @return array<string, TextInput> the form components keyed by value
      */
     public static function getFormSchema(): array
     {
-        // ContactTypeEnum::cases() restituisce un array shape specifico, non list<ContactTypeEnum>
         $cases = static::cases();
         /** @var array<string, TextInput> $result */
         $result = [];
+
         foreach ($cases as $item) {
+            /** @var non-empty-string $name */
             $name = (string) $item->value;
             $result[$name] = TextInput::make($name)->prefixIcon($item->getIcon());
         }
@@ -69,59 +112,26 @@ trait EnumTrait
     }
 
     /**
-     * Add all standard contact columns to a migration table.
+     * Define the database columns that belong to the enum.
      *
-     * Following the philosophy of AddressItemEnum::columns() and the Laraxot
-     * XotBaseMigration pattern (inspired by workers_table migration).
-     *
-     * This method intelligently handles BOTH CREATE and UPDATE contexts:
-     * - **CREATE context** ($migration = null): Adds all columns directly
-     * - **UPDATE context** ($migration provided): Loops with hasColumn() checks like workers_table
-     *
-     * The method embodies:
-     * - **Logic**: Mathematical precision with conditional column addition
-     * - **Philosophy**: Single Source of Truth (DRY principle)
-     * - **Politics**: Centralized governance of contact fields structure
-     * - **Religion**: Strong typing through enum values
-     * - **Zen**: Form without form - one method adapts to both contexts
-     *
-     * Inspired by Modules/<nome progetto>/database/migrations/2019_12_12_000004_create_workers_table.php:
-     * ```php
-     * $address_components = Place::$address_components;
-     * foreach ($address_components as $el) {
-     *     if (! $this->hasColumn($el)) {
-     *         $table->string($el)->nullable();
-     *     }
-     * }
-     * ```
-     *
-     * Usage in migrations:
-     * ```php
-     * // In CREATE block (no hasColumn checks needed):
-     * $this->tableCreate(function (Blueprint $table): void {
-     *     $table->id();
-     *     ContactTypeEnum::columns($table); // migration = null, adds all
-     * });
-     *
-     * // In UPDATE block (with hasColumn checks):
-     * $this->tableUpdate(function (Blueprint $table): void {
-     *     ContactTypeEnum::columns($table, $this); // loops with checks
-     * });
-     * ```
+     * @return array<string, callable(Blueprint): void> callable column definitions
      */
+    public static function getColumnDefinitions(): array
+    {
+        /** @var array<string, callable(Blueprint): void> $result */
+        $result = [];
+
+        return $result;
+    }
+
     /**
-     * @param Blueprint             $table     The table blueprint
-     * @param XotBaseMigration|null $migration XotBaseMigration instance for UPDATE context (provides hasColumn())
+     * Add all standard contact columns to a migration table.
      */
     public static function columns(Blueprint $table, ?XotBaseMigration $migration = null): void
     {
-        // if (! method_exists(static::class, 'getColumnDefinitions')) {
-        //    return;
-        // }
-
         foreach (static::getColumnDefinitions() as $name => $definition) {
-            if (null === $migration || ! $migration->hasColumn($name)) {
-                $definition($table); // @phpstan-ignore callable.nonCallable
+            if ($migration === null || ! $migration->hasColumn($name)) {
+                $definition($table);
             }
         }
     }
@@ -145,32 +155,25 @@ trait EnumTrait
     /**
      * Get all column names as an array.
      *
-     * @return array<int, string>
+     * @return list<string> the column names
      */
     public static function getColumnNames(): array
     {
-        return array_values(array_map(fn ($case): string => (string) $case->value, static::cases()));
+        /** @var list<string> $result */
+        $result = array_map(fn ($case): string => (string) $case->value, static::cases());
+
+        return $result;
     }
 
     /**
      * Internal map of standard column definitions.
-     * This should be overridden in the enum class if needed.
      *
-     * @return array<string, callable(Blueprint): void>
+     * @return array<string, callable(Blueprint): void> callable column definitions
      */
-    public static function getColumnDefinitions(): array
+    public static function getColumnDefinitionMap(): array
     {
-        return [];
-    }
-
-    /** @return array<int|string, string> */
-    public static function toArray(): array
-    {
-        $cases = static::cases();
+        /** @var array<string, callable(Blueprint): void> $result */
         $result = [];
-        foreach ($cases as $item) {
-            $result[(string) $item->value] = (string) $item->getLabel();
-        }
 
         return $result;
     }

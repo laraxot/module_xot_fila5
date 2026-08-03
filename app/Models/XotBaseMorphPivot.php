@@ -4,18 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Relations\MorphPivot as EloquentMorphPivot;
+use Modules\Xot\Database\Factories\XotBaseMorphPivotFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Traits\Updater;
 
 use function Safe\preg_match;
 
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
-{/**
- * @phpstan-use HasXotFactory<\Modules\Xot\Database\Factories\XotBaseMorphPivotFactory, XotBaseMorphPivot>
- */
-use HasXotFactory;
+{
+    /**
+     * @phpstan-use HasXotFactory<XotBaseMorphPivotFactory, XotBaseMorphPivot>
+     */
+    use HasXotFactory;
 
     use Updater;
 

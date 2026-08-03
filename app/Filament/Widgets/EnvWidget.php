@@ -70,7 +70,7 @@ class EnvWidget extends XotBaseSchemaWidget
                 ->placeholder('AIzaSyAuB_...')
                 ->helperText('telegram_bot_token'),
         ];
-        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
+        $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
 
         /** @var array<Component> $components */
         $components = array_values($selected);
