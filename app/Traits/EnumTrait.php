@@ -10,6 +10,12 @@ use Modules\Xot\Filament\Traits\TransTrait;
 
 /**
  * Shared trait for all enums used in the project.
+ *
+ * @method static list<string> getSearchable()
+ * @method static array<string, \Filament\Forms\Components\TextInput> getFormSchema()
+ * @method static array<string, callable(\Illuminate\Database\Schema\Blueprint): void> getColumnDefinitions()
+ * @method static list<string> getColumnNames()
+ * @method static array<string, callable(\Illuminate\Database\Schema\Blueprint): void> getColumnDefinitionMap()
  */
 trait EnumTrait
 {
@@ -78,7 +84,7 @@ trait EnumTrait
     /**
      * Get all searchable enum values as a list of strings.
      *
-     * @return list<string> the list of searchable values
+     * @phpstan-return list<string>
      */
     public static function getSearchable(): array
     {
@@ -94,7 +100,7 @@ trait EnumTrait
     /**
      * Build a mapping of form components (one per enum case).
      *
-     * @return array<string, TextInput> the form components keyed by value
+     * @phpstan-return array<string, TextInput>
      */
     public static function getFormSchema(): array
     {
@@ -114,7 +120,7 @@ trait EnumTrait
     /**
      * Define the database columns that belong to the enum.
      *
-     * @return array<string, callable(Blueprint): void> callable column definitions
+     * @phpstan-return array<string, callable(Blueprint): void>
      */
     public static function getColumnDefinitions(): array
     {
@@ -155,7 +161,7 @@ trait EnumTrait
     /**
      * Get all column names as an array.
      *
-     * @return list<string> the column names
+     * @phpstan-return list<string>
      */
     public static function getColumnNames(): array
     {
@@ -168,7 +174,7 @@ trait EnumTrait
     /**
      * Internal map of standard column definitions.
      *
-     * @return array<string, callable(Blueprint): void> callable column definitions
+     * @phpstan-return array<string, callable(Blueprint): void>
      */
     public static function getColumnDefinitionMap(): array
     {
