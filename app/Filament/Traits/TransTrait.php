@@ -37,13 +37,16 @@ trait TransTrait
                 throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
             }
 
+            /** @var string $res */
             return $res;
         }
 
         if (is_array($res)) {
             $first = current($res);
             if (is_string($first) || is_numeric($first)) {
-                return is_string($first) ? $first : ((string) $first);
+                $result = is_string($first) ? $first : ((string) $first);
+                /** @var string $result */
+                return $result;
             }
         }
 
@@ -91,14 +94,21 @@ trait TransTrait
             if (is_array($group_arr)) {
                 $transValue = Arr::get($group_arr, $item);
                 if (is_string($transValue) || is_numeric($transValue)) {
-                    return is_string($transValue) ? $transValue : (string) $transValue;
+                    $str = is_string($transValue) ? $transValue : (string) $transValue;
+                    /** @var non-empty-string $str */
+                    return $str;
                 }
             }
 
             return 'fix:'.$key_full;
         }
 
-        return is_string($result) ? $result : 'fix:'.$key_full;
+        if (is_string($result)) {
+            /** @var non-empty-string $result */
+            return $result;
+        }
+
+        return 'fix:'.$key_full;
     }
 
     /**
