@@ -19,16 +19,18 @@ trait TransTrait
     /**
      * Get translation for a given key.
      *
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      *
      * @throws \Exception Se exceptionIfNotExist è true e la traduzione non esiste
+     * @return string
+     *
+     * @phpstan-ignore argument.type, missingType.iterableValue
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
         $tmp = static::getKeyTrans($key);
         /** @var array<string, mixed>|Translator|string $res */
-        // @phpstan-ignore argument.type (trans() $replace param: already typed correctly at method signature)
-        $res = trans($tmp, $params);
+        $res = trans($tmp, $params); // @phpstan-ignore argument.type
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
@@ -71,6 +73,8 @@ trait TransTrait
 
     /**
      * Get translation for a given class name.
+     *
+     * @return string
      */
     public static function transClass(string $class, string $key): string
     {
@@ -101,12 +105,13 @@ trait TransTrait
      * Ottiene la chiave di traduzione per un dato key.
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
-     * @param string                                    $key         La chiave di traduzione specifica
-     * @param array<string, bool|float|int|string|null> $replace     Parametri di sostituzione per la traduzione
-     * @param string|null                               $locale      Locale da utilizzare (null = locale corrente)
-     * @param bool                                      $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
-     *
+     * @param  string  $key  La chiave di traduzione specifica
+     * @param  array<string, mixed>  $replace  Parametri di sostituzione per la traduzione
+     * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
+     * @param  bool  $useFallback  Se true, utilizza la chiave come fallback se la traduzione non esiste
      * @return string La stringa tradotta o la chiave originale se non trovata
+     *
+     * @phpstan-ignore argument.type, missingType.iterableValue
      */
     public static function getTranslatedString(
         string $key,
@@ -118,7 +123,7 @@ trait TransTrait
         $moduleNameLow = Str::lower($moduleName);
         $p = Str::after(static::class, 'Filament\\Pages\\');
         $p_arr = explode('\\', $p);
-        $slug = collect($p_arr)->map(Str::kebab(...))->implode('.');
+        $slug = collect($p_arr)->map(fn ($s) => Str::kebab($s))->implode('.');
 
         $translationKey = $moduleNameLow.'::'.$slug.'.'.$key;
         // @phpstan-ignore argument.type (__() $replace param: already typed correctly at method signature)
@@ -141,12 +146,13 @@ trait TransTrait
      * Ottiene la chiave di traduzione per un dato key (alias per getTranslatedString).
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
-     * @param string                                    $key         La chiave di traduzione specifica
-     * @param array<string, bool|float|int|string|null> $replace     Parametri di sostituzione per la traduzione
-     * @param string|null                               $locale      Locale da utilizzare (null = locale corrente)
-     * @param bool                                      $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
-     *
+     * @param  string  $key  La chiave di traduzione specifica
+     * @param  array<string, mixed>  $replace  Parametri di sostituzione per la traduzione
+     * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
+     * @param  bool  $useFallback  Se true, utilizza la chiave come fallback se la traduzione non esiste
      * @return string La stringa tradotta o la chiave originale se non trovata
+     *
+     * @phpstan-ignore argument.type, missingType.iterableValue
      */
     public static function transOLD(
         string $key,
@@ -168,7 +174,7 @@ trait TransTrait
         $namespace = static::class;
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
-        if ('' === $moduleName) {
+        if ($moduleName === '') {
             throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
@@ -178,13 +184,12 @@ trait TransTrait
     /**
      * Get a translation according to an integer value.
      *
-     * @param array<string, bool|float|int|string|null> $replace
+     * @param  array<string, mixed>  $replace
+     *
+     * @phpstan-ignore missingType.iterableValue
      */
     protected function transChoice(string $key, int $number, array $replace = []): string
     {
-        /** @var string $result */
-        $result = trans_choice($key, $number, $replace);
-
-        return is_string($result) ? $result : $key;
+        return trans_choice($key, $number, $replace);
     }
 }

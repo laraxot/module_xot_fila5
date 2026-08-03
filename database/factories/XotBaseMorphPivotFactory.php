@@ -33,7 +33,7 @@ class XotBaseMorphPivotFactory extends Factory
     {
         return [
             'id' => fake()->uuid(),
-            'morph_type' => 'Modules\\' . fake()->word() . '\\Models\\' . fake()->word(),
+            'morph_type' => 'Modules\\'.fake()->word().'\\Models\\'.fake()->word(),
             'morph_id' => fake()->randomNumber(),
             'related_type' => fake()->optional(0.7)->randomElement([
                 'Modules\User\Models\User',

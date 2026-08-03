@@ -8,12 +8,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 use function Safe\preg_match;
-
-use Symfony\Component\HttpFoundation\Response;
-use Webmozart\Assert\Assert;
 
 /**
  * Middleware di sicurezza avanzato.
@@ -283,7 +282,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
-        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
+        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -336,7 +335,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
+            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
                 return true;
             }
         }
@@ -352,7 +351,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-            if (null !== $value && is_string($value)) {
+            if ($value !== null && is_string($value)) {
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -393,7 +392,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
-     * @param array<array-key, mixed> $value
+     * @param  array<array-key, mixed>  $value
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -419,7 +418,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
-     * @param array<array-key, mixed> $array
+     * @param  array<array-key, mixed>  $array
      */
     private function getArrayDepth(array $array): int
     {

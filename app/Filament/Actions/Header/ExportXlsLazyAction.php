@@ -71,7 +71,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 }
 
                 $lazy = $livewire->getFilteredTableQuery();
-                if (null === $lazy) {
+                if ($lazy === null) {
                     throw new \Exception('Query is null');
                 }
 
