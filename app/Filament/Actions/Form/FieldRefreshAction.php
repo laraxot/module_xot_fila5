@@ -47,11 +47,14 @@ class FieldRefreshAction extends XotBaseAction
 
                 $getter = 'get'.Str::studly($name);
 
-                // is_callable e non method_exists: method_exists e' true anche per
-                // metodi protected/private, ma la chiamata dall'esterno finirebbe in
-                // Model::__call -> BadMethodCallException (500 invece di notifica).
-                if (! is_callable([$record, $getter])) {
-                    $exists = method_exists($record, $getter);
+                // Ne' method_exists() ne' is_callable() bastano su un modello Eloquent:
+                // method_exists() e' true anche per metodi protected, e is_callable() e' true
+                // sempre perche' Model dichiara __call(). Senza reflection la chiamata finirebbe
+                // in Model::__call -> BadMethodCallException (500 invece di notifica).
+                $exists = method_exists($record, $getter);
+                $isPublic = $exists && (new \ReflectionMethod($record, $getter))->isPublic();
+
+                if (! $isPublic) {
                     Notification::make()
                         ->title('Errore')
                         ->body(sprintf(

@@ -33,6 +33,7 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'id',
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -45,6 +46,24 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+        ],
+        'post_type' => [
+            'label' => 'post_type',
+            'placeholder' => 'post_type',
+            'helper_text' => 'post_type',
+            'description' => 'post_type',
+        ],
+        'post_id' => [
+            'label' => 'post_id',
+            'placeholder' => 'post_id',
+            'helper_text' => 'post_id',
+            'description' => 'post_id',
+        ],
+        'value' => [
+            'label' => 'value',
+            'placeholder' => 'value',
+            'helper_text' => 'value',
+            'description' => 'value',
         ],
     ],
     'actions' => [

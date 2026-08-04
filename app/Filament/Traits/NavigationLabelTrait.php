@@ -52,7 +52,7 @@ trait NavigationLabelTrait
     public static function getNavigationSort(): ?int
     {
         $res = static::transFunc(__FUNCTION__);
-
+        
         $value = intval($res);
 
         if ($value === 0) {

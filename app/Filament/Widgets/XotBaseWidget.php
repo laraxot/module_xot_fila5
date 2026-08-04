@@ -48,11 +48,6 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      */
     public array $listener = [];
 
-    /**
-     * Vista predefinita per widget che estendono XotBaseWidget.
-     * Deve essere sovrascritta nelle classi figlie.
-     */
-    protected string $view = 'xot::filament.widgets.base';
 
     protected int|string|array $columnSpan = 'full';
 
@@ -183,7 +178,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
         return Action::make('submit')
             ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
             ->submit('save')
-            ->view((string) $submit_view);
+            ->view($submit_view);
     }
 
     /**

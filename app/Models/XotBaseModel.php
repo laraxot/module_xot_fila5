@@ -40,6 +40,9 @@ abstract class XotBaseModel extends EloquentModel
         // 'password'
     ];
 
+    /**
+     * @return class-string<EloquentModel>
+     */
     public static function getClassName(): string
     {
         $object = Arr::first(debug_backtrace(), function (array $value) {
