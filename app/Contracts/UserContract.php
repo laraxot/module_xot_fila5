@@ -55,11 +55,16 @@ use Spatie\Permission\Traits\HasRoles;
 interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable
 {
     /*
-     * public function isSuperAdmin();
      * public function name();
      * public function areas();
      * public function avatar();
      */
+
+    /**
+     * Determine if the user is a super admin.
+     */
+    public function isSuperAdmin(): bool;
+
     /**
      * @return HasOne<Model&ProfileContract, Model&static>
      */
