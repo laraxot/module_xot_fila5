@@ -17,7 +17,7 @@ use Modules\Xot\Tests\XotBaseTestCase;
 
 class PathHelperTest extends XotBaseTestCase
 {
-    public function test_module_path_construction(): void
+    public function testModulePathConstruction(): void
     {
         $basePath = PathHelper::$modulesBasePath;
         $moduleName = 'User';
@@ -29,7 +29,7 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertEquals($basePath.'/User', $result);
     }
 
-    public function test_models_path_construction(): void
+    public function testModelsPathConstruction(): void
     {
         $result = PathHelper::modelsPath('User');
 
@@ -38,14 +38,14 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertStringEndsWith('/Models', $result);
     }
 
-    public function test_migrations_path_construction(): void
+    public function testMigrationsPathConstruction(): void
     {
         $result = PathHelper::migrationsPath('User');
 
         $this->assertStringContainsString('database/migrations', $result);
     }
 
-    public function test_controllers_path_construction(): void
+    public function testControllersPathConstruction(): void
     {
         $result = PathHelper::controllersPath('User');
 
@@ -53,21 +53,21 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertStringContainsString('Http', $result);
     }
 
-    public function test_seeders_path_construction(): void
+    public function testSeedersPathConstruction(): void
     {
         $result = PathHelper::seedersPath('Media');
 
         $this->assertStringContainsString('seeders', $result);
     }
 
-    public function test_providers_path_construction(): void
+    public function testProvidersPathConstruction(): void
     {
         $result = PathHelper::providersPath('Xot');
 
         $this->assertStringContainsString('Providers', $result);
     }
 
-    public function test_views_path_construction(): void
+    public function testViewsPathConstruction(): void
     {
         $result = PathHelper::viewsPath('UI');
 
@@ -75,7 +75,7 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertStringContainsString('resources', $result);
     }
 
-    public function test_filament_resources_path_construction(): void
+    public function testFilamentResourcesPathConstruction(): void
     {
         $result = PathHelper::filamentResourcesPath('User');
 
@@ -83,26 +83,26 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertStringContainsString('Resources', $result);
     }
 
-    public function test_is_valid_path_with_proper_format(): void
+    public function testIsValidPathWithProperFormat(): void
     {
         $validPath = '/var/www/html/project/laravel/Modules/User/app/Models';
 
         $this->assertTrue(PathHelper::isValidPath($validPath));
     }
 
-    public function test_is_valid_path_rejects_missing_laravel(): void
+    public function testIsValidPathRejectsMissingLaravel(): void
     {
         $invalidPath = '/var/www/html/project/Modules/User/app/Models';
 
         $this->assertFalse(PathHelper::isValidPath($invalidPath));
     }
 
-    public function test_is_valid_path_generic(): void
+    public function testIsValidPathGeneric(): void
     {
         $this->assertTrue(PathHelper::isValidPath('/var/www/generic/path'));
     }
 
-    public function test_correct_path_fixes_wrong_prefix(): void
+    public function testCorrectPathFixesWrongPrefix(): void
     {
         $wrongPath = '/var/www/html/Modules/User/Models';
 
@@ -112,7 +112,7 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertStringNotContainsString('/var/www/html/Modules/', $corrected);
     }
 
-    public function test_correct_path_leaves_valid_unchanged(): void
+    public function testCorrectPathLeavesValidUnchanged(): void
     {
         $validPath = '/var/www/html/project/laravel/Modules/User';
 
@@ -121,12 +121,12 @@ class PathHelperTest extends XotBaseTestCase
         $this->assertEquals($validPath, $corrected);
     }
 
-    public function test_module_exists_rejects_missing_module(): void
+    public function testModuleExistsRejectsMissingModule(): void
     {
         $this->assertFalse(PathHelper::moduleExists('__missing_module__'));
     }
 
-    public function test_get_modules_returns_empty_array_for_missing_base_path(): void
+    public function testGetModulesReturnsEmptyArrayForMissingBasePath(): void
     {
         $this->assertSame([], PathHelper::getModules());
     }
