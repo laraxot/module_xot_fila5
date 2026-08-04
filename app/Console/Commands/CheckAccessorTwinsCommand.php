@@ -8,9 +8,6 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use ReflectionClass;
-use ReflectionMethod;
-use Throwable;
 
 use function Safe\glob;
 use function Safe\preg_match;
@@ -36,9 +33,9 @@ class CheckAccessorTwinsCommand extends Command
     public function handle(): int
     {
         $module = $this->option('module');
-        $pattern = base_path('Modules/'.(is_string($module) && $module !== '' ? $module : '*').'/app/Models/*.php');
+        $pattern = base_path('Modules/'.(is_string($module) && '' !== $module ? $module : '*').'/app/Models/*.php');
 
-        if ($this->option('orphans') === true) {
+        if (true === $this->option('orphans')) {
             return $this->reportOrphanTwins($pattern);
         }
 
@@ -53,25 +50,25 @@ class CheckAccessorTwinsCommand extends Command
             }
 
             $class = $this->classFromPath($file);
-            if ($class === null) {
+            if (null === $class) {
                 continue;
             }
 
-            $reflection = new ReflectionClass($class);
+            $reflection = new \ReflectionClass($class);
 
             if ($reflection->isAbstract() || ! $reflection->isSubclassOf(Model::class)) {
                 continue;
             }
 
-            $analyzed++;
+            ++$analyzed;
 
             foreach ($reflection->getMethods() as $method) {
                 $twin = $this->twinName($method);
-                if ($twin === null) {
+                if (null === $twin) {
                     continue;
                 }
 
-                $accessors++;
+                ++$accessors;
 
                 if (! $reflection->hasMethod($twin)) {
                     $missing[$class][] = $method->getName();
@@ -95,7 +92,7 @@ class CheckAccessorTwinsCommand extends Command
             $missingCount
         ));
 
-        if ($missingCount > 0 && $this->option('fail-on-missing') === true) {
+        if ($missingCount > 0 && true === $this->option('fail-on-missing')) {
             return self::FAILURE;
         }
 
@@ -122,11 +119,11 @@ class CheckAccessorTwinsCommand extends Command
             }
 
             $class = $this->classFromPath($file);
-            if ($class === null) {
+            if (null === $class) {
                 continue;
             }
 
-            $reflection = new ReflectionClass($class);
+            $reflection = new \ReflectionClass($class);
             if ($reflection->isAbstract() || ! $reflection->isSubclassOf(Model::class)) {
                 continue;
             }
@@ -136,21 +133,21 @@ class CheckAccessorTwinsCommand extends Command
 
             try {
                 $columns = Schema::connection($model->getConnectionName())->getColumnListing($model->getTable());
-            } catch (Throwable) {
+            } catch (\Throwable) {
                 continue; // connection non raggiungibile in questo ambiente
             }
 
-            if ($columns === []) {
+            if ([] === $columns) {
                 continue;
             }
 
-            $analyzed++;
+            ++$analyzed;
             $found = [];
 
             foreach ($reflection->getMethods() as $method) {
                 $name = $method->getName();
 
-                if (preg_match('/^get([A-Z].*)$/', $name, $matches) !== 1) {
+                if (1 !== preg_match('/^get([A-Z].*)$/', $name, $matches)) {
                     continue;
                 }
                 if (str_ends_with($name, 'Attribute') || $method->getNumberOfRequiredParameters() > 0) {
@@ -159,12 +156,12 @@ class CheckAccessorTwinsCommand extends Command
 
                 // Metodi del framework (es. Authenticatable::getRememberToken()): non sono gemelli di dominio.
                 $declaredIn = (string) $method->getDeclaringClass()->getFileName();
-                if ($declaredIn === '' || str_contains($declaredIn, '/vendor/')) {
+                if ('' === $declaredIn || str_contains($declaredIn, '/vendor/')) {
                     continue;
                 }
 
                 $suffix = $matches[1] ?? '';
-                if ($suffix === '') {
+                if ('' === $suffix) {
                     continue;
                 }
 
@@ -176,20 +173,20 @@ class CheckAccessorTwinsCommand extends Command
                 $found[$column] = $name;
             }
 
-            if ($found === []) {
+            if ([] === $found) {
                 continue;
             }
 
             $this->line($class);
             foreach ($found as $column => $name) {
                 $this->line('  - '.$name.'()  =>  colonna `'.$column.'` senza accessor: calcolo mai invocato');
-                $orphans++;
+                ++$orphans;
             }
         }
 
         $this->info(sprintf('Classi analizzate: %d | gemelli orfani: %d', $analyzed, $orphans));
 
-        if ($orphans > 0 && $this->option('fail-on-missing') === true) {
+        if ($orphans > 0 && true === $this->option('fail-on-missing')) {
             return self::FAILURE;
         }
 
@@ -199,14 +196,14 @@ class CheckAccessorTwinsCommand extends Command
     /**
      * Nome del gemello atteso, null se il metodo non e' un accessor.
      */
-    private function twinName(ReflectionMethod $method): ?string
+    private function twinName(\ReflectionMethod $method): ?string
     {
-        if (preg_match('/^get(.+)Attribute$/', $method->getName(), $matches) !== 1) {
+        if (1 !== preg_match('/^get(.+)Attribute$/', $method->getName(), $matches)) {
             return null;
         }
 
         $name = $matches[1] ?? '';
-        if ($name === '') {
+        if ('' === $name) {
             return null;
         }
 
