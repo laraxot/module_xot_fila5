@@ -19,6 +19,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'name',
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -57,6 +58,18 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+        ],
+        'path' => [
+            'label' => 'path',
+            'placeholder' => 'path',
+            'helper_text' => 'path',
+            'description' => 'path',
+        ],
+        'content' => [
+            'label' => 'content',
+            'placeholder' => 'content',
+            'helper_text' => 'content',
+            'description' => 'content',
         ],
     ],
     'actions' => [

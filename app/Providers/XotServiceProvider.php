@@ -11,6 +11,7 @@ use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
+use Filament\Panel;
 use Filament\Support\Components\Component;
 use Filament\Support\Facades\FilamentColor;
 use Filament\Tables\Columns\Column;
@@ -24,9 +25,13 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Mixins\ModuleMixin;
+use Modules\Xot\Mixins\PanelMixin;
 use Modules\Xot\View\Composers\XotComposer;
+use Nwidart\Modules\Laravel\Module;
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
@@ -55,6 +60,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         $this->registerPaFilamentColors();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
+        $this->registerMixins();
     }
 
     #[\Override]
@@ -197,6 +203,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateFilamentResources::class,
+                CheckAccessorTwinsCommand::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
         }
@@ -295,5 +302,12 @@ class XotServiceProvider extends XotBaseServiceProvider
         //         \Log::error('Errore nella registrazione ModulesOverviewWidget: ' . $e->getMessage());
         //     }
         // }
+    }
+
+    private function registerMixins(): void
+    {
+        // I metodi del mixin vengono invocati via reflection: serve un'istanza, non il nome classe.
+        Panel::mixin(new PanelMixin);
+        Module::mixin(new ModuleMixin);
     }
 } // end class
