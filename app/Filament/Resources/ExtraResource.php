@@ -11,7 +11,6 @@ use Modules\Xot\Filament\Resources\ExtraResource\Pages\EditExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\ListExtras;
 use Modules\Xot\Models\Extra;
 
-use Filament\Forms\Components\Field;
 class ExtraResource extends XotBaseResource
 {
     protected static ?string $model = Extra::class;
@@ -21,7 +20,7 @@ class ExtraResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [
