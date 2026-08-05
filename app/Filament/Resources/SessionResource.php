@@ -6,18 +6,16 @@ namespace Modules\Xot\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
-use Filament\Support\Components\Component;
+use Filament\Forms\Components\Field;
 use Modules\Xot\Models\Session;
-
 class SessionResource extends XotBaseResource
 {
     protected static ?string $model = Session::class;
 
     /**
-     * @return array<int, Component>
+     * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             TextInput::make('id')->required()->maxLength(255),

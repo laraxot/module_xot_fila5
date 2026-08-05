@@ -38,8 +38,8 @@ class ResourceFormSchemaGenerator
             // Read the file contents
             $fileContents = file_get_contents($filename);
 
-            // Check if getFormSchema method already exists
-            if (str_contains($fileContents, 'public function getFormSchema')) {
+            // Check if getFormSchemaOld method already exists
+            if (str_contains($fileContents, 'public static function getFormSchemaOld')) {
                 return false;
             }
 
@@ -47,7 +47,7 @@ class ResourceFormSchemaGenerator
             $modelName = str_replace('Resource', '', $reflection->getShortName());
             $modelVariable = Str::camel($modelName);
 
-            $formSchemaMethod = "\n    public function getFormSchema(): array\n    {\n        return [\n";
+            $formSchemaMethod = "\n    public static function getFormSchemaOld(): array\n    {\n        return [\n";
             $formSchemaMethod .= "            Forms\\Components\\TextInput::make('{$modelVariable}_name')\n";
             $formSchemaMethod .= "                ->required(),\n";
             $formSchemaMethod .= "        ];\n    }\n";

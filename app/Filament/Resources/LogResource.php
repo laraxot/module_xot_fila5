@@ -6,8 +6,8 @@ namespace Modules\Xot\Filament\Resources;
 
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Field;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Support\Components\Component;
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -18,14 +18,13 @@ use Modules\Xot\Models\Log;
 class LogResource extends XotBaseResource
 {
     use NavigationLabelTrait;
-
     protected static ?string $model = Log::class;
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

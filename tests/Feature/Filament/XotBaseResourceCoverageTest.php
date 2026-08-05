@@ -140,7 +140,7 @@ it('covers get attachments schema branches', function (): void {
     $resourceNoAttachments = new class extends XotBaseResource {
         protected static ?string $model = Probe::class;
 
-        public static function getFormSchema(): array
+        public static function getFormSchemaOld(): array
         {
             return [];
         }
@@ -154,7 +154,7 @@ it('covers get attachments schema branches', function (): void {
     $resourceBadAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeBadAttachments::class;
 
-        public static function getFormSchema(): array
+        public static function getFormSchemaOld(): array
         {
             return [];
         }
@@ -184,7 +184,7 @@ it('covers get attachments schema branches', function (): void {
     $resourceGoodAttachments = new class extends XotBaseResource {
         protected static ?string $model = ProbeGoodAttachments::class;
 
-        public static function getFormSchema(): array
+        public static function getFormSchemaOld(): array
         {
             return [];
         }
