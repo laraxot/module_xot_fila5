@@ -6,7 +6,6 @@ namespace Modules\Xot\Filament\Resources;
 
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Field;
 use Filament\Infolists\Components\TextEntry;
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
@@ -23,7 +22,7 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [
