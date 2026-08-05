@@ -11,7 +11,7 @@ related:
   - ../../../../Ptv/docs/scheda-resource-pages-inheritance.md
   - ../../../../Sigma/docs/wiki/concepts/ente-matr-date-range-mutator-dalal.md
   - ../../../../Sigma/docs/wiki/concepts/gg-integ-params-no-asz.md
-  - ../rules/INDEX.md
+  - ../rules/index.md
 ---
 
 # FieldRefreshAction
@@ -45,4 +45,4 @@ Seguendo il principio DRY, il calcolo del campo vive in un unico posto: il model
 
 - [CriteriEsclusioneSection in Ptv](../../../../Ptv/docs/wiki/concepts/criteri-esclusione-section-component.md)
 - [Ereditarietà risorse scheda in Ptv](../../../../Ptv/docs/scheda-resource-pages-inheritance.md)
-- [Regole Xot wiki](../rules/INDEX.md)
+- [Regole Xot wiki](../rules/index.md)

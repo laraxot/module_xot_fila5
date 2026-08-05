@@ -388,7 +388,12 @@ class FileAction
         $ns_name = Str::before($key, '::');
         // $ns_dir = View::getFinder()->getHints()[$ns_name][0];
         $ns_dir = self::getViewNameSpacePath($ns_name);
-        $ns_name = (string) $xot->{$ns_name};
+        // Il namespace della view è il nome della proprietà XotData che contiene il tema.
+        $ns_name = match ($ns_name) {
+            'pub_theme' => $xot->pub_theme,
+            'adm_theme' => $xot->adm_theme ?? '',
+            default => throw new \InvalidArgumentException('namespace di tema non gestito: '.$ns_name),
+        };
         $tmp = Str::after($key, '::');
         $tmp0 = Str::before($tmp, '/');
         $tmp1 = Str::after($tmp, '/');
@@ -732,10 +737,10 @@ class FileAction
      */
     public static function allDirectories(string $path, array $except = [], string $dir = ''): array
     {
-        $dirs = File::directories($path);
+        // `File::directories()` è annotato `array`: il filtro fissa il tipo una volta sola.
+        $dirs = array_filter(File::directories($path), 'is_string');
         $data = [];
         foreach ($dirs as $v) {
-            $v = (string) $v;
             $name = Str::after($v, $path.\DIRECTORY_SEPARATOR);
             $value = '' === $dir ? $name : $dir.\DIRECTORY_SEPARATOR.$name;
             if (! \in_array($name, $except, false)) {

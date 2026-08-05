@@ -35,6 +35,8 @@ namespace Modules\Xot\Traits;
  *     ],
  * ];
  * ```
+ *
+ * @phpstan-ignore trait.unused (Trade-off: API di piattaforma pubblicata da Xot per gli enum int-backed, documentata in docs/wiki/rules/enum-pattern-filament.md. Nessun consumer in questo repo: si cancella solo se il pattern viene ritirato, non per chiudere l'errore.)
  */
 trait EnumIntegerTrait
 {

@@ -7,7 +7,7 @@ parent: laraxot.md
 lines: 50
 tokens: ~65K
 related:
-  - ./INDEX.md
+  - ./index.md
   - ./02-architecture.md
   - ./11-spatie-integration.md
 ---

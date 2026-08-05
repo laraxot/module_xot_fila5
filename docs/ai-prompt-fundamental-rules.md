@@ -142,7 +142,7 @@ Model structure requirements:
 ## 📚 Riferimenti Aggiuntivi
 
 ### Documentazione Principale
-- [AGENTS.md](../../../../AGENTS.md) - Guida completa sviluppatori AI
+- [agents.md](../../../../agents.md) - Guida completa sviluppatori AI
 - [Database Testing Rules](../../../../docs/database-testing-rules.md) - Regole MySQL testing
 - [AI Coding Memory](../../../../AI_CODING_MEMORY.md) - Memoria completa regole
 - [Critical Rules Index](../../../../docs/critical-rules-index.md) - Indice regole critiche

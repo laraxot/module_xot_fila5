@@ -48,9 +48,16 @@ class StatesChartWidget extends XotBaseChartWidget
                 ->selectRaw('state, COUNT(*) as count')
                 ->groupBy('state')
                 ->get();
+            // Colonne `mixed`: una riga senza stato/conteggio validi è una fetta senza
+            // significato nel grafico, quindi si scarta invece di degradarla a ''/0.
             foreach ($rows as $row) {
-                $state = (string) ($row->state ?? '');
-                $states[$state] = (int) ($row->count ?? 0);
+                $state = $row->state ?? '';
+                $count = $row->count ?? 0;
+                if (! \is_scalar($state) || ! is_numeric($count)) {
+                    continue;
+                }
+
+                $states[(string) $state] = (int) $count;
             }
 
             $data = [];

@@ -159,7 +159,7 @@ Il prompt `docs.txt` serve come:
    ```
    docs/
    ├── README.md           # Panoramica
-   ├── ARCHITECTURE.md     # Architettura
+   ├── architecture.md     # Architettura
    ├── GUIDELINES.md       # Linee guida
    └── sections/          # Sezioni specifiche
    ```

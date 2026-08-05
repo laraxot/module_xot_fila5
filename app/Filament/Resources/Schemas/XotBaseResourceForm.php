@@ -27,6 +27,14 @@ class XotBaseResourceForm
     /**
      * @return array<string, Component>
      */
+    public static function getFormSchema(): array
+    {
+        return static::getFormSchemaOld();
+    }
+
+    /**
+     * @return array<string, Component>
+     */
     public static function getFormSchemaOld(): array
     {
         return [

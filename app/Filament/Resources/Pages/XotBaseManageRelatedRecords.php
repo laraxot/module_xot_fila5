@@ -52,13 +52,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 
     public function schema(Schema $schema): Schema
     {
-        return $schema->components($this->getFormSchemaOld());
+        return $schema->components($this->getFormSchema());
     }
 
     /**
      * @return array<Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [];
     }

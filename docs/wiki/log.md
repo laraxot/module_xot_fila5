@@ -94,7 +94,7 @@ discussions:
 
 - `run-session-gate.sh --markdown [--phpstan]` precompila §7; exit code 1 su bloccanti.
 - Junction `.cursor`/`.windsurf` → `.agents`; regole in `.cursor/rules/` (= `.agents/rules/`).
-- Sync ponytail: `bashscripts/tools/ponytail-sync.sh`; §4+§5 condensati → link AGENTS.md.
+- Sync ponytail: `bashscripts/tools/ponytail-sync.sh`; §4+§5 condensati → link agents.md.
 - PHPStan gate: `trait.unused≈N` nel report; baseline documentata in §6.1.
 
 ## [2026-06-30] prompts | start.txt v13 — gate DRY + path Cursor rules
@@ -126,7 +126,7 @@ discussions:
 - §1.4 infra: WARN locale per `.claude`/`.cursor/rules` (skill ponytail resta obbligatoria)
 - §1.9 QMD con fallback `rg` su wiki se `qmd` assente
 - §1.10 GitHub cross-repo informativo
-- Appendice eccellenza condensata (reflective, patterns — senza duplicare AGENTS.md)
+- Appendice eccellenza condensata (reflective, patterns — senza duplicare agents.md)
 
 ## [2026-06-30] prompts | start.txt v8 — gate sessione
 

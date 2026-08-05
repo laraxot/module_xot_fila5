@@ -273,7 +273,7 @@ All modules depend on **Xot**. Never have circular dependencies.
 
 ## 🔗 Useful Links
 
-- [CHANGELOG](./CHANGELOG.md)
+- [CHANGELOG](./changelog.md)
 - [Git Conflict Resolution Guide](../../../bashscripts/docs/git-conflict-resolution-guide.md)
 - [Namespace Conventions](./namespace-conventions.md)
 - [Testing Best Practices](./testing.md)

@@ -142,4 +142,4 @@ Xot è la base di **tutto**. L'ordine di priorità nel boot:
 - `docs/xot-engine.md` — filosofia e classi fondamentali (SSOT)
 - `docs/module-architecture.md` — analisi completa dell'ecosistema moduli
 - `docs/testing-best-practices.md` — testing con XotBase*
-- `docs/00-INDEX.md` — indice modulo
+- `docs/00-index.md` — indice modulo

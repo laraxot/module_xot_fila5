@@ -84,12 +84,16 @@ class MyResource extends XotBaseResource
    - ❌ `getTableColumns()`
    - ❌ `getTableFilters()`
    - ❌ `getTableActions()`
-   - ❌ `form(Form $form): Form` - Usare invece `getFormSchema()`
+   - ❌ `form(Form $form): Form` - Usare invece `getFormSchemaOld()`
+   - ❌ `getFormSchema()` — è `final` in `XotBaseResource` e delega a `getFormSchemaOld()`
 
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
-   - ✅ `public static function getFormSchema(): array`
+   - ✅ `public static function getFormSchemaOld(): array` — è `abstract` nella base: obbligatorio in ogni Resource concreta
    - ✅ `public static function getPages(): array`
+
+> `getFormSchema()` vive sull'altra gerarchia, `XotBaseResourceForm` (`Schemas/*Form.php`).
+> Contratto: [`xotbaseresource-formschema-old-pattern.md`](../../../../docs/wiki/filament/xotbaseresource-formschema-old-pattern.md)
 
 ## Gestione Tabelle
 

@@ -13,7 +13,7 @@
 
 ```
 docs/
-├── 00-INDEX.md          # Questo indice
+├── 00-index.md          # Questo indice
 ├── README.md            # Panoramica modulo
 ├── architecture/        # Architettura base
 ├── development/         # Sviluppo ed estensione
@@ -59,7 +59,7 @@ docs/
 
 ## 🔗 Riferimenti
 
-- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
+- [agents.md](../../../../agents.md) - Project guidelines
 - [Laraxot Main Docs](../../../docs/) - Documentazione generale
 
 ## 📊 Metriche Modulo

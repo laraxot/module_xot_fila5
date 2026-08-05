@@ -37,7 +37,7 @@ merge-conflict-resolution-2025-11-04.md
 lessons-learned-2025-11-04-merge-conflicts.md
 phpstan-analysis-2025-08-18.md
 
-# ✅ Usare CHANGELOG.md invece
+# ✅ Usare changelog.md invece
 # Oppure nomi generici aggiornati:
 merge-conflict-resolution.md (latest)
 lessons-learned.md (with dates in content)
@@ -84,7 +84,7 @@ Modules/ModuleName/docs/
 ├── api.md                   # API documentation (se applicabile)
 ├── testing.md               # Testing guidelines
 ├── troubleshooting.md       # Common issues
-└── CHANGELOG.md             # Storia modifiche con date
+└── changelog.md             # Storia modifiche con date
 ```
 
 ### Modulo Xot (Core) - Esteso (max 15 files)
@@ -105,7 +105,7 @@ Modules/Xot/docs/
 ├── troubleshooting.md                 # Common issues
 ├── code-quality-standards.md          # PHPStan + Pint
 ├── merge-conflict-resolution.md       # 🆕 Latest fixes
-└── CHANGELOG.md                       # 🆕 History with dates
+└── changelog.md                       # 🆕 History with dates
 ```
 
 ## 🔄 Piano di Consolidamento
@@ -149,7 +149,7 @@ mv Modules/Xot/docs/archive/merge-conflict-resolution-2025-11-04.md \
    Modules/Xot/docs/merge-conflict-resolution.md
 ```
 
-### Fase 5: Creare CHANGELOG.md
+### Fase 5: Creare changelog.md
 ```markdown
 # Changelog - Modulo Xot
 
@@ -278,8 +278,8 @@ find Modules/*/docs -maxdepth 1 -name "*.md" -type f | while read file; do
     dir=$(dirname "$file")
     base=$(basename "$file")
 
-    # Skip README.md and CHANGELOG.md
-    if [[ "$base" == "README.md" ]] || [[ "$base" == "CHANGELOG.md" ]]; then
+    # Skip README.md and changelog.md
+    if [[ "$base" == "README.md" ]] || [[ "$base" == "changelog.md" ]]; then
         continue
     fi
 
@@ -326,7 +326,7 @@ done
 
 ### Priorità BASSA (Future)
 9. Consolidare cartelle `archive/`, `consolidated/`, `old/`
-10. Creare CHANGELOG.md per ogni modulo
+10. Creare changelog.md per ogni modulo
 11. Review e merge di file molto simili
 12. Eliminare file completamente obsoleti
 
@@ -338,7 +338,7 @@ Prima di considerare un modulo "consolidato":
 - [ ] Max 10-15 file (eccetto Xot che può avere 15)
 - [ ] Tutti i nomi kebab-case lowercase
 - [ ] Nessun file con date nel nome
-- [ ] CHANGELOG.md creato per storia modifiche
+- [ ] changelog.md creato per storia modifiche
 - [ ] Nessun duplicato underscore/hyphen
 - [ ] File obsoleti in archive/
 - [ ] Cross-references corretti (relative paths)
