@@ -53,7 +53,7 @@ class EnvWidget extends XotBaseSchemaWidget
     /**
      * @return array<Component>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         $all = [
             'app_url' => TextInput::make('app_url')
