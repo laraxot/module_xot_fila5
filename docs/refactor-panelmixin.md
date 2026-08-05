@@ -9,7 +9,7 @@ tags: [filament, panel, mixin, refactoring, architecture]
 qmd: "panel mixin refactor architecture resolver static"
 related:
   - "./panel-mixin-extension-pattern.md"
-  - "./INDEX.md"
+  - "./index.md"
 ---
 
 # Refactor: Panel Mixin Extension Pattern

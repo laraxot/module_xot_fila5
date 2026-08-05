@@ -437,7 +437,7 @@ rm Modules/Lang/docs/migration_patterns.md
 
 # Notify
 rm Modules/Notify/docs/migration_changes.md
-rm Modules/Notify/docs/migration_rules.md
+rm Modules/Notify/docs/migration-rules.md
 rm Modules/Notify/docs/migrations.md
 rm Modules/Notify/docs/migrations_changelog.md
 
@@ -464,7 +464,7 @@ rm Modules/Lang/project_docs/migration_patterns.md
 
 # Notify
 rm Modules/Notify/project_docs/migration_changes.md
-rm Modules/Notify/project_docs/migration_rules.md
+rm Modules/Notify/project_docs/migration-rules.md
 rm Modules/Notify/project_docs/migrations.md
 rm Modules/Notify/project_docs/migrations_changelog.md
 

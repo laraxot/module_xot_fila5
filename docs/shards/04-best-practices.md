@@ -7,7 +7,7 @@ parent: laraxot.md
 lines: 100
 tokens: ~130K
 related:
-  - ./INDEX.md
+  - ./index.md
   - ./02-architecture.md
   - ./03-data-management.md
 ---

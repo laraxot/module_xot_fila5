@@ -200,7 +200,7 @@ Aggiornamento massivo documentazione progetto con:
 
 **Soluzione**: Script automatico + regole chiare
 
-**Standard**: minuscolo, dash-separated, no date (eccetto README.md/CHANGELOG.md)
+**Standard**: minuscolo, dash-separated, no date (eccetto README.md/changelog.md)
 
 ### 3. Documentazione Frammentata
 

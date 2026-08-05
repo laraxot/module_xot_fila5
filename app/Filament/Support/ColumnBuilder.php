@@ -71,7 +71,7 @@ class ColumnBuilder
             ->sortable()
             ->searchable()
             ->limit(50)
-            ->tooltip(static fn ($record) => \is_object($record) && isset($record->title) ? (string) $record->title : '')
+            ->tooltip(self::attributeTooltip('title'))
             ->toggleable();
     }
 
@@ -110,7 +110,7 @@ class ColumnBuilder
         return TextColumn::make('description')
             ->label(__('xot::fields.description.label'))
             ->limit($limit)
-            ->tooltip(static fn ($record) => \is_object($record) && isset($record->description) ? (string) $record->description : '')
+            ->tooltip(self::attributeTooltip('description'))
             ->toggleable();
     }
 
@@ -304,5 +304,26 @@ class ColumnBuilder
             'updated_at' => self::updatedAt(),
             'deleted_at' => self::deletedAt(),
         ];
+    }
+
+    /**
+     * Tooltip col valore intero di un attributo troncato da `limit()`.
+     *
+     * Filament passa `$record` come `mixed` (anche `null` sulle righe segnaposto):
+     * il narrowing è runtime, e un attributo non stringificabile degrada a tooltip vuoto.
+     *
+     * @return \Closure(mixed): string
+     */
+    private static function attributeTooltip(string $attribute): \Closure
+    {
+        return static function ($record) use ($attribute): string {
+            if (! \is_object($record) || ! isset($record->{$attribute})) {
+                return '';
+            }
+
+            $value = $record->{$attribute};
+
+            return \is_scalar($value) ? (string) $value : '';
+        };
     }
 }

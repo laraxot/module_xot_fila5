@@ -13,7 +13,7 @@ related:
   - ../concepts/phpstan-fixes-log.md
   - ../concepts/phpstan-cluster-map-and-false-friends.md
   - ../troubleshooting/phpstan-perfection-guide.md
-  - ../memories/INDEX.md
+  - ../memories/index.md
 ---
 
 # PHPStan Remediation Swarm — Lessons

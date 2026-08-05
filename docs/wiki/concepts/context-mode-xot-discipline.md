@@ -16,11 +16,11 @@ updated: 2026-05-12
 laravel/Modules/Xot/docs/wiki/
 ├── index.md                    # ≤30 righe
 ├── rules/
-│   ├── INDEX.md               # ≤20 righe → root trigger map
+│   ├── index.md               # ≤20 righe → root trigger map
 │   ├── xotbase-critical-rules.md      # ≤200 righe
 │   └── filament-resource-property.md  # ≤200 righe
 ├── skills/
-│   ├── INDEX.md               # ≤20 righe
+│   ├── index.md               # ≤20 righe
 │   └── filament-page-creation.md      # ≤150 righe
 └── concepts/
     ├── xotbase-resource-zen-pattern.md    # ≤200 righe

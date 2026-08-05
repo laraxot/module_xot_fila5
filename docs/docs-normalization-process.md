@@ -40,9 +40,9 @@ Questo documento descrive il processo sistematico per normalizzare i nomi dei fi
    find Modules/*/docs -name "*.md" | grep -E "\d{4}-\d{2}-\d{2}|\d{4}_\d{2}_\d{2}"
    ```
 
-2. **Trovare file con maiuscole** (esclusi README.md e CHANGELOG.md):
+2. **Trovare file con maiuscole** (esclusi README.md e changelog.md):
    ```bash
-   find Modules/*/docs -name "*.md" | grep -E "[A-Z]" | grep -v README.md | grep -v CHANGELOG.md
+   find Modules/*/docs -name "*.md" | grep -E "[A-Z]" | grep -v README.md | grep -v changelog.md
    ```
 
 3. **Trovare potenziali duplicati**:
@@ -114,7 +114,7 @@ Dopo ogni rinomina:
 
 ### Fase 5: Documentazione
 
-1. **Aggiornare CHANGELOG.md** (se esiste):
+1. **Aggiornare changelog.md** (se esiste):
    - Documentare le rinomine eseguite
    - Mantenere traccia delle modifiche
 
@@ -181,7 +181,7 @@ Dopo aver rinominato un file:
 - [ ] Contenuto del file aggiornato (data nel corpo se necessario)
 - [ ] Tutti i collegamenti aggiornati
 - [ ] Collegamenti verificati (nessun 404)
-- [ ] CHANGELOG.md aggiornato (se esiste)
+- [ ] changelog.md aggiornato (se esiste)
 - [ ] README.md del modulo aggiornato (se necessario)
 
 ## Automazione Futura

@@ -105,7 +105,7 @@ Gli script sono organizzati in sottocartelle tematiche:
 
 ### Convenzioni Documentazione
 - File .md solo dentro cartelle docs esistenti
-- Nessun file .md con maiuscole tranne README.md e CHANGELOG.md
+- Nessun file .md con maiuscole tranne README.md e changelog.md
 - Nessun file .md con date nel nome
 - Prima di creare un nuovo file, verificare che non esista già un documento sullo stesso argomento
 

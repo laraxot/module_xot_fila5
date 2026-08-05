@@ -24,12 +24,12 @@ trait HasXotForm
     /** @var array<string, mixed> */
     public array $data = [];
 
-    abstract public function getFormSchemaOld(): array;
+    abstract public function getFormSchema(): array;
 
     final public function form(Schema $schema): Schema
     {
         return $schema
-            ->components($this->getFormSchemaOld())
+            ->components($this->getFormSchema())
             ->columns(2)
             ->statePath('data');
     }
