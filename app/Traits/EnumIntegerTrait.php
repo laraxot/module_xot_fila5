@@ -38,6 +38,7 @@ namespace Modules\Xot\Traits;
  *
  * @phpstan-ignore trait.unused (Trade-off: API di piattaforma pubblicata da Xot per gli enum int-backed, documentata in docs/wiki/rules/enum-pattern-filament.md. Nessun consumer in questo repo: si cancella solo se il pattern viene ritirato, non per chiudere l'errore.)
  */
+/** @phpstan-ignore trait.unused */
 trait EnumIntegerTrait
 {
     use EnumTrait;  // ← Inherits getLabel, getColor, getIcon, getDescription via TransTrait
