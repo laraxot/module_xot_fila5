@@ -93,7 +93,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     final public function form(Schema $schema): Schema
     {
         /** @var array<string, Component> $formSchema */
-        $formSchema = $this->getFormSchema();
+        $formSchema = $this->getFormSchemaOld();
 
         // Cast to Htmlable|string to match Schema::components() signature
         // Component implements Htmlable, so this is type-safe
@@ -104,9 +104,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 
     /** @return array<int|string, Component> */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
-        return $this->getResource()::getFormSchema();
+        return $this->getResource()::getFormSchemaOld();
     }
 
     /**

@@ -212,7 +212,12 @@ trait HasXotTable
             ->filters($this->getTableFilters()) // @phpstan-ignore argument.type
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
+            // Stato di lettura della tabella conservato in sessione: chi torna a un elenco
+            // dal menu ritrova filtri, ordinamento e ricerche come li aveva lasciati.
             ->persistFiltersInSession()
+            ->persistSortInSession()
+            ->persistSearchInSession()
+            ->persistColumnSearchesInSession()
             ->headerActions(array_values($this->getTableHeaderActions()))
             ->recordActions(array_values($this->getTableActions()))
             ->bulkActions(array_values($this->getTableBulkActions()))

@@ -17,7 +17,7 @@ use Webmozart\Assert\Assert;
  *
  * Estende {@see XotBaseWidget}. Delega campi a una `*Form` class tramite:
  *  - `formClass(): string`   → FQCN della *Form class (default vuoto = legacy)
- *  - `schemaMethod(): string` → metodo invocato sulla *Form (default `getFormSchema`)
+ *  - `schemaMethod(): string` → metodo invocato sulla *Form (default `getFormSchemaOld`)
  *
  * Esempio:
  * ```php
@@ -54,14 +54,14 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
-     * Metodo schema invocato sulla `formClass()`. Default: `getFormSchema()`.
+     * Metodo schema invocato sulla `formClass()`. Default: `getFormSchemaOld()`.
      * Override per condividere una Form class tra widget che espongono
      * sotto-schema diversi (es. LoginWidget + RegisterWidget che condividono
      * `Schemas\UserForm` ma chiamano `getLoginFormSchema` vs `getRegisterFormSchema`).
      */
     protected static function schemaMethod(): string
     {
-        return 'getFormSchema';
+        return 'getFormSchemaOld';
     }
 
     /**
@@ -69,7 +69,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
      *
      * @return array<int|string, Component>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [];
     }
@@ -91,7 +91,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
             return $schema->components($components)->statePath('data');
         }
 
-        return $schema->components($this->getFormSchema())->statePath('data');
+        return $schema->components($this->getFormSchemaOld())->statePath('data');
     }
 
     /**

@@ -16,7 +16,7 @@ use Modules\Xot\Filament\Traits\HasXotFormAction;
  *
  * ## Separazione delle Responsabilita
  * - `XotBaseWidget` = contratto generico (senza schema: azioni, viste, traduzioni)
- * - `XotBaseSchemaWidget` = contratto con schema (form lineare, getFormSchema)
+ * - `XotBaseSchemaWidget` = contratto con schema (form lineare, getFormSchemaOld)
  * - `XotBaseWizardWidget` = specializzazione per wizard multi-step
  *   - Gestisce: navigazione step, persistenza `?step=`, submit/render coerenti col vendor
  * - Widget dominio (es. CreateTicketWizardWidget) = campi specifici e business logic
@@ -66,7 +66,7 @@ abstract class XotBaseWizardWidget extends XotBaseSchemaWidget
     /**
      * @return array<int, Wizard>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             $this->getWizardComponent(),
