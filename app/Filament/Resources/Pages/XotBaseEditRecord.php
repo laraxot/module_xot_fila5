@@ -12,7 +12,6 @@ use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Support\RecordAnchor;
 use Modules\Xot\Filament\Traits\TransTrait;
-use Override;
 
 abstract class XotBaseEditRecord extends FilamentEditRecord
 {
@@ -27,7 +26,7 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
      *
      * @return array<string>
      */
-    #[Override]
+    #[\Override]
     public function getResourceBreadcrumbs(): array
     {
         $breadcrumbs = parent::getResourceBreadcrumbs();

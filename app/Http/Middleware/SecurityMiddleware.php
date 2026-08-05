@@ -82,7 +82,7 @@ class SecurityMiddleware
      * chiave riusata da altro codice) non è un conteggio valido e riparte da zero,
      * invece di essere forzato con un cast a un numero arbitrario.
      *
-     * @param string               $subject etichetta del soggetto limitato, per il log
+     * @param string                $subject etichetta del soggetto limitato, per il log
      * @param array<string, string> $context campi aggiuntivi per il log
      */
     private function enforceRateLimit(string $key, int $limit, string $subject, array $context): void
