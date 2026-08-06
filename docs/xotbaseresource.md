@@ -13,13 +13,18 @@ Alcuni metodi sono marcati come `final` e non possono essere sovrascritti nelle 
 ```php
 final public static function form(Schema $schema): Schema
 {
-    $form_class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
-    if (class_exists($form_class)) {
-        return $form_class::configure($schema);          // rotta preferita
-    }
+    return static::getFormClass()::configure($schema);   // classe obbligatoria
+}
 
-    return $schema->components(static::getFormSchemaOld())
-                  ->columns(static::getFormSchemaColumns());
+public static function getFormClass(): string
+{
+    $formClass = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
+    if (! class_exists($formClass)) {
+        throw new LogicException(/* … crea la classe Form dedicata … */);
+    }
+    Assert::subclassOf($formClass, XotBaseResourceForm::class);
+
+    return $formClass;
 }
 
 final public static function getFormSchema(): array
@@ -34,6 +39,29 @@ Questo significa che:
   codice non ancora migrato — in `getFormSchemaOld()`
 - Tentare di sovrascrivere un metodo `final` causa un **fatal error** che ferma
   PHPStan sull'intero progetto, non un errore sul singolo file
+
+### Classi dedicate: obbligatorie, niente fallback silenzioso
+
+`form()`, `table()` e `infolist()` risolvono tre classi e **sollevano `LogicException`
+se non esistono**. Prima ricadevano in silenzio su schema/tabella vuoti: una Resource
+rotta sembrava funzionante e mostrava una pagina vuota.
+
+| Metodo | Classe risolta | Base da estendere |
+|---|---|---|
+| `form()` | `{Resource}\Schemas\{Model}Form` | `XotBaseResourceForm` |
+| `table()` | `{Resource}\Tables\{Model plurale}Table` | `XotBaseResourceTable` |
+| `infolist()` | `{Resource}\Schemas\{Model}Infolist` | `XotBaseResourceInfolist` |
+
+**Il nome si calcola dal model (`getModel()`), non dal nome della Resource.** Dove i due
+divergono vince il model: `TenantResource` ha model `Modules\Quaeris\Models\Customer`,
+quindi le classi sono `Tables\CustomersTable`, `Schemas\CustomerForm`,
+`Schemas\CustomerInfolist`. Il 2026-08-06 sono stati rinominati 9 file che seguivano il
+nome della Resource e che quindi non venivano mai caricati (fallback silenzioso).
+
+Censimento rapido delle Resource scoperte: per ogni Resource concreta calcolare i tre
+nomi da `getModel()` e verificarli con `class_exists()`. Prima del censimento lanciare
+`composer dump-autoload -o`: con `optimize-autoloader` un file nuovo non ancora in
+classmap risulta inesistente e produce un elenco di "classi mancanti" falso.
 
 ### Metodi Astratti
 
@@ -58,7 +86,8 @@ un fatal error (`Class X contains 1 abstract method…`).
 
 Sono alberi separati e senza parentela: il nome quasi identico è l'unica cosa che
 li collega. Confonderli è ciò che il 2026-08-05 ha rotto 141 classi `*Form`.
-Dettaglio completo: [pattern getFormSchema/getFormSchemaOld](../../../../docs/wiki/filament/xotbaseresource-formschema-old-pattern.md).
+Dettaglio completo: [pattern getFormSchema/getFormSchemaOld](../../../../docs/wiki/filament/xotbaseresource-formschema-old-pattern.md)
+(**link non risolto**: al 2026-08-06 quel file non esiste nel tree — la fonte è questa pagina).
 
 ## Best Practices
 

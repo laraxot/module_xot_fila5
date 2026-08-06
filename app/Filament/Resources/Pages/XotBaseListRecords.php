@@ -8,12 +8,14 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
+use Filament\Tables\Columns\Column;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
@@ -21,9 +23,9 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
- * @property ?string         $model
- * @property ?string         $resource
- * @property ?string         $slug
+ * @property ?string $model
+ * @property ?string $resource
+ * @property ?string $slug
  * @property TableLayoutEnum $layoutView
  */
 abstract class XotBaseListRecords extends FilamentListRecords
@@ -31,7 +33,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     use HasXotTable;
 
     /**
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, array $params = []): string
     {
@@ -54,13 +56,24 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
-    /*
-     * Get the table columns.
+    /**
+     * Colonne dell'elenco.
      *
-     * @return array<string, Tables\Columns\Column>
+     * Filament 5 dichiara `getTableColumns()` deprecato in `HasColumns` e lo fa
+     * ritornare array vuoto. Quella dichiarazione soddisfa il metodo astratto di
+     * {@see HasXotTable}, quindi una pagina che non reimplementa il metodo
+     * ottiene silenziosamente una tabella senza colonne. La sorgente di verita'
+     * e' la classe Table della Resource ({@see XotBaseResource::getTableClass()}).
      *
-     * abstract public function getTableColumns(): array;
+     * @return array<int|string, Column>
      */
+    protected function getTableColumns(): array
+    {
+        $table = app(static::getResource()::getTableClass());
+        Assert::isInstanceOf($table, XotBaseResourceTable::class);
+
+        return $table->getTableColumns();
+    }
 
     /**
      * Get the default sort column and direction.
@@ -87,14 +100,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Paginate the table query.
      *
-     * @param Builder<Model> $query
-     *
+     * @param  Builder<Model>  $query
      * @return Paginator<int, Model>
      */
     protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
-        $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
+        $perPageValue = $perPage === 'all' ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
 
         $paginator = $query->paginate($perPageValue);
 
