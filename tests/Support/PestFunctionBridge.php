@@ -11169,7 +11169,7 @@ namespace Modules\Xot\Tests\Unit\Actions\Arr {
     }
 }
 
-namespace Modules\Xot\Tests\Unit\Actions\Array {
+namespace Modules\Xot\Tests\Unit\Actions\Arrays {
     use Closure;
     use Modules\Xot\Tests\Support\PestExpectation;
     use Modules\Xot\Tests\TestCase;
