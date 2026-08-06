@@ -38,11 +38,15 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 
     /**
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
-        return static::$resource::trans($key, $exceptionIfNotExist, $params);
+        // Via getResource() e non `static::$resource`: la property e' tipata senza
+        // default, quindi leggerla su un RelationManager che non la dichiara da
+        // "must not be accessed before initialization". getResource() la risolve
+        // dal namespace e la valorizza: unica strada di accesso.
+        return static::getResource()::trans($key, $exceptionIfNotExist, $params);
     }
 
     protected static string $relationship = '';
@@ -55,9 +59,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * @return class-string<XotBaseResource>
      */
-    public function getResource(): string
+    public static function getResource(): string
     {
-        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
+        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
             return static::$resource;
         }
 
@@ -187,7 +191,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if (null === $record) {
+                if ($record === null) {
                     return false;
                 }
 
@@ -197,7 +201,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-                if (null === $record) {
+                if ($record === null) {
                     return false;
                 }
 
@@ -267,9 +271,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-    public function canDeleteBulk(Model|\stdClass|null $record): bool
+    public function canDeleteBulk(Model|stdClass|null $record): bool
     {
-        if ($record instanceof \stdClass) {
+        if ($record instanceof stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -280,9 +284,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-    public function canDetachBulk(Model|\stdClass|null $record): bool
+    public function canDetachBulk(Model|stdClass|null $record): bool
     {
-        if ($record instanceof \stdClass) {
+        if ($record instanceof stdClass) {
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

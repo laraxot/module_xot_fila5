@@ -7,7 +7,7 @@ namespace Modules\Xot\Tests\Unit;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Modules\Xot\Contracts\ExtraContract;
 use Modules\Xot\Models\Traits\HasExtraTrait;
-use Modules\Xot\Tests\Fixtures\Models\ExtraModelTest;
+use Modules\Xot\Tests\Fixtures\Models\ExtraModelFixture;
 use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -21,9 +21,9 @@ uses(TestCase::class);
 /**
  * @param array<string, mixed> $values
  */
-function makeExtraWithValues(array $values): ExtraModelTest
+function makeExtraWithValues(array $values): ExtraModelFixture
 {
-    $extra = new ExtraModelTest();
+    $extra = new ExtraModelFixture();
     $attributes = SchemalessAttributes::createForModel($extra, 'extra_attributes');
 
     foreach ($values as $key => $value) {
@@ -37,7 +37,7 @@ function makeExtraWithValues(array $values): ExtraModelTest
 
 describe('HasExtraTrait', function (): void {
     $testModel = new TestModelHasExtra();
-    $extraClass = new ExtraModelTest();
+    $extraClass = new ExtraModelFixture();
 
     it('uses the trait correctly', function () use ($testModel): void {
         $traits = class_uses($testModel);

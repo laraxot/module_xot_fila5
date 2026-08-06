@@ -47,13 +47,17 @@ class ArtisanAction
                 $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
+                // Niente `--force`: questa action è raggiungibile da richiesta HTTP e
+                // `--force` salterebbe la conferma di Laravel in produzione. I dati
+                // sono sacri: la migrazione su un ambiente di produzione si lancia a
+                // mano da CLI, consapevolmente, non con un click.
                 if ('' !== $module_name) {
                     echo '<h3>Module '.$module_name.'</h3>';
 
-                    return self::exe('module:migrate '.$module_name.' --force');
+                    return self::exe('module:migrate '.$module_name);
                 }
 
-                return self::exe('migrate --force');
+                return self::exe('migrate');
 
             case 'routelist':
                 return self::exe('route:list');

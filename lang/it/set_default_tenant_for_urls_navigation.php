@@ -15,6 +15,6 @@ return [
         ],
         'label' => 'Set Default Tenant For Urls',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
 ];

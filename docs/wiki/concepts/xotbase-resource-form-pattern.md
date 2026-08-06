@@ -4,14 +4,29 @@ type: concept
 sources: ["../../../../docs/wiki/concepts/filament-v5-architecture.md"]
 confidence: high
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-08-06
 tags: [filament, schema, xot, architecture, resource-form]
 related:
   - concepts/filament-v5-schema-pattern.md
-  - entities/xotbaseresource.md
+  - concepts/xotbase-resourceform-zen-pattern.md
+  - ../xotbaseresource.md
 ---
 
 # XotBaseResourceForm Pattern
+
+## Triade obbligatoria (Assert)
+
+Ogni `XotBaseResource` **deve** avere le tre classi dedicate. `XotBaseResource` le risolve per convenzione e fallisce con `Assert::classExists` se mancano:
+
+| Ruolo | Classe | Getter |
+|-------|--------|--------|
+| Form | `{Resource}\Schemas\{Model}Form` | `getFormClass()` |
+| Table | `{Resource}\Tables\{Plural}Table` | `getTableClass()` |
+| Infolist | `{Resource}\Schemas\{Model}Infolist` | `getInfolistClass()` |
+
+**Perché:** soft `class_exists` + return silenzioso nasconde Resource incomplete. Errore esplicito = debito di migrazione visibile.
+
+**Bridge migrazione:** `getFormSchemaOld()` / `getInfolistSchema()` sulla Resource restano solo per spostare contenuto verso `*Form` / `*Infolist`. Non sostituiscono le classi: creare file stub che delegano a Old, poi migrare lo schema.
 
 ## Overview
 

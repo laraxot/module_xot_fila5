@@ -1,3 +1,18 @@
+---
+title: "Xot — indice della documentazione"
+description: "Documentazione del modulo Xot: framework base Laraxot."
+module: Xot
+tags: [xot, documentazione, modulo, laraxot]
+status: active
+repository: https://github.com/laraxot/module_xot_fila5
+related:
+  - ./00-index.md
+  - ./index.md
+  - ../../../../docs/wiki/audits/docs-redundancy-audit.md
+issues: https://github.com/laraxot/module_xot_fila5/issues
+discussions: https://github.com/laraxot/module_xot_fila5/discussions
+---
+
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
