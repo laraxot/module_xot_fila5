@@ -15,7 +15,7 @@ class XotBaseResourceForm
     public static function configure(Schema $schema): Schema
     {
         return $schema
-            ->components(static::getFormSchemaOld())
+            ->components(static::getFormSchema())
             ->columns(static::getFormSchemaColumns());
     }
 
@@ -28,14 +28,6 @@ class XotBaseResourceForm
      * @return array<string, Component>
      */
     public static function getFormSchema(): array
-    {
-        return static::getFormSchemaOld();
-    }
-
-    /**
-     * @return array<string, Component>
-     */
-    public static function getFormSchemaOld(): array
     {
         return [
         ];

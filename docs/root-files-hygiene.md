@@ -18,5 +18,5 @@ Root normalized to keep no `.txt` files, at most four Markdown files, and a sing
   - I restanti 103 file (appunti di studio generici, scollegati da Xot) spostati in `docs/legacy-notes/` (nuova cartella).
   - Cartella `docs/root-md-files/` rimossa (vuota).
   - `docs/root-txt-files/` (vuota, mai popolata — i .txt erano già stati rinominati .md a monte) rimossa.
-  - Vedi `docs/index.md` sezione "Legacy Notes" per dettagli e nota sui contenuti obsoleti.
+  - Vedi `docs/INDEX.md` sezione "Legacy Notes" per dettagli e nota sui contenuti obsoleti.
 - **Non toccato**: `docs/root-code-workspace-files/` (contiene `_xot.code-workspace` e `_activity.code-workspace`, identici) — la ricreazione del file `.code-workspace` canonico in root è demandata a un altro agente che sta consolidando la convenzione `<Modulo>.code-workspace` (PascalCase) su tutti i moduli/temi. Non creare `_xot.code-workspace`.

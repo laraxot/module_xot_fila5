@@ -56,7 +56,7 @@
 3. Aggiornare tutti i collegamenti dopo rinomina
 
 ### Fase Documentazione
-1. Aggiornare changelog.md con modifiche eseguite
+1. Aggiornare CHANGELOG.md con modifiche eseguite
 2. Verificare README.md di ogni modulo per collegamenti
 3. Creare indice documentazione consolidata
 

@@ -198,14 +198,14 @@ php artisan lang:check
 
 ### Documentazione Generale
 - [Translation Standards](../../docs/translation-standards.md)
-- [PHPStan Guidelines](../../docs/phpstan-usage.md)
+- [PHPStan Guidelines](../../docs/phpstan_usage.md)
 - [Git Best Practices](../../docs/git-best-practices.md)
 - [Geo Conflict Resolution](laravel/modules/geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/docs/theme-translation-conflicts-resolution.md)
 
 ### Documentazione Generale
 - [Translation Standards](../../../docs/translation-standards.md)
-- [PHPStan Guidelines](../../../docs/phpstan-usage.md)
+- [PHPStan Guidelines](../../../docs/phpstan_usage.md)
 - [Git Best Practices](../../../docs/git-best-practices.md)
 
 ---

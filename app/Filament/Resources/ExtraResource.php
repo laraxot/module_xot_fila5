@@ -6,12 +6,12 @@ namespace Modules\Xot\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\CreateExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\EditExtra;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\ListExtras;
 use Modules\Xot\Models\Extra;
 
-use Filament\Forms\Components\Field;
 class ExtraResource extends XotBaseResource
 {
     protected static ?string $model = Extra::class;
@@ -19,9 +19,9 @@ class ExtraResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    //#[\Override]
+    #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [

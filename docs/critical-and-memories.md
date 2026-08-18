@@ -12,7 +12,7 @@
 
 ## Documentation Rules
 
-1. **File Naming**: All .md files must be lowercase with dashes (except README.md and changelog.md which can have capitals)
+1. **File Naming**: All .md files must be lowercase with dashes (except README.md and CHANGELOG.md which can have capitals)
 2. **Documentation Location**: All .md files must go inside existing 'docs' directories, not created elsewhere
 3. **Content Quality**: Documentation should follow DRY (Don't Repeat Yourself) and KISS (Keep It Simple, Stupid) principles
 

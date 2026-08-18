@@ -15,11 +15,10 @@ discussions:
 
 # Activity Log — Xot
 
-## [2026-07-24] architecture | no domain Actions in Xot
+## [2026-07-22] cleanup | Support + Services.old
 
-- Concept: [no-domain-actions-in-xot.md](concepts/no-domain-actions-in-xot.md)
-- Rimosse/spostate: AI/Ollama → AI, ContextCompressor → AI, Geo duplicati eliminati
-- Root: `domain-actions-belong-to-domain-module` · skill `xot-is-framework-base`
+- Cancellati `app/Support/` (orfani già migrati ad Actions/Adapters) e `app/Services.old/` (archivio confuso).
+- Canon: [no-services-no-support-queueable-actions](./concepts/no-services-no-support-queueable-actions.md) · [no-app-support-queueable-actions](./concepts/no-app-support-queueable-actions.md).
 
 ## [2026-06-30] governance | no legacy folders + model seeder parity
 
@@ -94,7 +93,7 @@ discussions:
 
 - `run-session-gate.sh --markdown [--phpstan]` precompila §7; exit code 1 su bloccanti.
 - Junction `.cursor`/`.windsurf` → `.agents`; regole in `.cursor/rules/` (= `.agents/rules/`).
-- Sync ponytail: `bashscripts/tools/ponytail-sync.sh`; §4+§5 condensati → link agents.md.
+- Sync ponytail: `bashscripts/tools/ponytail-sync.sh`; §4+§5 condensati → link AGENTS.md.
 - PHPStan gate: `trait.unused≈N` nel report; baseline documentata in §6.1.
 
 ## [2026-06-30] prompts | start.txt v13 — gate DRY + path Cursor rules
@@ -126,7 +125,7 @@ discussions:
 - §1.4 infra: WARN locale per `.claude`/`.cursor/rules` (skill ponytail resta obbligatoria)
 - §1.9 QMD con fallback `rg` su wiki se `qmd` assente
 - §1.10 GitHub cross-repo informativo
-- Appendice eccellenza condensata (reflective, patterns — senza duplicare agents.md)
+- Appendice eccellenza condensata (reflective, patterns — senza duplicare AGENTS.md)
 
 ## [2026-06-30] prompts | start.txt v8 — gate sessione
 

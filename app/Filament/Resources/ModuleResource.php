@@ -10,15 +10,12 @@ use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\Page;
 use Illuminate\Support\Str;
 use Modules\Xot\Models\Module;
-use Filament\Forms\Components\Field;
+
 class ModuleResource extends XotBaseResource
 {
     protected static ?string $model = Module::class;
 
-    //#[\Override]
-    /**
-     * @return array<string, mixed>
-     */
+    #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [

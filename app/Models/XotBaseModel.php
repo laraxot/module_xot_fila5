@@ -48,24 +48,15 @@ abstract class XotBaseModel extends EloquentModel
     ];
 
     /**
-     * Risolve il concreto del **modulo chiamante** mantenendo il basename di `static`.
-     *
-     * Il namespace non viene dedotto da `static` (che resta sul prototype del modulo
-     * base, es. `Ptv\Models\CriteriOption`) ma dall'**oggetto chiamante** trovato nel
-     * backtrace: una `Scheda` di Progressioni che invoca `CriteriOption::getClassName()`
-     * ottiene `Progressioni\Models\CriteriOption`. Per questo la chiamata è
-     * `CriteriOption::getClassName()` senza argomenti e senza `static::`.
-     *
-     * Funziona anche dai contesti Filament (`Filament\Resources\`), dove il modello
-     * viene risolto via `getModelClass()` dell'oggetto chiamante.
+     * Resolve the concrete model class for the caller's module.
      *
      * @return class-string<EloquentModel>
      */
     public static function getClassName(): string
     {
         $object = Arr::first(debug_backtrace(), function (array $value) {
-            return isset($value['object'])
-            && (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
+            return isset($value['object']) &&
+            (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
         });
 
         if (! isset($object['object'])) {
@@ -80,6 +71,7 @@ abstract class XotBaseModel extends EloquentModel
         /** @var string $objectClass */
         $namespace = Str::beforeLast((string) $objectClass, '\Models\\');
         $className = Str::afterLast(static::class, '\\');
+        // dddx(['namespace'=>$namespace, 'className'=>$className,'static'=>static::class]);
 
         $res = $namespace.'\\Models\\'.$className;
         Assert::classExists($res);

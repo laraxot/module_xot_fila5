@@ -1,27 +1,27 @@
 ---
-title: "Composer Root Skeleton Fixcity Comparison"
+title: "Composer Root Skeleton <nome progetto> Comparison"
 type: concept
 status: deprecated
 module: "Xot"
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "deprecated composer-root-skeleton-fixcity-comparison"
+qmd: "deprecated composer-root-skeleton-<nome progetto>-comparison"
 related:
-  - "./composer-root-skeleton-fixcity-comparison.md"
+  - "./composer-root-skeleton-<nome progetto>-comparison.md"
 ---
-# Composer Root Skeleton Fixcity Comparison
+# Composer Root Skeleton <nome progetto> Comparison
 
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
-## Osservazione FixCity
+## Osservazione <nome progetto>
 
-FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+<nome progetto> (`<nome repitory>/laravel/composer.json`) e' il riferimento storico nwidart:
 
 - `require`: `php`, `laravel/framework`, `nwidart/laravel-modules`
 - merge solo `Modules/*/composer.json`
 - autoload: `App\\` + `Database\\Seeders\\`
 
-## Debito FixCity (non replicare in Predict)
+## Debito <nome progetto> (non replicare in Predict)
 
 - `spatie/laravel-responsecache` nel root — gia' owner in `Modules/Xot`
 - `phpmd/phpmd` in `require-dev` root — usare `.phar` standalone
@@ -29,20 +29,20 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Stato Predict (canonico 2026-06-30)
 
-Root allineato e piu' stretto di FixCity:
+Root allineato e piu' stretto di <nome progetto>:
 
 - `require` solo tre package skeleton
 - autoload solo `App\\` e `Tests\\`
 - nessun merge `Themes/*/composer.json`
 - temi/seeders: runtime PSR-4 Xot
 
-FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+<nome progetto> (`<nome repitory>/laravel/composer.json`) e' il riferimento storico nwidart:
 
 - `require`: `php`, `laravel/framework`, `nwidart/laravel-modules`
 - merge solo `Modules/*/composer.json`
 - autoload: `App\\` + `Database\\Seeders\\`
 
-## Debito FixCity (non replicare in Predict)
+## Debito <nome progetto> (non replicare in Predict)
 
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`);
 - `Modules\\` nell'autoload root;

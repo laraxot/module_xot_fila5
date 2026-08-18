@@ -55,12 +55,6 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 
     /**
      * Metodo schema invocato sulla `formClass()`. Default: `getFormSchema()`.
-     *
-     * Il default deve corrispondere al contratto di `XotBaseResourceForm`, che espone
-     * `getFormSchema()` — NON `getFormSchemaOld()`, che appartiene alle Resource
-     * (`XotBaseResource`) e non esiste sulle classi `*Form`. Con il default sbagliato
-     * `form()` solleva la `LogicException` qui sotto per ogni widget che non fa override.
-     *
      * Override per condividere una Form class tra widget che espongono
      * sotto-schema diversi (es. LoginWidget + RegisterWidget che condividono
      * `Schemas\UserForm` ma chiamano `getLoginFormSchema` vs `getRegisterFormSchema`).
@@ -75,7 +69,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
      *
      * @return array<int|string, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [];
     }
@@ -97,7 +91,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
             return $schema->components($components)->statePath('data');
         }
 
-        return $schema->components($this->getFormSchemaOld())->statePath('data');
+        return $schema->components($this->getFormSchema())->statePath('data');
     }
 
     /**

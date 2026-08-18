@@ -38,7 +38,7 @@ Vedi [semantic-release-template.md](./semantic-release-template.md). Scaffold: `
 ## update-changelog.yml
 
 - **Trigger**: `release` types `released`.
-- **Step**: checkout main, stefanzweifel/changelog-updater-action con `latest-version` e `release-notes` dall’evento release, git-auto-commit su changelog.md.
+- **Step**: checkout main, stefanzweifel/changelog-updater-action con `latest-version` e `release-notes` dall’evento release, git-auto-commit su CHANGELOG.md.
 
 ## roadmap-check.yml
 

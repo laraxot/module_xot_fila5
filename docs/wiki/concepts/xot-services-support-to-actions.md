@@ -2,6 +2,18 @@
 
 Deleted dead `app/Services/` and `app/Support/` files that had zero callers or were already replaced by Actions/Adapters.
 
+## 2026-07-22 — conferma pulizia
+
+- Cancellata di nuovo `app/Support/` (file orfani ricomparsi, zero caller).
+- Cancellata `app/Services.old/` (rumore; non più riferimento runtime).
+
+| Legacy Support (ri-check) | Destinazione viva |
+|---------------------------|-------------------|
+| `PaDesignColors` | `Actions/PaDesignColorsAction` |
+| `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
+| `PanelModuleResolver` / `PanelModuleSupport` | `Adapters/Filament/PanelModuleAdapter` |
+| `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
+
 ## Deleted
 
 | Legacy file | Reason |

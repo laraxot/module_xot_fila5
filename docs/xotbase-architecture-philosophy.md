@@ -375,8 +375,8 @@ class OutcomesTableWidget extends TableWidget // ❌ SBAGLIATO!
 
 | Da | A | Tipo |
 |----|---|------|
-| [Predict Module Index](../00-index.md) | XotBase Philosophy | Reference |
-| [Architecture Index](./01-architecture/00-index.md) | XotBase Philosophy | Parent |
+| [Predict Module Index](../00-INDEX.md) | XotBase Philosophy | Reference |
+| [Architecture Index](./01-architecture/00-INDEX.md) | XotBase Philosophy | Parent |
 | [Filament Widgets Rule](../../docs/project/FILAMENT_WIDGETS_FOR_LISTS_RULE.md) | XotBase Philosophy | Reference |
 
 ---

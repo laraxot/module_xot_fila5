@@ -5,7 +5,7 @@ module: Xot
 tags: [redundancy, duplicate-code, autoload, casing]
 created: 2026-05-21
 related:
-  - ../../../docs/chat/index.md
+  - ../../../docs/chat/INDEX.md
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
 ---
 

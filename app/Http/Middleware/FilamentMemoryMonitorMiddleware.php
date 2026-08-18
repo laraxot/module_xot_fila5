@@ -6,22 +6,12 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Middleware per monitorare l'uso della memoria nei pannelli Filament.
  * SuperMucca Memory Monitor 🐄.
- *
- * @phpstan-type MemoryMetrics array{
- *     memory_used_mb: float,
- *     memory_peak_mb: float,
- *     memory_total_mb: float,
- *     execution_time_ms: float,
- *     is_filament_admin: bool,
- *     url: string,
- *     method: string,
- *     user_id: mixed,
- * }
  */
 class FilamentMemoryMonitorMiddleware
 {
@@ -124,19 +114,30 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
-     * @param MemoryMetrics $metrics
+     * @param array<string, mixed> $metrics
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
         $logLevel = $this->determineLogLevel($metrics);
 
+        /** @var string $memUsed */
+        $memUsed = SafeStringCastAction::cast($metrics['memory_used_mb']);
+        /** @var string $memPeak */
+        $memPeak = SafeStringCastAction::cast($metrics['memory_peak_mb']);
+        /** @var string $execTime */
+        $execTime = SafeStringCastAction::cast($metrics['execution_time_ms']);
+        /** @var string $method */
+        $method = SafeStringCastAction::cast($metrics['method']);
+        /** @var string $url */
+        $url = SafeStringCastAction::cast($metrics['url']);
+
         $message = sprintf(
             'Filament Memory Usage: %sMB used, %sMB peak, %sms execution time - %s %s',
-            $metrics['memory_used_mb'],
-            $metrics['memory_peak_mb'],
-            $metrics['execution_time_ms'],
-            $metrics['method'],
-            $metrics['url']
+            $memUsed,
+            $memPeak,
+            $execTime,
+            $method,
+            $url
         );
 
         // Aggiungi contesto aggiuntivo
@@ -158,7 +159,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
-     * @param MemoryMetrics $metrics
+     * @param array<string, mixed> $metrics
      */
     private function determineLogLevel(array $metrics): string
     {

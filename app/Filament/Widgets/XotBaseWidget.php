@@ -67,7 +67,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      *
      * @return array<Htmlable|string>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [];
     }
@@ -81,7 +81,7 @@ abstract class XotBaseWidget extends FilamentWidget implements HasActions, HasFo
      */
     public function form(Schema $schema): Schema
     {
-        $schema = $schema->components($this->getFormSchemaOld());
+        $schema = $schema->components($this->getFormSchema());
         $schema->statePath('data');
 
         $model = $this->getFormModel();

@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `base_application_fila5`.
+Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `<nome repository>`.
 
 ## Golden reference
 

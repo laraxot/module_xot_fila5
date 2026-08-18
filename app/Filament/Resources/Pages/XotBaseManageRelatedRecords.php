@@ -6,9 +6,6 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-use Filament\Actions\DeleteAction;
-use Filament\Actions\EditAction;
-use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
@@ -97,11 +94,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     protected function getTableActions(): array
     {
-        return [
-            'view' => ViewAction::make(),
-            'edit' => EditAction::make(),
-            'delete' => DeleteAction::make(),
-        ];
+        return [];
     }
 
     public static function getNavigationLabel(): string

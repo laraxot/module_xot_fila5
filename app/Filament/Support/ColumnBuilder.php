@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Filament\Tables\Columns\BooleanColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
  * Builder for common Filament table columns.
@@ -71,7 +72,7 @@ class ColumnBuilder
             ->sortable()
             ->searchable()
             ->limit(50)
-            ->tooltip(self::attributeTooltip('title'))
+            ->tooltip(static fn ($record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title ?? null) : '')
             ->toggleable();
     }
 
@@ -110,7 +111,7 @@ class ColumnBuilder
         return TextColumn::make('description')
             ->label(__('xot::fields.description.label'))
             ->limit($limit)
-            ->tooltip(self::attributeTooltip('description'))
+            ->tooltip(static fn ($record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description ?? null) : '')
             ->toggleable();
     }
 
@@ -304,26 +305,5 @@ class ColumnBuilder
             'updated_at' => self::updatedAt(),
             'deleted_at' => self::deletedAt(),
         ];
-    }
-
-    /**
-     * Tooltip col valore intero di un attributo troncato da `limit()`.
-     *
-     * Filament passa `$record` come `mixed` (anche `null` sulle righe segnaposto):
-     * il narrowing è runtime, e un attributo non stringificabile degrada a tooltip vuoto.
-     *
-     * @return \Closure(mixed): string
-     */
-    private static function attributeTooltip(string $attribute): \Closure
-    {
-        return static function ($record) use ($attribute): string {
-            if (! \is_object($record) || ! isset($record->{$attribute})) {
-                return '';
-            }
-
-            $value = $record->{$attribute};
-
-            return \is_scalar($value) ? (string) $value : '';
-        };
     }
 }

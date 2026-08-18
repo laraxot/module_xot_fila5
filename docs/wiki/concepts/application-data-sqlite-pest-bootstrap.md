@@ -7,9 +7,9 @@ created: 2026-07-12
 updated: 2026-07-12
 qmd: "application_data.sqlite prepareSharedApplicationSqliteForTesting pest hang empty sqlite fail fast"
 issues:
-  - "https://github.com/laraxot/base_application_fila5/issues/372"
+  - "https://github.com/laraxot/<nome repository>/issues/372"
 discussions:
-  - "https://github.com/laraxot/base_application_fila5/discussions/273"
+  - "https://github.com/laraxot/<nome repository>/discussions/273"
 related:
   - ../concepts/module-testcase-xotbase-hierarchy.md
   - ../../../../../../docs/wiki/memories/data-sacred-no-destructive-db.md

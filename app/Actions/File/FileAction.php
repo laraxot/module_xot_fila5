@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
@@ -92,6 +93,7 @@ class FileAction
 
         $ns_after0 = Str::before($ns_after, '/');
         $ns_after1 = Str::after($ns_after, '/');
+        /** @var string $ns_after0 */
         $ns_after = str_replace('.', '/', (string) $ns_after0).'/'.$ns_after1;
 
         if (Str::startsWith($ns_after, '/')) {
@@ -388,12 +390,7 @@ class FileAction
         $ns_name = Str::before($key, '::');
         // $ns_dir = View::getFinder()->getHints()[$ns_name][0];
         $ns_dir = self::getViewNameSpacePath($ns_name);
-        // Il namespace della view è il nome della proprietà XotData che contiene il tema.
-        $ns_name = match ($ns_name) {
-            'pub_theme' => $xot->pub_theme,
-            'adm_theme' => $xot->adm_theme ?? '',
-            default => throw new \InvalidArgumentException('namespace di tema non gestito: '.$ns_name),
-        };
+        $ns_name = SafeStringCastAction::cast($xot->{$ns_name});
         $tmp = Str::after($key, '::');
         $tmp0 = Str::before($tmp, '/');
         $tmp1 = Str::after($tmp, '/');
@@ -737,10 +734,10 @@ class FileAction
      */
     public static function allDirectories(string $path, array $except = [], string $dir = ''): array
     {
-        // `File::directories()` è annotato `array`: il filtro fissa il tipo una volta sola.
-        $dirs = array_filter(File::directories($path), 'is_string');
+        $dirs = File::directories($path);
         $data = [];
         foreach ($dirs as $v) {
+            $v = SafeStringCastAction::cast($v);
             $name = Str::after($v, $path.\DIRECTORY_SEPARATOR);
             $value = '' === $dir ? $name : $dir.\DIRECTORY_SEPARATOR.$name;
             if (! \in_array($name, $except, false)) {

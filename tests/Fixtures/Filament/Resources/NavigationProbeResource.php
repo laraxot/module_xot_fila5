@@ -16,7 +16,7 @@ class NavigationProbeResource extends XotBaseResource
 
     protected static ?int $navigationSort = 1;
 
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [];
     }
