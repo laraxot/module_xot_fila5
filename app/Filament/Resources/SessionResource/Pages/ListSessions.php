@@ -16,6 +16,9 @@ class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
 
+    /**
+     * @return array<int, Stack>
+     */
     #[\Override]
     public function getGridTableColumns(): array
     {

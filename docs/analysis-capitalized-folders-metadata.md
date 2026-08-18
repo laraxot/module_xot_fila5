@@ -144,25 +144,25 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
 ### 3.1 PHPStan (Level 10 - strictest)
 ```bash
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
+cd /var/www/_bases/<nome repository>/laravel/Modules/Xot
 vendor/bin/phpstan analyse --level=max app/Datas/XotData.php
 ```
 
 ### 3.2 PHPMD (via ./tools)
 ```bash
-cd /var/www/_bases/base_predict_fila5
+cd /var/www/_bases/<nome repository>
 ./tools/phpmd-check.sh laravel/Modules/Xot/app/Datas/XotData.php
 ```
 
 ### 3.3 PHPInsights
 ```bash
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
+cd /var/www/_bases/<nome repository>/laravel/Modules/Xot
 vendor/bin/phpinsights
 ```
 
 ### 3.4 Application Runtime
 ```bash
-cd /var/www/_bases/base_predict_fila5
+cd /var/www/_bases/<nome repository>
 php artisan serve --host=0.0.0.0 --port=8000
 # Test: curl http://localhost:8000/health
 ```

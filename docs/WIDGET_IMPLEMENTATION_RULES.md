@@ -1,3 +1,5 @@
+> **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
+
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget

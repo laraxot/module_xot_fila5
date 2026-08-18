@@ -13,7 +13,7 @@ class ProbeResource extends XotBaseResource
 
     protected static ?string $model = null;
 
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [];
     }

@@ -14,17 +14,22 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
+use Modules\Xot\Actions\Route\GetRouteParametersAction;
+use Webmozart\Assert\Assert;
 
 use function Safe\define;
 use function Safe\preg_match;
 
-use Webmozart\Assert\Assert;
-
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
-        $path = app(FixPathAction::class)->execute('\vendor\orchestra\testbench-core\laravel');
-        $base = app(FixPathAction::class)->execute(base_path());
+        /** @var mixed $pathResult */
+        $pathResult = app(FixPathAction::class)->execute('\vendor\orchestra\testbench-core\laravel');
+        /** @var mixed $baseResult */
+        $baseResult = app(FixPathAction::class)->execute(base_path());
+
+        $path = is_string($pathResult) ? $pathResult : '';
+        $base = is_string($baseResult) ? $baseResult : '';
 
         return Str::endsWith($base, $path);
     }
@@ -34,21 +39,35 @@ if (! function_exists('dddx')) {
     function dddx(mixed $params): void
     {
         $tmp = debug_backtrace();
-        $start = defined('LARAVEL_START') ? (float) LARAVEL_START : microtime(true);
+        $startValue = defined('LARAVEL_START') ? LARAVEL_START : null;
+        $start = is_numeric($startValue) ? (float) $startValue : microtime(true);
         if (! defined('LARAVEL_START')) {
             define('LARAVEL_START', $start);
         }
+        /** @var mixed $fileResult */
+        $fileResult = app(FixPathAction::class)->execute($tmp[0]['file'] ?? 'file-unknown');
+        $file = is_string($fileResult) ? $fileResult : 'file-unknown';
+
         $data = [
             '_' => $params,
             'line' => $tmp[0]['line'] ?? 'line-unknows',
-            'file' => app(FixPathAction::class)->execute($tmp[0]['file'] ?? 'file-unknown'),
+            'file' => $file,
             'time' => microtime(true) - $start,
             'memory_taken' => round(memory_get_peak_usage() / (1024 * 1024), 2).' MB',
         ];
 
-        if (File::exists($data['file']) && Str::startsWith($data['file'], app(FixPathAction::class)->execute(storage_path('framework/views')))) {
-            $content = File::get($data['file']);
-            $data['view_file'] = app(FixPathAction::class)->execute(Str::between($content, '/**PATH ', ' ENDPATH**/'));
+        if (File::exists($data['file'])) {
+            /** @var mixed $storageResult */
+            $storageResult = app(FixPathAction::class)->execute(storage_path('framework/views'));
+            $storagePath = is_string($storageResult) ? $storageResult : '';
+            if (Str::startsWith($data['file'], $storagePath)) {
+                $content = File::get($data['file']);
+                /** @var mixed $betweenResult */
+                $betweenResult = Str::between($content, '/**PATH ', ' ENDPATH**/');
+                /** @var mixed $viewResult */
+                $viewResult = app(FixPathAction::class)->execute(is_string($betweenResult) ? $betweenResult : '');
+                $data['view_file'] = is_string($viewResult) ? $viewResult : '';
+            }
         }
 
         dd($data);
@@ -71,25 +90,29 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-        if ('admin' === Request::segment(2)) {
+        if (Request::segment(2) === 'admin') {
             return true;
         }
 
+        /** @var iterable<int|string, string>|null $segments */
         $segments = Request::segments();
 
-        return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
+        if (! is_array($segments) || count($segments) === 0) {
+            return false;
+        }
+
+        return $segments[0] === 'livewire' && session('in_admin') === true;
     }
 }
 
 if (! function_exists('params2ContainerItem')) {
     /**
-     * @param array<string, mixed>|null $params
-     *
+     * @param  array<string, mixed>|null  $params
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
-        if (null === $params) {
+        if ($params === null) {
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -101,10 +124,12 @@ if (! function_exists('params2ContainerItem')) {
         $item = [];
         foreach ($params as $k => $v) {
             $pattern = '/(container|item)(\d+)/';
-            preg_match($pattern, $k, $matches);
-            if (count($matches) >= 3) {
-                $sk = $matches[1];
-                $sv = $matches[2];
+            if (preg_match($pattern, $k, $matches) !== 1) {
+                continue;
+            }
+            $sk = $matches[1] ?? '';
+            $sv = $matches[2] ?? '';
+            if ($sk !== '' && $sv !== '') {
                 ${$sk}[$sv] = $v;
             }
         }
@@ -133,8 +158,8 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-            return null === $id ? null : (string) $id;
-        } catch (Throwable $e) {
+            return $id === null ? null : strval($id);
+        } catch (Throwable) {
             return null;
         }
     }
@@ -150,7 +175,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-            $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
+            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -166,15 +191,13 @@ if (! function_exists('isJson')) {
     }
 }
 
-/*
-|--------------------------------------------------------------------------
-| Pest Laravel Helper Stubs
-|--------------------------------------------------------------------------
-|
-| Stubs for Pest global testing functions.
-| These eliminate 'function not found' errors from PHPStan.
-|
-*/
+if (! function_exists('getRouteParameters')) {
+    /** @return array<string, mixed> */
+    function getRouteParameters(): array
+    {
+        return app(GetRouteParametersAction::class)->execute();
+    }
+}
 
 if (! function_exists('actingAs')) {
     /**
@@ -188,8 +211,7 @@ if (! function_exists('actingAs')) {
 
 if (! function_exists('get')) {
     /**
-     * @param array<string, mixed> $options
-     *
+     * @param  array<string, mixed>  $options
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -200,8 +222,7 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
-     * @param array<string, mixed> $options
-     *
+     * @param  array<string, mixed>  $options
      * @return TestResponse<Response>
      */
     function post(string $uri, mixed $data = [], array $options = []): TestResponse
@@ -271,7 +292,6 @@ if (! function_exists('followingRedirects')) {
 }
 
 if (! function_exists('test')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
     function test(string $title, Closure $callback): void
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
@@ -279,7 +299,6 @@ if (! function_exists('test')) {
 }
 
 if (! function_exists('describe')) {
-    /** @param  string  $title  @param  \Closure  $callback  @return void */
     function describe(string $title, Closure $callback): void
     {
         throw new RuntimeException('Stub: This function is meant for static analysis only.');
@@ -288,13 +307,11 @@ if (! function_exists('describe')) {
 
 if (! function_exists('xotSeedModelOnce')) {
     /**
-     * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
-     *
-     * @param class-string<Model> $modelClass
+     * @param  class-string<Model>  $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
     {
-        (new GetFactoryAction())
+        (new GetFactoryAction)
             ->execute($modelClass)
             ->createOne();
     }

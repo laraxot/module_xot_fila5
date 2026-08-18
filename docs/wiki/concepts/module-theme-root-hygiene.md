@@ -40,7 +40,7 @@ root è vuoto (0 byte) o senza omonimo sensato in `docs/`, va solo cancellato.
 ```bash
 # Audit
 find laravel/Modules/{M} laravel/Themes/{T} -maxdepth 1 -iname "*.md" \
-  ! -iname "README.md" ! -iname "changelog.md" ! -iname "LICENSE.md"
+  ! -iname "README.md" ! -iname "CHANGELOG.md" ! -iname "LICENSE.md"
 ```
 
 Incidente reale (2026-07-27): `Modules/Xot/` aveva 52 file `.md` in root fuori da questi 3

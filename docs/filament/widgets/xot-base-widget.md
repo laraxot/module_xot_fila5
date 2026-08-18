@@ -51,19 +51,22 @@ protected int|string|array $columnSpan = 'full';  // Larghezza del widget
 
 ## Form Schema
 
-Ogni widget deve implementare il proprio schema di form:
+`XotBaseWidget` espone **`getFormSchema()`** (default `[]`). **Non esiste** `getFormSchemaOld()` sui widget: quello è il ponte delle **Resource**.
+
+`#[Override]` su un metodo assente nel parent è fatal PHP 8.3 all'autoload e interrompe `phpstan analyse Modules`.
+
+Chi lo usa: login `/it/auth/login`, firma valutatore, dropdown utente. Un widget con solo `getFormSchemaOld()` ha form vuoto a runtime e PHPStan non lo vede.
 
 ```php
-abstract public function getFormSchema(): array;
-
-final public function form(Form $form): Form
+public function getFormSchema(): array
 {
-    return $form
-        ->schema($this->getFormSchema())
-        ->columns(2)
-        ->statePath('data');
+    return [
+        // componenti; niente ->label()
+    ];
 }
 ```
+
+`form()` sulla base chiama `getFormSchema()` e imposta `statePath('data')`. Non è `abstract` nel codice attuale.
 
 ## Best Practices
 

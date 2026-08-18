@@ -14,7 +14,7 @@ Trovati **30+ file .md** con nomi che violano le regole:
 - Maiuscole: `ROADMAP_2026.md`, `FILAMENT_4_LARAXOT_RULES.md`
 - Underscore maiuscole: `TRAIT_METHOD_SIGNATURE_RULES.md`
 
-**Azione richiesta**: Rinominare tutti i file seguendo convenzioni (minuscolo, no date, solo README.md/changelog.md possono avere maiuscole).
+**Azione richiesta**: Rinominare tutti i file seguendo convenzioni (minuscolo, no date, solo README.md/CHANGELOG.md possono avere maiuscole).
 
 ### Uso di `mixed` nel Codice
 Trovati **1155 usi di `mixed`** in 394 file PHP.

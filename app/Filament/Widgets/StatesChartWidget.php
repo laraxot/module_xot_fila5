@@ -6,6 +6,8 @@ namespace Modules\Xot\Filament\Widgets;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 class StatesChartWidget extends XotBaseChartWidget
 {
@@ -48,16 +50,12 @@ class StatesChartWidget extends XotBaseChartWidget
                 ->selectRaw('state, COUNT(*) as count')
                 ->groupBy('state')
                 ->get();
-            // Colonne `mixed`: una riga senza stato/conteggio validi è una fetta senza
-            // significato nel grafico, quindi si scarta invece di degradarla a ''/0.
             foreach ($rows as $row) {
-                $state = $row->state ?? '';
-                $count = $row->count ?? 0;
-                if (! \is_scalar($state) || ! is_numeric($count)) {
-                    continue;
-                }
-
-                $states[(string) $state] = (int) $count;
+                /** @var string $state */
+                $state = SafeStringCastAction::cast($row->state ?? '');
+                /** @var int $count */
+                $count = SafeIntCastAction::cast($row->count ?? 0);
+                $states[$state] = $count;
             }
 
             $data = [];

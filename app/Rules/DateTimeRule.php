@@ -17,8 +17,8 @@ class DateTimeRule implements Rule
     /**
      * Determine if the validation rule passes.
      *
-     * @param string $attribute The attribute name being validated
-     * @param mixed  $value     The value being validated
+     * @param  string  $attribute  The attribute name being validated
+     * @param  mixed  $value  The value being validated
      */
     public function passes(mixed $attribute, mixed $value): bool
     {
@@ -32,7 +32,7 @@ class DateTimeRule implements Rule
 
         $format = 'd/m/Y H:i';
         try {
-            $value_new = Carbon::createFromFormat($format, $value);
+            Carbon::createFromFormat($format, $value);
         } catch (\Exception) {
             return false;
         }

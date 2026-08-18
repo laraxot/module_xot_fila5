@@ -20,7 +20,7 @@
 
 ```
 Modules/<ModuleName>/docs/
-├── 00-index.md                    # ⭐ Indice principale (OBBLIGATORIO)
+├── 00-INDEX.md                    # ⭐ Indice principale (OBBLIGATORIO)
 ├── README.md                      # Introduzione generale
 │
 ├── 01-getting-started/            # Quick start
@@ -105,8 +105,8 @@ Modules/<ModuleName>/docs/
 ```
 MAIUSCOLE (convenzione standard):
 - README.md         # Introduzione cartella
-- index.md          # Indice navigazione
-- changelog.md      # Change log
+- INDEX.md          # Indice navigazione
+- CHANGELOG.md      # Change log
 - LICENSE.md        # Licenza
 - CONTRIBUTING.md   # Guida contribuzione
 ```
@@ -383,7 +383,7 @@ echo "✅ Struttura creata per $MODULE"
 1. **Identifica categoria** (getting-started, development, etc.)
 2. **Segui naming convention** (lowercase-with-dashes.md)
 3. **Usa template** appropriato
-4. **Aggiorna index.md** se rilevante
+4. **Aggiorna INDEX.md** se rilevante
 5. **Aggiorna README.md** della cartella
 6. **Link da altri docs** se correlato
 7. **Commit con message chiaro**
@@ -404,7 +404,7 @@ echo "✅ Struttura creata per $MODULE"
 2. **Se utile**: sposta in `_archive/YYYY-MM-DD-nome.md`
 3. **Se inutile**: elimina direttamente
 4. **Aggiorna link** che puntavano al file
-5. **Rimuovi da index.md**
+5. **Rimuovi da INDEX.md**
 6. **Documenta motivo** archiviazione
 
 ---
@@ -512,7 +512,7 @@ UNDERSCORES=$(find $MODULE_PATH/*/docs -name "*_*.md" ! -path "*/_archive/*" | w
 echo "Underscore violations: $UNDERSCORES"
 
 # Missing INDEX
-MISSING_INDEX=$(find $MODULE_PATH/*/docs -maxdepth 1 -type d ! -exec test -e "{}/00-index.md" \; -print | wc -l)
+MISSING_INDEX=$(find $MODULE_PATH/*/docs -maxdepth 1 -type d ! -exec test -e "{}/00-INDEX.md" \; -print | wc -l)
 echo "Missing INDEX: $MISSING_INDEX"
 
 # Total docs

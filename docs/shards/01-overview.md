@@ -7,7 +7,7 @@ parent: laraxot.md
 lines: 50
 tokens: ~65K
 related:
-  - ./index.md
+  - ./INDEX.md
   - ./02-architecture.md
 ---
 
@@ -49,7 +49,7 @@ Modules/YourModule/
 ## References
 - Full architecture: [02-architecture](./02-architecture.md)
 - Data management: [03-data-management](./03-data-management.md)
-- Shard index: [INDEX](./index.md)
+- Shard index: [INDEX](./INDEX.md)
 
 ---
 *Shard 1/18 of laraxot.md | Load next: 02-architecture.md*

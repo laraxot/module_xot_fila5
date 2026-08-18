@@ -1,24 +1,24 @@
 ---
-title: "Confronto composer root FixCity vs Predict"
+title: "Confronto composer root <nome progetto> vs Predict"
 type: raw-note
 module: Xot
 created: 2026-06-30
 updated: 2026-07-15
-tags: [composer, nwidart, laravel-modules, fixcity, predict]
+tags: [composer, nwidart, laravel-modules, <nome progetto>, predict]
 source:
-  - /var/www/_bases/base_fixcity_fila5/laravel/composer.json
-  - /var/www/_bases/base_predict_fila5/laravel/composer.json
+  - /var/www/_bases/<nome repitory>/laravel/composer.json
+  - /var/www/_bases/<nome repository>/laravel/composer.json
 ---
 
-# Confronto composer root FixCity vs Predict
+# Confronto composer root <nome progetto> vs Predict
 
-FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+<nome progetto> (`<nome repitory>/laravel/composer.json`) e' il riferimento storico nwidart:
 
 - `require`: `php`, `laravel/framework`, `nwidart/laravel-modules`
 - merge solo `Modules/*/composer.json`
 - autoload: `App\\` + `Database\\Seeders\\`
 
-## Debito FixCity (non replicare in Predict)
+## Debito <nome progetto> (non replicare in Predict)
 
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`)
 - `Modules\\` nell'autoload root
@@ -27,7 +27,7 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Stato Predict (canonico 2026-06-30)
 
-Root allineato e piu' stretto di FixCity:
+Root allineato e piu' stretto di <nome progetto>:
 
 - `require` solo tre package skeleton
 - autoload solo `App\\` e `Tests\\`

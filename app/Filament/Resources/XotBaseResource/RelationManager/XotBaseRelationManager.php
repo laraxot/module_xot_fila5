@@ -46,16 +46,16 @@ abstract class XotBaseRelationManager extends RelationManager
 
     // final public function form(Schema $schema): Schema
     // {
-    //     return $schema->components($this->getFormSchemaOld());
+    //     return $schema->components($this->getFormSchema());
     // }
     /**
      * Get form schema.
      *
      * @return array<string|int, Component>
      */
-    final public function getFormSchemaOld(): array
+    final public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchemaOld();
+        return $this->getResource()::getFormSchema();
     }
 
     /**

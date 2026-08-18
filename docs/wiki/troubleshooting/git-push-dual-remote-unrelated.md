@@ -38,7 +38,6 @@ two unrelated commit graphs sharing the same branch name.
 
 Same pattern previously confirmed in `Modules/UI` and `Modules/User`:
 
-- `../../../User/docs/wiki/troubleshooting/git-lfs-orphan-pointer-svg-fix.md`
   (provtv-vs-laraxot unrelated-history section)
 - `../../../UI/docs/wiki/troubleshooting/` (original discovery, hundreds of
   add/add conflicts on attempted rebase/merge — safely aborted both times)

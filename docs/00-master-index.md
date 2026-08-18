@@ -29,9 +29,9 @@
 
 ## 🏗 Module-Specific Documentation
 
-- **[Fixcity Module](../../Fixcity/docs/index.md)**: Tickets, Wizards, and Frontoffice integration.
+- **[<nome progetto> Module](../../<nome progetto>/docs/index.md)**: Tickets, Wizards, and Frontoffice integration.
 - **[Geo Module](../../Geo/docs/index.md)**: Geolocation and Map components.
-- **[Predict Module](../../Predict/docs/00-index.md)**: Outcomes and Market logic.
+- **[Predict Module](../../<nome>/docs/00-index.md)**: Outcomes and Market logic.
 
 ---
 

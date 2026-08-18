@@ -48,15 +48,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
-    // abstract public static function getFormSchemaOld(): array;
+    // abstract public static function getFormSchema(): array;
 
     /**
      * Configura lo schema per i record correlati.
      */
     public function schema(Schema $schema): Schema
     {
-        // getFormSchemaOld() sempre ritorna array per definizione
-        $formSchema = $this->getFormSchemaOld();
+        // getFormSchema() sempre ritorna array per definizione
+        $formSchema = $this->getFormSchema();
 
         return $schema->components($formSchema);
     }
@@ -66,7 +66,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
-    protected function getFormSchemaOld(): array
+    protected function getFormSchema(): array
     {
         return [];
     }

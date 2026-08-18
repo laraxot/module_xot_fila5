@@ -163,7 +163,7 @@ See `app/Models/` directory for complete list.
 | File | Purpose |
 |------|---------|
 | [README.md](./README.md) | Quick start guide |
-| [changelog.md](./changelog.md) | Version history |
+| [CHANGELOG.md](./CHANGELOG.md) | Version history |
 
 ### Knowledge Base
 - **llm-wiki/** — Comprehensive knowledge base (1957 files)
@@ -181,8 +181,10 @@ See `app/Models/` directory for complete list.
 - `config/xot.php` - Main configuration
 
 ### Core Classes
-- `app/Support/` - Utility classes
+- `app/Actions/` - QueueableAction (use case)
+- `app/Adapters/` - Binding multi-metodo (Filament, PDF, …)
 - `app/Contracts/` - Interface definitions
+- ~~`app/Support/` / `app/Services.old/`~~ — **vietati** ([no-services-no-support](wiki/concepts/no-services-no-support-queueable-actions.md))
 
 ### Database
 - `database/migrations/` - Schema migrations
@@ -309,7 +311,7 @@ For contribution guidelines, see [CONTRIBUTING.md](../../CONTRIBUTING.md)
 When contributing to Xot:
 1. Maintain test coverage (currently excellent at 108 tests)
 2. Follow patterns established in core models
-3. Update changelog.md
+3. Update CHANGELOG.md
 4. Document in llm-wiki/ if adding new patterns
 
 ---

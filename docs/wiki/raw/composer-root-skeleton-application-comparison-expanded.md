@@ -5,15 +5,15 @@ module: Xot
 created: 2026-06-30
 tags: [composer, nwidart, laravel-modules, application, forecast]
 source:
-  - /var/www/_bases/base_application_fila5/laravel/composer.json
-  - /var/www/_bases/base_ptvx_fila5/laravel/composer.json
+  - /var/www/_bases/<nome repository>/laravel/composer.json
+  - /var/www/_bases/<nome repository>/laravel/composer.json
 ---
 
 # Confronto composer root Application vs Forecast
 
 ## Osservazione Application
 
-Application (`base_application_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+Application (`<nome repository>/laravel/composer.json`) e' il riferimento storico nwidart:
 
 - `require`: `php`, `laravel/framework`, `nwidart/laravel-modules`
 - merge solo `Modules/*/composer.json`

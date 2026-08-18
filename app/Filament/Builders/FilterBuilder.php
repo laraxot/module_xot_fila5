@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Builders;
 
+use function Safe\date;
+
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
@@ -13,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 use function Safe\strtotime;
 
@@ -94,55 +97,49 @@ class FilterBuilder
                     ->label('Until'),
             ])
             ->query(function (Builder $query, array $data) use ($column): Builder {
-                $from = self::toDateString($data['from'] ?? null);
-                $until = self::toDateString($data['until'] ?? null);
-
-                if (null !== $from) {
-                    $query->whereDate($column, '>=', $from);
-                }
-
-                if (null !== $until) {
-                    $query->whereDate($column, '<=', $until);
-                }
-
-                return $query;
+                return $query
+                    ->when(
+                        $data['from'] ?? null,
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
+                    )
+                    ->when(
+                        $data['until'] ?? null,
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
+                    );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
-                $from = self::toDateString($data['from'] ?? null);
-                $until = self::toDateString($data['until'] ?? null);
+                $from = $data['from'] ?? null;
+                $until = $data['until'] ?? null;
 
-                if (null !== $from && null !== $until) {
-                    return $label.': '.date('d/m/Y', strtotime($from)).' - '.date('d/m/Y', strtotime($until));
+                if (! $from && ! $until) {
+                    return null;
                 }
 
-                if (null !== $from) {
-                    return $label.' from: '.date('d/m/Y', strtotime($from));
+                if ($from && $until) {
+                    /** @var string $fromStr */
+                    $fromStr = SafeStringCastAction::cast($from);
+                    /** @var string $untilStr */
+                    $untilStr = SafeStringCastAction::cast($until);
+
+                    return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
-                if (null !== $until) {
-                    return $label.' until: '.date('d/m/Y', strtotime($until));
+                if ($from) {
+                    /** @var string $fromStr */
+                    $fromStr = SafeStringCastAction::cast($from);
+
+                    return $label.' from: '.date('d/m/Y', strtotime($fromStr));
+                }
+
+                if ($until) {
+                    /** @var string $untilStr */
+                    $untilStr = SafeStringCastAction::cast($until);
+
+                    return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 return null;
             });
-    }
-
-    /**
-     * Stato di un `DatePicker`: `string` (input utente) o `DateTimeInterface`
-     * (`->default(now())`). Altro non è una data e si scarta, invece di forzarlo
-     * con un cast che darebbe una stringa senza senso o un `Error`.
-     */
-    private static function toDateString(mixed $value): ?string
-    {
-        if (\is_string($value)) {
-            return '' !== $value ? $value : null;
-        }
-
-        if ($value instanceof \DateTimeInterface) {
-            return $value->format('Y-m-d');
-        }
-
-        return null;
     }
 
     /**

@@ -1,19 +1,39 @@
 # XotBaseResource — pattern Filament
 
+## Perché esiste
+
+L'admin Filament (schede indennità, performance, progressioni) apre Resource. `XotBaseResource` è il contratto unico: niente estensione diretta di `Filament\Resources\Resource`. Chi lo usa: sviluppatori e agenti che toccano il pannello senza rompere ricerca per matr/cognome né i form di firma.
+
+## Contratto verificato sul codice (non sulla wiki)
+
+Fonte: `app/Filament/Resources/XotBaseResource.php`.
+
+| Metodo | Nel codice oggi | Cosa fare |
+|---|---|---|
+| `form()` | **`final`** — carica `{Resource}\Schemas\{Model}Form` | Non overrideare |
+| `table()` | **non** final — carica `{Resource}\Tables\{Plural}Table` | Preferire la Table nested, non reimplementare a caso |
+| `getFormSchema()` | **non** final, **non** abstract: delega a `getFormSchemaOld()` | Ponte: 74 Resource lo sovrascrivono ancora. `final` qui = pagina bianca all'autoload |
+| `getFormSchemaOld()` | **non** abstract, default `[]` | Ponte di migrazione verso `{Model}Form::getFormSchema()`. Non esiste sui Widget |
+| `getFormClass()` / `getTableClass()` | se manca la classe nested → **`LogicException`** | Nessun fallback Action nel call site attuale |
+
+Wiki root che dice «`getFormSchema` final + `getFormSchemaOld` abstract» è **fiction**. SSoT = questo file + il PHP.
+
+Widget e RelationManager: `getFormSchema()` (istanza). `#[Override]` su `getFormSchemaOld()` lì è fatal PHP 8.3 e ferma PHPStan su tutto `Modules`.
+
 ## Panoramica
 
 `XotBaseResource` estende `Filament\Resources\Resource` e centralizza form, tabelle, pagine, relazioni e navigazione (DRY).
 
 ## Metodi finali (non sovrascrivere)
 
-- `form()` — delega a `getFormSchema()`
-- `table()` — delega a colonne/azioni via `XotBaseListRecords`
+- `form()` — risolve la Form class nested, non lo schema inline
+- `table()` nel codice **non** è `final`; il percorso canonico resta `{Plural}Table`
 
 ## Cosa implementare nella Resource figlia
 
 | Metodo | Obbligatorio | Note |
 | :--- | :---: | :--- |
-| `getFormSchema()` | sì | Array con chiavi stringa |
+| `{Model}Form` nested / `getFormSchemaOld()` | ponte | Schema campi; chiavi stringa. Preferire `Schemas\{Model}Form` |
 | `getPages()` | no | Solo se servono view, pagine custom o naming Page non standard |
 | `getRelations()` | no | Solo se ci sono RelationManager; non dichiarare `return []` |
 | `getTableColumns()` | no | Colonne in `ListRecords::getListTableColumns()` |

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+use Exception;
 use Filament\Pages\Enums\SubNavigationPosition;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Pages\PageRegistration;
@@ -20,14 +21,18 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
+use LogicException;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
+use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use ReflectionClass;
+use Webmozart\Assert\Assert;
 
 use function Safe\glob;
-
-use Webmozart\Assert\Assert;
 
 /**
  * @method static string getUrl(?string $name = null, array<string, mixed> $parameters = [], bool $isAbsolute = true, ?string $panel = null, ?\Illuminate\Database\Eloquent\Model $tenant = null, bool $shouldGuessMissingParameters = false, ?string $configuration = null)
@@ -41,7 +46,7 @@ abstract class XotBaseResource extends FilamentResource
     protected static ?SubNavigationPosition $subNavigationPosition = SubNavigationPosition::Top;
 
     /**
-     * @param array<string, bool|float|int|string|null> $params
+     * @param  array<string, bool|float|int|string|null>  $params
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -50,7 +55,7 @@ abstract class XotBaseResource extends FilamentResource
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
-                throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
+                throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
             }
 
             return $res;
@@ -81,7 +86,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getModel(): string
     {
-        if (null !== static::$model) {
+        if (static::$model !== null) {
             $res = static::$model;
             Assert::subclassOf(
                 $res,
@@ -106,53 +111,87 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
+     * Non `final`: 74 Resource dei moduli lo sovrascrivono ancora, e `final` su una classe
+     * base Laraxot produce un errore fatale al primo autoload della sottoclasse — non un
+     * avviso dell'analizzatore, la pagina bianca. Chi migra sposta lo schema in
+     * `Schemas\{Model}Form`; finche' non l'ha fatto, l'override deve restare possibile.
+     * Vedi docs/wiki/rules/final-method-override.md.
+     *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-    final public static function getFormSchema(): array
+    public static function getFormSchema(): array
     {
         return static::getFormSchemaOld();
     }
 
     /**
+     * Bridge di migrazione — schema form ancora sulla Resource.
+     * La classe `{Model}Form` è **obbligatoria** ({@see static::getFormClass()}):
+     * se manca si solleva errore. Old serve solo a spostare il contenuto dentro
+     * `Schemas\{Model}Form::getFormSchema()`; a migrazione chiusa si rimuove.
+     *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-    public static function getFormSchemaOld(): array{
+    public static function getFormSchemaOld(): array
+    {
         return [];
+    }
+
+    /**
+     * Classe Form dedicata: `{Resource}\Schemas\{Model}Form`.
+     *
+     * Obbligatoria. Nessun soft-skip: se non esiste → LogicException.
+     *
+     * @return class-string<XotBaseResourceForm>
+     */
+    public static function getFormClass(): string
+    {
+        $formClass = static::class.'\Schemas\\'.class_basename(static::getModel()).'Form';
+        if (class_exists($formClass)) {
+            Assert::subclassOf($formClass, XotBaseResourceForm::class);
+
+            return $formClass;
+        }
+
+        throw new LogicException("Form class [{$formClass}] not found for resource [".static::class.'].');
     }
 
     final public static function form(Schema $schema): Schema
     {
-        // return AuthorForm::configure($schema);
-        $name = class_basename(static::getModel());
-        $form_class = static::class.'\Schemas\\'.$name.'Form';
-        if (class_exists($form_class)) {
-            $configured = $form_class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
+        $formClass = static::getFormClass();
+        $configured = $formClass::configure($schema);
+        
+        Assert::isInstanceOf($configured, Schema::class);
 
-            return $configured;
+        return $configured;
+    }
+
+    /**
+     * Classe Table dedicata: `{Resource}\Tables\{Plural}Table`.
+     *
+     * Obbligatoria. Nessun soft-skip / table vuota: se non esiste → LogicException.
+     *
+     * @return class-string<XotBaseResourceTable>
+     */
+    public static function getTableClass(): string
+    {
+        $class = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+        if (class_exists($class)) {
+            Assert::subclassOf($class, XotBaseResourceTable::class);
+
+            return $class;
         }
 
-        /** @var array<Htmlable|string> $components */
-        $components = static::getFormSchemaOld();
-
-        return $schema
-            ->components($components)
-            ->columns(static::getFormSchemaColumns());
+        throw new LogicException("Table class [{$class}] not found for resource [".static::class.'].');
     }
 
     public static function table(Table $table): Table
     {
-        $name = class_basename(static::getModel());
-        $name_plural = Str::plural($name);
-        $class = static::class.'\Tables\\'.$name_plural.'Table';
-        if (class_exists($class)) {
-            $configured = $class::configure($table);
-            Assert::isInstanceOf($configured, Table::class);
+        $class = static::getTableClass();
+        $configured = $class::configure($table);
+        Assert::isInstanceOf($configured, Table::class);
 
-            return $configured;
-        }
-
-        return $table;
+        return $configured;
     }
 
     public static function getFormSchemaColumns(): int
@@ -161,7 +200,8 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * Schema dell'infolist: tutte le risorse devono delegare qui.
+     * Bridge di migrazione — schema infolist ancora sulla Resource.
+     * La classe `{Model}Infolist` è **obbligatoria** ({@see static::getInfolistClass()}).
      *
      * @return array<string, \Filament\Schemas\Components\Component>
      */
@@ -171,19 +211,35 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * Metodo finale: obbliga l'uso di getInfolistSchema().
+     * Classe Infolist dedicata: `{Resource}\Schemas\{Model}Infolist`.
+     *
+     * Obbligatoria. Nessun soft-skip: se non esiste → LogicException.
+     *
+     * @return class-string<XotBaseResourceInfolist>
      */
-    final public static function infolist(Schema $schema): Schema
+    public static function getInfolistClass(): string
     {
         $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
-        if (class_exists($class)) {
-            $configured = $class::configure($schema);
-            Assert::isInstanceOf($configured, Schema::class);
-
-            return $configured;
+        if (! class_exists($class)) {
+            throw new LogicException(\sprintf(
+                'Infolist class %s does not exist. Create it extending %s. During migration schema may live temporarily in %s::getInfolistSchema(), then move into the Infolist class — the Infolist class itself must still exist.',
+                $class,
+                XotBaseResourceInfolist::class,
+                static::class,
+            ));
         }
+        Assert::subclassOf($class, XotBaseResourceInfolist::class);
 
-        return $schema->components(static::getInfolistSchema());
+        return $class;
+    }
+
+    final public static function infolist(Schema $schema): Schema
+    {
+        $class = static::getInfolistClass();
+        $configured = $class::configure($schema);
+        Assert::isInstanceOf($configured, Schema::class);
+
+        return $configured;
     }
 
     /**
@@ -210,7 +266,7 @@ abstract class XotBaseResource extends FilamentResource
             $count = app(CountAction::class)->execute(static::getModel());
 
             return number_format($count, 0).'';
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             return '--';
         }
     }
@@ -254,7 +310,7 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getRelations(): array
     {
-        $reflector = new \ReflectionClass(static::class);
+        $reflector = new ReflectionClass(static::class);
         $filename = $reflector->getFileName();
         Assert::string($filename, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
@@ -267,7 +323,7 @@ abstract class XotBaseResource extends FilamentResource
         $filesResult = glob($path.\DIRECTORY_SEPARATOR.'*RelationManager.php');
 
         // PHPStan: glob() with valid pattern returns array
-        if ([] === $filesResult) {
+        if ($filesResult === []) {
             return [];
         }
 
@@ -294,11 +350,11 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getWizardSubmitAction(): Htmlable
     {
-        $submit_view = 'pub_theme::filament.wizard.submit-button';
-        if (! View::exists($submit_view)) {
-            throw new \Exception("View {$submit_view} does not exist");
+        $submitView = 'pub_theme::filament.wizard.submit-button';
+        if (! View::exists($submitView)) {
+            throw new Exception("View {$submitView} does not exist");
         }
-        $render = View::make($submit_view)->render();
+        $render = View::make($submitView)->render();
 
         return new HtmlString($render);
     }
@@ -308,7 +364,7 @@ abstract class XotBaseResource extends FilamentResource
      *
      * @return array<int, Component>
      */
-    public static function getAttachmentsSchema(bool $multiple = true): array
+    public static function getAttachmentsSchema(): array
     {
         $model = static::getModel();
         if (! method_exists($model, 'getAttachments')) {

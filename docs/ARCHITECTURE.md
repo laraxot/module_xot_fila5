@@ -19,5 +19,4 @@ Foundation framework module providing base models, traits, utilities, and Filame
 
 ## Quality Gates
 ✅ PHPStan L10: Executed (2026-07-28)
-✅ LFS Issue: Resolved via git filter-repo (38 image files)
 ✅ Merge Markers: Fixed (4 files cleaned)

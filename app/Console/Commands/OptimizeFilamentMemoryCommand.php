@@ -220,7 +220,7 @@ class OptimizeFilamentMemoryCommand extends Command
                 // Cerca query di migrazione nei form
                 if (str_contains($content, '->whereNull(')
                     && str_contains($content, '->update(')
-                    && str_contains($content, 'getFormSchemaOld')) {
+                    && str_contains($content, 'getFormSchema')) {
                     $forms[] = $file->getPathname();
                 }
             }

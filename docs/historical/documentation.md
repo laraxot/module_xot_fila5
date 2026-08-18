@@ -40,7 +40,7 @@ Modules/[Nome]/
    - Verificare la correttezza
 
 ## Collegamenti
-- [Indice della Documentazione](../docs/index.md)
+- [Indice della Documentazione](../docs/INDEX.md)
 - [Regole del Progetto](../docs/RULES.md)
 - [Struttura dei Moduli](../docs/STRUCTURE.md)
 ## Collegamenti tra versioni di documentation.md
