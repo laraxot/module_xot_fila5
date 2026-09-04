@@ -27,8 +27,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 #### User
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 
 ---
 
@@ -311,13 +310,8 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
-- [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
-- [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
-
-- [DRY/KISS Analysis](../../../../dry_kiss_analysis.md) - **Analisi completa duplicazioni e piano refactoring**
-- [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
-- [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
-- [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
+- [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+- [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)
@@ -351,8 +345,7 @@ Verificare che tutti i modelli nei moduli estendano le classi base corrette (`Ba
 #### User
 - **Stato**: ✅ **CORRETTO** (15 Ottobre 2025)
 - **Modelli corretti**: 7 (Tenant, TeamUser, TeamInvitation, TeamPermission, Authentication, SsoProvider, OauthClient)
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/model_inheritance_fixes.md)
-- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../user/docs/model_inheritance_fixes.md)
+- **Documentazione**: [MODEL_INHERITANCE_FIXES.md](../../User/docs/MODEL_INHERITANCE_FIXES.md)
 
 ---
 
@@ -635,13 +628,8 @@ Dovrebbe estendere `BaseModel` del modulo Lang.
 
 - [DRY/KISS Analysis](../../../../DRY_KISS_ANALYSIS.md) - **Analisi completa duplicazioni e piano refactoring**
 - [DRY/KISS Refactoring](./DRY_KISS_REFACTORING.md) - **Guida rapida refactoring**
-- [User Module Fixes](../../User/docs/model_inheritance_fixes.md)
-- [User Module Analysis](../../User/docs/model_inheritance_analysis.md)
-
-- [DRY/KISS Analysis](../../../../dry_kiss_analysis.md) - **Analisi completa duplicazioni e piano refactoring**
-- [DRY/KISS Refactoring](./dry_kiss_refactoring.md) - **Guida rapida refactoring**
-- [User Module Fixes](../../user/docs/model_inheritance_fixes.md)
-- [User Module Analysis](../../user/docs/model_inheritance_analysis.md)
+- [User Module Fixes](../../User/docs/MODEL_INHERITANCE_FIXES.md)
+- [User Module Analysis](../../User/docs/MODEL_INHERITANCE_ANALYSIS.md)
 - [Code Quality Rules](../../../.windsurf/rules/code-quality.md)
 - [XotBaseModel](../app/Models/XotBaseModel.php)
 - [XotBasePivot](../app/Models/XotBasePivot.php)

@@ -1,13 +1,10 @@
 ---
-title: 'custom_casts'
-module: Xot
+title: "Custom casts"
 type: reference
-slug: custom-casts
-description: '<!-- Contenuto migrato da _docs/custom_casts.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: custom_casts.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da custom_casts.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # custom_casts

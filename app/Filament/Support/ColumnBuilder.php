@@ -72,7 +72,7 @@ class ColumnBuilder
             ->sortable()
             ->searchable()
             ->limit(50)
-            ->tooltip(static fn (mixed $record): string => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title ?? null) : '')
+            ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title) : '')
             ->toggleable();
     }
 
@@ -111,7 +111,7 @@ class ColumnBuilder
         return TextColumn::make('description')
             ->label(__('xot::fields.description.label'))
             ->limit($limit)
-            ->tooltip(static fn (mixed $record): string => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description ?? null) : '')
+            ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description) : '')
             ->toggleable();
     }
 
@@ -186,7 +186,7 @@ class ColumnBuilder
             ->dateTime()
             ->sortable()
             ->badge()
-            ->color(static function (mixed $record): string {
+            ->color(static function (mixed $record) {
                 if (! \is_object($record) || ! isset($record->published_at)) {
                     return 'warning';
                 }
@@ -208,8 +208,8 @@ class ColumnBuilder
     public static function isActive(): IconColumn
     {
         return IconColumn::make('is_active')
-            ->label(__('xot::fields.is_active.label'))
             ->boolean()
+            ->label(__('xot::fields.is_active.label'))
             ->sortable()
             ->toggleable();
     }

@@ -8,11 +8,11 @@ use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 test('safe object cast action works', function (): void {
     $action = app(SafeObjectCastAction::class);
-    $obj = new class()
+    $obj = new class
     {
         public string $str = 'test';
 
@@ -65,7 +65,7 @@ test('safe object cast action works', function (): void {
 
 test('safe eloquent cast action works', function (): void {
     $action = app(SafeEloquentCastAction::class);
-    $model = new class() extends XotBaseModel
+    $model = new class extends XotBaseModel
     {
         protected $attributes = [
             'str' => 'test',

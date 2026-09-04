@@ -1,14 +1,14 @@
-con un trait 
-https://tighten.co/blog/laravel-tip-bootable-model-traits/
-
-https://andy-carter.com/blog/using-laravel-s-eloquent-traits
-
 ---
-
-## Appendice — contenuto migrato da `delete-related-models.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
+title: 'delete_related_models'
+module: Xot
+type: reference
+slug: delete-related-models
+description: '<!-- Contenuto migrato da _docs/delete_related_models.txt -->'
+tags: [migrato-da-txt, xot]
+converted_from: delete_related_models.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
 
 # delete_related_models
 

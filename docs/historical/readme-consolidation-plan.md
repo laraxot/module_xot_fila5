@@ -1,12 +1,3 @@
----
-title: "Piano Consolidamento File readme.md Duplicati"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  

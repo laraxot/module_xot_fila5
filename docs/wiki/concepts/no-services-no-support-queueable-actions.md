@@ -4,8 +4,8 @@ type: concept
 module: Xot
 tags: [xot, services, support, actions, queueable-action, migration, adapter]
 created: 2026-07-13
-updated: 2026-07-22
-qmd: "Xot module Services and Support banned use app Actions Adapters QueueableAction policy no Services.old"
+updated: 2026-07-13
+qmd: "Xot module Services and Support banned use app Actions Adapters QueueableAction policy"
 related:
   - no-app-support-queueable-actions.md
   - xot-services-support-to-actions.md
@@ -16,17 +16,13 @@ related:
 
 ## Regola
 
-- **Mai** creare file in `app/Services/`, `app/Services.old/` o `app/Support/`
+- **Mai** creare file in `app/Services/` o `app/Support/`
 - **Logica singola** → `app/Actions/{Contexto}/FooAction.php`
 - **Multi-metodo binding** → `app/Adapters/{Dominio}/FooAdapter.php`
 - **Trait**: `use Spatie\QueueableAction\QueueableAction;`
 - **Entrypoint**: unico metodo `execute(...)`
 - **Chiamata**: `app(FooAction::class)->execute(...)`
 - **Gruppi**: sottocartelle per attore/contesto (es. `Actions/Route/`, `Actions/Html/`)
-
-## Stato
-
-`app/Support/` e `app/Services.old/` **assenti** (2026-07-22).
 
 ## Conversione
 

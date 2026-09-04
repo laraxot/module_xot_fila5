@@ -1,9 +1,13 @@
 ---
-title: "Documentation Guidelines"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-08-24
-updated: 2026-08-24
+title: "Linee Guida per la Documentazione in Laraxot"
+module: "Xot"
+type: how-to
+tags: [documentation, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "documentation guidelines"
+related:
+  - "./eloquent-magic-properties-rule.md"
 ---
 
 # Linee Guida per la Documentazione in Laraxot
@@ -148,7 +152,7 @@ Esempio:
 Modules\ModuloNome\Models\NomeModello
 ```
 
-**Tabella:** `nome_tabella`
+**Tabella:** `nome_tabella`  
 **Chiave primaria:** `id_nome`
 
 **Attributi principali:**
@@ -255,7 +259,7 @@ Rappresenta un socio dell'associazione.
 Modules\Brain\Models\Socio
 ```
 
-**Tabella:** `socio`
+**Tabella:** `socio`  
 **Chiave primaria:** `id_socio`
 
 **Relazioni:**

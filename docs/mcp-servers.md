@@ -518,7 +518,6 @@ iflow
 ## Changelog
 
 - **2025-01-06**: Documentazione iniziale creata
-- **[DATE]**: Documentazione iniziale creata
   - Cursor, Windsurf, Cline, iFlow
   - Server MCP essenziali configurati
   - Best practices e troubleshooting

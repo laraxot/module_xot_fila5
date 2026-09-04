@@ -14,7 +14,10 @@ uses(TestCase::class)->group('no-xot-db');
 test('action URLs fall back to an explicit fragment outside a route', function (): void {
     $params = RouteParamsData::from(['act' => 'edit']);
 
-    expect((new BuildActionUrlAction())->execute($params))->toBe('#edit');
+    /** @var array<string, mixed> $paramsArray */
+    $paramsArray = $params->toArray();
+
+    expect((new BuildActionUrlAction)->execute($paramsArray))->toBe('#edit');
 });
 
 test('component analyzer exposes its supported filters', function (): void {

@@ -14,15 +14,6 @@
 - [Modulo Performance](../Performance/docs/README.md) - Sistema di valutazione e performance
 - [Modulo Lang](../Lang/docs/README.md) - Gestione multilingua e traduzioni
 
-- [Piano Consolidamento Docs](docs_consolidation_plan.md) - Piano per consolidare la documentazione
-
-### Moduli Core
-- [Modulo Xot](../xot/docs/readme.md) - Core framework e funzionalità base
-- [Modulo User](../user/docs/readme.md) - Gestione utenti e autenticazione
-- [Modulo UI](../ui/docs/readme.md) - Componenti UI e design system
-- [Modulo Performance](../performance/docs/readme.md) - Sistema di valutazione e performance
-- [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
-
 ## Documentazione Tecnica
 
 ### Sviluppo e Qualità
@@ -57,7 +48,7 @@
 
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
-- [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 
@@ -178,7 +169,6 @@
 
 ## Documentazione Generica
 - [README](../docs/README.md) - Documentazione principale del progetto
-- [README](../docs/readme.md) - Documentazione principale del progetto
 - [Roadmap](../docs/roadmap.md) - Piano di sviluppo
 - [Filosofia](../docs/filosofia.md) - Principi e filosofia del progetto
 
@@ -186,9 +176,6 @@
 - [Regole di Progetto](./rules/PROMPT_RULES.md)
 - [Standard di Codice](./standards/CODE-STANDARDS.md)
 - [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
-- [Regole di Progetto](./rules/prompt_rules.md)
-- [Standard di Codice](./standards/code-standards.md)
-- [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
@@ -228,38 +215,3 @@
 * [links.md](../../Tenant/docs/it/links/links.md)
 * [links.md](../../Cms/docs/links.md)
 * [links.md](../../../Themes/One/docs/links.md)
-
-- [Cms](../cms/docs/readme.md) - Frontend
-- [UI](../ui/docs/readme.md) - Componenti
-- [User](../user/docs/readme.md) - Utenti e Permessi
-- [Patient](../patient/docs/readme.md) - Pazienti
-- [Dental](../dental/docs/readme.md) - Odontoiatria
-- [Tenant](../tenant/docs/readme.md) - Multi-tenant
-- [Lang](../lang/docs/readme.md) - Traduzioni
-- [Media](../media/docs/readme.md) - Media
-- [Notify](../notify/docs/readme.md) - Notifiche
-- [Reporting](../reporting/docs/readme.md) - Report
-- [Gdpr](../gdpr/docs/readme.md) - GDPR
-- [Job](../job/docs/readme.md) - Jobs
-- [Chart](../chart/docs/readme.md) - Grafici
-
-## Collegamenti tra versioni di LINKS.md
-* [LINKS.md](../../../xot/docs/links.md)
-* [LINKS.md](../../../user/docs/links.md)
-* [LINKS.md](../../../ui/docs/links.md)
-* [LINKS.md](../../../cms/docs/links.md)
-* [LINKS.md](../../../../themes/one/docs/links.md)
-
-## Collegamenti tra versioni di links.md
-* [links.md](../../gdpr/docs/links.md)
-* [links.md](../../notify/docs/links.md)
-* [links.md](ci/links.md)
-* [links.md](open_sources/links.md)
-* [links.md](../../user/docs/links.md)
-* [links.md](../../user/docs/links.md)
-* [links.md](../../ui/docs/links.md)
-* [links.md](../../lang/docs/links.md)
-* [links.md](../../job/docs/links.md)
-* [links.md](../../tenant/docs/it/links/links.md)
-* [links.md](../../cms/docs/links.md)
-* [links.md](../../../themes/one/docs/links.md)

@@ -1,13 +1,10 @@
 ---
-title: 'type_hinting'
-module: Xot
+title: "Type hinting"
 type: reference
-slug: type-hinting
-description: '<!-- Contenuto migrato da _docs/type_hinting.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: type_hinting.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # type_hinting

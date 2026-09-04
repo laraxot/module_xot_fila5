@@ -1,11 +1,3 @@
----
-title: "Laraxot Religion Phpstan Fixes"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # 🧘 Laraxot Religion: Guida per Fix PHPStan
 
 > **Ogni fix deve rispettare la filosofia, religione, politica e zen di Laraxot**
@@ -245,7 +237,7 @@ Ogni fix deve includere:
 ## Related
 
 - [[../architecture/laraxot-philosophy]] - Filosofia completa
-- [[../../../../../docs/ZEN.md]] - Zen di FixCity
+- [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
 - [[./phpstan-fix-patterns]] - Pattern specifici per fix
 
 ---

@@ -4,205 +4,181 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Illuminate\Support\Facades\Hash;
-use Mockery;
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\ServiceProvider;
+use Mockery\MockInterface;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\MockObject\MockObject;
 
 use function Safe\rmdir;
 use function Safe\scandir;
 use function Safe\unlink;
 
-abstract class TestCase extends BaseTestCase
+/**
+ * Base test case for Xot module.
+ *
+ * Uses MySQL from .env.testing.
+ * All module connections are mapped by TenantServiceProvider.
+ * Migrations must be run ONCE externally: php artisan migrate --env=testing
+ * DatabaseTransactions handles rollback between tests.
+ *
+ * @property object|null $action
+ * @property Model|null $model
+ * @property object|null $service
+ * @property string|null $tempDir
+ * @property object|null $record
+ * @property object|null $transition
+ * @property object|null $resource
+ * @property Model|null $testModel
+ * @property object|null $extraClass
+ * @property Model|null $baseModel
+ * @property string|null $testDir
+ * @property mixed $saved
+ * @property mixed $extra_attributes
+ */
+abstract class TestCase extends XotBaseTestCase
 {
-    use CreatesApplication;
+    use DatabaseTransactions;
 
-    // use DatabaseMigrations;
+    /** @var list<string> */
+    protected $connectionsToTransact = ['sqlite', 'user', 'tenant', 'xot'];
 
-    // =============================================================================
-    // SHARED TEST HELPER FUNCTIONS (DRY Pattern)
-    // =============================================================================
-    // Queste funzioni erano duplicate in molti file di test
-    // Centralizzate qui per manutenibilità e coerenza
-    // =============================================================================
+    public mixed $action = null;
+
+    public mixed $model = null;
+
+    public mixed $service = null;
+
+    public mixed $tempDir = null;
+
+    public mixed $record = null;
+
+    public mixed $transition = null;
+
+    public mixed $resource = null;
+
+    public mixed $testModel = null;
+
+    public mixed $extraClass = null;
+
+    public mixed $baseModel = null;
+
+    public ?string $testDir = null;
+
+    public mixed $saved = null;
+
+    public mixed $extra_attributes = null;
 
     /**
-     * Generate a unique email for testing to prevent database conflicts.
+     * @return array<int, class-string<ServiceProvider>>
      */
-    protected static function generateUniqueEmail(): string
+    protected function getPackageProviders(Application $app): array
     {
-        $faker = fake();
-
-        return $faker->unique()->safeEmail();
+        return parent::getPackageProviders($app);
     }
 
-    /**
-     * Get the configured User class via XotData (correct architecture pattern).
-     *
-     * @return class-string<Model&UserContract>
-     */
-    protected static function getUserClass(): string
+    protected function setUp(): void
     {
-        return XotData::make()->getUserClass();
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
     }
 
     /**
      * @template T of object
      *
      * @param  class-string<T>  $class
-     * @return MockObject&T
+     * @return T
      */
-    protected function createUnitMock(string $class): MockObject
+    public function getAction(string $class): object
     {
-        return $this->createMock($class);
+        Assert::assertInstanceOf($class, $this->action);
+
+        /** @var T $action */
+        $action = $this->action;
+
+        return $action;
+    }
+
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
+     * @return MockInterface&T
+     */
+    public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
+    {
+        /** @var MockInterface&T $mock */
+        $mock = $this->mock($abstract, $callback);
+
+        return $mock;
+    }
+
+    /**
+     * @param  class-string<\Throwable>  $exception
+     */
+    public function expectThrowable(string $exception): void
+    {
+        $this->expectException($exception);
     }
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessageMatches('/'.preg_quote($message, '/').'/');
+        $this->expectExceptionMessageIsOrContains($message);
     }
 
-    protected function bindInstance(string $abstract, object $instance): void
+    public function expectThrowableMessageMatches(string $pattern): void
     {
-        app()->instance($abstract, $instance);
+        $this->expectExceptionMessageMatches($pattern);
     }
 
-    protected function rrmdir(string $dir): void
+    public function failTest(string $message = ''): void
+    {
+        $this->fail($message);
+    }
+
+    /**
+     * Recursively remove a directory and all its contents.
+     */
+    public function rrmdir(string $dir): void
     {
         if (! is_dir($dir)) {
             return;
         }
 
-        /** @var list<string> $objects */
-        $objects = scandir($dir);
+        /** @var array<int, string> $files */
+        $files = scandir($dir);
 
-        foreach ($objects as $object) {
-            if ($object === '.' || $object === '..') {
+        foreach ($files as $file) {
+            if ($file === '.' || $file === '..') {
                 continue;
             }
 
-            $path = $dir.DIRECTORY_SEPARATOR.$object;
-
+            $path = $dir.'/'.$file;
             if (is_dir($path) && ! is_link($path)) {
                 $this->rrmdir($path);
-            } else {
-                unlink($path);
+
+                continue;
             }
+
+            unlink($path);
         }
 
         rmdir($dir);
-    }
-
-    /**
-     * Create a test user via XotData pattern with proper architecture.
-     *
-     * @param  array<string, mixed>  $attributes
-     */
-    protected static function createTestUser(array $attributes = []): UserContract
-    {
-        $defaultData = [
-            'email' => static::generateUniqueEmail(),
-            'password' => Hash::make('password123'),
-            'name' => fake()->name(),
-        ];
-
-        $userData = array_merge($defaultData, $attributes);
-
-        /** @var Factory<Model&UserContract> $factory */
-        $factory = UserFactory::new();
-        /** @var UserContract&Model $user */
-        $user = $factory->create($userData);
-
-        return $user;
-    }
-
-    /**
-     * Mock XotData for widget testing (Gold Standard Pattern).
-     *
-     * Prevents "Class not found" errors and provides consistent behavior
-     * across all widget tests.
-     */
-    protected static function mockXotData(): void
-    {
-        $mockXotData = Mockery::mock(XotData::class)->makePartial();
-
-        // Mock dei metodi critici con fallback sicuri
-        $mockXotData->shouldReceive('getUserClass')->andReturn(User::class);
-
-        $mockXotData
-            ->shouldReceive('getUserResourceClassByType')
-            ->with('patient')
-            ->andReturn('\\Modules\\User\\Filament\\Resources\\PatientResource');
-
-        $mockXotData
-            ->shouldReceive('getUserResourceClassByType')
-            ->with('doctor')
-            ->andReturn('\\Modules\\User\\Filament\\Resources\\DoctorResource');
-
-        $mockXotData
-            ->shouldReceive('getUserResourceClassByType')
-            ->with(Mockery::any())
-            ->andReturn('\\Modules\\User\\Filament\\Resources\\UserResource');
-
-        $mockXotData->shouldReceive('make')->andReturn($mockXotData);
-
-        // ✅ CRITICO: Bind nel container per risoluzione automatica
-        app()->instance(XotData::class, $mockXotData);
-    }
-
-    /**
-     * Create test user with specific type for multi-type testing.
-     *
-     * @param  array<string, mixed>  $attributes
-     */
-    protected static function createTestUserWithType(string $type, array $attributes = []): UserContract
-    {
-        $attributes['type'] = $type;
-
-        return static::createTestUser($attributes);
-    }
-
-    /**
-     * Generate test data array with common fields.
-     *
-     * @param  array<string, mixed>  $overrides
-     * @return array<string, mixed>
-     */
-    protected static function generateTestData(array $overrides = []): array
-    {
-        $defaultData = [
-            'name' => fake()->name(),
-            'email' => static::generateUniqueEmail(),
-            'password' => 'password123',
-            'password_confirmation' => 'password123',
-        ];
-
-        return array_merge($defaultData, $overrides);
-    }
-
-    /**
-     * Assert that user is authenticated with correct type.
-     */
-    protected function assertUserAuthenticated(?string $expectedType = null): void
-    {
-        $this->assertAuthenticated();
-
-        if ($expectedType !== null) {
-            /** @var UserContract|null $user */
-            $user = auth()->user();
-            $this->assertNotNull($user);
-
-            if ($user && method_exists($user, 'type')) {
-                $this->assertEquals($expectedType, $user->type ?? null);
-            }
-        }
     }
 }

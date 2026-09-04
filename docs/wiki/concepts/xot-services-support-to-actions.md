@@ -1,26 +1,6 @@
----
-title: "Xot Services Support To Actions"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Xot Services/Support → Actions migration
 
 Deleted dead `app/Services/` and `app/Support/` files that had zero callers or were already replaced by Actions/Adapters.
-
-## 2026-07-22 — conferma pulizia
-
-- Cancellata di nuovo `app/Support/` (file orfani ricomparsi, zero caller).
-- Cancellata `app/Services.old/` (rumore; non più riferimento runtime).
-
-| Legacy Support (ri-check) | Destinazione viva |
-|---------------------------|-------------------|
-| `PaDesignColors` | `Actions/PaDesignColorsAction` |
-| `PdfBuilderAdapter` | `Adapters/PdfBuilderAdapter` |
-| `PanelModuleResolver` / `PanelModuleSupport` | `Adapters/Filament/PanelModuleAdapter` |
-| `MorphToOneRelationSupport` | `Actions/Model/CreateMorphToOneRelatedModelAction` |
 
 ## Deleted
 

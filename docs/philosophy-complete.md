@@ -1,19 +1,6 @@
-
----
-title: "Xot - Filosofia Completa: Logica, Religione, Politica, Zen"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-01-18
-# Xot - Filosofia Completa: Logica, Religione, Politica, Zen
-
-**Data Creazione**: [DATE]
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -334,12 +321,6 @@ TextInput::make('name')
 
 **Violazione**: Creare Services o Support è eresia architetturale.
 
-#### 5. Mai Creare Services
-
-**Comandamento**: Mai creare Services. Sempre QueueableActions.
-
-**Violazione**: Creare Services è eresia.
-
 **Manifestazione**:
 ```php
 // ✅ CORRETTO: QueueableAction
@@ -523,9 +504,6 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 #### 6. Actions Over Services / Support
 
 **Decisione**: QueueableActions invece di Services o Support.
-#### 6. Actions Over Services
-
-**Decisione**: QueueableActions invece di Services.
 
 **Motivazione**:
 - Actions sono single-purpose
@@ -541,8 +519,6 @@ Modules/MyModule/database/MyModel.php // SBAGLIATO!
 - `app/Services/` e `app/Support/` sono eliminati monorepo (2026-07-13)
 - Migrazione da Services/Support a Actions completata in tutti i moduli
 - `app(ClasseAction::class)->execute()` è l'unico modo per chiamare logica di dominio
-- Services sono deprecati
-- Migrazione da Services a Actions
 
 ### Governance
 

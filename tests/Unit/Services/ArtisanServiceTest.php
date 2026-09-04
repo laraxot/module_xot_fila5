@@ -5,14 +5,13 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
-use Modules\Xot\Services\ArtisanService;
-use PHPUnit\Framework\Assert;
-use Tests\TestCase;
+use Modules\Xot\Actions\ArtisanAction;
+use Modules\Xot\Tests\TestCase;
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
@@ -26,9 +25,9 @@ beforeEach(function (): void {
 test('artisan service act method returns empty string for unknown commands', function (): void {
     Request::replace(['module' => '']);
 
-    $result = ArtisanService::act('unknown-command');
+    $result = ArtisanAction::act('unknown-command');
 
-    Assert::assertSame('', $result);
+    expect($result)->toBe('');
 });
 
 test('artisan service act method handles migrate command', function (): void {
@@ -38,9 +37,9 @@ test('artisan service act method handles migrate command', function (): void {
     Artisan::shouldReceive('call')->once()->andReturn(0);
     Artisan::shouldReceive('output')->once()->andReturn('Migration completed');
 
-    $result = ArtisanService::act('migrate');
+    $result = ArtisanAction::act('migrate');
 
-    Assert::assertStringContainsString('Migration completed', $result);
+    expect(str_contains($result, 'Migration completed'))->toBeTrue();
 });
 
 test('artisan service act method handles module parameter', function (): void {
@@ -50,10 +49,10 @@ test('artisan service act method handles module parameter', function (): void {
     Artisan::shouldReceive('output')->once()->andReturn('Module migration');
 
     ob_start();
-    $result = ArtisanService::act('migrate');
+    $result = ArtisanAction::act('migrate');
     ob_end_clean();
 
-    Assert::assertStringContainsString('Module migration', $result);
+    expect(str_contains($result, 'Module migration'))->toBeTrue();
 });
 
 test('artisan service handles non-string module parameter', function (): void {
@@ -62,7 +61,7 @@ test('artisan service handles non-string module parameter', function (): void {
     Artisan::shouldReceive('call')->once()->andReturn(0);
     Artisan::shouldReceive('output')->once()->andReturn('Migration');
 
-    $result = ArtisanService::act('migrate');
+    $result = ArtisanAction::act('migrate');
 
-    Assert::assertStringContainsString('Migration', $result);
+    expect(str_contains($result, 'Migration'))->toBeTrue();
 });

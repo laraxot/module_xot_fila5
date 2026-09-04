@@ -4,7 +4,7 @@ type: rule
 tags: [module, theme, structure, cleanup, naming, root-hygiene]
 created: 2026-01-21
 updated: 2026-07-08
-qmd: "module theme root no txt max six md readme changelog license agents nwidart no uppercase folders sacred manifest never delete"
+qmd: "module theme root no txt max four md readme changelog license agents nwidart no uppercase folders sacred manifest never delete"
 issues:
   - "https://github.com/laraxot/base_ptvx_fila5/issues/124"
   - "https://github.com/laraxot/base_techplanner_fila5/issues/39"
@@ -30,9 +30,9 @@ La root di modulo/tema è il **contratto nwidart** visibile a CI, Dependabot e a
 - **VIETATO** nella root
 - Spostare in `docs/raw/root-import/` (note grezze) o convertire in `.md` in `docs/wiki/`
 
-### File `.md` — max 6
+### File `.md` — max 4
 
-Al massimo **6** file `.md` in root (conteggio case-insensitive). Nomi preferiti:
+Ammessi **solo** questi nomi in root:
 
 | File | Ruolo |
 |------|--------|
@@ -40,12 +40,8 @@ Al massimo **6** file `.md` in root (conteggio case-insensitive). Nomi preferiti
 | `CHANGELOG.md` | Release notes |
 | `LICENSE.md` | Licenza (se serve) |
 | `AGENTS.md` | Stub agente on-demand (≤25 righe) |
-| `CLAUDE.md` | Stub Claude on-demand |
-| *(+1 opzionale)* | Overview modulo se necessario |
 
-Tutto il resto → `docs/root-md-files/` o `docs/wiki/`. Duplicati `changelog.md` / `CHANGELOG.MD` → un solo `CHANGELOG.md`.
-
-Canon: [module-theme-root-md-files-limit.md](../../../../../../docs/wiki/rules/module-theme-root-md-files-limit.md) · Story [XOT-5.46](../../stories/5.46.module-root-max-six-md-zero-txt.story.md)
+Tutto il resto → `docs/raw/root-import/` o `docs/wiki/`. Duplicati `changelog.md` / `CHANGELOG.MD` → un solo `CHANGELOG.md`.
 
 ### Cartella `tests/AuditCoverage/` — vietata
 

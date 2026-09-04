@@ -1,14 +1,3 @@
-
----
-title: "XotBaseRelationManager per Laraxot PTVX"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
-
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica
@@ -203,12 +192,10 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 
 ## Collegamenti alla Documentazione Correlata
 
-*Ultimo aggiornamento: 3 Giugno 2025*
 - [Filament Resources](/laravel/modules/xot/project_docs/filament/resources.md)
 - [HasXotTable Trait](/laravel/modules/xot/project_docs/filament/xot_table.md)
 - [Regole di Traduzione](/laravel/modules/xot/project_docs/translation_rules.md)
 
-*Ultimo aggiornamento: 3 Giugno 2025*
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica
@@ -407,4 +394,3 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 - [HasXotTable Trait](/laravel/modules/xot/docs/filament/xot_table.md)
 - [Regole di Traduzione](/laravel/modules/xot/docs/translation_rules.md)
 
-*Ultimo aggiornamento: 3 Giugno 2025*

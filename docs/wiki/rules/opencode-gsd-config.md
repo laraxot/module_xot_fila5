@@ -1,11 +1,3 @@
----
-title: "Opencode Gsd Config"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # OpenCode & GSD — Allineamento Schema Agenti
 
 **Rule type**: infrastructure / config alignment

@@ -17,8 +17,6 @@ class ExportButton
             ->tooltip('export XLS')
             ->icon('heroicon-o-inbox-arrow-down')
             // ->visible(null != $year)
-            ->action(static function (): void {
-                throw new \RuntimeException('Removed debug dddx');
-            });
+            ->action(static fn () => dddx('WIP'));
     }
 }

@@ -92,15 +92,3 @@ return $def1;
 ### Versione Incoming
 
 ---
-
-
-## Collegamenti tra versioni di database.md
-* [database.md](docs/tecnico/database/database.md)
-* [database.md](../../../Xot/docs/install/database.md)
-* [database.md](../../../Tenant/docs/it/config/database.md)
-
-
-### Versione Incoming
-
-
----

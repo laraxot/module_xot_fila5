@@ -193,9 +193,10 @@ class SafeObjectCastAction
      * @param  object  $object  L'oggetto da cui ottenere la proprietà
      * @param  string  $property  Il nome della proprietà
      * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
-     * @return string|int|float|bool|array<int|string, mixed> Il valore della proprietà convertito nel tipo specificato
+     * @param  mixed  $default  Valore di default se la proprietà non esiste o è null
+     * @return mixed Il valore della proprietà convertito nel tipo specificato
      */
-    public function getTypedProperty(object $object, string $property, string $type, mixed $default = null): string|int|float|bool|array
+    public function getTypedProperty(object $object, string $property, string $type, mixed $default = null): mixed
     {
         Assert::stringNotEmpty($property);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
@@ -219,6 +220,7 @@ class SafeObjectCastAction
      *
      * @param  object  $object  L'oggetto da verificare
      * @param  string  $property  Il nome della proprietà
+     * @param  mixed  $expectedValue  Il valore atteso
      * @return bool True se l'oggetto ha la proprietà con il valore atteso
      */
     public function hasPropertyValue(object $object, string $property, mixed $expectedValue): bool
@@ -241,6 +243,8 @@ class SafeObjectCastAction
      * @param  string  $property  Il nome della proprietà
      * @param  string  $type  Il tipo di cast desiderato
      * @param  callable|null  $validator  Funzione di validazione opzionale
+     * @param  mixed  $default  Valore di default se la validazione fallisce
+     * @return mixed Il valore della proprietà validato e convertito
      */
     public function getValidatedProperty(
         object $object,
@@ -281,6 +285,8 @@ class SafeObjectCastAction
      * @param  object  $object  L'oggetto su cui eseguire il metodo
      * @param  string  $method  Il nome del metodo
      * @param  array<mixed>  $parameters  I parametri del metodo
+     * @param  mixed  $default  Valore di default se il metodo non esiste o fallisce
+     * @return mixed Il risultato del metodo o il valore di default
      */
     public function callMethodSafely(
         object $object,

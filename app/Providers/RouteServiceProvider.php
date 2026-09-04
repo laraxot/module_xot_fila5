@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +18,8 @@ use Modules\Xot\Http\Middleware\SetDefaultTenantForUrlsMiddleware;
 
 class RouteServiceProvider extends ServiceProvider
 {
+    public string $name = 'Xot';
+
     /**
      * The root namespace to assume when generating URLs to actions.
      */
@@ -31,8 +34,6 @@ class RouteServiceProvider extends ServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
-    public string $name = 'Xot';
-
     /**
      * Called before routes are registered.
      * Register any model bindings or pattern based filters.
@@ -40,7 +41,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot(): void
     {
         parent::boot();
-        $router = app('router');
+        $router = app(Router::class);
 
         // $this->registerLang(); // ✅ Temporaneamente disabilitato per debug
         $this->registerRoutePattern($router);
@@ -56,27 +57,6 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
     }
 
-    /**
-     * Define the "web" routes for the application.
-     * These routes all receive session state, CSRF protection, etc.
-     */
-    protected function mapWebRoutes(): void
-    {
-        Route::middleware('web')->namespace($this->moduleNamespace)->group(base_path('Modules/Xot/routes/web.php'));
-    }
-
-    /**
-     * Define the "api" routes for the application.
-     * These routes are typically stateless.
-     */
-    protected function mapApiRoutes(): void
-    {
-        Route::prefix('api')
-            ->middleware('api')
-            ->namespace($this->moduleNamespace)
-            ->group(base_path('Modules/Xot/routes/api.php'));
-    }
-
     public function registerMyMiddleware(Router $router): void
     {
         $router->prependMiddlewareToGroup('web', SetDefaultTenantForUrlsMiddleware::class);
@@ -88,8 +68,11 @@ class RouteServiceProvider extends ServiceProvider
         $langs = ['it', 'en'];
         $user = request()->user();
         $lang = app()->getLocale();
-        if ($user !== null) {
-            $lang = $user->lang ?? $lang;
+        if ($user instanceof Model) {
+            $userLang = $user->getAttribute('lang');
+            if (is_string($userLang) && $userLang !== '') {
+                $lang = $userLang;
+            }
         }
 
         // ✅ Controllo sicuro della configurazione laravellocalization
@@ -136,7 +119,28 @@ class RouteServiceProvider extends ServiceProvider
 
         $models_collect = collect(array_keys($models));
         $models_collect->implode('|');
-        $models_collect->map(fn (mixed $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+        $models_collect->map(fn (int|string $item) => Str::plural(is_string($item) ? $item : ((string) $item)))->implode('|');
+    }
+
+    /**
+     * Define the "web" routes for the application.
+     * These routes all receive session state, CSRF protection, etc.
+     */
+    protected function mapWebRoutes(): void
+    {
+        Route::middleware('web')->namespace($this->moduleNamespace)->group(base_path('Modules/Xot/routes/web.php'));
+    }
+
+    /**
+     * Define the "api" routes for the application.
+     * These routes are typically stateless.
+     */
+    protected function mapApiRoutes(): void
+    {
+        Route::prefix('api')
+            ->middleware('api')
+            ->namespace($this->moduleNamespace)
+            ->group(base_path('Modules/Xot/routes/api.php'));
     }
 
     // end registerRoutePattern

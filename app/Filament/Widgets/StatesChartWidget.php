@@ -34,7 +34,7 @@ class StatesChartWidget extends XotBaseChartWidget
         try {
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
-            $instance = new $modelClass();
+            $instance = new $modelClass;
 
             /** @var array<string, string> $colors */
             $colors = [
@@ -51,11 +51,8 @@ class StatesChartWidget extends XotBaseChartWidget
                 ->groupBy('state')
                 ->get();
             foreach ($rows as $row) {
-                /** @var string $state */
                 $state = SafeStringCastAction::cast($row->state ?? '');
-                /** @var int $count */
-                $count = SafeIntCastAction::cast($row->count ?? 0);
-                $states[$state] = $count;
+                $states[$state] = SafeIntCastAction::cast($row->count ?? 0);
             }
 
             $data = [];
@@ -79,7 +76,7 @@ class StatesChartWidget extends XotBaseChartWidget
                 ],
                 'labels' => $labels,
             ];
-        } catch (\Throwable $e) {
+        } catch (\Exception $e) {
             // Fallback appropriato senza logging inutile
             return [
                 'datasets' => [

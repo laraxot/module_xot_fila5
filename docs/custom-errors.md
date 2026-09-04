@@ -1,13 +1,10 @@
 ---
-title: 'custom_errors'
-module: Xot
+title: "Custom errors"
 type: reference
-slug: custom-errors
-description: '<!-- Contenuto migrato da _docs/custom_errors.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: custom_errors.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da custom_errors.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # custom_errors

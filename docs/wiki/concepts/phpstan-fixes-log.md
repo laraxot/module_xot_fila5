@@ -5,10 +5,11 @@
 - Lasciare il tipo preciso sul trait/model User e sulle fixture che lo testano; i call-site che risolvono `UserContract` devono restringere a `BaseUser` prima di chiamare `membershipTeams()`.
 - Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules` -> `[OK] No errors`.
 
-## [2026-07-27] XotBaseModel::getClassName — sibling leaf
+## [2026-07-27] XotBaseModel::getClassName — sibling leaf (rettificato 2026-09-02)
 
 - Problema: `Ptv\BaseScheda` chiamava `Criteri*::getClassName()` ma il metodo **non esisteva** → 30 errori PHPStan su `Modules`.
-- Fix: implementato `XotBaseModel::getClassName(string $fallback)` (sibling nello stesso `Models\` di `static`); chiamate `static::getClassName(CriteriOption::class)`.
+- Fix: implementato `XotBaseModel::getClassName()` — **senza argomenti**: basename da `static::class`, namespace dall'oggetto chiamante nel `debug_backtrace()`. Chiamata corretta: `CriteriOption::getClassName()`.
+- ⚠️ Rettifica 2026-09-02: questa voce riportava una firma `getClassName(string $fallback)` con chiamate `static::getClassName(Criteri*::class)` — **mai esistita nel codice** (verifica `git log -S 'function getClassName'`). La doc errata aveva già indotto riscritture sbagliate dei chiamanti.
 - Canon: [xotbasemodel-get-class-name.md](./xotbasemodel-get-class-name.md) · Ptv [criteri-model-class-resolution.md](../../../Ptv/docs/wiki/concepts/criteri-model-class-resolution.md)
 - Verifica: `cd laravel && ./vendor/bin/phpstan analyse Modules` → `[OK] No errors`.
 

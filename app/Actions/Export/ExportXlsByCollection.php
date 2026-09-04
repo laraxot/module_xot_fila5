@@ -37,10 +37,8 @@ class ExportXlsByCollection
         ?string $transKey = null,
         array $fields = [],
     ): BinaryFileResponse {
-        // $fields è già `array<int, string>` per contratto: i tre chiamanti
-        // (ExportXlsAction, ExportTreeXlsAction, ExportXlsTableAction) filtrano con
-        // is_string() o passano da SafeStringCastAction.
-        $stringFields = array_values($fields);
+        // Assicuriamo che $fields sia un array di stringhe
+        $stringFields = array_map(fn (mixed $field): string => (string) $field, array_values($fields));
 
         /** @var Collection<int, mixed> $supportCollection */
         $supportCollection = $collection instanceof EloquentCollection
@@ -71,7 +69,7 @@ class ExportXlsByCollection
             $rows = Collection::make($rows->toArray());
         }
 
-        $spreadsheet = new Spreadsheet();
+        $spreadsheet = new Spreadsheet;
         $sheet = $spreadsheet->getActiveSheet();
 
         $this->writeHeader($sheet, $fields);
@@ -118,7 +116,9 @@ class ExportXlsByCollection
     /**
      * Estrae il valore da un oggetto o array usando il campo specificato.
      *
+     * @param  mixed  $data  I dati da cui estrarre il valore
      * @param  string  $field  Il campo da estrarre
+     * @return mixed Il valore estratto
      */
     protected function extractValue(mixed $data, string $field): mixed
     {

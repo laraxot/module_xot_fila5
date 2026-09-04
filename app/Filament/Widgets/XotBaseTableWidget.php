@@ -31,7 +31,11 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     }
 
     /**
-     * Configura la tabella con le risposte.
+     * Restituisce una chiave univoca per ogni record.
+     * Usa _id che è l'alias della primary key creato da withAnswersLabel().
+     *
+     * IMPORTANTE: Non usare mai chiavi hardcoded, altrimenti Livewire
+     * pensa che tutti i record siano lo stesso e mostra duplicati.
      */
     public function getTableRecordKey(Model|array $record): string
     {

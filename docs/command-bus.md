@@ -1,13 +1,10 @@
 ---
-title: 'command_bus'
-module: Xot
+title: "Command bus"
 type: reference
-slug: command-bus
-description: '<!-- Contenuto migrato da _docs/command_bus.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: command_bus.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da command_bus.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # command_bus

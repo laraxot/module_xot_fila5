@@ -5,7 +5,6 @@
 - Usa sempre `$model_class` invece di `$table` e `$connection`
 - NON implementare il metodo `down()` (XotBaseMigration lo gestisce automaticamente)
 - Il nome del file DEVE terminare con `_table.php`
-- Non implementare mai il metodo `down` se estendi XotBaseMigration
 - Per aggiungere colonne a tabelle esistenti:
   - Copia la migrazione originale, aggiorna il timestamp
   - Aggiungi la colonna in `tableUpdate` solo se non esiste (`if (! $this->hasColumn(...))`)
@@ -64,12 +63,6 @@ return new class extends XotBaseMigration
 };
 ```
 
-## Motivazione
-- Prevenire conflitti di nomi
-- Garantire rollback sicuro
-- Compliance PHPStan livello 10
-- Facilitare troubleshooting e ripresa lavoro
-
 ## Checklist rapida
 - [ ] Anonymous class
 - [ ] Solo metodo `up`
@@ -92,11 +85,6 @@ Ultimo aggiornamento: 2025-05-13
 - [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
 
-
-- [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
-- [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
-
-Ultimo aggiornamento: 2025-05-13
 
 ---
 

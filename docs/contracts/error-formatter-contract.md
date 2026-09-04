@@ -38,6 +38,3 @@ interface ErrorFormatterContract
 - [Error Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../exceptions/formatters/README.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
-- [Error Handling Guidelines](../exception-handling-guide.md)
-- [Error Formatters](../exceptions/formatters/readme.md)
-- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)

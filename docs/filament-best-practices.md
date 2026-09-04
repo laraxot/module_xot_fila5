@@ -181,10 +181,6 @@ Best practice generiche per l'utilizzo di Filament in moduli Laravel riutilizzab
 - Non usare ->label() direttamente nei form: usare sempre i file di traduzione
 
 ## Esempi
-```
-
-=======
-```
 ```php
 // ❌ Anti-pattern
 class MyResource extends \Filament\Resources\Resource {}
@@ -943,8 +939,6 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
-- [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/modules/xot/project_docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila3/laravel/modules/xot/project_docs/best-practices.md)
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1016,3 +1010,4 @@ Appointment::where('doctor_id', $doctorId)
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
 - Refactoring sicuro, massima estendibilità
+

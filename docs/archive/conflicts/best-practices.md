@@ -1,4 +1,3 @@
-
 # Best Practices per la Risoluzione dei Conflitti
 
 ## Principi Generali
@@ -75,7 +74,7 @@ namespace Modules\ModuleName\App\Models;
 
 ## Collegamenti Correlati
 
-- [Convenzioni Namespace](../namespace-conventions.md)
+- [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)
 - [Risoluzione Conflitti Merge](../risoluzione_conflitti_merge.md)
@@ -107,4 +106,4 @@ namespace Modules\ModuleName\App\Models;
 3. **Testing**
    - Verificare le modifiche con PHPStan
    - Testare la compatibilità
-   - Validare le funzionalità
+   - Validare le funzionalità 

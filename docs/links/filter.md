@@ -1,6 +1,6 @@
 ---
 title: Filter
-description: 
+description:
 extends: _layouts.documentation
 section: content
 ---
@@ -16,16 +16,5 @@ https://medium.com/@dkthelearner/mastering-laravel-pipeline-and-query-builder-fo
 * [filter.md](../../../xot/project_docs/links/filter.md)
 
 ### Versione Incoming
-
----
-
-
-## Collegamenti tra versioni di filter.md
-* [filter.md](../../../Xot/docs/actions/filter.md)
-* [filter.md](../../../Xot/docs/links/filter.md)
-
-
-### Versione Incoming
-
 
 ---

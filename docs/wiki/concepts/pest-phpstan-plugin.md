@@ -134,18 +134,17 @@ Calling toBeInstanceOf() on Expectation<Modules\Progressioni\Models\Progressioni
 🪪 pest.expectation.redundant
 ```
 
-## Risolvere le regole Pest, non ignorarle
+## Ignorare regole selettivamente
 
-`laravel/phpstan.neon` e' immutabile per gli agenti e gli errori non vanno soppressi.
-Le segnalazioni del plugin indicano quasi sempre un test senza valore osservabile:
+In `laravel/phpstan.neon` (solo utente):
 
-| Identifier | Correzione semantica |
-|------------|----------------------|
-| `pest.test.emptyClosure` | Implementare l'asserzione; se il comportamento non e' ancora disponibile, concatenare `->todo('motivo concreto')`. |
-| `pest.expectation.redundant` | Sostituire la tautologia con contenuto, trasformazione o side effect osservabile. `new X()` non va testato con `toBeInstanceOf(X::class)`; un `array` gia' dichiarato non va testato con `toBeArray()`. |
+```neon
+parameters:
+    ignoreErrors:
+        - identifier: pest.expectation.redundant
+```
 
-Non aggiungere `ignoreErrors`, baseline o `@phpstan-ignore`. Identifier stabili:
-[Pest PHPStan docs](https://pestphp.com/docs/phpstan).
+Identifier stabili documentati in [Pest PHPStan docs](https://pestphp.com/docs/phpstan).
 
 ## Relazione con PestStubs / bridge discipline
 

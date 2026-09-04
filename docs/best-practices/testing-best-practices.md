@@ -28,8 +28,6 @@ uses(\Modules\Xot\Tests\TestCase::class);
 - Separare Page tests (routing/render) e Widget tests (logica Filament/Livewire).
 
 ### Esempio Widget (Livewire/Filament)
-```
-
 ```php
 <?php
 declare(strict_types=1);

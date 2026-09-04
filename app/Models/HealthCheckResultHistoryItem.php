@@ -13,10 +13,6 @@ use Illuminate\Support\Carbon;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
 
 /**
- * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
- * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()
- * @method static Builder<static>|HealthCheckResultHistoryItem query()
- *
  * @property int $id
  * @property string $check_name
  * @property string $check_label
@@ -30,7 +26,9 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- *
+ * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
+ * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()
+ * @method static Builder<static>|HealthCheckResultHistoryItem query()
  * @method static Builder<static>|HealthCheckResultHistoryItem whereBatch($value)
  * @method static Builder<static>|HealthCheckResultHistoryItem whereCheckLabel($value)
  * @method static Builder<static>|HealthCheckResultHistoryItem whereCheckName($value)
@@ -44,7 +42,6 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @method static Builder<static>|HealthCheckResultHistoryItem whereStatus($value)
  * @method static Builder<static>|HealthCheckResultHistoryItem whereUpdatedAt($value)
  * @method static Builder<static>|HealthCheckResultHistoryItem whereUpdatedBy($value)
- *
  * @mixin \Eloquent
  */
 class HealthCheckResultHistoryItem extends BaseHealthCheckResultHistoryItem

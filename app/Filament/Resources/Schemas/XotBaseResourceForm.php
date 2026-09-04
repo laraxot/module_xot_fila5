@@ -10,7 +10,6 @@ use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 class XotBaseResourceForm
 {
@@ -47,7 +46,12 @@ class XotBaseResourceForm
     }
 
     /**
-     * Etichetta opzione Select da record: titolo valorizzato, altrimenti `#id`.
+     * Costruisce il callback usato da `Select::getOptionLabelUsing()`.
+     *
+     * Regressione: una colonna titolo nulla o vuota faceva arrivare `null` a
+     * `Filament\Forms\Components\Select::isOptionDisabled(string|Htmlable $label)`
+     * mandando in TypeError l'intera pagina di edit. Se la colonna titolo e'
+     * vuota si ripiega su `#{chiave primaria}`.
      *
      * @return \Closure(Model): string
      */
@@ -56,11 +60,13 @@ class XotBaseResourceForm
         return static function (Model $record) use ($titleAttribute): string {
             $title = $record->getAttribute($titleAttribute);
 
-            if (is_string($title) && $title !== '') {
+            if (\is_string($title) && $title !== '') {
                 return $title;
             }
 
-            return '#'.SafeStringCastAction::cast($record->getKey() ?? '');
+            $key = $record->getKey();
+
+            return '#'.(\is_scalar($key) ? (string) $key : '');
         };
     }
 
@@ -80,6 +86,8 @@ class XotBaseResourceForm
 
             return Step::make($name)->schema($schemaComponents);
         }
-        throw new \RuntimeException('Removed debug dddx');
+        dddx($methodName);
+
+        return Step::make($name)->schema([]);
     }
 }

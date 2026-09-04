@@ -2,12 +2,32 @@
 
 declare(strict_types=1);
 
+/*
+ * Isolated unit tests for HasCommonScopes.
+ *
+ * Deliberately does NOT use Modules\Xot\Tests\TestCase: that base class
+ * opens transactions on the app's configured mysql/sqlite connections
+ * during setUp(), which is unrelated to what this trait needs and depends
+ * on env wiring outside this test's control. Instead we boot a throwaway
+ * in-memory SQLite connection via Eloquent's Capsule, so these tests are
+ * fast, deterministic, and independent of the app's database config.
+ */
+
+use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Tests\Fixtures\Models\HasCommonScopesProbe;
-use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+beforeEach(function (): void {
+    $capsule = new Capsule;
+    $capsule->addConnection([
+        'driver' => 'sqlite',
+        'database' => ':memory:',
+        'prefix' => '',
+    ]);
+    $capsule->setAsGlobal();
+    $capsule->bootEloquent();
+});
 
 it('builds correct sql for scopeActive', function (): void {
     $sql = HasCommonScopesProbe::query()->active()->toSql();
@@ -67,7 +87,7 @@ it('reports isPublished false when published_at is in the future', function (): 
 it('reports isActive correctly based on is_active flag', function (): void {
     $active = new HasCommonScopesProbe(['is_active' => true]);
     $inactive = new HasCommonScopesProbe(['is_active' => false]);
-    $unset = new HasCommonScopesProbe();
+    $unset = new HasCommonScopesProbe;
 
     Assert::assertTrue($active->isActive());
     Assert::assertFalse($inactive->isActive());

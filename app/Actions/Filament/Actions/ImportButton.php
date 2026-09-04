@@ -17,8 +17,6 @@ class ImportButton
             ->tooltip('import XLS')
             ->icon('heroicon-o-arrow-up-on-square')
             // ->visible(null != $year)
-            ->action(static function (): void {
-                throw new \RuntimeException('Removed debug dddx');
-            });
+            ->action(static fn () => dddx('WIP'));
     }
 }

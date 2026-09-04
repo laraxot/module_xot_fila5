@@ -23,8 +23,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ```
 
 ### Formato Non Corretto
-```
-
 ```markdown
 
 # Collegamenti Non Corretti
@@ -54,8 +52,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ```
 
 ### Formato Non Corretto
-```
-
 ```markdown
 
 # Collegamenti Non Corretti
@@ -85,8 +81,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ```
 
 ### Formato Non Corretto
-```
-
 ```markdown
 
 # Collegamenti Non Corretti

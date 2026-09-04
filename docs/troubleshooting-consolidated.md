@@ -1,14 +1,3 @@
-
----
-title: "Troubleshooting - Documentazione Consolidata DRY + KISS"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
-
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto
@@ -387,9 +376,10 @@ Test non isolati o dipendenze condivise.
 
 **Soluzione**
 ```php
+// ✅ DatabaseTransactions — mai RefreshDatabase (dati sacri)
 class ExampleTest extends TestCase
 {
-    use RefreshDatabase; // Garantisce database pulito
+    use Illuminate\Foundation\Testing\DatabaseTransactions;
 
     protected function setUp(): void
     {
@@ -398,6 +388,8 @@ class ExampleTest extends TestCase
     }
 }
 ```
+
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
 ### Errore: Test Lenti
 
@@ -471,10 +463,6 @@ Class not found: Modules\ModuleName\NewClass
 ```
 
 **Soluzione**
-```
-
-=======
-```
 ```bash
 composer dump-autoload
 ```
@@ -607,6 +595,5 @@ php artisan view:clear
 
 ---
 
-*Ultimo aggiornamento: [DATE]*
 *Modulo: Xot*
 *Categoria: Troubleshooting*

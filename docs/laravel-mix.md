@@ -1,13 +1,10 @@
 ---
-title: 'laravel_mix'
-module: Xot
+title: "Laravel mix"
 type: reference
-slug: laravel-mix
-description: '<!-- Contenuto migrato da _docs/laravel_mix.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: laravel_mix.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da laravel_mix.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # laravel_mix

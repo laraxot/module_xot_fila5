@@ -1,21 +1,14 @@
 ---
-module: theme
-topic: continuous-integration-tools
-canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+title: 'Continuous integration tools'
+module: Xot
+type: reference
+slug: continuous-integration-tools
+description: '//---------- PHP Mess Detector'
+tags: [migrato-da-txt, xot]
+converted_from: continuous_integration_tools.txt
+created: 2026-08-24
+updated: 2026-08-24
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
-
----
-
-## Appendice — contenuto migrato da `continuous-integration-tools.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
-
-# _continuous_integration_tools
-
-<!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->
 
 //----------
 PHP Mess Detector
@@ -47,8 +40,22 @@ https://grafikart.fr/tutoriels/grumphp-836
 https://jakzal.github.io/toolbox/
 
 
+## Appendice — contenuto migrato
+
 ---
-## Merged from continuous_integration_tools.txt
+title: "continuous_integration_tools"
+module: "Xot"
+type: concept
+tags: [continuous, integration, tools, 2]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "continuous integration tools 2"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+# continuous_integration_tools
+
+<!-- Contenuto migrato da _docs/continuous_integration_tools.txt -->
 
 //----------
 PHP Mess Detector

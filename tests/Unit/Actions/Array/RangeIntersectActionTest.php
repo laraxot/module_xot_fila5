@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Actions\Array\RangeIntersectAction;
+use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

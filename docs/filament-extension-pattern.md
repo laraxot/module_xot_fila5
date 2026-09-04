@@ -42,7 +42,6 @@ namespace Filament\Resources\Pages;
 
 // namespace corretto nel modulo
 namespace Modules\<nome progetto>\Filament\Resources\Pages;
-namespace Modules\SaluteOra\Filament\Resources\Pages;
 ```
 
 ## metodi delle classi base
@@ -78,5 +77,3 @@ protected function getInfolistSchema(): array
 
 - [errore override metodo final](docs/errors/filament_final_method_override.md)
 - [linee guida filament](../<nome progetto>/docs/filament-resources.md)
-- [errore override metodo final](/var/www/html/base_saluteora/laravel/docs/errors/filament_final_method_override.md)
-- [linee guida filament](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/filament-resources.md)

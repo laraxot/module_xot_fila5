@@ -4,21 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
-use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Spatie\QueueableAction\QueueableAction;
 
-/**
- * @deprecated 2026-08-19 Nessun chiamante in laravel/. Usare {@see RangeIntersectAction}
- *             e {@see DiffAssocRecursiveAction} via `app(...)->execute(...)`.
- */
 class ArrayAction
 {
     use QueueableAction;
 
     /**
-     * @deprecated Usare {@see RangeIntersectAction::execute()}
-     *
      * @return array{0: int, 1: int}|false
      */
     public static function rangeIntersect(int $a, int $b, int $c, int $d): array|bool
@@ -34,8 +26,6 @@ class ArrayAction
     }
 
     /**
-     * @deprecated Usare {@see DiffAssocRecursiveAction::execute()}
-     *
      * @param  array<int|string, mixed>  $array1
      * @param  array<int|string, mixed>  $array2
      * @return array<int|string, mixed>

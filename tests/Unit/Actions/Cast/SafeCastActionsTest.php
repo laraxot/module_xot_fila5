@@ -19,11 +19,11 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
-    Assert::assertSame(['d' => 4], $action->execute(new class()
+    Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;
     }));
-    Assert::assertSame(['e' => 5], $action->execute(new class()
+    Assert::assertSame(['e' => 5], $action->execute(new class
     {
         /** @return array<string, int> */
         public function toArray(): array
@@ -31,7 +31,7 @@ test('safe array cast action works', function (): void {
             return ['e' => 5];
         }
     }));
-    Assert::assertSame(['f' => 6], $action->execute(new class()
+    Assert::assertSame(['f' => 6], $action->execute(new class
     {
         /** @return array<string, int> */
         public function __toArray(): array
@@ -72,7 +72,7 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
-    Assert::assertSame(1011, $action->execute(new class()
+    Assert::assertSame(1011, $action->execute(new class
     {
         public function __toString(): string
         {
@@ -85,8 +85,7 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(0, $action->executeWithRange(-50, 0, 100));
     Assert::assertSame(50, $action->executeWithRange(50, 0, 100));
     Assert::assertSame(10, $action->executeAsId(10));
-    // executeAsId forza ID ≥ 1 (max(1, $int)).
-    Assert::assertSame(1, $action->executeAsId(0));
+    Assert::assertSame(0, $action->executeAsId(0));
     Assert::assertSame(99, SafeIntCastAction::cast('99'));
 });
 

@@ -4,21 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Datas;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use RuntimeException;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
+
+use function Safe\realpath;
 
 /**
  * Class Modules\Xot\Datas\XotData.
@@ -85,7 +85,7 @@ class XotData extends Data implements Wireable
     public static function make(): self
     {
         if (! self::$instance) {
-            $data = TenantService::getConfig('xra');
+            $data = app(GetTenantConfigArrayAction::class)->execute('xra');
 
             self::$instance = self::from($data);
         }
@@ -118,23 +118,36 @@ class XotData extends Data implements Wireable
         );
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
 
+        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
 
     public function getUserByEmail(string $email): UserContract
     {
         $user_class = $this->getUserClass();
-        $userInstance = new $user_class();
+        $userInstance = new $user_class;
         if (! in_array('email', $userInstance->getFillable(), true)) {
-            throw new Exception("Attribute 'email' not found in model ".get_class($userInstance));
+            throw new \Exception("Attribute 'email' not found in model ".$userInstance::class);
         }
-        $user = $user_class::firstOrCreate(['email' => $email]);
-        /*
-         * if (! $user) {
-         * throw new \Exception('user not found for email '.$email);
-         * }
-         */
+
+        /** @var (Model&UserContract)|null $user */
+        $user = $user_class::query()->where('email', $email)->first();
+
+        if ($user === null) {
+            throw new \Exception('user not found for email '.$email);
+        }
+
         Assert::implementsInterface($user, UserContract::class, '['.__LINE__.']['.class_basename($this).']');
+
+        return $user;
+    }
+
+    public function findUserByEmail(string $email): ?UserContract
+    {
+        $userClass = $this->getUserClass();
+
+        /** @var (Model&UserContract)|null $user */
+        $user = $userClass::query()->where('email', $email)->first();
 
         return $user;
     }
@@ -157,7 +170,10 @@ class XotData extends Data implements Wireable
             '['.$this->team_class.']['.__LINE__.']['.class_basename($this).']',
         );
 
-        return $this->team_class;
+        /** @var class-string<Model&TeamContract> $teamClass */
+        $teamClass = $this->team_class;
+
+        return $teamClass;
     }
 
     /**
@@ -181,10 +197,13 @@ class XotData extends Data implements Wireable
         Assert::isAOf(
             $this->tenant_class,
             Model::class,
-            '['.$this->tenant_class.']['.__LINE__.']['.class_basename($this).']',
+            '['.__LINE__.']['.class_basename($this).']['.$this->tenant_class.']',
         );
 
-        return $this->tenant_class;
+        /** @var class-string<Model&TenantContract> $tenantClass */
+        $tenantClass = $this->tenant_class;
+
+        return $tenantClass;
     }
 
     /**
@@ -233,7 +252,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
-        /** @var class-string<Model&ProfileContract> */
+        /* @var class-string<Model&ProfileContract> $class */
         return $class;
     }
 
@@ -252,7 +271,7 @@ class XotData extends Data implements Wireable
         Assert::isArray($profile->getFillable(), 'getFillable() must return array');
 
         if (! in_array('user_id', $profile->getFillable(), true)) {
-            throw new Exception('add user_id to fillable on class '.$profileClass);
+            throw new \Exception('add user_id to fillable on class '.$profileClass);
         }
 
         /** @var ProfileContract */
@@ -265,9 +284,8 @@ class XotData extends Data implements Wireable
     public function getProfileByEmail(string $email): ProfileContract
     {
         $user = $this->getUserByEmail($email);
-        Assert::string($user->id, '['.__LINE__.']['.class_basename($this).'] user id must be string');
 
-        return $this->getProfileModelByUserId($user->id);
+        return $this->getProfileModelByUserId((string) $user->id);
     }
 
     /**
@@ -297,7 +315,7 @@ class XotData extends Data implements Wireable
         }
 
         $user_id = (string) authId();
-        $this->profile = $this->getProfileModelByUserId($user_id);
+        $this->profile = $this->getProfileModelByUserId((string) $user_id);
         Assert::implementsInterface(
             $this->profile,
             ProfileContract::class,
@@ -324,31 +342,33 @@ class XotData extends Data implements Wireable
 
     public function save(): void
     {
-        throw new RuntimeException('Removed debug dddx');
+        dddx('wip');
     }
 
     public function getPubThemeViewPath(string $key = ''): string
     {
-        return resource_path('themes/'.$this->pub_theme.'/'.$key);
+        $path0 = base_path('Themes/'.$this->pub_theme.'/resources/views/'.$key);
+
+        try {
+            return realpath($path0);
+        } catch (\Exception $e) {
+            throw new \Exception('realpath not find dir['.$path0.']'.PHP_EOL.'['.$e->getMessage().']');
+        }
+    }
+
+    public function getPubThemePublicPath(string $key = ''): string
+    {
+        return public_path('themes/'.$this->pub_theme.'/'.$key);
+    }
+
+    public function getPubThemePublicAsset(string $key = ''): string
+    {
+        return asset('themes/'.$this->pub_theme.'/'.$key);
     }
 
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
         return base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
-    }
-
-    public function getPubThemePublicPath(string $key = ''): string
-    {
-        $path = base_path('themes/'.$this->pub_theme.'/'.$key);
-
-        return $path;
-    }
-
-    public function getPubThemePublicAsset(string $key = ''): string
-    {
-        $path = asset('themes/'.$this->pub_theme.'/'.$key);
-
-        return $path;
     }
 
     /**
@@ -358,17 +378,20 @@ class XotData extends Data implements Wireable
     {
         $user_class = $this->getUserClass();
         $userInstance = app($user_class);
-        Assert::isInstanceOf($userInstance, Model::class);
-        Assert::methodExists($userInstance, 'getChildTypes');
-        // getChildTypes() is provided dynamically by HasChildTypes-style traits used on
-        // concrete user models, not declared on the base Eloquent Model contract.
-        // @phpstan-ignore-next-line method.notFound
+
+        if (! is_object($userInstance) || ! method_exists($userInstance, 'getChildTypes')) {
+            throw new \Exception('getChildTypes method not found in class '.$user_class);
+        }
+
         $types = $userInstance->getChildTypes();
-        Assert::isArray($types);
+        if (! is_array($types) && ! ($types instanceof \ArrayAccess)) {
+            throw new \Exception('getChildTypes must return array or ArrayAccess');
+        }
         $class = Arr::get($types, $type);
         if (is_null($class)) {
-            throw new Exception('type '.$type.' not found in class '.$user_class);
+            throw new \Exception('type '.$type.' not found in class '.$user_class);
         }
+
         Assert::classExists($class, '['.__LINE__.']['.class_basename($this).']');
         Assert::isAOf($class, Model::class, '['.__LINE__.']['.class_basename($this).']['.$class.']');
         Assert::implementsInterface(
@@ -377,6 +400,7 @@ class XotData extends Data implements Wireable
             '['.__LINE__.']['.class_basename($this).']['.$class.']',
         );
 
+        /* @var class-string<Model&UserContract> $class */
         return $class;
     }
 
@@ -393,14 +417,14 @@ class XotData extends Data implements Wireable
             ->append('Resource')
             ->toString();
 
-        // If the class doesn't exist, try the alternative path (app/Filament/Resources)
+        // If missing, fallback (still PSR-4: NEVER put literal "app\" in the PHP namespace segment)
         if (! class_exists($resourceClass)) {
             $resourceClass =
-                'Modules\\'.$moduleName.'\\app\\Filament\\Resources\\'.class_basename($class).'Resource';
+                'Modules\\'.$moduleName.'\\Filament\\Resources\\'.class_basename($class).'Resource';
         }
 
         if (! class_exists($resourceClass)) {
-            throw new RuntimeException("Resource class not found for type: {$type}. Tried: {$resourceClass}");
+            throw new \RuntimeException("Resource class not found for type: {$type}. Tried: {$resourceClass}");
         }
 
         return $resourceClass;
@@ -414,18 +438,12 @@ class XotData extends Data implements Wireable
     public function getUserChildTypes(): array
     {
         $enum_class = $this->getUserChildTypeClass();
-        Assert::classExists($enum_class);
-        Assert::methodExists($enum_class, 'cases');
-        $cases = $enum_class::cases();
-        Assert::isArray($cases);
 
-        $result = [];
-        foreach ($cases as $case) {
-            $result[] = $case;
+        if (! enum_exists($enum_class)) {
+            return [];
         }
 
-        return $result;
-
+        return $enum_class::cases();
         // $userInstance = app($user_class);
         // return $userInstance->getChildTypes();
     }
@@ -434,9 +452,18 @@ class XotData extends Data implements Wireable
     {
         $user_class = $this->getUserClass();
         $user_instance = app($user_class);
-        Assert::isInstanceOf($user_instance, Model::class);
+
+        if (! is_object($user_instance) || ! method_exists($user_instance, 'getCasts')) {
+            throw new \Exception('getCasts method not found in class '.$user_class);
+        }
+
+        $castsResult = $user_instance->getCasts();
+        if (! is_array($castsResult) && ! ($castsResult instanceof \ArrayAccess)) {
+            throw new \Exception('getCasts must return array or ArrayAccess');
+        }
+
         // $enum_class = Arr::get($user_class::casts(),'type',null);
-        $enum_class = Arr::get($user_instance->getCasts(), 'type', null);
+        $enum_class = Arr::get($castsResult, 'type', null);
         if ($enum_class === null) {
             $enum_class = Str::of($user_class)
                 ->replace('\\Models\\', '\\Enums\\')

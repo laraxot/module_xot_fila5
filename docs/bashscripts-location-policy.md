@@ -145,8 +145,7 @@ git commit -m "refactor: move script to bashscripts/fix/ (location policy compli
 ## 📚 Collegamenti
 
 - [Laraxot Architecture](./architecture.md)
-- [Project Structure Guidelines](project-structure.md)
-- [Project Structure Guidelines](./project-structure.md)
+- [Project Structure Guidelines](PROJECT-STRUCTURE.md)
 - [Deploy Best Practices](./deploy-best-practices.md)
 
 ---

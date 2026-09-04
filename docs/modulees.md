@@ -149,8 +149,6 @@ public static function getFormSchema(): array
 ```json
 {
     "name": "laraxot/module_xot_fila5",
-    "name": "laraxot/module_xot_fila5",
-    "name": "laraxot/module_xot_fila3",
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",

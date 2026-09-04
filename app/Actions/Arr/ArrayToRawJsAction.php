@@ -35,10 +35,8 @@ class ArrayToRawJsAction
                 $parts[] = $k.': '.$value->toHtml();
             } elseif (is_array($value)) {
                 $parts[] = $k.': '.$this->execute($value)->toHtml();
-            } elseif (is_scalar($value) || $value === null) {
-                $parts[] = $k.': '.$this->jsValue($value);
             } else {
-                $parts[] = $k.': '.$this->jsValue(SafeStringCastAction::cast($value));
+                $parts[] = $k.': '.$this->jsValue($value);
             }
         }
 
@@ -52,18 +50,18 @@ class ArrayToRawJsAction
     }
 
     /** Valore JS sicuro per attributo HTML: niente virgolette doppie. */
-    private function jsValue(string|int|float|bool|null $value): string
+    private function jsValue(mixed $value): string
     {
         if (is_bool($value)) {
             return $value ? 'true' : 'false';
         }
-        if ($value === null) {
+        if (is_null($value)) {
             return 'null';
         }
         if (is_numeric($value)) {
             return (string) $value;
         }
 
-        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], $value)."'";
+        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], SafeStringCastAction::cast($value))."'";
     }
 }

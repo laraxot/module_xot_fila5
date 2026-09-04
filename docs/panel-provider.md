@@ -92,8 +92,3 @@ public function panel(Panel $panel): Panel
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
-
-- [Architettura Filament](../../../docs/filament_best_practices.md)
-- [Configurazione Moduli](../../../docs/module_architecture.md)
-
-*Ultimo aggiornamento: [DATE]*

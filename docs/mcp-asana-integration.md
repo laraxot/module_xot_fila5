@@ -1,14 +1,3 @@
-
----
-title: "Xot Module - Asana MCP Integration Guide"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
-
 # Xot Module - Asana MCP Integration Guide
 
 **Versione**: 1.0.0
@@ -37,7 +26,6 @@ L'integrazione di Asana MCP nel modulo Xot permette di:
 ```bash
 # Verifica configurazione MCP
 cat /var/www/_bases/base_<nome progetto>/laravel/.mcp.json | grep -A 5 "asana"
-cat /var/www/_bases/base_laravelpizza/laravel/.mcp.json | grep -A 5 "asana"
 ```
 
 ---

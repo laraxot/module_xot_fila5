@@ -1,11 +1,14 @@
 ---
-title: "Best Practices"
-type: reference
-tags: [wiki, no-frontmatter-fix]
-created: 2026-08-24
-updated: 2026-08-24
+title: "Best Practices per Laraxot"
+module: "Xot"
+type: concept
+tags: [best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "best practices"
+related:
+  - "./eloquent-magic-properties-rule.md"
 ---
-
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -73,4 +76,4 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
-```
+``` 

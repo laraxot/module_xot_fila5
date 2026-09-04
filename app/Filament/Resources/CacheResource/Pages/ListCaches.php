@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
+use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
@@ -28,6 +29,9 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, TextColumn>
+     */
     #[\Override]
     public function getTableColumns(): array
     {
@@ -46,6 +50,12 @@ class ListCaches extends XotBaseListRecords
                 ->sortable()
                 ->label('Expiration'),
         ];
+    }
+
+    #[\Override]
+    public function getGridTableColumns(): array
+    {
+        return parent::getGridTableColumns();
     }
 
     /**

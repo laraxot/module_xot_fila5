@@ -16,8 +16,6 @@ use Modules\<nome progetto>\Models\User;
 use Modules\<nome modulo>\Models\User;
 use Modules\<nome modulo>\Models\User;
 
-```
-
 ```php
 // ❌ VIOLAZIONE CRITICA
 use Modules\<nome modulo>\Models\User;

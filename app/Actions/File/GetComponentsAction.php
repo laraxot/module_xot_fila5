@@ -55,7 +55,14 @@ class GetComponentsAction
             /** @var array<int, array<string, mixed>> $comps */
             $comps = is_array($decoded) ? array_values($decoded) : [];
 
-            return ComponentFileData::collection($comps);
+            if ($this->hasCurrentSchema($comps)) {
+                return ComponentFileData::collection($comps);
+            }
+
+            // Cache scritta da uno schema precedente (name/class/ns rinominati o
+            // mancanti): rigenerare invece di far fallire il boot dell'app con
+            // "Typed property ...::$name must not be accessed before
+            // initialization" alla prima lettura di un DTO incompleto.
         }
 
         $files = File::allFiles($path);
@@ -80,7 +87,7 @@ class GetComponentsAction
             if ($relative_path !== '') {
                 $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
-                    ->map(static fn (string $item): string => Str::slug(Str::snake($item)))
+                    ->map(fn (string $item) => Str::slug(Str::snake($item)))
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -128,5 +135,24 @@ class GetComponentsAction
         }
 
         return ComponentFileData::collection($comps);
+    }
+
+    /**
+     * @param  array<int, array<string, mixed>>  $comps
+     */
+    private function hasCurrentSchema(array $comps): bool
+    {
+        foreach ($comps as $comp) {
+            if (
+                ! isset($comp['name'], $comp['class'], $comp['ns'])
+                || ! is_string($comp['name']) || '' === $comp['name']
+                || ! is_string($comp['class']) || '' === $comp['class']
+                || ! is_string($comp['ns']) || '' === $comp['ns']
+            ) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

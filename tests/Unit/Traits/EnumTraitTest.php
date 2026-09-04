@@ -6,17 +6,15 @@ namespace Modules\Xot\Tests\Unit\Traits;
 
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Schema\Blueprint;
+use Mockery;
+use Mockery\MockInterface;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Tests\Fixtures\Enums\EmptyDefinitionsEnum;
 use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
-use Modules\Xot\Tests\XotBaseTestCase;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(XotBaseTestCase::class);
-
-beforeEach(function (): void {
-    $this->markTestSkipped('fragile offline mocks/fixtures');
-});
+uses(TestCase::class);
 
 it('gets label via translation', function (): void {
     $label = TestEnum::ALPHA->getLabel();
@@ -56,35 +54,42 @@ it('adds columns to blueprint in create context', function (): void {
 });
 
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
-    $migration = $this->createUnitMock(XotBaseMigration::class);
-    $migration->method('hasColumn')
-        ->willReturnMap([
-            ['alpha', true],
-            ['beta', false],
-        ]);
+    /** @var XotBaseMigration&MockInterface $migration */
+    $migration = Mockery::mock(XotBaseMigration::class);
+    $migration->shouldReceive('hasColumn')->with('alpha')->andReturn(true);
+    $migration->shouldReceive('hasColumn')->with('beta')->andReturn(false);
 
-    $columnBeta = $this->createUnitMock(Blueprint::class);
-    $columnBeta->method('nullable')->willReturnSelf();
+    /** @var Blueprint&MockInterface $columnBeta */
+    $columnBeta = Mockery::mock(Blueprint::class);
+    $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
 
-    $table = $this->createUnitMock(Blueprint::class);
-    $table->method('string')
-        ->willReturnCallback(static function (string $name) use ($columnBeta): Blueprint {
-            Assert::assertSame('beta', $name);
-
-            return $columnBeta;
-        });
+    /** @var Blueprint&MockInterface $table */
+    $table = Mockery::mock(Blueprint::class);
+    $table->shouldReceive('string')->with('beta')->andReturn($columnBeta);
 
     TestEnum::columns($table, $migration);
 });
 
-it('drops columns', function (): void {
-    $table = $this->createUnitMock(Blueprint::class);
-    $table->method('dropColumn')
-        ->willReturnCallback(static function (array $columns) use ($table): Blueprint {
-            Assert::assertSame(['alpha', 'beta'], $columns);
+it('updates columns calls columns', function (): void {
+    /** @var Blueprint&MockInterface $column */
+    $column = Mockery::mock(Blueprint::class);
+    $column->shouldReceive('nullable')->andReturn($column);
 
-            return $table;
-        });
+    /** @var Blueprint&MockInterface $table */
+    $table = Mockery::mock(Blueprint::class);
+    $table->shouldReceive('string')->andReturn($column);
+
+    /** @var XotBaseMigration&MockInterface $migration */
+    $migration = Mockery::mock(XotBaseMigration::class);
+    $migration->shouldReceive('hasColumn')->andReturn(false);
+
+    TestEnum::updateColumns($table, $migration);
+});
+
+it('drops columns', function (): void {
+    /** @var Blueprint&MockInterface $table */
+    $table = Mockery::mock(Blueprint::class);
+    $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
 
     TestEnum::dropColumns($table);
 });

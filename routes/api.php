@@ -14,6 +14,6 @@ declare(strict_types=1);
  */
 /*
  * Route::middleware('auth:api')->get('/xot', function (Request $request) {
- * return $request->user();
+ *     return $request->user();
  * });
  */

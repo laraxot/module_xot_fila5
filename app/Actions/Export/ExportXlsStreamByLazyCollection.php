@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
 use Illuminate\Support\Str;
@@ -23,7 +22,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Esporta una LazyCollection in un file CSV streamed.
      *
-     * @param  LazyCollection<int, Model>  $data  I dati da esportare
+     * @param  LazyCollection<int, mixed>  $data  I dati da esportare
      * @param  string  $filename  Nome del file CSV
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
@@ -61,7 +60,7 @@ class ExportXlsStreamByLazyCollection
                         continue;
                     }
                     // Convertiamo tutti i valori in stringhe o null
-                    $safeRowData = array_map(function (string|int|float|bool|null $item): string {
+                    $safeRowData = array_map(function (string|int|float|bool|null $item) {
                         if ($item === null) {
                             return '';
                         }
@@ -88,7 +87,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Ottiene le intestazioni per l'export.
      *
-     * @param  LazyCollection<int, Model>  $data  I dati da cui estrarre le intestazioni
+     * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @return array<string>
      */

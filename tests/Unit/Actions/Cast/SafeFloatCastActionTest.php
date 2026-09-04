@@ -6,96 +6,88 @@ use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 it('casts float values', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute(123.45);
+    $result = app(SafeFloatCastAction::class)->execute(123.45);
     Assert::assertSame(123.45, $result);
 });
 
 it('casts integer values', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute(123);
+    $result = app(SafeFloatCastAction::class)->execute(123);
     Assert::assertSame(123.0, $result);
 });
 
 it('casts null values', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute(null);
+    $result = app(SafeFloatCastAction::class)->execute(null);
     Assert::assertSame(0.0, $result);
 });
 
 it('casts null values with custom default', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute(null, 10.0);
+    $result = app(SafeFloatCastAction::class)->execute(null, 10.0);
     Assert::assertSame(10.0, $result);
 });
 
 it('casts numeric strings', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute('123.45');
+    $result = app(SafeFloatCastAction::class)->execute('123.45');
     Assert::assertSame(123.45, $result);
 });
 
 it('casts integer strings', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute('123');
+    $result = app(SafeFloatCastAction::class)->execute('123');
     Assert::assertSame(123.0, $result);
 });
 
 it('casts empty strings', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute('');
+    $result = app(SafeFloatCastAction::class)->execute('');
     Assert::assertSame(0.0, $result);
 });
 
 it('casts whitespace strings', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute('  123.45  ');
+    $result = app(SafeFloatCastAction::class)->execute('  123.45  ');
     Assert::assertSame(123.45, $result);
 });
 
 it('casts non-numeric strings', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute('abc');
+    $result = app(SafeFloatCastAction::class)->execute('abc');
     Assert::assertSame(0.0, $result);
 });
 
 it('casts non-numeric strings with default', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute('abc', 5.0);
+    $result = app(SafeFloatCastAction::class)->execute('abc', 5.0);
     Assert::assertSame(5.0, $result);
 });
 
 it('casts boolean values', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    Assert::assertSame(1.0, $action->execute(true));
-    Assert::assertSame(0.0, $action->execute(false));
+    $trueResult = app(SafeFloatCastAction::class)->execute(true);
+    $falseResult = app(SafeFloatCastAction::class)->execute(false);
+
+    Assert::assertSame(1.0, $trueResult);
+    Assert::assertSame(0.0, $falseResult);
 });
 
 it('casts arrays', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute([1, 2, 3]);
+    $result = app(SafeFloatCastAction::class)->execute([1, 2, 3]);
     Assert::assertSame(0.0, $result);
 });
 
 it('casts objects', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->execute(new stdClass());
+    $result = app(SafeFloatCastAction::class)->execute(new stdClass);
     Assert::assertSame(0.0, $result);
 });
 
 it('casts with range validation', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    Assert::assertSame(50.0, $action->executeWithRange(50.0, 0.0, 100.0));
-    Assert::assertSame(100.0, $action->executeWithRange(150.0, 0.0, 100.0));
-    Assert::assertSame(0.0, $action->executeWithRange(-10.0, 0.0, 100.0));
+    $normal = app(SafeFloatCastAction::class)->executeWithRange(50.0, 0.0, 100.0);
+    $aboveMax = app(SafeFloatCastAction::class)->executeWithRange(150.0, 0.0, 100.0);
+    $belowMin = app(SafeFloatCastAction::class)->executeWithRange(-10.0, 0.0, 100.0);
+
+    Assert::assertSame(50.0, $normal);
+    Assert::assertSame(100.0, $aboveMax);
+    Assert::assertSame(0.0, $belowMin);
 });
 
 it('casts with range and default', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    $result = $action->executeWithRange('invalid', 0.0, 100.0, 25.0);
+    $result = app(SafeFloatCastAction::class)->executeWithRange('invalid', 0.0, 100.0, 25.0);
     Assert::assertSame(25.0, $result);
 });
 
@@ -115,24 +107,30 @@ it('has static castWithRange method', function (): void {
 });
 
 it('handles infinite values', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    Assert::assertSame(0.0, $action->execute('INF'));
-    Assert::assertSame(0.0, $action->execute('NAN'));
+    $infResult = app(SafeFloatCastAction::class)->execute('INF');
+    $nanResult = app(SafeFloatCastAction::class)->execute('NAN');
+
+    Assert::assertSame(0.0, $infResult);
+    Assert::assertSame(0.0, $nanResult);
 });
 
 it('handles infinite values with default', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    Assert::assertSame(5.0, $action->execute('INF', 5.0));
-    Assert::assertSame(5.0, $action->execute('NAN', 5.0));
+    $infResult = app(SafeFloatCastAction::class)->execute('INF', 5.0);
+    $nanResult = app(SafeFloatCastAction::class)->execute('NAN', 5.0);
+
+    Assert::assertSame(5.0, $infResult);
+    Assert::assertSame(5.0, $nanResult);
 });
 
 it('casts scientific notation', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    Assert::assertSame(123.0, $action->execute('1.23e2'));
-    Assert::assertSame(0.0123, $action->execute('1.23E-2'));
+    $result1 = app(SafeFloatCastAction::class)->execute('1.23e2');
+    $result2 = app(SafeFloatCastAction::class)->execute('1.23E-2');
+
+    Assert::assertSame(123.0, $result1);
+    Assert::assertSame(0.0123, $result2);
 });
 
 it('handles decimal comma', function (): void {
-    $action = app(SafeFloatCastAction::class);
-    Assert::assertSame(123.45, $action->execute('123,45'));
+    $result = app(SafeFloatCastAction::class)->execute('123,45');
+    Assert::assertSame(123.45, $result);
 });

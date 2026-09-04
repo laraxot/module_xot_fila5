@@ -21,11 +21,6 @@
 // Controllata da config/debugbar.php
 // (nel progetto: DEBUGBAR_ENABLED ha precedenza su APP_DEBUG)
 $enabled = (bool) config('debugbar.enabled');
-
-// Solo in ambiente di sviluppo
-if (env('APP_DEBUG')) {
-    Debugbar::enable();
-}
 ```
 
 - **Features**:

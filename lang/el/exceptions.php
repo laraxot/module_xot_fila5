@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 return [
     /*
-     * |--------------------------------------------------------------------------
-     * | Exception Language Lines
-     * |--------------------------------------------------------------------------
-     * |
-     * | The following language lines are used in Exceptions thrown throughout the system.
-     * | Regardless where it is placed, a button can be listed here so it is easily
-     * | found in a intuitive way.
-     * |
-     */
+    |--------------------------------------------------------------------------
+    | Exception Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used in Exceptions thrown throughout the system.
+    | Regardless where it is placed, a button can be listed here so it is easily
+    | found in a intuitive way.
+    |
+    */
 
     'backend' => [
         'access' => [
@@ -54,12 +54,14 @@ return [
                 'created_confirm' => 'Your account was successfully created. We have sent you an e-mail to confirm your account.',
                 'mismatch' => 'Your confirmation code does not match.',
                 'not_found' => 'That confirmation code does not exist.',
-                'resend' => 'Your account is not confirmed. Please click the confirmation link in your e-mail, or click here</a> to resend the confirmation e-mail.',
+                'resend' => 'Your account is not confirmed. Please click the confirmation link in your e-mail, or <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">click here</a> to resend the confirmation e-mail.',
                 'success' => 'Your account has been successfully confirmed!',
                 'resent' => 'A new confirmation e-mail has been sent to the address on file.',
             ],
+
             'deactivated' => 'Ο λογαριασμός σας απενεργοποιήθηκε.',
             'email_taken' => 'Αυτό το e-mail χρησιμοποιείται ήδη.',
+
             'password' => [
                 'change_mismatch' => 'Αυτός δεν είναι ο παλιός σου κωδικός.',
             ],

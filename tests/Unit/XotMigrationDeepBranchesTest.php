@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Database\Connection;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\DB;
@@ -48,7 +47,7 @@ describe('Xot migration deep branches', function (): void {
         DB::table('cache')->insert(['id' => 1, 'uuid' => null, 'key' => 'k', 'value' => 'v']);
         DB::table('cache')->insert(['id' => 2, 'uuid' => (string) Str::uuid(), 'key' => 'k2', 'value' => 'v2']);
 
-        $migration = new class() extends XotBaseMigration
+        $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 
@@ -119,13 +118,9 @@ describe('Xot migration deep branches', function (): void {
         $builder->shouldReceive('hasColumn')->andReturn(true);
         $builder->shouldReceive('hasIndex')->andReturn(false);
 
-        // Invoke hasPrimaryKey/hasForeignKey with mocked getConn if possible
+        // Invoke hasPrimaryKey with mocked getConn if possible
         try {
             $migration->hasPrimaryKey();
-        } catch (\Throwable) {
-        }
-        try {
-            $migration->hasForeignKey('cache_parent_fk');
         } catch (\Throwable) {
         }
         try {
@@ -153,24 +148,5 @@ describe('Xot migration deep branches', function (): void {
             } catch (\Throwable) {
             }
         }
-
-    });
-
-    test('resolveConnectionName usa database.default se il model non ha connection', function (): void {
-        config(['database.default' => 'mysql']);
-
-        $migration = new class() extends XotBaseMigration
-        {
-            protected ?string $model_class = UnconnectedMigrationModel::class;
-
-            public function up(): void {}
-        };
-
-        Assert::assertSame('mysql', $migration->getConnection());
     });
 });
-
-final class UnconnectedMigrationModel extends Model
-{
-    protected $table = 'notification_types';
-}

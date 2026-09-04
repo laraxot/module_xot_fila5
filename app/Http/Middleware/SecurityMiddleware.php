@@ -74,7 +74,6 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -99,7 +98,6 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -124,7 +122,6 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
-        /** @var int $current */
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
 
         if ($current >= $limit) {
@@ -445,9 +442,7 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
-            /** @var string $tokenStr */
-            $tokenStr = SafeStringCastAction::cast($token);
-            if (! $token || ! hash_equals(session()->token(), $tokenStr)) {
+            if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

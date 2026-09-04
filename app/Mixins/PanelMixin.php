@@ -31,8 +31,9 @@ class PanelMixin
     {
         return function (): string {
             $id = $this->getId();
+            $name = Str::before($id, '::');
 
-            return Str::before($id, '::');
+            return $name;
         };
     }
 
@@ -43,8 +44,9 @@ class PanelMixin
     {
         return function (): NwidartModule {
             $name = $this->getName();
+            $module = Module::find($name);
 
-            return Module::find($name);
+            return $module;
         };
     }
 
@@ -55,8 +57,9 @@ class PanelMixin
     {
         return function (): array {
             $name = $this->getName();
+            $config = Config::array($name);
 
-            return Config::array($name);
+            return $config;
         };
     }
 

@@ -64,7 +64,7 @@ class UserResource extends XotBaseResource
             // Schema del form
         ];
     }
-    
+
     public static function getTableColumns(): array
     {
         return [
@@ -145,11 +145,11 @@ public static function getFormSchema(): array
         Forms\Components\TextInput::make('name')
             ->required()
             ->maxLength(255),
-            
+
         Forms\Components\EmailInput::make('email')
             ->required()
             ->unique(ignoreRecord: true),
-            
+
         Forms\Components\Select::make('role')
             ->options([
                 'admin' => 'Amministratore',
@@ -177,15 +177,6 @@ public static function getTableColumns(): array
             ->badge()
             ->color('primary'),
 
-
-            
-        Tables\Columns\TextColumn::make('email')
-            ->searchable()
-            ->sortable(),
-            
-        Tables\Columns\TextColumn::make('role')
-            ->badge()
-            ->color('primary'),
         Tables\Columns\TextColumn::make('created_at')
             ->dateTime()
             ->sortable(),
@@ -221,7 +212,7 @@ public static function getTableBulkActions(): array
 public function boot(): void
 {
     parent::boot();
-    
+
     // Registrazione risorse Filament
     Filament::registerResources([
         UserResource::class,
@@ -273,13 +264,9 @@ return [
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
-- [Best Practices Sistema](../../../docs/core/best-practices.md)
 - [Template Filament](../templates/filament.md)
 
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
-**Ultimo aggiornamento:** Gennaio 2025  
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
 **Versione:** 2.0 - Consolidata DRY + KISS

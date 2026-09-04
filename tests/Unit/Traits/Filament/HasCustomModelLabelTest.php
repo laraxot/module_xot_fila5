@@ -12,7 +12,7 @@ use Modules\Xot\Tests\Fixtures\Traits\PluralModelLabelFromSingularProbe;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 it('gets model label from property', function (): void {
     Assert::assertSame('Custom Label', ModelLabelFromPropertyProbe::getModelLabel());

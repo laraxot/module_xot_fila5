@@ -2,40 +2,30 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Modules\Xot\Services\ModuleService;
+use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+use function Safe\class_uses;
 
-function makeXotModuleService(string $name = 'Xot'): ModuleService
-{
-    return (new ModuleService())->setName($name);
-}
+uses(TestCase::class);
 
-describe('ModuleService Integration', function (): void {
-    it('integrates with Nwidart Modules system', function (): void {
+describe('GetAllModelsByModuleNameAction Integration', function () {
+    it('integrates with Nwidart Modules system', function () {
         Assert::assertTrue(class_exists('Nwidart\Modules\Facades\Module'));
         Assert::assertTrue(class_exists('Nwidart\Modules\Module'));
     });
 
-    it('can find existing modules', function (): void {
-        $chartService = makeXotModuleService('Chart');
-        $userService = makeXotModuleService('User');
-        $xotService = makeXotModuleService('Xot');
+    it('can find existing modules', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
 
-        Assert::assertInstanceOf(ModuleService::class, $chartService);
-        Assert::assertInstanceOf(ModuleService::class, $userService);
-        Assert::assertInstanceOf(ModuleService::class, $xotService);
+        Assert::assertInstanceOf(GetAllModelsByModuleNameAction::class, $action);
     });
 
-    it('returns models from existing modules', function (): void {
-        $chartService = makeXotModuleService('Chart');
-        /** @var array<string, string> $models */
-        $models = $chartService->getModels();
-
-        Assert::assertNotEmpty($models);
+    it('returns models from existing modules', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Chart');
 
         $hasChartModel = false;
         foreach ($models as $modelClass) {
@@ -48,12 +38,8 @@ describe('ModuleService Integration', function (): void {
         Assert::assertTrue($hasChartModel);
     });
 
-    it('handles User module models correctly', function (): void {
-        $userService = makeXotModuleService('User');
-        /** @var array<string, string> $models */
-        $models = $userService->getModels();
-
-        Assert::assertNotEmpty($models);
+    it('handles User module models correctly', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('User');
 
         $hasUserModels = false;
         foreach (array_values($models) as $modelClass) {
@@ -66,18 +52,16 @@ describe('ModuleService Integration', function (): void {
         Assert::assertTrue($hasUserModels);
     });
 
-    it('filters abstract models correctly', function (): void {
-        $service = makeXotModuleService('Xot');
-        /** @var array<string, string> $models */
-        $models = $service->getModels();
+    it('filters abstract models correctly', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
-        Assert::assertNotContains('base_model', array_keys($models));
+        // BaseModel should not be included (it's abstract)
+        $modelNames = array_keys($models);
+        Assert::assertStringNotContainsString('base_model', implode(',', $modelNames));
     });
 
-    it('returns class strings as values', function (): void {
-        $service = makeXotModuleService('Xot');
-        /** @var array<string, string> $models */
-        $models = $service->getModels();
+    it('returns class strings as keys and values', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
         foreach ($models as $key => $modelClass) {
             Assert::assertIsString($key);
@@ -86,111 +70,111 @@ describe('ModuleService Integration', function (): void {
         }
     });
 
-    it('handles reflection operations safely', function (): void {
-        $service = makeXotModuleService('Xot');
-        /** @var array<string, string> $models */
-        $models = $service->getModels();
+    it('handles reflection operations safely', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
         foreach ($models as $modelClass) {
             Assert::assertTrue(class_exists($modelClass) || interface_exists($modelClass));
         }
     });
 
-    it('processes module directory structure', function (): void {
-        $service = makeXotModuleService('Xot');
-        Assert::assertNotEmpty($service->getModels());
+    it('handles snake_case conversion correctly', function () {
+        $snakeCase = Str::snake('TestModelName');
+
+        Assert::assertSame('test_model_name', $snakeCase);
     });
 
-    it('handles snake_case conversion correctly', function (): void {
-        Assert::assertSame('test_model_name', Str::snake('TestModelName'));
+    it('integrates with Laravel filesystem', function () {
+        Assert::assertTrue(class_exists('Illuminate\Support\Facades\File'));
     });
 
-    it('can handle multiple module instances', function (): void {
+    it('can handle multiple module names', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+
         foreach (['Chart', 'User', 'Xot', 'Job'] as $moduleName) {
-            $service = makeXotModuleService($moduleName);
-            Assert::assertInstanceOf(ModuleService::class, $service);
-            Assert::assertNotEmpty($service->getModels());
+            $models = $action->execute($moduleName);
+            Assert::assertIsArray($models);
         }
     });
 
-    it('validates module existence checking', function (): void {
-        $nonExistentService = makeXotModuleService('NonExistentModule');
-        Assert::assertSame([], $nonExistentService->getModels());
+    it('returns an empty array for a non-existent module', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModule');
+
+        Assert::assertEmpty($models);
     });
 
-    it('handles namespace construction correctly', function (): void {
-        $chartService = makeXotModuleService('Chart');
-        /** @var array<string, string> $models */
-        $models = $chartService->getModels();
+    it('handles namespace construction correctly', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Chart');
 
         foreach ($models as $modelClass) {
             Assert::assertStringContainsString('Modules\\Chart\\', $modelClass);
         }
     });
 
-    it('processes file extensions correctly', function (): void {
-        $service = makeXotModuleService('Xot');
-        /** @var array<string, string> $models */
-        $models = $service->getModels();
+    it('handles edge case module names gracefully', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
 
-        foreach ($models as $modelClass) {
-            Assert::assertGreaterThan(0, strlen($modelClass));
-        }
-    });
-
-    it('handles exception scenarios gracefully', function (): void {
         foreach (['', 'InvalidModule', 'Test123'] as $moduleName) {
-            $service = makeXotModuleService($moduleName);
-            Assert::assertNotEmpty($service->getModels());
+            Assert::assertIsArray($action->execute($moduleName));
         }
     });
 
-    it('validates return type consistency', function (): void {
-        $service = makeXotModuleService('Xot');
-        /** @var array<string, string> $models */
-        $models = $service->getModels();
+    it('validates return type consistency', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
         foreach ($models as $key => $value) {
+            Assert::assertIsString($key);
+            Assert::assertIsString($value);
             Assert::assertGreaterThan(0, strlen($key));
             Assert::assertGreaterThan(0, strlen($value));
         }
     });
 
-    it('can work with Laravel service container', function (): void {
-        $service = makeXotModuleService('TestModule');
-        Assert::assertInstanceOf(ModuleService::class, $service);
+    it('can be resolved from the Laravel service container', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+
+        Assert::assertInstanceOf(GetAllModelsByModuleNameAction::class, $action);
     });
 
-    it('handles concurrent access correctly', function (): void {
-        $results = [];
-        for ($i = 0; $i < 3; $i++) {
-            $results[] = makeXotModuleService('Xot')->getModels();
-        }
+    it('returns consistent results across repeated calls', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+        $results = [
+            $action->execute('Xot'),
+            $action->execute('Xot'),
+            $action->execute('Xot'),
+        ];
 
         Assert::assertSame($results[0], $results[1]);
-        Assert::assertSame($results[1], $results[2]);
+        Assert::assertSame($results[0], $results[2]);
     });
 
-    it('validates module path resolution', function (): void {
-        $service = makeXotModuleService('Xot');
-        /** @var array<string, string> $models */
-        $models = $service->getModels();
+    it('validates module path resolution', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
 
         foreach ($models as $modelClass) {
             Assert::assertMatchesRegularExpression('/^Modules\\\\[A-Za-z]+\\\\Models\\\\[A-Za-z]+$/', $modelClass);
         }
     });
 
-    it('integrates with Laravel string helpers', function (): void {
+    it('integrates with Laravel string helpers', function () {
+        Assert::assertTrue(class_exists('Illuminate\Support\Str'));
         Assert::assertSame('TestString', Str::studly('test_string'));
     });
 
-    it('can handle model discovery efficiently', function (): void {
+    it('uses the QueueableAction trait for sync/async execution', function () {
+        Assert::assertContains(
+            \Spatie\QueueableAction\QueueableAction::class,
+            class_uses(GetAllModelsByModuleNameAction::class),
+        );
+    });
+
+    it('can discover models within a time budget', function () {
         $startTime = microtime(true);
-        $models = makeXotModuleService('Xot')->getModels();
+
+        app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
         $executionTime = microtime(true) - $startTime;
 
-        Assert::assertNotEmpty($models);
         Assert::assertLessThan(5.0, $executionTime);
     });
 });

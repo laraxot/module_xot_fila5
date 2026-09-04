@@ -31,10 +31,10 @@ class ViewLog extends XotBaseViewRecord
                     'channel' => TextEntry::make('channel'),
                     'datetime' => TextEntry::make('datetime')->dateTime(),
                     'context' => TextEntry::make('context')->formatStateUsing(
-                        static fn (mixed $state): string => json_encode($state, JSON_PRETTY_PRINT),
+                        fn (mixed $state) => json_encode($state, JSON_PRETTY_PRINT),
                     ),
                     'extra' => TextEntry::make('extra')->formatStateUsing(
-                        static fn (mixed $state): string => json_encode($state, JSON_PRETTY_PRINT),
+                        fn (mixed $state) => json_encode($state, JSON_PRETTY_PRINT),
                     ),
                 ]),
             ]),

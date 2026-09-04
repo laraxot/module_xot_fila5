@@ -95,12 +95,6 @@ class {Model} extends {Package}{Model}
 
 ### Related Documentation
 - **[Model Architecture](models/MODEL_ARCHITECTURE.md)** - Laraxot model patterns
-
-- **[User Module](../user/docs/third-party-model-patterns.md)** - Permission & Role integration
-- **[Activity Module](../activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
-
-### Related Documentation
-- **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
 - **[Migration Philosophy](migration-philosophy.md)** - Database migration patterns
 
 ## 🔍 Verification Commands

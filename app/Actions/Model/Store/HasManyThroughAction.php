@@ -15,6 +15,6 @@ class HasManyThroughAction
     public function execute(Model $_model, RelationDTO $_relationDTO): void
     {
         // Assert::isInstanceOf($rows = $relationDTO->rows, BelongsToMany::class);
-        throw new \RuntimeException('Removed debug dddx');
+        dddx('wip');
     }
 }

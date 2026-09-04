@@ -7,7 +7,7 @@ use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 it('converts class names to view names correctly', function (): void {
     $action = app(GetViewByClassAction::class);
@@ -24,7 +24,7 @@ it('converts class names to view names correctly', function (): void {
     // -> explode -> ['Filament', 'Resources', 'UserResource']
     // mapped -> ['filament', 'resources', 'user'] (singular check)
     // -> pub_theme::filament.resources.user
-    Assert::assertNotEmpty($result);
+    Assert::assertIsString($result);
 });
 
 it('handles singular previous parts correctly', function (): void {

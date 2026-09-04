@@ -19,6 +19,7 @@ class GetTransKeyAction
      */
     public function execute(string $class = ''): string
     {
+        $class0 = $class;
         // If no class is provided, try to get it from the backtrace
         if ($class === '') {
             /** @var list<array{function: string, line?: int, file?: string, class?: class-string, type?: '->'|'::', args?: list<mixed>, object?: object}> $backtrace PHPStan knows this is always array */

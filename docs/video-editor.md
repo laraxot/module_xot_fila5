@@ -1,13 +1,10 @@
 ---
-title: 'video_editor'
-module: Xot
+title: "Video editor"
 type: reference
-slug: video-editor
-description: '<!-- Contenuto migrato da _docs/video_editor.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: video_editor.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da video_editor.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # video_editor
@@ -18,6 +15,5 @@ https://github.com/kudlav/videoeditor
 https://github.com/kudlav/videoeditor-doc
 
 --------------------------------------------
-
 
 composer require pbmedia/laravel-ffmpeg

@@ -68,7 +68,6 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
                 $this->view = $view;
             }
         } catch (\Exception) {
-            // Keep the default view if the class-based view cannot be resolved.
         }
     }
 }

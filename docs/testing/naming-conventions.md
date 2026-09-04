@@ -4,7 +4,6 @@
 
 Per la documentazione completa delle convenzioni di naming dei test, consultare:
 - [../../../../../docs/testing/naming-conventions.md](../../../../../docs/testing/naming-conventions.md)
-- [../../../../docs/testing/naming-conventions.md](../../../../docs/testing/naming-conventions.md)
 
 ## Applicazione al Modulo Xot
 
@@ -77,8 +76,5 @@ find tests -type f -name "*.php" | grep -E "(test\.php|test\.pest\.php|pest\.php
 ### Collegamenti Correlati
 
 - [../../../../../docs/testing/naming-conventions.md](../../../../../docs/testing/naming-conventions.md) - Documentazione completa
-- [../phpstan_fixes_xot.md](../phpstan_fixes_xot.md) - Correzioni PHPStan modulo Xot
-- [./test-structure.md](./test-structure.md) - Struttura test module Xot
-- [../../../../docs/testing/naming-conventions.md](../../../../docs/testing/naming-conventions.md) - Documentazione completa
 - [../phpstan_fixes_xot.md](../phpstan_fixes_xot.md) - Correzioni PHPStan modulo Xot
 - [./test-structure.md](./test-structure.md) - Struttura test module Xot

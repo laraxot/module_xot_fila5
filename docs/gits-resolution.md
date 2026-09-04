@@ -193,9 +193,6 @@ php artisan lang:check
 - [Translation Standards](../../../docs/translation-standards.md)
 - [PHPStan Guidelines](../../../docs/phpstan_usage.md)
 - [Git Best Practices](../../../docs/git-best-practices.md)
-- [Translation Standards](../../docs/translation-standards.md)
-- [PHPStan Guidelines](../../docs/phpstan_usage.md)
-- [Git Best Practices](../../docs/git-best-practices.md)
 
 ---
 

@@ -168,9 +168,10 @@ class SafeEloquentCastAction
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
-     * @return string|int|float|bool|array<int|string, mixed> Il valore dell'attributo convertito nel tipo specificato
+     * @param  mixed  $default  Valore di default se l'attributo non esiste o è null
+     * @return mixed Il valore dell'attributo convertito nel tipo specificato
      */
-    public function getTypedAttribute(Model $model, string $attribute, string $type, mixed $default = null): string|int|float|bool|array
+    public function getTypedAttribute(Model $model, string $attribute, string $type, mixed $default = null): mixed
     {
         Assert::stringNotEmpty($attribute);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
@@ -194,6 +195,7 @@ class SafeEloquentCastAction
      *
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
+     * @param  mixed  $expectedValue  Il valore atteso
      * @return bool True se l'attributo esiste e ha il valore atteso
      */
     public function hasAttributeValue(Model $model, string $attribute, mixed $expectedValue): bool
@@ -212,6 +214,8 @@ class SafeEloquentCastAction
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string  $type  Il tipo di cast desiderato
      * @param  callable|null  $validator  Funzione di validazione opzionale
+     * @param  mixed  $default  Valore di default se la validazione fallisce
+     * @return mixed Il valore dell'attributo validato e convertito
      */
     public function getValidatedAttribute(
         Model $model,
@@ -260,7 +264,8 @@ class SafeEloquentCastAction
      * @param  string  $primaryAttribute  L'attributo primario
      * @param  string  $fallbackAttribute  L'attributo di fallback
      * @param  string  $type  Il tipo di cast desiderato
-     * @return string|int|float|bool|array<int|string, mixed> Il valore dell'attributo primario o di fallback
+     * @param  mixed  $default  Valore di default se entrambi gli attributi sono null
+     * @return mixed Il valore dell'attributo primario o di fallback
      */
     public function getAttributeWithFallback(
         Model $model,
@@ -268,7 +273,7 @@ class SafeEloquentCastAction
         string $fallbackAttribute,
         string $type,
         mixed $default = null,
-    ): string|int|float|bool|array {
+    ): mixed {
         Assert::stringNotEmpty($primaryAttribute);
         Assert::stringNotEmpty($fallbackAttribute);
         Assert::inArray($type, ['string', 'int', 'float', 'bool', 'array']);
@@ -288,9 +293,10 @@ class SafeEloquentCastAction
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
      * @param  string  $type  Il tipo di cast desiderato
-     * @return string|int|float|bool|array<int|string, mixed> Il valore dell'attributo convertito
+     * @param  mixed  $default  Valore di default
+     * @return mixed Il valore dell'attributo convertito
      */
-    public static function get(Model $model, string $attribute, string $type, mixed $default = null): string|int|float|bool|array
+    public static function get(Model $model, string $attribute, string $type, mixed $default = null): mixed
     {
         return app(self::class)->getTypedAttribute($model, $attribute, $type, $default);
     }

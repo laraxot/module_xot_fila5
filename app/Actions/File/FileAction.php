@@ -92,7 +92,6 @@ class FileAction
 
         $ns_after0 = Str::before($ns_after, '/');
         $ns_after1 = Str::after($ns_after, '/');
-        /** @var string $ns_after0 */
         $ns_after = str_replace('.', '/', (string) $ns_after0).'/'.$ns_after1;
 
         if (Str::startsWith($ns_after, '/')) {
@@ -170,12 +169,16 @@ class FileAction
         }
     }
 
-    public static function viewNamespaceToDir(string $view): string
+    /**
+     * @return string|array<string>
+     */
+    public static function viewNamespaceToDir(string $view): string|array
     {
         $ns = Str::before($view, '::');
+        // dddx(Str::after($view, '::'));
         $relative_path = str_replace('.', '/', Str::after($view, '::'));
         $pack_dir = self::getViewNameSpacePath($ns);
-        $view_dir = (is_string($pack_dir) ? $pack_dir : '').'/'.$relative_path;
+        $view_dir = $pack_dir.'/'.$relative_path;
 
         return str_replace('/', \DIRECTORY_SEPARATOR, $view_dir);
     }
@@ -190,8 +193,7 @@ class FileAction
         }
         Assert::isArray($viewHints);
         if (isset($viewHints[$ns])) {
-            // Hint paths are list<string>; take the first registered path.
-            Assert::string($res = Arr::get($viewHints, $ns.'.0'));
+            Assert::string($res = Arr::get($viewHints, $ns.'0'));
 
             return $res;
         }
@@ -209,7 +211,7 @@ class FileAction
     {
         /*
         $resolver=app(NamespacedItemResolver::class);
-        throw new \RuntimeException('Removed debug dddx');
+        dddx($resolver->parseKey($asset));
         da 'notify::css/ark.css'
         ret  0 => "notify"
         1 => "css/ark"
@@ -253,7 +255,7 @@ class FileAction
         /* 4 debug , dovrebbe uscire al return prima
         if($ns=='adm_theme'){
 
-            throw new \RuntimeException('Removed debug dddx');
+            dddx($msg);
         }
         //*/
         $url = Module::asset($ns.':'.$path1);
@@ -262,7 +264,7 @@ class FileAction
             try {
                 File::makeDirectory(\dirname($filename_pub), 0755, true, true);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
 
@@ -271,7 +273,7 @@ class FileAction
                 // echo '<hr>'.$filename.' >>>>  '.$filename_pub; //4 debug
                 File::copy($filename, $filename_pub);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         } else {
             $msg = [
@@ -280,7 +282,7 @@ class FileAction
                 'filename' => $filename,
                 'msg' => 'Filename not Exists',
             ];
-            throw new \RuntimeException('Removed debug dddx');
+            dddx($msg); // 4 debug
         }
 
         // $url=str_replace(url('/'),'',$url);
@@ -293,7 +295,7 @@ class FileAction
         $path = (string) self::getViewNameSpacePath($ns);
         /* 4 debug
         if(basename($path1)=='font-awesome.min.css'){
-            throw new \RuntimeException('Removed debug dddx');
+            dddx('-['.$path.']['.public_path('').']');
         }
         //*/
         if (Str::startsWith($path, public_path(''))) {
@@ -311,7 +313,7 @@ class FileAction
             try {
                 File::makeDirectory(\dirname($filename_pub), 0755, true, true);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
 
@@ -320,7 +322,7 @@ class FileAction
                 // echo '<hr>'.$filename.' >>>>  '.$filename_pub; //4 debug
                 File::copy($filename, $filename_pub);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         } else {
             $filename = str_replace('/', \DIRECTORY_SEPARATOR, $filename);
@@ -337,7 +339,7 @@ class FileAction
                 'filename' => $filename,
                 'msg' => 'Filename not Exists',
             ];
-            throw new \RuntimeException('Removed debug dddx');
+            dddx($msg);
             // dddx('non esiste '.); //4 debug
         }
 
@@ -362,7 +364,7 @@ class FileAction
             try {
                 File::makeDirectory(\dirname($filename_pub), 0755, true, true);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
 
@@ -371,7 +373,7 @@ class FileAction
                 // echo '<hr>'.$filename.' >>>>  '.$filename_pub; //4 debug
                 File::copy($filename, $filename_pub);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
 
@@ -409,7 +411,7 @@ class FileAction
             try {
                 File::makeDirectory($dir_to, 0755, true, true);
             } catch (Exception $e) {
-                throw new \RuntimeException('Removed debug dddx');
+                dddx(['Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']']);
             }
         }
 
@@ -423,7 +425,7 @@ class FileAction
             try {
                 File::copy($filename_from, $filename_to);
             } catch (Exception $e) {
-                throw new \RuntimeException('Removed debug dddx');
+                dddx(['Caught exception: '.$e->getMessage()]);
             }
         }
 
@@ -489,7 +491,7 @@ class FileAction
             try {
                 File::makeDirectory($dir_to, 0755, true, true);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
 
@@ -514,7 +516,13 @@ class FileAction
         try {
             File::copy($filename_from, $filename_to);
         } catch (Exception $exception) {
-            throw new \RuntimeException('Removed debug dddx');
+            dddx(
+                [
+                    'message' => $exception->getMessage(),
+                    'filename_from' => $filename_from,
+                    'filename_to' => $filename_to,
+                ]
+            );
         }
 
         // if (! File::exists($filename_from)) {
@@ -632,7 +640,7 @@ class FileAction
                         try {
                             File::makeDirectory(\dirname($new_path), 0755, true, true);
                         } catch (Exception $e) {
-                            throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                            dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
                         }
                     }
 
@@ -640,7 +648,7 @@ class FileAction
                         try {
                             File::copy($old_path, $new_path);
                         } catch (Exception $e) {
-                            throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                            dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
                         }
                     }
 
@@ -703,7 +711,7 @@ class FileAction
                 default:
                     echo '<h3>Unknown Extension</h3>';
                     echo '<h3>['.$path.']</h3>';
-                    throw new \RuntimeException('Removed debug dddx');
+                    dddx($info);
                     break;
             }
 
@@ -822,7 +830,7 @@ class FileAction
             try {
                 File::makeDirectory(\dirname($to), 0755, true, true);
             } catch (Exception $e) {
-                throw new \RuntimeException('Caught exception: '.$e->getMessage().' ['.__LINE__.']['.class_basename(static::class).']', 0, $e);
+                dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
         }
 
@@ -901,7 +909,14 @@ class FileAction
             $saveData[$dataKey] = $value;
         }
         /*
-        throw new \RuntimeException('Removed debug dddx');
+        dddx([
+            'from_value'=>$from_value,
+            'from_path'=>$from_path,
+            'to_value'=>$to_value,
+            'to_path'=>$to_path,
+            'value'=>$value,
+            'data' => $data,
+        ]);
         */
 
         app(SaveArrayAction::class)->execute(data: $saveData, filename: $to_path);
@@ -959,7 +974,7 @@ class FileAction
                     $tmp->comp_name = '';
                     $piece = collect(explode('\\', $relative_path))
                         ->map(
-                            static fn (string $item): string => Str::slug(Str::snake($item))
+                            static fn (string $item) => Str::slug(Str::snake($item))
                         )
                         ->implode('.');
                     $tmp->comp_name .= $piece;

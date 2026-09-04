@@ -71,8 +71,6 @@ Modules/<NomeModulo>/
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../Xot/docs/translations.md) - Regole base
-- [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
-- [Regole Generali](../../xot/docs/translations.md) - Regole base
 
 ## Struttura
 
@@ -386,24 +384,6 @@ Action::make('delete')
 * [translations.md](../../../Activity/docs/translations.md)
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
-
-* [translations.md](../../../chart/docs/translations.md)
-* [translations.md](../../../reporting/docs/translations.md)
-* [translations.md](../../../gdpr/docs/translations.md)
-* [translations.md](../../../notify/docs/translations.md)
-* [translations.md](../../../xot/docs/roadmap/lang/translations.md)
-* [translations.md](../../../xot/docs/translations.md)
-* [translations.md](../../../dental/docs/translations.md)
-* [translations.md](../../../user/docs/translations.md)
-* [translations.md](../../../ui/docs/translations.md)
-* [translations.md](../../../lang/docs/packages/translations.md)
-* [translations.md](../../../lang/docs/translations.md)
-* [translations.md](../../../job/docs/translations.md)
-* [translations.md](../../../media/docs/translations.md)
-* [translations.md](../../../tenant/docs/translations.md)
-* [translations.md](../../../activity/docs/translations.md)
-* [translations.md](../../../patient/docs/translations.md)
-* [translations.md](../../../cms/docs/translations.md)
 
 ### Versione Incoming
 

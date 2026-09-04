@@ -12,7 +12,6 @@ Il modulo Xot definisce vari contratti (interfacce) che standardizzano il compor
 Definisce l'interfaccia per tutti i modelli User nel sistema, includendo autenticazione, autorizzazione, ruoli, permessi e media.
 
 ### Problema Critico Identificato (2025-01-06)
-### Problema Critico Identificato ([DATE])
 
 **ERRORE PHPSTAN**: Il metodo `hasPermissionTo()` è utilizzato in tutte le policy ma non è definito nel contratto `UserContract`.
 
@@ -93,33 +92,3 @@ Contratto per modelli che hanno profili.
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
-
----
-
-## Appendice — contenuto migrato da `contracts.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
-
-# contracts
-
-<!-- Contenuto migrato da _docs/contracts.txt -->
-
-//--- Illuminate\Database\Eloquent\Relations\relation (abstract class Relation)
-->getRelated()
-
-//--- Illuminate\Database\Eloquent\Relations\Concerns\InteractsWithPivotTable (trait InteractsWithPivotTable) - BelongsToMany
-->detach()
-->attach()
-
-//---- Illuminate\Database\Eloquent\Concerns\QueriesRelationships (trait QueriesRelationships)
-public function whereHas($relation, Closure $callback = null, $operator = '>=', $count = 1)
-
-//---- Illuminate\Database\Eloquent\Builder  (class Builder)
- public function getModel()
-
-- [Policy PHPStan Errors](../user/project_docs/policy-phpstan-errors.md)
-- [Root PHPStan Errors](../../project_docs/troubleshooting/phpstan-errors.md)
-- [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
-
-*Ultimo aggiornamento: [DATE]*

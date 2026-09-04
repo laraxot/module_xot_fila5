@@ -15,11 +15,6 @@ Modules/<Modulo>/
       update-changelog.yml         # CHANGELOG su evento release
       contributor-analytics.yml    # git-fame: LOC per contributor × estensione (STORY-355)
       roadmap-check.yml            # Verifica docs/roadmap.md (opzionale)
-
-      semantic-versioning.yml   # Tag automatico su main/dev
-      tag-version.yml          # Semantic-release (main/master)
-      update-changelog.yml     # CHANGELOG su release
-      roadmap-check.yml       # Verifica docs/roadmap.md
 ```
 
 Per i temi: `Themes/<Tema>/.github/workflows/` con gli stessi file.
@@ -39,13 +34,6 @@ Vedi [semantic-release-template.md](./semantic-release-template.md). Scaffold: `
 - **Trigger**: push su `main`, `master`, `dev`; `workflow_dispatch`.
 - **Step**: checkout `fetch-depth: 0`, Node 20, install plugin SR, `npx semantic-release`.
 - **Config**: `.releaserc.json` nella root del repo owner (o sottocartella in monorepo reusable).
-
-## tag-version.yml
-
-- **Trigger**: push su `main` e `master`.
-- **Condizione**: escludere commit con messaggio `[release]`.
-- **Step**: checkout, setup Node 20, npm install semantic-release + plugin, npx semantic-release.
-- **Secrets**: `GH_TOKEN` (o `GITHUB_TOKEN`) per push tag.
 
 ## update-changelog.yml
 
@@ -81,9 +69,6 @@ Workflow pianificato a livello root: `contributor-lines-report.yml` + `bashscrip
 
 - [docs root – GitHub Actions moduli](../../../../../../docs/github-actions-modules.md)
 - [github-actions-semantic-release-monorepo](../../../../../../docs/wiki/concepts/github-actions-semantic-release-monorepo.md)
-## Collegamenti
-
-- [docs root – GitHub Actions moduli](../../../../../docs/github-actions-modules.md)
 - [Semantic versioning](../../../../../.cursor/skills/semantic-versioning/skill.md)
 - [PHPStan CI](phpstan.md)
 - [Links CI](links.md)

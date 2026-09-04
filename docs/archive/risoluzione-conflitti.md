@@ -6,7 +6,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
-- [Convenzioni Namespace](namespace-conventions.md)
+- [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 
@@ -22,8 +22,8 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
   - Documentazione delle decisioni prese
 
 ### 3. Autenticazione e UI
-- [Componenti Filament](../../themes/one/docs/filament_components.md)
-- [Registrazione Utenti](../../themes/one/docs/auth.md)
+- [Componenti Filament](../../Themes/One/docs/FILAMENT_COMPONENTS.md)
+- [Registrazione Utenti](../../Themes/One/docs/AUTH.md)
   - Implementazione completa sistema registrazione
   - Gestione tipi utente dinamica
   - UI moderna con Filament
@@ -103,6 +103,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
    - Miglioramento della gestione degli errori
    - Documentazione dei metodi aggiornata
 
+
 ## Collegamenti Esterni
 
 - [Documentazione generale sulla risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
@@ -139,6 +140,7 @@ aurmich/dev
 - È stato rimosso il codice commentato non necessario per `registerBladeComponents()`
 b6f667c (.)
 
+
 La soluzione adottata privilegia la chiarezza del codice e l'organizzazione logica dei metodi, eliminando commenti non necessari e duplicazioni.
 
 ## XotBaseRouteServiceProvider.php
@@ -166,6 +168,7 @@ Mantenere il codice più semplice è preferibile, soprattutto quando le funziona
 
 b6f667c (.)
 
+
 ## Conflitti risolti (14/06/2024)
 
 I seguenti conflitti sono stati risolti come parte dell'ultima manutenzione del modulo:
@@ -191,6 +194,7 @@ I seguenti conflitti sono stati risolti come parte dell'ultima manutenzione del 
    - Uniformità nella struttura delle migrazioni
    - Coerenza con le convenzioni del framework
 fc83074 (.)
+
 
 Le modifiche sono state applicate seguendo le best practice documentate in `CONFLITTI_MERGE_RISOLTI.md`, privilegiando la chiarezza del codice e la coerenza con gli standard di progetto.
 
@@ -223,13 +227,14 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 
 ## Collegamenti tra versioni di risoluzione_conflitti.md
 
-* [risoluzione_conflitti.md](../../../xot/docs/risoluzione_conflitti.md)
-* [risoluzione_conflitti.md](../../../tenant/docs/risoluzione_conflitti.md)
+* [risoluzione_conflitti.md](../../../Xot/docs/risoluzione_conflitti.md)
+* [risoluzione_conflitti.md](../../../Tenant/docs/risoluzione_conflitti.md)
 
 aurmich/dev
 5693302 (.)
 b6f667c (.)
-* [Risoluzione Conflitti Xot](../../../xot/docs/risoluzione_conflitti.md)
-* [Risoluzione Conflitti Tenant](../../../tenant/docs/risoluzione_conflitti.md)
+* [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
+* [Risoluzione Conflitti Tenant](../../../Tenant/docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../docs/conflict_resolution.md)
 fc83074 (.)
+

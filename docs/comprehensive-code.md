@@ -451,7 +451,6 @@ Analisi sistematica di tutti i moduli del progetto per identificare violazioni d
 #### Singleton Pattern Duplicato
 **File**: `Modules/healthcare_app/app/Services/LimeJsonService.php`, `Modules/healthcare_app/app/Services/healthcare_appService.php`
 **File**: `Modules/ModuloEsempio/app/Services/LimeJsonService.php`, `Modules/ModuloEsempio/app/Services/ModuloEsempioService.php`
-**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
 
 ```php
 // DUPLICATO in LimeJsonService.php
@@ -460,7 +459,6 @@ public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\healthcare_app\Services\LimeJsonService) {
     if (! self::$instance instanceof \Modules\ModuloEsempio\Services\LimeJsonService) {
-    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
         self::$instance = new self();
     }
     return self::$instance;
@@ -476,12 +474,6 @@ private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\ModuloEsempio\Services\ModuloEsempioService) {
-
-// DUPLICATO in QuaerisService.php
-private static ?self $instance = null;
-public static function getInstance(): self
-{
-    if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
         self::$instance = new self();
     }
     return self::$instance;
@@ -493,7 +485,6 @@ public static function getInstance(): self
 #### Connection Hardcoded Duplicata
 **Problema**: `protected $connection = 'healthcare_app';` ripetuto in tutti i modelli healthcare_app
 **Problema**: `protected $connection = 'modulo_esempio';` ripetuto in tutti i modelli ModuloEsempio
-**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
@@ -501,7 +492,6 @@ public static function getInstance(): self
 #### Single Responsibility Principle Violato
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
 **File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -551,7 +541,6 @@ abstract class BaseUser extends Authenticatable implements
 #### Customer Model - Lazy Loading
 **File**: `Modules/healthcare_app/app/Models/Customer.php`
 **File**: `Modules/ModuloEsempio/app/Models/Customer.php`
-**File**: `Modules/Quaeris/app/Models/Customer.php`
 
 ```php
 public function surveyPdfsActive()
@@ -566,7 +555,6 @@ public function surveyPdfsActive()
 #### AlertWidget - Query Complessa
 **File**: `Modules/healthcare_app/app/Filament/Widgets/AlertWidget.php`
 **File**: `Modules/ModuloEsempio/app/Filament/Widgets/AlertWidget.php`
-**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -591,7 +579,6 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 #### QuestionChart Model - Metodi Complessi
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
 
 ```php
 public function participants(): CustomRelation
@@ -620,7 +607,6 @@ public function participants(): CustomRelation
 #### SendInviteAction - Catch Vuoti
 **File**: `Modules/healthcare_app/app/Actions/SendInviteAction.php`
 **File**: `Modules/ModuloEsempio/app/Actions/SendInviteAction.php`
-**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
 
 ```php
 try {
@@ -642,7 +628,6 @@ try {
 #### Schema Duplicato
 **File**: `Modules/healthcare_app/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 **File**: `Modules/ModuloEsempio/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
-**File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
 
 ```php
 // ContactResource.php
@@ -697,9 +682,6 @@ class healthcare_appServiceProvider extends XotBaseServiceProvider
 class ModuloEsempioServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'ModuloEsempio';
-class QuaerisServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'Quaeris';
 
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -801,7 +783,6 @@ trait SingletonTrait
 #### B. Separare BaseModel Responsibilities
 **File**: `Modules/healthcare_app/app/Models/BaseModel.php`
 **File**: `Modules/ModuloEsempio/app/Models/BaseModel.php`
-**File**: `Modules/Quaeris/app/Models/BaseModel.php`
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -816,7 +797,6 @@ abstract class BaseModel extends Model implements ModelContract
 #### C. Implementare Repository Pattern
 **File**: `Modules/healthcare_app/app/Repositories/SurveyFlipResponseRepository.php`
 **File**: `Modules/ModuloEsempio/app/Repositories/SurveyFlipResponseRepository.php`
-**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
 ```php
 class SurveyFlipResponseRepository
 {
@@ -881,11 +861,6 @@ try {
 return [
     'database' => [
         'connection' => env('healthcare_app_DB_CONNECTION', 'healthcare_app'),
-
-// config/quaeris.php
-return [
-    'database' => [
-        'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
     ],
     'limesurvey' => [
         'api' => [

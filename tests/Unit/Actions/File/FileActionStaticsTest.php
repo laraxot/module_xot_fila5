@@ -11,8 +11,40 @@ use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
 use function Safe\mkdir;
+use function Safe\rmdir;
+use function Safe\scandir;
+use function Safe\unlink;
 
 uses(TestCase::class);
+
+// $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
+// Modules\Xot\Tests\TestCase: il custom rrmdir() non e' risolvibile via $this,
+// quindi si usa una closure locale auto-referenziale.
+$rrmdir = function (string $dir) use (&$rrmdir): void {
+    if (! is_dir($dir)) {
+        return;
+    }
+
+    /** @var array<int, string> $files */
+    $files = scandir($dir);
+
+    foreach ($files as $file) {
+        if ($file === '.' || $file === '..') {
+            continue;
+        }
+
+        $path = $dir.'/'.$file;
+        if (is_dir($path) && ! is_link($path)) {
+            $rrmdir($path);
+
+            continue;
+        }
+
+        unlink($path);
+    }
+
+    rmdir($dir);
+};
 
 test('fixPath normalizza entrambi i separatori sul separatore di sistema', function (): void {
     $expected = implode(DIRECTORY_SEPARATOR, ['a', 'b', 'c', 'd']);
@@ -127,12 +159,15 @@ test('viewNamespaceToUrl risolve il namespace del tema pubblico', function (): v
 });
 
 test('viewNamespaceToUrl richiede una cartella nel percorso del tema', function (): void {
-    $this->expectThrowableMessage('not found / on filename');
-
-    FileAction::viewNamespaceToUrl(['pub_theme::style.css']);
+    try {
+        FileAction::viewNamespaceToUrl(['pub_theme::style.css']);
+        Assert::fail('Expected exception was not thrown.');
+    } catch (Throwable $e) {
+        Assert::assertStringContainsString('not found / on filename', $e->getMessage());
+    }
 });
 
-test('createDirectoryForFilename crea la cartella mancante del file', function (): void {
+test('createDirectoryForFilename crea la cartella mancante del file', function () use (&$rrmdir): void {
     $dir = sys_get_temp_dir().'/xot-fileaction-'.uniqid('', true);
     $filename = $dir.'/nested/deep/file.txt';
 
@@ -143,10 +178,10 @@ test('createDirectoryForFilename crea la cartella mancante del file', function (
     FileAction::createDirectoryForFilename($filename);
     Assert::assertDirectoryExists($dir.'/nested/deep');
 
-    $this->rrmdir($dir);
+    $rrmdir($dir);
 });
 
-test('allDirectories elenca ricorsivamente saltando le cartelle escluse', function (): void {
+test('allDirectories elenca ricorsivamente saltando le cartelle escluse', function () use (&$rrmdir): void {
     $dir = sys_get_temp_dir().'/xot-fileaction-'.uniqid('', true);
     mkdir($dir.'/alpha/inner', 0755, true);
     mkdir($dir.'/beta', 0755, true);
@@ -168,10 +203,10 @@ test('allDirectories elenca ricorsivamente saltando le cartelle escluse', functi
 
     Assert::assertSame(['alpha', 'alpha'.DIRECTORY_SEPARATOR.'inner', 'beta'], $filtered);
 
-    $this->rrmdir($dir);
+    $rrmdir($dir);
 });
 
-test('getComponents indicizza i componenti e ne memorizza la cache su json', function (): void {
+test('getComponents indicizza i componenti e ne memorizza la cache su json', function () use (&$rrmdir): void {
     $dir = sys_get_temp_dir().'/xot-fileaction-'.uniqid('', true);
     mkdir($dir.'/Sub', 0755, true);
     file_put_contents($dir.'/Foo.php', '<?php');
@@ -215,10 +250,10 @@ test('getComponents indicizza i componenti e ne memorizza la cache su json', fun
     Assert::assertNotEmpty($decoded);
     Assert::assertCount(2, $decoded);
 
-    $this->rrmdir($dir);
+    $rrmdir($dir);
 });
 
-test('copy prepara la cartella di destinazione e non sovrascrive in console', function (): void {
+test('copy prepara la cartella di destinazione e non sovrascrive in console', function () use (&$rrmdir): void {
     $dir = sys_get_temp_dir().'/xot-fileaction-'.uniqid('', true);
     mkdir($dir, 0755, true);
     $from = $dir.'/from.txt';
@@ -231,10 +266,10 @@ test('copy prepara la cartella di destinazione e non sovrascrive in console', fu
     // In console la copia effettiva viene saltata: il file non viene creato.
     Assert::assertFileDoesNotExist($to);
 
-    $this->rrmdir($dir);
+    $rrmdir($dir);
 });
 
-test('copy esce subito quando la destinazione esiste gia', function (): void {
+test('copy esce subito quando la destinazione esiste gia', function () use (&$rrmdir): void {
     $dir = sys_get_temp_dir().'/xot-fileaction-'.uniqid('', true);
     mkdir($dir, 0755, true);
     $from = $dir.'/from.txt';
@@ -246,7 +281,7 @@ test('copy esce subito quando la destinazione esiste gia', function (): void {
 
     Assert::assertSame('vecchio', file_get_contents($to));
 
-    $this->rrmdir($dir);
+    $rrmdir($dir);
 });
 
 test('execute non ha effetti collaterali', function (): void {

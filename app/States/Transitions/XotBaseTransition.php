@@ -10,17 +10,17 @@ use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Notify\Notifications\RecordNotification;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
-use Spatie\ModelStates\Transition;
-use TypeError;
 use Webmozart\Assert\InvalidArgumentException;
 
-abstract class XotBaseTransition extends Transition
+abstract class XotBaseTransition
 {
     public function __construct(
         public Model $record,
         public ?string $message = '',
-    ) {}
+    ) {
+    }
 
     public function handle(): Model
     {
@@ -31,8 +31,7 @@ abstract class XotBaseTransition extends Transition
         $stateClassName = Str::of($class)->afterLast('To')->toString();
         $newStateClass = $stateNamespace.'\\'.$stateClassName;
 
-        /* @phpstan-ignore-next-line */
-        $this->record->state = new $newStateClass($this->record);
+        $this->record->setAttribute('state', new $newStateClass($this->record));
         $this->record->save();
 
         return $this->record;
@@ -63,6 +62,8 @@ abstract class XotBaseTransition extends Transition
     }
 
     /**
+     * Get notification attachments.
+     *
      * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
      */
     public function getNotificationAttachments(): array
@@ -72,7 +73,9 @@ abstract class XotBaseTransition extends Transition
 
     public function getNotificationSlug(UserContract $recipient): string
     {
-        $type = $recipient->type ?? 'unknown';
+        $typeEnum = $recipient->type;
+        $type = $typeEnum instanceof \BackedEnum ? SafeStringCastAction::cast($typeEnum->value) : 'unknown';
+
         $slug =
             class_basename($this->record).
             '-'.
@@ -85,21 +88,30 @@ abstract class XotBaseTransition extends Transition
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {
         $slug = $this->getNotificationSlug($recipient->record);
 
-        $notify = new RecordNotification($this->record, $slug);
+        if (! class_exists(RecordNotification::class)) {
+            return;
+        }
 
-        // $data = $this->getNotificationData();
-        $notify = $notify->mergeData($data);
-        $notify = $notify->addAttachments($this->getNotificationAttachments());
+        // RecordNotification resolves MailTemplate internally from slug (lazy resolution)
+        // No need to pre-load MailTemplate - pass slug directly
+        $notify = new RecordNotification($this->record, $slug);
+        $mergeData = $data;
+
+        $notify->mergeData($mergeData);
+
+        $attachments = $this->getNotificationAttachments();
+
+        $notify->addAttachments($attachments);
 
         try {
             Notification::route($recipient->getChannel(), $recipient->getRoute())->notify($notify);
-        } catch (TypeError|InvalidArgumentException $e) {
+        } catch (\TypeError|InvalidArgumentException $e) {
             $message = 'channel :['.$recipient->getChannel().'] error: ['.$e->getMessage().']';
             FilamentNotification::make()
                 ->title('Error')

@@ -7,11 +7,6 @@
 ### Collegamenti
 - [Azioni Organizzativa (Performance)](../../Performance/docs/azioni_organizzativa.md)
 
-- Esempio pratico: vedi la correzione e il ragionamento in [Azioni Organizzativa (Performance)](../../performance/docs/azioni_organizzativa.md).
-
-### Collegamenti
-- [Azioni Organizzativa (Performance)](../../performance/docs/azioni_organizzativa.md)
-
 ## Regole sui Model
 - Nei moduli, i model devono **sempre** estendere `BaseModel` e **mai** direttamente `Model`.
 - Il codice deve essere scritto già conforme agli standard richiesti da phpstan livello 10.
@@ -48,12 +43,6 @@
 
 ### Collegamenti
 - [Performance: pattern e anti-pattern Action Filament](../../Performance/docs/organizzativa-migration-errors.md)
-
-- Vedi [Performance/docs/organizzativa-migration-errors.md](../../performance/docs/organizzativa-migration-errors.md) per esempio pratico, motivazione e memoria storica.
-- Queste regole sono obbligatorie per tutti i moduli che implementano action custom Filament.
-
-### Collegamenti
-- [Performance: pattern e anti-pattern Action Filament](../../performance/docs/organizzativa-migration-errors.md)
 - [Indice e collegamenti root](../../../docs/links.md)
 
 ## Regole sulle colonne delle tabelle Filament
@@ -63,6 +52,3 @@
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../Performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../Performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
 - Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../Performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
-- Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
-- Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.
-- Vedi [Performance/docs/organizzativa_cat_coeffs.md](../../performance/docs/organizzativa_cat_coeffs.md) per esempio pratico, motivazione, correzione e checklist.

@@ -6,23 +6,10 @@ XotBaseResource è la classe base astratta per tutte le risorse Filament nel sis
 
 ## Caratteristiche Principali
 
-### Contratto reale (non questo snippet)
-
-SSoT verificata sul PHP: [filament/xotbaseresource.md](./filament/xotbaseresource.md).
-
-- `form()` è `final` e carica `{Resource}\Schemas\{Model}Form` (non `getFormSchema()` inline).
-- `getFormSchema()` **non** è abstract né final: delega a `getFormSchemaOld()` (default `[]`).
-- Se manca `{Model}Form` → `LogicException`. Nessun fallback Action cablato.
 ### Metodi Final
-### Contratto reale (non questo snippet)
 
-SSoT verificata sul PHP: [filament/xotbaseresource.md](./filament/xotbaseresource.md).
+Alcuni metodi sono marcati come `final` e non possono essere sovrascritti nelle classi figlie:
 
-
-SSoT verificata sul PHP: [filament/xotbaseresource.md](./filament/xotbaseresource.md).
-
-
-SSoT verificata sul PHP: [filament/xotbaseresource.md](./filament/xotbaseresource.md).
 ```php
 final public static function form(Form $form): Form
 {
@@ -43,18 +30,10 @@ abstract public static function getFormSchema(): array;
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
 
-=======
-- `form()` è `final` e carica `{Resource}\Schemas\{Model}Form` (non `getFormSchema()` inline).
-- `getFormSchema()` **non** è abstract né final: delega a `getFormSchemaOld()` (default `[]`).
-- Se manca `{Model}Form` → `LogicException`. Nessun fallback Action cablato.
-
 ## Best Practices
 
 1. **Non Sovrascrivere Metodi Final**
    - Non tentare di sovrascrivere `form()`
-   - Schema in `{Model}Form` (ponte: `getFormSchemaOld()`). Widget: `getFormSchema()`
-=======
-   - Schema in `{Model}Form` (ponte: `getFormSchemaOld()`). Widget: `getFormSchema()`
    - Implementare invece `getFormSchema()`
    - Rispettare la struttura definita nella classe base
 
@@ -80,11 +59,6 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
-    // Preferire Schemas\{Model}Form; getFormSchema() qui è solo ponte verso Old
-    public static function getFormSchemaOld(): array
-=======
-    // Preferire Schemas\{Model}Form; getFormSchema() qui è solo ponte verso Old
-    public static function getFormSchemaOld(): array
     public static function getFormSchema(): array
     {
         return [
@@ -109,8 +83,6 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
-- [Notify Resource](../../notify/docs/filament-resources.md)
-- [User Resource](../../user/docs/filament-resources.md)
 
 ## Note Importanti
 
@@ -119,12 +91,3 @@ class NotificationResource extends XotBaseResource
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
 5. Seguire le convenzioni di Filament
-
-
-## Form/Table class e fallback sul model
-
-`form()` è `final`; `table()` nel codice **non** lo è. Lo schema vive in `{Resource}\Schemas\{Model}Form` e `{Resource}\Tables\{Plural}Table`.
-
-`getFormClass()` / `getTableClass()` / `getInfolistClass()` cercano le classi nested su `static::class`. Se mancano, `GetResourceClassNameByModelClassAction` risolve la Resource del model nel pannello (Performance/IR su model Ptv). `LogicException` solo se manca anche quella. Dettaglio e lezione: [get-resource-class-name-by-model-class-action.md](./get-resource-class-name-by-model-class-action.md).
-
-`getFormSchemaOld()` resta solo come ponte di migrazione sulle Resource, **non** sui Widget (`XotBaseWidget::getFormSchema()`).

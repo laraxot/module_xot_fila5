@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\Array\SaveJsonArrayAction;
-use Modules\Xot\Actions\Array\SavePhpArrayAction;
+use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
+use Modules\Xot\Actions\Arr\SavePhpArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

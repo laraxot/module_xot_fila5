@@ -1,12 +1,3 @@
----
-title: "Xot must not contain domain-specific logic"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Xot must not contain domain-specific logic
 
 **Date**: 2026-07-24

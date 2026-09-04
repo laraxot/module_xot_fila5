@@ -29,15 +29,11 @@ if (isset($model->field_name)) {
 }
 
 // ✅ CORRETTO - Verificare se un attributo esiste nel modello
-#### 1. Verificare Attributi del Modello
-```php
-// ✅ Verificare se un attributo esiste nel modello
 if ($model->hasAttribute('field_name')) {
     // logica corretta
 }
 
 // ✅ CORRETTO - Verificare se un campo è fillable
-// ✅ Verificare se un campo è fillable
 if ($model->isFillable('field_name')) {
     // logica corretta per campi modificabili
 }
@@ -51,15 +47,6 @@ if (!is_null($model->field_name)) {
 $value = $model->getAttribute('field_name');
 if ($value !== null) {
     // Usa $value
-
-// ✅ Verificare se un attributo è stato impostato
-if (isset($model->field_name)) {
-    // verifica se l'attributo ha un valore
-}
-
-// ✅ Verificare se un attributo non è null
-if (!is_null($model->field_name)) {
-    // verifica valore non null
 }
 ```
 

@@ -1167,8 +1167,6 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 
 ### Verifica PHPStan
 
-```
-
 ```bash
 # Verifica singolo file
 ./vendor/bin/phpstan analyse --level=10 path/to/file.php
@@ -1227,8 +1225,6 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 
 ### Verifica PHPStan
 
-```
-
 ```bash
 # Verifica singolo file
 ./vendor/bin/phpstan analyse --level=10 path/to/file.php
@@ -1284,5 +1280,3 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 ### ❌ Automazione Cieca
 ```bash
 # Verifica conflitti rimanenti
-
-```

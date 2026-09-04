@@ -69,22 +69,13 @@
         "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.9.5",
+        "nunomaduro/collision": "^8.6",
+        "nunomaduro/phpinsights": "*",
         "orchestra/testbench": "*",
-        "pestphp/pest": "^5.1",
-        "pestphp/pest-plugin-faker": "^5.0",
-        "pestphp/pest-plugin-laravel": "^5.0",
-        "pestphp/pest-plugin-livewire": "^5.0",
-        "pestphp/pest-plugin-phpstan": "^5.0",
-        "pestphp/pest-plugin-profanity": "^5.0",
-        "pestphp/pest-plugin-rector": "^5.0",
-        "pestphp/pest-plugin-type-coverage": "^5.0",
-        "phpstan/extension-installer": "^1.4",
-        "rector/rector": "^2.6",
-        "thecodingmachine/phpstan-safe-rule": "*"
-    },
-    "require-dev_comment": {
-        "spatie/laravel-error-solutions": "*"
+        "pestphp/pest": "*",
+        "pestphp/pest-plugin-type-coverage": "*",
+        "thecodingmachine/phpstan-safe-rule": "*",
+        "pestphp/pest-plugin-laravel": "*"
     },
     "repositories_comment": "Local path packages (coolsam/panel-modules) moved to root composer.json for proper priority. DO NOT add Packagist here - it must remain non-canonical in root.",
     "repositories": [
@@ -110,17 +101,14 @@
             "Modules\\Xot\\Tests\\": "tests/",
             "Coolsam\\FilamentModules\\": "packages/coolsam/panel-modules/src/"
         },
-        "psr-4_comment": {
-            "Modules\\Xot\\Database\\Migrations\\": "database/migrations/"
-        },
         "files": [
             "helpers/Helper.php"
         ]
     },
     "autoload-dev": {
-        "psr-4": {
-            "Modules\\Xot\\Tests\\": "tests/"
-        }
+        "files": [
+            "tests/Support/helpers.php"
+        ]
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
@@ -147,5 +135,8 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev_comment": {
+        "spatie/laravel-error-solutions": "*"
+    }
 }

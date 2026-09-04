@@ -18,7 +18,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\Xot\Actions\Panel\ApplyMetatagToPanelAction;
-use Modules\Xot\Datas\MetatagData;
+// Remove if not used elsewhere implicitly
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -32,28 +32,45 @@ abstract class XotBasePanelProvider extends PanelProvider
 
     protected bool $navigation = true;
 
+    /**
+     * Id/path del panel. Di default derivano dal modulo ({modulo}::admin,
+     * {modulo}/admin); i panel trasversali (operator, customer, supplier)
+     * li sovrascrivono perché Filament vieta di ri-assegnare l'id dopo
+     * la prima chiamata a ->id().
+     */
+    protected ?string $panelId = null;
+
+    protected ?string $panelPath = null;
+
+    /**
+     * Scoperta automatica di resource, pagine, widget e cluster del modulo.
+     *
+     * I panel per utenti esterni (customer, supplier) la spengono: montano a mano
+     * la manciata di schermate che quell'utente deve vedere, e non devono
+     * ritrovarsi dentro le resource amministrative del modulo che li ospita solo
+     * perche' stanno nella stessa cartella.
+     */
+    protected bool $discoverModuleComponents = true;
+
     public function panel(Panel $panel): Panel
     {
         $moduleNamespace = $this->getModuleNamespace();
         $moduleLow = Str::lower($this->module);
-        $metatag = MetatagData::make();
-
-        $main_module = Str::lower(XotData::make()->main_module);
-        $default = $main_module === $moduleLow;
+        $mainModuleLow = Str::lower(XotData::make()->main_module); // Renamed to camelCase
+        $default = $mainModuleLow === $moduleLow;
 
         $panel = $panel
             ->default($default)
-            // ->login()
+            ->login() // UNCOMMENTED
             // ->registration()
             ->passwordReset()
             // ->emailVerification()
             // ->profile()
             ->sidebarFullyCollapsibleOnDesktop();
 
-        app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
+        $panel = app(ApplyMetatagToPanelAction::class)->execute(panel: $panel);
         // ---------------------
-        $panel
-            ->maxContentWidth('full')
+        $panel->maxContentWidth('full')
             ->topNavigation($this->topNavigation)
             ->globalSearch($this->globalSearch)
             ->readOnlyRelationManagersOnResourceViewPagesByDefault(false)
@@ -61,25 +78,8 @@ abstract class XotBasePanelProvider extends PanelProvider
             // ->tenant($teamClass)
             // ->tenant($teamClass,ownershipRelationship:'users')
             // ->tenant($teamClass)
-            ->id($moduleLow.'::admin')
-            ->path($moduleLow.'/admin')
-            // Configure Filament discovery for module components (unconditional; dirs are expected to exist)
-            ->discoverResources(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Resources'),
-                for: sprintf('%s\\Filament\\Resources', $moduleNamespace),
-            )
-            ->discoverPages(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Pages'),
-                for: sprintf('%s\\Filament\\Pages', $moduleNamespace),
-            )
-            ->discoverWidgets(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
-                for: sprintf('%s\\Filament\\Widgets', $moduleNamespace),
-            )
-            ->discoverClusters(
-                in: base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
-                for: sprintf('%s\\Filament\\Clusters', $moduleNamespace),
-            )
+            ->id($this->panelId ?? $moduleLow.'::admin')
+            ->path($this->panelPath ?? $moduleLow.'/admin')
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
@@ -94,6 +94,26 @@ abstract class XotBasePanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+
+        if ($this->discoverModuleComponents) {
+            $panel
+                ->discoverResources(
+                    base_path('Modules/'.$this->module.'/app/Filament/Resources'),
+                    sprintf('%s\\Filament\\Resources', $moduleNamespace),
+                )
+                ->discoverPages(
+                    base_path('Modules/'.$this->module.'/app/Filament/Pages'),
+                    sprintf('%s\\Filament\\Pages', $moduleNamespace),
+                )
+                ->discoverWidgets(
+                    base_path('Modules/'.$this->module.'/app/Filament/Widgets'),
+                    sprintf('%s\\Filament\\Widgets', $moduleNamespace),
+                )
+                ->discoverClusters(
+                    base_path('Modules/'.$this->module.'/app/Filament/Clusters'),
+                    sprintf('%s\\Filament\\Clusters', $moduleNamespace),
+                );
+        }
 
         return $panel;
     }

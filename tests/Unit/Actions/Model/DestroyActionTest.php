@@ -10,10 +10,10 @@ use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 it('deletes model and returns it', function (): void {
-    $mockModel = new class() extends BaseModel
+    $mockModel = new class extends BaseModel
     {
         public bool $deleted = false;
 
@@ -32,7 +32,7 @@ it('deletes model and returns it', function (): void {
 });
 
 it('flashes status message on successful delete', function (): void {
-    $mockModel = new class() extends BaseModel
+    $mockModel = new class extends BaseModel
     {
         public function delete(): bool
         {
@@ -46,7 +46,7 @@ it('flashes status message on successful delete', function (): void {
 });
 
 it('flashes failure message when delete returns false', function (): void {
-    $mockModel = new class() extends BaseModel
+    $mockModel = new class extends BaseModel
     {
         public function delete(): bool
         {

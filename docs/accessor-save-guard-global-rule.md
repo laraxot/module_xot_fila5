@@ -297,14 +297,6 @@ test('accessor salva se model ha PK', function () {
 - [Accessor Pattern](../../Sigma/docs/scheda-trait-accessor-pattern.md)
 - [Refactoring Philosophy](../../Sigma/docs/accessor-refactoring-philosophy.md)
 
-- [Sigma - SchedaTrait Fix](../../sigma/docs/fix-duplicate-entry-error-summary.md)
-- [Performance - MutatorTrait](../../performance/docs/mutator-guard-fix.md) (da creare)
-- [IndennitaCondizioniLavoro - MutatorTrait](../../indennitacondizionilavoro/docs/accessor-guard.md) (da creare)
-
-### Documentazione Pattern
-- [Accessor Pattern](../../sigma/docs/scheda-trait-accessor-pattern.md)
-- [Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
-
 ### Regole Globali
 - [.cursor/rules/accessor-save-guard.mdc](../../../.cursor/rules/accessor-save-guard.mdc) (da creare)
 - [.windsurf/rules/accessor-save-guard.mdc](../../../.windsurf/rules/accessor-save-guard.mdc) (da creare)
@@ -312,7 +304,6 @@ test('accessor salva se model ha PK', function () {
 ---
 
 **Creato**: 2025-01-29
-**Creato**: [DATE]
 **Tipo**: Regola Architettutale Globale
 **Applicazione**: Tutti i moduli
 **Severità**: 🔴 CRITICA

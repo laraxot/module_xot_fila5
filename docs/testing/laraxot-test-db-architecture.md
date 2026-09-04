@@ -237,11 +237,8 @@ abstract class TestCase extends BaseTestCase
 **Soluzione**: Eseguire le migrazioni appropriate per la connessione specifica.
 
 ### Problema: "Unknown database '<nome progetto>_X_test'"
-### Problema: "Unknown database 'laravelpizza_X_test'"
 **Soluzione**: Verificare che tutte le connessioni usino SQLite in memoria durante i test.
 
 ## Conclusione
 
-L'approccio senza `RefreshDatabase` richiede una gestione più esplicita delle connessioni e delle migrazioni, ma offre maggiore controllo e compatibilità con l'architettura modulare di Laraxot.
-=======
 L'approccio senza `RefreshDatabase` richiede una gestione più esplicita delle connessioni e delle migrazioni, ma offre maggiore controllo e compatibilità con l'architettura modulare di Laraxot.

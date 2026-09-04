@@ -1,12 +1,3 @@
----
-title: "Product Strategy: Xot Core"
-module: xot
-type: product
-tags: [product, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Product Strategy: Xot Core
 
 ## 🌍 Market Context

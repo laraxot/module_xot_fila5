@@ -43,8 +43,6 @@ class MyWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Livewire](https://livewire.laravel.com/project_docs/security)
 - [Documentazione Laravel CSRF](https://laravel.com/project_docs/csrf)
-- [Documentazione Livewire](https://livewire.laravel.com/docs/security)
-- [Documentazione Laravel CSRF](https://laravel.com/docs/csrf)
 - [XotBaseWidget Implementation](../xot_base_classes.md)
 
 ## Esempio di Correzione

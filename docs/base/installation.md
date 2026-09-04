@@ -9,7 +9,7 @@ section: content
 
 ### virtual host & Laragon
 
-Il progetto può utilizzare varie configurazioni, situati dentro la cartella laravel/config.  
+Il progetto può utilizzare varie configurazioni, situati dentro la cartella laravel/config.
 
 Crearsi il virtual host con il nome del dominio uguale a quello del file di configurazione. Esempio:
 
@@ -25,18 +25,6 @@ Dopo aver installato laragon, Assicurarsi di abilitate tutte le estensioni php i
 Configurare le preferenze di laragon come in foto
 
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/laragon-config.png" alt="laragon config" />
-<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/php-extentions.png" alt="php extentions" />  
-
-Configurare le preferenze di laragon come in foto
-
-<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/laragon-config.png" alt="laragon config" />  
-
-
-<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/php-extentions.png" alt="php extentions" />  
-
-Configurare le preferenze di laragon come in foto
-
-<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/laragon-config.png" alt="laragon config" />  
 
 Creare una cartella _bases dentro la cartella www, in questa cartella si andrà a clonare il progetto.
 
@@ -49,8 +37,8 @@ git submodule foreach git pull
 
 Verificare che tutti i moduli siano a master
 
-### dalla cartella "laravel" creare il file delle variabili d'ambiente .env 
-    
+### dalla cartella "laravel" creare il file delle variabili d'ambiente .env
+
 ```bash
 cp .env.latest .env
 ```
@@ -64,7 +52,7 @@ cp .env.latest .env
 ../bashscripts/composer_init.sh
 ```
 
-alternativa: 
+alternativa:
 
 ```bash
 composer update
@@ -78,12 +66,12 @@ php artisan key:generate
 alternativa da terminale:
 
 ```bash
-php artisan module:list 
+php artisan module:list
 ```
 
 ### abilitare tutti i moduli con il comando
 
-Assicurarsi che tutti i moduli siano abilitati  
+Assicurarsi che tutti i moduli siano abilitati
 in caso eseguire:
 
 ```bash
@@ -114,17 +102,6 @@ Per creare la giunzione, andare nella cartella www ed eseguire tramite il prompt
 mklink /j nome_cartella_giuzione path_della_cartella_progetto
 ```
 
-```  
-
-### creare la Giunzione
-
-in locale, se utilizzate Laragon, dopo aver clonato il progetto bisogna creare la giunzione nella cartella www.  
-Per creare la giunzione, andare nella cartella www ed eseguire tramite il prompt dei comandi 
-
-```bash
-mklink /j nome_cartella_giuzione path_della_cartella_progetto
-```  
-
 dopo riavviare il server di laragon.
 
 Fatto ciò, andare nel browser e inserire nell'url http://nome_cartella_giuzione.local/
@@ -134,9 +111,6 @@ Fatto ciò, andare nel browser e inserire nell'url http://nome_cartella_giuzione
 Sia il progetto che ogni singolo modulo hanno un branch dev, generalmente utilizzato per lo sviluppo del progetto.
 
 nel singolo modulo
-Sia il progetto che ogni singolo modulo hanno un branch dev, generalmente utilizzato per lo sviluppo del progetto.  
-
-nel singolo modulo  
 
 ```bash
 git branch dev
@@ -167,33 +141,5 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 * [installation.md](../../../../themes/one/project_docs/installation.md)
 
 ### Versione Incoming
-
----
-
-```  
-
-dopo aver eseguito  
-git branch nome_branch  
-git checkout nome_branch  
-
-se il branch di un modulo vuole essere pubblicato, eseguire nel modulo 
-```bash
-../../../bascripts/git_init.sh nome_branch
-```  
-### Versione HEAD
-
-
-## Collegamenti tra versioni di installation.md
-* [installation.md](../../../Xot/docs/filament/installation.md)
-* [installation.md](../../../Xot/docs/installation.md)
-* [installation.md](../../../Xot/docs/base/installation.md)
-* [installation.md](../../../User/docs/installation.md)
-* [installation.md](../../../Lang/docs/installation.md)
-* [installation.md](../../../Cms/docs/installation.md)
-* [installation.md](../../../../Themes/One/docs/installation.md)
-
-
-### Versione Incoming
-
 
 ---

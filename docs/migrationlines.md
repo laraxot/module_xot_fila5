@@ -40,5 +40,3 @@ return new class extends XotBaseMigration
 - [Code Quality](../code_quality.md)
 - [Root Documentation](../../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../database_guidelines.md)
-- [Root Documentation](../../../../docs/collegamenti-documentazione.md)
-- [Database Guidelines](../database_guidelines.md)

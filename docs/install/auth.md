@@ -3,7 +3,6 @@
 
 declare(strict_types=1);
 
-
 return [
     /*
     |--------------------------------------------------------------------------
@@ -117,21 +116,5 @@ return [
 * [auth.md](../../../tenant/project_docs/it/config/auth.md)
 
 ### Versione Incoming
-
----
-
-
-~~~
-### Versione HEAD
-
-
-## Collegamenti tra versioni di auth.md
-* [auth.md](../../../Xot/docs/install/auth.md)
-* [auth.md](../../../User/docs/lang/en/auth.md)
-* [auth.md](../../../Tenant/docs/it/config/auth.md)
-
-
-### Versione Incoming
-
 
 ---

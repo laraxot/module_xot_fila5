@@ -1,13 +1,10 @@
 ---
-title: 'pdf_to_txt'
-module: Xot
+title: "Pdf to txt"
 type: reference
-slug: pdf-to-txt
-description: '<!-- Contenuto migrato da _docs/pdf_to_txt.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: pdf_to_txt.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da pdf_to_txt.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # pdf_to_txt

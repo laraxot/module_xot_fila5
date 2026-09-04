@@ -4,41 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
+use Mockery;
+use Mockery\MockInterface;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\MockObject\MockObject;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->markTestSkipped('fragile offline mocks File/Module/DB');
-});
-
 it('calculates view path correctly', function (): void {
-    /** @var GetViewNameSpacePathAction&MockObject $nsMock */
-    $nsMock = $this->createUnitMock(GetViewNameSpacePathAction::class);
-    $nsMock->method('execute')
-        ->willReturnCallback(static function (string $namespace): string {
-            Assert::assertSame('test_ns', $namespace);
+    /** @var GetViewNameSpacePathAction&MockInterface $nsMock */
+    $nsMock = Mockery::mock(GetViewNameSpacePathAction::class);
+    $nsMock->shouldReceive('execute')
+        ->with('test_ns')
+        ->andReturn('/path/to/views');
 
-            return '/path/to/views';
-        });
+    app()->instance(GetViewNameSpacePathAction::class, $nsMock);
 
-    $this->bindInstance(GetViewNameSpacePathAction::class, $nsMock);
+    /** @var FixPathAction&MockInterface $fixMock */
+    $fixMock = Mockery::mock(FixPathAction::class);
+    $fixMock->shouldReceive('execute')
+        ->andReturnUsing(fn (string $path): string => $path);
 
-    /** @var FixPathAction&MockObject $fixMock */
-    $fixMock = $this->createUnitMock(FixPathAction::class);
-    $fixMock->method('execute')
-        ->willReturnArgument(0);
-
-    $this->bindInstance(FixPathAction::class, $fixMock);
+    app()->instance(FixPathAction::class, $fixMock);
     $action = app(ViewPathAction::class);
 
     $result = $action->execute('Xot::dashboard.index');
 
-    Assert::assertNotEmpty($result);
+    Assert::assertIsString($result);
     Assert::assertStringEndsWith('.blade.php', $result);
 });

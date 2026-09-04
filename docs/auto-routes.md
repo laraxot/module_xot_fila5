@@ -1,13 +1,10 @@
 ---
-title: 'auto_routes'
-module: Xot
+title: "Auto routes"
 type: reference
-slug: auto-routes
-description: '<!-- Contenuto migrato da _docs/auto_routes.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: auto_routes.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da auto_routes.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # auto_routes

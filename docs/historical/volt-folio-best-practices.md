@@ -1,12 +1,3 @@
----
-title: "Best Practices per Volt e Folio"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati

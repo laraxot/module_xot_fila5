@@ -309,13 +309,6 @@ Moduli con logica inline complessa:
 ### Guide Operative
 - [Accessor Refactoring Roadmap](../../Sigma/docs/accessor-refactoring-roadmap.md)
 - [Progress Tracker](../../Sigma/docs/refactoring-progress-tracker.md)
-
-- [Accessor Refactoring Philosophy](../../sigma/docs/accessor-refactoring-philosophy.md)
-- [Philosophy Guide PTVX](../../../docs/philosophy-guide.md)
-
-### Guide Operative
-- [Accessor Refactoring Roadmap](../../sigma/docs/accessor-refactoring-roadmap.md)
-- [Progress Tracker](../../sigma/docs/refactoring-progress-tracker.md)
 - [File Locking Pattern](./file-locking-pattern.md)
 
 ### Guide Tecniche
@@ -329,13 +322,6 @@ Moduli con logica inline complessa:
 ---
 
 **Creato**: 2025-01-29
-
-- [Sigma - SchedaTrait](../../sigma/docs/session-complete-summary.md)
-- [IndennitaCondizioniLavoro - Audit](../../indennitacondizionilavoro/docs/accessor-guard-audit.md)
-
----
-
-**Creato**: [DATE]
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale

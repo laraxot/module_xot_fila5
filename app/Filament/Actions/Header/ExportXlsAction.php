@@ -68,7 +68,7 @@ class ExportXlsAction extends XotBaseAction
                     }
                     Assert::isArray($fields);
                 } else {
-                    throw new \RuntimeException('Removed debug dddx');
+                    dddx('method xotFields does not exist in '.$resource);
                 }
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));

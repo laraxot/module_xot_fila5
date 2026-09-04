@@ -59,7 +59,6 @@ public function registerTranslations(): void
 - Questa regola va rispettata anche da tutte le classi che estendono il provider
 
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
-**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
 
 ## Esempio di Override Sicuro
 ```php
@@ -82,7 +81,6 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 ## Collegamenti e Backlink
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
-- [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
 
 ---

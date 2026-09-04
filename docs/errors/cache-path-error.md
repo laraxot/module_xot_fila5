@@ -46,5 +46,3 @@ Per prevenire questo errore in futuro:
 ## Riferimenti
 - [Documentazione Laravel Cache](https://laravel.com/project_docs/cache)
 - [Documentazione Xot Component System](../structure.md)
-- [Documentazione Laravel Cache](https://laravel.com/docs/cache)
-- [Documentazione Xot Component System](../structure.md)

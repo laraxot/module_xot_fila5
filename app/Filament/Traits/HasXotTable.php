@@ -18,6 +18,7 @@ use Filament\Actions\ReplicateAction;
 use Filament\Actions\ViewAction;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
+use Filament\Tables;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component as LayoutComponent;
@@ -26,7 +27,6 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
-use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Filament\Widgets\TableWidget;
@@ -41,10 +41,8 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
-use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-use Modules\Xot\Filament\Resources\XotBaseResource\Pages\XotBaseManageRelatedRecords;
-use Modules\Xot\Filament\Resources\XotBaseResource\RelationManager\XotBaseRelationManager;
 use Webmozart\Assert\Assert;
+use ReflectionMethod;
 
 /**
  * Trait HasXotTable.
@@ -85,14 +83,14 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, Action|ActionGroup>
-     *
-     * @phpstan-return array<int|string, Action|ActionGroup>
      */
-    public function getXotTableHeaderActions(): array
+    public function getTableHeaderActions(): array
     {
         $resource = $this;
+        /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
+            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
@@ -127,14 +125,25 @@ trait HasXotTable
      * In content-grid ogni riga mostra label e valore sulla stessa linea (es. «Ente: 123»).
      *
      * @return array<int, Column|ColumnGroup|LayoutComponent>
-     *
-     * @phpstan-return array<int, Column|ColumnGroup|LayoutComponent>
      */
     public function getGridTableColumns(): array
     {
         $columns = [];
 
-        foreach (array_values($this->resolveTableColumnsForXotTable()) as $column) {
+        foreach (array_values($this->resolveTableColumns()) as $column) {
+            if ($column instanceof ColumnGroup) {
+                // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
+                // raggruppate non hanno un layout sensato, quindi vengono saltate.
+                continue;
+            }
+
+            if (! $column instanceof Column && ! $column instanceof LayoutComponent) {
+                // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
+                // (fallback deprecato di Filament): si scartano per restare coerenti col
+                // tipo atteso da Stack::make().
+                continue;
+            }
+
             $gridColumn = clone $column;
 
             if ($gridColumn instanceof TextColumn) {
@@ -160,11 +169,25 @@ trait HasXotTable
     }
 
     /**
+     * Se i filtri vanno applicati solo dopo il bottone "Applica filtri" (default Filament)
+     * oppure a ogni modifica del campo.
+     *
+     * Filament rende il bottone nel piede del form dei filtri, quindi occupa sempre una riga
+     * propria: una tabella che vuole i filtri su una riga sola deve rinunciare al bottone e
+     * applicare al volo. Il default `true` conserva il comportamento di tutte le tabelle
+     * esistenti; si sovrascrive solo dove serve.
+     */
+    public function shouldDeferTableFilters(): bool
+    {
+        return true;
+    }
+
+    /**
      * Get table filters form columns.
      */
     public function getTableFiltersFormColumns(): int
     {
-        $count = count($this->getXotTableFilters()) + 1;
+        $count = count($this->resolveTableFilters()) + 1;
 
         return min($count, 6);
     }
@@ -209,26 +232,35 @@ trait HasXotTable
         Assert::isInstanceOf($model, Model::class);
         */
         // Configurazione base della tabella
+        // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
+        // (fallback deprecato di Filament): si filtrano per restare coerenti col tipo
+        // atteso da TableLayoutEnum::getTableColumns().
+        $tableColumns = array_values(array_filter(
+            $this->resolveTableColumns(),
+            static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
+        ));
+
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
-            ->heading($this->getXotTableHeading())
-            ->columns($this->layoutView->getTableColumns(array_values($this->resolveTableColumnsForXotTable()), $this->getGridTableColumns()))
+            ->heading($this->resolveTableHeading())
+            ->columns($this->layoutView->getTableColumns($tableColumns, $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
-            ->filters($this->getXotTableFilters()) // @phpstan-ignore argument.type
+            ->filters($this->resolveTableFilters())
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
+            ->deferFilters($this->shouldDeferTableFilters())
             ->persistFiltersInSession()
-            ->headerActions(array_values($this->getXotTableHeaderActions()))
-            ->recordActions(array_values($this->getXotTableActions()))
-            ->toolbarActions(array_values($this->getXotTableBulkActions()))
+            ->headerActions(array_values($this->resolveTableHeaderActions()))
+            ->recordActions(array_values($this->resolveTableActions()))
+            ->toolbarActions(array_values($this->resolveTableBulkActions()))
             ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
-            ->emptyStateActions(array_values($this->getXotTableEmptyStateActions()))
+            ->emptyStateActions(array_values($this->resolveTableEmptyStateActions()))
             ->striped()
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
-        $sortColumn = $this->getXotDefaultTableSortColumn();
-        $sortDirection = $this->getXotDefaultTableSortDirection();
+        $sortColumn = $this->resolveDefaultTableSortColumn();
+        $sortDirection = $this->resolveDefaultTableSortDirection();
         if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
@@ -248,11 +280,9 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
-     * @return array<string|int, Filter|TernaryFilter|BaseFilter>
-     *
-     * @phpstan-return array<string|int, Filter|TernaryFilter|BaseFilter>
+     * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
      */
-    public function getXotTableFilters(): array
+    public function getTableFilters(): array
     {
         return [];
     }
@@ -264,15 +294,13 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, Action|ActionGroup>
-     *
-     * @phpstan-return array<int|string, Action|ActionGroup>
      */
     /**
-     * @return array<int|string, Action|ActionGroup>
+     * @deprecated override the `table()` method to configure the table
      *
-     * @phpstan-return array<int|string, Action|ActionGroup>
+     * @return array<int|string, Action|ActionGroup>
      */
-    public function getXotTableActions(): array
+    public function getTableActions(): array
     {
         if ($this instanceof TableWidget) {
             return [];
@@ -280,28 +308,31 @@ trait HasXotTable
 
         $actions = [];
         $resource = $this;
+        /* @phpstan-ignore-next-line */
         if ($this instanceof ListRecords) {
             $resourceClass = $this->getResource();
+            // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
             Assert::string($resourceClass);
             $resource = app($resourceClass);
         }
+        // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType,method.notFound
+        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
             $actions['view'] = ViewAction::make()
                 ->iconButton()
                 ->visible(static fn (Model $record): bool => (bool) $resource->canView($record));
         }
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType,method.notFound
+        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canEdit')) {
             $actions['edit'] = EditAction::make()
                 ->iconButton()
                 ->visible(static fn (Model $record): bool => (bool) $resource->canEdit($record));
         }
 
-        // @phpstan-ignore-next-line function.alreadyNarrowedType,method.notFound
+        // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canDelete')) {
             $actions['delete'] = DeleteAction::make()
                 ->iconButton()
@@ -315,7 +346,7 @@ trait HasXotTable
 
         // Check if class has the getRelationship method
         // Note: In some contexts (ListRecords), getRelationship() may not exist
-        // @phpstan-ignore-next-line function.alreadyNarrowedType,method.notFound (needed for contexts where method doesn't exist)
+        // @phpstan-ignore-next-line function.alreadyNarrowedType (needed for contexts where method doesn't exist)
         if ($this->shouldShowDetachAction() && method_exists($this, 'getRelationship')) {
             $relationship = $this->getRelationship();
 
@@ -337,10 +368,8 @@ trait HasXotTable
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
      * @return array<int|string, BulkAction>
-     *
-     * @phpstan-return array<int|string, BulkAction>
      */
-    public function getXotTableBulkActions(): array
+    public function getTableBulkActions(): array
     {
         return [
             'delete' => DeleteBulkAction::make()
@@ -361,8 +390,10 @@ trait HasXotTable
      */
     public function getModelClass(): string
     {
+        /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
+            Assert::string($model);
             Assert::classExists($model);
             Assert::subclassOf($model, Model::class);
 
@@ -379,10 +410,6 @@ trait HasXotTable
      */
     public function getTableSearch(): ?string
     {
-        if ($this instanceof XotBaseResourceTable) {
-            return null;
-        }
-
         if (! property_exists($this, 'tableSearch')) {
             return null;
         }
@@ -399,29 +426,19 @@ trait HasXotTable
     }
 
     /**
-     * Risolve le colonne tabella evitando method.deprecated su API Filament v5.
+     * Get list table columns.
      *
      * @return array<string, Column>
      */
-    protected function resolveTableColumnsForXotTable(): array
-    {
-        $method = new \ReflectionMethod($this, 'getTableColumns');
-        $declaring = $method->getDeclaringClass()->getName();
-
-        if ($declaring === self::class || str_starts_with($declaring, 'Filament\\')) {
-            return [];
-        }
-
-        /** @var array<string, Column> $columns */
-        $columns = $method->invoke($this);
-
-        return $columns;
-    }
+    /**
+     * @return array<string, Column|ColumnGroup|LayoutComponent>
+     */
+    abstract protected function getTableColumns(): array;
 
     /**
      * Get table heading.
      */
-    protected function getXotTableHeading(): ?string
+    protected function getTableHeading(): ?string
     {
         /** @var string $transKey */
         $transKey = app(GetTransKeyAction::class)->execute(static::class);
@@ -451,12 +468,99 @@ trait HasXotTable
      * Get table empty state actions.
      *
      * @return array<int|string, Action>
-     *
-     * @phpstan-return array<int|string, Action>
      */
-    protected function getXotTableEmptyStateActions(): array
+    protected function getTableEmptyStateActions(): array
     {
         return [];
+    }
+
+    /**
+     * Invoke legacy Filament hooks only when implemented by the concrete component.
+     *
+     * @return array<string|int, Column|ColumnGroup|LayoutComponent>
+     */
+    private function resolveTableColumns(): array
+    {
+        return $this->invokeTableHook('getTableColumns', []);
+    }
+
+    /**
+     * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
+     */
+    private function resolveTableFilters(): array
+    {
+        return $this->invokeTableHook('getTableFilters', []);
+    }
+
+    /**
+     * @return array<int|string, Action|ActionGroup>
+     */
+    private function resolveTableHeaderActions(): array
+    {
+        return $this->invokeTableHook('getTableHeaderActions', []);
+    }
+
+    /**
+     * @return array<int|string, Action|ActionGroup>
+     */
+    private function resolveTableActions(): array
+    {
+        return $this->invokeTableHook('getTableActions', []);
+    }
+
+    /**
+     * @return array<int|string, BulkAction>
+     */
+    private function resolveTableBulkActions(): array
+    {
+        return $this->invokeTableHook('getTableBulkActions', []);
+    }
+
+    /**
+     * @return array<int|string, Action>
+     */
+    private function resolveTableEmptyStateActions(): array
+    {
+        return $this->invokeTableHook('getTableEmptyStateActions', []);
+    }
+
+    private function resolveTableHeading(): ?string
+    {
+        $heading = $this->invokeTableHook('getTableHeading', null);
+
+        return is_string($heading) ? $heading : null;
+    }
+
+    private function resolveDefaultTableSortColumn(): ?string
+    {
+        $column = $this->invokeTableHook('getDefaultTableSortColumn', null);
+
+        return is_string($column) ? $column : null;
+    }
+
+    private function resolveDefaultTableSortDirection(): ?string
+    {
+        $direction = $this->invokeTableHook('getDefaultTableSortDirection', null);
+
+        return is_string($direction) ? $direction : null;
+    }
+
+    /**
+     * @template TResult
+     *
+     * @param  TResult  $default
+     * @return TResult
+     */
+    private function invokeTableHook(string $method, mixed $default): mixed
+    {
+        $reflection = new ReflectionMethod($this, $method);
+        $declaringClass = $reflection->getDeclaringClass()->getName();
+
+        if ($declaringClass === self::class || str_starts_with($declaringClass, 'Filament\\')) {
+            return $default;
+        }
+
+        return $reflection->invoke($this);
     }
 
     protected function shouldShowAssociateAction(): bool
@@ -466,12 +570,14 @@ trait HasXotTable
 
     protected function shouldShowAttachAction(): bool
     {
-        return $this instanceof XotBaseManageRelatedRecords || $this instanceof XotBaseRelationManager;
+        // @phpstan-ignore-next-line
+        return method_exists($this, 'getRelationship');
     }
 
     protected function shouldShowDetachAction(): bool
     {
-        return $this instanceof XotBaseManageRelatedRecords || $this instanceof XotBaseRelationManager;
+        // @phpstan-ignore-next-line
+        return method_exists($this, 'getRelationship');
     }
 
     protected function shouldShowReplicateAction(): bool
@@ -493,8 +599,6 @@ trait HasXotTable
      * Get header actions.
      *
      * @return array<string, Action>
-     *
-     * @phpstan-return array<string, Action>
      */
     protected function getHeaderActions(): array
     {
@@ -508,8 +612,6 @@ trait HasXotTable
      * Can return bool (true/false) or array of page sizes [10, 25, 50, 100].
      *
      * @return bool|array<int, int|string>
-     *
-     * @phpstan-return bool|array<int|string>
      */
     protected function getTablePaginated(): bool|array
     {
@@ -519,7 +621,7 @@ trait HasXotTable
     /**
      * Get default table sort column.
      */
-    protected function getXotDefaultTableSortColumn(): ?string
+    protected function getDefaultTableSortColumn(): ?string
     {
         try {
             $modelClass = $this->getModelClass();
@@ -536,7 +638,7 @@ trait HasXotTable
     /**
      * Get default table sort direction.
      */
-    protected function getXotDefaultTableSortDirection(): ?string
+    protected function getDefaultTableSortDirection(): ?string
     {
         return 'desc';
     }
@@ -592,8 +694,6 @@ trait HasXotTable
      * Get searchable columns.
      *
      * @return array<string>
-     *
-     * @phpstan-return array<int, string>
      */
     protected function getSearchableColumns(): array
     {
@@ -606,50 +706,5 @@ trait HasXotTable
     protected function hasSearch(): bool
     {
         return true;
-    }
-
-    /** @return array<int|string, Action|ActionGroup> */
-    public function getTableHeaderActions(): array
-    {
-        return $this->getXotTableHeaderActions();
-    }
-
-    /** @return array<string|int, BaseFilter|TernaryFilter> */
-    public function getTableFilters(): array
-    {
-        return $this->getXotTableFilters();
-    }
-
-    /** @return array<int|string, Action|ActionGroup> */
-    public function getTableActions(): array
-    {
-        return $this->getXotTableActions();
-    }
-
-    /** @return array<int|string, BulkAction> */
-    public function getTableBulkActions(): array
-    {
-        return $this->getXotTableBulkActions();
-    }
-
-    /** @return array<int|string, Action> */
-    protected function getTableEmptyStateActions(): array
-    {
-        return $this->getXotTableEmptyStateActions();
-    }
-
-    protected function getTableHeading(): ?string
-    {
-        return $this->getXotTableHeading();
-    }
-
-    protected function getDefaultTableSortColumn(): ?string
-    {
-        return $this->getXotDefaultTableSortColumn();
-    }
-
-    protected function getDefaultTableSortDirection(): ?string
-    {
-        return $this->getXotDefaultTableSortDirection();
     }
 }

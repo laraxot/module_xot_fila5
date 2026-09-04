@@ -175,6 +175,7 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute(string $attribute);
 
     /**
+     * @param  Builder  $query
      * @return AdjacencyBuilder<Model>
      */
     public function newEloquentBuilder(Builder $query);

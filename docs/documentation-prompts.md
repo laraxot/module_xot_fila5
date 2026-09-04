@@ -59,13 +59,6 @@ Questo documento descrive le regole e le best practices per i prompt di document
 ```
 
 ### Formato Non Corretto
-```
-
-
-[Documento in Root](../../../docs/documento.md)
-```
-
-### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti

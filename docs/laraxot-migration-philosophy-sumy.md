@@ -14,7 +14,6 @@ In Laraxot architecture, we **NEVER** create multiple `create_table` migration f
 - Clear, linear evolution of database schema
 
 ### 2. **<nome progetto>able Migration Order**
-### 2. **Predictable Migration Order**
 - No confusion about which migration runs first
 - Consistent behavior across all environments (local, staging, production)
 - Eliminates race conditions in migration execution
@@ -125,7 +124,6 @@ When duplicate migrations are discovered:
 - **Simplicity**: One table, one migration, no exceptions
 - **Clarity**: Clear, unambiguous schema definitions
 - **<nome progetto>ability**: Consistent migration behavior across environments
-- **Predictability**: Consistent migration behavior across environments
 - **Maintainability**: Easy to understand and modify schema evolution
 
 ### Why This Matters

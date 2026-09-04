@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-use Carbon\Carbon;
-use DateTimeInterface;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 
 /**
  * Common query scopes for Laraxot models.
@@ -29,9 +28,8 @@ use Illuminate\Database\Eloquent\Builder;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
- *
- * @phpstan-ignore trait.unused
  */
+/** @phpstan-ignore trait.unused */
 trait HasCommonScopes
 {
     /**
@@ -82,7 +80,7 @@ trait HasCommonScopes
      */
     public function scopeDraft(Builder $query): Builder
     {
-        return $query->where(static function (Builder $q): void {
+        return $query->where(function (Builder $q): void {
             $q->whereNull('published_at')
                 ->orWhere('published_at', '>', now());
         });
@@ -94,7 +92,7 @@ trait HasCommonScopes
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeCreatedAfter(Builder $query, Carbon|string|DateTimeInterface $date): Builder
+    public function scopeCreatedAfter(Builder $query, mixed $date): Builder
     {
         return $query->where('created_at', '>=', $date);
     }
@@ -105,7 +103,7 @@ trait HasCommonScopes
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeCreatedBefore(Builder $query, Carbon|string|DateTimeInterface $date): Builder
+    public function scopeCreatedBefore(Builder $query, mixed $date): Builder
     {
         return $query->where('created_at', '<=', $date);
     }
@@ -116,7 +114,7 @@ trait HasCommonScopes
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeUpdatedAfter(Builder $query, Carbon|string|DateTimeInterface $date): Builder
+    public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
     {
         return $query->where('updated_at', '>=', $date);
     }
@@ -138,23 +136,12 @@ trait HasCommonScopes
     public function isPublished(): bool
     {
         $publishedAt = $this->getAttribute('published_at');
-        if ($publishedAt === null) {
+
+        if (! $publishedAt instanceof Carbon) {
             return false;
         }
 
-        if ($publishedAt instanceof Carbon) {
-            return $publishedAt->isPast();
-        }
-
-        if ($publishedAt instanceof DateTimeInterface) {
-            return Carbon::instance(\DateTimeImmutable::createFromInterface($publishedAt))->isPast();
-        }
-
-        if (is_string($publishedAt) || is_numeric($publishedAt)) {
-            return Carbon::parse((string) $publishedAt)->isPast();
-        }
-
-        return false;
+        return $publishedAt->isPast();
     }
 
     /**

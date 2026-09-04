@@ -48,8 +48,3 @@ class WebhookErrorFormatter implements ErrorFormatterContract
 - [Webhook Integration](../../integrations/WEBHOOK-GUIDE.md)
 - [PHPStan Level 9 Guide](../../PHPSTAN-LEVEL9-GUIDE.md)
 - [Error Formatters Overview](../README.md)
-
-- [Error Handling Guidelines](../../exception-handling-guide.md)
-- [Webhook Integration](../../integrations/webhook-guide.md)
-- [PHPStan Level 9 Guide](../../phpstan-level9-guide.md)
-- [Error Formatters Overview](../readme.md)

@@ -112,5 +112,4 @@ composer dump-autoload
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
-*Ultimo aggiornamento: [DATE]*
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*

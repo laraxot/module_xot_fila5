@@ -140,38 +140,6 @@ cd laravel
 ./vendor/bin/phpstan analyse Modules --no-progress
 ```
 
-## Caso verificato 2026-08-31 — duplicati case-only nei test
-
-Un run completo ha riportato **22 errori in quattro path minuscoli**:
-
-- `Cms/tests/Unit/exampletest.php`: 2 `pest.test.emptyClosure`;
-- `Gdpr/tests/Feature/conflictresolutiontest.php`: 4 `pest.expectation.redundant`;
-- `Lang/tests/feature/LangBusinessLogicTest.php`: 14 `function.notFound`;
-- `Lang/tests/unit/actions/ReadTranslationFileActionTest.php`: 2 `function.notFound`.
-
-Ognuno aveva gia' una controparte canonica tracciata (`ExampleTest.php`,
-`ConflictResolutionTest.php`, `tests/Feature/...`, `tests/Unit/Actions/...`) con la
-correzione semantica corretta. I path minuscoli erano duplicati non tracciati e
-stale. Dopo il loro consolidamento, lo stesso comando root e' passato a zero.
-
-Diagnosi prima del fix:
-
-```bash
-git ls-files --stage -- <path-canonico> <path-sospetto>
-find Modules/<M>/tests -type f -iname '<nome-test>' -print
-diff -u <path-canonico> <path-sospetto>
-```
-
-Non adattare helper, non aggiungere funzioni globali e non introdurre `mixed` per
-assecondare il duplicato. Se esiste una copia canonica tracciata, preservarne il
-contratto e consolidare la variante case-only. Nei test Lang, gli helper di classe
-si invocano sul `TestCase` concreto (`TestCase::createTranslationFile()`), mentre
-le asserzioni cross-modulo usano `XotBasePest::assertTableHas()`.
-
-Nota sul report lungo: prima di editare, rieseguire PHPStan sul cluster stretto e
-verificare che i path esistano ancora. In questa sessione i quattro duplicati sono
-stati rimossi durante l'analisi; il rerun root era verde senza altri fix applicativi.
-
 ## Related
 
 - [phpstan-cluster-map-and-false-friends](../concepts/phpstan-cluster-map-and-false-friends.md)

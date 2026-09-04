@@ -7,18 +7,18 @@ namespace Modules\Xot\Actions\Route;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Str;
-use Modules\Xot\Datas\RouteParamsData;
 use Spatie\QueueableAction\QueueableAction;
 
 class BuildActionUrlAction
 {
     use QueueableAction;
 
-    public function execute(RouteParamsData $params): string
+    /** @param array<string, mixed> $params */
+    public function execute(array $params): string
     {
-        $action = $params->act ?? 'show';
-        $row = $params->row ?? (object) [];
-        $query = $params->query ?? [];
+        $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
+        $row = $params['row'] ?? (object) [];
+        $query = is_array($params['query'] ?? null) ? $params['query'] : [];
         $route = request()->route();
         if (! $route instanceof Route || $route->getName() === null) {
             return '#'.$action;

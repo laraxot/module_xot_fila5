@@ -15,7 +15,7 @@ class PlainTextFromFilamentValueAction
 {
     use QueueableAction;
 
-    public function execute(mixed $value, string $fallback = ''): string
+    public function execute(mixed $value, mixed $fallback = ''): string
     {
         if ($value instanceof Htmlable) {
             return strip_tags($value->toHtml());
@@ -33,10 +33,14 @@ class PlainTextFromFilamentValueAction
             return $this->execute($value->getLabel(), $fallback);
         }
 
-        return $fallback;
+        if (is_scalar($fallback) || $fallback instanceof \Stringable) {
+            return (string) $fallback;
+        }
+
+        return '';
     }
 
-    public static function cast(mixed $value, string $fallback = ''): string
+    public static function cast(mixed $value, mixed $fallback = ''): string
     {
         return app(self::class)->execute($value, $fallback);
     }

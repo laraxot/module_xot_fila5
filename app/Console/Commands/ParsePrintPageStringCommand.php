@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
+use Modules\Xot\Actions\ParsePrintPageStringAction;
 
 class ParsePrintPageStringCommand extends Command
 {
@@ -39,6 +40,6 @@ class ParsePrintPageStringCommand extends Command
         if (! is_string($str)) {
             throw new \Exception('argument str must be a string');
         }
-        throw new \RuntimeException('Removed debug dddx');
+        dddx(app(ParsePrintPageStringAction::class)->execute($str));
     }
 }

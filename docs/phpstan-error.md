@@ -1,3 +1,15 @@
+---
+title: 'Phpstan error'
+module: Xot
+type: reference
+slug: phpstan-error
+description: 'modulo Geo'
+tags: [migrato-da-txt, xot]
+converted_from: phpstan_error.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 modulo Geo
 
   Line   \Actions\GetLatitudeLongitudeAction.php
@@ -18,4 +30,3 @@ modulo Xot
  ------ -----------------------------------------------------------------------
   28     Method Illuminate\Support\Collection<int,mixed>::get() invoked with 0
          parameters, 1-2 required.
-

@@ -40,6 +40,7 @@ class SafeArrayCastAction
     /**
      * Converte in modo sicuro un valore mixed in array.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce (default: [])
      * @return array<int|string, mixed> Il valore convertito
      */
@@ -106,6 +107,7 @@ class SafeArrayCastAction
     /**
      * Converte un valore in array con validazione di chiavi richieste.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  array<int|string>  $requiredKeys  Chiavi che devono essere presenti
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
@@ -127,6 +129,7 @@ class SafeArrayCastAction
     /**
      * Converte un valore in array con filtro di chiavi.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  array<int|string>  $allowedKeys  Solo queste chiavi saranno mantenute
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse
@@ -144,6 +147,7 @@ class SafeArrayCastAction
     /**
      * Converte un valore in array con validazione di tipo per i valori.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  string  $valueType  Tipo richiesto per i valori ('string', 'int', 'float', 'bool')
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
      * @return array<int|string, mixed> Il valore convertito con valori del tipo richiesto
@@ -170,6 +174,7 @@ class SafeArrayCastAction
     /**
      * Verifica se un valore può essere convertito in array.
      *
+     * @param  mixed  $value  Il valore da verificare
      * @return bool True se il valore può essere convertito in array
      */
     public function canCast(mixed $value): bool
@@ -180,6 +185,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce (default: [])
      * @return array<int|string, mixed> Il valore convertito in array
      */
@@ -191,6 +197,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico per cast con chiavi richieste.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  array<int|string>  $requiredKeys  Chiavi che devono essere presenti
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
      * @return array<int|string, mixed> Il valore convertito con chiavi validate
@@ -203,6 +210,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico per cast con filtro di chiavi.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  array<int|string>  $allowedKeys  Solo queste chiavi saranno mantenute
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
      * @return array<int|string, mixed> Il valore convertito con solo le chiavi permesse
@@ -215,6 +223,7 @@ class SafeArrayCastAction
     /**
      * Metodo statico per cast con tipo di valore specifico.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  string  $valueType  Tipo richiesto per i valori
      * @param  array<int|string, mixed>|null  $default  Valore di default se la conversione fallisce
      * @return array<int|string, mixed> Il valore convertito con valori del tipo richiesto

@@ -6,7 +6,6 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -114,30 +113,19 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
-     * @param  array<string, mixed>  $metrics
+     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
         $logLevel = $this->determineLogLevel($metrics);
 
-        /** @var string $memUsed */
-        $memUsed = SafeStringCastAction::cast($metrics['memory_used_mb']);
-        /** @var string $memPeak */
-        $memPeak = SafeStringCastAction::cast($metrics['memory_peak_mb']);
-        /** @var string $execTime */
-        $execTime = SafeStringCastAction::cast($metrics['execution_time_ms']);
-        /** @var string $method */
-        $method = SafeStringCastAction::cast($metrics['method']);
-        /** @var string $url */
-        $url = SafeStringCastAction::cast($metrics['url']);
-
         $message = sprintf(
             'Filament Memory Usage: %sMB used, %sMB peak, %sms execution time - %s %s',
-            $memUsed,
-            $memPeak,
-            $execTime,
-            $method,
-            $url
+            (string) $metrics['memory_used_mb'],
+            (string) $metrics['memory_peak_mb'],
+            (string) $metrics['execution_time_ms'],
+            (string) $metrics['method'],
+            (string) $metrics['url']
         );
 
         // Aggiungi contesto aggiuntivo
@@ -159,7 +147,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
-     * @param  array<string, mixed>  $metrics
+     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
      */
     private function determineLogLevel(array $metrics): string
     {

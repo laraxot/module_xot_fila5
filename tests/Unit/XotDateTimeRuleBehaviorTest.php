@@ -14,21 +14,28 @@ uses(TestCase::class)->group('no-xot-db');
 test('DateTimeRule accepts the documented day month year format', function (): void {
     $validator = Validator::make(
         ['published_at' => '10/10/2019 13:43'],
-        ['published_at' => [new DateTimeRule()]],
+        ['published_at' => [new DateTimeRule]],
     );
 
     Assert::assertFalse($validator->fails());
 });
 
-test('DateTimeRule rejects values outside the documented format', function (mixed $value): void {
+$rejectsInvalidDateTime = function (mixed $value): void {
     $validator = Validator::make(
         ['published_at' => $value],
-        ['published_at' => [new DateTimeRule()]],
+        ['published_at' => [new DateTimeRule]],
     );
 
     Assert::assertTrue($validator->fails());
-    Assert::assertStringContainsString('not a valid datetime', $validator->errors()->first('published_at'));
-})->with([
-    'non-string value' => 123,
-    'invalid calendar date' => '2024-13-99 25:99',
-]);
+
+    $message = $validator->errors()->first('published_at');
+    Assert::assertStringContainsString('not a valid datetime', $message);
+};
+
+test('DateTimeRule rejects a non-string value', function () use ($rejectsInvalidDateTime): void {
+    $rejectsInvalidDateTime(123);
+});
+
+test('DateTimeRule rejects an invalid calendar date', function () use ($rejectsInvalidDateTime): void {
+    $rejectsInvalidDateTime('2024-13-99 25:99');
+});

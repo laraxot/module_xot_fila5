@@ -1,12 +1,3 @@
----
-title: "Spatie Permission team model on Laravel 13"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Spatie Permission team model on Laravel 13
 
 ## Why Xot cares

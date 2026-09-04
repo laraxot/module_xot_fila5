@@ -18,7 +18,6 @@ Cannot make non static method Filament\Pages\BasePage::getView() static in class
 2. **Verifica prima di implementare**: Prima di implementare un metodo, verificare la sua definizione nella classe genitore:
    ```bash
    grep -r "function methodName" vendor/filament
-   grep -r "function methodName" /var/www/html/base_saluteora/laravel/vendor/filament
    ```
 
 3. **Principio di Sostituzione di Liskov**: Le sottoclassi devono essere sostituibili alle loro classi base senza alterare il comportamento corretto del programma.
@@ -98,5 +97,3 @@ public function getNavigationLabel(): string // Non static!
 - [XotBasePage](../Xot/docs/filament/pages/xotbasepage.md)
 - [Principi di Ereditarietà](../xot/docs/class_inheritance_principles.md)
 - [XotBasePage](../xot/docs/filament/pages/xotbasepage.md)
-- [Principi di Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/class_inheritance_principles.md)
-- [XotBasePage](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/pages/xotbasepage.md)

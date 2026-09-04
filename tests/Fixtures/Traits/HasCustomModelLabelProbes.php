@@ -2,22 +2,79 @@
 
 declare(strict_types=1);
 
-/**
- * PSR-4 compliant re-exports from Stubs namespace.
- * Classes moved to Modules\Xot\Tests\Fixtures\Stubs for autoloading compliance.
- *
- * @deprecated Import directly from Stubs namespace in new code
- */
-
 namespace Modules\Xot\Tests\Fixtures\Traits;
 
-use Modules\Xot\Tests\Fixtures\Stubs\HasCustomModelLabelProbeBase;
-use Modules\Xot\Tests\Fixtures\Stubs\HasCustomModelLabelProbeWithLabels;
-use Modules\Xot\Tests\Fixtures\Stubs\HasCustomModelLabelProbeWithoutLabels;
+use Modules\Xot\Traits\Filament\HasCustomModelLabel;
 
-use function Safe\class_alias;
+abstract class HasCustomModelLabelProbeBase
+{
+    use HasCustomModelLabel;
 
-// Re-export for backward compatibility - import directly from Stubs namespace in new code
-class_alias(HasCustomModelLabelProbeBase::class, __NAMESPACE__.'\HasCustomModelLabelProbeBase');
-class_alias(HasCustomModelLabelProbeWithLabels::class, __NAMESPACE__.'\HasCustomModelLabelProbeWithLabels');
-class_alias(HasCustomModelLabelProbeWithoutLabels::class, __NAMESPACE__.'\HasCustomModelLabelProbeWithoutLabels');
+    protected static ?string $modelLabel = null;
+
+    protected static ?string $pluralModelLabel = null;
+
+    protected static ?string $navigationLabel = null;
+
+    public static function getModel(): string
+    {
+        return 'App\Models\User';
+    }
+}
+
+class ModelLabelFromPropertyProbe extends HasCustomModelLabelProbeBase
+{
+    protected static ?string $modelLabel = 'Custom Label';
+}
+
+class ModelLabelFromModelNameProbe extends HasCustomModelLabelProbeBase
+{
+    public static function getModel(): string
+    {
+        return 'App\Models\UserInvitation';
+    }
+}
+
+class PluralModelLabelFromPropertyProbe extends HasCustomModelLabelProbeBase
+{
+    protected static ?string $pluralModelLabel = 'Plural Labels';
+
+    public static function getModelLabel(): string
+    {
+        return 'Label';
+    }
+}
+
+class PluralModelLabelFromSingularProbe extends HasCustomModelLabelProbeBase
+{
+    public static function getModelLabel(): string
+    {
+        return 'Category';
+    }
+}
+
+class NavigationLabelFromPropertyProbe extends HasCustomModelLabelProbeBase
+{
+    protected static ?string $navigationLabel = 'Nav Label';
+
+    public static function getPluralModelLabel(): string
+    {
+        return 'Plurals';
+    }
+}
+
+class NavigationLabelFromPluralProbe extends HasCustomModelLabelProbeBase
+{
+    public static function getPluralModelLabel(): string
+    {
+        return 'Plurals';
+    }
+}
+
+class BreadcrumbProbe extends HasCustomModelLabelProbeBase
+{
+    public static function getModelLabel(): string
+    {
+        return 'Bread';
+    }
+}

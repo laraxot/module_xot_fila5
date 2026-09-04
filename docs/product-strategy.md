@@ -1,12 +1,3 @@
----
-title: "Xot - Product Strategy"
-module: xot
-type: product
-tags: [product, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Xot - Product Strategy
 
 > Strategia prodotto. Modulo Core Framework.

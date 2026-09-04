@@ -5,7 +5,7 @@ type: reference
 slug: phpstan-error
 description: 'modulo Geo'
 tags: [migrato-da-txt, xot]
-converted_from: phpstan-error.txt
+converted_from: phpstan_error.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---

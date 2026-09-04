@@ -17,7 +17,6 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 - **Level**: Maximum (10/10)
 - **Coverage**: 100% code analysis
 - **Last Check**: 2025-11-12
-- **Last Check**: [DATE]
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis
@@ -324,7 +323,6 @@ Il modulo Xot è il modulo foundation del progetto, contenente classi base, serv
 - **Level**: Maximum (10/10)
 - **Coverage**: 100% code analysis
 - **Last Check**: 2025-11-12
-- **Last Check**: [DATE]
 
 ### PHPMD Compliance: NOT ANALYZED
 - **Status**: Pending analysis

@@ -1,11 +1,14 @@
-https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
-
 ---
-
-## Appendice — contenuto migrato da `clean-architecture.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
+title: 'clean_architecture'
+module: Xot
+type: reference
+slug: clean-architecture
+description: '<!-- Contenuto migrato da _docs/clean_architecture.txt -->'
+tags: [migrato-da-txt, xot]
+converted_from: clean_architecture.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
 
 # clean_architecture
 

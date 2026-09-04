@@ -1,13 +1,10 @@
 ---
-title: 'elastic_search'
-module: Xot
+title: "Elastic search"
 type: reference
-slug: elastic-search
-description: '<!-- Contenuto migrato da _docs/elastic_search.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: elastic_search.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da elastic_search.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
 # elastic_search
@@ -39,6 +36,5 @@ https://gist.github.com/thomasjsn/48185612dc7abe857b9a0ae5716b86c3
 https://github.com/babenkoivan/scout-elasticsearch-driver
 
 https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
-
 
 meilisearch

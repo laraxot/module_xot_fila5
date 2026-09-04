@@ -5,7 +5,6 @@
 **Module Version**: 3.0.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./README.md) - Panoramica del framework Laraxot.
 1. [README.md](./readme.md) - Panoramica del framework Laraxot.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 12 & Stability.
 3. [super-mucca-methodology.md](./super-mucca-methodology.md) - La filosofia di sviluppo del progetto.
@@ -24,7 +23,6 @@
 ## 🛠️ **Utility & Trait**
 - 🧬 **[Trait Patterns](./traits-complete-guide.md)** - HasTeams, HasXotTable e altri trait core.
 - 🔧 **[HasXotTable Fixes](./phpstan-hasxottable-trait-fixes-february.md)** - Correzioni type safety per trait multi-contesto.
-- 🔧 **[HasXotTable Fixes](./phpstan-hasxottable-trait-fixes-february-2026.md)** - Correzioni type safety per trait multi-contesto.
 - 🐚 **[Bashscripts Organization](./bashscripts-organization.md)** - Strumenti CLI per la manutenzione.
 - 🚀 **[Safe Casting Actions](./safe-casting-actions.md)** - Gestione type-safe dei dati.
 
@@ -39,6 +37,4 @@
 - Tutti i moduli del sistema dipendono da **Xot**.
 
 ---
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

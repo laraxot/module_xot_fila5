@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\ColumnGroup;
+use Filament\Tables\Columns\Layout\Component;
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
 use Mockery;
@@ -27,7 +30,7 @@ class HasTableWithXotTestClass
     }
 
     /**
-     * @return array<int, mixed>
+     * @return array<string, Column|ColumnGroup|Component>
      */
     public function getTableColumns(): array
     {
@@ -129,7 +132,7 @@ class HasTableWithXotTestClass
      */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
-        return new Collection();
+        return new Collection;
     }
 
     public function getAllTableRecordsCount(): int

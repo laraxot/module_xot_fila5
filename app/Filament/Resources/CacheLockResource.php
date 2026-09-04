@@ -21,7 +21,7 @@ class CacheLockResource extends XotBaseResource
      * @return array<string, Component>
      */
     #[\Override]
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'key' => TextInput::make('key')->required()->maxLength(255),

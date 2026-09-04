@@ -239,5 +239,3 @@ class ValutazioneData extends Data
         ])->validate();
     }
 }
-
-```

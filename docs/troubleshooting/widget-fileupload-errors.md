@@ -26,10 +26,10 @@ Nel metodo che popola i dati del form (es. `getFormFill()`, `mount()`):
 public function getFormFill(): array
 {
     $model = $this->getFormModel();
-    
+
     if ($model->exists) {
         $data = $model->toArray();
-        
+
         // Converti campi file upload da stringhe ad array
         $attachments = $model::$attachments ?? [];
         foreach ($attachments as $attachment) {
@@ -37,10 +37,10 @@ public function getFormFill(): array
                 $data[$attachment] = [$data[$attachment]];
             }
         }
-        
+
         return $data;
     }
-    
+
     return [];
 }
 ```
@@ -59,7 +59,7 @@ Forms\Components\FileUpload::make($attachment)
         } else {
             $sessionFiles = [];
         }
-        
+
         $set($attachment, $sessionFiles);
         return $sessionFiles;
     })
@@ -113,16 +113,16 @@ trait HandlesFileUploadFields
     protected function normalizeFileUploadFields(array $data, ?array $fileFields = null): array
     {
         $fileFields = $fileFields ?? $this->getFileUploadFields();
-        
+
         foreach ($fileFields as $field) {
             if (isset($data[$field]) && is_string($data[$field])) {
                 $data[$field] = [$data[$field]];
             }
         }
-        
+
         return $data;
     }
-    
+
     protected function getFileUploadFields(): array
     {
         $model = $this->getFormModel();
@@ -139,13 +139,13 @@ public function getFileUploadFieldsAsArrays(array $fields = null): array
 {
     $fields = $fields ?? static::$attachments ?? [];
     $data = $this->toArray();
-    
+
     foreach ($fields as $field) {
         if (isset($data[$field]) && is_string($data[$field])) {
             $data[$field] = [$data[$field]];
         }
     }
-    
+
     return $data;
 }
 ```
@@ -159,14 +159,14 @@ public function getFileUploadFieldsAsArrays(array $fields = null): array
 public function mount()
 {
     $data = $this->getFormFill();
-    
+
     foreach (['health_card', 'identity_document'] as $field) {
         if (isset($data[$field])) {
             Log::info("Field {$field} type: " . gettype($data[$field]));
             Log::info("Field {$field} value: " . json_encode($data[$field]));
         }
     }
-    
+
     $this->form->fill($data);
 }
 ```
@@ -177,8 +177,6 @@ public function mount()
 -- Controlla come sono salvati i campi nel database
 SELECT health_card, identity_document, isee_certificate
 FROM users
-SELECT health_card, identity_document, isee_certificate 
-FROM users 
 WHERE id = 'specific-user-id';
 ```
 
@@ -209,13 +207,6 @@ public function test_file_upload_fields_are_converted_to_arrays()
 
     $data = $widget->getFormFill();
 
-
-    
-    $widget = new RegistrationWidget();
-    $widget->type = 'patient';
-    // Setup del widget...
-    
-    $data = $widget->getFormFill();
     $this->assertIsArray($data['health_card']);
     $this->assertIsArray($data['identity_document']);
     $this->assertEquals(['session-uploads/test.pdf'], $data['health_card']);
@@ -230,9 +221,9 @@ public function test_registration_widget_loads_without_errors_for_existing_user(
     $user = User::factory()->create([
         'health_card' => 'session-uploads/test.pdf',
     ]);
-    
+
     $response = $this->get("/auth/patient/register?email={$user->email}&token={$user->remember_token}");
-    
+
     $response->assertStatus(200);
     // Non dovrebbe esserci errore foreach()
 }
@@ -243,9 +234,6 @@ public function test_registration_widget_loads_without_errors_for_existing_user(
 - [Filament FileUpload Documentation](https://filamentphp.com/project_docs/forms/fields/file-upload)
 - [Laravel Eloquent Accessors](https://laravel.com/project_docs/eloquent-accessors)
 - [Livewire File Uploads](https://livewire.laravel.com/project_docs/file-uploads)
-- [Filament FileUpload Documentation](https://filamentphp.com/docs/forms/fields/file-upload)
-- [Laravel Eloquent Accessors](https://laravel.com/docs/eloquent-accessors)
-- [Livewire File Uploads](https://livewire.laravel.com/docs/file-uploads)
 
 ## Casi Correlati
 
@@ -260,9 +248,4 @@ Questo pattern si applica anche a:
 **Tipo**: Troubleshooting Guide
 **Modulo**: Xot (Base)
 **Applicabilità**: Tutti i widget con FileUpload che caricano dati esistenti
-**Aggiornato**: 2025-01-07
-
-**Tipo**: Troubleshooting Guide  
-**Modulo**: Xot (Base)  
-**Applicabilità**: Tutti i widget con FileUpload che caricano dati esistenti  
 **Aggiornato**: 2025-01-07

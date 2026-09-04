@@ -10,7 +10,6 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -157,7 +156,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function schema(Schema $schema): Schema
     {
-        $schema = $schema->components($this->getXotFormSchema());
+        $schema = $schema->components($this->resolveFormSchemaForXotPage());
 
         $schema->statePath('data');
 
@@ -190,13 +189,23 @@ abstract class XotBasePage extends Page implements HasForms
     }
 
     /**
-     * Schema form della pagina (API Filament v5 — evita getFormSchema() deprecato).
+     * Resolve concrete page schema without invoking deprecated Filament hook directly.
      *
-     * @return array<int|string, Component>
+     * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-    protected function getXotFormSchema(): array
+    private function resolveFormSchemaForXotPage(): array
     {
-        return [];
+        $method = new \ReflectionMethod($this, 'getFormSchema');
+        $declaringClass = $method->getDeclaringClass()->getName();
+
+        if (self::class === $declaringClass || str_starts_with($declaringClass, 'Filament\\')) {
+            return [];
+        }
+
+        /** @var array<int|string, \Filament\Schemas\Components\Component> $schema */
+        $schema = $method->invoke($this);
+
+        return $schema;
     }
 
     /**
@@ -296,7 +305,7 @@ abstract class XotBasePage extends Page implements HasForms
         }
 
         /** @var class-string<Model> $modelClass */
-        $instance = new $modelClass();
+        $instance = new $modelClass;
         if (! $instance instanceof Model) {
             throw new \LogicException("Class {$modelClass} must extend Eloquent Model");
         }
@@ -320,7 +329,7 @@ abstract class XotBasePage extends Page implements HasForms
     {
         return [
             Action::make('save')
-                // ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
                 ->submit('save'),
         ];
     }

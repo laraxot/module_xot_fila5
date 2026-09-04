@@ -26,6 +26,7 @@ class SafeIntCastAction
     /**
      * Converte in modo sicuro un valore mixed in int.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 0)
      * @return int Il valore convertito in int
      */
@@ -73,6 +74,7 @@ class SafeIntCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 0)
      * @return int Il valore convertito in int
      */
@@ -84,6 +86,7 @@ class SafeIntCastAction
     /**
      * Converte un valore in int con validazione di range.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  int  $min  Valore minimo consentito
      * @param  int  $max  Valore massimo consentito
      * @param  int|null  $default  Valore di default se la conversione fallisce
@@ -100,6 +103,7 @@ class SafeIntCastAction
     /**
      * Metodo statico di convenienza per cast con range.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  int  $min  Valore minimo consentito
      * @param  int  $max  Valore massimo consentito
      * @param  int|null  $default  Valore di default se la conversione fallisce
@@ -113,6 +117,7 @@ class SafeIntCastAction
     /**
      * Converte un valore in ID positivo (sempre >= 1).
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 1)
      * @return int Il valore convertito come ID positivo
      */
@@ -126,6 +131,7 @@ class SafeIntCastAction
     /**
      * Metodo statico per cast come ID positivo.
      *
+     * @param  mixed  $value  Il valore da convertire
      * @param  int|null  $default  Valore di default se la conversione fallisce (default: 1)
      * @return int Il valore convertito come ID positivo
      */

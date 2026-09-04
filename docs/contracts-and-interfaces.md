@@ -46,7 +46,6 @@ interface UserContract extends
     // API Token Management
     public function tokens(): MorphMany;
     public function createToken($name, array $scopes = []): PersonalAccessTokenResult;
-    public function createToken(string $name, array $scopes = []): Token;
     public function token(): ?Token;
 
     // Device Management

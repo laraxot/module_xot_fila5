@@ -1,12 +1,3 @@
----
-title: "Product Docs Governance"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Product Docs Governance
 
 Regola operativa per questo repository:

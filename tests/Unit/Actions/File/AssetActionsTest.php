@@ -15,10 +15,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    $this->markTestSkipped('fragile offline mocks File/Module/DB');
-});
-
 it('handles absolute urls in AssetAction', function (): void {
     $action = app(AssetAction::class);
     $url = 'https://example.com/asset.js';
@@ -57,7 +53,7 @@ it('resolves module assets correctly in AssetAction', function (): void {
     app()->instance(GetModulePathAction::class, $getModulePathAction);
 
     // Replace FixPathAction with a spy (identity function)
-    $fixPathAction = new class() extends FixPathAction
+    $fixPathAction = new class extends FixPathAction
     {
         public function execute(string $path): string
         {

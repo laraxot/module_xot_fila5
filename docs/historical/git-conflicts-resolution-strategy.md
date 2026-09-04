@@ -1,12 +1,3 @@
----
-title: "Strategia Risoluzione Conflitti Git - Modulo Xot"
-module: xot
-type: product
-tags: [product, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Strategia Risoluzione Conflitti Git - Modulo Xot
 
 ## Contesto

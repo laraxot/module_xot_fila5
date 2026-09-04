@@ -214,7 +214,7 @@ class PerformanceEvaluation extends BaseModel
     {
         // Calcola il punteggio totale
     }
-    
+
     public function getEvaluatorName(): string
     {
         // Restituisce il nome del valutatore
@@ -231,7 +231,7 @@ class UserProfile extends BaseModel
     {
         return $this->first_name . ' ' . $this->last_name;
     }
-    
+
     public function getUserEmail(): string
     {
         return $this->email;
@@ -248,12 +248,12 @@ class User extends BaseModel
     {
         return $this->belongsTo(UserProfile::class);
     }
-    
+
     public function teams(): BelongsToMany
     {
         return $this->belongsToMany(Team::class);
     }
-    
+
     public function notifications(): HasMany
     {
         return $this->hasMany(Notification::class);
@@ -316,15 +316,9 @@ parameters:
 - [Architettura Modulo Xot](architecture.md)
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
-- [Best Practices Sistema](../../../docs/core/best-practices.md)
-- [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
-**Ultimo aggiornamento:** Gennaio 2025  
-**Versione:** 2.0 - Consolidata DRY + KISS
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
 **Versione:** 2.0 - Consolidata DRY + KISS

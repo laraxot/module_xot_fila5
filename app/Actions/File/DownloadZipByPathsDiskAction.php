@@ -25,7 +25,7 @@ class DownloadZipByPathsDiskAction
         $zipPath = 'temp/'.$zipFileName;
 
         // Crea un file temporaneo per lo ZIP usando Storage
-        $zip = new \ZipArchive();
+        $zip = new \ZipArchive;
         $tempFilePath = storage_path('app/'.$zipPath);
 
         // Assicurati che la directory temp esista
@@ -41,7 +41,7 @@ class DownloadZipByPathsDiskAction
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {
-                    throw new \RuntimeException('Removed debug dddx');
+                    dddx(['filePath' => $filePath]);
                 }
             }
             $zip->close();

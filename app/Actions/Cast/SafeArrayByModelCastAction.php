@@ -32,11 +32,10 @@ class SafeArrayByModelCastAction
     public function safeExecute(Model $model): array
     {
         $data = [];
-        foreach (array_keys($model->getAttributes()) as $key) {
+        foreach ($model->getAttributes() as $key => $value) {
             try {
                 $data[$key] = $model->getAttribute($key);
             } catch (\ValueError|\Error) {
-                // Skip attributes whose accessor/cast cannot resolve the raw value.
             }
         }
 

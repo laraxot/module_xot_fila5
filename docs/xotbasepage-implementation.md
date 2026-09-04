@@ -6,7 +6,7 @@ la classe `XotBasePage` è una classe base astratta per tutte le pagine filament
 ## struttura
 la classe `XotBasePage` estende `Filament\Pages\Page` e si trova in:
 ```
-/var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Pages/XotBasePage.php
+Modules/Xot/app/Filament/Pages/XotBasePage.php
 ```
 
 ## namespace
@@ -70,7 +70,6 @@ class SettingsPage extends XotBasePage
 
 ```php
 namespace Modules\<nome progetto>\Filament\Pages;
-namespace Modules\SaluteOra\Filament\Pages;
 
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Filament\Forms\Components\TextInput;
@@ -82,8 +81,6 @@ class DashboardSettings extends XotBasePage
 
     protected static string $view = '<nome progetto>::filament.pages.dashboard-settings';
 
-    
-    protected static string $view = 'saluteora::filament.pages.dashboard-settings';
     protected function getFormFields(): array
     {
         return [
@@ -106,7 +103,7 @@ class DashboardSettings extends XotBasePage
             ]
         ];
     }
-    
+
     public function submit(): void
     {
         $this->form->validate();
@@ -177,8 +174,6 @@ class DashboardSettingsPolicy
 ## collegamento ad altre documentazioni
 - [pattern di estensione filament](../Xot/docs/filament_extension_pattern.md)
 - [best practices filament](../<nome progetto>/docs/filament-best-practices.md)
-- [pattern di estensione filament](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament_extension_pattern.md)
-- [best practices filament](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/filament-best-practices.md)
 
 ## ATTENZIONE: errori critici da evitare
 - NON dichiarare mai abstract getFormSchema() in XotBasePage: la classe base Filament lo implementa già. Fornire sempre una implementazione di default (array vuoto).

@@ -15,9 +15,26 @@ return [
         'artisan-commands' => [
             'title' => 'Gestione Comandi Artisan',
             'description' => 'Esegui e gestisci i comandi Artisan',
-            'commands' => [],
+            'commands' => [
+                'migrate' => ['label' => 'Migrazione Database', 'description' => 'Esegue le migrazioni del database'],
+                'optimize' => ['label' => 'Ottimizzazione', 'description' => 'Ottimizza le prestazioni dell\'applicazione'],
+                'cache' => ['label' => 'Gestione Cache', 'description' => 'Comandi per la gestione della cache'],
+            ],
+            'notifications' => ['success' => 'Comando eseguito con successo', 'error' => 'Errore nell\'esecuzione del comando'],
         ],
     ],
+    'actions' => [
+        'queue_restart' => ['label' => 'queue_restart', 'icon' => 'queue_restart', 'tooltip' => 'queue_restart'],
+        'event_cache' => ['label' => 'event_cache', 'icon' => 'event_cache', 'tooltip' => 'event_cache'],
+        'route_cache' => ['label' => 'route_cache', 'icon' => 'route_cache', 'tooltip' => 'route_cache'],
+        'config_cache' => ['label' => 'config_cache', 'icon' => 'config_cache', 'tooltip' => 'config_cache'],
+        'view_cache' => ['label' => 'view_cache', 'icon' => 'view_cache', 'tooltip' => 'view_cache'],
+        'filament_optimize' => ['label' => 'filament_optimize', 'icon' => 'filament_optimize', 'tooltip' => 'filament_optimize'],
+        'filament_upgrade' => ['label' => 'filament_upgrade', 'icon' => 'filament_upgrade', 'tooltip' => 'filament_upgrade'],
+        'migrate' => ['label' => 'migrate', 'icon' => 'migrate', 'tooltip' => 'migrate'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+    ],
+    'title' => 'artisan commands manager',
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [

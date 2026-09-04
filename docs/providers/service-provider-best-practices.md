@@ -27,9 +27,8 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 - Chiarire la logica dei fallback e dei path di default
 
 ## Backlink
-- [Torna a README.md del modulo Xot](../README.md)
+- [Torna a README.md del modulo Xot](../readme.md)
 - [Collegamento a docs/links.md della root](../../../../project_docs/links.md)
-- [Collegamento a docs/links.md della root](../../../../docs/links.md)
 
 ## Utilizzo di GetModulePathByGeneratorAction
 
@@ -147,9 +146,9 @@ public function execute(string $moduleName, string $generatorPath): string
 
     $res = module_path($moduleName, $relativePath);
     Assert::string($res);
-    
+
     Assert::directory($res, 'The path '.$res.' is not a directory ['.$moduleName.']['.$generatorPath.']');
-    
+
     return $res;
 }
 ```
@@ -195,7 +194,7 @@ Il provider `XotBaseServiceProvider` rappresenta la base architetturale per tutt
 - Chiarire la logica dei fallback e dei path di default
 
 ## Backlink
-- [Torna a README.md del modulo Xot](../README.md)
+- [Torna a README.md del modulo Xot](../readme.md)
 - [Collegamento a docs/links.md della root](../../../../../docs/links.md)
 
 ## Utilizzo di GetModulePathByGeneratorAction

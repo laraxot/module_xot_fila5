@@ -27,15 +27,6 @@ Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono esser
 - Modules/<nome progetto>/Filament/Resources/UserResource.php
 - Modules/<nome progetto>/Enums/UserType.php
 
-- Modules/SaluteOra/app/Filament/Resources/UserResource.php
-- Modules/SaluteOra/app/Filament/Resources/UserResource/Pages/CreateUser.php
-- Modules/SaluteOra/app/Enums/UserType.php
-- Modules/SaluteOra/app/Enums/UserState.php
-
-## Esempio errato
-- Modules/SaluteOra/Filament/Resources/UserResource.php
-- Modules/SaluteOra/Enums/UserType.php
-
 Questa regola garantisce coerenza, manutenibilità e rispetto delle convenzioni PSR-4 e delle best practice del progetto.
 
 Consulta anche la documentazione specifica dei moduli per dettagli e casi particolari.
@@ -92,7 +83,6 @@ class User extends Model {
 ## Docs collegate
 - [.windsurf/rules/model-states.mdc](../../../.windsurf/rules/model-states.mdc)
 - [<nome progetto>/docs/uso-label-filament.mdc](../../<nome progetto>/docs/uso-label-filament.mdc)
-- [SaluteOra/docs/uso-label-filament.mdc](../../SaluteOra/docs/uso-label-filament.mdc)
 - https://github.com/spatie/laravel-model-states
 
 ---
@@ -124,13 +114,6 @@ class User extends Model {
 
 [← Torna a <nome progetto>/docs](../../<nome progetto>/docs/uso-label-filament.mdc)
 
-- https://github.com/spatie/laravel-model-states
-
-- [SaluteOra/docs/uso-label-filament.mdc](../../SaluteOra/docs/uso-label-filament.mdc)
-- https://github.com/spatie/laravel-model-states
-
-[← Torna a SaluteOra/docs](../../SaluteOra/docs/uso-label-filament.mdc)
-
 # Regola sui Path dei File di Codice nei Moduli Laravel
 
 ## Regola Fondamentale
@@ -153,11 +136,6 @@ Modules/<nome progetto>/app/Actions/Patient/Calendar/FetchEventsAction.php
 
 // Errato
 Modules/<nome progetto>/Actions/Patient/Calendar/FetchEventsAction.php
-
-Modules/SaluteOra/app/Actions/Patient/Calendar/FetchEventsAction.php
-
-// Errato
-Modules/SaluteOra/Actions/Patient/Calendar/FetchEventsAction.php
 ```
 
 ## Collegamenti
@@ -184,7 +162,6 @@ final class FetchEventsAction
 ```
 
 Vedi anche: [<nome progetto>/docs/queueable-actions-guide.md](../../<nome progetto>/docs/queueable-actions-guide.md)
-Vedi anche: [SaluteOra/docs/queueable-actions-guide.md](../../SaluteOra/docs/queueable-actions-guide.md)
 
 # Regola Namespace per Actions
 
@@ -201,10 +178,3 @@ namespace Modules\<nome progetto>\App\Actions\Patient\Calendar;
 ```
 
 Vedi anche: <nome progetto>/docs/directory-structure.md
-
-namespace Modules\SaluteOra\Actions\Patient\Calendar;
-// Errato
-namespace Modules\SaluteOra\App\Actions\Patient\Calendar;
-```
-
-Vedi anche: SaluteOra/docs/directory-structure.md

@@ -1,12 +1,3 @@
----
-title: "SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX"
-module: xot
-type: integration
-tags: [integrations, modules, xot]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica

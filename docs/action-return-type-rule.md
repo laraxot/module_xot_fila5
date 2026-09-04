@@ -1,6 +1,5 @@
 # Rule: File-generating Action closures MUST return StreamedResponse
 
-## Date: February 2026
 
 ## Rule
 
@@ -55,7 +54,6 @@ use Illuminate\Http\StreamedResponse;
 
 - `Modules/Xot/app/Filament/Actions/Header/ExportXlsAction.php` — returns result of `ExportXlsByCollection::execute()`
 - `Modules/Progressioni/app/Filament/Resources/SchedaResource/Actions/Header/MakePdfAction.php` — returns result of `PdfByViewAction::execute()`
-- `Modules/Progressioni/app/Filament/Resources/SchedeResource/Actions/Header/MakePdfAction.php` — returns result of `PdfByViewAction::execute()`
 - `Modules/IndennitaCondizioniLavoro/app/Filament/Resources/CondizioniLavoroResource/Pages/ListCondizioniLavoros.php` — returns `StreamedResponse`
 
 ## Links

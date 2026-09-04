@@ -17,7 +17,7 @@ return [
     ],
     'environment' => [
         'title' => 'Ortam Ayarları',
-        'save' => ".env'yi Kaydet",
+        'save' => '.env\'yi Kaydet',
         'success' => '.env dosyanız kaydedildi.',
         'errors' => '.env dosyanız kaydedilemedi, lütfen manuel yaratınız.',
     ],
@@ -26,5 +26,17 @@ return [
         'finished' => 'Uygulama başarıyla yüklendi.',
         'exit' => 'Çıkış yapmak için tıklayınız',
     ],
-
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
 ];

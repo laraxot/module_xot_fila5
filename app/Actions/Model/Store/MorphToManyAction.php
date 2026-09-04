@@ -36,7 +36,16 @@ class MorphToManyAction
             return;
         }
 
-        throw new \RuntimeException('Removed debug dddx');
+        dddx([
+            'message' => 'wip',
+            'row' => $model,
+            'relation' => $relationDTO,
+            'relation_rows' => $relationDTO->rows->exists(),
+            't' => $model->{$relationDTO->name},
+        ]);
+
+        dddx('wip');
+
         /*
          * foreach ($data as $k => $v) {
          * if (\is_array($v)) {

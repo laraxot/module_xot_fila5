@@ -1,15 +1,14 @@
-da tenere d'occhio .. comprati
-https://livewiredemos.com/components
-
-
-https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
-
 ---
-
-## Appendice — contenuto migrato da `livewire-components.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
+title: 'livewire_components'
+module: Xot
+type: reference
+slug: livewire-components
+description: '<!-- Contenuto migrato da _docs/livewire_components.txt -->'
+tags: [migrato-da-txt, xot]
+converted_from: livewire_components.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
 
 # livewire_components
 

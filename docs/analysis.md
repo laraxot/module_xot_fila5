@@ -75,20 +75,6 @@ Modules/Xot/
 * [analysis.md](../../../Media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../Themes/One/docs/analysis.md)
 
-* [analysis.md](../../../notify/docs/analysis.md)
-* [analysis.md](../../../notify/docs/phpstan/analysis.md)
-* [analysis.md](../../../xot/docs/analysis.md)
-* [analysis.md](../../../xot/docs/phpstan/analysis.md)
-* [analysis.md](../../../user/docs/analysis.md)
-* [analysis.md](../../../user/docs/phpstan/analysis.md)
-* [analysis.md](../../../ui/docs/analysis.md)
-* [analysis.md](../../../ui/docs/phpstan/analysis.md)
-* [analysis.md](../../../job/docs/analysis.md)
-* [analysis.md](../../../job/docs/phpstan/analysis.md)
-* [analysis.md](../../../media/docs/analysis.md)
-* [analysis.md](../../../media/docs/phpstan/analysis.md)
-* [analysis.md](../../../../themes/one/docs/analysis.md)
-
 ### Versione Incoming
 
 ---

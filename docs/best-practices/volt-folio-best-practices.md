@@ -1,7 +1,6 @@
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo Xot](./README.md)
 - [README modulo Xot](./readme.md)
 - [Struttura dei moduli](./module_structure.md)
 - [Convenzioni di Path](../user/docs/path_conventions.md)

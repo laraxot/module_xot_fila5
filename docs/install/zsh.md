@@ -1,4 +1,3 @@
-
 link: https://www.reddit.com/r/bash/comments/12lz3kb/is_it_possible_to_make_zsh_look_like_gitbash/
 
 touch ~/.zshrc
@@ -19,16 +18,5 @@ PROMPT='%F{green}%n@%m%f %F{magenta}arm64 %F{yellow}%~ %F{cyan}${vcs_info_msg_0_
 * [zsh.md](../../../xot/project_docs/ubuntu/zsh.md)
 
 ### Versione Incoming
-
----
-
-
-## Collegamenti tra versioni di zsh.md
-* [zsh.md](../../../Xot/docs/install/zsh.md)
-* [zsh.md](../../../Xot/docs/ubuntu/zsh.md)
-
-
-### Versione Incoming
-
 
 ---

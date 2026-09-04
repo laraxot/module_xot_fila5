@@ -5,30 +5,28 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
 /**
- * Include gia' HasFactory (via newFactory override con GetFactoryAction).
- * Model che usano HasXotFactory NON devono aggiungere `use HasFactory;`
- * ne' ridefinire newFactory(): la factory viene risolta/generata da
- * GetFactoryAction seguendo le convenzioni Laraxot.
+ * Provides factory support for models using GetFactoryAction.
  *
- * @use EloquentHasFactory<Factory<static>>
+ * Usage: just use the trait in your model. No type parameters needed.
+ *
+ * @mixin Model
  */
 trait HasXotFactory
 {
-    /** @use EloquentHasFactory<Factory<static>> */
-    use EloquentHasFactory {
-        newFactory as parentNewFactory;
-    }
-
     /**
+     * Create a new factory instance for the model.
+     *
      * @return Factory<static>
      */
-    protected static function newFactory(): Factory
+    protected static function newFactory()
     {
-        /** @var Factory<static> */
-        return app(GetFactoryAction::class)->execute(static::class);
+        /** @var Factory<static> $factory */
+        $factory = app(GetFactoryAction::class)->execute(static::class);
+
+        return $factory;
     }
 }

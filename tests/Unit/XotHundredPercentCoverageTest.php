@@ -270,7 +270,7 @@ PHP);
             FileAction::getFileNameByClassName(XotData::class)
         );
 
-        $action = new FileAction();
+        $action = new FileAction;
         try {
             $action->execute();
         } catch (\Throwable) {
@@ -278,7 +278,7 @@ PHP);
     });
 
     test('XotData rami SSL tenant profile team child e update', function (): void {
-        $xot = new XotData();
+        $xot = new XotData;
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->adm_theme = 'One';
@@ -317,7 +317,7 @@ PHP);
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
-        $meta = new MetatagData();
+        $meta = new MetatagData;
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Desc';
@@ -353,7 +353,7 @@ PHP);
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
-        $mw = new SecurityMiddleware();
+        $mw = new SecurityMiddleware;
 
         // GET ok
         $ok = Request::create('/dashboard', 'GET', [], [], [], [
@@ -413,7 +413,7 @@ PHP);
     });
 
     test('XotBaseMigration reflection helper schema e blueprint', function (): void {
-        $migration = new class() extends XotBaseMigration
+        $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
 

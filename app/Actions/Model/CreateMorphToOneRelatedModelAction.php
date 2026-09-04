@@ -20,7 +20,10 @@ class CreateMorphToOneRelatedModelAction
     {
         $this->assertHasCreate($relation);
 
-        return $relation->create($attributes);
+        $created = $relation->create($attributes);
+        Assert::isInstanceOf($created, Model::class);
+
+        return $created;
     }
 
     /**

@@ -19,7 +19,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 class MyCustomWidget extends XotBaseWidget
 {
     protected static string $view = 'my-module::widgets.my-custom-widget';
-    
+
     protected function getData(): array
     {
         return [
@@ -36,5 +36,3 @@ class MyCustomWidget extends XotBaseWidget
 - [Documentazione Filament Widgets](../xot/docs/filament/widgets/index.md)
 - [Documentazione Filament Widgets](../xot/docs/filament/widgets/index.md)
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-- [Documentazione Filament Widgets](/var/www/html/base_generic/laravel/Modules/Xot/docs/filament/widgets/index.md)
-- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)

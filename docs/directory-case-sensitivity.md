@@ -5,15 +5,15 @@
 Sono stati rilevati diversi problemi di struttura delle directory all'interno dei moduli Laravel:
 
 1. **Case Sensitivity Errata**:
-   - **Percorso ERRATO**: `Modules/User/Resources`
-   - **Percorso CORRETTO**: `Modules/User/resources`
+   - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Resources`
+   - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/resources`
 
-   - **Percorso ERRATO**: `Modules/User/Config`
-   - **Percorso CORRETTO**: `Modules/User/config`
+   - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Config`
+   - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/config`
 
 2. **Posizione Errata del Codice PHP**:
-   - **Percorso ERRATO**: `Modules/User/Filament/Widgets`
-   - **Percorso CORRETTO**: `Modules/User/app/Filament/Widgets`
+   - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets`
+   - **Percorso CORRETTO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament/Widgets`
 
 ## Regole Fondamentali
 
@@ -81,10 +81,10 @@ Per verificare la corretta struttura delle directory nei moduli:
 
 ```bash
 # Verifica case sensitivity errata
-find Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
+find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
 
 # Verifica codice PHP fuori da app/
-find Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
+find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
 ```
 
 ## Come Correggere
@@ -93,21 +93,21 @@ find Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -
 
 ```bash
 # Rinomina la directory (su sistemi Linux/Unix)
-mv Modules/User/Resources Modules/User/resources_temp
-mv Modules/User/resources_temp Modules/User/resources
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Resources /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/resources
 
-mv Modules/User/Config Modules/User/config_temp
-mv Modules/User/config_temp Modules/User/config
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Config /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp /var/www/html/base_<nome progetto>/laravel/Modules/User/config
 ```
 
 ### Per problemi di posizione del codice PHP:
 
 ```bash
 # Crea la directory app se non esiste
-mkdir -p Modules/User/app/Filament
+mkdir -p /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament
 
 # Sposta i file nella posizione corretta
-mv Modules/User/Filament/Widgets Modules/User/app/Filament/
+mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament/
 ```
 
 ## Best Practices
@@ -122,8 +122,6 @@ mv Modules/User/Filament/Widgets Modules/User/app/Filament/
 
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
-- [DIRECTORY-STRUCTURE-GUIDE.md](./directory-structure-guide.md) - Guida completa alla struttura delle directory
-- [MODULE-STRUCTURE.md](./module-structure.md) - Struttura standard dei moduli
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -136,9 +134,4 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
-
-- [README.md](./readme.md) - Indice principale della documentazione
-- [MODULE_STRUCTURE.md](./module_structure.md) - Struttura standard dei moduli
-- [NAMESPACE-RULES.md](./namespace-rules.md) - Regole per i namespace nei moduli
-- [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./folio_volt_filament_integration.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget

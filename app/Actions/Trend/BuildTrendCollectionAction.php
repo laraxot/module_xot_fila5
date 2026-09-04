@@ -10,10 +10,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use InvalidArgumentException;
 use Modules\Xot\Datas\TrendData;
 use Spatie\QueueableAction\QueueableAction;
-use UnexpectedValueException;
 
 class BuildTrendCollectionAction
 {
@@ -47,23 +45,18 @@ class BuildTrendCollectionAction
             'max' => $trend->max($aggregateColumn),
             'sum' => $trend->sum($aggregateColumn),
             'count' => $trend->count($aggregateColumn),
-            default => throw new InvalidArgumentException('Unsupported trend aggregate.'),
+            default => throw new \InvalidArgumentException('Unsupported trend aggregate.'),
         };
 
         return $values
             ->map(static function (mixed $value): TrendData {
                 if (! $value instanceof TrendValue) {
-                    throw new UnexpectedValueException('Trend returned an invalid value.');
-                }
-
-                $aggregate = $value->aggregate;
-                if ($aggregate !== null && ! is_int($aggregate) && ! is_float($aggregate) && ! is_string($aggregate)) {
-                    throw new UnexpectedValueException('Trend returned an invalid aggregate.');
+                    throw new \UnexpectedValueException('Trend returned an invalid value.');
                 }
 
                 return TrendData::from([
                     'date' => $value->date,
-                    'aggregate' => $aggregate,
+                    'aggregate' => $value->aggregate,
                 ]);
             })
             ->values();

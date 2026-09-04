@@ -6,9 +6,7 @@ namespace Modules\Xot\Traits\Filament;
 
 use Illuminate\Support\Str;
 
-/**
- * @phpstan-ignore trait.unused
- */
+/** @phpstan-ignore trait.unused */
 trait HasCustomModelLabel
 {
     /**

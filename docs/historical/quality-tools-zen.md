@@ -274,8 +274,6 @@ echo "✅ Quality checks passed!"
 
 ### CI/CD Pipeline
 
-```
-
 ```yaml
 # .github/workflows/quality.yml
 steps:

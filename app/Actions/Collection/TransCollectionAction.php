@@ -31,20 +31,22 @@ class TransCollectionAction
 
         $this->transKey = $transKey;
 
-        // Il cast a stringa precede la traduzione: `trans()` riceve così `string`,
-        // e la collection su cui mappa è `Collection<int|string, string>`.
-        return $collection
-            ->map(SafeStringCastAction::cast(...))
-            ->map($this->trans(...));
+        return $collection->map($this->trans(...));
     }
 
     /**
      * Traduce un singolo elemento.
      *
+     * @param  mixed  $item  L'elemento da tradurre
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
-    public function trans(string $item): string
+    public function trans(mixed $item): string
     {
+        // Converte l'item in stringa se non lo è già
+        if (! \is_string($item)) {
+            $item = SafeStringCastAction::cast($item);
+        }
+
         if (empty($item) || $this->transKey === null) {
             return $item;
         }

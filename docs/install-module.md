@@ -1,18 +1,13 @@
 ---
-title: 'install_module'
-module: Xot
+title: "Install module"
 type: reference
-slug: install-module
-description: '<!-- Contenuto migrato da _docs/install_module.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: install_module.txt
-created: 2026-08-24
-updated: 2026-08-24
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
-# install_module
-
-<!-- Contenuto migrato da _docs/install_module.txt -->
+# Install module
 
  public function test(){
 

@@ -9,10 +9,9 @@ use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 
-/**
- * @phpstan-ignore trait.unused
- */
+/** @phpstan-ignore trait.unused */
 trait HasTableFunctionsTrait
 {
     /**
@@ -45,9 +44,7 @@ trait HasTableFunctionsTrait
                 ])),
             'delete' => Action::make('delete')
                 ->label('Elimina')
-                ->action(function (Model $record): void {
-                    $record->delete();
-                })
+                ->action(fn (Model $record) => $record->delete())
                 ->requiresConfirmation(),
         ];
     }
@@ -62,13 +59,7 @@ trait HasTableFunctionsTrait
         return [
             'delete' => BulkAction::make('delete')
                 ->label('Elimina selezionati')
-                ->action(function (iterable $records): void {
-                    foreach ($records as $record) {
-                        if ($record instanceof Model) {
-                            $record->delete();
-                        }
-                    }
-                })
+                ->action(fn (Collection $records) => $records->each->delete())
                 ->requiresConfirmation(),
         ];
     }

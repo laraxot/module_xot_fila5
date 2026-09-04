@@ -1,13 +1,14 @@
-
-componenti da prendere
-https://github.com/christophrumpel/larastreamers/tree/main/resources/views
-
 ---
-
-## Appendice — contenuto migrato da `theme-livewire.txt`
-
-> Il file `.txt` gemello conteneva materiale che questo documento non riportava.
-> È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
+title: 'theme_livewire'
+module: Xot
+type: reference
+slug: theme-livewire
+description: '<!-- Contenuto migrato da _docs/theme_livewire.txt -->'
+tags: [migrato-da-txt, xot]
+converted_from: theme_livewire.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
 
 # theme_livewire
 

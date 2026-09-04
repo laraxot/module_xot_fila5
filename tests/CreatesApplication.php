@@ -9,6 +9,12 @@ use Illuminate\Foundation\Application;
 
 use function Safe\realpath;
 
+/**
+ * Trait CreatesApplication.
+ *
+ * Provides the createApplication method for test cases.
+ * This trait is used by all module test cases to bootstrap the Laravel application.
+ */
 trait CreatesApplication
 {
     /**

@@ -20,8 +20,6 @@
 - Per esempi specifici, vedere la documentazione nei singoli moduli:
   - [Patient: Regole Modelli](../../Patient/project_docs/models.md)
   - [Notify Namespace Rules](../../Notify/project_docs/NAMESPACE_RULES.md)
-  - [Patient: Regole Modelli](../../patient/project_docs/models.md)
-  - [Notify Namespace Rules](../../notify/project_docs/namespace_rules.md)
 
 ## Collegamenti
 - [Regole Namespace Moduli - Root Docs](../../../project_docs/namespace-moduli.md)
@@ -29,6 +27,5 @@
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
-**Ultimo aggiornamento:** [DATE]
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.

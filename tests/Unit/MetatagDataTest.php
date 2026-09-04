@@ -2,11 +2,34 @@
 
 declare(strict_types=1);
 
+use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\MetatagData;
+use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-test('getThemeColors restituisce i colori configurati', function () {
-    $metatagData = new MetatagData();
+uses(TestCase::class);
+
+test('MetatagData puo essere istanziata', function () {
+    $metatagData = new MetatagData;
+    Assert::assertInstanceOf(MetatagData::class, $metatagData);
+});
+
+test('getFilamentColors restituisce i colori Filament corretti', function (): void {
+    $metatagData = new MetatagData;
+    $colors = $metatagData->getFilamentColors();
+
+    Assert::assertArrayHasKey('danger', $colors);
+    Assert::assertArrayHasKey('gray', $colors);
+    Assert::assertArrayHasKey('info', $colors);
+    Assert::assertArrayHasKey('primary', $colors);
+    Assert::assertArrayHasKey('success', $colors);
+    Assert::assertArrayHasKey('warning', $colors);
+    Assert::assertIsString($colors['primary'][600] ?? null);
+    Assert::assertEquals(app(PaDesignColorsAction::class)->filamentPalette(), $colors);
+});
+
+test('getColors gestisce correttamente i colori personalizzati', function () {
+    $metatagData = new MetatagData;
     $metatagData->colors = [
         'custom_color' => [
             'key' => 'custom_color',
@@ -19,21 +42,21 @@ test('getThemeColors restituisce i colori configurati', function () {
         ],
     ];
 
-    $colors = $metatagData->getThemeColors();
+    $colors = $metatagData->colors;
 
     Assert::assertArrayHasKey('custom_color', $colors);
     Assert::assertArrayHasKey('primary', $colors);
 });
 
-test('getBrandLogoHeight restituisce il valore corretto', function () {
-    $metatagData = new MetatagData();
+test('getLogoHeight restituisce il valore corretto', function () {
+    $metatagData = new MetatagData;
     $metatagData->logo_height = '3em';
 
     Assert::assertSame('3em', $metatagData->getBrandLogoHeight());
 });
 
-test('Le proprietà hanno i valori di default corretti', function () {
-    $metatagData = new MetatagData();
+test('Le proprieta hanno i valori di default corretti', function () {
+    $metatagData = new MetatagData;
 
     Assert::assertSame('xot', $metatagData->generator);
     Assert::assertSame('UTF-8', $metatagData->charset);

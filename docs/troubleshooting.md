@@ -48,14 +48,18 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
+
 ```bash
+# ✅ additivo, mai distruttivo (dati sacri)
+cd laravel && php artisan migrate
 
-# Ripristinare le migrazioni
-php artisan migrate:fresh
-
-# Eseguire i seed
-php artisan db:seed
+# ❌ VIETATO — distrugge i dati
+# php artisan migrate:fresh
+# php artisan migrate --force
+# php artisan db:wipe
 ```
+
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
@@ -433,22 +437,23 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
-**Utilizzare RefreshDatabase**
+**Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
+
 ```php
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class MioModelloTest extends XotBaseTestCase
 {
-    use RefreshDatabase;
+    use DatabaseTransactions;
 
     protected function setUp(): void
     {
         parent::setUp();
-
-        // Setup database per i test
     }
 }
 ```
+
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
 
 **Verificare Migrazioni**
 ```bash
@@ -669,7 +674,6 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
-- [**README.md**](readme.md) - Documentazione principale del modulo
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale

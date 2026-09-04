@@ -675,7 +675,6 @@ declare(strict_types=1);
 
 namespace Modules\healthcare_app\Filament\Widgets;
 namespace Modules\Chart\Filament\Widgets;
-namespace Modules\Quaeris\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;

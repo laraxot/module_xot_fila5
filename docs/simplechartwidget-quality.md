@@ -764,14 +764,12 @@ protected function getData(): array
 ```bash
 # ✅ Zero errori dopo refactoring
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
 ./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
 ```
 
 ### Performance Metrics
@@ -796,6 +794,4 @@ Il refactoring ha migliorato la qualità del codice da:
 - **Mancanza di testing** → **Coverage completo**
 - **Violazioni di principi** → **Conformità con best practices**
 
-Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.
-=======
 Questo approccio DRY+KISS permette di mantenere un codice di alta qualità, facile da testare e manutenere nel tempo.

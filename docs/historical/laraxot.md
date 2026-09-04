@@ -2284,8 +2284,8 @@ laravel/Themes/Sixteen/dist/
 
 #### ❌ Percorsi Errati da Rimuovere
 ```
-F:\var\www\ptv\Modules\              # ❌ ERRATO: manca laravel\
-F:\var\www\ptv\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 ```
 
 ### Note Importanti
@@ -2438,7 +2438,7 @@ laravel/Modules/[ModuleName]/
 ### Uso dei Componenti
 ```blade
 {{-- Il componente sarà disponibile automaticamente --}}
-<x-ptv::blocks.ticket_list.agid />
+<x-fixcity::blocks.ticket_list.agid />
 ```
 
 ### ❌ Da Evitare
@@ -2448,7 +2448,7 @@ class FixcityServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Blade::component('ptv-ticket-list-agid', SomeComponent::class); // Non necessario
+        Blade::component('fixcity-ticket-list-agid', SomeComponent::class); // Non necessario
     }
 }
 ```
@@ -2523,35 +2523,35 @@ class XotBaseServiceProvider extends ServiceProvider
 
 ### Percorso Base del Progetto
 ```
-F:\var\www\ptv\              # Root del progetto
+F:\var\www\fixcity\              # Root del progetto
 └── laravel\                     # ⚠️ Tutti i moduli vanno qui dentro
     └── Modules\                 # Directory corretta per i moduli
 ```
 
 ### ✅ Percorsi Corretti
 ```
-F:\var\www\ptv\laravel\Modules\Fixcity\app\Datas\ReportData.php
-F:\var\www\ptv\laravel\Modules\Fixcity\app\Models\Report.php
-F:\var\www\ptv\laravel\Themes\Sixteen\dist\
+F:\var\www\fixcity\laravel\Modules\Fixcity\app\Datas\ReportData.php
+F:\var\www\fixcity\laravel\Modules\Fixcity\app\Models\Report.php
+F:\var\www\fixcity\laravel\Themes\Sixteen\dist\
 ```
 
 ### ❌ Percorsi Errati da Rimuovere
 ```
-F:\var\www\ptv\Modules\              # ❌ ERRATO: manca laravel\
-F:\var\www\ptv\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 ```
 
 ### Verifica Prima di Creare Nuovi File
-1. Assicurarsi di essere in `F:\var\www\ptv\laravel\Modules\`
+1. Assicurarsi di essere in `F:\var\www\fixcity\laravel\Modules\`
 2. Controllare il composer.json del modulo
 3. Verificare il namespace corretto
-4. Mai creare file direttamente in `F:\var\www\ptv\Modules\`
+4. Mai creare file direttamente in `F:\var\www\fixcity\Modules\`
 
 # Comandi Artisan
 
 ## Posizione Corretta
 ```
-F:\var\www\ptv\
+F:\var\www\fixcity\
 └── laravel\              # ⚠️ Directory dove si trova artisan
     ├── artisan           # Eseguibile artisan
     ├── Modules\
@@ -2564,7 +2564,7 @@ F:\var\www\ptv\
 ```bash
 
 # Posizionarsi nella directory laravel
-cd F:\var\www\ptv\laravel
+cd F:\var\www\fixcity\laravel
 
 # Eseguire i comandi da qui
 php artisan module:seed Fixcity
@@ -2576,18 +2576,18 @@ php artisan config:clear
 ```bash
 
 # ❌ ERRATO: dalla root del progetto
-cd F:\var\www\ptv
+cd F:\var\www\fixcity
 php artisan module:seed Fixcity  # Non funzionerà
 
 # ❌ ERRATO: dalla directory Modules
-cd F:\var\www\ptv\laravel\Modules
+cd F:\var\www\fixcity\laravel\Modules
 php artisan module:seed Fixcity  # Non funzionerà
 ```
 
 ## Comandi Comuni
 ```bash
 
-# Dalla directory F:\var\www\ptv\laravel
+# Dalla directory F:\var\www\fixcity\laravel
 php artisan module:seed Fixcity          # Seeding modulo
 php artisan module:make-model Report     # Creare model
 php artisan module:make-factory Report   # Creare factory
@@ -2596,12 +2596,12 @@ php artisan module:make-seeder Report    # Creare seeder
 
 ## Note Importanti
 1. **Directory di Lavoro**:
-   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\ptv\laravel`
+   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\fixcity\laravel`
    - Il file `artisan` si trova in questa directory
    - L'autoload e le configurazioni sono relative a questa directory
 
 2. **Percorsi nei Comandi**:
-   - I percorsi nei comandi sono relativi a `F:\var\www\ptv\laravel`
+   - I percorsi nei comandi sono relativi a `F:\var\www\fixcity\laravel`
    - Usare percorsi relativi quando possibile
    - Per percorsi assoluti, usare `base_path()` che punta a `laravel/`
 
@@ -3681,8 +3681,6 @@ yarn run build && yarn run copy
 ## Setup Corretto
 
 ### 1. vite.config.js
-```
-
 ```javascript
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
@@ -3822,8 +3820,6 @@ ls public_html/themes/Sixteen/dist
 ## Setup Colori
 
 ### 1. tailwind.config.js
-```
-
 ```javascript
 import colors from 'tailwindcss/colors';
 
@@ -3957,14 +3953,12 @@ laravel/Modules/[ModuleName]/
 
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
-- Esempio: `Modules/Fixcity/resources/svg/ptv.svg`
+- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
 
 ## Registrazione Automatica
 
 ### 1. XotBaseServiceProvider
 Il `XotBaseServiceProvider` si occupa di registrare automaticamente le icone:
-
-```
 
 ```php
 namespace Modules\Xot\Providers;
@@ -4000,10 +3994,10 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 
 ```blade
 {{-- Uso come componente --}}
-<x-ptv-icon class="w-6 h-6" />
+<x-fixcity-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
-@include('svg::ptv')
+@include('svg::fixcity')
 ```
 
 ## Best Practices
@@ -4042,10 +4036,10 @@ Se l'icona non viene visualizzata:
 ### 2. Problemi di Stile
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
-<x-ptv-icon width="24" height="24" />
+<x-fixcity-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
-<x-ptv-icon class="w-6 h-6 text-gray-500" />
+<x-fixcity-icon class="w-6 h-6 text-gray-500" />
 ```
 
 ### 3. Debug
@@ -4566,8 +4560,6 @@ Quando si estende una classe base, i metodi sovrascritti devono mantenere lo ste
 ## Esempi
 
 ### 1. Metodi della Tabella
-```
-
 ```php
 // ❌ ERRATO: Livello di accesso più restrittivo
 public function getListTableColumns(): array
@@ -4681,8 +4673,6 @@ public function getListTableColumns(): array
 ## Struttura dei Namespace
 
 ### 1. Resources e Pages
-```
-
 ```php
 // Resources
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -4795,8 +4785,6 @@ class CommentsRelationManager extends XotBaseRelationManager
 ## Importante Nota sui Namespace
 
 ### ❌ Namespace Errati da Non Usare
-```
-
 ```php
 // ❌ ERRATO: Questi namespace non esistono
 use Modules\Xot\Filament\RelationManagers\XotBaseRelationManager;
@@ -5212,8 +5200,6 @@ Modules/YourModule/
 ## Namespace Corretto
 
 ### ✅ CORRETTO: Include il Resource nel namespace
-```
-
 ```php
 namespace Modules\Fixcity\Filament\Resources\TicketResource\RelationManagers;
 ```
@@ -5674,8 +5660,6 @@ Notification::make()
 ## Navigazione e Configurazione
 
 ### ❌ Modo Errato (Filament Standard)
-```
-
 ```php
 class TicketResource extends XotBaseResource
 {
@@ -5794,8 +5778,6 @@ Modules/YourModule/
 ## Best Practices
 
 1. **Namespace**:
-```
-
 ```php
 // ❌ ERRATO
 namespace Modules\YourModule\Filament\Resources\YourResource\Actions;
@@ -5867,8 +5849,6 @@ Questo errore si verifica quando:
 #### Soluzione
 
 1. **Definizione Corretta della Relazione**:
-```
-
 ```php
 // Nel modello
 public function category(): BelongsTo
@@ -5958,8 +5938,6 @@ Forms\Components\Select::make('category_id')
 
 ### 1. Problema Comune
 Quando due trait definiscono lo stesso metodo, si verifica un conflitto:
-
-```
 
 ```php
 // ❌ ERRATO: Conflitto tra metodi notifications()
@@ -6407,8 +6385,6 @@ yarn run build && yarn run copy
 ## Setup Corretto
 
 ### 1. vite.config.js
-```
-
 ```javascript
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
@@ -6548,8 +6524,6 @@ ls public_html/themes/Sixteen/dist
 ## Setup Colori
 
 ### 1. tailwind.config.js
-```
-
 ```javascript
 import colors from 'tailwindcss/colors';
 
@@ -6683,14 +6657,12 @@ laravel/Modules/[ModuleName]/
 
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
-- Esempio: `Modules/Fixcity/resources/svg/ptv.svg`
+- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
 
 ## Registrazione Automatica
 
 ### 1. XotBaseServiceProvider
 Il `XotBaseServiceProvider` si occupa di registrare automaticamente le icone:
-
-```
 
 ```php
 namespace Modules\Xot\Providers;
@@ -6726,10 +6698,10 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 
 ```blade
 {{-- Uso come componente --}}
-<x-ptv-icon class="w-6 h-6" />
+<x-fixcity-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
-@include('svg::ptv')
+@include('svg::fixcity')
 ```
 
 ## Best Practices
@@ -6768,10 +6740,10 @@ Se l'icona non viene visualizzata:
 ### 2. Problemi di Stile
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
-<x-ptv-icon width="24" height="24" />
+<x-fixcity-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
-<x-ptv-icon class="w-6 h-6 text-gray-500" />
+<x-fixcity-icon class="w-6 h-6 text-gray-500" />
 ```
 
 ### 3. Debug
@@ -7292,8 +7264,6 @@ Quando si estende una classe base, i metodi sovrascritti devono mantenere lo ste
 ## Esempi
 
 ### 1. Metodi della Tabella
-```
-
 ```php
 // ❌ ERRATO: Livello di accesso più restrittivo
 public function getListTableColumns(): array
@@ -7407,8 +7377,6 @@ public function getListTableColumns(): array
 ## Struttura dei Namespace
 
 ### 1. Resources e Pages
-```
-
 ```php
 // Resources
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -7521,8 +7489,6 @@ class CommentsRelationManager extends XotBaseRelationManager
 ## Importante Nota sui Namespace
 
 ### ❌ Namespace Errati da Non Usare
-```
-
 ```php
 // ❌ ERRATO: Questi namespace non esistono
 use Modules\Xot\Filament\RelationManagers\XotBaseRelationManager;
@@ -7837,8 +7803,6 @@ class Ticket extends BaseTicket
 In Laraxot, i componenti Livewire vengono autoregistrati grazie a XotBaseServiceProvider, eliminando la necessità di registrarli manualmente.
 
 ### ❌ ERRATO: Registrazione Manuale
-```
-
 ```php
 // ❌ Non necessario in Laraxot
 class TicketServiceProvider extends ServiceProvider
@@ -8203,8 +8167,6 @@ Prima di utilizzare un'icona Heroicon, verificare sempre la sua esistenza:
 
 ### 2. Fallback e Gestione Errori
 
-```
-
 ```php
 class ModuleServiceProvider extends ServiceProvider
 {
@@ -8478,8 +8440,6 @@ public static function form(Form $form): Form
 ## Namespace e Classi Base
 
 ### Resources e RelationManager
-```
-
 ```php
 // Resources
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -8532,8 +8492,6 @@ Framework based on Laravel for building modular applications.
 ## Implementazione Corretta dei Widget
 
 ### 1. Registrazione del Widget nella Pagina
-```
-
 ```php
 protected function getHeaderWidgets(): array
 {
@@ -8634,8 +8592,6 @@ class ClientMapWidget extends Widget
 ## Implementazione Widget
 
 ### 1. Registrazione Widget
-```
-
 ```php
 // In ListClients.php o qualsiasi altra pagina Filament
 protected function getHeaderWidgets(): array
@@ -8760,8 +8716,6 @@ class ClientMapWidget extends Widget
 ## Implementazione Widget
 
 ### 1. Widget Reattivo
-```
-
 ```php
 use Livewire\Attributes\Reactive;
 use Filament\Widgets\Widget;

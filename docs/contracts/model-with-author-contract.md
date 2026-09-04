@@ -24,7 +24,6 @@ interface ModelWithAuthorContract extends ModelContract
 ## Fix/Modifiche recenti
 - [2025-04-16] Correzione conflitti git, uniformazione tipizzazione, aggiunta firme metodi autore/editor, aggiornamento PHPDoc e struttura secondo convenzioni Laraxot/<nome progetto>.
 - Link bidirezionale: [Vai a PHPSTAN-FIXES-SUMMARY.md](../../../../docs/phpstan-fixes-summary.md)
-- Link bidirezionale: [Vai a PHPSTAN-FIXES-SUMMARY.md](../../../docs/phpstan-fixes-summary.md)
 
 ## Collegamenti
 - [ModelContract](model-contract.md)
@@ -50,8 +49,6 @@ interface ModelWithAuthorContract extends ModelContract
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
 - [Documentazione root](../../../../docs/phpstan-fixes-summary.md)
-- [Contracts Overview](./readme.md)
-- [Documentazione root](../../../docs/phpstan-fixes-summary.md)
 
     $table->foreign('deleter_id')->references('id')->on('users');
 });
@@ -82,10 +79,6 @@ interface ModelWithAuthorContract extends ModelContract
 
 ## Esempio di Utilizzo
 
-```
-
-=======
-```
 ```php
 class Article extends Model implements ModelWithAuthorContract
 {

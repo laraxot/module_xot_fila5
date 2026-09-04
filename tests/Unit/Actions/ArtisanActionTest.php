@@ -11,7 +11,7 @@ use Modules\Xot\Tests\TestCase;
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-uses(TestCase::class)->group('no-xot-db');
+uses(TestCase::class);
 
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanAction)
@@ -39,6 +39,7 @@ test('artisan action act method handles migrate command', function (): void {
 
     $result = ArtisanAction::act('migrate');
 
+    expect(strlen($result))->toBeGreaterThanOrEqual(0);
     expect(str_contains($result, 'Migration completed'))->toBeTrue();
 });
 
@@ -52,6 +53,7 @@ test('artisan action act method handles module parameter', function (): void {
     $result = ArtisanAction::act('migrate');
     ob_end_clean();
 
+    expect(strlen($result))->toBeGreaterThanOrEqual(0);
     expect(str_contains($result, 'Module migration'))->toBeTrue();
 });
 
@@ -63,5 +65,6 @@ test('artisan action handles non-string module parameter', function (): void {
 
     $result = ArtisanAction::act('migrate');
 
+    expect(strlen($result))->toBeGreaterThanOrEqual(0);
     expect(str_contains($result, 'Migration'))->toBeTrue();
 });
