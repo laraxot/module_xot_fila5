@@ -96,6 +96,7 @@ namespace PhpCsFixer\Runner\Parallel {
     }
 }
 namespace PhpCsFixer {
+use Modules\User\Models\User;
     final class Config {
         public function setParallelConfig(mixed $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }

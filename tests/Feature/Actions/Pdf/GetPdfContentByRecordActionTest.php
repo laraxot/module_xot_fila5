@@ -9,6 +9,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

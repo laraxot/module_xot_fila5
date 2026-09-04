@@ -546,10 +546,20 @@ trait HasXotTable
     }
 
     /**
+     * Invokes a table hook method with generic return type preservation.
+     *
+     * This method uses reflection to dynamically invoke table configuration hooks.
+     * Returns mixed because it's a generic reflection helper that delegates to override
+     * methods which may return any type. The actual return type is guaranteed by the
+     * @template TResult parameter—the return type matches the default's type.
+     *
+     * Usage: $direction = $this->invokeTableHook('getDefaultTableSortDirection', null);
+     *
      * @template TResult
      *
-     * @param  TResult  $default
-     * @return TResult
+     * @param  string  $method  The method name to invoke
+     * @param  TResult  $default  Default value if method not overridden
+     * @return TResult The method result or default, type-preserved via template
      */
     private function invokeTableHook(string $method, mixed $default): mixed
     {

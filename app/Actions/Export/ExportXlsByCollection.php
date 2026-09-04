@@ -114,15 +114,22 @@ class ExportXlsByCollection
     }
 
     /**
-     * Estrae il valore da un oggetto o array usando il campo specificato.
+     * Extracts a value from an object or array using the specified field path.
      *
-     * @param  mixed  $data  I dati da cui estrarre il valore
-     * @param  string  $field  Il campo da estrarre
-     * @return mixed Il valore estratto
+     * Returns mixed because Laravel's data_get() is polymorphic—it can return
+     * any type that exists at the nested field path (strings, ints, arrays, objects, etc.).
+     * This polymorphism is by design and cannot be narrowed without losing the utility
+     * of generic nested data access.
+     *
+     * @param  mixed  $data  The data object or array to extract from
+     * @param  string  $field  The nested field path (dot notation supported)
+     * @return mixed The extracted value at the field path, or '' if not found
+     *
+     * @see https://laravel.com/docs/helpers#method-data-get
      */
     protected function extractValue(mixed $data, string $field): mixed
     {
-        // Usa data_get di Laravel per accesso sicuro ai dati nidificati
+        // Uses Laravel's data_get for safe nested data access
         return data_get($data, $field, '');
     }
 

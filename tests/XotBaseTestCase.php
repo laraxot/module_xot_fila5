@@ -23,6 +23,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
+use Modules\User\Models\User;
 
 /**
  * Class XotBaseTestCase.

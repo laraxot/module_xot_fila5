@@ -93,6 +93,7 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-xot-db');
 
