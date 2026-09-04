@@ -1,0 +1,45 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Xot\Models;
+
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+
+/**
+ * Modules\Xot\Models\Cache.
+ *
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static \Modules\Xot\Database\Factories\CacheFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Cache newModelQuery()
+ * @method static Builder<static>|Cache newQuery()
+ * @method static Builder<static>|Cache query()
+ *
+ * @property string $key
+ * @property string $value
+ * @property int $expiration
+ *
+ * @method static Builder<static>|Cache whereExpiration($value)
+ * @method static Builder<static>|Cache whereKey($value)
+ * @method static Builder<static>|Cache whereValue($value)
+ *
+ * @mixin \Eloquent
+ */
+class Cache extends BaseModel
+{
+    protected $table = 'cache';
+
+    protected $primaryKey = 'key';
+
+    protected $keyType = 'string';
+
+    /** @var list<string> */
+    protected $fillable = [
+        'key',
+        'value',
+        'expiration',
+    ];
+}

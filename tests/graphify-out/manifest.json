@@ -1,0 +1,1207 @@
+{
+  "CreatesApplication.php": {
+    "mtime": 1787849676.2392027,
+    "ast_hash": "6b8bc24c0b545603c6a3868b01c2371e",
+    "semantic_hash": ""
+  },
+  "Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php": {
+    "mtime": 1787849676.2392027,
+    "ast_hash": "cc6d29b4233d0d985086b39f8b67b509",
+    "semantic_hash": ""
+  },
+  "Feature/BaseMorphPivotBusinessLogicAttributesTest.php": {
+    "mtime": 1787849676.2392027,
+    "ast_hash": "37a3d859304683572ba8b28df00ad624",
+    "semantic_hash": ""
+  },
+  "Feature/BaseMorphPivotBusinessLogicTest.php": {
+    "mtime": 1787860573.2482848,
+    "ast_hash": "e2d4a7ec8ebca48e50694415efd03127",
+    "semantic_hash": ""
+  },
+  "Feature/ConfigTest.php": {
+    "mtime": 1784222817.3257263,
+    "ast_hash": "b620c9c2fe8f71f2b097e6fa6b7d131a",
+    "semantic_hash": ""
+  },
+  "Feature/Filament/MockResourceWithRelations.php": {
+    "mtime": 1782892323.1010845,
+    "ast_hash": "2c43169f77c7df10520b5523ac2dd49d",
+    "semantic_hash": ""
+  },
+  "Feature/Filament/MockResourceWithRelations/RelationManagers/TestRelationManager.php": {
+    "mtime": 1787845858.532929,
+    "ast_hash": "b3f76f46702fcb21c7f710f7c674cca2",
+    "semantic_hash": ""
+  },
+  "Feature/Filament/XotBaseResourceCoverageTest.php": {
+    "mtime": 1787849676.2392027,
+    "ast_hash": "5c65adaeb7c997c253a7bc0334679e54",
+    "semantic_hash": ""
+  },
+  "Feature/Filament/XotBaseResourceTest.php": {
+    "mtime": 1787849676.2392027,
+    "ast_hash": "1342bba175818fcd11b9cb83783c3c5f",
+    "semantic_hash": ""
+  },
+  "Feature/FixStructureTest.php": {
+    "mtime": 1787849676.2392027,
+    "ast_hash": "7675fa13dae2c80988a33bd637234fbd",
+    "semantic_hash": ""
+  },
+  "Feature/ModuleBusinessLogicTest.php": {
+    "mtime": 1787860639.3070698,
+    "ast_hash": "aaf9059e34c8d76bf78df8a77fe338d5",
+    "semantic_hash": ""
+  },
+  "Feature/ModuleServiceIntegrationTest.php": {
+    "mtime": 1787860583.95625,
+    "ast_hash": "543f50e675b720c2c1283470d6a5cebd",
+    "semantic_hash": ""
+  },
+  "Feature/XotBaseModelBusinessLogicTest.php": {
+    "mtime": 1787860518.936463,
+    "ast_hash": "d11a60d8fdf565333ce19347fc29c729",
+    "semantic_hash": ""
+  },
+  "FilamentSchemaCoverage.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "39af14c56b3e42a883d9056052122bfb",
+    "semantic_hash": ""
+  },
+  "Fixtures/DemoModel.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "339a5bd0bb4332d36bd6bd6c92089b8e",
+    "semantic_hash": ""
+  },
+  "Fixtures/Enums/EmptyDefinitionsEnum.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "73ad74ccd4924626563c97be43348cf0",
+    "semantic_hash": ""
+  },
+  "Fixtures/Enums/TestEnum.php": {
+    "mtime": 1783323543.74468,
+    "ast_hash": "017a2ea1165aa73aa10cdc2aeb84f3be",
+    "semantic_hash": ""
+  },
+  "Fixtures/FakeQueryableModel.php": {
+    "mtime": 1783323543.74468,
+    "ast_hash": "149fb0234ac8ed907cf832be7ae8533c",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/NavigationProbeResource.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "e381c46eae78f6a585f27d9bf4de3649",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/ProbeResource.php": {
+    "mtime": 1783323543.74468,
+    "ast_hash": "07b00028a24018e3c019dd7cd39a073b",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/ProbeResource/Pages/CreateProbe.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "d340c4a1825f1af2332c52dd6dd27365",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/ProbeResource/Pages/EditProbe.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "47e896e3f20c5cae112e124fb647c6da",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/ProbeResource/Pages/ListProbes.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "586639fa43d45d592b3c3e7329e3ff92",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/ProbeResource/Pages/ViewProbe.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "48325e7ab136387ad9ea1fdfc874b4d6",
+    "semantic_hash": ""
+  },
+  "Fixtures/Filament/Resources/ProbeResource/RelationManagers/FakeRelationManager.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "b2bd1509d44eaae95af88bd9f7f87508",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/BrokenAttributesModelForSafeArrayCast.php": {
+    "mtime": 1787845858.532929,
+    "ast_hash": "13692c260b7ebe4f306bc0ff4712c0a9",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/ExtraModelFixture.php": {
+    "mtime": 1787845858.532929,
+    "ast_hash": "31952162395f8e0c38e73d7a93a7e3eb",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/ExtraModelTest.php": {
+    "mtime": 1784196745.2558327,
+    "ast_hash": "7bd7d1e342b0e5543dde132d1af833bb",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/HasCommonScopesProbe.php": {
+    "mtime": 1784188750.987231,
+    "ast_hash": "e66461801a11a8e6903dd803cb6853dc",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/HasExtraMockExtra.php": {
+    "mtime": 1787860593.7986543,
+    "ast_hash": "14dec07bf05759d57a9e6e7a94bc6d03",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/HasExtraTraitProbeModel.php": {
+    "mtime": 1787860512.5374842,
+    "ast_hash": "96904a4d2dca9e6e809220c70daeb6f4",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/Probe.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "29194e446257b7714fd2c1d8f7ddc3da",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/ProbeBadAttachments.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "7e71ccd6293790a300879c4b17e7b9a2",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/ProbeGoodAttachments.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "55e1684774abe5dc7baa0d26d29f656c",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/SchemalessTestModel.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "8610f184c774e6c10037366a60babd53",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/TestConcreteBaseModel.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "5aea56b5d280ab54ed0bf3822770061a",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/TestConcreteMorphPivot.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "8239dadcf530332e5df7d26b0ec94f70",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/TestConcreteXotBaseModel.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "3ff0a140bd6ca36ecb440164c18d9fd4",
+    "semantic_hash": ""
+  },
+  "Fixtures/Models/TestModelHasExtra.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "06d9c8ee5e2108b5dc8824b7858f0e94",
+    "semantic_hash": ""
+  },
+  "Fixtures/SafeEloquentCastFixture.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "fdd4e612d724ef563f0899bc35e38a31",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/HasCustomModelLabelProbeBase.php": {
+    "mtime": 1787845858.532929,
+    "ast_hash": "f8046cc9d94fd09688f8fc80459d14ef",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/HasCustomModelLabelProbeWithLabels.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "665ed1c4adfdd703855aa18d51ed4868",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/HasCustomModelLabelProbeWithoutLabels.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "0d8e617200d48d9f051d4af73e8fc501",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsCheckbox3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "069abe95a1f985b01ac464a0c2bb4796",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsGroup3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "ae55dc81270b516ba213fcb56d6ad4b1",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsRadio3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "c695c52535bd9b2a0a7d4a18bb68f3c3",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsSection3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "269a5025c56aab3de735183b6227c074",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsSelect3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "3f1a9e815aa4719832eeccf84b889e58",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsTableAction3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "f8671ce1782ac7088e83211a75c8744b",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsViewColumn3.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "5332e93c301fbdefa305e648bd1ad3b3",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotAbsWizard3.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "91691ac8881f6e0911a6da0049144398",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotCovManageRelated.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "4c3a11cc4b59d15f9769adeada2b2b74",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotCovMorphPivot.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "5a8d688c97b21d0e368532b762abd1a2",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotCovPivot.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "4d98e49009f7353e42d61ff283e3852a",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotCovRelationHost.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "0c4d5c1c07fa94d7a9bbe527b066f1b7",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotFilamentRelationContract.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "04b518b981cccdae1cc28ad704cbcdc7",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotFilamentResourceContract.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "51f6810a159ab8e5010107b29fc60b9e",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotRefreshRecord.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "aaf296c93628826b67580a7fb057db71",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotResPageStub.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "57fa6307c25e2352a452c60e525a197e",
+    "semantic_hash": ""
+  },
+  "Fixtures/Stubs/XotWidgetFormHost.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "56e7fd4add30a3f84e99c73351cf58ca",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/BreadcrumbProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "8c2be3dfed5ceea4a46046d46135bf8d",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/HasCustomModelLabelProbeBase.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "3d6af42f2821a1b4e50896095415ed2a",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/HasCustomModelLabelProbes.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "feee5f18232c27bfe2475c4a7fecd672",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/HasTableFunctionsCustomSlugProbe.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "2a424705cc4692d37164a8491013b8a5",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/HasTableFunctionsTraitProbe.php": {
+    "mtime": 1783323543.74468,
+    "ast_hash": "e13970f3560a2dd2bc99b9cfb99176f3",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/ModelLabelFromModelNameProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "85b71d2e66ea6cab09cba3d73b260d80",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/ModelLabelFromPropertyProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "e08b304704f01a1d82332a50e7f4c46a",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/NavigationLabelFromPluralProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "d1cd646fc9ed6fe39a4b07cdec58aef5",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/NavigationLabelFromPropertyProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "33a356ba4b444ed77acd01ab360d02bd",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/NavigationPageLabelProbe.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "0a122db53bfb49e55880bdda4fdfa67d",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/PluralModelLabelFromPropertyProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "3bfeed145e383c21f7af3cbd5c1861be",
+    "semantic_hash": ""
+  },
+  "Fixtures/Traits/PluralModelLabelFromSingularProbe.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "7f6a8e5e0e41f62a8394bc0be3735406",
+    "semantic_hash": ""
+  },
+  "Fixtures/TransKeyCaller.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "f214bbb8b2a8f5269cde70ec6ba349a5",
+    "semantic_hash": ""
+  },
+  "Fixtures/XotBaseTransitionFixture.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "14583139008fc6e352a3f7d810a6396c",
+    "semantic_hash": ""
+  },
+  "ModuleBusinessCoverage.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "7e547da5b908adefc5f65853726edd5a",
+    "semantic_hash": ""
+  },
+  "ModuleDeepCoverage.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "5084fa64be19b72d84bab871d4e825b2",
+    "semantic_hash": ""
+  },
+  "ModuleExecuteCoverage.php": {
+    "mtime": 1787849676.2402027,
+    "ast_hash": "8d701ccdf54982098c4ecdfd05baab11",
+    "semantic_hash": ""
+  },
+  "ModuleRemainingCoverage.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "6888cebe83c8900c6b70739e147bcc30",
+    "semantic_hash": ""
+  },
+  "Pest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "d5d45fa485382f09bdba279bcd73121b",
+    "semantic_hash": ""
+  },
+  "PestStubs.php": {
+    "mtime": 1784188832.0365546,
+    "ast_hash": "f636189d8dc4094309fa0d728b5b28d9",
+    "semantic_hash": ""
+  },
+  "Support/PestAssert.php": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "87b51619ca2a13303a1c2ef1bb1840f2",
+    "semantic_hash": ""
+  },
+  "Support/PestExpectation.php": {
+    "mtime": 1784192034.8873851,
+    "ast_hash": "b6f13f18d66ab539ff0faac1d940ed17",
+    "semantic_hash": ""
+  },
+  "Support/PestTestCall.php": {
+    "mtime": 1782892323.1030846,
+    "ast_hash": "d5cfdac0ec3683573e31f00d826daaab",
+    "semantic_hash": ""
+  },
+  "Support/PestUsesChain.php": {
+    "mtime": 1782894163.7661407,
+    "ast_hash": "a34fb103afbb7a0a60a93c91afd4aba1",
+    "semantic_hash": ""
+  },
+  "Support/helpers.php": {
+    "mtime": 1782892323.1030846,
+    "ast_hash": "1f5ab68135ea511bc3b846bca298287c",
+    "semantic_hash": ""
+  },
+  "TestCase.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "86631ba788110c3cbde864399a10d582",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/ArrayToRawJsActionTest.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "474665080bb72904e0041829e9369fb7",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/DiffAssocRecursiveActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "bfea84b7f3d02c40d8c8464a06f5ef2b",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/RangeIntersectActionTest.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "ad869f3959049f4f45c3c21ec2d568a2",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/SaveArrayActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "eb221b022940f0d92fddf1c3cd8888ac",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/SaveArrayActionsTest.php": {
+    "mtime": 1787845858.5346272,
+    "ast_hash": "e8c7aa350652525fc5fd24cc898406c3",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/SaveJsonArrayActionTest.php": {
+    "mtime": 1787845858.5349288,
+    "ast_hash": "0b267e82950d4bdd7883e6ca59230b5e",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arr/SavePhpArrayActionTest.php": {
+    "mtime": 1787845858.5349288,
+    "ast_hash": "73082dbc7af2400086d4defd0d1f99d9",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/ArrayToRawJsActionTest.php": {
+    "mtime": 1784191892.7009325,
+    "ast_hash": "dd1d814ed1db21f493ad3a003911ef15",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/DiffAssocRecursiveActionTest.php": {
+    "mtime": 1784191892.7405934,
+    "ast_hash": "0083c31aca7714536147a9f3f0257fdd",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/RangeIntersectActionTest.php": {
+    "mtime": 1784191892.7645295,
+    "ast_hash": "fe52e39b31771c63eff5add6d5028a7e",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/SaveArrayActionTest.php": {
+    "mtime": 1784188750.519292,
+    "ast_hash": "3cc476e234d96a55e932fc13542fa01d",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/SaveArrayActionsTest.php": {
+    "mtime": 1784191892.829815,
+    "ast_hash": "381d7bfcd31acc2a07cdd59e771aa073",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/SaveJsonArrayActionTest.php": {
+    "mtime": 1784188750.5193233,
+    "ast_hash": "b42759b1fa54a5767928eba5eed2bcc3",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Array/SavePhpArrayActionTest.php": {
+    "mtime": 1784188750.5193233,
+    "ast_hash": "b53f5c9364da76407cc2b654b29283fb",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/ArrayArrActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "82cba4985826fb35251ff6e6d5a62c70",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/ArrayToRawJsActionTest.php": {
+    "mtime": 1787845858.5349288,
+    "ast_hash": "ae7067649305b4896570fe4abc0f1999",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/DiffAssocRecursiveActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "d7c0eee0ef7faaafbec35cc56d0d3b0b",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/RangeIntersectActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "159cc14fb42a41ec7d3346608cf30302",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/SaveArrayActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "20e26db1846359f1fbb6e2f4e29b3aca",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/SaveArrayActionsTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "198869bccd1ed4302865402d959118b5",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/SaveJsonArrayActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "5c697fee011a3a7985095fe5e9d89f57",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Arrays/SavePhpArrayActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "80b0ad7867c64d1b8a55754004e1a5c4",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/ArtisanActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "376e74834a34d6c1b0ccb6f3345c3034",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Blade/RegisterBladeComponentsActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "a6c11da4cbb05d0579a559993f7f84e7",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/EloquentCastActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "15fe6918bcdaf2ac59f0f8fd08062b65",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeArrayByModelCastActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "48920eee03c467dfade6bfe437455f86",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeArrayCastActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "e82bf460d8e122d9275ce78c527a6d00",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeAttributeCastActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "59a04602ef0ff90e073533b47cf85c05",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeBooleanCastActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "abc1aee70516cb6abeb7f021d2547328",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeCastActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "903b569724aa0a1f1ec38ac0580efc01",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeEloquentCastActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "3bb348647361e055818a65d4a910b2f4",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeFloatCastActionTest.php": {
+    "mtime": 1787860465.0056415,
+    "ast_hash": "138d6628da52038cfeb465d8323a88b5",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeIntCastActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "124ebff8e99b60d2c7642a4146bb0ea8",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeNullableStringCastActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "19d7f30bbba862e9c037655be310678b",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeObjectCastActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "c343f15acd9ac5fdd2f57a940544ec61",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeObjectEloquentCastActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "7409a847626dd0dc318dacaf141c52e7",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Cast/SafeStringCastActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "92da954623c9a9000934702498683379",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Class/GetFilenameByClassnameActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "a71beb48420b96e9b4e9ee38b41ad87d",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Classes/GetFilenameByClassnameActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "a71beb48420b96e9b4e9ee38b41ad87d",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Collection/TransCollectionActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "9a7c1fe44463e4782194ea9f8271fa61",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Config/GetTenantConfigActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "61749d0321a119e210dfcd38ee1fcf5e",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Config/GetTenantConfigArrayActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "f9c36cced0b9dc246427e9ff30fc6acc",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Config/GetTenantConfigPathActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "799262270c3a90272e37c3fe99d8dc5a",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Debug/MeasureActionTest.php": {
+    "mtime": 1787845858.5358872,
+    "ast_hash": "c6de3b20cca42936d81fd47ffeea1e95",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Dummy/GetProductsArrayDummyActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "a6c8f0bb4d53fb5cb497359e1f0504f5",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/ExecuteArtisanCommandActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "df08ebe1132282a735a6bcec64e0ab2f",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/AddStrictTypesDeclarationActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "9dd59651b13ba96797506c21f499a644",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/AssetActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "eaec75eb103f7c7bd087eb9aab6c05a9",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/CreateDirectoryForFilenameActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "a5388c9a0a3738d27bb6a7199ec9503e",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/FileActionStaticsTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "6274e011626caa2b7fc8c9206f440414",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/FileActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "c7e6a6451a28d19669131867e21198f6",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/FixPathActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "23931c23369f9ad5f431409933e7bfad",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/GetClassNameByPathActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "a399486cadc3d3dcbbd21a67fdfeaf25",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/GetComponentsActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "cb04bbac1d473c2c0eacfb30f00159ff",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/GetModulePathActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "ea2ccf78489aa860178185419aa6f3b2",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/GetViewNameSpacePathActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "1681c2de58f73d4062b98eb2cc297e98",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/SvgExistsActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "87168c257944c8c5bcf569a84929d62d",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/File/ViewPathActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "23fabbf4ec55cfbde000ee845e38f346",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/GetModelActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "557f7ff49d86b5e57c87866ccd692375",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/GetTransKeyActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "341a604b6451717cac34e81555b012fd",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Model/DestroyActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "8794d5b6532f20b14e4bd541e2138337",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Model/HasColumnActionTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "6d8f72fded5349e58e215e1e52aee06b",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/ModelClass/CountActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "a6df59127b514e17a89da756b8a805d1",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/ModelTypeActionsTest.php": {
+    "mtime": 1787849676.2412026,
+    "ast_hash": "e665a3b5ba10a8e216f8d008c314e8d7",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Module/GetModuleConfigActionTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "b45adac4c4aa22f04ed7a020cc6ea820",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Module/GetModuleNameActionsTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "4ad9d4397a00302533f2a691486360aa",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Module/GetModulePathByGeneratorActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "53d30a31e98c4f7210456173de13ba08",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Module/ModuleActionsTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "ae5f0b96d2149a7b35c832bc4dbbc073",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Parse/ParsePrintPageStringActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "ec02f473423c825afde4ca45a5fd8e3b",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Pdf/MakePdfSpatieTestActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "444e9550b13b61a6da5eb32a00afedf1",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Pdf/PdfActionsTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "beff1015adc73566cb3487f8d5633574",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Query/CreateTableIndexByModelClassColumnsActionTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "24933c37c3696d4ebd6d034684563fbf",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Query/QueryActionsTest.php": {
+    "mtime": 1784191894.2860763,
+    "ast_hash": "6456e4a2ffde3512aa9e198ee25429dc",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/Route/RouteActionsTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "45e7e742cfcb0eb2ef7dfad865059a80",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/String/GetPronounceablePasswordActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "977e01cd67f53ad5e56d34b3a61e3abd",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/String/GetStrBetweenStartsWithActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "ec11c89e7d459ebbd4924a13ca890589",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/String/NormalizeDriverNameActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "504fa33b552832572667ac27fd95a7e2",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/String/SanitizeActionTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "5c6370c8ec71af75ffe0739bcbc385a9",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/String/StringActionsTest.php": {
+    "mtime": 1787845858.5359287,
+    "ast_hash": "da7de897651bd16259845d4e22dd83d7",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/View/GetViewByClassActionTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "03b741338c353bb5a92e70f03658e67c",
+    "semantic_hash": ""
+  },
+  "Unit/Actions/ViewActionsTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "bbb2aef26b6efb6a75fe3dc9e3538b43",
+    "semantic_hash": ""
+  },
+  "Unit/BasicTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "14e527a8e04642df0f40f62254dd02ce",
+    "semantic_hash": ""
+  },
+  "Unit/Datas/ArticleDataTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "6cc37ef0d63738c2224c685720d78f1a",
+    "semantic_hash": ""
+  },
+  "Unit/DummyTestModel.php": {
+    "mtime": 1782892323.1090844,
+    "ast_hash": "286860e10e5fd9b771efa57b37db5df2",
+    "semantic_hash": ""
+  },
+  "Unit/Filament/FilamentSchemasTablesStructureTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "9c03ae1dfdb5a70323cc4c441a5d1770",
+    "semantic_hash": ""
+  },
+  "Unit/Filament/OptionLabelFromRecordTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "ce54dfbbc45adce88058acad4af8fa5a",
+    "semantic_hash": ""
+  },
+  "Unit/Filament/TableHooksDeclaredByUsTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "4bc0ed531fb4b5e683a8a9e159522941",
+    "semantic_hash": ""
+  },
+  "Unit/HasExtraTraitTest.php": {
+    "mtime": 1787860593.745293,
+    "ast_hash": "b3076e28d49c05ac67474bb9860d9578",
+    "semantic_hash": ""
+  },
+  "Unit/HasTableWithXotTestClass.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "485be9dc96df6ac11116a7907e084c59",
+    "semantic_hash": ""
+  },
+  "Unit/HasTableWithoutOptionalMethodsTestClass.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "fb792ae4bcc819144943a3ac55defcf5",
+    "semantic_hash": ""
+  },
+  "Unit/HasXotTableTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "af4c6fb6dcb3a657f41c65233bd4fe74",
+    "semantic_hash": ""
+  },
+  "Unit/MetatagDataTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "ae6c3973481ed1e84eee6385f1440ec8",
+    "semantic_hash": ""
+  },
+  "Unit/Models/BaseModelTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "be8e96617427b928fb9a57f4fd6b226d",
+    "semantic_hash": ""
+  },
+  "Unit/Models/XotBaseModelBusinessLogicTest.php": {
+    "mtime": 1787860593.7631178,
+    "ast_hash": "51a0a85775dbee332bc995abfdcfd9fc",
+    "semantic_hash": ""
+  },
+  "Unit/Models/XotBaseModelTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "68a50d892b541457f25ef5ee231627dd",
+    "semantic_hash": ""
+  },
+  "Unit/ModelsTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "5560b6bd17f9f0a576cd0d1092453290",
+    "semantic_hash": ""
+  },
+  "Unit/ModuleCoverageBoostTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "e5ac24494a074afefa2d0e120dd2e1fb",
+    "semantic_hash": ""
+  },
+  "Unit/ModuleServiceTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "6d79efe5dbc3e5e32058dfcfc07a4667",
+    "semantic_hash": ""
+  },
+  "Unit/SendMailByRecordActionTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "230a3b373f6b7bddca63b860daa08e79",
+    "semantic_hash": ""
+  },
+  "Unit/Services/ArtisanServiceTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "ca6dc06f6c563d54f1a2968bc213012d",
+    "semantic_hash": ""
+  },
+  "Unit/Services/ThemeServiceTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "bf9028611fce786004cfb6a818602122",
+    "semantic_hash": ""
+  },
+  "Unit/Services/UrlServiceTest.php": {
+    "mtime": 1787845858.536929,
+    "ast_hash": "bcdc8d078888029b8efa582c826f5c5f",
+    "semantic_hash": ""
+  },
+  "Unit/SimpleModelsTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "b30ce6f6d35b20bdd81b81949269e363",
+    "semantic_hash": ""
+  },
+  "Unit/Support/DummyTestModel.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "94307e95e492cd982e0cb1c99822324e",
+    "semantic_hash": ""
+  },
+  "Unit/Support/HasTableWithXotTestClass.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "837a46ecc0cd8491b2f737b7308b8412",
+    "semantic_hash": ""
+  },
+  "Unit/Support/HasTableWithoutOptionalMethodsTestClass.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "a290f9198f96ba566b950755d9294ca0",
+    "semantic_hash": ""
+  },
+  "Unit/Support/OptionLabelProbeForm.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "c19af320aadce0213c0719c7967538a2",
+    "semantic_hash": ""
+  },
+  "Unit/TestCaseTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "754d0ad2d8c79bb08b2059d28e6721bc",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/EnumTraitTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "266178f06e0e234198389199c18a68c3",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/Filament/HasCustomModelLabelTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "f70aff954abbb5464d72930ec5ff5e96",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/HasCommonScopesTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "bdfeaaf5bce1e95beeb8b2d3d48e3aa0",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/HasCsrfTokenTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "8e82a31a84c1532f9d93a594760a1c6d",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/HasCustomRelationsTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "34d6c70a4349a76d8717cf538972fe02",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/HasSchemalessAttributesTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "195b443e6c21a76295a47b2b3d5c0aa7",
+    "semantic_hash": ""
+  },
+  "Unit/Traits/HasTableFunctionsTraitTest.php": {
+    "mtime": 1787849676.2422028,
+    "ast_hash": "9a43f82bce775909cdc680b8f80072de",
+    "semantic_hash": ""
+  },
+  "Unit/ValueObjects/EmailValueObjectTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "70e2b25f726c3ac7353795df4c4175fe",
+    "semantic_hash": ""
+  },
+  "Unit/ValueObjects/PhoneValueObjectTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "3853717886ed039538d91d1b26db9f58",
+    "semantic_hash": ""
+  },
+  "Unit/XotAggressiveSweepAbstractStubsTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "3e7ea952e1ad230e64574b2eefd9b65c",
+    "semantic_hash": ""
+  },
+  "Unit/XotArtisanCommandsHelpersCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "b37be9f89dedfaf50cf68ccefb227a62",
+    "semantic_hash": ""
+  },
+  "Unit/XotBaseTransitionTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "3f3498919a5184c7053d3cd1611d623a",
+    "semantic_hash": ""
+  },
+  "Unit/XotBusinessCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "3922c1b84ef63f7fd731cbb3e312c263",
+    "semantic_hash": ""
+  },
+  "Unit/XotChartWidgetsResourcePageCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "d89f616c9947eba317499bb43b48f3c6",
+    "semantic_hash": ""
+  },
+  "Unit/XotCommandsActionsHundredCoverageTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "14b1935433fc160352d90935d47eba16",
+    "semantic_hash": ""
+  },
+  "Unit/XotDateTimeRuleBehaviorTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "dba61328ac4327dc00ca52a6a063678e",
+    "semantic_hash": ""
+  },
+  "Unit/XotDeepCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "d692c8cba88879d4a9b0cce0f0482651",
+    "semantic_hash": ""
+  },
+  "Unit/XotDeepFileActionCoverageTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "ab014aea67b655e99cd545b2dea7e250",
+    "semantic_hash": ""
+  },
+  "Unit/XotExecuteCoverage50Test.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "2d9ae912851bfa9721590f8a244901b5",
+    "semantic_hash": ""
+  },
+  "Unit/XotExplicitZeroKillersTest.php": {
+    "mtime": 1787845858.5379288,
+    "ast_hash": "ef8ae9577239876fae78d2ad71e7e3cd",
+    "semantic_hash": ""
+  },
+  "Unit/XotFieldRefreshQueryExportCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "9a3e0390c4834f303b5cf7c2a4b64de4",
+    "semantic_hash": ""
+  },
+  "Unit/XotFilamentHundredCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "31035e347248864bb0a47bd5c8b973fb",
+    "semantic_hash": ""
+  },
+  "Unit/XotFilamentSchemaCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "7427d8fb0dc58aebc41a555aae2467a8",
+    "semantic_hash": ""
+  },
+  "Unit/XotFilamentSupportHundredCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "0f9aaffad358d4bef22a085caa6a7bbe",
+    "semantic_hash": ""
+  },
+  "Unit/XotFloor50ExtrasCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "2290359a4f750dab881840267696e732",
+    "semantic_hash": ""
+  },
+  "Unit/XotGap2HundredCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "ad5899df42f925543a8590ac67b22f1b",
+    "semantic_hash": ""
+  },
+  "Unit/XotGapCloserHundredCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "1fcd40dfa54dce1fdd3c3b1c723d3172",
+    "semantic_hash": ""
+  },
+  "Unit/XotHasManyWidgetCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "092d6b76fceb3e628184e78cac12cfe6",
+    "semantic_hash": ""
+  },
+  "Unit/XotHundredPercentCoverageTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "b482505c5a45e42a8df330e17252224f",
+    "semantic_hash": ""
+  },
+  "Unit/XotInProcessDeepCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "51a3cec75082a93bc5807b497c0abf4f",
+    "semantic_hash": ""
+  },
+  "Unit/XotMigrationDeepBranchesTest.php": {
+    "mtime": 1787849676.2432027,
+    "ast_hash": "842b7c4aac125535d2d20a88fb8d9071",
+    "semantic_hash": ""
+  },
+  "Unit/XotMigrationUuidModelClassCoverageTest.php": {
+    "mtime": 1787849676.2442026,
+    "ast_hash": "de271cdf90898bfc90f0d0eb82036157",
+    "semantic_hash": ""
+  },
+  "Unit/XotRelationManageStatesCoverageTest.php": {
+    "mtime": 1787849676.2442026,
+    "ast_hash": "2c5a4792d0a33823938b47b23e99839d",
+    "semantic_hash": ""
+  },
+  "Unit/XotRemainingZerosSafeInvokeTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "db70a0db623b84e425ae9081fb269849",
+    "semantic_hash": ""
+  },
+  "Unit/XotSecondaryGapsCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "8eb58803fa315693382be993af1453fe",
+    "semantic_hash": ""
+  },
+  "Unit/XotSecurityHandlersCoverageTest.php": {
+    "mtime": 1787849676.2442026,
+    "ast_hash": "e26edb972051dd9581ab77bec8dcc871",
+    "semantic_hash": ""
+  },
+  "Unit/XotTimedSweepHundredCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "de9c67803a9783e8be6c474c39188c3a",
+    "semantic_hash": ""
+  },
+  "Unit/XotZeroFilesExplicitCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "2954b8d5224dd26dd0f8d1e91d7d05ab",
+    "semantic_hash": ""
+  },
+  "Unit/XotZeroKillerHundredCoverageTest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "1a85869233cc1a8df7e45badfacf6910",
+    "semantic_hash": ""
+  },
+  "Unit/metatagdatatest.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "b47bd835f376d0e84cc3549776f3c0c3",
+    "semantic_hash": ""
+  },
+  "XotBasePest.php": {
+    "mtime": 1787849676.2442026,
+    "ast_hash": "a8d956e8d4f7c16b4ee4258e597181fa",
+    "semantic_hash": ""
+  },
+  "XotBaseTestCase.php": {
+    "mtime": 1787849676.2442026,
+    "ast_hash": "09a4221a16a57bc2b61116c56fb39da9",
+    "semantic_hash": ""
+  },
+  "XotForkedInvoke.php": {
+    "mtime": 1787849676.2442026,
+    "ast_hash": "75de1568f51a3e9e96b5d8add295a44b",
+    "semantic_hash": ""
+  },
+  "XotModuleSchema.php": {
+    "mtime": 1787845858.5389287,
+    "ast_hash": "5725f2b2873455e1400ed58ddc68bff0",
+    "semantic_hash": ""
+  },
+  "pest.php": {
+    "mtime": 1787845858.5409288,
+    "ast_hash": "4d9ffb63a07c35eaad4c77d1b2313fe7",
+    "semantic_hash": ""
+  },
+  "Feature/docs.md": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "16093a2349a74ffb0a0c27886e79838f",
+    "semantic_hash": ""
+  },
+  "Feature/docs.txt": {
+    "mtime": 1782892323.1020846,
+    "ast_hash": "16093a2349a74ffb0a0c27886e79838f",
+    "semantic_hash": ""
+  }
+}

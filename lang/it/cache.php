@@ -1,0 +1,40 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'name' => 'cache',
+        'plural' => 'cache',
+        'group' => ['name' => 'Admin'],
+    ],
+    'pages' => [
+        'health_check_results' => [
+            'buttons' => ['refresh' => 'Refresh'],
+            'heading' => 'Application Health',
+            'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
+            'notifications' => ['check_results' => 'Check results from'],
+        ],
+    ],
+    'label' => 'Cache',
+    'plural_label' => 'Cache (Plurale)',
+    'fields' => [
+        'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
+        'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'expiration' => ['label' => 'expiration', 'placeholder' => 'expiration', 'helper_text' => 'expiration', 'description' => 'expiration'],
+    ],
+    'actions' => [
+        'create' => ['label' => 'Crea Cache', 'icon' => 'create', 'tooltip' => 'create'],
+        'edit' => ['label' => 'Modifica Cache', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Cache', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'route:list' => ['label' => 'route:list', 'icon' => 'route:list', 'tooltip' => 'route:list'],
+        'icons:cache' => ['label' => 'icons:cache', 'icon' => 'icons:cache', 'tooltip' => 'icons:cache'],
+        'filament:cache-components' => ['label' => 'filament:cache-components', 'icon' => 'filament:cache-components', 'tooltip' => 'filament:cache-components'],
+        'filament:clear-cached-components' => ['label' => 'filament:clear-cached-components', 'icon' => 'filament:clear-cached-components', 'tooltip' => 'filament:clear-cached-components'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+    ],
+];

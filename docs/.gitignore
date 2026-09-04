@@ -1,0 +1,44 @@
+---
+module: theme
+topic: .gitignore
+canonical: ../../../Themes/docs/shared-components/.gitignore-Modules
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitignore-Modules
+consolidated
+agentdb.rvf
+
+# Version-suffixed markdown (AI artifacts)
+*-[0-9]*.md
+phpstan-comprehensive-fixes-2025.md
+QA-VERIFICATION-2026-06-30.md
+logging-best-practices-2026-03-02.md
+REFACTOR-panelmixin-2026-07-07.md
+phpstan-analysis-18.md
+ponytail-audit-2026-07-02.md
+xot-git-push-resolution-2026-07-28.md
+laraxot-architectural-memories-2026.md
+phpstan-analysis-17.md
+phpstan-analysis-december-18.md
+phpstan-patterns-2025.md
+git-conflicts-resolution-2025.md
+error-curl-60.md
+phpstan-analysis-report-2025-11-18.md
+git-push-resolution-2026-07-28.md
+refactor-panelmixin-2026.md
+brainstorm-testcase-hierarchy-xotbase-2026.md
+phpstan-analysis-december-17.md
+phpstan-corrections-january-2026.md
+redundancy-audit-2026-05-21.md
+BRAINSTORM-TestCase-Hierarchy-XotBase-2026-06-10.md
+phpstan-hasxottable-trait-fixes-february-2026.md
+laraxot-architectural-memories-2026-02.md
+qa-verification-2026.md
+phpstan-progress-report-2025-10-13.md
+testing-progress-session-2025-01-22.md
+
+# No numbered .md duplicates (rule: docs/wiki/rules/no-numbered-filenames.md)
+*-[0-9].md
+*-[0-9][0-9].md
+*_[0-9].md
+*_[0-9][0-9].md
