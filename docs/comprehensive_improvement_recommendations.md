@@ -614,7 +614,11 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
 <<<<<<< HEAD
+          php-version: 8.3
+=======
+<<<<<<< HEAD
           php-
+>>>>>>> 28b0298a (fix: phpstan issues)
       - name: Install dependencies
         run: composer install
       - name: Run PHPStan

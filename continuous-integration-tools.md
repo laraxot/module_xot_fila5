@@ -1,3 +1,15 @@
+---
+title: 'Continuous integration tools'
+module: Xot
+type: reference
+slug: continuous-integration-tools
+description: '//---------- PHP Mess Detector'
+tags: [migrato-da-txt, xot]
+converted_from: _continuous_integration_tools.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 //----------
 PHP Mess Detector
 
@@ -26,5 +38,3 @@ https://grafikart.fr/tutoriels/grumphp-836
 ----------------------------------------------------------------------
 
 https://jakzal.github.io/toolbox/
-
-

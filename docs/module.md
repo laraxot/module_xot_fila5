@@ -1,5 +1,19 @@
 ---
 <<<<<<< HEAD
+title: "Xot Module — Doctrine"
+type: doctrine
+tags: [xot, foundation, module-doctrine]
+created: 2026-09-05
+updated: 2026-09-05
+qmd: "Xot module doctrine BMAD analysis purpose religion philosophy policy why zen gap enhancements split merge"
+related:
+  - "./quality-roadmap.md"
+  - "./import-status.md"
+  - "../../../docs/wiki/concepts/laraxot-module-canonical-structure.md"
+---
+
+=======
+<<<<<<< HEAD
 module: theme
 topic: module
 canonical: ../../../Themes/docs/shared-components/module-analysis-Modules.md
@@ -19,6 +33,7 @@ related:
   - "../../../docs/wiki/concepts/laraxot-module-canonical-structure.md"
 ---
 
+>>>>>>> 28b0298a (fix: phpstan issues)
 # Xot Module — Doctrine
 
 ## Scope (Scopo)
@@ -78,4 +93,7 @@ Xot esiste perché senza un layer di base comune, ogni modulo avrebbe duplicato 
 5. **Schema Registry**: un file centrale che registra tutti i modelli, le loro relazioni, e le chiavi straniere — generabile da PHPStan
 6. **Module Generator**: comando Artisan `make:laraxot-module` che genera tutto lo scaffold con XotBase integrato
 7. **AI-assisted code generation**: integrare LLM per generare Action, Resource, Model dai migration
+<<<<<<< HEAD
+=======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
