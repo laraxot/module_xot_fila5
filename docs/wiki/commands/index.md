@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Index"
 type: reference
@@ -6,6 +7,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> 7f6cf6be (.)
 # Xot Module - commands Index
 
 ## Purpose

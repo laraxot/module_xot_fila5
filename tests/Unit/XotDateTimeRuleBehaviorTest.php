@@ -9,12 +9,20 @@ use Modules\Xot\Rules\DateTimeRule;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 test('DateTimeRule accepts the documented day month year format', function (): void {
     $validator = Validator::make(
         ['published_at' => '10/10/2019 13:43'],
+<<<<<<< HEAD
         ['published_at' => [new DateTimeRule]],
+=======
+        ['published_at' => [new DateTimeRule()]],
+>>>>>>> 7f6cf6be (.)
     );
 
     Assert::assertFalse($validator->fails());
@@ -23,7 +31,11 @@ test('DateTimeRule accepts the documented day month year format', function (): v
 $rejectsInvalidDateTime = function (mixed $value): void {
     $validator = Validator::make(
         ['published_at' => $value],
+<<<<<<< HEAD
         ['published_at' => [new DateTimeRule]],
+=======
+        ['published_at' => [new DateTimeRule()]],
+>>>>>>> 7f6cf6be (.)
     );
 
     Assert::assertTrue($validator->fails());

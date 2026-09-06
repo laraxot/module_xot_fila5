@@ -85,7 +85,11 @@ trait TransFuncTrait
     }
 
     /**
+<<<<<<< HEAD
      * @param  string|array<int|string, mixed>|Translator|null  $trans
+=======
+     * @param string|array<int|string, mixed>|Translator|null $trans
+>>>>>>> 7f6cf6be (.)
      */
     protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
     {
@@ -108,7 +112,11 @@ trait TransFuncTrait
             return $trans;
         }
 
+<<<<<<< HEAD
         if ($trans === null) {
+=======
+        if (null === $trans) {
+>>>>>>> 7f6cf6be (.)
             return static::persistGeneratedTransFuncLabel($key);
         }
 

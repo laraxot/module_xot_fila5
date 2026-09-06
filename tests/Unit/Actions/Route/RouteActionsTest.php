@@ -8,7 +8,11 @@ use Modules\Xot\Actions\Route\IsAdminRouteAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 it('executes the converted route use cases through the container', function (): void {
     Assert::assertTrue(app(IsAdminRouteAction::class)->execute(['in_admin' => true]));

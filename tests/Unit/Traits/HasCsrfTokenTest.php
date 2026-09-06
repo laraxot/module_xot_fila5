@@ -7,7 +7,11 @@ use Illuminate\Support\Facades\Session;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 it('sets csrf token on mount', function (): void {
     $token = 'test-token-123';
@@ -16,8 +20,12 @@ it('sets csrf token on mount', function (): void {
     $session->allows(['token' => $token]);
     App::instance('session', $session);
 
+<<<<<<< HEAD
     $class = new class
     {
+=======
+    $class = new class {
+>>>>>>> 7f6cf6be (.)
         public string $_token = '';
 
         public function mount(): void
@@ -40,8 +48,12 @@ it('sets csrf token on mount', function (): void {
 it('verifies csrf token', function (): void {
     $token = 'secret-token';
 
+<<<<<<< HEAD
     $class = new class
     {
+=======
+    $class = new class {
+>>>>>>> 7f6cf6be (.)
         public string $_token = '';
 
         public function verifyCsrfToken(): bool

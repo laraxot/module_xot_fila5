@@ -7,14 +7,24 @@ namespace Modules\Xot\Actions\Export;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 7f6cf6be (.)
 
 use function Safe\fclose;
 use function Safe\fopen;
 use function Safe\fputcsv;
 
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+use Webmozart\Assert\Assert;
+
+>>>>>>> 7f6cf6be (.)
 class ExportXlsStreamByLazyCollection
 {
     use QueueableAction;
@@ -22,10 +32,17 @@ class ExportXlsStreamByLazyCollection
     /**
      * Esporta una LazyCollection in un file CSV streamed.
      *
+<<<<<<< HEAD
      * @param  LazyCollection<int, mixed>  $data  I dati da esportare
      * @param  string  $filename  Nome del file CSV
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
+=======
+     * @param LazyCollection<int, mixed> $data     I dati da esportare
+     * @param string                     $filename Nome del file CSV
+     * @param string|null                $transKey Chiave di traduzione per le intestazioni
+     * @param array<string>|null         $_fields  Campi da includere nell'export (attualmente non utilizzato)
+>>>>>>> 7f6cf6be (.)
      */
     public function execute(
         LazyCollection $data,
@@ -60,8 +77,13 @@ class ExportXlsStreamByLazyCollection
                         continue;
                     }
                     // Convertiamo tutti i valori in stringhe o null
+<<<<<<< HEAD
                     $safeRowData = array_map(function (string|int|float|bool|null $item) {
                         if ($item === null) {
+=======
+                    $safeRowData = array_map(function ($item) {
+                        if (null === $item) {
+>>>>>>> 7f6cf6be (.)
                             return '';
                         }
 
@@ -87,8 +109,14 @@ class ExportXlsStreamByLazyCollection
     /**
      * Ottiene le intestazioni per l'export.
      *
+<<<<<<< HEAD
      * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
+=======
+     * @param LazyCollection<int, mixed> $data     I dati da cui estrarre le intestazioni
+     * @param string|null                $transKey Chiave di traduzione per le intestazioni
+     *
+>>>>>>> 7f6cf6be (.)
      * @return array<string>
      */
     public function headings(LazyCollection $data, ?string $transKey = null): array
@@ -101,12 +129,20 @@ class ExportXlsStreamByLazyCollection
         $headArray = is_array($first) ? $first : $first->toArray();
 
         /**
+<<<<<<< HEAD
          * @var array<string, mixed> $headArray
+=======
+         * @var array<string, mixed>    $headArray
+>>>>>>> 7f6cf6be (.)
          * @var Collection<int, string> $headings
          */
         $headings = collect($headArray)->keys();
 
+<<<<<<< HEAD
         if ($transKey !== null) {
+=======
+        if (null !== $transKey) {
+>>>>>>> 7f6cf6be (.)
             $headings = $headings->map(static function (string $item) use ($transKey) {
                 $key = $transKey.'.fields.'.$item;
                 $trans = trans($key);

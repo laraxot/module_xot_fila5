@@ -40,8 +40,14 @@ class SafeBooleanCastAction
     /**
      * Converte in modo sicuro un valore mixed in boolean.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  bool|null  $default  Valore di default se la conversione fallisce (default: false)
+=======
+     * @param mixed     $value   Il valore da convertire
+     * @param bool|null $default Valore di default se la conversione fallisce (default: false)
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito
      */
     public function execute(mixed $value, ?bool $default = false): bool
@@ -58,12 +64,20 @@ class SafeBooleanCastAction
 
         // Se è un intero, convertilo (0 = false, altri = true)
         if (is_int($value)) {
+<<<<<<< HEAD
             return $value !== 0;
+=======
+            return 0 !== $value;
+>>>>>>> 7f6cf6be (.)
         }
 
         // Se è un float, convertilo (0.0 = false, altri = true)
         if (is_float($value)) {
+<<<<<<< HEAD
             return $value !== 0.0 && is_finite($value);
+=======
+            return 0.0 !== $value && is_finite($value);
+>>>>>>> 7f6cf6be (.)
         }
 
         // Se è una stringa, convertila
@@ -88,10 +102,18 @@ class SafeBooleanCastAction
     /**
      * Converte un valore in boolean con validazione di valori specifici.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  array<mixed>  $trueValues  Array di valori che rappresentano true
      * @param  array<mixed>  $falseValues  Array di valori che rappresentano false
      * @param  bool|null  $default  Valore di default se la conversione fallisce
+=======
+     * @param mixed        $value       Il valore da convertire
+     * @param array<mixed> $trueValues  Array di valori che rappresentano true
+     * @param array<mixed> $falseValues Array di valori che rappresentano false
+     * @param bool|null    $default     Valore di default se la conversione fallisce
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito
      */
     public function executeWithCustomValues(
@@ -106,7 +128,11 @@ class SafeBooleanCastAction
             if (
                 in_array(
                     $trimmed,
+<<<<<<< HEAD
                     array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $trueValues),
+=======
+                    array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $trueValues),
+>>>>>>> 7f6cf6be (.)
                     true,
                 )
             ) {
@@ -116,7 +142,11 @@ class SafeBooleanCastAction
             if (
                 in_array(
                     $trimmed,
+<<<<<<< HEAD
                     array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $falseValues),
+=======
+                    array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $falseValues),
+>>>>>>> 7f6cf6be (.)
                     true,
                 )
             ) {
@@ -131,10 +161,18 @@ class SafeBooleanCastAction
     /**
      * Converte un valore in boolean con validazione di range numerico.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float  $threshold  Soglia per determinare true/false
      * @param  bool  $greaterThanTrue  True se valori > threshold sono true, false altrimenti
      * @param  bool|null  $default  Valore di default se la conversione fallisce
+=======
+     * @param mixed     $value           Il valore da convertire
+     * @param float     $threshold       Soglia per determinare true/false
+     * @param bool      $greaterThanTrue True se valori > threshold sono true, false altrimenti
+     * @param bool|null $default         Valore di default se la conversione fallisce
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito
      */
     public function executeWithThreshold(
@@ -160,7 +198,12 @@ class SafeBooleanCastAction
     /**
      * Verifica se un valore può essere convertito in boolean.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da verificare
+=======
+     * @param mixed $value Il valore da verificare
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool True se il valore può essere convertito in boolean
      */
     public function canCast(mixed $value): bool
@@ -171,8 +214,14 @@ class SafeBooleanCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  bool|null  $default  Valore di default se la conversione fallisce (default: false)
+=======
+     * @param mixed     $value   Il valore da convertire
+     * @param bool|null $default Valore di default se la conversione fallisce (default: false)
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito in boolean
      */
     public static function cast(mixed $value, ?bool $default = false): bool
@@ -183,10 +232,18 @@ class SafeBooleanCastAction
     /**
      * Metodo statico per cast con valori personalizzati.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  array<mixed>  $trueValues  Array di valori che rappresentano true
      * @param  array<mixed>  $falseValues  Array di valori che rappresentano false
      * @param  bool|null  $default  Valore di default se la conversione fallisce
+=======
+     * @param mixed        $value       Il valore da convertire
+     * @param array<mixed> $trueValues  Array di valori che rappresentano true
+     * @param array<mixed> $falseValues Array di valori che rappresentano false
+     * @param bool|null    $default     Valore di default se la conversione fallisce
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito
      */
     public static function castWithCustomValues(
@@ -201,10 +258,18 @@ class SafeBooleanCastAction
     /**
      * Metodo statico per cast con soglia numerica.
      *
+<<<<<<< HEAD
      * @param  mixed  $value  Il valore da convertire
      * @param  float  $threshold  Soglia per determinare true/false
      * @param  bool  $greaterThanTrue  True se valori > threshold sono true, false altrimenti
      * @param  bool|null  $default  Valore di default se la conversione fallisce
+=======
+     * @param mixed     $value           Il valore da convertire
+     * @param float     $threshold       Soglia per determinare true/false
+     * @param bool      $greaterThanTrue True se valori > threshold sono true, false altrimenti
+     * @param bool|null $default         Valore di default se la conversione fallisce
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito
      */
     public static function castWithThreshold(
@@ -219,8 +284,14 @@ class SafeBooleanCastAction
     /**
      * Converte una stringa in boolean con gestione avanzata.
      *
+<<<<<<< HEAD
      * @param  string  $value  La stringa da convertire
      * @param  bool|null  $default  Valore di default
+=======
+     * @param string    $value   La stringa da convertire
+     * @param bool|null $default Valore di default
+     *
+>>>>>>> 7f6cf6be (.)
      * @return bool Il valore convertito
      */
     private function parseStringToBool(string $value, ?bool $default = false): bool

@@ -20,7 +20,11 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();

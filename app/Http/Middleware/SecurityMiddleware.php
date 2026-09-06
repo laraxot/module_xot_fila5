@@ -6,14 +6,23 @@ namespace Modules\Xot\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> 7f6cf6be (.)
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
+<<<<<<< HEAD
+=======
+use Symfony\Component\HttpFoundation\Response;
+use Webmozart\Assert\Assert;
+
+>>>>>>> 7f6cf6be (.)
 /**
  * Middleware di sicurezza avanzato.
  *
@@ -74,7 +83,11 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
+=======
+        $current = (int) cache()->get($key, 0);
+>>>>>>> 7f6cf6be (.)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for IP', [
@@ -98,7 +111,11 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
+=======
+        $current = (int) cache()->get($key, 0);
+>>>>>>> 7f6cf6be (.)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for User Agent', [
@@ -122,7 +139,11 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = SafeIntCastAction::cast(cache()->get($key, 0));
+=======
+        $current = (int) cache()->get($key, 0);
+>>>>>>> 7f6cf6be (.)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for endpoint', [
@@ -279,7 +300,11 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
+<<<<<<< HEAD
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
+=======
+        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
+>>>>>>> 7f6cf6be (.)
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -332,7 +357,11 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
+<<<<<<< HEAD
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
+=======
+            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
+>>>>>>> 7f6cf6be (.)
                 return true;
             }
         }
@@ -348,7 +377,11 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
+<<<<<<< HEAD
             if ($value !== null && is_string($value)) {
+=======
+            if (null !== $value && is_string($value)) {
+>>>>>>> 7f6cf6be (.)
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -389,7 +422,11 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $value
+=======
+     * @param array<array-key, mixed> $value
+>>>>>>> 7f6cf6be (.)
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -415,7 +452,11 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $array
+=======
+     * @param array<array-key, mixed> $array
+>>>>>>> 7f6cf6be (.)
      */
     private function getArrayDepth(array $array): int
     {
@@ -442,7 +483,11 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
+<<<<<<< HEAD
             if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
+=======
+            if (! $token || ! hash_equals(session()->token(), (string) $token)) {
+>>>>>>> 7f6cf6be (.)
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

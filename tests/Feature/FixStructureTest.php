@@ -17,7 +17,11 @@ use function Safe\rmdir;
 use function Safe\scandir;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
 // @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come

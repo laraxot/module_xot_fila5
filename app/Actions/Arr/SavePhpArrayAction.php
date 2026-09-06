@@ -4,17 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\VarExporter\VarExporter;
 
 use function Safe\file_put_contents;
 
+=======
+use function Safe\file_put_contents;
+
+use Spatie\QueueableAction\QueueableAction;
+use Symfony\Component\VarExporter\VarExporter;
+
+>>>>>>> 7f6cf6be (.)
 class SavePhpArrayAction
 {
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
+=======
+     * @param array<int|string, mixed> $data
+>>>>>>> 7f6cf6be (.)
      */
     public function execute(array $data, string $filename): bool
     {

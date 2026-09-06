@@ -11,7 +11,11 @@ use Modules\Xot\Tests\TestCase;
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanService)
@@ -39,6 +43,10 @@ test('artisan service act method handles migrate command', function (): void {
 
     $result = ArtisanAction::act('migrate');
 
+<<<<<<< HEAD
+=======
+    expect(strlen($result))->toBeGreaterThanOrEqual(0);
+>>>>>>> 7f6cf6be (.)
     expect(str_contains($result, 'Migration completed'))->toBeTrue();
 });
 
@@ -52,6 +60,10 @@ test('artisan service act method handles module parameter', function (): void {
     $result = ArtisanAction::act('migrate');
     ob_end_clean();
 
+<<<<<<< HEAD
+=======
+    expect(strlen($result))->toBeGreaterThanOrEqual(0);
+>>>>>>> 7f6cf6be (.)
     expect(str_contains($result, 'Module migration'))->toBeTrue();
 });
 
@@ -63,5 +75,9 @@ test('artisan service handles non-string module parameter', function (): void {
 
     $result = ArtisanAction::act('migrate');
 
+<<<<<<< HEAD
+=======
+    expect(strlen($result))->toBeGreaterThanOrEqual(0);
+>>>>>>> 7f6cf6be (.)
     expect(str_contains($result, 'Migration'))->toBeTrue();
 });

@@ -26,12 +26,18 @@ class HasManyAction
     {
         Assert::isInstanceOf($relation = $relationDTO->rows, HasMany::class);
 
+<<<<<<< HEAD
         $parentKeyValue = $model->getAttribute($relation->getLocalKeyName());
         Assert::true(is_int($parentKeyValue) || is_string($parentKeyValue), 'Parent key must be int or string');
 
         $updateData = new HasManyUpdateData(
             foreignKey: $relation->getForeignKeyName(),
             parentKey: $parentKeyValue,
+=======
+        $updateData = new HasManyUpdateData(
+            foreignKey: $relation->getForeignKeyName(),
+            parentKey: $model->getAttribute($relation->getLocalKeyName()),
+>>>>>>> 7f6cf6be (.)
         );
 
         match (true) {
@@ -43,7 +49,11 @@ class HasManyAction
     /**
      * Determine if the update is a direct update.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> 7f6cf6be (.)
      */
     private function isDirectUpdate(array $data): bool
     {
@@ -97,7 +107,11 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
+<<<<<<< HEAD
      * @param  array<int, int|string>  $updatedIds
+=======
+     * @param array<int, int|string> $updatedIds
+>>>>>>> 7f6cf6be (.)
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

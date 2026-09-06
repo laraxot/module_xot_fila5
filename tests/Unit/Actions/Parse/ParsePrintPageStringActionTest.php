@@ -6,7 +6,11 @@ use Modules\Xot\Actions\ParsePrintPageStringAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 it('parses single pages and ranges', function (): void {
     $str = '1-4,6,7,8,11-14';

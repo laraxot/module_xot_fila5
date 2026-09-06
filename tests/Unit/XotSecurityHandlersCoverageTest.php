@@ -19,7 +19,11 @@ use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -34,7 +38,11 @@ describe('Xot security handlers deep', function (): void {
         Log::shouldReceive('debug')->zeroOrMoreTimes();
         Log::shouldReceive('error')->zeroOrMoreTimes();
 
+<<<<<<< HEAD
         $mw = new SecurityMiddleware;
+=======
+        $mw = new SecurityMiddleware();
+>>>>>>> 7f6cf6be (.)
         $next = static fn (Request $r): Response => new Response('ok', 200);
         $response = $mw->handle(Request::create('/health', 'GET'), $next);
 
@@ -53,7 +61,11 @@ describe('Xot security handlers deep', function (): void {
         $request = Request::create('/api/flood', 'GET', [], [], [], ['REMOTE_ADDR' => $ip]);
 
         try {
+<<<<<<< HEAD
             (new SecurityMiddleware)->handle($request, static fn (): Response => new Response('ok'));
+=======
+            (new SecurityMiddleware())->handle($request, static fn (): Response => new Response('ok'));
+>>>>>>> 7f6cf6be (.)
             Assert::fail('The request exceeded the configured IP rate limit.');
         } catch (HttpException $exception) {
             Assert::assertSame(429, $exception->getStatusCode());
@@ -67,7 +79,11 @@ describe('Xot security handlers deep', function (): void {
         Queue::fake();
         Process::fake();
 
+<<<<<<< HEAD
         $repo = new HandlersRepository;
+=======
+        $repo = new HandlersRepository();
+>>>>>>> 7f6cf6be (.)
         $repo->addReporter(static function (\InvalidArgumentException $e): void {});
         $repo->addReporter(static function (\Throwable $e): void {});
         $repo->addReporter(static function (): void {}); // no params → false

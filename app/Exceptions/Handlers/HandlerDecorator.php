@@ -32,10 +32,18 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
+<<<<<<< HEAD
     ) {}
 
     /**
      * @param  array<int, mixed>  $parameters
+=======
+    ) {
+    }
+
+    /**
+     * @param array<int, mixed> $parameters
+>>>>>>> 7f6cf6be (.)
      */
     public function __call(string $name, array $parameters): mixed
     {
@@ -177,6 +185,7 @@ class HandlerDecorator implements ExceptionHandler
             return false;
         }
 
+<<<<<<< HEAD
         $type = $params[0]->getType();
 
         if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
@@ -187,5 +196,8 @@ class HandlerDecorator implements ExceptionHandler
 
         return (class_exists($className) || interface_exists($className))
             && (new \ReflectionClass($className))->isInstance($e);
+=======
+        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
+>>>>>>> 7f6cf6be (.)
     }
 }

@@ -9,7 +9,11 @@ use Illuminate\Support\Facades\View;
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 test('view assets resolve from a registered namespace', function (): void {
     $directory = sys_get_temp_dir().'/xot-file-view-'.uniqid('', true);

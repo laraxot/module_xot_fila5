@@ -613,6 +613,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
+<<<<<<< HEAD
           php-
       - name: Install dependencies
         run: composer install
@@ -1323,6 +1324,8 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
+=======
+>>>>>>> 7f6cf6be (.)
           php-version: 8.3
       - name: Install dependencies
         run: composer install
@@ -1412,6 +1415,7 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 
 
@@ -2124,3 +2128,6 @@ class ContactNotificationService
 ```
 
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+=======
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> 7f6cf6be (.)

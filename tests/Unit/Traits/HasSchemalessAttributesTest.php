@@ -9,13 +9,21 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 it('handles extra attributes scope', function (): void {
     /** @var MockInterface&Builder<SchemalessTestModel> $builder */
     $builder = Mockery::mock(Builder::class);
 
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 7f6cf6be (.)
     $model->extra_attributes = SchemalessAttributes::createForModel($model, 'extra_attributes');
 
     $result = $model->scopeWithExtraAttributes($builder);
@@ -28,7 +36,11 @@ it('handles where extra attribute scope', function (): void {
     $builder = Mockery::mock(Builder::class);
     $builder->allows(['where' => $builder]);
 
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 7f6cf6be (.)
 
     $result = $model->scopeWhereExtraAttribute($builder, 'key', 'value');
     Assert::assertSame($builder, $result);
@@ -36,7 +48,11 @@ it('handles where extra attribute scope', function (): void {
 });
 
 it('gets and sets extra attributes', function (): void {
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 7f6cf6be (.)
     $model->setExtraAttribute('foo', 'bar');
 
     Assert::assertSame('bar', $model->getExtraAttribute('foo'));
@@ -45,14 +61,22 @@ it('gets and sets extra attributes', function (): void {
 });
 
 it('returns all extra attributes as array', function (): void {
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 7f6cf6be (.)
     $model->setExtraAttribute('a', 1);
 
     Assert::assertSame(['a' => 1], $model->getExtraAttributes());
 });
 
 it('removes extra attribute', function (): void {
+<<<<<<< HEAD
     $model = new SchemalessTestModel;
+=======
+    $model = new SchemalessTestModel();
+>>>>>>> 7f6cf6be (.)
     $model->setExtraAttribute('temp', 'val');
 
     Assert::assertTrue($model->hasExtraAttribute('temp'));

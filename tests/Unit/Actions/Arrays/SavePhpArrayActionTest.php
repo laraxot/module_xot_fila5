@@ -13,7 +13,11 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 /** @var string|null $arrayTestTempDir */
 $arrayTestTempDir = null;
