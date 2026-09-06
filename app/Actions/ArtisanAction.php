@@ -50,7 +50,7 @@ class ArtisanAction
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     // Dati sacri: mai --force (solo migrate additivo)
-                    return self::exe('module:migrate', ['module' => $module_name]);
+                    return self::exe('module:migrate '.$module_name);
                 }
 
                 return self::exe('migrate');
