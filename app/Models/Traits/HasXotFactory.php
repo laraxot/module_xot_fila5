@@ -22,7 +22,7 @@ trait HasXotFactory
      *
      * @return Factory<static>
      */
-    protected static function newFactory(): Factory
+    protected static function newFactory()
     {
         /** @var Factory<static> $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);

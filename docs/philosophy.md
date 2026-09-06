@@ -515,7 +515,7 @@ php artisan db:seed XotSeeder
 ### Quick Start: Extend a Filament Resource
 
 ```php
-// In your module's Filament/Resources/
+// In a module's Filament/Resources/
 namespace Modules\MyModule\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
