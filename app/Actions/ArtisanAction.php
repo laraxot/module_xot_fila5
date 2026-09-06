@@ -133,13 +133,14 @@ class ArtisanAction
 
         $pattern = '/url":"([^"]*)"/';
 
-        /** @var array<int, array<int, string>> $matches */
         $matches = [];
         preg_match_all($pattern, $content, $matches);
 
         /** @var array<int, string> $urls */
         $urls = [];
-        $urlsRaw = $matches[1];
+        $urlsRaw = $matches[1] ?? [];
+        Assert::isArray($urlsRaw);
+        Assert::allString($urlsRaw);
         if ([] !== $urlsRaw) {
             $urls = array_values(array_unique($urlsRaw));
         }
