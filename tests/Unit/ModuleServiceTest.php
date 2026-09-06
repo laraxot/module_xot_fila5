@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+/**
+ * @phpstan-ignore property.notFound, argument.type
+ */
+
 use Modules\Xot\Services\ModuleService;
 use PHPUnit\Framework\Assert;
 use Tests\TestCase;
