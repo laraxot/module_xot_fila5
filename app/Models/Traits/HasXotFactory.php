@@ -29,4 +29,14 @@ trait HasXotFactory
 
         return $factory;
     }
+
+    /**
+     * Get a new factory instance for the model.
+     *
+     * @return Factory<static>
+     */
+    public static function factory(): Factory
+    {
+        return static::newFactory();
+    }
 }
