@@ -35,7 +35,7 @@ trait HasCommonScopes
     /**
      * Scope query to only active records.
      *
-     * Extracted from duplicated code across multiple modules.
+     * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
      *
      * @param  Builder<static>  $query
      * @return Builder<static>

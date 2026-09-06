@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\ColumnGroup;
-use Filament\Tables\Columns\Layout\Component as LayoutComponent;
-use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\Unit\Fixtures\LegacyTableNameFixture;
 use PHPUnit\Framework\Assert;

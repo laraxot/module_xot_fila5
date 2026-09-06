@@ -13,7 +13,6 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  *
  * Usage: just use the trait in your model. No type parameters needed.
  *
- * @template TFactory of Factory<*>
  * @mixin Model
  */
 trait HasXotFactory
@@ -23,21 +22,11 @@ trait HasXotFactory
      *
      * @return Factory<static>
      */
-    protected static function newFactory()
+    protected static function newFactory(): Factory
     {
         /** @var Factory<static> $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);
 
         return $factory;
-    }
-
-    /**
-     * Get a new factory instance for the model.
-     *
-     * @return Factory
-     */
-    public static function factory(): Factory
-    {
-        return static::newFactory();
     }
 }

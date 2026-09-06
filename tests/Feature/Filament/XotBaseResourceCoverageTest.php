@@ -178,9 +178,6 @@ it('covers get attachments schema branches', function (): void {
     app()->instance(GetAttachmentsSchemaAction::class, new class
     {
         /**
-         * @param array<string, mixed> $attachments
-         *
-         * @return array<int, string>
          * @param  string[]  $attachments
          * @return string[]
          */

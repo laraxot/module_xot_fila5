@@ -20,7 +20,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
-use LogicException;
 use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\Filament\GetResourceClassNameByModelClassAction;
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -153,46 +152,26 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-     * Resolve the dedicated table configurator for the current resource.
-     *
      * @return class-string<XotBaseResourceTable>
      */
     public static function getTableClass(): string
     {
-        $modelTableClass = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
-        if (class_exists($modelTableClass)) {
-            Assert::subclassOf($modelTableClass, XotBaseResourceTable::class);
+        $class = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+        if (class_exists($class)) {
+            Assert::subclassOf($class, XotBaseResourceTable::class);
 
-            return $modelTableClass;
+            return $class;
         }
 
-        $resourceName = Str::before(class_basename(static::class), 'Resource');
-        $resourceTableClass = static::class.'\Tables\\'.Str::plural($resourceName).'Table';
-        if (class_exists($resourceTableClass)) {
-            Assert::subclassOf($resourceTableClass, XotBaseResourceTable::class);
+        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
+        $class1 = $class1.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+        Assert::subclassOf($class1, XotBaseResourceTable::class);
 
-            return $resourceTableClass;
-        }
-
-        $resourceClass = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
-        $fallbackTableClass = $resourceClass.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
-        if (! class_exists($fallbackTableClass)) {
-            throw new LogicException(sprintf(
-                'No table class found for resource [%s] and model [%s].',
-                static::class,
-                static::getModel(),
-            ));
-        }
-
-        Assert::subclassOf($fallbackTableClass, XotBaseResourceTable::class);
-
-        return $fallbackTableClass;
+        return $class1;
     }
 
     public static function table(Table $table): Table
     {
-        $tableClass = static::getTableClass();
-        $configured = $tableClass::configure($table);
         $class = static::getTableClass();
         $configured = $class::configure($table);
         Assert::isInstanceOf($configured, Table::class);
