@@ -19,13 +19,6 @@ test('un override di getTableFilters viene onorato', function (): void {
 });
 
 test('senza override si ricade sul default vuoto', function (): void {
-    $fixture = new class()
-    {
-        use HasXotTable;
-
-        public string $tableSearch = '';
-
-        /** @return array<string, Column> */
     $fixture = new class
     {
         use Modules\Xot\Filament\Traits\HasXotTable;
