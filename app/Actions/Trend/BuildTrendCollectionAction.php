@@ -20,12 +20,7 @@ class BuildTrendCollectionAction
     /**
      * @template TModel of Model
      *
-<<<<<<< HEAD
      * @param  Builder<TModel>  $query
-=======
-     * @param Builder<TModel> $query
-     *
->>>>>>> 7f6cf6be (.)
      * @return Collection<int, TrendData>
      */
     public function execute(

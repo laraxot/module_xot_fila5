@@ -6,11 +6,7 @@ use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 it('generates translation keys correctly', function (): void {
     $action = app(GetTransKeyAction::class);

@@ -13,11 +13,7 @@ use PHPUnit\Framework\Assert;
 
 describe('Safe Array By Model Cast Action', function (): void {
     test('converts model attributes to array correctly', function (): void {
-<<<<<<< HEAD
         $model = new Activity;
-=======
-        $model = new Activity();
->>>>>>> 7f6cf6be (.)
         $model->setRawAttributes(['name' => 'Test']);
 
         $action = app(SafeArrayByModelCastAction::class);

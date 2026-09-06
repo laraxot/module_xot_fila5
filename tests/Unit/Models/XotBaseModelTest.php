@@ -8,11 +8,7 @@ use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 test('xot base model extends eloquent model', function (): void {
     $reflection = new ReflectionClass(XotBaseModel::class);
@@ -57,22 +53,14 @@ test('xot base model has correct property types', function (): void {
     $snakeType = $snakeAttributesProperty->getType();
     $perPageType = $perPageProperty->getType();
 
-<<<<<<< HEAD
     if ($snakeType !== null) {
-=======
-    if (null !== $snakeType) {
->>>>>>> 7f6cf6be (.)
         Assert::assertInstanceOf(ReflectionNamedType::class, $snakeType);
         Assert::assertSame('bool', $snakeType->getName());
     } else {
         Assert::assertTrue(XotBaseModel::$snakeAttributes);
     }
 
-<<<<<<< HEAD
     if ($perPageType !== null) {
-=======
-    if (null !== $perPageType) {
->>>>>>> 7f6cf6be (.)
         Assert::assertInstanceOf(ReflectionNamedType::class, $perPageType);
         Assert::assertSame('int', $perPageType->getName());
     } else {

@@ -13,11 +13,7 @@ use Modules\Xot\Tests\Fixtures\FakeQueryableModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 it('gets model class by model type from morph map', function (): void {
     config()->set('morph_map', ['demo' => DemoModel::class]);
@@ -61,11 +57,7 @@ it('instantiates model by type when id is null', function (): void {
 
 it('loads model by id when record exists', function (): void {
     config()->set('morph_map', ['demo' => FakeQueryableModel::class]);
-<<<<<<< HEAD
     FakeQueryableModel::$findResult = new DemoModel;
-=======
-    FakeQueryableModel::$findResult = new DemoModel();
->>>>>>> 7f6cf6be (.)
     FakeQueryableModel::$findResult->setAttribute('id', 123);
 
     $result = app(GetModelByModelTypeAction::class)->execute('demo', '123');
@@ -87,12 +79,7 @@ it('throws when model id is provided but record is missing', function (): void {
 });
 
 it('returns snake model type from model contract instance', function (): void {
-<<<<<<< HEAD
     $model = new class extends Model implements ModelContract {};
-=======
-    $model = new class extends Model implements ModelContract {
-    };
->>>>>>> 7f6cf6be (.)
 
     $result = app(GetModelTypeByModelAction::class)->execute($model);
 

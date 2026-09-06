@@ -15,14 +15,8 @@ class DownloadZipByPathsDiskAction
     /**
      * Crea un file ZIP dai percorsi forniti e lo restituisce come download.
      *
-<<<<<<< HEAD
      * @param  array<int, string>  $attachments  Array di percorsi file
      * @param  string  $disk  Nome del disco di storage
-=======
-     * @param array<int, string> $attachments Array di percorsi file
-     * @param string             $disk        Nome del disco di storage
-     *
->>>>>>> 7f6cf6be (.)
      * @return BinaryFileResponse|null Risposta di download o null se fallisce
      */
     public function execute(array $attachments, string $disk): ?BinaryFileResponse
@@ -31,31 +25,19 @@ class DownloadZipByPathsDiskAction
         $zipPath = 'temp/'.$zipFileName;
 
         // Crea un file temporaneo per lo ZIP usando Storage
-<<<<<<< HEAD
         $zip = new \ZipArchive;
-=======
-        $zip = new \ZipArchive();
->>>>>>> 7f6cf6be (.)
         $tempFilePath = storage_path('app/'.$zipPath);
 
         // Assicurati che la directory temp esista
         Storage::disk('local')->makeDirectory('temp');
 
-<<<<<<< HEAD
         if ($zip->open($tempFilePath, \ZipArchive::CREATE) === true) {
-=======
-        if (true === $zip->open($tempFilePath, \ZipArchive::CREATE)) {
->>>>>>> 7f6cf6be (.)
             foreach ($attachments as $attachment) {
                 $filePath = $attachment;
 
                 if (Storage::disk($disk)->exists($filePath)) {
                     $fileContent = Storage::disk($disk)->get($filePath);
-<<<<<<< HEAD
                     if ($fileContent !== null) {
-=======
-                    if (null !== $fileContent) {
->>>>>>> 7f6cf6be (.)
                         $zip->addFromString($attachment.'.pdf', $fileContent);
                     }
                 } else {

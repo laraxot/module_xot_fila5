@@ -19,11 +19,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * Defines the state machine configuration and required methods
  * that must be implemented by each concrete state class.
  *
-<<<<<<< HEAD
  * @property string $name Il nome dello stato
-=======
- * @property string $name  Il nome dello stato
->>>>>>> 7f6cf6be (.)
  * @property string $value Il valore dello stato nel database
  */
 abstract class XotBaseState implements StateContract
@@ -92,14 +88,8 @@ abstract class XotBaseState implements StateContract
     /**
      * Fill form data for modal.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
-     *
->>>>>>> 7f6cf6be (.)
      * @return array<string, mixed>
      */
     public function modalFillForm(array $arguments, array $data): array
@@ -120,13 +110,8 @@ abstract class XotBaseState implements StateContract
     /**
      * Execute modal action.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
->>>>>>> 7f6cf6be (.)
      */
     public function modalAction(array $arguments, array $data): void
     {
@@ -136,13 +121,8 @@ abstract class XotBaseState implements StateContract
     /**
      * Process state action.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $arguments
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $arguments
-     * @param array<string, mixed> $data
->>>>>>> 7f6cf6be (.)
      */
     public function processStateAction(array $arguments, array $data): void
     {
@@ -162,11 +142,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Execute modal action by record.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> 7f6cf6be (.)
      */
     public function modalActionByRecord(Model $record, array $data): void
     {
@@ -176,11 +152,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Process state action by record.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> 7f6cf6be (.)
      */
     public function processStateActionByRecord(Model $record, array $data): void
     {

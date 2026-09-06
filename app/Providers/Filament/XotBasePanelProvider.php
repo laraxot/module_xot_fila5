@@ -12,11 +12,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
-<<<<<<< HEAD
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
-=======
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
->>>>>>> 7f6cf6be (.)
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
@@ -90,11 +86,7 @@ abstract class XotBasePanelProvider extends PanelProvider
                 StartSession::class,
                 AuthenticateSession::class,
                 ShareErrorsFromSession::class,
-<<<<<<< HEAD
                 PreventRequestForgery::class,
-=======
-                VerifyCsrfToken::class,
->>>>>>> 7f6cf6be (.)
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,

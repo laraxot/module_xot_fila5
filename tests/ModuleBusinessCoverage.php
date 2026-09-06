@@ -84,11 +84,7 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
-<<<<<<< HEAD
                 $policy = new $class;
-=======
-                $policy = new $class();
->>>>>>> 7f6cf6be (.)
                 $executed++;
 
                 $ref = new ReflectionClass($policy);
@@ -148,11 +144,7 @@ final class ModuleBusinessCoverage
             $discovered++;
 
             try {
-<<<<<<< HEAD
                 $model = new $class;
-=======
-                $model = new $class();
->>>>>>> 7f6cf6be (.)
                 $executed++;
                 Assert::assertNotEmpty($model->getTable());
                 Assert::assertNotEmpty($model->getFillable());

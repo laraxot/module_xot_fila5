@@ -21,15 +21,9 @@ use Webmozart\Assert\Assert;
 /**
  * Base class for list records pages.
  *
-<<<<<<< HEAD
  * @property ?string $model
  * @property ?string $resource
  * @property ?string $slug
-=======
- * @property ?string         $model
- * @property ?string         $resource
- * @property ?string         $slug
->>>>>>> 7f6cf6be (.)
  * @property TableLayoutEnum $layoutView
  */
 abstract class XotBaseListRecords extends FilamentListRecords
@@ -37,11 +31,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
     use HasXotTable;
 
     /**
-<<<<<<< HEAD
      * @param  array<string, bool|float|int|string|null>  $params
-=======
-     * @param array<string, bool|float|int|string|null> $params
->>>>>>> 7f6cf6be (.)
      */
     public static function trans(string $key, array $params = []): string
     {
@@ -97,22 +87,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
     /**
      * Paginate the table query.
      *
-<<<<<<< HEAD
      * @param  Builder<Model>  $query
-=======
-     * @param Builder<Model> $query
-     *
->>>>>>> 7f6cf6be (.)
      * @return Paginator<int, Model>
      */
     protected function paginateTableQueryOLD(Builder $query): Paginator
     {
         $perPage = $this->getTableRecordsPerPage();
-<<<<<<< HEAD
         $perPageValue = $perPage === 'all' ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
-=======
-        $perPageValue = 'all' === $perPage ? $query->count() : (is_numeric($perPage) ? (int) $perPage : null);
->>>>>>> 7f6cf6be (.)
 
         $paginator = $query->paginate($perPageValue);
 

@@ -10,11 +10,7 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 it('gets and caches components correctly', function (): void {
     $tempDir = sys_get_temp_dir().'/test_comps_'.uniqid();
@@ -34,11 +30,7 @@ class TestComp {}";
 
     Assert::assertInstanceOf(DataCollection::class, $result);
     Assert::assertSame(1, $result->count());
-<<<<<<< HEAD
     $first = $result->toCollection()->first();
-=======
-    $first = $result->first();
->>>>>>> 7f6cf6be (.)
     Assert::assertNotNull($first);
     Assert::assertSame('prefix-test-comp', $first->name);
     $jsonCache = $tempDir.'/_components.json';

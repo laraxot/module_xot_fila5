@@ -10,18 +10,10 @@ use Modules\Xot\Tests\Unit\Support\HasTableWithoutOptionalMethodsTestClass;
 use Modules\Xot\Tests\Unit\Support\HasTableWithXotTestClass;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 /**
  * @param  MockInterface&Table  $tableMock
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
-
-/**
- * @param MockInterface&Table $tableMock
- *
->>>>>>> 7f6cf6be (.)
  * @return MockInterface&Table
  */
 function stubTableChain(MockInterface $tableMock): MockInterface
@@ -70,12 +62,7 @@ it('tests table method with all methods implemented', function (): void {
     /** @var HasTableWithXotTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithXotTestClass::class)
         ->makePartial()
-<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
-=======
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
->>>>>>> 7f6cf6be (.)
     $mock->allows([
         'getTableHeaderActions' => [],
         'getTableActions' => [],
@@ -107,12 +94,7 @@ it('tests table method with no optional methods implemented', function (): void 
     /** @var HasTableWithoutOptionalMethodsTestClass&MockInterface $mock */
     $mock = Mockery::mock(HasTableWithoutOptionalMethodsTestClass::class)
         ->makePartial()
-<<<<<<< HEAD
         ->shouldAllowMockingProtectedMethods();
-=======
-        ->shouldAllowMockingProtectedMethods()
-        ->shouldDeferMissing();
->>>>>>> 7f6cf6be (.)
     $mock->allows([
         'getModelClass' => DummyTestModel::class,
         'getTableRecordTitleAttribute' => 'name',

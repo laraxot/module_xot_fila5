@@ -5,21 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
-=======
->>>>>>> 7f6cf6be (.)
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 /**
  * @return list<array{0: string, 1: string}>
@@ -98,11 +91,7 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 
     $body = trim($m[1]);
 
-<<<<<<< HEAD
     return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
-=======
-    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
->>>>>>> 7f6cf6be (.)
 }
 
 test('every concrete filament resource has populated schemas and table classes', function (): void {

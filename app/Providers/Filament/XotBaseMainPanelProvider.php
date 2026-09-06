@@ -4,26 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers\Filament;
 
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-=======
-use Filament\Http\Middleware\Authenticate;
-use Filament\Http\Middleware\DisableBladeIconComponents;
-use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Navigation\MenuItem;
->>>>>>> 7f6cf6be (.)
 use Filament\Panel;
 use Filament\PanelProvider;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
-<<<<<<< HEAD
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
-=======
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
->>>>>>> 7f6cf6be (.)
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
@@ -100,11 +89,7 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
                 StartSession::class,
                 AuthenticateSession::class,
                 ShareErrorsFromSession::class,
-<<<<<<< HEAD
                 PreventRequestForgery::class,
-=======
-                VerifyCsrfToken::class,
->>>>>>> 7f6cf6be (.)
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
@@ -123,11 +108,7 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
         $profileLabel = is_string($profileLabelRaw) ? $profileLabelRaw : null;
 
         $panel->userMenuItems([
-<<<<<<< HEAD
             Action::make('profile')
-=======
-            MenuItem::make()
->>>>>>> 7f6cf6be (.)
                 ->label($profileLabel)
                 ->url($profile_url)
                 ->icon('heroicon-o-user'),

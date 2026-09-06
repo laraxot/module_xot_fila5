@@ -202,11 +202,7 @@ final class ModuleExecuteCoverage
                         try {
                             $instance = $ref->newInstanceWithoutConstructor();
                         } catch (\Throwable) {
-<<<<<<< HEAD
                             $instance = new $class;
-=======
-                            $instance = new $class();
->>>>>>> 7f6cf6be (.)
                         }
                         if ($refMethod->getNumberOfRequiredParameters() > 0) {
                             continue;
@@ -228,11 +224,7 @@ final class ModuleExecuteCoverage
                 try {
                     $instance = $ref->newInstanceWithoutConstructor();
                 } catch (\Throwable) {
-<<<<<<< HEAD
                     $instance = new $class;
-=======
-                    $instance = new $class();
->>>>>>> 7f6cf6be (.)
                 }
             } catch (\Throwable) {
                 continue;
@@ -414,11 +406,7 @@ final class ModuleExecuteCoverage
 
     public static function testXotBaseMigrationHelpers(): void
     {
-<<<<<<< HEAD
         $migration = new class extends XotBaseMigration
-=======
-        $migration = new class() extends XotBaseMigration
->>>>>>> 7f6cf6be (.)
         {
             protected ?string $model_class = Cache::class;
 
@@ -459,11 +447,7 @@ final class ModuleExecuteCoverage
             }
 
             try {
-<<<<<<< HEAD
                 $middleware = new $class;
-=======
-                $middleware = new $class();
->>>>>>> 7f6cf6be (.)
                 $request = Request::create('/test-'.uniqid('', true), 'GET', [], [], [], [
                     'HTTP_USER_AGENT' => 'PHPUnit',
                     'REMOTE_ADDR' => '127.0.0.'.random_int(1, 254),
@@ -683,11 +667,7 @@ final class ModuleExecuteCoverage
             }
 
             try {
-<<<<<<< HEAD
                 $model = new $class;
-=======
-                $model = new $class();
->>>>>>> 7f6cf6be (.)
                 $model->setRawAttributes(self::defaultModelAttributes());
                 $executed++;
 
@@ -952,11 +932,7 @@ final class ModuleExecuteCoverage
                 }
 
                 if (str_contains($class, '\\Tables\\') && is_subclass_of($class, XotBaseResourceTable::class)) {
-<<<<<<< HEAD
                     $table = new $class;
-=======
-                    $table = new $class();
->>>>>>> 7f6cf6be (.)
                     $table->getTableColumns();
                     $table->getTableFilters();
                     $executed++;
@@ -993,11 +969,7 @@ final class ModuleExecuteCoverage
             }
 
             try {
-<<<<<<< HEAD
                 $model = new $class;
-=======
-                $model = new $class();
->>>>>>> 7f6cf6be (.)
                 $model->setRawAttributes(self::defaultModelAttributes());
                 $model->toArray();
                 $model->getFillable();
@@ -1194,11 +1166,7 @@ final class ModuleExecuteCoverage
 
                         continue;
                     }
-<<<<<<< HEAD
                     $model = new $typeName;
-=======
-                    $model = new $typeName();
->>>>>>> 7f6cf6be (.)
                     $model->setRawAttributes(self::defaultModelAttributes());
                     $args[] = $model;
 

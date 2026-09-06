@@ -15,20 +15,11 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_encode;
 use function Safe\unserialize;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 function createXotBaseModelFixture(): BaseModel
 {
     return new class extends BaseModel {};
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
-
-function createXotBaseModelFixture(): BaseModel
-{
-    return new class extends BaseModel {
-    };
->>>>>>> 7f6cf6be (.)
 }
 
 describe('Xot Base Model Business Logic', function (): void {
@@ -94,11 +85,7 @@ describe('Xot Base Model Business Logic', function (): void {
 
     test('it can be used as base for other models', function (): void {
         // Arrange
-<<<<<<< HEAD
         $module = new Module;
-=======
-        $module = new Module();
->>>>>>> 7f6cf6be (.)
 
         // Act & Assert
         Assert::assertInstanceOf(XotBaseModel::class, $module);

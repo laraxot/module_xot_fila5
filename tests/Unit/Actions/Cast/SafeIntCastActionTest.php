@@ -6,11 +6,7 @@ use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 it('casts various values to integer correctly', function (): void {
     $action = app(SafeIntCastAction::class);
@@ -35,12 +31,8 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(15, $action->execute(['15']));
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
-<<<<<<< HEAD
     $obj = new class
     {
-=======
-    $obj = new class {
->>>>>>> 7f6cf6be (.)
         public function __toString()
         {
             return '20';

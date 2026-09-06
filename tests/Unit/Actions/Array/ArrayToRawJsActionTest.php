@@ -3,19 +3,11 @@
 declare(strict_types=1);
 
 use Filament\Support\RawJs;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-use Modules\Xot\Actions\Array\ArrayToRawJsAction;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 it('converts array to raw js string correctly', function (): void {
     $action = app(ArrayToRawJsAction::class);

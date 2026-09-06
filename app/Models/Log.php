@@ -17,33 +17,18 @@ use Sushi\Sushi;
  *
  * @property string|null $id
  * @property string|null $name
-<<<<<<< HEAD
  * @property int|null $size
  * @method static LogFactory factory($count = null, $state = [])
-=======
- * @property int|null    $size
- *
- * @method static LogFactory          factory($count = null, $state = [])
->>>>>>> 7f6cf6be (.)
  * @method static Builder<static>|Log newModelQuery()
  * @method static Builder<static>|Log newQuery()
  * @method static Builder<static>|Log query()
  * @method static Builder<static>|Log whereId($value)
  * @method static Builder<static>|Log whereName($value)
  * @method static Builder<static>|Log whereSize($value)
-<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property string|null $file_content
  * @property ProfileContract|null $updater
-=======
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property string|null          $file_content
- * @property ProfileContract|null $updater
- *
->>>>>>> 7f6cf6be (.)
  * @mixin \Eloquent
  */
 class Log extends BaseModel
@@ -61,11 +46,7 @@ class Log extends BaseModel
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() === 'log') {
-=======
-            if ('log' === $file->getExtension()) {
->>>>>>> 7f6cf6be (.)
                 $rows[] = [
                     'id' => $file->getFilenameWithoutExtension(),
                     'name' => $file->getFilenameWithoutExtension(),

@@ -6,7 +6,6 @@ return [
     'navigation' => [
         'name' => 'cache',
         'plural' => 'cache',
-<<<<<<< HEAD
         'group' => ['name' => 'Admin'],
     ],
     'pages' => [
@@ -15,31 +14,11 @@ return [
             'heading' => 'Application Health',
             'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
             'notifications' => ['check_results' => 'Check results from'],
-=======
-        'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'pages' => [
-        'health_check_results' => [
-            'buttons' => [
-                'refresh' => 'Refresh',
-            ],
-            'heading' => 'Application Health',
-            'navigation' => [
-                'group' => 'Settings',
-                'label' => 'Application Health',
-            ],
-            'notifications' => [
-                'check_results' => 'Check results from',
-            ],
->>>>>>> 7f6cf6be (.)
         ],
     ],
     'label' => 'Cache',
     'plural_label' => 'Cache (Plurale)',
     'fields' => [
-<<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -58,36 +37,5 @@ return [
         'icons:cache' => ['label' => 'icons:cache', 'icon' => 'icons:cache', 'tooltip' => 'icons:cache'],
         'filament:cache-components' => ['label' => 'filament:cache-components', 'icon' => 'filament:cache-components', 'tooltip' => 'filament:cache-components'],
         'filament:clear-cached-components' => ['label' => 'filament:clear-cached-components', 'icon' => 'filament:clear-cached-components', 'tooltip' => 'filament:clear-cached-components'],
-=======
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Cache',
-        ],
-        'edit' => [
-            'label' => 'Modifica Cache',
-        ],
-        'delete' => [
-            'label' => 'Elimina Cache',
-        ],
->>>>>>> 7f6cf6be (.)
     ],
 ];

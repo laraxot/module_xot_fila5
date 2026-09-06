@@ -5,18 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\json_encode;
 
-=======
-
-use function Safe\json_encode;
-
-use Spatie\SchemalessAttributes\SchemalessAttributes;
-
->>>>>>> 7f6cf6be (.)
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
@@ -61,12 +53,7 @@ trait HasSchemalessAttributes
     /**
      * Scope per filtrare per attributi schemaless.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> 7f6cf6be (.)
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -81,12 +68,7 @@ trait HasSchemalessAttributes
     /**
      * Scope per query specifiche su extra_attributes.
      *
-<<<<<<< HEAD
      * @param  Builder<static>  $query
-=======
-     * @param Builder<static> $query
-     *
->>>>>>> 7f6cf6be (.)
      * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
@@ -117,7 +99,6 @@ trait HasSchemalessAttributes
 
     /**
      * Get un valore da extra_attributes.
-<<<<<<< HEAD
      *
      * Returns mixed because extra_attributes stores JSON-serializable data of any type.
      * The return type matches whatever type was stored or the default value provided.
@@ -128,8 +109,6 @@ trait HasSchemalessAttributes
      * @return mixed The stored value or default (could be string, int, bool, array, null, etc.)
      *
      * @see https://github.com/spatie/laravel-schemaless-attributes
-=======
->>>>>>> 7f6cf6be (.)
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {

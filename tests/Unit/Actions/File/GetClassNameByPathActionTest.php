@@ -9,11 +9,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\tempnam;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 it('gets class name from path correctly', function (): void {
     $tempFile = tempnam(sys_get_temp_dir(), 'test_class_');

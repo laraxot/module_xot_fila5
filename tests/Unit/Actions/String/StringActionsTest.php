@@ -9,11 +9,7 @@ use Modules\Xot\Actions\String\SanitizeAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 test('get pronounceable password action works', function () {
     $action = app(GetPronounceablePasswordAction::class);
