@@ -139,7 +139,7 @@ abstract class TestCase extends XotBaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessageMatches('/' . preg_quote($message, '/') . '/');
+        $this->expectExceptionMessageMatches('/'.preg_quote($message, '/').'/');
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

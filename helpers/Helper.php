@@ -280,7 +280,7 @@ if (! function_exists('xotSeedModelOnce')) {
      */
     function xotSeedModelOnce(string $modelClass): void
     {
-        (new GetFactoryAction)
+        (new GetFactoryAction())
             ->execute($modelClass)
             ->createOne();
     }
