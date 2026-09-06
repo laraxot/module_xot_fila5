@@ -8,10 +8,6 @@ use Composer\Autoload\ClassLoader;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\Placeholder;
->>>>>>> 7f6cf6be (.)
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
@@ -30,18 +26,10 @@ use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\View\Composers\XotComposer;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
-=======
-
-use function Safe\realpath;
-
-use Webmozart\Assert\Assert;
-
->>>>>>> 7f6cf6be (.)
 /**
  * Class XotServiceProvider.
  */
@@ -99,11 +87,7 @@ class XotServiceProvider extends XotBaseServiceProvider
             return;
         }
 
-<<<<<<< HEAD
         (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
-=======
-        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
->>>>>>> 7f6cf6be (.)
     }
 
     public function registerTimezone(): void
@@ -191,20 +175,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
-=======
-            if ('php' !== $file->getExtension()) {
->>>>>>> 7f6cf6be (.)
                 continue;
             }
 
             $realPath = $file->getRealPath();
-<<<<<<< HEAD
             if ($realPath === false) {
-=======
-            if (false === $realPath) {
->>>>>>> 7f6cf6be (.)
                 continue;
             }
 
@@ -227,13 +203,9 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-<<<<<<< HEAD
         // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
         // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
         $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
-=======
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
->>>>>>> 7f6cf6be (.)
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

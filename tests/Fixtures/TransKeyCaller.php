@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Fixtures;
 
 use Modules\Xot\Actions\GetTransKeyAction;
-<<<<<<< HEAD
 use Modules\User\Models\User;
-=======
->>>>>>> 7f6cf6be (.)
 
 class TransKeyCaller
 {

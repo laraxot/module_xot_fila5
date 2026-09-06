@@ -28,13 +28,7 @@ class ListModules extends XotBaseListRecords
     #[\Override]
     public function getGridTableColumns(): array
     {
-<<<<<<< HEAD
         return parent::getGridTableColumns();
-=======
-        return [
-            Stack::make($this->getTableColumns()),
-        ];
->>>>>>> 7f6cf6be (.)
     }
 
     /**

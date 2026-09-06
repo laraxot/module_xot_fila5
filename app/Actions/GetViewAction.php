@@ -15,7 +15,6 @@ class GetViewAction
     /**
      * Summary of execute.
      *
-<<<<<<< HEAD
      *
      * @return view-string
      *
@@ -24,26 +23,13 @@ class GetViewAction
     public function execute(string $tpl = '', string $file0 = ''): string
     {
         if ($file0 === '') {
-=======
-     * @throws \Exception
-     *
-     * @return view-string
-     */
-    public function execute(string $tpl = '', string $file0 = ''): string
-    {
-        if ('' === $file0) {
->>>>>>> 7f6cf6be (.)
             $backtrace = debug_backtrace();
             $file0 = app(FixPathAction::class)->execute($backtrace[0]['file'] ?? '');
         }
 
         $file0 = Str::after($file0, base_path());
         $arr = explode(DIRECTORY_SEPARATOR, $file0);
-<<<<<<< HEAD
         if ($arr[0] === '') {
-=======
-        if ('' === $arr[0]) {
->>>>>>> 7f6cf6be (.)
             $arr = array_slice($arr, 1);
             $arr = array_values($arr);
         }
@@ -53,11 +39,7 @@ class GetViewAction
         $tmp = array_slice($arr, 4); // con "app"
 
         $tmp = collect($tmp)
-<<<<<<< HEAD
             ->map(static function (string $item) {
-=======
-            ->map(static function ($item) {
->>>>>>> 7f6cf6be (.)
                 $item = str_replace('.php', '', $item);
 
                 return Str::slug(Str::snake($item));
@@ -67,11 +49,7 @@ class GetViewAction
         $pub_view = 'pub_theme::'.$tmp;
         // $pub_view è sempre stringa perché costruita da stringhe
 
-<<<<<<< HEAD
         if ($tpl !== '') {
-=======
-        if ('' !== $tpl) {
->>>>>>> 7f6cf6be (.)
             $pub_view .= '.'.$tpl;
         }
         // PHPStan: $pub_view è sempre non-falsy-string, Assert ridondante rimosso
@@ -81,11 +59,7 @@ class GetViewAction
 
         $view = Str::lower($mod).'::'.$tmp;
 
-<<<<<<< HEAD
         if ($tpl !== '') {
-=======
-        if ('' !== $tpl) {
->>>>>>> 7f6cf6be (.)
             $view .= '.'.$tpl;
         }
 

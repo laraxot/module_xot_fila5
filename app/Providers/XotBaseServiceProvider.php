@@ -58,11 +58,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerBladeIcons(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> 7f6cf6be (.)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -90,11 +86,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> 7f6cf6be (.)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -109,11 +101,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     public function registerTranslations(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> 7f6cf6be (.)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 
@@ -166,11 +154,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
                 'Modules\\'.$this->name.'\\Console\\Commands',
                 $prefix,
             );
-<<<<<<< HEAD
         if ($comps->count() === 0) {
-=======
-        if (0 === $comps->count()) {
->>>>>>> 7f6cf6be (.)
             return;
         }
         $commands = $comps->toArray();
@@ -221,11 +205,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 
     protected function registerPublicAssets(): void
     {
-<<<<<<< HEAD
         if ($this->name === '') {
-=======
-        if ('' === $this->name) {
->>>>>>> 7f6cf6be (.)
             throw new \Exception('name is empty on ['.static::class.']');
         }
 

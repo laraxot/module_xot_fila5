@@ -42,10 +42,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Webmozart\Assert\Assert;
-<<<<<<< HEAD
 use ReflectionMethod;
-=======
->>>>>>> 7f6cf6be (.)
 
 /**
  * Trait HasXotTable.
@@ -100,6 +97,7 @@ trait HasXotTable
 
         // dddx(method_exists($resource, 'canAttach'));
 
+        /** @var array<int|string, Action|ActionGroup> $actions */
         $actions = [
             CreateAction::make(),
         ];
@@ -131,23 +129,16 @@ trait HasXotTable
      */
     public function getGridTableColumns(): array
     {
-<<<<<<< HEAD
-        $columns = [];
-
-        foreach (array_values($this->resolveTableColumns()) as $column) {
-=======
         /** @var array<int, Column|LayoutComponent> $columns */
         $columns = [];
 
-        foreach (array_values($this->getTableColumns()) as $column) {
->>>>>>> 7f6cf6be (.)
+        foreach (array_values($this->resolveTableColumns()) as $column) {
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
                 // raggruppate non hanno un layout sensato, quindi vengono saltate.
                 continue;
             }
 
-<<<<<<< HEAD
             if (! $column instanceof Column && ! $column instanceof LayoutComponent) {
                 // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
                 // (fallback deprecato di Filament): si scartano per restare coerenti col
@@ -155,8 +146,6 @@ trait HasXotTable
                 continue;
             }
 
-=======
->>>>>>> 7f6cf6be (.)
             $gridColumn = clone $column;
 
             if ($gridColumn instanceof TextColumn) {
@@ -182,7 +171,6 @@ trait HasXotTable
     }
 
     /**
-<<<<<<< HEAD
      * Se i filtri vanno applicati solo dopo il bottone "Applica filtri" (default Filament)
      * oppure a ogni modifica del campo.
      *
@@ -197,17 +185,11 @@ trait HasXotTable
     }
 
     /**
-=======
->>>>>>> 7f6cf6be (.)
      * Get table filters form columns.
      */
     public function getTableFiltersFormColumns(): int
     {
-<<<<<<< HEAD
         $count = count($this->resolveTableFilters()) + 1;
-=======
-        $count = count($this->getTableFilters()) + 1;
->>>>>>> 7f6cf6be (.)
 
         return min($count, 6);
     }
@@ -252,10 +234,10 @@ trait HasXotTable
         Assert::isInstanceOf($model, Model::class);
         */
         // Configurazione base della tabella
-<<<<<<< HEAD
         // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
         // (fallback deprecato di Filament): si filtrano per restare coerenti col tipo
         // atteso da TableLayoutEnum::getTableColumns().
+        /** @var array<int, Column|ColumnGroup|LayoutComponent> $tableColumns */
         $tableColumns = array_values(array_filter(
             $this->resolveTableColumns(),
             static fn (mixed $column): bool => $column instanceof Column || $column instanceof ColumnGroup || $column instanceof LayoutComponent,
@@ -264,45 +246,24 @@ trait HasXotTable
         $table = $table
             ->recordTitleAttribute($this->getTableRecordTitleAttribute())
             ->heading($this->resolveTableHeading())
-            ->columns($this->layoutView->getTableColumns($tableColumns, $this->getGridTableColumns()))
+            ->columns($this->layoutView->getTableColumns($tableColumns, $this->getGridTableColumns())) // @phpstan-ignore argument.type
             ->contentGrid($this->layoutView->getTableContentGrid())
-            ->filters($this->resolveTableFilters())
+            ->filters($this->resolveTableFilters()) // @phpstan-ignore argument.type
             ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
             ->persistFiltersInSession()
-            ->headerActions(array_values($this->resolveTableHeaderActions()))
-            ->recordActions(array_values($this->resolveTableActions()))
-            ->toolbarActions(array_values($this->resolveTableBulkActions()))
+            ->headerActions(array_values($this->resolveTableHeaderActions())) // @phpstan-ignore argument.type
+            ->recordActions(array_values($this->resolveTableActions())) // @phpstan-ignore argument.type
+            ->toolbarActions(array_values($this->resolveTableBulkActions())) // @phpstan-ignore argument.type
             ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
-            ->emptyStateActions(array_values($this->resolveTableEmptyStateActions()))
-=======
-        $table = $table
-            ->recordTitleAttribute($this->getTableRecordTitleAttribute())
-            ->heading($this->getTableHeading())
-            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
-            ->contentGrid($this->layoutView->getTableContentGrid())
-            ->filters($this->getTableFilters()) // @phpstan-ignore argument.type
-            ->filtersLayout(FiltersLayout::AboveContent)
-            ->filtersFormColumns($this->getTableFiltersFormColumns())
-            ->persistFiltersInSession()
-            ->headerActions(array_values($this->getTableHeaderActions()))
-            ->recordActions(array_values($this->getTableActions()))
-            ->bulkActions(array_values($this->getTableBulkActions()))
-            ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
-            ->emptyStateActions(array_values($this->getTableEmptyStateActions()))
->>>>>>> 7f6cf6be (.)
+            ->emptyStateActions(array_values($this->resolveTableEmptyStateActions())) // @phpstan-ignore argument.type
             ->striped()
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
-<<<<<<< HEAD
         $sortColumn = $this->resolveDefaultTableSortColumn();
         $sortDirection = $this->resolveDefaultTableSortDirection();
-=======
-        $sortColumn = $this->getDefaultTableSortColumn();
-        $sortDirection = $this->getDefaultTableSortDirection();
->>>>>>> 7f6cf6be (.)
         if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
@@ -348,6 +309,7 @@ trait HasXotTable
             return [];
         }
 
+        /** @var array<int|string, Action|ActionGroup> $actions */
         $actions = [];
         $resource = $this;
         /* @phpstan-ignore-next-line */
@@ -413,13 +375,16 @@ trait HasXotTable
      */
     public function getTableBulkActions(): array
     {
-        return [
+        /** @var array<int|string, BulkAction> $bulkActions */
+        $bulkActions = [
             'delete' => DeleteBulkAction::make()
                 ->label('')
                 ->icon('heroicon-o-trash')
                 ->color('danger')
                 ->requiresConfirmation(),
         ];
+
+        return $bulkActions;
     }
 
     /**
@@ -513,10 +478,12 @@ trait HasXotTable
      */
     protected function getTableEmptyStateActions(): array
     {
-        return [];
+        /** @var array<int|string, Action> $emptyStateActions */
+        $emptyStateActions = [];
+
+        return $emptyStateActions;
     }
 
-<<<<<<< HEAD
     /**
      * Invoke legacy Filament hooks only when implemented by the concrete component.
      *
@@ -616,8 +583,6 @@ trait HasXotTable
         return $reflection->invoke($this);
     }
 
-=======
->>>>>>> 7f6cf6be (.)
     protected function shouldShowAssociateAction(): bool
     {
         return false;
@@ -657,9 +622,12 @@ trait HasXotTable
      */
     protected function getHeaderActions(): array
     {
-        return [
+        /** @var array<string, Action> $headerActions */
+        $headerActions = [
             'create' => CreateAction::make()->icon('heroicon-o-plus'),
         ];
+
+        return $headerActions;
     }
 
     /**
@@ -732,17 +700,26 @@ trait HasXotTable
      */
     protected function configureEmptyTable(Table $table): Table
     {
+        /** @var array<int, Column> $columns */
+        $columns = [
+            TextColumn::make('message')
+                ->default(__('user::fields.message.default'))
+                ->html(),
+        ];
+
+        /** @var array<int, Action> $headerActions */
+        $headerActions = [];
+
+        /** @var array<int, Action> $recordActions */
+        $recordActions = [];
+
         return $table
             ->modifyQueryUsing(
                 static fn (Builder $query): Builder => $query->whereNull('id')
             )
-            ->columns([
-                TextColumn::make('message')
-                    ->default(__('user::fields.message.default'))
-                    ->html(),
-            ])
-            ->headerActions([])
-            ->recordActions([]);
+            ->columns($columns)
+            ->headerActions($headerActions)
+            ->recordActions($recordActions);
     }
 
     /**
@@ -752,7 +729,10 @@ trait HasXotTable
      */
     protected function getSearchableColumns(): array
     {
-        return ['id', 'name'];
+        /** @var array<string> $searchableColumns */
+        $searchableColumns = ['id', 'name'];
+
+        return $searchableColumns;
     }
 
     /**

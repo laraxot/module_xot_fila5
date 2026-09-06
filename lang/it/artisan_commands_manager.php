@@ -6,14 +6,7 @@ return [
     'navigation' => [
         'name' => 'Comandi Artisan',
         'plural' => 'Comandi Artisan',
-<<<<<<< HEAD
         'group' => ['name' => 'Sistema', 'description' => 'Gestione dei comandi Artisan'],
-=======
-        'group' => [
-            'name' => 'Sistema',
-            'description' => 'Gestione dei comandi Artisan',
-        ],
->>>>>>> 7f6cf6be (.)
         'sort' => 28,
         'label' => 'Comandi Artisan',
         'icon' => 'heroicon-o-command-line',
@@ -23,7 +16,6 @@ return [
             'title' => 'Gestione Comandi Artisan',
             'description' => 'Esegui e gestisci i comandi Artisan',
             'commands' => [
-<<<<<<< HEAD
                 'migrate' => ['label' => 'Migrazione Database', 'description' => 'Esegue le migrazioni del database'],
                 'optimize' => ['label' => 'Ottimizzazione', 'description' => 'Ottimizza le prestazioni dell\'applicazione'],
                 'cache' => ['label' => 'Gestione Cache', 'description' => 'Comandi per la gestione della cache'],
@@ -41,80 +33,13 @@ return [
         'filament_upgrade' => ['label' => 'filament_upgrade', 'icon' => 'filament_upgrade', 'tooltip' => 'filament_upgrade'],
         'migrate' => ['label' => 'migrate', 'icon' => 'migrate', 'tooltip' => 'migrate'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-=======
-                'migrate' => [
-                    'label' => 'Migrazione Database',
-                    'description' => 'Esegue le migrazioni del database',
-                ],
-                'optimize' => [
-                    'label' => 'Ottimizzazione',
-                    'description' => 'Ottimizza le prestazioni dell\'applicazione',
-                ],
-                'cache' => [
-                    'label' => 'Gestione Cache',
-                    'description' => 'Comandi per la gestione della cache',
-                ],
-            ],
-            'notifications' => [
-                'success' => 'Comando eseguito con successo',
-                'error' => 'Errore nell\'esecuzione del comando',
-            ],
-        ],
-    ],
-    'actions' => [
-        'queue_restart' => [
-            'label' => 'queue_restart',
-        ],
-        'event_cache' => [
-            'label' => 'event_cache',
-        ],
-        'route_cache' => [
-            'label' => 'route_cache',
-        ],
-        'config_cache' => [
-            'label' => 'config_cache',
-        ],
-        'view_cache' => [
-            'label' => 'view_cache',
-        ],
-        'filament_optimize' => [
-            'label' => 'filament_optimize',
-        ],
-        'filament_upgrade' => [
-            'label' => 'filament_upgrade',
-        ],
-        'migrate' => [
-            'label' => 'migrate',
-        ],
->>>>>>> 7f6cf6be (.)
     ],
     'title' => 'artisan commands manager',
     'label' => 'Artisan Commands Manager',
     'plural_label' => 'Artisan Commands Manager (Plurale)',
     'fields' => [
-<<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-=======
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
->>>>>>> 7f6cf6be (.)
     ],
 ];

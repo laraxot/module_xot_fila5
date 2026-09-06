@@ -4,21 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Rules;
 
-<<<<<<< HEAD
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Support\Carbon;
 use Illuminate\Translation\PotentiallyTranslatedString;
-=======
-use Illuminate\Contracts\Validation\Rule;
-use Illuminate\Support\Carbon;
->>>>>>> 7f6cf6be (.)
 
 use function Safe\preg_replace;
 
 /**
  * Class DateTimeRule.
  */
-<<<<<<< HEAD
 class DateTimeRule implements ValidationRule
 {
     /**
@@ -35,45 +29,14 @@ class DateTimeRule implements ValidationRule
             $fail($this->message());
 
             return;
-=======
-class DateTimeRule implements Rule
-{
-    /**
-     * Determine if the validation rule passes.
-     *
-     * @param string $attribute The attribute name being validated
-     * @param mixed  $value     The value being validated
-     */
-    public function passes(mixed $attribute, mixed $value): bool
-    {
-        // dddx($attribute); //published_at
-        // dddx($value); //10/10/2019 13:43
-        // return 5 === strlen($value);
-
-        if (! is_string($value)) {
-            return false;
->>>>>>> 7f6cf6be (.)
         }
 
         $format = 'd/m/Y H:i';
         try {
-<<<<<<< HEAD
             Carbon::createFromFormat($format, $value);
         } catch (\Exception) {
             $fail($this->message());
         }
-=======
-            $value_new = Carbon::createFromFormat($format, $value);
-        } catch (\Exception) {
-            return false;
-        }
-
-        /* -- non fa il suo dovere --
-         * request()->replace([$attribute=>$value_new]);
-         */
-
-        return true;
->>>>>>> 7f6cf6be (.)
     }
 
     public function message(): string

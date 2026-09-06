@@ -21,11 +21,7 @@ class GenerateModelByModelClass
     /**
      * Execute the function with the given model class.
      *
-<<<<<<< HEAD
      * @param  string  $model_class  the class name of the model
-=======
-     * @param string $model_class the class name of the model
->>>>>>> 7f6cf6be (.)
      */
     public function execute(string $model_class): string
     {
@@ -65,11 +61,7 @@ class GenerateModelByModelClass
             '['.__LINE__.']['.class_basename($this).']',
         );
         $fillable_end = mb_strpos($content, '];', $fillable_start);
-<<<<<<< HEAD
         if ($table_start === false) {
-=======
-        if (false === $table_start) {
->>>>>>> 7f6cf6be (.)
             $before = mb_substr($content, 0, $fillable_end + 2);
             $after = mb_substr($content, $fillable_end + 2);
             $content = $before.PHP_EOL.'    protected $table = "'.$value.'";'.PHP_EOL.$after;
@@ -81,11 +73,7 @@ class GenerateModelByModelClass
     /**
      * Create a factory for the given model class.
      *
-<<<<<<< HEAD
      * @param  string  $model_class  The class name of the model to create the factory for
-=======
-     * @param string $model_class The class name of the model to create the factory for
->>>>>>> 7f6cf6be (.)
      */
     public function generate(string $model_class): void
     {
@@ -112,11 +100,7 @@ class GenerateModelByModelClass
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<string, string>  $replaces
-=======
-     * @param array<string, string> $replaces
->>>>>>> 7f6cf6be (.)
      */
     public function setCustomReplaces(array $replaces): self
     {

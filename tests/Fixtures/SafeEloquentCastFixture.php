@@ -23,11 +23,7 @@ final class SafeEloquentCastFixture
     {
         $action = app(SafeEloquentCastAction::class);
 
-<<<<<<< HEAD
         $model = new class extends Model
-=======
-        $model = new class() extends Model
->>>>>>> 7f6cf6be (.)
         {
             /** @var string */
             protected $table = 'safe_eloquent_cast_test';

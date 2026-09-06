@@ -20,15 +20,9 @@ class GetTableIndexesByModelClassAction
     {
         Assert::isInstanceOf($model = app($modelClass), Model::class);
         $table = $model->getTable();
-<<<<<<< HEAD
         Assert::stringNotEmpty($table);
         $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
 
         return $formManager->introspectTableIndexesByUnquotedName($table);
-=======
-        $formManager = app(GetSchemaManagerByModelClassAction::class)->execute($modelClass);
-
-        return $formManager->listTableIndexes($table);
->>>>>>> 7f6cf6be (.)
     }
 }

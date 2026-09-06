@@ -15,11 +15,7 @@ use Modules\Xot\Tests\ModuleExecuteCoverage;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
-=======
-uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
->>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -75,9 +71,5 @@ describe('Xot floor50 extras non-public', function (): void {
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> 7f6cf6be (.)
     });
 });

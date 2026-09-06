@@ -46,10 +46,6 @@ final class ModuleRemainingCoverage
     {
         Process::fake();
         Http::fake(['*' => Http::response(['ok' => true], 200)]);
-<<<<<<< HEAD
-=======
-
->>>>>>> 7f6cf6be (.)
     }
 
     public static function run(string $appRoot, string $moduleNamespace): void
@@ -351,11 +347,7 @@ final class ModuleRemainingCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Filament') as $class) {
             try {
                 if (is_subclass_of($class, XotBaseResourceTable::class)) {
-<<<<<<< HEAD
                     $table = new $class;
-=======
-                    $table = new $class();
->>>>>>> 7f6cf6be (.)
                     self::invokeClosuresInValue($table->getTableColumns(), $record, $invoked);
                     try {
                         self::invokeClosuresInValue($table->getTableFilters(), $record, $invoked);
@@ -438,11 +430,7 @@ final class ModuleRemainingCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
-<<<<<<< HEAD
                 $policy = new $class;
-=======
-                $policy = new $class();
->>>>>>> 7f6cf6be (.)
                 $ref = new ReflectionClass($policy);
 
                 foreach ($roleSets as $roles) {
@@ -593,11 +581,7 @@ final class ModuleRemainingCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Projectors') as $class) {
             try {
-<<<<<<< HEAD
                 $projector = new $class;
-=======
-                $projector = new $class();
->>>>>>> 7f6cf6be (.)
                 $ref = new ReflectionClass($class);
 
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {

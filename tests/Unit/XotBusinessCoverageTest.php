@@ -8,11 +8,7 @@ use Mockery;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
-=======
-uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
->>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();

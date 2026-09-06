@@ -22,11 +22,7 @@ use ReflectionMethod;
 
 use function Safe\preg_match;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
-=======
-uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
->>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -123,11 +119,7 @@ describe('Xot chart widgets and resource page', function (): void {
     test('Resource XotBasePage getView getViewTest navigation', function (): void {
         Http::fake();
         Process::fake();
-<<<<<<< HEAD
         $page = new XotResPageStub;
-=======
-        $page = new XotResPageStub();
->>>>>>> 7f6cf6be (.)
         Assert::assertNotEmpty($page->getView());
         try {
             $page->getViewTest();

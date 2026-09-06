@@ -2,19 +2,11 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-use Modules\Xot\Actions\Array\RangeIntersectAction;
-use Modules\Xot\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 test('range intersect action handles basic intersection', function () {
     $action = app(RangeIntersectAction::class);

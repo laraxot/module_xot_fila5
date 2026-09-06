@@ -17,11 +17,7 @@ class BuildNestedRouteNameAction
         $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
         $parts = inAdmin($params) ? ['admin'] : [];
 
-<<<<<<< HEAD
         for ($i = 0; $i <= $depth; $i++) {
-=======
-        for ($i = 0; $i <= $depth; ++$i) {
->>>>>>> 7f6cf6be (.)
             $parts[] = 'container'.$i;
         }
 

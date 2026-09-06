@@ -6,7 +6,6 @@ return [
     'navigation' => [
         'name' => 'Env',
         'plural' => 'Env',
-<<<<<<< HEAD
         'group' => ['name' => 'Admin'],
     ],
     'pages' => [
@@ -15,31 +14,11 @@ return [
             'heading' => 'Application Health',
             'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
             'notifications' => ['check_results' => 'Check results from'],
-=======
-        'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'pages' => [
-        'health_check_results' => [
-            'buttons' => [
-                'refresh' => 'Refresh',
-            ],
-            'heading' => 'Application Health',
-            'navigation' => [
-                'group' => 'Settings',
-                'label' => 'Application Health',
-            ],
-            'notifications' => [
-                'check_results' => 'Check results from',
-            ],
->>>>>>> 7f6cf6be (.)
         ],
     ],
     'label' => 'Env',
     'plural_label' => 'Env (Plurale)',
     'fields' => [
-<<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -55,36 +34,4 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'title' => 'env',
-=======
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Env',
-        ],
-        'edit' => [
-            'label' => 'Modifica Env',
-        ],
-        'delete' => [
-            'label' => 'Elimina Env',
-        ],
-    ],
->>>>>>> 7f6cf6be (.)
 ];

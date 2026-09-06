@@ -20,7 +20,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Modules\Xot\Contracts\HasRecursiveRelationshipsContract.
  *
-<<<<<<< HEAD
  * @property int $id
  * @property string $name
  * @property int $depth
@@ -40,27 +39,6 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
  * @property int|null $descendants_and_self_count
  * @property Collection<int, Model> $parentAndSelf The model's direct parent and itself.
  * @property int|null $parent_and_self_count
-=======
- * @property int                    $id
- * @property string                 $name
- * @property int                    $depth
- * @property Collection<int, Model> $children
- * @property int|null               $children_count
- * @property Collection<int, Model> $ancestors                  The model's recursive parents.
- * @property int|null               $ancestors_count
- * @property Collection<int, Model> $ancestorsAndSelf           The model's recursive parents and itself.
- * @property int|null               $ancestors_and_self_count
- * @property Collection<int, Model> $bloodline                  The model's ancestors, descendants and itself.
- * @property int|null               $bloodline_count
- * @property Collection<int, Model> $childrenAndSelf            The model's direct children and itself.
- * @property int|null               $children_and_self_count
- * @property Collection<int, Model> $descendants                The model's recursive children.
- * @property int|null               $descendants_count
- * @property Collection<int, Model> $descendantsAndSelf         The model's recursive children and itself.
- * @property int|null               $descendants_and_self_count
- * @property Collection<int, Model> $parentAndSelf              The model's direct parent and itself.
- * @property int|null               $parent_and_self_count
->>>>>>> 7f6cf6be (.)
  *
  * @phpstan-require-extends Model
  *
@@ -197,7 +175,6 @@ interface HasRecursiveRelationshipsContract
     public function isIntegerAttribute(string $attribute);
 
     /**
-<<<<<<< HEAD
      * @param  Builder  $query
      * @return AdjacencyBuilder<Model>
      */
@@ -205,17 +182,6 @@ interface HasRecursiveRelationshipsContract
 
     /**
      * @param  list<Model>  $models
-=======
-     * @param Builder $query
-     *
-     * @return AdjacencyBuilder<Model>
-     */
-    public function newEloquentBuilder($query);
-
-    /**
-     * @param list<Model> $models
-     *
->>>>>>> 7f6cf6be (.)
      * @return Collection<int, Model>
      */
     public function newCollection(array $models = []);

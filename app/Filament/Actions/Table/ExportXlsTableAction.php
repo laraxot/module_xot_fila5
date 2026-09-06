@@ -29,11 +29,7 @@ class ExportXlsTableAction extends XotBaseAction
             ->action(static function (RelationManager $livewire) {
                 $livewire_class = $livewire::class;
                 $filterParts = array_map(
-<<<<<<< HEAD
                     static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
-=======
-                    static fn ($value): string => is_scalar($value) ? (string) $value : '',
->>>>>>> 7f6cf6be (.)
                     Arr::flatten($livewire->tableFilters ?? []),
                 );
                 $filename =
@@ -44,11 +40,7 @@ class ExportXlsTableAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
-<<<<<<< HEAD
                 if ($query === null) {
-=======
-                if (null === $query) {
->>>>>>> 7f6cf6be (.)
                     throw new \Exception('Query is null');
                 }
                 // ->getQuery(); // Staudenmeir\LaravelCte\Query\Builder

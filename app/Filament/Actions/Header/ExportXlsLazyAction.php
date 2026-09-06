@@ -48,11 +48,7 @@ class ExportXlsLazyAction extends XotBaseAction
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
                     if (is_array($rawFields)) {
                         $fields = array_map(
-<<<<<<< HEAD
                             static function (mixed $field): string {
-=======
-                            static function ($field): string {
->>>>>>> 7f6cf6be (.)
                                 // Handle objects with __toString method
                                 if (is_object($field) && method_exists($field, '__toString')) {
                                     $stringValue = $field->__toString();
@@ -75,11 +71,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 }
 
                 $lazy = $livewire->getFilteredTableQuery();
-<<<<<<< HEAD
                 if ($lazy === null) {
-=======
-                if (null === $lazy) {
->>>>>>> 7f6cf6be (.)
                     throw new \Exception('Query is null');
                 }
 
@@ -92,7 +84,6 @@ class ExportXlsLazyAction extends XotBaseAction
                 }
 
                 $lazyCursor = $lazy->cursor();
-<<<<<<< HEAD
                 /**
                  * LazyCollection elements are typed as mixed because cursor() returns rows
                  * that depend on the query result type (Models, arrays, scalars, etc.).
@@ -100,9 +91,6 @@ class ExportXlsLazyAction extends XotBaseAction
                  *
                  * @var LazyCollection<int, mixed> $exportCollection
                  */
-=======
-                /** @var LazyCollection<int, mixed> $exportCollection */
->>>>>>> 7f6cf6be (.)
                 $exportCollection = $lazyCursor->map(static fn (mixed $row): mixed => $row);
 
                 if ($lazyCursor->count() > 3000) {

@@ -23,11 +23,7 @@ abstract class XotBaseResourceTable
 
     public static function configure(Table $table): Table
     {
-<<<<<<< HEAD
         if (static::class === self::class) {
-=======
-        if (self::class === static::class) {
->>>>>>> 7f6cf6be (.)
             throw new \LogicException('XotBaseResourceTable::configure() must be called on a concrete table class.');
         }
 

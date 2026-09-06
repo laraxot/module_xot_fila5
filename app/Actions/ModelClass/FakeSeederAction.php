@@ -15,26 +15,15 @@ class FakeSeederAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     private const int MAX_RECORDS = 200;
 
     private const int CHUNK_SIZE = 50;
-=======
-    private const MAX_RECORDS = 200;
-
-    private const CHUNK_SIZE = 50;
->>>>>>> 7f6cf6be (.)
 
     /**
      * Execute the fake data seeding process.
      *
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
      * @param  int<1, max>  $qty  Number of records to generate
-=======
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
->>>>>>> 7f6cf6be (.)
      *
      * @throws \InvalidArgumentException When model class is invalid
      */
@@ -72,20 +61,11 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
      * @return Factory<Model>
      * @return Factory<Model>
      *
      * @throws \RuntimeException
-=======
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
-     *
-     * @return Factory<Model>
-     * @return Factory<Model>
->>>>>>> 7f6cf6be (.)
      */
     private function getModelFactory(string $modelClass): Factory
     {
@@ -102,13 +82,8 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $count
-=======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
->>>>>>> 7f6cf6be (.)
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -122,13 +97,8 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $qty
-=======
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
->>>>>>> 7f6cf6be (.)
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

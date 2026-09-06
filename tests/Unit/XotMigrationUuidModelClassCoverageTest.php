@@ -17,11 +17,7 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
-=======
-uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
->>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -45,11 +41,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 
         // Force getModelClass() discovery path (model_class null until resolved)
         try {
-<<<<<<< HEAD
             new class extends XotBaseMigration
-=======
-            new class() extends XotBaseMigration
->>>>>>> 7f6cf6be (.)
             {
                 public function up(): void {}
             };
@@ -71,11 +63,7 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             'value' => 'v',
         ]);
 
-<<<<<<< HEAD
         $migration = new class extends XotBaseMigration
-=======
-        $migration = new class() extends XotBaseMigration
->>>>>>> 7f6cf6be (.)
         {
             protected ?string $model_class = CacheModel::class;
 

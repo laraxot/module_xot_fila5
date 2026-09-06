@@ -94,11 +94,7 @@ final class ModuleDeepCoverage
 
                         continue;
                     }
-<<<<<<< HEAD
                     $args[] = new $typeName;
-=======
-                    $args[] = new $typeName();
->>>>>>> 7f6cf6be (.)
 
                     continue;
                 }
@@ -138,11 +134,7 @@ final class ModuleDeepCoverage
                 $ref = new ReflectionClass($class);
                 $ctor = $ref->getConstructor();
                 if ($ctor === null || $ctor->getNumberOfRequiredParameters() === 0) {
-<<<<<<< HEAD
                     new $class;
-=======
-                    new $class();
->>>>>>> 7f6cf6be (.)
                 }
                 $executed++;
             } catch (\Throwable) {
@@ -233,11 +225,7 @@ final class ModuleDeepCoverage
                 $executed++;
             } catch (\Throwable) {
                 try {
-<<<<<<< HEAD
                     new $class;
-=======
-                    new $class();
->>>>>>> 7f6cf6be (.)
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;

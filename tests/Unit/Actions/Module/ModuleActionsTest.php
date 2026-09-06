@@ -13,19 +13,11 @@ use function Safe\mkdir;
 use function Safe\tempnam;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 test('get module name by class action works', function (): void {
     $action = app(GetModuleNameByClassAction::class);
     Assert::assertSame('User', $action->execute('Modules\Xot\Contracts\UserContract'));
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
-
-test('get module name by class action works', function (): void {
-    $action = app(GetModuleNameByClassAction::class);
-    Assert::assertSame('User', $action->execute('Modules\User\Models\User'));
->>>>>>> 7f6cf6be (.)
 });
 
 test('get module config action works', function (): void {

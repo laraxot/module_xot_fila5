@@ -11,11 +11,7 @@ use Modules\Xot\Tests\TestCase;
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(\Modules\Xot\Tests\TestCase::class);
->>>>>>> 7f6cf6be (.)
 
 beforeEach(function (): void {
     // Configure mysql connection for tests (required by ArtisanAction)

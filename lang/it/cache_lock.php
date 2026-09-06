@@ -6,7 +6,6 @@ return [
     'navigation' => [
         'name' => 'cache lock',
         'plural' => 'cache locks',
-<<<<<<< HEAD
         'group' => ['name' => 'Admin'],
     ],
     'pages' => [
@@ -15,31 +14,11 @@ return [
             'heading' => 'Application Health',
             'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
             'notifications' => ['check_results' => 'Check results from'],
-=======
-        'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'pages' => [
-        'health_check_results' => [
-            'buttons' => [
-                'refresh' => 'Refresh',
-            ],
-            'heading' => 'Application Health',
-            'navigation' => [
-                'group' => 'Settings',
-                'label' => 'Application Health',
-            ],
-            'notifications' => [
-                'check_results' => 'Check results from',
-            ],
->>>>>>> 7f6cf6be (.)
         ],
     ],
     'label' => 'Cache Lock',
     'plural_label' => 'Cache Lock (Plurale)',
     'fields' => [
-<<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -54,36 +33,5 @@ return [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-=======
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Cache Lock',
-        ],
-        'edit' => [
-            'label' => 'Modifica Cache Lock',
-        ],
-        'delete' => [
-            'label' => 'Elimina Cache Lock',
-        ],
->>>>>>> 7f6cf6be (.)
     ],
 ];
