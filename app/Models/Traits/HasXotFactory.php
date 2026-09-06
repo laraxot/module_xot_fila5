@@ -34,7 +34,7 @@ trait HasXotFactory
     /**
      * Get a new factory instance for the model.
      *
-     * @return Factory<static>
+     * @return Factory
      */
     public static function factory(): Factory
     {
