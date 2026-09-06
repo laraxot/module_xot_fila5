@@ -12,7 +12,7 @@ il progetto è basato su un'architettura modulare che utilizza Laravel come fram
 ## Componenti Principali
 
 ### 1. Core Framework
-- **Laravel 12**: Framework PHP per lo sviluppo web
+- **Laravel 13**: Framework PHP per lo sviluppo web
 - **Filament 3**: Framework di amministrazione per il backend
 
 ### 2. Sistema Modulare

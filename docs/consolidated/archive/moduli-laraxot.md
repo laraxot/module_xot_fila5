@@ -82,13 +82,13 @@ git subtree add --prefix laravel/Modules/[NomeModulo] git@github.com:laraxot/[no
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
 ```
 
-## Compatibilità con Laravel 12
+## Compatibilità con Laravel 13
 
-Laravel 12 introduce un cambiamento architetturale nella gestione dei service provider che impatta l'integrazione con i moduli Laraxot:
+Laravel 13 introduce un cambiamento architetturale nella gestione dei service provider che impatta l'integrazione con i moduli Laraxot:
 
-1. **Nuova struttura config/app.php**: In Laravel 12 questo file è semplificato e NON include più le sezioni "providers" e "aliases"
+1. **Nuova struttura config/app.php**: In Laravel 13 questo file è semplificato e NON include più le sezioni "providers" e "aliases"
 
-2. **Service provider**: Laravel 12 utilizza auto-discovery e bootstrap minimalista invece di elenchi espliciti di provider
+2. **Service provider**: Laravel 13 utilizza auto-discovery e bootstrap minimalista invece di elenchi espliciti di provider
 
 3. **Soluzione corretta**:
    - Rimuovere completamente le sezioni `providers` e `aliases` dal file config/app.php

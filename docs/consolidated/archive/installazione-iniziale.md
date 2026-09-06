@@ -90,7 +90,7 @@ cd laravel
 php artisan --version
 ```
 
-Dovrebbe mostrare la versione di Laravel installata (Laravel 12.x).
+Dovrebbe mostrare la versione di Laravel installata (Laravel 13.x).
 
 ## Passaggi Successivi
 

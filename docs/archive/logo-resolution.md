@@ -1,6 +1,6 @@
 # Risoluzione dei Loghi
 
-Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
+Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 13.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
 
@@ -122,7 +122,7 @@ Per la versione dark:
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
 # Risoluzione dei Loghi
 
-Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
+Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 13.x modulare (PHP 8.2+).
 
 ## Processo di Risoluzione
 
