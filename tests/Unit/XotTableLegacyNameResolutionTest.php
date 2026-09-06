@@ -26,13 +26,6 @@ test('senza override si ricade sul default vuoto', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, Column> */
-    $fixture = new class
-    {
-        use Modules\Xot\Filament\Traits\HasXotTable;
-
-        public string $tableSearch = '';
-
-        /** @return array<string, mixed> */
         public function getTableColumns(): array
         {
             return [];

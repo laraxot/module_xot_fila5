@@ -13,6 +13,7 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  *
  * Usage: just use the trait in your model. No type parameters needed.
  *
+ * @template TFactory of Factory<*>
  * @mixin Model
  */
 trait HasXotFactory

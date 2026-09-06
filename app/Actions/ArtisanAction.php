@@ -52,7 +52,6 @@ class ArtisanAction
                     // Dati sacri: mai --force (solo migrate additivo)
                     return self::exe('module:migrate', ['module' => $module_name]);
                 }
-                }
 
                 return self::exe('migrate');
 
