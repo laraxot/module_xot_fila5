@@ -1072,8 +1072,8 @@ final class ModuleExecuteCoverage
             array_slice($lines, $start - 1, $end - $start + 1),
             is_string(...),
         ));
-        $body = preg_replace('!//.*$!m', '', $body);
-        $body = preg_replace('!/\*.*?\*/!s', '', $body);
+        $body = (string) preg_replace('!//.*$!m', '', $body);
+        $body = (string) preg_replace('!/\*.*?\*/!s', '', $body);
 
         return self::$dddxMethodCache[$cacheKey] = (bool) preg_match('/\bdddx\s*\(/', $body)
             || (bool) preg_match('/(?<![\w\\\\])\bdd\s*\(/', $body);

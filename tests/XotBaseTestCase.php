@@ -352,7 +352,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessage($message);
+        $this->expectExceptionMessageMatches('/' . preg_quote($message, '/') . '/');
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

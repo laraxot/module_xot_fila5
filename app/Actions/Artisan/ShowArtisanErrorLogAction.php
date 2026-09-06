@@ -36,10 +36,11 @@ class ShowArtisanErrorLogAction
 
         $pattern = '/url":"([^"]*)"/';
         preg_match_all($pattern, $content, $matches);
-        Assert::isArray($matches[1] ?? null);
-        Assert::allString($matches[1]);
+        $urlMatches = $matches[1];
+        Assert::isArray($urlMatches);
+        Assert::allString($urlMatches);
 
-        $urls = array_unique($matches[1]);
+        $urls = array_unique($urlMatches);
         $view_params = [
             'view' => $view,
             'lang' => app()->getLocale(),

@@ -1056,8 +1056,8 @@ final class ModuleRemainingCoverage
             is_string(...),
         ));
         // Ignora commenti: `// dddx(...)` non deve bloccare l'esecuzione del metodo.
-        $body = preg_replace('!//.*$!m', '', $body);
-        $body = preg_replace('!/\*.*?\*/!s', '', $body);
+        $body = (string) preg_replace('!//.*$!m', '', $body);
+        $body = (string) preg_replace('!/\*.*?\*/!s', '', $body);
 
         return self::$dddxMethodCache[$cacheKey] = (bool) preg_match('/\bdddx\s*\(/', $body)
             || (bool) preg_match('/(?<![\w\\\\])\bdd\s*\(/', $body);
