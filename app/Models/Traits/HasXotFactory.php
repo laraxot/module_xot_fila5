@@ -33,8 +33,8 @@ trait HasXotFactory
     /**
      * Get a new factory instance for the model.
      *
-     * @param int|float|numeric-string|null $count
-     * @param array<string, mixed>|callable(array<string, mixed>, \Illuminate\Database\Eloquent\Model|null): array<string, mixed>|null $state
+     * @param  int|float|numeric-string|null  $count
+     * @param  array<string, mixed>|callable(array<string, mixed>, Model|null): array<string, mixed>|null  $state
      */
     public static function factory($count = null, $state = [])
     {

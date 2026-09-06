@@ -205,7 +205,7 @@ class BuildTestSqliteCommand extends Command
     private function firstLine(string $message): string
     {
         $normalised = preg_replace('/\s+/', ' ', $message);
-        if (! is_string($normalised)) {
+        if (! is_string($normalised) || $normalised === '') {
             return '';
         }
 

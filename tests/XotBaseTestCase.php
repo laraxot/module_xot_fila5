@@ -164,7 +164,7 @@ abstract class XotBaseTestCase extends BaseTestCase
         if (! $this->app->bound('translator')) {
             $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
-                    new ArrayLoader,
+                    new ArrayLoader(),
                     'en'
                 );
             });
