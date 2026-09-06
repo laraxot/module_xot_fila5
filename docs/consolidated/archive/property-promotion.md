@@ -1,8 +1,8 @@
-# Da Proprietà a Metodi in Laravel 13
+# Da Proprietà a Metodi in Laravel 12
 
 ## Evoluzione del Pattern nei Modelli Eloquent
 
-Laravel 13 ha introdotto un cambiamento fondamentale nell'architettura dei modelli Eloquent, passando da proprietà protette statiche a **metodi protetti**. Questo rappresenta un significativo miglioramento nel design e nella tipizzazione.
+Laravel 12 ha introdotto un cambiamento fondamentale nell'architettura dei modelli Eloquent, passando da proprietà protette statiche a **metodi protetti**. Questo rappresenta un significativo miglioramento nel design e nella tipizzazione.
 
 ## Sintassi deprecata vs. Nuova sintassi
 
@@ -20,7 +20,7 @@ class User extends Model
 }
 ```
 
-### ✅ Sintassi Raccomandata (Laravel 13+)
+### ✅ Sintassi Raccomandata (Laravel 12+)
 
 ```php
 class User extends Model
@@ -71,4 +71,4 @@ class User extends Model
 
 ## Compatibilità
 
-Laravel 13 mantiene la retrocompatibilità con la sintassi precedente, quindi i modelli che utilizzano ancora `protected $property` continueranno a funzionare, ma questa sintassi è considerata deprecata e potrebbe essere rimossa in versioni future.
+Laravel 12 mantiene la retrocompatibilità con la sintassi precedente, quindi i modelli che utilizzano ancora `protected $property` continueranno a funzionare, ma questa sintassi è considerata deprecata e potrebbe essere rimossa in versioni future.

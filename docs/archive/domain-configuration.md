@@ -1,7 +1,7 @@
 # Gestione Domini e Configurazioni
 
 ## Prerequisiti
-- Laravel 13.x
+- Laravel 12.x
 - PHP 8.2+
 
 ## Struttura dei Domini
@@ -176,7 +176,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 # Gestione Domini e Configurazioni
 
 ## Prerequisiti
-- Laravel 13.x
+- Laravel 12.x
 - PHP 8.2+
 
 ## Struttura dei Domini

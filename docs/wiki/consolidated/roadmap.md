@@ -267,7 +267,7 @@ updated: 2026-08-24
 
 ### Q4 2024
 1. Rilascio versione 2.0
-2. Migrazione a Laravel 13.x
+2. Migrazione a Laravel 12.x
 3. Implementazione nuove feature
 
 ## Note
