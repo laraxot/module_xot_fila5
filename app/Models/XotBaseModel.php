@@ -18,6 +18,7 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseModel extends EloquentModel
 {
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
 
     use RelationX;
