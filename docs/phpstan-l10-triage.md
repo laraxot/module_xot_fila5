@@ -4,11 +4,42 @@ description: PHPStan Level 10 error triage — count per module, priority batchi
 metadata:
   type: audit
   created: 2026-09-06
+  updated: 2026-09-06T21:45:00Z
 ---
 
 # PHPStan Level 10 Triage — Module Error Counts
 
-**Baseline:** 2026-09-06, full `Modules` scan, 3000+ total errors (1000 cap on display).
+**UPDATE 2026-09-06 ~21:40 — structural fixes landed, re-baseline required for
+anyone still using the numbers below:**
+
+1. **`method.internalClass` (~2700 Pest errors) is GONE, not ignored.** The owner
+   fixed `phpstan.neon` (removed 3 `includes:` entries that duplicated PHPStan 2.x's
+   native `extra.phpstan.includes` auto-discovery for `larastan/larastan`,
+   `nesbot/carbon`, `pestphp/pest` — the duplication was fatal after the Pest 4→5
+   bump). **Do NOT follow the "inline `@phpstan-ignore-next-line method.internalClass`"
+   advice further down this doc — it's obsolete and was never the right call anyway
+   (repo policy + PHPStan's own preamble: no ignore comments, fix root cause).**
+   See `docs/chat/2026-09-06-phpstan-neon-duplicate-include-crash-blocking-everyone.md`.
+2. **`HasXotFactory::factory()` was deleted then restored+widened this session.**
+   `Modules/Xot/app/Models/Traits/HasXotFactory.php` now supports
+   `factory($count = null, $state = [])` matching Laravel's own `HasFactory`. This
+   fixed a cascade of `staticMethod.notFound`/`method.nonObject` across nearly every
+   module (Timber alone: 846 → ~10 real errors). It also *broke* 8 models that
+   overrode `factory()` with the old 0-arg signature (Signage×5, EnergyBroker×2,
+   Costing×1 — fixed, redundant override deleted, `newFactory()` already covered it)
+   and 12 models that redundantly `use HasFactory;` (Laravel's own trait) on top of
+   `XotBaseModel` (WorkOrder\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+   the redundant import). See
+   `Modules/Xot/docs/stories/18.2.1.hasxotfactory-factory-method-regression-fix.story.md`.
+3. **New re-baseline (full `Modules` scan, post-fixes): 1540 file_errors, 0 crashes.**
+   New dominant categories not in the original table below: `cast.string` (339),
+   `typeCoverage.paramTypeCoverage` (299, from `pestphp/pest-plugin-type-coverage`),
+   `method.deprecated`/`method.deprecatedClass`/`staticMethod.deprecatedClass` (299
+   combined — Pest 5 / Carbon 3 API deprecations), `typeCoverage.constantTypeCoverage`
+   (165), `cast.int` (131). Per-module counts below are **stale** — re-run
+   `phpstan analyse Modules/<Mod> --no-progress` before starting any module's story.
+
+**Original baseline (2026-09-06, pre-fix, for history only):** full `Modules` scan, 3000+ total errors (1000 cap on display).
 
 | Rank | Module | Errors | Status | Batch | Assignment | Coverage Baseline |
 |------|--------|--------|--------|-------|------------|-------------------|
@@ -72,7 +103,10 @@ Modules: **HR (53), Gdpr (18), Compliance (17), Email (12), Document (10), Energ
 
 1. **`phpstan.neon` is immutable:** User only; no agent edits, no `--level`, no `-c` override
 2. **`mixed` is never the fix:** Always narrow to union, generics, or add runtime check
-3. **Pest methods are internal:** OK to ignore inline (`@phpstan-ignore-next-line method.internalClass`) on Pest\Mixins\Expectation chains
+3. ~~Pest methods are internal: OK to ignore inline...~~ **OBSOLETE, do not do this.**
+   The category is structurally gone after the `phpstan.neon` fix (see update at top
+   of this doc). If you still see `method.internalClass`, re-baseline first — don't
+   ignore it inline.
 4. **Per-module gate:** After fixing, run `phpstan analyse Modules/<Mod> --no-progress` → must be 0 errors or only unmatched ignores
 5. **Coverage baseline:** Create `Modules/<Mod>/docs/coverage.md` before/after Pest coverage delta
 6. **Git sync (CRITICAL):** 
