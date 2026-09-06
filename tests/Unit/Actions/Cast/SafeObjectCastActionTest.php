@@ -6,10 +6,17 @@ use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 it('manages object properties safely', function (): void {
     $obj = new stdClass;
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+
+it('manages object properties safely', function (): void {
+    $obj = new stdClass();
+>>>>>>> 7f6cf6be (.)
     $obj->name = 'Test Object';
     $obj->id = 123;
     $obj->active = true;
@@ -54,8 +61,12 @@ it('manages object properties safely', function (): void {
         return $v > 200;
     }, 0));
     // Methods
+<<<<<<< HEAD
     $complexObj = new class
     {
+=======
+    $complexObj = new class {
+>>>>>>> 7f6cf6be (.)
         public function test(mixed $p): mixed
         {
             return $p;

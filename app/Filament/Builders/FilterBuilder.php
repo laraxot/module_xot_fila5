@@ -12,8 +12,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
+=======
+use Modules\User\Models\User;
+>>>>>>> 7f6cf6be (.)
 
 use function Safe\strtotime;
 
@@ -98,11 +102,19 @@ class FilterBuilder
                 return $query
                     ->when(
                         $data['from'] ?? null,
+<<<<<<< HEAD
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
                     )
                     ->when(
                         $data['until'] ?? null,
                         fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
+=======
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
+                    )
+                    ->when(
+                        $data['until'] ?? null,
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
+>>>>>>> 7f6cf6be (.)
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -114,20 +126,33 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
+<<<<<<< HEAD
                     $fromStr = SafeStringCastAction::cast($from);
                     $untilStr = SafeStringCastAction::cast($until);
+=======
+                    $fromStr = is_string($from) ? $from : (string) $from;
+                    $untilStr = is_string($until) ? $until : (string) $until;
+>>>>>>> 7f6cf6be (.)
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
+<<<<<<< HEAD
                     $fromStr = SafeStringCastAction::cast($from);
+=======
+                    $fromStr = is_string($from) ? $from : (string) $from;
+>>>>>>> 7f6cf6be (.)
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
+<<<<<<< HEAD
                     $untilStr = SafeStringCastAction::cast($until);
+=======
+                    $untilStr = is_string($until) ? $until : (string) $until;
+>>>>>>> 7f6cf6be (.)
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -163,7 +188,11 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $modelClass
+=======
+     * @param class-string<Model> $modelClass
+>>>>>>> 7f6cf6be (.)
      */
     public static function selectFromModel(
         string $name,
@@ -178,7 +207,11 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
+<<<<<<< HEAD
         if ($relationshipName !== null) {
+=======
+        if (null !== $relationshipName) {
+>>>>>>> 7f6cf6be (.)
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -188,7 +221,11 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customStatuses
+=======
+     * @param array<string, string> $customStatuses
+>>>>>>> 7f6cf6be (.)
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -206,7 +243,11 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $customPriorities
+=======
+     * @param array<string, string> $customPriorities
+>>>>>>> 7f6cf6be (.)
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -224,7 +265,11 @@ class FilterBuilder
     /**
      * Type select filter.
      *
+<<<<<<< HEAD
      * @param  array<string, string>  $types
+=======
+     * @param array<string, string> $types
+>>>>>>> 7f6cf6be (.)
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -235,7 +280,11 @@ class FilterBuilder
     /**
      * Category select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $categoryModel
+=======
+     * @param class-string<Model> $categoryModel
+>>>>>>> 7f6cf6be (.)
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -245,6 +294,7 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
+<<<<<<< HEAD
      * @param  class-string<Model>  $userModel
      */
     /**
@@ -263,6 +313,15 @@ class FilterBuilder
         }
 
         /** @var class-string<Model> $userModel */
+=======
+     * @param class-string<Model> $userModel
+     */
+    public static function userSelect(
+        string $name = 'user',
+        string $userModel = User::class,
+        string $labelColumn = 'name',
+    ): SelectFilter {
+>>>>>>> 7f6cf6be (.)
         return self::selectFromModel($name, $userModel, $labelColumn, 'id', $name);
     }
 
@@ -284,7 +343,11 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+>>>>>>> 7f6cf6be (.)
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -292,7 +355,12 @@ class FilterBuilder
     }
 
     /**
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+     *
+>>>>>>> 7f6cf6be (.)
      * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder

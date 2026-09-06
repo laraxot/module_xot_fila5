@@ -6,7 +6,10 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
+=======
+>>>>>>> 7f6cf6be (.)
 use Illuminate\Support\Str;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -18,6 +21,10 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseModel extends EloquentModel
 {
+<<<<<<< HEAD
+=======
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> 7f6cf6be (.)
     use HasXotFactory;
 
     use RelationX;
@@ -47,6 +54,7 @@ abstract class XotBaseModel extends EloquentModel
     ];
 
     /**
+<<<<<<< HEAD
      * Risolve il concreto del **modulo chiamante** mantenendo il basename di `static`.
      *
      * Il namespace non viene dedotto da `static` (che resta sul prototype del modulo
@@ -85,6 +93,39 @@ abstract class XotBaseModel extends EloquentModel
         Assert::subclassOf($res, EloquentModel::class);
 
         return $res;
+=======
+     * Sibling model in the same `Models\` namespace as the calling leaf (`static::class`).
+     *
+     * Call from the leaf/base that owns the relation context, e.g. from `BaseScheda`:
+     * `static::getClassName(CriteriOption::class)` → `Progressioni\Models\CriteriOption`
+     * when `static` is `Progressioni\Models\Scheda`.
+     *
+     * Do **not** call as `CriteriOption::getClassName()` — LSB would stay on the prototype.
+     *
+     * @param class-string<EloquentModel> $fallback Prototype FQCN (basename reused; used if sibling missing)
+     *
+     * @return class-string<EloquentModel>
+     */
+    public static function getClassName(string $fallback): string
+    {
+        Assert::subclassOf($fallback, EloquentModel::class);
+
+        $short = class_basename($fallback);
+        $candidate = Str::of(static::class)
+            ->beforeLast('\\')
+            ->append('\\'.$short)
+            ->toString();
+
+        if (is_string($candidate) && '' !== $candidate && class_exists($candidate)) {
+            Assert::subclassOf($candidate, EloquentModel::class);
+
+            /* @var class-string<EloquentModel> $candidate */
+            return $candidate;
+        }
+
+        /* @var class-string<EloquentModel> $fallback */
+        return $fallback;
+>>>>>>> 7f6cf6be (.)
     }
 
     /** @return array<string, string> */

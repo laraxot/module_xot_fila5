@@ -7,7 +7,11 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Datas\JsonResponseData;
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 test('JSON response data preserves status and domain payload', function (): void {
     $data = JsonResponseData::from([

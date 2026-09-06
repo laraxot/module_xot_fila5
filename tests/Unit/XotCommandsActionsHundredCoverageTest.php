@@ -11,7 +11,11 @@ use Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand;
 use Modules\Xot\Tests\TestCase;
 use Symfony\Component\Finder\SplFileInfo;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 test('memory optimization command exposes safe analysis flags', function (): void {
     $command = app(OptimizeFilamentMemoryCommand::class);
@@ -30,8 +34,13 @@ test('Filament generators leave unsupported files unchanged', function (): void 
     File::put($path, 'unchanged');
     $file = new SplFileInfo($path, '', 'resource.txt');
 
+<<<<<<< HEAD
     expect((new GenerateFormByFileAction)->execute($file))->toBe(0);
     (new GenerateTableColumnsByFileAction)->execute($file);
+=======
+    expect((new GenerateFormByFileAction())->execute($file))->toBe(0);
+    (new GenerateTableColumnsByFileAction())->execute($file);
+>>>>>>> 7f6cf6be (.)
 
     expect(File::get($path))->toBe('unchanged');
 

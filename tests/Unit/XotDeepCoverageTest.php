@@ -7,7 +7,11 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 /** @return array{string, string} */
 /** @return list{string, string} */

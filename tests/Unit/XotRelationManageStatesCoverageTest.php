@@ -15,7 +15,11 @@ use Modules\Xot\Tests\Fixtures\Stubs\XotCovRelationHost;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 describe('Xot RelationX ManageRelated StatesChart', function (): void {
     test('RelationX belongsToManyX morphToManyX con pivot stub', function (): void {
@@ -53,7 +57,11 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
             $t->timestamps();
         });
 
+<<<<<<< HEAD
         $host = new XotCovRelationHost;
+=======
+        $host = new XotCovRelationHost();
+>>>>>>> 7f6cf6be (.)
         $host->forceFill(['id' => 1, 'key' => 'k', 'value' => 'v']);
         $host->exists = true;
 

@@ -9,7 +9,11 @@ use Modules\Xot\Tests\Fixtures\Stubs\XotFilamentRelationContract;
 use Modules\Xot\Tests\Fixtures\Stubs\XotFilamentResourceContract;
 use Modules\Xot\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 test('Xot resources preserve model and route contracts', function (): void {
     expect(XotFilamentResourceContract::getModel())->toBe(Cache::class)

@@ -17,7 +17,11 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -47,7 +51,11 @@ describe('Xot migration deep branches', function (): void {
         DB::table('cache')->insert(['id' => 1, 'uuid' => null, 'key' => 'k', 'value' => 'v']);
         DB::table('cache')->insert(['id' => 2, 'uuid' => (string) Str::uuid(), 'key' => 'k2', 'value' => 'v2']);
 
+<<<<<<< HEAD
         $migration = new class extends XotBaseMigration
+=======
+        $migration = new class() extends XotBaseMigration
+>>>>>>> 7f6cf6be (.)
         {
             protected ?string $model_class = CacheModel::class;
 
@@ -148,5 +156,9 @@ describe('Xot migration deep branches', function (): void {
             } catch (\Throwable) {
             }
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f6cf6be (.)
     });
 });

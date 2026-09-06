@@ -15,8 +15,13 @@ use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\ExecuteSqlFileCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Console\Commands\SearchTextInDbCommand;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
 use Modules\Xot\Helpers\ResourceFormSchemaGenerator;
+=======
+use Modules\Xot\Helpers\ResourceFormSchemaGenerator;
+use Modules\Xot\Services\RouteService;
+>>>>>>> 7f6cf6be (.)
 use Modules\Xot\States\Transitions\XotBaseTransition;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -25,7 +30,11 @@ use ReflectionMethod;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -78,7 +87,11 @@ describe('Xot artisan commands helpers coverage', function (): void {
             ExecuteSqlFileCommand::class,
             GenerateFilamentResources::class,
             SearchTextInDbCommand::class,
+<<<<<<< HEAD
             IsAdminRouteAction::class,
+=======
+            RouteService::class,
+>>>>>>> 7f6cf6be (.)
             ResourceFormSchemaGenerator::class,
             XotBaseTransition::class,
         ] as $class) {
@@ -132,7 +145,11 @@ describe('Xot artisan commands helpers coverage', function (): void {
                         if ($def->hasOption('module')) {
                             $input['--module'] = 'Xot';
                         }
+<<<<<<< HEAD
                         $inst->run(new ArrayInput($input), new NullOutput);
+=======
+                        $inst->run(new ArrayInput($input), new NullOutput());
+>>>>>>> 7f6cf6be (.)
                         $n++;
                     } catch (\Throwable) {
                         $n++;

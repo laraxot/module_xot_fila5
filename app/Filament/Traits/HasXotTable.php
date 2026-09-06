@@ -42,7 +42,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 use ReflectionMethod;
+=======
+>>>>>>> 7f6cf6be (.)
 
 /**
  * Trait HasXotTable.
@@ -128,15 +131,23 @@ trait HasXotTable
      */
     public function getGridTableColumns(): array
     {
+<<<<<<< HEAD
         $columns = [];
 
         foreach (array_values($this->resolveTableColumns()) as $column) {
+=======
+        /** @var array<int, Column|LayoutComponent> $columns */
+        $columns = [];
+
+        foreach (array_values($this->getTableColumns()) as $column) {
+>>>>>>> 7f6cf6be (.)
             if ($column instanceof ColumnGroup) {
                 // Stack::make() non accetta ColumnGroup: nella vista a griglia le colonne
                 // raggruppate non hanno un layout sensato, quindi vengono saltate.
                 continue;
             }
 
+<<<<<<< HEAD
             if (! $column instanceof Column && ! $column instanceof LayoutComponent) {
                 // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
                 // (fallback deprecato di Filament): si scartano per restare coerenti col
@@ -144,6 +155,8 @@ trait HasXotTable
                 continue;
             }
 
+=======
+>>>>>>> 7f6cf6be (.)
             $gridColumn = clone $column;
 
             if ($gridColumn instanceof TextColumn) {
@@ -169,6 +182,7 @@ trait HasXotTable
     }
 
     /**
+<<<<<<< HEAD
      * Se i filtri vanno applicati solo dopo il bottone "Applica filtri" (default Filament)
      * oppure a ogni modifica del campo.
      *
@@ -183,11 +197,17 @@ trait HasXotTable
     }
 
     /**
+=======
+>>>>>>> 7f6cf6be (.)
      * Get table filters form columns.
      */
     public function getTableFiltersFormColumns(): int
     {
+<<<<<<< HEAD
         $count = count($this->resolveTableFilters()) + 1;
+=======
+        $count = count($this->getTableFilters()) + 1;
+>>>>>>> 7f6cf6be (.)
 
         return min($count, 6);
     }
@@ -232,6 +252,7 @@ trait HasXotTable
         Assert::isInstanceOf($model, Model::class);
         */
         // Configurazione base della tabella
+<<<<<<< HEAD
         // getTableColumns() può restituire, in alcuni contesti, elementi non tipizzati
         // (fallback deprecato di Filament): si filtrano per restare coerenti col tipo
         // atteso da TableLayoutEnum::getTableColumns().
@@ -255,12 +276,33 @@ trait HasXotTable
             ->toolbarActions(array_values($this->resolveTableBulkActions()))
             ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
             ->emptyStateActions(array_values($this->resolveTableEmptyStateActions()))
+=======
+        $table = $table
+            ->recordTitleAttribute($this->getTableRecordTitleAttribute())
+            ->heading($this->getTableHeading())
+            ->columns($this->layoutView->getTableColumns(array_values($this->getTableColumns()), $this->getGridTableColumns()))
+            ->contentGrid($this->layoutView->getTableContentGrid())
+            ->filters($this->getTableFilters()) // @phpstan-ignore argument.type
+            ->filtersLayout(FiltersLayout::AboveContent)
+            ->filtersFormColumns($this->getTableFiltersFormColumns())
+            ->persistFiltersInSession()
+            ->headerActions(array_values($this->getTableHeaderActions()))
+            ->recordActions(array_values($this->getTableActions()))
+            ->bulkActions(array_values($this->getTableBulkActions()))
+            ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
+            ->emptyStateActions(array_values($this->getTableEmptyStateActions()))
+>>>>>>> 7f6cf6be (.)
             ->striped()
             ->paginated($this->getTablePaginated());
 
         // Configurazioni opzionali personalizzabili
+<<<<<<< HEAD
         $sortColumn = $this->resolveDefaultTableSortColumn();
         $sortDirection = $this->resolveDefaultTableSortDirection();
+=======
+        $sortColumn = $this->getDefaultTableSortColumn();
+        $sortDirection = $this->getDefaultTableSortDirection();
+>>>>>>> 7f6cf6be (.)
         if ($sortColumn !== null && $sortDirection !== null) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
@@ -474,6 +516,7 @@ trait HasXotTable
         return [];
     }
 
+<<<<<<< HEAD
     /**
      * Invoke legacy Filament hooks only when implemented by the concrete component.
      *
@@ -573,6 +616,8 @@ trait HasXotTable
         return $reflection->invoke($this);
     }
 
+=======
+>>>>>>> 7f6cf6be (.)
     protected function shouldShowAssociateAction(): bool
     {
         return false;

@@ -132,7 +132,11 @@ class HasTableWithXotTestClass
      */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
+<<<<<<< HEAD
         return new Collection;
+=======
+        return new Collection();
+>>>>>>> 7f6cf6be (.)
     }
 
     public function getAllTableRecordsCount(): int

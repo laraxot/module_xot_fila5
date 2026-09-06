@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ExtraContract;
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Webmozart\Assert\Assert;
 
@@ -20,6 +21,21 @@ use function Safe\json_encode;
  * @property float $price
  * @property string $price_complete
  * @property int $qty
+=======
+
+use function Safe\json_encode;
+
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Webmozart\Assert\Assert;
+
+/**
+ * Modules\Xot\Models\HasExtraTrait.
+ *
+ * @property string             $currency
+ * @property float              $price
+ * @property string             $price_complete
+ * @property int                $qty
+>>>>>>> 7f6cf6be (.)
  * @property ExtraContract|null $extra
  */
 /** @phpstan-ignore trait.unused */
@@ -85,7 +101,11 @@ trait HasExtraTrait
     }
 
     /**
+<<<<<<< HEAD
      * @param  int|float|string|array<string, mixed>|bool|null  $value
+=======
+     * @param int|float|string|array<string, mixed>|bool|null $value
+>>>>>>> 7f6cf6be (.)
      */
     public function setExtra(string $name, int|float|string|array|bool|null $value): void
     {

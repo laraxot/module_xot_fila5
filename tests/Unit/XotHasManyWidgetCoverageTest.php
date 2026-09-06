@@ -23,7 +23,11 @@ use PHPUnit\Framework\Assert;
 use ReflectionClass;
 use ReflectionMethod;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -56,11 +60,19 @@ describe('Xot HasMany and Widget form coverage', function (): void {
             $t->unsignedBigInteger('parent_id')->nullable();
         });
 
+<<<<<<< HEAD
         $parent = new CacheModel;
         $parent->forceFill(['id' => 1, 'key' => 'p', 'value' => 'v']);
         $parent->exists = true;
 
         $related = new CacheModel;
+=======
+        $parent = new CacheModel();
+        $parent->forceFill(['id' => 1, 'key' => 'p', 'value' => 'v']);
+        $parent->exists = true;
+
+        $related = new CacheModel();
+>>>>>>> 7f6cf6be (.)
         $related->forceFill(['id' => 2, 'key' => 'c', 'value' => 'v', 'parent_id' => null]);
 
         $hasMany = Mockery::mock(HasMany::class);
@@ -74,7 +86,11 @@ describe('Xot HasMany and Widget form coverage', function (): void {
             'data' => ['to' => [2], 'from' => [3]],
         ]);
 
+<<<<<<< HEAD
         $action = new HasManyAction;
+=======
+        $action = new HasManyAction();
+>>>>>>> 7f6cf6be (.)
         try {
             $action->execute($parent, $dto);
         } catch (\Throwable $e) {
@@ -97,7 +113,11 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         }
 
         // invalid parent key
+<<<<<<< HEAD
         $badParent = new CacheModel;
+=======
+        $badParent = new CacheModel();
+>>>>>>> 7f6cf6be (.)
         $badParent->forceFill(['id' => null, 'key' => 'x']);
         try {
             $action->execute($badParent, $dto);
@@ -133,7 +153,11 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         Http::fake();
         Process::fake();
         try {
+<<<<<<< HEAD
             $w = new XotWidgetFormHost;
+=======
+            $w = new XotWidgetFormHost();
+>>>>>>> 7f6cf6be (.)
             Assert::assertNotEmpty($w->getFormSchema());
             Assert::assertNotEmpty($w->getFormFill());
             $ref = new ReflectionClass(XotBaseWidget::class);

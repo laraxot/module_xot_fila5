@@ -14,9 +14,15 @@ use Spatie\LaravelData\DataCollection;
  */
 class ComponentFileData extends Data
 {
+<<<<<<< HEAD
     public string $name = '';
 
     public string $class = '';
+=======
+    public string $name;
+
+    public string $class;
+>>>>>>> 7f6cf6be (.)
 
     public ?string $module = null;
 

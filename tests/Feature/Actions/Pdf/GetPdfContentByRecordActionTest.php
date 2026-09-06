@@ -9,9 +9,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
 uses(TestCase::class);
+=======
+
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 // $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
 // Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
@@ -21,7 +26,11 @@ uses(TestCase::class);
 $action = null;
 
 beforeEach(function () use (&$action): void {
+<<<<<<< HEAD
     $action = new GetPdfContentByRecordAction;
+=======
+    $action = new GetPdfContentByRecordAction();
+>>>>>>> 7f6cf6be (.)
 });
 
 describe('Get Pdf Content By Record Action', function () use (&$action): void {
@@ -80,7 +89,11 @@ describe('Get Pdf Content By Record Action', function () use (&$action): void {
 
     test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
+<<<<<<< HEAD
         $record = new class extends Model
+=======
+        $record = new class() extends Model
+>>>>>>> 7f6cf6be (.)
         {
             protected $table = 'test_performance';
 

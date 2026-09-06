@@ -35,7 +35,11 @@ class ExportTreeXlsAction extends XotBaseAction
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('heroicon-o-arrow-down-tray')
+<<<<<<< HEAD
             ->action(static function (Page $livewire, Model $record, array $_data) {
+=======
+            ->action(static function (Page $livewire, Model $record, $_data) {
+>>>>>>> 7f6cf6be (.)
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];

@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> 7f6cf6be (.)
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -14,8 +18,14 @@ uses(TestCase::class);
 /*
  * Da quando `XotBaseListRecords` non usa piu' `HasXotTable`, la tabella di una list page
  * la costruisce `XotBaseResource::table()` attraverso `getTableClass()`, che alza
+<<<<<<< HEAD
  * `LogicException` se la classe non esiste: una Resource senza `*Table` non degrada a
  * tabella vuota, va in errore a runtime.
+=======
+ * `LogicException` se la classe non esiste. Le Resource che dichiarano ancora un
+ * proprio `table()` sono nel percorso di migrazione legacy e non consumano questo
+ * resolver.
+>>>>>>> 7f6cf6be (.)
  *
  * Questo test tiene il contratto: nessuna list page concreta puo' restare scoperta.
  */
@@ -48,10 +58,27 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
         }
 
         try {
+<<<<<<< HEAD
             /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (\Throwable $e) {
+=======
+            /** @var class-string<XotBaseResource> $resourceClass */
+            $resourceClass = $page::getResource();
+
+            if (! is_subclass_of($resourceClass, XotBaseResource::class)) {
+                continue;
+            }
+
+            $tableMethod = new ReflectionMethod($resourceClass, 'table');
+            if ($tableMethod->getDeclaringClass()->getName() !== XotBaseResource::class) {
+                continue;
+            }
+
+            $resourceClass::getTableClass();
+        } catch (Throwable $e) {
+>>>>>>> 7f6cf6be (.)
             $senzaTable[] = $page.' — '.$e->getMessage();
         }
     }

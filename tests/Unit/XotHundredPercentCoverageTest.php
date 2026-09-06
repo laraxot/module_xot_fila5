@@ -29,7 +29,11 @@ use Symfony\Component\HttpFoundation\Response;
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-xot-db');
+=======
+uses(\Modules\Xot\Tests\TestCase::class)->group('no-xot-db');
+>>>>>>> 7f6cf6be (.)
 
 afterEach(function (): void {
     Mockery::close();
@@ -96,7 +100,10 @@ namespace PhpCsFixer\Runner\Parallel {
     }
 }
 namespace PhpCsFixer {
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> 7f6cf6be (.)
     final class Config {
         public function setParallelConfig(mixed $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }
@@ -271,7 +278,11 @@ PHP);
             FileAction::getFileNameByClassName(XotData::class)
         );
 
+<<<<<<< HEAD
         $action = new FileAction;
+=======
+        $action = new FileAction();
+>>>>>>> 7f6cf6be (.)
         try {
             $action->execute();
         } catch (\Throwable) {
@@ -279,7 +290,11 @@ PHP);
     });
 
     test('XotData rami SSL tenant profile team child e update', function (): void {
+<<<<<<< HEAD
         $xot = new XotData;
+=======
+        $xot = new XotData();
+>>>>>>> 7f6cf6be (.)
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->adm_theme = 'One';
@@ -318,7 +333,11 @@ PHP);
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
+<<<<<<< HEAD
         $meta = new MetatagData;
+=======
+        $meta = new MetatagData();
+>>>>>>> 7f6cf6be (.)
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Desc';
@@ -354,7 +373,11 @@ PHP);
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
+<<<<<<< HEAD
         $mw = new SecurityMiddleware;
+=======
+        $mw = new SecurityMiddleware();
+>>>>>>> 7f6cf6be (.)
 
         // GET ok
         $ok = Request::create('/dashboard', 'GET', [], [], [], [
@@ -414,7 +437,11 @@ PHP);
     });
 
     test('XotBaseMigration reflection helper schema e blueprint', function (): void {
+<<<<<<< HEAD
         $migration = new class extends XotBaseMigration
+=======
+        $migration = new class() extends XotBaseMigration
+>>>>>>> 7f6cf6be (.)
         {
             protected ?string $model_class = CacheModel::class;
 

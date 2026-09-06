@@ -12,7 +12,11 @@ use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 it('calculates view path correctly', function (): void {
     /** @var GetViewNameSpacePathAction&MockInterface $nsMock */

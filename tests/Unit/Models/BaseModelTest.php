@@ -7,10 +7,16 @@ use Modules\Xot\Models\BaseModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 $baseModel = new class extends BaseModel
 {
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+
+$baseModel = new class extends BaseModel {
+>>>>>>> 7f6cf6be (.)
     protected $table = 'test_table';
 };
 

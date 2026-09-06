@@ -9,7 +9,11 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 test('safe array cast action works', function (): void {
     $action = app(SafeArrayCastAction::class);
@@ -19,6 +23,7 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
+<<<<<<< HEAD
     Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;
@@ -37,6 +42,29 @@ test('safe array cast action works', function (): void {
         public function __toArray(): array
         {
             return ['f' => 6];
+=======
+    Assert::assertSame(['d' => 4], $action->execute(new class {
+        public int $d = 4;
+    }));
+    Assert::assertSame(['e' => 5], $action->execute(new class {
+        /** @return array<string, int> */
+        public function toArray(): array
+        {
+            /** @var array<string, int> $result */
+            $result = ['e' => 5];
+
+            return $result;
+        }
+    }));
+    Assert::assertSame(['f' => 6], $action->execute(new class {
+        /** @return array<string, int> */
+        public function __toArray(): array
+        {
+            /** @var array<string, int> $result */
+            $result = ['f' => 6];
+
+            return $result;
+>>>>>>> 7f6cf6be (.)
         }
     }));
 
@@ -72,8 +100,12 @@ test('safe int cast action works', function (): void {
     Assert::assertSame(123, $action->execute(' +123 '));
     Assert::assertSame(1, $action->execute(true));
     Assert::assertSame(789, $action->execute(['789']));
+<<<<<<< HEAD
     Assert::assertSame(1011, $action->execute(new class
     {
+=======
+    Assert::assertSame(1011, $action->execute(new class {
+>>>>>>> 7f6cf6be (.)
         public function __toString(): string
         {
             return '1011';

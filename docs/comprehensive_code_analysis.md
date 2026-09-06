@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: comprehensive_code_analysis
@@ -10,6 +11,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIV
 
 <!-- Merged from COMPREHENSIVE_CODE_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
 
+=======
+>>>>>>> 7f6cf6be (.)
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -451,6 +454,7 @@ return [
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+<<<<<<< HEAD
 
 
 ---
@@ -898,3 +902,5 @@ return [
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+=======
+>>>>>>> 7f6cf6be (.)

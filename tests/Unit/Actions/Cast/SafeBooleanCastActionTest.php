@@ -6,7 +6,11 @@ use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Xot\Tests\TestCase::class);
+>>>>>>> 7f6cf6be (.)
 
 it('casts various values to boolean correctly', function (): void {
     $action = app(SafeBooleanCastAction::class);
