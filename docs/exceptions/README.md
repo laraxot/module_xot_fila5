@@ -1,35 +1,44 @@
 # Gestione delle Eccezioni
 
 <<<<<<< HEAD
+[![Module](https://img.shields.io/badge/Module-Gestione delle Eccezioni-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+=======
+<<<<<<< HEAD
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
+>>>>>>> 28b0298a (fix: phpstan issues)
 
-## HandlerDecorator
-- [Documentazione Dettagliata](./handler-decorator.md)
-- Modulo: Xot
-- Percorso: `Modules/Xot/app/Exceptions/Handlers/HandlerDecorator.php`
+> **Core module for the FixCity Platform.**
 
-### Funzionalità Principali
-- Decorazione del gestore eccezioni Laravel
-- Gestione personalizzata delle eccezioni
-- Supporto per log dettagliati e webhook
-- Integrazione con sistemi di monitoraggio
+## Perché esiste
 
-## Formatters
-- [WebhookErrorFormatter](./formatters/webhook-error-formatter.md)
-- Altri formattatori personalizzati
+Core module for the FixCity Platform.
 
-### Caratteristiche
-- Formattazione consistente degli errori
-- Supporto per diversi canali di output
-- Integrazione con sistemi esterni
+## Superpoteri
 
-## Best Practices
-1. Utilizzo di pattern di design appropriati
-2. Logging strutturato e dettagliato
-3. Gestione errori robusta
-4. Supporto per PHPStan livello 9
-5. Conforme alle convenzioni Laraxot/<nome progetto>
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
 
+<<<<<<< HEAD
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
 ## Collegamenti
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
@@ -394,6 +403,9 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
 =======
 [![Module](https://img.shields.io/badge/Module-Gestione delle Eccezioni-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -428,3 +440,4 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)

@@ -153,6 +153,10 @@ docs/**/bashscripts/
 phpinsights.php
 rector.php
 <<<<<<< HEAD
+graphify-out
+=======
+<<<<<<< HEAD
 =======
 graphify-out
 >>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
