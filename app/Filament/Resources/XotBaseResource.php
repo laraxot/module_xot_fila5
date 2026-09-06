@@ -187,18 +187,6 @@ abstract class XotBaseResource extends FilamentResource
         Assert::subclassOf($fallbackTableClass, XotBaseResourceTable::class);
 
         return $fallbackTableClass;
-        $class = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
-        if (class_exists($class)) {
-            Assert::subclassOf($class, XotBaseResourceTable::class);
-
-            return $class;
-        }
-
-        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
-        $class1 = $class1.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
-        Assert::subclassOf($class1, XotBaseResourceTable::class);
-
-        return $class1;
     }
 
     public static function table(Table $table): Table

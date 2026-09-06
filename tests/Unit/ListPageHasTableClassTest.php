@@ -66,11 +66,7 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
 
             $resourceClass::getTableClass();
         } catch (Throwable $e) {
-            /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resourceClass */
-            $resourceClass = $page::getResource();
-            $resourceClass::getTableClass();
-        } catch (\Throwable $e) {
-            $senzaTable[] = $page.' — '.$e->getMessage();
+            $senzaTable[] = (string) $page.' — '.$e->getMessage();
         }
     }
 
