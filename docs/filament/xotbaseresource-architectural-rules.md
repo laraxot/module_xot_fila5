@@ -72,6 +72,35 @@ Le classi che estendono `XotBaseResource` stanno sovrascrivendo proprietà e met
    - ✅ Gestito automaticamente da `HasXotTable` trait (incluso in `XotBaseResource`)
    - ✅ Usare invece: `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`
 
+### 📁 Perché `Schemas/` e `Tables/` devono sempre esistere (non è stile)
+
+Ogni `<Name>Resource/` deve avere `Schemas/<Name>Form.php`, `Schemas/<Name>Infolist.php`
+e `Tables/<Plural>Table.php`. Non è convenzione estetica: senza queste classi, il
+degrado a codice inline è **invisibile** — zero errori PHP, zero errori PHPStan.
+
+Meccanismo (`app/Filament/Resources/XotBaseResource.php`):
+- `form()` (riga ~134) è `final` ma ricade su `static::getFormSchema()` (non `final`)
+  se `Schemas\{Model}Form` non esiste — un Resource che definisce `getFormSchema()`
+  inline rende quel fallback permanente, silenziosamente.
+- `table()` (riga ~173) NON è `final`: un Resource con un proprio
+  `public static function table(...)` lo sovrascrive del tutto via risoluzione normale
+  dei metodi PHP, bypassando `getTableClass()` (che cerca `Tables\{Plural}Table`).
+  Compila, gira, PHPStan tace.
+- Se `Tables/{Plural}Table.php` manca E il Resource non definisce `table()` inline,
+  `getTableClass()` fallisce con `Assert::subclassOf` su una classe inesistente →
+  **crash a runtime** quando Filament renderizza la pagina lista.
+
+Verifica strutturale (non fidarsi di PHPStan/runtime, non la intercettano):
+
+```bash
+bash bashscripts/tools/filament_audit.sh <NomeModulo>
+```
+
+Stato attuale: audit repo-wide in corso, tracciato in
+`laravel/Modules/Billing/docs/stories/4.3.filament-audit-14-modules.story.md`
+(16+ moduli con gap confermati al 2026-09-07). Canone completo:
+`bashscripts/docs/prompts/06-filament-audit.md`.
+
 ### ✅ Pattern Corretto
 
 ```php
