@@ -13,6 +13,20 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
  *
  * Usage: just use the trait in your model. No type parameters needed.
  *
+ * DO NOT DELETE public static function factory() BELOW. It has been removed by
+ * mistake and restored 3 times in this repo's history (2026-09-06/07 — see
+ * `git log -- app/Models/Traits/HasXotFactory.php`, commits c81bf340 and 85435893).
+ * Without it, EVERY model using this trait (i.e. nearly every model in every module,
+ * via XotBaseModel) loses its `Model::factory()` static entry point at BOTH the
+ * PHPStan level (staticMethod.notFound cascades) AND at PHP runtime
+ * (BadMethodCallException on any `SomeModel::factory()->create()` call — this is not
+ * just a type-checker annotation, PHP actually resolves this trait method at
+ * call time). `newFactory()` alone does nothing: nobody calls it directly.
+ * See second-brain memories `project_phpstan_neon_duplicate_includes_pest_bump.md`,
+ * `project_larastan_factory_mixed_needs_newfactory_override.md`, and
+ * `docs/chat/2026-09-06-hasxotfactory-factory-method-deleted-root-cause.md` for the
+ * full incident history before touching this file again.
+ *
  * @mixin Model
  */
 trait HasXotFactory
@@ -26,6 +40,30 @@ trait HasXotFactory
     {
         /** @var Factory<static> $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);
+
+        return $factory;
+    }
+
+    /**
+     * Get a new factory instance for the model.
+     *
+     * @param  int|float|numeric-string|null  $count
+     * @param  array<string, mixed>|callable(array<string, mixed>, Model|null): array<string, mixed>|null  $state
+     * @return Factory<static>
+     */
+    public static function factory($count = null, $state = []): Factory
+    {
+        $factory = static::newFactory();
+
+        if (is_numeric($count)) {
+            $factory = $factory->count((int) $count);
+        }
+
+        if ($state !== null && $state !== []) {
+            /** @var array<string, mixed>|callable(array<string, mixed>, Model|null): array<string, mixed> $stateArg */
+            $stateArg = $state;
+            $factory = $factory->state($stateArg);
+        }
 
         return $factory;
     }
