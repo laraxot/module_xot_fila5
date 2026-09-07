@@ -47,6 +47,16 @@ trait HasXotFactory
     /**
      * Get a new factory instance for the model.
      *
+     * The return type MUST stay the self-referential `Factory<static>` (not a
+     * bare `Factory`, not omitted) — PHPStan level max requires fully-specified
+     * generics on every declared return type. If you override newFactory()/
+     * factory() on a concrete model, annotate ITS return as `Factory<static>`
+     * too (not `Factory<ConcreteClass>`) — a concrete generic argument there is
+     * NOT considered covariant with this trait's `Factory<static>` and fails
+     * PHPStan's return-type check, even though at runtime they're the same type.
+     * Confirmed 2026-09-07 across Catalog/Comment/Costing/Customer/Intervention
+     * models that had this exact mismatch.
+     *
      * @param  int|float|numeric-string|null  $count
      * @param  array<string, mixed>|callable(array<string, mixed>, Model|null): array<string, mixed>|null  $state
      * @return Factory<static>
