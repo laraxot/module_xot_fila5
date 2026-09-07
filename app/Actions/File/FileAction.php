@@ -186,6 +186,7 @@ class FileAction
     public static function getViewNameSpacePath(string $ns): ?string
     {
         $xot = XotData::make();
+        /** @var \Illuminate\Contracts\View\Factory $finder */
         $finder = view()->getFinder();
         $viewHints = [];
         if (method_exists($finder, 'getHints')) {
