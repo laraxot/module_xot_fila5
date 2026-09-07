@@ -1,16 +1,9 @@
----
-title: 'Inodes'
-module: Xot
-type: reference
-slug: inodes
-description: "-- current directory total inodes $find . -xdev -printf '%h\\n' | sort | uniq -c | awk '{total = total + $1}END{print total}'"
-tags: [migrato-da-txt, xot]
-converted_from: _inodes.txt
-created: 2026-08-24
-updated: 2026-08-24
----
+--------------------------------------------------------------
+$ df -i /
+Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
+/dev/xvda1      7692288 652294 7039994    9%      /
 
------------------------------------------------------------
+--------------------------------------------------------------
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------
@@ -42,3 +35,4 @@ $ journalctl --vacuum-size=100M
 dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno scartiti tutti i log più vecchi finchè non si raggiunge uno spazio di disco usato da Jorunal di 100M (o meno).
 
 --------------------------------------------------------------
+

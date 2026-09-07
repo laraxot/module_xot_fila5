@@ -117,6 +117,9 @@ class ArtisanAction
 
     public static function errorShow(): Renderable
     {
+        /**
+         * @var view-string
+         */
         $view = 'xot::acts.artisan.error-show';
         $files = File::files(storage_path('logs'));
         $log = request('log', '');
@@ -136,8 +139,8 @@ class ArtisanAction
 
         /** @var array<int, string> $urls */
         $urls = [];
-        $urlsRaw = $matches[1] ?? [];
-        if (is_array($urlsRaw) && [] !== $urlsRaw) {
+        $urlsRaw = $matches[1];
+        if ([] !== $urlsRaw) {
             $urls = array_values(array_unique($urlsRaw));
         }
 
@@ -149,15 +152,15 @@ class ArtisanAction
             'urls' => $urls,
         ];
 
-        $result = view($view, $view_params);
-        Assert::isInstanceOf($result, View::class);
-
-        return $result;
+        return view($view, $view_params);
     }
 
     public static function showRouteList(): string
     {
         $routeCollection = Route::getRoutes();
+        /**
+         * @var view-string
+         */
         $view = 'xot::acts.artisan.show_route_list';
         $view_params = [
             'view' => $view,
@@ -166,6 +169,7 @@ class ArtisanAction
         ];
 
         $out = view($view, $view_params);
+
         Assert::isInstanceOf($out, View::class);
 
         return $out->render();

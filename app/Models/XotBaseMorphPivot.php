@@ -18,6 +18,9 @@ use function Safe\preg_match;
  * Centralizes common MorphPivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
+ * DO NOT remove `use HasXotFactory;` below — see the identical warning on the
+ * sibling Modules/Xot/app/Models/XotBasePivot.php for why.
+ *
  * @property string|int $id
  * @property string $morph_type
  * @property string|int $morph_id

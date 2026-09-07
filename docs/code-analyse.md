@@ -1,25 +1,10 @@
----
-title: 'code_analyse'
-module: Xot
-type: reference
-slug: code-analyse
-description: '<!-- Contenuto migrato da _docs/code_analyse.txt -->'
-tags: [migrato-da-txt, xot]
-converted_from: code_analyse.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
-# code_analyse
-
-<!-- Contenuto migrato da _docs/code_analyse.txt -->
-
 //----------------------------------------------------------
 phpstan
 install:
 
 cmd:
 ./vendor/bin/phpstan analyse ./Modules/Xot
+
 
 //----------------------------------------------------------
 https://github.com/phan/phan/wiki/Getting-Started
@@ -37,7 +22,6 @@ php ./vendor/bin/phpmetrics --report-html=../_phpmetrics_report Modules
 //----------------------------------------------------------
 https://github.com/squizlabs/PHP_CodeSniffer
 install:
-
 # Download using curl
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
@@ -55,8 +39,9 @@ $ wget https://phar.phpunit.de/phpcpd.phar
 
 $ php phpcpd.phar --version
 
+
 //---------------------
-https://scrutinizer-ci.com/project_docs/tools/php/php-scrutinizer/
+https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
 
 //--------------------
 https://github.com/Qafoo/QualityAnalyzer
@@ -70,7 +55,7 @@ cmd:
 bin/analyze analyze /path/to/source
 //-------------------------------------------------------------
 
-https://psalm.dev/project_docs/running_psalm/installation/
+https://psalm.dev/docs/running_psalm/installation/
 
 //--------------------------------------------------------------------
 https://github.com/scrutinizer-ci/php-analyzer
@@ -82,6 +67,10 @@ https://geekflare.com/php-security-scanner/
 https://hub.docker.com/r/adamculp/php-code-quality
 https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 
+
+
+
+
 https://github.com/enlightn/enlightn
 
  "edgedesign/phpqa": "^1.23",
@@ -89,3 +78,15 @@ https://github.com/enlightn/enlightn
  "phan/phan": "^4.0",
         "phpmetrics/phpmetrics": "^2.7",
         "phpunit/php-code-coverage": "^9.2",
+
+
+
+
+
+
+
+
+
+
+
+

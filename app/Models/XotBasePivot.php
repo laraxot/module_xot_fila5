@@ -18,6 +18,15 @@ use function Safe\preg_match;
  * Centralizes common Pivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
+ * DO NOT remove `use HasXotFactory;` below. Unlike most models, this class does
+ * NOT extend XotBaseModel (it extends Eloquent's Pivot directly), so it does not
+ * inherit the trait from anywhere else — removing it here is NOT the same
+ * "redundant trait" cleanup that applies to concrete models extending
+ * XotBaseModel/a module BaseModel. Every pivot using XotBasePivot loses
+ * factory()/newFactory() if this is removed. See
+ * docs/chat/2026-09-06-hasxotfactory-factory-method-deleted-root-cause.md for the
+ * (repeated) incident history on the sibling XotBaseModel trait usage.
+ *
  * @property string|int $id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

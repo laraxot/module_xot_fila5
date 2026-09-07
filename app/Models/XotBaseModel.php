@@ -14,9 +14,21 @@ use Modules\Xot\Traits\Updater;
 use Webmozart\Assert\Assert;
 
 /**
- * @method static \Illuminate\Database\Eloquent\Factories\Factory<static> factory($count = null, $state = [])
- *
  * Class XotBaseModel.
+ *
+ * DO NOT remove `use HasXotFactory;` below, and do not remove it thinking a
+ * `@method static Factory factory(...)` PHPDoc annotation makes it redundant —
+ * the docblock is only an IDE/PHPStan hint, this trait is the REAL runtime
+ * implementation. Nearly every model in the monorepo extends this class; removing
+ * the trait here breaks `Model::factory()` everywhere at once, at runtime, not
+ * just for PHPStan. This has now happened *repeatedly* in one session (2026-09-06/07)
+ * to this exact class and its siblings `HasXotFactory` itself, `XotBasePivot`,
+ * `XotBaseMorphPivot` — always by an agent mistaking "trait already documented via
+ * @method" or "trait already used by a parent" for "trait usage is dead code here
+ * too". See docs/chat/2026-09-06-hasxotfactory-factory-method-deleted-root-cause.md
+ * and second-brain project_hasxotfactory_missing_static_factory_method.md before
+ * touching this again. Verify with:
+ * Modules/Xot/tests/Unit/Traits/HasXotFactoryTest.php
  */
 abstract class XotBaseModel extends EloquentModel
 {
