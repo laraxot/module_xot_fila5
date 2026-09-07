@@ -195,6 +195,17 @@ trait HasXotTable
     }
 
     /**
+     * Get the filters layout for this table.
+     *
+     * Overridable per resource/widget, same pattern as
+     * getTableRecordActionsPosition() below.
+     */
+    public function getTableFiltersLayout(): FiltersLayout
+    {
+        return FiltersLayout::AboveContent;
+    }
+
+    /**
      * Get table filters form columns.
      */
     public function getTableFiltersFormColumns(): int
@@ -258,7 +269,7 @@ trait HasXotTable
             ->columns($this->layoutView->getTableColumns($tableColumns, $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->resolveTableFilters())
-            ->filtersLayout(FiltersLayout::AboveContent)
+            ->filtersLayout($this->getTableFiltersLayout())
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
             ->persistFiltersInSession()

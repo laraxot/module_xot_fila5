@@ -279,3 +279,20 @@ sostituito ovunque da `Actions/Model/GetAllModelsByModuleNameAction`
 (gia' esistente, logica identica). I suoi 2 test riscritti sul sostituto
 (coverage preservata). `phpstan analyse Modules/Xot`: 0 errori, cache
 pulita, verificato.
+
+## 2026-09-07 — HasXotTable: hook mai cablati in table()
+
+`recordActionsPosition`/`filtersLayout` chiamavano l'enum letterale invece
+degli hook `getTableRecordActionsPosition()`/`getTableFiltersLayout()` gia'
+definiti nel trait — un override in una Resource/Widget figlio non aveva
+alcun effetto. Story:
+`docs/stories/hasxottable-recordactionsposition-and-filterslayout-hardcode-fix.story.md`.
+
+`phpstan analyse Modules/Xot` (1589 file): 0 errori. `phpmd` sul file: 1
+violazione pre-esistente non correlata (riga 426). Suite completa
+`pest Modules/Xot/tests` non eseguita per intero (nota sopra: timeout
+noto su questo modulo); eseguiti solo i file mirati:
+`HasXotTableLayoutHooksTest.php` (2/2 pass), `HasXotTableTest.php` (2/2
+pass), `HasXotTableSortHooksTest.php` (1 failure pre-esistente e
+scorrelata, `getTableSortColumn()` inesistente — non toccato, fuori
+scope, segnalato in story).
