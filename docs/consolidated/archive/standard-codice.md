@@ -145,7 +145,7 @@ class PatientRequest extends FormRequest
 // Esempio corretto
 class MyResource extends XotBaseResource
 {
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

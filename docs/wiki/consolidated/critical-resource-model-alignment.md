@@ -54,7 +54,7 @@ DatePicker::make('date_field'),                      // Date
 protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'posti', 'anno'];
 
 // RISORSA SBAGLIATA (PRIMA):
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         TextInput::make('id')->disabled(),
@@ -69,7 +69,7 @@ public static function getFormSchema(): array
 ### ✅ CORREZIONE: Campi Allineati al Modello
 ```php
 // RISORSA CORRETTA (DOPO):
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         TextInput::make('id')->disabled(),

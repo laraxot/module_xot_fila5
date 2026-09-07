@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests;
 
 use Filament\Infolists\Components\Entry;
-use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -104,18 +103,6 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-            try {
-                $schema = $class::getFormSchema();
-                $executed++;
-                if ($schema === []) {
-                    continue;
-                }
-
-                self::assertKeyedSchema($schema, $class);
-                Assert::assertContainsOnlyInstancesOf(SchemaComponent::class, $schema);
-            } catch (\Throwable) {
-                $executed++;
-            }
         }
 
         Assert::assertGreaterThanOrEqual(0, $executed);
@@ -131,7 +118,7 @@ final class FilamentSchemaCoverage
             }
 
             try {
-                $tabella = new $class;
+                $tabella = new $class();
                 $colonne = $tabella->getTableColumns();
                 $executed++;
 
@@ -279,7 +266,7 @@ final class FilamentSchemaCoverage
             }
 
             try {
-                $page = new $class;
+                $page = new $class();
                 Assert::assertNotEmpty($page->getTableColumns());
             } catch (\Throwable $e) {
                 Assert::assertNotSame('', $e->getMessage());

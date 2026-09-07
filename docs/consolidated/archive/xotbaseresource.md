@@ -33,7 +33,7 @@ class YourResource extends XotBaseResource
 {
     protected static ?string $model = YourModel::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             // Definisci qui lo schema del form

@@ -155,7 +155,7 @@ return [
 
 ```php
 // ✅ CORRECT
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         'name' => TextInput::make('name'),
@@ -164,7 +164,7 @@ public static function getFormSchema(): array
 }
 
 // ❌ WRONG
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         TextInput::make('name')->label('Nome'),

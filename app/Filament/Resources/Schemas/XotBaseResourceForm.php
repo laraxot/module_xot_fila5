@@ -10,29 +10,31 @@ use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Traits\HasXotForm;
+use Webmozart\Assert\Assert;
 
-class XotBaseResourceForm
+abstract class XotBaseResourceForm
 {
-    public static function configure(Schema $schema): Schema
-    {
-        return $schema
-            ->components(static::getFormSchema())
-            ->columns(static::getFormSchemaColumns());
-    }
+    use HasXotForm;
+    // private static ?self $_instance = null;
 
-    public static function getFormSchemaColumns(): int
+    final public static function configure(Schema $schema): Schema
     {
-        return 1;
+        if (static::class === self::class) {
+            throw new \LogicException('XotBaseResourceForm::configure() must be called on a concrete form class.');
+        }
+        $instance = app(static::class);
+        Assert::isInstanceOf($instance, self::class);
+
+        // static::$_instance = $instance;
+        // return static::$_instance->form($schema);
+        return $instance->form($schema);
     }
 
     /**
      * @return array<string, Component>
      */
-    public static function getFormSchema(): array
-    {
-        return [
-        ];
-    }
+    abstract public function getFormSchema(): array;
 
     /**
      * Elenco degli step Wizard per form multi‑passaggio (nome ufficiale allineato a Filament **`HasWizard::getSteps()`**).

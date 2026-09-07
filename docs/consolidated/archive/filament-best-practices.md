@@ -42,7 +42,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         TextInput::make('nome')->required(),
@@ -128,7 +128,7 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('cognome')
@@ -308,7 +308,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -562,7 +562,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('nome')->required(),

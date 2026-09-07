@@ -95,7 +95,7 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         'field_name' => [
@@ -891,7 +891,7 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
-public static function getFormSchema(): array
+public function getFormSchema(): array
 {
     return [
         'field_name' => [

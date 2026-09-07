@@ -21,7 +21,7 @@ namespace Modules\Xot\Filament\Resources;
 
 class XotBaseResource
 {
-    public static function getFormSchema(): array;
+    public function getFormSchema(): array;
     public static function getListTableColumns(): array;
 }
 ```

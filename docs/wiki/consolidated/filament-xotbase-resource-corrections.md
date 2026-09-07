@@ -174,7 +174,7 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required(),

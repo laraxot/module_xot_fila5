@@ -46,7 +46,7 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
     // SOLO questo metodo è necessario
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'title' => TextInput::make('title')->required(),

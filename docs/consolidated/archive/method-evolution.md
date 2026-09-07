@@ -47,7 +47,7 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICO metodo che dovrebbe essere implementato
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

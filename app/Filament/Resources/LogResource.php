@@ -25,16 +25,8 @@ class LogResource extends XotBaseResource
      * @return array<string, Component>
      */
     #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'name' => TextInput::make('name')->required()->maxLength(255),
-            'path' => TextInput::make('path')->required()->maxLength(255),
-            'content' => Textarea::make('content')->columnSpanFull(),
-        ];
-    }
 
-    public static function getInfolistSchema(): array
+    public function getInfolistSchema(): array
     {
         return [
             'name' => TextEntry::make('name')->columnSpanFull(),
