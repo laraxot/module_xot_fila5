@@ -33,7 +33,7 @@ trait HasXotFactory
     /**
      * @return Factory<static>
      */
-    protected static function newFactory(): Factory
+    protected static function factory(): Factory
     {
         /** @var Factory<static> $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);
@@ -41,23 +41,5 @@ trait HasXotFactory
         return $factory;
     }
 
-    /**
-     * @param  int|float|numeric-string|null  $count
-     * @param  (callable(array<string, mixed>, Model|null): array<string, mixed>)|array<string, mixed>|null  $state
-     * @return Factory<static>
-     */
-    public static function factory($count = null, $state = []): Factory
-    {
-        $factory = static::newFactory();
-
-        if (is_numeric($count)) {
-            $factory = $factory->count((int) $count);
-        }
-
-        if ($state !== null && $state !== []) {
-            $factory = $factory->state($state);
-        }
-
-        return $factory;
-    }
+   
 }

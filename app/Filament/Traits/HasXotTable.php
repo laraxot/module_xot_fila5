@@ -76,18 +76,6 @@ trait HasXotTable
     }
 
     /**
-     * Get the record actions position for this table.
-     *
-     * Returns the RecordActionsPosition configured for the table,
-     * allowing dynamic positioning of records within the table view.
-     */
-    public function getTableRecordActionsPosition(): RecordActionsPosition
-    {
-        // Default to BeforeColumns if no specific position is configured
-        return RecordActionsPosition::BeforeColumns;
-    }
-
-    /**
      * Get table header actions.
      *
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
@@ -195,17 +183,6 @@ trait HasXotTable
     }
 
     /**
-     * Get the filters layout for this table.
-     *
-     * Overridable per resource/widget, same pattern as
-     * getTableRecordActionsPosition() below.
-     */
-    public function getTableFiltersLayout(): FiltersLayout
-    {
-        return FiltersLayout::AboveContent;
-    }
-
-    /**
      * Get table filters form columns.
      */
     public function getTableFiltersFormColumns(): int
@@ -269,14 +246,14 @@ trait HasXotTable
             ->columns($this->layoutView->getTableColumns($tableColumns, $this->getGridTableColumns()))
             ->contentGrid($this->layoutView->getTableContentGrid())
             ->filters($this->resolveTableFilters())
-            ->filtersLayout($this->getTableFiltersLayout())
+            ->filtersLayout(FiltersLayout::AboveContent)
             ->filtersFormColumns($this->getTableFiltersFormColumns())
             ->deferFilters($this->shouldDeferTableFilters())
             ->persistFiltersInSession()
             ->headerActions(array_values($this->resolveTableHeaderActions()))
             ->recordActions(array_values($this->resolveTableActions()))
             ->toolbarActions(array_values($this->resolveTableBulkActions()))
-            ->recordActionsPosition($this->getTableRecordActionsPosition())
+            ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
             ->emptyStateActions(array_values($this->resolveTableEmptyStateActions()))
             ->striped()
             ->paginated($this->getTablePaginated());

@@ -26,7 +26,6 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'filters',
         'filtersLayout',
         'filtersFormColumns',
-        'deferFilters',
         'persistFiltersInSession',
         'headerActions',
         'actions',
