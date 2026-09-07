@@ -61,18 +61,16 @@ trait HasXotFactory
      * @param  array<string, mixed>|callable(array<string, mixed>, Model|null): array<string, mixed>|null  $state
      * @return Factory<static>
      */
-    public static function factory($count = null, $state = []): Factory
+    public static function factory($count = null, $state = [])
     {
-        $factory = static::newFactory();
+        $factory = static::newFactory() ?? Factory::factoryForModel(static::class);
 
         if (is_numeric($count)) {
             $factory = $factory->count((int) $count);
         }
 
         if ($state !== null && $state !== []) {
-            /** @var array<string, mixed>|callable(array<string, mixed>, Model|null): array<string, mixed> $stateArg */
-            $stateArg = $state;
-            $factory = $factory->state($stateArg);
+            $factory = $factory->state($state);
         }
 
         return $factory;
