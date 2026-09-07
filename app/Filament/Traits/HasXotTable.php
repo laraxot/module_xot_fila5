@@ -76,6 +76,18 @@ trait HasXotTable
     }
 
     /**
+     * Get the record actions position for this table.
+     *
+     * Returns the RecordActionsPosition configured for the table,
+     * allowing dynamic positioning of records within the table view.
+     */
+    public function getTableRecordActionsPosition(): RecordActionsPosition
+    {
+        // Default to BeforeColumns if no specific position is configured
+        return RecordActionsPosition::BeforeColumns;
+    }
+
+    /**
      * Get table header actions.
      *
      * CRITICO: Deve essere public perché viene chiamato da Filament/Livewire dall'esterno.
@@ -253,7 +265,7 @@ trait HasXotTable
             ->headerActions(array_values($this->resolveTableHeaderActions()))
             ->recordActions(array_values($this->resolveTableActions()))
             ->toolbarActions(array_values($this->resolveTableBulkActions()))
-            ->recordActionsPosition(RecordActionsPosition::BeforeColumns)
+            ->recordActionsPosition($this->getTableRecordActionsPosition())
             ->emptyStateActions(array_values($this->resolveTableEmptyStateActions()))
             ->striped()
             ->paginated($this->getTablePaginated());
