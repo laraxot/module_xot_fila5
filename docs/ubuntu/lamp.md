@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ext-sqlite3
 ext-zip
 ext-intl
@@ -8,3 +9,6 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt install php8.2 php8.2-cli php8.2-{bz2,curl,mbstring,intl}
 
 ~~~
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fixing Access Level and Parameter Initialization Issues
 
 ## Issue 1: Access Level Mismatch in getTableHeaderActions()
@@ -161,3 +162,12 @@ class QuestionChartAnswersWidget extends XotBaseTableWidget
 - Use PHPStan or similar tools to catch access level violations
 - When in doubt, make methods public in child classes to match parent expectations
 - Document parameter expectations for better maintainability
+=======
+---
+module: theme
+topic: access-level-parameter
+canonical: ../../../Themes/docs/shared-components/access-level-parameter-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/access-level-parameter-fix.md
+>>>>>>> c7fd73eb (.)

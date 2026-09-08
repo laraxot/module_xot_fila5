@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # cleanup-empty-files-auto.sh
 # Rimuove automaticamente file markdown vuoti (NO prompt)
@@ -35,3 +36,12 @@ if [ "$COUNT" -gt 0 ]; then
 else
     echo -e "${GREEN}✅ Nessun file vuoto trovato!${NC}"
 fi
+=======
+---
+module: theme
+topic: cleanup-empty-files-auto
+canonical: ../../../../Themes/docs/shared-components/cleanup-empty-files-auto.sh
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/cleanup-empty-files-auto.sh
+>>>>>>> c7fd73eb (.)

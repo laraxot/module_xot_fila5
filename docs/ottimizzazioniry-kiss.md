@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni DRY + KISS - Modulo Xot
 
 ## Analisi Problematiche Identificate
@@ -204,3 +205,12 @@ DOPO:
 
 ---
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS*
+=======
+---
+module: theme
+topic: ottimizzazioniry-kiss
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-dry-kiss.md
+>>>>>>> c7fd73eb (.)

@@ -4,16 +4,79 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Pages;
 
+<<<<<<< HEAD
 use Filament\Support\Components\Component;
 use Filament\Actions;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord as FilamentEditRecord;
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Resources\Pages\EditRecord as FilamentEditRecord;
+use Filament\Support\Components\Component;
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseEditRecord extends FilamentEditRecord
 {
     use TransTrait;
+
+<<<<<<< HEAD
+    /**
+     * Get the form schema.
+     *
+     * @return array<int, Component>
+     */
+    protected function getFormSchema(): array
+    {
+        return [];
+    }
+
+=======
+>>>>>>> c7fd73eb (.)
+    public static function getNavigationLabel(): string
+    {
+        return static::transFunc(__FUNCTION__);
+    }
+
+    public static function getNavigationIcon(): string
+    {
+        return static::transFunc(__FUNCTION__);
+    }
+
+<<<<<<< HEAD
+    protected function getHeaderActions(): array
+    {
+
+=======
+    public static function canDelete(Model $record): bool
+    {
+        $resource = static::getResource();
+
+        $result = $resource::canDelete($record);
+
+        return is_bool($result) ? $result : false;
+    }
+
+    public static function canForceDelete(Model $record): bool
+    {
+        $resource = static::getResource();
+
+        $result = $resource::canForceDelete($record);
+
+        return is_bool($result) ? $result : false;
+    }
+
+    public static function canRestore(Model $record): bool
+    {
+        $resource = static::getResource();
+
+        $result = $resource::canRestore($record);
+
+        return is_bool($result) ? $result : false;
+    }
 
     /**
      * Get the form schema.
@@ -25,19 +88,14 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
         return [];
     }
 
-    public static function getNavigationLabel(): string
-    {
-        return static::transFunc(__FUNCTION__);
-    }
-
-    public static function getNavigationIcon(): string
-    {
-        return static::transFunc(__FUNCTION__);
-    }
-
+    /**
+     * Get the header actions.
+     *
+     * @return array<string, Action|ActionGroup>
+     */
     protected function getHeaderActions(): array
     {
-
+>>>>>>> c7fd73eb (.)
         return [
             'delete' => DeleteAction::make()
                 ->icon('heroicon-o-trash')
@@ -53,6 +111,7 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
             */
         ];
     }
+<<<<<<< HEAD
 
     public static function canDelete(Model $record): bool
     {
@@ -74,4 +133,6 @@ abstract class XotBaseEditRecord extends FilamentEditRecord
 
         return $resource::canRestore($record);
     }
+=======
+>>>>>>> c7fd73eb (.)
 }

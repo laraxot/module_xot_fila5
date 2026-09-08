@@ -9,7 +9,11 @@ section: content
 
 ### virtual host & Laragon
 
+<<<<<<< HEAD
 Il progetto può utilizzare varie configurazioni, situati dentro la cartella laravel/config.  
+=======
+Il progetto può utilizzare varie configurazioni, situati dentro la cartella laravel/config.
+>>>>>>> c7fd73eb (.)
 
 Crearsi il virtual host con il nome del dominio uguale a quello del file di configurazione. Esempio:
 
@@ -20,12 +24,20 @@ Crearsi il virtual host con il nome del dominio uguale a quello del file di conf
 Noi suggeriamo l'utilizzo di Laragon perchè crea automaticamente i virtual host.
 Dopo aver installato laragon, Assicurarsi di abilitate tutte le estensioni php indicate nella foto
 
+<<<<<<< HEAD
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/php-extentions.png" alt="php extentions" />  
 
 Configurare le preferenze di laragon come in foto
 
 <img class="block m-auto" src="https://laraxot.github.io/module_xot_fila3/assets/img/laragon-config.png" alt="laragon config" />  
 
+=======
+<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/php-extentions.png" alt="php extentions" />
+
+Configurare le preferenze di laragon come in foto
+
+<img class="block m-auto" src="https://laraxot.github.io/module_xot_fila5/assets/img/laragon-config.png" alt="laragon config" />
+>>>>>>> c7fd73eb (.)
 
 Creare una cartella _bases dentro la cartella www, in questa cartella si andrà a clonare il progetto.
 
@@ -38,8 +50,13 @@ git submodule foreach git pull
 
 Verificare che tutti i moduli siano a master
 
+<<<<<<< HEAD
 ### dalla cartella "laravel" creare il file delle variabili d'ambiente .env 
     
+=======
+### dalla cartella "laravel" creare il file delle variabili d'ambiente .env
+
+>>>>>>> c7fd73eb (.)
 ```bash
 cp .env.latest .env
 ```
@@ -53,7 +70,11 @@ cp .env.latest .env
 ../bashscripts/composer_init.sh
 ```
 
+<<<<<<< HEAD
 alternativa: 
+=======
+alternativa:
+>>>>>>> c7fd73eb (.)
 
 ```bash
 composer update
@@ -67,12 +88,20 @@ php artisan key:generate
 alternativa da terminale:
 
 ```bash
+<<<<<<< HEAD
 php artisan module:list 
+=======
+php artisan module:list
+>>>>>>> c7fd73eb (.)
 ```
 
 ### abilitare tutti i moduli con il comando
 
+<<<<<<< HEAD
 Assicurarsi che tutti i moduli siano abilitati  
+=======
+Assicurarsi che tutti i moduli siano abilitati
+>>>>>>> c7fd73eb (.)
 in caso eseguire:
 
 ```bash
@@ -92,6 +121,7 @@ php artisan module:migrate NomeModulo
 ```bash
 npm install
 npm run dev
+<<<<<<< HEAD
 ```  
 
 ### creare la Giunzione
@@ -102,6 +132,18 @@ Per creare la giunzione, andare nella cartella www ed eseguire tramite il prompt
 ```bash
 mklink /j nome_cartella_giuzione path_della_cartella_progetto
 ```  
+=======
+```
+
+### creare la Giunzione
+
+in locale, se utilizzate Laragon, dopo aver clonato il progetto bisogna creare la giunzione nella cartella www.
+Per creare la giunzione, andare nella cartella www ed eseguire tramite il prompt dei comandi
+
+```bash
+mklink /j nome_cartella_giuzione path_della_cartella_progetto
+```
+>>>>>>> c7fd73eb (.)
 
 dopo riavviare il server di laragon.
 
@@ -109,9 +151,15 @@ Fatto ciò, andare nel browser e inserire nell'url http://nome_cartella_giuzione
 
 ### lavorare nel branch dev
 
+<<<<<<< HEAD
 Sia il progetto che ogni singolo modulo hanno un branch dev, generalmente utilizzato per lo sviluppo del progetto.  
 
 nel singolo modulo  
+=======
+Sia il progetto che ogni singolo modulo hanno un branch dev, generalmente utilizzato per lo sviluppo del progetto.
+
+nel singolo modulo
+>>>>>>> c7fd73eb (.)
 
 ```bash
 git branch dev
@@ -120,6 +168,7 @@ git_init.sh dev
 git pull origin dev
 git push origin dev -u
 git merge origin master
+<<<<<<< HEAD
 ```  
 
 dopo aver eseguito  
@@ -148,3 +197,29 @@ se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
 
 ---
 
+=======
+```
+
+dopo aver eseguito
+git branch nome_branch
+git checkout nome_branch
+
+se il branch di un modulo vuole essere pubblicato, eseguire nel modulo
+```bash
+../../../bascripts/git_init.sh nome_branch
+```
+### Versione HEAD
+
+## Collegamenti tra versioni di installation.md
+* [installation.md](../../../xot/project_docs/filament/installation.md)
+* [installation.md](../../../xot/project_docs/installation.md)
+* [installation.md](../../../xot/project_docs/base/installation.md)
+* [installation.md](../../../user/project_docs/installation.md)
+* [installation.md](../../../lang/project_docs/installation.md)
+* [installation.md](../../../cms/project_docs/installation.md)
+* [installation.md](../../../../themes/one/project_docs/installation.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

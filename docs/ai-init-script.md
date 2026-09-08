@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aggiornamento Importante: ai_init.sh Script
 
 ## Problema Risolto
@@ -33,3 +34,12 @@ file .ai .cursor .claude .windsurf .gemini
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
+=======
+---
+module: theme
+topic: ai-init-script
+canonical: ../../../Themes/docs/shared-components/ai-init-script-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ai-init-script-fix.md
+>>>>>>> c7fd73eb (.)

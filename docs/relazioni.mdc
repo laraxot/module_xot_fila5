@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -35,3 +36,11 @@ Le tabelle pivot devono:
 Vedi la documentazione dettagliata in:
 - @Relazione utenti-tearelati
 - @Migrazioni del databarientadutea
+=======
+module: theme
+topic: relazioni
+canonical: ../../../Themes/docs/shared-components/relationships.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/relationships.md
+>>>>>>> c7fd73eb (.)

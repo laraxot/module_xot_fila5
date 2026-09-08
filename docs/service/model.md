@@ -103,7 +103,11 @@ function ($item, $key) use ($methods) {
 + relation instance
 + related model
 + related attributes
+<<<<<<< HEAD
 + name of the relation (user, profile, relatedModelName, ecc) 
+=======
++ name of the relation (user, profile, relatedModelName, ecc)
+>>>>>>> c7fd73eb (.)
 + relationship itself
 
 ```php
@@ -112,7 +116,11 @@ function ($item, $key) use ($methods) {
         if (! \is_string($k)) {
             dddx([$k, $v, $data]);
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $rows = $model->$k();
         $related = null;
         if (\is_object($rows) && method_exists($rows, 'getRelated')) {
@@ -148,7 +156,11 @@ Reads *morph_map* value from the morph_map.php configuration, inside every domai
 ```php
 $models = config('morph_map');
 
+<<<<<<< HEAD
 /* 
+=======
+/*
+>>>>>>> c7fd73eb (.)
 Example
 
 return [
@@ -171,7 +183,11 @@ If it doesn't fine anything it sets $post_type to the **snake case name** of the
 if (false === $post_type) {
     $post_type = snake_case(class_basename($model));
 
+<<<<<<< HEAD
 /*  
+=======
+/*
+>>>>>>> c7fd73eb (.)
 $post_type='press_post'*/
 ```
 
@@ -214,7 +230,11 @@ $profile=PressPost::get()->first();
 ModelService::make()->setModel($profile)->getRelations();
 ```
 
+<<<<<<< HEAD
 * The reflection class is used to get information about the current state of the application. 
+=======
+* The reflection class is used to get information about the current state of the application.
+>>>>>>> c7fd73eb (.)
 * It's called reflection, because it looks at itself, and can tell you information about the program your running, at runtime.
 
 ```php
@@ -238,7 +258,11 @@ Get the method name (inside foreach)
 
 ```php
     $res = $method->getName();
+<<<<<<< HEAD
 ```  
+=======
+```
+>>>>>>> c7fd73eb (.)
 * If the number of required parameters for this methos are Zero
 * If the class of this method is $model
 * If the method's $doc isn't false and strpos has the substring *\\Relations\\*
@@ -253,7 +277,11 @@ if (0 === $method->getNumberOfRequiredParameters() && $method->class === \get_cl
 }
 
 return $relations;
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)
 
 ### Get relationships from *model*
 
@@ -263,7 +291,10 @@ public function getRelationships(): array {
 
 Example
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 ```php
 $profile=PressPost::get()->first();
 ModelService::make()->setModel($profile)->getRelationships();
@@ -272,7 +303,10 @@ ModelService::make()->setModel($profile)->getRelationships();
 * Gets the reflection class from $model
 * Gets the public methods from reflection class, and iterates on themù
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 * If the current function name (getRelationships) is equal to the method name
 * OR If the method has more then 0 parameters
 * OR if the method class name is different then model class name
@@ -291,7 +325,12 @@ foreach ((new ReflectionClass($model))->getMethods(ReflectionMethod::IS_PUBLIC) 
     }
 ```
 ## Collegamenti tra versioni di model.md
+<<<<<<< HEAD
 * [model.md](../../../Xot/docs/model.md)
 * [model.md](../../../Xot/docs/service/model.md)
+=======
+* [model.md](../../../xot/project_docs/model.md)
+* [model.md](../../../xot/project_docs/service/model.md)
+>>>>>>> c7fd73eb (.)
 
 ```

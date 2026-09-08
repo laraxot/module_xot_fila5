@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Spatie\Health\Enums\Status;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Spatie\Health\ResultStores\ResultStore;
 
 class HealthOverviewWidget extends BaseWidget
+=======
+use Filament\Widgets\StatsOverviewWidget\Stat;
+use Spatie\Health\Enums\Status;
+use Spatie\Health\ResultStores\ResultStore;
+
+class HealthOverviewWidget extends XotBaseStatsOverviewWidget
+>>>>>>> c7fd73eb (.)
 {
     public function iconColor(string $status): string
     {
@@ -34,7 +42,11 @@ class HealthOverviewWidget extends BaseWidget
             $label = $result->label;
             $value = $result->shortSummary;
             $stats[] = Stat::make($label, $value)
+<<<<<<< HEAD
                 ->description($result->notificationMessage . ' ' . $result->status)
+=======
+                ->description($result->notificationMessage.' '.$result->status)
+>>>>>>> c7fd73eb (.)
                 // ->descriptionIcon('heroicon-m-arrow-trending-up')
                 ->color($this->iconColor($result->status));
         }

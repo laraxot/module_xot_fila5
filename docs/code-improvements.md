@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Miglioramenti Codice - Best Practices 2026
 
 **Metodologia**: Super Mucca  
@@ -228,3 +229,12 @@ public function processData(array $data): string
 **Status**: 🧘 **IN ANALISI**
 
 **Ultimo aggiornamento**: [DATE]
+=======
+---
+module: theme
+topic: code-improvements
+canonical: ../../../Themes/docs/shared-components/code-improvements-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-improvements-analysis.md
+>>>>>>> c7fd73eb (.)

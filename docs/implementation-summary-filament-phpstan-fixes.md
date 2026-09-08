@@ -128,9 +128,15 @@ This document summarizes the successful implementation of:
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [Filament Class Extension Rules](modules/xot/docs/filament-class-extension-rules.md)
 - [PHPStan Return Type Error Guide](modules/geo/docs/phpstan-return-type-errors.md)
 - [Filament Extension Violations Report](modules/xot/docs/filament_extension_violations.md)
+=======
+- [Filament Class Extension Rules](Modules/Xot/docs/filament-class-extension-rules.md)
+- [PHPStan Return Type Error Guide](Modules/Geo/docs/phpstan-return-type-errors.md)
+- [Filament Extension Violations Report](Modules/Xot/docs/filament_extension_violations.md)
+>>>>>>> c7fd73eb (.)
 
 ---
 

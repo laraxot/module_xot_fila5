@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Case Sensitivity Rules - Xot Module
 
 ## Problema / Problem
@@ -196,3 +197,12 @@ EOF
 - **[DATE]**: Initial documentation and cleanup
   - Removed: `metatagdatatest.php`, `pest.php`, `xotbasecontroller.php`, `pt_br/`
   - Established rules and conventions
+=======
+---
+module: theme
+topic: case-sensitivity
+canonical: ../../../Themes/docs/shared-components/case-sensitivity-rules-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/case-sensitivity-rules-Modules.md
+>>>>>>> c7fd73eb (.)

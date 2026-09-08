@@ -8,11 +8,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 abstract class ApplicationException extends Exception
+=======
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+abstract class ApplicationException extends \Exception
+>>>>>>> c7fd73eb (.)
 {
     abstract public function status(): int;
 

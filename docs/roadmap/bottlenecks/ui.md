@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo UI
 
 ## 1. Performance Re-render (Priorità: Alta)
@@ -171,3 +172,6 @@
 ## Collegamenti tra versioni di ui.md
 * [ui.md](../../../xot/docs/roadmap/bottlenecks/ui.md)
 * [ui.md](../../../ui/docs/ui.md)
+=======
+
+>>>>>>> c7fd73eb (.)

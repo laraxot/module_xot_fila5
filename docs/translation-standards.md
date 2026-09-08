@@ -107,7 +107,11 @@ declare(strict_types=1);
 
 /**
  * Traduzioni per [descrizione]
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> c7fd73eb (.)
  * @package Modules\{ModuleName}\Resources
  */
 
@@ -272,4 +276,8 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025* 
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> c7fd73eb (.)

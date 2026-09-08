@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament in il progetto
 
 ## Panoramica
@@ -187,3 +188,6 @@ class PatientResource extends XotBaseResource
 * [filament.md](../../../job/docs/filament.md)
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
+=======
+
+>>>>>>> c7fd73eb (.)

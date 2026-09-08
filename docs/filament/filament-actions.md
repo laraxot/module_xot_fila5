@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Azioni Filament
 
 ## Best Practices per le Azioni
@@ -105,3 +106,12 @@ Le traduzioni per le azioni devono essere definite nel file di traduzione del mo
 5. Mantenere le azioni semplici e focalizzate
 6. Utilizzare azioni in coda per operazioni pesanti
 7. Fornire feedback appropriati all'utente 
+=======
+---
+module: theme
+topic: filament-actions
+canonical: ../../../../Themes/docs/shared-components/filament-actions.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-actions.md
+>>>>>>> c7fd73eb (.)

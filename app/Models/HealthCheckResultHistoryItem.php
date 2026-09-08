@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
@@ -20,10 +21,25 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property string|null                     $notification_message
  * @property string|null                     $short_summary
  * @property array                           $meta
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
+
+/**
+ * @property int $id
+ * @property string $check_name
+ * @property string $check_label
+ * @property string $status
+ * @property string|null $notification_message
+ * @property string|null $short_summary
+ * @property array<array-key, mixed> $meta
+>>>>>>> c7fd73eb (.)
  * @property string $ended_at
  * @property string $batch
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+<<<<<<< HEAD
  * @method static Builder|HealthCheckResultHistoryItem newModelQuery()
  * @method static Builder|HealthCheckResultHistoryItem newQuery()
  * @method static Builder|HealthCheckResultHistoryItem query()
@@ -43,6 +59,28 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @method static Builder|HealthCheckResultHistoryItem whereCreatedBy($value)
  * @method static Builder|HealthCheckResultHistoryItem whereUpdatedBy($value)
  * @mixin IdeHelperHealthCheckResultHistoryItem
+=======
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+ * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
+ * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()
+ * @method static Builder<static>|HealthCheckResultHistoryItem query()
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereBatch($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereCheckLabel($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereCheckName($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereCreatedAt($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereCreatedBy($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereEndedAt($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereId($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereMeta($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereNotificationMessage($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereShortSummary($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereStatus($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereUpdatedAt($value)
+ * @method static Builder<static>|HealthCheckResultHistoryItem whereUpdatedBy($value)
+ *
+>>>>>>> c7fd73eb (.)
  * @mixin \Eloquent
  */
 class HealthCheckResultHistoryItem extends BaseHealthCheckResultHistoryItem

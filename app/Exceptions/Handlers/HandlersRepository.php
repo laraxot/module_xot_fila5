@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions\Handlers;
 
+<<<<<<< HEAD
 use Throwable;
 use Closure;
 use ReflectionFunction;
 use ReflectionClass;
 
+=======
+>>>>>>> c7fd73eb (.)
 /**
  * The handlers repository.
  */
@@ -16,16 +19,31 @@ class HandlersRepository
 {
     /**
      * The custom handlers reporting exceptions.
+<<<<<<< HEAD
+=======
+     *
+     * @var array<int, callable>
+>>>>>>> c7fd73eb (.)
      */
     protected array $reporters = [];
 
     /**
      * The custom handlers rendering exceptions.
+<<<<<<< HEAD
+=======
+     *
+     * @var array<int, callable>
+>>>>>>> c7fd73eb (.)
      */
     protected array $renderers = [];
 
     /**
      * The custom handlers rendering exceptions in console.
+<<<<<<< HEAD
+=======
+     *
+     * @var array<int, callable>
+>>>>>>> c7fd73eb (.)
      */
     protected array $consoleRenderers = [];
 
@@ -55,40 +73,74 @@ class HandlersRepository
 
     /**
      * Retrieve all reporters handling the given exception.
+<<<<<<< HEAD
      */
     public function getReportersByException(Throwable $e): array
     {
         return array_filter(
             $this->reporters,
             fn(mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+=======
+     *
+     * @return array<int, callable>
+     */
+    public function getReportersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->reporters,
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+>>>>>>> c7fd73eb (.)
         );
     }
 
     /**
      * Retrieve all renderers handling the given exception.
+<<<<<<< HEAD
      */
     public function getRenderersByException(Throwable $e): array
     {
         return array_filter(
             $this->renderers,
             fn(mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+=======
+     *
+     * @return array<int, callable>
+     */
+    public function getRenderersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->renderers,
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+>>>>>>> c7fd73eb (.)
         );
     }
 
     /**
      * Retrieve all console renderers handling the given exception.
+<<<<<<< HEAD
      */
     public function getConsoleRenderersByException(Throwable $e): array
     {
         return array_filter(
             $this->consoleRenderers,
             fn(mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+=======
+     *
+     * @return array<int, callable>
+     */
+    public function getConsoleRenderersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->consoleRenderers,
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+>>>>>>> c7fd73eb (.)
         );
     }
 
     /**
      * Determine whether the given handler can handle the provided exception.
      */
+<<<<<<< HEAD
     protected function handlesException(callable $handler, Throwable $e): bool
     {
         if ($handler instanceof Closure) {
@@ -102,5 +154,29 @@ class HandlersRepository
         }
 
         return ($params[0]->getClass() instanceof ReflectionClass) ? $params[0]->getClass()->isInstance($e) : true;
+=======
+    protected function handlesException(callable $handler, \Throwable $e): bool
+    {
+        if ($handler instanceof \Closure) {
+            $reflection = new \ReflectionFunction($handler);
+        } else {
+            $reflection = new \ReflectionFunction(\Closure::fromCallable($handler));
+        }
+
+        if (! ($params = $reflection->getParameters())) {
+            return false;
+        }
+
+        $type = $params[0]->getType();
+
+        if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
+            return true;
+        }
+
+        $className = $type->getName();
+
+        return (class_exists($className) || interface_exists($className))
+            && (new \ReflectionClass($className))->isInstance($e);
+>>>>>>> c7fd73eb (.)
     }
 }

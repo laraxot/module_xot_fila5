@@ -23,7 +23,15 @@ class SessionResource extends XotBaseResource
 {
     protected static ?string $model = Session::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione
@@ -93,9 +101,15 @@ return [
 ## Collegamenti tra versioni di filament-resources.md
 * [filament-resources.md](docs/tecnico/filament/filament-resources.md)
 * [filament-resources.md](docs/regole/filament-resources.md)
+<<<<<<< HEAD
 * [filament-resources.md](../../../gdpr/docs/filament-resources.md)
 * [filament-resources.md](../../../xot/docs/filament-resources.md)
 * [filament-resources.md](../../../cms/docs/filament-resources.md)
+=======
+* [filament-resources.md](../../../Gdpr/docs/filament-resources.md)
+* [filament-resources.md](../../../Xot/docs/filament-resources.md)
+* [filament-resources.md](../../../Cms/docs/filament-resources.md)
+>>>>>>> c7fd73eb (.)
 
 ### Versione Incoming
 

@@ -97,7 +97,15 @@ final class TeamUserResource extends XotBaseResource
     // protected static \UnitEnum|string|null $navigationGroup = 'Teams';
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Schema del form
@@ -161,6 +169,10 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 - [NavigationLabelTrait](../../app/Filament/Traits/NavigationLabelTrait.php)
 - [HasXotTable Trait](../../app/Filament/Traits/HasXotTable.php)
 - [XotBaseResource](../../app/Filament/Resources/XotBaseResource.php)
+<<<<<<< HEAD
+=======
+- [Regole Traduzioni](../../../Xot/docs/translation-philosophy.md)
+>>>>>>> c7fd73eb (.)
 - [Regole Traduzioni](../../../xot/docs/translation-philosophy.md)
 - [No Table Override](./no-table-override.md)
 
@@ -176,4 +188,8 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
+<<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
+=======
+**Conforme a**: DRY, KISS, Filosofia Laraxot
+>>>>>>> c7fd73eb (.)

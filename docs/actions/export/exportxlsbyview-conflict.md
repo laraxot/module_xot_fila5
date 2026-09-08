@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Risoluzione Conflitto in ExportXlsByView
 
 ## Problema
@@ -28,6 +32,7 @@ public function execute(string $view, array $data, string $filename): BinaryFile
 {
     $html = view($view, $data)->render();
     $tempFile = tempnam(sys_get_temp_dir(), 'xls_');
+<<<<<<< HEAD
     
     if ($tempFile === false) {
         throw new \RuntimeException('Could not create temporary file');
@@ -35,6 +40,15 @@ public function execute(string $view, array $data, string $filename): BinaryFile
     
     file_put_contents($tempFile, $html);
     
+=======
+
+    if ($tempFile === false) {
+        throw new \RuntimeException('Could not create temporary file');
+    }
+
+    file_put_contents($tempFile, $html);
+
+>>>>>>> c7fd73eb (.)
     return response()->download($tempFile, $filename, [
         'Content-Type' => 'application/vnd.ms-excel',
     ])->deleteFileAfterSend(true);

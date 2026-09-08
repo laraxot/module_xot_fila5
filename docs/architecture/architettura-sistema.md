@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architettura del Sistema il progetto
 
 ## Panoramica dell'Architettura
@@ -75,3 +76,6 @@ I moduli Laraxot sono integrati tramite:
 │  └─────────────┘  └─────────────┘  └─────────────────┘  │
 └─────────────────────────────────────────────────────────┘
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

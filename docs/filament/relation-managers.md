@@ -30,9 +30,15 @@ use Filament\Tables\Columns\TextColumn;
 class EsempioRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'nomeRelazione';
+<<<<<<< HEAD
     
     protected static ?string $recordTitleAttribute = 'nome_attributo';
     
+=======
+
+    protected static ?string $recordTitleAttribute = 'nome_attributo';
+
+>>>>>>> c7fd73eb (.)
     // Resto dell'implementazione...
 }
 ```
@@ -118,13 +124,24 @@ Il trait `HasXotTable` fornisce funzionalità aggiuntive per la gestione delle t
 - Formattazione uniforme dei dati
 - Gestione avanzata dei filtri e delle ricerche
 
+<<<<<<< HEAD
+=======
+**⚠️ IMPORTANTE**: `XotBaseRelationManager` **già include** `HasXotTable` (riga 32). **NON aggiungere** `use HasXotTable;` nelle classi che estendono `XotBaseRelationManager` - è **ridondante** e viola il principio DRY!
+
+Vedi [Regole Anti-Ridondanza](./redundancy-rules.md) per maggiori dettagli.
+
+>>>>>>> c7fd73eb (.)
 ## Best Practices
 
 1. **Sempre estendere XotBaseRelationManager**:
    ```php
    // ✅ CORRETTO
    class MioRelationManager extends XotBaseRelationManager
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> c7fd73eb (.)
    // ❌ ERRATO
    class MioRelationManager extends RelationManager
    ```
@@ -138,7 +155,11 @@ Il trait `HasXotTable` fornisce funzionalità aggiuntive per la gestione delle t
    ```php
    TextColumn::make('nome')
        ->label(trans('nomemodulo::relation.fields.nome.label'))
+<<<<<<< HEAD
        
+=======
+
+>>>>>>> c7fd73eb (.)
    // ❌ ERRATO
    TextColumn::make('nome')
        ->label('Nome')
@@ -192,6 +213,13 @@ Per garantire la compatibilità con PHPStan livello 9, assicurarsi di:
 
 ## Collegamenti alla Documentazione Correlata
 
+<<<<<<< HEAD
+=======
+- [Filament Resources](/laravel/modules/xot/docs/filament/resources.md)
+- [HasXotTable Trait](/laravel/modules/xot/docs/filament/xot_table.md)
+- [Regole di Traduzione](/laravel/modules/xot/docs/translation_rules.md)
+
+>>>>>>> c7fd73eb (.)
 - [Filament Resources](/laravel/Modules/Xot/docs/filament/resources.md)
 - [HasXotTable Trait](/laravel/Modules/Xot/docs/filament/xot_table.md)
 - [Regole di Traduzione](/laravel/Modules/Xot/docs/translation_rules.md)

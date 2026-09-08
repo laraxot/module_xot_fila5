@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi PHPMD - Tutti i Moduli
 
 **Strumento**: PHPMD (PHP Mess Detector)
@@ -32,3 +33,12 @@ I warning PHPMD sono spesso informativi e non bloccanti. Focus su:
 - Problemi che possono causare bug
 - Code smells che impattano manutenibilità
 - Pattern che violano principi SOLID
+=======
+---
+module: theme
+topic: phpmd
+canonical: ../../../Themes/docs/shared-components/phpmd-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-analysis-Modules.md
+>>>>>>> c7fd73eb (.)

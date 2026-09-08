@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Xot Module Roadmap (2025 Q4)
 
 ## Vision & Scope
@@ -30,3 +31,12 @@
 
 ## Acceptance Criteria
 - All modules compile against Xot contracts without overrides
+=======
+---
+module: theme
+topic: roadmap
+canonical: ../../../../Themes/docs/shared-components/q4-roadmap-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/q4-roadmap-Modules.md
+>>>>>>> c7fd73eb (.)

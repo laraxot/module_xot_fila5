@@ -20,7 +20,11 @@ class Patient extends BaseModel
      */
     public static array $attachments = [
         'health_card',
+<<<<<<< HEAD
         'identity_document', 
+=======
+        'identity_document',
+>>>>>>> c7fd73eb (.)
         'isee_certificate',
         'pregnancy_certificate'
     ];
@@ -36,7 +40,11 @@ public static function getAttachmentsSchema(bool $multiple=true): array
     $attachments = $model::$attachments;
     $uuid = Str::uuid()->toString();
     $schema = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     foreach ($attachments as $attachment) {
         $schema[] = Forms\Components\FileUpload::make($attachment)
             ->disk('local')
@@ -49,13 +57,21 @@ public static function getAttachmentsSchema(bool $multiple=true): array
             ->columnSpanFull()
             ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment, $multiple) {
                 if (!$state) return;
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
                 // Normalizza sempre come array per consistenza
                 $files = is_array($state) ? $state : [$state];
                 $sessionId = session()->getId();
                 $sessionDir = "session-uploads/{$sessionId}";
                 $sessionFiles = [];
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
                 foreach ($files as $file) {
                     if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile) {
                         // Nuovo file caricato
@@ -67,13 +83,21 @@ public static function getAttachmentsSchema(bool $multiple=true): array
                         $sessionFiles[] = $file;
                     }
                 }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
                 // Imposta il valore corretto nel form
                 $finalValue = $multiple ? $sessionFiles : ($sessionFiles[0] ?? null);
                 $set($attachment, $finalValue);
             });
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     return $schema;
 }
 ```
@@ -135,7 +159,11 @@ if ($file instanceof \Livewire\Features\SupportFileUploads\TemporaryUploadedFile
 // ✅ Gestione graceful degli errori
 ->afterStateUpdated(function ($state, Forms\Set $set) use ($attachment, $multiple) {
     if (!$state) return;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     try {
         // Logica di gestione file
     } catch (\Exception $e) {
@@ -197,10 +225,17 @@ class FileUploadTest extends TestCase
     public function it_handles_single_file_upload()
     {
         $file = UploadedFile::fake()->create('test.pdf', 1024);
+<<<<<<< HEAD
         
         // Test logic
     }
     
+=======
+
+        // Test logic
+    }
+
+>>>>>>> c7fd73eb (.)
     /** @test */
     public function it_handles_multiple_files_upload()
     {
@@ -208,15 +243,26 @@ class FileUploadTest extends TestCase
             UploadedFile::fake()->create('test1.pdf', 1024),
             UploadedFile::fake()->create('test2.pdf', 1024)
         ];
+<<<<<<< HEAD
         
         // Test logic
     }
     
+=======
+
+        // Test logic
+    }
+
+>>>>>>> c7fd73eb (.)
     /** @test */
     public function it_validates_file_types()
     {
         $invalidFile = UploadedFile::fake()->create('test.exe', 1024);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         // Test validation
     }
 }
@@ -232,7 +278,11 @@ class RegistrationWidgetTest extends TestCase
     {
         // Test file persistence across steps
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     /** @test */
     public function it_handles_session_expiry()
     {
@@ -268,9 +318,15 @@ class RegistrationWidgetTest extends TestCase
 
 ```php
 ->acceptedFileTypes([
+<<<<<<< HEAD
     'application/pdf', 
     'image/jpeg', 
     'image/png', 
+=======
+    'application/pdf',
+    'image/jpeg',
+    'image/png',
+>>>>>>> c7fd73eb (.)
     'image/jpg'
 ])
 ```
@@ -347,4 +403,8 @@ class CleanupTemporaryFilesJob extends Job
 - [docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Modules/User/docs/registration-widget.md](../../User/docs/registration-widget.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-03* 
+=======
+*Ultimo aggiornamento: 2025-01-03*
+>>>>>>> c7fd73eb (.)

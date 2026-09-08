@@ -75,13 +75,21 @@ class IndividualePesi extends XotBaseModel
 {
     protected $connection = 'performance';
     protected $table = 'peso_performance_individuale';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     protected $fillable = [
         'type',
         'lista_propro',
         // ...
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     protected $casts = [
         'type' => WorkerType::class,
         // ...
@@ -101,12 +109,20 @@ use Modules\Performance\Models\IndividualePesi;
 class IndividualePesiResource extends Resource
 {
     protected static ?string $model = IndividualePesi::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public static function getNavigationGroup(): ?string
     {
         return __('Performance');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // ...
 }
 ```
@@ -122,7 +138,11 @@ use Spatie\QueueableAction\QueueableAction;
 class CalculatePerformanceScoreAction
 {
     use QueueableAction;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function execute(IndividualePesi $pesi): float
     {
         // Implementazione
@@ -208,4 +228,8 @@ try {
     ]);
     throw $e;
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

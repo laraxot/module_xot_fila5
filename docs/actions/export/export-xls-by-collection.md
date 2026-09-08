@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ExportXlsByCollection
 
 Questa action è responsabile dell'esportazione di collezioni di dati in formato Excel (XLSX). Supporta sia l'utilizzo di Maatwebsite/Excel che PhpSpreadsheet direttamente.
@@ -107,3 +108,6 @@ $filePath = $action->executeWithSpreadsheet(
 - Utilizza strict typing per maggiore sicurezza
 - Implementa QueueableAction per supporto asincrono
 - Gestisce automaticamente la conversione dei tipi di campo
+=======
+
+>>>>>>> c7fd73eb (.)

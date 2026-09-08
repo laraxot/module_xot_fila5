@@ -30,10 +30,14 @@ class ViewDatabaseConfigCommand extends Command
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
      *
      * @return void
      */
     
+=======
+     */
+>>>>>>> c7fd73eb (.)
 
     /**
      * Execute the console command.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Filter Relations Action
 description: Filter Relations Model with Queuable Action
@@ -94,4 +95,6 @@ function ($item) use ($model) {
 return $res;
 ```
 
+=======
+>>>>>>> c7fd73eb (.)
 

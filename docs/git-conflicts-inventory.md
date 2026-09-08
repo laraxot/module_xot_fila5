@@ -55,5 +55,9 @@
 
 ## Stato
 - ❌ Conflitti da risolvere
+<<<<<<< HEAD
 - 📅 Data rilevamento: [DATE]
+=======
+- 📅 Data rilevamento: 2025-11-12
+>>>>>>> c7fd73eb (.)
 - 🔄 Priorità: ALTA - File critici del core framework

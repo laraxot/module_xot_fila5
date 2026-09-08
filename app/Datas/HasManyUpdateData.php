@@ -10,7 +10,11 @@ use Spatie\LaravelData\Data;
 class HasManyUpdateData extends Data
 {
     /**
+<<<<<<< HEAD
      * @param array<int|string> $ids
+=======
+     * @param  array<int|string>  $ids
+>>>>>>> c7fd73eb (.)
      */
     public function __construct(
         public string $foreignKey,

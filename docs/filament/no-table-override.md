@@ -35,7 +35,11 @@ use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 class EsempioRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'nomeRelazione';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     /**
      * @return array<int, \Filament\Tables\Columns\Column>
      */
@@ -45,7 +49,11 @@ class EsempioRelationManager extends XotBaseRelationManager
             // Definizione delle colonne
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     /**
      * @return array<string, \Filament\Tables\Actions\Action>
      */
@@ -55,7 +63,11 @@ class EsempioRelationManager extends XotBaseRelationManager
             // Definizione delle azioni nell'header
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     /**
      * @return array<string, \Filament\Tables\Actions\Action>
      */
@@ -65,7 +77,11 @@ class EsempioRelationManager extends XotBaseRelationManager
             // Definizione delle azioni per riga
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     /**
      * @return array<string, \Filament\Tables\Actions\BulkAction>
      */
@@ -93,7 +109,11 @@ use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 class EsempioRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'nomeRelazione';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // ❌ GRAVEMENTE ERRATO - MAI IMPLEMENTARE QUESTO METODO
     public function table(Table $table): Table
     {
@@ -132,4 +152,10 @@ Se trovi un `RelationManager` che implementa il metodo `table()`:
 - [Divieto di usare label(), placeholder() e helperText()](/laravel/Modules/Xot/docs/filament/no_labels.md)
 - [Esempio TeamsRelationManager](/laravel/Modules/User/docs/filament/teams_relation_manager.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+*Ultimo aggiornamento: 3 Giugno 2025*
+- [Divieto di usare label(), placeholder() e helperText()](/laravel/modules/xot/docs/filament/no_labels.md)
+- [Esempio TeamsRelationManager](/laravel/modules/user/docs/filament/teams_relation_manager.md)
+>>>>>>> c7fd73eb (.)

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions\Formatters;
 
+<<<<<<< HEAD
 use Throwable;
 use Illuminate\Support\Facades\Auth;
 
@@ -12,6 +13,18 @@ class WebhookErrorFormatter
     public function __construct(
         private Throwable $exception,
     ) {}
+=======
+use Illuminate\Support\Facades\Auth;
+
+use function Safe\json_encode;
+
+class WebhookErrorFormatter
+{
+    public function __construct(
+        private \Throwable $exception,
+    ) {
+    }
+>>>>>>> c7fd73eb (.)
 
     /**
      * @return array<string, mixed>

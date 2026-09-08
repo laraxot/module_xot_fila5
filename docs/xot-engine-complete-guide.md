@@ -232,7 +232,15 @@ abstract class XotBaseResource extends Resource
     /**
      * Get form schema con validation automatica
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Schema base automatico
@@ -502,5 +510,9 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 ---
 
 *Documentazione Xot v1.0*
+<<<<<<< HEAD
 *Creato: [DATE]*
+=======
+*Creato: 2025-11-17*
+>>>>>>> c7fd73eb (.)
 *Autore: AI Assistant con analisi approfondita*

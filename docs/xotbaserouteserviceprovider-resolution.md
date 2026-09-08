@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione conflitto XotBaseRouteServiceProvider.php
 
 ## Problema
@@ -24,3 +25,12 @@ Il file conteneva marker di conflitto git  all'interno del metodo `boot()`, con 
 
 ## Collegamento alla doc root
 Vedi `/docs/xot_conflict_links.md` per la mappatura dei file documentati localmente e i riferimenti incrociati.
+=======
+---
+module: theme
+topic: xotbaserouteserviceprovider-resolution
+canonical: ../../../Themes/docs/shared-components/xotbaserouteserviceprovider-conflict-resolution.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xotbaserouteserviceprovider-conflict-resolution.md
+>>>>>>> c7fd73eb (.)

@@ -280,7 +280,11 @@ quality-check:
 
 ---
 
+<<<<<<< HEAD
 **Creato**: [DATE]
+=======
+**Creato**: 2025-01-29
+>>>>>>> c7fd73eb (.)
 **Tipo**: Regola Quality Gate Obbligatoria
 **Applicazione**: Ogni modifica file
 **Severità**: 🔴 CRITICA

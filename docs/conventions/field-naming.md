@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni Naming Campi Database
 
 ## Regole Fondamentali
@@ -156,3 +157,6 @@ public static function form(Form $form): Form
 - [Database Schema Guidelines](../database/schema.md)
 - [Internationalization Guide](../i18n/guide.md)
 - [GDPR Compliance](../gdpr/compliance.md)
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -1,5 +1,17 @@
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
+<<<<<<< HEAD
+=======
+## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)
+
+**Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
+
+### Correzioni Applicate
+- ✅ `Console/Commands/SearchTextInDbCommand.php` - sostituito con `isset()`
+- ✅ `Filament/Support/ColumnBuilder.php` - sostituito con `isset()` (3 occorrenze)
+- ✅ PHPDoc generati automaticamente per tutti i modelli con `php artisan ide-helper:models`
+
+>>>>>>> c7fd73eb (.)
 ## ⚠️ Regola Critica: property_exists() VIETATO
 
 **Nel modulo Xot e in tutti i moduli che lo estendono, MAI utilizzare `property_exists()` con modelli Eloquent o oggetti che implementano `__get()`/`__set()`.**
@@ -137,11 +149,19 @@ public function getDisplayName(): string
     if (isset($this->full_name) && $this->full_name) {
         return $this->full_name;
     }
+<<<<<<< HEAD
     
     if (isset($this->first_name) && $this->first_name) {
         return $this->first_name;
     }
     
+=======
+
+    if (isset($this->first_name) && $this->first_name) {
+        return $this->first_name;
+    }
+
+>>>>>>> c7fd73eb (.)
     return 'Utente';
 }
 ```
@@ -154,7 +174,11 @@ public function getScore(): float
     if (isset($this->calculated_score) && $this->calculated_score) {
         return $this->calculated_score;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     return 0.0;
 }
 ```
@@ -167,7 +191,11 @@ public function getStatus(): string
     if (isset($this->current_status) && $this->current_status) {
         return $this->current_status;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     return 'pending';
 }
 ```
@@ -177,7 +205,11 @@ public function getStatus(): string
 Tutti i file devono passare la validazione PHPStan livello 9+:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/ptvx/laravel
+=======
+cd laravel
+>>>>>>> c7fd73eb (.)
 ./vendor/bin/phpstan analyze Modules --level=9
 ```
 

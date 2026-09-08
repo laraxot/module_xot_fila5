@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo Analisi Qualità Codice Completa
 
 **Strumenti Utilizzati**: PHPStan (max), PHPMD, PHPInsights, Pint
@@ -78,3 +79,12 @@
 - **PHPMD**: Solo warning critici corretti (codice morto)
 - **PHPInsights**: Score eccellenti, issue minori accettabili
 - **Qualità**: Codicebase in ottimo stato, qualità eccellente
+=======
+---
+module: theme
+topic: quality
+canonical: ../../../Themes/docs/shared-components/quality-analysis-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-analysis-sumy.md
+>>>>>>> c7fd73eb (.)

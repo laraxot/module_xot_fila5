@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Metodi Duplicati - Modulo Xot
 
 ## 🐄✨ Riferimenti Principali
@@ -332,3 +333,12 @@ Se l'unificazione viene implementata correttamente:
 
 **Stato:** 📋 Draft per Review
 **Responsabile:** Team Xot Core
+=======
+---
+module: theme
+topic: analisi-metodiuplicati
+canonical: ../../../Themes/docs/shared-components/analisi-metodi-duplicati.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/analisi-metodi-duplicati.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Censimento File con Marker
 
 > **Ultimo aggiornamento**: Novembre 2025
@@ -79,3 +80,12 @@ Aggiornare questa sezione (o il changelog del modulo) man mano che i file vengon
 - Per i documenti, rispettare convenzioni naming (lowercase, niente date nel filename)
 - Documentare eventuali decisioni o esclusioni (es. backup da archiviare)
 - Mantenere copia “prima/dopo” se i contenuti hanno valore storico
+=======
+---
+module: theme
+topic: merges-census
+canonical: ../../../Themes/docs/shared-components/merge-conflicts-census.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-census.md
+>>>>>>> c7fd73eb (.)

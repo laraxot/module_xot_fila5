@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Fondamentali per i Metodi Filament - Aggiornamento
 
 ## Tipizzazione Corretta degli Array - Distinzione per Contesto
@@ -86,3 +87,12 @@ if (property_exists($model, 'name')) { }
 // ✅ CORRETTO
 if (isset($model->name)) { }
 ```
+=======
+---
+module: theme
+topic: filament-array-typing
+canonical: ../../../Themes/docs/shared-components/filament-array-typing-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-array-typing-rules.md
+>>>>>>> c7fd73eb (.)

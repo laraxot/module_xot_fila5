@@ -6,6 +6,10 @@ namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
 use Modules\Xot\Actions\File\GetComponentsAction;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Datas\ComponentFileData;
+>>>>>>> c7fd73eb (.)
 
 class AnalyzeComponentsCommand extends Command
 {
@@ -39,13 +43,19 @@ class AnalyzeComponentsCommand extends Command
 
         // Type-safe module handling
         $moduleStr = is_string($module) ? $module : '';
+<<<<<<< HEAD
         $path = $moduleStr !== '' ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
         $namespace = $moduleStr !== '' ? "Modules\\{$moduleStr}" : 'Modules';
+=======
+        $path = '' !== $moduleStr ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
+        $namespace = '' !== $moduleStr ? "Modules\\{$moduleStr}" : 'Modules';
+>>>>>>> c7fd73eb (.)
 
         $components = $getComponentsAction->execute($path, $namespace, $prefix, $force);
 
         $this->table(
             ['Componente', 'Tipo', 'Modulo', 'Path'],
+<<<<<<< HEAD
             collect($components)->map(function ($component) {
                 // Type-safe component access
                 if (! is_array($component)) {
@@ -57,6 +67,14 @@ class AnalyzeComponentsCommand extends Command
                     $component['type'] ?? 'N/A',
                     $component['module'] ?? 'N/A',
                     $component['path'] ?? 'N/A',
+=======
+            collect($components)->map(static function (ComponentFileData $component): array {
+                return [
+                    $component->name,
+                    $component->class,
+                    $component->module ?? 'N/A',
+                    $component->path ?? 'N/A',
+>>>>>>> c7fd73eb (.)
                 ];
             })
         );

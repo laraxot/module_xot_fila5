@@ -24,7 +24,11 @@ Sono state identificate tre principali versioni in conflitto:
 - Validazione standard senza eccezioni personalizzate
 
 ### Versione 2 (Intermedia)
+<<<<<<< HEAD
 - Implementazione con controlli aggiuntivi 
+=======
+- Implementazione con controlli aggiuntivi
+>>>>>>> c7fd73eb (.)
 - Eccezioni personalizzate per la validazione
 
 ### Versione 3 (Più recente)
@@ -133,7 +137,11 @@ trait SushiToJsons
                 File::put($file, $content);
             }
         );
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         /*
          * Aggiornamento del modello.
          */
@@ -146,7 +154,11 @@ trait SushiToJsons
                 File::put($file, $content);
             }
         );
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         /*
          * Eliminazione del modello.
          */
@@ -173,4 +185,9 @@ trait SushiToJsons
 ## Collegamenti Bidirezionali
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
+<<<<<<< HEAD
 - [Documentazione modulo Tenant](../../Tenant/docs/risoluzione_conflitti.md) 
+=======
+- [Documentazione modulo Tenant](../../Tenant/docs/risoluzione_conflitti.md)
+- [Documentazione modulo Tenant](../../tenant/docs/risoluzione_conflitti.md)
+>>>>>>> c7fd73eb (.)

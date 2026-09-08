@@ -242,7 +242,15 @@ class MioModelloResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -711,6 +719,10 @@ public function createModel(array $data): MioModello
 
 ## 🔗 **Collegamenti e Riferimenti**
 
+<<<<<<< HEAD
+=======
+- [**README.md**](README.md) - Documentazione principale del modulo
+>>>>>>> c7fd73eb (.)
 - [**README.md**](readme.md) - Documentazione principale del modulo
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Best Practices Globali**](../project_docs/best-practices.md) - Best practices globali
@@ -765,4 +777,8 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> c7fd73eb (.)

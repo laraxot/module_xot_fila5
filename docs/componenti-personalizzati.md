@@ -22,14 +22,27 @@ class ClienteResource extends XotBaseResource
     protected static ?string $model = Cliente::class;
     protected static ?string $navigationIcon = 'heroicon-o-users';
     protected static ?string $cluster = ClienteCluster::class;
+<<<<<<< HEAD
     
     public static function getFormSchema(): array
+=======
+
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Schema del form
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public static function table(Table $table): Table
     {
         return $table
@@ -60,12 +73,20 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 class CreateCliente extends XotBaseCreateRecord
 {
     protected static string $resource = ClienteResource::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function getFormSchema(): array
     {
         return parent::getFormSchema();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Opzionale
     protected function getFormDefaults(): array
     {
@@ -74,7 +95,11 @@ class CreateCliente extends XotBaseCreateRecord
             // Altri valori predefiniti
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Necessario anche se vuoto
     public function fillForm(): void
     {
@@ -100,12 +125,20 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 class EditCliente extends XotBaseEditRecord
 {
     protected static string $resource = ClienteResource::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function getFormSchema(): array
     {
         return parent::getFormSchema();
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Necessario per il ciclo di vita
     public function fillForm(): void
     {
@@ -131,7 +164,11 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListClienti extends XotBaseListRecords
 {
     protected static string $resource = ClienteResource::class;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Personalizzazioni...
 }
 ```
@@ -150,9 +187,15 @@ use Filament\Clusters\Cluster;
 class ClienteCluster extends Cluster
 {
     protected static ?string $navigationIcon = 'heroicon-o-users';
+<<<<<<< HEAD
     
     protected static ?int $navigationSort = 1;
     
+=======
+
+    protected static ?int $navigationSort = 1;
+
+>>>>>>> c7fd73eb (.)
     public static function getNavigationLabel(): string
     {
         return trans('broker::cliente.cluster.navigation_label');

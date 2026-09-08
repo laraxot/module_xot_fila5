@@ -1,5 +1,9 @@
 # Analisi Metodi Duplicati - Modulo Xot
 
+<<<<<<< HEAD
+=======
+**Data Generazione**: 2025-10-15 06:41:17
+>>>>>>> c7fd73eb (.)
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo

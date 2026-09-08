@@ -7,12 +7,26 @@ return [
         'authenticate' => [
             'label' => 'authenticate',
             'icon' => 'ui-authenticate',
+<<<<<<< HEAD
         ],
         'login' => [
             'label' => 'login',
         ],
         'request' => [
             'label' => 'request',
+=======
+            'tooltip' => 'authenticate',
+        ],
+        'login' => [
+            'label' => 'login',
+            'tooltip' => 'login',
+            'icon' => 'login',
+        ],
+        'request' => [
+            'label' => 'request',
+            'tooltip' => 'request',
+            'icon' => 'request',
+>>>>>>> c7fd73eb (.)
         ],
         'activeLocale' => [
             'label' => 'activeLocale',
@@ -35,10 +49,18 @@ return [
         'hidePassword' => [
             'icon' => 'hidePassword',
             'label' => 'hidePassword',
+<<<<<<< HEAD
+=======
+            'tooltip' => 'hidePassword',
+>>>>>>> c7fd73eb (.)
         ],
         'showPassword' => [
             'icon' => 'ui-showPassword',
             'label' => 'showPassword',
+<<<<<<< HEAD
+=======
+            'tooltip' => 'showPassword',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'fields' => [
@@ -47,27 +69,49 @@ return [
             'description' => 'email',
             'helper_text' => '',
             'placeholder' => 'email',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'password' => [
             'label' => 'password',
             'description' => 'password',
             'helper_text' => '',
             'placeholder' => 'password',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'cap' => [
             'description' => 'cap',
             'helper_text' => 'cap',
             'placeholder' => 'cap',
             'label' => 'cap',
+<<<<<<< HEAD
         ],
         'city' => [
             'description' => 'city',
+=======
+            'tooltip' => '',
+        ],
+        'city' => [
+            'description' => 'city',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -254,12 +298,23 @@ return [
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
             'helper_text' => 'itemIsDefault',
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'zeusData' => [
             1 => [
@@ -286,138 +341,233 @@ return [
                 'placeholder' => 'zeusData.4',
                 'label' => 'zeusData.4',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
             'helper_text' => 'user_id',
             'description' => 'user_id',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
             'helper_text' => 'name',
             'description' => 'name',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
             'helper_text' => 'slug',
             'description' => 'slug',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
             'helper_text' => 'category_id',
             'description' => 'category_id',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
             'helper_text' => 'description',
             'description' => 'description',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
             'helper_text' => 'details',
             'description' => 'details',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
             'helper_text' => 'is_active',
             'description' => 'is_active',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'ordering' => [
             'label' => 'ordering',
             'placeholder' => 'ordering',
             'helper_text' => 'ordering',
             'description' => 'ordering',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'start_date' => [
             'label' => 'start_date',
             'placeholder' => 'start_date',
             'helper_text' => 'start_date',
             'description' => 'start_date',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'end_date' => [
             'label' => 'end_date',
             'placeholder' => 'end_date',
             'helper_text' => 'end_date',
             'description' => 'end_date',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'extensions' => [
             'label' => 'extensions',
             'placeholder' => 'extensions',
             'helper_text' => 'extensions',
             'description' => 'extensions',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'sections' => [
             'label' => 'sections',
             'placeholder' => 'sections',
             'helper_text' => 'sections',
             'description' => 'sections',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
             'helper_text' => 'fields',
             'description' => 'fields',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'type' => [
             'label' => 'type',
             'placeholder' => 'type',
             'helper_text' => 'type',
             'description' => 'type',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'compact' => [
             'label' => 'compact',
             'placeholder' => 'compact',
             'helper_text' => 'compact',
             'description' => 'compact',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'aside' => [
             'label' => 'aside',
             'placeholder' => 'aside',
             'helper_text' => 'aside',
             'description' => 'aside',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'borderless' => [
             'label' => 'borderless',
             'placeholder' => 'borderless',
             'helper_text' => 'borderless',
             'description' => 'borderless',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
             'helper_text' => 'icon',
             'description' => 'icon',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'columns' => [
             'label' => 'columns',
             'placeholder' => 'columns',
             'helper_text' => 'columns',
             'description' => 'columns',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'itemKey' => [
             'description' => 'itemKey',
             'helper_text' => 'itemKey',
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'values' => [
             'label' => 'values',
             'placeholder' => 'values',
             'helper_text' => 'values',
             'description' => 'values',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'itemValue' => [
             'label' => 'itemValue',
             'placeholder' => 'itemValue',
             'helper_text' => 'itemValue',
             'description' => 'itemValue',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'steps' => [
@@ -425,4 +575,20 @@ return [
             'label' => 'Credenziali',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Set Default Tenant For Urls',
+    'plural_label' => 'Set Default Tenant For Urls (Plurale)',
+    'navigation' => [
+        'name' => 'Set Default Tenant For Urls',
+        'plural' => 'Set Default Tenant For Urls',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Set Default Tenant For Urls',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+>>>>>>> c7fd73eb (.)
 ];

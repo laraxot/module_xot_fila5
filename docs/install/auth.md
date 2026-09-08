@@ -3,8 +3,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     /*
     |--------------------------------------------------------------------------
@@ -109,6 +112,7 @@ return [
     ],
 ];
 
+<<<<<<< HEAD
 
 ~~~
 ### Versione HEAD
@@ -125,3 +129,16 @@ return [
 
 ---
 
+=======
+~~~
+### Versione HEAD
+
+## Collegamenti tra versioni di auth.md
+* [auth.md](../../../xot/project_docs/install/auth.md)
+* [auth.md](../../../user/project_docs/lang/en/auth.md)
+* [auth.md](../../../tenant/project_docs/it/config/auth.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

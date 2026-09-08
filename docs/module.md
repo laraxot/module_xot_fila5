@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Xot Module - Comprehensive Analysis
 
 ## Module Overview
@@ -70,3 +71,12 @@ Xot provides the foundational architecture that enables LimeSurvey integration t
 - Improved caching strategies
 - Advanced testing patterns
 - More comprehensive API documentation
+=======
+---
+module: theme
+topic: module
+canonical: ../../../Themes/docs/shared-components/module-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-analysis-Modules.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali
@@ -214,3 +215,12 @@
 **Completato**: [DATE]
 **Durata refactor**: 15 minuti
 **Impatto**: TRASFORMATIVO
+=======
+---
+module: theme
+topic: refactorry-kiss
+canonical: ../../../Themes/docs/shared-components/refactor-dry-kiss-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-sumy.md
+>>>>>>> c7fd73eb (.)

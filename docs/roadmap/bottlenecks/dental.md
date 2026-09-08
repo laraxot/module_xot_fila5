@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Dental
 
 ## 1. Odontogramma Performance (Priorità: Alta)
@@ -213,3 +214,6 @@
 * [dental.md](docs/moduli/dental.md)
 * [dental.md](docs/roadmap/moduli/dental.md)
 * [dental.md](../../../xot/docs/roadmap/bottlenecks/dental.md)
+=======
+
+>>>>>>> c7fd73eb (.)

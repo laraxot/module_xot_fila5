@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 
+=======
+---
+module: theme
+topic: datatables
+canonical: ../../../Themes/docs/shared-components/DataTables.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/DataTables.txt
+>>>>>>> c7fd73eb (.)

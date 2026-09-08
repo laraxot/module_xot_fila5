@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazioni Super DRY + KISS - Modulo Xot
 
 ## 🎯 Panoramica
@@ -302,3 +303,12 @@ class ExampleService implements ServiceInterface
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 **Priorità:** ALTA
+=======
+---
+module: theme
+topic: ottimizzazioni-superry-kiss
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
+>>>>>>> c7fd73eb (.)

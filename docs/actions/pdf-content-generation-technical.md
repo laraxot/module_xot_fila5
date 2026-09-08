@@ -501,6 +501,11 @@ try {
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
+=======
+- [Ptv - SendMailByRecord Complete Guide](../../../Ptv/docs/pdf-email-attachments-complete-guide.md)
+- [Notify - Email Attachments](../../../Notify/docs/email-sending/attachments_usage.md)
+>>>>>>> c7fd73eb (.)
 - [Ptv - SendMailByRecord Complete Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Notify - Email Attachments](../../../notify/docs/email-sending/attachments_usage.md)
 - [Xot - View Conventions](../conventions/view-naming.md)
@@ -519,4 +524,8 @@ try {
 **Ultimo aggiornamento:** 2025-01-22
 **Versione:** 1.0
 **Stato:** ✅ Production Ready
+<<<<<<< HEAD
 **PHPStan Level:** 10
+=======
+**PHPStan Level:** 10
+>>>>>>> c7fd73eb (.)

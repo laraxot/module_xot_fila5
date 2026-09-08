@@ -24,7 +24,11 @@
 
 ### 4. Documentazione Creata
 - ✅ `code-improvements-analysis-[DATE].md` - Analisi miglioramenti
+<<<<<<< HEAD
 - ✅ `super-mucca-methodology-2026.md` - Guida metodologia completa
+=======
+- ✅ `super-mucca-methodology.md` - Guida metodologia completa
+>>>>>>> c7fd73eb (.)
 - ✅ `readme-consolidation-plan.md` - Piano consolidamento
 - ✅ `improvements-summary-[DATE].md` - Questo documento
 
@@ -131,7 +135,11 @@ public function getUpcomingEvents(): Collection
 ## 🔗 Documentazione Correlata
 
 - [Code Improvements Analysis](./code-improvements-analysis-[date].md)
+<<<<<<< HEAD
 - [Super Mucca Methodology](./super-mucca-methodology-2026.md)
+=======
+- [Super Mucca Methodology](./super-mucca-methodology.md)
+>>>>>>> c7fd73eb (.)
 - [Readme Consolidation Plan](./readme-consolidation-plan.md)
 
 ---

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Migration Complete Guide - Consolidated
 
 ## Overview
@@ -20,3 +21,12 @@ Guida completa consolidata per le migrazioni in Laraxot.
 
 ## Links
 - [Original Files Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)
+=======
+---
+module: theme
+topic: migration-complete-guide
+canonical: ../../../../Themes/docs/shared-components/migration-complete-guide.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/migration-complete-guide.md
+>>>>>>> c7fd73eb (.)

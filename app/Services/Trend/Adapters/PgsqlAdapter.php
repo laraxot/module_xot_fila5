@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Trend\Adapters;
 
+<<<<<<< HEAD
 use Override;
 use Error;
+=======
+use Error;
+use Override;
+>>>>>>> c7fd73eb (.)
 
 class PgsqlAdapter extends AbstractAdapter
 {

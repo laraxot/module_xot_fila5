@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Critiche per Filament Resources - Laraxot PTVX
 
 ## ⚠️ ERRORI GRAVI DA EVITARE ASSOLUTAMENTE
@@ -291,3 +292,14 @@ class IntegparamResource extends XotBaseResource
 **Soluzione**: Rimuovere i metodi non necessari
 
 *Ultimo aggiornamento: 5 giugno 2025* 
+=======
+---
+module: Xot
+topic: filament-resource-rules
+canonical: ../filament-resource-rules.md
+---
+
+Documentazione canonica: [filament-resource-rules.md](../filament-resource-rules.md)
+
+Regole `getPages()`: [getpages-redundancy-rule.md](./getpages-redundancy-rule.md)
+>>>>>>> c7fd73eb (.)

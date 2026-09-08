@@ -283,7 +283,11 @@ OBIETTIVO DRASTICO: ~50 file (-90%)
 
 ELIMINAZIONI IMMEDIATE:
 - Tutti file underscore variants (~150 file)
+<<<<<<< HEAD
 - Intera cartella _integration/ (~100 file)  
+=======
+- Intera cartella _integration/ (~100 file)
+>>>>>>> c7fd73eb (.)
 - Intera cartella archive/ (~200 file)
 - File obsoleti/duplicati concettuali (~100 file)
 ```
@@ -295,7 +299,11 @@ docs/
 ├── quick-start.md
 ├── architecture/
 │   ├── system-overview.md
+<<<<<<< HEAD
 │   ├── module-structure.md  
+=======
+│   ├── module-structure.md
+>>>>>>> c7fd73eb (.)
 │   └── design-patterns.md
 ├── development/
 │   ├── coding-standards.md

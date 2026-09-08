@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazione Cache Traduzioni
 
 ## Stato
@@ -64,3 +65,6 @@
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+=======
+
+>>>>>>> c7fd73eb (.)

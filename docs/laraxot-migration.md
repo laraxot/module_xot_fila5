@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laraxot Migration Philosophy - Core Principles
 
 ## The Fundamental Rule
@@ -132,3 +133,12 @@ In Laraxot, migrations are the definitive history of your database schema. Keep 
 ---
 
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
+=======
+---
+module: theme
+topic: laraxot-migration
+canonical: ../../../Themes/docs/shared-components/laraxot-migration-philosophy-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laraxot-migration-philosophy-sumy.md
+>>>>>>> c7fd73eb (.)

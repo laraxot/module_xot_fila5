@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Tenant
 
 ## 1. Database Switching (Priorità: Alta)
@@ -216,3 +217,6 @@
 - [Database Guidelines](../../database/guidelines.md)
 - [Asset Management](../../assets/management.md)
 - [Domain Configuration](../../domains/configuration.md)
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Performance Optimization
 
 ## Caching
@@ -34,3 +35,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/_performance.txt}
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

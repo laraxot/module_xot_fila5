@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Forms and Input Handling
 
 ## Basic Forms
@@ -33,3 +34,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/custom_errors.txt}
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

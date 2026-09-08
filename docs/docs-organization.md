@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Documentation Organization Guide
 
 > **Guida completa per organizzare e mantenere la documentazione dei moduli**
@@ -569,3 +570,12 @@ Per migliorare questa guida:
 **Versione**: 1.0
 **Status**: ✅ Active
 **Maintainer**: Team Laraxot
+=======
+---
+module: theme
+topic: docs-organization
+canonical: ../../../Themes/docs/shared-components/docs-organization-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/docs-organization-guide.md
+>>>>>>> c7fd73eb (.)

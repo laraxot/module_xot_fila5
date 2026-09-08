@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Completa del Codice - Regole Filament e property_exists
 
 ## Riepilogo Trovato
@@ -68,3 +69,12 @@ Il codicebase è già ben allineato con le regole fondamentali:
 4. Implementazioni corrette nei file esistenti
 
 Non è stato necessario apportare correzioni al codice perché il progetto è già conforme alle regole fondamentali.
+=======
+---
+module: theme
+topic: codebase-findings
+canonical: ../../../Themes/docs/shared-components/codebase-analysis-findings.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/codebase-analysis-findings.md
+>>>>>>> c7fd73eb (.)

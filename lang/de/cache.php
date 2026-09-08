@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Cache',
@@ -20,25 +23,55 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave',
             'help' => 'Chiave identificativa della cache',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'help' => 'Valore memorizzato nella cache',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'ttl' => [
             'label' => 'Tempo di Vita',
             'placeholder' => 'Inserisci il TTL in minuti',
             'help' => 'Tempo di permanenza in cache (in minuti)',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'tags' => [
             'label' => 'Tag',
             'placeholder' => 'Seleziona i tag',
             'help' => 'Tag per raggruppare elementi della cache',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'size' => [
             'label' => 'Dimensione',
             'help' => 'Dimensione occupata in memoria',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'driver' => [
             'label' => 'Driver',
@@ -49,14 +82,27 @@ return [
                 'memcached' => 'Memcached',
                 'array' => 'Array',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data di inserimento in cache',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'expires_at' => [
             'label' => 'Data Scadenza',
             'help' => 'Data di scadenza della cache',
+<<<<<<< HEAD
         ],
         'toggleColumns' => [
             'label' => 'toggleColumns',
@@ -72,6 +118,41 @@ return [
         ],
         'openFilters' => [
             'label' => 'openFilters',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'actions' => [
@@ -134,4 +215,9 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> c7fd73eb (.)
 ];

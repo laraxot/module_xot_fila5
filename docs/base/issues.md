@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Errori Comuni
 description: Come Risolvere gli Errori più Comuni
@@ -141,3 +142,6 @@ E' possibile fare un backup del progetto con il file
 ```bash
 ./bashscripts/backup.sh
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

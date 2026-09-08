@@ -15,14 +15,24 @@ class RegisterBladeComponentsAction
 
     public function execute(string $path, string $namespace, string $prefix = ''): void
     {
+<<<<<<< HEAD
         $comps = app(GetComponentsAction::class)->execute($path, $namespace . '\View\Components', $prefix);
 
         if (0 === $comps->count()) {
+=======
+        $comps = app(GetComponentsAction::class)->execute($path, $namespace.'\View\Components', $prefix);
+
+        if ($comps->count() === 0) {
+>>>>>>> c7fd73eb (.)
             return;
         }
 
         foreach ($comps->items() as $comp) {
+<<<<<<< HEAD
             if (!($comp instanceof ComponentFileData)) {
+=======
+            if (! $comp instanceof ComponentFileData) {
+>>>>>>> c7fd73eb (.)
                 continue;
             }
             Blade::component($comp->name, $comp->ns);

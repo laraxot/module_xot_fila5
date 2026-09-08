@@ -534,6 +534,10 @@ Il sistema `nwidart/laravel-modules` scansiona e registra automaticamente i modu
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
+=======
+- [Activity Module - Errore No Hint Path](../../Activity/docs/errori/no-hint-path-defined.md)
+>>>>>>> c7fd73eb (.)
 - [Activity Module - Errore No Hint Path](../../activity/docs/errori/no-hint-path-defined.md)
 - [View Namespace Resolution System](./view-namespace-resolution.md)
 - [Module Discovery Process](./module-discovery.md)
@@ -547,4 +551,8 @@ Il sistema `nwidart/laravel-modules` scansiona e registra automaticamente i modu
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Versione Laravel**: 12.35.1
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS per registrazione automatica risorse modulari
+=======
+**Filosofia**: DRY + KISS per registrazione automatica risorse modulari
+>>>>>>> c7fd73eb (.)

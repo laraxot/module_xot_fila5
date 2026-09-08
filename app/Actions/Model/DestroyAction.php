@@ -12,6 +12,17 @@ class DestroyAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     */
+    /**
+     * @param array<string, mixed> $_data
+     * @param array<string, mixed> $_rules
+     */
+>>>>>>> c7fd73eb (.)
     public function execute(Model $model, array $_data, array $_rules): Model
     {
         // prende la chiave del modello

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Lessons Learned – Consolidated Rules ([DATE])
+=======
+# Lessons Learned – Consolidated Rules (2025-08-25)
+>>>>>>> c7fd73eb (.)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
 

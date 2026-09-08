@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\ModuleResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\BulkAction;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Actions\Action;
@@ -21,6 +22,22 @@ use Modules\Xot\Filament\Resources\ModuleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 use Nwidart\Modules\Facades\Module;
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Actions\BulkAction;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\ViewAction;
+use Filament\Tables;
+use Filament\Tables\Columns\Layout\Stack;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\BaseFilter;
+use Modules\UI\Enums\TableLayoutEnum;
+use Modules\Xot\Filament\Resources\ModuleResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> c7fd73eb (.)
 
 class ListModules extends XotBaseListRecords
 {
@@ -28,6 +45,7 @@ class ListModules extends XotBaseListRecords
 
     protected static string $resource = ModuleResource::class;
 
+<<<<<<< HEAD
     #[Override]
     public function getGridTableColumns(): array
     {
@@ -93,4 +111,9 @@ class ListModules extends XotBaseListRecords
             'delete' => DeleteBulkAction::make(),
         ];
     }
+=======
+    
+
+   
+>>>>>>> c7fd73eb (.)
 }

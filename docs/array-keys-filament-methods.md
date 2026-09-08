@@ -1,5 +1,9 @@
 # Array Keys in Filament Methods - Regole Obbligatorie
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-18
+>>>>>>> c7fd73eb (.)
 **Status**: ✅ Regola consolidata
 **Priorità**: CRITICA
 
@@ -61,7 +65,15 @@ public function getTableBulkActions(): array
  *
  * @return array<string, \Filament\Forms\Components\Component>
  */
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -98,7 +110,15 @@ public function getTableActions(): array
 /**
  * @return array<mixed, Component>
  */
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     // ...
 }
@@ -145,7 +165,15 @@ public function getTableBulkActions(): array
 
 ```php
 // ✅ CORRETTO
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'template_slug' => Select::make('template_slug')

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi PHPInsights - Tutti i Moduli
 
 **Strumento**: PHPInsights 2.13.3
@@ -124,3 +125,12 @@
 - ✅ **PHPMD**: Warning critici corretti
 - ✅ **PHPInsights**: Score complessivi eccellenti (97.9% Code, 93.5% Complexity, 82.4% Architecture, 98.8% Style)
 - ✅ **Pint**: Stile corretto
+=======
+---
+module: theme
+topic: phpinsights
+canonical: ../../../Themes/docs/shared-components/phpinsights-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-analysis.md
+>>>>>>> c7fd73eb (.)

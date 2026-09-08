@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Chart Export Guide - PNG e SVG
 
 ## 📋 Panoramica
@@ -1039,3 +1040,12 @@ $schedule->call(function () {
 **Filament:** 4.x
 **Chart.js:** 4.x
 **PHPStan Level:** 10
+=======
+---
+module: theme
+topic: chart-export
+canonical: ../../../Themes/docs/shared-components/chart-export-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/chart-export-guide.md
+>>>>>>> c7fd73eb (.)

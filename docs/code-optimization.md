@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # xot module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -168,3 +169,12 @@ app/
 - **developer satisfaction**: 90% improvement in feedback
 
 this comprehensive optimization will transform xot from a complex, hard-to-maintain module into a streamlined, efficient component following modern software architecture principles.
+=======
+---
+module: theme
+topic: code-optimization
+canonical: ../../../Themes/docs/shared-components/code-optimization-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-optimization-analysis.md
+>>>>>>> c7fd73eb (.)

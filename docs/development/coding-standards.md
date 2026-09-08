@@ -79,11 +79,19 @@ final class UserData extends Data
         #[Validation\Required]
         #[Validation\StringType]
         public readonly string $name,
+<<<<<<< HEAD
         
         #[Validation\Required]
         #[Validation\Email]
         public readonly string $email,
         
+=======
+
+        #[Validation\Required]
+        #[Validation\Email]
+        public readonly string $email,
+
+>>>>>>> c7fd73eb (.)
         #[Validation\Nullable]
         #[Validation\StringType]
         public readonly ?string $phone = null,
@@ -116,7 +124,11 @@ use App\Models\User;
 class CreateUserAction
 {
     use QueueableAction;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function execute(UserData $data): User
     {
         return User::create([
@@ -153,9 +165,15 @@ class CreateUserActionTest extends TestCase
             'name' => 'John Doe',
             'email' => 'john@example.com',
         ]);
+<<<<<<< HEAD
         
         $user = CreateUserAction::execute($userData);
         
+=======
+
+        $user = CreateUserAction::execute($userData);
+
+>>>>>>> c7fd73eb (.)
         $this->assertInstanceOf(User::class, $user);
         $this->assertEquals('John Doe', $user->name);
         $this->assertEquals('john@example.com', $user->email);
@@ -180,7 +198,11 @@ class UserManagementTest extends TestCase
             'name' => 'John Doe',
             'email' => 'john@example.com',
         ]);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $response->assertCreated();
         $this->assertDatabaseHas('users', [
             'name' => 'John Doe',
@@ -322,4 +344,8 @@ Log::error('User creation failed', [
 - Documentare solo codice complesso
 - Mantenere commenti aggiornati
 - Evitare commenti ovvi
+<<<<<<< HEAD
 - Utilizzare PHPDoc per API pubbliche 
+=======
+- Utilizzare PHPDoc per API pubbliche
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts ([DATE])
 
 ## 🎯 Missione Completata
@@ -325,3 +326,12 @@ Al processo sistematico di **comprensione → studio → dibattito → implement
 **Data:** [DATE]
 **Autore:** AI Claude + Metodologia Filosofica 10-Step
 **Status:** ✅ COMPLETATO CON SUCCESSO
+=======
+---
+module: theme
+topic: lessons-learnedmerges
+canonical: ../../../Themes/docs/shared-components/lessons-learnedmerge-conflicts.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/lessons-learnedmerge-conflicts.md
+>>>>>>> c7fd73eb (.)

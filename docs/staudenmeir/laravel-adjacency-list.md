@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: staudenmeir/laravel-adjacency-list
 description: staudenmeir/laravel-adjacency-list package
@@ -10,3 +11,6 @@ section: content
 Pacchetto utilizzato per la gestione delle relazioni padre/figlio
 
 https://github.com/staudenmeir/laravel-adjacency-list
+=======
+
+>>>>>>> c7fd73eb (.)

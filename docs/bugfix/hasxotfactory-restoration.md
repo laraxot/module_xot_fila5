@@ -350,6 +350,10 @@ Aggiungere al pipeline CI:
 - [HasXotFactory Documentation](../traits/hasxotfactory.md)
 - [GetFactoryAction](../actions/get-factory-action.md)
 - [BaseModel](../models/basemodel.md)
+<<<<<<< HEAD
+=======
+- [BasePivot Documentation](../../User/docs/models/basepivot.md)
+>>>>>>> c7fd73eb (.)
 - [BasePivot Documentation](../../user/docs/models/basepivot.md)
 
 ### Commit Rilevanti
@@ -396,4 +400,8 @@ Aggiungere al pipeline CI:
 
 **Autore**: AI Assistant con supervisione Marco Sottana
 **Revisore**: Marco Sottana
+<<<<<<< HEAD
 **Data Chiusura**: 22 Ottobre 2025
+=======
+**Data Chiusura**: 22 Ottobre 2025
+>>>>>>> c7fd73eb (.)

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Policies;
 
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\PulseAggregate;
 
@@ -13,7 +16,11 @@ class PulseAggregatePolicy extends XotBasePolicy
     /**
      * Determine whether the user can view any models.
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('pulse_aggregate.viewAny');

@@ -112,7 +112,11 @@ architecture-overview.md
 # ❌ SBAGLIATO
 MY_DOCUMENT.md              # UPPERCASE
 my_document.md              # underscore
+<<<<<<< HEAD
 analysis-2025-11-04.md      # date in name (use CHANGELOG.md)
+=======
+analysis.md      # date in name (use CHANGELOG.md)
+>>>>>>> c7fd73eb (.)
 ```
 
 ### 8. DRY Principle
@@ -266,7 +270,15 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             TextInput::make('name'),  // No ->label()!

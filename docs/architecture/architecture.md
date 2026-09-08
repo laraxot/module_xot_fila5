@@ -97,7 +97,15 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return static::getFormSchemaImplementation();
     }
@@ -387,7 +395,11 @@ test('all models extend base model', function () {
 
 ## 🔗 **Collegamenti e Riferimenti**
 
+<<<<<<< HEAD
 - [**README.md**](readme.md) - Documentazione principale del modulo
+=======
+- [**README.md**](README.md) - Documentazione principale del modulo
+>>>>>>> c7fd73eb (.)
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 

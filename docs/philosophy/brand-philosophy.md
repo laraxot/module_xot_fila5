@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Filosofia del Brand nel Sistema
 
 ## Principi Fondamentali
@@ -121,7 +125,11 @@ class ThemeManager
     {
         $colors = $metatag->getThemeColors();
         $settings = $metatag->getThemeSettings();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $this->applyColors($colors);
         $this->applySettings($settings);
     }
@@ -169,4 +177,8 @@ class BrandValidator
 - [MetatagData](../datas/metatag-data.md)
 - [ApplyMetatagToPanelAction](../actions/applymetatagtopanelaction.md)
 - [Best Practices](../best-practices.md)
+<<<<<<< HEAD
 - [Theme Management](../theme/theme_management.md) 
+=======
+- [Theme Management](../theme/theme_management.md)
+>>>>>>> c7fd73eb (.)

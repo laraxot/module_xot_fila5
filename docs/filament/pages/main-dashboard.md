@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MainDashboard
 
 La classe `MainDashboard` è una pagina Filament che estende la dashboard predefinita per fornire funzionalità di reindirizzamento basate sui ruoli dell'utente.
@@ -61,3 +62,6 @@ use Modules\Xot\Filament\Pages\MainDashboard;
 - [Documentazione Filament](../../../docs/filament/index.md)
 - [Sistema di Autorizzazioni](../../../docs/auth/index.md)
 - [Gestione Ruoli](../../../docs/auth/roles.md)
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -1,6 +1,10 @@
 # Module Path Error Resolution - Activity Assets Issue
 
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+**Data Creazione**: 2026-01-02
+>>>>>>> c7fd73eb (.)
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -130,7 +134,11 @@ try {
 
 - [Module Path Generation Philosophy](./module-path-generation-philosophy.md)
 - [Xot Philosophy](./philosophy.md)
+<<<<<<< HEAD
 - [Activity Philosophy](../activity/docs/philosophy.md)
+=======
+- [Activity Philosophy](../Activity/docs/philosophy.md)
+>>>>>>> c7fd73eb (.)
 
 ---
 

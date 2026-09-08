@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Configurazione Vite
 
 ## Problema
@@ -46,3 +47,6 @@ parameters:
 ## Collegamenti
 - [Documentazione Vite](docs/tools/vite.md)
 - [Configurazione Build](docs/deployment/build-configuration.md)
+=======
+
+>>>>>>> c7fd73eb (.)

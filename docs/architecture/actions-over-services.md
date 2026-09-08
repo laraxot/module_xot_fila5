@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Migrazione da Services ad Actions
 
 ## Architettura Precedente: Services
@@ -172,3 +173,6 @@ class SimpleChartWidget extends XotBaseChartWidget
 - [Chart Widget Best Practices (Quaeris)](../../../quaeris/docs/chart-widget-best-practices.md)
 - [Critical No Services Rule](../critical-no-services-rule.md)
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

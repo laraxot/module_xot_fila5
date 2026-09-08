@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> c7fd73eb (.)
 
 /**
  * Common query scopes for Laraxot models.
@@ -28,13 +32,23 @@ use Illuminate\Database\Eloquent\Builder;
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
  */
+<<<<<<< HEAD
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> c7fd73eb (.)
 trait HasCommonScopes
 {
     /**
      * Scope query to only active records.
      *
+<<<<<<< HEAD
      * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
      *
+=======
+     * Trovato identico in piu' moduli che condividono questo scope.
+     *
+     * @param  Builder<static>  $query
+>>>>>>> c7fd73eb (.)
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -45,6 +59,10 @@ trait HasCommonScopes
     /**
      * Scope query to only inactive records.
      *
+<<<<<<< HEAD
+=======
+     * @param  Builder<static>  $query
+>>>>>>> c7fd73eb (.)
      * @return Builder<static>
      */
     public function scopeInactive(Builder $query): Builder
@@ -57,6 +75,10 @@ trait HasCommonScopes
      *
      * Records with published_at <= now().
      *
+<<<<<<< HEAD
+=======
+     * @param  Builder<static>  $query
+>>>>>>> c7fd73eb (.)
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -70,11 +92,19 @@ trait HasCommonScopes
      *
      * Records with published_at = null or > now().
      *
+<<<<<<< HEAD
+=======
+     * @param  Builder<static>  $query
+>>>>>>> c7fd73eb (.)
      * @return Builder<static>
      */
     public function scopeDraft(Builder $query): Builder
     {
+<<<<<<< HEAD
         return $query->where(function ($q): void {
+=======
+        return $query->where(function (Builder $q): void {
+>>>>>>> c7fd73eb (.)
             $q->whereNull('published_at')
                 ->orWhere('published_at', '>', now());
         });
@@ -129,12 +159,22 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
+<<<<<<< HEAD
         if (! isset($this->published_at)) {
             return false;
         }
 
         return $this->published_at !== null &&
                $this->published_at->isPast();
+=======
+        $publishedAt = $this->getAttribute('published_at');
+
+        if (! $publishedAt instanceof Carbon) {
+            return false;
+        }
+
+        return $publishedAt->isPast();
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -150,6 +190,10 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
+<<<<<<< HEAD
         return isset($this->is_active) && $this->is_active === true;
+=======
+        return $this->getAttribute('is_active') === true;
+>>>>>>> c7fd73eb (.)
     }
 }

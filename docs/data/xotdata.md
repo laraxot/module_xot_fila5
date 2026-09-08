@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: XotData
 description: XotData
@@ -8,3 +9,6 @@ section: content
 # XotData
 
 Sono le variabili di xra.php
+=======
+
+>>>>>>> c7fd73eb (.)

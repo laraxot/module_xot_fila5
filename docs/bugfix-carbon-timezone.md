@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
 ## Problema Identificato
@@ -156,3 +157,12 @@ public function registerTimezone(): void
 
 *Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
+=======
+---
+module: theme
+topic: bugfix-carbon-timezone
+canonical: ../../../Themes/docs/shared-components/bugfix-carbon-timezone-error.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/bugfix-carbon-timezone-error.md
+>>>>>>> c7fd73eb (.)

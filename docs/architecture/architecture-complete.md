@@ -1,6 +1,10 @@
 # Xot Module - Complete Architecture Guide (2025)
 
+<<<<<<< HEAD
 > **
+=======
+> **Last Updated:** 2025-11-19
+>>>>>>> c7fd73eb (.)
 > **PHPStan Level:** 10
 > **Status:** Core Foundation Module
 
@@ -142,7 +146,15 @@ All Filament resources extend this base class:
 
 **Required Methods:**
 ```php
+<<<<<<< HEAD
 abstract public static function getFormSchema(): array;
+=======
+<<<<<<< HEAD
+abstract public static function getFormSchema(): array;
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -335,7 +347,11 @@ Defines contracts for modular extensibility:
 
 ### 9. Helper Functions (200+)
 
+<<<<<<< HEAD
 **File:** `Modules/Xot/Helpers/Helper.php`
+=======
+**File:** `Modules/Xot/helpers/Helper.php`
+>>>>>>> c7fd73eb (.)
 
 **Categories:**
 
@@ -579,7 +595,15 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             TextInput::make('field1')->required(),
@@ -656,7 +680,15 @@ class ArticleResource extends XotBaseResource
 {
     protected static ?string $model = Article::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             TextInput::make('title')
@@ -830,7 +862,11 @@ $value = $model->getExtra('custom_field');
 - Filament Resource Base: `Modules/Xot/app/Filament/Resources/XotBaseResource.php`
 - Provider Base: `Modules/Xot/app/Providers/XotBaseServiceProvider.php`
 - Central Config: `Modules/Xot/app/Datas/XotData.php`
+<<<<<<< HEAD
 - Global Helpers: `Modules/Xot/Helpers/Helper.php`
+=======
+- Global Helpers: `Modules/Xot/helpers/Helper.php`
+>>>>>>> c7fd73eb (.)
 - Actions: `Modules/Xot/app/Actions/` (150+ classes)
 - Test Base: `Modules/Xot/tests/TestCase.php`
 
@@ -860,4 +896,8 @@ The Xot module is a comprehensive foundation providing:
 ---
 
 **Document Version:** 1.0
+<<<<<<< HEAD
+=======
+**Generated:** 2025-11-19
+>>>>>>> c7fd73eb (.)
 **Author:** Claude Code Analysis

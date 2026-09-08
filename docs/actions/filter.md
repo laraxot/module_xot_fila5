@@ -20,8 +20,19 @@ Il file `GetYearFilter.php` presentava marker di conflitto (``) e duplicazioni d
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-04-16*
+=======
+>>>>>>> c7fd73eb (.)
 
 ## Collegamenti tra versioni di filter.md
 * [filter.md](../../../xot/docs/actions/filter.md)
 * [filter.md](../../../xot/docs/links/filter.md)
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-04-16*
+
+## Collegamenti tra versioni di filter.md
+* [filter.md](../../../Xot/docs/actions/filter.md)
+* [filter.md](../../../Xot/docs/links/filter.md)
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ModelWithStatusContract
 
 ## Descrizione
@@ -66,3 +67,6 @@ Imposta un nuovo stato per il modello con un motivo opzionale.
 - [Documentazione Spatie Model Status](https://github.com/spatie/laravel-model-status)
 - [Documentazione Laravel Eloquent](https://laravel.com/docs/eloquent)
 - [Documentazione PHPStan](https://phpstan.org/)
+=======
+
+>>>>>>> c7fd73eb (.)

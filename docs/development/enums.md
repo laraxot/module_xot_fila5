@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Enums Naming Convention
 
 ## Naming Rules
@@ -48,3 +49,6 @@ When renaming enums to follow this convention:
 2. Update the class name to include `Enum` suffix
 3. Update all references to the enum in your codebase
 4. Run tests to ensure everything works as expected
+=======
+
+>>>>>>> c7fd73eb (.)

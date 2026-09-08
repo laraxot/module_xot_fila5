@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBaseStatsOverviewWidget - Esempi Pratici
 
 ## Panoramica
@@ -618,3 +619,12 @@ La classe `XotBaseStatsOverviewWidget` migliorata fornisce un set completo di st
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0
 **Stato**: ✅ Completato e Documentato
+=======
+---
+module: theme
+topic: xotbase-stats-overview-widget-examples
+canonical: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-examples.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-examples.md
+>>>>>>> c7fd73eb (.)

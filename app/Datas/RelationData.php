@@ -15,6 +15,10 @@ use Spatie\LaravelData\Data;
  */
 class RelationData extends Data
 {
+<<<<<<< HEAD
+=======
+    /** @var Relation<Model, Model, mixed> */
+>>>>>>> c7fd73eb (.)
     public Relation $rows;
 
     /** @var array<string, mixed> */

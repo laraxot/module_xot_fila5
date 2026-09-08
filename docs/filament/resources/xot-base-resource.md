@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBaseResource: Regole fondamentali
 
 ## Principio di progettazione
@@ -98,3 +99,6 @@ Se trovi questi metodi in una risorsa esistente:
 1. Verifica se il comportamento è standard (uguale alla classe base)
 2. Se è standard, rimuovi completamente il metodo
 3. Se contiene personalizzazioni, estrai solo la logica personalizzata e rimuovi il resto
+=======
+
+>>>>>>> c7fd73eb (.)

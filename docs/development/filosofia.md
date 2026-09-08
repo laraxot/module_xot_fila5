@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia di Sviluppo il progetto
 
 ## Principi Fondamentali
@@ -120,3 +121,6 @@ Lo sviluppo del progetto il progetto è guidato dai seguenti principi fondamenta
 ## Collegamenti tra versioni di filosofia.md
 * [filosofia.md](docs/filosofia.md)
 * [filosofia.md](../../../xot/docs/development/filosofia.md)
+=======
+
+>>>>>>> c7fd73eb (.)

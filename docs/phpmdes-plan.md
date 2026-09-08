@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Piano Correzione Warning PHPMD - XotBaseRelationManager
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
@@ -71,3 +72,12 @@ $actions['edit'] = EditAction::make()
 - Verificare che rimozione `$resource` non impatti funzionalità
 - `$me` è necessaria per accesso a `$this` in closure (pattern standard)
 - Complexity warning accettabili per metodi con controlli runtime robusti
+=======
+---
+module: theme
+topic: phpmdes-plan
+canonical: ../../../Themes/docs/shared-components/phpmd-fixes-plan.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-fixes-plan.md
+>>>>>>> c7fd73eb (.)

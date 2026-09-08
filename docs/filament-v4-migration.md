@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament v4 Migration Guide - Modulo Xot
 **Modulo**: Xot (Core Framework)
 **Versione**: 4.0
@@ -263,3 +264,12 @@ find laravel/Modules -name "*.php" -path "*/Filament/*" -exec grep -l "Radio::ma
 **Stato**: Ready for Implementation
 **Target**: Tutti i moduli PTVX
 **Deadline**: 31 Dicembre 2025
+=======
+---
+module: theme
+topic: filament-v4-migration
+canonical: ../../../Themes/docs/shared-components/filament-v4-migration-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-v4-migration-guide.md
+>>>>>>> c7fd73eb (.)

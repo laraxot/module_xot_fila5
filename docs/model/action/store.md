@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Store Action
 description: Store Model with Queuable Action
@@ -90,3 +91,6 @@ Session::flash('status', $msg); // .
 
 return $row;
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

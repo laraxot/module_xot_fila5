@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Standard dei Moduli
 
 Questo documento definisce la struttura standard che tutti i moduli devono seguire.
@@ -127,3 +128,6 @@ Tutti i moduli devono seguire i principi DDD:
 ## Collegamenti tra versioni di module-structure.md
 * [module-structure.md](../../../xot/docs/laraxot/module-structure.md)
 * [module-structure.md](../../../xot/docs/architecture/module-structure.md)
+=======
+
+>>>>>>> c7fd73eb (.)

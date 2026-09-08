@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Translation Complete Guide - Consolidated
 
 ## Overview
@@ -20,3 +21,12 @@ Guida completa consolidata per le traduzioni in Laraxot.
 
 ## Links
 - [Original Files Backup](../../../docs-consolidation-backup-*/Xot-docs-original/)
+=======
+---
+module: theme
+topic: translation-complete-guide
+canonical: ../../../../Themes/docs/shared-components/translation-complete-guide.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-complete-guide.md
+>>>>>>> c7fd73eb (.)

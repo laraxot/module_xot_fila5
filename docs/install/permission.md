@@ -167,6 +167,7 @@ return [
 ~~~
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di permission.md
 * [permission.md](../../../Xot/docs/install/permission.md)
@@ -178,3 +179,12 @@ return [
 
 ---
 
+=======
+## Collegamenti tra versioni di permission.md
+* [permission.md](../../../xot/project_docs/install/permission.md)
+* [permission.md](../../../tenant/project_docs/it/config/permission.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

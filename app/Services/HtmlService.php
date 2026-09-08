@@ -39,7 +39,11 @@ class HtmlService
         // include_once __DIR__.'/vendor/autoload.php';
         // $pdforientation = 'L'; // default;
         // $out = 'show';
+<<<<<<< HEAD
         if ('' === $filename) {
+=======
+        if ($filename === '') {
+>>>>>>> c7fd73eb (.)
             $filename = Storage::disk('local')->path('test.pdf');
         }
         /*
@@ -56,11 +60,19 @@ class HtmlService
             $html2pdf = new Html2Pdf($pdforientation, 'A4', 'it');
             $html2pdf->setTestTdInOnePage(false);
             $html2pdf->WriteHTML($html);
+<<<<<<< HEAD
             if ('content_PDF' === $out) {
                 return $html2pdf->Output($filename . '.pdf', 'S');
             }
 
             if ('file' === $out) {
+=======
+            if ($out === 'content_PDF') {
+                return $html2pdf->Output($filename.'.pdf', 'S');
+            }
+
+            if ($out === 'file') {
+>>>>>>> c7fd73eb (.)
                 $html2pdf->Output($filename, 'F');
 
                 return $filename;

@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Extra',
@@ -20,11 +23,23 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome dell\'extra',
             'help' => 'Nome identificativo dell\'extra',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione dettagliata',
             'help' => 'Descrizione completa delle funzionalità dell\'extra',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -40,6 +55,12 @@ return [
                 'integration' => 'Integrazione',
                 'utility' => 'Utilità',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -51,16 +72,34 @@ return [
                 'error' => 'Errore',
                 'updating' => 'In aggiornamento',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'version' => [
             'label' => 'Versione',
             'placeholder' => 'Inserisci la versione (es. 1.0.0)',
             'help' => 'Versione semantica dell\'extra',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'dependencies' => [
             'label' => 'Dipendenze',
             'placeholder' => 'Seleziona le dipendenze richieste',
             'help' => 'Altri extra o componenti necessari',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -71,19 +110,38 @@ return [
                 'medium' => 'Media',
                 'low' => 'Bassa',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'settings' => [
             'label' => 'Impostazioni',
             'placeholder' => 'Configura le impostazioni',
             'help' => 'Configurazioni specifiche dell\'extra',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione dell\'extra',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
             'help' => 'Data e ora dell\'ultima modifica',
+<<<<<<< HEAD
         ],
         'id' => [
             'label' => 'id',
@@ -117,6 +175,77 @@ return [
         ],
         'toggleColumns' => [
             'label' => 'toggleColumns',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'id' => [
+            'label' => 'id',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'model_type' => [
+            'label' => 'model_type',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'model_id' => [
+            'label' => 'model_id',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'extra_attributes' => [
+            'label' => 'extra_attributes',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'create' => [
+            'label' => 'create',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'actions' => [
@@ -192,4 +321,9 @@ return [
     'model' => [
         'label' => 'extra.model',
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> c7fd73eb (.)
 ];

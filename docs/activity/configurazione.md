@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Configurazione Modulo
 description: Configurazione Modulo
@@ -13,3 +14,6 @@ Ricordarsi di modificare dentro laravel\config\event-sourcing.php, in quanto si 
     'stored_event_model' => Modules\Activity\Models\StoredEvent::class,
 ``` 
 per memorizzare gli eventi dentro la tabella stored_events
+=======
+
+>>>>>>> c7fd73eb (.)

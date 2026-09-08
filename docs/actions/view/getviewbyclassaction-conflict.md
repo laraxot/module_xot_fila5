@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Risoluzione Conflitto in GetViewByClassAction
 
 ## Problema
@@ -26,6 +30,7 @@ public function execute(string $class): string
 {
     // Convert class name to view name
     $view = strval($class);
+<<<<<<< HEAD
     
     // Remove namespace
     $view = preg_replace('/^.*\\\\/', '', $view);
@@ -33,6 +38,15 @@ public function execute(string $class): string
     // Convert to kebab case
     $view = Str::kebab($view);
     
+=======
+
+    // Remove namespace
+    $view = preg_replace('/^.*\\\\/', '', $view);
+
+    // Convert to kebab case
+    $view = Str::kebab($view);
+
+>>>>>>> c7fd73eb (.)
     return $view;
 }
 ```

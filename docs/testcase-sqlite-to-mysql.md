@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TestCase SQLite to MySQL Fix - Xot Module
 
 ## Problema Identificato
@@ -205,3 +206,12 @@ Questo è INUTILE perché:
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE
 **Filosofia:** MySQL Production = MySQL Tests ✅
+=======
+---
+module: theme
+topic: testcase-sqlite-to-mysql
+canonical: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix-Modules.md
+>>>>>>> c7fd73eb (.)

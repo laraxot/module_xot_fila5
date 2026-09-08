@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 # File Naming Conventions Compliance - [DATE]
 
+=======
+# File Naming Conventions Compliance - 2026-01-09
+
+**Data**: 2026-01-09  
+>>>>>>> c7fd73eb (.)
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -32,7 +38,11 @@
 
 ### Pattern di Rinomina
 ```
+<<<<<<< HEAD
 ❌ PRIMA: nome-file-[DATE].md
+=======
+❌ PRIMA: nome-file-2026-01-09.md
+>>>>>>> c7fd73eb (.)
 ✅ DOPO: nome-file.md
 ```
 
@@ -78,4 +88,8 @@
 
 **Status**: ✅ **COMPLETATO**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c7fd73eb (.)

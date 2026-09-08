@@ -1,6 +1,10 @@
 # Code Quality Improvements - Documento Consolidato
 
+<<<<<<< HEAD
 **Data creazione**: [DATE]
+=======
+**Data creazione**: 2025-01-22
+>>>>>>> c7fd73eb (.)
 **Filosofia**: Super Mucca + DRY + KISS + Type Safety
 **Obiettivo**: Miglioramento continuo qualità codice basato su best practices 2024-2025
 
@@ -144,7 +148,15 @@ describe('Event Management', function () {
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'details' => Section::make('Details')
@@ -346,6 +358,10 @@ $content = file_get_contents($path); // Lancia eccezione se fallisce
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-22
+>>>>>>> c7fd73eb (.)
 **Versione**: 1.0.0
 **Status**: In progress

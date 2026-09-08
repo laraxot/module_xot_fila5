@@ -200,7 +200,11 @@ Questo è INUTILE perché:
 
 ---
 
+<<<<<<< HEAD
 **Data:** [DATE]
+=======
+**Data:** 2026-01-09
+>>>>>>> c7fd73eb (.)
 **Stato:** Pronto per implementazione
 **Righe:** 126 → ~25 (-80%)
 **Complessità:** ESTREMA → MINIMALE

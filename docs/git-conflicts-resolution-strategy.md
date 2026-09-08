@@ -2,7 +2,11 @@
 
 ## Contesto
 
+<<<<<<< HEAD
 **Data analisi:** [DATE]
+=======
+**Data analisi:** 2025-01-27
+>>>>>>> c7fd73eb (.)
 **File con conflitti identificati:** 586 file PHP
 **Approccio:** Risoluzione manuale focalizzata su business logic
 
@@ -232,7 +236,11 @@ I conflitti sono stati causati da:
 
 ## Stato Corrente
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** [DATE]
+=======
+**Ultimo aggiornamento:** 2025-01-27
+>>>>>>> c7fd73eb (.)
 
 ### Completati ✅
 - [x] Analisi complessiva (586 file identificati)

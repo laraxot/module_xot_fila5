@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Merge Conflicts Inventory
 
 **Date**: [DATE]
@@ -194,3 +195,12 @@ This document catalogs all files containing merge conflict markers found through
 
 ---
 *This inventory will be updated as conflicts are resolved.*
+=======
+---
+module: theme
+topic: merges-inventory
+canonical: ../../../Themes/docs/shared-components/merge-conflicts-inventory.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-inventory.md
+>>>>>>> c7fd73eb (.)

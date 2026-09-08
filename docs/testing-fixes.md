@@ -220,5 +220,8 @@ Dopo le correzioni:
 - Verificare i test dopo ogni aggiornamento di Laravel
 - Seguire la struttura standard per i TestCase dei moduli
 - Documentare eventuali modifiche alla struttura di testing
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c7fd73eb (.)

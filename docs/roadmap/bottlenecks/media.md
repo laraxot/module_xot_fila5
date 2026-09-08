@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Media
 
 ## 1. Upload Performance (Priorità: Alta)
@@ -223,3 +224,6 @@
 ## Collegamenti tra versioni di media.md
 * [media.md](../../../xot/docs/features/media.md)
 * [media.md](../../../xot/docs/roadmap/bottlenecks/media.md)
+=======
+
+>>>>>>> c7fd73eb (.)

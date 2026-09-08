@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo Miglioramenti e Analisi - [DATE]
 
 **Metodologia**: Super Mucca  
@@ -139,3 +140,12 @@ public function getUpcomingEvents(): Collection
 **Status**: ✅ **ANALISI COMPLETATA**
 
 **Ultimo aggiornamento**: [DATE]
+=======
+---
+module: theme
+topic: improvements
+canonical: ../../../Themes/docs/shared-components/improvements-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/improvements-sumy.md
+>>>>>>> c7fd73eb (.)

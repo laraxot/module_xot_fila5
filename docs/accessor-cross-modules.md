@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Audit Cross-Modules: Accessor con save() senza Guard
 
 ## Obiettivo Audit
@@ -182,3 +183,12 @@ Ogni modulo deve avere:
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
 **Timeline**: 3 settimane per audit completo
+=======
+---
+module: theme
+topic: accessor-cross-modules
+canonical: ../../../Themes/docs/shared-components/accessor-audit-cross-modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/accessor-audit-cross-modules.md
+>>>>>>> c7fd73eb (.)

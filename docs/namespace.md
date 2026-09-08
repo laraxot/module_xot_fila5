@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)
 
 ## Regola Fondamentale
@@ -29,3 +30,12 @@
 **Ultimo aggiornamento:** [DATE]
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+=======
+---
+module: theme
+topic: namespace
+canonical: ../../../Themes/docs/shared-components/namespace-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/namespace-rules.md
+>>>>>>> c7fd73eb (.)

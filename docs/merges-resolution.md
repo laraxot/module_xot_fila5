@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti
 
 **Status**: ⚠️ In Lavorazione
@@ -196,3 +197,12 @@ class ResourceName extends XotBaseResource
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione
+=======
+---
+module: theme
+topic: merges-resolution
+canonical: ../../../Themes/docs/shared-components/merge-conflicts-resolution-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-resolution-roadmap.md
+>>>>>>> c7fd73eb (.)

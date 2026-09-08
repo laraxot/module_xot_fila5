@@ -2,13 +2,25 @@
 
 ## Regola Fondamentale
 
+<<<<<<< HEAD
 In SaluteOra, il metodo `getFormSchema()` nelle risorse Filament deve **SEMPRE** restituire un array associativo con chiavi stringhe, mai un array numerico.
+=======
+In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SEMPRE** restituire un array associativo con chiavi stringhe, mai un array numerico.
+>>>>>>> c7fd73eb (.)
 
 ## Implementazione Corretta
 
 ```php
 // ✅ CORRETTO
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -25,7 +37,15 @@ public static function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -97,7 +117,15 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -112,7 +140,15 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

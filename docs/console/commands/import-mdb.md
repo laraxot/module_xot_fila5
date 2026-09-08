@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Comandi di Importazione MDB
 
 ## Panoramica
@@ -34,3 +35,6 @@ Questi comandi permettono l'importazione di database Microsoft Access (MDB) in M
 - Aggiunto supporto per più versioni di Access
 - Ottimizzata la conversione dei tipi di dati
 - Standardizzazione dei messaggi in italiano
+=======
+
+>>>>>>> c7fd73eb (.)

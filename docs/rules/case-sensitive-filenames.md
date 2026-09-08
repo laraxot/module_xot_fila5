@@ -1,5 +1,9 @@
 # 📋 **Regola: Nomi File Case-Sensitive**
 
+<<<<<<< HEAD
+=======
+**Data**: 11 Novembre 2025
+>>>>>>> c7fd73eb (.)
 **Categoria**: Convenzioni di Codice
 **Priorità**: CRITICA ⚠️
 

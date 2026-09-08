@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Comandi Artisan',
@@ -66,4 +69,11 @@ return [
         ],
     ],
     'title' => 'artisan commands manager',
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+>>>>>>> c7fd73eb (.)
 ];

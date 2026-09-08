@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo
@@ -165,6 +166,10 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 ### Documentazione Moduli Correlati
 - [Geo Module Translations](/modules/geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/modules/user/project_docs/translation-guidelines.md)
+=======
+- [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
+- [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
+>>>>>>> c7fd73eb (.)
 
 ### File di Implementazione
 - `lang/es/labels.php` - Etichette generali spagnole
@@ -193,3 +198,14 @@ Il file attuale contiene principalmente etichette generali per l'interfaccia amm
 **Stato**: Documentazione completata, implementazione in corso
 **Priorità**: Media (file già corretto linguisticamente)
 **Responsabile**: Sistema automatico DRY/KISS
+<<<<<<< HEAD
+=======
+**Data**: 2025-08-08
+---
+module: theme
+topic: translation-structure-expanded
+canonical: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-structure-expanded-Modules.md
+>>>>>>> c7fd73eb (.)

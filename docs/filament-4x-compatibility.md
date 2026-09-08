@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compatibilità Filament 4.x - Modulo Xot
 
 **Status**: ✅ IN CORSO
@@ -208,3 +209,12 @@ $rows = $query->get();
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: [DATE]*
+=======
+---
+module: theme
+topic: filament-4x-compatibility
+canonical: ../../../Themes/docs/shared-components/filament-4x-compatibility-conflict.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-4x-compatibility-conflict.md
+>>>>>>> c7fd73eb (.)

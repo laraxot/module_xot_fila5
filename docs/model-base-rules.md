@@ -91,4 +91,8 @@ abstract class BaseModel extends XotBaseModel
 - [docs/MODULE_NAMESPACE_RULES.md](../../docs/MODULE_NAMESPACE_RULES.md)
 - [modules/performance/docs/organizzativa-models.md](../Performance/docs/organizzativa-models.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: maggio 2025* 
+=======
+*Ultimo aggiornamento: maggio 2025*
+>>>>>>> c7fd73eb (.)

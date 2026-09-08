@@ -111,5 +111,9 @@ composer dump-autoload
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> c7fd73eb (.)
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*

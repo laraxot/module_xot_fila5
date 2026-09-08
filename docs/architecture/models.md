@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Model Architecture
 
 ## Base Models
@@ -43,3 +44,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/scope.txt}
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

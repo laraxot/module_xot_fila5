@@ -4,10 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
+<<<<<<< HEAD
 use Mockery;
 use Override;
 use Filament\Tables\Table;
 use Illuminate\Support\Collection;
+=======
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\ColumnGroup;
+use Filament\Tables\Columns\Layout\Component;
+use Filament\Tables\Table;
+use Illuminate\Support\Collection;
+use Mockery;
+use Mockery\MockInterface;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Filament\Traits\HasXotTable;
 
 /**
@@ -26,7 +36,13 @@ class HasTableWithXotTestClass
         return $mock;
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    /**
+     * @return array<string, Column|ColumnGroup|Component>
+     */
+>>>>>>> c7fd73eb (.)
     public function getTableColumns(): array
     {
         return [];
@@ -34,10 +50,20 @@ class HasTableWithXotTestClass
 
     public function getTable(): Table
     {
+<<<<<<< HEAD
         return Mockery::mock(Table::class);
     }
 
     public function getTablePage(): null|int
+=======
+        /** @var Table&MockInterface $table */
+        $table = Mockery::mock(Table::class);
+
+        return $table;
+    }
+
+    public function getTablePage(): ?int
+>>>>>>> c7fd73eb (.)
     {
         return 1;
     }
@@ -47,16 +73,30 @@ class HasTableWithXotTestClass
         return 10;
     }
 
+<<<<<<< HEAD
     public function getTableSortColumn(): null|string
+=======
+    public function getTableSortColumn(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function getTableSortDirection(): null|string
+=======
+    public function getTableSortDirection(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
+     */
+>>>>>>> c7fd73eb (.)
     public function getTableFilters(): array
     {
         return [];
@@ -67,21 +107,42 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getTableFilterState(string $_name): null|array
+=======
+    /**
+     * @return array<string, mixed>|null
+     */
+    public function getTableFilterState(string $_name): ?array
+>>>>>>> c7fd73eb (.)
     {
         return [];
     }
 
+<<<<<<< HEAD
     public function getTableGrouping(): null|string
+=======
+    public function getTableGrouping(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function getTableSearchIndicator(): null|string
+=======
+    public function getTableSearchIndicator(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     public function getTableColumnSearchIndicators(): array
     {
         return [];
@@ -92,6 +153,12 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     public function getTableRecords(): array
     {
         return [];
@@ -107,9 +174,18 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
         return new Collection();
+=======
+    /**
+     * @return Collection<int, mixed>
+     */
+    public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
+    {
+        return new Collection;
+>>>>>>> c7fd73eb (.)
     }
 
     public function getAllTableRecordsCount(): int
@@ -122,6 +198,12 @@ class HasTableWithXotTestClass
         return 0;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     public function getAllSelectableTableRecordKeys(): array
     {
         return [];
@@ -152,7 +234,11 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getMountedTableAction(): null|string
+=======
+    public function getMountedTableAction(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
@@ -172,7 +258,11 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getMountedTableBulkAction(): null|string
+=======
+    public function getMountedTableBulkAction(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
@@ -182,7 +272,11 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function getActiveTableLocale(): null|string
+=======
+    public function getActiveTableLocale(): ?string
+>>>>>>> c7fd73eb (.)
     {
         return null;
     }
@@ -217,6 +311,7 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function deselectAllTableRecords(): void
     {
     }
@@ -228,12 +323,20 @@ class HasTableWithXotTestClass
     public function mountTableBulkAction(): void
     {
     }
+=======
+    public function deselectAllTableRecords(): void {}
+
+    public function mountTableAction(): void {}
+
+    public function mountTableBulkAction(): void {}
+>>>>>>> c7fd73eb (.)
 
     public function mountedTableActionRecord(): mixed
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function replaceMountedTableAction(): void
     {
     }
@@ -253,6 +356,17 @@ class HasTableWithXotTestClass
     public function toggleTableReordering(): void
     {
     }
+=======
+    public function replaceMountedTableAction(): void {}
+
+    public function replaceMountedTableBulkAction(): void {}
+
+    public function resetTableSearch(): void {}
+
+    public function resetTableColumnSearch(): void {}
+
+    public function toggleTableReordering(): void {}
+>>>>>>> c7fd73eb (.)
 
     public function parseTableFilterName(): string
     {

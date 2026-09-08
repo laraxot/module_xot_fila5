@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Reattori
 description: Reattori
@@ -51,3 +52,6 @@ class EventSourcingServiceProvider extends ServiceProvider
     }
 }
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

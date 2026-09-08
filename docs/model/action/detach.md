@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Detach Action
 description: Detach Model with Queuable Action
@@ -7,3 +8,6 @@ section: content
 # Detach Action {#detach-action}
 
 This is an example Detach action
+=======
+
+>>>>>>> c7fd73eb (.)

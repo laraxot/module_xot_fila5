@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Xot - Il MOTORE FONDAMENTALE di Laraxot! ⚡
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -46,6 +47,97 @@
 - **Performance**: Ottimizzazioni per applicazioni enterprise
 
 ## 🎯 Funzionalità PRINCIPALI
+=======
+> **Version**: 3.0 - DRY + KISS Documentation Refactor
+> **Status**: ✅ Core Framework Module
+> **Last Updated**: December 2025
+
+## 📋 Overview
+
+Il modulo **Xot** è il cuore del framework Laraxot, fornendo le classi base, i service provider e le funzionalità fondamentali che abilitano tutti gli altri moduli del sistema.
+
+## 🏗️ Architecture
+
+- [Base Classes](architecture/base-classes.md) - Classi base per modelli, risorse, provider
+- [Core Models](architecture/models.md) - Modelli fondamentali del sistema
+- [Service Providers](architecture/providers.md) - Provider per funzionalità core
+- [Database Layer](architecture/database.md) - Migrazioni e strutture dati base
+
+## 💻 Development
+
+- [Setup & Configuration](development/setup.md) - Installazione e configurazione base
+- [Extension Patterns](development/extensions.md) - Come estendere Xot correttamente
+- [Best Practices](development/practices.md) - Convenzioni e linee guida
+- [Troubleshooting](development/troubleshooting.md) - Problemi comuni e soluzioni
+
+## ✅ Quality Assurance
+
+- [PHPStan Compliance](quality/phpstan.md) - Analisi statica e standard di qualità
+- [Code Standards](quality/standards.md) - Standard di codifica applicati
+- [Testing](quality/testing.md) - Strategie di testing per componenti base
+- [Performance](quality/performance.md) - Ottimizzazioni e benchmark
+
+## 🚀 Features
+
+- [Filament Integration](features/filament.md) - Integrazione con Filament admin
+- [Authentication](features/auth.md) - Sistema di autenticazione base
+- [Authorization](features/authorization.md) - Gestione ruoli e permessi
+- [Localization](features/localization.md) - Sistema di traduzioni
+
+## 🔧 Maintenance
+
+- [Migrations](maintenance/migrations.md) - Gestione schema database
+- [Upgrades](maintenance/upgrades.md) - Aggiornamenti e migrazioni
+- [Monitoring](maintenance/monitoring.md) - Monitoraggio e logging
+- [Changelog](maintenance/changelog.md) - Cronologia versioni
+
+## 📊 Key Metrics
+
+| Aspect | Status | Details |
+|--------|--------|---------|
+| **Base Classes** | ✅ 50+ | Classi base complete |
+| **Service Providers** | ✅ 20+ | Provider fully configured |
+| **Traits** | ✅ 15+ | Traits specializzati |
+| **PHPStan Level** | ✅ 10 | Compliance massima |
+| **Test Coverage** | ✅ 95% | Coverage completa |
+| **Performance** | ✅ Optimized | Benchmark superato |
+
+## 🚀 Quick Start
+
+```bash
+# Xot è incluso automaticamente in tutti i progetti Laraxot
+# Non richiede installazione manuale
+
+# Verifica che sia attivo
+php artisan module:list | grep Xot
+
+# Controlla lo status
+php artisan xot:status
+```
+
+## 🔗 Related Documentation
+
+- [Laraxot Main Docs](../../docs/AI-GUIDELINES.md) - Documentazione generale
+- [Architecture Rules](../../docs/fundamentals/architecture-rules.md) - Regole critiche
+- [Module Structure](../../docs/fundamentals/module-structure.md) - Come strutturare moduli
+
+## 📞 Support
+
+- **Technical Issues**: Consulta la documentazione specifica
+- **Architecture Questions**: Riferimento a [architecture/base-classes.md](architecture/base-classes.md)
+- **Extension Guide**: Leggi [development/extensions.md](development/extensions.md)
+
+---
+
+**📖 [Docs](docs/readme.md)** · **🏗️ [Architettura](docs/conventions/readme.md)** · **✅ [PHPStan](docs/standards/readme.md)** · **🤝 Contribuisci seguendo le [best practices](docs/best-practices/readme.md)**
+
+---
+
+**Module Type**: Core Framework
+**Critical Level**: 🔴 Maximum (Required by all modules)
+**Architecture**: SOLID, DRY, KISS compliant
+**Quality**: PHPStan Level 10, 95% test coverage
+>>>>>>> c7fd73eb (.)
 
 ### 🏗️ **Base Classes Avanzate**
 ```php
@@ -53,7 +145,11 @@
 class XotBaseModel extends Model
 {
     use HasFactory, SoftDeletes, HasUuid;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Funzionalità automatiche
     protected $guarded = [];
     protected $casts = ['created_at' => 'datetime'];
@@ -78,13 +174,21 @@ class XotBaseServiceProvider extends ServiceProvider
 class XotBaseUser extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, HasRoles;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Relazioni automatiche
     public function teams(): BelongsToMany
     {
         return $this->belongsToMany(Team::class);
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function tenants(): BelongsToMany
     {
         return $this->belongsToMany(Tenant::class);
@@ -98,12 +202,20 @@ class XotBaseUser extends Authenticatable
 class XotBaseResource extends Resource
 {
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public static function getNavigationGroup(): ?string
     {
         return __('xot::navigation.groups.main');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public static function getNavigationSort(): ?int
     {
         return 1;
@@ -199,11 +311,19 @@ class MyResource extends XotBaseResource
 class MyModuleServiceProvider extends XotBaseServiceProvider
 {
     protected string $module_name = 'MyModule';
+<<<<<<< HEAD
     
     public function boot(): void
     {
         parent::boot(); // Carica automaticamente views, translations, migrations
         
+=======
+
+    public function boot(): void
+    {
+        parent::boot(); // Carica automaticamente views, translations, migrations
+
+>>>>>>> c7fd73eb (.)
         // Aggiungi funzionalità specifiche del modulo
         $this->registerCustomComponents();
     }
@@ -221,7 +341,11 @@ return new class extends XotBaseMigration
         if ($this->hasTable('my_table')) {
             return;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         Schema::create('my_table', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
@@ -239,7 +363,11 @@ trait HasParent
     {
         return $this->belongsTo(static::class, 'parent_id');
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function children(): HasMany
     {
         return $this->hasMany(static::class, 'parent_id');
@@ -409,3 +537,62 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
   <br>
   <em>Costruito con ❤️ per la comunità Laravel</em>
 </div>
+<<<<<<< HEAD
+=======
+# ⚡ Xot
+
+[![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
+[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
+[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
+[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
+[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+
+> **Il DNA Laraxot.** BaseModel, XotBaseServiceProvider, Filament base, convenzioni che tengono 20 moduli allineati.
+
+---
+
+## Perché esiste
+
+Senza Xot non c’è FixCity: è il framework interno che evita duplicazioni e drift architetturale.
+
+## Superpoteri
+
+- XotBaseResource / Widget / ServiceProvider
+- LangServiceProvider e traduzioni strutturate
+- Pattern Actions, DTO Spatie, PHPStan 10
+- Documentazione e standard condivisi
+
+## Certificazioni
+
+| Certificazione | Stato |
+|----------------|-------|
+| PHPStan livello 10 | Target progetto |
+| `declare(strict_types=1)` | Su nuovo codice PHP |
+| Filament 5 + XotBase | Admin enterprise |
+| Test PHPUnit / Pest | Suite modulo |
+| Documentazione wiki | Cartella `docs/` |
+
+## Vuoi entrare nel team?
+
+Vuoi scrivere **piattaforma**, non solo feature? Xot è il posto giusto.
+
+Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+
+---
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+**Modulo** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> c7fd73eb (.)

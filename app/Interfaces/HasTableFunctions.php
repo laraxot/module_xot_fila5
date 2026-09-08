@@ -4,9 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Interfaces;
 
+<<<<<<< HEAD
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\Column;
 use Filament\Actions\Action;
+=======
+use Filament\Actions\Action;
+use Filament\Actions\BulkAction;
+use Filament\Tables\Columns\Column;
+>>>>>>> c7fd73eb (.)
 
 interface HasTableFunctions
 {

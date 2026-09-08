@@ -4,14 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Rules;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Carbon;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Contracts\Validation\ValidationRule;
+use Illuminate\Support\Carbon;
+use Illuminate\Translation\PotentiallyTranslatedString;
+
+use function Safe\preg_replace;
+>>>>>>> c7fd73eb (.)
 
 /**
  * Class DateTimeRule.
  */
+<<<<<<< HEAD
 class DateTimeRule implements Rule
 {
     /**
@@ -47,6 +56,32 @@ class DateTimeRule implements Rule
          */
 
         return true;
+=======
+class DateTimeRule implements ValidationRule
+{
+    /**
+     * Run the validation rule.
+     *
+     * @param  \Closure(string, string|null=): PotentiallyTranslatedString  $fail
+     */
+    public function validate(string $attribute, mixed $value, \Closure $fail): void
+    {
+        // dddx($attribute); //published_at
+        // dddx($value); //10/10/2019 13:43
+
+        if (! is_string($value)) {
+            $fail($this->message());
+
+            return;
+        }
+
+        $format = 'd/m/Y H:i';
+        try {
+            Carbon::createFromFormat($format, $value);
+        } catch (\Exception) {
+            $fail($this->message());
+        }
+>>>>>>> c7fd73eb (.)
     }
 
     public function message(): string

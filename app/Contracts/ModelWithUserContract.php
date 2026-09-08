@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Support\Carbon;
 
 /**
@@ -20,6 +23,7 @@ use Illuminate\Support\Carbon;
  * @property string|null        $updated_by
  * @property string|null        $title
  * @property PivotContract|null $pivot
+<<<<<<< HEAD
  * @property string $tennant_name
  * @property UserContract|null  $user
  *
@@ -40,6 +44,28 @@ use Illuminate\Support\Carbon;
  * @method array     treeSons()
  * @method array     toArray()
  * @method BelongsTo user()
+=======
+ * @property string             $tennant_name
+ * @property UserContract|null  $user
+ *
+ * @method mixed                                                           getKey()
+ * @method string                                                          getRouteKey()
+ * @method string                                                          getRouteKeyName()
+ * @method string                                                          getTable()
+ * @method mixed                                                           with($array)
+ * @method array<string, mixed>                                            getFillable()
+ * @method mixed                                                           fill($array)
+ * @method mixed                                                           getConnection()
+ * @method mixed                                                           update($params)
+ * @method mixed                                                           delete()
+ * @method mixed                                                           detach($params)
+ * @method mixed                                                           attach($params)
+ * @method mixed                                                           save($params)
+ * @method array<string, mixed>                                            treeLabel()
+ * @method array<string, mixed>                                            treeSons()
+ * @method array<string, mixed>                                            toArray()
+ * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
+>>>>>>> c7fd73eb (.)
  *
  * @phpstan-require-extends Model
  *

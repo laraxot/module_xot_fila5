@@ -14,7 +14,11 @@ class RangeIntersectAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * ---.
+=======
+     * @return array<int, int>|false
+>>>>>>> c7fd73eb (.)
      */
     public function execute(int $a0, int $b0, int $a1, int $b1): array|bool
     {

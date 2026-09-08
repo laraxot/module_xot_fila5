@@ -1,5 +1,9 @@
 # Verifica Proprietà Vietate in XotBaseResource - Report Completo
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> c7fd73eb (.)
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -80,4 +84,8 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 
 **Status**: ✅ **VERIFICA COMPLETATA**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚨 ERRORI GRAVI COMMESSI IN XotBasePanelProvider.php
 
 ## ANALISI DEGLI ERRORI COMMESSI
@@ -142,3 +143,12 @@ try {
 
 **NOTA**: Questo documento serve come reminder per non ripetere mai più questi errori.
 Ogni modifica futura deve rispettare DRY, KISS, SOLID e ROBUST.
+=======
+---
+module: theme
+topic: errori-gravi-xotbaanelprovider
+canonical: ../../../Themes/docs/shared-components/errori-gravi-xotbaanelprovider-conflict.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/errori-gravi-xotbaanelprovider-conflict.md
+>>>>>>> c7fd73eb (.)

@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Moduli',
@@ -42,6 +45,12 @@ return [
                     'error' => 'Errore',
                 ],
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'details' => [
             'dependencies' => [
@@ -70,6 +79,13 @@ return [
                 'placeholder' => 'URL della documentazione',
                 'help' => 'Pagina web del modulo',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'system' => [
             'order' => [
@@ -85,6 +101,13 @@ return [
                 'label' => 'Namespace',
                 'help' => 'Namespace PHP del modulo',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'timestamps' => [
             'created_at' => [
@@ -95,6 +118,13 @@ return [
                 'label' => 'Ultimo Aggiornamento',
                 'help' => 'Data dell\'ultimo aggiornamento',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'actions' => [
@@ -175,4 +205,9 @@ return [
             'migrations_pending' => 'Ci sono migrazioni in sospeso',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> c7fd73eb (.)
 ];

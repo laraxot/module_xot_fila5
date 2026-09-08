@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Relazioni Personalizzate
 
 ## Documentazione Dettagliata
@@ -55,3 +56,6 @@
    - Utilizzare le chiavi corrette
    - Mantenere la coerenza
    - Documentare le modifiche
+=======
+
+>>>>>>> c7fd73eb (.)

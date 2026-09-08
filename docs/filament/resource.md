@@ -7,7 +7,10 @@ section: content
 
 # Creazione di una Resource {#creazione-resource}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 - vedi doc savanna e crea le resource con:
 
 ```bash
@@ -39,6 +42,7 @@ class UserResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 ```
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/docs/filament/resource.md)
@@ -50,3 +54,14 @@ class UserResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 
 ---
 
+=======
+## Collegamenti tra versioni di resource.md
+* [resource.md](../../../Xot/docs/filament/resource.md)
+* [resource.md](../../../Xot/docs/resource.md)
+* [resource.md](../../../xot/docs/filament/resource.md)
+* [resource.md](../../../xot/docs/resource.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

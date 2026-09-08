@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBase Extension Rules - Comprehensive Guide
 
 ## 🚨 Critical Architectural Rule
@@ -197,3 +198,12 @@ Always run `php artisan optimize:clear && ./vendor/bin/phpstan analyse` after ma
 
 *
 *Architecture Version: XotBase 2.0*
+=======
+---
+module: theme
+topic: xotbase-extension
+canonical: ../../../Themes/docs/shared-components/xotbase-extension-rules-conflict.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xotbase-extension-rules-conflict.md
+>>>>>>> c7fd73eb (.)

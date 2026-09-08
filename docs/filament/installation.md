@@ -25,7 +25,11 @@ section: content
 
 - php artisan vendor:publish --tag="filament-jet-views"
 
+<<<<<<< HEAD
 - mettere in composer 
+=======
+- mettere in composer
+>>>>>>> c7fd73eb (.)
 
 ```bash
 "repositories": [
@@ -52,13 +56,27 @@ section: content
 - composer require savannabits/filament-modules versione 1.1
 
 - php artisan module:use Modulo
+<<<<<<< HEAD
 - 
+=======
+-
+>>>>>>> c7fd73eb (.)
 - php artisan module:make-filament-context Filament
 
 ### Versione HEAD
 
 - php artisan make:filament-user per creare utente
 ## Collegamenti tra versioni di installation.md
+<<<<<<< HEAD
+=======
+* [installation.md](../../../xot/docs/filament/installation.md)
+* [installation.md](../../../xot/docs/installation.md)
+* [installation.md](../../../xot/docs/base/installation.md)
+* [installation.md](../../../user/docs/installation.md)
+* [installation.md](../../../lang/docs/installation.md)
+* [installation.md](../../../cms/docs/installation.md)
+* [installation.md](../../../../themes/one/docs/installation.md)
+>>>>>>> c7fd73eb (.)
 * [installation.md](../../../Xot/docs/filament/installation.md)
 * [installation.md](../../../Xot/docs/installation.md)
 * [installation.md](../../../Xot/docs/base/installation.md)
@@ -67,10 +85,17 @@ section: content
 * [installation.md](../../../Cms/docs/installation.md)
 * [installation.md](../../../../Themes/One/docs/installation.md)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 ### Versione Incoming
 
 - php artisan make:filament-user per creare utente
 
+<<<<<<< HEAD
 ---
 
+=======
+---
+>>>>>>> c7fd73eb (.)

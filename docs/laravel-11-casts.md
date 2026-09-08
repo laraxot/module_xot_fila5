@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laravel 11+ Casts Pattern - CRITICAL UPDATE
 
 ## ⚠️ DEPRECATED: `protected $casts` Property
@@ -163,3 +164,12 @@ Before committing any model:
 
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
+=======
+---
+module: theme
+topic: laravel-11-casts
+canonical: ../../../Themes/docs/shared-components/laravel-11-casts-pattern.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laravel-11-casts-pattern.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazione Performance Architettura
 
 ## Stato
@@ -55,3 +56,6 @@
 * [performance.md](../../../lang/docs/packages/performance.md)
 * [performance.md](../../../job/docs/packages/performance.md)
 * [performance.md](../../../cms/docs/frontoffice/performance.md)
+=======
+
+>>>>>>> c7fd73eb (.)

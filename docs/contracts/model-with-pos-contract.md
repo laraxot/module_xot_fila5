@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ModelWithPosContract
 
 Il `ModelWithPosContract` è un'interfaccia che definisce il contratto per i modelli che necessitano di gestire una posizione ordinale.
@@ -100,3 +101,6 @@ class MenuItem extends Model implements ModelWithPosContract
 - Gestire correttamente le transazioni per gli aggiornamenti multipli
 - Mantenere la consistenza delle posizioni
 - Documentare eventuali comportamenti specifici del gruppo
+=======
+
+>>>>>>> c7fd73eb (.)

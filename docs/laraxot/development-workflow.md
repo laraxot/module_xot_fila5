@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Development Workflow in Laraxot
 
 ## Creating New Resources
@@ -104,3 +105,6 @@ return [
 - Mantenere la documentazione aggiornata
 - Utilizzare il versionamento semantico
 - Implementare il logging appropriato
+=======
+
+>>>>>>> c7fd73eb (.)

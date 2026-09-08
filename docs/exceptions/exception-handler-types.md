@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ExceptionHandler Types - Tipizzazione e Best Practices
 
 ## Overview
@@ -189,3 +190,6 @@ class ModuleExceptionHandler
 - [Exception Handling Guidelines](../development-rules.md)
 
 *Ultimo aggiornamento: Gennaio 2025* 
+=======
+
+>>>>>>> c7fd73eb (.)

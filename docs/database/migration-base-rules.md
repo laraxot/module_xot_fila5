@@ -2,17 +2,78 @@
 
 ## Regola universale
 - Usa sempre anonymous class: `return new class extends XotBaseMigration { ... }`
+<<<<<<< HEAD
 - Non implementare mai il metodo `down` se estendi XotBaseMigration
+=======
+- Usa sempre `$model_class` invece di `$table` e `$connection`
+- NON implementare il metodo `down()` (XotBaseMigration lo gestisce automaticamente)
+- Il nome del file DEVE terminare con `_table.php`
+>>>>>>> c7fd73eb (.)
 - Per aggiungere colonne a tabelle esistenti:
   - Copia la migrazione originale, aggiorna il timestamp
   - Aggiungi la colonna in `tableUpdate` solo se non esiste (`if (! $this->hasColumn(...))`)
   - Aggiorna sempre questa doc, la root docs e la doc del modulo
 
+<<<<<<< HEAD
 ## Motivazione
 - Prevenire conflitti di nomi
 - Garantire rollback sicuro
 - Compliance PHPStan livello 10
 - Facilitare troubleshooting e ripresa lavoro
+=======
+## Convenzioni di Nomenclatura
+
+**REGOLA UNIVERSALE**: Tutte le migrazioni DEVONO seguire il pattern `create`:
+
+```
+{YYYY_MM_DD}_{HHMMSS}_create_{table}_table.php
+```
+
+| Tipo | Pattern | Esempio |
+|------|---------|---------|
+| CREATE | `{YYYY_MM_DD}_{HHMMSS}_create_{table}_table.php` | `2026_01_01_000000_create_users_table.php` |
+| ADD (colonna) | `{YYYY_MM_DD}_{HHMMSS}_create_{table}_table.php` (stesso pattern!) | `2026_02_13_172135_create_users_table.php` |
+| CHANGE (colonna) | `{YYYY_MM_DD}_{HHMMSS}_create_{table}_table.php` (stesso pattern!) | `2026_02_13_163329_create_profiles_table.php` |
+| FIX (colonna) | `{YYYY_MM_DD}_{HHMMSS}_create_{table}_table.php` (stesso pattern!) | `2026_02_13_171410_create_activity_log_table.php` |
+
+### Motivazione
+- **Coerenza**: Tutte le migrazioni seguono lo stesso pattern
+- **Auto-discovery**: XotBaseMigration estrae il nome del modello dal nome file
+- **Manutenibilità**: Facile identificare quale tabella viene gestita
+- **DRY**: Una sola convenzione per tutti i tipi di modifica
+- La logica di creazione va in `tableCreate()`
+- La logica di modifica va in `tableUpdate()`
+- Il nome file rimane sempre `create_{table}_table.php`
+
+### Esempi Pratici
+
+```php
+// Per aggiungere una colonna a una tabella esistente:
+// File: 2026_02_13_172135_create_users_table.php
+
+return new class extends XotBaseMigration
+{
+    protected ?string $model_class = User::class;
+
+    public function up(): void
+    {
+        // CREATE - solo se tabella non esiste (ma in questo caso esiste già)
+        $this->tableCreate(function (Blueprint $table): void {
+            // Definizione completa della tabella
+            $table->uuid('id')->primary();
+            $table->string('name');
+        });
+
+        // UPDATE - aggiunge/modifica colonne mancanti
+        $this->tableUpdate(function (Blueprint $table): void {
+            if (! $this->hasColumn('lang')) {
+                $table->string('lang', 5)->default('it')->after('name');
+            }
+        });
+    }
+};
+```
+>>>>>>> c7fd73eb (.)
 
 ## Checklist rapida
 - [ ] Anonymous class
@@ -21,16 +82,31 @@
 - [ ] Aggiorna sempre la doc
 
 ## Cross-reference
+<<<<<<< HEAD
+=======
+- [Update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md)
+- [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/MODULE_NAMESPACE_RULES.md)
+>>>>>>> c7fd73eb (.)
 - [Update migrazioni Performance](../../performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/module_namespace_rules.md)
 
 ---
 
 ## Backlink
+<<<<<<< HEAD
 - [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
 - [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
 
 Ultimo aggiornamento: 2025-05-13
+=======
+- [Regole update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
+- [Ripresa lavoro migrazioni in root](../../../project_docs/MODULE_NAMESPACE_RULES.md)
+
+Ultimo aggiornamento: 2025-05-13
+- [Regole update migrazioni Performance](../../performance/project_docs/migration_update_rules.md) ← questa doc è sempre aggiornata
+- [Ripresa lavoro migrazioni in root](../../../project_docs/module_namespace_rules.md)
+
+>>>>>>> c7fd73eb (.)
 
 ---
 
@@ -42,6 +118,10 @@ Ultimo aggiornamento: 2025-05-13
 ---
 
 **Backlink modulo Performance:**
+<<<<<<< HEAD
+=======
+- [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md)
+>>>>>>> c7fd73eb (.)
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../performance/project_docs/azioni_organizzativa.md)
 
 ---
@@ -74,4 +154,8 @@ Ultimo aggiornamento: 2025-05-13
 
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> c7fd73eb (.)

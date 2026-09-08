@@ -10,7 +10,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Relations;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> c7fd73eb (.)
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -18,6 +21,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 use function call_user_func;
 
 /**
@@ -27,6 +31,17 @@ use function call_user_func;
  * @method static Builder whereBetween($column, iterable<int, mixed> $values, $boolean = 'and', $not = false)
  * @method static Builder selectRaw($expression, array<int, mixed> $bindings = []) ;
  * @method static Builder where($column, $operator = null, $value = null, $boolean = 'and')
+=======
+/**
+ * Class CustomRelation.
+ *
+ * @extends Relation<Model, Model, Collection<int, Model>>
+ *
+ * @method Builder<Model> when(mixed $value = null, ?callable $callback = null, ?callable $default = null)
+ * @method Builder<Model> whereBetween(string $column, iterable<int, mixed> $values, string $boolean = 'and', bool $not = false)
+ * @method Builder<Model> selectRaw(string $expression, array<int|string, mixed> $bindings = [])
+ * @method Builder<Model> where(string|\Closure|\Illuminate\Contracts\Database\Query\Expression $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
+>>>>>>> c7fd73eb (.)
  */
 class CustomRelation extends Relation
 {
@@ -40,6 +55,7 @@ class CustomRelation extends Relation
         /**
          * The baseConstraints callback.
          */
+<<<<<<< HEAD
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -49,6 +65,17 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected null|Closure $eagerMatcher,
+=======
+        protected \Closure $baseConstraints,
+        /**
+         * The eagerConstraints callback.
+         */
+        protected ?\Closure $eagerConstraints,
+        /**
+         * The eager constraints model matcher.
+         */
+        protected ?\Closure $eagerMatcher,
+>>>>>>> c7fd73eb (.)
     ) {
         parent::__construct($query, $model);
     }
@@ -64,11 +91,22 @@ class CustomRelation extends Relation
     /**
      * Set the constraints for an eager load of the relation.
      */
+<<<<<<< HEAD
     public function addEagerConstraints(array $models): void
     {
         // Parameter #1 $function of function call_user_func expects callable(): mixed, Closure|null given.
         if (!\is_callable($this->eagerConstraints)) {
             throw new Exception('eagerConstraints is not callable');
+=======
+    /**
+     * @param array<int, Model> $models
+     */
+    public function addEagerConstraints(array $models): void
+    {
+        // Parameter #1 $function of function call_user_func expects callable(): mixed, Closure|null given.
+        if (! \is_callable($this->eagerConstraints)) {
+            throw new \Exception('eagerConstraints is not callable');
+>>>>>>> c7fd73eb (.)
         }
 
         \call_user_func($this->eagerConstraints, $this, $models);
@@ -76,11 +114,26 @@ class CustomRelation extends Relation
 
     /**
      * Initialize the relation on a set of models.
+<<<<<<< HEAD
      *
      * @param  string  $relation
      */
     public function initRelation(array $models, $relation): array
     {
+=======
+     */
+    /**
+     * @param array<int, Model> $models
+     *
+     * @return array<int, Model>
+     */
+    public function initRelation(array $models, mixed $relation): array
+    {
+        if (! \is_string($relation)) {
+            throw new \Exception('relation is not a string');
+        }
+
+>>>>>>> c7fd73eb (.)
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -91,6 +144,7 @@ class CustomRelation extends Relation
     /**
      * Match the eagerly loaded results to their parents.
      *
+<<<<<<< HEAD
      * @param  string  $relation
      * @return array<int, Model>
      */
@@ -105,6 +159,31 @@ class CustomRelation extends Relation
 
         // @phpstan-ignore return.type
         return $res;
+=======
+     * @return array<int, Model>
+     */
+    /**
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+     *
+     * @return array<int, Model>
+     */
+    public function match(array $models, Collection $collection, mixed $relation): array
+    {
+        // Trying to invoke Closure|null but it might not be a callable.
+        if (! \is_callable($this->eagerMatcher)) {
+            throw new \Exception('eagerMatcher is not callable');
+        }
+
+        $res = ($this->eagerMatcher)($models, $collection, $relation, $this);
+        Assert::isArray($res);
+        Assert::allIsInstanceOf($res, Model::class);
+
+        /** @var array<int, Model> $models */
+        $models = array_values($res);
+
+        return $models;
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -112,15 +191,27 @@ class CustomRelation extends Relation
      *
      * @return Collection<int, Model>
      */
+<<<<<<< HEAD
     public function getResults()
+=======
+    public function getResults(): Collection
+>>>>>>> c7fd73eb (.)
     {
         return $this->get();
     }
 
     /**
      * Execute the query as a "select" statement.
+<<<<<<< HEAD
      *
      * @param  array<int, string>  $columns
+=======
+     */
+    /**
+     * @param array<int, string>|string $columns
+     *
+     * @return Collection<int, Model>
+>>>>>>> c7fd73eb (.)
      */
     public function get($columns = ['*']): Collection
     {
@@ -129,7 +220,11 @@ class CustomRelation extends Relation
         // models with the result of those columns as a separate model relation.
         $columns = $this->query->getQuery()->columns ? [] : $columns;
         if ($columns === ['*']) {
+<<<<<<< HEAD
             $columns = [$this->related->getTable() . '.*'];
+=======
+            $columns = [$this->related->getTable().'.*'];
+>>>>>>> c7fd73eb (.)
         }
 
         $query = $this->query->applyScopes();
@@ -141,6 +236,13 @@ class CustomRelation extends Relation
             $models = $query->eagerLoadRelations($models);
         }
 
+<<<<<<< HEAD
+=======
+        Assert::isArray($models);
+        Assert::allIsInstanceOf($models, Model::class);
+
+        /* @var array<int, Model> $models */
+>>>>>>> c7fd73eb (.)
         return $this->related->newCollection($models);
     }
 

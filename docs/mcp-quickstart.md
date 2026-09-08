@@ -255,4 +255,8 @@ Per problemi o domande:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-06
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per Getter di Branding in Xot
 
 ## Regola Fondamentale
@@ -29,3 +30,6 @@ I metodi getter devono riflettere il "cosa" rappresenta il dato, non il "dove" v
 
 ---
 **Ultima modifica:** 2025-05-06
+=======
+
+>>>>>>> c7fd73eb (.)

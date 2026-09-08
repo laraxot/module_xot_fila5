@@ -128,6 +128,7 @@ class GetFactoryAction
     {
         $factory_class = $this->getFactoryClass($model_class);
 
+<<<<<<< HEAD
         // Se esiste, la usa
         if (class_exists($factory_class)) {
             return $factory_class::new();
@@ -138,10 +139,36 @@ class GetFactoryAction
 
         // Richiede refresh per caricarla
         throw new Exception('Factory created, press F5 to refresh');
+=======
+        if (! class_exists($factory_class)) {
+            $this->loadFactoryFromDisk($model_class);
+        }
+
+        if (class_exists($factory_class)) {
+            return $this->instantiateFactory($factory_class);
+        }
+
+        $this->createFactory($model_class);
+        $this->loadFactoryFromDisk($model_class);
+
+        Assert::classExists($factory_class, '... run composer dump-autoload ...');
+
+        return $this->instantiateFactory($factory_class);
+>>>>>>> c7fd73eb (.)
     }
 }
 ```
 
+<<<<<<< HEAD
+=======
+### Flusso di risoluzione
+
+1. **Autoload Composer** — se la factory è già registrata, viene usata subito.
+2. **`loadFactoryFromDisk()`** — se il file esiste in `Modules/{Modulo}/database/factories/` ma non è ancora autoloadato (tipico con `ide-helper:models`), viene caricato con `require_once`.
+3. **`createFactory()`** — se il file non esiste, viene invocato `module:make-factory`; se il file esiste già, non viene rigenerato.
+4. **Errore esplicito** — se dopo tutti i tentativi la classe non è caricabile, messaggio con invito a `composer dump-autoload`.
+
+>>>>>>> c7fd73eb (.)
 ### Convenzioni Naming
 
 La factory viene cercata/creata seguendo le convenzioni Laravel:
@@ -229,6 +256,7 @@ php artisan module:make-factory User User
 php artisan route:list --compact
 ```
 
+<<<<<<< HEAD
 ### Errore: "Press F5 to refresh"
 
 **Problema**: Factory appena creata, non ancora autoloaded
@@ -242,6 +270,32 @@ composer dump-autoload
 
 # Riprova
 php artisan test
+=======
+### Errore: "Expected an existing class name" (ide-helper)
+
+**Problema**: `php artisan ide-helper:models` fallisce con factory mancante o non autoloadata
+
+**Causa**:
+- File factory presente su disco ma non ancora nell'autoload di Composer
+- `ide-helper` chiama `Model::factory()` anche con `include_factory_builders => false`
+
+**Soluzione**:
+```bash
+composer dump-autoload
+php artisan ide-helper:models --no-interaction
+```
+
+Da Laraxot 2026, `GetFactoryAction::loadFactoryFromDisk()` carica il file con `require_once` prima di lanciare eccezioni.
+
+### Errore: "Factory could not be loaded"
+
+**Problema**: `GetFactoryAction` non riesce a caricare la classe factory dopo i tentativi su disco e generazione
+
+**Soluzione**:
+```bash
+composer dump-autoload
+php artisan module:make-factory NomeModello NomeModulo
+>>>>>>> c7fd73eb (.)
 ```
 
 ### Conflitto con HasFactory standard
@@ -344,12 +398,24 @@ protected static function newFactory(): Factory
 
 - [GetFactoryAction](../actions/get-factory-action.md)
 - [BaseModel](../models/basemodel.md)
+<<<<<<< HEAD
+=======
+- [BasePivot](../../User/docs/models/basepivot.md)
+>>>>>>> c7fd73eb (.)
 - [BasePivot](../../user/docs/models/basepivot.md)
 - [Testing Guide](../testing/factory-testing.md)
 - [Laravel Factories Documentation](https://laravel.com/docs/eloquent-factories)
 
 ## Changelog
 
+<<<<<<< HEAD
+=======
+### v3.1.0 - Giugno 2025
+- ✅ **loadFactoryFromDisk** per factory su disco non ancora autoloadate (fix ide-helper su Sigma)
+- ✅ **createFactory** non rigenera se il file esiste già
+- ✅ Messaggio errore con `composer dump-autoload` al posto di "press F5"
+
+>>>>>>> c7fd73eb (.)
 ### v3.0.0 - 22 Ottobre 2025
 - ✅ **Ripristinato** trait dopo cancellazione accidentale
 - ✅ **Documentato** business logic e architettura
@@ -359,6 +425,12 @@ protected static function newFactory(): Factory
 ---
 
 **Autore**: Laraxot Core Team
+<<<<<<< HEAD
 **Ultima modifica**: 22 Ottobre 2025
 **Stato**: ✅ Produzione
 **PHPStan**: Level 9 compliant
+=======
+**Ultima modifica**: Giugno 2025
+**Stato**: ✅ Produzione
+**PHPStan**: Level 9 compliant
+>>>>>>> c7fd73eb (.)

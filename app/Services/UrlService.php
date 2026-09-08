@@ -14,6 +14,7 @@ namespace Modules\Xot\Services;
  */
 class UrlService
 {
+<<<<<<< HEAD
     private static null|self $instance = null;
 
     public function __construct()
@@ -25,6 +26,15 @@ class UrlService
     public static function getInstance(): self
     {
         if (!(self::$instance instanceof self)) {
+=======
+    private static ?self $instance = null;
+
+    public function __construct() {}
+
+    public static function getInstance(): self
+    {
+        if (! (self::$instance instanceof self)) {
+>>>>>>> c7fd73eb (.)
             self::$instance = new self();
         }
 
@@ -41,6 +51,10 @@ class UrlService
 
     public function checkValidUrl(string $url): bool
     {
+<<<<<<< HEAD
         return false !== filter_var($url, FILTER_VALIDATE_URL);
+=======
+        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+>>>>>>> c7fd73eb (.)
     }
 }

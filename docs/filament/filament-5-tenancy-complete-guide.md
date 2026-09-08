@@ -538,6 +538,9 @@ $panel->tenantMiddleware([
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Gennaio 2026  
+=======
+>>>>>>> c7fd73eb (.)
 **Versione Filament:** 5.x  
 **Compatibilità:** Laravel 12.x, PHP 8.3+

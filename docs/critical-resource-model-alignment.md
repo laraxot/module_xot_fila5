@@ -46,7 +46,15 @@ DatePicker::make('date_field'),                      // Date
 protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'posti', 'anno'];
 
 // RISORSA SBAGLIATA (PRIMA):
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         TextInput::make('id')->disabled(),
@@ -61,7 +69,15 @@ public static function getFormSchema(): array
 ### ✅ CORREZIONE: Campi Allineati al Modello
 ```php
 // RISORSA CORRETTA (DOPO):
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         TextInput::make('id')->disabled(),
@@ -151,4 +167,7 @@ done
 - [/.windsurf/rules/filament-resource-model-alignment.mdc](../../../../.windsurf/rules/filament-resource-model-alignment.mdc) - Regole Windsurf
 - [/.cursor/rules/filament-resource-model-alignment.mdc](../../../../.cursor/rules/filament-resource-model-alignment.mdc) - Regole Cursor
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Luglio 2025 - Dopo correzione errori critici modulo Progressioni*
+=======
+>>>>>>> c7fd73eb (.)

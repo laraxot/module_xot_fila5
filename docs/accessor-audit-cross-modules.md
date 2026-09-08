@@ -148,7 +148,11 @@ Ogni modulo deve avere:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Regola Globale](../../xot/docs/accessor-save-guard-global-rule.md)
+=======
+- [Regola Globale](../../Xot/docs/accessor-save-guard-global-rule.md)
+>>>>>>> c7fd73eb (.)
 ```
 
 ## Metriche Target
@@ -173,12 +177,21 @@ Ogni modulo deve avere:
 ## Collegamenti
 
 - [Regola Globale](./accessor-save-guard-global-rule.md)
+<<<<<<< HEAD
 - [Sigma Implementation](../../sigma/docs/fix-duplicate-entry-error-summary.md)
 - [Pattern Template](../../sigma/docs/accessor-refactoring-philosophy.md)
 
 ---
 
 **Creato**: [DATE]
+=======
+- [Sigma Implementation](../../Sigma/docs/fix-duplicate-entry-error-summary.md)
+- [Pattern Template](../../Sigma/docs/accessor-refactoring-philosophy.md)
+
+---
+
+**Creato**: 2025-01-29
+>>>>>>> c7fd73eb (.)
 **Status**: 📊 Audit Framework Pronto
 **Prossimo**: Audit IndennitaCondizioniLavoro
 **Timeline**: 3 settimane per audit completo

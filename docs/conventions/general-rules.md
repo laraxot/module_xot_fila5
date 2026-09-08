@@ -10,7 +10,11 @@
   ```php
   // -- CREATE --
   $this->tableCreate(...)
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> c7fd73eb (.)
   // -- UPDATE --
   $this->tableUpdate(...)
   ```
@@ -156,4 +160,8 @@ app/
 - Mantenere retrocompatibilità
 - Aggiornare documentazione
 - Verificare test
+<<<<<<< HEAD
 - Comunicare cambiamenti 
+=======
+- Comunicare cambiamenti
+>>>>>>> c7fd73eb (.)

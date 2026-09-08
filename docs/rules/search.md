@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Gestione degli SVG
 
 ### Utilizzo degli SVG in Filament
@@ -172,3 +173,6 @@
 * [search.md](docs/rules/search.md)
 * [search.md](../../../xot/docs/features/search.md)
 * [search.md](../../../xot/docs/rules/search.md)
+=======
+
+>>>>>>> c7fd73eb (.)

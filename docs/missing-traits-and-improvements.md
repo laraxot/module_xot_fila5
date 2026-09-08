@@ -612,6 +612,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -619,6 +620,15 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](architecture.md)
+- [Performance Guide](./PERFORMANCE_GUIDE.md)
+
+---
+
+**Data Creazione**: 2025-01-06
+>>>>>>> c7fd73eb (.)
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI
@@ -1236,6 +1246,7 @@ class AlertWidget extends BaseTableWidget
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Analisi Completa Codice](./comprehensive_code_analysis.md)
 - [Architettura Moduli](./architecture.md)
 - [Performance Guide](./performance_guide.md)
@@ -1243,6 +1254,15 @@ class AlertWidget extends BaseTableWidget
 ---
 
 **Data Creazione**: [DATE]
+=======
+- [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+- [Architettura Moduli](architecture.md)
+- [Performance Guide](./PERFORMANCE_GUIDE.md)
+
+---
+
+**Data Creazione**: 2025-01-06
+>>>>>>> c7fd73eb (.)
 **Priorità**: CRITICA
 **Effort Stimato**: 20-30 ore
 **Benefici**: ALTI

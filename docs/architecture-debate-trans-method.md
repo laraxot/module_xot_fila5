@@ -10,7 +10,11 @@ this debate emerged because php/filament frequently mixes static helpers, traits
 related docs:
 
 - [trait conflict resolution](./trait-conflict-resolution.md)
+<<<<<<< HEAD
 - [filosofia modulo xot](./filosofia_modulo_xot.md)
+=======
+- [filosofia modulo xot](./FILOSOFIA_MODULO_XOT.md)
+>>>>>>> c7fd73eb (.)
 - [quality tools zen](./quality-tools-zen.md)
 
 ## the furious internal debate

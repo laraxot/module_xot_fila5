@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -21,7 +24,11 @@ class HasManyAction
     /**
      * Execute the HasMany relation update.
      *
+<<<<<<< HEAD
      * @throws InvalidArgumentException
+=======
+     * @throws \InvalidArgumentException
+>>>>>>> c7fd73eb (.)
      */
     public function execute(Model $model, RelationData $relationDTO): void
     {
@@ -41,7 +48,11 @@ class HasManyAction
     /**
      * Determine if the update is a direct update.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+     * @param  array<string, mixed>  $data
+>>>>>>> c7fd73eb (.)
      */
     private function isDirectUpdate(array $data): bool
     {
@@ -50,7 +61,11 @@ class HasManyAction
 
     private function handleDirectUpdate(RelationData $relationDTO, HasManyUpdateData $updateData): void
     {
+<<<<<<< HEAD
         /** @var Builder $query */
+=======
+        /** @var Builder<Model> $query */
+>>>>>>> c7fd73eb (.)
         $query = $relationDTO->related->newQuery();
 
         $query->where($updateData->foreignKey, $updateData->parentKey)->update([$updateData->foreignKey => null]);
@@ -70,7 +85,11 @@ class HasManyAction
 
         foreach ($relationDTO->data as $item) {
             Assert::isArray($item);
+<<<<<<< HEAD
             if (!isset($item[$keyName])) {
+=======
+            if (! isset($item[$keyName])) {
+>>>>>>> c7fd73eb (.)
                 continue;
             }
 
@@ -95,7 +114,11 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
+<<<<<<< HEAD
      * @param array<int|string> $updatedIds
+=======
+     * @param  array<int, int|string>  $updatedIds
+>>>>>>> c7fd73eb (.)
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

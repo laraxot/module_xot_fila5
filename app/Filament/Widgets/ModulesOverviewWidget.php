@@ -4,24 +4,38 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use ReflectionMethod;
 use Throwable;
 use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+=======
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 
 /**
  * Widget per mostrare una panoramica dei moduli disponibili.
  * Utilizza l'action GetModulesNavigationItems per caricare dinamicamente i moduli.
  */
+<<<<<<< HEAD
 class ModulesOverviewWidget extends Widget
 {
     protected string $view = 'xot::filament.widgets.modules-overview';
 
     protected int | string | array $columnSpan = 'full';
 
+=======
+class ModulesOverviewWidget extends XotBaseWidget
+{
+    /** @var view-string */
+    protected string $view = 'xot::filament.widgets.modules-overview';
+
+    protected int|string|array $columnSpan = 'full';
+>>>>>>> c7fd73eb (.)
 
     /**
      * Ottiene i moduli disponibili per l'utente corrente.
@@ -38,6 +52,7 @@ class ModulesOverviewWidget extends Widget
             $configs = app(GetModulesNavigationItems::class)->getCachedModuleConfigs();
 
             // Ordina per sort
+<<<<<<< HEAD
             usort($configs, static fn ($a, $b) => ($a['sort'] <=> $b['sort']));
 
             $user = Auth::user();
@@ -46,19 +61,40 @@ class ModulesOverviewWidget extends Widget
                     return false;
                 }
                 if (!method_exists($user, 'hasRole')) {
+=======
+            usort($configs, static fn (array $a, array $b) => ($a['sort'] <=> $b['sort']));
+
+            $user = Auth::user();
+            $hasRoleFn = static function (string $role) use ($user): bool {
+                if (! $user) {
+                    return false;
+                }
+                if (! method_exists($user, 'hasRole')) {
+>>>>>>> c7fd73eb (.)
                     return true; // fallback: mostra se non abbiamo sistema ruoli
                 }
                 try {
                     // Usa reflection per evitare errori di linting
+<<<<<<< HEAD
                     $reflection = new ReflectionMethod($user, 'hasRole');
                     return (bool) $reflection->invoke($user, $role);
                 } catch (Throwable $e) {
+=======
+                    $reflection = new \ReflectionMethod($user, 'hasRole');
+
+                    return (bool) $reflection->invoke($user, $role);
+                } catch (\Throwable $e) {
+>>>>>>> c7fd73eb (.)
                     return false;
                 }
             };
 
             foreach ($configs as $cfg) {
+<<<<<<< HEAD
                 $role = $cfg['module_low'] . '::admin';
+=======
+                $role = $cfg['module_low'].'::admin';
+>>>>>>> c7fd73eb (.)
                 if (! $hasRoleFn($role)) {
                     continue;
                 }
@@ -66,20 +102,43 @@ class ModulesOverviewWidget extends Widget
                 $modules[] = [
                     'name' => $cfg['module'],
                     'name_lower' => $cfg['module_low'],
+<<<<<<< HEAD
                     'url' => '/' . $cfg['module_low'] . '/admin',
+=======
+                    'url' => '/'.$cfg['module_low'].'/admin',
+>>>>>>> c7fd73eb (.)
                     'icon' => $cfg['icon'] ?: 'heroicon-o-cube',
                     'description' => $this->getModuleDescription($cfg['module']),
                 ];
             }
+<<<<<<< HEAD
             
             return $modules;
         } catch (Throwable $e) {
             Log::error('Errore nel caricamento moduli per widget: ' . $e->getMessage());
+=======
+
+            return $modules;
+        } catch (\Throwable $e) {
+            Log::error('Errore nel caricamento moduli per widget: '.$e->getMessage());
+
+>>>>>>> c7fd73eb (.)
             return $this->getDefaultModules();
         }
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Determina se il widget deve essere visibile.
+     */
+    public static function canView(): bool
+    {
+        return true;
+    }
+
+    /**
+>>>>>>> c7fd73eb (.)
      * Restituisce una lista di moduli di default in caso di errori.
      *
      * @return array<int, array<string, mixed>>
@@ -95,27 +154,46 @@ class ModulesOverviewWidget extends Widget
                 'description' => $this->getModuleDescription('User'),
             ],
             [
+<<<<<<< HEAD
                 'name' => 'TechPlanner',
                 'name_lower' => 'techplanner',
                 'url' => '/techplanner/admin',
                 'icon' => 'heroicon-o-clipboard-document-list',
                 'description' => $this->getModuleDescription('TechPlanner'),
+=======
+                'name' => '<main module>',
+                'name_lower' => '<nome progetto>',
+                'url' => '/<nome progetto>/admin',
+                'icon' => 'heroicon-o-clipboard-document-list',
+                'description' => $this->getModuleDescription('<main module>'),
+>>>>>>> c7fd73eb (.)
             ],
         ];
     }
 
+<<<<<<< HEAD
 
     /**
      * Ottiene la descrizione per un modulo.
      *
      * @param string $module Nome del modulo
+=======
+    /**
+     * Ottiene la descrizione per un modulo.
+     *
+     * @param  string  $module  Nome del modulo
+>>>>>>> c7fd73eb (.)
      * @return string Descrizione del modulo
      */
     private function getModuleDescription(string $module): string
     {
         $descriptions = [
             'User' => 'Gestione utenti e autenticazione',
+<<<<<<< HEAD
             'TechPlanner' => 'Pianificazione tecnica e progetti',
+=======
+            '<main module>' => 'Pianificazione tecnica e progetti',
+>>>>>>> c7fd73eb (.)
             'Geo' => 'Gestione dati geografici e mappe',
             'Cms' => 'Sistema di gestione contenuti',
             'Notify' => 'Sistema di notifiche',
@@ -126,6 +204,7 @@ class ModulesOverviewWidget extends Widget
             'UI' => 'Componenti interfaccia utente',
         ];
 
+<<<<<<< HEAD
         return $descriptions[$module] ?? 'Modulo ' . $module;
     }
 
@@ -137,4 +216,8 @@ class ModulesOverviewWidget extends Widget
         return true;
     }
 
+=======
+        return $descriptions[$module] ?? 'Modulo '.$module;
+    }
+>>>>>>> c7fd73eb (.)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://github.com/pterodactyl/panel/tree/develop
 
 https://github.com/serversideup/financial-freedom
@@ -36,3 +37,6 @@ https://github.com/jigar-dhulla/exchange-rate
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

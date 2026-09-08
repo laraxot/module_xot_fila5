@@ -219,4 +219,8 @@ Validator::make($request->all(), [
         ]);
     }
 });
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

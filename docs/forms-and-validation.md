@@ -66,7 +66,11 @@ class RegistrationWidget extends XotBaseWidget
 class RegisterForm extends Component
 {
     public $first_name;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     protected $rules = [
         'first_name' => 'required|max:255',
     ];
@@ -107,14 +111,22 @@ class RegisterForm extends Component
    class MyFormWidget extends XotBaseWidget
    {
        protected static ?string $heading = 'Form Title';
+<<<<<<< HEAD
        
+=======
+
+>>>>>>> c7fd73eb (.)
        public function getFormSchema(): array
        {
            return [
                // Schema qui...
            ];
        }
+<<<<<<< HEAD
        
+=======
+
+>>>>>>> c7fd73eb (.)
        protected function getFormModel(): Model
        {
            return YourModel::class;
@@ -172,4 +184,8 @@ Per migrare form esistenti:
    - Testa i widget come componenti
    - Usa i test browser quando necessario
    - Implementa test di integrazione
+<<<<<<< HEAD
    - Verifica la validazione 
+=======
+   - Verifica la validazione
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+---
+title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
+module: "Xot"
+type: concept
+tags: [filament, table, columns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament table columns"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
 ## Regola
@@ -28,7 +45,15 @@ public function getTableColumns(): array
 **Nota:** Nei moduli come Performance, la logica tabellare (colonne, filtri, azioni) va sempre nelle pagine (che estendono `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords`), non nelle Resource. Vedi esempio e motivazione nella [documentazione Performance](../../Performance/docs/filament-resources.md).
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
+=======
+<<<<<<< HEAD
+- [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
+=======
+- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
 ## Nota storica: correzione XotBaseManageRelatedRecords

@@ -21,16 +21,25 @@ class GetTransKeyAction
     {
         $class0 = $class;
         // If no class is provided, try to get it from the backtrace
+<<<<<<< HEAD
         if ('' === $class) {
             $backtrace = debug_backtrace();
             Assert::isArray($backtrace);
             $class = Arr::get($backtrace, '1.class');
             Assert::string($class, '[' . __LINE__ . '][' . class_basename($this) . ']');
+=======
+        if ($class === '') {
+            /** @var list<array{function: string, line?: int, file?: string, class?: class-string, type?: '->'|'::', args?: list<mixed>, object?: object}> $backtrace PHPStan knows this is always array */
+            $backtrace = debug_backtrace();
+            $class = Arr::get($backtrace, '1.class');
+            Assert::string($class, '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> c7fd73eb (.)
         }
 
         $arr = explode('\\', $class);
 
         // Handle cases where the provided class is not in the "Modules" namespace
+<<<<<<< HEAD
         if ('Modules' !== $arr[0]) {
             $backtrace = array_slice(debug_backtrace(), 2);
             $res = Arr::first(
@@ -43,15 +52,32 @@ class GetTransKeyAction
             if (null === $res || !isset($res['object'])) {
                 $page = Arr::get(debug_backtrace(), '0.args.0');
                 Assert::string($page, __FILE__ . ':' . __LINE__ . ' - ' . class_basename(__CLASS__));
+=======
+        if ($arr[0] !== 'Modules') {
+            $backtrace = array_slice(debug_backtrace(), 2);
+            $res = Arr::first(
+                $backtrace,
+                fn (array $item): bool => isset($item['object']) && explode('\\', get_class($item['object']))[0] === 'Modules',
+            );
+
+            if ($res === null || ! isset($res['object'])) {
+                $page = Arr::get(debug_backtrace(), '0.args.0');
+                Assert::string($page, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+>>>>>>> c7fd73eb (.)
                 $main_module = XotData::make()->main_module;
                 $main_module_low = mb_strtolower($main_module);
                 $page_arr = explode('\\', $page);
                 $page_arr_count = count($page_arr);
                 $page_arr_last = $page_arr[$page_arr_count - 1];
                 $page_arr_last_snake = Str::of($page_arr_last)->snake()->toString();
+<<<<<<< HEAD
                 $tmp = $main_module_low . '::' . $page_arr_last_snake;
 
                 return $tmp;
+=======
+
+                return $main_module_low.'::'.$page_arr_last_snake;
+>>>>>>> c7fd73eb (.)
             }
 
             $class = get_class($res['object']);
@@ -77,11 +103,19 @@ class GetTransKeyAction
         $arr = explode('_', $class_snake);
         $first = $arr[0];
         $last = $arr[count($arr) - 1];
+<<<<<<< HEAD
         if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit','view'], strict: true)) {
             $class_snake = implode('_', array_slice($arr, 1));
         }
         if (in_array($last, ['action'], strict: true)) {
             $class_snake = Str::beforeLast($class_snake, '_' . $last);
+=======
+        if (in_array($first, ['dashboard', 'list', 'get', 'manage', 'edit', 'view', 'create'], strict: true)) {
+            $class_snake = implode('_', array_slice($arr, 1));
+        }
+        if (in_array($last, ['action'], strict: true)) {
+            $class_snake = Str::beforeLast($class_snake, '_'.$last);
+>>>>>>> c7fd73eb (.)
         }
 
         if (Str::endsWith($class_snake, 'form_schema')) {
@@ -96,8 +130,12 @@ class GetTransKeyAction
                 ->toString();
         }
 
+<<<<<<< HEAD
         $tmp = $module_low . '::' . $class_snake;
 
         return $tmp;
+=======
+        return $module_low.'::'.$class_snake;
+>>>>>>> c7fd73eb (.)
     }
 }

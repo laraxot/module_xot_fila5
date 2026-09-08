@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: [DATE]
@@ -296,3 +297,12 @@ php artisan lang:check
 **Stato**: ✅ Completato
 
 **Stato**: ✅ Completato
+=======
+---
+module: theme
+topic: gits-resolution-5ba246
+canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-conflict-5ba246.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-conflict-5ba246.md
+>>>>>>> c7fd73eb (.)

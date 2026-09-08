@@ -220,7 +220,11 @@ try {
         'migration' => 'create_users_table',
         'error' => $e->getMessage(),
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     throw $e;
 }
 ```
@@ -298,4 +302,8 @@ return new class extends Migration
         Schema::dropIfExists('comments');
     }
 };
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

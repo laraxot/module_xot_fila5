@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pest Testing - Guida Esecuzione dalla Cartella Laravel
 
 **Framework**: Pest PHP 3.8.4  
@@ -383,3 +384,12 @@ cd laravel
 **Ultimo aggiornamento**: 9 Gennaio 2026  
 **Versione Pest**: 3.8.4  
 **Status**: ✅ Documentazione Completa
+=======
+---
+module: theme
+topic: pest-execution
+canonical: ../../../Themes/docs/shared-components/pest-execution-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/pest-execution-guide.md
+>>>>>>> c7fd73eb (.)

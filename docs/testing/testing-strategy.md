@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testing Strategy: MySQL-Based Testing Without RefreshDatabase
 
 ## Overview
@@ -160,3 +161,12 @@ Our current MySQL-based testing approach without `RefreshDatabase` provides the 
 - [Laravel Testing Documentation](https://laravel.com/project_docs/testing)
 - [Database Testing Best Practices](https://laracasts.com/series/phpunit-testing-in-laravel-6)
 - [Testing Strategies for Laravel Applications](https://tighten.co/blog/5-questions-every-laravel-test-answers)
+=======
+---
+module: theme
+topic: testing-strategy
+canonical: ../../../../Themes/docs/shared-components/testing-strategy.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/testing-strategy.md
+>>>>>>> c7fd73eb (.)

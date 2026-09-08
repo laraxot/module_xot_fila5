@@ -5,16 +5,23 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 use Override;
 use Filament\Actions\CreateAction;
 use Filament\Actions;
+=======
+use Filament\Actions\CreateAction;
+>>>>>>> c7fd73eb (.)
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\Clock;
+=======
+>>>>>>> c7fd73eb (.)
 
 /**
  * @see CacheResource
@@ -32,6 +39,7 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
     public function getTableColumns(): array
     {
@@ -64,6 +72,14 @@ class ListCaches extends XotBaseListRecords
      * @return array<string, Action>
      */
     #[Override]
+=======
+    
+   
+    /**
+     * @return array<string, Action>
+     */
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     protected function getHeaderActions(): array
     {
         return [

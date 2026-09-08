@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole di Ereditarietà
 
 ## Principi Fondamentali
@@ -86,3 +87,6 @@ class Child extends Parent {
 - [Documentazione PHP su Ereditarietà](https://www.php.net/manual/en/language.oop5.inheritance.php)
 - [Principi SOLID](https://en.wikipedia.org/wiki/SOLID)
 - [PHPStan - Analisi Static](https://phpstan.org/)
+=======
+
+>>>>>>> c7fd73eb (.)

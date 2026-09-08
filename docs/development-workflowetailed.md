@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laraxot Development Workflow - Detailed Guide
 
 ## 🚀 Development Lifecycle
@@ -519,3 +520,12 @@ echo "5. Run quality checks"
 **Workflow Version**: 1.0
 
 **Maintained by**: Xot Module Development Team
+=======
+---
+module: theme
+topic: development-workflowetailed
+canonical: ../../../Themes/docs/shared-components/development-workflow-detailed.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/development-workflow-detailed.md
+>>>>>>> c7fd73eb (.)

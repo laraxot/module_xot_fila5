@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotComposer
 
 Il `XotComposer` è un view composer che gestisce la composizione delle viste per il modulo Xot. Si occupa di iniettare dati comuni in tutte le viste che lo utilizzano.
@@ -60,3 +61,6 @@ View::composer('*', XotComposer::class);
 - [Test](../../../tests/Unit/View/Composers/XotComposerTest.php)
 - [RouteService](../../services/route-service.md)
 - [ThemeService](../../services/theme-service.md)
+=======
+
+>>>>>>> c7fd73eb (.)

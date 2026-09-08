@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Model Fields Validation - Critical Memory
 
 ## ERRORE CRITICO IDENTIFICATO
@@ -63,3 +64,6 @@ Per ogni modello:
 - **TESTARE**: Verificare che le correzioni funzionino
 
 *Ultimo aggiornamento: gennaio 2025 - Verifica critica dei campi del modello implementata*
+=======
+
+>>>>>>> c7fd73eb (.)

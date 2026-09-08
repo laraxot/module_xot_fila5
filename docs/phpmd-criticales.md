@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni Critiche PHPMD - Analisi e Piano
 
 **Obiettivo**: Identificare e correggere solo problemi critici (codice morto, bug evidenti)
@@ -35,3 +36,12 @@ Correggiamo solo variabili che:
 - **Warning critici corretti**: 1
 - **Warning da ignorare**: (da categorizzare)
 - **PHPStan**: 0 errori (mantenuto)
+=======
+---
+module: theme
+topic: phpmd-criticales
+canonical: ../../../Themes/docs/shared-components/phpmd-critical-fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-critical-fixes.md
+>>>>>>> c7fd73eb (.)

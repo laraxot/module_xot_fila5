@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\LogResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Support\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
@@ -14,10 +15,15 @@ use Filament\Infolists\Components\TextEntry;
 use Modules\Xot\Filament\Resources\LogResource;
 
 use function Safe\json_encode;
+=======
+use Modules\Xot\Filament\Resources\LogResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> c7fd73eb (.)
 
 class ViewLog extends XotBaseViewRecord
 {
     protected static string $resource = LogResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<int, Component>
@@ -45,4 +51,6 @@ class ViewLog extends XotBaseViewRecord
             ]),
         ];
     }
+=======
+>>>>>>> c7fd73eb (.)
 }

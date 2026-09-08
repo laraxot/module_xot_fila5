@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+module: theme
+topic: optimization_opportunities
+canonical: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+>>>>>>> c7fd73eb (.)
 # Opportunità di Ottimizzazione DRY + KISS
 
 ## Panoramica
@@ -368,3 +382,9 @@ return array_merge(
 
 *Ultimo aggiornamento: Giugno 2025*
 *Autore: Analisi Automatica del Progetto*
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)

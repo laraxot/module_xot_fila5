@@ -14,44 +14,91 @@ use Webmozart\Assert\Assert;
  * Trait Updater.
  * https://dev.to/hasanmn/automatically-update-createdby-and-updatedby-in-laravel-using-bootable-traits-28g9.
  *
+<<<<<<< HEAD
  * @property int|null $created_by ID dell'utente che ha creato il record
  * @property int|null $updated_by ID dell'utente che ha aggiornato il record
  * @property int|null $deleted_by ID dell'utente che ha eliminato il record
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  * @property-read ProfileContract|null $deleter
+=======
+ * @property int|null             $created_by ID dell'utente che ha creato il record
+ * @property int|null             $updated_by ID dell'utente che ha aggiornato il record
+ * @property int|null             $deleted_by ID dell'utente che ha eliminato il record
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+>>>>>>> c7fd73eb (.)
  */
 trait Updater
 {
     /**
+<<<<<<< HEAD
      * Summary of creator.
      *
      * @return BelongsTo<ProfileContract&Model, static>
+=======
+     * Get the user who created the model.
+     *
+     * @return BelongsTo<Model&ProfileContract, $this>
+     *
+     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
+>>>>>>> c7fd73eb (.)
      */
     public function creator(): BelongsTo
     {
         /** @var class-string<ProfileContract&Model> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
 
+<<<<<<< HEAD
         // @phpstan-ignore return.type
+=======
+>>>>>>> c7fd73eb (.)
         return $this->belongsTo($profileClass, 'created_by', 'user_id');
     }
 
     /**
      * Get the last user who updated the model.
      *
+<<<<<<< HEAD
      * @return BelongsTo<ProfileContract&Model, static>
+=======
+     * @return BelongsTo<Model&ProfileContract, $this>
+     *
+     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
+>>>>>>> c7fd73eb (.)
      */
     public function updater(): BelongsTo
     {
         /** @var class-string<ProfileContract&Model> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
 
+<<<<<<< HEAD
         // @phpstan-ignore return.type
+=======
+>>>>>>> c7fd73eb (.)
         return $this->belongsTo($profileClass, 'updated_by', 'user_id');
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Get the user who deleted the model.
+     *
+     * @return BelongsTo<Model&ProfileContract, $this>
+     *
+     * @phpstan-return BelongsTo<Model&ProfileContract, $this>
+     */
+    public function deleter(): BelongsTo
+    {
+        /** @var class-string<ProfileContract&Model> $profileClass */
+        $profileClass = XotData::make()->getProfileClass();
+
+        return $this->belongsTo($profileClass, 'deleted_by', 'user_id');
+    }
+
+    /**
+>>>>>>> c7fd73eb (.)
      * bootUpdater function.
      */
     protected static function bootUpdater(): void
@@ -80,7 +127,11 @@ trait Updater
          * For deletes we need to save the model first with the deleted_by field
          */
         static::deleting(static function (Model $model): void {
+<<<<<<< HEAD
             Assert::isArray($attributes = $model->attributes);
+=======
+            Assert::isArray($attributes = $model->getAttributes());
+>>>>>>> c7fd73eb (.)
 
             if (\in_array('deleted_by', array_keys($attributes), false)) {
                 $model->setAttribute('deleted_by', authId());

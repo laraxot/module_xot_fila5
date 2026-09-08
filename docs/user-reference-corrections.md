@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Reference Corrections Summary - Gennaio 2025
 
 **Obiettivo**: Correggere tutti i riferimenti a `App\Models\User` che non esiste
@@ -147,3 +148,12 @@ $userClass = XotData::make()->getUserClass();
 ---
 
 *Ultimo aggiornamento: [DATE]*
+=======
+---
+module: theme
+topic: user-reference-corrections
+canonical: ../../../Themes/docs/shared-components/user-reference-corrections-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-reference-corrections-sumy.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PdfData
 
 La classe PdfData è un Data Object che gestisce la configurazione e i dati per la generazione di PDF nel modulo Xot.
@@ -68,3 +69,6 @@ La classe utilizza `Assert` per validare:
 - Presenza dei campi obbligatori
 - Tipi di dati corretti
 - Valori validi per orientamento e dimensioni pagina
+=======
+
+>>>>>>> c7fd73eb (.)

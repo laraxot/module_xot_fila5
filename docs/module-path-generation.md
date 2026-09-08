@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: [DATE]
@@ -90,3 +91,12 @@ $assetsPath = app(GetModulePathByGeneratorAction::class)->execute($this->name, '
 ---
 
 **Filosofia**: Il sistema si adatta ai moduli, non viceversa.
+=======
+---
+module: theme
+topic: module-path-generation
+canonical: ../../../Themes/docs/shared-components/module-path-generation-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-path-generation-philosophy.md
+>>>>>>> c7fd73eb (.)

@@ -9,10 +9,16 @@ use Spatie\LaravelData\Data;
 /**
  * Class SearchEngineData - Gestisce la configurazione dei motori di ricerca per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
+<<<<<<< HEAD
+=======
+ *
+ * @phpstan-consistent-constructor
+>>>>>>> c7fd73eb (.)
  */
 class SearchEngineData extends Data
 {
     /**
+<<<<<<< HEAD
      * @param  string  $driver  Driver del motore di ricerca (algolia, meilisearch, ecc.)
      * @param  string  $algolia_app_id  Algolia App ID
      * @param  string  $algolia_secret  Chiave segreta Algolia
@@ -20,6 +26,15 @@ class SearchEngineData extends Data
      * @param  string  $meili_key  Chiave MeiliSearch
      * @param  bool  $enable_local  Abilita la ricerca locale
      * @param  array<int, class-string>  $searchable  Modelli cercabili
+=======
+     * @param string                   $driver         Driver del motore di ricerca (algolia, meilisearch, ecc.)
+     * @param string                   $algolia_app_id Algolia App ID
+     * @param string                   $algolia_secret Chiave segreta Algolia
+     * @param string                   $meili_host     Host MeiliSearch
+     * @param string                   $meili_key      Chiave MeiliSearch
+     * @param bool                     $enable_local   Abilita la ricerca locale
+     * @param array<int, class-string> $searchable     Modelli cercabili
+>>>>>>> c7fd73eb (.)
      */
     public function __construct(
         public readonly string $driver = 'local',
@@ -29,13 +44,24 @@ class SearchEngineData extends Data
         public readonly string $meili_key = '',
         public readonly bool $enable_local = true,
         public readonly array $searchable = [],
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> c7fd73eb (.)
 
     /**
      * Create a new instance of SearchEngineData with default values.
      */
+<<<<<<< HEAD
     public static function make(): static
     {
         return new static();
+=======
+    public static function make(): self
+    {
+        return new self();
+>>>>>>> c7fd73eb (.)
     }
 }

@@ -5,11 +5,20 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 use Illuminate\Support\Arr;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match_all;
 
+=======
+
+use function Safe\preg_match_all;
+
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+>>>>>>> c7fd73eb (.)
 /**
  * Parses a print page string into an array of page numbers.
  *
@@ -32,10 +41,23 @@ class ParsePrintPageStringAction
         $matches = [];
         preg_match_all($pattern, $str, $matches);
 
+<<<<<<< HEAD
         Assert::isArray($matches);
         Assert::notEmpty($matches[0], 'No valid page numbers found');
         Assert::isArray($matches[0]);
         $matchCount = count($matches[0]);
+=======
+        /**
+         * @var array{list<string>, list<numeric-string>, list<''|numeric-string>} $matches
+         */
+        if ([] === $matches[0]) {
+            throw new \InvalidArgumentException('No valid page numbers found');
+        }
+
+        /** @var list<string> $matches0 */
+        $matches0 = $matches[0];
+        $matchCount = count($matches0);
+>>>>>>> c7fd73eb (.)
         $res = [];
 
         for ($i = 0; $i < $matchCount; ++$i) {

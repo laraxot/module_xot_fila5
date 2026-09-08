@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni per i Campi dei Nomi Personali
 
 ## Regola Fondamentale
@@ -174,3 +175,6 @@ $table->string('suffix')->nullable(); // Jr., Sr., ecc.
 - [Convenzioni di Nomenclatura](../naming-conventions.md)
 - [Linee Guida per i Database](../database-guidelines.md)
 - [Traduzioni](../translations.md)
+=======
+
+>>>>>>> c7fd73eb (.)

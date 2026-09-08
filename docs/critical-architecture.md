@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Critiche di Architettura Laraxot
 
 **ULTIMO AGGIORNAMENTO**: 2025-01-XX
@@ -242,3 +243,12 @@ class MyModel extends BaseModel
 2. **Violare queste regole causa problemi di manutenzione e compatibilità**
 3. **PHPStan dovrebbe rilevare molte di queste violazioni**
 4. **Aggiornare sempre questo documento quando vengono aggiunte nuove regole**
+=======
+---
+module: theme
+topic: critical-architecture
+canonical: ../../../Themes/docs/shared-components/critical-architecture-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/critical-architecture-rules.md
+>>>>>>> c7fd73eb (.)

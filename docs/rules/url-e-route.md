@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per URL e Route in il progetto
 
 ## Introduzione
@@ -172,3 +173,6 @@ dd(app()->getLocale());
 // Vedere tutti i parametri della richiesta
 dd(request()->all());
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

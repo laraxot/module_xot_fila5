@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Comando DatabaseSchemaExport
 
 ## Panoramica
@@ -41,3 +42,6 @@ Il comando `DatabaseSchemaExportCommand` esporta lo schema del database in forma
 - Aggiunto supporto per più tipi di database
 - Ottimizzata la struttura JSON
 - Standardizzazione dei messaggi in italiano
+=======
+
+>>>>>>> c7fd73eb (.)

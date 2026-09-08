@@ -47,6 +47,10 @@ class ThemeService
      */
     public static function getThemePath(): string
     {
+<<<<<<< HEAD
         return resource_path('themes/' . self::$currentTheme);
+=======
+        return resource_path('themes/'.self::$currentTheme);
+>>>>>>> c7fd73eb (.)
     }
 }

@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources;
 
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
 use Filament\Infolists;
 use Filament\Infolists\Components\RepeatableEntry;
 use Filament\Infolists\Components\TextEntry;
@@ -13,12 +14,20 @@ use Filament\Schemas\Schema;
 use Filament\Support\Components\Component;
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages;
+=======
+use Filament\Infolists\Components\TextEntry;
+use Filament\Support\Components\Component;
+use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ViewLog;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Modules\Xot\Models\Log;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> c7fd73eb (.)
 
 class LogResource extends XotBaseResource
 {
@@ -29,6 +38,7 @@ class LogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[Override]
     public static function getFormSchema(): array
     {
@@ -40,6 +50,10 @@ class LogResource extends XotBaseResource
     }
 
     public static function getInfolistSchema(): array
+=======
+
+    public function getInfolistSchema(): array
+>>>>>>> c7fd73eb (.)
     {
         return [
             'name' => TextEntry::make('name')->columnSpanFull(),
@@ -61,13 +75,19 @@ class LogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+>>>>>>> c7fd73eb (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+>>>>>>> c7fd73eb (.)
     public static function getPages(): array
     {
         return [

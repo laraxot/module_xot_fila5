@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Deprecazione Comandi MCP e Migrazione Azioni Database
 
 ## Panoramica
@@ -140,3 +141,12 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 ---
 
 *Ultimo aggiornamento: Giugno 2025*
+=======
+---
+module: theme
+topic: mcp-commandseprecation
+canonical: ../../../Themes/docs/shared-components/mcp-commands-deprecation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp-commands-deprecation.md
+>>>>>>> c7fd73eb (.)

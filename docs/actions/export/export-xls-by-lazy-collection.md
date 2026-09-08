@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ExportXlsByLazyCollection
 
 ## Descrizione
@@ -78,3 +79,6 @@ return $response; // Scarica il file Excel
 - [Performance Guidelines](../performance-guidelines.md)
 - [Actions Overview](./readme.md)
 - [PHPStan Fixes Summary](../../../../docs/phpstan-fixes-summary.md)
+=======
+
+>>>>>>> c7fd73eb (.)

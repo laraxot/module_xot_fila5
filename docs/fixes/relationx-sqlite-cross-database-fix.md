@@ -2,6 +2,10 @@
 
 ## Problema Risolto
 
+<<<<<<< HEAD
+=======
+**Data**: 26 Settembre 2025
+>>>>>>> c7fd73eb (.)
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
 
 ## Causa Radice
@@ -73,7 +77,11 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
+<<<<<<< HEAD
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+=======
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+>>>>>>> c7fd73eb (.)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura
@@ -90,6 +98,10 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Problema Risolto
 
+<<<<<<< HEAD
+=======
+**Data**: 26 Settembre 2025
+>>>>>>> c7fd73eb (.)
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
 
 ## Causa Radice
@@ -160,8 +172,13 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Customer User Fix Summary](../../quaeris/docs/customer_user_fix_summary.md)
 - [Cross Database Relations](../../user/docs/cross_database_relations_issue.md)
+=======
+- [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
+- [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
+>>>>>>> c7fd73eb (.)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 
 ## Note per Manutenzione Futura

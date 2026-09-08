@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Export XLS - File di traduzione
 
 Il file `export_xls.php` contiene tutte le etichette e i testi utilizzati per l'esportazione in formato XLS nel modulo Xot.
@@ -40,4 +44,8 @@ __('xot::export_xls.content.no_data')
 ## Note per lo sviluppo
 - Utilizzare sempre le chiavi di traduzione invece di stringhe hardcoded
 - Mantenere le traduzioni sincronizzate tra le diverse lingue
+<<<<<<< HEAD
 - Aggiungere commenti per spiegare il contesto quando necessario 
+=======
+- Aggiungere commenti per spiegare il contesto quando necessario
+>>>>>>> c7fd73eb (.)

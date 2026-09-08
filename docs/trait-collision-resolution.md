@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Trait Collision Resolution Summary
 
 ## Issue
@@ -36,3 +37,12 @@ This confirms the documented pattern from `/Modules/Xot/docs/trait-conflict-reso
 - Use `TransFuncTrait` (not full `TransTrait`) in `NavigationLabelTrait` to avoid conflicts
 - Keep trait method signatures compatible
 - Use trait precedence rules when necessary
+=======
+---
+module: theme
+topic: trait-collision-resolution
+canonical: ../../../Themes/docs/shared-components/trait-collision-resolution-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/trait-collision-resolution-fix.md
+>>>>>>> c7fd73eb (.)

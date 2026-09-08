@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Evoluzione dei metodi in XotBaseResource
 
 ## Metodi deprecati vs attuali
@@ -61,3 +62,6 @@ class ProductResource extends XotBaseResource
 ## Identificazione di codice obsoleto
 
 Se trovi nel progetto implementazioni di `getListTableColumns()` o metodi simili, questi dovrebbero essere aggiornati ai loro equivalenti moderni, o preferibilmente rimossi del tutto se seguono semplicemente il comportamento standard.
+=======
+
+>>>>>>> c7fd73eb (.)

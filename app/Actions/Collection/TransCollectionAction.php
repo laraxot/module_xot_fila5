@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Collection;
 
+<<<<<<< HEAD
 // use Modules\Xot\Services\ArrayService;
 
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -17,7 +20,11 @@ class TransCollectionAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public null|string $transKey;
+=======
+    public ?string $transKey;
+>>>>>>> c7fd73eb (.)
 
     /**
      * Esegue la traduzione di una collezione.
@@ -25,7 +32,11 @@ class TransCollectionAction
      * @param  Collection<int|string, mixed>  $collection
      * @return Collection<int|string, string>
      */
+<<<<<<< HEAD
     public function execute(Collection $collection, null|string $transKey): Collection
+=======
+    public function execute(Collection $collection, ?string $transKey): Collection
+>>>>>>> c7fd73eb (.)
     {
         if ($transKey === null) {
             return $collection->map(SafeStringCastAction::cast(...));
@@ -45,7 +56,11 @@ class TransCollectionAction
     public function trans(mixed $item): string
     {
         // Converte l'item in stringa se non lo è già
+<<<<<<< HEAD
         if (!\is_string($item)) {
+=======
+        if (! \is_string($item)) {
+>>>>>>> c7fd73eb (.)
             $item = SafeStringCastAction::cast($item);
         }
 
@@ -54,7 +69,11 @@ class TransCollectionAction
         }
 
         // Prima prova la traduzione diretta
+<<<<<<< HEAD
         $key = $this->transKey . '.' . $item;
+=======
+        $key = $this->transKey.'.'.$item;
+>>>>>>> c7fd73eb (.)
         $trans = trans($key);
 
         // Se la traduzione esiste ed è una stringa, la restituisce
@@ -64,7 +83,11 @@ class TransCollectionAction
 
         // Seconda prova: sostituisce i punti con underscore
         $itemWithUnderscore = str_replace('.', '_', $item);
+<<<<<<< HEAD
         $keyWithUnderscore = $this->transKey . '.' . $itemWithUnderscore;
+=======
+        $keyWithUnderscore = $this->transKey.'.'.$itemWithUnderscore;
+>>>>>>> c7fd73eb (.)
         $transWithUnderscore = trans($keyWithUnderscore);
 
         // Se la traduzione con underscore esiste ed è una stringa, la restituisce

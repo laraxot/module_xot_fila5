@@ -111,7 +111,11 @@ Aggiungi al tuo virtual host:
 <VirtualHost *:80>
     ServerName base_<nome progetto>.local
     DocumentRoot "/path/to/base_<nome progetto>/public"
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     <Directory "/path/to/base_<nome progetto>/public">
         AllowOverride All
         Require all granted

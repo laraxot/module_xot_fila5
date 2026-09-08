@@ -25,7 +25,15 @@ Questo significa che:
 ### Metodi Astratti
 
 ```php
+<<<<<<< HEAD
 abstract public static function getFormSchema(): array;
+=======
+<<<<<<< HEAD
+abstract public static function getFormSchema(): array;
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -59,7 +67,15 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -81,8 +97,13 @@ class NotificationResource extends XotBaseResource
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
 
 ### Collegamenti ai Moduli
+<<<<<<< HEAD
 - [Notify Resource](../../notify/docs/filament-resources.md)
 - [User Resource](../../user/docs/filament-resources.md)
+=======
+- [Notify Resource](../../Notify/docs/filament-resources.md)
+- [User Resource](../../User/docs/filament-resources.md)
+>>>>>>> c7fd73eb (.)
 
 ## Note Importanti
 

@@ -542,6 +542,7 @@ Modules/{ModuleName}/docs/
 - [GitHub Repository](https://github.com/nWidart/laravel-modules)
 - [XotBaseServiceProvider Documentation](../filament-integration.md)
 - [Module Structure Documentation](../base/structure.md)
+<<<<<<< HEAD
 - [Composer Merge Plugin Documentation](../../../docs/composer-merge-plugin.md)
 
 ---
@@ -549,3 +550,11 @@ Modules/{ModuleName}/docs/
 **Ultimo aggiornamento:** Gennaio 2026  
 **Versione Package:** 12.0+  
 **Compatibilità:** Laravel 12.x, PHP 8.2+
+=======
+- [Composer Merge Plugin Documentation](../../../../docs/composer-merge-plugin.md)
+
+---
+
+**Versione Package:** 12.0+  
+**Compatibilità:** Laravel 12.x, PHP 8.2+
+>>>>>>> c7fd73eb (.)

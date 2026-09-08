@@ -105,4 +105,8 @@ composer format        # Formatta il codice
 - Pest
 
 ## Changelog
+<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub. 
+=======
+Le modifiche vengono tracciate nel repository GitHub.
+>>>>>>> c7fd73eb (.)

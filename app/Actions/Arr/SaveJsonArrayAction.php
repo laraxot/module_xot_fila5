@@ -4,15 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arr;
 
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_put_contents;
 use function Safe\json_encode;
 
+=======
+use function Safe\file_put_contents;
+use function Safe\json_encode;
+
+use Spatie\QueueableAction\QueueableAction;
+
+>>>>>>> c7fd73eb (.)
 class SaveJsonArrayAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param array<int|string, mixed> $data
+     */
+>>>>>>> c7fd73eb (.)
     public function execute(array $data, string $filename): bool
     {
         $content = json_encode($data, JSON_PRETTY_PRINT);

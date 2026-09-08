@@ -236,7 +236,11 @@ abstract class TestCase extends BaseTestCase
 ### Problema: "Table 'X' doesn't exist"
 **Soluzione**: Eseguire le migrazioni appropriate per la connessione specifica.
 
+<<<<<<< HEAD
 ### Problema: "Unknown database 'laravelpizza_X_test'"
+=======
+### Problema: "Unknown database '<nome progetto>_X_test'"
+>>>>>>> c7fd73eb (.)
 **Soluzione**: Verificare che tutte le connessioni usino SQLite in memoria durante i test.
 
 ## Conclusione

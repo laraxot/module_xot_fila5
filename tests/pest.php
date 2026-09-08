@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 
 /*
@@ -44,3 +45,6 @@ pest()->extend(TestCase::class)->in('Feature', 'Unit');
 // function something() {
 //     // ...
 // }
+=======
+uses(Tests\TestCase::class)->in('.');
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament Extension Rules - Correzioni Violazioni Critiche
 
 ## 🎯 Analisi Violazioni - 30 Dicembre 2025
@@ -74,3 +75,12 @@
 **Status**: ✅ COMPLETATO CON SUCCESSO
 **Metodologia**: "Super Mucca" - Livello Confidenza MASSIMO 🐄
 **Qualità**: PHPStan Level 10 Certified
+=======
+---
+module: theme
+topic: filament-extension-violations-plan
+canonical: ../../../Themes/docs/shared-components/filament-extension-violations-fix-plan.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-extension-violations-fix-plan.md
+>>>>>>> c7fd73eb (.)

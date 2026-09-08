@@ -376,9 +376,16 @@ Test non isolati o dipendenze condivise.
 
 **Soluzione**
 ```php
+<<<<<<< HEAD
 class ExampleTest extends TestCase
 {
     use RefreshDatabase; // Garantisce database pulito
+=======
+// ✅ DatabaseTransactions — mai RefreshDatabase (dati sacri)
+class ExampleTest extends TestCase
+{
+    use Illuminate\Foundation\Testing\DatabaseTransactions;
+>>>>>>> c7fd73eb (.)
 
     protected function setUp(): void
     {
@@ -388,6 +395,11 @@ class ExampleTest extends TestCase
 }
 ```
 
+<<<<<<< HEAD
+=======
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
+
+>>>>>>> c7fd73eb (.)
 ### Errore: Test Lenti
 
 **Causa**
@@ -592,6 +604,9 @@ php artisan view:clear
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+>>>>>>> c7fd73eb (.)
 *Modulo: Xot*
 *Categoria: Troubleshooting*

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament Resource Creation Fix - Risoluzione Errori di Compatibilità
 
 ## Problema
@@ -161,3 +162,12 @@ Il macro `generateSlug` è stato disabilitato temporaneamente. Per riabilitarlo:
 3. Testare in ambiente di sviluppo
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+---
+module: theme
+topic: filament-resource-creation
+canonical: ../../../Themes/docs/shared-components/filament-resource-creation-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-creation-fix.md
+>>>>>>> c7fd73eb (.)

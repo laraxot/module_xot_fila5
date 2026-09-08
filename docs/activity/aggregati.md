@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Aggregati
 description: Aggregati
@@ -42,3 +43,6 @@ public function handle(YourNameAggregate $aggregate) {
     // ...
 }
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

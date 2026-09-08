@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: ProfileService
 description: Handle profiles with ProfileService
@@ -6,3 +7,6 @@ section: content
 ---
 
 # ProfileService
+=======
+
+>>>>>>> c7fd73eb (.)

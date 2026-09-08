@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Helper Functions Complete List - Xot Module
 
 ## 📋 Overview
@@ -370,3 +371,12 @@ composer dump-autoload
 ---
 
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
+=======
+---
+module: theme
+topic: helper-functions-list
+canonical: ../../../Themes/docs/shared-components/helper-functions-complete-list.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/helper-functions-complete-list.md
+>>>>>>> c7fd73eb (.)

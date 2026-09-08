@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica
@@ -139,6 +140,8 @@ return array(
 - **File standardizzati**: 15 file principali
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
+=======
+>>>>>>> c7fd73eb (.)
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 
 #### File Completati
@@ -272,4 +275,15 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025* 
+=======
+*Ultimo aggiornamento: Giugno 2025*
+---
+module: theme
+topic: translation-standards
+canonical: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali
@@ -552,3 +553,12 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [Filament 4 Migration Guide](./filament4_migration.md)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+=======
+---
+module: theme
+topic: filament-4-laraxot
+canonical: ../../../Themes/docs/shared-components/filament-4-laraxot-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-4-laraxot-rules.md
+>>>>>>> c7fd73eb (.)

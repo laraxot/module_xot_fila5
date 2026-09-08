@@ -37,6 +37,10 @@ test('widget can be rendered', function () {
 function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c7fd73eb (.)
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -44,6 +48,18 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
+<<<<<<< HEAD
+=======
+=======
+    
+    $mockXotData->shouldReceive('getUserClass')
+        ->andReturn(\Modules\SaluteOra\Models\User::class);
+        
+    $mockXotData->shouldReceive('make')
+        ->andReturn($mockXotData);
+    
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -127,7 +143,15 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
    - Content presence
    - Layout structure
 
+<<<<<<< HEAD
 2. **Middleware** (Raccomandato)
+=======
+<<<<<<< HEAD
+2. **Middleware** (Raccomandato)
+=======
+2. **Middleware** (Raccomandato) 
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
    - Authentication flow
    - Authorization checks
    - Redirect behavior
@@ -162,7 +186,15 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - ✅ **Performance**: < 5 secondi per test suite
 - ✅ **Architecture**: Separazione rispettata
 
+<<<<<<< HEAD
 ### Gold Standard Criteria
+=======
+<<<<<<< HEAD
+### Gold Standard Criteria
+=======
+### Gold Standard Criteria  
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
 - ✅ **Performance**: < 3 secondi per test suite
@@ -181,7 +213,15 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 # Execution time monitoring
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
+<<<<<<< HEAD
 # Success rate calculation
+=======
+<<<<<<< HEAD
+# Success rate calculation
+=======
+# Success rate calculation  
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring
@@ -204,6 +244,7 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
+<<<<<<< HEAD
 - [Widget Test Patterns](../cms/project_docs/tests/widget-test-patterns.md)
 - [Architecture Separation Rules](../cms/project_docs/tests/architecture-separation-rules.md)
 - [XotData Testing Strategy](xotdata_testing.md)
@@ -213,3 +254,22 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Last Update**: Dicembre 2024
+=======
+- [Widget Test Patterns](../Cms/project_docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../Cms/project_docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](XOTDATA_TESTING.md)
+
+---
+
+<<<<<<< HEAD
+**Status**: ✅ Best Practices Validate
+**Enforcement**: Obbligatorio per tutti i test
+**Version**: 1.0 - Gold Standard
+**Last Update**: Dicembre 2024
+=======
+**Status**: ✅ Best Practices Validate  
+**Enforcement**: Obbligatorio per tutti i test  
+**Version**: 1.0 - Gold Standard
+**Last Update**: Dicembre 2024 
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)

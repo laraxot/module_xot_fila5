@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Destroy Action
 description: Destroy Model with Queuable Action
@@ -7,3 +8,6 @@ section: content
 # Destroy Action {#destroy-action}
 
 This is an example Destroy action
+=======
+
+>>>>>>> c7fd73eb (.)

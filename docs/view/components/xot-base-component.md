@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBaseComponent
 
 XotBaseComponent è la classe base astratta per tutti i componenti view nel modulo Xot. Fornisce funzionalità comuni e struttura di base per i componenti personalizzati.
@@ -87,3 +88,6 @@ public function boot()
 - Illuminate\View\Component
 - Illuminate\Contracts\Support\Renderable
 - Illuminate\Support\Str
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -21,7 +21,11 @@ class MorphToManyAction
 
         $data = $relationDTO->data;
         if (\in_array('to', array_keys($data), false) || \in_array('from', array_keys($data), false)) {
+<<<<<<< HEAD
             if (!isset($data['to'])) {
+=======
+            if (! isset($data['to'])) {
+>>>>>>> c7fd73eb (.)
                 $data['to'] = [];
             }
 
@@ -30,7 +34,11 @@ class MorphToManyAction
         Assert::isArray($data);
         // dddx(['row' => $row, 'relation' => $relation, 't1' => Arr::isAssoc($data)]);
 
+<<<<<<< HEAD
         if (!Arr::isAssoc($data)) {
+=======
+        if (! Arr::isAssoc($data)) {
+>>>>>>> c7fd73eb (.)
             $relationDTO->rows->sync($data);
 
             return;

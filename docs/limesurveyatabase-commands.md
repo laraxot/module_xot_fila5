@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Database Analysis Commands and Tools for quaeris_survey
+=======
+# Database Analysis Commands and Tools for healthcare_app_survey
+# Database Analysis Commands and Tools for app_survey
+>>>>>>> c7fd73eb (.)
 
 ## Essential Database Queries
 
@@ -69,10 +74,21 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 ### 1. MySQL MCP Commands
 ```bash
 # Connect to specific database
+<<<<<<< HEAD
 mcp mysql --database=txaesfry_quaeris_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_quaeris_survey' AND table_name LIKE 'lime_survey_%'"
+=======
+mcp mysql --database=txaesfry_healthcare_app_survey
+
+# Execute complex queries
+mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_healthcare_app_survey' AND table_name LIKE 'lime_survey_%'"
+mcp mysql --database=txaesfry_app_survey
+
+# Execute complex queries
+mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
+>>>>>>> c7fd73eb (.)
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -109,7 +125,11 @@ php artisan tinker --execute="DB::connection('limesurvey')->select('SELECT 1')"
 php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
+<<<<<<< HEAD
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+=======
+    'healthcare_app' => DB::connection('healthcare_app')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> c7fd73eb (.)
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -169,10 +189,21 @@ WHERE q.qid IS NULL;
 ### 1. Survey Data Backup
 ```bash
 # Backup specific survey data
+<<<<<<< HEAD
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+=======
+mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
+
+# Backup question structure
+mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
+
+# Backup question structure
+mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+>>>>>>> c7fd73eb (.)
 ```
 
 ### 2. Data Validation Script
@@ -216,7 +247,12 @@ LEFT JOIN (
         COUNT(*) as responses
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
+=======
+    AND table_schema = 'txaesfry_healthcare_app_survey'
+    AND table_schema = 'txaesfry_app_survey'
+>>>>>>> c7fd73eb (.)
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -224,9 +260,19 @@ LEFT JOIN (
         COUNT(*) as total_tokens
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
+=======
+    AND table_schema = 'txaesfry_healthcare_app_survey'
+    AND table_schema = 'txaesfry_app_survey'
+>>>>>>> c7fd73eb (.)
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
+<<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the healthcare_app_survey database used by the Limesurvey integration.
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
+>>>>>>> c7fd73eb (.)

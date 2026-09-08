@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Contratti del Modulo Xot
 
 Questa sezione contiene la documentazione dei contratti (interfaces) disponibili nel modulo Xot.
@@ -52,3 +53,6 @@ Il [ModelWithStatusContract](model-with-status-contract.md) definisce l'interfac
 * [index.md](../../../cms/docs/frontend-architecture/index.md)
 * [index.md](../../../../themes/one/docs/roadmap/philosophy/index.md)
 * [index.md](../../../../themes/one/docs/roadmap/inspiration/index.md)
+=======
+
+>>>>>>> c7fd73eb (.)

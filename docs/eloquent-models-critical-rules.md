@@ -14,6 +14,7 @@ I modelli Eloquent utilizzano il pattern delle proprietà magiche:
 
 ### Alternative Corrette per Laraxot PTVX
 
+<<<<<<< HEAD
 #### 1. Verificare Attributi del Modello
 ```php
 // ✅ Verificare se un attributo esiste nel modello
@@ -27,14 +28,49 @@ if ($model->isFillable('field_name')) {
 }
 
 // ✅ Verificare se un attributo è stato impostato
+=======
+**REGOLA CRITICA**: Per i modelli Eloquent, utilizzare SEMPRE `isset()` invece di `property_exists()` perché gli attributi sono magici (gestiti tramite `__get()`, `__set()`, `__isset()`).
+
+#### 1. Verificare Attributi del Modello
+```php
+// ❌ SBAGLIATO - property_exists() non funziona con attributi magici
+if (property_exists($model, 'field_name')) {
+    // Questa condizione è SEMPRE false per campi database
+}
+
+// ✅ CORRETTO - isset() rispetta __isset() per attributi magici
+>>>>>>> c7fd73eb (.)
 if (isset($model->field_name)) {
     // verifica se l'attributo ha un valore
 }
 
+<<<<<<< HEAD
 // ✅ Verificare se un attributo non è null
 if (!is_null($model->field_name)) {
     // verifica valore non null
 }
+=======
+// ✅ CORRETTO - Verificare se un attributo esiste nel modello
+if ($model->hasAttribute('field_name')) {
+    // logica corretta
+}
+
+// ✅ CORRETTO - Verificare se un campo è fillable
+if ($model->isFillable('field_name')) {
+    // logica corretta per campi modificabili
+}
+
+// ✅ CORRETTO - Verificare se un attributo non è null
+if (!is_null($model->field_name)) {
+    // verifica valore non null
+}
+
+// ✅ CORRETTO - Usare getAttribute() per accesso diretto
+$value = $model->getAttribute('field_name');
+if ($value !== null) {
+    // Usa $value
+}
+>>>>>>> c7fd73eb (.)
 ```
 
 #### 2. Verificare Struttura Database
@@ -167,4 +203,8 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 4. Verifica di logiche correlate nei trait e BaseModel
 5. Aggiornamento documentazione moduli specifici
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
+=======
+*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
+>>>>>>> c7fd73eb (.)

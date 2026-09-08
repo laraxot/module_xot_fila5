@@ -6,4 +6,10 @@ namespace Modules\Xot\Filament\Pages\Auth;
 
 use Filament\Auth\Pages\EditProfile;
 
+<<<<<<< HEAD
 abstract class XotBaseEditProfile extends EditProfile {}
+=======
+abstract class XotBaseEditProfile extends EditProfile
+{
+}
+>>>>>>> c7fd73eb (.)

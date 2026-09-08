@@ -246,7 +246,11 @@ try {
     Log::error('Errore nella creazione del prodotto', [
         'error' => $e->getMessage(),
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     throw $e;
 }
 ```
@@ -310,4 +314,8 @@ class Comment extends Model
         return $this->morphTo();
     }
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

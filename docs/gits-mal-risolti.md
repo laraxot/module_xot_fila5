@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Conflitti Git Mal Risolti - Pattern e Fix
 
 ## 🎯 Filosofia del Problema
@@ -314,3 +315,12 @@ Il pattern lock file ha:
 **File fixati**: 5
 **Server status**: ✅ **RUNNING**
 **Pattern lock**: ✅ **APPLICATO E FUNZIONANTE**
+=======
+---
+module: theme
+topic: gits-mal-risolti
+canonical: ../../../Themes/docs/shared-components/git-conflicts-mal-risolti.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-mal-risolti.md
+>>>>>>> c7fd73eb (.)

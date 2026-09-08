@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Lang
 
 ## 1. Cache Traduzioni (Priorità: Alta)
@@ -208,3 +209,6 @@
 - [Cache Guidelines](../../performance/cache.md)
 - [Translation Standards](../../lang/standards.md)
 - [Filament Integration](../../filament/integration.md)
+=======
+
+>>>>>>> c7fd73eb (.)

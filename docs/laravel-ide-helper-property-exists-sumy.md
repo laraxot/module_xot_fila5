@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Summary: laravel-ide-helper e Eliminazione property_exists()
 
 ## Lavoro Completato
@@ -212,3 +213,23 @@ La filosofia è chiara: rispettare l'architettura Eloquent e fidarsi delle annot
 **La religione:** Trust the Magic (Methods)
 **La politica:** No property_exists() on Eloquent Models
 **Lo Zen:** Semplicità attraverso la comprensione
+=======
+---
+title: IDE Helper e property_exists — alias storico
+type: historical
+updated: 2026-08-31
+related:
+  - ./laravel-ide-helper-property-exists.md
+  - ./ide-helper-models-governance.md
+---
+
+# IDE Helper e `property_exists()` — alias storico
+
+Questo file con nome legacy è mantenuto soltanto per non rompere eventuali link esistenti.
+
+Consultare:
+
+- [laravel-ide-helper-property-exists.md](./laravel-ide-helper-property-exists.md) per il contesto storico;
+- [ide-helper-models-governance.md](./ide-helper-models-governance.md) per la procedura corrente;
+- [property-exists-replacement-guide.md](./property-exists-replacement-guide.md) per i pattern Eloquent.
+>>>>>>> c7fd73eb (.)

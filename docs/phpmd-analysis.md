@@ -1,5 +1,9 @@
 # Analisi PHPMD - Tutti i Moduli
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> c7fd73eb (.)
 **Strumento**: PHPMD (PHP Mess Detector)
 **Rules**: codesize, unusedcode, naming, design, controversial, cleancode
 

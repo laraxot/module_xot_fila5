@@ -90,7 +90,11 @@ use Modules\{ModuleName}\Filament\Widgets;
 class Dashboard extends BaseDashboard
 {
     protected static ?string $navigationIcon = 'heroicon-o-home';
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function getWidgets(): array
     {
         return [
@@ -206,11 +210,19 @@ return [
         <h2 class="text-2xl font-bold">
             {{ __('{modulename}::dashboard.title') }}
         </h2>
+<<<<<<< HEAD
         
         <p class="text-gray-600">
             {{ __('{modulename}::dashboard.description') }}
         </p>
         
+=======
+
+        <p class="text-gray-600">
+            {{ __('{modulename}::dashboard.description') }}
+        </p>
+
+>>>>>>> c7fd73eb (.)
         {{-- Contenuto specifico del modulo --}}
     </div>
 </x-filament::page>
@@ -241,7 +253,11 @@ class DashboardTest extends TestCase
     {
         $user = User::factory()->create();
         $user->assignRole('{modulename}::admin');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $this->actingAs($user)
             ->get(route('filament.pages.dashboard'))
             ->assertOk();
@@ -251,6 +267,16 @@ class DashboardTest extends TestCase
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
+=======
+- [XotBasePanelProvider](../laravel/modules/xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
+- [Filament Integration](../laravel/modules/xot/docs/filament/filament_integration.md) - Integrazione generale Filament
+- [Best Practices](../laravel/modules/xot/docs/best-practices.md) - Best practices generali
+
+## Collegamenti
+
+- [Documentazione Modulo Xot](../laravel/modules/xot/docs/filament/dashboard-pages.md)
+>>>>>>> c7fd73eb (.)
 - [XotBasePanelProvider](../laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md) - Configurazione panel provider
 - [Filament Integration](../laravel/Modules/Xot/docs/filament/filament_integration.md) - Integrazione generale Filament
 - [Best Practices](../laravel/Modules/Xot/docs/BEST-PRACTICES.md) - Best practices generali
@@ -265,4 +291,8 @@ class DashboardTest extends TestCase
 
 **Ultimo aggiornamento**: Giugno 2025
 **Stato**: Analisi completa completata, implementazione in corso
+<<<<<<< HEAD
 **Moduli da implementare**: 13 moduli identificati 
+=======
+**Moduli da implementare**: 13 moduli identificati
+>>>>>>> c7fd73eb (.)

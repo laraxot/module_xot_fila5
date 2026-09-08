@@ -128,4 +128,8 @@ Per contribuire al progetto:
 
 ## Licenza
 
+<<<<<<< HEAD
 <nome progetto> è un software proprietario. Tutti i diritti riservati. 
+=======
+<nome progetto> è un software proprietario. Tutti i diritti riservati.
+>>>>>>> c7fd73eb (.)

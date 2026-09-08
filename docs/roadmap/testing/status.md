@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stato Testing
 
 ## Stato
@@ -51,3 +52,6 @@
 * [status.md](../../../xot/docs/roadmap/docs/status.md)
 * [status.md](../../../xot/docs/roadmap/testing/status.md)
 * [status.md](../../../xot/docs/roadmap/security/status.md)
+=======
+
+>>>>>>> c7fd73eb (.)

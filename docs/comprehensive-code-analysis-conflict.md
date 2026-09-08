@@ -176,7 +176,15 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         TextInput::make('first_name'),
@@ -185,7 +193,15 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         TextInput::make('name')->required(),
@@ -281,7 +297,15 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             TextInput::make('first_name'),
@@ -414,10 +438,17 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Architettura Moduli](./architecture.md)
 - [Best Practices Laravel 12](./laravel_12_guide.md)
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
+=======
+- [Architettura Moduli](architecture.md)
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+- [Pattern Filament](./FILAMENT_PATTERNS.md)
+- [Performance Optimization](./PERFORMANCE_GUIDE.md)
+>>>>>>> c7fd73eb (.)
 
 ## 📊 Metriche di Qualità
 
@@ -435,7 +466,11 @@ return [
 
 ---
 
+<<<<<<< HEAD
 **Data Analisi**: [DATE]
+=======
+**Data Analisi**: 2025-01-06
+>>>>>>> c7fd73eb (.)
 **Analista**: AI Code Review System
 **Priorità**: CRITICA - Richiede intervento immediato
 **Stima Effort**: 40-60 ore di refactoring

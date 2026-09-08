@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Standard di Codice per il progetto
 
 ## Principi Fondamentali
@@ -158,3 +159,6 @@ class MyResource extends XotBaseResource
 ## Collegamenti tra versioni di standard-codice.md
 * [standard-codice.md](docs/standard-codice.md)
 * [standard-codice.md](../../../xot/docs/development/standard-codice.md)
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Common Anti-Patterns - Xot Module
 
 ## 🚨 Anti-Patterns to Avoid
@@ -525,3 +526,12 @@ public function getTableActions(): array
 - ❌ Don't create N+1 query problems
 
 This document serves as a reference for avoiding common anti-patterns when extending Xot base classes and building modules on top of the Xot foundation.
+=======
+---
+module: theme
+topic: common-antis
+canonical: ../../../Themes/docs/shared-components/common-anti-patterns-conflict.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/common-anti-patterns-conflict.md
+>>>>>>> c7fd73eb (.)

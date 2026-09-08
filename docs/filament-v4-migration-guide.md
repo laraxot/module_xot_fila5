@@ -1,4 +1,8 @@
 # Filament v4 Migration Guide - Modulo Xot
+<<<<<<< HEAD
+=======
+**Data**: 10 Dicembre 2025
+>>>>>>> c7fd73eb (.)
 **Modulo**: Xot (Core Framework)
 **Versione**: 4.0
 **Stato**: Ready for Implementation
@@ -152,7 +156,15 @@ public function boot()
 abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
+<<<<<<< HEAD
     public static function getFormSchema(): array { /* ... */ }
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array { /* ... */ }
+=======
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     public static function getPages(): array { /* ... */ }
 
     // ❌ METODI VIETATI - Devono essere solo nelle pagine List

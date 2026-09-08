@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ExtraContract;
+<<<<<<< HEAD
 use Modules\Xot\Models\Extra;
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+>>>>>>> c7fd73eb (.)
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
@@ -23,12 +30,20 @@ use function Safe\json_encode;
  * @property int $qty
  * @property ExtraContract|null $extra
  */
+<<<<<<< HEAD
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> c7fd73eb (.)
 trait HasExtraTrait
 {
     /**
      * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
      *
+<<<<<<< HEAD
      * return MorphOne<ExtraContract>
+=======
+     * @return MorphOne<Model, $this>
+>>>>>>> c7fd73eb (.)
      */
     public function extra(): MorphOne
     {
@@ -40,6 +55,7 @@ trait HasExtraTrait
         Assert::isAOf(
             $extra_class,
             Model::class,
+<<<<<<< HEAD
             '[' . __LINE__ . '][' . class_basename($this) . '][' . $extra_class . ']',
         );
         // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
@@ -69,10 +85,55 @@ trait HasExtraTrait
             return $value;
         }
         throw new Exception('[' . __LINE__ . '][' . __CLASS__ . ']');
+=======
+            '['.__LINE__.']['.class_basename($this).']['.$extra_class.']',
+        );
+
+        /** @var class-string<Model> $extraClass */
+        $extraClass = $extra_class;
+
+        return $this->morphOne($extraClass, 'model');
+    }
+
+    /** @return array<string, mixed>|bool|float|int|string|null */
+    public function getExtra(string $name): array|bool|float|int|string|null
+    {
+        $extra = $this->extra;
+        if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {
+            return null;
+        }
+
+        $attributes = $extra->extra_attributes;
+        if (! $attributes instanceof SchemalessAttributes) {
+            return null;
+        }
+
+        $value = $attributes->get($name);
+
+        if (\is_array($value)) {
+            $result = [];
+            foreach ($value as $key => $item) {
+                if (! \is_string($key)) {
+                    continue;
+                }
+
+                $result[$key] = $item;
+            }
+
+            return $result;
+        }
+
+        if (\is_bool($value) || \is_float($value) || \is_int($value) || \is_string($value)) {
+            return $value;
+        }
+
+        return null;
+>>>>>>> c7fd73eb (.)
     }
 
     /**
      * @param  int|float|string|array<string, mixed>|bool|null  $value
+<<<<<<< HEAD
      * @return void
      */
     public function setExtra(string $name, $value)
@@ -90,6 +151,25 @@ trait HasExtraTrait
         Assert::notNull($extra);
         // $extra is asserted to be non-null above
         $extra->extra_attributes->set($name, $value);
+=======
+     */
+    public function setExtra(string $name, int|float|string|array|bool|null $value): void
+    {
+        $extra = $this->extra;
+        if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {
+            $extra = $this->extra()->firstOrCreate([], ['extra_attributes' => json_encode([])]);
+            if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {
+                return;
+            }
+        }
+
+        $attributes = $extra->extra_attributes;
+        if (! $attributes instanceof SchemalessAttributes) {
+            $extra->extra_attributes = $attributes = new SchemalessAttributes($extra, 'extra_attributes');
+        }
+
+        $attributes->set($name, $value);
+>>>>>>> c7fd73eb (.)
         $extra->save();
     }
 }

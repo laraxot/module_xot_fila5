@@ -8,11 +8,19 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Export\PdfByModelAction;
 
 class PdfAction extends Action
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Export\PdfByModelAction;
+use Modules\Xot\Filament\Actions\XotBaseAction;
+
+class PdfAction extends XotBaseAction
+>>>>>>> c7fd73eb (.)
 {
     protected function setUp(): void
     {
@@ -23,6 +31,10 @@ class PdfAction extends Action
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('heroicon-o-document-arrow-down')
+<<<<<<< HEAD
             ->action(fn(Model $record) => app(PdfByModelAction::class)->execute(model: $record));
+=======
+            ->action(fn (Model $record) => app(PdfByModelAction::class)->execute(model: $record));
+>>>>>>> c7fd73eb (.)
     }
 }

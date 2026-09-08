@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Moduli Laraxot per il progetto
 
 ## Panoramica
@@ -112,3 +113,6 @@ Nel progetto il progetto, è fondamentale NON includere la riga `"Modules\\": "M
 Dopo qualsiasi modifica al composer.json, eseguire sempre:
 - `composer dump-autoload`
 - `php artisan optimize:clear`
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -19,6 +19,10 @@ This document outlines our testing strategy that uses MySQL as the test database
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
+<<<<<<< HEAD
+=======
+DB_DATABASE=<nome progetto>_data_test
+>>>>>>> c7fd73eb (.)
 DB_DATABASE=test_database
 DB_USERNAME=root
 DB_PASSWORD=
@@ -88,13 +92,21 @@ protected function setUp(): void
 test('user can login', function () {
     // Arrange
     $user = User::factory()->create();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Act & Assert
     $this->post('/login', [
         'email' => $user->email,
         'password' => 'password'
     ])->assertRedirect('/dashboard');
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Cleanup (if needed)
     $user->forceDelete();
 });

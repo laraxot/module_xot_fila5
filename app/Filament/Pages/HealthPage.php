@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Pages;
 
+<<<<<<< HEAD
 use Spatie\Health\Checks\Check;
 use Spatie\Health\Checks\Checks\OptimizedAppCheck;
 use Spatie\Health\Checks\Checks\DebugModeCheck;
@@ -44,17 +45,56 @@ class HealthPage extends Page
 {
     use NavigationLabelTrait;
 
+=======
+use Filament\Actions\Action;
+use Filament\Notifications\Notification;
+use Filament\Widgets\WidgetConfiguration;
+use Illuminate\Support\Facades\Artisan;
+use Laraxot\SmtpHealthCheck\SmtpCheck;
+use Modules\Xot\Filament\Widgets\HealthOverviewWidget;
+use Spatie\CpuLoadHealthCheck\CpuLoadCheck;
+use Spatie\Health\Checks\Check;
+use Spatie\Health\Checks\Checks\CacheCheck;
+use Spatie\Health\Checks\Checks\DatabaseCheck;
+use Spatie\Health\Checks\Checks\DatabaseConnectionCountCheck;
+use Spatie\Health\Checks\Checks\DatabaseSizeCheck;
+use Spatie\Health\Checks\Checks\DatabaseTableSizeCheck;
+use Spatie\Health\Checks\Checks\DebugModeCheck;
+use Spatie\Health\Checks\Checks\EnvironmentCheck;
+use Spatie\Health\Checks\Checks\FlareErrorOccurrenceCountCheck;
+use Spatie\Health\Checks\Checks\HorizonCheck;
+use Spatie\Health\Checks\Checks\OptimizedAppCheck;
+use Spatie\Health\Checks\Checks\QueueCheck;
+use Spatie\Health\Checks\Checks\RedisCheck;
+use Spatie\Health\Checks\Checks\RedisMemoryUsageCheck;
+use Spatie\Health\Checks\Checks\ScheduleCheck;
+use Spatie\Health\Checks\Checks\UsedDiskSpaceCheck;
+use Spatie\Health\Commands\RunHealthChecksCommand;
+use Spatie\Health\Facades\Health;
+use Spatie\Health\ResultStores\ResultStore;
+use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
+
+class HealthPage extends XotBasePage
+{
+>>>>>>> c7fd73eb (.)
     /**
      * @var array<string, string>
      */
     protected $listeners = ['refresh-component' => '$refresh'];
 
+<<<<<<< HEAD
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-heart';
 
+=======
+>>>>>>> c7fd73eb (.)
     protected string $view = 'xot::filament.pages.health';
 
     public function refresh(): void
     {
+<<<<<<< HEAD
+=======
+        /** @var array<int, Check> $checks */
+>>>>>>> c7fd73eb (.)
         $checks = [
             OptimizedAppCheck::new(),
             DebugModeCheck::new(),
@@ -67,7 +107,11 @@ class HealthPage extends Page
             DatabaseConnectionCountCheck::new(),
             FlareErrorOccurrenceCountCheck::new(),
             HorizonCheck::new(),
+<<<<<<< HEAD
             //Checks\MeiliSearchCheck::new(),
+=======
+            // Checks\MeiliSearchCheck::new(),
+>>>>>>> c7fd73eb (.)
             QueueCheck::new(),
             RedisCheck::new(),
             ScheduleCheck::new(),
@@ -75,6 +119,7 @@ class HealthPage extends Page
             // Checks\PingCheck::new()->url('https://google.com')->name('Google'),
         ];
         if (class_exists(CpuLoadCheck::class)) {
+<<<<<<< HEAD
             /** @var CpuLoadCheck $check */
             $check = CpuLoadCheck::new();
             $checks[] = $check;
@@ -91,6 +136,28 @@ class HealthPage extends Page
         }
         /** @var array<Check> $checks */
         Health::checks($checks);
+=======
+            $checks[] = CpuLoadCheck::new();
+        }
+        if (class_exists(SecurityAdvisoriesCheck::class)) {
+            $checks[] = SecurityAdvisoriesCheck::new();
+        }
+        if (class_exists(SmtpCheck::class)) {
+            $checks[] = SmtpCheck::new();
+        }
+
+        // CpuLoadCheck, SecurityAdvisoriesCheck, and SmtpCheck are optional packages;
+        // filter to only actual Check instances so the array type is guaranteed.
+        /** @var array<int, Check> $filteredChecks */
+        $filteredChecks = [];
+        foreach ($checks as $check) {
+            if ($check instanceof Check) {
+                $filteredChecks[] = $check;
+            }
+        }
+
+        Health::checks($filteredChecks);
+>>>>>>> c7fd73eb (.)
         Artisan::call(RunHealthChecksCommand::class);
         $this->dispatch('refresh-component');
         Notification::make()
@@ -99,6 +166,12 @@ class HealthPage extends Page
             ->send();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, Action>
+     */
+>>>>>>> c7fd73eb (.)
     protected function getHeaderActions(): array
     {
         return [
@@ -110,6 +183,12 @@ class HealthPage extends Page
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, WidgetConfiguration>
+     */
+>>>>>>> c7fd73eb (.)
     protected function getHeaderWidgets(): array
     {
         return [
@@ -117,6 +196,12 @@ class HealthPage extends Page
         ];
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     protected function getViewData(): array
     {
         $checkResults = app(ResultStore::class)->latestResults();

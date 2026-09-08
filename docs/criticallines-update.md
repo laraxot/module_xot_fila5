@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aggiornamento Linee Guida Critiche - Agosto 2025
 
 ## 1. VIOLAZIONE GRAVE: Cartella Docs Root
@@ -167,3 +168,12 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 **RESPONSABILE**: Tutto il team sviluppo
 
 *Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
+=======
+---
+module: theme
+topic: criticallines-update
+canonical: ../../../Themes/docs/shared-components/critical-guidelines-update.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/critical-guidelines-update.md
+>>>>>>> c7fd73eb (.)

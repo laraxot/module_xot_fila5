@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazione Form Filament
 
 ## Stato
@@ -56,3 +57,6 @@
 * [filament.md](../../../job/docs/filament.md)
 * [filament.md](../../../activity/docs/filament.md)
 * [filament.md](../../../cms/docs/filament.md)
+=======
+
+>>>>>>> c7fd73eb (.)

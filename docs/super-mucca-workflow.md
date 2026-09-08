@@ -358,7 +358,11 @@ nano Modules/{ModuleName}/docs/{pattern-name}.md
 ## 🔗 Collegamenti
 
 - [Doc correlata 1](./related-doc.md)
+<<<<<<< HEAD
 - [Doc correlata 2](../../othermodule/docs/related.md)
+=======
+- [Doc correlata 2](../../OtherModule/docs/related.md)
+>>>>>>> c7fd73eb (.)
 
 ---
 
@@ -402,7 +406,11 @@ CHANGELOG.md
 
 # ❌ SBAGLIATO
 Business-Logic-Analysis.md           # Maiuscole
+<<<<<<< HEAD
 phpstan-fixes-[DATE].md         # Date
+=======
+phpstan-fixes-2025-12-02.md         # Date
+>>>>>>> c7fd73eb (.)
 GUIDE.md                             # Maiuscolo (non README/CHANGELOG)
 ```
 

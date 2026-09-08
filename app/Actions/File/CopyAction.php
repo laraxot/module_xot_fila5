@@ -4,8 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Support\Facades\File;
+=======
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
+>>>>>>> c7fd73eb (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class CopyAction
@@ -14,6 +19,7 @@ class CopyAction
 
     public function execute(string $from, string $to): void
     {
+<<<<<<< HEAD
         if (!File::exists(\dirname($to))) {
             try {
                 File::makeDirectory(\dirname($to), 0o755, true, true);
@@ -22,6 +28,16 @@ class CopyAction
                     'Caught exception: ',
                     $e->getMessage(),
                     '\n[' . __LINE__ . '][' . class_basename(static::class) . ']',
+=======
+        if (! File::exists(\dirname($to))) {
+            try {
+                File::makeDirectory(\dirname($to), 0o755, true, true);
+            } catch (\Exception $e) {
+                Log::error(
+                    'Caught exception: '.
+                    $e->getMessage().
+                    ' ['.__LINE__.']['.class_basename(static::class).']',
+>>>>>>> c7fd73eb (.)
                 );
             }
         }
@@ -37,6 +53,7 @@ class CopyAction
         // not rewite
         try {
             File::copy($from, $to);
+<<<<<<< HEAD
         } catch (Exception $exception) {
             throw new Exception(
                 'Unable to copy
@@ -52,6 +69,13 @@ class CopyAction
                 $exception->getCode(),
                 $exception,
             );
+=======
+        } catch (\Exception $exception) {
+            throw new \Exception('Unable to copy
+                    from ['.$from.']
+                    to ['.$to.']
+                    message ['.$exception->getMessage().']', $exception->getCode(), $exception, );
+>>>>>>> c7fd73eb (.)
         }
     }
 }

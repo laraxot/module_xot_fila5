@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap
@@ -282,3 +283,12 @@ php artisan config:cache
 - [Documentazione Root](/project_docs/env-config-loading-issue.md)
 
 *Ultimo aggiornamento: [DATE]*
+=======
+---
+module: theme
+topic: environment-configurations
+canonical: ../../../Themes/docs/shared-components/environment-configuration-issues.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/environment-configuration-issues.md
+>>>>>>> c7fd73eb (.)

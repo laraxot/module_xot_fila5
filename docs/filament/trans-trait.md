@@ -45,5 +45,12 @@ class MyResource
 
 ## Collegamenti
 - [Filament Best Practices](../filament-best-practices.md)
+<<<<<<< HEAD
 - [Translation Guidelines](../translations-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+=======
+- [Translation Guidelines](translations-best-practices.md)
+- [PHPStan Level 9 Guide](phpstan-level9-guide.md)
+- [Translation Guidelines](../translations-best-practices.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+>>>>>>> c7fd73eb (.)

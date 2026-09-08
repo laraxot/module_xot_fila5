@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: PanelService
 description: Handle panels with PanelService
@@ -6,3 +7,6 @@ section: content
 ---
 
 # PanelService
+=======
+
+>>>>>>> c7fd73eb (.)

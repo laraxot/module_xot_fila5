@@ -109,6 +109,10 @@ $user->authentications()
 - [Module-by-Module Analysis Plan](./module-by-module-analysis-plan.md)
 - [Module Analysis Workflow](./module-analysis-workflow.md)
 - [Current Status](./current-status.md)
+<<<<<<< HEAD
+=======
+- [User Module Quality Report](../User/docs/quality-analysis/user-module-quality-report.md)
+>>>>>>> c7fd73eb (.)
 - [User Module Quality Report](../user/docs/quality-analysis/user-module-quality-report.md)
 - [Xot Progress Summary](./progress-summary.md)
 
@@ -124,4 +128,8 @@ $user->authentications()
 1. **PHPStan L10 è raggiungibile**: Con type narrowing e PHPDoc corretti
 2. **N+1 sono facili da identificare**: Loop con query individuali
 3. **DRY violations**: Duplicazioni interfacce/trait facilmente identificabili
+<<<<<<< HEAD
 4. **Architecture score**: Richiede refactoring strutturale (interfacce, final classes)
+=======
+4. **Architecture score**: Richiede refactoring strutturale (interfacce, final classes)
+>>>>>>> c7fd73eb (.)

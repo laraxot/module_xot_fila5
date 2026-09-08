@@ -297,4 +297,8 @@ php artisan make:component Alert
         </div>
     </div>
 </x-app-layout>
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

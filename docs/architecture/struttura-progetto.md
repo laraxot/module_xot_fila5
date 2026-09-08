@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura del Progetto il progetto
 
 ## Panoramica
@@ -135,3 +136,6 @@ rm -rf database/migrations
 * [struttura-progetto.md](docs/tecnico/struttura/struttura-progetto.md)
 * [struttura-progetto.md](docs/tecnico/struttura-progetto.md)
 * [struttura-progetto.md](../../../xot/docs/architecture/struttura-progetto.md)
+=======
+
+>>>>>>> c7fd73eb (.)

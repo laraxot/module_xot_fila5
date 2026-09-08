@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Il Tao del Codice
 
 ## Il Principio Fondamentale
@@ -160,4 +164,8 @@ Ogni volta che scrivi un getter, chiediti:
 - [Filosofia Zen Avanzata](../philosophy/getter_zen_advanced.md)
 - [La Via del Brand](../brand/brand_way.md)
 - [Convenzioni di Naming](../naming-conventions.md)
+<<<<<<< HEAD
 - [Linee Guida Filament](../filament-best-practices.md) 
+=======
+- [Linee Guida Filament](../filament-best-practices.md)
+>>>>>>> c7fd73eb (.)

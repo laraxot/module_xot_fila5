@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Meta Tag',
@@ -47,6 +50,12 @@ return [
                 'placeholder' => 'Inserisci l\'URL canonico',
                 'help' => 'URL canonico per evitare contenuti duplicati',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'social' => [
             'og_title' => [
@@ -74,6 +83,13 @@ return [
                     'player' => 'Card per contenuti multimediali',
                 ],
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'site' => [
             'sitename' => [
@@ -96,6 +112,13 @@ return [
                 'placeholder' => 'Inserisci il copyright',
                 'help' => 'Informazioni sul copyright del sito',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'appearance' => [
             'logo_header' => [
@@ -126,6 +149,13 @@ return [
                     'help' => 'Codice colore esadecimale',
                 ],
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'contact' => [
             'email' => [
@@ -143,6 +173,13 @@ return [
                 'placeholder' => 'Inserisci l\'indirizzo',
                 'help' => 'Indirizzo fisico dell\'attività',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'actions' => [
@@ -205,4 +242,9 @@ return [
             'oversized_image' => 'Immagine social troppo grande',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> c7fd73eb (.)
 ];

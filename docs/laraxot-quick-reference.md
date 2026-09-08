@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laraxot Philosophy - Quick Reference
 
 ## 🚨 CRITICAL RULES
@@ -110,3 +111,12 @@ composer dump-autoload
 ---
 
 **Remember**: In Laraxot, consistency enables maintainability. Follow these patterns for reliable, scalable applications.
+=======
+---
+module: theme
+topic: laraxot-quick-reference
+canonical: ../../../Themes/docs/shared-components/laraxot-philosophy-quick-reference.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/laraxot-philosophy-quick-reference.md
+>>>>>>> c7fd73eb (.)

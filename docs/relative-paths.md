@@ -1,10 +1,17 @@
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**
+<<<<<<< HEAD
 > - [README.md documentazione generale](../../../../docs/readme.md)
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./prompt_rules.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+=======
+> - [README.md documentazione generale](../../../../../docs/readme.md)
+> - [Struttura dei Prompt](./prompts.md)
+> - [Regole per i Prompt](./prompt_rules.md)
+> - [README.md toolkit bashscripts](README.md)
+>>>>>>> c7fd73eb (.)
 
 ## Regola Fondamentale
 
@@ -29,7 +36,11 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 ### Da un file in un modulo verso la root
 
 ```markdown
+<<<<<<< HEAD
 [Documentazione Root](../../../../docs/readme.md)
+=======
+[Documentazione Root](../../../../../docs/readme.md)
+>>>>>>> c7fd73eb (.)
 ```
 
 ## Errori Comuni da Evitare
@@ -64,7 +75,11 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | Posizione File Sorgente | Posizione File Destinazione | Percorso Relativo Corretto |
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
+<<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../../docs/README.md` |
+>>>>>>> c7fd73eb (.)
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 
@@ -87,4 +102,8 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 ## Riferimenti
 
 - [Markdown Link Syntax](https://www.markdownguide.org/basic-syntax/#links)
+<<<<<<< HEAD
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+=======
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+>>>>>>> c7fd73eb (.)

@@ -19,6 +19,60 @@ Nonostante le classi possano risiedere fisicamente nella sottodirectory `app/` d
 namespace Modules\Patient\Models;
 
 // File in: Modules/Dental/app/Services/AppointmentService.php
+<<<<<<< HEAD
+=======
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Patient/app/Models/Patient.php
+// File in: Modules/Patient/app/Models/Patient.php
+namespace Modules\Patient\Models;
+namespace Modules\Patient\Models;
+
+// File in: Modules/Dental/app/Services/AppointmentService.php
+// File in: Modules/Dental/app/Services/AppointmentService.php
+>>>>>>> c7fd73eb (.)
 namespace Modules\Dental\Services;
 ```
 
@@ -82,9 +136,16 @@ Se si verificano errori "Class not found" o problemi di autoloading:
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Convenzioni](../../../docs/conventions.md)
 - [Naming Conventions](../../../docs/naming-conventions.md)
 - [Documentazione Xot](../code-standards.md)
 - [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
+=======
+- [Convenzioni](../../../../docs/conventions.md)
+- [Naming Conventions](../../../../docs/naming-conventions.md)
+- [Documentazione Xot](../code-standards.md)
+- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> c7fd73eb (.)
 
 Ultima modifica: 31/03/2025

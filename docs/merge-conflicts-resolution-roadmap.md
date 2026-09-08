@@ -1,5 +1,9 @@
 # Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-22
+>>>>>>> c7fd73eb (.)
 **Status**: ⚠️ In Lavorazione
 **Scopo**: Documentare la roadmap per risolvere i merge conflicts che bloccano PHPStan
 
@@ -162,7 +166,15 @@ class ResourceName extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Form components
@@ -193,6 +205,10 @@ class ResourceName extends XotBaseResource
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-22
+>>>>>>> c7fd73eb (.)
 **Versione**: 1.0.0
 **Status**: ⚠️ In Lavorazione

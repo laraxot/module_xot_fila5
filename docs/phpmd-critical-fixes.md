@@ -1,5 +1,9 @@
 # Correzioni Critiche PHPMD - Analisi e Piano
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> c7fd73eb (.)
 **Obiettivo**: Identificare e correggere solo problemi critici (codice morto, bug evidenti)
 
 ## 🔍 Analisi Warning UnusedLocalVariable

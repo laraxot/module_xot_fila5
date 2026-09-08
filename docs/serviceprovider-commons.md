@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ServiceProvider Common Errors - Lessons Learned
 
 **Contesto**: Correzione errori nei ServiceProvider del modulo Meetup
@@ -202,3 +203,12 @@ Prima di creare un ServiceProvider:
 **Principio DRY**: Non duplicare logica già gestita dal parent.
 
 **Principio KISS**: Mantenere semplice, aggiungere complessità solo quando necessario.
+=======
+---
+module: theme
+topic: serviceprovider-commons
+canonical: ../../../Themes/docs/shared-components/serviceprovider-common-errors.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/serviceprovider-common-errors.md
+>>>>>>> c7fd73eb (.)

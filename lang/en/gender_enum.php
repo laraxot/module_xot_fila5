@@ -3,6 +3,23 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    'values' => [
+        'f' => [
+            'label' => 'Female',
+            'icon' => 'heroicon-o-user',
+            'color' => 'pink',
+            'description' => 'Female gender',
+        ],
+        'm' => [
+            'label' => 'Male',
+            'icon' => 'heroicon-o-user',
+            'color' => 'info',
+            'description' => 'Male gender',
+        ],
+    ],
+>>>>>>> c7fd73eb (.)
     'label' => 'Gender',
     'options' => [
         'f' => 'Female',

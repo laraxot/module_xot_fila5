@@ -4,21 +4,34 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Array;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+=======
+>>>>>>> c7fd73eb (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class SaveArrayAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param array<int|string, mixed> $data
+     */
+>>>>>>> c7fd73eb (.)
     public function execute(array $data, string $filename, string $format = 'php'): bool
     {
         return match ($format) {
             'json' => app(SaveJsonArrayAction::class)->execute($data, $filename),
             'php' => app(SavePhpArrayAction::class)->execute($data, $filename),
+<<<<<<< HEAD
             default => throw new InvalidArgumentException("Formato non supportato: {$format}"),
+=======
+            default => throw new \InvalidArgumentException("Formato non supportato: {$format}"),
+>>>>>>> c7fd73eb (.)
         };
     }
 }

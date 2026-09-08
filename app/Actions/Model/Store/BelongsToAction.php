@@ -23,7 +23,10 @@ class BelongsToAction
         $relationDTO->rows->associate($related);
 
         // $rows = $relation->rows;
+<<<<<<< HEAD
         // dd([$relation->name]);
+=======
+>>>>>>> c7fd73eb (.)
         /*
          * if (null == $row->{$relation->name}) {
          * $row->{$relation->name}()->create($relation->data);

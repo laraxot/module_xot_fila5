@@ -1,6 +1,10 @@
 # ServiceProvider Minimal Structure - Laraxot
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-10
+>>>>>>> c7fd73eb (.)
 **Principio**: DRY + KISS - Struttura minima necessaria, niente di più
 
 ## 🚨 Regola Fondamentale

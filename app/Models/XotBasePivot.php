@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Relations\Pivot as EloquentPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -28,6 +32,10 @@ use function Safe\preg_match;
 abstract class XotBasePivot extends EloquentPivot
 {
     use HasXotFactory;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
     use Updater;
 
     /**
@@ -63,8 +71,12 @@ abstract class XotBasePivot extends EloquentPivot
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
+<<<<<<< HEAD
             /** @var string */
             return $this->connection;
+=======
+            return $this->normalizeConnectionName($this->connection);
+>>>>>>> c7fd73eb (.)
         }
 
         // Extract module name from namespace: Modules\User\... → user
@@ -74,7 +86,24 @@ abstract class XotBasePivot extends EloquentPivot
             return strtolower($matches[1]);
         }
 
+<<<<<<< HEAD
         return parent::getConnectionName();
+=======
+        return $this->normalizeConnectionName(parent::getConnectionName());
+    }
+
+    protected function normalizeConnectionName(string|\UnitEnum|null $connection): ?string
+    {
+        if ($connection instanceof \BackedEnum) {
+            return (string) $connection->value;
+        }
+
+        if ($connection instanceof \UnitEnum) {
+            return $connection->name;
+        }
+
+        return $connection;
+>>>>>>> c7fd73eb (.)
     }
 
     /**

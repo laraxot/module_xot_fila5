@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ```php
 AttachAction::make()->modifyRecordSelectUsing(
 fn ($select) => $select->getOptionLabelFromRecordUsing(fn ($record) => $record->name . ' ' . $record->organization)
@@ -8,3 +9,6 @@ fn ($select) => $select->getOptionLabelFromRecordUsing(fn ($record) => $record->
 AttachAction::make()
     ->recordTitle(fn (Model $record) => "{$record->name} ({$record->organisation->name})")
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -15,22 +15,48 @@ trait EnumTrait
 
     public function getLabel(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.label');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.label');
+>>>>>>> c7fd73eb (.)
     }
 
     public function getColor(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.color');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.color');
+>>>>>>> c7fd73eb (.)
     }
 
     public function getIcon(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.icon');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.icon');
+>>>>>>> c7fd73eb (.)
     }
 
     public function getDescription(): string
     {
+<<<<<<< HEAD
         return $this->transClass(static::class, $this->value.'.description');
+=======
+        return $this->transClass(static::class, 'values.'.$this->value.'.description');
+    }
+
+    public function getTooltip(): string
+    {
+        return $this->transClass(self::class, 'values.'.$this->value.'.tooltip');
+    }
+
+    public function getHelperText(): string
+    {
+        return $this->transClass(self::class, 'values.'.$this->value.'.helper_text');
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -38,7 +64,11 @@ trait EnumTrait
      */
     public static function getSearchable(): array
     {
+<<<<<<< HEAD
         return array_map(fn ($item) => (string) $item->value, static::cases());
+=======
+        return array_map(static fn (\BackedEnum $item): string => (string) $item->value, static::cases());
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -75,7 +105,11 @@ trait EnumTrait
      * - **Religion**: Strong typing through enum values
      * - **Zen**: Form without form - one method adapts to both contexts
      *
+<<<<<<< HEAD
      * Inspired by Modules/TechPlanner/database/migrations/2019_12_12_000004_create_workers_table.php:
+=======
+     * Inspired by Modules/<nome progetto>/database/migrations/2019_12_12_000004_create_workers_table.php:
+>>>>>>> c7fd73eb (.)
      * ```php
      * $address_components = Place::$address_components;
      * foreach ($address_components as $el) {
@@ -111,7 +145,11 @@ trait EnumTrait
 
         foreach (static::getColumnDefinitions() as $name => $definition) {
             if ($migration === null || ! $migration->hasColumn($name)) {
+<<<<<<< HEAD
                 $definition($table);
+=======
+                $definition($table); // @phpstan-ignore callable.nonCallable
+>>>>>>> c7fd73eb (.)
             }
         }
     }
@@ -139,7 +177,11 @@ trait EnumTrait
      */
     public static function getColumnNames(): array
     {
+<<<<<<< HEAD
         return array_map(fn ($case) => (string) $case->value, static::cases());
+=======
+        return array_values(array_map(static fn (\BackedEnum $case): string => (string) $case->value, static::cases()));
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -152,4 +194,19 @@ trait EnumTrait
     {
         return [];
     }
+<<<<<<< HEAD
+=======
+
+    /** @return array<int|string, string> */
+    public static function toArray(): array
+    {
+        $cases = static::cases();
+        $result = [];
+        foreach ($cases as $item) {
+            $result[(string) $item->value] = (string) $item->getLabel();
+        }
+
+        return $result;
+    }
+>>>>>>> c7fd73eb (.)
 }

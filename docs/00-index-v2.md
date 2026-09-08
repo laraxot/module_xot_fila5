@@ -22,7 +22,11 @@
 
 ## 🛠️ **Utility & Trait**
 - 🧬 **[Trait Patterns](./traits-complete-guide.md)** - HasTeams, HasXotTable e altri trait core.
+<<<<<<< HEAD
 - 🔧 **[HasXotTable Fixes](./phpstan-hasxottable-trait-fixes-february-2026.md)** - Correzioni type safety per trait multi-contesto.
+=======
+- 🔧 **[HasXotTable Fixes](./phpstan-hasxottable-trait-fixes-february.md)** - Correzioni type safety per trait multi-contesto.
+>>>>>>> c7fd73eb (.)
 - 🐚 **[Bashscripts Organization](./bashscripts-organization.md)** - Strumenti CLI per la manutenzione.
 - 🚀 **[Safe Casting Actions](./safe-casting-actions.md)** - Gestione type-safe dei dati.
 

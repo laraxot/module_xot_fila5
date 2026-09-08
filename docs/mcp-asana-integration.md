@@ -25,7 +25,11 @@ L'integrazione di Asana MCP nel modulo Xot permette di:
 ### Configurazione
 ```bash
 # Verifica configurazione MCP
+<<<<<<< HEAD
 cat /var/www/_bases/base_laravelpizza/laravel/.mcp.json | grep -A 5 "asana"
+=======
+cat /var/www/_bases/base_<nome progetto>/laravel/.mcp.json | grep -A 5 "asana"
+>>>>>>> c7fd73eb (.)
 ```
 
 ---
@@ -401,4 +405,8 @@ Formato: Markdown con tabelle e grafici"
 
 **Status**: ✅ Ready for Use
 
+<<<<<<< HEAD
 **Maintained By**: Xot Team
+=======
+**Maintained By**: Xot Team
+>>>>>>> c7fd73eb (.)

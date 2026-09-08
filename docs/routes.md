@@ -36,9 +36,15 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+<<<<<<< HEAD
     
     Route::resource('users', UserController::class);
     
+=======
+
+    Route::resource('users', UserController::class);
+
+>>>>>>> c7fd73eb (.)
     Route::prefix('admin')->middleware(['role:admin'])->group(function () {
         Route::get('/settings', [SettingController::class, 'index'])->name('settings');
     });
@@ -52,7 +58,11 @@ use App\Http\Controllers\Api\UserController;
 
 Route::prefix('v1')->group(function () {
     Route::post('/login', [AuthController::class, 'login']);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     Route::middleware(['auth:sanctum'])->group(function () {
         Route::get('/user', [UserController::class, 'show']);
         Route::apiResource('users', UserController::class);
@@ -183,4 +193,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::pattern('id', '[0-9]+');
 Route::pattern('slug', '[a-z0-9-]+');
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

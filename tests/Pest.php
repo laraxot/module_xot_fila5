@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 
 /*
@@ -44,3 +45,10 @@ pest()->extend(TestCase::class)->in('Feature', 'Unit');
 // function something() {
 //     // ...
 // }
+=======
+/*
+ * Bootstrap Pest — modulo Xot.
+ * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
+ * Ogni file test dichiara uses(\Modules\Xot\Tests\TestCase::class).
+ */
+>>>>>>> c7fd73eb (.)

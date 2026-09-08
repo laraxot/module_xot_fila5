@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Support\Arr;
@@ -22,6 +25,10 @@ class MorphToManyAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+    /** @var Collection<int, mixed> */
+>>>>>>> c7fd73eb (.)
     public Collection $res;
 
     /**
@@ -30,7 +37,11 @@ class MorphToManyAction
      * @param Model       $row         The model instance to update
      * @param RelationDTO $relationDTO Data transfer object containing relation information
      *
+<<<<<<< HEAD
      * @throws Exception When data is not in correct format or relation is invalid
+=======
+     * @throws \Exception When data is not in correct format or relation is invalid
+>>>>>>> c7fd73eb (.)
      */
     public function execute(Model $row, RelationDTO $relationDTO): void
     {
@@ -40,17 +51,29 @@ class MorphToManyAction
         $model = $row;
 
         if (\in_array('to', array_keys($data), false) || \in_array('from', array_keys($data), false)) {
+<<<<<<< HEAD
             if (!isset($data['to'])) {
+=======
+            if (! isset($data['to'])) {
+>>>>>>> c7fd73eb (.)
                 $data['to'] = [];
             }
             $data = $data['to'];
         }
 
+<<<<<<< HEAD
         if (!\is_array($data)) {
             throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
         }
 
         if (!Arr::isAssoc($data)) {
+=======
+        if (! \is_array($data)) {
+            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+        }
+
+        if (! Arr::isAssoc($data)) {
+>>>>>>> c7fd73eb (.)
             $relation->sync($data);
 
             return;
@@ -58,7 +81,11 @@ class MorphToManyAction
 
         foreach ($data as $k => $v) {
             if (\is_array($v)) {
+<<<<<<< HEAD
                 if (!isset($v['pivot'])) {
+=======
+                if (! isset($v['pivot'])) {
+>>>>>>> c7fd73eb (.)
                     $v['pivot'] = [];
                 }
 

@@ -1,16 +1,53 @@
 # Standard per le Migrazioni in <nome progetto>
 
+<<<<<<< HEAD
 ## Introduzione
 
 Questo documento definisce gli standard e le best practices da seguire per tutte le migrazioni nei moduli di <nome progetto>. Questi standard sono fondamentali per garantire la coerenza e la correttezza delle migrazioni in tutto il progetto.
+=======
+## Convenzioni di Nomenclatura
+
+### REGOLA UNIVERSALE
+
+**TUTTE** le migrazioni DEVONO seguire il pattern:
+
+```
+{YYYY_MM_DD}_{HHMMSS}_create_{table_name}_table.php
+```
+
+Indipendentemente dal tipo di operazione (CREATE, ADD, CHANGE, FIX), il nome del file deve sempre essere `create_{table_name}_table.php`.
+
+- La logica di creazione va in `tableCreate()`
+- La logica di modifica va in `tableUpdate()`
+- Il nome file rimane sempre `create_{table_name}_table.php`
+
+### Esempi Corretti
+- `2026_01_01_000000_create_users_table.php`
+- `2026_01_01_000001_create_profiles_table.php`
+
+### Anti-Pattern (NON usare)
+- ❌ `2026_02_13_172135_add_lang_to_users_table.php`
+- ❌ `2026_02_13_163329_change_profiles_id_to_uuid.php`
+- ❌ `2026_02_13_171410_fix_causer_id_to_uuid.php`
+
+---
+>>>>>>> c7fd73eb (.)
 
 ## Principi Fondamentali
 
 1. **Estensione della classe base**: Tutte le migrazioni devono estendere `XotBaseMigration`
+<<<<<<< HEAD
 2. **Proprietà obbligatorie**: Ogni migrazione deve definire le proprietà `$table` e `$connection`
 3. **Documentazione completa**: Ogni migrazione deve includere una documentazione che descriva lo scopo della tabella
 4. **Verifica delle tabelle correlate**: Prima di creare foreign keys, verificare sempre l'esistenza della tabella correlata
 5. **Gestione dei timestamp**: Utilizzare sempre `$this->updateTimestamps()` per gestire i timestamp
+=======
+2. **Proprietà obbligatorie**: Ogni migrazione deve definire `$model_class`
+3. **Documentazione completa**: Ogni migrazione deve includere un docblock che descriva lo scopo
+4. **Verifica delle tabelle correlate**: Prima di creare foreign keys, verificare sempre l'esistenza della tabella correlata
+5. **Gestione dei timestamp**: Utilizzare sempre `$this->updateTimestamps()` per gestire i timestamp
+6. **Nome file**: Il file DEVE terminare con `_table.php`
+>>>>>>> c7fd73eb (.)
 
 ## Struttura Standard delle Migrazioni
 
@@ -20,12 +57,17 @@ Questo documento definisce gli standard e le best practices da seguire per tutte
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Schema;
+=======
+use Modules\NomeModello\Models\NomeModello;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /**
  * Migrazione per [scopo della migrazione].
  *
+<<<<<<< HEAD
  * @see docs/standards/migrations.md
  */
 return new class extends XotBaseMigration
@@ -43,12 +85,20 @@ return new class extends XotBaseMigration
      * @var string
      */
     protected ?string $connection = 'mysql'; // o altra connessione appropriata
+=======
+ * @see docs/database/migrations.md
+ */
+return new class extends XotBaseMigration
+{
+    protected ?string $model_class = NomeModello::class;
+>>>>>>> c7fd73eb (.)
 
     /**
      * Run the migrations.
      */
     public function up(): void
     {
+<<<<<<< HEAD
         $this->tableCreate(function (Blueprint $table) {
             $table->id(); // o altro tipo di chiave primaria
 
@@ -67,6 +117,20 @@ return new class extends XotBaseMigration
 
             // Indici
             $table->index('campo_id');
+=======
+        // Per creare una nuova tabella
+        $this->tableCreate(function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->string('nome_campo');
+            $this->updateTimestamps($table, true); // true per soft deletes
+        });
+
+        // Per modificare una tabella esistente
+        $this->tableUpdate(function (Blueprint $table) {
+            if (! $this->hasColumn('nome_colonna')) {
+                $table->string('nome_colonna')->nullable();
+            }
+>>>>>>> c7fd73eb (.)
         });
     }
 };
@@ -136,6 +200,12 @@ if (! $this->hasIndex('nome_indice')) {
 
 Ogni modulo può avere best practices specifiche per le migrazioni. Consultare la documentazione del modulo per ulteriori dettagli:
 
+<<<<<<< HEAD
+=======
+- [Best Practices per le Migrazioni nel Modulo Patient](/laravel/Modules/Patient/project_docs/MIGRATION_BEST_PRACTICES.md)
+- [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/Modules/Tenant/project_docs/MIGRATION_BEST_PRACTICES.md)
+- [Best Practices per le Migrazioni nel Modulo User](/laravel/Modules/User/project_docs/MIGRATION_BEST_PRACTICES.md)
+>>>>>>> c7fd73eb (.)
 - [Best Practices per le Migrazioni nel Modulo Patient](/laravel/modules/patient/project_docs/migration_best_practices.md)
 - [Best Practices per le Migrazioni nel Modulo Tenant](/laravel/modules/tenant/project_docs/migration_best_practices.md)
 - [Best Practices per le Migrazioni nel Modulo User](/laravel/modules/user/project_docs/migration_best_practices.md)
@@ -207,4 +277,8 @@ protected ?string $connection = 'user'; // Stessa connessione del modello
 
 ## Conclusione
 
+<<<<<<< HEAD
 Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
+=======
+Seguire questi standard per le migrazioni è fondamentale per garantire la coerenza e la correttezza del database in <nome progetto>. Assicurarsi di consultare sempre la documentazione specifica del modulo prima di creare o modificare una migrazione.
+>>>>>>> c7fd73eb (.)

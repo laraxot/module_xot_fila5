@@ -7,6 +7,7 @@ namespace Modules\Xot\Datas;
 use Spatie\LaravelData\Data;
 
 /**
+<<<<<<< HEAD
  * Class SubscriptionData - Gestisce la configurazione degli abbonamenti per il framework Laraxot.
  * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
  */
@@ -20,22 +21,48 @@ class SubscriptionData extends Data
      * @param  array<int, class-string>  $allowed_models  Modelli abilitati per gli abbonamenti
      * @param  bool  $trial_enabled  Se abilitare i periodi di prova
      * @param  int  $trial_days  Durata periodo di prova in giorni
+=======
+ * Class SubscriptionData - Gestisce la configurazione degli abbonamenti.
+ * Utilizzato esclusivamente nell'ambito dell'architettura Filament-first.
+ *
+ * @phpstan-consistent-constructor
+ */
+final class SubscriptionData extends Data
+{
+    /**
+     * @param array<string, string|int>                                     $plans
+     * @param array<int, class-string<\Illuminate\Database\Eloquent\Model>> $allowedModels
+>>>>>>> c7fd73eb (.)
      */
     public function __construct(
         public readonly bool $enable = false,
         public readonly string $driver = 'stripe',
         public readonly array $plans = [],
         public readonly string $currency = 'EUR',
+<<<<<<< HEAD
         public readonly array $allowed_models = [],
         public readonly bool $trial_enabled = true,
         public readonly int $trial_days = 14,
     ) {}
+=======
+        public readonly array $allowedModels = [],
+        public readonly bool $trialEnabled = true,
+        public readonly int $trialDays = 14,
+    ) {
+    }
+>>>>>>> c7fd73eb (.)
 
     /**
      * Create a new instance of SubscriptionData with default values.
      */
+<<<<<<< HEAD
     public static function make(): static
     {
         return new static();
+=======
+    public static function make(): self
+    {
+        return new self();
+>>>>>>> c7fd73eb (.)
     }
 }

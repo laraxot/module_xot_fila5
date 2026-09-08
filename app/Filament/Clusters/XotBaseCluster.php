@@ -5,13 +5,17 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Clusters;
 
 use Filament\Clusters\Cluster as FilamentCluster;
+<<<<<<< HEAD
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Facades\Lang;
+=======
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 
 class XotBaseCluster extends FilamentCluster
 {
     use NavigationLabelTrait;
+<<<<<<< HEAD
 
     /*
      * public static function getNavigationGroup(): ?string
@@ -63,4 +67,6 @@ class XotBaseCluster extends FilamentCluster
      * ];
      * }
      */
+=======
+>>>>>>> c7fd73eb (.)
 }

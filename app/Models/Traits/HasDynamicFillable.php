@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
+<<<<<<< HEAD
 use BackedEnum;
 use UnitEnum;
 
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> c7fd73eb (.)
 trait HasDynamicFillable
 {
     /**
@@ -23,12 +27,16 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
+<<<<<<< HEAD
         $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
 
         // Ensure the property is an array
         if (! is_array($dynamicFillableEnums)) {
             return $fillable;
         }
+=======
+        $dynamicFillableEnums = $this->getDynamicFillableEnums();
+>>>>>>> c7fd73eb (.)
 
         foreach ($dynamicFillableEnums as $enumClass) {
             if (! is_string($enumClass) || $enumClass === '') {
@@ -43,8 +51,13 @@ trait HasDynamicFillable
             // Get enum cases' values and merge
             $enumCases = $enumClass::cases();
             $enumFields = array_map(
+<<<<<<< HEAD
                 static function (UnitEnum $item): string {
                     if ($item instanceof BackedEnum) {
+=======
+                static function (\UnitEnum $item): string {
+                    if ($item instanceof \BackedEnum) {
+>>>>>>> c7fd73eb (.)
                         return (string) $item->value;
                     }
 
@@ -59,4 +72,18 @@ trait HasDynamicFillable
         // Ensure unique values and reset keys for cleanliness
         return array_values(array_unique($fillable));
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Models using this trait may override this to list Enum classes whose
+     * cases should be merged into `$fillable`.
+     *
+     * @return list<class-string<\UnitEnum>>
+     */
+    protected function getDynamicFillableEnums(): array
+    {
+        return [];
+    }
+>>>>>>> c7fd73eb (.)
 }

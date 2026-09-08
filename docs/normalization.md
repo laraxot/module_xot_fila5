@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Report Normalizzazione Documentazione - Gennaio 2025
 
 ## Azioni Completate
@@ -110,3 +111,12 @@
 
 **Stato**: In corso
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+=======
+---
+module: theme
+topic: normalization
+canonical: ../../../Themes/docs/shared-components/normalization-report-conflict.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/normalization-report-conflict.md
+>>>>>>> c7fd73eb (.)

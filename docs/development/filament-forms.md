@@ -15,7 +15,15 @@ class PerformanceResource extends XotBaseResource
 {
     protected static ?string $model = Performance::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Forms\Components\Card::make()
@@ -34,7 +42,11 @@ class PerformanceResource extends XotBaseResource
                 ->required()
                 ->string()
                 ->maxLength(255),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
             Forms\Components\TextInput::make('punteggio')
                 ->required()
                 ->numeric()
@@ -49,7 +61,11 @@ class PerformanceResource extends XotBaseResource
             Forms\Components\DatePicker::make('data_valutazione')
                 ->nullable()
                 ->displayFormat('d/m/Y'),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
             Forms\Components\Select::make('stato')
                 ->options([
                     'bozza' => 'Bozza',
@@ -232,7 +248,15 @@ Forms\Components\Grid::make()
 ### Eventi Form
 
 ```php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         Forms\Components\TextInput::make('codice')
@@ -241,7 +265,11 @@ public static function getFormSchema(): array
             ->afterStateUpdated(function (Forms\Components\TextInput $component, $state) {
                 $component->state(strtoupper($state));
             }),
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
         Forms\Components\Select::make('tipo')
             ->options([
                 'A' => 'Tipo A',

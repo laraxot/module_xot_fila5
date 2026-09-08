@@ -921,7 +921,11 @@ class ExampleChartWidget extends XotBaseChartWidget
 
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
+<<<<<<< HEAD
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+=======
+**`Modules/healthcare_app/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> c7fd73eb (.)
 
 Key pattern:
 ```php
@@ -952,4 +956,8 @@ JS);
 4. **Flexibility**: Provide configuration methods that allow child classes to customize behavior
 5. **Maintainability**: Keep the base implementation clean and well-documented
 6. **Scalability**: Design configuration options that can be extended without breaking existing functionality
+<<<<<<< HEAD
 7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+=======
+7. **Use RawJs**: Always use `RawJs::make()` for JavaScript callbacks in chart options
+>>>>>>> c7fd73eb (.)

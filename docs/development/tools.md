@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Development Tools
 
 ## Continuous Integration
@@ -24,3 +25,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/artisan.txt}
 ```txt
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/xdebug.txt}
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

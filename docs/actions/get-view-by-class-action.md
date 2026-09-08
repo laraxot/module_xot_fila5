@@ -62,4 +62,8 @@ $view = $action->execute(YourPage::class);
 
 - [Documentazione XotBasePage](../filament/pages/xot-base-page.md)
 - [Best Practices Views](../../best-practices/views.md)
+<<<<<<< HEAD
 - [Guida Namespace](../../namespace-guide.md) 
+=======
+- [Guida Namespace](../../namespace-guide.md)
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazione Re-render Folio + Volt
 
 ## Stato
@@ -46,3 +47,6 @@
 - [Roadmap Principale](../../roadmap.md)
 - [Architettura Folio + Volt](../../folio_volt_architecture.md)
 - [Best Practices](../../best-practices.md)
+=======
+
+>>>>>>> c7fd73eb (.)

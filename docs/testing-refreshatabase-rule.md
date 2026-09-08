@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Critical Rule: Never Use RefreshDatabase Trait
 
 ## Overview
@@ -233,3 +234,12 @@ This should return no results (except this documentation file).
 ---
 
 **Remember**: This rule is fundamental to the performance and reliability of the test suite in the Laraxot framework. Always use DatabaseTransactions or other alternatives instead of RefreshDatabase.
+=======
+---
+module: theme
+topic: testing-refreshatabase-rule
+canonical: ../../../Themes/docs/shared-components/testing-refresh-database-rule.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-refresh-database-rule.md
+>>>>>>> c7fd73eb (.)

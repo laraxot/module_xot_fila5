@@ -1,5 +1,9 @@
 # Filament Array Keys Rule - Array con Chiavi String
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-10
+>>>>>>> c7fd73eb (.)
 **Regola Critica**: Tutti i metodi Filament che restituiscono array devono usare chiavi string
 **Status**: Obbligatorio per PHPStan Level 10
 
@@ -35,7 +39,15 @@ public function getTableActions(): array
 }
 
 // ❌ SBAGLIATO - Array numerico
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         TextInput::make('name'),  // Chiave: 0
@@ -62,7 +74,15 @@ public function getTableActions(): array
 
 // ✅ CORRETTO - Array associativo con chiavi string
 /** @return array<string, Component> */
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'name_field' => TextInput::make('name'),
@@ -119,7 +139,15 @@ class UserResource extends XotBaseResource
     /**
      * @return array<string, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             'name_field' => TextInput::make('name'),
@@ -228,4 +256,8 @@ Prima di commit:
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+*Ultimo aggiornamento: 2025-01-10*
+>>>>>>> c7fd73eb (.)

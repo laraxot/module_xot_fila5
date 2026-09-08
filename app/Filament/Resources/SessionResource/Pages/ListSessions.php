@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\SessionResource\Pages;
 
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> c7fd73eb (.)
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -17,6 +20,7 @@ class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
 
+<<<<<<< HEAD
     #[Override]
     public function getGridTableColumns(): array
     {
@@ -49,4 +53,7 @@ class ListSessions extends XotBaseListRecords
                 ->label('Last Activity'),
         ];
     }
+=======
+   
+>>>>>>> c7fd73eb (.)
 }

@@ -118,12 +118,20 @@ $update = function() {
         'name' => 'required|min:3',
         'email' => 'required|email',
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     auth()->user()->update([
         'name' => $this->name,
         'email' => $this->email,
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     $this->dispatch('profile-updated');
 };
 

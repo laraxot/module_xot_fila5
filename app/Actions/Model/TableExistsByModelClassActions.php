@@ -12,7 +12,11 @@ class TableExistsByModelClassActions
 {
     public function execute(string $modelClass): bool
     {
+<<<<<<< HEAD
         if (!class_exists($modelClass)) {
+=======
+        if (! class_exists($modelClass)) {
+>>>>>>> c7fd73eb (.)
             return false;
         }
 

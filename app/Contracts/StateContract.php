@@ -43,7 +43,11 @@ interface StateContract
     /**
      * Execute modal action by record.
      *
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> c7fd73eb (.)
      */
     public function modalActionByRecord(Model $record, array $data): void;
 }

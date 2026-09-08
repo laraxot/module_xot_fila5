@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Media Management
 
 ## Video Player
@@ -33,3 +34,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/upload.txt}
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

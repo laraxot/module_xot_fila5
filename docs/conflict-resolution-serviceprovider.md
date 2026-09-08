@@ -26,10 +26,18 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 - [Best Practices Provider](./BEST-PRACTICES.md)
+=======
+- [Best Practices Provider](best-practices.md)
+>>>>>>> c7fd73eb (.)
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](./BEST-PRACTICES.md)
+=======
+- [docs/BEST-PRACTICES.md](best-practices.md)
+>>>>>>> c7fd73eb (.)

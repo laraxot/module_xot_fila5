@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 return [
     'navigation' => [
@@ -68,10 +69,33 @@ return [
                 'medium' => 'Media',
                 'high' => 'Alta',
                 'critical' => 'Critica',
+=======
+return [
+    'navigation' => [
+        'name' => 'Salute',
+        'plural' => 'Salute',
+        'group' => [
+            'name' => 'Admin',
+        ],
+    ],
+    'pages' => [
+        'health_check_results' => [
+            'buttons' => [
+                'refresh' => 'Refresh',
+            ],
+            'heading' => 'Application Health',
+            'navigation' => [
+                'group' => 'Settings',
+                'label' => 'Application Health',
+            ],
+            'notifications' => [
+                'check_results' => 'Check results from',
+>>>>>>> c7fd73eb (.)
             ],
         ],
     ],
     'actions' => [
+<<<<<<< HEAD
         'check_all' => [
             'label' => 'Controlla Tutto',
             'success' => 'Controlli completati con successo',
@@ -158,4 +182,38 @@ return [
         ],
     ],
     'title' => 'health',
+=======
+        'refresh' => [
+            'label' => 'refresh',
+            'tooltip' => 'refresh',
+            'icon' => 'refresh',
+        ],
+        'logout' => [
+            'tooltip' => 'logout',
+        ],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+    ],
+    'label' => 'Health',
+    'plural_label' => 'Health (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+>>>>>>> c7fd73eb (.)
 ];

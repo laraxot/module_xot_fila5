@@ -72,7 +72,11 @@ public static function getPages(): array
 ```
 XotBaseResource (Classe Base)
 ├── Gestione automatica form() [FINAL]
+<<<<<<< HEAD
 ├── Gestione automatica table() [FINAL]  
+=======
+├── Gestione automatica table() [FINAL]
+>>>>>>> c7fd73eb (.)
 ├── Gestione automatica traduzioni
 ├── Gestione automatica route standard
 └── Configurazione centralizzata
@@ -128,7 +132,15 @@ class {ModelName}Resource extends XotBaseResource
     protected static ?string $model = {ModelName}::class;
 
     // UNICO metodo necessario nella Resource principale
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -139,7 +151,11 @@ class {ModelName}Resource extends XotBaseResource
                 ]),
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // NESSUN altro metodo se standard:
     // - NO getTableColumns(), getTableFilters(), getTableActions(), getTableBulkActions()
     // - NO getPages() se contiene solo route standard
@@ -178,14 +194,22 @@ class List{ModelName}s extends XotBaseListRecords
             // Filtri senza ->label()
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function getTableActions(): array
     {
         return [
             // Azioni senza ->label()
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public function getTableBulkActions(): array
     {
         return [
@@ -307,4 +331,8 @@ return [
 - [Architettura Modulare](modular-architecture.md)
 
 *Documento creato: agosto 2025*
+<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025*
+=======
+*Ultimo aggiornamento: agosto 2025*
+>>>>>>> c7fd73eb (.)

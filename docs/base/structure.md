@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Struttura
 description: Struttura della base e dei moduli
@@ -91,3 +92,6 @@ quindi le relazioni verranno create utilizzando il MorphMap, ovvero la stringa '
 - altri files
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

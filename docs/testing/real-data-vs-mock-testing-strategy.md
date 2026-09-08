@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Real Data vs Mock Testing Strategy - Xot Module
 
 ## 🎯 Strategic Testing Approaches
@@ -387,3 +388,12 @@ test('legacy feature with mocks', function () {
 **Review Cycle**: Quarterly assessment
 **Decision Authority**: Technical Architecture Committee
 **Implementation Timeline**: 4-week migration
+=======
+---
+module: theme
+topic: real-data-vs-mock-testing-strategy
+canonical: ../../../../Themes/docs/shared-components/realata-vs-mock-testing-strategy.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/realata-vs-mock-testing-strategy.md
+>>>>>>> c7fd73eb (.)

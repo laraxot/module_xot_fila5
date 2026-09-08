@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module Quality Analysis Summary
 
 **Date**: [DATE]
@@ -95,3 +96,12 @@ php phpmd.phar Modules/[ModuleName] text cleancode,codesize,controversial,design
 2. Improve documentation in Xot module
 3. Refactor style issues in TechPlanner module
 4. Maintain high standards in User, Tenant, Activity, and Media modules
+=======
+---
+module: theme
+topic: module-quality
+canonical: ../../../Themes/docs/shared-components/module-quality-analysis-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-quality-analysis-sumy.md
+>>>>>>> c7fd73eb (.)

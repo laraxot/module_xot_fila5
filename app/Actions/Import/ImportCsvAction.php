@@ -4,9 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Import;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Database\Schema\Builder;
 use Filament\Notifications\Notification;
+=======
+use Filament\Notifications\Notification;
+use Illuminate\Database\Schema\Builder;
+>>>>>>> c7fd73eb (.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
@@ -24,12 +29,21 @@ class ImportCsvAction
     /**
      * Import a CSV file into a database table.
      *
+<<<<<<< HEAD
      * @param string $disk     the storage disk where the file is located
      * @param string $filename the name of the file to import
      * @param string $db       the database connection name
      * @param string $tbl      the table name where data will be imported
      *
      * @throws Exception
+=======
+     * @param  string  $disk  the storage disk where the file is located
+     * @param  string  $filename  the name of the file to import
+     * @param  string  $db  the database connection name
+     * @param  string  $tbl  the table name where data will be imported
+     *
+     * @throws \Exception
+>>>>>>> c7fd73eb (.)
      */
     public function execute(string $disk, string $filename, string $db, string $tbl): void
     {
@@ -72,11 +86,17 @@ class ImportCsvAction
     /**
      * Get table columns excluding certain fields.
      *
+<<<<<<< HEAD
      * @param Builder $conn
      *
      * @return ColumnData[]
      */
     private function getTableColumns($conn, string $tbl): array
+=======
+     * @return array<int, ColumnData>
+     */
+    private function getTableColumns(Builder $conn, string $tbl): array
+>>>>>>> c7fd73eb (.)
     {
         $columns = $conn->getColumnListing($tbl);
         $excludedColumns = ['id'];
@@ -97,14 +117,23 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
+<<<<<<< HEAD
      * @param ColumnData[] $columns
      *
      * @return string[]
+=======
+     * @param  array<int, ColumnData>  $columns
+     * @return array<string>
+>>>>>>> c7fd73eb (.)
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
+<<<<<<< HEAD
             fn(ColumnData $column) => 'decimal' === $column->type ? ('@' . $column->name) : $column->name,
+=======
+            fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
+>>>>>>> c7fd73eb (.)
             $columns,
         );
     }
@@ -112,11 +141,16 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
+<<<<<<< HEAD
      * @param ColumnData[] $columns
+=======
+     * @param  array<int, ColumnData>  $columns
+>>>>>>> c7fd73eb (.)
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
         $sql =
+<<<<<<< HEAD
             "LOAD DATA LOW_PRIORITY LOCAL INFILE '{$path}' " .
             "INTO TABLE `{$db}`.`{$tbl}` CHARACTER SET latin1 " .
             "FIELDS TERMINATED BY ';' OPTIONALLY ENCLOSED BY '" .
@@ -125,21 +159,41 @@ class ImportCsvAction
             "ESCAPED BY '" .
             '"' .
             "' " .
+=======
+            "LOAD DATA LOW_PRIORITY LOCAL INFILE '{$path}' ".
+            "INTO TABLE `{$db}`.`{$tbl}` CHARACTER SET latin1 ".
+            "FIELDS TERMINATED BY ';' OPTIONALLY ENCLOSED BY '".
+            '"'.
+            "' ".
+            "ESCAPED BY '".
+            '"'.
+            "' ".
+>>>>>>> c7fd73eb (.)
             "LINES TERMINATED BY '\r\n' ({$fieldsUpList})";
 
         $sqlReplace = [];
         foreach ($columns as $column) {
+<<<<<<< HEAD
             if ('decimal' === $column->type) {
+=======
+            if ($column->type === 'decimal') {
+>>>>>>> c7fd73eb (.)
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
 
+<<<<<<< HEAD
         if (!empty($sqlReplace)) {
             $sql .= ' SET ' . implode(', ', $sqlReplace) . ';';
+=======
+        if (! empty($sqlReplace)) {
+            $sql .= ' SET '.implode(', ', $sqlReplace).';';
+>>>>>>> c7fd73eb (.)
         }
 
         return $sql;
     }
+<<<<<<< HEAD
 
     /**
      * Transform columns into ColumnData objects.
@@ -164,4 +218,6 @@ class ImportCsvAction
             $columns,
         );
     }
+=======
+>>>>>>> c7fd73eb (.)
 }

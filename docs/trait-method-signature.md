@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Trait Method Signature Rules
 
 ## 🚨 Critical Rule: Static vs Non-Static Methods
@@ -137,3 +138,12 @@ If you encounter this error:
 *
 *Trait Standards Version: 2.0*
 
+=======
+---
+module: theme
+topic: trait-method-signature
+canonical: ../../../Themes/docs/shared-components/trait-method-signature-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/trait-method-signature-rules.md
+>>>>>>> c7fd73eb (.)

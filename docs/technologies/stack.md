@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stack Tecnologico Standard
 
 Questo documento definisce lo stack tecnologico standard utilizzato in tutti i moduli.
@@ -138,3 +139,6 @@ Questo documento definisce lo stack tecnologico standard utilizzato in tutti i m
 - [Configurazione](../config/readme.md)
 - [Sviluppo](../development/readme.md)
 - [Testing](../testing/readme.md)
+=======
+
+>>>>>>> c7fd73eb (.)

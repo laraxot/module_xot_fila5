@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Versione HEAD
 
 # Pattern Architetturali
@@ -125,3 +126,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/bad_practices.txt}
 ```
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

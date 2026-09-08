@@ -1,5 +1,9 @@
 # Regola Critica: Soluzione Intelligente e Professionale
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-01-22
+>>>>>>> c7fd73eb (.)
 **Status**: ✅ Regola Critica OBBLIGATORIA
 **Integrazione**: Metodologia Super Mucca
 
@@ -272,6 +276,10 @@ Questa regola si integra perfettamente con la [Metodologia Super Mucca](./super-
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-22
+>>>>>>> c7fd73eb (.)
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA

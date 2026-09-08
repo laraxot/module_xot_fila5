@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Status**: ✅ In Progresso
@@ -61,3 +62,12 @@
 
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
+=======
+---
+module: theme
+topic: merges-progress
+canonical: ../../../Themes/docs/shared-components/merge-conflicts-progress-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/merge-conflicts-progress-sumy.md
+>>>>>>> c7fd73eb (.)

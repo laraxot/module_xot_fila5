@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida Pratica: Sostituzione di property_exists() per Eloquent
 
 ## Filosofia
@@ -162,3 +163,12 @@ if ($model->isFillable('tenant_id')) {
 **Regola d'oro:**
 - Eloquent Model? → NO `property_exists()`, usa `isset()` o `hasAttribute()`
 - Altro object? → `property_exists()` va bene!
+=======
+---
+module: theme
+topic: property-exists-replacement
+canonical: ../../../Themes/docs/shared-components/property-exists-replacement-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/property-exists-replacement-guide.md
+>>>>>>> c7fd73eb (.)

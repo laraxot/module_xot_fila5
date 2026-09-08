@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Relations\MorphPivot as EloquentMorphPivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -32,6 +36,10 @@ use function Safe\preg_match;
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
     use HasXotFactory;
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
     use Updater;
 
     /** @var bool */
@@ -84,8 +92,12 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
     public function getConnectionName(): ?string
     {
         if (isset($this->connection)) {
+<<<<<<< HEAD
             /** @var string */
             return $this->connection;
+=======
+            return $this->normalizeConnectionName($this->connection);
+>>>>>>> c7fd73eb (.)
         }
 
         // Extract module name from namespace: Modules\Rating\... → rating
@@ -95,7 +107,24 @@ abstract class XotBaseMorphPivot extends EloquentMorphPivot
             return strtolower($matches[1]);
         }
 
+<<<<<<< HEAD
         return parent::getConnectionName();
+=======
+        return $this->normalizeConnectionName(parent::getConnectionName());
+    }
+
+    protected function normalizeConnectionName(string|\UnitEnum|null $connection): ?string
+    {
+        if ($connection instanceof \BackedEnum) {
+            return (string) $connection->value;
+        }
+
+        if ($connection instanceof \UnitEnum) {
+            return $connection->name;
+        }
+
+        return $connection;
+>>>>>>> c7fd73eb (.)
     }
 
     /**

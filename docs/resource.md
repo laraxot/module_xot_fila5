@@ -55,7 +55,15 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Schema del form
@@ -88,7 +96,15 @@ class MyResource extends XotBaseResource
 
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
+<<<<<<< HEAD
    - ✅ `public static function getFormSchema(): array`
+=======
+<<<<<<< HEAD
+   - ✅ `public static function getFormSchema(): array`
+=======
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -200,7 +216,15 @@ class ListRecords extends XotBaseListRecords
 
 ### 1. Form Schema con Relazioni
 ```php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -529,7 +553,15 @@ public function getTableColumns(): array
 /**
  * @return array<string, Forms\Components\Component>
  */
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'nome' => TextInput::make('nome'),
@@ -605,8 +637,13 @@ public function getTableBulkActions(): array
 // ... existing code ...
 
 ## Collegamenti tra versioni di resource.md
+<<<<<<< HEAD
 * [resource.md](../../../xot/docs/filament/resource.md)
 * [resource.md](../../../xot/docs/resource.md)
+=======
+* [resource.md](../../../Xot/docs/filament/resource.md)
+* [resource.md](../../../Xot/docs/resource.md)
+>>>>>>> c7fd73eb (.)
 
 ### Versione Incoming
 

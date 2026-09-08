@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia dei Getter Semantici in MetatagData
 
 ## Premessa
@@ -47,3 +48,6 @@ Nel contesto di Xot, la classe `MetatagData` rappresenta la fonte autorevole di 
 
 ---
 **Ultima modifica:** 2025-05-06
+=======
+
+>>>>>>> c7fd73eb (.)

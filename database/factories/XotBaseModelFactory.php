@@ -24,6 +24,12 @@ class XotBaseModelFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     public function definition(): array
     {
         return [

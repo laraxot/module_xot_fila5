@@ -5,9 +5,16 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Support;
 
 use Carbon\Carbon;
+<<<<<<< HEAD
 use Filament\Tables\Columns\BooleanColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+=======
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+>>>>>>> c7fd73eb (.)
 
 /**
  * Builder for common Filament table columns.
@@ -71,7 +78,11 @@ class ColumnBuilder
             ->sortable()
             ->searchable()
             ->limit(50)
+<<<<<<< HEAD
             ->tooltip(static fn ($record) => \is_object($record) && isset($record->title) ? (string) $record->title : '')
+=======
+            ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->title) ? SafeStringCastAction::cast($record->title) : '')
+>>>>>>> c7fd73eb (.)
             ->toggleable();
     }
 
@@ -110,7 +121,11 @@ class ColumnBuilder
         return TextColumn::make('description')
             ->label(__('xot::fields.description.label'))
             ->limit($limit)
+<<<<<<< HEAD
             ->tooltip(static fn ($record) => \is_object($record) && isset($record->description) ? (string) $record->description : '')
+=======
+            ->tooltip(static fn (mixed $record) => \is_object($record) && isset($record->description) ? SafeStringCastAction::cast($record->description) : '')
+>>>>>>> c7fd73eb (.)
             ->toggleable();
     }
 
@@ -185,7 +200,11 @@ class ColumnBuilder
             ->dateTime()
             ->sortable()
             ->badge()
+<<<<<<< HEAD
             ->color(static function ($record) {
+=======
+            ->color(static function (mixed $record) {
+>>>>>>> c7fd73eb (.)
                 if (! \is_object($record) || ! isset($record->published_at)) {
                     return 'warning';
                 }
@@ -204,9 +223,16 @@ class ColumnBuilder
     /**
      * Standard is_active boolean column (sortable).
      */
+<<<<<<< HEAD
     public static function isActive(): BooleanColumn
     {
         return BooleanColumn::make('is_active')
+=======
+    public static function isActive(): IconColumn
+    {
+        return IconColumn::make('is_active')
+            ->boolean()
+>>>>>>> c7fd73eb (.)
             ->label(__('xot::fields.is_active.label'))
             ->sortable()
             ->toggleable();

@@ -22,21 +22,36 @@ class ExportXlsStreamByLazyCollection
     /**
      * Esporta una LazyCollection in un file CSV streamed.
      *
+<<<<<<< HEAD
      * @param LazyCollection $data I dati da esportare
      * @param string $filename Nome del file CSV
      * @param string|null $transKey Chiave di traduzione per le intestazioni
      * @param array<string>|null $_fields Campi da includere nell'export (attualmente non utilizzato)
      *
      * @return StreamedResponse
+=======
+     * @param  LazyCollection<int, mixed>  $data  I dati da esportare
+     * @param  string  $filename  Nome del file CSV
+     * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
+     * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
+>>>>>>> c7fd73eb (.)
      */
     public function execute(
         LazyCollection $data,
         string $filename = 'test.csv',
+<<<<<<< HEAD
         null|string $transKey = null,
         null|array $_fields = null,
     ): StreamedResponse {
         $headers = [
             'Content-Disposition' => 'attachment; filename=' . $filename,
+=======
+        ?string $transKey = null,
+        ?array $_fields = null,
+    ): StreamedResponse {
+        $headers = [
+            'Content-Disposition' => 'attachment; filename='.$filename,
+>>>>>>> c7fd73eb (.)
         ];
         $head = $this->headings($data, $transKey);
 
@@ -62,10 +77,18 @@ class ExportXlsStreamByLazyCollection
                         continue;
                     }
                     // Convertiamo tutti i valori in stringhe o null
+<<<<<<< HEAD
                     $safeRowData = array_map(function ($item) {
                         if ($item === null) {
                             return null;
                         }
+=======
+                    $safeRowData = array_map(function (string|int|float|bool|null $item) {
+                        if ($item === null) {
+                            return '';
+                        }
+
+>>>>>>> c7fd73eb (.)
                         return is_string($item) ? $item : ((string) $item);
                     }, $rowData);
 
@@ -88,6 +111,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Ottiene le intestazioni per l'export.
      *
+<<<<<<< HEAD
      * @param LazyCollection $data I dati da cui estrarre le intestazioni
      * @param string|null $transKey Chiave di traduzione per le intestazioni
      *
@@ -97,6 +121,16 @@ class ExportXlsStreamByLazyCollection
     {
         $first = $data->first();
         if (!is_array($first) && (!is_object($first) || !method_exists($first, 'toArray'))) {
+=======
+     * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
+     * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
+     * @return array<string>
+     */
+    public function headings(LazyCollection $data, ?string $transKey = null): array
+    {
+        $first = $data->first();
+        if (! is_array($first) && (! is_object($first) || ! method_exists($first, 'toArray'))) {
+>>>>>>> c7fd73eb (.)
             return []; // Ritorna intestazioni vuote se non c'è un primo elemento valido
         }
 
@@ -108,6 +142,7 @@ class ExportXlsStreamByLazyCollection
          */
         $headings = collect($headArray)->keys();
 
+<<<<<<< HEAD
         if (null !== $transKey) {
             $headings = $headings->map(static function (string $item) use ($transKey) {
                 $key = $transKey . '.fields.' . $item;
@@ -121,13 +156,35 @@ class ExportXlsStreamByLazyCollection
                 $trans = trans($key);
                 if ($trans !== $key) {
                     return $trans;
+=======
+        if ($transKey !== null) {
+            $headings = $headings->map(static function (string $item) use ($transKey) {
+                $key = $transKey.'.fields.'.$item;
+                $trans = trans($key);
+                if ($trans !== $key) {
+                    return is_string($trans) ? $trans : $item;
+                }
+
+                Assert::string($item1 = Str::replace('.', '_', $item), '['.__LINE__.']['.self::class.']');
+                $key = $transKey.'.fields.'.$item1;
+                $trans = trans($key);
+                if ($trans !== $key) {
+                    return is_string($trans) ? $trans : $item;
+>>>>>>> c7fd73eb (.)
                 }
 
                 return $item;
             });
         }
 
+<<<<<<< HEAD
         /** @var array<string> */
         return $headings->map(strval(...))->toArray();
+=======
+        /** @var array<string> $headers */
+        $headers = array_values($headings->map(strval(...))->toArray());
+
+        return $headers;
+>>>>>>> c7fd73eb (.)
     }
 }

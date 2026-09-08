@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 class FilterFormWidget extends XotBaseWidget
+=======
+class FilterFormWidget extends XotBaseSchemaWidget
+>>>>>>> c7fd73eb (.)
 {
     // protected static string $view = 'filament.resources.your-resource.widgets.filter-form-widget';
 
@@ -14,6 +18,12 @@ class FilterFormWidget extends XotBaseWidget
 
     // public array $form_schema = [];
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     public function getFormSchema(): array
     {
         return [];

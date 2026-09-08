@@ -5,6 +5,7 @@
 ### Framework e Architettura
 - [Laravel Framework](laravel-framework.md) - Documentazione completa del framework Laravel
 - [Convenzioni Laraxot](conventions.md) - Regole e convenzioni per lo sviluppo
+<<<<<<< HEAD
 - [Piano Consolidamento Docs](docs_consolidation_plan.md) - Piano per consolidare la documentazione
 
 ### Moduli Core
@@ -13,6 +14,16 @@
 - [Modulo UI](../ui/docs/readme.md) - Componenti UI e design system
 - [Modulo Performance](../performance/docs/readme.md) - Sistema di valutazione e performance
 - [Modulo Lang](../lang/docs/readme.md) - Gestione multilingua e traduzioni
+=======
+- [Piano Consolidamento Docs](DOCS_CONSOLIDATION_PLAN.md) - Piano per consolidare la documentazione
+
+### Moduli Core
+- [Modulo Xot](../Xot/docs/README.md) - Core framework e funzionalità base
+- [Modulo User](../User/docs/README.md) - Gestione utenti e autenticazione
+- [Modulo UI](../UI/docs/README.md) - Componenti UI e design system
+- [Modulo Performance](../Performance/docs/README.md) - Sistema di valutazione e performance
+- [Modulo Lang](../Lang/docs/README.md) - Gestione multilingua e traduzioni
+>>>>>>> c7fd73eb (.)
 
 ## Documentazione Tecnica
 
@@ -48,7 +59,11 @@
 
 ### Sicurezza e Performance
 - [Security Guidelines](security-guidelines.md) - Linee guida per la sicurezza
+<<<<<<< HEAD
 - [Performance Optimization](performance-optimization.md) - Ottimizzazione delle performance
+=======
+- [Performance Optimization](PERFORMANCE-OPTIMIZATION.md) - Ottimizzazione delle performance
+>>>>>>> c7fd73eb (.)
 - [Caching Strategy](caching-strategy.md) - Strategia di caching
 - [Monitoring](monitoring.md) - Monitoraggio e logging
 
@@ -168,19 +183,30 @@
 # Collegamenti Documentazione Modulo Xot
 
 ## Documentazione Generica
+<<<<<<< HEAD
 - [README](../docs/readme.md) - Documentazione principale del progetto
+=======
+- [README](../docs/README.md) - Documentazione principale del progetto
+>>>>>>> c7fd73eb (.)
 - [Roadmap](../docs/roadmap.md) - Piano di sviluppo
 - [Filosofia](../docs/filosofia.md) - Principi e filosofia del progetto
 
 ## Documentazione Tecnica
+<<<<<<< HEAD
 - [Regole di Progetto](./rules/prompt_rules.md)
 - [Standard di Codice](./standards/code-standards.md)
 - [Convenzioni di Nomenclatura](./conventions/naming-conventions.md)
+=======
+- [Regole di Progetto](./rules/PROMPT_RULES.md)
+- [Standard di Codice](./standards/CODE-STANDARDS.md)
+- [Convenzioni di Nomenclatura](./conventions/NAMING-CONVENTIONS.md)
+>>>>>>> c7fd73eb (.)
 - [Installazione](./installation.md)
 - [Configurazione](./configuration.md)
 - [Risoluzione Problemi](./troubleshooting.md)
 
 ## Collegamenti ai Moduli
+<<<<<<< HEAD
 - [Cms](../cms/docs/readme.md) - Frontend
 - [UI](../ui/docs/readme.md) - Componenti
 - [User](../user/docs/readme.md) - Utenti e Permessi
@@ -215,3 +241,39 @@
 * [links.md](../../tenant/docs/it/links/links.md)
 * [links.md](../../cms/docs/links.md)
 * [links.md](../../../themes/one/docs/links.md)
+=======
+- [Cms](../Cms/docs/README.md) - Frontend
+- [UI](../UI/docs/README.md) - Componenti
+- [User](../User/docs/README.md) - Utenti e Permessi
+- [Patient](../Patient/docs/README.md) - Pazienti
+- [Dental](../Dental/docs/README.md) - Odontoiatria
+- [Tenant](../Tenant/docs/README.md) - Multi-tenant
+- [Lang](../Lang/docs/README.md) - Traduzioni
+- [Media](../Media/docs/README.md) - Media
+- [Notify](../Notify/docs/README.md) - Notifiche
+- [Reporting](../Reporting/docs/README.md) - Report
+- [Gdpr](../Gdpr/docs/README.md) - GDPR
+- [Job](../Job/docs/README.md) - Jobs
+- [Chart](../Chart/docs/README.md) - Grafici
+
+## Collegamenti tra versioni di LINKS.md
+* [LINKS.md](../../../Xot/docs/LINKS.md)
+* [LINKS.md](../../../User/docs/LINKS.md)
+* [LINKS.md](../../../UI/docs/LINKS.md)
+* [LINKS.md](../../../Cms/docs/LINKS.md)
+* [LINKS.md](../../../../Themes/One/docs/LINKS.md)
+
+## Collegamenti tra versioni di links.md
+* [links.md](../../Gdpr/docs/links.md)
+* [links.md](../../Notify/docs/links.md)
+* [links.md](ci/links.md)
+* [links.md](open_sources/links.md)
+* [links.md](../../User/docs/links.md)
+* [links.md](../../User/docs/links.md)
+* [links.md](../../UI/docs/links.md)
+* [links.md](../../Lang/docs/links.md)
+* [links.md](../../Job/docs/links.md)
+* [links.md](../../Tenant/docs/it/links/links.md)
+* [links.md](../../Cms/docs/links.md)
+* [links.md](../../../Themes/One/docs/links.md)
+>>>>>>> c7fd73eb (.)

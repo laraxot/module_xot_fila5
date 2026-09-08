@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Performance Bottlenecks Analysis
 
 ## Query Bottlenecks
@@ -216,3 +217,6 @@ public function exportData()
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

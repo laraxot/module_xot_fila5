@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\ModuleResource\Pages;
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Actions;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Array\SaveArrayAction;
 use Modules\Xot\Filament\Resources\ModuleResource;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\File;
+use Modules\Xot\Actions\Arr\SaveArrayAction;
+use Modules\Xot\Filament\Resources\ModuleResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Models\Module;
 
 /**
@@ -34,6 +42,7 @@ class EditModule extends XotBaseEditRecord
     protected function afterSave(): void
     {
         $module = $this->record; // Ottiene il record corrente
+<<<<<<< HEAD
         if (!($module instanceof Model) || !isset($module->path)) {
             return;
         }
@@ -44,6 +53,20 @@ class EditModule extends XotBaseEditRecord
             $data = [];
         }
         $data = array_merge($data, $module->toArray());
+=======
+        if (! ($module instanceof Model) || ! isset($module->path)) {
+            return;
+        }
+
+        $config_path = $module->path.'/config/config.php';
+        $loaded = File::getRequire($config_path);
+        $data = $this->normalizeConfigArray(
+            array_merge(
+                is_array($loaded) ? $this->normalizeConfigArray($loaded) : [],
+                $this->normalizeConfigArray($module->toArray()),
+            ),
+        );
+>>>>>>> c7fd73eb (.)
         unset($data['path']);
         app(SaveArrayAction::class)->execute($data, $config_path);
 
@@ -71,4 +94,23 @@ class EditModule extends XotBaseEditRecord
          * Config::set('modules.colors', $colorsConfig);
          */
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * @param array<array-key, mixed> $config
+     *
+     * @return array<string, mixed>
+     */
+    private function normalizeConfigArray(array $config): array
+    {
+        $normalized = [];
+
+        foreach ($config as $key => $value) {
+            $normalized[(string) $key] = $value;
+        }
+
+        return $normalized;
+    }
+>>>>>>> c7fd73eb (.)
 }

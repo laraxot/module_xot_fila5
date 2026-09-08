@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Standard di Codifica
 
 ## Principi Generali
@@ -221,3 +222,6 @@ public function store(Request $request): Response
 ## Collegamenti tra versioni di coding-standards.md
 * [coding-standards.md](../../../xot/docs/standards/coding-standards.md)
 * [coding-standards.md](../../../xot/docs/conventions/coding-standards.md)
+=======
+
+>>>>>>> c7fd73eb (.)

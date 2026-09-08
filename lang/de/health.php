@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Stato Sistema',
@@ -20,6 +23,12 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del controllo',
             'help' => 'Nome identificativo del controllo di sistema',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -31,18 +40,42 @@ return [
                 'critical' => 'Critico',
                 'unknown' => 'Sconosciuto',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'last_check' => [
             'label' => 'Ultimo Controllo',
             'help' => 'Data e ora dell\'ultimo controllo effettuato',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'next_check' => [
             'label' => 'Prossimo Controllo',
             'help' => 'Data e ora del prossimo controllo programmato',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'details' => [
             'label' => 'Dettagli',
             'help' => 'Informazioni dettagliate sullo stato del controllo',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -59,6 +92,12 @@ return [
                 'logs' => 'Log',
                 'network' => 'Rete',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'severity' => [
             'label' => 'Gravità',
@@ -69,6 +108,12 @@ return [
                 'high' => 'Alta',
                 'critical' => 'Critica',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'actions' => [
@@ -158,4 +203,9 @@ return [
         ],
     ],
     'title' => 'health',
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> c7fd73eb (.)
 ];

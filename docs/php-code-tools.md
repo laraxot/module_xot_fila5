@@ -19,5 +19,9 @@ https://github.com/phan/phan
 
 https://github.com/overtrue/phplint
 
+<<<<<<< HEAD
 https://phpmd.org/
 
+=======
+https://phpmd.org/
+>>>>>>> c7fd73eb (.)

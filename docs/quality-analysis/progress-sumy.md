@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Quality Improvement Progress - Xot Module
 
 ## Session Summary (2025-11-12)
@@ -165,3 +166,12 @@ vendor/bin/pint Modules/Xot/app
 
 **Session Status:** ✅ Complete
 **Ready for:** Next module iteration
+=======
+---
+module: theme
+topic: progress-sumy
+canonical: ../../../../Themes/docs/shared-components/progress-summary.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/progress-summary.md
+>>>>>>> c7fd73eb (.)

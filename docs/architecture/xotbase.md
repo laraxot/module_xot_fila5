@@ -29,7 +29,15 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 ### 2. Metodi Obbligatori
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
+<<<<<<< HEAD
 - **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
+=======
+<<<<<<< HEAD
+- **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
+=======
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 
 ### 3. Namespace Standard
 Assicurati di usare i namespace corretti. Mai includere `App` nel percorso se sei all'interno di un modulo (es. `Modules\Xot\Filament\...` non `Modules\Xot\App\Filament\...`).
@@ -42,4 +50,7 @@ grep -r "extends Filament\\" Modules/[YourModule] | grep -v "XotBase"
 L'output deve essere vuoto.
 
 ---
+<<<<<<< HEAD
 *Ultimo aggiornamento: Febbraio 2026*
+=======
+>>>>>>> c7fd73eb (.)

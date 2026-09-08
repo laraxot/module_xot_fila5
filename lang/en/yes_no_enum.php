@@ -3,6 +3,23 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    'values' => [
+        'yes' => [
+            'label' => 'Yes',
+            'icon' => 'heroicon-o-check-circle',
+            'color' => 'success',
+            'description' => 'Affirmative value',
+        ],
+        'no' => [
+            'label' => 'No',
+            'icon' => 'heroicon-o-x-circle',
+            'color' => 'danger',
+            'description' => 'Negative value',
+        ],
+    ],
+>>>>>>> c7fd73eb (.)
     'label' => 'Yes/No',
     'options' => [
         'yes' => 'Yes',

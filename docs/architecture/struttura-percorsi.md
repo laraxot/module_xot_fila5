@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei percorsi nel progetto
 
 > **Ambiente di riferimento**: ``
@@ -33,6 +34,8 @@ resources/lang/it/validation.php
 ├── docs/                 # Documentazione generale
 └── laravel/              # ⭐ Applicazione Laravel
     ├── app/
+=======
+>>>>>>> c7fd73eb (.)
 # Struttura dei percorsi nel progetto <nome progetto>
 
 ## Regola fondamentale
@@ -127,10 +130,13 @@ grep -r "app" --include="*.php" laravel
 grep -r "Modules" --include="*.php" laravel
 grep -r "Themes" --include="*.php" laravel
 grep -r "resources" --include="*.php" laravel
+<<<<<<< HEAD
 grep -r "app" --include="*.php" laravel
 grep -r "Modules" --include="*.php" laravel
 grep -r "Themes" --include="*.php" laravel
 grep -r "resources" --include="*.php" laravel
+=======
+>>>>>>> c7fd73eb (.)
 ```
 
 ## Correzzione automatica (opzionale)
@@ -143,6 +149,7 @@ Se si trovano percorsi errati, è possibile correggerli automaticamente con:
 find laravel -type f -name "*.php" -exec sed -i 's|app|app|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|Modules|Modules|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
+<<<<<<< HEAD
 find laravel -type f -name "*.php" -exec sed -i 's|app|app|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|Modules|Modules|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
@@ -152,10 +159,13 @@ find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|app|app|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|Modules|Modules|g' {} \;
 find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
+=======
+>>>>>>> c7fd73eb (.)
 ```
 
 ## Riferimenti correlati
 
+<<<<<<< HEAD
 - [Struttura del progetto](../xot/docs/architecture/struttura-progetto.md)
 - [Regole di namespace](../xot/docs/standards/namespace-conventions.md)
 - [Autoloading](../xot/docs/standards/psr4-compliance.md)
@@ -168,3 +178,8 @@ find laravel -type f -name "*.php" -exec sed -i 's|Themes|Themes|g' {} \;
 - [Struttura del progetto](../xot/docs/architecture/struttura-progetto.md)
 - [Regole di namespace](../xot/docs/standards/namespace-conventions.md)
 - [Autoloading](../xot/docs/standards/psr4-compliance.md)
+=======
+- [Struttura del progetto](modules/xot/project_docs/architecture/struttura-progetto.md)
+- [Regole di namespace](modules/xot/project_docs/standards/namespace-conventions.md)
+- [Autoloading](modules/xot/project_docs/standards/psr4-compliance.md)
+>>>>>>> c7fd73eb (.)

@@ -20,7 +20,12 @@ class CommandOutputEvent implements ShouldBroadcast
         public string $processId,
         public string $output,
         public string $type = 'output',
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> c7fd73eb (.)
 
     public function broadcastOn(): array
     {
@@ -34,6 +39,10 @@ class CommandOutputEvent implements ShouldBroadcast
         return 'CommandOutput';
     }
 
+<<<<<<< HEAD
+=======
+    /** @return array<string, string> */
+>>>>>>> c7fd73eb (.)
     public function broadcastWith(): array
     {
         return [

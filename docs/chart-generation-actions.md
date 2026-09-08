@@ -946,7 +946,11 @@ GeneratePngChartAction::dispatch($type, $data)
 
 ---
 
+<<<<<<< HEAD
 **
+=======
+**Last Updated:** 2025-12-09
+>>>>>>> c7fd73eb (.)
 **Version:** 1.0.0
 **PHPStan Level:** 10 ✅
 **Dependencies:** Imagick, Spatie QueueableAction

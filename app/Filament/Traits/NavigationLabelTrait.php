@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Xot\Actions\File\SvgExistsAction;
@@ -12,6 +13,14 @@ use Webmozart\Assert\Assert;
 trait NavigationLabelTrait
 {
     use TransTrait;
+=======
+use Modules\Lang\Actions\SaveTransAction;
+use Modules\Xot\Actions\File\SvgExistsAction;
+
+trait NavigationLabelTrait
+{
+    use TransFuncTrait;
+>>>>>>> c7fd73eb (.)
 
     // public function getModelLabel(): string
     // {
@@ -31,7 +40,11 @@ trait NavigationLabelTrait
         return static::transFunc(__FUNCTION__);
     }
 
+<<<<<<< HEAD
     public static function getNavigationGroup(): string
+=======
+    public static function getNavigationGroup(): \UnitEnum|string|null
+>>>>>>> c7fd73eb (.)
     {
         return static::transFunc(__FUNCTION__);
     }
@@ -51,7 +64,11 @@ trait NavigationLabelTrait
         return static::transFunc(__FUNCTION__);
     }
 
+<<<<<<< HEAD
     public static function getNavigationSort(): null|int
+=======
+    public static function getNavigationSort(): ?int
+>>>>>>> c7fd73eb (.)
     {
         $res = static::transFunc(__FUNCTION__);
 
@@ -66,7 +83,11 @@ trait NavigationLabelTrait
         return $value;
     }
 
+<<<<<<< HEAD
     public static function getNavigationIcon(): string
+=======
+    public static function getNavigationIcon(): \BackedEnum|string|null
+>>>>>>> c7fd73eb (.)
     {
         $default = 'heroicon-o-question-mark-circle';
 

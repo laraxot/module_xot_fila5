@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Inizializzazione dei Widget XotBaseWidget
 
 ## ⚠️ Problema delle Signature (Incompatibilità)
@@ -155,3 +156,12 @@ class EnvWidget extends XotBaseWidget
 ```
 
 **NOTA**: Questo pattern è valido solo se il widget NON estende `XotBaseWidget` o se ha esigenze speciali. Per la maggior parte dei widget, l'inizializzazione automatica in `form()` è sufficiente.
+=======
+---
+module: theme
+topic: widgetsization
+canonical: ../../../Themes/docs/shared-components/widgets-initialization.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/widgets-initialization.md
+>>>>>>> c7fd73eb (.)

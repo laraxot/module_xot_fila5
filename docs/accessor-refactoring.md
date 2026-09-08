@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida Completa: Refactoring Accessor Pattern - Progetto PTVX
 
 ## Executive Summary
@@ -325,3 +326,12 @@ Moduli con logica inline complessa:
 **Tipo**: Guida Completa Master
 **Scope**: Tutti i moduli progetto
 **Status**: 📚 Documentazione completa, 🔄 Implementazione 13% globale
+=======
+---
+module: theme
+topic: accessor-refactoring
+canonical: ../../../Themes/docs/shared-components/accessor-refactoring-complete-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/accessor-refactoring-complete-guide.md
+>>>>>>> c7fd73eb (.)

@@ -498,6 +498,10 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **📈 Beneficio**: 96% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)
 
+<<<<<<< HEAD
 **Aggiornato**: [DATE]
+=======
+**Aggiornato**: 2025-08-07
+>>>>>>> c7fd73eb (.)
 **Categoria**: database
 **Priorità**: CRITICA

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filosofia della Rimozione Proprietà in XotBaseResource
 
 **Autore**: Antigravity (Super Mucca Mode)  
@@ -35,3 +36,12 @@ Questi valori vengono risolti dinamicamente da `XotBaseResource` tramite i file 
 
 ---
 *Documentazione redatta seguendo i principi Super Mucca: DRY, KISS, Robustness.*
+=======
+---
+module: theme
+topic: property-removal
+canonical: ../../../Themes/docs/shared-components/property-removal-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/property-removal-philosophy.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linee Guida per i Database in Laraxot
 
 Questo documento definisce le best practices per la gestione dei database nel framework Laraxot, inclusa la documentazione, la creazione di modelli e le migrazioni.
@@ -483,3 +484,12 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Verificare che ci siano indici appropriati
 - Controllare che i tipi di dati siano ottimali per l'uso previsto
 - Utilizzare query builder o raw queries per query complesse
+=======
+---
+module: theme
+topic: databaselines
+canonical: ../../../Themes/docs/shared-components/database-guidelines.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/database-guidelines.md
+>>>>>>> c7fd73eb (.)

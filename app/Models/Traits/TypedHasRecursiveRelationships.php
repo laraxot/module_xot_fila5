@@ -17,6 +17,11 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\Relations\Siblings;
 /**
  * Wrapper trait that re-exposes the vendor recursive relationship helpers
  * with proper return types required by {@see Modules\Xot\Contracts\HasRecursiveRelationshipsContract}.
+<<<<<<< HEAD
+=======
+ *
+ * @phpstan-ignore trait.unused
+>>>>>>> c7fd73eb (.)
  */
 trait TypedHasRecursiveRelationships
 {

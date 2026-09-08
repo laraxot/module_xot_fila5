@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LARAXOT FRAMEWORK RULES
 
 ## CLASS EXTENSION
@@ -116,3 +117,6 @@
 - Run PHPStan level 7 before starting work
 - Process: 1) Update docs 2) Study 3) Fix
 - Document all changes and decisions
+=======
+
+>>>>>>> c7fd73eb (.)

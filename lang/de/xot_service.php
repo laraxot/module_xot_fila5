@@ -2,29 +2,57 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'fields' => [
         'matr' => [
             'label' => 'matr',
+<<<<<<< HEAD
         ],
         'cognome' => [
             'label' => 'cognome',
         ],
         'value' => [
             'label' => 'value',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'cognome' => [
+            'label' => 'cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'value' => [
+            'label' => 'value',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'remember' => [
             'label' => 'remember',
             'fields' => [
                 'label' => 'remember',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'password' => [
             'label' => 'password',
             'fields' => [
                 'label' => 'password',
             ],
+<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'Email',
@@ -34,21 +62,59 @@ return [
         ],
         'created_at' => [
             'label' => 'created_at',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'teams' => [
             'name' => [
                 'label' => 'teams.name',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'role' => [
             'name' => [
                 'label' => 'role.name',
             ],
+<<<<<<< HEAD
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'roles' => [
             'name' => [
                 'label' => 'roles.name',
             ],
+<<<<<<< HEAD
         ],
         'email_verified_at' => [
             'label' => 'email_verified_at',
@@ -58,22 +124,85 @@ return [
         ],
         'values' => [
             'label' => 'values',
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email_verified_at' => [
+            'label' => 'email_verified_at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_expires_at' => [
+            'label' => 'password_expires_at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'values' => [
+            'label' => 'values',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'assetType' => [
             'name' => [
                 'label' => 'assetType.name',
             ],
+<<<<<<< HEAD
         ],
         'description' => [
             'label' => 'Descrizione',
         ],
         'parent_id' => [
             'label' => 'Padre',
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'parent_id' => [
+            'label' => 'Padre',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'creator' => [
             'name' => [
                 'label' => 'creator.name',
             ],
+<<<<<<< HEAD
         ],
     ],
+=======
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
+    ],
+>>>>>>> c7fd73eb (.)
 ];

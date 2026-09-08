@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Notify
 
 ## 1. Queue Processing (Priorità: Alta)
@@ -224,3 +225,6 @@
 - [Queue Guidelines](../../notify/queue.md)
 - [Channel Configuration](../../notify/channels.md)
 - [Template Management](../../notify/templates.md)
+=======
+
+>>>>>>> c7fd73eb (.)

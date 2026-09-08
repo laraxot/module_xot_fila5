@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Inventario Conflitti Git - Xot Module
 
 ## File con conflitti di merge non risolti
@@ -57,3 +58,12 @@
 - ❌ Conflitti da risolvere
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: ALTA - File critici del core framework
+=======
+---
+module: theme
+topic: gits-inventory
+canonical: ../../../Themes/docs/shared-components/git-conflicts-inventory.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-inventory.md
+>>>>>>> c7fd73eb (.)

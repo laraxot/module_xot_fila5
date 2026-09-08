@@ -23,6 +23,11 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 ## Correzioni Implementate
 
 ### Moduli Corretti
+<<<<<<< HEAD
+=======
+- [FormBuilder FieldOption Model](../FormBuilder/docs/phpstan-corrections.md)
+- [Lang Console Commands](../Lang/docs/phpstan-corrections.md)
+>>>>>>> c7fd73eb (.)
 - [FormBuilder FieldOption Model](../formbuilder/docs/phpstan-corrections.md)
 - [Lang Console Commands](../lang/docs/phpstan-corrections.md)
 
@@ -45,6 +50,11 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
+=======
+- [FormBuilder PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+- [Lang PHPStan Corrections](../Lang/docs/phpstan-corrections.md)
+>>>>>>> c7fd73eb (.)
 - [FormBuilder PHPStan Corrections](../formbuilder/docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../lang/docs/phpstan-corrections.md)
 - [Xot Architecture](./architecture.md)
@@ -54,4 +64,8 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 1. **Type Safety**: Mantenere sempre type hints espliciti
 2. **Static Properties**: Evitare accesso statico a proprietà di istanza
 3. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting appropriato
+<<<<<<< HEAD
 4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative 
+=======
+4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative 
+>>>>>>> c7fd73eb (.)

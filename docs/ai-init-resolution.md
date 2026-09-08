@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Problema con ai_init.sh
 
 ## Problema Risolto
@@ -31,3 +32,12 @@ La cartella `bashscripts/ai/.gemini` ora è accessibile direttamente dalla root 
 ## Documentazione Aggiornata
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.
+=======
+---
+module: theme
+topic: ai-init-resolution
+canonical: ../../../Themes/docs/shared-components/ai-init-issue-resolution.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ai-init-issue-resolution.md
+>>>>>>> c7fd73eb (.)

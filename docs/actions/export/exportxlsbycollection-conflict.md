@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Risoluzione Conflitto in ExportXlsByCollection
 
 ## Problema
@@ -37,4 +41,8 @@ protected function writeRows(Collection $rows, array $head, int $startRow = 2): 
 
 ## Impatto
 
+<<<<<<< HEAD
 Questa modifica migliora la documentazione del codice e facilita l'analisi statica con PHPStan, mantenendo la compatibilità con il livello massimo di analisi. 
+=======
+Questa modifica migliora la documentazione del codice e facilita l'analisi statica con PHPStan, mantenendo la compatibilità con il livello massimo di analisi.
+>>>>>>> c7fd73eb (.)

@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Model\Update;
 
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Arr;
@@ -33,8 +36,13 @@ class BelongsToAction
          * }
          */
 
+<<<<<<< HEAD
         if (!Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
             $related_id = Arr::first($relationDTO->data);
+=======
+        if (! Arr::isAssoc($relationDTO->data) && 1 === \count($relationDTO->data)) {
+            $related_id = reset($relationDTO->data);
+>>>>>>> c7fd73eb (.)
             if (null === $related_id) {
                 return;
             }
@@ -45,8 +53,13 @@ class BelongsToAction
                 $related = $related->first(); // Prendi il primo modello della collezione
             }
 
+<<<<<<< HEAD
             if (!($related instanceof Model)) {
                 throw new Exception('Expected a single model, got null or invalid object.');
+=======
+            if (! $related instanceof Model) {
+                throw new \Exception('Expected a single model, got null or invalid object.');
+>>>>>>> c7fd73eb (.)
             }
             $res = $rows->associate($related);
             $res->save();
@@ -58,7 +71,11 @@ class BelongsToAction
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
             if (null === $sub) {
+<<<<<<< HEAD
                 throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
+=======
+                throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+>>>>>>> c7fd73eb (.)
             }
 
             app(RelationAction::class)->execute($sub, $relationDTO->data);
@@ -69,7 +86,18 @@ class BelongsToAction
 
         if ($rows->exists()) {
             // $rows->update($data); // non passa per il mutator
+<<<<<<< HEAD
             $model->{Str::camel($relationDTO->name)}->update($data);
+=======
+            $relationName = Str::camel($relationDTO->name);
+            $relation = $model->{$relationName};
+
+            if (! is_object($relation) || ! method_exists($relation, 'update')) {
+                return;
+            }
+
+            $relation->update($data);
+>>>>>>> c7fd73eb (.)
 
             return;
         }

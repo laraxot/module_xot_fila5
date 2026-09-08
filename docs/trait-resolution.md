@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Conflitto Trait: NavigationLabelTrait e XotBasePage
 
 ## Problema
@@ -90,3 +91,12 @@ Dopo la modifica, verifica con:
 
 *Risolto: [DATE]*
 *Architecture Version: XotBase 2.1*
+=======
+---
+module: theme
+topic: trait-resolution
+canonical: ../../../Themes/docs/shared-components/trait-conflict-resolution.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/trait-conflict-resolution.md
+>>>>>>> c7fd73eb (.)

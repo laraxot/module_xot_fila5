@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida alla Migrazione Filament 4
 
 ## Cambiamenti Principali da Filament 3 a Filament 4
@@ -154,3 +155,12 @@ public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 - [Documentazione Filament 4 Forms](https://filamentphp.com/docs/4.x/components/form)
 - [Guida Migrazione Filament](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [XotBaseWidget](../filament/widgets/xotbasewidget.md)
+=======
+---
+module: theme
+topic: filament-4-migration
+canonical: ../../../Themes/docs/shared-components/filament-4-migration-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-4-migration-guide.md
+>>>>>>> c7fd73eb (.)

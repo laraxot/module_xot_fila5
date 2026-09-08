@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Magic Properties Cleanup Report - [DATE]
 
 ## Summary
@@ -62,3 +63,12 @@ Files generally have good scores with minor style issues:
 **✅ COMPLETED**: All `property_exists()` usage in Eloquent models has been eliminated and replaced with proper magic property checks.
 
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
+=======
+---
+module: theme
+topic: magic-properties
+canonical: ../../../Themes/docs/shared-components/magic-properties-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/magic-properties-sumy.md
+>>>>>>> c7fd73eb (.)

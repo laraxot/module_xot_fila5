@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -211,3 +212,12 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
+=======
+---
+module: theme
+topic: docs-structure-correction
+canonical: ../../../Themes/docs/shared-components/docs-structure-correction-sumy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-sumy.md
+>>>>>>> c7fd73eb (.)

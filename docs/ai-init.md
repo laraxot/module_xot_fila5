@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
 ## Problema Identificato
@@ -33,3 +34,12 @@ Lo script deve essere corretto per invertire la logica:
 
 - Source: `bashscripts/ai/.gemini`
 - Target symlink: `.gemini`
+=======
+---
+module: theme
+topic: ai-init
+canonical: ../../../Themes/docs/shared-components/ai-init-issue-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ai-init-issue-analysis.md
+>>>>>>> c7fd73eb (.)

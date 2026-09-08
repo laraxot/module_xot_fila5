@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
  * Base class for form components.
  *
  * @method static static make(string $name) Create a new instance of the component
@@ -19,6 +20,21 @@ abstract class XotBaseFormComponent extends Field
     /**
      * Get the component name.
      */
+=======
+ * Base class for custom form components.
+ *
+ * @method static static make(string $name)
+ */
+abstract class XotBaseFormComponent extends Field
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->dehydrated(true)->required(false);
+    }
+
+>>>>>>> c7fd73eb (.)
     public function getName(): string
     {
         $name = parent::getName();
@@ -27,6 +43,7 @@ abstract class XotBaseFormComponent extends Field
         return $name;
     }
 
+<<<<<<< HEAD
     /**
      * Get the component label.
      */
@@ -36,6 +53,16 @@ abstract class XotBaseFormComponent extends Field
         if ($label === null) {
             return Str::title($this->getName());
         }
+=======
+    public function getLabel(): string
+    {
+        $label = parent::getLabel();
+
+        if (null === $label) {
+            return Str::title($this->getName());
+        }
+
+>>>>>>> c7fd73eb (.)
         if ($label instanceof Htmlable) {
             return $label->toHtml();
         }
@@ -44,6 +71,7 @@ abstract class XotBaseFormComponent extends Field
     }
 
     /**
+<<<<<<< HEAD
      * Configure the component.
      */
     protected function setUp(): void
@@ -56,13 +84,18 @@ abstract class XotBaseFormComponent extends Field
     /**
      * Get the validation rules.
      *
+=======
+>>>>>>> c7fd73eb (.)
      * @return array<string, mixed>
      */
     public function getValidationRules(): array
     {
         /** @var array<string, mixed> $rules */
         $rules = parent::getValidationRules();
+<<<<<<< HEAD
         Assert::isArray($rules);
+=======
+>>>>>>> c7fd73eb (.)
 
         return $rules;
     }

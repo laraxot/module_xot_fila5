@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Filosofia dei Metodi Semantici
 
 ## Principio Fondamentale
@@ -110,4 +114,8 @@ class MetatagData
 ## Collegamenti
 - [MetatagData](../datas/metatag-data.md)
 - [ApplyMetatagToPanelAction](../actions/applymetatagtopanelaction.md)
+<<<<<<< HEAD
 - [Best Practices](../best-practices.md) 
+=======
+- [Best Practices](../best-practices.md)
+>>>>>>> c7fd73eb (.)

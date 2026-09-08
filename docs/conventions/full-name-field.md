@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzione per il Campo Nome Completo
 
 ## Regola Fondamentale
@@ -55,3 +56,6 @@ Quando possibile, è preferibile separare nome e cognome in campi distinti (`fir
 ## Collegamenti Bidirezionali
 - [Convenzione per i Campi dei Nomi Personali](./personal-name-fields.md)
 - [Convenzioni di Nomenclatura](../naming-conventions.md)
+=======
+
+>>>>>>> c7fd73eb (.)

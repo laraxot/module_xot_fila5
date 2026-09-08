@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Xot Module - Roadmap, Issues & Optimization
 
 **Modulo**: Xot (Core Framework Base)
@@ -334,3 +335,12 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+=======
+---
+module: theme
+topic: roadmap-ands
+canonical: ../../../Themes/docs/shared-components/roadmap-and-issues.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/roadmap-and-issues.md
+>>>>>>> c7fd73eb (.)

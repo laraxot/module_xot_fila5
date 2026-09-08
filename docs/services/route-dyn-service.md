@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RouteDynService
 
 Il RouteDynService è un servizio fondamentale per la gestione dinamica delle rotte in Laraxot. Fornisce un'interfaccia flessibile per la generazione e configurazione delle rotte basata su array di configurazione.
@@ -103,3 +104,6 @@ Per eseguire i test:
 ```bash
 php artisan test --filter=RouteDynServiceTest
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

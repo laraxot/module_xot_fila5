@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementation Summary: Filament Extension Rules & PHPStan Return Type Fixes
 
 **Date**: [DATE]
@@ -137,3 +138,12 @@ This document summarizes the successful implementation of:
 **Implemented by**: iFlow CLI
 **Reviewed**: Automated checks passed
 **Compliance**: 100% architecture compliance achieved
+=======
+---
+module: theme
+topic: implementation-sumy-filament-phpstan-fixes
+canonical: ../../../Themes/docs/shared-components/implementation-filament-phpstanes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/implementation-filament-phpstanes.md
+>>>>>>> c7fd73eb (.)

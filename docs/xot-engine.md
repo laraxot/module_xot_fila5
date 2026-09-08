@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 XOT - IL MOTORE FONDAMENTALE DI LARAXOT
 
 ## 📋 INDICE
@@ -504,3 +505,12 @@ Xot rappresenta l'evoluzione naturale di Laravel:
 *Documentazione Xot v1.0*
 *Creato: [DATE]*
 *Autore: AI Assistant con analisi approfondita*
+=======
+---
+module: theme
+topic: xot-engine
+canonical: ../../../Themes/docs/shared-components/xot-engine-complete-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xot-engine-complete-guide.md
+>>>>>>> c7fd73eb (.)

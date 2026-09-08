@@ -1,6 +1,10 @@
 # Module Path Generation - Philosophy and Business Logic
 
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+**Data Creazione**: 2026-01-02
+>>>>>>> c7fd73eb (.)
 **Status**: 📚 Foundation Document
 **Versione**: 1.0.0
 

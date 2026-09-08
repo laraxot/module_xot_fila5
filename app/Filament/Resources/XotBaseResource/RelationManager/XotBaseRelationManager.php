@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\XotBaseResource\RelationManager;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Component;
 use Override;
 use Exception;
@@ -14,15 +15,33 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+=======
+use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
+use Filament\Support\Components\Component;
+use Filament\Tables;
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
 
 /**
  * @property class-string<XotBaseResource> $resource
  */
+<<<<<<< HEAD
 abstract class XotBaseRelationManager extends RelationManager
 {
     use HasXotTable;
+=======
+abstract class XotBaseRelationManager extends FilamentRelationManager
+{
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
+>>>>>>> c7fd73eb (.)
 
     protected static string $relationship = '';
 
@@ -38,11 +57,16 @@ abstract class XotBaseRelationManager extends RelationManager
 
     public static function getNavigationLabel(): string
     {
+<<<<<<< HEAD
         return static::transFunc(__FUNCTION__);
+=======
+        return __(static::class.'.navigation.label');
+>>>>>>> c7fd73eb (.)
     }
 
     public static function getNavigationGroup(): string
     {
+<<<<<<< HEAD
         return static::transFunc(__FUNCTION__);
     }
 
@@ -53,14 +77,33 @@ abstract class XotBaseRelationManager extends RelationManager
 
     final 
 
+=======
+        return __(static::class.'.navigation.group');
+    }
+
+    // final public function form(Schema $schema): Schema
+    // {
+    //     return $schema->components($this->getFormSchema());
+    // }
+>>>>>>> c7fd73eb (.)
     /**
      * Get form schema.
      *
      * @return array<string|int, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
     {
         return $this->getResource()::getFormSchema();
+=======
+    final public function getFormSchema(): array
+    {
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        return $instance->getFormSchema();
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -68,12 +111,25 @@ abstract class XotBaseRelationManager extends RelationManager
      *
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public function getTableColumns(): array
     {
         return [];
 
+<<<<<<< HEAD
         //return $this->getResource()::getTableColumns();
+=======
+        // return $this->getResource()::getTableColumns();
+    }
+
+    protected static function getPluralModelLabel(): string
+    {
+        return __(static::class.'.plural_model_label');
+>>>>>>> c7fd73eb (.)
     }
 
     // public function table(Table $table): Table
@@ -104,6 +160,7 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     protected function getResource(): string
     {
+<<<<<<< HEAD
         // Get the resource class via parent method first
         try {
             // @phpstan-ignore staticMethod.notFound
@@ -119,6 +176,19 @@ abstract class XotBaseRelationManager extends RelationManager
         // Fallback: derive the resource class name from the relation manager name
         $class = get_class($this);
         $resource_name = Str::of(class_basename($this))
+=======
+        // Use static property if available
+        if (isset(static::$resource) && is_string(static::$resource)) {
+            if (is_subclass_of(static::$resource, XotBaseResource::class)) {
+                /* @var class-string<XotBaseResource> */
+                return static::$resource;
+            }
+        }
+
+        // Fallback: derive the resource class name from the relation manager name
+        $class = static::class;
+        $resourceName = Str::of(class_basename($this))
+>>>>>>> c7fd73eb (.)
             ->beforeLast('RelationManager')
             ->singular()
             ->append('Resource')
@@ -127,6 +197,7 @@ abstract class XotBaseRelationManager extends RelationManager
             ->before('Resources\\')
             ->append('Resources\\')
             ->toString();
+<<<<<<< HEAD
         $resourceClass = $ns . '\\' . $resource_name;
 
         if (!class_exists($resourceClass)) {
@@ -137,6 +208,19 @@ abstract class XotBaseRelationManager extends RelationManager
             throw new Exception("{$resourceClass} must extend XotBaseResource");
         }
 
+=======
+        $resourceClass = $ns.$resourceName;
+
+        if (! class_exists($resourceClass)) {
+            throw new \Exception("Cannot find resource class {$resourceClass}");
+        }
+
+        if (! is_subclass_of($resourceClass, XotBaseResource::class)) {
+            throw new \Exception("{$resourceClass} must extend XotBaseResource");
+        }
+
+        /* @var class-string<XotBaseResource> $resourceClass */
+>>>>>>> c7fd73eb (.)
         return $resourceClass;
     }
 }

@@ -103,12 +103,18 @@ Se trovi codice che viola questa regola:
 
 ## Link a Risorse Correlate
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+>>>>>>> c7fd73eb (.)
 - [Documentazione sulla struttura delle traduzioni](/laravel/modules/xot/project_docs/translation_rules.md)
 - [Esempio pratico nel TeamsRelationManager](/laravel/modules/user/project_docs/filament/teams_relation_manager.md)
 - [Regole per RelationManager](/project_docs/filament/relation_managers.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+>>>>>>> c7fd73eb (.)
 # DIVIETO ASSOLUTO DI USARE ->label(), ->placeholder() e ->helperText()
 
 ## Regola Fondamentale Inviolabile
@@ -218,4 +224,7 @@ Se trovi codice che viola questa regola:
 - [Esempio pratico nel TeamsRelationManager](/laravel/modules/user/docs/filament/teams_relation_manager.md)
 - [Regole per RelationManager](/docs/filament/relation_managers.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 3 Giugno 2025*
+=======
+>>>>>>> c7fd73eb (.)

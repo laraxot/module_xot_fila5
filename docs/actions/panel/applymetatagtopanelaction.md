@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ApplyMetatagToPanelAction
 
 ## Descrizione
@@ -37,3 +38,6 @@ La correzione dell'errore PHPStan richiede la modifica del metodo chiamato da `g
 - [PHPStan Common Exceptions](../../phpstan-common-exceptions.md)
 - [Filament Best Practices](../../filament-best-practices.md)
 - [PHPStan Common Exceptions](../../phpstan-common-exceptions.md)
+=======
+
+>>>>>>> c7fd73eb (.)

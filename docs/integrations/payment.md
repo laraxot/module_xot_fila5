@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Payment Integration
 
 ## Cashier
@@ -14,3 +15,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/payment_gateway.txt}
 ```txt
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/cart_session.txt}
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

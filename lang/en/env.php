@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 return [
     'navigation' => [
         'name' => 'Ambiente',
@@ -20,11 +23,23 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave (es. APP_NAME)',
             'help' => 'Nome della variabile d\'ambiente in maiuscolo',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'help' => 'Valore della variabile d\'ambiente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -38,6 +53,12 @@ return [
                 'array' => 'Array',
                 'null' => 'Nullo',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'environment' => [
             'label' => 'Ambiente',
@@ -50,15 +71,33 @@ return [
                 'production' => 'Produzione',
                 'all' => 'Tutti gli ambienti',
             ],
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'is_sensitive' => [
             'label' => 'Dato Sensibile',
             'help' => 'Indica se il valore contiene dati sensibili da mascherare',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata dello scopo della variabile',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> c7fd73eb (.)
         ],
         'group' => [
             'label' => 'Gruppo',
@@ -73,9 +112,21 @@ return [
                 'services' => 'Servizi',
                 'other' => 'Altro',
             ],
+<<<<<<< HEAD
         ],
         'telegram_bot_token' => [
             'description' => 'telegram_bot_token',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'telegram_bot_token' => [
+            'description' => 'telegram_bot_token',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> c7fd73eb (.)
         ],
     ],
     'actions' => [
@@ -140,4 +191,9 @@ return [
         ],
     ],
     'title' => 'env',
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> c7fd73eb (.)
 ];

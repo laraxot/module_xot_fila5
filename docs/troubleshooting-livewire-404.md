@@ -1,5 +1,9 @@
 # Troubleshooting: Livewire 404 Error
 
+<<<<<<< HEAD
+=======
+**Data**: 11 Novembre 2025
+>>>>>>> c7fd73eb (.)
 **Errore**: `404 Not Found` su `/livewire/update`
 
 ## 🔍 Problema

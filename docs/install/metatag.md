@@ -35,6 +35,7 @@ return [
 ~~~
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di metatag.md
 * [metatag.md](../../../Xot/docs/install/metatag.md)
@@ -46,3 +47,12 @@ return [
 
 ---
 
+=======
+## Collegamenti tra versioni di metatag.md
+* [metatag.md](../../../xot/project_docs/install/metatag.md)
+* [metatag.md](../../../tenant/project_docs/it/config/metatag.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

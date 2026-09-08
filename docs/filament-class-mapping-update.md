@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 # Aggiornamento Mapping Classi Filament - [DATE]
 
+=======
+<<<<<<< HEAD
+# Aggiornamento Mapping Classi Filament - [DATE]
+
+=======
+# Aggiornamento Mapping Classi Filament - 2025-12-23
+
+**Data**: 2025-12-23
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 **Obiettivo**: Verificare e correggere mapping classi nel file `filament_class.txt`
 
 ## ⚠️ Classi Aggiunte al Mapping che NON Esistono

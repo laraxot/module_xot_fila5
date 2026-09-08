@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SaveJsonArrayAction
 
 L'azione `SaveJsonArrayAction` è responsabile del salvataggio di array in formato JSON su file.
@@ -60,3 +61,6 @@ $result = $action->execute($data, $filename);
 - L'azione utilizza la libreria Safe per operazioni sicure
 - Implementa QueueableAction per supporto code
 - Supporta la validazione tramite Assert
+=======
+
+>>>>>>> c7fd73eb (.)

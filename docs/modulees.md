@@ -87,7 +87,15 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         'field_name' => [
@@ -148,7 +156,11 @@ public static function getFormSchema(): array
 ### Composer.json
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_xot_fila3",
+=======
+    "name": "laraxot/module_xot_fila5",
+>>>>>>> c7fd73eb (.)
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",
@@ -793,4 +805,8 @@ $count = CountAction::execute(User::class);
 - [ ] Implementare cache opzionale
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
+<<<<<<< HEAD
 - [ ] Aggiungere test di performance
+=======
+- [ ] Aggiungere test di performance
+>>>>>>> c7fd73eb (.)

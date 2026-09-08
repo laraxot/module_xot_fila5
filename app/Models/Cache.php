@@ -4,15 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
 use Modules\Xot\Database\Factories\CacheFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Database\Factories\CacheFactory;
+>>>>>>> c7fd73eb (.)
 
 /**
  * Modules\Xot\Models\Cache.
  *
  * @property string $key
  * @property string $value
+<<<<<<< HEAD
  * @property int    $expiration
  * @method static CacheFactory factory($count = null, $state = [])
  * @method static Builder|Cache newModelQuery()
@@ -32,6 +39,22 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @mixin IdeHelperCache
+=======
+ * @property int $expiration
+ *
+ * @method static CacheFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Cache newModelQuery()
+ * @method static Builder<static>|Cache newQuery()
+ * @method static Builder<static>|Cache query()
+ * @method static Builder<static>|Cache whereExpiration($value)
+ * @method static Builder<static>|Cache whereKey($value)
+ * @method static Builder<static>|Cache whereValue($value)
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> c7fd73eb (.)
  * @mixin \Eloquent
  */
 class Cache extends BaseModel

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura dei Moduli e Clean Code
 
 ## Struttura fisica vs Namespace
@@ -112,3 +113,6 @@ namespace Modules\User\Http\Controllers;
    - Livello minimo 3 per codice esistente
    - Livello 5 o superiore per nuovo codice
    - Configurazione coerente tra moduli
+=======
+
+>>>>>>> c7fd73eb (.)

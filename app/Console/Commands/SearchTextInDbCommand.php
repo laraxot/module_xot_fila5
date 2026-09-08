@@ -30,7 +30,11 @@ class SearchTextInDbCommand extends Command
         $tableProp = 'Tables_in_'.$databaseName;
 
         // Get tables either from specific option or all tables
+<<<<<<< HEAD
         if (empty($specificTables) || !is_array($specificTables)) {
+=======
+        if (empty($specificTables) || ! is_array($specificTables)) {
+>>>>>>> c7fd73eb (.)
             $tables = collect(DB::select('SHOW TABLES'));
         } else {
             $tables = collect($specificTables);
@@ -40,7 +44,12 @@ class SearchTextInDbCommand extends Command
             // Get table name with proper type checking
             $tableName = null;
             if (is_object($table)) {
+<<<<<<< HEAD
                 if (property_exists($table, $tableProp) && is_string($table->$tableProp)) {
+=======
+                // Usa isset() invece di property_exists per oggetti stdClass
+                if (isset($table->$tableProp) && is_string($table->$tableProp)) {
+>>>>>>> c7fd73eb (.)
                     $tableName = $table->$tableProp;
                 }
             } elseif (is_string($table)) {
@@ -89,12 +98,20 @@ class SearchTextInDbCommand extends Command
                     ->get();
 
                 if ($results->isNotEmpty()) {
+<<<<<<< HEAD
                     $this->info("Found in column: $column");
+=======
+                    $this->info("Found in column: {$column}");
+>>>>>>> c7fd73eb (.)
                     foreach ($results as $result) {
                         $this->table(
                             ['Column', 'Value'],
                             collect((array) $result)
+<<<<<<< HEAD
                                 ->map(fn ($value, $key) => [
+=======
+                                ->map(fn (mixed $value, int|string $key) => [
+>>>>>>> c7fd73eb (.)
                                     (string) $key,
                                     is_scalar($value) ? (string) $value : json_encode($value),
                                 ])

@@ -13,7 +13,15 @@ namespace Modules\Xot\Filament\Resources;
 
 class XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array;
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array;
+=======
+    public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     public static function getListTableColumns(): array;
 }
 ```
@@ -101,7 +109,11 @@ class XotBaseEditRecord
    - Seguire le convenzioni PSR-4
 
 ## Collegamenti Bidirezionali
+<<<<<<< HEAD
 - [README](readme.md)
+=======
+- [README](README.md)
+>>>>>>> c7fd73eb (.)
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 
@@ -287,8 +299,13 @@ class PolizzaConvenzioneController extends XotBaseController
 
    - Documentare le modifiche significative
 ## Collegamenti tra versioni di base-classes.md
+<<<<<<< HEAD
 * [base-classes.md](../../../xot/docs/base-classes.md)
 * [base-classes.md](../../../xot/docs/roadmap/base-classes.md)
+=======
+* [base-classes.md](../../../Xot/docs/base-classes.md)
+* [base-classes.md](../../../Xot/docs/roadmap/base-classes.md)
+>>>>>>> c7fd73eb (.)
 
 ### Versione Incoming
 

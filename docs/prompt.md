@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per i Prompt
 
 ## Regola Universale
@@ -46,3 +47,12 @@ La documentazione dei componenti UI deve essere sempre inserita nella cartella `
 
 ## Collegamenti tra versioni di prompt_rules.md
 * [prompt_rules.md](rules/prompt_rules.md)
+=======
+---
+module: theme
+topic: prompt
+canonical: ../../../Themes/docs/shared-components/prompt-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/prompt-rules.md
+>>>>>>> c7fd73eb (.)

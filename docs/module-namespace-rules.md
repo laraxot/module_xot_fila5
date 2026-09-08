@@ -20,6 +20,10 @@
 
 ## Collegamenti
 - [docs root](../../../../docs/actions.md)
+<<<<<<< HEAD
 - [docs Lang](../../lang/docs/filament-label.md)
+=======
+- [docs Lang](../../Lang/docs/filament-label.md)
+>>>>>>> c7fd73eb (.)
 
 Ultimo aggiornamento: maggio 2025.

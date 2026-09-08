@@ -143,4 +143,8 @@ Quando si identifica una nuova regola o pattern importante:
 4. **Windsurf**
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
+<<<<<<< HEAD
    - [ ] Testare applicabilità 
+=======
+   - [ ] Testare applicabilità
+>>>>>>> c7fd73eb (.)

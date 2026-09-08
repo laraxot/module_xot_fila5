@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0
@@ -164,3 +165,12 @@ done
 **Autore Fix**: AI Assistant
 **Review**: Pending
 **Data**: Vedi [CHANGELOG.md](./changelog.md)
+=======
+---
+module: theme
+topic: bugfix-hasxottableuplicate-if
+canonical: ../../../Themes/docs/shared-components/bugfix-hasxottable-duplicate-if.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/bugfix-hasxottable-duplicate-if.md
+>>>>>>> c7fd73eb (.)

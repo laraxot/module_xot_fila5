@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## 🎯 Obiettivo Analisi
@@ -271,3 +272,12 @@ abstract class XotBaseMigration extends Migration
 ---
 *Analisi completata con principi DRY + KISS | Data: $(date)*
 *Modulo: Xot (Core Framework) | Priorità: CRITICA per Service Providers*
+=======
+---
+module: theme
+topic: optimizationry-kiss
+canonical: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss-Modules.md
+>>>>>>> c7fd73eb (.)

@@ -373,6 +373,10 @@ return [
 
 ### Caso Reale: ListLogActivitiesAction
 
+<<<<<<< HEAD
+=======
+**Data**: 27 Ottobre 2025
+>>>>>>> c7fd73eb (.)
 **File**: `Modules/Activity/app/Filament/Actions/ListLogActivitiesAction.php`
 **Errore**: Estensione diretta di `Filament\Actions\Action`
 
@@ -412,6 +416,10 @@ return [
 - [XotBaseWidget](../app/Filament/Widgets/XotBaseWidget.php)
 
 ### Errori Simili Documentati
+<<<<<<< HEAD
+=======
+- [No Hint Path Defined](../../Activity/docs/errori/no-hint-path-defined.md)
+>>>>>>> c7fd73eb (.)
 - [No Hint Path Defined](../../activity/docs/errori/no-hint-path-defined.md)
 - [Service Provider Issues](./service-provider-issues.md)
 
@@ -420,4 +428,8 @@ return [
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: CRITICA
 **Categoria**: Violazione Architettura Fondamentale
+<<<<<<< HEAD
 **Status**: ✅ CORRETTO e DOCUMENTATO
+=======
+**Status**: ✅ CORRETTO e DOCUMENTATO
+>>>>>>> c7fd73eb (.)

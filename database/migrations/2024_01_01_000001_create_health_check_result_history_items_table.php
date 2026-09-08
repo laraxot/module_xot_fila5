@@ -7,12 +7,19 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Models\HealthCheckResultHistoryItem;
 
 return new class extends XotBaseMigration {
+<<<<<<< HEAD
     protected null|string $model_class = HealthCheckResultHistoryItem::class;
 
     /**
      * Run the migrations.
      *
      * @return void
+=======
+    protected ?string $model_class = HealthCheckResultHistoryItem::class;
+
+    /**
+     * Run the migrations.
+>>>>>>> c7fd73eb (.)
      */
     public function up(): void
     {

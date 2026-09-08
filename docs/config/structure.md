@@ -26,7 +26,11 @@ return [
     // Configurazioni di base
     'name' => env('MODULE_NAME', 'default'),
     'enabled' => env('MODULE_ENABLED', true),
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Cache
     'cache' => [
         'enabled' => env('MODULE_CACHE_ENABLED', true),
@@ -34,7 +38,11 @@ return [
         'driver' => env('MODULE_CACHE_DRIVER', 'redis'),
         'prefix' => env('MODULE_CACHE_PREFIX', 'module_'),
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Storage
     'storage' => [
         'disk' => env('MODULE_STORAGE_DISK', 'local'),
@@ -44,7 +52,11 @@ return [
         ],
         'max_size' => env('MODULE_STORAGE_MAX_SIZE', 10240),
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // API
     'api' => [
         'prefix' => env('MODULE_API_PREFIX', 'api/module'),
@@ -58,14 +70,22 @@ return [
             'minutes' => 1,
         ],
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Database
     'database' => [
         'prefix' => env('MODULE_DB_PREFIX', 'module_'),
         'connection' => env('MODULE_DB_CONNECTION', null),
         'soft_deletes' => true,
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Views
     'views' => [
         'namespace' => 'module',
@@ -88,7 +108,11 @@ class ConfigValidator
     public function validate(): ValidationResult
     {
         $config = config('module');
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $rules = [
             'name' => 'required|string',
             'enabled' => 'required|boolean',
@@ -96,9 +120,15 @@ class ConfigValidator
             'cache.ttl' => 'required|integer|min:0',
             // ... altre regole
         ];
+<<<<<<< HEAD
         
         $validator = Validator::make($config, $rules);
         
+=======
+
+        $validator = Validator::make($config, $rules);
+
+>>>>>>> c7fd73eb (.)
         return new ValidationResult($validator);
     }
 }
@@ -144,6 +174,7 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 ## Collegamenti
 
 - [Architettura](../architecture/module-structure.md)
+<<<<<<< HEAD
 - [Best Practices](../BEST-PRACTICES.md)
 - [Sicurezza](../security/README.md)
 - [Performance](../performance/README.md) 
@@ -166,3 +197,26 @@ return array_merge(require __DIR__.'/../vendor/module/config/module.php', [
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
 
+=======
+- [Best Practices](../best-practices.md)
+- [Sicurezza](../security/readme.md)
+- [Performance](../performance/readme.md)
+
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/project_docs/structure.md)
+* [structure.md](../../../gdpr/project_docs/structure.md)
+* [structure.md](../../../notify/project_docs/structure.md)
+* [structure.md](../../../xot/project_docs/structure.md)
+* [structure.md](../../../xot/project_docs/base/structure.md)
+* [structure.md](../../../xot/project_docs/config/structure.md)
+* [structure.md](../../../user/project_docs/structure.md)
+* [structure.md](../../../ui/project_docs/structure.md)
+* [structure.md](../../../lang/project_docs/structure.md)
+* [structure.md](../../../job/project_docs/structure.md)
+* [structure.md](../../../media/project_docs/structure.md)
+* [structure.md](../../../tenant/project_docs/structure.md)
+* [structure.md](../../../activity/project_docs/structure.md)
+* [structure.md](../../../cms/project_docs/structure.md)
+* [structure.md](../../../cms/project_docs/themes/structure.md)
+* [structure.md](../../../cms/project_docs/components/structure.md)
+>>>>>>> c7fd73eb (.)

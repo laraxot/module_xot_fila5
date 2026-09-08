@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Comprehensive Documentation Structure
 
 ## 🏗️ Documentation Architecture
@@ -349,3 +350,12 @@ find Modules/ -name "*.md" -exec markdownlint {} \;
 
 **Maintenance**: Xot Module Documentation Team
 **Goal**: Create the most comprehensive and useful documentation for Laraxot architecture
+=======
+---
+module: theme
+topic: comprehensiveocumentation-structure
+canonical: ../../../Themes/docs/shared-components/comprehensive-documentation-structure.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-documentation-structure.md
+>>>>>>> c7fd73eb (.)

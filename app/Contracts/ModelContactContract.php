@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Support\Carbon;
 
 /**
@@ -22,6 +25,7 @@ use Illuminate\Support\Carbon;
  * @property bool               $is_reclamed
  * @property bool               $table_enable
  * @property PivotContract|null $pivot
+<<<<<<< HEAD
  * @property string $tennant_name
  * @property string $mail_subject
  * @property string $mail_body
@@ -47,6 +51,33 @@ use Illuminate\Support\Carbon;
  * @method array     treeSons()
  * @method array     toArray()
  * @method BelongsTo user()
+=======
+ * @property string             $tennant_name
+ * @property string             $mail_subject
+ * @property string             $mail_body
+ * @property string             $sms_from
+ * @property string             $mobile_phone
+ * @property string             $sms_body
+ * @property string             $sms_count
+ *
+ * @method mixed                                                           getKey()
+ * @method string                                                          getRouteKey()
+ * @method string                                                          getRouteKeyName()
+ * @method string                                                          getTable()
+ * @method mixed                                                           with($array)
+ * @method array<string, mixed>                                            getFillable()
+ * @method mixed                                                           fill($array)
+ * @method mixed                                                           getConnection()
+ * @method mixed                                                           update($params)
+ * @method mixed                                                           delete()
+ * @method mixed                                                           detach($params)
+ * @method mixed                                                           attach($params)
+ * @method mixed                                                           save($params)
+ * @method array<string, mixed>                                            treeLabel()
+ * @method array<string, mixed>                                            treeSons()
+ * @method array<string, mixed>                                            toArray()
+ * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
+>>>>>>> c7fd73eb (.)
  *
  * @phpstan-require-extends Model
  *
@@ -54,9 +85,21 @@ use Illuminate\Support\Carbon;
  */
 interface ModelContactContract
 {
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<int, string>
+     */
+>>>>>>> c7fd73eb (.)
     public function getNotifyVia(): array;
 
     public function sendEmailCallback(): void;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @param array<string, mixed> $data
+     */
+>>>>>>> c7fd73eb (.)
     public function increase(string $what, array $data): void;
 }

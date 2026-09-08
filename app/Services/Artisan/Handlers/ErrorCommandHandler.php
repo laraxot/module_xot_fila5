@@ -13,7 +13,12 @@ use Webmozart\Assert\Assert;
  */
 class ErrorCommandHandler implements CommandHandlerInterface
 {
+<<<<<<< HEAD
     private const ERROR_COMMANDS = ['error', 'error-show', 'error-clear'];
+=======
+    /** @var list<string> */
+    private const array ERROR_COMMANDS = ['error', 'error-show', 'error-clear'];
+>>>>>>> c7fd73eb (.)
 
     public function handle(string $moduleName = ''): string
     {

@@ -9,18 +9,34 @@
 
 ### Form Schema
 ```php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         // Campi base
         TextInput::make('name')
             ->required()
             ->maxLength(255),
+<<<<<<< HEAD
             
         // Relazioni
         Select::make('type')
             ->relationship('type', 'name'),
             
+=======
+
+        // Relazioni
+        Select::make('type')
+            ->relationship('type', 'name'),
+
+>>>>>>> c7fd73eb (.)
         // File e Media
         FileUpload::make('avatar')
             ->image()
@@ -64,6 +80,7 @@ public static function getFormSchema(): array
 - Ottimizzare le query del database
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di filament-integration.md
 * [filament-integration.md](../../../Xot/docs/laraxot/filament-integration.md)
@@ -76,3 +93,13 @@ public static function getFormSchema(): array
 
 ---
 
+=======
+## Collegamenti tra versioni di filament-integration.md
+* [filament-integration.md](../../../xot/project_docs/laraxot/filament-integration.md)
+* [filament-integration.md](../../../cms/project_docs/roadmap/features/filament-integration.md)
+* [filament-integration.md](../../../cms/project_docs/filament-integration.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

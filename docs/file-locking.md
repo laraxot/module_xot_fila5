@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # File Locking Pattern - Prevenzione Race Conditions
 
 ## 🔐 Filosofia
@@ -203,3 +204,12 @@ if (Redis::set("lock:$filepath", $metadata, 'EX', 3600, 'NX')) {
 - **[DATE]**: Documento creato dopo risoluzione massiva di merge conflicts in 16 file
 - Pattern identificati e documentati
 - Script di esempio forniti
+=======
+---
+module: theme
+topic: file-locking
+canonical: ../../../Themes/docs/shared-components/file-locking-pattern.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/file-locking-pattern.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Page Expired 419
 description: Page Expired 419
@@ -12,3 +13,6 @@ controllare il .env alla voce SESSION_DOMAIN,
 il valore deve essere l'url utilizzato
 esempio, se stai navigando su mioprogetto.local,  
 deve essere uguale a mioprogetto.local
+=======
+
+>>>>>>> c7fd73eb (.)

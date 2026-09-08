@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Case-Insensitive File Conflicts
 
 Elenco dei duplicati case-insensitive nel modulo `Xot`:
@@ -22,3 +23,12 @@ Elenco dei duplicati case-insensitive nel modulo `Xot`:
 - `Modules/Xot/tests/Unit`: `HasXotTableTest.test`, `hasxottabletest.test`
 
 Intervento consigliato: mantenere una singola variante per ogni voce (es. Maiuscolo per file di documentazione principale, PascalCase per classi/azioni), eliminando la versione duplicata.
+=======
+---
+module: theme
+topic: cases
+canonical: ../../../Themes/docs/shared-components/case-conflicts-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/case-conflicts-Modules.md
+>>>>>>> c7fd73eb (.)

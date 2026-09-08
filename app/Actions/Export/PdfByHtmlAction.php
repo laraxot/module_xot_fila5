@@ -6,6 +6,10 @@ namespace Modules\Xot\Actions\Export;
 
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
+=======
+use Spipu\Html2Pdf\Exception\HtmlParsingException;
+>>>>>>> c7fd73eb (.)
 use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -18,10 +22,22 @@ class PdfByHtmlAction
         string $filename = 'my_doc.pdf',
         string $disk = 'cache',
         string $out = 'download',
+<<<<<<< HEAD
     ): string|BinaryFileResponse {
         $html2pdf = new Html2Pdf('L', 'A4', 'it');
         $html2pdf->setTestTdInOnePage(false);
         $html2pdf->writeHTML($html);
+=======
+        string $orientation = 'L',
+    ): string|BinaryFileResponse {
+        $html2pdf = new Html2Pdf($orientation, 'A4', 'it');
+        $html2pdf->setTestTdInOnePage(false);
+        try {
+            $html2pdf->writeHTML($html);
+        } catch (HtmlParsingException $e) {
+            dddx($html);
+        }
+>>>>>>> c7fd73eb (.)
         $path = Storage::disk($disk)->path($filename);
         $html2pdf->output($path, 'F');
 

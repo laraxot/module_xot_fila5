@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole di Ereditarietà dei Modelli - Laraxot PTVX
 
 ## Principio Fondamentale
@@ -194,3 +195,12 @@ Ogni nuovo modello deve essere documentato in:
 - [Regole Migrazioni](migrations.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+---
+module: theme
+topic: model-inheritance
+canonical: ../../../Themes/docs/shared-components/model-inheritance-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-rules.md
+>>>>>>> c7fd73eb (.)

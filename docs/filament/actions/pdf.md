@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Filament Action PDF
 description: Azioni Filament per creare PDF
@@ -111,3 +112,6 @@ class PdfController extends Controller
     // ...
 }
  ```
+=======
+
+>>>>>>> c7fd73eb (.)

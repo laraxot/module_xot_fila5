@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Limesurvey Database Analysis - quaeris_survey
 
 ## Overview
@@ -78,3 +79,12 @@ The quaeris_survey database is used primarily for:
 - Response aggregation by time periods
 - Integration with Quaeris reporting features
 - Participant management and tracking
+=======
+---
+module: theme
+topic: limesurveyatabase
+canonical: ../../../Themes/docs/shared-components/limesurvey-database-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-analysis.md
+>>>>>>> c7fd73eb (.)

@@ -8,7 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
 use Exception;
+=======
+>>>>>>> c7fd73eb (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -22,8 +25,13 @@ class GetModelClassByModelTypeAction
     public function execute(string $model_type): string
     {
         $morph_map = config('morph_map');
+<<<<<<< HEAD
         if (!is_array($morph_map)) {
             throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
+=======
+        if (! is_array($morph_map)) {
+            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+>>>>>>> c7fd73eb (.)
         }
 
         Assert::string($res = collect($morph_map)->get($model_type));

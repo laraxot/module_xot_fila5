@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Testing Fixes Roadmap - Correzione Test Falliti
 
 **Status**: In Progress
@@ -133,3 +134,12 @@ $currentTeam = $user->currentTeam;
 
 **Ultimo aggiornamento**: [DATE]
 **Prossimo step**: Correggere ArtisanServiceTest.php
+=======
+---
+module: theme
+topic: testinges
+canonical: ../../../Themes/docs/shared-components/testing-fixes-roadmap.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-fixes-roadmap.md
+>>>>>>> c7fd73eb (.)

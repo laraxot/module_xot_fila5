@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Provider Documentation Index
 
 **Purpose**: Central index for all ServiceProvider documentation in Laraxot architecture
@@ -257,3 +258,12 @@ When reviewing provider code:
 **Status**: ✅ Active Index
 
 **Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
+=======
+---
+module: theme
+topic: providerocumentation-index
+canonical: ../../../Themes/docs/shared-components/provider-documentation-index.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/provider-documentation-index.md
+>>>>>>> c7fd73eb (.)

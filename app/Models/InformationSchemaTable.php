@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -75,6 +76,37 @@ use Sushi\Sushi;
  *
  * @method static Builder<static>|InformationSchemaTable whereCreatedAt($value)
  * @method static Builder<static>|InformationSchemaTable whereCreatedBy($value)
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
+use Modules\Tenant\Models\Traits\SushiToJson;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Database\Factories\InformationSchemaTableFactory;
+
+/**
+ * @property int|null $table_rows
+ * @property string $table_schema
+ * @property string $table_name
+ * @property string|null $model_class
+ * @property Carbon|null $created_at
+ * @property string|null $created_by
+ * @property int $id
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ *
+ * @method static InformationSchemaTableFactory factory($count = null, $state = [])
+ * @method static Builder<static>|InformationSchemaTable newModelQuery()
+ * @method static Builder<static>|InformationSchemaTable newQuery()
+ * @method static Builder<static>|InformationSchemaTable query()
+ * @method static Builder<static>|InformationSchemaTable whereCreatedAt($value)
+ * @method static Builder<static>|InformationSchemaTable whereCreatedBy($value)
+ * @method static Builder<static>|InformationSchemaTable whereId($value)
+ * @method static Builder<static>|InformationSchemaTable whereModelClass($value)
+>>>>>>> c7fd73eb (.)
  * @method static Builder<static>|InformationSchemaTable whereTableName($value)
  * @method static Builder<static>|InformationSchemaTable whereTableRows($value)
  * @method static Builder<static>|InformationSchemaTable whereTableSchema($value)
@@ -83,13 +115,20 @@ use Sushi\Sushi;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class InformationSchemaTable extends Model
+=======
+class InformationSchemaTable extends BaseModel
+>>>>>>> c7fd73eb (.)
 {
     use SushiToJson;
 
     /**
+<<<<<<< HEAD
      * The attributes that are mass assignable.
      *
+=======
+>>>>>>> c7fd73eb (.)
      * @var list<string>
      */
     protected $fillable = [
@@ -104,11 +143,19 @@ class InformationSchemaTable extends Model
     ];
 
     /**
+<<<<<<< HEAD
      * The schema for the Sushi model.
      *
      * @var array<string, string>
      */
     protected $form = [
+=======
+     * Schema utilizzato dal trait Sushi per tipizzare i campi.
+     *
+     * @var array<string, string>
+     */
+    protected array $schema = [
+>>>>>>> c7fd73eb (.)
         'id' => 'integer',
         'table_schema' => 'string',
         'table_name' => 'string',
@@ -121,23 +168,36 @@ class InformationSchemaTable extends Model
     ];
 
     /**
+<<<<<<< HEAD
      * Alias compatibile per trait SushiToJson che attende getSchema().
+=======
+     * Restituisce lo schema atteso da Sushi.
+>>>>>>> c7fd73eb (.)
      *
      * @return array<string, string>
      */
     public function getSchema(): array
     {
+<<<<<<< HEAD
         return $this->form;
     }
 
     /**
      * Get the rows array for the Sushi model.
      * This method is required by Sushi to provide the data.
+=======
+        return $this->schema;
+    }
+
+    /**
+     * Restituisce i record da utilizzare per popolare la tabella in-memory.
+>>>>>>> c7fd73eb (.)
      *
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array
     {
+<<<<<<< HEAD
         return $this->getSushiRows();
     }
 
@@ -145,17 +205,40 @@ class InformationSchemaTable extends Model
     {
         if (! class_exists($modelClass)) {
             throw new InvalidArgumentException("Model class [{$modelClass}] does not exist");
+=======
+        /** @var array<int, array<string, mixed>> $rows */
+        $rows = $this->getSushiRows();
+
+        return $rows;
+    }
+
+    /**
+     * Aggiorna il numero di record memorizzato per un modello.
+     *
+     * @param  class-string<Model>  $modelClass
+     */
+    public static function updateModelCount(string $modelClass, int $total): void
+    {
+        if (! class_exists($modelClass)) {
+            throw new \InvalidArgumentException("Model class [{$modelClass}] does not exist");
+>>>>>>> c7fd73eb (.)
         }
 
         /** @var Model $model */
         $model = app($modelClass);
+<<<<<<< HEAD
 
         if (! ($model instanceof Model)) {
             throw new InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+=======
+        if (! $model instanceof Model) {
+            throw new \InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+>>>>>>> c7fd73eb (.)
         }
 
         $connection = $model->getConnection();
         $database = $connection->getDatabaseName();
+<<<<<<< HEAD
         $driver = $connection->getDriverName();
         $table = $model->getTable();
         $where = ['table_schema' => $database, 'model_class' => $modelClass, 'table_name' => $table];
@@ -169,22 +252,49 @@ class InformationSchemaTable extends Model
      * @param class-string<Model> $modelClass The fully qualified model class name
      *
      * @throws InvalidArgumentException If model class is invalid or not found
+=======
+        $table = $model->getTable();
+
+        static::updateOrCreate([
+            'table_schema' => $database,
+            'model_class' => $modelClass,
+            'table_name' => $table,
+        ], [
+            'table_rows' => $total,
+        ]);
+    }
+
+    /**
+     * Restituisce il numero di record per un modello.
+     *
+     * @param  class-string<Model>  $modelClass
+>>>>>>> c7fd73eb (.)
      */
     public static function getModelCount(string $modelClass): int
     {
         if (! class_exists($modelClass)) {
+<<<<<<< HEAD
             throw new InvalidArgumentException("Model class [{$modelClass}] does not exist");
+=======
+            throw new \InvalidArgumentException("Model class [{$modelClass}] does not exist");
+>>>>>>> c7fd73eb (.)
         }
 
         /** @var Model $model */
         $model = app($modelClass);
+<<<<<<< HEAD
 
         if (! ($model instanceof Model)) {
             throw new InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+=======
+        if (! $model instanceof Model) {
+            throw new \InvalidArgumentException("Class [{$modelClass}] must be an instance of ".Model::class);
+>>>>>>> c7fd73eb (.)
         }
 
         $connection = $model->getConnection();
         $database = $connection->getDatabaseName();
+<<<<<<< HEAD
         $driver = $connection->getDriverName();
         $table = $model->getTable();
 
@@ -212,5 +322,20 @@ class InformationSchemaTable extends Model
          *
          * return static::getAccurateRowCount($table, $database);
          */
+=======
+        $table = $model->getTable();
+
+        $record = static::firstOrCreate([
+            'table_schema' => $database,
+            'model_class' => $modelClass,
+            'table_name' => $table,
+        ]);
+
+        if ($record->table_rows === null) {
+            $record->update(['table_rows' => $model->count()]);
+        }
+
+        return (int) $record->table_rows;
+>>>>>>> c7fd73eb (.)
     }
 }

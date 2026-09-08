@@ -192,7 +192,11 @@ try {
         'middleware' => get_class($this),
         'error' => $e->getMessage(),
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     return response()->json([
         'message' => 'Errore interno del server',
     ], 500);
@@ -276,4 +280,8 @@ class Cors
         return $response;
     }
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

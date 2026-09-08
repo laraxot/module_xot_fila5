@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Implementazione Colonna Composita "Contatti" - TechPlanner
 
 ## Richiesta Utente
@@ -238,3 +239,12 @@ Questa implementazione stabilisce un precedente per:
 **Stato**: Analisi completata, pronto per implementazione
 **Ultimo aggiornamento**: agosto 2025
 **Autore**: Cascade AI Assistant
+=======
+---
+module: theme
+topic: filament-composite-contacts-column
+canonical: ../../../Themes/docs/shared-components/filament-composite-contacts-column-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-composite-contacts-column-analysis.md
+>>>>>>> c7fd73eb (.)

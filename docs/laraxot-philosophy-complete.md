@@ -213,14 +213,30 @@ class YourResource extends XotBaseResource
     // Model auto-resolved as Modules\YourModule\Models\YourResource
     // Pages auto-discovered following pattern
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Infolist components
@@ -304,4 +320,8 @@ grep -r "\.navigation" Modules/*/lang/**/*.php
 **Maintained by**: Xot Module (The Laraxot Government)
 **Philosophy**: Consistency, Predictability, Simplicity
 **Goal**: Create a harmonious, maintainable, and scalable application architecture
+<<<<<<< HEAD
 
+=======
+**Last Updated**: 2025-11-17
+>>>>>>> c7fd73eb (.)

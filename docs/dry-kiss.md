@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🐄✨ DRY & KISS Analysis - Modulo Xot
 
 **Data Analisi:** [DATE]
@@ -603,3 +604,12 @@ find Actions/ -name "*.php" -exec wc -l {} + | awk '$1 > 200'
 **Overall Score:** 7.2/10
 
 🐄 **MU-UU-UU!** 🐄
+=======
+---
+module: theme
+topic: dry-kiss
+canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-Modules.md
+>>>>>>> c7fd73eb (.)

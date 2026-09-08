@@ -7,6 +7,7 @@ namespace Modules\Xot\Enums;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
+<<<<<<< HEAD
 
 enum GenderEnum: string implements HasColor, HasIcon, HasLabel
 {
@@ -36,4 +37,14 @@ enum GenderEnum: string implements HasColor, HasIcon, HasLabel
             self::MALE => 'fas-male',
         };
     }
+=======
+use Modules\Xot\Traits\EnumTrait;
+
+enum GenderEnum: string implements HasColor, HasIcon, HasLabel
+{
+    use EnumTrait;
+
+    case FEMALE = 'f';
+    case MALE = 'm';
+>>>>>>> c7fd73eb (.)
 }

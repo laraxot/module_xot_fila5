@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni di Naming dei Campi in Base
 
 ## Regola Fondamentale
@@ -132,3 +133,6 @@ Schema::create('patients', function (Blueprint $table) {
 - [Naming Conventions](../../../docs/naming-conventions.md)
 - [Documentazione Xot](../code-standards.md)
 - [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
+=======
+
+>>>>>>> c7fd73eb (.)

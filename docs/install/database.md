@@ -84,6 +84,7 @@ return $def1;
 ~~~
 ### Versione HEAD
 
+<<<<<<< HEAD
 
 ## Collegamenti tra versioni di database.md
 * [database.md](docs/tecnico/database/database.md)
@@ -96,3 +97,13 @@ return $def1;
 
 ---
 
+=======
+## Collegamenti tra versioni di database.md
+* [database.md](docs/tecnico/database/database.md)
+* [database.md](../../../xot/project_docs/install/database.md)
+* [database.md](../../../tenant/project_docs/it/config/database.md)
+
+### Versione Incoming
+
+---
+>>>>>>> c7fd73eb (.)

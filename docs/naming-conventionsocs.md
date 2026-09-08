@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni di Naming nella Documentazione
 
 ## Regola: Nome del Progetto nei Moduli
@@ -220,3 +221,12 @@ Prima di committare modifiche alla documentazione di un modulo, verificare:
 - [Struttura Moduli](module-structure.md)
 - [Convenzioni Generali](conventions.md)
 - [Best Practices Documentazione](documentation-guidelines.md)
+=======
+---
+module: theme
+topic: naming-conventionsocs
+canonical: ../../../Themes/docs/shared-components/naming-conventions-docs.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/naming-conventions-docs.md
+>>>>>>> c7fd73eb (.)

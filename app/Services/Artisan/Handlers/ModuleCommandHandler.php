@@ -13,7 +13,12 @@ use Webmozart\Assert\Assert;
  */
 class ModuleCommandHandler implements CommandHandlerInterface
 {
+<<<<<<< HEAD
     private const MODULE_COMMANDS = [
+=======
+    /** @var array<string, string> */
+    private const array MODULE_COMMANDS = [
+>>>>>>> c7fd73eb (.)
         'module-list' => 'listModules',
         'module-disable' => 'disableModule',
         'module-enable' => 'enableModule',

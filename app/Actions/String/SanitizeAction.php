@@ -4,19 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 
+=======
+>>>>>>> c7fd73eb (.)
 use function Safe\preg_replace;
 
 class SanitizeAction
 {
+<<<<<<< HEAD
     use QueueableAction;
 
+=======
+>>>>>>> c7fd73eb (.)
     public function execute(string $str): string
     {
         $str = strip_tags($str);
         $str = html_entity_decode($str);
+<<<<<<< HEAD
         $str = trim($str);
 
         $replaced = preg_replace('/\s+/', ' ', $str);
@@ -29,6 +36,10 @@ class SanitizeAction
         }
 
         return $str;
+=======
+
+        return trim($str);
+>>>>>>> c7fd73eb (.)
     }
 }
 

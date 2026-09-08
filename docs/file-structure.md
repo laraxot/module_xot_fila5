@@ -22,13 +22,17 @@ Warning: Ambiguous class resolution, "Modules\Cms\Database\Seeders\CmsDatabaseSe
 - **Factories**: `PageFactory.php`, `ConfFactory.php`, `ModuleFactory.php`, etc.
 
 ## Correct File Structure Patterns
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7fd73eb (.)
 ### ✅ Option 1: Traditional Laravel Structure (Recommended)
 
 ```
 Modules/{ModuleName}/
 ├── database/
 │   ├── factories/
+<<<<<<< HEAD
 │   │   ├── PageFactory.php
 │   │   ├── ConfFactory.php
 │   │   └── ...
@@ -38,11 +42,36 @@ Modules/{ModuleName}/
 │   └── seeders/
 │       └── CmsDatabaseSeeder.php
 └── app/
+=======
+│   ├── migrations/
+│   └── seeders/
+└── app/
+    ├── Actions/
+    ├── Application/
+    ├── Events/
+    ├── Listeners/
+>>>>>>> c7fd73eb (.)
     ├── Models/
     ├── Filament/
     └── ...
 ```
 
+<<<<<<< HEAD
+=======
+### ❌ WRONG: Root-Level Capitalized Directories
+
+```
+Modules/{ModuleName}/
+├── Actions/        # ❌ SHOULD BE IN app/
+├── Application/    # ❌ SHOULD BE IN app/
+├── Database/       # ❌ SHOULD BE lowercase database/
+├── Events/         # ❌ SHOULD BE IN app/
+├── Listeners/      # ❌ SHOULD BE IN app/
+└── ...
+```
+
+## Why This Matters
+>>>>>>> c7fd73eb (.)
 ### ✅ Option 2: App-Centric Structure
 
 ```
@@ -87,7 +116,11 @@ Modules/{ModuleName}/
 
 ### 1. **Autoloader Confusion**
 - PHP autoloader cannot determine which file to use
+<<<<<<< HEAD
 - "First found" approach leads to unpredictable behavior
+=======
+- "First found" approach leads to un<nome progetto>able behavior
+>>>>>>> c7fd73eb (.)
 - Different environments may load different files
 
 ### 2. **Maintenance Nightmare**
@@ -167,7 +200,12 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
+<<<<<<< HEAD
 └── Quaeris/
+=======
+└── healthcare_app/
+└── ExternalProject/
+>>>>>>> c7fd73eb (.)
     ├── database/
     │   ├── factories/
     │   ├── migrations/
@@ -203,4 +241,8 @@ find Modules -name "*.php" | grep -E "(factories|seeders)" | sort
 
 ---
 
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, consistency and predictability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, predictable behavior.
+=======
+**Philosophy Summary**: In Laraxot, consistency and <nome progetto>ability are more valuable than flexibility. Choose one file structure pattern and apply it consistently across all modules. Eliminate ambiguity to ensure reliable, <nome progetto>able behavior.
+>>>>>>> c7fd73eb (.)

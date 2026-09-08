@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix: ExportXlsByCollection Problemi di Sintassi e Compatibilità
 
 ## 🚨 Problemi Identificati
@@ -130,3 +131,6 @@ $response = $action->execute(
 **Autore**: AI Assistant  
 **Priorità**: Media  
 **Status**: ✅ Risolto 
+=======
+
+>>>>>>> c7fd73eb (.)

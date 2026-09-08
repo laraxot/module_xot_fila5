@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pest Testing - Stato Attuale e Roadmap
 
 **Framework**: Pest PHP 3.8.4  
@@ -201,3 +202,12 @@ test('user can be saved to database', function () {
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
 **Status**: 🔄 **IN CORREZIONE**
+=======
+---
+module: theme
+topic: pest-testing
+canonical: ../../../Themes/docs/shared-components/pest-testing-status.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/pest-testing-status.md
+>>>>>>> c7fd73eb (.)

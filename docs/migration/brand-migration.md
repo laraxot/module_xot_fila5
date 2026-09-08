@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Migrazione al Nuovo Sistema Brand
 
 ## Panoramica

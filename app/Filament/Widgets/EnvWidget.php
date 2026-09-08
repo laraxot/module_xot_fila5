@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Schemas\Components\Component;
 use Filament\Actions\Contracts\HasActions;
@@ -31,6 +32,24 @@ class EnvWidget extends Widget implements HasForms, HasActions
 
     public array $only = [];
 
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
+use Illuminate\Support\Arr;
+use Modules\Xot\Datas\EnvData;
+
+class EnvWidget extends XotBaseSchemaWidget
+{
+    /** @var array<string, mixed>|null */
+    public ?array $data = [];
+
+    /** @var list<string> */
+    public array $only = [];
+
+    /** @var view-string */
+>>>>>>> c7fd73eb (.)
     protected string $view = 'xot::filament.widgets.env';
 
     public function mount(): void
@@ -42,6 +61,7 @@ class EnvWidget extends Widget implements HasForms, HasActions
         $this->form->fill($this->data);
     }
 
+<<<<<<< HEAD
     public function form(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
@@ -50,6 +70,11 @@ class EnvWidget extends Widget implements HasForms, HasActions
     public function submit(): void
     {
         if (!is_array($this->data)) {
+=======
+    public function submit(): void
+    {
+        if (! is_array($this->data)) {
+>>>>>>> c7fd73eb (.)
             return;
         }
         EnvData::make()->update($this->data);
@@ -86,6 +111,7 @@ class EnvWidget extends Widget implements HasForms, HasActions
                 ->placeholder('AIzaSyAuB_...')
                 ->helperText('telegram_bot_token'),
         ];
+<<<<<<< HEAD
 
         /**
          * @var array<Component>
@@ -93,5 +119,13 @@ class EnvWidget extends Widget implements HasForms, HasActions
         $fields = Arr::only($all, $this->only);
 
         return $fields;
+=======
+        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
+
+        /** @var array<Component> $components */
+        $components = array_values($selected);
+
+        return $components;
+>>>>>>> c7fd73eb (.)
     }
 }

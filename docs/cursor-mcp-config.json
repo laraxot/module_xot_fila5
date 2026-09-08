@@ -52,7 +52,20 @@
       "env": {
         "LARAVEL_PROJECT_ROOT": "/var/www/_bases/base_quaeris_fila5_mono/laravel"
       }
+<<<<<<< HEAD
     }
   }
 }
 
+=======
+    },
+    "laravel-boost": {
+      "command": "./bashscripts/mcp/laravel-boost-wrapper.sh",
+      "args": [],
+      "env": {
+        "LARAVEL_PROJECT_ROOT": "./laravel"
+      }
+    }
+  }
+}
+>>>>>>> c7fd73eb (.)

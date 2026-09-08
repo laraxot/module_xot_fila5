@@ -118,7 +118,11 @@ protected function casts(): array
 }
 ```
 
+<<<<<<< HEAD
 ## Audit Risultati ([DATE])
+=======
+## Audit Risultati (2025-08-01)
+>>>>>>> c7fd73eb (.)
 
 ### File con Errori Trovati: 20
 

@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Services\ModuleService;
@@ -42,12 +43,42 @@ describe('ModuleService Integration', function () {
         // Should contain Chart model
         $hasChartModel = false;
         foreach ($models as $key => $modelClass) {
+=======
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+
+uses(TestCase::class);
+
+describe('GetAllModelsByModuleNameAction Integration', function () {
+    it('integrates with Nwidart Modules system', function () {
+        Assert::assertTrue(class_exists('Nwidart\Modules\Facades\Module'));
+        Assert::assertTrue(class_exists('Nwidart\Modules\Module'));
+    });
+
+    it('can find existing modules', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+
+        Assert::assertInstanceOf(GetAllModelsByModuleNameAction::class, $action);
+    });
+
+    it('returns models from existing modules', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Chart');
+
+        $hasChartModel = false;
+        foreach ($models as $modelClass) {
+>>>>>>> c7fd73eb (.)
             if (str_contains($modelClass, 'Chart\\Models\\Chart')) {
                 $hasChartModel = true;
                 break;
             }
         }
 
+<<<<<<< HEAD
         expect($hasChartModel)->toBeTrue();
     });
 
@@ -62,12 +93,23 @@ describe('ModuleService Integration', function () {
         $hasUserModels = false;
 
         foreach ($modelClasses as $modelClass) {
+=======
+        Assert::assertTrue($hasChartModel);
+    });
+
+    it('handles User module models correctly', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('User');
+
+        $hasUserModels = false;
+        foreach (array_values($models) as $modelClass) {
+>>>>>>> c7fd73eb (.)
             if (str_contains($modelClass, 'User\\Models\\')) {
                 $hasUserModels = true;
                 break;
             }
         }
 
+<<<<<<< HEAD
         expect($hasUserModels)->toBeTrue();
     });
 
@@ -89,10 +131,31 @@ describe('ModuleService Integration', function () {
                 ->toBeString()
                 ->and(str_contains($modelClass, 'Modules\\'))
                 ->toBeTrue();
+=======
+        Assert::assertTrue($hasUserModels);
+    });
+
+    it('filters abstract models correctly', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        // BaseModel should not be included (it's abstract)
+        $modelNames = array_keys($models);
+        Assert::assertStringNotContainsString('base_model', implode(',', $modelNames));
+    });
+
+    it('returns class strings as keys and values', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        foreach ($models as $key => $modelClass) {
+            Assert::assertIsString($key);
+            Assert::assertIsString($modelClass);
+            Assert::assertTrue(str_contains($modelClass, 'Modules\\'));
+>>>>>>> c7fd73eb (.)
         }
     });
 
     it('handles reflection operations safely', function () {
+<<<<<<< HEAD
         // Test that reflection operations don't cause crashes
         $models = $this->service->getModels();
 
@@ -175,10 +238,58 @@ describe('ModuleService Integration', function () {
 
         foreach ($edgeCaseServices as $service) {
             expect($service->getModels(...))->not->toThrow(Exception::class);
+=======
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        foreach ($models as $modelClass) {
+            Assert::assertTrue(class_exists($modelClass) || interface_exists($modelClass));
+        }
+    });
+
+    it('handles snake_case conversion correctly', function () {
+        $snakeCase = Str::snake('TestModelName');
+
+        Assert::assertSame('test_model_name', $snakeCase);
+    });
+
+    it('integrates with Laravel filesystem', function () {
+        Assert::assertTrue(class_exists('Illuminate\Support\Facades\File'));
+    });
+
+    it('can handle multiple module names', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+
+        foreach (['Chart', 'User', 'Xot', 'Job'] as $moduleName) {
+            $models = $action->execute($moduleName);
+            Assert::assertIsArray($models);
+        }
+    });
+
+    it('returns an empty array for a non-existent module', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('NonExistentModule');
+
+        Assert::assertEmpty($models);
+    });
+
+    it('handles namespace construction correctly', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Chart');
+
+        foreach ($models as $modelClass) {
+            Assert::assertStringContainsString('Modules\\Chart\\', $modelClass);
+        }
+    });
+
+    it('handles edge case module names gracefully', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+
+        foreach (['', 'InvalidModule', 'Test123'] as $moduleName) {
+            Assert::assertIsArray($action->execute($moduleName));
+>>>>>>> c7fd73eb (.)
         }
     });
 
     it('validates return type consistency', function () {
+<<<<<<< HEAD
         $models = $this->service->getModels();
 
         expect($models)->toBeArray();
@@ -259,5 +370,63 @@ describe('ModuleService Integration', function () {
         $executionTime = $endTime - $startTime;
 
         expect($models)->toBeArray()->and($executionTime)->toBeLessThan(5.0); // Should complete within 5 seconds
+=======
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        foreach ($models as $key => $value) {
+            Assert::assertIsString($key);
+            Assert::assertIsString($value);
+            Assert::assertGreaterThan(0, strlen($key));
+            Assert::assertGreaterThan(0, strlen($value));
+        }
+    });
+
+    it('can be resolved from the Laravel service container', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+
+        Assert::assertInstanceOf(GetAllModelsByModuleNameAction::class, $action);
+    });
+
+    it('returns consistent results across repeated calls', function () {
+        $action = app(GetAllModelsByModuleNameAction::class);
+        $results = [
+            $action->execute('Xot'),
+            $action->execute('Xot'),
+            $action->execute('Xot'),
+        ];
+
+        Assert::assertSame($results[0], $results[1]);
+        Assert::assertSame($results[0], $results[2]);
+    });
+
+    it('validates module path resolution', function () {
+        $models = app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        foreach ($models as $modelClass) {
+            Assert::assertMatchesRegularExpression('/^Modules\\\\[A-Za-z]+\\\\Models\\\\[A-Za-z]+$/', $modelClass);
+        }
+    });
+
+    it('integrates with Laravel string helpers', function () {
+        Assert::assertTrue(class_exists('Illuminate\Support\Str'));
+        Assert::assertSame('TestString', Str::studly('test_string'));
+    });
+
+    it('uses the QueueableAction trait for sync/async execution', function () {
+        Assert::assertContains(
+            \Spatie\QueueableAction\QueueableAction::class,
+            class_uses(GetAllModelsByModuleNameAction::class),
+        );
+    });
+
+    it('can discover models within a time budget', function () {
+        $startTime = microtime(true);
+
+        app(GetAllModelsByModuleNameAction::class)->execute('Xot');
+
+        $executionTime = microtime(true) - $startTime;
+
+        Assert::assertLessThan(5.0, $executionTime);
+>>>>>>> c7fd73eb (.)
     });
 });

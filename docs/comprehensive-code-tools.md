@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔍 COMPREHENSIVE CODE ANALYSIS TOOLS GUIDE
 
 **Data Creazione**: [DATE]
@@ -463,3 +464,12 @@ chmod +x scripts/*.sh
 ---
 
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+=======
+---
+module: theme
+topic: comprehensive-code-tools
+canonical: ../../../Themes/docs/shared-components/comprehensive-code-analysis-tools.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/comprehensive-code-analysis-tools.md
+>>>>>>> c7fd73eb (.)

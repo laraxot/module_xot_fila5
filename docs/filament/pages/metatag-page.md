@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MetatagPage
 
 La classe `MetatagPage` è una pagina Filament che gestisce la configurazione dei metatag del sito.
@@ -86,3 +87,6 @@ use Modules\Xot\Filament\Pages\MetatagPage;
 - [Documentazione Filament](../../../docs/filament/index.md)
 - [Configurazione SEO](../../../docs/seo/index.md)
 - [Gestione Temi](../../../docs/themes/index.md)
+=======
+
+>>>>>>> c7fd73eb (.)

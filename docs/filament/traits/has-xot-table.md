@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # HasXotTable Trait
 
 Il trait `HasXotTable` fornisce funzionalità avanzate per la gestione delle tabelle in Filament, con supporto per traduzioni e una struttura ottimizzata.
@@ -134,3 +135,6 @@ public function getTableFiltersFormColumns(): int
 - [Documentazione Filament](../../../docs/filament/index.md)
 - [Gestione Tabelle](../../../docs/filament/tables.md)
 - [Azioni Personalizzate](../../../docs/filament/actions.md)
+=======
+
+>>>>>>> c7fd73eb (.)

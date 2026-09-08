@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # REGOLA CRITICA: Cartelle docs root VIETATE
 
 ## CARTELLE CHE NON DEVONO MAI ESISTERE:
@@ -43,3 +44,12 @@ find var/www/html/_bases/base_<nome progetto>/docs$|^docs$)"
 
 ## RESPONSABILITÀ:
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
+=======
+---
+module: theme
+topic: no-rootocs-rule
+canonical: ../../../Themes/docs/shared-components/no-root-docs-rule.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/no-root-docs-rule.md
+>>>>>>> c7fd73eb (.)

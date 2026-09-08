@@ -6,6 +6,10 @@ namespace Modules\Xot\Filament\Traits;
 
 use Illuminate\Contracts\Support\Htmlable;
 
+<<<<<<< HEAD
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> c7fd73eb (.)
 trait NavigationPageLabelTrait
 {
     use TransTrait;
@@ -15,7 +19,11 @@ trait NavigationPageLabelTrait
         return static::trans('navigation.name');
     }
 
+<<<<<<< HEAD
     public function getPluralModelLabel(): string
+=======
+    public static function getPluralModelLabel(): string
+>>>>>>> c7fd73eb (.)
     {
         return static::trans('navigation.plural');
     }

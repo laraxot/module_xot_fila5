@@ -434,12 +434,21 @@ public function processData(): void
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
+=======
+- [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
+- [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
+>>>>>>> c7fd73eb (.)
 - [Code Quality Standards](./code_quality_standards.md)
 - [Common Anti-Patterns](./common_anti_patterns.md)
 - [Testing Guidelines](./testing-guidelines.md)
 
+<<<<<<< HEAD
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 
 
 
 
+=======
+This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
+>>>>>>> c7fd73eb (.)

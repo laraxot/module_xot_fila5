@@ -40,14 +40,27 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = Integparam::class;
+<<<<<<< HEAD
     
     public static function getFormSchema(): array
+=======
+
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Schema del form
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public static function getTableColumns(): array
     {
         return [
@@ -117,8 +130,17 @@ namespace Modules\Progressioni\Filament\Resources;
 class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
+<<<<<<< HEAD
     
     public static function getFormSchema(): array
+=======
+
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Section::make('Dati Anagrafici')
@@ -223,4 +245,8 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 5 giugno 2025* 
+=======
+*Ultimo aggiornamento: 5 giugno 2025*
+>>>>>>> c7fd73eb (.)

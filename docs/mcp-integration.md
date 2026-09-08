@@ -54,25 +54,42 @@ class OptimizeDatabaseQueryAction
             // Esegue EXPLAIN sulla query
             $explainQuery = 'EXPLAIN ' . $query;
             $explainResults = $this->mcpService->mysql()->executeQuery($explainQuery, $params);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             // Analizza i risultati di EXPLAIN
             $estimatedRows = 0;
             $usesIndexes = false;
             $tableScans = [];
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             foreach ($explainResults as $result) {
                 if (isset($result['rows'])) {
                     $estimatedRows += (int) $result['rows'];
                 }
+<<<<<<< HEAD
                 
                 if (isset($result['key']) && $result['key'] !== null) {
                     $usesIndexes = true;
                 }
                 
+=======
+
+                if (isset($result['key']) && $result['key'] !== null) {
+                    $usesIndexes = true;
+                }
+
+>>>>>>> c7fd73eb (.)
                 if (isset($result['type']) && $result['type'] === 'ALL') {
                     $tableScans[] = $result['table'] ?? 'unknown';
                 }
             }
+<<<<<<< HEAD
             
             // Genera suggerimenti di ottimizzazione
             $recommendations = [];
@@ -89,18 +106,44 @@ class OptimizeDatabaseQueryAction
             if ($estimatedRows > 1000) {
                 $recommendations[] = 'La query potrebbe restituire un numero elevato di righe (' . $estimatedRows . '). Considera l\'aggiunta di limiti o filtri.';
                 
+=======
+
+            // Genera suggerimenti di ottimizzazione
+            $recommendations = [];
+            $optimizedQuery = $query;
+
+            if (!$usesIndexes) {
+                $recommendations[] = 'La query non utilizza indici. Considera l\'aggiunta di indici appropriati.';
+            }
+
+            if (!empty($tableScans)) {
+                $recommendations[] = 'La query esegue table scan su: ' . implode(', ', $tableScans) . '. Considera l\'aggiunta di indici o la riscrittura della query.';
+            }
+
+            if ($estimatedRows > 1000) {
+                $recommendations[] = 'La query potrebbe restituire un numero elevato di righe (' . $estimatedRows . '). Considera l\'aggiunta di limiti o filtri.';
+
+>>>>>>> c7fd73eb (.)
                 // Aggiunge LIMIT se non presente
                 if (stripos($query, 'LIMIT') === false) {
                     $optimizedQuery .= ' LIMIT 1000';
                     $recommendations[] = 'Aggiunto LIMIT 1000 per limitare il numero di risultati.';
                 }
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             // Verifica se ci sono JOIN senza condizioni
             if (stripos($query, 'JOIN') !== false && stripos($query, 'ON') === false) {
                 $recommendations[] = 'La query contiene JOIN senza condizioni ON. Verifica che tutti i JOIN abbiano condizioni appropriate.';
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return new QueryAnalysisData(
                 originalQuery: $query,
                 optimizedQuery: $optimizedQuery,
@@ -115,7 +158,11 @@ class OptimizeDatabaseQueryAction
                 'message' => $e->getMessage(),
                 'trace' => $e->getTraceAsString()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return new QueryAnalysisData(
                 originalQuery: $query,
                 optimizedQuery: $query,
@@ -178,7 +225,11 @@ class CacheService
                 'key' => $key,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -195,14 +246,22 @@ class CacheService
     {
         try {
             $value = $this->mcpService->redis()->get($key);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return $value !== null ? $value : $default;
         } catch (\Exception $e) {
             Log::error('Cache get failed', [
                 'key' => $key,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return $default;
         }
     }
@@ -223,7 +282,11 @@ class CacheService
                 'key' => $key,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -244,7 +307,11 @@ class CacheService
                 'key' => $key,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -267,7 +334,11 @@ class CacheService
                 'amount' => $amount,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -290,7 +361,11 @@ class CacheService
                 'amount' => $amount,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -339,14 +414,22 @@ class FileService
     {
         try {
             $content = $this->mcpService->filesystem()->readFile($path);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return $content !== false ? $content : null;
         } catch (\Exception $e) {
             Log::error('File read failed', [
                 'path' => $path,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return null;
         }
     }
@@ -367,14 +450,22 @@ class FileService
             if (!file_exists($directory)) {
                 mkdir($directory, 0755, true);
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return $this->mcpService->filesystem()->writeFile($path, $content);
         } catch (\Exception $e) {
             Log::error('File write failed', [
                 'path' => $path,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -395,7 +486,11 @@ class FileService
                 'path' => $path,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -416,7 +511,11 @@ class FileService
                 'directory' => $directory,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return [];
         }
     }
@@ -433,11 +532,19 @@ class FileService
     {
         try {
             $content = $this->read($source);
+<<<<<<< HEAD
             
             if ($content === null) {
                 return false;
             }
             
+=======
+
+            if ($content === null) {
+                return false;
+            }
+
+>>>>>>> c7fd73eb (.)
             return $this->write($destination, $content);
         } catch (\Exception $e) {
             Log::error('File copy failed', [
@@ -445,7 +552,11 @@ class FileService
                 'destination' => $destination,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -466,7 +577,11 @@ class FileService
                 'path' => $path,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return false;
         }
     }
@@ -520,11 +635,19 @@ class AnalyzeCodeAction
                 $code,
                 ['code_quality', 'performance', 'security', 'best_practices']
             );
+<<<<<<< HEAD
             
             $qualityScore = $analysis['code_quality']['score'] ?? 0;
             $issues = [];
             $suggestions = [];
             
+=======
+
+            $qualityScore = $analysis['code_quality']['score'] ?? 0;
+            $issues = [];
+            $suggestions = [];
+
+>>>>>>> c7fd73eb (.)
             // Raccoglie i problemi
             foreach (['code_quality', 'performance', 'security', 'best_practices'] as $aspect) {
                 if (isset($analysis[$aspect]['issues']) && is_array($analysis[$aspect]['issues'])) {
@@ -537,7 +660,11 @@ class AnalyzeCodeAction
                         ];
                     }
                 }
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
                 if (isset($analysis[$aspect]['suggestions']) && is_array($analysis[$aspect]['suggestions'])) {
                     foreach ($analysis[$aspect]['suggestions'] as $suggestion) {
                         $suggestions[] = [
@@ -549,7 +676,11 @@ class AnalyzeCodeAction
                     }
                 }
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return new CodeAnalysisData(
                 language: $language,
                 qualityScore: $qualityScore,
@@ -562,7 +693,11 @@ class AnalyzeCodeAction
                 'message' => $e->getMessage(),
                 'trace' => $e->getTraceAsString()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return new CodeAnalysisData(
                 language: $language,
                 qualityScore: 0,
@@ -630,7 +765,11 @@ class PostgresService
                 'params' => $params,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return [];
         }
     }
@@ -653,7 +792,11 @@ class PostgresService
                 'params' => $params,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return [
                 'error' => $e->getMessage()
             ];
@@ -676,14 +819,22 @@ class PostgresService
                 WHERE table_name = $1
                 ORDER BY ordinal_position
             ";
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return $this->executeQuery($query, [$table]);
         } catch (\Exception $e) {
             Log::error('PostgreSQL get table structure failed', [
                 'table' => $table,
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return [];
         }
     }
@@ -702,15 +853,25 @@ class PostgresService
                 WHERE table_schema = 'public'
                 ORDER BY table_name
             ";
+<<<<<<< HEAD
             
             $results = $this->executeQuery($query);
             
+=======
+
+            $results = $this->executeQuery($query);
+
+>>>>>>> c7fd73eb (.)
             return array_column($results, 'table_name');
         } catch (\Exception $e) {
             Log::error('PostgreSQL get tables failed', [
                 'message' => $e->getMessage()
             ]);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> c7fd73eb (.)
             return [];
         }
     }
@@ -795,7 +956,11 @@ class XotServiceProvider extends XotBaseServiceProvider
                 $app->make(MCPServiceContract::class)
             );
         });
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         // Altre registrazioni...
     }
 

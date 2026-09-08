@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**
@@ -66,3 +67,12 @@ Il prompt rimane conforme alla [Regola Universale](./prompt_rules.md) per i prom
 ## Utilizzo
 
 Il prompt aggiornato può essere utilizzato in qualsiasi progetto modulare Laravel senza modifiche, rendendo il modulo `bashscripts` completamente riutilizzabile.
+=======
+---
+module: theme
+topic: promptocs-improvements
+canonical: ../../../Themes/docs/shared-components/prompt-docs-improvements.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/prompt-docs-improvements.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: [DATE]
@@ -399,3 +400,12 @@ PHPStan + PHPMD + Pint + Tests = Qualità garantita
 **Firma:** Claude Code
 **Data:** [DATE]
 **Status:** COMPLETATO CON SUCCESSO ✅
+=======
+---
+module: theme
+topic: property-exists-final
+canonical: ../../../Themes/docs/shared-components/property-exists-final-report.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/property-exists-final-report.md
+>>>>>>> c7fd73eb (.)

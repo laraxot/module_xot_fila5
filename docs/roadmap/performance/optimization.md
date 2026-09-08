@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ottimizzazione Performance
 
 ## Stato
@@ -51,3 +52,6 @@
 * [optimization.md](../../../xot/docs/roadmap/performance/optimization.md)
 * [optimization.md](../../../job/docs/optimization.md)
 * [optimization.md](../../../cms/docs/roadmap/performance/optimization.md)
+=======
+
+>>>>>>> c7fd73eb (.)

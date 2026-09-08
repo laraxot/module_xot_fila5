@@ -427,7 +427,11 @@ class MakePdfAction
 
         // Create filename
         $survey_date_to = $surveyPdf->date_to;
+<<<<<<< HEAD
         if ($survey_date_to === null || $survey_date_to === '[DATE]') {
+=======
+        if ($survey_date_to === null || $survey_date_to === '0000-00-00') {
+>>>>>>> c7fd73eb (.)
             $survey_date_to = date('W / o');
         } else {
             $survey_date_to = date('W / o', strtotime($survey_date_to));

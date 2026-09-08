@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Implementare Actions
 
 ## Perché usare le Actions?
@@ -186,3 +187,6 @@ Per facilitare il debugging:
 - [[../architecture/actions.md|Architettura Actions]]
 - [[../testing/unit-tests.md|Unit Testing]]
 - [[../performance/optimization.md|Ottimizzazioni]]
+=======
+
+>>>>>>> c7fd73eb (.)

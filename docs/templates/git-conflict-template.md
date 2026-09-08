@@ -82,4 +82,8 @@
 ### Timeline
 - Data risoluzione: [data]
 - Data verifica: [data]
+<<<<<<< HEAD
 - Data follow-up: [data] 
+=======
+- Data follow-up: [data]
+>>>>>>> c7fd73eb (.)

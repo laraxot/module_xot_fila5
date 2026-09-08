@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages\ListExtras;
@@ -13,10 +14,17 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Resources\ExtraResource\Pages;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Filament\Resources\RelationManagers\RelationManager;
+use Modules\Xot\Filament\Resources\ExtraResource\Pages\CreateExtra;
+use Modules\Xot\Filament\Resources\ExtraResource\Pages\EditExtra;
+use Modules\Xot\Filament\Resources\ExtraResource\Pages\ListExtras;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Models\Extra;
 
 class ExtraResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static null|string $model = Extra::class;
 
     /**
@@ -40,12 +48,24 @@ class ExtraResource extends XotBaseResource
     }
 
     #[Override]
+=======
+    protected static ?string $model = Extra::class;
+
+    /**
+     * @return array<string, class-string<RelationManager>>
+     */
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public static function getPages(): array
     {
         return [

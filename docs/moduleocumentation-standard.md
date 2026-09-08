@@ -116,7 +116,12 @@ public function createUser(array $data): User
 - Document permission and role systems
 - Include social login integration guides
 
+<<<<<<< HEAD
 ### Quaeris Module
+=======
+### healthcare_app Module
+### ExternalProject Module
+>>>>>>> c7fd73eb (.)
 
 - Document survey management workflows
 - Document reporting and analytics features
@@ -151,4 +156,8 @@ public function createUser(array $data): User
 ---
 
 
+<<<<<<< HEAD
 **Standard Version**: 1.0
+=======
+**Standard Version**: 1.0
+>>>>>>> c7fd73eb (.)

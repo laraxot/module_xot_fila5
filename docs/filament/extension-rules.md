@@ -18,7 +18,11 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 
 | ❌ SBAGLIATO | ✅ CORRETTO |
 |-------------|------------|
+<<<<<<< HEAD
 | `Filament\Resources\Pages\CreateRecord` | `Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord` |
+=======
+| `Filament\Resources\Pages\CreateRecord` | `Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord` ([perché e pipeline](./pages/create-record-page.md)) |
+>>>>>>> c7fd73eb (.)
 | `Filament\Resources\Pages\EditRecord` | `Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord` |
 | `Filament\Resources\Pages\ListRecords` | `Modules\Xot\Filament\Resources\Pages\XotBaseListRecords` |
 | `Filament\Resources\Pages\Page` | `Modules\Xot\Filament\Resources\Pages\XotBasePage` |
@@ -288,7 +292,15 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             TextInput::make('name')->required(),
@@ -300,4 +312,8 @@ class UserResource extends XotBaseResource
     // getPages() NON necessario se standard
     // getTableActions() NON necessario se standard
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> c7fd73eb (.)

@@ -231,4 +231,8 @@ class JobFailed extends Notification
             ->line('Errore: ' . $this->exception);
     }
 }
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

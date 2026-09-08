@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     /*
+<<<<<<< HEAD
      * |--------------------------------------------------------------------------
      * | Exception Language Lines
      * |--------------------------------------------------------------------------
@@ -13,6 +14,17 @@ return [
      * | found in a intuitive way.
      * |
      */
+=======
+    |--------------------------------------------------------------------------
+    | Exception Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used in Exceptions thrown throughout the system.
+    | Regardless where it is placed, a button can be listed here so it is easily
+    | found in a intuitive way.
+    |
+    */
+>>>>>>> c7fd73eb (.)
 
     'backend' => [
         'access' => [
@@ -26,6 +38,10 @@ return [
                 'not_found' => 'El Rol requerido no existe.',
                 'update_error' => 'Hubo un problema al modificar el Rol. Intentelo de nuevo.',
             ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
             'users' => [
                 'cant_deactivate_self' => 'No puede desactivarse a sí mismo.',
                 'cant_delete_self' => 'No puede eliminarse usted mismo.',
@@ -44,6 +60,10 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
     'frontend' => [
         'auth' => [
             'confirmation' => [
@@ -52,12 +72,23 @@ return [
                 'created_confirm' => 'Su cuenta ha sido creada. Le hemos enviado un e-mail con un enlace de verificación.',
                 'mismatch' => 'El código de verificación no coincide.',
                 'not_found' => 'El código de verificación especificado no existe.',
+<<<<<<< HEAD
                 'resend' => 'Su cuenta no ha sido verificada todavía. Por favor, revise su e-mail, o pulse aquí</a> para re-enviar el correo de verificación.',
                 'success' => 'Su cuenta ha sido verificada satisfactoriamente!',
                 'resent' => 'Un nuevo correo de verificación le ha sido enviado.',
             ],
             'deactivated' => 'Su cuenta ha sido desactivada.',
             'email_taken' => 'El correo especificado ya está registrado.',
+=======
+                'resend' => 'Su cuenta no ha sido verificada todavía. Por favor, revise su e-mail, o <a href="'.route('frontend.auth.account.confirm.resend', ':user_id').'">pulse aquí</a> para re-enviar el correo de verificación.',
+                'success' => 'Su cuenta ha sido verificada satisfactoriamente!',
+                'resent' => 'Un nuevo correo de verificación le ha sido enviado.',
+            ],
+
+            'deactivated' => 'Su cuenta ha sido desactivada.',
+            'email_taken' => 'El correo especificado ya está registrado.',
+
+>>>>>>> c7fd73eb (.)
             'password' => [
                 'change_mismatch' => 'La contraseña antigua no coincide.',
             ],

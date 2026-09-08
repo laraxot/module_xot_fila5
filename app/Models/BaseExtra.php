@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models;
 
+<<<<<<< HEAD
 use Override;
 use Modules\Xot\Database\Factories\ExtraFactory;
 use Illuminate\Support\Carbon;
@@ -13,6 +14,14 @@ use Modules\Xot\Contracts\ExtraContract;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ExtraContract;
+use Modules\Xot\Database\Factories\ExtraFactory;
+use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
+>>>>>>> c7fd73eb (.)
 
 /**
  * Model Extra.
@@ -23,6 +32,7 @@ use Webmozart\Assert\Assert;
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  *
  * @method static Builder|BaseModel disableCache()
+<<<<<<< HEAD
  * @method static ExtraFactory factory($count = null, $state = [])
  * @method static Builder|Extra newModelQuery()
  * @method static Builder|Extra newQuery()
@@ -36,6 +46,21 @@ use Webmozart\Assert\Assert;
  * @property string|null                     $created_by
  * @property Carbon|null $deleted_at
  * @property string|null                     $deleted_by
+=======
+ * @method static ExtraFactory      factory($count = null, $state = [])
+ * @method static Builder|Extra     newModelQuery()
+ * @method static Builder|Extra     newQuery()
+ * @method static Builder|Extra     query()
+ * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
+ * @method static Builder|Extra     withExtraAttributes()
+ *
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+>>>>>>> c7fd73eb (.)
  *
  * @method static Builder|Extra whereCreatedAt($value)
  * @method static Builder|Extra whereCreatedBy($value)
@@ -64,19 +89,28 @@ abstract class BaseExtra extends BaseModel implements ExtraContract
         'extra_attributes',
     ];
 
+<<<<<<< HEAD
     public function scopeWithExtraAttributes(): Builder
     {
         Assert::notNull($this->extra_attributes, '[' . __FILE__ . '][' . __LINE__ . ']');
 
         return $this->extra_attributes->modelScope();
     }
+=======
+    // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
+    // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
+>>>>>>> c7fd73eb (.)
 
     /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     protected function casts(): array
     {
         return [

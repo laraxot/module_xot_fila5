@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: Comandi per il singolo modulo
 description: Comandi per il singolo modulo
@@ -14,3 +15,6 @@ nell'esempio della migrazione nell'input degli `Artisan Command`:
 > artisan migrate:module NomeModulo
 
 e dopo cliccare sul tasto `exe`
+=======
+
+>>>>>>> c7fd73eb (.)

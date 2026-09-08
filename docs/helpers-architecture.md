@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architettura Helper Functions - Analisi e Fix
 
 ## 🔍 Problema Identificato
@@ -272,3 +273,12 @@ if (inAdmin()) {
 **Data Analisi**: 2 Dicembre 2025
 **Status**: Analisi completa - Ready per implementation
 **Priority**: CRITICA - Blocca composer autoload
+=======
+---
+module: theme
+topic: helpers-architecture
+canonical: ../../../Themes/docs/shared-components/helpers-architecture-analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/helpers-architecture-analysis.md
+>>>>>>> c7fd73eb (.)

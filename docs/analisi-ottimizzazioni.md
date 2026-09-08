@@ -8,7 +8,11 @@ il modulo **xot** è il CUORE del sistema laraxot - fornisce tutte le basi archi
 
 ### ❌ documentazione fuori controllo
 - **1,582 file .md** totali (inaccettabile per un modulo)
+<<<<<<< HEAD
 - **426 file con underscore** (duplicazioni massive)  
+=======
+- **426 file con underscore** (duplicazioni massive)
+>>>>>>> c7fd73eb (.)
 - **48 git artifacts** (pattern.md~hash) non puliti
 - **stima 70% duplicazione** contenuto
 
@@ -16,7 +20,11 @@ il modulo **xot** è il CUORE del sistema laraxot - fornisce tutte le basi archi
 ```bash
 # esempi duplicazione critica:
 actions-pattern.md / actions_pattern.md
+<<<<<<< HEAD
 architecture-best-practices.md / architecture_best_practices.md  
+=======
+architecture-best-practices.md / architecture_best_practices.md
+>>>>>>> c7fd73eb (.)
 filament-best-practices.md / filament_best_practices.md
 phpstan-fixes.md / phpstan_fixes.md
 
@@ -35,7 +43,11 @@ patterns.md~4241492
 {
   "require": {
     "coolsam/panel-modules": "*",
+<<<<<<< HEAD
     "filament/filament": "*", 
+=======
+    "filament/filament": "*",
+>>>>>>> c7fd73eb (.)
     "livewire/livewire": "^3.0",
     "livewire/volt": "^1.0",
     "spatie/laravel-data": "^4.7",
@@ -59,7 +71,11 @@ patterns.md~4241492
 ```json
 "coolsam/panel-modules": "*"
 ```
+<<<<<<< HEAD
 - dipendenza interna non versionata 
+=======
+- dipendenza interna non versionata
+>>>>>>> c7fd73eb (.)
 - path locale `./packages/coolsam/panel-modules`
 - potenziali problemi deployment
 
@@ -82,17 +98,28 @@ patterns.md~4241492
 
 **impatto business**:
 - tempo ricerca informazioni +300%
+<<<<<<< HEAD
 - confusione sviluppatori massiva  
+=======
+- confusione sviluppatori massiva
+>>>>>>> c7fd73eb (.)
 - manutenzione impossibile
 - spazio disco sprecato (~500mb docs)
 
 **pattern duplicazione**:
 ```bash
 # tipo 1: underscore vs hyphen
+<<<<<<< HEAD
 file-name.md ✅ 
 file_name.md ❌ (eliminare)
 
 # tipo 2: git artifacts  
+=======
+file-name.md ✅
+file_name.md ❌ (eliminare)
+
+# tipo 2: git artifacts
+>>>>>>> c7fd73eb (.)
 patterns.md~hash ❌ (eliminare tutti)
 
 # tipo 3: archivi non strutturati
@@ -117,7 +144,11 @@ archive/ cartelle multiple senza organizzazione
 ```
 docs/
 ├── 1,582 file .md (troppi!)
+<<<<<<< HEAD
 ├── 15+ subdirectory livello 1  
+=======
+├── 15+ subdirectory livello 1
+>>>>>>> c7fd73eb (.)
 ├── 50+ subdirectory totali
 └── contenuto overlapping 70%
 ```
@@ -148,7 +179,11 @@ done
 
 **benefici immediati**:
 - riduzione 426 file (-27%)
+<<<<<<< HEAD
 - eliminazione confusione naming  
+=======
+- eliminazione confusione naming
+>>>>>>> c7fd73eb (.)
 - spazio disco recuperato ~150mb
 
 **1.2 pulizia git artifacts**
@@ -160,7 +195,11 @@ find docs/ -name "*.md~*" -delete
 ```
 
 **1.3 consolidamento archive**
+<<<<<<< HEAD
 ```bash  
+=======
+```bash
+>>>>>>> c7fd73eb (.)
 # consolidare tutte le cartelle archive
 mkdir -p docs/_archive_consolidated/
 find docs/ -path "*/archive/*" -name "*.md" -exec mv {} docs/_archive_consolidated/ \;
@@ -176,7 +215,11 @@ docs/
 ├── quick-start.md              # setup rapido
 ├── architecture/               # architettura sistema
 │   ├── overview.md             # panoramica generale
+<<<<<<< HEAD
 │   ├── base-classes.md         # classi base xot  
+=======
+│   ├── base-classes.md         # classi base xot
+>>>>>>> c7fd73eb (.)
 │   ├── service-providers.md    # providers pattern
 │   └── module-structure.md     # struttura moduli
 ├── development/                # guide sviluppo
@@ -200,10 +243,17 @@ docs/
 ```yaml
 # mapping consolidamento contenuto
 phpstan-content:
+<<<<<<< HEAD
   target: "development/phpstan-guide.md"  
   sources: [
     "phpstan-fixes.md", "phpstan_fixes.md",
     "phpstan-level9-guide.md", "phpstan_level9_guide.md", 
+=======
+  target: "development/phpstan-guide.md"
+  sources: [
+    "phpstan-fixes.md", "phpstan_fixes.md",
+    "phpstan-level9-guide.md", "phpstan_level9_guide.md",
+>>>>>>> c7fd73eb (.)
     "phpstan-common-exceptions.md"
   ]
 
@@ -215,7 +265,11 @@ filament-content:
   ]
 
 architecture-content:
+<<<<<<< HEAD
   target: "architecture/overview.md"  
+=======
+  target: "architecture/overview.md"
+>>>>>>> c7fd73eb (.)
   sources: [
     "architecture-best-practices.md", "architecture_best_practices.md",
     "base-classes.md", "base_classes.md"
@@ -242,7 +296,11 @@ architecture-content:
 **3.2 helpers refactoring**
 ```php
 // invece di file globale, service provider pattern
+<<<<<<< HEAD
 class XotHelpersServiceProvider extends ServiceProvider  
+=======
+class XotHelpersServiceProvider extends ServiceProvider
+>>>>>>> c7fd73eb (.)
 {
     public function register(): void
     {
@@ -263,14 +321,22 @@ class XotHelpersServiceProvider extends ServiceProvider
 
 ### dopo ottimizzazione (proiezioni)
 - **file docs**: ~200 file .md (-87%)
+<<<<<<< HEAD
 - **dimensione**: ~80mb documentazione (-84%)  
+=======
+- **dimensione**: ~80mb documentazione (-84%)
+>>>>>>> c7fd73eb (.)
 - **tempo ricerca info**: 2-5 minuti (-80%)
 - **duplicazione**: 0% contenuto (-100%)
 - **manutenzione effort**: 20% (-80%)
 
 ### roi quantificato
 - **sviluppatori time saved**: 60 ore/mese
+<<<<<<< HEAD
 - **storage saved**: 420mb  
+=======
+- **storage saved**: 420mb
+>>>>>>> c7fd73eb (.)
 - **maintenance cost reduced**: 80%
 - **onboarding speed**: +400%
 
@@ -281,7 +347,11 @@ class XotHelpersServiceProvider extends ServiceProvider
 # 09:00 - backup safety
 cp -r Modules/Xot/docs Modules/Xot/docs_backup_$(date +%Y%m%d)
 
+<<<<<<< HEAD
 # 09:30 - eliminazione duplicati underscore  
+=======
+# 09:30 - eliminazione duplicati underscore
+>>>>>>> c7fd73eb (.)
 ./scripts/remove_underscore_duplicates.sh
 
 # 10:30 - pulizia git artifacts
@@ -307,7 +377,11 @@ php artisan test
 - aggiornamento cross-references
 - testing integrazione
 
+<<<<<<< HEAD
 ### giorno 5 (validation & rollout)  
+=======
+### giorno 5 (validation & rollout)
+>>>>>>> c7fd73eb (.)
 - testing completo funzionalità
 - verifica link interni
 - performance measurement
@@ -322,17 +396,29 @@ find docs/ -name "*_*.md" -type f | while read file; do
   hyphen_version="${file//_/-}"
   if [[ -f "$hyphen_version" ]]; then
     echo "eliminando: $file (esiste: $hyphen_version)"
+<<<<<<< HEAD
     rm "$file"  
+=======
+    rm "$file"
+>>>>>>> c7fd73eb (.)
   fi
 done
 ```
 
 **analyze_content_duplicates.sh**:
+<<<<<<< HEAD
 ```bash  
 #!/bin/bash
 # trova file con contenuto simile (>80% overlap)
 find docs/ -name "*.md" -type f | while read file1; do
   find docs/ -name "*.md" -type f | while read file2; do  
+=======
+```bash
+#!/bin/bash
+# trova file con contenuto simile (>80% overlap)
+find docs/ -name "*.md" -type f | while read file1; do
+  find docs/ -name "*.md" -type f | while read file2; do
+>>>>>>> c7fd73eb (.)
     if [[ "$file1" < "$file2" ]]; then
       similarity=$(diff <(cat "$file1") <(cat "$file2") | wc -l)
       if [[ $similarity -lt 20 ]]; then
@@ -352,7 +438,11 @@ tar -czf xot_docs_backup_$(date +%Y%m%d_%H%M).tar.gz docs/
 ```
 
 ### ⚠️ testing obbligatorio dopo changes
+<<<<<<< HEAD
 ```bash  
+=======
+```bash
+>>>>>>> c7fd73eb (.)
 # dopo ogni modifica documentazione
 composer validate
 php artisan config:clear
@@ -368,12 +458,20 @@ php artisan test --testsuite=Xot
 
 **metriche da tracciare**:
 - numero file docs (target: <250)
+<<<<<<< HEAD
 - tempo medio ricerca informazioni (target: <5min)  
+=======
+- tempo medio ricerca informazioni (target: <5min)
+>>>>>>> c7fd73eb (.)
 - duplicazione percentuale (target: 0%)
 - developer satisfaction score (target: >8/10)
 - build time reduction (target: >20%)
 
+<<<<<<< HEAD
 **red flags da monitorare**:  
+=======
+**red flags da monitorare**:
+>>>>>>> c7fd73eb (.)
 - increase in time to find information
 - developer complaints about missing docs
 - broken internal links
@@ -386,23 +484,40 @@ php artisan test --testsuite=Xot
 - riduzione confusione sviluppatori 90%
 - spazio disco liberato 400mb+
 
+<<<<<<< HEAD
 ### medio termine (mese 1) 
+=======
+### medio termine (mese 1)
+>>>>>>> c7fd73eb (.)
 - onboarding nuovi sviluppatori +200% più veloce
 - manutenzione docs -80% effort
 - team productivity +30%
 
 ### lungo termine (trimestre 1)
 - knowledge base più accessibile
+<<<<<<< HEAD
 - standard documentation per altri moduli  
+=======
+- standard documentation per altri moduli
+>>>>>>> c7fd73eb (.)
 - architectural clarity migliorata
 
 ---
 
 **priorità**: **CRITICA - INTERVENIRE IMMEDIATAMENTE**
 **effort stimato**: 5 giorni developer
+<<<<<<< HEAD
 **roi atteso**: 300% primo trimestre  
 **status**: pronto per emergency deployment
 
 **ultimo aggiornamento**: 20 agosto 2025  
 **analista**: claude code  
 **criticità**: massima - documentazione fuori controllo
+=======
+**roi atteso**: 300% primo trimestre
+**status**: pronto per emergency deployment
+
+**ultimo aggiornamento**: 20 agosto 2025
+**analista**: claude code
+**criticità**: massima - documentazione fuori controllo
+>>>>>>> c7fd73eb (.)

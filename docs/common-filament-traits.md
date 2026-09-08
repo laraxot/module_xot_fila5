@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -1034,3 +1035,12 @@ class MyPage extends XotBaseViewRecord
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+=======
+---
+module: theme
+topic: common-filament-traits
+canonical: ../../../Themes/docs/shared-components/common-filament-trait-conflicts.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/common-filament-trait-conflicts.md
+>>>>>>> c7fd73eb (.)

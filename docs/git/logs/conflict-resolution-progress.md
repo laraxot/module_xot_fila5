@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "Stato Avanzamento Risoluzione Conflitti Git"
+module: "Xot"
+type: concept
+tags: [conflict, resolution, progress]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution progress"
+related:
+  - "./eloquent-magic-properties-rule.md"
+---
+>>>>>>> c7fd73eb (.)
 # Stato Avanzamento Risoluzione Conflitti Git
 
 ## Panoramica
@@ -95,4 +109,8 @@ Ultimo aggiornamento: Gennaio 2025
 
 1. Continuare la risoluzione dei conflitti nel modulo Xot, in particolare nei contratti e interfacce
 2. Procedere con la documentazione aggiornata per ogni file risolto
+<<<<<<< HEAD
 3. Eseguire test per verificare il funzionamento corretto delle modifiche 
+=======
+3. Eseguire test per verificare il funzionamento corretto delle modifiche
+>>>>>>> c7fd73eb (.)

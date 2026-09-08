@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP
 
 **Data Creazione**: [DATE]
@@ -812,3 +813,12 @@ jobs:
 ---
 
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
+=======
+---
+module: theme
+topic: code-quality-tools
+canonical: ../../../Themes/docs/shared-components/code-quality-tools-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-quality-tools-guide.md
+>>>>>>> c7fd73eb (.)

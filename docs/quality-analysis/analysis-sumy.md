@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Riepilogo Analisi Qualità Codice - 2025-01-22
 
 ## 🎯 Obiettivo
@@ -125,3 +126,12 @@ $user->authentications()
 2. **N+1 sono facili da identificare**: Loop con query individuali
 3. **DRY violations**: Duplicazioni interfacce/trait facilmente identificabili
 4. **Architecture score**: Richiede refactoring strutturale (interfacce, final classes)
+=======
+---
+module: theme
+topic: analysis-sumy
+canonical: ../../../../Themes/docs/shared-components/analysis-summary.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/analysis-summary.md
+>>>>>>> c7fd73eb (.)

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< HEAD
 // use Modules\Xot\Services\ArrayService;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
@@ -28,13 +31,23 @@ class PdfByModelAction
         /**
          * @var non-falsy-string&view-string
          */
+<<<<<<< HEAD
         $view_name = $module_low . '::' . Str::kebab($model_name) . '.show.pdf';
+=======
+        $view_name = $module_low.'::'.Str::kebab($model_name).'.show.pdf';
+>>>>>>> c7fd73eb (.)
 
         $view_params = [
             'view' => $view_name,
             'row' => $model,
+<<<<<<< HEAD
             'transKey' => $module_low . '::' . Str::plural($model_name_low) . '.fields',
         ];
+=======
+            'transKey' => $module_low.'::'.Str::plural($model_name_low).'.fields',
+        ];
+
+>>>>>>> c7fd73eb (.)
         $view = view($view_name, $view_params);
 
         $html = $view->render();

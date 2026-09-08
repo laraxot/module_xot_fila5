@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole generali per aggiornamento colonne e gestione errori schema
 
 ## Collegamento bidirezionale
@@ -21,3 +22,12 @@
 
 ## Note
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
+=======
+---
+module: theme
+topic: migration-update
+canonical: ../../../Themes/docs/shared-components/migration-update-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-update-rules.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code Quality Improvement Guide
 
 ## Overview
@@ -270,3 +271,12 @@ Modules/{ModuleName}/docs/
 This guide provides a comprehensive framework for improving and maintaining code quality across the Laraxot PTVX application. By following these guidelines and regularly using the provided tools, we can ensure high-quality, maintainable code that follows best practices and architectural standards.
 
 **Remember**: Code quality is an ongoing process, not a one-time fix. Regular attention and continuous improvement will yield significant benefits in maintainability, reliability, and developer productivity.
+=======
+---
+module: theme
+topic: code-quality-improvement
+canonical: ../../../Themes/docs/shared-components/code-quality-improvement-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-quality-improvement-guide.md
+>>>>>>> c7fd73eb (.)

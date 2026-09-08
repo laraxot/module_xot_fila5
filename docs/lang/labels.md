@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Labels - File di traduzione
 
 Il file `labels.php` contiene tutte le etichette e i testi utilizzati nel modulo Xot.
@@ -83,3 +84,6 @@ return [
 - Utilizzare sempre le chiavi di traduzione invece di stringhe hardcoded
 - Mantenere le traduzioni sincronizzate tra le diverse lingue
 - Aggiungere commenti per spiegare il contesto quando necessario
+=======
+
+>>>>>>> c7fd73eb (.)

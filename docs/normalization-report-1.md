@@ -102,8 +102,13 @@
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
+=======
+- [Processo Normalizzazione](../Xot/docs/docs-normalization-process.md)
+- [Regole Naming File](../Xot/docs/file-naming-rules.md)
+>>>>>>> c7fd73eb (.)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
 
 ---

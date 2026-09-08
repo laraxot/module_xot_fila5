@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GetAllModelsByModuleNameAction
 
 ## Descrizione
@@ -48,3 +49,6 @@ $models = $action->execute('NomeModulo');
 - [Documentazione Spatie QueueableAction](https://github.com/spatie/laravel-queueable-action)
 - [Documentazione Nwidart Modules](https://nwidart.com/laravel-modules/v6/introduction)
 - [PHP Reflection](https://www.php.net/manual/en/book.reflection.php)
+=======
+
+>>>>>>> c7fd73eb (.)

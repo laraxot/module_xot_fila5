@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
 
 /**
+<<<<<<< HEAD
  * Module Factory
+=======
+ * Module Factory.
+>>>>>>> c7fd73eb (.)
  *
  * @extends Factory<Module>
  */
@@ -16,6 +20,7 @@ class ModuleFactory extends Factory
 {
     protected $model = Module::class;
 
+<<<<<<< HEAD
     public function definition(): array
     {
         return [
@@ -25,26 +30,52 @@ class ModuleFactory extends Factory
             'description' => $this->faker->sentence(),
             'is_active' => $this->faker->boolean(80),
             'priority' => $this->faker->numberBetween(1, 100),
+=======
+    /**
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->word(),
+            'slug' => fake()->slug(),
+            'version' => fake()->semver(),
+            'description' => fake()->sentence(),
+            'is_active' => fake()->boolean(80),
+            'priority' => fake()->numberBetween(1, 100),
+>>>>>>> c7fd73eb (.)
         ];
     }
 
     public function active(): static
     {
+<<<<<<< HEAD
         return $this->state(fn(array $_attributes): array => [
+=======
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> c7fd73eb (.)
             'is_active' => true,
         ]);
     }
 
     public function inactive(): static
     {
+<<<<<<< HEAD
         return $this->state(fn(array $_attributes): array => [
+=======
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> c7fd73eb (.)
             'is_active' => false,
         ]);
     }
 
     public function highPriority(): static
     {
+<<<<<<< HEAD
         return $this->state(fn(array $_attributes): array => [
+=======
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> c7fd73eb (.)
             'priority' => $this->faker->numberBetween(80, 100),
         ]);
     }

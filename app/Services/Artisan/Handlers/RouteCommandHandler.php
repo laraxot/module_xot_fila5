@@ -13,7 +13,12 @@ use Webmozart\Assert\Assert;
  */
 class RouteCommandHandler implements CommandHandlerInterface
 {
+<<<<<<< HEAD
     private const ROUTE_COMMANDS = [
+=======
+    /** @var array<string, string> */
+    private const array ROUTE_COMMANDS = [
+>>>>>>> c7fd73eb (.)
         'routelist' => 'listRoutes',
         'routelist1' => 'showRouteList',
         'routecache' => 'cacheRoutes',

@@ -23,6 +23,7 @@
 2. **Struttura dei contenuti**: Utilizzare titoli e sottotitoli organizzati in modo gerarchico:
    ```markdown
    # Titolo principale
+<<<<<<< HEAD
    
    ## Sezione 1
    
@@ -30,6 +31,15 @@
    
    ### Sottosezione 1.2
    
+=======
+
+   ## Sezione 1
+
+   ### Sottosezione 1.1
+
+   ### Sottosezione 1.2
+
+>>>>>>> c7fd73eb (.)
    ## Sezione 2
    ```
 
@@ -43,7 +53,11 @@
 4. **Note e avvertimenti**: Utilizzare un formato standard per note e avvertimenti:
    ```markdown
    > **Nota**: Informazione importante.
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> c7fd73eb (.)
    > **Attenzione**: Avvertimento critico.
    ```
 
@@ -105,4 +119,8 @@ Utilizzare script nella cartella `bashscripts` per automatizzare le verifiche e 
 - [Regole per ServiceProvider](../../IndennitaCondizioniLavoro/docs/service_provider.md)
 - [Regole per file di traduzione](../../../.cursor/rules/translation_files_rules.mdc)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025*
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> c7fd73eb (.)

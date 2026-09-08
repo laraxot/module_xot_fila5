@@ -5,10 +5,19 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Array;
 
 use Filament\Support\RawJs;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match;
 
+=======
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+
+use function Safe\preg_match;
+
+use Spatie\QueueableAction\QueueableAction;
+
+>>>>>>> c7fd73eb (.)
 /**
  * Converte un array PHP in RawJs (oggetto JavaScript) sicuro per attributi HTML.
  *
@@ -23,7 +32,11 @@ class ArrayToRawJsAction
     /**
      * Converte l'array in una stringa JavaScript (oggetto letterale) e restituisce RawJs.
      *
+<<<<<<< HEAD
      * @param  array<string|mixed, mixed>  $array  Array associativo (anche annidato); valori RawJs restano raw
+=======
+     * @param array<int|string, mixed> $array Array associativo (anche annidato); valori RawJs restano raw
+>>>>>>> c7fd73eb (.)
      */
     public function execute(array $array): RawJs
     {
@@ -61,6 +74,10 @@ class ArrayToRawJsAction
             return (string) $value;
         }
 
+<<<<<<< HEAD
         return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], (string) $value)."'";
+=======
+        return "'".str_replace(['\\', "'"], ['\\\\', "\\'"], SafeStringCastAction::cast($value))."'";
+>>>>>>> c7fd73eb (.)
     }
 }

@@ -135,4 +135,7 @@ TextInput::make('name')->required(),
 - [Modules/UI/project_docs/filament/no-label-rule.md](../laravel/modules/ui/project_docs/filament/no-label-rule.md)
 - [docs/translation-expanded-rules.md](translation-expanded-rules.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+>>>>>>> c7fd73eb (.)

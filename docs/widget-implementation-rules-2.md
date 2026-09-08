@@ -71,7 +71,14 @@ class MyTableWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+<<<<<<< HEAD
+namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -93,11 +100,25 @@ class QuestionChartFilterWidget extends XotBaseWidget
             DatePicker::make('dateFrom')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c7fd73eb (.)
 
             DatePicker::make('dateTo')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 
+<<<<<<< HEAD
+=======
+=======
+            
+            DatePicker::make('dateTo')
+                ->live()
+                ->afterStateUpdated(fn () => $this->updateFilters()),
+            
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
             Select::make('answerFilter')
                 ->options([
                     'all' => 'All Answers',
@@ -127,7 +148,14 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+<<<<<<< HEAD
+namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -148,7 +176,15 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->dateTime()
                     ->sortable()
                     ->searchable(),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
                 TextColumn::make('answert')
                     ->limit(50)
                     ->tooltip(function (TextColumn $column): ?string {
@@ -156,7 +192,15 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                         return strlen($state) > 50 ? $state : null;
                     })
                     ->searchable(),
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+                
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
                 TextColumn::make('answer_lang')
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
@@ -176,11 +220,25 @@ class QuestionChartDataWidget extends XotBaseTableWidget
     protected function getTableQuery()
     {
         $record = $this->getRecord();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c7fd73eb (.)
 
         if (!$record) {
             return $record->answers()->whereRaw('1 = 0');
         }
 
+<<<<<<< HEAD
+=======
+=======
+        
+        if (!$record) {
+            return $record->answers()->whereRaw('1 = 0');
+        }
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         return $record->answers()
             ->select(['submitdate', 'answert', 'answer_lang'])
             ->when($record->date_from, function ($query, $dateFrom) {
@@ -204,7 +262,14 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+<<<<<<< HEAD
+namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -223,16 +288,36 @@ class QuestionChartWidget extends XotBaseWidget
     protected function getData(): array
     {
         $record = $this->getRecord();
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         if (!$record) {
             return [
                 'datasets' => [],
                 'labels' => [],
             ];
         }
+<<<<<<< HEAD
 
         $chartData = $this->getChartData($record);
 
+=======
+<<<<<<< HEAD
+
+        $chartData = $this->getChartData($record);
+
+=======
+        
+        $chartData = $this->getChartData($record);
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         return [
             'datasets' => [
                 [
@@ -250,11 +335,25 @@ class QuestionChartWidget extends XotBaseWidget
     protected function getType(): string
     {
         $record = $this->getRecord();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c7fd73eb (.)
 
         if (!$record) {
             return 'bar';
         }
 
+<<<<<<< HEAD
+=======
+=======
+        
+        if (!$record) {
+            return 'bar';
+        }
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         return match ($record->chart_type) {
             'pie' => 'pie',
             'doughnut' => 'doughnut',
@@ -275,17 +374,40 @@ class QuestionChartWidget extends XotBaseWidget
                 $query->where('submitdate', '<=', $dateTo);
             })
             ->get();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c7fd73eb (.)
 
         $grouped = $answers->groupBy('answer_lang');
 
         $labels = [];
         $values = [];
 
+<<<<<<< HEAD
+=======
+=======
+        
+        $grouped = $answers->groupBy('answer_lang');
+        
+        $labels = [];
+        $values = [];
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         foreach ($grouped as $lang => $langAnswers) {
             $labels[] = $lang ?: 'Unknown';
             $values[] = $langAnswers->count();
         }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         return [
             'labels' => $labels,
             'values' => $values,
@@ -304,12 +426,28 @@ class QuestionChartWidget extends XotBaseWidget
             'rgba(199, 199, 199, ' . $alpha . ')',
             'rgba(83, 102, 255, ' . $alpha . ')',
         ];
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         $colors = [];
         for ($i = 0; $i < $count; $i++) {
             $colors[] = $baseColors[$i % count($baseColors)];
         }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
         return $colors;
     }
 }
@@ -365,7 +503,15 @@ class MyWidget extends XotBaseWidget
     {
         return []; // Form vuoto
     }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     public function table(Table $table): Table
     {
         // Tabella in widget di form
@@ -413,6 +559,16 @@ class MyTableWidget extends XotBaseTableWidget
 
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
+<<<<<<< HEAD
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+=======
+- [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
+
+<<<<<<< HEAD
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+=======
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)

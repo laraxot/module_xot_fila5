@@ -54,6 +54,10 @@ Questo documento descrive le regole e le best practices per i prompt di document
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
+=======
+[Documento in Modulo Altro](../../AltroModulo/project_docs/documento.md)
+>>>>>>> c7fd73eb (.)
 [Documento in Modulo Altro](../../altromodulo/project_docs/documento.md)
 [Documento in Root](../../../project_docs/documento.md)
 ```
@@ -62,6 +66,12 @@ Questo documento descrive le regole e le best practices per i prompt di document
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
+=======
+[Documento Correlato](Modules/Xot/project_docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
+[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+>>>>>>> c7fd73eb (.)
 [Documento Correlato](modules/xot/project_docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/project_docs/documento.md)
 [Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
@@ -91,6 +101,10 @@ con collegamenti bidirezionali...
 
 ## Collegamenti
 - [Regole di Documentazione](../documentation_rules.md)
+<<<<<<< HEAD
+=======
+- [Gestione della Documentazione](../DOCUMENTATION_MANAGEMENT.md)
+>>>>>>> c7fd73eb (.)
 - [Gestione della Documentazione](../documentation_management.md)
 - [Best Practices](../best-practices.md)
 
@@ -131,5 +145,9 @@ con collegamenti bidirezionali...
 3. **Documentazione**
    - Mantenere aggiornate le regole
    - Documentare le correzioni
+<<<<<<< HEAD
    - Aggiornare gli esempi
 
+=======
+   - Aggiornare gli esempi
+>>>>>>> c7fd73eb (.)

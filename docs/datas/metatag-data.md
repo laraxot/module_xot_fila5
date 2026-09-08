@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MetatagData
 
 ## Descrizione
@@ -295,3 +296,6 @@ La classe utilizza `Assert` per validare:
 - Formato corretto degli URL
 - Lunghezza appropriata dei testi
 - Valori validi per i tipi di card
+=======
+
+>>>>>>> c7fd73eb (.)

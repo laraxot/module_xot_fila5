@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ~~~ bash
 DEBUGBAR_ENABLED=true
 
@@ -24,3 +25,6 @@ TELESCOPE_ENABLED=false
 PHP_CS_FIXER_IGNORE_ENV=true
 
 ~~~
+=======
+
+>>>>>>> c7fd73eb (.)

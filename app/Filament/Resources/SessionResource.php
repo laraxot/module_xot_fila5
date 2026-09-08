@@ -4,16 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Support\Components\Component;
 use Override;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 use Modules\Xot\Filament\Resources\SessionResource\Pages;
+=======
+use Filament\Forms\Components\KeyValue;
+use Filament\Forms\Components\TextInput;
+use Filament\Support\Components\Component;
+>>>>>>> c7fd73eb (.)
 use Modules\Xot\Models\Session;
 
 class SessionResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static null|string $model = Session::class;
 
     /**
@@ -31,4 +38,10 @@ class SessionResource extends XotBaseResource
             TextInput::make('last_activity')->required()->numeric(),
         ];
     }
+=======
+    protected static ?string $model = Session::class;
+
+    
+
+>>>>>>> c7fd73eb (.)
 }

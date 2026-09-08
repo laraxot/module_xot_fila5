@@ -4,9 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
+<<<<<<< HEAD
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+=======
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+>>>>>>> c7fd73eb (.)
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
@@ -24,7 +31,11 @@ class SecurityMiddleware
     /**
      * Handle an incoming request.
      */
+<<<<<<< HEAD
     public function handle(Request $request, Closure $next): Response
+=======
+    public function handle(Request $request, \Closure $next): Response
+>>>>>>> c7fd73eb (.)
     {
         // 1. Rate Limiting avanzato
         $this->applyAdvancedRateLimiting($request);
@@ -73,7 +84,11 @@ class SecurityMiddleware
         $key = "rate_limit:ip:{$ip}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = (int) cache()->get($key, 0);
+=======
+        $current = SafeIntCastAction::cast(cache()->get($key, 0));
+>>>>>>> c7fd73eb (.)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for IP', [
@@ -97,7 +112,11 @@ class SecurityMiddleware
         $key = 'rate_limit:ua:'.md5($userAgent);
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = (int) cache()->get($key, 0);
+=======
+        $current = SafeIntCastAction::cast(cache()->get($key, 0));
+>>>>>>> c7fd73eb (.)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for User Agent', [
@@ -121,7 +140,11 @@ class SecurityMiddleware
         $key = "rate_limit:endpoint:{$endpoint}";
         $limit = $this->getRateLimitForEndpoint($endpoint);
 
+<<<<<<< HEAD
         $current = (int) cache()->get($key, 0);
+=======
+        $current = SafeIntCastAction::cast(cache()->get($key, 0));
+>>>>>>> c7fd73eb (.)
 
         if ($current >= $limit) {
             Log::warning('Rate limit exceeded for endpoint', [
@@ -387,6 +410,11 @@ class SecurityMiddleware
 
     /**
      * Valida input array.
+<<<<<<< HEAD
+=======
+     *
+     * @param  array<array-key, mixed>  $value
+>>>>>>> c7fd73eb (.)
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -411,6 +439,11 @@ class SecurityMiddleware
 
     /**
      * Ottieni profondità array.
+<<<<<<< HEAD
+=======
+     *
+     * @param  array<array-key, mixed>  $array
+>>>>>>> c7fd73eb (.)
      */
     private function getArrayDepth(array $array): int
     {
@@ -437,7 +470,11 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
+<<<<<<< HEAD
             if (! $token || ! hash_equals(session()->token(), (string) $token)) {
+=======
+            if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
+>>>>>>> c7fd73eb (.)
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

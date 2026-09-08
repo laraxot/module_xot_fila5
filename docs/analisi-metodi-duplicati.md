@@ -2,7 +2,11 @@
 
 ## 🐄✨ Riferimenti Principali
 
+<<<<<<< HEAD
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-master.md)
+=======
+📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
+>>>>>>> c7fd73eb (.)
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
@@ -249,7 +253,15 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),
@@ -326,7 +338,11 @@ Se l'unificazione viene implementata correttamente:
 
 | Data | Versione | Modifiche |
 |------|----------|-----------|
+<<<<<<< HEAD
 | [DATE] | 1.0 | Creazione documento iniziale |
+=======
+| 2025-10-15 | 1.0 | Creazione documento iniziale |
+>>>>>>> c7fd73eb (.)
 
 ---
 

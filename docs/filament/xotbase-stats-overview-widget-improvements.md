@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # XotBaseStatsOverviewWidget - Miglioramenti Implementati
 
 ## Panoramica
@@ -310,3 +311,12 @@ La classe è ora uno strumento potente e flessibile per creare dashboard statist
 **Versione**: 2.0
 **Stato**: ✅ Completato e Testato
 **Miglioramenti**: ✅ 15 nuovi metodi implementati
+=======
+---
+module: theme
+topic: xotbase-stats-overview-widget-improvements
+canonical: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-improvements.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/xotbase-stats-overview-widget-improvements.md
+>>>>>>> c7fd73eb (.)

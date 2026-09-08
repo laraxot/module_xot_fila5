@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Risoluzione Merge Conflicts Massivi - [DATE]
+=======
+# Risoluzione Merge Conflicts Massivi - 2025-11-04
+>>>>>>> c7fd73eb (.)
 
 ## 🔥 Problema Iniziale
 

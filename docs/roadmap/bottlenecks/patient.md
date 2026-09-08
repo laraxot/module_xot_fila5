@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi e Risoluzione Colli di Bottiglia - Modulo Patient
 
 ## 1. Timeline Cartella Clinica (Priorità: Alta)
@@ -229,3 +230,6 @@
 * [patient.md](docs/moduli/patient.md)
 * [patient.md](docs/roadmap/moduli/patient.md)
 * [patient.md](../../../xot/docs/roadmap/bottlenecks/patient.md)
+=======
+
+>>>>>>> c7fd73eb (.)

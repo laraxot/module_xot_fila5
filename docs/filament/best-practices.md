@@ -58,13 +58,25 @@ abstract class XotBaseRelationManager extends RelationManager
 // ✅ CORRETTO - Implementare solo i metodi necessari
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             // Schema del form
         ];
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     public static function getTableColumns(): array
     {
         return [
@@ -139,17 +151,33 @@ class UserResource extends XotBaseResource
 
 ### **2. Schema Form Standardizzato**
 ```php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         Forms\Components\TextInput::make('name')
             ->required()
             ->maxLength(255),
+<<<<<<< HEAD
             
         Forms\Components\EmailInput::make('email')
             ->required()
             ->unique(ignoreRecord: true),
             
+=======
+
+        Forms\Components\EmailInput::make('email')
+            ->required()
+            ->unique(ignoreRecord: true),
+
+>>>>>>> c7fd73eb (.)
         Forms\Components\Select::make('role')
             ->options([
                 'admin' => 'Amministratore',
@@ -168,6 +196,7 @@ public static function getTableColumns(): array
         Tables\Columns\TextColumn::make('name')
             ->searchable()
             ->sortable(),
+<<<<<<< HEAD
             
         Tables\Columns\TextColumn::make('email')
             ->searchable()
@@ -177,6 +206,17 @@ public static function getTableColumns(): array
             ->badge()
             ->color('primary'),
             
+=======
+
+        Tables\Columns\TextColumn::make('email')
+            ->searchable()
+            ->sortable(),
+
+        Tables\Columns\TextColumn::make('role')
+            ->badge()
+            ->color('primary'),
+
+>>>>>>> c7fd73eb (.)
         Tables\Columns\TextColumn::make('created_at')
             ->dateTime()
             ->sortable(),
@@ -212,7 +252,11 @@ public static function getTableBulkActions(): array
 public function boot(): void
 {
     parent::boot();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     // Registrazione risorse Filament
     Filament::registerResources([
         UserResource::class,
@@ -263,10 +307,19 @@ return [
 
 - [Architettura Modulo Xot](../core/architecture.md)
 - [Convenzioni di Naming](../core/naming-conventions.md)
+<<<<<<< HEAD
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
+=======
+- [Best Practices Sistema](../../../../docs/core/best-practices.md)
+>>>>>>> c7fd73eb (.)
 - [Template Filament](../templates/filament.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS
+=======
+**Ultimo aggiornamento:** Gennaio 2025
+**Versione:** 2.0 - Consolidata DRY + KISS
+>>>>>>> c7fd73eb (.)

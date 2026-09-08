@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
@@ -20,10 +21,24 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Debug\ExceptionHandler;
+=======
+use Composer\Autoload\ClassLoader;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Field;
+use Filament\Forms\Components\TimePicker;
+use Filament\Infolists\Components\Entry;
+use Filament\Support\Components\Component;
+use Filament\Support\Facades\FilamentColor;
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\BaseFilter;
+>>>>>>> c7fd73eb (.)
 use Illuminate\Database\Events\MigrationsEnded;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
@@ -36,6 +51,15 @@ use Modules\Xot\Exceptions\Handlers\HandlersRepository;
 use Modules\Xot\View\Composers\XotComposer;
 use Override;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+=======
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\View;
+use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Console\Commands\GenerateFilamentResources;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\View\Composers\XotComposer;
+>>>>>>> c7fd73eb (.)
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
@@ -51,7 +75,11 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public function boot(): void
     {
         parent::boot();
@@ -61,13 +89,24 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
+<<<<<<< HEAD
+=======
+        $this->registerPaFilamentColors();
+>>>>>>> c7fd73eb (.)
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
 
+<<<<<<< HEAD
     #[Override]
     public function register(): void
     {
+=======
+    #[\Override]
+    public function register(): void
+    {
+        $this->registerRuntimePsr4Autoload();
+>>>>>>> c7fd73eb (.)
         parent::register();
         $this->registerConfig();
 
@@ -81,6 +120,26 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->app->register(Filament\ModulesServiceProvider::class);
     }
 
+<<<<<<< HEAD
+=======
+    private function registerRuntimePsr4Autoload(): void
+    {
+        $autoloadPath = base_path('vendor/autoload.php');
+
+        if (! is_file($autoloadPath)) {
+            return;
+        }
+
+        $loader = require $autoloadPath;
+
+        if (! $loader instanceof ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
+    }
+
+>>>>>>> c7fd73eb (.)
     public function registerTimezone(): void
     {
         Assert::string(
@@ -105,6 +164,17 @@ class XotServiceProvider extends XotBaseServiceProvider
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
+     */
+    public function registerPaFilamentColors(): void
+    {
+        FilamentColor::register(app(PaDesignColorsAction::class)->filamentPalette());
+    }
+
+>>>>>>> c7fd73eb (.)
     public function registerFilamentMacros(): void
     {
         // Macro temporarily disabled due to compatibility issues with Filament version
@@ -147,7 +217,11 @@ class XotServiceProvider extends XotBaseServiceProvider
      * }
      */
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public function registerConfig(): void
     {
         // $config_file = realpath(__DIR__.'/../config/metatag.php');
@@ -171,6 +245,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         }
     }
 
+<<<<<<< HEAD
     protected function translatableComponents(): void
     {
         $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
@@ -179,6 +254,31 @@ class XotServiceProvider extends XotBaseServiceProvider
             $component::configureUsing(function (Component $translatable): void {
                 /* @phpstan-ignore method.notFound */
                 $translatable->translateLabel();
+=======
+    /**
+     * Register console commands.
+     */
+    public function registerCommands(): void
+    {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                GenerateFilamentResources::class,
+                // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
+            ]);
+        }
+    }
+
+    protected function translatableComponents(): void
+    {
+        // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
+        // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
+        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
+        foreach ($components as $component) {
+            $component::configureUsing(function (Component $translatable): void {
+                if (method_exists($translatable, 'translateLabel')) {
+                    $translatable->translateLabel();
+                }
+>>>>>>> c7fd73eb (.)
             });
         }
     }
@@ -248,6 +348,7 @@ class XotServiceProvider extends XotBaseServiceProvider
     }
 
     /**
+<<<<<<< HEAD
      * Register console commands.
      */
     public function registerCommands(): void
@@ -273,6 +374,8 @@ class XotServiceProvider extends XotBaseServiceProvider
     }
 
     /**
+=======
+>>>>>>> c7fd73eb (.)
      * Register Xot specific Livewire components.
      */
     private function registerXotLivewireComponents(): void
@@ -284,7 +387,11 @@ class XotServiceProvider extends XotBaseServiceProvider
         //             'modules.xot.filament.widgets.modules-overview-widget',
         //             \Modules\Xot\Filament\Widgets\ModulesOverviewWidget::class
         //         );
+<<<<<<< HEAD
         //         \Log::info('ModulesOverviewWidget registrato correttamente');
+=======
+        //         \Log::debug('ModulesOverviewWidget registrato correttamente');
+>>>>>>> c7fd73eb (.)
         //     } catch (\Exception $e) {
         //         \Log::error('Errore nella registrazione ModulesOverviewWidget: ' . $e->getMessage());
         //     }

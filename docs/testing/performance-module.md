@@ -241,11 +241,19 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 class TestCase extends BaseTestCase
 {
     use RefreshDatabase;
+<<<<<<< HEAD
     
     protected function setUp(): void
     {
         parent::setUp();
         
+=======
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+>>>>>>> c7fd73eb (.)
         // Setup comune per tutti i test
         $this->seed(PerformanceSeeder::class);
     }
@@ -271,18 +279,32 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     
     steps:
       - uses: actions/checkout@v2
       
+=======
+
+    steps:
+      - uses: actions/checkout@v2
+
+>>>>>>> c7fd73eb (.)
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
+<<<<<<< HEAD
           
       - name: Install Dependencies
         run: composer install --prefer-dist --no-progress
         
+=======
+
+      - name: Install Dependencies
+        run: composer install --prefer-dist --no-progress
+
+>>>>>>> c7fd73eb (.)
       - name: Execute tests
         run: vendor/bin/phpunit --testsuite=Performance
 ```
@@ -295,4 +317,8 @@ php artisan test --coverage --min=80
 
 # Generare report HTML dettagliato
 XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-html coverage
+<<<<<<< HEAD
 ``` 
+=======
+```
+>>>>>>> c7fd73eb (.)

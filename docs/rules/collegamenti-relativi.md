@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per i Collegamenti nella Documentazione
 
 ## Utilizzo Esclusivo di Collegamenti Relativi
@@ -73,3 +74,6 @@ Questa regola si integra con il sistema di documentazione centralizzato descritt
 ## Collegamenti tra versioni di collegamenti-relativi.md
 * [collegamenti-relativi.md](docs/regole/collegamenti-relativi.md)
 * [collegamenti-relativi.md](../../../xot/docs/rules/collegamenti-relativi.md)
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Installazione Iniziale il progetto
 
 ## Prerequisiti
@@ -104,3 +105,6 @@ Dopo l'installazione iniziale, procedere con:
 * [installazione-iniziale.md](docs/installazione-iniziale.md)
 * [installazione-iniziale.md](docs/tecnico/installazione-iniziale.md)
 * [installazione-iniziale.md](../../../xot/docs/implementation/installazione-iniziale.md)
+=======
+
+>>>>>>> c7fd73eb (.)

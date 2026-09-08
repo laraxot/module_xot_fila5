@@ -40,4 +40,8 @@
 ## Follow-up
 - [x] Verifica post-risoluzione
 - [x] Aggiornamento documentazione
+<<<<<<< HEAD
 - [x] Notifica team 
+=======
+- [x] Notifica team
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: [DATE]
@@ -135,3 +136,12 @@ try {
 ---
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+=======
+---
+module: theme
+topic: module-path-resolution
+canonical: ../../../Themes/docs/shared-components/module-path-error-resolution.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-path-error-resolution.md
+>>>>>>> c7fd73eb (.)

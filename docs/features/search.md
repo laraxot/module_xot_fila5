@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Search Functionality
 
 ## Basic Search
@@ -26,3 +27,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/Content_Selection_and_Hig
 ### Versione Incoming
 
 ---
+=======
+
+>>>>>>> c7fd73eb (.)

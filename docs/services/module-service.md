@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ModuleService
 
 La classe `ModuleService` fornisce funzionalità per la gestione dei moduli nell'applicazione.
@@ -86,3 +87,6 @@ Recupera tutti i modelli definiti nel modulo specificato.
 - [Documentazione Moduli](../../../docs/modules/index.md)
 - [Gestione Modelli](../../../docs/models/index.md)
 - [Pattern Singleton](../../../docs/patterns/singleton.md)
+=======
+
+>>>>>>> c7fd73eb (.)

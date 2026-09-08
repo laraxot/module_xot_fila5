@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\InformationSchemaTable;
 
 /**
+<<<<<<< HEAD
  * InformationSchemaTable Factory
+=======
+ * InformationSchemaTable Factory.
+>>>>>>> c7fd73eb (.)
  *
  * @extends Factory<InformationSchemaTable>
  */
@@ -16,6 +20,12 @@ class InformationSchemaTableFactory extends Factory
 {
     protected $model = InformationSchemaTable::class;
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> c7fd73eb (.)
     public function definition(): array
     {
         /** @var string $tableName */
@@ -33,7 +43,11 @@ class InformationSchemaTableFactory extends Factory
 
         return [
             'table_catalog' => 'def',
+<<<<<<< HEAD
             'table_schema' => $this->faker->randomElement(['saluteora', 'public', 'main']),
+=======
+            'table_schema' => $this->faker->randomElement(['<nome progetto>', 'public', 'main']),
+>>>>>>> c7fd73eb (.)
             'table_name' => $tableName,
             'table_type' => $this->faker->randomElement(['BASE TABLE', 'VIEW']),
             'engine' => $this->faker->randomElement(['InnoDB', 'MyISAM']),
@@ -58,14 +72,22 @@ class InformationSchemaTableFactory extends Factory
 
     public function baseTable(): static
     {
+<<<<<<< HEAD
         return $this->state(fn(array $_attributes): array => [
+=======
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> c7fd73eb (.)
             'table_type' => 'BASE TABLE',
         ]);
     }
 
     public function view(): static
     {
+<<<<<<< HEAD
         return $this->state(fn(array $_attributes): array => [
+=======
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> c7fd73eb (.)
             'table_type' => 'VIEW',
         ]);
     }

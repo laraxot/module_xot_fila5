@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Strategia Risoluzione Conflitti Git - Modulo Xot
 
 ## Contesto
@@ -257,3 +258,12 @@ I conflitti sono stati causati da:
 ---
 
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
+=======
+---
+module: theme
+topic: gits-resolution-strategy
+canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-strategy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-strategy.md
+>>>>>>> c7fd73eb (.)

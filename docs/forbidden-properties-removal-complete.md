@@ -1,5 +1,9 @@
 # Rimozione Completa Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> c7fd73eb (.)
 **Status**: 🧘 **IN LAVORO**
 
 ---
@@ -228,4 +232,8 @@ return [
 
 **Status**: ✅ **COMPLETATO**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c7fd73eb (.)

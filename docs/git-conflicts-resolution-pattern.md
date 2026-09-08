@@ -90,5 +90,8 @@ After resolving conflicts:
   - `composer.json` - Dependency configurations
   - `Resources/views/*` - Blade templates
   - `tests/*.php` - Test files
+<<<<<<< HEAD
 
 ## Date: February 2026
+=======
+>>>>>>> c7fd73eb (.)

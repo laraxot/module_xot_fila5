@@ -38,10 +38,18 @@ In caso di errore durante l'applicazione dei metatag:
 - L'applicazione continua a funzionare
 
 ## Collegamenti
+<<<<<<< HEAD
+=======
+- [MetatagData](metatagdata.md)
+>>>>>>> c7fd73eb (.)
 - [MetatagData](../datas/metatagdata.md)
 - [Filament Panel Documentation](https://filamentphp.com/docs/panels)
 
 ## Note
 - Questa azione utilizza il trait `QueueableAction` di Spatie
 - Tutti i metodi sono fortemente tipizzati per PHPStan livello 10
+<<<<<<< HEAD
 - La documentazione è mantenuta aggiornata nella cartella docs
+=======
+- La documentazione è mantenuta aggiornata nella cartella docs
+>>>>>>> c7fd73eb (.)

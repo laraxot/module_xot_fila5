@@ -1,5 +1,9 @@
 # Piano Consolidamento File readme.md Duplicati
 
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-09  
+>>>>>>> c7fd73eb (.)
 **Metodologia**: Super Mucca  
 **Regola**: Solo `README.md` (maiuscolo) permesso, `readme.md` (minuscolo) da rimuovere
 
@@ -62,4 +66,8 @@
 
 **Status**: 🧘 **IN PIANIFICAZIONE**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c7fd73eb (.)

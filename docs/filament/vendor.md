@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Ripristinare cartella vendor
 description: Ripristinare cartella vendor
 extends: _layouts.documentation
@@ -15,3 +16,11 @@ php artisan vendor:publish
 digitare il numero 0 e premere invio
 
 NB: La cartella non la sovrascrive perciò bisogna prima spostarla
+=======
+module: theme
+topic: vendor
+canonical: ../../../../Themes/docs/shared-components/vendor.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/vendor.md
+>>>>>>> c7fd73eb (.)

@@ -2,7 +2,13 @@
 
 ## Obiettivo
 
+<<<<<<< HEAD
 Il componente `XotBasePlaceholder` è stato introdotto per aderire rigorosamente al principio architetturale "NON estendere MAI classi Filament direttamente". Questo componente funge da classe base astratta per tutti i placeholder personalizzati all'interno del progetto, garantendo che le estensioni di Filament avvengano tramite la gerarchia `XotBase`.
+=======
+`XotBasePlaceholder` esiste come **bridge legacy** per i casi storici in cui il progetto ha esteso `Filament\Forms\Components\Placeholder` senza passare direttamente da Filament.
+
+Non e un componente da promuovere nei nuovi sviluppi.
+>>>>>>> c7fd73eb (.)
 
 ## Gerarchia di Ereditarietà
 
@@ -17,7 +23,19 @@ Modules\Cms\Filament\Forms\Components\DownloadAttachmentPlaceHolder
 
 ## Implementazione
 
+<<<<<<< HEAD
 Il componente `XotBasePlaceholder` estende direttamente `Filament\Forms\Components\Placeholder`. Al momento, non introduce logica aggiuntiva ma serve come punto di estensione standardizzato e centralizzato.
+=======
+Il componente `XotBasePlaceholder` estende direttamente `Filament\Forms\Components\Placeholder`.
+
+Va letto nel contesto Filament 5.x:
+
+- `Placeholder` e deprecated
+- estende `TextEntry`
+- `content()` e un alias di `state()`
+
+Quindi `XotBasePlaceholder` oggi e principalmente un artefatto di compatibilita.
+>>>>>>> c7fd73eb (.)
 
 ```php
 <?php
@@ -34,6 +52,7 @@ class XotBasePlaceholder extends Placeholder
 }
 ```
 
+<<<<<<< HEAD
 ## Benefici
 
 -   **Aderenza alle Regole Architetturali**: Garantisce che i principi Laraxot di estensione dei componenti Filament siano rispettati.
@@ -43,6 +62,35 @@ class XotBasePlaceholder extends Placeholder
 
 ## Uso
 
+=======
+## Posizione Architetturale Corrente
+
+### Nuovo sviluppo
+
+Non introdurre nuovi usi di `XotBasePlaceholder`.
+
+Usare invece:
+
+- `TextEntry` per dati read-only strutturati
+- `Text` per contenuto statico o editoriale
+
+### Codice legacy
+
+`XotBasePlaceholder` puo restare temporaneamente dove il refactor non e ancora stato eseguito o dove esistono componenti custom storici basati su questa gerarchia.
+
+## Strategia di Migrazione
+
+| Caso storico | Migrazione corretta |
+|---|---|
+| Placeholder che mostra un attributo/valore | `Filament\Infolists\Components\TextEntry` |
+| Placeholder che ospita testo/HTML statico | `Filament\Schemas\Components\Text` |
+| Placeholder custom esteso da modulo | refactor verso componente semanticamente corretto; usare `XotBasePlaceholder` solo come tappa intermedia |
+
+## Uso
+
+Da considerare legacy:
+
+>>>>>>> c7fd73eb (.)
 I placeholder personalizzati, come `DownloadAttachmentPlaceHolder`, devono ora estendere `XotBasePlaceholder`:
 
 ```php
@@ -62,5 +110,11 @@ class DownloadAttachmentPlaceHolder extends XotBasePlaceholder
 
 ## Collegamenti Utili
 
+<<<<<<< HEAD
 -   [Filament Class Extension Rules](../../../docs/filament-class-extension-rules.md)
 -   [DownloadAttachmentPlaceHolder Documentation](../../cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
+=======
+-   [DownloadAttachmentPlaceHolder Documentation](../../Cms/docs/filament/forms/components/download-attachment-placeholder.md) (da creare)
+- [Schemas Unified Religion](../../../../../../docs/schemas-unified-religion.md)
+- [Infolists for Summary](../../widgets/infolists-for-summary.md)
+>>>>>>> c7fd73eb (.)

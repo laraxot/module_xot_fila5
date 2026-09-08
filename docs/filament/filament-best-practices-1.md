@@ -56,7 +56,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 1. **SEMPRE** utilizzare `getFormSchema()` invece di `form()`:
    ```php
    // CORRETTO ✅
+<<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
    {
        return [
            TextInput::make('nome'),
@@ -188,7 +196,14 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [FILAMENT_BEST_PRACTICES.md](../../../job/docs/filament_best_practices.md)
 
 ## Collegamenti tra versioni di filament_best_practices.md
+<<<<<<< HEAD
 * [filament_best_practices.md](../../../../../docs/rules/filament_best_practices.md)
 * [filament_best_practices.md](../filament_best_practices.md)
 * [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+=======
+* [filament_best_practices.md](../../../../../../docs/rules/filament_best_practices.md)
+* [filament_best_practices.md](../filament_best_practices.md)
+* [filament_best_practices.md](../../../user/docs/filament_best_practices.md)
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> c7fd73eb (.)

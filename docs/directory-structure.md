@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto
@@ -103,3 +104,12 @@ Prima di ogni commit, verificare:
 - [Convenzioni Namespace](namespace-rules.md)
 - [Best Practices](best-practices.md)
 - [PHPStan Configuration](phpstan/configuration.md)
+=======
+---
+module: theme
+topic: directory-structure
+canonical: ../../../Themes/docs/shared-components/directory-structure-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/directory-structure-rules.md
+>>>>>>> c7fd73eb (.)

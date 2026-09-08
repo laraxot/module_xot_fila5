@@ -8,7 +8,11 @@ Errori PHPStan livello 9 nei modelli base del modulo Xot:
 
 1. **BaseModel**: PHPDoc `@extends` con errore di parsing
 2. **BaseExtra**: Mancanza di template generics per Factory
+<<<<<<< HEAD
 3. **BaseTreeModel**: Mancanza di template generics per Factory  
+=======
+3. **BaseTreeModel**: Mancanza di template generics per Factory
+>>>>>>> c7fd73eb (.)
 4. **Cache**: PHPDoc `@extends` con errore di parsing e mancanza generics
 5. **Proprietà $fillable**: Mancanza di tipizzazione `list<string>`
 
@@ -29,7 +33,11 @@ Property $fillable type has no value type specified in iterable type array
 ```php
 /**
  * Class BaseModel.
+<<<<<<< HEAD
  * 
+=======
+ *
+>>>>>>> c7fd73eb (.)
  * @extends Model
  * @template TFactory of \Illuminate\Database\Eloquent\Factories\Factory
  */
@@ -98,7 +106,11 @@ class Cache extends BaseModel
 ```php
 protected $fillable = [
     'key',
+<<<<<<< HEAD
     'value', 
+=======
+    'value',
+>>>>>>> c7fd73eb (.)
     'expiration',
 ];
 ```
@@ -109,7 +121,11 @@ protected $fillable = [
 protected $fillable = [
     'key',
     'value',
+<<<<<<< HEAD
     'expiration', 
+=======
+    'expiration',
+>>>>>>> c7fd73eb (.)
 ];
 ```
 

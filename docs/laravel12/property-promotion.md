@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Da Proprietà a Metodi in Laravel 12
 
 ## Evoluzione del Pattern nei Modelli Eloquent
@@ -72,3 +73,6 @@ class User extends Model
 ## Compatibilità
 
 Laravel 12 mantiene la retrocompatibilità con la sintassi precedente, quindi i modelli che utilizzano ancora `protected $property` continueranno a funzionare, ma questa sintassi è considerata deprecata e potrebbe essere rimossa in versioni future.
+=======
+
+>>>>>>> c7fd73eb (.)

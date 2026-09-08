@@ -24,10 +24,17 @@ class PerformanceData extends Data
     public function __construct(
         #[Validation('required|string|max:255')]
         public readonly string $nome,
+<<<<<<< HEAD
         
         #[Validation('required|numeric|min:0|max:100')]
         public readonly float $punteggio,
         
+=======
+
+        #[Validation('required|numeric|min:0|max:100')]
+        public readonly float $punteggio,
+
+>>>>>>> c7fd73eb (.)
         #[Validation('nullable|date')]
         public readonly ?Carbon $data_valutazione = null,
     ) {}
@@ -103,20 +110,36 @@ use Filament\Forms;
 
 class PerformanceResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             Forms\Components\TextInput::make('nome')
                 ->required()
                 ->string()
                 ->maxLength(255),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
             Forms\Components\TextInput::make('punteggio')
                 ->required()
                 ->numeric()
                 ->min(0)
                 ->max(100),
+<<<<<<< HEAD
                 
+=======
+
+>>>>>>> c7fd73eb (.)
             Forms\Components\DatePicker::make('data_valutazione')
                 ->nullable(),
         ];
@@ -168,7 +191,11 @@ class PerformanceData extends Data
         return new self(
             nome: $request->input('nome'),
             punteggio: (float) $request->input('punteggio'),
+<<<<<<< HEAD
             data_valutazione: $request->has('data_valutazione') 
+=======
+            data_valutazione: $request->has('data_valutazione')
+>>>>>>> c7fd73eb (.)
                 ? Carbon::parse($request->input('data_valutazione'))
                 : null,
         );

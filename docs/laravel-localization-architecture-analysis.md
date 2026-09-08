@@ -132,7 +132,11 @@ All locales work correctly:
 5. **Translation Files**: Managed by Laravel's built-in localization
 
 ### Key Benefits
+<<<<<<< HEAD
 - **Simplicity**: Custom middleware is simple and predictable
+=======
+- **Simplicity**: Custom middleware is simple and <nome progetto>able
+>>>>>>> c7fd73eb (.)
 - **Performance**: No complex middleware chain overhead
 - **Maintainability**: Easy to understand and debug
 - **Flexibility**: Works with Folio's file-based routing

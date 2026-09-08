@@ -139,4 +139,8 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Giugno 2025* 
+=======
+*Ultimo aggiornamento: Giugno 2025*
+>>>>>>> c7fd73eb (.)

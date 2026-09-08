@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni dei Namespace
 
 ## Struttura Base dei Namespace
@@ -89,3 +90,6 @@ it('uses correct namespace for view models', function () {
 * [namespaces.md](docs/conventions/namespaces.md)
 * [namespaces.md](../../../xot/docs/conventions/namespaces.md)
 * [namespaces.md](../../../cms/docs/conventions/namespaces.md)
+=======
+
+>>>>>>> c7fd73eb (.)

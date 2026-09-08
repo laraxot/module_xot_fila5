@@ -1,6 +1,10 @@
 # Xot Module - Core Foundation
 
+<<<<<<< HEAD
 **Last Update**: [DATE]
+=======
+**Last Update**: 2025-12-05
+>>>>>>> c7fd73eb (.)
 **Status**: ✅ Production Ready
 **PHPStan Level**: 10
 **Maintainers**: Laraxot Team
@@ -633,7 +637,11 @@ Located in `bashscripts/`:
 
 ### Quality & Tools
 - [Code Quality Tools](./code-quality-tools.md) - PHPStan, Pint, PHPInsights
+<<<<<<< HEAD
 - [Automation Scripts](./bashscripts/readme.md) - Available automation scripts
+=======
+- [Automation Scripts](./bashscripts/README.md) - Available automation scripts
+>>>>>>> c7fd73eb (.)
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
@@ -651,7 +659,11 @@ Located in `bashscripts/`:
 
 ## 🔄 Recent Updates
 
+<<<<<<< HEAD
 ### v3.0.0 - [DATE]
+=======
+### v3.0.0 - 2025-12-05
+>>>>>>> c7fd73eb (.)
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
 - **Added**: PHP 8.3 support
@@ -659,13 +671,21 @@ Located in `bashscripts/`:
 - **Changed**: Improved XotData caching mechanism
 - **Fixed**: Git merge conflict resolution improvements
 
+<<<<<<< HEAD
 ### v2.9.0 - [DATE]
+=======
+### v2.9.0 - 2025-11-18
+>>>>>>> c7fd73eb (.)
 - **Added**: New XotBaseChartWidget
 - **Fixed**: HasXotTable duplicate if statements
 - **Fixed**: Mass syntax errors across modules
 - **Improved**: PHP Insights score (Code: 52.6%, Complexity: 93.1%)
 
+<<<<<<< HEAD
 See [CHANGELOG.md](./changelog.md) for full history.
+=======
+See [CHANGELOG.md](./CHANGELOG.md) for full history.
+>>>>>>> c7fd73eb (.)
 
 ---
 
@@ -682,13 +702,18 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Real-time update support for widgets
 - Advanced caching strategies
 
+<<<<<<< HEAD
 See [ROADMAP.md](./roadmap.md) for details.
+=======
+See [ROADMAP.md](roadmap.md) for details.
+>>>>>>> c7fd73eb (.)
 
 ---
 
 ## 📖 Related Documentation
 
 ### Internal Modules
+<<<<<<< HEAD
 - [User Module](../user/docs/readme.md) - User management and authentication
 - [UI Module](../ui/docs/readme.md) - UI components and design system
 - [Tenant Module](../tenant/docs/readme.md) - Multi-tenancy support
@@ -698,6 +723,17 @@ See [ROADMAP.md](./roadmap.md) for details.
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture and development rules
 - [Project README](../../../readme.md) - Main project documentation
+=======
+- [User Module](../User/docs/README.md) - User management and authentication
+- [UI Module](../UI/docs/README.md) - UI components and design system
+- [Tenant Module](../Tenant/docs/README.md) - Multi-tenancy support
+- [Lang Module](../Lang/docs/README.md) - Translation and localization
+- [Geo Module](../Geo/docs/README.md) - Geographic data services
+
+### Project Documentation
+- [CLAUDE.md](../../../CLAUDE.md) - Project architecture and development rules
+- [Project README](../../../README.md) - Main project documentation
+>>>>>>> c7fd73eb (.)
 
 ### External Resources
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
@@ -718,7 +754,11 @@ Contributions to the Xot module should follow strict guidelines as it's the foun
 3. Update documentation
 4. Follow architectural patterns
 
+<<<<<<< HEAD
 See [CONTRIBUTING.md](./contributing.md) for detailed guidelines.
+=======
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+>>>>>>> c7fd73eb (.)
 
 ---
 
@@ -729,6 +769,10 @@ Part of the Laraxot PTVX ecosystem.
 ---
 
 **Module**: Xot (Core Foundation)
+<<<<<<< HEAD
+=======
+**Version**: 3.0.0
+>>>>>>> c7fd73eb (.)
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 85%+ ✅

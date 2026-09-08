@@ -1,7 +1,11 @@
 # Aggiornamento File di Traduzione xot_base.php
 
 ## Data Aggiornamento
+<<<<<<< HEAD
 [DATE]
+=======
+2025-01-27
+>>>>>>> c7fd73eb (.)
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`

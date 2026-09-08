@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+<<<<<<< HEAD
 use ZipArchive;
 use Illuminate\Support\Facades\File;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -17,6 +20,7 @@ class DownloadZipByPathsDiskAction
     /**
      * Crea un file ZIP dai percorsi forniti e lo restituisce come download.
      *
+<<<<<<< HEAD
      * @param array<string> $attachments Array di percorsi file
      * @param string $disk Nome del disco di storage
      * @return BinaryFileResponse|null Risposta di download o null se fallisce
@@ -29,18 +33,40 @@ class DownloadZipByPathsDiskAction
         // Crea un file temporaneo per lo ZIP usando Storage
         $zip = new ZipArchive();
         $tempFilePath = storage_path('app/' . $zipPath);
+=======
+     * @param  array<int, string>  $attachments  Array di percorsi file
+     * @param  string  $disk  Nome del disco di storage
+     * @return BinaryFileResponse|null Risposta di download o null se fallisce
+     */
+    public function execute(array $attachments, string $disk): ?BinaryFileResponse
+    {
+        $zipFileName = 'temp_zip_'.uniqid().'.zip';
+        $zipPath = 'temp/'.$zipFileName;
+
+        // Crea un file temporaneo per lo ZIP usando Storage
+        $zip = new \ZipArchive;
+        $tempFilePath = storage_path('app/'.$zipPath);
+>>>>>>> c7fd73eb (.)
 
         // Assicurati che la directory temp esista
         Storage::disk('local')->makeDirectory('temp');
 
+<<<<<<< HEAD
         if ($zip->open($tempFilePath, ZipArchive::CREATE) === true) {
+=======
+        if ($zip->open($tempFilePath, \ZipArchive::CREATE) === true) {
+>>>>>>> c7fd73eb (.)
             foreach ($attachments as $attachment) {
                 $filePath = $attachment;
 
                 if (Storage::disk($disk)->exists($filePath)) {
                     $fileContent = Storage::disk($disk)->get($filePath);
                     if ($fileContent !== null) {
+<<<<<<< HEAD
                         $zip->addFromString($attachment . '.pdf', $fileContent);
+=======
+                        $zip->addFromString($attachment.'.pdf', $fileContent);
+>>>>>>> c7fd73eb (.)
                     }
                 } else {
                     dddx(['filePath' => $filePath]);
@@ -48,12 +74,20 @@ class DownloadZipByPathsDiskAction
             }
             $zip->close();
 
+<<<<<<< HEAD
             $downloadFileName = 'attachments_' . uniqid() . '.zip';
+=======
+            $downloadFileName = 'attachments_'.uniqid().'.zip';
+>>>>>>> c7fd73eb (.)
 
             // Usa response()->download() per il download
             return response()->download($tempFilePath, $downloadFileName, [
                 'Content-Type' => 'application/zip',
+<<<<<<< HEAD
             ]); //->deleteFileAfterSend(true);
+=======
+            ]); // ->deleteFileAfterSend(true);
+>>>>>>> c7fd73eb (.)
         }
 
         return null;

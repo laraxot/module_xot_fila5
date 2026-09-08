@@ -70,14 +70,23 @@ abstract class XotBaseModel extends Model
 Each module has its own BaseModel that extends XotBaseModel:
 
 ```php
+<<<<<<< HEAD
 // Example from Quaeris module
+=======
+// Example from healthcare_app module
+// Example from ExternalProject module
+>>>>>>> c7fd73eb (.)
 abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 {
     use Cachable;
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
     protected $connection = 'quaeris'; // Module-specific connection
+=======
+    protected $connection = 'healthcare_app'; // Module-specific connection
+>>>>>>> c7fd73eb (.)
 
     protected $with = [
         'extra', // Always load extra fields
@@ -105,7 +114,12 @@ class SurveyPdf extends XotBaseModel // Never do this!
 
 ✅ **CORRECT:**
 ```php
+<<<<<<< HEAD
 // In Quaeris module
+=======
+// In healthcare_app module
+// In ExternalProject module
+>>>>>>> c7fd73eb (.)
 class SurveyPdf extends BaseModel // Extends module's BaseModel
 ```
 
@@ -193,7 +207,11 @@ class SurveyPdf extends BaseModel
 
 ### KISS (Keep It Simple, Stupid)
 - Clear inheritance chain
+<<<<<<< HEAD
 - Predictable patterns
+=======
+- <nome progetto>able patterns
+>>>>>>> c7fd73eb (.)
 - Minimal configuration needed
 
 ## Type Safety and Contracts
@@ -244,4 +262,8 @@ The BaseModel pattern embodies the Laraxot philosophy of:
 - **Type Safety**: Contract-based development
 - **DRY Compliance**: No duplicated base functionality
 
+<<<<<<< HEAD
 This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+=======
+This pattern ensures that every model in the system follows the same foundational principles while allowing for module-specific customizations where needed.
+>>>>>>> c7fd73eb (.)

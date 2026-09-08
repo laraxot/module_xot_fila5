@@ -714,4 +714,9 @@ Modules/Xot/
         └── chart-generation-png.md
 ```
 
+<<<<<<< HEAD
 *
+=======
+*Last updated: December 2025*
+*
+>>>>>>> c7fd73eb (.)

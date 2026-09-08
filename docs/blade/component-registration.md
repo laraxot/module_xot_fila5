@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Registrazione Automatica dei Componenti Blade
 
 ## Architettura di XotBaseServiceProvider
@@ -105,3 +106,6 @@ return view('user::components.profile-card');
 - [XotBaseServiceProvider](../providers/xotbaseserviceprovider.md)
 - [RegisterBladeComponentsAction](../../app/Actions/Blade/RegisterBladeComponentsAction.php)
 - [Laravel Blade Components](https://laravel.com/docs/blade#components)
+=======
+
+>>>>>>> c7fd73eb (.)

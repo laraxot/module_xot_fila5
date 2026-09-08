@@ -52,7 +52,12 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
+<<<<<<< HEAD
 ├── _quaeris_fila4_mono.code-workspace
+=======
+├── _healthcare_app_fila5_mono.code-workspace
+├── _app_fila5_mono.code-workspace
+>>>>>>> c7fd73eb (.)
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js
@@ -293,7 +298,11 @@ Themes implement accessibility features while maintaining module functionality:
 
 ### KISS (Keep It Simple, Stupid)
 - Simple theme switching
+<<<<<<< HEAD
 - Predictable view resolution
+=======
+- <nome progetto>able view resolution
+>>>>>>> c7fd73eb (.)
 - Clear separation of concerns
 - Minimal configuration needed
 
@@ -341,4 +350,8 @@ The "Vestito" philosophy embodies several core values:
 - Implement asset caching
 - Minimize theme-specific logic
 
+<<<<<<< HEAD
 This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
+=======
+This architecture ensures that themes can be changed, updated, or replaced without affecting the core business logic, while maintaining a consistent and professional user experience across the application.
+>>>>>>> c7fd73eb (.)

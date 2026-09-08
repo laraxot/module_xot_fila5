@@ -8,10 +8,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
+<<<<<<< HEAD
 use Filament\Resources\Resource;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use ReflectionClass;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+>>>>>>> c7fd73eb (.)
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
@@ -47,7 +53,11 @@ class GenerateFormByFileAction
         // Verifichiamo che la classe esista e sia una risorsa Filament
         Assert::classExists($class_name);
 
+<<<<<<< HEAD
         /** @var resource $resourceInstance */
+=======
+        /** @var object $resourceInstance */
+>>>>>>> c7fd73eb (.)
         $resourceInstance = app($class_name);
 
         // Verifichiamo che il metodo getModel esista
@@ -71,7 +81,11 @@ class GenerateFormByFileAction
 
         $fillable = $modelInstance->getFillable();
 
+<<<<<<< HEAD
         $reflection_class = new ReflectionClass($class_name);
+=======
+        $reflection_class = new \ReflectionClass($class_name);
+>>>>>>> c7fd73eb (.)
 
         // Verifichiamo che il metodo form esista
         if (! $reflection_class->hasMethod('form')) {
@@ -86,11 +100,20 @@ class GenerateFormByFileAction
         Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
         // $contents= $file->getContents();
         $source = file($file_name);
+<<<<<<< HEAD
         $body = implode('', \array_slice($source, $start_line, $length));
+=======
+        Assert::isArray($source);
+        $body = '';
+        foreach (\array_slice($source, $start_line, $length) as $line) {
+            $body .= SafeStringCastAction::cast($line);
+        }
+>>>>>>> c7fd73eb (.)
 
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);
 
+<<<<<<< HEAD
         dd([
             'class_name' => $class_name,
             'model_name' => $modelClass,
@@ -101,6 +124,17 @@ class GenerateFormByFileAction
             'form_method_methods' => get_class_methods($form_method),
             'body' => $body,
         ]);
+=======
+        // Contiamo gli input aggiunti
+        $inputCount = 0;
+        foreach ($fillable as $field) {
+            if (in_array($field, $resourceMethods)) {
+                $inputCount++;
+            }
+        }
+
+        return $inputCount;
+>>>>>>> c7fd73eb (.)
     }
 
     /**
@@ -110,6 +144,11 @@ class GenerateFormByFileAction
      */
     public function ddFile(File $file): void
     {
+<<<<<<< HEAD
+=======
+        // Debug information - commented out for production
+        /*
+>>>>>>> c7fd73eb (.)
         dd([
             'getRelativePath' => $file->getRelativePath(), // =  ""
             'getRelativePathname' => $file->getRelativePathname(), //  AssenzeResource.php
@@ -126,5 +165,9 @@ class GenerateFormByFileAction
             // 'getPathInfo' => $file->getPathInfo(),
             'methods' => get_class_methods($file),
         ]);
+<<<<<<< HEAD
+=======
+        */
+>>>>>>> c7fd73eb (.)
     }
 }

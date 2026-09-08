@@ -13,4 +13,51 @@ return [
     'created_at' => 'created_at',
     'updated_at' => 'updated_at',
     'deleted_at' => 'deleted_at',
+<<<<<<< HEAD
+=======
+    'label' => 'Xls By Model Class Action',
+    'plural_label' => 'Xls By Model Class Action (Plurale)',
+    'navigation' => [
+        'name' => 'Xls By Model Class Action',
+        'plural' => 'Xls By Model Class Action',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Xls By Model Class Action',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Xls By Model Class Action',
+        ],
+        'edit' => [
+            'label' => 'Modifica Xls By Model Class Action',
+        ],
+        'delete' => [
+            'label' => 'Elimina Xls By Model Class Action',
+        ],
+    ],
+>>>>>>> c7fd73eb (.)
 ];

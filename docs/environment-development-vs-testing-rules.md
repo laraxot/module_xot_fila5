@@ -3,6 +3,7 @@
 ## Panoramica
 In Laraxot è fondamentale comprendere la differenza tra le configurazioni di ambiente di sviluppo e di test, specialmente riguardo all'uso dei database.
 
+<<<<<<< HEAD
 ## REGOLA FONDAMENTALE: .env.testing è COPIA CARBONE del .env
 
 ### Principio
@@ -78,6 +79,8 @@ Le connessioni per i moduli (notify, geo, media, etc.) vengono create **automati
 - **Manutenibilità**: Cambiamenti al .env si riflettono automaticamente nei test
 - **TenantServiceProvider**: Gestisce automaticamente le connessioni modulo
 
+=======
+>>>>>>> c7fd73eb (.)
 ## Configurazione per Sviluppo (.env.development)
 
 ### Database
@@ -128,6 +131,7 @@ Questa differenziazione rispetta i principi fondamentali:
 - **DRY**: Configurazioni separate per scopi diversi
 - **KISS**: Semplicità per sviluppo, completezza per test
 - **Robustezza**: Isolamento adeguato nei test
+<<<<<<< HEAD
 - **Multi-tenancy**: Supporto completo per architettura multi-database
 
 ## REGOLA CRITICA: TestCase setUp()
@@ -213,3 +217,6 @@ Il `setUp()` deve essere usato SOLO per:
 - Configurare il modulo principale (xra.main_module)
 - Eseguire migrate:fresh e module:migrate (una sola volta)
 - Non MAI per configurare connessioni database!
+=======
+- **Multi-tenancy**: Supporto completo per architettura multi-database
+>>>>>>> c7fd73eb (.)

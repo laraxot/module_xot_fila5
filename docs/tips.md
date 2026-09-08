@@ -1,9 +1,30 @@
+<<<<<<< HEAD
 # __tips
 
 <!-- Contenuto migrato da _docs/__tips.txt -->
 
 https://github.com/phpstan/phpstan/issues/1242
 
+=======
+<<<<<<< HEAD
+=======
+---
+title: 'Tips'
+module: Xot
+type: reference
+slug: tips
+description: 'https://github.com/phpstan/phpstan/issues/1242'
+tags: [migrato-da-txt, xot]
+converted_from: __tips.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+>>>>>>> laraxot/dev
+https://github.com/phpstan/phpstan/issues/1242
+
+
+>>>>>>> c7fd73eb (.)
 protected function callAction(array $match)
 {
     list($controller, $method) = $this->breakControllerAndAction(
@@ -29,5 +50,13 @@ protected function callAction(array $match)
     }
 
     throw new \Exception("Method not found: {$controllerClass}@{$method}");
+<<<<<<< HEAD
 }
 
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)

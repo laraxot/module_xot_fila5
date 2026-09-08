@@ -1,5 +1,9 @@
 # PHP Insights Analysis Report - Xot Module
 
+<<<<<<< HEAD
+=======
+**Date:** 2025-11-12
+>>>>>>> c7fd73eb (.)
 **Module:** Xot (Core Module)
 **Tools:** phpmd 2.x, phpinsights 2.x, phpstan level 10
 
@@ -87,7 +91,11 @@ protected $fillable;
 // ✅ Target
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
+<<<<<<< HEAD
 protected array $fillable;
+=======
+protected $fillable;
+>>>>>>> c7fd73eb (.)
 ```
 
 ### 🟢 Medium Priority
@@ -201,4 +209,9 @@ protected array $fillable;
 ---
 
 **Next Review:** After Phase 1 completion
+<<<<<<< HEAD
 **
+=======
+**Last Updated:** 2025-11-12 08:15 UTC
+**
+>>>>>>> c7fd73eb (.)

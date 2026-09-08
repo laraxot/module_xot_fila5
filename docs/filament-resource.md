@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per le Risorse Filament in
 
 ## Panoramica
@@ -197,3 +198,12 @@ class DoctorResource extends XotBaseResource
 - [Filament Form Builder](/docs/filament-form-builder.md)
 - [Gestione delle Traduzioni](/docs/translation-management.md)
 - [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
+=======
+---
+module: theme
+topic: filament-resource
+canonical: ../../../Themes/docs/shared-components/filament-resource-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-rules.md
+>>>>>>> c7fd73eb (.)

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c7fd73eb (.)
 # Best Practices per la Risoluzione dei Conflitti
 
 ## Principi Generali
@@ -74,7 +78,11 @@ namespace Modules\ModuleName\App\Models;
 
 ## Collegamenti Correlati
 
+<<<<<<< HEAD
 - [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
+=======
+- [Convenzioni Namespace](../namespace-conventions.md)
+>>>>>>> c7fd73eb (.)
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)
 - [Risoluzione Conflitti Merge](../risoluzione_conflitti_merge.md)
@@ -106,4 +114,8 @@ namespace Modules\ModuleName\App\Models;
 3. **Testing**
    - Verificare le modifiche con PHPStan
    - Testare la compatibilità
+<<<<<<< HEAD
    - Validare le funzionalità 
+=======
+   - Validare le funzionalità
+>>>>>>> c7fd73eb (.)

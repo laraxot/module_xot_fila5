@@ -1,6 +1,10 @@
 # Autonomous Priority Rule
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-18
+>>>>>>> c7fd73eb (.)
 **Context**: "Super Mucca" Mode
 
 ## The Rule

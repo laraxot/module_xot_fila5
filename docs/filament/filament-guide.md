@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guida a Filament
 
 ## Risorse Utili
@@ -17,3 +18,12 @@
 - [Filament Widgets](https://filamentphp.com/docs/3.x/widgets/installation)
 - [Filament Actions](https://filamentphp.com/docs/3.x/actions/installation)
 - [Filament Resources](https://filamentphp.com/docs/3.x/resources/installation) 
+=======
+---
+module: theme
+topic: filament-guide
+canonical: ../../../../Themes/docs/shared-components/filament-guide.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-guide.md
+>>>>>>> c7fd73eb (.)

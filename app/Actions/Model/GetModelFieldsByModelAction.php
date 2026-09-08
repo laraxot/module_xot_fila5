@@ -16,7 +16,11 @@ class GetModelFieldsByModelAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * Execute the action.
+=======
+     * @return list<string>
+>>>>>>> c7fd73eb (.)
      */
     public function execute(Model $model): array
     {

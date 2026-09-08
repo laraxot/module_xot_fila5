@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GetFieldnamesByTablenameAction
 
 ## Descrizione
@@ -66,3 +67,6 @@ Per testare l'action:
 ```php
 php artisan test Modules/Xot/Tests/Actions/Query/GetFieldnamesByTablenameActionTest.php
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

@@ -5,8 +5,15 @@ declare(strict_types=1);
 namespace Modules\Xot\Http\Livewire;
 
 // use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Contracts\Support\Renderable;
+=======
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\Support\Renderable;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+>>>>>>> c7fd73eb (.)
 use Illuminate\Support\Str;
 use Livewire\Component;
 
@@ -29,18 +36,30 @@ abstract class XotBaseComponent extends Component
         $comp_name = str_replace('\\', '.', $comp_name);
         $comp_name = Str::snake($comp_name);
 
+<<<<<<< HEAD
         $view = $module_name_low . '::livewire.' . $comp_name;
         $view = str_replace('._', '.', $view);
         // fare distinzione fra inAdmin o no ?
         if (!view()->exists($view)) {
             throw new Exception('View not Exists[' . $view . ']');
+=======
+        $view = $module_name_low.'::livewire.'.$comp_name;
+        $view = str_replace('._', '.', $view);
+        // fare distinzione fra inAdmin o no ?
+        if (! view()->exists($view)) {
+            throw new \Exception('View not Exists['.$view.']');
+>>>>>>> c7fd73eb (.)
         }
 
         return $view;
     }
 
     /**
+<<<<<<< HEAD
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+=======
+     * @return Application|Factory|View
+>>>>>>> c7fd73eb (.)
      */
     /**
      * Render the component.

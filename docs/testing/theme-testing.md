@@ -11,7 +11,11 @@ class ThemeTest extends TestCase
     public function test_theme_colors_are_semantically_correct(): void
     {
         $metatag = MetatagData::make();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $this->assertEquals(
             $metatag->getThemeColors(),
             $this->getExpectedColors()
@@ -29,7 +33,11 @@ class ThemeConsistencyTest extends TestCase
     public function test_theme_elements_are_consistent(): void
     {
         $metatag = MetatagData::make();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $this->assertNotEmpty($metatag->getThemeColors());
         $this->assertNotEmpty($metatag->getThemeSettings());
         $this->assertValidColors($metatag->getThemeColors());
@@ -47,7 +55,11 @@ class ThemeValidationTest extends TestCase
     {
         $metatag = MetatagData::make();
         $validator = new ColorValidator();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         $this->assertTrue(
             $validator->validateColors($metatag->getThemeColors())
         );
@@ -82,9 +94,15 @@ class ThemeConfigurationTest extends TestCase
     {
         $metatag = MetatagData::make();
         $configurator = new ThemeConfigurator();
+<<<<<<< HEAD
         
         $configurator->configureTheme($metatag);
         
+=======
+
+        $configurator->configureTheme($metatag);
+
+>>>>>>> c7fd73eb (.)
         $this->assertEquals(
             $metatag->getThemeColors(),
             $configurator->getAppliedColors()
@@ -100,12 +118,20 @@ class ColorTest extends TestCase
     public function test_colors_are_valid(): void
     {
         $metatag = MetatagData::make();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> c7fd73eb (.)
         foreach ($metatag->getThemeColors() as $color) {
             $this->assertColorIsValid($color);
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     private function assertColorIsValid(string $color): void
     {
         $this->assertMatchesRegularExpression(
@@ -124,16 +150,28 @@ class DarkModeTest extends TestCase
     {
         $metatag = MetatagData::make();
         $manager = new DarkModeManager();
+<<<<<<< HEAD
         
         $darkColors = $manager->getDarkModeColors(
             $metatag->getThemeColors()
         );
         
+=======
+
+        $darkColors = $manager->getDarkModeColors(
+            $metatag->getThemeColors()
+        );
+
+>>>>>>> c7fd73eb (.)
         foreach ($darkColors as $color) {
             $this->assertColorIsDarkMode($color);
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> c7fd73eb (.)
     private function assertColorIsDarkMode(string $color): void
     {
         $this->assertLessThan(
@@ -171,4 +209,8 @@ class DarkModeTest extends TestCase
 - [Brand Philosophy](../philosophy/brand_philosophy.md)
 - [Semantic Methods](../philosophy/semantic_methods.md)
 - [Best Practices](../best-practices.md)
+<<<<<<< HEAD
 - [Testing Guide](../testing.md) 
+=======
+- [Testing Guide](../testing.md)
+>>>>>>> c7fd73eb (.)

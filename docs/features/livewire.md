@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Livewire Integration
 
 ## Basic Components
@@ -15,3 +16,6 @@ ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/sortable_livewire.txt}
 ```txt
 ${cat /mnt/f/var/www/quaeris/laravel/Modules/Xot/_docs/theme_livewire.txt}
 ```
+=======
+
+>>>>>>> c7fd73eb (.)

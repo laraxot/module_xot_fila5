@@ -5,7 +5,12 @@
 ### Estensione delle Classi Base
 - **SEMPRE** estendere `XotBaseResource` invece di `Resource` direttamente
 - **SEMPRE** estendere `XotBaseServiceProvider` invece di `ServiceProvider` direttamente
+<<<<<<< HEAD
 - **SEMPRE** estendere `XotBaseWidget` per i widget
+=======
+- **SEMPRE** estendere una base Xot per i widget: `XotBaseWidget` per widget generici, `XotBaseWizardWidget` per wizard multi-step
+- **SEMPRE** estendere `XotBaseCreateRecord` invece di `Filament\Resources\Pages\CreateRecord` per le pagine create delle resource (pipeline hook/transazioni/eventi: vedi [create-record-page.md](./pages/create-record-page.md))
+>>>>>>> c7fd73eb (.)
 - **MAI** estendere direttamente le classi Filament
 
 ### 🚨 REGOLA CRITICA: NO METODO TABLE()
@@ -34,7 +39,15 @@ use Filament\Forms\Components\DatePicker;
 
 class ExampleResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
     {
         return [
             TextInput::make('nome')->required(),
@@ -116,7 +129,15 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> c7fd73eb (.)
 {
     return [
         // Schema del form
@@ -472,4 +493,8 @@ class ExampleResource extends XotBaseResource
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< HEAD
 *Categoria: Filament*
+=======
+*Categoria: Filament*
+>>>>>>> c7fd73eb (.)

@@ -1,5 +1,9 @@
 # Piano Correzione Warning PHPMD - XotBaseRelationManager
 
+<<<<<<< HEAD
+=======
+**Data**: 2025-12-23
+>>>>>>> c7fd73eb (.)
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`
 
 ## 🔍 Warning Identificati

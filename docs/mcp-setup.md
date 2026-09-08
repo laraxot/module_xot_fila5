@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Model Context Protocol (MCP) Setup Guide
 
 ## Overview
@@ -247,3 +248,12 @@ MCP configuration can be adjusted per environment:
 - [MCP Protocol Specification](https://github.com/modelcontextprotocol)
 - [Laraxot Development Guidelines](laravel-boost-guidelines.md)
 - [Module Development Best Practices](module-development-best-practices.md)
+=======
+---
+module: theme
+topic: mcp-setup
+canonical: ../../../Themes/docs/shared-components/mcp-setup-guide.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp-setup-guide.md
+>>>>>>> c7fd73eb (.)

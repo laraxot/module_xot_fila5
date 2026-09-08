@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Forms\Components;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Placeholder;
 
 /**
@@ -15,6 +16,18 @@ use Filament\Forms\Components\Placeholder;
  * @method static static make(string $name)
  */
 class XotBasePlaceholder extends Placeholder
+=======
+use Filament\Infolists\Components\TextEntry;
+
+/**
+ * Base class for read-only form display components.
+ *
+ * Filament v5: {@see Placeholder} è deprecato — usiamo {@see TextEntry} con `state()`.
+ *
+ * @method static static make(string $name)
+ */
+class XotBasePlaceholder extends TextEntry
+>>>>>>> c7fd73eb (.)
 {
     // Logica comune futura per i placeholder Xot
 }

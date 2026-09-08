@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rimozione Completa Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
 **Status**: 🧘 **IN LAVORO**
@@ -229,3 +230,12 @@ return [
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: [DATE]
+=======
+---
+module: theme
+topic: forbidden-properties-removal
+canonical: ../../../Themes/docs/shared-components/forbidden-properties-removal-complete.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/forbidden-properties-removal-complete.md
+>>>>>>> c7fd73eb (.)

@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use function Safe\json_encode;
+>>>>>>> c7fd73eb (.)
 ?>
 @extends('xot::layouts.email')
 

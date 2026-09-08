@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Mail;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> c7fd73eb (.)
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -34,6 +38,7 @@ class SendMailByRecordAction
         // in modo che possa ricevere le dipendenze necessarie
         // @var Mailable $mail
         // $mail = app($mailClass, ['record' => $record]);
+<<<<<<< HEAD
         //Mail::send($mail);
         //dddx(Mail::to($record)->send(new $mailClass($record)));
         //$res=Mail::to('marco.sottana@gmail.com')->send($mail);
@@ -71,5 +76,65 @@ class SendMailByRecordAction
                 'act' => 'sendMail',
                 'handle' => authId(),
             ]);
+=======
+        // Mail::send($mail);
+        // dddx(Mail::to($record)->send(new $mailClass($record)));
+        // $res=Mail::to('marco.sottana@gmail.com')->send($mail);
+
+        // Verifica che il model abbia le proprietà/metodi necessari
+        if (($record->email ?? null) === null || empty($record->email)) {
+            throw new \InvalidArgumentException('Model must have email property');
+        }
+
+        if (! method_exists($record, 'option')) {
+            throw new \InvalidArgumentException('Model must implement option method');
+        }
+
+        if (! method_exists($record, 'myLogs')) {
+            throw new \InvalidArgumentException('Model ['.$record::class.'] must implement myLogs method');
+        }
+
+        $to = $record->email;
+        // $to = 'marco.sottana@gmail.com'; //4 debug non cancellare
+        $subject = $record->option('mail_oggetto');
+        $bodyHtml = $record->option('mail_testo');
+
+        if (! is_string($to)) {
+            throw new \InvalidArgumentException('Email must be a string');
+        }
+        if (! is_string($subject)) {
+            $subject = '';
+        }
+        if (! is_string($bodyHtml)) {
+            $bodyHtml = '';
+        }
+
+        $pdfPath = app(PdfByModelAction::class)->execute(
+            model: $record,
+            out: 'path',
+        );
+        if (! is_string($pdfPath)) {
+            throw new \InvalidArgumentException('PDF attachment path must be a string');
+        }
+
+        $emailData = new EmailData(
+            recipient: $to,
+            subject: $subject,
+            body_html: $bodyHtml,
+            attachments: [$pdfPath],
+        );
+        SmtpData::make()->send($emailData);
+
+        // myLogs è sempre disponibile su BaseModel
+        $logs = $record->myLogs();
+        if (! is_object($logs) || ! method_exists($logs, 'create')) {
+            throw new \InvalidArgumentException('Model ['.$record::class.'] myLogs relation is invalid');
+        }
+
+        $logs->create([
+            'act' => 'sendMail',
+            'handle' => authId(),
+        ]);
+>>>>>>> c7fd73eb (.)
     }
 }

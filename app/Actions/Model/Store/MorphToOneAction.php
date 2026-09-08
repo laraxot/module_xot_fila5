@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Store;
 
+<<<<<<< HEAD
 use Fidum\EloquentMorphToOne\MorphToOne;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\App;
+use Modules\Xot\Actions\Model\CreateMorphToOneRelatedModelAction;
+use Modules\Xot\Datas\RelationData as RelationDTO;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> c7fd73eb (.)
 
 class MorphToOneAction
 {
@@ -17,6 +25,7 @@ class MorphToOneAction
 
     public function execute(Model $_model, RelationDTO $relationDTO): void
     {
+<<<<<<< HEAD
         //if ($relationDTO === null) {
         //    return;
         //}
@@ -31,6 +40,21 @@ class MorphToOneAction
         $rows->create($relationDTO->data);
 
         //}
+=======
+        // if ($relationDTO === null) {
+        //    return;
+        // }
+
+        $rows = $relationDTO->rows;
+
+        if (! isset($relationDTO->data['lang'])) {
+            $relationDTO->data['lang'] = App::getLocale();
+        }
+
+        app(CreateMorphToOneRelatedModelAction::class)->execute($rows, $relationDTO->data);
+
+        // }
+>>>>>>> c7fd73eb (.)
         // } else {
         //    $rows->sync($relation->data);
         // }

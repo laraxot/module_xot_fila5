@@ -8,13 +8,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions;
 
+<<<<<<< HEAD
 use JsonSerializable;
 use Override;
+=======
+>>>>>>> c7fd73eb (.)
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 readonly class ApplicationError implements JsonSerializable, Arrayable, Jsonable
 {
     public function __construct(
@@ -22,6 +26,20 @@ readonly class ApplicationError implements JsonSerializable, Arrayable, Jsonable
         private  string $error = '',
     ) {}
 
+=======
+/**
+ * @implements Arrayable<string, string>
+ */
+readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonable
+{
+    public function __construct(
+        private string $help = '',
+        private string $error = '',
+    ) {
+    }
+
+    /** @return array<string, string> */
+>>>>>>> c7fd73eb (.)
     public function toArray(): array
     {
         return [
@@ -30,7 +48,12 @@ readonly class ApplicationError implements JsonSerializable, Arrayable, Jsonable
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    /** @return array<string, string> */
+    #[\Override]
+>>>>>>> c7fd73eb (.)
     public function jsonSerialize(): array
     {
         return $this->toArray();
@@ -38,9 +61,13 @@ readonly class ApplicationError implements JsonSerializable, Arrayable, Jsonable
 
     public function toJson($options = 0): string
     {
+<<<<<<< HEAD
         $jsonEncoded = json_encode($this->jsonSerialize(), $options);
         // throw_unless($jsonEncoded, JsonEncodeException::class);
 
         return $jsonEncoded;
+=======
+        return json_encode($this->jsonSerialize(), $options);
+>>>>>>> c7fd73eb (.)
     }
 }

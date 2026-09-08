@@ -8,7 +8,11 @@
 
 ### Why This Architecture Matters
 
+<<<<<<< HEAD
 1. **Predictable Schema Evolution**: Clear, linear progression of database changes
+=======
+1. **<nome progetto>able Schema Evolution**: Clear, linear progression of database changes
+>>>>>>> c7fd73eb (.)
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions
@@ -180,4 +184,8 @@ Each module should:
 
 ---
 
+<<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+=======
+**Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+>>>>>>> c7fd73eb (.)

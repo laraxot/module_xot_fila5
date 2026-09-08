@@ -7,7 +7,11 @@ Questa documentazione elenca i conflitti comuni che possono verificarsi quando s
 **Modulo**: Xot
 **Versione Filament**: 4.x
 **Versione Laravel**: 12.x
+<<<<<<< HEAD
 **Data Creazione**: [DATE]
+=======
+**Data Creazione**: 2025-09-29
+>>>>>>> c7fd73eb (.)
 
 ## 🎯 Obiettivo
 
@@ -508,6 +512,10 @@ class MyPage extends XotBaseViewRecord
 
 **Autore**: Claude Code
 **Versione**: 1.0
+<<<<<<< HEAD
+=======
+**Ultimo Aggiornamento**: 2025-09-29
+>>>>>>> c7fd73eb (.)
 
 ## 📎 Riferimenti
 

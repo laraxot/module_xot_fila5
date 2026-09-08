@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Laraxot Translation Philosophy
 
 ## Overview
@@ -155,3 +156,12 @@ When creating a new module:
 
 **Maintained by**: Xot Module (Core Laraxot Engine)
 
+=======
+---
+module: theme
+topic: translation
+canonical: ../../../Themes/docs/shared-components/translation-philosophy.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-philosophy.md
+>>>>>>> c7fd73eb (.)

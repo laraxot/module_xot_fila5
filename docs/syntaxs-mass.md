@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mass Fix Errori Sintassi PHP
 
 > **Versione**: 1.0
@@ -269,3 +270,12 @@ done < /tmp/broken_files.txt
 **Status**: ✅ COMPLETATO
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
 **Cronologia**: Vedi [CHANGELOG.md](./changelog.md)
+=======
+---
+module: theme
+topic: syntaxs-mass
+canonical: ../../../Themes/docs/shared-components/syntax-errors-mass-fix.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/syntax-errors-mass-fix.md
+>>>>>>> c7fd73eb (.)

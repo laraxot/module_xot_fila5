@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: Algolia DocSearch
 description: Configure Algolia DocSearch with the Jigsaw docs starter template
 extends: _layouts.documentation
@@ -81,3 +82,11 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione Incoming
 
 ---
+=======
+module: theme
+topic: algoliaocsearch
+canonical: ../../../Themes/docs/shared-components/algolia-docsearch.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch.md
+>>>>>>> c7fd73eb (.)

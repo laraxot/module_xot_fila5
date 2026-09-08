@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✅ REFACTORING XotBasePanelProvider COMPLETATO
 
 ## OBIETTIVI RAGGIUNTI
@@ -138,3 +139,12 @@ protected function shouldDiscoverClusters(): bool
 *Data: [DATE]*
 *Principi applicati: DRY, KISS, SOLID, ROBUST*
 *Risultato: Codice pulito, manutenibile e robusto*
+=======
+---
+module: theme
+topic: refactoring-xotbaanelprovider-completato
+canonical: ../../../Themes/docs/shared-components/refactoring-xotbaanelprovider-completato-conflict.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/refactoring-xotbaanelprovider-completato-conflict.md
+>>>>>>> c7fd73eb (.)

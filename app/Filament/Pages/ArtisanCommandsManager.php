@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Pages;
 
+<<<<<<< HEAD
 use Exception;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
+=======
+use Filament\Actions\Action;
+use Filament\Notifications\Notification;
+>>>>>>> c7fd73eb (.)
 use Filament\Support\Enums\IconPosition;
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
@@ -17,6 +22,10 @@ use Modules\Xot\Actions\ExecuteArtisanCommandAction;
  */
 class ArtisanCommandsManager extends XotBasePage
 {
+<<<<<<< HEAD
+=======
+    /** @var list<string> */
+>>>>>>> c7fd73eb (.)
     public array $output = [];
 
     public string $currentCommand = '';
@@ -29,6 +38,10 @@ class ArtisanCommandsManager extends XotBasePage
      * Livewire event listeners for this component.
      *
      * @var array<string, string>
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> c7fd73eb (.)
      * @phpstan-var array<string, string>
      */
     protected $listeners = [
@@ -40,6 +53,7 @@ class ArtisanCommandsManager extends XotBasePage
         'artisan-command.error' => 'handleCommandError',
     ];
 
+<<<<<<< HEAD
     protected function getHeaderActions(): array
     {
         return [
@@ -110,6 +124,8 @@ class ArtisanCommandsManager extends XotBasePage
         ];
     }
 
+=======
+>>>>>>> c7fd73eb (.)
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -118,9 +134,15 @@ class ArtisanCommandsManager extends XotBasePage
 
         try {
             app(ExecuteArtisanCommandAction::class)->execute($command);
+<<<<<<< HEAD
         } catch (Exception $e) {
             Notification::make()
                 ->title(__('xot::artisan-commands-manager.notifications.error'))
+=======
+        } catch (\Exception $e) {
+            Notification::make()
+                ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+>>>>>>> c7fd73eb (.)
                 ->body($e->getMessage())
                 ->danger()
                 ->send();
@@ -149,7 +171,11 @@ class ArtisanCommandsManager extends XotBasePage
         $this->isRunning = false;
 
         Notification::make()
+<<<<<<< HEAD
             ->title(__('xot::artisan-commands-manager.notifications.success'))
+=======
+            ->title((string) __('xot::artisan-commands-manager.notifications.success'))
+>>>>>>> c7fd73eb (.)
             ->success()
             ->send();
     }
@@ -162,7 +188,11 @@ class ArtisanCommandsManager extends XotBasePage
         $this->output[] = "[ERROR] {$error}";
 
         Notification::make()
+<<<<<<< HEAD
             ->title(__('xot::artisan-commands-manager.notifications.error'))
+=======
+            ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+>>>>>>> c7fd73eb (.)
             ->body($error)
             ->danger()
             ->send();
@@ -176,9 +206,86 @@ class ArtisanCommandsManager extends XotBasePage
         $this->output[] = "[ERROR] {$error}";
 
         Notification::make()
+<<<<<<< HEAD
             ->title(__('xot::artisan-commands-manager.notifications.error'))
+=======
+            ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+>>>>>>> c7fd73eb (.)
             ->body($error)
             ->danger()
             ->send();
     }
+<<<<<<< HEAD
+=======
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Action::make('migrate')
+                ->label((string) __('xot::artisan-commands-manager.commands.migrate.label'))
+                ->icon('heroicon-o-circle-stack')
+                ->color('primary')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('migrate')),
+            Action::make('filament_upgrade')
+                ->label((string) __('xot::artisan-commands-manager.commands.filament_upgrade.label'))
+                ->icon('heroicon-o-arrow-path')
+                ->color('warning')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('filament:upgrade')),
+            Action::make('filament_optimize')
+                ->label((string) __('xot::artisan-commands-manager.commands.filament_optimize.label'))
+                ->icon('heroicon-o-sparkles')
+                ->color('success')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('filament:optimize')),
+            Action::make('view_cache')
+                ->label((string) __('xot::artisan-commands-manager.commands.view_cache.label'))
+                ->icon('heroicon-o-eye')
+                ->color('gray')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('view:cache')),
+            Action::make('config_cache')
+                ->label((string) __('xot::artisan-commands-manager.commands.config_cache.label'))
+                ->icon('heroicon-o-cog-6-tooth')
+                ->color('gray')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('config:cache')),
+            Action::make('route_cache')
+                ->label((string) __('xot::artisan-commands-manager.commands.route_cache.label'))
+                ->icon('heroicon-o-map')
+                ->color('gray')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('route:cache')),
+            Action::make('event_cache')
+                ->label((string) __('xot::artisan-commands-manager.commands.event_cache.label'))
+                ->icon('heroicon-o-bell')
+                ->color('gray')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('event:cache')),
+            Action::make('queue_restart')
+                ->label((string) __('xot::artisan-commands-manager.commands.queue_restart.label'))
+                ->icon('heroicon-o-arrow-path')
+                ->color('gray')
+                ->size('lg')
+                ->iconPosition(IconPosition::Before)
+                ->disabled(fn () => $this->isRunning)
+                ->action(fn () => $this->executeCommand('queue:restart')),
+        ];
+    }
+>>>>>>> c7fd73eb (.)
 }

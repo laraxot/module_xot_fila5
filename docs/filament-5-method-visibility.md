@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Filament 5 Method Visibility Rules
 
 **Created:** January 2026
@@ -412,3 +413,12 @@ public function mount(): void
 
 **
 **Maintainer:** Laraxot Team + Claude Opus 4.5
+=======
+---
+module: theme
+topic: filament-5-method-visibility
+canonical: ../../../Themes/docs/shared-components/filament-5-method-visibility-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/filament-5-method-visibility-rules.md
+>>>>>>> c7fd73eb (.)
