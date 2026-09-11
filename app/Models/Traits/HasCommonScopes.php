@@ -35,7 +35,11 @@ trait HasCommonScopes
     /**
      * Scope query to only active records.
      *
+<<<<<<< HEAD
      * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
+=======
+     * Trovato identico in piu' moduli che condividono questo scope.
+>>>>>>> laraxot/dev
      *
      * @param  Builder<static>  $query
      * @return Builder<static>

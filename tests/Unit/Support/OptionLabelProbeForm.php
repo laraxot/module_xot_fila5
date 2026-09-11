@@ -12,8 +12,19 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
  */
 class OptionLabelProbeForm extends XotBaseResourceForm
 {
+<<<<<<< HEAD
     public static function labelFor(Model $record, string $titleAttribute = 'name'): string
     {
+=======
+    public function getFormSchema(): array
+    {
+        return [];
+    }
+
+    public static function labelFor(Model $record, string $titleAttribute = 'name'): string
+    {
+        /** @var \Closure(Model $record): string $callback */
+>>>>>>> laraxot/dev
         $callback = static::optionLabelFromRecord($titleAttribute);
 
         return $callback($record);

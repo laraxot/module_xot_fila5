@@ -15,8 +15,13 @@ use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
 use Modules\Xot\Console\Commands\ExecuteSqlFileCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Console\Commands\SearchTextInDbCommand;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Route\IsAdminRouteAction;
 use Modules\Xot\Helpers\ResourceFormSchemaGenerator;
+=======
+use Modules\Xot\Helpers\ResourceFormSchemaGenerator;
+use Modules\Xot\Services\RouteService;
+>>>>>>> laraxot/dev
 use Modules\Xot\States\Transitions\XotBaseTransition;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -78,7 +83,11 @@ describe('Xot artisan commands helpers coverage', function (): void {
             ExecuteSqlFileCommand::class,
             GenerateFilamentResources::class,
             SearchTextInDbCommand::class,
+<<<<<<< HEAD
             IsAdminRouteAction::class,
+=======
+            RouteService::class,
+>>>>>>> laraxot/dev
             ResourceFormSchemaGenerator::class,
             XotBaseTransition::class,
         ] as $class) {

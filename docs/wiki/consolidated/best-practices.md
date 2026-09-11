@@ -1,4 +1,29 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+title: "Best Practices"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 title: "Best Practices per Laraxot"
 module: "Xot"
 type: concept
@@ -9,6 +34,10 @@ qmd: "best practices"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -76,4 +105,19 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< HEAD
 ``` 
+=======
+<<<<<<< HEAD
+```
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+```
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+``` 
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

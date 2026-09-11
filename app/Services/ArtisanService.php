@@ -46,10 +46,18 @@ class ArtisanService
                 if ($module_name !== '') {
                     echo '<h3>Module '.$module_name.'</h3>';
 
+<<<<<<< HEAD
                     return self::exe('module:migrate '.$module_name.' --force');
                 }
 
                 return self::exe('migrate --force');
+=======
+                    // Dati sacri: mai --force (solo migrate additivo)
+                    return self::exe('module:migrate', ['module' => $module_name]);
+                }
+
+                return self::exe('migrate');
+>>>>>>> laraxot/dev
 
             case 'routelist':
                 return self::exe('route:list');

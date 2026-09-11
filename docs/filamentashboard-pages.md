@@ -66,7 +66,10 @@ I seguenti moduli hanno `AdminPanelProvider` ma **mancano** del file `Dashboard.
 declare(strict_types=1);
 
 namespace Modules\{ModuleName}\Filament\Pages;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 use Filament\Pages\Page;
 

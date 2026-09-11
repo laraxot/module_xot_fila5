@@ -329,7 +329,10 @@ abstract class XotBasePage extends Page implements HasForms
     {
         return [
             Action::make('save')
+<<<<<<< HEAD
                 ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
+=======
+>>>>>>> laraxot/dev
                 ->submit('save'),
         ];
     }

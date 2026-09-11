@@ -93,7 +93,10 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-xot-db');
 
@@ -535,10 +538,14 @@ describe('Xot execute coverage floor 50', function (): void {
             Assert::assertNotEmpty($resource::getModuleName());
             Assert::assertNotEmpty($resource::getPages());
             Assert::assertNotEmpty($resource::getRelations());
+<<<<<<< HEAD
             try {
                 Assert::assertNotEmpty($resource::getFormSchema());
             } catch (\Throwable) {
             }
+=======
+            
+>>>>>>> laraxot/dev
             try {
                 Assert::assertNotEmpty($resource::getInfolistSchema());
             } catch (\Throwable) {

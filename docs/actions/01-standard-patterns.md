@@ -113,7 +113,11 @@ declare(strict_types=1);
 namespace Modules\User\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 class CreateUserAction
 {

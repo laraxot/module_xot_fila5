@@ -14,7 +14,11 @@ class HasManyUpdateData extends Data
      */
     public function __construct(
         public string $foreignKey,
+<<<<<<< HEAD
         public int|string $parentKey,
+=======
+        public mixed $parentKey,
+>>>>>>> laraxot/dev
         #[ArrayType]
         public array $ids = [],
     ) {}

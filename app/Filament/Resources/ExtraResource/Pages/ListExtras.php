@@ -20,6 +20,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
+<<<<<<< HEAD
 
     #[\Override]
     public function getTableColumns(): array
@@ -32,6 +33,9 @@ class ListExtras extends XotBaseListRecords
         ];
     }
 
+=======
+   
+>>>>>>> laraxot/dev
     /**
      * @return array<BaseFilter>
      */

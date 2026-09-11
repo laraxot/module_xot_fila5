@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\XotBaseResource\RelationManager;
 
+<<<<<<< HEAD
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Support\Components\Component;
 use Filament\Tables;
@@ -11,11 +12,26 @@ use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
+=======
+use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
+use Filament\Support\Components\Component;
+use Filament\Tables;
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
+use Modules\Xot\Filament\Traits\HasXotTable;
+use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
 
 /**
  * @property class-string<XotBaseResource> $resource
  */
+<<<<<<< HEAD
 abstract class XotBaseRelationManager extends RelationManager
+=======
+abstract class XotBaseRelationManager extends FilamentRelationManager
+>>>>>>> laraxot/dev
 {
     use HasRelationshipModelClass;
     use HasXotTable {
@@ -55,7 +71,15 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     final public function getFormSchema(): array
     {
+<<<<<<< HEAD
         return $this->getResource()::getFormSchema();
+=======
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        return $instance->getFormSchema();
+>>>>>>> laraxot/dev
     }
 
     /**

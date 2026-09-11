@@ -9,6 +9,7 @@ return [
     'navigation' => [
         'name' => 'log',
         'plural' => 'logs',
+<<<<<<< HEAD
         'group' => ['name' => 'Admin'],
     ],
     'fields' => [
@@ -19,6 +20,58 @@ return [
         'first_name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'last_name' => ['label' => 'Cognome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'select_all' => ['name' => 'Seleziona Tutti', 'message' => '', 'label' => '', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+=======
+        'group' => [
+            'name' => 'Admin',
+        ],
+    ],
+    'fields' => [
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+            'placeholder' => 'name',
+        ],
+        'guard_name' => [
+            'label' => 'Guard',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'permissions' => [
+            'label' => 'Permessi',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Aggiornato il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'first_name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
+            'label' => '',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> laraxot/dev
         'id' => ['label' => 'id'],
         'message' => ['label' => 'message'],
         'level' => ['label' => 'level'],
@@ -31,11 +84,24 @@ return [
     ],
     'actions' => [
         'import' => [
+<<<<<<< HEAD
             'fields' => ['import_file' => 'Seleziona un file XLS o CSV da caricare'],
         ],
         'export' => [
             'filename_prefix' => 'Aree al',
             'columns' => ['name' => 'Nome area', 'parent_name' => 'Nome area livello superiore'],
+=======
+            'fields' => [
+                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+            ],
+        ],
+        'export' => [
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+            ],
+>>>>>>> laraxot/dev
         ],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],

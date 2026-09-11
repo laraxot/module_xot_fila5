@@ -95,7 +95,10 @@ test('example test', function () {
 <?php
 
 namespace Modules\User\Tests\Feature;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;

@@ -12,7 +12,11 @@ class CacheInfolist extends XotBaseResourceInfolist
     /**
      * @return array<string, TextEntry>
      */
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'key' => TextEntry::make('key'),

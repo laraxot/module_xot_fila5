@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\LogResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
@@ -40,4 +41,12 @@ class ViewLog extends XotBaseViewRecord
             ]),
         ];
     }
+=======
+use Modules\Xot\Filament\Resources\LogResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+class ViewLog extends XotBaseViewRecord
+{
+    protected static string $resource = LogResource::class;
+>>>>>>> laraxot/dev
 }

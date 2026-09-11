@@ -87,7 +87,15 @@ protected function generateFormSchema(string $file, string $content, string $cla
 ```php
 declare(strict_types=1);
 
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         'field_name' => [
@@ -376,7 +384,11 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Contracts\ProfileContract;
 
 // ERRATO ❌
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 ```
 
 ### 3. Accesso agli Utenti

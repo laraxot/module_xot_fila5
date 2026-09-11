@@ -163,7 +163,10 @@ La rimozione delle annotazioni generiche risolve il problema perché:
 ### Modulo User
 ```php
 namespace Modules\User\Models;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 class User extends BaseModel
 {

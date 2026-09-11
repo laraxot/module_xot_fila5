@@ -145,7 +145,11 @@ return [
 
 ```php
 // ✅ CORRECT
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         'name' => TextInput::make('name'),
@@ -154,7 +158,11 @@ public static function getFormSchema(): array
 }
 
 // ❌ WRONG
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->label('Nome'),

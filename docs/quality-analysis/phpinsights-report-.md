@@ -89,7 +89,17 @@ protected $fillable;
 public function passes(string $_attribute, mixed $value): bool { }
 /** @var array<int, string> */
 protected $fillable;
+<<<<<<< HEAD
 protected array $fillable;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+protected array $fillable;
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### 🟢 Medium Priority
@@ -203,4 +213,16 @@ protected array $fillable;
 ---
 
 **Next Review:** After Phase 1 completion
+<<<<<<< HEAD
 **Last Updated:** 2025-11-12 08:15 UTC
+=======
+<<<<<<< HEAD
+**Last Updated:** 2025-11-12 08:15 UTC
+=======
+<<<<<<< HEAD
+**Last Updated:** 2025-11-12 08:15 UTC
+=======
+**Last Updated:** 2025-11-12 08:15 UTC
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

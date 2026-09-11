@@ -84,6 +84,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 }
 
                 $lazyCursor = $lazy->cursor();
+<<<<<<< HEAD
                 /**
                  * LazyCollection elements are typed as mixed because cursor() returns rows
                  * that depend on the query result type (Models, arrays, scalars, etc.).
@@ -91,6 +92,9 @@ class ExportXlsLazyAction extends XotBaseAction
                  *
                  * @var LazyCollection<int, mixed> $exportCollection
                  */
+=======
+                /** @var LazyCollection<int, mixed> $exportCollection */
+>>>>>>> laraxot/dev
                 $exportCollection = $lazyCursor->map(static fn (mixed $row): mixed => $row);
 
                 if ($lazyCursor->count() > 3000) {

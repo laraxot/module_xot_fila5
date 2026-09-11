@@ -625,7 +625,11 @@ Utilizzare sempre import completi e qualificati per evitare ambiguità:
 ```php
 // CORRETTO
 use Modules\Rating\Models\Rating;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 // EVITARE
 use Modules\Rating\Models\Rating as RatingModel;

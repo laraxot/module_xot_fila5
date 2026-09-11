@@ -5,7 +5,15 @@ type: reference
 slug: lazy
 description: 'Elenco di 6 riferimenti esterni raccolti per lazy, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
+<<<<<<< HEAD
 converted_from: _lazy.txt
+=======
+<<<<<<< HEAD
+converted_from: lazy.txt
+=======
+converted_from: _lazy.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -1,4 +1,27 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+title: "Documentation Guidelines"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 title: "Linee Guida per la Documentazione in Laraxot"
 module: "Xot"
 type: how-to
@@ -8,6 +31,10 @@ updated: 2026-07-14
 qmd: "documentation guidelines"
 related:
   - "./eloquent-magic-properties-rule.md"
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 # Linee Guida per la Documentazione in Laraxot
@@ -152,7 +179,22 @@ Esempio:
 Modules\ModuloNome\Models\NomeModello
 ```
 
+<<<<<<< HEAD
 **Tabella:** `nome_tabella`  
+=======
+<<<<<<< HEAD
+**Tabella:** `nome_tabella`
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+**Tabella:** `nome_tabella`
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+**Tabella:** `nome_tabella`  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Chiave primaria:** `id_nome`
 
 **Attributi principali:**
@@ -259,7 +301,22 @@ Rappresenta un socio dell'associazione.
 Modules\Brain\Models\Socio
 ```
 
+<<<<<<< HEAD
 **Tabella:** `socio`  
+=======
+<<<<<<< HEAD
+**Tabella:** `socio`
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+**Tabella:** `socio`
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+**Tabella:** `socio`  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Chiave primaria:** `id_socio`
 
 **Relazioni:**

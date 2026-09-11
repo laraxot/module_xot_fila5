@@ -26,12 +26,18 @@ class HasManyAction
     {
         Assert::isInstanceOf($relation = $relationDTO->rows, HasMany::class);
 
+<<<<<<< HEAD
         $parentKeyValue = $model->getAttribute($relation->getLocalKeyName());
         Assert::true(is_int($parentKeyValue) || is_string($parentKeyValue), 'Parent key must be int or string');
 
         $updateData = new HasManyUpdateData(
             foreignKey: $relation->getForeignKeyName(),
             parentKey: $parentKeyValue,
+=======
+        $updateData = new HasManyUpdateData(
+            foreignKey: $relation->getForeignKeyName(),
+            parentKey: $model->getAttribute($relation->getLocalKeyName()),
+>>>>>>> laraxot/dev
         );
 
         match (true) {
