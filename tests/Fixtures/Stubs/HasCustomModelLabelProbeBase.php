@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Traits\Filament\HasCustomModelLabel;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 abstract class HasCustomModelLabelProbeBase
 {

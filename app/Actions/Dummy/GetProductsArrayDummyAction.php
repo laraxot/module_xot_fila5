@@ -27,8 +27,14 @@ class GetProductsArrayDummyAction
         // API
         $response = Http::get('https://dummyjson.com/products');
 
+<<<<<<< HEAD
         /* @var Response $response */
         Assert::isArray($products = $response->json());
+=======
+        Assert::isInstanceOf($response, Response::class);
+        $products = $response->json();
+        Assert::isArray($products);
+>>>>>>> laraxot/dev
         Assert::isArray($products['products']);
 
         // filtering some attributes

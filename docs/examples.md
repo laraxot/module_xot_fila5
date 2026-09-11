@@ -14,7 +14,10 @@ Questo documento contiene esempi pratici e casi d'uso per sviluppare moduli che 
 declare(strict_types=1);
 
 namespace Modules\Example\app\Models;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 use Modules\Xot\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -239,7 +242,15 @@ class ExampleResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -514,7 +525,15 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 {
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

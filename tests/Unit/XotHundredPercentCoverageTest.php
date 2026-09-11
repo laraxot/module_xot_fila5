@@ -96,7 +96,10 @@ namespace PhpCsFixer\Runner\Parallel {
     }
 }
 namespace PhpCsFixer {
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
     final class Config {
         public function setParallelConfig(mixed $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }

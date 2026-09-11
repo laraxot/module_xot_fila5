@@ -213,14 +213,30 @@ class YourResource extends XotBaseResource
     // Model auto-resolved as Modules\YourModule\Models\YourResource
     // Pages auto-discovered following pattern
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             // Form components - NO hardcoded labels
         ];
     }
 
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+<<<<<<< HEAD
+    public function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             // Infolist components

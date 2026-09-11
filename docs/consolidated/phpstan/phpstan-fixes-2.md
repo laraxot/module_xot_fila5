@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan - Modulo Xot"
 module: "Xot"
@@ -9,6 +14,10 @@ qmd: "phpstan fixes 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.
@@ -96,11 +105,25 @@ public function trans(mixed $item): string
     if (!\is_string($item)) {
         $item = (string) $item;
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+    if (empty($item) || null === $this->transKey) {
+        return $item;
+    }
+
+=======
+>>>>>>> laraxot/dev
     
     if (empty($item) || null === $this->transKey) {
         return $item;
     }
     
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     // ... resto della logica
 }
 ```

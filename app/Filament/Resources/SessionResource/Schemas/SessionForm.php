@@ -14,7 +14,11 @@ class SessionForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('id')->required()->maxLength(255),

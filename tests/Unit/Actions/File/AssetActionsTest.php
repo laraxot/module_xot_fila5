@@ -12,7 +12,10 @@ use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

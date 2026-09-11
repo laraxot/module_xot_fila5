@@ -36,7 +36,11 @@ class XotBaseMorphPivotFactory extends Factory
             'morph_type' => 'Modules\\'.fake()->word().'\\Models\\'.fake()->word(),
             'morph_id' => fake()->randomNumber(),
             'related_type' => fake()->optional(0.7)->randomElement([
+<<<<<<< HEAD
                 'Modules\Xot\Contracts\UserContract',
+=======
+                'Modules\User\Models\User',
+>>>>>>> laraxot/dev
                 'Modules\Post\Models\Post',
                 'Modules\Comment\Models\Comment',
             ]),

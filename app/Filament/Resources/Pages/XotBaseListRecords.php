@@ -8,6 +8,7 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords as FilamentListRecords;
+<<<<<<< HEAD
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -16,11 +17,16 @@ use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Actions\ModelClass\UpdateCountAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
+=======
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
  * Base class for list records pages.
  *
+<<<<<<< HEAD
  * @property ?string $model
  * @property ?string $resource
  * @property ?string $slug
@@ -30,6 +36,23 @@ abstract class XotBaseListRecords extends FilamentListRecords
 {
     use HasXotTable;
 
+=======
+ * La tabella NON si configura qui: la costruisce `XotBaseResource::table()` attraverso
+ * `getTableClass()`, cioe' la `*Table` class della Resource. Per questo la pagina non usa
+ * `HasXotTable` — un hook `getTableColumns()` scritto su una list page risolverebbe allo
+ * stub deprecato di Filament e la tabella resterebbe vuota, senza errori ne' log.
+ *
+ * Guardie: `tests/Unit/ListPageHasTableClassTest.php` (ogni list page risolve la sua Table
+ * class) e `tests/Unit/Filament/TableHooksDeclaredByUsTest.php` (nessun hook risolve allo
+ * stub Filament). Regola: `laravel/docs/wiki/rules/xot-table-method-names.md`.
+ *
+ * @property ?string $model
+ * @property ?string $resource
+ * @property ?string $slug
+ */
+abstract class XotBaseListRecords extends FilamentListRecords
+{
+>>>>>>> laraxot/dev
     /**
      * @param  array<string, bool|float|int|string|null>  $params
      */
@@ -54,6 +77,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
         return $resource;
     }
 
+<<<<<<< HEAD
     /*
      * Get the table columns.
      *
@@ -70,6 +94,13 @@ abstract class XotBaseListRecords extends FilamentListRecords
     protected function getDefaultSort(): array
     {
         return ['id' => 'desc'];
+=======
+    public static function getModelClass(): string
+    {
+        $resource = static::getResource();
+        $model = $resource::getModel();
+        return $model;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -84,6 +115,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
         ];
     }
 
+<<<<<<< HEAD
     /**
      * Paginate the table query.
      *
@@ -110,5 +142,10 @@ abstract class XotBaseListRecords extends FilamentListRecords
         app(UpdateCountAction::class)->execute($modelClass, $count);
 
         return $paginator;
+=======
+    final public function getTableColumns(): array
+    {
+        return [];
+>>>>>>> laraxot/dev
     }
 }

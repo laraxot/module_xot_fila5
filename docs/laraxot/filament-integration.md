@@ -9,7 +9,15 @@
 
 ### Form Schema
 ```php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         // Campi base

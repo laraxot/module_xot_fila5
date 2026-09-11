@@ -148,7 +148,15 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -425,7 +433,15 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 public function getFormSchema(): array

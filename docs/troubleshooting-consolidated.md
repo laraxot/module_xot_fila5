@@ -68,7 +68,10 @@ Utilizzo di namespace con segmento `App` che non esiste nella struttura modulare
 ```php
 // ❌ ERRATO
 namespace Modules\ModuleName\App\Models;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 namespace Modules\ModuleName\App\Actions;
 
 // ✅ CORRETTO

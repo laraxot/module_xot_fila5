@@ -70,7 +70,11 @@ Modules/
 namespace Modules\User\Tests\Unit;
 
 use Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 class UserTest extends TestCase
 {
@@ -86,7 +90,11 @@ class UserTest extends TestCase
 ```php
 <?php
 
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 test('user creation', function () {
     $user = User::factory()->create();

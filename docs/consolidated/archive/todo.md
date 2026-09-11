@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# todo
+
+<!-- Contenuto migrato da _docs/todo.txt -->
+
+usare userprovider che e' un contratto sulle policy
+=======
+>>>>>>> laraxot/dev
 ---
 title: "_todo"
 module: "Xot"
@@ -9,6 +19,10 @@ qmd: " todo"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->
@@ -16,6 +30,17 @@ related:
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
 
+<<<<<<< HEAD
 
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
+=======
+<<<<<<< HEAD
+mostrare in una blade uso disco etc
+https://github.com/spatie/laravel-health
+=======
+
+mostrare in una blade uso disco etc 
+https://github.com/spatie/laravel-health
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

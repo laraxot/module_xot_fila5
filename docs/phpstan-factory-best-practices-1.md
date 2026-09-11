@@ -136,7 +136,10 @@ private function createMockAttachments(User $user, array $attachments): void
 declare(strict_types=1);
 
 namespace Modules\ModuleName\Database\Factories;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\ModuleName\Models\User;

@@ -84,7 +84,11 @@ class AutoLabelAction
                 $saveTransAction = app(SaveTransAction::class);
                 Assert::isCallable([$saveTransAction, 'execute'], 'SaveTransAction::execute deve essere chiamabile');
 
+<<<<<<< HEAD
                 $saveTransAction->execute($label_key, $label_value);
+=======
+                $saveTransAction->execute($label_key, (string) $label_value);
+>>>>>>> laraxot/dev
             }
 
             // Applichiamo l'etichetta al componente

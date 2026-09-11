@@ -50,7 +50,10 @@ Questo documento sostituisce e consolida **40+ file di best practices duplicati*
 declare(strict_types=1);
 
 namespace Modules\ModuleName\Path;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 // Resto del codice...
 ```
@@ -253,7 +256,15 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -293,7 +304,15 @@ class UserModerationResource extends XotBaseResource
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         // Schema del form

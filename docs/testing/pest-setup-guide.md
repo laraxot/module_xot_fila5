@@ -66,7 +66,11 @@ All tests **MUST** be written in Pest format. If PHPUnit tests are found, they *
 ```php
 <?php
 
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 uses(Tests\TestCase::class);
 

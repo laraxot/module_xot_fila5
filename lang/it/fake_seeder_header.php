@@ -11,14 +11,33 @@ return [
     'navigation' => [
         'name' => 'Fake Seeder Header',
         'plural' => 'Fake Seeder Header',
+<<<<<<< HEAD
         'group' => ['name' => 'General', 'description' => 'General Settings'],
+=======
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+>>>>>>> laraxot/dev
         'label' => 'Fake Seeder Header',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
     'actions' => [
+<<<<<<< HEAD
         'create' => ['label' => 'Crea Fake Seeder Header'],
         'edit' => ['label' => 'Modifica Fake Seeder Header'],
         'delete' => ['label' => 'Elimina Fake Seeder Header'],
+=======
+        'create' => [
+            'label' => 'Crea Fake Seeder Header',
+        ],
+        'edit' => [
+            'label' => 'Modifica Fake Seeder Header',
+        ],
+        'delete' => [
+            'label' => 'Elimina Fake Seeder Header',
+        ],
+>>>>>>> laraxot/dev
     ],
 ];

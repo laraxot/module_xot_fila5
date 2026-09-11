@@ -23,7 +23,10 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Class XotBaseTestCase.
@@ -243,6 +246,7 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * Path of the shared SQLite database used by module tests.
      *
+<<<<<<< HEAD
      * Single source of truth for `prepareSharedFixcitySqliteForTesting()` and for
      * `xot:build-test-sqlite`, which needs the same path to build the file offline.
      */
@@ -253,6 +257,44 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     /**
      * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
+=======
+     * I moduli sono condivisi fra piu' progetti: il nome del file non puo' essere
+     * cablato qui, altrimenti il framework porta con se' il nome del progetto in cui e'
+     * nato. Si risolve in tre passi, dal piu' esplicito al piu' neutro:
+     *
+     * 1. `config('xot.testing.sqlite_file')` — il progetto dichiara il proprio file;
+     * 2. l'unico `*.sqlite` presente in `database/` — il caso normale, funziona senza
+     *    configurare niente e qualunque sia il nome scelto dal progetto;
+     * 3. `test_data.sqlite` — default neutro quando la cartella e' vuota o ambigua.
+     *
+     * Single source of truth per `prepareSharedSqliteForTesting()` e per
+     * `xot:build-test-sqlite`, che ha bisogno dello stesso path per costruire il file.
+     */
+    public static function sharedSqlitePath(): string
+    {
+        $configured = config('xot.testing.sqlite_file');
+
+        if (is_string($configured) && $configured !== '') {
+            return database_path($configured);
+        }
+
+        try {
+            /** @var list<string> $found */
+            $found = \Safe\glob(database_path('*.sqlite'));
+        } catch (\Safe\Exceptions\FilesystemException) {
+            $found = [];
+        }
+
+        if (count($found) === 1) {
+            return $found[0];
+        }
+
+        return database_path('test_data.sqlite');
+    }
+
+    /**
+     * Punta ogni connessione sqlite al file condiviso e condivide un solo PDO.
+>>>>>>> laraxot/dev
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
      * each opening their own transaction causes "database is locked". Sharing the
@@ -260,7 +302,11 @@ abstract class XotBaseTestCase extends BaseTestCase
      *
      * Call before parent::setUp() when the test case uses DatabaseTransactions.
      */
+<<<<<<< HEAD
     protected function prepareSharedFixcitySqliteForTesting(): void
+=======
+    protected function prepareSharedSqliteForTesting(): void
+>>>>>>> laraxot/dev
     {
         if ($this->app === null) {
             $this->refreshApplication();

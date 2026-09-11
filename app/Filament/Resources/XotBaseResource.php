@@ -24,6 +24,11 @@ use Modules\Media\Actions\GetAttachmentsSchemaAction;
 use Modules\Xot\Actions\Filament\GetResourceClassNameByModelClassAction;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Actions\ModelClass\CountAction;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 use Webmozart\Assert\Assert;
@@ -78,6 +83,21 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Modelli derivati dal nome della Resource, memoizzati per classe.
+     *
+     * La property `$model` di Filament e' dichiarata sul parent: una Resource che non la
+     * ridichiara scrive nello slot condiviso da tutte le altre nella stessa condizione
+     * (457 su 571 in questo progetto), e la prima risolta detta il modello a tutte.
+     * La mappa indicizzata per `static::class` memoizza senza contaminare.
+     *
+     * @var array<class-string, class-string<Model>>
+     */
+    private static array $resolvedModels = [];
+
+    /**
+>>>>>>> laraxot/dev
      * @return class-string<Model>
      */
     public static function getModel(): string
@@ -92,6 +112,13 @@ abstract class XotBaseResource extends FilamentResource
 
             return $res;
         }
+<<<<<<< HEAD
+=======
+        if (isset(self::$resolvedModels[static::class])) {
+            return self::$resolvedModels[static::class];
+        }
+
+>>>>>>> laraxot/dev
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
@@ -101,7 +128,11 @@ abstract class XotBaseResource extends FilamentResource
             Model::class,
             \sprintf('Class %s must extend Eloquent Model', $res),
         );
+<<<<<<< HEAD
         static::$model = $res;
+=======
+        self::$resolvedModels[static::class] = $res;
+>>>>>>> laraxot/dev
 
         return $res;
     }
@@ -109,7 +140,11 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    final public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return static::getFormSchemaOld();
     }
@@ -126,11 +161,16 @@ abstract class XotBaseResource extends FilamentResource
      *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
     public static function getFormSchemaOld(): array
+=======
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
     {
         return [];
     }
 
+<<<<<<< HEAD
     final public static function form(Schema $schema): Schema
     {
         // return AuthorForm::configure($schema);
@@ -149,6 +189,36 @@ abstract class XotBaseResource extends FilamentResource
         return $schema
             ->components($components)
             ->columns(static::getFormSchemaColumns());
+=======
+    /**
+     * @return class-string<XotBaseResourceForm>
+     */
+    public static function getFormClass(): string
+    {
+        // return AuthorForm::configure($schema);
+        $name = class_basename(static::getModel());
+        $class = static::class.'\Schemas\\'.$name.'Form';
+        if (class_exists($class)) {
+            Assert::subclassOf($class, XotBaseResourceForm::class);
+
+            return $class;
+        }
+        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
+        $class1 = $class1.'\Schemas\\'.$name.'Form';
+        Assert::subclassOf($class1, XotBaseResourceForm::class);
+
+        return $class1;
+
+    }
+
+    final public static function form(Schema $schema): Schema
+    {
+        $class = static::getFormClass();
+        $configured = $class::configure($schema);
+        Assert::isInstanceOf($configured, Schema::class);
+
+        return $configured;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -156,7 +226,12 @@ abstract class XotBaseResource extends FilamentResource
      */
     public static function getTableClass(): string
     {
+<<<<<<< HEAD
         $class = static::class.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+=======
+        $name = Str::plural(class_basename(static::getModel()));
+        $class = static::class.'\Tables\\'.$name.'Table';
+>>>>>>> laraxot/dev
         if (class_exists($class)) {
             Assert::subclassOf($class, XotBaseResourceTable::class);
 
@@ -164,7 +239,11 @@ abstract class XotBaseResource extends FilamentResource
         }
 
         $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
+<<<<<<< HEAD
         $class1 = $class1.'\Tables\\'.Str::plural(class_basename(static::getModel())).'Table';
+=======
+        $class1 = $class1.'\Tables\\'.$name.'Table';
+>>>>>>> laraxot/dev
         Assert::subclassOf($class1, XotBaseResourceTable::class);
 
         return $class1;
@@ -179,7 +258,11 @@ abstract class XotBaseResource extends FilamentResource
         return $configured;
     }
 
+<<<<<<< HEAD
     public static function getFormSchemaColumns(): int
+=======
+    public static function getFormColumns(): int
+>>>>>>> laraxot/dev
     {
         return 1;
     }
@@ -189,16 +272,45 @@ abstract class XotBaseResource extends FilamentResource
      *
      * @return array<string, \Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
     {
         return [];
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @return class-string<XotBaseResourceInfolist>
+     */
+    public static function getInfolistClass(): string
+    {
+        // return AuthorForm::configure($schema);
+        $name = class_basename(static::getModel());
+        $class = static::class.'\Schemas\\'.$name.'Infolist';
+        if (class_exists($class)) {
+            Assert::subclassOf($class, XotBaseResourceInfolist::class);
+
+            return $class;
+        }
+        $class1 = app(GetResourceClassNameByModelClassAction::class)->execute(static::getModel());
+        $class1 = $class1.'\Schemas\\'.$name.'Infolist';
+        Assert::subclassOf($class1, XotBaseResourceInfolist::class);
+
+        return $class1;
+
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * Metodo finale: obbliga l'uso di getInfolistSchema().
      */
     final public static function infolist(Schema $schema): Schema
     {
+<<<<<<< HEAD
         $class = static::class.'\Schemas\\'.class_basename(static::getModel()).'Infolist';
         if (class_exists($class)) {
             $configured = $class::configure($schema);
@@ -208,6 +320,13 @@ abstract class XotBaseResource extends FilamentResource
         }
 
         return $schema->components(static::getInfolistSchema());
+=======
+        $class = static::getInfolistClass();
+        $configured = $class::configure($schema);
+        Assert::isInstanceOf($configured, Schema::class);
+
+        return $configured;
+>>>>>>> laraxot/dev
     }
 
     /**

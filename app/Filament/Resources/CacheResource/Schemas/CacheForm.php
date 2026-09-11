@@ -14,7 +14,11 @@ class CacheForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'key' => TextInput::make('key')->required()->maxLength(255),

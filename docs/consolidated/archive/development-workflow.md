@@ -30,7 +30,15 @@ class MyModelResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

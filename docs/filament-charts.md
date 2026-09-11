@@ -28,7 +28,10 @@ Questo genera un widget in `app/Filament/Widgets/BlogPostsChart.php`.
 <?php
 
 namespace App\Filament\Widgets;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 use Filament\Widgets\ChartWidget;
 

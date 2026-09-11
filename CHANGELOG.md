@@ -5,6 +5,14 @@ All notable changes to `:package_name` will be documented in this file.
 ## 1.0.0 - 202X-XX-XX
 
 - initial release
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5d3d201f (.)
+>>>>>>> laraxot/dev
 
 
 ---
@@ -302,3 +310,12 @@ All notable changes to `:package_name` will be documented in this file.
 **Maintained by:** Team Laraxot PTVX
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 50bafb8c (.)
+=======
+>>>>>>> c7fd73eb (.)
+>>>>>>> 5d3d201f (.)
+>>>>>>> laraxot/dev

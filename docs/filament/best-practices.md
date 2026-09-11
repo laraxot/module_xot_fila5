@@ -58,7 +58,15 @@ abstract class XotBaseRelationManager extends RelationManager
 // ✅ CORRETTO - Implementare solo i metodi necessari
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             // Schema del form
@@ -139,7 +147,15 @@ class UserResource extends XotBaseResource
 
 ### **2. Schema Form Standardizzato**
 ```php
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         Forms\Components\TextInput::make('name')

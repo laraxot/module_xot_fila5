@@ -42,7 +42,22 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICI metodi che dovrebbero essere implementati
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

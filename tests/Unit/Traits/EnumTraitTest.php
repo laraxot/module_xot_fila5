@@ -41,8 +41,13 @@ it('gets searchable values', function (): void {
 });
 
 it('gets form schema', function (): void {
+<<<<<<< HEAD
     $schema = TestEnum::getFormSchema();
     Assert::assertInstanceOf(TextInput::class, $schema);
+=======
+    $schema = TestEnum::ALPHA->getFormSchema();
+    //Assert::assertIsArray($schema);
+>>>>>>> laraxot/dev
     Assert::assertCount(2, $schema);
 });
 

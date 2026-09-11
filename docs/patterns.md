@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Xot Module Patterns"
 type: guide
@@ -35,3 +42,10 @@ class CreateMyTable extends XotBaseMigration {
     }
 }
 ```
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

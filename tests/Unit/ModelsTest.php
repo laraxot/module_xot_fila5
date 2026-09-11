@@ -8,7 +8,10 @@ use Modules\Tenant\Database\Factories\TenantFactory;
 use Modules\Tenant\Models\Tenant;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

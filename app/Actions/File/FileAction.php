@@ -275,6 +275,7 @@ class FileAction
             } catch (Exception $e) {
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
+<<<<<<< HEAD
         } else {
             $msg = [
                 'ns' => $ns,
@@ -284,6 +285,19 @@ class FileAction
             ];
             dddx($msg); // 4 debug
         }
+=======
+        }
+        // else: sorgente $filename assente, nessuna copia da fare — $url e'
+        // gia' costruito sopra da Module::asset(), il caso e' atteso (non
+        // ogni asset namespaced ha una sorgente locale da pubblicare), non
+        // un errore. Rimosso un `dddx($msg)` attivo qui (residuo di debug,
+        // marcato "// 4 debug" come il blocco gia' commentato poco sopra,
+        // ma mai disattivato): bloccava con un dump-and-die qualunque
+        // richiesta/test che risolvesse un asset namespaced senza file
+        // sorgente locale — causa diretta del rumore nell'output della
+        // suite Pest completa del modulo Xot, vedi story
+        // xotbasemanagerelatedrecords-post-saga-cleanup.story.md.
+>>>>>>> laraxot/dev
 
         // $url=str_replace(url('/'),'',$url);
         // dddx(url($url));
@@ -339,6 +353,13 @@ class FileAction
                 'filename' => $filename,
                 'msg' => 'Filename not Exists',
             ];
+<<<<<<< HEAD
+=======
+            // Debug context: heterogeneous payload for dddx() Laravel debug helper
+            // (raw array with mixed values). The @var below silences the type
+            // check since dddx() accepts any PHP type.
+            /** @var array<string, mixed> $msg */
+>>>>>>> laraxot/dev
             dddx($msg);
             // dddx('non esiste '.); //4 debug
         }

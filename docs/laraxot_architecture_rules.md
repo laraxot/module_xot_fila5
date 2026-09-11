@@ -5,6 +5,12 @@ canonical: ../../../Themes/docs/shared-components/LARAXOT_ARCHITECTURE_RULES.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/LARAXOT_ARCHITECTURE_RULES.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 ---
 
@@ -59,7 +65,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -274,7 +284,11 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -428,7 +442,11 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -643,7 +661,11 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -742,3 +764,9 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

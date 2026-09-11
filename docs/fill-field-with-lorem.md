@@ -1,4 +1,10 @@
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 ---
 
@@ -90,3 +96,9 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
