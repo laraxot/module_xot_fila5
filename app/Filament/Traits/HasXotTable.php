@@ -418,7 +418,10 @@ trait HasXotTable
             Assert::isInstanceOfAny($relationship, [Relation::class, Builder::class]);
             $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
 
-            return $related::class;
+            /** @var class-string<Model> $relatedClass */
+            $relatedClass = $related::class;
+
+            return $relatedClass;
         }
 
         /* @phpstan-ignore-next-line function.alreadyNarrowedType */
@@ -428,7 +431,10 @@ trait HasXotTable
             Assert::classExists($model);
             Assert::subclassOf($model, Model::class);
 
-            return $model;
+            /** @var class-string<Model> $modelClass */
+            $modelClass = $model;
+
+            return $modelClass;
         }
 
         throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
