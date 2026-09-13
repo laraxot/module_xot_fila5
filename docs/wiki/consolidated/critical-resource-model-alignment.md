@@ -58,9 +58,6 @@ protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'p
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -68,7 +65,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -88,9 +84,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -98,7 +91,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

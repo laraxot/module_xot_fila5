@@ -264,9 +264,6 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -274,7 +271,6 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -319,9 +315,6 @@ class UserModerationResource extends XotBaseResource
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -329,7 +322,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

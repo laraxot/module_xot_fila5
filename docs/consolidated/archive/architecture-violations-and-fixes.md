@@ -59,13 +59,9 @@ public function getUserClass(): string
 {
     $class = config('auth.providers.users.model');
 <<<<<<< HEAD
-    
-=======
-<<<<<<< HEAD
 
 =======
     
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     // Validazioni automatiche
     Assert::stringNotEmpty($class, 'check config auth');
@@ -105,13 +101,9 @@ interface UserContract
 $userClass = XotData::make()->getUserClass();
 
 <<<<<<< HEAD
-// ❌ MAI così  
-=======
-<<<<<<< HEAD
 // ❌ MAI così
 =======
 // ❌ MAI così  
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 use Modules\SpecificModule\Models\User;
 ```
@@ -162,13 +154,9 @@ function createTestUser(array $attributes = []): UserContract
 {
     $userClass = getUserClass();
 <<<<<<< HEAD
-    
-=======
-<<<<<<< HEAD
 
 =======
     
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     $defaultAttributes = [
         'email' => fake()->unique()->safeEmail(),
@@ -177,8 +165,6 @@ function createTestUser(array $attributes = []): UserContract
         'last_name' => fake()->lastName(),
     ];
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
     $attributes = array_merge($defaultAttributes, $attributes);
 
@@ -186,16 +172,12 @@ function createTestUser(array $attributes = []): UserContract
     $user = $userClass::factory()->create($attributes);
 
 =======
->>>>>>> laraxot/dev
     
     $attributes = array_merge($defaultAttributes, $attributes);
     
     /** @var UserContract */
     $user = $userClass::factory()->create($attributes);
     
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     return $user;
 }
@@ -209,13 +191,9 @@ class CreateUserAction
     {
         $userClass = XotData::make()->getUserClass();
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         /** @var UserContract */
         $user = $userClass::create([
@@ -223,13 +201,9 @@ class CreateUserAction
             'email' => $data->email,
         ]);
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return $user;
     }
@@ -275,34 +249,24 @@ class ChangeTypeCommand extends Command
     {
         $email = text('User email?');
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
 
 =======
->>>>>>> laraxot/dev
         
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         if (!$user) {
             $this->error("User with email '{$email}' not found.");
             return;
         }
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         // Continua elaborazione...
     }
@@ -329,13 +293,9 @@ use Modules\Xot\Datas\XotData;
 $user = \Modules\<nome progetto>\Models\User::find($id);
 
 <<<<<<< HEAD
-// ✅ CONSENTITO  
-=======
-<<<<<<< HEAD
 // ✅ CONSENTITO
 =======
 // ✅ CONSENTITO  
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::find($id);
@@ -387,11 +347,8 @@ $userClass::factory()->create();
 ### **Fase 1: Identificazione Violazioni**
 ```bash
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Cerca import diretti tra moduli
 grep -r "use Modules\.*Models\User" --include="*.php" ./
@@ -403,13 +360,9 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ### **Fase 2: Sostituzione Pattern**
 1. Sostituire import diretti con XotData
 <<<<<<< HEAD
-2. Cambiare type hints con UserContract  
-=======
-<<<<<<< HEAD
 2. Cambiare type hints con UserContract
 =======
 2. Cambiare type hints con UserContract  
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 3. Aggiornare factory calls
 4. Implementare helper functions
@@ -425,13 +378,9 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ### **Documentazione Core**
 - [XotData API Reference](xotdata-api.md)
 <<<<<<< HEAD
-- [UserContract Specification](contracts/user-contract.md)  
-=======
-<<<<<<< HEAD
 - [UserContract Specification](contracts/user-contract.md)
 =======
 - [UserContract Specification](contracts/user-contract.md)  
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Best Practices](best-practices.md)
 - [Module Architecture](module-architecture.md)
@@ -449,16 +398,10 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ---
 
 <<<<<<< HEAD
-**Ultimo Aggiornamento**: Gennaio 2025  
-**Stato**: ✅ Pattern Documentato e Implementato  
-**Responsabile**: Team Architettura Laraxot 
-=======
-<<<<<<< HEAD
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
 =======
 **Ultimo Aggiornamento**: Gennaio 2025  
 **Stato**: ✅ Pattern Documentato e Implementato  
 **Responsabile**: Team Architettura Laraxot 
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

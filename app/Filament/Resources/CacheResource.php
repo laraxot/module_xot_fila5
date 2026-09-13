@@ -12,10 +12,14 @@ use Modules\Xot\Models\Cache;
 class CacheResource extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
+
+    #[\Override]
     public static function getRelations(): array
     {
         return [];
     }
+
+    #[\Override]
     public static function getPages(): array
     {
         return [

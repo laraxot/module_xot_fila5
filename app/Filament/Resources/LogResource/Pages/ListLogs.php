@@ -21,6 +21,9 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
+   
+
+    #[\Override]
     public function getTableFilters(): array
     {
         return [
@@ -40,6 +43,7 @@ class ListLogs extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
+    #[\Override]
     public function getTableActions(): array
     {
         return [
@@ -51,6 +55,7 @@ class ListLogs extends XotBaseListRecords
     /**
      * @return array<string, BulkAction>
      */
+    #[\Override]
     public function getTableBulkActions(): array
     {
         return [

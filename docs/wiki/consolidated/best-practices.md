@@ -1,7 +1,5 @@
 ---
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -23,7 +21,6 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 title: "Best Practices per Laraxot"
 module: "Xot"
 type: concept
@@ -34,9 +31,6 @@ qmd: "best practices"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Best Practices per Laraxot
 
@@ -106,9 +100,6 @@ public function process(\Modules\User\Models\User $user) {
     // Codice
 }
 <<<<<<< HEAD
-``` 
-=======
-<<<<<<< HEAD
 ```
 =======
 <<<<<<< HEAD
@@ -119,5 +110,4 @@ public function process(\Modules\User\Models\User $user) {
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ``` 
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

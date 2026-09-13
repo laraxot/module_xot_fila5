@@ -34,6 +34,7 @@ class ListCaches extends XotBaseListRecords
     /**
      * @return array<string, Action>
      */
+    #[\Override]
     protected function getHeaderActions(): array
     {
         return [

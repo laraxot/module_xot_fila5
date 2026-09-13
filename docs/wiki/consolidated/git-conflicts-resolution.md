@@ -7,8 +7,6 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -16,7 +14,6 @@ updated: 2026-08-24
 <<<<<<< HEAD
 
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -117,8 +114,6 @@ $res=Locality::query()
 ### 1. Controllo Conflitti
 ```bash
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
 ```
 =======
@@ -128,7 +123,6 @@ $res=Locality::query()
 
 ```
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
@@ -334,7 +328,4 @@ php artisan lang:check
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

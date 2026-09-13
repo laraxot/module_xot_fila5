@@ -79,13 +79,7 @@ class XlsByModelClassAction
 
         // Applichiamo il callback se fornito
         if ($callback !== null) {
-            $rows = $rows->map(static function (mixed $item, mixed $key) use ($callback): mixed {
-                if (! is_array($item) && ! $item instanceof Model) {
-                    return $item;
-                }
-
-                return $callback($item, is_int($key) ? $key : 0);
-            });
+            $rows = $rows->map($callback);
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export

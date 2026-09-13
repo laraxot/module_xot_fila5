@@ -67,9 +67,6 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -77,7 +74,6 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -115,9 +111,6 @@ class MyResource extends XotBaseResource
    - ✅ `public static function getFormSchema(): array`
 =======
 <<<<<<< HEAD
-   - ✅ `public static function getFormSchema(): array`
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
    - ✅ `public static function getFormSchema(): array`
@@ -125,7 +118,6 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - ✅ `public function getFormSchema(): array`
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
@@ -242,9 +234,6 @@ class ListRecords extends XotBaseListRecords
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -252,7 +241,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -586,9 +574,6 @@ public function getTableColumns(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -596,7 +581,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

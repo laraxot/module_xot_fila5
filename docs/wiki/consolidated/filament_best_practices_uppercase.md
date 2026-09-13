@@ -53,9 +53,6 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -63,7 +60,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -205,9 +201,6 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -215,7 +208,6 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -400,9 +392,6 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -410,7 +399,6 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -662,9 +650,6 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -672,7 +657,6 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

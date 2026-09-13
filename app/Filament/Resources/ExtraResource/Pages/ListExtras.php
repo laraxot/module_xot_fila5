@@ -24,6 +24,7 @@ class ListExtras extends XotBaseListRecords
     /**
      * @return array<BaseFilter>
      */
+    #[\Override]
     public function getTableFilters(): array
     {
         return [];
@@ -32,6 +33,7 @@ class ListExtras extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
+    #[\Override]
     public function getTableActions(): array
     {
         return [
@@ -42,6 +44,7 @@ class ListExtras extends XotBaseListRecords
     /**
      * @return array<string, BulkAction>
      */
+    #[\Override]
     public function getTableBulkActions(): array
     {
         return [

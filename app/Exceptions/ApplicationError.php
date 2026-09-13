@@ -34,6 +34,7 @@ readonly class ApplicationError implements \JsonSerializable, Arrayable, Jsonabl
     }
 
     /** @return array<string, string> */
+    #[\Override]
     public function jsonSerialize(): array
     {
         return $this->toArray();

@@ -20,10 +20,14 @@ class StatesChartWidget extends XotBaseChartWidget
     protected static ?int $sort = 4;
 
     protected static bool $isLazy = true;
+
+    #[\Override]
     public function getHeading(): ?string
     {
         return static::transClass($this->model, 'widgets.states_chart.heading');
     }
+
+    #[\Override]
     protected function getData(): array
     {
         $label = static::transClass($this->model, 'widgets.states_chart.label');
@@ -88,6 +92,8 @@ class StatesChartWidget extends XotBaseChartWidget
             ];
         }
     }
+
+    #[\Override]
     protected function getType(): string
     {
         return 'bar';

@@ -14,10 +14,14 @@ use Modules\Xot\Models\Module;
 class ModuleResource extends XotBaseResource
 {
     protected static ?string $model = Module::class;
+
+    #[\Override]
     public static function getRelations(): array
     {
         return [];
     }
+
+    #[\Override]
     public static function getPages(): array
     {
         $prefix = static::class.'\\Pages\\';

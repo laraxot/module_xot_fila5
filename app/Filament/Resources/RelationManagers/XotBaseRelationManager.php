@@ -134,6 +134,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * @return array<int|string, Column|LayoutComponent>
      */
+    #[\Override]
     protected function getTableColumns(): array
     {
         $index = Arr::get($this->getResource()::getPages(), 'index');

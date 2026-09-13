@@ -17,10 +17,13 @@ class CacheLockResource extends XotBaseResource
     /**
      * @return array<string, class-string<RelationManager>>
      */
+    #[\Override]
     public static function getRelations(): array
     {
         return [];
     }
+
+    #[\Override]
     public static function getPages(): array
     {
         return [

@@ -425,22 +425,13 @@ trait HasXotTable
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
-            self::assertModelClass($model);
+            Assert::classExists($model);
+            Assert::subclassOf($model, Model::class);
 
             return $model;
         }
 
         throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
-    }
-
-    /**
-     * @phpstan-assert class-string<Model> $class
-     */
-    private static function assertModelClass(string $class): void
-    {
-        if (! class_exists($class) || ! is_a($class, Model::class, true)) {
-            throw new RuntimeException('Invalid model class: '.$class);
-        }
     }
 
     /**

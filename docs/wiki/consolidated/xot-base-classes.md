@@ -30,9 +30,6 @@ The Xot base classes provide a centralized way to customize and extend functiona
       public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-      public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
       public static function getFormSchema(): array
@@ -40,7 +37,6 @@ The Xot base classes provide a centralized way to customize and extend functiona
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
       public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
       {
           return [

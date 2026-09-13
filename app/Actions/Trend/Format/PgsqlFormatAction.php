@@ -6,6 +6,7 @@ namespace Modules\Xot\Actions\Trend\Format;
 
 class PgsqlFormatAction extends BaseFormatAction
 {
+    #[\Override]
     public function execute(string $column, string $interval): string
     {
         $format = match ($interval) {

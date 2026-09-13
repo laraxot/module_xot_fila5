@@ -31,60 +31,13 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
 trait HasXotFactory
 {
     /**
-     * Create a new factory instance for the model.
-     *
      * @return Factory<static>
      */
-    protected static function newFactory()
+    protected static function factory(): Factory
     {
         /** @var Factory<static> $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);
 
         return $factory;
-    }
-
-    /**
-     * Get a new factory instance for the model.
-     *
-     * @param  (callable(array<string, mixed>, Model|null): array<string, mixed>)|array<string, mixed>|int|null  $count
-     * @param  (callable(array<string, mixed>, Model|null): array<string, mixed>)|array<string, mixed>  $state
-     * @return Factory<static>
-     */
-    public static function factory($count = null, $state = [])
-    {
-        $factory = static::newFactory();
-
-        $factory = $factory->count(is_numeric($count) ? (int) $count : null);
-
-        if (is_callable($count)) {
-            return $factory->state($count);
-        }
-
-        if (is_array($count)) {
-            return $factory->state(static::normalizeFactoryState($count));
-        }
-
-        if (is_callable($state)) {
-            return $factory->state($state);
-        }
-
-        return $factory->state(static::normalizeFactoryState($state));
-    }
-
-    /**
-     * Normalize a factory state to the shape accepted by Laravel's Factory.
-     *
-     * @param  array<int|string, mixed>  $state
-     * @return array<string, mixed>
-     */
-    protected static function normalizeFactoryState(array $state): array
-    {
-        $normalized = [];
-
-        foreach ($state as $key => $value) {
-            $normalized[(string) $key] = $value;
-        }
-
-        return $normalized;
     }
 }

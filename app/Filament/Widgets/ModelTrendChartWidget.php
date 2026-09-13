@@ -19,10 +19,14 @@ class ModelTrendChartWidget extends XotBaseChartWidget
     protected static bool $isLazy = true;
 
     protected ?string $pollingInterval = '300s'; // 5 minuti
+
+    #[\Override]
     public function getHeading(): ?string
     {
         return static::transClass($this->model, 'widgets.model_trend_chart.heading');
     }
+
+    #[\Override]
     protected function getData(): array
     {
         try {
@@ -68,6 +72,8 @@ class ModelTrendChartWidget extends XotBaseChartWidget
             ];
         }
     }
+
+    #[\Override]
     protected function getType(): string
     {
         return 'line';

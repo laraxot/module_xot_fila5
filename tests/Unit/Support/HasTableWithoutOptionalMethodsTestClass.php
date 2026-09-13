@@ -24,7 +24,8 @@ class HasTableWithoutOptionalMethodsTestClass
         return $mock;
     }
 
-    /** @return array<string, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> */
+    #[\Override]
+    /** @return array<int, \Filament\Tables\Columns\Column|\Filament\Tables\Columns\ColumnGroup|\Filament\Tables\Columns\Layout\Component> */
     public function getTableColumns(): array
     {
         return [];

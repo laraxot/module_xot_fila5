@@ -9,6 +9,7 @@ use Override;
 
 class PgsqlAdapter extends AbstractAdapter
 {
+    #[Override]
     public function format(string $column, string $interval): string
     {
         $format = match ($interval) {

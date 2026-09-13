@@ -69,6 +69,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * @return array<string, Tables\Columns\Column>
      */
+    #[\Override]
     public function getTableColumns(): array
     {
         return [];
