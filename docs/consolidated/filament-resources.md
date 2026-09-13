@@ -26,8 +26,17 @@ class SessionResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_e9gVjv
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_C3VHz1
     {
         return [
             // La chiave 'id' corrisponde a session.fields.id nel file di traduzione

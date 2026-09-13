@@ -37,6 +37,12 @@ Questo significa che:
 abstract public static function getFormSchema(): array;
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_i4704o
+=======
+abstract public static function getFormSchema(): array;
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_f84XyJ
 =======
 <<<<<<< HEAD
 abstract public static function getFormSchema(): array;
@@ -45,6 +51,10 @@ abstract public static function getFormSchema(): array;
 >>>>>>> laraxot/dev
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_i4704o
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f84XyJ
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -82,6 +92,12 @@ class NotificationResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_i4704o
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_f84XyJ
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -90,6 +106,10 @@ class NotificationResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_i4704o
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_f84XyJ
     {
         return [
             Forms\Components\TextInput::make('title')

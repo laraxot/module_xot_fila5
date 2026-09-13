@@ -59,10 +59,20 @@ public function getUserClass(): string
 {
     $class = config('auth.providers.users.model');
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+    
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
 =======
     
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
     // Validazioni automatiche
     Assert::stringNotEmpty($class, 'check config auth');
     Assert::classExists($class, '['.$class.'] check config auth');
@@ -101,10 +111,20 @@ interface UserContract
 $userClass = XotData::make()->getUserClass();
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+// ❌ MAI così  
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 // ❌ MAI così
 =======
 // ❌ MAI così  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 use Modules\SpecificModule\Models\User;
 ```
 
@@ -154,10 +174,20 @@ function createTestUser(array $attributes = []): UserContract
 {
     $userClass = getUserClass();
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+    
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
 =======
     
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
     $defaultAttributes = [
         'email' => fake()->unique()->safeEmail(),
         'password' => Hash::make('password123'),
@@ -165,6 +195,11 @@ function createTestUser(array $attributes = []): UserContract
         'last_name' => fake()->lastName(),
     ];
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
     $attributes = array_merge($defaultAttributes, $attributes);
 
@@ -172,12 +207,22 @@ function createTestUser(array $attributes = []): UserContract
     $user = $userClass::factory()->create($attributes);
 
 =======
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
     
     $attributes = array_merge($defaultAttributes, $attributes);
     
     /** @var UserContract */
     $user = $userClass::factory()->create($attributes);
     
+<<<<<<< .merge_file_LR1W89
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 >>>>>>> laraxot/dev
     return $user;
 }
@@ -191,20 +236,40 @@ class CreateUserAction
     {
         $userClass = XotData::make()->getUserClass();
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+        
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
 =======
         
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
         /** @var UserContract */
         $user = $userClass::create([
             'name' => $data->name,
             'email' => $data->email,
         ]);
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+        
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
 =======
         
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
         return $user;
     }
 }
@@ -249,25 +314,50 @@ class ChangeTypeCommand extends Command
     {
         $email = text('User email?');
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
 
 =======
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
         
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         
+<<<<<<< .merge_file_LR1W89
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 >>>>>>> laraxot/dev
         if (!$user) {
             $this->error("User with email '{$email}' not found.");
             return;
         }
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+        
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 
 =======
         
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
         // Continua elaborazione...
     }
 }
@@ -293,10 +383,20 @@ use Modules\Xot\Datas\XotData;
 $user = \Modules\<nome progetto>\Models\User::find($id);
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+// ✅ CONSENTITO  
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 // ✅ CONSENTITO
 =======
 // ✅ CONSENTITO  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::find($id);
 ```
@@ -347,9 +447,18 @@ $userClass::factory()->create();
 ### **Fase 1: Identificazione Violazioni**
 ```bash
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
 
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 # Cerca import diretti tra moduli
 grep -r "use Modules\.*Models\User" --include="*.php" ./
 
@@ -360,10 +469,20 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ### **Fase 2: Sostituzione Pattern**
 1. Sostituire import diretti con XotData
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+2. Cambiare type hints con UserContract  
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 2. Cambiare type hints con UserContract
 =======
 2. Cambiare type hints con UserContract  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 3. Aggiornare factory calls
 4. Implementare helper functions
 
@@ -378,10 +497,20 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ### **Documentazione Core**
 - [XotData API Reference](xotdata-api.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+- [UserContract Specification](contracts/user-contract.md)  
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 - [UserContract Specification](contracts/user-contract.md)
 =======
 - [UserContract Specification](contracts/user-contract.md)  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq
 - [Best Practices](best-practices.md)
 - [Module Architecture](module-architecture.md)
 
@@ -398,6 +527,14 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 ---
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_LR1W89
+=======
+**Ultimo Aggiornamento**: Gennaio 2025  
+**Stato**: ✅ Pattern Documentato e Implementato  
+**Responsabile**: Team Architettura Laraxot 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_GR3GUq
 **Ultimo Aggiornamento**: Gennaio 2025
 **Stato**: ✅ Pattern Documentato e Implementato
 =======
@@ -405,3 +542,7 @@ grep -r "function.*\\\Modules\\\.*\\\Models\\\User" --include="*.php" ./
 **Stato**: ✅ Pattern Documentato e Implementato  
 **Responsabile**: Team Architettura Laraxot 
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LR1W89
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_GR3GUq

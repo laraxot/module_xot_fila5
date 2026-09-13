@@ -11,8 +11,17 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_iAwAAv
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ce0DjC
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -32,8 +41,17 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_iAwAAv
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ce0DjC
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -108,8 +126,17 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_iAwAAv
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ce0DjC
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -127,8 +154,17 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_iAwAAv
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ce0DjC
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

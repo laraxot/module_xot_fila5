@@ -148,8 +148,17 @@ return [
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_n6cwwo
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cf4wJv
 {
     return [
         'name' => TextInput::make('name'),
@@ -161,8 +170,17 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_n6cwwo
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cf4wJv
 {
     return [
         TextInput::make('name')->label('Nome'),
