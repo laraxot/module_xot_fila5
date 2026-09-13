@@ -17,10 +17,6 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property string $value
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> laraxot/dev
  * @method static PulseValueFactory factory($count = null, $state = [])
  * @method static Builder<static>|PulseValue newModelQuery()
  * @method static Builder<static>|PulseValue newQuery()
@@ -31,13 +27,7 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @method static Builder<static>|PulseValue whereTimestamp($value)
  * @method static Builder<static>|PulseValue whereType($value)
  * @method static Builder<static>|PulseValue whereValue($value)
-<<<<<<< HEAD
  * @property ProfileContract|null $deleter
-=======
- *
- * @property ProfileContract|null $deleter
- *
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class PulseValue extends BaseModel

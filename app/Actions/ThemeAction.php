@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-<<<<<<< HEAD
 use Spatie\QueueableAction\ActionJob;
 
 use Spatie\QueueableAction\QueueableAction;
@@ -13,22 +12,11 @@ use Illuminate\Support\Facades\Config;
 
 /**
  * Class ThemeService
-=======
-use Illuminate\Support\Facades\Config;
-use Spatie\QueueableAction\QueueableAction;
-
-/**
- * Class ThemeAction
->>>>>>> laraxot/dev
  * Gestisce il tema dell'applicazione.
  */
 class ThemeAction
 {
     use QueueableAction;
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
     /**
      * Nome del tema corrente.
      */
@@ -66,11 +54,4 @@ class ThemeAction
     {
         return resource_path('themes/'.self::$currentTheme);
     }
-<<<<<<< HEAD
-=======
-
-    public function execute(): void
-    {
-    }
->>>>>>> laraxot/dev
 }

@@ -1,22 +1,4 @@
-<<<<<<< HEAD
----
-module: theme
-topic: comprehensive_code_analysis
-canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
----
 
-See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
-
----
-
-<!-- Merged from COMPREHENSIVE_CODE_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
-
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -195,15 +177,8 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -212,15 +187,8 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -316,12 +284,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
     public function getFormSchema(): array
     {
         return [
@@ -475,16 +438,12 @@ return [
 - **Complexity**: Tutti i metodi <8
 
 =======
-<<<<<<< HEAD
 ---
 module: theme
 topic: comprehensive_code_analysis
 canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
->>>>>>> 28b0298a (fix: phpstan issues)
 ---
 
-<<<<<<< HEAD
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
 
 ---
@@ -492,7 +451,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIV
 <!-- Merged from COMPREHENSIVE_CODE_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
 
 =======
->>>>>>> 7f6cf6be (.)
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -777,8 +735,6 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -936,12 +892,7 @@ return [
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
+
 
 
 ---
@@ -1126,11 +1077,8 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -1139,11 +1087,8 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -1239,11 +1184,8 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -1397,17 +1339,9 @@ return [
 
 ---
 
-<<<<<<< HEAD
-=======
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
->>>>>>> laraxot/dev
+
 **Data Analisi**: 2025-01-06  
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

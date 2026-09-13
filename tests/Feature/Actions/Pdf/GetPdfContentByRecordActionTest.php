@@ -9,10 +9,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 use Modules\User\Models\User;
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # PRD: Xot Core Framework
 
 ## 📋 Overview
@@ -31,8 +28,6 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 ## 🚫 Out of Scope
 - Domain-specific logic (HR, Finance, etc.).
 - Direct UI components (handled by the UI module).
-=======
->>>>>>> laraxot/dev
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot
@@ -456,7 +451,4 @@ Xot/
 | Engineering Lead | | | |
 | Tech Lead | | | |
 | Stakeholder | | | |
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+

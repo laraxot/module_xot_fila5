@@ -1,9 +1,6 @@
 # Sviluppo
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
+
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.
 
 ## File Contenuti
@@ -15,10 +12,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 ## Note
 
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
 [![Module](https://img.shields.io/badge/Module-Sviluppo-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -27,10 +21,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
-=======
-<<<<<<< HEAD
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.
->>>>>>> 28b0298a (fix: phpstan issues)
 
 > **Core module for the FixCity Platform.**
 
@@ -38,7 +29,6 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 
 Core module for the FixCity Platform.
 
-<<<<<<< HEAD
 ## Superpoteri
 
 - Modular component with XotBase patterns
@@ -56,23 +46,12 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al progetto.
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
-<<<<<<< HEAD
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
-=======
-<<<<<<< HEAD
-=======
-* [README.md](bashscripts/docs/readme.md)
-* [README.md](bashscripts/docs/it/readme.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -147,11 +126,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
+
 
 ---
 
@@ -294,10 +269,7 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+
 =======
 =======
 [![Module](https://img.shields.io/badge/Module-Sviluppo-8B0000.svg)]()
@@ -332,7 +304,3 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> 7f6cf6be (.)
->>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

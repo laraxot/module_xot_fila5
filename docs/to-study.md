@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # __to_study
 
 <!-- Contenuto migrato da _docs/__to_study.txt -->
 
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
-=======
->>>>>>> laraxot/dev
 ---
 title: 'To study — risorse esterne'
 module: Xot
@@ -28,7 +23,4 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs>
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+

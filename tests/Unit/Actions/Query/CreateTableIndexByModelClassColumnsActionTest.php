@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
-use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Query\CreateTableIndexByModelClassColumnsAction;
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Tests\TestCase;

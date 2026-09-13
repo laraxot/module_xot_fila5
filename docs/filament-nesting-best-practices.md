@@ -209,11 +209,8 @@ declare(strict_types=1);
 namespace Modules\YourModule\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\YourModule\Models\NestedModel;
 
 class NestedModelPolicy

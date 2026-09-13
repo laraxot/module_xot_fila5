@@ -152,10 +152,7 @@ public function getUser(): ?User
 declare(strict_types=1);
 
 namespace Modules\NomeModulo;
-<<<<<<< HEAD
 use Modules\User\Models\User;
-=======
->>>>>>> laraxot/dev
 
 // Resto del codice
 ```

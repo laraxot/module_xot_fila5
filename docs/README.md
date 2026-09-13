@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
@@ -87,9 +84,6 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 
 **Example**: Resource Filament
 ```php
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 title: "Xot — La Base Sacra di Laraxot"
 description: "Modulo fondamentale che fornisce funzionalità core e strutture per tutti gli altri moduli"
@@ -132,9 +126,6 @@ Xot è trattato come un **sacro vincolo** non negoziabile. Le regole che impone 
 - Dashboard → `XotBaseDashboard`
 - Login/Register → `XotBaseLogin`, `XotBaseRegister`
 =======
-=======
->>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
 # Documentation
 
 This directory contains documentation for the module.
@@ -180,16 +171,12 @@ Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modula
 
 ### 🏗️ **Base Classes Pattern**
 Tutti i componenti principali dei moduli devono estendere le classi base fornite da Xot per ereditare funzionalità comuni e garantire coerenza.
-<<<<<<< HEAD
 
 ```php
 // Esempio di una Resource Filament
-=======
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 
 **Implementazione**:
 ```php
-<<<<<<< HEAD
 class MyResource extends XotBaseResource
 {
     public static $model = MyModel::class;
@@ -213,18 +200,12 @@ class MyAction
     public function execute(...): mixed
     {
         // business logic qui
-=======
 // Esempio di una Resource Filament
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     // table() and form() inherited from base
 }
 ```
@@ -266,8 +247,6 @@ class MyModuleServiceProvider extends XotBaseServiceProvider
 
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 
-=======
->>>>>>> laraxot/dev
     
     // Il metodo table() e form() NON devono essere sovrascritti
     // se non per aggiungere logica specifica, ma la base
@@ -294,10 +273,7 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+
 ```php
 use Modules\Xot\Actions\XotBaseAction;
 
@@ -306,20 +282,12 @@ class CreateUserAction extends XotBaseAction
     public function execute(array $data): User
     {
         $user = User::create($data);
-<<<<<<< HEAD
-        $this->logActivity('user.created', $user); // Logging automatico
-        event(new UserCreated($user)); // Dispatching eventi
-        return $user;
-=======
-<<<<<<< HEAD
         event(new UserCreated($user));
         return $user;
-=======
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
         return $user;
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+
 =======
 =======
 ---
@@ -389,26 +357,14 @@ class MyAction
     public function execute(...): mixed
     {
         // business logic qui
->>>>>>> 7f6cf6be (.)
->>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     }
 }
 ```
 
-<<<<<<< HEAD
-### 🏷️ **Enums System**
-Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
-=======
-<<<<<<< HEAD
 ### Enums System
 
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Mai**:
 ```php
 namespace app/Services; // ❌ vietato
@@ -528,12 +484,8 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 
 *Documento generato secondo le convenzioni del progetto — modulo `Xot` — data 2026-05-27*
 =======
-=======
->>>>>>> 28b0298a (fix: phpstan issues)
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
 
@@ -544,22 +496,12 @@ enum UserStatus: string implements XotBaseEnum
 
     public function getLabel(): string
     {
-<<<<<<< HEAD
         // Traduzione gestita centralmente
-=======
-<<<<<<< HEAD
-=======
-        // Traduzione gestita centralmente
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         return __('xot::enums.user_status.'.$this->value);
     }
 }
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 ### Filament Integration
 
 Xot fornisce wrapper base per tutti i componenti Filament:
@@ -689,8 +631,6 @@ All modules depend on **Xot**. Never have circular dependencies.
 **Last Updated**: 2026-07-14  
 **Maintained by**: Laraxot Core Team  
 **PHPStan Level**: 10 (Compliant)
-=======
->>>>>>> laraxot/dev
 ## 🛠️ **Sviluppo e Qualità**
 
 ### Convenzioni
@@ -807,10 +747,7 @@ Modulo core del sistema Laraxot che fornisce classi base e funzionalità comuni 
 
 **Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+
 =======
 =======
 **Mai**:
@@ -931,7 +868,3 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 ---
 
 *Documento generato secondo le convenzioni del progetto — modulo `Xot` — data 2026-05-27*
->>>>>>> 7f6cf6be (.)
->>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

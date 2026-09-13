@@ -12,7 +12,6 @@ class ListCacheLocks extends XotBaseListRecords
 {
     protected static string $resource = CacheLockResource::class;
 
-<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
@@ -31,7 +30,4 @@ class ListCacheLocks extends XotBaseListRecords
             'expiration' => TextColumn::make('expiration')->numeric()->sortable(),
         ];
     }
-=======
-
->>>>>>> laraxot/dev
 }

@@ -146,11 +146,8 @@ declare(strict_types=1);
 namespace Modules\User\Actions;
 
 use Laravel\Socialite\Two\User as SocialiteUser;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class CreateUserFromOAuthAction
@@ -217,11 +214,8 @@ namespace Modules\User\Actions;
 use Illuminate\Support\Facades\DB;
 use Laravel\Socialite\Two\User as SocialiteUser;
 use Modules\Activity\Actions\LogActivityAction;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class CreateUserFromOAuthAction
@@ -332,11 +326,8 @@ it('can refresh Microsoft token', function () {
 // Modules/User/tests/Unit/Actions/CreateUserActionTest.php
 
 use Modules\User\Actions\CreateUserAction;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 
 it('can create user via action', function () {
     $action = app(CreateUserAction::class);
@@ -490,11 +481,8 @@ exit 0
 ```php
 // Modules/User/database/factories/UserFactory.php
 
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 
 $factory->define(User::class, function (Faker $faker) {
     return [
@@ -511,11 +499,8 @@ $factory->define(User::class, function (Faker $faker) {
 ```php
 // Modules/User/tests/Pest.php
 
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 
 function createUser(array $attributes = []): User
 {

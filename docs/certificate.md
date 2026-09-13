@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # _certificate
 
 <!-- Contenuto migrato da _docs/_certificate.txt -->
@@ -73,8 +70,6 @@ https://www.learnvern.com/laravel-tutorial
 https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!
 
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
-=======
->>>>>>> laraxot/dev
 ---
 title: 'Certificate — risorse esterne'
 module: Xot
@@ -123,7 +118,4 @@ updated: 2026-08-24
 - <https://www.learnvern.com/laravel-tutorial>
 - <https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!>
 - <https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!>
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+

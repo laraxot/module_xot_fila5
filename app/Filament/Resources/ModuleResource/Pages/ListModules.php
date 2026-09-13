@@ -25,7 +25,6 @@ class ListModules extends XotBaseListRecords
 
     protected static string $resource = ModuleResource::class;
 
-<<<<<<< HEAD
     #[\Override]
     public function getGridTableColumns(): array
     {
@@ -89,9 +88,4 @@ class ListModules extends XotBaseListRecords
             'delete' => DeleteBulkAction::make(),
         ];
     }
-=======
-    
-
-   
->>>>>>> laraxot/dev
 }

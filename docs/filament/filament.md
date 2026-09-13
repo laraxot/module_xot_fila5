@@ -35,15 +35,8 @@ use Filament\Forms\Components\DatePicker;
 
 class ExampleResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),
@@ -125,15 +118,8 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         // Schema del form

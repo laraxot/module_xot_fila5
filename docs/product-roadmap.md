@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # Xot - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -52,8 +49,6 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
-=======
->>>>>>> laraxot/dev
 # Xot Module - Product Roadmap
 
 **Module:** Xot  
@@ -157,7 +152,4 @@ To provide a **flexible extension framework** that enables rapid development, cu
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+

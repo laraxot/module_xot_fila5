@@ -21,7 +21,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
-<<<<<<< HEAD
 
     #[\Override]
     public function getTableColumns(): array
@@ -50,9 +49,6 @@ class ListLogs extends XotBaseListRecords
                 ->label('Created At'),
         ];
     }
-=======
-   
->>>>>>> laraxot/dev
 
     #[\Override]
     public function getTableFilters(): array

@@ -148,15 +148,8 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -285,12 +278,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
+
 ---
 
 ## Contenuto assorbito da `FILAMENT_4_LARAXOT_RULES.md`
@@ -451,11 +439,8 @@ class MyPage extends XotBasePage
 ### 2. **Metodi Statici Errati**
 ```php
 // ❌ SBAGLIATO
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 public function getFormSchema(): array
@@ -589,9 +574,4 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [Filament 4 Migration Guide](./filament4_migration.md)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
-<<<<<<< HEAD
 =======
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

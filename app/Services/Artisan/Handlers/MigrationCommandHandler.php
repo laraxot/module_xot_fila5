@@ -21,18 +21,10 @@ class MigrationCommandHandler implements CommandHandlerInterface
         if ($moduleName !== '') {
             echo '<h3>Module '.$moduleName.'</h3>';
 
-<<<<<<< HEAD
             return ArtisanService::exe('module:migrate '.$moduleName.' --force');
         }
 
         return ArtisanService::exe('migrate --force');
-=======
-            // Dati sacri: mai --force (solo migrate additivo)
-            return ArtisanService::exe('module:migrate', ['module' => $moduleName]);
-        }
-
-        return ArtisanService::exe('migrate');
->>>>>>> laraxot/dev
     }
 
     public function supports(string $command): bool

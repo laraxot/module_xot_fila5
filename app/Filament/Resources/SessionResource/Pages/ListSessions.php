@@ -16,7 +16,6 @@ class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
 
-<<<<<<< HEAD
     #[\Override]
     public function getGridTableColumns(): array
     {
@@ -50,7 +49,4 @@ class ListSessions extends XotBaseListRecords
                 ->label('Last Activity'),
         ];
     }
-=======
-   
->>>>>>> laraxot/dev
 }

@@ -99,7 +99,6 @@ trait HasSchemalessAttributes
 
     /**
      * Get un valore da extra_attributes.
-<<<<<<< HEAD
      *
      * Returns mixed because extra_attributes stores JSON-serializable data of any type.
      * The return type matches whatever type was stored or the default value provided.
@@ -110,8 +109,6 @@ trait HasSchemalessAttributes
      * @return mixed The stored value or default (could be string, int, bool, array, null, etc.)
      *
      * @see https://github.com/spatie/laravel-schemaless-attributes
-=======
->>>>>>> laraxot/dev
      */
     public function getExtraAttribute(string $key, mixed $default = null): mixed
     {

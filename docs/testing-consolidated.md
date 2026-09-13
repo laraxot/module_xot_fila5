@@ -136,11 +136,8 @@ namespace Modules\ModuleName\Tests\Feature;
 
 use Tests\TestCase;
 use Modules\ModuleName\Models\ExampleModel;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 
 class ExampleApiTest extends TestCase
 {
@@ -223,11 +220,8 @@ declare(strict_types=1);
 namespace Modules\ModuleName\Tests\Feature\Filament;
 
 use Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
 use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\ModuleName\Models\ExampleModel;
 use Livewire\Livewire;
 

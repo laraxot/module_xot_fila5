@@ -16,11 +16,7 @@ class HasManyRelationData extends Data
      */
     public function __construct(
         public string $foreignKey,
-<<<<<<< HEAD
         public int|string $parentKey,
-=======
-        public mixed $parentKey,
->>>>>>> laraxot/dev
         public array $updateData,
         #[MapInputName('from')]
         public ?array $from = null,

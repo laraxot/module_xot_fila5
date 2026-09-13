@@ -304,10 +304,7 @@ protected function afterCreate(): void
 declare(strict_types=1);
 
 namespace Modules\MioModulo\Providers;
-<<<<<<< HEAD
 use Modules\User\Models\User;
-=======
->>>>>>> laraxot/dev
 
 use Modules\Xot\Providers\XotBaseServiceProvider;
 

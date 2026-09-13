@@ -105,15 +105,8 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return static::getFormSchemaImplementation();
     }

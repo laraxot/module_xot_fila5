@@ -419,8 +419,6 @@ discussions:
 - Commit: docs: add cross-reference to policy boundary decision
 
 2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
-<<<<<<< HEAD
-=======
 
 ## 2026-09-11 — Delega Resource per ManageRelatedRecords
 
@@ -441,4 +439,3 @@ Writer `/root`, reviewer `/root/proposal_review`; story condivisa aggiornata. [A
 ### 2026-09-11 — Tracking BMAD completato
 
 Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [discussion #114](https://github.com/laraxot/module_xot_fila5/discussions/114) nel repository Xot, collegate alla story e alla memoria. MCP tentato con 403; pubblicazione riuscita con gh. Nessuna modifica applicativa.
->>>>>>> laraxot/dev

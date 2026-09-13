@@ -1,7 +1,6 @@
 # Xot Module Test Coverage
 
 ## Overview
-<<<<<<< HEAD
 This module has comprehensive test coverage with various test types implemented.
 
 ## Test Results
@@ -23,7 +22,6 @@ This module has comprehensive test coverage with various test types implemented.
 
 ## Status
 All tests are passing and coverage is being maintained.
-=======
 
 Questa sezione in cima era boilerplate mai compilato (tutti zero, "Status: all
 passing" senza numeri a sostegno) — corretta il 2026-09-11 con l'ultima
@@ -71,7 +69,6 @@ entrambi i casi il lato `HEAD` era vuoto o un sottoinsieme esatto del lato
 `laraxot/dev` (stessa riga finale ripetuta) — nessun contenuto perso,
 tenuto il lato piu' completo. Vedi second brain
 `xot-coverage-md-merge-markers-resolved-2026-09-11.md`.
->>>>>>> laraxot/dev
 
 ## Services to Actions conversion — 2026-09-04
 
@@ -329,8 +326,6 @@ sostituito ovunque da `Actions/Model/GetAllModelsByModuleNameAction`
 (gia' esistente, logica identica). I suoi 2 test riscritti sul sostituto
 (coverage preservata). `phpstan analyse Modules/Xot`: 0 errori, cache
 pulita, verificato.
-<<<<<<< HEAD
-=======
 
 ## StoryEpicAndOwnedScopeTest — Safe wrappers e narrowing — 2026-09-08
 
@@ -440,4 +435,3 @@ Verifiche effettive della ripresa:
 
 I contenuti e i marker di conflitto precedenti a questa appendice sono conservati.
 Reindicizzazione second brain e chiusura della story sono affidate al coordinatore.
->>>>>>> laraxot/dev

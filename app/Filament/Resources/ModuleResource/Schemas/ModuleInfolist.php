@@ -12,11 +12,7 @@ class ModuleInfolist extends XotBaseResourceInfolist
     /**
      * @return array<string, TextEntry>
      */
-<<<<<<< HEAD
     public static function getInfolistSchema(): array
-=======
-    public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextEntry::make('name'),

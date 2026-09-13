@@ -3,11 +3,7 @@
 declare(strict_types=1);
 
 use Filament\Support\RawJs;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arrays\ArrayToRawJsAction;
-=======
-use Modules\Xot\Actions\Arr\ArrayToRawJsAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

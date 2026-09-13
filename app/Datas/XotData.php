@@ -28,11 +28,7 @@ class XotData extends Data implements Wireable
 {
     use WireableData;
 
-<<<<<<< HEAD
     public string $main_module = 'User';
-=======
-    public string $main_module = '';
->>>>>>> laraxot/dev
 
     public string $param_name = 'noset';
 

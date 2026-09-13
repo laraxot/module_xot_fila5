@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Xot\Actions\Arrays\DiffAssocRecursiveAction;
-=======
-use Modules\Xot\Actions\Arr\DiffAssocRecursiveAction;
->>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

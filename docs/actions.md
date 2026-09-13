@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Xot Module — QueueableActions Pattern"
 type: guide
@@ -92,10 +86,5 @@ execute(array $array1, array $array2): array
 ---
 
 **Last updated:** 2026-07-21
-<<<<<<< HEAD
-=======
 =======
 
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

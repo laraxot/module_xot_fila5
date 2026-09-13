@@ -7,10 +7,6 @@ return [
         'name' => 'Env',
         'plural' => 'Env',
         'group' => ['name' => 'Admin'],
-<<<<<<< HEAD
-=======
-        'label' => 'env.navigation',
->>>>>>> laraxot/dev
     ],
     'pages' => [
         'health_check_results' => [

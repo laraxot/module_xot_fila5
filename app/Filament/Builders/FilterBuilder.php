@@ -12,13 +12,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
-=======
-use Modules\User\Models\User;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
->>>>>>> laraxot/dev
 
 use function Safe\strtotime;
 
@@ -252,7 +247,6 @@ class FilterBuilder
      *
      * @param  class-string<Model>  $userModel
      */
-<<<<<<< HEAD
     /**
      * User/Author select filter.
      *
@@ -269,13 +263,6 @@ class FilterBuilder
         }
 
         /** @var class-string<Model> $userModel */
-=======
-    public static function userSelect(
-        string $name = 'user',
-        string $userModel = User::class,
-        string $labelColumn = 'name',
-    ): SelectFilter {
->>>>>>> laraxot/dev
         return self::selectFromModel($name, $userModel, $labelColumn, 'id', $name);
     }
 

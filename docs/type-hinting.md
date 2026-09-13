@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
+
 ---
 title: "Type hinting"
 type: reference
@@ -16,10 +12,7 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
 https://wiki.php.net/rfc/scalar_type_hints
@@ -27,13 +20,7 @@ https://wiki.php.net/rfc/return_types
 
 https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 /** @var $post Post */
 
 /** @var $posts Post[] */
@@ -42,20 +29,8 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      * @Route("/types")
      */
 
-<<<<<<< HEAD
 declare(strict_types = 1);
 
-=======
-<<<<<<< HEAD
-
-declare(strict_types = 1);
-
-
-=======
-declare(strict_types = 1);
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 protected ClassName $classType;
 
  // Types are also legal on static properties
@@ -95,13 +70,7 @@ function iterable_map(iterable $list, callable $operation) : iterable
   }
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 public static function byArray(iterable $data)
     {
         $results = [];
@@ -121,15 +90,7 @@ public static function byArray(iterable $data)
         return $slug;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
  private static $instance = null;
@@ -142,15 +103,7 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
         return self::$instance;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 class ClassName
 {
     public function foo(): self
@@ -162,13 +115,7 @@ class ClassName
 $instance = new ClassName();
 $instance->foo();
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ublic function foo(): ?stdClass
     {
         return new stdClass();
@@ -179,26 +126,13 @@ ublic function foo(): ?stdClass
         return null;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 function foo(): object
 {
     return new stdClass();
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Relazioni
 https://github.com/larastan/larastan/issues/689
 
@@ -211,15 +145,4 @@ public function articles(): HasMany {
     return $this->hasMany(Article::class);
 }
 
-<<<<<<< HEAD
 https://github.com/oucil/Code-Hint-Aggregator
-=======
-<<<<<<< HEAD
-
-
-
-https://github.com/oucil/Code-Hint-Aggregator
-=======
-https://github.com/oucil/Code-Hint-Aggregator
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

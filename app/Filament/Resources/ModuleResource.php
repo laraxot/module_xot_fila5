@@ -16,7 +16,6 @@ class ModuleResource extends XotBaseResource
     protected static ?string $model = Module::class;
 
     #[\Override]
-<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [
@@ -29,8 +28,6 @@ class ModuleResource extends XotBaseResource
     }
 
     #[\Override]
-=======
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
-=======
-use Filament\Resources\RelationManagers\RelationManager;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\CacheLockResource\Pages\CreateCacheLock;
 use Modules\Xot\Filament\Resources\CacheLockResource\Pages\EditCacheLock;
 use Modules\Xot\Filament\Resources\CacheLockResource\Pages\ListCacheLocks;
@@ -20,7 +16,6 @@ class CacheLockResource extends XotBaseResource
     protected static ?string $model = CacheLock::class;
 
     /**
-<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Component>
@@ -36,11 +31,6 @@ class CacheLockResource extends XotBaseResource
     }
 
     #[\Override]
-=======
-     * @return array<string, class-string<RelationManager>>
-     */
-    #[\Override]
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

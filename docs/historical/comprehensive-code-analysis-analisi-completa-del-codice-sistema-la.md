@@ -162,15 +162,8 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -179,15 +172,8 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -280,15 +266,8 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
     public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),

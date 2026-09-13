@@ -14,20 +14,12 @@ use Modules\Xot\Traits\Updater;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
-=======
- * @method static \Illuminate\Database\Eloquent\Factories\Factory<static> factory($count = null, $state = [])
- *
->>>>>>> laraxot/dev
  * Class XotBaseModel.
  */
 abstract class XotBaseModel extends EloquentModel
 {
     use HasXotFactory;
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     use RelationX;
     use Updater;
 
@@ -74,10 +66,6 @@ abstract class XotBaseModel extends EloquentModel
             return isset($value['object'])
             && (Str::contains($value['object']::class, 'Models\\') || Str::contains($value['object']::class, 'Filament\\Resources\\'));
         });
-<<<<<<< HEAD
-=======
-        
->>>>>>> laraxot/dev
 
         if (! isset($object['object'])) {
             throw new \RuntimeException('Unable to resolve caller object for getClassName()');

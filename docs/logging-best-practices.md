@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview
@@ -253,8 +250,6 @@ try {
     Log::error('Service failure', [
         'service' => get_class($service),
         'error' => $e->getMessage(),
-=======
->>>>>>> laraxot/dev
 # Logging Best Practices - 2026-03-02
 
 ## Problem Analysis
@@ -494,18 +489,12 @@ try {
         'code' => $e->getCode(),
         'trace' => $e->getTraceAsString(),
         'request_id' => $requestId,
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+
     ]);
     throw $e;
 }
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 ### Step 4: Implement Audit Trail
 ```php
 // Create audit records for important events
@@ -574,8 +563,6 @@ Following these guidelines will:
 6. **Scale better** under load
 
 **Remember**: If everything is working correctly, there should be NO log output.
-=======
->>>>>>> laraxot/dev
 ### 4. Performance Logging
 Use dedicated performance monitoring:
 
@@ -791,9 +778,4 @@ Excessive logging is a performance killer that provides little value. By followi
 
 **Status**: Ready for Implementation
 **Priority**: HIGH
-<<<<<<< HEAD
 **Estimated Impact**: 10-15% performance improvement
-=======
-**Estimated Impact**: 10-15% performance improvement
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

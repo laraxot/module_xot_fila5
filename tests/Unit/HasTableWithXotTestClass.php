@@ -66,11 +66,7 @@ class HasTableWithXotTestClass
     }
 
     /**
-<<<<<<< HEAD
      * @return array<int, mixed>
-=======
-     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
->>>>>>> laraxot/dev
      */
     public function getTableFilters(): array
     {
