@@ -405,6 +405,7 @@ trait HasXotTable
      *
      *
      * @return class-string<Model>
+     * @phpstan-return class-string<Model>
      *
      * @throws \Exception Se non viene trovata una classe modello valida
      */
@@ -417,24 +418,23 @@ trait HasXotTable
             $relationship = $this->getRelationship();
             Assert::isInstanceOfAny($relationship, [Relation::class, Builder::class]);
             $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
-
-            /** @var class-string<Model> $relatedClass */
-            $relatedClass = $related::class;
+            if ($related instanceof Model) {
+                /** @var class-string<Model> $relatedClass */
+            $relatedClass = get_class($related);
 
             return $relatedClass;
+            }
         }
 
         /* @phpstan-ignore-next-line function.alreadyNarrowedType */
         if (method_exists($this, 'getModel')) {
             $model = $this->getModel();
             Assert::string($model);
-            Assert::classExists($model);
-            Assert::subclassOf($model, Model::class);
+            if (! is_a($model, Model::class, true)) {
+                throw new RuntimeException('Invalid model class '.$model);
+            }
 
-            /** @var class-string<Model> $modelClass */
-            $modelClass = $model;
-
-            return $modelClass;
+            return $model;
         }
 
         throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
