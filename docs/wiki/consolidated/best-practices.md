@@ -1,5 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_RVnRKe
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_RCVkhw
 <<<<<<< HEAD
 =======
 =======
@@ -21,6 +26,10 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RVnRKe
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_RCVkhw
 title: "Best Practices per Laraxot"
 module: "Xot"
 type: concept
@@ -31,6 +40,12 @@ qmd: "best practices"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_RVnRKe
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_RCVkhw
 >>>>>>> laraxot/dev
 # Best Practices per Laraxot
 
@@ -100,6 +115,12 @@ public function process(\Modules\User\Models\User $user) {
     // Codice
 }
 <<<<<<< HEAD
+<<<<<<< .merge_file_RVnRKe
+=======
+``` 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_RCVkhw
 ```
 =======
 <<<<<<< HEAD
@@ -111,3 +132,7 @@ public function process(\Modules\User\Models\User $user) {
 >>>>>>> laraxot/dev
 ``` 
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_RVnRKe
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_RCVkhw

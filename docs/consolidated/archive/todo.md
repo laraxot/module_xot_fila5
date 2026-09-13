@@ -1,10 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_t3gzXC
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_HFdrIf
 # todo
 
 <!-- Contenuto migrato da _docs/todo.txt -->
 
 usare userprovider che e' un contratto sulle policy
 =======
+<<<<<<< .merge_file_t3gzXC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HFdrIf
 ---
 title: "_todo"
 module: "Xot"
@@ -16,6 +25,12 @@ qmd: " todo"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< .merge_file_t3gzXC
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HFdrIf
 >>>>>>> laraxot/dev
 # _todo
 
@@ -25,6 +40,14 @@ questo con dei stubs crea services, traits ed altro da estendere per fare scrive
 https://github.com/limewell/laravel-make-extender
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_t3gzXC
+=======
+
+mostrare in una blade uso disco etc 
+https://github.com/spatie/laravel-health
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_HFdrIf
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 =======
@@ -32,3 +55,7 @@ https://github.com/spatie/laravel-health
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_t3gzXC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HFdrIf

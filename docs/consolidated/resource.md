@@ -58,8 +58,17 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_wsngsl
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
     {
         return [
             // Schema del form
@@ -95,8 +104,17 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
    - ✅ `public static function getFormSchema(): array`
 =======
+<<<<<<< .merge_file_wsngsl
    - ✅ `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   - ✅ `public static function getFormSchema(): array`
+=======
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -211,8 +229,17 @@ class ListRecords extends XotBaseListRecords
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_wsngsl
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -544,8 +571,17 @@ public function getTableColumns(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_wsngsl
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
 {
     return [
         'nome' => TextInput::make('nome'),

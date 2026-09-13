@@ -90,8 +90,17 @@ declare(strict_types=1);
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< .merge_file_c0klCq
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Lgz6XZ
 {
     return [
         'field_name' => [

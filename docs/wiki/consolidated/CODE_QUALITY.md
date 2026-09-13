@@ -145,7 +145,15 @@ return [
 
 ```php
 // ✅ CORRECT
+<<<<<<< .merge_file_hoqIrE
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XDMYip
 {
     return [
         'name' => TextInput::make('name'),
@@ -154,7 +162,15 @@ public function getFormSchema(): array
 }
 
 // ❌ WRONG
+<<<<<<< .merge_file_hoqIrE
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XDMYip
 {
     return [
         TextInput::make('name')->label('Nome'),

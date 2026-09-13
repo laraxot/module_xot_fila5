@@ -1,5 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< .merge_file_QA0SkQ
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_fHfnjW
 <<<<<<< HEAD
 =======
 =======
@@ -19,6 +24,10 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QA0SkQ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fHfnjW
 title: "Linee Guida per la Documentazione in Laraxot"
 module: "Xot"
 type: how-to
@@ -28,6 +37,12 @@ updated: 2026-07-14
 qmd: "documentation guidelines"
 related:
   - "./eloquent-magic-properties-rule.md"
+<<<<<<< .merge_file_QA0SkQ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fHfnjW
 >>>>>>> laraxot/dev
 ---
 
@@ -174,6 +189,12 @@ Modules\ModuloNome\Models\NomeModello
 ```
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_QA0SkQ
+=======
+**Tabella:** `nome_tabella`  
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_fHfnjW
 **Tabella:** `nome_tabella`
 =======
 <<<<<<< HEAD
@@ -185,6 +206,10 @@ Modules\ModuloNome\Models\NomeModello
 >>>>>>> laraxot/dev
 **Tabella:** `nome_tabella`  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QA0SkQ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fHfnjW
 **Chiave primaria:** `id_nome`
 
 **Attributi principali:**
@@ -292,6 +317,12 @@ Modules\Brain\Models\Socio
 ```
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_QA0SkQ
+=======
+**Tabella:** `socio`  
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_fHfnjW
 **Tabella:** `socio`
 =======
 <<<<<<< HEAD
@@ -303,6 +334,10 @@ Modules\Brain\Models\Socio
 >>>>>>> laraxot/dev
 **Tabella:** `socio`  
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_QA0SkQ
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fHfnjW
 **Chiave primaria:** `id_socio`
 
 **Relazioni:**
