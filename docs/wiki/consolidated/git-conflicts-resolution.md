@@ -7,6 +7,14 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9uDHo1
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PnkjKB
+>>>>>>> laraxot/dev
 
 =======
 <<<<<<< HEAD
@@ -16,6 +24,13 @@ updated: 2026-08-24
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9uDHo1
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PnkjKB
 >>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
@@ -114,6 +129,14 @@ $res=Locality::query()
 ### 1. Controllo Conflitti
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9uDHo1
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_PnkjKB
+>>>>>>> laraxot/dev
 
 ```
 =======
@@ -124,6 +147,13 @@ $res=Locality::query()
 ```
 =======
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9uDHo1
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PnkjKB
 >>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
@@ -328,4 +358,13 @@ php artisan lang:check
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9uDHo1
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PnkjKB
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

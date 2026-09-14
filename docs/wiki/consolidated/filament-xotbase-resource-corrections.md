@@ -178,6 +178,15 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MjrTaU
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_oPlmiF
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -185,6 +194,13 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MjrTaU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_oPlmiF
 >>>>>>> laraxot/dev
     {
         return [

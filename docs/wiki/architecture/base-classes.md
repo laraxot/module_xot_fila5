@@ -40,7 +40,11 @@ class MyResource extends XotBaseResource
 {
     // ✅ OK - Ha getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array { /* ... */ }
+=======
+    public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
@@ -143,7 +147,11 @@ abstract class XotBaseResource extends Filament\Resources\Resource
      * Get form schema with automatic translations.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -310,7 +318,11 @@ class YourResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -383,7 +395,11 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 // ✅ OPTIMIZED in XotBase classes
 /** @return array<string, Component> */
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev

@@ -1,5 +1,14 @@
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PrgpCn
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6IFYIr
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan - Modulo Xot"
 module: "Xot"
@@ -11,6 +20,15 @@ qmd: "phpstan fixes 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PrgpCn
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6IFYIr
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Xot
 
@@ -100,17 +118,41 @@ public function trans(mixed $item): string
         $item = (string) $item;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PrgpCn
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_6IFYIr
+>>>>>>> laraxot/dev
 
     if (empty($item) || null === $this->transKey) {
         return $item;
     }
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PrgpCn
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6IFYIr
+>>>>>>> laraxot/dev
     
     if (empty($item) || null === $this->transKey) {
         return $item;
     }
     
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_PrgpCn
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6IFYIr
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     // ... resto della logica
 }

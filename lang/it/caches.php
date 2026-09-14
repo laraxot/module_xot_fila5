@@ -7,10 +7,28 @@ return [
         'id' => ['label' => 'id'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+<<<<<<< HEAD
+=======
+        'key' => ['label' => 'key'],
+        'expiration' => ['label' => 'expiration'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+<<<<<<< HEAD
+=======
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
+        ],
+>>>>>>> laraxot/dev
     ],
 ];
