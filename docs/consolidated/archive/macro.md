@@ -1,5 +1,14 @@
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_o8FpKF
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_v1gbg3
+>>>>>>> laraxot/dev
 ---
 title: "_macro"
 module: "Xot"
@@ -11,6 +20,15 @@ qmd: " macro"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_o8FpKF
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_v1gbg3
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # _macro
 
@@ -18,6 +36,15 @@ related:
 
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_o8FpKF
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_v1gbg3
+>>>>>>> laraxot/dev
 # _macro
 
 <!-- Contenuto migrato da _docs/_macro.txt -->
@@ -25,4 +52,11 @@ https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
 =======
 
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_o8FpKF
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_v1gbg3
 >>>>>>> laraxot/dev

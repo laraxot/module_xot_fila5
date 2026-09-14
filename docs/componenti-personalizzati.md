@@ -24,7 +24,11 @@ class ClienteResource extends XotBaseResource
     protected static ?string $cluster = ClienteCluster::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

@@ -7,7 +7,11 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ### 1. Namespace e Convenzioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace](namespace-conventions.md)
+=======
+- [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
+>>>>>>> laraxot/dev
 =======
 - [Convenzioni Namespace](NAMESPACE-CONVENTIONS.md)
 >>>>>>> laraxot/dev
@@ -27,8 +31,13 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 
 ### 3. Autenticazione e UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Componenti Filament](../../themes/one/docs/filament_components.md)
 - [Registrazione Utenti](../../themes/one/docs/auth.md)
+=======
+- [Componenti Filament](../../Themes/One/docs/FILAMENT_COMPONENTS.md)
+- [Registrazione Utenti](../../Themes/One/docs/AUTH.md)
+>>>>>>> laraxot/dev
 =======
 - [Componenti Filament](../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 - [Registrazione Utenti](../../Themes/One/docs/AUTH.md)
@@ -113,6 +122,10 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
    - Documentazione dei metodi aggiornata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -153,6 +166,10 @@ aurmich/dev
 b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -184,6 +201,10 @@ Mantenere il codice più semplice è preferibile, soprattutto quando le funziona
 b6f667c (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -214,6 +235,10 @@ I seguenti conflitti sono stati risolti come parte dell'ultima manutenzione del 
 fc83074 (.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -249,8 +274,13 @@ La risoluzione dei conflitti rimanenti dovrebbe seguire questi principi:
 ## Collegamenti tra versioni di risoluzione_conflitti.md
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [risoluzione_conflitti.md](../../../xot/docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../tenant/docs/risoluzione_conflitti.md)
+=======
+* [risoluzione_conflitti.md](../../../Xot/docs/risoluzione_conflitti.md)
+* [risoluzione_conflitti.md](../../../Tenant/docs/risoluzione_conflitti.md)
+>>>>>>> laraxot/dev
 =======
 * [risoluzione_conflitti.md](../../../Xot/docs/risoluzione_conflitti.md)
 * [risoluzione_conflitti.md](../../../Tenant/docs/risoluzione_conflitti.md)
@@ -260,14 +290,20 @@ aurmich/dev
 5693302 (.)
 b6f667c (.)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [Risoluzione Conflitti Xot](../../../xot/docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../tenant/docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../docs/conflict_resolution.md)
 fc83074 (.)
 =======
+=======
+>>>>>>> laraxot/dev
 * [Risoluzione Conflitti Xot](../../../Xot/docs/risoluzione_conflitti.md)
 * [Risoluzione Conflitti Tenant](../../../Tenant/docs/risoluzione_conflitti.md)
 * [Linee Guida Principali Risoluzione Conflitti](../../../../docs/conflict_resolution.md)
 fc83074 (.)
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

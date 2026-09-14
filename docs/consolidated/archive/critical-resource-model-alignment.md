@@ -49,7 +49,21 @@ protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'p
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_On8AOW
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TTaDUj
 >>>>>>> laraxot/dev
 {
     return [
@@ -68,7 +82,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_On8AOW
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TTaDUj
 >>>>>>> laraxot/dev
 {
     return [

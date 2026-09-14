@@ -1,6 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_JcWxbJ
+
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mZIxRz
 >>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
@@ -100,6 +115,15 @@ $res=Locality::query()
 ```bash
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JcWxbJ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mZIxRz
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -301,4 +325,13 @@ php artisan lang:check
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_JcWxbJ
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_mZIxRz
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

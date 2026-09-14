@@ -98,7 +98,11 @@ final class TeamUserResource extends XotBaseResource
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

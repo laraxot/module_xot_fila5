@@ -145,7 +145,19 @@ return [
 
 ```php
 // ✅ CORRECT
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_hoqIrE
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XDMYip
+>>>>>>> laraxot/dev
 {
     return [
         'name' => TextInput::make('name'),
@@ -154,7 +166,19 @@ public function getFormSchema(): array
 }
 
 // ❌ WRONG
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_hoqIrE
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XDMYip
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->label('Nome'),
