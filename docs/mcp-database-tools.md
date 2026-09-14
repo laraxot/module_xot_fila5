@@ -2,7 +2,11 @@
 
 ## Overview
 <<<<<<< HEAD
+<<<<<<< HEAD
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the <nome progetto>_survey database used in the Limesurvey integration.
+=======
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
+>>>>>>> laraxot/dev
 =======
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
 >>>>>>> laraxot/dev
@@ -17,7 +21,11 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
   "command": "node",
   "args": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "/var/www/_bases/base_techplanner_fila5/bashscripts/mcp/mysql-db-connector.js"
+=======
+    "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> laraxot/dev
 =======
     "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
 >>>>>>> laraxot/dev
@@ -26,7 +34,11 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Use Cases for <nome progetto>_survey Database**:
+=======
+**Use Cases for quaeris_survey Database**:
+>>>>>>> laraxot/dev
 =======
 **Use Cases for quaeris_survey Database**:
 >>>>>>> laraxot/dev
@@ -64,7 +76,11 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ### Direct Database Queries (using MySQL MCP)
 ```sql
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- List all survey tables in <nome progetto>_survey database
+=======
+-- List all survey tables in quaeris_survey database
+>>>>>>> laraxot/dev
 =======
 -- List all survey tables in quaeris_survey database
 >>>>>>> laraxot/dev
@@ -110,7 +126,11 @@ Ensure database connections are properly configured in:
 Location: `~/.cursor/mcp.json`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the <nome progetto>_survey database without additional configuration.
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
+>>>>>>> laraxot/dev
 =======
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
 >>>>>>> laraxot/dev
@@ -119,7 +139,11 @@ Current configuration includes MySQL access that automatically uses Laravel's .e
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Use proper connection** (`limesurvey` connection for <nome progetto>_survey database)
+=======
+2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
+>>>>>>> laraxot/dev
 =======
 2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
 >>>>>>> laraxot/dev

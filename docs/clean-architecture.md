@@ -2,7 +2,10 @@
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -23,6 +26,9 @@ updated: 2026-08-24
 
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -8,9 +8,15 @@ updated: 2026-06-11
 qmd: "testcase xotbasetestcase nwidart laravel modules pest phpstan hierarchy"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - https://github.com/laraxot/<repo progetto>/issues/316
 discussions:
   - https://github.com/laraxot/<repo progetto>/discussions/316
+=======
+  - https://github.com/laraxot/base_fixcity_fila5/issues/316
+discussions:
+  - https://github.com/laraxot/base_fixcity_fila5/discussions/316
+>>>>>>> laraxot/dev
 =======
   - https://github.com/laraxot/base_fixcity_fila5/issues/316
 discussions:

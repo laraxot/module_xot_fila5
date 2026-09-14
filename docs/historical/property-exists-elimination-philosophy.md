@@ -272,7 +272,11 @@ if (isset($record->email)) {
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - <nome progetto>/Filament (2 file)
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> laraxot/dev
 =======
 - Quaeris/Filament (2 file)
 >>>>>>> laraxot/dev
@@ -404,7 +408,11 @@ if (method_exists($record, 'getUrl')) {
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | 2 | Medium | Bassa |
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> laraxot/dev
 =======
 | Quaeris | 2 | Medium | Bassa |
 >>>>>>> laraxot/dev

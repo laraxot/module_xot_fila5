@@ -80,6 +80,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila5/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -90,6 +91,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila5/laravel/Modules/Xot/docs/documento.md)
 =======
+=======
+>>>>>>> laraxot/dev
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -99,6 +102,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\application\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -173,6 +179,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila5/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -183,6 +190,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila5/laravel/Modules/Xot/docs/documento.md)
 =======
+=======
+>>>>>>> laraxot/dev
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -192,6 +201,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\application\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -267,6 +279,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila5/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -277,6 +290,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila5/laravel/Modules/Xot/docs/documento.md)
 =======
+=======
+>>>>>>> laraxot/dev
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -286,6 +301,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\application\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_planning_module_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)

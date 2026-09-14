@@ -25,7 +25,11 @@ Xot serves as the fundamental engine of the Laraxot ecosystem, providing:
 
 ### Vision Statement
 <<<<<<< HEAD
+<<<<<<< HEAD
 > "To establish Xot as the definitive foundation for Laravel 13 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
+=======
+> "To establish Xot as the definitive foundation for Laravel 12 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
+>>>>>>> laraxot/dev
 =======
 > "To establish Xot as the definitive foundation for Laravel 12 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
 >>>>>>> laraxot/dev

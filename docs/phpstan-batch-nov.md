@@ -141,7 +141,11 @@ return $schema->components($formSchema);
 7. **Job** - 207 file analizzati, 0 errori (4 errori corretti)
 8. **Media** - 0 errori ✨
 <<<<<<< HEAD
+<<<<<<< HEAD
 9. **<nome progetto>** - 0 errori ✨ (USER fix applicati)
+=======
+9. **Quaeris** - 0 errori ✨ (USER fix applicati)
+>>>>>>> laraxot/dev
 =======
 9. **Quaeris** - 0 errori ✨ (USER fix applicati)
 >>>>>>> laraxot/dev
@@ -247,7 +251,11 @@ return $schema->components($formSchema);
 2. Media (20+ errori)
 3. Notify (60+ errori)
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. <nome progetto> (30+ errori)
+=======
+4. Quaeris (30+ errori)
+>>>>>>> laraxot/dev
 =======
 4. Quaeris (30+ errori)
 >>>>>>> laraxot/dev

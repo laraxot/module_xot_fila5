@@ -1,8 +1,14 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 id: base-<nome progetto>-fila5-master-story
 slug: base-<nome progetto>-fila5-master
 scope: [project:<repo progetto>]
+=======
+id: base-workorder-fila5-master-story
+slug: base-workorder-fila5-master
+scope: [project:base_workorder_fila5]
+>>>>>>> laraxot/dev
 =======
 id: base-workorder-fila5-master-story
 slug: base-workorder-fila5-master
@@ -14,7 +20,11 @@ created: 2026-09-06
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Master Story - <repo progetto> Quality Gates
+=======
+# Master Story - base_workorder_fila5 Quality Gates
+>>>>>>> laraxot/dev
 =======
 # Master Story - base_workorder_fila5 Quality Gates
 >>>>>>> laraxot/dev

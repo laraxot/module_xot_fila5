@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 title: "Agent instructions"
@@ -18,6 +21,12 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> 7f6cf6be (.)

@@ -18,7 +18,11 @@ Xot è **owner** dei concetti wiki propagati in `docs/wiki/concepts/` (second br
 - Script: [../../../../bashscripts/tools/dedup_module_docs.py](../../../../bashscripts/tools/dedup_module_docs.py)
 - How-to: [../../../../docs/wiki/how-to/module-docs-deduplication.md](../../../../docs/wiki/how-to/module-docs-deduplication.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Issue: [#124](https://github.com/provtv/<repo progetto>/issues/124)
+=======
+- Issue: [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)
+>>>>>>> laraxot/dev
 =======
 - Issue: [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)
 >>>>>>> laraxot/dev

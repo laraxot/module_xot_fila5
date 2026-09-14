@@ -90,7 +90,21 @@ declare(strict_types=1);
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_8KfnRf
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WkhWn5
 >>>>>>> laraxot/dev
 {
     return [
@@ -890,7 +904,21 @@ declare(strict_types=1);
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_8KfnRf
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_WkhWn5
 >>>>>>> laraxot/dev
 {
     return [

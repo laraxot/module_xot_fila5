@@ -7,7 +7,11 @@
 ## 🎯 **Lettura Essenziale**
 1. [README.md](./readme.md) - Panoramica del framework Laraxot.
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 13 & Stability.
+=======
+2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 12 & Stability.
+>>>>>>> laraxot/dev
 =======
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 12 & Stability.
 >>>>>>> laraxot/dev

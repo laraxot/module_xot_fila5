@@ -46,7 +46,11 @@ Tutti i 18 moduli hanno raggiunto **PERFEZIONE ASSOLUTA**:
 - ✅ **Lang** - i18n & translations (0 errori)
 - ✅ **AI** - AI integration (0 errori)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ **<nome progetto>** - Domain logic (0 errori)
+=======
+- ✅ **Fixcity** - Domain logic (0 errori)
+>>>>>>> laraxot/dev
 =======
 - ✅ **Fixcity** - Domain logic (0 errori)
 >>>>>>> laraxot/dev
@@ -197,7 +201,11 @@ Violavano regola "TUTTI i test vanno in Pest":
 
 # Per modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 for module in Activity AI Blog Cms Comment <nome progetto> Gdpr Geo Job Lang Media Notify Rating Seo Tenant UI User Xot; do
+=======
+for module in Activity AI Blog Cms Comment Fixcity Gdpr Geo Job Lang Media Notify Rating Seo Tenant UI User Xot; do
+>>>>>>> laraxot/dev
 =======
 for module in Activity AI Blog Cms Comment Fixcity Gdpr Geo Job Lang Media Notify Rating Seo Tenant UI User Xot; do
 >>>>>>> laraxot/dev

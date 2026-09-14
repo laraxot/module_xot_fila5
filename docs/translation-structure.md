@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 module: theme
@@ -10,6 +13,10 @@ canonical: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -42,6 +49,9 @@ Modules/ModuleName/lang/lang/{locale}/file.php  ← WRONG
 
 See `project_docs/TRANSLATION_DIRECTORY_RULES.md` for full details.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

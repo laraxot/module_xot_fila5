@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -19,6 +22,9 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/google_drive.txt -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -31,8 +37,11 @@ https://github.com/ivanvermeyen/laravel-google-drive-demo
 https://awesomeopensource.com/project/ivanvermeyen/laravel-google-drive-demo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 https://www.myphpnotes.com/post/integrate-google-drive-as-laravel-filesystem
@@ -42,6 +51,10 @@ https://www.myphpnotes.com/post/integrate-google-drive-as-laravel-filesystem
 spatie/flysystem-dropbox
 https://laravel.com/docs/8.x/filesystem#custom-filesystems
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -51,6 +64,9 @@ https://www.myphpnotes.com/post/integrate-google-drive-as-laravel-filesystem
 spatie/flysystem-dropbox
 https://laravel.com/project_docs/8.x/filesystem#custom-filesystems
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -62,7 +78,10 @@ https://packagist.org/packages/private-it/flysystem-google-drive
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -71,15 +90,24 @@ https://stackoverflow.com/questions/49529585/laravel-filesystem-managing-folders
 https://medium.com/@dennissmink/laravel-backup-database-to-your-google-drive-f4728a2b74bd
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 
 
 https://flysystem.thephpleague.com/v1/docs/adapter/google-cloud-storage/
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://flysystem.thephpleague.com/v1/project_docs/adapter/google-cloud-storage/
+=======
+=======
+https://flysystem.thephpleague.com/v1/project_docs/adapter/google-cloud-storage/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 https://flysystem.thephpleague.com/v1/project_docs/adapter/google-cloud-storage/

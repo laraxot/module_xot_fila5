@@ -2,7 +2,10 @@
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -26,6 +29,9 @@ updated: 2026-08-24
 
 - <https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

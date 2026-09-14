@@ -38,7 +38,11 @@ git-tracked, la storia resta recuperabile: **Git è l'archivio**, non una cartel
   e le versioni UPPERCASE.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 In più aveva un path hardcoded verso un altro repo (`<repo progetto>`). È l'esempio
+=======
+In più aveva un path hardcoded verso un altro repo (`base_ptvx_fila5_mono`). È l'esempio
+>>>>>>> laraxot/dev
 =======
 In più aveva un path hardcoded verso un altro repo (`base_ptvx_fila5_mono`). È l'esempio
 >>>>>>> laraxot/dev

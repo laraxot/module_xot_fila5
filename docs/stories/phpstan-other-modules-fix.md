@@ -3,7 +3,11 @@ id: phpstan-other-modules-fix
 slug: phpstan-other-modules
 scope:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - project:<repo progetto>
+=======
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
 =======
   - project:base_workorder_fila5
 >>>>>>> laraxot/dev
@@ -33,7 +37,11 @@ PHPStan su moduli rimanenti restituisce **~700+ errori**.
 | Notify | ~30 | Pending |
 | Tenant | ~30 | Pending |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | ~50 | Pending |
+=======
+| WorkOrder | ~50 | Pending |
+>>>>>>> laraxot/dev
 =======
 | WorkOrder | ~50 | Pending |
 >>>>>>> laraxot/dev

@@ -2,7 +2,11 @@
 id: migration-audit
 slug: migration-audit
 <<<<<<< HEAD
+<<<<<<< HEAD
 scope: [project:<repo progetto>]
+=======
+scope: [project:base_workorder_fila5]
+>>>>>>> laraxot/dev
 =======
 scope: [project:base_workorder_fila5]
 >>>>>>> laraxot/dev

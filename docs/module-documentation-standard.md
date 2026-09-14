@@ -117,7 +117,11 @@ public function createUser(array $data): User
 - Include social login integration guides
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto> Module
+=======
+### Quaeris Module
+>>>>>>> laraxot/dev
 =======
 ### Quaeris Module
 >>>>>>> laraxot/dev

@@ -63,7 +63,11 @@ This means Xot's `require-dev` dependencies are **merged into the root composer.
 ### Cleanup: Duplicate Package Names
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Older Composer attempts used either the previous package name or a Laravel 13-only line:
+=======
+Older Composer attempts used either the previous package name or a Laravel 12-only line:
+>>>>>>> laraxot/dev
 =======
 Older Composer attempts used either the previous package name or a Laravel 12-only line:
 >>>>>>> laraxot/dev

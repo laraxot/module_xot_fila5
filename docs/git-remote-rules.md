@@ -3,6 +3,7 @@
 ## 🚨 CRITICAL MANDATE: Root Remote Isolation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Il repository monorepo radice (`/var/www/_bases/<repo progetto>/`) deve contenere ESCLUSIVAMENTE il remote `origin`.**
 
 ```ini
@@ -10,12 +11,17 @@
 [remote "origin"]
     url = git@github.com:provtv/<repo progetto>.git
 =======
+=======
+>>>>>>> laraxot/dev
 **Il repository monorepo radice (`/var/www/_bases/base_ptvx_fila5/`) deve contenere ESCLUSIVAMENTE il remote `origin`.**
 
 ```ini
 # ✅ CORRETTO in /var/www/_bases/base_ptvx_fila5/.git/config
 [remote "origin"]
     url = git@github.com:provtv/base_ptv_fila5.git
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     fetch = +refs/heads/*:refs/remotes/origin/*
 

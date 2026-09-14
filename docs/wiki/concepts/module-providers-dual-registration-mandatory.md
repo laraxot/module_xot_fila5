@@ -52,7 +52,11 @@ Senza (1) il modulo non boota. Senza (2) in **entrambi** i manifest, il panel Fi
 **Convenzione esplicita utente:** non ottimizzare via l'entry in `composer.json` perché "qui non la legge nessuno". Entrambi i file vanno sempre allineati.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Pattern da studiare (<nome progetto>)
+=======
+## Pattern da studiare (WorkOrder)
+>>>>>>> laraxot/dev
 =======
 ## Pattern da studiare (WorkOrder)
 >>>>>>> laraxot/dev
@@ -62,8 +66,13 @@ Senza (1) il modulo non boota. Senza (2) in **entrambi** i manifest, il panel Fi
 ```json
 "providers": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Modules\\<nome progetto>\\Providers\\<nome progetto>ServiceProvider",
     "Modules\\<nome progetto>\\Providers\\Filament\\AdminPanelProvider"
+=======
+    "Modules\\WorkOrder\\Providers\\WorkOrderServiceProvider",
+    "Modules\\WorkOrder\\Providers\\Filament\\AdminPanelProvider"
+>>>>>>> laraxot/dev
 =======
     "Modules\\WorkOrder\\Providers\\WorkOrderServiceProvider",
     "Modules\\WorkOrder\\Providers\\Filament\\AdminPanelProvider"
@@ -78,8 +87,13 @@ Senza (1) il modulo non boota. Senza (2) in **entrambi** i manifest, il panel Fi
 ```bash
 bash bashscripts/tools/audit-module-providers-dual-registration.sh
 <<<<<<< HEAD
+<<<<<<< HEAD
 bash bashscripts/tools/audit-module-providers-dual-registration.sh <nome progetto>
 bash bashscripts/tools/audit-module-provider-manifest.sh <nome progetto>
+=======
+bash bashscripts/tools/audit-module-providers-dual-registration.sh WorkOrder
+bash bashscripts/tools/audit-module-provider-manifest.sh WorkOrder
+>>>>>>> laraxot/dev
 =======
 bash bashscripts/tools/audit-module-providers-dual-registration.sh WorkOrder
 bash bashscripts/tools/audit-module-provider-manifest.sh WorkOrder

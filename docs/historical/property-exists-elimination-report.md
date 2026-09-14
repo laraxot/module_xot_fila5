@@ -53,7 +53,11 @@ $user->hasAttribute('name');  // true
 | **Lang** | 1 | 2 | ~1 min |
 | **DbForge** | 1 | 1 | ~1 min |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **<nome progetto>** | 1 | 1 | ~2 min |
+=======
+| **Quaeris** | 1 | 1 | ~2 min |
+>>>>>>> laraxot/dev
 =======
 | **Quaeris** | 1 | 1 | ~2 min |
 >>>>>>> laraxot/dev
@@ -72,7 +76,11 @@ $user->hasAttribute('name');  // true
 ✅ Lang:    0 errori
 ✅ DbForge: 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ <nome progetto>: 0 errori su file modificato
+=======
+✅ Quaeris: 0 errori su file modificato
+>>>>>>> laraxot/dev
 =======
 ✅ Quaeris: 0 errori su file modificato
 >>>>>>> laraxot/dev
@@ -243,7 +251,11 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 1. `Console/Commands/SearchTextInDbCommand.php` - dynamic table property ✅
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto> (1 file)
+=======
+### Quaeris (1 file)
+>>>>>>> laraxot/dev
 =======
 ### Quaeris (1 file)
 >>>>>>> laraxot/dev
@@ -315,7 +327,11 @@ if (isset($media->file_name)) {
 | **Lang** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **DbForge** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **<nome progetto>** | ⚠️ 64 errori* | - | - |
+=======
+| **Quaeris** | ⚠️ 64 errori* | - | - |
+>>>>>>> laraxot/dev
 =======
 | **Quaeris** | ⚠️ 64 errori* | - | - |
 >>>>>>> laraxot/dev
@@ -571,7 +587,11 @@ Ogni modulo ha ora:
 ### 1. Moduli Rimanenti con Errori
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **<nome progetto>** (64 errori):
+=======
+**Quaeris** (64 errori):
+>>>>>>> laraxot/dev
 =======
 **Quaeris** (64 errori):
 >>>>>>> laraxot/dev

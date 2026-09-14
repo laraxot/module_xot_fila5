@@ -321,7 +321,11 @@ public function canAccess($user): bool
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -333,11 +337,18 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -861,7 +872,11 @@ public function canAccess($user): bool
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -873,11 +888,18 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

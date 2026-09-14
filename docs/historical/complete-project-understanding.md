@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # <nome progetto> Fila4 Mono - Filosofia Completa del Progetto
+=======
+# Quaeris Fila4 Mono - Filosofia Completa del Progetto
+>>>>>>> laraxot/dev
 =======
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
 >>>>>>> laraxot/dev
@@ -8,15 +12,21 @@
 
 ### Architettura del Sistema
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto> è un sistema completo di gestione survey basato su Laravel 13 + Filament 5 con il framework Laraxot. L'architettura è modulare e segue il pattern:
 
 ```
 Xot (Motore) → Moduli Specifici (User, <nome progetto>, etc.) → Funzionalità
 =======
+=======
+>>>>>>> laraxot/dev
 Quaeris è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
 
 ```
 Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -89,7 +99,11 @@ Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
 ## Business Logic
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Modulo <nome progetto>
+=======
+### Modulo Quaeris
+>>>>>>> laraxot/dev
 =======
 ### Modulo Quaeris
 >>>>>>> laraxot/dev
@@ -137,7 +151,11 @@ Il sistema è configurato con Model Context Protocol (MCP) per potenziare IDE AI
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto> rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+=======
+Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+>>>>>>> laraxot/dev
 =======
 Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
 >>>>>>> laraxot/dev

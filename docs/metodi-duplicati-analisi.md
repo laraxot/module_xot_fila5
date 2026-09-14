@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
@@ -112,7 +115,11 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
 =======
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
 >>>>>>> laraxot/dev
@@ -477,7 +484,11 @@ public function getTableFilters(): array
 - Code review
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -519,7 +530,11 @@ public function getTableFilters(): array
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 4. Refactoring moduli business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -662,7 +677,11 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
 =======
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
 >>>>>>> laraxot/dev
@@ -1027,7 +1046,11 @@ public function getTableFilters(): array
 - Code review
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -1069,7 +1092,11 @@ public function getTableFilters(): array
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 4. Refactoring moduli business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -1103,6 +1130,10 @@ public function getTableFilters(): array
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -4388,6 +4419,9 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

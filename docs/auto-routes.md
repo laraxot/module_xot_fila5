@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -17,6 +20,9 @@ note: "Convertito da auto_routes.txt (documento) da convert-docs-txt-to-md.py."
 <!-- Contenuto migrato da _docs/auto_routes.txt -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -29,10 +35,16 @@ va a prendere la relazione "zibibbo" di "aaa" se non la trova "404" differenza d
 implica che nel pannello quando si va a prendere "parents" oltre a row, rows ci deve essere anche "name"
 <<<<<<< HEAD
 che corrisponde al nome della relazione o della funzione
+<<<<<<< HEAD
 che corrisponde al nome della relazione o della funzione
 =======
 <<<<<<< HEAD
 che corrisponde al nome della relazione o della funzione
+=======
+che corrisponde al nome della relazione o della funzione
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 che corrisponde al nome della relazione o della funzione
 >>>>>>> laraxot/dev

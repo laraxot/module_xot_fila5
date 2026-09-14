@@ -1,16 +1,22 @@
 # Modern Tech Stack Optimization Guide
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 + Laravel 13 + PHP 8.3 Best Practices
 
 ## 🚀 Overview
 
 Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 13 e Filament 5.
 =======
+=======
+>>>>>>> laraxot/dev
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 
 ## 🚀 Overview
 
 Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 12 e Filament 4.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## 📋 Current Tech Stack Analysis
@@ -187,7 +193,11 @@ class SurveyExportController
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🏗️ Laravel 13 Advanced Features
+=======
+## 🏗️ Laravel 12 Advanced Features
+>>>>>>> laraxot/dev
 =======
 ## 🏗️ Laravel 12 Advanced Features
 >>>>>>> laraxot/dev
@@ -207,7 +217,11 @@ protected function casts(): array
 {
     return [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'settings' => 'encrypted:json', // Laravel 13 encrypted casting
+=======
+        'settings' => 'encrypted:json', // Laravel 12 encrypted casting
+>>>>>>> laraxot/dev
 =======
         'settings' => 'encrypted:json', // Laravel 12 encrypted casting
 >>>>>>> laraxot/dev
@@ -253,7 +267,11 @@ $contacts = Contact::where('active', true)
 **Optimized Pattern**:
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Using Laravel 13 enhanced query builder
+=======
+// Using Laravel 12 enhanced query builder
+>>>>>>> laraxot/dev
 =======
 // Using Laravel 12 enhanced query builder
 >>>>>>> laraxot/dev
@@ -410,7 +428,11 @@ class ContactEventSubscriber
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🎨 Filament 5 Optimization
+=======
+## 🎨 Filament 4 Optimization
+>>>>>>> laraxot/dev
 =======
 ## 🎨 Filament 4 Optimization
 >>>>>>> laraxot/dev
@@ -899,7 +921,11 @@ class ContactDashboard extends Dashboard
    - Enhanced type declarations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. ✅ **Laravel 13 Core**
+=======
+2. ✅ **Laravel 12 Core**
+>>>>>>> laraxot/dev
 =======
 2. ✅ **Laravel 12 Core**
 >>>>>>> laraxot/dev
@@ -909,7 +935,11 @@ class ContactDashboard extends Dashboard
 
 ### Medium Priority (Week 3-4)
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. ✅ **Filament 5 Optimization**
+=======
+1. ✅ **Filament 4 Optimization**
+>>>>>>> laraxot/dev
 =======
 1. ✅ **Filament 4 Optimization**
 >>>>>>> laraxot/dev
@@ -978,8 +1008,13 @@ class PerformanceMonitoringMiddleware
 ### Technical Compliance
 - [ ] 100% PHP 8.3 feature adoption
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Laravel 13 best practices implementation
 - [ ] Filament 5 optimization complete
+=======
+- [ ] Laravel 12 best practices implementation
+- [ ] Filament 4 optimization complete
+>>>>>>> laraxot/dev
 =======
 - [ ] Laravel 12 best practices implementation
 - [ ] Filament 4 optimization complete
@@ -997,17 +1032,23 @@ class PerformanceMonitoringMiddleware
 Questa guida fornisce una roadmap completa per modernizzare il tech stack e sfruttare al massimo le capacità delle versioni più recenti dei framework utilizzati.
 # Modern Tech Stack Optimization Guide
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 + Laravel 13 + PHP 8.3 Best Practices
 
 ## 🚀 Overview
 
 Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 13 e Filament 5.
 =======
+=======
+>>>>>>> laraxot/dev
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 
 ## 🚀 Overview
 
 Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 12 e Filament 4.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## 📋 Current Tech Stack Analysis
@@ -1184,7 +1225,11 @@ class SurveyExportController
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🏗️ Laravel 13 Advanced Features
+=======
+## 🏗️ Laravel 12 Advanced Features
+>>>>>>> laraxot/dev
 =======
 ## 🏗️ Laravel 12 Advanced Features
 >>>>>>> laraxot/dev
@@ -1204,7 +1249,11 @@ protected function casts(): array
 {
     return [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'settings' => 'encrypted:json', // Laravel 13 encrypted casting
+=======
+        'settings' => 'encrypted:json', // Laravel 12 encrypted casting
+>>>>>>> laraxot/dev
 =======
         'settings' => 'encrypted:json', // Laravel 12 encrypted casting
 >>>>>>> laraxot/dev
@@ -1250,7 +1299,11 @@ $contacts = Contact::where('active', true)
 **Optimized Pattern**:
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Using Laravel 13 enhanced query builder
+=======
+// Using Laravel 12 enhanced query builder
+>>>>>>> laraxot/dev
 =======
 // Using Laravel 12 enhanced query builder
 >>>>>>> laraxot/dev
@@ -1407,7 +1460,11 @@ class ContactEventSubscriber
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🎨 Filament 5 Optimization
+=======
+## 🎨 Filament 4 Optimization
+>>>>>>> laraxot/dev
 =======
 ## 🎨 Filament 4 Optimization
 >>>>>>> laraxot/dev
@@ -1870,6 +1927,7 @@ class ContactDashboard extends Dashboard
             'overview' => [
                 'label' => 'Overview',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'url' => route('filament.<nome progetto>.dashboard'),
                 'isActive' => request()->routeIs('filament.<nome progetto>.dashboard'),
             ],
@@ -1883,6 +1941,8 @@ class ContactDashboard extends Dashboard
                 'url' => route('filament.<nome progetto>.reports'),
                 'isActive' => request()->routeIs('filament.<nome progetto>.reports'),
 =======
+=======
+>>>>>>> laraxot/dev
                 'url' => route('filament.quaeris.dashboard'),
                 'isActive' => request()->routeIs('filament.quaeris.dashboard'),
             ],
@@ -1895,6 +1955,9 @@ class ContactDashboard extends Dashboard
                 'label' => 'Reports',
                 'url' => route('filament.quaeris.reports'),
                 'isActive' => request()->routeIs('filament.quaeris.reports'),
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
             ],
         ];
@@ -1911,7 +1974,11 @@ class ContactDashboard extends Dashboard
    - Enhanced type declarations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. ✅ **Laravel 13 Core**
+=======
+2. ✅ **Laravel 12 Core**
+>>>>>>> laraxot/dev
 =======
 2. ✅ **Laravel 12 Core**
 >>>>>>> laraxot/dev
@@ -1921,7 +1988,11 @@ class ContactDashboard extends Dashboard
 
 ### Medium Priority (Week 3-4)
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. ✅ **Filament 5 Optimization**
+=======
+1. ✅ **Filament 4 Optimization**
+>>>>>>> laraxot/dev
 =======
 1. ✅ **Filament 4 Optimization**
 >>>>>>> laraxot/dev
@@ -1990,8 +2061,13 @@ class PerformanceMonitoringMiddleware
 ### Technical Compliance
 - [ ] 100% PHP 8.3 feature adoption
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Laravel 13 best practices implementation
 - [ ] Filament 5 optimization complete
+=======
+- [ ] Laravel 12 best practices implementation
+- [ ] Filament 4 optimization complete
+>>>>>>> laraxot/dev
 =======
 - [ ] Laravel 12 best practices implementation
 - [ ] Filament 4 optimization complete

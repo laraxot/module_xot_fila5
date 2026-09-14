@@ -29,7 +29,11 @@
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── <nome progetto> (Core Business Logic - Surveys)
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> laraxot/dev
 =======
 ├── Quaeris (Core Business Logic - Surveys)
 >>>>>>> laraxot/dev
@@ -52,8 +56,13 @@ Xot (Core Engine)
 ### Technology Stack
 - **PHP 8.3.27** - Modern PHP with strict typing
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Laravel 13.38.1** - Latest Laravel framework
 - **Filament 5.2.2** - Admin panel framework
+=======
+- **Laravel 12.38.1** - Latest Laravel framework
+- **Filament 4.2.2** - Admin panel framework
+>>>>>>> laraxot/dev
 =======
 - **Laravel 12.38.1** - Latest Laravel framework
 - **Filament 4.2.2** - Admin panel framework
@@ -118,7 +127,11 @@ TextInput::make('name');
 - **Responsibility**: Security and permissions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 3. **<nome progetto> Module (The Economy)**
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> laraxot/dev
 =======
 #### 3. **Quaeris Module (The Economy)**
 >>>>>>> laraxot/dev
@@ -227,11 +240,18 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -243,11 +263,18 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
     public function getInfolistSchema(): array
 =======
 <<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev

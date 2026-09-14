@@ -16,7 +16,11 @@
 ## 🎯 Vision
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Consolidate Xot as a **Zero-Config** framework for Laravel 13, where every new module automatically inherits:
+=======
+Consolidate Xot as a **Zero-Config** framework for Laravel 12, where every new module automatically inherits:
+>>>>>>> laraxot/dev
 =======
 Consolidate Xot as a **Zero-Config** framework for Laravel 12, where every new module automatically inherits:
 >>>>>>> laraxot/dev
@@ -47,7 +51,11 @@ All achieved through **simple base class extension**.
 
 - ✅ PHPStan Level 10: 100% compliant
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Laravel 13: Full compatibility
+=======
+- ✅ Laravel 12: Full compatibility
+>>>>>>> laraxot/dev
 =======
 - ✅ Laravel 12: Full compatibility
 >>>>>>> laraxot/dev

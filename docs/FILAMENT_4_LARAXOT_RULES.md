@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament 5 + Laraxot Rules - Xot Module
+=======
+# Filament 4 + Laraxot Rules - Xot Module
+>>>>>>> laraxot/dev
 =======
 # Filament 4 + Laraxot Rules - Xot Module
 >>>>>>> laraxot/dev
@@ -33,7 +37,11 @@ namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resour
 ### 3. **Uso di Schema invece di Form**
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ✅ CORRETTO - Filament 5
+=======
+// ✅ CORRETTO - Filament 4
+>>>>>>> laraxot/dev
 =======
 // ✅ CORRETTO - Filament 4
 >>>>>>> laraxot/dev
@@ -157,11 +165,18 @@ class MyPage extends XotBasePage
 ```php
 // ❌ SBAGLIATO
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -290,9 +305,15 @@ class QuestionChartFilterWidget extends XotBaseWidget
 - [XotBasePage Implementation](./xotbasepage_implementation.md)
 - [XotBaseWidget Implementation](./xotbasewidget_implementation.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Migration Guide](./filament4_migration.md)
 
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 5.
+=======
+- [Filament 4 Migration Guide](./filament4_migration.md)
+
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Migration Guide](./filament4_migration.md)
 

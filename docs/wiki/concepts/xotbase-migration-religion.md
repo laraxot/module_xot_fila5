@@ -8,9 +8,15 @@ updated: 2026-07-27
 qmd: "XotBaseMigration migration convention create table model updateTimestamps no Migration class"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/38"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/12"
+=======
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
 discussions:

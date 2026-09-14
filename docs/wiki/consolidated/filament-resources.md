@@ -35,10 +35,31 @@ class SessionResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_0eRHHT
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_UiJmQs
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_0eRHHT
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_UiJmQs
 >>>>>>> laraxot/dev
     {
         return [

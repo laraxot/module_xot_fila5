@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
@@ -27,6 +30,10 @@ https://github.com/robclancy/presenter
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -63,6 +70,9 @@ http://niceprogrammer.com/laravel-view-model/
 https://github.com/robclancy/presenter
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -71,8 +81,11 @@ https://www.yuulinux.tokyo/13801/   pokemon :)
 view composers may function like "view models" or "presenters".
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
@@ -85,6 +98,10 @@ http://www.javaear.com/question/21542893.html
 
 https://gitee.com/gordensong/view-model
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -94,6 +111,9 @@ http://www.javaear.com/question/21542893.html
 
 https://gitee.com/gordensong/view-model
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

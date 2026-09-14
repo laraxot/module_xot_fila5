@@ -13,10 +13,17 @@ return [
      * |
      */
     'paths' => [
+<<<<<<< HEAD
         'base' => '/var/www/html/exa/<repo progetto>',
         'laravel' => '/var/www/html/exa/<repo progetto>/laravel',
         'modules' => '/var/www/html/exa/<repo progetto>/laravel/Modules',
         'docs' => '/var/www/html/exa/<repo progetto>/docs',
+=======
+        'base' => '/var/www/html/exa/base_orisbroker_fila5',
+        'laravel' => '/var/www/html/exa/base_orisbroker_fila5/laravel',
+        'modules' => '/var/www/html/exa/base_orisbroker_fila5/laravel/Modules',
+        'docs' => '/var/www/html/exa/base_orisbroker_fila5/docs',
+>>>>>>> laraxot/dev
     ],
     /*
      * |--------------------------------------------------------------------------
@@ -28,7 +35,12 @@ return [
      * |
      */
     'module_paths' => [
+<<<<<<< HEAD
         'xot' => '/var/www/html/exa/<repo progetto>/laravel/Modules/Xot',
         'broker' => '/var/www/html/exa/<repo progetto>/laravel/Modules/Broker',
+=======
+        'xot' => '/var/www/html/exa/base_orisbroker_fila5/laravel/Modules/Xot',
+        'broker' => '/var/www/html/exa/base_orisbroker_fila5/laravel/Modules/Broker',
+>>>>>>> laraxot/dev
     ],
 ];

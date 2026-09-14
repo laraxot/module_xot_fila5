@@ -25,7 +25,11 @@
 
 Verifica modulo per modulo - **TUTTI PULITI**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Activity, AI, Blog, Cms, Comment, <nome progetto>
+=======
+- ✅ Activity, AI, Blog, Cms, Comment, Fixcity
+>>>>>>> laraxot/dev
 =======
 - ✅ Activity, AI, Blog, Cms, Comment, Fixcity
 >>>>>>> laraxot/dev
@@ -41,7 +45,11 @@ Verifica modulo per modulo - **TUTTI PULITI**:
 - **Cms/app**: 0 errori critici ✅
 - **Comment/app**: 0 errori critici ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>/app**: 0 errori critici ✅
+=======
+- **Fixcity/app**: 0 errori critici ✅
+>>>>>>> laraxot/dev
 =======
 - **Fixcity/app**: 0 errori critici ✅
 >>>>>>> laraxot/dev
@@ -325,7 +333,11 @@ Le classi anonime nei test causano errori PHPStan perché l'analisi statica non 
 | Cms      | 0              | ✅ PULITO |
 | Comment  | 0              | ✅ PULITO |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto>  | 0              | ✅ PULITO |
+=======
+| Fixcity  | 0              | ✅ PULITO |
+>>>>>>> laraxot/dev
 =======
 | Fixcity  | 0              | ✅ PULITO |
 >>>>>>> laraxot/dev

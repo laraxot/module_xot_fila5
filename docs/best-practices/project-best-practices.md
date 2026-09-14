@@ -267,11 +267,18 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -394,8 +401,13 @@ git push origin feature-branch
 
 ### Documentazione Laravel Ecosystem
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 Docs](https://laravel.com/docs/12.x)
 - [Filament 5 Docs](https://filamentphp.com/docs/4.x)
+=======
+- [Laravel 12 Docs](https://laravel.com/docs/12.x)
+- [Filament 4 Docs](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 Docs](https://laravel.com/docs/12.x)
 - [Filament 4 Docs](https://filamentphp.com/docs/4.x)

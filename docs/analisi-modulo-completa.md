@@ -170,7 +170,11 @@ Basato sui documenti esistenti e sulle tendenze osservate:
 Xot è incluso di base in Laraxot. Per installarlo in un nuovo progetto Laravel:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Prerequisiti**: Laravel 13+, PHP 8.2+
+=======
+1. **Prerequisiti**: Laravel 12+, PHP 8.2+
+>>>>>>> laraxot/dev
 =======
 1. **Prerequisiti**: Laravel 12+, PHP 8.2+
 >>>>>>> laraxot/dev

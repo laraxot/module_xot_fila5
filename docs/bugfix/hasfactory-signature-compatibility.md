@@ -20,9 +20,15 @@ vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.p
 ## Causa Radice
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Incompatibilità di Signature tra Laravel 13 e BaseModel**:
 
 1. **Laravel 13 `HasFactory` trait**: Il metodo `newFactory()` restituisce `Factory|null` (nullable)
+=======
+**Incompatibilità di Signature tra Laravel 12 e BaseModel**:
+
+1. **Laravel 12 `HasFactory` trait**: Il metodo `newFactory()` restituisce `Factory|null` (nullable)
+>>>>>>> laraxot/dev
 =======
 **Incompatibilità di Signature tra Laravel 12 e BaseModel**:
 
@@ -42,7 +48,11 @@ vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.p
 ## Pattern Corretto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Laravel 13 HasFactory Trait Signature
+=======
+### Laravel 12 HasFactory Trait Signature
+>>>>>>> laraxot/dev
 =======
 ### Laravel 12 HasFactory Trait Signature
 >>>>>>> laraxot/dev
@@ -125,7 +135,11 @@ abstract class BaseModel extends Model
 - Se la factory non esiste, la crea e lancia un'eccezione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tuttavia, per essere compatibili con la signature del trait `HasFactory` di Laravel 13, dobbiamo accettare `?Factory` come return type.
+=======
+Tuttavia, per essere compatibili con la signature del trait `HasFactory` di Laravel 12, dobbiamo accettare `?Factory` come return type.
+>>>>>>> laraxot/dev
 =======
 Tuttavia, per essere compatibili con la signature del trait `HasFactory` di Laravel 12, dobbiamo accettare `?Factory` come return type.
 >>>>>>> laraxot/dev
@@ -141,7 +155,11 @@ PHP 8.3+ applica regole più rigorose per la compatibilità delle signature:
 
 - ✅ Classe caricata correttamente
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Signature compatibile con Laravel 13
+=======
+- ✅ Signature compatibile con Laravel 12
+>>>>>>> laraxot/dev
 =======
 - ✅ Signature compatibile con Laravel 12
 >>>>>>> laraxot/dev
@@ -174,7 +192,11 @@ class MyModel extends BaseModel
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 HasFactory Trait](https://github.com/laravel/framework/blob/12.x/src/Illuminate/Database/Eloquent/Factories/HasFactory.php)
+=======
+- [Laravel 12 HasFactory Trait](https://github.com/laravel/framework/blob/12.x/src/Illuminate/Database/Eloquent/Factories/HasFactory.php)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 HasFactory Trait](https://github.com/laravel/framework/blob/12.x/src/Illuminate/Database/Eloquent/Factories/HasFactory.php)
 >>>>>>> laraxot/dev

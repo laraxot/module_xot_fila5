@@ -56,7 +56,11 @@ Xot: 465 -> 147 errori. Vedi `docs/chat/phpstan-zero-errors.md` (root del proget
 dettagliato di coordinamento multi-agente e i fix applicati in questa sessione (ExtraContract,
 CollectionExport, LazyCollectionExport). Issue GitHub di tracking:
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/laraxot/<repo progetto>/issues/34
+=======
+https://github.com/laraxot/base_techplanner_fila5/issues/34
+>>>>>>> laraxot/dev
 =======
 https://github.com/laraxot/base_techplanner_fila5/issues/34
 >>>>>>> laraxot/dev

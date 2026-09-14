@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://sbsharma.com/laravel-jquery-ui-sortable-database-update-livewire/
 
@@ -15,6 +18,10 @@ https://opensourcelibs.com/lib/livewire-sortablejs
 
 https://github.com/livewire/sortable
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -36,6 +43,9 @@ Elenco di collegamenti migrato da un file `.txt`; URL deduplicati.
 - <https://opensourcelibs.com/lib/livewire-sortablejs>
 - <https://github.com/livewire/sortable>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

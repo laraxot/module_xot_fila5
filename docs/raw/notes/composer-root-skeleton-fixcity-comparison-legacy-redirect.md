@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Composer Root Skeleton <nome progetto> Comparison"
+=======
+title: "Composer Root Skeleton Fixcity Comparison"
+>>>>>>> laraxot/dev
 =======
 title: "Composer Root Skeleton Fixcity Comparison"
 >>>>>>> laraxot/dev
@@ -10,6 +14,7 @@ module: "Xot"
 created: 2026-07-14
 created_at: '2026-07-14'
 updated: 2026-07-14
+<<<<<<< HEAD
 <<<<<<< HEAD
 qmd: "deprecated composer-root-skeleton-<nome progetto>-comparison"
 related:
@@ -23,6 +28,8 @@ related:
 
 <nome progetto> (`<repo progetto>/laravel/composer.json`) e' il riferimento storico nwidart:
 =======
+=======
+>>>>>>> laraxot/dev
 qmd: "deprecated composer-root-skeleton-fixcity-comparison"
 related:
   - "./composer-root-skeleton-fixcity-comparison.md"
@@ -34,6 +41,9 @@ related:
 ## Osservazione FixCity
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 - `require`: `php`, `laravel/framework`, `nwidart/laravel-modules`
@@ -41,7 +51,11 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 - autoload: `App\\` + `Database\\Seeders\\`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Debito <nome progetto> (non replicare in Predict)
+=======
+## Debito FixCity (non replicare in Predict)
+>>>>>>> laraxot/dev
 =======
 ## Debito FixCity (non replicare in Predict)
 >>>>>>> laraxot/dev
@@ -53,7 +67,11 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 ## Stato Predict (canonico 2026-06-30)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Root allineato e piu' stretto di <nome progetto>:
+=======
+Root allineato e piu' stretto di FixCity:
+>>>>>>> laraxot/dev
 =======
 Root allineato e piu' stretto di FixCity:
 >>>>>>> laraxot/dev
@@ -64,7 +82,11 @@ Root allineato e piu' stretto di FixCity:
 - temi/seeders: runtime PSR-4 Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto> (`<repo progetto>/laravel/composer.json`) e' il riferimento storico nwidart:
+=======
+FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+>>>>>>> laraxot/dev
 =======
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
 >>>>>>> laraxot/dev
@@ -74,7 +96,11 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 - autoload: `App\\` + `Database\\Seeders\\`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Debito <nome progetto> (non replicare in Predict)
+=======
+## Debito FixCity (non replicare in Predict)
+>>>>>>> laraxot/dev
 =======
 ## Debito FixCity (non replicare in Predict)
 >>>>>>> laraxot/dev

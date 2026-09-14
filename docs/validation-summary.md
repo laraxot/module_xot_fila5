@@ -26,7 +26,11 @@ cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Xot --
 
 ### 📚 Second Brain
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Documentazione**: `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
+=======
+- **Documentazione**: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
+>>>>>>> laraxot/dev
 =======
 - **Documentazione**: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
 >>>>>>> laraxot/dev

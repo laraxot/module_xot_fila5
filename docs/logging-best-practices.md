@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Logging Best Practices - Critical Performance Guidelines
 
@@ -255,6 +258,10 @@ try {
         'service' => get_class($service),
         'error' => $e->getMessage(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -498,6 +505,9 @@ try {
         'trace' => $e->getTraceAsString(),
         'request_id' => $requestId,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -507,8 +517,11 @@ try {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ### Step 4: Implement Audit Trail
 ```php
@@ -579,6 +592,10 @@ Following these guidelines will:
 
 **Remember**: If everything is working correctly, there should be NO log output.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -799,6 +816,9 @@ Excessive logging is a performance killer that provides little value. By followi
 **Priority**: HIGH
 **Estimated Impact**: 10-15% performance improvement
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

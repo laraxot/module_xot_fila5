@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## Stato attuale
 
@@ -49,6 +52,10 @@ bash bashscripts/tools/sync-ide-junctions.sh
 `bashscripts/ai/ai_init.sh` va considerato legacy rispetto al modello SSoT
 `.agents`.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -85,6 +92,11 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev

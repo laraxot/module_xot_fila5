@@ -76,7 +76,11 @@ Moduli che richiedono questa configurazione:
 
 ### Modulo Rating
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Conversione `$casts` in `casts()`** (Laravel 13+)
+=======
+1. **Conversione `$casts` in `casts()`** (Laravel 12+)
+>>>>>>> laraxot/dev
 =======
 1. **Conversione `$casts` in `casts()`** (Laravel 12+)
 >>>>>>> laraxot/dev

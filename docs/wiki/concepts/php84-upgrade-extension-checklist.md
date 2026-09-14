@@ -19,7 +19,11 @@ sources:
 ## Scopo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Prerequisito per installare `spatie/laravel-model-states` ^2.14 e allineare Laravel 13 nel lock condiviso. Tracker: [#87](https://github.com/laraxot/<repo progetto>/issues/87).
+=======
+Prerequisito per installare `spatie/laravel-model-states` ^2.14 e allineare Laravel 13 nel lock condiviso. Tracker: [#87](https://github.com/laraxot/base_fixcity_fila5/issues/87).
+>>>>>>> laraxot/dev
 =======
 Prerequisito per installare `spatie/laravel-model-states` ^2.14 e allineare Laravel 13 nel lock condiviso. Tracker: [#87](https://github.com/laraxot/base_fixcity_fila5/issues/87).
 >>>>>>> laraxot/dev
@@ -36,15 +40,21 @@ Estensioni rilevate su ambiente dev (`php -m`):
 ## Dopo install PHP 8.4
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Verificare `php8.4 -v` → 8.4.x (su WSL2 <nome progetto>: **8.4.17** già presente; `php` default può restare 8.3 senza `sudo`).
 2. Estensioni: su questo host **nessuna mancante** rispetto a 8.3 (`comm` moduli vuoto).
 3. **Composer/artisan/PHPStan:** prefissare con `php8.4` oppure `sudo update-alternatives --set php /usr/bin/php8.4`.
 4. Workflow Composer in [#87](https://github.com/laraxot/<repo progetto>/issues/87) — **completato** 2026-05-21.
 =======
+=======
+>>>>>>> laraxot/dev
 1. Verificare `php8.4 -v` → 8.4.x (su WSL2 FixCity: **8.4.17** già presente; `php` default può restare 8.3 senza `sudo`).
 2. Estensioni: su questo host **nessuna mancante** rispetto a 8.3 (`comm` moduli vuoto).
 3. **Composer/artisan/PHPStan:** prefissare con `php8.4` oppure `sudo update-alternatives --set php /usr/bin/php8.4`.
 4. Workflow Composer in [#87](https://github.com/laraxot/base_fixcity_fila5/issues/87) — **completato** 2026-05-21.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Comandi post-upgrade (modulo Xot)

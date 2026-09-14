@@ -92,8 +92,13 @@ All notable changes to `:package_name` will be documented in this file.
 
 ### Changed
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Migrazione a Laravel 13.x
 - Upgrade Filament 5.x
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
 =======
 - Migrazione a Laravel 12.x
 - Upgrade Filament 4.x

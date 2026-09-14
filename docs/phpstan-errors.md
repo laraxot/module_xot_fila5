@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # PHPStan Errori Modulo Xot - [DATE]
 
@@ -8,6 +11,10 @@
 
 **Data Analisi**: [DATE]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -17,6 +24,9 @@
 
 **Data Analisi**: 2025-01-22
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -176,10 +186,16 @@ Tutti gli errori seguono lo stesso pattern:
 
 <<<<<<< HEAD
 ✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
+<<<<<<< HEAD
 ✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
 =======
 <<<<<<< HEAD
 ✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
+=======
+✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 ✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
 >>>>>>> laraxot/dev

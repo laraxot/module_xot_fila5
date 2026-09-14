@@ -7,8 +7,13 @@ created: 2026-05-21
 updated: 2026-05-26
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/89"
   - "https://github.com/laraxot/<repo progetto>/issues/90"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
@@ -53,8 +58,13 @@ Il modulo **Xot** ospita classi base e pattern Filament riusati ovunque. Questa 
 | Rating | [`duplicate-ratings-table-migrations.md`](../../../../Rating/docs/wiki/redundancy/duplicate-ratings-table-migrations.md) | Table + migration |
 | Cms | [`redundancy-report.md`](../../../../Cms/docs/redundancy-report.md) | BaseTreeModel, BaseModelLang, ThemeComposer clone, Appearance |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | [`duplicated-comments-relation-manager.md`](../../../../<nome progetto>/docs/wiki/redundancy/duplicated-comments-relation-manager.md) | Comments RM ×2 |
 | <nome progetto> | [`<nome progetto>-cross-module-duplicate-surfaces.md`](../../../../<nome progetto>/docs/wiki/redundancy/<nome progetto>-cross-module-duplicate-surfaces.md) | Superfici copy con altri moduli |
+=======
+| Fixcity | [`duplicated-comments-relation-manager.md`](../../../../Fixcity/docs/wiki/redundancy/duplicated-comments-relation-manager.md) | Comments RM ×2 |
+| Fixcity | [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md) | Superfici copy con altri moduli |
+>>>>>>> laraxot/dev
 =======
 | Fixcity | [`duplicated-comments-relation-manager.md`](../../../../Fixcity/docs/wiki/redundancy/duplicated-comments-relation-manager.md) | Comments RM ×2 |
 | Fixcity | [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md) | Superfici copy con altri moduli |
@@ -65,7 +75,11 @@ Il modulo **Xot** ospita classi base e pattern Filament riusati ovunque. Questa 
 ## Tracker GitHub (esecuzione)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Epic [#90](https://github.com/laraxot/<repo progetto>/issues/90) · P0 [#100](https://github.com/laraxot/<repo progetto>/issues/100) User · P1 [#101](https://github.com/laraxot/<repo progetto>/issues/101) · Docs [#102](https://github.com/laraxot/<repo progetto>/issues/102)–[#104](https://github.com/laraxot/<repo progetto>/issues/104) · Refactor [#105](https://github.com/laraxot/<repo progetto>/issues/105) [#106](https://github.com/laraxot/<repo progetto>/issues/106) · Cluster [#95](https://github.com/laraxot/<repo progetto>/issues/95)–[#99](https://github.com/laraxot/<repo progetto>/issues/99).
+=======
+Epic [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) · P0 [#100](https://github.com/laraxot/base_fixcity_fila5/issues/100) User · P1 [#101](https://github.com/laraxot/base_fixcity_fila5/issues/101) · Docs [#102](https://github.com/laraxot/base_fixcity_fila5/issues/102)–[#104](https://github.com/laraxot/base_fixcity_fila5/issues/104) · Refactor [#105](https://github.com/laraxot/base_fixcity_fila5/issues/105) [#106](https://github.com/laraxot/base_fixcity_fila5/issues/106) · Cluster [#95](https://github.com/laraxot/base_fixcity_fila5/issues/95)–[#99](https://github.com/laraxot/base_fixcity_fila5/issues/99).
+>>>>>>> laraxot/dev
 =======
 Epic [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) · P0 [#100](https://github.com/laraxot/base_fixcity_fila5/issues/100) User · P1 [#101](https://github.com/laraxot/base_fixcity_fila5/issues/101) · Docs [#102](https://github.com/laraxot/base_fixcity_fila5/issues/102)–[#104](https://github.com/laraxot/base_fixcity_fila5/issues/104) · Refactor [#105](https://github.com/laraxot/base_fixcity_fila5/issues/105) [#106](https://github.com/laraxot/base_fixcity_fila5/issues/106) · Cluster [#95](https://github.com/laraxot/base_fixcity_fila5/issues/95)–[#99](https://github.com/laraxot/base_fixcity_fila5/issues/99).
 >>>>>>> laraxot/dev

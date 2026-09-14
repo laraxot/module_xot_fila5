@@ -35,7 +35,11 @@ XotBaseWizardWidget         (abstract)
         |
         v
 <<<<<<< HEAD
+<<<<<<< HEAD
 CreateTicketWizardWidget    (concrete, <nome progetto>)
+=======
+CreateTicketWizardWidget    (concrete, Fixcity)
+>>>>>>> laraxot/dev
 =======
 CreateTicketWizardWidget    (concrete, Fixcity)
 >>>>>>> laraxot/dev
@@ -340,17 +344,23 @@ Vantaggi:
 
 - `Modules/Xot/docs/architettura.md` — vista d'insieme su Xot widgets.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/docs/wiki/concepts/wizard-step-index-and-map-integration-rule.md`
   — convenzioni sul tracking dello step lato Livewire.
 - `Modules/<nome progetto>/docs/wiki/concepts/wizard-zen-philosophy.md` — pattern
   consigliati per i wizard del dominio <nome progetto>.
 - `Modules/<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php` —
 =======
+=======
+>>>>>>> laraxot/dev
 - `Modules/Fixcity/docs/wiki/concepts/wizard-step-index-and-map-integration-rule.md`
   — convenzioni sul tracking dello step lato Livewire.
 - `Modules/Fixcity/docs/wiki/concepts/wizard-zen-philosophy.md` — pattern
   consigliati per i wizard del dominio Fixcity.
 - `Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php` —
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
   consumer del widget base.
 

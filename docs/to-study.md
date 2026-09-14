@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # __to_study
 
@@ -8,6 +11,10 @@
 
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -32,6 +39,9 @@ updated: 2026-08-24
 
 - <https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

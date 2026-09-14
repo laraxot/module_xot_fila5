@@ -136,10 +136,13 @@ XotBaseModel (Xot) - Base standard
 =======
 <<<<<<< HEAD
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
+=======
+>>>>>>> laraxot/dev
 
 - [Model Inheritance Complete Fix](../../docs/model_inheritance_complete_fix.md)
 - [DRY/KISS Analysis](../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -148,10 +151,16 @@ XotBaseModel (Xot) - Base standard
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 =======
+=======
+>>>>>>> laraxot/dev
 =======
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

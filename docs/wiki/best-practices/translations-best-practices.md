@@ -497,7 +497,11 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 - [Documentazione Ufficiale Laravel Localization](https://laravel.com/docs/localization)
 - [Documentazione di Filament sulla Localizzazione](https://filamentphp.com/docs/3.x/support/localization)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [TRANSLATIONS.md](base_orisbroker_fila5/laravel/Modules/Brain/docs/TRANSLATIONS.md)
+=======
+- [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
+>>>>>>> laraxot/dev
 =======
 - [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/docs/TRANSLATIONS.md)
 >>>>>>> laraxot/dev

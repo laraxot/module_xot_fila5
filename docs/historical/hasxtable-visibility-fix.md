@@ -77,7 +77,11 @@ protected function getTableEmptyStateActions(): array
    - Aggiornata data ultimo aggiornamento
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **`Modules/<nome progetto>/docs/question-chart-implementation-guide.md`**
+=======
+3. **`Modules/Quaeris/docs/question-chart-implementation-guide.md`**
+>>>>>>> laraxot/dev
 =======
 3. **`Modules/Quaeris/docs/question-chart-implementation-guide.md`**
 >>>>>>> laraxot/dev
@@ -136,7 +140,11 @@ Dopo la correzione, l'errore non dovrebbe più verificarsi:
 ```bash
 # Test accesso pagina
 <<<<<<< HEAD
+<<<<<<< HEAD
 curl http://<nome progetto>.local/<nome progetto>/admin/ats/survey-pdfs/16/question-charts/226
+=======
+curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
+>>>>>>> laraxot/dev
 =======
 curl http://quaeris.local/quaeris/admin/ats/survey-pdfs/16/question-charts/226
 >>>>>>> laraxot/dev

@@ -145,7 +145,11 @@ Dopo OGNI modifica di file PHP:
 Risultato ottenuto seguendo rigorosamente:
 - DRY + KISS + SOLID + Robust
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13 + Filament 5 + PHP 8.3
+=======
+- Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 - Laravel 12 + Filament 4 + PHP 8.3
 >>>>>>> laraxot/dev

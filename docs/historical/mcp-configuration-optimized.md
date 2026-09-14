@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Configurazione MCP Ottimizzata per base_techplanner_fila5
+=======
+# Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
+>>>>>>> laraxot/dev
 =======
 # Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
 >>>>>>> laraxot/dev
@@ -17,7 +21,11 @@
 ## 🎯 Scopo del Documento
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+=======
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+>>>>>>> laraxot/dev
 =======
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 >>>>>>> laraxot/dev

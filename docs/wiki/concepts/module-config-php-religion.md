@@ -99,7 +99,11 @@ Se `icon.svg` è presente, **B è obbligatorio** (sync/audit lo impongono).
 Per placeholder `heroicon-o-square-3-stack-3d` e batch sync: [module-config-icon-svg.md](./module-config-icon-svg.md).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Esempi in repo (2026-07-27): `<nome progetto>` → `<nome progetto>-icon`, `Billing` → `billing-icon`,
+=======
+Esempi in repo (2026-07-27): `WorkOrder` → `workorder-icon`, `Billing` → `billing-icon`,
+>>>>>>> laraxot/dev
 =======
 Esempi in repo (2026-07-27): `WorkOrder` → `workorder-icon`, `Billing` → `billing-icon`,
 >>>>>>> laraxot/dev

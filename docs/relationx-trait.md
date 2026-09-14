@@ -46,7 +46,11 @@ L'ordinamento alfabetico è la scelta di progetto più importante del trait: ren
 3. risalita alla classe padre (`tryParentClassPivot`)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il terzo passo esiste perché i modelli concreti spesso estendono una base (`<nome progetto>\Models\User extends BaseUser`): se il pivot è dichiarato accanto alla base, va trovato lo stesso.
+=======
+Il terzo passo esiste perché i modelli concreti spesso estendono una base (`Quaeris\Models\User extends BaseUser`): se il pivot è dichiarato accanto alla base, va trovato lo stesso.
+>>>>>>> laraxot/dev
 =======
 Il terzo passo esiste perché i modelli concreti spesso estendono una base (`Quaeris\Models\User extends BaseUser`): se il pivot è dichiarato accanto alla base, va trovato lo stesso.
 >>>>>>> laraxot/dev
@@ -64,7 +68,11 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Non è teoria: nel log query del pannello <nome progetto> la join compare come `<nome progetto>_data.customer_user`, prodotta esattamente da questo ramo. L'esclusione di SQLite è corretta — non supporta la sintassi `database.tabella`.
+=======
+Non è teoria: nel log query del pannello Quaeris la join compare come `quaeris_data.customer_user`, prodotta esattamente da questo ramo. L'esclusione di SQLite è corretta — non supporta la sintassi `database.tabella`.
+>>>>>>> laraxot/dev
 =======
 Non è teoria: nel log query del pannello Quaeris la join compare come `quaeris_data.customer_user`, prodotta esattamente da questo ramo. L'esclusione di SQLite è corretta — non supporta la sintassi `database.tabella`.
 >>>>>>> laraxot/dev

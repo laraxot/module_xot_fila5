@@ -2,10 +2,16 @@
 
 <<<<<<< HEAD
 **Date**: [DATE]
+<<<<<<< HEAD
 **Date**: 2025-12-16
 =======
 <<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 **Date**: 2025-12-16
 >>>>>>> laraxot/dev
@@ -399,10 +405,16 @@ This fix may also resolve related errors in:
 
 <<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+<<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
 =======
 <<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+=======
+- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
 >>>>>>> laraxot/dev
@@ -416,10 +428,16 @@ This fix may also resolve related errors in:
 **Assigned To**: Module Owner
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 **Last Updated**: 2025-12-16
 =======
 <<<<<<< HEAD
 
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 **Last Updated**: 2025-12-16
 >>>>>>> laraxot/dev

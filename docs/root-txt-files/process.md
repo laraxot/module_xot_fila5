@@ -7,10 +7,16 @@ description: 'https://laravel-news.com/working-with-os-process-in-php https://gi
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: process.txt
+<<<<<<< HEAD
 converted_from: _process.txt
 =======
 <<<<<<< HEAD
 converted_from: process.txt
+=======
+converted_from: _process.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 converted_from: _process.txt
 >>>>>>> laraxot/dev

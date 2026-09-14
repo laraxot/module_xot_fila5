@@ -18,7 +18,11 @@ related:
   - ./concepts/no-domain-actions-in-xot.md
   - ./rules/module-testcase-xotbase-hierarchy.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md
+=======
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+>>>>>>> laraxot/dev
 =======
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
 >>>>>>> laraxot/dev
@@ -56,7 +60,11 @@ Indice operativo del wiki Xot (core framework).
 - [pest-global-class-imports.md](./rules/pest-global-class-imports.md) — nei test senza namespace rimuovere `use ReflectionClass;` e altre import globali inutili
 - [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [hackernoon-ai-coding-tips-<nome progetto>-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md) (root)
+=======
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
+>>>>>>> laraxot/dev
 =======
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
 >>>>>>> laraxot/dev
@@ -79,7 +87,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto <nome progetto> | 2026-06-13 |
+=======
+| [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+>>>>>>> laraxot/dev
 =======
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
 >>>>>>> laraxot/dev
@@ -104,7 +116,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 - Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/<repo progetto>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
 =======
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 >>>>>>> laraxot/dev
@@ -115,7 +131,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Bad Practices
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/<repo progetto>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
 =======
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 >>>>>>> laraxot/dev
@@ -146,3 +166,19 @@ Aggiornato: 2026-07-27
 | `Dashboard.php` | [module-dashboard-page-mandatory.md](./concepts/module-dashboard-page-mandatory.md) |
 | Hub runtime cross-modulo | [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md) |
 | Tenant `modules_statuses` | [tenant-module-status-registry](../../Tenant/docs/tenant-module-status-registry.md) |
+<<<<<<< HEAD
+=======
+
+## Decisioni in discussione — 2026-09-11
+
+- [Owner e Resource correlata](concepts/manage-related-records-resource-delegation.md) — riuso form/colonne, DRY/KISS e vincoli Filament; traccia vendor completa (`makeTable()`→`configureTable()`).
+- Analisi indipendente parallela, stesso giorno, mappa completa in [../index.md#discussioni-architetturali--2026-09-11](../index.md#discussioni-architetturali--2026-09-11) — censimento pagine, verifica dal vivo pannello/modulo, prova di precedenza classe/trait.
+
+- [File proposto XotBaseManageRelatedRecords](../app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php.md) — PHP documentato, review e coordinamento multi-agente.
+
+**Aggiornamento 2026-09-11 (piu' tardi, stesso giorno)**: "quinta direzione"
+in fondo al file sopra — `form()`/`table()` delegano per intero alla
+Resource correlata (mai bridge per singolo hook come nella quarta), unici
+override point per-pagina `getTableColumns()`/`getTableHeaderActions()`.
+Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`.
+>>>>>>> laraxot/dev

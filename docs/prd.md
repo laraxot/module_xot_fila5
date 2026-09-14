@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # PRD: Xot Core Framework
 
@@ -33,6 +36,10 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 - Domain-specific logic (HR, Finance, etc.).
 - Direct UI components (handled by the UI module).
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -360,7 +367,11 @@ $action->onQueue('default')->execute($data);
 ### 7.4 Technical Constraints
 - PHP 8.3+ required
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13+ required
+=======
+- Laravel 12+ required
+>>>>>>> laraxot/dev
 =======
 - Laravel 12+ required
 >>>>>>> laraxot/dev
@@ -464,6 +475,9 @@ Xot/
 | Tech Lead | | | |
 | Stakeholder | | | |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

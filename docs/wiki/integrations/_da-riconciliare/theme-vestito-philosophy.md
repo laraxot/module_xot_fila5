@@ -62,7 +62,11 @@ Themes/[ThemeName]/
 │   │   ├── layouts/
 │   │   └── pages/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── _survey_module_fila5.code-workspace
+=======
+├── _survey_module_fila4_mono.code-workspace
+>>>>>>> laraxot/dev
 =======
 ├── _survey_module_fila4_mono.code-workspace
 >>>>>>> laraxot/dev

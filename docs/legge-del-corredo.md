@@ -8,9 +8,15 @@ updated: 2026-09-02
 tags: [architettura, base, corredo, factory, filament, piattaforma, foglia]
 qmd: "legge del corredo base factory resource form table dove vive owner entita foglia piattaforma"
 <<<<<<< HEAD
+<<<<<<< HEAD
 repository: "provtv/<repo progetto>"
 github_issue: "https://github.com/provtv/<repo progetto>/issues"
 github_discussion: "https://github.com/provtv/<repo progetto>/discussions"
+=======
+repository: "provtv/base_ptv_fila5_mono"
+github_issue: "https://github.com/provtv/base_ptv_fila5_mono/issues"
+github_discussion: "https://github.com/provtv/base_ptv_fila5_mono/discussions"
+>>>>>>> laraxot/dev
 =======
 repository: "provtv/base_ptv_fila5_mono"
 github_issue: "https://github.com/provtv/base_ptv_fila5_mono/issues"

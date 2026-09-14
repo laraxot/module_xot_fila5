@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 module: theme
@@ -10,6 +13,10 @@ canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -56,6 +63,9 @@ Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambi
 
 > Documento generato il 2026-06-15 da Claude Code.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

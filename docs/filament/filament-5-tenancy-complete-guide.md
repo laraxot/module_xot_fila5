@@ -540,7 +540,11 @@ $panel->tenantMiddleware([
 
 **Versione Filament:** 5.x  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Compatibilità:** Laravel 13.x, PHP 8.3+
+=======
+**Compatibilità:** Laravel 12.x, PHP 8.3+
+>>>>>>> laraxot/dev
 =======
 **Compatibilità:** Laravel 12.x, PHP 8.3+
 >>>>>>> laraxot/dev

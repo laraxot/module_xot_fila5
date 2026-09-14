@@ -6,7 +6,11 @@
 
 ## 🎯 Launch Goals
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Stabilize all base classes for Laravel 13.
+=======
+- Stabilize all base classes for Laravel 12.
+>>>>>>> laraxot/dev
 =======
 - Stabilize all base classes for Laravel 12.
 >>>>>>> laraxot/dev

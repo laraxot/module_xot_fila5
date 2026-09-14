@@ -25,7 +25,11 @@ non copre in questo progetto:
    senza tabella, senza chiavi, senza `->using()`: il pivot lo deduce il trait.
 2. **Relazioni fra database diversi.** Qui `mysql`, `user`, `limesurvey` e
 <<<<<<< HEAD
+<<<<<<< HEAD
    `<nome progetto>` sono database distinti sullo stesso server MySQL: una `belongsToMany`
+=======
+   `quaeris` sono database distinti sullo stesso server MySQL: una `belongsToMany`
+>>>>>>> laraxot/dev
 =======
    `quaeris` sono database distinti sullo stesso server MySQL: una `belongsToMany`
 >>>>>>> laraxot/dev
@@ -54,17 +58,23 @@ per una sola tabella. È la parte più solida del design.
 
 1. namespace del modello chiamante — `Modules\User\Models\CustomerUser`
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. namespace del modello correlato — `Modules\<nome progetto>\Models\CustomerUser`
 3. namespace della classe padre, ricorsivamente (`tryParentClassPivot`), con un
    caso speciale: se il padre finisce per `Morph` non si risale oltre
 
 Il terzo passo è ciò che fa funzionare l'ereditarietà `<nome progetto>\User extends
 =======
+=======
+>>>>>>> laraxot/dev
 2. namespace del modello correlato — `Modules\Quaeris\Models\CustomerUser`
 3. namespace della classe padre, ricorsivamente (`tryParentClassPivot`), con un
    caso speciale: se il padre finisce per `Morph` non si risale oltre
 
 Il terzo passo è ciò che fa funzionare l'ereditarietà `Quaeris\User extends
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 User\BaseUser`: il pivot può stare nel modulo che definisce la classe base.
 

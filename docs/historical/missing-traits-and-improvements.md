@@ -694,8 +694,13 @@ class LimeJsonService
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // <nome progetto>Service.php
 class <nome progetto>Service
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> laraxot/dev
 =======
 // QuaerisService.php
 class QuaerisService
@@ -1173,8 +1178,13 @@ class LimeJsonService
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // <nome progetto>Service.php
 class <nome progetto>Service
+=======
+// QuaerisService.php
+class QuaerisService
+>>>>>>> laraxot/dev
 =======
 // QuaerisService.php
 class QuaerisService

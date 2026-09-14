@@ -11,8 +11,11 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
@@ -92,6 +95,10 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -175,6 +182,9 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -190,8 +200,11 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
@@ -199,6 +212,10 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -208,6 +225,9 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 - [Struttura progetto e STI (Patient)](../../../patient/project_docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/project_docs/database/migrations.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -235,6 +255,7 @@ class Doctor extends User
 <<<<<<< HEAD
 // Aggiungere qui altri moduli se necessario
 
+<<<<<<< HEAD
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 // Aggiungere qui altri moduli se necessario
 =======
@@ -242,7 +263,12 @@ class Doctor extends User
 // Aggiungere qui altri moduli se necessario
 
 =======
+>>>>>>> laraxot/dev
+=======
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 // Aggiungere qui altri moduli se necessario
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

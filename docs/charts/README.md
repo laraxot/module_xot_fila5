@@ -9,7 +9,11 @@
 ## 📋 Overview
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo **Xot** fornisce **QueueableActions** e utility condivise per l'export di chart in **PNG** e **SVG** utilizzabili da tutti i moduli del progetto.
+=======
+Il modulo **Xot** fornisce **QueueableActions** e utility condivise per l'export di chart in **PNG** e **SVG** utilizzabili da tutti i moduli PTVX.
+>>>>>>> laraxot/dev
 =======
 Il modulo **Xot** fornisce **QueueableActions** e utility condivise per l'export di chart in **PNG** e **SVG** utilizzabili da tutti i moduli PTVX.
 >>>>>>> laraxot/dev
@@ -715,7 +719,11 @@ it('exports chart to SVG successfully', function () {
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Autore**: Laraxot
+=======
+**Autore**: PTVX Development Team
+>>>>>>> laraxot/dev
 =======
 **Autore**: PTVX Development Team
 >>>>>>> laraxot/dev

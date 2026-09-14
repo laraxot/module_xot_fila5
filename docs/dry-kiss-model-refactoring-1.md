@@ -9,7 +9,11 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
+=======
+- **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
+>>>>>>> laraxot/dev
 =======
 - **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
 >>>>>>> laraxot/dev
@@ -20,17 +24,23 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 ## Problemi Identificati e Risolti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 1. ❌ <nome progetto>\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\<nome progetto>\Models;
 =======
+=======
+>>>>>>> laraxot/dev
 ### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\Quaeris\Models;
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 use Illuminate\Database\Eloquent\Model;
@@ -46,7 +56,11 @@ abstract class BaseModel extends Model
     public $incrementing = true;
     public $timestamps = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected $connection = '<nome progetto>';
+=======
+protected $connection = 'Quaeris';
+>>>>>>> laraxot/dev
 =======
 protected $connection = 'Quaeris';
 >>>>>>> laraxot/dev
@@ -64,7 +78,11 @@ protected $connection = 'Quaeris';
 **Dopo** (✅ DRY & KISS):
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Models;
+=======
+namespace Modules\Quaeris\Models;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Models;
 >>>>>>> laraxot/dev
@@ -78,7 +96,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected $connection = '<nome progetto>';
+=======
+protected $connection = 'Quaeris';
+>>>>>>> laraxot/dev
 =======
 protected $connection = 'Quaeris';
 >>>>>>> laraxot/dev
@@ -367,7 +389,11 @@ BaseModel → BaseModelLang → Post
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | BaseModel | 66 | 20 | -70% |
+=======
+| Quaeris | BaseModel | 66 | 20 | -70% |
+>>>>>>> laraxot/dev
 =======
 | Quaeris | BaseModel | 66 | 20 | -70% |
 >>>>>>> laraxot/dev

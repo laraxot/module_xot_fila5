@@ -3,7 +3,11 @@
 ## Scopo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `<repo progetto>`.
+=======
+Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `base_fixcity_fila5`.
+>>>>>>> laraxot/dev
 =======
 Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `base_fixcity_fila5`.
 >>>>>>> laraxot/dev
@@ -40,9 +44,15 @@ Crea:
 `semantic-versioning.yml` nel template **non** usa path `Modules/X/**` — valido solo nel repo corrente.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## <nome progetto> root
 
 - `.releaserc.json` con `tagFormat: <nome progetto>-v${version}`
+=======
+## Fixcity root
+
+- `.releaserc.json` con `tagFormat: fixcity-v${version}`
+>>>>>>> laraxot/dev
 =======
 ## Fixcity root
 
@@ -53,7 +63,11 @@ Crea:
 ## Deprecazioni
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `<nome progetto>/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
+=======
+- `Fixcity/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
+>>>>>>> laraxot/dev
 =======
 - `Fixcity/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
 >>>>>>> laraxot/dev

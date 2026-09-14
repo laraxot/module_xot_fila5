@@ -10,7 +10,11 @@ updated: "2026-05-21"
 ## Scopo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Definire una regola operativa semplice: in progetto modulare Laraxot i pacchetti si installano nel modulo owner tramite merge del `composer.json` root. **Baseline runtime:** Laravel **13** con **PHP ≥8.4** per linee aggiornate Spatie incluso `laravel-model-states` ^2.14 ([#87](https://github.com/laraxot/<repo progetto>/issues/87)); `php` di default sulla shell può restare **8.3** finché Composer/Stan usano **`php8.4`**.
+=======
+Definire una regola operativa semplice: in progetto modulare Laraxot i pacchetti si installano nel modulo owner tramite merge del `composer.json` root. **Baseline runtime:** Laravel **13** con **PHP ≥8.4** per linee aggiornate Spatie incluso `laravel-model-states` ^2.14 ([#87](https://github.com/laraxot/base_fixcity_fila5/issues/87)); `php` di default sulla shell può restare **8.3** finché Composer/Stan usano **`php8.4`**.
+>>>>>>> laraxot/dev
 =======
 Definire una regola operativa semplice: in progetto modulare Laraxot i pacchetti si installano nel modulo owner tramite merge del `composer.json` root. **Baseline runtime:** Laravel **13** con **PHP ≥8.4** per linee aggiornate Spatie incluso `laravel-model-states` ^2.14 ([#87](https://github.com/laraxot/base_fixcity_fila5/issues/87)); `php` di default sulla shell può restare **8.3** finché Composer/Stan usano **`php8.4`**.
 >>>>>>> laraxot/dev
@@ -22,15 +26,21 @@ Definire una regola operativa semplice: in progetto modulare Laraxot i pacchetti
 | `fruitcake/laravel-debugbar` | `Modules/Xot` (`require-dev`) | si (`illuminate ^11|^12|^13.0`) | si (`^8.2`) | dichiarare solo in Xot come `^4.2.8`; non duplicare nel root o nei temi |
 | `spatie/laravel-pdf` | `Modules/Incentivi` | si dalla linea `^2.8` (`illuminate/contracts ^11|^12|^13`) | si (`^8.2`) | aggiornare da `^1.5` a `^2.8`; non spostare nel root |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | `spatie/laravel-responsecache` | nessun owner runtime confermato | si (`8.3.x`) | no (`php ^8.4`) | non reinstallare; la linea `7.7.2` resta ferma a `Laravel 13` |
 | `aaronfrancis/fast-paginate` | `Modules/Xot` | no (stable fino a `illuminate ^12`) | si | bloccato in attesa release stable `^13`; oggi manca dal lock root |
 | `fidum/laravel-eloquent-morph-to-one` | `Modules/Xot` | no (stable fino a `illuminate ^12`) | si | bloccato in attesa release stable `^13`; oggi manca dal lock root |
 | `spatie/laravel-model-states` | `Modules/UI` + `Modules/Xot` | si (`2.14.1`, `illuminate ^13`) | **no** su solo 8.3 (2.14 richiede `php ^8.4`) | **risolto** 2026-05-21: `php8.4 … composer update -W` da `laravel/`; vendor OK; PHPStan `app/States/` OK. Lock root locale (repo: `*.lock` gitignored). [#87](https://github.com/laraxot/<repo progetto>/issues/87) |
 =======
+=======
+>>>>>>> laraxot/dev
 | `spatie/laravel-responsecache` | nessun owner runtime confermato | si (`8.3.x`) | no (`php ^8.4`) | non reinstallare; la linea `7.7.2` resta ferma a `Laravel 12` |
 | `aaronfrancis/fast-paginate` | `Modules/Xot` | no (stable fino a `illuminate ^12`) | si | bloccato in attesa release stable `^13`; oggi manca dal lock root |
 | `fidum/laravel-eloquent-morph-to-one` | `Modules/Xot` | no (stable fino a `illuminate ^12`) | si | bloccato in attesa release stable `^13`; oggi manca dal lock root |
 | `spatie/laravel-model-states` | `Modules/UI` + `Modules/Xot` | si (`2.14.1`, `illuminate ^13`) | **no** su solo 8.3 (2.14 richiede `php ^8.4`) | **risolto** 2026-05-21: `php8.4 … composer update -W` da `laravel/`; vendor OK; PHPStan `app/States/` OK. Lock root locale (repo: `*.lock` gitignored). [#87](https://github.com/laraxot/base_fixcity_fila5/issues/87) |
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Evidenze codice

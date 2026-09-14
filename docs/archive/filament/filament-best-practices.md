@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Best Practices
 
 ## Visibilità dei Metodi
@@ -65,6 +66,8 @@ public function getTableActions(): array
 - [Best Practices PHP](../php-strict-types.md)
 - [Best Practices PHP](../php-strict-types.md)
 =======
+=======
+>>>>>>> laraxot/dev
 # Best Practices per Risorse Filament in Laraxot
 
 Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.
@@ -123,7 +126,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 1. **SEMPRE** utilizzare `getFormSchema()` invece di `form()`:
    ```php
    // CORRETTO ✅
+<<<<<<< HEAD
    public function getFormSchema(): array
+=======
+   public static function getFormSchema(): array
+>>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome'),
@@ -261,4 +268,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 * [filament_best_practices.md](../../../User/docs/filament_best_practices.md)
 * [filament_best_practices.md](../../../Job/docs/filament_best_practices.md)
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

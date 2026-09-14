@@ -19,8 +19,13 @@ Questa documentazione definisce i **pattern completi e standardizzati** per l'us
 - [Validation Rules](https://filamentphp.com/docs/5.x/forms/validation)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🔗 **Standard Laravel 13**:
 - [Laravel 13 Documentation](https://laravel.com/docs/12.x)
+=======
+### 🔗 **Standard Laravel 12**:
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+>>>>>>> laraxot/dev
 =======
 ### 🔗 **Standard Laravel 12**:
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)

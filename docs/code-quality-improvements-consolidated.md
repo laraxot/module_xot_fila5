@@ -137,6 +137,7 @@ describe('Event Management', function () {
 - **Integration Tests**: > 60% coverage
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 5. Filament 5 - Best Practices Aggiornate
 
 #### Schema Components (Filament 5)
@@ -148,6 +149,8 @@ use Filament\Schemas\Components\Grid;
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
+=======
+>>>>>>> laraxot/dev
 ### 5. Filament 4 - Best Practices Aggiornate
 
 #### Schema Components (Filament 4)
@@ -157,7 +160,14 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -190,17 +200,23 @@ protected function getHeaderActions(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 6. Laravel 13 - Nuove Features da Usare
 
 #### Model Events con Type Hints
 ```php
 // ✅ Laravel 13 pattern
 =======
+=======
+>>>>>>> laraxot/dev
 ### 6. Laravel 12 - Nuove Features da Usare
 
 #### Model Events con Type Hints
 ```php
 // ✅ Laravel 12 pattern
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 protected static function booted(): void
 {
@@ -340,7 +356,11 @@ $content = file_get_contents($path); // Lancia eccezione se fallisce
 - [Filament](https://filamentphp.com/docs) - Admin panel
 - [Laravel Modules](https://laravelmodules.com/) - Modular architecture
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13](https://laravel.com/docs/12.x) - Framework docs
+=======
+- [Laravel 12](https://laravel.com/docs/12.x) - Framework docs
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12](https://laravel.com/docs/12.x) - Framework docs
 >>>>>>> laraxot/dev

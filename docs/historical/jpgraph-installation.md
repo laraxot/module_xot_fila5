@@ -19,7 +19,11 @@ Per installazione Composer e utilizzo dei namespace:
 | Autoload | Fornito dal pacchetto; non aggiungere mapping in `composer.json` |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (<nome progetto>, Limesurvey, ecc.) usano le Actions del modulo Chart.
+=======
+Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (Quaeris, Limesurvey, ecc.) usano le Actions del modulo Chart.
+>>>>>>> laraxot/dev
 =======
 Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (Quaeris, Limesurvey, ecc.) usano le Actions del modulo Chart.
 >>>>>>> laraxot/dev

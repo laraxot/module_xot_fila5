@@ -2,7 +2,10 @@
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -26,6 +29,9 @@ updated: 2026-08-24
 
 - <https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

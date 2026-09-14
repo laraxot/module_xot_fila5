@@ -6,7 +6,11 @@
 - Il contratto dei widget di `XotBaseDashboard` rispecchia il contratto Filament: classi `Widget` o `WidgetConfiguration` indicizzate numericamente.
 - Gli allegati Notify condividono un unico shape tipizzato, inclusi contenuto binario, alias e MIME opzionali.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - I generatori PDF Notify e <nome progetto> delegano a `HtmlToPdfAction` invece di riferirsi al rimosso `HtmlService`.
+=======
+- I generatori PDF Notify e Quaeris delegano a `HtmlToPdfAction` invece di riferirsi al rimosso `HtmlService`.
+>>>>>>> laraxot/dev
 =======
 - I generatori PDF Notify e Quaeris delegano a `HtmlToPdfAction` invece di riferirsi al rimosso `HtmlService`.
 >>>>>>> laraxot/dev
@@ -15,7 +19,11 @@
 ## Verifica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 I moduli che comparivano nell'ultimo report completo (`AI`, `Activity`, `Geo`, `Notify`, `<nome progetto>`, `Xot`) passano PHPStan quando analizzati singolarmente. I test mirati modificati passano.
+=======
+I moduli che comparivano nell'ultimo report completo (`AI`, `Activity`, `Geo`, `Notify`, `Quaeris`, `Xot`) passano PHPStan quando analizzati singolarmente. I test mirati modificati passano.
+>>>>>>> laraxot/dev
 =======
 I moduli che comparivano nell'ultimo report completo (`AI`, `Activity`, `Geo`, `Notify`, `Quaeris`, `Xot`) passano PHPStan quando analizzati singolarmente. I test mirati modificati passano.
 >>>>>>> laraxot/dev

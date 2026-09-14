@@ -233,11 +233,18 @@ abstract class XotBaseResource extends Resource
      * Get form schema con validation automatica
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -279,7 +286,11 @@ abstract class XotBaseResource extends Resource
 // Ogni modulo DEVE avere il proprio BaseModel
 abstract class BaseModel extends XotBaseModel {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = '<nome progetto>';  // Connection specifica
+=======
+    protected $connection = 'quaeris';  // Connection specifica
+>>>>>>> laraxot/dev
 =======
     protected $connection = 'quaeris';  // Connection specifica
 >>>>>>> laraxot/dev

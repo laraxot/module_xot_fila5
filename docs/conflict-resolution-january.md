@@ -10,9 +10,15 @@
 - **Resolution**: Deleted the following files:
     - `Modules/Chart/app/Actions/JpGraph/V1/LineSubQuestionAction.php.backup`
 <<<<<<< HEAD
+<<<<<<< HEAD
     - `Modules/<nome progetto>/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/<nome progetto>/app/Datas/AlertDashboardFilterData.php.backup`
     - `Modules/<nome progetto>/app/Datas/DashboardFilterData.php.backup`
+=======
+    - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
+    - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
+    - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
+>>>>>>> laraxot/dev
 =======
     - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`

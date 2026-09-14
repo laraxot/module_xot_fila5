@@ -21,10 +21,24 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_9utuHW
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Z62AxG
 >>>>>>> laraxot/dev
    {
        return [
@@ -431,10 +445,24 @@ class ReportResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_9utuHW
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Z62AxG
 >>>>>>> laraxot/dev
     {
         return [

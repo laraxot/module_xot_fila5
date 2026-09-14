@@ -15,8 +15,13 @@
 - **Politica modulare:** un widget = un ruolo su un aggregato (`Ticket`, `Auth`, `Rating`).
 - **DRY nei namespace:** `ViewWidget` è leggibile nel contesto `Ticket\`; niente prefissi `Ticket*` su ogni file.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **KISS in CMS JSON:** `Modules\<nome progetto>\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
 - **Allineamento risorse:** `GetViewByClassAction` risolve `<nome progetto>::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+=======
+- **KISS in CMS JSON:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
+- **Allineamento risorse:** `GetViewByClassAction` risolve `fixcity::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+>>>>>>> laraxot/dev
 =======
 - **KISS in CMS JSON:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
 - **Allineamento risorse:** `GetViewByClassAction` risolve `fixcity::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
@@ -46,7 +51,11 @@ Modules/<Modulo>/resources/views/filament/widgets/
   "data": {
     "view": "ui::components.blocks.widget.simple",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "widget": "Modules\\<nome progetto>\\Filament\\Widgets\\Ticket\\ViewWidget"
+=======
+    "widget": "Modules\\Fixcity\\Filament\\Widgets\\Ticket\\ViewWidget"
+>>>>>>> laraxot/dev
 =======
     "widget": "Modules\\Fixcity\\Filament\\Widgets\\Ticket\\ViewWidget"
 >>>>>>> laraxot/dev
@@ -55,9 +64,15 @@ Modules/<Modulo>/resources/views/filament/widgets/
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Esempio <nome progetto> FO
 
 - Classe: `Modules\<nome progetto>\Filament\Widgets\Ticket\ViewWidget`
+=======
+## Esempio Fixcity FO
+
+- Classe: `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget`
+>>>>>>> laraxot/dev
 =======
 ## Esempio Fixcity FO
 
@@ -75,7 +90,11 @@ Widget ancora in root `Widgets/` con prefisso entità (`CreateTicketWizardWidget
 
 - [ticket-fo-detail-filament-widget-infolist](../../../../../../docs/wiki/decisions/ticket-fo-detail-filament-widget-infolist.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [tickets-view-cms-folio-page](../../../<nome progetto>/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo <nome progetto>)
+=======
+- [tickets-view-cms-folio-page](../../../Fixcity/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Fixcity)
+>>>>>>> laraxot/dev
 =======
 - [tickets-view-cms-folio-page](../../../Fixcity/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Fixcity)
 >>>>>>> laraxot/dev

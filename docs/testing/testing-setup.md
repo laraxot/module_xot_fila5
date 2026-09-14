@@ -1,7 +1,11 @@
 # Pest Testing Setup for Laraxot Modular Architecture
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 13 architecture.
+=======
+This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.
+>>>>>>> laraxot/dev
 =======
 This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.
 >>>>>>> laraxot/dev
@@ -11,7 +15,11 @@ This document describes how to configure and run tests using Pest PHP in the Lar
 - PHP 8.3+
 - Pest PHP 3.x
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13
+=======
+- Laravel 12
+>>>>>>> laraxot/dev
 =======
 - Laravel 12
 >>>>>>> laraxot/dev
@@ -278,7 +286,11 @@ trait CreatesApplication
 ## References
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 Testing](https://laravel.com/docs/12.x/testing)
+=======
+- [Laravel 12 Testing](https://laravel.com/docs/12.x/testing)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 Testing](https://laravel.com/docs/12.x/testing)
 >>>>>>> laraxot/dev

@@ -22,7 +22,11 @@ Script: `Modules/Activity/tools/convert-pest-to-assert.php`
 **Runner per tutti i moduli:**
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 for mod in Cms <nome progetto> Gdpr Geo Job Notify Tenant UI User Xot; do
+=======
+for mod in Cms Fixcity Gdpr Geo Job Notify Tenant UI User Xot; do
+>>>>>>> laraxot/dev
 =======
 for mod in Cms Fixcity Gdpr Geo Job Notify Tenant UI User Xot; do
 >>>>>>> laraxot/dev

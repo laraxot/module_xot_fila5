@@ -1,6 +1,10 @@
 # Comprehensive Improvement Recommendations
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## DRY + KISS + SOLID + Robust + Filament 5 + Laravel 13 + PHP 8.3
+=======
+## DRY + KISS + SOLID + Robust + Filament 4 + Laravel 12 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 ## DRY + KISS + SOLID + Robust + Filament 4 + Laravel 12 + PHP 8.3
 >>>>>>> laraxot/dev
@@ -350,7 +354,11 @@ public function generateBulkPdfs(Collection $surveys): void
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🏗️ Priority 4: Filament 5 + Laravel 13 + PHP 8.3 Optimization
+=======
+## 🏗️ Priority 4: Filament 4 + Laravel 12 + PHP 8.3 Optimization
+>>>>>>> laraxot/dev
 =======
 ## 🏗️ Priority 4: Filament 4 + Laravel 12 + PHP 8.3 Optimization
 >>>>>>> laraxot/dev
@@ -400,7 +408,11 @@ public function getNotificationChannel(): string
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4.2 Filament 5 Best Practices
+=======
+### 4.2 Filament 4 Best Practices
+>>>>>>> laraxot/dev
 =======
 ### 4.2 Filament 4 Best Practices
 >>>>>>> laraxot/dev
@@ -491,17 +503,23 @@ class ContactResource extends Resource
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4.3 Laravel 13 Features Integration
 **Solution**: Leverage new Laravel features
 
 ```php
 // Use Laravel 13 improved validation
 =======
+=======
+>>>>>>> laraxot/dev
 ### 4.3 Laravel 12 Features Integration
 **Solution**: Leverage new Laravel features
 
 ```php
 // Use Laravel 12 improved validation
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 class ContactFormRequest extends FormRequest
 {
@@ -529,7 +547,11 @@ class Contact extends XotUniversalBaseModel
             'sms_sent_at' => 'datetime',
             'mail_sent_at' => 'datetime',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'metadata' => 'encrypted:json', // Laravel 13 encrypted casting
+=======
+            'metadata' => 'encrypted:json', // Laravel 12 encrypted casting
+>>>>>>> laraxot/dev
 =======
             'metadata' => 'encrypted:json', // Laravel 12 encrypted casting
 >>>>>>> laraxot/dev
@@ -539,7 +561,11 @@ class Contact extends XotUniversalBaseModel
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Use Laravel 13 enhanced collections
+=======
+// Use Laravel 12 enhanced collections
+>>>>>>> laraxot/dev
 =======
 // Use Laravel 12 enhanced collections
 >>>>>>> laraxot/dev
@@ -579,8 +605,13 @@ public function processContacts(): Collection
 ### Phase 4: Modern Standards (Week 7-8)
 1. ✅ Upgrade to PHP 8.3 features
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. ✅ Optimize Filament 5 resources
 3. ✅ Leverage Laravel 13 features
+=======
+2. ✅ Optimize Filament 4 resources
+3. ✅ Leverage Laravel 12 features
+>>>>>>> laraxot/dev
 =======
 2. ✅ Optimize Filament 4 resources
 3. ✅ Leverage Laravel 12 features
@@ -738,7 +769,11 @@ class ContactNotificationService
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 # Comprehensive Improvement Recommendations
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## DRY + KISS + SOLID + Robust + Filament 5 + Laravel 13 + PHP 8.3
+=======
+## DRY + KISS + SOLID + Robust + Filament 4 + Laravel 12 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 ## DRY + KISS + SOLID + Robust + Filament 4 + Laravel 12 + PHP 8.3
 >>>>>>> laraxot/dev
@@ -797,7 +832,11 @@ class ConnectionManagerService
     {
         return match($module) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             '<nome progetto>' => '<nome progetto>',
+=======
+            'Quaeris' => 'quaeris',
+>>>>>>> laraxot/dev
 =======
             'Quaeris' => 'quaeris',
 >>>>>>> laraxot/dev
@@ -884,7 +923,11 @@ class ContactValidationService
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome progetto>/Contracts/ChartRendererContract.php
+=======
+// Modules/Quaeris/Contracts/ChartRendererContract.php
+>>>>>>> laraxot/dev
 =======
 // Modules/Quaeris/Contracts/ChartRendererContract.php
 >>>>>>> laraxot/dev
@@ -895,7 +938,11 @@ interface ChartRendererContract
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome progetto>/Services/Chart/Renderers/PieChartRenderer.php
+=======
+// Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
+>>>>>>> laraxot/dev
 =======
 // Modules/Quaeris/Services/Chart/Renderers/PieChartRenderer.php
 >>>>>>> laraxot/dev
@@ -1065,7 +1112,11 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome progetto>/Services/BulkProcessingService.php
+=======
+// Modules/Quaeris/Services/BulkProcessingService.php
+>>>>>>> laraxot/dev
 =======
 // Modules/Quaeris/Services/BulkProcessingService.php
 >>>>>>> laraxot/dev
@@ -1104,7 +1155,11 @@ public function generateBulkPdfs(Collection $surveys): void
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🏗️ Priority 4: Filament 5 + Laravel 13 + PHP 8.3 Optimization
+=======
+## 🏗️ Priority 4: Filament 4 + Laravel 12 + PHP 8.3 Optimization
+>>>>>>> laraxot/dev
 =======
 ## 🏗️ Priority 4: Filament 4 + Laravel 12 + PHP 8.3 Optimization
 >>>>>>> laraxot/dev
@@ -1154,7 +1209,11 @@ public function getNotificationChannel(): string
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4.2 Filament 5 Best Practices
+=======
+### 4.2 Filament 4 Best Practices
+>>>>>>> laraxot/dev
 =======
 ### 4.2 Filament 4 Best Practices
 >>>>>>> laraxot/dev
@@ -1245,17 +1304,23 @@ class ContactResource extends Resource
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4.3 Laravel 13 Features Integration
 **Solution**: Leverage new Laravel features
 
 ```php
 // Use Laravel 13 improved validation
 =======
+=======
+>>>>>>> laraxot/dev
 ### 4.3 Laravel 12 Features Integration
 **Solution**: Leverage new Laravel features
 
 ```php
 // Use Laravel 12 improved validation
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 class ContactFormRequest extends FormRequest
 {
@@ -1283,7 +1348,11 @@ class Contact extends XotUniversalBaseModel
             'sms_sent_at' => 'datetime',
             'mail_sent_at' => 'datetime',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'metadata' => 'encrypted:json', // Laravel 13 encrypted casting
+=======
+            'metadata' => 'encrypted:json', // Laravel 12 encrypted casting
+>>>>>>> laraxot/dev
 =======
             'metadata' => 'encrypted:json', // Laravel 12 encrypted casting
 >>>>>>> laraxot/dev
@@ -1293,7 +1362,11 @@ class Contact extends XotUniversalBaseModel
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Use Laravel 13 enhanced collections
+=======
+// Use Laravel 12 enhanced collections
+>>>>>>> laraxot/dev
 =======
 // Use Laravel 12 enhanced collections
 >>>>>>> laraxot/dev
@@ -1333,8 +1406,13 @@ public function processContacts(): Collection
 ### Phase 4: Modern Standards (Week 7-8)
 1. ✅ Upgrade to PHP 8.3 features
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. ✅ Optimize Filament 5 resources
 3. ✅ Leverage Laravel 13 features
+=======
+2. ✅ Optimize Filament 4 resources
+3. ✅ Leverage Laravel 12 features
+>>>>>>> laraxot/dev
 =======
 2. ✅ Optimize Filament 4 resources
 3. ✅ Leverage Laravel 12 features

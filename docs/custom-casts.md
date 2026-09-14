@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -16,6 +19,9 @@ note: "Convertito da custom_casts.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/custom_casts.txt -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -32,9 +38,12 @@ https://dev.to/slyfirefox/laravel-models-3-common-custom-cast-examples-2com
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -45,11 +54,17 @@ DB::table(‘orders’)
 <<<<<<< HEAD
 
 $table->json('address')->nullable();
+<<<<<<< HEAD
 $table->json('address')->nullable();
 =======
 <<<<<<< HEAD
 
 $table->json('address')->nullable();
+=======
+$table->json('address')->nullable();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 $table->json('address')->nullable();
 >>>>>>> laraxot/dev

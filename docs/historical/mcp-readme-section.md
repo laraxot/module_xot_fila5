@@ -61,7 +61,11 @@ Edita i file di configurazione e inserisci le tue keys.
 
 ```text
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analizza errori PHPStan in Modules/<nome progetto> seguendo pattern in .windsurf/rules/
+=======
+Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
+>>>>>>> laraxot/dev
 =======
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
 >>>>>>> laraxot/dev

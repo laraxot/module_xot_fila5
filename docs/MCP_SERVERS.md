@@ -31,7 +31,11 @@ This document provides Xot-specific MCP usage guidelines only.
 - **Use**: Look up Laravel, Nwidart, Laraxot documentation
 - **Example Queries**:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "Laravel 13 service provider best practices"
+=======
+  - "Laravel 12 service provider best practices"
+>>>>>>> laraxot/dev
 =======
   - "Laravel 12 service provider best practices"
 >>>>>>> laraxot/dev

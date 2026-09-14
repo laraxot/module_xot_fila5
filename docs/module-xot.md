@@ -2,15 +2,21 @@
 
 ## Informazioni Generali
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Nome**: `laraxot/module_xot_fila5`
 - **Descrizione**: Modulo core del repository laraxot
 - **Namespace**: `Modules\Xot`
 - **Repository**: https://github.com/laraxot/module_xot_fila5
 =======
+=======
+>>>>>>> laraxot/dev
 - **Nome**: `laraxot/module_xot_fila3`
 - **Descrizione**: Modulo core del repository laraxot
 - **Namespace**: `Modules\Xot`
 - **Repository**: https://github.com/laraxot/module_xot_fila3
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Service Providers

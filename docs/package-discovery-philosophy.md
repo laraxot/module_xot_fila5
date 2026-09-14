@@ -236,7 +236,11 @@ With 80 packages × 110 seconds = 8,800 seconds = 2.4 hours
 - **Laravel 6.x+**: Discovery extended to facades, aliases
 - **Laravel 8.x+**: Improved caching and performance
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Laravel 13.x** (Current): Mature, stable, production-proven
+=======
+- **Laravel 12.x** (Current): Mature, stable, production-proven
+>>>>>>> laraxot/dev
 =======
 - **Laravel 12.x** (Current): Mature, stable, production-proven
 >>>>>>> laraxot/dev
@@ -344,7 +348,11 @@ The command discovered these categories:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, <nome progetto>
+=======
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+>>>>>>> laraxot/dev
 =======
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
 >>>>>>> laraxot/dev
@@ -359,7 +367,11 @@ Each module uses this pattern:
 ```json
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila5",
+=======
+    "name": "laraxot/module_user_fila3",
+>>>>>>> laraxot/dev
 =======
     "name": "laraxot/module_user_fila3",
 >>>>>>> laraxot/dev

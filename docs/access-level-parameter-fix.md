@@ -4,7 +4,11 @@
 
 ### Problem
 <<<<<<< HEAD
+<<<<<<< HEAD
 Error: "Access level to Modules\<nome progetto>\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
+=======
+Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
+>>>>>>> laraxot/dev
 =======
 Error: "Access level to Modules\Quaeris\Filament\Widgets\BaseTableWidget::getTableHeaderActions() must be public (as in class Modules\Xot\Filament\Widgets\XotBaseTableWidget)"
 >>>>>>> laraxot/dev
@@ -17,7 +21,11 @@ Ensure the method is declared as public in the BaseTableWidget class:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Modules/<nome progetto>/Filament/Widgets/BaseTableWidget.php
+=======
+// In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
+>>>>>>> laraxot/dev
 =======
 // In Modules/Quaeris/Filament/Widgets/BaseTableWidget.php
 >>>>>>> laraxot/dev
@@ -50,7 +58,11 @@ In `QuestionChartAnswersWidget.php`, declare the `group` parameter as a public p
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Modules/<nome progetto>/Filament/Widgets/QuestionChartAnswersWidget.php
+=======
+// In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
+>>>>>>> laraxot/dev
 =======
 // In Modules/Quaeris/Filament/Widgets/QuestionChartAnswersWidget.php
 >>>>>>> laraxot/dev
@@ -103,7 +115,11 @@ public function mount()
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev
@@ -132,7 +148,11 @@ class BaseTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev

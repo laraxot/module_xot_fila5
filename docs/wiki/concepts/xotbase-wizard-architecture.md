@@ -29,7 +29,11 @@
            ▼                                    ▼
 http://127.0.0.1:8000/it/tests/segnalazione-crea
 <<<<<<< HEAD
+<<<<<<< HEAD
            (citizen frontoffice)              http://127.0.0.1:8000/<nome progetto>/admin/tickets/create
+=======
+           (citizen frontoffice)              http://127.0.0.1:8000/fixcity/admin/tickets/create
+>>>>>>> laraxot/dev
 =======
            (citizen frontoffice)              http://127.0.0.1:8000/fixcity/admin/tickets/create
 >>>>>>> laraxot/dev
@@ -145,7 +149,11 @@ Filament\Schemas\Components\Wizard (vendor)
 XotBaseWizardWidget (Modules/Xot - our base)
     ↑
 <<<<<<< HEAD
+<<<<<<< HEAD
 CreateTicketWizardWidget (Modules/<nome progetto> - concrete widget)
+=======
+CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
+>>>>>>> laraxot/dev
 =======
 CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
 >>>>>>> laraxot/dev
@@ -169,7 +177,11 @@ CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
 - [ ] Run `npm run build && npm run copy` after CSS changes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Admin (`/<nome progetto>/admin/tickets/create`)
+=======
+### Admin (`/fixcity/admin/tickets/create`)
+>>>>>>> laraxot/dev
 =======
 ### Admin (`/fixcity/admin/tickets/create`)
 >>>>>>> laraxot/dev
@@ -186,7 +198,11 @@ CreateTicketWizardWidget (Modules/Fixcity - concrete widget)
 ```bash
 cd laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
 php vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php --level=5
+=======
+php vendor/bin/phpstan analyse Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php --level=5
+>>>>>>> laraxot/dev
 =======
 php vendor/bin/phpstan analyse Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php --level=5
 >>>>>>> laraxot/dev
@@ -196,7 +212,11 @@ php vendor/bin/phpstan analyse Modules/Fixcity/app/Filament/Widgets/CreateTicket
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 php /home/zorin/.local/bin/phpmd.phar laravel/Modules/<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php text cleancode
+=======
+php /home/zorin/.local/bin/phpmd.phar laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php text cleancode
+>>>>>>> laraxot/dev
 =======
 php /home/zorin/.local/bin/phpmd.phar laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php text cleancode
 >>>>>>> laraxot/dev
@@ -214,7 +234,11 @@ php vendor/bin/phpinsights analyse --no-interaction
 ```bash
 cd laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
 php vendor/bin/pint Modules/<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php --format=agent
+=======
+php vendor/bin/pint Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php --format=agent
+>>>>>>> laraxot/dev
 =======
 php vendor/bin/pint Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php --format=agent
 >>>>>>> laraxot/dev
@@ -256,8 +280,13 @@ npx playwright test --grep "admin tickets create"
 
 - `laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php` ✅ (base widget)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `laravel/Modules/<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php` ✅ (concrete widget)
 - `laravel/Modules/<nome progetto>/app/Filament/Resources/TicketResource/Schemas/TicketForm.php` ✅ (form schema)
+=======
+- `laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php` ✅ (concrete widget)
+- `laravel/Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php` ✅ (form schema)
+>>>>>>> laraxot/dev
 =======
 - `laravel/Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php` ✅ (concrete widget)
 - `laravel/Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php` ✅ (form schema)
@@ -270,7 +299,11 @@ npx playwright test --grep "admin tickets create"
 After understanding and implementing:
 1. Update `laravel/Modules/Xot/docs/wiki/concepts/xotbase-wizard-architecture.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. Update `laravel/Modules/<nome progetto>/docs/wiki/concepts/wizard-zen-philosophy.md`
+=======
+2. Update `laravel/Modules/Fixcity/docs/wiki/concepts/wizard-zen-philosophy.md`
+>>>>>>> laraxot/dev
 =======
 2. Update `laravel/Modules/Fixcity/docs/wiki/concepts/wizard-zen-philosophy.md`
 >>>>>>> laraxot/dev

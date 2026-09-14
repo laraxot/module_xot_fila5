@@ -61,7 +61,11 @@
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
 <<<<<<< HEAD
+<<<<<<< HEAD
      <repo progetto>/
+=======
+     base_predict_fila5_mono/
+>>>>>>> laraxot/dev
 =======
      base_predict_fila5_mono/
 >>>>>>> laraxot/dev

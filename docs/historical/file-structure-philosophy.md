@@ -168,7 +168,11 @@ Modules/
 │   │   └── seeders/
 │   └── app/
 <<<<<<< HEAD
+<<<<<<< HEAD
 └── <nome progetto>/
+=======
+└── Quaeris/
+>>>>>>> laraxot/dev
 =======
 └── Quaeris/
 >>>>>>> laraxot/dev

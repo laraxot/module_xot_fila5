@@ -3,7 +3,11 @@
 ## Scopo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Nel progetto `<repo progetto>` PHPStan non si usa a livelli intermedi come obiettivo finale.
+=======
+Nel progetto `base_predict_fila5` PHPStan non si usa a livelli intermedi come obiettivo finale.
+>>>>>>> laraxot/dev
 =======
 Nel progetto `base_predict_fila5` PHPStan non si usa a livelli intermedi come obiettivo finale.
 >>>>>>> laraxot/dev
@@ -33,8 +37,13 @@ La governance corretta e' una sola: **livello MAX sempre**.
 - [Xot docs index](./README.md)
 - [Project error-fix workflow](../../../../docs/project/ERROR_FIX_WORKFLOW.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [GitHub issue #1](https://github.com/laraxot/<repo progetto>/issues/1)
 - [GitHub discussion #2](https://github.com/laraxot/<repo progetto>/discussions/2)
+=======
+- [GitHub issue #1](https://github.com/laraxot/base_predict_fila5/issues/1)
+- [GitHub discussion #2](https://github.com/laraxot/base_predict_fila5/discussions/2)
+>>>>>>> laraxot/dev
 =======
 - [GitHub issue #1](https://github.com/laraxot/base_predict_fila5/issues/1)
 - [GitHub discussion #2](https://github.com/laraxot/base_predict_fila5/discussions/2)

@@ -28,7 +28,11 @@ Matrice operativa per decidere la base policy per modulo, mantenendo DRY + KISS.
 | Gdpr | policy tramite `GdprBasePolicy` locale neutra | `XotBasePolicy` via base locale | mantenere |
 | Tenant | policy tramite `TenantBasePolicy` locale | `XotBasePolicy` via base locale, `UserBasePolicy` solo se ACL identity-heavy | revisione leggera |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
+=======
+| Fixcity | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
+>>>>>>> laraxot/dev
 =======
 | Fixcity | presenti policy dirette senza base comune forte | `XotBasePolicy` per business core; `UserBasePolicy` solo dove identity-driven | revisione alta |
 >>>>>>> laraxot/dev

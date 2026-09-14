@@ -8,7 +8,11 @@ updated: 2026-07-27
 qmd: "xot base service provider optional resources views directory view cache"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/7"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
 >>>>>>> laraxot/dev

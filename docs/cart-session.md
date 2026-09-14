@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
@@ -75,6 +78,10 @@ https://github.com/Tefoh/Cart
 
 https://github.com/Codexshaper/laravel-woocommerce
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -139,6 +146,9 @@ updated: 2026-08-24
 - <https://github.com/Tefoh/Cart>
 - <https://github.com/Codexshaper/laravel-woocommerce>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

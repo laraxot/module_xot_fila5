@@ -236,7 +236,11 @@ With 80 packages × 110 seconds = 8,800 seconds = 2.4 hours
 - **Laravel 6.x+**: Discovery extended to facades, aliases
 - **Laravel 8.x+**: Improved caching and performance
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Laravel 13.x** (Current): Mature, stable, production-proven
+=======
+- **Laravel 12.x** (Current): Mature, stable, production-proven
+>>>>>>> laraxot/dev
 =======
 - **Laravel 12.x** (Current): Mature, stable, production-proven
 >>>>>>> laraxot/dev

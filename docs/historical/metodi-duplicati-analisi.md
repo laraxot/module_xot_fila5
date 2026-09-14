@@ -108,7 +108,11 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
 =======
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
 >>>>>>> laraxot/dev
@@ -473,7 +477,11 @@ public function getTableFilters(): array
 - Code review
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -515,7 +523,11 @@ public function getTableFilters(): array
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 4. Refactoring moduli business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -658,7 +670,11 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
 =======
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
 >>>>>>> laraxot/dev
@@ -1023,7 +1039,11 @@ public function getTableFilters(): array
 - Code review
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -1065,7 +1085,11 @@ public function getTableFilters(): array
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 4. Refactoring moduli business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev

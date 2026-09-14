@@ -264,10 +264,31 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_GCGala
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_kMQQ6W
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_GCGala
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kMQQ6W
 >>>>>>> laraxot/dev
     {
         return [
@@ -312,10 +333,31 @@ class UserModerationResource extends XotBaseResource
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_GCGala
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_kMQQ6W
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_GCGala
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_kMQQ6W
 >>>>>>> laraxot/dev
 {
     return [

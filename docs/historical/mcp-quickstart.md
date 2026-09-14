@@ -139,7 +139,11 @@ cd init
 ```
 # In Cursor/Windsurf/Cline
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analizza gli errori PHPStan in Modules/<nome progetto> e suggerisci correzioni seguendo le regole in .windsurf/rules/
+=======
+Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
+>>>>>>> laraxot/dev
 =======
 Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
 >>>>>>> laraxot/dev
@@ -179,7 +183,11 @@ iflow
 ```
 # Con memory + sequential-thinking
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analizza l'architettura del modulo <nome progetto>:
+=======
+Analizza l'architettura del modulo Quaeris:
+>>>>>>> laraxot/dev
 =======
 Analizza l'architettura del modulo Quaeris:
 >>>>>>> laraxot/dev

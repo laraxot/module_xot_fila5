@@ -10,7 +10,11 @@ related:
   - "../concepts/php84-upgrade-extension-checklist.md"
   - "../../../../../../public_html/.htaccess"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issue: "https://github.com/provtv/<repo progetto>/issues/147"
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/147"
+>>>>>>> laraxot/dev
 =======
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/147"
 >>>>>>> laraxot/dev

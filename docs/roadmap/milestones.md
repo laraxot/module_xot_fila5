@@ -322,7 +322,11 @@ Q2 2027:        ████  M10: Next Generation
 
 ### Integration Criteria
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Laravel 13: Full support
+=======
+- ✅ Laravel 12: Full support
+>>>>>>> laraxot/dev
 =======
 - ✅ Laravel 12: Full support
 >>>>>>> laraxot/dev

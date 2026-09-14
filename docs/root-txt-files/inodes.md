@@ -1,7 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 title: 'Inodes'
 module: Xot
@@ -16,6 +19,10 @@ updated: 2026-08-24
 
 -----------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -36,6 +43,9 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 
 --------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

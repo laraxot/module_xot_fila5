@@ -234,7 +234,11 @@ Per documentazione completa, vedere:
 - [HasXotTable Trait](../../../modules/xot/docs/filament/xot-table.md)
 - [No Table Override Rule](../../../modules/xot/docs/filament/no-table-override.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Property Initialization Pattern](../../../Modules/<nome progetto>/docs/widget-property-initialization-pattern.md)
+=======
+- [Widget Property Initialization Pattern](../../../Modules/Quaeris/docs/widget-property-initialization-pattern.md)
+>>>>>>> laraxot/dev
 =======
 - [Widget Property Initialization Pattern](../../../Modules/Quaeris/docs/widget-property-initialization-pattern.md)
 >>>>>>> laraxot/dev
@@ -244,8 +248,13 @@ Per documentazione completa, vedere:
 - [HasXotTable Trait](../../../Modules/Xot/docs/filament/xot-table.md)
 - [No Table Override Rule](../../../Modules/Xot/docs/filament/no-table-override.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Table Method Final Analysis](../../../Modules/<nome progetto>/docs/widget-table-method-final-analysis.md)
 - [Widget Property Initialization Pattern](../../../Modules/<nome progetto>/docs/widget-property-initialization-pattern.md)
+=======
+- [Widget Table Method Final Analysis](../../../Modules/Quaeris/docs/widget-table-method-final-analysis.md)
+- [Widget Property Initialization Pattern](../../../Modules/Quaeris/docs/widget-property-initialization-pattern.md)
+>>>>>>> laraxot/dev
 =======
 - [Widget Table Method Final Analysis](../../../Modules/Quaeris/docs/widget-table-method-final-analysis.md)
 - [Widget Property Initialization Pattern](../../../Modules/Quaeris/docs/widget-property-initialization-pattern.md)

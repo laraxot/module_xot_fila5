@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 module: theme
@@ -10,6 +13,10 @@ canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -112,6 +119,9 @@ find laravel/Modules -name ".gitignore" -exec grep "_docs/" {} \;
 - Laravel Convention: Use `docs/`, not `_docs/`
 - Clean Code: No temporary files in repository
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

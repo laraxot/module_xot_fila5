@@ -61,11 +61,18 @@ class XotBaseResourceForm
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -92,17 +99,27 @@ class XotBaseResourceForm
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome progetto>/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
 class TicketForm extends XotBaseResourceForm
 {
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
+=======
+>>>>>>> laraxot/dev
 // Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -148,7 +165,11 @@ class TicketForm extends XotBaseResourceForm
 ### 4. **LangServiceProvider Integration (Right Speech)**
 - NO `->label()` or `->tooltip()` in form fields
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Labels come from `<nome progetto>::ticket-wizard.steps.privacy.label`
+=======
+- Labels come from `fixcity::ticket-wizard.steps.privacy.label`
+>>>>>>> laraxot/dev
 =======
 - Labels come from `fixcity::ticket-wizard.steps.privacy.label`
 >>>>>>> laraxot/dev
@@ -157,7 +178,11 @@ class TicketForm extends XotBaseResourceForm
 ### 5. **Module Boundary (Universal Love)**
 - `XotBaseResourceForm` = foundation (shared by all modules)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `TicketForm` = specialization (<nome progetto>-specific)
+=======
+- `TicketForm` = specialization (Fixcity-specific)
+>>>>>>> laraxot/dev
 =======
 - `TicketForm` = specialization (Fixcity-specific)
 >>>>>>> laraxot/dev

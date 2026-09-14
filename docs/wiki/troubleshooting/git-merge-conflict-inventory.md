@@ -20,8 +20,13 @@
 - docs/documentation-rules-1-1.md
 - docs/dry-kiss-model-refactoring-.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 - docs/Filament-5-laraxot-e5a872.md
 - docs/Filament-5-laraxot-rules-conflict-e5a872.md
+=======
+- docs/filament-4-laraxot-e5a872.md
+- docs/filament-4-laraxot-rules-conflict-e5a872.md
+>>>>>>> laraxot/dev
 =======
 - docs/filament-4-laraxot-e5a872.md
 - docs/filament-4-laraxot-rules-conflict-e5a872.md

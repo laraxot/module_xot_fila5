@@ -8,9 +8,15 @@ qmd: "xot migration updateTimestamps XotBaseMigration no redundant timestamps so
 story: STORY-140
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/270"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/271"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/270"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/271"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/270"
 discussions:

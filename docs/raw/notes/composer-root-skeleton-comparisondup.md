@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Composer Root Skeleton <nome progetto> Comparison Dup"
+=======
+title: "Composer Root Skeleton Fixcity Comparison Dup"
+>>>>>>> laraxot/dev
 =======
 title: "Composer Root Skeleton Fixcity Comparison Dup"
 >>>>>>> laraxot/dev
@@ -14,7 +18,11 @@ related:
   - "./composer-root-skeleton-ptv-comparison-dup.md"
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Composer Root Skeleton <nome progetto> Comparison Dup
+=======
+# Composer Root Skeleton Fixcity Comparison Dup
+>>>>>>> laraxot/dev
 =======
 # Composer Root Skeleton Fixcity Comparison Dup
 >>>>>>> laraxot/dev

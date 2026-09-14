@@ -3,7 +3,11 @@
 **Ultimo aggiornamento**: [DATE]  
 **Principi**: DRY + KISS + SOLID + Robust  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot  
+=======
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
+>>>>>>> laraxot/dev
 =======
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
 >>>>>>> laraxot/dev
@@ -558,7 +562,11 @@ Dopo ogni modifica file:
 ## 🎓 Mantra Finale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3 + Laraxot**
+=======
+**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+>>>>>>> laraxot/dev
 =======
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
 >>>>>>> laraxot/dev

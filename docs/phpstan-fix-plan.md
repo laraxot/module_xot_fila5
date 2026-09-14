@@ -375,7 +375,11 @@ After fixing Xot module:
 1. Fix Blog module errors (6 errors)
 2. Fix Cms module remaining errors (8 errors)
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Fix <nome progetto> module errors (45 errors)
+=======
+3. Fix Fixcity module errors (45 errors)
+>>>>>>> laraxot/dev
 =======
 3. Fix Fixcity module errors (45 errors)
 >>>>>>> laraxot/dev

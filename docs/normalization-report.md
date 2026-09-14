@@ -2,12 +2,18 @@
 # Report Normalizzazione Documentazione
 
 ## Data: Gennaio 2025
+<<<<<<< HEAD
 # Report Normalizzazione Documentazione - Gennaio 2025
 =======
 <<<<<<< HEAD
 # Report Normalizzazione Documentazione
 
 ## Data: Gennaio 2025
+=======
+# Report Normalizzazione Documentazione - Gennaio 2025
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 # Report Normalizzazione Documentazione - Gennaio 2025
 >>>>>>> laraxot/dev
@@ -119,16 +125,22 @@
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ---
@@ -137,10 +149,16 @@
 **Stato**: In corso
 <<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+<<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 =======
 <<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+=======
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 **Prossima Revisione**: Dopo normalizzazione batch successivo
 >>>>>>> laraxot/dev

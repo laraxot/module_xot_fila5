@@ -46,11 +46,18 @@ Each resource must implement the abstract method:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract public static function getFormSchema(): array
 abstract public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 abstract public static function getFormSchema(): array
+=======
+abstract public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -81,11 +88,18 @@ Resources define forms through `getFormSchema()`:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -191,11 +205,18 @@ Consistent form setup with standardized columns:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchemaColumns(): int
 public function getFormSchemaColumns(): int
 =======
 <<<<<<< HEAD
 public static function getFormSchemaColumns(): int
+=======
+public function getFormSchemaColumns(): int
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchemaColumns(): int
 =======
 public function getFormSchemaColumns(): int
 >>>>>>> laraxot/dev
@@ -375,11 +396,18 @@ public static function getModel(): string
 Always implement `getFormSchema()` for consistency:
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
