@@ -58,6 +58,15 @@ protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'p
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MUp4Zv
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_sgxPoe
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -65,6 +74,13 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MUp4Zv
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_sgxPoe
 >>>>>>> laraxot/dev
 {
     return [
@@ -84,6 +100,15 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MUp4Zv
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_sgxPoe
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -91,6 +116,13 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_MUp4Zv
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_sgxPoe
 >>>>>>> laraxot/dev
 {
     return [

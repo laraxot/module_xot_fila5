@@ -58,7 +58,21 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wsngsl
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
 >>>>>>> laraxot/dev
     {
         return [
@@ -95,7 +109,21 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
    - ✅ `public static function getFormSchema(): array`
 =======
+<<<<<<< HEAD
    - ✅ `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wsngsl
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   - ✅ `public static function getFormSchema(): array`
+=======
+   - ✅ `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
 >>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
@@ -211,7 +239,21 @@ class ListRecords extends XotBaseListRecords
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wsngsl
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
 >>>>>>> laraxot/dev
 {
     return [
@@ -544,7 +586,21 @@ public function getTableColumns(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_wsngsl
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xfcNH9
 >>>>>>> laraxot/dev
 {
     return [

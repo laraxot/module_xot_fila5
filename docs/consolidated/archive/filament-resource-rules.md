@@ -68,7 +68,21 @@ protected static ?string $model = YourModel::class;
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Pmg9i7
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2cPIC2
 >>>>>>> laraxot/dev
 {
     return [
@@ -167,7 +181,21 @@ class DoctorResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Pmg9i7
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2cPIC2
 >>>>>>> laraxot/dev
     {
         return [

@@ -143,7 +143,11 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract public static function getFormSchema(): array;
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
@@ -584,7 +588,11 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -665,7 +673,11 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

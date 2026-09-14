@@ -26,7 +26,11 @@ Questo significa che:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract public static function getFormSchema(): array;
+=======
+abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
@@ -64,7 +68,11 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

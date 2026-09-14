@@ -26,7 +26,11 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -225,7 +229,11 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -390,7 +398,11 @@ class ReportResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -438,7 +450,11 @@ class SocioResource extends XotBaseResource
     
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -684,7 +700,11 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -943,7 +963,11 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

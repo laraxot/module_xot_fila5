@@ -29,7 +29,11 @@ class DepartmentForm
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -98,7 +102,11 @@ class ArticleForm extends XotBaseResourceForm
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -176,7 +184,11 @@ class ArticleForm extends XotBaseResourceForm
     
     // LEGACY: Array style (backward compatibility)
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -218,7 +230,11 @@ abstract class XotBaseResourceForm
      * Can be overridden, but default delegates to configure().
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -280,7 +296,11 @@ abstract class XotBaseResourceInfolist
      * LEGACY: Array method with default implementation.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev

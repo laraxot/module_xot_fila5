@@ -83,8 +83,13 @@ All notable changes to `:package_name` will be documented in this file.
 - Type safety improvements (500+ type hints)
 
 ### Changed
+<<<<<<< HEAD
 - Migrazione a Laravel 13.x
 - Upgrade Filament 5.x
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
 - Tailwind CSS 4.x implementation
 
 ---
