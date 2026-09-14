@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory as EloquentHasFactory;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 
-/** @template TFactory of Factory = Factory */
+/** @template TFactory of \Illuminate\Database\Eloquent\Factories\Factory = \Illuminate\Database\Eloquent\Factories\Factory */
 trait HasXotFactory
 {
-    /** @use EloquentHasFactory<TFactory> */
+    /** @use \Illuminate\Database\Eloquent\Factories\HasFactory<TFactory> */
     use EloquentHasFactory {
         newFactory as parentNewFactory;
     }
@@ -21,7 +21,7 @@ trait HasXotFactory
      *
      * @return TFactory
      */
-    protected static function newFactory(): Factory
+    protected static function newFactory()
     {
         /** @var TFactory $factory */
         $factory = app(GetFactoryAction::class)->execute(static::class);
