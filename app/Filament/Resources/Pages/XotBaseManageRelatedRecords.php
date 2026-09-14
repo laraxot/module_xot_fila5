@@ -5,31 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
-<<<<<<< HEAD
-use Filament\Actions\CreateAction;
-use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Schema;
-use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
-use Modules\Xot\Filament\Traits\HasXotForm;
-use Modules\Xot\Filament\Traits\HasXotTable;
-use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-
-/**
- * Base page for Filament related-record managers.
- */
-abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
-{
-    use HasRelationshipModelClass;
-    use HasXotForm;
-    use HasXotTable {
-        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
-    }
-    use NavigationLabelTrait;
-
-=======
 use Filament\Actions\ActionGroup;
 use Filament\Resources\Pages\ManageRelatedRecords as FilamentManageRelatedRecords;
 use Filament\Schemas\Components\Component;
@@ -192,7 +167,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     protected ?Schema $relatedResourceSchema = null;
 
     /** Attributo del titolo dell'owner, non del record correlato. */
->>>>>>> laraxot/dev
     protected static string $recordTitleAttribute = 'name';
 
     public static function getNavigationGroup(): string
@@ -200,81 +174,16 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
         return '';
     }
 
-<<<<<<< HEAD
-=======
     public static function getNavigationLabel(): string
     {
         return static::transFunc(__FUNCTION__);
     }
 
->>>>>>> laraxot/dev
     public function getTitle(): string
     {
         return static::transFunc(__FUNCTION__).' - '.$this->getRecordTitle();
     }
 
-<<<<<<< HEAD
-    public function getRecordTitle(): string
-    {
-        $value = $this->record->{static::$recordTitleAttribute};
-
-        return SafeStringCastAction::cast($value);
-    }
-
-    public function schema(Schema $schema): Schema
-    {
-        return $schema->components($this->getFormSchema());
-    }
-
-    /**
-     * @return array<Component>
-     */
-    public function getFormSchema(): array
-    {
-        return [];
-    }
-
-    /**
-     * @return array<string, TextColumn>
-     */
-    #[\Override]
-    protected function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->label('ID')->sortable(),
-            'name' => TextColumn::make('name')
-                ->label('Nome')
-                ->searchable()
-                ->sortable(),
-            'created_at' => TextColumn::make('created_at')
-                ->label('Data Creazione')
-                ->dateTime('d/m/Y H:i')
-                ->sortable(),
-        ];
-    }
-
-    /**
-     * @return array<string, Action>
-     */
-    protected function getTableHeaderActions(): array
-    {
-        return [
-            'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
-        ];
-    }
-
-    /**
-     * @return array<string, Action>
-     */
-    protected function getTableActions(): array
-    {
-        return [];
-    }
-
-    public static function getNavigationLabel(): string
-    {
-        return static::transFunc(__FUNCTION__);
-=======
     /** Legge il titolo dall'owner risolto da Filament. */
     public function getRecordTitle(): string
     {
@@ -489,6 +398,5 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
             : $relationship->getRelated();
 
         return $related::class;
->>>>>>> laraxot/dev
     }
 }

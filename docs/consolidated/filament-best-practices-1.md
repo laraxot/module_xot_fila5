@@ -20,10 +20,6 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_2P3bkN
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -35,7 +31,6 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_6eFq9E
->>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome')->required(),
@@ -295,10 +290,6 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_2P3bkN
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -310,7 +301,6 @@ class ReportResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_6eFq9E
->>>>>>> laraxot/dev
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider

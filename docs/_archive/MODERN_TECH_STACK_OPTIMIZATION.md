@@ -1,17 +1,9 @@
 # Modern Tech Stack Optimization Guide
-<<<<<<< HEAD
-## Filament 5 + Laravel 13 + PHP 8.3 Best Practices
-
-## 🚀 Overview
-
-Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 13 e Filament 5.
-=======
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 
 ## 🚀 Overview
 
 Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 12 e Filament 4.
->>>>>>> laraxot/dev
 
 ## 📋 Current Tech Stack Analysis
 
@@ -186,11 +178,7 @@ class SurveyExportController
 }
 ```
 
-<<<<<<< HEAD
-## 🏗️ Laravel 13 Advanced Features
-=======
 ## 🏗️ Laravel 12 Advanced Features
->>>>>>> laraxot/dev
 
 ### 1. Enhanced Model Casting
 **Current Pattern**:
@@ -206,11 +194,7 @@ protected $casts = [
 protected function casts(): array
 {
     return [
-<<<<<<< HEAD
-        'settings' => 'encrypted:json', // Laravel 13 encrypted casting
-=======
         'settings' => 'encrypted:json', // Laravel 12 encrypted casting
->>>>>>> laraxot/dev
         'sensitive_data' => 'encrypted:string',
         'created_at' => 'datetime',
         'metadata' => AsArrayObject::class, // More powerful array handling
@@ -252,11 +236,7 @@ $contacts = Contact::where('active', true)
 
 **Optimized Pattern**:
 ```php
-<<<<<<< HEAD
-// Using Laravel 13 enhanced query builder
-=======
 // Using Laravel 12 enhanced query builder
->>>>>>> laraxot/dev
 $contacts = Contact::query()
     ->whereActive()
     ->whereEmailDomain('example.com')
@@ -409,11 +389,7 @@ class ContactEventSubscriber
 }
 ```
 
-<<<<<<< HEAD
-## 🎨 Filament 5 Optimization
-=======
 ## 🎨 Filament 4 Optimization
->>>>>>> laraxot/dev
 
 ### 1. Modern Resource Structure
 **Current Pattern**:
@@ -872,20 +848,6 @@ class ContactDashboard extends Dashboard
         return [
             'overview' => [
                 'label' => 'Overview',
-<<<<<<< HEAD
-                'url' => route('filament.<nome progetto>.dashboard'),
-                'isActive' => request()->routeIs('filament.<nome progetto>.dashboard'),
-            ],
-            'analytics' => [
-                'label' => 'Analytics',
-                'url' => route('filament.<nome progetto>.analytics'),
-                'isActive' => request()->routeIs('filament.<nome progetto>.analytics'),
-            ],
-            'reports' => [
-                'label' => 'Reports',
-                'url' => route('filament.<nome progetto>.reports'),
-                'isActive' => request()->routeIs('filament.<nome progetto>.reports'),
-=======
                 'url' => route('filament.quaeris.dashboard'),
                 'isActive' => request()->routeIs('filament.quaeris.dashboard'),
             ],
@@ -898,7 +860,6 @@ class ContactDashboard extends Dashboard
                 'label' => 'Reports',
                 'url' => route('filament.quaeris.reports'),
                 'isActive' => request()->routeIs('filament.quaeris.reports'),
->>>>>>> laraxot/dev
             ],
         ];
     }
@@ -913,21 +874,13 @@ class ContactDashboard extends Dashboard
    - Match expressions per business logic
    - Enhanced type declarations
 
-<<<<<<< HEAD
-2. ✅ **Laravel 13 Core**
-=======
 2. ✅ **Laravel 12 Core**
->>>>>>> laraxot/dev
    - Advanced model casting
    - Enhanced validation
    - Modern query patterns
 
 ### Medium Priority (Week 3-4)
-<<<<<<< HEAD
-1. ✅ **Filament 5 Optimization**
-=======
 1. ✅ **Filament 4 Optimization**
->>>>>>> laraxot/dev
    - Resource modernization
    - Widget enhancement
    - Advanced forms
@@ -992,13 +945,8 @@ class PerformanceMonitoringMiddleware
 
 ### Technical Compliance
 - [ ] 100% PHP 8.3 feature adoption
-<<<<<<< HEAD
-- [ ] Laravel 13 best practices implementation
-- [ ] Filament 5 optimization complete
-=======
 - [ ] Laravel 12 best practices implementation
 - [ ] Filament 4 optimization complete
->>>>>>> laraxot/dev
 - [ ] Performance targets achieved
 - [ ] Type safety at 95%+
 

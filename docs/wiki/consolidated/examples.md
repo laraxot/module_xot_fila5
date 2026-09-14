@@ -250,15 +250,12 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_Ih6IWJ
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_JyR7Y9
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -267,13 +264,10 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_Ih6IWJ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JyR7Y9
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -552,15 +546,12 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_Ih6IWJ
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_JyR7Y9
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -569,13 +560,10 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_Ih6IWJ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_JyR7Y9
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

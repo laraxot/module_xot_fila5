@@ -45,10 +45,6 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_BG90Zq
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -60,7 +56,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ouYkPs
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('nome')->required(),
@@ -149,10 +144,6 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_BG90Zq
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -164,7 +155,6 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ouYkPs
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('cognome')
@@ -347,10 +337,6 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_BG90Zq
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -362,7 +348,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ouYkPs
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -619,10 +604,6 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_BG90Zq
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -634,7 +615,6 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ouYkPs
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),
@@ -755,10 +735,6 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_BG90Zq
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -770,7 +746,6 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ouYkPs
->>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome')->required(),
@@ -1028,10 +1003,6 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_BG90Zq
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -1043,7 +1014,6 @@ class ReportResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_ouYkPs
->>>>>>> laraxot/dev
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider

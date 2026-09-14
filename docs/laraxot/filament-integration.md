@@ -10,11 +10,7 @@
 ### Form Schema
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
