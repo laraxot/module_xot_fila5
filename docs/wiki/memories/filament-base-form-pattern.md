@@ -44,11 +44,7 @@ Modules/IndennitaResponsabilita/app/Filament/Resources/MessageResource/Schemas/
 abstract class BaseMessageForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

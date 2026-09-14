@@ -1,14 +1,11 @@
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_ByBvIz
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0P6D5g
->>>>>>> laraxot/dev
 ---
 title: "__to_study"
 module: "Xot"
@@ -20,15 +17,12 @@ qmd: " to study"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_ByBvIz
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0P6D5g
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # __to_study
 
@@ -36,15 +30,12 @@ related:
 
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_ByBvIz
 =======
 
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_0P6D5g
->>>>>>> laraxot/dev
 # __to_study
 
 <!-- Contenuto migrato da _docs/__to_study.txt -->
@@ -53,10 +44,7 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_ByBvIz
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_0P6D5g
->>>>>>> laraxot/dev

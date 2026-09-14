@@ -126,8 +126,6 @@ Aggiornato: 2026-07-27
 | `Dashboard.php` | [module-dashboard-page-mandatory.md](./concepts/module-dashboard-page-mandatory.md) |
 | Hub runtime cross-modulo | [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md) |
 | Tenant `modules_statuses` | [tenant-module-status-registry](../../Tenant/docs/tenant-module-status-registry.md) |
-<<<<<<< HEAD
-=======
 
 ## Decisioni in discussione — 2026-09-11
 
@@ -141,4 +139,3 @@ in fondo al file sopra — `form()`/`table()` delegano per intero alla
 Resource correlata (mai bridge per singolo hook come nella quarta), unici
 override point per-pagina `getTableColumns()`/`getTableHeaderActions()`.
 Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`.
->>>>>>> laraxot/dev

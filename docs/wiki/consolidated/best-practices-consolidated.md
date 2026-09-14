@@ -264,15 +264,12 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_GCGala
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_kMQQ6W
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -281,13 +278,10 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_GCGala
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_kMQQ6W
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -331,15 +325,12 @@ class UserModerationResource extends XotBaseResource
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_GCGala
 =======
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_kMQQ6W
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -348,13 +339,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_GCGala
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_kMQQ6W
->>>>>>> laraxot/dev
 {
     return [
         // Schema del form

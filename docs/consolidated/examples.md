@@ -241,10 +241,6 @@ class ExampleResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_iaDh9C
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -256,7 +252,6 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IF9N6Y
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -534,10 +529,6 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_iaDh9C
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -549,7 +540,6 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_IF9N6Y
->>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')

@@ -47,11 +47,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
     
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -266,11 +262,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -368,10 +360,6 @@ BadgeColumn::make('status')
 - [Translation System](./translation_system.md)
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
-<<<<<<< HEAD
-Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 5.
-=======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
->>>>>>> laraxot/dev
 
 

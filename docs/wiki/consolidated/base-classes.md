@@ -25,15 +25,12 @@ class XotBaseResource
     public static function getFormSchema(): array;
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_Hc8prI
 =======
     public static function getFormSchema(): array;
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_dPaAVQ
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array;
@@ -42,13 +39,10 @@ class XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_Hc8prI
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_dPaAVQ
->>>>>>> laraxot/dev
     public static function getListTableColumns(): array;
 }
 ```

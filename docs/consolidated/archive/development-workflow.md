@@ -33,10 +33,6 @@ class MyModelResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_3302Md
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -48,7 +44,6 @@ class MyModelResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_XHN6hl
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

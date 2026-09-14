@@ -37,10 +37,6 @@ class ProductResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oyWHbt
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -52,7 +48,6 @@ class ProductResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_vb10gy
->>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

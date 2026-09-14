@@ -56,11 +56,7 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -97,11 +93,7 @@ class MyResource extends XotBaseResource
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
 <<<<<<< HEAD
-<<<<<<< HEAD
-   - ✅ `public static function getFormSchema(): array`
-=======
    - ✅ `public function getFormSchema(): array`
->>>>>>> laraxot/dev
 =======
    - ✅ `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
@@ -217,11 +209,7 @@ class ListRecords extends XotBaseListRecords
 ### 1. Form Schema con Relazioni
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -554,11 +542,7 @@ public function getTableColumns(): array
  * @return array<string, Forms\Components\Component>
  */
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev

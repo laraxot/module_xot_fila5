@@ -283,11 +283,7 @@ interface XotBaseResourceContract
     public static function getModel(): string;
     public static function getRelations(): array;
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array;
-=======
     public function getFormSchema(): array;
->>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev

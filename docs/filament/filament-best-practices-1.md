@@ -57,11 +57,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
    // CORRETTO ✅
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
    public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev

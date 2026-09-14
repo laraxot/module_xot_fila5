@@ -35,11 +35,7 @@ class ProductResource extends XotBaseResource
 
     // UNICI metodi che dovrebbero essere implementati
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev

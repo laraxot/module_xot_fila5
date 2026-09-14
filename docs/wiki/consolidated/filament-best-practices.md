@@ -54,15 +54,12 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -71,13 +68,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('nome')->required(),
@@ -167,15 +161,12 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -184,13 +175,10 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('cognome')
@@ -374,15 +362,12 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -391,13 +376,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -655,15 +637,12 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -672,13 +651,10 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),
@@ -800,15 +776,12 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
@@ -817,13 +790,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> laraxot/dev
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome')->required(),
@@ -1082,15 +1052,12 @@ class ReportResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -1099,13 +1066,10 @@ class ReportResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_TP30UZ
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_P2Db17
->>>>>>> laraxot/dev
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
