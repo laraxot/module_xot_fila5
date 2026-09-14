@@ -28,7 +28,11 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name' => '<nome progetto>',           // obbligatorio — PanelMixin::getNavigationLabel()
+=======
+    'name' => 'WorkOrder',           // obbligatorio — PanelMixin::getNavigationLabel()
+>>>>>>> laraxot/dev
 =======
     'name' => 'WorkOrder',           // obbligatorio — PanelMixin::getNavigationLabel()
 >>>>>>> laraxot/dev
@@ -67,7 +71,11 @@ Audit completo eseguito: 21 moduli reali (con `module.json`) su 42 directory sot
 erano privi di `config/config.php` (`AiAssistant, Billing, Bom, Catalog, Compliance, Customer,
 Document, Email, EnergyBroker, Fiscal, HR, Intervention, Inventory, Platform, Production,
 <<<<<<< HEAD
+<<<<<<< HEAD
 PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, <nome progetto>`). Creati tutti e 21 con
+=======
+PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, WorkOrder`). Creati tutti e 21 con
+>>>>>>> laraxot/dev
 =======
 PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, WorkOrder`). Creati tutti e 21 con
 >>>>>>> laraxot/dev

@@ -59,6 +59,7 @@ Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ri
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 📚 <nome progetto> Module (Example Implementation)
 
 | Documento | Scopo | Quando Leggere |
@@ -68,6 +69,8 @@ Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ri
 | [CreateTicketWizardWidget.md](../../../<nome progetto>/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
 | [ticket-wizard-frontoffice.md](../../../<nome progetto>/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
 =======
+=======
+>>>>>>> laraxot/dev
 ### 📚 Fixcity Module (Example Implementation)
 
 | Documento | Scopo | Quando Leggere |
@@ -76,6 +79,9 @@ Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ri
 | [filament-wizard-rule.md](../../../Fixcity/docs/filament-wizard-rule.md) | Regole specifiche Fixcity | Per module-specific conventions |
 | [CreateTicketWizardWidget.md](../../../Fixcity/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
 | [ticket-wizard-frontoffice.md](../../../Fixcity/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ---
@@ -205,7 +211,11 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 
 - [XotBaseWizardWidget](../../app/Filament/Widgets/XotBaseWizardWidget.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [CreateTicketWizardWidget](../../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php)
+=======
+- [CreateTicketWizardWidget](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
+>>>>>>> laraxot/dev
 =======
 - [CreateTicketWizardWidget](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
 >>>>>>> laraxot/dev

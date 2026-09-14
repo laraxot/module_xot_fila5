@@ -4,9 +4,12 @@
 <!-- Contenuto migrato da _docs/web_scraping.txt -->
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # web_scraping
 
 <!-- Contenuto migrato da _docs/web_scraping.txt -->
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -21,6 +24,9 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -29,9 +35,15 @@ Introduction to Web Scraping With Laravel
 https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a217e1444f7c
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 
 >>>>>>> laraxot/dev

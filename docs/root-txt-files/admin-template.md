@@ -7,10 +7,16 @@ description: 'Elenco di 3 riferimenti esterni raccolti per admin template, dedup
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: admin-template.txt
+<<<<<<< HEAD
 converted_from: admin_template.txt
 =======
 <<<<<<< HEAD
 converted_from: admin-template.txt
+=======
+converted_from: admin_template.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 converted_from: admin_template.txt
 >>>>>>> laraxot/dev

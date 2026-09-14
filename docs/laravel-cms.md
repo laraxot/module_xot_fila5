@@ -2,7 +2,10 @@
 https://statamic.com/
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://statamic.com/
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -26,6 +29,9 @@ updated: 2026-08-24
 
 - <https://statamic.com/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

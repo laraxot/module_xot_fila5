@@ -13,7 +13,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 1. **Filosofia Xot**: DRY + KISS, centralizzazione, opinionated defaults, modularità, type safety, "politica" (mai estendere Filament direttamente), "religione" (Xot layer è sacro), "zen" (armonia e chiarezza)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Filosofia <nome progetto>**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
+=======
+2. **Filosofia Quaeris**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
+>>>>>>> laraxot/dev
 =======
 2. **Filosofia Quaeris**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
 >>>>>>> laraxot/dev
@@ -28,7 +32,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 
 - **Xot**: Framework base, fornisce classi base per tutti i moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: Customer → SurveyPdf → Contact → QuestionChart workflow
+=======
+- **Quaeris**: Customer → SurveyPdf → Contact → QuestionChart workflow
+>>>>>>> laraxot/dev
 =======
 - **Quaeris**: Customer → SurveyPdf → Contact → QuestionChart workflow
 >>>>>>> laraxot/dev
@@ -92,7 +100,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 10. Media ✅
 11. Notify ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 12. <nome progetto> ✅ (corretto in questa sessione)
+=======
+12. Quaeris ✅ (corretto in questa sessione)
+>>>>>>> laraxot/dev
 =======
 12. Quaeris ✅ (corretto in questa sessione)
 >>>>>>> laraxot/dev
@@ -108,7 +120,11 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 ## 🔧 Errori Corretti in Questa Sessione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto> - GetAnswersByQuestionChart.php (6 errori)
+=======
+### Quaeris - GetAnswersByQuestionChart.php (6 errori)
+>>>>>>> laraxot/dev
 =======
 ### Quaeris - GetAnswersByQuestionChart.php (6 errori)
 >>>>>>> laraxot/dev
@@ -138,7 +154,11 @@ $valueArray = $labelData['value'];
 ## 📚 Documentazione Creata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. `<nome progetto>/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
+=======
+1. `Quaeris/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
+>>>>>>> laraxot/dev
 =======
 1. `Quaeris/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
 >>>>>>> laraxot/dev
@@ -181,8 +201,13 @@ $result = $model->traitMethod();
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Riepilogo Precedente](./phpstan-january-2026-summary.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> Corrections Parte 1](../<nome progetto>/docs/phpstan-corrections-january-2026.md)
 - [<nome progetto> Corrections Parte 2](../<nome progetto>/docs/phpstan-corrections-january-2026-part2.md)
+=======
+- [Quaeris Corrections Parte 1](../Quaeris/docs/phpstan-corrections-january-2026.md)
+- [Quaeris Corrections Parte 2](../Quaeris/docs/phpstan-corrections-january-2026-part2.md)
+>>>>>>> laraxot/dev
 =======
 - [Quaeris Corrections Parte 1](../Quaeris/docs/phpstan-corrections-january-2026.md)
 - [Quaeris Corrections Parte 2](../Quaeris/docs/phpstan-corrections-january-2026-part2.md)

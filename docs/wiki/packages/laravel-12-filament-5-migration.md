@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Laravel 13 Filament 5 Migration"
+=======
+title: "Laravel 12 Filament 5 Migration"
+>>>>>>> laraxot/dev
 =======
 title: "Laravel 12 Filament 5 Migration"
 >>>>>>> laraxot/dev
@@ -11,7 +15,11 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Migrazione a Laravel 13 e Filament 5
+=======
+# Migrazione a Laravel 12 e Filament 5
+>>>>>>> laraxot/dev
 =======
 # Migrazione a Laravel 12 e Filament 5
 >>>>>>> laraxot/dev

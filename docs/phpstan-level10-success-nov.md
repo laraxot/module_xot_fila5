@@ -145,7 +145,11 @@ Dopo OGNI modifica di file PHP:
 Risultato ottenuto seguendo rigorosamente:
 - DRY + KISS + SOLID + Robust
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13 + Filament 5 + PHP 8.3
+=======
+- Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 - Laravel 12 + Filament 4 + PHP 8.3
 >>>>>>> laraxot/dev
@@ -171,9 +175,15 @@ Risultato ottenuto seguendo rigorosamente:
 
 ### 1. Conflitti Git Risolti (4 file)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/app/Filament/Pages/DashboardV2.php`
 - `Modules/<nome progetto>/app/Datas/AlertDashboardFilterData.php`
 - `Modules/<nome progetto>/app/Datas/DashboardFilterData.php`
+=======
+- `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
+- `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
+- `Modules/Quaeris/app/Datas/DashboardFilterData.php`
+>>>>>>> laraxot/dev
 =======
 - `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
 - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
@@ -306,7 +316,11 @@ Dopo OGNI modifica di file PHP:
 Risultato ottenuto seguendo rigorosamente:
 - DRY + KISS + SOLID + Robust
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13 + Filament 5 + PHP 8.3
+=======
+- Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 - Laravel 12 + Filament 4 + PHP 8.3
 >>>>>>> laraxot/dev

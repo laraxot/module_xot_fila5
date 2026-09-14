@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Best Practices per la Risoluzione dei Conflitti
@@ -79,7 +82,11 @@ namespace Modules\ModuleName\App\Models;
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Namespace](../namespace-conventions.md)
+=======
+- [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
+>>>>>>> laraxot/dev
 =======
 - [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
 >>>>>>> laraxot/dev
@@ -115,7 +122,11 @@ namespace Modules\ModuleName\App\Models;
    - Verificare le modifiche con PHPStan
    - Testare la compatibilità
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Validare le funzionalità
+=======
+   - Validare le funzionalità 
+>>>>>>> laraxot/dev
 =======
    - Validare le funzionalità 
 >>>>>>> laraxot/dev

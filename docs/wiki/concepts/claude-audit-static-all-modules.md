@@ -10,7 +10,11 @@ issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/30"
 discussions:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/discussions/304"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/304"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/304"
 >>>>>>> laraxot/dev
@@ -52,7 +56,11 @@ bash bashscripts/tools/run-claude-audit-all-modules-static.sh
 ## Moduli a 80/0 (perfezione static, luglio 2026)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **18/18:** Activity, AI, Blog, Cms, Comment, <nome progetto>, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User, Xot.
+=======
+**18/18:** Activity, AI, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User, Xot.
+>>>>>>> laraxot/dev
 =======
 **18/18:** Activity, AI, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, Tenant, UI, User, Xot.
 >>>>>>> laraxot/dev
@@ -68,7 +76,11 @@ claude-audit conta solo righe `//` `#` `*` `/*` — **non** `{{--`. Boost blade 
 ## Lang >500 righe
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Split con `bashscripts/tools/split-module-lang-monolith-for-audit.php` — vedi <nome progetto>/UI `claude-audit-static.md`.
+=======
+Split con `bashscripts/tools/split-module-lang-monolith-for-audit.php` — vedi Fixcity/UI `claude-audit-static.md`.
+>>>>>>> laraxot/dev
 =======
 Split con `bashscripts/tools/split-module-lang-monolith-for-audit.php` — vedi Fixcity/UI `claude-audit-static.md`.
 >>>>>>> laraxot/dev

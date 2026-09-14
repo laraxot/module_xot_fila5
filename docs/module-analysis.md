@@ -157,7 +157,11 @@ XotBaseResource → Filament Resources
 
 ### Filament Integration
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Complete Filament 5.x compatibility
+=======
+- Complete Filament 4.x compatibility
+>>>>>>> laraxot/dev
 =======
 - Complete Filament 4.x compatibility
 >>>>>>> laraxot/dev

@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila5
+=======
+# Configurazione MCP per base_ptvx_fila4_mono
+>>>>>>> laraxot/dev
 =======
 # Configurazione MCP per base_ptvx_fila4_mono
 >>>>>>> laraxot/dev
@@ -13,7 +17,11 @@
 ## 🎯 Scopo del Documento
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila5**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+=======
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+>>>>>>> laraxot/dev
 =======
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 >>>>>>> laraxot/dev
@@ -156,7 +164,11 @@ Nei prompt è stato integrato il riferimento a MCP per aggirare ostacoli:
 Se alcuni file risultano bloccati o non accessibili con tool standard:
 - usa filesystem MCP (read/write/edit) come fallback
 <<<<<<< HEAD
+<<<<<<< HEAD
 - se serve un FS alternativo: usa filesystem-<nome progetto> MCP
+=======
+- se serve un FS alternativo: usa filesystem-quaeris MCP
+>>>>>>> laraxot/dev
 =======
 - se serve un FS alternativo: usa filesystem-quaeris MCP
 >>>>>>> laraxot/dev

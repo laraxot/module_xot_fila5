@@ -16,7 +16,11 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 ### Key Components
 - **Chart Module**: Contains chart generation and styling logic
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto> Module**: Handles survey data and PDF generation
+=======
+- **Quaeris Module**: Handles survey data and PDF generation
+>>>>>>> laraxot/dev
 =======
 - **Quaeris Module**: Handles survey data and PDF generation
 >>>>>>> laraxot/dev
@@ -514,7 +518,11 @@ PDFs support multi-page layouts with proper headers and footers:
 
 ```blade
 <<<<<<< HEAD
+<<<<<<< HEAD
 @include('<nome progetto>::pdf.css')
+=======
+@include('quaeris::pdf.css')
+>>>>>>> laraxot/dev
 =======
 @include('quaeris::pdf.css')
 >>>>>>> laraxot/dev

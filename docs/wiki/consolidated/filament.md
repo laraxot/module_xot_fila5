@@ -46,10 +46,31 @@ class ExampleResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_KOuZgo
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_HV7K1v
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_KOuZgo
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HV7K1v
 >>>>>>> laraxot/dev
     {
         return [
@@ -136,10 +157,31 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_KOuZgo
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_HV7K1v
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_KOuZgo
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_HV7K1v
 >>>>>>> laraxot/dev
 {
     return [

@@ -36,7 +36,11 @@ bootstrapFiles:
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila5/laravel/phpstan.neon)
+=======
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+>>>>>>> laraxot/dev
 =======
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
 >>>>>>> laraxot/dev
@@ -61,7 +65,11 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+=======
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+>>>>>>> laraxot/dev
 =======
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
 >>>>>>> laraxot/dev
@@ -86,7 +94,11 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/User/app/Models/BaseUser.php)
+=======
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
+>>>>>>> laraxot/dev
 =======
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
 >>>>>>> laraxot/dev
@@ -101,7 +113,11 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 
 **Files Modified**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila5/laravel/phpstan.neon)
+=======
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+>>>>>>> laraxot/dev
 =======
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
 >>>>>>> laraxot/dev
@@ -144,9 +160,15 @@ These fixes impact **ALL modules** that depend on Xot:
 ## 🔗 Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/User/docs/passport.md)
 - [Passport Configuration](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/Tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+=======
+- [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
+- [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
+- [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+>>>>>>> laraxot/dev
 =======
 - [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
 - [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
@@ -157,7 +179,11 @@ These fixes impact **ALL modules** that depend on Xot:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_ptvx_fila5/laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
 >>>>>>> laraxot/dev

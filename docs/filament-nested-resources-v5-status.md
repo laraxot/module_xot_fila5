@@ -10,7 +10,11 @@ Dopo analisi approfondita della documentazione ufficiale di Filament 5.x, **NON 
 |----------|---------------------------|
 | Filament 3.x | ✅ Terze parti (sevendays-digital/filament-nested-resources) |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Filament 5.x | ✅ Nativo (built-in) |
+=======
+| Filament 4.x | ✅ Nativo (built-in) |
+>>>>>>> laraxot/dev
 =======
 | Filament 4.x | ✅ Nativo (built-in) |
 >>>>>>> laraxot/dev
@@ -91,7 +95,11 @@ QuestionChartResource::getUrl('edit', ['record' => $chart]);
 - [XotBaseManageRelatedRecords Pattern](../../Xot/docs/architecture/xot-base-manage-related-records.md)
 - [Errore Form Vuoto in Edit](../../<nome progetto>/docs/manage-charts-edit-form-error.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament v5 Migration Guide](../../Xot/docs/packages/Laravel-13-filament-5-migration.md)
+=======
+- [Filament v5 Migration Guide](../../Xot/docs/packages/laravel-12-filament-5-migration.md)
+>>>>>>> laraxot/dev
 =======
 - [Filament v5 Migration Guide](../../Xot/docs/packages/laravel-12-filament-5-migration.md)
 >>>>>>> laraxot/dev

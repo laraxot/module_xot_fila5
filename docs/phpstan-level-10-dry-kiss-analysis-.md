@@ -35,23 +35,34 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 **Errore**:
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPDoc tag @property-read contains unknown class Modules\<nome progetto>\Models\Profile
 ```
 
 **Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\<nome progetto>\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
 =======
+=======
+>>>>>>> laraxot/dev
 PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
 ```
 
 **Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 **Prima**:
 ```php
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\<nome progetto>\Models\Profile|null $creator
  * @property-read \Modules\<nome progetto>\Models\Profile|null $updater
+=======
+ * @property-read \Modules\Fixcity\Models\Profile|null $creator
+ * @property-read \Modules\Fixcity\Models\Profile|null $updater
+>>>>>>> laraxot/dev
 =======
  * @property-read \Modules\Fixcity\Models\Profile|null $creator
  * @property-read \Modules\Fixcity\Models\Profile|null $updater
@@ -72,7 +83,11 @@ class AuthenticationLog extends BaseModel
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+=======
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+>>>>>>> laraxot/dev
 =======
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 >>>>>>> laraxot/dev
@@ -441,7 +456,11 @@ class User extends BaseModel
 **Comando**:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+=======
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+>>>>>>> laraxot/dev
 =======
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 >>>>>>> laraxot/dev

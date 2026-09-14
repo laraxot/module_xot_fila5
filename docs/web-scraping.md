@@ -1,7 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 module: theme
 topic: web-scraping
@@ -10,6 +13,10 @@ canonical: ../../../Themes/docs/shared-components/web_scraping.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/web_scraping.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -33,6 +40,9 @@ https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a2
 
 https://sergeyzhuk.me/2018/02/12/fast-webscraping-with-reactphp/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

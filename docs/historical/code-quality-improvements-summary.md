@@ -39,7 +39,11 @@ This document summarizes the systematic code quality improvements made across th
 - **Features**: Multi-cloud provider support with advanced security
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 📊 <nome progetto> Module
+=======
+#### 📊 Quaeris Module
+>>>>>>> laraxot/dev
 =======
 #### 📊 Quaeris Module
 >>>>>>> laraxot/dev
@@ -66,7 +70,11 @@ This document summarizes the systematic code quality improvements made across th
 
 #### ➕ New README Files Created
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>** - Survey management system
+=======
+- **Quaeris** - Survey management system
+>>>>>>> laraxot/dev
 =======
 - **Quaeris** - Survey management system
 >>>>>>> laraxot/dev
@@ -129,7 +137,11 @@ This document summarizes the systematic code quality improvements made across th
 - ✅ All modules analyzed with PHPStan Level 10
 - ✅ Geo module PHPInsights score improved from 75% to 99%
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Missing README files created for <nome progetto> and CloudStorage
+=======
+- ✅ Missing README files created for Quaeris and CloudStorage
+>>>>>>> laraxot/dev
 =======
 - ✅ Missing README files created for Quaeris and CloudStorage
 >>>>>>> laraxot/dev

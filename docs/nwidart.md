@@ -2,7 +2,10 @@
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -26,6 +29,9 @@ updated: 2026-08-24
 
 - <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

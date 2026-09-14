@@ -23,7 +23,11 @@ Runbook for the recurring **30-error tail** seen in swarm PHPStan passes on Tech
 ## 1. Bootstrap: pin `main_module` to TechPlanner
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\<nome progetto>\Models\Profile`.
+=======
+**Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Fixcity\Models\Profile`.
+>>>>>>> laraxot/dev
 =======
 **Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Fixcity\Models\Profile`.
 >>>>>>> laraxot/dev
@@ -115,7 +119,11 @@ Target: **0 errors**, empty baseline.
 ## False friends (do not “fix”)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Do not replace `ProfileContract` PHPDoc with concrete <nome progetto> class — fix bootstrap `main_module`.
+=======
+- Do not replace `ProfileContract` PHPDoc with concrete Fixcity class — fix bootstrap `main_module`.
+>>>>>>> laraxot/dev
 =======
 - Do not replace `ProfileContract` PHPDoc with concrete Fixcity class — fix bootstrap `main_module`.
 >>>>>>> laraxot/dev

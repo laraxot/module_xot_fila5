@@ -1,8 +1,11 @@
 # Sviluppo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.
 
@@ -16,6 +19,11 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 =======
 <<<<<<< HEAD
@@ -29,6 +37,7 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.
 
 > **Core module for the <nome progetto> Platform.**
@@ -38,6 +47,8 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 Core module for the <nome progetto> Platform.
 
 =======
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 Questa cartella contiene la documentazione relativa agli strumenti e alle pratiche di sviluppo.
@@ -50,13 +61,20 @@ Questa cartella contiene la documentazione relativa agli strumenti e alle pratic
 Core module for the FixCity Platform.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
 =======
 - Integrated with FixCity Platform
 >>>>>>> laraxot/dev
@@ -72,7 +90,13 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
@@ -83,14 +107,20 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
@@ -169,6 +199,9 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -314,8 +347,14 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+=======
+>>>>>>> laraxot/dev
+=======
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 =======
 =======
@@ -330,17 +369,23 @@ Questa documentazione è essenziale per tutti gli sviluppatori che lavorano al p
 ]()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Core module for the <nome progetto> Platform.**
 
 ## Perché esiste
 
 Core module for the <nome progetto> Platform.
 =======
+=======
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Superpoteri
@@ -348,7 +393,11 @@ Core module for the FixCity Platform.
 - Modular component with XotBase patterns
 - Professional-grade implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
 =======
 - Integrated with FixCity Platform
 >>>>>>> laraxot/dev
@@ -364,10 +413,16 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
 =======
+=======
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

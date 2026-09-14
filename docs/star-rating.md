@@ -2,7 +2,10 @@
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -23,6 +26,9 @@ updated: 2026-08-24
 
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

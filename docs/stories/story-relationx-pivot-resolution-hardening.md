@@ -31,7 +31,11 @@ Status: `ready-for-dev` · Scope: `module:Xot` (tutti i commit toccano solo `lar
 ## GitHub (tracciamento)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Repository letto da frontmatter `github.repository` o `git remote -v` (se assente: repo root **`laraxot/<repo progetto>`**): **`laraxot/module_xot_fila5`**.
+=======
+Repository letto da frontmatter `github.repository` o `git remote -v` (se assente: repo root **`laraxot/base_quaeris_fila5`**): **`laraxot/module_xot_fila5`**.
+>>>>>>> laraxot/dev
 =======
 Repository letto da frontmatter `github.repository` o `git remote -v` (se assente: repo root **`laraxot/base_quaeris_fila5`**): **`laraxot/module_xot_fila5`**.
 >>>>>>> laraxot/dev

@@ -4,7 +4,11 @@ slug: phpstan-timber-module
 scope:
   - module:Timber
 <<<<<<< HEAD
+<<<<<<< HEAD
   - project:<repo progetto>
+=======
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
 =======
   - project:base_workorder_fila5
 >>>>>>> laraxot/dev

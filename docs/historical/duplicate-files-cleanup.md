@@ -17,7 +17,11 @@ rm Modules/UI/docs/readme.md
 
 # ROADMAP.md (MAIUSCOLO) è corretto, elimina minuscolo
 <<<<<<< HEAD
+<<<<<<< HEAD
 rm Modules/<nome progetto>/docs/roadmap.md
+=======
+rm Modules/Fixcity/docs/roadmap.md
+>>>>>>> laraxot/dev
 =======
 rm Modules/Fixcity/docs/roadmap.md
 >>>>>>> laraxot/dev

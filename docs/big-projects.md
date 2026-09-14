@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
@@ -8,6 +11,10 @@ https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 https://readme.so/it/editor
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -31,6 +38,9 @@ https://laraveldaily.com/larger-laravel-projects-12-things-to-take-care-of/
 
 https://readme.so/it/editor
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -13,6 +13,7 @@ related:
 
 ## Errori rilevati
 <<<<<<< HEAD
+<<<<<<< HEAD
 * /var/www/html/_bases/<repo progetto>/laravel/Modules/Xot/Actions/Documentation/AnalyzePhpstanIssuesAction.php: Cannot access offset 'files' on mixed. (line 41)
 * /var/www/html/_bases/<repo progetto>/laravel/Modules/Xot/Actions/Documentation/AnalyzePhpstanIssuesAction.php: Argument of an invalid type mixed supplied for foreach, only iterables are supported. (line 54)
 * /var/www/html/_bases/<repo progetto>/laravel/Modules/Xot/Actions/Documentation/AnalyzePhpstanIssuesAction.php: Cannot access offset 'messages' on mixed. (line 55)
@@ -523,6 +524,8 @@ related:
 * /var/www/html/_bases/<repo progetto>/laravel/Modules/Xot/tests/Unit/HasXotTableTest.php: Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethods::parseTableFilterName() overrides method Filament\Tables\Contracts\HasTable::parseTableFilterName() but misses parameter #1 $name. (line 616)
 * /var/www/html/_bases/<repo progetto>/laravel/Modules/Xot/tests/Unit/HasXotTableTest.php: Return type mixed of method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethods::makeFilamentTranslatableContentDriver() is not covariant with return type Filament\Support\Contracts\TranslatableContentDriver|null of method Filament\Tables\Contracts\HasTable::makeFilamentTranslatableContentDriver(). (line 621)
 =======
+=======
+>>>>>>> laraxot/dev
 * /var/www/html/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot/Actions/Documentation/AnalyzePhpstanIssuesAction.php: Cannot access offset 'files' on mixed. (line 41)
 * /var/www/html/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot/Actions/Documentation/AnalyzePhpstanIssuesAction.php: Argument of an invalid type mixed supplied for foreach, only iterables are supported. (line 54)
 * /var/www/html/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot/Actions/Documentation/AnalyzePhpstanIssuesAction.php: Cannot access offset 'messages' on mixed. (line 55)
@@ -1032,6 +1035,9 @@ related:
 * /var/www/html/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot/tests/Unit/HasXotTableTest.php: Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethods::resetTableColumnSearch() overrides method Filament\Tables\Contracts\HasTable::resetTableColumnSearch() but misses parameter #1 $column. (line 608)
 * /var/www/html/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot/tests/Unit/HasXotTableTest.php: Method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethods::parseTableFilterName() overrides method Filament\Tables\Contracts\HasTable::parseTableFilterName() but misses parameter #1 $name. (line 616)
 * /var/www/html/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot/tests/Unit/HasXotTableTest.php: Return type mixed of method Modules\Xot\Tests\Unit\HasTableWithoutOptionalMethods::makeFilamentTranslatableContentDriver() is not covariant with return type Filament\Support\Contracts\TranslatableContentDriver|null of method Filament\Tables\Contracts\HasTable::makeFilamentTranslatableContentDriver(). (line 621)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Soluzioni proposte

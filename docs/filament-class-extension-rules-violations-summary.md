@@ -45,7 +45,11 @@ Rimuovere tutte le proprietà e metodi vietati dalle classi che estendono `XotBa
 5. PersonalAccessTokenResource - 1 violazione rimossa
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Modulo <nome progetto> (5 Resources + 7 Pages)
+=======
+### Modulo Quaeris (5 Resources + 7 Pages)
+>>>>>>> laraxot/dev
 =======
 ### Modulo Quaeris (5 Resources + 7 Pages)
 >>>>>>> laraxot/dev

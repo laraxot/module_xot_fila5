@@ -4,7 +4,11 @@ Documentazione generata il 2026-02-26 basata su `composer show`.
 
 ## Core Framework & Admin UI
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **laravel/framework (v12.53.0)**: Core engine (Laravel 13).
+=======
+- **laravel/framework (v12.53.0)**: Core engine (Laravel 12).
+>>>>>>> laraxot/dev
 =======
 - **laravel/framework (v12.53.0)**: Core engine (Laravel 12).
 >>>>>>> laraxot/dev

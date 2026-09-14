@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## Nota di deprecazione
 
@@ -24,6 +27,10 @@ Tutti gli adapter di root devono puntare a un solo backend condiviso:
 .windsurf -> bashscripts/ai/.agents
 .zai      -> bashscripts/ai/.agents
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -61,6 +68,11 @@ file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev

@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole Fondamentali per Prompt AI - <nome progetto> Fila5 Mono
+=======
+# Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
+>>>>>>> laraxot/dev
 =======
 # Regole Fondamentali per Prompt AI - Quaeris Fila5 Mono
 >>>>>>> laraxot/dev
@@ -14,7 +18,11 @@ Tutti i prompt per generazione di codice, test, o modifiche devono includere que
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Create/Update code for <nome progetto> Fila5 Mono with these CRITICAL rules:
+=======
+Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
+>>>>>>> laraxot/dev
 =======
 Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 >>>>>>> laraxot/dev
@@ -32,7 +40,11 @@ Create/Update code for Quaeris Fila5 Mono with these CRITICAL rules:
 ### Per Test Generation
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Create test for ProfileService in <nome progetto> Fila5 Mono with these rules:
+=======
+Create test for ProfileService in Quaeris Fila5 Mono with these rules:
+>>>>>>> laraxot/dev
 =======
 Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 >>>>>>> laraxot/dev
@@ -46,7 +58,11 @@ Create test for ProfileService in Quaeris Fila5 Mono with these rules:
 ### Per Service Creation
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Create ProfileService for <nome progetto> Fila5 Mono following these patterns:
+=======
+Create ProfileService for Quaeris Fila5 Mono following these patterns:
+>>>>>>> laraxot/dev
 =======
 Create ProfileService for Quaeris Fila5 Mono following these patterns:
 >>>>>>> laraxot/dev
@@ -61,7 +77,11 @@ Create ProfileService for Quaeris Fila5 Mono following these patterns:
 ### Per Filament Resources
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Create Filament resource extending XotBaseResource for <nome progetto> Fila5 Mono:
+=======
+Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
+>>>>>>> laraxot/dev
 =======
 Create Filament resource extending XotBaseResource for Quaeris Fila5 Mono:
 >>>>>>> laraxot/dev
@@ -95,9 +115,15 @@ Xot module base requirements:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Modulo <nome progetto>
 ```
 <nome progetto> module specific requirements:
+=======
+### Modulo Quaeris
+```
+Quaeris module specific requirements:
+>>>>>>> laraxot/dev
 =======
 ### Modulo Quaeris
 ```

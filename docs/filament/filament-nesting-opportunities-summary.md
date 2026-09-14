@@ -39,9 +39,15 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 ## Opportunità per Modulo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Modulo <nome progetto>
 
 **Documentazione**: [Modules/<nome progetto>/docs/filament-nesting-opportunities.md](../../<nome progetto>/docs/filament-nesting-opportunities.md)
+=======
+### Modulo Quaeris
+
+**Documentazione**: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../Quaeris/docs/filament-nesting-opportunities.md)
+>>>>>>> laraxot/dev
 =======
 ### Modulo Quaeris
 
@@ -137,8 +143,13 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 ### 🟡 ALTA (Implementare a Breve)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Contact Nested Resource** (<nome progetto>)
 2. **SurveyPdf Nested Resource** (<nome progetto>)
+=======
+1. **Contact Nested Resource** (Quaeris)
+2. **SurveyPdf Nested Resource** (Quaeris)
+>>>>>>> laraxot/dev
 =======
 1. **Contact Nested Resource** (Quaeris)
 2. **SurveyPdf Nested Resource** (Quaeris)
@@ -191,7 +202,11 @@ class ChildResource extends XotBaseResource
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 php artisan make:filament-resource Contact --nested --module=<nome progetto>
+=======
+php artisan make:filament-resource Contact --nested --module=Quaeris
+>>>>>>> laraxot/dev
 =======
 php artisan make:filament-resource Contact --nested --module=Quaeris
 >>>>>>> laraxot/dev
@@ -223,7 +238,11 @@ php artisan make:filament-relation-manager SurveyPdfResource contacts email
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
 - [Filament 5.x Nesting Migration Guide](./filament-5-nesting-migration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> Nesting Opportunities](../../<nome progetto>/docs/filament-nesting-opportunities.md)
+=======
+- [Quaeris Nesting Opportunities](../../Quaeris/docs/filament-nesting-opportunities.md)
+>>>>>>> laraxot/dev
 =======
 - [Quaeris Nesting Opportunities](../../Quaeris/docs/filament-nesting-opportunities.md)
 >>>>>>> laraxot/dev

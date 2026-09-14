@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -16,6 +19,9 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -49,10 +55,16 @@ protected function callAction(array $match)
     throw new \Exception("Method not found: {$controllerClass}@{$method}");
 <<<<<<< HEAD
 }
+<<<<<<< HEAD
 }
 =======
 <<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 }
 >>>>>>> laraxot/dev

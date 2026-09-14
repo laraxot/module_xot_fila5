@@ -60,7 +60,11 @@ The **Xot Module** is the foundational core of the Laraxot PTVX ecosystem. It pr
 │  • Common Services & Utilities           │
 ├─────────────────────────────────────────┤
 <<<<<<< HEAD
+<<<<<<< HEAD
 │  Laravel 13 │ Filament 5 │ Livewire 4   │  ← Framework Layer
+=======
+│  Laravel 12 │ Filament 4 │ Livewire 4   │  ← Framework Layer
+>>>>>>> laraxot/dev
 =======
 │  Laravel 12 │ Filament 4 │ Livewire 4   │  ← Framework Layer
 >>>>>>> laraxot/dev
@@ -320,8 +324,13 @@ class YourClass
 - PHP 8.3 or higher
 - Composer
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13.x
 - Filament 5.x installed
+=======
+- Laravel 12.x
+- Filament 4.x installed
+>>>>>>> laraxot/dev
 =======
 - Laravel 12.x
 - Filament 4.x installed
@@ -647,7 +656,11 @@ Located in `bashscripts/`:
 
 ### Migration & Upgrade
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Migration](./Filament-5-migration-guide.md) - Upgrading to Filament 5
+=======
+- [Filament 4 Migration](./filament-4-migration-guide.md) - Upgrading to Filament 4
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Migration](./filament-4-migration-guide.md) - Upgrading to Filament 4
 >>>>>>> laraxot/dev
@@ -666,8 +679,13 @@ Located in `bashscripts/`:
 
 ### v3.0.0 - 2025-12-05
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Added**: Laravel 13 support
 - **Added**: Filament 5 support
+=======
+- **Added**: Laravel 12 support
+- **Added**: Filament 4 support
+>>>>>>> laraxot/dev
 =======
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
@@ -719,8 +737,13 @@ See [ROADMAP.md](./ROADMAP.md) for details.
 
 ### External Resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 Documentation](https://laravel.com/docs/12.x)
 - [Filament 5 Documentation](https://filamentphp.com/docs/4.x)
+=======
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+- [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
 - [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
@@ -754,7 +777,11 @@ Part of the Laraxot PTVX ecosystem.
 **Module**: Xot (Core Foundation)
 **Version**: 3.0.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Framework**: Laravel 13 + Filament 5 + PHP 8.3
+=======
+**Framework**: Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
 >>>>>>> laraxot/dev

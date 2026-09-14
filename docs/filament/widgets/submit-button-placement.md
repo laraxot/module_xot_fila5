@@ -163,7 +163,11 @@ protected function getWizardSubmitAction(): Htmlable
 {
     // Design Comuni button classes
 <<<<<<< HEAD
+<<<<<<< HEAD
     $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev
@@ -244,7 +248,11 @@ class CreateTicketWizardWidget extends XotBaseWizardWidget
     protected function getWizardSubmitAction(): Htmlable
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+        $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
         $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev

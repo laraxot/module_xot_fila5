@@ -65,7 +65,11 @@ try {
 ## Module-Specific Considerations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto> Module
+=======
+### Quaeris Module
+>>>>>>> laraxot/dev
 =======
 ### Quaeris Module
 >>>>>>> laraxot/dev

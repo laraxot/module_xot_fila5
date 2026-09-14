@@ -70,7 +70,11 @@ Xot provides interfaces that define contracts:
 - Should follow Interface Segregation Principle
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance
+=======
+## 🔧 Filament 4 Compliance
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance
 >>>>>>> laraxot/dev
@@ -386,7 +390,11 @@ public function canAccess($user): bool
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Laravel 13 Compliance
+=======
+## 🔧 Laravel 12 Compliance
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Laravel 12 Compliance
 >>>>>>> laraxot/dev
@@ -491,15 +499,21 @@ public function user(): BelongsTo
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Performance Optimization](./performance-optimization.md)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [Performance Optimization](./performance-optimization.md)
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 - [Security Guidelines](./security-guidelines.md)

@@ -2,7 +2,10 @@
 http://127.0.0.1:9200/_cat/health?v=true
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 http://127.0.0.1:9200/_cat/health?v=true
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -26,6 +29,9 @@ updated: 2026-08-24
 
 - <http://127.0.0.1:9200/_cat/health?v=true>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

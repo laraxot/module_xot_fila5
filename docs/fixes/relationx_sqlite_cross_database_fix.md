@@ -4,24 +4,34 @@
 
 **Data**: 26 Settembre 2025  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
 
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`<nome progetto>_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
 =======
+=======
+>>>>>>> laraxot/dev
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
 
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Soluzione Implementata
 
 ### File Modificato
 <<<<<<< HEAD
+<<<<<<< HEAD
 `/var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+=======
+`/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+>>>>>>> laraxot/dev
 =======
 `/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
 >>>>>>> laraxot/dev
@@ -58,7 +68,11 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 
 ### Moduli Affetti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto> Module**: Customer-User relationships
+=======
+- **Quaeris Module**: Customer-User relationships
+>>>>>>> laraxot/dev
 =======
 - **Quaeris Module**: Customer-User relationships
 >>>>>>> laraxot/dev
@@ -90,7 +104,11 @@ echo $tenants->count(); // ✅ Output: 1
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
+=======
+- [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
+>>>>>>> laraxot/dev
 =======
 - [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
 >>>>>>> laraxot/dev

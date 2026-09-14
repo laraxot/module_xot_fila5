@@ -65,7 +65,11 @@ if (property_exists($stateObject, 'name')) {
 - **User**: Authentication with advanced features
 - **Cms**: Content management system
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: Main application module
+=======
+- **Quaeris**: Main application module
+>>>>>>> laraxot/dev
 =======
 - **Quaeris**: Main application module
 >>>>>>> laraxot/dev

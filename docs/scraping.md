@@ -4,9 +4,12 @@
 <!-- Contenuto migrato da _docs/_scraping.txt -->
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # _scraping
 
 <!-- Contenuto migrato da _docs/_scraping.txt -->
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -21,6 +24,9 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -32,11 +38,17 @@ https://webmobtuts.com/backend-development/using-laravel-and-symfony-panther-to-
 <<<<<<< HEAD
 
 https://github.com/oscarotero/Embed  !!!
+<<<<<<< HEAD
 https://github.com/oscarotero/Embed  !!!
 =======
 <<<<<<< HEAD
 
 https://github.com/oscarotero/Embed  !!!
+=======
+https://github.com/oscarotero/Embed  !!!
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 https://github.com/oscarotero/Embed  !!!
 >>>>>>> laraxot/dev

@@ -75,7 +75,10 @@ declare(strict_types=1);
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -101,8 +104,11 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
             DatePicker::make('dateTo')
@@ -110,6 +116,10 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -119,6 +129,9 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->afterStateUpdated(fn () => $this->updateFilters()),
             
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -155,7 +168,10 @@ declare(strict_types=1);
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -181,10 +197,16 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->searchable(),
 <<<<<<< HEAD
 
+<<<<<<< HEAD
                 
 =======
 <<<<<<< HEAD
 
+=======
+                
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
                 
 >>>>>>> laraxot/dev
@@ -198,10 +220,16 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->searchable(),
 <<<<<<< HEAD
 
+<<<<<<< HEAD
                 
 =======
 <<<<<<< HEAD
 
+=======
+                
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
                 
 >>>>>>> laraxot/dev
@@ -226,8 +254,11 @@ class QuestionChartDataWidget extends XotBaseTableWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         if (!$record) {
@@ -235,6 +266,10 @@ class QuestionChartDataWidget extends XotBaseTableWidget
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -244,6 +279,9 @@ class QuestionChartDataWidget extends XotBaseTableWidget
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -274,7 +312,10 @@ declare(strict_types=1);
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -298,10 +339,16 @@ class QuestionChartWidget extends XotBaseWidget
         $record = $this->getRecord();
 <<<<<<< HEAD
 
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
         
 >>>>>>> laraxot/dev
@@ -316,6 +363,7 @@ class QuestionChartWidget extends XotBaseWidget
 
         $chartData = $this->getChartData($record);
 
+<<<<<<< HEAD
         
         $chartData = $this->getChartData($record);
         
@@ -325,10 +373,15 @@ class QuestionChartWidget extends XotBaseWidget
         $chartData = $this->getChartData($record);
 
 =======
+>>>>>>> laraxot/dev
+=======
         
         $chartData = $this->getChartData($record);
         
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         return [
             'datasets' => [
@@ -348,8 +401,11 @@ class QuestionChartWidget extends XotBaseWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         if (!$record) {
@@ -357,6 +413,10 @@ class QuestionChartWidget extends XotBaseWidget
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -366,6 +426,9 @@ class QuestionChartWidget extends XotBaseWidget
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -390,8 +453,11 @@ class QuestionChartWidget extends XotBaseWidget
             })
             ->get();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
         $grouped = $answers->groupBy('answer_lang');
@@ -400,6 +466,10 @@ class QuestionChartWidget extends XotBaseWidget
         $values = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -410,6 +480,9 @@ class QuestionChartWidget extends XotBaseWidget
         $values = [];
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -419,10 +492,16 @@ class QuestionChartWidget extends XotBaseWidget
         }
 <<<<<<< HEAD
 
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
         
 >>>>>>> laraxot/dev
@@ -447,10 +526,16 @@ class QuestionChartWidget extends XotBaseWidget
         ];
 <<<<<<< HEAD
 
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
         
 >>>>>>> laraxot/dev
@@ -461,10 +546,16 @@ class QuestionChartWidget extends XotBaseWidget
         }
 <<<<<<< HEAD
 
+<<<<<<< HEAD
         
 =======
 <<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
         
 >>>>>>> laraxot/dev
@@ -526,10 +617,16 @@ class MyWidget extends XotBaseWidget
     }
 <<<<<<< HEAD
 
+<<<<<<< HEAD
     
 =======
 <<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
     
 >>>>>>> laraxot/dev
@@ -585,10 +682,16 @@ class MyTableWidget extends XotBaseTableWidget
 
 <<<<<<< HEAD
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+<<<<<<< HEAD
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
 <<<<<<< HEAD
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+=======
+Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 >>>>>>> laraxot/dev

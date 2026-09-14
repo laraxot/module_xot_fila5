@@ -140,17 +140,23 @@ HAVING COUNT(*) < 3;
 ### 5. Fetch MCP - Framework Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Uso principale**: Recupero documentazione Laravel 13 e PHP 8.3
 
 **Ricerche tipiche**:
 ```
 # Laravel 13.x architecture improvements
 =======
+=======
+>>>>>>> laraxot/dev
 **Uso principale**: Recupero documentazione Laravel 12 e PHP 8.3
 
 **Ricerche tipiche**:
 ```
 # Laravel 12.x architecture improvements
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://laravel.com/docs/12.x/architecture-concepts
 
@@ -277,6 +283,7 @@ File: `Modules/Xot/.mcp.json`
     "filesystem-xot": {
       "command": "npx",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"
@@ -284,12 +291,17 @@ File: `Modules/Xot/.mcp.json`
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"
 =======
+=======
+>>>>>>> laraxot/dev
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot"
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
       },
       "trust": false,
@@ -303,15 +315,21 @@ File: `Modules/Xot/.mcp.json`
     "git-xot": {
       "command": "npx",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/<repo progetto>"],
       "cwd": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot",
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/<repo progetto>"],
       "cwd": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot",
 =======
+=======
+>>>>>>> laraxot/dev
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_healthcare_app_fila5_mono"],
       "cwd": "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot",
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_app_fila5_mono"],
       "cwd": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot",
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
       "trust": false
     },

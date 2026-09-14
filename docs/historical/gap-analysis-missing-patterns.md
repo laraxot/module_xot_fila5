@@ -6,7 +6,11 @@
 
 #### Modules Without README.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] **<nome progetto>** - Core business module needs comprehensive documentation
+=======
+- [ ] **Quaeris** - Core business module needs comprehensive documentation
+>>>>>>> laraxot/dev
 =======
 - [ ] **Quaeris** - Core business module needs comprehensive documentation
 >>>>>>> laraxot/dev
@@ -233,7 +237,11 @@ php artisan laraxot:make:resource CustomerResource --module=CustomerManagement
 
 #### 1.1 Module Documentation (Weeks 1-2)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Create comprehensive README.md for <nome progetto> module
+=======
+- [ ] Create comprehensive README.md for Quaeris module
+>>>>>>> laraxot/dev
 =======
 - [ ] Create comprehensive README.md for Quaeris module
 >>>>>>> laraxot/dev

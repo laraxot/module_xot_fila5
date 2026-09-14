@@ -38,7 +38,11 @@
 
 #### Laravel Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 Documentation](https://laravel.com/docs/12.x)
+=======
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
 >>>>>>> laraxot/dev
@@ -262,7 +266,11 @@
 
 ### Essential Links
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 Docs](https://laravel.com/docs/12.x)
+=======
+- [Laravel 12 Docs](https://laravel.com/docs/12.x)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 Docs](https://laravel.com/docs/12.x)
 >>>>>>> laraxot/dev

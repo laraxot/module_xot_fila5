@@ -4,7 +4,11 @@ slug: hasxotfactory-regression-prevention
 scope:
   - module:Xot
 <<<<<<< HEAD
+<<<<<<< HEAD
   - project:<repo progetto>
+=======
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
 =======
   - project:base_workorder_fila5
 >>>>>>> laraxot/dev

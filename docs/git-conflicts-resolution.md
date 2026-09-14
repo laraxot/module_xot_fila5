@@ -2,10 +2,16 @@
 
 <<<<<<< HEAD
 ## Data: [DATE]
+<<<<<<< HEAD
 ## Data: 2025-01-06
 =======
 <<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 ## Data: 2025-01-06
 >>>>>>> laraxot/dev
@@ -107,10 +113,16 @@ $res=Locality::query()
 
 <<<<<<< HEAD
 ## Data: [DATE]
+<<<<<<< HEAD
 ## Data: 2025-01-06
 =======
 <<<<<<< HEAD
 ## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 ## Data: 2025-01-06
 >>>>>>> laraxot/dev
@@ -249,7 +261,10 @@ php artisan lang:check
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
@@ -261,6 +276,9 @@ php artisan lang:check
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -319,14 +337,20 @@ php artisan lang:check
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
@@ -340,10 +364,16 @@ php artisan lang:check
 
 <<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-06
 =======
 <<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 **Ultimo aggiornamento**: 2025-01-06
 >>>>>>> laraxot/dev

@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila5
+=======
+# Configurazione MCP per base_ptvx_fila4_mono
+>>>>>>> laraxot/dev
 =======
 # Configurazione MCP per base_ptvx_fila4_mono
 >>>>>>> laraxot/dev
@@ -13,7 +17,11 @@
 ## 🎯 Scopo del Documento
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila5**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+=======
+Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
+>>>>>>> laraxot/dev
 =======
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
 >>>>>>> laraxot/dev
@@ -42,9 +50,15 @@ File: `laravel/.mcp.json`
                 "-y",
                 "@modelcontextprotocol/server-filesystem",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "/var/www/_bases/base_ptvx_fila5/laravel",
                 "/var/www/_bases/base_ptvx_fila5/docs",
                 "/var/www/_bases/base_ptvx_fila5/bashscripts"
+=======
+                "/var/www/_bases/base_ptvx_fila4_mono/laravel",
+                "/var/www/_bases/base_ptvx_fila4_mono/docs",
+                "/var/www/_bases/base_ptvx_fila4_mono/bashscripts"
+>>>>>>> laraxot/dev
 =======
                 "/var/www/_bases/base_ptvx_fila4_mono/laravel",
                 "/var/www/_bases/base_ptvx_fila4_mono/docs",
@@ -101,7 +115,11 @@ File: `laravel/.mcp.json`
                 "@modelcontextprotocol/server-git",
                 "--repository",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "/var/www/_bases/base_ptvx_fila5"
+=======
+                "/var/www/_bases/base_ptvx_fila4_mono"
+>>>>>>> laraxot/dev
 =======
                 "/var/www/_bases/base_ptvx_fila4_mono"
 >>>>>>> laraxot/dev
@@ -124,9 +142,15 @@ File: `laravel/.mcp.json`
 - **Scopo**: Gestione file e directory del progetto
 - **Path configurati**:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - `/var/www/_bases/base_ptvx_fila5/laravel` - Codice Laravel
   - `/var/www/_bases/base_ptvx_fila5/docs` - Documentazione
   - `/var/www/_bases/base_ptvx_fila5/bashscripts` - Script e tool
+=======
+  - `/var/www/_bases/base_ptvx_fila4_mono/laravel` - Codice Laravel
+  - `/var/www/_bases/base_ptvx_fila4_mono/docs` - Documentazione
+  - `/var/www/_bases/base_ptvx_fila4_mono/bashscripts` - Script e tool
+>>>>>>> laraxot/dev
 =======
   - `/var/www/_bases/base_ptvx_fila4_mono/laravel` - Codice Laravel
   - `/var/www/_bases/base_ptvx_fila4_mono/docs` - Documentazione
@@ -158,7 +182,11 @@ File: `laravel/.mcp.json`
 ### 8. git
 - **Scopo**: Operazioni Git sul repository
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Path**: `/var/www/_bases/base_ptvx_fila5`
+=======
+- **Path**: `/var/www/_bases/base_ptvx_fila4_mono`
+>>>>>>> laraxot/dev
 =======
 - **Path**: `/var/www/_bases/base_ptvx_fila4_mono`
 >>>>>>> laraxot/dev
@@ -176,7 +204,11 @@ Nei prompt è stato integrato il riferimento a MCP per aggirare ostacoli:
 Se alcuni file risultano bloccati o non accessibili con tool standard:
 - usa filesystem MCP (read/write/edit) come fallback
 <<<<<<< HEAD
+<<<<<<< HEAD
 - se serve un FS alternativo: usa filesystem-<nome progetto> MCP
+=======
+- se serve un FS alternativo: usa filesystem-quaeris MCP
+>>>>>>> laraxot/dev
 =======
 - se serve un FS alternativo: usa filesystem-quaeris MCP
 >>>>>>> laraxot/dev

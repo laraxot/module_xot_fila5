@@ -35,7 +35,11 @@ Cluster piu' ricorrenti osservati:
 ## Priorita'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 13
+=======
+1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 12
+>>>>>>> laraxot/dev
 =======
 1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 12
 >>>>>>> laraxot/dev

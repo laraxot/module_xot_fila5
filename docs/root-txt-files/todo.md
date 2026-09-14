@@ -1,7 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 title: 'Todo'
 module: Xot
@@ -11,6 +14,10 @@ description: "usare userprovider che e' un contratto sulle policy"
 tags: [migrato-da-txt, xot]
 converted_from: todo.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -22,6 +29,9 @@ description: '<!-- Contenuto migrato da _docs/_todo.txt -->'
 tags: [migrato-da-txt, xot]
 converted_from: _todo.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -33,7 +43,10 @@ updated: 2026-08-24
 usare userprovider che e' un contratto sulle policy
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 usare userprovider che e' un contratto sulle policy
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # _todo
@@ -46,6 +59,9 @@ https://github.com/limewell/laravel-make-extender
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -43,7 +43,11 @@ class User extends BaseModel
 ### Perché è un Errore Architetturale Grave
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Deprecazione Laravel 13**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
+=======
+1. **Deprecazione Laravel 12**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
+>>>>>>> laraxot/dev
 =======
 1. **Deprecazione Laravel 12**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
 >>>>>>> laraxot/dev
@@ -244,7 +248,11 @@ class User extends BaseModel
 - [model_base_rules.md](model_base_rules.md)
 - [../../project_docs/phpstan-cast-fixes-guide.md](../../project_docs/phpstan-cast-fixes-guide.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
+=======
+- [Laravel 12 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
 >>>>>>> laraxot/dev

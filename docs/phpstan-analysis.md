@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## stato analisi phpstan
 
@@ -14,6 +17,10 @@
 - proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
 - verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -788,7 +795,11 @@ test('it can create and manage tenants', function (): void {
 
 ### Path Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5`
+=======
+- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+>>>>>>> laraxot/dev
 =======
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
 >>>>>>> laraxot/dev
@@ -1086,6 +1097,9 @@ class MyModel extends BaseModel
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

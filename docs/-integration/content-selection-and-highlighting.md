@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # content_selection_and_highlighting
 
@@ -9,6 +12,10 @@
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -28,6 +35,9 @@ https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -36,14 +46,21 @@ https://github.com/codeshifu/react-highlight-pop
 https://stackoverflow.com/questions/18543676/display-popup-above-highlighted-text-in-contenteditable-div
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://medium.com/@hyvor.talk/how-to-simply-highlight-code-on-your-blog-with-highlight-js-9d9ab2797b8
 
 https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highlight-function
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -55,6 +72,9 @@ https://stackoverflow.com/questions/23952220/how-can-i-recreate-the-medium-highl
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -64,14 +84,21 @@ https://720kb.github.io/highlighter.js/
 https://github.com/anonyco/Highlighter-JS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://jobjects.com/project_docs/highlighter/jquery //deprecated
 
 https://devpost.com/software/highlighter-js
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -81,6 +108,9 @@ https://devpost.com/software/highlighter-js
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -91,9 +121,15 @@ https://github.com/maxboeck/eleventy-plugin-share-highlight
 ---------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 
 >>>>>>> laraxot/dev
@@ -112,9 +148,12 @@ https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---------------------------------------------------------------
 https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-vue-dc515f2dddef/   !!!!!!
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -123,6 +162,9 @@ https://www.freecodecamp.org/news/how-to-create-a-medium-like-highlight-menu-in-
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -167,8 +209,11 @@ tvb.bibliotechetrevigiane.it
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 tvb.bibliotechetrevigiane.it
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 
@@ -176,6 +221,9 @@ tvb.bibliotechetrevigiane.it
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

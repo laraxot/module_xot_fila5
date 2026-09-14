@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Laravel 13 Best Practices"
+=======
+title: "Laravel 12 Best Practices"
+>>>>>>> laraxot/dev
 =======
 title: "Laravel 12 Best Practices"
 >>>>>>> laraxot/dev
@@ -11,9 +15,15 @@ updated: 2026-08-24
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Laravel 13 Best Practices - Laraxot PTVX
 
 Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 13.
+=======
+# Laravel 12 Best Practices - Laraxot PTVX
+
+Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12.
+>>>>>>> laraxot/dev
 =======
 # Laravel 12 Best Practices - Laraxot PTVX
 
@@ -40,7 +50,11 @@ Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Lar
 ## 4. Database & Performance
 - **Database Transactions**: Usare sempre `DatabaseTransactions` nei test Pest per velocità e isolamento.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 13 per il DB batching nelle operazioni di importazione dati Limesurvey.
+=======
+- **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 12 per il DB batching nelle operazioni di importazione dati Limesurvey.
+>>>>>>> laraxot/dev
 =======
 - **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 12 per il DB batching nelle operazioni di importazione dati Limesurvey.
 >>>>>>> laraxot/dev

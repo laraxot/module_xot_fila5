@@ -7,9 +7,15 @@ updated: 2026-06-30
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/30"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/305"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/304"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/305"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/304"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/305"
 discussions:
@@ -20,7 +26,11 @@ related:
   - ../../../../../../docs/stories/STORY-282-composer-root-require-skeleton-modular.md
   - ./composer-merge-plugin-modules-only.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../raw/notes/composer-root-skeleton-<nome progetto>-comparison-2026-06-30.md
+=======
+  - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
+>>>>>>> laraxot/dev
 =======
   - ../../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md
 >>>>>>> laraxot/dev
@@ -135,7 +145,11 @@ Questa e' la boundary corretta:
 Confronto 2026-06-30:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
+=======
+- **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
+>>>>>>> laraxot/dev
 =======
 - **FixCity** (riferimento storico): skeleton con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`. Debito noto: `spatie/laravel-responsecache` e `phpmd/phpmd` nel root, `Database\\Seeders\\` in autoload PSR-4.
 >>>>>>> laraxot/dev

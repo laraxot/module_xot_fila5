@@ -39,7 +39,11 @@ Laraxot **non** usa il Repository pattern per l'accesso ai dati di dominio.
 - `Modules/Xot/app/Repositories/` (incluso `BaseRepository.php`)
 - `Modules/Xot/app/Contracts/RepositoryContract.php`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/app/Repositories/` + `TicketRepositoryContract.php`
+=======
+- `Modules/Fixcity/app/Repositories/` + `TicketRepositoryContract.php`
+>>>>>>> laraxot/dev
 =======
 - `Modules/Fixcity/app/Repositories/` + `TicketRepositoryContract.php`
 >>>>>>> laraxot/dev

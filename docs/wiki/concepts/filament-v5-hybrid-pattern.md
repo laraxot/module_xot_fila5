@@ -29,11 +29,18 @@ class DepartmentForm
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -103,11 +110,18 @@ class ArticleForm extends XotBaseResourceForm
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -186,11 +200,18 @@ class ArticleForm extends XotBaseResourceForm
     
     // LEGACY: Array style (backward compatibility)
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -233,11 +254,18 @@ abstract class XotBaseResourceForm
      * Can be overridden, but default delegates to configure().
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -300,11 +328,18 @@ abstract class XotBaseResourceInfolist
      * LEGACY: Array method with default implementation.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
     public function getInfolistSchema(): array
 =======
 <<<<<<< HEAD
     public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
@@ -513,7 +548,11 @@ class ArticlesTable extends XotBaseResourceTable
 - Story 8-91: `.planning/stories/8-91-filament-v5-schemas-structure-refactor.story.md`
 - XotBase Classes: `Modules/Xot/app/Filament/Resources/Schemas/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Current TicketForm: `Modules/<nome progetto>/app/Filament/Resources/TicketResource/Schemas/TicketForm.php`
+=======
+- Current TicketForm: `Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php`
+>>>>>>> laraxot/dev
 =======
 - Current TicketForm: `Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php`
 >>>>>>> laraxot/dev
@@ -527,7 +566,11 @@ class ArticlesTable extends XotBaseResourceTable
 | Blog | 🔴 Pending | Agent 2 | After Cms |
 | User | 🔴 Pending | Agent 3 | Complex, many resources |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | 🟡 Partial | - | TicketForm already evolved |
+=======
+| Fixcity | 🟡 Partial | - | TicketForm already evolved |
+>>>>>>> laraxot/dev
 =======
 | Fixcity | 🟡 Partial | - | TicketForm already evolved |
 >>>>>>> laraxot/dev

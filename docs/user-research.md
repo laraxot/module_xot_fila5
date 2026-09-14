@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # User Research: Xot Framework
 
@@ -22,6 +25,10 @@ Identify bottlenecks in developer productivity when working with XotBase classes
 - Simplify the `XotBaseServiceProvider` boot process.
 - Improve documentation for the `HasXotTable` trait.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -114,6 +121,9 @@ Users expect vetted extensions.
 
 *Last Updated: March 12, 2026*
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

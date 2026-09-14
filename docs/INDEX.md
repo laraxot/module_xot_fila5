@@ -237,7 +237,11 @@ $result = $action->execute($data);
 - **AI** — Uses core utilities
 - **Geo** — Extends Xot models
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>** — Uses services and traits
+=======
+- **Fixcity** — Uses services and traits
+>>>>>>> laraxot/dev
 =======
 - **Fixcity** — Uses services and traits
 >>>>>>> laraxot/dev

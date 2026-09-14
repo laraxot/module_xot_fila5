@@ -40,7 +40,11 @@ to the class docblock, and ensuring the trait use is present.
 ## 🧠 Second Brain
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See: `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
+=======
+See: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
+>>>>>>> laraxot/dev
 =======
 See: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
 >>>>>>> laraxot/dev

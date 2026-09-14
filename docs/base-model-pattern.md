@@ -71,7 +71,11 @@ Each module has its own BaseModel that extends XotBaseModel:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Example from <nome progetto> module
+=======
+// Example from Quaeris module
+>>>>>>> laraxot/dev
 =======
 // Example from Quaeris module
 >>>>>>> laraxot/dev
@@ -82,7 +86,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = '<nome progetto>'; // Module-specific connection
+=======
+    protected $connection = 'quaeris'; // Module-specific connection
+>>>>>>> laraxot/dev
 =======
     protected $connection = 'quaeris'; // Module-specific connection
 >>>>>>> laraxot/dev
@@ -114,7 +122,11 @@ class SurveyPdf extends XotBaseModel // Never do this!
 ✅ **CORRECT:**
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In <nome progetto> module
+=======
+// In Quaeris module
+>>>>>>> laraxot/dev
 =======
 // In Quaeris module
 >>>>>>> laraxot/dev

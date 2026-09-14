@@ -4,9 +4,12 @@
 <!-- Contenuto migrato da _docs/_process.txt -->
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # _process
 
 <!-- Contenuto migrato da _docs/_process.txt -->
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -21,6 +24,9 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -30,10 +36,16 @@ https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCom
 
 <<<<<<< HEAD
 ------------------------------------
+<<<<<<< HEAD
 ------------------------------------
 =======
 <<<<<<< HEAD
 ------------------------------------
+=======
+------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 ------------------------------------
 >>>>>>> laraxot/dev

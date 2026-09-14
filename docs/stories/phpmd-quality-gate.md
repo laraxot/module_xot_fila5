@@ -1,8 +1,13 @@
 ---
 id: phpmd-quality-gate
 <<<<<<< HEAD
+<<<<<<< HEAD
 slug: phpmd-base-<nome progetto>-fila5
 scope: [project:<repo progetto>, modules:All 52]
+=======
+slug: phpmd-base-workorder-fila5
+scope: [project:base_workorder_fila5, modules:All 52]
+>>>>>>> laraxot/dev
 =======
 slug: phpmd-base-workorder-fila5
 scope: [project:base_workorder_fila5, modules:All 52]

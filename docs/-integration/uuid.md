@@ -4,9 +4,12 @@
 <!-- Contenuto migrato da _docs/uuid.txt -->
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # uuid
 
 <!-- Contenuto migrato da _docs/uuid.txt -->
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -21,6 +24,9 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -29,8 +35,11 @@ Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 Universally Unique Identifiers
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # _uuid
 
@@ -40,6 +49,11 @@ Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev

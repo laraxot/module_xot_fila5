@@ -7,10 +7,16 @@ description: 'multi key, fixing lazy loading https://github.com/topclaudy/compos
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: models.txt
+<<<<<<< HEAD
 converted_from: _models.txt
 =======
 <<<<<<< HEAD
 converted_from: models.txt
+=======
+converted_from: _models.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 converted_from: _models.txt
 >>>>>>> laraxot/dev

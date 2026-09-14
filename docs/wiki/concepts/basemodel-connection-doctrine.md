@@ -16,6 +16,7 @@ Every `Modules/<Module>/app/Models/BaseModel.php` MUST declare its connection ex
 | Module | Connection | Database |
 |--------|------------|----------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | User | user | <nome progetto>_user |
 | Xot | xot | <nome progetto>_data (default) |
 | TimberBilling | timber_billing | <nome progetto>_data |
@@ -42,6 +43,8 @@ Every `Modules/<Module>/app/Models/BaseModel.php` MUST declare its connection ex
 | Tenant | tenant | <nome progetto>_data |
 | AiAssistant | ai_assistant | <nome progetto>_data |
 =======
+=======
+>>>>>>> laraxot/dev
 | User | user | workorder_user |
 | Xot | xot | workorder_data (default) |
 | TimberBilling | timber_billing | workorder_data |
@@ -67,6 +70,9 @@ Every `Modules/<Module>/app/Models/BaseModel.php` MUST declare its connection ex
 | UI | u_i | workorder_data |
 | Tenant | tenant | workorder_data |
 | AiAssistant | ai_assistant | workorder_data |
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ### BaseModel Implementation Template

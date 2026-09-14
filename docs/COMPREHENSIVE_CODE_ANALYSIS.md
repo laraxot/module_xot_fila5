@@ -2,7 +2,11 @@
 
 ## Panoramica
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
 =======
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
 >>>>>>> laraxot/dev
@@ -181,11 +185,18 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -199,11 +210,18 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -285,7 +303,11 @@ public function execute(Contact $contact): void
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2. Laravel 13 Compatibility
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
 =======
 ### 2. Laravel 12 Compatibility
 >>>>>>> laraxot/dev
@@ -302,7 +324,11 @@ protected function casts(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 3. Filament 5 Patterns
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
 =======
 ### 3. Filament 4 Patterns
 >>>>>>> laraxot/dev
@@ -312,11 +338,18 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -455,7 +488,11 @@ return [
 
 - [Architettura Moduli](architecture.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Laravel 13](./LARAVEL_12_GUIDE.md)
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
 =======
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 >>>>>>> laraxot/dev

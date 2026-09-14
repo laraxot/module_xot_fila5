@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -15,6 +18,9 @@ related:
   - "./eloquent-magic-properties-rule.md"
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -50,10 +56,16 @@ public function getTableColumns(): array
 ## Collegamenti
 <<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
+<<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
 =======
 <<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
+=======
+- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
 >>>>>>> laraxot/dev

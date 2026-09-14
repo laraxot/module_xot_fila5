@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Filament-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -15,6 +18,7 @@
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
 > **Core module for the <nome progetto> Platform.**
@@ -23,6 +27,8 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 
 Core module for the <nome progetto> Platform.
 =======
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
@@ -33,6 +39,9 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Superpoteri
@@ -40,7 +49,11 @@ Core module for the FixCity Platform.
 - Modular component with XotBase patterns
 - Professional-grade implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
 =======
 - Integrated with FixCity Platform
 >>>>>>> laraxot/dev
@@ -56,9 +69,14 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+=======
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
@@ -122,6 +140,9 @@ $prefix = static::$translationPrefix;
 # Filament
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -137,8 +158,11 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
@@ -222,6 +246,10 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -261,6 +289,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -297,6 +328,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
@@ -344,6 +378,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -422,7 +459,10 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
@@ -481,6 +521,9 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Vedi anche: [<nome modulo>/docs/filament-best-practices.mdc](../../../<nome modulo>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -523,9 +566,12 @@ $prefix = static::$translationPrefix;
 // Aggiungere qui altri moduli se necessario
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
@@ -671,6 +717,10 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 
 ### Collegamento
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- Vedi anche: [SaluteOra/docs/filament-best-practices.mdc](../../../SaluteOra/docs/filament-best-practices.mdc)
+>>>>>>> laraxot/dev
 =======
 - Vedi anche: [SaluteOra/docs/filament-best-practices.mdc](../../../SaluteOra/docs/filament-best-practices.mdc)
 >>>>>>> laraxot/dev
@@ -710,8 +760,14 @@ $prefix = static::$translationPrefix;
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+=======
+>>>>>>> laraxot/dev
+=======
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 =======
 =======
@@ -726,17 +782,23 @@ $prefix = static::$translationPrefix;
 ]()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Core module for the <nome progetto> Platform.**
 
 ## Perché esiste
 
 Core module for the <nome progetto> Platform.
 =======
+=======
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Superpoteri
@@ -744,7 +806,11 @@ Core module for the FixCity Platform.
 - Modular component with XotBase patterns
 - Professional-grade implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
 =======
 - Integrated with FixCity Platform
 >>>>>>> laraxot/dev
@@ -760,10 +826,16 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
 =======
+=======
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

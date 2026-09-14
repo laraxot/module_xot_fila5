@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Compatibilità Filament 5.x - Modulo Xot
+=======
+# Compatibilità Filament 4.x - Modulo Xot
+>>>>>>> laraxot/dev
 =======
 # Compatibilità Filament 4.x - Modulo Xot
 >>>>>>> laraxot/dev
@@ -185,7 +189,11 @@ $rows = $query->get();
 **Data Completamento**: 2025-01-27
 **Errori PHPStan**: 0/3520 (livello 9)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Compatibilità**: Filament 5.x ✅
+=======
+**Compatibilità**: Filament 4.x ✅
+>>>>>>> laraxot/dev
 =======
 **Compatibilità**: Filament 4.x ✅
 >>>>>>> laraxot/dev
@@ -214,8 +222,13 @@ $rows = $query->get();
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 5.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 5.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+=======
+- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+>>>>>>> laraxot/dev
 =======
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)

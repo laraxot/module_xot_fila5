@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # _certificate
 
@@ -75,6 +78,10 @@ https://www.objectivequiz.com/objective-questions/programming-technologies/larav
 
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -127,6 +134,9 @@ updated: 2026-08-24
 - <https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!>
 - <https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

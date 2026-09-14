@@ -88,11 +88,18 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -158,7 +165,11 @@ public function getFormSchema(): array
 ```json
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_xot_fila5",
+=======
+    "name": "laraxot/module_xot_fila3",
+>>>>>>> laraxot/dev
 =======
     "name": "laraxot/module_xot_fila3",
 >>>>>>> laraxot/dev

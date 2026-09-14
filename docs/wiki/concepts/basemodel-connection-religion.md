@@ -8,7 +8,11 @@ updated: 2026-07-27
 qmd: "BaseModel protected connection mandatory module snake name TenantServiceProvider never null"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/7"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
 >>>>>>> laraxot/dev
@@ -35,7 +39,11 @@ protected $connection = '{module_snake}';
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `<nome progetto>` → `work_order`, `UI` → `u_i`).
+=======
+Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `WorkOrder` → `work_order`, `UI` → `u_i`).
+>>>>>>> laraxot/dev
 =======
 Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `WorkOrder` → `work_order`, `UI` → `u_i`).
 >>>>>>> laraxot/dev

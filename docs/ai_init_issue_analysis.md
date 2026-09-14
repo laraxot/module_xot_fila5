@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## Analisi corretta
 
@@ -43,13 +46,19 @@ Non:
 ## Conseguenza pratica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Source: `/var/www/_bases/base_<nome progetto>_fila5/bashscripts/ai/.gemini`
 - Target symlink: `/var/www/_bases/base_<nome progetto>_fila5/.gemini`
 =======
+=======
+>>>>>>> laraxot/dev
 - Source: `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/.gemini`
 - Target symlink: `/var/www/_bases/base_quaeris_fila4_mono/.gemini`
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## Problema Identificato
 
@@ -85,12 +94,18 @@ Lo script deve essere corretto per invertire la logica:
 - Source: `./bashscripts/ai/.gemini`
 <<<<<<< HEAD
 - Target symlink: `./.gemini`
+<<<<<<< HEAD
 - Target symlink: `./.gemini`
 =======
 <<<<<<< HEAD
 - Target symlink: `./.gemini`
 =======
+>>>>>>> laraxot/dev
+=======
 - Target symlink: `./.gemini`
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

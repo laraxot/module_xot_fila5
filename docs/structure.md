@@ -293,7 +293,11 @@ Data: 2025-04-23 19:09:56
 Modules\\Xot\\Database\\Factories
 Modules\\Xot\\Database\\Seeders
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_xot_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_xot_fila3
+>>>>>>> laraxot/dev
 =======
 - **Pacchetto Composer**: laraxot/module_xot_fila3
 >>>>>>> laraxot/dev

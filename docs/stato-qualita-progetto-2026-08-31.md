@@ -216,7 +216,11 @@ Dati verificati in sessione, senza migrazioni distruttive.
 | Dati sacri in Xot Artisan | **fix applicati** | niente `--force` su `migrate` in `ArtisanAction` / handlers |
 | Pest unit GC (Intervention + Quotation + Billing) | **77 passed** | `php artisan test Modules/{Intervention,Quotation,Billing}/tests/Unit` |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Pest feature Filament (es. Billing invoices) | **fallisce** | `<nome progetto>_data_test.roles` assente — debito **D17** |
+=======
+| Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente — debito **D17** |
+>>>>>>> laraxot/dev
 =======
 | Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente — debito **D17** |
 >>>>>>> laraxot/dev

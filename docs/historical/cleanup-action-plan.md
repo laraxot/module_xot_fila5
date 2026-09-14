@@ -74,7 +74,11 @@ Based on importance and interdependencies:
 
 ### Tier 2 - Major Business Logic
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. **<nome progetto>** - Survey management (main application)
+=======
+4. **Quaeris** - Survey management (main application)
+>>>>>>> laraxot/dev
 =======
 4. **Quaeris** - Survey management (main application)
 >>>>>>> laraxot/dev

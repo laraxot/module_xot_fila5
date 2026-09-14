@@ -2,7 +2,10 @@
 https://github.com/HichemTab-tech/LaravelFS
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/HichemTab-tech/LaravelFS
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -42,6 +45,10 @@ https://github.com/HichemTab-tech/LaravelFS
 ## Contenuto originale (txt)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_bMOZuq
+>>>>>>> laraxot/dev
 =======
 >>>>>>> .merge_file_bMOZuq
 >>>>>>> laraxot/dev
@@ -54,6 +61,9 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

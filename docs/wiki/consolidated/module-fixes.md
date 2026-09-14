@@ -99,10 +99,31 @@ declare(strict_types=1);
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_30Jm9I
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_NeBFYX
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_30Jm9I
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_NeBFYX
 >>>>>>> laraxot/dev
 {
     return [
@@ -903,10 +924,31 @@ declare(strict_types=1);
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_30Jm9I
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_NeBFYX
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_30Jm9I
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_NeBFYX
 >>>>>>> laraxot/dev
 {
     return [

@@ -283,11 +283,18 @@ interface XotBaseResourceContract
     public static function getModel(): string;
     public static function getRelations(): array;
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array;
     public function getFormSchema(): array;
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array;
+=======
+    public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
 >>>>>>> laraxot/dev
@@ -493,7 +500,11 @@ public function oldMethod()
 
 ### Compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Laravel 13 compatibile
+=======
+- [ ] Laravel 12 compatibile
+>>>>>>> laraxot/dev
 =======
 - [ ] Laravel 12 compatibile
 >>>>>>> laraxot/dev

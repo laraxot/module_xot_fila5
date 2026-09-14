@@ -4,9 +4,12 @@
 /**
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 //https://github.com/larastan/larastan/issues/515
 
 /**
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -25,6 +28,9 @@ https://github.com/larastan/larastan/issues/515
 
 **
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -46,8 +52,11 @@ class UserResource extends JsonResource
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  //return $this->pivot->time_to_live;  // This is the line 45
 
@@ -67,6 +76,10 @@ class MyCustomModel extends Model {}
 getModel - Builder
 paginate - Builder
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -108,6 +121,9 @@ class UserResource extends JsonResource
       }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

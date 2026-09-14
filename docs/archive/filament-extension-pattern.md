@@ -42,7 +42,11 @@ namespace Filament\Resources\Pages;
 
 // namespace corretto nel modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\Pages;
+=======
+namespace Modules\SaluteOra\Filament\Resources\Pages;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\SaluteOra\Filament\Resources\Pages;
 >>>>>>> laraxot/dev
@@ -80,8 +84,13 @@ protected function getInfolistSchema(): array
 ## linkback
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [errore override metodo final](project_docs/errors/filament_final_method_override.md)
 - [linee guida filament](modules/<nome progetto>/project_docs/filament-resources.md)
+=======
+- [errore override metodo final](/var/www/html/base_saluteora/laravel/docs/errors/filament_final_method_override.md)
+- [linee guida filament](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/filament-resources.md)
+>>>>>>> laraxot/dev
 =======
 - [errore override metodo final](/var/www/html/base_saluteora/laravel/docs/errors/filament_final_method_override.md)
 - [linee guida filament](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/docs/filament-resources.md)

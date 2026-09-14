@@ -37,7 +37,11 @@
 - Social authentication integration
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 3. **<nome progetto> Module - Business Core**
+=======
+#### 3. **Quaeris Module - Business Core**
+>>>>>>> laraxot/dev
 =======
 #### 3. **Quaeris Module - Business Core**
 >>>>>>> laraxot/dev
@@ -233,7 +237,11 @@
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Dependencies**: Xot, <nome progetto>
+=======
+**Dependencies**: Xot, Quaeris
+>>>>>>> laraxot/dev
 =======
 **Dependencies**: Xot, Quaeris
 >>>>>>> laraxot/dev
@@ -285,7 +293,11 @@ Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── <nome progetto> (Business Core)
+=======
+├── Quaeris (Business Core)
+>>>>>>> laraxot/dev
 =======
 ├── Quaeris (Business Core)
 >>>>>>> laraxot/dev
@@ -398,7 +410,11 @@ public function register(): void
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: Missing module.json description
+=======
+- **Quaeris**: Missing module.json description
+>>>>>>> laraxot/dev
 =======
 - **Quaeris**: Missing module.json description
 >>>>>>> laraxot/dev
@@ -413,7 +429,11 @@ public function register(): void
 #### High-Usage Modules
 - **User**: Authentication checks on every request
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: Survey processing and reporting
+=======
+- **Quaeris**: Survey processing and reporting
+>>>>>>> laraxot/dev
 =======
 - **Quaeris**: Survey processing and reporting
 >>>>>>> laraxot/dev

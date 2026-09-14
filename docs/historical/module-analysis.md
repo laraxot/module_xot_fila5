@@ -53,9 +53,15 @@ Xot provides the foundational architecture that enables LimeSurvey integration t
 
 ## Critical Dependencies
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13.x framework
 - Spatie packages (laravel-permission, laravel-model-states, laravel-translatable)
 - Filament 5.x for admin interface
+=======
+- Laravel 12.x framework
+- Spatie packages (laravel-permission, laravel-model-states, laravel-translatable)
+- Filament 4.x for admin interface
+>>>>>>> laraxot/dev
 =======
 - Laravel 12.x framework
 - Spatie packages (laravel-permission, laravel-model-states, laravel-translatable)

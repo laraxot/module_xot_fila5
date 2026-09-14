@@ -1,7 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 title: 'Machine learning'
 module: Xot
@@ -16,6 +19,10 @@ updated: 2026-08-24
 
 -------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -34,6 +41,9 @@ https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!
 
 ----------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -78,9 +88,15 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 
 >>>>>>> laraxot/dev

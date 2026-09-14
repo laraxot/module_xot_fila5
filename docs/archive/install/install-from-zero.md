@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 #Install from zero
@@ -21,6 +24,10 @@ define('LARAVEL_START', microtime(true));
 define('LARAVEL_DIR', __DIR__.'/../laravel');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 =======
 
 >>>>>>> laraxot/dev
@@ -83,7 +90,11 @@ return Application::configure(basePath: dirname(__DIR__))
 ~~~
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 edit file composer.json
+=======
+edit file composer.json 
+>>>>>>> laraxot/dev
 =======
 edit file composer.json 
 >>>>>>> laraxot/dev
@@ -175,7 +186,11 @@ edit file composer.json
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ~~~
+=======
+~~~ 
+>>>>>>> laraxot/dev
 =======
 ~~~ 
 >>>>>>> laraxot/dev
@@ -205,14 +220,20 @@ create Folders :
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> .merge_file_BRvOeX
 ~~~
 
 =======
+=======
+>>>>>>> laraxot/dev
 >>>>>>> .merge_file_qdw5qa
 ~~~
 
 
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 from folder laravel
 ~~~ bash
@@ -220,7 +241,13 @@ git submodule add  https://github.com/laraxot/filament-modules.git  packages/sav
 
 composer update -W (--with-all-dependencies)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ~~~
+=======
+~~~ 
+
+
+>>>>>>> laraxot/dev
 =======
 ~~~ 
 

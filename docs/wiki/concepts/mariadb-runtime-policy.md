@@ -17,7 +17,11 @@ sources:
 ## Scopo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto> in locale usa **MariaDB** come server SQL; Laravel espone il driver nativo **`mariadb`** (`DB_CONNECTION=mariadb`). Compatibilità codice: trattare `mysql` e `mariadb` come stessa famiglia dove servono DDL specifici (`XotBaseMigration::isMysqlFamilyDriver`).
+=======
+FixCity in locale usa **MariaDB** come server SQL; Laravel espone il driver nativo **`mariadb`** (`DB_CONNECTION=mariadb`). Compatibilità codice: trattare `mysql` e `mariadb` come stessa famiglia dove servono DDL specifici (`XotBaseMigration::isMysqlFamilyDriver`).
+>>>>>>> laraxot/dev
 =======
 FixCity in locale usa **MariaDB** come server SQL; Laravel espone il driver nativo **`mariadb`** (`DB_CONNECTION=mariadb`). Compatibilità codice: trattare `mysql` e `mariadb` come stessa famiglia dove servono DDL specifici (`XotBaseMigration::isMysqlFamilyDriver`).
 >>>>>>> laraxot/dev

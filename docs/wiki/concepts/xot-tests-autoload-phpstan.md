@@ -8,7 +8,11 @@ updated: 2026-06-13
 qmd: "Xot Tests autoload XotBaseTestCase class not found phpstan composer psr-4"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/330"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/330"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/330"
 >>>>>>> laraxot/dev
@@ -35,7 +39,11 @@ In `Modules/Xot/composer.json` l'autoload PSR-4 era incoerente:
 - `autoload` conteneva `Modules\Xot\tests\` (minuscolo) via chiave commentata
 - `autoload-dev` conteneva `Modules\Xot\Tests\` (ma non risolveva per PHPStan/composer merge)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - I file test usavano `namespace Modules\{Mod}\Tests\...` mentre Activity/<nome progetto>/User/Xot avevano ancora `tests` minuscolo
+=======
+- I file test usavano `namespace Modules\{Mod}\Tests\...` mentre Activity/Fixcity/User/Xot avevano ancora `tests` minuscolo
+>>>>>>> laraxot/dev
 =======
 - I file test usavano `namespace Modules\{Mod}\Tests\...` mentre Activity/Fixcity/User/Xot avevano ancora `tests` minuscolo
 >>>>>>> laraxot/dev
@@ -47,7 +55,11 @@ In `Modules/Xot/composer.json` l'autoload PSR-4 era incoerente:
 1. **`Modules/Xot/composer.json`**: registrare `Modules\Xot\Tests\` in `autoload.psr-4` (produzione), rimuovere mapping minuscolo.
 2. **`composer dump-autoload`**
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Normalizzare namespace** `Modules\{Mod}\tests` → `Modules\{Mod}\Tests` in Activity, <nome progetto>, User, Xot.
+=======
+3. **Normalizzare namespace** `Modules\{Mod}\tests` → `Modules\{Mod}\Tests` in Activity, Fixcity, User, Xot.
+>>>>>>> laraxot/dev
 =======
 3. **Normalizzare namespace** `Modules\{Mod}\tests` → `Modules\{Mod}\Tests` in Activity, Fixcity, User, Xot.
 >>>>>>> laraxot/dev

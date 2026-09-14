@@ -258,7 +258,11 @@ test('it can create and manage tenants', function (): void {
 
 ### Path Corretti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5`
+=======
+- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
+>>>>>>> laraxot/dev
 =======
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
 >>>>>>> laraxot/dev

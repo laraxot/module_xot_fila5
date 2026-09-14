@@ -3,8 +3,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ## [2025-06-04] - Sessione Fix Critica
 
@@ -67,6 +70,12 @@ All notable changes to `:package_name` will be documented in this file.
 ## [1.1.0] - 2025-10-29
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> 7f6cf6be (.)
@@ -156,8 +165,13 @@ All notable changes to `:package_name` will be documented in this file.
 
 ### Changed
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Migrazione a Laravel 13.x
 - Upgrade Filament 5.x
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
 =======
 - Migrazione a Laravel 12.x
 - Upgrade Filament 4.x
@@ -209,14 +223,23 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> 7f6cf6be (.)
@@ -237,8 +260,11 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 **Versioning:** [Semantic Versioning](https://semver.org/)
 
@@ -331,6 +357,12 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 - Link relativi ai documenti di dettaglio
 - Focus su COSA è cambiato e PERCHÉ
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> 7f6cf6be (.)

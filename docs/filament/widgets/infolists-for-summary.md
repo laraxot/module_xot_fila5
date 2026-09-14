@@ -42,15 +42,21 @@ TextEntry::make('review_title')
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Implementazione modulo <nome progetto> (riferimento)
 
 - Classe aggregatrice degli entry sul wizard ticket: [`TicketFormReviewInfolist`](../../../<nome progetto>/app/Filament/Resources/TicketResource/Schemas/TicketFormReviewInfolist.php)
 - Guida operativa modulo: [`filament-summary-infolist-guidance.md`](../../../<nome progetto>/docs/filament-summary-infolist-guidance.md)
 =======
+=======
+>>>>>>> laraxot/dev
 ## Implementazione modulo Fixcity (riferimento)
 
 - Classe aggregatrice degli entry sul wizard ticket: [`TicketFormReviewInfolist`](../../../Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketFormReviewInfolist.php)
 - Guida operativa modulo: [`filament-summary-infolist-guidance.md`](../../../Fixcity/docs/filament-summary-infolist-guidance.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ---
@@ -80,7 +86,11 @@ Text::make(new HtmlString('<p>Informativa privacy...</p>'))
 ```php
 // ❌ Sbagliato
 <<<<<<< HEAD
+<<<<<<< HEAD
 SchemaView::make('<nome progetto>::filament.widgets.partials.ticket-create-wizard-summary')
+=======
+SchemaView::make('fixcity::filament.widgets.partials.ticket-create-wizard-summary')
+>>>>>>> laraxot/dev
 =======
 SchemaView::make('fixcity::filament.widgets.partials.ticket-create-wizard-summary')
 >>>>>>> laraxot/dev

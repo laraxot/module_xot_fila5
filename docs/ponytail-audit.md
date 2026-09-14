@@ -12,7 +12,11 @@ related:
 # Ponytail-audit 2026-07-02: Xot module findings
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://github.com/laraxot/<repo progetto>/issues/100), [#102](https://github.com/laraxot/<repo progetto>/issues/102) and [#111](https://github.com/laraxot/<repo progetto>/issues/111), summarized in discussion [#114](https://github.com/laraxot/<repo progetto>/discussions/114).
+=======
+Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://github.com/laraxot/base_quaeris_fila5/issues/100), [#102](https://github.com/laraxot/base_quaeris_fila5/issues/102) and [#111](https://github.com/laraxot/base_quaeris_fila5/issues/111), summarized in discussion [#114](https://github.com/laraxot/base_quaeris_fila5/discussions/114).
+>>>>>>> laraxot/dev
 =======
 Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://github.com/laraxot/base_quaeris_fila5/issues/100), [#102](https://github.com/laraxot/base_quaeris_fila5/issues/102) and [#111](https://github.com/laraxot/base_quaeris_fila5/issues/111), summarized in discussion [#114](https://github.com/laraxot/base_quaeris_fila5/discussions/114).
 >>>>>>> laraxot/dev
@@ -23,7 +27,11 @@ Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://gith
 - **#102 (yagni):** 19 Contracts in `Modules/Xot/app/Contracts/` (`ProfileContract`, `ModelContract`, `PivotContract`, etc.) each have exactly one concrete Eloquent implementer. Bind directly to the concrete model/trait instead of introducing a contract with no swap-need. ✅ Status: dead contracts removed; remaining contracts (`ExtraContract`, `HasRecursiveRelationshipsContract`, `ModelContract`, `PdfBuilderContract`, `ProfileContract`, `StateContract`, `UserContract`) are actively used in the codebase.
 - **#111 (yagni):** `app/Providers/VoltServiceProvider.php` and `FolioServiceProvider.php` are registered in the base app even though the app is otherwise fully modular via `nwidart/laravel-modules`. Needs confirmation whether Volt/Folio pages actually exist before removing. ✅ Status: providers already removed in previous passes.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **#X9 (delete):** `app/Http/Livewire/XotBaseComponent.php` had zero useful extends and duplicated Livewire's `Component`. ✅ Status: removed in this session; `Modules\<nome progetto>\Http\Livewire\QuestionChart` now extends `Livewire\Component` directly.
+=======
+- **#X9 (delete):** `app/Http/Livewire/XotBaseComponent.php` had zero useful extends and duplicated Livewire's `Component`. ✅ Status: removed in this session; `Modules\Quaeris\Http\Livewire\QuestionChart` now extends `Livewire\Component` directly.
+>>>>>>> laraxot/dev
 =======
 - **#X9 (delete):** `app/Http/Livewire/XotBaseComponent.php` had zero useful extends and duplicated Livewire's `Component`. ✅ Status: removed in this session; `Modules\Quaeris\Http\Livewire\QuestionChart` now extends `Livewire\Component` directly.
 >>>>>>> laraxot/dev
@@ -33,7 +41,11 @@ Source: repo-wide ponytail-audit, published as GitHub issues [#100](https://gith
 Per ponytail YAGNI rung: **add an interface/contract only when there are two concrete consumers that need the same boundary.** A single implementer is a class, not an architecture decision — the interface can always be extracted later when a second implementation actually appears (this is a cheap, mechanical refactor; keeping speculative interfaces around is not free, it adds indirection every reader has to trace through).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This mirrors the same principle already applied to `Modules/<nome progetto>/app/Contracts/FormContract.php` and `MixedQuestionActionContract.php` in the (still unpublished) prior audit pass — see `docs/wiki/ponytail-audit-github-backlog.md` items #5 and #6.
+=======
+This mirrors the same principle already applied to `Modules/Quaeris/app/Contracts/FormContract.php` and `MixedQuestionActionContract.php` in the (still unpublished) prior audit pass — see `docs/wiki/ponytail-audit-github-backlog.md` items #5 and #6.
+>>>>>>> laraxot/dev
 =======
 This mirrors the same principle already applied to `Modules/Quaeris/app/Contracts/FormContract.php` and `MixedQuestionActionContract.php` in the (still unpublished) prior audit pass — see `docs/wiki/ponytail-audit-github-backlog.md` items #5 and #6.
 >>>>>>> laraxot/dev
@@ -42,7 +54,11 @@ This mirrors the same principle already applied to `Modules/Quaeris/app/Contract
 
 - Discussion #114: full 14-item audit summary.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Discussion [#120](https://github.com/laraxot/<repo progetto>/discussions/120): stato globale 2026-07-02 (repo root).
+=======
+- Discussion [#120](https://github.com/laraxot/base_quaeris_fila5/discussions/120): stato globale 2026-07-02 (repo root).
+>>>>>>> laraxot/dev
 =======
 - Discussion [#120](https://github.com/laraxot/base_quaeris_fila5/discussions/120): stato globale 2026-07-02 (repo root).
 >>>>>>> laraxot/dev

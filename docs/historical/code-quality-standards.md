@@ -70,7 +70,11 @@ Xot provides interfaces that define contracts:
 - Should follow Interface Segregation Principle
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance
+=======
+## 🔧 Filament 4 Compliance
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance
 >>>>>>> laraxot/dev
@@ -386,7 +390,11 @@ public function canAccess($user): bool
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Laravel 13 Compliance
+=======
+## 🔧 Laravel 12 Compliance
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Laravel 12 Compliance
 >>>>>>> laraxot/dev
@@ -566,7 +574,11 @@ Xot provides interfaces that define contracts:
 - Should follow Interface Segregation Principle
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance
+=======
+## 🔧 Filament 4 Compliance
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance
 >>>>>>> laraxot/dev
@@ -882,7 +894,11 @@ public function canAccess($user): bool
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Laravel 13 Compliance
+=======
+## 🔧 Laravel 12 Compliance
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Laravel 12 Compliance
 >>>>>>> laraxot/dev

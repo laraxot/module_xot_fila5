@@ -6,7 +6,11 @@ La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 <repo progetto>/
+=======
+base_predict_fila5_mono/
+>>>>>>> laraxot/dev
 =======
 base_predict_fila5_mono/
 >>>>>>> laraxot/dev

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Roadmap Modulo Xot - Completamento e Miglioramenti
 
@@ -350,6 +353,10 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 - Self-healing database migrations.
 - Automatic API documentation generation for all modules.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -473,7 +480,11 @@ EnumTrait          // Enum utilities
 
 ### **Issue #2: UUID Trait Management** ✅ RESOLVED
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Resolution**: Implemented Laravel 13 native UUID with Passport compatibility bridge
+=======
+**Resolution**: Implemented Laravel 12 native UUID with Passport compatibility bridge
+>>>>>>> laraxot/dev
 =======
 **Resolution**: Implemented Laravel 12 native UUID with Passport compatibility bridge
 >>>>>>> laraxot/dev
@@ -684,7 +695,11 @@ done
 ### **UUID Strategy Decision** ✅
 **Date**: 2026-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Decision**: Use Laravel 13 native UUID with Passport compatibility bridge
+=======
+**Decision**: Use Laravel 12 native UUID with Passport compatibility bridge
+>>>>>>> laraxot/dev
 =======
 **Decision**: Use Laravel 12 native UUID with Passport compatibility bridge
 >>>>>>> laraxot/dev
@@ -720,7 +735,11 @@ done
 ## 🎯 MODULE OVERVIEW
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo **Xot** è il cuore architetturale del sistema <nome progetto>, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+=======
+Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+>>>>>>> laraxot/dev
 =======
 Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
 >>>>>>> laraxot/dev
@@ -806,7 +825,11 @@ Xot Module (Core Framework)
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **Filament 5.x**: Compatibilità completa
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
 =======
 - [x] **Filament 4.x**: Compatibilità completa
 >>>>>>> laraxot/dev
@@ -951,7 +974,11 @@ Xot Module (Core Framework)
 - [x] Error handling improvement
 - [x] Code documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] Filament 5.x compatibility
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
 =======
 - [x] Filament 4.x compatibility
 >>>>>>> laraxot/dev
@@ -1011,7 +1038,11 @@ Xot Module (Core Framework)
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **Filament 5.x**: Compatibile ✅
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
 =======
 - [x] **Filament 4.x**: Compatibile ✅
 >>>>>>> laraxot/dev
@@ -1153,7 +1184,11 @@ Xot Module (Core Framework)
 ## 🔗 INTEGRATION POINTS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
 =======
 ### 🎫 Fixcity Module
 >>>>>>> laraxot/dev
@@ -1217,6 +1252,9 @@ Xot Module (Core Framework)
 
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

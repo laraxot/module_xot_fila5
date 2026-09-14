@@ -33,7 +33,11 @@
 ├── Blog/Models/BasePivot.php              ← DUPLICATO
 ├── Blog/Models/BaseMorphPivot.php         ← DUPLICATO
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── <nome progetto>/Models/BasePivot.php           ← DUPLICATO
+=======
+├── Fixcity/Models/BasePivot.php           ← DUPLICATO
+>>>>>>> laraxot/dev
 =======
 ├── Fixcity/Models/BasePivot.php           ← DUPLICATO
 >>>>>>> laraxot/dev
@@ -89,7 +93,11 @@ use Updater;  // Presente in TUTTI
 ```php
 // ❌ VARIA PER MODULO
 <<<<<<< HEAD
+<<<<<<< HEAD
 protected $connection = 'user';    // o 'blog', '<nome progetto>', 'geo', ...
+=======
+protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
+>>>>>>> laraxot/dev
 =======
 protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
 >>>>>>> laraxot/dev

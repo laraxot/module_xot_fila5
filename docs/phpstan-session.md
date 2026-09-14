@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # PHPStan Correzioni - Sessione Novembre 2025
 
@@ -111,7 +114,11 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 ### Regole Fondamentali Applicate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ **DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3**
+=======
+✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
+>>>>>>> laraxot/dev
 =======
 ✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
 >>>>>>> laraxot/dev
@@ -137,6 +144,10 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 **Target**: 0 errori PHPStan
 **Confidenza**: Massima (Supermucca Mode)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -328,6 +339,9 @@ Questa correzione è l'**unico errore** rilevato da PHPStan livello 10 su 1028 f
 **Versione Modulo**: Xot (Laraxot Framework Base)
 **PHPStan**: v2.1+ (Level 10)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

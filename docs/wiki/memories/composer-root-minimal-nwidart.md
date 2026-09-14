@@ -9,9 +9,15 @@ qmd: "Xot composer root skeleton merge-plugin moduli owner vendor unico composer
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/30"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/305"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/304"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/305"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/304"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/305"
 discussions:

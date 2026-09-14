@@ -1,7 +1,11 @@
 # Cache troubleshooting (module Xot)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table '<nome progetto>_data.cache' doesn't exist"
+=======
+Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"
+>>>>>>> laraxot/dev
 =======
 Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"
 >>>>>>> laraxot/dev

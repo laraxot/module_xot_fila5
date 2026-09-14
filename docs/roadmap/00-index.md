@@ -1,7 +1,11 @@
 # Xot Module - Roadmap
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > Motore core Laraxot. Framework Zero-Config per Laravel 13.
+=======
+> Motore core Laraxot. Framework Zero-Config per Laravel 12.
+>>>>>>> laraxot/dev
 =======
 > Motore core Laraxot. Framework Zero-Config per Laravel 12.
 >>>>>>> laraxot/dev

@@ -233,6 +233,7 @@ TextInput::make('address')
 // 2. Deriva chiave traduzione:
 //    - Classe chiamante: CreateTicketWizardWidget
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    - Namespace: <nome progetto>
 //    - Widget name: create_ticket_wizard
 //    - Component type: fields
@@ -245,6 +246,8 @@ TextInput::make('address')
 // 4. Se traduzione non esiste, la crea:
 //    SaveTransAction::save('<nome progetto>::create_ticket_wizard.fields.address.label', 'Indirizzo')
 =======
+=======
+>>>>>>> laraxot/dev
 //    - Namespace: fixcity
 //    - Widget name: create_ticket_wizard
 //    - Component type: fields
@@ -256,6 +259,9 @@ TextInput::make('address')
 
 // 4. Se traduzione non esiste, la crea:
 //    SaveTransAction::save('fixcity::create_ticket_wizard.fields.address.label', 'Indirizzo')
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -305,7 +311,11 @@ TextInput::make('address')  // → LangServiceProvider applica 'Indirizzo'
 
 // ✅ DOPO: cambio label → cambio 1 file (lang)
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Cambio solo <nome progetto>::create_ticket_wizard.fields.address.label
+=======
+// Cambio solo fixcity::create_ticket_wizard.fields.address.label
+>>>>>>> laraxot/dev
 =======
 // Cambio solo fixcity::create_ticket_wizard.fields.address.label
 >>>>>>> laraxot/dev
@@ -415,9 +425,15 @@ grep -r "->label(" laravel/Modules/ --include="*.php"
 grep -r "->placeholder(" laravel/Modules/ --include="*.php"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Cerca solo in <nome progetto>
 grep -r "->label(" laravel/Modules/<nome progetto>/ --include="*.php"
 grep -r "->placeholder(" laravel/Modules/<nome progetto>/ --include="*.php"
+=======
+# Cerca solo in Fixcity
+grep -r "->label(" laravel/Modules/Fixcity/ --include="*.php"
+grep -r "->placeholder(" laravel/Modules/Fixcity/ --include="*.php"
+>>>>>>> laraxot/dev
 =======
 # Cerca solo in Fixcity
 grep -r "->label(" laravel/Modules/Fixcity/ --include="*.php"
@@ -448,7 +464,11 @@ TextInput::make('address')
 ```bash
 # Verifica che traduzioni esistano
 <<<<<<< HEAD
+<<<<<<< HEAD
 cat laravel/Modules/<nome progetto>/resources/lang/it/create_ticket_wizard.php
+=======
+cat laravel/Modules/Fixcity/resources/lang/it/create_ticket_wizard.php
+>>>>>>> laraxot/dev
 =======
 cat laravel/Modules/Fixcity/resources/lang/it/create_ticket_wizard.php
 >>>>>>> laraxot/dev

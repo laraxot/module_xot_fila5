@@ -128,7 +128,11 @@ Xot è la base di **tutto**. L'ordine di priorità nel boot:
 2. `User` (security & identity)
 3. `Cms`, `UI`, `Lang` (infrastructure)
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Domain modules (<nome progetto>, Blog, etc.)
+=======
+4. Domain modules (Fixcity, Blog, etc.)
+>>>>>>> laraxot/dev
 =======
 4. Domain modules (Fixcity, Blog, etc.)
 >>>>>>> laraxot/dev

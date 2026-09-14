@@ -938,7 +938,11 @@ class BlogPostsChartTest extends TestCase
 ## 🎯 Standard 2026: Professional Charts & PDF
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito <nome progetto>/PTVX:
+=======
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
+>>>>>>> laraxot/dev
 =======
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
 >>>>>>> laraxot/dev

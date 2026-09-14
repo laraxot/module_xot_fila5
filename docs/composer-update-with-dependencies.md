@@ -40,7 +40,11 @@ Esito atteso:
 
 - [composer-module-dependency-management](./composer-module-dependency-management.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [parseerror-conflict-marker-amputation](../../<nome progetto>/docs/fixes/parseerror-conflict-marker-amputation.md)
+=======
+- [parseerror-conflict-marker-amputation](../../Quaeris/docs/fixes/parseerror-conflict-marker-amputation.md)
+>>>>>>> laraxot/dev
 =======
 - [parseerror-conflict-marker-amputation](../../Quaeris/docs/fixes/parseerror-conflict-marker-amputation.md)
 >>>>>>> laraxot/dev

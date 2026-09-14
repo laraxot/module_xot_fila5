@@ -6,6 +6,7 @@ created: 2026-06-13
 <<<<<<< HEAD
 updated: 2026-06-13
 qmd: "Xot PHPStan best practices Pest Assert closure mockService rrmdir"
+<<<<<<< HEAD
 updated: 2026-07-22
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade"
 =======
@@ -13,9 +14,14 @@ qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows
 updated: 2026-06-13
 qmd: "Xot PHPStan best practices Pest Assert closure mockService rrmdir"
 =======
+>>>>>>> laraxot/dev
+=======
 updated: 2026-07-22
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade"
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/43"
@@ -123,6 +129,9 @@ if ($tempFile === false) {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ### 7. `expect()->toBe*()` → `method.internalClass` (Pest mixins)
@@ -153,6 +162,9 @@ app()->instance(GetComponentsAction::class, $getComponents);
 `RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -163,6 +175,7 @@ app()->instance(GetComponentsAction::class, $getComponents);
 - [ ] Nessun `static::` in closure Pest (usare `Assert::`)
 <<<<<<< HEAD
 - [ ] Mock con `@phpstan-ignore-next-line` se necessario
+<<<<<<< HEAD
 - [ ] Preferire `Assert::` se `expect()->…` dà `method.internalClass`
 - [ ] Mockery: `allows(['method' => $value])` + `@var Class&MockInterface` (non catene `andReturn` fragili)
 - [ ] Mock con `@phpstan-ignore-next-line` solo se inevitabile
@@ -170,10 +183,15 @@ app()->instance(GetComponentsAction::class, $getComponents);
 <<<<<<< HEAD
 - [ ] Mock con `@phpstan-ignore-next-line` se necessario
 =======
+>>>>>>> laraxot/dev
+=======
 - [ ] Preferire `Assert::` se `expect()->…` dà `method.internalClass`
 - [ ] Mockery: `allows(['method' => $value])` + `@var Class&MockInterface` (non catene `andReturn` fragili)
 - [ ] Mock con `@phpstan-ignore-next-line` solo se inevitabile
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Links
