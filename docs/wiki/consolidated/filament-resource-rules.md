@@ -77,15 +77,12 @@ protected static ?string $model = YourModel::class;
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_O6kCCi
 =======
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_y9Wzd5
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
@@ -94,13 +91,10 @@ public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_O6kCCi
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_y9Wzd5
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -199,15 +193,12 @@ class DoctorResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_O6kCCi
 =======
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
 >>>>>>> .merge_file_y9Wzd5
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
@@ -216,13 +207,10 @@ class DoctorResource extends XotBaseResource
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
 <<<<<<< .merge_file_O6kCCi
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_y9Wzd5
->>>>>>> laraxot/dev
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

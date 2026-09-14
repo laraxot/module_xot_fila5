@@ -79,9 +79,6 @@ class XlsByModelClassAction
 
         // Applichiamo il callback se fornito
         if ($callback !== null) {
-<<<<<<< HEAD
-            $rows = $rows->map($callback);
-=======
             /** @var \Closure(mixed, int): mixed $mapCallback */
             $mapCallback = static function (mixed $item, int $key) use ($callback): mixed {
                 if ($item instanceof Model) {
@@ -103,7 +100,6 @@ class XlsByModelClassAction
                 return $callback($data, $key);
             };
             $rows = $rows->map($mapCallback);
->>>>>>> laraxot/dev
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export

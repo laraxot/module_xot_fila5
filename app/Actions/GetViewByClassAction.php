@@ -26,11 +26,7 @@ class GetViewByClassAction
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
-<<<<<<< HEAD
-        /* @var view-string $viewName */
-=======
         /** @var view-string $viewName */
->>>>>>> laraxot/dev
 
         return ViewFacade::make($viewName, $params);
     }

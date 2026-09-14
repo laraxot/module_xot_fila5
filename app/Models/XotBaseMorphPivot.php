@@ -32,6 +32,7 @@ use function Safe\preg_match;
  */
 abstract class XotBaseMorphPivot extends EloquentMorphPivot
 {
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use Updater;
