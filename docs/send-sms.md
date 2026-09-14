@@ -2,7 +2,10 @@
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -23,6 +26,9 @@ updated: 2026-08-24
 
 https://www.twilio.com/blog/create-database-queue-send-sms-php-laravel-queues-twilio-sms
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

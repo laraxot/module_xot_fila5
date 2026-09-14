@@ -53,10 +53,31 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_uEEMpW
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Ypfr0A
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_uEEMpW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ypfr0A
 >>>>>>> laraxot/dev
 {
     return [
@@ -198,10 +219,31 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_uEEMpW
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Ypfr0A
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_uEEMpW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ypfr0A
 >>>>>>> laraxot/dev
     {
         return [
@@ -386,10 +428,31 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_uEEMpW
+=======
+public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Ypfr0A
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_uEEMpW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ypfr0A
 >>>>>>> laraxot/dev
 {
     return [
@@ -641,10 +704,31 @@ class SocioResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_uEEMpW
+=======
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_Ypfr0A
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_uEEMpW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Ypfr0A
 >>>>>>> laraxot/dev
     {
         return [

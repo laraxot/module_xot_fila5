@@ -1,7 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 module: theme
 topic: uuid
@@ -10,6 +13,10 @@ canonical: ../../../Themes/docs/shared-components/UUID.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/UUID.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -28,6 +35,9 @@ Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

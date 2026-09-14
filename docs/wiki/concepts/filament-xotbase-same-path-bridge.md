@@ -7,9 +7,15 @@ updated: 2026-07-16
 qmd: "XotBase same path bridge Filament abstract boundary"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - https://github.com/laraxot/<repo progetto>/issues/45
 discussions:
   - https://github.com/laraxot/<repo progetto>/discussions/43
+=======
+  - https://github.com/laraxot/base_techplanner_fila5/issues/45
+discussions:
+  - https://github.com/laraxot/base_techplanner_fila5/discussions/43
+>>>>>>> laraxot/dev
 =======
   - https://github.com/laraxot/base_techplanner_fila5/issues/45
 discussions:

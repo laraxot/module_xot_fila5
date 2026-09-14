@@ -1,7 +1,11 @@
 # Risoluzione dei Loghi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 13.x modulare (PHP 8.2+).
+=======
+Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
+>>>>>>> laraxot/dev
 =======
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
 >>>>>>> laraxot/dev

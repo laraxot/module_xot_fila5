@@ -14,7 +14,11 @@ discussions:
 related:
   - ./ai-harness-xot-discipline.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md
+=======
+  - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+>>>>>>> laraxot/dev
 =======
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
 >>>>>>> laraxot/dev
@@ -53,7 +57,11 @@ Negli altri moduli il file **`second-brain-local-discipline.md`** in **`docs/wik
 ## AI harness (HackerNoon Tips 001–022)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Distillato <nome progetto> — **non** copiare i tip nel bootstrap:
+=======
+Distillato Fixcity — **non** copiare i tip nel bootstrap:
+>>>>>>> laraxot/dev
 =======
 Distillato Fixcity — **non** copiare i tip nel bootstrap:
 >>>>>>> laraxot/dev
@@ -71,7 +79,11 @@ Distillato Fixcity — **non** copiare i tip nel bootstrap:
 | Obbedienza | 015/022 | Trigger map + quality-gates + `.cursor/rules/` |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Mappa completa: [hackernoon-ai-coding-tips-<nome progetto>-map.md](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md)  
+=======
+Mappa completa: [hackernoon-ai-coding-tips-fixcity-map.md](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)  
+>>>>>>> laraxot/dev
 =======
 Mappa completa: [hackernoon-ai-coding-tips-fixcity-map.md](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)  
 >>>>>>> laraxot/dev

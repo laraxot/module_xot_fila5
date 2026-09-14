@@ -4,9 +4,12 @@
 <!-- Contenuto migrato da _docs/datatables.txt -->
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # datatables
 
 <!-- Contenuto migrato da _docs/datatables.txt -->
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -21,6 +24,9 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

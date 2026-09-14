@@ -9,7 +9,11 @@ updated: 2026-08-24
 # Integrazione Livewire 4, Volt e Flux UI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Con il passaggio a Laravel 13 e Filament 5, l'integrazione del frontend segue il paradigma "Functional & Component-First".
+=======
+Con il passaggio a Laravel 12 e Filament 5, l'integrazione del frontend segue il paradigma "Functional & Component-First".
+>>>>>>> laraxot/dev
 =======
 Con il passaggio a Laravel 12 e Filament 5, l'integrazione del frontend segue il paradigma "Functional & Component-First".
 >>>>>>> laraxot/dev

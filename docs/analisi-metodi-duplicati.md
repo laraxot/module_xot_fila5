@@ -250,11 +250,18 @@ class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -330,7 +337,11 @@ Se l'unificazione viene implementata correttamente:
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 📖 [Regole Resources Filament](./Filament-5-laraxot-rules.md)
+=======
+- 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
+>>>>>>> laraxot/dev
 =======
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
 >>>>>>> laraxot/dev

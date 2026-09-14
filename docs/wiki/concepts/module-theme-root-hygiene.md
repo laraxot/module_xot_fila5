@@ -26,7 +26,11 @@ Vietato in root: `Main_files/`, `Resources/`, `Config/`, `Helpers/`, …
 | `Config/` se esiste `config/` | eliminare `Config/` |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il nome modulo/tema (`<nome progetto>`, `Sixteen`) in PascalCase **non** è una violazione.
+=======
+Il nome modulo/tema (`WorkOrder`, `Sixteen`) in PascalCase **non** è una violazione.
+>>>>>>> laraxot/dev
 =======
 Il nome modulo/tema (`WorkOrder`, `Sixteen`) in PascalCase **non** è una violazione.
 >>>>>>> laraxot/dev

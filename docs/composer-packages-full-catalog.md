@@ -258,7 +258,11 @@ This document is generated from `composer show --format=json` and represents a f
 | `spatie/laravel-model-status` | `1.19.0` | `yes` | `laravel-extensions` | `shared-runtime` | A package to enable assigning statuses to Eloquent Models |
 | `spatie/laravel-package-tools` | `1.92.7` | `yes` | `laravel-extensions` | `shared-runtime` | Tools for creating Laravel packages |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | `spatie/laravel-permission` | `7.2.0` | `yes` | `laravel-extensions` | `shared-runtime` | Permission handling for Laravel 13 and up |
+=======
+| `spatie/laravel-permission` | `7.2.0` | `yes` | `laravel-extensions` | `shared-runtime` | Permission handling for Laravel 12 and up |
+>>>>>>> laraxot/dev
 =======
 | `spatie/laravel-permission` | `7.2.0` | `yes` | `laravel-extensions` | `shared-runtime` | Permission handling for Laravel 12 and up |
 >>>>>>> laraxot/dev

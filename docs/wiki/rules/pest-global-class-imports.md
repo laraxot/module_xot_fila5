@@ -8,9 +8,15 @@ updated: 2026-06-12
 qmd: "pest tests ReflectionClass non compound use statement warning remove global class import"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/345"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/273"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
 discussions:

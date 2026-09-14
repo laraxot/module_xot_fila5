@@ -4,10 +4,16 @@
 
 <<<<<<< HEAD
 Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
+<<<<<<< HEAD
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
 =======
 <<<<<<< HEAD
 Lo script `bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `bashscripts/ai/.gemini` da vedere dentro ``.
+=======
+Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 Lo script `./bashscripts/ai/ai_init.sh` non crea la junction richiesta per la cartella `./bashscripts/ai/.gemini` da vedere dentro `./`.
 >>>>>>> laraxot/dev
@@ -27,10 +33,16 @@ Dovrebbe creare un symlink nella root del progetto:
 ```
 <<<<<<< HEAD
 .gemini -> bashscripts/ai/.gemini
+<<<<<<< HEAD
 ./.gemini -> ./bashscripts/ai/.gemini
 =======
 <<<<<<< HEAD
 .gemini -> bashscripts/ai/.gemini
+=======
+./.gemini -> ./bashscripts/ai/.gemini
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 ./.gemini -> ./bashscripts/ai/.gemini
 >>>>>>> laraxot/dev
@@ -46,10 +58,16 @@ Lo script cerca una cartella `.gemini` nella root del progetto e crea un symlink
 Lo script deve essere corretto per invertire la logica:
 <<<<<<< HEAD
 - Cercare le cartelle specifiche in `bashscripts/ai/`
+<<<<<<< HEAD
 - Cercare le cartelle specifiche in `bashscripts/ai/` 
 =======
 <<<<<<< HEAD
 - Cercare le cartelle specifiche in `bashscripts/ai/`
+=======
+- Cercare le cartelle specifiche in `bashscripts/ai/` 
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 - Cercare le cartelle specifiche in `bashscripts/ai/` 
 >>>>>>> laraxot/dev
@@ -61,6 +79,7 @@ Lo script deve essere corretto per invertire la logica:
 <<<<<<< HEAD
 - Source: `bashscripts/ai/.gemini`
 - Target symlink: `.gemini`
+<<<<<<< HEAD
 - Source: `./bashscripts/ai/.gemini`
 - Target symlink: `./.gemini`
 =======
@@ -68,7 +87,12 @@ Lo script deve essere corretto per invertire la logica:
 - Source: `bashscripts/ai/.gemini`
 - Target symlink: `.gemini`
 =======
+>>>>>>> laraxot/dev
+=======
 - Source: `./bashscripts/ai/.gemini`
 - Target symlink: `./.gemini`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -28,7 +28,11 @@ must not exist.
 ## 2026-03-12 Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 In `<repo progetto>`, `Modules/Xot/lang/lang/` was present with no unique files, but with multiple divergent duplicates versus `Modules/Xot/lang/`. The canonical source of truth remains `Modules/Xot/lang/`.
+=======
+In `base_predict_fila5`, `Modules/Xot/lang/lang/` was present with no unique files, but with multiple divergent duplicates versus `Modules/Xot/lang/`. The canonical source of truth remains `Modules/Xot/lang/`.
+>>>>>>> laraxot/dev
 =======
 In `base_predict_fila5`, `Modules/Xot/lang/lang/` was present with no unique files, but with multiple divergent duplicates versus `Modules/Xot/lang/`. The canonical source of truth remains `Modules/Xot/lang/`.
 >>>>>>> laraxot/dev

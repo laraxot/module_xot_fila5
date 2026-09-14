@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 module: theme
@@ -10,6 +13,10 @@ canonical: ../../../../Themes/docs/shared-components/RelationX.md
 
 See canonical documentation: ../../../../Themes/docs/shared-components/RelationX.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -82,6 +89,9 @@ Versione estesa di `morphToMany` con le stesse funzionalità di `belongsToManyX`
 ## Utilizzo nei Moduli
 Questo trait è utilizzato nei modelli base di tutti i moduli per standardizzare le relazioni complesse e garantire coerenza nell'accesso ai dati.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

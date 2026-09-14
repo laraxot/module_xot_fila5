@@ -3,7 +3,11 @@
 ## Overview
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 13 + Filament 5 + PHP 8.3).
+=======
+This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 12 + Filament 5 + PHP 8.3).
+>>>>>>> laraxot/dev
 =======
 This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 12 + Filament 5 + PHP 8.3).
 >>>>>>> laraxot/dev
@@ -83,7 +87,11 @@ Brainstorm ideas for "DashboardV3 chart enhancements"
 Focus on:
 - User needs (survey administrators, data analysts)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Technical feasibility (Laravel 13, Filament 5, JPGraph)
+=======
+- Technical feasibility (Laravel 12, Filament 5, JPGraph)
+>>>>>>> laraxot/dev
 =======
 - Technical feasibility (Laravel 12, Filament 5, JPGraph)
 >>>>>>> laraxot/dev
@@ -234,7 +242,11 @@ Requirements:
 
 ## 5. Constraints
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Technical constraints (Laravel 13, Filament 5)
+=======
+- Technical constraints (Laravel 12, Filament 5)
+>>>>>>> laraxot/dev
 =======
 - Technical constraints (Laravel 12, Filament 5)
 >>>>>>> laraxot/dev
@@ -243,7 +255,11 @@ Requirements:
 
 ## 6. Dependencies
 <<<<<<< HEAD
+<<<<<<< HEAD
 - External systems (LimeSurvey, <nome progetto>)
+=======
+- External systems (LimeSurvey, Quaeris)
+>>>>>>> laraxot/dev
 =======
 - External systems (LimeSurvey, Quaeris)
 >>>>>>> laraxot/dev
@@ -350,7 +366,11 @@ Create architecture for "DashboardV3 Custom Charts"
 
 Context:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13 + Filament 5 + PHP 8.3
+=======
+- Laravel 12 + Filament 5 + PHP 8.3
+>>>>>>> laraxot/dev
 =======
 - Laravel 12 + Filament 5 + PHP 8.3
 >>>>>>> laraxot/dev
@@ -360,9 +380,15 @@ Context:
 
 Requirements:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Custom questions in Modules/<nome progetto>/app/Actions/QuestionChart/Custom/
 - DTOs in Modules/Chart/app/Datas/
 - Widgets in Modules/<nome progetto>/app/Filament/Widgets/
+=======
+- Custom questions in Modules/Quaeris/app/Actions/QuestionChart/Custom/
+- DTOs in Modules/Chart/app/Datas/
+- Widgets in Modules/Quaeris/app/Filament/Widgets/
+>>>>>>> laraxot/dev
 =======
 - Custom questions in Modules/Quaeris/app/Actions/QuestionChart/Custom/
 - DTOs in Modules/Chart/app/Datas/
@@ -374,7 +400,11 @@ Constraints:
 - NEVER create Service classes (use Actions)
 - ALWAYS extend XotBase classes
 <<<<<<< HEAD
+<<<<<<< HEAD
 - NEVER cross-database join (<nome progetto>_data vs <nome progetto>_survey)
+=======
+- NEVER cross-database join (quaeris_data vs quaeris_survey)
+>>>>>>> laraxot/dev
 =======
 - NEVER cross-database join (quaeris_data vs quaeris_survey)
 >>>>>>> laraxot/dev
@@ -609,7 +639,11 @@ Why this story matters
 
 ## Technical Notes
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Use Contact::on('<nome progetto>_data') for database connection
+=======
+- Use Contact::on('quaeris_data') for database connection
+>>>>>>> laraxot/dev
 =======
 - Use Contact::on('quaeris_data') for database connection
 >>>>>>> laraxot/dev
@@ -618,9 +652,15 @@ Why this story matters
 
 ## Related Files
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 - `Modules/Chart/app/Datas/ChartData.php`
 - `Modules/<nome progetto>/tests/Feature/MailResponseRateTest.php`
+=======
+- `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
+- `Modules/Chart/app/Datas/ChartData.php`
+- `Modules/Quaeris/tests/Feature/MailResponseRateTest.php`
+>>>>>>> laraxot/dev
 =======
 - `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 - `Modules/Chart/app/Datas/ChartData.php`
@@ -787,7 +827,11 @@ What is the user value?
 
 Each module is a domain:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: Survey analytics, dashboards
+=======
+- **Quaeris**: Survey analytics, dashboards
+>>>>>>> laraxot/dev
 =======
 - **Quaeris**: Survey analytics, dashboards
 >>>>>>> laraxot/dev

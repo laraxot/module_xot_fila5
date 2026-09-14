@@ -29,7 +29,11 @@ anyone still using the numbers below:**
    Costing×1 — fixed, redundant override deleted, `newFactory()` already covered it)
    and 12 models that redundantly `use HasFactory;` (Laravel's own trait) on top of
 <<<<<<< HEAD
+<<<<<<< HEAD
    `XotBaseModel` (<nome progetto>\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+=======
+   `XotBaseModel` (WorkOrder\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+>>>>>>> laraxot/dev
 =======
    `XotBaseModel` (WorkOrder\Profile, Notify\NotificationType, Wts×10 — fixed, removed
 >>>>>>> laraxot/dev

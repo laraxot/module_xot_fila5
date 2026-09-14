@@ -6,6 +6,9 @@ All Filament action methods **MUST** return associative arrays with **string key
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 When configuring actions inside a static `make()` method, the callback **MUST NOT**
@@ -13,6 +16,9 @@ rely on `$this` from the closure scope. Capture the created action instance with
 `use ($action)` and narrow any payload read from `$arguments` / `$data` before
 delegating to typed services or actions.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -151,6 +157,9 @@ When creating or updating Filament pages:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ### Mistake 0: Using `$this` inside `static make()` callbacks
@@ -202,6 +211,9 @@ $modelCopyAction->execute($modelClass, $fieldName, $year);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -306,10 +318,16 @@ Using string keys for Filament actions is **required** for:
 
 <<<<<<< HEAD
 **Always use associative arrays with string keys for all Filament action methods.**
+<<<<<<< HEAD
 **Always use associative arrays with string keys for all Filament action methods.**
 =======
 <<<<<<< HEAD
 **Always use associative arrays with string keys for all Filament action methods.**
+=======
+**Always use associative arrays with string keys for all Filament action methods.**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 **Always use associative arrays with string keys for all Filament action methods.**
 >>>>>>> laraxot/dev

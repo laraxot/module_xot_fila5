@@ -72,6 +72,7 @@ FQCN (o con `getModelClass()`): chiamate da contesti anonimi/closure pure lancia
 `RuntimeException('Unable to resolve caller object...')`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Un resolver scritto a mano **non** e' un'alternativa: e' il difetto
 
 > **Rettifica 2026-09-09.** La prima stesura di questa sezione sosteneva il contrario —
@@ -143,6 +144,8 @@ Sostituzione applicata il 2026-09-09 su tutti e cinque i punti di
 connessione `progressione`; `Ptv\Models\Scheda::ratings()` -> `Ptv\Models\Rating`
 su connessione `ptv`.
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ## Gate

@@ -36,7 +36,11 @@ che risalendo una `BindingResolutionException` del container.
 dei due modelli ordinati alfabeticamente, e da quella ricava tabella, campi e
 connessione. E' usato da `User\BaseUser`, `User\BaseTenant`, `User\BaseTeam` e
 <<<<<<< HEAD
+<<<<<<< HEAD
 `<nome progetto>\Profile`: ogni regressione qui tocca l'autenticazione e la tenancy.
+=======
+`Quaeris\Profile`: ogni regressione qui tocca l'autenticazione e la tenancy.
+>>>>>>> laraxot/dev
 =======
 `Quaeris\Profile`: ogni regressione qui tocca l'autenticazione e la tenancy.
 >>>>>>> laraxot/dev
@@ -99,9 +103,15 @@ Analisi completa: [relationx-trait-analysis.md](../relationx-trait-analysis.md).
 - Il `sort()` alfabetico sui basename e la risalita al parent **non si toccano**:
   sono cio' che rende il trait utile e sono usati dall'ereditarieta' Laraxot
 <<<<<<< HEAD
+<<<<<<< HEAD
   (`<nome progetto>\User` → `User\BaseUser`).
 - Le connessioni attive sul progetto sono almeno quattro (`user`, `<nome progetto>`,
   `<nome progetto>_data`, `limesurvey`): il cross-database non e' un caso di scuola.
+=======
+  (`Quaeris\User` → `User\BaseUser`).
+- Le connessioni attive sul progetto sono almeno quattro (`user`, `quaeris`,
+  `quaeris_data`, `limesurvey`): il cross-database non e' un caso di scuola.
+>>>>>>> laraxot/dev
 =======
   (`Quaeris\User` → `User\BaseUser`).
 - Le connessioni attive sul progetto sono almeno quattro (`user`, `quaeris`,
@@ -132,7 +142,11 @@ _(da compilare in fase di dev-story)_
 ## GitHub (tracciamento)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Repository letto da frontmatter `github.repository` o `git remote -v` (se assente: repo root **`laraxot/<repo progetto>`**): **`laraxot/module_xot_fila5`**.
+=======
+Repository letto da frontmatter `github.repository` o `git remote -v` (se assente: repo root **`laraxot/base_quaeris_fila5`**): **`laraxot/module_xot_fila5`**.
+>>>>>>> laraxot/dev
 =======
 Repository letto da frontmatter `github.repository` o `git remote -v` (se assente: repo root **`laraxot/base_quaeris_fila5`**): **`laraxot/module_xot_fila5`**.
 >>>>>>> laraxot/dev

@@ -7,10 +7,16 @@ description: 'Elenco di 6 riferimenti esterni raccolti per lazy, deduplicati e c
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: lazy.txt
+<<<<<<< HEAD
 converted_from: _lazy.txt
 =======
 <<<<<<< HEAD
 converted_from: lazy.txt
+=======
+converted_from: _lazy.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 converted_from: _lazy.txt
 >>>>>>> laraxot/dev

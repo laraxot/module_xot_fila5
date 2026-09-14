@@ -22,17 +22,23 @@ related:
 Un solo punto di lettura che **aggrega tipi di ripetizioni** osservati nel monorepo (moduli Laraxot + temi Sixteen/TwentyOne) senza ricopiare lunghi estratti tecnici già pubblicati altrove.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Audit documentazione:** 2026-05-21–22. **Audit statico file identici:** vedi baseline in [`byte-identical-files-static-scan.md`](../redundancy/byte-identical-files-static-scan.md); **audit olistico 2026-05-25**: [`audit-profondo-ridondanze-holistic.md`](../redundancy/audit-profondo-ridondanze-holistic.md). **Schede atomiche** (OAuth, widget auth, DTO, Rating, <nome progetto>, scaffold temi): [`redundancy-catalog.md`](./redundancy-catalog.md).
 
 ## Ridondanza byte-identica (checksum), moduli + temi
 
 Pass SHA256 senza interprete AST: sintesi e pattern in **[byte-identical-files-static-scan.md](../redundancy/byte-identical-files-static-scan.md)** — include baseline 2026-05-23 e **riesame 2026-05-25**. Tracker [#89](https://github.com/laraxot/<repo progetto>/issues/89) · [#90](https://github.com/laraxot/<repo progetto>/issues/90).
 =======
+=======
+>>>>>>> laraxot/dev
 **Audit documentazione:** 2026-05-21–22. **Audit statico file identici:** vedi baseline in [`byte-identical-files-static-scan.md`](../redundancy/byte-identical-files-static-scan.md); **audit olistico 2026-05-25**: [`audit-profondo-ridondanze-holistic.md`](../redundancy/audit-profondo-ridondanze-holistic.md). **Schede atomiche** (OAuth, widget auth, DTO, Rating, Fixcity, scaffold temi): [`redundancy-catalog.md`](./redundancy-catalog.md).
 
 ## Ridondanza byte-identica (checksum), moduli + temi
 
 Pass SHA256 senza interprete AST: sintesi e pattern in **[byte-identical-files-static-scan.md](../redundancy/byte-identical-files-static-scan.md)** — include baseline 2026-05-23 e **riesame 2026-05-25**. Tracker [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89) · [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Volumi documentazione moduli (indicativo)
@@ -44,7 +50,11 @@ Pass SHA256 senza interprete AST: sintesi e pattern in **[byte-identical-files-s
 | Notify | 1821 | scaffold + notify |
 | Lang, Geo, Cms, UI | 784–947 | scaffold batch |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | 202 | dominio prodotto |
+=======
+| Fixcity | 202 | dominio prodotto |
+>>>>>>> laraxot/dev
 =======
 | Fixcity | 202 | dominio prodotto |
 >>>>>>> laraxot/dev

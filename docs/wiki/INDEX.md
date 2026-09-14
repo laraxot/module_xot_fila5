@@ -17,7 +17,11 @@ related:
   - ./concepts/second-brain-local-discipline.md
   - ./rules/module-testcase-xotbase-hierarchy.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md
+=======
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+>>>>>>> laraxot/dev
 =======
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
 >>>>>>> laraxot/dev
@@ -48,7 +52,11 @@ Indice operativo del wiki Xot (core framework).
 - [pest-global-class-imports.md](./rules/pest-global-class-imports.md) — nei test senza namespace rimuovere `use ReflectionClass;` e altre import globali inutili
 - [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [hackernoon-ai-coding-tips-<nome progetto>-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md) (root)
+=======
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
+>>>>>>> laraxot/dev
 =======
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
 >>>>>>> laraxot/dev
@@ -71,7 +79,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto <nome progetto> | 2026-06-13 |
+=======
+| [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+>>>>>>> laraxot/dev
 =======
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
 >>>>>>> laraxot/dev
@@ -95,7 +107,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 - Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/<repo progetto>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
 =======
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 >>>>>>> laraxot/dev
@@ -106,7 +122,11 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Bad Practices
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/<repo progetto>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
 =======
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 >>>>>>> laraxot/dev

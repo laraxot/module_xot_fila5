@@ -67,7 +67,11 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
 <<<<<<< HEAD
+<<<<<<< HEAD
 │ - Modules/<nome progetto>/Models/Contact                            │
+=======
+│ - Modules/Quaeris/Models/Contact                            │
+>>>>>>> laraxot/dev
 =======
 │ - Modules/Quaeris/Models/Contact                            │
 >>>>>>> laraxot/dev
@@ -196,7 +200,11 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 **Scopo**:
 - Definire la connection specifica del modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in <nome progetto>)
+=======
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
+>>>>>>> laraxot/dev
 =======
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
 >>>>>>> laraxot/dev
@@ -241,7 +249,11 @@ class Tenant extends BaseModel
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/Models/Contact.php`
+=======
+- `Modules/Quaeris/Models/Contact.php`
+>>>>>>> laraxot/dev
 =======
 - `Modules/Quaeris/Models/Contact.php`
 >>>>>>> laraxot/dev
@@ -361,7 +373,11 @@ public function getConnectionName(): ?string
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Namespace: `Modules\<nome progetto>\Models\*` → Connection: `<nome progetto>`
+=======
+- Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
+>>>>>>> laraxot/dev
 =======
 - Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
 >>>>>>> laraxot/dev
@@ -565,15 +581,21 @@ class ModelHasRole extends BaseMorphPivot
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Esempio 4: BaseModel con Traits Specifici (<nome progetto> Module)
 
 ```php
 namespace Modules\<nome progetto>\Models;
 =======
+=======
+>>>>>>> laraxot/dev
 ### Esempio 4: BaseModel con Traits Specifici (Quaeris Module)
 
 ```php
 namespace Modules\Quaeris\Models;
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 use Modules\Xot\Models\XotBaseModel;
@@ -585,7 +607,11 @@ use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Base Model per <nome progetto> module.
+=======
+ * Base Model per Quaeris module.
+>>>>>>> laraxot/dev
 =======
  * Base Model per Quaeris module.
 >>>>>>> laraxot/dev
@@ -602,7 +628,11 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use InteractsWithMedia;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = '<nome progetto>';
+=======
+    protected $connection = 'quaeris';
+>>>>>>> laraxot/dev
 =======
     protected $connection = 'quaeris';
 >>>>>>> laraxot/dev
@@ -616,7 +646,11 @@ Poi i modelli concreti ereditano tutto:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Models;
+=======
+namespace Modules\Quaeris\Models;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Models;
 >>>>>>> laraxot/dev
@@ -680,7 +714,11 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome progetto>/Models/BaseModel.php
+=======
+// Modules/Quaeris/Models/BaseModel.php
+>>>>>>> laraxot/dev
 =======
 // Modules/Quaeris/Models/BaseModel.php
 >>>>>>> laraxot/dev

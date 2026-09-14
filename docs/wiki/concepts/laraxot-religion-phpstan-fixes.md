@@ -238,7 +238,11 @@ Ogni fix deve includere:
 
 - [[../architecture/laraxot-philosophy]] - Filosofia completa
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [[../../../../../docs/ZEN_OF_<nome progetto>.md]] - Zen di <nome progetto>
+=======
+- [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
+>>>>>>> laraxot/dev
 =======
 - [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
 >>>>>>> laraxot/dev

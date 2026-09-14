@@ -6,7 +6,11 @@
 ## Issue Overview
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The `boost:add-skill` command was failing across the entire <nome progetto> platform due to missing Laravel framework dependencies.
+=======
+The `boost:add-skill` command was failing across the entire FixCity platform due to missing Laravel framework dependencies.
+>>>>>>> laraxot/dev
 =======
 The `boost:add-skill` command was failing across the entire FixCity platform due to missing Laravel framework dependencies.
 >>>>>>> laraxot/dev

@@ -512,7 +512,11 @@ class MyPage extends XotBaseViewRecord
 ## 📎 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Documentation](https://filamentphp.com/docs)
+=======
+- [Filament 4 Documentation](https://filamentphp.com/docs)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Documentation](https://filamentphp.com/docs)
 >>>>>>> laraxot/dev
@@ -1040,7 +1044,11 @@ class MyPage extends XotBaseViewRecord
 ## 📎 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Documentation](https://filamentphp.com/docs)
+=======
+- [Filament 4 Documentation](https://filamentphp.com/docs)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Documentation](https://filamentphp.com/docs)
 >>>>>>> laraxot/dev
@@ -1567,7 +1575,11 @@ class MyPage extends XotBaseViewRecord
 ## 📎 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Documentation](https://filamentphp.com/docs)
+=======
+- [Filament 4 Documentation](https://filamentphp.com/docs)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Documentation](https://filamentphp.com/docs)
 >>>>>>> laraxot/dev

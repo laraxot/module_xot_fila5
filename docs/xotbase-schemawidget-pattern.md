@@ -8,7 +8,11 @@ updated: 2026-07-24
 qmd: "xotbase schemawidget filament 5 HasSchemas formClass getState"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/18"
+=======
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
 >>>>>>> laraxot/dev

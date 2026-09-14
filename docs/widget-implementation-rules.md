@@ -490,7 +490,11 @@ class MyTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev
@@ -550,7 +554,11 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev
@@ -631,7 +639,11 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev

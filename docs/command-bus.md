@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -17,6 +20,9 @@ note: "Convertito da command_bus.txt (documento) da convert-docs-txt-to-md.py."
 <!-- Contenuto migrato da _docs/command_bus.txt -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -27,8 +33,11 @@ What is a command bus and why should you use it?
 https://barryvanveen.nl/blog/49-what-is-a-command-bus-and-why-should-you-use-it
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://laracasts.com/discuss/channels/laravel/the-future-of-the-command-bus. 
 And yes it has been renamed as jobs to differ from artisan command.
@@ -36,6 +45,10 @@ https://twitter.com/taylorotwell/status/569941495127547904
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -44,6 +57,9 @@ And yes it has been renamed as jobs to differ from artisan command.
 https://twitter.com/taylorotwell/status/569941495127547904
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -54,10 +70,16 @@ https://github.com/jildertmiedema/laravel-tactician  on 11 Sep 2020
 
 <<<<<<< HEAD
 https://github.com/broadway/broadway 
+<<<<<<< HEAD
 https://github.com/broadway/broadway
 =======
 <<<<<<< HEAD
 https://github.com/broadway/broadway 
+=======
+https://github.com/broadway/broadway
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 https://github.com/broadway/broadway
 >>>>>>> laraxot/dev

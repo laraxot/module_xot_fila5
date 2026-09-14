@@ -298,7 +298,11 @@ Quando si prendono decisioni su Xot, priorita' basata su:
 |------------|-------------------|--------|
 | All modules use Xot | Architecture audit | Validated |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Laravel 13 compatible | Version check | Validated |
+=======
+| Laravel 12 compatible | Version check | Validated |
+>>>>>>> laraxot/dev
 =======
 | Laravel 12 compatible | Version check | Validated |
 >>>>>>> laraxot/dev

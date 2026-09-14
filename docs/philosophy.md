@@ -38,6 +38,9 @@ While `Xot` does not contain specific business logic, it profoundly influences h
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ## Filament Tables Pattern: XotBaseResourceTable
@@ -105,6 +108,9 @@ All Table classes extending XotBaseResourceTable:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -2,7 +2,11 @@
 id: second-brain-update
 slug: second-brain-update
 <<<<<<< HEAD
+<<<<<<< HEAD
 scope: [project:<repo progetto>]
+=======
+scope: [project:base_workorder_fila5]
+>>>>>>> laraxot/dev
 =======
 scope: [project:base_workorder_fila5]
 >>>>>>> laraxot/dev
@@ -18,7 +22,11 @@ Second brain e docs parzialmente aggiornati.
 
 1. **Doc xot-base-resource-table** ✅ (creata)
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Doc larastan-bug-fix** (in <repo progetto>)
+=======
+2. **Doc larastan-bug-fix** (in base_workorder_fila5)
+>>>>>>> laraxot/dev
 =======
 2. **Doc larastan-bug-fix** (in base_workorder_fila5)
 >>>>>>> laraxot/dev

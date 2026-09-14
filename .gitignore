@@ -154,4 +154,7 @@ phpinsights.php
 rector.php
 .php-cs*.*
 phpmd*.*
+<<<<<<< HEAD
 tests/coverage-*
+=======
+>>>>>>> laraxot/dev

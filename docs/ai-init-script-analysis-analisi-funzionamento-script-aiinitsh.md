@@ -3,7 +3,11 @@
 ## Situazione Attuale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_<nome progetto>_fila5/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+=======
+Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+>>>>>>> laraxot/dev
 =======
 Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
 >>>>>>> laraxot/dev

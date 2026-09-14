@@ -185,7 +185,11 @@ Xot provides Laravel developers with a comprehensive, enterprise-ready foundatio
 
 ### Technology Stack
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Framework**: Laravel 13.x
+=======
+- **Framework**: Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 - **Framework**: Laravel 12.x
 >>>>>>> laraxot/dev

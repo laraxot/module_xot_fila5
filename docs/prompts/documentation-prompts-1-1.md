@@ -75,7 +75,11 @@ Questo documento descrive le regole e le best practices per i prompt di document
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
+=======
+[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
+>>>>>>> laraxot/dev
 =======
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 >>>>>>> laraxot/dev

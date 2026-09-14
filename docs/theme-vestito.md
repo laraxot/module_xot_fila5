@@ -53,8 +53,13 @@ Themes/[ThemeName]/
 │   │   ├── layouts/
 │   │   └── pages/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── _healthcare_app_fila5.code-workspace
 ├── _app_fila5.code-workspace
+=======
+├── _healthcare_app_fila5_mono.code-workspace
+├── _app_fila5_mono.code-workspace
+>>>>>>> laraxot/dev
 =======
 ├── _healthcare_app_fila5_mono.code-workspace
 ├── _app_fila5_mono.code-workspace

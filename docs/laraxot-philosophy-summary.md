@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # Laraxot Philosophy - Complete Summary
 
@@ -164,6 +167,10 @@ composer dump-autoload
 
 **Philosophy Summary**: Laraxot values simplicity, consistency, and predictability above all else. Follow these principles to build maintainable, scalable applications with minimal technical debt.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -359,6 +366,9 @@ Questo documento rappresenta la sintesi delle conoscenze acquisite attraverso:
 **Stato**: Documento Vivo - Aggiornare con nuove scoperte
 **Principio**: La documentazione è la memoria viva del sistema
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

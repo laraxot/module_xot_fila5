@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Standalone Pages vs Resource Pages in Filament 5
+=======
+# Standalone Pages vs Resource Pages in Filament 4
+>>>>>>> laraxot/dev
 =======
 # Standalone Pages vs Resource Pages in Filament 4
 >>>>>>> laraxot/dev
@@ -9,7 +13,11 @@
 ### Il Problema che Risolve
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Filament 5 ha DUE tipi fondamentali di Pages con scopi diversi:
+=======
+Filament 4 ha DUE tipi fondamentali di Pages con scopi diversi:
+>>>>>>> laraxot/dev
 =======
 Filament 4 ha DUE tipi fondamentali di Pages con scopi diversi:
 >>>>>>> laraxot/dev
@@ -407,7 +415,11 @@ test('ListLogActivities has route method', function () {
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Importanza**: CRITICA
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Categoria**: Architettura Filament 5
+=======
+**Categoria**: Architettura Filament 4
+>>>>>>> laraxot/dev
 =======
 **Categoria**: Architettura Filament 4
 >>>>>>> laraxot/dev

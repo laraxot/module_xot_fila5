@@ -27,7 +27,11 @@
 | agent-o | Bom | 7 | 20 | TODO |
 | agent-p | Cms (test) | 7 | 21 | TODO |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | agent-q | <nome progetto> | 6 | 22 | TODO |
+=======
+| agent-q | WorkOrder | 6 | 22 | TODO |
+>>>>>>> laraxot/dev
 =======
 | agent-q | WorkOrder | 6 | 22 | TODO |
 >>>>>>> laraxot/dev

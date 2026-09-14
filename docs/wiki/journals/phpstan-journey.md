@@ -42,7 +42,11 @@ updated: 2026-08-24
 | 7 | **Geo** | 0 | 0 | 9-10 | ✨ Già Puro |
 | 8 | **Job** | 2 | 0 | 10 | ✨ Illuminato |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | 9 | **<nome progetto>** | 13 | 0 | 10 | ✨ Illuminato |
+=======
+| 9 | **Quaeris** | 13 | 0 | 10 | ✨ Illuminato |
+>>>>>>> laraxot/dev
 =======
 | 9 | **Quaeris** | 13 | 0 | 10 | ✨ Illuminato |
 >>>>>>> laraxot/dev
@@ -97,7 +101,11 @@ Codice perfetto
 
 ### 1️⃣ Semantic Keys (Il Nome delle Cose)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Moduli**: Cms, <nome progetto>
+=======
+**Moduli**: Cms, Quaeris
+>>>>>>> laraxot/dev
 =======
 **Moduli**: Cms, Quaeris
 >>>>>>> laraxot/dev
@@ -134,7 +142,11 @@ if (is_array($value)) { /* ... */ }  // Dopo filter che garantisce array
 
 ### 3️⃣ Cascading Purity (L'Effetto Farfalla)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo**: <nome progetto>
+=======
+**Modulo**: Quaeris
+>>>>>>> laraxot/dev
 =======
 **Modulo**: Quaeris
 >>>>>>> laraxot/dev
@@ -251,7 +263,11 @@ Level 10 → 🏔️ Nirvana
             │ Zero tolleranza
             │ Perfezione assoluta
 <<<<<<< HEAD
+<<<<<<< HEAD
             └─ Job, <nome progetto>
+=======
+            └─ Job, Quaeris
+>>>>>>> laraxot/dev
 =======
             └─ Job, Quaeris
 >>>>>>> laraxot/dev
@@ -280,7 +296,11 @@ Level 0  → 🏕️  Campo Base
    - Best practices Level 10
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **`Modules/<nome progetto>/docs/phpstan-enlightenment.md`**
+=======
+2. **`Modules/Quaeris/docs/phpstan-enlightenment.md`**
+>>>>>>> laraxot/dev
 =======
 2. **`Modules/Quaeris/docs/phpstan-enlightenment.md`**
 >>>>>>> laraxot/dev
@@ -313,11 +333,18 @@ Level 0  → 🏕️  Campo Base
 ```php
 // 1. Form Schema con Semantic Keys
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev

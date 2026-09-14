@@ -40,7 +40,11 @@ PHPStan bootstraps the Laravel application before analysis. If any discovered fi
 ## Detection Command
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/<repo progetto>/laravel
+=======
+cd /var/www/_bases/base_fixcity_fila5/laravel
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_fixcity_fila5/laravel
 >>>>>>> laraxot/dev

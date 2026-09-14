@@ -135,8 +135,13 @@ TextInput::make('address')
 1. `AutoLabelAction` inspects call stack via `debug_backtrace()`
 2. Trova la classe chiamante (es. `CreateTicketWizardWidget`)
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Deriva chiave traduzione: `<nome progetto>::create_ticket_wizard`
 4. Costruisce label key: `<nome progetto>::create_ticket_wizard.fields.address.label`
+=======
+3. Deriva chiave traduzione: `fixcity::create_ticket_wizard`
+4. Costruisce label key: `fixcity::create_ticket_wizard.fields.address.label`
+>>>>>>> laraxot/dev
 =======
 3. Deriva chiave traduzione: `fixcity::create_ticket_wizard`
 4. Costruisce label key: `fixcity::create_ticket_wizard.fields.address.label`
@@ -296,7 +301,11 @@ Utente → Wizard Step 1 → Step 2 → Step 3 → Submit
 - [LangServiceProvider](../../../../Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](../../../../Lang/app/Actions/Filament/AutoLabelAction.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [CreateTicketWizardWidget Example](../../../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php)
+=======
+- [CreateTicketWizardWidget Example](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
+>>>>>>> laraxot/dev
 =======
 - [CreateTicketWizardWidget Example](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
 >>>>>>> laraxot/dev

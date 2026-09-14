@@ -13,7 +13,11 @@ composer require -W laravel/framework:^13
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 13. This is a root-level dependency conflict, not a Laravel 13 framework issue.
+=======
+failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 12. This is a root-level dependency conflict, not a Laravel 13 framework issue.
+>>>>>>> laraxot/dev
 =======
 failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 12. This is a root-level dependency conflict, not a Laravel 13 framework issue.
 >>>>>>> laraxot/dev

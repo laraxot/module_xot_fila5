@@ -107,7 +107,11 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 ### Regole Fondamentali Applicate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ **DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3**
+=======
+✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
+>>>>>>> laraxot/dev
 =======
 ✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
 >>>>>>> laraxot/dev

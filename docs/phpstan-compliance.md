@@ -28,7 +28,11 @@ The Xot module is fully compliant with PHPStan level 9 analysis, demonstrating:
 - ✅ Proper null handling
 - ✅ Correct array structure definitions
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Filament 5.x compatibility
+=======
+- ✅ Filament 4.x compatibility
+>>>>>>> laraxot/dev
 =======
 - ✅ Filament 4.x compatibility
 >>>>>>> laraxot/dev
@@ -66,7 +70,11 @@ This is the core module providing foundational functionality including:
 - **AddStrictTypesDeclarationCommand**: Type declaration automation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5.x Compatibility
+=======
+## Filament 4.x Compatibility
+>>>>>>> laraxot/dev
 =======
 ## Filament 4.x Compatibility
 >>>>>>> laraxot/dev

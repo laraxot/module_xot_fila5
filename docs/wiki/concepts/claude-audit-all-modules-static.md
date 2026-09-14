@@ -7,9 +7,15 @@ updated: 2026-07-09
 qmd: "claude-audit static tutti moduli 80/100 max-files 2000 boost audit-coverage"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/704"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/705"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/704"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/705"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/704"
 discussions:
@@ -44,7 +50,11 @@ bash bashscripts/tools/run-claude-audit-all-modules-static.sh
 
 # Boost: bridge PHPUnit + doc-ratio + rm vendor/node_modules locale
 <<<<<<< HEAD
+<<<<<<< HEAD
 bash bashscripts/tools/claude-audit-module-static-boost.sh <nome progetto>
+=======
+bash bashscripts/tools/claude-audit-module-static-boost.sh Fixcity
+>>>>>>> laraxot/dev
 =======
 bash bashscripts/tools/claude-audit-module-static-boost.sh Fixcity
 >>>>>>> laraxot/dev
@@ -76,7 +86,11 @@ Activity, Comment, Gdpr, Rating, Seo, Tenant.
 ## Moduli con debito strutturale (serve story dedicata)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto>, Geo, User, Xot, Blog, UI — large lang, deep nesting, legacy JS/Services.
+=======
+Fixcity, Geo, User, Xot, Blog, UI — large lang, deep nesting, legacy JS/Services.
+>>>>>>> laraxot/dev
 =======
 Fixcity, Geo, User, Xot, Blog, UI — large lang, deep nesting, legacy JS/Services.
 >>>>>>> laraxot/dev

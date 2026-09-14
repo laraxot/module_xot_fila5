@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida alla Migrazione Filament 5
 
 ## Cambiamenti Principali da Filament 3 a Filament 5
+=======
+# Guida alla Migrazione Filament 4
+
+## Cambiamenti Principali da Filament 3 a Filament 4
+>>>>>>> laraxot/dev
 =======
 # Guida alla Migrazione Filament 4
 
@@ -24,7 +30,11 @@ public function form(Schema $schema): Schema
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **DOPO (Filament 5):**
+=======
+**DOPO (Filament 4):**
+>>>>>>> laraxot/dev
 =======
 **DOPO (Filament 4):**
 >>>>>>> laraxot/dev
@@ -50,7 +60,11 @@ $schema->model($model)
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **DOPO (Filament 5):**
+=======
+**DOPO (Filament 4):**
+>>>>>>> laraxot/dev
 =======
 **DOPO (Filament 4):**
 >>>>>>> laraxot/dev
@@ -78,7 +92,11 @@ class MyWidget extends Widget
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **DOPO (Filament 5):**
+=======
+**DOPO (Filament 4):**
+>>>>>>> laraxot/dev
 =======
 **DOPO (Filament 4):**
 >>>>>>> laraxot/dev
@@ -110,7 +128,11 @@ public static function form(Schema $schema): Schema
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **DOPO (Filament 5):**
+=======
+**DOPO (Filament 4):**
+>>>>>>> laraxot/dev
 =======
 **DOPO (Filament 4):**
 >>>>>>> laraxot/dev
@@ -132,7 +154,11 @@ public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\S
 use Filament\Schemas\Schema;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // DOPO (Filament 5)
+=======
+// DOPO (Filament 4)
+>>>>>>> laraxot/dev
 =======
 // DOPO (Filament 4)
 >>>>>>> laraxot/dev
@@ -153,7 +179,11 @@ public function form(Schema $schema): Schema
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // DOPO (Filament 5)
+=======
+// DOPO (Filament 4)
+>>>>>>> laraxot/dev
 =======
 // DOPO (Filament 4)
 >>>>>>> laraxot/dev
@@ -182,7 +212,11 @@ public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Filament 5 Forms](https://filamentphp.com/docs/4.x/components/form)
+=======
+- [Documentazione Filament 4 Forms](https://filamentphp.com/docs/4.x/components/form)
+>>>>>>> laraxot/dev
 =======
 - [Documentazione Filament 4 Forms](https://filamentphp.com/docs/4.x/components/form)
 >>>>>>> laraxot/dev

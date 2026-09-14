@@ -385,7 +385,11 @@ foreach ($properties as $property) {
 **Soluzione**: Rinominato in `$filterData` e rimosso il trait
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File**: `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+=======
+**File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> laraxot/dev
 =======
 **File**: `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev
@@ -517,15 +521,22 @@ class MyPage extends XotBaseViewRecord
 ## 📎 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Documentation](https://filamentphp.com/docs)
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
 - `/Modules/<nome progetto>/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 =======
+=======
+>>>>>>> laraxot/dev
 - [Filament 4 Documentation](https://filamentphp.com/docs)
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`
+<<<<<<< HEAD
+- `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
+>>>>>>> laraxot/dev
+=======
 - `/Modules/Quaeris/docs/PROPERTY_CONFLICT_RESOLUTION_FILAMENT_TRAITS.md`
 >>>>>>> laraxot/dev

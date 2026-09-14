@@ -3,7 +3,11 @@
 **Ultimo aggiornamento**: 2025-01-10
 **Principi**: DRY + KISS + SOLID + Robust
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot
+=======
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
+>>>>>>> laraxot/dev
 =======
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 >>>>>>> laraxot/dev
@@ -119,7 +123,11 @@ Workflow per la sincronizzazione dei subtree e repository remoti.
 
 **Gestione Repository Privati (Bashscripts):**
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila5`.
+=======
+Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
+>>>>>>> laraxot/dev
 =======
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
 >>>>>>> laraxot/dev
@@ -130,7 +138,11 @@ Questo ci permette di usare il `GITHUB_TOKEN` standard invece di dover gestire u
         uses: actions/checkout@v4
         with:
 <<<<<<< HEAD
+<<<<<<< HEAD
           repository: provtv/bashscripts_fila5
+=======
+          repository: provtv/bashscripts_fila4
+>>>>>>> laraxot/dev
 =======
           repository: provtv/bashscripts_fila4
 >>>>>>> laraxot/dev

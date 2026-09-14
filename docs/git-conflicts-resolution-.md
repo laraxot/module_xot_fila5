@@ -115,10 +115,13 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 
 **Modifiche Applicate**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 ```
@@ -126,6 +129,9 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```php
 // VERSIONE CORRETTA
@@ -318,11 +324,14 @@ php artisan lang:check
 **Autore**: Sistema di correzione automatica
 <<<<<<< HEAD
 **Stato**: ✅ Completato
+<<<<<<< HEAD
 **Stato**: ✅ Completato
 **Stato**: ✅ Completato
 =======
 <<<<<<< HEAD
 **Stato**: ✅ Completato
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 **Stato**: ✅ Completato
@@ -330,4 +339,7 @@ php artisan lang:check
 **Stato**: ✅ Completato
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -30,7 +30,11 @@
 ## 🏗 Module-Specific Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **[<nome progetto> Module](../../<nome progetto>/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+=======
+- **[Fixcity Module](../../Fixcity/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+>>>>>>> laraxot/dev
 =======
 - **[Fixcity Module](../../Fixcity/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
 >>>>>>> laraxot/dev

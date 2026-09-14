@@ -17,7 +17,11 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
         "-y",
         "@modelcontextprotocol/server-mysql",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "marco:marco@localhost:3306/<nome progetto>_survey"
+=======
+        "marco:marco@localhost:3306/quaeris_survey"
+>>>>>>> laraxot/dev
 =======
         "marco:marco@localhost:3306/quaeris_survey"
 >>>>>>> laraxot/dev

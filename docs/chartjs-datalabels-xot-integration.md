@@ -922,7 +922,11 @@ class ExampleChartWidget extends XotBaseChartWidget
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **`Modules/<nome progetto>/Filament/Widgets/SimpleChartWidget.php`**
+=======
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> laraxot/dev
 =======
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
 >>>>>>> laraxot/dev

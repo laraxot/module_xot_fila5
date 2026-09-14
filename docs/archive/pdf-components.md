@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Componenti PDF Riutilizzabili
@@ -88,7 +91,11 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
         line-height: 1.3;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
 =======
     
 >>>>>>> laraxot/dev
@@ -101,7 +108,11 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 <page backtop="20mm" backbottom="10mm" backleft="15mm" backright="15mm">
     @include('xot::pdf.css')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
 =======
     
 >>>>>>> laraxot/dev
@@ -116,6 +127,7 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 <page backtop="20mm" backbottom="10mm" backleft="15mm" backright="15mm">
     @include('xot::pdf.css')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <page_header>
         {{-- Header standardizzato --}}
@@ -126,6 +138,8 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
     </page_footer>
 
 =======
+=======
+>>>>>>> laraxot/dev
     
     <page_header>
         {{-- Header standardizzato --}}
@@ -135,6 +149,9 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
         {{-- Footer standardizzato --}}
     </page_footer>
     
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     {{-- Contenuto specifico del PDF --}}
 </page>
@@ -146,7 +163,11 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
     @include('xot::pdf.css')
     @include('xot::pdf.medical-styles')
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
 =======
     
 >>>>>>> laraxot/dev
@@ -181,7 +202,11 @@ Il componente è stato estratto dal template `report_pdf.blade.php` del tema One
 - [Documentazione Componenti](../componenti_personalizzati.md)
 - [Best Practices Filament](../filament-best-practices.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [README Principale](../readme.md)
+=======
+- [README Principale](../README.md)
+>>>>>>> laraxot/dev
 =======
 - [README Principale](../README.md)
 >>>>>>> laraxot/dev
@@ -196,7 +221,11 @@ Quando si aggiungono nuovi stili CSS per PDF:
 4. **Testare**: Verificare che i PDF generati abbiano l'aspetto corretto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Dicembre 2024
+=======
+**Ultimo aggiornamento**: Dicembre 2024 
+>>>>>>> laraxot/dev
 =======
 **Ultimo aggiornamento**: Dicembre 2024 
 >>>>>>> laraxot/dev

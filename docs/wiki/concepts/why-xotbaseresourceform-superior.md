@@ -35,11 +35,18 @@ class DepartmentForm {
 // TicketForm.php (Our Pattern)
 class TicketForm extends XotBaseResourceForm {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array {
     public function getFormSchema(): array {
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array {
+=======
+    public function getFormSchema(): array {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
 >>>>>>> laraxot/dev
@@ -60,7 +67,11 @@ class TicketForm extends XotBaseResourceForm {
 
 ### 1. LangServiceProvider Integration (NO `->label()`)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - All translations centralized in `<nome progetto>::segnalazione.*` language files
+=======
+- All translations centralized in `fixcity::segnalazione.*` language files
+>>>>>>> laraxot/dev
 =======
 - All translations centralized in `fixcity::segnalazione.*` language files
 >>>>>>> laraxot/dev
@@ -72,7 +83,11 @@ class TicketForm extends XotBaseResourceForm {
 - `getSteps()` returns `array<int, Step>`
 - `getStepByName()` dynamically resolves steps via `Str::of()` transformation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Lang keys auto-generated: `<nome progetto>::ticket-resource.steps.privacy.label`
+=======
+- Lang keys auto-generated: `fixcity::ticket-resource.steps.privacy.label`
+>>>>>>> laraxot/dev
 =======
 - Lang keys auto-generated: `fixcity::ticket-resource.steps.privacy.label`
 >>>>>>> laraxot/dev
@@ -112,8 +127,13 @@ public static function getSummarySchema(): array {
 ### 5. SafeStringCastAction for Translation Casting
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 Section::make(SafeStringCastAction::cast(__('<nome progetto>::segnalazione.fields.place.section.label')))
     ->description(SafeStringCastAction::cast(__('<nome progetto>::segnalazione.sections.place.description')))
+=======
+Section::make(SafeStringCastAction::cast(__('fixcity::segnalazione.fields.place.section.label')))
+    ->description(SafeStringCastAction::cast(__('fixcity::segnalazione.sections.place.description')))
+>>>>>>> laraxot/dev
 =======
 Section::make(SafeStringCastAction::cast(__('fixcity::segnalazione.fields.place.section.label')))
     ->description(SafeStringCastAction::cast(__('fixcity::segnalazione.sections.place.description')))

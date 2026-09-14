@@ -129,8 +129,13 @@ class ActiveUsersWidget extends XotBaseWidget
 
 Questa funzionalità è compatibile con:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Filament 5.x
 - Laravel 13.x
+=======
+- Filament 4.x
+- Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 - Filament 4.x
 - Laravel 12.x

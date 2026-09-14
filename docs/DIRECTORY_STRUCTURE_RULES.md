@@ -69,7 +69,11 @@ find laravel/Modules -path "*/lang/lang" -type d
 ## Reference Projects
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/lang/`
+=======
+- `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
+>>>>>>> laraxot/dev
 =======
 - `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
 >>>>>>> laraxot/dev

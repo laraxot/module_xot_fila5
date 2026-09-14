@@ -37,7 +37,11 @@ class CustomerPanelProvider extends XotBasePanelProvider
     {
         return parent::panel($panel)
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->resources([<nome progetto>Resource::class, InvoiceResource::class])
+=======
+            ->resources([WorkOrderResource::class, InvoiceResource::class])
+>>>>>>> laraxot/dev
 =======
             ->resources([WorkOrderResource::class, InvoiceResource::class])
 >>>>>>> laraxot/dev

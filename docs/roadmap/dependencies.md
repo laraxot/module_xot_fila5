@@ -175,7 +175,11 @@ Xot (Foundation)
 - **Tenant**: Extends XotBaseModel
 - **UI**: Extends XotBaseModel
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: Extends XotBaseModel
+=======
+- **Fixcity**: Extends XotBaseModel
+>>>>>>> laraxot/dev
 =======
 - **Fixcity**: Extends XotBaseModel
 >>>>>>> laraxot/dev
@@ -192,8 +196,13 @@ Xot (Foundation)
 - **User → Notify**: User notifications
 - **Cms → Media**: CMS media
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto> → Geo**: Location data
 - **<nome progetto> → Rating**: Rating system
+=======
+- **Fixcity → Geo**: Location data
+- **Fixcity → Rating**: Rating system
+>>>>>>> laraxot/dev
 =======
 - **Fixcity → Geo**: Location data
 - **Fixcity → Rating**: Rating system
@@ -322,8 +331,13 @@ Xot (Foundation)
 #### Known Conflicts
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filament 5 vs 5**:
 - **Issue**: Some packages only support Filament 5
+=======
+**Filament 4 vs 5**:
+- **Issue**: Some packages only support Filament 4
+>>>>>>> laraxot/dev
 =======
 **Filament 4 vs 5**:
 - **Issue**: Some packages only support Filament 4
@@ -337,8 +351,13 @@ Xot (Foundation)
 - **Status**: Resolved
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Laravel 13 Compatibility**:
 - **Issue**: Some packages not yet compatible with Laravel 13
+=======
+**Laravel 12 Compatibility**:
+- **Issue**: Some packages not yet compatible with Laravel 12
+>>>>>>> laraxot/dev
 =======
 **Laravel 12 Compatibility**:
 - **Issue**: Some packages not yet compatible with Laravel 12

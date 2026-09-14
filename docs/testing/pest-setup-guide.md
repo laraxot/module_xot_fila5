@@ -7,7 +7,11 @@ This guide documents how to run Pest tests from the `laravel/` directory and ach
 ## Key Resources Studied
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+=======
+- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+>>>>>>> laraxot/dev
 =======
 - [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 >>>>>>> laraxot/dev

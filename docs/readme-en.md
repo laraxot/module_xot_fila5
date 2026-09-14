@@ -2,7 +2,11 @@
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
+=======
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+>>>>>>> laraxot/dev
 =======
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
 >>>>>>> laraxot/dev
@@ -13,7 +17,11 @@
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![<nome progetto> Platform](https://img.shields.io/badge/Platform-<nome progetto>-008758.svg)](#)
+=======
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+>>>>>>> laraxot/dev
 =======
 [![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 >>>>>>> laraxot/dev
@@ -25,7 +33,11 @@
 ## Why it exists
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 No <nome progetto> without Xot: internal framework preventing duplication and architectural drift.
+=======
+No FixCity without Xot: internal framework preventing duplication and architectural drift.
+>>>>>>> laraxot/dev
 =======
 No FixCity without Xot: internal framework preventing duplication and architectural drift.
 >>>>>>> laraxot/dev
@@ -66,7 +78,11 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Module** `xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+**Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> laraxot/dev
 =======
 **Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> laraxot/dev

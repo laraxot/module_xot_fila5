@@ -1,9 +1,15 @@
 ---
 id: phpstan-quality-gate-001
 <<<<<<< HEAD
+<<<<<<< HEAD
 slug: phpstan-base-<nome progetto>-fila5
 scope:
   - project:<repo progetto>
+=======
+slug: phpstan-base-workorder-fila5
+scope:
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
 =======
 slug: phpstan-base-workorder-fila5
 scope:
@@ -15,8 +21,13 @@ epic: Quality Gates
 priority: Critical
 related:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - /var/www/_bases/<repo progetto>/laravel/phpstan.neon
   - /var/www/_bases/<repo progetto>/laravel/composer.json
+=======
+  - /var/www/_bases/base_workorder_fila5/laravel/phpstan.neon
+  - /var/www/_bases/base_workorder_fila5/laravel/composer.json
+>>>>>>> laraxot/dev
 =======
   - /var/www/_bases/base_workorder_fila5/laravel/phpstan.neon
   - /var/www/_bases/base_workorder_fila5/laravel/composer.json
@@ -27,7 +38,11 @@ created: 2026-09-06
 ## Problema
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPStan analysis su <repo progetto> restituisce **1000+ errori** a level max.
+=======
+PHPStan analysis su base_workorder_fila5 restituisce **1000+ errori** a level max.
+>>>>>>> laraxot/dev
 =======
 PHPStan analysis su base_workorder_fila5 restituisce **1000+ errori** a level max.
 >>>>>>> laraxot/dev

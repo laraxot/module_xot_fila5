@@ -1,12 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 How To Integrate Paypal Payment Gateway In Laravel 8
 https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel-8
 
 ----------------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -31,6 +38,9 @@ https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-la
 
 ----------------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

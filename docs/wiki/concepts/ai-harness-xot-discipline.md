@@ -14,7 +14,11 @@ related:
   - ./second-brain-local-discipline.md
   - ./xot-architecture-guardrails.md
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md
+=======
+  - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+>>>>>>> laraxot/dev
 =======
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
 >>>>>>> laraxot/dev
@@ -29,7 +33,11 @@ Xot è **owner** del contratto second-brain locale per tutti i moduli Laraxot.
 
 - [second-brain-local-discipline.md](./second-brain-local-discipline.md) — stub negli altri moduli puntano qui
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [mappa HackerNoon root](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md)
+=======
+- [mappa HackerNoon root](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+>>>>>>> laraxot/dev
 =======
 - [mappa HackerNoon root](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
 >>>>>>> laraxot/dev

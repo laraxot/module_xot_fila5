@@ -118,7 +118,11 @@ EnumTrait          // Enum utilities
 
 ### **Issue #2: UUID Trait Management** ✅ RESOLVED
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Resolution**: Implemented Laravel 13 native UUID with Passport compatibility bridge
+=======
+**Resolution**: Implemented Laravel 12 native UUID with Passport compatibility bridge
+>>>>>>> laraxot/dev
 =======
 **Resolution**: Implemented Laravel 12 native UUID with Passport compatibility bridge
 >>>>>>> laraxot/dev
@@ -210,15 +214,21 @@ done
 - Backward compatibility guaranteed
 - <nome progetto>able behavior everywhere
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Predictable behavior everywhere
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - Predictable behavior everywhere
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 #### **2. Water (Adaptability)**
@@ -340,7 +350,11 @@ done
 ### **UUID Strategy Decision** ✅
 **Date**: 2026-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Decision**: Use Laravel 13 native UUID with Passport compatibility bridge
+=======
+**Decision**: Use Laravel 12 native UUID with Passport compatibility bridge
+>>>>>>> laraxot/dev
 =======
 **Decision**: Use Laravel 12 native UUID with Passport compatibility bridge
 >>>>>>> laraxot/dev
@@ -370,15 +384,21 @@ done
 **Priority**: CRITICAL
 **PHPStan**: ✅ Level 10 (0 errori)
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 9 (0 errori)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 **PHPStan**: ✅ Level 9 (0 errori)
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 **Filament**: ✅ 4.x Compatibile
 
@@ -387,7 +407,11 @@ done
 ## 🎯 MODULE OVERVIEW
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo **Xot** è il cuore architetturale del sistema <nome progetto>, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+=======
+Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+>>>>>>> laraxot/dev
 =======
 Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
 >>>>>>> laraxot/dev
@@ -473,10 +497,13 @@ Xot Module (Core Framework)
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori
 - [x] **Filament 5.x**: Compatibilità completa
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori
@@ -484,6 +511,9 @@ Xot Module (Core Framework)
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibilità completa
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -564,15 +594,21 @@ Xot Module (Core Framework)
 - [ ] **Smart Caching** (Priority: MEDIUM)
   - [ ] ML-based cache <nome progetto>ion
 <<<<<<< HEAD
+<<<<<<< HEAD
   - [ ] ML-based cache prediction
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
   - [ ] ML-based cache prediction
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
   - [ ] Intelligent cache invalidation
   - [ ] Adaptive cache strategies
@@ -581,10 +617,13 @@ Xot Module (Core Framework)
 - [ ] **<nome progetto>ive Services** (Priority: MEDIUM)
   - [ ] Load <nome progetto>ion
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] **Predictive Services** (Priority: MEDIUM)
   - [ ] Load prediction
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [ ] **Predictive Services** (Priority: MEDIUM)
@@ -592,6 +631,9 @@ Xot Module (Core Framework)
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
   - [ ] Resource optimization
   - [ ] Performance forecasting
@@ -607,15 +649,21 @@ Xot Module (Core Framework)
 - [ ] AI caching working
 - [ ] <nome progetto>ive services active
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Predictive services active
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [ ] Predictive services active
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [ ] Automated optimization functional
 - [ ] Performance improved by 30%
@@ -658,6 +706,7 @@ Xot Module (Core Framework)
 #### ✅ Completed
 - [x] PHPStan Level 10 compliance
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] PHPStan Level 9 compliance
 - [x] Type safety implementation
 - [x] Error handling improvement
@@ -665,6 +714,8 @@ Xot Module (Core Framework)
 - [x] Filament 5.x compatibility
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [x] PHPStan Level 9 compliance
@@ -675,6 +726,9 @@ Xot Module (Core Framework)
 - [x] Error handling improvement
 - [x] Code documentation
 - [x] Filament 4.x compatibility
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 #### 🚧 In Progress
@@ -732,10 +786,13 @@ Xot Module (Core Framework)
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori ✅
 - [x] **Filament 5.x**: Compatibile ✅
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori ✅
@@ -743,6 +800,9 @@ Xot Module (Core Framework)
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibile ✅
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [ ] **Test Coverage**: 90% (target)
 - [ ] **Response Time**: < 50ms
@@ -797,15 +857,21 @@ Xot Module (Core Framework)
 - [ ] Smart caching implementation
 - [ ] <nome progetto>ive services
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Predictive services
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [ ] Predictive services
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 #### May 2025
@@ -893,7 +959,11 @@ Xot Module (Core Framework)
 ## 🔗 INTEGRATION POINTS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
 =======
 ### 🎫 Fixcity Module
 >>>>>>> laraxot/dev
@@ -936,15 +1006,21 @@ Xot Module (Core Framework)
 - **Testing**: Pest/PHPUnit
 - **Code Quality**: PHPStan Level 10
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Code Quality**: PHPStan Level 9
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - **Code Quality**: PHPStan Level 9
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - **Performance**: Blackfire, New Relic
 - **Monitoring**: Grafana, Prometheus
@@ -961,11 +1037,14 @@ Xot Module (Core Framework)
 
 <<<<<<< HEAD
 **
+<<<<<<< HEAD
 **Last Updated**: 2025-10-01
 **
 =======
 <<<<<<< HEAD
 **
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 **Last Updated**: 2025-10-01
@@ -973,6 +1052,9 @@ Xot Module (Core Framework)
 **
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 **Next Review**: 2025-11-01
 **Status**: 🚧 ACTIVE DEVELOPMENT
@@ -982,11 +1064,14 @@ Xot Module (Core Framework)
 
 <<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 =======
 <<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
@@ -994,4 +1079,7 @@ Xot Module (Core Framework)
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

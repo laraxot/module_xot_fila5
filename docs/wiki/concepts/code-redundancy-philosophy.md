@@ -12,7 +12,11 @@ related:
   - ../../../../../docs/wiki/concepts/second-brain-operating-model.md
   - ../../../../../docs/wiki/how-to/module-docs-deduplication.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 issue: "https://github.com/provtv/<repo progetto>/issues/151"
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/151"
+>>>>>>> laraxot/dev
 =======
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/151"
 >>>>>>> laraxot/dev
@@ -87,7 +91,11 @@ Questo documento fissa **come decidere** cosa tenere, cosa fondere e cosa archiv
 3. Preferire **delete** di backup `.up` dopo diff con file canonico (nessun autoload).
 4. Per Filament: una risorsa, un namespace, un cluster — seguire regola Passport «solo sotto `Clusters/`».
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. Collegare ogni epic a [GitHub provtv/<repo progetto>).
+=======
+5. Collegare ogni epic a [GitHub provtv/base_ptv_fila5_mono](https://github.com/provtv/base_ptv_fila5_mono).
+>>>>>>> laraxot/dev
 =======
 5. Collegare ogni epic a [GitHub provtv/base_ptv_fila5_mono](https://github.com/provtv/base_ptv_fila5_mono).
 >>>>>>> laraxot/dev

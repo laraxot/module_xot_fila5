@@ -7,10 +7,16 @@ description: 'modulo Geo'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: phpstan-error.txt
+<<<<<<< HEAD
 converted_from: phpstan_error.txt
 =======
 <<<<<<< HEAD
 converted_from: phpstan-error.txt
+=======
+converted_from: phpstan_error.txt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 converted_from: phpstan_error.txt
 >>>>>>> laraxot/dev

@@ -25,7 +25,11 @@ In **frontoffice** ora si **`use`** lo stesso `Filament\Resources\Pages\Concerns
 ## Persistenza dopo submit
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php)).
+=======
+**Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)).
+>>>>>>> laraxot/dev
 =======
 **Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)).
 >>>>>>> laraxot/dev
@@ -41,7 +45,11 @@ Widget con form lineare, tabelle, statistiche: usare **`XotBaseWidget`** (o `Xot
 | Metodo | Ruolo |
 |--------|--------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | `getSteps()` | Metodo (**astratto**); nella <nome progetto> delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
+=======
+| `getSteps()` | Metodo (**astratto**); nella Fixcity delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
+>>>>>>> laraxot/dev
 =======
 | `getSteps()` | Metodo (**astratto**); nella Fixcity delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
 >>>>>>> laraxot/dev
@@ -74,7 +82,11 @@ Decisione tecnica storica / anti-pattern evitati: [`wiki/filament-wizard-refacto
 Implementazione: `laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Esempio dominio: `Modules\<nome progetto>\Filament\Widgets\CreateTicketWizardWidget`
+=======
+Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
+>>>>>>> laraxot/dev
 =======
 Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
 >>>>>>> laraxot/dev
@@ -84,8 +96,13 @@ Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
 - [XotBaseWidget](./xot-base-widget.md)
 - [Indice widget Filament](./index.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Ticket wizard <nome progetto>](../../../<nome progetto>/docs/ticket-wizard-frontoffice.md)
 - [Pattern wizard <nome progetto>](../../../<nome progetto>/docs/filament-wizard-pattern.md)
+=======
+- [Ticket wizard Fixcity](../../../Fixcity/docs/ticket-wizard-frontoffice.md)
+- [Pattern wizard Fixcity](../../../Fixcity/docs/filament-wizard-pattern.md)
+>>>>>>> laraxot/dev
 =======
 - [Ticket wizard Fixcity](../../../Fixcity/docs/ticket-wizard-frontoffice.md)
 - [Pattern wizard Fixcity](../../../Fixcity/docs/filament-wizard-pattern.md)

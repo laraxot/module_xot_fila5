@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Decisione: moduli Auth, Blog, Comment non necessari in <repo progetto>"
+=======
+title: "Decisione: moduli Auth, Blog, Comment non necessari in base_workorder_fila5"
+>>>>>>> laraxot/dev
 =======
 title: "Decisione: moduli Auth, Blog, Comment non necessari in base_workorder_fila5"
 >>>>>>> laraxot/dev
@@ -20,6 +24,7 @@ related:
 ## Decisione (dell'utente, esplicita)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *"i modulo Comment, Auth e Blog non ci servono in questo progetto"* — <repo progetto>
 è un gestionale commesse/interventi (<nome progetto>, Intervention, TimberBilling,
 PublicProcurement, EnergyBroker, …), non un CMS/blog con commenti. I tre moduli sono
@@ -28,6 +33,8 @@ probabilmente eredità di un template/boilerplate condiviso con altri progetti
 [tenant-module-status-registry.md](../../../Tenant/docs/tenant-module-status-registry.md)
 per `config/local/<nome progetto>/modules_statuses.json`).
 =======
+=======
+>>>>>>> laraxot/dev
 *"i modulo Comment, Auth e Blog non ci servono in questo progetto"* — base_workorder_fila5
 è un gestionale commesse/interventi (WorkOrder, Intervention, TimberBilling,
 PublicProcurement, EnergyBroker, …), non un CMS/blog con commenti. I tre moduli sono
@@ -35,6 +42,9 @@ probabilmente eredità di un template/boilerplate condiviso con altri progetti
 `base_*_fila5` sulla stessa macchina (stesso fenomeno documentato in
 [tenant-module-status-registry.md](../../../Tenant/docs/tenant-module-status-registry.md)
 per `config/local/workorder/modules_statuses.json`).
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Stato pratico (instabile durante questa sessione, da verificare)

@@ -193,7 +193,11 @@ TextEntry::make('review_images_count')
         $images = $get('images');
         $count = is_array($images) ? count($images) : 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
         return trans_choice('<nome progetto>::ticket.messages.images_uploaded.text', $count);
+=======
+        return trans_choice('fixcity::ticket.messages.images_uploaded.text', $count);
+>>>>>>> laraxot/dev
 =======
         return trans_choice('fixcity::ticket.messages.images_uploaded.text', $count);
 >>>>>>> laraxot/dev
@@ -245,8 +249,13 @@ Se vedi documentazione o tutorial che dicono "non puoi mixare Forms e Infolists"
 
 - [Location Spinner UX](../../../Geo/docs/location-spinner-ux.md) — GPS button con spinner
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Ticket Wizard Frontoffice](../../../<nome progetto>/docs/ticket-wizard-frontoffice.md) — Architettura wizard
 - [Filament Wizard Rule](../../../<nome progetto>/docs/filament-wizard-rule.md) — NO Blade step management
+=======
+- [Ticket Wizard Frontoffice](../../../Fixcity/docs/ticket-wizard-frontoffice.md) — Architettura wizard
+- [Filament Wizard Rule](../../../Fixcity/docs/filament-wizard-rule.md) — NO Blade step management
+>>>>>>> laraxot/dev
 =======
 - [Ticket Wizard Frontoffice](../../../Fixcity/docs/ticket-wizard-frontoffice.md) — Architettura wizard
 - [Filament Wizard Rule](../../../Fixcity/docs/filament-wizard-rule.md) — NO Blade step management

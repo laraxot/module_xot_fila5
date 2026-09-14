@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Monitoring e Feature Management - Laravel 13
+=======
+# Monitoring e Feature Management - Laravel 12
+>>>>>>> laraxot/dev
 =======
 # Monitoring e Feature Management - Laravel 12
 >>>>>>> laraxot/dev

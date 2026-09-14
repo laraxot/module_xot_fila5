@@ -11,7 +11,11 @@ Risolvere tutti gli errori di syntax che impedivano l'avvio del server Laravel (
 **Comando**:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_ptvx_fila5/laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
 >>>>>>> laraxot/dev

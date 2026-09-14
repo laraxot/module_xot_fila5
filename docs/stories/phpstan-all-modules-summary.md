@@ -3,7 +3,11 @@ id: phpstan-all-modules-summary
 slug: phpstan-all-modules-summary
 scope:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - project:<repo progetto>
+=======
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
 =======
   - project:base_workorder_fila5
 >>>>>>> laraxot/dev
@@ -15,7 +19,11 @@ created: 2026-09-06
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Quality Gate - <repo progetto>
+=======
+# PHPStan Quality Gate - base_workorder_fila5
+>>>>>>> laraxot/dev
 =======
 # PHPStan Quality Gate - base_workorder_fila5
 >>>>>>> laraxot/dev

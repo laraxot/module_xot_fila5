@@ -10,7 +10,11 @@ declare(strict_types=1);
 | Shared fixes applied in this wave:
 | - Removed legacy Doctrine-style schema diff logic from
 <<<<<<< HEAD
+<<<<<<< HEAD
 |   `XotBaseMigration::tableUpdate()` and aligned it with Laravel 13.
+=======
+|   `XotBaseMigration::tableUpdate()` and aligned it with Laravel 12.
+>>>>>>> laraxot/dev
 =======
 |   `XotBaseMigration::tableUpdate()` and aligned it with Laravel 12.
 >>>>>>> laraxot/dev

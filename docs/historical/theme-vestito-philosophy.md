@@ -53,7 +53,11 @@ Themes/[ThemeName]/
 │   │   ├── layouts/
 │   │   └── pages/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── _<nome progetto>_fila5.code-workspace
+=======
+├── _quaeris_fila4_mono.code-workspace
+>>>>>>> laraxot/dev
 =======
 ├── _quaeris_fila4_mono.code-workspace
 >>>>>>> laraxot/dev

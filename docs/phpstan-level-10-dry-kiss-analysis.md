@@ -35,23 +35,34 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 **Errore**:
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 PHPDoc tag @property-read contains unknown class Modules\<nome progetto>\Models\Profile
 ```
 
 **Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\<nome progetto>\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
 =======
+=======
+>>>>>>> laraxot/dev
 PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
 ```
 
 **Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 **Prima**:
 ```php
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property-read \Modules\<nome progetto>\Models\Profile|null $creator
  * @property-read \Modules\<nome progetto>\Models\Profile|null $updater
+=======
+ * @property-read \Modules\Fixcity\Models\Profile|null $creator
+ * @property-read \Modules\Fixcity\Models\Profile|null $updater
+>>>>>>> laraxot/dev
 =======
  * @property-read \Modules\Fixcity\Models\Profile|null $creator
  * @property-read \Modules\Fixcity\Models\Profile|null $updater
@@ -72,7 +83,11 @@ class AuthenticationLog extends BaseModel
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+=======
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+>>>>>>> laraxot/dev
 =======
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 >>>>>>> laraxot/dev
@@ -86,15 +101,21 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
+<<<<<<< HEAD
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
 =======
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
 =======
+>>>>>>> laraxot/dev
+=======
 **File**: `Modules/healthcare_app/app/Models/Contact.php` (809 righe!)
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php` (809 righe!)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 **Errori PHPStan Level 10**:
@@ -135,15 +156,21 @@ if ($body_html === null) { ... }
 | Xot | 16 | 0 | ✅ |
 <<<<<<< HEAD
 | <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
+<<<<<<< HEAD
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 =======
 <<<<<<< HEAD
 | <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 =======
+>>>>>>> laraxot/dev
+=======
 | healthcare_app | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 | ModuloEsempio | 21+ | 21 | ⚠️ Necessita refactoring Contact |
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
@@ -189,15 +216,21 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
 <<<<<<< HEAD
 - <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
+<<<<<<< HEAD
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 =======
 <<<<<<< HEAD
 - <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 =======
+>>>>>>> laraxot/dev
+=======
 - healthcare_app module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 - ModuloEsempio module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - Altri moduli: ~51 file
 
@@ -340,15 +373,21 @@ protected function casts(): array
 
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/Contact.php`
+<<<<<<< HEAD
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php`
 =======
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/Contact.php`
 =======
+>>>>>>> laraxot/dev
+=======
 **File**: `Modules/healthcare_app/app/Models/Contact.php`
 **File**: `Modules/ModuloEsempio/app/Models/Contact.php`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 **Righe**: 809 (!!!)
 **Metodi**: 40+
@@ -412,15 +451,21 @@ Contact.php (809 lines) →
 
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
+<<<<<<< HEAD
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
 =======
 <<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
 =======
+>>>>>>> laraxot/dev
+=======
 **File**: `Modules/healthcare_app/app/Models/QuestionChart.php`
 **File**: `Modules/ModuloEsempio/app/Models/QuestionChart.php`
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 **Righe**: 882 (!)
 
@@ -491,7 +536,11 @@ class User extends BaseModel
 **Comando**:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+=======
+find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
+>>>>>>> laraxot/dev
 =======
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
 >>>>>>> laraxot/dev
@@ -509,15 +558,21 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 - **User**: 7 modelli
 <<<<<<< HEAD
 - **<nome progetto>**: 5 modelli
+<<<<<<< HEAD
 - **healthcare_app**: 5 modelli
 - **ModuloEsempio**: 5 modelli
 =======
 <<<<<<< HEAD
 - **<nome progetto>**: 5 modelli
 =======
+>>>>>>> laraxot/dev
+=======
 - **healthcare_app**: 5 modelli
 - **ModuloEsempio**: 5 modelli
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
@@ -526,15 +581,21 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 ```bash
 <<<<<<< HEAD
 cd Modules/<nome progetto>/app/Models
+<<<<<<< HEAD
 cd Modules/healthcare_app/app/Models
 cd Modules/ModuloEsempio/app/Models
 =======
 <<<<<<< HEAD
 cd Modules/<nome progetto>/app/Models
 =======
+>>>>>>> laraxot/dev
+=======
 cd Modules/healthcare_app/app/Models
 cd Modules/ModuloEsempio/app/Models
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
@@ -556,15 +617,21 @@ done
 ```bash
 <<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
+<<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
 vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
 =======
 <<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
 =======
+>>>>>>> laraxot/dev
+=======
 vendor/bin/pint Modules/User/app/Models Modules/healthcare_app/app/Models --quiet
 vendor/bin/pint Modules/User/app/Models Modules/ModuloEsempio/app/Models --quiet
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -979,15 +1046,21 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
 =======
 <<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
 =======
+>>>>>>> laraxot/dev
+=======
 ./vendor/bin/phpstan analyse Modules/healthcare_app/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/ModuloEsempio/app/Models --level=10
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -996,15 +1069,21 @@ $activeUsers = User::active()->get(); // ✅ Works!
 - Xot: ✅ 0 errors (dopo fix)
 <<<<<<< HEAD
 - <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
+<<<<<<< HEAD
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
 - ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
 =======
 <<<<<<< HEAD
 - <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
 =======
+>>>>>>> laraxot/dev
+=======
 - healthcare_app: ⚠️ 21 errors (Contact.php - needs refactoring)
 - ModuloEsempio: ⚠️ 21 errors (Contact.php - needs refactoring)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ### Manual Code Review
@@ -1069,14 +1148,20 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 - [Model Inheritance Rules (User Module)](../../User/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../Themes/Zero/docs/model-usage-in-themes.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
 - [Model Inheritance Rules (User Module)](../../user/docs/model-inheritance-rules.md)
 - [Model Usage in Themes](../../../themes/zero/docs/model-usage-in-themes.md)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - [Duplicate Methods Analysis](./duplicate-methods-analysis.md)
 
@@ -1089,10 +1174,16 @@ Con il refactoring di Contact e creazione scope traits: **→ 92% - Eccellente!*
 *Analyzed by: Claude Code*
 <<<<<<< HEAD
 *Validation: ✅ PHPStan Level 10, Manual Review*
+<<<<<<< HEAD
 *Validation: ✅ PHPStan Level 10, Manual Review*
 =======
 <<<<<<< HEAD
 *Validation: ✅ PHPStan Level 10, Manual Review*
+=======
+*Validation: ✅ PHPStan Level 10, Manual Review*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 *Validation: ✅ PHPStan Level 10, Manual Review*
 >>>>>>> laraxot/dev

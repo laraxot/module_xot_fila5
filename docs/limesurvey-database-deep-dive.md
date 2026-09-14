@@ -6,7 +6,11 @@ The system utilizes three main database connections:
 
 ### 1. Limesurvey Database (`limesurvey` connection)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Schema**: `txaesfry_<nome progetto>_survey` 
+=======
+- **Schema**: `txaesfry_quaeris_survey` 
+>>>>>>> laraxot/dev
 =======
 - **Schema**: `txaesfry_quaeris_survey` 
 >>>>>>> laraxot/dev
@@ -20,15 +24,21 @@ The system utilizes three main database connections:
   - `lime_answer_l10ns` - Answer translations
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2. <nome progetto> Database (`<nome progetto>` connection) 
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to <nome progetto> functionality
 =======
+=======
+>>>>>>> laraxot/dev
 ### 2. Quaeris Database (`quaeris` connection) 
 - **Purpose**: Application-specific data including survey mappings
 - **Key tables**:
   - `survey_pdfs` - Links Limesurvey surveys to Quaeris functionality
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
   - `question_charts` - Custom chart configurations for survey data
   - `charts` - Chart visualization settings
@@ -106,7 +116,11 @@ The system utilizes three main database connections:
 ## Integration Points
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto>-Specific Features
+=======
+### Quaeris-Specific Features
+>>>>>>> laraxot/dev
 =======
 ### Quaeris-Specific Features
 >>>>>>> laraxot/dev

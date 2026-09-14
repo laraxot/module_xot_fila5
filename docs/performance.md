@@ -1,12 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 //-----------------------------------------------------------
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -28,6 +35,9 @@ note: "Convertito da _performance.txt (documento) da convert-docs-txt-to-md.py."
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

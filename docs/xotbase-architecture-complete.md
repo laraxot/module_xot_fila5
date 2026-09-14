@@ -110,7 +110,11 @@ Modules\[Module]\Filament\Actions\MyCustomAction
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Filament 5 Actions
+=======
+// Filament 4 Actions
+>>>>>>> laraxot/dev
 =======
 // Filament 4 Actions
 >>>>>>> laraxot/dev

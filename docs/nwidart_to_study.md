@@ -35,10 +35,13 @@ https://github.com/HichemTab-tech/LaravelFS
 ## Contenuto originale (txt)
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 >>>>>>> .merge_file_bMOZuq
 =======
 <<<<<<< HEAD
@@ -47,6 +50,9 @@ https://github.com/HichemTab-tech/LaravelFS
 >>>>>>> .merge_file_bMOZuq
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 module: theme

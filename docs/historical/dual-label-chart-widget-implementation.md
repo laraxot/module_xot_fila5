@@ -764,7 +764,11 @@ protected function getData(): array
 ```bash
 # ✅ Zero errori dopo refactoring
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+=======
+./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+>>>>>>> laraxot/dev
 =======
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 >>>>>>> laraxot/dev
@@ -774,7 +778,11 @@ protected function getData(): array
 ```bash
 # ✅ 100% coverage per metodi principali
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/<nome progetto>/tests/Unit/SimpleChartWidgetTest.php
+=======
+./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+>>>>>>> laraxot/dev
 =======
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
 >>>>>>> laraxot/dev

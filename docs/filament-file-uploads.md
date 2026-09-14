@@ -98,7 +98,11 @@ protected $casts = [
 ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // In Laravel 13.x, utilizzare il metodo casts()
+=======
+// In Laravel 12.x, utilizzare il metodo casts()
+>>>>>>> laraxot/dev
 =======
 // In Laravel 12.x, utilizzare il metodo casts()
 >>>>>>> laraxot/dev

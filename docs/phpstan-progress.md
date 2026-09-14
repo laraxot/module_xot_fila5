@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # PHPStan Fixes Progress Report - March 18, 2025
 
@@ -55,6 +58,10 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 - Then continue with the Xot module which has more complex issues
 - Consider grouping fixes by error type (type annotations, null checks, method access) for efficiency
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -106,7 +113,11 @@ This document tracks the progress of fixing PHPStan level 10 issues across vario
 6. User - 622 errors
 7. Notify - 776 errors
 <<<<<<< HEAD
+<<<<<<< HEAD
 8. <nome progetto> - 1171 errors
+=======
+8. Fixcity - 1171 errors
+>>>>>>> laraxot/dev
 =======
 8. Fixcity - 1171 errors
 >>>>>>> laraxot/dev
@@ -303,7 +314,11 @@ test('base model extends eloquent model', function (): void {
 1. Fix User tests (622 errors)
 2. Fix Notify tests (776 errors)
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Fix <nome progetto> tests (1171 errors)
+=======
+3. Fix Fixcity tests (1171 errors)
+>>>>>>> laraxot/dev
 =======
 3. Fix Fixcity tests (1171 errors)
 >>>>>>> laraxot/dev
@@ -367,7 +382,11 @@ Based on current pace:
 1. **Quick Wins**: Complete Tenant (24 errors) and Gdpr (18 errors) - ~1-2 hours
 2. **Medium Modules**: Media (140), Lang (151), Geo (271) - ~4-6 hours
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), <nome progetto> (1171) - ~15-20 hours
+=======
+3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), Fixcity (1171) - ~15-20 hours
+>>>>>>> laraxot/dev
 =======
 3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), Fixcity (1171) - ~15-20 hours
 >>>>>>> laraxot/dev
@@ -404,14 +423,20 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 *Session Date: 2025-10-13*
 *Report by: Claude Code*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Project: <nome progetto> PTVX Laravel*
 *Session Duration: ~2 hours*
 *Errors Fixed: 861*
 *Progress: 17.8% complete*
 =======
+=======
+>>>>>>> laraxot/dev
 *Project: FixCity PTVX Laravel*
 *Session Duration: ~2 hours*
 *Errors Fixed: 861*
 *Progress: 17.8% complete*
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -40,7 +40,11 @@ abstract class BaseModel extends XotBaseModel {
 **Moduli analizzati**:
 - Activity, Chart, CloudStorage, Cms, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Tenant, User, Xot (14 moduli identici)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - <nome progetto>: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+=======
+- Quaeris: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
+>>>>>>> laraxot/dev
 =======
 - Quaeris: ❌ **ECCEZIONE** - Non estende XotBaseModel (da correggere)
 >>>>>>> laraxot/dev
@@ -88,9 +92,15 @@ protected function casts(): array {
 **Violazione DRY**: Cms e altri moduli ridichiarano casts già presenti nel parent
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4. **<nome progetto> BaseModel - Pattern Anomalo**
 
 **Problema Critico**: `Modules\<nome progetto>\Models\BaseModel` NON estende `XotBaseModel`:
+=======
+### 4. **Quaeris BaseModel - Pattern Anomalo**
+
+**Problema Critico**: `Modules\Quaeris\Models\BaseModel` NON estende `XotBaseModel`:
+>>>>>>> laraxot/dev
 =======
 ### 4. **Quaeris BaseModel - Pattern Anomalo**
 
@@ -107,7 +117,11 @@ abstract class BaseModel extends Model implements ModelContract, HasMedia {
     use InteractsWithMedia;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = '<nome progetto>';
+=======
+    protected $connection = 'quaeris';
+>>>>>>> laraxot/dev
 =======
     protected $connection = 'quaeris';
 >>>>>>> laraxot/dev
@@ -133,7 +147,11 @@ use RelationX;
 use Updater;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // <nome progetto>/BaseModel duplica Updater:
+=======
+// Quaeris/BaseModel duplica Updater:
+>>>>>>> laraxot/dev
 =======
 // Quaeris/BaseModel duplica Updater:
 >>>>>>> laraxot/dev
@@ -183,6 +201,7 @@ abstract class XotBaseModel extends Model {
 - Serve override di casts specifici (es: User → verified_at)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Soluzione 2: Correggere <nome progetto>/BaseModel
 
 **Obiettivo**: Allineare <nome progetto> all'architettura standard
@@ -191,6 +210,8 @@ abstract class XotBaseModel extends Model {
 ```php
 // Modules/<nome progetto>/app/Models/BaseModel.php
 =======
+=======
+>>>>>>> laraxot/dev
 ### Soluzione 2: Correggere Quaeris/BaseModel
 
 **Obiettivo**: Allineare Quaeris all'architettura standard
@@ -198,6 +219,9 @@ abstract class XotBaseModel extends Model {
 **Implementazione**:
 ```php
 // Modules/Quaeris/app/Models/BaseModel.php
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Xot\Models\XotBaseModel;
 use Spatie\MediaLibrary\HasMedia;
@@ -209,6 +233,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     use HasExtraTrait;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $connection = '<nome progetto>'; // Auto-discovery se Soluzione 1 applicata
 
     protected $with = ['extra']; // Specifico <nome progetto>
@@ -217,6 +242,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI <nome progetto>, se necessari
 =======
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'quaeris'; // Auto-discovery se Soluzione 1 applicata
 
     protected $with = ['extra']; // Specifico Quaeris
@@ -224,6 +251,9 @@ abstract class BaseModel extends XotBaseModel implements HasMedia {
     protected function casts(): array {
         return array_merge(parent::casts(), [
             // Solo casts SPECIFICI Quaeris, se necessari
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
         ]);
     }
@@ -318,7 +348,11 @@ Manutenibilità: +40%
 
 ### 🔴 Priorità ALTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. **Correggere <nome progetto>/BaseModel** (non segue standard)
+=======
+1. **Correggere Quaeris/BaseModel** (non segue standard)
+>>>>>>> laraxot/dev
 =======
 1. **Correggere Quaeris/BaseModel** (non segue standard)
 >>>>>>> laraxot/dev
@@ -338,8 +372,13 @@ Manutenibilità: +40%
 - `Modules/Xot/app/Models/XotBaseModel.php` (+15 righe)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Fase 2: Correzione <nome progetto>
 - `Modules/<nome progetto>/app/Models/BaseModel.php` (refactor completo)
+=======
+### Fase 2: Correzione Quaeris
+- `Modules/Quaeris/app/Models/BaseModel.php` (refactor completo)
+>>>>>>> laraxot/dev
 =======
 ### Fase 2: Correzione Quaeris
 - `Modules/Quaeris/app/Models/BaseModel.php` (refactor completo)
@@ -357,7 +396,11 @@ Manutenibilità: +40%
 - `Modules/Xot/docs/models/MODEL_ARCHITECTURE.md` (questa guida)
 - `Modules/User/docs/models/README.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Modules/<nome progetto>/docs/models/README.md`
+=======
+- `Modules/Quaeris/docs/models/README.md`
+>>>>>>> laraxot/dev
 =======
 - `Modules/Quaeris/docs/models/README.md`
 >>>>>>> laraxot/dev
@@ -367,8 +410,13 @@ Manutenibilità: +40%
 - [ ] Implementare `getConnectionName()` in XotBaseModel
 - [ ] Testare auto-discovery con modello test
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Correggere `Modules/<nome progetto>/app/Models/BaseModel.php`
 - [ ] Testare modelli <nome progetto> con nuova struttura
+=======
+- [ ] Correggere `Modules/Quaeris/app/Models/BaseModel.php`
+- [ ] Testare modelli Quaeris con nuova struttura
+>>>>>>> laraxot/dev
 =======
 - [ ] Correggere `Modules/Quaeris/app/Models/BaseModel.php`
 - [ ] Testare modelli Quaeris con nuova struttura
@@ -390,7 +438,11 @@ Manutenibilità: +40%
 
 1. **Auto-discovery funziona**: Già implementato con successo in XotBasePivot e XotBaseMorphPivot
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Consistenza è chiave**: <nome progetto> devia dallo standard → maggiore complessità
+=======
+2. **Consistenza è chiave**: Quaeris devia dallo standard → maggiore complessità
+>>>>>>> laraxot/dev
 =======
 2. **Consistenza è chiave**: Quaeris devia dallo standard → maggiore complessità
 >>>>>>> laraxot/dev

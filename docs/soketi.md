@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 # _soketi
 
@@ -10,6 +13,10 @@ https://kbouzidi.com/real-time-events-with-laravel-and-soketi
 
 https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -35,6 +42,9 @@ updated: 2026-08-24
 - <https://kbouzidi.com/real-time-events-with-laravel-and-soketi>
 - <https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

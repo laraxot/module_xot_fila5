@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://themeselection.com/laravel-admin-panel-template/
 
@@ -10,6 +13,10 @@ https://github.com/BRACKETS-by-TRIAD/craftable
 
 https://github.com/InfyOmLabs/laravel-generator
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -36,6 +43,9 @@ updated: 2026-08-24
 - <https://github.com/BRACKETS-by-TRIAD/craftable>
 - <https://github.com/InfyOmLabs/laravel-generator>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -178,7 +178,11 @@ None at this time.
 ### March 2026
 - ✅ Boost skill installation completed
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Laravel 13 compatibility verified
+=======
+- ✅ Laravel 12 compatibility verified
+>>>>>>> laraxot/dev
 =======
 - ✅ Laravel 12 compatibility verified
 >>>>>>> laraxot/dev
@@ -213,7 +217,11 @@ None at this time.
 
 ### External Dependencies
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13.x (stable)
+=======
+- Laravel 12.x (stable)
+>>>>>>> laraxot/dev
 =======
 - Laravel 12.x (stable)
 >>>>>>> laraxot/dev
@@ -227,7 +235,11 @@ None at this time.
 ### Dependency Risks
 - **Low**: All dependencies are stable
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Medium**: Laravel 13 breaking changes possible
+=======
+- **Medium**: Laravel 12 breaking changes possible
+>>>>>>> laraxot/dev
 =======
 - **Medium**: Laravel 12 breaking changes possible
 >>>>>>> laraxot/dev

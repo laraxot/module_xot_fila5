@@ -48,11 +48,18 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -272,11 +279,18 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -379,7 +393,11 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 5.
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> laraxot/dev
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> laraxot/dev
@@ -433,11 +451,18 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -545,7 +570,11 @@ class MyAction
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+=======
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 >>>>>>> laraxot/dev
@@ -554,7 +583,11 @@ use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+=======
+use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+>>>>>>> laraxot/dev
 =======
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 >>>>>>> laraxot/dev
@@ -600,7 +633,11 @@ class ViewQuestionChart extends XotBaseViewRecord
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
+=======
+namespace Modules\Quaeris\Filament\Widgets;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev
@@ -660,15 +697,21 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\<nome progetto>\Models\QuestionChart;
 =======
+=======
+>>>>>>> laraxot/dev
 namespace Modules\Quaeris\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Quaeris\Models\QuestionChart;
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 class QuestionChartResource extends XotBaseResource
@@ -676,11 +719,18 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -783,7 +833,11 @@ BadgeColumn::make('status')
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 5.
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> laraxot/dev
 =======
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 >>>>>>> laraxot/dev

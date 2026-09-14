@@ -8,9 +8,15 @@ updated: 2026-07-27
 qmd: "migration foreignIdFor XotBaseMigration cross-database user_id constrained"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/38"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/12"
+=======
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_techplanner_fila5/issues/38"
 discussions:
@@ -63,7 +69,11 @@ $table->foreignIdFor($userClass, 'user_id')->constrained('users');
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Connessioni modulari: `TenantServiceProvider::registerDB()` — ogni modulo ha una connection name (`blog`, `user`, …) che può puntare a **database diversi** (`<nome progetto>_data` vs `<nome progetto>_user`).
+=======
+Connessioni modulari: `TenantServiceProvider::registerDB()` — ogni modulo ha una connection name (`blog`, `user`, …) che può puntare a **database diversi** (`workorder_data` vs `workorder_user`).
+>>>>>>> laraxot/dev
 =======
 Connessioni modulari: `TenantServiceProvider::registerDB()` — ogni modulo ha una connection name (`blog`, `user`, …) che può puntare a **database diversi** (`workorder_data` vs `workorder_user`).
 >>>>>>> laraxot/dev

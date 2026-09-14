@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -17,6 +20,9 @@ note: "Convertito da elastic_search.txt (documento) da convert-docs-txt-to-md.py
 <!-- Contenuto migrato da _docs/elastic_search.txt -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -30,7 +36,10 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -41,8 +50,11 @@ It provides a compatible Scout driver, as well as additional conveniences.
 For example, the Explored interface defines a mappableAs() method for getting configuration:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
  tamayo/laravel-scout-elastic
@@ -58,6 +70,10 @@ https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php   
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -69,6 +85,9 @@ https://odiaseo.github.io/scout-elasticsearch-driver/
 https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php    !!!!!!!!!!!!!!!!!!!!!
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -80,15 +99,24 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 
 
 meilisearch
 <<<<<<< HEAD
+<<<<<<< HEAD
 meilisearch
+=======
+=======
+meilisearch
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 meilisearch

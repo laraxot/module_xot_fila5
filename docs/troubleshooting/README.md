@@ -5,10 +5,13 @@
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Common Issues
 
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Troubleshooting Guide-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -19,10 +22,13 @@
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Common Issues
 
 > **Core module for the <nome progetto> Platform.**
 =======
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 ## Common Issues
@@ -32,6 +38,9 @@
 > **Core module for the FixCity Platform.**
 =======
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ### PHPStan Errors
 - **Issue**: Method not found errors
@@ -56,8 +65,11 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ### Translation Problems
@@ -85,6 +97,10 @@
 ## Getting Help
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -94,16 +110,22 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Perché esiste
 
 Core module for the <nome progetto> Platform.
 =======
+=======
+>>>>>>> laraxot/dev
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Superpoteri
@@ -111,7 +133,11 @@ Core module for the FixCity Platform.
 - Modular component with XotBase patterns
 - Professional-grade implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
 =======
 - Integrated with FixCity Platform
 >>>>>>> laraxot/dev
@@ -127,11 +153,17 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 ---
 
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
 ---
 
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
@@ -143,6 +175,10 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -156,17 +192,23 @@ Core module for the FixCity Platform.
 ]()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **Core module for the <nome progetto> Platform.**
 
 ## Perché esiste
 
 Core module for the <nome progetto> Platform.
 =======
+=======
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Superpoteri
@@ -174,7 +216,11 @@ Core module for the FixCity Platform.
 - Modular component with XotBase patterns
 - Professional-grade implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
 =======
 - Integrated with FixCity Platform
 >>>>>>> laraxot/dev
@@ -190,10 +236,16 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
 =======
+=======
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -1203,7 +1203,21 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    {
        return [
@@ -4446,7 +4460,21 @@ protected function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 ```
 
@@ -4460,7 +4488,21 @@ class TicketResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
     {
         return [
@@ -4485,7 +4527,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 ```
 
@@ -4495,7 +4551,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 {
     return [
@@ -4508,7 +4578,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 {
     return [
@@ -4530,7 +4614,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    {
        return [
@@ -4566,7 +4664,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    ```
 
@@ -4578,7 +4690,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    ```
 
@@ -5735,7 +5861,21 @@ class TicketResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
     {
         return [...];
@@ -7186,7 +7326,21 @@ protected function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 ```
 
@@ -7200,7 +7354,21 @@ class TicketResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
     {
         return [
@@ -7225,7 +7393,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 ```
 
@@ -7235,7 +7417,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 {
     return [
@@ -7248,7 +7444,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
 {
     return [
@@ -7270,7 +7480,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    {
        return [
@@ -7306,7 +7530,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    ```
 
@@ -7318,7 +7556,21 @@ public function getFormSchema(): array
 <<<<<<< HEAD
    public static function getFormSchema(): array
 =======
+<<<<<<< HEAD
    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_haLwYv
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+   public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OdPgXr
 >>>>>>> laraxot/dev
    ```
 

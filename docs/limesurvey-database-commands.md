@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Database Analysis Commands and Tools for <nome progetto>_survey
+=======
+# Database Analysis Commands and Tools for quaeris_survey
+>>>>>>> laraxot/dev
 =======
 # Database Analysis Commands and Tools for quaeris_survey
 >>>>>>> laraxot/dev
@@ -74,15 +78,21 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 ```bash
 # Connect to specific database
 <<<<<<< HEAD
+<<<<<<< HEAD
 mcp mysql --database=txaesfry_<nome progetto>_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_<nome progetto>_survey' AND table_name LIKE 'lime_survey_%'"
 =======
+=======
+>>>>>>> laraxot/dev
 mcp mysql --database=txaesfry_quaeris_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_quaeris_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 # Export survey data
@@ -121,7 +131,11 @@ php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
 <<<<<<< HEAD
+<<<<<<< HEAD
     '<nome progetto>' => DB::connection('<nome progetto>')->getPdo() ? 'OK' : 'ERROR',
+=======
+    'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> laraxot/dev
 =======
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> laraxot/dev
@@ -185,15 +199,21 @@ WHERE q.qid IS NULL;
 ```bash
 # Backup specific survey data
 <<<<<<< HEAD
+<<<<<<< HEAD
 mysqldump -u[user] -p[pass] txaesfry_<nome progetto>_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_<nome progetto>_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
 =======
+=======
+>>>>>>> laraxot/dev
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -239,7 +259,11 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_<nome progetto>_survey'
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> laraxot/dev
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
 >>>>>>> laraxot/dev
@@ -251,7 +275,11 @@ LEFT JOIN (
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_<nome progetto>_survey'
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> laraxot/dev
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
 >>>>>>> laraxot/dev
@@ -260,7 +288,11 @@ WHERE s.active = 'Y';
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the <nome progetto>_survey database used by the Limesurvey integration.
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+>>>>>>> laraxot/dev
 =======
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 >>>>>>> laraxot/dev

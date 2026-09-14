@@ -149,7 +149,11 @@ echo "CONTEXT7_API_KEY=xxx" >> .env
 | pagespeed-insights | `pagespeed-insights-mcp` | `GOOGLE_API_KEY` |
 | google-search-console | `mcp-server-google-search-console` | `GSC_SERVICE_ACCOUNT_KEY_FILE` |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `<nome progetto>_BASE_URL` |
+=======
+| mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `FIXCITY_BASE_URL` |
+>>>>>>> laraxot/dev
 =======
 | mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `FIXCITY_BASE_URL` |
 >>>>>>> laraxot/dev

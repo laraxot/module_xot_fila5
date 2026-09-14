@@ -81,10 +81,13 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
     - Marker di merge conflict GIT non risolti:
       ```
 <<<<<<< HEAD
+<<<<<<< HEAD
       >>>>>>> 041533e (.)
       >>>>>>> 00a34d0 (.)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
       =======
@@ -94,6 +97,9 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
       ```
 
@@ -292,11 +298,14 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Code Quality Standards](./code-quality-standards.md)
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+<<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 =======
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
@@ -304,4 +313,7 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -20,6 +23,9 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/video_player.txt -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -114,10 +120,16 @@ https://www.codester.com/items/11695/vdrive-unlimited-video-convertor-tools-php
 ---------------------------------------------------------------------------------------------------------------
 <<<<<<< HEAD
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+<<<<<<< HEAD
 https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 =======
 <<<<<<< HEAD
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+=======
+https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 >>>>>>> laraxot/dev
@@ -132,10 +144,16 @@ https://shotstack.io/product/sdk/php/
 https://github.com/shotstack/php-demos  a pagamento ..
 <<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------------------
 =======
 <<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------------------
+=======
+---------------------------------------------------------------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 ---------------------------------------------------------------------------------------------------------------
 >>>>>>> laraxot/dev

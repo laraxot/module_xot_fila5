@@ -11,7 +11,11 @@ updated: 2026-08-24
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
+=======
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+>>>>>>> laraxot/dev
 =======
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
 >>>>>>> laraxot/dev

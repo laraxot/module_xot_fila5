@@ -49,7 +49,11 @@ si devono stubbare le funzioni Pest nei namespace test.
 
 - **Activity:** batch 7 file — `expect()` → `Assert::assert*()`; [completion-status](../../../Activity/docs/wiki/overviews/completion-status.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../<nome progetto>/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
+=======
+- **Fixcity:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Fixcity/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
+>>>>>>> laraxot/dev
 =======
 - **Fixcity:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Fixcity/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
 >>>>>>> laraxot/dev

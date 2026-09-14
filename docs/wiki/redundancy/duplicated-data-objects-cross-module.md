@@ -6,8 +6,13 @@ severity: high
 created: 2026-05-22
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/89"
   - "https://github.com/laraxot/<repo progetto>/issues/90"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
@@ -43,7 +48,11 @@ Xot mantiene solo DTO **veramente trasversali**; gli altri moduli **importano** 
 ## Tracker
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [#90](https://github.com/laraxot/<repo progetto>/issues/90).
+=======
+[#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+>>>>>>> laraxot/dev
 =======
 [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
 >>>>>>> laraxot/dev

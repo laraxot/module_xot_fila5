@@ -114,7 +114,11 @@ To create the most robust, scalable, and developer-friendly foundational framewo
 
 ### Compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 **NFR-010**: Must be compatible with Laravel 13.x
+=======
+**NFR-010**: Must be compatible with Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 **NFR-010**: Must be compatible with Laravel 12.x
 >>>>>>> laraxot/dev
@@ -160,7 +164,11 @@ To create the most robust, scalable, and developer-friendly foundational framewo
 
 ### Compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Works with Laravel 13.x
+=======
+1. Works with Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 1. Works with Laravel 12.x
 >>>>>>> laraxot/dev

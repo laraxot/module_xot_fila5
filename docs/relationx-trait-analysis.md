@@ -28,7 +28,11 @@ github:
 
 `Modules/Xot/app/Models/Traits/RelationX.php`, 213 righe. Consumato da
 <<<<<<< HEAD
+<<<<<<< HEAD
 `User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `<nome progetto>\Profile`: e' codice
+=======
+`User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `Quaeris\Profile`: e' codice
+>>>>>>> laraxot/dev
 =======
 `User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `Quaeris\Profile`: e' codice
 >>>>>>> laraxot/dev
@@ -65,8 +69,13 @@ in namespace diversi collidono sulla stessa classe Pivot, senza alcun segnale.
 3. `tryParentClassPivot()` — risale la catena di ereditarieta'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `<nome progetto>\User`
 estende `User\BaseUser`, il pivot non esiste sotto `<nome progetto>\`, ma risalendo al
+=======
+Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `Quaeris\User`
+estende `User\BaseUser`, il pivot non esiste sotto `Quaeris\`, ma risalendo al
+>>>>>>> laraxot/dev
 =======
 Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `Quaeris\User`
 estende `User\BaseUser`, il pivot non esiste sotto `Quaeris\`, ma risalendo al
@@ -79,7 +88,11 @@ La ricorsione termina perche' `get_parent_class()` prima o poi restituisce
 
 La descrizione sopra e' corretta ma sottostima quanto in alto arriva la risalita.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\<nome progetto>\Models\User`
+=======
+Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\Quaeris\Models\User`
+>>>>>>> laraxot/dev
 =======
 Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\Quaeris\Models\User`
 >>>>>>> laraxot/dev
@@ -88,7 +101,11 @@ e `Modules\User\Models\Role`, la relazione dietro `HasRoles::roles()`):
 ```
 nome pivot iniziale: RoleUser                         (['Role','User'] ordinati)
 <<<<<<< HEAD
+<<<<<<< HEAD
   Modules\<nome progetto>\Models\RoleUser                     no
+=======
+  Modules\Quaeris\Models\RoleUser                     no
+>>>>>>> laraxot/dev
 =======
   Modules\Quaeris\Models\RoleUser                     no
 >>>>>>> laraxot/dev
@@ -173,7 +190,11 @@ variabili restano assegnate e morte, e il prefisso non viene mai applicato.
 
 Su questo progetto la cosa non e' teorica: le connessioni attive sono almeno
 <<<<<<< HEAD
+<<<<<<< HEAD
 quattro (`user`, `<nome progetto>`, `<nome progetto>_data`, `limesurvey`). Una relazione morph
+=======
+quattro (`user`, `quaeris`, `quaeris_data`, `limesurvey`). Una relazione morph
+>>>>>>> laraxot/dev
 =======
 quattro (`user`, `quaeris`, `quaeris_data`, `limesurvey`). Una relazione morph
 >>>>>>> laraxot/dev
@@ -230,7 +251,11 @@ esercitato dalla suite.
 I punti sopra nascono dalla lettura del codice. Questa sezione riporta cosa
 succede davvero, misurato istanziando i modelli reali del progetto e chiamando
 <<<<<<< HEAD
+<<<<<<< HEAD
 `guessPivot()` su `Modules\<nome progetto>\Models\User`.
+=======
+`guessPivot()` su `Modules\Quaeris\Models\User`.
+>>>>>>> laraxot/dev
 =======
 `guessPivot()` su `Modules\Quaeris\Models\User`.
 >>>>>>> laraxot/dev
@@ -247,7 +272,11 @@ Tre conferme e due difetti nuovi, che dalla sola lettura non si vedevano.
 
 Il nome atteso dalla convenzione e' `RoleUser`: non esiste ne' sotto
 <<<<<<< HEAD
+<<<<<<< HEAD
 `Modules\<nome progetto>\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
+=======
+`Modules\Quaeris\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
+>>>>>>> laraxot/dev
 =======
 `Modules\Quaeris\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
 >>>>>>> laraxot/dev
@@ -257,7 +286,11 @@ letteralmente `Model`: da li' il nome ricalcolato diventa `ModelRole`, che esist
 perche' segue la convenzione di Spatie Permission, non quella di RelationX.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 La risalita, pensata per gestire l'ereditarieta' Laraxot (`<nome progetto>\User` che
+=======
+La risalita, pensata per gestire l'ereditarieta' Laraxot (`Quaeris\User` che
+>>>>>>> laraxot/dev
 =======
 La risalita, pensata per gestire l'ereditarieta' Laraxot (`Quaeris\User` che
 >>>>>>> laraxot/dev
@@ -314,7 +347,11 @@ relazione continua a puntare alla tabella vecchia senza alcun segnale. Il punto
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 $u = new Modules\<nome progetto>\Models\User();
+=======
+$u = new Modules\Quaeris\Models\User();
+>>>>>>> laraxot/dev
 =======
 $u = new Modules\Quaeris\Models\User();
 >>>>>>> laraxot/dev

@@ -7,9 +7,15 @@ updated: 2026-06-12
 qmd: "Xot env testing parity CreatesApplication sync-env-testing DB_DATABASE _test"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/364"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/365"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/364"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/365"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/364"
 discussions:
@@ -57,7 +63,11 @@ APP_ENV=testing ./vendor/bin/pest Modules/Geo/tests/Unit/Enums/EnumsTest.php
 | Principio | Effetto |
 |-----------|---------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Dati sacri** | I test non scrivono mai su `<nome progetto>_data` — solo su `<nome progetto>_data_test` |
+=======
+| **Dati sacri** | I test non scrivono mai su `fixcity_data` — solo su `fixcity_data_test` |
+>>>>>>> laraxot/dev
 =======
 | **Dati sacri** | I test non scrivono mai su `fixcity_data` — solo su `fixcity_data_test` |
 >>>>>>> laraxot/dev

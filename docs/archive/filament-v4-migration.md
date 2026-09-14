@@ -153,9 +153,13 @@ abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array { /* ... */ }
 >>>>>>> laraxot/dev
     public static function getPages(): array { /* ... */ }
 

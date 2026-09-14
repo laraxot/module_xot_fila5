@@ -128,7 +128,11 @@ All 16 module TestCase files now extend `XotBaseTestCase`.
 | Gdpr | BaseTestCase | ✅ migrated |
 | Job | BaseTestCase | ✅ migrated |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | <nome progetto> | BaseTestCase | ✅ migrated |
+=======
+| Fixcity | BaseTestCase | ✅ migrated |
+>>>>>>> laraxot/dev
 =======
 | Fixcity | BaseTestCase | ✅ migrated |
 >>>>>>> laraxot/dev

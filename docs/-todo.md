@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 title: '_todo'
@@ -18,6 +21,12 @@ updated: 2026-08-24
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> 7f6cf6be (.)
@@ -34,6 +43,7 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
+<<<<<<< HEAD
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 
@@ -44,6 +54,8 @@ https://github.com/spatie/laravel-health
 
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
+=======
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 mostrare in una blade uso disco etc
@@ -54,4 +66,7 @@ mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev

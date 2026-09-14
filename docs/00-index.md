@@ -10,9 +10,15 @@
 - 🚫 [No Services Rule](./critical-no-services-rule.md) - Perché usiamo Actions invece dei Service.
 - 🗂️ [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole obbligatorie per Filament.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
 =======
 <<<<<<< HEAD
+=======
+- 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 - 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
 >>>>>>> laraxot/dev

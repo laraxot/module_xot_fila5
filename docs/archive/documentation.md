@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 https://github.com/mpociot/laravel-apidoc-generator
 
 
@@ -35,3 +36,5 @@ https://beyondco.de/docs/laravel-apidoc-generator/getting-started/documenting-yo
 https://flarum.org/
 
 
+=======
+>>>>>>> laraxot/dev

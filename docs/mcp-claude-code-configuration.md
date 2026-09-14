@@ -3,7 +3,11 @@
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto <nome progetto> Fila4 Mono.
+=======
+Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono.
+>>>>>>> laraxot/dev
 =======
 Claude Code utilizza comandi CLI per configurare i server MCP. Questa guida descrive come configurare i server MCP per il progetto Quaeris Fila4 Mono.
 >>>>>>> laraxot/dev
@@ -22,7 +26,11 @@ Permette l'accesso ai file del progetto.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http filesystem-<nome progetto> http://localhost:8000/mcp/filesystem
+=======
+claude mcp add --transport http filesystem-quaeris http://localhost:8000/mcp/filesystem
+>>>>>>> laraxot/dev
 =======
 claude mcp add --transport http filesystem-quaeris http://localhost:8000/mcp/filesystem
 >>>>>>> laraxot/dev
@@ -36,7 +44,11 @@ Permette chiamate HTTP e API.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http fetch-<nome progetto> http://localhost:8000/mcp/fetch
+=======
+claude mcp add --transport http fetch-quaeris http://localhost:8000/mcp/fetch
+>>>>>>> laraxot/dev
 =======
 claude mcp add --transport http fetch-quaeris http://localhost:8000/mcp/fetch
 >>>>>>> laraxot/dev
@@ -48,7 +60,11 @@ Memoria temporanea per contesto tra richieste.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http memory-<nome progetto> http://localhost:8000/mcp/memory
+=======
+claude mcp add --transport http memory-quaeris http://localhost:8000/mcp/memory
+>>>>>>> laraxot/dev
 =======
 claude mcp add --transport http memory-quaeris http://localhost:8000/mcp/memory
 >>>>>>> laraxot/dev
@@ -60,7 +76,11 @@ Interazione con database MySQL.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http mysql-<nome progetto> http://localhost:8000/mcp/mysql
+=======
+claude mcp add --transport http mysql-quaeris http://localhost:8000/mcp/mysql
+>>>>>>> laraxot/dev
 =======
 claude mcp add --transport http mysql-quaeris http://localhost:8000/mcp/mysql
 >>>>>>> laraxot/dev
@@ -79,7 +99,11 @@ Analisi codice e ottimizzazione.
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add --transport http sequential-thinking-<nome progetto> http://localhost:8000/mcp/sequential-thinking
+=======
+claude mcp add --transport http sequential-thinking-quaeris http://localhost:8000/mcp/sequential-thinking
+>>>>>>> laraxot/dev
 =======
 claude mcp add --transport http sequential-thinking-quaeris http://localhost:8000/mcp/sequential-thinking
 >>>>>>> laraxot/dev
@@ -93,7 +117,11 @@ Per sviluppo locale, è preferibile utilizzare server STDIO invece di HTTP:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add filesystem-<nome progetto> npx -y @modelcontextprotocol/server-filesystem server-memory
+=======
+claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem server-memory
+>>>>>>> laraxot/dev
 =======
 claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem server-memory
 >>>>>>> laraxot/dev
@@ -103,7 +131,11 @@ claude mcp add filesystem-quaeris npx -y @modelcontextprotocol/server-filesystem
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add mysql-<nome progetto> npx -y @modelcontextprotocol/server-mysql
+=======
+claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
+>>>>>>> laraxot/dev
 =======
 claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
 >>>>>>> laraxot/dev
@@ -118,7 +150,11 @@ export DB_PASSWORD=your_password
 export DB_DATABASE=your_database
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp add mysql-<nome progetto> npx -y @modelcontextprotocol/server-mysql
+=======
+claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
+>>>>>>> laraxot/dev
 =======
 claude mcp add mysql-quaeris npx -y @modelcontextprotocol/server-mysql
 >>>>>>> laraxot/dev
@@ -136,7 +172,11 @@ claude mcp list
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp remove filesystem-<nome progetto>
+=======
+claude mcp remove filesystem-quaeris
+>>>>>>> laraxot/dev
 =======
 claude mcp remove filesystem-quaeris
 >>>>>>> laraxot/dev
@@ -146,7 +186,11 @@ claude mcp remove filesystem-quaeris
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 claude mcp test filesystem-<nome progetto>
+=======
+claude mcp test filesystem-quaeris
+>>>>>>> laraxot/dev
 =======
 claude mcp test filesystem-quaeris
 >>>>>>> laraxot/dev
@@ -161,7 +205,11 @@ Per server MCP personalizzati, creare uno script wrapper:
 ```bash
 #!/bin/bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ~/bin/mcp-mysql-<nome progetto>.sh
+=======
+# ~/bin/mcp-mysql-quaeris.sh
+>>>>>>> laraxot/dev
 =======
 # ~/bin/mcp-mysql-quaeris.sh
 >>>>>>> laraxot/dev
@@ -179,8 +227,13 @@ Poi aggiungere il server:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 chmod +x ~/bin/mcp-mysql-<nome progetto>.sh
 claude mcp add mysql-<nome progetto> ~/bin/mcp-mysql-<nome progetto>.sh
+=======
+chmod +x ~/bin/mcp-mysql-quaeris.sh
+claude mcp add mysql-quaeris ~/bin/mcp-mysql-quaeris.sh
+>>>>>>> laraxot/dev
 =======
 chmod +x ~/bin/mcp-mysql-quaeris.sh
 claude mcp add mysql-quaeris ~/bin/mcp-mysql-quaeris.sh

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -15,6 +18,9 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 # Install module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -52,10 +58,16 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
 <<<<<<< HEAD
     }
+<<<<<<< HEAD
     }
 =======
 <<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
     }
 >>>>>>> laraxot/dev

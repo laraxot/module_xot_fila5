@@ -267,7 +267,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class MyResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name'),  // No ->label()!
@@ -385,8 +389,13 @@ git push origin feature-branch
 - [Consolidation Strategy](./documentation-consolidation-strategy.md) - Piano riduzione docs
 
 ### Documentazione Laravel Ecosystem
+<<<<<<< HEAD
 - [Laravel 13 Docs](https://laravel.com/docs/12.x)
 - [Filament 5 Docs](https://filamentphp.com/docs/4.x)
+=======
+- [Laravel 12 Docs](https://laravel.com/docs/12.x)
+- [Filament 4 Docs](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
 - [Livewire 3 Docs](https://livewire.laravel.com/docs/3.x)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - [Spatie QueueableAction](https://github.com/spatie/laravel-queueable-action)

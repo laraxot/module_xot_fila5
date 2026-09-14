@@ -3,7 +3,11 @@
 ## Regola
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Nel repository `<repo progetto>` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+=======
+Nel repository `base_predict_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+>>>>>>> laraxot/dev
 =======
 Nel repository `base_predict_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
 >>>>>>> laraxot/dev

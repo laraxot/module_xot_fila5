@@ -3,10 +3,16 @@
 ## Problema Risolto
 <<<<<<< HEAD
 Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
+<<<<<<< HEAD
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 =======
 <<<<<<< HEAD
 Lo script `bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
+=======
+Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
 >>>>>>> laraxot/dev
@@ -17,10 +23,16 @@ Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collega
 - `.cursor` - ❌ Cartella reale esistente, non collegamento simbolico
 <<<<<<< HEAD
 - `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
+<<<<<<< HEAD
 - `.claude` - ❌ Cartella reale esistente, non collegamento simbolico  
 =======
 <<<<<<< HEAD
 - `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
+=======
+- `.claude` - ❌ Cartella reale esistente, non collegamento simbolico  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 - `.claude` - ❌ Cartella reale esistente, non collegamento simbolico  
 >>>>>>> laraxot/dev
@@ -38,10 +50,16 @@ Tutti i collegamenti simbolici ora funzionano correttamente:
 - `.ai` → `bashscripts/ai/.ai`
 <<<<<<< HEAD
 - `.cursor` → `bashscripts/ai/.cursor`
+<<<<<<< HEAD
 - `.cursor` → `bashscripts/ai/.cursor`  
 =======
 <<<<<<< HEAD
 - `.cursor` → `bashscripts/ai/.cursor`
+=======
+- `.cursor` → `bashscripts/ai/.cursor`  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
 =======
 - `.cursor` → `bashscripts/ai/.cursor`  
 >>>>>>> laraxot/dev
@@ -57,14 +75,21 @@ Lo script `ai_init.sh` ha una logica di sicurezza che non sovrascrive directory 
 Per verificare che tutto funzioni correttamente:
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 file .ai .cursor .claude .windsurf .gemini
 ```
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -73,6 +98,9 @@ file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 
 Tutti dovrebbero mostrare "symbolic link to bashscripts/ai/..."
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

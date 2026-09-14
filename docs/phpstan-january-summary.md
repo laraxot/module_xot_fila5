@@ -20,7 +20,11 @@
 10. **Media** - Già a 0 errori
 11. **Notify** - Già a 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 12. **<nome progetto>** - 2 errori corretti
+=======
+12. **Quaeris** - 2 errori corretti
+>>>>>>> laraxot/dev
 =======
 12. **Quaeris** - 2 errori corretti
 >>>>>>> laraxot/dev
@@ -47,8 +51,13 @@
 - `Activity/app/Actions/ActivityLogger.php` - mapWithKeys() return type
 - `UI/app/Filament/Forms/Components/RadioBadge.php` - is_string() ridondante
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `<nome progetto>/app/Actions/Question/GetValue.php` - getExtra() return type
 - `<nome progetto>/app/Filament/Pages/AutoPage.php` - is_object() ridondante
+=======
+- `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
+- `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
+>>>>>>> laraxot/dev
 =======
 - `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
 - `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
@@ -73,7 +82,11 @@
 1. `Activity/docs/phpstan-corrections-january-2026.md`
 2. `UI/docs/phpstan-corrections-january-2026.md`
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. `<nome progetto>/docs/phpstan-corrections-january-2026.md`
+=======
+3. `Quaeris/docs/phpstan-corrections-january-2026.md`
+>>>>>>> laraxot/dev
 =======
 3. `Quaeris/docs/phpstan-corrections-january-2026.md`
 >>>>>>> laraxot/dev
@@ -179,7 +192,11 @@ if (null !== $value) {
 - [Activity Corrections](../Activity/docs/phpstan-corrections-january-2026.md)
 - [UI Corrections](../UI/docs/phpstan-corrections-january-2026.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> Corrections](../<nome progetto>/docs/phpstan-corrections-january-2026.md)
+=======
+- [Quaeris Corrections](../Quaeris/docs/phpstan-corrections-january-2026.md)
+>>>>>>> laraxot/dev
 =======
 - [Quaeris Corrections](../Quaeris/docs/phpstan-corrections-january-2026.md)
 >>>>>>> laraxot/dev

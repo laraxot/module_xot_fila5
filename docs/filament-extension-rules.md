@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filament Class Extension Rules - <repo progetto>
+=======
+# Filament Class Extension Rules - base_techplanner_fila5_mono
+>>>>>>> laraxot/dev
 =======
 # Filament Class Extension Rules - base_techplanner_fila5_mono
 >>>>>>> laraxot/dev

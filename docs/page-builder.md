@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 //--- carino --
 http://preview.codecanyon.net/item/builderjs-html-email-page-builder/full_screen_preview/27146783?_ga=2.64183471.181704816.1592486325-1692742173.1592386239
@@ -26,6 +29,10 @@ https://codecanyon.net/item/drag-drop-email-builder/19423355
 
 https://github.com/HansSchouten/Laravel-Pagebuilder
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -61,6 +68,9 @@ updated: 2026-08-24
 - <https://codecanyon.net/item/drag-drop-email-builder/19423355>
 - <https://github.com/HansSchouten/Laravel-Pagebuilder>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

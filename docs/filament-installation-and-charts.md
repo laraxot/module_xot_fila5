@@ -324,7 +324,11 @@ public function panel(Panel $panel): Panel
 ```php
 // ❌ ERRATO - NON registrare asset chart in altri moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/<nome progetto>/app/Providers/Filament/AdminPanelProvider.php
+=======
+// Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
+>>>>>>> laraxot/dev
 =======
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
 >>>>>>> laraxot/dev
@@ -338,7 +342,11 @@ public function panel(Panel $panel): Panel
     // ❌ NON fare questo - causa duplicazioni e conflitti
     // FilamentAsset::register([
 <<<<<<< HEAD
+<<<<<<< HEAD
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/<nome progetto>'))->module(),
+=======
+    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
+>>>>>>> laraxot/dev
 =======
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
 >>>>>>> laraxot/dev

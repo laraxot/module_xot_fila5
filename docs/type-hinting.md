@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -17,6 +20,9 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 <!-- Contenuto migrato da _docs/type_hinting.txt -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -31,7 +37,10 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -44,21 +53,30 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 declare(strict_types = 1);
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types = 1);
 
 =======
+=======
+>>>>>>> laraxot/dev
 =======
 declare(strict_types = 1);
 
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 protected ClassName $classType;
 
@@ -103,7 +121,10 @@ function iterable_map(iterable $list, callable $operation) : iterable
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -132,9 +153,12 @@ public static function byArray(iterable $data)
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -156,9 +180,12 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -177,7 +204,10 @@ $instance->foo();
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -195,7 +225,10 @@ ublic function foo(): ?stdClass
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -209,8 +242,11 @@ function foo(): object
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -227,15 +263,24 @@ public function articles(): HasMany {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 
 
 https://github.com/oucil/Code-Hint-Aggregator
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://github.com/oucil/Code-Hint-Aggregator
+=======
+=======
+https://github.com/oucil/Code-Hint-Aggregator
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 =======
 https://github.com/oucil/Code-Hint-Aggregator

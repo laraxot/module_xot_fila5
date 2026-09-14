@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---
@@ -20,6 +23,9 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/machine_learning.txt -->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -44,7 +50,10 @@ https://github.com/angeloskath/php-nlp-tools
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -60,7 +69,10 @@ https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-nam
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -76,7 +88,10 @@ https://www.youtube.com/watch?v=06-AZXmwHjo
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -92,8 +107,11 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -134,7 +152,10 @@ https://github.com/nqxcode/laravel-lucene-search
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -148,7 +169,10 @@ https://www.textrazor.com/demo
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -163,7 +187,10 @@ https://github.com/yooper/php-text-analysis  !!!!!
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -179,7 +206,10 @@ https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Names
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -191,7 +221,10 @@ https://github.com/patrickschur/language-detection
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -202,8 +235,11 @@ https://github.com/php-ai/php-ml
 ---------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 https://cloud.google.com/natural-language/docs/analyzing-sentiment
 
@@ -213,6 +249,10 @@ https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!
 
 https://accidentalfactors.com/part-of-speech-tagging/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -224,6 +264,9 @@ https://cloud.google.com/natural-language/project_docs/analyzing-entities  !!!!!
 
 https://accidentalfactors.com/part-of-speech-tagging/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

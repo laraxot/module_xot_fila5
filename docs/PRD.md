@@ -322,7 +322,11 @@ $action->onQueue('default')->execute($data);
 ### 7.4 Technical Constraints
 - PHP 8.3+ required
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Laravel 13+ required
+=======
+- Laravel 12+ required
+>>>>>>> laraxot/dev
 =======
 - Laravel 12+ required
 >>>>>>> laraxot/dev

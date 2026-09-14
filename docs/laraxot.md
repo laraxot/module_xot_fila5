@@ -1201,11 +1201,18 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 3. **Form Schema**
    ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -1981,7 +1988,11 @@ Per validare tutti i moduli con PHPStan a livello 7:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd base_orisbroker_fila5/laravel
+=======
+cd base_orisbroker_fila3/laravel
+>>>>>>> laraxot/dev
 =======
 cd base_orisbroker_fila3/laravel
 >>>>>>> laraxot/dev
@@ -1992,7 +2003,11 @@ Per validare un singolo modulo:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd base_orisbroker_fila5/laravel
+=======
+cd base_orisbroker_fila3/laravel
+>>>>>>> laraxot/dev
 =======
 cd base_orisbroker_fila3/laravel
 >>>>>>> laraxot/dev
@@ -2281,7 +2296,11 @@ Prima di creare nuovi file:
 │   ├── Modules/           # Directory moduli
 │   │   ├── Xot/
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   │   ├── <nome progetto>/
+=======
+│   │   ├── Fixcity/
+>>>>>>> laraxot/dev
 =======
 │   │   ├── Fixcity/
 >>>>>>> laraxot/dev
@@ -2299,8 +2318,13 @@ Prima di creare nuovi file:
 #### ✅ Percorsi Corretti
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 laravel/Modules/<nome progetto>/app/Datas/ReportData.php
 laravel/Modules/<nome progetto>/app/Models/Report.php
+=======
+laravel/Modules/Fixcity/app/Datas/ReportData.php
+laravel/Modules/Fixcity/app/Models/Report.php
+>>>>>>> laraxot/dev
 =======
 laravel/Modules/Fixcity/app/Datas/ReportData.php
 laravel/Modules/Fixcity/app/Models/Report.php
@@ -2311,8 +2335,13 @@ laravel/Themes/Sixteen/dist/
 #### ❌ Percorsi Errati da Rimuovere
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 F:\var\www\<nome progetto>\Modules\              # ❌ ERRATO: manca laravel\
 F:\var\www\<nome progetto>\Modules\<nome progetto>\     # ❌ ERRATO: manca laravel\
+=======
+F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
+F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
+>>>>>>> laraxot/dev
 =======
 F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
 F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
@@ -2470,7 +2499,11 @@ laravel/Modules/[ModuleName]/
 ```blade
 {{-- Il componente sarà disponibile automaticamente --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-<nome progetto>::blocks.ticket_list.agid />
+=======
+<x-fixcity::blocks.ticket_list.agid />
+>>>>>>> laraxot/dev
 =======
 <x-fixcity::blocks.ticket_list.agid />
 >>>>>>> laraxot/dev
@@ -2480,17 +2513,23 @@ laravel/Modules/[ModuleName]/
 ```php
 // ❌ NON necessario - i componenti sono già autoregistrati
 <<<<<<< HEAD
+<<<<<<< HEAD
 class <nome progetto>ServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
         Blade::component('<nome progetto>-ticket-list-agid', SomeComponent::class); // Non necessario
 =======
+=======
+>>>>>>> laraxot/dev
 class FixcityServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
         Blade::component('fixcity-ticket-list-agid', SomeComponent::class); // Non necessario
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     }
 }
@@ -2567,7 +2606,11 @@ class XotBaseServiceProvider extends ServiceProvider
 ### Percorso Base del Progetto
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 F:\var\www\<nome progetto>\              # Root del progetto
+=======
+F:\var\www\fixcity\              # Root del progetto
+>>>>>>> laraxot/dev
 =======
 F:\var\www\fixcity\              # Root del progetto
 >>>>>>> laraxot/dev
@@ -2578,9 +2621,15 @@ F:\var\www\fixcity\              # Root del progetto
 ### ✅ Percorsi Corretti
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 F:\var\www\<nome progetto>\laravel\Modules\<nome progetto>\app\Datas\ReportData.php
 F:\var\www\<nome progetto>\laravel\Modules\<nome progetto>\app\Models\Report.php
 F:\var\www\<nome progetto>\laravel\Themes\Sixteen\dist\
+=======
+F:\var\www\fixcity\laravel\Modules\Fixcity\app\Datas\ReportData.php
+F:\var\www\fixcity\laravel\Modules\Fixcity\app\Models\Report.php
+F:\var\www\fixcity\laravel\Themes\Sixteen\dist\
+>>>>>>> laraxot/dev
 =======
 F:\var\www\fixcity\laravel\Modules\Fixcity\app\Datas\ReportData.php
 F:\var\www\fixcity\laravel\Modules\Fixcity\app\Models\Report.php
@@ -2590,6 +2639,7 @@ F:\var\www\fixcity\laravel\Themes\Sixteen\dist\
 
 ### ❌ Percorsi Errati da Rimuovere
 ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 F:\var\www\<nome progetto>\Modules\              # ❌ ERRATO: manca laravel\
 F:\var\www\<nome progetto>\Modules\<nome progetto>\     # ❌ ERRATO: manca laravel\
@@ -2601,6 +2651,8 @@ F:\var\www\<nome progetto>\Modules\<nome progetto>\     # ❌ ERRATO: manca lara
 3. Verificare il namespace corretto
 4. Mai creare file direttamente in `F:\var\www\<nome progetto>\Modules\`
 =======
+=======
+>>>>>>> laraxot/dev
 F:\var\www\fixcity\Modules\              # ❌ ERRATO: manca laravel\
 F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 ```
@@ -2610,6 +2662,9 @@ F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 2. Controllare il composer.json del modulo
 3. Verificare il namespace corretto
 4. Mai creare file direttamente in `F:\var\www\fixcity\Modules\`
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 # Comandi Artisan
@@ -2617,7 +2672,11 @@ F:\var\www\fixcity\Modules\Fixcity\     # ❌ ERRATO: manca laravel\
 ## Posizione Corretta
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 F:\var\www\<nome progetto>\
+=======
+F:\var\www\fixcity\
+>>>>>>> laraxot/dev
 =======
 F:\var\www\fixcity\
 >>>>>>> laraxot/dev
@@ -2634,15 +2693,21 @@ F:\var\www\fixcity\
 
 # Posizionarsi nella directory laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd F:\var\www\<nome progetto>\laravel
 
 # Eseguire i comandi da qui
 php artisan module:seed <nome progetto>
 =======
+=======
+>>>>>>> laraxot/dev
 cd F:\var\www\fixcity\laravel
 
 # Eseguire i comandi da qui
 php artisan module:seed Fixcity
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 php artisan migrate
 php artisan config:clear
@@ -2653,6 +2718,7 @@ php artisan config:clear
 
 # ❌ ERRATO: dalla root del progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd F:\var\www\<nome progetto>
 php artisan module:seed <nome progetto>  # Non funzionerà
 
@@ -2660,12 +2726,17 @@ php artisan module:seed <nome progetto>  # Non funzionerà
 cd F:\var\www\<nome progetto>\laravel\Modules
 php artisan module:seed <nome progetto>  # Non funzionerà
 =======
+=======
+>>>>>>> laraxot/dev
 cd F:\var\www\fixcity
 php artisan module:seed Fixcity  # Non funzionerà
 
 # ❌ ERRATO: dalla directory Modules
 cd F:\var\www\fixcity\laravel\Modules
 php artisan module:seed Fixcity  # Non funzionerà
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -2673,8 +2744,13 @@ php artisan module:seed Fixcity  # Non funzionerà
 ```bash
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Dalla directory F:\var\www\<nome progetto>\laravel
 php artisan module:seed <nome progetto>          # Seeding modulo
+=======
+# Dalla directory F:\var\www\fixcity\laravel
+php artisan module:seed Fixcity          # Seeding modulo
+>>>>>>> laraxot/dev
 =======
 # Dalla directory F:\var\www\fixcity\laravel
 php artisan module:seed Fixcity          # Seeding modulo
@@ -2687,7 +2763,11 @@ php artisan module:make-seeder Report    # Creare seeder
 ## Note Importanti
 1. **Directory di Lavoro**:
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\<nome progetto>\laravel`
+=======
+   - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\fixcity\laravel`
+>>>>>>> laraxot/dev
 =======
    - Tutti i comandi artisan devono essere eseguiti da `F:\var\www\fixcity\laravel`
 >>>>>>> laraxot/dev
@@ -2696,7 +2776,11 @@ php artisan module:make-seeder Report    # Creare seeder
 
 2. **Percorsi nei Comandi**:
 <<<<<<< HEAD
+<<<<<<< HEAD
    - I percorsi nei comandi sono relativi a `F:\var\www\<nome progetto>\laravel`
+=======
+   - I percorsi nei comandi sono relativi a `F:\var\www\fixcity\laravel`
+>>>>>>> laraxot/dev
 =======
    - I percorsi nei comandi sono relativi a `F:\var\www\fixcity\laravel`
 >>>>>>> laraxot/dev
@@ -2720,7 +2804,11 @@ Prima di creare qualsiasi file in un modulo, controllare sempre il `composer.jso
     "autoload": {
         "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "Modules\\<nome progetto>\\": "app/"     // ✅ Il namespace punta a app/
+=======
+            "Modules\\Fixcity\\": "app/"     // ✅ Il namespace punta a app/
+>>>>>>> laraxot/dev
 =======
             "Modules\\Fixcity\\": "app/"     // ✅ Il namespace punta a app/
 >>>>>>> laraxot/dev
@@ -2736,6 +2824,7 @@ Prima di creare qualsiasi file in un modulo, controllare sempre il `composer.jso
 #### Modulo con namespace in "app/"
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/<nome progetto>/composer.json:
 "Modules\\<nome progetto>\\": "app/"
 
@@ -2748,6 +2837,8 @@ laravel/Modules/<nome progetto>/app/Models/Report.php
 laravel/Modules/<nome progetto>/Providers/<nome progetto>ServiceProvider.php
 laravel/Modules/<nome progetto>/View/Components/Blocks/TicketList/Agid.php
 =======
+=======
+>>>>>>> laraxot/dev
 Modules/Fixcity/composer.json:
 "Modules\\Fixcity\\": "app/"
 
@@ -2759,6 +2850,9 @@ laravel/Modules/Fixcity/app/Models/Report.php
 ❌ Percorsi Errati:
 laravel/Modules/Fixcity/Providers/FixcityServiceProvider.php
 laravel/Modules/Fixcity/View/Components/Blocks/TicketList/Agid.php
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -2791,15 +2885,21 @@ laravel/Modules/UI/app/View/Components/Button.php
    ```php
    // ✅ Corretto: Usa il namespace definito in composer.json
 <<<<<<< HEAD
+<<<<<<< HEAD
    namespace Modules\<nome progetto>\View\Components;  // Sarà in app/View/Components
 
    // ❌ Errato: Ignora il namespace mapping
    namespace Modules\<nome progetto>\Components;       // Percorso non mappato
 =======
+=======
+>>>>>>> laraxot/dev
    namespace Modules\Fixcity\View\Components;  // Sarà in app/View/Components
 
    // ❌ Errato: Ignora il namespace mapping
    namespace Modules\Fixcity\Components;       // Percorso non mappato
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
    ```
 
@@ -2828,7 +2928,11 @@ Quando si usa una notazione del tipo `pub_theme::path.to.view`:
    ```
    // ❌ ERRATO: Cercare le views del tema nel modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
    Modules/<nome progetto>/resources/views/livewire/auth/login.blade.php
+=======
+   Modules/Fixcity/resources/views/livewire/auth/login.blade.php
+>>>>>>> laraxot/dev
 =======
    Modules/Fixcity/resources/views/livewire/auth/login.blade.php
 >>>>>>> laraxot/dev
@@ -4081,7 +4185,11 @@ laravel/Modules/[ModuleName]/
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Esempio: `Modules/<nome progetto>/resources/svg/<nome progetto>.svg`
+=======
+- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
+>>>>>>> laraxot/dev
 =======
 - Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
 >>>>>>> laraxot/dev
@@ -4126,15 +4234,21 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 ```blade
 {{-- Uso come componente --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-<nome progetto>-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
 @include('svg::<nome progetto>')
 =======
+=======
+>>>>>>> laraxot/dev
 <x-fixcity-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
 @include('svg::fixcity')
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -4175,15 +4289,21 @@ Se l'icona non viene visualizzata:
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-<nome progetto>-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
 <x-<nome progetto>-icon class="w-6 h-6 text-gray-500" />
 =======
+=======
+>>>>>>> laraxot/dev
 <x-fixcity-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
 <x-fixcity-icon class="w-6 h-6 text-gray-500" />
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -4585,11 +4705,18 @@ protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4604,11 +4731,18 @@ class TicketResource extends XotBaseResource
 
     // ✅ CORRETTO: Metodo statico
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4634,11 +4768,18 @@ public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4649,11 +4790,18 @@ public function getFormSchema(): array
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4667,11 +4815,18 @@ public function getFormSchema(): array
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4694,11 +4849,18 @@ public function getFormSchema(): array
     * @return array<int, \Filament\Forms\Components\Component>
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4735,11 +4897,18 @@ public function getFormSchema(): array
    ```php
    // Usa sempre return type declarations
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4752,11 +4921,18 @@ public function getFormSchema(): array
     * @return array<int, \Filament\Forms\Components\Component>
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -5419,7 +5595,11 @@ Modules/YourModule/
 ### ✅ CORRETTO: Include il Resource nel namespace
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\TicketResource\RelationManagers;
+=======
+namespace Modules\Fixcity\Filament\Resources\TicketResource\RelationManagers;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Fixcity\Filament\Resources\TicketResource\RelationManagers;
 >>>>>>> laraxot/dev
@@ -5428,7 +5608,11 @@ namespace Modules\Fixcity\Filament\Resources\TicketResource\RelationManagers;
 ### ❌ ERRATO: Namespace generico
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\RelationManagers;
+=======
+namespace Modules\Fixcity\Filament\Resources\RelationManagers;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Fixcity\Filament\Resources\RelationManagers;
 >>>>>>> laraxot/dev
@@ -5922,11 +6106,18 @@ class TicketResource extends XotBaseResource
     protected static ?string $model = Ticket::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -6892,7 +7083,11 @@ laravel/Modules/[ModuleName]/
 ### 2. Convenzioni di Denominazione
 - Il file SVG deve avere lo stesso nome del modulo (lowercase)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Esempio: `Modules/<nome progetto>/resources/svg/<nome progetto>.svg`
+=======
+- Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
+>>>>>>> laraxot/dev
 =======
 - Esempio: `Modules/Fixcity/resources/svg/fixcity.svg`
 >>>>>>> laraxot/dev
@@ -6937,15 +7132,21 @@ Una volta registrata, l'icona può essere utilizzata nei template Blade:
 ```blade
 {{-- Uso come componente --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-<nome progetto>-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
 @include('svg::<nome progetto>')
 =======
+=======
+>>>>>>> laraxot/dev
 <x-fixcity-icon class="w-6 h-6" />
 
 {{-- Uso come vista --}}
 @include('svg::fixcity')
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -6986,15 +7187,21 @@ Se l'icona non viene visualizzata:
 ```blade
 {{-- ❌ ERRATO: Dimensioni fisse --}}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-<nome progetto>-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
 <x-<nome progetto>-icon class="w-6 h-6 text-gray-500" />
 =======
+=======
+>>>>>>> laraxot/dev
 <x-fixcity-icon width="24" height="24" />
 
 {{-- ✅ CORRETTO: Classi Tailwind --}}
 <x-fixcity-icon class="w-6 h-6 text-gray-500" />
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ```
 
@@ -7396,11 +7603,18 @@ protected function getFormSchema(): array
 
 // ✅ CORRETTO: getFormSchema deve essere statico
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7415,11 +7629,18 @@ class TicketResource extends XotBaseResource
 
     // ✅ CORRETTO: Metodo statico
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
     public function getFormSchema(): array
 =======
 <<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7445,11 +7666,18 @@ public function getFormSchema(): array
 
 // ✅ CORRETTO: public e statico
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7460,11 +7688,18 @@ public function getFormSchema(): array
 ```php
 // ❌ ERRATO: Accesso a $this in metodo statico
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7478,11 +7713,18 @@ public function getFormSchema(): array
 
 // ✅ CORRETTO: Usa metodi statici o proprietà statiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 public function getFormSchema(): array
 =======
 <<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7505,11 +7747,18 @@ public function getFormSchema(): array
     * @return array<int, \Filament\Forms\Components\Component>
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7546,11 +7795,18 @@ public function getFormSchema(): array
    ```php
    // Usa sempre return type declarations
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -7563,11 +7819,18 @@ public function getFormSchema(): array
     * @return array<int, \Filament\Forms\Components\Component>
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
    public static function getFormSchema(): array
    public function getFormSchema(): array
 =======
 <<<<<<< HEAD
    public static function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -8092,7 +8355,11 @@ use Modules\Ticket\Models\Ticket as Model;  // ❌ ERRATO
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\<nome progetto>\Models;
+=======
+namespace Modules\Fixcity\Models;
+>>>>>>> laraxot/dev
 =======
 namespace Modules\Fixcity\Models;
 >>>>>>> laraxot/dev
@@ -8345,7 +8612,11 @@ La struttura base del progetto segue questo schema:
 ```
                    # Root del workspace
 <<<<<<< HEAD
+<<<<<<< HEAD
 └── base_orisbroker_fila5/          # Directory principale del progetto
+=======
+└── base_orisbroker_fila3/          # Directory principale del progetto
+>>>>>>> laraxot/dev
 =======
 └── base_orisbroker_fila3/          # Directory principale del progetto
 >>>>>>> laraxot/dev

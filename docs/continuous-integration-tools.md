@@ -1,7 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 module: theme
 topic: continuous-integration-tools
@@ -10,6 +13,10 @@ canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.
 
 See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
 =======
 =======
 >>>>>>> laraxot/dev
@@ -100,6 +107,9 @@ https://grafikart.fr/tutoriels/grumphp-836
 
 https://jakzal.github.io/toolbox/
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -10,7 +10,11 @@
 ## 🎯 OVERVIEW
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto <nome progetto>. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
+=======
+Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
+>>>>>>> laraxot/dev
 =======
 Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
 >>>>>>> laraxot/dev
@@ -49,7 +53,11 @@ composer require --dev phpmd/phpmd
 ```xml
 <?xml version="1.0"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <ruleset name="<nome progetto> Code Quality Rules"
+=======
+<ruleset name="FixCity Code Quality Rules"
+>>>>>>> laraxot/dev
 =======
 <ruleset name="FixCity Code Quality Rules"
 >>>>>>> laraxot/dev
@@ -60,7 +68,11 @@ composer require --dev phpmd/phpmd
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <description><nome progetto> PHP Mess Detector Rules</description>
+=======
+    <description>FixCity PHP Mess Detector Rules</description>
+>>>>>>> laraxot/dev
 =======
     <description>FixCity PHP Mess Detector Rules</description>
 >>>>>>> laraxot/dev
@@ -135,7 +147,11 @@ composer require --dev phpmd/phpmd
 ```bash
 # Analisi modulo specifico
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/phpmd Modules/<nome progetto>/app/ text phpmd.xml
+=======
+./vendor/bin/phpmd Modules/Fixcity/app/ text phpmd.xml
+>>>>>>> laraxot/dev
 =======
 ./vendor/bin/phpmd Modules/Fixcity/app/ text phpmd.xml
 >>>>>>> laraxot/dev
@@ -262,7 +278,11 @@ composer require laravel/pint --dev
 ```bash
 # Formattazione singolo modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./vendor/bin/pint Modules/<nome progetto>/
+=======
+./vendor/bin/pint Modules/Fixcity/
+>>>>>>> laraxot/dev
 =======
 ./vendor/bin/pint Modules/Fixcity/
 >>>>>>> laraxot/dev
@@ -745,7 +765,11 @@ jobs:
 
 # Report per modulo
 <<<<<<< HEAD
+<<<<<<< HEAD
 ./scripts/generate-module-report.sh <nome progetto>
+=======
+./scripts/generate-module-report.sh Fixcity
+>>>>>>> laraxot/dev
 =======
 ./scripts/generate-module-report.sh Fixcity
 >>>>>>> laraxot/dev
@@ -837,7 +861,11 @@ jobs:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto <nome progetto>.*
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
+>>>>>>> laraxot/dev
 =======
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
 >>>>>>> laraxot/dev

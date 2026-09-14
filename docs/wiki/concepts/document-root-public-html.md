@@ -16,7 +16,11 @@ related:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 <repo progetto>/
+=======
+base_ptvx_fila5/
+>>>>>>> laraxot/dev
 =======
 base_ptvx_fila5/
 >>>>>>> laraxot/dev

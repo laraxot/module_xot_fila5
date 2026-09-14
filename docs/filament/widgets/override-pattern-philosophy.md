@@ -24,7 +24,11 @@ protected function useNativeSubmitButton(): bool
 protected function getNativeSubmitButtonLabel(): string
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    return (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
     return (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev
@@ -75,7 +79,11 @@ protected function getWizardSubmitAction(): Htmlable
 protected function getWizardSubmitAction(): Htmlable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev
@@ -134,7 +142,11 @@ class MyWidget extends XotBaseWizardWidget
     protected function getWizardSubmitAction(): Htmlable
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+        $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
         $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev
@@ -200,7 +212,11 @@ class MyWidget extends XotBaseWizardWidget
 protected function getWizardSubmitAction(): Htmlable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev
@@ -352,7 +368,11 @@ protected function getNativeSubmitButtonClasses(): string { return 'btn btn-prim
 protected function getWizardSubmitAction(): Htmlable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev
@@ -451,7 +471,11 @@ Abbiamo rimosso gli hook e reso `getWizardSubmitAction()` direttamente overridea
 protected function getWizardSubmitAction(): Htmlable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
 =======
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
 >>>>>>> laraxot/dev

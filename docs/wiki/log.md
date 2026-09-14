@@ -9,7 +9,11 @@ qmd: "Xot log phpstan pest bridge discipline ponytail audit domain actions"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/237"
+=======
+  - "https://github.com/laraxot/base_predict_fila5/issues/237"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_predict_fila5/issues/237"
 >>>>>>> laraxot/dev
@@ -47,7 +51,11 @@ qmd: "Xot log phpstan pest bridge discipline ponytail audit"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/237"
+=======
+  - "https://github.com/laraxot/base_predict_fila5/issues/237"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_predict_fila5/issues/237"
 >>>>>>> laraxot/dev
@@ -157,7 +165,11 @@ discussions:
   - `BaseGeoService` polymorphism intent (MEDIUM)
   - `TeamContract` plugin extension intent (MEDIUM)
 <<<<<<< HEAD
+<<<<<<< HEAD
   - GitHub Issue: #237 — [Ponytail Audit Phase 3: Architectural Review](https://github.com/laraxot/<repo progetto>/issues/237)
+=======
+  - GitHub Issue: #237 — [Ponytail Audit Phase 3: Architectural Review](https://github.com/laraxot/base_predict_fila5/issues/237)
+>>>>>>> laraxot/dev
 =======
   - GitHub Issue: #237 — [Ponytail Audit Phase 3: Architectural Review](https://github.com/laraxot/base_predict_fila5/issues/237)
 >>>>>>> laraxot/dev
@@ -192,6 +204,7 @@ discussions:
 - Ripulito `start.txt`: rimossi duplicati legacy; regole struttura modulo e Pest-only integrate.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## [2026-06-30] composer | verifica allineamento <nome progetto> + wiki hub progetto
 
 - Verificato: `laravel/composer.json` Predict gia' skeleton (piu' stretto di <nome progetto>: no responsecache/phpmd/seeders nel root).
@@ -199,12 +212,17 @@ discussions:
 - Nuova pagina Xot: [`composer-merge-plugin-modules-only.md`](concepts/composer-merge-plugin-modules-only.md).
 - Raw confronto aggiornato: [`composer-root-skeleton-<nome progetto>-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-<nome progetto>-comparison-2026-06-30.md).
 =======
+=======
+>>>>>>> laraxot/dev
 ## [2026-06-30] composer | verifica allineamento FixCity + wiki hub progetto
 
 - Verificato: `laravel/composer.json` Predict gia' skeleton (piu' stretto di FixCity: no responsecache/phpmd/seeders nel root).
 - Nuova pagina progetto: [`docs/wiki/concepts/composer-root-minimal-nwidart.md`](../../../../../../docs/wiki/concepts/composer-root-minimal-nwidart.md).
 - Nuova pagina Xot: [`composer-merge-plugin-modules-only.md`](concepts/composer-merge-plugin-modules-only.md).
 - Raw confronto aggiornato: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## [2026-06-30] composer | gate start.txt + autoload runtime temi
@@ -214,7 +232,11 @@ discussions:
 - Pagina: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## [2026-06-30] composer | root skeleton allineato a <nome progetto>
+=======
+## [2026-06-30] composer | root skeleton allineato a FixCity
+>>>>>>> laraxot/dev
 =======
 ## [2026-06-30] composer | root skeleton allineato a FixCity
 >>>>>>> laraxot/dev
@@ -224,7 +246,11 @@ discussions:
 - Pagina corretta: [`theme-psr4-autoload-without-merge.md`](concepts/theme-psr4-autoload-without-merge.md).
 - Aggiornata: [`composer-root-skeleton-modular.md`](concepts/composer-root-skeleton-modular.md).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Raw: [`composer-root-skeleton-<nome progetto>-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-<nome progetto>-comparison-2026-06-30.md).
+=======
+- Raw: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
+>>>>>>> laraxot/dev
 =======
 - Raw: [`composer-root-skeleton-fixcity-comparison-2026-06-30.md`](../raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md).
 >>>>>>> laraxot/dev
@@ -262,7 +288,11 @@ discussions:
 - Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Base [#372](https://github.com/laraxot/<repo progetto>/issues/372).
+=======
+- Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
+>>>>>>> laraxot/dev
 =======
 - Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 >>>>>>> laraxot/dev
@@ -306,8 +336,13 @@ discussions:
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/<repo progetto>/issues/272) / [D#273](https://github.com/laraxot/<repo progetto>/discussions/273)
+=======
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
+>>>>>>> laraxot/dev
 =======
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
@@ -321,7 +356,11 @@ discussions:
 ## [2026-05-26] docs | codice nominale pivot / ThemeComposer / ProfileFactory scan
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/<nome progetto>); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
+=======
+- **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
+>>>>>>> laraxot/dev
 =======
 - **Verifica sorgenti + script**: scaffold `Dashboard`/`RouteServiceProvider` per modulo (**atteso** moduli Laravel); divergenza reale famiglia **`BasePivot`** vs **`XotBasePivot`**; **`ProfileFactory`** basename ripetuto con hash diverso (User/Gdpr/Fixcity); **Cms ThemeComposer** duplicato nel path `resources/views/` fuori da PSR-4.
 >>>>>>> laraxot/dev
@@ -331,7 +370,11 @@ discussions:
 
 - **Obiettivo**: consolidare osservabilità delle ripetizioni (codice + documentazione) senza toccare applicativo.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo <nome progetto> tema**: superfici duplicate cross-modulo in [`<nome progetto>-cross-module-duplicate-surfaces.md`](../../../<nome progetto>/docs/wiki/redundancy/<nome progetto>-cross-module-duplicate-surfaces.md).
+=======
+- **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
+>>>>>>> laraxot/dev
 =======
 - **Deliverable**: [`redundancy/audit-profondo-ridondanze-holistic.md`](redundancy/audit-profondo-ridondanze-holistic.md); aggiornato [`byte-identical-files-static-scan.md`](redundancy/byte-identical-files-static-scan.md) (riesame numeri SHA256 rigorosi `.php` vs `.blade.php`); sistemati hub [`concepts/ridondanze-cross-cutting-codebase.md`](concepts/ridondanze-cross-cutting-codebase.md) e [`concepts/redundancy-catalog.md`](concepts/redundancy-catalog.md) (prima gravemente corrotti da `- **Nota modulo Fixcity tema**: superfici duplicate cross-modulo in [`fixcity-cross-module-duplicate-surfaces.md`](../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
 >>>>>>> laraxot/dev
@@ -341,7 +384,11 @@ discussions:
 - **Motivo progetto**: il submit deve usare **`$this->form->getState()`** così come lo espone Filament/schema, senza helper PHP che appiattiscono wrapper (`wizard`) nel widget base.
 - **Codice**: `XotBaseWizardWidget` contiene solo costruzione `Wizard` + policy `?step=` + vista tema; **nessun** `normalizeWizardFormState()` / `getWizardSchemaWrapperKey()` sulla classe.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto>**: `CreateTicketWizardWidget::submit()` legge `getState()` e fa merge opzionale `owner_id` se auth; vedi [`CreateTicketWizardWidget.php`](../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php).
+=======
+- **Fixcity**: `CreateTicketWizardWidget::submit()` legge `getState()` e fa merge opzionale `owner_id` se auth; vedi [`CreateTicketWizardWidget.php`](../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php).
+>>>>>>> laraxot/dev
 =======
 - **Fixcity**: `CreateTicketWizardWidget::submit()` legge `getState()` e fa merge opzionale `owner_id` se auth; vedi [`CreateTicketWizardWidget.php`](../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php).
 >>>>>>> laraxot/dev
@@ -406,15 +453,21 @@ discussions:
 ## [2026-06-30] governance | Composer root skeleton modulare
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Confrontato `<repo progetto>/laravel/composer.json` con Predict.
 - Aggiornata la regola: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`.
 - Chiariti anti-pattern: niente `Modules\\`, `Database\\Seeders\\` o `Themes\\*\\` nell'autoload root, niente merge dei temi, niente dipendenze funzionali nel root.
 - Raw note: `docs/raw/notes/composer-root-skeleton-<nome progetto>-comparison-2026-06-30.md`.
 =======
+=======
+>>>>>>> laraxot/dev
 - Confrontato `base_fixcity_fila5/laravel/composer.json` con Predict.
 - Aggiornata la regola: root minimo con `php`, `laravel/framework`, `nwidart/laravel-modules`; merge solo `Modules/*/composer.json`.
 - Chiariti anti-pattern: niente `Modules\\`, `Database\\Seeders\\` o `Themes\\*\\` nell'autoload root, niente merge dei temi, niente dipendenze funzionali nel root.
 - Raw note: `docs/raw/notes/composer-root-skeleton-fixcity-comparison-2026-06-30.md`.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - Wiki: `docs/wiki/concepts/composer-root-skeleton-modular.md`.
 
@@ -476,3 +529,26 @@ discussions:
 - Commit: docs: add cross-reference to policy boundary decision
 
 2026-06-30 | start.txt v12 — cleanup: rimosso §1.10 duplicato, rg pre-check, test-naming in output, PHPStan consolidato in §6, appendice compressa
+<<<<<<< HEAD
+=======
+
+## 2026-09-11 — Delega Resource per ManageRelatedRecords
+
+Brainstorming documentale e story BMAD, nessuna implementazione. [Memoria](concepts/manage-related-records-resource-delegation.md), [analisi](../filament/manage-related-records-resource-delegation-brainstorming.md), [story](../stories/manage-related-records-resource-delegation.story.md). QMD search/update tentati ma bloccati da ABI Node/SQLite; fonti lette direttamente.
+
+### 2026-09-11 — Revisione senza trait nelle pagine related
+
+Aggiornati [brainstorming](../filament/manage-related-records-resource-delegation-brainstorming.md), [story BMAD](../stories/manage-related-records-resource-delegation.story.md) e [memoria](concepts/manage-related-records-resource-delegation.md). Preferenza E: delega nativa, evitando doppia configurazione table. Solo documentazione; nessuna verifica runtime dichiarata.
+
+### Consolidamento della proposta form/table — 2026-09-11
+
+Rivisti gli undici documenti richiesti: delega completa, correzione getResource owner, percorsi A/B esclusivi. Ritirate raccomandazioni contraddittorie e percentuali di sicurezza non dimostrate. [Fonte canonica](../architecture/xotbasemanagerelatedrecords-form-table-delegation-feasibility.md), [story](../stories/manage-related-records-resource-delegation.story.md). Solo documentazione.
+
+### Proposta PHP documentata e review multi-agente
+
+Writer `/root`, reviewer `/root/proposal_review`; story condivisa aggiornata. [Artefatto](../app/Filament/Resources/Pages/XotBaseManageRelatedRecords.php.md) con contributo concorrente preservato come storico; finding layout e ambiguità recepiti. Solo docs; sintassi via stdin verificata, nessun PHP applicativo modificato da questo task.
+
+### 2026-09-11 — Tracking BMAD completato
+
+Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [discussion #114](https://github.com/laraxot/module_xot_fila5/discussions/114) nel repository Xot, collegate alla story e alla memoria. MCP tentato con 403; pubblicazione riuscita con gh. Nessuna modifica applicativa.
+>>>>>>> laraxot/dev

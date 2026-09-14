@@ -68,7 +68,11 @@ XotBaseTestCase **is** the Laraxot platform layer for testing — not a wrapper 
 
 All Laraxot modules (as of 2026-06-10) extend XotBaseTestCase correctly:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Activity, Blog, Comment, Cms, <nome progetto>, Gdpr, Geo, Job, JobBatch, Lang, Media, Notify, Rating, Tenant, UI, User, Xot
+=======
+- Activity, Blog, Comment, Cms, Fixcity, Gdpr, Geo, Job, JobBatch, Lang, Media, Notify, Rating, Tenant, UI, User, Xot
+>>>>>>> laraxot/dev
 =======
 - Activity, Blog, Comment, Cms, Fixcity, Gdpr, Geo, Job, JobBatch, Lang, Media, Notify, Rating, Tenant, UI, User, Xot
 >>>>>>> laraxot/dev
