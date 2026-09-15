@@ -21,7 +21,8 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 test('getTableSortColumn default su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable
     {
-        public function getTableColumns(): array
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
         {
             return [];
         }
@@ -39,7 +40,8 @@ test('getTableSortColumn default su XotBaseResourceTable', function (): void {
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable
     {
-        public function getTableColumns(): array
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
         {
             return [];
         }
