@@ -29,7 +29,7 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
-        if ($file === '.' || $file === '..') {
+        if ('.' === $file || '..' === $file) {
             continue;
         }
 

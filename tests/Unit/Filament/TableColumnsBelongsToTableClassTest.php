@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Filament;
 
 use Modules\Xot\Tests\TestCase;
-use Webmozart\Assert\Assert as WebmozartAssert;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
+
+use Webmozart\Assert\Assert as WebmozartAssert;
 
 uses(TestCase::class)->group('no-db');
 
@@ -61,7 +62,7 @@ function filamentPageFiles(): array
             WebmozartAssert::isInstanceOf($file, \SplFileInfo::class);
 
             $path = $file->getPathname();
-            if ($file->getExtension() !== 'php') {
+            if ('php' !== $file->getExtension()) {
                 continue;
             }
             if (! str_contains($path, '/app/Filament/')) {
@@ -89,10 +90,10 @@ function declaredClassAndParent(string $file): ?array
 {
     $src = file_get_contents($file);
 
-    if (preg_match('/^namespace\s+([^;]+);/m', $src, $ns) !== 1) {
+    if (1 !== preg_match('/^namespace\s+([^;]+);/m', $src, $ns)) {
         return null;
     }
-    if (preg_match('/^(?:final\s+|abstract\s+)*class\s+(\w+)(?:\s+extends\s+([\w\\\\]+))?/m', $src, $cls) !== 1) {
+    if (1 !== preg_match('/^(?:final\s+|abstract\s+)*class\s+(\w+)(?:\s+extends\s+([\w\\\\]+))?/m', $src, $cls)) {
         return null;
     }
 
@@ -102,22 +103,22 @@ function declaredClassAndParent(string $file): ?array
     $name = (string) ($cls[1] ?? '');
     $parent = (string) ($cls[2] ?? '');
 
-    if ($namespace === '' || $name === '') {
+    if ('' === $namespace || '' === $name) {
         return null;
     }
 
     $class = $namespace.'\\'.$name;
 
-    if ($parent === '') {
+    if ('' === $parent) {
         return ['class' => $class, 'parent' => null];
     }
     if (str_contains($parent, '\\')) {
         return ['class' => $class, 'parent' => ltrim($parent, '\\')];
     }
-    if (preg_match('/^use\s+([\w\\\\]*\\\\'.preg_quote($parent, '/').')\s*;/m', $src, $imp) === 1) {
+    if (1 === preg_match('/^use\s+([\w\\\\]*\\\\'.preg_quote($parent, '/').')\s*;/m', $src, $imp)) {
         $imported = (string) ($imp[1] ?? '');
 
-        if ($imported !== '') {
+        if ('' !== $imported) {
             return ['class' => $class, 'parent' => $imported];
         }
     }
@@ -140,7 +141,7 @@ function listPageFiles(): array
 
     foreach (filamentPageFiles() as $file) {
         $info = declaredClassAndParent($file);
-        if ($info === null) {
+        if (null === $info) {
             continue;
         }
         $parents[$info['class']] = $info['parent'];
@@ -153,7 +154,7 @@ function listPageFiles(): array
     foreach (array_keys($parents) as $class) {
         $current = $parents[$class] ?? null;
 
-        for ($hop = 0; $hop < 10 && $current !== null; $hop++) {
+        for ($hop = 0; $hop < 10 && null !== $current; ++$hop) {
             if ($current === $base) {
                 $pages[$class] = $files[$class];
                 break;
@@ -179,19 +180,19 @@ function declaresMethod(string $file, string $method): bool
     $tokens = token_get_all(file_get_contents($file));
     $count = count($tokens);
 
-    for ($i = 0; $i < $count; $i++) {
+    for ($i = 0; $i < $count; ++$i) {
         $token = $tokens[$i];
-        if (! is_array($token) || $token[0] !== T_FUNCTION) {
+        if (! is_array($token) || T_FUNCTION !== $token[0]) {
             continue;
         }
-        for ($j = $i + 1; $j < $count; $j++) {
+        for ($j = $i + 1; $j < $count; ++$j) {
             if (! is_array($tokens[$j])) {
                 continue;
             }
-            if ($tokens[$j][0] === T_WHITESPACE) {
+            if (T_WHITESPACE === $tokens[$j][0]) {
                 continue;
             }
-            if ($tokens[$j][0] === T_STRING && $tokens[$j][1] === $method) {
+            if (T_STRING === $tokens[$j][0] && $tokens[$j][1] === $method) {
                 return true;
             }
             break;

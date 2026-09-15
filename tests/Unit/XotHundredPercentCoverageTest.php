@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\View;
-use Mockery;
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\MetatagData;
@@ -24,15 +23,16 @@ use Modules\Xot\Tests\ModuleRemainingCoverage;
 use Modules\Xot\Tests\TestCase;
 use PhpCsFixer\Config;
 use PHPUnit\Framework\Assert;
-use Symfony\Component\HttpFoundation\Response;
 
 use function Safe\ob_end_clean;
 use function Safe\ob_start;
 
+use Symfony\Component\HttpFoundation\Response;
+
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 function xot100Invoke(object $target, string $method, mixed ...$args): mixed
@@ -270,7 +270,7 @@ PHP);
             FileAction::getFileNameByClassName(XotData::class)
         );
 
-        $action = new FileAction;
+        $action = new FileAction();
         try {
             $action->execute();
         } catch (\Throwable) {
@@ -278,7 +278,7 @@ PHP);
     });
 
     test('XotData rami SSL tenant profile team child e update', function (): void {
-        $xot = new XotData;
+        $xot = new XotData();
         $xot->main_module = 'User';
         $xot->pub_theme = 'One';
         $xot->adm_theme = 'One';
@@ -317,7 +317,7 @@ PHP);
         File::ensureDirectoryExists(dirname($logoPath));
         File::put($logoPath, 'png-data');
 
-        $meta = new MetatagData;
+        $meta = new MetatagData();
         $meta->title = 'Titolo';
         $meta->sitename = 'Sito';
         $meta->description = 'Desc';
@@ -353,7 +353,7 @@ PHP);
         config(['cache.default' => 'array']);
         Cache::store('array')->flush();
 
-        $mw = new SecurityMiddleware;
+        $mw = new SecurityMiddleware();
 
         // GET ok
         $ok = Request::create('/dashboard', 'GET', [], [], [], [
@@ -413,11 +413,12 @@ PHP);
     });
 
     test('XotBaseMigration reflection helper schema e blueprint', function (): void {
-        $migration = new class extends XotBaseMigration
-        {
+        $migration = new class extends XotBaseMigration {
             protected ?string $model_class = CacheModel::class;
 
-            public function up(): void {}
+            public function up(): void
+            {
+            }
         };
 
         Assert::assertSame(CacheModel::class, $migration->getModelClass());
@@ -426,7 +427,7 @@ PHP);
 
         $ref = new \ReflectionClass($migration);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
-            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
+            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

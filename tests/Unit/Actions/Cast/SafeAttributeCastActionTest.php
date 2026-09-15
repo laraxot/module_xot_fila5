@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Cast;
 
-use Mockery;
 use Mockery\MockInterface;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
@@ -13,7 +12,7 @@ use PHPUnit\Framework\Assert;
 describe('Safe Attribute Cast Action', function (): void {
     test('manages eloquent attributes safely', function (): void {
         /** @var Activity&MockInterface $model */
-        $model = Mockery::mock(Activity::class);
+        $model = \Mockery::mock(Activity::class);
         $model->shouldReceive('getAttribute')->with('name')->andReturn('Test User');
         $model->shouldReceive('getAttribute')->with('email')->andReturn('');
         $model->shouldReceive('getAttribute')->with('id')->andReturn(123);
