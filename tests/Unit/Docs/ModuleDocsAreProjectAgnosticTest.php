@@ -84,7 +84,7 @@ function moduleDocsWithHostProjectName(): array
         );
 
         foreach ($iterator as $fileInfo) {
-            if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'md') {
+            if (! $fileInfo instanceof \SplFileInfo || 'md' !== $fileInfo->getExtension()) {
                 continue;
             }
 
@@ -124,12 +124,12 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
     expect(count($hits))->toBeLessThanOrEqual(
         MODULE_DOCS_HOST_NAME_FILE_BASELINE,
         "Un documento di modulo nomina un'installazione specifica. Un modulo gira in "
-        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
+        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
         .'Vedi docs/wiki/rules/project-agnostic.md'
     );
 });
 
-/**
+/*
  * Sui README il tetto e' ZERO, e non e' un inasprimento arbitrario.
  *
  * Il ratchet globale misura un totale: finche' il totale non sale, un singolo file puo'
