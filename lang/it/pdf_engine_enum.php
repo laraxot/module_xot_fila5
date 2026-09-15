@@ -53,11 +53,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-        'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => '', 'description' => 'spipu'],
-=======
         'spipu' => ['label' => 'spipu', 'placeholder' => 'spipu', 'helper_text' => 'spipu', 'description' => 'spipu'],
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [

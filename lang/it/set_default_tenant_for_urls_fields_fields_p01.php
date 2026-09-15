@@ -47,11 +47,7 @@ return [
         ],
         'cap' => [
             'description' => 'cap',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'cap',
->>>>>>> laraxot/dev
             'placeholder' => 'cap',
             'label' => 'cap',
             'tooltip' => '',
@@ -254,11 +250,7 @@ return [
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'itemIsDefault',
->>>>>>> laraxot/dev
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
             'tooltip' => '',
@@ -296,77 +288,49 @@ return [
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'user_id',
->>>>>>> laraxot/dev
             'description' => 'user_id',
             'tooltip' => '',
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'name',
->>>>>>> laraxot/dev
             'description' => 'name',
             'tooltip' => '',
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'slug',
->>>>>>> laraxot/dev
             'description' => 'slug',
             'tooltip' => '',
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'category_id',
->>>>>>> laraxot/dev
             'description' => 'category_id',
             'tooltip' => '',
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'description',
->>>>>>> laraxot/dev
             'description' => 'description',
             'tooltip' => '',
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'details',
->>>>>>> laraxot/dev
             'description' => 'details',
             'tooltip' => '',
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'is_active',
->>>>>>> laraxot/dev
             'description' => 'is_active',
             'tooltip' => '',
         ],

@@ -48,15 +48,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
-<<<<<<< HEAD
     // abstract public static function getFormSchema(): array;
-=======
-<<<<<<< HEAD
-    // abstract public function getFormSchema(): array;
-=======
-    // abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     /**
      * Configura lo schema per i record correlati.
@@ -85,13 +77,6 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<string, TextColumn>
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    #[\Override]
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [

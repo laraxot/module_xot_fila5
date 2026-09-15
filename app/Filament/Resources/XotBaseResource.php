@@ -144,15 +144,7 @@ abstract class XotBaseResource extends FilamentResource
      *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
     public function getFormSchemaOld(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchemaOld(): array
-=======
-    public function getFormSchemaOld(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [];
     }
@@ -372,14 +364,7 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getWizardSubmitAction(): Htmlable
     {
-<<<<<<< HEAD
         /** @var view-string $submit_view */
-=======
-<<<<<<< HEAD
-=======
-        /** @var view-string $submit_view */
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $submit_view = 'pub_theme::filament.wizard.submit-button';
         if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");
