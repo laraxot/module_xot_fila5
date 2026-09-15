@@ -1,0 +1,12 @@
+---
+name: search-1
+description: "<!-- Contenuto migrato da docs/search.txt -->"
+metadata:
+  type: documentation
+---
+
+# _search
+
+<!-- Contenuto migrato da _docs/_search.txt -->
+
+https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations

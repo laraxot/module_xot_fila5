@@ -1,0 +1,8 @@
+---
+name: admin-template
+description: "admin-template"
+metadata:
+  type: documentation
+---
+
+
