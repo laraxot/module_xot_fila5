@@ -7,7 +7,6 @@ namespace Modules\Xot\Tests\Unit;
 use Modules\Xot\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 use function Safe\glob;
 
@@ -52,14 +51,14 @@ describe('Xot coverage boost', function (): void {
                     Assert::assertNotEmpty($case->getLabel());
                 }
             }
-            $seen++;
+            ++$seen;
         }
         Assert::assertGreaterThan(0, $seen, 'Xot deve scoprire almeno un enum concreto');
     });
 
     test('cast and string actions resolve from container', function (): void {
         foreach (array_merge(xotBoostClasses('Actions/Cast/*.php'), xotBoostClasses('Actions/String/*.php')) as $class) {
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -70,7 +69,7 @@ describe('Xot coverage boost', function (): void {
 
     test('value objects and datas are constructible', function (): void {
         foreach (array_merge(xotBoostClasses('ValueObjects/*.php'), xotBoostClasses('Datas/*.php')) as $class) {
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }

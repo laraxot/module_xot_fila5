@@ -19,7 +19,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * Defines the state machine configuration and required methods
  * that must be implemented by each concrete state class.
  *
- * @property string $name Il nome dello stato
+ * @property string $name  Il nome dello stato
  * @property string $value Il valore dello stato nel database
  */
 abstract class XotBaseState implements StateContract
@@ -88,8 +88,9 @@ abstract class XotBaseState implements StateContract
     /**
      * Fill form data for modal.
      *
-     * @param  array<string, mixed>  $arguments
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
+     *
      * @return array<string, mixed>
      */
     public function modalFillForm(array $arguments, array $data): array
@@ -110,8 +111,8 @@ abstract class XotBaseState implements StateContract
     /**
      * Execute modal action.
      *
-     * @param  array<string, mixed>  $arguments
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
      */
     public function modalAction(array $arguments, array $data): void
     {
@@ -121,8 +122,8 @@ abstract class XotBaseState implements StateContract
     /**
      * Process state action.
      *
-     * @param  array<string, mixed>  $arguments
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $arguments
+     * @param array<string, mixed> $data
      */
     public function processStateAction(array $arguments, array $data): void
     {
@@ -142,7 +143,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Execute modal action by record.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function modalActionByRecord(Model $record, array $data): void
     {
@@ -152,7 +153,7 @@ abstract class XotBaseState implements StateContract
     /**
      * Process state action by record.
      *
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function processStateActionByRecord(Model $record, array $data): void
     {

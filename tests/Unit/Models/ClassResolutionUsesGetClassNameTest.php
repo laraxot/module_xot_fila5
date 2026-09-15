@@ -11,7 +11,6 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
-
 uses(TestCase::class);
 
 /**
@@ -99,7 +98,7 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
         "Risoluzione di classe scritta a mano invece di `<Model>::getClassName()`:\n  "
         .implode("\n  ", $offenders)
         ."\n\nOgni modulo ha il suo model su una connessione diversa con lo stesso nome di"
-        ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
+        .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
         ."\nCanon: Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md"
     );
 });
@@ -122,6 +121,6 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
         "Ripiego silenzioso su un model di un altro modulo:\n  "
         .implode("\n  ", $offenders)
         ."\n\nUsare `<Model>::getClassName()`: se il gemello manca deve LANCIARE, non"
-        ." rispondere con i dati di un altro ente."
+        .' rispondere con i dati di un altro ente.'
     );
 });

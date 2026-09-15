@@ -19,7 +19,7 @@ class ClearArtisanErrorLogAction
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
-            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+            if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
                 File::delete($file->getRealPath());
             }
         }

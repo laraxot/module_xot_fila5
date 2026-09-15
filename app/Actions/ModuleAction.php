@@ -92,5 +92,7 @@ class ModuleAction
         return $data;
     }
 
-    public function execute(): void {}
+    public function execute(): void
+    {
+    }
 }

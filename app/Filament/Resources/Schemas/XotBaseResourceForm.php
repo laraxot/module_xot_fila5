@@ -19,7 +19,7 @@ abstract class XotBaseResourceForm
 
     public static function configure(Schema $schema): Schema
     {
-        if (static::class === self::class) {
+        if (self::class === static::class) {
             throw new \LogicException('XotBaseResourceForm::configure() must be called on a concrete form class.');
         }
 
@@ -56,7 +56,7 @@ abstract class XotBaseResourceForm
      * Traduzione con le chiavi della Resource proprietaria: un form non ha
      * un proprio spazio di traduzione, usa quello della Resource.
      *
-     * @param  array<string, bool|float|int|string|null>  $params
+     * @param array<string, bool|float|int|string|null> $params
      */
     public static function trans(string $key, array $params = []): string
     {
@@ -76,7 +76,7 @@ abstract class XotBaseResourceForm
         return static function (Model $record) use ($titleAttribute): string {
             $title = $record->getAttribute($titleAttribute);
 
-            if (\is_string($title) && $title !== '') {
+            if (\is_string($title) && '' !== $title) {
                 return $title;
             }
 

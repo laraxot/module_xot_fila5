@@ -15,8 +15,7 @@ test('un override di getTableFilters viene onorato', function (): void {
 });
 
 test('senza override si ricade sul default vuoto', function (): void {
-    $fixture = new class
-    {
+    $fixture = new class {
         use Modules\Xot\Filament\Traits\HasXotTable;
 
         public string $tableSearch = '';
@@ -30,4 +29,3 @@ test('senza override si ricade sul default vuoto', function (): void {
 
     Assert::assertSame([], $fixture->getTableFilters());
 });
-
