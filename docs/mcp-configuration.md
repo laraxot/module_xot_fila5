@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mcp-configuration
 description: "Status: ✅ Configured"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # MCP Server Configuration - Xot Module
 
 

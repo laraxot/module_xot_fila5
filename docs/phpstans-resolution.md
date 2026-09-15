@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstans-resolution
 description: "Modulo: Xot (Base Module)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
 **Modulo**: Xot (Base Module)  

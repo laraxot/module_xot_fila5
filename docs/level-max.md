@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: level-max
 description: "Data analisi: [DATE] 21:56:24"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Rapporto PHPStan Livello max per il modulo Xot
 
 Data analisi: [DATE] 21:56:24

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ai-skills
 description: " Scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
  # Agent skills nei moduli
 
 ## Scopo

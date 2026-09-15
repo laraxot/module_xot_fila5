@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-improvements-summary-2
 description: " 🎯 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 📊 Code Quality Improvements Summary - 2025-11-11
 
 ## 🎯 Overview
@@ -45,7 +48,19 @@ This document summarizes the systematic code quality improvements made across th
 - **Documentation**: ✅ Created comprehensive README
 - **Features**: Multi-cloud provider support with advanced security
 
+<<<<<<< HEAD
 #### 📊 Quaeris Module
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+#### 📊 <nome progetto> Module
+=======
+#### 📊 Quaeris Module
+>>>>>>> laraxot/dev
+=======
+#### 📊 Quaeris Module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Documentation**: ✅ Created comprehensive README
 - **Features**: Advanced survey management with PDF reports and charts
 
@@ -67,7 +82,19 @@ This document summarizes the systematic code quality improvements made across th
 - **Limesurvey** - External system integration
 
 #### ➕ New README Files Created
+<<<<<<< HEAD
 - **Quaeris** - Survey management system
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **<nome progetto>** - Survey management system
+=======
+- **Quaeris** - Survey management system
+>>>>>>> laraxot/dev
+=======
+- **Quaeris** - Survey management system
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **CloudStorage** - Multi-cloud file storage system
 
 ### 🎨 Themes Documentation
@@ -125,7 +152,19 @@ This document summarizes the systematic code quality improvements made across th
 ### ✅ Completed
 - ✅ All modules analyzed with PHPStan Level 10
 - ✅ Geo module PHPInsights score improved from 75% to 99%
+<<<<<<< HEAD
 - ✅ Missing README files created for Quaeris and CloudStorage
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ Missing README files created for <nome progetto> and CloudStorage
+=======
+- ✅ Missing README files created for Quaeris and CloudStorage
+>>>>>>> laraxot/dev
+=======
+- ✅ Missing README files created for Quaeris and CloudStorage
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - ✅ Comprehensive documentation review completed
 - ✅ Architecture improvements implemented
 

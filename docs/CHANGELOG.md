@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: changelog
 description: "<<<<<<< HEAD"
@@ -5,11 +6,22 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Changelog - Modulo Xot
 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## [2025-06-04] - Sessione Fix Critica
 
 All notable changes to `:package_name` will be documented in this file.
@@ -70,8 +82,23 @@ All notable changes to `:package_name` will be documented in this file.
 
 ## [1.1.0] - 2025-10-29
 
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
@@ -156,8 +183,23 @@ All notable changes to `:package_name` will be documented in this file.
 - Type safety improvements (500+ type hints)
 
 ### Changed
+<<<<<<< HEAD
 - Migrazione a Laravel 12.x
 - Upgrade Filament 4.x
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Migrazione a Laravel 13.x
+- Upgrade Filament 5.x
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Tailwind CSS 4.x implementation
 
 ---
@@ -205,12 +247,36 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ### Repository
@@ -227,6 +293,15 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Versioning:** [Semantic Versioning](https://semver.org/)
 
 ---
@@ -317,6 +392,21 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 - Categorie: Added, Changed, Deprecated, Removed, Fixed, Security
 - Link relativi ai documenti di dettaglio
 - Focus su COSA è cambiato e PERCHÉ
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

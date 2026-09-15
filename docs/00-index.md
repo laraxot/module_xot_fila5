@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 00-index
 description: "- 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.
@@ -17,8 +20,24 @@ metadata:
 - 🚫 [No Services Rule](./critical-no-services-rule.md) - Perché usiamo Actions invece dei Service.
 - 🗂️ [Filament Class Extension Rules](./filament-class-extension-rules.md) - Regole obbligatorie per Filament.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+- 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
+=======
+<<<<<<< HEAD
+=======
+- 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+- 📋 [Widget Method Visibility Rules](./filament/widget-method-visibility-rules.md) - Visibilità metodi getTable*() e convenzioni naming Filament 5.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## 🛠️ Utility & Trait

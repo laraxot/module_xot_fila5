@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: clean-code-wizard-steps
 description: " Regola"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Clean Code: Wizard Steps come Funzioni dedicate
 
 ## Regola

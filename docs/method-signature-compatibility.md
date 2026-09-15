@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: method-signature-compatibility
 description: " problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # errore di compatibilità nelle firme dei metodi
 
 ## problema

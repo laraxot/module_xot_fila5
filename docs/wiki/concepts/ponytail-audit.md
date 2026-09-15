@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ponytail-audit
 description: "Delta modulo only here. Ranked list, gate e remediation globale negli hub progetto."
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Ponytail audit — Xot
 
 **Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.

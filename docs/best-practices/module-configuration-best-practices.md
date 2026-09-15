@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-configuration-best-practices
 description: " 📋 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Configuration Best Practices
 
 ## 📋 Overview

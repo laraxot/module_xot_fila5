@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: scraping
 description: "<!-- Contenuto migrato da docs/scraping.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _scraping
 
 <!-- Contenuto migrato da _docs/_scraping.txt -->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: file-locking-pattern
 description: " 🔐 Filosofia"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # File Locking Pattern - Prevenzione Race Conditions
 
 ## 🔐 Filosofia

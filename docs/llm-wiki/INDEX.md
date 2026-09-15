@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: index
 description: "> Module: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module Wiki Index
 
 > **Module**: Xot

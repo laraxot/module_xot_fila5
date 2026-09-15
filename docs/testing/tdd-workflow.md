@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: tdd-workflow
 description: " Ciclo RED-GREEN-REFACTOR"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # TDD Workflow - Laraxot
 
 ## Ciclo RED-GREEN-REFACTOR

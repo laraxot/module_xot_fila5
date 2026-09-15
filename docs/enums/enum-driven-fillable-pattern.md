@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: enum-driven-fillable-pattern
 description: " Philosophy"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Enum-Driven Fillable Pattern - Laraxot Architecture
 
 ## Philosophy

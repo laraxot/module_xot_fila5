@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mai-estendere-filament-direttamente
 description: " ⚠️ REGOLA FONDAMENTALE LARAXOT"
@@ -5,6 +6,8 @@ metadata:
   type: error
 ---
 
+=======
+>>>>>>> laraxot/dev
 # ERRORE CRITICO: Mai Estendere Classi Filament Direttamente
 
 ## ⚠️ REGOLA FONDAMENTALE LARAXOT

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: relative-paths-rules-1
 description: "> Collegamenti correlati"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole per i Percorsi Relativi nella Documentazione
 
 > **Collegamenti correlati**

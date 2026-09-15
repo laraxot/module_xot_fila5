@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: level-rapporto-phpstan-livello-4-per-il-modulo
 description: "Data analisi: [DATE] 21:53:50"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 4 per il modulo Xot
 
 Data analisi: [DATE] 21:53:50

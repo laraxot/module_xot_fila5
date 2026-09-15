@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: scraping
 description: "<!-- Contenuto migrato da docs/scraping.txt -->"
@@ -5,11 +6,25 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 # _scraping
 
 <!-- Contenuto migrato da _docs/_scraping.txt -->
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# _scraping
+
+<!-- Contenuto migrato da _docs/_scraping.txt -->
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Scraping'
 module: Xot
@@ -21,6 +36,15 @@ converted_from: _scraping.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 Using Laravel and Symfony/panther To Scrape Javascript Websites
@@ -30,6 +54,24 @@ https://webmobtuts.com/backend-development/using-laravel-and-symfony-panther-to-
 <<<<<<< HEAD
 
 https://github.com/oscarotero/Embed  !!!
+<<<<<<< HEAD
 =======
 https://github.com/oscarotero/Embed  !!!
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+https://github.com/oscarotero/Embed  !!!
+=======
+<<<<<<< HEAD
+
+https://github.com/oscarotero/Embed  !!!
+=======
+https://github.com/oscarotero/Embed  !!!
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+https://github.com/oscarotero/Embed  !!!
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

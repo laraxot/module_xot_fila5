@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fatal-errors-eloquent-properties
 description: " Problem"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Fatal Errors: Eloquent Property Redeclaration
 
 ## Problem

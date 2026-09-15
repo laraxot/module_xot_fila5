@@ -84,7 +84,19 @@ audit.
 
 ```bash
 bash bashscripts/tools/audit-module-dashboard-page.sh
+<<<<<<< HEAD
 bash bashscripts/tools/audit-module-dashboard-page.sh WorkOrder
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+bash bashscripts/tools/audit-module-dashboard-page.sh <nome progetto>
+=======
+bash bashscripts/tools/audit-module-dashboard-page.sh WorkOrder
+>>>>>>> laraxot/dev
+=======
+bash bashscripts/tools/audit-module-dashboard-page.sh WorkOrder
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 Oppure one-liner:

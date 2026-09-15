@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: svg-icon-standards
 description: " 🎯 Design Principles"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # SVG Icon Standards for Laraxot Modules
 
 ## 🎯 Design Principles

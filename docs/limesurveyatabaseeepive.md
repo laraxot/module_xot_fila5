@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: limesurveyatabaseeepive
 description: " Database Connections Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Limesurvey Survey Data Analysis - Database Deep Dive
 
 ## Database Connections Overview

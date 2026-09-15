@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: missing-traits-and-improvements-trait-mancanti-e-miglioramenti-architett
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Trait Mancanti e Miglioramenti Architetturali
 
 ## Panoramica

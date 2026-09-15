@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: traduzioni-navigation
 description: "Questa regola è valida per tutti i moduli. Fare sempre riferimento alla documentazione in Lang/docs."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regola sulle Chiavi di Traduzione `.navigation`
 
 Questa regola è valida per tutti i moduli. Fare sempre riferimento alla documentazione in Lang/docs.

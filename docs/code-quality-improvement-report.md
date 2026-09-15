@@ -7,7 +7,19 @@ created: 2026-07-17
 updated: 2026-07-27
 qmd: "code quality baseline PHPStan Pest strict types Laraxot Xot git remote"
 story: STORY-001
+<<<<<<< HEAD
 # GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# GRAVE: issue/discussion del modulo — mai base_techplanner / base_<nome progetto> / mono.
+=======
+# GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono.
+>>>>>>> laraxot/dev
+=======
+# GRAVE: issue/discussion del modulo — mai base_techplanner / base_workorder / mono.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Resolve: cd laravel/Modules/Xot && git remote -v → laraxot/module_xot_fila5
 issues: []
 discussions: []
@@ -28,7 +40,19 @@ cd laravel/Modules/Xot && git remote -v
 # atteso: laraxot/module_xot_fila5
 ```
 
+<<<<<<< HEAD
 **Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_<nome progetto>_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
+=======
+**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
+>>>>>>> laraxot/dev
+=======
+**Lezione grave:** in un conflitto Git, *entrambe* le parti possono essere sbagliate (`base_techplanner_*` vs `base_workorder_*`). Non scegliere a caso: `git remote -v` nella cartella del modulo/tema.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Baseline
 

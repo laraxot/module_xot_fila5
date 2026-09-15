@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: helper-functions-complete-list
 description: " 📋 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Helper Functions Complete List - Xot Module
 
 ## 📋 Overview

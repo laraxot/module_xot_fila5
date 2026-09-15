@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: log
 description: "> Module: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Activity Log
 
 > **Module**: Xot

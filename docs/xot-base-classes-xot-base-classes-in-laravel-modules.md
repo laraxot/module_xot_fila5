@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-base-classes-xot-base-classes-in-laravel-modules
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Base Classes in Laravel Modules
 
 ## Overview
@@ -26,9 +29,27 @@ The Xot base classes provide a centralized way to customize and extend functiona
   {
       // Resource definition
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      public static function getFormSchema(): array
+      public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+      public static function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
       public function getFormSchema(): array
 =======
       public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
       {
           return [

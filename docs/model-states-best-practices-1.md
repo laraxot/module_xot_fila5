@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: model-states-best-practices-1
 description: " Parametri aggiuntivi nelle transizioni custom"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom

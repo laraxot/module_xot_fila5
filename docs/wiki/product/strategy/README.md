@@ -192,7 +192,19 @@ Xot provides Laravel developers with a comprehensive, enterprise-ready foundatio
 - **Community**: Community management and engagement
 
 ### Technology Stack
+<<<<<<< HEAD
 - **Framework**: Laravel 12.x
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Framework**: Laravel 13.x
+=======
+- **Framework**: Laravel 12.x
+>>>>>>> laraxot/dev
+=======
+- **Framework**: Laravel 12.x
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Database**: MySQL, PostgreSQL, SQLite
 - **Frontend**: Tailwind CSS, Alpine.js
 - **Testing**: PHPUnit, Pest

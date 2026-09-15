@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: sushitojsons-conflict
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto in SushiToJsons
 
 ## Panoramica

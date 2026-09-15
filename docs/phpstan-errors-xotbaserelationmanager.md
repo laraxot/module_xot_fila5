@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-errors-xotbaserelationmanager
 description: "Data: 2025-12-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Errors - XotBaseRelationManager
 
 **Data**: 2025-12-23

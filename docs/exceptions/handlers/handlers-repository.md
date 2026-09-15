@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: handlers-repository
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # HandlersRepository
 
 ## Descrizione

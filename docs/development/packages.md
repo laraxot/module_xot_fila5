@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: packages
 description: " Frontend"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pacchetti e Risorse Consigliate
 
 ## Frontend

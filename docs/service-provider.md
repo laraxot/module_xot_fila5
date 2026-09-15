@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: service-provider
 description: " Ruolo della Classe"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseServiceProvider: Architettura, Ruolo e Best Practice
 
 ## Ruolo della Classe

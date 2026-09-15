@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: task-ridurre-phpstan-suppressioni
 description: "Modulo: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Ridurre Suppressioni PHPStan Inline - Xot
 
 **Modulo**: Xot

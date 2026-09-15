@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: enum-trait-pattern
 description: " Scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # EnumTrait Pattern - Standard Architetturale per Enums
 
 ## Scopo

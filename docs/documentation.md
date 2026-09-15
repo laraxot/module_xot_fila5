@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: documentation
 description: " Struttura della Documentazione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Documentazione
 
 ## Struttura della Documentazione

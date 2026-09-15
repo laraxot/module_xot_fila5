@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: fixes-models-generics-phpstan
 description: " Data: 2025-01-27"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27

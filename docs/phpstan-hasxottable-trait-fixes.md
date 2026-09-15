@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-hasxottable-trait-fixes
 description: " Data"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan HasXotTable Trait Type Safety Fixes - February 2026
 
 ## Data

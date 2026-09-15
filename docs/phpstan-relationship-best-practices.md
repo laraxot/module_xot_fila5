@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-relationship-best-practices
 description: " Regola Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Best Practices per Relazioni Eloquent
 
 ## Regola Fondamentale

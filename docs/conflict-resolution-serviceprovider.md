@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: conflict-resolution-serviceprovider
 description: " Contesto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto: XotBaseServiceProvider
 
 ## Contesto

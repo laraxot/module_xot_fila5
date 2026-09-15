@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: migration-timestamps-audit-user-id-issue
 description: " Situazione Rilevata"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Nota Architetturale: Rimozione `user_id` da `XotBaseMigration::timestamps()` (2026-03-06)
 
 ## Situazione Rilevata

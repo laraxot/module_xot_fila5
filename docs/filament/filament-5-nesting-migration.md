@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-nesting-migration
 description: "Data Analisi: 2026-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Migrazione a Filament 5.x Native Nesting
 
 **Data Analisi**: 2026-01-22  

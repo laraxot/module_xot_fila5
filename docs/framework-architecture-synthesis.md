@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: framework-architecture-synthesis
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sintesi: Applicazione dei Principi Architetturali ai Moduli LaravelPizza
 
 ## Introduzione

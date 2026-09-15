@@ -24,7 +24,19 @@ Each module's composer.json should have:
 
 ### Modules with CORRECT configuration:
 - User ✓
+<<<<<<< HEAD
 - Quaeris ✓
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- <nome progetto> ✓
+=======
+- Quaeris ✓
+>>>>>>> laraxot/dev
+=======
+- Quaeris ✓
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - UI ✓
 - Tenant ✓
 - Limesurvey ✓

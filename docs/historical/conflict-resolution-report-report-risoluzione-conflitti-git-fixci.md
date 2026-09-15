@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 # Report Risoluzione Conflitti Git - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Report Risoluzione Conflitti Git - <nome progetto> Project
+=======
+# Report Risoluzione Conflitti Git - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Report Risoluzione Conflitti Git - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Report Risoluzione Conflitti Git - Develop Branch
 
 **Data**: 2025-01-27
@@ -95,7 +107,19 @@ php -l Modules/Xot/tests/Pest.php
 ### Documentazione
 - **Coerenza terminologica** in tutto il progetto
 - **Backlink bidirezionali** per navigazione
+<<<<<<< HEAD
 - **Riferimenti aggiornati** al progetto FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Riferimenti aggiornati** al progetto <nome progetto>
+=======
+- **Riferimenti aggiornati** al progetto FixCity
+>>>>>>> laraxot/dev
+=======
+- **Riferimenti aggiornati** al progetto FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Struttura markdown** valida
 
 ### Manutenibilità
@@ -126,7 +150,19 @@ php -l Modules/Xot/tests/Pest.php
 
 ## Conclusione
 
+<<<<<<< HEAD
 La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto <nome progetto> ora ha:
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - ✅ **Codice pulito** senza conflitti
 - ✅ **Documentazione coerente** e aggiornata
@@ -143,11 +179,31 @@ Il progetto è ora pronto per lo sviluppo continuo con una base solida e manuten
 - [Architettura Modulare](../modular-architecture.md)
 - [Guida Risoluzione Conflitti](../conflict-resolution-guide.md)
 # Report Risoluzione Conflitti Git - Develop Branch
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Report Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento riporta la risoluzione sistematica di **161 file con conflitti Git** nel progetto <nome progetto>, eseguita seguendo le regole del progetto Laraxot e le best practices per la qualità del codice.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Report Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento riporta la risoluzione sistematica di **161 file con conflitti Git** nel progetto FixCity, eseguita seguendo le regole del progetto Laraxot e le best practices per la qualità del codice.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Statistiche Risoluzione
 
@@ -177,7 +233,19 @@ Questo documento riporta la risoluzione sistematica di **161 file con conflitti 
 
 ### 3. File di Documentazione (147 file)
 - File `.md` in tutti i moduli
+<<<<<<< HEAD
 - Aggiornamento riferimenti da "<nome progetto>" a "FixCity"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Aggiornamento riferimenti da "<nome progetto>" a "<nome progetto>"
+=======
+- Aggiornamento riferimenti da "<nome progetto>" a "FixCity"
+>>>>>>> laraxot/dev
+=======
+- Aggiornamento riferimenti da "<nome progetto>" a "FixCity"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Correzione backlink e collegamenti
 
 **Strategia**: Unificazione del contenuto mantenendo entrambe le versioni quando appropriato, aggiornamento dei riferimenti al progetto.
@@ -228,7 +296,19 @@ I file di configurazione Laravel Localization sono stati corretti per:
 
 ### Documentazione
 Tutti i file di documentazione sono stati aggiornati per:
+<<<<<<< HEAD
 - Riferimenti corretti al progetto FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Riferimenti corretti al progetto <nome progetto>
+=======
+- Riferimenti corretti al progetto FixCity
+>>>>>>> laraxot/dev
+=======
+- Riferimenti corretti al progetto FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Backlink bidirezionali
 - Coerenza terminologica
 - Struttura markdown valida
@@ -298,7 +378,19 @@ Tutti i conflitti Git sono stati risolti automaticamente prendendo le "incoming 
 
 ## Conclusione
 
+<<<<<<< HEAD
 La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto <nome progetto> ora ha:
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - ✅ **Codice pulito** senza conflitti
 - ✅ **Documentazione coerente** e aggiornata
@@ -336,7 +428,19 @@ Il progetto è ora pronto per lo sviluppo continuo con una base solida e manuten
 
 ## Conclusione
 
+<<<<<<< HEAD
 La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto <nome progetto> ora ha:
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - ✅ **Codice pulito** senza conflitti
 - ✅ **Documentazione coerente** e aggiornata
@@ -353,11 +457,31 @@ Il progetto è ora pronto per lo sviluppo continuo con una base solida e manuten
 - [Architettura Modulare](../modular-architecture.md)
 - [Guida Risoluzione Conflitti](../conflict-resolution-guide.md)
 # Report Risoluzione Conflitti Git - Develop Branch
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Report Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento riporta la risoluzione sistematica di **161 file con conflitti Git** nel progetto <nome progetto>, eseguita seguendo le regole del progetto Laraxot e le best practices per la qualità del codice.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Report Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento riporta la risoluzione sistematica di **161 file con conflitti Git** nel progetto FixCity, eseguita seguendo le regole del progetto Laraxot e le best practices per la qualità del codice.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Statistiche Risoluzione
 
@@ -387,7 +511,19 @@ Questo documento riporta la risoluzione sistematica di **161 file con conflitti 
 
 ### 3. File di Documentazione (147 file)
 - File `.md` in tutti i moduli
+<<<<<<< HEAD
 - Aggiornamento riferimenti da "<nome progetto>" a "FixCity"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Aggiornamento riferimenti da "<nome progetto>" a "<nome progetto>"
+=======
+- Aggiornamento riferimenti da "<nome progetto>" a "FixCity"
+>>>>>>> laraxot/dev
+=======
+- Aggiornamento riferimenti da "<nome progetto>" a "FixCity"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Correzione backlink e collegamenti
 
 **Strategia**: Unificazione del contenuto mantenendo entrambe le versioni quando appropriato, aggiornamento dei riferimenti al progetto.
@@ -438,7 +574,19 @@ I file di configurazione Laravel Localization sono stati corretti per:
 
 ### Documentazione
 Tutti i file di documentazione sono stati aggiornati per:
+<<<<<<< HEAD
 - Riferimenti corretti al progetto FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Riferimenti corretti al progetto <nome progetto>
+=======
+- Riferimenti corretti al progetto FixCity
+>>>>>>> laraxot/dev
+=======
+- Riferimenti corretti al progetto FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Backlink bidirezionali
 - Coerenza terminologica
 - Struttura markdown valida
@@ -475,7 +623,19 @@ php -l Modules/Xot/tests/Pest.php
 ### Documentazione
 - **Coerenza terminologica** in tutto il progetto
 - **Backlink bidirezionali** per navigazione
+<<<<<<< HEAD
 - **Riferimenti aggiornati** al progetto FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Riferimenti aggiornati** al progetto <nome progetto>
+=======
+- **Riferimenti aggiornati** al progetto FixCity
+>>>>>>> laraxot/dev
+=======
+- **Riferimenti aggiornati** al progetto FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Struttura markdown** valida
 
 ### Manutenibilità
@@ -506,7 +666,19 @@ php -l Modules/Xot/tests/Pest.php
 
 ## Conclusione
 
+<<<<<<< HEAD
 La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto <nome progetto> ora ha:
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+=======
+La risoluzione sistematica di tutti i 161 conflitti Git è stata completata con successo, seguendo rigorosamente le regole del progetto Laraxot e le best practices per la qualità del codice. Il progetto FixCity ora ha:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - ✅ **Codice pulito** senza conflitti
 - ✅ **Documentazione coerente** e aggiornata

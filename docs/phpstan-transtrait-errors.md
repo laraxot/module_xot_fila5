@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-transtrait-errors
 description: "<<<<<<< HEAD"
@@ -5,12 +6,31 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Errors - TransTrait.php
 
 <<<<<<< HEAD
 **Date**: [DATE]
+<<<<<<< HEAD
 =======
 **Date**: 2025-12-16
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+**Date**: 2025-12-16
+=======
+<<<<<<< HEAD
+**Date**: [DATE]
+=======
+**Date**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+**Date**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **File**: `Modules/Xot/app/Filament/Traits/TransTrait.php`
 **PHPStan Level**: 10
@@ -401,8 +421,25 @@ This fix may also resolve related errors in:
 
 <<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+<<<<<<< HEAD
 =======
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+=======
+<<<<<<< HEAD
+- [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+=======
+- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
@@ -413,6 +450,23 @@ This fix may also resolve related errors in:
 **Assigned To**: Module Owner
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
 **Last Updated**: 2025-12-16
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+**Last Updated**: 2025-12-16
+=======
+<<<<<<< HEAD
+
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

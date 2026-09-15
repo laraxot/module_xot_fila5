@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: architecture-debate-trans-method
 description: " context"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # architecture debate: the trans method
 
 ## context

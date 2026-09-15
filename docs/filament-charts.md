@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-charts
 description: " 📋 Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Charts - Guida Completa per PTVX
 
 ## 📋 Panoramica

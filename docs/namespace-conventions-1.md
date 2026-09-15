@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: namespace-conventions-1
 description: " Struttura Base"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Convenzioni per i Namespace nei Moduli
 
 ## Struttura Base

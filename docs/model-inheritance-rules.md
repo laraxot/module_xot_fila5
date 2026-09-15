@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: model-inheritance-rules
 description: " Principio Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole di Ereditarietà dei Modelli - Laraxot PTVX
 
 ## Principio Fondamentale

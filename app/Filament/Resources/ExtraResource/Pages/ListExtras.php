@@ -20,7 +20,26 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListExtras extends XotBaseListRecords
 {
     protected static string $resource = ExtraResource::class;
+<<<<<<< HEAD
    
+=======
+<<<<<<< HEAD
+
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->sortable()->label('ID'),
+            'model_type' => TextColumn::make('model_type')->searchable()->label('Model Type'),
+            'model_id' => TextColumn::make('model_id')->sortable()->label('Model ID'),
+            'extra_attributes' => TextColumn::make('extra_attributes')->searchable()->label('Extra Attributes'),
+        ];
+    }
+
+=======
+   
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     /**
      * @return array<BaseFilter>
      */

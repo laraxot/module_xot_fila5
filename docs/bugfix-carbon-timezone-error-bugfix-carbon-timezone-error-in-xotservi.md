@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bugfix-carbon-timezone-error-bugfix-carbon-timezone-error-in-xotservi
 description: " Problema Identificato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
 ## Problema Identificato

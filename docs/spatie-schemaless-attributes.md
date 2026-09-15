@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: spatie-schemaless-attributes
 description: "Package: [spatie/laravel-schemaless-attributes](https://github.com/spatie/laravel-schemaless-attributes)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # spatie/laravel-schemaless-attributes — Central Reference
 
 **Package**: [`spatie/laravel-schemaless-attributes`](https://github.com/spatie/laravel-schemaless-attributes)

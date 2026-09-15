@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflicts-resolution-massive
 description: " Data"
@@ -5,6 +6,8 @@ metadata:
   type: fix
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Massiva Conflitti Git - 323 File
 
 ## Data

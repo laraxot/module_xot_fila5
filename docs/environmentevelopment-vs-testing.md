@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: environmentevelopment-vs-testing
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Environment Development vs Testing in Laraxot
 
 ## Panoramica

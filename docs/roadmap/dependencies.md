@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: dependencies
 description: " 📋 Table of Contents"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Dependencies
 
 ## 📋 Table of Contents
@@ -181,7 +184,19 @@ Xot (Foundation)
 - **Seo**: Extends XotBaseModel
 - **Tenant**: Extends XotBaseModel
 - **UI**: Extends XotBaseModel
+<<<<<<< HEAD
 - **Fixcity**: Extends XotBaseModel
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **<nome progetto>**: Extends XotBaseModel
+=======
+- **Fixcity**: Extends XotBaseModel
+>>>>>>> laraxot/dev
+=======
+- **Fixcity**: Extends XotBaseModel
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Blog**: Extends XotBaseModel
 - **Comment**: Extends XotBaseModel
 - **Gdpr**: Extends XotBaseModel
@@ -194,8 +209,23 @@ Xot (Foundation)
 - **User → Media**: User media
 - **User → Notify**: User notifications
 - **Cms → Media**: CMS media
+<<<<<<< HEAD
 - **Fixcity → Geo**: Location data
 - **Fixcity → Rating**: Rating system
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **<nome progetto> → Geo**: Location data
+- **<nome progetto> → Rating**: Rating system
+=======
+- **Fixcity → Geo**: Location data
+- **Fixcity → Rating**: Rating system
+>>>>>>> laraxot/dev
+=======
+- **Fixcity → Geo**: Location data
+- **Fixcity → Rating**: Rating system
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Dependency Graph
 
@@ -319,8 +349,23 @@ Xot (Foundation)
 
 #### Known Conflicts
 
+<<<<<<< HEAD
 **Filament 4 vs 5**:
 - **Issue**: Some packages only support Filament 4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Filament 5 vs 5**:
+- **Issue**: Some packages only support Filament 5
+=======
+**Filament 4 vs 5**:
+- **Issue**: Some packages only support Filament 4
+>>>>>>> laraxot/dev
+=======
+**Filament 4 vs 5**:
+- **Issue**: Some packages only support Filament 4
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Resolution**: Use Filament 5 compatible packages
 - **Status**: Resolved
 
@@ -329,8 +374,23 @@ Xot (Foundation)
 - **Resolution**: Use baseline files for third-party packages
 - **Status**: Resolved
 
+<<<<<<< HEAD
 **Laravel 12 Compatibility**:
 - **Issue**: Some packages not yet compatible with Laravel 12
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Laravel 13 Compatibility**:
+- **Issue**: Some packages not yet compatible with Laravel 13
+=======
+**Laravel 12 Compatibility**:
+- **Issue**: Some packages not yet compatible with Laravel 12
+>>>>>>> laraxot/dev
+=======
+**Laravel 12 Compatibility**:
+- **Issue**: Some packages not yet compatible with Laravel 12
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Resolution**: Use forked versions or wait for updates
 - **Status**: Monitoring
 

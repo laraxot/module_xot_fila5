@@ -5,8 +5,23 @@ owner: Modules/Xot
 severity: high
 created: 2026-05-22
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - "https://github.com/laraxot/<repo progetto>/issues/89"
+  - "https://github.com/laraxot/<repo progetto>/issues/90"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
+>>>>>>> laraxot/dev
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - ../concepts/redundancy-catalog.md
 ---
@@ -37,4 +52,16 @@ Xot mantiene solo DTO **veramente trasversali**; gli altri moduli **importano** 
 
 ## Tracker
 
+<<<<<<< HEAD
 [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+[#90](https://github.com/laraxot/<repo progetto>/issues/90).
+=======
+[#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+>>>>>>> laraxot/dev
+=======
+[#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

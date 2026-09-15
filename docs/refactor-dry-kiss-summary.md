@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: refactor-dry-kiss-summary
 description: "> 🎯 Obiettivo Raggiunto: Eliminazione massiva duplicazioni documentali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali

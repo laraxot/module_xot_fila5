@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: trait-collision-resolution-fix
 description: " Issue"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Trait Collision Resolution Summary
 
 ## Issue

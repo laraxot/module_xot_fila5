@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: script-risoluzione-conflitti-conflict
 description: " Panoramica"
@@ -5,11 +6,30 @@ metadata:
   type: documentation
 ---
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -92,7 +112,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -130,6 +162,27 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 # Script di Risoluzione Conflitti Git - FixCity Project
@@ -143,6 +196,13 @@ find . -name "*.php" -exec php -l {} \;
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -204,11 +264,31 @@ declare(strict_types=1);
 // 4. Aggiungere PHPDoc per metodi pubblici
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -291,7 +371,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -329,6 +421,33 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 # Script di Risoluzione Conflitti Git - FixCity Project
@@ -348,6 +467,13 @@ find . -name "*.php" -exec php -l {} \;
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -430,7 +556,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -468,11 +606,31 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -555,7 +713,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -593,11 +763,31 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -680,7 +870,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -718,11 +920,31 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -805,7 +1027,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -843,11 +1077,31 @@ find . -name "*.php" -exec php -l {} \;
 ```
 
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Script di Risoluzione Conflitti Git - <nome progetto> Project
+
+## Panoramica
+
+Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto <nome progetto>, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Script di Risoluzione Conflitti Git - FixCity Project
 
 ## Panoramica
 
 Questo documento fornisce una guida sistematica per la risoluzione dei conflitti Git nel progetto FixCity, basata sull'esperienza acquisita durante la risoluzione di 161 file con conflitti.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Workflow Sistematico
 
@@ -930,7 +1184,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -1051,7 +1317,19 @@ return [
 
 #### File di Documentazione
 ```markdown
+<<<<<<< HEAD
 # Titolo Documento - FixCity Project
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Titolo Documento - <nome progetto> Project
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+=======
+# Titolo Documento - FixCity Project
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Sezione
 
@@ -1153,7 +1431,19 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 - [ ] Compatibilità Laravel 11
 
 ### Per Ogni File di Documentazione
+<<<<<<< HEAD
 - [ ] Riferimenti aggiornati a FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Riferimenti aggiornati a <nome progetto>
+=======
+- [ ] Riferimenti aggiornati a FixCity
+>>>>>>> laraxot/dev
+=======
+- [ ] Riferimenti aggiornati a FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] Backlink bidirezionali
 - [ ] Coerenza terminologica
 - [ ] Struttura markdown valida
@@ -1211,7 +1501,19 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 - [ ] Compatibilità Laravel 11
 
 ### Per Ogni File di Documentazione
+<<<<<<< HEAD
 - [ ] Riferimenti aggiornati a FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Riferimenti aggiornati a <nome progetto>
+=======
+- [ ] Riferimenti aggiornati a FixCity
+>>>>>>> laraxot/dev
+=======
+- [ ] Riferimenti aggiornati a FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] Backlink bidirezionali
 - [ ] Coerenza terminologica
 - [ ] Struttura markdown valida
@@ -1269,7 +1571,19 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 - [ ] Compatibilità Laravel 11
 
 ### Per Ogni File di Documentazione
+<<<<<<< HEAD
 - [ ] Riferimenti aggiornati a FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Riferimenti aggiornati a <nome progetto>
+=======
+- [ ] Riferimenti aggiornati a FixCity
+>>>>>>> laraxot/dev
+=======
+- [ ] Riferimenti aggiornati a FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] Backlink bidirezionali
 - [ ] Coerenza terminologica
 - [ ] Struttura markdown valida

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: tdd-pest-study
 description: " Riferimenti Studiate"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Studio TDD, Pest e Laravel Modules
 
 ## Riferimenti Studiate

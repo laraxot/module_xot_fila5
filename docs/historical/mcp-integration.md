@@ -2,7 +2,19 @@
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila3_mono.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila5.
+=======
+Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila3_mono.
+>>>>>>> laraxot/dev
+=======
+Questo documento fornisce linee guida per l'integrazione dei server MCP (Model Context Protocol) con il modulo Xot, seguendo le regole di sviluppo e le convenzioni di codice stabilite per i progetti base_predict_fila3_mono.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Server MCP Consigliati
 
@@ -873,4 +885,16 @@ class CodeAnalysisData extends Data
 
 ## Conclusione
 
+<<<<<<< HEAD
 L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila3_mono.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila5.
+=======
+L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila3_mono.
+>>>>>>> laraxot/dev
+=======
+L'integrazione dei server MCP con il modulo Xot consente di migliorare significativamente le funzionalità di base del progetto, fornendo interazione avanzata con database, gestione efficiente della cache, operazioni avanzate sui file e analisi del codice. Seguendo le linee guida e gli esempi forniti in questo documento, è possibile implementare queste funzionalità in modo conforme alle regole di sviluppo stabilite per i progetti base_predict_fila3_mono.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

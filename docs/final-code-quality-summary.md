@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: final-code-quality-summary
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Final Code Quality Summary - Laraxot Project
 
 ## Overview
@@ -71,7 +74,19 @@ if (property_exists($stateObject, 'name')) {
 - **Xot**: Base engine with 50+ base classes, 20+ service providers, 15+ traits
 - **User**: Authentication with advanced features
 - **Cms**: Content management system
+<<<<<<< HEAD
 - **Quaeris**: Main application module
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **<nome progetto>**: Main application module
+=======
+- **Quaeris**: Main application module
+>>>>>>> laraxot/dev
+=======
+- **Quaeris**: Main application module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **UI**: Shared UI components
 - **Activity**: Activity tracking and logging
 - **Tenant**: Multi-tenancy support

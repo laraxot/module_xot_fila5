@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: nwidart
 description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
@@ -8,6 +9,18 @@ metadata:
 <<<<<<< HEAD
 https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
 =======
+=======
+<<<<<<< HEAD
+https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+https://dev.to/bdelespierre/very-very-simple-laravel-modules-4927
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Nwidart — risorse esterne'
 module: Xot
@@ -28,4 +41,13 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://bayramblog.medium.com/laravel-9-modules-hmvc-522d5fd52fd3>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

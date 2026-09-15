@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: docs-consolidation-report-conflict
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Report Consolidamento Documentazione - 27 Gennaio 2025
 
 ## Panoramica

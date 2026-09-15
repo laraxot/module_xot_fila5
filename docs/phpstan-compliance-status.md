@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-compliance-status
 description: "Last Updated: 2026-07-06"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2026-07-06

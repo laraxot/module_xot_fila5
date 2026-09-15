@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: localization-guide
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida alla Localizzazione nel Framework Laraxot <nome progetto>
 
 ## Introduzione

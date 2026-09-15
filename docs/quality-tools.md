@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: quality-tools
 description: "This guide standardizes how we study, run, and maintain code quality tools across modules and themes without breaking the site. Always use d"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Quality Tools: PHPMD, PHP-CS-Fixer, Laravel Pint, Psalm, PHPQA, actionlint, CodeRabbit
 
 This guide standardizes how we study, run, and maintain code quality tools across modules and themes without breaking the site. Always use dry-run/report modes first and integrate changes incrementally.

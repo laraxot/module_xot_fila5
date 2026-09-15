@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: single-table-inheritance
 description: " Principi Fondamentali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Single Table Inheritance (STI)
 
 ## Principi Fondamentali

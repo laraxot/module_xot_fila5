@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: monitoring-pulse-pennant
 description: "L'integrazione di Laravel Pulse e Pennant fornisce strumenti avanzati per il controllo in tempo reale e il rilascio graduale delle funzional"
@@ -6,6 +7,17 @@ metadata:
 ---
 
 # Monitoring e Feature Management - Laravel 12
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Monitoring e Feature Management - Laravel 13
+=======
+# Monitoring e Feature Management - Laravel 12
+>>>>>>> laraxot/dev
+=======
+# Monitoring e Feature Management - Laravel 12
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 L'integrazione di Laravel Pulse e Pennant fornisce strumenti avanzati per il controllo in tempo reale e il rilascio graduale delle funzionalità.
 

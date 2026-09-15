@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflicts-progress-sumy
 description: "Status: ✅ In Progresso"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Status**: ✅ In Progresso

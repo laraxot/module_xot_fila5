@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level10-relationmanager
 description: " Problem"
@@ -5,6 +6,8 @@ metadata:
   type: fix
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Fix: XotBaseRelationManager Type Narrowing
 
 ## Problem

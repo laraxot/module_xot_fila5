@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing
 description: " Struttura dei Test"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing
 
 ## Struttura dei Test

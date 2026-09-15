@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflicts-resolution-roadmap
 description: "Data: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Roadmap Risoluzione Merge Conflicts - PHPStan Bloccanti
 
 **Data**: 2025-01-22
@@ -171,9 +174,27 @@ class ResourceName extends XotBaseResource
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

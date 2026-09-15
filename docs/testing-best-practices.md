@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-best-practices
 description: "This document outlines best practices for writing and maintaining Pest tests under the Xot module, specifically addressing static analysis t"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Best Practices - Modules/Xot
 
 This document outlines best practices for writing and maintaining Pest tests under the Xot module, specifically addressing static analysis type safety.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: user-research
 description: "Module: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - User Research
 
 **Module:** Xot  

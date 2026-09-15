@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: agents
 description: "> Module/Theme: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

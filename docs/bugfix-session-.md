@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bugfix-session
 description: " 🎯 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo

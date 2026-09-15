@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: overview
 description: " 📋 Table of Contents"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Overview
 
 ## 📋 Table of Contents
@@ -31,7 +34,19 @@ Xot serves as the fundamental engine of the Laraxot ecosystem, providing:
 - Type safety and quality enforcement
 
 ### Vision Statement
+<<<<<<< HEAD
 > "To establish Xot as the definitive foundation for Laravel 12 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> "To establish Xot as the definitive foundation for Laravel 13 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
+=======
+> "To establish Xot as the definitive foundation for Laravel 12 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
+>>>>>>> laraxot/dev
+=======
+> "To establish Xot as the definitive foundation for Laravel 12 applications, where every module automatically inherits security, internationalization, theming, and high performance through simple base class extension."
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Mission
 - **Zero-Config Framework**: Minimize boilerplate and configuration

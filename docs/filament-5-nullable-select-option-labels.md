@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-nullable-select-option-labels
 description: " Sintomo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5: Select su relazione con colonna titolo nullable
 
 ## Sintomo

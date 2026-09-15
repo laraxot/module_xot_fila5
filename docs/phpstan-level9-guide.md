@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level9-guide
 description: "Questa guida documenta i pattern di errore più comuni trovati durante l'analisi di livello 9 con PHPStan e le strategie per risolverli."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida alla Risoluzione degli Errori PHPStan Livello 9
 
 Questa guida documenta i pattern di errore più comuni trovati durante l'analisi di livello 9 con PHPStan e le strategie per risolverli.

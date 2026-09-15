@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: brand-testing
 description: " Principi di Testing"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # Testing del Brand
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: performance-module
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Modulo Performance
 
 ## Overview

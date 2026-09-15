@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-table-1
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica

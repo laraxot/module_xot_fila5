@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: "======="
@@ -8,9 +9,25 @@ metadata:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+# Xot
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -20,6 +37,15 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # Gestione delle Eccezioni
 
@@ -136,8 +162,21 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -148,17 +187,49 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> **Core module for the <nome progetto> Platform.**
+
+## Perché esiste
+
+Core module for the <nome progetto> Platform.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
+<<<<<<< HEAD
 - Integrated with FixCity Platform
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -171,8 +242,24 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -290,7 +377,18 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -302,17 +400,49 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> **Core module for the <nome progetto> Platform.**
+
+## Perché esiste
+
+Core module for the <nome progetto> Platform.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
+<<<<<<< HEAD
 - Integrated with FixCity Platform
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -324,7 +454,23 @@ Core module for the FixCity Platform.
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

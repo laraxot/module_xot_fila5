@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-requirements
 description: "Data Analisi: 2026-01-30"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5.x Requirements & Configuration
 
 **Data Analisi**: 2026-01-30

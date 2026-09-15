@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-file-uploads
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione dei File Upload in Filament
 
 ## Panoramica
@@ -104,7 +107,19 @@ protected $casts = [
     'certifications' => 'array',
 ];
 
+<<<<<<< HEAD
 // In Laravel 12.x, utilizzare il metodo casts()
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// In Laravel 13.x, utilizzare il metodo casts()
+=======
+// In Laravel 12.x, utilizzare il metodo casts()
+>>>>>>> laraxot/dev
+=======
+// In Laravel 12.x, utilizzare il metodo casts()
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 protected function casts(): array
 {
     return array_merge(parent::casts(), [

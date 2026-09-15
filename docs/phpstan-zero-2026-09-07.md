@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-zero-2026-09-07
 description: "Status: COMPLETED (Fase 6 — Second brain + docs)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Zero — Xot Module (2026-09-07)
 
 **Status:** COMPLETED (Fase 6 — Second brain + docs)

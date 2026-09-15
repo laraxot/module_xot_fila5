@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: features
 description: " 📋 Table of Contents"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Features
 
 ## 📋 Table of Contents

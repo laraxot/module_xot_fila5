@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: semantic-methods
 description: " Principio Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # Filosofia dei Metodi Semantici
 

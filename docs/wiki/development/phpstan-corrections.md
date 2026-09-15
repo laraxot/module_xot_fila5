@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-corrections
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni PHPStan nel Progetto Laravel-Xot
 
 ## Introduzione

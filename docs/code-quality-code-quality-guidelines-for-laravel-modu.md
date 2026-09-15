@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-code-quality-guidelines-for-laravel-modu
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview

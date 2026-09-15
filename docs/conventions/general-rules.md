@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: general-rules
 description: " 1. Struttura del Codice"
@@ -5,6 +6,8 @@ metadata:
   type: convention
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Generali di Comportamento
 
 ## 1. Struttura del Codice

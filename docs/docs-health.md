@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: docs-health
 description: " Snapshot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Docs Health - Xot
 
 ## Snapshot

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bmad-method
 description: " scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # bmad method in laraxot
 
 ## scopo

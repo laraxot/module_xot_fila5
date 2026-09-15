@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translation-structure-expanded
 description: "- lang/es/labels.php - Etichette generali spagnole"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 - [Geo Module Translations](/Modules/Geo/project_docs/translation-structure-expanded.md)
 - [User Module Translations](/Modules/User/project_docs/translation-guidelines.md)
 

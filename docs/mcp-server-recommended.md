@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mcp-server-recommended
 description: " Scopo del Modulo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo

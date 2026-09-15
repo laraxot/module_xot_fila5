@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: migration-philosophy
 description: " The Sacred Rule"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Migration Philosophy - Single Source of Truth
 
 ## The Sacred Rule

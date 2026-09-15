@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: fileupload-components
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # FileUpload Components in XotBaseResource
 
 ## Overview

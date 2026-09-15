@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: getter-zen-advanced
 description: " Il Tao del Codice Pulito"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # La Filosofia Zen Avanzata dei Getter Semantici
 

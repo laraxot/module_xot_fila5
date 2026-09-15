@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-extension-rules-filament-class-extension-rules
 description: "This document is intentionally kept short to avoid duplication."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Class Extension Rules
 
 This document is intentionally kept short to avoid duplication.

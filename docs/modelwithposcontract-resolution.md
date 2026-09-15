@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: modelwithposcontract-resolution
 description: " Problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione del Conflitto in ModelWithPosContract.php
 
 ## Problema

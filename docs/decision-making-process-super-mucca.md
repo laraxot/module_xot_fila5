@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: decision-making-process-super-mucca
 description: "Data: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Data**: 2025-01-22

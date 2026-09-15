@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: dry-kiss-analysis
 description: "Data Analisi: 2025-10-15"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🐄✨ DRY & KISS Analysis - Modulo Xot
 
 **Data Analisi:** 2025-10-15

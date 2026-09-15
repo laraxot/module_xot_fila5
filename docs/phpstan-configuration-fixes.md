@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-configuration-fixes
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Configuration Fixes - Modulo Xot
 
 ## Panoramica

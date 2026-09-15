@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: rules
 description: "- Le azioni che operano su una chiave specifica devono utilizzare la forma By<Key> (es. UpdateRestiPondByValutatoreIdAction)."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ## Regole di naming per le azioni
 
 - Le azioni che operano su una chiave specifica devono utilizzare la forma `By<Key>` (es. `UpdateRestiPondByValutatoreIdAction`).

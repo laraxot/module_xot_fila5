@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-best-practices
 description: " 🏆 Gold Standard per i Test"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 Gold Standard per i Test

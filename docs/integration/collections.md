@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: collections
 description: "<!-- Contenuto migrato da docs/collections.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # collections
 
 <!-- Contenuto migrato da _docs/collections.txt -->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: cyclomatic-complexity-report
 description: "Generated: 2025-10-01 19:44:12"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: Xot
 
 **Generated:** 2025-10-01 19:44:12

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: frontend-architecture
 description: " Tecnologie Principali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Architettura Frontend
 
 ## Tecnologie Principali

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: implementation-summary-filament-phpstan-fixes
 description: "Date: 2025-12-18"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Implementation Summary: Filament Extension Rules & PHPStan Return Type Fixes
 
 **Date**: 2025-12-18  

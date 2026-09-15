@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: actions-pattern
 description: " Principio Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pattern Corretto per Actions in Laraxot
 
 ## Principio Fondamentale

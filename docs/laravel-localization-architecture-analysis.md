@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laravel-localization-architecture-analysis
 description: " Critical Discovery: Laravel Localization + Folio Incompatibility"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laravel Localization Architecture Analysis
 
 ## Critical Discovery: Laravel Localization + Folio Incompatibility

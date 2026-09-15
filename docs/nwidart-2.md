@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: nwidart-2
 description: "<!-- Contenuto migrato da docs/nwidart.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # nwidart
 
 <!-- Contenuto migrato da _docs/nwidart.txt -->

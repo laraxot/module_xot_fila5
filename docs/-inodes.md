@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: inodes
 description: "<!-- Contenuto migrato da docs/inodes.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->

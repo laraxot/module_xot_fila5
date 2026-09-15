@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Analysis and Legacy Cleanup (2026-05-13)
 
 ## Overview

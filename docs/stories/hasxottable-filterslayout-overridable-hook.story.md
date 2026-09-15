@@ -1,7 +1,19 @@
 ---
 id: hasxottable-filterslayout-overridable-hook
 slug: hasxottable-filterslayout-overridable-hook
+<<<<<<< HEAD
 scope: [module:Xot, project:base_workorder_fila5]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+scope: [module:Xot, project:<repo progetto>]
+=======
+scope: [module:Xot, project:base_workorder_fila5]
+>>>>>>> laraxot/dev
+=======
+scope: [module:Xot, project:base_workorder_fila5]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 status: superseded
 superseded_by: hasxottable-recordactionsposition-and-filterslayout-hardcode-fix.story.md
 priority: Medium

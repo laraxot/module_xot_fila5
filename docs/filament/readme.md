@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: "Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament
 
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.

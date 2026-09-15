@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstanes-3
 description: " 📊 Statistiche Finali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Fixes - Risultati Finali (Gennaio 2025)
 
 ## 📊 Statistiche Finali

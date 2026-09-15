@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: hastranslations-rule
 description: " Regola Critica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🚨 REGOLA FONDAMENTALE: HasTranslations
 
 ## Regola Critica

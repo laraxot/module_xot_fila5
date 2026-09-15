@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: directory-structure-rules
 description: " Struttura Base del Progetto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: property-exists-elimination
 description: "Data Intervento: 5 Novembre 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Eliminazione property_exists() - Report Completo
 
 **Data Intervento**: 5 Novembre 2025

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: permission
 description: " Collegamenti tra versioni di permission.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 

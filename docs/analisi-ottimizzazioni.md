@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: analisi-ottimizzazioni
 description: " 🎯 panoramica analisi"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🔧 analisi e ottimizzazioni - modulo xot (core)
 
 ## 🎯 panoramica analisi

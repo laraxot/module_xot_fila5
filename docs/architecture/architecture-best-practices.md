@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: architecture-best-practices
 description: "Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi, valutatoreid, ecc.), si raccomanda l'uso esplicito del suff"
@@ -5,6 +6,8 @@ metadata:
   type: architecture
 ---
 
+=======
+>>>>>>> laraxot/dev
 ## Convenzioni di naming per le azioni (Actions)
 
 Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi, valutatore_id, ecc.), si raccomanda l'uso esplicito del suffisso `By<Chiave>` nel nome della classe. Esempio:

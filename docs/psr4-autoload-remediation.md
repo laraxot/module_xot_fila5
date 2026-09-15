@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: psr4-autoload-remediation
 description: " Contesto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PSR-4 Autoload Remediation (2026-03-09)
 
 ## Contesto

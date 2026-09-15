@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: queueable-actions
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Queueable Actions
 
 ## Panoramica

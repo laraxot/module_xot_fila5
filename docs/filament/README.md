@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: "<<<<<<< HEAD"
@@ -5,11 +6,22 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament
 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Filament-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -18,6 +30,21 @@ metadata:
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
+
+> **Core module for the <nome progetto> Platform.**
+
+## Perché esiste
+
+Core module for the <nome progetto> Platform.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
@@ -28,12 +55,31 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
+<<<<<<< HEAD
 - Integrated with FixCity Platform
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -46,8 +92,22 @@ Core module for the FixCity Platform.
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+=======
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Esempio CORRETTO
 ```php
 ->action(fn (Studio $record): void => $record->activate()) // CORRETTO: nessun return
@@ -107,6 +167,15 @@ $prefix = static::$translationPrefix;
 
 # Filament
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
@@ -120,6 +189,15 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
 ## Collegamenti tra versioni di README.md
@@ -201,7 +279,18 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../../themes/one/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend. 
 
 ## Collegamenti tra versioni di README.md
@@ -237,6 +326,15 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
@@ -270,6 +368,15 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](docs/it/README.md)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
 * [README.md](../../../Chart/docs/README.md)
 * [README.md](../../../Reporting/docs/README.md)
@@ -314,6 +421,15 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/project_docs/README.md)
 * [README.md](../../../Chart/project_docs/README.md)
@@ -389,6 +505,16 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 <<<<<<< HEAD
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
@@ -444,6 +570,15 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome modulo>/docs/filament-best-practices.mdc](../../../<nome modulo>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ### Checklist
@@ -483,6 +618,18 @@ $prefix = static::$translationPrefix;
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
+- [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
+// Aggiungere qui altri moduli se necessario
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
@@ -625,7 +772,18 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Aggiornare la documentazione ogni volta che si corregge questo errore.
 
 ### Collegamento
+<<<<<<< HEAD
 - Vedi anche: [SaluteOra/docs/filament-best-practices.mdc](../../../SaluteOra/docs/filament-best-practices.mdc)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- Vedi anche: [SaluteOra/docs/filament-best-practices.mdc](../../../SaluteOra/docs/filament-best-practices.mdc)
+>>>>>>> laraxot/dev
+=======
+- Vedi anche: [SaluteOra/docs/filament-best-practices.mdc](../../../SaluteOra/docs/filament-best-practices.mdc)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Checklist
 - [ ] Nessuna closure void restituisce un valore
@@ -662,9 +820,24 @@ $prefix = static::$translationPrefix;
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 =======
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Filament-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -674,17 +847,49 @@ $prefix = static::$translationPrefix;
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> **Core module for the <nome progetto> Platform.**
+
+## Perché esiste
+
+Core module for the <nome progetto> Platform.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
+<<<<<<< HEAD
 - Integrated with FixCity Platform
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -696,7 +901,23 @@ Core module for the FixCity Platform.
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

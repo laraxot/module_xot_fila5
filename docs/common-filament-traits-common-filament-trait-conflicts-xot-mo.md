@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: common-filament-traits-common-filament-trait-conflicts-xot-mo
 description: " 📋 Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Common Filament Trait Conflicts - Xot Module
 
 ## 📋 Panoramica
@@ -518,7 +521,19 @@ class MyPage extends XotBaseViewRecord
 
 ## 📎 Riferimenti
 
+<<<<<<< HEAD
 - [Filament 4 Documentation](https://filamentphp.com/docs)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament 5 Documentation](https://filamentphp.com/docs)
+=======
+- [Filament 4 Documentation](https://filamentphp.com/docs)
+>>>>>>> laraxot/dev
+=======
+- [Filament 4 Documentation](https://filamentphp.com/docs)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Laravel Traits](https://www.php.net/manual/en/language.oop5.traits.php)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - `/Modules/Xot/docs/FILAMENT_4_LARAXOT_RULES.md`

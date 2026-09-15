@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: standards
 description: " Best Practices Laravel"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Standard di Sviluppo
 
 ## Best Practices Laravel

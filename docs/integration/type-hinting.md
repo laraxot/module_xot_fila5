@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: type-hinting
 description: "<!-- Contenuto migrato da docs/typehinting.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # type_hinting
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->

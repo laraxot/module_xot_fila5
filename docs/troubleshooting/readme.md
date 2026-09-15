@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: " Common Issues"
@@ -5,6 +6,8 @@ metadata:
   type: troubleshooting
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Troubleshooting Guide
 
 ## Common Issues

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbasemodel
 description: " Architecture Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseModel Documentation
 
 ## Architecture Overview

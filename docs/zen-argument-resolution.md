@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: zen-argument-resolution
 description: " 🥊 La Disputa Interiore"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione della Disputa Zen: Priorità e Approccio Laraxot
 
 ## 🥊 La Disputa Interiore

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: critical-resource-model-alignment
 description: " 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # CRITICAL: Filament Resource-Model Alignment Rules
 
 ## 🚨 ERRORE CRITICO IDENTIFICATO E RISOLTO
@@ -54,9 +57,27 @@ protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'p
 
 // RISORSA SBAGLIATA (PRIMA):
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -73,9 +94,27 @@ public function getFormSchema(): array
 ```php
 // RISORSA CORRETTA (DOPO):
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

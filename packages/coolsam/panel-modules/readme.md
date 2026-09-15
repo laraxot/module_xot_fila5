@@ -9,7 +9,19 @@
 
 Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel-modules`
 
+<<<<<<< HEAD
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**NB: These docs are for v3, which only supports Filament 5. If you are using Filament
+=======
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+>>>>>>> laraxot/dev
+=======
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 v2, [see the documentation here](https://github.com/savannabits/filament-modules/tree/main#readme) to get started.**
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: critical-guidelines-update
 description: " 1. VIOLAZIONE GRAVE: Cartella Docs Root"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Aggiornamento Linee Guida Critiche - Agosto 2025
 
 ## 1. VIOLAZIONE GRAVE: Cartella Docs Root

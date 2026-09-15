@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: type-hinting
 description: "<!-- Contenuto migrato da docs/typehinting.txt -->"
@@ -7,6 +8,16 @@ metadata:
 
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Type hinting"
 type: reference
@@ -20,6 +31,15 @@ note: "Convertito da type_hinting.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/type_hinting.txt -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 https://mlocati.github.io/articles/php-type-hinting.html
 https://howto.webarea.it/php/type-hinting-php-e-controllo-wake-strict-mode_170
@@ -31,6 +51,16 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 /** @var $post Post */
 
@@ -41,13 +71,39 @@ https://packagist.org/packages/maksi/laravel-idea-type-hinting
      */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 declare(strict_types = 1);
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+declare(strict_types = 1);
+
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 declare(strict_types = 1);
 
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 protected ClassName $classType;
 
@@ -91,6 +147,16 @@ function iterable_map(iterable $list, callable $operation) : iterable
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public static function byArray(iterable $data)
     {
@@ -116,6 +182,18 @@ public static function byArray(iterable $data)
 
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
@@ -134,6 +212,18 @@ https://sodocumentation.net/it/php/topic/504/classi-e-oggetti
 
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 class ClassName
 {
@@ -149,6 +239,16 @@ $instance->foo();
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ublic function foo(): ?stdClass
     {
@@ -163,6 +263,16 @@ ublic function foo(): ?stdClass
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 function foo(): object
 {
@@ -173,6 +283,17 @@ function foo(): object
 
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 Relazioni
 https://github.com/larastan/larastan/issues/689
@@ -187,10 +308,35 @@ public function articles(): HasMany {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 
 
 https://github.com/oucil/Code-Hint-Aggregator
+<<<<<<< HEAD
 =======
 https://github.com/oucil/Code-Hint-Aggregator
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+https://github.com/oucil/Code-Hint-Aggregator
+=======
+=======
+https://github.com/oucil/Code-Hint-Aggregator
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+https://github.com/oucil/Code-Hint-Aggregator
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: infolist-for-summary
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Infolist per Summary e Author Sections
 
 ## Overview
@@ -199,7 +202,19 @@ TextEntry::make('review_images_count')
     ->state(function (Get $get): string {
         $images = $get('images');
         $count = is_array($images) ? count($images) : 0;
+<<<<<<< HEAD
         return trans_choice('fixcity::ticket.messages.images_uploaded.text', $count);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        return trans_choice('<nome progetto>::ticket.messages.images_uploaded.text', $count);
+=======
+        return trans_choice('fixcity::ticket.messages.images_uploaded.text', $count);
+>>>>>>> laraxot/dev
+=======
+        return trans_choice('fixcity::ticket.messages.images_uploaded.text', $count);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }),
 ```
 
@@ -247,5 +262,20 @@ Se vedi documentazione o tutorial che dicono "non puoi mixare Forms e Infolists"
 ## Vedi anche
 
 - [Location Spinner UX](../../../Geo/docs/location-spinner-ux.md) — GPS button con spinner
+<<<<<<< HEAD
 - [Ticket Wizard Frontoffice](../../../Fixcity/docs/ticket-wizard-frontoffice.md) — Architettura wizard
 - [Filament Wizard Rule](../../../Fixcity/docs/filament-wizard-rule.md) — NO Blade step management
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Ticket Wizard Frontoffice](../../../<nome progetto>/docs/ticket-wizard-frontoffice.md) — Architettura wizard
+- [Filament Wizard Rule](../../../<nome progetto>/docs/filament-wizard-rule.md) — NO Blade step management
+=======
+- [Ticket Wizard Frontoffice](../../../Fixcity/docs/ticket-wizard-frontoffice.md) — Architettura wizard
+- [Filament Wizard Rule](../../../Fixcity/docs/filament-wizard-rule.md) — NO Blade step management
+>>>>>>> laraxot/dev
+=======
+- [Ticket Wizard Frontoffice](../../../Fixcity/docs/ticket-wizard-frontoffice.md) — Architettura wizard
+- [Filament Wizard Rule](../../../Fixcity/docs/filament-wizard-rule.md) — NO Blade step management
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

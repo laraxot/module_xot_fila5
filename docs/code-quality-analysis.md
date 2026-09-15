@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-analysis
 description: " 📊 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Analysis - Xot Module
 
 ## 📊 Overview

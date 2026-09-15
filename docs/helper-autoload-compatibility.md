@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: helper-autoload-compatibility
 description: " Problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Helper Autoload Compatibility
 
 ## Problema

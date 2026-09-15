@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: performance-1
 description: "<!-- Contenuto migrato da docs/performance.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _performance
 
 <!-- Contenuto migrato da _docs/_performance.txt -->

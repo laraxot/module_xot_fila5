@@ -8,8 +8,22 @@ All notable changes to `:package_name` will be documented in this file.
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 5d3d201f (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5d3d201f (.)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 
 ---
@@ -309,7 +323,22 @@ All notable changes to `:package_name` will be documented in this file.
 **Versioning:** [Semantic Versioning](https://semver.org/)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> 50bafb8c (.)
 =======
 >>>>>>> c7fd73eb (.)
 >>>>>>> 5d3d201f (.)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

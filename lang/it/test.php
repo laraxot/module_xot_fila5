@@ -10,8 +10,13 @@ return [
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
         'alpha' => ['label' => 'alpha', 'placeholder' => 'alpha', 'helper_text' => '', 'description' => 'alpha'],
         'beta' => ['label' => 'beta', 'placeholder' => 'beta', 'helper_text' => '', 'description' => 'beta'],
+=======
+        'alpha' => ['label' => 'alpha', 'placeholder' => 'alpha', 'helper_text' => 'alpha', 'description' => 'alpha'],
+        'beta' => ['label' => 'beta', 'placeholder' => 'beta', 'helper_text' => 'beta', 'description' => 'beta'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'Crea Test'],

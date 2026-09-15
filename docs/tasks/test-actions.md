@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: test-actions
 description: "Modulo: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Test Actions
 
 **Modulo**: Xot  

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-actions-string-keys-filament-actions-string-keys-requireme
 description: " Critical Type Rule"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Actions - String Keys Requirement
 
 ## Critical Type Rule

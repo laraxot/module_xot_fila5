@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: guess-pivot-action
 description: " What was wrong"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # GuessPivotAction Location Correction
 
 ## What was wrong

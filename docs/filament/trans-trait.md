@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: trans-trait
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # TransTrait
 
 ## Descrizione

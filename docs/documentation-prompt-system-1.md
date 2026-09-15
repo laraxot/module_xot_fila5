@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: documentation-prompt-system-1
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sistema di Prompt per la Documentazione
 
 ## Panoramica

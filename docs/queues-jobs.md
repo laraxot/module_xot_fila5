@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: queues-jobs
 description: " Configurazione Base"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code e Job
 
 ## Configurazione Base

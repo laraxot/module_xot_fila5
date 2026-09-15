@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: zsh
 description: " Collegamenti tra versioni di zsh.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 link: https://www.reddit.com/r/bash/comments/12lz3kb/is_it_possible_to_make_zsh_look_like_gitbash/
 
 touch ~/.zshrc

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: chartjs-datalabels-multiple-labels-guide
 description: "Versione: 1.0"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Multiple Labels con chartjs-plugin-datalabels (Xot Base)
 
 **Versione:** 1.0  

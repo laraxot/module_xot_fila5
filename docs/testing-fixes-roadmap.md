@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-fixes-roadmap
 description: "Data: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Fixes Roadmap - Correzione Test Falliti
 
 **Data**: 2025-01-22

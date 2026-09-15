@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-tao
 description: " Il Principio Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # Il Tao del Codice
 

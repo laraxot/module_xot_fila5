@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: conflict-resolution
 description: " Principi Fondamentali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione dei Conflitti Git
 
 ## Principi Fondamentali

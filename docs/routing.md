@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: routing
 description: " Indice"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Routing nel Progetto il progetto
 
 ## Indice

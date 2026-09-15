@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-best-practices-uppercase-1
 description: " 🏆 Gold Standard Pattern"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**

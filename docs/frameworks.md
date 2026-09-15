@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: frameworks
 description: "Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot — Framework Integration Notes
 
 Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail.

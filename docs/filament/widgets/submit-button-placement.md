@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: submit-button-placement
 description: "Status: Active"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Submit Button Placement — La Filosofia del Protocollo
 
 **Status**: Active  
@@ -169,7 +172,19 @@ protected function getWizardSubmitAction(): Htmlable
 protected function getWizardSubmitAction(): Htmlable
 {
     // Design Comuni button classes
+<<<<<<< HEAD
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     return new HtmlString(
         "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"
@@ -246,7 +261,19 @@ class CreateTicketWizardWidget extends XotBaseWizardWidget
     #[\Override]
     protected function getWizardSubmitAction(): Htmlable
     {
+<<<<<<< HEAD
         $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+        $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+        $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         
         return new HtmlString(
             "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-improvements
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Improvements - Xot Module
 
 ## Overview

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpinsights-standalone
 description: "Versione: v2.12.0+ (isolata in tools/phpinsights/)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPInsights — Installazione Standalone
 
 **Versione**: v2.12.0+ (isolata in `tools/phpinsights/`)

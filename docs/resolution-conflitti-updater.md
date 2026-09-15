@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: resolution-conflitti-updater
 description: " File coinvolto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione conflitti su Trait Updater
 
 ## File coinvolto

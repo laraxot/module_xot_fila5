@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-report
 description: " Stato Attuale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Report PHPStan - Modulo User
 
 ## Stato Attuale

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: advanced-framework-architecture
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Architettura Avanzata del Framework Xot basata sui Principi Filament
 
 ## Introduzione

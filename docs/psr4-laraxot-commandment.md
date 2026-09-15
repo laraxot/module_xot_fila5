@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: psr4-laraxot-commandment
 description: " 📖 REGOLA FONDAMENTALE"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🚨 COMANDAMENTO PSR-4 LARAXOT - STRUTTURA SACRA
 
 ## 📖 REGOLA FONDAMENTALE

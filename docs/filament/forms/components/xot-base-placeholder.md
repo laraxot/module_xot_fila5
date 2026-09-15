@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-base-placeholder
 description: " Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBasePlaceholder Component
 
 ## Obiettivo

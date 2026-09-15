@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-architecture
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Architecture and Pest Setup
 
 ## Overview

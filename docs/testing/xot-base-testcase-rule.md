@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-base-testcase-rule
 description: " 🧘‍♂️ La Visione e la Filosofia"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseTestCase: La Nostra Religione del Testing (Laraxot Zen)
 
 ## 🧘‍♂️ La Visione e la Filosofia

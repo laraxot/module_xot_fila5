@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: database-configuration-rule
 description: " 🚨 CRITICAL RULE: NEVER ADD MANUAL MODULE CONNECTIONS TO database.php"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Database Configuration Rule - Laraxot Architecture
 
 ## 🚨 CRITICAL RULE: NEVER ADD MANUAL MODULE CONNECTIONS TO database.php

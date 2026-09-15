@@ -9,7 +9,19 @@ updated: "2026-06-18"
 related:
   - "../../../../../docs/wiki/rules/00-TRIGGER_MAP.md"
   - "../../../../../docs/wiki/how-to/github-issue-agent-discipline.md"
+<<<<<<< HEAD
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issue: "https://github.com/provtv/<repo progetto>/issues/152"
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+>>>>>>> laraxot/dev
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 # Disciplina agenti per massimizzare la confidenza

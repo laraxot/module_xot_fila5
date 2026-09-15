@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level10-success-nov-archive
 description: " 🎯 Obiettivo Raggiunto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 - Successo Totale (Novembre 2025)
 
 ## 🎯 Obiettivo Raggiunto
@@ -22,9 +25,27 @@ metadata:
 ## 🔧 Correzioni Principali
 
 ### 1. Conflitti Git Risolti (4 file)
+<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
 - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
 - `Modules/Quaeris/app/Datas/DashboardFilterData.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `Modules/<nome progetto>/app/Filament/Pages/DashboardV2.php`
+- `Modules/<nome progetto>/app/Datas/AlertDashboardFilterData.php`
+- `Modules/<nome progetto>/app/Datas/DashboardFilterData.php`
+=======
+- `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
+- `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
+- `Modules/Quaeris/app/Datas/DashboardFilterData.php`
+>>>>>>> laraxot/dev
+=======
+- `Modules/Quaeris/app/Filament/Pages/DashboardV2.php`
+- `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php`
+- `Modules/Quaeris/app/Datas/DashboardFilterData.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Pattern**: Risoluzione manuale sempre scegliendo la versione HEAD con codice funzionante.
 
@@ -151,7 +172,19 @@ Dopo OGNI modifica di file PHP:
 
 Risultato ottenuto seguendo rigorosamente:
 - DRY + KISS + SOLID + Robust
+<<<<<<< HEAD
 - Laravel 12 + Filament 4 + PHP 8.3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Laravel 13 + Filament 5 + PHP 8.3
+=======
+- Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
+=======
+- Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Laraxot architecture rules
 - Zero compromessi su qualità codice
 

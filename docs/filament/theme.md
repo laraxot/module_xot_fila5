@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: theme
 description: " Collegamenti tra versioni di theme.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 https://fly.io/laravel-bytes/filamentphp-adding-some-style/
 ### Versione HEAD
 

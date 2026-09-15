@@ -27,7 +27,19 @@ Caricato da `XotBaseServiceProvider::registerConfig()` come `config('{alias}.con
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'name' => 'WorkOrder',           // obbligatorio — PanelMixin::getNavigationLabel()
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'name' => '<nome progetto>',           // obbligatorio — PanelMixin::getNavigationLabel()
+=======
+    'name' => 'WorkOrder',           // obbligatorio — PanelMixin::getNavigationLabel()
+>>>>>>> laraxot/dev
+=======
+    'name' => 'WorkOrder',           // obbligatorio — PanelMixin::getNavigationLabel()
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     'description' => '…',            // consigliato — docs e discoverability
     'icon' => 'heroicon-o-…',        // obbligatorio — PanelMixin::getNavigationIcon()
     'navigation' => [
@@ -62,7 +74,19 @@ done
 Audit completo eseguito: 21 moduli reali (con `module.json`) su 42 directory sotto `Modules/`
 erano privi di `config/config.php` (`AiAssistant, Billing, Bom, Catalog, Compliance, Customer,
 Document, Email, EnergyBroker, Fiscal, HR, Intervention, Inventory, Platform, Production,
+<<<<<<< HEAD
 PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, WorkOrder`). Creati tutti e 21 con
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, <nome progetto>`). Creati tutti e 21 con
+=======
+PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, WorkOrder`). Creati tutti e 21 con
+>>>>>>> laraxot/dev
+=======
+PublicProcurement, Quotation, Signature, Vehicle, WhatsApp, WorkOrder`). Creati tutti e 21 con
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 `name`/`description` derivati da `module.json` (`jq`), `icon` generico, `navigation.sort` =
 `module.json.priority`. Esclusi dall'audit: `Blog`, `Comment`, `TestModule` (nessun `module.json`
 — non moduli nwidart attivi in questa fase) e `Modules/docs` (cartella di documentazione, non un

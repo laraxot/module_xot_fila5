@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbase-trait-inheritance-zen
 description: " La Storia"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Lo Zen dell'Ereditarietà XotBase: Filosofia Anti-Ridondanza
 
 ## La Storia

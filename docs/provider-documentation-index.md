@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: provider-documentation-index
 description: "Purpose: Central index for all ServiceProvider documentation in Laraxot architecture"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Provider Documentation Index
 
 **Purpose**: Central index for all ServiceProvider documentation in Laraxot architecture

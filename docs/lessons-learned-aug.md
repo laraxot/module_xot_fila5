@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: lessons-learned-aug
 description: "This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted)."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Lessons Learned – Consolidated Rules (2025-08-25)
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).

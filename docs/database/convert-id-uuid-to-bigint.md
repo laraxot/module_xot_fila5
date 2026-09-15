@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: convert-id-uuid-to-bigint
 description: " Scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # convertIdFromUuidToBigintIfNeeded - Metodo XotBaseMigration
 
 ## Scopo

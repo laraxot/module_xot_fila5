@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: action-service-provider-architecture
 description: " Action Pattern: The Sacred Business Logic Container"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Action Pattern and Service Provider Architecture: The Sacred Systems
 
 ## Action Pattern: The Sacred Business Logic Container

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-subtree-operations
 description: " Perché"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Git Subtree Operations
 
 ## Perché

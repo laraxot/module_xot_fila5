@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: migration-unicity-commandment
 description: " 📖 REGOLA SACRA"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🚨 COMANDAMENTO ASSOLUTO - UNICITÀ MIGRATION
 
 ## 📖 REGOLA SACRA

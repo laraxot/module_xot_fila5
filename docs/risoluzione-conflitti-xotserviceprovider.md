@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: risoluzione-conflitti-xotserviceprovider
 description: " File coinvolto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione conflitti su XotServiceProvider
 
 ## File coinvolto

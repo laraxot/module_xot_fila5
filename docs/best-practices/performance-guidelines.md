@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: performance-guidelines
 description: " 🎯 Purpose"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose

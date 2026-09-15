@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: elastic-search
 description: "<!-- Contenuto migrato da docs/elasticsearch.txt -->"
@@ -7,6 +8,16 @@ metadata:
 
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Elastic search"
 type: reference
@@ -20,6 +31,15 @@ note: "Convertito da elastic_search.txt (documento) da convert-docs-txt-to-md.py
 
 <!-- Contenuto migrato da _docs/elastic_search.txt -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 https://github.com/matchish/laravel-scout-elasticsearch
 
@@ -30,6 +50,16 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 https://github.com/Jeroen-G/Explorer
 Explorer is a next-gen Elasticsearch driver for Laravel Scout with
@@ -37,6 +67,7 @@ the power of Elasticsearch’s queries.
 It provides a compatible Scout driver, as well as additional conveniences.
 For example, the Explored interface defines a mappableAs() method for getting configuration:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
  tamayo/laravel-scout-elastic
@@ -52,6 +83,35 @@ https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php   
 
 
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+
+ tamayo/laravel-scout-elastic
+https://www.cloudways.com/blog/laravel-scout-elasticsearch/
+
+
+https://odiaseo.github.io/scout-elasticsearch-driver/
+
+
+
+https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php    !!!!!!!!!!!!!!!!!!!!!
+
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  tamayo/laravel-scout-elastic
 https://www.cloudways.com/blog/laravel-scout-elasticsearch/
 
@@ -59,6 +119,15 @@ https://odiaseo.github.io/scout-elasticsearch-driver/
 
 https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php    !!!!!!!!!!!!!!!!!!!!!
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 https://github.com/ErickTamayo/laravel-scout-elastic
 https://gist.github.com/thomasjsn/48185612dc7abe857b9a0ae5716b86c3
@@ -68,10 +137,35 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 
 
 meilisearch
+<<<<<<< HEAD
 =======
 meilisearch
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+meilisearch
+=======
+=======
+meilisearch
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+meilisearch
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

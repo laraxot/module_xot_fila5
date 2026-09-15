@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: links
 description: " Documentazione Generale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Links
 
 ## Documentazione Generale

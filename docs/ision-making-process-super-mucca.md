@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ision-making-process-super-mucca
 description: "Filosofia: DRY + KISS + Documentazione Prima"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Processo Decisionale "Super Mucca" - La Litigata Interna
 
 **Filosofia**: DRY + KISS + Documentazione Prima

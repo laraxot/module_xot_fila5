@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: vendor-contract-patterns
 description: " Date Created"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Vendor Contract Patterns - Critical Rule
 
 ## Date Created

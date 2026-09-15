@@ -11,7 +11,19 @@
 
 ## 🎯 MODULE OVERVIEW
 
+<<<<<<< HEAD
 Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Il modulo **Xot** è il cuore architetturale del sistema <nome progetto>, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+=======
+Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+>>>>>>> laraxot/dev
+=======
+Il modulo **Xot** è il cuore architetturale del sistema FixCity, fornendo le funzionalità base, i contratti, le azioni e i servizi condivisi tra tutti i moduli. È il fondamento su cui si costruisce l'intera piattaforma.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 🏗️ Architettura Modulo
 ```
@@ -94,7 +106,19 @@ Xot Module (Core Framework)
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 9**: 0 errori
 - [x] **PHPStan level 10**: 0 errori
+<<<<<<< HEAD
 - [x] **Filament 4.x**: Compatibilità completa
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] **Filament 5.x**: Compatibilità completa
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
 - [x] **Testing Setup**: Configurazione test
@@ -236,7 +260,19 @@ Xot Module (Core Framework)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
+<<<<<<< HEAD
 - [x] Filament 4.x compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] Filament 5.x compatibility
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### 🚧 In Progress
 - [ ] **Testing Coverage** (Priority: HIGH)
@@ -293,7 +329,19 @@ Xot Module (Core Framework)
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 9**: 0 errori ✅
 - [x] **PHPStan level 10**: 0 errori ✅
+<<<<<<< HEAD
 - [x] **Filament 4.x**: Compatibile ✅
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] **Filament 5.x**: Compatibile ✅
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] **Test Coverage**: 90% (target)
 - [ ] **Response Time**: < 50ms
 - [ ] **Memory Usage**: < 128MB
@@ -431,7 +479,19 @@ Xot Module (Core Framework)
 
 ## 🔗 INTEGRATION POINTS
 
+<<<<<<< HEAD
 ### 🎫 Fixcity Module
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 🎫 <nome progetto> Module
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] Base classes for ticket management
 - [ ] Workflow actions for tickets
 - [ ] Notification services

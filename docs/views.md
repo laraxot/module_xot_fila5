@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: views
 description: " Configurazione Base"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Viste
 
 ## Configurazione Base

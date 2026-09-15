@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: normalization-report
 description: " Data: Gennaio 2025"
@@ -5,12 +6,30 @@ metadata:
   type: documentation
 ---
 
+=======
+<<<<<<< HEAD
+# Report Normalizzazione Documentazione
+
+## Data: Gennaio 2025
+<<<<<<< HEAD
+# Report Normalizzazione Documentazione - Gennaio 2025
+=======
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 # Report Normalizzazione Documentazione
 
 ## Data: Gennaio 2025
 =======
 # Report Normalizzazione Documentazione - Gennaio 2025
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+# Report Normalizzazione Documentazione - Gennaio 2025
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Azioni Completate
@@ -119,10 +138,28 @@ metadata:
 - [Regole Naming File](../Xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../docs/philosophy-guide.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
+- [Regole Naming File](../xot/docs/file-naming-rules.md)
+- [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 - [Processo Normalizzazione](../xot/docs/docs-normalization-process.md)
 - [Regole Naming File](../xot/docs/file-naming-rules.md)
 - [Filosofia DRY + KISS](../../../docs/philosophy-guide.md)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ---
@@ -131,6 +168,23 @@ metadata:
 **Stato**: In corso
 <<<<<<< HEAD
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+<<<<<<< HEAD
 =======
 **Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+=======
+<<<<<<< HEAD
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+=======
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+**Prossima Revisione**: Dopo normalizzazione batch successivo
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

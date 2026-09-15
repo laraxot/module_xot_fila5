@@ -7,9 +7,27 @@ created: 2026-06-11
 updated: 2026-06-11
 qmd: "xot pest phpunit central laravel phpunit.xml module tests configuration"
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - "https://github.com/laraxot/<repo progetto>/issues/345"
+discussions:
+  - "https://github.com/laraxot/<repo progetto>/discussions/273"
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+>>>>>>> laraxot/dev
+=======
+  - "https://github.com/laraxot/base_fixcity_fila5/issues/345"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - ../../../../../../docs/wiki/bmad/architecture-phpunit-central-config.md
   - ../concepts/module-testcase-xotbase-hierarchy.md

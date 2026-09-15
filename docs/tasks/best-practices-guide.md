@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: best-practices-guide
 description: "Modulo: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Best Practices Guide
 
 **Modulo**: Xot  

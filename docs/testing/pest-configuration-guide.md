@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pest-configuration-guide
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pest PHP Configuration Guide - Laraxot Architecture
 
 ## Introduzione

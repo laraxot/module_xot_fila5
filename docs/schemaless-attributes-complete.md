@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: schemaless-attributes-complete
 description: " 🎯 OVERVIEW"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Schemaless Attributes - Pattern Completi PTVX v3.0
 
 ## 🎯 **OVERVIEW**
@@ -25,8 +28,23 @@ Questa documentazione definisce i **pattern completi e standardizzati** per l'us
 - [Field Hydration](https://filamentphp.com/docs/5.x/forms/overview#field-hydration)
 - [Validation Rules](https://filamentphp.com/docs/5.x/forms/validation)
 
+<<<<<<< HEAD
 ### 🔗 **Standard Laravel 12**:
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 🔗 **Standard Laravel 13**:
+- [Laravel 13 Documentation](https://laravel.com/docs/12.x)
+=======
+### 🔗 **Standard Laravel 12**:
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+>>>>>>> laraxot/dev
+=======
+### 🔗 **Standard Laravel 12**:
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

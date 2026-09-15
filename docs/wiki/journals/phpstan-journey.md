@@ -41,7 +41,19 @@ updated: 2026-08-24
 | 6 | **Chart** | 0 | 0 | 9-10 | ✨ Già Puro |
 | 7 | **Geo** | 0 | 0 | 9-10 | ✨ Già Puro |
 | 8 | **Job** | 2 | 0 | 10 | ✨ Illuminato |
+<<<<<<< HEAD
 | 9 | **Quaeris** | 13 | 0 | 10 | ✨ Illuminato |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| 9 | **<nome progetto>** | 13 | 0 | 10 | ✨ Illuminato |
+=======
+| 9 | **Quaeris** | 13 | 0 | 10 | ✨ Illuminato |
+>>>>>>> laraxot/dev
+=======
+| 9 | **Quaeris** | 13 | 0 | 10 | ✨ Illuminato |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 📈 Metriche dell'Illuminazione
 
@@ -92,7 +104,19 @@ Codice perfetto
 ## 🎯 Le Sette Illuminazioni Principali
 
 ### 1️⃣ Semantic Keys (Il Nome delle Cose)
+<<<<<<< HEAD
 **Moduli**: Cms, Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Moduli**: Cms, <nome progetto>
+=======
+**Moduli**: Cms, Quaeris
+>>>>>>> laraxot/dev
+=======
+**Moduli**: Cms, Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Insegnamento**:
 > "Un array con int keys è come un tempio senza insegne.
@@ -125,7 +149,19 @@ if (is_array($value)) { /* ... */ }  // Dopo filter che garantisce array
 ```
 
 ### 3️⃣ Cascading Purity (L'Effetto Farfalla)
+<<<<<<< HEAD
 **Modulo**: Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Modulo**: <nome progetto>
+=======
+**Modulo**: Quaeris
+>>>>>>> laraxot/dev
+=======
+**Modulo**: Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Insegnamento**:
 > "Una goccia crea cerchi in tutto il lago.
@@ -238,7 +274,19 @@ Assert::isArray($value);  // Ridondante dopo narrowing
 Level 10 → 🏔️ Nirvana
             │ Zero tolleranza
             │ Perfezione assoluta
+<<<<<<< HEAD
             └─ Job, Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            └─ Job, <nome progetto>
+=======
+            └─ Job, Quaeris
+>>>>>>> laraxot/dev
+=======
+            └─ Job, Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Level 9  → ⛰️  Illuminazione
             │ Quasi perfezione
@@ -263,7 +311,19 @@ Level 0  → 🏕️  Campo Base
    - Collection Flow Analysis
    - Best practices Level 10
 
+<<<<<<< HEAD
 2. **`Modules/Quaeris/docs/phpstan-enlightenment.md`**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. **`Modules/<nome progetto>/docs/phpstan-enlightenment.md`**
+=======
+2. **`Modules/Quaeris/docs/phpstan-enlightenment.md`**
+>>>>>>> laraxot/dev
+=======
+2. **`Modules/Quaeris/docs/phpstan-enlightenment.md`**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Filosofia del modulo
    - I 4 Pilastri
    - Le 4 Nobili Verità del Type Safety
@@ -293,9 +353,27 @@ Level 0  → 🏕️  Campo Base
 ```php
 // 1. Form Schema con Semantic Keys
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: fix-phpstan-errors
 description: " ERRORI COMMESSI"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # BMAD FIX - LEARNINGS (Second Brain Updated)
 
 ## ERRORI COMMESSI

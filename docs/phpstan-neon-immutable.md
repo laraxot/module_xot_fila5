@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-neon-immutable
 description: " Regola critica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # phpstan.neon immutabile
 
 ## Regola critica

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: recursive-relationships-contract
 description: " 📋 Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # HasRecursiveRelationshipsContract - Documentazione Completa
 
 ## 📋 Panoramica

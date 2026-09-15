@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: domain-configuration-1
 description: " Prerequisiti"
@@ -9,6 +10,20 @@ metadata:
 
 ## Prerequisiti
 - Laravel 12.x
+=======
+# Gestione Domini e Configurazioni
+
+## Prerequisiti
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Laravel 13.x
+=======
+- Laravel 12.x
+>>>>>>> laraxot/dev
+=======
+- Laravel 12.x
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - PHP 8.2+
 
 ## Struttura dei Domini

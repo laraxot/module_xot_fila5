@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: csrf-token-management
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: rule
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione Token CSRF nei Widget XotBase
 
 ## Descrizione

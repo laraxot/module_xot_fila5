@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: hasxotform-form-final
 description: " Regola critica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # HasXotForm: form() DEVE essere final
 
 ## Regola critica

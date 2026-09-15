@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pest-execution-guide
 description: "Data: 9 Gennaio 2026"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pest Testing - Guida Esecuzione dalla Cartella Laravel
 
 **Data**: 9 Gennaio 2026  
