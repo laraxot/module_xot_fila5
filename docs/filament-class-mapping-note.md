@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-class-mapping-note
 description: "Data: 2025-12-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Nota: Forms Components Base Classes
 
 **Data**: 2025-12-23

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-analysis-late-dec
 description: " Summary"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-12-18
 
 ## Summary

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: environment-development-vs-testing-rules
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Environment Development vs Testing in Laraxot
 
 ## Panoramica
@@ -30,7 +33,19 @@ In Laraxot è fondamentale comprendere la differenza tra le configurazioni di am
 
 ### Database
 - `DB_CONNECTION=mysql`: Usa MySQL per i test
+<<<<<<< HEAD
 - Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Database con suffisso "_test" (es. `<nome progetto>_data_test`, `<nome progetto>_user_test`)
+=======
+- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+>>>>>>> laraxot/dev
+=======
+- Database con suffisso "_test" (es. `quaeris_data_test`, `quaeris_user_test`)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **MAI** usare SQLite per i test, nemmeno per convenienza
 
 ### Motivazione

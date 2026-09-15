@@ -45,7 +45,15 @@ Tutti i 18 moduli hanno raggiunto **PERFEZIONE ASSOLUTA**:
 - ✅ **Seo** - SEO optimization (0 errori)
 - ✅ **Lang** - i18n & translations (0 errori)
 - ✅ **AI** - AI integration (0 errori)
+<<<<<<< HEAD
 - ✅ **Fixcity** - Domain logic (0 errori)
+=======
+<<<<<<< HEAD
+- ✅ **<nome progetto>** - Domain logic (0 errori)
+=======
+- ✅ **Fixcity** - Domain logic (0 errori)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🎯 Correzioni Chiave
 
@@ -192,7 +200,15 @@ Violavano regola "TUTTI i test vanno in Pest":
 # Risultato: [OK] No errors ✅
 
 # Per modulo
+<<<<<<< HEAD
 for module in Activity AI Blog Cms Comment Fixcity Gdpr Geo Job Lang Media Notify Rating Seo Tenant UI User Xot; do
+=======
+<<<<<<< HEAD
+for module in Activity AI Blog Cms Comment <nome progetto> Gdpr Geo Job Lang Media Notify Rating Seo Tenant UI User Xot; do
+=======
+for module in Activity AI Blog Cms Comment Fixcity Gdpr Geo Job Lang Media Notify Rating Seo Tenant UI User Xot; do
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ./vendor/bin/phpstan analyse Modules/$module --no-progress
 done
 # Risultato: Tutti [OK] No errors ✅

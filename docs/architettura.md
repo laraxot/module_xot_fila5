@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: architettura
 description: " XotBaseWizardWidget"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Architettura Modulo Xot - Widgets & Wizards
 
 ## XotBaseWizardWidget

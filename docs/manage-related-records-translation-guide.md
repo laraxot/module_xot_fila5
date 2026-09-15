@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: manage-related-records-translation-guide
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida alle Traduzioni per XotBaseManageRelatedRecords
 
 ## Panoramica

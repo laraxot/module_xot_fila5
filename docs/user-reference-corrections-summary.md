@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: user-reference-corrections-summary
 description: "Data: 2025-01-10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Reference Corrections Summary - Gennaio 2025
 
 **Data**: 2025-01-10

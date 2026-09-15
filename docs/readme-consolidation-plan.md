@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme-consolidation-plan
 description: "Data: 2026-01-09"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Piano Consolidamento File readme.md Duplicati
 
 **Data**: 2026-01-09  

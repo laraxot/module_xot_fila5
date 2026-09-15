@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translation-standards
 description: "1. progressioni.php - Traduzioni principali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 
 #### File Completati

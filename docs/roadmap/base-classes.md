@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: base-classes
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Base Classes - 100% Completato
 
 ## Descrizione

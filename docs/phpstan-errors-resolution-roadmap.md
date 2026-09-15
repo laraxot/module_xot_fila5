@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-errors-resolution-roadmap
 description: "Data: 2026-01-14"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - PHPStan Level 10 Errors Resolution Roadmap
 
 **Data**: 2026-01-14  

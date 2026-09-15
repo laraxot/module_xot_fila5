@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: sprint-planning
 description: " 🏁 Sprint Goal"
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Sprint Planning: Xot Infrastructure
 
 ## 🏁 Sprint Goal
@@ -28,7 +38,18 @@ Finalize the core documentation and perform a final PHPStan Level 10 audit.
 ## ✅ Definition of Done
 - All 6 files exist and are verified.
 - No PHPStan errors in the module.
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Xot Module - Sprint Planning
 
 **Module:** Xot  
@@ -99,4 +120,13 @@ Implement core extension framework with API, hooks, and event bus.
 ---
 
 *Last Updated: March 12, 2026*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

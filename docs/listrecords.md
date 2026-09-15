@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: listrecords
 description: "> AGGIORNAMENTO [DATE]:"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 > Questa policy è stata aggiornata e propagata anche in [<nome modulo>/docs/resources/studio-resource.md](../../<nome modulo>/docs/resources/studio-resource.md) e [<nome modulo>/docs/README.md](../../<nome modulo>/docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../<nome progetto>/docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../<nome progetto>/docs/readme.md). Vedi esempi di implementazione e note di propagazione.
 > Questa policy è stata aggiornata e propagata anche in [<nome progetto>/docs/resources/studio-resource.md](../../<nome progetto>/docs/resources/studio-resource.md) e [<nome progetto>/docs/README.md](../../<nome progetto>/docs/readme.md). Vedi esempi di implementazione e note di propagazione.

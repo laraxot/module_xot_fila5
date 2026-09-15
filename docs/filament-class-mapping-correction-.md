@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-class-mapping-correction
 description: "Data: 2025-12-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzione Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23

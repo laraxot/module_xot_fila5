@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mcpatabase-tools
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
@@ -20,7 +23,19 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 {
   "command": "node",
   "args": [
+<<<<<<< HEAD
     "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "/var/www/_bases/<repo progetto>/bashscripts/mcp/mysql-db-connector.js"
+=======
+    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> laraxot/dev
+=======
+    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   ]
 }
 ```

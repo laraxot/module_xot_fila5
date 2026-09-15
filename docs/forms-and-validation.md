@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: forms-and-validation
 description: " Filament Widgets vs Form Blade Tradizionali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Form e Validazione nel Progetto il progetto
 
 ## Filament Widgets vs Form Blade Tradizionali

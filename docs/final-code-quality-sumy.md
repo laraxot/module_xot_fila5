@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: final-code-quality-sumy
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Final Code Quality Summary - Laraxot Project
 
 ## Overview

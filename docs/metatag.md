@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: metatag
 description: " Collegamenti tra versioni di metatag.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 declare(strict_types=1);

@@ -15,7 +15,19 @@ This guide provides a comprehensive overview of chart generation and PDF integra
 
 ### Key Components
 - **Chart Module**: Contains chart generation and styling logic
+<<<<<<< HEAD
 - **Quaeris Module**: Handles survey data and PDF generation
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **<nome progetto> Module**: Handles survey data and PDF generation
+=======
+- **Quaeris Module**: Handles survey data and PDF generation
+>>>>>>> laraxot/dev
+=======
+- **Quaeris Module**: Handles survey data and PDF generation
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Xot Module**: Provides core services including HTML to PDF conversion
 - **JpGraph Library**: Server-side chart generation
 - **Chart.js**: Client-side chart visualization
@@ -509,7 +521,19 @@ class HtmlService
 PDFs support multi-page layouts with proper headers and footers:
 
 ```blade
+<<<<<<< HEAD
 @include('quaeris::pdf.css')
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+@include('<nome progetto>::pdf.css')
+=======
+@include('quaeris::pdf.css')
+>>>>>>> laraxot/dev
+=======
+@include('quaeris::pdf.css')
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 <page backtop="{{ $pdf->backtop }}mm" backbottom="{{ $pdf->backbottom }}mm">
     <page_header>

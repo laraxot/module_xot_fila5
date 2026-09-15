@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: cms-link
 description: "Questo documento fornisce collegamenti bidirezionali tra il modulo Xot e il modulo Cms."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Collegamenti al Modulo Cms
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Xot e il modulo Cms.

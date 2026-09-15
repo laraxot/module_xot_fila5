@@ -9,7 +9,19 @@ updated: "2026-05-26"
 related:
   - "../concepts/php84-upgrade-extension-checklist.md"
   - "../../../../../../public_html/.htaccess"
+<<<<<<< HEAD
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/147"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issue: "https://github.com/provtv/<repo progetto>/issues/147"
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/147"
+>>>>>>> laraxot/dev
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/147"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 # ptvx.local — PHP 8.4 su Apache (handler)

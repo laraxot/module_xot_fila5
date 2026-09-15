@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-widgets-domain-folder-naming
 description: " Religione"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament widgets: cartella dominio + classe ruolo
 
 ## Religione
@@ -21,8 +24,23 @@ metadata:
 
 - **Politica modulare:** un widget = un ruolo su un aggregato (`Ticket`, `Auth`, `Rating`).
 - **DRY nei namespace:** `ViewWidget` è leggibile nel contesto `Ticket\`; niente prefissi `Ticket*` su ogni file.
+<<<<<<< HEAD
 - **KISS in CMS JSON:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
 - **Allineamento risorse:** `GetViewByClassAction` risolve `fixcity::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **KISS in CMS JSON:** `Modules\<nome progetto>\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
+- **Allineamento risorse:** `GetViewByClassAction` risolve `<nome progetto>::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+=======
+- **KISS in CMS JSON:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
+- **Allineamento risorse:** `GetViewByClassAction` risolve `fixcity::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+>>>>>>> laraxot/dev
+=======
+- **KISS in CMS JSON:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` — percorso = documentazione vivente.
+- **Allineamento risorse:** `GetViewByClassAction` risolve `fixcity::filament.widgets.ticket.view` da `Ticket\ViewWidget`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Struttura file
 
@@ -47,14 +65,44 @@ Modules/<Modulo>/resources/views/filament/widgets/
   "type": "widget",
   "data": {
     "view": "ui::components.blocks.widget.simple",
+<<<<<<< HEAD
     "widget": "Modules\\Fixcity\\Filament\\Widgets\\Ticket\\ViewWidget"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "widget": "Modules\\<nome progetto>\\Filament\\Widgets\\Ticket\\ViewWidget"
+=======
+    "widget": "Modules\\Fixcity\\Filament\\Widgets\\Ticket\\ViewWidget"
+>>>>>>> laraxot/dev
+=======
+    "widget": "Modules\\Fixcity\\Filament\\Widgets\\Ticket\\ViewWidget"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   }
 }
 ```
 
+<<<<<<< HEAD
 ## Esempio Fixcity FO
 
 - Classe: `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Esempio <nome progetto> FO
+
+- Classe: `Modules\<nome progetto>\Filament\Widgets\Ticket\ViewWidget`
+=======
+## Esempio Fixcity FO
+
+- Classe: `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget`
+>>>>>>> laraxot/dev
+=======
+## Esempio Fixcity FO
+
+- Classe: `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Base: `XotBaseInfolistWidget`
 - Schema: `TicketInfolist::getInfolistSchema()`
 - Pagina: `tickets.view.json`
@@ -66,6 +114,18 @@ Widget ancora in root `Widgets/` con prefisso entità (`CreateTicketWizardWidget
 ## Collegamenti
 
 - [ticket-fo-detail-filament-widget-infolist](../../../../../../docs/wiki/decisions/ticket-fo-detail-filament-widget-infolist.md)
+<<<<<<< HEAD
 - [tickets-view-cms-folio-page](../../../Fixcity/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Fixcity)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [tickets-view-cms-folio-page](../../../<nome progetto>/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo <nome progetto>)
+=======
+- [tickets-view-cms-folio-page](../../../Fixcity/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Fixcity)
+>>>>>>> laraxot/dev
+=======
+- [tickets-view-cms-folio-page](../../../Fixcity/docs/wiki/concepts/tickets-view-cms-folio-page.md) (modulo Fixcity)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [GetViewByClassAction](../../app/Actions/View/GetViewByClassAction.php)
 - Regola Cursor: `.cursor/rules/filament-widget-domain-folder.mdc`

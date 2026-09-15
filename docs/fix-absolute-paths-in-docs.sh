@@ -5,7 +5,15 @@
 set -e
 
 DOCS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+<<<<<<< HEAD
 PROJECT_ROOT="/var/www/_bases/base_<nome progetto>_fila5_mono"
+=======
+<<<<<<< HEAD
+PROJECT_ROOT="/var/www/_bases/<repo progetto>"
+=======
+PROJECT_ROOT="/var/www/_bases/base_<nome progetto>_fila5_mono"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 echo "🔍 Analisi link assoluti in: $DOCS_DIR"
 echo ""

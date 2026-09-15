@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-compliance
 description: " 📚 Documentazione Correlata"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Compliance - Xot Module
 
 ## 📚 Documentazione Correlata
@@ -34,7 +37,19 @@ The Xot module is fully compliant with PHPStan level 9 analysis, demonstrating:
 - ✅ Rigorous type hints implementation
 - ✅ Proper null handling
 - ✅ Correct array structure definitions
+<<<<<<< HEAD
 - ✅ Filament 4.x compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ Filament 5.x compatibility
+=======
+- ✅ Filament 4.x compatibility
+>>>>>>> laraxot/dev
+=======
+- ✅ Filament 4.x compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - ✅ Safe function usage
 - ✅ Strict types declaration
 
@@ -68,7 +83,19 @@ This is the core module providing foundational functionality including:
 - **AnalyzeComponentsCommand**: Component analysis
 - **AddStrictTypesDeclarationCommand**: Type declaration automation
 
+<<<<<<< HEAD
 ## Filament 4.x Compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5.x Compatibility
+=======
+## Filament 4.x Compatibility
+>>>>>>> laraxot/dev
+=======
+## Filament 4.x Compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 All Filament components verified:
 - Base relation managers follow new patterns

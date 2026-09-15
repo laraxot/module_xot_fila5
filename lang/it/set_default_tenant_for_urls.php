@@ -72,7 +72,11 @@ return [
         ],
         'cap' => [
             'description' => 'cap',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'cap',
+>>>>>>> laraxot/dev
             'placeholder' => 'cap',
             'label' => 'cap',
             'tooltip' => '',
@@ -275,7 +279,11 @@ return [
         ],
         'itemIsDefault' => [
             'description' => 'itemIsDefault',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'itemIsDefault',
+>>>>>>> laraxot/dev
             'placeholder' => 'itemIsDefault',
             'label' => 'itemIsDefault',
             'tooltip' => '',
@@ -313,139 +321,219 @@ return [
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'user_id',
+>>>>>>> laraxot/dev
             'description' => 'user_id',
             'tooltip' => '',
         ],
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'name',
+>>>>>>> laraxot/dev
             'description' => 'name',
             'tooltip' => '',
         ],
         'slug' => [
             'label' => 'slug',
             'placeholder' => 'slug',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'slug',
+>>>>>>> laraxot/dev
             'description' => 'slug',
             'tooltip' => '',
         ],
         'category_id' => [
             'label' => 'category_id',
             'placeholder' => 'category_id',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'category_id',
+>>>>>>> laraxot/dev
             'description' => 'category_id',
             'tooltip' => '',
         ],
         'description' => [
             'label' => 'description',
             'placeholder' => 'description',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'description',
+>>>>>>> laraxot/dev
             'description' => 'description',
             'tooltip' => '',
         ],
         'details' => [
             'label' => 'details',
             'placeholder' => 'details',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'details',
+>>>>>>> laraxot/dev
             'description' => 'details',
             'tooltip' => '',
         ],
         'is_active' => [
             'label' => 'is_active',
             'placeholder' => 'is_active',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'is_active',
+>>>>>>> laraxot/dev
             'description' => 'is_active',
             'tooltip' => '',
         ],
         'ordering' => [
             'label' => 'ordering',
             'placeholder' => 'ordering',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'ordering',
+>>>>>>> laraxot/dev
             'description' => 'ordering',
             'tooltip' => '',
         ],
         'start_date' => [
             'label' => 'start_date',
             'placeholder' => 'start_date',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'start_date',
+>>>>>>> laraxot/dev
             'description' => 'start_date',
             'tooltip' => '',
         ],
         'end_date' => [
             'label' => 'end_date',
             'placeholder' => 'end_date',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'end_date',
+>>>>>>> laraxot/dev
             'description' => 'end_date',
             'tooltip' => '',
         ],
         'extensions' => [
             'label' => 'extensions',
             'placeholder' => 'extensions',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'extensions',
+>>>>>>> laraxot/dev
             'description' => 'extensions',
             'tooltip' => '',
         ],
         'sections' => [
             'label' => 'sections',
             'placeholder' => 'sections',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'sections',
+>>>>>>> laraxot/dev
             'description' => 'sections',
             'tooltip' => '',
         ],
         'fields' => [
             'label' => 'fields',
             'placeholder' => 'fields',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'fields',
+>>>>>>> laraxot/dev
             'description' => 'fields',
             'tooltip' => '',
         ],
         'type' => [
             'label' => 'type',
             'placeholder' => 'type',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'type',
+>>>>>>> laraxot/dev
             'description' => 'type',
             'tooltip' => '',
         ],
         'compact' => [
             'label' => 'compact',
             'placeholder' => 'compact',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'compact',
+>>>>>>> laraxot/dev
             'description' => 'compact',
             'tooltip' => '',
         ],
         'aside' => [
             'label' => 'aside',
             'placeholder' => 'aside',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'aside',
+>>>>>>> laraxot/dev
             'description' => 'aside',
             'tooltip' => '',
         ],
         'borderless' => [
             'label' => 'borderless',
             'placeholder' => 'borderless',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'borderless',
+>>>>>>> laraxot/dev
             'description' => 'borderless',
             'tooltip' => '',
         ],
         'icon' => [
             'label' => 'icon',
             'placeholder' => 'icon',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'icon',
+>>>>>>> laraxot/dev
             'description' => 'icon',
             'tooltip' => '',
         ],
         'columns' => [
             'label' => 'columns',
             'placeholder' => 'columns',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'columns',
+>>>>>>> laraxot/dev
             'description' => 'columns',
             'tooltip' => '',
         ],
         'itemKey' => [
             'description' => 'itemKey',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'itemKey',
+>>>>>>> laraxot/dev
             'placeholder' => 'itemKey',
             'label' => 'itemKey',
             'tooltip' => '',
@@ -453,14 +541,22 @@ return [
         'values' => [
             'label' => 'values',
             'placeholder' => 'values',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'values',
+>>>>>>> laraxot/dev
             'description' => 'values',
             'tooltip' => '',
         ],
         'itemValue' => [
             'label' => 'itemValue',
             'placeholder' => 'itemValue',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'itemValue',
+>>>>>>> laraxot/dev
             'description' => 'itemValue',
             'tooltip' => '',
         ],

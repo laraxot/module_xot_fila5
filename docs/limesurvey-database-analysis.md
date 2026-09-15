@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: limesurvey-database-analysis
 description: " Overview"
@@ -5,15 +6,45 @@ metadata:
   type: documentation
 ---
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Limesurvey Database Analysis - <nome progetto>_survey
+
+## Overview
+The `<nome progetto>_survey` database (identified as `txaesfry_<nome progetto>_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Limesurvey Database Analysis - quaeris_survey
 
 ## Overview
 The `quaeris_survey` database (identified as `txaesfry_quaeris_survey` in the code) is a Limesurvey database used by the system for handling survey data, questions, answers, and responses.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Database Schema Analysis
 
 ### Connection Configuration
+<<<<<<< HEAD
 - Database: `txaesfry_quaeris_survey`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Database: `txaesfry_<nome progetto>_survey`
+=======
+- Database: `txaesfry_quaeris_survey`
+>>>>>>> laraxot/dev
+=======
+- Database: `txaesfry_quaeris_survey`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Connection name: `limesurvey` (configured in config files)
 - Access through: `DB::connection('limesurvey')`
 
@@ -51,18 +82,50 @@ The `quaeris_survey` database (identified as `txaesfry_quaeris_survey` in the co
 - Key fields: `aid`, `answer`
 - Links to lime_answers via aid
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### Integration with <nome progetto>
+- The system connects to the survey database to extract answers and generate reports
+- Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
+- Maps survey responses to question structures for analysis
+- Links survey data with <nome progetto> survey_pdf records
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Integration with Quaeris
 - The system connects to the survey database to extract answers and generate reports
 - Uses LimeSurvey Remote Control API pattern (though direct DB access is also implemented)
 - Maps survey responses to question structures for analysis
 - Links survey data with Quaeris survey_pdf records
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Survey Data Flow
 1. Survey structure defined in `lime_questions` and `lime_question_l10ns`
 2. Participant responses stored in `lime_survey_{sid}`
 3. Token management in `lime_tokens_{sid}`
 4. Analysis performed by joining tables and aggregating responses
+<<<<<<< HEAD
 5. Results integrated with Quaeris data for comprehensive reporting
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+5. Results integrated with <nome progetto> data for comprehensive reporting
+=======
+5. Results integrated with Quaeris data for comprehensive reporting
+>>>>>>> laraxot/dev
+=======
+5. Results integrated with Quaeris data for comprehensive reporting
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Key Methods in LimeSurveyKK
 - `get_all_answers()`: Retrieves all answers for a given survey
@@ -79,9 +142,29 @@ From the code, it's evident that Limesurvey follows the standard schema where:
 - Translation tables use `_l10ns` suffix (localization)
 
 ## Usage in Application
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+The <nome progetto>_survey database is used primarily for:
+- Survey response analysis
+- Question/answer extraction
+- Response aggregation by time periods
+- Integration with <nome progetto> reporting features
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 The quaeris_survey database is used primarily for:
 - Survey response analysis
 - Question/answer extraction
 - Response aggregation by time periods
 - Integration with Quaeris reporting features
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Participant management and tracking

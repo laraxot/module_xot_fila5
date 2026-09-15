@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pest
 description: "<!-- Contenuto migrato da docs/pest.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _pest
 
 <!-- Contenuto migrato da _docs/_pest.txt -->

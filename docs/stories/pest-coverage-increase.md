@@ -1,7 +1,19 @@
 ---
 id: pest-coverage-increase
 slug: pest-coverage-all-modules
+<<<<<<< HEAD
 scope: [project:base_workorder_fila5, modules:All 52]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+scope: [project:<repo progetto>, modules:All 52]
+=======
+scope: [project:base_workorder_fila5, modules:All 52]
+>>>>>>> laraxot/dev
+=======
+scope: [project:base_workorder_fila5, modules:All 52]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 status: Pending
 priority: High
 created: 2026-09-06

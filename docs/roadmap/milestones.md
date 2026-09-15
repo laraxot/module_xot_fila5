@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: milestones
 description: " 📋 Table of Contents"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Milestones
 
 ## 📋 Table of Contents
@@ -328,7 +331,19 @@ Q2 2027:        ████  M10: Next Generation
 - 🎯 Developer Satisfaction: 90%+ (M6)
 
 ### Integration Criteria
+<<<<<<< HEAD
 - ✅ Laravel 12: Full support
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ Laravel 13: Full support
+=======
+- ✅ Laravel 12: Full support
+>>>>>>> laraxot/dev
+=======
+- ✅ Laravel 12: Full support
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - ✅ Filament 5: Full support
 - 🎯 Laravel 13: Full support (M10)
 - 🎯 PHP 8.5: Full support (M10)

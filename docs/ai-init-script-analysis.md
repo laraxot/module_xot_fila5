@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ai-init-script-analysis
 description: " Situazione Attuale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Funzionamento Script ai_init.sh
 
 ## Situazione Attuale

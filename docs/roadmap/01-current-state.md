@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 01-current-state
 description: " Baseline"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Current State - Xot
 
 ## Baseline

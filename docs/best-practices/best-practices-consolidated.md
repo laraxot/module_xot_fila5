@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: best-practices-consolidated
 description: "best-practices-consolidated"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Best Practices*

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-transtrait-errors
 description: "Date: 2025-12-16"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Errors - TransTrait.php
 
 **Date**: 2025-12-16

@@ -320,7 +320,19 @@ public function canAccess($user): bool
 }
 ```
 
+<<<<<<< HEAD
 ## 🔧 Filament 4 Compliance Issues
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -329,9 +341,27 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         // Filament methods should not be static

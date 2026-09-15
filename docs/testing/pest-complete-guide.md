@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pest-complete-guide
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Pest PHP Testing Guide
 
 ## Panoramica

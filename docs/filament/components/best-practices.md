@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: best-practices
 description: " Critical Rules for Laraxot Philosophy"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseSection Best Practices
 
 ## Critical Rules for Laraxot Philosophy

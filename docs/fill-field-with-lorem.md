@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: fill-field-with-lorem
 description: "> Il file .txt gemello conteneva materiale che questo documento non riportava."
@@ -5,10 +6,21 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -100,6 +112,21 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

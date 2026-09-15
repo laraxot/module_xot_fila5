@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-charts-complete-guide
 description: " 📋 Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Charts - Guida Completa per PTVX
 
 ## 📋 Panoramica
@@ -944,7 +947,19 @@ class BlogPostsChartTest extends TestCase
 
 ## 🎯 Standard 2026: Professional Charts & PDF
 
+<<<<<<< HEAD
 Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito <nome progetto>/PTVX:
+=======
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
+>>>>>>> laraxot/dev
+=======
+Per garantire un look "Premium" e la possibilità di esportare PDF perfetti in ambito Quaeris/PTVX:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 1. Configurazione Professionale
 Consultare la guida **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)**.

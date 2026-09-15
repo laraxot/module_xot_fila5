@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fixes-summary-riassunto-delle-correzioni-per-phpstan-l
 description: "Questo documento riassume i problemi comuni riscontrati con PHPStan livello 9 e le relative soluzioni, basato su un'analisi dettagliata del "
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Riassunto delle Correzioni per PHPStan Livello 9
 
 Questo documento riassume i problemi comuni riscontrati con PHPStan livello 9 e le relative soluzioni, basato su un'analisi dettagliata del codice.

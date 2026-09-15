@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-widgets-v5-guide
 description: "Data: 2026-03-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Widgets - Guida Completa v5.x
 
 **Data**: 2026-03-23  

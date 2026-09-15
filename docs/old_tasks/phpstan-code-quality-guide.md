@@ -2,7 +2,19 @@
 
 **Ultimo aggiornamento**: 2025-01-10  
 **Principi**: DRY + KISS + SOLID + Robust  
+<<<<<<< HEAD
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot  
+=======
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
+>>>>>>> laraxot/dev
+=======
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
 
 ---
@@ -553,7 +565,19 @@ Dopo ogni modifica file:
 
 ## 🎓 Mantra Finale
 
+<<<<<<< HEAD
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3 + Laraxot**
+=======
+**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+>>>>>>> laraxot/dev
+=======
+**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Filosofia Zen**: "Non avrai altro path all'infuori del relativo"
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laravel-11-casts-pattern
 description: " ⚠️ DEPRECATED: protected $casts Property"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laravel 11+ Casts Pattern - CRITICAL UPDATE
 
 ## ⚠️ DEPRECATED: `protected $casts` Property

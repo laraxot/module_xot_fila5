@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: custom-icons-implementation
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Implementazione delle Icone Personalizzate
 
 ## Introduzione

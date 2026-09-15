@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-class-extension-violations
 description: "Status: ✅ Completato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Riepilogo Rimozione Violazioni XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  

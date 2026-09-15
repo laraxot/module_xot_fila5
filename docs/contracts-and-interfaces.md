@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: contracts-and-interfaces
 description: "Last Updated: 2025-01-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Contracts and Interfaces Documentation
 
 **Last Updated**: 2025-01-23
@@ -76,7 +79,19 @@ interface UserContract extends
 > - `@property \Illuminate\Database\Eloquent\Collection<int, UserRole> $roles`
 > - `@property \Illuminate\Database\Eloquent\Collection<int, TeamContract> $teams`
 >
+<<<<<<< HEAD
 > Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, <nome progetto>) lavorano solo contro il contratto Xot.
+=======
+> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
+>>>>>>> laraxot/dev
+=======
+> Questo consente a PHPStan level 10 di riconoscere correttamente i magic attribute Eloquent quando i moduli (es. User, Quaeris) lavorano solo contro il contratto Xot.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 2. ProfileContract
 **File**: `app/Contracts/ProfileContract.php`

@@ -2,7 +2,19 @@
 
 **Data**: 2026-01-09  
 **Metodologia**: Super Mucca  
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Filosofia**: DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3
+=======
+**Filosofia**: DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
+=======
+**Filosofia**: DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -14,9 +26,27 @@
 - **PHPMD**: Code quality e design patterns
 - **PHPInsights**: Metriche complete qualità codice
 - **Pest**: Testing framework moderno
+<<<<<<< HEAD
 - **Filament 4**: Admin panel best practices
 - **Laravel Modules**: Architettura modulare
 - **Laravel 12**: Framework patterns e features
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Filament 5**: Admin panel best practices
+- **Laravel Modules**: Architettura modulare
+- **Laravel 13**: Framework patterns e features
+=======
+- **Filament 4**: Admin panel best practices
+- **Laravel Modules**: Architettura modulare
+- **Laravel 12**: Framework patterns e features
+>>>>>>> laraxot/dev
+=======
+- **Filament 4**: Admin panel best practices
+- **Laravel Modules**: Architettura modulare
+- **Laravel 12**: Framework patterns e features
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

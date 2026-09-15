@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-code-quality-guide
 description: "Ultimo aggiornamento: [DATE]"
@@ -5,10 +6,28 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Code Quality Guide - Laraxot
 
 **Ultimo aggiornamento**: [DATE]
 **Principi**: DRY + KISS + SOLID + Robust
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot
+**Ultimo aggiornamento**: [DATE]  
+**Ultimo aggiornamento**: 2025-12-22
+**Principi**: DRY + KISS + SOLID + Robust
+**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot
+**Ultimo aggiornamento**: 2025-12-22  
+**Principi**: DRY + KISS + SOLID + Robust  
+**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot  
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
 **Ultimo aggiornamento**: [DATE]  
 **Ultimo aggiornamento**: 2025-12-22
@@ -17,6 +36,13 @@ metadata:
 **Ultimo aggiornamento**: 2025-12-22  
 **Principi**: DRY + KISS + SOLID + Robust  
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
 
 ---
@@ -1655,9 +1681,27 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -1925,7 +1969,19 @@ $model->update($filtered);
 
 ## 🎓 Mantra Finale
 
+<<<<<<< HEAD
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3 + Laraxot**
+=======
+**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+>>>>>>> laraxot/dev
+=======
+**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Filosofia Zen**: "Non avrai altro path all'infuori del relativo"
 

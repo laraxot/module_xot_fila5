@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: serviceprovider-common-errors
 description: "Data: 2025-01-10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # ServiceProvider Common Errors - Lessons Learned
 
 **Data**: 2025-01-10

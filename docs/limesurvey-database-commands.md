@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: limesurvey-database-commands
 description: " Essential Database Queries"
@@ -6,6 +7,17 @@ metadata:
 ---
 
 # Database Analysis Commands and Tools for quaeris_survey
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Database Analysis Commands and Tools for <nome progetto>_survey
+=======
+# Database Analysis Commands and Tools for quaeris_survey
+>>>>>>> laraxot/dev
+=======
+# Database Analysis Commands and Tools for quaeris_survey
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Essential Database Queries
 
@@ -76,10 +88,29 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 ### 1. MySQL MCP Commands
 ```bash
 # Connect to specific database
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+mcp mysql --database=txaesfry_<nome progetto>_survey
+
+# Execute complex queries
+mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_<nome progetto>_survey' AND table_name LIKE 'lime_survey_%'"
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 mcp mysql --database=txaesfry_quaeris_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_quaeris_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -116,7 +147,19 @@ php artisan tinker --execute="DB::connection('limesurvey')->select('SELECT 1')"
 php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
+<<<<<<< HEAD
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    '<nome progetto>' => DB::connection('<nome progetto>')->getPdo() ? 'OK' : 'ERROR',
+=======
+    'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> laraxot/dev
+=======
+    'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -176,10 +219,29 @@ WHERE q.qid IS NULL;
 ### 1. Survey Data Backup
 ```bash
 # Backup specific survey data
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+mysqldump -u[user] -p[pass] txaesfry_<nome progetto>_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
+
+# Backup question structure
+mysqldump -u[user] -p[pass] txaesfry_<nome progetto>_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### 2. Data Validation Script
@@ -223,7 +285,19 @@ LEFT JOIN (
         COUNT(*) as responses
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    AND table_schema = 'txaesfry_<nome progetto>_survey'
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> laraxot/dev
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -231,9 +305,33 @@ LEFT JOIN (
         COUNT(*) as total_tokens
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    AND table_schema = 'txaesfry_<nome progetto>_survey'
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> laraxot/dev
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
+<<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the <nome progetto>_survey database used by the Limesurvey integration.
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+>>>>>>> laraxot/dev
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

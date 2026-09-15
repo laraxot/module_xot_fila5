@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: certificate
 description: "certificate"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 https://www.studysection.com/Tests/StartTest/laravel-5.x-advanced
 
 https://github.com/TBlindaruk/laravel-certification-preparing

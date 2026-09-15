@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-common-exceptions
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Eccezioni Comuni in PHPStan Livello 10 e Come Risolverle
 
 ## Introduzione

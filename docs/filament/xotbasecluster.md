@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbasecluster
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseCluster
 
 ## Descrizione

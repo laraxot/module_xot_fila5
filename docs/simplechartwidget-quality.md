@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: simplechartwidget-quality
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: underscore-docs-policy
 description: " Regola"
@@ -5,11 +6,25 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Underscore Docs Policy
 
 ## Regola
 
+<<<<<<< HEAD
 Nel repository `base_predict_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Nel repository `<repo progetto>` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+=======
+Nel repository `base_predict_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+>>>>>>> laraxot/dev
+=======
+Nel repository `base_predict_fila5` la cartella `_docs/` non deve mai esistere dentro `laravel/Modules/*`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Anche le varianti annidate come `docs/_docs/` sono vietate.
 

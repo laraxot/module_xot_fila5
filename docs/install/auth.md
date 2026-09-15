@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: auth
 description: " Collegamenti tra versioni di auth.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 

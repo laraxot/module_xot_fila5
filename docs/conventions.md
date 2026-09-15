@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: conventions
 description: " Struttura delle Cartelle nei Moduli"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Convenzioni di Naming
 
 ## Struttura delle Cartelle nei Moduli

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: handler-decorator
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # HandlerDecorator
 
 ## Descrizione

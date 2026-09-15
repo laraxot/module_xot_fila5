@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: comprehensive-code
 description: " Panoramica"
@@ -9,6 +10,20 @@ metadata:
 
 ## Panoramica
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+=======
+# Analisi Completa del Codice - Sistema Laraxot
+
+## Panoramica
+<<<<<<< HEAD
+<<<<<<< HEAD
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🔴 CRITICI - Violazioni Principi e Errori
 
@@ -184,9 +199,27 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -197,9 +230,27 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -277,7 +328,19 @@ public function execute(Contact $contact): void
  */
 ```
 
+<<<<<<< HEAD
 ### 2. Laravel 12 Compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 2. Laravel 13 Compatibility
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### Casts Method
 ```php
@@ -290,16 +353,46 @@ protected function casts(): array
 }
 ```
 
+<<<<<<< HEAD
 ### 3. Filament 4 Patterns
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 3. Filament 5 Patterns
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### XotBaseResource Usage
 ```php
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -434,7 +527,19 @@ return [
 ## 🔗 Collegamenti Correlati
 
 - [Architettura Moduli](./architecture.md)
+<<<<<<< HEAD
 - [Best Practices Laravel 12](./laravel_12_guide.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Best Practices Laravel 13](./laravel_12_guide.md)
+=======
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
 
@@ -461,7 +566,19 @@ return [
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
+<<<<<<< HEAD
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🔴 CRITICI - Violazioni Principi e Errori
 
@@ -651,9 +768,27 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -664,9 +799,27 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -747,7 +900,19 @@ public function execute(Contact $contact): void
  */
 ```
 
+<<<<<<< HEAD
 ### 2. Laravel 12 Compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 2. Laravel 13 Compatibility
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### Casts Method
 ```php
@@ -760,16 +925,46 @@ protected function casts(): array
 }
 ```
 
+<<<<<<< HEAD
 ### 3. Filament 4 Patterns
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 3. Filament 5 Patterns
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### XotBaseResource Usage
 ```php
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -906,7 +1101,19 @@ return [
 ## 🔗 Collegamenti Correlati
 
 - [Architettura Moduli](./architecture.md)
+<<<<<<< HEAD
 - [Best Practices Laravel 12](./laravel_12_guide.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Best Practices Laravel 13](./laravel_12_guide.md)
+=======
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Laravel 12](./laravel_12_guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Pattern Filament](./filament_patterns.md)
 - [Performance Optimization](./performance_guide.md)
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: optimization-analysis
 description: " 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi di Ottimizzazione - Modulo Xot (Framework Base)
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot

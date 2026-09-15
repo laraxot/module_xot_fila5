@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: opencode-gsd-config
 description: "Rule type: infrastructure / config alignment"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # OpenCode & GSD — Allineamento Schema Agenti
 
 **Rule type**: infrastructure / config alignment

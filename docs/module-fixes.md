@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-fixes
 description: " Nuovi Errori PHPStan (Livello 2)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni nel Modulo Xot
 
 ## Nuovi Errori PHPStan (Livello 2)
@@ -95,9 +98,27 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -159,7 +180,19 @@ public function getFormSchema(): array
 ### Composer.json
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_xot_fila3",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "name": "laraxot/module_xot_fila5",
+=======
+    "name": "laraxot/module_xot_fila3",
+>>>>>>> laraxot/dev
+=======
+    "name": "laraxot/module_xot_fila3",
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",

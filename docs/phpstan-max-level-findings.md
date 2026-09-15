@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-max-level-findings
 description: "Data: 2025-10-10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan MAX Level Findings - Xot Module
 
 **Data**: 2025-10-10

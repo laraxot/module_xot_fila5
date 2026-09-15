@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbase-architecture-philosophy
 description: "Path: Modules/Xot/docs/XOTBASEARCHITECTUREPHILOSOPHY.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🧘 XotBase Architecture - Philosophy & Zen
 
 **Path**: `Modules/Xot/docs/XOTBASE_ARCHITECTURE_PHILOSOPHY.md`  

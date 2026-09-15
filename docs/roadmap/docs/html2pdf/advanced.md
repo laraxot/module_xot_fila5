@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: advanced
 description: "Questa sezione copre funzionalità avanzate come la generazione di codici a barre, QR code, la creazione di segnalibri (bookmark), indici e a"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Funzionalità Avanzate
 
 Questa sezione copre funzionalità avanzate come la generazione di codici a barre, QR code, la creazione di segnalibri (bookmark), indici e altri metodi utili della libreria.

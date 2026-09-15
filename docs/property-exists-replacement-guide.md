@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: property-exists-replacement-guide
 description: " Filosofia"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida Pratica: Sostituzione di property_exists() per Eloquent
 
 ## Filosofia

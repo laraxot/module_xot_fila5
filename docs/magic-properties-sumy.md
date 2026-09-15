@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: magic-properties-sumy
 description: " Summary"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Magic Properties Cleanup Report - [DATE]
 
 ## Summary

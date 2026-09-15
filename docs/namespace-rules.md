@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: namespace-rules
 description: " Regola Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)
 
 ## Regola Fondamentale

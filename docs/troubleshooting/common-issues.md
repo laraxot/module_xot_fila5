@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: common-issues
 description: " Errori HTTP"
@@ -5,6 +6,8 @@ metadata:
   type: troubleshooting
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Problemi Comuni e Soluzioni
 
 ## Errori HTTP

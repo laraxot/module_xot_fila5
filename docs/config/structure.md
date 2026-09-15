@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: structure
 description: "Questo documento definisce la struttura standard delle configurazioni per tutti i moduli."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Struttura delle Configurazioni
 
 Questo documento definisce la struttura standard delle configurazioni per tutti i moduli.

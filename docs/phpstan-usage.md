@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-usage
 description: " Regola Principale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Esecuzione Corretta di PHPStan in Laraxot <nome progetto>
 
 ## Regola Principale

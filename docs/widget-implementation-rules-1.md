@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: widget-implementation-rules-1
 description: " 🎯 Regole Fondamentali per Widget"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget

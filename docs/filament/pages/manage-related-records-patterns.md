@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: manage-related-records-patterns
 description: " Advanced Column Presentation"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sexy UI Patterns for ManageRelatedRecords
 
 ## Advanced Column Presentation

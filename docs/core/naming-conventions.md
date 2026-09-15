@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: naming-conventions
 description: " 🎯 Principi Fondamentali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Convenzioni di Naming - Modulo Xot
 
 ## 🎯 Principi Fondamentali

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: namespace-autoload-pattern-1
 description: " Il Pattern Corretto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pattern di Autoload nei Moduli Laravel
 
 ## Il Pattern Corretto

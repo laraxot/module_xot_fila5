@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-no-label-rule
 description: " Principio Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # REGOLA CRITICA: MAI ->label() nei Componenti Filament
 
 ## Principio Fondamentale

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 2026-09-06-phpstan-fix-campaign
 description: " Understand"
@@ -5,6 +6,8 @@ metadata:
   type: story
 ---
 
+=======
+>>>>>>> laraxot/dev
 # BMAD Story — PHPStan Fix Campaign 2026-09-06
 
 ## Understand

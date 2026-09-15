@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-base-manage-related-records-pattern
 description: "Questa guida definisce come implementare correttamente le pagine di gestione dei record correlati (ManageRelatedRecords) evitando ridondanze"
@@ -5,6 +6,8 @@ metadata:
   type: architecture
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pattern XotBaseManageRelatedRecords - Laraxot PTVX
 
 Questa guida definisce come implementare correttamente le pagine di gestione dei record correlati (ManageRelatedRecords) evitando ridondanze e sfruttando l'architettura XotBase.

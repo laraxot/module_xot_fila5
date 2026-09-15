@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: quality-analysis-sumy
 description: "Strumenti Utilizzati: PHPStan (max), PHPMD, PHPInsights, Pint"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Riepilogo Analisi Qualità Codice Completa
 
 **Strumenti Utilizzati**: PHPStan (max), PHPMD, PHPInsights, Pint

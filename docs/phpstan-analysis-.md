@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-analysis
 description: " Executive Summary"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -775,7 +778,19 @@ test('it can create and manage tenants', function (): void {
 - ✅ **check-all-modules.sh** - Controllo batch tutti i moduli
 
 ### Path Corretti
+<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ **mysql-db-connector.js** - Path corretto a `<repo progetto>`
+=======
+- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+>>>>>>> laraxot/dev
+=======
+- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

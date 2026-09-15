@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-pest-php
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing con Pest PHP
 
 ## Introduzione

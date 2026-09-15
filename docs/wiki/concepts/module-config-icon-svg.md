@@ -29,7 +29,19 @@ Naming Blade UI Icons: **`{alias}-{filename-senza-estensione}`**.
 
 | File | `alias` module.json | Valore in `config.php` |
 |------|---------------------|-------------------------|
+<<<<<<< HEAD
 | `resources/svg/icon.svg` | `workorder` | `'icon' => 'workorder-icon'` |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| `resources/svg/icon.svg` | `<nome progetto>` | `'icon' => '<nome progetto>-icon'` |
+=======
+| `resources/svg/icon.svg` | `workorder` | `'icon' => 'workorder-icon'` |
+>>>>>>> laraxot/dev
+=======
+| `resources/svg/icon.svg` | `workorder` | `'icon' => 'workorder-icon'` |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | `resources/svg/employee-icon2.svg` | `employee` | `'icon' => 'employee-icon2'` (override consapevole) |
 
 **Nota:** `{alias}-icon` e `{alias}-{alias}-icon` possono entrambi risolvere a seconda del filename; convenzione Laraxot: file canon **`icon.svg`** → config **`{alias}-icon`**.
@@ -38,7 +50,19 @@ Naming Blade UI Icons: **`{alias}-{filename-senza-estensione}`**.
 
 `'icon' => 'heroicon-o-square-3-stack-3d'` era stub generico porting gestionale — sostituire con SVG modulo o heroicon semantico.
 
+<<<<<<< HEAD
 Preferenza: **`resources/svg/icon.svg`** + `{alias}-icon` (brand coerente, stesso stile Activity/WorkOrder).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Preferenza: **`resources/svg/icon.svg`** + `{alias}-icon` (brand coerente, stesso stile Activity/<nome progetto>).
+=======
+Preferenza: **`resources/svg/icon.svg`** + `{alias}-icon` (brand coerente, stesso stile Activity/WorkOrder).
+>>>>>>> laraxot/dev
+=======
+Preferenza: **`resources/svg/icon.svg`** + `{alias}-icon` (brand coerente, stesso stile Activity/WorkOrder).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Heroicon vs SVG modulo
 
@@ -88,7 +112,19 @@ mancante per tutti e 11; ri-testato, 21/21 OK.
 ```bash
 bash bashscripts/tools/audit-module-config-icon-svg.sh
 bash bashscripts/tools/sync-module-config-icon-svg.sh          # sostituisce heroicon/fas/placeholder
+<<<<<<< HEAD
 bash bashscripts/tools/sync-module-config-icon-svg.sh --dry-run WorkOrder
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+bash bashscripts/tools/sync-module-config-icon-svg.sh --dry-run <nome progetto>
+=======
+bash bashscripts/tools/sync-module-config-icon-svg.sh --dry-run WorkOrder
+>>>>>>> laraxot/dev
+=======
+bash bashscripts/tools/sync-module-config-icon-svg.sh --dry-run WorkOrder
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 Non sovrascrive icone custom (`employee-icon2`, ecc.).
@@ -104,4 +140,16 @@ Minimal (Filament-safe):
 </svg>
 ```
 
+<<<<<<< HEAD
 Esempi canon: `Modules/WorkOrder/resources/svg/icon.svg`, `Modules/Billing/resources/svg/icon.svg`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Esempi canon: `Modules/<nome progetto>/resources/svg/icon.svg`, `Modules/Billing/resources/svg/icon.svg`.
+=======
+Esempi canon: `Modules/WorkOrder/resources/svg/icon.svg`, `Modules/Billing/resources/svg/icon.svg`.
+>>>>>>> laraxot/dev
+=======
+Esempi canon: `Modules/WorkOrder/resources/svg/icon.svg`, `Modules/Billing/resources/svg/icon.svg`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

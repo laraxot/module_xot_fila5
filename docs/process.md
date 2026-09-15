@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: process
 description: "<!-- Contenuto migrato da docs/process.txt -->"
@@ -5,11 +6,25 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 <<<<<<< HEAD
 # _process
 
 <!-- Contenuto migrato da _docs/_process.txt -->
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# _process
+
+<!-- Contenuto migrato da _docs/_process.txt -->
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Process'
 module: Xot
@@ -21,6 +36,15 @@ converted_from: _process.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 https://laravel-news.com/working-with-os-process-in-php
@@ -28,6 +52,23 @@ https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCom
 
 <<<<<<< HEAD
 ------------------------------------
+<<<<<<< HEAD
 =======
 ------------------------------------
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+------------------------------------
+=======
+<<<<<<< HEAD
+------------------------------------
+=======
+------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

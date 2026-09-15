@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: adjacency-list-best-practices
 description: "> Questo documento sostituisce nestedset-migration-best-practices.md (legacy)."
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Adjacency List Best Practices
 
 > Questo documento sostituisce `nestedset-migration-best-practices.md` (legacy).

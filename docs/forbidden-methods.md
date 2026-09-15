@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: forbidden-methods
 description: " Regola fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Metodi da NON implementare in classi che estendono XotBaseResource
 
 ## Regola fondamentale
@@ -42,9 +45,27 @@ class ProductResource extends XotBaseResource
 
     // UNICI metodi che dovrebbero essere implementati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

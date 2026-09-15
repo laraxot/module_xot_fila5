@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-analyse
 description: "<!-- Contenuto migrato da docs/codeanalyse.txt -->"
@@ -7,6 +8,16 @@ metadata:
 
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'code_analyse'
 module: Xot
@@ -23,6 +34,15 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/code_analyse.txt -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 //----------------------------------------------------------
 phpstan
@@ -34,6 +54,16 @@ cmd:
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 //----------------------------------------------------------
 https://github.com/phan/phan/wiki/Getting-Started
@@ -52,8 +82,24 @@ php ./vendor/bin/phpmetrics --report-html=../_phpmetrics_report Modules
 https://github.com/squizlabs/PHP_CodeSniffer
 install:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Download using curl
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
@@ -76,9 +122,29 @@ $ php phpcpd.phar --version
 
 //---------------------
 https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+//---------------------
+https://scrutinizer-ci.com/project_docs/tools/php/php-scrutinizer/
+=======
+<<<<<<< HEAD
+
+//---------------------
+https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 //---------------------
 https://scrutinizer-ci.com/project_docs/tools/php/php-scrutinizer/
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 //--------------------
@@ -95,8 +161,25 @@ bin/analyze analyze /path/to/source
 
 <<<<<<< HEAD
 https://psalm.dev/docs/running_psalm/installation/
+<<<<<<< HEAD
 =======
 https://psalm.dev/project_docs/running_psalm/installation/
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+https://psalm.dev/project_docs/running_psalm/installation/
+=======
+<<<<<<< HEAD
+https://psalm.dev/docs/running_psalm/installation/
+=======
+https://psalm.dev/project_docs/running_psalm/installation/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+https://psalm.dev/project_docs/running_psalm/installation/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 //--------------------------------------------------------------------
@@ -110,11 +193,31 @@ https://hub.docker.com/r/adamculp/php-code-quality
 https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+
+
+
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 
 
 
 
 =======
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 https://github.com/enlightn/enlightn
 
@@ -124,6 +227,23 @@ https://github.com/enlightn/enlightn
         "phpmetrics/phpmetrics": "^2.7",
 <<<<<<< HEAD
         "phpunit/php-code-coverage": "^9.2",
+<<<<<<< HEAD
 =======
         "phpunit/php-code-coverage": "^9.2",
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+        "phpunit/php-code-coverage": "^9.2",
+=======
+<<<<<<< HEAD
+        "phpunit/php-code-coverage": "^9.2",
+=======
+        "phpunit/php-code-coverage": "^9.2",
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+        "phpunit/php-code-coverage": "^9.2",
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

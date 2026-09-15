@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: sortable
 description: "<!-- Contenuto migrato da docs/sortable.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # sortable
 
 <!-- Contenuto migrato da _docs/sortable.txt -->

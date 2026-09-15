@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pdf-to-txt
 description: "<!-- Contenuto migrato da docs/pdftotxt.txt -->"
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 
@@ -13,7 +23,18 @@ https://github.com/smalot/pdfparser                  5 days ago
 use Smalot\PdfParser\Parser;      
 
 
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Pdf to txt"
 type: reference
@@ -31,6 +52,15 @@ https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 https://github.com/smalot/pdfparser                  5 days ago
 use Smalot\PdfParser\Parser;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 $pdfParser = new Parser();
@@ -43,19 +73,55 @@ https://www.pdfparser.org/demo
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://www.phpclasses.org/blog/package/9732/post/1-How-to-Extract-Text-and-Images-from-PDF-File-Using-PHP.html
 http://www.phpclasses.org/package/9732-PHP-Extract-text-contents-from-PDF-files.html
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
+
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
 
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 http://www.pdftotext.eu
 
@@ -65,6 +131,16 @@ https://mupdf.com/
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://laravelquestions.com/2021/09/03/read-pdf-with-php-and-pdf2text-or-pdf-to-text-spatie/
@@ -73,6 +149,16 @@ PDF2Text
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://github.com/jrmuizel/pdf-extract  on 26 Oct 2021
@@ -88,6 +174,16 @@ https://github.com/pdfminer/pdfminer.six
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://github.com/cpierce/pdf2text
@@ -105,6 +201,16 @@ https://github.com/BinarySwami-10/PDF2Text
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 
@@ -123,6 +229,16 @@ echo $tesseract->recognize();
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://aws.amazon.com/fr/rekognition/    !!!!!!!!!!!!!!!!!!!!
@@ -134,6 +250,16 @@ https://github.com/alimranahmed/LaraOCR
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://hergen.nl/processing-identity-documents-in-laravel          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -146,6 +272,17 @@ https://www.xpdfreader.com/download.html
 
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-in-laravel
@@ -155,6 +292,16 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 <<<<<<< HEAD
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
 ---------------------------------------------------------------
@@ -169,6 +316,23 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 ---------------------------------------------------------------
 <<<<<<< HEAD
 ---------------------------------------------------------------
+<<<<<<< HEAD
 =======
 ---------------------------------------------------------------
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+---------------------------------------------------------------
+=======
+<<<<<<< HEAD
+---------------------------------------------------------------
+=======
+---------------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+---------------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

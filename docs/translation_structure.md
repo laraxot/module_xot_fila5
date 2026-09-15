@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translation-structure
 description: " Rule: No lang/lang/ Redundancy"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy

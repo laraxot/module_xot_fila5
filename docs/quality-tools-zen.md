@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: quality-tools-zen
 description: "Data: 2025-01-05"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Lo Zen degli Strumenti di Qualità PHP - La Grande Unificazione
 
 **Data**: 2025-01-05

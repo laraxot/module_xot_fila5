@@ -1,9 +1,23 @@
 # Modern Tech Stack Optimization Guide
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+## Filament 5 + Laravel 13 + PHP 8.3 Best Practices
+
+## 🚀 Overview
+
+Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 13 e Filament 5.
+=======
+>>>>>>> laraxot/dev
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 
 ## 🚀 Overview
 
 Questa guida fornisce strategie specifiche per ottimizzare il codebase esistente sfruttando al massimo le features moderne di PHP 8.3, Laravel 12 e Filament 4.
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 📋 Current Tech Stack Analysis
 
@@ -178,7 +192,15 @@ class SurveyExportController
 }
 ```
 
+<<<<<<< HEAD
 ## 🏗️ Laravel 12 Advanced Features
+=======
+<<<<<<< HEAD
+## 🏗️ Laravel 13 Advanced Features
+=======
+## 🏗️ Laravel 12 Advanced Features
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 1. Enhanced Model Casting
 **Current Pattern**:
@@ -194,7 +216,15 @@ protected $casts = [
 protected function casts(): array
 {
     return [
+<<<<<<< HEAD
         'settings' => 'encrypted:json', // Laravel 12 encrypted casting
+=======
+<<<<<<< HEAD
+        'settings' => 'encrypted:json', // Laravel 13 encrypted casting
+=======
+        'settings' => 'encrypted:json', // Laravel 12 encrypted casting
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         'sensitive_data' => 'encrypted:string',
         'created_at' => 'datetime',
         'metadata' => AsArrayObject::class, // More powerful array handling
@@ -236,7 +266,15 @@ $contacts = Contact::where('active', true)
 
 **Optimized Pattern**:
 ```php
+<<<<<<< HEAD
 // Using Laravel 12 enhanced query builder
+=======
+<<<<<<< HEAD
+// Using Laravel 13 enhanced query builder
+=======
+// Using Laravel 12 enhanced query builder
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 $contacts = Contact::query()
     ->whereActive()
     ->whereEmailDomain('example.com')
@@ -389,7 +427,15 @@ class ContactEventSubscriber
 }
 ```
 
+<<<<<<< HEAD
 ## 🎨 Filament 4 Optimization
+=======
+<<<<<<< HEAD
+## 🎨 Filament 5 Optimization
+=======
+## 🎨 Filament 4 Optimization
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 1. Modern Resource Structure
 **Current Pattern**:
@@ -862,13 +908,29 @@ class ContactDashboard extends Dashboard
    - Match expressions per business logic
    - Enhanced type declarations
 
+<<<<<<< HEAD
 2. ✅ **Laravel 12 Core**
+=======
+<<<<<<< HEAD
+2. ✅ **Laravel 13 Core**
+=======
+2. ✅ **Laravel 12 Core**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Advanced model casting
    - Enhanced validation
    - Modern query patterns
 
 ### Medium Priority (Week 3-4)
+<<<<<<< HEAD
 1. ✅ **Filament 4 Optimization**
+=======
+<<<<<<< HEAD
+1. ✅ **Filament 5 Optimization**
+=======
+1. ✅ **Filament 4 Optimization**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    - Resource modernization
    - Widget enhancement
    - Advanced forms
@@ -933,8 +995,18 @@ class PerformanceMonitoringMiddleware
 
 ### Technical Compliance
 - [ ] 100% PHP 8.3 feature adoption
+<<<<<<< HEAD
 - [ ] Laravel 12 best practices implementation
 - [ ] Filament 4 optimization complete
+=======
+<<<<<<< HEAD
+- [ ] Laravel 13 best practices implementation
+- [ ] Filament 5 optimization complete
+=======
+- [ ] Laravel 12 best practices implementation
+- [ ] Filament 4 optimization complete
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] Performance targets achieved
 - [ ] Type safety at 95%+
 

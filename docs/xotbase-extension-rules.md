@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbase-extension-rules
 description: " 🚨 REGOLA CRITICA FONDAMENTALE"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole di Estensione XotBase - Guida di Riferimento
 
 ## 🚨 REGOLA CRITICA FONDAMENTALE

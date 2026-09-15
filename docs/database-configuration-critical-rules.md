@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: database-configuration-critical-rules
 description: " REGOLE FONDAMENTALI"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Database Configuration - Critical Rules
 
 ## REGOLE FONDAMENTALI

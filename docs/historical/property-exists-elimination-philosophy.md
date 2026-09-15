@@ -271,7 +271,19 @@ if (isset($record->email)) {
 - User/Filament/Resources/BaseProfileResource
 - User/Filament/Resources/UserResource
 - Media/Filament/Resources (3 file)
+<<<<<<< HEAD
 - Quaeris/Filament (2 file)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- <nome progetto>/Filament (2 file)
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> laraxot/dev
+=======
+- Quaeris/Filament (2 file)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Impact**: Alto (UI user-facing)
 **Risk**: Medio (bugs visibili)
@@ -399,7 +411,19 @@ if (method_exists($record, 'getUrl')) {
 | Xot | 12 | High | Alta |
 | User | 5 | Critical | Media |
 | Media | 3 | High | Bassa |
+<<<<<<< HEAD
 | Quaeris | 2 | Medium | Bassa |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| <nome progetto> | 2 | Medium | Bassa |
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> laraxot/dev
+=======
+| Quaeris | 2 | Medium | Bassa |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | Others | 52 (docs) | Low | Zero |
 
 ### Estimated Effort

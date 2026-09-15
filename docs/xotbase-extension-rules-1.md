@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbase-extension-rules-1
 description: " 🚨 Critical Architectural Rule"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBase Extension Rules - Comprehensive Guide
 
 ## 🚨 Critical Architectural Rule

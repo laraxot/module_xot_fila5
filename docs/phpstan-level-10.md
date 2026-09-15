@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level-10
 description: " Data Analisi"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Livello 10 (MAX) - Report Qualità Codice
 
 ## Data Analisi

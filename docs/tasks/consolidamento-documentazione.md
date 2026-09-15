@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: consolidamento-documentazione
 description: "Modulo: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Consolidamento Documentazione
 
 **Modulo**: Xot  

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: admin-template
 description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 https://themeselection.com/laravel-admin-panel-template/
 
 
@@ -13,7 +23,18 @@ https://github.com/BRACKETS-by-TRIAD/craftable
 
 
 https://github.com/InfyOmLabs/laravel-generator
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Admin template — risorse esterne'
 module: Xot
@@ -36,4 +57,13 @@ updated: 2026-08-24
 - <https://themeselection.com/laravel-admin-panel-template/>
 - <https://github.com/BRACKETS-by-TRIAD/craftable>
 - <https://github.com/InfyOmLabs/laravel-generator>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

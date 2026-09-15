@@ -28,7 +28,19 @@ To activate the fix, update your CCR configuration (usually `~/.claude-code-rout
 
 ```json
 {
+<<<<<<< HEAD
   "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila5/bashscripts/ccr/custom-router.js"
+=======
+  "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
+>>>>>>> laraxot/dev
+=======
+  "CUSTOM_ROUTER_PATH": "/var/www/_bases/base_ptvx_fila4_mono/bashscripts/ccr/custom-router.js"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 }
 ```
 

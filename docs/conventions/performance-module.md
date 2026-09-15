@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: performance-module
 description: " Struttura delle Directory"
@@ -5,6 +6,8 @@ metadata:
   type: convention
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Convenzioni di Codifica del Modulo Performance
 
 ## Struttura delle Directory

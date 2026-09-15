@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: modularity-optimizations
 description: " Problemi Identificati"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Modulo Xot - Ottimizzazioni per Modularità
 
 ## Problemi Identificati

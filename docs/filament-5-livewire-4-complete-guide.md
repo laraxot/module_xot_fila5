@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-livewire-4-complete-guide
 description: " 📋 Sommario"
@@ -5,12 +6,26 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida Completa: Upgrade Filament 5 + Livewire 4 - Modulo Xot
 
 
 ## 📋 Sommario
 
+<<<<<<< HEAD
 Questa guida documenta l'upgrade da Filament 4.x + Livewire 3.x a Filament 5.x + Livewire 4.x per il progetto Laraxot, con particolare focus sul modulo Xot e le sue classi base.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Questa guida documenta l'upgrade da Filament 5.x + Livewire 3.x a Filament 5.x + Livewire 4.x per il progetto Laraxot, con particolare focus sul modulo Xot e le sue classi base.
+=======
+Questa guida documenta l'upgrade da Filament 4.x + Livewire 3.x a Filament 5.x + Livewire 4.x per il progetto Laraxot, con particolare focus sul modulo Xot e le sue classi base.
+>>>>>>> laraxot/dev
+=======
+Questa guida documenta l'upgrade da Filament 4.x + Livewire 3.x a Filament 5.x + Livewire 4.x per il progetto Laraxot, con particolare focus sul modulo Xot e le sue classi base.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -32,7 +47,19 @@ Questa guida documenta l'upgrade da Filament 4.x + Livewire 3.x a Filament 5.x +
 ### Punti Fondamentali
 
 1. **Filament 5 esiste principalmente per supportare Livewire 4**
+<<<<<<< HEAD
 2. **Non ci sono breaking changes funzionali tra Filament 4 e 5** (oltre a Livewire v4)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. **Non ci sono breaking changes funzionali tra Filament 5 e 5** (oltre a Livewire v4)
+=======
+2. **Non ci sono breaking changes funzionali tra Filament 4 e 5** (oltre a Livewire v4)
+>>>>>>> laraxot/dev
+=======
+2. **Non ci sono breaking changes funzionali tra Filament 4 e 5** (oltre a Livewire v4)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 3. **L'upgrade è considerato a basso rischio**
 4. **Nuove features continueranno per entrambe le versioni**
 
@@ -351,11 +378,31 @@ public function logActivity()
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔄 Breaking Changes: Filament 5 → 5
+
+### Punti Chiave
+
+1. **Filament 5 non introduce breaking changes funzionali** rispetto a Filament 5
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## 🔄 Breaking Changes: Filament 4 → 5
 
 ### Punti Chiave
 
 1. **Filament 5 non introduce breaking changes funzionali** rispetto a Filament 4
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. **L'unico motivo per l'upgrade è il supporto a Livewire 4**
 3. **API Filament rimangono compatibili**
 4. **Script di upgrade automatico disponibile**
@@ -877,7 +924,19 @@ composer dump-autoload
 
 ### Punti Chiave da Ricordare
 
+<<<<<<< HEAD
 1. **Filament 5 = Filament 4 + Livewire 4**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+1. **Filament 5 = Filament 5 + Livewire 4**
+=======
+1. **Filament 5 = Filament 4 + Livewire 4**
+>>>>>>> laraxot/dev
+=======
+1. **Filament 5 = Filament 4 + Livewire 4**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. **Nessun breaking change funzionale Filament**
 3. **Tutti i cambiamenti sono Livewire 4**
 4. **Upgrade a basso rischio**

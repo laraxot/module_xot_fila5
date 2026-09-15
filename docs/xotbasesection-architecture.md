@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbasesection-architecture
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseSection Architecture Guide
 
 ## Overview

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: " Research Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - User Research
 
 ## Research Overview

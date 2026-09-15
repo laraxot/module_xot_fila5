@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: vite-configuration
 description: " Purpose"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Vite Configuration For Theme Builds
 
 ## Purpose

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: nested-resources
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Nested Resource Implementation Guide
 
 ## Overview

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laravel
 description: "Questa guida si concentra su come integrare e utilizzare Html2Pdf in un'applicazione Laravel, seguendo le best practice specifiche del proge"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Integrazione con Laravel e Best Practices
 
 Questa guida si concentra su come integrare e utilizzare `Html2Pdf` in un'applicazione Laravel, seguendo le best practice specifiche del progetto Laraxot.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-sumy
 description: "Status: ✅ QUICK WINS COMPLETATI"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 - Riepilogo Gennaio 2026
 
 **Status**: ✅ QUICK WINS COMPLETATI

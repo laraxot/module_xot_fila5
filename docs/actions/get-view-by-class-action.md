@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: get-view-by-class-action
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # GetViewByClassAction
 
 ## Panoramica

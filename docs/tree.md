@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: tree
 description: "tree"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 -- rami puliti
 http://cssdeck.com/labs/pure-css-tree-menu-framework
 

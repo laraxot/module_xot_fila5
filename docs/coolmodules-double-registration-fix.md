@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: coolmodules-double-registration-fix
 description: " 🚨 Problema Identificato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # CoolModules Double Registration Fix
 
 ## 🚨 Problema Identificato

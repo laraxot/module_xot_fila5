@@ -236,7 +236,19 @@ $result = $action->execute($data);
 ### Other Modules Depending on Xot
 - **AI** — Uses core utilities
 - **Geo** — Extends Xot models
+<<<<<<< HEAD
 - **Fixcity** — Uses services and traits
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **<nome progetto>** — Uses services and traits
+=======
+- **Fixcity** — Uses services and traits
+>>>>>>> laraxot/dev
+=======
+- **Fixcity** — Uses services and traits
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **User** — Extends Xot base models
 - **Cms** — Implements Xot patterns
 - **Notify** — Uses Xot events

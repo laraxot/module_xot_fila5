@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-improvements-sumy
 description: " 🎯 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 📊 Code Quality Improvements Summary - [DATE]
 
 ## 🎯 Overview

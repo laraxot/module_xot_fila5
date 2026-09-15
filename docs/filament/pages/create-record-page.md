@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: create-record-page
 description: "Fonte codice: vendor/filament/filament/src/Resources/Pages/CreateRecord.php (Filament Panels)."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament `CreateRecord` — scopo, pipeline e regola Laraxot
 
 **Fonte codice**: `vendor/filament/filament/src/Resources/Pages/CreateRecord.php` (Filament Panels).  

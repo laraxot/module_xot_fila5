@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflicts-census
 description: "> Ultimo aggiornamento: Novembre 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Censimento File con Marker
 
 > **Ultimo aggiornamento**: Novembre 2025

@@ -8,6 +8,15 @@ See canonical documentation: ../../../Themes/docs/shared-components/optimization
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # Opportunità di Ottimizzazione DRY + KISS
 
@@ -111,9 +120,27 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `Modules/<nome progetto>/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/<nome progetto>/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+=======
+- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+>>>>>>> laraxot/dev
+=======
+- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Soluzione DRY + KISS**:
 ```php
@@ -379,6 +406,21 @@ return array_merge(
 
 *Ultimo aggiornamento: Giugno 2025*
 *Autore: Analisi Automatica del Progetto*
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

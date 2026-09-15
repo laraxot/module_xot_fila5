@@ -28,7 +28,19 @@
 ```
 Xot (Core Engine)
 ├── User (Authentication & Authorization)
+<<<<<<< HEAD
 ├── Quaeris (Core Business Logic - Surveys)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+├── <nome progetto> (Core Business Logic - Surveys)
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> laraxot/dev
+=======
+├── Quaeris (Core Business Logic - Surveys)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ├── Cms (Content Management)
 ├── Media (File Management)
 ├── Geo (Location Services)
@@ -47,8 +59,23 @@ Xot (Core Engine)
 
 ### Technology Stack
 - **PHP 8.3.27** - Modern PHP with strict typing
+<<<<<<< HEAD
 - **Laravel 12.38.1** - Latest Laravel framework
 - **Filament 4.2.2** - Admin panel framework
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Laravel 13.38.1** - Latest Laravel framework
+- **Filament 5.2.2** - Admin panel framework
+=======
+- **Laravel 12.38.1** - Latest Laravel framework
+- **Filament 4.2.2** - Admin panel framework
+>>>>>>> laraxot/dev
+=======
+- **Laravel 12.38.1** - Latest Laravel framework
+- **Filament 4.2.2** - Admin panel framework
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Livewire 4.6.4** - Reactive UI components
 - **MySQL** - Primary database
 - **TailwindCSS 3.4.17** - Utility-first CSS
@@ -108,7 +135,19 @@ TextInput::make('name');
 - **Power**: Controls access to all resources
 - **Responsibility**: Security and permissions
 
+<<<<<<< HEAD
 #### 3. **Quaeris Module (The Economy)**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+#### 3. **<nome progetto> Module (The Economy)**
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> laraxot/dev
+=======
+#### 3. **Quaeris Module (The Economy)**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Role**: Core business logic, surveys, reporting
 - **Power**: Main revenue-generating functionality
 - **Responsibility**: Business operations
@@ -214,9 +253,27 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -225,9 +282,27 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getInfolistSchema(): array
+    public function getInfolistSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

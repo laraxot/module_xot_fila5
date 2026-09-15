@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fixes-gennaio-2025
 description: "Data: 27 Gennaio 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  

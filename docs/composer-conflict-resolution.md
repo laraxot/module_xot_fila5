@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: composer-conflict-resolution
 description: " Scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione conflitti Composer (Xot)
 
 ## Scopo

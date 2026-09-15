@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: analisi-modulo-completa
 description: " Filosofia e Religione del Modulo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Completa del Modulo Xot
 
 ## Filosofia e Religione del Modulo
@@ -176,7 +179,19 @@ Basato sui documenti esistenti e sulle tendenze osservate:
 
 Xot è incluso di base in Laraxot. Per installarlo in un nuovo progetto Laravel:
 
+<<<<<<< HEAD
 1. **Prerequisiti**: Laravel 12+, PHP 8.2+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+1. **Prerequisiti**: Laravel 13+, PHP 8.2+
+=======
+1. **Prerequisiti**: Laravel 12+, PHP 8.2+
+>>>>>>> laraxot/dev
+=======
+1. **Prerequisiti**: Laravel 12+, PHP 8.2+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. **Installazione via Composer**:
    ```bash
    composer require laravel-modules/laravel-modules

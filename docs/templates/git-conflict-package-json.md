@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflict-package-json
 description: " File: bashscripts/package.json"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Template Gestione Conflitti Git - package.json
 
 ## File: bashscripts/package.json

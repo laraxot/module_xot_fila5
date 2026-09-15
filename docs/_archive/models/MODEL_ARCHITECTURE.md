@@ -66,7 +66,15 @@ Tutti i modelli devono estendere una delle classi base appropriate:
 │ Livello 3: Concrete Models                                 │
 │ - Modules/User/Models/Tenant                                │
 │ - Modules/User/Models/TeamUser                              │
+<<<<<<< HEAD
 │ - Modules/Quaeris/Models/Contact                            │
+=======
+<<<<<<< HEAD
+│ - Modules/<nome progetto>/Models/Contact                            │
+=======
+│ - Modules/Quaeris/Models/Contact                            │
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 │                                                             │
 │ Implementano: Business logic, Relationships, Scopes         │
 └─────────────────────────────────────────────────────────────┘
@@ -191,7 +199,15 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 
 **Scopo**:
 - Definire la connection specifica del modulo
+<<<<<<< HEAD
 - Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
+=======
+<<<<<<< HEAD
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in <nome progetto>)
+=======
+- Aggiungere traits specifici del modulo (es: `InteractsWithMedia` in Quaeris)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Configurare casts specifici del modulo
 - Configurare eager loading predefinito (`$with`)
 
@@ -232,7 +248,15 @@ class Tenant extends BaseModel
 
 **Esempi**:
 - `Modules/User/Models/Tenant.php`
+<<<<<<< HEAD
 - `Modules/Quaeris/Models/Contact.php`
+=======
+<<<<<<< HEAD
+- `Modules/<nome progetto>/Models/Contact.php`
+=======
+- `Modules/Quaeris/Models/Contact.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - `Modules/Cms/Models/Page.php`
 - `Modules/Geo/Models/GeoNamesCap.php`
 
@@ -348,7 +372,15 @@ public function getConnectionName(): ?string
 ### Convenzione
 
 - Namespace: `Modules\User\Models\*` → Connection: `user`
+<<<<<<< HEAD
 - Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
+=======
+<<<<<<< HEAD
+- Namespace: `Modules\<nome progetto>\Models\*` → Connection: `<nome progetto>`
+=======
+- Namespace: `Modules\Quaeris\Models\*` → Connection: `quaeris`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Namespace: `Modules\Cms\Models\*` → Connection: `cms`
 
 **Nota**: Attualmente `XotBaseModel` NON ha auto-discovery (vedi [DRY-KISS-ANALYSIS.md](./dry-kiss-analysis.md) per proposta di implementazione).
@@ -548,10 +580,23 @@ class ModelHasRole extends BaseMorphPivot
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+### Esempio 4: BaseModel con Traits Specifici (<nome progetto> Module)
+
+```php
+namespace Modules\<nome progetto>\Models;
+=======
+>>>>>>> laraxot/dev
 ### Esempio 4: BaseModel con Traits Specifici (Quaeris Module)
 
 ```php
 namespace Modules\Quaeris\Models;
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 use Modules\Xot\Models\XotBaseModel;
 use Modules\Xot\Contracts\ModelContract;
@@ -561,7 +606,15 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 /**
+<<<<<<< HEAD
  * Base Model per Quaeris module.
+=======
+<<<<<<< HEAD
+ * Base Model per <nome progetto> module.
+=======
+ * Base Model per Quaeris module.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  *
  * Aggiunge supporto per:
  * - Media Library (Spatie)
@@ -574,7 +627,15 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
+<<<<<<< HEAD
     protected $connection = 'quaeris';
+=======
+<<<<<<< HEAD
+    protected $connection = '<nome progetto>';
+=======
+    protected $connection = 'quaeris';
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     // Eager load sempre la relazione extra
     protected $with = ['extra'];
@@ -584,7 +645,15 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 Poi i modelli concreti ereditano tutto:
 
 ```php
+<<<<<<< HEAD
 namespace Modules\Quaeris\Models;
+=======
+<<<<<<< HEAD
+namespace Modules\<nome progetto>\Models;
+=======
+namespace Modules\Quaeris\Models;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 class Contact extends BaseModel
 {
@@ -644,7 +713,15 @@ protected $connection = 'user';  // ← Già ereditato da BaseModel
 
 ```php
 // ✅ CORRETTO - Aggiungere traits specifici in BaseModel
+<<<<<<< HEAD
 // Modules/Quaeris/Models/BaseModel.php
+=======
+<<<<<<< HEAD
+// Modules/<nome progetto>/Models/BaseModel.php
+=======
+// Modules/Quaeris/Models/BaseModel.php
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use InteractsWithMedia;
 use HasExtraTrait;
 

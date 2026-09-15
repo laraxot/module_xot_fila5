@@ -26,7 +26,14 @@ function stubTableChain(MockInterface $tableMock): MockInterface
         'filters',
         'filtersLayout',
         'filtersFormColumns',
+<<<<<<< HEAD
         'deferFilters',
+=======
+<<<<<<< HEAD
+=======
+        'deferFilters',
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         'persistFiltersInSession',
         'headerActions',
         'actions',

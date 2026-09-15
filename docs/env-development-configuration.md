@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: env-development-configuration
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Configurazione .env Development in Laraxot
 
 ## Panoramica

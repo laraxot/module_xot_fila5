@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: sortable
 description: "sortable"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 la base
 https://jqueryui.com/draggable/#sortable

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflicts-resolution
 description: "<<<<<<< HEAD"
@@ -5,12 +6,31 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 <<<<<<< HEAD
 ## Data: [DATE]
+<<<<<<< HEAD
 =======
 ## Data: 2025-01-06
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+## Data: 2025-01-06
+=======
+<<<<<<< HEAD
+## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+## Data: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Contesto
@@ -109,8 +129,25 @@ $res=Locality::query()
 
 <<<<<<< HEAD
 ## Data: [DATE]
+<<<<<<< HEAD
 =======
 ## Data: 2025-01-06
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+## Data: 2025-01-06
+=======
+<<<<<<< HEAD
+## Data: [DATE]
+=======
+## Data: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+## Data: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Contesto
@@ -245,6 +282,16 @@ php artisan lang:check
 <<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
@@ -253,6 +300,15 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Best Practices Applicate
@@ -309,9 +365,26 @@ php artisan lang:check
 
 ### Documentazione Moduli
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
@@ -325,8 +398,25 @@ php artisan lang:check
 
 <<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+<<<<<<< HEAD
 =======
 **Ultimo aggiornamento**: 2025-01-06
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+**Ultimo aggiornamento**: 2025-01-06
+=======
+<<<<<<< HEAD
+**Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+**Ultimo aggiornamento**: 2025-01-06
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato

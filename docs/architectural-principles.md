@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: architectural-principles
 description: " 1. Vision"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Architectural Zen: Reuse over Invention
 
 ## 1. Vision

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: form-schema-checker
 description: " Perché"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Form Schema Checker
 
 ## Perché

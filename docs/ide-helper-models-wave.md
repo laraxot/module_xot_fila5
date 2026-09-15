@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ide-helper-models-wave
 description: " Scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # IDE Helper Models Wave - 2026-03-10
 
 ## Scopo

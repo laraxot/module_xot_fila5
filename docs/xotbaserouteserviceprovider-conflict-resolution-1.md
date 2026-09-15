@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbaserouteserviceprovider-conflict-resolution-1
 description: " Problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione conflitto XotBaseRouteServiceProvider.php
 
 ## Problema

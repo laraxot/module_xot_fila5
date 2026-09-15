@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbase-quick-reference
 description: " ⚡ Immediate Action Required"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🚀 XotBase Quick Reference
 
 ## ⚡ Immediate Action Required

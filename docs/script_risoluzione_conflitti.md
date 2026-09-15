@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: script-risoluzione-conflitti
 description: " SCRIPT CREATI"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🐄 SUPER MUCCA - Script Risoluzione Conflitti Git
 
 ## SCRIPT CREATI

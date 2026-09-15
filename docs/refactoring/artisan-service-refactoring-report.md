@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: artisan-service-refactoring-report
 description: "Date: 2025-10-01"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # ArtisanService Refactoring Report
 
 **Date:** 2025-10-01

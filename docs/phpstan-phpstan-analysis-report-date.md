@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-phpstan-analysis-report-date
 description: " Summary"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Analysis Report - [DATE]
 
 ## Summary

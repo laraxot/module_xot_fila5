@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-corrections-archive
 description: "Data: 2026-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Corrections - Gennaio 2026
 
 **Data**: 2026-01-22  

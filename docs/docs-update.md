@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: docs-update
 description: " 🎯 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Aggiornamento Documentazione - 2 Dicembre 2025
 
 ## 🎯 Obiettivo

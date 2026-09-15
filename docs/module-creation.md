@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-creation
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Creazione di Nuovi Moduli
 
 ## Introduzione

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-quality-analysis-sumy
 description: "Date: [DATE]"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Quality Analysis Summary
 
 **Date**: [DATE]

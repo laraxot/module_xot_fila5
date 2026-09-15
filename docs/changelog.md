@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: changelog
 description: " [2025-06-04] - Sessione Fix Critica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Changelog - Modulo Xot
 
 ## [2025-06-04] - Sessione Fix Critica
@@ -150,8 +153,23 @@ All notable changes to `:package_name` will be documented in this file.
 - Type safety improvements (500+ type hints)
 
 ### Changed
+<<<<<<< HEAD
 - Migrazione a Laravel 12.x
 - Upgrade Filament 4.x
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Migrazione a Laravel 13.x
+- Upgrade Filament 5.x
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
+=======
+- Migrazione a Laravel 12.x
+- Upgrade Filament 4.x
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Tailwind CSS 4.x implementation
 
 ---

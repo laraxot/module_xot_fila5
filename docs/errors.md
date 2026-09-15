@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: errors
 description: " Analisi Completa"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Errori PHPStan - Modulo Xot
 
 ## Analisi Completa

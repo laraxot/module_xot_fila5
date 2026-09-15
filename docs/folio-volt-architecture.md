@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: folio-volt-architecture
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica

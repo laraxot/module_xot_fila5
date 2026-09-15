@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: index
 description: "Questa sezione fornisce una panoramica generale della libreria Html2Pdf, le novità dell'ultima versione, le istruzioni per l'installazione e"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Html2Pdf - Panoramica e Installazione
 
 Questa sezione fornisce una panoramica generale della libreria Html2Pdf, le novità dell'ultima versione, le istruzioni per l'installazione e l'architettura di integrazione nel progetto.

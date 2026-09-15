@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: php-array-configuration-best-practices
 description: "I file di configurazione e traduzione in PHP che restituiscono array sono comuni in Laravel e nei moduli PTVX. Per garantire stabilità e man"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione Best Practice per File di Configurazione PHP basati su Array
 
 I file di configurazione e traduzione in PHP che restituiscono array sono comuni in Laravel e nei moduli PTVX. Per garantire stabilità e manutenibilità, è cruciale seguire alcune best practice.

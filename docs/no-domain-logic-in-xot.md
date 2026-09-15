@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: no-domain-logic-in-xot
 description: "Date: 2026-07-24"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot must not contain domain-specific logic
 
 **Date**: 2026-07-24

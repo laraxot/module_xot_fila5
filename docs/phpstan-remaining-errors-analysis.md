@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-remaining-errors-analysis
 description: "Data: 2025-01-10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Remaining Errors Analysis
 
 **Data:** 2025-01-10

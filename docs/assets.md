@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: assets
 description: "Gli assets sono le risorse statiche (CSS, JavaScript, immagini, font) utilizzate dal tema. Ogni tema può definire i propri assets."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Assets in il progetto
 
 Gli assets sono le risorse statiche (CSS, JavaScript, immagini, font) utilizzate dal tema. Ogni tema può definire i propri assets.

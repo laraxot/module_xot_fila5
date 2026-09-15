@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-code-quality-audit-completo-gennaio
 description: "PHPStan Level: 10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Audit Completo - Gennaio 2025
 
 **PHPStan Level**: 10

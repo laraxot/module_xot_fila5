@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: backup-copy-files-cleanup-rule
 description: "> Rule: Backup and copy files MUST NOT exist in the repository."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Backup and Copy Files Cleanup Rule
 
 > **Rule**: Backup and copy files MUST NOT exist in the repository.

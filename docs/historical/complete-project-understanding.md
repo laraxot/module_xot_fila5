@@ -1,12 +1,43 @@
+<<<<<<< HEAD
 # Quaeris Fila4 Mono - Filosofia Completa del Progetto
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# <nome progetto> Fila4 Mono - Filosofia Completa del Progetto
+=======
+# Quaeris Fila4 Mono - Filosofia Completa del Progetto
+>>>>>>> laraxot/dev
+=======
+# Quaeris Fila4 Mono - Filosofia Completa del Progetto
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Logica (Logic)
 
 ### Architettura del Sistema
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<nome progetto> è un sistema completo di gestione survey basato su Laravel 13 + Filament 5 con il framework Laraxot. L'architettura è modulare e segue il pattern:
+
+```
+Xot (Motore) → Moduli Specifici (User, <nome progetto>, etc.) → Funzionalità
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Quaeris è un sistema completo di gestione survey basato su Laravel 12 + Filament 4 con il framework Laraxot. L'architettura è modulare e segue il pattern:
 
 ```
 Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Domain Model Principale
@@ -77,7 +108,19 @@ Xot (Motore) → Moduli Specifici (User, Quaeris, etc.) → Funzionalità
 
 ## Business Logic
 
+<<<<<<< HEAD
 ### Modulo Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### Modulo <nome progetto>
+=======
+### Modulo Quaeris
+>>>>>>> laraxot/dev
+=======
+### Modulo Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Customer Management**: Gestione clienti e organizzazioni
 - **Survey Management**: Creazione e gestione survey tramite LimeSurvey
 - **Contact Management**: Gestione contatti e inviti
@@ -121,6 +164,18 @@ Il sistema è configurato con Model Context Protocol (MCP) per potenziare IDE AI
 
 ## Conclusione
 
+<<<<<<< HEAD
 Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<nome progetto> rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+=======
+Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+>>>>>>> laraxot/dev
+=======
+Quaeris rappresenta un sistema che riflette principi profondi di semplicità, chiarezza e armonia. Ogni riga di codice è una manifestazione dei principi DRY, KISS, SOLID e robustezza. Il sistema è progettato per essere mantenibile, scalabile e affidabile, seguendo un'architettura rigorosamente modulare dove ogni componente ha un ruolo preciso e prevedibile.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 La "Super Mucca" approccio richiede di analizzare a fondo il codice e le cartelle docs per capire la logica, la filosofia, la religione, la politica e lo zen del progetto prima di implementare qualsiasi cambiamento. La cartella docs è la memoria del sistema e deve essere costantemente aggiornata, studiata e migliorata.

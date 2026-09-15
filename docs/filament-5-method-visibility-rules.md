@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-method-visibility-rules
 description: "Created: January 2026"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5 Method Visibility Rules
 
 **Created:** January 2026

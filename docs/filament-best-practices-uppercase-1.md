@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-best-practices-uppercase-1
 description: "Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framewo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Best Practices per Filament Resources in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
@@ -46,9 +49,27 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -136,9 +157,27 @@ class SocioResource extends XotBaseResource
 
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -320,9 +359,27 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -571,9 +628,27 @@ class SocioResource extends XotBaseResource
     protected static ?string $model = Socio::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -600,5 +675,20 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/Modules/Xot/docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/Modules/Xot/docs/best-practices.md)
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+>>>>>>> laraxot/dev
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

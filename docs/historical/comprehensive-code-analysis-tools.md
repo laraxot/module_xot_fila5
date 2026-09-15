@@ -9,7 +9,19 @@
 
 ## 🎯 OVERVIEW
 
+<<<<<<< HEAD
 Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto FixCity. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto <nome progetto>. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.
+=======
+Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto FixCity. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.
+>>>>>>> laraxot/dev
+=======
+Guida completa per l'utilizzo di tutti gli strumenti di analisi del codice disponibili nel progetto FixCity. Questi strumenti garantiscono la massima qualità del codice, sicurezza e manutenibilità.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 🛠️ Strumenti per Stack Tecnologico
 
@@ -463,4 +475,16 @@ chmod +x scripts/*.sh
 
 ---
 
+<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto <nome progetto>.*
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+>>>>>>> laraxot/dev
+=======
+*Questa guida fornisce tutti gli strumenti necessari per mantenere la massima qualità del codice nel progetto FixCity.*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

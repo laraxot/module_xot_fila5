@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fix-meetup-service-provider
 description: "Data: 2025-12-16"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Fix - MeetupServiceProvider - 2025-12-16
 
 **Data**: 2025-12-16

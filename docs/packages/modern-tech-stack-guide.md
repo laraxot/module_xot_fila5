@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: modern-tech-stack-guide
 description: "Questa guida delinea come utilizzare al meglio i pacchetti installati per mantenere l'architettura pulita e performante."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida al Modern Tech Stack - Laraxot PTVX
 
 Questa guida delinea come utilizzare al meglio i pacchetti installati per mantenere l'architettura pulita e performante.

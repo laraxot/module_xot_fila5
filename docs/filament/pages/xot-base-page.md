@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-base-page
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBasePage
 
 ## Panoramica

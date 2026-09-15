@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fix-log-jan
 description: " 🎯 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Log Correzioni PHPStan - Gennaio 2026 (Trinità: Xot, User, UI)
 
 ## 🎯 Obiettivo

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-structure
 description: " Directory Structure"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Structure in Laraxot
 
 ## Directory Structure

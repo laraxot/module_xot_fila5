@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpinsights-analysis
 description: "Data: 2025-12-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi PHPInsights - Tutti i Moduli
 
 **Data**: 2025-12-23

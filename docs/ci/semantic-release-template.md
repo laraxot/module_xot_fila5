@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: semantic-release-template
 description: " Scopo"
@@ -5,11 +6,25 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Template semantic-release (moduli e temi)
 
 ## Scopo
 
+<<<<<<< HEAD
 Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `base_fixcity_fila5`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `<repo progetto>`.
+=======
+Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `base_fixcity_fila5`.
+>>>>>>> laraxot/dev
+=======
+Un solo stack **semantic-release** + **Conventional Commits** per ogni repo owner (`module_*_fila5`, `theme_*_fila5`) e orchestrazione monorepo su `base_fixcity_fila5`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Golden reference
 
@@ -42,14 +57,44 @@ Crea:
 
 `semantic-versioning.yml` nel template **non** usa path `Modules/X/**` — valido solo nel repo corrente.
 
+<<<<<<< HEAD
 ## Fixcity root
 
 - `.releaserc.json` con `tagFormat: fixcity-v${version}`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## <nome progetto> root
+
+- `.releaserc.json` con `tagFormat: <nome progetto>-v${version}`
+=======
+## Fixcity root
+
+- `.releaserc.json` con `tagFormat: fixcity-v${version}`
+>>>>>>> laraxot/dev
+=======
+## Fixcity root
+
+- `.releaserc.json` con `tagFormat: fixcity-v${version}`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Legacy: `.github/workflows/semantic-release.yml` (git-auto-semver) — deprecato; canonico: `semantic-release-monorepo.yml`
 
 ## Deprecazioni
 
+<<<<<<< HEAD
 - `Fixcity/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `<nome progetto>/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
+=======
+- `Fixcity/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
+>>>>>>> laraxot/dev
+=======
+- `Fixcity/.github/workflows/release.yml`: solo `workflow_dispatch`; release automatica su `semantic-release.yml`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Contributor analytics (solo base)
 

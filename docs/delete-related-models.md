@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: delete-related-models
 description: "<!-- Contenuto migrato da docs/deleterelatedmodels.txt -->"
@@ -6,11 +7,31 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 con un trait 
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
 
 https://andy-carter.com/blog/using-laravel-s-eloquent-traits
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'delete_related_models'
 module: Xot
@@ -31,4 +52,13 @@ con un trait
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
 
 https://andy-carter.com/blog/using-laravel-s-eloquent-traits
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

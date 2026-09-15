@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: critical-no-services-rule
 description: "Data Creazione: 2025-01-18"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regola Critica: NO Services - Solo Spatie QueueableActions
 
 **Data Creazione**: 2025-01-18

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-philosophy-unified
 description: " The Contradiction We Discovered (2026-01-09)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Testing Philosophy: The Unified Approach
 
 ## The Contradiction We Discovered (2026-01-09)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: themes
 description: "il progetto utilizza un sistema di temi basato su Filament 3.3. Ogni tema è un pacchetto Laravel indipendente che può essere installato e co"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Temi in il progetto
 
 il progetto utilizza un sistema di temi basato su Filament 3.3. Ogni tema è un pacchetto Laravel indipendente che può essere installato e configurato separatamente.

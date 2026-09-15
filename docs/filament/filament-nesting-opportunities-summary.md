@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-nesting-opportunities-summary
 description: "Data Analisi: 2026-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5.x Nested Resources - Riepilogo Opportunità
 
 **Data Analisi**: 2026-01-22  
@@ -45,9 +48,27 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 
 ## Opportunità per Modulo
 
+<<<<<<< HEAD
 ### Modulo Quaeris
 
 **Documentazione**: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../Quaeris/docs/filament-nesting-opportunities.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### Modulo <nome progetto>
+
+**Documentazione**: [Modules/<nome progetto>/docs/filament-nesting-opportunities.md](../../<nome progetto>/docs/filament-nesting-opportunities.md)
+=======
+### Modulo Quaeris
+
+**Documentazione**: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../Quaeris/docs/filament-nesting-opportunities.md)
+>>>>>>> laraxot/dev
+=======
+### Modulo Quaeris
+
+**Documentazione**: [Modules/Quaeris/docs/filament-nesting-opportunities.md](../../Quaeris/docs/filament-nesting-opportunities.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Opportunità Identificate**:
 
@@ -137,8 +158,23 @@ Il nesting in Filament 5.x permette di creare risorse figlie con pagine complete
 
 ### 🟡 ALTA (Implementare a Breve)
 
+<<<<<<< HEAD
 1. **Contact Nested Resource** (Quaeris)
 2. **SurveyPdf Nested Resource** (Quaeris)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+1. **Contact Nested Resource** (<nome progetto>)
+2. **SurveyPdf Nested Resource** (<nome progetto>)
+=======
+1. **Contact Nested Resource** (Quaeris)
+2. **SurveyPdf Nested Resource** (Quaeris)
+>>>>>>> laraxot/dev
+=======
+1. **Contact Nested Resource** (Quaeris)
+2. **SurveyPdf Nested Resource** (Quaeris)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 3. **LimeGroup Nested Resource** (Limesurvey)
 4. **LimeAnswer Nested Resource** (Limesurvey)
 5. **Block Nested Resource** (Cms - Page e Section)
@@ -186,7 +222,19 @@ class ChildResource extends XotBaseResource
 ### Creare Nested Resource
 
 ```bash
+<<<<<<< HEAD
 php artisan make:filament-resource Contact --nested --module=Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+php artisan make:filament-resource Contact --nested --module=<nome progetto>
+=======
+php artisan make:filament-resource Contact --nested --module=Quaeris
+>>>>>>> laraxot/dev
+=======
+php artisan make:filament-resource Contact --nested --module=Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Creare Relation Manager
@@ -214,7 +262,19 @@ php artisan make:filament-relation-manager SurveyPdfResource contacts email
 
 - [Filament 5.x Nesting Documentation](https://filamentphp.com/docs/5.x/resources/nesting)
 - [Filament 5.x Nesting Migration Guide](./filament-5-nesting-migration.md)
+<<<<<<< HEAD
 - [Quaeris Nesting Opportunities](../../Quaeris/docs/filament-nesting-opportunities.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [<nome progetto> Nesting Opportunities](../../<nome progetto>/docs/filament-nesting-opportunities.md)
+=======
+- [Quaeris Nesting Opportunities](../../Quaeris/docs/filament-nesting-opportunities.md)
+>>>>>>> laraxot/dev
+=======
+- [Quaeris Nesting Opportunities](../../Quaeris/docs/filament-nesting-opportunities.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Limesurvey Nesting Opportunities](../../Limesurvey/docs/filament-nesting-opportunities.md)
 - [Cms Nesting Opportunities](../../Cms/docs/filament-nesting-opportunities.md)
 - [User Nesting Opportunities](../../User/docs/filament-nesting-opportunities.md)

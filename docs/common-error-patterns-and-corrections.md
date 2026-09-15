@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: common-error-patterns-and-corrections
 description: "This document outlines the most common error patterns identified in the Laraxot codebase and their correction strategies, following DRY + KI"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Common Error Patterns and Corrections in Laraxot
 
 This document outlines the most common error patterns identified in the Laraxot codebase and their correction strategies, following DRY + KISS + SOLID + Robust principles.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-analysis-2
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
@@ -5,24 +6,55 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **NON è stato modificato** `phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776
 **Livello PHPStan**: 9
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **NON è stato modificato** `/var/www/html/_bases/<directory progetto>/laravel/phpstan.neon`
 
 ## Analisi Completa
 
 **Totale Errori**: 776  
 **Livello PHPStan**: 9  
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **Data Analisi**: 18 Agosto 2025
 
@@ -40,8 +72,25 @@ public function method(array $params): array
 
 <<<<<<< HEAD
 // ✅ CORRETTO
+<<<<<<< HEAD
 =======
 // ✅ CORRETTO  
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+// ✅ CORRETTO  
+=======
+<<<<<<< HEAD
+// ✅ CORRETTO
+=======
+// ✅ CORRETTO  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+// ✅ CORRETTO  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 array<string, mixed> $data
 Collection<int, Model> $items
@@ -202,8 +251,25 @@ class MyModel extends BaseModel
 - **Fase 1 (Xot)**: 2-3 ore
 <<<<<<< HEAD
 - **Fase 2 (User)**: 1-2 ore
+<<<<<<< HEAD
 =======
 - **Fase 2 (User)**: 1-2 ore  
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+- **Fase 2 (User)**: 1-2 ore  
+=======
+<<<<<<< HEAD
+- **Fase 2 (User)**: 1-2 ore
+=======
+- **Fase 2 (User)**: 1-2 ore  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+- **Fase 2 (User)**: 1-2 ore  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **Fase 3 (Applicazione)**: 3-4 ore
 - **Fase 4 (Verifica)**: 1 ora
@@ -215,8 +281,27 @@ class MyModel extends BaseModel
 <<<<<<< HEAD
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+**Stato**: 🔄 Analisi Completata - Correzioni in Corso  
+**phpstan.neon**: ✅ INTOCCATO  
+=======
+<<<<<<< HEAD
+**Stato**: 🔄 Analisi Completata - Correzioni in Corso
+**phpstan.neon**: ✅ INTOCCATO
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso  
 **phpstan.neon**: ✅ INTOCCATO  
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **Approccio**: DRY + KISS + Type Safety

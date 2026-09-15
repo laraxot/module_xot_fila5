@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: annotations
 description: "<!-- Contenuto migrato da docs/annotations.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # annotations
 
 <!-- Contenuto migrato da _docs/annotations.txt -->

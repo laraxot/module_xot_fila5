@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testcase-setup-critical-rules
 description: " REGOLE FONDAMENTALI"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # TestCase Setup - Critical Rules
 
 ## REGOLE FONDAMENTALI

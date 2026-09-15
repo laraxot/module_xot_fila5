@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbasepanelprovider-discovery
 description: "XotBasePanelProvider::panel() scopre automaticamente resource, pagine, widget e"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBasePanelProvider — scoperta dei componenti del modulo
 
 `XotBasePanelProvider::panel()` scopre automaticamente resource, pagine, widget e
@@ -43,7 +46,19 @@ class CustomerPanelProvider extends XotBasePanelProvider
     public function panel(Panel $panel): Panel
     {
         return parent::panel($panel)
+<<<<<<< HEAD
             ->resources([WorkOrderResource::class, InvoiceResource::class])
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            ->resources([<nome progetto>Resource::class, InvoiceResource::class])
+=======
+            ->resources([WorkOrderResource::class, InvoiceResource::class])
+>>>>>>> laraxot/dev
+=======
+            ->resources([WorkOrderResource::class, InvoiceResource::class])
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             ->pages([Dashboard::class, CustomerInterventionCalendar::class]);
     }
 }

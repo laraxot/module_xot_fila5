@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-livello10-linee-guida
 description: " Introduzione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Linee Guida PHPStan Livello 10
 
 ## Introduzione

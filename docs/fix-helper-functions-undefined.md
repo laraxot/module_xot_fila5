@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: fix-helper-functions-undefined
 description: " 🐛 Problema Originale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Fix: Helper Functions Undefined - Analisi e Risoluzione
 
 ## 🐛 Problema Originale

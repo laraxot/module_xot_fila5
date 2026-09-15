@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: model-architecture
 description: "Data: 2025-10-16"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Model Architecture - Guida Completa
 
 **Data**: 2025-10-16

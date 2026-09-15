@@ -275,9 +275,27 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -396,8 +414,23 @@ git push origin feature-branch
 - [Consolidation Strategy](./documentation-consolidation-strategy.md) - Piano riduzione docs
 
 ### Documentazione Laravel Ecosystem
+<<<<<<< HEAD
 - [Laravel 12 Docs](https://laravel.com/docs/12.x)
 - [Filament 4 Docs](https://filamentphp.com/docs/4.x)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Laravel 13 Docs](https://laravel.com/docs/12.x)
+- [Filament 5 Docs](https://filamentphp.com/docs/4.x)
+=======
+- [Laravel 12 Docs](https://laravel.com/docs/12.x)
+- [Filament 4 Docs](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
+=======
+- [Laravel 12 Docs](https://laravel.com/docs/12.x)
+- [Filament 4 Docs](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Livewire 3 Docs](https://livewire.laravel.com/docs/3.x)
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
 - [Spatie QueueableAction](https://github.com/spatie/laravel-queueable-action)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mcp-asana-integration
 description: "Versione: 1.0.0"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Asana MCP Integration Guide
 
 **Versione**: 1.0.0

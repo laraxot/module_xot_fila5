@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: project-philosophy-religion-politics-zen
 description: " 🧠 Logica del Progetto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filosofia, Religione, Politica e Zen del Progetto Laravel Pizza
 
 ## 🧠 Logica del Progetto

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-extension-implementation
 description: "Date: 18 Dicembre 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Extension Rules Implementation Report
 
 **Date**: 18 Dicembre 2025

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-perfection-guide
 description: "This guide documents the patterns and strategies used to achieve 100% PHPStan (Level Max) compliance across all Laraxot modules."
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Perfection Guide
 
 This guide documents the patterns and strategies used to achieve 100% PHPStan (Level Max) compliance across all Laraxot modules.

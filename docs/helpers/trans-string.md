@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: trans-string
 description: " Scopo (Purpose)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # trans_string() - Helper Translation Type-Safe
 
 ## Scopo (Purpose)

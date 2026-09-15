@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: file-structure
 description: " Core Principle: Single Source of Truth for Database Files"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot File Structure Philosophy
 
 ## Core Principle: Single Source of Truth for Database Files

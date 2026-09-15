@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: base-classes-additional-fix-1
 description: "Data: 15 Ottobre 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzione Classi Base Aggiuntive - Modulo Xot
 
 **Data:** 15 Ottobre 2025  

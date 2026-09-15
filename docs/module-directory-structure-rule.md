@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-directory-structure-rule
 description: "> Regola: Le cartelle dei moduli devono seguire la struttura standard Laravel/Packt."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Directory Structure Rule
 
 > **Regola**: Le cartelle dei moduli devono seguire la struttura standard Laravel/Packt.

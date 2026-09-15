@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: arr-actions-standardization
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Standardizzazione Actions Array: `Modules\Xot\Actions\Arr`
 
 ## Panoramica

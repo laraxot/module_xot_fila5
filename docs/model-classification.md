@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: model-classification
 description: " Business-Relevant Models (Require Factories/Seeders)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)

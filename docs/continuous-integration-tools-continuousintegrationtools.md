@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: continuous-integration-tools-continuousintegrationtools
 description: "<!-- Contenuto migrato da docs/continuousintegrationtools.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/_continuous_integration_tools.txt -->

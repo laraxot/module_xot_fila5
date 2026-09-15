@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: panel-login-fix
 description: "This document details the fix applied to XotBasePanelProvider.php to resolve a critical login functionality issue affecting all Filament pan"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Panel Login Fix
 
 This document details the fix applied to `XotBasePanelProvider.php` to resolve a critical login functionality issue affecting all Filament panels extending this base provider.

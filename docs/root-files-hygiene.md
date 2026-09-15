@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: root-files-hygiene
 description: " 2026-07-08 16:48"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Root files hygiene
 
 ## 2026-07-08 16:48

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: composer-module-dependency-management
 description: "This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Composer and Module Dependency Management in Laraxot
 
 This document outlines the best practices and mandatory rules for managing Composer dependencies within the modular Laraxot framework.

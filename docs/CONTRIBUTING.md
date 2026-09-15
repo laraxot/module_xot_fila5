@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: contributing
 description: "Xot is the foundation of Laraxot. Changes here propagate to 47 other modules. Contribution workflow and quality gates."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Contributing to Xot
 
 Xot is the foundation of Laraxot. Changes here propagate to 47 other modules. Contribution workflow and quality gates.

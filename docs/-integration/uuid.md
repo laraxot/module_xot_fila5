@@ -3,6 +3,18 @@
 
 <!-- Contenuto migrato da _docs/uuid.txt -->
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# uuid
+
+<!-- Contenuto migrato da _docs/uuid.txt -->
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Uuid'
 module: Xot
@@ -14,12 +26,30 @@ converted_from: UUID.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 Universally Unique Identifiers
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # _uuid
 
 <!-- Contenuto migrato da _docs/_uuid.txt -->
@@ -27,5 +57,18 @@ Universally Unique Identifiers
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
+<<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

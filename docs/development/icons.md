@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: icons
 description: " Configurazione delle Icone di Navigazione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Icone e SVG nei Moduli
 
 ## Configurazione delle Icone di Navigazione

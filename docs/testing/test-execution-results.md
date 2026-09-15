@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: test-execution-results
 description: " Summary"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Test Execution Results - Initial Run
 
 ## Summary

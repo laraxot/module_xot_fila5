@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: limesurveyatabase-commands
 description: " Database Analysis Commands and Tools for appsurvey"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Database Analysis Commands and Tools for healthcare_app_survey
 # Database Analysis Commands and Tools for app_survey
 

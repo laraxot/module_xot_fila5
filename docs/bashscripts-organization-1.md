@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bashscripts-organization-1
 description: " Regola Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Organizzazione Cartella BashScripts
 
 ## Regola Fondamentale

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pipeline
 description: "pipeline"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 https://www.codecheef.org/article/laravel-pipeline-interpretation-with-example
 
 

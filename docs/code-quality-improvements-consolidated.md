@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-improvements-consolidated
 description: "Data creazione: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Improvements - Documento Consolidato
 
 **Data creazione**: 2025-01-22
@@ -143,6 +146,24 @@ describe('Event Management', function () {
 - **Feature Tests**: > 70% coverage
 - **Integration Tests**: > 60% coverage
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 5. Filament 5 - Best Practices Aggiornate
+
+#### Schema Components (Filament 5)
+```php
+// ✅ Nuovo pattern Filament 5
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Grid;
+
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### 5. Filament 4 - Best Practices Aggiornate
 
 #### Schema Components (Filament 4)
@@ -152,9 +173,23 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -183,11 +218,31 @@ protected function getHeaderActions(): array
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 6. Laravel 13 - Nuove Features da Usare
+
+#### Model Events con Type Hints
+```php
+// ✅ Laravel 13 pattern
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### 6. Laravel 12 - Nuove Features da Usare
 
 #### Model Events con Type Hints
 ```php
 // ✅ Laravel 12 pattern
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 protected static function booted(): void
 {
     static::creating(function (Event $event): void {
@@ -325,7 +380,19 @@ $content = file_get_contents($path); // Lancia eccezione se fallisce
 - [Pest](https://pestphp.com/) - Testing framework
 - [Filament](https://filamentphp.com/docs) - Admin panel
 - [Laravel Modules](https://laravelmodules.com/) - Modular architecture
+<<<<<<< HEAD
 - [Laravel 12](https://laravel.com/docs/12.x) - Framework docs
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Laravel 13](https://laravel.com/docs/12.x) - Framework docs
+=======
+- [Laravel 12](https://laravel.com/docs/12.x) - Framework docs
+>>>>>>> laraxot/dev
+=======
+- [Laravel 12](https://laravel.com/docs/12.x) - Framework docs
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Blog e Risorse
 - [Laravel News](https://laravel-news.com/) - News e tutorial

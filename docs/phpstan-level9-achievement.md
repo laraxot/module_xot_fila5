@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level9-achievement
 description: "Data: 18 Agosto 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🏆 PHPStan Level 9 Achievement - Framework Xot
 
 **Data**: 18 Agosto 2025

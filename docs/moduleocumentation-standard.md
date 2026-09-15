@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: moduleocumentation-standard
 description: "This document defines the standard structure and format for module documentation in the Laraxot architecture."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Documentation Standard
 
 This document defines the standard structure and format for module documentation in the Laraxot architecture.

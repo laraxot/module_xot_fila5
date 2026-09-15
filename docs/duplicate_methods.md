@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: duplicate-methods
 description: "Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Metodi duplicati — Xot
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

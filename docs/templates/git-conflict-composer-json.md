@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflict-composer-json
 description: " File: bashscripts/composer.json"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Template Gestione Conflitti Git - composer.json
 
 ## File: bashscripts/composer.json

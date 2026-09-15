@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: "Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione delle Eccezioni
 
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
@@ -38,6 +41,15 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
 ## Collegamenti tra versioni di README.md
@@ -118,7 +130,18 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -199,4 +222,13 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

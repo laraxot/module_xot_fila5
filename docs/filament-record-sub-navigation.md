@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-record-sub-navigation
 description: "Regola valida per ogni risorsa che estende XotBaseResource."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sub navigation delle pagine di record
 
 Regola valida per ogni risorsa che estende `XotBaseResource`.

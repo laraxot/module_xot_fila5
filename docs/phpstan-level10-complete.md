@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level10-complete
 description: " 📊 Current Status"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - PHPStan Level 10 Analysis (January 2026)
 
 ## 📊 Current Status
@@ -42,7 +45,19 @@ bootstrapFiles:
 ```
 
 **Files Modified**:
+<<<<<<< HEAD
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila5/laravel/phpstan.neon)
+=======
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+>>>>>>> laraxot/dev
+=======
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -63,7 +78,19 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 ```
 
 **Files Modified**:
+<<<<<<< HEAD
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+=======
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+>>>>>>> laraxot/dev
+=======
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Rationale**: Both `Token` and `TransientToken` implement `ScopeAuthorizable`, so using the interface provides better compatibility and follows Liskov Substitution Principle.
 
@@ -84,7 +111,19 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 ```
 
 **Files Modified**:
+<<<<<<< HEAD
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/User/app/Models/BaseUser.php)
+=======
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
+>>>>>>> laraxot/dev
+=======
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -95,7 +134,19 @@ public function withAccessToken(?\Laravel\Passport\Contracts\ScopeAuthorizable $
 **Solution**: Removed stub from PHPStan bootstrap files as Laravel Passport 13.4+ provides the real interface
 
 **Files Modified**:
+<<<<<<< HEAD
 - [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila5/laravel/phpstan.neon)
+=======
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+>>>>>>> laraxot/dev
+=======
+- [phpstan.neon](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/phpstan.neon)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -134,14 +185,44 @@ These fixes impact **ALL modules** that depend on Xot:
 
 ## 🔗 Related Documentation
 
+<<<<<<< HEAD
 - [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
 - [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
 - [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/User/docs/passport.md)
+- [Passport Configuration](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/Tenant/docs/it/config/passport.md)
+- [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila5/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+=======
+- [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
+- [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
+- [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+>>>>>>> laraxot/dev
+=======
+- [Passport Integration Guide](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
+- [Passport Configuration](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Tenant/docs/it/config/passport.md)
+- [Previous PHPStan Roadmap](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## ✅ Verification
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_ptvx_fila5/laravel
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_ptvx_fila4_mono/laravel
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse Modules/Xot --level=10
 
 # Output:

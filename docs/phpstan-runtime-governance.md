@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-runtime-governance
 description: " Regola locale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Runtime Governance
 
 ## Regola locale

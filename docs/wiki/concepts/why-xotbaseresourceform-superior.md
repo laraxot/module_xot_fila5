@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: why-xotbaseresourceform-superior
 description: "Date: 2026-05-05"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Why XotBaseResourceForm Pattern is Superior to Filament Demo Pure-Static Classes
 
 **Date:** 2026-05-05
@@ -42,9 +45,27 @@ class DepartmentForm {
 // TicketForm.php (Our Pattern)
 class TicketForm extends XotBaseResourceForm {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array {
+    public function getFormSchema(): array {
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array {
+=======
+    public function getFormSchema(): array {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [
             TextInput::make('name'), // ✅ No label - LangServiceProvider owns it
@@ -61,7 +82,19 @@ class TicketForm extends XotBaseResourceForm {
 **Advantages:**
 
 ### 1. LangServiceProvider Integration (NO `->label()`)
+<<<<<<< HEAD
 - All translations centralized in `fixcity::segnalazione.*` language files
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- All translations centralized in `<nome progetto>::segnalazione.*` language files
+=======
+- All translations centralized in `fixcity::segnalazione.*` language files
+>>>>>>> laraxot/dev
+=======
+- All translations centralized in `fixcity::segnalazione.*` language files
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - No `->label()` or `->tooltip()` in module code
 - Single source of truth for all translations
 - Easy to add new languages (it, en, etc.)
@@ -69,7 +102,19 @@ class TicketForm extends XotBaseResourceForm {
 ### 2. Wizard-Ready Architecture
 - `getSteps()` returns `array<int, Step>`
 - `getStepByName()` dynamically resolves steps via `Str::of()` transformation
+<<<<<<< HEAD
 - Lang keys auto-generated: `fixcity::ticket-resource.steps.privacy.label`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Lang keys auto-generated: `<nome progetto>::ticket-resource.steps.privacy.label`
+=======
+- Lang keys auto-generated: `fixcity::ticket-resource.steps.privacy.label`
+>>>>>>> laraxot/dev
+=======
+- Lang keys auto-generated: `fixcity::ticket-resource.steps.privacy.label`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Supports multi-step flows out of the box
 
 ### 3. XotBaseResourceForm Provides Common Logic
@@ -105,8 +150,23 @@ public static function getSummarySchema(): array {
 
 ### 5. SafeStringCastAction for Translation Casting
 ```php
+<<<<<<< HEAD
 Section::make(SafeStringCastAction::cast(__('fixcity::segnalazione.fields.place.section.label')))
     ->description(SafeStringCastAction::cast(__('fixcity::segnalazione.sections.place.description')))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Section::make(SafeStringCastAction::cast(__('<nome progetto>::segnalazione.fields.place.section.label')))
+    ->description(SafeStringCastAction::cast(__('<nome progetto>::segnalazione.sections.place.description')))
+=======
+Section::make(SafeStringCastAction::cast(__('fixcity::segnalazione.fields.place.section.label')))
+    ->description(SafeStringCastAction::cast(__('fixcity::segnalazione.sections.place.description')))
+>>>>>>> laraxot/dev
+=======
+Section::make(SafeStringCastAction::cast(__('fixcity::segnalazione.fields.place.section.label')))
+    ->description(SafeStringCastAction::cast(__('fixcity::segnalazione.sections.place.description')))
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### 6. Dynamic Values with Get $get / Set $set

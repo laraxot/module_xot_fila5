@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: eloquent-magic-properties-rule
 description: " 🔥 REGOLA FONDAMENTALE"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Eloquent Magic Properties - Regola Assoluta
 
 ## 🔥 REGOLA FONDAMENTALE

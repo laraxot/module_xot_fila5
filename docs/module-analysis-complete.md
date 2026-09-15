@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-analysis-complete
 description: " 📊 Panoramica Generale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Completa Modulo Xot - Factory, Seeder e Test
 
 ## 📊 Panoramica Generale

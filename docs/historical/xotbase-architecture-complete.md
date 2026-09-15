@@ -109,7 +109,19 @@ Modules\[Module]\Filament\Actions\MyCustomAction
 #### 1. Actions
 
 ```php
+<<<<<<< HEAD
 // Filament 4 Actions
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Filament 5 Actions
+=======
+// Filament 4 Actions
+>>>>>>> laraxot/dev
+=======
+// Filament 4 Actions
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Filament\Actions\Action
     → Modules\Xot\Filament\Actions\XotBaseAction
 

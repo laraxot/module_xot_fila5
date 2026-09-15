@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflicts-progress-summary
 description: "Data: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Summary Progresso Risoluzione Merge Conflicts
 
 **Data**: 2025-01-22

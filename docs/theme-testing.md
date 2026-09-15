@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: theme-testing
 description: " Principi di Testing"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # Testing del Tema
 

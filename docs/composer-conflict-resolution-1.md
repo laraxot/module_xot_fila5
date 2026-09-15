@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: composer-conflict-resolution-1
 description: " Intent"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione conflitto composer.json (Xot)
 
 ## Intent

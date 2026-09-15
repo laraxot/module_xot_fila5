@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: widget-view-resolution
 description: "Data: 2025-01-27"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Widget View Resolution - Risoluzione Automatica vs Manuale
 
 **Data**: 2025-01-27

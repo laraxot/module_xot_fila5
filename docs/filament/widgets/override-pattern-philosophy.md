@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: override-pattern-philosophy
 description: "Status: Applied — anti-pattern rimosso da XotBaseWizardWidget e CreateTicketWizardWidget"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Override Pattern — La Filosofia degli Hook Inutili
 
 **Status**: Applied — anti-pattern rimosso da XotBaseWizardWidget e CreateTicketWizardWidget  
@@ -30,7 +33,19 @@ protected function useNativeSubmitButton(): bool
 #[\Override]
 protected function getNativeSubmitButtonLabel(): string
 {
+<<<<<<< HEAD
     return (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    return (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    return (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+    return (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 }
 
 #[\Override]
@@ -77,7 +92,19 @@ protected function getWizardSubmitAction(): Htmlable
 // ✅ SEMPLICE: 1 metodo, tutto inline
 protected function getWizardSubmitAction(): Htmlable
 {
+<<<<<<< HEAD
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     return new HtmlString(
         "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"
@@ -132,7 +159,19 @@ class MyWidget extends XotBaseWizardWidget
 {
     protected function getWizardSubmitAction(): Htmlable
     {
+<<<<<<< HEAD
         $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+        $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+        $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         
         return new HtmlString(
             "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"
@@ -194,7 +233,19 @@ class MyWidget extends XotBaseWizardWidget
 #[\Override]
 protected function getWizardSubmitAction(): Htmlable
 {
+<<<<<<< HEAD
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     return new HtmlString(
         "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"
@@ -342,7 +393,19 @@ protected function getNativeSubmitButtonClasses(): string { return 'btn btn-prim
 // ✅ CORRETTO: tutto inline nel metodo principale
 protected function getWizardSubmitAction(): Htmlable
 {
+<<<<<<< HEAD
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     return new HtmlString(
         "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"
@@ -437,7 +500,19 @@ Abbiamo rimosso gli hook e reso `getWizardSubmitAction()` direttamente overridea
 #[\Override]
 protected function getWizardSubmitAction(): Htmlable
 {
+<<<<<<< HEAD
     $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    $label = (string) __('<nome progetto>::create_ticket_wizard.actions.submit.label');
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+=======
+    $label = (string) __('fixcity::create_ticket_wizard.actions.submit.label');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     return new HtmlString(
         "<button type=\"submit\" class=\"btn btn-primary mobile-full\">{$label}</button>"

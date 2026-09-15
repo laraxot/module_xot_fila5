@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: php-code-tools
 description: "php-code-tools"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 https://github.com/PHPCheckstyle/phpcheckstyle
 
 https://scrutinizer-ci.com/

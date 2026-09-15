@@ -22,9 +22,15 @@ return [
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
         'key' => ['label' => 'key', 'placeholder' => 'key', 'helper_text' => '', 'description' => 'key'],
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
         'expiration' => ['label' => 'expiration', 'placeholder' => 'expiration', 'helper_text' => '', 'description' => 'expiration'],
+=======
+        'key' => ['label' => 'key', 'placeholder' => 'key', 'helper_text' => 'key', 'description' => 'key'],
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
+        'expiration' => ['label' => 'expiration', 'placeholder' => 'expiration', 'helper_text' => 'expiration', 'description' => 'expiration'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'Crea Cache', 'icon' => 'create', 'tooltip' => 'create'],

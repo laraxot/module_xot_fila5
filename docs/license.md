@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: license
 description: "license"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 The MIT License (MIT)
 
 Copyright (c) :vendor_name <author@domain.com>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: rules-index
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module Rules Index
 
 ## Overview

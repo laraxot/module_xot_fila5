@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: chartjs-datalabels-xot-integration
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview
@@ -928,7 +931,19 @@ class ExampleChartWidget extends XotBaseChartWidget
 
 For a minimal, production-ready example showing 2 labels per bar using `RawJs::make()`, see:
 
+<<<<<<< HEAD
 **`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**`Modules/<nome progetto>/Filament/Widgets/SimpleChartWidget.php`**
+=======
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> laraxot/dev
+=======
+**`Modules/Quaeris/Filament/Widgets/SimpleChartWidget.php`**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Key pattern:
 ```php

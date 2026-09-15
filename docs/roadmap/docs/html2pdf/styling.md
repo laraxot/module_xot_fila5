@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: styling
 description: "Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.

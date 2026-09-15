@@ -526,4 +526,16 @@ iflow
 
 ## Licenza
 
+<<<<<<< HEAD
 Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Questa documentazione è parte del progetto **base_<nome progetto>_fila5** ed è soggetta alla stessa licenza del progetto principale.
+=======
+Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
+>>>>>>> laraxot/dev
+=======
+Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

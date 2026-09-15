@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: level10-linee-guida
 description: "Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del pr"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Linee Guida per PHPStan Livello 10 - Regole Comuni
 
 Questo documento contiene le linee guida generali e le regole comuni per risolvere gli errori PHPStan di livello 10 in tutti i moduli del progetto.

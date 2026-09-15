@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-analyse
 description: "curl -OL https://squizlabs.github.io/PHPCodeSniffer/phpcs.phar"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 //----------------------------------------------------------
 phpstan
 install:

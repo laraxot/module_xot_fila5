@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: relationx-sqlite-cross-database-fix-1-1
 description: " Problema Risolto"
@@ -5,6 +6,8 @@ metadata:
   type: fix
 ---
 
+=======
+>>>>>>> laraxot/dev
 # RelationX SQLite Cross-Database Fix
 
 ## Problema Risolto
@@ -19,7 +22,19 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Soluzione Implementata
 
 ### File Modificato
+<<<<<<< HEAD
 `/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+`/var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+=======
+`/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+>>>>>>> laraxot/dev
+=======
+`/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Correzione Applicata
 Righe 51-59, aggiunto controllo del driver database:

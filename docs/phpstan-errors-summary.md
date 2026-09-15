@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-errors-summary
 description: "Data: 2026-01-09"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Errors Summary - 2026-01-09
 
 **Data**: 2026-01-09  

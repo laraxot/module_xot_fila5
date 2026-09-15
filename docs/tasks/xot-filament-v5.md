@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-filament-v5
 description: " 📋 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Xot Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laravel-13-modular-composer-upgrade
 description: " Purpose"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laravel 13 modular Composer upgrade
 
 ## Purpose
@@ -19,7 +22,19 @@ The attempted command:
 composer require -W laravel/framework:^13
 ```
 
+<<<<<<< HEAD
 failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 12. This is a root-level dependency conflict, not a Laravel 13 framework issue.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 13. This is a root-level dependency conflict, not a Laravel 13 framework issue.
+=======
+failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 12. This is a root-level dependency conflict, not a Laravel 13 framework issue.
+>>>>>>> laraxot/dev
+=======
+failed because `laravel/composer.json` still requires the legacy `barryvdh/laravel-debugbar:^3.14` package constraint, whose 3.x line only supports Illuminate packages up to Laravel 12. This is a root-level dependency conflict, not a Laravel 13 framework issue.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Debugbar is now maintained as `fruitcake/laravel-debugbar`. The Laravel 13 compatible debugbar package is `fruitcake/laravel-debugbar:^4.2`. Packagist currently shows the 4.2 line requiring `illuminate/routing`, `illuminate/session`, and `illuminate/support` with `^11|^12|^13.0`, so it is compatible with Laravel 13 on PHP 8.3.
 

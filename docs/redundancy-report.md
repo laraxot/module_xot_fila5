@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: redundancy-report
 description: "> Generato: 2026-05-21 | Analisi automatica deep-scan"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Redundancy Report — Modulo Xot
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan

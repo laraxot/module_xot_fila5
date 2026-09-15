@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: data-property
 description: " Problema Comune"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Proprietà `$data` nei Widget Filament
 
 ## Problema Comune

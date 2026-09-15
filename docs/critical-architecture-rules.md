@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: critical-architecture-rules
 description: "ULTIMO AGGIORNAMENTO: 2025-01-XX"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Critiche di Architettura Laraxot
 
 **ULTIMO AGGIORNAMENTO**: 2025-01-XX

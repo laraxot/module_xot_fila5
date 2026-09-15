@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-xotbasesection-troubleshooting
 description: " BadMethodCallException: disableLiveUpdates does not exist"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseSection Troubleshooting
 
 ## BadMethodCallException: disableLiveUpdates does not exist

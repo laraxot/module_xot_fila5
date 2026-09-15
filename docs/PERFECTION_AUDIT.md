@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: perfection-audit
 description: "Data: 2026-09-01"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Perfection Audit — Xot Module
 
 **Data**: 2026-09-01

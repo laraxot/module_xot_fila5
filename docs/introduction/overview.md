@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: overview
 description: " Cos'è <nome progetto>"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Panoramica del Progetto <nome progetto>
 
 ## Cos'è <nome progetto>

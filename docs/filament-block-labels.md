@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-block-labels
 description: "> Questo documento è un collegamento alla documentazione principale sulle convenzioni per le etichette nei Filament Blocks."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Block Label Guidelines
 
 > Questo documento è un collegamento alla documentazione principale sulle convenzioni per le etichette nei Filament Blocks.
