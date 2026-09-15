@@ -73,7 +73,7 @@ abstract class XotBaseListRecords extends FilamentListRecords
         ];
     }
 
-    public function getTableColumns(): array
+    final public function getTableColumns(): array
     {
         return [];
     }
