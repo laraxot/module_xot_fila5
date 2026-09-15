@@ -143,10 +143,7 @@ docs/**/scripts/
 docs/**/bashscripts/
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
-.cursor/
 .devcontainer/
-.vscode/
-.windsurf/
 .claude
 
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
@@ -154,3 +151,15 @@ phpinsights.php
 rector.php
 .php-cs*.*
 phpmd*.*
+
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+/rector.php
+/phpinsights.php
+/.cursor
+/.cursor/
+/.windsurf
+/.windsurf/
+/.vscode
+/.vscode/
+.cursor~*
+.windsurf~*
