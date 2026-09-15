@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-collection-types
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gestione Tipi Collection in PHPStan - Modulo Xot
 
 ## Overview

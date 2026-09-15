@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-conflicts-resolution-pattern
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Git Conflicts Resolution Pattern
 
 ## Overview

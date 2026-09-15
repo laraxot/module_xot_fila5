@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: prompt-docs-improvements
-description: "> Collegamenti correlati"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: error-formatter-contract
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ErrorFormatterContract
 
 ## Descrizione

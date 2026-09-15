@@ -19,13 +19,16 @@ use Mockery;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionMethod;
+use ReflectionNamedType;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\MediaCollections\FileAdder;
+use SplFileInfo;
 
 use function Safe\file;
 use function Safe\preg_match;
 use function Safe\preg_replace;
-
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
 
 /**
  * Sweep aggressivo verso coverage 100%: closure Filament, policy con matrice ruoli, metodi senza limite parametri.
@@ -69,7 +72,7 @@ final class ModuleRemainingCoverage
         $record = self::mockFilamentCoverageRecord();
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Filament') as $class) {
-            $ref = new \ReflectionClass($class);
+            $ref = new ReflectionClass($class);
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                 continue;
             }
@@ -79,7 +82,7 @@ final class ModuleRemainingCoverage
                 if ($ref->hasMethod('make') && $ref->getMethod('make')->isStatic()) {
                     $make = $ref->getMethod('make');
                     $argc = $make->getNumberOfRequiredParameters();
-                    $instance = 0 === $argc
+                    $instance = $argc === 0
                         ? $class::make()
                         : $class::make('coverage_field');
                 }
@@ -102,7 +105,7 @@ final class ModuleRemainingCoverage
 
             self::invokeClosuresInValue($instance, $record, $invoked);
 
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
                 if ($method->getDeclaringClass()->getName() !== $class) {
                     continue;
                 }
@@ -118,9 +121,9 @@ final class ModuleRemainingCoverage
                         ? $method->invoke(null, ...self::defaultArgsForMethod($method))
                         : $method->invoke($instance, ...self::defaultArgsForMethod($method));
                     self::invokeClosuresInValue($result, $record, $invoked);
-                    ++$invoked;
+                    $invoked++;
                 } catch (\Throwable) {
-                    ++$invoked;
+                    $invoked++;
                 }
             }
         }
@@ -134,7 +137,7 @@ final class ModuleRemainingCoverage
     private static function mockFilamentCoverageRecord(): Model
     {
         /** @var Mockery\MockInterface&Model $model */
-        $model = \Mockery::mock(Model::class)->makePartial();
+        $model = Mockery::mock(Model::class)->makePartial();
         $model->shouldIgnoreMissing();
         $model->setRawAttributes([
             'id' => 1,
@@ -175,7 +178,7 @@ final class ModuleRemainingCoverage
 
         foreach (['View', 'Http/Livewire', 'Http/Middleware'] as $dir) {
             foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, $dir) as $class) {
-                $ref = new \ReflectionClass($class);
+                $ref = new ReflectionClass($class);
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                     continue;
                 }
@@ -190,11 +193,11 @@ final class ModuleRemainingCoverage
                     }
                 }
 
-                if (null === $instance) {
+                if ($instance === null) {
                     continue;
                 }
 
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
+                foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
                     if ($method->getDeclaringClass()->getName() !== $class || str_starts_with($method->getName(), '__')) {
                         continue;
                     }
@@ -204,9 +207,9 @@ final class ModuleRemainingCoverage
                     try {
                         $method->setAccessible(true);
                         $method->invoke($instance, ...self::defaultArgsForMethod($method));
-                        ++$executed;
+                        $executed++;
                     } catch (\Throwable) {
-                        ++$executed;
+                        $executed++;
                     }
                 }
             }
@@ -227,7 +230,7 @@ final class ModuleRemainingCoverage
 
         $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($appRoot));
         foreach ($iterator as $file) {
-            if (! $file instanceof \SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
+            if (! $file instanceof SplFileInfo || ! $file->isFile() || ! str_ends_with($file->getFilename(), '.php')) {
                 continue;
             }
 
@@ -256,7 +259,7 @@ final class ModuleRemainingCoverage
                 continue;
             }
 
-            $ref = new \ReflectionClass($class);
+            $ref = new ReflectionClass($class);
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                 continue;
             }
@@ -275,7 +278,7 @@ final class ModuleRemainingCoverage
                 }
             }
 
-            if (null === $instance) {
+            if ($instance === null) {
                 continue;
             }
 
@@ -283,11 +286,11 @@ final class ModuleRemainingCoverage
                 try {
                     $instance->setRawAttributes(self::defaultModelAttributes());
                 } catch (\Throwable) {
-                    ++$executed;
+                    $executed++;
                 }
             }
 
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
                 if ($method->getDeclaringClass()->getName() !== $class) {
                     continue;
                 }
@@ -325,9 +328,9 @@ final class ModuleRemainingCoverage
                         $result = $method->invoke($instance, ...self::defaultArgsForMethod($method));
                     }
                     self::invokeClosuresInValue($result, $instance, $executed);
-                    ++$executed;
+                    $executed++;
                 } catch (\Throwable) {
-                    ++$executed;
+                    $executed++;
                 }
             }
         }
@@ -344,24 +347,24 @@ final class ModuleRemainingCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Filament') as $class) {
             try {
                 if (is_subclass_of($class, XotBaseResourceTable::class)) {
-                    $table = new $class();
+                    $table = new $class;
                     self::invokeClosuresInValue($table->getTableColumns(), $record, $invoked);
                     try {
                         self::invokeClosuresInValue($table->getTableFilters(), $record, $invoked);
                     } catch (\Throwable) {
-                        ++$invoked;
+                        $invoked++;
                     }
-                    if ((new \ReflectionClass($table))->hasMethod('getTableActions')) {
+                    if ((new ReflectionClass($table))->hasMethod('getTableActions')) {
                         try {
-                            $m = new \ReflectionMethod($table, 'getTableActions');
+                            $m = new ReflectionMethod($table, 'getTableActions');
                             self::invokeClosuresInValue($m->invoke($table), $record, $invoked);
                         } catch (\Throwable) {
-                            ++$invoked;
+                            $invoked++;
                         }
                     }
                 }
 
-                $ref = new \ReflectionClass($class);
+                $ref = new ReflectionClass($class);
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                     continue;
                 }
@@ -371,7 +374,7 @@ final class ModuleRemainingCoverage
                         continue;
                     }
                     try {
-                        $rm = new \ReflectionMethod($class, $staticMethod);
+                        $rm = new ReflectionMethod($class, $staticMethod);
                         if (! $rm->isStatic()) {
                             continue;
                         }
@@ -380,7 +383,7 @@ final class ModuleRemainingCoverage
                         }
                         self::invokeClosuresInValue($rm->invoke(null), $record, $invoked);
                     } catch (\Throwable) {
-                        ++$invoked;
+                        $invoked++;
                     }
                 }
 
@@ -403,11 +406,11 @@ final class ModuleRemainingCoverage
                         $result = $method->invoke($instance, ...$args);
                         self::invokeClosuresInValue($result, $record, $invoked);
                     } catch (\Throwable) {
-                        ++$invoked;
+                        $invoked++;
                     }
                 }
             } catch (\Throwable) {
-                ++$invoked;
+                $invoked++;
             }
         }
 
@@ -427,28 +430,28 @@ final class ModuleRemainingCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
-                $policy = new $class();
-                $ref = new \ReflectionClass($policy);
+                $policy = new $class;
+                $ref = new ReflectionClass($policy);
 
                 foreach ($roleSets as $roles) {
                     $user = self::mockUserWithRoles($roles);
 
-                    foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-                        if ('__construct' === $method->getName()) {
+                    foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
+                        if ($method->getName() === '__construct') {
                             continue;
                         }
 
                         try {
                             $args = self::buildPolicyArgs($method, $user);
                             $method->invoke($policy, ...$args);
-                            ++$executed;
+                            $executed++;
                         } catch (\Throwable) {
-                            ++$executed;
+                            $executed++;
                         }
                     }
                 }
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -466,7 +469,7 @@ final class ModuleRemainingCoverage
                     continue;
                 }
 
-                $ref = new \ReflectionClass($class);
+                $ref = new ReflectionClass($class);
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                     continue;
                 }
@@ -481,7 +484,7 @@ final class ModuleRemainingCoverage
                     }
                 }
 
-                if (null === $instance) {
+                if ($instance === null) {
                     continue;
                 }
 
@@ -489,7 +492,7 @@ final class ModuleRemainingCoverage
                     $instance->setRawAttributes(self::defaultModelAttributes());
                 }
 
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED) as $method) {
+                foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED) as $method) {
                     if ($method->getDeclaringClass()->getName() !== $class) {
                         continue;
                     }
@@ -517,9 +520,9 @@ final class ModuleRemainingCoverage
                         } else {
                             $method->invoke($instance, ...self::defaultArgsForMethod($method));
                         }
-                        ++$executed;
+                        $executed++;
                     } catch (\Throwable) {
-                        ++$executed;
+                        $executed++;
                     }
                 }
             }
@@ -537,14 +540,14 @@ final class ModuleRemainingCoverage
                 $controller = app($class);
             } catch (\Throwable) {
                 try {
-                    $controller = (new \ReflectionClass($class))->newInstanceWithoutConstructor();
+                    $controller = (new ReflectionClass($class))->newInstanceWithoutConstructor();
                 } catch (\Throwable) {
                     continue;
                 }
             }
 
-            $ref = new \ReflectionClass($class);
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
+            $ref = new ReflectionClass($class);
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                 if ($method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -562,9 +565,9 @@ final class ModuleRemainingCoverage
                         continue;
                     }
                     $method->invoke($controller, ...self::defaultArgsForMethod($method));
-                    ++$executed;
+                    $executed++;
                 } catch (\Throwable) {
-                    ++$executed;
+                    $executed++;
                 }
             }
         }
@@ -578,15 +581,15 @@ final class ModuleRemainingCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Projectors') as $class) {
             try {
-                $projector = new $class();
-                $ref = new \ReflectionClass($class);
+                $projector = new $class;
+                $ref = new ReflectionClass($class);
 
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
+                foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                     $name = $method->getName();
                     if (str_starts_with($name, '__')) {
                         continue;
                     }
-                    if (! str_starts_with($name, 'on') && 'handle' !== $name) {
+                    if (! str_starts_with($name, 'on') && $name !== 'handle') {
                         continue;
                     }
 
@@ -596,17 +599,17 @@ final class ModuleRemainingCoverage
 
                     try {
                         $args = self::defaultArgsForMethod($method);
-                        if ([] === $args && $method->getNumberOfRequiredParameters() > 0) {
+                        if ($args === [] && $method->getNumberOfRequiredParameters() > 0) {
                             continue;
                         }
                         $method->invoke($projector, ...$args);
-                        ++$executed;
+                        $executed++;
                     } catch (\Throwable) {
-                        ++$executed;
+                        $executed++;
                     }
                 }
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -614,14 +617,13 @@ final class ModuleRemainingCoverage
     }
 
     /**
-     * @param list<string> $roles
-     *
+     * @param  list<string>  $roles
      * @return Mockery\MockInterface&UserContract
      */
     private static function mockUserWithRoles(array $roles): UserContract
     {
         /** @var Mockery\MockInterface&UserContract $user */
-        $user = \Mockery::mock(UserContract::class);
+        $user = Mockery::mock(UserContract::class);
         $user->shouldReceive('hasRole')->andReturnUsing(
             static fn (array|string $r): bool => (bool) array_intersect(
                 is_array($r) ? array_values(array_filter($r, is_string(...))) : [$r],
@@ -639,19 +641,19 @@ final class ModuleRemainingCoverage
     /**
      * @return list<mixed>
      */
-    private static function buildPolicyArgs(\ReflectionMethod $method, UserContract $user): array
+    private static function buildPolicyArgs(ReflectionMethod $method, UserContract $user): array
     {
         $args = [];
         foreach ($method->getParameters() as $param) {
             $type = $param->getType();
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
-                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
+                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
                     $args[] = $user;
 
                     continue;
                 }
-                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
                     $args[] = self::mockEloquentRecord($typeName);
 
                     continue;
@@ -664,15 +666,14 @@ final class ModuleRemainingCoverage
     }
 
     /**
-     * @param class-string<Model>|null $class
-     *
+     * @param  class-string<Model>|null  $class
      * @return Mockery\MockInterface&Model
      */
     private static function mockEloquentRecord(?string $class = null): Model
     {
         $class ??= Model::class;
         /** @var Mockery\MockInterface&Model $model */
-        $model = \Mockery::mock($class)->makePartial();
+        $model = Mockery::mock($class)->makePartial();
         $model->shouldIgnoreMissing();
         $model->shouldReceive('getKey')->andReturn(1);
         $model->shouldReceive('getAttribute')->andReturn(null);
@@ -680,7 +681,7 @@ final class ModuleRemainingCoverage
         $model->shouldReceive('getTable')->andReturn('coverage_probe');
         $model->setAttribute('id', 1);
 
-        $builder = \Mockery::mock(Builder::class);
+        $builder = Mockery::mock(Builder::class);
         $builder->shouldReceive('where')->andReturnSelf();
         $builder->shouldReceive('whereHas')->andReturnSelf();
         $builder->shouldReceive('first')->andReturn(null);
@@ -688,7 +689,7 @@ final class ModuleRemainingCoverage
         $builder->shouldReceive('get')->andReturn(collect());
         $builder->shouldReceive('pluck')->andReturn(collect());
 
-        $relation = \Mockery::mock(Relation::class);
+        $relation = Mockery::mock(Relation::class);
         $relation->shouldReceive('where')->andReturnSelf();
         $relation->shouldReceive('whereHas')->andReturnSelf();
         $relation->shouldReceive('exists')->andReturn(false, true);
@@ -712,7 +713,7 @@ final class ModuleRemainingCoverage
             }
             self::$closureVisited[$key] = true;
             self::invokeClosureWithArgMatrix($value, $context);
-            ++$invoked;
+            $invoked++;
 
             return;
         }
@@ -735,7 +736,7 @@ final class ModuleRemainingCoverage
         }
         self::$closureVisited[$key] = true;
 
-        $ref = new \ReflectionClass($value);
+        $ref = new ReflectionClass($value);
         foreach ($ref->getProperties() as $property) {
             if ($property->isStatic()) {
                 continue;
@@ -765,13 +766,13 @@ final class ModuleRemainingCoverage
                 continue;
             }
             try {
-                $rm = new \ReflectionMethod($value, $methodName);
-                if (0 === $rm->getNumberOfRequiredParameters()) {
+                $rm = new ReflectionMethod($value, $methodName);
+                if ($rm->getNumberOfRequiredParameters() === 0) {
                     $result = $rm->invoke($value);
                     self::invokeClosuresInValue($result, $context, $invoked);
                 }
             } catch (\Throwable) {
-                ++$invoked;
+                $invoked++;
             }
         }
     }
@@ -795,11 +796,11 @@ final class ModuleRemainingCoverage
             // continue
         }
 
-        $get = \Mockery::mock(Get::class);
+        $get = Mockery::mock(Get::class);
         $get->shouldReceive('__invoke')->andReturn('done', 'pending', null, 'grid', 'list');
         $get->shouldIgnoreMissing();
 
-        $set = \Mockery::mock(Set::class);
+        $set = Mockery::mock(Set::class);
         $set->shouldReceive('__invoke')->andReturnNull();
         $set->shouldIgnoreMissing();
 
@@ -843,14 +844,14 @@ final class ModuleRemainingCoverage
 
         // Spatie media upload closures (ImageSpatie/VideoSpatie)
         try {
-            $tmpUpload = \Mockery::mock(TemporaryUploadedFile::class);
+            $tmpUpload = Mockery::mock(TemporaryUploadedFile::class);
             $tmpUpload->shouldIgnoreMissing();
-            $livewire = \Mockery::mock(HasForms::class);
+            $livewire = Mockery::mock(HasForms::class);
             $livewire->shouldIgnoreMissing();
-            $component = \Mockery::mock(BaseFileUpload::class);
+            $component = Mockery::mock(BaseFileUpload::class);
             $component->shouldIgnoreMissing();
-            $media = \Mockery::mock(HasMedia::class);
-            $adder = \Mockery::mock(FileAdder::class);
+            $media = Mockery::mock(HasMedia::class);
+            $adder = Mockery::mock(FileAdder::class);
             $adder->shouldReceive('withResponsiveImages')->andReturnSelf();
             $adder->shouldReceive('toMediaCollection')->andReturnNull();
             $adder->shouldIgnoreMissing();
@@ -873,20 +874,20 @@ final class ModuleRemainingCoverage
             $built = [];
             foreach ($ref->getParameters() as $param) {
                 $type = $param->getType();
-                if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+                if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                     $typeName = $type->getName();
-                    if (Get::class === $typeName) {
+                    if ($typeName === Get::class) {
                         $built[] = $get;
-                    } elseif (Set::class === $typeName) {
+                    } elseif ($typeName === Set::class) {
                         $built[] = $set;
-                    } elseif (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+                    } elseif (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
                         $built[] = $context;
                     } elseif (class_exists($typeName)) {
                         $built[] = self::instantiate($typeName) ?? $context;
                     } else {
                         $built[] = $context;
                     }
-                } elseif ($type instanceof \ReflectionNamedType) {
+                } elseif ($type instanceof ReflectionNamedType) {
                     $built[] = match ($type->getName()) {
                         'array' => ['state' => 'done', 'message' => 'm'],
                         'string' => 'done',
@@ -907,7 +908,7 @@ final class ModuleRemainingCoverage
     /**
      * @return list<mixed>
      */
-    private static function defaultArgsForMethod(\ReflectionMethod $method): array
+    private static function defaultArgsForMethod(ReflectionMethod $method): array
     {
         $args = [];
 
@@ -921,7 +922,7 @@ final class ModuleRemainingCoverage
             $type = $param->getType();
             $name = $param->getName();
 
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                 $typeName = $type->getName();
                 if (enum_exists($typeName)) {
                     $cases = $typeName::cases();
@@ -929,17 +930,17 @@ final class ModuleRemainingCoverage
 
                     continue;
                 }
-                if (Request::class === $typeName || is_subclass_of($typeName, Request::class)) {
+                if ($typeName === Request::class || is_subclass_of($typeName, Request::class)) {
                     $args[] = Request::create('/coverage/'.uniqid('', true), 'GET');
 
                     continue;
                 }
-                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
                     $args[] = self::mockEloquentRecord($typeName);
 
                     continue;
                 }
-                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
+                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
                     $args[] = self::mockUserWithRoles(['super-admin']);
 
                     continue;
@@ -955,7 +956,7 @@ final class ModuleRemainingCoverage
                 continue;
             }
 
-            if ($type instanceof \ReflectionNamedType) {
+            if ($type instanceof ReflectionNamedType) {
                 $args[] = match ($type->getName()) {
                     'array' => [],
                     'string' => 'test',
@@ -975,7 +976,7 @@ final class ModuleRemainingCoverage
     }
 
     /**
-     * @param class-string $class
+     * @param  class-string  $class
      */
     private static function instantiate(string $class, int $depth = 0): ?object
     {
@@ -983,13 +984,13 @@ final class ModuleRemainingCoverage
             return null;
         }
 
-        $ref = new \ReflectionClass($class);
+        $ref = new ReflectionClass($class);
         if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
             return null;
         }
 
         $ctor = $ref->getConstructor();
-        if (null === $ctor) {
+        if ($ctor === null) {
             try {
                 return $ref->newInstance();
             } catch (\Throwable) {
@@ -1005,7 +1006,7 @@ final class ModuleRemainingCoverage
                 continue;
             }
             $type = $param->getType();
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
                 $dependencyClass = $type->getName();
                 $args[] = class_exists($dependencyClass) ? self::instantiate($dependencyClass, $depth + 1) : null;
 
@@ -1030,7 +1031,7 @@ final class ModuleRemainingCoverage
      */
     private static array $dddxMethodCache = [];
 
-    private static function methodCallsDddx(\ReflectionMethod $method): bool
+    private static function methodCallsDddx(ReflectionMethod $method): bool
     {
         $cacheKey = $method->getDeclaringClass()->getName().'::'.$method->getName();
         if (isset(self::$dddxMethodCache[$cacheKey])) {
@@ -1038,7 +1039,7 @@ final class ModuleRemainingCoverage
         }
 
         $file = $method->getFileName();
-        if (false === $file || ! is_readable($file)) {
+        if ($file === false || ! is_readable($file)) {
             return self::$dddxMethodCache[$cacheKey] = false;
         }
 

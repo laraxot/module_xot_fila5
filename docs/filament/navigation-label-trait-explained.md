@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: navigation-label-trait-explained
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # NavigationLabelTrait - Sistema di Traduzione Automatica Navigation
 
 ## Overview

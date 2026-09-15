@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cart-session
-description: "cart-session"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 

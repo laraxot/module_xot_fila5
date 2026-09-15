@@ -24,7 +24,8 @@ test('un override di getFormSchema viene onorato su XotBasePage', function (): v
 });
 
 test('senza override getFormSchema restituisce schema vuoto', function (): void {
-    $fixture = new class extends XotBasePage {
+    $fixture = new class extends XotBasePage
+    {
         protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document';
 
         protected string $view = 'xot::filament.pages.base';

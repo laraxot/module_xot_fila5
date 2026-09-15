@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: view-record-resource-infolist-only-story
-description: " Understand"
-metadata:
-  type: story
----
-
-=======
->>>>>>> laraxot/dev
 # BMAD Story — ViewRecord delega l'infolist alla Resource
 
 ## Understand

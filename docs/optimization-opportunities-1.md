@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: optimization-opportunities-1
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Opportunità di Ottimizzazione DRY + KISS
 
 ## Panoramica

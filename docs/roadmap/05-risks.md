@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 05-risks
-description: " Top Risks"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risks - Xot
 
 ## Top Risks

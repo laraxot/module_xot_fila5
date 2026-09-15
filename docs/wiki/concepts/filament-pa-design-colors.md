@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-pa-design-colors
-description: " Scopo"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Filament — palette PA Design Comuni
 
 ## Scopo
@@ -39,19 +29,7 @@ Con `@filamentStyles` attivo, `FilamentColor::register(PaDesignColors::filamentP
 
 **Uniformità FO:** non duplicare hex in `14-auth-login.css`. Usare `<x-filament::button color="primary">` e `.fo-filament-form-shell`. Vedi [fo-pa-tokens-uniformity.md](../../../../Themes/Sixteen/docs/architecture/fo-pa-tokens-uniformity.md).
 
-<<<<<<< HEAD
 **Link testuali:** blu Design Comuni `text-italia-blue-*` (`--dc-blue-primary`). **CTA:** verde `--fixcity-primary` via Filament.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Link testuali:** blu Design Comuni `text-italia-blue-*` (`--dc-blue-primary`). **CTA:** verde `--<nome progetto>-primary` via Filament.
-=======
-**Link testuali:** blu Design Comuni `text-italia-blue-*` (`--dc-blue-primary`). **CTA:** verde `--fixcity-primary` via Filament.
->>>>>>> laraxot/dev
-=======
-**Link testuali:** blu Design Comuni `text-italia-blue-*` (`--dc-blue-primary`). **CTA:** verde `--fixcity-primary` via Filament.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Evitare override `Color::Amber` in panel provider locali.
 

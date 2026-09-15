@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: comprehensive-chart-pdf
-description: " Table of Contents"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Comprehensive Chart and PDF Generation Guide for Laraxot
 
 ## Table of Contents

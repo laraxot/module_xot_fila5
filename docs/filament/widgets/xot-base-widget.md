@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-widget
-description: "La classe astratta XotBaseWidget fornisce una base comune per tutti i widget Filament nel modulo Xot."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseWidget
 
 La classe astratta `XotBaseWidget` fornisce una base comune per tutti i widget Filament nel modulo Xot.

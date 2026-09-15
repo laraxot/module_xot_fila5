@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: download-the-latest-cacertpem-file-from
-description: "download-the-latest-cacertpem-file-from"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 

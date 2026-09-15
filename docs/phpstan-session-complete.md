@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-session-complete
-description: "Data: 9 Gennaio 2026"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Sessione Completata
 
 **Data**: 9 Gennaio 2026  

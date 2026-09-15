@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: mcp-for-architecture
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # MCP for Architecture - Xot Module
 
 ## Overview
@@ -149,31 +139,11 @@ HAVING COUNT(*) < 3;
 
 ### 5. Fetch MCP - Framework Documentation
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Uso principale**: Recupero documentazione Laravel 13 e PHP 8.3
-
-**Ricerche tipiche**:
-```
-# Laravel 13.x architecture improvements
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Uso principale**: Recupero documentazione Laravel 12 e PHP 8.3
 
 **Ricerche tipiche**:
 ```
 # Laravel 12.x architecture improvements
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://laravel.com/docs/12.x/architecture-concepts
 
 # PHP 8.3 features for type safety
@@ -298,33 +268,12 @@ File: `Modules/Xot/.mcp.json`
   "mcpServers": {
     "filesystem-xot": {
       "command": "npx",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"],
-      "env": {
-        "ALLOWED_DIRECTORIES": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"],
-      "env": {
-        "ALLOWED_DIRECTORIES": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot"
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot"
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"],
       "env": {
         "ALLOWED_DIRECTORIES": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
       },
       "trust": false,
       "includeTools": [
@@ -336,29 +285,10 @@ File: `Modules/Xot/.mcp.json`
     },
     "git-xot": {
       "command": "npx",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/<repo progetto>"],
-      "cwd": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot",
-      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/<repo progetto>"],
-      "cwd": "/var/www/_bases/<repo progetto>/laravel/Modules/Xot",
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_healthcare_app_fila5_mono"],
       "cwd": "/var/www/_bases/base_healthcare_app_fila5_mono/laravel/Modules/Xot",
       "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/var/www/_bases/base_app_fila5_mono"],
       "cwd": "/var/www/_bases/base_app_fila5_mono/laravel/Modules/Xot",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
       "trust": false
     },
     "sequential-thinking-xot": {

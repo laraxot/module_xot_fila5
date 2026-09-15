@@ -5,31 +5,11 @@ module: Xot
 tags: [testing, pest, sqlite, xotbasetestcase, database-transactions]
 created: 2026-07-12
 updated: 2026-07-12
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-qmd: "ptv_data.sqlite prepareShared<nome progetto>SqliteForTesting pest hang empty sqlite fail fast"
-issues:
-  - "https://github.com/laraxot/<repo progetto>/issues/372"
-discussions:
-  - "https://github.com/laraxot/<repo progetto>/discussions/273"
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 qmd: "ptv_data.sqlite prepareSharedFixcitySqliteForTesting pest hang empty sqlite fail fast"
 issues:
   - "https://github.com/laraxot/base_ptv_fila5/issues/372"
 discussions:
   - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ../concepts/module-testcase-xotbase-hierarchy.md
   - ../../../../../../docs/wiki/memories/data-sacred-no-destructive-db.md
@@ -40,19 +20,7 @@ related:
 
 ## Scopo
 
-<<<<<<< HEAD
 I moduli con `DatabaseTransactions` chiamano `prepareSharedFixcitySqliteForTesting()` **prima** di `parent::setUp()` per condividere un unico PDO SQLite su `laravel/database/ptv_data.sqlite` ed evitare `database is locked`.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-I moduli con `DatabaseTransactions` chiamano `prepareShared<nome progetto>SqliteForTesting()` **prima** di `parent::setUp()` per condividere un unico PDO SQLite su `laravel/database/ptv_data.sqlite` ed evitare `database is locked`.
-=======
-I moduli con `DatabaseTransactions` chiamano `prepareSharedFixcitySqliteForTesting()` **prima** di `parent::setUp()` per condividere un unico PDO SQLite su `laravel/database/ptv_data.sqlite` ed evitare `database is locked`.
->>>>>>> laraxot/dev
-=======
-I moduli con `DatabaseTransactions` chiamano `prepareSharedFixcitySqliteForTesting()` **prima** di `parent::setUp()` per condividere un unico PDO SQLite su `laravel/database/ptv_data.sqlite` ed evitare `database is locked`.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Sintomo (root cause hang)
 
@@ -66,19 +34,7 @@ I moduli con `DatabaseTransactions` chiamano `prepareSharedFixcitySqliteForTesti
 
 ## Guard in XotBaseTestCase
 
-<<<<<<< HEAD
 `assertFixcitySqliteReadyForTesting()` verifica esistenza, dimensione minima e magic header **prima** di `DB::purge()` e della condivisione PDO. Fallisce con `RuntimeException` e messaggio operativo.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-`assert<nome progetto>SqliteReadyForTesting()` verifica esistenza, dimensione minima e magic header **prima** di `DB::purge()` e della condivisione PDO. Fallisce con `RuntimeException` e messaggio operativo.
-=======
-`assertFixcitySqliteReadyForTesting()` verifica esistenza, dimensione minima e magic header **prima** di `DB::purge()` e della condivisione PDO. Fallisce con `RuntimeException` e messaggio operativo.
->>>>>>> laraxot/dev
-=======
-`assertFixcitySqliteReadyForTesting()` verifica esistenza, dimensione minima e magic header **prima** di `DB::purge()` e della condivisione PDO. Fallisce con `RuntimeException` e messaggio operativo.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Ripristino (dati sacri)
 
@@ -107,19 +63,7 @@ php artisan migrate
 ./vendor/bin/pest Modules/Comment/tests/Unit/CommentSanitizerTest.php --configuration phpunit.xml
 ```
 
-<<<<<<< HEAD
 ## Moduli che usano prepareSharedFixcitySqliteForTesting
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Moduli che usano prepareShared<nome progetto>SqliteForTesting
-=======
-## Moduli che usano prepareSharedFixcitySqliteForTesting
->>>>>>> laraxot/dev
-=======
-## Moduli che usano prepareSharedFixcitySqliteForTesting
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Activity, Comment, Gdpr, Job, Rating, UI (e altri con stesso pattern nel `TestCase`).
 

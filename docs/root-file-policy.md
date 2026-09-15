@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: root-file-policy
-description: "Updated: 2026-07-08"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Root file policy
 
 Updated: 2026-07-08

@@ -1,23 +1,5 @@
 <<<<<<< HEAD
----
-name: filament-table-columns
-description: " Regola"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Regola Generale: Metodo getTableColumns per Filament Table (Xot)"
 module: "Xot"
@@ -29,15 +11,6 @@ qmd: "filament table columns"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Regola Generale: Metodo getTableColumns per Filament Table (Xot)
 
@@ -71,25 +44,8 @@ public function getTableColumns(): array
 ## Collegamenti
 <<<<<<< HEAD
 - [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
-<<<<<<< HEAD
 =======
 - [Esempio e Applicazione - Modulo User](filament_table_columns.md)
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
-=======
-<<<<<<< HEAD
-- [Esempio e Applicazione - Modulo User](../../../User/docs/filament/FILAMENT_TABLE_COLUMNS.md)
-=======
-- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-- [Esempio e Applicazione - Modulo User](filament_table_columns.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 

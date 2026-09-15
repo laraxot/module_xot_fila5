@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: nwidart-laravel-modules-complete-guide
-description: "Data Creazione: Gennaio 2026"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # nWidart/laravel-modules - Guida Completa
 
 **Data Creazione:** Gennaio 2026  
@@ -39,19 +29,7 @@ metadata:
 
 `nwidart/laravel-modules` è un pacchetto Laravel che permette di gestire applicazioni Laravel grandi usando moduli. Un modulo è come un mini-package Laravel con i propri controller, modelli, viste e configurazioni.
 
-<<<<<<< HEAD
 **Versione Supportata**: Laravel 12.0+  
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Versione Supportata**: Laravel 13.0+  
-=======
-**Versione Supportata**: Laravel 12.0+  
->>>>>>> laraxot/dev
-=======
-**Versione Supportata**: Laravel 12.0+  
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **PHP Requisito**: PHP 8.2+  
 **Repository**: https://github.com/nWidart/laravel-modules
 
@@ -569,16 +547,4 @@ Modules/{ModuleName}/docs/
 ---
 
 **Versione Package:** 12.0+  
-<<<<<<< HEAD
 **Compatibilità:** Laravel 12.x, PHP 8.2+
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Compatibilità:** Laravel 13.x, PHP 8.2+
-=======
-**Compatibilità:** Laravel 12.x, PHP 8.2+
->>>>>>> laraxot/dev
-=======
-**Compatibilità:** Laravel 12.x, PHP 8.2+
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

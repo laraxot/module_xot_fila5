@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: analisi-architettura-sistema
-description: " Panoramica Architetturale"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi dell'Architettura del Sistema il progetto
 
 ## Panoramica Architetturale

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: case-sensitive-filenames
-description: "Data: 11 Novembre 2025"
-metadata:
-  type: rule
----
-
-=======
->>>>>>> laraxot/dev
 # 📋 **Regola: Nomi File Case-Sensitive**
 
 **Data**: 11 Novembre 2025

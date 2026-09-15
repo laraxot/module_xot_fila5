@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: queueable-actions
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Spatie QueueableActions
 
 ## Introduzione

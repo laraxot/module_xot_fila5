@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ai-ide-integration
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # AI/IDE Integration Guide - Xot Module
 
 ## Overview

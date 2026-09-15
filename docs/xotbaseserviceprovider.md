@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaseserviceprovider
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseServiceProvider
 
 ## Panoramica

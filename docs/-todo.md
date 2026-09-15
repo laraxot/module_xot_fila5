@@ -1,25 +1,6 @@
 <<<<<<< HEAD
----
-name: todo
-description: "<!-- Contenuto migrato da docs/todo.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: '_todo'
 module: Xot
@@ -33,23 +14,8 @@ updated: 2026-08-24
 ---
 
 
-<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # _todo
 
@@ -62,22 +28,6 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-mostrare in una blade uso disco etc
-https://github.com/spatie/laravel-health
-
-mostrare in una blade uso disco etc 
-https://github.com/spatie/laravel-health
-=======
-<<<<<<< HEAD
-
-mostrare in una blade uso disco etc 
-https://github.com/spatie/laravel-health
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 mostrare in una blade uso disco etc
@@ -87,11 +37,4 @@ https://github.com/spatie/laravel-health
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

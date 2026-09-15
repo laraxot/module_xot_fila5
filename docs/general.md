@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: general
-description: "Questo documento contiene le regole generali che devono essere seguite in tutto il progetto  per garantire coerenza e qualità del codice."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole Generali del Progetto
 
 Questo documento contiene le regole generali che devono essere seguite in tutto il progetto  per garantire coerenza e qualità del codice.

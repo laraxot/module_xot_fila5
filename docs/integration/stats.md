@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: stats
-description: "<!-- Contenuto migrato da docs/stats.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _stats
 
 <!-- Contenuto migrato da _docs/_stats.txt -->

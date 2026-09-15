@@ -49,7 +49,7 @@ class ModuleMixin
             $value = Arr::get($data, $item, null);
 
             if (
-                null !== $value
+                $value !== null
                 && ! is_array($value)
                 && ! is_int($value)
                 && ! is_string($value)

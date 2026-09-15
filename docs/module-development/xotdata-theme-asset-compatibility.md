@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotdata-theme-asset-compatibility
-description: " Regola"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotData Theme Asset Compatibility
 
 ## Regola

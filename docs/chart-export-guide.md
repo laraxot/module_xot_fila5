@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: chart-export-guide
-description: " 📋 Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Chart Export Guide - PNG e SVG
 
 ## 📋 Panoramica

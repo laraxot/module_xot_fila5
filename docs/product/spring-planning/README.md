@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: " Meeting Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Spring Planning Meeting
 
 ## Meeting Overview

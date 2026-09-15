@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: provider-common-mistakes
-description: "Last Updated: 2025-12-16"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Provider Common Mistakes - Comprehensive Guide
 
 **Last Updated**: 2025-12-16

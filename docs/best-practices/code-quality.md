@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: code-quality
-description: " Overview"
-metadata:
-  type: best-practice
----
-
-=======
->>>>>>> laraxot/dev
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview

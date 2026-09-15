@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: " Document Information"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Product Requirements Document (PRD)
 
 ## Document Information
@@ -123,19 +113,7 @@ To create the most robust, scalable, and developer-friendly foundational framewo
 **NFR-009**: Security vulnerabilities must be addressed within 48 hours
 
 ### Compatibility
-<<<<<<< HEAD
 **NFR-010**: Must be compatible with Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**NFR-010**: Must be compatible with Laravel 13.x
-=======
-**NFR-010**: Must be compatible with Laravel 12.x
->>>>>>> laraxot/dev
-=======
-**NFR-010**: Must be compatible with Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **NFR-011**: Must support PHP 8.3+
 **NFR-012**: Must not conflict with existing Laravel features
 
@@ -177,19 +155,7 @@ To create the most robust, scalable, and developer-friendly foundational framewo
 4. No memory leaks detected
 
 ### Compatibility
-<<<<<<< HEAD
 1. Works with Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Works with Laravel 13.x
-=======
-1. Works with Laravel 12.x
->>>>>>> laraxot/dev
-=======
-1. Works with Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 2. Works with PHP 8.3+
 3. Compatible with major database systems
 4. No conflicts with existing packages

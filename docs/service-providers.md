@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: service-providers
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Service Provider
 
 ## Configurazione Base

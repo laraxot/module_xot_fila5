@@ -8,6 +8,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
+use Throwable;
 
 /**
  * Crea sul database di test le tabelle che il modulo dichiara nelle proprie migration,
@@ -59,7 +60,7 @@ final class XotModuleSchema
     private static array $done = [];
 
     /**
-     * @param string $module nome del modulo in PascalCase, come la directory sotto Modules/
+     * @param  string  $module  nome del modulo in PascalCase, come la directory sotto Modules/
      */
     public static function ensure(string $module): void
     {
@@ -185,7 +186,7 @@ final class XotModuleSchema
 
             $table = self::tableOf($migration);
 
-            if (null !== $table && Schema::hasTable($table)) {
+            if ($table !== null && Schema::hasTable($table)) {
                 return;
             }
 
@@ -198,7 +199,7 @@ final class XotModuleSchema
             /** @var callable(): void $up */
             $up = [$migration, 'up'];
             $up();
-        } catch (\Throwable) {
+        } catch (Throwable) {
             // Una migration che non gira lascia semplicemente la tabella assente: i test
             // che la richiedono si salteranno per precondizione. Vedi il docblock.
         }
@@ -218,8 +219,8 @@ final class XotModuleSchema
         try {
             $table = $migration->getTable();
 
-            return '' !== $table ? $table : null;
-        } catch (\Throwable) {
+            return $table !== '' ? $table : null;
+        } catch (Throwable) {
             return null;
         }
     }

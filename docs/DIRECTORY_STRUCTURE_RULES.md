@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: directory-structure-rules
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Directory Structure Rules - No Duplications (DRY)
 
 ## Regola Fondamentale
@@ -78,19 +68,7 @@ find laravel/Modules -path "*/lang/lang" -type d
 
 ## Reference Projects
 
-<<<<<<< HEAD
 - `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/lang/`
-=======
-- `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
->>>>>>> laraxot/dev
-=======
-- `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `/var/www/_bases/base_laravelpizza/laravel/Modules/Xot/lang/`
 
 Entrambi hanno struttura corretta senza duplicazioni.

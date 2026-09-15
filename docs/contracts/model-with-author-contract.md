@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-with-author-contract
-description: "Il ModelWithAuthorContract è un'interfaccia che estende ModelContract e definisce il contratto per i modelli che necessitano di tracciare l'"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ModelWithAuthorContract
 
 Il `ModelWithAuthorContract` è un'interfaccia che estende `ModelContract` e definisce il contratto per i modelli che necessitano di tracciare l'autore e l'editor delle modifiche.

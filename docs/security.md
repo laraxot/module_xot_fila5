@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: security
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Sicurezza
 
 ## Configurazione Base

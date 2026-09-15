@@ -30,15 +30,7 @@ This document provides Xot-specific MCP usage guidelines only.
 ### context7
 - **Use**: Look up Laravel, Nwidart, Laraxot documentation
 - **Example Queries**:
-<<<<<<< HEAD
   - "Laravel 12 service provider best practices"
-=======
-<<<<<<< HEAD
-  - "Laravel 13 service provider best practices"
-=======
-  - "Laravel 12 service provider best practices"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   - "Nwidart modules composer merge-plugin"
   - "Laravel package development patterns"
 
@@ -47,15 +39,7 @@ This document provides Xot-specific MCP usage guidelines only.
 - **Example**: Evaluating new base class patterns
 
 ### supermemory
-<<<<<<< HEAD
 - **Container Tag**: `fixcity`
-=======
-<<<<<<< HEAD
-- **Container Tag**: `<nome progetto>`
-=======
-- **Container Tag**: `fixcity`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Use**: Store Xot architectural decisions, evolution history
 - **Example**: Store reasoning behind XotBaseModel design
 

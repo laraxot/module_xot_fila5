@@ -60,19 +60,7 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-<<<<<<< HEAD
      base_predict_fila5_mono/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     <repo progetto>/
-=======
-     base_predict_fila5_mono/
->>>>>>> laraxot/dev
-=======
-     base_predict_fila5_mono/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf

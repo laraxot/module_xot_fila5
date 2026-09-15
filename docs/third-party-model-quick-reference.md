@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: third-party-model-quick-reference
-description: " 🚨 CRITICAL RULES"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Third-Party Model Integration - Quick Reference
 
 ## 🚨 CRITICAL RULES

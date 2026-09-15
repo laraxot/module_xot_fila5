@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: naming-user-fields
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzione Naming Campi Utente: `first_name` e `last_name`
 
 ## Regola Fondamentale

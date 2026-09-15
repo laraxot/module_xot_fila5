@@ -1,21 +1,4 @@
 <<<<<<< HEAD
----
-name: certificate
-description: "<!-- Contenuto migrato da docs/certificate.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # _certificate
 
 <!-- Contenuto migrato da _docs/_certificate.txt -->
@@ -88,18 +71,7 @@ https://www.learnvern.com/laravel-tutorial
 https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!
 
 https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Certificate — risorse esterne'
 module: Xot
@@ -148,13 +120,4 @@ updated: 2026-08-24
 - <https://www.learnvern.com/laravel-tutorial>
 - <https://www.objectivequiz.com/objective-questions/programming-technologies/laravel     !!!>
 - <https://www.testgorilla.com/test-library/programming-skills-tests/laravel-test/  !!!>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: code-quality-improvements-code-quality-improvements-modulo-xot-g
-description: " Riepilogo Analisi"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Code Quality Improvements - Modulo Xot (Gennaio 2025)
 
 ## Riepilogo Analisi

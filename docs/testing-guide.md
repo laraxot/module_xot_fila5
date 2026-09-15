@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-guide
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Testing Guide - Modulo Xot
 
 ## Introduzione

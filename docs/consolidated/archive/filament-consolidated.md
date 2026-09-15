@@ -50,10 +50,6 @@ class PatientResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_Appo3n
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -65,7 +61,6 @@ class PatientResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_sSFRv6
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')

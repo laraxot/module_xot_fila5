@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: philosophy
-description: "Date: December 23, 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module: Philosophy, Purpose, and Design Principles
 
 **Date:** December 23, 2025
@@ -47,15 +37,6 @@ While `Xot` does not contain specific business logic, it profoundly influences h
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## Filament Tables Pattern: XotBaseResourceTable
 
 **Critical Design**: Classes extending `XotBaseResourceTable` delegate table configuration through the `table()` method. This is **NOT** a method override — it is an implementation requirement.
@@ -120,15 +101,6 @@ All Table classes extending XotBaseResourceTable:
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## 🤖 Integration with Model Context Protocol (MCP)
 

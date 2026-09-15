@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: htaccess
-description: "<IfModule modexpires.c>"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://frostbutter.com/articles/htaccess-cache-control-for-a-faster-website/
 
 # Start Cache control

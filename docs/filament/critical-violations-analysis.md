@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: critical-violations-analysis
-description: " 🚨 Violazioni Identificate"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi Violazioni Critiche XotBaseResource
 
 ## 🚨 Violazioni Identificate

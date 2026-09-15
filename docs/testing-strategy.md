@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-strategy
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Testing Strategy: MySQL-Based Testing Without RefreshDatabase
 
 ## Overview

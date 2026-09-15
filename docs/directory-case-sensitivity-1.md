@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: directory-case-sensitivity-1
-description: " Problemi Identificati"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel
 
 ## Problemi Identificati

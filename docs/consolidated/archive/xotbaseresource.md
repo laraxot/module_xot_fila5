@@ -36,10 +36,6 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_mxbkHC
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -51,7 +47,6 @@ class YourResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_uNOIwU
->>>>>>> laraxot/dev
     {
         return [
             // Definisci qui lo schema del form

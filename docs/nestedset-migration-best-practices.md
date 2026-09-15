@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: nestedset-migration-best-practices
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # NestedSet Migration Best Practices - XOT Module
 
 ## Overview

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ottimizzazioni-dry-kiss
-description: " Analisi Problematiche Identificate"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Ottimizzazioni DRY + KISS - Modulo Xot
 
 ## Analisi Problematiche Identificate

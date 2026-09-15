@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: middleware
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Middleware
 
 ## Configurazione Base

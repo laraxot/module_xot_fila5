@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: certificate
-description: "<!-- Contenuto migrato da docs/certificate.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _certificate
 
 <!-- Contenuto migrato da _docs/_certificate.txt -->

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: test-structure-philosophy
-description: " Core Principle: Single Test Directory Structure"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Test Structure Philosophy
 
 ## Core Principle: Single Test Directory Structure
@@ -210,19 +200,7 @@ Modules/
 │   │   ├── Feature/
 │   │   └── Unit/
 │   └── app/
-<<<<<<< HEAD
 └── Quaeris/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-└── <nome progetto>/
-=======
-└── Quaeris/
->>>>>>> laraxot/dev
-=======
-└── Quaeris/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ├── tests/
     │   ├── Feature/
     │   └── Unit/

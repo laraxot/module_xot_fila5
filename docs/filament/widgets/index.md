@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: index
-description: "1. Estendere sempre XotBaseWidget per mantenere coerenza"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 - [XotBaseWidget](../Xot/docs/filament/widgets/xotbasewidget.md) - Classe base per tutti i widget
 
 ## Best Practices
@@ -68,22 +58,6 @@ Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ri
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 📚 <nome progetto> Module (Example Implementation)
-
-| Documento | Scopo | Quando Leggere |
-|---|---|---|
-| [filament-wizard-pattern.md](../../../<nome progetto>/docs/filament-wizard-pattern.md) | Pattern implementativo con esempi | Per vedere codice reale |
-| [filament-wizard-rule.md](../../../<nome progetto>/docs/filament-wizard-rule.md) | Regole specifiche <nome progetto> | Per module-specific conventions |
-| [CreateTicketWizardWidget.md](../../../<nome progetto>/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
-| [ticket-wizard-frontoffice.md](../../../<nome progetto>/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ### 📚 Fixcity Module (Example Implementation)
 
 | Documento | Scopo | Quando Leggere |
@@ -92,13 +66,6 @@ Questo indice organizza tutta la documentazione sui wizard widget Laraxot per ri
 | [filament-wizard-rule.md](../../../Fixcity/docs/filament-wizard-rule.md) | Regole specifiche Fixcity | Per module-specific conventions |
 | [CreateTicketWizardWidget.md](../../../Fixcity/docs/CreateTicketWizardWidget.md) | Documentazione widget specifico | Per capire CreateTicketWizardWidget |
 | [ticket-wizard-frontoffice.md](../../../Fixcity/docs/ticket-wizard-frontoffice.md) | Guida frontoffice e flusso end-to-end | Per deployment/UX e wiring pagine CMS |
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -226,19 +193,7 @@ Prima di committare un wizard widget, verifica TUTTI i punti:
 ### Implementazioni
 
 - [XotBaseWizardWidget](../../app/Filament/Widgets/XotBaseWizardWidget.php)
-<<<<<<< HEAD
 - [CreateTicketWizardWidget](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [CreateTicketWizardWidget](../../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php)
-=======
-- [CreateTicketWizardWidget](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
->>>>>>> laraxot/dev
-=======
-- [CreateTicketWizardWidget](../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [LangServiceProvider](../../../Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](../../../Lang/app/Actions/Filament/AutoLabelAction.php)
 

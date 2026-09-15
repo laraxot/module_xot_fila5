@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: solutions
-description: " Problemi Identificati e Soluzioni"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Soluzioni Tecniche - Modulo Xot
 
 ## Problemi Identificati e Soluzioni

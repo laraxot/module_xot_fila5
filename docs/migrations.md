@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migrations
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Migrazioni
 
 ## Configurazione Base

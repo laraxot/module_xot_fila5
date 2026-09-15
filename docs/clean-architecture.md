@@ -1,26 +1,6 @@
 <<<<<<< HEAD
----
-name: clean-architecture
-description: "<!-- Contenuto migrato da docs/cleanarchitecture.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
 =======
-=======
-<<<<<<< HEAD
-https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'clean_architecture'
 module: Xot
@@ -38,13 +18,4 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/clean_architecture.txt -->
 
 https://github.com/sslr/laravel-clean-architecture-example/tree/main/onion/Driver
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

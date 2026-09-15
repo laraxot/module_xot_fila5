@@ -49,10 +49,6 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_pbxdXs
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -64,7 +60,6 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_SFaMDG
->>>>>>> laraxot/dev
     {
         return [
             'title' => TextInput::make('title')->required(),

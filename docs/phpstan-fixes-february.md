@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fixes-february
-description: "Documentazione completa dei fix PHPStan applicati durante l'analisi di tutti i moduli."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Fixes - 2026-02-26
 
 Documentazione completa dei fix PHPStan applicati durante l'analisi di tutti i moduli.

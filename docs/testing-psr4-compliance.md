@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-psr4-compliance
-description: " Problema Identificato"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PSR-4 Compliance per Test - Modulo Xot
 
 ## Problema Identificato

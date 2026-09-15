@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: quality-improvements-summary-quality-improvements-summary-november
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Quality Improvements Summary - November 18, 2025
 
 ## Overview

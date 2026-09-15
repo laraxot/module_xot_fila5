@@ -1,26 +1,6 @@
-<<<<<<< HEAD
----
-name: widget-implementation-rules
-description: " 🎯 Regole Fondamentali per Widget"
-metadata:
-  type: documentation
----
-
 > **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
 
 <<<<<<< HEAD
-=======
-> **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-> **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
-> **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -34,13 +14,6 @@ metadata:
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Widget Implementation Rules - Xot Module
 
@@ -115,19 +88,7 @@ class MyTableWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -183,19 +144,7 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -272,19 +221,7 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Filament\Widgets;
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 use Filament\Widgets\ChartWidget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -495,17 +432,6 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
-
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -518,31 +444,11 @@ Queste regole garantiscono implementazione corretta dei widget seguendo l'archit
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
 >>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

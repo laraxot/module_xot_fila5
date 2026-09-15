@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filosofia-modulo-xot
-description: "> Generato: 2025-12-24"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi Approfondita del Modulo Xot
 
 > **Generato**: 2025-12-24
@@ -33,27 +23,9 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 ```php
 // XotBaseResource definisce il template
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-abstract public static function getFormSchema(): array;
-abstract public function getFormSchema(): array;
-=======
-<<<<<<< HEAD
-abstract public static function getFormSchema(): array;
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 final public static function form(Schema $schema): Schema {
@@ -359,27 +331,9 @@ L'eleganza di Xot sta nella **semplicità dell'interfaccia** vs **complessità n
 // Developer scrive (semplice):
 class UserResource extends XotBaseResource {
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array {
-    public function getFormSchema(): array {
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array {
-=======
-    public function getFormSchema(): array {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array {
 =======
     public function getFormSchema(): array {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [TextInput::make('name')];
     }
@@ -436,16 +390,4 @@ Il modulo Xot rappresenta **l'incarnazione perfetta dei principi DRY+KISS applic
 - [XotBaseResource Documentation](./consolidated/filament/resources/xot-base-resource.md)
 - [Base Classes Documentation](./consolidated/base-classes.md)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
-<<<<<<< HEAD
 - [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
-=======
-- [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
->>>>>>> laraxot/dev
-=======
-- [Filament 4 Laraxot Rules](./FILAMENT_4_LARAXOT_RULES.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

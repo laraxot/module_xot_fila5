@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-manage-related-records-evolution
-description: " Current State Analysis"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Evolution of XotBaseManageRelatedRecords
 
 ## Current State Analysis

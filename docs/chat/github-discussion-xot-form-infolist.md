@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: github-discussion-xot-form-infolist
-description: "Repo: laraxot/modulexotfila5"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Discussion: Unifying Form/Infolist base with traits HasXotForm / HasXotInfolist
 
 Repo: laraxot/module_xot_fila5

@@ -3,19 +3,7 @@ id: phpstan-timber-module-fix
 slug: phpstan-timber-module
 scope:
   - module:Timber
-<<<<<<< HEAD
   - project:base_workorder_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - project:<repo progetto>
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 status: Pending
 epic: PHPStan Quality Gates
 priority: High

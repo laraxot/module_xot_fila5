@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: safe-casting-actions
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Safe Casting Actions - DRY & KISS Implementation
 
 ## Overview

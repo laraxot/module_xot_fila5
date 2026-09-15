@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: routing-conventions
-description: " Struttura Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Routing
 
 ## Struttura Base

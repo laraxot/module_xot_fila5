@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: github-actions-modules
-description: " Scopo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # GitHub Actions per moduli e temi (CI)
 
 ## Scopo

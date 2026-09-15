@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: blade-icons-overview
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Panoramica delle Blade Icons in Xot
 
 ## Introduzione

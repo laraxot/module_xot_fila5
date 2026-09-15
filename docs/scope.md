@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: scope
-description: "scope"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 Calling some fields from a specific table in a more organized way - Laravel
 
 If you want to call some fields from a specific table in a more organized way, you can write this function in Model :-

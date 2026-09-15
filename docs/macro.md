@@ -1,38 +1,10 @@
 <<<<<<< HEAD
----
-name: macro
-description: "<!-- Contenuto migrato da docs/macro.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # _macro
 
 <!-- Contenuto migrato da _docs/_macro.txt -->
 
 https://www.larashout.com/laravel-macros-extending-laravels-core-classes
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Macro — risorse esterne'
 module: Xot
@@ -53,13 +25,4 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://www.larashout.com/laravel-macros-extending-laravels-core-classes>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

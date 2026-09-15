@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: form
-description: "<!-- Contenuto migrato da docs/form.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # form
 
 <!-- Contenuto migrato da _docs/form.txt -->

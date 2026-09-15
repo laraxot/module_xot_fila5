@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: theme-vestito
-description: " Core Concept: Theme as 'Vestito'"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Theme System: The "Vestito" (Clothing) Philosophy
 
 ## Core Concept: Theme as "Vestito"
@@ -62,23 +52,8 @@ Themes/[ThemeName]/
 │   │   ├── components/
 │   │   ├── layouts/
 │   │   └── pages/
-<<<<<<< HEAD
 ├── _healthcare_app_fila5_mono.code-workspace
 ├── _app_fila5_mono.code-workspace
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-├── _healthcare_app_fila5.code-workspace
-├── _app_fila5.code-workspace
-=======
-├── _healthcare_app_fila5_mono.code-workspace
-├── _app_fila5_mono.code-workspace
->>>>>>> laraxot/dev
-=======
-├── _healthcare_app_fila5_mono.code-workspace
-├── _app_fila5_mono.code-workspace
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ├── package.json
 ├── postcss.config.js
 ├── tailwind.config.js

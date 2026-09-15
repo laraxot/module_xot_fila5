@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 00-index
-description: "- 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 ## 🏛️ Architettura Core
 - 📐 [Architecture Complete Guide](./architecture-complete.md) - Deep dive nel sistema modulare.
 - 🧬 [Base Classes (XotBase)](./xot-base-classes.md) - Regole per estendere Resource, Page e Widget.

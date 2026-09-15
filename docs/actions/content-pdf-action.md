@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: content-pdf-action
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ContentPdfAction Documentation
 
 ## Overview

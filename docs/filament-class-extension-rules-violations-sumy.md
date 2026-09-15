@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-class-extension-rules-violations-sumy
-description: "Status: ✅ Completato"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Riepilogo Rimozione Violazioni XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  

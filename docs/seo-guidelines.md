@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: seo-guidelines
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # SEO Guidelines
 
 ## Overview

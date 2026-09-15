@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-resource-creation-fix
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Resource Creation Fix - Risoluzione Errori di Compatibilità
 
 ## Problema

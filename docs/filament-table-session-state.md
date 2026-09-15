@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-table-session-state
-description: " Filtri, ordinamento, ricerche"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Stato delle tabelle conservato fra una visita e l'altra
 
 ## Filtri, ordinamento, ricerche

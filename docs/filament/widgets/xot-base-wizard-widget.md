@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-wizard-widget
-description: "Classe astratta: Modules\Xot\Filament\Widgets\XotBaseWizardWidget"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseWizardWidget
 
 Classe astratta: `Modules\Xot\Filament\Widgets\XotBaseWizardWidget`  
@@ -34,19 +24,7 @@ In **frontoffice** ora si **`use`** lo stesso `Filament\Resources\Pages\Concerns
 
 ## Persistenza dopo submit
 
-<<<<<<< HEAD
 **Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php)).
-=======
-**Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)).
->>>>>>> laraxot/dev
-=======
-**Non** espone helper sulla classe base che riscrive lo stato dopo `$this->form->getState()`. La forma del payload per `Model::create` / actions è contratto **schema Filament / dehydrate** più eventuali merge espliciti nel widget dominio (**es.** `owner_id` in [`CreateTicketWizardWidget`](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Perché: evitare doppioni e "middleware" PHP fragili quando Filament già definisce dove vivono i campi nello stato.
 
@@ -58,19 +36,7 @@ Widget con form lineare, tabelle, statistiche: usare **`XotBaseWidget`** (o `Xot
 
 | Metodo | Ruolo |
 |--------|--------|
-<<<<<<< HEAD
 | `getSteps()` | Metodo (**astratto**); nella Fixcity delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| `getSteps()` | Metodo (**astratto**); nella <nome progetto> delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
-=======
-| `getSteps()` | Metodo (**astratto**); nella Fixcity delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
->>>>>>> laraxot/dev
-=======
-| `getSteps()` | Metodo (**astratto**); nella Fixcity delega tipicamente a `TicketForm::getSteps()` con chiavi stringa compatibili con `?step=` |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | `hasSkippableSteps()` | Su **`XotBaseWizardWidget`** default **`true`** (UX pubblica); **`HasWizard`** Filament sarebbe **`false`** — override nelle sottoclassi se servono step "bloccati" |
 | `wizardAllowStepQueryExtra()` | Consenti salti fuori primo step anche in prod (override modulo) |
 | `getWizardComponent()` | **`final`**: `pub_theme::components.wizard` fuori admin + `persistStepInQueryString` |
@@ -99,39 +65,12 @@ Decisione tecnica storica / anti-pattern evitati: [`wiki/filament-wizard-refacto
 
 Implementazione: `laravel/Modules/Xot/app/Filament/Widgets/XotBaseWizardWidget.php`
 
-<<<<<<< HEAD
 Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Esempio dominio: `Modules\<nome progetto>\Filament\Widgets\CreateTicketWizardWidget`
-=======
-Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
->>>>>>> laraxot/dev
-=======
-Esempio dominio: `Modules\Fixcity\Filament\Widgets\CreateTicketWizardWidget`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Collegamenti
 
 - [XotBaseWidget](./xot-base-widget.md)
 - [Indice widget Filament](./index.md)
-<<<<<<< HEAD
 - [Ticket wizard Fixcity](../../../Fixcity/docs/ticket-wizard-frontoffice.md)
 - [Pattern wizard Fixcity](../../../Fixcity/docs/filament-wizard-pattern.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Ticket wizard <nome progetto>](../../../<nome progetto>/docs/ticket-wizard-frontoffice.md)
-- [Pattern wizard <nome progetto>](../../../<nome progetto>/docs/filament-wizard-pattern.md)
-=======
-- [Ticket wizard Fixcity](../../../Fixcity/docs/ticket-wizard-frontoffice.md)
-- [Pattern wizard Fixcity](../../../Fixcity/docs/filament-wizard-pattern.md)
->>>>>>> laraxot/dev
-=======
-- [Ticket wizard Fixcity](../../../Fixcity/docs/ticket-wizard-frontoffice.md)
-- [Pattern wizard Fixcity](../../../Fixcity/docs/filament-wizard-pattern.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Regole di qualità](../../../../../../docs/wiki/rules/quality-gate-after-edit.md)

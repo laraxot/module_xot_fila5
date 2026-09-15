@@ -40,6 +40,7 @@ describe('ModuleService', function () {
 
     it('returns array from getModels method', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+
     });
 
     it('getModels returns correct array structure', function () {
@@ -59,6 +60,7 @@ describe('ModuleService', function () {
 
     it('handles reflection exceptions gracefully', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+
     });
 
     it('processes model names correctly', function () {
@@ -128,6 +130,7 @@ describe('ModuleService', function () {
 
     it('processes file extensions correctly', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+
     });
 
     it('validates string utilities usage', function () {
@@ -140,5 +143,6 @@ describe('ModuleService', function () {
 
     it('has proper error handling', function () {
         $result = xotModuleServiceTestInstance()->getModels();
+
     });
 });

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: contracts
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Contratti del Modulo Xot
 
 ## Descrizione

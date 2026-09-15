@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-10-commandments-wiki
-description: "This document provides a quick reference to the 10 inviolable architectural commandments enforced by the Xot module, which is the foundation"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Architecture: The 10 Commandments of Xot (Quick Reference)
 
 This document provides a quick reference to the 10 inviolable architectural commandments enforced by the `Xot` module, which is the foundational core of the Laraxot framework. Adhering to these rules is paramount for maintaining code quality, consistency, and future compatibility.

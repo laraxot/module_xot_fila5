@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbasefield-calculated-view-rule
-description: " Context"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseField Calculated View Rule
 
 ## Context

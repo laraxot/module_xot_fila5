@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: psr4-namespaces
-description: " Quando"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola PSR-4 Namespace per Moduli Laravel
 
 ## Quando

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-widgets-polling
-description: "Questo documento descrive come implementare il polling automatico nei widget Filament utilizzando il trait CanPoll nel progetto il progetto."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Polling nei Widget Filament
 
 Questo documento descrive come implementare il polling automatico nei widget Filament utilizzando il trait `CanPoll` nel progetto il progetto.
@@ -139,19 +129,7 @@ class ActiveUsersWidget extends XotBaseWidget
 
 Questa funzionalità è compatibile con:
 - Filament 3.x
-<<<<<<< HEAD
 - Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel 13.x
-=======
-- Laravel 12.x
->>>>>>> laraxot/dev
-=======
-- Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - PHP 8.2+
 
 ## Collegamenti Bidirezionali
@@ -291,23 +269,8 @@ class ActiveUsersWidget extends XotBaseWidget
 ## Compatibilità
 
 Questa funzionalità è compatibile con:
-<<<<<<< HEAD
 - Filament 4.x
 - Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Filament 5.x
-- Laravel 13.x
-=======
-- Filament 4.x
-- Laravel 12.x
->>>>>>> laraxot/dev
-=======
-- Filament 4.x
-- Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - PHP 8.2+
 
 ## Collegamenti Bidirezionali

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: level-2
-description: "Data analisi: [DATE] 21:52:59"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 2 per il modulo Xot
 
 Data analisi: [DATE] 21:52:59

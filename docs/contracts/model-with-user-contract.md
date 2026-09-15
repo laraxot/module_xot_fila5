@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-with-user-contract
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ModelWithUserContract
 
 ## Descrizione

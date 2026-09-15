@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-test-db-architecture
-description: " Introduzione"
-metadata:
-  type: testing
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Test Architecture - Database Management without RefreshDatabase
 
 ## Introduzione

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbase-manage-related-records
-description: "Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseManageRelatedRecords — Reference
 
 `Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords`

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: has-recursive-relationships-contract-update
-description: " 📋 Riepilogo Modifiche"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # HasRecursiveRelationshipsContract - Aggiornamento 2025-01-18
 
 ## 📋 Riepilogo Modifiche

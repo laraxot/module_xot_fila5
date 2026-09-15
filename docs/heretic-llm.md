@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: heretic-llm
-description: " cos'è heretic (sintesi)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # heretic llm e laraxot
 
 ## cos'è heretic (sintesi)

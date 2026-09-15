@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: bugfix-hasxottable-duplicate-if
-description: "> Versione: 1.0"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0

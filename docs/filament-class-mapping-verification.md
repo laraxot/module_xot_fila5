@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-class-mapping-verification
-description: "Data: 2025-12-23"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Verifica Mapping Classi Filament → XotBase
 
 **Data**: 2025-12-23

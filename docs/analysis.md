@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: analysis
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module Analysis
 
 ## Overview

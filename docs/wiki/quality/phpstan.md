@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan
-description: "> Status: ✅ Level 10 Achieved"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 Compliance - Xot Module
 
 > **Status**: ✅ Level 10 Achieved
@@ -107,15 +97,7 @@ abstract class XotBaseResource extends Resource
      *
      * @return array<int, Component>
      */
-<<<<<<< HEAD
     abstract public function getFormSchema(): array;
-=======
-<<<<<<< HEAD
-    abstract public static function getFormSchema(): array;
-=======
-    abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     /**
      * Get pages with proper typing.

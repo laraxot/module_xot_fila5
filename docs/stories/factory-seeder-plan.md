@@ -1,19 +1,7 @@
 ---
 id: factory-seeder-plan
 slug: factory-seeder-plan
-<<<<<<< HEAD
 scope: [project:base_workorder_fila5]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-scope: [project:<repo progetto>]
-=======
-scope: [project:base_workorder_fila5]
->>>>>>> laraxot/dev
-=======
-scope: [project:base_workorder_fila5]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 status: Pending
 priority: High
 created: 2026-09-06

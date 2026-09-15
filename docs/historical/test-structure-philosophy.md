@@ -200,19 +200,7 @@ Modules/
 │   │   ├── Feature/
 │   │   └── Unit/
 │   └── app/
-<<<<<<< HEAD
 └── Quaeris/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-└── <nome progetto>/
-=======
-└── Quaeris/
->>>>>>> laraxot/dev
-=======
-└── Quaeris/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ├── tests/
     │   ├── Feature/
     │   └── Unit/

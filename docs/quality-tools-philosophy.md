@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: quality-tools-philosophy
-description: " 🎯 Overview - I Tre Pilastri"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filosofia degli Strumenti di Qualità - La Trinità del Codice Perfetto
 
 ## 🎯 Overview - I Tre Pilastri

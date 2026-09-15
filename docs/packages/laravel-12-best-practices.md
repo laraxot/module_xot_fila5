@@ -1,31 +1,6 @@
-<<<<<<< HEAD
----
-name: laravel-12-best-practices
-description: "Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12."
-metadata:
-  type: documentation
----
-
 # Laravel 12 Best Practices - Laraxot PTVX
 
 Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Laravel 13 Best Practices - Laraxot PTVX
-
-Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 13.
-=======
-# Laravel 12 Best Practices - Laraxot PTVX
-
-Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12.
->>>>>>> laraxot/dev
-=======
-# Laravel 12 Best Practices - Laraxot PTVX
-
-Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Laravel 12.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 1. Routing & Folio
 - **Laravel Folio**: Usare Folio per rotte basate su file per pagine statiche o dashboard semplici, riducendo la complessità dei controller.
@@ -46,16 +21,4 @@ Aggiornamento delle pratiche consigliate basate sulle nuove funzionalità di Lar
 
 ## 4. Database & Performance
 - **Database Transactions**: Usare sempre `DatabaseTransactions` nei test Pest per velocità e isolamento.
-<<<<<<< HEAD
 - **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 12 per il DB batching nelle operazioni di importazione dati Limesurvey.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 13 per il DB batching nelle operazioni di importazione dati Limesurvey.
-=======
-- **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 12 per il DB batching nelle operazioni di importazione dati Limesurvey.
->>>>>>> laraxot/dev
-=======
-- **Batching**: Sfruttare le nuove ottimizzazioni di Laravel 12 per il DB batching nelle operazioni di importazione dati Limesurvey.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

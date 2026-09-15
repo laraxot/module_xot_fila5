@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: installation
-description: " Prerequisiti"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida all'Installazione Base <nome progetto>
 
 ## Prerequisiti

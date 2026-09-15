@@ -7,25 +7,8 @@ description: 'https://github.com/larastan/larastan/issues/515'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: pivot.txt
-<<<<<<< HEAD
 =======
 converted_from: _pivot.txt
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-converted_from: _pivot.txt
-=======
-<<<<<<< HEAD
-converted_from: pivot.txt
-=======
-converted_from: _pivot.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-converted_from: _pivot.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

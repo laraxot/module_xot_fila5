@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-workflow
-description: "> Nota: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATIONMANAGEMENT.md](DOCUMENTATIO"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Workflow Analisi PHPStan
 
 > **Nota**: Per una panoramica completa sulla gestione della documentazione e delle regole, consultare [DOCUMENTATION_MANAGEMENT.md](DOCUMENTATION_MANAGEMENT.md)
@@ -70,19 +60,7 @@ metadata:
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-<<<<<<< HEAD
      base_predict_fila3_mono/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-     base_predict_fila5/
-=======
-     base_predict_fila3_mono/
->>>>>>> laraxot/dev
-=======
-     base_predict_fila3_mono/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: pdf-content-generation-technical
-description: " 📋 Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # GetPdfContentByRecordAction - Documentazione Tecnica
 
 ## 📋 Overview

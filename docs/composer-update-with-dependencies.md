@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: composer-update-with-dependencies
-description: " Perché"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Composer update -W (with-dependencies)
 
 ## Perché
@@ -49,19 +39,7 @@ Esito atteso:
 ## Collegamenti
 
 - [composer-module-dependency-management](./composer-module-dependency-management.md)
-<<<<<<< HEAD
 - [parseerror-conflict-marker-amputation](../../Quaeris/docs/fixes/parseerror-conflict-marker-amputation.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [parseerror-conflict-marker-amputation](../../<nome progetto>/docs/fixes/parseerror-conflict-marker-amputation.md)
-=======
-- [parseerror-conflict-marker-amputation](../../Quaeris/docs/fixes/parseerror-conflict-marker-amputation.md)
->>>>>>> laraxot/dev
-=======
-- [parseerror-conflict-marker-amputation](../../Quaeris/docs/fixes/parseerror-conflict-marker-amputation.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [no-conflict-markers-anywhere](../../../../docs/rules/no-conflict-markers-anywhere.md)
 - [decision-log](../../../../docs/decision-log.md)
 - Story PSR-4: [17-7](../../../../docs/stories/17-7-psr4-classi-saltate-dall-autoload.md)

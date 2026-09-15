@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: coding-standards
-description: " 1. Principi Generali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Standard di Sviluppo
 
 ## 1. Principi Generali

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: bottlenecks
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Colli di Bottiglia e Soluzioni - Modulo Xot
 
 ## Panoramica

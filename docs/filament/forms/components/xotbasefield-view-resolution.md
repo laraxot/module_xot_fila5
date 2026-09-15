@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbasefield-view-resolution
-description: " Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseField View Resolution Rule
 
 ## Rule

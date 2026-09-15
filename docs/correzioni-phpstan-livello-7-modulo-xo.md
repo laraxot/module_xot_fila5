@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: correzioni-phpstan-livello-7-modulo-xo
-description: "Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzioni PHPStan Livello 7 - Modulo Xot
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo Xot e le relative soluzioni implementate.

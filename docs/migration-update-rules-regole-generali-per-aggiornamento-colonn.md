@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-update-rules-regole-generali-per-aggiornamento-colonn
-description: " Collegamento bidirezionale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole generali per aggiornamento colonne e gestione errori schema
 
 ## Collegamento bidirezionale

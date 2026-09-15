@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-nesting-opportunities-sumy
-description: "Data Analisi: 2026-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament 5.x Nested Resources - Riepilogo Opportunità
 
 **Data Analisi**: 2026-01-22  

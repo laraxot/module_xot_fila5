@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: improvements-summary
-description: "Data: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Riepilogo Miglioramenti e Analisi - 2026-01-09
 
 **Data**: 2026-01-09  

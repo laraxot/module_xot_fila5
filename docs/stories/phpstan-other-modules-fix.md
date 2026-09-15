@@ -2,19 +2,7 @@
 id: phpstan-other-modules-fix
 slug: phpstan-other-modules
 scope:
-<<<<<<< HEAD
   - project:base_workorder_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - project:<repo progetto>
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   - modules:All excluding Xot,Intervention,Timber
 status: Pending
 epic: PHPStan Quality Gates
@@ -40,19 +28,7 @@ PHPStan su moduli rimanenti restituisce **~700+ errori**.
 | Media | ~40 | Pending |
 | Notify | ~30 | Pending |
 | Tenant | ~30 | Pending |
-<<<<<<< HEAD
 | WorkOrder | ~50 | Pending |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | ~50 | Pending |
-=======
-| WorkOrder | ~50 | Pending |
->>>>>>> laraxot/dev
-=======
-| WorkOrder | ~50 | Pending |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Altri 30 moduli | ~200 | Pending |
 
 ## Solution Overview

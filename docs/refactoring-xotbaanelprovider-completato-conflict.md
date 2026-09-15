@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: refactoring-xotbaanelprovider-completato-conflict
-description: " OBIETTIVI RAGGIUNTI"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ✅ REFACTORING XotBasePanelProvider COMPLETATO
 
 ## OBIETTIVI RAGGIUNTI

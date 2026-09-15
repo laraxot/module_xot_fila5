@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-merge-conflict-inventory
-description: "- Date: 2026-04-28"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Git Conflict Inventory
 
 - Date: 2026-04-28
@@ -29,23 +19,8 @@ metadata:
 - docs/contracts-and-interfaces.md
 - docs/documentation-rules-1-1.md
 - docs/dry-kiss-model-refactoring-.md
-<<<<<<< HEAD
 - docs/filament-4-laraxot-e5a872.md
 - docs/filament-4-laraxot-rules-conflict-e5a872.md
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- docs/Filament-5-laraxot-e5a872.md
-- docs/Filament-5-laraxot-rules-conflict-e5a872.md
-=======
-- docs/filament-4-laraxot-e5a872.md
-- docs/filament-4-laraxot-rules-conflict-e5a872.md
->>>>>>> laraxot/dev
-=======
-- docs/filament-4-laraxot-e5a872.md
-- docs/filament-4-laraxot-rules-conflict-e5a872.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - docs/filament-best-practices-1-1.md
 - docs/filament-charts.md
 - docs/filament-class-extension-rules-violations-sumy.md

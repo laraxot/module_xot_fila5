@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phases
-description: " Fase 1: Framework Stabilization (Completed)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Fasi di sviluppo - Xot Module
 
 ## Fase 1: Framework Stabilization (Completed)

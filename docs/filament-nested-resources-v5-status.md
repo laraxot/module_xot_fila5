@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-nested-resources-v5-status
-description: " Scoperta Critica: Filament 5.x NON Supporta Nested Resources"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Nested Resources: Stato in v5.x
 
 ## Scoperta Critica: Filament 5.x NON Supporta Nested Resources
@@ -19,19 +9,7 @@ Dopo analisi approfondita della documentazione ufficiale di Filament 5.x, **NON 
 | Versione | Supporto Nested Resources |
 |----------|---------------------------|
 | Filament 3.x | ✅ Terze parti (sevendays-digital/filament-nested-resources) |
-<<<<<<< HEAD
 | Filament 4.x | ✅ Nativo (built-in) |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Filament 5.x | ✅ Nativo (built-in) |
-=======
-| Filament 4.x | ✅ Nativo (built-in) |
->>>>>>> laraxot/dev
-=======
-| Filament 4.x | ✅ Nativo (built-in) |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | **Filament 5.x** | ❌ **NON SUPPORTATO** |
 
 ### Terze Parti Disponibili (NON Compatibili con v5)
@@ -108,16 +86,4 @@ QuestionChartResource::getUrl('edit', ['record' => $chart]);
 
 - [XotBaseManageRelatedRecords Pattern](../../Xot/docs/architecture/xot-base-manage-related-records.md)
 - [Errore Form Vuoto in Edit](../../<nome progetto>/docs/manage-charts-edit-form-error.md)
-<<<<<<< HEAD
 - [Filament v5 Migration Guide](../../Xot/docs/packages/laravel-12-filament-5-migration.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament v5 Migration Guide](../../Xot/docs/packages/Laravel-13-filament-5-migration.md)
-=======
-- [Filament v5 Migration Guide](../../Xot/docs/packages/laravel-12-filament-5-migration.md)
->>>>>>> laraxot/dev
-=======
-- [Filament v5 Migration Guide](../../Xot/docs/packages/laravel-12-filament-5-migration.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

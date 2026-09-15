@@ -19,7 +19,7 @@ class ClearArtisanDebugbarFilesAction
         $files = File::files(storage_path('debugbar'));
 
         foreach ($files as $file) {
-            if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
                 File::delete($file->getRealPath());
             }
         }

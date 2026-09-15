@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filter
-description: " Contesto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzione e miglioramento: GetYearFilter.php (2025-04-16)
 
 ## Contesto

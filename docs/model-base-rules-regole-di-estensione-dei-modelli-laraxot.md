@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-base-rules-regole-di-estensione-dei-modelli-laraxot
-description: " Regola Fondamentale di Ereditarietà"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole di Estensione dei Modelli Laraxot
 
 ## Regola Fondamentale di Ereditarietà

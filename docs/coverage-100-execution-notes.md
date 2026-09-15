@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: coverage-100-execution-notes
-description: "Updated: 2026-03-04"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Coverage 100 - Execution Notes
 
 Updated: 2026-03-04

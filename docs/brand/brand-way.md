@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: brand-way
-description: " L'Essenza del Brand"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # La Via del Brand
 

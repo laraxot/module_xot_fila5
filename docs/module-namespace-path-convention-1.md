@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-namespace-path-convention-1
-description: " struttura corretta del percorso"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso

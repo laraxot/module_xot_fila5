@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-error
-description: "<!-- Contenuto migrato da docs/phpstanerror.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # phpstan_error
 
 <!-- Contenuto migrato da _docs/phpstan_error.txt -->

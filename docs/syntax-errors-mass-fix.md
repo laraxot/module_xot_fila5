@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: syntax-errors-mass-fix
-description: "> Versione: 1.0"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Mass Fix Errori Sintassi PHP
 
 > **Versione**: 1.0

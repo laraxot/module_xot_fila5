@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-path-generation-philosophy
-description: "Data Creazione: 2026-01-02"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Module Path Generation - Philosophy and Business Logic
 
 **Data Creazione**: 2026-01-02

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: componenti-personalizzati
-description: "Questo documento descrive i componenti personalizzati di Filament disponibili nel framework Laraxot e come utilizzarli correttamente."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Componenti Filament Personalizzati in Laraxot
 
 Questo documento descrive i componenti personalizzati di Filament disponibili nel framework Laraxot e come utilizzarli correttamente.
@@ -34,27 +24,9 @@ class ClienteResource extends XotBaseResource
     protected static ?string $cluster = ClienteCluster::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: database-testing-pattern
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Database Testing Pattern
 
 ## Overview

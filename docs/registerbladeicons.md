@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: registerbladeicons
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Documentazione del Metodo registerBladeIcons
 
 ## Panoramica

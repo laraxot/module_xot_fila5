@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation-rules
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole di Documentazione
 
 ## Panoramica

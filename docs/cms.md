@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cms
-description: "cms"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://www.magutti.com/
 
 https://laravelarticle.com/laravel-option-framework

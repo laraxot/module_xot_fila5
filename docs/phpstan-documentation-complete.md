@@ -1,36 +1,9 @@
-<<<<<<< HEAD
----
-name: phpstan-documentation-complete
-description: "<<<<<<< HEAD"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Documentation - Completion Summary
 
 <<<<<<< HEAD
 **Date**: [DATE]
-<<<<<<< HEAD
 =======
 **Date**: 2025-12-16
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-**Date**: 2025-12-16
-=======
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
-**Date**: 2025-12-16
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-**Date**: 2025-12-16
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **Task**: Analyze all Modules with PHPStan Level 10 and document errors
 **Status**: ✅ **COMPLETED** for Critical and Medium Priority Modules
@@ -44,25 +17,8 @@ metadata:
 #### ✅ **Geo Module** (~50+ errors)
 <<<<<<< HEAD
 **File**: `Modules/Geo/docs/phpstan-errors-[DATE].md`
-<<<<<<< HEAD
 =======
 **File**: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-**File**: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-**File**: `Modules/Geo/docs/phpstan-errors-[DATE].md`
-=======
-**File**: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-**File**: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - ~50+ errors in AddressItemEnum.php
 - Undefined enum constants
@@ -72,25 +28,8 @@ metadata:
 #### ✅ **Cms Module** (~15 errors)
 <<<<<<< HEAD
 **File**: `Modules/Cms/docs/phpstan-errors-[DATE].md`
-<<<<<<< HEAD
 =======
 **File**: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-**File**: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-**File**: `Modules/Cms/docs/phpstan-errors-[DATE].md`
-=======
-**File**: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-**File**: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - HasBlocks.php: Wrong DataCollection usage
 - Section.php: Wrong BlockData namespace
@@ -101,25 +40,8 @@ metadata:
 #### ✅ **Activity Module** (2 errors)
 <<<<<<< HEAD
 **File**: `Modules/Activity/docs/phpstan-errors-[DATE].md`
-<<<<<<< HEAD
 =======
 **File**: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-**File**: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-**File**: `Modules/Activity/docs/phpstan-errors-[DATE].md`
-=======
-**File**: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-**File**: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - HasEvents.php: Missing return types on relationship methods
 - Easy fix: Just add `: HasMany` return types
@@ -128,25 +50,8 @@ metadata:
 #### ✅ **Xot Module** (~10 errors)
 <<<<<<< HEAD
 **File**: `Modules/Xot/docs/phpstan-transtrait-errors-[DATE].md`
-<<<<<<< HEAD
 =======
 **File**: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-**File**: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-**File**: `Modules/Xot/docs/phpstan-transtrait-errors-[DATE].md`
-=======
-**File**: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-**File**: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - TransTrait.php: Calls undefined `getModuleName()` in some contexts
 - Affects XotBaseBlock, XotBaseCluster
@@ -158,25 +63,8 @@ metadata:
 
 <<<<<<< HEAD
 **File**: `Modules/Xot/docs/phpstan-analysis-[DATE].md`
-<<<<<<< HEAD
 =======
 **File**: `Modules/Xot/docs/phpstan-analysis-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-**File**: `Modules/Xot/docs/phpstan-analysis-2025-12-16.md`
-=======
-<<<<<<< HEAD
-**File**: `Modules/Xot/docs/phpstan-analysis-[DATE].md`
-=======
-**File**: `Modules/Xot/docs/phpstan-analysis-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-**File**: `Modules/Xot/docs/phpstan-analysis-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 **Contents:**
@@ -240,25 +128,8 @@ All created documentation includes:
 1. **Geo/AddressItemEnum.php** (~50 errors)
 <<<<<<< HEAD
    - Read: `Modules/Geo/docs/phpstan-errors-[DATE].md`
-<<<<<<< HEAD
 =======
    - Read: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Geo/docs/phpstan-errors-[DATE].md`
-=======
-   - Read: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-   - Read: `Modules/Geo/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - Fix: Verify all enum cases are defined
    - Test: `./vendor/bin/phpstan analyse Modules/Geo`
@@ -266,25 +137,8 @@ All created documentation includes:
 2. **Cms Multiple Files** (~15 errors)
 <<<<<<< HEAD
    - Read: `Modules/Cms/docs/phpstan-errors-[DATE].md`
-<<<<<<< HEAD
 =======
    - Read: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Cms/docs/phpstan-errors-[DATE].md`
-=======
-   - Read: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-   - Read: `Modules/Cms/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - Fix: DataCollection → BlockData::collection(), namespaces
    - Test: `./vendor/bin/phpstan analyse Modules/Cms`
@@ -295,25 +149,8 @@ All created documentation includes:
 3. **Activity/HasEvents.php** (2 errors)
 <<<<<<< HEAD
    - Read: `Modules/Activity/docs/phpstan-errors-[DATE].md`
-<<<<<<< HEAD
 =======
    - Read: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Activity/docs/phpstan-errors-[DATE].md`
-=======
-   - Read: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-   - Read: `Modules/Activity/docs/phpstan-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - Fix: Add `: HasMany` return types
    - Test: `./vendor/bin/phpstan analyse Modules/Activity`
@@ -321,25 +158,8 @@ All created documentation includes:
 4. **Xot/TransTrait.php** (~10 errors)
 <<<<<<< HEAD
    - Read: `Modules/Xot/docs/phpstan-transtrait-errors-[DATE].md`
-<<<<<<< HEAD
 =======
    - Read: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
-=======
-<<<<<<< HEAD
-   - Read: `Modules/Xot/docs/phpstan-transtrait-errors-[DATE].md`
-=======
-   - Read: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-   - Read: `Modules/Xot/docs/phpstan-transtrait-errors-2025-12-16.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - Fix: Add `getModuleName()` to XotBaseBlock and XotBaseCluster
    - Test: `./vendor/bin/phpstan analyse Modules/Xot`
@@ -359,15 +179,6 @@ All created documentation includes:
 Modules/
 ├── Geo/docs/
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 │   └── phpstan-errors-[DATE].md                    ← ~50+ errors documented
 ├── Cms/docs/
 │   └── phpstan-errors-[DATE].md                    ← ~15 errors documented
@@ -377,18 +188,7 @@ Modules/
     ├── phpstan-analysis-[DATE].md                  ← Comprehensive summary
     ├── phpstan-transtrait-errors-[DATE].md         ← ~10 errors documented
     └── phpstan-documentation-complete-[DATE].md    ← This file
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 │   └── phpstan-errors-2025-12-16.md                    ← ~50+ errors documented
 ├── Cms/docs/
 │   └── phpstan-errors-2025-12-16.md                    ← ~15 errors documented
@@ -398,15 +198,6 @@ Modules/
     ├── phpstan-analysis-2025-12-16.md                  ← Comprehensive summary
     ├── phpstan-transtrait-errors-2025-12-16.md         ← ~10 errors documented
     └── phpstan-documentation-complete-2025-12-16.md    ← This file
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -488,28 +279,8 @@ Modules/
 <<<<<<< HEAD
 **Date**: [DATE]
 **Status**: ✅ Documentation Complete - Ready for Development Team
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-**Date**: 2025-12-16
-**Status**: ✅ Documentation Complete - Ready for Development Team
-**Next Review**: After Phase 1 fixes are implemented
-=======
-<<<<<<< HEAD
-**Date**: [DATE]
-**Status**: ✅ Documentation Complete - Ready for Development Team
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 **Date**: 2025-12-16
 **Status**: ✅ Documentation Complete - Ready for Development Team
 **Next Review**: After Phase 1 fixes are implemented
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

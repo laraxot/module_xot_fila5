@@ -1,34 +1,8 @@
 <<<<<<< HEAD
----
-name: readme
-description: "[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-# 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
-
-<<<<<<< HEAD
-[![Laravel 13.x](https://img.shields.io/badge/Laravel-13.x-red.svg)](https://laravel.com/)
-[![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 # 🏗️ **Xot Module** - Il Cuore del Framework Laraxot
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
 [![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [![PHP 8.3](https://img.shields.io/badge/PHP-8.3-blueviolet.svg)](https://www.php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![Modular Architecture](https://img.shields.io/badge/Architecture-Modular%20Monolith-yellow.svg)](https://martinfowler.com/articles/modular-monolith.html)
@@ -37,19 +11,7 @@ metadata:
 
 ## 📋 **Panoramica**
 
-<<<<<<< HEAD
 Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modulare basato su **Laravel 12** e **Filament 4**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modulare basato su **Laravel 13** e **Filament 5**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
-=======
-Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modulare basato su **Laravel 12** e **Filament 4**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
->>>>>>> laraxot/dev
-=======
-Il modulo **Xot** è il **framework base** di Laraxot PTVX, un ecosistema modulare basato su **Laravel 12** e **Filament 4**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Principi Fondamentali
 - **Modularità**: Ogni funzionalità è organizzata in moduli indipendenti e autoconsistenti.
@@ -64,18 +26,7 @@ Tutti i componenti principali dei moduli devono estendere le classi base fornite
 
 ```php
 // Esempio di una Resource Filament
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
@@ -86,19 +37,7 @@ updated: 2026-07-27
 
 # 🏗️ Xot Module - Il Cuore del Framework Laraxot
 
-<<<<<<< HEAD
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[![Laravel 13.x](https://img.shields.io/badge/Laravel-13.x-red.svg)](https://laravel.com/)
-=======
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
->>>>>>> laraxot/dev
-=======
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
 [![PHP 8.4](https://img.shields.io/badge/PHP-8.4-blueviolet.svg)](https://www.php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
@@ -110,19 +49,7 @@ updated: 2026-07-27
 
 ## 📋 Overview
 
-<<<<<<< HEAD
 Il modulo **Xot** è il **framework base** di Laraxot, un ecosistema modulare basato su **Laravel 12** e **Filament 5**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il modulo **Xot** è il **framework base** di Laraxot, un ecosistema modulare basato su **Laravel 13** e **Filament 5**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
-=======
-Il modulo **Xot** è il **framework base** di Laraxot, un ecosistema modulare basato su **Laravel 12** e **Filament 5**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
->>>>>>> laraxot/dev
-=======
-Il modulo **Xot** è il **framework base** di Laraxot, un ecosistema modulare basato su **Laravel 12** e **Filament 5**, progettato per applicazioni enterprise. Fornisce gli strumenti fondamentali e i pattern architetturali per garantire coerenza, estensibilità e manutenibilità in tutto il progetto.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Principi Fondamentali
 
@@ -186,15 +113,6 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 
 **Example**: Resource Filament
 ```php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -202,15 +120,6 @@ class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     
     // Il metodo table() e form() NON devono essere sovrascritti
     // se non per aggiungere logica specifica, ma la base
@@ -237,18 +146,7 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     // table() and form() inherited from base
 }
 ```
@@ -290,15 +188,6 @@ class MyModuleServiceProvider extends XotBaseServiceProvider
 
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Actions\XotBaseAction;
@@ -311,26 +200,8 @@ class CreateUserAction extends XotBaseAction
 <<<<<<< HEAD
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
-<<<<<<< HEAD
 =======
         event(new UserCreated($user));
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-        event(new UserCreated($user));
-=======
-<<<<<<< HEAD
-        $this->logActivity('user.created', $user); // Logging automatico
-        event(new UserCreated($user)); // Dispatching eventi
-=======
-        event(new UserCreated($user));
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-        event(new UserCreated($user));
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return $user;
     }
@@ -341,30 +212,10 @@ class CreateUserAction extends XotBaseAction
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 🏷️ **Enums System**
-Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ### Enums System
 
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
@@ -379,16 +230,6 @@ enum UserStatus: string implements XotBaseEnum
 <<<<<<< HEAD
         // Traduzione gestita centralmente
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // Traduzione gestita centralmente
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return __('xot::enums.user_status.'.$this->value);
     }
@@ -396,15 +237,6 @@ enum UserStatus: string implements XotBaseEnum
 ```
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## 🛠️ **Sviluppo e Qualità**
 
 ### Convenzioni
@@ -451,18 +283,7 @@ Il modulo Xot ha raggiunto la piena conformità PHPStan Level 10 senza compromes
 - [Guida alla Risoluzione dei Conflitti Git](../../../bashscripts/docs/git-conflict-resolution-guide.md)
 - [Convenzioni sui Namespace](./namespace_conventions.md)
 - [Linee Guida per il Testing](./testing.md)
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ### Filament Integration
 
 Xot fornisce wrapper base per tutti i componenti Filament:
@@ -592,13 +413,4 @@ All modules depend on **Xot**. Never have circular dependencies.
 **Last Updated**: 2026-07-14  
 **Maintained by**: Laraxot Core Team  
 **PHPStan Level**: 10 (Compliant)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

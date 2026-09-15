@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: resources
-description: " 📋 Table of Contents"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Resources
 
 ## 📋 Table of Contents
@@ -47,19 +37,7 @@ metadata:
 ### External Documentation
 
 #### Laravel Documentation
-<<<<<<< HEAD
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Laravel 13 Documentation](https://laravel.com/docs/12.x)
-=======
-- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
->>>>>>> laraxot/dev
-=======
-- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Laravel API Documentation](https://laravel.com/api/12.x)
 - [Laravel Upgrade Guide](https://laravel.com/docs/12.x/upgrade)
 - [Laravel Contributing Guide](https://laravel.com/docs/contributions)
@@ -279,19 +257,7 @@ metadata:
 ## Quick Links
 
 ### Essential Links
-<<<<<<< HEAD
 - [Laravel 12 Docs](https://laravel.com/docs/12.x)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Laravel 13 Docs](https://laravel.com/docs/12.x)
-=======
-- [Laravel 12 Docs](https://laravel.com/docs/12.x)
->>>>>>> laraxot/dev
-=======
-- [Laravel 12 Docs](https://laravel.com/docs/12.x)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Filament 5 Docs](https://filamentphp.com/docs/5.x)
 - [PHPStan Docs](https://phpstan.org/user-guide)
 - [Pest Docs](https://pestphp.com/docs)

@@ -110,19 +110,7 @@ Questo metodo è stato **rimosso** da `XotBaseMigration` il 2026-06-05 perché:
 | Notify | ~5 file |
 | Geo | ~2 file |
 | Lang | ~1 file |
-<<<<<<< HEAD
 | Fixcity | ~5 file |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | ~5 file |
-=======
-| Fixcity | ~5 file |
->>>>>>> laraxot/dev
-=======
-| Fixcity | ~5 file |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Riferimenti
 

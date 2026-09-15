@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-aggiornamento-progresso
-description: " Stato Attuale (Post Correzioni)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Aggiornamento Roadmap Completa
 
 ## Stato Attuale (Post Correzioni)

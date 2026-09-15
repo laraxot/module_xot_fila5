@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: critical-rules-consolidated
-description: " 🚨 REGOLE ASSOLUTE DA RISPETTARE"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🎯 CRITICAL RULES CONSOLIDATED - Laraxot Architecture
 
 ## 🚨 REGOLE ASSOLUTE DA RISPETTARE
@@ -29,19 +19,7 @@ metadata:
 
 ✅ **CORRETTO**: Solo connessione base `mysql` nel file `config/database.php`
 
-<<<<<<< HEAD
 ### 2. ✅ DATABASE.PHP FILSOFIA LARAVEL 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 2. ✅ DATABASE.PHP FILSOFIA Laravel 13.x
-=======
-### 2. ✅ DATABASE.PHP FILSOFIA LARAVEL 12.x
->>>>>>> laraxot/dev
-=======
-### 2. ✅ DATABASE.PHP FILSOFIA LARAVEL 12.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Singola connessione `mysql` principale
 - Multi-tenant tramite database/schema separati
 - Nessuna connessione modulare nel file database.php
@@ -223,19 +201,7 @@ Questa regola DEVE essere sempre rispettata da tutti gli agenti AI. Non deve MAI
 ## 🔄 REGOLE AGGIORNATE
 
 ### REGOLA DATABASE AGGIORNATA:
-<<<<<<< HEAD
 IL FILE `/var/www/_bases/base_<nome progetto>/laravel/config/database.php` DEVE SEGUIRE LA FILOSOFIA LARAVEL 12.x CON SINGOLA CONNESSIONE 'mysql' E MULTI-TENANT TRAMITE DATABASE/SCHEMA SEPARATI. NON DEVE AVERE CONNESSIONI MODULARI PERCHÉ QUESTE VENGONO GESTITE AUTOMATICAMENTE DAL TenantServiceProvider.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-IL FILE `/var/www/_bases/base_<nome progetto>/laravel/config/database.php` DEVE SEGUIRE LA FILOSOFIA Laravel 13.x CON SINGOLA CONNESSIONE 'mysql' E MULTI-TENANT TRAMITE DATABASE/SCHEMA SEPARATI. NON DEVE AVERE CONNESSIONI MODULARI PERCHÉ QUESTE VENGONO GESTITE AUTOMATICAMENTE DAL TenantServiceProvider.
-=======
-IL FILE `/var/www/_bases/base_<nome progetto>/laravel/config/database.php` DEVE SEGUIRE LA FILOSOFIA LARAVEL 12.x CON SINGOLA CONNESSIONE 'mysql' E MULTI-TENANT TRAMITE DATABASE/SCHEMA SEPARATI. NON DEVE AVERE CONNESSIONI MODULARI PERCHÉ QUESTE VENGONO GESTITE AUTOMATICAMENTE DAL TenantServiceProvider.
->>>>>>> laraxot/dev
-=======
-IL FILE `/var/www/_bases/base_<nome progetto>/laravel/config/database.php` DEVE SEGUIRE LA FILOSOFIA LARAVEL 12.x CON SINGOLA CONNESSIONE 'mysql' E MULTI-TENANT TRAMITE DATABASE/SCHEMA SEPARATI. NON DEVE AVERE CONNESSIONI MODULARI PERCHÉ QUESTE VENGONO GESTITE AUTOMATICAMENTE DAL TenantServiceProvider.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### REGOLA DATABASE AGGIORNATA:
 CRITICAL DATABASE ERROR IDENTIFIED: Il file `/var/www/_bases/base_<nome progetto>/laravel/config/database.php` conteneva una definizione manuale della connessione 'gdpr' che è un errore GRAVE. Il TenantServiceProvider gestisce automaticamente tutte le connessioni database tramite il metodo registerDB() che crea copie della connessione mysql per ogni modulo. Aggiungere definizioni manuali in database.php viola l'architettura Laraxot e causa duplicazioni pericolose. Questo errore non deve mai più accadere.

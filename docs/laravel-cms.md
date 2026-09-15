@@ -1,26 +1,6 @@
 <<<<<<< HEAD
----
-name: laravel-cms
-description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 https://statamic.com/
 =======
-=======
-<<<<<<< HEAD
-https://statamic.com/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://statamic.com/
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Laravel cms — risorse esterne'
 module: Xot
@@ -41,13 +21,4 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://statamic.com/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

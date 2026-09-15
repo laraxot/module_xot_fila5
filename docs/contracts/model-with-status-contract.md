@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-with-status-contract
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ModelWithStatusContract
 
 ## Descrizione

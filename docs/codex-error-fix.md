@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: codex-error-fix
-description: "Questo documento descrive le correzioni applicate agli errori riscontrati durante l'avvio di codex."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Codex Configuration Error Fixes
 
 Questo documento descrive le correzioni applicate agli errori riscontrati durante l'avvio di `codex`.

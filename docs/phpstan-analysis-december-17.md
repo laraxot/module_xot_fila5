@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-analysis-december-17
-description: " Riepilogo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi PHPStan - 17 Dicembre 2025
 
 ## Riepilogo

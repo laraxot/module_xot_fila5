@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: relationx-sqlite-cross-database-fix-1
-description: " Problema Risolto"
-metadata:
-  type: fix
----
-
-=======
->>>>>>> laraxot/dev
 # RelationX SQLite Cross-Database Fix
 
 ## Problema Risolto

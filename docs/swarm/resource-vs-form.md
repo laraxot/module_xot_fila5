@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: resource-vs-form
-description: "Swarm ID: swarm-resource-vs-form"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # SWARM V2 — Regola architetturale + Rimozione getFormSchema da Resource
 
 **Swarm ID:** `swarm-resource-vs-form`

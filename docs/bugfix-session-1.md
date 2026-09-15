@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: bugfix-session-1
-description: " 🎯 Obiettivo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo
@@ -20,19 +10,7 @@ Risolvere tutti gli errori di syntax che impedivano l'avvio del server Laravel (
 
 **Comando**:
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_ptvx_fila4_mono/laravel
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/_bases/base_ptvx_fila5/laravel
-=======
-cd /var/www/_bases/base_ptvx_fila4_mono/laravel
->>>>>>> laraxot/dev
-=======
-cd /var/www/_bases/base_ptvx_fila4_mono/laravel
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 php artisan serve --port=8001
 ```
 

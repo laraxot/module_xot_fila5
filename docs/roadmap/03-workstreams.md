@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 03-workstreams
-description: " WS1 Architecture"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Workstreams - Xot
 
 ## WS1 Architecture

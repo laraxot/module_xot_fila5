@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-syntax-errors-fix
-description: "Data: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Syntax Errors Fix - Xot Module
 
 **Data**: 2026-01-09  

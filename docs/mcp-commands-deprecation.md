@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: mcp-commands-deprecation
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Deprecazione Comandi MCP e Migrazione Azioni Database
 
 ## Panoramica

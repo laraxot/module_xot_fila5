@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: database-php-connection-rule
-description: " NESSUNA connessione hardcoded per i moduli!"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # REGOLA CRITICA: config/database.php
 
 ## NESSUNA connessione hardcoded per i moduli!

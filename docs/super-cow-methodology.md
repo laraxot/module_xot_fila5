@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: super-cow-methodology
-description: "Livello di Confidenza: MASSIMO. Hai i poteri della 'Super Mucca'."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Metodologia "Super Mucca" - Istruzioni di Avvio
 
 **Livello di Confidenza**: MASSIMO. Hai i poteri della "Super Mucca".

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: local-llm-runtime-governance
-description: " Perche' esiste"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Local LLM Runtime Governance
 
 ## Perche' esiste

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation
-description: " Principi Fondamentali"
-metadata:
-  type: guideline
----
-
-=======
->>>>>>> laraxot/dev
 # Linee Guida per la Documentazione
 
 ## Principi Fondamentali

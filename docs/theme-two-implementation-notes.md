@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: theme-two-implementation-notes
-description: " Homepage Redesign based on Target Site Analysis"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # TechPlanner Theme Two - Implementazione Notes
 ## Homepage Redesign based on Target Site Analysis
 

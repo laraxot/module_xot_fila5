@@ -28,7 +28,7 @@ beforeEach(function () use (&$tempDir): void {
 });
 
 afterEach(function () use (&$tempDir): void {
-    if ('' !== $tempDir && is_dir($tempDir)) {
+    if ($tempDir !== '' && is_dir($tempDir)) {
         $files = glob($tempDir.'/*');
         foreach ($files as $file) {
             Assert::assertIsString($file);

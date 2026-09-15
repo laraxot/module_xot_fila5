@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: handler-orator
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # HandlerDecorator
 
 ## Descrizione

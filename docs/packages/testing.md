@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing
-description: " Pacchetti Utilizzati"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Testing
 
 ## Pacchetti Utilizzati

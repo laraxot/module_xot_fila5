@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: pwa
-description: "pwa"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/
 https://devcoffee-pwa.netlify.app/
 

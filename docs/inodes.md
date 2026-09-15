@@ -1,21 +1,4 @@
 <<<<<<< HEAD
----
-name: inodes
-description: "<!-- Contenuto migrato da docs/inodes.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->
@@ -26,18 +9,7 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 /dev/xvda1      7692288 652294 7039994    9%      /
 
 --------------------------------------------------------------
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Inodes'
 module: Xot
@@ -51,15 +23,6 @@ updated: 2026-08-24
 ---
 
 -----------------------------------------------------------
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
@@ -93,23 +56,6 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 
 <<<<<<< HEAD
 --------------------------------------------------------------
-<<<<<<< HEAD
 =======
 --------------------------------------------------------------
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
---------------------------------------------------------------
-=======
-<<<<<<< HEAD
---------------------------------------------------------------
-=======
---------------------------------------------------------------
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
---------------------------------------------------------------
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

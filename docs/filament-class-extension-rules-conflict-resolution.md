@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-class-extension-rules-conflict-resolution
-description: " Data Risoluzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Filament Class Extension Rules
 
 ## Data Risoluzione

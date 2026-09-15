@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: stato-qualita-progetto-2026-08-31
-description: "Domanda: il progetto e' perfetto?"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Stato di qualita' del progetto — misurazione 2026-08-31
 
 **Domanda**: il progetto e' perfetto?
@@ -225,19 +215,7 @@ Dati verificati in sessione, senza migrazioni distruttive.
 | `RefreshDatabase` nei test moduli | **0 uso reale** | solo commenti/docblock che vietano il trait |
 | Dati sacri in Xot Artisan | **fix applicati** | niente `--force` su `migrate` in `ArtisanAction` / handlers |
 | Pest unit GC (Intervention + Quotation + Billing) | **77 passed** | `php artisan test Modules/{Intervention,Quotation,Billing}/tests/Unit` |
-<<<<<<< HEAD
 | Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente — debito **D17** |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Pest feature Filament (es. Billing invoices) | **fallisce** | `<nome progetto>_data_test.roles` assente — debito **D17** |
-=======
-| Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente — debito **D17** |
->>>>>>> laraxot/dev
-=======
-| Pest feature Filament (es. Billing invoices) | **fallisce** | `workorder_data_test.roles` assente — debito **D17** |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | ide-helper | **OK** | `generate` + `meta` + `models --nowrite` |
 
 **Interpretazione:** il gate statico sui moduli è verde, ma **perfezione operativa** richiede ancora

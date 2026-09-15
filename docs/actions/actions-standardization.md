@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: actions-standardization
-description: " Problema Identificato (2025-01-06)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Standardizzazione Actions - Rimozione Duplicazioni
 
 ## Problema Identificato (2025-01-06)

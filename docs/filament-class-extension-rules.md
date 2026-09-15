@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-class-extension-rules
-description: "Principio Fondamentale: Mai estendere classi Filament direttamente - sempre usare classi XotBase"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Class Extension Rules - Laraxot Framework
 
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
@@ -632,27 +622,9 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

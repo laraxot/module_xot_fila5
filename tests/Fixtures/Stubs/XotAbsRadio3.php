@@ -6,6 +6,4 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseRadio;
 
-final class XotAbsRadio3 extends XotBaseRadio
-{
-}
+final class XotAbsRadio3 extends XotBaseRadio {}

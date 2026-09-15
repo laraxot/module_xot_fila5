@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-errors-sumy
-description: "Livello PHPStan: 10"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 Errors Summary - [DATE]
 
 **Livello PHPStan**: 10  

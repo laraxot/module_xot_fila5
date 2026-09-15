@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: product-roadmap
-description: "Module: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Product Roadmap
 
 **Module:** Xot  

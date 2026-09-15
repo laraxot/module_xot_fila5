@@ -3,18 +3,6 @@
 
 <!-- Contenuto migrato da _docs/datatables.txt -->
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# datatables
-
-<!-- Contenuto migrato da _docs/datatables.txt -->
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Datatables'
 module: Xot
@@ -26,15 +14,6 @@ converted_from: DataTables.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 Server-Side Rendering of DataTables in Laravel

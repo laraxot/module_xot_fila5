@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-config-immutability
-description: "- File target: phpstan.neon"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Config Immutability (Global Project Rule)
 
 - File target: `phpstan.neon`

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: index-1
-description: "Path: laravel/Modules/Xot/docs/"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 📚 Xot Module - Documentation Index
 
 **Path**: `laravel/Modules/Xot/docs/`  

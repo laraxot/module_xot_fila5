@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: livewire
-description: "livewire"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://github.com/kdion4891/laravel-livewire-forms
 
 

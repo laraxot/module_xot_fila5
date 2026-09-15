@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-xotbase-resource-corrections
-description: "filament-xotbase-resource-corrections"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Filament*

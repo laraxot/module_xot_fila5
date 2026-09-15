@@ -12,7 +12,7 @@ use function Safe\preg_match;
 
 uses(TestCase::class);
 
-/*
+/**
  * Un model che compone l'adjacency list non riscrive le relazioni che il trait gli da'.
  *
  * `Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships` fornisce
@@ -49,18 +49,18 @@ test('nessun model con adjacency list ridichiara le relazioni del trait', functi
         $source = file_get_contents($file);
 
         // Solo i model che compongono davvero il trait: gli altri sono liberi.
-        if (1 !== preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
+        if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) !== 1) {
             continue;
         }
 
-        if (1 !== preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class)) {
+        if (preg_match('/^(?:final\s+|abstract\s+)?class\s+(\w+)/m', $source, $class) !== 1) {
             continue;
         }
 
         $className = (string) ($class[1] ?? '');
 
         foreach ($relations as $relation) {
-            if (1 === preg_match('/function\s+'.$relation.'\s*\(/', $source)) {
+            if (preg_match('/function\s+'.$relation.'\s*\(/', $source) === 1) {
                 $offenders[] = $className.'::'.$relation.'()';
             }
         }
@@ -80,7 +80,7 @@ test('i model ad albero del progetto compongono davvero il trait', function (): 
     foreach ($files as $file) {
         $source = file_get_contents($file);
 
-        if (1 === preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source)) {
+        if (preg_match('/use\s+[\w\\\\]*(?:AdjacencyList|RecursiveRelationships)\w*;/', $source) === 1) {
             $composers[] = basename($file, '.php');
         }
     }

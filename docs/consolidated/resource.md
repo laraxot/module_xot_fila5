@@ -58,10 +58,6 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wsngsl
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -73,7 +69,6 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_xfcNH9
->>>>>>> laraxot/dev
     {
         return [
             // Schema del form
@@ -109,10 +104,6 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
    - ✅ `public static function getFormSchema(): array`
 =======
-<<<<<<< HEAD
-   - ✅ `public function getFormSchema(): array`
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wsngsl
    - ✅ `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
@@ -124,7 +115,6 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_xfcNH9
->>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -239,10 +229,6 @@ class ListRecords extends XotBaseListRecords
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wsngsl
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -254,7 +240,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_xfcNH9
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -586,10 +571,6 @@ public function getTableColumns(): array
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wsngsl
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -601,7 +582,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_xfcNH9
->>>>>>> laraxot/dev
 {
     return [
         'nome' => TextInput::make('nome'),

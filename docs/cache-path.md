@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cache-path
-description: " Descrizione dell'Errore"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Errore Cache Path Mancante
 
 ## Descrizione dell'Errore

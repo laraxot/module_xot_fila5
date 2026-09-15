@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: codebase-analysis-findings
-description: " Riepilogo Trovato"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi Completa del Codice - Regole Filament e property_exists
 
 ## Riepilogo Trovato

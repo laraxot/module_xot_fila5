@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filters-1
-description: "<!-- Contenuto migrato da docs/filters.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _filters
 
 <!-- Contenuto migrato da _docs/_filters.txt -->

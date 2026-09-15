@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-migrate-env-testing-deep-dive
-description: " Scope"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Deep Dive: `php artisan migrate --env=testing` (2026-03-06)
 
 ## Scope

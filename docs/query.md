@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: query
-description: "query"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://laravel-news.com/quickly-dumping-laravel-queries
 
 \DB::enableQueryLog(); // Enable query log

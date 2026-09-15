@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: docs-consolidation-plan
-description: " 🚨 Violazioni Identificate"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 📋 Piano di Consolidamento Documentazione - Laraxot PTVX
 
 ## 🚨 **Violazioni Identificate**

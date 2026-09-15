@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: accessor-audit-cross-modules
-description: " Obiettivo Audit"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Audit Cross-Modules: Accessor con save() senza Guard
 
 ## Obiettivo Audit

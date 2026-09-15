@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ottimizzazioni-super-dry-kiss
-description: " 🎯 Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Ottimizzazioni Super DRY + KISS - Modulo Xot
 
 ## 🎯 Panoramica

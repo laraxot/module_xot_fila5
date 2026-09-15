@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: current-status
-description: " 📋 Table of Contents"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Current Status
 
 ## 📋 Table of Contents
@@ -187,19 +177,7 @@ None at this time.
 
 ### March 2026
 - ✅ Boost skill installation completed
-<<<<<<< HEAD
 - ✅ Laravel 12 compatibility verified
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ Laravel 13 compatibility verified
-=======
-- ✅ Laravel 12 compatibility verified
->>>>>>> laraxot/dev
-=======
-- ✅ Laravel 12 compatibility verified
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - ✅ Filament v5 migration guide created
 - ✅ Roadmap modularization started
 
@@ -230,19 +208,7 @@ None at this time.
 ## Dependencies
 
 ### External Dependencies
-<<<<<<< HEAD
 - Laravel 12.x (stable)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel 13.x (stable)
-=======
-- Laravel 12.x (stable)
->>>>>>> laraxot/dev
-=======
-- Laravel 12.x (stable)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Filament 5.x (stable)
 - PHPStan 2.1+ (stable)
 - Pest 3.8+ (stable)
@@ -252,19 +218,7 @@ None at this time.
 
 ### Dependency Risks
 - **Low**: All dependencies are stable
-<<<<<<< HEAD
 - **Medium**: Laravel 12 breaking changes possible
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Medium**: Laravel 13 breaking changes possible
-=======
-- **Medium**: Laravel 12 breaking changes possible
->>>>>>> laraxot/dev
-=======
-- **Medium**: Laravel 12 breaking changes possible
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Low**: Filament 5 API changes unlikely
 
 ## Quality Metrics

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: architecture-violations-and-fixes
-description: " 🚨 Violazioni Architetturali Critiche"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Violazioni Architetturali e Correzioni - Pattern XotData
 
 ## 🚨 **Violazioni Architetturali Critiche**

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: struttura-percorsi
-description: " Regola fondamentale"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Struttura dei percorsi nel progetto <nome progetto>
 
 ## Regola fondamentale

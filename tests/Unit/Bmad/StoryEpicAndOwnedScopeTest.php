@@ -75,7 +75,7 @@ test('gli epic dichiarati nelle story esistono in docs/epics.md', function () us
     $orphans = [];
     foreach ($storyFiles() as $path) {
         $name = basename($path);
-        if (1 !== preg_match('/^0*(\d+)\./', $name, $m)) {
+        if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
             continue; // story senza numero: fuori dal perimetro di questo test
         }
         if (! isset($m[1])) {

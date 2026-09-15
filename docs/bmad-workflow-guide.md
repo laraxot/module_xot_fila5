@@ -1,30 +1,8 @@
-<<<<<<< HEAD
----
-name: bmad-workflow-guide
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # BMAD Workflow Guide for Laraxot
 
 ## Overview
 
-<<<<<<< HEAD
 This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 12 + Filament 5 + PHP 8.3).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 13 + Filament 5 + PHP 8.3).
-=======
-This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 12 + Filament 5 + PHP 8.3).
->>>>>>> laraxot/dev
-=======
-This guide provides step-by-step instructions for using **BMAD (Business Model Agile Development)** with **Laraxot** projects (Laravel 12 + Filament 5 + PHP 8.3).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Version**: 6.2.2  
 **Last Updated**: March 27, 2026  
@@ -100,19 +78,7 @@ Brainstorm ideas for "DashboardV3 chart enhancements"
 
 Focus on:
 - User needs (survey administrators, data analysts)
-<<<<<<< HEAD
 - Technical feasibility (Laravel 12, Filament 5, JPGraph)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Technical feasibility (Laravel 13, Filament 5, JPGraph)
-=======
-- Technical feasibility (Laravel 12, Filament 5, JPGraph)
->>>>>>> laraxot/dev
-=======
-- Technical feasibility (Laravel 12, Filament 5, JPGraph)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Business value (ATS compliance, competitive advantage)
 ```
 
@@ -259,36 +225,12 @@ Requirements:
 - Scalability (concurrent users, data volume)
 
 ## 5. Constraints
-<<<<<<< HEAD
 - Technical constraints (Laravel 12, Filament 5)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Technical constraints (Laravel 13, Filament 5)
-=======
-- Technical constraints (Laravel 12, Filament 5)
->>>>>>> laraxot/dev
-=======
-- Technical constraints (Laravel 12, Filament 5)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Business constraints (timeline, budget)
 - Regulatory constraints (GDPR, ATS)
 
 ## 6. Dependencies
-<<<<<<< HEAD
 - External systems (LimeSurvey, Quaeris)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- External systems (LimeSurvey, <nome progetto>)
-=======
-- External systems (LimeSurvey, Quaeris)
->>>>>>> laraxot/dev
-=======
-- External systems (LimeSurvey, Quaeris)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Internal modules (Chart, Xot, UI)
 
 ## 7. Risks
@@ -391,63 +333,21 @@ Include:
 Create architecture for "DashboardV3 Custom Charts"
 
 Context:
-<<<<<<< HEAD
 - Laravel 12 + Filament 5 + PHP 8.3
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel 13 + Filament 5 + PHP 8.3
-=======
-- Laravel 12 + Filament 5 + PHP 8.3
->>>>>>> laraxot/dev
-=======
-- Laravel 12 + Filament 5 + PHP 8.3
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Laraxot modular architecture
 - XotBase extension pattern
 - Spatie Queueable Actions
 
 Requirements:
-<<<<<<< HEAD
 - Custom questions in Modules/Quaeris/app/Actions/QuestionChart/Custom/
 - DTOs in Modules/Chart/app/Datas/
 - Widgets in Modules/Quaeris/app/Filament/Widgets/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Custom questions in Modules/<nome progetto>/app/Actions/QuestionChart/Custom/
-- DTOs in Modules/Chart/app/Datas/
-- Widgets in Modules/<nome progetto>/app/Filament/Widgets/
-=======
-- Custom questions in Modules/Quaeris/app/Actions/QuestionChart/Custom/
-- DTOs in Modules/Chart/app/Datas/
-- Widgets in Modules/Quaeris/app/Filament/Widgets/
->>>>>>> laraxot/dev
-=======
-- Custom questions in Modules/Quaeris/app/Actions/QuestionChart/Custom/
-- DTOs in Modules/Chart/app/Datas/
-- Widgets in Modules/Quaeris/app/Filament/Widgets/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - PDF export via Spatie Queueable Action
 
 Constraints:
 - NEVER create Service classes (use Actions)
 - ALWAYS extend XotBase classes
-<<<<<<< HEAD
 - NEVER cross-database join (quaeris_data vs quaeris_survey)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- NEVER cross-database join (<nome progetto>_data vs <nome progetto>_survey)
-=======
-- NEVER cross-database join (quaeris_data vs quaeris_survey)
->>>>>>> laraxot/dev
-=======
-- NEVER cross-database join (quaeris_data vs quaeris_survey)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - MySQL strict mode compliance
 ```
 
@@ -678,44 +578,14 @@ Why this story matters
 5. Run quality gates
 
 ## Technical Notes
-<<<<<<< HEAD
 - Use Contact::on('quaeris_data') for database connection
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Use Contact::on('<nome progetto>_data') for database connection
-=======
-- Use Contact::on('quaeris_data') for database connection
->>>>>>> laraxot/dev
-=======
-- Use Contact::on('quaeris_data') for database connection
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Use groupBy() instead of groupByRaw() for MySQL strict mode
 - Convert array to DataCollection explicitly
 
 ## Related Files
-<<<<<<< HEAD
 - `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 - `Modules/Chart/app/Datas/ChartData.php`
 - `Modules/Quaeris/tests/Feature/MailResponseRateTest.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-- `Modules/Chart/app/Datas/ChartData.php`
-- `Modules/<nome progetto>/tests/Feature/MailResponseRateTest.php`
-=======
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-- `Modules/Chart/app/Datas/ChartData.php`
-- `Modules/Quaeris/tests/Feature/MailResponseRateTest.php`
->>>>>>> laraxot/dev
-=======
-- `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-- `Modules/Chart/app/Datas/ChartData.php`
-- `Modules/Quaeris/tests/Feature/MailResponseRateTest.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 #### Step 4.4: Validate Story (Recommended)
@@ -876,19 +746,7 @@ What is the user value?
 ### Modules as BMAD Domains
 
 Each module is a domain:
-<<<<<<< HEAD
 - **Quaeris**: Survey analytics, dashboards
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: Survey analytics, dashboards
-=======
-- **Quaeris**: Survey analytics, dashboards
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: Survey analytics, dashboards
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Chart**: Chart DTOs, data structures
 - **Xot**: Base classes, migrations, translations
 - **UI**: Frontend components, styling

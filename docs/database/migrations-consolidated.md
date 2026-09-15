@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migrations-consolidated
-description: "> 🎯 Single Source of Truth: Questo documento centralizza TUTTA la documentazione migrazioni del progetto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Migrations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione migrazioni del progetto

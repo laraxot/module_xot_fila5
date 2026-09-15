@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: has-authentication-log
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

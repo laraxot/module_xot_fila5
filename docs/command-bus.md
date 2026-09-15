@@ -1,23 +1,5 @@
 <<<<<<< HEAD
----
-name: command-bus
-description: "<!-- Contenuto migrato da docs/commandbus.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Command bus"
 type: reference
@@ -31,15 +13,6 @@ note: "Convertito da command_bus.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/command_bus.txt -->
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 Command Bus in Laravel Published 21 Mar 2019
 https://martinbean.dev/blog/2019/03/21/command-bus-in-laravel/
@@ -48,45 +21,16 @@ What is a command bus and why should you use it?
 https://barryvanveen.nl/blog/49-what-is-a-command-bus-and-why-should-you-use-it
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://laracasts.com/discuss/channels/laravel/the-future-of-the-command-bus. 
 And yes it has been renamed as jobs to differ from artisan command.
 https://twitter.com/taylorotwell/status/569941495127547904
 
 
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://laracasts.com/discuss/channels/laravel/the-future-of-the-command-bus.
 And yes it has been renamed as jobs to differ from artisan command.
 https://twitter.com/taylorotwell/status/569941495127547904
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 Implementare un Command Bus con Laravel-Tactician
 https://laravel-italia.it/articoli/implementare-un-command-bus-con-laravel-tactician/
@@ -95,23 +39,6 @@ https://github.com/jildertmiedema/laravel-tactician  on 11 Sep 2020
 
 <<<<<<< HEAD
 https://github.com/broadway/broadway 
-<<<<<<< HEAD
 =======
 https://github.com/broadway/broadway
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-https://github.com/broadway/broadway
-=======
-<<<<<<< HEAD
-https://github.com/broadway/broadway 
-=======
-https://github.com/broadway/broadway
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-https://github.com/broadway/broadway
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: database-advanced-relationships
-description: "L'architettura database utilizza librerie specializzate per gestire la complessità dei dati senza compromettere le performance."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Relazioni Avanzate e Database - Laraxot PTVX
 
 L'architettura database utilizza librerie specializzate per gestire la complessità dei dati senza compromettere le performance.

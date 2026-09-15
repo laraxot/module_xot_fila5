@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: third-party-model-inheritance-philosophy
-description: " Core Principle: Respect Package Architecture"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Third-Party Model Inheritance Philosophy
 
 ## Core Principle: Respect Package Architecture

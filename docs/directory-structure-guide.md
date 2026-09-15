@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: directory-structure-guide
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida alla Struttura Corretta delle Directory nei Moduli Laraxot <nome progetto>
 
 ## Panoramica

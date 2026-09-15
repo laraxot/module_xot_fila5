@@ -7,27 +7,9 @@ updated: 2026-06-05
 qmd: "xot migration updateTimestamps XotBaseMigration no redundant timestamps softDeletes"
 story: STORY-140
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/270"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/271"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/270"
-discussions:
-  - "https://github.com/laraxot/<repo progetto>/discussions/271"
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/270"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/271"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/270"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/271"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ../../../../../docs/wiki/bmad/architecture-migration-update-timestamps-only.md
   - ../../../../../docs/wiki/rules/migration-update-timestamps-only.md

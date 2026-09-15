@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: eloquent-properties-best-practices
-description: " ✅ STATO: propertyexists() ELIMINATO (Data: 2025-01-05)"
-metadata:
-  type: best-practice
----
-
-=======
->>>>>>> laraxot/dev
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
 
 ## ✅ STATO: property_exists() ELIMINATO (Data: 2025-01-05)

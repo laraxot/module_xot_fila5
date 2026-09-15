@@ -1212,13 +1212,6 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -1237,7 +1230,6 @@ XotBaseResource è la classe base per tutte le risorse Filament nel framework. F
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    {
        return [
            // Form fields
@@ -4486,13 +4478,6 @@ protected function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -4511,7 +4496,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 ```
 
 ### 2. Implementazione Corretta
@@ -4525,13 +4509,6 @@ class TicketResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
     public static function getFormSchema(): array
@@ -4550,7 +4527,6 @@ class TicketResource extends XotBaseResource
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('title')->required(),
@@ -4575,13 +4551,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -4600,7 +4569,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 ```
 
 ### 2. Accesso a Proprietà
@@ -4610,13 +4578,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -4635,7 +4596,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')
@@ -4648,13 +4608,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -4673,7 +4626,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')
@@ -4695,13 +4647,6 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -4720,7 +4665,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    {
        return [
            // schema components
@@ -4756,13 +4700,6 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -4781,7 +4718,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    ```
 
 3. **Documentazione**:
@@ -4793,13 +4729,6 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -4818,7 +4747,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    ```
 
 4. **Contesto Statico**:
@@ -5985,13 +5913,6 @@ class TicketResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
     public static function getFormSchema(): array
@@ -6010,7 +5931,6 @@ class TicketResource extends XotBaseResource
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
     {
         return [...];
     }
@@ -7473,13 +7393,6 @@ protected function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -7498,7 +7411,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 ```
 
 ### 2. Implementazione Corretta
@@ -7512,13 +7424,6 @@ class TicketResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
     public static function getFormSchema(): array
@@ -7537,7 +7442,6 @@ class TicketResource extends XotBaseResource
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('title')->required(),
@@ -7562,13 +7466,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -7587,7 +7484,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 ```
 
 ### 2. Accesso a Proprietà
@@ -7597,13 +7493,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -7622,7 +7511,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')
@@ -7635,13 +7523,6 @@ public function getFormSchema(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
 public static function getFormSchema(): array
@@ -7660,7 +7541,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')
@@ -7682,13 +7562,6 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -7707,7 +7580,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    {
        return [
            // schema components
@@ -7743,13 +7615,6 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -7768,7 +7633,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    ```
 
 3. **Documentazione**:
@@ -7780,13 +7644,6 @@ public function getFormSchema(): array
    public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_oYx5Fv
 =======
    public static function getFormSchema(): array
@@ -7805,7 +7662,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_evdp6o
->>>>>>> laraxot/dev
    ```
 
 4. **Contesto Statico**:

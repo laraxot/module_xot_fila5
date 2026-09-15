@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaseresource-architectural-rules
-description: " Dibattito Interno: Navigation Properties e Metodi in XotBaseResource"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole Architetturali per XotBaseResource
 
 ## Dibattito Interno: Navigation Properties e Metodi in XotBaseResource
@@ -108,27 +98,9 @@ final class TeamUserResource extends XotBaseResource
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

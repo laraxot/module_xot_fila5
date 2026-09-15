@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: test-naming-convention
-description: "Modulo: Xot (Core Framework)"
-metadata:
-  type: testing
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzione Naming File Test - Xot Module
 
 **Modulo:** Xot (Core Framework)

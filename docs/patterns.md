@@ -1,27 +1,7 @@
 <<<<<<< HEAD
----
-name: patterns
-description: " Model Inheritance Pattern"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Xot Module Patterns"
 type: guide
@@ -59,23 +39,7 @@ class CreateMyTable extends XotBaseMigration {
     }
 }
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

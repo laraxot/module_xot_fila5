@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: brand
-description: " Principi Fondamentali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Filosofia del Brand nel Sistema
 

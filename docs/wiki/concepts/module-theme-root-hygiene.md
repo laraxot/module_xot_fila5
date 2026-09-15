@@ -25,19 +25,7 @@ Vietato in root: `Main_files/`, `Resources/`, `Config/`, `Helpers/`, …
 | `Resources/` se esiste `resources/` | eliminare `Resources/` |
 | `Config/` se esiste `config/` | eliminare `Config/` |
 
-<<<<<<< HEAD
 Il nome modulo/tema (`WorkOrder`, `Sixteen`) in PascalCase **non** è una violazione.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il nome modulo/tema (`<nome progetto>`, `Sixteen`) in PascalCase **non** è una violazione.
-=======
-Il nome modulo/tema (`WorkOrder`, `Sixteen`) in PascalCase **non** è una violazione.
->>>>>>> laraxot/dev
-=======
-Il nome modulo/tema (`WorkOrder`, `Sixteen`) in PascalCase **non** è una violazione.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 1bis. File `.md` in root — solo 3 ammessi
 

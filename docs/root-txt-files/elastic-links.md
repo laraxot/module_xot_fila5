@@ -7,25 +7,8 @@ description: 'Elenco di 1 riferimenti esterni raccolti per elastic links, dedupl
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: elastic-links.txt
-<<<<<<< HEAD
 =======
 converted_from: _elastic_links.txt
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-converted_from: _elastic_links.txt
-=======
-<<<<<<< HEAD
-converted_from: elastic-links.txt
-=======
-converted_from: _elastic_links.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-converted_from: _elastic_links.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

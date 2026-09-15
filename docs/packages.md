@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: packages
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Pacchetti
 
 ## Configurazione Base

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-overview
-description: " Scopo ('perché esiste')"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot module overview
 
 ## Scopo ("perché esiste")

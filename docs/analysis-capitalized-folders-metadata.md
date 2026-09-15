@@ -144,73 +144,25 @@ class MetatagData extends Data implements MetatagDataInterface, Wireable
 
 ### 3.1 PHPStan (Level 10 - strictest)
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/_bases/<repo progetto>/laravel/Modules/Xot
-=======
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
->>>>>>> laraxot/dev
-=======
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 vendor/bin/phpstan analyse --level=max app/Datas/XotData.php
 ```
 
 ### 3.2 PHPMD (via ./tools)
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_predict_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/_bases/<repo progetto>
-=======
-cd /var/www/_bases/base_predict_fila5
->>>>>>> laraxot/dev
-=======
-cd /var/www/_bases/base_predict_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ./tools/phpmd-check.sh laravel/Modules/Xot/app/Datas/XotData.php
 ```
 
 ### 3.3 PHPInsights
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/_bases/<repo progetto>/laravel/Modules/Xot
-=======
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
->>>>>>> laraxot/dev
-=======
-cd /var/www/_bases/base_predict_fila5/laravel/Modules/Xot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 vendor/bin/phpinsights
 ```
 
 ### 3.4 Application Runtime
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_predict_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/_bases/<repo progetto>
-=======
-cd /var/www/_bases/base_predict_fila5
->>>>>>> laraxot/dev
-=======
-cd /var/www/_bases/base_predict_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 php artisan serve --host=0.0.0.0 --port=8000
 # Test: curl http://localhost:8000/health
 ```

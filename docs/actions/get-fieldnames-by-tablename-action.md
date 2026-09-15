@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: get-fieldnames-by-tablename-action
-description: "Questa action è responsabile del recupero dei nomi dei campi di una tabella del database."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # GetFieldnamesByTablenameAction
 
 Questa action è responsabile del recupero dei nomi dei campi di una tabella del database.

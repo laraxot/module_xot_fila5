@@ -1,25 +1,6 @@
-<<<<<<< HEAD
----
-name: readme
-description: "<<<<<<< HEAD"
-metadata:
-  type: best-practice
----
-
 # Best Practices
 
 <<<<<<< HEAD
-=======
-# Best Practices
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## Laraxot Framework Standards
 
 ### Models
@@ -75,21 +56,8 @@ metadata:
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
 
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Best Practices-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -98,21 +66,6 @@ metadata:
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Laraxot Framework Standards
-
-> **Core module for the <nome progetto> Platform.**
-
-## Perché esiste
-
-Core module for the <nome progetto> Platform.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 ## Laraxot Framework Standards
@@ -123,38 +76,14 @@ Core module for the <nome progetto> Platform.
 ## Perché esiste
 
 Core module for the FixCity Platform.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
-<<<<<<< HEAD
 - Integrated with FixCity Platform
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Integrated with <nome progetto> Platform
-
-=======
-- Integrated with FixCity Platform
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-- Integrated with FixCity Platform
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## Documentazione
 
 | Lingua | Link |
@@ -165,24 +94,8 @@ Core module for the FixCity Platform.
 
 ---
 
-<<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
-=======
-**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Documentation
 - All files in docs/ must be lowercase (except README.md)
@@ -191,15 +104,6 @@ Core module for the FixCity Platform.
 - Include practical examples in all guides
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -213,24 +117,9 @@ canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
 <<<<<<< HEAD
-<<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 =======
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Best Practices-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -240,49 +129,17 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-> **Core module for the <nome progetto> Platform.**
-
-## Perché esiste
-
-Core module for the <nome progetto> Platform.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
-<<<<<<< HEAD
 - Integrated with FixCity Platform
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Integrated with <nome progetto> Platform
-=======
-- Integrated with FixCity Platform
->>>>>>> laraxot/dev
-=======
-- Integrated with FixCity Platform
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -294,23 +151,7 @@ Core module for the FixCity Platform.
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

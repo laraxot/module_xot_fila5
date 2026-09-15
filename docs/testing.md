@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing
-description: " Framework di Testing: Pest"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Testing Guidelines - Modulo Xot
 
 ## Framework di Testing: Pest

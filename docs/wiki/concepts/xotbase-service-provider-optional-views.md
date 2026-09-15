@@ -7,19 +7,7 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "xot base service provider optional resources views directory view cache"
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/7"
-=======
-  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ../../../../../../docs/wiki/concepts/view-cache-filament-v5-prerequisites.md
   - ./xotbase-migration-religion.md

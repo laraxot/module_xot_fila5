@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbase-manage-related-records-documentation-correction-story
-description: " Riepilogo"
-metadata:
-  type: story
----
-
-=======
->>>>>>> laraxot/dev
 # BMAD: Documentazione corretta — analisi reale di XotBaseManageRelatedRecords
 
 ## Riepilogo

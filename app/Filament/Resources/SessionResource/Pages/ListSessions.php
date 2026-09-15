@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\SessionResource\Pages;
 
+use Filament\Tables\Columns\Layout\Stack;
+use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\SessionResource;
 
@@ -13,4 +15,6 @@ use Modules\Xot\Filament\Resources\SessionResource;
 class ListSessions extends XotBaseListRecords
 {
     protected static string $resource = SessionResource::class;
+
+   
 }

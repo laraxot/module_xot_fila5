@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: soketi
-description: "<!-- Contenuto migrato da docs/soketi.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _soketi
 
 <!-- Contenuto migrato da _docs/_soketi.txt -->

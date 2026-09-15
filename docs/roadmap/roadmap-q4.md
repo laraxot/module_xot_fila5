@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: roadmap-q4
-description: " Vision & Scope"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module Roadmap (2025 Q4)
 
 ## Vision & Scope

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: policy-base-strategy
-description: " Obiettivo"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Policy base strategy
 
 ## Obiettivo

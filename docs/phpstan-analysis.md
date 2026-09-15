@@ -1,21 +1,4 @@
 <<<<<<< HEAD
----
-name: phpstan-analysis
-description: "- data: 2025-11-12"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## stato analisi phpstan
 
 - **data**: 2025-11-12
@@ -27,18 +10,7 @@ metadata:
 - mantenere le classi base allineate ai pattern Laraxot (`XotBase*`, trait condivisi);
 - proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
 - verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -809,19 +781,7 @@ test('it can create and manage tenants', function (): void {
 - ✅ **check-all-modules.sh** - Controllo batch tutti i moduli
 
 ### Path Corretti
-<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5`
-=======
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
->>>>>>> laraxot/dev
-=======
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5_mono`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -1115,13 +1075,4 @@ class MyModel extends BaseModel
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
 **Approccio**: DRY + KISS + Type Safety
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

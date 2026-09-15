@@ -19,19 +19,7 @@
 9. **Lang** - 1 errore corretto
 10. **Media** - Già a 0 errori
 11. **Notify** - Già a 0 errori
-<<<<<<< HEAD
 12. **Quaeris** - 2 errori corretti
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-12. **<nome progetto>** - 2 errori corretti
-=======
-12. **Quaeris** - 2 errori corretti
->>>>>>> laraxot/dev
-=======
-12. **Quaeris** - 2 errori corretti
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 13. **UI** - 4 errori corretti
 14. **User** - 1 errore critico corretto (BaseUser)
 15. **Xot** - Già a 0 errori
@@ -54,23 +42,8 @@
 ### Type Narrowing (6 file)
 - `Activity/app/Actions/ActivityLogger.php` - mapWithKeys() return type
 - `UI/app/Filament/Forms/Components/RadioBadge.php` - is_string() ridondante
-<<<<<<< HEAD
 - `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
 - `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `<nome progetto>/app/Actions/Question/GetValue.php` - getExtra() return type
-- `<nome progetto>/app/Filament/Pages/AutoPage.php` - is_object() ridondante
-=======
-- `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
-- `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
->>>>>>> laraxot/dev
-=======
-- `Quaeris/app/Actions/Question/GetValue.php` - getExtra() return type
-- `Quaeris/app/Filament/Pages/AutoPage.php` - is_object() ridondante
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `Geo/app/Models/Address.php` - is_string() ridondante in array_filter()
 - `Geo/app/Actions/UpdateClientCoordinatesBulkAction.php` - is_string() ridondante
 
@@ -90,19 +63,7 @@
 
 1. `Activity/docs/phpstan-corrections-january-2026.md`
 2. `UI/docs/phpstan-corrections-january-2026.md`
-<<<<<<< HEAD
 3. `Quaeris/docs/phpstan-corrections-january-2026.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. `<nome progetto>/docs/phpstan-corrections-january-2026.md`
-=======
-3. `Quaeris/docs/phpstan-corrections-january-2026.md`
->>>>>>> laraxot/dev
-=======
-3. `Quaeris/docs/phpstan-corrections-january-2026.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 4. `Geo/docs/phpstan-corrections-january-2026.md`
 5. `Xot/docs/phpstan-january-2026-summary.md` (questo file)
 
@@ -204,17 +165,5 @@ if (null !== $value) {
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Activity Corrections](../Activity/docs/phpstan-corrections-january-2026.md)
 - [UI Corrections](../UI/docs/phpstan-corrections-january-2026.md)
-<<<<<<< HEAD
 - [Quaeris Corrections](../Quaeris/docs/phpstan-corrections-january-2026.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [<nome progetto> Corrections](../<nome progetto>/docs/phpstan-corrections-january-2026.md)
-=======
-- [Quaeris Corrections](../Quaeris/docs/phpstan-corrections-january-2026.md)
->>>>>>> laraxot/dev
-=======
-- [Quaeris Corrections](../Quaeris/docs/phpstan-corrections-january-2026.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Geo Corrections](../Geo/docs/phpstan-corrections-january-2026.md)

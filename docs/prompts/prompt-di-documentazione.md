@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: prompt-di-documentazione
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Prompt di Documentazione
 
 ## Panoramica
@@ -84,19 +74,7 @@ Questo documento descrive le regole e le best practices per i prompt di document
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-=======
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
->>>>>>> laraxot/dev
-=======
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```

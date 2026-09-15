@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: exportxlsbyview-conflict
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Risoluzione Conflitto in ExportXlsByView
 

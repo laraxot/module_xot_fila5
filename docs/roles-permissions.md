@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: roles-permissions
-description: " Regola generale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole generali su roles, permissions e guard_name
 
 ## Regola generale

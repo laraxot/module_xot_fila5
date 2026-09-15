@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-error
-description: "phpstan-error"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 modulo Geo
 
   Line   \Actions\GetLatitudeLongitudeAction.php

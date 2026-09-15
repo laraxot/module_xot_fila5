@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-5-chart-widgets-complete-guide
-description: " 🎯 Introduzione alla Documentazione JpGraph"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 📚 JpGraph Class Reference - Analisi Completta 2024
 
 ## 🎯 **Introduzione alla Documentazione JpGraph**

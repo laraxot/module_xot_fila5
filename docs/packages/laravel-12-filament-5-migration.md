@@ -1,23 +1,4 @@
-<<<<<<< HEAD
----
-name: laravel-12-filament-5-migration
-description: "Linee guida critiche per l'aggiornamento e la manutenzione dei moduli."
-metadata:
-  type: documentation
----
-
 # Migrazione a Laravel 12 e Filament 5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Migrazione a Laravel 13 e Filament 5
-=======
-# Migrazione a Laravel 12 e Filament 5
->>>>>>> laraxot/dev
-=======
-# Migrazione a Laravel 12 e Filament 5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Linee guida critiche per l'aggiornamento e la manutenzione dei moduli.
 

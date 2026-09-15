@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: autonomous-priority-rule
-description: "Date: 2025-12-18"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Autonomous Priority Rule
 
 **Date**: 2025-12-18

@@ -91,7 +91,7 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 
     $body = trim($m[1]);
 
-    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
+    return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
 }
 
 test('every concrete filament resource has populated schemas and table classes', function (): void {

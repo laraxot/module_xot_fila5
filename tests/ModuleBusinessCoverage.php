@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionMethod;
 
 /**
  * Coverage business: policies, models, actions — esecuzione reale, non class_exists.
@@ -42,7 +44,7 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-            $ref = new \ReflectionClass($class);
+            $ref = new ReflectionClass($class);
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                 continue;
             }
@@ -61,7 +63,7 @@ final class ModuleBusinessCoverage
     public static function mockUser(): UserContract
     {
         /** @var Mockery\MockInterface&UserContract $user */
-        $user = \Mockery::mock(UserContract::class);
+        $user = Mockery::mock(UserContract::class);
         $user->shouldIgnoreMissing();
         $user->shouldReceive('can')->andReturn(true);
         $user->shouldReceive('hasRole')->andReturn(false);
@@ -77,19 +79,19 @@ final class ModuleBusinessCoverage
     {
         $executed = 0;
         $user = self::mockUser();
-        $record = \Mockery::mock(Model::class);
+        $record = Mockery::mock(Model::class);
         $record->shouldIgnoreMissing();
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
-                $policy = new $class();
-                ++$executed;
+                $policy = new $class;
+                $executed++;
 
-                $ref = new \ReflectionClass($policy);
+                $ref = new ReflectionClass($policy);
 
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
+                foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                     $name = $method->getName();
-                    if ('__construct' === $name) {
+                    if ($name === '__construct') {
                         continue;
                     }
 
@@ -100,12 +102,12 @@ final class ModuleBusinessCoverage
                             $type = $param->getType();
                             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                                 $typeName = $type->getName();
-                                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
+                                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
                                     $args[] = $user;
 
                                     continue;
                                 }
-                                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
+                                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
                                     $args[] = $record;
 
                                     continue;
@@ -118,7 +120,7 @@ final class ModuleBusinessCoverage
                     }
                 }
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -139,19 +141,19 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-            ++$discovered;
+            $discovered++;
 
             try {
-                $model = new $class();
-                ++$executed;
+                $model = new $class;
+                $executed++;
                 Assert::assertNotEmpty($model->getTable());
                 Assert::assertNotEmpty($model->getFillable());
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
-        if (0 === $discovered) {
+        if ($discovered === 0) {
             Assert::assertSame(0, $executed);
 
             return;
@@ -166,7 +168,7 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
             try {
-                $ref = new \ReflectionClass($class);
+                $ref = new ReflectionClass($class);
                 if (! $ref->hasMethod('execute') && ! $ref->hasMethod('handle')) {
                     continue;
                 }
@@ -180,13 +182,13 @@ final class ModuleBusinessCoverage
                     }
                 }
 
-                if (null === $instance) {
+                if ($instance === null) {
                     continue;
                 }
 
-                ++$executed;
+                $executed++;
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -199,12 +201,12 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Datas') as $class) {
             try {
-                ++$executed;
+                $executed++;
                 if (method_exists($class, 'from')) {
-                    Assert::assertTrue((new \ReflectionClass($class))->hasMethod('from'));
+                    Assert::assertTrue((new ReflectionClass($class))->hasMethod('from'));
                 }
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 

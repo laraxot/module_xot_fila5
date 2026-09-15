@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: base-classes
-description: " 📋 Overview"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Base Classes Architecture
 
 ## 📋 Overview
@@ -42,27 +32,9 @@ class MyResource extends XotBaseResource
 {
     // ✅ OK - Ha getFormSchema()
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array { /* ... */ }
-    public function getFormSchema(): array { /* ... */ }
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array { /* ... */ }
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
     // ❌ VIETATO - ERRORE GRAVE
@@ -163,27 +135,9 @@ abstract class XotBaseResource extends Filament\Resources\Resource
      * Get form schema with automatic translations.
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -348,27 +302,9 @@ class YourResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -406,49 +342,17 @@ class ListRecords extends XotBaseListRecords // ✅ CORRECT
 }
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## 🚀 Filament 5.x Compatibility
-
-### ✅ Upgrade Status: COMPLETE
-
-Il modulo Xot è completamente compatibile con **Filament 5.x** e fornisce le classi base aggiornate per tutti i moduli del sistema.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## 🚀 Filament 4.x Compatibility
 
 ### ✅ Upgrade Status: COMPLETE
 
 Il modulo Xot è completamente compatibile con **Filament 4.x** e fornisce le classi base aggiornate per tutti i moduli del sistema.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Breaking Changes Handled
 
 #### 1. Namespace Updates
 ```php
-<<<<<<< HEAD
 // Filament 4.x compatible imports in XotBase classes
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Filament 5.x compatible imports in XotBase classes
-=======
-// Filament 4.x compatible imports in XotBase classes
->>>>>>> laraxot/dev
-=======
-// Filament 4.x compatible imports in XotBase classes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Filament\Schemas\Components\Section;    // ✅ NEW
 use Filament\Schemas\Components\Grid;      // ✅ NEW
 use Filament\Schemas\Components\Component; // ✅ NEW
@@ -460,19 +364,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 #### 2. Override Syntax
 ```php
 // ✅ CORRECT in XotBase classes
-<<<<<<< HEAD
 #[Override]  // Filament 4.x syntax
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#[Override]  // Filament 5.x syntax
-=======
-#[Override]  // Filament 4.x syntax
->>>>>>> laraxot/dev
-=======
-#[Override]  // Filament 4.x syntax
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 // ❌ DEPRECATED (but still works)
 #[\Override]
@@ -483,27 +375,9 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 // ✅ OPTIMIZED in XotBase classes
 /** @return array<string, Component> */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 /** @return array<string, PageRegistration> */
@@ -543,19 +417,7 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 #### For Module Developers
 - ✅ **Zero Breaking Changes**: I moduli esistenti continuano a funzionare
 - ✅ **Automatic Upgrades**: Le classi base gestiscono automaticamente i breaking changes
-<<<<<<< HEAD
 - ✅ **Future Proof**: Compatibilità garantita con Filament 4.x+
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ **Future Proof**: Compatibilità garantita con Filament 5.x+
-=======
-- ✅ **Future Proof**: Compatibilità garantita con Filament 4.x+
->>>>>>> laraxot/dev
-=======
-- ✅ **Future Proof**: Compatibilità garantita con Filament 4.x+
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 #### For Framework Maintainers
 - ✅ **Centralized Updates**: Tutti gli upgrade gestiti in un posto
@@ -576,23 +438,8 @@ ImageColumn::configureUsing(fn (ImageColumn $imageColumn) => $imageColumn
 
 ### Documentation Links
 
-<<<<<<< HEAD
 - [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
 - [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5.x Upgrade Guide](../../docs/Filament-5-upgrade.md)
-- [Module Upgrade Guide](../../docs/upgrade-modules-to-Filament-5.md)
-=======
-- [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
-- [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
->>>>>>> laraxot/dev
-=======
-- [Filament 4.x Upgrade Guide](../../docs/filament-4-upgrade.md)
-- [Module Upgrade Guide](../../docs/upgrade-modules-to-filament-4.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Breaking Changes Reference](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 ## 📊 Architecture Benefits

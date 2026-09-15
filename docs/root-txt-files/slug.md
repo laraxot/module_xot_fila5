@@ -7,25 +7,8 @@ description: 'Elenco di 2 riferimenti esterni raccolti per slug, deduplicati e c
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
 converted_from: slug.txt
-<<<<<<< HEAD
 =======
 converted_from: _slug.txt
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-converted_from: _slug.txt
-=======
-<<<<<<< HEAD
-converted_from: slug.txt
-=======
-converted_from: _slug.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-converted_from: _slug.txt
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

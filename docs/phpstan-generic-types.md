@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-generic-types
-description: "Questo documento fornisce linee guida per risolvere gli errori PHPStan di livello 9 relativi ai tipi generici nelle relazioni Eloquent nei m"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione degli Errori PHPStan Relativi ai Tipi Generici nelle Relazioni Eloquent
 
 Questo documento fornisce linee guida per risolvere gli errori PHPStan di livello 9 relativi ai tipi generici nelle relazioni Eloquent nei modelli Laravel.

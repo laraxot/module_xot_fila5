@@ -7,27 +7,9 @@ created: 2026-07-13
 updated: 2026-07-13
 qmd: "Xot BuildTrendCollectionAction flowframe laravel trend delegate PHPStan generics"
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/372"
-discussions:
-  - "https://github.com/laraxot/<repo progetto>/discussions/273"
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ./queueable-action-trait-mandatory.md
   - ./xot-services-support-to-actions.md

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: updated-architecture-rules-memories
-description: " Updated Architectural Principles"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Architecture Rules and Memory Updates
 
 ## Updated Architectural Principles

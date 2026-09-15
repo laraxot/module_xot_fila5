@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: quality-analysis-all-modules
-description: "Data: 2025-12-23"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Data**: 2025-12-23

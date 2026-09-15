@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-merge-conflicts-systematic-resolution
-description: "Data: 2025-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Roadmap: Risoluzione Sistematica Merge Conflicts e PHPStan Errors
 
 **Data**: 2025-01-22

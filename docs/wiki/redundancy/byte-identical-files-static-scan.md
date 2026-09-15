@@ -12,23 +12,8 @@ related:
   - ./xotbase-pattern-abuse.md
   - ../../../../../../docs/wiki/concepts/code-redundancy-audit.md
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/89"
-  - "https://github.com/laraxot/<repo progetto>/issues/90"
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/89"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 
 # Ridondanza: contenuto identico (byte-equal) distribuito su più owner
@@ -82,18 +67,6 @@ Stesso contenuto tra **`Themes/Sixteen/.../components/ui/placeholder.blade.php`*
 
 ## Tracker
 
-<<<<<<< HEAD
 Issue di riferimento: [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89), [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Issue di riferimento: [#89](https://github.com/laraxot/<repo progetto>/issues/89), [#90](https://github.com/laraxot/<repo progetto>/issues/90).
-=======
-Issue di riferimento: [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89), [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
->>>>>>> laraxot/dev
-=======
-Issue di riferimento: [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89), [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Hub cross-cutting modulo: [`ridondanze-cross-cutting-codebase.md`](../concepts/ridondanze-cross-cutting-codebase.md). Glossario rumorosità / merge-marker doc: [`audit-profondo-ridondanze-holistic.md`](./audit-profondo-ridondanze-holistic.md).

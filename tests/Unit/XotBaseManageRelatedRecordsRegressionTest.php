@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 
-/*
+/**
  * Guardia meccanica contro due regressioni avvenute nello stesso giorno
  * (2026-09-11):
  *

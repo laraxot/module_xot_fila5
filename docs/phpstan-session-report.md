@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-session-report
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Correction Session Report - November 2025
 
 ## Executive Summary
@@ -32,19 +22,7 @@ metadata:
 8. **DbForge** (155 files) - 0 errori ✅
 9. **Job** (251 files) - 0 errori ✅
 10. **Geo** (343 files) - 0 errori ✅
-<<<<<<< HEAD
 11. **Quaeris** (380 files) - 0 errori ✅
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-11. **<nome progetto>** (380 files) - 0 errori ✅
-=======
-11. **Quaeris** (380 files) - 0 errori ✅
->>>>>>> laraxot/dev
-=======
-11. **Quaeris** (380 files) - 0 errori ✅
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 12. **Cms** (431 files) - 0 errori ✅
 13. **Notify** (472 files) - 0 errori ✅
 14. **UI** (543 files) - 0 errori ✅ (completato!)
@@ -290,18 +268,6 @@ I moduli rimanenti (Xot, User) richiedono ancora ~2-3 ore di lavoro sistematico 
 
 ---
 
-<<<<<<< HEAD
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3 + Laraxot**
-=======
-**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
->>>>>>> laraxot/dev
-=======
-**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 *Mantra*: "Un modulo alla volta, un errore alla volta, zero compromessi"
