@@ -29,7 +29,6 @@ use Filament\Tables\Enums\RecordActionsPosition;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
-use Filament\Widgets\TableWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -42,7 +41,6 @@ use Modules\UI\Filament\Traits\HasTableLayoutPage;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Filament\PlainTextFromFilamentValueAction;
 use Modules\Xot\Actions\GetTransKeyAction;
-use RuntimeException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -51,7 +49,7 @@ use Webmozart\Assert\Assert;
  * Provides enhanced table functionality with translations and optimized structure.
  *
  * @property TableLayoutEnum $layoutView
- * @property string|null $tableSearch
+ * @property string|null     $tableSearch
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  * @SuppressWarnings("PHPMD.CyclomaticComplexity")
@@ -153,7 +151,7 @@ trait HasXotTable
 
                 $gridColumn->formatStateUsing(
                     static function (mixed $state) use ($labelText): string {
-                        if ($state === null || $state === '') {
+                        if (null === $state || '' === $state) {
                             return $labelText.': —';
                         }
 
@@ -277,12 +275,12 @@ trait HasXotTable
         $sortColumn = $this->getDefaultTableSortColumn();
         // @phpstan-ignore method.deprecated
         $sortDirection = $this->getDefaultTableSortDirection();
-        if ($sortColumn !== null && $sortDirection !== null) {
+        if (null !== $sortColumn && null !== $sortDirection) {
             $table = $table->defaultSort($sortColumn, $sortDirection);
         }
 
         $pollInterval = $this->getTablePollInterval();
-        if ($pollInterval !== null) {
+        if (null !== $pollInterval) {
             $table = $table->poll($pollInterval);
         }
 
@@ -296,7 +294,7 @@ trait HasXotTable
      * Filament\Tables\Concerns\InteractsWithTable richiede visibilità PUBLIC.
      * Vedi: Modules/Xot/docs/filament/widget-method-visibility-rules.md
      *
-     * @return array<string|int, \Filament\Tables\Filters\Filter|TernaryFilter|BaseFilter>
+     * @return array<string|int, Tables\Filters\Filter|TernaryFilter|BaseFilter>
      */
     public function getTableFilters(): array
     {
@@ -336,7 +334,6 @@ trait HasXotTable
         }
         // @phpstan-ignore-next-line staticMethod.alreadyNarrowedType
         Assert::object($resource);
-        
 
         // @phpstan-ignore-next-line function.alreadyNarrowedType
         if (method_exists($resource, 'canView')) {
@@ -403,11 +400,11 @@ trait HasXotTable
     /**
      * Get model class.
      *
+     * @throws \Exception Se non viene trovata una classe modello valida
      *
      * @return class-string<Model>
-     * @phpstan-return class-string<Model>
      *
-     * @throws \Exception Se non viene trovata una classe modello valida
+     * @phpstan-return class-string<Model>
      */
     public function getModelClass(): string
     {
@@ -420,9 +417,9 @@ trait HasXotTable
             $related = $relationship instanceof Builder ? $relationship->getModel() : $relationship->getRelated();
             if ($related instanceof Model) {
                 /** @var class-string<Model> $relatedClass */
-            $relatedClass = get_class($related);
+                $relatedClass = get_class($related);
 
-            return $relatedClass;
+                return $relatedClass;
             }
         }
 
@@ -431,13 +428,13 @@ trait HasXotTable
             $model = $this->getModel();
             Assert::string($model);
             if (! is_a($model, Model::class, true)) {
-                throw new RuntimeException('Invalid model class '.$model);
+                throw new \RuntimeException('Invalid model class '.$model);
             }
 
             return $model;
         }
 
-        throw new RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
+        throw new \RuntimeException('No model found in '.class_basename(self::class).'::'.__FUNCTION__);
     }
 
     /**
@@ -459,7 +456,7 @@ trait HasXotTable
 
         $trimmed = Str::trim(SafeStringCastAction::cast($tableSearch));
 
-        return $trimmed !== '' ? $trimmed : null;
+        return '' !== $trimmed ? $trimmed : null;
     }
 
     /**
