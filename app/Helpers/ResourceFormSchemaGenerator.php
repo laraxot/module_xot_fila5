@@ -71,15 +71,7 @@ class ResourceFormSchemaGenerator
     public static function generateForAllResources(): array
     {
         $resourceFiles = glob(
-<<<<<<< HEAD
             '/var/www/html/base_orisbroker_fila5/laravel/Modules/*/app/Filament/Resources/*Resource.php',
-=======
-<<<<<<< HEAD
-            '/var/www/html/<repo progetto>/laravel/Modules/*/app/Filament/Resources/*Resource.php',
-=======
-            '/var/www/html/base_orisbroker_fila5/laravel/Modules/*/app/Filament/Resources/*Resource.php',
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         );
 
         $results = ['updated' => [], 'skipped' => []];

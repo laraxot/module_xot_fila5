@@ -32,13 +32,6 @@ return [
         'updater' => [
             'name' => ['label' => 'updater.name'],
         ],
-<<<<<<< HEAD
         'name_count' => ['label' => 'name_count'],
-=======
-<<<<<<< HEAD
-=======
-        'name_count' => ['label' => 'name_count'],
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

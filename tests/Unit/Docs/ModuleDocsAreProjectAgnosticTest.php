@@ -29,26 +29,16 @@ uses(TestCase::class);
  * Nomi di installazioni note. Vivono qui e non nel wiki: elencarli in un documento
  * agnostico sarebbe la violazione che il documento vieta.
  *
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
  * Una guardia che cerca il **placeholder** non e' una guardia: fino al 2026-09-09 questo
  * array conteneva `['<nome progetto>', '<nome progetto>']`, cioe' proprio la stringa con
  * cui si bonifica. Contava la cura invece della malattia, e lasciava passare qualunque
  * nome vero. Un file di test non e' documentazione di modulo: qui i nomi ci devono stare,
  * altrimenti non c'e' niente da cercare.
  *
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * @return list<string>
  */
 function hostProjectNames(): array
 {
-<<<<<<< HEAD
-    return ['fixcity', 'quaeris'];
-=======
-<<<<<<< HEAD
     return [
         'fixcity',
         'ptvx',
@@ -71,10 +61,6 @@ function moduleReadmesWithHostProjectName(): array
         static fn (string $path): bool => str_ends_with($path, '/README.md'),
         ARRAY_FILTER_USE_KEY
     );
-=======
-    return ['fixcity', 'quaeris'];
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 }
 
 /**
@@ -104,18 +90,10 @@ function moduleDocsWithHostProjectName(): array
 
             $path = $fileInfo->getPathname();
 
-<<<<<<< HEAD
-            if (! str_contains($path, '/docs/')) {
-=======
-<<<<<<< HEAD
             // Ogni .md del modulo, non solo quelli sotto /docs/: il README e' il primo
             // file che si legge quando il modulo viene riusato altrove, ed era fuori
             // dal perimetro. Misurati 17 README con un nome di installazione dentro.
             if (str_contains($path, '/vendor/') || str_contains($path, '/node_modules/') || str_contains($path, '/graphify-out/')) {
-=======
-            if (! str_contains($path, '/docs/')) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 continue;
             }
 
@@ -131,9 +109,6 @@ function moduleDocsWithHostProjectName(): array
 }
 
 /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
  * Tetto rimisurato il 2026-09-09 dopo aver aggiunto `techplanner` e `laravelpizza`
  * all'elenco: 1286 file. Il salto da 1125 non e' un peggioramento del repo, e' il
  * rilevatore che vede due installazioni che prima ignorava — 178 file le nominavano
@@ -142,16 +117,6 @@ function moduleDocsWithHostProjectName(): array
  * ratchet che non scende torna verde per inerzia.
  */
 const MODULE_DOCS_HOST_NAME_FILE_BASELINE = 1286;
-=======
->>>>>>> laraxot/dev
- * Tetto misurato il 2026-09-08. Scende con la bonifica, non sale mai.
- * Quando bonifichi, abbassalo: un ratchet che non scende torna verde per inerzia.
- */
-const MODULE_DOCS_HOST_NAME_FILE_BASELINE = 1642;
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 test('nessun documento nuovo di modulo nomina il progetto ospite', function (): void {
     $hits = moduleDocsWithHostProjectName();
@@ -159,22 +124,11 @@ test('nessun documento nuovo di modulo nomina il progetto ospite', function (): 
     expect(count($hits))->toBeLessThanOrEqual(
         MODULE_DOCS_HOST_NAME_FILE_BASELINE,
         "Un documento di modulo nomina un'installazione specifica. Un modulo gira in "
-<<<<<<< HEAD
         ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
-=======
-<<<<<<< HEAD
-        .'più progetti: il dato specifico sta nella configurazione del progetto, non qui. '
-=======
-        ."più progetti: il dato specifico sta nella configurazione del progetto, non qui. "
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         .'Vedi docs/wiki/rules/project-agnostic.md'
     );
 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 /**
  * Sui README il tetto e' ZERO, e non e' un inasprimento arbitrario.
  *
@@ -199,9 +153,6 @@ test('nessun README di modulo o tema nomina il progetto ospite', function (): vo
     );
 });
 
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 test('il tetto resta allineato al debito, cosi la guardia continua a misurare', function (): void {
     $hits = moduleDocsWithHostProjectName();
 

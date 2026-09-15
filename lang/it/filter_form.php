@@ -13,22 +13,14 @@ return [
         'created_from' => [
             'label' => 'created_from',
             'placeholder' => 'created_from',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'created_from',
->>>>>>> laraxot/dev
             'description' => 'created_from',
             'tooltip' => '',
         ],
         'created_until' => [
             'label' => 'created_until',
             'placeholder' => 'created_until',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'created_until',
->>>>>>> laraxot/dev
             'description' => 'created_until',
             'tooltip' => '',
         ],
