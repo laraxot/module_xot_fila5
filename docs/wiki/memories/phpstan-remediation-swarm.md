@@ -22,19 +22,7 @@ Runbook for the recurring **30-error tail** seen in swarm PHPStan passes on Tech
 
 ## 1. Bootstrap: pin `main_module` to TechPlanner
 
-<<<<<<< HEAD
 **Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Fixcity\Models\Profile`.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\<nome progetto>\Models\Profile`.
-=======
-**Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Fixcity\Models\Profile`.
->>>>>>> laraxot/dev
-=======
-**Symptom:** `class.notFound` — Blog models report `@property … $deleter` referencing `Modules\Fixcity\Models\Profile`.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Root cause:** Larastan resolves `Updater::deleter()` / `creator()` / `updater()` via `XotData::getProfileClass()` at analysis time. A stale or cross-tenant `main_module` points at a module that is not in this mono-repo.
 
@@ -122,18 +110,6 @@ Target: **0 errors**, empty baseline.
 
 ## False friends (do not “fix”)
 
-<<<<<<< HEAD
 - Do not replace `ProfileContract` PHPDoc with concrete Fixcity class — fix bootstrap `main_module`.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Do not replace `ProfileContract` PHPDoc with concrete <nome progetto> class — fix bootstrap `main_module`.
-=======
-- Do not replace `ProfileContract` PHPDoc with concrete Fixcity class — fix bootstrap `main_module`.
->>>>>>> laraxot/dev
-=======
-- Do not replace `ProfileContract` PHPDoc with concrete Fixcity class — fix bootstrap `main_module`.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Do not add `@phpstan-ignore` for Safe functions — import Safe variants.
 - Do not widen enum unions to silence `mapWithKeys` — type the callback return `array<string, string>`.

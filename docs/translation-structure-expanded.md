@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: translation-structure-expanded
-description: " Scopo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Struttura Traduzioni Espansa - Modulo Xot
 
 ## Scopo

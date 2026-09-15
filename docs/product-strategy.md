@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: product-strategy
-description: "> Strategia prodotto. Modulo Core Framework."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot - Product Strategy
 
 > Strategia prodotto. Modulo Core Framework.
@@ -307,19 +297,7 @@ Quando si prendono decisioni su Xot, priorita' basata su:
 | Assumption | Validation Method | Status |
 |------------|-------------------|--------|
 | All modules use Xot | Architecture audit | Validated |
-<<<<<<< HEAD
 | Laravel 12 compatible | Version check | Validated |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Laravel 13 compatible | Version check | Validated |
-=======
-| Laravel 12 compatible | Version check | Validated |
->>>>>>> laraxot/dev
-=======
-| Laravel 12 compatible | Version check | Validated |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | PHPStan L10 achievable | Current progress | In Progress |
 | AI will write more code | Industry trends | Validated |
 

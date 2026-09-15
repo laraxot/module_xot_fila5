@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-phpstan-analysis-report-18-agosto
-description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 18 Agosto 2025
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: base-classes-additional-fix
-description: "Data: 15 Ottobre 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzione Classi Base Aggiuntive - Modulo Xot
 
 **Data:** 15 Ottobre 2025
@@ -146,16 +136,6 @@ XotBaseModel (Xot) - Base standard
 =======
 <<<<<<< HEAD
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 - [Model Inheritance Complete Fix](../../docs/model_inheritance_complete_fix.md)
 - [DRY/KISS Analysis](../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -163,23 +143,7 @@ XotBaseModel (Xot) - Base standard
 ---
 
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 **Conclusione:** Anche le classi base specializzate ora seguono l'architettura Laraxot standard.
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

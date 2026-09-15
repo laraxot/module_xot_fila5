@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation-guidelines-linee-guida-per-la-documentazione-in-lar
-description: "Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Linee Guida per la Documentazione in Laraxot
 
 Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot.

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-patterns
-description: "Project: PTVX Fila5 Mono"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Migration Patterns & Best Practices
 
 **Project**: PTVX Fila5 Mono  

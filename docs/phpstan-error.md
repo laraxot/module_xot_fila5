@@ -1,23 +1,5 @@
 <<<<<<< HEAD
----
-name: phpstan-error
-description: "phpstan-error"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Phpstan error'
 module: Xot
@@ -30,15 +12,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 modulo Geo
 
@@ -63,14 +36,4 @@ modulo Xot
 <<<<<<< HEAD
 
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

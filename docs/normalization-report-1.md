@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: normalization-report-1
-description: " Azioni Completate"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Report Normalizzazione Documentazione - Gennaio 2025
 
 ## Azioni Completate

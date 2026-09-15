@@ -9,18 +9,6 @@ uno degli errori più comuni è la confusione tra il namespace nel codice php e 
 i file dei moduli devono sempre seguire questa struttura:
 
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-Modules/{NomeModulo}/app/{Tipo}/...
-```
-
-per esempio:
-- `Modules/<nome progetto>/app/Filament/Resources/...`
-- `Modules/<nome progetto>/app/Models/...`
-- `Modules/<nome progetto>/app/Http/Controllers/...`
-=======
-=======
->>>>>>> laraxot/dev
 /var/www/html/base_saluteora/laravel/Modules/{NomeModulo}/app/{Tipo}/...
 ```
 
@@ -28,10 +16,6 @@ per esempio:
 - `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Filament/Resources/...`
 - `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Models/...`
 - `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Http/Controllers/...`
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 ### namespace corretto
 
@@ -42,36 +26,16 @@ namespace Modules\{NomeModulo}\{Tipo}\...;
 ```
 
 per esempio:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `namespace Modules\<nome progetto>\Filament\Resources;`
-- `namespace Modules\<nome progetto>\Models;`
-- `namespace Modules\<nome progetto>\Http\Controllers;`
-=======
 - `namespace Modules\SaluteOra\Filament\Resources;`
 - `namespace Modules\SaluteOra\Models;`
 - `namespace Modules\SaluteOra\Http\Controllers;`
->>>>>>> laraxot/dev
-=======
-- `namespace Modules\SaluteOra\Filament\Resources;`
-- `namespace Modules\SaluteOra\Models;`
-- `namespace Modules\SaluteOra\Http\Controllers;`
->>>>>>> laraxot/dev
 
 ## errore comune
 
 spesso si confonde il percorso fisico con il namespace, cercando file in:
 
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
-Modules/{NomeModulo}/{Tipo}/...
-=======
 /var/www/html/base_saluteora/laravel/Modules/{NomeModulo}/{Tipo}/...
->>>>>>> laraxot/dev
-=======
-/var/www/html/base_saluteora/laravel/Modules/{NomeModulo}/{Tipo}/...
->>>>>>> laraxot/dev
 ```
 
 questo è **errato** perché omette la directory `app/` nel percorso fisico.
@@ -85,18 +49,8 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 | namespace | percorso fisico |
 |-----------|----------------|
-<<<<<<< HEAD
-<<<<<<< HEAD
-| `Modules\<nome progetto>\Filament\Resources\DoctorResource` | `Modules/<nome progetto>/app/Filament/Resources/DoctorResource.php` |
-| `Modules\User\Models\User` | `Modules/User/app/Models/User.php` |
-=======
 | `Modules\SaluteOra\Filament\Resources\DoctorResource` | `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Filament/Resources/DoctorResource.php` |
 | `Modules\User\Models\User` | `/var/www/html/base_saluteora/laravel/Modules/User/app/Models/User.php` |
->>>>>>> laraxot/dev
-=======
-| `Modules\SaluteOra\Filament\Resources\DoctorResource` | `/var/www/html/base_saluteora/laravel/Modules/SaluteOra/app/Filament/Resources/DoctorResource.php` |
-| `Modules\User\Models\User` | `/var/www/html/base_saluteora/laravel/Modules/User/app/Models/User.php` |
->>>>>>> laraxot/dev
 
 ## come evitare l'errore
 
@@ -106,15 +60,5 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 ## linkback
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [convenzioni di codice](project_docs/conventions.md)
-- [struttura progetto](project_docs/project-structure.md)
-=======
 - [convenzioni di codice](/var/www/html/base_saluteora/laravel/docs/conventions.md)
 - [struttura progetto](/var/www/html/base_saluteora/laravel/docs/project-structure.md)
->>>>>>> laraxot/dev
-=======
-- [convenzioni di codice](/var/www/html/base_saluteora/laravel/docs/conventions.md)
-- [struttura progetto](/var/www/html/base_saluteora/laravel/docs/project-structure.md)
->>>>>>> laraxot/dev

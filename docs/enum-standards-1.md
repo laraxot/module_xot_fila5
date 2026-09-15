@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: enum-standards-1
-description: "This document defines the standards and best practices for working with Enums in the <nome progetto> project."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Enum Standards in <nome progetto>
 
 This document defines the standards and best practices for working with Enums in the <nome progetto> project.

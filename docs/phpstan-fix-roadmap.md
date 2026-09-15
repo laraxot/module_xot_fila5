@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fix-roadmap
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Error Resolution Roadmap - Xot Module
 
 ## Executive Summary

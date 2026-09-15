@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: redundancy-rules
-description: " Principio Fondamentale: DRY (Don't Repeat Yourself)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole Anti-Ridondanza per XotBase Classes
 
 ## Principio Fondamentale: DRY (Don't Repeat Yourself)

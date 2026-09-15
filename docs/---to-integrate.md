@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: to-integrate
-description: "<!-- Contenuto migrato da docs/tointegrate.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ___to_integrate
 
 <!-- Contenuto migrato da _docs/___to_integrate.txt -->

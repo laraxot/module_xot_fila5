@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: rules-testing-no-migrate-fresh
-description: " Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule

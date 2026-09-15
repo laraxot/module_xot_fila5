@@ -1,40 +1,12 @@
 <<<<<<< HEAD
 ---
-name: underscore-docs-rule
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
----
 module: theme
 topic: underscore-docs-rule
 canonical: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/UNDERSCORE_DOCS_RULE.md
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale
@@ -133,13 +105,4 @@ find laravel/Modules -name ".gitignore" -exec grep "_docs/" {} \;
 - Git Convention: Underscore prefix = temporary
 - Laravel Convention: Use `docs/`, not `_docs/`
 - Clean Code: No temporary files in repository
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

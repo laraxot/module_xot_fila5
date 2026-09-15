@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: panel-provider-patterns
-description: " Pattern Obbligatorio: Assegnazione Valore di Ritorno Actions"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Panel Provider Patterns - XotBasePanelProvider e XotBaseMainPanelProvider
 
 ## Pattern Obbligatorio: Assegnazione Valore di Ritorno Actions

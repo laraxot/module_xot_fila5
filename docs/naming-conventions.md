@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: naming-conventions
-description: "Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Nomenclatura in Laravel Modules
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto Laravel Modules.

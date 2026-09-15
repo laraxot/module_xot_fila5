@@ -24,19 +24,7 @@
 ```
 
 Verifica modulo per modulo - **TUTTI PULITI**:
-<<<<<<< HEAD
 - ✅ Activity, AI, Blog, Cms, Comment, Fixcity
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ Activity, AI, Blog, Cms, Comment, <nome progetto>
-=======
-- ✅ Activity, AI, Blog, Cms, Comment, Fixcity
->>>>>>> laraxot/dev
-=======
-- ✅ Activity, AI, Blog, Cms, Comment, Fixcity
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - ✅ Gdpr, Geo, Job, Lang, Media, Notify  
 - ✅ Rating, Seo, Tenant, UI, User, Xot
 
@@ -48,19 +36,7 @@ Verifica modulo per modulo - **TUTTI PULITI**:
 - **Blog/app**: 0 errori critici ✅
 - **Cms/app**: 0 errori critici ✅
 - **Comment/app**: 0 errori critici ✅
-<<<<<<< HEAD
 - **Fixcity/app**: 0 errori critici ✅
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>/app**: 0 errori critici ✅
-=======
-- **Fixcity/app**: 0 errori critici ✅
->>>>>>> laraxot/dev
-=======
-- **Fixcity/app**: 0 errori critici ✅
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Gdpr/app**: 0 errori critici ✅
 - **Geo/app**: 0 errori critici ✅
 - **Job/app**: 0 errori critici ✅
@@ -340,19 +316,7 @@ Le classi anonime nei test causano errori PHPStan perché l'analisi statica non 
 | Blog     | 0              | ✅ PULITO |
 | Cms      | 0              | ✅ PULITO |
 | Comment  | 0              | ✅ PULITO |
-<<<<<<< HEAD
 | Fixcity  | 0              | ✅ PULITO |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto>  | 0              | ✅ PULITO |
-=======
-| Fixcity  | 0              | ✅ PULITO |
->>>>>>> laraxot/dev
-=======
-| Fixcity  | 0              | ✅ PULITO |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Gdpr     | 0              | ✅ PULITO |
 | Geo      | 0              | ✅ PULITO |
 | Job      | 0              | ✅ PULITO |

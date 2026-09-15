@@ -17,11 +17,11 @@ declare(strict_types=1);
  * Bonifica: python3 bashscripts/tools/audit/audit-case-collisions.py --fix-identical
  */
 
+use Symfony\Component\Process\Process;
+
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\json_decode;
-
-use Symfony\Component\Process\Process;
 
 function repoRoot(): string
 {
@@ -43,7 +43,7 @@ function collisionGroups(): int
     try {
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
-    } catch (Throwable) {
+    } catch (\Throwable) {
         return -1;
     }
 

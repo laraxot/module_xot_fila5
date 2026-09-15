@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: php-strict-types
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHP Strict Types in Laravel Modules
 
 ## Overview

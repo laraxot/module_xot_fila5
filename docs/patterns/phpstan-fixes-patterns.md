@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fixes-patterns
-description: " Pattern 1: nullCoalesce.offset su array non-nullabile"
-metadata:
-  type: pattern
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Fix Patterns — Xot Module
 
 ## Pattern 1: nullCoalesce.offset su array non-nullabile

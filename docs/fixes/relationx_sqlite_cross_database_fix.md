@@ -1,60 +1,18 @@
-<<<<<<< HEAD
----
-name: relationx-sqlite-cross-database-fix
-description: " Problema Risolto"
-metadata:
-  type: fix
----
-
-=======
->>>>>>> laraxot/dev
 # RelationX SQLite Cross-Database Fix
 
 ## Problema Risolto
 
 **Data**: 26 Settembre 2025  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
-
-## Causa Radice
-
-Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`<nome progetto>_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: quaeris_data.customer_user`
 
 ## Causa Radice
 
 Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome della tabella pivot (`quaeris_data.customer_user`) per le relazioni cross-database. Questo approccio funziona con MySQL ma non con SQLite, che non supporta la sintassi `database.table`.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Soluzione Implementata
 
 ### File Modificato
-<<<<<<< HEAD
 `/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-`/var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
-=======
-`/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
->>>>>>> laraxot/dev
-=======
-`/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Correzione Applicata
 Righe 51-59, aggiunto controllo del driver database:
@@ -87,19 +45,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 - ✅ Multi-tenancy cross-database
 
 ### Moduli Affetti
-<<<<<<< HEAD
 - **Quaeris Module**: Customer-User relationships
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto> Module**: Customer-User relationships
-=======
-- **Quaeris Module**: Customer-User relationships
->>>>>>> laraxot/dev
-=======
-- **Quaeris Module**: Customer-User relationships
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **User Module**: HasTenants trait functionality
 - **Tutti i moduli**: che usano `belongsToManyX` con database separati
 
@@ -127,19 +73,7 @@ echo $tenants->count(); // ✅ Output: 1
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Customer User Fix Summary](../../<nome progetto>/docs/customer_user_fix_summary.md)
-=======
-- [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
->>>>>>> laraxot/dev
-=======
-- [Customer User Fix Summary](../../Quaeris/docs/customer_user_fix_summary.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Cross Database Relations](../../User/docs/cross_database_relations_issue.md)
 - [Multi-Tenant Architecture](../architecture/multi_tenant_design.md)
 

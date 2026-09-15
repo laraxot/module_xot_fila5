@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-level-10-dry-kiss-analysis-phpstan-level-10-drykiss-complete-analy
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 + DRY/KISS Complete Analysis - 2025-10-17
 
 ## Executive Summary
@@ -44,50 +34,16 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 
 **Errore**:
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-PHPDoc tag @property-read contains unknown class Modules\<nome progetto>\Models\Profile
-```
-
-**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\<nome progetto>\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
 ```
 
 **Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Prima**:
 ```php
 /**
-<<<<<<< HEAD
  * @property-read \Modules\Fixcity\Models\Profile|null $creator
  * @property-read \Modules\Fixcity\Models\Profile|null $updater
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property-read \Modules\<nome progetto>\Models\Profile|null $creator
- * @property-read \Modules\<nome progetto>\Models\Profile|null $updater
-=======
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
->>>>>>> laraxot/dev
-=======
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 class AuthenticationLog extends BaseModel
 ```
@@ -103,19 +59,7 @@ class AuthenticationLog extends BaseModel
 
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Risultato**: ✅ 0 errori PHPStan Level 10 per questa categoria
@@ -124,19 +68,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Errori PHPStan Level 10**:
 ```
@@ -174,19 +106,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-<<<<<<< HEAD
 | Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> laraxot/dev
-=======
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -229,19 +149,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-<<<<<<< HEAD
 - Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> laraxot/dev
-=======
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -381,19 +289,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Contact.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/<nome progetto>/app/Models/Contact.php`
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php`
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -454,19 +350,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
-=======
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -535,19 +419,7 @@ class User extends BaseModel
 
 **Comando**:
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Risultato**:
@@ -560,37 +432,13 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-<<<<<<< HEAD
 - **Quaeris**: 5 modelli
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: 5 modelli
-=======
-- **Quaeris**: 5 modelli
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: 5 modelli
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-<<<<<<< HEAD
 cd Modules/Quaeris/app/Models
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd Modules/<nome progetto>/app/Models
-=======
-cd Modules/Quaeris/app/Models
->>>>>>> laraxot/dev
-=======
-cd Modules/Quaeris/app/Models
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -609,19 +457,7 @@ done
 
 **Comando**:
 ```bash
-<<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
-=======
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
->>>>>>> laraxot/dev
-=======
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Risultato**:
@@ -1033,37 +869,13 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
->>>>>>> laraxot/dev
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-<<<<<<< HEAD
 - Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> laraxot/dev
-=======
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Manual Code Review
 
@@ -1177,50 +989,16 @@ PHPStan ha 10 livelli di analisi statica (0-10). **Level 10 è il massimo** e ap
 
 **Errore**:
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-PHPDoc tag @property-read contains unknown class Modules\<nome progetto>\Models\Profile
-```
-
-**Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\<nome progetto>\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 PHPDoc tag @property-read contains unknown class Modules\Fixcity\Models\Profile
 ```
 
 **Causa**: I modelli avevano PHPDoc auto-generati che referenziavano `Modules\Fixcity\Models\Profile`, una classe che non esiste più (probabilmente da vecchio progetto).
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Prima**:
 ```php
 /**
-<<<<<<< HEAD
  * @property-read \Modules\Fixcity\Models\Profile|null $creator
  * @property-read \Modules\Fixcity\Models\Profile|null $updater
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property-read \Modules\<nome progetto>\Models\Profile|null $creator
- * @property-read \Modules\<nome progetto>\Models\Profile|null $updater
-=======
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
->>>>>>> laraxot/dev
-=======
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
- * @property-read \Modules\Fixcity\Models\Profile|null $updater
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 class AuthenticationLog extends BaseModel
 ```
@@ -1236,19 +1014,7 @@ class AuthenticationLog extends BaseModel
 
 **Fix applicato**: Sostituzione automatica con sed in 47 file
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Risultato**: ✅ 0 errori PHPStan Level 10 per questa categoria
@@ -1257,19 +1023,7 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 #### Problema 2: ⚠️ Type hints mancanti in Contact model
 
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/<nome progetto>/app/Models/Contact.php` (809 righe!)
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php` (809 righe!)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Errori PHPStan Level 10**:
 ```
@@ -1307,19 +1061,7 @@ if ($body_html === null) { ... }
 |--------|--------------|-----------------|--------|
 | User | 16 | 0 | ✅ |
 | Xot | 16 | 0 | ✅ |
-<<<<<<< HEAD
 | Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | 21+ | 21 | ⚠️ Necessita refactoring Contact |
-=======
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> laraxot/dev
-=======
-| Quaeris | 21+ | 21 | ⚠️ Necessita refactoring Contact |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Gdpr | 6 | 0 | ✅ |
 | Notify | 8 | 0 | ✅ |
 
@@ -1362,19 +1104,7 @@ class Notification extends BaseModel // Eredita $connection = 'user'
 
 **Fix applicato**:
 - User module: 7 file (Notification, SocialiteUser, OauthAccessToken, AuthenticationLog, BaseTeamUser, Membership, TenantUser)
-<<<<<<< HEAD
 - Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <nome progetto> module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
-=======
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> laraxot/dev
-=======
-- Quaeris module: 5 file (Contact, ContactSimple, PdfStyle, QuestionChart, SurveyPdf)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Altri moduli: ~51 file
 
 **Comando usato**:
@@ -1514,19 +1244,7 @@ protected function casts(): array
 
 ### Violazione KISS #1: ❌ Contact.php - Complessità elevata (CRITICA)
 
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Contact.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/<nome progetto>/app/Models/Contact.php`
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php`
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/Quaeris/app/Models/Contact.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Righe**: 809 (!!!)
 **Metodi**: 40+
 
@@ -1587,19 +1305,7 @@ Contact.php (809 lines) →
 
 ### Violazione KISS #2: ❌ QuestionChart.php - Complessità alta
 
-<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
-=======
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> laraxot/dev
-=======
-**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Righe**: 882 (!)
 
 **Stesso problema di Contact.php**
@@ -1668,19 +1374,7 @@ class User extends BaseModel
 
 **Comando**:
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\<nome progetto>\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
-=======
-find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Profile/Modules\\Xot\\Contracts\\ProfileContract/g' {} \;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Risultato**:
@@ -1693,37 +1387,13 @@ find Modules -type f -name "*.php" -exec sed -i 's/Modules\\Fixcity\\Models\\Pro
 
 **Moduli fixati**:
 - **User**: 7 modelli
-<<<<<<< HEAD
 - **Quaeris**: 5 modelli
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: 5 modelli
-=======
-- **Quaeris**: 5 modelli
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: 5 modelli
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Notify**: ~8 modelli
 - **Altri**: ~43 modelli
 
 **Esempio comando**:
 ```bash
-<<<<<<< HEAD
 cd Modules/Quaeris/app/Models
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd Modules/<nome progetto>/app/Models
-=======
-cd Modules/Quaeris/app/Models
->>>>>>> laraxot/dev
-=======
-cd Modules/Quaeris/app/Models
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 for f in *.php; do
   if grep -q "extends BaseModel" "$f"; then
     sed -i '/^[[:space:]]*protected \$connection = /d' "$f"
@@ -1742,19 +1412,7 @@ done
 
 **Comando**:
 ```bash
-<<<<<<< HEAD
 vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-vendor/bin/pint Modules/User/app/Models Modules/<nome progetto>/app/Models --quiet
-=======
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
->>>>>>> laraxot/dev
-=======
-vendor/bin/pint Modules/User/app/Models Modules/Quaeris/app/Models --quiet
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Risultato**:
@@ -2166,37 +1824,13 @@ $activeUsers = User::active()->get(); // ✅ Works!
 ```bash
 ./vendor/bin/phpstan analyse Modules/User/app/Models --level=10
 ./vendor/bin/phpstan analyse Modules/Xot/app/Models --level=10
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Models --level=10
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
->>>>>>> laraxot/dev
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Models --level=10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Results**:
 - User: ✅ 0 errors (dopo fix)
 - Xot: ✅ 0 errors (dopo fix)
-<<<<<<< HEAD
 - Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <nome progetto>: ⚠️ 21 errors (Contact.php - needs refactoring)
-=======
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> laraxot/dev
-=======
-- Quaeris: ⚠️ 21 errors (Contact.php - needs refactoring)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Manual Code Review
 

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ai-methodologies
-description: "This file is a DRY local index for AI workflows in this module or theme."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # AI Methodologies Handbook
 
 This file is a DRY local index for AI workflows in this module or theme.

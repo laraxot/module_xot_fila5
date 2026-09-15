@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-patterns-dec
-description: " 🎯 Nuovi Pattern Scoperti"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Patterns - Dicembre 2025
 
 ## 🎯 Nuovi Pattern Scoperti

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: regexp
-description: "regexp"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 //------------------------------
 strip_tags
 <[^>]*>(.*)<\/[^>]*>

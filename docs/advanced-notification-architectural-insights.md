@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: advanced-notification-architectural-insights
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Advanced Notification Patterns and Architectural Insights
 
 ## Overview

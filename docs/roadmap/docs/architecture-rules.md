@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: architecture-rules
-description: "This module adheres to the Laraxot Architecture and Super Cow Methodology."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

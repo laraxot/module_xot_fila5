@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: getter-zen
-description: " Il Principio Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # La Filosofia Zen dei Getter Semantici
 

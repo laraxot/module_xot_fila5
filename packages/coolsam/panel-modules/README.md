@@ -9,7 +9,6 @@
 
 Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel-modules`
 
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
@@ -26,18 +25,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -46,7 +37,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -65,18 +55,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -88,7 +70,25 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -100,32 +100,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
@@ -134,27 +108,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -175,18 +132,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -198,10 +147,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
@@ -210,15 +155,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -243,18 +183,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -266,7 +198,25 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
+**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -278,32 +228,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
@@ -312,27 +236,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -353,18 +260,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -376,10 +275,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
@@ -388,15 +283,10 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -427,7 +317,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -444,7 +333,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -461,7 +349,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -476,7 +363,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -489,9 +375,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-=======
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 

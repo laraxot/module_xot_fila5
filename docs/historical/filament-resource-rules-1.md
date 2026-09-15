@@ -68,14 +68,6 @@ protected static ?string $model = YourModel::class;
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_Dzxkz3
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -87,7 +79,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvPzyC
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -185,14 +176,6 @@ class DoctorResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_Dzxkz3
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -204,7 +187,6 @@ class DoctorResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_hvPzyC
->>>>>>> laraxot/dev
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

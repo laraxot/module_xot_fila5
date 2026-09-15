@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: coding-standards
-description: "> Nota: Questo documento è correlato a [Convenzioni](../../../projectdocs/conventions.md) e [Naming Conventions](../../../projectdocs/naming"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Standard di Codice per il progetto
 
 > **Nota**: Questo documento è correlato a [Convenzioni](../../../project_docs/conventions.md) e [Naming Conventions](../../../project_docs/naming-conventions.md). Per una panoramica completa, consulta tutti i documenti correlati.

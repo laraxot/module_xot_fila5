@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-level10-complete-audit
-description: " Data Audit"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Livello 10 - Audit Completo Progetto
 
 ## Data Audit

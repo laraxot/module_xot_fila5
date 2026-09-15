@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: future-enhancements
-description: " 📋 Table of Contents"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Future Enhancements
 
 ## 📋 Table of Contents

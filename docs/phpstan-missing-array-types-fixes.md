@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-missing-array-types-fixes
-description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Missing Array Types Fixes - Modulo Xot
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨

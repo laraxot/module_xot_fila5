@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-execution-safety
-description: " Absolute rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Migration Execution Safety Rule
 
 ## Absolute rule

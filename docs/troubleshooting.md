@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: troubleshooting
-description: " 📋 Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🚨 **Troubleshooting Modulo Xot**
 
 ## 📋 **Panoramica**

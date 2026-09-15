@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbase
-description: "> 'Mai estendere Filament direttamente - Sempre tramite XotBase'"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # XotBase Architecture & Extension Rules
 
 > **"Mai estendere Filament direttamente - Sempre tramite XotBase"**
@@ -40,27 +30,9 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-<<<<<<< HEAD
-- **XotBaseResource**: Deve implementare `public static function getFormSchema(): array` (centralizzato).
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
 =======
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ### 3. Namespace Standard

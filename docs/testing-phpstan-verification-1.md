@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-phpstan-verification-1
-description: "Data verifica: 18 Gennaio 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Verifica Testing e PHPStan - Gennaio 2025
 
 **Data verifica**: 18 Gennaio 2025

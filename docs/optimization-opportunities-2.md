@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: optimization-opportunities-2
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Opportunità di Ottimizzazione DRY + KISS
 
 ## Panoramica
@@ -110,27 +100,9 @@ abstract class BaseModel extends XotBaseModel
 
 **Widget problematici**:
 - `Modules/UI/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-<<<<<<< HEAD
 - `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
 - `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Modules/<nome progetto>/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/<nome progetto>/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-=======
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> laraxot/dev
-=======
-- `Modules/Quaeris/app/Filament/Widgets/StatsOverviewWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/UI/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
-- `Modules/Quaeris/app/Filament/Widgets/TestWidget.php` → estende `BaseWidget` (Filament)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Soluzione DRY + KISS**:
 ```php

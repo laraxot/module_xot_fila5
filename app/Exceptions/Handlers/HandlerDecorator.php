@@ -32,11 +32,10 @@ class HandlerDecorator implements ExceptionHandler
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
-    ) {
-    }
+    ) {}
 
     /**
-     * @param array<int, mixed> $parameters
+     * @param  array<int, mixed>  $parameters
      */
     public function __call(string $name, array $parameters): mixed
     {

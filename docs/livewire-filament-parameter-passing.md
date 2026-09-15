@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: livewire-filament-parameter-passing
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Livewire Component and Filament Widget Parameter Passing Guide
 
 ## Overview

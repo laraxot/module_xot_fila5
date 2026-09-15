@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: troubleshooting-consolidated
-description: "> 🎯 Single Source of Truth: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto

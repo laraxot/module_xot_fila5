@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: optimization-recommendations-raccomandazioni-di-ottimizzazione-modu
-description: " 🎯 Stato Attuale e Problemi Critici"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici

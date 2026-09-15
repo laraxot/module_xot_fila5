@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: mcp-readme-section
-description: " Cosa è MCP?"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # MCP (Model Context Protocol) Integration
 
 ## Cosa è MCP?
@@ -70,19 +60,7 @@ Edita i file di configurazione e inserisci le tue keys.
 ### Debugging con Context
 
 ```text
-<<<<<<< HEAD
 Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Analizza errori PHPStan in Modules/<nome progetto> seguendo pattern in .windsurf/rules/
-=======
-Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
->>>>>>> laraxot/dev
-=======
-Analizza errori PHPStan in Modules/Quaeris seguendo pattern in .windsurf/rules/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### Refactoring Guidato

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation-rules-1-1
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole di Documentazione
 
 ## Panoramica
@@ -80,23 +70,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -106,13 +79,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
@@ -185,23 +151,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -211,13 +160,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```
@@ -291,23 +233,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/saluteora/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-[Documento in Sottodirectory](https://github.com/saluteora/progetto/blob/main/docs/documento.md)
-[Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
-[Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
-[Documento Correlato](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/documento.md)
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -317,13 +242,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](C:\progetti\saluteora\laravel\Modules\Xot\docs\documento.md)
 [Documento Correlato](/var/www/html/<nome progetto>/laravel/Modules/Xot/docs/documento.md)
 [Documento Correlato](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/docs/documento.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
 ```

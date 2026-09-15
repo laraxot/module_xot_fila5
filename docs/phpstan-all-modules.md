@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-all-modules
-description: "Obiettivo: Analisi sistematica completa di tutti i moduli con PHPStan"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi PHPStan - Tutti i Moduli
 
 **Obiettivo**: Analisi sistematica completa di tutti i moduli con PHPStan

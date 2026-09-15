@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-conflicts-resolution-conflict-5ba246
-description: " Data: 2025-01-06"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06

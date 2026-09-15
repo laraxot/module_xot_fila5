@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: content-selection-and-highlighting
-description: "content-selection-and-highlighting"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://javascript.plainenglish.io/medium-like-text-highlighting-in-react-afa35a29a81a
 
 

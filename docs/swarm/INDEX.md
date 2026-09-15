@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: index
-description: "Swarm ID: swarm-phpstan-272"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # SWARM — PHPStan 272: parallel task distribution
 
 **Swarm ID:** `swarm-phpstan-272`
@@ -36,19 +26,7 @@ metadata:
 | agent-n | Customer | 8 | 19 | TODO |
 | agent-o | Bom | 7 | 20 | TODO |
 | agent-p | Cms (test) | 7 | 21 | TODO |
-<<<<<<< HEAD
 | agent-q | WorkOrder | 6 | 22 | TODO |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| agent-q | <nome progetto> | 6 | 22 | TODO |
-=======
-| agent-q | WorkOrder | 6 | 22 | TODO |
->>>>>>> laraxot/dev
-=======
-| agent-q | WorkOrder | 6 | 22 | TODO |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | agent-r | UI (test) | 6 | 23 | TODO |
 | agent-s | Geo | 5 | 24 | TODO |
 | agent-t | altro | ~75 | 25+ | TODO |

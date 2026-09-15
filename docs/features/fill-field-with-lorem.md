@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: fill-field-with-lorem
-description: "fill-field-with-lorem"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 //------- IMMAGINI --------
 https://placeimg.com/640/480/arch
 https://picsum.photos/

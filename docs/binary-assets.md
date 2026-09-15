@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: binary-assets
-description: "Gli asset binari sono file normali del repository."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Asset binari
 
 Gli asset binari sono file normali del repository.

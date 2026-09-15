@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbasetestcase-rule
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseTestCase - Testing Architecture Rule
 
 ## Regola Fondamentale

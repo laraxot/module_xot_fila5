@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: missing-component-resolution
-description: " Issue"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # View Caching Resolution - Missing Component Reference
 
 ## Issue

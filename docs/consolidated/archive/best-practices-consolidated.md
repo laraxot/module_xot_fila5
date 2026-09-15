@@ -243,10 +243,6 @@ class ExampleResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_9U2jpF
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -258,7 +254,6 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_djqzqb
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -276,10 +271,6 @@ class ExampleResource extends XotBaseResource
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_9U2jpF
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -291,7 +282,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_djqzqb
->>>>>>> laraxot/dev
 {
     return [
         // Schema del form

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: launch-plan
-description: " 🚀 Launch Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Product Launch Plan: Xot v1.0
 
 ## 🚀 Launch Overview
@@ -15,19 +5,7 @@ metadata:
 - **Launch Lead:** @CoreTeam
 
 ## 🎯 Launch Goals
-<<<<<<< HEAD
 - Stabilize all base classes for Laravel 12.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Stabilize all base classes for Laravel 13.
-=======
-- Stabilize all base classes for Laravel 12.
->>>>>>> laraxot/dev
-=======
-- Stabilize all base classes for Laravel 12.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Reach 100% PHPStan Level 10 compliance across the framework.
 
 ## 📣 Messaging & Positioning

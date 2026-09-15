@@ -6,31 +6,11 @@ created: 2026-01-21
 updated: 2026-07-08
 qmd: "module theme root no txt max four md readme changelog license agents nwidart no uppercase folders sacred manifest never delete"
 issues:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/124"
-  - "https://github.com/laraxot/<repo progetto>/issues/39"
-discussions:
-  - "https://github.com/laraxot/<repo progetto>/discussions/273"
-  - "https://github.com/laraxot/<repo progetto>/discussions/12"
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   - "https://github.com/laraxot/base_ptvx_fila5/issues/124"
   - "https://github.com/laraxot/base_techplanner_fila5/issues/39"
 discussions:
   - "https://github.com/laraxot/base_ptvx_fila5/discussions/273"
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/12"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ../../../../../../docs/wiki/memories/module-theme-root-hygiene.md
   - ../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: best-practices
-description: " Laravel"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Best Practices
 
 ## Laravel
@@ -299,27 +289,9 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

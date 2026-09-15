@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: index
-description: "Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica."
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Raw Sources — Xot
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

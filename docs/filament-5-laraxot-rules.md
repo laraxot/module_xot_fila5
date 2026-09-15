@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-5-laraxot-rules
-description: " 🎯 Obiettivo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament 5 + Laraxot Rules - Xot Module
 
 ## 🎯 Obiettivo
@@ -15,29 +5,10 @@ metadata:
 Definire le regole globali Laraxot per l’upgrade e l’utilizzo di **Filament 5.x** in tutti i moduli, mantenendo:
 
 - coerenza architetturale con XotBase (Resources, Pages, Widgets, Panel Provider)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- compatibilità con le regole esistenti di Filament 5
-- un flusso standard di migrazione da v4 a v5 (incluso script ufficiale `filament/upgrade`)
-
-Queste regole estendono e non sostituiscono `Filament-5-laraxot-rules.md`.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - compatibilità con le regole esistenti di Filament 4
 - un flusso standard di migrazione da v4 a v5 (incluso script ufficiale `filament/upgrade`)
 
 Queste regole estendono e non sostituiscono `filament-4-laraxot-rules.md`.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 📚 Documentazione Completa
 
@@ -66,19 +37,7 @@ Per poter usare Filament 5 in un modulo Laraxot/PTVX sono obbligatori:
 
 **IMPORTANTE:** Filament 5 esiste **PRINCIPALMENTE per supportare Livewire 4**.
 
-<<<<<<< HEAD
 - **NON ci sono breaking changes funzionali** tra Filament 4 e 5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **NON ci sono breaking changes funzionali** tra Filament 5 e 5
-=======
-- **NON ci sono breaking changes funzionali** tra Filament 4 e 5
->>>>>>> laraxot/dev
-=======
-- **NON ci sono breaking changes funzionali** tra Filament 4 e 5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Tutte le API Filament rimangono compatibili**
 - **L'unico motivo per l'upgrade è Livewire 4**
 - **L'upgrade è considerato a basso rischio**
@@ -109,19 +68,7 @@ Tutti i cambiamenti sono legati alla migrazione a Livewire 4:
 
 **ATTENZIONE:** L'ordine corretto è **prima** Livewire v4, **poi** Filament v5.
 
-<<<<<<< HEAD
 L'upgrade da Filament 4 a 5 **DEVE** seguire l'ordine seguente (per l'intero progetto):
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-L'upgrade da Filament 5 a 5 **DEVE** seguire l'ordine seguente (per l'intero progetto):
-=======
-L'upgrade da Filament 4 a 5 **DEVE** seguire l'ordine seguente (per l'intero progetto):
->>>>>>> laraxot/dev
-=======
-L'upgrade da Filament 4 a 5 **DEVE** seguire l'ordine seguente (per l'intero progetto):
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Fase 1: Preparazione
 
@@ -244,19 +191,7 @@ Filament 5 introduce cambi a livello di API e di ecosistema. Dal punto di vista 
 
 2. **Schemas, Forms, Tables, Infolists**
    - Filament 5 continua il modello “schema-based” introdotto in v4.
-<<<<<<< HEAD
    - Le regole di `filament-4-laraxot-rules.md` su uso di `Schema`, `getFormSchema()`, `getInfolistSchema()`, `getTableColumns()` restano valide e devono essere aggiornate solo per adeguarsi a nuove API o deprecation v5.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Le regole di `Filament-5-laraxot-rules.md` su uso di `Schema`, `getFormSchema()`, `getInfolistSchema()`, `getTableColumns()` restano valide e devono essere aggiornate solo per adeguarsi a nuove API o deprecation v5.
-=======
-   - Le regole di `filament-4-laraxot-rules.md` su uso di `Schema`, `getFormSchema()`, `getInfolistSchema()`, `getTableColumns()` restano valide e devono essere aggiornate solo per adeguarsi a nuove API o deprecation v5.
->>>>>>> laraxot/dev
-=======
-   - Le regole di `filament-4-laraxot-rules.md` su uso di `Schema`, `getFormSchema()`, `getInfolistSchema()`, `getTableColumns()` restano valide e devono essere aggiornate solo per adeguarsi a nuove API o deprecation v5.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 3. **Actions, Notifications, Widgets**
    - Azioni custom Filament continuano a seguire le regole Laraxot esistenti (override `setUp()`, niente stringhe hardcoded, traduzioni centralizzate, ecc.).
@@ -345,19 +280,7 @@ La documentazione **DEVE** esplicitare cosa succede all’utente:
 - Guida ufficiale upgrade Filament 5: <https://filamentphp.com/docs/5.x/upgrade-guide>
 - Documentazione Filament 5: <https://filamentphp.com/docs/5.x>
 - Livewire 4 upgrade: <https://livewire.laravel.com/docs/4.x/upgrading>
-<<<<<<< HEAD
 - Regole esistenti Filament 4 Laraxot (stesso modulo): `filament-4-laraxot-rules.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Regole esistenti Filament 5 Laraxot (stesso modulo): `Filament-5-laraxot-rules.md`
-=======
-- Regole esistenti Filament 4 Laraxot (stesso modulo): `filament-4-laraxot-rules.md`
->>>>>>> laraxot/dev
-=======
-- Regole esistenti Filament 4 Laraxot (stesso modulo): `filament-4-laraxot-rules.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 

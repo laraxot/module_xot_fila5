@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-wizard-widget
-description: "The XotBaseWizardWidget provides a standardized base for creating multi-step form widgets in Filament."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseWizardWidget
 
 The `XotBaseWizardWidget` provides a standardized base for creating multi-step form widgets in Filament.

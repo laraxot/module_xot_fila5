@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: logoetermination
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Determinazione del Logo Basata sul Dominio
 
 ## Introduzione

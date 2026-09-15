@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: forbidden-properties-removal-complete
-description: "Data: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Rimozione Completa Proprietà Vietate da XotBaseResource - Analisi e Implementazione
 
 **Data**: 2026-01-09  

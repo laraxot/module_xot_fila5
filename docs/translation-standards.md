@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: translation-standards
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica

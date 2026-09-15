@@ -21,12 +21,14 @@ final class XotBaseTransitionFixture
      */
     public static function make(): array
     {
-        $record = new class extends Model {
+        $record = new class extends Model
+        {
             /** @var string */
             protected $table = 'xot_transition_test';
         };
 
-        $transition = new class($record) extends XotBaseTransition {
+        $transition = new class($record) extends XotBaseTransition
+        {
             public static string $name = 'test_transition';
         };
 

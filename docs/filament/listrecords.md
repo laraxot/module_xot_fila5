@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: listrecords
-description: "> AGGIORNAMENTO 2025-05-28:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # List Records in Filament
 
 > **AGGIORNAMENTO 2025-05-28:**

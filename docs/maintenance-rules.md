@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: maintenance-rules
-description: "Rule: Before modifying any file, always study, update, and improve the documentation (docs folders) inside the relevant module and theme."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Maintenance Rules
 
 **Rule:** Before modifying any file, always study, update, and improve the documentation (`docs` folders) inside the relevant module and theme.

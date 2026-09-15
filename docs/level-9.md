@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: level-9
-description: "Data analisi: [DATE] 21:56:07"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Rapporto PHPStan Livello 9 per il modulo Xot
 
 Data analisi: [DATE] 21:56:07

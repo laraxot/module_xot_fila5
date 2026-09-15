@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: panel-provider
-description: " XotBaseMainPanelProvider"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Panel Provider in Modulo Xot
 
 ## XotBaseMainPanelProvider

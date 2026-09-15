@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: best-practices
-description: " Principi Generali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Best Practices per la Risoluzione dei Conflitti
 

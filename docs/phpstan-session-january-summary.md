@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-session-january-summary
-description: "Data: 2026-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
 **Data**: 2026-01-22  

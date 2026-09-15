@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: langserviceprovider-labels
-description: " Regola"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # LangServiceProvider: Gestione automatica delle label nei Filament Forms
 
 ## Regola

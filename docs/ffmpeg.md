@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ffmpeg
-description: "ffmpeg"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 on 10 Aug
 352 commits

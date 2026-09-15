@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: file-naming-case-sensitivity
-description: " 🔴 Problema Critico"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # File Naming and Case Sensitivity - Project-Wide Rules
 
 ## 🔴 Problema Critico

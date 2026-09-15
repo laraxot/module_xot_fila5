@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: status-final
-description: " 📊 PRODUZIONE (Modules/Xot/app) - 0 ERRORI"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🐝 PHPStan Fix - Final Status
 
 ## 📊 PRODUZIONE (Modules/Xot/app) - 0 ERRORI

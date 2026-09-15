@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: code-quality-improvement-guide
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Code Quality Improvement Guide
 
 ## Overview

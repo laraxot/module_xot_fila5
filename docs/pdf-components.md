@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: pdf-components
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Componenti PDF Riutilizzabili
 

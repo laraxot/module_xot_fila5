@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-cluster-map-and-false-friends
-description: " Contesto"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Cluster Map And False Friends
 
 ## Contesto
@@ -44,18 +34,6 @@ Cluster piu' ricorrenti osservati:
 
 ## Priorita'
 
-<<<<<<< HEAD
 1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 12
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 13
-=======
-1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 12
->>>>>>> laraxot/dev
-=======
-1. allineare i wrapper Xot ai contratti reali di Filament 5 / Laravel 12
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 2. ridurre `mixed` nelle basi comuni
 3. solo dopo fare cleanup seriale dei moduli dipendenti

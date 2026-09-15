@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: presenter
-description: "presenter"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 $acceptHeader=$request->header('Accept');
 
 if(in_array($acceptHeader,['application/json','application/xml'])){

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-conflict-readme-md
-description: " File: bashscripts/README.md"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Template Gestione Conflitti Git - README.md
 
 ## File: bashscripts/README.md

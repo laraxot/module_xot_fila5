@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-usage-guide-guida-allutilizzo-di-phpstan-nel-framewo
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida all'Utilizzo di PHPStan nel Framework Laraxot <nome progetto>
 
 ## Introduzione

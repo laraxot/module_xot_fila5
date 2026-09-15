@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-structure-struttura-dei-moduli-in-il-progetto
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Struttura dei Moduli in il progetto
 
 ## Panoramica

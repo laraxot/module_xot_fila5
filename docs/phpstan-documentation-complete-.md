@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-documentation-complete
-description: "Date: 2025-12-16"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Documentation - Completion Summary
 
 **Date**: 2025-12-16

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-array-typing-rules
-description: " Tipizzazione Corretta degli Array - Distinzione per Contesto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole Fondamentali per i Metodi Filament - Aggiornamento
 
 ## Tipizzazione Corretta degli Array - Distinzione per Contesto
@@ -70,27 +60,9 @@ Per `getFormSchema()` nei **resource e pagine** (dove non viene usato `statePath
 ```php
 // ✅ CORRETTO per resource/pagine
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

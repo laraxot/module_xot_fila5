@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme-template
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Modulo [Nome Modulo]
 
 ## Panoramica

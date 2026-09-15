@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: forbidden-resource-attributes-verification
-description: "Data: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Verifica Proprietà Vietate in XotBaseResource - Report Completo
 
 **Data**: 2026-01-09  

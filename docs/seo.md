@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: seo
-description: "seo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 Now Let's see Some Laravel SEO Packages
 
 6. Laravel Meta Manager

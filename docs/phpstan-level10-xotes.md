@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-level10-xotes
-description: " 📋 Riepilogo Intervento"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 Fixes - Xot Module
 
 ## 📋 Riepilogo Intervento

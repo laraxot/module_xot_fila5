@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: theme-management
-description: " Principi Fondamentali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gestione del Tema
 
 ## Principi Fondamentali

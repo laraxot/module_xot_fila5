@@ -1,19 +1,7 @@
 # Gestione Domini e Configurazioni
 
 ## Prerequisiti
-<<<<<<< HEAD
 - Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel 13.x
-=======
-- Laravel 12.x
->>>>>>> laraxot/dev
-=======
-- Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - PHP 8.2+
 
 ## Struttura dei Domini

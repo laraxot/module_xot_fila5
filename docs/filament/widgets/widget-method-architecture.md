@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: widget-method-architecture
-description: "Status: Active"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architettura Widget — La Filosofia dei Metodi Privati
 
 **Status**: Active  
@@ -177,31 +167,11 @@ public function submit(): void
         
     } catch (\Throwable $e) {
         // Gestione errore (user-friendly, NO Log::error)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $message = (string) __('<nome progetto>::create_ticket_wizard.notifications.submit_failed.body');
-        $this->addError('data.submit', $message);
-        
-        Notification::make()
-            ->title((string) __('<nome progetto>::create_ticket_wizard.notifications.submit_failed.title'))
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $message = (string) __('fixcity::create_ticket_wizard.notifications.submit_failed.body');
         $this->addError('data.submit', $message);
         
         Notification::make()
             ->title((string) __('fixcity::create_ticket_wizard.notifications.submit_failed.title'))
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             ->body($message)
             ->danger()
             ->send();

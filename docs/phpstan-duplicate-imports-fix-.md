@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-duplicate-imports-fix
-description: " Analisi Errori PHPStan Modulo Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Duplicate Imports Fix - 2026-01-05
 
 ## Analisi Errori PHPStan Modulo Xot

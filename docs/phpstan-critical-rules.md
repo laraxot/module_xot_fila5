@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-critical-rules
-description: " 🚨 REGOLA ASSOLUTA 🚨"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Critical Rules - INTOCCABILE
 
 ## 🚨 REGOLA ASSOLUTA 🚨

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: quality
-description: "- [x] PHPStan Level 10"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Checklist qualità - Xot Module
 
 - [x] PHPStan Level 10

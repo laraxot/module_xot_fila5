@@ -38,7 +38,7 @@ it('every list page declares its table columns', function (): void {
 
         $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
-            if (! $file instanceof SplFileInfo || 'php' !== $file->getExtension()) {
+            if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
                 continue;
             }
 

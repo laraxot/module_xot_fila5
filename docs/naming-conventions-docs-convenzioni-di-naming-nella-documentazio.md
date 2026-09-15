@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: naming-conventions-docs-convenzioni-di-naming-nella-documentazio
-description: " Regola: Nome del Progetto nei Moduli"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Naming nella Documentazione
 
 ## Regola: Nome del Progetto nei Moduli

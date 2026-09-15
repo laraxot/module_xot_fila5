@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: zsh
-description: " [zsh.md](../../../xot/projectdocs/install/zsh.md)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 ~~~ bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 touch ~/.zshrc

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-casting-rules
-description: " ERRORE ARCHITETTURALE GRAVE: Proprietà $casts Deprecata"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole per Model Casting in Laraxot - CRITICO
 
 ## ERRORE ARCHITETTURALE GRAVE: Proprietà $casts Deprecata
@@ -52,19 +42,7 @@ class User extends BaseModel
 
 ### Perché è un Errore Architetturale Grave
 
-<<<<<<< HEAD
 1. **Deprecazione Laravel 12**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. **Deprecazione Laravel 13**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
-=======
-1. **Deprecazione Laravel 12**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
->>>>>>> laraxot/dev
-=======
-1. **Deprecazione Laravel 12**: La proprietà `$casts` è deprecata in favore del metodo `casts()`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 2. **Limitazioni Funzionali**: Non permette l'uso di metodi statici sui caster
 3. **Manutenibilità**: Codice legacy che non sfrutta le nuove funzionalità
 4. **Conformità**: Non rispetta gli standard moderni di Laravel
@@ -261,19 +239,7 @@ class User extends BaseModel
 
 - [model_base_rules.md](model_base_rules.md)
 - [../../project_docs/phpstan-cast-fixes-guide.md](../../project_docs/phpstan-cast-fixes-guide.md)
-<<<<<<< HEAD
 - [Laravel 12 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Laravel 13 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
-=======
-- [Laravel 12 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
->>>>>>> laraxot/dev
-=======
-- [Laravel 12 Model Casts Documentation](https://laravel.com/docs/12.x/eloquent-mutators#attribute-casting)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Ultimo aggiornamento
 

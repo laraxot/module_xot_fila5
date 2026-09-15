@@ -9,7 +9,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-/*
+/**
  * Regression guard: HasXotFactory::factory() has been accidentally deleted and
  * restored 3 times in one session (2026-09-06/07) by different concurrent agents,
  * each time breaking Model::factory() across nearly every module in the monorepo

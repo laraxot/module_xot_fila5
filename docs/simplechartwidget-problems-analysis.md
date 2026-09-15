@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: simplechartwidget-problems-analysis
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # SimpleChartWidget - Analisi Problemi e Miglioramenti UI/UX
 
 ## Panoramica

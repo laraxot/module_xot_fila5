@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: analysis-summary
-description: " 🎯 Obiettivo"
-metadata:
-  type: quality
----
-
-=======
->>>>>>> laraxot/dev
 # Riepilogo Analisi Qualità Codice - 2025-01-22
 
 ## 🎯 Obiettivo

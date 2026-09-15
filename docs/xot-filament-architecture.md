@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-filament-architecture
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architettura Filament-Xot
 
 ## Panoramica

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-completo-xotbaserelationmanager
-description: "File: app/Filament/Resources/RelationManagers/XotBaseRelationManager.php"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzione Completa PHPStan - XotBaseRelationManager ✅
 
 **File**: `app/Filament/Resources/RelationManagers/XotBaseRelationManager.php`

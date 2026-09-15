@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-forms
-description: " Best Practices"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Forms
 
 ## Best Practices
@@ -26,27 +16,9 @@ class PerformanceResource extends XotBaseResource
     protected static ?string $model = Performance::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -265,27 +237,9 @@ Forms\Components\Grid::make()
 
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

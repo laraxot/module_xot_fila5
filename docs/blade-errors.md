@@ -1,28 +1,7 @@
 <<<<<<< HEAD
----
-name: blade-errors
-description: "<!-- Contenuto migrato da docs/bladeerrors.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Simplify Validation Messaging with Blade Directives
-https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'blade_errors'
 module: Xot
@@ -41,13 +20,4 @@ updated: 2026-08-24
 
 Simplify Validation Messaging with Blade Directives
 https://stagerightlabs.com/blog/simplify-validation-messaging-with-blade-directives
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

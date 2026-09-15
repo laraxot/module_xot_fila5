@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: action-usage-patterns
-description: " 🎯 REGOLA CRITICA: Pattern di Uso delle Action"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Action Usage Patterns - Regole Fondamentali
 
 ## 🎯 **REGOLA CRITICA: Pattern di Uso delle Action**

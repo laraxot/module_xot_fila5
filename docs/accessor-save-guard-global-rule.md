@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: accessor-save-guard-global-rule
-description: " Analisi Business Logic"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola Globale: Guard su getKey() Prima di save() negli Accessor
 
 ## Analisi Business Logic

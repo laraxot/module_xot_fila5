@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: prompts
-description: "I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:

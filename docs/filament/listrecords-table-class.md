@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: listrecords-table-class
-description: " Regola (story 5.45 + 5.49)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # List Records — tabella via `*Table` class
 
 ## Regola (story 5.45 + 5.49)

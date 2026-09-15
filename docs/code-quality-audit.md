@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: code-quality-audit
-description: "Data: 2025-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Code Quality Audit Completo - Gennaio 2025
 
 **Data**: 2025-01-22

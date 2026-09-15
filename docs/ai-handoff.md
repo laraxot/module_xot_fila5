@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ai-handoff
-description: " regole non negoziabili"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ai handoff
 
 ## regole non negoziabili

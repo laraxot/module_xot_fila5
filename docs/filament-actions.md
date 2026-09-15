@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-actions
-description: " Best Practices per le Azioni"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Azioni Filament
 
 ## Best Practices per le Azioni

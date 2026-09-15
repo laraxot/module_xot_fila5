@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-january-final-summary
-description: "Data: 2026-01-02"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Riepilogo Finale Gennaio 2026
 
 **Data**: 2026-01-02
@@ -22,19 +12,7 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 
 1. **Filosofia Xot**: DRY + KISS, centralizzazione, opinionated defaults, modularità, type safety, "politica" (mai estendere Filament direttamente), "religione" (Xot layer è sacro), "zen" (armonia e chiarezza)
 
-<<<<<<< HEAD
 2. **Filosofia Quaeris**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **Filosofia <nome progetto>**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
-=======
-2. **Filosofia Quaeris**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
->>>>>>> laraxot/dev
-=======
-2. **Filosofia Quaeris**: Customer è il centro, SurveyPdf è il ponte, Token è sacro, LimeSurvey è eterno, Actions sono immutabili
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 3. **Filosofia User**: Security-first, customization, extensibility, user-centric, harmony with Xot
 
@@ -45,19 +23,7 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 ### Business Logic Compresa
 
 - **Xot**: Framework base, fornisce classi base per tutti i moduli
-<<<<<<< HEAD
 - **Quaeris**: Customer → SurveyPdf → Contact → QuestionChart workflow
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: Customer → SurveyPdf → Contact → QuestionChart workflow
-=======
-- **Quaeris**: Customer → SurveyPdf → Contact → QuestionChart workflow
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: Customer → SurveyPdf → Contact → QuestionChart workflow
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **User**: Identity and access management (IAM)
 - **Tenant**: Multi-tenancy con connection-based isolation
 - **UI**: Componenti condivisi, design system
@@ -117,19 +83,7 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 9. Lang ✅
 10. Media ✅
 11. Notify ✅
-<<<<<<< HEAD
 12. Quaeris ✅ (corretto in questa sessione)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-12. <nome progetto> ✅ (corretto in questa sessione)
-=======
-12. Quaeris ✅ (corretto in questa sessione)
->>>>>>> laraxot/dev
-=======
-12. Quaeris ✅ (corretto in questa sessione)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 13. Tenant ✅
 14. UI ✅
 15. User ✅
@@ -141,19 +95,7 @@ Prima di procedere con le correzioni, ho studiato approfonditamente:
 
 ## 🔧 Errori Corretti in Questa Sessione
 
-<<<<<<< HEAD
 ### Quaeris - GetAnswersByQuestionChart.php (6 errori)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### <nome progetto> - GetAnswersByQuestionChart.php (6 errori)
-=======
-### Quaeris - GetAnswersByQuestionChart.php (6 errori)
->>>>>>> laraxot/dev
-=======
-### Quaeris - GetAnswersByQuestionChart.php (6 errori)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 1. **Type narrowing per getDates()**: Aggiunto PHPDoc `@var array{dateFrom?: string|null, dateTo?: string|null}`
 2. **Array access su mixed**: Aggiunto `Assert::isArray($row)` prima di accesso
@@ -179,19 +121,7 @@ $valueArray = $labelData['value'];
 
 ## 📚 Documentazione Creata
 
-<<<<<<< HEAD
 1. `Quaeris/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. `<nome progetto>/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
-=======
-1. `Quaeris/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
->>>>>>> laraxot/dev
-=======
-1. `Quaeris/docs/phpstan-corrections-january-2026-part2.md` - Pattern array access e type narrowing
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 🎯 Pattern Finali Documentati
 
@@ -230,23 +160,8 @@ $result = $model->traitMethod();
 
 - [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
 - [Riepilogo Precedente](./phpstan-january-2026-summary.md)
-<<<<<<< HEAD
 - [Quaeris Corrections Parte 1](../Quaeris/docs/phpstan-corrections-january-2026.md)
 - [Quaeris Corrections Parte 2](../Quaeris/docs/phpstan-corrections-january-2026-part2.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [<nome progetto> Corrections Parte 1](../<nome progetto>/docs/phpstan-corrections-january-2026.md)
-- [<nome progetto> Corrections Parte 2](../<nome progetto>/docs/phpstan-corrections-january-2026-part2.md)
-=======
-- [Quaeris Corrections Parte 1](../Quaeris/docs/phpstan-corrections-january-2026.md)
-- [Quaeris Corrections Parte 2](../Quaeris/docs/phpstan-corrections-january-2026-part2.md)
->>>>>>> laraxot/dev
-=======
-- [Quaeris Corrections Parte 1](../Quaeris/docs/phpstan-corrections-january-2026.md)
-- [Quaeris Corrections Parte 2](../Quaeris/docs/phpstan-corrections-january-2026-part2.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 

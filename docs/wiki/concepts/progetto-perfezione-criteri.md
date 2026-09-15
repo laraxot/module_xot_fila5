@@ -24,19 +24,7 @@ Misurazione numerica: [stato-qualita-progetto-2026-08-31.md](../../stato-qualita
 
 ## Le otto dimensioni
 
-<<<<<<< HEAD
 | # | Dimensione | Gate “perfetto” | Stato workorder (2026-08-31) |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| # | Dimensione | Gate “perfetto” | Stato <nome progetto> (2026-08-31) |
-=======
-| # | Dimensione | Gate “perfetto” | Stato workorder (2026-08-31) |
->>>>>>> laraxot/dev
-=======
-| # | Dimensione | Gate “perfetto” | Stato workorder (2026-08-31) |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 |---|------------|-----------------|------------------------------|
 | 1 | **PHPStan moduli** | L10, 0 errori su `Modules/` | **OK** |
 | 2 | **PHPStan temi** | L10, 0 errori reali su `Themes/` | **NO** (~1146 debito; temi fuori gate) |
@@ -55,19 +43,7 @@ non hanno P0 aperti nel modulo owner.
 ## Ordine di attacco (piattaforma)
 
 ```text
-<<<<<<< HEAD
 1. D17  — schema test `workorder_data_test` (roles, permission, tabelle GC)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. D17  — schema test `<nome progetto>_data_test` (roles, permission, tabelle GC)
-=======
-1. D17  — schema test `workorder_data_test` (roles, permission, tabelle GC)
->>>>>>> laraxot/dev
-=======
-1. D17  — schema test `workorder_data_test` (roles, permission, tabelle GC)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 2. D10  — collisione login FO
 3. D1/D2 — media Document / VehicleDocument
 4. Themes nel gate PHPStan (dopo exclude config env)

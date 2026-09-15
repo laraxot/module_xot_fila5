@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: hasxottable-zen
-description: " Philosophy"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # HasXotTable Zen
 
 ## Philosophy

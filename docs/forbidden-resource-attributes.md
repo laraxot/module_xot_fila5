@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: forbidden-resource-attributes
-description: " Date: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Forbidden Attributes in XotBaseResource Classes
 
 ## Date: 2026-01-09

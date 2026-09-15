@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: sortable-livewire
-description: "sortable-livewire"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 https://sbsharma.com/laravel-jquery-ui-sortable-database-update-livewire/
 
 

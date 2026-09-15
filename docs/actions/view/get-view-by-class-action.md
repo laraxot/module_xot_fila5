@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: get-view-by-class-action
-description: "GetViewByClassAction is a Spatie Queueable Action that converts a PHP class name into a Filament view path."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # GetViewByClassAction
 
 `GetViewByClassAction` is a Spatie Queueable Action that converts a PHP class name into a Filament view path.

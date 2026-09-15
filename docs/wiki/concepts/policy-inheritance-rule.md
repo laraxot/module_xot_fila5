@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: policy-inheritance-rule
-description: " ⚖️ Decision: Base Policy Hierarchy"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Policy Inheritance Rule
 
 ## ⚖️ Decision: Base Policy Hierarchy
@@ -29,19 +19,7 @@ We maintain two main levels of base policies to ensure DRY principles while keep
 ## 🔄 Separation of Concerns
 
 - **Separation:** Keep them separate to avoid bloating `Xot` with User-specific logic. `Xot` is the foundation; `User` is a functional module.
-<<<<<<< HEAD
 - **Generic Policies:** Policies for specific modules (e.g., `Fixcity`) should extend `XotBasePolicy` by default unless they need standard user-ownership logic provided by `UserBasePolicy`.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Generic Policies:** Policies for specific modules (e.g., `<nome progetto>`) should extend `XotBasePolicy` by default unless they need standard user-ownership logic provided by `UserBasePolicy`.
-=======
-- **Generic Policies:** Policies for specific modules (e.g., `Fixcity`) should extend `XotBasePolicy` by default unless they need standard user-ownership logic provided by `UserBasePolicy`.
->>>>>>> laraxot/dev
-=======
-- **Generic Policies:** Policies for specific modules (e.g., `Fixcity`) should extend `XotBasePolicy` by default unless they need standard user-ownership logic provided by `UserBasePolicy`.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 🛠️ Improvements Needed
 - **Genericity:** `UserBasePolicy` currently contains `Ticket` type-hints. This is a violation of KISS/DRY for a *Base* policy.

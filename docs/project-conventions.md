@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: project-conventions
-description: " File Naming Standards"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Project Conventions and Standards
 
 ## File Naming Standards

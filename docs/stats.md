@@ -1,21 +1,4 @@
 <<<<<<< HEAD
----
-name: stats
-description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://github.com/antonioribeiro/tracker
 https://github.com/antonioribeiro/tracker?ref=madewithlaravel.com
 
@@ -37,18 +20,7 @@ https://beyondco.de/docs/laravel-websockets/debugging/dashboard   !!
 
 
 https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Stats — risorse esterne'
 module: Xot
@@ -76,13 +48,4 @@ updated: 2026-08-24
 - <https://github.com/codemastersolucoes/laravel-visitor-tracker>
 - <https://beyondco.de/docs/laravel-websockets/debugging/dashboard   !!>
 - <https://arslantariq.com/build-ui-dashboards-for-your-laravel-application/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

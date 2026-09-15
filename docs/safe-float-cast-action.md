@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: safe-float-cast-action
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # SafeFloatCastAction
 
 ## Descrizione

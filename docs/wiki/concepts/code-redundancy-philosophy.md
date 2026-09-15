@@ -11,19 +11,7 @@ related:
   - ../redundancy-audit.md
   - ../../../../../docs/wiki/concepts/second-brain-operating-model.md
   - ../../../../../docs/wiki/how-to/module-docs-deduplication.md
-<<<<<<< HEAD
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/151"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issue: "https://github.com/provtv/<repo progetto>/issues/151"
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/151"
->>>>>>> laraxot/dev
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/151"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 
 # Filosofia della ridondanza — scopo, zen, politica
@@ -94,19 +82,7 @@ Questo documento fissa **come decidere** cosa tenere, cosa fondere e cosa archiv
 2. Non creare nuovo `.md` se esiste audit recente — **append** al log e aggiorna audit datato.
 3. Preferire **delete** di backup `.up` dopo diff con file canonico (nessun autoload).
 4. Per Filament: una risorsa, un namespace, un cluster — seguire regola Passport «solo sotto `Clusters/`».
-<<<<<<< HEAD
 5. Collegare ogni epic a [GitHub provtv/base_ptv_fila5_mono](https://github.com/provtv/base_ptv_fila5_mono).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-5. Collegare ogni epic a [GitHub provtv/<repo progetto>).
-=======
-5. Collegare ogni epic a [GitHub provtv/base_ptv_fila5_mono](https://github.com/provtv/base_ptv_fila5_mono).
->>>>>>> laraxot/dev
-=======
-5. Collegare ogni epic a [GitHub provtv/base_ptv_fila5_mono](https://github.com/provtv/base_ptv_fila5_mono).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Collegamenti
 

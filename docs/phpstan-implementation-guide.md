@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-implementation-guide
-description: "Questo documento fornisce una guida pratica su come implementare le soluzioni ai problemi più comuni rilevati da PHPStan a livello 9 nel fra"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida Pratica all'Implementazione delle Soluzioni PHPStan
 
 Questo documento fornisce una guida pratica su come implementare le soluzioni ai problemi più comuni rilevati da PHPStan a livello 9 nel framework Laraxot <nome progetto>.

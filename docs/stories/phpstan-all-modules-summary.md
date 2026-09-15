@@ -2,19 +2,7 @@
 id: phpstan-all-modules-summary
 slug: phpstan-all-modules-summary
 scope:
-<<<<<<< HEAD
   - project:base_workorder_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - project:<repo progetto>
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   - modules:All 52 modules
 status: In Progress
 epic: PHPStan Quality Gates
@@ -22,19 +10,7 @@ priority: Critical
 created: 2026-09-06
 ---
 
-<<<<<<< HEAD
 # PHPStan Quality Gate - base_workorder_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# PHPStan Quality Gate - <repo progetto>
-=======
-# PHPStan Quality Gate - base_workorder_fila5
->>>>>>> laraxot/dev
-=======
-# PHPStan Quality Gate - base_workorder_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Panoramica
 

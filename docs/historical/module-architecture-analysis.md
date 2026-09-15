@@ -36,19 +36,7 @@
 - Multi-tenant aware models
 - Social authentication integration
 
-<<<<<<< HEAD
 #### 3. **Quaeris Module - Business Core**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### 3. **<nome progetto> Module - Business Core**
-=======
-#### 3. **Quaeris Module - Business Core**
->>>>>>> laraxot/dev
-=======
-#### 3. **Quaeris Module - Business Core**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -240,19 +228,7 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
-<<<<<<< HEAD
 **Dependencies**: Xot, Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Dependencies**: Xot, <nome progetto>
-=======
-**Dependencies**: Xot, Quaeris
->>>>>>> laraxot/dev
-=======
-**Dependencies**: Xot, Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -300,19 +276,7 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
-<<<<<<< HEAD
 ├── Quaeris (Business Core)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-├── <nome progetto> (Business Core)
-=======
-├── Quaeris (Business Core)
->>>>>>> laraxot/dev
-=======
-├── Quaeris (Business Core)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -421,19 +385,7 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
-<<<<<<< HEAD
 - **Quaeris**: Missing module.json description
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: Missing module.json description
-=======
-- **Quaeris**: Missing module.json description
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: Missing module.json description
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -444,19 +396,7 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
-<<<<<<< HEAD
 - **Quaeris**: Survey processing and reporting
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: Survey processing and reporting
-=======
-- **Quaeris**: Survey processing and reporting
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: Survey processing and reporting
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: spatie-packages-integration
-description: "L'architettura Laraxot si basa pesantemente sull'ecosistema Spatie. Di seguito le linee guida per l'uso dei pacchetti installati."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Integrazione Pacchetti Spatie - Laraxot PTVX
 
 L'architettura Laraxot si basa pesantemente sull'ecosistema Spatie. Di seguito le linee guida per l'uso dei pacchetti installati.

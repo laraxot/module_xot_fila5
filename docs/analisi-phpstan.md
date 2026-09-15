@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: analisi-phpstan
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi PHPStan - Modulo Xot
 
 ## Panoramica

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laravel-mix
-description: "laravel-mix"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 //-------------------------------------------------------------------------------------
 Use Laravel Mix without Laravel (using npm)
 https://dev.to/nickfrosty/use-laravel-mix-without-laravel-using-npm-m09

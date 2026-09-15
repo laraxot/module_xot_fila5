@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-execution
-description: " Comando Base per PHPStan"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Esecuzione Corretta di PHPStan in Laraxot <nome progetto>
 
 ## Comando Base per PHPStan

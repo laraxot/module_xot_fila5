@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-extension-violations
-description: "Date: 2025-12-18"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Extension Violations Report
 
 **Date**: 2025-12-18

@@ -1,52 +1,15 @@
 <<<<<<< HEAD
----
-name: phpstan-errors
-description: " Analisi Completa"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # PHPStan Errori Modulo Xot - [DATE]
 
 ## Analisi Completa
 
 **Data Analisi**: [DATE]
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # PHPStan Errori Modulo Xot - 2025-01-22
 
 ## Analisi Completa
 
 **Data Analisi**: 2025-01-22
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **PHPStan Level**: 10
 **Modulo**: Xot (Base Framework)
@@ -204,25 +167,8 @@ Tutti gli errori seguono lo stesso pattern:
 
 <<<<<<< HEAD
 ✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
-<<<<<<< HEAD
 =======
 ✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
-=======
-<<<<<<< HEAD
-✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
-=======
-✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 - ✅ ParsePrintPageStringAction.php - Aggiunti controlli esistenza array

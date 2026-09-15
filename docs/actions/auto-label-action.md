@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: auto-label-action
-description: " Contesto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzione e miglioramento: AutoLabelAction.php (2025-04-16)
 
 ## Contesto

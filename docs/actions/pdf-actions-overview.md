@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: pdf-actions-overview
-description: " 📋 Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PDF Actions - Panoramica Tecnica
 
 ## 📋 Overview

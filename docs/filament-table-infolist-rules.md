@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-table-infolist-rules
-description: " Regole per Table e Infolist in Laraxot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Table & Infolist Rules
 
 ## Regole per Table e Infolist in Laraxot

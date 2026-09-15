@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-forms-components-base-creation
-description: "Data: 2025-12-23"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Creazione Classi Base Forms Components - 2025-12-23
 
 **Data**: 2025-12-23

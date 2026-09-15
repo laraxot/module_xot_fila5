@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: annotations
-description: "annotations"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 //---
 continuo di type_hinting
 --//

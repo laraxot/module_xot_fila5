@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: naming-conventions
-description: " Riferimento Principale"
-metadata:
-  type: testing
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Naming per i Test - Modulo Xot
 
 ## Riferimento Principale

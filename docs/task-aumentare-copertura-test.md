@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: task-aumentare-copertura-test
-description: "Modulo: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Task: Aumentare Copertura Test - Xot
 
 **Modulo**: Xot

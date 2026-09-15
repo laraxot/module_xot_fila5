@@ -1,37 +1,9 @@
 <<<<<<< HEAD
----
-name: performance
-description: "<!-- Contenuto migrato da docs/performance.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 //-----------------------------------------------------------
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Performance"
 type: reference
@@ -49,13 +21,4 @@ note: "Convertito da _performance.txt (documento) da convert-docs-txt-to-md.py."
 4 tips to improve Laravel performance
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

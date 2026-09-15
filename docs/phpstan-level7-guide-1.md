@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-level7-guide-1
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida alla Validazione con PHPStan Livello 7
 
 ## Introduzione

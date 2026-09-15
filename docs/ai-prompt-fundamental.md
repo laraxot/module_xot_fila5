@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ai-prompt-fundamental
-description: " Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole Fondamentali per Prompt AI - healthcare_app Fila5 Mono
 # Regole Fondamentali per Prompt AI - ExternalProject Fila5 Mono
 

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cms-filament-link
-description: "Le regole generali per Filament, namespace e traduzioni sono definite in:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Collegamento Bidirezionale: Regole Filament e Namespace (Cms)
 
 Le regole generali per Filament, namespace e traduzioni sono definite in:

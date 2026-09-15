@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: has-dynamic-fillable
-description: "Modules\Xot\Models\Traits\HasDynamicFillable"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # HasDynamicFillable
 
 `Modules\Xot\Models\Traits\HasDynamicFillable`

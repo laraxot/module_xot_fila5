@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: themes-structure
-description: " Struttura Standard"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Struttura dei Temi
 
 ## Struttura Standard

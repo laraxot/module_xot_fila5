@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: relationx
-description: " Scopo Business"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # RelationX Trait
 
 ## Scopo Business

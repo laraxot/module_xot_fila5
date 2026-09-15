@@ -10,6 +10,11 @@ use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use PHPUnit\Framework\Assert;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use ReflectionClass;
+use ReflectionMethod;
+use SplFileInfo;
 
 /**
  * Helper condiviso per coverage Filament: discovery + assert su schema keyed.
@@ -26,10 +31,10 @@ final class FilamentSchemaCoverage
         }
 
         $classes = [];
-        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($appRoot));
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($appRoot));
 
         foreach ($iterator as $file) {
-            if (! $file instanceof \SplFileInfo) {
+            if (! $file instanceof SplFileInfo) {
                 continue;
             }
             if (! $file->isFile()) {
@@ -48,7 +53,7 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-            $ref = new \ReflectionClass($class);
+            $ref = new ReflectionClass($class);
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }
@@ -62,7 +67,7 @@ final class FilamentSchemaCoverage
     }
 
     /**
-     * @param array<array-key, mixed> $schema
+     * @param  array<array-key, mixed>  $schema
      */
     public static function assertKeyedSchema(array $schema, string $context): void
     {
@@ -70,7 +75,7 @@ final class FilamentSchemaCoverage
 
         $hasStringKeys = true;
         foreach (array_keys($schema) as $chiave) {
-            if (! is_string($chiave) || '' === $chiave) {
+            if (! is_string($chiave) || $chiave === '') {
                 $hasStringKeys = false;
                 break;
             }
@@ -95,22 +100,22 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-            if (! (new \ReflectionClass($class))->hasMethod('getFormSchema')) {
+            if (! (new ReflectionClass($class))->hasMethod('getFormSchema')) {
                 continue;
             }
 
             try {
-                // @phpstan-ignore-next-line
+                # @phpstan-ignore-next-line
                 $schema = $class::getFormSchema();
-                ++$executed;
-                if ([] === $schema) {
+                $executed++;
+                if ($schema === []) {
                     continue;
                 }
 
                 self::assertKeyedSchema($schema, $class);
                 Assert::assertContainsOnlyInstancesOf(SchemaComponent::class, $schema);
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -127,11 +132,11 @@ final class FilamentSchemaCoverage
             }
 
             try {
-                $tabella = new $class();
+                $tabella = new $class;
                 $colonne = $tabella->getTableColumns();
-                ++$executed;
+                $executed++;
 
-                if ([] !== $colonne) {
+                if ($colonne !== []) {
                     self::assertKeyedSchema($colonne, $class);
                     Assert::assertContainsOnlyInstancesOf(Column::class, $colonne);
                 }
@@ -139,13 +144,13 @@ final class FilamentSchemaCoverage
                 $filters = $tabella->getTableFilters();
                 Assert::assertSame(array_values($filters), $filters, "{$class} filters devono essere una lista");
 
-                if ((new \ReflectionClass($tabella))->hasMethod('getTableActions')) {
-                    $actionsMethod = new \ReflectionMethod($tabella, 'getTableActions');
+                if ((new ReflectionClass($tabella))->hasMethod('getTableActions')) {
+                    $actionsMethod = new ReflectionMethod($tabella, 'getTableActions');
                     $actions = $actionsMethod->invoke($tabella);
                     Assert::assertNotEmpty($actions);
                 }
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -163,8 +168,8 @@ final class FilamentSchemaCoverage
 
             try {
                 $schema = $class::getInfolistSchema();
-                ++$executed;
-                if ([] === $schema) {
+                $executed++;
+                if ($schema === []) {
                     continue;
                 }
 
@@ -174,7 +179,7 @@ final class FilamentSchemaCoverage
                 self::assertKeyedSchema($schema, $class);
                 Assert::assertContainsOnlyInstancesOf(Entry::class, $schema);
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -196,7 +201,7 @@ final class FilamentSchemaCoverage
 
             try {
                 $model = $class::getModel();
-                ++$executed;
+                $executed++;
                 Assert::assertIsString($model);
                 Assert::assertNotSame('', $model);
                 Assert::assertTrue(class_exists($model));
@@ -207,7 +212,7 @@ final class FilamentSchemaCoverage
                     Assert::assertNotEmpty($pages);
                 }
             } catch (\Throwable) {
-                ++$executed;
+                $executed++;
             }
         }
 
@@ -224,10 +229,10 @@ final class FilamentSchemaCoverage
         }
 
         $classes = [];
-        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($appRoot));
+        $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($appRoot));
 
         foreach ($iterator as $file) {
-            if (! $file instanceof \SplFileInfo) {
+            if (! $file instanceof SplFileInfo) {
                 continue;
             }
             if (! $file->isFile()) {
@@ -250,7 +255,7 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-            $ref = new \ReflectionClass($class);
+            $ref = new ReflectionClass($class);
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -265,7 +270,7 @@ final class FilamentSchemaCoverage
 
     public static function testAllListPages(string $appRoot, string $moduleNamespace): void
     {
-        if (null === config('app.date_format')) {
+        if (config('app.date_format') === null) {
             config(['app.date_format' => 'd/m/Y']);
         }
 
@@ -275,7 +280,7 @@ final class FilamentSchemaCoverage
             }
 
             try {
-                $page = new $class();
+                $page = new $class;
                 Assert::assertNotEmpty($page->getTableColumns());
             } catch (\Throwable $e) {
                 Assert::assertNotSame('', $e->getMessage());

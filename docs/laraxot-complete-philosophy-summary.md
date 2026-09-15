@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-complete-philosophy-summary
-description: " 🎯 Core Principles"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Complete Philosophy Summary
 
 ## 🎯 Core Principles

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: super-mucca-workflow
-description: "Poteri: Massima Confidenza + Zero Compromessi + Correzione Completa"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Super Mucca Workflow - Metodologia Completa
 
 **Poteri**: Massima Confidenza + Zero Compromessi + Correzione Completa

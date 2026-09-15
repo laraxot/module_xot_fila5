@@ -1,26 +1,6 @@
 <<<<<<< HEAD
----
-name: bad-practices
-description: "<!-- Contenuto migrato da docs/badpractices.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
 =======
-=======
-<<<<<<< HEAD
-https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'bad_practices'
 module: Xot
@@ -38,13 +18,4 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/bad_practices.txt -->
 
 https://mhdhamzashammout.medium.com/top-8-bad-security-practices-in-laravel-you-should-be-aware-of-bc52a7b353cb
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

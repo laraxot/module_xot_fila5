@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cyclomatic-complexity-refactoring-plan
-description: "Created: 2025-10-01"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Cyclomatic Complexity Refactoring Plan - Module Xot
 
 **Created:** 2025-10-01

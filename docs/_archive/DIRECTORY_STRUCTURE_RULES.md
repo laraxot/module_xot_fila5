@@ -68,15 +68,7 @@ find laravel/Modules -path "*/lang/lang" -type d
 
 ## Reference Projects
 
-<<<<<<< HEAD
 - `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
-=======
-<<<<<<< HEAD
-- `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/lang/`
-=======
-- `/var/www/_bases/base_quaeris_fila5_mono/laravel/Modules/Xot/lang/`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `/var/www/_bases/base_laravelpizza/laravel/Modules/Xot/lang/`
 
 Entrambi hanno struttura corretta senza duplicazioni.

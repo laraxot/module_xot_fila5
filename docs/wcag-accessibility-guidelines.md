@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: wcag-accessibility-guidelines
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # WCAG Accessibility Guidelines
 
 ## Overview

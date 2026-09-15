@@ -7,27 +7,9 @@ created: 2026-07-12
 updated: 2026-07-12
 qmd: "Xot QueueableAction trait mandatory every class app Actions execute"
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/372"
-discussions:
-  - "https://github.com/laraxot/<repo progetto>/discussions/273"
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md
   - ../queueable-actions.md

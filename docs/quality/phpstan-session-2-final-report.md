@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-session-2-final-report
-description: "Date: 2025-10-22"
-metadata:
-  type: quality
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 Enforcement - Session 2 Final Report
 
 **Date**: 2025-10-22

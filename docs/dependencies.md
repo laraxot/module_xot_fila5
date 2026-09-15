@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dependencies
-description: "Canonical dependency map:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Dependencies (Module Xot)
 
 Canonical dependency map:

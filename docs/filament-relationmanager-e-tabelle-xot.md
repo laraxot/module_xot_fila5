@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-relationmanager-e-tabelle-xot
-description: "Questa documentazione descrive come implementare e configurare i RelationManager e le loro tabelle all'interno dell'ecosistema PTVX/Laraxot,"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Linee Guida per RelationManager e Tabelle Personalizzate Xot in Filament
 
 Questa documentazione descrive come implementare e configurare i `RelationManager` e le loro tabelle all'interno dell'ecosistema PTVX/Laraxot, utilizzando le classi base e i trait forniti dal modulo `Xot`.

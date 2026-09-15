@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: architecture-complete
-description: "> Last Updated: 2025-11-19"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Complete Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19
@@ -153,27 +143,9 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-abstract public static function getFormSchema(): array;
-abstract public function getFormSchema(): array;
-=======
-<<<<<<< HEAD
-abstract public static function getFormSchema(): array;
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
@@ -612,27 +584,9 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -711,27 +665,9 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

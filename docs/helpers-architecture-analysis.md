@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: helpers-architecture-analysis
-description: " 🔍 Problema Identificato"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architettura Helper Functions - Analisi e Fix
 
 ## 🔍 Problema Identificato

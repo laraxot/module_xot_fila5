@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-analysis-8
-description: "Data Analisi: 2025-01-27"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis - 27 Gennaio 2025
 
 **Data Analisi**: 2025-01-27  
@@ -267,19 +257,7 @@ test('it can create and manage tenants', function (): void {
 - ✅ **check-all-modules.sh** - Controllo batch tutti i moduli
 
 ### Path Corretti
-<<<<<<< HEAD
 - ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila5`
-=======
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
->>>>>>> laraxot/dev
-=======
-- ✅ **mysql-db-connector.js** - Path corretto a `base_techplanner_fila4_mono`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 

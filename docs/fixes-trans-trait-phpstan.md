@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: fixes-trans-trait-phpstan
-description: " Data: 2025-01-27"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27

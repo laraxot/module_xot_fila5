@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-tables
-description: "Questo documento definisce le linee guida per l'implementazione delle tabelle Filament nel progetto <nome progetto>, utilizzando il trait Ha"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gestione delle Tabelle in Filament
 
 Questo documento definisce le linee guida per l'implementazione delle tabelle Filament nel progetto <nome progetto>, utilizzando il trait `HasXotTable`.

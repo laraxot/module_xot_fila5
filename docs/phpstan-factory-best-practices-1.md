@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-factory-best-practices-1
-description: " 🎯 Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Best Practices per Factory Laravel - Laraxot Framework
 
 ## 🎯 Overview

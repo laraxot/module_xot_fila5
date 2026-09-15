@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: progress-summary
-description: " Session Summary (2025-11-12)"
-metadata:
-  type: quality
----
-
-=======
->>>>>>> laraxot/dev
 # Quality Improvement Progress - Xot Module
 
 ## Session Summary (2025-11-12)

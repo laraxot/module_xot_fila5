@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: code-quality-tools-guide
-description: "Data Creazione: 2025-01-27"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🔧 CODE QUALITY TOOLS GUIDE - Strumenti di Analisi Codice PHP
 
 **Data Creazione**: 2025-01-27
@@ -19,19 +9,7 @@ metadata:
 
 ## 🎯 OVERVIEW
 
-<<<<<<< HEAD
 Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto <nome progetto>. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
-=======
-Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
->>>>>>> laraxot/dev
-=======
-Guida completa per l'utilizzo degli strumenti di analisi del codice PHP nel progetto FixCity. Questi strumenti garantiscono alta qualità del codice, manutenibilità e stabilità del sistema.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 🛠️ Strumenti Integrati
 - **PHPMD**: PHP Mess Detector - Rilevamento code smells
@@ -66,38 +44,14 @@ composer require --dev phpmd/phpmd
 #### File: `phpmd.xml`
 ```xml
 <?xml version="1.0"?>
-<<<<<<< HEAD
 <ruleset name="FixCity Code Quality Rules"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<ruleset name="<nome progetto> Code Quality Rules"
-=======
-<ruleset name="FixCity Code Quality Rules"
->>>>>>> laraxot/dev
-=======
-<ruleset name="FixCity Code Quality Rules"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
          xmlns="http://pmd.sf.net/ruleset/1.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0
                              http://pmd.sf.net/ruleset_xml_schema.xsd"
          xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
 
-<<<<<<< HEAD
     <description>FixCity PHP Mess Detector Rules</description>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <description><nome progetto> PHP Mess Detector Rules</description>
-=======
-    <description>FixCity PHP Mess Detector Rules</description>
->>>>>>> laraxot/dev
-=======
-    <description>FixCity PHP Mess Detector Rules</description>
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     <!-- Code Size Rules -->
     <rule ref="rulesets/codesize.xml">
@@ -168,19 +122,7 @@ composer require --dev phpmd/phpmd
 #### Analisi Moduli
 ```bash
 # Analisi modulo specifico
-<<<<<<< HEAD
 ./vendor/bin/phpmd Modules/Fixcity/app/ text phpmd.xml
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/phpmd Modules/<nome progetto>/app/ text phpmd.xml
-=======
-./vendor/bin/phpmd Modules/Fixcity/app/ text phpmd.xml
->>>>>>> laraxot/dev
-=======
-./vendor/bin/phpmd Modules/Fixcity/app/ text phpmd.xml
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 # Analisi tutti i moduli
 ./vendor/bin/phpmd Modules/ text phpmd.xml
@@ -303,19 +245,7 @@ composer require laravel/pint --dev
 #### Formattazione Moduli
 ```bash
 # Formattazione singolo modulo
-<<<<<<< HEAD
 ./vendor/bin/pint Modules/Fixcity/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/pint Modules/<nome progetto>/
-=======
-./vendor/bin/pint Modules/Fixcity/
->>>>>>> laraxot/dev
-=======
-./vendor/bin/pint Modules/Fixcity/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 # Formattazione tutti i moduli
 ./vendor/bin/pint Modules/
@@ -794,19 +724,7 @@ jobs:
 ./scripts/generate-quality-report.sh
 
 # Report per modulo
-<<<<<<< HEAD
 ./scripts/generate-module-report.sh Fixcity
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./scripts/generate-module-report.sh <nome progetto>
-=======
-./scripts/generate-module-report.sh Fixcity
->>>>>>> laraxot/dev
-=======
-./scripts/generate-module-report.sh Fixcity
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 # Report per tema
 ./scripts/generate-theme-report.sh Sixteen
@@ -894,16 +812,4 @@ jobs:
 
 ---
 
-<<<<<<< HEAD
 *Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto <nome progetto>.*
-=======
-*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
->>>>>>> laraxot/dev
-=======
-*Questa guida fornisce tutti gli strumenti necessari per mantenere alta la qualità del codice nel progetto FixCity.*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

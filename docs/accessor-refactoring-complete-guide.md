@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: accessor-refactoring-complete-guide
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida Completa: Refactoring Accessor Pattern - Progetto PTVX
 
 ## Executive Summary

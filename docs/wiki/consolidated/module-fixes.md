@@ -99,13 +99,6 @@ declare(strict_types=1);
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_30Jm9I
 =======
 public static function getFormSchema(): array
@@ -124,7 +117,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NeBFYX
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => [
@@ -924,13 +916,6 @@ declare(strict_types=1);
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_30Jm9I
 =======
 public static function getFormSchema(): array
@@ -949,7 +934,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_NeBFYX
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => [

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: information-schema-table
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # InformationSchemaTable
 
 ## Descrizione

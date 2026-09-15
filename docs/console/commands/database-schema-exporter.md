@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: database-schema-exporter
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # DatabaseSchemaExporter Command Documentation
 
 ## Overview

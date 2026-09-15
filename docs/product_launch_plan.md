@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: product-launch-plan
-description: "Module: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Product Launch Plan
 
 **Module:** Xot  

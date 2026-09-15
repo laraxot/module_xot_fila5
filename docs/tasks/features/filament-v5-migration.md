@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-v5-migration
-description: "Task ID: XOT-FEATURE-001"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament v5 Migration - Xot
 
 **Task ID**: XOT-FEATURE-001

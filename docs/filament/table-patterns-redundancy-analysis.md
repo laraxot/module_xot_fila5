@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: table-patterns-redundancy-analysis
-description: "Data: 2026-05-26"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Table Resources: Pattern Redundancy Analysis
 
 **Data:** 2026-05-26  

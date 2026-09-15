@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-v5-widgets-guide
-description: "Data: 2026-03-23"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament V5 Widgets Guide - Modulo Xot
 
 **Data**: 2026-03-23  

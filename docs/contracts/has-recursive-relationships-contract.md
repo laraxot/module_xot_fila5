@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: has-recursive-relationships-contract
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # HasRecursiveRelationshipsContract Documentation
 
 ## Overview

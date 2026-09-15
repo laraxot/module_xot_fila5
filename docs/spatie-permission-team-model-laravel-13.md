@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: spatie-permission-team-model-laravel-13
-description: " Why Xot cares"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Spatie Permission team model on Laravel 13
 
 ## Why Xot cares

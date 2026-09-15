@@ -1,23 +1,5 @@
 <<<<<<< HEAD
----
-name: index
-description: " Purpose"
-metadata:
-  type: wiki
----
-
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Index"
 type: reference
@@ -26,15 +8,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Xot Module - commands Index
 

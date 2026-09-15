@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-xot-session
-description: " stato interventi"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # phpstan xot session
 
 ## stato interventi

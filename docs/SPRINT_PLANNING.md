@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: sprint-planning
-description: "Module: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Sprint Planning
 
 **Module:** Xot  

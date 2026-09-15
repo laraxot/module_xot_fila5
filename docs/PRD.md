@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: prd
-description: "Module: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot
@@ -331,19 +321,7 @@ $action->onQueue('default')->execute($data);
 
 ### 7.4 Technical Constraints
 - PHP 8.3+ required
-<<<<<<< HEAD
 - Laravel 12+ required
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel 13+ required
-=======
-- Laravel 12+ required
->>>>>>> laraxot/dev
-=======
-- Laravel 12+ required
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - PHPStan level MAX
 - Strict typing required
 

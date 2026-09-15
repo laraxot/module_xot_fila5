@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dry-kiss-model-refactoring-1
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
 
 ## Executive Summary
@@ -18,50 +8,18 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 
 - **Violazioni critiche trovate**: 5
 - **Linee di codice eliminate**: ~200+
-<<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
-=======
-- **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
->>>>>>> laraxot/dev
-=======
-- **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
 ---
 
 ## Problemi Identificati e Risolti
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 1. ❌ <nome progetto>\Models\BaseModel estendeva Model invece di XotBaseModel
-
-**Prima** (VIOLAZIONE CRITICA):
-```php
-namespace Modules\<nome progetto>\Models;
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
 ```php
 namespace Modules\Quaeris\Models;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -75,19 +33,7 @@ abstract class BaseModel extends Model
 
     public $incrementing = true;
     public $timestamps = true;
-<<<<<<< HEAD
 protected $connection = 'Quaeris';
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-protected $connection = '<nome progetto>';
-=======
-protected $connection = 'Quaeris';
->>>>>>> laraxot/dev
-=======
-protected $connection = 'Quaeris';
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
     protected $hidden = [];
@@ -101,19 +47,7 @@ protected $connection = 'Quaeris';
 
 **Dopo** (✅ DRY & KISS):
 ```php
-<<<<<<< HEAD
 namespace Modules\Quaeris\Models;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-namespace Modules\<nome progetto>\Models;
-=======
-namespace Modules\Quaeris\Models;
->>>>>>> laraxot/dev
-=======
-namespace Modules\Quaeris\Models;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 use Modules\Xot\Models\XotBaseModel;
 
@@ -123,19 +57,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
     use HasExtraTrait;
     use InteractsWithMedia;
 
-<<<<<<< HEAD
 protected $connection = 'Quaeris';
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-protected $connection = '<nome progetto>';
-=======
-protected $connection = 'Quaeris';
->>>>>>> laraxot/dev
-=======
-protected $connection = 'Quaeris';
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     protected $with = ['extra'];
 }
 ```
@@ -420,19 +342,7 @@ BaseModel → BaseModelLang → Post
 
 | Modulo | Classe | Righe Prima | Righe Dopo | Riduzione |
 |--------|--------|-------------|------------|-----------|
-<<<<<<< HEAD
 | Quaeris | BaseModel | 66 | 20 | -70% |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | BaseModel | 66 | 20 | -70% |
-=======
-| Quaeris | BaseModel | 66 | 20 | -70% |
->>>>>>> laraxot/dev
-=======
-| Quaeris | BaseModel | 66 | 20 | -70% |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
 | Cms | BasePivot | 60 | 8 | -87% |

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: tips
-description: "<!-- Contenuto migrato da docs/tips.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # __tips
 
 <!-- Contenuto migrato da _docs/__tips.txt -->

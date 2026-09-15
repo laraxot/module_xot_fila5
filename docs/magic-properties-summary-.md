@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: magic-properties-summary
-description: " Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary
@@ -29,27 +19,11 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 ### ✅ healthcare_app Module
 ### ✅ ExternalProject Module
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-### ✅ <nome progetto> Module
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 ### ✅ Quaeris Module
 =======
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
@@ -97,28 +71,10 @@ Files generally have good scores with minor style issues:
 
 <<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
-<<<<<<< HEAD
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 =======
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

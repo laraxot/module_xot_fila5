@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: has-teams
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Trait HasTeams
 
 ## Descrizione

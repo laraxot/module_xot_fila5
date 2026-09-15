@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: " Architecture"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Models - Xot Module
 
 ## Architecture

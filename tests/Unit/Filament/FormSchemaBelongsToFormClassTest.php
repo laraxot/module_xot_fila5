@@ -8,13 +8,13 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Webmozart\Assert\Assert as WebmozartAssert;
+use ReflectionClass;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
-
-use Webmozart\Assert\Assert as WebmozartAssert;
 
 uses(TestCase::class);
 
@@ -58,10 +58,10 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
     foreach (resourceFiles() as $file) {
         $src = file_get_contents($file);
 
-        if (1 !== preg_match('/extends\s+XotBaseResource\b/', $src)) {
+        if (preg_match('/extends\s+XotBaseResource\b/', $src) !== 1) {
             continue;
         }
-        if (1 === preg_match('/function\s+getFormSchema\s*\(/', $src)) {
+        if (preg_match('/function\s+getFormSchema\s*\(/', $src) === 1) {
             $offenders[] = str_replace(base_path(), '', $file);
         }
     }
@@ -70,7 +70,7 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
 });
 
 test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void {
-    $method = (new \ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
+    $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
 
     expect($method->isAbstract())->toBeTrue();
     expect($method->isPublic())->toBeTrue();
@@ -79,7 +79,7 @@ test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void 
 test('getFormSchema() e final su XotBaseResource', function (): void {
     // Il final e' cio' che impedisce a una Resource di riprendersi lo schema:
     // senza, la regola tornerebbe affidata alla buona volonta'.
-    $method = (new \ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
+    $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
 
     expect($method->isFinal())->toBeTrue();
 });
@@ -112,7 +112,7 @@ function xotClassGraph(): array
     /** @var array<string, array{parent: string, file: string}>|null $graph */
     static $graph = null;
 
-    if (null !== $graph) {
+    if ($graph !== null) {
         return $graph;
     }
 
@@ -122,7 +122,7 @@ function xotClassGraph(): array
     );
 
     foreach ($iterator as $fileInfo) {
-        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
             continue;
         }
 
@@ -135,12 +135,12 @@ function xotClassGraph(): array
         $source = file_get_contents($path);
 
         $ns = [];
-        if (1 !== preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns)) {
+        if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
             continue;
         }
 
         $cls = [];
-        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls)) {
+        if (preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls) !== 1) {
             continue;
         }
 
@@ -148,7 +148,7 @@ function xotClassGraph(): array
         $className = (string) ($cls[1] ?? '');
         $parent = (string) ($cls[2] ?? '');
 
-        if ('' === $namespace || '' === $className || '' === $parent) {
+        if ($namespace === '' || $className === '' || $parent === '') {
             continue;
         }
 
@@ -157,7 +157,7 @@ function xotClassGraph(): array
         if (! str_contains($parent, '\\')) {
             $use = [];
             $usePattern = '/^\s*use\s+([\\\\\w]*\\\\'.preg_quote($parent, '/').');/m';
-            $parent = 1 === preg_match($usePattern, $source, $use)
+            $parent = preg_match($usePattern, $source, $use) === 1
                 ? (string) ($use[1] ?? '')
                 : $namespace.'\\'.$parent;
         }
@@ -209,7 +209,7 @@ test('nessun discendente di XotBaseResource dichiara getFormSchema', function ()
     $violations = [];
 
     foreach (xotDescendantsOf(XotBaseResource::class) as $file) {
-        if (1 === preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file))) {
+        if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
             $violations[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -238,7 +238,7 @@ function xotEffectiveFormSchemaBody(string $class): ?string
         $seen[$cursor] = true;
         $match = [];
 
-        if (1 === preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match)) {
+        if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
             return trim((string) ($match[1] ?? ''));
         }
 
@@ -264,9 +264,9 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         $body = xotEffectiveFormSchemaBody($class);
         $relative = str_replace(base_path().'/', '', $file);
 
-        if (null === $body) {
+        if ($body === null) {
             // Solo una classe astratta puo' lasciare l'obbligo al figlio concreto.
-            if (1 !== preg_match('/^\s*abstract\s+class\s/m', file_get_contents($file))) {
+            if (preg_match('/^\s*abstract\s+class\s/m', file_get_contents($file)) !== 1) {
                 $missing[] = $relative;
             }
 
@@ -277,7 +277,7 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         // e' vuoto quanto `return [];`, e senza questo passaggio passa inosservato.
         $body = trim(preg_replace(['#/\*.*?\*/#s', '#//[^\n]*#'], '', $body));
 
-        if ('' === $body || 1 === preg_match('/^return\s*\[\s*\]\s*;$/', $body)) {
+        if ($body === '' || preg_match('/^return\s*\[\s*\]\s*;$/', $body) === 1) {
             $stubs[] = $relative;
         }
     }
@@ -309,7 +309,7 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
 
         Assert::assertTrue(class_exists($formClass), "Form non caricabile: {$formClass}");
 
-        if ((new \ReflectionClass($formClass))->isAbstract()) {
+        if ((new ReflectionClass($formClass))->isAbstract()) {
             continue;
         }
 
@@ -323,7 +323,7 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
             continue;
         }
 
-        if ([] === $schema) {
+        if ($schema === []) {
             $failures[] = $formClass.' :: schema vuoto';
         }
     }

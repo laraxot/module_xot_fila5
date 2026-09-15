@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: getter
-description: " Principi Fondamentali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Filosofia dei Metodi Getter in Xot
 

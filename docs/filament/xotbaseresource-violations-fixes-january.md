@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaseresource-violations-fixes-january
-description: " Problema Identificato"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato

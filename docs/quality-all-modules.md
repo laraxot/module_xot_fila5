@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: quality-all-modules
-description: "Obiettivo: Analisi sistematica completa della qualità del codice di tutti i moduli"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli

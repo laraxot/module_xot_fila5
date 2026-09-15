@@ -2,19 +2,7 @@
 
 **Ultimo aggiornamento**: 2025-01-10
 **Principi**: DRY + KISS + SOLID + Robust
-<<<<<<< HEAD
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot
-=======
-**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
->>>>>>> laraxot/dev
-=======
-**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 80%
 
 ---
@@ -338,23 +326,8 @@ protected function getStats(): array
 {
     if ($this->record === null) {
         return [
-<<<<<<< HEAD
             Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
                 ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-            Stat::make(__('<nome progetto>::question_chart_stats_overview.stats.total_responses.label'), '0')
-                ->description(__('<nome progetto>::question_chart_stats_overview.messages.no_data_available'))
-=======
-            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
-                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
->>>>>>> laraxot/dev
-=======
-            Stat::make(__('quaeris::question_chart_stats_overview.stats.total_responses.label'), '0')
-                ->description(__('quaeris::question_chart_stats_overview.messages.no_data_available'))
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 ->color('gray'),
         ];
     }
@@ -731,29 +704,10 @@ public function getTableRecordKey(\Illuminate\Database\Eloquent\Model|array $rec
 private function createTotalResponsesStat(int $count): Stat
 {
     return Stat::make(
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        __('<nome progetto>::question_chart_stats_overview.stats.total_responses.label'),
-        number_format((float) $count)
-    )
-        ->description(__('<nome progetto>::question_chart_stats_overview.stats.total_responses.description'))
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         __('quaeris::question_chart_stats_overview.stats.total_responses.label'),
         number_format((float) $count)
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.total_responses.description'))
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         ->color($count > 0 ? 'success' : 'gray')
         ->icon('heroicon-o-document-text');
 }
@@ -761,29 +715,10 @@ private function createTotalResponsesStat(int $count): Stat
 private function createCompletionRateStat(float $rate): Stat
 {
     return Stat::make(
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        __('<nome progetto>::question_chart_stats_overview.stats.completion_rate.label'),
-        $rate.'%'
-    )
-        ->description(__('<nome progetto>::question_chart_stats_overview.stats.completion_rate.description'))
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         __('quaeris::question_chart_stats_overview.stats.completion_rate.label'),
         $rate.'%'
     )
         ->description(__('quaeris::question_chart_stats_overview.stats.completion_rate.description'))
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         ->color($rate >= 75 ? 'success' : ($rate >= 50 ? 'warning' : 'danger'))
         ->icon('heroicon-o-chart-bar');
 }
@@ -1148,19 +1083,7 @@ Dopo ogni modifica file:
 
 ## 🎓 Mantra Finale
 
-<<<<<<< HEAD
 **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3 + Laraxot**
-=======
-**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
->>>>>>> laraxot/dev
-=======
-**DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3 + Laraxot**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Filosofia Zen**: "Non avrai altro path all'infuori del relativo"
 

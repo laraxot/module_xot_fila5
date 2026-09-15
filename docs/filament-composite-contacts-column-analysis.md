@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-composite-contacts-column-analysis
-description: " Richiesta Utente"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi e Implementazione Colonna Composita "Contatti" - TechPlanner
 
 ## Richiesta Utente

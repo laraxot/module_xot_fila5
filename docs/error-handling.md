@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: error-handling
-description: " Errori Comuni e Soluzioni Aggiornati"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gestione Errori (Best Practice Xot)
 
 ## Errori Comuni e Soluzioni Aggiornati

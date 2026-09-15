@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: error-curl-download-the-latest-cacertpem-file-from
-description: "error-curl-download-the-latest-cacertpem-file-from"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 

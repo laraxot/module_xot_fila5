@@ -23,6 +23,6 @@ test('XotBaseResourceTable configure su classe astratta solleva LogicException',
     $livewire = new XotTableConfigureLivewireHarness();
     $table = Table::make($livewire);
 
-    expect(fn (): Table => Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable::configure($table))
-        ->toThrow(LogicException::class);
+    expect(fn (): Table => \Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable::configure($table))
+        ->toThrow(\LogicException::class);
 });

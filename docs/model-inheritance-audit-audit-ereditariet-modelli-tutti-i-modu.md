@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-inheritance-audit-audit-ereditariet-modelli-tutti-i-modu
-description: " Data Audit"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Audit Ereditarietà Modelli - Tutti i Moduli
 
 ## Data Audit

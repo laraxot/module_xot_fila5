@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 # Configurazione MCP per base_ptvx_fila4_mono
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Configurazione MCP per base_ptvx_fila5
-=======
-# Configurazione MCP per base_ptvx_fila4_mono
->>>>>>> laraxot/dev
-=======
-# Configurazione MCP per base_ptvx_fila4_mono
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Data Creazione**: 2026-01-12  
 **Ultimo Aggiornamento**: 2026-01-12  
@@ -20,19 +8,7 @@
 
 ## 🎯 Scopo del Documento
 
-<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila5**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> laraxot/dev
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_ptvx_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -171,19 +147,7 @@ Nei prompt è stato integrato il riferimento a MCP per aggirare ostacoli:
 ```
 Se alcuni file risultano bloccati o non accessibili con tool standard:
 - usa filesystem MCP (read/write/edit) come fallback
-<<<<<<< HEAD
 - se serve un FS alternativo: usa filesystem-quaeris MCP
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- se serve un FS alternativo: usa filesystem-<nome progetto> MCP
-=======
-- se serve un FS alternativo: usa filesystem-quaeris MCP
->>>>>>> laraxot/dev
-=======
-- se serve un FS alternativo: usa filesystem-quaeris MCP
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - per esplorazione rapida: usa code_search / grep_search
 - per analisi e ottimizzazione: usa sequential-thinking MCP
 - per interazione database: usa mysql o postgres MCP

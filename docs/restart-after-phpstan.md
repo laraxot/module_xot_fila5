@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: restart-after-phpstan
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida al Riavvio del Sistema Dopo Validazione PHPStan
 
 ## Introduzione

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: app
-description: " Collegamenti tra versioni di app.md"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 ~~~ php
 <?php
 

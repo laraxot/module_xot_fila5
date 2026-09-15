@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-analysis-report
-description: "Date: 2026-01-05"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - Xot Module
 
 **Date:** 2026-01-05

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 02-goals
-description: " Short Term"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Goals - Xot
 
 ## Short Term

@@ -7,27 +7,9 @@ created: 2026-06-06
 updated: 2026-06-06
 qmd: "xot spatie laravel pdf module composer dependency MakePdfSpatieTestAction Pdf facade merge plugin"
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_techplanner_fila5/issues/16"
 discussions:
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/17"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/16"
-discussions:
-  - "https://github.com/laraxot/<repo progetto>/discussions/17"
-=======
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/16"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/17"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/16"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/17"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - ../../composer-module-dependency-management.md
   - ../../../../../../docs/wiki/rules/composer-module-dependency-go.md
@@ -72,19 +54,7 @@ cd laravel && php -d memory_limit=-1 composer.phar update -W
 
 Upstream: [github.com/spatie/laravel-pdf](https://github.com/spatie/laravel-pdf)
 
-<<<<<<< HEAD
 Regola globale: [composer-module-dependency-go.md](../../../../../../docs/wiki/rules/composer-module-dependency-go.md) · Issue [#16](https://github.com/laraxot/base_techplanner_fila5/issues/16)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Regola globale: [composer-module-dependency-go.md](../../../../../../docs/wiki/rules/composer-module-dependency-go.md) · Issue [#16](https://github.com/laraxot/<repo progetto>/issues/16)
-=======
-Regola globale: [composer-module-dependency-go.md](../../../../../../docs/wiki/rules/composer-module-dependency-go.md) · Issue [#16](https://github.com/laraxot/base_techplanner_fila5/issues/16)
->>>>>>> laraxot/dev
-=======
-Regola globale: [composer-module-dependency-go.md](../../../../../../docs/wiki/rules/composer-module-dependency-go.md) · Issue [#16](https://github.com/laraxot/base_techplanner_fila5/issues/16)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## PHPStan
 

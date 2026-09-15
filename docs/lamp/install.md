@@ -69,19 +69,7 @@ php -m | sort
 php -r "echo PHP_VERSION, PHP_EOL;"
 php -r "var_dump(extension_loaded('pdo_mysql'), extension_loaded('redis'), extension_loaded('intl'));"
 
-<<<<<<< HEAD
 # --- 8. Progetto FixCity (dalla root repo) ---
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# --- 8. Progetto <nome progetto> (dalla root repo) ---
-=======
-# --- 8. Progetto FixCity (dalla root repo) ---
->>>>>>> laraxot/dev
-=======
-# --- 8. Progetto FixCity (dalla root repo) ---
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # cd ./laravel
 # php "$(command -v composer)" install
 # php artisan --version

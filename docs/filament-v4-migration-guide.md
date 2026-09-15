@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-v4-migration-guide
-description: "Data: 10 Dicembre 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament v4 Migration Guide - Modulo Xot
 **Data**: 10 Dicembre 2025
 **Modulo**: Xot (Core Framework)
@@ -164,27 +154,9 @@ abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array { /* ... */ }
-    public function getFormSchema(): array { /* ... */ }
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array { /* ... */ }
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public static function getPages(): array { /* ... */ }
 

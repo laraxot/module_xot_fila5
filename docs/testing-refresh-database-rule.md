@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-refresh-database-rule
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Critical Rule: Never Use RefreshDatabase Trait
 
 ## Overview

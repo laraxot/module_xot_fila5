@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-section-rule
-description: " Scopo (Purpose)"
-metadata:
-  type: rule
----
-
-=======
->>>>>>> laraxot/dev
 # Regola XotBaseSection - Politica, Filosofia, Religione, Zen
 
 ## Scopo (Purpose)

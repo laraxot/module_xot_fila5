@@ -1,30 +1,8 @@
 <<<<<<< HEAD
----
-name: thinking-about-blade
-description: "<!-- Contenuto migrato da docs/thinkingabout.blade.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
 
 struttura con l5-repository
 https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepositoryEloquent.php
 =======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-struttura con l5-repository
-https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepositoryEloquent.php
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'thinking_about.blade'
 module: Xot
@@ -43,13 +21,4 @@ updated: 2026-08-24
 
 struttura con l5-repository
 https://github.com/jeanfprado/laradefault/blob/master/app/Repositories/UserRepositoryEloquent.php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

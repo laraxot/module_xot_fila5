@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-action-plan
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Action Plan - 2025-11-18
 
 ## Executive Summary

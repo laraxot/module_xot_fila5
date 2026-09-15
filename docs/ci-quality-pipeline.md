@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ci-quality-pipeline
-description: "This pipeline defines a staged adoption of linters/scanners across the monorepo. All jobs run in report/dry-run mode initially. Enforce gate"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # CI Quality Pipeline (Staged, Safe-By-Default)
 
 This pipeline defines a staged adoption of linters/scanners across the monorepo. All jobs run in report/dry-run mode initially. Enforce gates only after manual review.

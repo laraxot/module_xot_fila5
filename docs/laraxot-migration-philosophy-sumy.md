@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-migration-philosophy-sumy
-description: " The Fundamental Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Migration Philosophy - Core Principles
 
 ## The Fundamental Rule

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-journey
-description: " La Via dei Nove Moduli Perfetti"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🌟 Il Viaggio verso l'Illuminazione PHPStan
 
 ## La Via dei Nove Moduli Perfetti
@@ -295,27 +285,9 @@ Level 0  → 🏕️  Campo Base
 ```php
 // 1. Form Schema con Semantic Keys
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

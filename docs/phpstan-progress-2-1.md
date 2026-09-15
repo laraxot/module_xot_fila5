@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-progress-2-1
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary
@@ -55,19 +45,7 @@ metadata:
 5. Cms - 457 errors
 6. User - 622 errors
 7. Notify - 776 errors
-<<<<<<< HEAD
 8. Fixcity - 1171 errors
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-8. <nome progetto> - 1171 errors
-=======
-8. Fixcity - 1171 errors
->>>>>>> laraxot/dev
-=======
-8. Fixcity - 1171 errors
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Key Fixes Implemented
 
@@ -260,19 +238,7 @@ test('base model extends eloquent model', function (): void {
 ### Long Term (Session 4+)
 1. Fix User tests (622 errors)
 2. Fix Notify tests (776 errors)
-<<<<<<< HEAD
 3. Fix Fixcity tests (1171 errors)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. Fix <nome progetto> tests (1171 errors)
-=======
-3. Fix Fixcity tests (1171 errors)
->>>>>>> laraxot/dev
-=======
-3. Fix Fixcity tests (1171 errors)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Success Metrics
 
@@ -332,19 +298,7 @@ Based on current pace:
 ### Next Session Priorities
 1. **Quick Wins**: Complete Tenant (24 errors) and Gdpr (18 errors) - ~1-2 hours
 2. **Medium Modules**: Media (140), Lang (151), Geo (271) - ~4-6 hours
-<<<<<<< HEAD
 3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), Fixcity (1171) - ~15-20 hours
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), <nome progetto> (1171) - ~15-20 hours
-=======
-3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), Fixcity (1171) - ~15-20 hours
->>>>>>> laraxot/dev
-=======
-3. **Large Modules**: UI (361), Cms (457), User (622), Notify (776), Fixcity (1171) - ~15-20 hours
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Estimated Remaining Work
 - **42 remaining errors** in Tenant + Gdpr (both >65% complete)
@@ -377,19 +331,7 @@ Exceptional progress with **3 modules actively improved** and **861 errors fixed
 
 *Session Date: 2025-10-13*
 *Report by: Claude Code*
-<<<<<<< HEAD
 *Project: FixCity PTVX Laravel*
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-*Project: <nome progetto> PTVX Laravel*
-=======
-*Project: FixCity PTVX Laravel*
->>>>>>> laraxot/dev
-=======
-*Project: FixCity PTVX Laravel*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 *Session Duration: ~2 hours*
 *Errors Fixed: 861*
 *Progress: 17.8% complete*

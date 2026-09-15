@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: daisyui
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module — daisyUI Reference
 
 ## Panoramica
@@ -40,19 +30,7 @@ Il modulo **Xot** è un modulo "kernel" — fornisce:
 - `tailwind.config.js`
 - Pipeline di build autonoma
 
-<<<<<<< HEAD
 Tutte le sue view sono estese da moduli consumatori (Fixcity, Geo, ecc.) che le fanno girare nel **tema Sixteen**.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Tutte le sue view sono estese da moduli consumatori (<nome progetto>, Geo, ecc.) che le fanno girare nel **tema Sixteen**.
-=======
-Tutte le sue view sono estese da moduli consumatori (Fixcity, Geo, ecc.) che le fanno girare nel **tema Sixteen**.
->>>>>>> laraxot/dev
-=======
-Tutte le sue view sono estese da moduli consumatori (Fixcity, Geo, ecc.) che le fanno girare nel **tema Sixteen**.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Quindi Xot eredita daisyUI indirettamente dal tema quando i suoi componenti sono montati in una pagina Sixteen.
 
 ---
@@ -63,19 +41,7 @@ Quindi Xot eredita daisyUI indirettamente dal tema quando i suoi componenti sono
 
 | Vantaggio | Contesto Xot |
 |-----------|-------------|
-<<<<<<< HEAD
 | Nessun overhead — già ereditato dal tema | Tutti i consumatori (Fixcity, Geo, ecc.) usano Sixteen |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| Nessun overhead — già ereditato dal tema | Tutti i consumatori (<nome progetto>, Geo, ecc.) usano Sixteen |
-=======
-| Nessun overhead — già ereditato dal tema | Tutti i consumatori (Fixcity, Geo, ecc.) usano Sixteen |
->>>>>>> laraxot/dev
-=======
-| Nessun overhead — già ereditato dal tema | Tutti i consumatori (Fixcity, Geo, ecc.) usano Sixteen |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Classi daisyUI disponibili nelle view Xot | Semplicità per template filtri, card, badge di moduli consumer |
 
 ### ❌ Contro

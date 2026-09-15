@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dashboard-pages
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Pagine Dashboard Filament - Best Practices
 
 ## Panoramica

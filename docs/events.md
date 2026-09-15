@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: events
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Eventi
 
 ## Configurazione Base

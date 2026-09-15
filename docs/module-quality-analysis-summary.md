@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-quality-analysis-summary
-description: "Date: 2025-12-18"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Module Quality Analysis Summary
 
 **Date**: 2025-12-18

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-3
-description: " Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - [DATE]
 
 ## Summary

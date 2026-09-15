@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-standards
-description: " Convenzioni di Nomenclatura"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Standard per le Migrazioni in <nome progetto>
 
 ## Convenzioni di Nomenclatura

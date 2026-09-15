@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: safe-float-cast-usage
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Esempi Pratici di Utilizzo di SafeFloatCastAction
 
 ## Panoramica

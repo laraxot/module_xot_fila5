@@ -1,38 +1,10 @@
 <<<<<<< HEAD
----
-name: livewire-components
-description: "<!-- Contenuto migrato da docs/livewirecomponents.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 da tenere d'occhio .. comprati
 https://livewiredemos.com/components
 
 
 https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'livewire_components'
 module: Xot
@@ -53,13 +25,4 @@ da tenere d'occhio .. comprati
 https://livewiredemos.com/components
 
 https://github.com/bitfumes/laravel-livewire-full-course/blob/master/app/Http/Livewire/Logout.php
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

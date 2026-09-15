@@ -1,39 +1,11 @@
 <<<<<<< HEAD
----
-name: todo
-description: "<!-- Contenuto migrato da docs/todo.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 questo con dei stubs crea services, traits ed altro da estendere per fare scrivere dentro Module
 https://github.com/limewell/laravel-make-extender
 
 
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Todo"
 type: reference
@@ -52,13 +24,4 @@ https://github.com/limewell/laravel-make-extender
 
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

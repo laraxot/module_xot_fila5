@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-conflict-template
-description: " 🔍 Analisi Conflitto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 📝 Documentazione Conflitti Git
 
 ## 🔍 Analisi Conflitto

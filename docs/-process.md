@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: process
-description: "<!-- Contenuto migrato da docs/process.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _process
 
 <!-- Contenuto migrato da _docs/_process.txt -->

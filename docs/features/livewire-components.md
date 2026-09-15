@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: livewire-components
-description: "livewire-components"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 da tenere d'occhio .. comprati
 https://livewiredemos.com/components
 

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: philosophy-complete
-description: "Data Creazione: 2025-01-18"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-01-18

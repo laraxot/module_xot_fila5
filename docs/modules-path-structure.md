@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: modules-path-structure
-description: "Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in Modules/<NomeModulo>/app/ e mai direttament"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola struttura path per i moduli Laravel
 
 Tutti i file di risorsa (Resource), enum e pages dei moduli Laravel devono essere posizionati in `Modules/<NomeModulo>/app/` e **mai** direttamente nella root del modulo o in sottocartelle come `Filament/Resources/` o `Enums/` fuori da `app/`.

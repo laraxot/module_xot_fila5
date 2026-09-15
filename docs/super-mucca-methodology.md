@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: super-mucca-methodology
-description: "Ultimo aggiornamento: 31 Gennaio 2026"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🐃 **Metodologia Super Mucca: AI-Native Edition**
 
 **Ultimo aggiornamento**: 31 Gennaio 2026  

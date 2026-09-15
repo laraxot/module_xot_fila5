@@ -22,19 +22,7 @@
     - Class Complexity in Data objects (`MetatagData`, `XotData`).
     - *These are noted for future refactoring.*
 
-<<<<<<< HEAD
 ### 4. Multi-Module Optimization (Chart, Notify, DbForge, Quaeris, User)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 4. Multi-Module Optimization (Chart, Notify, DbForge, <nome progetto>, User)
-=======
-### 4. Multi-Module Optimization (Chart, Notify, DbForge, Quaeris, User)
->>>>>>> laraxot/dev
-=======
-### 4. Multi-Module Optimization (Chart, Notify, DbForge, Quaeris, User)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Chart**: ✅ **VERIFIED**
     - Fixed `base64_decode` type errors using `Webmozart\Assert::string` pattern.
     - Verified strict types compliance.
@@ -46,19 +34,7 @@
 - **User**: ⚠️ **IN PROGRESS**
     - Fixed `Filament\Schemas\Components\Grid` -> `Filament\Forms\Components\Grid` import.
     - **Issue**: `XotBaseSection` (from Module Xot) causes `class.notFound` errors in PHPStan analysis for `OauthClientResource`. Requires investigation into `Modules\Xot` vs `Modules\User` dependency loading or Filament version compatibility.
-<<<<<<< HEAD
 - **Quaeris**: 🔄 **VERIFYING**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto>**: 🔄 **VERIFYING**
-=======
-- **Quaeris**: 🔄 **VERIFYING**
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: 🔄 **VERIFYING**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     - **SurveyController**:
         - Fixed `buildSuccessResponse` docblock types (`Contact` model).
         - Fixed property access `$user->customers` -> `$user->tenants` (referencing `UserContract`).
@@ -68,31 +44,11 @@
     - **Verification**: Running final PHPStan sweep to confirm fixes.
 
 ### 5. Global Verification (All Modules)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Scope**: `Tenant`, `Lang`, `Media`, `UI`, `Activity`, `CloudStorage`, `Cms`, `Gdpr`, `Geo`, `Job`, `Limesurvey`, `User`, `<nome progetto>`
-- **Status**: ✅ **VERIFIED** (PHPStan Level 10 - 4204 files)
-- **Resolved Issues**:
-    - **User**: Fixed syntax errors in `AuthenticationLogResource` (conflict resolution) and `ViewPasswordReset`.
-    - **<nome progetto>**: Fixed `DashboardV2` widget imports.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Scope**: `Tenant`, `Lang`, `Media`, `UI`, `Activity`, `CloudStorage`, `Cms`, `Gdpr`, `Geo`, `Job`, `Limesurvey`, `User`, `Quaeris`
 - **Status**: ✅ **VERIFIED** (PHPStan Level 10 - 4204 files)
 - **Resolved Issues**:
     - **User**: Fixed syntax errors in `AuthenticationLogResource` (conflict resolution) and `ViewPasswordReset`.
     - **Quaeris**: Fixed `DashboardV2` widget imports.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     - **UI**: Fixed `RadioBadge` PHPDoc syntax.
     - **Global**: 0 Errors found across entire codebase.
 

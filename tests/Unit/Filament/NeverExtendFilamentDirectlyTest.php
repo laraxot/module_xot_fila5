@@ -64,7 +64,7 @@ function classesExtendingFilamentDirectly(): array
     );
 
     foreach ($iterator as $fileInfo) {
-        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
             continue;
         }
 
@@ -82,7 +82,7 @@ function classesExtendingFilamentDirectly(): array
         $source = file_get_contents($path);
         $match = [];
 
-        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match)) {
+        if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+\w+\s+extends\s+(\w+)/m', $source, $match) !== 1) {
             continue;
         }
 
@@ -94,7 +94,7 @@ function classesExtendingFilamentDirectly(): array
 
         // `extends TextColumn` dove TextColumn è un alias di import di una XotBase
         // non è una violazione: conta cosa importa, non come lo chiama.
-        if (1 === preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source)) {
+        if (preg_match('/use\s+Modules\\\\[\w\\\\]*XotBase\w*\s+as\s+'.preg_quote($parent, '/').'\s*;/', $source) === 1) {
             continue;
         }
 

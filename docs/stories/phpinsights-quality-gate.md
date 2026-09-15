@@ -1,22 +1,7 @@
 ---
 id: phpinsights-quality-gate
-<<<<<<< HEAD
 slug: phpinsights-base-workorder-fila5
 scope: [project:base_workorder_fila5, modules:All 52]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-slug: phpinsights-base-<nome progetto>-fila5
-scope: [project:<repo progetto>, modules:All 52]
-=======
-slug: phpinsights-base-workorder-fila5
-scope: [project:base_workorder_fila5, modules:All 52]
->>>>>>> laraxot/dev
-=======
-slug: phpinsights-base-workorder-fila5
-scope: [project:base_workorder_fila5, modules:All 52]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 status: Pending
 priority: High
 created: 2026-09-06

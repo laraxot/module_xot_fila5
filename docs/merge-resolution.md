@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: merge-resolution
-description: "Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi incontrati durante lo sviluppo del progetto healthcareapp."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Log Risoluzione Conflitti Git (Merge Conflict Resolution Log)
 
 Questo documento traccia la cronologia delle risoluzioni dei conflitti massivi incontrati durante lo sviluppo del progetto healthcare_app.

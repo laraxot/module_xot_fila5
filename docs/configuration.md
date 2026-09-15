@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: configuration
-description: " Struttura delle Configurazioni"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Configurazione del Sistema
 
 ## Struttura delle Configurazioni

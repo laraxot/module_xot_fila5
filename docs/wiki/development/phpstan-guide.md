@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-guide
-description: " 🎯 Principi Fondamentali"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Guida PHPStan - Modulo Xot
 
 ## 🎯 Principi Fondamentali

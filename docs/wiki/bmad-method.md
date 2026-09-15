@@ -1,10 +1,3 @@
----
-name: bmad-method
-description: " Regola pratica"
-metadata:
-  type: wiki
----
-
 # BMAD Method v6.3 operativo nel progetto
 
 ## Regola pratica
