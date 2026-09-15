@@ -13,7 +13,7 @@ use Tests\TestCase;
 class HasXotTableReorderingTest extends TestCase
 {
     #[Test]
-    public function it_returns_order_column_when_model_has_column(): void
+    public function itReturnsOrderColumnWhenModelHasColumn(): void
     {
         $table = new TestTableWithOrderColumn();
 
@@ -21,7 +21,7 @@ class HasXotTableReorderingTest extends TestCase
     }
 
     #[Test]
-    public function it_returns_null_when_model_missing_order_column(): void
+    public function itReturnsNullWhenModelMissingOrderColumn(): void
     {
         $table = new TestTableWithoutOrderColumn();
 
@@ -29,7 +29,7 @@ class HasXotTableReorderingTest extends TestCase
     }
 
     #[Test]
-    public function it_allows_override_in_subclass(): void
+    public function itAllowsOverrideInSubclass(): void
     {
         $table = new TestTableWithCustomOrderColumn();
 
@@ -37,7 +37,7 @@ class HasXotTableReorderingTest extends TestCase
     }
 
     #[Test]
-    public function it_checks_column_existence_via_schema(): void
+    public function itChecksColumnExistenceViaSchema(): void
     {
         $table = new TestTableWithOrderColumn();
 
@@ -46,7 +46,7 @@ class HasXotTableReorderingTest extends TestCase
     }
 
     #[Test]
-    public function it_auto_enables_reorderable_when_column_exists(): void
+    public function itAutoEnablesReorderableWhenColumnExists(): void
     {
         $table = new TestTableWithOrderColumn();
         $filamentTable = \Mockery::mock(Table::class);
@@ -59,7 +59,7 @@ class HasXotTableReorderingTest extends TestCase
     }
 
     #[Test]
-    public function it_skips_reorderable_when_column_missing(): void
+    public function itSkipsReorderableWhenColumnMissing(): void
     {
         $table = new TestTableWithoutOrderColumn();
         $filamentTable = \Mockery::mock(Table::class);
