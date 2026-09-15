@@ -65,13 +65,8 @@ return [
         'level_name' => ['label' => 'level_name'],
         'context' => ['label' => 'context'],
         'created_at' => ['label' => 'created_at'],
-<<<<<<< HEAD
-        'path' => ['label' => 'path', 'placeholder' => 'path', 'helper_text' => '', 'description' => 'path'],
-        'content' => ['label' => 'content', 'placeholder' => 'content', 'helper_text' => '', 'description' => 'content'],
-=======
         'path' => ['label' => 'path', 'placeholder' => 'path', 'helper_text' => 'path', 'description' => 'path'],
         'content' => ['label' => 'content', 'placeholder' => 'content', 'helper_text' => 'content', 'description' => 'content'],
->>>>>>> laraxot/dev
         'file-content' => ['label' => 'file-content'],
     ],
     'actions' => [

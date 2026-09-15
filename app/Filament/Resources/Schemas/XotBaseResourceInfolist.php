@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\Schemas;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-use Filament\Schemas\Components\Component;
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Modules\Xot\Filament\Traits\HasXotInfolist;
 use Webmozart\Assert\Assert;
@@ -32,15 +25,7 @@ abstract class XotBaseResourceInfolist
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, \Filament\Schemas\Components\Component>
-=======
-<<<<<<< HEAD
-     * @return array<string, Component>
-=======
-     * @return array<string, \Filament\Schemas\Components\Component>
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      */
     abstract public function getInfolistSchema(): array;
 }

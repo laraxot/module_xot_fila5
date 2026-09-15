@@ -72,18 +72,9 @@ abstract class XotBaseListRecords extends FilamentListRecords
             'create' => CreateAction::make()->icon('heroicon-o-plus'),
         ];
     }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
-    final public function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [];
     }
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 }

@@ -34,21 +34,6 @@ abstract class XotBaseResourceTable
     }
 
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-     * @return array<int|string, Column>
-     */
-    abstract public function getTableColumns(): array;
-
-
-     /**
-     * La Resource proprietaria, dedotta dal namespace `{Resource}\Schemas\{Model}Form`.
-     *
-     * @return class-string<XotBaseResource>
-    */ 
-=======
->>>>>>> laraxot/dev
      * @return array<string, Column>
      */
     abstract public function getTableColumns(): array;
@@ -58,10 +43,6 @@ abstract class XotBaseResourceTable
      *
      * @return class-string<XotBaseResource>
      */
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     public static function getResource(): string
     {
         $resource = Str::of(static::class)->before('\\Tables\\')->toString();
@@ -70,18 +51,4 @@ abstract class XotBaseResourceTable
 
         return $resource;
     }
-<<<<<<< HEAD
-
-    public static function getModelClass(): string
-    {
-        $resource = static::getResource();
-        $model = $resource::getModel();
-        return $model;
-    }
-=======
-<<<<<<< HEAD
-        
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 }

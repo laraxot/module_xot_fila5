@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 name: bmad-method
 description: " Regola pratica"
@@ -6,8 +5,6 @@ metadata:
   type: wiki
 ---
 
-=======
->>>>>>> laraxot/dev
 # BMAD Method v6.3 operativo nel progetto
 
 ## Regola pratica
