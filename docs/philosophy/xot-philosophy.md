@@ -116,8 +116,8 @@ If you think a rule is wrong:
 
 ## See Also
 
-- `ARCHITECTURE.md` — design and integrations
-- `TESTING.md` — test strategies
+- `docs/architecture/xot-architecture-overview.md` — design and integrations
+- `docs/testing/xot-testing-guide.md` — test strategies
 - `docs/actions-over-services.md` — Actions pattern deep-dive
 - `docs/xotbaseresource.md` — resource implementation
 - `docs/xotbasepanelprovider-discovery.md` — panel discovery rules
