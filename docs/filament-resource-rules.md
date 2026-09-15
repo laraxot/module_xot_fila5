@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-resource-rules
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole per le Risorse Filament in
 
 ## Panoramica
@@ -82,9 +85,27 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -181,9 +202,27 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

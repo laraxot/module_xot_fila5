@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testcase-migrate-rule
 description: " REGOLA FONDAMENTALE: No Migration nel TestCase"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # TestCase Migration Rule - VERSIONE CORRETTA
 
 ## REGOLA FONDAMENTALE: No Migration nel TestCase

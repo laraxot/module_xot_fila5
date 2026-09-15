@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-array-types-fixes
 description: "Status: 🎉 COMPLETATO - TUTTI GLI ERRORI RISOLTI! (832 → 0)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Array Types Fixes - Patterns & Solutions
 
 **Status**: 🎉 **COMPLETATO** - TUTTI GLI ERRORI RISOLTI! (832 → 0)

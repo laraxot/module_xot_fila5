@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbasepage
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBasePage - Classe Base per le Pagine Filament
 
 ## Descrizione

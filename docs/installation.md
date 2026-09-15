@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: installation
 description: " Requisiti di Sistema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Installazione
 
 ## Requisiti di Sistema

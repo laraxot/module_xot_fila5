@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: custom-casts
 description: "<!-- Contenuto migrato da docs/customcasts.txt -->"
@@ -7,6 +8,16 @@ metadata:
 
 <<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Custom casts"
 type: reference
@@ -19,6 +30,15 @@ note: "Convertito da custom_casts.txt (documento) da convert-docs-txt-to-md.py."
 # custom_casts
 
 <!-- Contenuto migrato da _docs/custom_casts.txt -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 php artisan make:cast Address
@@ -32,6 +52,18 @@ https://dev.to/slyfirefox/laravel-models-3-common-custom-cast-examples-2com
 
 
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 DB::table(‘orders’)
     ->where(‘address->postalCode’, ‘30582–0378’)
@@ -40,6 +72,24 @@ DB::table(‘orders’)
 <<<<<<< HEAD
 
 $table->json('address')->nullable();
+<<<<<<< HEAD
 =======
 $table->json('address')->nullable();
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+$table->json('address')->nullable();
+=======
+<<<<<<< HEAD
+
+$table->json('address')->nullable();
+=======
+$table->json('address')->nullable();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+$table->json('address')->nullable();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

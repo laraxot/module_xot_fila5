@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: database
 description: " Collegamenti tra versioni di database.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 

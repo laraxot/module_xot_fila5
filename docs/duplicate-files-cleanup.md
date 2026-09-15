@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: duplicate-files-cleanup
 description: " 📋 File Duplicati Identificati"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pulizia File Duplicati Case-Insensitive
 
 ## 📋 File Duplicati Identificati
@@ -23,7 +26,19 @@ rm Modules/Activity/docs/readme.md
 rm Modules/UI/docs/readme.md
 
 # ROADMAP.md (MAIUSCOLO) è corretto, elimina minuscolo
+<<<<<<< HEAD
 rm Modules/Fixcity/docs/roadmap.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+rm Modules/<nome progetto>/docs/roadmap.md
+=======
+rm Modules/Fixcity/docs/roadmap.md
+>>>>>>> laraxot/dev
+=======
+rm Modules/Fixcity/docs/roadmap.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # ListRecords.md (PascalCase) è corretto, elimina minuscolo
 rm Modules/UI/docs/filament/listrecords.md

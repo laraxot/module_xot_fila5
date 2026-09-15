@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-standards
 description: " Principi Fondamentali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Standard di Codice
 
 ## Principi Fondamentali

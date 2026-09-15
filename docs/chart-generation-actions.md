@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: chart-generation-actions
 description: " 📋 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Chart Generation Actions - Spatie Queueable Guide
 
 ## 📋 Overview

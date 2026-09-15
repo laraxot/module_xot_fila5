@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fix-plan
 description: " Current Errors (3 errors)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - PHPStan Fix Plan
 
 ## Current Errors (3 errors)
@@ -381,7 +384,19 @@ After fixing Xot module:
 
 1. Fix Blog module errors (6 errors)
 2. Fix Cms module remaining errors (8 errors)
+<<<<<<< HEAD
 3. Fix Fixcity module errors (45 errors)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. Fix <nome progetto> module errors (45 errors)
+=======
+3. Fix Fixcity module errors (45 errors)
+>>>>>>> laraxot/dev
+=======
+3. Fix Fixcity module errors (45 errors)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 4. Fix Geo module errors (10 errors)
 5. Fix remaining module errors (66 errors)
 

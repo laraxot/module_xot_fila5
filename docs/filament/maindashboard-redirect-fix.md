@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: maindashboard-redirect-fix
 description: " Problema Risolto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Fix Redirect Loop - MainDashboard
 
 ## Problema Risolto

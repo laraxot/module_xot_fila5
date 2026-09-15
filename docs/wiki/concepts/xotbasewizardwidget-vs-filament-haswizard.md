@@ -10,7 +10,19 @@ created: 2026-05-04
 updated: 2026-05-04
 tags: [filament, wizard, haswizard, xotbasewizardwidget, architecture, reinventing-wheel]
 related:
+<<<<<<< HEAD
   - ../../../../Fixcity/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - ../../../../<nome progetto>/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
+=======
+  - ../../../../Fixcity/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
+>>>>>>> laraxot/dev
+=======
+  - ../../../../Fixcity/docs/wiki/concepts/wizard-architecture-filament-theme-boundary.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   - ../../../docs/wiki/concepts/laraxot-widget-vs-page-architecture.md
 ---
 
@@ -143,7 +155,19 @@ abstract class XotBaseWizardWidget extends XotBaseWidget
 
 ## Visual Parity: The "Avanti" Button Problem
 
+<<<<<<< HEAD
 **Issue**: Frontoffice wizard (`/it/tests/segnalazione-crea`) missing "Avanti" button compared to admin (`/fixcity/admin/tickets/create`).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Issue**: Frontoffice wizard (`/it/tests/segnalazione-crea`) missing "Avanti" button compared to admin (`/<nome progetto>/admin/tickets/create`).
+=======
+**Issue**: Frontoffice wizard (`/it/tests/segnalazione-crea`) missing "Avanti" button compared to admin (`/fixcity/admin/tickets/create`).
+>>>>>>> laraxot/dev
+=======
+**Issue**: Frontoffice wizard (`/it/tests/segnalazione-crea`) missing "Avanti" button compared to admin (`/fixcity/admin/tickets/create`).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Root Cause
 

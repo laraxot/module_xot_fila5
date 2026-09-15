@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: data-objects
 description: "I Data Objects sono classi che incapsulano dati strutturati utilizzati in tutto il framework Laraxot. Utilizzano la libreria spatie/laravel-"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # Data Objects in Laraxot
 

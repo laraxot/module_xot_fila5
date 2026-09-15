@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: risoluzione-conflitti-merge
 description: " Problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione dei Conflitti di Merge nel Modulo Xot
 
 ## Problema

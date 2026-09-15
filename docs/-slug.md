@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: slug
 description: "<!-- Contenuto migrato da docs/slug.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _slug
 
 <!-- Contenuto migrato da _docs/_slug.txt -->

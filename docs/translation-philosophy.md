@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translation-philosophy
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Translation Philosophy
 
 ## Overview

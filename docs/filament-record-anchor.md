@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-record-anchor
 description: " Il problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Tornare all'elenco sulla riga giusta
 
 ## Il problema

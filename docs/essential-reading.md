@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: essential-reading
 description: "> 10 documenti fondamentali da leggere per comprendere il modulo core Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 📖 Letture Essenziali - Modulo Xot
 
 > **10 documenti fondamentali** da leggere per comprendere il modulo core Xot

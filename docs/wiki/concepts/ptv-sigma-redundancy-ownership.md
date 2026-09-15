@@ -51,7 +51,19 @@ Verificare numeri con `gh issue list` dopo `git remote -v`:
 
 | Repo (`origin`) | Issue tipo |
 |-----------------|------------|
+<<<<<<< HEAD
 | `provtv/base_ptv_fila5_mono` | **#162** meta campagna |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| `provtv/<repo progetto>` | **#162** meta campagna |
+=======
+| `provtv/base_ptv_fila5_mono` | **#162** meta campagna |
+>>>>>>> laraxot/dev
+=======
+| `provtv/base_ptv_fila5_mono` | **#162** meta campagna |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | `provtv/module_ptv_fila5` | **#4** dipendenza |
 | `provtv/module_sigma_fila5` | **#4** dipendenza |
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-analysis
 description: " Scopo Principale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Modulo Xot - Framework Base e Architettura
 
 ## Scopo Principale
@@ -143,7 +146,19 @@ XotBaseResource → Filament Resources
 - Service container integration
 
 ### Filament Integration
+<<<<<<< HEAD
 - Complete Filament 4.x compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Complete Filament 5.x compatibility
+=======
+- Complete Filament 4.x compatibility
+>>>>>>> laraxot/dev
+=======
+- Complete Filament 4.x compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Resource system integration
 - Widget system support
 - Admin panel integration

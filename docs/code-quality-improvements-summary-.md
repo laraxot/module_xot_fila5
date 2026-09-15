@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-improvements-summary
 description: " 🎯 Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 📊 Code Quality Improvements Summary - 2025-11-11
 
 ## 🎯 Overview
@@ -48,11 +51,27 @@ This document summarizes the systematic code quality improvements made across th
 #### 📊 healthcare_app Module
 #### 📊 ExternalProject Module
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#### 📊 <nome progetto> Module
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 #### 📊 Quaeris Module
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **Documentation**: ✅ Created comprehensive README
 - **Features**: Advanced survey management with PDF reports and charts
@@ -78,11 +97,27 @@ This document summarizes the systematic code quality improvements made across th
 - **healthcare_app** - Survey management system
 - **ExternalProject** - Survey management system
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- **<nome progetto>** - Survey management system
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - **Quaeris** - Survey management system
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **CloudStorage** - Multi-cloud file storage system
 
@@ -144,11 +179,27 @@ This document summarizes the systematic code quality improvements made across th
 - ✅ Missing README files created for healthcare_app and CloudStorage
 - ✅ Missing README files created for ExternalProject and CloudStorage
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- ✅ Missing README files created for <nome progetto> and CloudStorage
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - ✅ Missing README files created for Quaeris and CloudStorage
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - ✅ Comprehensive documentation review completed
 - ✅ Architecture improvements implemented
@@ -181,10 +232,28 @@ This document summarizes the systematic code quality improvements made across th
 
 <<<<<<< HEAD
 > *"Quality is not an act, it is a habit." - Aristotle*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+> *"Quality is not an act, it is a habit." - Aristotle*
+> *"Quality is not an act, it is a habit." - Aristotle*
+=======
+<<<<<<< HEAD
+> *"Quality is not an act, it is a habit." - Aristotle*
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 > *"Quality is not an act, it is a habit." - Aristotle*
 =======
 > *"Quality is not an act, it is a habit." - Aristotle*
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

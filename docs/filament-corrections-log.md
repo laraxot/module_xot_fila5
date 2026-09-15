@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-corrections-log
 description: " Data: 2024-12-19"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19

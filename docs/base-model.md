@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: base-model
 description: " Module System Architecture"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module System and BaseModel Pattern: The Sacred Architecture
 
 ## Module System Architecture

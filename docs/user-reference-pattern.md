@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: user-reference-pattern
 description: "Data: 2025-01-10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pattern per Riferimenti User - Laraxot
 
 **Data**: 2025-01-10

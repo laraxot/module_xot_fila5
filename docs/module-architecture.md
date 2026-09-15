@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-architecture
 description: " 🏛️ Module Ecosystem Analysis"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Architecture Analysis - Complete Breakdown
 
 ## 🏛️ Module Ecosystem Analysis

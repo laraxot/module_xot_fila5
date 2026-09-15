@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fixes-conflict
 description: " Errori Risolti"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

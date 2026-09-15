@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-best-practices-uppercase
 description: " 🏆 Gold Standard Pattern"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -45,6 +48,15 @@ function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -52,7 +64,18 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\SaluteOra\Models\User::class);
@@ -60,6 +83,15 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
@@ -146,8 +178,25 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 <<<<<<< HEAD
 2. **Middleware** (Raccomandato)
+<<<<<<< HEAD
 =======
 2. **Middleware** (Raccomandato) 
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+2. **Middleware** (Raccomandato) 
+=======
+<<<<<<< HEAD
+2. **Middleware** (Raccomandato)
+=======
+2. **Middleware** (Raccomandato) 
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+2. **Middleware** (Raccomandato) 
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - Authentication flow
    - Authorization checks
@@ -185,8 +234,25 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 <<<<<<< HEAD
 ### Gold Standard Criteria
+<<<<<<< HEAD
 =======
 ### Gold Standard Criteria  
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+### Gold Standard Criteria  
+=======
+<<<<<<< HEAD
+### Gold Standard Criteria
+=======
+### Gold Standard Criteria  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+### Gold Standard Criteria  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
@@ -208,8 +274,25 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 <<<<<<< HEAD
 # Success rate calculation
+<<<<<<< HEAD
 =======
 # Success rate calculation  
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+# Success rate calculation  
+=======
+<<<<<<< HEAD
+# Success rate calculation
+=======
+# Success rate calculation  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+# Success rate calculation  
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ./vendor/bin/pest {TestFile} --compact
 
@@ -240,13 +323,42 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

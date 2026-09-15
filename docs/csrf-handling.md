@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: csrf-handling
 description: " Table of Contents"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # CSRF Token Handling in Xot
 
 ## Table of Contents

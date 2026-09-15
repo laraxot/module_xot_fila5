@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mcp-servers-index
 description: "Ultimo aggiornamento: 2026-06-04"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # MCP Servers Configuration - Master Index
 
 **Ultimo aggiornamento**: 2026-06-04  
@@ -155,7 +158,19 @@ echo "CONTEXT7_API_KEY=xxx" >> .env
 |--------|---------|-----|
 | pagespeed-insights | `pagespeed-insights-mcp` | `GOOGLE_API_KEY` |
 | google-search-console | `mcp-server-google-search-console` | `GSC_SERVICE_ACCOUNT_KEY_FILE` |
+<<<<<<< HEAD
 | mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `FIXCITY_BASE_URL` |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `<nome progetto>_BASE_URL` |
+=======
+| mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `FIXCITY_BASE_URL` |
+>>>>>>> laraxot/dev
+=======
+| mauve-accessibility | `bashscripts/mcp/mauve-accessibility-mcp/` | `FIXCITY_BASE_URL` |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Hub: [mcp-validation-quality-gate.md](../../../../docs/wiki/mcp-validation-quality-gate.md)
 

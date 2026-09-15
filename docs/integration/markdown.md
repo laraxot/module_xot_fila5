@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: markdown
 description: "<!-- Contenuto migrato da docs/markdown.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # markdown
 
 <!-- Contenuto migrato da _docs/markdown.txt -->

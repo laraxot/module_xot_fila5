@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: optimization-analysis-dry-kiss
 description: " 🎯 Obiettivo Analisi"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## 🎯 Obiettivo Analisi

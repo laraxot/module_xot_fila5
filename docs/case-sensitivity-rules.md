@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: case-sensitivity-rules
 description: " Problema / Problem"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Case Sensitivity Rules - Xot Module
 
 ## Problema / Problem

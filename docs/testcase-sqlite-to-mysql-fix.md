@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testcase-sqlite-to-mysql-fix
 description: " Problema Identificato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # TestCase SQLite to MySQL Fix - Xot Module
 
 ## Problema Identificato

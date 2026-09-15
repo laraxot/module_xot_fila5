@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflicts-inventory
 description: "Date: 2025-11-12"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Merge Conflicts Inventory
 
 **Date**: 2025-11-12

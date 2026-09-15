@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-integration
 description: " Resource Implementation"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Integration in Laraxot
 
 ## Resource Implementation
@@ -17,9 +20,27 @@ metadata:
 ### Form Schema
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

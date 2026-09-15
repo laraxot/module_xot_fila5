@@ -7,7 +7,19 @@ created: 2026-07-07
 updated: 2026-07-07
 qmd: "filament table detach action pivot belongstomany phpstan xot"
 issues:
+<<<<<<< HEAD
   - "https://github.com/provtv/base_ptv_fila5/issues/177"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - "https://github.com/provtv/<repo progetto>/issues/177"
+=======
+  - "https://github.com/provtv/base_ptv_fila5/issues/177"
+>>>>>>> laraxot/dev
+=======
+  - "https://github.com/provtv/base_ptv_fila5/issues/177"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./xotbase-table-columns-enforcement.md"
 ---

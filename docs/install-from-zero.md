@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: install-from-zero
 description: "~~~ bash"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 #Install from zero
 

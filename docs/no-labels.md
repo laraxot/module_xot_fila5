@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: no-labels
 description: " Regola Fondamentale Inviolabile"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # DIVIETO ASSOLUTO DI USARE ->label(), ->placeholder() e ->helperText()
 
 ## Regola Fondamentale Inviolabile

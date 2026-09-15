@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbaselistrecords
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBaseListRecords
 
 ## Panoramica

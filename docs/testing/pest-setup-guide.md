@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pest-setup-guide
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pest Testing Setup Guide
 
 ## Overview
@@ -13,7 +16,19 @@ This guide documents how to run Pest tests from the `laravel/` directory and ach
 
 ## Key Resources Studied
 
+<<<<<<< HEAD
 - [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+=======
+- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+>>>>>>> laraxot/dev
+=======
+- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Pest PHP Installation](https://pestphp.com/docs/installation)
 - [Composer Merge Plugin](https://github.com/wikimedia/composer-merge-plugin)
 - [Laravel Modules Testing](https://laravelmodules.com/docs/12/advanced/tests)

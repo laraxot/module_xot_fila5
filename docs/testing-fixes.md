@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-fixes
 description: " Panoramica"
@@ -5,11 +6,30 @@ metadata:
   type: documentation
 ---
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# 🧪 Fix Testing Issues - Laravel 13 Migration
+
+## Panoramica
+
+Questo documento descrive i problemi di testing riscontrati durante la migrazione da Laravel 11 a Laravel 13 e le soluzioni implementate.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # 🧪 Fix Testing Issues - Laravel 12 Migration
 
 ## Panoramica
 
 Questo documento descrive i problemi di testing riscontrati durante la migrazione da Laravel 11 a Laravel 12 e le soluzioni implementate.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🚨 Problema Identificato
 
@@ -219,7 +239,19 @@ Dopo le correzioni:
 - ✅ Tutti i moduli usano il trait corretto
 - ✅ I test possono essere eseguiti senza errori
 - ✅ Struttura testing consistente
+<<<<<<< HEAD
 - ✅ Compatibilità con Laravel 12
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ Compatibilità con Laravel 13
+=======
+- ✅ Compatibilità con Laravel 12
+>>>>>>> laraxot/dev
+=======
+- ✅ Compatibilità con Laravel 12
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 📝 Note per il Futuro
 

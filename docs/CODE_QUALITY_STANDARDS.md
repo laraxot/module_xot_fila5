@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-quality-standards
 description: " 🎯 Purpose"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Standards - Xot Module
 
 ## 🎯 Purpose
@@ -76,7 +79,19 @@ Xot provides interfaces that define contracts:
 - Should be implementable by any module
 - Should follow Interface Segregation Principle
 
+<<<<<<< HEAD
 ## 🔧 Filament 4 Compliance
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance
+=======
+## 🔧 Filament 4 Compliance
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 1. Base Widget Class
 ```php
@@ -388,7 +403,19 @@ public function canAccess($user): bool
 }
 ```
 
+<<<<<<< HEAD
 ## 🔧 Laravel 12 Compliance
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Laravel 13 Compliance
+=======
+## 🔧 Laravel 12 Compliance
+>>>>>>> laraxot/dev
+=======
+## 🔧 Laravel 12 Compliance
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### 1. Type Declarations
 Use proper type hints and return types:
@@ -490,11 +517,27 @@ public function user(): BelongsTo
 - [Filament Best Practices](./filament-best-practices.md)
 - [Testing Guidelines](./testing-guidelines.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Performance Optimization](./performance-optimization.md)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [Performance Optimization](./performance-optimization.md)
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
 - [Security Guidelines](./security-guidelines.md)

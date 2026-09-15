@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 00-master-index
 description: "Status: Active / Sanity Layer"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🌐 Laraxot Master Documentation Index
 
 **Status**: Active / Sanity Layer  
@@ -36,7 +39,19 @@ metadata:
 
 ## 🏗 Module-Specific Documentation
 
+<<<<<<< HEAD
 - **[Fixcity Module](../../Fixcity/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **[<nome progetto> Module](../../<nome progetto>/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+=======
+- **[Fixcity Module](../../Fixcity/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+>>>>>>> laraxot/dev
+=======
+- **[Fixcity Module](../../Fixcity/docs/INDEX.md)**: Tickets, Wizards, and Frontoffice integration.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **[Geo Module](../../Geo/docs/INDEX.md)**: Geolocation and Map components.
 - **[Predict Module](../../Predict/docs/00-INDEX.md)**: Outcomes and Market logic.
 

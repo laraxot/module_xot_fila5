@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: development-rules
 description: " Collegamenti"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti

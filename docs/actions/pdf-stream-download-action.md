@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pdf-stream-download-action
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # StreamDownloadPdfAction Documentation
 
 ## Overview

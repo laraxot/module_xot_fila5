@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: critical-and-memories
 description: " Critical Architectural Rules"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laravel Pizza Project Rules and Memories
 
 ## Critical Architectural Rules

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-consolidated
 description: "> 🎯 Single Source of Truth: Questo documento centralizza TUTTE le regole di testing del progetto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le regole di testing del progetto

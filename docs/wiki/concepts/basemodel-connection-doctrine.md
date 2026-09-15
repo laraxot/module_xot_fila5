@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: basemodel-connection-doctrine
 description: " Philosophy: Connection Management for Multi-Database Architecture"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # BaseModel Connection Doctrine
 
 ## Philosophy: Connection Management for Multi-Database Architecture
@@ -22,6 +25,39 @@ Every `Modules/<Module>/app/Models/BaseModel.php` MUST declare its connection ex
 
 | Module | Connection | Database |
 |--------|------------|----------|
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| User | user | <nome progetto>_user |
+| Xot | xot | <nome progetto>_data (default) |
+| TimberBilling | timber_billing | <nome progetto>_data |
+| Notify | notify | <nome progetto>_data |
+| Activity | activity | <nome progetto>_data |
+| Media | media | <nome progetto>_data |
+| Customer | customer | <nome progetto>_data |
+| Rating | rating | <nome progetto>_data |
+| Cms | cms | <nome progetto>_data |
+| Quotation | quotation | <nome progetto>_data |
+| Document | document | <nome progetto>_data |
+| Signature | signature | <nome progetto>_data |
+| Lang | lang | <nome progetto>_data |
+| <nome progetto> | work_order | <nome progetto>_data |
+| Email | email | <nome progetto>_data |
+| Geo | geo | <nome progetto>_data |
+| Job | job | <nome progetto>_data |
+| Intervention | intervention | <nome progetto>_data |
+| Employee | employee | <nome progetto>_data |
+| WhatsApp | whats_app | <nome progetto>_data |
+| Gdpr | gdpr | <nome progetto>_data |
+| Vehicle | vehicle | <nome progetto>_data |
+| UI | u_i | <nome progetto>_data |
+| Tenant | tenant | <nome progetto>_data |
+| AiAssistant | ai_assistant | <nome progetto>_data |
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | User | user | workorder_user |
 | Xot | xot | workorder_data (default) |
 | TimberBilling | timber_billing | workorder_data |
@@ -47,6 +83,13 @@ Every `Modules/<Module>/app/Models/BaseModel.php` MUST declare its connection ex
 | UI | u_i | workorder_data |
 | Tenant | tenant | workorder_data |
 | AiAssistant | ai_assistant | workorder_data |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### BaseModel Implementation Template
 

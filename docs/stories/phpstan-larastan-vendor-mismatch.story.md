@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-larastan-vendor-mismatch-story
 description: " Understand"
@@ -5,6 +6,8 @@ metadata:
   type: story
 ---
 
+=======
+>>>>>>> laraxot/dev
 # BMAD Story — Larastan Version Mismatch in Modules/Xot/vendor
 
 ## Understand

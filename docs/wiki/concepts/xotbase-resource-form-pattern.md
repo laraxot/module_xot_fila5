@@ -61,9 +61,27 @@ class XotBaseResourceForm
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [];
@@ -86,13 +104,40 @@ class XotBaseResourceForm
 **Extensions in Modules:**
 
 ```php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Modules/<nome progetto>/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
+class TicketForm extends XotBaseResourceForm
+{
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 // Modules/Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketForm.php
 class TicketForm extends XotBaseResourceForm
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         $steps = static::getSteps();
@@ -134,12 +179,36 @@ class TicketForm extends XotBaseResourceForm
 
 ### 4. **LangServiceProvider Integration (Right Speech)**
 - NO `->label()` or `->tooltip()` in form fields
+<<<<<<< HEAD
 - Labels come from `fixcity::ticket-wizard.steps.privacy.label`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Labels come from `<nome progetto>::ticket-wizard.steps.privacy.label`
+=======
+- Labels come from `fixcity::ticket-wizard.steps.privacy.label`
+>>>>>>> laraxot/dev
+=======
+- Labels come from `fixcity::ticket-wizard.steps.privacy.label`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Single source of truth for translations
 
 ### 5. **Module Boundary (Universal Love)**
 - `XotBaseResourceForm` = foundation (shared by all modules)
+<<<<<<< HEAD
 - `TicketForm` = specialization (Fixcity-specific)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `TicketForm` = specialization (<nome progetto>-specific)
+=======
+- `TicketForm` = specialization (Fixcity-specific)
+>>>>>>> laraxot/dev
+=======
+- `TicketForm` = specialization (Fixcity-specific)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Clear separation: base vs concrete
 
 ## When to Use Which

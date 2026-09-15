@@ -7,12 +7,24 @@ return [
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
+<<<<<<< HEAD
         'size' => ['label' => 'size'],
+=======
+<<<<<<< HEAD
+=======
+        'size' => ['label' => 'size'],
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'view' => [
             'label' => 'view',
             'icon' => 'view',
@@ -23,5 +35,9 @@ return [
             'icon' => 'edit',
             'tooltip' => 'edit',
         ],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
 ];

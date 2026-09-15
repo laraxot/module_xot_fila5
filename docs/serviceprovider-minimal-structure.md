@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: serviceprovider-minimal-structure
 description: "Ultimo aggiornamento: 2025-01-10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # ServiceProvider Minimal Structure - Laraxot
 
 **Ultimo aggiornamento**: 2025-01-10

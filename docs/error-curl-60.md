@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: error-curl-60
 description: "error-curl-60"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 Download the latest cacert.pem file from
 https://curl.se/docs/caextract.html
 Download the latest cacert.pem file from

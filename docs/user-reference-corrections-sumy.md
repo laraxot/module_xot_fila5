@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: user-reference-corrections-sumy
 description: "Obiettivo: Correggere tutti i riferimenti a App\Models\User che non esiste"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Reference Corrections Summary - Gennaio 2025
 
 **Obiettivo**: Correggere tutti i riferimenti a `App\Models\User` che non esiste

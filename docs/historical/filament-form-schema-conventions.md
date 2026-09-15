@@ -9,9 +9,27 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 ```php
 // ✅ CORRETTO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -30,9 +48,27 @@ public function getFormSchema(): array
 ```php
 // ❌ ERRATO
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -106,9 +142,27 @@ class MyResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -125,9 +179,27 @@ class MyResource extends XotBaseResource
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

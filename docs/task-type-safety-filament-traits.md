@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: task-type-safety-filament-traits
 description: "Modulo: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Migliorare Type Safety nei Filament Traits - Xot
 
 **Modulo**: Xot

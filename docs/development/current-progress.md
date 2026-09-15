@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: current-progress
 description: " Correzioni PHPStan Completate"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Stato Attuale del Progetto (15 marzo 2024)
 
 ## Correzioni PHPStan Completate

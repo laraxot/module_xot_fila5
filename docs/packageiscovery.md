@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: packageiscovery
 description: " Executive Summary"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Package Discovery - Philosophy, Logic & Zen
 
 ## Executive Summary
@@ -242,7 +245,19 @@ With 80 packages × 110 seconds = 8,800 seconds = 2.4 hours
   - `dont-discover` opt-out mechanism added
 - **Laravel 6.x+**: Discovery extended to facades, aliases
 - **Laravel 8.x+**: Improved caching and performance
+<<<<<<< HEAD
 - **Laravel 12.x** (Current): Mature, stable, production-proven
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Laravel 13.x** (Current): Mature, stable, production-proven
+=======
+- **Laravel 12.x** (Current): Mature, stable, production-proven
+>>>>>>> laraxot/dev
+=======
+- **Laravel 12.x** (Current): Mature, stable, production-proven
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Inspiration**: Similar to Java's `ServiceLoader`, .NET's reflection-based discovery, Python's entry points.
 

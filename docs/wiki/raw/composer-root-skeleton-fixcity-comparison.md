@@ -1,9 +1,38 @@
 ---
+<<<<<<< HEAD
 title: "Confronto composer root FixCity vs Predict"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+title: "Confronto composer root <nome progetto> vs Predict"
+=======
+title: "Confronto composer root FixCity vs Predict"
+>>>>>>> laraxot/dev
+=======
+title: "Confronto composer root FixCity vs Predict"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 type: raw-note
 module: Xot
 created: 2026-06-30
 updated: 2026-07-15
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+tags: [composer, nwidart, laravel-modules, <nome progetto>, predict]
+source:
+  - /var/www/_bases/<repo progetto>/laravel/composer.json
+  - /var/www/_bases/<repo progetto>/laravel/composer.json
+---
+
+# Confronto composer root <nome progetto> vs Predict
+
+<nome progetto> (`<repo progetto>/laravel/composer.json`) e' il riferimento storico nwidart:
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 tags: [composer, nwidart, laravel-modules, fixcity, predict]
 source:
   - /var/www/_bases/base_fixcity_fila5/laravel/composer.json
@@ -13,12 +42,31 @@ source:
 # Confronto composer root FixCity vs Predict
 
 FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico nwidart:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - `require`: `php`, `laravel/framework`, `nwidart/laravel-modules`
 - merge solo `Modules/*/composer.json`
 - autoload: `App\\` + `Database\\Seeders\\`
 
+<<<<<<< HEAD
 ## Debito FixCity (non replicare in Predict)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Debito <nome progetto> (non replicare in Predict)
+=======
+## Debito FixCity (non replicare in Predict)
+>>>>>>> laraxot/dev
+=======
+## Debito FixCity (non replicare in Predict)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - dipendenze funzionali nel root (`livewire/livewire`, `spatie/laravel-permission`, `tallstackui/tallstackui`, `phpmd/phpmd`, `laravel/tinker`)
 - `Modules\\` nell'autoload root
@@ -27,7 +75,19 @@ FixCity (`base_fixcity_fila5/laravel/composer.json`) e' il riferimento storico n
 
 ## Stato Predict (canonico 2026-06-30)
 
+<<<<<<< HEAD
 Root allineato e piu' stretto di FixCity:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Root allineato e piu' stretto di <nome progetto>:
+=======
+Root allineato e piu' stretto di FixCity:
+>>>>>>> laraxot/dev
+=======
+Root allineato e piu' stretto di FixCity:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 - `require` solo tre package skeleton
 - autoload solo `App\\` e `Tests\\`

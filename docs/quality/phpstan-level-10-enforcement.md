@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level-10-enforcement
 description: "Date: 2025-10-22"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Enforcement - Quality Initiative
 
 **Date**: 2025-10-22

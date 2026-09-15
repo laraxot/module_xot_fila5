@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: export-xls
 description: "Il file exportxls.php contiene tutte le etichette e i testi utilizzati per l'esportazione in formato XLS nel modulo Xot."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 # Export XLS - File di traduzione
 

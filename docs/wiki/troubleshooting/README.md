@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: "[![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()"
@@ -8,6 +9,17 @@ metadata:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -19,17 +31,49 @@ metadata:
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> **Core module for the <nome progetto> Platform.**
+
+## Perché esiste
+
+Core module for the <nome progetto> Platform.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
+<<<<<<< HEAD
 - Integrated with FixCity Platform
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -41,9 +85,25 @@ Core module for the FixCity Platform.
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -110,7 +170,18 @@ updated: 2026-08-24
 - Use project memory system for context
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -122,17 +193,49 @@ updated: 2026-08-24
 [![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
 ]()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+> **Core module for the <nome progetto> Platform.**
+
+## Perché esiste
+
+Core module for the <nome progetto> Platform.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 > **Core module for the FixCity Platform.**
 
 ## Perché esiste
 
 Core module for the FixCity Platform.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Superpoteri
 
 - Modular component with XotBase patterns
 - Professional-grade implementation
+<<<<<<< HEAD
 - Integrated with FixCity Platform
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Integrated with <nome progetto> Platform
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+=======
+- Integrated with FixCity Platform
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Documentazione
 
@@ -144,7 +247,23 @@ Core module for the FixCity Platform.
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

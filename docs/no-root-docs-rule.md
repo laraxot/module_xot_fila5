@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: no-root-docs-rule
 description: " CARTELLE CHE NON DEVONO MAI ESISTERE:"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # REGOLA CRITICA: Cartelle docs root VIETATE
 
 ## CARTELLE CHE NON DEVONO MAI ESISTERE:

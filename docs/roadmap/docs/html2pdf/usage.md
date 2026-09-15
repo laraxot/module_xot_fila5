@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: usage
 description: "Questa sezione descrive l'utilizzo di base della libreria, come istanziare la classe Html2Pdf e come gestire il layout delle pagine con i ta"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Utilizzo Base e Layout
 
 Questa sezione descrive l'utilizzo di base della libreria, come istanziare la classe `Html2Pdf` e come gestire il layout delle pagine con i tag speciali.

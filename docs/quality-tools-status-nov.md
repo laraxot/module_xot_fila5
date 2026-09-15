@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: quality-tools-status-nov
 description: " 🎯 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Status Quality Tools - Novembre 2025
 
 ## 🎯 Obiettivo

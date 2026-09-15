@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: risoluzione-conflitti
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git nel Progetto
 
 ## Panoramica

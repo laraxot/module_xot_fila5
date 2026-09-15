@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: code-optimization-analysis
 description: " comprehensive analysis"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # xot module code and documentation optimization analysis
 
 ## comprehensive analysis

@@ -142,6 +142,21 @@ return $this->canEdit($record);
 
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+#### Errore #8: XotBaseResource - Filament 5 Compatibility
+**File**: `app/Filament/Resources/XotBaseResource.php:98`
+**Errore**: `Parameter #1 $components type mismatch`
+
+**Problema**: Filament 5 ha cambiato signature di `components()`
+
+**Soluzione**: Verificare documentazione Filament 5 e adattare
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 #### Errore #8: XotBaseResource - Filament 4 Compatibility
 **File**: `app/Filament/Resources/XotBaseResource.php:98`
 **Errore**: `Parameter #1 $components type mismatch`
@@ -149,6 +164,13 @@ return $this->canEdit($record);
 **Problema**: Filament 4 ha cambiato signature di `components()`
 
 **Soluzione**: Verificare documentazione Filament 4 e adattare
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```php
 // Potrebbe richiedere:
 Schema::components(array_values($components))  // Rimuovere chiavi string
@@ -156,7 +178,19 @@ Schema::components(array_values($components))  // Rimuovere chiavi string
 Schema::components(Components::make($components))
 ```
 
+<<<<<<< HEAD
 **Tempo Fix**: 45 minuti (richiede studio Filament 4 docs)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Tempo Fix**: 45 minuti (richiede studio Filament 5 docs)
+=======
+**Tempo Fix**: 45 minuti (richiede studio Filament 4 docs)
+>>>>>>> laraxot/dev
+=======
+**Tempo Fix**: 45 minuti (richiede studio Filament 4 docs)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Priorità**: 🟡 ALTA
 
 ---
@@ -221,7 +255,19 @@ function xot_config(string $key): mixed
 - [ ] Fix XotBasePage getModel() (10 min)
 - [ ] Fix XotBaseRelationManager type narrowing (15 min)
 - [ ] Rimuovere method_exists ridondanti (5 min)
+<<<<<<< HEAD
 - [ ] Fix XotBaseResource Filament 4 (45 min)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Fix XotBaseResource Filament 5 (45 min)
+=======
+- [ ] Fix XotBaseResource Filament 4 (45 min)
+>>>>>>> laraxot/dev
+=======
+- [ ] Fix XotBaseResource Filament 4 (45 min)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] Rimuovere dead catch block (5 min)
 
 **Totale**: ~2 ore

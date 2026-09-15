@@ -8,7 +8,19 @@ category: database-migrations
 status: active
 version: 1.0.0
 language: it-IT
+<<<<<<< HEAD
 project: Fixcity Fila5
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+project: <nome progetto> Fila5
+=======
+project: Fixcity Fila5
+>>>>>>> laraxot/dev
+=======
+project: Fixcity Fila5
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ecosystem: Laraxot
 domain: database-schema
 priority: high

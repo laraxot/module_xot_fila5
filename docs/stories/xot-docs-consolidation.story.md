@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-docs-consolidation-story
 description: "Status: backlog"
@@ -5,6 +6,8 @@ metadata:
   type: story
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Story: Xot module docs consolidation + phpstan
 Status: backlog
 Module: Modules/Xot (independent .git)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: nwidart-to-study
 description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
@@ -8,6 +9,18 @@ metadata:
 <<<<<<< HEAD
 https://github.com/HichemTab-tech/LaravelFS
 =======
+=======
+<<<<<<< HEAD
+https://github.com/HichemTab-tech/LaravelFS
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+https://github.com/HichemTab-tech/LaravelFS
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Nwidart to study — risorse esterne'
 module: Xot
@@ -44,7 +57,18 @@ https://github.com/HichemTab-tech/LaravelFS
 
 ## Contenuto originale (txt)
 
+<<<<<<< HEAD
 >>>>>>> .merge_file_bMOZuq
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_bMOZuq
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bMOZuq
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: nwidart_to_study
@@ -53,4 +77,13 @@ canonical: ../../../Themes/docs/shared-components/nwidart-to-study.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/nwidart-to-study.md
 https://github.com/HichemTab-tech/LaravelFS
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

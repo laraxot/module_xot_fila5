@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: module-path-error-resolution
 description: "Data Creazione: 2026-01-02"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02

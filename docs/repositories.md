@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: repositories
 description: " Repository Pattern"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione dei Repository
 
 ## Repository Pattern

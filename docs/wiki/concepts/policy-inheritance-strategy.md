@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: policy-inheritance-strategy
 description: " 🔴 REGOLA CRITICA: mai cancellare policy modello"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Policy Inheritance Strategy in Laraxot
 
 ## 🔴 REGOLA CRITICA: mai cancellare policy modello

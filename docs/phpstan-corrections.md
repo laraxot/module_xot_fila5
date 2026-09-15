@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-corrections
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Xot
 
 ## Panoramica

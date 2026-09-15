@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-session-sumy
 description: "Status: ✅ Completato con Successo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Session - Gennaio 2026 - Riepilogo Completo
 
 **Status**: ✅ Completato con Successo  

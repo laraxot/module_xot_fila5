@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bootstrap-cache-stale-fix
 description: " Problem pattern"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Bootstrap cache stale entries fix
 
 ## Problem pattern

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ide-helper-best-practices
 description: "Documentazione completa sull'utilizzo di barryvdh/laravel-ide-helper nel progetto <nome progetto>."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # IDE Helper Best Practices - <nome progetto>
 
 Documentazione completa sull'utilizzo di `barryvdh/laravel-ide-helper` nel progetto <nome progetto>.

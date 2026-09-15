@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: view-composer-loop-infinite-fix-xotcomposer-loop-infinito-fix
 description: " 🚨 Problema Critico Risolto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotComposer - Loop Infinito Fix
 
 ## 🚨 Problema Critico Risolto

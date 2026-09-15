@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: safe-functions
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Funzioni Safe nel Modulo Xot
 
 ## Panoramica

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: documentation-consolidation-strategy
 description: " 🎯 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Strategia di Consolidamento Documentazione - Moduli Laraxot
 
 ## 🎯 Obiettivo

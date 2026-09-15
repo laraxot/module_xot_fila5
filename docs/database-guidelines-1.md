@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: database-guidelines-1
 description: "Questo documento definisce le best practices per la gestione dei database nel framework Laraxot, inclusa la documentazione, la creazione di "
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Linee Guida per i Database in Laraxot
 
 Questo documento definisce le best practices per la gestione dei database nel framework Laraxot, inclusa la documentazione, la creazione di modelli e le migrazioni.

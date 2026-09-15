@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: data-property
 description: " ⚠️ AVVISO CRITICO"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Proprietà `$data` in XotBaseWidget: COMPONENTE CRITICO DEL SISTEMA
 
 ## ⚠️ AVVISO CRITICO

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: routes
 description: " Configurazione Base"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Route
 
 ## Configurazione Base

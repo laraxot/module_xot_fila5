@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: no-label-placeholder-religion
 description: "Status: Active"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # NO Label/Placeholder — La Religione dell'Auto-Label
 
 **Status**: Active  
@@ -239,6 +242,25 @@ TextInput::make('address')
 
 // 2. Deriva chiave traduzione:
 //    - Classe chiamante: CreateTicketWizardWidget
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+//    - Namespace: <nome progetto>
+//    - Widget name: create_ticket_wizard
+//    - Component type: fields
+//    - Field name: address
+//    → <nome progetto>::create_ticket_wizard.fields.address.label
+
+// 3. Applica traduzione automaticamente:
+//    $component->label(trans('<nome progetto>::create_ticket_wizard.fields.address.label'))
+
+// 4. Se traduzione non esiste, la crea:
+//    SaveTransAction::save('<nome progetto>::create_ticket_wizard.fields.address.label', 'Indirizzo')
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 //    - Namespace: fixcity
 //    - Widget name: create_ticket_wizard
 //    - Component type: fields
@@ -250,6 +272,13 @@ TextInput::make('address')
 
 // 4. Se traduzione non esiste, la crea:
 //    SaveTransAction::save('fixcity::create_ticket_wizard.fields.address.label', 'Indirizzo')
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 **Risultato**:
@@ -297,7 +326,19 @@ TextInput::make('address')  // → LangServiceProvider applica 'Indirizzo'
 // Devo cercare tutti i ->label('Indirizzo') e cambiare
 
 // ✅ DOPO: cambio label → cambio 1 file (lang)
+<<<<<<< HEAD
 // Cambio solo fixcity::create_ticket_wizard.fields.address.label
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Cambio solo <nome progetto>::create_ticket_wizard.fields.address.label
+=======
+// Cambio solo fixcity::create_ticket_wizard.fields.address.label
+>>>>>>> laraxot/dev
+=======
+// Cambio solo fixcity::create_ticket_wizard.fields.address.label
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ---
@@ -403,9 +444,27 @@ Vedi sezione "Script Pre-Commit" sopra.
 grep -r "->label(" laravel/Modules/ --include="*.php"
 grep -r "->placeholder(" laravel/Modules/ --include="*.php"
 
+<<<<<<< HEAD
 # Cerca solo in Fixcity
 grep -r "->label(" laravel/Modules/Fixcity/ --include="*.php"
 grep -r "->placeholder(" laravel/Modules/Fixcity/ --include="*.php"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Cerca solo in <nome progetto>
+grep -r "->label(" laravel/Modules/<nome progetto>/ --include="*.php"
+grep -r "->placeholder(" laravel/Modules/<nome progetto>/ --include="*.php"
+=======
+# Cerca solo in Fixcity
+grep -r "->label(" laravel/Modules/Fixcity/ --include="*.php"
+grep -r "->placeholder(" laravel/Modules/Fixcity/ --include="*.php"
+>>>>>>> laraxot/dev
+=======
+# Cerca solo in Fixcity
+grep -r "->label(" laravel/Modules/Fixcity/ --include="*.php"
+grep -r "->placeholder(" laravel/Modules/Fixcity/ --include="*.php"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ---
@@ -430,7 +489,19 @@ TextInput::make('address')
 
 ```bash
 # Verifica che traduzioni esistano
+<<<<<<< HEAD
 cat laravel/Modules/Fixcity/resources/lang/it/create_ticket_wizard.php
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cat laravel/Modules/<nome progetto>/resources/lang/it/create_ticket_wizard.php
+=======
+cat laravel/Modules/Fixcity/resources/lang/it/create_ticket_wizard.php
+>>>>>>> laraxot/dev
+=======
+cat laravel/Modules/Fixcity/resources/lang/it/create_ticket_wizard.php
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 # Se non esistono, LangServiceProvider le crea automaticamente
 # al primo accesso della pagina

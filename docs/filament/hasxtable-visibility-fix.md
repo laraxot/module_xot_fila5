@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: hasxtable-visibility-fix
 description: "Status: ✅ Risolto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Status**: ✅ Risolto  

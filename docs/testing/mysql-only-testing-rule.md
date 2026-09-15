@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mysql-only-testing-rule
 description: "Status: ✅ REGOLA ASSOLUTA - NESSUNA ECCEZIONE"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # REGOLA CRITICA: MySQL Only per Testing - Nessun SQLite
 
 **Status**: ✅ REGOLA ASSOLUTA - NESSUNA ECCEZIONE  

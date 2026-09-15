@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: logging-best-practices-1
 description: " Problem Analysis"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Logging Best Practices - 2026-03-02
 
 ## Problem Analysis

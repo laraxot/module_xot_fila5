@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-consolidated
 description: "Ultimo aggiornamento: [DATE]"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: [DATE]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: services
 description: " LangService"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Servizi del Modulo Xot
 
 ## LangService

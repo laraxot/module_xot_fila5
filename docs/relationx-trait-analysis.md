@@ -27,7 +27,19 @@ github:
 # RelationX — analisi
 
 `Modules/Xot/app/Models/Traits/RelationX.php`, 213 righe. Consumato da
+<<<<<<< HEAD
 `User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `Quaeris\Profile`: e' codice
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+`User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `<nome progetto>\Profile`: e' codice
+=======
+`User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `Quaeris\Profile`: e' codice
+>>>>>>> laraxot/dev
+=======
+`User\BaseUser`, `User\BaseTenant`, `User\BaseTeam`, `Quaeris\Profile`: e' codice
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 portante, non un'utility marginale. `BaseUser::tenants()` passa di qui.
 
 ## Cosa fa, in una riga
@@ -60,8 +72,23 @@ in namespace diversi collidono sulla stessa classe Pivot, senza alcun segnale.
 2. namespace del **modello correlato** + nome pivot
 3. `tryParentClassPivot()` — risale la catena di ereditarieta'
 
+<<<<<<< HEAD
 Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `Quaeris\User`
 estende `User\BaseUser`, il pivot non esiste sotto `Quaeris\`, ma risalendo al
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `<nome progetto>\User`
+estende `User\BaseUser`, il pivot non esiste sotto `<nome progetto>\`, ma risalendo al
+=======
+Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `Quaeris\User`
+estende `User\BaseUser`, il pivot non esiste sotto `Quaeris\`, ma risalendo al
+>>>>>>> laraxot/dev
+=======
+Il terzo passo e' quello che fa funzionare l'ereditarieta' Laraxot: `Quaeris\User`
+estende `User\BaseUser`, il pivot non esiste sotto `Quaeris\`, ma risalendo al
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 parent si ricalcola `$new_pivot_name` con il basename del parent e si ritenta.
 La ricorsione termina perche' `get_parent_class()` prima o poi restituisce
 `false`.
@@ -69,12 +96,36 @@ La ricorsione termina perche' `get_parent_class()` prima o poi restituisce
 ### La traccia reale: `User` ↔ `Role`
 
 La descrizione sopra e' corretta ma sottostima quanto in alto arriva la risalita.
+<<<<<<< HEAD
 Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\Quaeris\Models\User`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\<nome progetto>\Models\User`
+=======
+Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\Quaeris\Models\User`
+>>>>>>> laraxot/dev
+=======
+Eseguendo l'algoritmo sulla coppia realmente in uso (`Modules\Quaeris\Models\User`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 e `Modules\User\Models\Role`, la relazione dietro `HasRoles::roles()`):
 
 ```
 nome pivot iniziale: RoleUser                         (['Role','User'] ordinati)
+<<<<<<< HEAD
   Modules\Quaeris\Models\RoleUser                     no
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  Modules\<nome progetto>\Models\RoleUser                     no
+=======
+  Modules\Quaeris\Models\RoleUser                     no
+>>>>>>> laraxot/dev
+=======
+  Modules\Quaeris\Models\RoleUser                     no
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   Modules\User\Models\RoleUser                        no
   parent -> Modules\User\Models\BaseUser
     nome ricalcolato: BaseUserRole
@@ -155,7 +206,19 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 variabili restano assegnate e morte, e il prefisso non viene mai applicato.
 
 Su questo progetto la cosa non e' teorica: le connessioni attive sono almeno
+<<<<<<< HEAD
 quattro (`user`, `quaeris`, `quaeris_data`, `limesurvey`). Una relazione morph
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+quattro (`user`, `<nome progetto>`, `<nome progetto>_data`, `limesurvey`). Una relazione morph
+=======
+quattro (`user`, `quaeris`, `quaeris_data`, `limesurvey`). Una relazione morph
+>>>>>>> laraxot/dev
+=======
+quattro (`user`, `quaeris`, `quaeris_data`, `limesurvey`). Una relazione morph
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 il cui pivot vive su un database diverso da quello del modello produce una query
 con tabella non qualificata, quindi un "table doesn't exist" che punta al posto
 sbagliato.
@@ -208,7 +271,19 @@ esercitato dalla suite.
 
 I punti sopra nascono dalla lettura del codice. Questa sezione riporta cosa
 succede davvero, misurato istanziando i modelli reali del progetto e chiamando
+<<<<<<< HEAD
 `guessPivot()` su `Modules\Quaeris\Models\User`.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+`guessPivot()` su `Modules\<nome progetto>\Models\User`.
+=======
+`guessPivot()` su `Modules\Quaeris\Models\User`.
+>>>>>>> laraxot/dev
+=======
+`guessPivot()` su `Modules\Quaeris\Models\User`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 | Chiamata | Pivot dedotto | Tabella | `getFillable()` |
 |---|---|---|---|
@@ -221,13 +296,37 @@ Tre conferme e due difetti nuovi, che dalla sola lettura non si vedevano.
 ### 7. Il caso `Role` risolve per coincidenza, non per convenzione
 
 Il nome atteso dalla convenzione e' `RoleUser`: non esiste ne' sotto
+<<<<<<< HEAD
 `Modules\Quaeris\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+`Modules\<nome progetto>\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
+=======
+`Modules\Quaeris\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
+>>>>>>> laraxot/dev
+=======
+`Modules\Quaeris\Models\`, ne' sotto `Modules\User\Models\`. La risoluzione va a
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 buon fine solo perche' `tryParentClassPivot()` risale la catena di ereditarieta'
 fino a `Illuminate\Database\Eloquent\Model`, il cui `class_basename()` e'
 letteralmente `Model`: da li' il nome ricalcolato diventa `ModelRole`, che esiste
 perche' segue la convenzione di Spatie Permission, non quella di RelationX.
 
+<<<<<<< HEAD
 La risalita, pensata per gestire l'ereditarieta' Laraxot (`Quaeris\User` che
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+La risalita, pensata per gestire l'ereditarieta' Laraxot (`<nome progetto>\User` che
+=======
+La risalita, pensata per gestire l'ereditarieta' Laraxot (`Quaeris\User` che
+>>>>>>> laraxot/dev
+=======
+La risalita, pensata per gestire l'ereditarieta' Laraxot (`Quaeris\User` che
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 estende `User\BaseUser`), arriva fino alla classe base di Eloquent e li' produce
 un match semantico casuale. Funziona finche' il nome combacia, e nessun test
 copre il perche'.
@@ -280,7 +379,19 @@ relazione continua a puntare alla tabella vecchia senza alcun segnale. Il punto
 ### Come riprodurre
 
 ```php
+<<<<<<< HEAD
 $u = new Modules\Quaeris\Models\User();
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+$u = new Modules\<nome progetto>\Models\User();
+=======
+$u = new Modules\Quaeris\Models\User();
+>>>>>>> laraxot/dev
+=======
+$u = new Modules\Quaeris\Models\User();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 $p = $u->guessPivot(Modules\User\Models\Role::class);
 echo get_class($p), ' | ', $p->getTable(), ' | ', implode(',', $p->getFillable());
 ```

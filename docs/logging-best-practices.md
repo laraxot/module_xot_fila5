@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: logging-best-practices
 description: " Overview"
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview
@@ -258,7 +268,18 @@ try {
     Log::error('Service failure', [
         'service' => get_class($service),
         'error' => $e->getMessage(),
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Logging Best Practices - 2026-03-02
 
 ## Problem Analysis
@@ -498,6 +519,15 @@ try {
         'code' => $e->getCode(),
         'trace' => $e->getTraceAsString(),
         'request_id' => $requestId,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     ]);
     throw $e;
@@ -505,6 +535,15 @@ try {
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Step 4: Implement Audit Trail
 ```php
 // Create audit records for important events
@@ -573,7 +612,18 @@ Following these guidelines will:
 6. **Scale better** under load
 
 **Remember**: If everything is working correctly, there should be NO log output.
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### 4. Performance Logging
 Use dedicated performance monitoring:
 
@@ -790,4 +840,13 @@ Excessive logging is a performance killer that provides little value. By followi
 **Status**: Ready for Implementation
 **Priority**: HIGH
 **Estimated Impact**: 10-15% performance improvement
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: worker
 description: "worker"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 
 https://github.com/orobogenius/sansdaemon/blob/master/src/Traits/SansDaemonWorkerTrait.php

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: database-testing-rule
 description: " 📋 Regola Fondamentale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🚨 DATABASE TESTING RULE - MySQL con Suffisso "_test"
 
 ## 📋 Regola Fondamentale
@@ -13,9 +16,27 @@ metadata:
 
 **USARE SEMPRE MySQL con suffisso "_test":**
 - `DB_CONNECTION=mysql` ✅
+<<<<<<< HEAD
 - `DB_DATABASE=quaeris_data_test` ✅  
 - `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
 - `DB_DATABASE_USER=quaeris_user_test` ✅
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `DB_DATABASE=<nome progetto>_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=<nome progetto>_survey_test` ✅
+- `DB_DATABASE_USER=<nome progetto>_user_test` ✅
+=======
+- `DB_DATABASE=quaeris_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
+- `DB_DATABASE_USER=quaeris_user_test` ✅
+>>>>>>> laraxot/dev
+=======
+- `DB_DATABASE=quaeris_data_test` ✅  
+- `DB_DATABASE_LIMESURVEY=quaeris_survey_test` ✅
+- `DB_DATABASE_USER=quaeris_user_test` ✅
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🚫 MAI USARE
 

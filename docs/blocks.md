@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: blocks
 description: "I blocchi UI sono componenti riutilizzabili per la costruzione delle pagine. Ogni blocco è un componente Blade che può essere utilizzato in "
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Blocchi UI in il progetto
 
 I blocchi UI sono componenti riutilizzabili per la costruzione delle pagine. Ogni blocco è un componente Blade che può essere utilizzato in qualsiasi vista del tema.

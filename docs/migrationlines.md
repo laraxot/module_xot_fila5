@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: migrationlines
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Migration Guidelines for Project Modules
 
 ## Overview

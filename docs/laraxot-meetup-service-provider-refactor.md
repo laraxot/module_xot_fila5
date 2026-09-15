@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laraxot-meetup-service-provider-refactor
 description: "Data: 2025-12-16"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot MeetupServiceProvider Refactor - 2025-12-16
 
 **Data**: 2025-12-16

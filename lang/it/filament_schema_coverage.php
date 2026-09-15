@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'id' => ['label' => 'id', 'placeholder' => 'id', 'helper_text' => '', 'description' => 'id'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
         'field_name' => ['label' => 'field_name', 'placeholder' => 'field_name', 'helper_text' => '', 'description' => 'field_name'],
@@ -11,6 +12,15 @@ return [
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
         'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => '', 'description' => 'type'],
         'anno' => ['label' => 'anno', 'placeholder' => 'anno', 'helper_text' => '', 'description' => 'anno'],
+=======
+        'id' => ['label' => 'id', 'placeholder' => 'id', 'helper_text' => 'id', 'description' => 'id'],
+        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
+        'field_name' => ['label' => 'field_name', 'placeholder' => 'field_name', 'helper_text' => 'field_name', 'description' => 'field_name'],
+        'op' => ['label' => 'op', 'placeholder' => 'op', 'helper_text' => 'op', 'description' => 'op'],
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
+        'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => 'type', 'description' => 'type'],
+        'anno' => ['label' => 'anno', 'placeholder' => 'anno', 'helper_text' => 'anno', 'description' => 'anno'],
+>>>>>>> laraxot/dev
         'is_enabled' => ['label' => 'is_enabled'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],

@@ -3,7 +3,19 @@ id: phpstan-xot-module-fix
 slug: phpstan-xot-module
 scope:
   - module:Xot
+<<<<<<< HEAD
   - project:base_workorder_fila5
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - project:<repo progetto>
+=======
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
+=======
+  - project:base_workorder_fila5
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 status: In Progress
 epic: PHPStan Quality Gates
 priority: High

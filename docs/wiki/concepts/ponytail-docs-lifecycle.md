@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ponytail-docs-lifecycle
 description: "Xot is the shared base module, so its docs pattern should be the boring default for other modules."
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Ponytail Docs Lifecycle
 
 Xot is the shared base module, so its docs pattern should be the boring default for other modules.

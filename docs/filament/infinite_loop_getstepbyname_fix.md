@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: infinite-loop-getstepbyname-fix
 description: " 🚨 PROBLEMA CRITICO RISOLTO"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**
@@ -126,12 +129,30 @@ $prop = property_exists($class, 'property') ? $class::$property : [];
 ### **Documentazione Correlata**
 <<<<<<< HEAD
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+=======
+<<<<<<< HEAD
+- [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [Wizard Step Implementation](../../../modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 =======
 - [Wizard Step Implementation](../../../Modules/<nome progetto>/project_docs/wizard-step-implementation.md)
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Infinite Loop Prevention](../critical-fixes/infinite-loop-prevention.md)
 

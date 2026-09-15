@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: philosophy-master-index
 description: "Data Creazione: 2025-12-23"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Indice Filosofico Completo - Tutti i Moduli
 
 **Data Creazione**: 2025-12-23

@@ -5,7 +5,19 @@
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
+<<<<<<< HEAD
 base_predict_fila3_mono/
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+base_predict_fila5/
+=======
+base_predict_fila3_mono/
+>>>>>>> laraxot/dev
+=======
+base_predict_fila3_mono/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli

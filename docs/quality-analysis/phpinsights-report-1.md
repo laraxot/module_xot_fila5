@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpinsights-report-1
 description: "Date: 2025-11-12"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHP Insights Analysis Report - Xot Module
 
 **Date:** 2025-11-12

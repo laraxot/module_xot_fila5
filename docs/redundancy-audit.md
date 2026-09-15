@@ -6,7 +6,19 @@ tags: [redundancy, duplicate-code, autoload, casing]
 created: 2026-05-21
 related:
   - ../../../docs/chat/INDEX.md
+<<<<<<< HEAD
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - https://github.com/laraxot/<repo progetto>/issues/89
+=======
+  - https://github.com/laraxot/base_fixcity_fila5/issues/89
+>>>>>>> laraxot/dev
+=======
+  - https://github.com/laraxot/base_fixcity_fila5/issues/89
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 # Xot redundancy audit 2026-05-21

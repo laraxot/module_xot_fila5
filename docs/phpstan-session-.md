@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-session
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sessione PHPStan - 2026-01-05
 
 ## Panoramica

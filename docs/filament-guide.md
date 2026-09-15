@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-guide
 description: " Risorse Utili"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Guida a Filament
 
 ## Risorse Utili

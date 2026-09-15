@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbasepage-interactswithforms-fix
 description: " Data: Febbraio 2026"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBasePage InteractsWithForms Conflict Fix
 
 ## Data: Febbraio 2026

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: install-from-zero
 description: "~~~ bash"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 #Install from zero
 
 ~~~ bash
@@ -183,11 +186,31 @@ create Folders :
  inside folder laravel/modules
 
 ~~~ bash
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ git submodule add https://github.com/laraxot/module_xot_fila5.git Xot
+ git submodule add https://github.com/laraxot/module_tenant_fila5.git Tenant
+ git submodule add https://github.com/laraxot/module_user_fila5.git User
+ git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
+ git submodule add https://github.com/laraxot/module_ui_fila5.git UI
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  git submodule add https://github.com/laraxot/module_xot_fila3.git Xot
  git submodule add https://github.com/laraxot/module_tenant_fila3.git Tenant
  git submodule add https://github.com/laraxot/module_user_fila3.git User
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ~~~
 
 from folder laravel

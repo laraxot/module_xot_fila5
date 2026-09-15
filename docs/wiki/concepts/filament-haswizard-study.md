@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-haswizard-study
 description: " Date"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament HasWizard: Study Notes
 
 ## Date

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: index
 description: " Purpose"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - concepts Index
 
 ## Purpose

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-batch-nov
 description: " Sessione Correzione Modulo per Modulo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Batch Fixes - Novembre 2025
 
 ## Sessione Correzione Modulo per Modulo
@@ -147,7 +150,19 @@ return $schema->components($formSchema);
 6. **Geo** - 0 errori
 7. **Job** - 207 file analizzati, 0 errori (4 errori corretti)
 8. **Media** - 0 errori ✨
+<<<<<<< HEAD
 9. **Quaeris** - 0 errori ✨ (USER fix applicati)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+9. **<nome progetto>** - 0 errori ✨ (USER fix applicati)
+=======
+9. **Quaeris** - 0 errori ✨ (USER fix applicati)
+>>>>>>> laraxot/dev
+=======
+9. **Quaeris** - 0 errori ✨ (USER fix applicati)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 10. **Tenant** - 57 file analizzati, 0 errori (1 errore corretto)
 
 ### Pattern di Correzione Applicati
@@ -249,7 +264,19 @@ return $schema->components($formSchema);
 1. Lang (40+ errori)
 2. Media (20+ errori)
 3. Notify (60+ errori)
+<<<<<<< HEAD
 4. Quaeris (30+ errori)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+4. <nome progetto> (30+ errori)
+=======
+4. Quaeris (30+ errori)
+>>>>>>> laraxot/dev
+=======
+4. Quaeris (30+ errori)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 5. Tenant (10+ errori)
 6. UI (50+ errori)
 7. User (20+ errori)

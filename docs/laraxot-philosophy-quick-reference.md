@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laraxot-philosophy-quick-reference
 description: " 🚨 CRITICAL RULES"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Philosophy - Quick Reference
 
 ## 🚨 CRITICAL RULES

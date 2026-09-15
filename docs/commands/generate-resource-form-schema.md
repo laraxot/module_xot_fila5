@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: generate-resource-form-schema
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # GenerateResourceFormSchemaCommand
 
 ## Descrizione

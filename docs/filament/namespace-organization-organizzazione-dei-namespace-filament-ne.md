@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: namespace-organization-organizzazione-dei-namespace-filament-ne
 description: " Problema Identificato: Duplicazione di Classi Base"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base

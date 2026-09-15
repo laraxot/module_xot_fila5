@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: prompts-improvements
 description: "Data: 2026-01-12"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Miglioramenti Prompt - Laraxot Framework
 
 **Data**: 2026-01-12  

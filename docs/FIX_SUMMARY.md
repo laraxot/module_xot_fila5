@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: fix-summary
 description: " ✅ Production Code Fixed (0 errors)"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Fix Summary
 
 ## ✅ Production Code Fixed (0 errors)
@@ -46,7 +49,19 @@ to the class docblock, and ensuring the trait use is present.
 
 ## 🧠 Second Brain
 
+<<<<<<< HEAD
 See: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+See: `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
+=======
+See: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
+>>>>>>> laraxot/dev
+=======
+See: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Key rules:
 1. Always run `php -l` before declaring a fix

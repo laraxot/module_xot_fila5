@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: super-mucca-session
 description: "Data: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sessione Super Mucca - 2025-01-22
 
 **Data**: 2025-01-22

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: lang-link
 description: "Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/)."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Collegamento alle Traduzioni del Modulo Xot
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

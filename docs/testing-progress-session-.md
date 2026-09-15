@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-progress-session
 description: "Data: 2025-01-22"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Fixes Progress - Sessione 2025-01-22
 
 **Data**: 2025-01-22

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-filament-actions-rule
 description: " Critical Requirement"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 - Filament Actions String Keys Rule
 
 ## Critical Requirement

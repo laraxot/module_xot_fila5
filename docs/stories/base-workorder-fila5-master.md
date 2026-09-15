@@ -1,13 +1,43 @@
 ---
+<<<<<<< HEAD
 id: base-workorder-fila5-master-story
 slug: base-workorder-fila5-master
 scope: [project:base_workorder_fila5]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+id: base-<nome progetto>-fila5-master-story
+slug: base-<nome progetto>-fila5-master
+scope: [project:<repo progetto>]
+=======
+id: base-workorder-fila5-master-story
+slug: base-workorder-fila5-master
+scope: [project:base_workorder_fila5]
+>>>>>>> laraxot/dev
+=======
+id: base-workorder-fila5-master-story
+slug: base-workorder-fila5-master
+scope: [project:base_workorder_fila5]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 status: In Progress
 priority: Critical
 created: 2026-09-06
 ---
 
+<<<<<<< HEAD
 # Master Story - base_workorder_fila5 Quality Gates
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Master Story - <repo progetto> Quality Gates
+=======
+# Master Story - base_workorder_fila5 Quality Gates
+>>>>>>> laraxot/dev
+=======
+# Master Story - base_workorder_fila5 Quality Gates
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Panoramica
 

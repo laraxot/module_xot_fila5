@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: large-dataset-import-guidelines
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Large Dataset Import Optimization Guidelines
 
 ## Overview
@@ -71,7 +74,19 @@ try {
 
 ## Module-Specific Considerations
 
+<<<<<<< HEAD
 ### Quaeris Module
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### <nome progetto> Module
+=======
+### Quaeris Module
+>>>>>>> laraxot/dev
+=======
+### Quaeris Module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Optimize survey contact imports
 - Implement JSON payload persistence
 - Use queue-based processing for contact operations

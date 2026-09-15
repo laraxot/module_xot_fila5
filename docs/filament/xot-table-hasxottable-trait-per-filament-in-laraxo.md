@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-table-hasxottable-trait-per-filament-in-laraxo
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # HasXotTable Trait per Filament in Laraxot PTVX
 
 ## Panoramica

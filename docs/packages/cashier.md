@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: cashier
 description: "cashier"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 Create a Laravel Marketplace with Stripe using Cashier and this package
 https://hbakouane.medium.com/create-a-laravel-marketplace-with-stripe-using-cashier-and-this-package-9bbf56078215
 

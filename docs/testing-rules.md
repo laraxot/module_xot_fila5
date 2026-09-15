@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: testing-rules
 description: " Regole Fondamentali dei Test"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

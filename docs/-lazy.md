@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: lazy
 description: "<!-- Contenuto migrato da docs/lazy.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _lazy
 
 <!-- Contenuto migrato da _docs/_lazy.txt -->

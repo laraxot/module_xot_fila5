@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-call-dynamic-panel-metatagdata
 description: " Contesto"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzione chiamate dinamiche ApplyMetatagToPanelAction → MetatagData
 
 ## Contesto

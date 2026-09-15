@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan
 description: "> Status: ✅ Level 10 Achieved"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Compliance - Xot Module
 
 > **Status**: ✅ Level 10 Achieved
@@ -105,9 +108,27 @@ abstract class XotBaseResource extends Resource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    abstract public static function getFormSchema(): array;
+    abstract public function getFormSchema(): array;
+=======
+<<<<<<< HEAD
+    abstract public static function getFormSchema(): array;
+=======
+    abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     abstract public function getFormSchema(): array;
 =======
     abstract public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
     /**

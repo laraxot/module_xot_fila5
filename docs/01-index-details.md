@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 01-index-details
 description: " Core Architecture"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module Documentation Index
 
 ## Core Architecture

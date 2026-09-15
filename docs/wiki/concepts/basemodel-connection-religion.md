@@ -7,7 +7,19 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "BaseModel protected connection mandatory module snake name TenantServiceProvider never null"
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - "https://github.com/laraxot/<repo progetto>/issues/7"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+>>>>>>> laraxot/dev
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - ./xotbase-migration-religion.md
   - ../../../../../../docs/wiki/concepts/basemodel-connection-religion.md
@@ -30,7 +42,19 @@ Ogni `Modules/{Module}/app/Models/BaseModel.php` **deve** contenere:
 protected $connection = '{module_snake}';
 ```
 
+<<<<<<< HEAD
 Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `WorkOrder` → `work_order`, `UI` → `u_i`).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `<nome progetto>` → `work_order`, `UI` → `u_i`).
+=======
+Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `WorkOrder` → `work_order`, `UI` → `u_i`).
+>>>>>>> laraxot/dev
+=======
+Dove `{module_snake}` = `Module::find('{Module}')->getSnakeName()` (es. `WorkOrder` → `work_order`, `UI` → `u_i`).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Perché (non `null`)
 

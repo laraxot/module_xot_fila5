@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: contracts
 description: "<!-- Contenuto migrato da docs/contracts.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # contracts
 
 <!-- Contenuto migrato da _docs/contracts.txt -->

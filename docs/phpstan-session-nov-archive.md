@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-session-nov-archive
 description: " 🎯 Obiettivo: 0 Errori PHPStan Livello 10"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Correzioni - Sessione Novembre 2025
 
 ## 🎯 Obiettivo: 0 Errori PHPStan Livello 10
@@ -113,7 +116,19 @@ Se un metodo è garantito da interfaccia/contratto, NON serve:
 
 ### Regole Fondamentali Applicate
 
+<<<<<<< HEAD
 ✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+✅ **DRY + KISS + SOLID + Robust + Laravel 13 + Filament 5 + PHP 8.3**
+=======
+✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
+>>>>>>> laraxot/dev
+=======
+✅ **DRY + KISS + SOLID + Robust + Laravel 12 + Filament 4 + PHP 8.3**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Cast Actions centralizzate (`SafeArrayCastAction`, `SafeStringCastAction`)
 - Webmozart Assert per validazioni
 - TheCodingMachine Safe per funzioni PHP sicure

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-batch
 description: " Sessione Correzione Modulo per Modulo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Batch Fixes - Novembre 2025
 
 ## Sessione Correzione Modulo per Modulo

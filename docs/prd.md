@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: prd
 description: " 📋 Overview"
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # PRD: Xot Core Framework
 
 ## 📋 Overview
@@ -36,7 +46,18 @@ Focuses on Developer Experience (DX). Provides clear error messages and strict t
 ## 🚫 Out of Scope
 - Domain-specific logic (HR, Finance, etc.).
 - Direct UI components (handled by the UI module).
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Product Requirements Document (PRD) - Xot Module
 
 **Module**: Xot
@@ -360,7 +381,19 @@ $action->onQueue('default')->execute($data);
 
 ### 7.4 Technical Constraints
 - PHP 8.3+ required
+<<<<<<< HEAD
 - Laravel 12+ required
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Laravel 13+ required
+=======
+- Laravel 12+ required
+>>>>>>> laraxot/dev
+=======
+- Laravel 12+ required
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - PHPStan level MAX
 - Strict typing required
 
@@ -460,4 +493,13 @@ Xot/
 | Engineering Lead | | | |
 | Tech Lead | | | |
 | Stakeholder | | | |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

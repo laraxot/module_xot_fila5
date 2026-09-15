@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translations-best-practices
 description: "Questo documento definisce le linee guida ufficiali e le best practices per la gestione delle traduzioni all'interno del framework Laraxot."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Traduzioni: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per la gestione delle traduzioni all'interno del framework Laraxot.
@@ -495,6 +498,24 @@ Per aggiornare le traduzioni esistenti da una struttura semplice a una espansa:
 
 - [Documentazione Ufficiale Laravel Localization](https://laravel.com/project_docs/localization)
 - [Documentazione di Filament sulla Localizzazione](https://filamentphp.com/project_docs/3.x/support/localization)
+<<<<<<< HEAD
 - [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/project_docs/TRANSLATIONS.md)
 - [LangServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/LangServiceProvider.php)
 - [TRANSLATIONS.md](base_orisbroker_fila5/laravel/modules/brain/project_docs/translations.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [TRANSLATIONS.md](base_orisbroker_fila5/laravel/Modules/Brain/project_docs/TRANSLATIONS.md)
+- [LangServiceProvider](<repo progetto>/laravel/Modules/Xot/Providers/LangServiceProvider.php)
+- [TRANSLATIONS.md](<repo progetto>/laravel/modules/brain/project_docs/translations.md)
+=======
+- [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/project_docs/TRANSLATIONS.md)
+- [LangServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/LangServiceProvider.php)
+- [TRANSLATIONS.md](base_orisbroker_fila5/laravel/modules/brain/project_docs/translations.md)
+>>>>>>> laraxot/dev
+=======
+- [TRANSLATIONS.md](base_orisbroker_fila3/laravel/Modules/Brain/project_docs/TRANSLATIONS.md)
+- [LangServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/LangServiceProvider.php)
+- [TRANSLATIONS.md](base_orisbroker_fila5/laravel/modules/brain/project_docs/translations.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pest-testing-status
 description: "Data: 9 Gennaio 2026"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Pest Testing - Stato Attuale e Roadmap
 
 **Data**: 9 Gennaio 2026  

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: docs-organization-guide
 description: "> Guida completa per organizzare e mantenere la documentazione dei moduli"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Documentation Organization Guide
 
 > **Guida completa per organizzare e mantenere la documentazione dei moduli**

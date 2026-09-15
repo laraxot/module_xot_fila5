@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-v5-setup-guide
 description: "Version: 5.x"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🎨 FILAMENT V5 SETUP GUIDE - Base Predict Fila5
 
 **Version**: 5.x  
@@ -589,7 +592,19 @@ php artisan view:clear
 - `Modules/Predict/docs/FILAMENT_TABLE_FEATURES_IMPLEMENTED.md`
 
 ### GitHub Issues
+<<<<<<< HEAD
 - [Filament v5 Migration](https://github.com/laraxot/base_predict_fila5/issues/TBD)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament v5 Migration](https://github.com/laraxot/<repo progetto>/issues/TBD)
+=======
+- [Filament v5 Migration](https://github.com/laraxot/base_predict_fila5/issues/TBD)
+>>>>>>> laraxot/dev
+=======
+- [Filament v5 Migration](https://github.com/laraxot/base_predict_fila5/issues/TBD)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

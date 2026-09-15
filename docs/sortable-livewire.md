@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: sortable-livewire
 description: "Elenco di collegamenti migrato da un file .txt; URL deduplicati."
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 https://sbsharma.com/laravel-jquery-ui-sortable-database-update-livewire/
 
 
@@ -18,7 +28,18 @@ https://opensourcelibs.com/lib/livewire-sortablejs
 
 
 https://github.com/livewire/sortable
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: "Sortable livewire"
 type: reference
@@ -36,4 +57,13 @@ Elenco di collegamenti migrato da un file `.txt`; URL deduplicati.
 - <https://github.com/asantibanez/laravel-blade-sortable>
 - <https://opensourcelibs.com/lib/livewire-sortablejs>
 - <https://github.com/livewire/sortable>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

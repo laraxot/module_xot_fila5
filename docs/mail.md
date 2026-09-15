@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mail
 description: "mail"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 //--- mailtrap
 
 MAIL_DRIVER=smtp

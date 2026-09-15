@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: roadmap-miglioramenti
 description: "> I numeri misurati (PHPStan/PHPMD/PHPInsights/casi test) sono in"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot — cosa migliorerei se questo modulo fosse mio per un mese
 
 > I numeri misurati (PHPStan/PHPMD/PHPInsights/casi test) sono in

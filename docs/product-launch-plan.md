@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: product-launch-plan
 description: "> Piano di lancio. Modulo Core Framework."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot - Product Launch Plan
 
 > Piano di lancio. Modulo Core Framework.

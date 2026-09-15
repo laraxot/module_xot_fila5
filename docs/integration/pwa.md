@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pwa
 description: "<!-- Contenuto migrato da docs/pwa.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # pwa
 
 <!-- Contenuto migrato da _docs/pwa.txt -->

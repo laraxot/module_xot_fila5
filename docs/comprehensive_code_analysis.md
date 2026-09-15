@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: comprehensive-code-analysis
 description: " Panoramica"
@@ -8,11 +9,30 @@ metadata:
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+# Analisi Completa del Codice - Sistema Laraxot
+
+## Panoramica
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
 >>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🔴 CRITICI - Violazioni Principi e Errori
 
@@ -188,9 +208,27 @@ try {
 ```php
 // ContactResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -201,9 +239,27 @@ public function getFormSchema(): array
 
 // CustomerResource.php - PATTERN SIMILE
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -281,7 +337,19 @@ public function execute(Contact $contact): void
  */
 ```
 
+<<<<<<< HEAD
 ### 2. Laravel 12 Compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 2. Laravel 13 Compatibility
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### Casts Method
 ```php
@@ -294,15 +362,41 @@ protected function casts(): array
 }
 ```
 
+<<<<<<< HEAD
 ### 3. Filament 4 Patterns
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 3. Filament 5 Patterns
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### XotBaseResource Usage
 ```php
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+=======
+    public function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -437,7 +531,19 @@ return [
 ## 🔗 Collegamenti Correlati
 
 - [Architettura Moduli](architecture.md)
+<<<<<<< HEAD
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Best Practices Laravel 13](./LARAVEL_12_GUIDE.md)
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
 
@@ -455,29 +561,78 @@ return [
 - **N+1 Queries**: 0 problemi
 - **Complexity**: Tutti i metodi <8
 
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: comprehensive_code_analysis
 canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+---
+
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> 28b0298a (fix: phpstan issues)
 ---
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
 
 ---
 
 <!-- Merged from COMPREHENSIVE_CODE_ANALYSIS.md, which collided with this file on case-insensitive filesystems. -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Analisi Completa del Codice - Sistema Laraxot
+
+## Panoramica
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 >>>>>>> 7f6cf6be (.)
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🔴 CRITICI - Violazioni Principi e Errori
 
@@ -738,7 +893,19 @@ public function execute(Contact $contact): void
  */
 ```
 
+<<<<<<< HEAD
 ### 2. Laravel 12 Compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 2. Laravel 13 Compatibility
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### Casts Method
 ```php
@@ -751,13 +918,34 @@ protected function casts(): array
 }
 ```
 
+<<<<<<< HEAD
 ### 3. Filament 4 Patterns
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 3. Filament 5 Patterns
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### XotBaseResource Usage
 ```php
 class ContactResource extends XotBaseResource
 {
     public function getFormSchema(): array
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -892,7 +1080,19 @@ return [
 ## 🔗 Collegamenti Correlati
 
 - [Architettura Moduli](architecture.md)
+<<<<<<< HEAD
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Best Practices Laravel 13](./LARAVEL_12_GUIDE.md)
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
 
@@ -919,6 +1119,15 @@ return [
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 
 ---
@@ -928,31 +1137,87 @@ return [
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
+<<<<<<< HEAD
 Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 13 + PHP 8.3 + Filament 5.
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
+=======
+Analisi sistematica di tutti i moduli del progetto per identificare violazioni dei principi DRY, KISS, SOLID e problemi di performance in ottica Laravel 12 + PHP 8.3 + Filament 4.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## 🔴 CRITICI - Violazioni Principi e Errori
 
 ### 1. Violazioni DRY - Duplicazioni di Codice
 
 #### Singleton Pattern Duplicato
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Services/LimeJsonService.php`, `Modules/<nome progetto>/app/Services/<nome progetto>Service.php`
+=======
+**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Services/LimeJsonService.php`, `Modules/Quaeris/app/Services/QuaerisService.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 // DUPLICATO in LimeJsonService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
+<<<<<<< HEAD
     if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    if (! self::$instance instanceof \Modules\<nome progetto>\Services\LimeJsonService) {
+=======
+    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+>>>>>>> laraxot/dev
+=======
+    if (! self::$instance instanceof \Modules\Quaeris\Services\LimeJsonService) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         self::$instance = new self();
     }
     return self::$instance;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// DUPLICATO in <nome progetto>Service.php
+private static ?self $instance = null;
+public static function getInstance(): self
+{
+    if (! self::$instance instanceof \Modules\<nome progetto>\Services\<nome progetto>Service) {
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 // DUPLICATO in QuaerisService.php
 private static ?self $instance = null;
 public static function getInstance(): self
 {
     if (! self::$instance instanceof \Modules\Quaeris\Services\QuaerisService) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         self::$instance = new self();
     }
     return self::$instance;
@@ -962,13 +1227,37 @@ public static function getInstance(): self
 **Soluzione**: Creare trait `SingletonTrait` in `Modules/Xot/app/Traits/SingletonTrait.php`
 
 #### Connection Hardcoded Duplicata
+<<<<<<< HEAD
 **Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Problema**: `protected $connection = '<nome progetto>';` ripetuto in tutti i modelli <nome progetto>
+=======
+**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+>>>>>>> laraxot/dev
+=======
+**Problema**: `protected $connection = 'quaeris';` ripetuto in tutti i modelli Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Soluzione**: Centralizzare in BaseModel o configurazione
 
 ### 2. Violazioni SOLID
 
 #### Single Responsibility Principle Violato
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Models/BaseModel.php`
+=======
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 abstract class BaseModel extends Model implements ModelContract, HasMedia
@@ -1016,7 +1305,19 @@ abstract class BaseUser extends Authenticatable implements
 ### 3. N+1 Query Problems
 
 #### Customer Model - Lazy Loading
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/Customer.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Models/Customer.php`
+=======
+**File**: `Modules/Quaeris/app/Models/Customer.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/Customer.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 public function surveyPdfsActive()
@@ -1029,7 +1330,19 @@ public function surveyPdfsActive()
 **Soluzione**: Usare query builder o eager loading
 
 #### AlertWidget - Query Complessa
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Filament/Widgets/AlertWidget.php`
+=======
+**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Filament/Widgets/AlertWidget.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
@@ -1052,7 +1365,19 @@ return SurveyFlipResponse::where('survey_id', $this->getSurveyId())
 ### 4. Violazioni KISS - Complessità Eccessiva
 
 #### QuestionChart Model - Metodi Complessi
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Models/QuestionChart.php`
+=======
+**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/QuestionChart.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 public function participants(): CustomRelation
@@ -1079,7 +1404,19 @@ public function participants(): CustomRelation
 ### 5. Gestione Errori Inadeguata
 
 #### SendInviteAction - Catch Vuoti
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Actions/SendInviteAction.php`
+=======
+**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Actions/SendInviteAction.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 try {
@@ -1099,7 +1436,19 @@ try {
 ### 1. Filament Resources - Pattern Duplicati
 
 #### Schema Duplicato
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
+=======
+**File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Filament/Resources/ContactResource.php`, `CustomerResource.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 // ContactResource.php
@@ -1148,9 +1497,27 @@ public function customer(): HasOneThrough
 **File**: Tutti i ServiceProvider dei moduli
 
 ```php
+<<<<<<< HEAD
 class QuaerisServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Quaeris';
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+class <nome progetto>ServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = '<nome progetto>';
+=======
+class QuaerisServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'Quaeris';
+>>>>>>> laraxot/dev
+=======
+class QuaerisServiceProvider extends XotBaseServiceProvider
+{
+    public string $name = 'Quaeris';
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     
     protected string $module_dir = __DIR__;
     protected string $module_ns = __NAMESPACE__;
@@ -1189,7 +1556,19 @@ public function execute(Contact $contact): void
  */
 ```
 
+<<<<<<< HEAD
 ### 2. Laravel 12 Compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 2. Laravel 13 Compatibility
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+=======
+### 2. Laravel 12 Compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### Casts Method
 ```php
@@ -1202,7 +1581,19 @@ protected function casts(): array
 }
 ```
 
+<<<<<<< HEAD
 ### 3. Filament 4 Patterns
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 3. Filament 5 Patterns
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+=======
+### 3. Filament 4 Patterns
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### XotBaseResource Usage
 ```php
@@ -1250,7 +1641,19 @@ trait SingletonTrait
 ```
 
 #### B. Separare BaseModel Responsibilities
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Models/BaseModel.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Models/BaseModel.php`
+=======
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Models/BaseModel.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```php
 abstract class BaseModel extends Model implements ModelContract
 {
@@ -1263,7 +1666,19 @@ abstract class BaseModel extends Model implements ModelContract
 ```
 
 #### C. Implementare Repository Pattern
+<<<<<<< HEAD
 **File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**File**: `Modules/<nome progetto>/app/Repositories/SurveyFlipResponseRepository.php`
+=======
+**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+>>>>>>> laraxot/dev
+=======
+**File**: `Modules/Quaeris/app/Repositories/SurveyFlipResponseRepository.php`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```php
 class SurveyFlipResponseRepository
 {
@@ -1324,10 +1739,29 @@ try {
 
 #### B. Configuration Centralization
 ```php
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// config/<nome progetto>.php
+return [
+    'database' => [
+        'connection' => env('<nome progetto>_DB_CONNECTION', '<nome progetto>'),
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 // config/quaeris.php
 return [
     'database' => [
         'connection' => env('QUAERIS_DB_CONNECTION', 'quaeris'),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'limesurvey' => [
         'api' => [
@@ -1342,7 +1776,19 @@ return [
 ## 🔗 Collegamenti Correlati
 
 - [Architettura Moduli](./ARCHITECTURE.md)
+<<<<<<< HEAD
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Best Practices Laravel 13](./LARAVEL_12_GUIDE.md)
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
+=======
+- [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
 
@@ -1362,11 +1808,37 @@ return [
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Data Analisi**: 2025-01-06  
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

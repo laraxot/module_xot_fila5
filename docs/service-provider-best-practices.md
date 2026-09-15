@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: service-provider-best-practices
 description: "Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione dei Service Provider all'interno del framework"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Service Provider: Best Practices in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione dei Service Provider all'interno del framework Laraxot.
@@ -466,6 +469,24 @@ class RouteServiceProvider extends ServiceProvider
 ## Riferimenti
 
 - [Documentazione Ufficiale Laravel Service Provider](https://laravel.com/docs/providers)
+<<<<<<< HEAD
 - [XotBaseServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
 - [XotBaseRouteServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
 - [BaseEventServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [XotBaseServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
+- [XotBaseRouteServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
+- [BaseEventServiceProvider](base_orisbroker_fila5/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+=======
+- [XotBaseServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
+- [XotBaseRouteServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
+- [BaseEventServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+>>>>>>> laraxot/dev
+=======
+- [XotBaseServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseServiceProvider.php)
+- [XotBaseRouteServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/XotBaseRouteServiceProvider.php)
+- [BaseEventServiceProvider](base_orisbroker_fila3/laravel/Modules/Xot/Providers/BaseEventServiceProvider.php)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

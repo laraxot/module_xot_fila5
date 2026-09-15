@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bashscripts-location-policy
 description: " 🚫 Regola Assoluta"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Policy Posizione Script Bash (VINCOLANTE)
 
 ## 🚫 Regola Assoluta

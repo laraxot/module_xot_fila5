@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-fixes-january
 description: " Correzioni PHPStan - Gennaio 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🔧 PHPStan Fixes - Modulo Xot - Gennaio 2025
 # Correzioni PHPStan - Gennaio 2025
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: docs-structure-correction-sumy
 description: " Contesto e Problema Identificato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xot-cleanup-docs
 description: " 📋 Obiettivo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task: Xot Docs Cleanup
 
 ## 📋 Obiettivo

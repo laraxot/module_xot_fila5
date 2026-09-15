@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-list-table-columns-delegation
 description: " Sintomo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5: colonne delle pagine di elenco
 
 ## Sintomo

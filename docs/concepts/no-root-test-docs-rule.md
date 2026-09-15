@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: no-root-test-docs-rule
 description: " PROBLEMA"
@@ -5,6 +6,8 @@ metadata:
   type: concept
 ---
 
+=======
+>>>>>>> laraxot/dev
 # REGOLA CRITICA: Test Docs NEI MODULI/TEMI
 
 ## PROBLEMA

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: performance
 description: " Pacchetti Utilizzati"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Performance
 
 ## Pacchetti Utilizzati

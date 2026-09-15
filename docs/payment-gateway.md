@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: payment-gateway
 description: "<!-- Contenuto migrato da docs/paymentgateway.txt -->"
@@ -6,11 +7,31 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 How To Integrate Paypal Payment Gateway In Laravel 8
 https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel-8
 
 ----------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'payment_gateway'
 module: Xot
@@ -31,4 +52,13 @@ How To Integrate Paypal Payment Gateway In Laravel 8
 https://techsolutionstuff.com/post/how-to-integrate-paypal-payment-gateway-in-laravel-8
 
 ----------------------------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

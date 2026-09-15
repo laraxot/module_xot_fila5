@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: strategy
 description: " 🌍 Market Context"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Product Strategy: Xot Core
 
 ## 🌍 Market Context

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ai-init-script-analysis-1
 description: " Situazione Attuale"
@@ -5,11 +6,25 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Funzionamento Script ai_init.sh
 
 ## Situazione Attuale
 
+<<<<<<< HEAD
 Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_<nome progetto>_fila5/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+=======
+Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+>>>>>>> laraxot/dev
+=======
+Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Cartelle Presenti in bashscripts/ai/
 - `.ai` - esiste

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: clickbait-conversion-guidelines
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Clickbait & Conversion Guidelines
 
 ## Overview

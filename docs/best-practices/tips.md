@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: tips
 description: "tips"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 https://github.com/phpstan/phpstan/issues/1242
 
 

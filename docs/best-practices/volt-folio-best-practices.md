@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: volt-folio-best-practices
 description: " Collegamenti correlati"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Best Practices per Volt e Folio
 
 ## Collegamenti correlati

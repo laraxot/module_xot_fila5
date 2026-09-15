@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 01-standard-patterns
 description: "This document details mandatory rules and best practices for executing Spatie Queueable Actions and managing dependency injection within bus"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Action Execution and Dependency Injection Rules in Laraxot
 
 This document details mandatory rules and best practices for executing Spatie Queueable Actions and managing dependency injection within business logic classes, especially Actions. Adherence to these guidelines is crucial for maintaining architectural consistency, testability, queueability, and aligning with the Laraxot philosophy.

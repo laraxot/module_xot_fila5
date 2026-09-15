@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: webhook-error-formatter
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # WebhookErrorFormatter
 
 ## Descrizione

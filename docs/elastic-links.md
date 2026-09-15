@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: elastic-links
 description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
@@ -8,6 +9,18 @@ metadata:
 <<<<<<< HEAD
 http://127.0.0.1:9200/_cat/health?v=true
 =======
+=======
+<<<<<<< HEAD
+http://127.0.0.1:9200/_cat/health?v=true
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+http://127.0.0.1:9200/_cat/health?v=true
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Elastic links — risorse esterne'
 module: Xot
@@ -28,4 +41,13 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <http://127.0.0.1:9200/_cat/health?v=true>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

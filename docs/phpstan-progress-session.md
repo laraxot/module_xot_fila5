@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-progress-session
 description: "Data: 9 Gennaio 2026"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 - Sessione di Correzione
 
 **Data**: 9 Gennaio 2026  

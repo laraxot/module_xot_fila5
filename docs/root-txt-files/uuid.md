@@ -7,10 +7,31 @@ slug: uuid
 description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models Universally Unique Identifiers'
 tags: [migrato-da-txt, xot]
 converted_from: uuid.txt
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models //--------------------------------------------------------'
+tags: [migrato-da-txt, xot]
+converted_from: _uuid.txt
+=======
+<<<<<<< HEAD
+description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models Universally Unique Identifiers'
+tags: [migrato-da-txt, xot]
+converted_from: uuid.txt
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models //--------------------------------------------------------'
 tags: [migrato-da-txt, xot]
 converted_from: _uuid.txt
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
@@ -20,6 +41,23 @@ Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 <<<<<<< HEAD
 Universally Unique Identifiers
+<<<<<<< HEAD
 =======
 //--------------------------------------------------------
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+//--------------------------------------------------------
+=======
+<<<<<<< HEAD
+Universally Unique Identifiers
+=======
+//--------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+=======
+//--------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: array-keys-rule
 description: " Regola"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Array Keys Rule for Filament Schemas
 
 ## Regola
@@ -87,9 +90,27 @@ public static function getTableColumns(): array
 ### Form
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -103,9 +124,27 @@ public function getFormSchema(): array
 ### Infolist
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+public static function getInfolistSchema(): array
+public function getInfolistSchema(): array
+=======
+<<<<<<< HEAD
+public static function getInfolistSchema(): array
+=======
+public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 public function getInfolistSchema(): array
 =======
 public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

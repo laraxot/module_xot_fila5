@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: best-practices-1
 description: " Riferimenti al modello User"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User

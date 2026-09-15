@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: search-string-database
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # SearchStringInDatabaseCommand
 
 ## Descrizione

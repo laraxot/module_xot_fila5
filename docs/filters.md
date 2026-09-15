@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filters
 description: "filters"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 <?php
 //https://itnext.io/how-i-designed-and-built-lumenos-recruitment-search-engine-d8918b3500
 namespace App\Search\Filters;

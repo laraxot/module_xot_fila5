@@ -1,5 +1,17 @@
 ---
+<<<<<<< HEAD
 title: "Composer Root Skeleton Fixcity Comparison Dup"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+title: "Composer Root Skeleton <nome progetto> Comparison Dup"
+=======
+title: "Composer Root Skeleton Fixcity Comparison Dup"
+>>>>>>> laraxot/dev
+=======
+title: "Composer Root Skeleton Fixcity Comparison Dup"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 type: concept
 status: deprecated
 module: "Xot"
@@ -9,7 +21,19 @@ qmd: "deprecated composer-root-skeleton-ptv-comparison-dup"
 related:
   - "./composer-root-skeleton-ptv-comparison-dup.md"
 ---
+<<<<<<< HEAD
 # Composer Root Skeleton Fixcity Comparison Dup
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Composer Root Skeleton <nome progetto> Comparison Dup
+=======
+# Composer Root Skeleton Fixcity Comparison Dup
+>>>>>>> laraxot/dev
+=======
+# Composer Root Skeleton Fixcity Comparison Dup
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 

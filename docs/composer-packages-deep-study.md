@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: composer-packages-deep-study
 description: "Source: composer show --format=json run from laravel/ on 2026-03-02."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Composer Packages Deep Study (2026-03-02)
 
 Source: `composer show --format=json` run from `laravel/` on 2026-03-02.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 001-core-framework-improvements
 description: " Description"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Task 001: Improve Core Framework and Base Classes
 
 ## Description

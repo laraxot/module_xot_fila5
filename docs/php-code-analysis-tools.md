@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: php-code-analysis-tools
 description: "<!-- Contenuto migrato da docs/php-code-analysis-tools.txt -->"
@@ -6,6 +7,15 @@ metadata:
 ---
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
@@ -30,7 +40,18 @@ https://github.com/overtrue/phplint
 https://phpmd.org/
 
 
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -64,4 +85,13 @@ updated: 2026-08-24
 - <https://github.com/phan/phan>
 - <https://github.com/overtrue/phplint>
 - <https://phpmd.org/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

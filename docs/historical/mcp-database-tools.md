@@ -1,7 +1,19 @@
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
+<<<<<<< HEAD
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the <nome progetto>_survey database used in the Limesurvey integration.
+=======
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
+>>>>>>> laraxot/dev
+=======
+MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Available MCP Tools for Database Work
 
@@ -17,7 +29,19 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 }
 ```
 
+<<<<<<< HEAD
 **Use Cases for quaeris_survey Database**:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Use Cases for <nome progetto>_survey Database**:
+=======
+**Use Cases for quaeris_survey Database**:
+>>>>>>> laraxot/dev
+=======
+**Use Cases for quaeris_survey Database**:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -51,7 +75,19 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 
 ### Direct Database Queries (using MySQL MCP)
 ```sql
+<<<<<<< HEAD
 -- List all survey tables in quaeris_survey database
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+-- List all survey tables in <nome progetto>_survey database
+=======
+-- List all survey tables in quaeris_survey database
+>>>>>>> laraxot/dev
+=======
+-- List all survey tables in quaeris_survey database
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -93,12 +129,36 @@ Ensure database connections are properly configured in:
 ## MCP Configuration File
 Location: `~/.cursor/mcp.json`
 
+<<<<<<< HEAD
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the <nome progetto>_survey database without additional configuration.
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
+>>>>>>> laraxot/dev
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
+<<<<<<< HEAD
 2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. **Use proper connection** (`limesurvey` connection for <nome progetto>_survey database)
+=======
+2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
+>>>>>>> laraxot/dev
+=======
+2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: naming-conventions-uppercase-convenzioni-di-nomenclatura-in-nome-prog
 description: "Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.

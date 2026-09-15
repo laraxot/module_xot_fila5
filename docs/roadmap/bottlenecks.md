@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bottlenecks
 description: " 1. Performance API Controllers [65%]"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Colli di Bottiglia - Modulo Xot
 
 ## 1. Performance API Controllers [65%]

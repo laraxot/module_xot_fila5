@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: model-contact-contract
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # ModelContactContract
 
 ## Descrizione

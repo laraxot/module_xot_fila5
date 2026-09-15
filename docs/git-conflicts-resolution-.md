@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflicts-resolution
 description: " Data: 2025-01-06"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -122,12 +125,29 @@ Sono stati identificati e risolti conflitti Git in diversi file del progetto <no
 
 **Modifiche Applicate**:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+```
+
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 ```
 
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```php
 // VERSIONE CORRETTA
@@ -320,10 +340,28 @@ php artisan lang:check
 **Autore**: Sistema di correzione automatica
 <<<<<<< HEAD
 **Stato**: ✅ Completato
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+**Stato**: ✅ Completato
+**Stato**: ✅ Completato
+=======
+<<<<<<< HEAD
+**Stato**: ✅ Completato
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 **Stato**: ✅ Completato
 =======
 **Stato**: ✅ Completato
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

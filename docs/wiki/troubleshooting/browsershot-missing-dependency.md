@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: browsershot-missing-dependency
 description: " Problem"
@@ -5,6 +6,8 @@ metadata:
   type: wiki
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Browsershot Missing Dependency
 
 ## Problem

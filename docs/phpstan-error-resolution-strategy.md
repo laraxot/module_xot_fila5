@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-error-resolution-strategy
 description: " Status Iniziale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Strategia Risoluzione Errori PHPStan - 1565 Errori
 
 ## Status Iniziale

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflicts-inventory
 description: " File con conflitti di merge non risolti"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Inventario Conflitti Git - Xot Module
 
 ## File con conflitti di merge non risolti

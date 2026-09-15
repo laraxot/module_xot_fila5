@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-components
 description: " FileUpload Component"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Componenti Filament - Guida di Riferimento
 
 ## FileUpload Component

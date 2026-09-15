@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: legacy-roadmap
 description: "Roadmap operativo del module Xot, suddiviso in file tematici."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Roadmap Xot
 
 Roadmap operativo del module **Xot**, suddiviso in file tematici.

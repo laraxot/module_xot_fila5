@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflicts-mal-risolti
 description: " 🎯 Filosofia del Problema"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Conflitti Git Mal Risolti - Pattern e Fix
 
 ## 🎯 Filosofia del Problema

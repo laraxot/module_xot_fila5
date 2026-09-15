@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: factory
 description: "factory"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 Make Factory More Organized - laravel
 https://dev.to/marcosgad/make-factory-more-organized-laravel-3c19
 

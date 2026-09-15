@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: kinetic-ux-checklist
 description: " scopo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # kinetic ux checklist (xot)
 
 ## scopo

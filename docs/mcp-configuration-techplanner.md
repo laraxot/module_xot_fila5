@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: mcp-configuration-techplanner
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🤖 Configurazione MCP per TechPlanner Fila4 Mono
 
 ## Panoramica

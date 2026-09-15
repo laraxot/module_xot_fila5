@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: hasxotfactory-restoration
 description: " Data"
@@ -5,6 +6,8 @@ metadata:
   type: fix
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Bugfix: Ripristino HasXotFactory Trait
 
 ## Data

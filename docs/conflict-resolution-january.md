@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: conflict-resolution-january
 description: " Logo SVG"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Conflict Resolution January 2026
 
 ## Logo SVG
@@ -16,8 +19,26 @@ metadata:
 - **Issue**: Presence of multiple `.backup` files polluting the codebase.
 - **Resolution**: Deleted the following files:
     - `Modules/Chart/app/Actions/JpGraph/V1/LineSubQuestionAction.php.backup`
+<<<<<<< HEAD
     - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
     - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
     - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    - `Modules/<nome progetto>/app/Filament/Widgets/BaseTableWidget.php.backup`
+    - `Modules/<nome progetto>/app/Datas/AlertDashboardFilterData.php.backup`
+    - `Modules/<nome progetto>/app/Datas/DashboardFilterData.php.backup`
+=======
+    - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
+    - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
+    - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
+>>>>>>> laraxot/dev
+=======
+    - `Modules/Quaeris/app/Filament/Widgets/BaseTableWidget.php.backup`
+    - `Modules/Quaeris/app/Datas/AlertDashboardFilterData.php.backup`
+    - `Modules/Quaeris/app/Datas/DashboardFilterData.php.backup`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     - `Modules/Xot/tests/Unit/metatagdatatest.php.backup`
     - `Modules/Xot/tests/pest.php.backup`

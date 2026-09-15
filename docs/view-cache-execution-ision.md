@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: view-cache-execution-ision
 description: "Metodologia: Super Mucca - La Litigata Interna"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Decisione: Esecuzione php artisan view:cache
 
 **Metodologia**: Super Mucca - La Litigata Interna

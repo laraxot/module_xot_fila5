@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflict-subtree-error-resolution
 description: " File: bashscripts/gitsubtreeerrorresolution.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Template Gestione Conflitti Git - git_subtree_error_resolution.md
 
 ## File: bashscripts/git_subtree_error_resolution.md

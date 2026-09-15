@@ -29,9 +29,18 @@ trait HasXotForm
             ->columns($this->getFormColumns())
             ->statePath('data');
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
     }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflict-files-list
 description: "This file contains a comprehensive list of files with merge conflict markers (<<<< HEAD or <<<< .mergefile) that need to be resolved."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Merge Conflict Files List
 
 This file contains a comprehensive list of files with merge conflict markers (`<<<< HEAD` or `<<<< .merge_file`) that need to be resolved.
@@ -44,11 +47,31 @@ This file contains a comprehensive list of files with merge conflict markers (`<
 - ./laravel/Modules/Geo/docs/wiki/log.md
 - ./laravel/Modules/Geo/docs/wiki/AGENTS.md
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### <nome progetto> Module (4 files)
+- ./laravel/Modules/<nome progetto>/docs/wiki/index.md
+- ./laravel/Modules/<nome progetto>/docs/wiki/log.md
+- ./laravel/Modules/<nome progetto>/resources/views/filament/widgets/ticket-create-wizard.blade.php
+- ./laravel/Modules/<nome progetto>/docs/wiki/index.md
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Fixcity Module (4 files)
 - ./laravel/Modules/Fixcity/docs/wiki/index.md
 - ./laravel/Modules/Fixcity/docs/wiki/log.md
 - ./laravel/Modules/Fixcity/resources/views/filament/widgets/ticket-create-wizard.blade.php
 - ./laravel/Modules/Fixcity/docs/wiki/index.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Notify Module (3 files)
 - ./laravel/Modules/Notify/docs/wiki/index.md

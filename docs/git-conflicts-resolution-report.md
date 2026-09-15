@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: git-conflicts-resolution-report
 description: " Riepilogo"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Report Risoluzione Conflitti Git - PTVX
 
 ## Riepilogo

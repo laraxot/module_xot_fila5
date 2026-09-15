@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: development-guidelines
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: best-practice
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Development Guidelines - Xot Module
 
 ## Panoramica

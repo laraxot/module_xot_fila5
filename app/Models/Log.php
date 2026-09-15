@@ -120,11 +120,25 @@ class Log extends BaseModel
  * "getRelativePath" => ""
  * "getRelativePathname" => "laravel-2024-03-01.log"
  * "getFilenameWithoutExtension" => "laravel-2024-03-01"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ * "getPath" => "C:\var\www\_bases\<repo progetto>\laravel\storage\logs"
+ * "getFilename" => "laravel-2024-03-01.log"
+ * "getExtension" => "log"
+ * "getBasename" => "laravel-2024-03-01.log"
+ * "getPathname" => "C:\var\www\_bases\<repo progetto>\laravel\storage\logs\laravel-2024-03-01.log"
+=======
+>>>>>>> laraxot/dev
  * "getPath" => "C:\var\www\_bases\base_camping_fila5\laravel\storage\logs"
  * "getFilename" => "laravel-2024-03-01.log"
  * "getExtension" => "log"
  * "getBasename" => "laravel-2024-03-01.log"
  * "getPathname" => "C:\var\www\_bases\base_camping_fila5\laravel\storage\logs\laravel-2024-03-01.log"
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  * "getPerms" => 33206
  * "getInode" => 32369622322094035
  * "getSize" => 12497
@@ -140,6 +154,16 @@ class Log extends BaseModel
  * "isFile" => true
  * "isDir" => false
  * "isLink" => false
+<<<<<<< HEAD
  * "getLinkTarget" => "C:\var\www\_bases\base_camping_fila5\laravel\storage\logs\laravel-2024-03-01.log"
  * "getRealPath" => "C:\var\www\_bases\base_camping_fila5\laravel\storage\logs\laravel-2024-03-01.log"
+=======
+<<<<<<< HEAD
+ * "getLinkTarget" => "C:\var\www\_bases\<repo progetto>\laravel\storage\logs\laravel-2024-03-01.log"
+ * "getRealPath" => "C:\var\www\_bases\<repo progetto>\laravel\storage\logs\laravel-2024-03-01.log"
+=======
+ * "getLinkTarget" => "C:\var\www\_bases\base_camping_fila5\laravel\storage\logs\laravel-2024-03-01.log"
+ * "getRealPath" => "C:\var\www\_bases\base_camping_fila5\laravel\storage\logs\laravel-2024-03-01.log"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */

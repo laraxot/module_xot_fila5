@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-4x-compatibility-1
 description: "Data: 2025-01-27"
@@ -6,6 +7,17 @@ metadata:
 ---
 
 # Compatibilità Filament 4.x - Modulo Xot
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Compatibilità Filament 5.x - Modulo Xot
+=======
+# Compatibilità Filament 4.x - Modulo Xot
+>>>>>>> laraxot/dev
+=======
+# Compatibilità Filament 4.x - Modulo Xot
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Data**: 2025-01-27
 **Status**: ✅ IN CORSO
@@ -187,7 +199,19 @@ $rows = $query->get();
 **Status**: ✅ **MIGRAZIONE COMPLETATA CON SUCCESSO**
 **Data Completamento**: 2025-01-27
 **Errori PHPStan**: 0/3520 (livello 9)
+<<<<<<< HEAD
 **Compatibilità**: Filament 4.x ✅
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Compatibilità**: Filament 5.x ✅
+=======
+**Compatibilità**: Filament 4.x ✅
+>>>>>>> laraxot/dev
+=======
+**Compatibilità**: Filament 4.x ✅
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Problemi Dashboard**: ✅ RISOLTI
 **Memory Usage**: ✅ OTTIMIZZATO
 **Widget Conflicts**: ✅ RISOLTI
@@ -212,7 +236,22 @@ $rows = $query->get();
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Rapporto Aggiornamento Filament 5.x](../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 5.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+=======
+- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+>>>>>>> laraxot/dev
+=======
+- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 *Ultimo aggiornamento: 2025-01-27*

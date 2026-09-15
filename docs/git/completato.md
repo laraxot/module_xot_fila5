@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: completato
 description: "completato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 Risoluzioni completate con successo.
 
 Integrazione documentazione completata:

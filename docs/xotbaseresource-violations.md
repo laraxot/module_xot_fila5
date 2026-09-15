@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbaseresource-violations
 description: " 🚨 ERRORI GRAVISSIMI DA EVITARE SEMPRE"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # VIOLAZIONI CRITICHE XotBaseResource - Regole Globali Laraxot PTVX
 
 ## 🚨 ERRORI GRAVISSIMI DA EVITARE SEMPRE
@@ -136,9 +139,27 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

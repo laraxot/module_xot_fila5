@@ -28,7 +28,19 @@ anyone still using the numbers below:**
    overrode `factory()` with the old 0-arg signature (Signage×5, EnergyBroker×2,
    Costing×1 — fixed, redundant override deleted, `newFactory()` already covered it)
    and 12 models that redundantly `use HasFactory;` (Laravel's own trait) on top of
+<<<<<<< HEAD
    `XotBaseModel` (WorkOrder\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+   `XotBaseModel` (<nome progetto>\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+=======
+   `XotBaseModel` (WorkOrder\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+>>>>>>> laraxot/dev
+=======
+   `XotBaseModel` (WorkOrder\Profile, Notify\NotificationType, Wts×10 — fixed, removed
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
    the redundant import). See
    `Modules/Xot/docs/stories/18.2.1.hasxotfactory-factory-method-regression-fix.story.md`.
 3. **New re-baseline (full `Modules` scan, post-fixes): 1540 file_errors, 0 crashes.**

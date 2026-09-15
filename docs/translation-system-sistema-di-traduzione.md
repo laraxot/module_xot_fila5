@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translation-system-sistema-di-traduzione
 description: " Regola Fondamentale: NO ->label()"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Sistema di Traduzione
 
 ## Regola Fondamentale: NO ->label()

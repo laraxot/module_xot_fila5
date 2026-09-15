@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: analisi-metodi-duplicati
 description: " 🐄✨ Riferimenti Principali"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo Xot
 
 ## 🐄✨ Riferimenti Principali
@@ -257,9 +260,27 @@ class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -331,7 +352,19 @@ Se l'unificazione viene implementata correttamente:
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
+<<<<<<< HEAD
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- 📖 [Regole Resources Filament](./Filament-5-laraxot-rules.md)
+=======
+- 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
+>>>>>>> laraxot/dev
+=======
+- 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Changelog
 

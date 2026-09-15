@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: 00-index
 description: "> Motore core Laraxot. Framework Zero-Config per Laravel 12."
@@ -8,6 +9,19 @@ metadata:
 # Xot Module - Roadmap
 
 > Motore core Laraxot. Framework Zero-Config per Laravel 12.
+=======
+# Xot Module - Roadmap
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+> Motore core Laraxot. Framework Zero-Config per Laravel 13.
+=======
+> Motore core Laraxot. Framework Zero-Config per Laravel 12.
+>>>>>>> laraxot/dev
+=======
+> Motore core Laraxot. Framework Zero-Config per Laravel 12.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Indice
 

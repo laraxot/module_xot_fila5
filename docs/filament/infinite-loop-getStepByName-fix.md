@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: infinite-loop-getstepbyname-fix
 description: " 🚨 PROBLEMA CRITICO RISOLTO"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # CRITICAL FIX: Loop Infinito in getStepByName() - XotBaseResource
 
 ## 🚨 **PROBLEMA CRITICO RISOLTO**

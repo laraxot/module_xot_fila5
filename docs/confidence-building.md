@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: confidence-building
 description: "Autore: Claude Code"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Come Aumentare il Livello di Confidenza — Second Brain Framework
 
 **Autore:** Claude Code  

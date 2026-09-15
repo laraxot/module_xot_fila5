@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: firstorcreate-race-condition-fix
 description: "Status: ✅ Completato"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Fix Race Condition firstOrCreate con UUID - 2026-01-22
 
 **Status**: ✅ Completato  

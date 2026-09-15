@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: form-compilation-patterns
 description: "Project: PTVX Fila5 Mono"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Form Compilation Patterns - Laraxot Standards
 
 **Project**: PTVX Fila5 Mono  

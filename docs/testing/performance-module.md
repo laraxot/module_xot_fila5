@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: performance-module
 description: " Struttura dei Test"
@@ -5,6 +6,8 @@ metadata:
   type: testing
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Test del Modulo Performance
 
 ## Struttura dei Test

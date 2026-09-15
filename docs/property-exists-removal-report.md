@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: property-exists-removal-report
 description: "Data: 2025-01-05"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Report Rimozione property_exists() - Modulo Xot
 
 **Data**: 2025-01-05

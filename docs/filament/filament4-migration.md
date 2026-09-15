@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament4-migration
 description: "Data: 2026-01-30"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5.x Migration Guide
 
 **Data**: 2026-01-30

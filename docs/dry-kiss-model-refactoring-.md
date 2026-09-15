@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: dry-kiss-model-refactoring
 description: " Executive Summary"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # DRY/KISS Model Refactoring Analysis - 2025-10-15
 
 ## Executive Summary
@@ -18,11 +21,27 @@ Analisi completa dell'architettura dei modelli Eloquent nel monorepo Laravel con
 - **Moduli interessati**: 4 (Geo, Cms, healthcare_app, User)
 - **Moduli interessati**: 4 (Geo, Cms, ModuloEsempio, User)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- **Moduli interessati**: 4 (Geo, Cms, <nome progetto>, User)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - **Moduli interessati**: 4 (Geo, Cms, Quaeris, User)
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **Impatto**: Riduzione drastica della duplicazione, miglioramento della manutenibilità
 
@@ -44,11 +63,40 @@ namespace Modules\ModuloEsempio\Models;
 
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+```php
+namespace Modules\ModuloEsempio\Models;
+
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ```php
 namespace Modules\ModuloEsempio\Models;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 1. ❌ <nome progetto>\Models\BaseModel estendeva Model invece di XotBaseModel
+
+**Prima** (VIOLAZIONE CRITICA):
+```php
+namespace Modules\<nome progetto>\Models;
+
+```php
+namespace Modules\ModuloEsempio\Models;
+
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### 1. ❌ Quaeris\Models\BaseModel estendeva Model invece di XotBaseModel
 
 **Prima** (VIOLAZIONE CRITICA):
@@ -60,6 +108,13 @@ namespace Modules\Quaeris\Models;
 namespace Modules\ModuloEsempio\Models;
 
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 
@@ -75,11 +130,27 @@ abstract class BaseModel extends Model
     public $timestamps = true;
     protected $connection = 'healthcare_app';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    protected $connection = '<nome progetto>';
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     protected $connection = 'quaeris';
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     protected $casts = ['published_at' => 'datetime', ...];
     protected $primaryKey = 'id';
@@ -97,11 +168,27 @@ abstract class BaseModel extends Model
 namespace Modules\healthcare_app\Models;
 namespace Modules\ModuloEsempio\Models;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+namespace Modules\<nome progetto>\Models;
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 namespace Modules\Quaeris\Models;
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 use Modules\Xot\Models\XotBaseModel;
@@ -114,11 +201,27 @@ abstract class BaseModel extends XotBaseModel implements HasMedia, ModelContract
 
     protected $connection = 'healthcare_app';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    protected $connection = '<nome progetto>';
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
     protected $connection = 'quaeris';
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     protected $with = ['extra'];
 }
@@ -407,11 +510,27 @@ BaseModel → BaseModelLang → Post
 | healthcare_app | BaseModel | 66 | 20 | -70% |
 | ModuloEsempio | BaseModel | 66 | 20 | -70% |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+| <nome progetto> | BaseModel | 66 | 20 | -70% |
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 | Quaeris | BaseModel | 66 | 20 | -70% |
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 | Geo | BasePivot | 59 | 8 | -86% |
 | Geo | BaseMorphPivot | 67 | 8 | -88% |
@@ -579,10 +698,28 @@ Il refactoring ha applicato con successo i principi DRY e KISS alla gerarchia de
 *Analizzato da: Claude Code*
 <<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 9 passed*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+*Validato: ✅ Test passed, PHPStan level 9 passed*
+*Validato: ✅ Test passed, PHPStan level 9 passed*
+=======
+<<<<<<< HEAD
+*Validato: ✅ Test passed, PHPStan level 9 passed*
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 *Validato: ✅ Test passed, PHPStan level 9 passed*
 =======
 *Validato: ✅ Test passed, PHPStan level 9 passed*
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

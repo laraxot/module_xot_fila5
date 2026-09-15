@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: cache
 description: "<!-- Contenuto migrato da docs/cache.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # cache
 
 <!-- Contenuto migrato da _docs/cache.txt -->

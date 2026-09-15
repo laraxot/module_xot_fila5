@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-5-tenancy-complete-guide
 description: "Data Creazione: Gennaio 2026"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 5.x Multi-Tenancy - Guida Completa
 
 **Data Creazione:** Gennaio 2026  
@@ -546,4 +549,16 @@ $panel->tenantMiddleware([
 ---
 
 **Versione Filament:** 5.x  
+<<<<<<< HEAD
 **Compatibilità:** Laravel 12.x, PHP 8.3+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Compatibilità:** Laravel 13.x, PHP 8.3+
+=======
+**Compatibilità:** Laravel 12.x, PHP 8.3+
+>>>>>>> laraxot/dev
+=======
+**Compatibilità:** Laravel 12.x, PHP 8.3+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

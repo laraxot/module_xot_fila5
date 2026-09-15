@@ -167,7 +167,19 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
+<<<<<<< HEAD
 └── Quaeris/
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+└── <nome progetto>/
+=======
+└── Quaeris/
+>>>>>>> laraxot/dev
+=======
+└── Quaeris/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ├── database/
     │   ├── factories/
     │   ├── migrations/

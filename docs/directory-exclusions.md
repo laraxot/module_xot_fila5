@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: directory-exclusions
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Eccezioni alla Regola della Directory app in Laraxot <nome progetto>
 
 ## Panoramica

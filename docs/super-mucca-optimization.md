@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: super-mucca-optimization
 description: "Module: Xot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Super Mucca Optimization - Jan 2025
 
 **Module**: Xot

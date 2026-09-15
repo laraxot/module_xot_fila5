@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: moduleocumentation-standards
 description: " Regola: Nessun Riferimento al Progetto Specifico"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Standard di Documentazione dei Moduli
 
 ## Regola: Nessun Riferimento al Progetto Specifico

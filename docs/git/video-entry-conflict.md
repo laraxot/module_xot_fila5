@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: video-entry-conflict
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitto in VideoEntry
 
 ## Panoramica

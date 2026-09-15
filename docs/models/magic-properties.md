@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: magic-properties
 description: " Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Magic Properties in Laravel Eloquent Models
 
 ## Overview

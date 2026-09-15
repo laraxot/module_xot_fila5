@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-roadmap
 description: "> Date: 2026-01-14"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Roadmap - Xot Module
 
 > **Date**: 2026-01-14

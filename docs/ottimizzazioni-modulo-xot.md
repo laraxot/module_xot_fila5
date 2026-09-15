@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: ottimizzazioni-modulo-xot
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Ottimizzazioni Modulo Xot - DRY + KISS
 
 ## Panoramica

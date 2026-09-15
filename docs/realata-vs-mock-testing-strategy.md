@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: realata-vs-mock-testing-strategy
 description: " 🎯 Strategic Testing Approaches"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Real Data vs Mock Testing Strategy - Xot Module
 
 ## 🎯 Strategic Testing Approaches

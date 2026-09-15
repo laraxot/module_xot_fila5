@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: todo-1
 description: "<!-- Contenuto migrato da docs/todo.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _todo
 
 <!-- Contenuto migrato da _docs/_todo.txt -->

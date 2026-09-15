@@ -16,7 +16,19 @@ related:
   - ./concepts/ai-harness-xot-discipline.md
   - ./concepts/second-brain-local-discipline.md
   - ./rules/module-testcase-xotbase-hierarchy.md
+<<<<<<< HEAD
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md
+=======
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+>>>>>>> laraxot/dev
+=======
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
 ---
 
@@ -43,7 +55,19 @@ Indice operativo del wiki Xot (core framework).
 - [composer-root-skeleton-modular.md](./concepts/composer-root-skeleton-modular.md) — root Composer minimo, merge solo `Modules/*/composer.json`
 - [pest-global-class-imports.md](./rules/pest-global-class-imports.md) — nei test senza namespace rimuovere `use ReflectionClass;` e altre import globali inutili
 - [second-brain-local-discipline.md](./concepts/second-brain-local-discipline.md)
+<<<<<<< HEAD
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [hackernoon-ai-coding-tips-<nome progetto>-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md) (root)
+=======
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
+>>>>>>> laraxot/dev
+=======
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) (root)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
 - [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
 - [laraxot-core](../../../../docs/wiki/concepts/laraxot-core.md): Core XotBase classes rules.
@@ -62,7 +86,19 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
+<<<<<<< HEAD
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto <nome progetto> | 2026-06-13 |
+=======
+| [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+>>>>>>> laraxot/dev
+=======
+| [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
@@ -82,14 +118,38 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Best Practices
 
 - Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
+<<<<<<< HEAD
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/<repo progetto>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
+=======
+- Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
 - PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
 - Test PHPStan remediation: Pest resta Pest; bridge/helper condivisi solo quando riducono duplicazione cross-modulo.
 
 ## Bad Practices
 
+<<<<<<< HEAD
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/<repo progetto>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+=======
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
+=======
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
 - NON dichiarare `$view` statica in XotBaseField - si calcola via `GetViewByClassAction`
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: namespace-organization
 description: "namespace-organization"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Filament](../Xot/docs/filament/filament_best_practices.md)
 - [XotBasePage](../Xot/docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](../Xot/docs/filament/filament_inheritance_guidelines.md)

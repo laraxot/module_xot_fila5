@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xotbaivot-analysis
 description: " 🎯 Executive Summary"
@@ -5,6 +6,8 @@ metadata:
   type: architecture
 ---
 
+=======
+>>>>>>> laraxot/dev
 # XotBasePivot - Analisi Architettuale Completa
 
 ## 🎯 Executive Summary
@@ -39,7 +42,19 @@ metadata:
 ├── User/Models/BaseMorphPivot.php         ← DUPLICATO
 ├── Blog/Models/BasePivot.php              ← DUPLICATO
 ├── Blog/Models/BaseMorphPivot.php         ← DUPLICATO
+<<<<<<< HEAD
 ├── Fixcity/Models/BasePivot.php           ← DUPLICATO
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+├── <nome progetto>/Models/BasePivot.php           ← DUPLICATO
+=======
+├── Fixcity/Models/BasePivot.php           ← DUPLICATO
+>>>>>>> laraxot/dev
+=======
+├── Fixcity/Models/BasePivot.php           ← DUPLICATO
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ├── Geo/Models/BasePivot.php               ← DUPLICATO
 ├── Geo/Models/BaseMorphPivot.php          ← DUPLICATO
 ├── Notify/Models/BasePivot.php            ← DUPLICATO
@@ -91,7 +106,19 @@ use Updater;  // Presente in TUTTI
 
 ```php
 // ❌ VARIA PER MODULO
+<<<<<<< HEAD
 protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+protected $connection = 'user';    // o 'blog', '<nome progetto>', 'geo', ...
+=======
+protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
+>>>>>>> laraxot/dev
+=======
+protected $connection = 'user';    // o 'blog', 'fixcity', 'geo', ...
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ---

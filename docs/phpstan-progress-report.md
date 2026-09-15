@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-progress-report
 description: " Current Status"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Error Resolution - Progress Report
 
 ## Current Status

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme-new
 description: "Last Update: 2025-12-05"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Core Foundation
 
 **Last Update**: 2025-12-05
@@ -66,7 +69,19 @@ The **Xot Module** is the foundational core of the Laraxot PTVX ecosystem. It pr
 │  • Shared Patterns & Traits              │
 │  • Common Services & Utilities           │
 ├─────────────────────────────────────────┤
+<<<<<<< HEAD
 │  Laravel 12 │ Filament 4 │ Livewire 3   │  ← Framework Layer
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+│  Laravel 13 │ Filament 5 │ Livewire 3   │  ← Framework Layer
+=======
+│  Laravel 12 │ Filament 4 │ Livewire 3   │  ← Framework Layer
+>>>>>>> laraxot/dev
+=======
+│  Laravel 12 │ Filament 4 │ Livewire 3   │  ← Framework Layer
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 └─────────────────────────────────────────┘
 ```
 
@@ -322,8 +337,23 @@ class YourClass
 ### Prerequisites
 - PHP 8.3 or higher
 - Composer
+<<<<<<< HEAD
 - Laravel 12.x
 - Filament 4.x installed
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Laravel 13.x
+- Filament 5.x installed
+=======
+- Laravel 12.x
+- Filament 4.x installed
+>>>>>>> laraxot/dev
+=======
+- Laravel 12.x
+- Filament 4.x installed
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Installation
 
@@ -644,7 +674,19 @@ Located in `bashscripts/`:
 - [PHPStan Patterns](./phpstan-pattern-soluzioni.md) - Common PHPStan solutions
 
 ### Migration & Upgrade
+<<<<<<< HEAD
 - [Filament 4 Migration](./filament-4-migration-guide.md) - Upgrading to Filament 4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament 5 Migration](./Filament-5-migration-guide.md) - Upgrading to Filament 5
+=======
+- [Filament 4 Migration](./filament-4-migration-guide.md) - Upgrading to Filament 4
+>>>>>>> laraxot/dev
+=======
+- [Filament 4 Migration](./filament-4-migration-guide.md) - Upgrading to Filament 4
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Migration Rules](./migration-update-rules.md) - Migration best practices
 - [Breaking Changes](./breaking-changes.md) - Version upgrade notes
 
@@ -659,8 +701,23 @@ Located in `bashscripts/`:
 ## 🔄 Recent Updates
 
 ### v3.0.0 - 2025-12-05
+<<<<<<< HEAD
 - **Added**: Laravel 12 support
 - **Added**: Filament 4 support
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Added**: Laravel 13 support
+- **Added**: Filament 5 support
+=======
+- **Added**: Laravel 12 support
+- **Added**: Filament 4 support
+>>>>>>> laraxot/dev
+=======
+- **Added**: Laravel 12 support
+- **Added**: Filament 4 support
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Added**: PHP 8.3 support
 - **Changed**: PHPStan Level 10 compliance achieved
 - **Changed**: Improved XotData caching mechanism
@@ -707,8 +764,23 @@ See [ROADMAP.md](roadmap.md) for details.
 - [Project README](../../../README.md) - Main project documentation
 
 ### External Resources
+<<<<<<< HEAD
 - [Laravel 12 Documentation](https://laravel.com/docs/12.x)
 - [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Laravel 13 Documentation](https://laravel.com/docs/12.x)
+- [Filament 5 Documentation](https://filamentphp.com/docs/4.x)
+=======
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+- [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
+=======
+- [Laravel 12 Documentation](https://laravel.com/docs/12.x)
+- [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Livewire 3 Documentation](https://livewire.laravel.com/docs)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 - [Pest Documentation](https://pestphp.com/docs)
@@ -737,6 +809,18 @@ Part of the Laraxot PTVX ecosystem.
 
 **Module**: Xot (Core Foundation)
 **Version**: 3.0.0
+<<<<<<< HEAD
 **Framework**: Laravel 12 + Filament 4 + PHP 8.3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Framework**: Laravel 13 + Filament 5 + PHP 8.3
+=======
+**Framework**: Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
+=======
+**Framework**: Laravel 12 + Filament 4 + PHP 8.3
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 85%+ ✅

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: macro
 description: "<!-- Contenuto migrato da docs/macro.txt -->"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # _macro
 
 <!-- Contenuto migrato da _docs/_macro.txt -->

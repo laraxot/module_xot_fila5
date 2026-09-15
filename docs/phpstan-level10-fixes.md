@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-level10-fixes
 description: "Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: helpers
 description: "Purpose: Funzioni helper globali per utilità comuni nel framework Laraxot"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Helper Functions - Xot Module
 
 **Purpose**: Funzioni helper globali per utilità comuni nel framework Laraxot

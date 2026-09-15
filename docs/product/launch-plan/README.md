@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: readme
 description: " Launch Overview"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Product Launch Plan
 
 ## Launch Overview

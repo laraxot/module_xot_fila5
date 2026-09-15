@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: scraping
 description: "scraping"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 
 Using Laravel and Symfony/panther To Scrape Javascript Websites
 https://webmobtuts.com/backend-development/using-laravel-and-symfony-panther-to-scrape-javascript-websites/

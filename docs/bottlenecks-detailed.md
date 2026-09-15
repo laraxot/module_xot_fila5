@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: bottlenecks-detailed
 description: " Panoramica"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Xot
 
 ## Panoramica

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: conflitti-merge-risolti-1
 description: " Risoluzione Conflitti di Merge in <nome progetto>"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti di Merge
 
 # Risoluzione Conflitti di Merge in <nome progetto>

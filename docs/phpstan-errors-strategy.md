@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-errors-strategy
 description: "Data: 11 Novembre 2025"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🎯 **Strategia Correzione 406 Errori PHPStan Level 10**
 
 **Data**: 11 Novembre 2025

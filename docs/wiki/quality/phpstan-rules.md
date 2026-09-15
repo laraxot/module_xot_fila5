@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-rules
 description: "Principi: DRY + KISS + SOLID + Robust"
@@ -9,6 +10,20 @@ metadata:
 
 **Principi**: DRY + KISS + SOLID + Robust
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
+=======
+# PHPStan Code Quality Guide
+
+**Principi**: DRY + KISS + SOLID + Robust
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot
+=======
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
+>>>>>>> laraxot/dev
+=======
+**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Obiettivo**: 0 errori PHPStan Level 10 + Complexity < 10 + Quality > 90%
 
 ---

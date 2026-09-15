@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: tasks-index
 description: "Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella tasks/."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Indice task - Modulo Xot
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.

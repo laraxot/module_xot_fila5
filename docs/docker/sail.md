@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: sail
 description: "sail"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 Bind for 0.0.0.0:3306 failed: port is already allocated
 ------------------
 Error starting userland proxy: listen tcp4 0.0.0.0:80: bind: address already in use

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: translations
 description: " Traduzioni"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ### Versione HEAD
 
 # Traduzioni

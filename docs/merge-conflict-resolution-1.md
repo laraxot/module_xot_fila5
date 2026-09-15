@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: merge-conflict-resolution-1
 description: " 🔥 Problema Iniziale"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale

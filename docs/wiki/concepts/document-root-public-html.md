@@ -15,7 +15,19 @@ related:
 ## Layout repo
 
 ```
+<<<<<<< HEAD
 base_ptvx_fila5/
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<repo progetto>/
+=======
+base_ptvx_fila5/
+>>>>>>> laraxot/dev
+=======
+base_ptvx_fila5/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ├── public_html/          ← DocumentRoot (browser, artisan serve via server.php)
 │   ├── index.php         → bootstrap da ../laravel/
 │   ├── css/, js/, assets/, themes/, modules/

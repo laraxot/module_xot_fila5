@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: pdf-to-txt
 description: "pdf-to-txt"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 

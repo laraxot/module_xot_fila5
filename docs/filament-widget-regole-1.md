@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-widget-regole-1
 description: " Path delle view dei Widget Filament"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole Widget Filament (XotBase)
 
 ## Path delle view dei Widget Filament

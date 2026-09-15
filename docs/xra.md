@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: xra
 description: " Collegamenti tra versioni di xra.md"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 ~~~ php
 <?php
 

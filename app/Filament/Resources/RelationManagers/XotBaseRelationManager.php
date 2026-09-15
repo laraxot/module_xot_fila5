@@ -43,7 +43,15 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
+<<<<<<< HEAD
         return static::getResourceClass()::trans($key, $exceptionIfNotExist, $params);
+=======
+<<<<<<< HEAD
+        return static::$resource::trans($key, $exceptionIfNotExist, $params);
+=======
+        return static::getResourceClass()::trans($key, $exceptionIfNotExist, $params);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 
     protected static string $relationship = '';
@@ -58,6 +66,12 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
+=======
+>>>>>>> laraxot/dev
         return static::getResourceClass();
     }
 
@@ -75,6 +89,10 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     protected static function getResourceClass(): string
     {
         if (isset(static::$resource) && '' !== static::$resource) {
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             return static::$resource;
         }
 
@@ -93,7 +111,15 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(class_exists($resource), 'Resource class does not exist: '.$resource);
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
+<<<<<<< HEAD
         /** @var class-string<XotBaseResource> $resource */
+=======
+<<<<<<< HEAD
+        /* @var class-string<XotBaseResource> $resource */
+=======
+        /** @var class-string<XotBaseResource> $resource */
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         static::$resource = $resource;
 
         return static::$resource;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: filament-table-columns
 description: " Descrizione"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regola Globale: Metodo getTableColumns per Filament Table
 
 ## Descrizione

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-progress-report
 description: "Session Date: 2025-10-22"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 # PHPStan Level 10 Enforcement - Progress Report
 
 **Session Date**: 2025-10-22

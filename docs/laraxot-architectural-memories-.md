@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: laraxot-architectural-memories
 description: "Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase."
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laraxot Architectural Memories - February 2026
 
 Critical architectural discoveries and best practices compiled during the Footer Refinement and Theme Integration phase.

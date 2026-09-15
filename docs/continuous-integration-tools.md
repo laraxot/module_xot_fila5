@@ -1,12 +1,32 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 module: theme
 topic: continuous-integration-tools
 canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 title: 'Continuous integration tools'
 module: Xot
 type: reference
@@ -93,4 +113,13 @@ https://grafikart.fr/tutoriels/grumphp-836
 ----------------------------------------------------------------------
 
 https://jakzal.github.io/toolbox/
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

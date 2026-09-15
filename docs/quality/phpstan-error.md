@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: phpstan-error
 description: "phpstan-error"
@@ -5,6 +6,8 @@ metadata:
   type: quality
 ---
 
+=======
+>>>>>>> laraxot/dev
 modulo Geo
 
   Line   \Actions\GetLatitudeLongitudeAction.php

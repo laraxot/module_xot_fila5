@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 name: technical-debt
 description: " 📋 Table of Contents"
@@ -5,6 +6,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Xot Module - Technical Debt
 
 ## 📋 Table of Contents
