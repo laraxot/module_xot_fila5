@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-field-philosophy
-description: " The Rule of Lineage"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseField Philosophy
 
 ## The Rule of Lineage

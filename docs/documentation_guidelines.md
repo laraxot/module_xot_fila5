@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation-guidelines
-description: "Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Linee Guida per la Documentazione in Laraxot
 

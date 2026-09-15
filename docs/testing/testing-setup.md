@@ -1,45 +1,12 @@
-<<<<<<< HEAD
----
-name: testing-setup
-description: "This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture."
-metadata:
-  type: testing
----
-
 # Pest Testing Setup for Laraxot Modular Architecture
 
 This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.
-=======
-# Pest Testing Setup for Laraxot Modular Architecture
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 13 architecture.
-=======
-This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.
->>>>>>> laraxot/dev
-=======
-This document describes how to configure and run tests using Pest PHP in the Laraxot modular Laravel 12 architecture.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Prerequisites
 
 - PHP 8.3+
 - Pest PHP 3.x
-<<<<<<< HEAD
 - Laravel 12
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel 13
-=======
-- Laravel 12
->>>>>>> laraxot/dev
-=======
-- Laravel 12
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - MySQL (same database type as production)
 
 ## Quick Start
@@ -302,19 +269,7 @@ trait CreatesApplication
 
 ## References
 
-<<<<<<< HEAD
 - [Laravel 12 Testing](https://laravel.com/docs/12.x/testing)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Laravel 13 Testing](https://laravel.com/docs/12.x/testing)
-=======
-- [Laravel 12 Testing](https://laravel.com/docs/12.x/testing)
->>>>>>> laraxot/dev
-=======
-- [Laravel 12 Testing](https://laravel.com/docs/12.x/testing)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Pest PHP Documentation](https://pestphp.com/docs)
 - [Laravel Modules Testing](https://laravelmodules.com/docs/12/advanced/tests)
 - [Composer Merge Plugin](https://github.com/wikimedia/composer-merge-plugin)

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: file-naming-rules
-description: " 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive

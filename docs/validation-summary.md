@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: validation-summary
-description: " 🎯 STATO ATTUALE"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ✅ BMAD COMPLETATO - STATEMENT DI VERIFICA
 
 ## 🎯 STATO ATTUALE
@@ -35,19 +25,7 @@ cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Xot --
 `⚠️  Result is incomplete because of severe errors. ⚠️` (solo test fixtures)
 
 ### 📚 Second Brain
-<<<<<<< HEAD
 - **Documentazione**: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Documentazione**: `/var/www/_bases/<repo progetto>/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
-=======
-- **Documentazione**: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
->>>>>>> laraxot/dev
-=======
-- **Documentazione**: `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Xot/docs/fix-phpstan-errors.md`  
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Regole chiave**:  
   1. `php -l file.php` → `grep` → `phpstan`  
   2. Trait generici → `@phpstan-use RelationX<Model>` in PHPDoc  

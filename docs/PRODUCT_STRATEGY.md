@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: product-strategy
-description: "Module: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - Product Strategy
 
 **Module:** Xot  

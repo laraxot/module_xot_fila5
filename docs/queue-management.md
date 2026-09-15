@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: queue-management
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gestione Code
 
 ## Configurazione Base

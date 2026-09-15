@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-wizard-widget-architecture
-description: "> ⚠️ Aggiornamento 2026-05-22 — contesto HasWizard + getWizardComponent() aggiornato in [filament-wizard-refactoring.md](../filament-wizard-"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseWizardWidget — Architettura, bellezza e bug del primo step sempre visibile
 
 > **⚠️ Aggiornamento 2026-05-22** — contesto HasWizard + `getWizardComponent()` aggiornato in [`filament-wizard-refactoring.md`](../filament-wizard-refactoring.md). **`normalizeWizardFormState()` non esiste più sulla base**: il submit dominio usa **`$this->form->getState()`**; eventuale trait **`DelegatesFilamentWizardSchemaMethods`** solo dove serve Blade.
@@ -44,19 +34,7 @@ XotBaseWizardWidget         (abstract)
    - getSubmitFormLivewireMethodName(): 'save'
         |
         v
-<<<<<<< HEAD
 CreateTicketWizardWidget    (concrete, Fixcity)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-CreateTicketWizardWidget    (concrete, <nome progetto>)
-=======
-CreateTicketWizardWidget    (concrete, Fixcity)
->>>>>>> laraxot/dev
-=======
-CreateTicketWizardWidget    (concrete, Fixcity)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
    - getSteps(): array      [privacy, data, summary]
    - mount(): $this->wizardStartStep = 1;   ← dynamic property
 ```
@@ -357,31 +335,11 @@ Vantaggi:
 ## Cross-reference
 
 - `Modules/Xot/docs/architettura.md` — vista d'insieme su Xot widgets.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `Modules/<nome progetto>/docs/wiki/concepts/wizard-step-index-and-map-integration-rule.md`
-  — convenzioni sul tracking dello step lato Livewire.
-- `Modules/<nome progetto>/docs/wiki/concepts/wizard-zen-philosophy.md` — pattern
-  consigliati per i wizard del dominio <nome progetto>.
-- `Modules/<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php` —
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `Modules/Fixcity/docs/wiki/concepts/wizard-step-index-and-map-integration-rule.md`
   — convenzioni sul tracking dello step lato Livewire.
 - `Modules/Fixcity/docs/wiki/concepts/wizard-zen-philosophy.md` — pattern
   consigliati per i wizard del dominio Fixcity.
 - `Modules/Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php` —
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   consumer del widget base.
 
 ---

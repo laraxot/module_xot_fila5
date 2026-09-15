@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: trait-method-signature-rules
-description: " 🚨 Critical Rule: Static vs Non-Static Methods"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Trait Method Signature Rules
 
 ## 🚨 Critical Rule: Static vs Non-Static Methods

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fixes-progress
-description: " Sessione di Correzione - Ottobre 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Fixes Progress - Modulo Xot
 
 ## Sessione di Correzione - Ottobre 2025

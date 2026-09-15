@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: service-provider-best-practices
-description: " Decisione Architetturale (2025-05-13)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Best Practices nei Service Provider
 
 ## Decisione Architetturale (2025-05-13)

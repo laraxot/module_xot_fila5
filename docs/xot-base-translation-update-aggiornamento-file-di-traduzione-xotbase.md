@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-base-translation-update-aggiornamento-file-di-traduzione-xotbase
-description: " Data Aggiornamento"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Aggiornamento File di Traduzione xot_base.php
 
 ## Data Aggiornamento

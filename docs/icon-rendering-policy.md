@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: icon-rendering-policy
-description: " Regola"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Icon Rendering Policy
 
 ## Regola

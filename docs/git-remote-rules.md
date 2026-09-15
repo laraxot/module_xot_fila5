@@ -1,44 +1,13 @@
-<<<<<<< HEAD
----
-name: git-remote-rules
-description: " 🚨 CRITICAL MANDATE: Root Remote Isolation"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Git Remote Architecture & Root Cleanliness Rules
 
 ## 🚨 CRITICAL MANDATE: Root Remote Isolation
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Il repository monorepo radice (`/var/www/_bases/<repo progetto>/`) deve contenere ESCLUSIVAMENTE il remote `origin`.**
-
-```ini
-# ✅ CORRETTO in /var/www/_bases/<repo progetto>/.git/config
-[remote "origin"]
-    url = git@github.com:provtv/<repo progetto>.git
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Il repository monorepo radice (`/var/www/_bases/base_ptvx_fila5/`) deve contenere ESCLUSIVAMENTE il remote `origin`.**
 
 ```ini
 # ✅ CORRETTO in /var/www/_bases/base_ptvx_fila5/.git/config
 [remote "origin"]
     url = git@github.com:provtv/base_ptv_fila5.git
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     fetch = +refs/heads/*:refs/remotes/origin/*
 
 # ❌ ERRORE GRAVISSIMO - Nessun remote di singoli moduli deve esistere nel root:

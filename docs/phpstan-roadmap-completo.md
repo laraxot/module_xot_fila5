@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-roadmap-completo
-description: " Stato Attuale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Roadmap Completa per tutti i Moduli
 
 ## Stato Attuale

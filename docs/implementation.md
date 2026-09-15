@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: implementation
-description: " Struttura del Codice"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Implementazione Xot
 
 ## Struttura del Codice

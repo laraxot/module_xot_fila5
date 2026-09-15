@@ -67,13 +67,6 @@ class MyResource extends XotBaseResource
     public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wiZwYD
 =======
     public static function getFormSchema(): array
@@ -92,7 +85,6 @@ class MyResource extends XotBaseResource
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MNtX7z
->>>>>>> laraxot/dev
     {
         return [
             // Schema del form
@@ -129,13 +121,6 @@ class MyResource extends XotBaseResource
    - ✅ `public static function getFormSchema(): array`
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-   - ✅ `public static function getFormSchema(): array`
-=======
->>>>>>> laraxot/dev
-   - ✅ `public function getFormSchema(): array`
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wiZwYD
 =======
    - ✅ `public static function getFormSchema(): array`
@@ -154,7 +139,6 @@ class MyResource extends XotBaseResource
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MNtX7z
->>>>>>> laraxot/dev
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -270,13 +254,6 @@ class ListRecords extends XotBaseListRecords
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wiZwYD
 =======
 public static function getFormSchema(): array
@@ -295,7 +272,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MNtX7z
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -628,13 +604,6 @@ public function getTableColumns(): array
 public static function getFormSchema(): array
 =======
 <<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
->>>>>>> laraxot/dev
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_wiZwYD
 =======
 public static function getFormSchema(): array
@@ -653,7 +622,6 @@ public function getFormSchema(): array
 =======
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_MNtX7z
->>>>>>> laraxot/dev
 {
     return [
         'nome' => TextInput::make('nome'),

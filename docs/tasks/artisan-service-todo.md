@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: artisan-service-todo
-description: "Modulo: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Task: ArtisanService TODO
 
 **Modulo**: Xot  

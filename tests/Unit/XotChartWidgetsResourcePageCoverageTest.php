@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Schema;
+use Mockery;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage as ResourceXotBasePage;
 use Modules\Xot\Filament\Widgets\ModelTrendChartWidget;
 use Modules\Xot\Filament\Widgets\StatesChartWidget;
@@ -16,13 +17,15 @@ use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\Fixtures\Stubs\XotResPageStub;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionMethod;
 
 use function Safe\preg_match;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-    \Mockery::close();
+    Mockery::close();
 });
 
 describe('Xot chart widgets and resource page', function (): void {
@@ -53,11 +56,11 @@ describe('Xot chart widgets and resource page', function (): void {
             ['key' => 'c', 'state' => 'active', 'value' => '3'],
         ]);
 
-        $w = (new \ReflectionClass(StatesChartWidget::class))->newInstanceWithoutConstructor();
+        $w = (new ReflectionClass(StatesChartWidget::class))->newInstanceWithoutConstructor();
         $w->model = CacheModel::class;
         $w->stateClass = 'dummy';
 
-        $getData = new \ReflectionMethod(StatesChartWidget::class, 'getData');
+        $getData = new ReflectionMethod(StatesChartWidget::class, 'getData');
         $getData->setAccessible(true);
         $data = $getData->invoke($w);
         if (! is_array($data)) {
@@ -76,21 +79,21 @@ describe('Xot chart widgets and resource page', function (): void {
         Assert::assertArrayHasKey('datasets', $data2);
 
         try {
-            Assert::assertTrue(is_string($w->getHeading()) || null === $w->getHeading());
+            Assert::assertTrue(is_string($w->getHeading()) || $w->getHeading() === null);
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
         }
 
-        $getType = new \ReflectionMethod(StatesChartWidget::class, 'getType');
+        $getType = new ReflectionMethod(StatesChartWidget::class, 'getType');
         $getType->setAccessible(true);
         Assert::assertSame('bar', $getType->invoke($w));
 
         // ModelTrendChartWidget
         if (class_exists(ModelTrendChartWidget::class)) {
-            $t = (new \ReflectionClass(ModelTrendChartWidget::class))->newInstanceWithoutConstructor();
-            $ref = new \ReflectionClass(ModelTrendChartWidget::class);
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
-                if (ModelTrendChartWidget::class !== $method->getDeclaringClass()->getName()) {
+            $t = (new ReflectionClass(ModelTrendChartWidget::class))->newInstanceWithoutConstructor();
+            $ref = new ReflectionClass(ModelTrendChartWidget::class);
+            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+                if ($method->getDeclaringClass()->getName() !== ModelTrendChartWidget::class) {
                     continue;
                 }
                 if (preg_match('/mount|render|boot|__/', $method->getName())) {
@@ -116,7 +119,7 @@ describe('Xot chart widgets and resource page', function (): void {
     test('Resource XotBasePage getView getViewTest navigation', function (): void {
         Http::fake();
         Process::fake();
-        $page = new XotResPageStub();
+        $page = new XotResPageStub;
         Assert::assertNotEmpty($page->getView());
         try {
             $page->getViewTest();
@@ -129,9 +132,9 @@ describe('Xot chart widgets and resource page', function (): void {
             Assert::assertNotEmpty($e->getMessage());
         }
 
-        $ref = new \ReflectionClass(ResourceXotBasePage::class);
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
-            if (ResourceXotBasePage::class !== $method->getDeclaringClass()->getName()) {
+        $ref = new ReflectionClass(ResourceXotBasePage::class);
+        foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
+            if ($method->getDeclaringClass()->getName() !== ResourceXotBasePage::class) {
                 continue;
             }
             if (preg_match('/mount|render|boot|__/', $method->getName())) {

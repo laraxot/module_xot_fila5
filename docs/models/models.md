@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: models
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Modelli
 
 ## Configurazione Base

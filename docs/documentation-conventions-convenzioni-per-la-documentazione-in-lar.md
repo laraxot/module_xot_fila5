@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation-conventions-convenzioni-per-la-documentazione-in-lar
-description: " Convenzioni di naming"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni per la documentazione in Laraxot PTVX
 
 ## Convenzioni di naming

@@ -2,19 +2,7 @@
 
 **Ultimo aggiornamento**: 2025-01-10
 **Principi**: DRY + KISS + SOLID + Robust
-<<<<<<< HEAD
 **Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Stack**: Laravel 13 + Filament 5 + PHP 8.3 + Laraxot
-=======
-**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
->>>>>>> laraxot/dev
-=======
-**Stack**: Laravel 12 + Filament 4 + PHP 8.3 + Laraxot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -126,38 +114,14 @@ Per ogni modulo/tema:
 Workflow per la sincronizzazione dei subtree e repository remoti.
 
 **Gestione Repository Privati (Bashscripts):**
-<<<<<<< HEAD
 Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila5`.
-=======
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
->>>>>>> laraxot/dev
-=======
-Per semplificare l'autenticazione, utilizziamo il fork/repository interno all'organizzazione `provtv/bashscripts_fila4`.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Questo ci permette di usare il `GITHUB_TOKEN` standard invece di dover gestire un PAT segreto (`BASHSCRIPTS_PAT`) per repository esterni.
 
 ```yaml
       - name: Checkout bashscripts
         uses: actions/checkout@v4
         with:
-<<<<<<< HEAD
           repository: provtv/bashscripts_fila4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-          repository: provtv/bashscripts_fila5
-=======
-          repository: provtv/bashscripts_fila4
->>>>>>> laraxot/dev
-=======
-          repository: provtv/bashscripts_fila4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
           token: ${{ secrets.GITHUB_TOKEN }} # Accessibile nativamente nell'organizzazione
           path: bashscripts
 ```

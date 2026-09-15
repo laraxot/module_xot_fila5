@@ -147,19 +147,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< HEAD
 #### Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### <nome progetto>
-=======
-#### Quaeris
->>>>>>> laraxot/dev
-=======
-#### Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
 **Modelli da correggere**:
@@ -216,19 +204,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< HEAD
 - ❌ Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ❌ <nome progetto>
-=======
-- ❌ Quaeris
->>>>>>> laraxot/dev
-=======
-- ❌ Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Totale**: 4/13 moduli (31%)
 
@@ -244,23 +220,8 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< HEAD
 | Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| <nome progetto> | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> laraxot/dev
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
 
 **Totale**: 11 file da correggere
@@ -276,19 +237,7 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< HEAD
 2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **<nome progetto>** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/dev
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 🟡 Media Priorità
 3. **Chart** - BaseModel
@@ -323,19 +272,7 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< HEAD
 3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. ⏳ **<nome progetto>** - Da correggere (BaseModel + ContactSimple)
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/dev
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
 6. ⏳ **Job** - Da correggere (TaskComment)
@@ -357,19 +294,7 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< HEAD
 - `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `<nome progetto>/BaseModel.php` - Implementa `HasMedia`
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/dev
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
 `XotBaseModel` è compatibile con `HasMedia` di Spatie.
@@ -540,19 +465,7 @@ class TemporaryUpload extends BaseModel implements HasMedia  // ✅
 
 ---
 
-<<<<<<< HEAD
 #### Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### <nome progetto>
-=======
-#### Quaeris
->>>>>>> laraxot/dev
-=======
-#### Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **BaseModel**: ❌ Estende direttamente `Model` invece di `XotBaseModel`
 
 **Modelli da correggere**:
@@ -609,19 +522,7 @@ class TestSushiModel extends BaseModel  // ✅
 - ❌ Cms
 - ❌ Chart
 - ❌ Geo
-<<<<<<< HEAD
 - ❌ Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ❌ <nome progetto>
-=======
-- ❌ Quaeris
->>>>>>> laraxot/dev
-=======
-- ❌ Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Totale**: 4/13 moduli (31%)
 
@@ -637,23 +538,8 @@ class TestSushiModel extends BaseModel  // ✅
 | Job | `TaskComment.php` | Estende `Model` invece di `BaseModel` |
 | Lang | `BaseModelLang.php` | Estende `Model` invece di `BaseModel` |
 | Media | `TemporaryUpload.php` | Estende `Model` invece di `BaseModel` |
-<<<<<<< HEAD
 | Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
 | Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| <nome progetto> | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> laraxot/dev
-=======
-| Quaeris | `BaseModel.php` | Estende `Model` invece di `XotBaseModel` |
-| Quaeris | `ContactSimple.php` | Estende `Model` invece di `BaseModel` |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Tenant | `TestSushiModel.php` | Estende `Model` invece di `BaseModel` |
 
 **Totale**: 11 file da correggere
@@ -669,19 +555,7 @@ class TestSushiModel extends BaseModel  // ✅
 
 ### 🔴 Alta Priorità
 1. **Cms** - BaseModel e Conf (modulo core per contenuti)
-<<<<<<< HEAD
 2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **<nome progetto>** - BaseModel e ContactSimple (modulo specifico del progetto)
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/dev
-=======
-2. **Quaeris** - BaseModel e ContactSimple (modulo specifico del progetto)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 🟡 Media Priorità
 3. **Chart** - BaseModel
@@ -716,19 +590,7 @@ done
 
 1. ✅ **User** - Completato (15 Ottobre 2025)
 2. ⏳ **Cms** - Da correggere (BaseModel + Conf)
-<<<<<<< HEAD
 3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. ⏳ **<nome progetto>** - Da correggere (BaseModel + ContactSimple)
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/dev
-=======
-3. ⏳ **Quaeris** - Da correggere (BaseModel + ContactSimple)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 4. ⏳ **Chart** - Da correggere (BaseModel)
 5. ⏳ **Geo** - Da correggere (BaseModel + GeoNamesCap)
 6. ⏳ **Job** - Da correggere (TaskComment)
@@ -750,19 +612,7 @@ done
 Questi modelli possono comunque estendere `BaseModel` senza problemi.
 
 #### Modelli con HasMedia
-<<<<<<< HEAD
 - `Quaeris/BaseModel.php` - Implementa `HasMedia`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `<nome progetto>/BaseModel.php` - Implementa `HasMedia`
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/dev
-=======
-- `Quaeris/BaseModel.php` - Implementa `HasMedia`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `Media/TemporaryUpload.php` - Implementa `HasMedia`
 
 `XotBaseModel` è compatibile con `HasMedia` di Spatie.

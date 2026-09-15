@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: min-two-positive-ratings-rule
-description: " Obiettivo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola business: almeno 2 valutazioni > 0 nelle pagine Compila
 
 ## Obiettivo

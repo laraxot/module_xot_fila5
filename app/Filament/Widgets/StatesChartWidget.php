@@ -34,7 +34,7 @@ class StatesChartWidget extends XotBaseChartWidget
         try {
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
-            $instance = new $modelClass();
+            $instance = new $modelClass;
 
             /** @var array<string, string> $colors */
             $colors = [

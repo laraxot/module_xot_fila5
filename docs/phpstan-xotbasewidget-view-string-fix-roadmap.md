@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-xotbasewidget-view-string-fix-roadmap
-description: "Data: 2025-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Fix Roadmap - XotBaseWidget View-String Error
 
 **Data**: 2025-01-22

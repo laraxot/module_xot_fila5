@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: exportxlsbycollection
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Risoluzione Conflitto in ExportXlsByCollection
 

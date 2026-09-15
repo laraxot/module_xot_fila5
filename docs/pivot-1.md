@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: pivot-1
-description: "<!-- Contenuto migrato da docs/pivot.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _pivot
 
 <!-- Contenuto migrato da _docs/_pivot.txt -->

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: blade-component-registration
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Registrazione Componenti Blade
 
 ## Regola Fondamentale

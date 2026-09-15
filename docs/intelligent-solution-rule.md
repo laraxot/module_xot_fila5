@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: intelligent-solution-rule
-description: "Data: 2025-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola Critica: Soluzione Intelligente e Professionale
 
 **Data**: 2025-01-22

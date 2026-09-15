@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dry-kiss-refactoring
-description: " Data: 15 Ottobre 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # DRY & KISS Refactoring - Modelli Base
 
 ## Data: 15 Ottobre 2025

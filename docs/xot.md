@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Modulo Xot
 
 ## Descrizione

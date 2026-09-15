@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: eloquent-models-critical-rules
-description: " DIVIETO ASSOLUTO: propertyexists() con Modelli Eloquent"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Eloquent Models - Regole Critiche per Laraxot PTVX
 
 ## DIVIETO ASSOLUTO: property_exists() con Modelli Eloquent

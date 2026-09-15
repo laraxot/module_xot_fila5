@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: " Classi Base"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Architettura Xot
 
 ## Classi Base

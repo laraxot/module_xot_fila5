@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: "> 'Il motore che muove l'universo healthcareapp.'"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module Roadmap
 
 > "Il motore che muove l'universo healthcare_app."
@@ -25,19 +15,7 @@ metadata:
 
 ## 🎯 Vision
 
-<<<<<<< HEAD
 Consolidate Xot as a **Zero-Config** framework for Laravel 12, where every new module automatically inherits:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Consolidate Xot as a **Zero-Config** framework for Laravel 13, where every new module automatically inherits:
-=======
-Consolidate Xot as a **Zero-Config** framework for Laravel 12, where every new module automatically inherits:
->>>>>>> laraxot/dev
-=======
-Consolidate Xot as a **Zero-Config** framework for Laravel 12, where every new module automatically inherits:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 - ✅ **Security** through base class patterns
 - ✅ **Internationalization** via translation traits
@@ -64,19 +42,7 @@ All achieved through **simple base class extension**.
 ### Recent Achievements
 
 - ✅ PHPStan Level 10: 100% compliant
-<<<<<<< HEAD
 - ✅ Laravel 12: Full compatibility
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ Laravel 13: Full compatibility
-=======
-- ✅ Laravel 12: Full compatibility
->>>>>>> laraxot/dev
-=======
-- ✅ Laravel 12: Full compatibility
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - ✅ Filament v5: Complete migration
 - ✅ Base Classes: 50+ classes implemented
 - ✅ Type Safety: 100% typed codebase

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: merge-conflict-resolution
-description: " 🔥 Problema Iniziale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Merge Conflicts Massivi - 2025-11-04
 
 ## 🔥 Problema Iniziale
@@ -91,16 +81,6 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
     - Marker di merge conflict GIT non risolti:
       ```
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      >>>>>>> 041533e (.)
-      >>>>>>> 00a34d0 (.)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
       =======
@@ -109,13 +89,6 @@ at Modules/Xot/app/Providers/RouteServiceProvider.php:155
       >>>>>>> 00a34d0 (.)
 =======
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
       ```
 
@@ -314,28 +287,10 @@ Questi possono essere corretti in un secondo momento se necessario.
 - [Code Quality Standards](./code-quality-standards.md)
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
-<<<<<<< HEAD
-- [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 =======
 - [File Locking Pattern](./file-locking-pattern.md) ← DA CREARE
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

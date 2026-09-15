@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: components-json-conflict
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitto in _components.json
 
 ## Panoramica

@@ -88,8 +88,7 @@ trait EnumIntegerTrait
     /**
      * Get enum case by integer value.
      *
-     * @param int $value Integer value to find
-     *
+     * @param  int  $value  Integer value to find
      * @return static|null Matching case or null
      */
     public static function fromInt(int $value): ?static
@@ -106,7 +105,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is greater than another.
      *
-     * @param int $value Value to compare against
+     * @param  int  $value  Value to compare against
      */
     public function isGreaterThan(int $value): bool
     {
@@ -116,7 +115,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value is less than another.
      *
-     * @param int $value Value to compare against
+     * @param  int  $value  Value to compare against
      */
     public function isLessThan(int $value): bool
     {
@@ -126,7 +125,7 @@ trait EnumIntegerTrait
     /**
      * Check if this enum value equals another.
      *
-     * @param int $value Value to compare against
+     * @param  int  $value  Value to compare against
      */
     public function equals(int $value): bool
     {

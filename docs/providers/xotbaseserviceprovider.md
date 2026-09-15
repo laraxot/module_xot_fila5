@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaseserviceprovider
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseServiceProvider
 
 ## Descrizione

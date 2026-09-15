@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laravel-modules-namespace-critical-rule
-description: "Data: 2025-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ⚠️ REGOLA CRITICA - Namespace Laravel Modules OBBLIGATORIA
 
 **Data**: 2025-01-22

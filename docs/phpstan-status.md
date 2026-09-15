@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-status
-description: " Current Status: ✅ PASSED"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Status - Xot Module
 
 ## Current Status: ✅ PASSED

@@ -1,14 +1,6 @@
 # 🔧 PHPMD Convenzioni Laraxot
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Scope**: Tutti i moduli <nome progetto> (Laraxot PTVX)  
-=======
 **Scope**: Tutti i moduli FixCity (Laraxot PTVX)  
->>>>>>> laraxot/dev
-=======
-**Scope**: Tutti i moduli FixCity (Laraxot PTVX)  
->>>>>>> laraxot/dev
 **Ultimo Aggiornamento**: 2026-06-19  
 **Stato**: ✅ Attivo
 

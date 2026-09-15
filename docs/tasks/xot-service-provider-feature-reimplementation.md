@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-service-provider-feature-reimplementation
-description: "Modulo: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Task: XotServiceProvider Feature Re-implementation
 
 **Modulo**: Xot  

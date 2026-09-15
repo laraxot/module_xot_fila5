@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-consolidated
-description: "Ultimo aggiornamento: [DATE]"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament - Guida Completa Consolidata
 
 **Ultimo aggiornamento**: [DATE]
@@ -58,27 +48,9 @@ class PatientResource extends XotBaseResource
      * @return array<string, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: gettablecolumns-string-keys
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola Critica: getTableColumns e getTableFilters — chiavi stringhe obbligatorie
 
 ## Regola Fondamentale

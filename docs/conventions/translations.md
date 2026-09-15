@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: translations
-description: " Struttura Base"
-metadata:
-  type: convention
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Traduzione
 
 ## Struttura Base

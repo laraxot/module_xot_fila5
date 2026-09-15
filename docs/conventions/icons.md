@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: icons
-description: " Struttura Directory"
-metadata:
-  type: convention
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni per le Icone SVG
 
 ## Struttura Directory

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: state-machine-1
-description: " Transizioni"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole Generali sulle State Machine
 
 ## Transizioni

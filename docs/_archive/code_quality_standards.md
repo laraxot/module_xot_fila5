@@ -69,15 +69,7 @@ Xot provides interfaces that define contracts:
 - Should be implementable by any module
 - Should follow Interface Segregation Principle
 
-<<<<<<< HEAD
 ## 🔧 Filament 4 Compliance
-=======
-<<<<<<< HEAD
-## 🔧 Filament 5 Compliance
-=======
-## 🔧 Filament 4 Compliance
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 1. Base Widget Class
 ```php
@@ -389,15 +381,7 @@ public function canAccess($user): bool
 }
 ```
 
-<<<<<<< HEAD
 ## 🔧 Laravel 12 Compliance
-=======
-<<<<<<< HEAD
-## 🔧 Laravel 13 Compliance
-=======
-## 🔧 Laravel 12 Compliance
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 1. Type Declarations
 Use proper type hints and return types:

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cast-actions
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Azioni di Cast Sicure - Sostituzione di property_exists
 
 ## Panoramica

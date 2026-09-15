@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: " Common Issues"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Troubleshooting Guide
 
 ## Common Issues

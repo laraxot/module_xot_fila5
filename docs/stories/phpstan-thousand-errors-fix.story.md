@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-thousand-errors-fix-story
-description: " Understand"
-metadata:
-  type: story
----
-
-=======
->>>>>>> laraxot/dev
 # BMAD Story — PHPStan Comprehensive Fix Campaign
 
 ## Understand

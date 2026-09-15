@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: container-loop-prevention
-description: " Root Cause Analysis (RCA)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Container Loop Prevention
 
 ## Root Cause Analysis (RCA)

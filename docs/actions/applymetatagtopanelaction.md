@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: applymetatagtopanelaction
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ApplyMetatagToPanelAction
 
 ## Descrizione

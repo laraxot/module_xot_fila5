@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: testing-infrastructure-pest
-description: "L'architettura di testing è progettata per garantire isolamento e performance in un ambiente multi-database MySQL."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Infrastruttura di Testing con Pest - Laraxot PTVX
 
 L'architettura di testing è progettata per garantire isolamento e performance in un ambiente multi-database MySQL.

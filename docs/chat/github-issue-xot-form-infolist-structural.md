@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: github-issue-xot-form-infolist-structural
-description: "Repo: laraxot/modulexotfila5"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Issue: Structural refactor XotBaseResourceForm / XotBaseResourceInfolist → HasXotForm / HasXotInfolist
 
 Repo: laraxot/module_xot_fila5

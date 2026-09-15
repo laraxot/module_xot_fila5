@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: autoload-configuration-standard
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Autoload Configuration Standard
 
 ## Overview

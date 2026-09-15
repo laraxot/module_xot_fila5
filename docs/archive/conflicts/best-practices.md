@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 # Best Practices per la Risoluzione dei Conflitti
 
 ## Principi Generali
@@ -81,15 +74,7 @@ namespace Modules\ModuleName\App\Models;
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Convenzioni Namespace](../namespace-conventions.md)
-=======
 - [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
->>>>>>> laraxot/dev
-=======
-- [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
->>>>>>> laraxot/dev
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)
 - [Risoluzione Conflitti Merge](../risoluzione_conflitti_merge.md)
@@ -121,12 +106,4 @@ namespace Modules\ModuleName\App\Models;
 3. **Testing**
    - Verificare le modifiche con PHPStan
    - Testare la compatibilità
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Validare le funzionalità
-=======
    - Validare le funzionalità 
->>>>>>> laraxot/dev
-=======
-   - Validare le funzionalità 
->>>>>>> laraxot/dev

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: php-syntax-errors-block-phpstan
-description: " Problem"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # PHP Syntax Errors Block PHPStan Analysis
 
 ## Problem
@@ -49,19 +39,7 @@ PHPStan bootstraps the Laravel application before analysis. If any discovered fi
 
 ## Detection Command
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5/laravel
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-cd /var/www/_bases/<repo progetto>/laravel
-=======
-cd /var/www/_bases/base_fixcity_fila5/laravel
->>>>>>> laraxot/dev
-=======
-cd /var/www/_bases/base_fixcity_fila5/laravel
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 find Modules -name "*.php" -exec php -l {} \; 2>&1 | grep -v "No syntax errors"
 ```
 

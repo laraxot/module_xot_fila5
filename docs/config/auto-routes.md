@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: auto-routes
-description: "auto-routes"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 /it/tests
 va a prendere il modello "home" e vede se esiste la relazione "tests" se esiste usa quelle, altrimenti
 va a prendere il "singolar" di tests e va nel solito file xra.php

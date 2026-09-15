@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: problemi-di-configurazione-variabili-dam
-description: " Problema: env() non funziona durante il bootstrap"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Problemi di Configurazione Variabili d'Ambiente - Modulo Xot
 
 ## Problema: env() non funziona durante il bootstrap

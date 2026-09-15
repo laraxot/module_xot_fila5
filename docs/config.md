@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: config
-description: "La configurazione del tema è gestita attraverso file di configurazione che definiscono le impostazioni del tema."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Configurazione in il progetto
 
 La configurazione del tema è gestita attraverso file di configurazione che definiscono le impostazioni del tema.

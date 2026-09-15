@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: route-service-provider
-description: "Questo documento descrive le linee guida per l'implementazione corretta del RouteServiceProvider nei moduli <nome progetto>."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # RouteServiceProvider nei Moduli <nome progetto>
 
 Questo documento descrive le linee guida per l'implementazione corretta del RouteServiceProvider nei moduli <nome progetto>.

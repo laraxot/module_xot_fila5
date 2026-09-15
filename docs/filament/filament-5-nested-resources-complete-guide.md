@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-5-nested-resources-complete-guide
-description: " 📋 Introduzione a Nested Resources"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024
 
 ## 📋 **Introduzione a Nested Resources**

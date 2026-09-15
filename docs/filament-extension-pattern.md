@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-extension-pattern
-description: " regola fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # pattern di estensione filament
 
 ## regola fondamentale

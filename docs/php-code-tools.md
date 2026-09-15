@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: php-code-tools
-description: "<!-- Contenuto migrato da docs/php-code-analysis-tools.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->

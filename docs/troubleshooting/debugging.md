@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: debugging
-description: " Strumenti di Debug"
-metadata:
-  type: troubleshooting
----
-
-=======
->>>>>>> laraxot/dev
 # Debugging Guide
 
 ## Strumenti di Debug

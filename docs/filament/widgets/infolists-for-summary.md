@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: infolists-for-summary
-description: "Status: Active"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Infolists per Riepilogo — Regola Corretta
 
 **Status**: Active  
@@ -51,29 +41,10 @@ TextEntry::make('review_title')
 
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Implementazione modulo <nome progetto> (riferimento)
-
-- Classe aggregatrice degli entry sul wizard ticket: [`TicketFormReviewInfolist`](../../../<nome progetto>/app/Filament/Resources/TicketResource/Schemas/TicketFormReviewInfolist.php)
-- Guida operativa modulo: [`filament-summary-infolist-guidance.md`](../../../<nome progetto>/docs/filament-summary-infolist-guidance.md)
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## Implementazione modulo Fixcity (riferimento)
 
 - Classe aggregatrice degli entry sul wizard ticket: [`TicketFormReviewInfolist`](../../../Fixcity/app/Filament/Resources/TicketResource/Schemas/TicketFormReviewInfolist.php)
 - Guida operativa modulo: [`filament-summary-infolist-guidance.md`](../../../Fixcity/docs/filament-summary-infolist-guidance.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -101,19 +72,7 @@ Text::make(new HtmlString('<p>Informativa privacy...</p>'))
 
 ```php
 // ❌ Sbagliato
-<<<<<<< HEAD
 SchemaView::make('fixcity::filament.widgets.partials.ticket-create-wizard-summary')
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-SchemaView::make('<nome progetto>::filament.widgets.partials.ticket-create-wizard-summary')
-=======
-SchemaView::make('fixcity::filament.widgets.partials.ticket-create-wizard-summary')
->>>>>>> laraxot/dev
-=======
-SchemaView::make('fixcity::filament.widgets.partials.ticket-create-wizard-summary')
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 Perche:

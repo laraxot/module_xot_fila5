@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: boost-skill-fix-summary
-description: "Date: 2026-03-02"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Boost Skill Fix Summary - Xot Module
 
 **Date**: 2026-03-02  
@@ -15,19 +5,7 @@ metadata:
 
 ## Issue Overview
 
-<<<<<<< HEAD
 The `boost:add-skill` command was failing across the entire FixCity platform due to missing Laravel framework dependencies.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-The `boost:add-skill` command was failing across the entire <nome progetto> platform due to missing Laravel framework dependencies.
-=======
-The `boost:add-skill` command was failing across the entire FixCity platform due to missing Laravel framework dependencies.
->>>>>>> laraxot/dev
-=======
-The `boost:add-skill` command was failing across the entire FixCity platform due to missing Laravel framework dependencies.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Root Cause
 

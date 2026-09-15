@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fixes-sumy-1
-description: "Questo documento riassume le soluzioni implementate per risolvere i problemi più comuni di PHPStan a livello 9 nel progetto <nome progetto>."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Riepilogo delle Soluzioni ai Problemi PHPStan Livello 9
 
 Questo documento riassume le soluzioni implementate per risolvere i problemi più comuni di PHPStan a livello 9 nel progetto <nome progetto>. Serve come guida di riferimento rapido per sviluppatori che affrontano errori simili.

@@ -34,7 +34,7 @@ $rrmdir = function (string $dir) use (&$rrmdir): void {
     $files = scandir($dir);
 
     foreach ($files as $file) {
-        if ('.' === $file || '..' === $file) {
+        if ($file === '.' || $file === '..') {
             continue;
         }
 
@@ -60,7 +60,7 @@ beforeEach(function () use (&$testDir): void {
 
 afterEach(function () use (&$testDir, $rrmdir): void {
     // Puliamo la directory di test
-    if ('' !== $testDir) {
+    if ($testDir !== '') {
         $rrmdir($testDir);
     }
 });

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbase-stats-overview-widget
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseStatsOverviewWidget
 
 ## Panoramica

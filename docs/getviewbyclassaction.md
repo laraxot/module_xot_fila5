@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: getviewbyclassaction
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Risoluzione Conflitto in GetViewByClassAction
 

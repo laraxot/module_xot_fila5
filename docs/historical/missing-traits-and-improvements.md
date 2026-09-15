@@ -693,23 +693,8 @@ class LimeJsonService
     // Rimuovere getInstance() e make() duplicati
 }
 
-<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// <nome progetto>Service.php
-class <nome progetto>Service
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> laraxot/dev
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     use SingletonTrait;
 
@@ -1182,23 +1167,8 @@ class LimeJsonService
     // Mantenere solo la logica specifica
 }
 
-<<<<<<< HEAD
 // QuaerisService.php
 class QuaerisService
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// <nome progetto>Service.php
-class <nome progetto>Service
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> laraxot/dev
-=======
-// QuaerisService.php
-class QuaerisService
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     use SingletonTrait;
 

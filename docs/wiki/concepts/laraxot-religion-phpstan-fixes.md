@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-religion-phpstan-fixes
-description: "> Ogni fix deve rispettare la filosofia, religione, politica e zen di Laraxot"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # 🧘 Laraxot Religion: Guida per Fix PHPStan
 
 > **Ogni fix deve rispettare la filosofia, religione, politica e zen di Laraxot**
@@ -247,19 +237,7 @@ Ogni fix deve includere:
 ## Related
 
 - [[../architecture/laraxot-philosophy]] - Filosofia completa
-<<<<<<< HEAD
 - [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [[../../../../../docs/ZEN_OF_<nome progetto>.md]] - Zen di <nome progetto>
-=======
-- [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
->>>>>>> laraxot/dev
-=======
-- [[../../../../../docs/ZEN_OF_FIXCITY.md]] - Zen di FixCity
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [[./phpstan-fix-patterns]] - Pattern specifici per fix
 
 ---

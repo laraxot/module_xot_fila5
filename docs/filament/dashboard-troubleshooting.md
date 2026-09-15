@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dashboard-troubleshooting
-description: " Livewire Attribute Error"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Dashboard Troubleshooting
 
 ## Livewire Attribute Error

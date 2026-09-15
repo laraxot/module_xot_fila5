@@ -17,7 +17,7 @@ final class XotSeedHelper
     /**
      * Seed a model once per application lifetime.
      *
-     * @param class-string $modelClass
+     * @param  class-string  $modelClass
      */
     public static function seedModelOnce(string $modelClass): void
     {
@@ -41,7 +41,7 @@ final class XotSeedHelper
 
         try {
             if (class_exists($seederClass)) {
-                $seeder = new $seederClass();
+                $seeder = new $seederClass;
 
                 if ($seeder instanceof Seeder && is_callable([$seeder, 'run'])) {
                     $seeder->{'run'}();

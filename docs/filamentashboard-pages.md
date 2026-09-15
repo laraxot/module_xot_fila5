@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filamentashboard-pages
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Pagine Dashboard Filament - Documentazione Root
 
 ## Panoramica

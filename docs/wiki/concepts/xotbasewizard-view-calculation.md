@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbasewizard-view-calculation
-description: " Overview"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseWizardWidget View Calculation
 
 ## Overview

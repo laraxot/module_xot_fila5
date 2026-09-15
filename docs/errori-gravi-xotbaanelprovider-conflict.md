@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: errori-gravi-xotbaanelprovider-conflict
-description: " ANALISI DEGLI ERRORI COMMESSI"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🚨 ERRORI GRAVI COMMESSI IN XotBasePanelProvider.php
 
 ## ANALISI DEGLI ERRORI COMMESSI

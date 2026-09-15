@@ -1,23 +1,5 @@
 <<<<<<< HEAD
----
-name: video-player
-description: "<!-- Contenuto migrato da docs/videoplayer.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'video_player'
 module: Xot
@@ -34,15 +16,6 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/video_player.txt -->
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 1. Plyr.io:
 Plyr is quite simple, customizable and highly accessible HTML5 video player that also extends its support to Video and YouTube media players. It is popular enough among professionals and beginners due to its lightweight design that allows smooth processing even for larger video files. Plyr can make things simple with collection of effective elements to get jobs done correctly.
@@ -135,25 +108,8 @@ https://www.codester.com/items/11695/vdrive-unlimited-video-convertor-tools-php
 ---------------------------------------------------------------------------------------------------------------
 <<<<<<< HEAD
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
-<<<<<<< HEAD
 =======
 https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
-=======
-<<<<<<< HEAD
-https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
-=======
-https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-https://developer.mozilla.org/en-US/project_docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------------------------------------------------------
 https://spark.adobe.com/it-IT/sp/design/video/urn:aaid:sc:EU:d543a756-deaf-4b23-b79b-940d30c06ade
@@ -165,23 +121,6 @@ https://shotstack.io/product/sdk/php/
 https://github.com/shotstack/php-demos  a pagamento ..
 <<<<<<< HEAD
 ---------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
 =======
 ---------------------------------------------------------------------------------------------------------------
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
----------------------------------------------------------------------------------------------------------------
-=======
-<<<<<<< HEAD
----------------------------------------------------------------------------------------------------------------
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
----------------------------------------------------------------------------------------------------------------
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

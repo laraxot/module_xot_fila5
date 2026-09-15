@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 2026-09-06-phpstan-fix
-description: " Understand"
-metadata:
-  type: story
----
-
-=======
->>>>>>> laraxot/dev
 # BMAD Story — PHPStan Fix Xot Module
 
 ## Understand

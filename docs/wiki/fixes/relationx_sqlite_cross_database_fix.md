@@ -20,19 +20,7 @@ Il trait `RelationX` aggiungeva automaticamente il prefisso del database al nome
 ## Soluzione Implementata
 
 ### File Modificato
-<<<<<<< HEAD
 `/var/www/_bases/base_survey_module_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-`/var/www/_bases/base_survey_module_fila5/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
-=======
-`/var/www/_bases/base_survey_module_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
->>>>>>> laraxot/dev
-=======
-`/var/www/_bases/base_survey_module_fila4_mono/laravel/Modules/Xot/app/Models/Traits/RelationX.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Correzione Applicata
 Righe 51-59, aggiunto controllo del driver database:

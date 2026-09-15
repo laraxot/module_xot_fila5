@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: business-logic-understanding
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🧠 Comprensione Business Logic dei Moduli TechPlanner
 
 ## Panoramica

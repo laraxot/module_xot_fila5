@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-class-extension-rules-violations-summary
-description: "Status: ✅ Completato"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Riepilogo Rimozione Violazioni XotBaseResource - 2026-01-21
 
 **Status**: ✅ Completato  
@@ -54,19 +44,7 @@ Rimuovere tutte le proprietà e metodi vietati dalle classi che estendono `XotBa
 4. OauthPersonalAccessClientResource - 5 violazioni rimosse
 5. PersonalAccessTokenResource - 1 violazione rimossa
 
-<<<<<<< HEAD
 ### Modulo Quaeris (5 Resources + 7 Pages)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Modulo <nome progetto> (5 Resources + 7 Pages)
-=======
-### Modulo Quaeris (5 Resources + 7 Pages)
->>>>>>> laraxot/dev
-=======
-### Modulo Quaeris (5 Resources + 7 Pages)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 6. ContactResource - 1 violazione rimossa
 7. CustomerResource - 2 violazioni rimosse
 8. QuestionChartResource - 1 violazione rimossa

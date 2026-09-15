@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-guidelines
-description: " Overview"
-metadata:
-  type: best-practice
----
-
-=======
->>>>>>> laraxot/dev
 # Migration Guidelines for Project Modules
 
 ## Overview

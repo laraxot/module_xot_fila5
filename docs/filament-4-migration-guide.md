@@ -1,31 +1,6 @@
-<<<<<<< HEAD
----
-name: filament-4-migration-guide
-description: " Cambiamenti Principali da Filament 3 a Filament 4"
-metadata:
-  type: documentation
----
-
 # Guida alla Migrazione Filament 4
 
 ## Cambiamenti Principali da Filament 3 a Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Guida alla Migrazione Filament 5
-
-## Cambiamenti Principali da Filament 3 a Filament 5
-=======
-# Guida alla Migrazione Filament 4
-
-## Cambiamenti Principali da Filament 3 a Filament 4
->>>>>>> laraxot/dev
-=======
-# Guida alla Migrazione Filament 4
-
-## Cambiamenti Principali da Filament 3 a Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 1. Schema → Form
 
@@ -42,19 +17,7 @@ public function form(Schema $schema): Schema
 }
 ```
 
-<<<<<<< HEAD
 **DOPO (Filament 4):**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**DOPO (Filament 5):**
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 use Filament\Forms\Form;
 
@@ -76,19 +39,7 @@ $schema->statePath('data')
 $schema->model($model)
 ```
 
-<<<<<<< HEAD
 **DOPO (Filament 4):**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**DOPO (Filament 5):**
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 $form->schema([...])
 $form->statePath('data')
@@ -112,19 +63,7 @@ class MyWidget extends Widget
 }
 ```
 
-<<<<<<< HEAD
 **DOPO (Filament 4):**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**DOPO (Filament 5):**
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 use Filament\Forms\Form;
 
@@ -152,19 +91,7 @@ public static function form(Schema $schema): Schema
 }
 ```
 
-<<<<<<< HEAD
 **DOPO (Filament 4):**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**DOPO (Filament 5):**
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
-=======
-**DOPO (Filament 4):**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 {
@@ -182,19 +109,7 @@ public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\S
 // PRIMA (Filament 3)
 use Filament\Schemas\Schema;
 
-<<<<<<< HEAD
 // DOPO (Filament 4)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// DOPO (Filament 5)
-=======
-// DOPO (Filament 4)
->>>>>>> laraxot/dev
-=======
-// DOPO (Filament 4)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Filament\Forms\Form;
 ```
 
@@ -211,19 +126,7 @@ public function form(Schema $schema): Schema
     return $schema->components([...]);
 }
 
-<<<<<<< HEAD
 // DOPO (Filament 4)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// DOPO (Filament 5)
-=======
-// DOPO (Filament 4)
->>>>>>> laraxot/dev
-=======
-// DOPO (Filament 4)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 {
     return $form->schema([...]);
@@ -248,18 +151,6 @@ public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Filament 4 Forms](https://filamentphp.com/docs/4.x/components/form)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Documentazione Filament 5 Forms](https://filamentphp.com/docs/4.x/components/form)
-=======
-- [Documentazione Filament 4 Forms](https://filamentphp.com/docs/4.x/components/form)
->>>>>>> laraxot/dev
-=======
-- [Documentazione Filament 4 Forms](https://filamentphp.com/docs/4.x/components/form)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Guida Migrazione Filament](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [XotBaseWidget](../filament/widgets/xotbasewidget.md)

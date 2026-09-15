@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: integration
-description: " Documentazione Collegata"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Integrazione Documentazione
 
 ## Documentazione Collegata

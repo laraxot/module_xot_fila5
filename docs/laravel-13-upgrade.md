@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laravel-13-upgrade
-description: " 🎯 Visione Architetturale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Upgrade Laravel 13 - Xot 🐄✨
 
 ## 🎯 Visione Architetturale

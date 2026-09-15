@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: widget-fileuploads
-description: " Errore: 'foreach() argument must be of type array|object, string given'"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Widget FileUpload Errors - Troubleshooting Guide
 
 ## Errore: "foreach() argument must be of type array|object, string given"

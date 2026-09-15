@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: documentation-management-1
-description: " Struttura della Documentazione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gestione della Documentazione e delle Regole
 
 ## Struttura della Documentazione
@@ -15,19 +5,7 @@ metadata:
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
-<<<<<<< HEAD
 base_predict_fila5_mono/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<repo progetto>/
-=======
-base_predict_fila5_mono/
->>>>>>> laraxot/dev
-=======
-base_predict_fila5_mono/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli

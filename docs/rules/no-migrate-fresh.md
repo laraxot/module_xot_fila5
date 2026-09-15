@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: no-migrate-fresh
-description: " Status: CRITICAL"
-metadata:
-  type: rule
----
-
-=======
->>>>>>> laraxot/dev
 # REGOLA ASSOLUTA: MAI migrate:fresh nei test
 
 ## Status: CRITICAL

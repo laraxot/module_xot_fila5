@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: workspace-file-rule
-description: " Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Workspace File Naming Rule
 
 ## Rule

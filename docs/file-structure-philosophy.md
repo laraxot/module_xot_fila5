@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: file-structure-philosophy
-description: " Core Principle: Single Source of Truth for Database Files"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot File Structure Philosophy
 
 ## Core Principle: Single Source of Truth for Database Files
@@ -177,19 +167,7 @@ Modules/
 │   │   ├── migrations/
 │   │   └── seeders/
 │   └── app/
-<<<<<<< HEAD
 └── Quaeris/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-└── <nome progetto>/
-=======
-└── Quaeris/
->>>>>>> laraxot/dev
-=======
-└── Quaeris/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ├── database/
     │   ├── factories/
     │   ├── migrations/

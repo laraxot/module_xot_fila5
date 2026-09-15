@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: performance-guidelines
-description: " 🎯 Purpose"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose
@@ -447,18 +437,6 @@ public function processData(): void
 - [Code Quality Standards](./code_quality_standards.md)
 - [Common Anti-Patterns](./common_anti_patterns.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
-- [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
-- [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
-- [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -472,13 +450,6 @@ public function processData(): void
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Testing Guidelines](./testing-guidelines.md)
 

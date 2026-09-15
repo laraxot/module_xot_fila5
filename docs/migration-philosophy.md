@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-philosophy
-description: " Core Migration Principles"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Migration Architecture Philosophy
 
 ## Core Migration Principles

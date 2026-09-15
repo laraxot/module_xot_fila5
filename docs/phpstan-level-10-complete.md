@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-level-10-complete
-description: "Data: 9 Gennaio 2026"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Completamento Totale ✅
 
 **Data**: 9 Gennaio 2026  

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-standards-1
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Standard per le Migrazioni in <nome progetto>
 
 ## Introduzione

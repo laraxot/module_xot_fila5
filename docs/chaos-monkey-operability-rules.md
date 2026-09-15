@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: chaos-monkey-operability-rules
-description: " Scopo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Chaos Monkey Operability Rules (Xot)
 
 ## Scopo

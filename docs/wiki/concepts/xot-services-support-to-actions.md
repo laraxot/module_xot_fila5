@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xot-services-support-to-actions
-description: "Deleted dead app/Services/ and app/Support/ files that had zero callers or were already replaced by Actions/Adapters."
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Services/Support → Actions migration
 
 Deleted dead `app/Services/` and `app/Support/` files that had zero callers or were already replaced by Actions/Adapters.

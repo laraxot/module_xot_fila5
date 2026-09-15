@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fix-plan-xot-module-phpstan-fix-plan
-description: " Current Status"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - PHPStan Fix Plan
 
 ## Current Status

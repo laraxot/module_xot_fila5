@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Models;
 
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 use function Safe\file_get_contents;
 use function Safe\preg_match;
@@ -68,7 +70,7 @@ function methodsShadowingTraits(): array
     );
 
     foreach ($iterator as $fileInfo) {
-        if (! $fileInfo instanceof \SplFileInfo || 'php' !== $fileInfo->getExtension()) {
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
             continue;
         }
 
@@ -82,10 +84,10 @@ function methodsShadowingTraits(): array
         $ns = [];
         $cls = [];
 
-        if (1 !== preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns)) {
+        if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
             continue;
         }
-        if (1 !== preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls)) {
+        if (preg_match('/^\s*(?:final\s+|abstract\s+)*class\s+(\w+)/m', $source, $cls) !== 1) {
             continue;
         }
 
@@ -95,7 +97,7 @@ function methodsShadowingTraits(): array
             continue;
         }
 
-        $reflection = new \ReflectionClass($class);
+        $reflection = new ReflectionClass($class);
         $traitMethods = [];
 
         foreach ($reflection->getTraits() as $trait) {
@@ -104,7 +106,7 @@ function methodsShadowingTraits(): array
             }
         }
 
-        if ([] === $traitMethods) {
+        if ($traitMethods === []) {
             continue;
         }
 
@@ -126,7 +128,7 @@ function methodsShadowingTraits(): array
             $shadowed[] = $name.'() — oscura '.class_basename($traitMethods[$name]);
         }
 
-        if ([] !== $shadowed) {
+        if ($shadowed !== []) {
             $offenders[str_replace(base_path().'/', '', $path)] = $shadowed;
         }
     }

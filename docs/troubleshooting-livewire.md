@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: troubleshooting-livewire
-description: "Errore: 404 Not Found su /livewire/update"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Troubleshooting: Livewire 404 Error
 
 **Errore**: `404 Not Found` su `/livewire/update`
@@ -28,37 +18,13 @@ Failed to load resource: the server responded with a status of 404 (Not Found)
 
 ```bash
 # Configurazione .env
-<<<<<<< HEAD
 APP_URL=http://Quaeris.local
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-APP_URL=http://<nome progetto>.local
-=======
-APP_URL=http://Quaeris.local
->>>>>>> laraxot/dev
-=======
-APP_URL=http://Quaeris.local
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 # Browser accede a
 http://127.0.0.1:8000
 ```
 
-<<<<<<< HEAD
 **Risultato**: Livewire genera URL con `Quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Risultato**: Livewire genera URL con `<nome progetto>.local` ma browser invia richieste a `127.0.0.1:8000` → 404
-=======
-**Risultato**: Livewire genera URL con `Quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
->>>>>>> laraxot/dev
-=======
-**Risultato**: Livewire genera URL con `Quaeris.local` ma browser invia richieste a `127.0.0.1:8000` → 404
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## ✅ Soluzioni
 
@@ -74,19 +40,7 @@ APP_URL=http://127.0.0.1:8000
 APP_URL=http://localhost:8000
 
 # Se accedi tramite dominio locale
-<<<<<<< HEAD
 APP_URL=http://Quaeris.local
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-APP_URL=http://<nome progetto>.local
-=======
-APP_URL=http://Quaeris.local
->>>>>>> laraxot/dev
-=======
-APP_URL=http://Quaeris.local
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Dopo la modifica**:
@@ -98,58 +52,19 @@ php artisan optimize:clear
 
 ### Soluzione 2: Aggiungere Host al Sistema
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Se vuoi usare `<nome progetto>.local`, aggiungi al file hosts:
-
-**Linux/Mac**: `/etc/hosts`
-```
-127.0.0.1 <nome progetto>.local
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 Se vuoi usare `Quaeris.local`, aggiungi al file hosts:
 
 **Linux/Mac**: `/etc/hosts`
 ```
 127.0.0.1 Quaeris.local
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Windows**: `C:\Windows\System32\drivers\etc\hosts`
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-127.0.0.1 <nome progetto>.local
-```
-
-Poi accedi tramite: `http://<nome progetto>.local:8000`
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 127.0.0.1 Quaeris.local
 ```
 
 Poi accedi tramite: `http://Quaeris.local:8000`
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Soluzione 3: Trusted Proxies (Per Ambienti Complessi)
 
@@ -220,38 +135,14 @@ APP_URL=http://127.0.0.1:8000
 
 ```bash
 # .env per sviluppo con virtual host
-<<<<<<< HEAD
 APP_URL=http://Quaeris.local
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-APP_URL=http://<nome progetto>.local
-=======
-APP_URL=http://Quaeris.local
->>>>>>> laraxot/dev
-=======
-APP_URL=http://Quaeris.local
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### Produzione
 
 ```bash
 # .env per produzione
-<<<<<<< HEAD
 APP_URL=https://Quaeris.com
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-APP_URL=https://<nome progetto>.com
-=======
-APP_URL=https://Quaeris.com
->>>>>>> laraxot/dev
-=======
-APP_URL=https://Quaeris.com
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ## 🔧 Comandi Rapidi Fix

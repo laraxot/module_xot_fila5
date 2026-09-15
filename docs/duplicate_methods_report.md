@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: duplicate-methods-report
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-resource-guidelines
-description: " Linee Guida per le Risorse Filament nel Progetto <nome progetto>"
-metadata:
-  type: rule
----
-
-=======
->>>>>>> laraxot/dev
 # Linee Guida per le Risorse Filament nel Progetto
 # Linee Guida per le Risorse Filament nel Progetto <nome progetto>
 # Linee Guida per le Risorse Filament nel Progetto <nome progetto>

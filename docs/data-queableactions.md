@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: data-queableactions
-description: "Questo documento definisce le convenzioni per l'utilizzo dei Data Objects e QueueableActions nel framework Laraxot <nome progetto>, con una "
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni per Data Objects e QueueableActions
 
 Questo documento definisce le convenzioni per l'utilizzo dei Data Objects e QueueableActions nel framework Laraxot <nome progetto>, con una chiara preferenza per le librerie Spatie rispetto agli approcci tradizionali.

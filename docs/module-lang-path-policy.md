@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-lang-path-policy
-description: " Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Module Lang Path Policy
 
 ## Rule

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 04-milestones
-description: " M1 Documentation Baseline"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Milestones - Xot
 
 ## M1 Documentation Baseline

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbase-extension-rules-conflict
-description: " 🚨 Critical Architectural Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBase Extension Rules - Comprehensive Guide
 
 ## 🚨 Critical Architectural Rule

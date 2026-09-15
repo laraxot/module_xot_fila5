@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: fixing-hasxottable-and-phpstan-errors
-description: " Problem"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Fixing HasXotTable Trait Errors
 
 ## Problem

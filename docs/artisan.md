@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: artisan
-description: "artisan"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 Create an invoke function in one step
 
 Create an invoke function in one step and you are surely familiar with the use of the invoke function in the Single Task Controller:-

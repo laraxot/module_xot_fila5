@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fixes-gennaio-archive
-description: " Riassunto delle Correzioni"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 
 ## Riassunto delle Correzioni

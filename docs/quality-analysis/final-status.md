@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: final-status
-description: " 🎯 Obiettivo Raggiunto"
-metadata:
-  type: quality
----
-
-=======
->>>>>>> laraxot/dev
 # Status Finale Analisi Qualità - 2025-01-22
 
 ## 🎯 Obiettivo Raggiunto

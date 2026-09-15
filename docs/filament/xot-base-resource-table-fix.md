@@ -1,30 +1,8 @@
-<<<<<<< HEAD
----
-name: xot-base-resource-table-fix
-description: "Data: 2026-05-26"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseResourceTable: Static Method Context Bug Fix
 
 **Data:** 2026-05-26  
 **Commit:** 533beaa6e  
-<<<<<<< HEAD
 **Issue:** [#148](https://github.com/provtv/base_ptv_fila5_mono/issues/148)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Issue:** [#148](https://github.com/provtv/<repo progetto>/issues/148)
-=======
-**Issue:** [#148](https://github.com/provtv/base_ptv_fila5_mono/issues/148)
->>>>>>> laraxot/dev
-=======
-**Issue:** [#148](https://github.com/provtv/base_ptv_fila5_mono/issues/148)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Problema
 

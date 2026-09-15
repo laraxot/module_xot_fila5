@@ -61,19 +61,7 @@ phpstan-level10-success-nov2025.md         (attuale)
 **Duplicati eliminati**:
 - `architecture_violations_and_fixes.md` → già esisteva versione con trattino
 - `best_practices.md` (underscore) → già esisteva `best-practices.md`
-<<<<<<< HEAD
 - `filament_4x_compatibility.md` → già esisteva `filament-4x-compatibility.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `filament_4x_compatibility.md` → già esisteva `Filament-5x-compatibility.md`
-=======
-- `filament_4x_compatibility.md` → già esisteva `filament-4x-compatibility.md`
->>>>>>> laraxot/dev
-=======
-- `filament_4x_compatibility.md` → già esisteva `filament-4x-compatibility.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `phpstan-fixes.md` (corrotto con Git conflict markers)
 
 **Risultato**: -12 file ridondanti
@@ -335,19 +323,7 @@ phpstan-level10-success-nov2025.md         (attuale)
 **Duplicati eliminati**:
 - `architecture_violations_and_fixes.md` → già esisteva versione con trattino
 - `best_practices.md` (underscore) → già esisteva `best-practices.md`
-<<<<<<< HEAD
 - `filament_4x_compatibility.md` → già esisteva `filament-4x-compatibility.md`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- `filament_4x_compatibility.md` → già esisteva `Filament-5x-compatibility.md`
-=======
-- `filament_4x_compatibility.md` → già esisteva `filament-4x-compatibility.md`
->>>>>>> laraxot/dev
-=======
-- `filament_4x_compatibility.md` → già esisteva `filament-4x-compatibility.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - `phpstan-fixes.md` (corrotto con Git conflict markers)
 
 **Risultato**: -12 file ridondanti

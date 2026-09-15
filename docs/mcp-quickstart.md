@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: mcp-quickstart
-description: " Setup Rapido per il Nostro Progetto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # MCP Quick Start Guide
 
 ## Setup Rapido per il Nostro Progetto
@@ -148,19 +138,7 @@ cd init
 
 ```
 # In Cursor/Windsurf/Cline
-<<<<<<< HEAD
 Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Analizza gli errori PHPStan in Modules/<nome progetto> e suggerisci correzioni seguendo le regole in .windsurf/rules/
-=======
-Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
->>>>>>> laraxot/dev
-=======
-Analizza gli errori PHPStan in Modules/Quaeris e suggerisci correzioni seguendo le regole in .windsurf/rules/
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### 2. Refactoring Modulo
@@ -196,19 +174,7 @@ iflow
 
 ```
 # Con memory + sequential-thinking
-<<<<<<< HEAD
 Analizza l'architettura del modulo Quaeris:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Analizza l'architettura del modulo <nome progetto>:
-=======
-Analizza l'architettura del modulo Quaeris:
->>>>>>> laraxot/dev
-=======
-Analizza l'architettura del modulo Quaeris:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 1. Identifica pattern utilizzati
 2. Documenta dipendenze
 3. Suggerisci miglioramenti

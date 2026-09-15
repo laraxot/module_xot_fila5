@@ -163,7 +163,7 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
-     * @param class-string<Model> $modelClass
+     * @param  class-string<Model>  $modelClass
      */
     public static function selectFromModel(
         string $name,
@@ -178,7 +178,7 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
-        if (null !== $relationshipName) {
+        if ($relationshipName !== null) {
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -188,7 +188,7 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
-     * @param array<string, string> $customStatuses
+     * @param  array<string, string>  $customStatuses
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -206,7 +206,7 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
-     * @param array<string, string> $customPriorities
+     * @param  array<string, string>  $customPriorities
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -224,7 +224,7 @@ class FilterBuilder
     /**
      * Type select filter.
      *
-     * @param array<string, string> $types
+     * @param  array<string, string>  $types
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -235,7 +235,7 @@ class FilterBuilder
     /**
      * Category select filter.
      *
-     * @param class-string<Model> $categoryModel
+     * @param  class-string<Model>  $categoryModel
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -245,7 +245,7 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
-     * @param class-string<Model> $userModel
+     * @param  class-string<Model>  $userModel
      */
     public static function userSelect(
         string $name = 'user',
@@ -273,7 +273,7 @@ class FilterBuilder
     }
 
     /**
-     * @param Builder<Model> $query
+     * @param  Builder<Model>  $query
      */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
@@ -281,8 +281,7 @@ class FilterBuilder
     }
 
     /**
-     * @param Builder<Model> $query
-     *
+     * @param  Builder<Model>  $query
      * @return Builder<Model>
      */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder

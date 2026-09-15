@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: composer-conflict-resolution-risoluzione-conflitto-composerjson-xot
-description: " Intent"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione conflitto composer.json (Xot)
 
 ## Intent

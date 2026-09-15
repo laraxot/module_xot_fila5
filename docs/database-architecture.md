@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: database-architecture
-description: " Modular Connection Isolation (Mandatory Rule)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Database Architecture in Laraxot
 
 ## Modular Connection Isolation (Mandatory Rule)

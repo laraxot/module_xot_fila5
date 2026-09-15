@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-states
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laravel Model States
 
 ## Panoramica

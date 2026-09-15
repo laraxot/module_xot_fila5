@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: prompt-rules
-description: " Regola Universale"
-metadata:
-  type: rule
----
-
-=======
->>>>>>> laraxot/dev
 # Regole per i Prompt
 
 ## Regola Universale

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: getpages-redundancy-rule
-description: " Scopo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola `getPages()` ridondante su `XotBaseResource`
 
 ## Scopo
@@ -51,27 +41,9 @@ class CoeffResource extends XotBaseResource
     protected static ?string $model = Coeff::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-    public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [ /* ... */ ];

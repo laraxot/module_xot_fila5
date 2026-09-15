@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: view-cache-execution-decision
-description: "Data: 2025-01-22"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Decisione: Esecuzione php artisan view:cache
 
 **Data**: 2025-01-22

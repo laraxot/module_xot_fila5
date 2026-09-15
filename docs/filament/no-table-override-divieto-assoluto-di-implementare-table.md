@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: no-table-override-divieto-assoluto-di-implementare-table
-description: " Regola Fondamentale Inviolabile"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # DIVIETO ASSOLUTO DI IMPLEMENTARE table()
 
 ## Regola Fondamentale Inviolabile

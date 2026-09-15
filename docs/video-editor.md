@@ -1,23 +1,5 @@
 <<<<<<< HEAD
----
-name: video-editor
-description: "<!-- Contenuto migrato da docs/videoeditor.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: "Video editor"
 type: reference
@@ -30,15 +12,6 @@ note: "Convertito da video_editor.txt (documento) da convert-docs-txt-to-md.py."
 # video_editor
 
 <!-- Contenuto migrato da _docs/video_editor.txt -->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 https://github.com/kudlav/videoeditor
@@ -49,24 +22,6 @@ https://github.com/kudlav/videoeditor-doc
 <<<<<<< HEAD
 
 composer require pbmedia/laravel-ffmpeg
-<<<<<<< HEAD
 =======
 composer require pbmedia/laravel-ffmpeg
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-composer require pbmedia/laravel-ffmpeg
-=======
-<<<<<<< HEAD
-
-composer require pbmedia/laravel-ffmpeg
-=======
-composer require pbmedia/laravel-ffmpeg
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-composer require pbmedia/laravel-ffmpeg
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: namespace-exceptions
-description: " Directory Structure"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Exception Namespace Structure
 
 ## Directory Structure

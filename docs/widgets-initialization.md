@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: widgets-initialization
-description: " ⚠️ Problema delle Signature (Incompatibilità)"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Inizializzazione dei Widget XotBaseWidget
 
 ## ⚠️ Problema delle Signature (Incompatibilità)

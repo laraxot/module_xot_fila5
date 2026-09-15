@@ -1,48 +1,14 @@
-<<<<<<< HEAD
----
-name: readme-en
-description: "[![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)]()"
-metadata:
-  type: documentation
----
-
 # ⚡ Xot — English presentation
 
 [![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-=======
-# ⚡ Xot — English presentation
-
-[![Core](https://img.shields.io/badge/Role-Platform%20Core-6A1B9A.svg)](#)
-<<<<<<< HEAD
-<<<<<<< HEAD
-[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
-=======
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
->>>>>>> laraxot/dev
-=======
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
 [![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-<<<<<<< HEAD
 [![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-[![<nome progetto> Platform](https://img.shields.io/badge/Platform-<nome progetto>-008758.svg)](#)
-=======
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
->>>>>>> laraxot/dev
-=======
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 > **Laraxot DNA.** BaseModel, XotBaseServiceProvider, Filament bases — conventions that keep 20+ modules aligned.
 
@@ -50,19 +16,7 @@ metadata:
 
 ## Why it exists
 
-<<<<<<< HEAD
 No FixCity without Xot: internal framework preventing duplication and architectural drift.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-No <nome progetto> without Xot: internal framework preventing duplication and architectural drift.
-=======
-No FixCity without Xot: internal framework preventing duplication and architectural drift.
->>>>>>> laraxot/dev
-=======
-No FixCity without Xot: internal framework preventing duplication and architectural drift.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Superpowers
 
@@ -99,16 +53,4 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-<<<<<<< HEAD
 **Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Module** `xot` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
-=======
-**Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev
-=======
-**Module** `xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

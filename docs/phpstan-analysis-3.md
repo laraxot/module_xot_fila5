@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-analysis-3
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -30,19 +20,7 @@ metadata:
   - Array access on mixed types
   - Invalid binary operations
 
-<<<<<<< HEAD
 #### Quaeris Module (Complex Issues)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### <nome progetto> Module (Complex Issues)
-=======
-#### Quaeris Module (Complex Issues)
->>>>>>> laraxot/dev
-=======
-#### Quaeris Module (Complex Issues)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Errors:** ~500+ across chart export and quantum actions
 - **Main Issues:**
   - Missing class definitions (quantum-related classes)
@@ -77,27 +55,9 @@ Function preg_replace is unsafe to use. Please add 'use function Safe\preg_repla
 #### Missing Class Definitions
 ```php
 // ❌ Quantum-related classes not found
-<<<<<<< HEAD
 Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
 implements unknown interface Spatie\Queable\Contracts\Queable.
 Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Class Modules\<nome progetto>\Actions\Charts\Quantum\GenerateConsciousChartAction
-implements unknown interface Spatie\Queable\Contracts\Queable.
-Class Modules\<nome progetto>\Actions\Charts\Quantum\GenerateConsciousChartAction
-=======
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
-implements unknown interface Spatie\Queable\Contracts\Queable.
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
->>>>>>> laraxot/dev
-=======
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
-implements unknown interface Spatie\Queable\Contracts\Queable.
-Class Modules\Quaeris\Actions\Charts\Quantum\GenerateConsciousChartAction
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 uses unknown trait Spatie\Queable\QueableAction.
 ```
 
@@ -115,31 +75,11 @@ uses unknown trait Spatie\Queable\QueableAction.
 3. **Function Safety**: Missing Safe library imports
 4. **Return Types**: Incorrect PHPDoc return types
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### <nome progetto> Module Issues
-**Primary Files:**
-- `<nome progetto>/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
-- `<nome progetto>/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
-- `<nome progetto>/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 #### Quaeris Module Issues
 **Primary Files:**
 - `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToPngAction.php` (100+ errors)
 - `Quaeris/app/Actions/Charts/Export/ExportFilamentWidgetToSvgAction.php` (150+ errors)
 - `Quaeris/app/Actions/Charts/Quantum/GenerateConsciousChartAction.php` (200+ errors)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Key Problems:**
 1. **Missing Classes**: Quantum architecture classes not implemented

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaage-getmodel
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBasePage getModel() Fix - Risoluzione Errore Static/Non-Static
 
 ## Problema

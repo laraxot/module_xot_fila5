@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: lessons-learnedmerge-conflicts-1
-description: " 🎯 Missione Completata"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Lezioni Apprese - Risoluzione Massiva Merge Conflicts (2025-11-04)
 
 ## 🎯 Missione Completata

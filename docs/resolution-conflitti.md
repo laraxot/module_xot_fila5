@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: resolution-conflitti
-description: " Best Practices"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti
 
 ## Best Practices

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: migration-base-rules
-description: " Regola universale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # MIGRATION BASE RULES
 
 ## Regola universale

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: docs-normalization-process
-description: " Scopo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Processo di Normalizzazione Documentazione
 
 ## Scopo

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: notifications
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Notifiche
 
 ## Configurazione Base

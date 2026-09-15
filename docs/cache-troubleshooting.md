@@ -1,27 +1,6 @@
-<<<<<<< HEAD
----
-name: cache-troubleshooting
-description: "Symptom: 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcitydata.cache' doesn't exist'"
-metadata:
-  type: documentation
----
-
 # Cache troubleshooting (module Xot)
 
 Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"
-=======
-# Cache troubleshooting (module Xot)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table '<nome progetto>_data.cache' doesn't exist"
-=======
-Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"
->>>>>>> laraxot/dev
-=======
-Symptom: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fixcity_data.cache' doesn't exist"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Cause: Application is configured to use the database cache driver but the required `cache` table is missing.
 

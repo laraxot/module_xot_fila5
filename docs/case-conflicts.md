@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: case-conflicts
-description: "Elenco dei duplicati case-insensitive nel modulo Xot:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Case-Insensitive File Conflicts
 
 Elenco dei duplicati case-insensitive nel modulo `Xot`:

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: property-removal-philosophy
-description: "Data: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filosofia della Rimozione Proprietà in XotBaseResource
 
 **Data**: 2026-01-09  

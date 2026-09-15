@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: relation-managers-xotbaserelationmanager-per-laraxot-ptvx
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseRelationManager per Laraxot PTVX
 
 ## Panoramica

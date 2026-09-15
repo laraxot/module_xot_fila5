@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: no-property-exists-on-models
-description: " CRITICAL LARAXOT PRINCIPLE"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architectural Rule: Avoid `property_exists()` on Eloquent Models
 
 ## **CRITICAL LARAXOT PRINCIPLE**

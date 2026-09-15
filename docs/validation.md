@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: validation
-description: " Configurazione Base"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Validazione
 
 ## Configurazione Base

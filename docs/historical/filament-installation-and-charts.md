@@ -323,19 +323,7 @@ public function panel(Panel $panel): Panel
 
 ```php
 // ❌ ERRATO - NON registrare asset chart in altri moduli
-<<<<<<< HEAD
 // Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Modules/<nome progetto>/app/Providers/Filament/AdminPanelProvider.php
-=======
-// Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
->>>>>>> laraxot/dev
-=======
-// Modules/Quaeris/app/Providers/Filament/AdminPanelProvider.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 // Modules/UI/app/Providers/Filament/AdminPanelProvider.php
 // Themes/Zero/app/Providers/Filament/AdminPanelProvider.php
 
@@ -345,19 +333,7 @@ public function panel(Panel $panel): Panel
     
     // ❌ NON fare questo - causa duplicazioni e conflitti
     // FilamentAsset::register([
-<<<<<<< HEAD
     //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/<nome progetto>'))->module(),
-=======
-    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
->>>>>>> laraxot/dev
-=======
-    //     Js::make('chart-js-plugins', Vite::asset('resources/js/filament-chart-js-plugins.js', 'assets/quaeris'))->module(),
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     // ]);
     
     return $panel;

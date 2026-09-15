@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: gap-missings
-description: " 🔍 Comprehensive Analysis of Missing Elements"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Gap Analysis - Missing Patterns & Documentation
 
 ## 🔍 Comprehensive Analysis of Missing Elements

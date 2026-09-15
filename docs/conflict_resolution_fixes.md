@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: conflict-resolution-fixes
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo Xot
 
 ## Panoramica
@@ -81,28 +71,10 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 
 <<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
-*Ultimo aggiornamento: Dicembre 2024*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

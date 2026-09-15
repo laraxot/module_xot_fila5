@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: ui-ux-guidelines
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # UI/UX Design Guidelines
 
 ## Overview

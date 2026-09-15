@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: property-exists-final-report
-description: " Data: 2025-11-05"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # REPORT FINALE: Eliminazione property_exists() da Eloquent Models
 
 ## Data: 2025-11-05

@@ -3,19 +3,7 @@ id: hasxotfactory-regression-prevention
 slug: hasxotfactory-regression-prevention
 scope:
   - module:Xot
-<<<<<<< HEAD
   - project:base_workorder_fila5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - project:<repo progetto>
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
-=======
-  - project:base_workorder_fila5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 status: ready-for-dev
 priority: High
 created: 2026-09-07

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: file-naming-conventions-compliance
-description: "Data: 2026-01-09"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  

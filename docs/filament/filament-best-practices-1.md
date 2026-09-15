@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-best-practices-1
-description: "Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Segui"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Best Practices per Risorse Filament in Laraxot
 
 Questo documento riassume le migliori pratiche per la creazione e gestione delle risorse Filament all'interno dell'ecosistema Laraxot. Seguire queste linee guida garantirà compatibilità e coerenza in tutto il progetto.
@@ -67,27 +57,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
    // CORRETTO ✅
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-   public function getFormSchema(): array
-=======
-<<<<<<< HEAD
-   public static function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    {
        return [

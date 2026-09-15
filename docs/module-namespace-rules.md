@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-namespace-rules
-description: " Regola"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola

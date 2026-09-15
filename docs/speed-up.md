@@ -1,38 +1,10 @@
 <<<<<<< HEAD
----
-name: speed-up
-description: "<!-- Contenuto migrato da docs/speedup.txt -->"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://laravelarticle.com/speed-up-laravel-website
 
 
 How To Check RAM And CPU Usage In Laravel
 https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'speed_up'
 module: Xot
@@ -53,13 +25,4 @@ https://laravelarticle.com/speed-up-laravel-website
 
 How To Check RAM And CPU Usage In Laravel
 https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: product-docs-governance
-description: "Regola operativa per questo repository:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Product Docs Governance
 
 Regola operativa per questo repository:

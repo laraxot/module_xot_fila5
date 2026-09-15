@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-forward-only-rule
-description: " 🔥 Regola Assoluta: Mai Tornare Indietro"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Git Forward-Only Rule
 
 ## 🔥 Regola Assoluta: Mai Tornare Indietro

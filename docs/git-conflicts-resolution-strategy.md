@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: git-conflicts-resolution-strategy
-description: " Contesto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Strategia Risoluzione Conflitti Git - Modulo Xot
 
 ## Contesto

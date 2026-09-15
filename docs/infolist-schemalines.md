@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: infolist-schemalines
-description: " Requisiti Fondamentali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Linee Guida per l'Implementazione di getInfolistSchema
 

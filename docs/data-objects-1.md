@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: data-objects-1
-description: " Principi Fondamentali"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Data Objects
 
 ## Principi Fondamentali

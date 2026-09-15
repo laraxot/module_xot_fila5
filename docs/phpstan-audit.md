@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-audit
-description: " Obiettivo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Audit Completo - 2025-01-27
 
 ## Obiettivo

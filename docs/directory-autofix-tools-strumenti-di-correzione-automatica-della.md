@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: directory-autofix-tools-strumenti-di-correzione-automatica-della
-description: " Introduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Strumenti di Correzione Automatica della Struttura delle Directory
 
 ## Introduzione

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-components-methods
-description: " Tabs e Tab Components"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Metodi dei Componenti Filament
 
 ## Tabs e Tab Components

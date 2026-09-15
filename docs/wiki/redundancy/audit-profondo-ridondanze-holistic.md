@@ -14,19 +14,7 @@ related:
   - ../../../../../Themes/Sixteen/docs/wiki/redundancy/duplicated-blade-blocks.md
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/ridondanze-documentazione-wizard.md
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/90"
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/90"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 
 # Audit olistico ridondanze (second brain ↔ codice)
@@ -85,27 +73,9 @@ Esempi già schedulati (linkare, non ricopiare qui):
 
 | Area | Lettura canonica |
 |------|-------------------|
-<<<<<<< HEAD
 | Fixcity ticket | [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md) · [`duplicated-comments-relation-manager.md`](../../../../Fixcity/docs/wiki/redundancy/duplicated-comments-relation-manager.md) · [`Fixcity/docs/redundancy-report.md`](../../../../Fixcity/docs/redundancy-report.md) |
 | Block Blade cross-moduli | [`duplicated-blade-blocks.md`](../../../../../Themes/Sixteen/docs/wiki/redundancy/duplicated-blade-blocks.md) |
 | Wizard doc slice Sixteen↔Fixcity↔Xot | [`ridondanze-documentazione-wizard.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/ridondanze-documentazione-wizard.md) → map [`wizard-parity-documentation-map.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/wizard-parity-documentation-map.md) |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| <nome progetto> ticket | [`<nome progetto>-cross-module-duplicate-surfaces.md`](../../../../<nome progetto>/docs/wiki/redundancy/<nome progetto>-cross-module-duplicate-surfaces.md) · [`duplicated-comments-relation-manager.md`](../../../../<nome progetto>/docs/wiki/redundancy/duplicated-comments-relation-manager.md) · [`<nome progetto>/docs/redundancy-report.md`](../../../../<nome progetto>/docs/redundancy-report.md) |
-| Block Blade cross-moduli | [`duplicated-blade-blocks.md`](../../../../../Themes/Sixteen/docs/wiki/redundancy/duplicated-blade-blocks.md) |
-| Wizard doc slice Sixteen↔<nome progetto>↔Xot | [`ridondanze-documentazione-wizard.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/ridondanze-documentazione-wizard.md) → map [`wizard-parity-documentation-map.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/wizard-parity-documentation-map.md) |
-=======
-| Fixcity ticket | [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md) · [`duplicated-comments-relation-manager.md`](../../../../Fixcity/docs/wiki/redundancy/duplicated-comments-relation-manager.md) · [`Fixcity/docs/redundancy-report.md`](../../../../Fixcity/docs/redundancy-report.md) |
-| Block Blade cross-moduli | [`duplicated-blade-blocks.md`](../../../../../Themes/Sixteen/docs/wiki/redundancy/duplicated-blade-blocks.md) |
-| Wizard doc slice Sixteen↔Fixcity↔Xot | [`ridondanze-documentazione-wizard.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/ridondanze-documentazione-wizard.md) → map [`wizard-parity-documentation-map.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/wizard-parity-documentation-map.md) |
->>>>>>> laraxot/dev
-=======
-| Fixcity ticket | [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md) · [`duplicated-comments-relation-manager.md`](../../../../Fixcity/docs/wiki/redundancy/duplicated-comments-relation-manager.md) · [`Fixcity/docs/redundancy-report.md`](../../../../Fixcity/docs/redundancy-report.md) |
-| Block Blade cross-moduli | [`duplicated-blade-blocks.md`](../../../../../Themes/Sixteen/docs/wiki/redundancy/duplicated-blade-blocks.md) |
-| Wizard doc slice Sixteen↔Fixcity↔Xot | [`ridondanze-documentazione-wizard.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/ridondanze-documentazione-wizard.md) → map [`wizard-parity-documentation-map.md`](../../../../../Themes/Sixteen/docs/wiki/concepts/wizard-parity-documentation-map.md) |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | Passport / widget auth multipli modulo User | vedi catalogo |
 | Cms composer / view composers | **[`Modules/Cms/docs/redundancy-report.md`](../../../../Cms/docs/redundancy-report.md)** §5 ThemeComposer (`resources/views/` vs `app/`) |
 
@@ -126,40 +96,13 @@ Molti moduli contengono ciascuno le proprie istanze di:
 | Pattern | Osservazione controllabile |
 |---------|----------------------------|
 | **`ThemeComposer` modulo Cms** | Due classi nel **medesimo namespace**; caricata solo quella in **`app/View`** (PSR-4 modulo). La copia sotto **`resources/views/Composers/`** non è autoloaded — vedere **`Modules/Cms/docs/redundancy-report.md`** §5. |
-<<<<<<< HEAD
 | **`ProfileFactory`** in User/Gdpr/Fixcity | Stesso basename, hash **diverso**: tre domini modellano colonne/context diversi → rumore nominativo ma **non** byte-gemelli. Verificare allineamenti solo se gli attributi dovrebbero essere DTO-first condiviso. |
 | **`BasePivot` vs `XotBasePivot`** | Cluster moduli (**Cms, Gdpr, Comment, Blog**) su **`XotBasePivot`**; Fixcity (**e** Notify/Geo/User) ancora **`Pivot`** + trait manuali → famiglia frammentata, non classe duplicata 1:1. |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| **`ProfileFactory`** in User/Gdpr/<nome progetto> | Stesso basename, hash **diverso**: tre domini modellano colonne/context diversi → rumore nominativo ma **non** byte-gemelli. Verificare allineamenti solo se gli attributi dovrebbero essere DTO-first condiviso. |
-| **`BasePivot` vs `XotBasePivot`** | Cluster moduli (**Cms, Gdpr, Comment, Blog**) su **`XotBasePivot`**; <nome progetto> (**e** Notify/Geo/User) ancora **`Pivot`** + trait manuali → famiglia frammentata, non classe duplicata 1:1. |
-=======
-| **`ProfileFactory`** in User/Gdpr/Fixcity | Stesso basename, hash **diverso**: tre domini modellano colonne/context diversi → rumore nominativo ma **non** byte-gemelli. Verificare allineamenti solo se gli attributi dovrebbero essere DTO-first condiviso. |
-| **`BasePivot` vs `XotBasePivot`** | Cluster moduli (**Cms, Gdpr, Comment, Blog**) su **`XotBasePivot`**; Fixcity (**e** Notify/Geo/User) ancora **`Pivot`** + trait manuali → famiglia frammentata, non classe duplicata 1:1. |
->>>>>>> laraxot/dev
-=======
-| **`ProfileFactory`** in User/Gdpr/Fixcity | Stesso basename, hash **diverso**: tre domini modellano colonne/context diversi → rumore nominativo ma **non** byte-gemelli. Verificare allineamenti solo se gli attributi dovrebbero essere DTO-first condiviso. |
-| **`BasePivot` vs `XotBasePivot`** | Cluster moduli (**Cms, Gdpr, Comment, Blog**) su **`XotBasePivot`**; Fixcity (**e** Notify/Geo/User) ancora **`Pivot`** + trait manuali → famiglia frammentata, non classe duplicata 1:1. |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 | **Filament `Dashboard.php` per modulo** | Hash **tutti distinti** nello stato corrente: niente mega-cluster da deduplica immediata tramite contenuto byte-identico. |
 
 ### Collegamenti
 
-<<<<<<< HEAD
 - Fixcity superficiali Blade + stato **BaseModel**/**BasePivot**: [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <nome progetto> superficiali Blade + stato **BaseModel**/**BasePivot**: [`<nome progetto>-cross-module-duplicate-surfaces.md`](../../../../<nome progetto>/docs/wiki/redundancy/<nome progetto>-cross-module-duplicate-surfaces.md).
-=======
-- Fixcity superficiali Blade + stato **BaseModel**/**BasePivot**: [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
->>>>>>> laraxot/dev
-=======
-- Fixcity superficiali Blade + stato **BaseModel**/**BasePivot**: [`fixcity-cross-module-duplicate-surfaces.md`](../../../../Fixcity/docs/wiki/redundancy/fixcity-cross-module-duplicate-surfaces.md).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Cms backlog modello/UI: **[`Modules/Cms/docs/redundancy-report.md`](../../../../Cms/docs/redundancy-report.md)**.
 
 ## 6. Principi anti-rimozione falsi positivi
@@ -169,16 +112,4 @@ Molti moduli contengono ciascuno le proprie istanze di:
 
 ## Tracker
 
-<<<<<<< HEAD
 Issues principali [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89) · [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) · consolidamento docs [#107](https://github.com/laraxot/base_fixcity_fila5/issues/107).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Issues principali [#89](https://github.com/laraxot/<repo progetto>/issues/89) · [#90](https://github.com/laraxot/<repo progetto>/issues/90) · consolidamento docs [#107](https://github.com/laraxot/<repo progetto>/issues/107).
-=======
-Issues principali [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89) · [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) · consolidamento docs [#107](https://github.com/laraxot/base_fixcity_fila5/issues/107).
->>>>>>> laraxot/dev
-=======
-Issues principali [#89](https://github.com/laraxot/base_fixcity_fila5/issues/89) · [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) · consolidamento docs [#107](https://github.com/laraxot/base_fixcity_fila5/issues/107).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

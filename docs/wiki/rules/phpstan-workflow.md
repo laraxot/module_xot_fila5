@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-workflow
-description: "Data Creazione: 11 Novembre 2025"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # 🎯 PHPStan Workflow - Regola Critica
 
 **Data Creazione**: 11 Novembre 2025

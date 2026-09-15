@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: package-discovery-philosophy
-description: " Executive Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Package Discovery - Philosophy, Logic & Zen
 
 ## Executive Summary
@@ -245,19 +235,7 @@ With 80 packages × 110 seconds = 8,800 seconds = 2.4 hours
   - `dont-discover` opt-out mechanism added
 - **Laravel 6.x+**: Discovery extended to facades, aliases
 - **Laravel 8.x+**: Improved caching and performance
-<<<<<<< HEAD
 - **Laravel 12.x** (Current): Mature, stable, production-proven
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Laravel 13.x** (Current): Mature, stable, production-proven
-=======
-- **Laravel 12.x** (Current): Mature, stable, production-proven
->>>>>>> laraxot/dev
-=======
-- **Laravel 12.x** (Current): Mature, stable, production-proven
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Inspiration**: Similar to Java's `ServiceLoader`, .NET's reflection-based discovery, Python's entry points.
 
@@ -361,19 +339,7 @@ The command discovered these categories:
 **Module Packages**:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
-<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, <nome progetto>
-=======
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
->>>>>>> laraxot/dev
-=======
-- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -384,19 +350,7 @@ Each module uses this pattern:
 
 ```json
 {
-<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "name": "laraxot/module_user_fila5",
-=======
-    "name": "laraxot/module_user_fila3",
->>>>>>> laraxot/dev
-=======
-    "name": "laraxot/module_user_fila3",
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     "extra": {
         "laravel": {
             "providers": [

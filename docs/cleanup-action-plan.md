@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: cleanup-action-plan
-description: "Date: 2025-10-17"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Documentation Cleanup & Reorganization - Action Plan
 
 **Date**: 2025-10-17
@@ -83,19 +73,7 @@ Based on importance and interdependencies:
 3. **Tenant** - Multi-tenancy
 
 ### Tier 2 - Major Business Logic
-<<<<<<< HEAD
 4. **Quaeris** - Survey management (main application)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. **<nome progetto>** - Survey management (main application)
-=======
-4. **Quaeris** - Survey management (main application)
->>>>>>> laraxot/dev
-=======
-4. **Quaeris** - Survey management (main application)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 5. **Limesurvey** - Survey integration
 6. **Cms** - Content management
 7. **Notify** - Notifications (email/SMS)

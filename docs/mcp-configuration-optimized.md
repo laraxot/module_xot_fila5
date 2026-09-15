@@ -1,23 +1,4 @@
-<<<<<<< HEAD
----
-name: mcp-configuration-optimized
-description: "Data Creazione: 2025-01-27"
-metadata:
-  type: documentation
----
-
 # Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Configurazione MCP Ottimizzata per base_techplanner_fila5
-=======
-# Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
->>>>>>> laraxot/dev
-=======
-# Configurazione MCP Ottimizzata per base_techplanner_fila4_mono
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Data Creazione**: 2025-01-27
 **Ultimo Aggiornamento**: 2025-01-27
@@ -31,19 +12,7 @@ metadata:
 
 ## 🎯 Scopo del Documento
 
-<<<<<<< HEAD
 Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila5**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> laraxot/dev
-=======
-Questo documento descrive la configurazione MCP ottimizzata per il progetto **base_techplanner_fila4_mono**, risultato di analisi approfondita delle necessità del progetto seguendo la metodologia Super Mucca.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 

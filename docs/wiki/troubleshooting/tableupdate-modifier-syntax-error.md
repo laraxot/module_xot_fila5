@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: tableupdate-modifier-syntax-error
-description: " Context"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # `tableUpdate` and Modifier Methods (`->after()`, `->change()`)
 
 ## Context

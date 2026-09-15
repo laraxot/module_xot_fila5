@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: project-overview-comprehensive
-description: " 📋 Sommario"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 🏗️ TechPlanner Fila4 Mono - Panoramica Completa del Progetto
 
 ## 📋 Sommario
@@ -21,19 +11,7 @@ metadata:
 
 ## Introduzione
 
-<<<<<<< HEAD
 Il progetto **TechPlanner Fila4 Mono** è un'applicazione Laravel 12.x modulare costruita con Filament 4.x, seguendo l'architettura **Laraxot**. Il sistema implementa un approccio modulare con una gerarchia chiara di dipendenze e una filosofia di sviluppo basata sui principi **DRY (Don't Repeat Yourself)** e **KISS (Keep It Simple, Stupid)**.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il progetto **TechPlanner Fila4 Mono** è un'applicazione Laravel 13.x modulare costruita con Filament 5.x, seguendo l'architettura **Laraxot**. Il sistema implementa un approccio modulare con una gerarchia chiara di dipendenze e una filosofia di sviluppo basata sui principi **DRY (Don't Repeat Yourself)** e **KISS (Keep It Simple, Stupid)**.
-=======
-Il progetto **TechPlanner Fila4 Mono** è un'applicazione Laravel 12.x modulare costruita con Filament 4.x, seguendo l'architettura **Laraxot**. Il sistema implementa un approccio modulare con una gerarchia chiara di dipendenze e una filosofia di sviluppo basata sui principi **DRY (Don't Repeat Yourself)** e **KISS (Keep It Simple, Stupid)**.
->>>>>>> laraxot/dev
-=======
-Il progetto **TechPlanner Fila4 Mono** è un'applicazione Laravel 12.x modulare costruita con Filament 4.x, seguendo l'architettura **Laraxot**. Il sistema implementa un approccio modulare con una gerarchia chiara di dipendenze e una filosofia di sviluppo basata sui principi **DRY (Don't Repeat Yourself)** e **KISS (Keep It Simple, Stupid)**.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Architettura del Sistema
 

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: test-service-providers
-description: "Modulo: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Task: Test Service Providers
 
 **Modulo**: Xot  

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: tdd-laravel-pestd-complete-guide
-description: "> CRITICAL RULE: This document provides the complete TDD workflow for Laravel Modules using Pest PHP. Follow these patterns EXACTLY for 100%"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Test-Driven Development (TDD) in Laravel Modules with Pest
 
 > **CRITICAL RULE**: This document provides the complete TDD workflow for Laravel Modules using Pest PHP. Follow these patterns EXACTLY for 100% test coverage.

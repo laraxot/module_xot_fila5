@@ -1,19 +1,7 @@
 ---
 id: pest-v5-upgrade
 slug: pest-v5-upgrade-xot
-<<<<<<< HEAD
 scope: [project:base_workorder_fila5, modules:Xot, modules:All]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-scope: [project:<repo progetto>, modules:Xot, modules:All]
-=======
-scope: [project:base_workorder_fila5, modules:Xot, modules:All]
->>>>>>> laraxot/dev
-=======
-scope: [project:base_workorder_fila5, modules:Xot, modules:All]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 status: Done
 priority: High
 created: 2026-09-06

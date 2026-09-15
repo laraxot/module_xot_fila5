@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: product-requirements
-description: " Metadata"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -293,27 +283,9 @@ interface XotBaseResourceContract
     public static function getModel(): string;
     public static function getRelations(): array;
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array;
-    public function getFormSchema(): array;
-=======
-<<<<<<< HEAD
-    public static function getFormSchema(): array;
-=======
-    public function getFormSchema(): array;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
     public function getFormSchema(): array;
 =======
     public function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public static function getTableColumns(): array;
 }
@@ -515,18 +487,6 @@ public function oldMethod()
 - [ ] Tenant scope overhead <5ms
 
 ### Compatibility
-<<<<<<< HEAD
 - [ ] Laravel 12 compatibile
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ ] Laravel 13 compatibile
-=======
-- [ ] Laravel 12 compatibile
->>>>>>> laraxot/dev
-=======
-- [ ] Laravel 12 compatibile
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [ ] Filament 5.x compatibile
 - [ ] PHP 8.3 compatibile

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-zero-errors-status
-description: "Stato reale al 2026-07-03, misurato con:"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan level-max: percorso verso zero errori su tutto Modules/
 
 Stato reale al 2026-07-03, misurato con:
@@ -65,19 +55,7 @@ Distribuzione per categoria (top):
 Xot: 465 -> 147 errori. Vedi `docs/chat/phpstan-zero-errors.md` (root del progetto) per il log
 dettagliato di coordinamento multi-agente e i fix applicati in questa sessione (ExtraContract,
 CollectionExport, LazyCollectionExport). Issue GitHub di tracking:
-<<<<<<< HEAD
 https://github.com/laraxot/base_techplanner_fila5/issues/34
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://github.com/laraxot/<repo progetto>/issues/34
-=======
-https://github.com/laraxot/base_techplanner_fila5/issues/34
->>>>>>> laraxot/dev
-=======
-https://github.com/laraxot/base_techplanner_fila5/issues/34
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Come continuare
 

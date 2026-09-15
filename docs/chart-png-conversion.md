@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: chart-png-conversion
-description: " 📋 Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Chart PNG Conversion Guide
 
 ## 📋 Overview

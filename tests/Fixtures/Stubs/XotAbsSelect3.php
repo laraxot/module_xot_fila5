@@ -6,6 +6,4 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
-final class XotAbsSelect3 extends XotBaseSelect
-{
-}
+final class XotAbsSelect3 extends XotBaseSelect {}

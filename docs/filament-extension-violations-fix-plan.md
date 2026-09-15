@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-extension-violations-fix-plan
-description: " 🎯 Analisi Violazioni - 30 Dicembre 2025"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Extension Rules - Correzioni Violazioni Critiche
 
 ## 🎯 Analisi Violazioni - 30 Dicembre 2025

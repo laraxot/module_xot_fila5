@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 #Install from zero
 
 ~~~ bash
@@ -23,14 +16,7 @@ use Illuminate\Http\Request;
 define('LARAVEL_START', microtime(true));
 define('LARAVEL_DIR', __DIR__.'/../laravel');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
 // Determine if the application is in maintenance mode...
 if (file_exists($maintenance = LARAVEL_DIR.'/storage/framework/maintenance.php')) {
     require $maintenance;
@@ -89,15 +75,7 @@ return Application::configure(basePath: dirname(__DIR__))
     })->create();
 ~~~
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-edit file composer.json
-=======
 edit file composer.json 
->>>>>>> laraxot/dev
-=======
-edit file composer.json 
->>>>>>> laraxot/dev
 ~~~ json
 {
     "name": "laravel/laravel",
@@ -185,15 +163,7 @@ edit file composer.json
     "prefer-stable": true
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-~~~
-=======
 ~~~ 
->>>>>>> laraxot/dev
-=======
-~~~ 
->>>>>>> laraxot/dev
 
 from folder demo01
 ~~~ bash
@@ -219,37 +189,15 @@ create Folders :
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> .merge_file_BRvOeX
-~~~
-
-=======
-=======
->>>>>>> laraxot/dev
 >>>>>>> .merge_file_qdw5qa
 ~~~
 
 
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 from folder laravel
 ~~~ bash
 git submodule add  https://github.com/laraxot/filament-modules.git  packages/savannabits/filament-modules
 
 composer update -W (--with-all-dependencies)
-<<<<<<< HEAD
-<<<<<<< HEAD
-~~~
-=======
 ~~~ 
 
 
->>>>>>> laraxot/dev
-=======
-~~~ 
-
-
->>>>>>> laraxot/dev

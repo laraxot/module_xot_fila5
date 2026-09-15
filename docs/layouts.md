@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: layouts
-description: "I layout sono i template base che definiscono la struttura delle pagine. Ogni tema può definire i propri layout."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Layout in il progetto
 
 I layout sono i template base che definiscono la struttura delle pagine. Ogni tema può definire i propri layout.

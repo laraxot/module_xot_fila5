@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: web-scraping
-description: "<!-- Contenuto migrato da docs/webscraping.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # web_scraping
 
 <!-- Contenuto migrato da _docs/web_scraping.txt -->

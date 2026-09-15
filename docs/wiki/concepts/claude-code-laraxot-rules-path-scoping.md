@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: claude-code-laraxot-rules-path-scoping
-description: " Decisione"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Claude Code Laraxot Rules Path Scoping
 
 ## Decisione

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: module-documentation-standard
-description: "This document defines the standard structure and format for module documentation in the Laraxot architecture."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Module Documentation Standard
 
 This document defines the standard structure and format for module documentation in the Laraxot architecture.
@@ -126,19 +116,7 @@ public function createUser(array $data): User
 - Document permission and role systems
 - Include social login integration guides
 
-<<<<<<< HEAD
 ### Quaeris Module
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### <nome progetto> Module
-=======
-### Quaeris Module
->>>>>>> laraxot/dev
-=======
-### Quaeris Module
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 - Document survey management workflows
 - Document reporting and analytics features

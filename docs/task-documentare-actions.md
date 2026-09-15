@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: task-documentare-actions
-description: "Modulo: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Task: Documentare Actions Framework - Xot
 
 **Modulo**: Xot

@@ -54,27 +54,9 @@ quindi `config/database.php` resta standard e non va modificato a mano.
 
 | Variabile | Connessione | Sviluppo | Test |
 |---|---|---|---|
-<<<<<<< HEAD
 | `DB_DATABASE` | `mysql` (default) | `quaeris_data` | `quaeris_data_test` |
 | `DB_DATABASE_USER` | `user` | `quaeris_user` | `quaeris_user_test` |
 | `DB_DATABASE_LIMESURVEY` | `limesurvey` | `quaeris_survey` | `quaeris_survey_test` |
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-| `DB_DATABASE` | `mysql` (default) | `<nome progetto>_data` | `<nome progetto>_data_test` |
-| `DB_DATABASE_USER` | `user` | `<nome progetto>_user` | `<nome progetto>_user_test` |
-| `DB_DATABASE_LIMESURVEY` | `limesurvey` | `<nome progetto>_survey` | `<nome progetto>_survey_test` |
-=======
-| `DB_DATABASE` | `mysql` (default) | `quaeris_data` | `quaeris_data_test` |
-| `DB_DATABASE_USER` | `user` | `quaeris_user` | `quaeris_user_test` |
-| `DB_DATABASE_LIMESURVEY` | `limesurvey` | `quaeris_survey` | `quaeris_survey_test` |
->>>>>>> laraxot/dev
-=======
-| `DB_DATABASE` | `mysql` (default) | `quaeris_data` | `quaeris_data_test` |
-| `DB_DATABASE_USER` | `user` | `quaeris_user` | `quaeris_user_test` |
-| `DB_DATABASE_LIMESURVEY` | `limesurvey` | `quaeris_survey` | `quaeris_survey_test` |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Host, porta, utente e password sono identici a quelli di sviluppo. Cambia solo il nome del
 database. Configurare una sola connessione su `_test` e lasciare le altre sui database di

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-inheritance-guidelines-1
-description: " Problema di Compatibilità con Metodi Statici/Non Statici"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Linee Guida per l'Ereditarietà da Classi Filament
 
 ## Problema di Compatibilità con Metodi Statici/Non Statici

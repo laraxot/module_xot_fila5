@@ -154,4 +154,3 @@ phpinsights.php
 rector.php
 .php-cs*.*
 phpmd*.*
-tests/coverage-*

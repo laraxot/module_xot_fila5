@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: relation-manager-typed-property-fix
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBaseRelationManager Typed Property Fix
 
 ## Problema

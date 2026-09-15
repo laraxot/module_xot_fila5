@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: namespacing
-description: " Struttura Namespace Standard"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Convenzioni Namespace in il progetto
 
 ## Struttura Namespace Standard

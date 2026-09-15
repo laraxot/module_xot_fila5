@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: case-variant-collisions
-description: "Misurato: 2026-08-31"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Collisioni di nome per sola differenza di maiuscole
 
 **Misurato**: 2026-08-31

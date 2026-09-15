@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: spatie-permission-team-boundary
-description: " Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Spatie Permission Team Boundary
 
 ## Rule

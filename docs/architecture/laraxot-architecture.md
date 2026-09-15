@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-architecture
-description: " Core Philosophy (Filosofia)"
-metadata:
-  type: architecture
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Architecture: Philosophy, Religion, Politics, and Zen
 
 ## Core Philosophy (Filosofia)

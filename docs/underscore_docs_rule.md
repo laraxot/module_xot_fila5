@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: underscore-docs-rule
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Underscore Directories Rule - No _docs/
 
 ## Regola Fondamentale

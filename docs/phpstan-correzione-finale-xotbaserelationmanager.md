@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-correzione-finale-xotbaserelationmanager
-description: "Data: 2025-12-23"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzione Finale PHPStan - XotBaseRelationManager ✅
 
 **Data**: 2025-12-23

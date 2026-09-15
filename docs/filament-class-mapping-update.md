@@ -1,41 +1,10 @@
 <<<<<<< HEAD
----
-name: filament-class-mapping-update
-description: "======="
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
 # Aggiornamento Mapping Classi Filament - [DATE]
 
 =======
-=======
-<<<<<<< HEAD
-# Aggiornamento Mapping Classi Filament - [DATE]
-
-<<<<<<< HEAD
 # Aggiornamento Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
-=======
-<<<<<<< HEAD
-# Aggiornamento Mapping Classi Filament - [DATE]
-
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-# Aggiornamento Mapping Classi Filament - 2025-12-23
-
-**Data**: 2025-12-23
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **Obiettivo**: Verificare e correggere mapping classi nel file `filament_class.txt`
 

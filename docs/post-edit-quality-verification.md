@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: post-edit-quality-verification
-description: " Regola Fondamentale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regola Post-Edit: Verifica Qualità Obbligatoria
 
 ## Regola Fondamentale

@@ -1,21 +1,4 @@
 <<<<<<< HEAD
----
-name: cart-session
-description: "> Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si"
-metadata:
-  type: documentation
----
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 https://github.com/seikan/Cart/blob/master/class.Cart.php
 
@@ -88,18 +71,7 @@ https://github.com/Tefoh/Cart
 
 
 https://github.com/Codexshaper/laravel-woocommerce
-<<<<<<< HEAD
 =======
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ---
 title: 'Cart session — risorse esterne'
 module: Xot
@@ -160,13 +132,4 @@ updated: 2026-08-24
 - <https://meritocracy.is/blog/2021/06/08/laravel-implementing-a-shopping-cart-for-your-website/>
 - <https://github.com/Tefoh/Cart>
 - <https://github.com/Codexshaper/laravel-woocommerce>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

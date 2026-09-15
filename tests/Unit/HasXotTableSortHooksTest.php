@@ -8,6 +8,9 @@ use PHPUnit\Framework\Assert;
 
 uses(PHPUnit\Framework\TestCase::class);
 
+/**
+ * @param object $instance
+ */
 function invokeProtectedSortHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -16,7 +19,8 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
 }
 
 test('getTableSortColumn default su XotBaseResourceTable', function (): void {
-    $table = new class extends XotBaseResourceTable {
+    $table = new class extends XotBaseResourceTable
+    {
         public function getTableColumns(): array
         {
             return [];
@@ -33,7 +37,8 @@ test('getTableSortColumn default su XotBaseResourceTable', function (): void {
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
-    $table = new class extends XotBaseResourceTable {
+    $table = new class extends XotBaseResourceTable
+    {
         public function getTableColumns(): array
         {
             return [];

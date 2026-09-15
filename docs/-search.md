@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: search
-description: "<!-- Contenuto migrato da docs/search.txt -->"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # _search
 
 <!-- Contenuto migrato da _docs/_search.txt -->

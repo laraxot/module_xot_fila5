@@ -202,10 +202,6 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_7HeyVL
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -217,7 +213,6 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_lvjHvI
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name'),

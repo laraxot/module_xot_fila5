@@ -1,48 +1,6 @@
-<<<<<<< HEAD
----
-name: coverage
-description: " Overview"
-metadata:
-  type: documentation
----
-
 # Xot Module Test Coverage
 
 ## Overview
-=======
-# Xot Module Test Coverage
-
-## Overview
-<<<<<<< HEAD
-This module has comprehensive test coverage with various test types implemented.
-
-## Test Results
-- **Tests Passed**: 0
-- **Assertions**: 0
-- **Test Types**: Unit, Feature, Integration tests
-
-## Coverage Statistics
-- **Files**: 0
-- **Lines of Code**: 0
-- **Classes**: 0
-- **Methods**: 0
-- **Coverage Rate**: 0%
-
-## Test Categories
-- Unit Tests
-- Feature Tests
-- Integration Tests
-
-## Status
-All tests are passing and coverage is being maintained.
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 Questa sezione in cima era boilerplate mai compilato (tutti zero, "Status: all
 passing" senza numeri a sostegno) — corretta il 2026-09-11 con l'ultima
@@ -91,10 +49,6 @@ entrambi i casi il lato `HEAD` era vuoto o un sottoinsieme esatto del lato
 tenuto il lato piu' completo. Vedi second brain
 `xot-coverage-md-merge-markers-resolved-2026-09-11.md`.
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## Services to Actions conversion — 2026-09-04
 
 Sessione Claude Sonnet 5, story `docs/stories/18.1.xot-services-to-actions.story.md`.
@@ -152,16 +106,6 @@ gia' presenti nel codice sorgente originale) — nessun nuovo debito introdotto.
 Dettaglio completo per-file (Kind A/B, path vecchio → nuovo, motivazione):
 vedi la story.
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## PHPStan swarm fix — 2026-09-02
 
 Sessione Claude Sonnet 5 (6748f176), claim `docs/chat/claim-phpstan-542-swarm-2026-09-02.md`.
@@ -255,19 +199,6 @@ contratto in-flux di quel file.
 errori `typeCoverage.*` residui nel modulo (soglia tree-wide, contributo Xot
 azzerato); tutti gli errori `cast.*`/`method.deprecated`/`*deprecatedClass*`/
 `class.implements*`/`class.extends*` sui file toccati risolti, tranne il cluster
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-bridge sopra descritto.
-=======
-<<<<<<< HEAD
-bridge sopra descritto.
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 bridge sopra descritto.
 
 ## Riduzione uso di `mixed` — 2026-09-04
@@ -374,16 +305,6 @@ sostituito ovunque da `Actions/Model/GetAllModelsByModuleNameAction`
 (gia' esistente, logica identica). I suoi 2 test riscritti sul sostituto
 (coverage preservata). `phpstan analyse Modules/Xot`: 0 errori, cache
 pulita, verificato.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## StoryEpicAndOwnedScopeTest — Safe wrappers e narrowing — 2026-09-08
 

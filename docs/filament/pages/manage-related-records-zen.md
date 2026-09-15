@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: manage-related-records-zen
-description: " Philosophy"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # ManageRelatedRecords Zen
 
 ## Philosophy

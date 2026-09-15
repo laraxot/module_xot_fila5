@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: index
-description: "Modulo: Xot / roadmap"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Documentation Index
 
 Modulo: Xot / roadmap

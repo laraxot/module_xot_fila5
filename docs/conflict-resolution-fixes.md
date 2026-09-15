@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: conflict-resolution-fixes
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo Xot
 
 ## Panoramica

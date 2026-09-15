@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: correzioni-effettuate
-description: "Questo documento riassume le correzioni applicate per risolvere gli errori PHPStan di livello 9 nel codice."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzioni Effettuate per Errori PHPStan
 
 Questo documento riassume le correzioni applicate per risolvere gli errori PHPStan di livello 9 nel codice.

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: has-tenants
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Trait HasTenants
 
 ## Descrizione

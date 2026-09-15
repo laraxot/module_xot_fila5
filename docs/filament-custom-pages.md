@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-custom-pages
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Filament Custom Pages - Documentazione Modulo Xot
 
 ## Overview

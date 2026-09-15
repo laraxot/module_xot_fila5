@@ -358,9 +358,9 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * NON usare mai `$this->getResource()` qui: identifica la Resource
      * PROPRIETARIA della pagina, non quella della relazione.
      *
-     * @throws \InvalidArgumentException se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali
-     *
      * @return class-string<XotBaseResource>
+     *
+     * @throws \InvalidArgumentException Se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali.
      */
     protected function getRelatedResourceClass(): string
     {

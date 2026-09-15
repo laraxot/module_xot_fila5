@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: "Questa cartella contiene la wiki curata del modulo Xot per uso LLM."
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # LLM Wiki (module)
 
 Questa cartella contiene la wiki curata del modulo **Xot** per uso LLM.

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: architecture
-description: " 🏗️ Panoramica Architetturale"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architettura Modulo Xot
 
 ## 🏗️ Panoramica Architetturale

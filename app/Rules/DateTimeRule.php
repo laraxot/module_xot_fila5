@@ -18,7 +18,7 @@ class DateTimeRule implements ValidationRule
     /**
      * Run the validation rule.
      *
-     * @param \Closure(string, string|null=): PotentiallyTranslatedString $fail
+     * @param  \Closure(string, string|null=): PotentiallyTranslatedString  $fail
      */
     public function validate(string $attribute, mixed $value, \Closure $fail): void
     {

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: hasxotfactory
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # HasXotFactory Trait
 
 ## Panoramica

@@ -1,23 +1,4 @@
-<<<<<<< HEAD
----
-name: filament4-upgrade-fixes
-description: " Problema Iniziale: ProviderRepository arraymerge()"
-metadata:
-  type: troubleshooting
----
-
 # Risoluzione Errori Upgrade Filament 4 - Laraxot PTVX
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Risoluzione Errori Upgrade Filament 5 - Laraxot PTVX
-=======
-# Risoluzione Errori Upgrade Filament 4 - Laraxot PTVX
->>>>>>> laraxot/dev
-=======
-# Risoluzione Errori Upgrade Filament 4 - Laraxot PTVX
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Problema Iniziale: ProviderRepository array_merge()
 
@@ -45,19 +26,7 @@ File cache corrotti in `bootstrap/cache/` dopo l'installazione di `filament/upgr
    php artisan config:cache
    ```
 
-<<<<<<< HEAD
 ## Problema Secondario: Tipizzazione Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Problema Secondario: Tipizzazione Filament 5
-=======
-## Problema Secondario: Tipizzazione Filament 4
->>>>>>> laraxot/dev
-=======
-## Problema Secondario: Tipizzazione Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Errore
 ```
@@ -65,19 +34,7 @@ Type of $navigationIcon must be BackedEnum|string|null (as in class Filament\Pag
 ```
 
 ### Causa
-<<<<<<< HEAD
 Filament 4 richiede tipizzazione `BackedEnum|string|null` per `$navigationIcon` invece di `?string`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Filament 5 richiede tipizzazione `BackedEnum|string|null` per `$navigationIcon` invece di `?string`
-=======
-Filament 4 richiede tipizzazione `BackedEnum|string|null` per `$navigationIcon` invece di `?string`
->>>>>>> laraxot/dev
-=======
-Filament 4 richiede tipizzazione `BackedEnum|string|null` per `$navigationIcon` invece di `?string`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Soluzione Architettonica
 Invece di correggere ogni singolo Dashboard, abbiamo centralizzato la soluzione in `XotBaseDashboard`:
@@ -88,19 +45,7 @@ Invece di correggere ogni singolo Dashboard, abbiamo centralizzato la soluzione 
    abstract class XotBaseDashboard extends FilamentDashboard
    {
        /**
-<<<<<<< HEAD
         * Navigation icon compatible with Filament 4.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-        * Navigation icon compatible with Filament 5.
-=======
-        * Navigation icon compatible with Filament 4.
->>>>>>> laraxot/dev
-=======
-        * Navigation icon compatible with Filament 4.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         * Supports BackedEnum, string, or null values.
         */
        protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-home';
@@ -215,19 +160,7 @@ Laravel Framework 12.28.1
 
 ## Collegamenti
 - [XotBaseDashboard](../filament/pages/xot-base-dashboard.md)
-<<<<<<< HEAD
 - [Filament 4 Migration Guide](../upgrades/filament-4-migration.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5 Migration Guide](../upgrades/Filament-5-migration.md)
-=======
-- [Filament 4 Migration Guide](../upgrades/filament-4-migration.md)
->>>>>>> laraxot/dev
-=======
-- [Filament 4 Migration Guide](../upgrades/filament-4-migration.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Dashboard Architecture](../architecture/dashboard-pattern.md)
 
 ## Stato

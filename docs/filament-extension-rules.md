@@ -1,23 +1,4 @@
-<<<<<<< HEAD
----
-name: filament-extension-rules
-description: "Questa pagina esiste per compatibilità e storico del modulo."
-metadata:
-  type: documentation
----
-
 # Filament Class Extension Rules - base_techplanner_fila5_mono
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Filament Class Extension Rules - <repo progetto>
-=======
-# Filament Class Extension Rules - base_techplanner_fila5_mono
->>>>>>> laraxot/dev
-=======
-# Filament Class Extension Rules - base_techplanner_fila5_mono
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Questa pagina esiste per compatibilità e storico del modulo.
 

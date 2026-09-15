@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: wizard-widget-rules
-description: "Status: Active"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Wizard Widget Rules — XotBaseWizardWidget
 
 **Status**: Active  
@@ -44,19 +34,7 @@ TextInput::make('address')
 **Perche**: LangServiceProvider configura automaticamente label, placeholder, helperText, tooltip per TUTTI i componenti Filament via `AutoLabelAction`.
 
 **Pattern chiave**: `{namespace}::{widget_snake_case}.{type}.{name}.{property}`  
-<<<<<<< HEAD
 **Esempio**: `fixcity::create_ticket_wizard.fields.address.label`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Esempio**: `<nome progetto>::create_ticket_wizard.fields.address.label`
-=======
-**Esempio**: `fixcity::create_ticket_wizard.fields.address.label`
->>>>>>> laraxot/dev
-=======
-**Esempio**: `fixcity::create_ticket_wizard.fields.address.label`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -130,19 +108,7 @@ public function submit(): void
     Model::create($flat);
 }
 
-<<<<<<< HEAD
 // ✅ PATTERN FIXCITY (ticket wizard)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// ✅ PATTERN <nome progetto> (ticket wizard)
-=======
-// ✅ PATTERN FIXCITY (ticket wizard)
->>>>>>> laraxot/dev
-=======
-// ✅ PATTERN FIXCITY (ticket wizard)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 public function submit(): void
 {
     /** @var array<string, mixed> $data */
@@ -285,23 +251,8 @@ CreateTicketWizardWidget (dominio concreto: creazione ticket)
 - [XotBaseWizardWidget Philosophy](./xot-base-wizard-widget-philosophy.md)
 - [LangServiceProvider Auto-Label](../../../../Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](../../../../Lang/app/Actions/Filament/AutoLabelAction.php)
-<<<<<<< HEAD
 - [CreateTicketWizardWidget Example](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
 - [Filament Wizard Rules (Fixcity)](../../../../Fixcity/docs/filament-wizard-rule.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [CreateTicketWizardWidget Example](../../../../<nome progetto>/app/Filament/Widgets/CreateTicketWizardWidget.php)
-- [Filament Wizard Rules (<nome progetto>)](../../../../<nome progetto>/docs/filament-wizard-rule.md)
-=======
-- [CreateTicketWizardWidget Example](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
-- [Filament Wizard Rules (Fixcity)](../../../../Fixcity/docs/filament-wizard-rule.md)
->>>>>>> laraxot/dev
-=======
-- [CreateTicketWizardWidget Example](../../../../Fixcity/app/Filament/Widgets/CreateTicketWizardWidget.php)
-- [Filament Wizard Rules (Fixcity)](../../../../Fixcity/docs/filament-wizard-rule.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: model-with-pos-contract-resolution-1
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitto in ModelWithPosContract
 
 ## Panoramica

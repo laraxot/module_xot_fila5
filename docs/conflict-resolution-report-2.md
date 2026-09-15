@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: conflict-resolution-report-2
-description: "Data: 2025-01-27"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Report Risoluzione Conflitti Git - Develop Branch
 
 **Data**: 2025-01-27  

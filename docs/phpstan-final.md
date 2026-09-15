@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-final
-description: "Status: ✅ ANALISI COMPLETA ESTRATTA"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Level 10 - Riepilogo Finale Gennaio 2026
 
 **Status**: ✅ ANALISI COMPLETA ESTRATTA

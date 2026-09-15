@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: chart-generation-base
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Chart Generation Actions - Base Implementation
 
 ## Overview

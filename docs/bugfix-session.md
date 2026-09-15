@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: bugfix-session
-description: " 🎯 Obiettivo"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Bugfix Session - 4 Gennaio 2025
 
 ## 🎯 Obiettivo
@@ -287,22 +277,6 @@ Eccezioni rare:
 - [../../bashscripts/docs/file-locking-pattern.md](../../../bashscripts/docs/file-locking-pattern.md)
 - [../../User/docs/syntax-errors-to-fix.md](../../User/docs/syntax-errors-to-fix.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 - [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
-=======
-<<<<<<< HEAD
-=======
-- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-=======
-- [../../User/docs/syntax-errors-to-fix.md](../../user/docs/syntax-errors-to-fix.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

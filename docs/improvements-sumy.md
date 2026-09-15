@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: improvements-sumy
-description: "Metodologia: Super Mucca"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Riepilogo Miglioramenti e Analisi - [DATE]
 
 **Metodologia**: Super Mucca  

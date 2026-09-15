@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: gsd-canonical-source
-description: " Regola"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # GSD Canonical Source
 
 ## Regola

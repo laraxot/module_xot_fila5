@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-philosophy-summary
-description: "Data: 8 Gennaio 2026"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Riassunto Filosofia Laraxot - Gennaio 2026
 
 **Data**: 8 Gennaio 2026

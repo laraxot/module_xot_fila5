@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-5-upgrade-guide
-description: "Riferimento ufficiale: <https://filamentphp.com/docs/5.x/upgrade-guide>"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Guida upgrade Filament 5 - Modulo Xot
 
 **Riferimento ufficiale:** <https://filamentphp.com/docs/5.x/upgrade-guide>
@@ -20,19 +10,7 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 ## Requisiti Filament v5
 
 - PHP 8.2+ ✅ (Il progetto ha 8.3.29)
-<<<<<<< HEAD
 - Laravel v11.28+ ✅ (Laravel 12)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Laravel v11.28+ ✅ (Laravel 13)
-=======
-- Laravel v11.28+ ✅ (Laravel 12)
->>>>>>> laraxot/dev
-=======
-- Laravel v11.28+ ✅ (Laravel 12)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Livewire v4.0+ ⚠️ (Upgrade da v3 in corso)
 - Tailwind CSS v4.1+ ⚠️ (Da verificare)
 
@@ -40,19 +18,7 @@ Per una guida completa e dettagliata su tutti i breaking changes e le procedure 
 
 **Filament 5 esiste PRINCIPALMENTE per supportare Livewire 4.**
 
-<<<<<<< HEAD
 - **NON ci sono breaking changes funzionali** tra Filament 4 e 5
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **NON ci sono breaking changes funzionali** tra Filament 5 e 5
-=======
-- **NON ci sono breaking changes funzionali** tra Filament 4 e 5
->>>>>>> laraxot/dev
-=======
-- **NON ci sono breaking changes funzionali** tra Filament 4 e 5
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **Tutte le API Filament rimangono compatibili**
 - **L'unico motivo per l'upgrade è Livewire 4**
 - **L'upgrade è considerato a basso rischio**
@@ -153,19 +119,7 @@ Nel progetto: verificare `filament/spatie-laravel-media-library-plugin` e altri 
 - **Documentazione**: dopo l’upgrade, verificare [filament.md](filament.md), [filament-v4-migration-guide.md](filament-v4-migration-guide.md) e [filament-best-practices.md](filament-best-practices.md) per eventuali adattamenti a v5.
 - **Configurazioni globali**: se in XotServiceProvider o AdminPanelProvider ci sono `configureUsing()` per Section/Grid/Fieldset/Table (es. v4), confrontare con il comportamento v5 e adattare se necessario.
 
-<<<<<<< HEAD
 ## Stato upgrade (base_workorder_fila5)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Stato upgrade (<repo progetto>)
-=======
-## Stato upgrade (base_workorder_fila5)
->>>>>>> laraxot/dev
-=======
-## Stato upgrade (base_workorder_fila5)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 - [x] Documentazione creata (filament-5-upgrade-guide.md)
 - [x] Script `vendor/bin/filament-v5` eseguito con directory `app,Modules` – modifiche applicate

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: brand-migration
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 # Migrazione al Nuovo Sistema Brand
 

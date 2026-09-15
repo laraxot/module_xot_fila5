@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: action-return-type-rule
-description: " Rule"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Rule: File-generating Action closures MUST return StreamedResponse
 
 

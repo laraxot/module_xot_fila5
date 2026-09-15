@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: service-provider-architecture
-description: " Panoramica Business Logic"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Architettura Service Provider in Laraxot/PTVX
 
 ## Panoramica Business Logic

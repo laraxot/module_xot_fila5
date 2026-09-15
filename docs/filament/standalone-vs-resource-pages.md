@@ -1,41 +1,10 @@
-<<<<<<< HEAD
----
-name: standalone-vs-resource-pages
-description: " Business Logic"
-metadata:
-  type: documentation
----
-
 # Standalone Pages vs Resource Pages in Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Standalone Pages vs Resource Pages in Filament 5
-=======
-# Standalone Pages vs Resource Pages in Filament 4
->>>>>>> laraxot/dev
-=======
-# Standalone Pages vs Resource Pages in Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Business Logic
 
 ### Il Problema che Risolve
 
-<<<<<<< HEAD
 Filament 4 ha DUE tipi fondamentali di Pages con scopi diversi:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Filament 5 ha DUE tipi fondamentali di Pages con scopi diversi:
-=======
-Filament 4 ha DUE tipi fondamentali di Pages con scopi diversi:
->>>>>>> laraxot/dev
-=======
-Filament 4 ha DUE tipi fondamentali di Pages con scopi diversi:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 1. **Standalone Pages**: Pagine indipendenti accessibili dal menu
 2. **Resource Pages**: Pagine che fanno parte di una Resource CRUD
@@ -429,17 +398,5 @@ test('ListLogActivities has route method', function () {
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Importanza**: CRITICA
-<<<<<<< HEAD
 **Categoria**: Architettura Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Categoria**: Architettura Filament 5
-=======
-**Categoria**: Architettura Filament 4
->>>>>>> laraxot/dev
-=======
-**Categoria**: Architettura Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Pattern**: DRY + KISS con type safety

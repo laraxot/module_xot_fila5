@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: user-contract-improvements
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot Module - User Contract Improvements
 
 ## Overview

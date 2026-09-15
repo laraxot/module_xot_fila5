@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: magic-properties-summary-1
-description: " Summary"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary
@@ -26,19 +16,7 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 ### ✅ Xot Module
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
-<<<<<<< HEAD
 ### ✅ Quaeris Module
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### ✅ <nome progetto> Module
-=======
-### ✅ Quaeris Module
->>>>>>> laraxot/dev
-=======
-### ✅ Quaeris Module
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
 ### ✅ Chart Module

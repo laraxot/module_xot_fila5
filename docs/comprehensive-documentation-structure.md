@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: comprehensive-documentation-structure
-description: " 🏗️ Documentation Architecture"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Comprehensive Documentation Structure
 
 ## 🏗️ Documentation Architecture

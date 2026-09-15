@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaage-implementation
-description: " descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # xotbasepage: implementazione e best practices
 
 ## descrizione

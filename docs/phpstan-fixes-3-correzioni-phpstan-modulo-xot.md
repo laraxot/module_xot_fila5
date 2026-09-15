@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: phpstan-fixes-3-correzioni-phpstan-modulo-xot
-description: "Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Correzioni PHPStan - Modulo Xot
 
 Questo documento traccia gli errori PHPStan identificati nel modulo Xot e le relative soluzioni implementate.

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: generate-db-documentation
-description: " Descrizione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # GenerateDbDocumentationCommand
 
 ## Descrizione

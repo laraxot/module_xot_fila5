@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: filament-haswizard-vs-xotbasewizard
-description: " Date"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Filament HasWizard Concern vs XotBaseWizardWidget
 
 ## Date

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dry-kiss-analysis
-description: "Data: 2025-10-15"
-metadata:
-  type: wiki
----
-
-=======
->>>>>>> laraxot/dev
 # Analisi DRY e KISS - Architettura Modelli
 
 **Data**: 2025-10-15

@@ -7,6 +7,9 @@ use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use PHPUnit\Framework\Assert;
 
+/**
+ * @param object $instance
+ */
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -15,12 +18,13 @@ function invokeProtectedTableHook(object $instance, string $method): mixed
 }
 
 test('getTableFiltersLayout default e override', function (): void {
-    $default = new class {
+    $default = new class
+    {
         use HasXotTable;
 
         public string $tableSearch = '';
 
-        /** @return array<string, Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -29,12 +33,13 @@ test('getTableFiltersLayout default e override', function (): void {
 
     Assert::assertSame(FiltersLayout::AboveContent, invokeProtectedTableHook($default, 'getTableFiltersLayout'));
 
-    $custom = new class {
+    $custom = new class
+    {
         use HasXotTable;
 
         public string $tableSearch = '';
 
-        /** @return array<string, Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -50,12 +55,13 @@ test('getTableFiltersLayout default e override', function (): void {
 });
 
 test('getTableRecordActionsPosition default e override', function (): void {
-    $default = new class {
+    $default = new class
+    {
         use HasXotTable;
 
         public string $tableSearch = '';
 
-        /** @return array<string, Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
         public function getTableColumns(): array
         {
             return [];
@@ -64,12 +70,13 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
     Assert::assertSame(RecordActionsPosition::BeforeColumns, invokeProtectedTableHook($default, 'getTableRecordActionsPosition'));
 
-    $custom = new class {
+    $custom = new class
+    {
         use HasXotTable;
 
         public string $tableSearch = '';
 
-        /** @return array<string, Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
         public function getTableColumns(): array
         {
             return [];

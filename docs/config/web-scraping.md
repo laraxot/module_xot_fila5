@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: web-scraping
-description: "web-scraping"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 Introduction to Web Scraping With Laravel
 https://zubairidrisaweda.medium.com/introduction-to-web-scraping-with-laravel-a217e1444f7c

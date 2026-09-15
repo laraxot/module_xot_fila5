@@ -41,10 +41,6 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_dTNfUT
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -56,7 +52,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_747xQz
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('nome')->required(),
@@ -196,10 +191,6 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_dTNfUT
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -211,7 +202,6 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_747xQz
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('cognome')
@@ -394,10 +384,6 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 <<<<<<< HEAD
 public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_dTNfUT
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -409,7 +395,6 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_747xQz
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -659,10 +644,6 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public static function getFormSchema(): array
 =======
-<<<<<<< HEAD
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
 <<<<<<< .merge_file_dTNfUT
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -674,7 +655,6 @@ class SocioResource extends XotBaseResource
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 >>>>>>> .merge_file_747xQz
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: level-phpstan-report-livello
-description: " Errori rilevati"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # PHPStan Report - Livello 10
 
 ## Errori rilevati

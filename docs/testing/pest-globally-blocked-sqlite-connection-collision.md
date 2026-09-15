@@ -19,19 +19,7 @@ related:
 
 ```
 SQLiteDatabaseDoesNotExistException
-<<<<<<< HEAD
 Database file at path [workorder_data_test] does not exist.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Database file at path [<nome progetto>_data_test] does not exist.
-=======
-Database file at path [workorder_data_test] does not exist.
->>>>>>> laraxot/dev
-=======
-Database file at path [workorder_data_test] does not exist.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 Questo non è un problema di un modulo specifico: bloccava l'intera suite Pest del
@@ -40,19 +28,7 @@ progetto, per ogni agente, indipendentemente da cosa si stesse testando.
 ## Causa 1 — collisione nome connessione `sqlite`
 
 `config/database.php` (e le sue **5 copie di override per-tenant**:
-<<<<<<< HEAD
 `config/local/workorder/database.php`, `config/localhost/database.php`,
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-`config/local/<nome progetto>/database.php`, `config/localhost/database.php`,
-=======
-`config/local/workorder/database.php`, `config/localhost/database.php`,
->>>>>>> laraxot/dev
-=======
-`config/local/workorder/database.php`, `config/localhost/database.php`,
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 `config/net/sottana1/database.php`, `config/net/sottana2/database.php`,
 `config/com/sottana1/database.php`) definivano la connessione `sqlite` così
 (stub standard Laravel):
@@ -65,29 +41,10 @@ progetto, per ogni agente, indipendentemente da cosa si stesse testando.
 ],
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-`.env.testing` imposta `DB_CONNECTION=mariadb` + `DB_DATABASE=<nome progetto>_data_test`
-(un **nome di database MariaDB**, non un path sqlite). Il fallback
-`env('DB_DATABASE', ...)` nello stub sqlite leggeva **la stessa variabile**,
-risultando in `database.connections.sqlite.database === '<nome progetto>_data_test'`
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 `.env.testing` imposta `DB_CONNECTION=mariadb` + `DB_DATABASE=workorder_data_test`
 (un **nome di database MariaDB**, non un path sqlite). Il fallback
 `env('DB_DATABASE', ...)` nello stub sqlite leggeva **la stessa variabile**,
 risultando in `database.connections.sqlite.database === 'workorder_data_test'`
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 — una stringa letterale che SQLite tenta di aprire come path di file e
 ovviamente non trova.
 
@@ -96,38 +53,14 @@ Verificato con diagnostica diretta (bypassa Pest/PHPUnit, replica
 
 ```php
 php -r '... $app->boot(); echo config("database.connections.sqlite.database");'
-<<<<<<< HEAD
 // → "workorder_data_test" (bug) invece di un path .sqlite
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// → "<nome progetto>_data_test" (bug) invece di un path .sqlite
-=======
-// → "workorder_data_test" (bug) invece di un path .sqlite
->>>>>>> laraxot/dev
-=======
-// → "workorder_data_test" (bug) invece di un path .sqlite
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 Verificato anche: **zero** usi di `DB::connection('sqlite')` fuori da `tests/`
 in tutto `Modules/` — la connessione `sqlite` esiste **esclusivamente** per il
 pattern "fixture condivisa" (`Rating`/`Xot`/`Cms`/`HR`/... `TestCase::setUp()`
 sovrascrive `database.connections.sqlite.database` con
-<<<<<<< HEAD
 `database_path('fixcity_data.sqlite')` a runtime). Nessun rischio per codice
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-`database_path('<nome progetto>_data.sqlite')` a runtime). Nessun rischio per codice
-=======
-`database_path('fixcity_data.sqlite')` a runtime). Nessun rischio per codice
->>>>>>> laraxot/dev
-=======
-`database_path('fixcity_data.sqlite')` a runtime). Nessun rischio per codice
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 di produzione.
 
 ### Fix
@@ -145,19 +78,7 @@ reale — ma deve esistere come file, vedi Causa 2).
 // DOPO
 // Non usare env('DB_DATABASE'): quella env var e' la connessione
 // primaria (mysql/mariadb). I test la sovrascrivono sempre a runtime
-<<<<<<< HEAD
 // con la fixture condivisa (fixcity_data.sqlite).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// con la fixture condivisa (<nome progetto>_data.sqlite).
-=======
-// con la fixture condivisa (fixcity_data.sqlite).
->>>>>>> laraxot/dev
-=======
-// con la fixture condivisa (fixcity_data.sqlite).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 'database' => database_path('database.sqlite'),
 ```
 

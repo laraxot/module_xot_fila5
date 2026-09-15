@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: dual-label-chart-widget-implementation
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica
@@ -773,37 +763,13 @@ protected function getData(): array
 ### PHPStan Level 10 Compliance
 ```bash
 # ✅ Zero errori dopo refactoring
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
->>>>>>> laraxot/dev
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
-<<<<<<< HEAD
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-./vendor/bin/phpunit --coverage-html=coverage Modules/<nome progetto>/tests/Unit/SimpleChartWidgetTest.php
-=======
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
->>>>>>> laraxot/dev
-=======
-./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### Performance Metrics

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: translation-rules
-description: " Struttura dei file di traduzione"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole per i file di traduzione in Laraxot PTVX
 
 ## Struttura dei file di traduzione

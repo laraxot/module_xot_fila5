@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: translations-consolidated
-description: "> 🎯 Single Source of Truth: Questo documento centralizza TUTTA la documentazione traduzioni del progetto"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Translations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione traduzioni del progetto

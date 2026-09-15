@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: sprint-planning-meeting
-description: "> Documento operativo per sprint planning. Modulo Core Framework."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Xot - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo Core Framework.

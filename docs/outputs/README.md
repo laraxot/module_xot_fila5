@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: readme
-description: "Persistent answers, research reports, and generated summaries derived from this package wiki belong here."
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # LLM Wiki Outputs
 
 Persistent answers, research reports, and generated summaries derived from this package wiki belong here.

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: chartjsatalabels-xot-integration
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Chart.js Datalabels Plugin Implementation in Xot Module
 
 ## Overview

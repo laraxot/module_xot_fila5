@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: trait-conflict-resolution
-description: " Problema"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitto Trait: NavigationLabelTrait e XotBasePage
 
 ## Problema

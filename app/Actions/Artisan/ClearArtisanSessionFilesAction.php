@@ -19,7 +19,7 @@ class ClearArtisanSessionFilesAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
-            if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
                 File::delete($file->getRealPath());
             }
         }

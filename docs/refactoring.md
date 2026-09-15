@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: refactoring
-description: " Trait Rimossi"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Refactoring del Modulo Xot
 
 ## Trait Rimossi

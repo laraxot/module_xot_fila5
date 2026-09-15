@@ -2,19 +2,7 @@
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto <nome progetto> Fila4 Mono.
-=======
-Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
->>>>>>> laraxot/dev
-=======
-Questo documento descrive la configurazione dei server MCP (Model Context Protocol) per gli editor AI utilizzati nello sviluppo del progetto Quaeris Fila4 Mono.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Cos'è MCP?
 

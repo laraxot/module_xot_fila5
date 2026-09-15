@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: xotbaanelprovider
-description: " Panoramica"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # XotBasePanelProvider Pattern
 
 ## Panoramica

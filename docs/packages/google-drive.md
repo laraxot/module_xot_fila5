@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: google-drive
-description: "google-drive"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 
 passo passo + screenshot di dove prendere le varie key
 https://gist.github.com/mehranhadidi/38e38b80e3d533650ed2b94a0f95f7f1

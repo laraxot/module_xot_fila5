@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: laraxot-consistency-philosophy
-description: " Core Principle: Consistency Above All"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Laraxot Consistency Philosophy - Complete Guide
 
 ## Core Principle: Consistency Above All

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: pdf-engine-enum-implementation
-description: "Modulo: Xot"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Task: PdfEngineEnum Implementation
 
 **Modulo**: Xot  

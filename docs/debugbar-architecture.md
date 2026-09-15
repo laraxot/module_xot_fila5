@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: debugbar-architecture
-description: " Overview"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Debugbar Architecture
 
 ## Overview
@@ -72,19 +62,7 @@ This means Xot's `require-dev` dependencies are **merged into the root composer.
 
 ### Cleanup: Duplicate Package Names
 
-<<<<<<< HEAD
 Older Composer attempts used either the previous package name or a Laravel 12-only line:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Older Composer attempts used either the previous package name or a Laravel 13-only line:
-=======
-Older Composer attempts used either the previous package name or a Laravel 12-only line:
->>>>>>> laraxot/dev
-=======
-Older Composer attempts used either the previous package name or a Laravel 12-only line:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ```json
 "barryvdh/laravel-debugbar": "^3.14",

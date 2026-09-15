@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: namespace-rules
-description: " Struttura dei Namespace"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # Regole di Namespace
 
 ## Struttura dei Namespace

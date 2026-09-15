@@ -37,19 +37,7 @@ git-tracked, la storia resta recuperabile: **Git è l'archivio**, non una cartel
 - ci spostava dentro i file con data nel nome, i duplicati `snake_case`/`kebab-case`
   e le versioni UPPERCASE.
 
-<<<<<<< HEAD
 In più aveva un path hardcoded verso un altro repo (`base_ptvx_fila5_mono`). È l'esempio
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-In più aveva un path hardcoded verso un altro repo (`<repo progetto>`). È l'esempio
-=======
-In più aveva un path hardcoded verso un altro repo (`base_ptvx_fila5_mono`). È l'esempio
->>>>>>> laraxot/dev
-=======
-In più aveva un path hardcoded verso un altro repo (`base_ptvx_fila5_mono`). È l'esempio
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 perfetto dell'anti-pattern: uno strumento che "pulisce" spostando invece di cancellare,
 producendo proprio le cartelle vietate che poi qualcun altro deve ri-rimuovere. Rimosso —
 non migrato. La deduplica corretta si fa con `git mv`/`git rm` (la storia basta), non

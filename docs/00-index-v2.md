@@ -1,13 +1,3 @@
-<<<<<<< HEAD
----
-name: 00-index-v2
-description: "Last Update: 5 Febbraio 2026"
-metadata:
-  type: documentation
----
-
-=======
->>>>>>> laraxot/dev
 # 📚 **Indice Documentazione Modulo Xot (Core Engine)**
 
 **Last Update**: 5 Febbraio 2026
@@ -16,19 +6,7 @@ metadata:
 
 ## 🎯 **Lettura Essenziale**
 1. [README.md](./readme.md) - Panoramica del framework Laraxot.
-<<<<<<< HEAD
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 12 & Stability.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 13 & Stability.
-=======
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 12 & Stability.
->>>>>>> laraxot/dev
-=======
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Laravel 12 & Stability.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 3. [super-mucca-methodology.md](./super-mucca-methodology.md) - La filosofia di sviluppo del progetto.
 
 ## 🏛️ **Architettura Core**
