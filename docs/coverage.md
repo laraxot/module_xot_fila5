@@ -9,6 +9,66 @@ append-only per sessione: ogni sezione riporta i propri numeri verificati al
 momento, non riassunti qui (i moduli cambiano troppo in fretta in un contesto
 multi-agente per un unico "coverage rate" a inizio file sia mai affidabile).
 
+## PHPStan fleet fix — 4 root cause, 1 vera (2026-09-16)
+
+Story: `Modules/Xot/docs/stories/phpstan-fleet-fix-2026-09-16.story.md` (campagna
+coordinata con `codex-2026-09-16` e peer `base-ptvx-fila5-c5`). Assessment iniziale
+(fork dedicato nella stessa sessione) ipotizzava 96 errori raggruppati in 4 root
+cause; all'atto pratico un fork precedente della stessa sessione aveva GIA' applicato
+i 4 fix nel working tree (non ancora committati) prima che questo sub-agente
+partisse — il lavoro qui e' stato verifica, non-regressione e chiusura.
+
+- **`HasXotTable::hasColumn()`** (`app/Filament/Traits/HasXotTable.php`) — la causa
+  dei ~90 errori "in context of" era `$model = app($modelClass)` senza narrowing:
+  `$model` restava `mixed` e `getConnection()/getSchemaBuilder()/getTable()` su
+  `mixed` sono `method.nonObject`. Fix gia' presente: aggiunto
+  `Assert::isInstanceOf($model, Model::class);` dopo `app($modelClass)`, rimosso un
+  `try/catch` commentato morto. `Model` e `Assert` erano gia' importati nel trait.
+- **`XotBaseResourceTable::getModelClass()`** — gia' `public static function
+  getModelClass(): string` con `@return class-string<Model>` corretto (import
+  `Illuminate\Database\Eloquent\Model` aggiunto). Nessun errore residuo.
+- **Contratto `getModelClass()` statico nei test doubles** — 3 classi in
+  `Tests/Feature/Filament/Traits/HasXotTableReorderingTest.php` (righe 70/86/102)
+  e una classe anonima in `tests/Unit/HasXotTableSortHooksTest.php` dichiaravano
+  `getModelClass()` come metodo di istanza mentre `XotBaseResourceTable` (che
+  estendono) lo dichiara `static` — PHP vieta di rendere non-static un metodo
+  static ereditato (`method.nonStatic` in fase di build, oltre a `class.notFound`/
+  `return.type` riportati da PHPStan). Gia' corrette a `public static function
+  getModelClass(): string` in tutti e 4 i punti.
+- **`SaveArrayAction` deprecato** — sia `app/Actions/Array/SaveArrayAction.php` sia
+  `app/Actions/Arrays/SaveArrayAction.php` chiamavano `Modules\Xot\Actions\Array\
+  SavePhpArrayAction` (marcato `@deprecated`, `{@see}` → `Modules\Xot\Actions\Arr\
+  SavePhpArrayAction`). Gia' corretti: entrambi importano e chiamano
+  `Modules\Xot\Actions\Arr\SavePhpArrayAction` (namespace `Arr`, canonico). Nota:
+  esistono ANCHE `app/Actions/Arrays/SavePhpArrayAction.php` e
+  `app/Actions/Array/SavePhpArrayAction.php`, entrambi wrapper `@deprecated` verso
+  lo stesso target `Arr\SavePhpArrayAction` — coerenti, non toccati (fuori scope
+  del fix, nessun errore PHPStan li segnala).
+
+**Trappola cache condivisa**: prima verifica (`phpstan analyse Modules/Xot`) con la
+`tmpDir: /tmp/phpstan/` del neon (condivisa fra ~30 agenti concorrenti) riportava
+ANCORA 4 errori `method.nonStatic`/`Non-static method ... overrides static method`
+sulle righe gia' corrette nel working tree — cache result stantia da un run
+precedente di un altro agente. `./vendor/bin/phpstan clear-result-cache` (comando
+supportato, non tocca `phpstan.neon` ne' usa `-c`/`--level`) + rerun →
+**`[OK] No errors`** pulito, `{"errors": 0, "file_errors": 0}` in JSON.
+
+- `./vendor/bin/phpstan analyse Modules/Xot --no-progress --memory-limit=-1` (dopo
+  `clear-result-cache`) → **[OK] No errors**.
+- Non-regressione `./vendor/bin/phpstan analyse Modules/Rating --no-progress
+  --memory-limit=-1` (stessa cache pulita) → **[OK] No errors**. Nessuna rottura di
+  contratto per i consumer di `HasXotTable`/`XotBaseResourceTable`.
+- `tools/phpmd.sh Modules/Xot/app` → 1 solo finding informativo pre-esistente
+  (collisione trait `getKeyTransFunc` su `XotBaseManageRelatedRecords`, gia'
+  documentata sopra al 2026-09-11), fuori scope di questo fix, non toccato.
+- `tools/phpinsights.sh analyse Modules/Xot/app` → eseguibile (`tools/phpinsights/
+  vendor/bin/phpinsights` presente). Code 78.8/100, Complexity 100/100,
+  Architecture 57.1/100; alcuni finding di stile (`Ordered imports`) su file non
+  toccati da questa campagna — fuori scope, non corretti qui.
+- Pest (`./vendor/bin/pest Modules/Xot/tests`): **skip ambientale** —
+  `nc -z -w3 10.100.200.53 3306` fallisce (DB irraggiungibile al momento del run),
+  coerente con la nota gia' presente in questo file per DB test.
+
 ## Ultima misura reale (2026-09-11, sera)
 
 - `vendor/bin/phpstan analyse Modules/Xot --no-progress` (modulo intero) →

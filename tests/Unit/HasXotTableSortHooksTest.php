@@ -22,12 +22,12 @@ test('getTableSortColumn default su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable
     {
         /** @return array<string, \Filament\Tables\Columns\Column> */
-    public function getTableColumns(): array
+        public function getTableColumns(): array
         {
             return [];
         }
 
-        public function getModelClass(): string
+        public static function getModelClass(): string
         {
             return DummyTestModel::class;
         }
@@ -41,12 +41,12 @@ test('getTableSortColumn override su XotBaseResourceTable', function (): void {
     $table = new class extends XotBaseResourceTable
     {
         /** @return array<string, \Filament\Tables\Columns\Column> */
-    public function getTableColumns(): array
+        public function getTableColumns(): array
         {
             return [];
         }
 
-        public function getModelClass(): string
+        public static function getModelClass(): string
         {
             return DummyTestModel::class;
         }
