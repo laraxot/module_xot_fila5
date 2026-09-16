@@ -693,18 +693,13 @@ trait HasXotTable
      */
     protected function hasColumn(string $column): bool
     {
-        //try {
-        
-            $modelClass = $this->getModelClass();
-            $model = app($modelClass);
-            
+        $modelClass = $this->getModelClass();
+        $model = app($modelClass);
+        Assert::isInstanceOf($model, Model::class);
 
-            return $model->getConnection()
-                ->getSchemaBuilder()
-                ->hasColumn($model->getTable(), $column);
-        //} catch (\Exception) {
-        //    return false;
-        //}
+        return $model->getConnection()
+            ->getSchemaBuilder()
+            ->hasColumn($model->getTable(), $column);
     }
 
     /**

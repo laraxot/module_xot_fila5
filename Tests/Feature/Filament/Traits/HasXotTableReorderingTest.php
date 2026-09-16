@@ -67,7 +67,7 @@ class HasXotTableReorderingTest extends TestCase
 // Test doubles
 class TestTableWithOrderColumn extends XotBaseResourceTable
 {
-    public function getModelClass(): string
+    public static function getModelClass(): string
     {
         return TestModelWithOrderColumn::class;
     }
@@ -83,7 +83,7 @@ class TestTableWithOrderColumn extends XotBaseResourceTable
 
 class TestTableWithoutOrderColumn extends XotBaseResourceTable
 {
-    public function getModelClass(): string
+    public static function getModelClass(): string
     {
         return TestModelWithoutOrderColumn::class;
     }
@@ -99,7 +99,7 @@ class TestTableWithoutOrderColumn extends XotBaseResourceTable
 
 class TestTableWithCustomOrderColumn extends XotBaseResourceTable
 {
-    public function getModelClass(): string
+    public static function getModelClass(): string
     {
         return TestModelWithOrderColumn::class;
     }
