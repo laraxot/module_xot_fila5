@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: 05-viewrecord-infolist-override
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -6,6 +7,8 @@ metadata:
   type: bmad
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # BMAD Story 05 — ViewRecord non ridefinisce getInfolistSchema

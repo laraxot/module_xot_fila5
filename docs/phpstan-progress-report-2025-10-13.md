@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -6,6 +7,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # PHPStan Progress Report - 2025-10-13

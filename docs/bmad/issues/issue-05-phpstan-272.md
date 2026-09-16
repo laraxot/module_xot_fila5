@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: issue-05-phpstan-272
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -6,6 +7,8 @@ metadata:
   type: bmad
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Issue GH #05 — PHPStan 272 errors: piano di risoluzione modulo-per-modulo
