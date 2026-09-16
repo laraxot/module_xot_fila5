@@ -287,8 +287,11 @@ trait HasXotTable
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $table = $this->applyReorderable($table);
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
         return $table;
@@ -690,6 +693,7 @@ trait HasXotTable
         return true;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Check if model has a specific column via schema introspection.
@@ -738,6 +742,8 @@ trait HasXotTable
 
         return $table;
     }
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 }

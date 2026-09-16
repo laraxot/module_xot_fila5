@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: 29-residuo-phpstan
 description: "Status: IN PROGRESS — sub-agent attivo (swarm)"
@@ -6,6 +7,8 @@ metadata:
   type: bmad
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # BMAD Story 29 — Residuo PHPStan (sub-agent)

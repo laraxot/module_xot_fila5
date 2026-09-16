@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: phpstan-fixes-summary-2025-08-18
 description: " 🚨 REGOLA CRITICA RISPETTATA 🚨"
@@ -6,6 +7,8 @@ metadata:
   type: documentation
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # PHPStan Fixes Summary - 18 Agosto 2025

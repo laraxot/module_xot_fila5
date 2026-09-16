@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: 01-traits-composition
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -6,6 +7,8 @@ metadata:
   type: bmad
 ---
 
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # GitHub Discussion — Architettura: composizione trait vs ereditarietà statica
