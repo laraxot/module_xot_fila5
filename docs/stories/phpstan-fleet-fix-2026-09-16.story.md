@@ -76,3 +76,16 @@ tocca `phpstan.neon` ne' usa `-c`/`--level`) + rerun → pulito.
 
 Dettagli e log completi: `Modules/Xot/docs/coverage.md` (sezione "PHPStan fleet
 fix — 4 root cause, 1 vera (2026-09-16)").
+
+## Verifica worker Xot — 2026-09-16
+
+- Assessment canonico ripetuto dopo `clear-result-cache`: `phpstan analyse Modules/Xot`
+  exit 0, **0 errori**; `phpstan.neon` non modificato e nessuna soppressione aggiunta.
+- Corretto il test `tests/Unit/HasXotTableSortHooksTest.php`: il contratto corrente
+  non dichiara hook sort di default su `XotBaseResourceTable`; il test ora verifica
+  questo fatto via Reflection e conserva la verifica degli override concreti.
+- Gate pertinenti: `php -l` exit 0; Pest su HasXotTable/Filament hooks/configure
+  **7 passed, 16 assertions**.
+- I tre test SaveArrayAction isolati sono rimasti in timeout a 25s durante il
+  bootstrap applicativo (exit 124), senza modifiche ai file già corretti dagli
+  agenti precedenti; da rieseguire con DB di test disponibile.

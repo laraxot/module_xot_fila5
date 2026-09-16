@@ -18,7 +18,7 @@ function invokeProtectedSortHook(object $instance, string $method): mixed
     return $reflection->invoke($instance);
 }
 
-test('getTableSortColumn default su XotBaseResourceTable', function (): void {
+test('XotBaseResourceTable non dichiara hook di sort predefiniti', function (): void {
     $table = new class extends XotBaseResourceTable
     {
         /** @return array<string, \Filament\Tables\Columns\Column> */
@@ -33,8 +33,10 @@ test('getTableSortColumn default su XotBaseResourceTable', function (): void {
         }
     };
 
-    Assert::assertSame('dummy_test_models.id', invokeProtectedSortHook($table, 'getTableSortColumn'));
-    Assert::assertSame('desc', invokeProtectedSortHook($table, 'getTableSortDirection'));
+    $reflection = new ReflectionClass($table);
+
+    Assert::assertFalse($reflection->hasMethod('getTableSortColumn'));
+    Assert::assertFalse($reflection->hasMethod('getTableSortDirection'));
 });
 
 test('getTableSortColumn override su XotBaseResourceTable', function (): void {
