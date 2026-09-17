@@ -163,3 +163,4 @@ phpmd*.*
 /.vscode/
 .cursor~*
 .windsurf~*
+graphify-out/
