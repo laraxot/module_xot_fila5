@@ -439,3 +439,11 @@ Writer `/root`, reviewer `/root/proposal_review`; story condivisa aggiornata. [A
 ### 2026-09-11 — Tracking BMAD completato
 
 Create [issue #112](https://github.com/laraxot/module_xot_fila5/issues/112) e [discussion #114](https://github.com/laraxot/module_xot_fila5/discussions/114) nel repository Xot, collegate alla story e alla memoria. MCP tentato con 403; pubblicazione riuscita con gh. Nessuna modifica applicativa.
+
+## [2026-09-17] EnvWidget: aggiunti campi `sms_driver` e `netfun_token` (blocco go-live Notify — nessun accesso SSH/FTP in produzione)
+
+- Richiesta utente: cambiare `SMS_DRIVER=netfun` nel `.env` di produzione, ma nessun accesso SSH/FTP disponibile per modificarlo a mano (vedi [module_quaeris_fila5#38](https://github.com/laraxot/module_quaeris_fila5/issues/38)).
+- `EnvWidget` esisteva già e scrive `.env` dal pannello admin, ma non esponeva `SMS_DRIVER`. Aggiunta proprietà `sms_driver` a [`EnvData`](../../app/Datas/EnvData.php) e campo `Select` (opzioni chiuse sui driver mappati in `SmsActionFactory`, non testo libero) a [`EnvWidget::getFormSchema()`](../../app/Filament/Widgets/EnvWidget.php). Attivato in `Notify\SettingPage` (`only`).
+- Richiesta successiva dell'utente, stesso giorno: poter anche vedere/modificare `NETFUN_TOKEN` dalla stessa pagina (verifica di cosa c'è già in produzione, senza SSH). Aggiunta proprietà `netfun_token` a `EnvData` e `TextInput` (non `Select`: valore libero fornito dal provider) a `EnvWidget`, anch'esso attivato in `Notify\SettingPage`. Compare già valorizzato al caricamento della pagina — `mount()` carica sempre `$_ENV` corrente nel form, nessun lavoro aggiuntivo richiesto per la visualizzazione.
+- Documentato il meccanismo generale (mai descritto prima): [concepts/env-widget-no-ssh-env-editor.md](concepts/env-widget-no-ssh-env-editor.md) — come aggiungere una variabile editabile, e il passo successivo obbligato (`config:cache` via `ArtisanCommandsManager`, già disponibile) se la config è cache-ata in produzione.
+- PHPStan pulito sui 3 file toccati (`EnvData.php`, `EnvWidget.php`, `Notify\SettingPage.php`), `php -l` ok. Nessuna verifica end-to-end in produzione — i valori vanno ancora selezionati/salvati dall'utente dopo il deploy.

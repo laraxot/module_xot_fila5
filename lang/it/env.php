@@ -73,6 +73,18 @@ return [
             'helper_text' => 'telegram_bot_token',
             'description' => 'telegram_bot_token',
         ],
+        'sms_driver' => [
+            'label' => 'sms_driver',
+            'placeholder' => 'sms_driver',
+            'helper_text' => 'sms_driver',
+            'description' => 'sms_driver',
+        ],
+        'netfun_token' => [
+            'label' => 'netfun_token',
+            'placeholder' => 'netfun_token',
+            'helper_text' => 'netfun_token',
+            'description' => 'netfun_token',
+        ],
     ],
     'actions' => [
         'create' => [

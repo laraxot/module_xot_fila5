@@ -24,6 +24,10 @@ class EnvData extends Data implements Wireable
 
     public string $telegram_bot_token = '';
 
+    public string $sms_driver = '';
+
+    public string $netfun_token = '';
+
     private static ?self $instance = null;
 
     public static function make(): self
