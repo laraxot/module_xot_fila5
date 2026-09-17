@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
@@ -69,6 +70,22 @@ class EnvWidget extends XotBaseSchemaWidget
             'telegram_bot_token' => TextInput::make('telegram_bot_token')
                 ->placeholder('AIzaSyAuB_...')
                 ->helperText('telegram_bot_token'),
+            'sms_driver' => Select::make('sms_driver')
+                ->label('SMS driver')
+                ->options([
+                    'smsfactor' => 'SMSFactor',
+                    'netfun' => 'Netfun',
+                    'twilio' => 'Twilio',
+                    'nexmo' => 'Nexmo (Vonage)',
+                    'plivo' => 'Plivo',
+                    'gammu' => 'Gammu',
+                    'agiletelecom' => 'Agile Telecom',
+                ])
+                ->helperText('Driver SMS usato da SmsActionFactory (config sms.default). Le credenziali del driver scelto (es. NETFUN_TOKEN) devono essere già presenti nel .env.'),
+            'netfun_token' => TextInput::make('netfun_token')
+                ->label('Netfun token')
+                ->placeholder('Token API Netfun (sms.drivers.netfun.token)')
+                ->helperText('Valore corrente di NETFUN_TOKEN nel .env — usato solo quando SMS driver = Netfun.'),
         ];
         $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
 
