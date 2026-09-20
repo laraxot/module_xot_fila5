@@ -9,6 +9,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
@@ -22,6 +23,20 @@ class EnvWidget extends XotBaseSchemaWidget
 
     /** @var view-string */
     protected string $view = 'xot::filament.widgets.env';
+
+    /**
+     * Raggruppamento visivo dei campi per Section, stile Laravel — un
+     * campo non elencato qui compare comunque (fuori da qualunque Section,
+     * in coda), non sparisce mai in silenzio se qualcuno lo aggiunge a
+     * getFormSchema() senza aggiornare questa mappa.
+     *
+     * @var array<string, list<string>>
+     */
+    private const array GROUPS = [
+        'General' => ['app_url', 'debugbar_enabled', 'google_maps_api_key', 'telegram_bot_token'],
+        'SMS' => ['sms_driver', 'netfun_token'],
+        'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password'],
+    ];
 
     public function mount(): void
     {
@@ -56,22 +71,19 @@ class EnvWidget extends XotBaseSchemaWidget
      */
     public function getFormSchema(): array
     {
+        // Nessun ->label()/->placeholder()/->helperText() qui: Modules\Lang
+        // (LangServiceProvider::registerFilamentLabel(), Field::configureUsing())
+        // li risolve automaticamente da Modules/Xot/lang/{locale}/env.php,
+        // chiave fields.<nome-campo>.<label|placeholder|helper_text> — verificato
+        // dal vivo (non assunto): il primo caricamento di questa pagina scrive da
+        // solo le voci mancanti in quel file. ->options() resta qui perché non è
+        // gestito da quel meccanismo (sono valori di dominio, non testo UI).
         $all = [
-            'app_url' => TextInput::make('app_url')
-                ->placeholder('http://localhost')
-                ->helperText('Required for file uploads and other internal configs')
-                ->required(),
-            'debugbar_enabled' => Toggle::make('debugbar_enabled')->helperText(
-                'Enable/Disable debug mode to help debug errors',
-            ),
-            'google_maps_api_key' => TextInput::make('google_maps_api_key')
-                ->placeholder('AIzaSyAuB_...')
-                ->helperText('google maps api key'),
-            'telegram_bot_token' => TextInput::make('telegram_bot_token')
-                ->placeholder('AIzaSyAuB_...')
-                ->helperText('telegram_bot_token'),
+            'app_url' => TextInput::make('app_url')->required(),
+            'debugbar_enabled' => Toggle::make('debugbar_enabled'),
+            'google_maps_api_key' => TextInput::make('google_maps_api_key'),
+            'telegram_bot_token' => TextInput::make('telegram_bot_token'),
             'sms_driver' => Select::make('sms_driver')
-                ->label('SMS driver')
                 ->options([
                     'smsfactor' => 'SMSFactor',
                     'netfun' => 'Netfun',
@@ -80,17 +92,56 @@ class EnvWidget extends XotBaseSchemaWidget
                     'plivo' => 'Plivo',
                     'gammu' => 'Gammu',
                     'agiletelecom' => 'Agile Telecom',
-                ])
-                ->helperText('Driver SMS usato da SmsActionFactory (config sms.default). Le credenziali del driver scelto (es. NETFUN_TOKEN) devono essere già presenti nel .env.'),
-            'netfun_token' => TextInput::make('netfun_token')
-                ->label('Netfun token')
-                ->placeholder('Token API Netfun (sms.drivers.netfun.token)')
-                ->helperText('Valore corrente di NETFUN_TOKEN nel .env — usato solo quando SMS driver = Netfun.'),
+                ]),
+            'netfun_token' => TextInput::make('netfun_token'),
+            'mail_mailer' => Select::make('mail_mailer')
+                ->options([
+                    'smtp' => 'SMTP',
+                    'ses' => 'Amazon SES',
+                    'postmark' => 'Postmark',
+                    'resend' => 'Resend',
+                    'sendmail' => 'Sendmail',
+                    'log' => 'Log (nessun invio reale)',
+                ]),
+            'mail_host' => TextInput::make('mail_host'),
+            'mail_port' => TextInput::make('mail_port'),
+            'mail_encryption' => Select::make('mail_encryption')
+                ->options([
+                    '' => 'Nessuna',
+                    'tls' => 'TLS',
+                    'ssl' => 'SSL',
+                ]),
+            'mail_username' => TextInput::make('mail_username'),
+            'mail_password' => TextInput::make('mail_password'),
         ];
+        /** @var array<string, Component> $selected */
         $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
 
-        /** @var array<Component> $components */
-        $components = array_values($selected);
+        $grouped = [];
+        $components = [];
+        foreach (self::GROUPS as $label => $keys) {
+            /** @var list<Component> $fields */
+            $fields = [];
+            foreach ($keys as $key) {
+                if (isset($selected[$key])) {
+                    $fields[] = $selected[$key];
+                    $grouped[$key] = true;
+                }
+            }
+            if ($fields === []) {
+                continue;
+            }
+            $components[] = Section::make($label)->schema($fields);
+        }
+
+        // Campi selezionati ma non presenti in nessun gruppo di GROUPS
+        // (es. un nuovo campo aggiunto a $all senza aggiornare la mappa):
+        // restano visibili, fuori da qualunque Section, invece di sparire.
+        foreach ($selected as $key => $field) {
+            if (! isset($grouped[$key])) {
+                $components[] = $field;
+            }
+        }
 
         return $components;
     }
