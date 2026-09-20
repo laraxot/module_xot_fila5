@@ -145,12 +145,37 @@ tramite [`ExecuteArtisanCommandAction`](../../../app/Actions/ExecuteArtisanComma
 completa senza SSH/FTP per cambiare una variabile d'ambiente in produzione:
 
 1. Pagina Impostazioni del modulo (usa `EnvWidget`) → cambia il valore → Salva.
-2. `Artisan Commands Manager` (Xot) → bottone **config:cache**.
+2. `Artisan Commands Manager` (Xot) → bottone **config:cache** (solo se la
+   config è davvero cache-ata, vedi sotto) e/o **queue:restart**.
 
-Il bottone è idempotente e sicuro anche se la config non era cache-ata in
-produzione — rigenera comunque la cache dal `.env` corrente.
+**Attenzione — corretto il 2026-09-20, la versione precedente di questo
+paragrafo era sbagliata** ("il bottone è sicuro anche se la config non era
+cache-ata"): con la config cache-ata Laravel **non carica più il `.env`**
+(`LoadEnvironmentVariables::bootstrap()` esce subito se
+`configurationIsCached()`), quindi `EnvData::make()`, che legge `$_ENV`,
+apre il form con i valori di default (verificato: `app_url` →
+`http://localhost`, `mail_host` → vuoto). Conseguenze pratiche:
+
+- **Se la pagina Impostazioni mostra i valori correnti, la config in
+  produzione NON è cache-ata**: non lanciare `config:cache` — non serve
+  (le modifiche al `.env` valgono subito per le nuove richieste web) e
+  renderebbe il form vuoto.
+- I worker `queue:work` invece caricano la config una volta sola all'avvio:
+  dopo aver cambiato una variabile serve **queue:restart** perché
+  rileggano il `.env` (un supervisor/daemon deve poi riavviarli).
+- `config:cache` ha senso solo se la config è già cache-ata: in tal caso il
+  form non è affidabile come specchio del `.env`.
 
 ## Limiti noti
+
+- **`mail_encryption` non influisce sull'invio** (verificato nel vendor,
+  Laravel/Symfony di questo progetto): `MailManager::createSmtpTransport()`
+  ignora `MAIL_ENCRYPTION`; il TLS implicito si attiva solo con porta
+  esatta `465`, ogni altra porta usa STARTTLS. Il campo è quindi
+  informativo. La porta invece conta davvero: il 2026-09-20 un timeout
+  SMTP in produzione era la porta `465` non raggiungibile dal server
+  nuovo, risolto passando a `587` da questo widget
+  ([story](../../../../Quaeris/docs/stories/quaeris-go-live-real-batch-verification-findings.md)).
 
 - Il set di variabili editabili è **statico e cablato in `EnvData`/`EnvWidget`**,
   non uno scanner generico di `.env` — coerente con la scelta di sicurezza
