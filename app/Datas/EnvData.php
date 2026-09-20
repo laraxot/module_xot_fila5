@@ -40,6 +40,10 @@ class EnvData extends Data implements Wireable
 
     public string $mail_password = '';
 
+    public string $mail_from_address = '';
+
+    public string $mail_from_name = '';
+
     private static ?self $instance = null;
 
     public static function make(): self

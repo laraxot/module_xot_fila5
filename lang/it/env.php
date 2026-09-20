@@ -121,6 +121,18 @@ return [
             'helper_text' => 'Valore corrente di MAIL_PASSWORD nel .env — usato solo quando Driver mail = SMTP. Visibile in chiaro, come gli altri campi-segreto di questa pagina.',
             'description' => '',
         ],
+        'mail_from_address' => [
+            'label' => 'Mittente: indirizzo',
+            'placeholder' => 'noreply@esempio.it',
+            'helper_text' => 'Valore corrente di MAIL_FROM_ADDRESS nel .env — indirizzo email che compare come mittente (From) di ogni mail inviata, con qualunque Driver mail.',
+            'description' => '',
+        ],
+        'mail_from_name' => [
+            'label' => 'Mittente: nome',
+            'placeholder' => 'Quaeris',
+            'helper_text' => 'Valore corrente di MAIL_FROM_NAME nel .env — nome che compare accanto all\'indirizzo mittente. Se nel .env vale ${APP_NAME} qui vedi il nome già risolto: lasciandolo invariato la riga non viene riscritta.',
+            'description' => '',
+        ],
     ],
     'actions' => [
         'create' => [
