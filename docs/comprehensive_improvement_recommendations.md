@@ -614,6 +614,11 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
           php-version: 8.3
 =======
 <<<<<<< HEAD
@@ -1330,6 +1335,10 @@ jobs:
         with:
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
           php-version: 8.3
       - name: Install dependencies
         run: composer install
@@ -1421,6 +1430,12 @@ class ContactNotificationService
 
 <<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
+>>>>>>> laraxot/dev
 
 
 ---
@@ -2135,3 +2150,7 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

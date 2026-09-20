@@ -18,5 +18,9 @@ return [
         'type' => ['label' => 'type'],
         'trashed' => ['label' => 'trashed'],
         'user' => ['label' => 'user'],
+<<<<<<< HEAD
+=======
+        'name' => ['label' => 'name'],
+>>>>>>> laraxot/dev
     ],
 ];

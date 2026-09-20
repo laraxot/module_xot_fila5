@@ -6,6 +6,12 @@ namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
 
@@ -32,7 +38,53 @@ abstract class XotBaseResourceTable
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int|string, Column>
      */
     abstract public function getTableColumns(): array;
+=======
+     * @return array<string, Column>
+     */
+    abstract public function getTableColumns(): array;
+
+    /**
+     * La Resource proprietaria, dedotta dal namespace `{Resource}\Schemas\{Model}Form`.
+     *
+     * @return class-string<XotBaseResource>
+     */
+    public static function getResource(): string
+    {
+        $resource = Str::of(static::class)->before('\\Tables\\')->toString();
+        Assert::classExists($resource);
+        Assert::subclassOf($resource, XotBaseResource::class);
+
+        return $resource;
+    }
+    
+    /**
+     * Modello delle righe mostrate (la relazione), distinto dal modello
+     * dell'owner. Ridefinito DIRETTAMENTE qui, mai da un trait: vedi
+     * l'incidente storico nel docblock di classe. Stesso pattern di
+     * `XotBaseListRecords::getModelClass()`.
+     *
+     * `getRelationship()` (nativo Filament,
+     * `ManageRelatedRecords::getRelationship(): Relation|Builder`) non
+     * restituisce MAI una stringa — verificato via Reflection sul metodo
+     * nativo. Una variante di questo metodo che trattava
+     * `is_string($relationship)` come caso possibile e' stata reintrodotta
+     * piu' volte lo stesso giorno da sessioni concorrenti: oltre a essere
+     * morta, lasciava il caso reale `Builder` (non `Relation`) senza
+     * gestione, sempre finito nel throw. Guardia automatica in
+     * `XotBaseManageRelatedRecordsRegressionTest`.
+     *
+     * @return class-string<Model>
+     */
+    public static function getModelClass(): string
+    {
+        $resource = static::getResource();
+        $model = $resource::getModel();
+        return $model;
+    }
+
+>>>>>>> laraxot/dev
 }

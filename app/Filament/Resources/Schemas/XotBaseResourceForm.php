@@ -7,46 +7,103 @@ namespace Modules\Xot\Filament\Resources\Schemas;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Schemas\Schema;
+<<<<<<< HEAD
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Traits\HasXotForm;
 use Webmozart\Assert\Assert;
 
 abstract class XotBaseResourceForm
 {
     use HasXotForm;
+<<<<<<< HEAD
     // private static ?self $_instance = null;
 
     final public static function configure(Schema $schema): Schema
+=======
+
+    public static function configure(Schema $schema): Schema
+>>>>>>> laraxot/dev
     {
         if (static::class === self::class) {
             throw new \LogicException('XotBaseResourceForm::configure() must be called on a concrete form class.');
         }
+<<<<<<< HEAD
         $instance = app(static::class);
         Assert::isInstanceOf($instance, self::class);
 
         // static::$_instance = $instance;
         // return static::$_instance->form($schema);
+=======
+
+        $instance = app(static::class);
+        Assert::isInstanceOf($instance, self::class);
+
+>>>>>>> laraxot/dev
         return $instance->form($schema);
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Lo schema del form vive qui: e' l'unico posto in cui il progetto lo dichiara.
+     * `XotBaseResource::form()` arriva sempre a questa classe via `getFormClass()`,
+     * quindi una Resource che dichiara `getFormSchema()` scrive codice morto.
+     *
+>>>>>>> laraxot/dev
      * @return array<string, Component>
      */
     abstract public function getFormSchema(): array;
 
     /**
+<<<<<<< HEAD
      * Elenco degli step Wizard per form multi‑passaggio (nome ufficiale allineato a Filament **`HasWizard::getSteps()`**).
      * I form lineari lo lasciano vuoto.
      *
      * @return array<string, Step>
      */
     public static function getSteps(): array
+=======
+     * La Resource proprietaria, dedotta dal namespace `{Resource}\Schemas\{Model}Form`.
+     *
+     * @return class-string<XotBaseResource>
+     */
+    public static function getResource(): string
+    {
+        $resource = Str::of(static::class)->before('\\Schemas\\')->toString();
+        Assert::classExists($resource);
+        Assert::subclassOf($resource, XotBaseResource::class);
+
+        return $resource;
+    }
+
+    /**
+     * Traduzione con le chiavi della Resource proprietaria: un form non ha
+     * un proprio spazio di traduzione, usa quello della Resource.
+     *
+     * @param  array<string, bool|float|int|string|null>  $params
+     */
+    public static function trans(string $key, array $params = []): string
+    {
+        return static::getResource()::trans($key, false, $params);
+    }
+
+    /**
+     * @return array<string, Component>
+     */
+    public function getSteps(): array
+>>>>>>> laraxot/dev
     {
         return [];
     }
 
+<<<<<<< HEAD
     /**
      * Costruisce il callback usato da `Select::getOptionLabelUsing()`.
      *
@@ -57,6 +114,8 @@ abstract class XotBaseResourceForm
      *
      * @return \Closure(Model): string
      */
+=======
+>>>>>>> laraxot/dev
     protected static function optionLabelFromRecord(string $titleAttribute = 'name'): \Closure
     {
         return static function (Model $record) use ($titleAttribute): string {
@@ -83,13 +142,25 @@ abstract class XotBaseResourceForm
 
         if (method_exists(static::class, $methodName)) {
             $schemaResult = static::$methodName();
+<<<<<<< HEAD
             /** @var array<Htmlable|string> $schemaComponents */
+=======
+            /** @var array<int, Component> $schemaComponents */
+>>>>>>> laraxot/dev
             $schemaComponents = \is_array($schemaResult) ? array_values($schemaResult) : [];
 
             return Step::make($name)->schema($schemaComponents);
         }
+<<<<<<< HEAD
         dddx($methodName);
 
         return Step::make($name)->schema([]);
+=======
+
+        /** @var array<int, Component> $emptyComponents */
+        $emptyComponents = [];
+
+        return Step::make($name)->schema($emptyComponents);
+>>>>>>> laraxot/dev
     }
 }

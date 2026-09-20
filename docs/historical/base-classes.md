@@ -13,7 +13,15 @@ namespace Modules\Xot\Filament\Resources;
 
 class XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array;
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array;
+=======
+    public function getFormSchema(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     public static function getListTableColumns(): array;
 }
 ```

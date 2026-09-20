@@ -29,6 +29,7 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, TextColumn>
      */
@@ -58,6 +59,10 @@ class ListCaches extends XotBaseListRecords
         return parent::getGridTableColumns();
     }
 
+=======
+    
+   
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */

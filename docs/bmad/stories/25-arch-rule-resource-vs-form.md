@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+---
+name: 25-arch-rule-resource-vs-form
+description: "Repo: git@github.com:laraxot/modulexotfila5.git"
+metadata:
+  type: bmad
+---
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

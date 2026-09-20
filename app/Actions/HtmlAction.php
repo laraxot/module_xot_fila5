@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
+<<<<<<< HEAD
 use Spatie\QueueableAction\ActionJob;
 
 use Spatie\QueueableAction\QueueableAction;
@@ -14,10 +15,15 @@ use Spatie\QueueableAction\QueueableAction;
 // use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 // use Mpdf\Mpdf;
 use Illuminate\Support\Facades\Storage;
+=======
+use Illuminate\Support\Facades\Storage;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 use Spipu\Html2Pdf\Exception\ExceptionFormatter;
 use Spipu\Html2Pdf\Exception\Html2PdfException;
 use Spipu\Html2Pdf\Html2Pdf;
 
+<<<<<<< HEAD
 /*
  * ExceptionFormatter
  * HtmlParsingException
@@ -29,16 +35,25 @@ use Spipu\Html2Pdf\Html2Pdf;
 
 /**
  * Class HtmlService.
+=======
+/**
+ * Class HtmlAction.
+>>>>>>> laraxot/dev
  */
 class HtmlAction
 {
     use QueueableAction;
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     public static function toPdf(
         string $html,
         string $out = 'show',
         string $pdforientation = 'L',
         string $filename = '',
     ): string {
+<<<<<<< HEAD
         // dddx($params);
 
         // include_once __DIR__.'/vendor/autoload.php';
@@ -53,6 +68,12 @@ class HtmlAction
          * throw new \Exception('err html is missing');
          * }
          */
+=======
+        if ($filename === '') {
+            $filename = Storage::disk('local')->path('test.pdf');
+        }
+
+>>>>>>> laraxot/dev
         if (request('debug', false)) {
             return $html;
         }
@@ -80,6 +101,7 @@ class HtmlAction
             echo $formatter->getHtmlMessage();
         }
 
+<<<<<<< HEAD
         // } catch (HTML2PDF_exception $e) {
         // } catch (Html2PdfException $e) {
         //    echo '<pre>';
@@ -99,4 +121,8 @@ class HtmlAction
      * return $mpdf->Output();
      * }
      */
+=======
+        return $filename;
+    }
+>>>>>>> laraxot/dev
 }

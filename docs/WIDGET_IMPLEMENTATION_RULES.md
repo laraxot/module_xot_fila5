@@ -4,6 +4,11 @@
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
 > **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 =======
@@ -12,6 +17,10 @@
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Widget Implementation Rules - Xot Module
 
 ## 🎯 Regole Fondamentali per Widget
@@ -432,14 +441,30 @@ class MyTableWidget extends XotBaseTableWidget
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
 >>>>>>> 28b0298a (fix: phpstan issues)
 - [Laraxot Architecture Rules](./LARAXOT_ARCHITECTURE_RULES.md)
 >>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 
 
+<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

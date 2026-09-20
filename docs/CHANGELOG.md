@@ -1,6 +1,11 @@
 # Changelog - Modulo Xot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## [2025-06-04] - Sessione Fix Critica
 
 All notable changes to `:package_name` will be documented in this file.
@@ -63,6 +68,10 @@ All notable changes to `:package_name` will be documented in this file.
 
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -193,12 +202,21 @@ All notable changes to `:package_name` will be documented in this file.
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [README.md](./docs/README.md) - Entry point
 - [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
 - [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
 - [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Repository
 - **Branch:** develop
@@ -212,6 +230,11 @@ All notable changes to `:package_name` will be documented in this file.
 **Format:** [Keep a Changelog](https://keepachangelog.com/)
 **Versioning:** [Semantic Versioning](https://semver.org/)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 **Versioning:** [Semantic Versioning](https://semver.org/)
 
 ---
@@ -304,3 +327,7 @@ Tutte le modifiche significative al modulo Xot saranno documentate in questo fil
 - Focus su COSA è cambiato e PERCHÉ
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

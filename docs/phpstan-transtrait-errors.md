@@ -1,6 +1,14 @@
 # PHPStan Errors - TransTrait.php
 
+<<<<<<< HEAD
 **Date**: 2025-12-16
+=======
+<<<<<<< HEAD
+**Date**: [DATE]
+=======
+**Date**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **File**: `Modules/Xot/app/Filament/Traits/TransTrait.php`
 **PHPStan Level**: 10
 **Total Errors**: ~10 (across multiple contexts)
@@ -388,7 +396,15 @@ This fix may also resolve related errors in:
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+=======
+<<<<<<< HEAD
+- [PHPStan Analysis Summary](phpstan-analysis-[date].md)
+=======
+- [PHPStan Analysis Summary](phpstan-analysis-2025-12-16.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [XotBase Extension Rules](xotbase-extension-rules.md)
 - [Filament Integration](filament-integration.md)
 
@@ -396,4 +412,12 @@ This fix may also resolve related errors in:
 
 **Status**: 🟡 Documented - Awaiting Fix
 **Assigned To**: Module Owner
+<<<<<<< HEAD
 **Last Updated**: 2025-12-16
+=======
+<<<<<<< HEAD
+
+=======
+**Last Updated**: 2025-12-16
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

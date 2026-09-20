@@ -289,7 +289,15 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 /**
  * @return array<int, Component>
  */
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -473,7 +481,15 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),

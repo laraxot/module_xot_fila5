@@ -13,6 +13,7 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
 {
     use HasFiltersForm;
 
+<<<<<<< HEAD
 /**
  * Get the header actions.
  *
@@ -22,4 +23,15 @@ protected function getHeaderActions(): array
 {
     return [];
 }
+=======
+    /**
+     * Get the header actions.
+     *
+     * @return array<string, Action|ActionGroup>
+     */
+    protected function getHeaderActions(): array
+    {
+        return [];
+    }
+>>>>>>> laraxot/dev
 }

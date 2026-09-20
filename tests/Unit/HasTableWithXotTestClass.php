@@ -32,6 +32,10 @@ class HasTableWithXotTestClass
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
+<<<<<<< HEAD
+=======
+    /** @return array<string, \Filament\Tables\Columns\Column> */
+>>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [];
@@ -66,7 +70,11 @@ class HasTableWithXotTestClass
     }
 
     /**
+<<<<<<< HEAD
      * @return array<int, mixed>
+=======
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
+>>>>>>> laraxot/dev
      */
     public function getTableFilters(): array
     {

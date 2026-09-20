@@ -1,8 +1,22 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# PHPStan Duplicate Imports Fix - [DATE]
+
+## Analisi Errori PHPStan Modulo Xot
+
+Data analisi: [DATE]
+=======
+>>>>>>> laraxot/dev
 # PHPStan Duplicate Imports Fix - 2026-01-05
 
 ## Analisi Errori PHPStan Modulo Xot
 
 Data analisi: 2026-01-05
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 PHPStan Level: max
 Comando eseguito: `./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1`
 
