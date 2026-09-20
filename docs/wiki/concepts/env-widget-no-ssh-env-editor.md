@@ -4,11 +4,12 @@ type: concept
 status: canonical
 module: Xot
 created: 2026-09-17
-updated: 2026-09-17
-tags: [env, widget, filament, config, deploy, no-ssh, artisan-commands-manager]
-qmd: "EnvWidget EnvData env editor no ssh no ftp config cache artisan commands manager sms_driver"
+updated: 2026-09-20
+tags: [env, widget, filament, config, deploy, no-ssh, artisan-commands-manager, mail, smtp]
+qmd: "EnvWidget EnvData env editor no ssh no ftp config cache artisan commands manager sms_driver mail_mailer mail_host mail_port smtp"
 related:
   - ../../../../Notify/docs/wiki/concepts/sms-channel-driver-selection.md
+  - ../../../../Quaeris/docs/stories/quaeris-envwidget-mail-config-fields.md
   - ./artisan-migrate-no-force.md
 ---
 
@@ -85,10 +86,25 @@ cosa c'è oggi in `NETFUN_TOKEN` in produzione (non solo per scriverlo) è
 vederlo pre-compilato in questo campo, dato che `mount()` carica sempre il
 valore corrente da `$_ENV` prima che l'utente tocchi nulla.
 
-**Nota sicurezza**: `netfun_token` (come già `telegram_bot_token` prima)
-compare in chiaro nel form, senza mascheramento — coerente con gli altri
-campi-segreto già esposti da questo widget, ma da tenere presente: chiunque
-abbia accesso alla pagina Impostazioni di Notify vede il token in chiaro.
+Secondo esempio reale: `mail_mailer`/`mail_host`/`mail_port`/
+`mail_encryption`/`mail_username`/`mail_password` aggiunti il 2026-09-20,
+stesso motivo pratico ma per `MAIL_*` invece di `SMS_*` — diagnosticare un
+invio email che va in timeout dal server nuovo
+([module_quaeris_fila5#46](https://github.com/laraxot/module_quaeris_fila5/issues/46))
+senza poter aprire il `.env` di produzione via SSH. `mail_mailer` e
+`mail_encryption` sono `Select` a opzioni chiuse (stesso motivo di
+`sms_driver`: i valori validi sono un enum applicativo, `config('mail.mailers')`
+per il primo, `tls`/`ssl`/nessuna per il secondo — non testo libero, per
+evitare refusi che rompono l'invio solo al primo tentativo reale). Story:
+[quaeris-envwidget-mail-config-fields.md](../../../../Quaeris/docs/stories/quaeris-envwidget-mail-config-fields.md).
+
+**Nota sicurezza**: `netfun_token` e `mail_password` (come già
+`telegram_bot_token` prima) compaiono in chiaro nel form, senza
+mascheramento — coerente con gli altri campi-segreto già esposti da questo
+widget, ma da tenere presente: chiunque abbia accesso alla pagina
+Impostazioni di Notify vede questi valori in chiaro. Per `mail_password`
+questa scelta è stata confermata esplicitamente dall'utente (non un default
+assunto), vedi la story collegata.
 
 ## Dopo il salvataggio: la config cache
 
@@ -121,8 +137,22 @@ produzione — rigenera comunque la cache dal `.env` corrente.
   sovrascrivere quella modifica esterna con il valore "vecchio" per quella
   proprietà (comportamento condiviso da qualunque form basato su uno snapshot
   caricato al `mount()`).
-- I file di traduzione `Modules/Xot/lang/{it,en,de}/env.php` descrivono un
-  concetto più ampio (CRUD chiave/valore/tipo/ambiente con backup/restore) mai
-  collegato a questo widget — `EnvWidget.php` non chiama `__()` da nessuna
-  parte, sono etichette hardcoded nel widget stesso. Non usarli come
-  riferimento per capire cosa fa `EnvWidget` oggi.
+- **Corretto il 2026-09-20 — l'affermazione precedente qui era sbagliata**:
+  `Modules/Xot/lang/{it,en,de}/env.php` **è** collegato a questo widget, non
+  è un concetto scollegato. `EnvWidget.php` non chiama `__()` esplicitamente,
+  ma non serve: `Modules\Lang\Providers\Filament\LangServiceProvider::
+  registerFilamentLabel()` registra un `Field::configureUsing()`/
+  `Section::configureUsing()` **globale**, applicato automaticamente a ogni
+  campo/Section Filament dell'intera applicazione (non solo a `EnvWidget`).
+  Quel hook (`Modules\Lang\Actions\Filament\AutoLabelAction`) risolve
+  `label`/`placeholder`/`helperText`/`description` da
+  `{modulo}::env.fields.<nome_campo>.<chiave>` (per una `Section`,
+  `{modulo}::env.sections.<heading>.<label|heading>`) — verificato dal vivo,
+  non dedotto: il primo caricamento della pagina Impostazioni **scrive da
+  solo** le voci mancanti in `env.php`, con il nome del campo/dell'heading
+  come valore segnaposto. Conseguenza pratica: **non usare `->label()`/
+  `->placeholder()`/`->helperText()` direttamente su un campo di questo
+  widget** (viola la regola generale del progetto, vedi
+  `bashscripts/ai/wiki/rules/filament-rules-summary.md`) — impostare invece
+  il testo vero direttamente nel file di traduzione, alla chiave che il
+  meccanismo genera automaticamente al primo caricamento.
