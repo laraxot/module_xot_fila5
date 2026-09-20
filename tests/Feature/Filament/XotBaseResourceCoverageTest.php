@@ -207,3 +207,16 @@ it('covers step builder branches', function (): void {
     Assert::assertInstanceOf(Step::class, ProbeResource::callGetStepByName('custom_step'));
 });
 
+<<<<<<< HEAD
+=======
+it('covers simple base helpers', function (): void {
+    $resource = new ProbeResource;
+
+    Assert::assertSame([], $resource->getInfolistSchema());
+    Assert::assertSame([], ProbeResource::extendTableCallback());
+    Assert::assertSame([], ProbeResource::extendFormCallback());
+    Assert::assertStringStartsWith('Xot', ProbeResource::getModuleName());
+    Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
+    Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
+});
+>>>>>>> laraxot/dev

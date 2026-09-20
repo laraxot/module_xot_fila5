@@ -186,8 +186,12 @@ class FileAction
     public static function getViewNameSpacePath(string $ns): ?string
     {
         $xot = XotData::make();
+<<<<<<< HEAD
         /** @var \Illuminate\View\Factory $finder */
         $finder = app(\Illuminate\View\Factory::class);
+=======
+        $finder = view()->getFinder();
+>>>>>>> laraxot/dev
         $viewHints = [];
         if (method_exists($finder, 'getHints')) {
             $viewHints = $finder->getHints();
@@ -246,8 +250,13 @@ class FileAction
         //    throw new \Exception('do not reach public path');
         // }
 
+<<<<<<< HEAD
         if (Str::startsWith($filename, (string) $public_path)) {
             $url = mb_substr($filename, mb_strlen((string) $public_path));
+=======
+        if (Str::startsWith($filename, $public_path)) {
+            $url = mb_substr($filename, mb_strlen($public_path));
+>>>>>>> laraxot/dev
             $url = str_replace(\DIRECTORY_SEPARATOR, '/', $url);
 
             return asset($url);
@@ -259,7 +268,11 @@ class FileAction
             dddx($msg);
         }
         //*/
+<<<<<<< HEAD
         $url = asset('modules/'.$ns.'/'.$path1);
+=======
+        $url = Module::asset($ns.':'.$path1);
+>>>>>>> laraxot/dev
         $filename_pub = Module::assetPath($ns).\DIRECTORY_SEPARATOR.$path1;
         if (! File::exists(\dirname($filename_pub))) {
             try {
@@ -276,6 +289,7 @@ class FileAction
             } catch (Exception $e) {
                 dd('Caught exception: ', $e->getMessage(), '\n['.__LINE__.']['.class_basename(static::class).']');
             }
+<<<<<<< HEAD
         } else {
             $msg = [
                 'ns' => $ns,
@@ -285,6 +299,19 @@ class FileAction
             ];
             dddx($msg); // 4 debug
         }
+=======
+        }
+        // else: sorgente $filename assente, nessuna copia da fare — $url e'
+        // gia' costruito sopra da Module::asset(), il caso e' atteso (non
+        // ogni asset namespaced ha una sorgente locale da pubblicare), non
+        // un errore. Rimosso un `dddx($msg)` attivo qui (residuo di debug,
+        // marcato "// 4 debug" come il blocco gia' commentato poco sopra,
+        // ma mai disattivato): bloccava con un dump-and-die qualunque
+        // richiesta/test che risolvesse un asset namespaced senza file
+        // sorgente locale — causa diretta del rumore nell'output della
+        // suite Pest completa del modulo Xot, vedi story
+        // xotbasemanagerelatedrecords-post-saga-cleanup.story.md.
+>>>>>>> laraxot/dev
 
         // $url=str_replace(url('/'),'',$url);
         // dddx(url($url));
@@ -327,7 +354,11 @@ class FileAction
             }
         } else {
             $filename = str_replace('/', \DIRECTORY_SEPARATOR, $filename);
+<<<<<<< HEAD
                         $full = $ns.':'.$path1;
+=======
+            $full = $ns.':'.$path1;
+>>>>>>> laraxot/dev
             $msg = [
                 'ns' => $ns,
                 'Module::getModulePath' => Module::getModulePath($ns.':'.$path1), // /home/vagrant/code/htdocs/lara/foodm/Modules/LU/

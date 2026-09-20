@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: 'code_analyse'
 module: Xot
@@ -14,6 +19,10 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/code_analyse.txt -->
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 //----------------------------------------------------------
 phpstan
 install:
@@ -21,6 +30,13 @@ install:
 cmd:
 ./vendor/bin/phpstan analyse ./Modules/Xot
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 //----------------------------------------------------------
 https://github.com/phan/phan/wiki/Getting-Started
 
@@ -37,7 +53,14 @@ php ./vendor/bin/phpmetrics --report-html=../_phpmetrics_report Modules
 //----------------------------------------------------------
 https://github.com/squizlabs/PHP_CodeSniffer
 install:
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Download using curl
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
@@ -55,8 +78,19 @@ $ wget https://phar.phpunit.de/phpcpd.phar
 
 $ php phpcpd.phar --version
 
+<<<<<<< HEAD
 //---------------------
 https://scrutinizer-ci.com/project_docs/tools/php/php-scrutinizer/
+=======
+<<<<<<< HEAD
+
+//---------------------
+https://scrutinizer-ci.com/docs/tools/php/php-scrutinizer/
+=======
+//---------------------
+https://scrutinizer-ci.com/project_docs/tools/php/php-scrutinizer/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 //--------------------
 https://github.com/Qafoo/QualityAnalyzer
@@ -70,7 +104,15 @@ cmd:
 bin/analyze analyze /path/to/source
 //-------------------------------------------------------------
 
+<<<<<<< HEAD
 https://psalm.dev/project_docs/running_psalm/installation/
+=======
+<<<<<<< HEAD
+https://psalm.dev/docs/running_psalm/installation/
+=======
+https://psalm.dev/project_docs/running_psalm/installation/
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 //--------------------------------------------------------------------
 https://github.com/scrutinizer-ci/php-analyzer
@@ -82,10 +124,28 @@ https://geekflare.com/php-security-scanner/
 https://hub.docker.com/r/adamculp/php-code-quality
 https://docs.gitlab.com/ee/user/project/merge_requests/code_quality.html
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 https://github.com/enlightn/enlightn
 
  "edgedesign/phpqa": "^1.23",
 
  "phan/phan": "^4.0",
         "phpmetrics/phpmetrics": "^2.7",
+<<<<<<< HEAD
         "phpunit/php-code-coverage": "^9.2",
+=======
+<<<<<<< HEAD
+        "phpunit/php-code-coverage": "^9.2",
+=======
+        "phpunit/php-code-coverage": "^9.2",
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

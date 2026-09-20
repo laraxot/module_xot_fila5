@@ -25,7 +25,12 @@ test('getTableFiltersLayout default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, \Filament\Tables\Columns\Column> */
+<<<<<<< HEAD
         public function getTableColumns(): array
+=======
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -40,7 +45,12 @@ test('getTableFiltersLayout default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, \Filament\Tables\Columns\Column> */
+<<<<<<< HEAD
         public function getTableColumns(): array
+=======
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -62,7 +72,12 @@ test('getTableRecordActionsPosition default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, \Filament\Tables\Columns\Column> */
+<<<<<<< HEAD
         public function getTableColumns(): array
+=======
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }
@@ -77,7 +92,12 @@ test('getTableRecordActionsPosition default e override', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, \Filament\Tables\Columns\Column> */
+<<<<<<< HEAD
         public function getTableColumns(): array
+=======
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }

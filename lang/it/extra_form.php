@@ -25,7 +25,11 @@ return [
         'value' => [
             'label' => 'value',
             'placeholder' => 'value',
+<<<<<<< HEAD
             'helper_text' => 'value',
+=======
+            'helper_text' => '',
+>>>>>>> laraxot/dev
             'description' => 'value',
         ],
     ],

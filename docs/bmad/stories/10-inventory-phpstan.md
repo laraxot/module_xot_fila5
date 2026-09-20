@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+---
+name: 10-inventory-phpstan
+description: "Modulo: Inventory"
+metadata:
+  type: bmad
+---
+
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # BMAD Story 10 — Inventory: 20 errori PHPStan
 
 **Modulo:** `Inventory`

@@ -22,7 +22,12 @@ test('senza override si ricade sul default vuoto', function (): void {
         public string $tableSearch = '';
 
         /** @return array<string, mixed> */
+<<<<<<< HEAD
         public function getTableColumns(): array
+=======
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+>>>>>>> laraxot/dev
         {
             return [];
         }

@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -177,7 +183,15 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -186,7 +200,15 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< HEAD
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -282,6 +304,12 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -737,6 +765,10 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
     public function getFormSchema(): array
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -895,6 +927,11 @@ return [
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 
 ---
@@ -1345,3 +1382,7 @@ return [
 **Stima Effort**: 40-60 ore di refactoring
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

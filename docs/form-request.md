@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb
+=======
+>>>>>>> laraxot/dev
 ---
 title: 'Form request — risorse esterne'
 module: Xot
@@ -18,3 +24,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://dev.to/psylogico/different-ways-to-use-laravel-form-requests-5bmb>
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

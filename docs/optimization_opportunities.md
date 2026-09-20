@@ -6,6 +6,11 @@ canonical: ../../../Themes/docs/shared-components/optimization-opportunities-2.m
 
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 # Opportunità di Ottimizzazione DRY + KISS
 
@@ -379,3 +384,7 @@ return array_merge(
 *Autore: Analisi Automatica del Progetto*
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

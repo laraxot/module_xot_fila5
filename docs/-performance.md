@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: '_performance'
 module: Xot
@@ -13,6 +18,10 @@ updated: 2026-08-24
 
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # _performance
 
 <!-- Contenuto migrato da _docs/_performance.txt -->
@@ -22,6 +31,16 @@ updated: 2026-08-24
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 7f6cf6be (.)
+=======
+
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

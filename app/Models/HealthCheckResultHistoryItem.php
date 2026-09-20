@@ -26,6 +26,10 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
  * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()
  * @method static Builder<static>|HealthCheckResultHistoryItem query()
@@ -42,6 +46,10 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @method static Builder<static>|HealthCheckResultHistoryItem whereStatus($value)
  * @method static Builder<static>|HealthCheckResultHistoryItem whereUpdatedAt($value)
  * @method static Builder<static>|HealthCheckResultHistoryItem whereUpdatedBy($value)
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class HealthCheckResultHistoryItem extends BaseHealthCheckResultHistoryItem

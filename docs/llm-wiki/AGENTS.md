@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "Agent instructions"
 type: reference
@@ -14,6 +19,10 @@ related:
 
 =======
 >>>>>>> 7f6cf6be (.)
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Xot Module LLM Wiki Agent Instructions
 
 > **Module/Theme:** Xot

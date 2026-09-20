@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests;
 
 use Filament\Infolists\Components\Entry;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component as SchemaComponent;
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -103,6 +107,22 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
+<<<<<<< HEAD
+=======
+            try {
+                # @phpstan-ignore-next-line
+                $schema = $class::getFormSchema();
+                $executed++;
+                if ($schema === []) {
+                    continue;
+                }
+
+                self::assertKeyedSchema($schema, $class);
+                Assert::assertContainsOnlyInstancesOf(SchemaComponent::class, $schema);
+            } catch (\Throwable) {
+                $executed++;
+            }
+>>>>>>> laraxot/dev
         }
 
         Assert::assertGreaterThanOrEqual(0, $executed);
@@ -118,7 +138,11 @@ final class FilamentSchemaCoverage
             }
 
             try {
+<<<<<<< HEAD
                 $tabella = new $class();
+=======
+                $tabella = new $class;
+>>>>>>> laraxot/dev
                 $colonne = $tabella->getTableColumns();
                 $executed++;
 
@@ -266,7 +290,11 @@ final class FilamentSchemaCoverage
             }
 
             try {
+<<<<<<< HEAD
                 $page = new $class();
+=======
+                $page = new $class;
+>>>>>>> laraxot/dev
                 Assert::assertNotEmpty($page->getTableColumns());
             } catch (\Throwable $e) {
                 Assert::assertNotSame('', $e->getMessage());

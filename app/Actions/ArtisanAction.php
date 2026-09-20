@@ -13,14 +13,22 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
 
 use function Safe\define;
 use function Safe\fopen;
 use function Safe\preg_match_all;
 
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+=======
+>>>>>>> laraxot/dev
 if (! defined('STDIN')) {
     define('STDIN', fopen('php://stdin', 'r'));
 }
@@ -44,6 +52,7 @@ class ArtisanAction
         switch ($act) {
             case 'migrate':
                 $defaultConn = Config::get('database.default');
+<<<<<<< HEAD
                 $purgeConn = \is_string($defaultConn) && '' !== $defaultConn ? $defaultConn : 'mysql';
                 DB::purge($purgeConn);
                 DB::reconnect($purgeConn);
@@ -55,6 +64,16 @@ class ArtisanAction
                     echo '<h3>Module '.$module_name.'</h3>';
 
                     return self::exe('module:migrate '.$module_name);
+=======
+                $purgeConn = \is_string($defaultConn) && $defaultConn !== '' ? $defaultConn : 'mysql';
+                DB::purge($purgeConn);
+                DB::reconnect($purgeConn);
+                if ($module_name !== '') {
+                    echo '<h3>Module '.$module_name.'</h3>';
+
+                    // Dati sacri: mai --force (solo migrate additivo)
+                    return self::exe('module:migrate', ['module' => $module_name]);
+>>>>>>> laraxot/dev
                 }
 
                 return self::exe('migrate');
@@ -117,7 +136,13 @@ class ArtisanAction
 
     public static function errorShow(): Renderable
     {
+<<<<<<< HEAD
         /** @var view-string $view */
+=======
+        /**
+         * @var view-string
+         */
+>>>>>>> laraxot/dev
         $view = 'xot::acts.artisan.error-show';
         $files = File::files(storage_path('logs'));
         $log = request('log', '');
@@ -125,7 +150,11 @@ class ArtisanAction
             $log = '';
         }
         $content = '';
+<<<<<<< HEAD
         if ('' !== $log && File::exists(storage_path('logs/'.$log))) {
+=======
+        if ($log !== '' && File::exists(storage_path('logs/'.$log))) {
+>>>>>>> laraxot/dev
             $content = File::get(storage_path('logs/'.$log));
         }
 
@@ -135,10 +164,19 @@ class ArtisanAction
         $matches = [];
         preg_match_all($pattern, $content, $matches);
 
+<<<<<<< HEAD
         /** @var array<int, string> $urlsRaw */
         $urlsRaw = $matches[1];
         /** @var list<string> $urls */
         $urls = $urlsRaw !== [] ? array_values(array_unique($urlsRaw)) : [];
+=======
+        /** @var array<int, string> $urls */
+        $urls = [];
+        $urlsRaw = $matches[1];
+        if ($urlsRaw !== []) {
+            $urls = array_values(array_unique($urlsRaw));
+        }
+>>>>>>> laraxot/dev
 
         $view_params = [
             'view' => $view,
@@ -157,7 +195,13 @@ class ArtisanAction
     public static function showRouteList(): string
     {
         $routeCollection = Route::getRoutes();
+<<<<<<< HEAD
         /** @var view-string $view */
+=======
+        /**
+         * @var view-string
+         */
+>>>>>>> laraxot/dev
         $view = 'xot::acts.artisan.show_route_list';
         $view_params = [
             'view' => $view,
@@ -165,7 +209,12 @@ class ArtisanAction
             'lang' => app()->getLocale(),
         ];
 
+<<<<<<< HEAD
         $out = view($view, $view_params);
+=======
+        $out = view((string) $view, $view_params);
+
+>>>>>>> laraxot/dev
         Assert::isInstanceOf($out, View::class);
 
         return $out->render();
@@ -176,7 +225,11 @@ class ArtisanAction
         $files = File::files(storage_path('logs'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ('log' === $file->getExtension() && false !== $file->getRealPath()) {
+=======
+            if ($file->getExtension() === 'log' && $file->getRealPath() !== false) {
+>>>>>>> laraxot/dev
                 echo '<br/>'.$file->getRealPath();
 
                 File::delete($file->getRealPath());
@@ -191,7 +244,11 @@ class ArtisanAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
+=======
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+>>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }
@@ -203,7 +260,11 @@ class ArtisanAction
     {
         $files = File::files(storage_path('debugbar'));
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ('json' === $file->getExtension() && false !== $file->getRealPath()) {
+=======
+            if ($file->getExtension() === 'json' && $file->getRealPath() !== false) {
+>>>>>>> laraxot/dev
                 File::delete($file->getRealPath());
             }
         }
@@ -212,7 +273,11 @@ class ArtisanAction
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $arguments
+=======
+     * @param  array<string, mixed>  $arguments
+>>>>>>> laraxot/dev
      */
     public static function exe(string $command, array $arguments = []): string
     {
@@ -227,7 +292,11 @@ class ArtisanAction
         }
     }
 
+<<<<<<< HEAD
     public function execute(): void
     {
     }
+=======
+    public function execute(): void {}
+>>>>>>> laraxot/dev
 }
