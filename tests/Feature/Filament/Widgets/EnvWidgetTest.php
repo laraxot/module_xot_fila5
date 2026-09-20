@@ -78,7 +78,37 @@ it('mounts with the mail and sms fields pre-filled from the current .env, not em
     // lasci i campi mail a valore di default vuoto per un ambiente che ha
     // MAIL_HOST configurato — coerente con la verifica gia' fatta a mano
     // via tinker durante l'implementazione.
-    expect($data)->toHaveKeys(['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'sms_driver', 'netfun_token']);
+    expect($data)->toHaveKeys(['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name', 'sms_driver', 'netfun_token']);
+});
+
+it('persists mail_from_address and mail_from_name to the real .env file when changed', function (): void {
+    $marker = uniqid('', true);
+
+    $widget = new EnvWidget();
+    $widget->mount();
+    $widget->data['mail_from_address'] = 'pest-'.$marker.'@example.test';
+    $widget->data['mail_from_name'] = 'Pest '.$marker;
+    $widget->submit();
+
+    $envContentAfter = File::get($this->envPath);
+    expect($envContentAfter)
+        ->toContain('MAIL_FROM_ADDRESS="pest-'.$marker.'@example.test"')
+        ->toContain('MAIL_FROM_NAME="Pest '.$marker.'"');
+});
+
+it('does not rewrite MAIL_FROM_NAME when the form leaves it unchanged, so a ${APP_NAME} reference survives', function (): void {
+    $fromNameLineBefore = collect(explode("\n", $this->originalEnvContent))
+        ->first(fn (string $line): bool => str_starts_with($line, 'MAIL_FROM_NAME='));
+
+    $widget = new EnvWidget();
+    $widget->mount();
+    $widget->data['telegram_bot_token'] = 'pest-test-'.uniqid('', true);
+    $widget->submit();
+
+    $fromNameLineAfter = collect(explode("\n", File::get($this->envPath)))
+        ->first(fn (string $line): bool => str_starts_with($line, 'MAIL_FROM_NAME='));
+
+    expect($fromNameLineAfter)->toBe($fromNameLineBefore);
 });
 
 it('groups fields into General/SMS/Mail sections and keeps every selected field visible', function (): void {
@@ -87,6 +117,7 @@ it('groups fields into General/SMS/Mail sections and keeps every selected field 
         'debugbar_enabled', 'telegram_bot_token',
         'sms_driver', 'netfun_token',
         'mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password',
+        'mail_from_address', 'mail_from_name',
     ];
 
     $schema = $widget->getFormSchema();

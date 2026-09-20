@@ -35,7 +35,7 @@ class EnvWidget extends XotBaseSchemaWidget
     private const array GROUPS = [
         'General' => ['app_url', 'debugbar_enabled', 'google_maps_api_key', 'telegram_bot_token'],
         'SMS' => ['sms_driver', 'netfun_token'],
-        'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password'],
+        'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name'],
     ];
 
     public function mount(): void
@@ -113,6 +113,8 @@ class EnvWidget extends XotBaseSchemaWidget
                 ]),
             'mail_username' => TextInput::make('mail_username'),
             'mail_password' => TextInput::make('mail_password'),
+            'mail_from_address' => TextInput::make('mail_from_address'),
+            'mail_from_name' => TextInput::make('mail_from_name'),
         ];
         /** @var array<string, Component> $selected */
         $selected = [] === $this->only ? $all : Arr::only($all, $this->only);

@@ -5,8 +5,8 @@ status: canonical
 module: Xot
 created: 2026-09-17
 updated: 2026-09-20
-tags: [env, widget, filament, config, deploy, no-ssh, artisan-commands-manager, mail, smtp]
-qmd: "EnvWidget EnvData env editor no ssh no ftp config cache artisan commands manager sms_driver mail_mailer mail_host mail_port smtp"
+tags: [env, widget, filament, config, deploy, no-ssh, artisan-commands-manager, mail, smtp, mail-from]
+qmd: "EnvWidget EnvData env editor no ssh no ftp config cache artisan commands manager sms_driver mail_mailer mail_host mail_port smtp mail_from_address mail_from_name MAIL_FROM_ADDRESS MAIL_FROM_NAME"
 related:
   - ../../../../Notify/docs/wiki/concepts/sms-channel-driver-selection.md
   - ../../../../Quaeris/docs/stories/quaeris-envwidget-mail-config-fields.md
@@ -50,7 +50,12 @@ senza toccare il filesystem del server con altri strumenti.
   ```php
   public function getHeaderWidgets(): array
   {
-      $only = ['debugbar_enabled', 'telegram_bot_token', 'sms_driver', 'netfun_token'];
+      $only = [
+          'debugbar_enabled', 'telegram_bot_token',
+          'sms_driver', 'netfun_token',
+          'mail_mailer', 'mail_host', 'mail_port', 'mail_encryption',
+          'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name',
+      ];
 
       return [EnvWidget::make(['only' => $only])];
   }
@@ -97,6 +102,25 @@ senza poter aprire il `.env` di produzione via SSH. `mail_mailer` e
 per il primo, `tls`/`ssl`/nessuna per il secondo — non testo libero, per
 evitare refusi che rompono l'invio solo al primo tentativo reale). Story:
 [quaeris-envwidget-mail-config-fields.md](../../../../Quaeris/docs/stories/quaeris-envwidget-mail-config-fields.md).
+
+Terzo esempio reale: `mail_from_address`/`mail_from_name` (`MAIL_FROM_ADDRESS`/
+`MAIL_FROM_NAME`) aggiunti il 2026-09-20 sulla stessa pagina, nel gruppo
+**Mail**. Sono due `TextInput` liberi (indirizzo e nome del mittente non sono
+un enum applicativo) e, a differenza dei campi SMTP, valgono con **qualunque**
+`mail_mailer`, non solo `smtp`. Due dettagli da conoscere:
+
+- `$_ENV` contiene il valore **già risolto**: con `MAIL_FROM_NAME="${APP_NAME}"`
+  nel `.env` (default del progetto) il campo si apre pre-compilato col nome
+  dell'app, non con la stringa `${APP_NAME}`. Finché il campo non viene
+  modificato, `EnvData::update()` non riscrive quella riga (confronta il
+  valore del form con quello letto all'apertura), quindi il riferimento
+  `${APP_NAME}` sopravvive; se invece lo si modifica, nel `.env` finisce il
+  testo letterale scritto. Coperto da test in `EnvWidgetTest`.
+- Nessuna validazione `->email()` su `mail_from_address`: `submit()` legge
+  `$this->data` senza `form->getState()`, e `->email()` renderebbe l'input
+  `type=email`, bloccando dal browser il salvataggio di **tutto** il form se
+  il valore corrente non è un indirizzo valido (succede: `.env.development`
+  ha `MAIL_FROM_ADDRESS="${APP_NAME}"`).
 
 **Nota sicurezza**: `netfun_token` e `mail_password` (come già
 `telegram_bot_token` prima) compaiono in chiaro nel form, senza
