@@ -20,6 +20,7 @@ discussions:
 - `phpstan analyse` (senza path CLI) e `analyse Modules` entrambi 0, `totals.file_errors: 0`.
 - Canon: [phpstan-status.md](../phpstan-status.md) · story [18.59](../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md)
 - Merge markers risolti in [phpstan-best-practices.md](phpstan-best-practices.md); rimosso duplicato `PHPSTAN-BEST-PRACTICES.md`.
+- Mute-gate Setting (`getFormSchema` final) + marker PHP Activity chiusi; certify ancora 0.
 
 ## [2026-07-24] architecture | no domain Actions in Xot
 

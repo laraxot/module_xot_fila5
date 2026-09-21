@@ -16,6 +16,11 @@ php -d memory_limit=-1 ./vendor/bin/phpstan analyse --no-progress --memory-limit
 `analyse Modules` nello stesso momento è anch'esso a 0. I due conteggi coincidono:
 non resta residuo `typeCoverage` visibile sul full-tree.
 
+Stesso giorno, dopo la verifica 18.59: un `analyse` su file Media caricava Setting e
+il bootstrap Filament andava in fatal (`Cannot override final method
+XotBaseResource::getFormSchema()`), poi 25 errori Setting, poi marker `<<<<<<<`
+in `Activity/LogViewer.php` (mute-gate). Tutto chiuso. Rilancio certifying: ancora 0.
+
 Config: `laravel/phpstan.neon` (`level: max`, `phpstan.neon` immutabile).
 Neon **non** si tocca. Errori si risolvono nel codice, mai con baseline o ignore di evasione.
 
@@ -41,7 +46,7 @@ Per dichiarare «siamo a zero» serve il comando senza argomenti.
 - Story [18.27](./stories/18.27.hasxottable-fuori-dai-componenti-filament.story.md):
   `HasXotTable` montato ancora su componenti `HasTable` → ignore `method.deprecated` nel trait.
 - Duplicate path `XotBaseManageRelatedRecords` (`Pages/` vs `XotBaseResource/Pages/`).
-- Marker di merge in alcuni `.md` del wiki Xot: PHPStan non li vede.
+- Marker di merge in alcuni `.md` (wiki, temi): PHPStan non li vede. I `.php` sono a 0 `<<<<<<<`.
 
 ## Collegamenti
 
