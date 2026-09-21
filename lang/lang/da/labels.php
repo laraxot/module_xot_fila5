@@ -1,11 +1,10 @@
 <?php
 
+
+declare(strict_types=1);
 /**
  * da.
  */
-
-declare(strict_types=1);
-
 return [
     'general' => [
         'all' => 'Alle',

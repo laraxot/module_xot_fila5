@@ -6,6 +6,7 @@ status: superseded-stale
 related:
   - ./livewire-inventory.md
   - ./livewire-widget-project-context.md
+  - ./livewire-widget-advantages.md
 ---
 
 # Xot — canone

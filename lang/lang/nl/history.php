@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'backend' => [
         'none' => 'Er is geen recente geschiedenis.',

@@ -5,6 +5,7 @@ module: Xot
 status: approved
 related:
   - ./livewire-inventory.md
+  - ./livewire-widget-advantages.md
   - ../../../User/docs/bmad/livewire-inventory.md
 ---
 

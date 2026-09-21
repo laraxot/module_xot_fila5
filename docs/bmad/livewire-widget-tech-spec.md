@@ -6,6 +6,7 @@ status: approved
 related:
   - ./livewire-widget-prd.md
   - ./livewire-widget-architecture.md
+  - ./livewire-widget-advantages.md
 ---
 
 # Tech spec Xot

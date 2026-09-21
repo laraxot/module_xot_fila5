@@ -7,6 +7,7 @@ related:
   - ./livewire-widget-product-brief.md
   - ./livewire-inventory.md
   - ./livewire-widget-architecture.md
+  - ./livewire-widget-advantages.md
 ---
 
 # PRD piattaforma

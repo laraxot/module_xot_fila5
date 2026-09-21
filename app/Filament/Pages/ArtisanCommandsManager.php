@@ -108,7 +108,7 @@ class ArtisanCommandsManager extends XotBasePage
     }
 
     /**
-     * @param 'completed'|'failed' $status
+     * @param  'completed'|'failed'  $status
      */
     private function notifyCommandResult(string $command, string $status): void
     {

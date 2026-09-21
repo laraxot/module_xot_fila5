@@ -117,7 +117,7 @@ class EnvWidget extends XotBaseSchemaWidget
             'mail_from_name' => TextInput::make('mail_from_name'),
         ];
         /** @var array<string, Component> $selected */
-        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
+        $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
 
         $grouped = [];
         $components = [];
