@@ -5,6 +5,7 @@ module: Xot
 status: approved
 related:
   - ./livewire-widget-prd.md
+  - ./livewire-widget-advantages.md
 ---
 
 # UX

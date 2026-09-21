@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'accepted' => 'El campo :attribute debe ser aceptado.',
     'active_url' => 'El campo :attribute no es una URL válida.',

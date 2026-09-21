@@ -6,7 +6,6 @@ namespace Modules\Xot\Actions;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
-
 use Spatie\QueueableAction\QueueableAction;
 
 /**

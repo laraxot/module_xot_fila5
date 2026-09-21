@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 return [
     'title' => 'Laravel安裝程序',
     'next' => '下一步',

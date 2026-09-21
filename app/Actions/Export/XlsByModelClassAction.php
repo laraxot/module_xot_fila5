@@ -68,7 +68,7 @@ class XlsByModelClassAction
         }
 
         if ($excludes !== []) {
-            $rows = $rows->map(function (mixed $item) use ($excludes) {
+            $rows = $rows->map(function (Model|array $item) use ($excludes): Model|array {
                 if ($item instanceof Model) {
                     return $item->makeHidden($excludes);
                 }
@@ -79,14 +79,10 @@ class XlsByModelClassAction
 
         // Applichiamo il callback se fornito
         if ($callback !== null) {
-            /** @var \Closure(mixed, int): mixed $mapCallback */
-            $mapCallback = static function (mixed $item, int $key) use ($callback): mixed {
+            /** @var \Closure(Model|array<array-key, mixed>, int): mixed $mapCallback */
+            $mapCallback = static function (Model|array $item, int $key) use ($callback): mixed {
                 if ($item instanceof Model) {
                     return $callback($item, $key);
-                }
-
-                if (! is_array($item)) {
-                    return $item;
                 }
 
                 /** @var array<string, mixed> $data */

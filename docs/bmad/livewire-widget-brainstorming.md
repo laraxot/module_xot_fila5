@@ -5,6 +5,7 @@ module: Xot
 status: done
 related:
   - ./livewire-widget-project-context.md
+  - ./livewire-widget-advantages.md
 ---
 
 # Brainstorming

@@ -28,37 +28,37 @@ use Tests\TestCase;
 class HasXotTableReorderingTest extends TestCase
 {
     #[Test]
-    public function itReturnsOrderColumnWhenModelHasColumn(): void
+    public function it_returns_order_column_when_model_has_column(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
-    public function itReturnsNullWhenModelMissingOrderColumn(): void
+    public function it_returns_null_when_model_missing_order_column(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
-    public function itAllowsOverrideInSubclass(): void
+    public function it_allows_override_in_subclass(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::getOrderColumn() non esiste.');
     }
 
     #[Test]
-    public function itChecksColumnExistenceViaSchema(): void
+    public function it_checks_column_existence_via_schema(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::hasOrderableColumn() non esiste.');
     }
 
     #[Test]
-    public function itAutoEnablesReorderableWhenColumnExists(): void
+    public function it_auto_enables_reorderable_when_column_exists(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }
 
     #[Test]
-    public function itSkipsReorderableWhenColumnMissing(): void
+    public function it_skips_reorderable_when_column_missing(): void
     {
         $this->markTestIncomplete('Story 5.93 step 2 non ancora implementato: HasXotTable::applyReorderable() non esiste.');
     }
@@ -116,11 +116,13 @@ class TestTableWithCustomOrderColumn extends XotBaseResourceTable
 class TestModelWithOrderColumn extends Model
 {
     protected $table = 'test_models_with_order';
+
     protected $fillable = ['name', 'order_column'];
 }
 
 class TestModelWithoutOrderColumn extends Model
 {
     protected $table = 'test_models_without_order';
+
     protected $fillable = ['name'];
 }

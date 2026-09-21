@@ -6,6 +6,7 @@ status: approved
 related:
   - ./livewire-widget-prd.md
   - ./livewire-inventory.md
+  - ./livewire-widget-advantages.md
 ---
 
 # Architecture
