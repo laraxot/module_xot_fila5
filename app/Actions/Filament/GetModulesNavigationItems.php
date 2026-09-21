@@ -136,11 +136,7 @@ class GetModulesNavigationItems
      * Restituisce la versione cached e minimale dei moduli per UI rendering.
      * Questo evita di hardcodare i moduli nelle viste.
      *
-<<<<<<< HEAD
-     * @return array<int, array<string, string|int>>
-=======
      * @return array<int, array{module:string,module_low:string,icon:string,sort:int}>
->>>>>>> laraxot/dev
      */
     public function getCachedModuleConfigs(): array
     {
@@ -149,11 +145,7 @@ class GetModulesNavigationItems
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 
         $cached = Cache::get($cacheKey);
-<<<<<<< HEAD
-        /** @var array<int, array<string, string|int>> $cached */
-=======
         /** @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $cached */
->>>>>>> laraxot/dev
         if (\is_array($cached)) {
             return $cached;
         }

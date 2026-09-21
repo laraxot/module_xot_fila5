@@ -24,8 +24,6 @@ class EnvData extends Data implements Wireable
 
     public string $telegram_bot_token = '';
 
-<<<<<<< HEAD
-=======
     public string $sms_driver = '';
 
     public string $netfun_token = '';
@@ -46,7 +44,6 @@ class EnvData extends Data implements Wireable
 
     public string $mail_from_name = '';
 
->>>>>>> laraxot/dev
     private static ?self $instance = null;
 
     public static function make(): self

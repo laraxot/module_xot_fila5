@@ -40,9 +40,4 @@ trait HasXotFactory
 
         return $factory;
     }
-<<<<<<< HEAD
-
-   
-=======
->>>>>>> laraxot/dev
 }

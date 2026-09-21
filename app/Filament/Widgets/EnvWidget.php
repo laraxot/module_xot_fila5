@@ -4,18 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
-=======
 use Filament\Forms\Components\Select;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
-<<<<<<< HEAD
-=======
 use Filament\Schemas\Components\Section;
->>>>>>> laraxot/dev
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
@@ -30,8 +24,6 @@ class EnvWidget extends XotBaseSchemaWidget
     /** @var view-string */
     protected string $view = 'xot::filament.widgets.env';
 
-<<<<<<< HEAD
-=======
     /**
      * Raggruppamento visivo dei campi per Section, stile Laravel — un
      * campo non elencato qui compare comunque (fuori da qualunque Section,
@@ -46,7 +38,6 @@ class EnvWidget extends XotBaseSchemaWidget
         'Mail' => ['mail_mailer', 'mail_host', 'mail_port', 'mail_encryption', 'mail_username', 'mail_password', 'mail_from_address', 'mail_from_name'],
     ];
 
->>>>>>> laraxot/dev
     public function mount(): void
     {
         /** @var array<string, mixed> */
@@ -80,27 +71,6 @@ class EnvWidget extends XotBaseSchemaWidget
      */
     public function getFormSchema(): array
     {
-<<<<<<< HEAD
-        $all = [
-            'app_url' => TextInput::make('app_url')
-                ->placeholder('http://localhost')
-                ->helperText('Required for file uploads and other internal configs')
-                ->required(),
-            'debugbar_enabled' => Toggle::make('debugbar_enabled')->helperText(
-                'Enable/Disable debug mode to help debug errors',
-            ),
-            'google_maps_api_key' => TextInput::make('google_maps_api_key')
-                ->placeholder('AIzaSyAuB_...')
-                ->helperText('google maps api key'),
-            'telegram_bot_token' => TextInput::make('telegram_bot_token')
-                ->placeholder('AIzaSyAuB_...')
-                ->helperText('telegram_bot_token'),
-        ];
-        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
-
-        /** @var array<Component> $components */
-        $components = array_values($selected);
-=======
         // Nessun ->label()/->placeholder()/->helperText() qui: Modules\Lang
         // (LangServiceProvider::registerFilamentLabel(), Field::configureUsing())
         // li risolve automaticamente da Modules/Xot/lang/{locale}/env.php,
@@ -174,7 +144,6 @@ class EnvWidget extends XotBaseSchemaWidget
                 $components[] = $field;
             }
         }
->>>>>>> laraxot/dev
 
         return $components;
     }

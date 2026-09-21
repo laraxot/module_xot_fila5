@@ -5,11 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'isActive' => ['label' => 'isActive', 'placeholder' => 'isActive', 'helper_text' => 'isActive', 'description' => 'isActive'],
-<<<<<<< HEAD
-        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
-=======
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
->>>>>>> laraxot/dev
         'user' => [
             'name' => ['label' => 'user.name', 'placeholder' => 'user.name', 'helper_text' => 'user.name', 'description' => 'user.name'],
         ],
@@ -27,12 +23,9 @@ return [
         'endSpan' => ['label' => 'endSpan', 'placeholder' => 'endSpan', 'helper_text' => 'endSpan', 'description' => 'endSpan'],
         'url' => ['label' => 'url', 'placeholder' => 'url', 'helper_text' => 'url', 'description' => 'url'],
         'shouldOpenInNewTab' => ['label' => 'shouldOpenInNewTab', 'placeholder' => 'shouldOpenInNewTab', 'helper_text' => 'shouldOpenInNewTab', 'description' => 'shouldOpenInNewTab'],
-<<<<<<< HEAD
-=======
         'anno_valutatore' => ['label' => 'anno_valutatore'],
         'stabi_repar_anno' => ['label' => 'stabi_repar_anno'],
         'type' => ['label' => 'type'],
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
@@ -46,8 +39,6 @@ return [
         'link' => ['label' => 'link', 'icon' => 'link', 'tooltip' => 'link'],
         'textColor' => ['label' => 'textColor', 'icon' => 'textColor', 'tooltip' => 'textColor'],
         'attachAnother' => ['label' => 'attachAnother', 'icon' => 'attachAnother', 'tooltip' => 'attachAnother'],
-<<<<<<< HEAD
-=======
         'CheckCriterioEsclusioneBulkAction' => ['label' => 'CheckCriterioEsclusioneBulkAction', 'icon' => 'CheckCriterioEsclusioneBulkAction', 'tooltip' => 'CheckCriterioEsclusioneBulkAction'],
         'send_schede' => ['label' => 'send_schede', 'icon' => 'send_schede', 'tooltip' => 'send_schede'],
         'zip_scheda' => ['label' => 'zip_scheda', 'icon' => 'zip_scheda', 'tooltip' => 'zip_scheda'],
@@ -63,6 +54,5 @@ return [
     ],
     'sections' => [
         'empty' => ['label' => '', 'heading' => ''],
->>>>>>> laraxot/dev
     ],
 ];

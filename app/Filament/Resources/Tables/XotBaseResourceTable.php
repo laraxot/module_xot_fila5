@@ -6,12 +6,9 @@ namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Webmozart\Assert\Assert;
 
@@ -38,11 +35,6 @@ abstract class XotBaseResourceTable
     }
 
     /**
-<<<<<<< HEAD
-     * @return array<int|string, Column>
-     */
-    abstract public function getTableColumns(): array;
-=======
      * @return array<string, Column>
      */
     abstract public function getTableColumns(): array;
@@ -86,5 +78,4 @@ abstract class XotBaseResourceTable
         return $model;
     }
 
->>>>>>> laraxot/dev
 }

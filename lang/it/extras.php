@@ -7,11 +7,6 @@ return [
         'id' => ['label' => 'id'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
-<<<<<<< HEAD
-    ],
-    'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-=======
         'model_type' => ['label' => 'model_type'],
         'model_id' => ['label' => 'model_id'],
         'extra_attributes' => ['label' => 'extra_attributes'],
@@ -30,6 +25,5 @@ return [
             'icon' => 'edit',
             'tooltip' => 'edit',
         ],
->>>>>>> laraxot/dev
     ],
 ];

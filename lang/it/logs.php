@@ -7,11 +7,6 @@ return [
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
-<<<<<<< HEAD
-    ],
-    'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-=======
         'size' => ['label' => 'size'],
     ],
     'actions' => [
@@ -28,6 +23,5 @@ return [
             'icon' => 'edit',
             'tooltip' => 'edit',
         ],
->>>>>>> laraxot/dev
     ],
 ];
