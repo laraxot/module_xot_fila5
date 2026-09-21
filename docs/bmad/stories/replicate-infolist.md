@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: replicate-infolist
@@ -12,6 +10,5 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 BMAD story: XotBaseResourceInfolist replica istanza non statica e schema come XotBaseResourceForm

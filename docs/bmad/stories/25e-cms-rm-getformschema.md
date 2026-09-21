@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: 25e-cms-rm-getformschema
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # 25e-cms — Rimuovere getFormSchema da MenuResource
 

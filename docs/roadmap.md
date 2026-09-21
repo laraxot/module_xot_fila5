@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # Roadmap Modulo Xot - Completamento e Miglioramenti
 
 **Data Creazione**: 2026-01-02
@@ -349,7 +347,6 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 - Self-healing database migrations.
 - Automatic API documentation generation for all modules.
 =======
->>>>>>> laraxot/dev
 # Xot Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -1184,9 +1181,5 @@ Xot Module (Core Framework)
 
 ---
 
-<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
-*Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

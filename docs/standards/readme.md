@@ -11,8 +11,6 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 ## Note
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
@@ -91,7 +89,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 =======
->>>>>>> laraxot/dev
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice.
 
 ## Collegamenti tra versioni di README.md
@@ -171,9 +168,6 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 # Standard Xot: Ereditarietà dei Modelli
@@ -187,23 +181,17 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 
 ## Collegamenti
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
 =======
->>>>>>> laraxot/dev
 - [Modello Doctor (Patient)](../../../patient/project_docs/models/doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../patient/project_docs/readme.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../patient/project_docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../patient/project_docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../patient/project_docs/database/migrations.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Regola generale
@@ -227,14 +215,9 @@ class Doctor extends User
 
 ## Moduli che applicano questa regola
 <<<<<<< HEAD
-- [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
-// Aggiungere qui altri moduli se necessario
-=======
-<<<<<<< HEAD
 // Aggiungere qui altri moduli se necessario
 
 =======
 - [Patient: Modello Doctor](../../../patient/project_docs/models/doctor.md)
 // Aggiungere qui altri moduli se necessario
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

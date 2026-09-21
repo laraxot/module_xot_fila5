@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: 25f-tests-getformschema
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # 25f — Correggere test con static call getFormSchema() su Resource
 

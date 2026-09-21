@@ -65,11 +65,7 @@ public function getTableBulkActions(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -110,11 +106,7 @@ public function getTableActions(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     // ...
@@ -165,11 +157,7 @@ public function getTableBulkActions(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

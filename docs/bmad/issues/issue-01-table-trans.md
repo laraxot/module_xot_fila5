@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: issue-01-table-trans
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Issue GH #01 — Rimuovere TransTrait ridondante da XotBaseResourceTable
 

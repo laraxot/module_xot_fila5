@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->
@@ -12,7 +10,6 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 
 --------------------------------------------------------------
 =======
->>>>>>> laraxot/dev
 ---
 title: 'Inodes'
 module: Xot
@@ -26,9 +23,6 @@ updated: 2026-08-24
 ---
 
 -----------------------------------------------------------
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
@@ -63,9 +57,5 @@ dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno sca
 <<<<<<< HEAD
 --------------------------------------------------------------
 =======
-<<<<<<< HEAD
 --------------------------------------------------------------
-=======
---------------------------------------------------------------
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

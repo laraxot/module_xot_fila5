@@ -1,13 +1,10 @@
 # Troubleshooting Guide
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## Common Issues
 
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Troubleshooting Guide-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -24,9 +21,6 @@
 <<<<<<< HEAD
 > **Core module for the FixCity Platform.**
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ### PHPStan Errors
 - **Issue**: Method not found errors
@@ -50,8 +44,6 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 
 ### Translation Problems
@@ -79,7 +71,6 @@
 ## Getting Help
 
 =======
->>>>>>> laraxot/dev
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -110,9 +101,6 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - Check module-specific documentation
 - Review Laraxot framework guidelines
@@ -120,9 +108,6 @@ Core module for the FixCity Platform.
 - Use project memory system for context
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 =======
 [![Module](https://img.shields.io/badge/Module-Troubleshooting Guide-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -158,7 +143,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

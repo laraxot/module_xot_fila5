@@ -1,9 +1,6 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: '_todo'
 module: Xot
@@ -19,9 +16,6 @@ updated: 2026-08-24
 
 =======
 >>>>>>> 7f6cf6be (.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # _todo
 
@@ -31,14 +25,11 @@ questo con dei stubs crea services, traits ed altro da estendere per fare scrive
 https://github.com/limewell/laravel-make-extender
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 mostrare in una blade uso disco etc
 https://github.com/spatie/laravel-health
 =======
@@ -46,7 +37,4 @@ https://github.com/spatie/laravel-health
 mostrare in una blade uso disco etc 
 https://github.com/spatie/laravel-health
 >>>>>>> 7f6cf6be (.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

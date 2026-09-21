@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 ## stato analisi phpstan
 
 - **data**: 2025-11-12
@@ -13,7 +11,6 @@
 - proseguire con la normalizzazione dei file in `docs/` (evitare duplicati e nomi non conformi);
 - verificare dopo ogni refactor che gli helper condivisi rispettino la tipizzazione stretta.
 =======
->>>>>>> laraxot/dev
 # PHPStan Analysis Report - 2025-11-18
 
 ## Executive Summary
@@ -1077,9 +1074,5 @@ class MyModel extends BaseModel
 
 **Stato**: 🔄 Analisi Completata - Correzioni in Corso
 **phpstan.neon**: ✅ INTOCCATO
-<<<<<<< HEAD
 **Approccio**: DRY + KISS + Type Safety
-=======
-**Approccio**: DRY + KISS + Type Safety
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

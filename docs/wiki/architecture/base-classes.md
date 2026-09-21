@@ -42,11 +42,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array { /* ... */ }
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
     // ❌ VIETATO - ERRORE GRAVE
@@ -149,11 +145,7 @@ abstract class XotBaseResource extends Filament\Resources\Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -320,11 +312,7 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -397,11 +385,7 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 /** @return array<string, PageRegistration> */

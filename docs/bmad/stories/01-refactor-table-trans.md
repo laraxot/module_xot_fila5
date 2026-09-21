@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: 01-refactor-table-trans
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # BMAD Story 01 — Rimuovere TransTrait ridondante
 

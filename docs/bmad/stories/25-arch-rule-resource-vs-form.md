@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: 25-arch-rule-resource-vs-form
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # BMAD Story 25 — Regola architetturale: XotBaseResource vs XotBaseResourceForm
 

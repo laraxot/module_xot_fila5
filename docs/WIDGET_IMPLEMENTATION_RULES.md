@@ -1,11 +1,8 @@
 > **SSoT minuscolo:** [widget-implementation-rules.md](./widget-implementation-rules.md). Questo file viola la convenzione dei nomi (maiuscole). Non duplicare il contenuto: aggiorna solo il SSoT.
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 =======
@@ -17,9 +14,6 @@
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Widget Implementation Rules - Xot Module
 
@@ -438,11 +432,8 @@ class MyTableWidget extends XotBaseTableWidget
 - [XotBaseTableWidget Implementation](./xotbasetablewidget_implementation.md)
 - [Laraxot Architecture Rules](./laraxot_architecture_rules.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 <<<<<<< HEAD
 =======
 =======
@@ -452,19 +443,12 @@ class MyTableWidget extends XotBaseTableWidget
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 
 
 <<<<<<< HEAD
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

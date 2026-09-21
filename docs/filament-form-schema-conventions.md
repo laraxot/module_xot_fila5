@@ -129,8 +129,6 @@ class MyResource extends XotBaseResource
 3. **Chiarezza**: Rende esplicita l'associazione tra campi e componenti
 4. **Estensibilità**: Permette l'override parziale del form schema nelle classi derivate
 
-<<<<<<< HEAD
-=======
 ## `getFormSchema()`/`getInfolistSchema()` sono di ISTANZA — anche su enum
 
 `XotBaseResource::getFormSchema()` è `final public function` (istanza). La stessa
@@ -166,15 +164,11 @@ in `Modules/<X>/docs/stories/phpstan-*-fix-2026-09-10.story.md`. Nessuna guardia
 meccanica impedisce a un nuovo test/call-site di riscrivere la forma statica:
 resta un gap aperto (18.41 AC, task "guardia").
 
->>>>>>> laraxot/dev
 ## Documentazione Correlata
 
 - [XotBaseResource](./XOT_BASE_RESOURCE.md)
 - [Form Components](./FORM_COMPONENTS.md)
 - [Form Validation](./FORM_VALIDATION.md)
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
-<<<<<<< HEAD
-=======
 - [Story 18.41 — test che chiamano getFormSchema staticamente](./stories/18.41.test-chiamano-getformschema-staticamente.story.md)
 - [Epic 5.86 — forma canonica istanza](./stories/5.86.xotbaseresourceform-infolist-trait-based-instance-pattern-epic.story.md)
->>>>>>> laraxot/dev

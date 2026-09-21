@@ -74,12 +74,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo Xot che bloccavano
 =======
 <<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 7f6cf6be (.)
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

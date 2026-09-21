@@ -1,9 +1,6 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "Agents"
 type: reference
@@ -14,9 +11,6 @@ updated: 2026-08-24
 
 =======
 >>>>>>> 7f6cf6be (.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Xot {{TYPE^}} LLM Wiki Agent Instructions
 

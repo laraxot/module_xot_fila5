@@ -38,8 +38,6 @@ function mockXotData(): void
 {
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
@@ -48,7 +46,6 @@ function mockXotData(): void
         ->andReturn($mockXotData);
 
 =======
->>>>>>> laraxot/dev
     
     $mockXotData->shouldReceive('getUserClass')
         ->andReturn(\Modules\SaluteOra\Models\User::class);
@@ -56,9 +53,6 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
     
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
@@ -144,13 +138,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
    - Layout structure
 
 <<<<<<< HEAD
-2. **Middleware** (Raccomandato) 
-=======
-<<<<<<< HEAD
 2. **Middleware** (Raccomandato)
 =======
 2. **Middleware** (Raccomandato) 
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    - Authentication flow
    - Authorization checks
@@ -187,13 +177,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 - ✅ **Architecture**: Separazione rispettata
 
 <<<<<<< HEAD
-### Gold Standard Criteria  
-=======
-<<<<<<< HEAD
 ### Gold Standard Criteria
 =======
 ### Gold Standard Criteria  
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - ✅ **Success Rate**: > 90% test passati
 - ✅ **Zero Warnings**: Nessun warning PHP/Pest
@@ -214,13 +200,9 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
 <<<<<<< HEAD
-# Success rate calculation  
-=======
-<<<<<<< HEAD
 # Success rate calculation
 =======
 # Success rate calculation  
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ./vendor/bin/pest {TestFile} --compact
 
@@ -251,19 +233,13 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ---
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024
 =======
->>>>>>> laraxot/dev
 **Status**: ✅ Best Practices Validate  
 **Enforcement**: Obbligatorio per tutti i test  
 **Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

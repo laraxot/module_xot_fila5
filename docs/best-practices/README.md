@@ -1,8 +1,6 @@
 # Best Practices
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ## Laraxot Framework Standards
 
 ### Models
@@ -60,7 +58,6 @@
 
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Best Practices-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -99,9 +96,6 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Documentation
 - All files in docs/ must be lowercase (except README.md)
@@ -110,9 +104,6 @@ Core module for the FixCity Platform.
 - Include practical examples in all guides
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 ---
 
@@ -163,7 +154,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -68,11 +68,7 @@ protected static ?string $model = YourModel::class;
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -171,11 +167,7 @@ class DoctorResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

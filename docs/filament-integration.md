@@ -48,11 +48,7 @@ Each resource must implement the abstract method:
 <<<<<<< HEAD
 abstract public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 abstract public function getFormSchema(): array
-=======
-abstract public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -82,11 +78,7 @@ Resources define forms through `getFormSchema()`:
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -191,11 +183,7 @@ Consistent form setup with standardized columns:
 <<<<<<< HEAD
 public function getFormSchemaColumns(): int
 =======
-<<<<<<< HEAD
 public function getFormSchemaColumns(): int
-=======
-public function getFormSchemaColumns(): int
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return 1; // Standard single column layout
@@ -374,11 +362,7 @@ Always implement `getFormSchema()` for consistency:
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     // Return array of form components

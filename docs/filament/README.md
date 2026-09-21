@@ -1,11 +1,8 @@
 # Filament
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Filament-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -103,9 +100,6 @@ $prefix = static::$translationPrefix;
 
 # Filament
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 Questa cartella contiene la documentazione relativa all'implementazione di Filament nel progetto.
 
@@ -118,8 +112,6 @@ Questa cartella contiene la documentazione relativa all'implementazione di Filam
 
 ## Note
 
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend.
 
@@ -203,7 +195,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/project_docs/README.md)
 * [README.md](bashscripts/project_docs/it/README.md)
 =======
->>>>>>> laraxot/dev
 Questa documentazione si applica a tutti i moduli che utilizzano Filament per il backend. 
 
 ## Collegamenti tra versioni di README.md
@@ -239,9 +230,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](bashscripts/docs/it/README.md)
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/README.md)
 * [README.md](docs/laravel-app/README.md)
@@ -275,9 +263,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](docs/it/README.md)
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/docs/README.md)
 * [README.md](../../../Chart/docs/README.md)
 * [README.md](../../../Reporting/docs/README.md)
@@ -322,9 +307,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 * [README.md](laravel/vendor/mockery/mockery/project_docs/README.md)
 * [README.md](../../../Chart/project_docs/README.md)
@@ -398,11 +380,8 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 
 ### Collegamento
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 =======
->>>>>>> laraxot/dev
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/project_docs/filament-best-practices.mdc](../../../<nome progetto>/project_docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
@@ -458,9 +437,6 @@ Questa documentazione si applica a tutti i moduli che utilizzano Filament per il
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome modulo>/docs/filament-best-practices.mdc](../../../<nome modulo>/docs/filament-best-practices.mdc)
 - Vedi anche: [<nome progetto>/docs/filament-best-practices.mdc](../../../<nome progetto>/docs/filament-best-practices.mdc)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ### Checklist
@@ -496,13 +472,10 @@ $prefix = static::$translationPrefix;
 
 ## Moduli che fanno riferimento a questa regola
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../patient/project_docs/filament/resources/doctor-resource.md)
 // Aggiungere qui altri moduli se necessario
 =======
->>>>>>> laraxot/dev
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../Patient/project_docs/filament/resources/doctor-resource.md)
 - [Patient: DoctorResource](../../../Patient/docs/filament/resources/doctor-resource.md)
@@ -719,7 +692,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

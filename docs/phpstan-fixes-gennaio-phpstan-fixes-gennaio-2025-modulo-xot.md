@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: phpstan-fixes-gennaio-phpstan-fixes-gennaio-2025-modulo-xot
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 

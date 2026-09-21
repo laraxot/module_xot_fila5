@@ -12,9 +12,6 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'metatag.navigation',
-        'icon' => 'metatag.navigation',
-        'sort' => 95,
     ],
     'fields' => [
         'name' => [
@@ -327,11 +324,7 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-        'save' => [
-            'label' => 'save',
-            'icon' => 'save',
-            'tooltip' => 'save',
-        ],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Metatag',
     'plural_label' => 'Metatag (Plurale)',

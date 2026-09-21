@@ -292,11 +292,7 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -484,11 +480,7 @@ class UserResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

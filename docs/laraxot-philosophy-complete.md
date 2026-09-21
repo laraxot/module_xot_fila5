@@ -216,11 +216,7 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -231,11 +227,7 @@ class YourResource extends XotBaseResource
 <<<<<<< HEAD
     public function getInfolistSchema(): array
 =======
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public function getInfolistSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

@@ -17,15 +17,10 @@ Fixed all instances of `property_exists()` usage in Eloquent models across the c
 - **FilamentOptimizationServiceProvider.php:67,76-79** - Fixed multiple `property_exists($query, 'time')` → `isset($query->time)`
 
 <<<<<<< HEAD
-### ✅ healthcare_app Module
-### ✅ ExternalProject Module
-=======
-<<<<<<< HEAD
 ### ✅ <nome progetto> Module
 =======
 ### ✅ healthcare_app Module
 ### ✅ ExternalProject Module
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - **ViewQuestionChartVisualizationWidget.php:185** - Fixed `property_exists($this, 'livewire')` → `isset($this->livewire)`
 
@@ -74,9 +69,5 @@ Files generally have good scores with minor style issues:
 <<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
 =======
-<<<<<<< HEAD
 **Next Steps**: Continue monitoring code quality tools and update documentation as needed.
-=======
-**Next Steps**: Continue monitoring code quality tools and update documentation as needed.
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

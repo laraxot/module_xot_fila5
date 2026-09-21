@@ -1,8 +1,6 @@
 # Gestione delle Eccezioni
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
 
 ## HandlerDecorator
@@ -34,7 +32,6 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 [![Module](https://img.shields.io/badge/Module-Gestione delle Eccezioni-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -73,9 +70,6 @@ Core module for the FixCity Platform.
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Collegamenti
 - [Exception Handling Guidelines](../exception-handling-guide.md)
@@ -85,16 +79,10 @@ Core module for the FixCity Platform.
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
 <<<<<<< HEAD
-## Collegamenti tra versioni di README.md
-* [README.md](bashscripts/docs/readme.md)
-* [README.md](bashscripts/docs/it/readme.md)
-=======
-<<<<<<< HEAD
 =======
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
@@ -172,9 +160,6 @@ Core module for the FixCity Platform.
 * [README.md](../../../../themes/one/project_docs/readme.md)
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 ---
 
@@ -493,7 +478,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
