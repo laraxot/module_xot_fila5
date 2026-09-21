@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 <<<<<<< HEAD
 ---
 name: story-hasxotform-columns
@@ -12,7 +10,6 @@ metadata:
 =======
 >>>>>>> laraxot/dev
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # BMAD Story: HasXotForm columns
 Fix: ->columns($this->getFormColumns()) invece di ->columns(2). Metodi getFormSchema/getFormColumns non statici.

@@ -62,11 +62,7 @@ Per `getFormSchema()` nei **resource e pagine** (dove non viene usato `statePath
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

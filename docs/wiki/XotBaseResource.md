@@ -29,11 +29,7 @@ Every concrete resource must implement:
 <<<<<<< HEAD
 - `public function getFormSchema(): array`
 =======
-<<<<<<< HEAD
 - `public function getFormSchema(): array`
-=======
-- `public function getFormSchema(): array`
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - `public static function getPages(): array`
 

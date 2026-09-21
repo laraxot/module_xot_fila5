@@ -1,15 +1,9 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-# Xot
-=======
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -18,8 +12,6 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 
 # Convenzioni
@@ -116,7 +108,6 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 ---
 
 =======
->>>>>>> laraxot/dev
 >>>>>>> 28b0298a (fix: phpstan issues)
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -153,9 +144,6 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -252,9 +240,6 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 =======
 # Xot
 
@@ -292,7 +277,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

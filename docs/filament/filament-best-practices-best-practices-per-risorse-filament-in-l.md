@@ -59,11 +59,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
    public function getFormSchema(): array
 =======
-<<<<<<< HEAD
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    {
        return [

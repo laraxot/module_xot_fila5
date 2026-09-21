@@ -1,13 +1,9 @@
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 <<<<<<< HEAD
-## Data: 2025-01-06
-=======
-<<<<<<< HEAD
 ## Data: [DATE]
 =======
 ## Data: 2025-01-06
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Contesto
@@ -105,13 +101,9 @@ $res=Locality::query()
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 <<<<<<< HEAD
-## Data: 2025-01-06
-=======
-<<<<<<< HEAD
 ## Data: [DATE]
 =======
 ## Data: 2025-01-06
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Contesto
@@ -244,11 +236,8 @@ php artisan lang:check
 
 ### Modulo Xot
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-[date].md)
 =======
->>>>>>> laraxot/dev
 - [Git Conflicts Resolution](laravel/modules/xot/project_docs/git-conflicts-resolution-2025-01-06.md)
 - [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 
@@ -257,9 +246,6 @@ php artisan lang:check
 
 ### Modulo Xot
 - [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 ## Best Practices Applicate
@@ -316,14 +302,9 @@ php artisan lang:check
 
 ### Documentazione Moduli
 <<<<<<< HEAD
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
-- [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
-=======
-<<<<<<< HEAD
 =======
 - [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 - [Geo Conflict Resolution](laravel/modules/geo/project_docs/conflict-resolution.md)
 - [User Theme Conflicts](laravel/modules/user/project_docs/theme-translation-conflicts-resolution.md)
@@ -336,13 +317,9 @@ php artisan lang:check
 ---
 
 <<<<<<< HEAD
-**Ultimo aggiornamento**: 2025-01-06
-=======
-<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
 =======
 **Ultimo aggiornamento**: 2025-01-06
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato

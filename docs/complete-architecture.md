@@ -127,11 +127,7 @@ Filament Resource → XotBaseResource → FilamentResource
 <<<<<<< HEAD
 abstract public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 abstract public function getFormSchema(): array
-=======
-abstract public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 

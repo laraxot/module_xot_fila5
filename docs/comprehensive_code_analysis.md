@@ -1,9 +1,6 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Analisi Completa del Codice - Sistema Laraxot
 
@@ -186,11 +183,7 @@ try {
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -203,11 +196,7 @@ public function getFormSchema(): array
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -305,11 +294,8 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
     public function getFormSchema(): array
 =======
->>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -765,9 +751,6 @@ protected function casts(): array
 class ContactResource extends XotBaseResource
 {
     public function getFormSchema(): array
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -927,11 +910,8 @@ return [
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 
 
 ---
@@ -1382,7 +1362,4 @@ return [
 **Stima Effort**: 40-60 ore di refactoring
 =======
 >>>>>>> 7f6cf6be (.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

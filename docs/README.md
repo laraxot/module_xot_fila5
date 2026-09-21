@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ---
 title: "Xot Module - Updated Documentation (Clean)"
 type: documentation
@@ -89,7 +87,6 @@ use Modules\Xot\Providers\XotBaseServiceProvider;
 ```php
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 <<<<<<< HEAD
 ---
 title: "Xot — La Base Sacra di Laraxot"
@@ -210,17 +207,12 @@ class MyAction
         // business logic qui
 =======
 // Esempio di una Resource Filament
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
     protected static ?string $model = User::class;
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
     // table() and form() inherited from base
 }
@@ -264,7 +256,6 @@ class MyModuleServiceProvider extends XotBaseServiceProvider
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
 
 =======
->>>>>>> laraxot/dev
     
     // Il metodo table() e form() NON devono essere sovrascritti
     // se non per aggiungere logica specifica, ma la base
@@ -291,9 +282,6 @@ I Service Provider di ogni modulo estendono `XotBaseServiceProvider`, che automa
 
 ### ⚡ **Actions Framework**
 Un pattern standardizzato per incapsulare la business logic in classi riutilizzabili e testabili.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Actions\XotBaseAction;
@@ -304,12 +292,9 @@ class CreateUserAction extends XotBaseAction
     {
         $user = User::create($data);
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
         event(new UserCreated($user));
         return $user;
 =======
->>>>>>> laraxot/dev
         $this->logActivity('user.created', $user); // Logging automatico
         event(new UserCreated($user)); // Dispatching eventi
         return $user;
@@ -386,24 +371,18 @@ class MyAction
         // business logic qui
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     }
 }
 ```
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 ### Enums System
 
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche:
 
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 <<<<<<< HEAD
 **Mai**:
 ```php
@@ -528,9 +507,6 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 >>>>>>> 28b0298a (fix: phpstan issues)
 ### 🏷️ **Enums System**
 Le Enum di Xot implementano `XotBaseEnum`, che fornisce traduzioni automatiche e altri helper.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```php
 use Modules\Xot\Enums\XotBaseEnum;
@@ -543,20 +519,14 @@ enum UserStatus: string implements XotBaseEnum
     public function getLabel(): string
     {
 <<<<<<< HEAD
-        // Traduzione gestita centralmente
-=======
-<<<<<<< HEAD
 =======
         // Traduzione gestita centralmente
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return __('xot::enums.user_status.'.$this->value);
     }
 }
 ```
 
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 ### Filament Integration
 
@@ -688,7 +658,6 @@ All modules depend on **Xot**. Never have circular dependencies.
 **Maintained by**: Laraxot Core Team  
 **PHPStan Level**: 10 (Compliant)
 =======
->>>>>>> laraxot/dev
 ## 🛠️ **Sviluppo e Qualità**
 
 ### Convenzioni
@@ -929,7 +898,4 @@ Ogni ecosistema modulare di grandi dimensioni affronta il problema della **framm
 *Documento generato secondo le convenzioni del progetto — modulo `Xot` — data 2026-05-27*
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -72,11 +72,8 @@ class MyTableWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 use Filament\Forms\Components\DatePicker;
@@ -100,23 +97,17 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
             DatePicker::make('dateTo')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
 
 =======
->>>>>>> laraxot/dev
             
             DatePicker::make('dateTo')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
             
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
             Select::make('answerFilter')
                 ->options([
@@ -148,11 +139,8 @@ class QuestionChartFilterWidget extends XotBaseWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 use Filament\Tables\Columns\TextColumn;
@@ -175,13 +163,9 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     ->sortable()
                     ->searchable(),
 <<<<<<< HEAD
-                
-=======
-<<<<<<< HEAD
 
 =======
                 
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
                 TextColumn::make('answert')
                     ->limit(50)
@@ -191,13 +175,9 @@ class QuestionChartDataWidget extends XotBaseTableWidget
                     })
                     ->searchable(),
 <<<<<<< HEAD
-                
-=======
-<<<<<<< HEAD
 
 =======
                 
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
                 TextColumn::make('answer_lang')
                     ->badge()
@@ -219,23 +199,17 @@ class QuestionChartDataWidget extends XotBaseTableWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
         if (!$record) {
             return $record->answers()->whereRaw('1 = 0');
         }
 
 =======
->>>>>>> laraxot/dev
         
         if (!$record) {
             return $record->answers()->whereRaw('1 = 0');
         }
         
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return $record->answers()
             ->select(['submitdate', 'answert', 'answer_lang'])
@@ -261,11 +235,8 @@ class QuestionChartDataWidget extends XotBaseTableWidget
 declare(strict_types=1);
 
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Widgets;
 =======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 use Filament\Widgets\ChartWidget;
@@ -286,13 +257,9 @@ class QuestionChartWidget extends XotBaseWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         if (!$record) {
             return [
@@ -301,11 +268,6 @@ class QuestionChartWidget extends XotBaseWidget
             ];
         }
 <<<<<<< HEAD
-        
-        $chartData = $this->getChartData($record);
-        
-=======
-<<<<<<< HEAD
 
         $chartData = $this->getChartData($record);
 
@@ -313,7 +275,6 @@ class QuestionChartWidget extends XotBaseWidget
         
         $chartData = $this->getChartData($record);
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [
             'datasets' => [
@@ -333,23 +294,17 @@ class QuestionChartWidget extends XotBaseWidget
     {
         $record = $this->getRecord();
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
         if (!$record) {
             return 'bar';
         }
 
 =======
->>>>>>> laraxot/dev
         
         if (!$record) {
             return 'bar';
         }
         
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return match ($record->chart_type) {
             'pie' => 'pie',
@@ -372,8 +327,6 @@ class QuestionChartWidget extends XotBaseWidget
             })
             ->get();
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
         $grouped = $answers->groupBy('answer_lang');
 
@@ -381,29 +334,21 @@ class QuestionChartWidget extends XotBaseWidget
         $values = [];
 
 =======
->>>>>>> laraxot/dev
         
         $grouped = $answers->groupBy('answer_lang');
         
         $labels = [];
         $values = [];
         
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         foreach ($grouped as $lang => $langAnswers) {
             $labels[] = $lang ?: 'Unknown';
             $values[] = $langAnswers->count();
         }
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [
             'labels' => $labels,
@@ -424,26 +369,18 @@ class QuestionChartWidget extends XotBaseWidget
             'rgba(83, 102, 255, ' . $alpha . ')',
         ];
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         $colors = [];
         for ($i = 0; $i < $count; $i++) {
             $colors[] = $baseColors[$i % count($baseColors)];
         }
 <<<<<<< HEAD
-        
-=======
-<<<<<<< HEAD
 
 =======
         
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return $colors;
     }
@@ -501,13 +438,9 @@ class MyWidget extends XotBaseWidget
         return []; // Form vuoto
     }
 <<<<<<< HEAD
-    
-=======
-<<<<<<< HEAD
 
 =======
     
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     public function table(Table $table): Table
     {
@@ -561,9 +494,5 @@ class MyTableWidget extends XotBaseTableWidget
 <<<<<<< HEAD
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
 =======
-<<<<<<< HEAD
 Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
-=======
-Queste regole garantiscono implementazione corretta dei widget seguendo l'architettura Laraxot.
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

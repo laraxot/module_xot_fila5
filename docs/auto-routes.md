@@ -1,8 +1,5 @@
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ---
 title: "Auto routes"
 type: reference
@@ -16,9 +13,6 @@ note: "Convertito da auto_routes.txt (documento) da convert-docs-txt-to-md.py."
 
 <!-- Contenuto migrato da _docs/auto_routes.txt -->
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 /it/tests
 va a prendere il modello "home" e vede se esiste la relazione "tests" se esiste usa quelle, altrimenti
@@ -30,9 +24,5 @@ implica che nel pannello quando si va a prendere "parents" oltre a row, rows ci 
 <<<<<<< HEAD
 che corrisponde al nome della relazione o della funzione
 =======
-<<<<<<< HEAD
 che corrisponde al nome della relazione o della funzione
-=======
-che corrisponde al nome della relazione o della funzione
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

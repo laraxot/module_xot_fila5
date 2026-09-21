@@ -151,11 +151,7 @@ class MyPage extends XotBasePage
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
-<<<<<<< HEAD
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 // ✅ CORRETTO
@@ -286,11 +282,8 @@ Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità 
 
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 
 ## Contenuto assorbito da `FILAMENT_4_LARAXOT_RULES.md`
@@ -587,7 +580,4 @@ class QuestionChartFilterWidget extends XotBaseWidget
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
 =======
 >>>>>>> 7f6cf6be (.)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

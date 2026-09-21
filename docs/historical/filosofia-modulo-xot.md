@@ -25,11 +25,7 @@ Le classi XotBase definiscono lo scheletro degli algoritmi:
 <<<<<<< HEAD
 abstract public function getFormSchema(): array;
 =======
-<<<<<<< HEAD
 abstract public function getFormSchema(): array;
-=======
-abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 final public static function form(Schema $schema): Schema {
@@ -337,11 +333,7 @@ class UserResource extends XotBaseResource {
 <<<<<<< HEAD
     public function getFormSchema(): array {
 =======
-<<<<<<< HEAD
     public function getFormSchema(): array {
-=======
-    public function getFormSchema(): array {
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         return [TextInput::make('name')];
     }

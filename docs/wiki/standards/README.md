@@ -1,15 +1,9 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-# Xot
-=======
-<<<<<<< HEAD
-=======
 =======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -18,8 +12,6 @@ tags: [wiki, no-frontmatter-fix]
 created: 2026-08-24
 updated: 2026-08-24
 ---
-<<<<<<< HEAD
-=======
 <<<<<<< HEAD
 
 # Standard di Codice
@@ -156,7 +148,6 @@ class Doctor extends User
 ---
 
 =======
->>>>>>> laraxot/dev
 >>>>>>> 28b0298a (fix: phpstan issues)
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -193,9 +184,6 @@ class Doctor extends User
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -329,9 +317,6 @@ class Doctor extends User
 
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 =======
 # Xot
 
@@ -369,7 +354,4 @@ class Doctor extends User
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
