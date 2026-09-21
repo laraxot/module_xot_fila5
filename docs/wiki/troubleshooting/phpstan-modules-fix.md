@@ -37,6 +37,7 @@ Config: `laravel/phpstan.neon` livello **max**, baseline vuota. **Non passare ma
 - `./vendor/bin/phpstan analyse` (senza path) → **0 errori**, exit 0, `totals.file_errors: 0`.
 - `./vendor/bin/phpstan analyse Modules` → **0**, stesso momento. I due conteggi coincidono.
 - Drift chiuso oggi: story [18.59](../../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md) (23 errori su 4 file → 0).
+- Mute-gate Setting + marker PHP nello stesso giorno: chiusi; certify ancora 0.
 - SSoT modulo: [phpstan-status.md](../../phpstan-status.md).
 
 ## Storico (2026-07, bump framework)
