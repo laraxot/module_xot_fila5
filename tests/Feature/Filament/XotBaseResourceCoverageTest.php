@@ -207,8 +207,6 @@ it('covers step builder branches', function (): void {
     Assert::assertInstanceOf(Step::class, ProbeResource::callGetStepByName('custom_step'));
 });
 
-<<<<<<< HEAD
-=======
 it('covers simple base helpers', function (): void {
     $resource = new ProbeResource;
 
@@ -219,4 +217,3 @@ it('covers simple base helpers', function (): void {
     Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
     Assert::assertGreaterThan(0, ProbeResource::getFormColumns());
 });
->>>>>>> laraxot/dev

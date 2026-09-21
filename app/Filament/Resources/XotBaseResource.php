@@ -80,8 +80,6 @@ abstract class XotBaseResource extends FilamentResource
     }
 
     /**
-<<<<<<< HEAD
-=======
      * Modelli derivati dal nome della Resource, memoizzati per classe.
      *
      * La property `$model` di Filament e' dichiarata sul parent: una Resource che non la
@@ -94,7 +92,6 @@ abstract class XotBaseResource extends FilamentResource
     private static array $resolvedModels = [];
 
     /**
->>>>>>> laraxot/dev
      * @return class-string<Model>
      */
     public static function getModel(): string
@@ -109,13 +106,10 @@ abstract class XotBaseResource extends FilamentResource
 
             return $res;
         }
-<<<<<<< HEAD
-=======
         if (isset(self::$resolvedModels[static::class])) {
             return self::$resolvedModels[static::class];
         }
 
->>>>>>> laraxot/dev
         $moduleName = static::getModuleName();
         $modelName = Str::before(class_basename(static::class), 'Resource');
         $res = 'Modules\\'.$moduleName.'\Models\\'.$modelName;
@@ -125,19 +119,12 @@ abstract class XotBaseResource extends FilamentResource
             Model::class,
             \sprintf('Class %s must extend Eloquent Model', $res),
         );
-<<<<<<< HEAD
-        static::$model = $res;
-=======
         self::$resolvedModels[static::class] = $res;
->>>>>>> laraxot/dev
 
         return $res;
     }
 
     /**
-<<<<<<< HEAD
-     * Bridge di migrazione — schema form ancora sulla Resource.
-=======
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
     final public function getFormSchema(): array
@@ -148,7 +135,6 @@ abstract class XotBaseResource extends FilamentResource
     /**
      * Bridge di migrazione — schema form ancora sulla Resource.
      * La classe `{Model}Form` è **obbligatoria** ({@see static::getFormClass()}):
->>>>>>> laraxot/dev
      * se manca si solleva errore. Old serve solo a spostare il contenuto dentro
      * `Schemas\{Model}Form::getFormSchema()`; a migrazione chiusa si rimuove.
      *
@@ -158,11 +144,7 @@ abstract class XotBaseResource extends FilamentResource
      *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-<<<<<<< HEAD
-    final public function getFormSchemaOld(): array
-=======
     public function getFormSchemaOld(): array
->>>>>>> laraxot/dev
     {
         return [];
     }
@@ -217,11 +199,7 @@ abstract class XotBaseResource extends FilamentResource
         return $class1;
     }
 
-<<<<<<< HEAD
-    final public static function table(Table $table): Table
-=======
     public static function table(Table $table): Table
->>>>>>> laraxot/dev
     {
         $class = static::getTableClass();
         $configured = $class::configure($table);
@@ -230,11 +208,7 @@ abstract class XotBaseResource extends FilamentResource
         return $configured;
     }
 
-<<<<<<< HEAD
-    public function getFormSchemaColumns(): int
-=======
     public static function getFormColumns(): int
->>>>>>> laraxot/dev
     {
         return 1;
     }
@@ -390,10 +364,7 @@ abstract class XotBaseResource extends FilamentResource
 
     public static function getWizardSubmitAction(): Htmlable
     {
-<<<<<<< HEAD
-=======
         /** @var view-string $submit_view */
->>>>>>> laraxot/dev
         $submit_view = 'pub_theme::filament.wizard.submit-button';
         if (! View::exists($submit_view)) {
             throw new \Exception("View {$submit_view} does not exist");

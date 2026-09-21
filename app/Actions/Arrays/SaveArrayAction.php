@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Arrays;
 
-<<<<<<< HEAD
-=======
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
->>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class SaveArrayAction

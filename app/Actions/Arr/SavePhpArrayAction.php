@@ -5,12 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Arr;
 
 use Spatie\QueueableAction\QueueableAction;
-<<<<<<< HEAD
-use Symfony\Component\VarExporter\VarExporter;
-
-use function Safe\file_put_contents;
-
-=======
 
 use function Safe\file_put_contents;
 
@@ -22,7 +16,6 @@ use function Safe\file_put_contents;
  * (ordine utente 2026-09-16; SSoT `.codestyle-preferences.md` + memoria
  * `php-array-one-key-per-line.md`).
  */
->>>>>>> laraxot/dev
 class SavePhpArrayAction
 {
     use QueueableAction;
@@ -32,18 +25,11 @@ class SavePhpArrayAction
      */
     public function execute(array $data, string $filename): bool
     {
-<<<<<<< HEAD
-        $exported = VarExporter::export($data);
-        // $exported = var_export($data, true);
-=======
         $exported = $this->exportArray($data, 0);
->>>>>>> laraxot/dev
         $content = "<?php\n\ndeclare(strict_types=1);\n\nreturn ".$exported.";\n";
 
         return (bool) file_put_contents($filename, $content);
     }
-<<<<<<< HEAD
-=======
 
     /**
      * @param  array<int|string, mixed>  $data
@@ -77,5 +63,4 @@ class SavePhpArrayAction
 
         return var_export($value, true);
     }
->>>>>>> laraxot/dev
 }

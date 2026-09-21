@@ -10,10 +10,7 @@ use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
 use Filament\PanelProvider;
-<<<<<<< HEAD
-=======
 use Filament\View\PanelsRenderHook;
->>>>>>> laraxot/dev
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
@@ -100,9 +97,6 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-<<<<<<< HEAD
-            ]);
-=======
             ])
             // Fix "This page has expired" (Livewire) sulla pagina di login del
             // panel admin principale: vedi spiegazione e riproduzione in
@@ -122,7 +116,6 @@ abstract class XotBaseMainPanelProvider extends PanelProvider
                     HTML,
                 scopes: \Filament\Auth\Pages\Login::class,
             );
->>>>>>> laraxot/dev
         $navs = app(GetModulesNavigationItems::class)->execute();
         $panel->navigationItems($navs);
 
