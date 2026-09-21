@@ -4,7 +4,7 @@ type: log
 module: Xot
 tags: [xot, phpstan, pest, qmd, ponytail-audit]
 created: 2026-04-20
-updated: 2026-07-24
+updated: 2026-09-21
 qmd: "Xot log phpstan pest bridge discipline ponytail audit domain actions"
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
@@ -14,6 +14,12 @@ discussions:
 ---
 
 # Activity Log — Xot
+
+## [2026-09-21] phpstan | zero certificato + wiki hygiene
+
+- `phpstan analyse` (senza path CLI) e `analyse Modules` entrambi 0, `totals.file_errors: 0`.
+- Canon: [phpstan-status.md](../phpstan-status.md) · story [18.59](../stories/18.59.phpstan-repo-wide-zero-2026-09-21.story.md)
+- Merge markers risolti in [phpstan-best-practices.md](phpstan-best-practices.md); rimosso duplicato `PHPSTAN-BEST-PRACTICES.md`.
 
 ## [2026-07-24] architecture | no domain Actions in Xot
 
@@ -230,7 +236,7 @@ discussions:
 ## [2026-06-13] docs | Hub platform-completion-roadmap + gate PHPStan zero
 
 - Creato [overviews/platform-completion-roadmap.md](overviews/platform-completion-roadmap.md) — SSoT completamento 16 moduli + 4 temi.
-- Aggiornati [PHPSTAN-BEST-PRACTICES.md](PHPSTAN-BEST-PRACTICES.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
+- Aggiornati [phpstan-best-practices.md](phpstan-best-practices.md), [phpstan-pest-bridge-discipline.md](concepts/phpstan-pest-bridge-discipline.md).
 - Fix test: `FileActionsTest`, `GetClassNameByPathActionTest` (pattern `@var` / `assertIsString`).
 - Base [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 
