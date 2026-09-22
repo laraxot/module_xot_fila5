@@ -64,7 +64,6 @@ abstract class XotBaseExporter extends Exporter
             $resource = \is_string($resource) && class_exists($resource) ? $resource : null;
             $filters = Arr::get($this->options, 'tableFilters', []);
             /** @var array<string, mixed> $filters */
-
             $this->cachedColumns = [];
             foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : []) as $column) {
                 $this->cachedColumns[$column->getName()] = $column->exporter($this);
