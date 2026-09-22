@@ -48,6 +48,7 @@ abstract class XotBaseExporter extends Exporter
         return static::resolveColumns(
             $livewire->getResource(),
             $livewire->tableFilters ?? [],
+            $livewire::class,
         );
     }
 
@@ -63,9 +64,11 @@ abstract class XotBaseExporter extends Exporter
             $resource = Arr::get($this->options, 'resource');
             $resource = \is_string($resource) && class_exists($resource) ? $resource : null;
             $filters = Arr::get($this->options, 'tableFilters', []);
+            $transClass = Arr::get($this->options, 'livewireClass');
+            $transClass = \is_string($transClass) && class_exists($transClass) ? $transClass : $resource;
             /** @var array<string, mixed> $filters */
             $this->cachedColumns = [];
-            foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : []) as $column) {
+            foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : [], $transClass) as $column) {
                 $this->cachedColumns[$column->getName()] = $column->exporter($this);
             }
         }
@@ -76,9 +79,10 @@ abstract class XotBaseExporter extends Exporter
     /**
      * @param  class-string|null  $resource
      * @param  array<array-key, mixed>  $filters
+     * @param  class-string|null  $transClass  come ExportXlsAction: classe Livewire/page, non il Resource
      * @return array<int, ExportColumn>
      */
-    protected static function resolveColumns(?string $resource, array $filters): array
+    protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
     {
         if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
             return [];
@@ -87,7 +91,7 @@ abstract class XotBaseExporter extends Exporter
         /** @var array<int|string, string> $fields */
         $fields = $resource::getXlsFields($filters);
 
-        $transKey = app(GetTransKeyAction::class)->execute($resource).'.fields';
+        $transKey = app(GetTransKeyAction::class)->execute($transClass ?? $resource).'.fields';
 
         $columns = [];
         foreach ($fields as $key => $value) {
@@ -98,8 +102,7 @@ abstract class XotBaseExporter extends Exporter
 
             $columns[] = ExportColumn::make(static::columnName($path))
                 ->label($label)
-                ->state(static fn (Model $record): mixed => data_get($record, $path))
-                ->preventFormulaInjection();
+                ->state(static fn (Model $record): string => CollectionExport::castCell(data_get($record, $path)));
         }
 
         return $columns;
