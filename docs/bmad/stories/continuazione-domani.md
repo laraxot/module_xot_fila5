@@ -46,3 +46,9 @@ related:
 
 `qmd query` su "XotBaseExporter getXlsEagerLoad ratings hardcoded" prima di
 riprendere; `qmd update` dopo ogni chiusura.
+
+## Hygiene minore
+
+`.git-rewrite/` (64M, gitignored, residuo di un `git filter-branch`
+interrotto — duplicati stantii di `CollectionExport.php`/`ExportXlsByCollection.php`,
+non autoloaded, confermato innocuo) — da `rm -rf` quando capita, non urgente.
