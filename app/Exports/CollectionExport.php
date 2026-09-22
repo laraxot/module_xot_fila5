@@ -122,32 +122,33 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
-            return array_values(Arr::map($res, function (mixed $value, string $_key): string {
-                if ($value instanceof \BackedEnum) {
-                    if (method_exists($value, 'getLabel')) {
-                        return SafeStringCastAction::cast($value->getLabel());
-                    }
-
-                    return SafeStringCastAction::cast($value->value);
-                }
-
-                return SafeStringCastAction::cast($value);
-            }));
+            return array_values(Arr::map($res, fn (mixed $value): string => $this->castExportValue($value)));
         }
 
         $data = [];
 
         foreach ($this->fields as $key => $field) {
             $path = \is_string($key) ? $key : $field;
-            $value = data_get($row, $path);
-            if (\is_object($value)) {
-                if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
-                    $value = $value->getLabel();
-                }
-            }
-            $data[] = SafeStringCastAction::cast($value);
+            $data[] = $this->castExportValue(data_get($row, $path));
         }
 
         return $data;
+    }
+
+    private function castExportValue(mixed $value): string
+    {
+        if ($value instanceof \BackedEnum) {
+            if (method_exists($value, 'getLabel')) {
+                return SafeStringCastAction::cast($value->getLabel());
+            }
+
+            return SafeStringCastAction::cast($value->value);
+        }
+
+        if (\is_object($value) && enum_exists($value::class) && method_exists($value, 'getLabel')) {
+            $value = $value->getLabel();
+        }
+
+        return SafeStringCastAction::cast($value);
     }
 }

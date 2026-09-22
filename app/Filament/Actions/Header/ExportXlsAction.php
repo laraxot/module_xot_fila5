@@ -9,6 +9,7 @@ namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+use Exception;
 use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
@@ -22,7 +23,7 @@ class ExportXlsAction extends XotBaseAction
         parent::setUp();
         $this->translateLabel()
             ->label('')
-            //->tooltip(__('xot::actions.export_xls'))
+            // ->tooltip(__('xot::actions.export_xls'))
             ->icon('heroicon-o-arrow-down-tray')
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -34,7 +35,7 @@ class ExportXlsAction extends XotBaseAction
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
                 if ($query === null) {
-                    throw new \Exception('Query is null');
+                    throw new Exception('Query is null');
                 }
                 $rows = $query->get();
 
@@ -43,16 +44,15 @@ class ExportXlsAction extends XotBaseAction
                 /** @var array<int|string, string> $fields */
                 $fields = [];
 
-                if (method_exists($resource, 'getXlsFields')) {
-                    $rawFields = $resource::getXlsFields($livewire->tableFilters);
-                    // Chiave stringa = percorso data_get, valore = intestazione
-                    // esplicita (title rating); chiave intera = percorso tradotto.
-                    Assert::isArray($rawFields);
-                    Assert::allString($rawFields);
-                    $fields = $rawFields;
-                } else {
-                    dddx('method xotFields does not exist in '.$resource);
+                if (! method_exists($resource, 'getXlsFields')) {
+                    dddx('method getXlsFields does not exist in '.$resource);
                 }
+                $rawFields = $resource::getXlsFields($livewire->tableFilters);
+                // Chiave stringa = percorso data_get, valore = intestazione
+                // esplicita (title rating); chiave intera = percorso tradotto.
+                Assert::isArray($rawFields);
+                Assert::allString($rawFields);
+                $fields = $rawFields;
 
                 return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
