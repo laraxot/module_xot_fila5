@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Unit\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Models\Export;
+use Modules\Xot\Exports\CollectionExport;
 use Modules\Xot\Exports\XotBaseExporter;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -66,5 +67,28 @@ describe('XotBaseExporter — colonne da getXlsFields del Resource', function ()
 
         Assert::assertContains('Obiettivo A', $labels);
         Assert::assertNotContains('ratings_by_id.52.pivot.value', $labels);
+    });
+
+    test('le intestazioni coincidono con CollectionExport sugli stessi getXlsFields', function (): void {
+        $fields = ResourceWithXlsFieldsStub::getXlsFields(['anno' => 2026]);
+        $rows = collect([
+            [
+                'id' => 1,
+                'matr' => 7,
+                'ratings_by_id' => [
+                    52 => [
+                        'pivot' => [
+                            'value' => 57,
+                        ],
+                    ],
+                ],
+            ],
+        ]);
+        $export = new CollectionExport($rows, 'xot::inesistente.fields', $fields);
+        $columns = resolveExporterColumns(ResourceWithXlsFieldsStub::class, ['anno' => 2026]);
+        $labels = array_map(static fn (ExportColumn $column): ?string => $column->getLabel(), $columns);
+
+        Assert::assertSame($export->headings(), $labels);
+        Assert::assertSame(['1', '7', '57'], $export->map($rows->first()));
     });
 });

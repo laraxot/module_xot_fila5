@@ -34,6 +34,7 @@ abstract class XotBaseExportAction extends FilamentExportAction
             return [
                 'resource' => $livewire->getResource(),
                 'tableFilters' => $livewire->tableFilters ?? [],
+                'livewireClass' => $livewire::class,
             ];
         });
     }
