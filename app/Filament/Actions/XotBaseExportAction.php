@@ -8,6 +8,7 @@ use Filament\Actions\ExportAction as FilamentExportAction;
 use Filament\Resources\Pages\ListRecords;
 use Livewire\Component;
 use Modules\Xot\Actions\Export\GetExportFileNameAction;
+use Modules\Xot\Exports\Jobs\XotPrepareCsvExport;
 
 /**
  * Base class for ExportAction.
@@ -28,6 +29,11 @@ abstract class XotBaseExportAction extends FilamentExportAction
     protected function setUp(): void
     {
         parent::setUp();
+
+        // CSV intermedio senza escape `\` (vendor): un valore che finisce con `\`
+        // inghiottirebbe il resto della riga. Reader: XotCreateXlsxFile (bound
+        // in XotServiceProvider). Story Ptv/5.165.
+        $this->job(XotPrepareCsvExport::class);
 
         $this->fileName(static function (Component $livewire): ?string {
             if (! $livewire instanceof ListRecords) {
