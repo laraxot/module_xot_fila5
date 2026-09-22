@@ -100,7 +100,7 @@ class XlsByModelClassAction
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
-        /** @var Collection<int, mixed> $exportRows */
+        /** @var Collection<int|string, mixed> $exportRows */
         $exportRows = $rows;
         $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);

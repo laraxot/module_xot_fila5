@@ -46,16 +46,18 @@ class ExportXlsTableAction extends XotBaseAction
                 /** @var Builder<Model> $eloquentQuery */
                 $eloquentQuery = $query;
                 $rows = $eloquentQuery->get();
-                /** @var array<int, string> $fields */
+                /** @var array<int|string, string> $fields */
                 $fields = [];
                 if (method_exists($livewire_class, 'getXlsFields')) {
                     $rawFields = $livewire_class::getXlsFields($livewire->tableFilters);
                     Assert::isArray($rawFields);
 
-                    // Ensure fields are properly formatted as array
-                    $fields = [];
+                    // Chiave stringa = percorso data_get con intestazione esplicita
+                    // (title rating); chiave intera = percorso tradotto via transKey.
                     foreach ($rawFields as $key => $field) {
-                        if (is_string($field)) {
+                        if (is_string($key) && is_string($field)) {
+                            $fields[$key] = $field;
+                        } elseif (is_string($field)) {
                             $fields[] = $field;
                         } elseif (is_array($field) && isset($field['name']) && is_string($field['name'])) {
                             $fields[] = $field['name'];
