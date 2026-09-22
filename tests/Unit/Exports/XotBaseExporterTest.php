@@ -71,6 +71,7 @@ describe('XotBaseExporter — colonne da getXlsFields del Resource', function ()
 
     test('le intestazioni coincidono con CollectionExport sugli stessi getXlsFields', function (): void {
         $fields = ResourceWithXlsFieldsStub::getXlsFields(['anno' => 2026]);
+        /** @var \Illuminate\Support\Collection<int|string, mixed> $rows */
         $rows = collect([
             [
                 'id' => 1,
