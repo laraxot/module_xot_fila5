@@ -41,7 +41,7 @@ class ExportXlsLazyAction extends XotBaseAction
                 $transKey .= '.fields';
 
                 $resource = $livewire->getResource();
-                /** @var array<int, string> $fields */
+                /** @var array<int|string, string> $fields */
                 $fields = [];
                 if (method_exists($resource, 'getXlsFields')) {
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
@@ -69,17 +69,23 @@ class ExportXlsLazyAction extends XotBaseAction
                     Assert::isArray($fields);
                 }
 
+                // Il canale lazy lavora sui soli percorsi data_get: le intestazioni
+                // esplicite (chiave stringa => label) non sono supportate da
+                // ExportXlsByQuery/ExportXlsByLazyCollection e degradano al path.
+                /** @var array<int, string> $pathFields */
+                $pathFields = [];
+                foreach ($fields as $key => $field) {
+                    $pathFields[] = \is_string($key) ? $key : $field;
+                }
+
                 $lazy = $livewire->getFilteredTableQuery();
                 if ($lazy === null) {
                     throw new \Exception('Query is null');
                 }
 
                 if ($lazy->count() < 7) {
-                    /** @var array<int, string> $stringFields */
-                    $stringFields = array_values($fields);
-
                     // PHPStan knows $lazy is Builder|Relation here, no need for Assert
-                    return app(ExportXlsByQuery::class)->execute($lazy, $filename, $stringFields, null);
+                    return app(ExportXlsByQuery::class)->execute($lazy, $filename, $pathFields, null);
                 }
 
                 $lazyCursor = $lazy->cursor();
@@ -88,10 +94,10 @@ class ExportXlsLazyAction extends XotBaseAction
 
                 if ($lazyCursor->count() > 3000) {
                     return app(ExportXlsStreamByLazyCollection::class)
-                        ->execute($exportCollection, $filename, $transKey, array_values($fields));
+                        ->execute($exportCollection, $filename, $transKey, $pathFields);
                 }
 
-                return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, array_values($fields));
+                return app(ExportXlsByLazyCollection::class)->execute($exportCollection, $filename, $pathFields);
             });
     }
 

@@ -9,11 +9,15 @@ use Modules\Xot\Tests\TestCase;
 uses(TestCase::class);
 
 /**
- * @return Collection<int, array<string, mixed>>
+ * TKey/TValue di Collection sono invarianti: il costruttore di CollectionExport
+ * chiede `Collection<int|string, mixed>`, non `Collection<int, array<...>>`.
+ *
+ * @return Collection<int|string, mixed>
  */
 function labelledRows(): Collection
 {
-    return collect([
+    /** @var Collection<int|string, mixed> $rows */
+    $rows = collect([
         [
             'matr' => 7,
             'ratings_by_id' => [
@@ -25,6 +29,8 @@ function labelledRows(): Collection
             ],
         ],
     ]);
+
+    return $rows;
 }
 
 describe('CollectionExport campi con intestazione esplicita', function (): void {
@@ -43,7 +49,7 @@ describe('CollectionExport campi con intestazione esplicita', function (): void 
 
         expect($export->headings())->toBe(['matr', 'Obiettivo A']);
         expect($export->map(labelledRows()->first()))->toBe(['7', '57']);
-    })->todo();
+    });
 
     test('l\'intestazione esplicita non passa dalla traduzione, quella implicita si\'', function (): void {
         $export = new CollectionExport(labelledRows(), 'xot::inesistente.fields', [
@@ -52,7 +58,7 @@ describe('CollectionExport campi con intestazione esplicita', function (): void 
         ]);
 
         expect($export->headings())->toBe(['matr', 'Obiettivo A']);
-    })->todo();
+    });
 
     test('un percorso assente esporta una cella vuota, non salta la colonna', function (): void {
         $export = new CollectionExport(labelledRows(), null, [

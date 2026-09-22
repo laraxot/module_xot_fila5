@@ -4,7 +4,7 @@ title: "CollectionExport: campi con intestazione esplicita (chiave stringa = per
 epic: "5"
 story: "collection-export-intestazioni-esplicite"
 slug: collection-export-intestazioni-esplicite
-status: ready-for-dev
+status: done
 module: Xot
 priority: P1
 created: 2026-09-22
@@ -29,7 +29,7 @@ qmd: "story xot CollectionExport fields intestazione esplicita chiave stringa pe
 
 # Story Xot: CollectionExport con intestazioni esplicite
 
-Status: ready-for-dev
+Status: done
 
 Lingua: italiano. Data: 2026-09-22. Repo GitHub del file: `laraxot/module_xot_fila5`
 (`git -C laravel/Modules/Xot remote -v`).
@@ -452,3 +452,17 @@ Claude Fable 5.1 (claude-fable-5-1) come agente documentale BMAD, 2026-09-22.
   `laravel/Modules/Xot/app/Actions/Export/ExportXlsByCollection.php`,
   `laravel/Modules/Xot/app/Filament/Actions/Header/ExportXlsAction.php`,
   `laravel/Modules/Xot/tests/Unit/Exports/CollectionExportLabelledFieldsTest.php`
+
+## Esito (2026-09-22, sessione devin)
+
+Implementato il formato misto `array<int|string, string>`:
+- `CollectionExport::headings()` — label esplicita bypassa `TransArrayAction`;
+  chiave intera = percorso tradotto;
+- `CollectionExport::map()` — la chiave stringa e' il percorso `data_get`;
+- `ExportXlsByCollection::execute()` non fa piu' `array_values($fields)`;
+- `ExportXlsAction` e `ExportXlsTableAction` conservano le chiavi stringa;
+- `ExportXlsLazyAction` degrada le label al percorso (canale lazy: solo path,
+  documentato in `Ptv/docs/bmad/architecture/export-xls-base-list-schedas.md`).
+
+Test `CollectionExportLabelledFieldsTest`: `->todo()` rimossi, verificato con
+harness standalone (Pest bloccato: DB irraggiungibile). PHPStan max: 0 errori.

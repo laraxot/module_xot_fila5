@@ -40,38 +40,21 @@ class ExportXlsAction extends XotBaseAction
 
                 $resource = $livewire->getResource();
 
-                /** @var array<int, string> $fields */
+                /** @var array<int|string, string> $fields */
                 $fields = [];
-                
+
                 if (method_exists($resource, 'getXlsFields')) {
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
-                    if (is_array($rawFields)) {
-                        $fields = array_map(
-                            static function (mixed $field): string {
-                                // Handle objects with __toString method
-                                if (is_object($field) && method_exists($field, '__toString')) {
-                                    $stringValue = $field->__toString();
-
-                                    // Type narrowing for PHPStan Level 10
-                                    return is_string($stringValue) ? $stringValue : '';
-                                }
-
-                                // Handle scalar values
-                                if (is_scalar($field)) {
-                                    return (string) $field;
-                                }
-
-                                return '';
-                            },
-                            $rawFields
-                        );
-                    }
-                    Assert::isArray($fields);
+                    // Chiave stringa = percorso data_get, valore = intestazione
+                    // esplicita (title rating); chiave intera = percorso tradotto.
+                    Assert::isArray($rawFields);
+                    Assert::allString($rawFields);
+                    $fields = $rawFields;
                 } else {
                     dddx('method xotFields does not exist in '.$resource);
                 }
 
-                return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));
+                return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, $fields);
             });
     }
 
