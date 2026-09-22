@@ -14,6 +14,7 @@ use Filament\Resources\Pages\ListRecords;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Filament\Actions\XotBaseAction;
+use RuntimeException;
 use Webmozart\Assert\Assert;
 
 class ExportXlsAction extends XotBaseAction
@@ -41,11 +42,10 @@ class ExportXlsAction extends XotBaseAction
 
                 $resource = $livewire->getResource();
 
-                /** @var array<int|string, string> $fields */
-                $fields = [];
-
                 if (! method_exists($resource, 'getXlsFields')) {
-                    dddx('method getXlsFields does not exist in '.$resource);
+                    // Errore di programmazione (Resource senza il contratto export), non
+                    // un caso da ispezionare con un dump: story 5.160, AC 3.
+                    throw new RuntimeException('method getXlsFields does not exist in '.$resource);
                 }
                 $rawFields = $resource::getXlsFields($livewire->tableFilters);
                 // Chiave stringa = percorso data_get, valore = intestazione
