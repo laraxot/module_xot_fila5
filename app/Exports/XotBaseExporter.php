@@ -98,7 +98,7 @@ abstract class XotBaseExporter extends Exporter
             $path = \is_string($key) ? $key : $value;
             $label = \is_string($key)
                 ? $value
-                : app(TransArrayAction::class)->execute([$path], $transKey)[0] ?? $path;
+                : (array_values(app(TransArrayAction::class)->execute([$path], $transKey))[0] ?? $path);
 
             $columns[] = ExportColumn::make(static::columnName($path))
                 ->label($label)

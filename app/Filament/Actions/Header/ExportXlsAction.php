@@ -24,7 +24,16 @@ class ExportXlsAction extends XotBaseAction
         parent::setUp();
         $this->translateLabel()
             ->label('')
-            // ->tooltip(__('xot::actions.export_xls'))
+            ->tooltip(function (): string {
+                $livewire = $this->getLivewire();
+                if (! $livewire instanceof ListRecords) {
+                    return '';
+                }
+                $key = app(GetTransKeyAction::class)->execute($livewire::class).'.actions.export_xls.tooltip';
+                $translated = __($key);
+
+                return \is_string($translated) && $translated !== $key ? $translated : '';
+            })
             ->icon('heroicon-o-arrow-down-tray')
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -37,6 +46,19 @@ class ExportXlsAction extends XotBaseAction
                 $query = $livewire->getFilteredTableQuery();
                 if ($query === null) {
                     throw new Exception('Query is null');
+                }
+                // Stesso eager di SchedaExporter::modifyQuery: ratings_by_id
+                // legge ratings + ratingMorphs. Senza with, se la tabella ha
+                // gia' caricato una relation vuota, le celle rating restano vuote.
+                $model = $query->getModel();
+                $with = [];
+                foreach (['ratings', 'ratingMorphs'] as $relation) {
+                    if (method_exists($model, $relation)) {
+                        $with[] = $relation;
+                    }
+                }
+                if ($with !== []) {
+                    $query->with($with);
                 }
                 $rows = $query->get();
 
