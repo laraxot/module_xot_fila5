@@ -11,7 +11,7 @@ created: 2026-09-22
 updated: 2026-09-22
 related:
   - ../../../app/Exports/XotBaseExporter.php
-  - ../../../app/Filament/Actions/Header/XotBaseExportAction.php
+  - ../../../app/Filament/Actions/XotBaseExportAction.php
   - ../../../app/Exports/CollectionExport.php
   - ../../../tests/Unit/Exports/XotBaseExporterTest.php
   - ../../../tests/Unit/Exports/ResourceWithXlsFieldsStub.php
