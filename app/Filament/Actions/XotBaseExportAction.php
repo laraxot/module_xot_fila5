@@ -13,10 +13,10 @@ use Filament\Resources\Pages\ListRecords;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's ExportAction to provide a XotBase layer.
  *
- * Serializza negli `options` del job queued il Resource e i `tableFilters`
- * correnti: senza questo, `Exporter::getCachedColumns()` non vede i filtri
- * attivi e le colonne dinamiche (es. una colonna per rating con `title` come
- * intestazione) spariscono dal job asincrono pur esistendo in `getXlsFields()`.
+ * Serializza negli `options` del job queued `resource`, `tableFilters` e
+ * `livewireClass`: senza questo, `Exporter::getCachedColumns()` non vede i
+ * filtri e usa un transKey diverso da `ExportXlsAction` (page class). Le
+ * colonne rating sparirebbero dal job asincrono pur esistendo in `getXlsFields()`.
  */
 abstract class XotBaseExportAction extends FilamentExportAction
 {
