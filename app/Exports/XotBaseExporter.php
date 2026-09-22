@@ -12,6 +12,16 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\TransArrayAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Cell\EmptyCell;
+use OpenSpout\Common\Entity\Cell\ErrorCell;
+use OpenSpout\Common\Entity\Cell\FormulaCell;
+use OpenSpout\Common\Entity\Cell\NumericCell;
+use OpenSpout\Common\Entity\Cell\StringCell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Entity\Style\Style;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 
 /**
  * Exporter Filament 5 che riusa il contratto `getXlsFields()` dei Resource.
@@ -30,9 +40,70 @@ use Modules\Xot\Actions\GetTransKeyAction;
  * I nomi colonna non possono contenere `.` (romperebbe il `columnMap` via
  * `data_get` in `CanExportRecords`): i punti del percorso diventano `_` e lo
  * stato viene risolto con `data_get($record, $percorso)`.
+ *
+ * Tipo delle celle: il job nativo passa dal CSV (`ExportCsv` → `CreateXlsxFile`),
+ * quindi OpenSpout riceve solo stringhe e `"57"` diventerebbe testo. `export_xls`
+ * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
+ * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  */
 abstract class XotBaseExporter extends Exporter
 {
+    /**
+     * Righe (e intestazione: `makeXlsxHeaderRow` delega qui) con le celle
+     * tipizzate come PhpSpreadsheet in `export_xls`. Story Ptv/5.165.
+     *
+     * @param  array<mixed>  $values
+     */
+    #[\Override]
+    public function makeXlsxRow(array $values, ?Style $style = null): Row
+    {
+        $cells = [];
+        foreach ($values as $value) {
+            $cells[] = static::xlsxCell($value, $style);
+        }
+
+        return new Row($cells, $style);
+    }
+
+    /**
+     * Stesso tipo di `DefaultValueBinder::dataTypeForValue()` (PhpSpreadsheet):
+     * numerica → `NumericCell` (int se intera, float altrimenti; `"007"` e i
+     * numeri oltre PHP_INT_MAX restano testo), `''` → `EmptyCell` (PhpSpreadsheet
+     * non scrive la cella), `=...` → `FormulaCell` (stessa esposizione dei due
+     * canali, decisione condivisa in follow-up), `#N/A`... → `ErrorCell`.
+     */
+    public static function xlsxCell(mixed $value, ?Style $style = null): Cell
+    {
+        if (! \is_string($value)) {
+            return Cell::fromValue(\is_scalar($value) ? $value : null, $style);
+        }
+
+        if ($value === '') {
+            return new EmptyCell($value, $style);
+        }
+
+        return match (DefaultValueBinder::dataTypeForValue($value)) {
+            DataType::TYPE_NUMERIC => new NumericCell(self::numericCellValue($value), $style),
+            DataType::TYPE_FORMULA => new FormulaCell($value, $style, null),
+            DataType::TYPE_ERROR => new ErrorCell($value, $style),
+            default => new StringCell($value, $style),
+        };
+    }
+
+    /**
+     * `0 + $value` di PhpSpreadsheet: int per le intere, float con `.` o esponente.
+     */
+    private static function numericCellValue(string $value): int|float
+    {
+        if (! is_numeric($value)) {
+            return 0;
+        }
+
+        $hasFraction = str_contains($value, '.') || str_contains(strtolower($value), 'e');
+
+        return $hasFraction ? (float) $value : (int) $value;
+    }
+
     /**
      * @return array<int, ExportColumn>
      */
