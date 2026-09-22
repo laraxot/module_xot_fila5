@@ -39,14 +39,16 @@ class ExportXlsByCollection
     ): BinaryFileResponse {
         // Assicuriamo che $fields sia un array di stringhe
         $stringFields = array_map(fn (string $field): string => $field, array_values($fields));
-
-        /** @var Collection<int, mixed> $supportCollection */
+        /*
+        // @var Collection<int, mixed> $supportCollection 
         $supportCollection = $collection instanceof EloquentCollection
             ? Collection::make($collection->values()->all())
             : Collection::make($collection->values()->all());
-
+        */
+        //$row=$collection->first();
+        //dddx(['row'=>$row,$row->ratings,data_get($row,'ratings.52')]);
         $export = new CollectionExport(
-            collection: $supportCollection,
+            collection: $collection,
             transKey: $transKey,
             fields: $stringFields,
         );

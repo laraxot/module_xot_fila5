@@ -22,7 +22,7 @@ class ExportXlsAction extends XotBaseAction
         parent::setUp();
         $this->translateLabel()
             ->label('')
-            ->tooltip(__('xot::actions.export_xls'))
+            //->tooltip(__('xot::actions.export_xls'))
             ->icon('heroicon-o-arrow-down-tray')
             ->action(static function (ListRecords $livewire) {
                 $filename =
@@ -42,6 +42,7 @@ class ExportXlsAction extends XotBaseAction
 
                 /** @var array<int, string> $fields */
                 $fields = [];
+                
                 if (method_exists($resource, 'getXlsFields')) {
                     $rawFields = $resource::getXlsFields($livewire->tableFilters);
                     if (is_array($rawFields)) {
