@@ -56,3 +56,21 @@ Scan `<<<<<<<`/`>>>>>>>` su php/json/blade in tutti i moduli: solo i 4 Notify
 - PHPStan max sul perimetro export: 0 errori (run precedente, nessun codice PHP
   toccato in questa sessione oltre i lang)
 - Lock controllati: nessun lock attivo bloccante; orfani precedenti gia' rimossi
+
+## Addendum — esecuzione prompt 03-quality-gates (2026-09-22)
+
+Gate eseguiti sullo scope sessione (`storage/app/ai/session-files.txt`, 24 file):
+
+| Gate | Exit | Note |
+|---|---|---|
+| preflight | 0 | DB 10.100.200.53 giu' → QG_DB_DOWN=1; 914 marker fuori scope (docs, WIP altrui) |
+| pint | 0 | 4 issue style fixati (BaseListSchedas, HasRatingsTrait, XotBaseExporter, ExportXlsAction) |
+| phpstan Modules | 0 | 0 errori fleet-wide |
+| phpstan session | 0 | 18 file prod |
+| pest | 3 | SKIP ambiente (DB irraggiungibile) |
+| phpmd | 0 | 12 violazioni fixate: castExportValue/rowCallback/resolveXlsFields/resolvePathFields estratti, import Exception, camelCase, SuppressWarnings |
+| insights | 3 | non installato |
+
+Bug trovati nel prompt e corretti (v3.32.0): ruleset `phpmd-ruleset.xml` (non `phpmd.xml`),
+`@SuppressWarnings(PHPMD.X)` non quotato rompe phpDoc parser, doppio tracking root/moduli,
+concorrenza qmd/graphify.

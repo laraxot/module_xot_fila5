@@ -1,7 +1,7 @@
 ---
 id: "xot-phpstan-export-test-types"
 title: "PHPStan: CollectionExport WithMapping<mixed> + test types"
-status: review
+status: done
 scope: module:Xot
 related:
   - ./collection-export-intestazioni-esplicite.story.md
@@ -23,4 +23,9 @@ qmd: "phpstan CollectionExport WithMapping mixed labelledRows XotBaseExporter fi
 - `labelledRows()`: return `Collection<int|string, mixed>`
 - `resolveExporterColumns`: `@param array<string, mixed> $filters`
 
-PHPStan sui file: 0. `analyse Modules` da rilanciare. Pest skip (DB 53).
+PHPStan sui file: 0. Pest skip (DB 53).
+
+## Verifica `analyse Modules` (richiesta utente, cache ~191s)
+
+`cd laravel && ./vendor/bin/phpstan analyse Modules` → `[OK] No errors` COLD:0.
+Niente da sistemare: i 19 errori di questa story+IR+Ptv restano chiusi. Skill: `phpstan-solve-errors-no-ignores`.
