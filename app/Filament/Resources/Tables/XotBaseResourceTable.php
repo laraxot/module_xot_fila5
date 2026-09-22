@@ -6,6 +6,7 @@ namespace Modules\Xot\Filament\Resources\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Traits\HasXotTable;
@@ -51,7 +52,7 @@ abstract class XotBaseResourceTable
 
         return $resource;
     }
-    
+
     /**
      * Modello delle righe mostrate (la relazione), distinto dal modello
      * dell'owner. Ridefinito DIRETTAMENTE qui, mai da un trait: vedi
@@ -74,7 +75,7 @@ abstract class XotBaseResourceTable
     {
         $resource = static::getResource();
         $model = $resource::getModel();
+
         return $model;
     }
-
 }
