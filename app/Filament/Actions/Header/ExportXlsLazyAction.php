@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Header;
 
+use Exception;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Support\LazyCollection;
 use Modules\Xot\Actions\Export\ExportXlsByLazyCollection;
@@ -40,47 +41,11 @@ class ExportXlsLazyAction extends XotBaseAction
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
 
-                $resource = $livewire->getResource();
-                /** @var array<int|string, string> $fields */
-                $fields = [];
-                if (method_exists($resource, 'getXlsFields')) {
-                    $rawFields = $resource::getXlsFields($livewire->tableFilters);
-                    if (is_array($rawFields)) {
-                        $fields = array_map(
-                            static function (mixed $field): string {
-                                // Handle objects with __toString method
-                                if (is_object($field) && method_exists($field, '__toString')) {
-                                    $stringValue = $field->__toString();
-
-                                    // Type narrowing for PHPStan Level 10
-                                    return is_string($stringValue) ? $stringValue : '';
-                                }
-
-                                // Handle scalar values
-                                if (is_scalar($field)) {
-                                    return (string) $field;
-                                }
-
-                                return '';
-                            },
-                            $rawFields
-                        );
-                    }
-                    Assert::isArray($fields);
-                }
-
-                // Il canale lazy lavora sui soli percorsi data_get: le intestazioni
-                // esplicite (chiave stringa => label) non sono supportate da
-                // ExportXlsByQuery/ExportXlsByLazyCollection e degradano al path.
-                /** @var array<int, string> $pathFields */
-                $pathFields = [];
-                foreach ($fields as $key => $field) {
-                    $pathFields[] = \is_string($key) ? $key : $field;
-                }
+                $pathFields = self::resolvePathFields($livewire);
 
                 $lazy = $livewire->getFilteredTableQuery();
                 if ($lazy === null) {
-                    throw new \Exception('Query is null');
+                    throw new Exception('Query is null');
                 }
 
                 if ($lazy->count() < 7) {
@@ -104,5 +69,50 @@ class ExportXlsLazyAction extends XotBaseAction
     public static function getDefaultName(): ?string
     {
         return 'export_xls';
+    }
+
+    /**
+     * Il canale lazy lavora sui soli percorsi data_get: le intestazioni
+     * esplicite (chiave stringa => label) non sono supportate da
+     * ExportXlsByQuery/ExportXlsByLazyCollection e degradano al path.
+     *
+     * @return array<int, string>
+     */
+    private static function resolvePathFields(ListRecords $livewire): array
+    {
+        $resource = $livewire->getResource();
+        if (! method_exists($resource, 'getXlsFields')) {
+            return [];
+        }
+
+        $rawFields = $resource::getXlsFields($livewire->tableFilters);
+        Assert::isArray($rawFields);
+
+        $pathFields = [];
+        foreach ($rawFields as $key => $field) {
+            if (\is_string($key)) {
+                $pathFields[] = $key;
+
+                continue;
+            }
+            $pathFields[] = self::normalizeField($field);
+        }
+
+        return $pathFields;
+    }
+
+    private static function normalizeField(mixed $field): string
+    {
+        if (is_object($field) && method_exists($field, '__toString')) {
+            $stringValue = $field->__toString();
+
+            return is_string($stringValue) ? $stringValue : '';
+        }
+
+        if (is_scalar($field)) {
+            return (string) $field;
+        }
+
+        return '';
     }
 }
