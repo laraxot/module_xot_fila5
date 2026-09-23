@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Actions\View;
+namespace Modules\Xot\Actions\Trans;
 
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\Module\GetModuleNameByModelClassAction;
 use Spatie\QueueableAction\QueueableAction;
 
-class GetViewByModelClassAction
+class GetTransKeyByModelClassAction
 {
     use QueueableAction;
 
@@ -23,10 +23,8 @@ class GetViewByModelClassAction
         $model_name = Str::of($model_name)->snake()->toString();
 
         $view=$module_low.'::'.$model_name.$suffix;
+        //str_plural ?
         
-        if(!view()->exists($view)){
-            throw new \Exception('view ['.$view.'] not Exists');
-        }
         
         return $view;
     }
