@@ -22,7 +22,7 @@ class ExportPdfAction extends XotBaseAction
         parent::setUp();
         $this->translateLabel()
             ->label('')
-            ->tooltip(__('xot::actions.export_pdf.tooltip'))
+            //->tooltip(__('xot::actions.export_pdf.tooltip'))
             ->icon('ui-files.pdf')
             ->action(static function (ListRecords $livewire) {
                 $filename =
