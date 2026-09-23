@@ -136,7 +136,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     }
 
     /**
-     * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xls1).
+     * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xlsx).
      */
     public static function castCell(mixed $value): string
     {

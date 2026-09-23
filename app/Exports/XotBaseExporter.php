@@ -6,7 +6,9 @@ namespace Modules\Xot\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Exporter;
+use Filament\Actions\Exports\Models\Export;
 use Filament\Resources\Pages\ListRecords;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -39,6 +41,10 @@ use OpenSpout\Common\Entity\Style\Style;
  * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
  * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  *
+ * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+ * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
+ * due query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+ *
  * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
  * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
  * come virgolette escapate, inghiottendo il resto della riga e le righe dopo.
@@ -52,6 +58,49 @@ abstract class XotBaseExporter extends Exporter
      * Escape del CSV intermedio (writer e reader devono coincidere).
      */
     public const string CSV_ESCAPE = '';
+
+    /**
+     * Relation caricate se esistono sul model: `ratings_by_id` le legge entrambe.
+     *
+     * @template TModel of Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Builder<TModel>
+     */
+    #[\Override]
+    public static function modifyQuery(Builder $query): Builder
+    {
+        $model = $query->getModel();
+        $with = [];
+        foreach (['ratings', 'ratingMorphs'] as $relation) {
+            if (method_exists($model, $relation)) {
+                $with[] = $relation;
+            }
+        }
+
+        return $with === [] ? $query : $query->with($with);
+    }
+
+    /**
+     * Corpo della notifica di fine export, tradotto (`xot::export.notifications.completed`).
+     * Story Ptv/5.160: niente stringhe hardcoded negli exporter dei moduli.
+     */
+    #[\Override]
+    public static function getCompletedNotificationBody(Export $export): string
+    {
+        $body = trans_choice('xot::export.notifications.completed.body', $export->successful_rows, [
+            'count' => number_format($export->successful_rows),
+        ]);
+
+        $failedRowsCount = $export->getFailedRowsCount();
+        if ($failedRowsCount > 0) {
+            $body .= ' '.trans_choice('xot::export.notifications.completed.failed', $failedRowsCount, [
+                'count' => number_format($failedRowsCount),
+            ]);
+        }
+
+        return $body;
+    }
 
     /**
      * Righe (e intestazione: `makeXlsxHeaderRow` delega qui) con le celle
