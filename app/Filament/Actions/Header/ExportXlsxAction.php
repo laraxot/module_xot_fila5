@@ -47,7 +47,7 @@ class ExportXlsxAction extends XotBaseExportAction
             // (solo heading + "Esporta"): click e parte.
             ->modal(false)
             ->label('')
-            ->icon('heroicon-o-table-cells')
+            ->icon('heroicon-o-document-arrow-down')
             ->tooltip(function (): string {
                 $livewire = $this->getLivewire();
                 if (! $livewire instanceof ListRecords) {
