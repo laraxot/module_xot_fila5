@@ -12,12 +12,11 @@ namespace Modules\Xot\Filament\Actions\Header;
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\Export\GetExportFileNameAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+use Modules\Xot\Exports\XlsFieldsExporter;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 use RuntimeException;
 use Webmozart\Assert\Assert;
@@ -51,7 +50,8 @@ class ExportXlsAction extends XotBaseAction
                 if ($query === null) {
                     throw new Exception('Query is null');
                 }
-                self::eagerLoadRatings($query);
+                // Stesso eager del canale nativo (XotBaseExporter::modifyQuery).
+                XlsFieldsExporter::modifyQuery($query);
 
                 $fields = self::resolveXlsFields($livewire);
 
@@ -72,27 +72,6 @@ class ExportXlsAction extends XotBaseAction
     public static function getDefaultName(): ?string
     {
         return 'export_xls';
-    }
-
-    /**
-     * Stesso eager di SchedaExporter::modifyQuery: ratings_by_id legge
-     * ratings + ratingMorphs. Senza with, se la tabella ha gia' caricato una
-     * relation vuota, le celle rating restano vuote.
-     *
-     * @param  Builder<Model>  $query
-     */
-    private static function eagerLoadRatings(Builder $query): void
-    {
-        $model = $query->getModel();
-        $with = [];
-        foreach (['ratings', 'ratingMorphs'] as $relation) {
-            if (method_exists($model, $relation)) {
-                $with[] = $relation;
-            }
-        }
-        if ($with !== []) {
-            $query->with($with);
-        }
     }
 
     /**

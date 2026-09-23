@@ -19,7 +19,7 @@ use Webmozart\Assert\Assert;
 /**
  * Cella OpenSpout con lo stesso tipo e valore che PhpSpreadsheet darebbe alla
  * stessa stringa (`DefaultValueBinder::bindValue` + `Cell::setValueExplicit`):
- * cosi' l'xlsx del job nativo Filament (`export_xls1`) coincide con quello di
+ * cosi' l'xlsx del job nativo Filament (`export_xlsx`) coincide con quello di
  * Laravel-Excel (`export_xls`). Story Ptv/5.165.
  */
 class XlsxCellFactory
