@@ -1,7 +1,7 @@
 ---
 id: "Xot/git-status-fleet-2026-09-23"
 title: "git status fleet 2026-09-23 — rebase stuck, corruzione oggetti, dirty"
-status: review
+status: in-progress
 scope: fleet
 module: Xot
 created: 2026-09-23
@@ -22,12 +22,11 @@ Status: in-progress
 Richiesta utente: `cd laravel/Modules/<modulo> && git status` e sistemare
 per ogni modulo, ordine random, swarm + BMAD + second brain.
 
-**Vincolo second brain (obbligatorio):** non eseguire la one-liner di
-`bashscripts/git/fix.md` riga 5
-(`merge --allow-unrelated-histories` + push). Memorie:
-`laraxot-force-push-wiped-history-8-repos.md`,
-`laraxot-wipe-still-active-plus-unclaimed-merge-2026-09-01.md`,
-`git-module-remote-object-corruption-notify-user.md`.
+**Correzione utente 2026-09-23:** `merge --allow-unrelated-histories`
+**e' permesso**. Playbook = `bashscripts/git/fix.md` riga 5
+(commit + fetch laraxot + merge unrelated + push). Memoria canon:
+`bashscripts/ai/wiki/memories/git-status-fleet-allow-unrelated-histories-permitted.md`
+(supersede la memoria "forbidden" errata di questa stessa sessione).
 
 ## Snapshot iniziale (18 moduli, shuffle)
 
@@ -91,3 +90,10 @@ per ogni modulo, ordine random, swarm + BMAD + second brain.
   del modulo).
 - Verifica: `git -C laravel/Modules/<M> status -sb` (o aheadBehind=false)
   su tutti i 18.
+
+
+## Addendum — allow-unrelated PERMESSO (correzione utente)
+
+Errore agente: aveva trattato `--allow-unrelated-histories` come vietato.
+Utente: e' permesso. Rilancio swarm: per ogni modulo con remote `laraxot`,
+eseguire playbook `fix.md` riga 5; risolvere conflitti a mano; push `laraxot HEAD:dev`.
