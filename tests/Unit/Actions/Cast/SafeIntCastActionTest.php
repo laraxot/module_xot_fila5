@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Tests\TestCase;
@@ -35,10 +38,14 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
 <<<<<<< HEAD
+<<<<<<< HEAD
     $obj = new class {
 =======
     $obj = new class
     {
+>>>>>>> laraxot/dev
+=======
+    $obj = new class {
 >>>>>>> laraxot/dev
         public function __toString()
         {

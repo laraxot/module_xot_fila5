@@ -9,10 +9,14 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 it('normalizes path slashes correctly', function (): void {
     $action = app(FixPathAction::class);

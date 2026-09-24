@@ -26,6 +26,9 @@ class ComponentFileData extends Data
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD.
      *
      * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
@@ -42,8 +45,11 @@ class ComponentFileData extends Data
      * >>>>>>> laraxot/dev
      *
      * >>>>>>> .merge_file_3hHL6w
+<<<<<<< HEAD
 =======
      * @param EloquentCollection<int, object>|Collection<int, object>|array<int, array<array-key, mixed>> $data
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      *
      * @return DataCollection<int, static>

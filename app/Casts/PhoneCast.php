@@ -6,8 +6,12 @@ namespace Modules\Xot\Casts;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 =======
+>>>>>>> laraxot/dev
+=======
+use Illuminate\Database\Eloquent\Model;
 >>>>>>> laraxot/dev
 use Modules\Xot\ValueObjects\PhoneValueObject;
 
@@ -20,6 +24,9 @@ class PhoneCast implements CastsAttributes
      * Cast the given value.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      *
      * @param Model                $_model      The Eloquent model instance
@@ -34,6 +41,7 @@ class PhoneCast implements CastsAttributes
      *                                          >>>>>>> laraxot/dev
      */
     public function get(Model $_model, string $_key, mixed $value, array $_attributes): PhoneValueObject
+<<<<<<< HEAD
 =======
      * @param  mixed  $_model  The Eloquent model instance
      * @param  string  $_key  The attribute key
@@ -41,6 +49,8 @@ class PhoneCast implements CastsAttributes
      * @param  array<string, mixed>  $_attributes  All model attributes
      */
     public function get(mixed $_model, string $_key, mixed $value, array $_attributes): PhoneValueObject
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     {
         if (! is_string($value)) {
@@ -54,6 +64,9 @@ class PhoneCast implements CastsAttributes
      * Prepare the given value for storage.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * <<<<<<< HEAD
      *
      * @param Model                $_model      The Eloquent model instance
@@ -68,6 +81,7 @@ class PhoneCast implements CastsAttributes
      *                                          >>>>>>> laraxot/dev
      */
     public function set(Model $_model, string $_key, mixed $value, array $_attributes): string
+<<<<<<< HEAD
 =======
      * @param  mixed  $_model  The Eloquent model instance
      * @param  string  $_key  The attribute key
@@ -75,6 +89,8 @@ class PhoneCast implements CastsAttributes
      * @param  array<string, mixed>  $_attributes  All model attributes
      */
     public function set(mixed $_model, string $_key, mixed $value, array $_attributes): string
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     {
         if (! $value instanceof PhoneValueObject) {

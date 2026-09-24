@@ -822,7 +822,11 @@ abstract class XotBaseResource extends Resource
      * Get form schema con validation automatica
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4219,7 +4223,11 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
@@ -4437,7 +4445,11 @@ Questo significa che:
 ```php
 /** @return array<int|string, \Filament\Schemas\Components\Component> */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
+=======
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
 =======
 abstract public function getFormSchemaOld(): array;
 >>>>>>> laraxot/dev
@@ -4475,7 +4487,11 @@ class NotificationResource extends XotBaseResource
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchemaOld(): array
+=======
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
 =======
     public function getFormSchemaOld(): array
 >>>>>>> laraxot/dev

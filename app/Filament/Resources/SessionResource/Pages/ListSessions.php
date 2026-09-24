@@ -5,8 +5,12 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Resources\SessionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 =======
+>>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Column;
 >>>>>>> laraxot/dev
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
@@ -21,6 +25,9 @@ class ListSessions extends XotBaseListRecords
     protected static string $resource = SessionResource::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Column>
      */
@@ -63,7 +70,10 @@ class ListSessions extends XotBaseListRecords
             Stack::make($this->defineTableColumns()),
         ];
     }
+<<<<<<< HEAD
 =======
    
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 }

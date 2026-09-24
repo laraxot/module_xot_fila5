@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 =======
 
+>>>>>>> laraxot/dev
+=======
+use Filament\Tables\Columns\Column;
 >>>>>>> laraxot/dev
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;

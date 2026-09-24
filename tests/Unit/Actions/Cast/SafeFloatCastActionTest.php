@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Tests\TestCase;
@@ -76,9 +79,13 @@ it('casts arrays', function (): void {
 
 it('casts objects', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $result = app(SafeFloatCastAction::class)->execute(new stdClass());
 =======
     $result = app(SafeFloatCastAction::class)->execute(new stdClass);
+>>>>>>> laraxot/dev
+=======
+    $result = app(SafeFloatCastAction::class)->execute(new stdClass());
 >>>>>>> laraxot/dev
     Assert::assertSame(0.0, $result);
 });

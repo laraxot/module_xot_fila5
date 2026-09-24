@@ -19,6 +19,9 @@ class CountAction
      * Execute the count action for the given model class.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @param class-string<Model> $modelClass The fully qualified model class name
      * @param class-string<Model> $modelClass The fully qualified model class name
@@ -28,11 +31,14 @@ class CountAction
      * @param class-string<Model> $modelClass The fully qualified model class name
      *
      * @throws \InvalidArgumentException If model class is invalid or not found
+<<<<<<< HEAD
 =======
      * @param class-string<Model> $modelClass The fully qualified model class name
      *
      * @throws \InvalidArgumentException If model class is invalid or not found
      *
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
      * @return int The total count of records
      */

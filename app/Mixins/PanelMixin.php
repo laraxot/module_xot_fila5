@@ -14,6 +14,9 @@ use Webmozart\Assert\Assert;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * <<<<<<< HEAD.
  *
  * @method string               getId()
@@ -34,6 +37,7 @@ use Webmozart\Assert\Assert;
  * @method string               getNavigationIcon()
  * @method int                  getNavigationSort()
  *                                                   >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @method string getId()
  * @method string getName()
@@ -43,6 +47,8 @@ use Webmozart\Assert\Assert;
  * @method string getNavigationLabel()
  * @method string getNavigationIcon()
  * @method int getNavigationSort()
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  */
 class PanelMixin

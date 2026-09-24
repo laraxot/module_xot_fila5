@@ -7,6 +7,9 @@ return [
         'name' => 'cache',
         'plural' => 'cache',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'group' => [
             'name' => 'Admin',
         ],
@@ -27,6 +30,7 @@ return [
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Admin'],
     ],
@@ -37,12 +41,17 @@ return [
             'navigation' => ['group' => 'Settings', 'label' => 'Application Health'],
             'notifications' => ['check_results' => 'Check results from'],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'label' => 'Cache',
     'plural_label' => 'Cache (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -131,6 +140,7 @@ return [
             'icon' => 'filament:clear-cached-components',
             'tooltip' => 'filament:clear-cached-components',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -150,6 +160,8 @@ return [
         'icons:cache' => ['label' => 'icons:cache', 'icon' => 'icons:cache', 'tooltip' => 'icons:cache'],
         'filament:cache-components' => ['label' => 'filament:cache-components', 'icon' => 'filament:cache-components', 'tooltip' => 'filament:cache-components'],
         'filament:clear-cached-components' => ['label' => 'filament:clear-cached-components', 'icon' => 'filament:clear-cached-components', 'tooltip' => 'filament:clear-cached-components'],
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
     ],
 ];

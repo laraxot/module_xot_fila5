@@ -11,6 +11,10 @@ use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 /**
@@ -58,7 +62,11 @@ function modelSourceFiles(): array
         }
         $it = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
+<<<<<<< HEAD
             if (! $file instanceof \SplFileInfo || $file->getExtension() !== 'php') {
+=======
+            if (! $file instanceof \SplFileInfo || 'php' !== $file->getExtension()) {
+>>>>>>> laraxot/dev
                 continue;
             }
             $out[] = $file->getPathname();
@@ -87,7 +95,11 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
             continue;
         }
         $src = file_get_contents($file);
+<<<<<<< HEAD
         if (preg_match($handRolled, $src) === 1) {
+=======
+        if (1 === preg_match($handRolled, $src)) {
+>>>>>>> laraxot/dev
             $offenders[] = $rel;
         }
     }
@@ -98,7 +110,11 @@ test('nessun model costruisce un FQCN a mano per risolvere una classe gemella', 
         "Risoluzione di classe scritta a mano invece di `<Model>::getClassName()`:\n  "
         .implode("\n  ", $offenders)
         ."\n\nOgni modulo ha il suo model su una connessione diversa con lo stesso nome di"
+<<<<<<< HEAD
         .' tabella: il ripiego su un altro modulo legge un altro database in silenzio.'
+=======
+        ." tabella: il ripiego su un altro modulo legge un altro database in silenzio."
+>>>>>>> laraxot/dev
         ."\nCanon: Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md"
     );
 });
@@ -110,7 +126,11 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
     $offenders = [];
     foreach (modelSourceFiles() as $file) {
         $src = file_get_contents($file);
+<<<<<<< HEAD
         if (preg_match($silentFallback, $src) === 1) {
+=======
+        if (1 === preg_match($silentFallback, $src)) {
+>>>>>>> laraxot/dev
             $offenders[] = str_replace(\dirname(__DIR__, 5).'/', '', $file);
         }
     }
@@ -121,6 +141,10 @@ test('nessun model ripiega su una classe di un altro modulo quando la propria ma
         "Ripiego silenzioso su un model di un altro modulo:\n  "
         .implode("\n  ", $offenders)
         ."\n\nUsare `<Model>::getClassName()`: se il gemello manca deve LANCIARE, non"
+<<<<<<< HEAD
         .' rispondere con i dati di un altro ente.'
+=======
+        ." rispondere con i dati di un altro ente."
+>>>>>>> laraxot/dev
     );
 });

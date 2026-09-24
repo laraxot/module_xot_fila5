@@ -11,10 +11,14 @@ use function Safe\file_get_contents;
 use function Safe\preg_match_all;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 /**
  * In Filament 5 `->options()` accetta la **classe** dell'enum.

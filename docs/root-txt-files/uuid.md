@@ -4,6 +4,7 @@ module: Xot
 type: reference
 slug: uuid
 <<<<<<< HEAD
+<<<<<<< HEAD
 description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models //--------------------------------------------------------'
 tags: [migrato-da-txt, xot]
 converted_from: _uuid.txt
@@ -18,12 +19,18 @@ tags: [migrato-da-txt, xot]
 converted_from: _uuid.txt
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+description: 'Using UUIDs in Laravel Models https://www.larashout.com/using-uuids-in-laravel-models //--------------------------------------------------------'
+tags: [migrato-da-txt, xot]
+converted_from: _uuid.txt
+>>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24
 ---
 
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
+<<<<<<< HEAD
 <<<<<<< HEAD
 //--------------------------------------------------------
 =======
@@ -32,4 +39,7 @@ Universally Unique Identifiers
 =======
 //--------------------------------------------------------
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+//--------------------------------------------------------
 >>>>>>> laraxot/dev

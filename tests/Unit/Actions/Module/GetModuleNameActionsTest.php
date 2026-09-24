@@ -12,8 +12,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> laraxot/dev
+=======
+
 >>>>>>> laraxot/dev
 it('extracts module name from class and model class', function (): void {
     $byClass = app(GetModuleNameByClassAction::class)->execute('Modules\\Cms\\Models\\Page');
@@ -33,10 +37,14 @@ it('returns extracted fragment for non-module class signatures', function (): vo
 
 it('delegates model instance class to model class action', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $model = new class extends Model {
 =======
     $model = new class extends Model
     {
+>>>>>>> laraxot/dev
+=======
+    $model = new class extends Model {
 >>>>>>> laraxot/dev
         protected $table = 'test';
     };

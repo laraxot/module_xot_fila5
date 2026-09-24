@@ -9,8 +9,12 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 =======
+>>>>>>> laraxot/dev
+=======
+use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 >>>>>>> laraxot/dev
 use Nwidart\Modules\Module;
 use Webmozart\Assert\Assert;
@@ -51,11 +55,17 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         // Registra middleware di monitoraggio
         if (config('filament_optimization.monitoring.memory_profiling', false)) {
             $this->registerMemoryMonitoring();
         }
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
         // Ottimizzazioni per l'ambiente di produzione
@@ -129,6 +139,9 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Registra il middleware di monitoraggio memoria.
      */
     private function registerMemoryMonitoring(): void
@@ -138,6 +151,9 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
      * Applica ottimizzazioni per l'ambiente di produzione.

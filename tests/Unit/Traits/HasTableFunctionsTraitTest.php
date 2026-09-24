@@ -13,12 +13,18 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 it('gets table columns', function (): void {
     $probe = new HasTableFunctionsTraitProbe();
 =======
 it('gets table columns', function (): void {
     $probe = new HasTableFunctionsTraitProbe;
+>>>>>>> laraxot/dev
+=======
+
+it('gets table columns', function (): void {
+    $probe = new HasTableFunctionsTraitProbe();
 >>>>>>> laraxot/dev
 
     $columns = $probe->getTableColumns();
@@ -28,9 +34,13 @@ it('gets table columns', function (): void {
 
 it('gets table actions', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $probe = new HasTableFunctionsCustomSlugProbe();
 =======
     $probe = new HasTableFunctionsCustomSlugProbe;
+>>>>>>> laraxot/dev
+=======
+    $probe = new HasTableFunctionsCustomSlugProbe();
 >>>>>>> laraxot/dev
 
     $actions = $probe->getTableActions();
@@ -40,9 +50,13 @@ it('gets table actions', function (): void {
 
 it('gets table bulk actions', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $probe = new HasTableFunctionsTraitProbe();
 =======
     $probe = new HasTableFunctionsTraitProbe;
+>>>>>>> laraxot/dev
+=======
+    $probe = new HasTableFunctionsTraitProbe();
 >>>>>>> laraxot/dev
 
     $bulkActions = $probe->getTableBulkActions();
@@ -51,9 +65,13 @@ it('gets table bulk actions', function (): void {
 
 it('has default resource slug', function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $probe = new HasTableFunctionsTraitProbe();
 =======
     $probe = new HasTableFunctionsTraitProbe;
+>>>>>>> laraxot/dev
+=======
+    $probe = new HasTableFunctionsTraitProbe();
 >>>>>>> laraxot/dev
 
     Assert::assertSame('default', $probe->exposeResourceSlug());

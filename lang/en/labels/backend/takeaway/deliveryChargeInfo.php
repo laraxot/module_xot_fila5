@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 // Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
 // Canon: Modules/Xot/docs/wiki — domain i18n only.

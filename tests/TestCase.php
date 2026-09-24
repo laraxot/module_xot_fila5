@@ -26,9 +26,13 @@ use function Safe\unlink;
  *
  * @property object|null $action
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property Model|null  $model
 =======
  * @property Model|null $model
+>>>>>>> laraxot/dev
+=======
+ * @property Model|null  $model
 >>>>>>> laraxot/dev
  * @property object|null $service
  * @property string|null $tempDir
@@ -36,12 +40,16 @@ use function Safe\unlink;
  * @property object|null $transition
  * @property object|null $resource
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property Model|null  $testModel
  * @property object|null $extraClass
  * @property Model|null  $baseModel
  * @property string|null $testDir
  * @property mixed       $saved
  * @property mixed       $extra_attributes
+<<<<<<< HEAD
 =======
  * @property Model|null $testModel
  * @property object|null $extraClass
@@ -49,6 +57,8 @@ use function Safe\unlink;
  * @property string|null $testDir
  * @property mixed $saved
  * @property mixed $extra_attributes
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  */
 abstract class TestCase extends XotBaseTestCase
@@ -103,9 +113,13 @@ abstract class TestCase extends XotBaseTestCase
 
         foreach (array_keys($connections) as $connection) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ('sqlite' !== config("database.connections.{$connection}.driver")) {
 =======
             if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+>>>>>>> laraxot/dev
+=======
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
 >>>>>>> laraxot/dev
                 continue;
             }
@@ -119,10 +133,15 @@ abstract class TestCase extends XotBaseTestCase
      * @template T of object
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param class-string<T> $class
      *
 =======
      * @param  class-string<T>  $class
+>>>>>>> laraxot/dev
+=======
+     * @param class-string<T> $class
+     *
 >>>>>>> laraxot/dev
      * @return T
      */
@@ -140,12 +159,18 @@ abstract class TestCase extends XotBaseTestCase
      * @template T of object
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param class-string<T>                        $abstract
      * @param (\Closure(MockInterface&T): void)|null $callback
      *
 =======
      * @param  class-string<T>  $abstract
      * @param  (\Closure(MockInterface&T): void)|null  $callback
+>>>>>>> laraxot/dev
+=======
+     * @param class-string<T>                        $abstract
+     * @param (\Closure(MockInterface&T): void)|null $callback
+     *
 >>>>>>> laraxot/dev
      * @return MockInterface&T
      */
@@ -159,9 +184,13 @@ abstract class TestCase extends XotBaseTestCase
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param class-string<\Throwable> $exception
 =======
      * @param  class-string<\Throwable>  $exception
+>>>>>>> laraxot/dev
+=======
+     * @param class-string<\Throwable> $exception
 >>>>>>> laraxot/dev
      */
     public function expectThrowable(string $exception): void
@@ -198,9 +227,13 @@ abstract class TestCase extends XotBaseTestCase
 
         foreach ($files as $file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ('.' === $file || '..' === $file) {
 =======
             if ($file === '.' || $file === '..') {
+>>>>>>> laraxot/dev
+=======
+            if ('.' === $file || '..' === $file) {
 >>>>>>> laraxot/dev
                 continue;
             }

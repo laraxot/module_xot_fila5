@@ -15,8 +15,12 @@ interface MorphToOneRelationContract
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
+>>>>>>> laraxot/dev
+=======
+     *
 >>>>>>> laraxot/dev
      * @param array<string, mixed> $attributes
      */

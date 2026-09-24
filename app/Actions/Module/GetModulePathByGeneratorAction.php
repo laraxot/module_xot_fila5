@@ -15,9 +15,13 @@ class GetModulePathByGeneratorAction
         try {
             $res = module_path($moduleName, $relativePath);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($res !== '') {
 =======
             if ('' !== $res) {
+>>>>>>> laraxot/dev
+=======
+            if ($res !== '') {
 >>>>>>> laraxot/dev
                 return $res;
             }

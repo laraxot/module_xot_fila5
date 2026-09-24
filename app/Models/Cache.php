@@ -14,6 +14,9 @@ use Modules\Xot\Database\Factories\CacheFactory;
  * @property string $key
  * @property string $value
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *                              <<<<<<< HEAD
  * @property int    $expiration
  *
@@ -24,10 +27,13 @@ use Modules\Xot\Database\Factories\CacheFactory;
  *
  * @method static CacheFactory          factory($count = null, $state = [])
  *                                                                          >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
  * @property int $expiration
  *
  * @method static CacheFactory factory($count = null, $state = [])
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
  * @method static Builder<static>|Cache newModelQuery()
  * @method static Builder<static>|Cache newQuery()

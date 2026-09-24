@@ -10,10 +10,14 @@ use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(TestCase::class)->group('xot');
 =======
 uses(TestCase::class);
 
+>>>>>>> laraxot/dev
+=======
+uses(TestCase::class)->group('xot');
 >>>>>>> laraxot/dev
 it('gets view namespace path from theme fallback correctly', function (): void {
     $ns = 'pub_theme';
