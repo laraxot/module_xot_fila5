@@ -1,0 +1,278 @@
+<<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_9BbkJZ
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# Xot
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_kkjBRW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
+---
+title: "Readme"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+<<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
+<<<<<<< .merge_file_kkjBRW
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_9BbkJZ
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
+
+# Best Practices
+
+## Laraxot Framework Standards
+
+### Models
+- ALWAYS extend module's BaseModel
+- NEVER extend Eloquent\Model directly
+- Use `declare(strict_types=1);` in all files
+- Implement `casts()` method, not `$casts` property
+
+### Filament Resources
+- ALWAYS extend XotBaseResource
+- NEVER use `->label()` method
+- Return associative arrays from `getFormSchema()`
+- Use enum classes instead of hardcoded options
+
+### Migrations
+- Use anonymous classes extending XotBaseMigration
+- NEVER implement `down()` method
+- Always check existence with `hasTable()` and `hasColumn()`
+- Copy original migration with new timestamp for column additions
+
+### Translations
+- Use expanded structure ALWAYS
+- NEVER remove existing keys
+- Maintain consistency across all languages (IT/EN/DE)
+- Use snake_case for all keys
+
+## Code Quality
+- PHPStan level 9+ for all new code
+<<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_kkjBRW
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+- PHPStan level 9+ for all new code
+<<<<<<< .merge_file_55fVAe
+=======
+<<<<<<< .merge_file_kkjBRW
+=======
+=======
+>>>>>>> .merge_file_9BbkJZ
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+=======
+>>>>>>> .merge_file_jogm6S
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_9BbkJZ
+- Complete PHPDoc annotations
+- Use Safe library for unsafe functions
+- Follow PSR-12 coding standards
+
+## Documentation
+- All files in docs/ must be lowercase (except README.md)
+- Create bidirectional links between related documents
+- Update both module and root documentation
+- Include practical examples in all guides
+<<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
+<<<<<<< .merge_file_kkjBRW
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_9BbkJZ
+
+---
+
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_55fVAe
+=======
+>>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
+
+---
+
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+
+[![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+
+> **Core module for the FixCity Platform.**
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+module: theme
+topic: readme
+canonical: ../../../../Themes/docs/shared-components/README-Modules.md
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+# Xot
+
+[![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+
+> **Core module for the FixCity Platform.**
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+
+---
+
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_55fVAe
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_kkjBRW
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_jogm6S
+>>>>>>> .merge_file_9BbkJZ
