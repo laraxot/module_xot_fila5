@@ -1,4 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_SoxooX
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_flisOV
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_5f05n5
+>>>>>>> .merge_file_M2jP9l
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # __php-code-analysis-tools
 
 <!-- Contenuto migrato da _docs/__php-code-analysis-tools.txt -->
@@ -24,6 +40,20 @@ https://phpmd.org/
 
 
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_SoxooX
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_flisOV
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5f05n5
+>>>>>>> .merge_file_M2jP9l
+>>>>>>> laraxot/dev
 ---
 title: 'Php code analysis tools — risorse esterne'
 module: Xot
@@ -57,4 +87,28 @@ updated: 2026-08-24
 - <https://github.com/phan/phan>
 - <https://github.com/overtrue/phplint>
 - <https://phpmd.org/>
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_SoxooX
+=======
+<<<<<<< .merge_file_flisOV
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_M2jP9l
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_SoxooX
+=======
+>>>>>>> .merge_file_5f05n5
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_M2jP9l
 >>>>>>> laraxot/dev

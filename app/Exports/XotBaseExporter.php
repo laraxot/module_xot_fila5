@@ -6,12 +6,24 @@ namespace Modules\Xot\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Exporter;
+<<<<<<< HEAD
 use Filament\Resources\Pages\ListRecords;
+=======
+use Filament\Actions\Exports\Models\Export;
+use Filament\Resources\Pages\ListRecords;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\TransArrayAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< HEAD
+=======
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Entity\Style\Style;
+>>>>>>> laraxot/dev
 
 /**
  * Exporter Filament 5 che riusa il contratto `getXlsFields()` dei Resource.
@@ -30,10 +42,109 @@ use Modules\Xot\Actions\GetTransKeyAction;
  * I nomi colonna non possono contenere `.` (romperebbe il `columnMap` via
  * `data_get` in `CanExportRecords`): i punti del percorso diventano `_` e lo
  * stato viene risolto con `data_get($record, $percorso)`.
+<<<<<<< HEAD
+=======
+ *
+ * Tipo delle celle: il job nativo passa dal CSV (`ExportCsv` → `CreateXlsxFile`),
+ * quindi OpenSpout riceve solo stringhe e `"57"` diventerebbe testo. `export_xls`
+ * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
+ * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
+ *
+ * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+ * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
+ * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
+ * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+ *
+ * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
+ * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
+ * come virgolette escapate, inghiottendo il resto della riga e le righe dopo.
+ * I job Xot (`Jobs\XotPrepareCsvExport`, `Jobs\XotExportCsv`, `Jobs\XotCreateXlsxFile`)
+ * scrivono e leggono con `CSV_ESCAPE` (nessun escape, RFC 4180): round-trip
+ * intatto anche per `a\` e `a\"b`.
+>>>>>>> laraxot/dev
  */
 abstract class XotBaseExporter extends Exporter
 {
     /**
+<<<<<<< HEAD
+=======
+     * Escape del CSV intermedio (writer e reader devono coincidere).
+     */
+    public const string CSV_ESCAPE = '';
+
+    /**
+     * Relation caricate se esistono sul model: `ratings_by_id` le legge entrambe.
+     *
+     * @template TModel of Model
+     *
+     * @param Builder<TModel> $query
+     *
+     * @return Builder<TModel>
+     */
+    #[\Override]
+    public static function modifyQuery(Builder $query): Builder
+    {
+        $model = $query->getModel();
+        $with = [];
+        if (method_exists($model, 'ratings')) {
+            $with[] = 'ratings';
+            $with[] = 'ratings.children';
+        }
+        if (method_exists($model, 'ratingMorphs')) {
+            $with[] = 'ratingMorphs';
+        }
+
+        return [] === $with ? $query : $query->with($with);
+    }
+
+    /**
+     * Corpo della notifica di fine export, tradotto (`xot::export.notifications.completed`).
+     * Story Ptv/5.160: niente stringhe hardcoded negli exporter dei moduli.
+     */
+    #[\Override]
+    public static function getCompletedNotificationBody(Export $export): string
+    {
+        $body = trans_choice('xot::export.notifications.completed.body', $export->successful_rows, [
+            'count' => number_format($export->successful_rows),
+        ]);
+
+        $failedRowsCount = $export->getFailedRowsCount();
+        if ($failedRowsCount > 0) {
+            $body .= ' '.trans_choice('xot::export.notifications.completed.failed', $failedRowsCount, [
+                'count' => number_format($failedRowsCount),
+            ]);
+        }
+
+        return $body;
+    }
+
+    /**
+     * Righe (e intestazione: `makeXlsxHeaderRow` delega qui) con le celle
+     * tipizzate come PhpSpreadsheet in `export_xls`. Story Ptv/5.165.
+     *
+     * @param array<mixed> $values
+     */
+    #[\Override]
+    public function makeXlsxRow(array $values, ?Style $style = null): Row
+    {
+        $cells = [];
+        foreach ($values as $value) {
+            $cells[] = static::xlsxCell($value, $style);
+        }
+
+        return new Row($cells, $style);
+    }
+
+    /**
+     * Stessa cella che PhpSpreadsheet darebbe alla stessa stringa: {@see XlsxCellFactory}.
+     */
+    public static function xlsxCell(mixed $value, ?Style $style = null): Cell
+    {
+        return XlsxCellFactory::make($value, $style);
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * @return array<int, ExportColumn>
      */
     #[\Override]
@@ -48,6 +159,10 @@ abstract class XotBaseExporter extends Exporter
         return static::resolveColumns(
             $livewire->getResource(),
             $livewire->tableFilters ?? [],
+<<<<<<< HEAD
+=======
+            $livewire::class,
+>>>>>>> laraxot/dev
         );
     }
 
@@ -63,10 +178,18 @@ abstract class XotBaseExporter extends Exporter
             $resource = Arr::get($this->options, 'resource');
             $resource = \is_string($resource) && class_exists($resource) ? $resource : null;
             $filters = Arr::get($this->options, 'tableFilters', []);
+<<<<<<< HEAD
             /** @var array<string, mixed> $filters */
 
             $this->cachedColumns = [];
             foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : []) as $column) {
+=======
+            $transClass = Arr::get($this->options, 'livewireClass');
+            $transClass = \is_string($transClass) && class_exists($transClass) ? $transClass : $resource;
+            /* @var array<string, mixed> $filters */
+            $this->cachedColumns = [];
+            foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : [], $transClass) as $column) {
+>>>>>>> laraxot/dev
                 $this->cachedColumns[$column->getName()] = $column->exporter($this);
             }
         }
@@ -75,6 +198,7 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
+<<<<<<< HEAD
      * @param  class-string|null  $resource
      * @param  array<array-key, mixed>  $filters
      * @return array<int, ExportColumn>
@@ -82,25 +206,48 @@ abstract class XotBaseExporter extends Exporter
     protected static function resolveColumns(?string $resource, array $filters): array
     {
         if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
+=======
+     * @param class-string|null       $resource
+     * @param array<array-key, mixed> $filters
+     * @param class-string|null       $transClass come ExportXlsAction: classe Livewire/page, non il Resource
+     *
+     * @return array<int, ExportColumn>
+     */
+    protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
+    {
+        if (null === $resource || ! method_exists($resource, 'getXlsFields')) {
+>>>>>>> laraxot/dev
             return [];
         }
 
         /** @var array<int|string, string> $fields */
         $fields = $resource::getXlsFields($filters);
 
+<<<<<<< HEAD
         $transKey = app(GetTransKeyAction::class)->execute($resource).'.fields';
+=======
+        $transKey = app(GetTransKeyAction::class)->execute($transClass ?? $resource).'.fields';
+>>>>>>> laraxot/dev
 
         $columns = [];
         foreach ($fields as $key => $value) {
             $path = \is_string($key) ? $key : $value;
             $label = \is_string($key)
                 ? $value
+<<<<<<< HEAD
                 : app(TransArrayAction::class)->execute([$path], $transKey)[0] ?? $path;
 
             $columns[] = ExportColumn::make(static::columnName($path))
                 ->label($label)
                 ->state(static fn (Model $record): mixed => data_get($record, $path))
                 ->preventFormulaInjection();
+=======
+                : (array_values(app(TransArrayAction::class)->execute([$path], $transKey))[0] ?? $path);
+
+            $columns[] = ExportColumn::make(static::columnName($path))
+                ->label($label)
+                ->state(static fn (Model $record): string => CollectionExport::castCell(data_get($record, $path)));
+>>>>>>> laraxot/dev
         }
 
         return $columns;
@@ -118,11 +265,19 @@ abstract class XotBaseExporter extends Exporter
         $livewire = app('livewire')->current();
 
         if ($livewire instanceof ListRecords) {
+<<<<<<< HEAD
             /** @var class-string<Model> */
             return $livewire->getResource()::getModel();
         }
 
         /** @var class-string<Model> */
+=======
+            /* @var class-string<Model> */
+            return $livewire->getResource()::getModel();
+        }
+
+        /* @var class-string<Model> */
+>>>>>>> laraxot/dev
         return parent::getModel();
     }
 

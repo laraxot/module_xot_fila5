@@ -339,7 +339,16 @@ The command discovered these categories:
 **Module Packages**:
 - Xot → XotServiceProvider + AdminPanelProvider
 - User → UserServiceProvider + AdminPanelProvider + PassportServiceProvider
+<<<<<<< HEAD
 - Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+=======
+<<<<<<< HEAD
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, Quaeris
+=======
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, healthcare_app
+- Activity, Tenant, UI, Geo, Media, Notify, Chart, Lang, Cms, Job, Gdpr, DbForge, CloudStorage, Limesurvey, ExternalProject
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Supporting Libraries**:
 - Blade icons, Carbon, Excel, Debugbar, IDE Helper, PHPInsights
@@ -350,7 +359,15 @@ Each module uses this pattern:
 
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
+=======
+<<<<<<< HEAD
+    "name": "laraxot/module_user_fila3",
+=======
+    "name": "laraxot/module_user_fila5",
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     "extra": {
         "laravel": {
             "providers": [
@@ -544,10 +561,25 @@ In this codebase with 80+ packages and 17 modules, package discovery is not just
 
 **Document Version**: 1.0
 **Last Updated**: 2026-01-12
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Status**: Living document - update as understanding deepens
 **Philosophy**: Super Mucca methodology applied
 
 **Related Documentation**:
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Module System](./packages.md)
+<<<<<<< HEAD
 - [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
+=======
+<<<<<<< HEAD
+- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
+=======
+- [XotBase Pattern](../../CLAUDE.md#xotbase-pattern)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -39,15 +39,25 @@ class ExecuteArtisanCommandAction
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
+<<<<<<< HEAD
      * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
+=======
+     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
+     *
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+     *
+>>>>>>> laraxot/dev
      * @return array{
      *     command: string,
      *     output: list<string>,
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
+<<<<<<< HEAD
      *
      * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+=======
+>>>>>>> laraxot/dev
      */
     public function execute(string $command): array
     {
@@ -120,7 +130,12 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
+<<<<<<< HEAD
      * @param  string  $command  Il comando da verificare
+=======
+     * @param string $command Il comando da verificare
+     *
+>>>>>>> laraxot/dev
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

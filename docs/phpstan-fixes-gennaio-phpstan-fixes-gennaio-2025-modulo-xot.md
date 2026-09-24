@@ -1,5 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 name: phpstan-fixes-gennaio-phpstan-fixes-gennaio-2025-modulo-xot
 description: " Riassunto delle Correzioni"
@@ -7,9 +14,18 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # PHPStan Fixes Gennaio 2025 - Modulo Xot
 

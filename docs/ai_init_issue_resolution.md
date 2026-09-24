@@ -1,8 +1,19 @@
 # Risoluzione Problema con ai_init.sh
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_K6pdVb
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HCZbKX
+>>>>>>> laraxot/dev
 ## Stato attuale
 
 Questa nota descrive un modello ormai superato.
@@ -45,7 +56,20 @@ bash bashscripts/tools/sync-ide-junctions.sh
 
 `bashscripts/ai/ai_init.sh` va considerato legacy rispetto al modello SSoT
 `.agents`.
+<<<<<<< HEAD
 =======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_K6pdVb
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_HCZbKX
+=======
+
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Problema Risolto
 
@@ -78,7 +102,19 @@ La cartella `./bashscripts/ai/.gemini` ora è accessibile direttamente dalla roo
 ## Documentazione Aggiornata
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_K6pdVb
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HCZbKX
 >>>>>>> laraxot/dev
 
 La documentazione del progetto è stata aggiornata per riflettere questo cambiamento.

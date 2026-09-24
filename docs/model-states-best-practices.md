@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom
@@ -11,3 +15,16 @@
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../docs/README.md)
+<<<<<<< HEAD
+=======
+=======
+  - [README.md centrale](../../../docs/README.md)
+---
+module: theme
+topic: model-states-best-practices
+canonical: ../../../Themes/docs/shared-components/model-states-best-practices-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-states-best-practices-1.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -48,9 +48,25 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
 >>>>>>> laraxot/dev
     {
         return [
@@ -267,9 +283,25 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
 >>>>>>> laraxot/dev
     {
         return [
@@ -419,9 +451,25 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
 >>>>>>> laraxot/dev
     {
         return [
@@ -638,9 +686,25 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
 >>>>>>> laraxot/dev
     {
         return [

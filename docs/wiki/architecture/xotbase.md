@@ -22,6 +22,32 @@ XotBase funge da wrapper per tutti i componenti Filament nel progetto Laraxot. C
 | Componente Filament | Classe XotBase |
 | :--- | :--- |
 | `Filament\Actions\Action` | `Modules\Xot\Filament\Actions\XotBaseAction` |
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_w2Apc8
+=======
+<<<<<<< .merge_file_cs2A2n
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+>>>>>>> laraxot/dev
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_YofIXc
+=======
+<<<<<<< HEAD
+=======
+| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_w2Apc8
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_g1eER4
+>>>>>>> .merge_file_YofIXc
+>>>>>>> laraxot/dev
 | `Filament\Resources\Resource` | `Modules\Xot\Filament\Resources\XotBaseResource` |
 | `Filament\Pages\Page` | `Modules\Xot\Filament\Pages\XotBasePage` |
 | `Filament\Widgets\Widget` | `Modules\Xot\Filament\Widgets\XotBaseWidget` |
@@ -38,9 +64,37 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_w2Apc8
+=======
+<<<<<<< HEAD
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_YofIXc
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
 =======
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_w2Apc8
+=======
+>>>>>>> laraxot/dev
+=======
+- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_YofIXc
 >>>>>>> laraxot/dev
 
 ### 3. Namespace Standard

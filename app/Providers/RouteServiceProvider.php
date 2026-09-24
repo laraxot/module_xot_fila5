@@ -70,7 +70,11 @@ class RouteServiceProvider extends ServiceProvider
         $lang = app()->getLocale();
         if ($user instanceof Model) {
             $userLang = $user->getAttribute('lang');
+<<<<<<< HEAD
             if (is_string($userLang) && $userLang !== '') {
+=======
+            if (is_string($userLang) && '' !== $userLang) {
+>>>>>>> laraxot/dev
                 $lang = $userLang;
             }
         }
@@ -86,7 +90,11 @@ class RouteServiceProvider extends ServiceProvider
 
         if (in_array(request()->segment(1), $langs, false)) {
             $lang = request()->segment(1);
+<<<<<<< HEAD
             if ($lang !== null) {
+=======
+            if (null !== $lang) {
+>>>>>>> laraxot/dev
                 app()->setLocale($lang);
             }
         }

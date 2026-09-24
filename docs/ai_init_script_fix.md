@@ -1,8 +1,19 @@
 # Aggiornamento Importante: ai_init.sh Script
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_gN2FWI
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3h8tO2
+>>>>>>> laraxot/dev
 ## Nota di deprecazione
 
 Questo documento riflette il modello legacy "un path reale per ogni tool" ed e'
@@ -20,7 +31,21 @@ Tutti gli adapter di root devono puntare a un solo backend condiviso:
 .iflow    -> bashscripts/ai/.agents
 .windsurf -> bashscripts/ai/.agents
 .zai      -> bashscripts/ai/.agents
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_gN2FWI
+<<<<<<< HEAD
+=======
+```
+
+>>>>>>> .merge_file_3h8tO2
+=======
+>>>>>>> laraxot/dev
+=======
+```
+
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Problema Risolto
 Lo script `./bashscripts/ai/ai_init.sh` non creava correttamente tutti i collegamenti simbolici richiesti. Alcune directory esistevano già come cartelle reali invece di collegamenti simbolici.
@@ -54,7 +79,19 @@ Per verificare che tutto funzioni correttamente:
 file ./.ai ./.cursor ./.claude ./.windsurf ./.gemini
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_gN2FWI
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_3h8tO2
 >>>>>>> laraxot/dev
 ```
 

@@ -71,7 +71,11 @@ it('casts arrays', function (): void {
 });
 
 it('casts objects', function (): void {
+<<<<<<< HEAD
     $result = app(SafeFloatCastAction::class)->execute(new stdClass);
+=======
+    $result = app(SafeFloatCastAction::class)->execute(new stdClass());
+>>>>>>> laraxot/dev
     Assert::assertSame(0.0, $result);
 });
 

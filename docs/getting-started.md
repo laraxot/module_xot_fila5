@@ -365,6 +365,22 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+* [getting-started.md](../../../gdpr/project_docs/getting-started.md)
+* [getting-started.md](../../../xot/project_docs/getting-started.md)
+* [getting-started.md](../../../ui/project_docs/getting-started.md)
+* [getting-started.md](../../../tenant/project_docs/it/getting-started.md)
+* [getting-started.md](../../../cms/project_docs/getting-started.md)
+* [getting-started.md](../../../gdpr/docs/getting-started.md)
+* [getting-started.md](../../../xot/docs/getting-started.md)
+* [getting-started.md](../../../ui/docs/getting-started.md)
+* [getting-started.md](../../../tenant/docs/it/getting-started.md)
+* [getting-started.md](../../../cms/docs/getting-started.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
 * [getting-started.md](../../../UI/project_docs/getting-started.md)
@@ -459,6 +475,17 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+* [getting-started.md](../../../gdpr/project_docs/getting-started.md)
+* [getting-started.md](../../../xot/project_docs/getting-started.md)
+* [getting-started.md](../../../ui/project_docs/getting-started.md)
+* [getting-started.md](../../../tenant/project_docs/it/getting-started.md)
+* [getting-started.md](../../../cms/project_docs/getting-started.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 * [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../Xot/project_docs/getting-started.md)
 * [getting-started.md](../../../UI/project_docs/getting-started.md)
@@ -467,4 +494,12 @@ npm run dev
 
 ### Versione Incoming
 
+<<<<<<< HEAD
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
