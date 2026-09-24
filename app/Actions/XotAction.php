@@ -20,37 +20,5 @@ class XotAction
         return Tenant::class;
     }
 
-<<<<<<< .merge_file_cwM2se
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-<<<<<<< .merge_file_nC2nlc
-<<<<<<< HEAD
-    public function execute(): void
-    {
-    }
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-    public function execute(): void
-    {
-    }
-=======
-    public function execute(): void {}
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_xXOav4
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    public function execute(): void {}
->>>>>>> .merge_file_xMy2HJ
 }

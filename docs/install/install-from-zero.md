@@ -176,37 +176,11 @@ create Folders :
  inside folder laravel/modules
 
 ~~~ bash
-<<<<<<< .merge_file_xi4R9F
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_aIrEH4
  git submodule add https://github.com/laraxot/module_xot_fila3.git Xot
  git submodule add https://github.com/laraxot/module_tenant_fila3.git Tenant
  git submodule add https://github.com/laraxot/module_user_fila3.git User
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
-<<<<<<< .merge_file_xi4R9F
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
- git submodule add https://github.com/laraxot/module_xot_fila5.git Xot
- git submodule add https://github.com/laraxot/module_tenant_fila5.git Tenant
- git submodule add https://github.com/laraxot/module_user_fila5.git User
- git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
- git submodule add https://github.com/laraxot/module_ui_fila5.git UI
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_aIrEH4
 ~~~
 
 from folder laravel
@@ -214,20 +188,4 @@ from folder laravel
 git submodule add  https://github.com/laraxot/filament-modules.git  packages/savannabits/filament-modules
 
 composer update -W (--with-all-dependencies)
-<<<<<<< .merge_file_xi4R9F
-<<<<<<< HEAD
-<<<<<<< HEAD
 ~~~
-=======
-<<<<<<< HEAD
-~~~
-=======
-~~~
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-~~~
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-~~~
->>>>>>> .merge_file_aIrEH4

@@ -1,48 +1,3 @@
-<<<<<<< .merge_file_y85cd1
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_gKNcjB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-https://qiita.com/nunulk/items/4c491634ad843c7a138e
-
-
-https://learnku.com/articles/22571
-
-https://spatie.be/docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
-
-https://dev.to/lloople/adding-view-models-to-a-laravel-project-hod
-
-
----
-https://www.youtube.com/watch?v=xHs6jeoRRcc
-
-
-
-http://niceprogrammer.com/laravel-view-model/
-
-
-
-??
-https://github.com/robclancy/presenter
-
-
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OaK6ae
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_mvKEnd
 ---
 title: 'view_models'
 module: Xot
@@ -75,38 +30,8 @@ http://niceprogrammer.com/laravel-view-model/
 ??
 https://github.com/robclancy/presenter
 
-<<<<<<< .merge_file_y85cd1
-
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-https://www.yuulinux.tokyo/13801/   pokemon :)
-
-view composers may function like "view models" or "presenters".
-
-
-<<<<<<< HEAD
->>>>>>> .merge_file_OaK6ae
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_mvKEnd
 https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
 
 http://www.javaear.com/question/21542893.html
 
-<<<<<<< .merge_file_y85cd1
-
-
-<<<<<<< HEAD
 https://gitee.com/gordensong/view-model
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-https://gitee.com/gordensong/view-model
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-https://gitee.com/gordensong/view-model
->>>>>>> .merge_file_mvKEnd

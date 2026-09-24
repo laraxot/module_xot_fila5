@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
     'fields' => [
         'id' => ['label' => 'id'],
@@ -25,21 +24,6 @@ return [
             'label' => 'edit',
             'icon' => 'edit',
             'tooltip' => 'edit',
-=======
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/extras.php
-return [
-    'fields' => [
-        'id' => [
-            'label' => 'id',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
->>>>>>> 8d801bbe (Check & fix styling)
         ],
     ],
 ];

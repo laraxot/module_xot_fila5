@@ -66,25 +66,7 @@ Sempre estendere classi astratte con prefisso `XotBase` che rispettano il vecchi
 | ❌ SBAGLIATO | ✅ CORRETTO |
 |-------------|------------|
 | `Filament\Actions\ActionGroup` | `Modules\Xot\Filament\Actions\XotBaseActionGroup` |
-<<<<<<< .merge_file_udyzZo
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_exAuHL
-=======
 | `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
-=======
->>>>>>> .merge_file_4RIqcP
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-| `Filament\Actions\ExportAction` | `Modules\Xot\Filament\Actions\XotBaseExportAction` |
->>>>>>> .merge_file_9KCF7k
 
 ### Resources
 
@@ -641,30 +623,10 @@ class UserResource extends XotBaseResource
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_udyzZo
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_9KCF7k
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_udyzZo
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_9KCF7k
     {
         return [
             TextInput::make('name')->required(),
@@ -924,20 +886,4 @@ Quando finisci una modifica devi sempre controllare con:
 
 ---
 
-<<<<<<< .merge_file_udyzZo
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
-=======
-<<<<<<< HEAD
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
->>>>>>> .merge_file_9KCF7k

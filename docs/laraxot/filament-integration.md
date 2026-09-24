@@ -10,30 +10,10 @@
 ### Form Schema
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_JglFth
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_2j75HV
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_JglFth
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_2j75HV
 {
     return [
         // Campi base
@@ -89,7 +69,6 @@ public static function getFormSchema(): array
 ### Versione HEAD
 
 ## Collegamenti tra versioni di filament-integration.md
-<<<<<<< HEAD
 * [filament-integration.md](../../../xot/project_docs/laraxot/filament-integration.md)
 * [filament-integration.md](../../../cms/project_docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](../../../cms/project_docs/filament-integration.md)
@@ -97,15 +76,3 @@ public static function getFormSchema(): array
 ### Versione Incoming
 
 ---
-=======
-* [filament-integration.md](../../../Xot/docs/laraxot/filament-integration.md)
-* [filament-integration.md](../../../Cms/docs/roadmap/features/filament-integration.md)
-* [filament-integration.md](../../../Cms/docs/filament-integration.md)
-* [filament-integration.md](../../../xot/docs/laraxot/filament-integration.md)
-* [filament-integration.md](../../../cms/docs/roadmap/features/filament-integration.md)
-* [filament-integration.md](../../../cms/docs/filament-integration.md)
-
-### Versione Incoming
-
----
->>>>>>> 8d801bbe (Check & fix styling)

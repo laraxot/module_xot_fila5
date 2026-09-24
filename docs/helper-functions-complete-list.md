@@ -2,11 +2,7 @@
 
 ## 📋 Overview
 
-<<<<<<< HEAD
 **File**: `Modules/Xot/Helpers/Helper.php`
-=======
-**File**: `Modules/Xot/helpers/Helper.php`
->>>>>>> 8d801bbe (Check & fix styling)
 **Autoload**: Via `"files": ["Helpers/Helper.php"]` in `Xot/composer.json`
 **Disponibilità**: Globale in tutto il framework Laraxot
 
@@ -69,23 +65,7 @@ $json = dddx(['key' => 'value']);
 ```
 
 **Caratteristiche**:
-<<<<<<< .merge_file_uI7L1G
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
-=======
-<<<<<<< HEAD
-- Logga sempre via `Log::debug()`
-=======
-- Solo sviluppo: non usare in produzione (policy no-log-debug)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Logga sempre via `Log::debug()`
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Logga sempre via `Log::debug()`
->>>>>>> .merge_file_Zp0Med
 - Usa `Safe\json_encode()` per type safety
 - Ritorna string (non void)
 
@@ -320,11 +300,7 @@ if (! function_exists('helperName')) {
    ↓
 2. Autoload PSR-4 + files
    ↓
-<<<<<<< HEAD
 3. Xot/Helpers/Helper.php loaded (via "files")
-=======
-3. Xot/helpers/Helper.php loaded (via "files")
->>>>>>> 8d801bbe (Check & fix styling)
    ↓
 4. Helper functions disponibili globalmente
    ↓
@@ -387,39 +363,10 @@ composer dump-autoload
 ---
 
 **Last Updated**: 2 Dicembre 2025
-<<<<<<< .merge_file_uI7L1G
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Zp0Med
 **Total Functions**: 10
 **PHPStan Level**: 10 ✅
 **Status**: Production Ready
 
 ---
 
-<<<<<<< .merge_file_uI7L1G
-<<<<<<< HEAD
-<<<<<<< HEAD
 *"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
-=======
-<<<<<<< HEAD
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-*"Helper functions sono il vocabolario comune del framework: semplici da usare, potenti nell'implementazione."*
->>>>>>> .merge_file_Zp0Med

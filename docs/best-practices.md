@@ -289,30 +289,10 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< .merge_file_e6ZYYh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_qSEIeI
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_e6ZYYh
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_qSEIeI
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -788,24 +768,6 @@ public function createModel(array $data): MioModello
 ---
 
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
-<<<<<<< .merge_file_e6ZYYh
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [**README.md**](readme.md) - Documentazione principale del modulo
-- [**Architettura**](architecture.md) - Architettura del modulo Xot
-- [**Best Practices Globali**](../../docs/best-practices.md) - Best practices globali
-
----
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_qSEIeI
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -873,20 +835,4 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
-<<<<<<< .merge_file_e6ZYYh
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```
-=======
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-```
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-```
->>>>>>> .merge_file_qSEIeI

@@ -36,24 +36,7 @@
 - Multi-tenant aware models
 - Social authentication integration
 
-<<<<<<< .merge_file_bJYjxX
-<<<<<<< HEAD
-<<<<<<< HEAD
 #### 3. **Quaeris Module - Business Core**
-=======
-<<<<<<< HEAD
-#### 3. **Quaeris Module - Business Core**
-=======
-#### 3. **healthcare_app Module - Business Core**
-#### 3. **ExternalProject Module - Business Core**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-#### 3. **Quaeris Module - Business Core**
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-#### 3. **Quaeris Module - Business Core**
->>>>>>> .merge_file_v2wzYr
 **Role**: Survey management, reporting, analytics
 **Priority**: 0 (Standard priority)
 **Dependencies**: Xot, User, Geo, Media
@@ -245,24 +228,7 @@
 #### 15. **Limesurvey Module - External Integration**
 **Role**: Limesurvey integration, survey synchronization
 **Priority**: 0 (Standard priority)
-<<<<<<< .merge_file_bJYjxX
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Dependencies**: Xot, Quaeris
-=======
-<<<<<<< HEAD
-**Dependencies**: Xot, Quaeris
-=======
-**Dependencies**: Xot, healthcare_app
-**Dependencies**: Xot, ExternalProject
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Dependencies**: Xot, Quaeris
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Dependencies**: Xot, Quaeris
->>>>>>> .merge_file_v2wzYr
 
 **Key Components**:
 - `LimeSurvey`, `LimeQuestion` models
@@ -310,24 +276,7 @@
 Xot (Foundation)
 ├── User (Security)
 │   └── Tenant (Multi-tenancy)
-<<<<<<< .merge_file_bJYjxX
-<<<<<<< HEAD
-<<<<<<< HEAD
 ├── Quaeris (Business Core)
-=======
-<<<<<<< HEAD
-├── Quaeris (Business Core)
-=======
-├── healthcare_app (Business Core)
-├── ExternalProject (Business Core)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-├── Quaeris (Business Core)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-├── Quaeris (Business Core)
->>>>>>> .merge_file_v2wzYr
 │   ├── Geo (Locations)
 │   ├── Media (Files)
 │   └── Limesurvey (External Integration)
@@ -436,24 +385,7 @@ public function register(): void
 #### ⚠️ Needs Attention
 - **Cms**: Mixed file structure issues
 - **UI**: Mixed test structure issues
-<<<<<<< .merge_file_bJYjxX
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Quaeris**: Missing module.json description
-=======
-<<<<<<< HEAD
-- **Quaeris**: Missing module.json description
-=======
-- **healthcare_app**: Missing module.json description
-- **ExternalProject**: Missing module.json description
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: Missing module.json description
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- **Quaeris**: Missing module.json description
->>>>>>> .merge_file_v2wzYr
 
 #### 🔧 Technical Debt
 - **Translation consistency**: Some .navigation placeholders
@@ -464,24 +396,7 @@ public function register(): void
 
 #### High-Usage Modules
 - **User**: Authentication checks on every request
-<<<<<<< .merge_file_bJYjxX
-<<<<<<< HEAD
-<<<<<<< HEAD
 - **Quaeris**: Survey processing and reporting
-=======
-<<<<<<< HEAD
-- **Quaeris**: Survey processing and reporting
-=======
-- **healthcare_app**: Survey processing and reporting
-- **ExternalProject**: Survey processing and reporting
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- **Quaeris**: Survey processing and reporting
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- **Quaeris**: Survey processing and reporting
->>>>>>> .merge_file_v2wzYr
 - **Media**: File uploads and conversions
 - **Job**: Background processing
 
@@ -513,26 +428,5 @@ public function register(): void
 ---
 
 **Analysis Date**: 2025-11-17
-<<<<<<< .merge_file_bJYjxX
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Architecture Health**: Good with some technical debt
 **Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
-=======
-<<<<<<< HEAD
-**Architecture Health**: Good with some technical debt
-**Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
-=======
-**Analysis Date**: [DATE]
-**Architecture Health**: Good with some technical debt
-**Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Architecture Health**: Good with some technical debt
-**Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Architecture Health**: Good with some technical debt
-**Recommendations**: Address file structure inconsistencies, complete documentation, optimize performance-critical modules
->>>>>>> .merge_file_v2wzYr

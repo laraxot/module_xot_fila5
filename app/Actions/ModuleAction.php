@@ -28,33 +28,7 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
-<<<<<<< .merge_file_0FLoVR
-<<<<<<< HEAD
-<<<<<<< HEAD
             self::$_instance = new self;
-=======
-<<<<<<< .merge_file_6TJIo6
-<<<<<<< HEAD
-            self::$_instance = new self();
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            self::$_instance = new self();
-=======
-            self::$_instance = new self;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            self::$_instance = new self();
->>>>>>> .merge_file_cPuAL8
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            self::$_instance = new self;
->>>>>>> .merge_file_Ox609E
         }
 
         return self::$_instance;
@@ -92,33 +66,7 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
-<<<<<<< .merge_file_0FLoVR
-<<<<<<< HEAD
-<<<<<<< HEAD
                 $tmp = new \stdClass;
-=======
-<<<<<<< .merge_file_6TJIo6
-<<<<<<< HEAD
-                $tmp = new \stdClass();
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-                $tmp = new \stdClass();
-=======
-                $tmp = new \stdClass;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-                $tmp = new \stdClass();
->>>>>>> .merge_file_cPuAL8
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-                $tmp = new \stdClass;
->>>>>>> .merge_file_Ox609E
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -144,23 +92,5 @@ class ModuleAction
         return $data;
     }
 
-<<<<<<< .merge_file_0FLoVR
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function execute(): void {}
-=======
-<<<<<<< .merge_file_6TJIo6
-    public function execute(): void {}
-=======
-    public function execute(): void
-    {
-    }
->>>>>>> .merge_file_cPuAL8
->>>>>>> laraxot/dev
-=======
-    public function execute(): void {}
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    public function execute(): void {}
->>>>>>> .merge_file_Ox609E
 }

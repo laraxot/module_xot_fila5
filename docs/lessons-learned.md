@@ -1,17 +1,4 @@
 # Lessons Learned – Consolidated Rules (2025-08-25)
-<<<<<<< .merge_file_rlUTfD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-# Lessons Learned – Consolidated Rules ([DATE])
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ytdXxP
 
 This document consolidates recurring fixes and rules applied across modules. Keep files lowercase (README.md excepted).
 
@@ -78,20 +65,4 @@ This document consolidates recurring fixes and rules applied across modules. Kee
 - Add JS callbacks: `eventDidMount`, `eventClassNames`, `selectAllow`, `eventAllow`.
 
 ---
-<<<<<<< .merge_file_rlUTfD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
-=======
-<<<<<<< HEAD
-- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
-=======
-- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- Backlinks: see `Modules/<nome progetto>/project_docs/translation-rules-consolidated.md`, `Modules/Xot/project_docs/translation-structure-expanded.md`, `.windsurf/rules/full_calendar*.mdc`.
->>>>>>> .merge_file_ytdXxP

@@ -14,17 +14,10 @@
 
 ### Fix Implementati Oggi
 
-<<<<<<< HEAD
 #### 1. Xot/Helpers/Helper.php - `dddx()` Function
 **Problema**: Funzione `dddx()` dichiarata con return type `string` ma senza return statement
 **Fix**: Aggiunto return statement con `Safe\json_encode()`
 **File**: `laravel/Modules/Xot/Helpers/Helper.php:205`
-=======
-#### 1. Xot/helpers/Helper.php - `dddx()` Function
-**Problema**: Funzione `dddx()` dichiarata con return type `string` ma senza return statement
-**Fix**: Aggiunto return statement con `Safe\json_encode()`
-**File**: `laravel/Modules/Xot/helpers/Helper.php:205`
->>>>>>> 8d801bbe (Check & fix styling)
 
 ```php
 // Prima
@@ -108,23 +101,7 @@ function dddx(mixed $params): string
 ### Documenti Aggiornati
 - `Xot/docs/code-quality-audit-2025-01.md` - Audit generale
 - `Xot/docs/module-quality-status.md` - Status moduli
-<<<<<<< .merge_file_oRA6y7
-<<<<<<< HEAD
-<<<<<<< HEAD
 - `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
-=======
-<<<<<<< HEAD
-- `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
-=======
-- `Xot/docs/code-quality-audit.md` - Questo documento
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
->>>>>>> .merge_file_OXU6ih
 - `Rating/docs/code-quality-analysis.md` - Analisi Rating
 
 ## 🎯 Prossimi Passi

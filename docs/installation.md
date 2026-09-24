@@ -128,45 +128,10 @@ php artisan serve
 - [Regole di Documentazione](documentation-rules.md)
 
 ## Collegamenti tra versioni di installation.md
-<<<<<<< .merge_file_r1Rc8h
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [installation.md](../../../xot/docs/filament/installation.md)
-* [installation.md](../../../xot/docs/installation.md)
-* [installation.md](../../../xot/docs/base/installation.md)
-* [installation.md](../../../user/docs/installation.md)
-* [installation.md](../../../lang/docs/installation.md)
-* [installation.md](../../../cms/docs/installation.md)
-* [installation.md](../../../../themes/one/docs/installation.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_0nVEcI
 * [installation.md](../../../Xot/docs/filament/installation.md)
 * [installation.md](../../../Xot/docs/installation.md)
 * [installation.md](../../../Xot/docs/base/installation.md)
 * [installation.md](../../../User/docs/installation.md)
 * [installation.md](../../../Lang/docs/installation.md)
 * [installation.md](../../../Cms/docs/installation.md)
-<<<<<<< .merge_file_r1Rc8h
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [installation.md](../../../../Themes/One/docs/installation.md)
-=======
-<<<<<<< HEAD
-* [installation.md](../../../../Themes/One/docs/installation.md)
-=======
-* [installation.md](../../../../Themes/One/docs/installation.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-* [installation.md](../../../../Themes/One/docs/installation.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-* [installation.md](../../../../Themes/One/docs/installation.md)
->>>>>>> .merge_file_0nVEcI

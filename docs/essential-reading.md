@@ -5,19 +5,6 @@
 ## 🎯 Per Iniziare (3 docs)
 
 ### 1. [README.md](./README.md) ⭐⭐⭐
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-### 1. [README.md](./readme.md) ⭐⭐⭐
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Rfc9ee
 **Cosa:** Entry point, panoramica generale, correzioni recenti
 **Perché:** Primo documento da leggere sempre
 **Tempo:** 5 minuti
@@ -68,19 +55,6 @@
 **Perché:** Prevenire race conditions e merge conflicts
 **Tempo:** 8 minuti
 **Creato:** 2025-11-04
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Creato:** [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Rfc9ee
 
 ```bash
 # Regola fondamentale
@@ -89,23 +63,6 @@ touch file.php.lock  # Prima di modificare
 rm file.php.lock     # Dopo modifica
 ```
 
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-### 10. [merge-conflict-resolution-[DATE].md](./merge-conflict-resolution-[DATE].md) ⭐⭐ 🆕
-**Cosa:** Report tecnico risoluzione 18 file con merge conflicts
-**Perché:** Case study completo, pattern da evitare
-**Tempo:** 15 minuti
-**Creato:** [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Rfc9ee
 ### 10. [merge-conflict-resolution-2025-11-04.md](./merge-conflict-resolution-2025-11-04.md) ⭐⭐ 🆕
 **Cosa:** Report tecnico risoluzione 18 file con merge conflicts
 **Perché:** Case study completo, pattern da evitare
@@ -131,19 +88,6 @@ rm file.php.lock     # Dopo modifica
 
 ### Lessons Learned
 - [lessons-learned-2025-11-04-merge-conflicts.md](./lessons-learned-2025-11-04-merge-conflicts.md) - Processo filosofico 10-step
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [lessons-learned-[DATE]-merge-conflicts.md](./lessons-learned-[DATE]-merge-conflicts.md) - Processo filosofico 10-step
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Rfc9ee
 
 ## 🗺️ Learning Path Consigliato
 
@@ -162,19 +106,6 @@ rm file.php.lock     # Dopo modifica
 ### Path per Debug Urgenti (30 min)
 1. README.md - Check "Correzioni Recenti"
 2. merge-conflict-resolution-2025-11-04.md - Pattern errori comuni
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-2. merge-conflict-resolution-[DATE].md - Pattern errori comuni
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Rfc9ee
 3. troubleshooting.md (se esiste)
 4. File specifico al problema (cerca in index.md)
 
@@ -210,20 +141,6 @@ rm file.php.lock     # Dopo modifica
 ### ⭐ NICE TO READ (Per approfondimento)
 10. merge-conflict-resolution-2025-11-04.md
 11. lessons-learned-2025-11-04-merge-conflicts.md
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-10. merge-conflict-resolution-[DATE].md
-11. lessons-learned-[DATE]-merge-conflicts.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_Rfc9ee
 12. service-providers.md
 
 ## 🎓 Quiz Auto-Valutazione
@@ -244,26 +161,5 @@ Se hai risposto correttamente a tutte, sei pronto per contribuire! 🎉
 ---
 
 **Creato:** 2025-11-04
-<<<<<<< .merge_file_PPcyTi
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Scopo:** Ridurre cognitive load navigando 2,560+ docs
 **Aggiornato:** Dopo risoluzione massiva merge conflicts
-=======
-<<<<<<< HEAD
-**Scopo:** Ridurre cognitive load navigando 2,560+ docs
-**Aggiornato:** Dopo risoluzione massiva merge conflicts
-=======
-**Creato:** [DATE]
-**Scopo:** Ridurre cognitive load navigando 2,560+ docs
-**Aggiornato:** Dopo risoluzione massiva merge conflicts
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Scopo:** Ridurre cognitive load navigando 2,560+ docs
-**Aggiornato:** Dopo risoluzione massiva merge conflicts
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Scopo:** Ridurre cognitive load navigando 2,560+ docs
-**Aggiornato:** Dopo risoluzione massiva merge conflicts
->>>>>>> .merge_file_Rfc9ee

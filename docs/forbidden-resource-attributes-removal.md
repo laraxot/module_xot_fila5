@@ -2,19 +2,6 @@
 
 **Data**: 2026-01-09  
 **Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-2026-01-09.md`)
-<<<<<<< .merge_file_8bCmFT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Status**: ✅ **VERIFICA COMPLETATA** (Vedi `forbidden-resource-attributes-verification-[DATE].md`)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rluTFj
 
 ---
 
@@ -188,18 +175,3 @@ return [
 **Ultimo aggiornamento**: 2026-01-09
 
 **Report Completo**: Vedi `forbidden-resource-attributes-verification-2026-01-09.md`
-<<<<<<< .merge_file_8bCmFT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
-
-**Report Completo**: Vedi `forbidden-resource-attributes-verification-[DATE].md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_rluTFj

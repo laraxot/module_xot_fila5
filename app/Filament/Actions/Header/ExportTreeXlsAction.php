@@ -1,26 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
-<<<<<<< HEAD
-=======
-use Filament\Actions\Action;
->>>>>>> 8d801bbe (Check & fix styling)
 use Filament\Resources\Pages\Page;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -28,10 +16,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Export\ExportXlsByCollection;
 use Modules\Xot\Actions\GetTransKeyAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAction;
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 /**
@@ -39,38 +24,17 @@ use Webmozart\Assert\Assert;
  *
  * @property Model $record
  */
-<<<<<<< HEAD
 class ExportTreeXlsAction extends XotBaseAction
-=======
-class ExportTreeXlsAction extends Action
->>>>>>> 8d801bbe (Check & fix styling)
 {
     protected function setUp(): void
     {
         parent::setUp();
         $this->translateLabel()
-<<<<<<< .merge_file_UuGreg
-<<<<<<< HEAD
-<<<<<<< HEAD
-            //->tooltip(__('xot::actions.export_xls'))
-            // ->icon('heroicon-o-cloud-arrow-down')
-            // ->icon('fas-file-excel')
-            ->icon('heroicon-o-arrow-down-tray')
-=======
-=======
->>>>>>> .merge_file_QkWl39
             // ->tooltip(__('xot::actions.export_xls'))
             // ->icon('heroicon-o-cloud-arrow-down')
             // ->icon('fas-file-excel')
             ->icon('xot-files.xls')
             ->action(static function (Page $livewire, Model $record, array $_data) {
-=======
-            ->tooltip(__('xot::actions.export_xls'))
-            // ->icon('heroicon-o-cloud-arrow-down')
-            // ->icon('fas-file-excel')
-            ->icon('heroicon-o-arrow-down-tray')
-            ->action(static function (Page $livewire, Model $record, $_data) {
->>>>>>> 8d801bbe (Check & fix styling)
                 $tableFilters = [
                     'id' => $record->getKey(),
                 ];

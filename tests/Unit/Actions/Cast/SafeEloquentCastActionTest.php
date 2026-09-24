@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Tests\TestCase;
@@ -9,14 +8,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
-use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use PHPUnit\Framework\Assert;
-
->>>>>>> 8d801bbe (Check & fix styling)
 it('checks attribute presence and emptiness', function (): void {
     [$action, $model] = safeEloquentCastFixture();
 
@@ -52,23 +43,8 @@ it('casts generic typed getter and validation helpers', function (): void {
     Assert::assertSame('Mario', $action->getTypedAttribute($model, 'name', 'string'));
     Assert::assertSame(42, $action->getTypedAttribute($model, 'age', 'int'));
 
-<<<<<<< .merge_file_0eiHyd
-<<<<<<< HEAD
-<<<<<<< HEAD
     $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => $v === 42, 0);
     $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => $v === 0, 0);
-=======
-    $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
-    $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
->>>>>>> laraxot/dev
-=======
-    $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 42 === $v, 0);
-    $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => 0 === $v, 0);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    $ok = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => $v === 42, 0);
-    $ko = $action->getValidatedAttribute($model, 'age', 'int', fn (int $v): bool => $v === 0, 0);
->>>>>>> .merge_file_7NGuXl
 
     Assert::assertSame(42, $ok);
     Assert::assertSame(0, $ko);
@@ -78,19 +54,7 @@ it('checks condition and fallback helpers', function (): void {
     [$action, $model] = safeEloquentCastFixture();
     $model->setAttribute('nickname', 'SuperMario');
 
-<<<<<<< .merge_file_0eiHyd
-<<<<<<< HEAD
-<<<<<<< HEAD
     Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (int $v): bool => SafeStringCastAction::cast($v) === '42'));
-=======
-    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (mixed $v): bool => '42' === SafeStringCastAction::cast($v)));
->>>>>>> laraxot/dev
-=======
-    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (mixed $v): bool => '42' === SafeStringCastAction::cast($v)));
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    Assert::assertTrue($action->hasAttributeCondition($model, 'age', fn (int $v): bool => SafeStringCastAction::cast($v) === '42'));
->>>>>>> .merge_file_7NGuXl
     Assert::assertSame('Mario', $action->getAttributeWithFallback($model, 'name', 'missing', 'string'));
     Assert::assertSame('SuperMario', $action->getAttributeWithFallback($model, 'missing', 'nickname', 'string'));
 });

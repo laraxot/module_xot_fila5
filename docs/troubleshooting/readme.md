@@ -1,11 +1,3 @@
-<<<<<<< .merge_file_vjHciT
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_D4Vevd
 # Troubleshooting Guide
 
 ## Common Issues
@@ -66,23 +58,3 @@
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
-<<<<<<< .merge_file_vjHciT
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
----
-module: theme
-topic: readme
-canonical: ../../../../Themes/docs/shared-components/README.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/README.md
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_D4Vevd

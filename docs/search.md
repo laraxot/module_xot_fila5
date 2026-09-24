@@ -1,21 +1,3 @@
-<<<<<<< .merge_file_Qbg5ik
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
-=======
-=======
-<<<<<<< .merge_file_1Vz9Nr
-<<<<<<< HEAD
-https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_EOkssh
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_o5L2yp
 ---
 title: 'Search — risorse esterne'
 module: Xot
@@ -37,16 +19,3 @@ updated: 2026-08-24
 
 - <https://freek.dev/1182-searching-models-using-a-where-like-query-in-laravel#adding-support-for-relations>
 - <https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title>
-<<<<<<< .merge_file_Qbg5ik
-=======
-- <https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title>
-=======
-https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
->>>>>>> .merge_file_EOkssh
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-https://www.linkedin.com/pulse/searchable-trait-search-multiple-columns-laravel-ech-chebaby/?trk=read_related_article-card_title
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_o5L2yp

@@ -5,31 +5,7 @@ type: reference
 slug: to-study
 description: 'Elenco di 1 riferimenti esterni raccolti per to study, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
-<<<<<<< .merge_file_u7sg2A
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-converted_from: __to_study.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 converted_from: to-study.txt
-=======
-converted_from: __to_study.txt
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-converted_from: to-study.txt
->>>>>>> .merge_file_lJX1OS
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * @see https://github.com/shuvroroy/filament-spatie-laravel-health/tree/main
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -20,44 +12,6 @@ use Illuminate\Support\Carbon;
 use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHistoryItem;
 
 /**
-<<<<<<< .merge_file_OnFL5M
-<<<<<<< HEAD
- * <<<<<<< HEAD.
- *
-=======
->>>>>>> 8d801bbe (Check & fix styling)
- * @property int                     $id
- * @property string                  $check_name
- * @property string                  $check_label
- * @property string                  $status
- * @property string|null             $notification_message
- * @property string|null             $short_summary
- * @property array<array-key, mixed> $meta
- * @property string                  $ended_at
- * @property string                  $batch
- * @property Carbon|null             $created_at
- * @property Carbon|null             $updated_at
- * @property string|null             $updated_by
- * @property string|null             $created_by
-<<<<<<< HEAD
- *                                                         =======
- * @property int                     $id
- * @property string                  $check_name
- * @property string                  $check_label
- * @property string                  $status
- * @property string|null             $notification_message
- * @property string|null             $short_summary
- * @property array<array-key, mixed> $meta
- * @property string                  $ended_at
- * @property string                  $batch
- * @property Carbon|null             $created_at
- * @property Carbon|null             $updated_at
- * @property string|null             $updated_by
- * @property string|null             $created_by
- *                                                         >>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
  * @property int $id
  * @property string $check_name
  * @property string $check_label
@@ -71,7 +25,6 @@ use Spatie\Health\Models\HealthCheckResultHistoryItem as BaseHealthCheckResultHi
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
->>>>>>> .merge_file_I4cpOy
  *
  * @method static Builder<static>|HealthCheckResultHistoryItem newModelQuery()
  * @method static Builder<static>|HealthCheckResultHistoryItem newQuery()

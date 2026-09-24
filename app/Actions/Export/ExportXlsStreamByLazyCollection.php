@@ -7,60 +7,14 @@ namespace Modules\Xot\Actions\Export;
 use Illuminate\Support\Collection;
 use Illuminate\Support\LazyCollection;
 use Illuminate\Support\Str;
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Webmozart\Assert\Assert;
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-use Webmozart\Assert\Assert;
->>>>>>> .merge_file_S6aCOw
 
 use function Safe\fclose;
 use function Safe\fopen;
 use function Safe\fputcsv;
 
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_ojL5Fe
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-use Spatie\QueueableAction\QueueableAction;
-use Symfony\Component\HttpFoundation\StreamedResponse;
-use Webmozart\Assert\Assert;
-
-<<<<<<< HEAD
-<<<<<<< .merge_file_SJzukM
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_S6aCOw
 class ExportXlsStreamByLazyCollection
 {
     use QueueableAction;
@@ -68,41 +22,10 @@ class ExportXlsStreamByLazyCollection
     /**
      * Esporta una LazyCollection in un file CSV streamed.
      *
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_S6aCOw
      * @param  LazyCollection<int, mixed>  $data  I dati da esportare
      * @param  string  $filename  Nome del file CSV
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_ojL5Fe
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param LazyCollection<int, mixed> $data     I dati da esportare
-     * @param string                     $filename Nome del file CSV
-     * @param string|null                $transKey Chiave di traduzione per le intestazioni
-     * @param array<string>|null         $_fields  Campi da includere nell'export (attualmente non utilizzato)
-<<<<<<< HEAD
-<<<<<<< .merge_file_SJzukM
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_S6aCOw
      */
     public function execute(
         LazyCollection $data,
@@ -138,27 +61,7 @@ class ExportXlsStreamByLazyCollection
                     }
                     // Convertiamo tutti i valori in stringhe o null
                     $safeRowData = array_map(function (string|int|float|bool|null $item) {
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
                         if ($item === null) {
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
-                        if ($item === null) {
-=======
-                        if (null === $item) {
->>>>>>> laraxot/dev
-=======
-                        if (null === $item) {
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
-                        if (null === $item) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-                        if ($item === null) {
->>>>>>> .merge_file_S6aCOw
                             return '';
                         }
 
@@ -184,36 +87,8 @@ class ExportXlsStreamByLazyCollection
     /**
      * Ottiene le intestazioni per l'export.
      *
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
-     * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
-     * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
-=======
-     * @param LazyCollection<int, mixed> $data     I dati da cui estrarre le intestazioni
-     * @param string|null                $transKey Chiave di traduzione per le intestazioni
-     *
->>>>>>> laraxot/dev
-=======
-     * @param LazyCollection<int, mixed> $data     I dati da cui estrarre le intestazioni
-     * @param string|null                $transKey Chiave di traduzione per le intestazioni
-     *
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
-     * @param LazyCollection<int, mixed> $data     I dati da cui estrarre le intestazioni
-     * @param string|null                $transKey Chiave di traduzione per le intestazioni
-     *
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
-     * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
->>>>>>> .merge_file_S6aCOw
      * @return array<string>
      */
     public function headings(LazyCollection $data, ?string $transKey = null): array
@@ -226,52 +101,12 @@ class ExportXlsStreamByLazyCollection
         $headArray = is_array($first) ? $first : $first->toArray();
 
         /**
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
          * @var array<string, mixed> $headArray
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
-         * @var array<string, mixed> $headArray
-=======
-         * @var array<string, mixed>    $headArray
->>>>>>> laraxot/dev
-=======
-         * @var array<string, mixed>    $headArray
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
-         * @var array<string, mixed>    $headArray
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-         * @var array<string, mixed> $headArray
->>>>>>> .merge_file_S6aCOw
          * @var Collection<int, string> $headings
          */
         $headings = collect($headArray)->keys();
 
-<<<<<<< .merge_file_P52PEU
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($transKey !== null) {
-=======
-<<<<<<< .merge_file_SJzukM
-<<<<<<< HEAD
-        if ($transKey !== null) {
-=======
-        if (null !== $transKey) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $transKey) {
->>>>>>> .merge_file_ojL5Fe
->>>>>>> laraxot/dev
-=======
-        if (null !== $transKey) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($transKey !== null) {
->>>>>>> .merge_file_S6aCOw
             $headings = $headings->map(static function (string $item) use ($transKey) {
                 $key = $transKey.'.fields.'.$item;
                 $trans = trans($key);

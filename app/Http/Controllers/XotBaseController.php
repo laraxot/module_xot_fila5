@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 8d801bbe (Check & fix styling)
 namespace Modules\Xot\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -30,20 +22,7 @@ class XotBaseController extends RoutingController
     /**
      * success response method.
      *
-<<<<<<< .merge_file_GQJB7m
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<string, mixed> $result
-     *                                     =======
-     * @param array<string, mixed> $result
-     *                                     >>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $result
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  array<string, mixed>  $result
->>>>>>> .merge_file_R6dL3c
      */
     public function sendResponse(string $message, array $result): JsonResponse
     {
@@ -59,20 +38,7 @@ class XotBaseController extends RoutingController
     /**
      * return error response.
      *
-<<<<<<< .merge_file_GQJB7m
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param array<string, mixed> $errorMessages
-     *                                            =======
-     * @param array<string, mixed> $errorMessages
-     *                                            >>>>>>> laraxot/dev
-=======
-     * @param array<string, mixed> $errorMessages
->>>>>>> 8d801bbe (Check & fix styling)
-=======
      * @param  array<string, mixed>  $errorMessages
->>>>>>> .merge_file_R6dL3c
      */
     public function sendError(string $error, array $errorMessages = [], int $code = 404): JsonResponse
     {

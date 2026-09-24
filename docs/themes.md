@@ -84,41 +84,8 @@ Per personalizzare un tema:
 8. **Documentazione**: Documenta tutto accuratamente
 ## Collegamenti tra versioni di themes.md
 * [themes.md](docs/rules/themes.md)
-<<<<<<< .merge_file_6DoBcC
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-* [themes.md](../../../xot/docs/themes.md)
-* [themes.md](../../../cms/docs/frontoffice/themes.md)
-
-* [README.md Tema One](laravel/themes/one/docs/readme.md)
-* [Convenzioni Namespace Tema One](laravel/themes/one/docs/namespace-conventions.md)b6f667c (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_6jJWrs
 * [themes.md](../../../Xot/docs/themes.md)
 * [themes.md](../../../Cms/docs/frontoffice/themes.md)
 
 * [README.md Tema One](laravel/Themes/One/docs/README.md)
-<<<<<<< .merge_file_6DoBcC
-<<<<<<< HEAD
-<<<<<<< HEAD
 * [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
-=======
-<<<<<<< HEAD
-* [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
-=======
-* [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-* [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-* [Convenzioni Namespace Tema One](laravel/Themes/One/docs/namespace-conventions.md)b6f667c (.)
->>>>>>> .merge_file_6jJWrs

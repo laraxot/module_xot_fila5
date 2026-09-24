@@ -58,24 +58,7 @@ public function registerTranslations(): void
 - L’uso diretto di `module_path` può portare a divergenze, bug e difficoltà di manutenzione
 - Questa regola va rispettata anche da tutte le classi che estendono il provider
 
-<<<<<<< .merge_file_hK7QaB
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
-=======
-<<<<<<< HEAD
-**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
-=======
-**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
-**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Backlink:** Vedi anche [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md)
->>>>>>> .merge_file_sQ8utQ
 
 ## Esempio di Override Sicuro
 ```php
@@ -96,54 +79,12 @@ class CustomModuleServiceProvider extends XotBaseServiceProvider
 - Evitare collisioni di prefissi tra moduli diversi.
 
 ## Collegamenti e Backlink
-<<<<<<< .merge_file_hK7QaB
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
 - [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
-=======
-<<<<<<< HEAD
-- [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
-- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
-=======
-- [COMPONENTI_PERSONALIZZATI.md](./componenti_personalizzati.md) — Regole e path per Blade components modulari
-- [CONFLITTI_MERGE_RISOLTI.md](./conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
-- [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md) — Standardizzazione metodi colonne Filament
-
----
-
-- [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
-- [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
-- [CONFLITTI_MERGE_RISOLTI.md](./CONFLITTI_MERGE_RISOLTI.md) — Tracciamento conflitti risolti su ServiceProvider
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [COMPONENTI_PERSONALIZZATI.md](./COMPONENTI_PERSONALIZZATI.md) — Regole e path per Blade components modulari
-- [CONFLITTI_MERGE_RISOLTI.md](conflitti_merge_risolti.md) — Tracciamento conflitti risolti su ServiceProvider
->>>>>>> .merge_file_sQ8utQ
 - [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md) — Standardizzazione metodi colonne Filament
 
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
 
-<<<<<<< .merge_file_hK7QaB
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
-=======
-<<<<<<< HEAD
-**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
-=======
-**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Nota:** Aggiornare SEMPRE questa documentazione in caso di modifiche architetturali o override nei moduli.
->>>>>>> .merge_file_sQ8utQ

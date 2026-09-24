@@ -286,36 +286,10 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ## Documentazione Correlata
 
-<<<<<<< .merge_file_2BZFcX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uJscNM
 - [Root Docs: Modularity Hardcoded Names](../../../project_docs/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [Xot Architecture Overview](./architecture-overview.md)
 - [Xot Best Practices](./best-practices/README.md)
-<<<<<<< .merge_file_2BZFcX
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [Xot Best Practices](./best-practices/README.md)
-- [Root Docs: Modularity Hardcoded Names](../../../../docs/project/modularity-hardcoded-names.md)
-- [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
-- [Xot Architecture Overview](./architecture-overview.md)
-- [Xot Best Practices](./best-practices/readme.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_uJscNM
 
 ## Note di Implementazione
 
@@ -333,20 +307,4 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ---
 
-<<<<<<< .merge_file_2BZFcX
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
-=======
-<<<<<<< HEAD
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**
->>>>>>> .merge_file_uJscNM

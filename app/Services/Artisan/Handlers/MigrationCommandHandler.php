@@ -18,27 +18,7 @@ class MigrationCommandHandler implements CommandHandlerInterface
         DB::purge('mysql');
         DB::reconnect('mysql');
 
-<<<<<<< .merge_file_15aCqa
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($moduleName !== '') {
-=======
-<<<<<<< .merge_file_oenBeG
-<<<<<<< HEAD
-        if ($moduleName !== '') {
-=======
-        if ('' !== $moduleName) {
->>>>>>> laraxot/dev
-=======
-        if ('' !== $moduleName) {
->>>>>>> .merge_file_130BnN
->>>>>>> laraxot/dev
-=======
-        if ('' !== $moduleName) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($moduleName !== '') {
->>>>>>> .merge_file_sWVsIs
             echo '<h3>Module '.$moduleName.'</h3>';
 
             // Dati sacri: mai --force (solo migrate additivo)
@@ -50,26 +30,6 @@ class MigrationCommandHandler implements CommandHandlerInterface
 
     public function supports(string $command): bool
     {
-<<<<<<< .merge_file_15aCqa
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $command === 'migrate';
-=======
-<<<<<<< .merge_file_oenBeG
-<<<<<<< HEAD
-        return $command === 'migrate';
-=======
-        return 'migrate' === $command;
->>>>>>> laraxot/dev
-=======
-        return 'migrate' === $command;
->>>>>>> .merge_file_130BnN
->>>>>>> laraxot/dev
-=======
-        return 'migrate' === $command;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        return $command === 'migrate';
->>>>>>> .merge_file_sWVsIs
     }
 }

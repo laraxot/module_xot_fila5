@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Cast;
 
-<<<<<<< HEAD
-=======
-use Spatie\QueueableAction\QueueableAction;
-
->>>>>>> 8d801bbe (Check & fix styling)
 /**
  * Action per convertire in modo sicuro un valore mixed in string.
  *
@@ -17,44 +12,11 @@ use Spatie\QueueableAction\QueueableAction;
  */
 class SafeStringCastAction
 {
-<<<<<<< HEAD
-=======
-    use QueueableAction;
-
->>>>>>> 8d801bbe (Check & fix styling)
     /**
      * Converte in modo sicuro un valore mixed in string.
      * impostare delle eccezzioni ?
      *
-<<<<<<< .merge_file_ae5FG4
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param mixed $value Il valore da convertire
-     *                     =======
-     *                     <<<<<<< .merge_file_wEm3Js
-     *                     =======
-     *                     <<<<<<< HEAD
-     *                     <<<<<<< .merge_file_O8nWNS
-     *                     >>>>>>> .merge_file_dmjXLI
-     * @param mixed $value Il valore da convertire
-     *
-     * <<<<<<< .merge_file_wEm3Js
-     * =======
-     * =======
-     * @param mixed $value Il valore da convertire
-     *                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-     * >>>>>>> .merge_file_dmjXLI
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param mixed $value Il valore da convertire
->>>>>>> 8d801bbe (Check & fix styling)
-     *
-=======
      * @param  mixed  $value  Il valore da convertire
->>>>>>> .merge_file_mU3YCo
      * @return string Il valore convertito in string
      */
     public function execute(mixed $value): string
@@ -87,35 +49,7 @@ class SafeStringCastAction
     /**
      * Metodo statico di convenienza per chiamate dirette.
      *
-<<<<<<< .merge_file_ae5FG4
-<<<<<<< HEAD
-     * <<<<<<< HEAD
-     *
-     * @param mixed $value Il valore da convertire
-     *                     =======
-     *                     <<<<<<< .merge_file_wEm3Js
-     *                     =======
-     *                     <<<<<<< HEAD
-     *                     <<<<<<< .merge_file_O8nWNS
-     *                     >>>>>>> .merge_file_dmjXLI
-     * @param mixed $value Il valore da convertire
-     *
-     * <<<<<<< .merge_file_wEm3Js
-     * =======
-     * =======
-     * @param mixed $value Il valore da convertire
-     *                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
-     *
-     * >>>>>>> .merge_file_dmjXLI
-     *
-     * >>>>>>> laraxot/dev
-=======
-     * @param mixed $value Il valore da convertire
->>>>>>> 8d801bbe (Check & fix styling)
-     *
-=======
      * @param  mixed  $value  Il valore da convertire
->>>>>>> .merge_file_mU3YCo
      * @return string Il valore convertito in string
      */
     public static function cast(mixed $value): string

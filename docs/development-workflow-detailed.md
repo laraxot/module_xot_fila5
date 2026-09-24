@@ -175,30 +175,10 @@ namespace Modules\NewModule\Filament\Resources;
 class ProductResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< .merge_file_ovx6uf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_vVqvBo
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_ovx6uf
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vVqvBo
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -210,30 +190,10 @@ class ProductResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
-<<<<<<< .merge_file_ovx6uf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_vVqvBo
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_ovx6uf
-<<<<<<< HEAD
-=======
-=======
-    public static function getInfolistSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vVqvBo
     {
         return [
             Infolists\Components\TextEntry::make('name'),
@@ -566,21 +526,4 @@ echo "5. Run quality checks"
 
 **Workflow Version**: 1.0
 **Last Updated**: 2025-11-17
-<<<<<<< .merge_file_ovx6uf
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Maintained by**: Xot Module Development Team
-=======
-<<<<<<< HEAD
-**Maintained by**: Xot Module Development Team
-=======
-
-**Maintained by**: Xot Module Development Team
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Maintained by**: Xot Module Development Team
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Maintained by**: Xot Module Development Team
->>>>>>> .merge_file_vVqvBo

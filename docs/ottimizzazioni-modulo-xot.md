@@ -342,33 +342,10 @@ docs/
 
 ### Documentazione Correlata
 - [README](../README.md) - Panoramica modulo Xot
-<<<<<<< .merge_file_aGnhal
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-- [README](../readme.md) - Panoramica modulo Xot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vf31zy
 - [Convenzioni](./core/conventions.md) - Convenzioni unificate
 - [Best Practices](./core/best-practices.md) - Best practices consolidate
 
 ### Documentazione Root
-<<<<<<< .merge_file_aGnhal
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vf31zy
 - [docs/ottimizzazioni-sistema.md](../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
 - [docs/architettura-moduli.md](../../../docs/architettura-moduli.md) - Architettura moduli
 
@@ -377,22 +354,3 @@ docs/
 **Ultimo aggiornamento:** 2025-01-06
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo Xot
-<<<<<<< .merge_file_aGnhal
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-**Ultimo aggiornamento:** 2025-01-06
-- [docs/ottimizzazioni-sistema.md](../../../../docs/ottimizzazioni-sistema.md) - Ottimizzazioni sistema generale
-- [docs/architettura-moduli.md](../../../../docs/architettura-moduli.md) - Architettura moduli
-
----
-
-**Stato:** In implementazione
-**Responsabile:** Team Sviluppo Xot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_vf31zy

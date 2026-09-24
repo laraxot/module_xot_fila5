@@ -9,52 +9,10 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_M7V3C0
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-
-use function Safe\preg_match;
-
-use Symfony\Component\Process\Process;
-
-<<<<<<< HEAD
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ceK3Y3
 use Symfony\Component\Process\Process;
 
 use function Safe\preg_match;
 
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_M7V3C0
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ceK3Y3
 /**
  * Comando per ottimizzare la memory usage di Filament.
  * SuperMucca Memory Optimizer Command 🐄.
@@ -175,51 +133,10 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_M7V3C0
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Models/')) {
-                $content = File::get($file->getPathname());
-
-                if (1 === preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches)) {
-<<<<<<< HEAD
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ceK3Y3
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Models/')) {
                 $content = File::get($file->getPathname());
 
                 if (preg_match('/protected\s+\$with\s*=\s*\[([^\]]+)\]/', $content, $matches) === 1) {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_M7V3C0
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ceK3Y3
                     $withContent = $matches[1] ?? '';
                     // Controlla se ha relazioni pesanti
                     if (str_contains($withContent, 'roles')
@@ -246,33 +163,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Widgets/')) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Widgets/')) {
-=======
-            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Widgets/')) {
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Widgets/')) {
->>>>>>> .merge_file_ceK3Y3
                 $content = File::get($file->getPathname());
 
                 // Cerca query senza limitazioni
@@ -298,33 +189,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
-=======
-            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Resources/') && str_ends_with($file->getFilename(), 'Resource.php')) {
->>>>>>> .merge_file_ceK3Y3
                 $content = File::get($file->getPathname());
 
                 // Cerca eager loading eccessivo
@@ -348,33 +213,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-            if ('php' === $file->getExtension() && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if ('php' === $file->getExtension() && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
-=======
-            if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('php' === $file->getExtension() && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($file->getExtension() === 'php' && (str_contains($file->getPathname(), '/Resources/') || str_contains($file->getPathname(), '/Forms/'))) {
->>>>>>> .merge_file_ceK3Y3
                 $content = File::get($file->getPathname());
 
                 // Cerca query di migrazione nei form
@@ -400,33 +239,7 @@ class OptimizeFilamentMemoryCommand extends Command
         $files = File::allFiles(base_path('Modules'));
 
         foreach ($files as $file) {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
             if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Pages/List')) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Pages/List')) {
-=======
-            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('php' === $file->getExtension() && str_contains($file->getPathname(), '/Pages/List')) {
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if ($file->getExtension() === 'php' && str_contains($file->getPathname(), '/Pages/List')) {
->>>>>>> .merge_file_ceK3Y3
                 $content = File::get($file->getPathname());
 
                 // Cerca liste senza paginazione
@@ -442,33 +255,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra i risultati dell'analisi.
      *
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, array<int, string>>  $issues
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-     * @param array<string, array<int, string>> $issues
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param array<string, array<int, string>> $issues
-=======
-     * @param  array<string, array<int, string>>  $issues
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<string, array<int, string>> $issues
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<string, array<int, string>>  $issues
->>>>>>> .merge_file_ceK3Y3
      */
     private function displayAnalysisResults(array $issues): void
     {
@@ -510,33 +297,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Mostra dettagli sui problemi trovati.
      *
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, array<int, string>>  $issues
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-     * @param array<string, array<int, string>> $issues
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param array<string, array<int, string>> $issues
-=======
-     * @param  array<string, array<int, string>>  $issues
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<string, array<int, string>> $issues
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<string, array<int, string>>  $issues
->>>>>>> .merge_file_ceK3Y3
      */
     private function displayDetailedIssues(array $issues): void
     {
@@ -555,33 +316,7 @@ class OptimizeFilamentMemoryCommand extends Command
     /**
      * Applica le ottimizzazioni.
      *
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  array<string, array<int, string>>  $issues
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-     * @param array<string, array<int, string>> $issues
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-     * @param array<string, array<int, string>> $issues
-=======
-     * @param  array<string, array<int, string>>  $issues
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-     * @param array<string, array<int, string>> $issues
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  array<string, array<int, string>>  $issues
->>>>>>> .merge_file_ceK3Y3
      */
     private function applyOptimizations(array $issues, bool $verbose = false): void
     {
@@ -620,33 +355,7 @@ class OptimizeFilamentMemoryCommand extends Command
 
         // Ottimizza le tabelle MySQL se possibile
         try {
-<<<<<<< .merge_file_2d9Smc
-<<<<<<< HEAD
-<<<<<<< HEAD
             if (config('database.default') === 'mysql') {
-=======
-<<<<<<< .merge_file_JSpykS
-<<<<<<< HEAD
-            if ('mysql' === config('database.default')) {
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if ('mysql' === config('database.default')) {
-=======
-            if (config('database.default') === 'mysql') {
->>>>>>> laraxot/dev
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-            if ('mysql' === config('database.default')) {
->>>>>>> .merge_file_M7V3C0
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-            if (config('database.default') === 'mysql') {
->>>>>>> .merge_file_ceK3Y3
                 DB::statement('OPTIMIZE TABLE users');
                 // Aggiungi altre tabelle critiche se necessario
             }

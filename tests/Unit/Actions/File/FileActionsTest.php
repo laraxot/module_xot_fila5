@@ -1,36 +1,17 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_ZDBrNp
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-uses(TestCase::class);
->>>>>>> laraxot/dev
-=======
-
-uses(Modules\Xot\Tests\TestCase::class);
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_nVj8KD
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 use Modules\Xot\Actions\File\ViewPathAction;
-<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-=======
-use Nwidart\Modules\Facades\Module;
-use PHPUnit\Framework\Assert;
-
->>>>>>> 8d801bbe (Check & fix styling)
 test('fix path action works', function (): void {
     $action = app(FixPathAction::class);
     $path = 'some/path/with/mixed/slashes';
@@ -39,7 +20,6 @@ test('fix path action works', function (): void {
 });
 
 test('view path action works', function (): void {
-<<<<<<< HEAD
     // Replace GetViewNameSpacePathAction with a spy that returns test path
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction
     {
@@ -50,13 +30,6 @@ test('view path action works', function (): void {
     };
 
     app()->instance(GetViewNameSpacePathAction::class, $getViewNameSpacePathAction);
-=======
-    $mock = Mockery::mock(GetViewNameSpacePathAction::class);
-    /* @phpstan-ignore-next-line Mockery expectation chain not resolvable without extension */
-    $mock->shouldReceive('execute')->with('test_ns')->andReturn('/view/path');
-
-    app()->instance(GetViewNameSpacePathAction::class, $mock);
->>>>>>> 8d801bbe (Check & fix styling)
 
     $action = app(ViewPathAction::class);
     $result = $action->execute('test_ns::folder.view');
@@ -68,18 +41,12 @@ test('view path action works', function (): void {
 });
 
 test('asset path action works', function (): void {
-<<<<<<< HEAD
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
             return $module === 'test_module' ? '/module/path/' : '';
         },
     ]);
-=======
-    Module::shouldReceive('getModulePath')
-        ->with('test_module')
-        ->andReturn('/module/path/');
->>>>>>> 8d801bbe (Check & fix styling)
 
     $action = app(AssetPathAction::class);
     Assert::assertSame('/module/path/resources/css/style.css', $action->execute('test_module::css/style.css'));

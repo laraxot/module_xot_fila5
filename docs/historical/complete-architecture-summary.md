@@ -125,38 +125,10 @@ Filament Resource → XotBaseResource → FilamentResource
 ### Required Implementation
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_6n0s23
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Nwhvt7
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_PHami8
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_5WGOGt
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_6n0s23
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Nwhvt7
-=======
-=======
-abstract public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_PHami8
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_5WGOGt
 ```
 
 ### Page Generation

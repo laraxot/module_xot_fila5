@@ -22,28 +22,10 @@ class GetTransKeyByModelClassAction
         $model_name = class_basename($model_class);
         $model_name = Str::of($model_name)->snake()->toString();
 
-<<<<<<< .merge_file_UxlRsQ
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_fFQ2Kj
         $view=$module_low.'::'.$model_name.$suffix;
         //str_plural ?
         
         
-<<<<<<< .merge_file_UxlRsQ
-=======
-        $view = $module_low.'::'.$model_name.$suffix;
-        // str_plural ?
-
->>>>>>> laraxot/dev
-=======
-        $view = $module_low.'::'.$model_name.$suffix;
-        // str_plural ?
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_fFQ2Kj
         return $view;
     }
 }

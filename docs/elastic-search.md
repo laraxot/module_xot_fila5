@@ -1,19 +1,3 @@
-<<<<<<< .merge_file_bYSsy8
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_pw1c3T
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_PfS1ii
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_yy4SBs
 ---
 title: "Elastic search"
 type: reference
@@ -27,73 +11,18 @@ note: "Convertito da elastic_search.txt (documento) da convert-docs-txt-to-md.py
 
 <!-- Contenuto migrato da _docs/elastic_search.txt -->
 
-<<<<<<< .merge_file_bYSsy8
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pw1c3T
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_PfS1ii
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yy4SBs
 https://github.com/matchish/laravel-scout-elasticsearch
 
 https://www.algolia.com/blog/engineering/scout-extended-the-full-power-of-algolia-in-laravel
 
 https://github.com/babenkoivan/scout-elasticsearch-driver
 
-<<<<<<< .merge_file_bYSsy8
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_pw1c3T
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_PfS1ii
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yy4SBs
 https://github.com/Jeroen-G/Explorer
 Explorer is a next-gen Elasticsearch driver for Laravel Scout with
 the power of Elasticsearch’s queries.
 It provides a compatible Scout driver, as well as additional conveniences.
 For example, the Explored interface defines a mappableAs() method for getting configuration:
 
-<<<<<<< .merge_file_bYSsy8
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pw1c3T
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_PfS1ii
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yy4SBs
 
  tamayo/laravel-scout-elastic
 https://www.cloudways.com/blog/laravel-scout-elasticsearch/
@@ -107,33 +36,6 @@ https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php   
 
 
 
-<<<<<<< .merge_file_bYSsy8
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pw1c3T
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
- tamayo/laravel-scout-elastic
-https://www.cloudways.com/blog/laravel-scout-elasticsearch/
-
-https://odiaseo.github.io/scout-elasticsearch-driver/
-
-https://github.com/laravel/scout/blob/1.0/src/Engines/ElasticsearchEngine.php    !!!!!!!!!!!!!!!!!!!!!
-
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_PfS1ii
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yy4SBs
 https://github.com/ErickTamayo/laravel-scout-elastic
 https://gist.github.com/thomasjsn/48185612dc7abe857b9a0ae5716b86c3
 
@@ -141,28 +43,7 @@ https://github.com/babenkoivan/scout-elasticsearch-driver
 
 https://bestofphp.com/repo/babenkoivan-elastic-scout-driver
 
-<<<<<<< .merge_file_bYSsy8
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> .merge_file_yy4SBs
 
 
 
 meilisearch
-<<<<<<< .merge_file_bYSsy8
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
-
-
-meilisearch
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_yy4SBs

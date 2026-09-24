@@ -223,20 +223,4 @@ public function getLocalKeyName(): string
 
 **Data**: 2025-01-18
 **Autore**: AI Assistant
-<<<<<<< .merge_file_9xaznq
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Status**: ✅ Completato e verificato
-=======
-<<<<<<< HEAD
-**Status**: ✅ Completato e verificato
-=======
-**Status**: ✅ Completato e verificato
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Status**: ✅ Completato e verificato
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Status**: ✅ Completato e verificato
->>>>>>> .merge_file_LejUxV

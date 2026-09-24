@@ -17,23 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
-<<<<<<< .merge_file_M6WbiR
-<<<<<<< HEAD
-<<<<<<< .merge_file_nipalq
-   public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_vZwBxy
-   public function getFormSchema(): array
-=======
    public static function getFormSchema(): array
->>>>>>> .merge_file_ykwmgc
->>>>>>> .merge_file_lGAGRT
-=======
-   public function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_2opLzP
    {
        return [
            TextInput::make('nome')->required(),
@@ -435,23 +419,7 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< .merge_file_M6WbiR
-<<<<<<< HEAD
-<<<<<<< .merge_file_nipalq
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_vZwBxy
-    public function getFormSchema(): array
-=======
     public static function getFormSchema(): array
->>>>>>> .merge_file_ykwmgc
->>>>>>> .merge_file_lGAGRT
-=======
-    public function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_2opLzP
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider

@@ -42,21 +42,6 @@
 1. **[Meetup Module - Provider Errors Lessons Learned](../../Meetup/docs/provider-errors-lessons-learned.md)**
    - **Status**: ✅ Real-World Case Study
    - **Purpose**: Actual errors made and corrected in Meetup module (2025-12-16)
-<<<<<<< .merge_file_Gob0wx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-1. **[Meetup Module - Provider Errors Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)**
-   - **Status**: ✅ Real-World Case Study
-   - **Purpose**: Actual errors made and corrected in Meetup module ([DATE])
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_cWE3aw
    - **When to read**: To see real before/after examples
    - **Key Topics**:
      - 5 specific errors committed
@@ -211,19 +196,6 @@ class AdminPanelProvider extends XotBasePanelProvider
 2. **Day 2**: Study [User Module Providers](../../User/app/Providers/)
 3. **Day 3**: Read [Provider Common Mistakes](./provider-common-mistakes.md)
 4. **Day 4**: Study [Meetup Module - Lessons Learned](../../Meetup/docs/provider-errors-lessons-learned.md)
-<<<<<<< .merge_file_Gob0wx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-4. **Day 4**: Study [Meetup Module - Lessons Learned](../../meetup/docs/provider-errors-lessons-learned.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_cWE3aw
 5. **Day 5**: Create your first provider using templates
 
 ### For Code Review
@@ -267,22 +239,6 @@ When reviewing provider code:
 
 | Document | Last Updated | Status | Priority |
 |----------|-------------|--------|----------|
-<<<<<<< .merge_file_Gob0wx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-| serviceprovider-minimal-structure.md | [DATE] | ✅ Current | Critical |
-| provider-common-mistakes.md | [DATE] | ✅ Current | Critical |
-| xotbase-extension-rules.md | [DATE] | ✅ Current | High |
-| Meetup/provider-errors-lessons-learned.md | [DATE] | ✅ Current | High |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_cWE3aw
 | serviceprovider-minimal-structure.md | 2025-01-10 | ✅ Current | Critical |
 | provider-common-mistakes.md | 2025-12-16 | ✅ Current | Critical |
 | xotbase-extension-rules.md | 2025-08-27 | ✅ Current | High |
@@ -297,33 +253,7 @@ When reviewing provider code:
 ---
 
 **Last Updated**: 2025-12-16
-<<<<<<< .merge_file_Gob0wx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
 **Maintainer**: Laraxot Team
 **Status**: ✅ Active Index
 
 **Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-
-=======
->>>>>>> .merge_file_cWE3aw
-**Maintainer**: Laraxot Team
-**Status**: ✅ Active Index
-
-**Note**: Always consult this index before creating or modifying providers. Keep it updated when adding new provider documentation.
-<<<<<<< .merge_file_Gob0wx
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_cWE3aw

@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 8d801bbe (Check & fix styling)
 /*
  * Value Objects
  * The part of the model are Value Objects.

@@ -31,31 +31,19 @@ use Webmozart\Assert\Assert;
  * validazione campi solo nello schema — submit usa `$this->form->getState()` (mai `validateForm()`).
  * La *Form class è lo spartito (campi + regole + dehydrate). MAI duplicare TextInput nel widget.
  *
-<<<<<<< .merge_file_aT9TNx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_jw5QHD
  * @property Schema $form
  * @property array<string, mixed>|null $data
-=======
- * @property Schema               $form
- * @property array<string, mixed> $data
->>>>>>> 8d801bbe (Check & fix styling)
  */
 abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
 {
     use InteractsWithSchemas;
 
     /**
-<<<<<<< HEAD
      * @var array<string, mixed>|null
      */
     public ?array $data = [];
 
     /**
-=======
->>>>>>> 8d801bbe (Check & fix styling)
      * FQCN *Form (opzionale). Se presente, `form()` delega a `FormClass::{schemaMethod()}`.
      *
      * @return class-string|null
@@ -90,19 +78,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     {
         $formClass = static::formClass();
 
-<<<<<<< .merge_file_aT9TNx
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($formClass !== null) {
-=======
-        if (null !== $formClass) {
->>>>>>> laraxot/dev
-=======
-        if (null !== $formClass) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($formClass !== null) {
->>>>>>> .merge_file_jw5QHD
             $method = static::schemaMethod();
 
             if (! method_exists($formClass, $method)) {
@@ -119,25 +95,8 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     }
 
     /**
-<<<<<<< .merge_file_aT9TNx
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param  class-string  $formClass  Es. UserForm::class
      * @param  string  $method  Es. getRegisterFormSchema
-=======
-     * @param class-string $formClass Es. UserForm::class
-     * @param string       $method    Es. getRegisterFormSchema
-     *
->>>>>>> laraxot/dev
-=======
-     * @param class-string $formClass Es. UserForm::class
-     * @param string       $method    Es. getRegisterFormSchema
-     *
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-     * @param  class-string  $formClass  Es. UserForm::class
-     * @param  string  $method  Es. getRegisterFormSchema
->>>>>>> .merge_file_jw5QHD
      * @return array<int|string, Component>
      */
     protected static function resourceFormSchema(string $formClass, string $method): array
@@ -158,19 +117,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
     public function getFormFill(): array
     {
         $model = $this->getFormModel();
-<<<<<<< .merge_file_aT9TNx
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($model === null) {
-=======
-        if (null === $model) {
->>>>>>> laraxot/dev
-=======
-        if (null === $model) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($model === null) {
->>>>>>> .merge_file_jw5QHD
             return [];
         }
         if (\is_string($model)) {
@@ -209,23 +156,7 @@ abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
         $this->form->fill([]);
     }
 
-<<<<<<< .merge_file_aT9TNx
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function save(): void {}
-=======
-    public function save(): void
-    {
-    }
->>>>>>> laraxot/dev
-=======
-    public function save(): void
-    {
-    }
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-    public function save(): void {}
->>>>>>> .merge_file_jw5QHD
 
     protected function getFormModel(): Model|string|null
     {

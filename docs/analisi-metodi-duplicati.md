@@ -4,20 +4,6 @@
 
 📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../docs/analisi-metodi-duplicati-MASTER.md](../../../docs/analisi-metodi-duplicati-MASTER.md)
 📖 **Documento Originale:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
-<<<<<<< .merge_file_LdA4dx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-📚 **DOCUMENTO MASTER (LEGGERE PRIMA!):** [../../../../docs/analisi-metodi-duplicati-MASTER.md](../../../../docs/analisi-metodi-duplicati-master.md)
-📖 **Documento Originale:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_GMEpV3
 
 > ⚠️ **IMPORTANTE:** Questo documento è specifico per il modulo Xot. Per l'analisi completa con dati reali, ROI, implementazioni concrete e migration guide, consultare il DOCUMENTO MASTER.
 
@@ -264,30 +250,10 @@ class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
-<<<<<<< .merge_file_LdA4dx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_GMEpV3
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_LdA4dx
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_GMEpV3
     {
         return [
             'name' => Forms\Components\TextInput::make('name'),
@@ -355,23 +321,7 @@ Se l'unificazione viene implementata correttamente:
 
 ## Link Utili
 
-<<<<<<< .merge_file_LdA4dx
-<<<<<<< HEAD
-<<<<<<< HEAD
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-=======
-<<<<<<< HEAD
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
-=======
-- 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
->>>>>>> .merge_file_GMEpV3
 - 📖 [Regole Service Provider](./service-provider.md)
 - 📖 [Regole BaseModel](./model-inheritance-rules.md)
 - 📖 [Regole Resources Filament](./filament-4-laraxot-rules.md)
@@ -381,37 +331,8 @@ Se l'unificazione viene implementata correttamente:
 | Data | Versione | Modifiche |
 |------|----------|-----------|
 | 2025-10-15 | 1.0 | Creazione documento iniziale |
-<<<<<<< .merge_file_LdA4dx
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-| [DATE] | 1.0 | Creazione documento iniziale |
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_GMEpV3
 
 ---
 
 **Stato:** 📋 Draft per Review
-<<<<<<< .merge_file_LdA4dx
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Responsabile:** Team Xot Core
-=======
-<<<<<<< HEAD
-**Responsabile:** Team Xot Core
-=======
-**Responsabile:** Team Xot Core
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Responsabile:** Team Xot Core
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Responsabile:** Team Xot Core
->>>>>>> .merge_file_GMEpV3

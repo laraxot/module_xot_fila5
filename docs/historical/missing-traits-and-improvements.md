@@ -613,27 +613,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-<<<<<<< .merge_file_Ux7hoP
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_Ra3gjm
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_lmzzfd
->>>>>>> laraxot/dev
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_r8zvFS
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1257,27 +1237,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
-<<<<<<< .merge_file_Ux7hoP
-<<<<<<< HEAD
-<<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_Ra3gjm
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-- [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_lmzzfd
->>>>>>> laraxot/dev
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-- [Architettura Moduli](architecture.md)
->>>>>>> .merge_file_r8zvFS
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

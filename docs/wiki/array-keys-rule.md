@@ -80,30 +80,10 @@ public static function getTableColumns(): array
 ### Form
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_b31Ar7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ex5unR
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b31Ar7
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ex5unR
 {
     return [
         'title' => TextInput::make('title')->required()->maxLength(255),
@@ -116,30 +96,10 @@ public static function getFormSchema(): array
 ### Infolist
 ```php
 <<<<<<< HEAD
-<<<<<<< .merge_file_b31Ar7
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ex5unR
 public function getInfolistSchema(): array
 =======
 public function getInfolistSchema(): array
 >>>>>>> laraxot/dev
-<<<<<<< .merge_file_b31Ar7
-<<<<<<< HEAD
-=======
-=======
-public static function getInfolistSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-public static function getInfolistSchema(): array
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_ex5unR
 {
     return [
         'title' => TextEntry::make('title'),
@@ -155,20 +115,4 @@ public static function getInfolistSchema(): array
 
 ---
 **Creato**: 2026-05-07
-<<<<<<< .merge_file_b31Ar7
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Modulo**: Xot
-=======
-<<<<<<< HEAD
-**Modulo**: Xot
-=======
-**Modulo**: Xot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Modulo**: Xot
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Modulo**: Xot
->>>>>>> .merge_file_ex5unR

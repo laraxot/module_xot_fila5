@@ -19,20 +19,4 @@ use Illuminate\Support\Carbon;
  *
  * @mixin \Eloquent
  */
-<<<<<<< .merge_file_z7JXCl
-<<<<<<< HEAD
-<<<<<<< HEAD
 interface UpdaterContract {}
-=======
-interface UpdaterContract
-{
-}
->>>>>>> laraxot/dev
-=======
-interface UpdaterContract
-{
-}
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-interface UpdaterContract {}
->>>>>>> .merge_file_IQmq6I

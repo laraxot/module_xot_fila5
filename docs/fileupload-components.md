@@ -344,33 +344,7 @@ class CleanupTemporaryFilesJob extends Job
 
 - [Filament FileUpload Documentation](https://filamentphp.com/docs/3.x/forms/fields/file-upload)
 - [Laravel File Storage](https://laravel.com/docs/10.x/filesystem)
-<<<<<<< .merge_file_GM1leY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zc7XTD
 - [docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Modules/User/docs/registration-widget.md](../../User/docs/registration-widget.md)
 
 *Ultimo aggiornamento: 2025-01-03*
-<<<<<<< .merge_file_GM1leY
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-- [Modules/User/docs/registration-widget.md](../../User/docs/registration-widget.md)
-
-*Ultimo aggiornamento: 2025-01-03*
-- [docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
-- [Modules/User/docs/registration-widget.md](../../user/docs/registration-widget.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_zc7XTD

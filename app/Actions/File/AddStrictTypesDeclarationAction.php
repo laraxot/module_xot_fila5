@@ -32,19 +32,7 @@ class AddStrictTypesDeclarationAction
 
         // Trova la posizione del tag di apertura PHP
         $phpTagPos = strpos($content, '<?php');
-<<<<<<< .merge_file_2qvi8X
-<<<<<<< HEAD
-<<<<<<< HEAD
         if ($phpTagPos === false) {
-=======
-        if (false === $phpTagPos) {
->>>>>>> laraxot/dev
-=======
-        if (false === $phpTagPos) {
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        if ($phpTagPos === false) {
->>>>>>> .merge_file_1vvAdx
             throw new \RuntimeException("Il file {$filePath} non ha un tag di apertura PHP valido");
         }
 
@@ -52,31 +40,11 @@ class AddStrictTypesDeclarationAction
         $lines = explode("\n", $content);
         $firstNonEmptyLine = 0;
         foreach ($lines as $i => $line) {
-<<<<<<< .merge_file_2qvi8X
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_1vvAdx
             if ($i === 0) {
                 continue; // Salta la prima riga che contiene <?php
             }
             $trimmedLine = trim($line);
             if ($trimmedLine !== '') {
-<<<<<<< .merge_file_2qvi8X
-=======
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-            if (0 === $i) {
-                continue; // Salta la prima riga che contiene <?php
-            }
-            $trimmedLine = trim($line);
-            if ('' !== $trimmedLine) {
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_1vvAdx
                 $firstNonEmptyLine = $i;
                 break;
             }

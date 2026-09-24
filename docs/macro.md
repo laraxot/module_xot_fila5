@@ -1,29 +1,3 @@
-<<<<<<< .merge_file_rh7Cty
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_OsuWnA
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-# _macro
-
-<!-- Contenuto migrato da _docs/_macro.txt -->
-
-<<<<<<< HEAD
-https://www.larashout.com/laravel-macros-extending-laravels-core-classes
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_iP95kB
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_0ymhKH
 ---
 title: 'Macro — risorse esterne'
 module: Xot
@@ -44,25 +18,3 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://www.larashout.com/laravel-macros-extending-laravels-core-classes>
-<<<<<<< .merge_file_rh7Cty
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_OsuWnA
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-# _macro
-
-<!-- Contenuto migrato da _docs/_macro.txt -->
-
-https://www.larashout.com/laravel-macros-extending-laravels-core-classes
->>>>>>> .merge_file_iP95kB
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-https://www.larashout.com/laravel-macros-extending-laravels-core-classes
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_0ymhKH

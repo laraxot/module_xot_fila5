@@ -10,17 +10,6 @@ use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ViewAction;
-<<<<<<< .merge_file_jGgOaq
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
-=======
-use Filament\Tables\Columns\TextColumn;
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_JDcb34
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -32,55 +21,7 @@ class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
 
-<<<<<<< HEAD
     #[\Override]
-<<<<<<< .merge_file_jGgOaq
-<<<<<<< HEAD
-=======
-=======
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
-    #[\Override]
->>>>>>> 8d801bbe (Check & fix styling)
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->sortable()->label('ID'),
-            'message' => TextColumn::make('message')
-                ->searchable()
-                ->wrap()
-                ->label('Message'),
-            'level' => TextColumn::make('level')
-                ->searchable()
-                ->sortable()
-                ->label('Level'),
-            'level_name' => TextColumn::make('level_name')
-                ->searchable()
-                ->sortable()
-                ->label('Level Name'),
-            'context' => TextColumn::make('context')
-                ->searchable()
-                ->wrap()
-                ->label('Context'),
-            'created_at' => TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->label('Created At'),
-        ];
-    }
-
-<<<<<<< HEAD
-    #[\Override]
->>>>>>> laraxot/dev
-=======
-    /**
-     * @return array<string, \Filament\Tables\Filters\BaseFilter>
-     */
-    #[\Override]
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_JDcb34
     public function getTableFilters(): array
     {
         return [

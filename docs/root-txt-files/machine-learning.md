@@ -1,36 +1,4 @@
 ---
-<<<<<<< .merge_file_ATwKAO
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-title: 'Machine learning'
-module: Xot
-type: reference
-slug: machine-learning
-description: 'http://php-nlp-tools.com/blog/category/greek-pos-tagger/'
-tags: [migrato-da-txt, xot]
-converted_from: machine_learning.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
--------------------------------------
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_eVHBxD
 title: "Machine learning"
 type: reference
 status: active
@@ -45,19 +13,6 @@ note: "Convertito da machine_learning.txt (documento) da convert-docs-txt-to-md.
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
 ----------------------------------------
-<<<<<<< .merge_file_ATwKAO
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> 8d801bbe (Check & fix styling)
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_eVHBxD
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
 
@@ -98,26 +53,6 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
-<<<<<<< .merge_file_ATwKAO
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> laraxot/dev
->>>>>>> 8d801bbe (Check & fix styling)
-=======
->>>>>>> .merge_file_eVHBxD
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP

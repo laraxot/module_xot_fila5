@@ -146,26 +146,5 @@ Prima di ogni commit, verificare:
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
-<<<<<<< .merge_file_vUasTq
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA
-=======
-<<<<<<< HEAD
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
-=======
-**Ultimo aggiornamento**: [DATE]
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-**Versione**: 1.0.0
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> .merge_file_AmR4Ca

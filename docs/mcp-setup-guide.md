@@ -16,23 +16,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
       "args": [
         "-y",
         "@modelcontextprotocol/server-mysql",
-<<<<<<< .merge_file_rKgOF2
-<<<<<<< HEAD
-<<<<<<< HEAD
         "marco:marco@localhost:3306/quaeris_survey"
-=======
-<<<<<<< HEAD
-        "marco:marco@localhost:3306/quaeris_survey"
-=======
-        "marco:marco@localhost:3306/healthcare_app_survey"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-        "marco:marco@localhost:3306/quaeris_survey"
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        "marco:marco@localhost:3306/quaeris_survey"
->>>>>>> .merge_file_pHt9No
       ]
     },
     "fetch": {
@@ -54,23 +38,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-<<<<<<< .merge_file_rKgOF2
-<<<<<<< HEAD
-<<<<<<< HEAD
         "/var/www/_bases/base_quaeris_fila4_mono/laravel"
-=======
-<<<<<<< HEAD
-        "/var/www/_bases/base_quaeris_fila4_mono/laravel"
-=======
-        "/var/www/_bases/base_healthcare_app_fila5_mono/laravel"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-        "/var/www/_bases/base_quaeris_fila4_mono/laravel"
->>>>>>> 8d801bbe (Check & fix styling)
-=======
-        "/var/www/_bases/base_quaeris_fila4_mono/laravel"
->>>>>>> .merge_file_pHt9No
       ]
     },
     "git": {
