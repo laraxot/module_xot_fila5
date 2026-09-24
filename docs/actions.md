@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_bWGWoB
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -92,4 +97,13 @@ execute(array $array1, array $array2): array
 =======
 
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_bxbBZs
 >>>>>>> laraxot/dev

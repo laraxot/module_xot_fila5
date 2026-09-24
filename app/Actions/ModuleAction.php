@@ -28,7 +28,23 @@ class ModuleAction
     public static function getInstance(): self
     {
         if (! self::$_instance instanceof self) {
+<<<<<<< HEAD
             self::$_instance = new self;
+=======
+<<<<<<< .merge_file_6TJIo6
+<<<<<<< HEAD
+            self::$_instance = new self();
+=======
+<<<<<<< HEAD
+            self::$_instance = new self();
+=======
+            self::$_instance = new self;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+            self::$_instance = new self();
+>>>>>>> .merge_file_cPuAL8
+>>>>>>> laraxot/dev
         }
 
         return self::$_instance;
@@ -66,7 +82,23 @@ class ModuleAction
             $filename = $file->getRelativePathname();
             $ext = '.php';
             if (Str::endsWith($filename, $ext)) {
+<<<<<<< HEAD
                 $tmp = new \stdClass;
+=======
+<<<<<<< .merge_file_6TJIo6
+<<<<<<< HEAD
+                $tmp = new \stdClass();
+=======
+<<<<<<< HEAD
+                $tmp = new \stdClass();
+=======
+                $tmp = new \stdClass;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+                $tmp = new \stdClass();
+>>>>>>> .merge_file_cPuAL8
+>>>>>>> laraxot/dev
 
                 $name = mb_substr($filename, 0, -mb_strlen($ext));
 
@@ -92,5 +124,15 @@ class ModuleAction
         return $data;
     }
 
+<<<<<<< HEAD
     public function execute(): void {}
+=======
+<<<<<<< .merge_file_6TJIo6
+    public function execute(): void {}
+=======
+    public function execute(): void
+    {
+    }
+>>>>>>> .merge_file_cPuAL8
+>>>>>>> laraxot/dev
 }

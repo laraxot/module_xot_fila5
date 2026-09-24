@@ -1,9 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
 
 
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
+>>>>>>> laraxot/dev
 ---
 title: "Custom errors"
 type: reference
@@ -19,6 +31,20 @@ note: "Convertito da custom_errors.txt (documento) da convert-docs-txt-to-md.py.
 
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+https://tutsforweb.com/how-to-create-custom-404-page-laravel/
+
+
+
+>>>>>>> .merge_file_ZZJKsV
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 public function render($request, Exception $exception)
 {
@@ -28,16 +54,38 @@ public function render($request, Exception $exception)
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
+>>>>>>> laraxot/dev
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 
     return parent::render($request, $exception);
 }
 
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
 >>>>>>> laraxot/dev
 public function render($request, Exception $exception)
 {
@@ -46,25 +94,59 @@ public function render($request, Exception $exception)
             return response()->view('errors.' . '404', [], 404);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
          
 =======
 
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+         
+=======
+>>>>>>> .merge_file_ZZJKsV
+=======
+         
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
         if ($exception->getStatusCode() == 500) {
             return response()->view('errors.' . '500', [], 500);
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
+>>>>>>> laraxot/dev
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_DAzZsy
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 
     return parent::render($request, $exception);
 }
 
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ZZJKsV
 >>>>>>> laraxot/dev
 public function render($request, Exception $exception)
 {
@@ -73,7 +155,17 @@ public function render($request, Exception $exception)
     }
     return parent::render($request, $exception);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 }
 =======
 }
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+}
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

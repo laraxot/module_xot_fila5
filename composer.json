@@ -58,7 +58,11 @@
         "tightenco/parental": "*"
     },
     "require_comment": {
+<<<<<<< HEAD
        
+=======
+        "filament/spatie-laravel-translatable-plugin": "*"
+>>>>>>> laraxot/dev
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.2",
@@ -151,4 +155,8 @@
     "require-dev_comment": {
         "spatie/laravel-error-solutions": "*"
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev

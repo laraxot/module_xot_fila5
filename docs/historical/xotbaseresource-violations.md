@@ -129,9 +129,25 @@ class {ModelName}Resource extends XotBaseResource
 
     // UNICO metodo necessario nella Resource principale
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_nZas4z
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_E2QbTE
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_nZas4z
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_E2QbTE
 >>>>>>> laraxot/dev
     {
         return [

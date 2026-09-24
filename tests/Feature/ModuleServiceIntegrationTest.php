@@ -5,10 +5,18 @@ use Illuminate\Support\Str;
 use Modules\Xot\Actions\Model\GetAllModelsByModuleNameAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\class_uses;
 
+=======
+
+use function Safe\class_uses;
+
+use Spatie\QueueableAction\QueueableAction;
+
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 describe('GetAllModelsByModuleNameAction Integration', function () {

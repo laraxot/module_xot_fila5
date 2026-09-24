@@ -14,7 +14,12 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
+=======
+     * @param array<int|string, mixed> $data
+     *
+>>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
     public static function fixType(array $data): array
@@ -37,8 +42,14 @@ class DiffAssocRecursiveAction
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<int|string, mixed>  $arr_1
      * @param  array<int|string, mixed>  $arr_2
+=======
+     * @param array<int|string, mixed> $arr_1
+     * @param array<int|string, mixed> $arr_2
+     *
+>>>>>>> laraxot/dev
      * @return array<int|string, array<int|string, mixed>>
      */
     public function execute(array $arr_1, array $arr_2): array

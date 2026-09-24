@@ -12,8 +12,12 @@ if (! function_exists('safeEloquentCastFixture')) {
     function safeEloquentCastFixture(): array
     {
         $action = app(SafeEloquentCastAction::class);
+<<<<<<< HEAD
         $model = new class extends Model
         {
+=======
+        $model = new class extends Model {
+>>>>>>> laraxot/dev
             protected $table = 'safe_eloquent_cast_test';
 
             protected $fillable = ['name', 'age', 'score', 'active', 'meta', 'empty', 'nickname'];
@@ -40,6 +44,7 @@ if (! function_exists('xotBaseTransitionFixture')) {
      */
     function xotBaseTransitionFixture(): array
     {
+<<<<<<< HEAD
         $record = new class extends Model
         {
             protected $table = 'xot_transition_test';
@@ -47,6 +52,13 @@ if (! function_exists('xotBaseTransitionFixture')) {
 
         $transition = new class($record) extends XotBaseTransition
         {
+=======
+        $record = new class extends Model {
+            protected $table = 'xot_transition_test';
+        };
+
+        $transition = new class($record) extends XotBaseTransition {
+>>>>>>> laraxot/dev
             public static string $name = 'test_transition';
         };
 

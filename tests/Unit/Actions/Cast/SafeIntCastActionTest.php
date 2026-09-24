@@ -30,8 +30,12 @@ it('casts various values to integer correctly', function (): void {
     Assert::assertSame(15, $action->execute(['15']));
     Assert::assertSame(2, $action->execute(['a', 'b'], 2));
     // Objects with toString
+<<<<<<< HEAD
     $obj = new class
     {
+=======
+    $obj = new class {
+>>>>>>> laraxot/dev
         public function __toString()
         {
             return '20';

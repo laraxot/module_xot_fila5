@@ -27,7 +27,28 @@ class PathHelper
     /**
      * Ottiene il percorso completo di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso completo del modulo
      */
     public static function modulePath(string $moduleName): string
@@ -38,7 +59,32 @@ class PathHelper
     /**
      * Ottiene il percorso dei modelli di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_cLnhY6
+     *
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso dei modelli
      */
     public static function modelsPath(string $moduleName): string
@@ -49,7 +95,28 @@ class PathHelper
     /**
      * Ottiene il percorso delle migrazioni di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso delle migrazioni
      */
     public static function migrationsPath(string $moduleName): string
@@ -60,7 +127,32 @@ class PathHelper
     /**
      * Ottiene il percorso dei seeder di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_cLnhY6
+     *
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso dei seeder
      */
     public static function seedersPath(string $moduleName): string
@@ -71,7 +163,28 @@ class PathHelper
     /**
      * Ottiene il percorso dei controller di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso dei controller
      */
     public static function controllersPath(string $moduleName): string
@@ -82,7 +195,32 @@ class PathHelper
     /**
      * Ottiene il percorso delle risorse Filament di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> laraxot/dev
+     *
+     * >>>>>>> .merge_file_cLnhY6
+     *
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso delle risorse Filament
      */
     public static function filamentResourcesPath(string $moduleName): string
@@ -93,7 +231,26 @@ class PathHelper
     /**
      * Ottiene il percorso dei provider di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso dei provider
      */
     public static function providersPath(string $moduleName): string
@@ -104,7 +261,30 @@ class PathHelper
     /**
      * Ottiene il percorso delle viste di un modulo.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> .merge_file_cLnhY6
+     *
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso delle viste
      */
     public static function viewsPath(string $moduleName): string
@@ -115,7 +295,26 @@ class PathHelper
     /**
      * Verifica se un percorso è corretto secondo le convenzioni del progetto.
      *
+<<<<<<< HEAD
      * @param  string  $path  Percorso da verificare
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $path Percorso da verificare
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * =======
+     * @param string $path Percorso da verificare
+     *                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return bool True se il percorso è corretto, false altrimenti
      */
     public static function isValidPath(string $path): bool
@@ -131,7 +330,30 @@ class PathHelper
     /**
      * Corregge un percorso errato secondo le convenzioni del progetto.
      *
+<<<<<<< HEAD
      * @param  string  $path  Percorso da correggere
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $path Percorso da correggere
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * >>>>>>> .merge_file_cLnhY6
+     *
+     * >>>>>>> .merge_file_Wir3Xz
+     *
+     * =======
+     * @param string $path Percorso da correggere
+     *                     >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return string Percorso corretto
      */
     public static function correctPath(string $path): string
@@ -166,7 +388,26 @@ class PathHelper
     /**
      * Verifica se un modulo esiste.
      *
+<<<<<<< HEAD
      * @param  string  $moduleName  Nome del modulo
+=======
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * <<<<<<< HEAD
+     * <<<<<<< .merge_file_ZovUz4
+     * >>>>>>> .merge_file_SZewhF
+     *
+     * @param string $moduleName Nome del modulo
+     *
+     * <<<<<<< .merge_file_C0p0qa
+     * =======
+     * =======
+     * @param string $moduleName Nome del modulo
+     *                           >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *
+     * >>>>>>> .merge_file_SZewhF
+     *
+>>>>>>> laraxot/dev
      * @return bool True se il modulo esiste, false altrimenti
      */
     public static function moduleExists(string $moduleName): bool

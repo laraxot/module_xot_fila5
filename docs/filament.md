@@ -35,9 +35,19 @@ use Filament\Forms\Components\DatePicker;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -121,9 +131,19 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -480,4 +500,12 @@ class ExampleResource extends XotBaseResource
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
+<<<<<<< HEAD
 *Categoria: Filament*
+=======
+<<<<<<< HEAD
+*Categoria: Filament*
+=======
+*Categoria: Filament*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

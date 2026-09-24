@@ -289,9 +289,25 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_yvlwZM
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_NLSaSx
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_yvlwZM
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_NLSaSx
 >>>>>>> laraxot/dev
     {
         return [

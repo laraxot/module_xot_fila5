@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Actions\String\GetStrBetweenStartsWithAction;
 use Modules\Xot\Actions\String\NormalizeDriverNameAction;

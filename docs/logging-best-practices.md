@@ -1,4 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9esu89
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FObzOu
+>>>>>>> laraxot/dev
 # Logging Best Practices - Critical Performance Guidelines
 
 ## Overview
@@ -251,6 +261,11 @@ try {
     Log::error('Service failure', [
         'service' => get_class($service),
         'error' => $e->getMessage(),
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9esu89
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 # Logging Best Practices - 2026-03-02
 
@@ -492,12 +507,29 @@ try {
         'trace' => $e->getTraceAsString(),
         'request_id' => $requestId,
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FObzOu
+>>>>>>> laraxot/dev
     ]);
     throw $e;
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_9esu89
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_FObzOu
+>>>>>>> laraxot/dev
 ### Step 4: Implement Audit Trail
 ```php
 // Create audit records for important events
@@ -565,6 +597,7 @@ Following these guidelines will:
 5. **Make debugging easier**
 6. **Scale better** under load
 
+<<<<<<< HEAD
 **Remember**: If everything is working correctly, there should be NO log output.
 =======
 ### 4. Performance Logging
@@ -783,4 +816,13 @@ Excessive logging is a performance killer that provides little value. By followi
 **Status**: Ready for Implementation
 **Priority**: HIGH
 **Estimated Impact**: 10-15% performance improvement
+=======
+<<<<<<< HEAD
+**Remember**: If everything is working correctly, there should be NO log output.
+<<<<<<< HEAD
+=======
+**Remember**: If everything is working correctly, there should be NO log output.
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

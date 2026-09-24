@@ -56,13 +56,37 @@ function storyNumberCollisions(): array
 
             $matches = [];
 
+<<<<<<< HEAD
             if (preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches) !== 1) {
+=======
+<<<<<<< .merge_file_0M4fun
+<<<<<<< HEAD
+            if (preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches) !== 1) {
+=======
+            if (1 !== preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches)) {
+>>>>>>> laraxot/dev
+=======
+            if (1 !== preg_match('/^(\d+\.\d+)\./', $fileInfo->getFilename(), $matches)) {
+>>>>>>> .merge_file_BmdfwH
+>>>>>>> laraxot/dev
                 continue; // le story senza numero sono legittime: si indirizzano per nome
             }
 
             $number = (string) ($matches[1] ?? '');
 
+<<<<<<< HEAD
             if ($number === '') {
+=======
+<<<<<<< .merge_file_0M4fun
+<<<<<<< HEAD
+            if ($number === '') {
+=======
+            if ('' === $number) {
+>>>>>>> laraxot/dev
+=======
+            if ('' === $number) {
+>>>>>>> .merge_file_BmdfwH
+>>>>>>> laraxot/dev
                 continue;
             }
 

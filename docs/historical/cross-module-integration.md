@@ -42,9 +42,25 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_bB3oCr
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_8ooCOz
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_bB3oCr
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8ooCOz
 >>>>>>> laraxot/dev
     {
         return [
@@ -123,9 +139,25 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_bB3oCr
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_8ooCOz
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_bB3oCr
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8ooCOz
 >>>>>>> laraxot/dev
     {
         return [

@@ -1,5 +1,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 name: phpstan-fixes-2025-01-06
 description: " Errori Risolti"
@@ -7,9 +14,18 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # Correzioni PHPStan - 6 Gennaio 2025
 

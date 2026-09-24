@@ -48,6 +48,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use App\Models\BaseModel;
 use Filament\Resources\XotBaseResource;
 #### Migrazioni
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 ```bash
 # ✅ additivo, mai distruttivo (dati sacri)
@@ -61,6 +65,20 @@ cd laravel && php artisan migrate
 
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md).
 
+<<<<<<< HEAD
+=======
+=======
+```bash
+
+# Ripristinare le migrazioni
+php artisan migrate:fresh
+
+# Eseguire i seed
+php artisan db:seed
+```
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Soluzione 3: Verificare Installazione Modulo**
 ```bash
 # Verificare che il modulo sia presente
@@ -437,6 +455,10 @@ SQLSTATE[23000]: Integrity constraint violation
 
 #### **Soluzioni**
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 **Mai `RefreshDatabase` (dati sacri)** — usare `DatabaseTransactions` / TestCase modulo + `.env.testing`:
 
 ```php
@@ -445,16 +467,44 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class MioModelloTest extends XotBaseTestCase
 {
     use DatabaseTransactions;
+<<<<<<< HEAD
+=======
+=======
+**Utilizzare RefreshDatabase**
+```php
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+class MioModelloTest extends XotBaseTestCase
+{
+    use RefreshDatabase;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+        // Setup database per i test
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 }
 ```
 
+<<<<<<< HEAD
 Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
 
+=======
+<<<<<<< HEAD
+Canon: [data-sacred-no-destructive-db.md](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md) · [testing-setup.md](./testing/testing-setup.md).
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Verificare Migrazioni**
 ```bash
 # Eseguire migrazioni per i test
@@ -674,10 +724,25 @@ dd(DB::getQueryLog());
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [**Best Practices**](best-practices.md) - Best practices per evitare problemi
 - [**Architettura**](architecture.md) - Architettura del modulo Xot
 - [**Documentazione Laravel**](https://laravel.com/docs) - Troubleshooting generale
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

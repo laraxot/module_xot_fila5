@@ -159,7 +159,15 @@ php artisan api:generate
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Convenzioni di Codice](README.md)
+=======
+<<<<<<< HEAD
+- [Convenzioni di Codice](README.md)
+=======
+- [Convenzioni di Codice](../conventions/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Architettura](../architecture/readme.md)
 - [Best Practices](../best-practices/readme.md)
 - [Markdown Guide](https://www.markdownguide.org)

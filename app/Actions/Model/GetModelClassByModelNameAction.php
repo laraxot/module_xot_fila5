@@ -1,9 +1,12 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
+=======
+>>>>>>> laraxot/dev
 
 namespace Modules\Xot\Actions\Model;
 
@@ -21,7 +24,11 @@ class GetModelClassByModelNameAction
     {
         Assert::isArray($morph_map = config('morph_map'));
         $modelClass = collect($morph_map)->get($modelName);
+<<<<<<< HEAD
         if ($modelClass === null) {
+=======
+        if (null === $modelClass) {
+>>>>>>> laraxot/dev
             return app(GetFirstModelClassByModelNameAction::class)->execute($modelName);
         }
         Assert::string($modelClass, __FILE__.':'.__LINE__.' - '.class_basename(self::class));

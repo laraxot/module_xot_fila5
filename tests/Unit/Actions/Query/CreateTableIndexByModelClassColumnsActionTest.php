@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -20,8 +25,12 @@ it('creates table index correctly', function (): void {
         $table->string('test_col');
     });
 
+<<<<<<< HEAD
     $modelClass = new class extends XotBaseModel
     {
+=======
+    $modelClass = new class extends XotBaseModel {
+>>>>>>> laraxot/dev
         protected $table = 'test_index_table';
     };
     $modelClassName = get_class($modelClass);
@@ -42,8 +51,12 @@ it('throws exception for invalid model class', function (): void {
 });
 
 it('throws exception for missing table', function (): void {
+<<<<<<< HEAD
     $modelClass = new class extends XotBaseModel
     {
+=======
+    $modelClass = new class extends XotBaseModel {
+>>>>>>> laraxot/dev
         protected $table = 'missing_table';
     };
     $modelClassName = get_class($modelClass);

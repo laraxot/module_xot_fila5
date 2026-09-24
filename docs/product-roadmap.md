@@ -1,4 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_R5Ava5
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_AyYXGH
+>>>>>>> laraxot/dev
 # Xot - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -39,16 +49,41 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Xot**, che nel proge
 - focus: qualita', osservabilita', performance e governance
 - target completamento: 95%+
 
+<<<<<<< HEAD
 ### M4 - Eccellenza Web 2026
 - focus: Immersività, Accessibilità WCAG 2.2, Kinetisches Design e Micro-interazioni.
 - target completamento: 100% (Best-in-Class)
 - Riferimento: `docs/project/WEBSITE_QUALITY_CHECKLIST_2026.md`
 
+=======
+<<<<<<< HEAD
+### M4 - Eccellenza Web 2026
+- focus: Immersività, Accessibilità WCAG 2.2, Kinetisches Design e Micro-interazioni.
+- target completamento: 100% (Best-in-Class)
+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+### M4 - Eccellenza Web 2026
+- focus: Immersività, Accessibilità WCAG 2.2, Kinetisches Design e Micro-interazioni.
+- target completamento: 100% (Best-in-Class)
+<<<<<<< HEAD
+- Riferimento: `docs/project/WEBSITE_QUALITY_CHECKLIST_2026.md`
+=======
+>>>>>>> laraxot/dev
+
+>>>>>>> a01602c7 (.)
+=======
+>>>>>>> 64619e34 (.)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## Dipendenze
 
 - [PRD](prd.md)
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
+<<<<<<< HEAD
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
 =======
 # Xot Module - Product Roadmap
@@ -154,4 +189,15 @@ To provide a **flexible extension framework** that enables rapid development, cu
 ---
 
 *Last Updated: March 12, 2026*
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_R5Ava5
+- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+=======
+>>>>>>> .merge_file_AyYXGH
+=======
+- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

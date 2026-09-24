@@ -18,10 +18,18 @@ use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\copy;
 
+=======
+
+use function Safe\copy;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Class XotBaseMigration.
  */
@@ -46,7 +54,11 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     public function getModelClass(): string
     {
+<<<<<<< HEAD
         if ($this->model_class !== null) {
+=======
+        if (null !== $this->model_class) {
+>>>>>>> laraxot/dev
             return $this->model_class;
         }
 
@@ -67,7 +79,11 @@ abstract class XotBaseMigration extends LaravelMigration
         $mod_path = Module::getPath();
 
         // Controllo che $filename sia valido prima di passarlo a Str::of()
+<<<<<<< HEAD
         $mod_name = $filename !== false ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
+=======
+        $mod_name = false !== $filename ? Str::of($filename)->after($mod_path)->explode(\DIRECTORY_SEPARATOR)[1] : ''; // Fallback nel caso in cui $filename non sia valido.
+>>>>>>> laraxot/dev
 
         $modelClass = Str::of('\Modules\\'.$mod_name.'\Models\\'.$name)
             ->replace('/', \DIRECTORY_SEPARATOR)
@@ -106,13 +122,21 @@ abstract class XotBaseMigration extends LaravelMigration
     private function resolveConnectionName(): string
     {
         $connectionName = $this->model->getConnectionName();
+<<<<<<< HEAD
         if ($connectionName === 'user' && ! DB::connection($connectionName)->getDatabaseName()) {
+=======
+        if ('user' === $connectionName && ! DB::connection($connectionName)->getDatabaseName()) {
+>>>>>>> laraxot/dev
             $default = config('database.default');
 
             return is_string($default) ? $default : 'mariadb';
         }
 
+<<<<<<< HEAD
         if ($connectionName === null) {
+=======
+        if (null === $connectionName) {
+>>>>>>> laraxot/dev
             $default = config('database.default');
 
             return is_string($default) ? $default : 'mariadb';
@@ -143,10 +167,16 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Get the table indexes using Doctrine's schema manager.
      *
+<<<<<<< HEAD
      *
      * @return array<Index>
      *
      * @throws \Doctrine\DBAL\Exception
+=======
+     * @throws \Doctrine\DBAL\Exception
+     *
+     * @return array<Index>
+>>>>>>> laraxot/dev
      */
     // public function getTableIndexes(): array
     // {
@@ -156,7 +186,11 @@ abstract class XotBaseMigration extends LaravelMigration
     /**
      * Add common fields to the table.
      *
+<<<<<<< HEAD
      * @param  Blueprint  $table  The table blueprint
+=======
+     * @param Blueprint $table The table blueprint
+>>>>>>> laraxot/dev
      */
     public function addCommonFields(Blueprint $table): void
     {
@@ -245,7 +279,11 @@ abstract class XotBaseMigration extends LaravelMigration
      */
     public function dropPrimaryKey(): void
     {
+<<<<<<< HEAD
         if ($this->driver() === 'sqlite') {
+=======
+        if ('sqlite' === $this->driver()) {
+>>>>>>> laraxot/dev
             return;
         }
         $sql = 'ALTER TABLE '.$this->getTable().' DROP PRIMARY KEY;';
@@ -319,7 +357,11 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
+<<<<<<< HEAD
      * @param  mixed  $result  Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
+=======
+     * @param mixed $result Risultato di Connection::selectOne() (atteso array{count?: mixed}|object|null)
+>>>>>>> laraxot/dev
      */
     protected function extractPrimaryKeyCount(mixed $result): int
     {
@@ -380,11 +422,19 @@ abstract class XotBaseMigration extends LaravelMigration
         $methodName = 'updateUserKey'.Str::studly($this->model->getKeyType());
         $this->{$methodName}($table);
 
+<<<<<<< HEAD
         if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
             $table->string('model_id', 36)->index()->change();
         }
 
         if ($this->hasColumn('team_id') && $this->getColumnType('team_id') === 'bigint') {
+=======
+        if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
+            $table->string('model_id', 36)->index()->change();
+        }
+
+        if ($this->hasColumn('team_id') && 'bigint' === $this->getColumnType('team_id')) {
+>>>>>>> laraxot/dev
             $table->uuid('team_id')->nullable()->change();
         }
     }
@@ -395,11 +445,19 @@ abstract class XotBaseMigration extends LaravelMigration
             $table->uuid('id')->primary()->first();
         }
 
+<<<<<<< HEAD
         if ($this->hasColumn('id') && $this->getColumnType('id') === 'bigint') {
             $table->uuid('id')->change();
         }
 
         if ($this->hasColumn('user_id') && $this->getColumnType('user_id') === 'bigint') {
+=======
+        if ($this->hasColumn('id') && 'bigint' === $this->getColumnType('id')) {
+            $table->uuid('id')->change();
+        }
+
+        if ($this->hasColumn('user_id') && 'bigint' === $this->getColumnType('user_id')) {
+>>>>>>> laraxot/dev
             $table->uuid('user_id')->change();
         }
     }
@@ -462,9 +520,15 @@ abstract class XotBaseMigration extends LaravelMigration
      * Convert table id from UUID to bigint, adding uuid column.
      * Use when migrating legacy installations with uuid primary keys.
      *
+<<<<<<< HEAD
      * @param  \Closure(Blueprint): void  $createNewTableSchema  Schema for the new table (id bigint + uuid + data columns)
      * @param  list<string>  $dataColumns  Column names to copy (excluding id, uuid)
      * @param  array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure}  $options  Optional pivot table config
+=======
+     * @param \Closure(Blueprint): void                                                    $createNewTableSchema Schema for the new table (id bigint + uuid + data columns)
+     * @param list<string>                                                                 $dataColumns          Column names to copy (excluding id, uuid)
+     * @param array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure} $options              Optional pivot table config
+>>>>>>> laraxot/dev
      */
     protected function convertIdFromUuidToBigintIfNeeded(
         \Closure $createNewTableSchema,
@@ -516,9 +580,15 @@ abstract class XotBaseMigration extends LaravelMigration
     protected array $uuidToBigintIdMapping = [];
 
     /**
+<<<<<<< HEAD
      * @param  \Closure(Blueprint): void  $createNewTableSchema
      * @param  list<string>  $dataColumns
      * @param  array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure}  $options
+=======
+     * @param \Closure(Blueprint): void                                                    $createNewTableSchema
+     * @param list<string>                                                                 $dataColumns
+     * @param array{pivot_table?: string, pivot_fk?: string, pivot_post_update?: \Closure} $options
+>>>>>>> laraxot/dev
      */
     protected function performUuidToBigintConversion(
         string $table,
@@ -544,7 +614,11 @@ abstract class XotBaseMigration extends LaravelMigration
 
         $pivotTable = $options['pivot_table'] ?? null;
         $pivotFk = $options['pivot_fk'] ?? null;
+<<<<<<< HEAD
         if ($pivotTable !== null && $pivotFk !== null && $this->hasTable($pivotTable)) {
+=======
+        if (null !== $pivotTable && null !== $pivotFk && $this->hasTable($pivotTable)) {
+>>>>>>> laraxot/dev
             $this->updatePivotTableFkFromUuidToBigint($table, $pivotTable, $pivotFk);
             $postUpdate = $options['pivot_post_update'] ?? null;
             if ($postUpdate instanceof \Closure) {
@@ -557,7 +631,11 @@ abstract class XotBaseMigration extends LaravelMigration
     }
 
     /**
+<<<<<<< HEAD
      * @param  list<string>  $dataColumns
+=======
+     * @param list<string> $dataColumns
+>>>>>>> laraxot/dev
      */
     protected function copyDataWithUuidToBigintMapping(string $oldTable, string $newTable, array $dataColumns): void
     {
@@ -576,7 +654,11 @@ abstract class XotBaseMigration extends LaravelMigration
             }
             $this->uuidToBigintIdMapping[SafeStringCastAction::cast($row->id)] = $newId;
             $conn->table($newTable)->insert($data);
+<<<<<<< HEAD
             $newId++;
+=======
+            ++$newId;
+>>>>>>> laraxot/dev
         }
     }
 
@@ -588,7 +670,11 @@ abstract class XotBaseMigration extends LaravelMigration
         foreach ($rows as $p) {
             $p = (object) $p;
             $newId = $this->uuidToBigintIdMapping[SafeStringCastAction::cast($p->id)] ?? null;
+<<<<<<< HEAD
             if ($newId !== null) {
+=======
+            if (null !== $newId) {
+>>>>>>> laraxot/dev
                 $conn->table($pivotTable)
                     ->where($fkColumn, $p->id)
                     ->update([$fkColumn => SafeStringCastAction::cast($newId)]);
@@ -606,7 +692,11 @@ abstract class XotBaseMigration extends LaravelMigration
             $constraintName = is_object($constraint) && isset($constraint->CONSTRAINT_NAME)
                 ? SafeStringCastAction::cast($constraint->CONSTRAINT_NAME)
                 : null;
+<<<<<<< HEAD
             if ($constraintName !== null) {
+=======
+            if (null !== $constraintName) {
+>>>>>>> laraxot/dev
                 $conn->statement('ALTER TABLE '.$pivotTable.' DROP INDEX '.$constraintName);
             }
             $conn->statement('ALTER TABLE '.$pivotTable.' MODIFY '.$fkColumn.' BIGINT UNSIGNED NULL');

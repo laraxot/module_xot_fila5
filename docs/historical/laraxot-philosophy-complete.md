@@ -214,9 +214,27 @@ class YourResource extends XotBaseResource
     // Pages auto-discovered following pattern
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_440yi7
+    public function getFormSchema(): array
+=======
+=======
+>>>>>>> .merge_file_Lp1RMZ
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_440yi7
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_Lp1RMZ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -225,9 +243,27 @@ class YourResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_440yi7
+    public function getInfolistSchema(): array
+=======
+=======
+>>>>>>> .merge_file_Lp1RMZ
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     public function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_440yi7
+=======
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> .merge_file_Lp1RMZ
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

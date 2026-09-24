@@ -1,6 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_3tBfsk
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_UAdlr5
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
@@ -74,7 +89,15 @@ test('gli epic dichiarati nelle story esistono in docs/epics.md', function () us
     $orphans = [];
     foreach ($storyFiles() as $path) {
         $name = basename($path);
+<<<<<<< HEAD
         if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
+=======
+<<<<<<< .merge_file_3tBfsk
+        if (preg_match('/^0*(\d+)\./', $name, $m) !== 1) {
+=======
+        if (1 !== preg_match('/^0*(\d+)\./', $name, $m)) {
+>>>>>>> .merge_file_UAdlr5
+>>>>>>> laraxot/dev
             continue; // story senza numero: fuori dal perimetro di questo test
         }
         if (! isset($m[1])) {

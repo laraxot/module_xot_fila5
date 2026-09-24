@@ -6,9 +6,19 @@ slug: process
 description: 'https://laravel-news.com/working-with-os-process-in-php https://github.com/JustSteveKing/os-process/blob/main/src/Concerns/HandlesGitCommands.php'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+converted_from: _process.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 converted_from: process.txt
 =======
 converted_from: _process.txt
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 created: 2026-08-24
 updated: 2026-08-24

@@ -329,9 +329,25 @@ public function canAccess($user): bool
 class MyWidget extends XotBaseWidget
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wUVVIp
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_JPZl1K
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_wUVVIp
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JPZl1K
 >>>>>>> laraxot/dev
     {
         // Filament methods should not be static

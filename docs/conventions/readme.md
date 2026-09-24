@@ -11,6 +11,16 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_q94CD5
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_osJoG9
+>>>>>>> laraxot/dev
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
@@ -90,6 +100,11 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_q94CD5
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
 ## Collegamenti tra versioni di README.md
@@ -169,4 +184,11 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../cms/project_docs/components/readme.md)
 * [README.md](../../../../themes/two/project_docs/readme.md)
 * [README.md](../../../../themes/one/project_docs/readme.md)
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_osJoG9
 >>>>>>> laraxot/dev

@@ -1,7 +1,23 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
+=======
+<<<<<<< .merge_file_5HsDnO
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> .merge_file_ErC8vg
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -48,10 +64,35 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
         }
 
         try {
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5HsDnO
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+            /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resourceClass */
+            $resourceClass = $page::getResource();
+            $resourceClass::getTableClass();
+        } catch (\Throwable $e) {
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_ErC8vg
+>>>>>>> laraxot/dev
             /** @var class-string<XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (Throwable $e) {
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_5HsDnO
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ErC8vg
+>>>>>>> laraxot/dev
             $senzaTable[] = $page.' — '.$e->getMessage();
         }
     }

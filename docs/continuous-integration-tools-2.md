@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ---
 title: "continuous_integration_tools"
 module: "Xot"
@@ -9,6 +13,11 @@ qmd: "continuous integration tools 2"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # continuous_integration_tools
 
 <!-- Contenuto migrato da _docs/continuous_integration_tools.txt -->

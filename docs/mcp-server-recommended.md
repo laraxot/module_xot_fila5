@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # MCP Server Consigliati per il Modulo Xot
 
 ## Scopo del Modulo
@@ -20,4 +28,12 @@ Modulo base/framework: fornisce servizi trasversali, integrazione tra componenti
 ```
 
 ## Note
+<<<<<<< HEAD
 - Xot non richiede MCP custom, ma può essere esteso da altri moduli.
+=======
+<<<<<<< HEAD
+- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
+=======
+- Xot non richiede MCP custom, ma può essere esteso da altri moduli.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

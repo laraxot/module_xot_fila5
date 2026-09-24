@@ -16,13 +16,21 @@ class SetDefaultLocaleForUrls
     /**
      * Handle an incoming request.
      *
+<<<<<<< HEAD
      * @param  \Closure(Request):Response  $next
+=======
+     * @param \Closure(Request):Response $next
+>>>>>>> laraxot/dev
      */
     public function handle(Request $request, \Closure $next): Response
     {
         $user = $request->user();
         $lang = app()->getLocale();
+<<<<<<< HEAD
         if ($user !== null) {
+=======
+        if (null !== $user) {
+>>>>>>> laraxot/dev
             $lang = $user->lang ?? app()->getLocale();
         }
 

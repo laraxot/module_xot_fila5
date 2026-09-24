@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_7CBxT8
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 <<<<<<< HEAD
 =======
@@ -10,6 +15,14 @@
 > Il file `.txt` gemello conteneva materiale che questo documento non riportava.
 > È stato accodato qui invariato: va riletto e integrato nelle sezioni sopra.
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_IaLFTo
+>>>>>>> laraxot/dev
 //------- IMMAGINI --------
 https://placeimg.com/640/480/arch
 https://picsum.photos/
@@ -93,6 +106,19 @@ http://enneagon.org/phrases
 
 //----- profilo ---
 https://www.fakenamegenerator.com/gen-male-fr-fr.php
+<<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_7CBxT8
+=======
+
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_IaLFTo
 >>>>>>> laraxot/dev

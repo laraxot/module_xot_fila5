@@ -250,9 +250,25 @@ class MyResource extends XotBaseResource
 {
     // ✅ CORRETTO: Implementa solo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_i3GbOx
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_AZQDSj
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_i3GbOx
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AZQDSj
 >>>>>>> laraxot/dev
     {
         return [

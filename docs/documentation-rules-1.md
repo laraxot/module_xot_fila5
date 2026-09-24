@@ -6,10 +6,23 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+<<<<<<< HEAD
+=======
+=======
+- [README](../readme.md) - Panoramica del modulo Xot
+- [Convenzioni di Naming](./naming_conventions.md) - Regole di naming per campi, classi e directory
+- [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Validazione dei Collegamenti
 
@@ -18,14 +31,28 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
+=======
+<<<<<<< HEAD
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -41,6 +68,26 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< HEAD
+=======
+=======
+[Documento Correlato](../xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Checklist di Validazione
@@ -50,7 +97,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+=======
+<<<<<<< HEAD
+- [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Validazione dei Collegamenti
 
@@ -59,14 +114,28 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
+=======
+<<<<<<< HEAD
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -82,6 +151,26 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< HEAD
+=======
+=======
+[Documento Correlato](../xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Checklist di Validazione
@@ -91,7 +180,15 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
+<<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+=======
+<<<<<<< HEAD
+- [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+=======
+- [Prompt di Documentazione](./prompts/documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Validazione dei Collegamenti
 
@@ -100,14 +197,28 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
+=======
+<<<<<<< HEAD
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+=======
+[Documento in Modulo Altro](../../altromodulo/docs/documento.md)
+[Documento in Root](../../../../docs/documento.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -123,6 +234,26 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< HEAD
+=======
+=======
+[Documento Correlato](../xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+[Documento Correlato](../xot/docs/documento.md)
+[Documento Correlato](modules/xot/docs/documento.md)
+[Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
+[Documento in Modulo Altro](c:\progetti\<nome progetto>\laravel\modules\xot\docs\documento.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### Checklist di Validazione
@@ -216,4 +347,12 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - La documentazione è una parte fondamentale del progetto
 - Una buona documentazione riduce il tempo di onboarding
 - La documentazione deve evolversi insieme al codice
+<<<<<<< HEAD
 - I collegamenti bidirezionali sono essenziali per la navigabilità
+=======
+<<<<<<< HEAD
+- I collegamenti bidirezionali sono essenziali per la navigabilità
+=======
+- I collegamenti bidirezionali sono essenziali per la navigabilità
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

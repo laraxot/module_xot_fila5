@@ -1,6 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_48DKIz
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_uDfvoF
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\Theme\GetThemeAction;
 use Modules\Xot\Actions\Theme\GetThemePathAction;

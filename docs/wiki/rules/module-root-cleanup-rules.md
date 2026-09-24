@@ -1,4 +1,8 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 title: "Module root cleanup rules"
 type: rule
 tags: [module, theme, structure, cleanup, naming, root-hygiene]
@@ -61,11 +65,52 @@ Tutto il resto → `docs/raw/root-import/` o `docs/wiki/`. Duplicati `changelog.
 - **OBBLIGATORIO**: esattamente 1 file `.code-workspace` per modulo/tema
 - Nome: `_<nome>.code-workspace` in minuscolo (es. `_geo.code-workspace`, `_ui.code-workspace`)
 - **VIETATO**: file `.code-workspace` di altri moduli/temi nella root (es. `_activity.code-workspace` in UI)
+<<<<<<< HEAD
+=======
+=======
+title: "Module Root Cleanup Rules"
+type: rule
+tags: [module, structure, cleanup, naming]
+created: 2026-01-21
+updated: 2026-07-01
+qmd: module root no txt files no uppercase folders only readme nwidart sacred manifest never delete
+issues: []
+discussions: []
+related:
+  - ../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
+  - ../../../../../../docs/wiki/memories/nwidart-sacred-manifests-incident.md
+---
+
+# Module Root Cleanup Rules
+
+## Regole obbligatorie per la root dei moduli
+
+### File .txt
+- **VIETATO**: Nessun file `.txt` nella root del modulo
+- Tutti i file `.txt` devono essere rimossi o convertiti in `.md` e spostati in `docs/`
+
+### File .md
+- **OBBLIGATORIO**: Solo `README.md` nella root del modulo
+- Tutti gli altri file `.md` devono essere:
+  1. Studiati e valutati
+  2. Sistematizzati (aggiunto frontmatter se necessario)
+  3. Spostati in `docs/` (preferibilmente `docs/wiki/` per documentazione conoscenza)
+
+### Cartelle con caratteri maiuscoli
+- **VIETATO**: Nessuna cartella con caratteri maiuscoli nella root del modulo
+- Tutte le cartelle devono essere lowercase con underscore o dash (es. `app/`, `database/`, `config/`)
+- Cartelle con maiuscole devono essere eliminate o rinominate in lowercase
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Mai toccare (nwidart)
 
 `composer.json`, `module.json`, `package.json`, `vite.config.js`, `.github/` — vedi [nwidart-module-skeleton-contract.md](../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md).
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## Comandi
 
 ```bash
@@ -77,6 +122,17 @@ bash bashscripts/tools/guard-nwidart-module-skeleton.sh
 ## Scope
 
 Moduli: `laravel/Modules/<Modulo>/` · Temi: `laravel/Themes/<Tema>/` — **solo root**, non sottocartelle.
+<<<<<<< HEAD
+=======
+=======
+```bash
+bash bashscripts/tools/guard-nwidart-module-skeleton.sh
+bash bashscripts/tools/audit-module-sacred-artifacts.sh
+```
+
+## Azione di cleanup
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Per ogni modulo:
 
@@ -93,10 +149,19 @@ find . -maxdepth 1 -name "*.md" -type f | grep -v README.md
 find . -maxdepth 1 -type d | grep -E "[A-Z]"
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## Stato Xot 2026-07-06
 
 Le cartelle `Datas/`, `_docs/`, `claude-code-bmad-skills/`, `Filament/`, `Providers/` non esistono nella root di `Modules/Xot`. La root Xot contiene solo `README.md` come markdown e nessun `.txt`.
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ## Canon
 
 - Questa regola deve essere applicata a tutti i moduli

@@ -1,6 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_sLx40b
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_XWkrpi
+>>>>>>> laraxot/dev
 ?>
 namespace Database\Factories;
 

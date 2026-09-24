@@ -1,10 +1,22 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_G3GSqR
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 https://laravelarticle.com/speed-up-laravel-website
 
 
 How To Check RAM And CPU Usage In Laravel
 https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_p2o6t1
+>>>>>>> laraxot/dev
 ---
 title: 'speed_up'
 module: Xot
@@ -25,4 +37,19 @@ https://laravelarticle.com/speed-up-laravel-website
 
 How To Check RAM And CPU Usage In Laravel
 https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_G3GSqR
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+=======
+https://laravelarticle.com/speed-up-laravel-website
+
+
+How To Check RAM And CPU Usage In Laravel
+https://dev.to/techsolutionstuff/how-to-check-ram-and-cpu-usage-in-laravel-4idf
+>>>>>>> .merge_file_p2o6t1
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -201,4 +201,12 @@ test('user can be saved to database', function () {
 ---
 
 **Ultimo aggiornamento**: 9 Gennaio 2026  
+<<<<<<< HEAD
 **Status**: 🔄 **IN CORREZIONE**
+=======
+<<<<<<< HEAD
+**Status**: 🔄 **IN CORREZIONE**
+=======
+**Status**: 🔄 **IN CORREZIONE**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

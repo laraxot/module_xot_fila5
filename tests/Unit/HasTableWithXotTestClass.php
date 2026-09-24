@@ -14,7 +14,10 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
@@ -27,7 +30,11 @@ class HasTableWithXotTestClass
 
     public function getLayoutView(): object
     {
+<<<<<<< HEAD
         $mock = Mockery::mock();
+=======
+        $mock = \Mockery::mock();
+>>>>>>> laraxot/dev
         $mock->shouldReceive('getTableColumns')->andReturn([]);
         $mock->shouldReceive('getTableContentGrid')->andReturn([]);
 
@@ -37,7 +44,10 @@ class HasTableWithXotTestClass
     /**
      * @return array<string, Column|ColumnGroup|Component>
      */
+<<<<<<< HEAD
     /** @return array<string, Column> */
+=======
+>>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [];
@@ -46,7 +56,11 @@ class HasTableWithXotTestClass
     public function getTable(): Table
     {
         /** @var Table&MockInterface $table */
+<<<<<<< HEAD
         $table = Mockery::mock(Table::class);
+=======
+        $table = \Mockery::mock(Table::class);
+>>>>>>> laraxot/dev
 
         return $table;
     }
@@ -141,7 +155,11 @@ class HasTableWithXotTestClass
      */
     public function getSelectedTableRecords(bool $_shouldFetchSelectedRecords = true): Collection
     {
+<<<<<<< HEAD
         return new Collection;
+=======
+        return new Collection();
+>>>>>>> laraxot/dev
     }
 
     public function getAllTableRecordsCount(): int
@@ -267,17 +285,32 @@ class HasTableWithXotTestClass
         return null;
     }
 
+<<<<<<< HEAD
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
+=======
+    public function deselectAllTableRecords(): void
+    {
+    }
+
+    public function mountTableAction(): void
+    {
+    }
+
+    public function mountTableBulkAction(): void
+    {
+    }
+>>>>>>> laraxot/dev
 
     public function mountedTableActionRecord(): ?Model
     {
         return null;
     }
 
+<<<<<<< HEAD
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -287,6 +320,27 @@ class HasTableWithXotTestClass
     public function resetTableColumnSearch(): void {}
 
     public function toggleTableReordering(): void {}
+=======
+    public function replaceMountedTableAction(): void
+    {
+    }
+
+    public function replaceMountedTableBulkAction(): void
+    {
+    }
+
+    public function resetTableSearch(): void
+    {
+    }
+
+    public function resetTableColumnSearch(): void
+    {
+    }
+
+    public function toggleTableReordering(): void
+    {
+    }
+>>>>>>> laraxot/dev
 
     public function parseTableFilterName(): string
     {

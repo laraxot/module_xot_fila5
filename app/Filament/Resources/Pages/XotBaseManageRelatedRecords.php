@@ -277,7 +277,12 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * non li sostituisce: aggiungere questo hook non perde nessuno scoping
      * (es. tenant) gia' applicato da `$resourceClass::table()`.
      *
+<<<<<<< HEAD
      * @param  Builder<Model>  $query
+=======
+     * @param Builder<Model> $query
+     *
+>>>>>>> laraxot/dev
      * @return Builder<Model>
      */
     protected function modifyRelatedQuery(Builder $query): Builder
@@ -357,9 +362,15 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * NON usare mai `$this->getResource()` qui: identifica la Resource
      * PROPRIETARIA della pagina, non quella della relazione.
      *
+<<<<<<< HEAD
      * @return class-string<XotBaseResource>
      *
      * @throws \InvalidArgumentException Se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali.
+=======
+     * @throws \InvalidArgumentException se nessuna Resource e' risolvibile — fallire rumorosamente e' preferibile a un default silenzioso su una pagina che si aspetta dati reali
+     *
+     * @return class-string<XotBaseResource>
+>>>>>>> laraxot/dev
      */
     protected function getRelatedResourceClass(): string
     {

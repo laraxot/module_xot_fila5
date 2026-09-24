@@ -1,8 +1,19 @@
 # Aggiornamento Documentazione - Problema con ai_init.sh
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_oyxbK7
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_mcL7Dk
+>>>>>>> laraxot/dev
 ## Analisi corretta
 
 Il problema non e' "manca la cartella `bashscripts/ai/.gemini`".
@@ -41,7 +52,19 @@ Non:
 
 - Source: `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/.gemini`
 - Target symlink: `/var/www/_bases/base_quaeris_fila4_mono/.gemini`
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_oyxbK7
+<<<<<<< HEAD
+=======
+
+>>>>>>> .merge_file_mcL7Dk
+=======
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ## Problema Identificato
 
@@ -76,8 +99,18 @@ Lo script deve essere corretto per invertire la logica:
 
 - Source: `./bashscripts/ai/.gemini`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Target symlink: `./.gemini`
 =======
 - Target symlink: `./.gemini`
 >>>>>>> 7f6cf6be (.)
+=======
+<<<<<<< HEAD
+- Target symlink: `./.gemini`
+=======
+- Target symlink: `./.gemini`
+>>>>>>> laraxot/dev
+=======
+- Target symlink: `./.gemini`
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
