@@ -75,19 +75,9 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -184,19 +174,9 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

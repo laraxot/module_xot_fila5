@@ -43,22 +43,14 @@ class MainDashboard extends XotBaseDashboard
         // Usa roles() come metodo invece della magic property per type safety
         $modules = $user->getModules();
 
-<<<<<<< HEAD
         if (0 === count($modules)) {
-=======
-        if (count($modules) === 0) {
->>>>>>> laraxot/dev
             $url = '/'.app()->getLocale();
             redirect($url);
 
             return;
         }
 
-<<<<<<< HEAD
         if (1 === count($modules)) {
-=======
-        if (count($modules) === 1) {
->>>>>>> laraxot/dev
             $module_first = Arr::first($modules);
             Assert::isInstanceOf($module_first, Module::class);
             $module_name = $module_first->getLowerName();

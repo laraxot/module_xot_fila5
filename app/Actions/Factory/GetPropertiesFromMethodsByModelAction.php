@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -18,20 +15,12 @@ namespace Modules\Xot\Actions\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-=======
-use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
->>>>>>> laraxot/dev
 
 use function Safe\file;
 use function Safe\preg_replace;
 
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
 
 /**
  * Classe per estrarre proprietà dai metodi di relazione di un modello.
@@ -65,11 +54,7 @@ class GetPropertiesFromMethodsByModelAction
                 $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
-<<<<<<< HEAD
                 if (false === $filename) {
-=======
-                if ($filename === false) {
->>>>>>> laraxot/dev
                     continue; // Saltiamo i metodi senza file (es. metodi interni)
                 }
 
@@ -107,13 +92,6 @@ class GetPropertiesFromMethodsByModelAction
 
                 // Estrazione del corpo della funzione
                 $begin = mb_strpos($codeStr, 'function(');
-<<<<<<< HEAD
-=======
-                $begin = $begin !== false ? $begin : 0;
-
-                $end = mb_strrpos($codeStr, '}');
-                $end = $end !== false ? $end : mb_strlen($codeStr);
->>>>>>> laraxot/dev
                 $begin = false !== $begin ? $begin : 0;
 
                 $end = mb_strrpos($codeStr, '}');
@@ -139,13 +117,6 @@ class GetPropertiesFromMethodsByModelAction
     /**
      * Estrae le relazioni belongsTo dal codice.
      *
-<<<<<<< HEAD
-=======
-     * @param  string  $codeStr  Il codice da analizzare
-     * @param  Model  $model  Il modello
-     * @param  string  $method  Il nome del metodo
-     * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
->>>>>>> laraxot/dev
      * @param string                $codeStr Il codice da analizzare
      * @param Model                 $model   Il modello
      * @param string                $method  Il nome del metodo
@@ -156,11 +127,7 @@ class GetPropertiesFromMethodsByModelAction
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
-<<<<<<< HEAD
         if (false === $pos) {
-=======
-        if ($pos === false) {
->>>>>>> laraxot/dev
             return; // Il metodo non contiene una relazione belongsTo
         }
 

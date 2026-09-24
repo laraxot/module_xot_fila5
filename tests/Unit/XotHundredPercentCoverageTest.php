@@ -97,14 +97,6 @@ namespace PhpCsFixer\Runner\Parallel {
 }
 namespace PhpCsFixer {
     final class Config {
-<<<<<<< HEAD
-=======
-        public function setParallelConfig(object $c): self { return $this; }
-        public function setRiskyAllowed(bool $v): self { return $this; }
-        /** @param array<string, mixed> $rules */
-        public function setRules(array $rules): self { return $this; }
-        public function setFinder(object $f): self { return $this; }
->>>>>>> laraxot/dev
         public function setParallelConfig(mixed $c): self { return $this; }
         public function setRiskyAllowed(bool $v): self { return $this; }
         /** @param array<string, mixed> $rules */

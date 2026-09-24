@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Config;
 use Modules\Xot\Actions\Theme\GetThemeAction;
 use Modules\Xot\Actions\Theme\GetThemePathAction;

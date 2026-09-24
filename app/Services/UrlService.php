@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://www.webslesson.info/2019/02/import-excel-file-in-laravel.html
  * @see https://sweetcode.io/import-and-export-excel-files-data-using-in-laravel/
@@ -25,11 +21,7 @@ class UrlService
     public static function getInstance(): self
     {
         if (! (self::$instance instanceof self)) {
-<<<<<<< HEAD
             self::$instance = new self();
-=======
-            self::$instance = new self;
->>>>>>> laraxot/dev
         }
 
         return self::$instance;

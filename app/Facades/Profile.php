@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * per vedere come registra la facade.
  *

@@ -30,11 +30,7 @@ Non utilizzare mai `->label()`, `->placeholder()`, o `->tooltip()` con stringhe 
 Alcune classi `XotBase` impongono pattern specifici per garantire la conformità con PHPStan Level 10:
 - **XotBaseWidget**: Deve implementare `public function getFormSchema(): array`.
 <<<<<<< HEAD
-<<<<<<< HEAD
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
-=======
-- **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
->>>>>>> laraxot/dev
 =======
 - **XotBaseResource**: Deve implementare `public function getFormSchema(): array` (centralizzato).
 >>>>>>> laraxot/dev

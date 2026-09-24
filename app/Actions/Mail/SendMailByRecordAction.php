@@ -18,12 +18,6 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param Model  $record    Il record da utilizzare come dati per la mail
-     * @param string $mailClass La classe Mailable da utilizzare
->>>>>>> laraxot/dev
      * @param Model  $record    Il record da utilizzare come dati per la mail
      * @param string $mailClass La classe Mailable da utilizzare
      */

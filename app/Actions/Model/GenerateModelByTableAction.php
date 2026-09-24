@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/krlove/eloquent-model-generator
  * @see https://github.com/laracademy/generators

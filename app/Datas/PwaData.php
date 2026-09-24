@@ -15,17 +15,6 @@ use Spatie\LaravelData\Data;
 class PwaData extends Data
 {
     /**
-<<<<<<< HEAD
-=======
-     * @param  bool  $enable  Se il PWA è abilitato
-     * @param  string  $name  Nome dell'applicazione
-     * @param  string  $short_name  Nome breve dell'applicazione
-     * @param  string  $description  Descrizione dell'applicazione
-     * @param  string  $background_color  Colore di sfondo
-     * @param  string  $theme_color  Colore del tema
-     * @param  string  $icon_path  Percorso dell'icona
-     * @param  array<string, string>  $splash  Configurazione splash screen
->>>>>>> laraxot/dev
      * @param bool                  $enable           Se il PWA è abilitato
      * @param string                $name             Nome dell'applicazione
      * @param string                $short_name       Nome breve dell'applicazione

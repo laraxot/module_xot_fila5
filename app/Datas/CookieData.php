@@ -12,14 +12,6 @@ use Spatie\LaravelData\Data;
  *
  * @phpstan-consistent-constructor
  *
-<<<<<<< HEAD
-=======
- * @param  bool  $accept
- * @param  string  $type
- * @param  int  $durationDays
- * @param  string  $policyUrl
- * @param  string  $bannerStyle
->>>>>>> laraxot/dev
  * @param bool   $accept
  * @param string $type
  * @param int    $durationDays

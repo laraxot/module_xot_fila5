@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 name: 40-residuo-domani
 description: "Status: TODO — sub-agent assegnato (swarm 36-40)"
@@ -8,8 +7,6 @@ metadata:
   type: bmad
 ---
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

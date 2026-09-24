@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 /**
  * --- usata ricorsivamente.
  */
@@ -21,13 +18,8 @@ class UpdateAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
      * @param array<string, mixed> $data
      * @param array<string, mixed> $rules
-=======
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $rules
->>>>>>> laraxot/dev
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -36,11 +28,7 @@ class UpdateAction
 
         $keyName = $model->getKeyName();
         // $data['updated_by'] = authId();
-<<<<<<< HEAD
         if (null === $model->getKey()) {
-=======
-        if ($model->getKey() === null) {
->>>>>>> laraxot/dev
             $key = $data[$keyName];
             /** @var array<string, mixed> $data */
             $data = collect($data)->except($keyName)->toArray();

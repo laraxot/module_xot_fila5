@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * -WIP.
  */
@@ -36,11 +32,6 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param File $file Il file della risorsa Filament
->>>>>>> laraxot/dev
      * @param  File  $file  Il file della risorsa Filament
      */
     public function execute(File $file): void
@@ -120,11 +111,6 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param File $file Il file da analizzare
->>>>>>> laraxot/dev
      * @param  File  $file  Il file da analizzare
      */
     public function ddFile(File $file): void

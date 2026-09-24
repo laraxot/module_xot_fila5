@@ -9,16 +9,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseValueFactory;
 
 /**
-<<<<<<< HEAD
-=======
- *
- * @property string               $id
- * @property int                  $timestamp
- * @property string               $type
- * @property string               $key
- * @property string|null          $key_hash
- * @property string               $value
->>>>>>> laraxot/dev
  * @property string $id
  * @property int $timestamp
  * @property string $type
@@ -29,20 +19,6 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property ProfileContract|null $updater
  *
  * @method static PulseValueFactory factory($count = null, $state = [])
-<<<<<<< HEAD
-=======
- *
- * @property string               $id
- * @property int                  $timestamp
- * @property string               $type
- * @property string               $key
- * @property string|null          $key_hash
- * @property string               $value
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
- * @method static PulseValueFactory          factory($count = null, $state = [])
->>>>>>> laraxot/dev
  * @method static Builder<static>|PulseValue newModelQuery()
  * @method static Builder<static>|PulseValue newQuery()
  * @method static Builder<static>|PulseValue query()

@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -1077,17 +1076,11 @@ public function getTableFilters(): array
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 =======
-=======
->>>>>>> laraxot/dev
 ---
 module: Xot
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-<<<<<<< HEAD
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-=======
-canonical: ../../../Themes/One/docs/shared-components/metodi-duplicati-analisi.md
->>>>>>> laraxot/dev
 ---
 
 # Metodi Duplicati — Analisi Xot
@@ -4364,7 +4357,4 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

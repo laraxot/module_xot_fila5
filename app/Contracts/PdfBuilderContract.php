@@ -13,10 +13,6 @@ interface PdfBuilderContract
     public function download(): self;
 
     /**
-<<<<<<< HEAD
-=======
-     *
->>>>>>> laraxot/dev
      * @param \Closure(object): void $callback
      */
     public function withBrowsershot(\Closure $callback): self;

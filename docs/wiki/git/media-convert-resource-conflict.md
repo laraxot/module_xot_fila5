@@ -79,19 +79,9 @@ class MediaConvertResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -164,12 +154,4 @@ class MediaConvertResource extends XotBaseResource
 
 - [Documento principale risoluzione conflitti](risoluzione_conflitti.md)
 - [Documentazione modulo Media](../../Media/docs/CONFLITTI_MERGE_RISOLTI.md)
-<<<<<<< HEAD
 - [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-<<<<<<< HEAD
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
-=======
-- [Documentazione modulo Media](../../media/docs/conflitti_merge_risolti.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

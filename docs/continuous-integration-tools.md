@@ -1,6 +1,5 @@
 ---
 <<<<<<< HEAD
-<<<<<<< HEAD
 module: theme
 topic: continuous-integration-tools
 canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
@@ -8,8 +7,6 @@ canonical: ../../../Themes/docs/shared-components/_continuous_integration_tools.
 
 See canonical documentation: ../../../Themes/docs/shared-components/_continuous_integration_tools.txt
 =======
-=======
->>>>>>> laraxot/dev
 title: 'Continuous integration tools'
 module: Xot
 type: reference
@@ -50,7 +47,6 @@ https://grafikart.fr/tutoriels/grumphp-836
 
 https://jakzal.github.io/toolbox/
 
-<<<<<<< HEAD
 
 ## Appendice — contenuto migrato
 
@@ -97,6 +93,4 @@ https://grafikart.fr/tutoriels/grumphp-836
 ----------------------------------------------------------------------
 
 https://jakzal.github.io/toolbox/
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

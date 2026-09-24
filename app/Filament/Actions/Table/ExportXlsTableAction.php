@@ -1,23 +1,13 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Actions\Table;
 
-=======
-namespace Modules\Xot\Filament\Actions\Table;
-
-use Exception;
->>>>>>> laraxot/dev
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -35,11 +25,7 @@ class ExportXlsTableAction extends XotBaseAction
         $this->translateLabel()
             ->tooltip(__('xot::actions.export_xls'))
             // ->icon('fas-file-excel')
-<<<<<<< HEAD
             ->icon('heroicon-o-arrow-down-tray')
-=======
-            ->icon('xot-files.xls')
->>>>>>> laraxot/dev
             ->action(static function (RelationManager $livewire) {
                 $livewire_class = $livewire::class;
                 $filterParts = array_map(
@@ -51,14 +37,6 @@ class ExportXlsTableAction extends XotBaseAction
                     '-'.
                     implode('-', $filterParts).
                     '.xlsx';
-<<<<<<< HEAD
-=======
-                $transKey = app(GetTransKeyAction::class)->execute($livewireClass);
-                $transKey .= '.fields';
-                $query = $livewire->getFilteredTableQuery();
-                if ($query === null) {
-                    throw new Exception('Query is null');
->>>>>>> laraxot/dev
                 $transKey = app(GetTransKeyAction::class)->execute($livewire_class);
                 $transKey .= '.fields';
                 $query = $livewire->getFilteredTableQuery();
@@ -94,37 +72,4 @@ class ExportXlsTableAction extends XotBaseAction
     {
         return 'export_xls';
     }
-<<<<<<< HEAD
-=======
-
-    /**
-     * Chiave stringa = percorso data_get con intestazione esplicita
-     * (title rating); chiave intera = percorso tradotto via transKey.
-     *
-     * @param  class-string  $livewireClass
-     * @param  array<string, mixed>|null  $tableFilters
-     * @return array<int|string, string>
-     */
-    private static function resolveXlsFields(string $livewireClass, ?array $tableFilters): array
-    {
-        $fields = [];
-        if (! method_exists($livewireClass, 'getXlsFields')) {
-            return $fields;
-        }
-        $rawFields = $livewireClass::getXlsFields($tableFilters);
-        Assert::isArray($rawFields);
-
-        foreach ($rawFields as $key => $field) {
-            if (is_string($key) && is_string($field)) {
-                $fields[$key] = $field;
-            } elseif (is_string($field)) {
-                $fields[] = $field;
-            } elseif (is_array($field) && isset($field['name']) && is_string($field['name'])) {
-                $fields[] = $field['name'];
-            }
-        }
-
-        return $fields;
-    }
->>>>>>> laraxot/dev
 }

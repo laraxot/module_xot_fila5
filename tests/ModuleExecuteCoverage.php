@@ -1114,11 +1114,7 @@ final class ModuleExecuteCoverage
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
-=======
-     * @return array<string, int|string>
->>>>>>> laraxot/dev
      */
     private static function defaultModelAttributes(): array
     {

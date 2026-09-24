@@ -1,11 +1,8 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 componenti da prendere
 https://github.com/christophrumpel/larastreamers/tree/main/resources/views
 =======
-=======
->>>>>>> laraxot/dev
 ---
 title: 'theme_livewire'
 module: Xot
@@ -24,7 +21,4 @@ updated: 2026-08-24
 
 componenti da prendere
 https://github.com/christophrumpel/larastreamers/tree/main/resources/views
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

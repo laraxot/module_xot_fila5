@@ -614,7 +614,6 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
           php-version: 8.3
@@ -622,9 +621,6 @@ jobs:
 <<<<<<< HEAD
           php-
 >>>>>>> 28b0298a (fix: phpstan issues)
-=======
-          php-
->>>>>>> laraxot/dev
       - name: Install dependencies
         run: composer install
       - name: Run PHPStan
@@ -714,7 +710,6 @@ class ContactNotificationService
 ```
 
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
-<<<<<<< HEAD
 
 ---
 
@@ -2146,6 +2141,4 @@ Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare i
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

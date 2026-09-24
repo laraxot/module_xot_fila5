@@ -65,11 +65,7 @@ final class PestTestCall
     }
 
     /**
-<<<<<<< HEAD
      * @param array<array-key, mixed> $arguments
-=======
-     * @param  array<array-key, mixed>  $arguments
->>>>>>> laraxot/dev
      */
     private function forward(string $method, array $arguments): self
     {

@@ -293,19 +293,9 @@ Level 0  → 🏕️  Campo Base
 ```php
 // 1. Form Schema con Semantic Keys
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [

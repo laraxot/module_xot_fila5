@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
 use Modules\Xot\Actions\File\FixPathAction;
@@ -25,13 +22,6 @@ test('fix path action works', function (): void {
 
 test('view path action works', function (): void {
     // Replace GetViewNameSpacePathAction with a spy that returns test path
-<<<<<<< HEAD
-=======
-    $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction {
-        public function execute(string $namespace): string
-        {
-            return 'test_ns' === $namespace ? '/view/path' : '';
->>>>>>> laraxot/dev
     $getViewNameSpacePathAction = new class extends GetViewNameSpacePathAction
     {
         public function execute(string $namespace): string
@@ -55,11 +45,7 @@ test('asset path action works', function (): void {
     // Spy on Module facade
     Module::partialMock()->allows([
         'getModulePath' => function (string $module): string {
-<<<<<<< HEAD
             return $module === 'test_module' ? '/module/path/' : '';
-=======
-            return 'test_module' === $module ? '/module/path/' : '';
->>>>>>> laraxot/dev
         },
     ]);
 

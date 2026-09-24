@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 name: 24-geo-phpstan
 description: "Modulo: Geo"
@@ -8,8 +7,6 @@ metadata:
   type: bmad
 ---
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

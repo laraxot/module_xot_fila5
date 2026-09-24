@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 module: theme
 topic: readme
@@ -70,13 +69,4 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
->>>>>>> laraxot/dev
-=======
----
-module: Xot
-topic: readme
-canonical: ./README.md
----
-
-See canonical documentation: [README.md](./README.md)
 >>>>>>> laraxot/dev

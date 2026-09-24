@@ -8,11 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
-<<<<<<< HEAD
-=======
-use Modules\Xot\Actions\View\GetViewByModelClassAction;
-use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
->>>>>>> laraxot/dev
 
 class PdfByModelAction
 {
@@ -24,19 +19,6 @@ class PdfByModelAction
         string $disk = 'cache',
         string $out = 'download',
     ): string|BinaryFileResponse {
-<<<<<<< HEAD
-=======
-        /**
-         * @var non-falsy-string&view-string
-         */
-        $view_name = app(GetViewByModelClassAction::class)->execute($model::class,'.show.pdf');
-
-        
-        $view_params = [
-            'view' => $view_name,
-            'row' => $model,
-            'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class,'.fields'),
->>>>>>> laraxot/dev
         $model_class = $model::class;
         $model_name = class_basename($model_class);
         $model_name_low = mb_strtolower($model_name);

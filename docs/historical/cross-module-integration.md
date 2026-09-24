@@ -42,19 +42,9 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = Integparam::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -133,19 +123,9 @@ class IntegparamResource extends XotBaseResource
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

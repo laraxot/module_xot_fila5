@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 name: 15-catalog-phpstan
 description: "Modulo: Catalog"
@@ -8,8 +7,6 @@ metadata:
   type: bmad
 ---
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

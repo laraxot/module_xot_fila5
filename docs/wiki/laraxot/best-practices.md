@@ -24,19 +24,9 @@ updated: 2026-08-24
 ### Implementazione
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -88,11 +78,7 @@ return [
 
 ### Regole di Estensione
 <<<<<<< HEAD
-<<<<<<< HEAD
 1. Implementare `public function getFormSchema(): array`
-=======
-1. Implementare `public function getFormSchema(): array`
->>>>>>> laraxot/dev
 =======
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
@@ -107,19 +93,9 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

@@ -34,38 +34,15 @@ class ExecuteArtisanCommandAction
         'passport:keys',
         'passport:purge',
         'passport:hash',
-<<<<<<< HEAD
-=======
-        'notify:migrate-themes-to-mail-templates',
->>>>>>> laraxot/dev
     ];
 
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
-<<<<<<< HEAD
      * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
      * @return array{
      *     command: string,
      *     output: array<int, string>,
-=======
-     * @param string $command Il comando Artisan da eseguire (senza "php artisan")
-     *
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-     *
-     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
-     *
-     * @return array{
-     *     command: string,
-     *     output: list<string>,
-     *     status: 'completed'|'failed',
-     *     exitCode: int
-     * } Array con informazioni sull'esecuzione del comando
-     * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
-     * @return array{
-     *     command: string,
-     *     output: list<string>,
->>>>>>> laraxot/dev
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
@@ -80,13 +57,6 @@ class ExecuteArtisanCommandAction
             throw new \RuntimeException("Comando non consentito: {$command}");
         }
 
-<<<<<<< HEAD
-=======
-        /** @var list<string> $output */
-        $output = [];
-        $status = 'running';
-
->>>>>>> laraxot/dev
         /** @var array<int, string> $output */
         $output = [];
         $status = 'running';
@@ -99,13 +69,6 @@ class ExecuteArtisanCommandAction
                 ->timeout(300)
                 ->start();
 
-<<<<<<< HEAD
-=======
-            // Cattura l'output man mano che il processo produce dati; non e'
-            // "tempo reale" lato browser (questa chiamata resta bloccante
-            // dentro un'unica richiesta Livewire sincrona), ma evita di
-            // rileggere tutto solo alla fine se il processo e' lungo.
->>>>>>> laraxot/dev
             // Cattura l'output in tempo reale
             while ($process->running()) {
                 $data = $process->latestOutput();
@@ -167,12 +130,6 @@ class ExecuteArtisanCommandAction
     /**
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
-<<<<<<< HEAD
-=======
-     * @param string $command Il comando da verificare
-     *
-     *
->>>>>>> laraxot/dev
      * @param  string  $command  Il comando da verificare
      * @return bool True se il comando è consentito, false altrimenti
      */

@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 name: 13-quotation-phpstan
 description: "Modulo: Quotation"
@@ -8,8 +7,6 @@ metadata:
   type: bmad
 ---
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

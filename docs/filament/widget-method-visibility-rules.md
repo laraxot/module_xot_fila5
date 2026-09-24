@@ -1,7 +1,6 @@
 # Regole Visibilità Metodi Widget - HasXotTable
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 **Data Creazione**: 2025-01-27  
 **Ultimo Aggiornamento**: 2026-01-27  
 **Ultimo Aggiornamento**: 2026-01-27  
@@ -14,8 +13,6 @@ Tutti i metodi `getTable*()` nel trait `HasXotTable` sono dichiarati come `prote
 Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perché vengono chiamati da Filament/Livewire dall'esterno della classe. I widget che sovrascrivono questi metodi **DEVONO** mantenere la stessa visibilità `public`.
 
 =======
-=======
->>>>>>> laraxot/dev
 **Status**: Critico
 **Ultimo aggiornamento**: 2026-09-03
 
@@ -25,9 +22,6 @@ Tutti i metodi `getTable*()` in `HasXotTable` sono dichiarati come `public` perc
 
 In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTableActions`, `getTableBulkActions` devono essere migrati verso `table(Table $table): Table`. La regola `resolve*` non esiste come metodo: usare sempre `get*`.
 
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 ## Metodi che Devono Essere Public
 
@@ -57,11 +51,7 @@ In Filament 5, i metodi deprecati `getTableColumns`, `getTableFilters`, `getTabl
 declare(strict_types=1);
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 namespace Modules\healthcare_app\Filament\Widgets;
-=======
-namespace Modules\Quaeris\Filament\Widgets;
->>>>>>> laraxot/dev
 =======
 namespace Modules\Quaeris\Filament\Widgets;
 >>>>>>> laraxot/dev
@@ -110,11 +100,7 @@ class MyWidget extends XotBaseTableWidget
 
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 PHP Fatal error: Access level to Widget::getTableHeaderActions() 
-=======
-PHP Fatal error: Access level to Widget::getTableHeaderActions()
->>>>>>> laraxot/dev
 =======
 PHP Fatal error: Access level to Widget::getTableHeaderActions()
 >>>>>>> laraxot/dev
@@ -126,7 +112,6 @@ must be public (as in class HasXotTable)
 **Soluzione**: Cambiare visibilità a `public`
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 ## Riferimenti
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
@@ -135,8 +120,6 @@ must be public (as in class HasXotTable)
 *Ultimo aggiornamento: 2025-01-27*
 - [Widget Table Configuration](../../../modules/xot/docs/filament/widget-table-configuration.md)
 =======
-=======
->>>>>>> laraxot/dev
 ## Convenzioni di Naming
 
 - `get*()` (mai `resolve*`, `getXot*`): convention Filament/Livewire standard
@@ -147,7 +130,4 @@ must be public (as in class HasXotTable)
 
 - [HasXotTable Trait Source](../../../Modules/Xot/app/Filament/Traits/HasXotTable.php)
 - [Filament 5 Migration Guide](https://filamentphp.com/docs/5.x/tables/upgrade-guide)
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

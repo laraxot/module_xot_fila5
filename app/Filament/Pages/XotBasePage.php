@@ -10,10 +10,6 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
-<<<<<<< HEAD
-=======
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -202,14 +198,6 @@ abstract class XotBasePage extends Page implements HasForms
         $method = new \ReflectionMethod($this, 'getFormSchema');
         $declaringClass = $method->getDeclaringClass()->getName();
 
-<<<<<<< HEAD
-=======
-        if ($declaringClass === self::class || str_starts_with($declaringClass, 'Filament\\')) {
-            return [];
-        }
-
-        /** @var array<int|string, Component> $schema */
->>>>>>> laraxot/dev
         if (self::class === $declaringClass || str_starts_with($declaringClass, 'Filament\\')) {
             return [];
         }

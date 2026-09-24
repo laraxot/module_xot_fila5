@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 /**
  * Guardia a cricchetto sulle collisioni case-insensitive.
  *
@@ -46,11 +43,7 @@ function collisionGroups(): int
     try {
         /** @var array{identical?: array<mixed>, differing?: array<mixed>} $payload */
         $payload = json_decode($process->getOutput(), true);
-<<<<<<< HEAD
     } catch (\Throwable) {
-=======
-    } catch (Throwable) {
->>>>>>> laraxot/dev
         return -1;
     }
 

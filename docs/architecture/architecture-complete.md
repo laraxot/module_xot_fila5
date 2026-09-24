@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 # Xot Module - Complete Architecture Guide (2025)
 
-=======
-<<<<<<< HEAD
-# Xot Module - Complete Architecture Guide (2025)
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 > **Last Updated:** 2025-11-19
 > **PHPStan Level:** 10
 > **Status:** Core Foundation Module
@@ -151,19 +143,9 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array;
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
@@ -602,19 +584,9 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -693,19 +665,9 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -912,16 +874,3 @@ The Xot module is a comprehensive foundation providing:
 **Document Version:** 1.0
 **Generated:** 2025-11-19
 **Author:** Claude Code Analysis
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
----
-module: theme
-topic: architecture-complete
-canonical: ../../../../Themes/docs/shared-components/architecture-complete.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/architecture-complete.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

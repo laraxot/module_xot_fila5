@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -43,7 +42,4 @@ class CreateMyTable extends XotBaseMigration {
 =======
 
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-=======
-
 >>>>>>> laraxot/dev

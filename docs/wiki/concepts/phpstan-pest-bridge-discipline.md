@@ -4,18 +4,8 @@ type: concept
 module: Xot
 tags: [xot, phpstan, pest, testing, bridge]
 created: 2026-06-10
-<<<<<<< HEAD
 updated: 2026-08-31
 qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
-=======
-<<<<<<< HEAD
-updated: 2026-08-31
-qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge"
-=======
-updated: 2026-09-24
-qmd: "Xot phpstan pest bridge discipline plugin-phpstan no PestFunctionBridge skip markTestSkipped"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -61,21 +51,9 @@ si devono stubbare le funzioni Pest nei namespace test.
 - **Fixcity:** helper `ticket()`, `authUser()`, … — [phpstan-pest-testcase-helpers](../../../Fixcity/docs/wiki/concepts/phpstan-pest-testcase-helpers.md); `PestHelper.php` tipizzato
 - **Notify:** `notificationManager()` + trait doubles — [phpstan-pest-test-doubles](../../../Notify/docs/wiki/concepts/phpstan-pest-test-doubles.md)
 - **Xot:** test File — no `@var TestCase $this` se la closure non usa `$this`; no `assertIsString(tempnam())`
-<<<<<<< HEAD
 - **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [PHPSTAN-BEST-PRACTICES](../PHPSTAN-BEST-PRACTICES.md) §7–8)
 - **Tenant:** non ridefinire `mockService()`; non re-tipizzare `$model`/`$baseModel` se il parent ha `mixed`
 - **UI:** `createStub` + `willReturn(null)` per action mock; no `andReturnNull()` Mockery
-=======
-- **Xot Blade:** `RegisterBladeComponentsActionTest` — `Assert::assertSame` sul count collection; Mockery `allows(['execute' => …])` + `@var Action&MockInterface`; no `expect()->toBe*` se PHPStan emette `method.internalClass` (vedi [phpstan-best-practices](../phpstan-best-practices.md) §7–8)
-- **Tenant:** non ridefinire `mockService()`; non re-tipizzare `$model`/`$baseModel` se il parent ha `mixed`
-- **UI:** `createStub` + `willReturn(null)` per action mock; no `andReturnNull()` Mockery
-<<<<<<< HEAD
-=======
-- **Skip:** `Assert::markTestSkipped(...)` come **unica** istruzione del test (niente codice dopo → `deadCode.unreachable`); mai Pest `skip()` senza bridge
-- **Probe trait standalone:** vietati se il trait chiama metodi TestCase (`parent::`, `createUnitMock`, `assertDatabaseHas`) — o il trait vive su `TestCase`, o si elimina il probe (vedi [phpstan-trait-probes](./phpstan-trait-probes.md))
-- **Duplicati case:** su FS Linux `tests/unit` ≠ `tests/Unit` — PHPStan analizza entrambi; tenere un solo albero PascalCase
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Hub piattaforma: [platform-completion-roadmap](../overviews/platform-completion-roadmap.md).
 

@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
-=======
-// use Symfony\Component\Console\Output\BufferedOutput;
-
->>>>>>> laraxot/dev
 class Clock extends XotBaseWidget
 {
     public string $start = '';
@@ -34,11 +29,7 @@ class Clock extends XotBaseWidget
             // Decrement the counter...
             // $this->start = $this->start - 1;
             $this->start = (string) now();
-<<<<<<< HEAD
             if ('impossible' === $this->start) {
-=======
-            if ($this->start === 'impossible') {
->>>>>>> laraxot/dev
                 $cond = false;
             }
         }

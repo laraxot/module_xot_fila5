@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---
 name: 23-ui-phpstan
 description: "Modulo: UI"
@@ -8,8 +7,6 @@ metadata:
   type: bmad
 ---
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======

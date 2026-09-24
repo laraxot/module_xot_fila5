@@ -1,17 +1,10 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 # Correzione Mapping Classi Filament - [DATE]
 
 =======
 # Correzione Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
->>>>>>> laraxot/dev
-=======
-# Correzione Mapping Classi Filament - 2025-12-23
-
-**Data**: 2025-12-23
-
 >>>>>>> laraxot/dev
 **Obiettivo**: Correggere mapping classi inesistenti nel file `filament_class.txt`
 
@@ -127,11 +120,7 @@ Se in futuro si volesse creare queste classi base:
 
 **Stato**: ✅ Mapping corretto per riflettere codice esistente
 <<<<<<< HEAD
-<<<<<<< HEAD
 **Data Correzione**: [DATE]
-=======
-**Data Correzione**: 2025-12-23
->>>>>>> laraxot/dev
 =======
 **Data Correzione**: 2025-12-23
 >>>>>>> laraxot/dev

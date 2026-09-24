@@ -31,14 +31,6 @@ class GetModulePathAction
                 return __DIR__.'/../';
             }
 
-<<<<<<< HEAD
-=======
-            /** @var array<int, string> $files */
-            $files = scandir($modulesPath);
-            $moduleNameLower = Str::lower($moduleName);
-
-            $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
->>>>>>> laraxot/dev
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 

@@ -4,17 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-<<<<<<< HEAD
 use function Safe\preg_replace;
 
 use Webmozart\Assert\Assert;
-=======
-use Webmozart\Assert\Assert;
-
-use function Safe\preg_replace;
-
-
->>>>>>> laraxot/dev
 
 /**
  * Action per normalizzare i nomi dei driver.

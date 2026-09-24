@@ -6,10 +6,6 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-<<<<<<< HEAD
-=======
-use Filament\Tables\Columns\Column;
->>>>>>> laraxot/dev
 use Filament\Tables\Columns\Layout\Stack;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
@@ -28,60 +24,13 @@ class ListCaches extends XotBaseListRecords
 
     public function getHeaderWidgets(): array
     {
-<<<<<<< HEAD
-=======
-        return [];
-    }
-
-    /**
-     * @return array<string, Column>
-     */
-    protected function defineTableColumns(): array
-    {
-        return [
-            'key' => TextColumn::make('key')
-                ->searchable()
-                ->sortable()
-                ->wrap()
-                ->label('Key'),
-            'value' => TextColumn::make('value')
-                ->searchable()
-                ->wrap()
-                ->label('Value'),
-            'expiration' => TextColumn::make('expiration')
-                ->dateTime()
-                ->sortable()
-                ->label('Expiration'),
-        ];
-    }
-
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return $this->defineTableColumns();
-    }
-
-    /**
-     * @return list<\Filament\Tables\Columns\Layout\Component>
-     */
-    public function getGridTableColumns(): array
-    {
-        return [
-            Stack::make($this->defineTableColumns()),
-        ];
-    }
-
->>>>>>> laraxot/dev
         return [
             // Clock::make(),
         ];
     }
 
-<<<<<<< HEAD
     
    
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */

@@ -243,19 +243,9 @@ class MioModelloResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -780,12 +770,4 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
-<<<<<<< HEAD
 ```
-=======
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

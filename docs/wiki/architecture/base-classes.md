@@ -40,19 +40,9 @@ class MyResource extends XotBaseResource
 {
     // ✅ OK - Ha getFormSchema()
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public function getFormSchema(): array { /* ... */ }
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
     // ❌ VIETATO - ERRORE GRAVE
@@ -153,19 +143,9 @@ abstract class XotBaseResource extends Filament\Resources\Resource
      * Get form schema with automatic translations.
      */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -330,19 +310,9 @@ class YourResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-document';
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -413,19 +383,9 @@ use Filament\Forms\Components\TextInput;   // ✅ STILL VALID
 // ✅ OPTIMIZED in XotBase classes
 /** @return array<string, Component> */
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 
 /** @return array<string, PageRegistration> */

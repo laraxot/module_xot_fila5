@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 # Sprint Planning: Xot Infrastructure
 
 ## 🏁 Sprint Goal
@@ -24,7 +21,6 @@ Finalize the core documentation and perform a final PHPStan Level 10 audit.
 ## ✅ Definition of Done
 - All 6 files exist and are verified.
 - No PHPStan errors in the module.
-<<<<<<< HEAD
 =======
 # Xot Module - Sprint Planning
 
@@ -96,6 +92,4 @@ Implement core extension framework with API, hooks, and event bus.
 ---
 
 *Last Updated: March 12, 2026*
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

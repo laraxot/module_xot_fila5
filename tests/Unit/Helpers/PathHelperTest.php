@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Helpers\PathHelper;
 use Modules\Xot\Tests\XotBaseTestCase;
 

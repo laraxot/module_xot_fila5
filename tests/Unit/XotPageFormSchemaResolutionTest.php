@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Tests\TestCase;

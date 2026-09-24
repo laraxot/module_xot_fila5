@@ -13,21 +13,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Model Extra.
  *
-<<<<<<< HEAD
-=======
- * @property string $id
- * @property string $model_type
- * @property string $model_id
- * @property SchemalessAttributes|null $extra_attributes
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- *
- * @method static ExtraFactory factory($count = null, $state = [])
->>>>>>> laraxot/dev
  * @property string                    $id
  * @property string                    $model_type
  * @property string                    $model_id

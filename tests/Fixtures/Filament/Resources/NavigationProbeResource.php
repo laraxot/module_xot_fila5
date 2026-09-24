@@ -15,12 +15,4 @@ class NavigationProbeResource extends XotBaseResource
     protected static string|\UnitEnum|null $navigationGroup = 'Test Group';
 
     protected static ?int $navigationSort = 1;
-<<<<<<< HEAD
-=======
-
-    public function getFormSchemaOld(): array
-    {
-        return [];
-    }
->>>>>>> laraxot/dev
 }

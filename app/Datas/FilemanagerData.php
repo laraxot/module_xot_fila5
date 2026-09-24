@@ -15,13 +15,8 @@ use Spatie\LaravelData\Data;
 final class FilemanagerData extends Data
 {
     /**
-<<<<<<< HEAD
      * @param array<int, string> $disks
      * @param array<int, string> $allowedExt
-=======
-     * @param  array<int, string>  $disks
-     * @param  array<int, string>  $allowedExt
->>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly string $disk = 'public',

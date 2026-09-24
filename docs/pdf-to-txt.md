@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 
@@ -8,8 +7,6 @@ use Smalot\PdfParser\Parser;
 
 
 =======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Pdf to txt"
 type: reference
@@ -27,9 +24,6 @@ https://dev.to/snehalk/how-to-read-content-from-pdf-document-in-laravel-8-4f6d
 
 https://github.com/smalot/pdfparser                  5 days ago
 use Smalot\PdfParser\Parser;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 
 $pdfParser = new Parser();
@@ -40,10 +34,7 @@ https://www.pdfparser.org/
 https://www.pdfparser.org/demo
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -51,19 +42,13 @@ https://www.phpclasses.org/blog/package/9732/post/1-How-to-Extract-Text-and-Imag
 http://www.phpclasses.org/package/9732-PHP-Extract-text-contents-from-PDF-files.html
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
 
 
-<<<<<<< HEAD
 =======
 https://github.com/christian-vigh-phpclasses/PdfToText     on 31 May 2017
 
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 http://www.pdftotext.eu
 
@@ -71,10 +56,7 @@ http://www.pdftotext.eu
 https://mupdf.com/
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -82,10 +64,7 @@ https://laravelquestions.com/2021/09/03/read-pdf-with-php-and-pdf2text-or-pdf-to
 PDF2Text
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -100,10 +79,7 @@ https://github.com/CrossRef/pdfextract
 https://github.com/pdfminer/pdfminer.six
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -120,10 +96,7 @@ https://github.com/shahrukhx01/multilingual-pdf2text
 https://github.com/BinarySwami-10/PDF2Text
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -141,10 +114,7 @@ $tesseract->setTempDir('/var/www/tesseract/public/images');
 echo $tesseract->recognize();
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -155,10 +125,7 @@ https://bestofphp.com/repo/alimranahmed-LaraOCR-php-image-processing
 https://github.com/alimranahmed/LaraOCR
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -169,11 +136,8 @@ https://github.com/spatie/pdf-to-text
 https://www.xpdfreader.com/download.html
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 
-=======
->>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 ---------------------------------------------------------------
@@ -182,12 +146,9 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 ---------------------------------------------------------------
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 =======
 >>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 ---------------------------------------------------------------
@@ -200,11 +161,7 @@ https://www.thetechplatform.com/post/how-to-easily-extract-any-text-from-a-pdf-i
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 <<<<<<< HEAD
-<<<<<<< HEAD
 ---------------------------------------------------------------
-=======
----------------------------------------------------------------
->>>>>>> laraxot/dev
 =======
 ---------------------------------------------------------------
 >>>>>>> laraxot/dev

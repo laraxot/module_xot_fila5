@@ -6,7 +6,6 @@ canonical: ../../../Themes/docs/shared-components/optimization-opportunities-2.m
 
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-opportunities-2.md
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -382,6 +381,4 @@ return array_merge(
 *Autore: Analisi Automatica del Progetto*
 =======
 >>>>>>> 7f6cf6be (.)
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

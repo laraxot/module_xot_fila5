@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ---
 title: "Stato Avanzamento Risoluzione Conflitti Git"
 module: "Xot"
@@ -15,12 +9,6 @@ qmd: "conflict resolution progress"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # Stato Avanzamento Risoluzione Conflitti Git
 
 ## Panoramica

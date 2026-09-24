@@ -14,15 +14,6 @@ use Spatie\LaravelData\Data;
 class RouteData extends Data
 {
     /**
-<<<<<<< HEAD
-=======
-     * @param  string  $prefix  Prefisso per tutte le rotte
-     * @param  array<int, string>  $middleware  Middleware applicati a tutte le rotte
-     * @param  string  $namespace  Namespace per i controller
-     * @param  bool  $use_passport  Se utilizzare Passport per l'autenticazione API
-     * @param  array<int, string>  $except_verify  Rotte eccettuate dalla verifica
-     * @param  bool  $enable  Se le rotte sono abilitate
->>>>>>> laraxot/dev
      * @param string             $prefix        Prefisso per tutte le rotte
      * @param array<int, string> $middleware    Middleware applicati a tutte le rotte
      * @param string             $namespace     Namespace per i controller

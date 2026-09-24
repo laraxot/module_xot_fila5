@@ -15,12 +15,8 @@ use function Safe\mkdir;
 use function Safe\rmdir;
 use function Safe\unlink;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
-uses(TestCase::class)->group('xot');
->>>>>>> laraxot/dev
 /** @var string|null $arrayTestTempDir */
 $arrayTestTempDir = null;
 

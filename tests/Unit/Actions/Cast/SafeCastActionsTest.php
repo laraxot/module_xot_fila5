@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Actions\Cast\SafeBooleanCastAction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
@@ -22,13 +19,6 @@ test('safe array cast action works', function (): void {
     Assert::assertSame(['b' => 2], $action->execute(collect(['b' => 2])));
     Assert::assertSame(['c' => 3], $action->execute((object) ['c' => 3]));
     Assert::assertSame(['scalar'], $action->execute('scalar'));
-<<<<<<< HEAD
-=======
-    Assert::assertSame(['d' => 4], $action->execute(new class {
-        public int $d = 4;
-    }));
-    Assert::assertSame(['e' => 5], $action->execute(new class {
->>>>>>> laraxot/dev
     Assert::assertSame(['d' => 4], $action->execute(new class
     {
         public int $d = 4;

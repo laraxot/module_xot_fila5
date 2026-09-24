@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 ?>
 use Faker\Generator as Faker;
 @isset($properties['remember_token'])

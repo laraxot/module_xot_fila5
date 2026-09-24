@@ -22,12 +22,6 @@ class FakeSeederAction
     /**
      * Execute the fake data seeding process.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
->>>>>>> laraxot/dev
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
      * @param  int<1, max>  $qty  Number of records to generate
      *
@@ -67,16 +61,6 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     * @param class-string<Model> $modelClass
-     *
-     * @throws \RuntimeException
->>>>>>> laraxot/dev
      * @param  class-string<Model>  $modelClass
      * @return Factory<Model>
      * @return Factory<Model>
@@ -98,12 +82,6 @@ class FakeSeederAction
     /**
      * Send a notification about the seeding completion.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
->>>>>>> laraxot/dev
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $count
      */
@@ -119,12 +97,6 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
->>>>>>> laraxot/dev
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $qty
      */

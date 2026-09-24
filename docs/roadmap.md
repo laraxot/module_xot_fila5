@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 # Roadmap Modulo Xot - Completamento e Miglioramenti
 
 **Data Creazione**: 2026-01-02
@@ -348,8 +347,6 @@ Xot is the foundational module of the Laraxot ecosystem. Its mission is to provi
 - Self-healing database migrations.
 - Automatic API documentation generation for all modules.
 =======
-=======
->>>>>>> laraxot/dev
 # Xot Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -1185,108 +1182,4 @@ Xot Module (Core Framework)
 ---
 
 *Questa roadmap è specifica per il modulo Xot e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-
-
----
-
-## 📌 Appendice — Stato attuale e TODO operativi (roadmap precedente)
-
-### 📊 Stato Attuale
-
-### Metriche
-- **File PHP**: 1097
-- **Test**: 4 (copertura bassa - da aumentare)
-- **Documentazione**: 2602 file
-- **PHPStan Level 10**: ✅ 0 errori
-- **Models**: 44
-- **Filament Resources**: 100
-- **Actions**: 156
-
-### Componenti Principali
-- **Base Classes**: XotBaseModel, XotBaseResource, XotBaseWidget, XotBasePage, XotBaseServiceProvider
-- **Service Providers**: 20+ provider
-- **Traits**: 15+ trait specializzati
-- **Actions**: 156 actions per funzionalità core
-
-### 🚨 TODO e Miglioramenti Identificati
-
-### 1. PdfEngineEnum - Completamento
-**File**: `app/Actions/Pdf/PdfEngineEnum.php:14`
-**Problema**: Enum stub temporaneo, da implementare completamente
-**Priorità**: 🟡 Media
-**Stima**: 2-4 ore
-
-### 2. XotServiceProvider - Re-implementazione Feature
-**File**: `app/Providers/XotServiceProvider.php:97`
-**Problema**: Feature commentata, da re-implementare quando compatibile
-**Priorità**: 🟡 Media
-**Stima**: 4-8 ore
-
-### 3. ArtisanService - TODO
-**File**: `app/Services/ArtisanService.php:26`
-**Problema**: TODO da implementare
-**Priorità**: 🟢 Bassa
-**Stima**: 2-4 ore
-
-### 4. Test Coverage
-**Problema**: Solo 4 test, copertura molto bassa
-**Priorità**: 🔴 Alta
-**Stima**: 30-40 ore
-
-### 🚀 Quick Wins (Prima Settimana)
-
-1. ✅ Implementare PdfEngineEnum (2-4 ore)
-2. ✅ Re-implementare feature XotServiceProvider (4-8 ore)
-3. ✅ Completare ArtisanService (2-4 ore)
-4. ✅ Test base classes principali (5-8 ore)
-
-**Totale Quick Wins**: 13-24 ore (2-3 giorni)
-
-### 📝 Note
-
-- Xot è il modulo framework base - deve essere perfetto
-- Nessuna dipendenza da altri moduli
-- Tutte le modifiche devono rispettare filosofia DRY + KISS
-- Ogni feature deve essere testata
-- Documentazione sempre aggiornata
-- PHPStan Level 10 sempre mantenuto
-- Performance sempre monitorata
-
-### 🔗 Collegamenti
-
-- [Filosofia Xot](./philosophy.md)
-- [Base Classes](./architecture/base-classes.md)
-- [PHPStan Code Quality Guide](./phpstan-code-quality-guide.md)
-
----
-
-# Product Roadmap - Xot Core Framework
-
-### 🎯 Vision & Strategy
-Xot is the foundational module of the Laraxot ecosystem. Its mission is to provide zero-cost abstractions that enforce architectural standards (XotBase, Actions-over-Services) while maximizing performance and type safety.
-
-### 🗓️ Timeline
-
-### Q1 2026: Consolidation (Current)
-- **PHPStan Level 10 Compliance** - *Status: Shipped*
-- **XotBase Resource Refactoring** - *Status: In Progress*
-- **Documentation Standardization** - *Status: In Progress*
-
-### Q2 2026: Modernization
-- **Native Folio & Volt Support** - *Status: Planned*
-- **Xot CLI for Module Scaffolding** - *Status: Planned*
-
-### 🚦 Status Overview
-| Feature | Status | Owner | Target Date |
-| :--- | :--- | :--- | :--- |
-| Core Abstractions | ✅ Stable | @CoreTeam | Feb 2026 |
-| PDF Generation Action | ✅ Shipped | @CoreTeam | Jan 2026 |
-| AI-Ready Scaffolding | 🏗️ In Dev | @AI-Agent | Apr 2026 |
-
-### 📂 Backlog / Future Ideas
-- Self-healing database migrations.
-- Automatic API documentation generation for all modules.
 >>>>>>> laraxot/dev

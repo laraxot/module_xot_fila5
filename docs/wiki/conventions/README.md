@@ -1,12 +1,9 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -16,9 +13,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 # Convenzioni
 
@@ -33,7 +27,6 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto.
-<<<<<<< HEAD
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -167,9 +160,6 @@ Questa cartella contiene le convenzioni di nomenclatura e le regole di stile uti
 ## Note
 
 Queste convenzioni devono essere seguite per mantenere la coerenza del codice in tutto il progetto. 
-=======
-
->>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -220,10 +210,7 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
-<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
-=======
->>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -250,7 +237,6 @@ Queste convenzioni devono essere seguite per mantenere la coerenza del codice in
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
-<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -291,6 +277,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

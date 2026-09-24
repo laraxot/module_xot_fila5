@@ -4,19 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Support;
 
-<<<<<<< HEAD
 use Filament\Tables\Table;
-=======
-use Filament\Schemas\Schema;
-use Filament\Support\Contracts\TranslatableContentDriver;
-use Filament\Tables\Columns\Column;
-use Filament\Tables\Columns\ColumnGroup;
-use Filament\Tables\Columns\Layout\Component;
-use Filament\Tables\Filters\BaseFilter;
-use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\Xot\Filament\Traits\HasXotTable;
 
@@ -27,11 +15,7 @@ class HasTableWithoutOptionalMethodsTestClass
 {
     use HasXotTable;
 
-<<<<<<< HEAD
     public function getLayoutView(): mixed
-=======
-    public function getLayoutView(): object
->>>>>>> laraxot/dev
     {
         $mock = \Mockery::mock();
         $mock->allows(['getTableColumns' => []]);
@@ -84,11 +68,7 @@ class HasTableWithoutOptionalMethodsTestClass
         return [];
     }
 
-<<<<<<< HEAD
     public function getTableFiltersForm(): mixed
-=======
-    public function getTableFiltersForm(): ?Schema
->>>>>>> laraxot/dev
     {
         return null;
     }
@@ -115,11 +95,7 @@ class HasTableWithoutOptionalMethodsTestClass
         return [];
     }
 
-<<<<<<< HEAD
     public function getTableColumnToggleForm(): mixed
-=======
-    public function getTableColumnToggleForm(): ?Schema
->>>>>>> laraxot/dev
     {
         return null;
     }
@@ -130,23 +106,12 @@ class HasTableWithoutOptionalMethodsTestClass
         return [];
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return Model|array<string, mixed>|null
-     */
-    public function getTableRecord(): Model|array|null
->>>>>>> laraxot/dev
     public function getTableRecord(): mixed
     {
         return null;
     }
 
-<<<<<<< HEAD
     public function getTableRecordKey(): mixed
-=======
-    public function getTableRecordKey(): ?string
->>>>>>> laraxot/dev
     {
         return null;
     }
@@ -173,61 +138,26 @@ class HasTableWithoutOptionalMethodsTestClass
         return [];
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return Builder<Model>|null
-     */
-    public function getTableQueryForExport(): ?Builder
->>>>>>> laraxot/dev
     public function getTableQueryForExport(): mixed
     {
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return Builder<Model>|null
-     */
-    public function getFilteredTableQuery(): ?Builder
->>>>>>> laraxot/dev
     public function getFilteredTableQuery(): mixed
     {
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return Builder<Model>|null
-     */
-    public function getFilteredSortedTableQuery(): ?Builder
->>>>>>> laraxot/dev
     public function getFilteredSortedTableQuery(): mixed
     {
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return Builder<Model>|null
-     */
-    public function getAllTableSummaryQuery(): ?Builder
->>>>>>> laraxot/dev
     public function getAllTableSummaryQuery(): mixed
     {
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return Builder<Model>|null
-     */
-    public function getPageTableSummaryQuery(): ?Builder
->>>>>>> laraxot/dev
     public function getPageTableSummaryQuery(): mixed
     {
         return null;
@@ -238,29 +168,17 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
-<<<<<<< HEAD
     public function getMountedTableActionForm(): mixed
-=======
-    public function getMountedTableActionForm(): ?Schema
->>>>>>> laraxot/dev
     {
         return null;
     }
 
-<<<<<<< HEAD
     public function getMountedTableActionRecord(): mixed
-=======
-    public function getMountedTableActionRecord(): ?Model
->>>>>>> laraxot/dev
     {
         return null;
     }
 
-<<<<<<< HEAD
     public function getMountedTableActionRecordKey(): mixed
-=======
-    public function getMountedTableActionRecordKey(): ?string
->>>>>>> laraxot/dev
     {
         return null;
     }
@@ -270,11 +188,7 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
-<<<<<<< HEAD
     public function getMountedTableBulkActionForm(): mixed
-=======
-    public function getMountedTableBulkActionForm(): ?Schema
->>>>>>> laraxot/dev
     {
         return null;
     }
@@ -314,59 +228,17 @@ class HasTableWithoutOptionalMethodsTestClass
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    public function deselectAllTableRecords(): void
-    {
-    }
-
-    public function mountTableAction(): void
-    {
-    }
-
-    public function mountTableBulkAction(): void
-    {
-    }
-
-    public function mountedTableActionRecord(): ?Model
->>>>>>> laraxot/dev
     public function deselectAllTableRecords(): void {}
 
     public function mountTableAction(): void {}
 
     public function mountTableBulkAction(): void {}
 
-<<<<<<< HEAD
     public function mountedTableActionRecord(): mixed
-=======
-    public function mountedTableActionRecord(): ?Model
->>>>>>> laraxot/dev
     {
         return null;
     }
 
-<<<<<<< HEAD
-=======
-    public function replaceMountedTableAction(): void
-    {
-    }
-
-    public function replaceMountedTableBulkAction(): void
-    {
-    }
-
-    public function resetTableSearch(): void
-    {
-    }
-
-    public function resetTableColumnSearch(): void
-    {
-    }
-
-    public function toggleTableReordering(): void
-    {
-    }
->>>>>>> laraxot/dev
     public function replaceMountedTableAction(): void {}
 
     public function replaceMountedTableBulkAction(): void {}
@@ -382,11 +254,7 @@ class HasTableWithoutOptionalMethodsTestClass
         return '';
     }
 
-<<<<<<< HEAD
     public function makeFilamentTranslatableContentDriver(): mixed
-=======
-    public function makeFilamentTranslatableContentDriver(): ?TranslatableContentDriver
->>>>>>> laraxot/dev
     {
         return null;
     }

@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * Pest Laravel helper stubs for PHPStan.
  *
@@ -22,14 +18,6 @@ namespace Pest\Laravel;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Response;
 use Illuminate\Testing\TestResponse;
-<<<<<<< HEAD
-=======
-use Pest\PendingCalls\AfterEachCall;
-use Pest\PendingCalls\BeforeEachCall;
-use Pest\PendingCalls\DescribeCall;
-use Pest\PendingCalls\TestCall;
-use Pest\PendingCalls\UsesCall;
->>>>>>> laraxot/dev
 
 /**
  * Authenticate as a given model or ID.
@@ -44,14 +32,8 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
 /**
  * Perform a GET request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $options
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $options
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function get(string|array $uri = '', array $options = []): TestResponse
@@ -62,13 +44,6 @@ function get(string|array $uri = '', array $options = []): TestResponse
 /**
  * Perform a POST request.
  *
-<<<<<<< HEAD
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- * @param array<string, mixed>            $options
- *
->>>>>>> laraxot/dev
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $options
@@ -82,14 +57,8 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
 /**
  * Perform a PUT request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function put(string|array $uri, array $data = []): TestResponse
@@ -100,14 +69,8 @@ function put(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a PATCH request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function patch(string|array $uri, array $data = []): TestResponse
@@ -118,12 +81,7 @@ function patch(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a DELETE request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
-=======
- * @param string|array<int|string, mixed> $uri
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function delete(string|array $uri): TestResponse
@@ -134,12 +92,7 @@ function delete(string|array $uri): TestResponse
 /**
  * Perform a HEAD request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
-=======
- * @param string|array<int|string, mixed> $uri
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function head(string|array $uri): TestResponse
@@ -150,12 +103,7 @@ function head(string|array $uri): TestResponse
 /**
  * Perform an OPTIONS request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
-=======
- * @param string|array<int|string, mixed> $uri
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function options(string|array $uri): TestResponse
@@ -166,14 +114,8 @@ function options(string|array $uri): TestResponse
 /**
  * Perform a JSON GET request.
  *
-<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $headers
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $headers
- *
->>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
@@ -184,13 +126,6 @@ function getJson(string|array $uri, array $headers = []): TestResponse
 /**
  * Perform a JSON POST request.
  *
-<<<<<<< HEAD
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- * @param array<string, mixed>            $headers
- *
->>>>>>> laraxot/dev
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
@@ -204,13 +139,6 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
 /**
  * Perform a JSON PUT request.
  *
-<<<<<<< HEAD
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- * @param array<string, mixed>            $headers
- *
->>>>>>> laraxot/dev
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
@@ -224,13 +152,6 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
 /**
  * Perform a JSON PATCH request.
  *
-<<<<<<< HEAD
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- * @param array<string, mixed>            $headers
- *
->>>>>>> laraxot/dev
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
@@ -244,13 +165,6 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
 /**
  * Perform a JSON DELETE request.
  *
-<<<<<<< HEAD
-=======
- * @param string|array<int|string, mixed> $uri
- * @param array<string, mixed>            $data
- * @param array<string, mixed>            $headers
- *
->>>>>>> laraxot/dev
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
@@ -273,13 +187,6 @@ function followingRedirects(int $number = 5): TestResponse
 
 /**
  * Define a test case.
-<<<<<<< HEAD
-=======
- *
- * Return void: TestCall è `@internal` → `return.internalClass` se tipizzato.
- */
-function test(string $description, ?\Closure $closure = null): void
->>>>>>> laraxot/dev
  */
 function test(string $description, ?\Closure $closure = null): mixed
 {
@@ -289,11 +196,7 @@ function test(string $description, ?\Closure $closure = null): mixed
 /**
  * Define a test case.
  */
-<<<<<<< HEAD
 function it(string $description, ?\Closure $closure = null): mixed
-=======
-function it(string $description, ?\Closure $closure = null): TestCall
->>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -301,11 +204,7 @@ function it(string $description, ?\Closure $closure = null): TestCall
 /**
  * Define a test group.
  */
-<<<<<<< HEAD
 function describe(string $description, \Closure $closure): mixed
-=======
-function describe(string $description, \Closure $closure): DescribeCall
->>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -313,11 +212,7 @@ function describe(string $description, \Closure $closure): DescribeCall
 /**
  * Define a before each hook.
  */
-<<<<<<< HEAD
 function beforeEach(\Closure $closure): mixed
-=======
-function beforeEach(\Closure $closure): BeforeEachCall
->>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -325,11 +220,7 @@ function beforeEach(\Closure $closure): BeforeEachCall
 /**
  * Define an after each hook.
  */
-<<<<<<< HEAD
 function afterEach(\Closure $closure): mixed
-=======
-function afterEach(\Closure $closure): AfterEachCall
->>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }
@@ -339,11 +230,7 @@ function afterEach(\Closure $closure): AfterEachCall
  *
  * @param  class-string  ...$classes
  */
-<<<<<<< HEAD
 function uses(string ...$classes): mixed
-=======
-function uses(string ...$classes): UsesCall
->>>>>>> laraxot/dev
 {
     throw new \RuntimeException('Stub: This function is meant for static analysis only.');
 }

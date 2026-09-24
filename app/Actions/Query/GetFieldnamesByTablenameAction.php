@@ -16,20 +16,12 @@ final class GetFieldnamesByTablenameAction
     /**
      * Get column names from a table with specific database connection.
      *
-<<<<<<< HEAD
      * @param string      $table          Table name to get columns from
      * @param string|null $connectionName Database connection name (optional)
      *
      * @throws \InvalidArgumentException
      *
      * @return list<string>
-=======
-     * @param  string  $table  Table name to get columns from
-     * @param  string|null  $connectionName  Database connection name (optional)
-     * @return list<string>
-     *
-     * @throws \InvalidArgumentException
->>>>>>> laraxot/dev
      */
     public function execute(string $table, ?string $connectionName = null): array
     {
@@ -38,11 +30,6 @@ final class GetFieldnamesByTablenameAction
             throw new \InvalidArgumentException('Table name cannot be empty.');
         }
 
-<<<<<<< HEAD
-=======
-        Assert::string($connectionName ??= config('database.default'));
-
->>>>>>> laraxot/dev
         // Use default connection if none is provided
         Assert::string($connectionName ??= config('database.default'));
 
@@ -56,20 +43,6 @@ final class GetFieldnamesByTablenameAction
             throw new \InvalidArgumentException(sprintf('Table "%s" does not exist in connection "%s".', $table, $connectionName));
         }
 
-<<<<<<< HEAD
-=======
-        try {
-            $columns = Schema::connection($connectionName)->getColumnListing($table);
-
-            return array_values(array_map(
-                static function (mixed $column): string {
-                    Assert::string($column);
-
-                    return $column;
-                },
-                $columns,
-            ));
->>>>>>> laraxot/dev
         // Get and return column listing
         try {
             $columns = Schema::connection($connectionName)->getColumnListing($table);

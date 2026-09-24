@@ -34,11 +34,7 @@ class StatesChartWidget extends XotBaseChartWidget
         try {
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
-<<<<<<< HEAD
             $instance = new $modelClass;
-=======
-            $instance = new $modelClass();
->>>>>>> laraxot/dev
 
             /** @var array<string, string> $colors */
             $colors = [

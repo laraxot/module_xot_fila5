@@ -1,7 +1,6 @@
 # Troubleshooting Guide
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 ## Common Issues
 
 =======
@@ -23,15 +22,10 @@
 > **Core module for the FixCity Platform.**
 =======
 >>>>>>> laraxot/dev
-=======
-## Common Issues
-
->>>>>>> laraxot/dev
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
-<<<<<<< HEAD
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -51,8 +45,6 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -78,7 +70,6 @@
 
 ## Getting Help
 
-<<<<<<< HEAD
 =======
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -111,13 +102,10 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
 >>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -155,6 +143,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

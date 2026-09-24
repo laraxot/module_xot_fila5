@@ -58,13 +58,8 @@ class CopyFromLastYearAction extends XotBaseAction
     }
 
     /**
-<<<<<<< HEAD
      * @param array<string, mixed> $arguments
      * @param array<string, mixed> $data
-=======
-     * @param  array<string, mixed>  $arguments
-     * @param  array<string, mixed>  $data
->>>>>>> laraxot/dev
      */
     public function execute(array $arguments, array $data): void
     {
@@ -76,11 +71,7 @@ class CopyFromLastYearAction extends XotBaseAction
             return;
         }
 
-<<<<<<< HEAD
         if (! is_string($year) && null !== $year) {
-=======
-        if (! is_string($year) && $year !== null) {
->>>>>>> laraxot/dev
             return;
         }
 

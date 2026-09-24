@@ -51,11 +51,7 @@ final class PdfBuilderAdapter implements PdfBuilderContract
     }
 
     /**
-<<<<<<< HEAD
      * @param list<mixed> $arguments
-=======
-     * @param  list<mixed>  $arguments
->>>>>>> laraxot/dev
      */
     private function callBuilderMethod(string $method, array $arguments = []): object
     {

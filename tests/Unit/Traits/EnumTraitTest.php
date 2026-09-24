@@ -14,12 +14,8 @@ use Modules\Xot\Tests\Fixtures\Enums\TestEnum;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
-uses(TestCase::class)->group('xot');
->>>>>>> laraxot/dev
 it('gets label via translation', function (): void {
     $label = TestEnum::ALPHA->getLabel();
     Assert::assertSame('string', gettype($label));
@@ -46,11 +42,7 @@ it('gets searchable values', function (): void {
 
 it('gets form schema', function (): void {
     $schema = TestEnum::ALPHA->getFormSchema();
-<<<<<<< HEAD
     //Assert::assertIsArray($schema);
-=======
-    // Assert::assertIsArray($schema);
->>>>>>> laraxot/dev
     Assert::assertCount(2, $schema);
 });
 
@@ -63,23 +55,11 @@ it('adds columns to blueprint in create context', function (): void {
 
 it('adds columns to blueprint in update context with hasColumn check', function (): void {
     /** @var XotBaseMigration&MockInterface $migration */
-<<<<<<< HEAD
     $migration = Mockery::mock(XotBaseMigration::class);
-=======
-    $migration = \Mockery::mock(XotBaseMigration::class);
->>>>>>> laraxot/dev
     $migration->shouldReceive('hasColumn')->with('alpha')->andReturn(true);
     $migration->shouldReceive('hasColumn')->with('beta')->andReturn(false);
 
     /** @var Blueprint&MockInterface $columnBeta */
-<<<<<<< HEAD
-=======
-    $columnBeta = \Mockery::mock(Blueprint::class);
-    $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
-
-    /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
->>>>>>> laraxot/dev
     $columnBeta = Mockery::mock(Blueprint::class);
     $columnBeta->shouldReceive('nullable')->andReturn($columnBeta);
 
@@ -92,18 +72,6 @@ it('adds columns to blueprint in update context with hasColumn check', function 
 
 it('updates columns calls columns', function (): void {
     /** @var Blueprint&MockInterface $column */
-<<<<<<< HEAD
-=======
-    $column = \Mockery::mock(Blueprint::class);
-    $column->shouldReceive('nullable')->andReturn($column);
-
-    /** @var Blueprint&MockInterface $table */
-    $table = \Mockery::mock(Blueprint::class);
-    $table->shouldReceive('string')->andReturn($column);
-
-    /** @var XotBaseMigration&MockInterface $migration */
-    $migration = \Mockery::mock(XotBaseMigration::class);
->>>>>>> laraxot/dev
     $column = Mockery::mock(Blueprint::class);
     $column->shouldReceive('nullable')->andReturn($column);
 
@@ -120,11 +88,7 @@ it('updates columns calls columns', function (): void {
 
 it('drops columns', function (): void {
     /** @var Blueprint&MockInterface $table */
-<<<<<<< HEAD
     $table = Mockery::mock(Blueprint::class);
-=======
-    $table = \Mockery::mock(Blueprint::class);
->>>>>>> laraxot/dev
     $table->shouldReceive('dropColumn')->with(['alpha', 'beta']);
 
     TestEnum::dropColumns($table);

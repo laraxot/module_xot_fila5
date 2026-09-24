@@ -59,19 +59,9 @@ abstract class XotBaseRelationManager extends RelationManager
 class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -154,19 +144,9 @@ class UserResource extends XotBaseResource
 ### **2. Schema Form Standardizzato**
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 {
     return [
@@ -297,12 +277,4 @@ return [
 ---
 
 **Ultimo aggiornamento:** Gennaio 2025
-<<<<<<< HEAD
 **Versione:** 2.0 - Consolidata DRY + KISS
-=======
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

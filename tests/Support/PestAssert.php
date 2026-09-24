@@ -81,11 +81,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< HEAD
      * @param class-string $expectedClass
-=======
-     * @param  class-string  $expectedClass
->>>>>>> laraxot/dev
      */
     public static function instanceOf(string $expectedClass, mixed $actual): void
     {
@@ -197,11 +193,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< HEAD
      * @param iterable<array-key> $keys
-=======
-     * @param  iterable<array-key>  $keys
->>>>>>> laraxot/dev
      */
     public static function hasKeys(iterable $keys, mixed $actual): void
     {
@@ -218,11 +210,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< HEAD
      * @param iterable<string> $properties
-=======
-     * @param  iterable<string>  $properties
->>>>>>> laraxot/dev
      */
     public static function hasProperties(iterable $properties, mixed $actual): void
     {
@@ -336,11 +324,7 @@ final class PestAssert
     }
 
     /**
-<<<<<<< HEAD
      * @param array<array-key, mixed> $constraints
-=======
-     * @param  array<array-key, mixed>  $constraints
->>>>>>> laraxot/dev
      */
     private static function assertThrownExceptionMatches(\Throwable $exception, array $constraints): void
     {

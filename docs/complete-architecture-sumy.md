@@ -125,19 +125,9 @@ Filament Resource → XotBaseResource → FilamentResource
 ### Required Implementation
 ```php
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 abstract public function getFormSchema(): array
 =======
 abstract public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
-abstract public static function getFormSchema(): array
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -197,12 +187,4 @@ Laraxot is not just a framework but a **way of thinking** about application deve
 - **Inheritance over Composition**: Clear inheritance chains for maintainability
 - **Type Safety over Speed**: Strong typing for long-term maintainability
 
-<<<<<<< HEAD
 This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
-=======
-<<<<<<< HEAD
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
-=======
-This architecture creates a harmonious system where all components work together in a <nome progetto>able, maintainable way that supports the DRY and KISS principles while providing the flexibility needed for complex applications.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

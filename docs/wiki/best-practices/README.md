@@ -1,12 +1,9 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -16,9 +13,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 # Best Practices
 
@@ -50,7 +44,6 @@ updated: 2026-08-24
 
 ## Code Quality
 - PHPStan level 9+ for all new code
-<<<<<<< HEAD
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
@@ -74,8 +67,6 @@ updated: 2026-08-24
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
 - PHPStan level 9+ for all new code
-=======
->>>>>>> laraxot/dev
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
@@ -85,7 +76,6 @@ updated: 2026-08-24
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
-<<<<<<< HEAD
 
 ---
 
@@ -175,6 +165,4 @@ Core module for the FixCity Platform.
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev

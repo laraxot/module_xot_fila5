@@ -74,11 +74,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     protected static function getResourceClass(): string
     {
-<<<<<<< HEAD
         if (isset(static::$resource) && '' !== static::$resource) {
-=======
-        if (isset(static::$resource) && static::$resource !== '') {
->>>>>>> laraxot/dev
             return static::$resource;
         }
 
@@ -213,11 +209,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-<<<<<<< HEAD
                 if ($record === null) {
-=======
-                if (null === $record) {
->>>>>>> laraxot/dev
                     return false;
                 }
 
@@ -227,11 +219,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-<<<<<<< HEAD
                 if ($record === null) {
-=======
-                if (null === $record) {
->>>>>>> laraxot/dev
                     return false;
                 }
 
@@ -301,15 +289,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-<<<<<<< HEAD
     public function canDeleteBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
-=======
-    public function canDeleteBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
->>>>>>> laraxot/dev
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -320,15 +302,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-<<<<<<< HEAD
     public function canDetachBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
-=======
-    public function canDetachBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
->>>>>>> laraxot/dev
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

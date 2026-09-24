@@ -12,12 +12,6 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-<<<<<<< HEAD
-=======
-        'label' => 'metatag.navigation',
-        'icon' => 'metatag.navigation',
-        'sort' => 95,
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'name' => [
@@ -330,14 +324,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-<<<<<<< HEAD
-=======
-        'save' => [
-            'label' => 'save',
-            'icon' => 'save',
-            'tooltip' => 'save',
-        ],
->>>>>>> laraxot/dev
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Metatag',

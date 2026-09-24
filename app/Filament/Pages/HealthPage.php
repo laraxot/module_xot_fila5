@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/shuvroroy/filament-spatie-laravel-health/tree/main
  */

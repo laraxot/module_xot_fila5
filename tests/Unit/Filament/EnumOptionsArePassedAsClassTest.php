@@ -10,12 +10,8 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 use function Safe\preg_match_all;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
-=======
-uses(TestCase::class)->group('xot');
->>>>>>> laraxot/dev
 /**
  * In Filament 5 `->options()` accetta la **classe** dell'enum.
  *

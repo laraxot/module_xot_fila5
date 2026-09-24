@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * -WIP.
  */
@@ -49,14 +45,6 @@ class GetViewBlocksOptionsByTypeAction
         }
 
         Assert::isArray($files, 'Il risultato di File::glob() deve essere un array');
-<<<<<<< HEAD
-=======
-        /** @var array<int, string> $files */
-        $fixPathAction = app(FixPathAction::class);
-        Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');
-
-        $opts = Arr::mapWithKeys($files, function (string $path) use ($img, $type, $fixPathAction): array {
->>>>>>> laraxot/dev
 
         $fixPathAction = app(FixPathAction::class);
         Assert::isCallable([$fixPathAction, 'execute'], 'FixPathAction::execute deve essere chiamabile');

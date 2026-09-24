@@ -1,8 +1,5 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 ---
 title: "Index"
 type: reference
@@ -11,9 +8,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 # Xot Module - commands Index
 

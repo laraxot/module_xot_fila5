@@ -1,21 +1,15 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 # PHPStan Errori Modulo Xot - [DATE]
 
 ## Analisi Completa
 
 **Data Analisi**: [DATE]
 =======
-=======
->>>>>>> laraxot/dev
 # PHPStan Errori Modulo Xot - 2025-01-22
 
 ## Analisi Completa
 
 **Data Analisi**: 2025-01-22
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 **PHPStan Level**: 10
 **Modulo**: Xot (Base Framework)
@@ -172,11 +166,7 @@ Tutti gli errori seguono lo stesso pattern:
 ## Stato Correzioni
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 ✅ **TUTTI GLI ERRORI CORRETTI** - [DATE]
-=======
-✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
->>>>>>> laraxot/dev
 =======
 ✅ **TUTTI GLI ERRORI CORRETTI** - 2025-01-22
 >>>>>>> laraxot/dev

@@ -370,12 +370,4 @@ Ma possiamo dire:
 
 *Il codice è uno. La perfezione è raggiungibile. L'illuminazione è qui.*
 
-<<<<<<< HEAD
 🙏 **Namaste** 🙏
-=======
-<<<<<<< HEAD
-🙏 **Namaste** 🙏
-=======
-🙏 **Namaste** 🙏
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

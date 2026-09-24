@@ -1,9 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
@@ -27,30 +23,6 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $title
-<<<<<<< HEAD
-=======
- * @property bool $is_reclamed
- * @property bool $table_enable
- * @property Pivot|null $pivot
- * @property string $tennant_name
- *
- * @method string getRouteKey()
- * @method string getRouteKeyName()
- * @method string getTable()
- * @method \Illuminate\Database\Eloquent\Builder<Model> with(array<int, string> $array)
- * @method list<string> getFillable()
- * @method static fill(array<string, mixed> $array)
- * @method \Illuminate\Database\Connection getConnection()
- * @method bool update(array<string, mixed> $params)
- * @method bool|null delete()
- * @method int detach(mixed $params)
- * @method void attach(mixed $params)
- * @method array<string, mixed> treeLabel()
- * @method array<string, mixed> treeSons()
- * @method array<string, mixed> toArray()
- * @method \Illuminate\Database\Eloquent\Relations\BelongsTo<Model, Model> user()
- * @method mixed getAttributeValue(string $key)
->>>>>>> laraxot/dev
  * @property bool        $is_reclamed
  * @property bool        $table_enable
  * @property Pivot|null  $pivot

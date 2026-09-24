@@ -15,13 +15,6 @@ class GetViewNameSpacePathAction
     /**
      * Ottiene il percorso di un namespace di vista.
      *
-<<<<<<< HEAD
-=======
-     *
-     * @param string $ns Il namespace della vista
-     *
-     *
->>>>>>> laraxot/dev
      * @param string $ns Il namespace della vista
      *
      * @return string|null Il percorso del namespace o null se non trovato

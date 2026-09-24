@@ -36,10 +36,7 @@ While `Xot` does not contain specific business logic, it profoundly influences h
 `Xot` is, therefore, not just a utility module but the architectural consciousness of the entire project.
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 ## Filament Tables Pattern: XotBaseResourceTable
 
 **Critical Design**: Classes extending `XotBaseResourceTable` delegate table configuration through the `table()` method. This is **NOT** a method override — it is an implementation requirement.
@@ -104,9 +101,6 @@ All Table classes extending XotBaseResourceTable:
 
 ---
 
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
 >>>>>>> laraxot/dev
 ## 🤖 Integration with Model Context Protocol (MCP)
 

@@ -15,13 +15,6 @@ use Spatie\LaravelData\Data;
 final class AuthData extends Data
 {
     /**
-<<<<<<< HEAD
-=======
-     * @param  array<string>  $guards
-     * @param  array<string, array<string, string>>  $providers
-     * @param  array<string, bool|int|string>  $throttle
-     * @param  array<string, bool>  $social
->>>>>>> laraxot/dev
      * @param array<string>                        $guards
      * @param array<string, array<string, string>> $providers
      * @param array<string, bool|int|string>       $throttle
