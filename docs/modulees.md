@@ -88,9 +88,13 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [

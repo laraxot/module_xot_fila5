@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Artisan;
 use Modules\Xot\Database\Factories\ModuleFactory;
 use Modules\Xot\Models\Module;
@@ -10,6 +10,15 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+=======
+
+uses(Modules\Xot\Tests\TestCase::class);
+use Illuminate\Support\Facades\Artisan;
+use Modules\Xot\Database\Factories\ModuleFactory;
+use Modules\Xot\Models\Module;
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 it('can create a test module', function () {
     $module = ModuleFactory::new()->createOne([
         'name' => 'TestModule',

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni di Routing
 
 ## Struttura Base
@@ -85,3 +86,12 @@ Route::get('/auth/login', [AuthController::class, 'login']);
 - Usare namespace per i componenti Volt
 - Documentare eccezioni
 - Aggiornare moduli esistenti
+=======
+---
+module: theme
+topic: routing-conventions
+canonical: ../../../Themes/docs/shared-components/routing-conventions.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/routing-conventions.md
+>>>>>>> laraxot/dev

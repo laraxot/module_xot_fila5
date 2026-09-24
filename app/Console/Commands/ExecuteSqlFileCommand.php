@@ -6,10 +6,25 @@ namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+<<<<<<< .merge_file_gnCzVu
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
+=======
+<<<<<<< HEAD
+use Webmozart\Assert\Assert;
+
+use function Safe\file_get_contents;
+
+=======
+
+use function Safe\file_get_contents;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LMI9Fx
 class ExecuteSqlFileCommand extends Command
 {
     /**

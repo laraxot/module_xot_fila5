@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6pnsax
 ---
 title: "Filament Version Declaration — {ModuleOrThemeName}"
 module: "Xot"
@@ -9,6 +10,8 @@ qmd: "filament version"
 related:
   - "./eloquent-magic-properties-rule.md"
 ---
+=======
+>>>>>>> .merge_file_H8hdKb
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

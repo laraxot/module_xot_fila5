@@ -1,10 +1,25 @@
 <?php
 
+<<<<<<< .merge_file_4TtynT
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_t4dluy
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
+<<<<<<< .merge_file_4TtynT
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_t4dluy
 namespace Modules\Xot\Actions\Model;
 
 use Spatie\QueueableAction\QueueableAction;

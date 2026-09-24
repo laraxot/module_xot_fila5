@@ -90,6 +90,14 @@ class {Model} extends {Package}{Model}
 - **[third-party-model-inheritance-philosophy.md](third-party-model-inheritance-philosophy.md)** - Complete philosophy guide
 
 ### Module-Specific Patterns
+<<<<<<< HEAD
+=======
+- **[User Module](../user/docs/third-party-model-patterns.md)** - Permission & Role integration
+- **[Activity Module](../activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
+
+### Related Documentation
+- **[Model Architecture](models/model_architecture.md)** - Laraxot model patterns
+>>>>>>> laraxot/dev
 - **[User Module](../User/docs/third-party-model-patterns.md)** - Permission & Role integration
 - **[Activity Module](../Activity/docs/third-party-model-patterns.md)** - ActivityLog & EventSourcing
 
@@ -153,4 +161,8 @@ class Feature extends PackageFeature
 
 ---
 
+<<<<<<< HEAD
 **Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
+=======
+**Remember**: Respect package architecture, extend directly, enhance with Laraxot features.
+>>>>>>> laraxot/dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_GHEm9x
 <<<<<<< HEAD
 con un trait 
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
@@ -7,6 +8,8 @@ https://andy-carter.com/blog/using-laravel-s-eloquent-traits
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_Car7gV
 ---
 title: 'delete_related_models'
 module: Xot
@@ -27,7 +30,15 @@ con un trait
 https://tighten.co/blog/laravel-tip-bootable-model-traits/
 
 https://andy-carter.com/blog/using-laravel-s-eloquent-traits
+<<<<<<< .merge_file_GHEm9x
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+con un trait 
+https://tighten.co/blog/laravel-tip-bootable-model-traits/
+
+https://andy-carter.com/blog/using-laravel-s-eloquent-traits
+>>>>>>> .merge_file_Car7gV
 >>>>>>> laraxot/dev

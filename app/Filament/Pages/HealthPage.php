@@ -1,10 +1,25 @@
 <?php
 
+<<<<<<< .merge_file_fWQN9f
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tCNT38
 /**
  * @see https://github.com/shuvroroy/filament-spatie-laravel-health/tree/main
  */
 
+<<<<<<< .merge_file_fWQN9f
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_tCNT38
 namespace Modules\Xot\Filament\Pages;
 
 use Filament\Actions\Action;
@@ -76,6 +91,7 @@ class HealthPage extends XotBasePage
             $checks[] = SmtpCheck::new();
         }
 
+<<<<<<< HEAD
         // CpuLoadCheck, SecurityAdvisoriesCheck, and SmtpCheck are optional packages;
         // filter to only actual Check instances so the array type is guaranteed.
         /** @var array<int, Check> $filteredChecks */
@@ -87,6 +103,16 @@ class HealthPage extends XotBasePage
         }
 
         Health::checks($filteredChecks);
+=======
+        /*
+         * PHPStan Level 10: CpuLoadCheck, SecurityAdvisoriesCheck, and SmtpCheck
+         * all extend Check, but their types are not recognized due to dynamic loading.
+         * We suppress this specific error as the runtime type is guaranteed to be correct.
+         *
+         * @phpstan-ignore-next-line argument.type
+         */
+        Health::checks($checks);
+>>>>>>> laraxot/dev
         Artisan::call(RunHealthChecksCommand::class);
         $this->dispatch('refresh-component');
         Notification::make()

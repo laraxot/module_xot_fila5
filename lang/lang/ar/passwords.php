@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_8cPGTx
+=======
+
+>>>>>>> .merge_file_85JlwV
 return [
     'password' => 'كلمة المرور يجب أن تحتوي على 6 أحرف على الأقل وتطابق التأكيد.',
     'reset' => 'لقد تم إعادة تعيين كلمة مرورك!',

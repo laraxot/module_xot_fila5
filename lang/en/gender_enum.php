@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'values' => [
         'f' => [
             'label' => 'Female',
@@ -17,6 +18,8 @@ return [
             'description' => 'Male gender',
         ],
     ],
+=======
+>>>>>>> laraxot/dev
     'label' => 'Gender',
     'options' => [
         'f' => 'Female',

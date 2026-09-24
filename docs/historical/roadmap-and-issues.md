@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 module: Xot
 topic: legacy-roadmap-and-issues
 canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
@@ -10,6 +11,26 @@ updated: 2026-07-15
 Documentazione canonica spostata:
 
 See [legacy-roadmap-and-issues.md](../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md)
+=======
+module: theme
+topic: legacy-roadmap-ands
+canonical: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
+---
+
+<<<<<<< HEAD:docs/archive/historical/roadmap-and-issues.md
+## 📊 STATO ATTUALE
+
+### Completezza Funzionale: 95%
+
+| Area | Completezza | Note |
+|------|-------------|------|
+| Base Classes | 100% | XotBaseResource, XotBasePage, XotBaseWidget |
+| Service Providers | 100% | XotBaseServiceProvider completo |
+| Traits | 95% | HasXotTable, Updater, ecc. |
+| Actions Framework | 90% | Completo, manca documentazione |
+| Contracts | 90% | Manca isSuperAdmin() in ProfileContract |
+| Type Safety | 98% | 9 errori PHPStan da risolvere |
+>>>>>>> laraxot/dev
 
 ---
 
@@ -325,3 +346,9 @@ function xot_config(string $key): mixed
 **Priorità**: 🔴 CRITICA (Core Framework)
 **Timeline**: 2 Ottobre 2025 (domani)
 **Effort**: ~2 ore → 100% CLEAN
+<<<<<<< HEAD
+=======
+=======
+See canonical documentation: ../../../../../Themes/docs/shared-components/legacy-roadmap-and-issues.md
+>>>>>>> 64619e34 (.):docs/roadmap/legacy/legacy-roadmap-ands.md
+>>>>>>> laraxot/dev

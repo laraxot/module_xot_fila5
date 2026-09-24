@@ -1,14 +1,33 @@
 <?php
 
+<<<<<<< .merge_file_ZzrX0K
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TY7EEZ
 /**
  * @see https://coderflex.com/blog/create-advanced-filters-with-filament
  */
 
+<<<<<<< .merge_file_ZzrX0K
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TY7EEZ
 namespace Modules\Xot\Filament\Actions\Header;
 
 // Header actions must be an instance of Filament\Actions\Action, or Filament\Actions\ActionGroup.
 // use Filament\Actions\Action;
+<<<<<<< .merge_file_ZzrX0K
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_TY7EEZ
 use Exception;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\ListRecords;
@@ -22,12 +41,25 @@ use RuntimeException;
 use Webmozart\Assert\Assert;
 
 class ExportXlsAction extends XotBaseAction
+=======
+use Filament\Actions\Action;
+use Filament\Resources\Pages\ListRecords;
+use Modules\Xot\Actions\Export\ExportXlsByCollection;
+use Modules\Xot\Actions\GetTransKeyAction;
+use Webmozart\Assert\Assert;
+
+class ExportXlsAction extends Action
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
         parent::setUp();
         $this->translateLabel()
             ->label('')
+<<<<<<< .merge_file_ZzrX0K
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_TY7EEZ
             ->iconButton()
             ->color('success')
             ->tooltip(function (): string {
@@ -48,6 +80,18 @@ class ExportXlsAction extends XotBaseAction
             ->action(static function (ListRecords $livewire, ExportXlsAction $action) {
                 // Stesso nome file del canale nativo (XotBaseExportAction::fileName).
                 $filename = app(GetExportFileNameAction::class)->execute($livewire).'.xlsx';
+<<<<<<< .merge_file_ZzrX0K
+                $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
+                $transKey .= '.fields';
+                // Filtri + search + sort: stesse righe nello stesso ordine di
+                // `getTableQueryForExport()` usato dal nativo (story Ptv/5.165).
+                $query = $livewire->getFilteredSortedTableQuery();
+                if ($query === null) {
+                    throw new Exception('Query is null');
+                }
+                // Stesso eager del canale nativo (XotBaseExporter::modifyQuery).
+                XlsFieldsExporter::modifyQuery($query);
+=======
                 $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
                 $transKey .= '.fields';
                 // Filtri + search + sort: stesse righe nello stesso ordine di
@@ -72,6 +116,63 @@ class ExportXlsAction extends XotBaseAction
                 }
 
                 return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);
+=======
+            ->tooltip(__('xot::actions.export_xls'))
+            ->icon('heroicon-o-arrow-down-tray')
+            ->action(static function (ListRecords $livewire) {
+                $filename =
+                    class_basename($livewire).
+                    '-'.
+                    collect($livewire->tableFilters)->flatten()->implode('-').
+                    '.xlsx';
+                $transKey = app(GetTransKeyAction::class)->execute($livewire::class);
+                $transKey .= '.fields';
+                $query = $livewire->getFilteredTableQuery();
+                if (null === $query) {
+                    throw new \Exception('Query is null');
+                }
+                $rows = $query->get();
+
+                $resource = $livewire->getResource();
+
+                /** @var array<int, string> $fields */
+                $fields = [];
+                if (method_exists($resource, 'getXlsFields')) {
+                    $rawFields = $resource::getXlsFields($livewire->tableFilters);
+                    if (is_array($rawFields)) {
+                        $fields = array_map(
+                            static function ($field): string {
+                                // Handle objects with __toString method
+                                if (is_object($field) && method_exists($field, '__toString')) {
+                                    $stringValue = $field->__toString();
+>>>>>>> .merge_file_TY7EEZ
+
+                $fields = self::resolveXlsFields($livewire);
+
+                if ($fields === []) {
+                    // Stesso esito del nativo (CanExportRecords, columnMap vuoto):
+                    // avviso e stop. Senza fields CollectionExport farebbe il dump
+                    // di tutti gli attributi del model (story Xot/5.162).
+                    self::notifyNoColumns();
+                    $action->halt();
+
+<<<<<<< .merge_file_ZzrX0K
+                    return null;
+                }
+
+                return app(ExportXlsByCollection::class)->execute($query->get(), $filename, $transKey, $fields);
+=======
+                                return '';
+                            },
+                            $rawFields
+                        );
+                    }
+                    Assert::isArray($fields);
+                }
+
+                return app(ExportXlsByCollection::class)->execute($rows, $filename, $transKey, array_values($fields));
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TY7EEZ
             });
     }
 
@@ -79,6 +180,10 @@ class ExportXlsAction extends XotBaseAction
     {
         return 'export_xls';
     }
+<<<<<<< .merge_file_ZzrX0K
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_TY7EEZ
 
     /**
      * Chiave stringa = percorso data_get, valore = intestazione esplicita
@@ -110,4 +215,9 @@ class ExportXlsAction extends XotBaseAction
             ->danger()
             ->send();
     }
+<<<<<<< .merge_file_ZzrX0K
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_TY7EEZ
 }

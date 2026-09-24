@@ -19,7 +19,11 @@ class MorphManyAction
      */
     public function execute(Model $model, RelationDTO $relationDTO): void
     {
+<<<<<<< HEAD
         if ($relationDTO->data === []) {
+=======
+        if ([] === $relationDTO->data) {
+>>>>>>> laraxot/dev
             // dddx(['model'=>$model,'relationDTO'=>$relationDTO]);
             // save Model
             $relation = $model->{$relationDTO->name}();

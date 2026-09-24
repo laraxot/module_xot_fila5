@@ -5,8 +5,11 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Unit\Actions\Config;
 
 use Illuminate\Support\Facades\File;
+<<<<<<< HEAD
 use Mockery;
 use Mockery\MockInterface;
+=======
+>>>>>>> laraxot/dev
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Xot\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Tests\TestCase;
@@ -24,6 +27,7 @@ describe('Get Tenant Config Actions', function (): void {
 
         File::put($tempPath, 'return '.var_export($configData, true).';');
 
+<<<<<<< HEAD
         /** @var GetTenantFilePathAction&MockInterface $mock */
         $mock = Mockery::mock(GetTenantFilePathAction::class);
         $mock->shouldReceive('execute')
@@ -31,6 +35,21 @@ describe('Get Tenant Config Actions', function (): void {
             ->andReturn($tempPath);
 
         app()->instance(GetTenantFilePathAction::class, $mock);
+=======
+        // Replace GetTenantFilePathAction with a spy that returns the temp path
+        $getTenantFilePathAction = new class($tempPath) extends GetTenantFilePathAction {
+            public function __construct(private string $tempPath)
+            {
+            }
+
+            public function execute(string $configName): string
+            {
+                return $this->tempPath;
+            }
+        };
+
+        app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
+>>>>>>> laraxot/dev
 
         $action = app(GetTenantConfigArrayAction::class);
         $result = $action->execute($configName);
@@ -42,12 +61,24 @@ describe('Get Tenant Config Actions', function (): void {
     test('returns empty array if tenant config file does not exist', function (): void {
         $configName = 'non_existent';
 
+<<<<<<< HEAD
         /** @var GetTenantFilePathAction&MockInterface $mock */
         $mock = Mockery::mock(GetTenantFilePathAction::class);
         $mock->shouldReceive('execute')
             ->andReturn('/path/to/nothing.php');
 
         app()->instance(GetTenantFilePathAction::class, $mock);
+=======
+        // Replace GetTenantFilePathAction with a spy that returns a non-existent path
+        $getTenantFilePathAction = new class extends GetTenantFilePathAction {
+            public function execute(string $configName): string
+            {
+                return '/path/to/nothing.php';
+            }
+        };
+
+        app()->instance(GetTenantFilePathAction::class, $getTenantFilePathAction);
+>>>>>>> laraxot/dev
 
         $action = app(GetTenantConfigArrayAction::class);
         $result = $action->execute($configName);

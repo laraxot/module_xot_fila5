@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Q61Mxf
+=======
+
+>>>>>>> .merge_file_2OYhFL
 return [
     'navigation' => [
         'name' => 'Env',

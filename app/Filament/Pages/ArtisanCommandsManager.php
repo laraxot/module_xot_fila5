@@ -7,8 +7,18 @@ namespace Modules\Xot\Filament\Pages;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Support\Enums\IconPosition;
+<<<<<<< .merge_file_Z7rgs3
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Actions\ExecuteComposerDumpAutoloadAction;
+=======
+<<<<<<< HEAD
+use Modules\Xot\Actions\ExecuteArtisanCommandAction;
+use Modules\Xot\Actions\ExecuteComposerDumpAutoloadAction;
+=======
+use Livewire\Attributes\On;
+use Modules\Xot\Actions\ExecuteArtisanCommandAction;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AWHIZv
 
 /**
  * ---.
@@ -33,6 +43,7 @@ class ArtisanCommandsManager extends XotBasePage
      */
     protected $listeners = [
         'refresh-component' => '$refresh',
+<<<<<<< .merge_file_Z7rgs3
     ];
 
     /**
@@ -47,6 +58,32 @@ class ArtisanCommandsManager extends XotBasePage
      * mai un output popolato, a prescindere da quanto il comando reale fosse
      * andato a buon fine). Fix: leggere direttamente il valore di ritorno.
      */
+=======
+<<<<<<< HEAD
+    ];
+
+    /**
+     * `ExecuteArtisanCommandAction::execute()` è sincrona e bloccante: al suo
+     * ritorno il comando è già completato per davvero. Prima leggevamo lo
+     * stato finale da un giro di eventi Laravel (`Event::dispatch(...)`) che
+     * questa pagina intercettava via `#[On(...)]`/`$listeners` — ma
+     * `Illuminate\Support\Facades\Event` e il bus di eventi di Livewire sono
+     * due sistemi distinti che non si parlano: nessun listener li riceveva
+     * mai, quindi sul percorso di successo `isRunning`/`status`/`output`
+     * restavano bloccati ai valori impostati qui sopra (mai "completato" né
+     * mai un output popolato, a prescindere da quanto il comando reale fosse
+     * andato a buon fine). Fix: leggere direttamente il valore di ritorno.
+     */
+=======
+        'artisan-command.started' => 'handleCommandStarted',
+        'artisan-command.output' => 'handleCommandOutput',
+        'artisan-command.completed' => 'handleCommandCompleted',
+        'artisan-command.failed' => 'handleCommandFailed',
+        'artisan-command.error' => 'handleCommandError',
+    ];
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AWHIZv
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -54,6 +91,10 @@ class ArtisanCommandsManager extends XotBasePage
         $this->isRunning = true;
 
         try {
+<<<<<<< .merge_file_Z7rgs3
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_AWHIZv
             $result = app(ExecuteArtisanCommandAction::class)->execute($command);
 
             $this->output = $result['output'];
@@ -61,6 +102,8 @@ class ArtisanCommandsManager extends XotBasePage
             $this->isRunning = false;
 
             $this->notifyCommandResult($command, $result['status']);
+<<<<<<< .merge_file_Z7rgs3
+=======
         } catch (\Exception $e) {
             $this->status = 'failed';
             $this->isRunning = false;
@@ -125,6 +168,79 @@ class ArtisanCommandsManager extends XotBasePage
         Notification::make()
             ->title((string) __('xot::artisan-commands-manager.messages.command_failed'))
             ->body((string) __('xot::artisan-commands-manager.messages.command_failed_desc', ['command' => $command]))
+=======
+            app(ExecuteArtisanCommandAction::class)->execute($command);
+>>>>>>> .merge_file_AWHIZv
+        } catch (\Exception $e) {
+            $this->status = 'failed';
+            $this->isRunning = false;
+
+            Notification::make()
+                ->title((string) __('xot::artisan-commands-manager.messages.command_failed'))
+                ->body($e->getMessage())
+                ->danger()
+                ->send();
+        }
+    }
+
+    /**
+     * Story xot-artisan-commands-manager-layout-and-composer-dump-autoload.md:
+     * `composer dump-autoload` non è un comando artisan, non può passare da
+     * `ExecuteArtisanCommandAction` (limitato a `php artisan ...`) — serve a
+     * chi non ha accesso SSH e deve rigenerare l'autoloader dopo un deploy
+     * che ha aggiunto classi nuove (sintomo: job in coda falliti con "Job is
+     * incomplete class").
+     */
+    public function executeComposerDumpAutoload(): void
+    {
+        $this->reset(['output', 'status']);
+        $this->currentCommand = 'composer dump-autoload';
+        $this->isRunning = true;
+
+        try {
+            $result = app(ExecuteComposerDumpAutoloadAction::class)->execute();
+
+            $this->output = $result['output'];
+            $this->status = $result['status'];
+            $this->isRunning = false;
+
+            $this->notifyCommandResult($this->currentCommand, $result['status']);
+        } catch (\Throwable $e) {
+            $this->status = 'failed';
+            $this->isRunning = false;
+
+            Notification::make()
+                ->title((string) __('xot::artisan-commands-manager.messages.command_failed'))
+                ->body($e->getMessage())
+                ->danger()
+                ->send();
+        }
+    }
+
+    /**
+     * @param  'completed'|'failed'  $status
+     */
+    private function notifyCommandResult(string $command, string $status): void
+    {
+        if ($status === 'completed') {
+            Notification::make()
+                ->title((string) __('xot::artisan-commands-manager.messages.command_completed'))
+                ->body((string) __('xot::artisan-commands-manager.messages.command_completed_desc', ['command' => $command]))
+                ->success()
+                ->send();
+
+            return;
+        }
+
+        Notification::make()
+<<<<<<< .merge_file_Z7rgs3
+            ->title((string) __('xot::artisan-commands-manager.messages.command_failed'))
+            ->body((string) __('xot::artisan-commands-manager.messages.command_failed_desc', ['command' => $command]))
+=======
+            ->title((string) __('xot::artisan-commands-manager.notifications.error'))
+            ->body($error)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AWHIZv
             ->danger()
             ->send();
     }
@@ -196,6 +312,10 @@ class ArtisanCommandsManager extends XotBasePage
                 ->iconPosition(IconPosition::Before)
                 ->disabled(fn () => $this->isRunning)
                 ->action(fn () => $this->executeCommand('queue:restart')),
+<<<<<<< .merge_file_Z7rgs3
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_AWHIZv
             Action::make('composer_dump_autoload')
                 ->label((string) __('xot::artisan-commands-manager.commands.composer_dump_autoload.label'))
                 ->icon('heroicon-o-cube')
@@ -215,6 +335,11 @@ class ArtisanCommandsManager extends XotBasePage
                 ->requiresConfirmation()
                 ->modalDescription((string) __('xot::artisan-commands-manager.commands.notify_migrate_themes_to_mail_templates.modal_description'))
                 ->action(fn () => $this->executeCommand('notify:migrate-themes-to-mail-templates')),
+<<<<<<< .merge_file_Z7rgs3
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AWHIZv
         ];
     }
 }

@@ -24,7 +24,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    {
        return [
@@ -225,7 +225,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -391,7 +391,7 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -446,7 +446,7 @@ class SocioResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -696,7 +696,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -955,7 +955,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -987,6 +987,11 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
+<<<<<<< HEAD
+=======
+- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
+- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
+>>>>>>> laraxot/dev
 
 ## Regole per Widget Filament: Path View e Localizzazione
 
@@ -1057,5 +1062,9 @@ Appointment::where('doctor_id', $doctorId)
 ### Motivazione filosofica, politica, zen
 - Un solo punto di verità: nessuna duplicazione, nessun lock-in
 - DRY, KISS, serenità del codice
+<<<<<<< HEAD
 - Refactoring sicuro, massima estendibilità
 
+=======
+- Refactoring sicuro, massima estendibilità
+>>>>>>> laraxot/dev

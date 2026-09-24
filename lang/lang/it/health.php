@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_XTOTyr
+=======
+
+>>>>>>> .merge_file_doyz3R
 return [
     'navigation' => [
         'name' => 'Salute',

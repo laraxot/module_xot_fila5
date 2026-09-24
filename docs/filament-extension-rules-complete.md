@@ -3,6 +3,10 @@
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 **Ultimo aggiornamento**: 2025-12-22
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
 
 ---
 
@@ -290,9 +294,13 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
  * @return array<int, Component>
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -478,9 +486,13 @@ class UserResource extends XotBaseResource
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -586,4 +598,8 @@ Prima di creare una nuova classe Filament:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> laraxot/dev

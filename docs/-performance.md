@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_OrBKVO
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_98ujdm
 ---
 title: '_performance'
 module: Xot
@@ -18,7 +21,6 @@ updated: 2026-08-24
 
 <<<<<<< HEAD
 =======
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -31,13 +33,15 @@ updated: 2026-08-24
 https://medium.com/@mianhaseeb41/4-tips-to-improve-laravel-performance-caff9ff46e76
 //-------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< .merge_file_OrBKVO
 <<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> .merge_file_98ujdm
+=======
 
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

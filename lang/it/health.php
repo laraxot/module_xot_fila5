@@ -34,7 +34,10 @@ return [
         'logout' => [
             'tooltip' => 'logout',
         ],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
+>>>>>>> laraxot/dev
     ],
     'label' => 'Health',
     'plural_label' => 'Health (Plurale)',

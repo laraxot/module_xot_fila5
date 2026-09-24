@@ -1,15 +1,43 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_6RMsp6
 use Filament\Tables\Columns\Column;
+=======
+<<<<<<< HEAD
+use Filament\Tables\Columns\Column;
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cDTqzS
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Enums\RecordActionsPosition;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 /**
  * @param object $instance
  */
+=======
+<<<<<<< HEAD
+/**
+ * @param object $instance
+ */
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 function invokeProtectedTableHook(object $instance, string $method): mixed
 {
     $reflection = new ReflectionMethod($instance, $method);
@@ -24,8 +52,32 @@ test('getTableFiltersLayout default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_6RMsp6
         /** @return array<string, Column> */
         public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cDTqzS
         {
             return [];
         }
@@ -39,8 +91,32 @@ test('getTableFiltersLayout default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_6RMsp6
         /** @return array<string, Column> */
         public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cDTqzS
         {
             return [];
         }
@@ -61,8 +137,32 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_6RMsp6
         /** @return array<string, Column> */
         public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cDTqzS
         {
             return [];
         }
@@ -76,8 +176,32 @@ test('getTableRecordActionsPosition default e override', function (): void {
 
         public string $tableSearch = '';
 
+<<<<<<< .merge_file_6RMsp6
         /** @return array<string, Column> */
         public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+<<<<<<< HEAD
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+        /** @return array<string, \Filament\Tables\Columns\Column> */
+    public function getTableColumns(): array
+=======
+        /** @return array<string, Column> */
+        /** @return array<string, Column> */
+        public function getTableColumns(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cDTqzS
         {
             return [];
         }

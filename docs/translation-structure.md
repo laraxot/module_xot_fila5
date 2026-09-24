@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_PcgmPA
 <<<<<<< HEAD
 ---
 module: theme
@@ -10,6 +11,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_VnEtbB
 # Translation Directory Structure
 
 ## Rule: No `lang/lang/` Redundancy
@@ -38,7 +41,18 @@ Modules/ModuleName/lang/lang/{locale}/file.php  ← WRONG
 ### Reference
 
 See `project_docs/TRANSLATION_DIRECTORY_RULES.md` for full details.
+<<<<<<< .merge_file_PcgmPA
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+---
+module: theme
+topic: translation-structure
+canonical: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/TRANSLATION_STRUCTURE.md
+>>>>>>> .merge_file_VnEtbB
 >>>>>>> laraxot/dev

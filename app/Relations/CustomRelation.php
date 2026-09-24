@@ -1,12 +1,27 @@
 <?php
 
+<<<<<<< .merge_file_yKqmPf
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hONw21
 /**
  * ---.
  *
  * @see https://github.com/johnnyfreeman/laravel-custom-relation/blob/master/src/Relations/Custom.php
  */
 
+<<<<<<< .merge_file_yKqmPf
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hONw21
 namespace Modules\Xot\Relations;
 
 use Closure;
@@ -23,7 +38,11 @@ use Webmozart\Assert\Assert;
  *
  * @method Builder<Model> when(mixed $value = null, ?callable $callback = null, ?callable $default = null)
  * @method Builder<Model> whereBetween(string $column, iterable<int, mixed> $values, string $boolean = 'and', bool $not = false)
+<<<<<<< HEAD
  * @method Builder<Model> selectRaw(string $expression, array<int|string, mixed> $bindings = [])
+=======
+ * @method Builder<Model> selectRaw(string $expression, array<int, mixed> $bindings = [])
+>>>>>>> laraxot/dev
  * @method Builder<Model> where(string|\Closure|\Illuminate\Contracts\Database\Query\Expression $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  */
 class CustomRelation extends Relation
@@ -38,6 +57,10 @@ class CustomRelation extends Relation
         /**
          * The baseConstraints callback.
          */
+<<<<<<< .merge_file_yKqmPf
+        protected Closure $baseConstraints,
+=======
+<<<<<<< HEAD
         protected Closure $baseConstraints,
         /**
          * The eagerConstraints callback.
@@ -47,6 +70,22 @@ class CustomRelation extends Relation
          * The eager constraints model matcher.
          */
         protected ?Closure $eagerMatcher,
+=======
+        protected \Closure $baseConstraints,
+>>>>>>> .merge_file_hONw21
+        /**
+         * The eagerConstraints callback.
+         */
+        protected ?Closure $eagerConstraints,
+        /**
+         * The eager constraints model matcher.
+         */
+<<<<<<< .merge_file_yKqmPf
+        protected ?Closure $eagerMatcher,
+=======
+        protected ?\Closure $eagerMatcher,
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hONw21
     ) {
         parent::__construct($query, $model);
     }
@@ -63,7 +102,15 @@ class CustomRelation extends Relation
      * Set the constraints for an eager load of the relation.
      */
     /**
+<<<<<<< .merge_file_yKqmPf
      * @param  array<int, Model>  $models
+=======
+<<<<<<< HEAD
+     * @param  array<int, Model>  $models
+=======
+     * @param array<int, Model> $models
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hONw21
      */
     public function addEagerConstraints(array $models): void
     {
@@ -79,16 +126,25 @@ class CustomRelation extends Relation
      * Initialize the relation on a set of models.
      */
     /**
+<<<<<<< .merge_file_yKqmPf
+     * @param  array<int, Model>  $models
+     * @param  string  $relation  the relation name (parent signature is untyped)
+=======
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  string  $relation  the relation name (parent signature is untyped)
      * @return array<int, Model>
      */
     public function initRelation(array $models, mixed $relation): array
+=======
+     * @param array<int, Model> $models
+     *
+>>>>>>> .merge_file_hONw21
+     * @return array<int, Model>
+     */
+    public function initRelation(array $models, $relation): array
+>>>>>>> laraxot/dev
     {
-        if (! \is_string($relation)) {
-            throw new \Exception('relation is not a string');
-        }
-
         foreach ($models as $model) {
             $model->setRelation($relation, $this->related->newCollection());
         }
@@ -102,12 +158,27 @@ class CustomRelation extends Relation
      * @return array<int, Model>
      */
     /**
+<<<<<<< .merge_file_yKqmPf
+     * @param  array<int, Model>  $models
+     * @param  Collection<int, Model>  $collection
+     * @param  string  $relation  the relation name (parent signature is untyped)
+=======
+<<<<<<< HEAD
      * @param  array<int, Model>  $models
      * @param  Collection<int, Model>  $collection
      * @param  string  $relation  the relation name (parent signature is untyped)
      * @return array<int, Model>
      */
     public function match(array $models, Collection $collection, mixed $relation): array
+=======
+     * @param array<int, Model>      $models
+     * @param Collection<int, Model> $collection
+     *
+>>>>>>> .merge_file_hONw21
+     * @return array<int, Model>
+     */
+    public function match(array $models, Collection $collection, $relation): array
+>>>>>>> laraxot/dev
     {
         // Trying to invoke Closure|null but it might not be a callable.
         if (! \is_callable($this->eagerMatcher)) {
@@ -138,7 +209,16 @@ class CustomRelation extends Relation
      * Execute the query as a "select" statement.
      */
     /**
+<<<<<<< .merge_file_yKqmPf
      * @param  array<int, string>|string  $columns
+=======
+<<<<<<< HEAD
+     * @param  array<int, string>|string  $columns
+=======
+     * @param array<int, string>|string $columns
+     *
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hONw21
      * @return Collection<int, Model>
      */
     public function get($columns = ['*']): Collection

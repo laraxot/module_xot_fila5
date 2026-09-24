@@ -1,19 +1,29 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
+uses(Modules\Xot\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Actions\Arr\SavePhpArrayAction;
+<<<<<<< HEAD
 use Modules\Xot\Tests\TestCase;
+=======
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_decode;
 use function Safe\tempnam;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
+=======
+>>>>>>> laraxot/dev
 it('saves array as php file', function (): void {
     $data = ['foo' => 'bar', 'baz' => 123];
     $filename = tempnam(sys_get_temp_dir(), 'test_save_').'.php';

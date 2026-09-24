@@ -24,7 +24,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    {
        return [

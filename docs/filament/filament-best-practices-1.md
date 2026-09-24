@@ -63,7 +63,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    {
        return [

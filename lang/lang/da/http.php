@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_51KbMl
+=======
+
+>>>>>>> .merge_file_qqdeX8
 return [
     404 => [
         'title' => 'Siden findes ikke',

@@ -9,9 +9,18 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< .merge_file_jDFHqO
         'label' => 'module.navigation',
         'icon' => 'module.navigation',
         'sort' => 65,
+=======
+<<<<<<< HEAD
+        'label' => 'module.navigation',
+        'icon' => 'module.navigation',
+        'sort' => 65,
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CZhzmP
     ],
     'fields' => [
         'name' => [
@@ -108,12 +117,21 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_jDFHqO
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_CZhzmP
         'path' => [
             'label' => 'path',
         ],
         'enabled' => [
             'label' => 'enabled',
         ],
+<<<<<<< .merge_file_jDFHqO
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CZhzmP
     ],
     'pages' => [
         'health_check_results' => [
@@ -135,6 +153,10 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Module',
+<<<<<<< .merge_file_jDFHqO
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_CZhzmP
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -162,6 +184,17 @@ return [
             'label' => 'view',
             'icon' => 'view',
             'tooltip' => 'view',
+<<<<<<< .merge_file_jDFHqO
+=======
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Module',
+        ],
+        'delete' => [
+            'label' => 'Elimina Module',
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CZhzmP
         ],
     ],
 ];

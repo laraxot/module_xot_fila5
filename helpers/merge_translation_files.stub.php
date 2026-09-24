@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
 /**
  * Stub file for PHPStan static analysis of merge_translation_files function.
  * This file provides the function signature for static analysis.
@@ -11,12 +14,24 @@ if (! function_exists('merge_translation_files')) {
     /**
      * Merge multiple PHP translation files into a single array.
      *
+<<<<<<< .merge_file_NLvhkZ
      * @param  string  $first  First translation file path
      * @param  string  ...$rest  Additional translation file paths
+=======
+<<<<<<< HEAD
+     * @param  string  $first  First translation file path
+     * @param  string  ...$rest  Additional translation file paths
+=======
+     * @param string $first   First translation file path
+     * @param string ...$rest Additional translation file paths
+     *
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_gfOK6E
      * @return array<string, mixed>
      */
     function merge_translation_files(string $first, string ...$rest): array
     {
+<<<<<<< HEAD
         $result = load_translation_array($first);
 
         foreach ($rest as $file) {
@@ -38,4 +53,15 @@ if (! function_exists('merge_translation_files')) {
 
         return is_array($content) ? array_filter($content, 'is_string', ARRAY_FILTER_USE_KEY) : [];
     }
+=======
+        $result = (array) require $first;
+
+        foreach ($rest as $file) {
+            $result = array_replace_recursive($result, (array) require $file);
+        }
+
+        /* @phpstan-ignore return.type */
+        return $result;
+    }
+>>>>>>> laraxot/dev
 }

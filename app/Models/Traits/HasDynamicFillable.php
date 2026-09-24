@@ -21,10 +21,22 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
+<<<<<<< HEAD
         $dynamicFillableEnums = $this->getDynamicFillableEnums();
 
         foreach ($dynamicFillableEnums as $enumClass) {
             if (! is_string($enumClass) || $enumClass === '') {
+=======
+        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
+
+        // Ensure the property is an array
+        if (! is_array($dynamicFillableEnums)) {
+            return $fillable;
+        }
+
+        foreach ($dynamicFillableEnums as $enumClass) {
+            if (! is_string($enumClass) || '' === $enumClass) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -52,6 +64,7 @@ trait HasDynamicFillable
         // Ensure unique values and reset keys for cleanliness
         return array_values(array_unique($fillable));
     }
+<<<<<<< HEAD
 
     /**
      * Models using this trait may override this to list Enum classes whose
@@ -63,4 +76,6 @@ trait HasDynamicFillable
     {
         return [];
     }
+=======
+>>>>>>> laraxot/dev
 }

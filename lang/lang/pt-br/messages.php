@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_nPRFjz
+=======
+
+>>>>>>> .merge_file_UX4k86
 return [
     'title' => 'Instalador Laravel',
     'next' => 'Próximo Passo',

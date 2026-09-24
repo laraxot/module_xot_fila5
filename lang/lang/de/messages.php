@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_AsTPBx
+=======
+
+>>>>>>> .merge_file_Iq0827
 return [
     'title' => 'Laravel Installer',
     'next' => 'Nächster Schritt',

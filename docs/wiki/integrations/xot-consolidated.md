@@ -98,7 +98,19 @@ The Xot base classes provide a centralized way to customize and extend functiona
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
       {
           return [
@@ -174,7 +186,19 @@ The Xot base classes provide a centralized way to customize and extend functiona
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
       public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
       {
           return [
@@ -840,7 +864,15 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -4237,7 +4269,15 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [
@@ -4455,7 +4495,15 @@ Questo significa che:
 <<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
 =======
+<<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
+=======
+<<<<<<< HEAD
+abstract public function getFormSchemaOld(): array;
+=======
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 ```
 
@@ -4493,7 +4541,15 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchemaOld(): array
 =======
+<<<<<<< HEAD
     public function getFormSchemaOld(): array
+=======
+<<<<<<< HEAD
+    public function getFormSchemaOld(): array
+=======
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
     {
         return [

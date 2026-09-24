@@ -35,7 +35,15 @@ abstract class XotBaseFormComponent extends Field
     {
         $label = parent::getLabel();
 
+<<<<<<< .merge_file_OAi0mF
         if ($label === null) {
+=======
+<<<<<<< HEAD
+        if ($label === null) {
+=======
+        if (null === $label) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_p0324F
             return Str::title($this->getName());
         }
 

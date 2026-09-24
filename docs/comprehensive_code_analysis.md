@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_j17dva
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1S7iHZ
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -183,6 +186,7 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< .merge_file_j17dva
 <<<<<<< HEAD
 <<<<<<< HEAD
 public function getFormSchema(): array
@@ -192,6 +196,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_1S7iHZ
 {
     return [
         TextInput::make('first_name'),
@@ -200,6 +207,7 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< .merge_file_j17dva
 <<<<<<< HEAD
 <<<<<<< HEAD
 public function getFormSchema(): array
@@ -209,6 +217,9 @@ public function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_1S7iHZ
 {
     return [
         TextInput::make('name')->required(),
@@ -304,6 +315,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< .merge_file_j17dva
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -312,6 +324,9 @@ class ContactResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_1S7iHZ
     {
         return [
             TextInput::make('first_name'),
@@ -444,8 +459,12 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_j17dva
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> .merge_file_1S7iHZ
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -464,18 +483,21 @@ return [
 - **N+1 Queries**: 0 problemi
 - **Complexity**: Tutti i metodi <8
 
+---
+
+**Data Analisi**: 2025-01-06  
+**Analista**: AI Code Review System  
+**Priorità**: CRITICA - Richiede intervento immediato  
+**Stima Effort**: 40-60 ore di refactoring
 =======
-<<<<<<< HEAD
 ---
 module: theme
 topic: comprehensive_code_analysis
 canonical: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
->>>>>>> 28b0298a (fix: phpstan issues)
 ---
 
-<<<<<<< HEAD
-=======
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
+<<<<<<< .merge_file_j17dva
 
 ---
 
@@ -1384,6 +1406,8 @@ return [
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
+=======
+>>>>>>> .merge_file_1S7iHZ
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

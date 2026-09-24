@@ -15,10 +15,23 @@ use Spatie\LaravelData\Data;
 final class ArticleData extends Data
 {
     /**
+<<<<<<< .merge_file_mTzFNF
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_3Onhci
      * @param  array<int, string>  $types
      * @param  array<int, string>  $categories
      * @param  array<string, string>  $defaultMeta
      * @param  array<string, bool>  $features
+<<<<<<< .merge_file_mTzFNF
+=======
+=======
+     * @param array<int, string>    $types
+     * @param array<int, string>    $categories
+     * @param array<string, string> $defaultMeta
+     * @param array<string, bool>   $features
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_3Onhci
      */
     public function __construct(
         public readonly array $types = ['post', 'page', 'news'],
@@ -37,13 +50,30 @@ final class ArticleData extends Data
             'show_date' => true,
             'show_reading_time' => true,
         ],
+<<<<<<< .merge_file_mTzFNF
     ) {}
+=======
+<<<<<<< HEAD
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_3Onhci
 
     /**
      * Create a new instance of ArticleData with default values.
      */
     public static function make(): self
     {
+<<<<<<< .merge_file_mTzFNF
         return new self;
+=======
+<<<<<<< HEAD
+        return new self;
+=======
+        return new self();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_3Onhci
     }
 }

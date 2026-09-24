@@ -9,19 +9,49 @@ use Filament\Schemas\Components\StateCasts\BooleanStateCast;
 use Filament\Tables\Filters\TernaryFilter as FilamentTernaryFilter;
 
 /**
+<<<<<<< HEAD
+ * Ternary 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
  * Ternary sì/no/tutti con ToggleButtons raggruppati (non Select full-width).
  *
  * Filament TernaryFilter estende SelectFilter: semanticamente ok, UI pesante per 3 stati.
  * Qui si sostituisce il field con ToggleButtons grouped; le query boolean del parent restano.
  *
  * Deselezionare = stato blank («tutti»), come il placeholder del Select precedente.
+<<<<<<< HEAD
+=======
+=======
+ * Ternary 
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */
 abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
 {
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< .merge_file_EUmCaP
         /*
+=======
+<<<<<<< HEAD
+        /*
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+        /*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xexQAE
         $this->schema(function (): array {
             return [
                 ToggleButtons::make('value')
@@ -38,6 +68,20 @@ abstract class XotBaseTernaryFilter extends FilamentTernaryFilter
                     ->stateCast(app(BooleanStateCast::class, ['isStoredAsInt' => true])),
             ];
         });
+<<<<<<< .merge_file_EUmCaP
         */
+=======
+<<<<<<< HEAD
+        */
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+        */
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_xexQAE
     }
 }

@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_sXWwlC
+=======
+
+>>>>>>> .merge_file_CA0x4l
 return [
     'password' => 'Le password devono essere di almeno 6 caratteri e devono coincidere.',
     'reset' => 'La password è stata reimpostata!',

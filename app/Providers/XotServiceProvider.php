@@ -4,11 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+<<<<<<< HEAD
 use Composer\Autoload\ClassLoader;
 use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
+=======
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Field;
+use Filament\Forms\Components\Placeholder;
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
@@ -26,12 +33,24 @@ use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
 use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
+<<<<<<< .merge_file_JUvoxt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_T5lvnb
 use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
 use Modules\Xot\View\Composers\XotComposer;
 use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
+=======
+use Modules\Xot\View\Composers\XotComposer;
+
+use function Safe\realpath;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Class XotServiceProvider.
  */
@@ -68,6 +87,10 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
+<<<<<<< .merge_file_JUvoxt
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_T5lvnb
         $this->registerExportJobs();
     }
 
@@ -80,6 +103,11 @@ class XotServiceProvider extends XotBaseServiceProvider
     private function registerExportJobs(): void
     {
         $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
+<<<<<<< .merge_file_JUvoxt
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_T5lvnb
     }
 
     public function registerProviders(): void
@@ -97,11 +125,19 @@ class XotServiceProvider extends XotBaseServiceProvider
 
         $loader = require $autoloadPath;
 
+<<<<<<< HEAD
         if (! $loader instanceof ClassLoader) {
             return;
         }
 
         (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
+=======
+        if (! $loader instanceof \Composer\Autoload\ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction())->execute($loader);
+>>>>>>> laraxot/dev
     }
 
     public function registerTimezone(): void
@@ -189,12 +225,20 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
+<<<<<<< HEAD
             if ($file->getExtension() !== 'php') {
+=======
+            if ('php' !== $file->getExtension()) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
             $realPath = $file->getRealPath();
+<<<<<<< HEAD
             if ($realPath === false) {
+=======
+            if (false === $realPath) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -217,9 +261,13 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
+<<<<<<< HEAD
         // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
         // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
         $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
+=======
+        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+>>>>>>> laraxot/dev
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
                 if (method_exists($translatable, 'translateLabel')) {

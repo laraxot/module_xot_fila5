@@ -1,6 +1,14 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_CuE9Dq
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lewvss
 ---
 name: 40-residuo-domani
 description: "Status: TODO — sub-agent assegnato (swarm 36-40)"
@@ -8,11 +16,19 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_CuE9Dq
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lewvss
 >>>>>>> laraxot/dev
 # BMAD Story 40 — Residuo PHPStan (continuazione domani)
 **Status:** TODO — sub-agent assegnato (swarm 36-40)

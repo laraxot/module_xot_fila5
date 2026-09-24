@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wGZyuy
 ---
 title: 'machine_learning'
 module: Xot
@@ -19,8 +22,11 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/machine_learning.txt -->
 
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wGZyuy
 =======
 >>>>>>> laraxot/dev
 ----------------------------------------
@@ -41,9 +47,13 @@ https://pii-tools.com/detect-person-names-in-text/
 https://github.com/angeloskath/php-nlp-tools
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -56,9 +66,13 @@ https://www.php.net/manual/en/function.metaphone.php
 https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-name-in-Latin-text.html
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -71,9 +85,13 @@ https://github.com/wamania/php-stemmer#languages
 https://www.youtube.com/watch?v=06-AZXmwHjo
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -85,10 +103,13 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
-
-
 =======
+=======
+>>>>>>> .merge_file_wGZyuy
+
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -126,9 +147,13 @@ LUCENE
 https://github.com/nqxcode/laravel-lucene-search
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -139,9 +164,13 @@ https://www.textrazor.com/demo
 --------------------------------------------------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -153,9 +182,13 @@ CON LIBRERIA Stanford
 https://github.com/yooper/php-text-analysis  !!!!!
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -168,9 +201,13 @@ https://github.com/DaveChild/Best-websites-a-programmer-should-visit  !!
 https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Namespaces/IndicesNamespace.php   ????
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -179,9 +216,13 @@ https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Names
 https://github.com/patrickschur/language-detection
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 
 =======
+>>>>>>> .merge_file_wGZyuy
+=======
+
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
@@ -191,25 +232,23 @@ https://github.com/php-ai/php-ml
 
 ---------------------------------------------------
 
+<<<<<<< .merge_file_Qtxqk9
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_wGZyuy
 https://cloud.google.com/natural-language/docs/analyzing-sentiment
 
 https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ----------------------------------------------------------
 
+<<<<<<< HEAD
 https://accidentalfactors.com/part-of-speech-tagging/
 <<<<<<< HEAD
 =======
-https://cloud.google.com/natural-language/project_docs/analyzing-sentiment
-
-https://cloud.google.com/natural-language/project_docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-----------------------------------------------------------
-
 https://accidentalfactors.com/part-of-speech-tagging/
 >>>>>>> laraxot/dev
 =======

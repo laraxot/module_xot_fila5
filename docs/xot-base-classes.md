@@ -25,7 +25,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-      public function getFormSchema(): array
+      public static function getFormSchema(): array
 >>>>>>> laraxot/dev
       {
           return [
@@ -64,11 +64,20 @@ The Xot base classes provide a centralized way to customize and extend functiona
 
 ## Links to Related Documentation
 - [Code Quality](../Xot/docs/CODE_QUALITY.md)
+<<<<<<< HEAD
 - [Filament Extension Pattern](filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+<<<<<<< .merge_file_730vgw
 <<<<<<< HEAD
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
 =======
+=======
+- [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+=======
+- [Filament Extension Pattern](../../Notify/docs/FILAMENT_EXTENSION_PATTERN.md)
+- [Filament Extension Pattern Analysis](../../Notify/docs/FILAMENT_EXTENSION_PATTERN_ANALYSIS.md)
+- [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
+>>>>>>> .merge_file_I1bIu5
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
 >>>>>>> laraxot/dev

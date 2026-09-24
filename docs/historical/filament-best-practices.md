@@ -24,7 +24,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-   public function getFormSchema(): array
+   public static function getFormSchema(): array
 >>>>>>> laraxot/dev
    {
        return [
@@ -225,7 +225,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -391,7 +391,7 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -446,7 +446,7 @@ class SocioResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
         return [
@@ -696,7 +696,7 @@ public function getFormSchema(): array
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
-public function getFormSchema(): array
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 {
     return [
@@ -955,7 +955,7 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
-    public function getFormSchema(): array
+    public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array

@@ -613,6 +613,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
+<<<<<<< .merge_file_8xy9zP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -2054,6 +2055,9 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.3
+=======
+          php-
+>>>>>>> .merge_file_cY3QVS
       - name: Install dependencies
         run: composer install
       - name: Run PHPStan
@@ -2142,10 +2146,10 @@ class ContactNotificationService
    - Log for monitoring
 ```
 
+<<<<<<< HEAD
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
 =======
 Questa comprehensive analysis fornisce una roadmap dettagliata per trasformare il codebase in un sistema robusto, maintainable e performante seguendo tutti i principi richiesti.
->>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev

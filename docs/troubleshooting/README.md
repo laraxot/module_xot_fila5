@@ -1,5 +1,6 @@
 # Troubleshooting Guide
 
+<<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## Common Issues
@@ -27,11 +28,19 @@
 ## Common Issues
 
 >>>>>>> laraxot/dev
+=======
+## Common Issues
+
+>>>>>>> .merge_file_2HRm7i
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
+<<<<<<< .merge_file_iJ18jI
+=======
+=======
+>>>>>>> .merge_file_2HRm7i
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -50,8 +59,11 @@
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_2HRm7i
 >>>>>>> laraxot/dev
 
 ### Translation Problems
@@ -78,6 +90,7 @@
 
 ## Getting Help
 
+<<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 =======
 - **Prevention**: Always run PHPStan level 9+ before commits
@@ -113,10 +126,13 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2HRm7i
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_iJ18jI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -158,3 +174,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_2HRm7i

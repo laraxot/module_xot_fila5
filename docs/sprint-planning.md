@@ -1,7 +1,10 @@
+<<<<<<< .merge_file_r3GWY6
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_tvLdGC
 # Sprint Planning: Xot Infrastructure
 
 ## 🏁 Sprint Goal
@@ -24,6 +27,7 @@ Finalize the core documentation and perform a final PHPStan Level 10 audit.
 ## ✅ Definition of Done
 - All 6 files exist and are verified.
 - No PHPStan errors in the module.
+<<<<<<< .merge_file_r3GWY6
 <<<<<<< HEAD
 =======
 # Xot Module - Sprint Planning
@@ -99,3 +103,5 @@ Implement core extension framework with API, hooks, and event bus.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_tvLdGC

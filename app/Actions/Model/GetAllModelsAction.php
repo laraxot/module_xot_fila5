@@ -1,10 +1,25 @@
 <?php
 
+<<<<<<< .merge_file_gkewSu
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6Wp6I8
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
+<<<<<<< .merge_file_gkewSu
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6Wp6I8
 namespace Modules\Xot\Actions\Model;
 
 use Nwidart\Modules\Facades\Module;

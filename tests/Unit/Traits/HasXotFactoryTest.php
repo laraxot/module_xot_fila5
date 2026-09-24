@@ -1,7 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Tests\TestCase;

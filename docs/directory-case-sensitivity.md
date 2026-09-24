@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Case Sensitivity e Struttura Corretta delle Directory nei Moduli Laravel
 
 ## Problemi Identificati
@@ -5,10 +6,13 @@
 Sono stati rilevati diversi problemi di struttura delle directory all'interno dei moduli Laravel:
 
 1. **Case Sensitivity Errata**:
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
    - **Percorso ERRATO**: `Modules/User/Resources`
    - **Percorso CORRETTO**: `Modules/User/resources`
 
@@ -18,6 +22,7 @@ Sono stati rilevati diversi problemi di struttura delle directory all'interno de
 2. **Posizione Errata del Codice PHP**:
    - **Percorso ERRATO**: `Modules/User/Filament/Widgets`
    - **Percorso CORRETTO**: `Modules/User/app/Filament/Widgets`
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 =======
    - **Percorso ERRATO**: `/var/www/html/base_<nome progetto>/laravel/Modules/User/Resources`
@@ -32,6 +37,8 @@ Sono stati rilevati diversi problemi di struttura delle directory all'interno de
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 
 ## Regole Fondamentali
 
@@ -99,14 +106,18 @@ Per verificare la corretta struttura delle directory nei moduli:
 
 ```bash
 # Verifica case sensitivity errata
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 find Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
 
 # Verifica codice PHP fuori da app/
 find Modules -type d -name "Filament" -o -name "Http" -o -name "Models" | grep -v "/app/"
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 =======
 find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Resources" -o -name "Config" -o -name "Views" -o -name "Lang" -o -name "Images"
@@ -116,6 +127,8 @@ find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament"
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 ```
 
 ## Come Correggere
@@ -124,15 +137,19 @@ find /var/www/html/base_<nome progetto>/laravel/Modules -type d -name "Filament"
 
 ```bash
 # Rinomina la directory (su sistemi Linux/Unix)
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 mv Modules/User/Resources Modules/User/resources_temp
 mv Modules/User/resources_temp Modules/User/resources
 
 mv Modules/User/Config Modules/User/config_temp
 mv Modules/User/config_temp Modules/User/config
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 =======
 mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Resources /var/www/html/base_<nome progetto>/laravel/Modules/User/resources_temp
@@ -143,20 +160,26 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/config_temp /var/www/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 ```
 
 ### Per problemi di posizione del codice PHP:
 
 ```bash
 # Crea la directory app se non esiste
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 mkdir -p Modules/User/app/Filament
 
 # Sposta i file nella posizione corretta
 mv Modules/User/Filament/Widgets Modules/User/app/Filament/
+<<<<<<< .merge_file_Q80zs8
 <<<<<<< HEAD
 =======
 mkdir -p /var/www/html/base_<nome progetto>/laravel/Modules/User/app/Filament
@@ -166,6 +189,8 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_ulI7da
 ```
 
 ## Best Practices
@@ -180,6 +205,10 @@ mv /var/www/html/base_<nome progetto>/laravel/Modules/User/Filament/Widgets /var
 
 - [DIRECTORY-STRUCTURE-GUIDE.md](directory-structure-guide.md) - Guida completa alla struttura delle directory
 - [MODULE-STRUCTURE.md](module-structure.md) - Struttura standard dei moduli
+=======
+- [DIRECTORY-STRUCTURE-GUIDE.md](./DIRECTORY-STRUCTURE-GUIDE.md) - Guida completa alla struttura delle directory
+- [MODULE-STRUCTURE.md](./MODULE-STRUCTURE.md) - Struttura standard dei moduli
+>>>>>>> laraxot/dev
 - [naming-conventions.md](./naming-conventions.md) - Convenzioni di naming nel progetto
 
 ## Conclusione
@@ -190,6 +219,19 @@ Rispettare la struttura corretta delle directory è fondamentale per garantire l
 
 - [README.md](./README.md) - Indice principale della documentazione
 - [MODULE_STRUCTURE.md](./MODULE_STRUCTURE.md) - Struttura standard dei moduli
+<<<<<<< HEAD
 - [NAMESPACE-RULES.md](namespace-rules.md) - Regole per i namespace nei moduli
 - [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
 - [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+=======
+- [NAMESPACE-RULES.md](./NAMESPACE-RULES.md) - Regole per i namespace nei moduli
+- [FOLIO_VOLT_FILAMENT_INTEGRATION.md](./FOLIO_VOLT_FILAMENT_INTEGRATION.md) - Integrazione Folio, Volt e Filament
+- [filament/widgets/xot-base-widget.md](./filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
+---
+module: theme
+topic: directory-case-sensitivity
+canonical: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/directory-case-sensitivity-1.md
+>>>>>>> laraxot/dev

@@ -1,6 +1,14 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_GzKICT
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2R9NBq
 ---
 name: 37-residuo-domani
 description: "Status: TODO — sub-agent assegnato (swarm 36-40)"
@@ -8,11 +16,19 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 =======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_GzKICT
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2R9NBq
 >>>>>>> laraxot/dev
 # BMAD Story 37 — Residuo PHPStan (continuazione domani)
 **Status:** TODO — sub-agent assegnato (swarm 36-40)

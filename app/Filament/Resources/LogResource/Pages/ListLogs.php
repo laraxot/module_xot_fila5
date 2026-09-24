@@ -10,7 +10,10 @@ use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ViewAction;
+<<<<<<< HEAD
+=======
 use Filament\Tables\Columns\TextColumn;
+>>>>>>> laraxot/dev
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -21,9 +24,39 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListLogs extends XotBaseListRecords
 {
     protected static string $resource = LogResource::class;
-   
 
     #[\Override]
+<<<<<<< HEAD
+=======
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->sortable()->label('ID'),
+            'message' => TextColumn::make('message')
+                ->searchable()
+                ->wrap()
+                ->label('Message'),
+            'level' => TextColumn::make('level')
+                ->searchable()
+                ->sortable()
+                ->label('Level'),
+            'level_name' => TextColumn::make('level_name')
+                ->searchable()
+                ->sortable()
+                ->label('Level Name'),
+            'context' => TextColumn::make('context')
+                ->searchable()
+                ->wrap()
+                ->label('Context'),
+            'created_at' => TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->label('Created At'),
+        ];
+    }
+
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [

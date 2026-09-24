@@ -63,7 +63,15 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
    {
        return [
@@ -202,5 +210,14 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 <<<<<<< HEAD
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 =======
+<<<<<<< .merge_file_W9loh1
 * [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+=======
+* [filament_best_practices.md](../../../job/docs/filament_best_practices.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pOT3Dc

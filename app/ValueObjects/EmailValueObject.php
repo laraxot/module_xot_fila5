@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
 /*
  * Value Objects
  * The part of the model are Value Objects.

@@ -9,9 +9,18 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+<<<<<<< .merge_file_Bfa6Ox
         'label' => 'cache.navigation',
         'icon' => 'cache.navigation',
         'sort' => 90,
+=======
+<<<<<<< HEAD
+        'label' => 'cache.navigation',
+        'icon' => 'cache.navigation',
+        'sort' => 90,
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5AjT7f
     ],
     'pages' => [
         'health_check_results' => [
@@ -49,6 +58,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_Bfa6Ox
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_5AjT7f
         'key' => [
             'label' => 'key',
             'placeholder' => 'key',
@@ -67,10 +80,19 @@ return [
             'helper_text' => 'expiration',
             'description' => 'expiration',
         ],
+<<<<<<< .merge_file_Bfa6Ox
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5AjT7f
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Cache',
+<<<<<<< .merge_file_Bfa6Ox
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_5AjT7f
             'icon' => 'create',
             'tooltip' => 'create',
         ],
@@ -118,6 +140,17 @@ return [
             'label' => 'filament:clear-cached-components',
             'icon' => 'filament:clear-cached-components',
             'tooltip' => 'filament:clear-cached-components',
+<<<<<<< .merge_file_Bfa6Ox
+=======
+=======
+        ],
+        'edit' => [
+            'label' => 'Modifica Cache',
+        ],
+        'delete' => [
+            'label' => 'Elimina Cache',
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5AjT7f
         ],
     ],
 ];

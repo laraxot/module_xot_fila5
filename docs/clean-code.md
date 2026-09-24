@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_q6HON0
 <<<<<<< HEAD
 https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
 =======
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_uBRQ89
 ---
 title: 'Clean code — risorse esterne'
 module: Xot
@@ -24,7 +27,12 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names>
+<<<<<<< .merge_file_q6HON0
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+https://github.com/jupeter/clean-code-php#use-meaningful-and-pronounceable-variable-names
+>>>>>>> .merge_file_uBRQ89
 >>>>>>> laraxot/dev

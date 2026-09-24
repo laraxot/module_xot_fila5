@@ -41,6 +41,10 @@ return [
     'actions' => [
         'queue_restart' => [
             'label' => 'queue_restart',
+<<<<<<< .merge_file_ybOpUx
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_XjpNmo
             'icon' => 'queue_restart',
             'tooltip' => 'queue_restart',
         ],
@@ -113,6 +117,32 @@ return [
             'label' => 'cancel',
             'icon' => 'cancel',
             'tooltip' => 'cancel',
+<<<<<<< .merge_file_ybOpUx
+=======
+=======
+        ],
+        'event_cache' => [
+            'label' => 'event_cache',
+        ],
+        'route_cache' => [
+            'label' => 'route_cache',
+        ],
+        'config_cache' => [
+            'label' => 'config_cache',
+        ],
+        'view_cache' => [
+            'label' => 'view_cache',
+        ],
+        'filament_optimize' => [
+            'label' => 'filament_optimize',
+        ],
+        'filament_upgrade' => [
+            'label' => 'filament_upgrade',
+        ],
+        'migrate' => [
+            'label' => 'migrate',
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_XjpNmo
         ],
     ],
     'title' => 'artisan commands manager',

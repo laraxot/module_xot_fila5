@@ -145,7 +145,15 @@ class YourModel extends BaseModel
 
 ### 5. **Consistency**
 - Same pattern across all models
+<<<<<<< HEAD
 - <nome progetto>able code structure
+=======
+<<<<<<< HEAD
+- Predictable code structure
+=======
+- <nome progetto>able code structure
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Easier onboarding for developers
 
 ## Migration Strategy

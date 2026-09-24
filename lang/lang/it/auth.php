@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Ft6Gsi
+=======
+
+>>>>>>> .merge_file_TQTPpy
 return [
     'failed' => 'Le credenziali non corrispondono a quelle registrate!',
     'general_error' => 'Non hai diritti sufficienti per questa operazione.',

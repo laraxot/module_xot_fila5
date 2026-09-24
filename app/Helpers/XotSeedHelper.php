@@ -1,10 +1,40 @@
 <?php
 
+<<<<<<< .merge_file_tGswcs
 declare(strict_types=1);
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eU3lxQ
 /**
  * Xot Seeder Helper — canonical seed-once logic (coverage perimeter under app/).
  */
 
+<<<<<<< .merge_file_tGswcs
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+<<<<<<< HEAD
+declare(strict_types=1);
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_eU3lxQ
 namespace Modules\Xot\Helpers;
 
 use Illuminate\Database\Eloquent\Model;

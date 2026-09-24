@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_hhpVr1
+=======
+
+>>>>>>> .merge_file_BGR8oz
 return [
     'general' => [
         'all' => 'Tutti',

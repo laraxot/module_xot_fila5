@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_IsH46w
+=======
+
+>>>>>>> .merge_file_9N9K85
 return [
     'accepted' => 'يجب قبول الحقل :attribute',
     'active_url' => 'الحقل :attribute لا يُمثّل رابطًا صحيحًا',

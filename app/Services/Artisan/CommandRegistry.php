@@ -59,6 +59,28 @@ class CommandRegistry
      */
     private function registerDefaultHandlers(): void
     {
+<<<<<<< .merge_file_hZlwQG
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+        $this->register(new MigrationCommandHandler())
+            ->register(new CacheCommandHandler())
+            ->register(new RouteCommandHandler())
+            ->register(new ViewCommandHandler())
+            ->register(new ErrorCommandHandler())
+            ->register(new ModuleCommandHandler())
+            ->register(new OptimizeCommandHandler())
+            ->register(new QueueCommandHandler())
+            ->register(new DebugbarCommandHandler());
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F5tdre
         $this->register(new MigrationCommandHandler)
             ->register(new CacheCommandHandler)
             ->register(new RouteCommandHandler)
@@ -68,5 +90,13 @@ class CommandRegistry
             ->register(new OptimizeCommandHandler)
             ->register(new QueueCommandHandler)
             ->register(new DebugbarCommandHandler);
+<<<<<<< .merge_file_hZlwQG
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F5tdre
     }
 }
