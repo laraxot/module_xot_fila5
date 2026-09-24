@@ -1,4 +1,26 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+title: "Composer Root Skeleton Fixcity Comparison Dup"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated composer-root-skeleton-fixcity-comparison-dup"
+related:
+  - "./composer-root-skeleton-fixcity-comparison-dup.md"
+---
+# Composer Root Skeleton Fixcity Comparison Dup
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [composer-root-skeleton-fixcity-comparison-dup.md](./composer-root-skeleton-fixcity-comparison-dup.md)
+<<<<<<< HEAD
+=======
+=======
 title: "Confronto composer root FixCity vs Predict"
 type: raw-note
 module: Xot
@@ -41,3 +63,5 @@ Il root deve essere lo skeleton Laravel. I moduli sono package Composer autonomi
 ## Impatto su PHPStan
 
 Il root `autoload.psr-4.Modules\\ = Modules/` amplia la scansione Composer a tutto l'albero dei moduli e aumenta ambiguita' PSR-4, classi duplicate e provider stale. La correzione e' togliere l'autoload root dei moduli e lasciare che ogni modulo esponga il proprio namespace dal proprio `composer.json`.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

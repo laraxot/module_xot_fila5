@@ -1,9 +1,58 @@
 ---
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+title: "XotBaseSchemaWidget — pattern Filament 5 (codice reale)"
+type: concept
+module: Xot
+tags: [xot, filament, schema, widget]
+created: 2026-06-05
+updated: 2026-07-24
+qmd: "xotbase schemawidget filament 5 HasSchemas formClass getState"
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
+related:
+  - ./wiki/concepts/filament-page-form-wrapper.md
+  - ./filament-v5-form-wrapper-blade-pattern.md
+  - ../../../../docs/wiki/concepts/filament-v5-schema-in-blade.md
+  - ../../../../docs/wiki/concepts/filament-v5-form-in-blade.md
+---
+
+# XotBaseSchemaWidget — pattern Filament 5
+
+Fonte codice: `Modules/Xot/app/Filament/Widgets/XotBaseSchemaWidget.php` (letto 2026-07-24).  
+Upstream: [schema](https://filamentphp.com/docs/5.x/components/schema) · [form](https://filamentphp.com/docs/5.x/components/form).
+
+## Contratto reale (estratto verificato)
+
+```php
+abstract class XotBaseSchemaWidget extends XotBaseWidget implements HasSchemas
+{
+    use InteractsWithSchemas; // Filament\Schemas\Concerns\…
+
+    public ?array $data = [];
+
+    protected static function formClass(): ?string { return null; }
+    protected static function schemaMethod(): string { return 'getFormSchema'; }
+
+    public function form(Schema $schema): Schema
+    {
+        // se formClass(): FormClass::{schemaMethod()}() → components + statePath('data')
+        // else: $this->getFormSchema() → components + statePath('data')
+    }
+
+    public function mount(): void
+    {
+        $this->form->fill([]);
+<<<<<<< HEAD
+=======
+=======
 title: "XotBaseSchemaWidget — pattern dichiarativo Filament 4"
 type: concept
 tags: [xot, filament, widget, religion-r1, code, architecture, opencode-minimax-m3]
 created: 2026-06-05
-updated: 2026-07-13
+updated: 2026-06-05
 qmd: "xotbase schemawidget filament widget religion r1 form fields self validate opencode minimax"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/264"
@@ -90,10 +139,42 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
             return $this->view;
         }
         return app(GetViewByClassAction::class)->execute(static::class);
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+## Religione
+
+| Pezzo | Owner |
+|-------|--------|
+| Campi + rules | `*Form::get*Schema()` via `formClass` / `schemaMethod` |
+| Widget | orchestrazione mount/submit/redirect |
+| Submit | `$this->form->getState()` — mai `validateForm()` |
+| Blade | `<form wire:submit>` + `{{ $this->form }}` |
+
+## Schema non-form (infolist)
+
+Per UI read-only: `XotBaseInfolistWidget` → metodo `infolist(Schema)` → Blade `{{ $this->infolist }}` (pattern [schema in Blade](https://filamentphp.com/docs/5.x/components/schema)).
+
+## Documentazione obsoleta
+
+Versioni precedenti di questo file citavano `Modules\Xot\Filament\Traits\InteractsWithSchemas` e firme `getFormSchema(Schema $schema): Schema` sulle Form class — **non corrispondono** al file PHP attuale. Ignorarle; usare questo aggiornamento.
+
+## Verifica
+
+```bash
+php -l Modules/Xot/app/Filament/Widgets/XotBaseSchemaWidget.php
+cd laravel && php artisan view:cache
+```
+<<<<<<< HEAD
+=======
+=======
 ## Simmetria con `XotBaseInfolistWidget`
 
 `XotBaseSchemaWidget` (write) ↔ `XotBaseInfolistWidget` (read) condividono il pattern:
@@ -106,13 +187,12 @@ abstract class XotBaseSchemaWidget extends Widget implements HasSchemas
 ```php
 namespace Modules\User\Filament\Widgets\Auth;
 
-use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 class LoginWidget extends XotBaseSchemaWidget
 {
-    protected static function formClass(): string { return UserForm::class; }
-    protected static function schemaMethod(): string { return 'getLoginFormSchema'; }
+    protected static string $baseSchemaClass = UserForm::class;
 
     public function login(): void
     {
@@ -125,54 +205,35 @@ class LoginWidget extends XotBaseSchemaWidget
 }
 ```
 
-SSoT unico: `Modules/User/Filament/Resources/UserResource/Schemas/UserForm.php` (metodi `getLoginFormSchema`, `getRegisterFormSchema`, … + `getFormSchema` BO):
+E `Modules/User/Filament/Widgets/Auth/Schemas/UserForm.php`:
 
 ```php
-public static function getLoginFormSchema(): array
+public static function getLoginFormSchema(Schema $schema, ?Model $record = null): Schema
 {
-    return [
-        'email' => TextInput::make('email')
+    return $schema->components([
+        TextInput::make('email')
             ->required()
             ->email()
             ->autofocus()
-            ->autocomplete('username')
+            ->autocomplete('email')
             ->extraInputAttributes(['class' => 'fo-auth-input']),
-        'password' => TextInput::make('password')
-            ->password()
-            ->revealable()
+        TextInput::make('password')
             ->required()
+            ->password()
             ->autocomplete('current-password')
-            ->extraInputAttributes(['class' => 'fo-auth-input']),
-        'remember' => Checkbox::make('remember'),
-    ];
+            ->extraInputAttributes(['class' => 'fo-auth-input fo-auth-input--password']),
+        Checkbox::make('remember')->label('Ricordami'),
+    ])->statePath('data');
 }
 ```
 
-## Decisioni chiuse
-
-1. **Un solo `UserForm` in Resource** — FO e BO condividono `Resources/UserResource/Schemas/UserForm.php`.
-2. **Tutti i widget auth FO** — `XotBaseSchemaWidget` + `formClass()`/`schemaMethod()` (eccezione: `PasswordResetConfirmWidget` override `form()` per `disabled` legato a `currentState`).
-3. **`Password::reset`** — password in chiaro in `getState()`; `Hash::make` solo nel callback broker (non in `dehydrateStateUsing` degli schemi reset).
-
 ## Decisioni aperte
 
-Vedi discussion #265 per:
+Vedi discussion #265 per dibattito su:
 1. **Pattern dichiarativo vs imperativo** — reflection vs interface marker.
-2. **RegisterWidget submit()** — `Model::create()` diretto vs orchestrazione GDPR.
-3. **R8 Gdpr vs User RegisterWidget** — quale usare in produzione.
-
-## Lezione: docblock orfani post-refactor
-
-Quando `XotBaseWidget::$data` è stato reso non-nullable, uno script ha rimosso le
-ridichiarazioni `public ?array $data` nei widget figli (11 file). Lo script
-rimuoveva la proprietà ma non il `/** @var ... */` che la precedeva, lasciando
-un docblock "orfano" attaccato al metodo successivo (`varTag.misplaced` in
-PHPStan). Trovati e corretti in `Seo/SocialShareWidget.php` e
-`User/RegistrationWidget.php`. Stesso refactor ha reso `$this->data ?? []`
-inutile (`nullCoalesce.property`): la proprietà non è più nullable, va acceduta
-direttamente. Verificare sempre `phpstan analyse Modules` dopo un refactor
-cross-file di massa: gli effetti collaterali si vedono in file mai toccati
-direttamente dallo script.
+2. **Widget-level Form class vs backoffice Form class** — DRY trade-off.
+3. **RegisterWidget submit()** — `Model::create()` diretto vs `RegistrationService`.
+4. **R8 Gdpr vs User RegisterWidget** — quale usare in produzione.
 
 ## Riferimenti
 
@@ -183,3 +244,5 @@ direttamente dallo script.
 
 ---
 *opencode (MiniMax-M3) · 2026-06-05*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

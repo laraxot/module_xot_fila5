@@ -29,15 +29,25 @@ interface ModelWithAuthorContract extends ModelContract
 - [ModelContract](model-contract.md)
 - [Database Guidelines](../database-guidelines.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+- [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
-- Link bidirezionale: [Vai a PHPSTAN-FIXES-SUMMARY.md](../../../docs/PHPSTAN-FIXES-SUMMARY.md)
-
-## Collegamenti
-- [ModelContract](model-contract.md)
-- [Database Guidelines](../DATABASE-GUIDELINES.md)
-- [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
-- [Contracts Overview](./README.md)
-- [Documentazione root](../../../docs/PHPSTAN-FIXES-SUMMARY.md)
 - [Documentazione root](../../../../docs/phpstan-fixes-summary.md)
 
     $table->foreign('deleter_id')->references('id')->on('users');
@@ -89,4 +99,32 @@ class Article extends Model implements ModelWithAuthorContract
 - Implementare sempre tutte le relazioni richieste
 - Gestire correttamente i casi di soft delete
 - Mantenere la consistenza dei dati nelle relazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
+- Documentare eventuali personalizzazioni
 - Documentare eventuali personalizzazioni

@@ -2,6 +2,101 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< .merge_file_PzuYPx
+=======
+=======
+<<<<<<< .merge_file_RYtcQU
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_MXE3H5
+---
+title: "Readme"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
+# Troubleshooting Guide
+
+## Common Issues
+
+### PHPStan Errors
+- **Issue**: Method not found errors
+- **Solution**: Check namespace imports and method signatures
+- **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_RYtcQU
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_MXE3H5
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_RYtcQU
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_MXE3H5
+
+### Translation Problems
+- **Issue**: Missing translations or hardcoded strings
+- **Solution**: Use expanded translation structure
+- **Prevention**: Never use `->label()` in Filament components
+
+### Migration Failures
+- **Issue**: Table/column already exists
+- **Solution**: Always check existence before creation
+- **Prevention**: Use `hasTable()` and `hasColumn()` methods
+
+### Namespace Issues
+- **Issue**: Class not found errors
+- **Solution**: Remove 'App' segment from module namespaces
+- **Prevention**: Follow Laraxot namespace conventions
+
+## Debugging Steps
+
+1. **Check PHPStan**: `./vendor/bin/phpstan analyze --level=9`
+2. **Verify Translations**: Ensure all keys exist in all language files
+3. **Test Migrations**: Run in development environment first
+4. **Validate Namespaces**: Follow Modules\ModuleName\* pattern
+
+## Getting Help
+
+- Check module-specific documentation
+- Review Laraxot framework guidelines
+- Consult best practices documentation
+- Use project memory system for context
+<<<<<<< .merge_file_RYtcQU
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_MXE3H5
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -36,11 +131,25 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< .merge_file_PzuYPx
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_JFwPVI
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PzuYPx
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
 ---
 title: "Readme"
 type: reference
@@ -58,25 +167,38 @@ updated: 2026-08-24
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
 <<<<<<< HEAD
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
-- **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_PzuYPx
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+- **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_PzuYPx
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI
 >>>>>>> laraxot/dev
 
 ### Translation Problems
@@ -110,6 +232,12 @@ updated: 2026-08-24
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_PzuYPx
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JFwPVI
 =======
 # Xot
 
@@ -148,5 +276,22 @@ Core module for the FixCity Platform.
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_PzuYPx
 =======
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_RYtcQU
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_gaLMQh
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_W8gVlC
+>>>>>>> .merge_file_MXE3H5
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JFwPVI

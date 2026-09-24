@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\Array;
 
-use Modules\Xot\Actions\Array\SaveJsonArrayAction;
+use Modules\Xot\Actions\Arr\SaveJsonArrayAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

@@ -4,6 +4,30 @@ type: guideline
 tags: [phpstan, testing, quality, static-analysis, pest, xot]
 created: 2026-06-13
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
+=======
+updated: 2026-09-21
+qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade mockService rrmdir"
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+updated: 2026-09-21
+qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade mockService rrmdir"
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_s1WYE4
+updated: 2026-07-22
+qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade"
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 <<<<<<< HEAD
 updated: 2026-06-13
 qmd: "Xot PHPStan best practices Pest Assert closure mockService rrmdir"
@@ -15,6 +39,19 @@ qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows
 updated: 2026-09-21
 qmd: "Xot PHPStan best practices Pest Assert method.internalClass Mockery allows Blade mockService rrmdir"
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< .merge_file_L3awa3
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/43"
 discussions:
@@ -28,6 +65,25 @@ related:
 # PHPStan Best Practices - Xot Module
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 ## Pattern per Test in Pest con PHPStan Level Max
 
 ### 1. Property Dinamiche in Closure Pest
@@ -35,7 +91,25 @@ related:
 **Problema:** PHPStan non riconosce `$this->property` nelle closure Pest.
 
 **Soluzione A - Variabile Locale (Consigliata):**
+<<<<<<< .merge_file_xcjfar
 =======
+=======
+<<<<<<< .merge_file_L3awa3
+<<<<<<< HEAD
+=======
+=======
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 Disciplina: **risolvere**, non sopprimere. Niente `@phpstan-ignore` di evasione,
 niente baseline, niente `mixed` per zittire l'analizzatore.
 
@@ -45,6 +119,24 @@ niente baseline, niente `mixed` per zittire l'analizzatore.
 
 PHPStan non vede `$this->property` nelle closure Pest. Preferire variabile locale:
 
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_L3awa3
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 >>>>>>> laraxot/dev
 ```php
 test('example', function (): void {
@@ -55,22 +147,95 @@ test('example', function (): void {
 ```
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 **Soluzione B - assert() Type Narrowing:**
 ```php
 beforeEach(function (): void {
     $this->workDir = sys_get_temp_dir() . '/test';
+<<<<<<< .merge_file_xcjfar
 =======
+=======
+<<<<<<< .merge_file_L3awa3
+<<<<<<< HEAD
+=======
+=======
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 Narrowing solo se il body usa `$this`:
 
 ```php
 beforeEach(function (): void {
     $this->workDir = sys_get_temp_dir().'/test';
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_L3awa3
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 >>>>>>> laraxot/dev
     assert(is_string($this->workDir));
 });
 ```
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 **Soluzione C - @phpstan-ignore (Quando inevitabile):**
 ```php
 test('example', function (): void {
@@ -141,6 +306,12 @@ if ($tempFile === false) {
 
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 ### 7. `expect()->toBe*()` → `method.internalClass` (Pest mixins)
 
 **Problema:** in alcuni file Pest namespaced, PHPStan segnala `method.internalClass` su `Pest\Mixins\Expectation` (`toBe`, `toBeTrue`, `toThrow`, …) anche se altri test con `expect()` passano.
@@ -158,7 +329,25 @@ Assert::assertSame(0, $mockComps->count());
 **Problema:** `->andReturn()` / `->andReturns()` su catena `shouldReceive` spesso dà `method.notFound` (union Mockery).
 
 **Soluzione:** pattern Xot collaudato:
+<<<<<<< .merge_file_xcjfar
 =======
+=======
+<<<<<<< .merge_file_L3awa3
+<<<<<<< HEAD
+=======
+=======
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 ### 2. Mock PHPUnit in closure Pest
 
 `$this->atLeastOnce()` è protected. Usare `createUnitMock()` o Mockery `allows()`.
@@ -189,6 +378,24 @@ Su file Pest namespaced, `Pest\Mixins\Expectation` è `@internal`. Preferire
 ### 8. Mockery sotto PHPStan
 
 Catene `shouldReceive()->andReturn()` spesso `method.notFound`. Pattern Xot:
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_L3awa3
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 >>>>>>> laraxot/dev
 
 ```php
@@ -199,8 +406,31 @@ app()->instance(GetComponentsAction::class, $getComponents);
 ```
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
 `RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
 
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_s1WYE4
+`RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
+
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+`RegisterBladeComponentsAction::execute(string $path, string $namespace, string $prefix = '')` — mockare `Modules\Xot\Actions\File\GetComponentsAction` (non un fantasma `Actions\Blade\GetComponentsAction`).
+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 >>>>>>> laraxot/dev
 ## Checklist Pre-Commit
 
@@ -208,6 +438,14 @@ app()->instance(GetComponentsAction::class, $getComponents);
 - [ ] Test Pest eseguibili: `vendor/bin/pest Modules/Xot/tests/Unit`
 - [ ] Nessun `static::` in closure Pest (usare `Assert::`)
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
+=======
+- [ ] Preferire `Assert::` se `expect()->…` dà `method.internalClass`
+- [ ] Mockery: `allows(['method' => $value])` + `@var Class&MockInterface` (non catene `andReturn` fragili)
+- [ ] Mock con `@phpstan-ignore-next-line` solo se inevitabile
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_JRiXcE
 - [ ] Mock con `@phpstan-ignore-next-line` se necessario
 =======
 - [ ] Preferire `Assert::` se `expect()->…` dà `method.internalClass`
@@ -215,12 +453,41 @@ app()->instance(GetComponentsAction::class, $getComponents);
 - [ ] Mock con `@phpstan-ignore-next-line` solo se inevitabile
 >>>>>>> laraxot/dev
 =======
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JRiXcE
 ## Checklist pre-commit
 
 - [ ] `php -d memory_limit=-1 vendor/bin/phpstan analyse` (comando che certifica) passa
 - [ ] Pest del modulo: `vendor/bin/pest Modules/Xot/tests/Unit`
 - [ ] Nessun `static::` in closure Pest
 - [ ] Mockery: `allows(['method' => $value])` + `@var Class&MockInterface`
+<<<<<<< .merge_file_xcjfar
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_L3awa3
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 >>>>>>> laraxot/dev
 
 ## Links
@@ -230,6 +497,34 @@ app()->instance(GetComponentsAction::class, $getComponents);
 - [PHPSTAN-INDEX](../../../../../docs/wiki/PHPSTAN-INDEX.md)
 - [module-testcase-xotbase-hierarchy](rules/module-testcase-xotbase-hierarchy.md)
 <<<<<<< HEAD
+<<<<<<< .merge_file_xcjfar
 =======
 - [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
+=======
+- [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_L3awa3
+=======
+<<<<<<< .merge_file_QHz5RC
+=======
+- [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
+>>>>>>> laraxot/dev
+=======
+- [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_s1WYE4
+=======
+<<<<<<< HEAD
+=======
+- [phpstan-modules-fix](troubleshooting/phpstan-modules-fix.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_L3awa3
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_PYTqPv
+>>>>>>> .merge_file_s1WYE4
+>>>>>>> .merge_file_JRiXcE
 >>>>>>> laraxot/dev

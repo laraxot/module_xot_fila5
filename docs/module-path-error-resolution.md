@@ -1,6 +1,13 @@
 # Module Path Error Resolution - Activity Assets Issue
 
 **Data Creazione**: 2026-01-02
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Data Creazione**: [DATE]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Status**: 🔧 RESOLVED
 **Versione**: 1.0.0
 
@@ -131,7 +138,21 @@ try {
 - [Module Path Generation Philosophy](./module-path-generation-philosophy.md)
 - [Xot Philosophy](./philosophy.md)
 - [Activity Philosophy](../Activity/docs/philosophy.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
 ---
 
 **Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+<<<<<<< HEAD
+=======
+=======
+- [Activity Philosophy](../activity/docs/philosophy.md)
+
+---
+
+**Filosofia Applicata**: Graceful degradation, non-intrusive, robusto.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

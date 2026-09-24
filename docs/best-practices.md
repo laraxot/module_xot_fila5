@@ -288,7 +288,21 @@ class MioModelloResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('nome')
@@ -764,6 +778,18 @@ public function createModel(array $data): MioModello
 ---
 
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [**README.md**](readme.md) - Documentazione principale del modulo
+- [**Architettura**](architecture.md) - Architettura del modulo Xot
+- [**Best Practices Globali**](../../docs/best-practices.md) - Best practices globali
+
+---
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Best Practices per Laraxot
 
 ## Riferimenti al modello User
@@ -831,4 +857,12 @@ public function process(UserContract $user) {
 public function process(\Modules\User\Models\User $user) {
     // Codice
 }
+<<<<<<< HEAD
 ```
+=======
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

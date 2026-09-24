@@ -75,10 +75,32 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 protected static ?string $model = YourModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_GKaFEB
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xWuPuf
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_5wbCrT
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_N1KbmT
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_GKaFEB
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xWuPuf
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5wbCrT
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_N1KbmT
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -174,10 +196,32 @@ class DoctorResource extends XotBaseResource
     protected static ?string $model = Doctor::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_GKaFEB
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xWuPuf
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_5wbCrT
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_N1KbmT
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_GKaFEB
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_xWuPuf
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5wbCrT
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_N1KbmT
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

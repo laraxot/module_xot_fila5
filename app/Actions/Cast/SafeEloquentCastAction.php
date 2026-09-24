@@ -27,21 +27,16 @@ class SafeEloquentCastAction
     use QueueableAction;
 
     /**
-     * Ottiene un attributo con cast sicuro usando l'entrypoint canonico delle action.
-     *
-     * Il tipo supportato e string, int, float, bool o array.
-     */
-    public function execute(Model $model, string $attribute, string $type = 'string', mixed $default = null): mixed
-    {
-        return $this->getTypedAttribute($model, $attribute, $type, $default);
-    }
-
-    /**
      * Verifica se un attributo esiste su un modello Eloquent.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      *
+>>>>>>> laraxot/dev
      * @return bool True se l'attributo esiste
      */
     public function hasAttribute(Model $model, string $attribute): bool
@@ -49,15 +44,24 @@ class SafeEloquentCastAction
         Assert::stringNotEmpty($attribute);
 
         // Usa getAttribute invece di property_exists per evitare falsi positivi
+<<<<<<< HEAD
+        return $model->getAttribute($attribute) !== null;
+=======
         return null !== $model->getAttribute($attribute);
+>>>>>>> laraxot/dev
     }
 
     /**
      * Verifica se un attributo esiste e ha un valore non vuoto.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      *
+>>>>>>> laraxot/dev
      * @return bool True se l'attributo esiste e ha un valore non vuoto
      */
     public function hasNonEmptyAttribute(Model $model, string $attribute): bool
@@ -66,16 +70,26 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        return $value !== null && $value !== '';
+=======
         return null !== $value && '' !== $value;
+>>>>>>> laraxot/dev
     }
 
     /**
      * Ottiene un attributo con cast sicuro a string.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  string|null  $default  Valore di default se l'attributo non esiste o è null
+=======
      * @param Model       $model     Il modello Eloquent
      * @param string      $attribute Il nome dell'attributo
      * @param string|null $default   Valore di default se l'attributo non esiste o è null
      *
+>>>>>>> laraxot/dev
      * @return string Il valore dell'attributo convertito in string
      */
     public function getStringAttribute(Model $model, string $attribute, ?string $default = ''): string
@@ -84,7 +98,11 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        if ($value === null) {
+=======
         if (null === $value) {
+>>>>>>> laraxot/dev
             return $default ?? '';
         }
 
@@ -94,10 +112,16 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a int.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  int|null  $default  Valore di default se l'attributo non esiste o è null
+=======
      * @param Model    $model     Il modello Eloquent
      * @param string   $attribute Il nome dell'attributo
      * @param int|null $default   Valore di default se l'attributo non esiste o è null
      *
+>>>>>>> laraxot/dev
      * @return int Il valore dell'attributo convertito in int
      */
     public function getIntAttribute(Model $model, string $attribute, ?int $default = 0): int
@@ -106,7 +130,11 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        if ($value === null) {
+=======
         if (null === $value) {
+>>>>>>> laraxot/dev
             return $default ?? 0;
         }
 
@@ -116,10 +144,16 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a float.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  float|null  $default  Valore di default se l'attributo non esiste o è null
+=======
      * @param Model      $model     Il modello Eloquent
      * @param string     $attribute Il nome dell'attributo
      * @param float|null $default   Valore di default se l'attributo non esiste o è null
      *
+>>>>>>> laraxot/dev
      * @return float Il valore dell'attributo convertito in float
      */
     public function getFloatAttribute(Model $model, string $attribute, ?float $default = 0.0): float
@@ -128,7 +162,11 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        if ($value === null) {
+=======
         if (null === $value) {
+>>>>>>> laraxot/dev
             return $default ?? 0.0;
         }
 
@@ -138,10 +176,16 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a boolean.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  bool|null  $default  Valore di default se l'attributo non esiste o è null
+=======
      * @param Model     $model     Il modello Eloquent
      * @param string    $attribute Il nome dell'attributo
      * @param bool|null $default   Valore di default se l'attributo non esiste o è null
      *
+>>>>>>> laraxot/dev
      * @return bool Il valore dell'attributo convertito in boolean
      */
     public function getBooleanAttribute(Model $model, string $attribute, ?bool $default = false): bool
@@ -150,7 +194,11 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        if ($value === null) {
+=======
         if (null === $value) {
+>>>>>>> laraxot/dev
             return $default ?? false;
         }
 
@@ -160,10 +208,16 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a array.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  array<int|string, mixed>|null  $default  Valore di default se l'attributo non esiste o è null
+=======
      * @param Model                         $model     Il modello Eloquent
      * @param string                        $attribute Il nome dell'attributo
      * @param array<int|string, mixed>|null $default   Valore di default se l'attributo non esiste o è null
      *
+>>>>>>> laraxot/dev
      * @return array<int|string, mixed> Il valore dell'attributo convertito in array
      */
     public function getArrayAttribute(Model $model, string $attribute, ?array $default = []): array
@@ -172,7 +226,11 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        if ($value === null) {
+=======
         if (null === $value) {
+>>>>>>> laraxot/dev
             return app(SafeArrayCastAction::class)->execute([], $default);
         }
 
@@ -182,11 +240,18 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con cast sicuro a un tipo specifico.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  string  $type  Il tipo di cast desiderato (string, int, float, bool, array)
+     * @param  mixed  $default  Valore di default se l'attributo non esiste o è null
+=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      * @param string $type      Il tipo di cast desiderato (string, int, float, bool, array)
      * @param mixed  $default   Valore di default se l'attributo non esiste o è null
      *
+>>>>>>> laraxot/dev
      * @return mixed Il valore dell'attributo convertito nel tipo specificato
      */
     public function getTypedAttribute(Model $model, string $attribute, string $type, mixed $default = null): mixed
@@ -211,10 +276,16 @@ class SafeEloquentCastAction
     /**
      * Verifica se un attributo esiste e ha un valore specifico.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  mixed  $expectedValue  Il valore atteso
+=======
      * @param Model  $model         Il modello Eloquent
      * @param string $attribute     Il nome dell'attributo
      * @param mixed  $expectedValue Il valore atteso
      *
+>>>>>>> laraxot/dev
      * @return bool True se l'attributo esiste e ha il valore atteso
      */
     public function hasAttributeValue(Model $model, string $attribute, mixed $expectedValue): bool
@@ -229,12 +300,20 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con validazione di tipo e valore.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  string  $type  Il tipo di cast desiderato
+     * @param  callable|null  $validator  Funzione di validazione opzionale
+     * @param  mixed  $default  Valore di default se la validazione fallisce
+=======
      * @param Model         $model     Il modello Eloquent
      * @param string        $attribute Il nome dell'attributo
      * @param string        $type      Il tipo di cast desiderato
      * @param callable|null $validator Funzione di validazione opzionale
      * @param mixed         $default   Valore di default se la validazione fallisce
      *
+>>>>>>> laraxot/dev
      * @return mixed Il valore dell'attributo validato e convertito
      */
     public function getValidatedAttribute(
@@ -249,7 +328,11 @@ class SafeEloquentCastAction
 
         $value = $this->getTypedAttribute($model, $attribute, $type, $default);
 
+<<<<<<< HEAD
+        if ($validator !== null && ! $validator($value)) {
+=======
         if (null !== $validator && ! $validator($value)) {
+>>>>>>> laraxot/dev
             return $default;
         }
 
@@ -259,10 +342,16 @@ class SafeEloquentCastAction
     /**
      * Verifica se un attributo esiste e soddisfa una condizione.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  callable  $condition  La condizione da verificare
+=======
      * @param Model    $model     Il modello Eloquent
      * @param string   $attribute Il nome dell'attributo
      * @param callable $condition La condizione da verificare
      *
+>>>>>>> laraxot/dev
      * @return bool True se l'attributo esiste e soddisfa la condizione
      */
     public function hasAttributeCondition(Model $model, string $attribute, callable $condition): bool
@@ -271,7 +360,11 @@ class SafeEloquentCastAction
 
         $value = $model->getAttribute($attribute);
 
+<<<<<<< HEAD
+        if ($value === null) {
+=======
         if (null === $value) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -281,12 +374,20 @@ class SafeEloquentCastAction
     /**
      * Ottiene un attributo con fallback a un altro attributo se il primo è null.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $primaryAttribute  L'attributo primario
+     * @param  string  $fallbackAttribute  L'attributo di fallback
+     * @param  string  $type  Il tipo di cast desiderato
+     * @param  mixed  $default  Valore di default se entrambi gli attributi sono null
+=======
      * @param Model  $model             Il modello Eloquent
      * @param string $primaryAttribute  L'attributo primario
      * @param string $fallbackAttribute L'attributo di fallback
      * @param string $type              Il tipo di cast desiderato
      * @param mixed  $default           Valore di default se entrambi gli attributi sono null
      *
+>>>>>>> laraxot/dev
      * @return mixed Il valore dell'attributo primario o di fallback
      */
     public function getAttributeWithFallback(
@@ -302,7 +403,11 @@ class SafeEloquentCastAction
 
         $primaryValue = $model->getAttribute($primaryAttribute);
 
+<<<<<<< HEAD
+        if ($primaryValue !== null) {
+=======
         if (null !== $primaryValue) {
+>>>>>>> laraxot/dev
             return $this->getTypedAttribute($model, $primaryAttribute, $type, $default);
         }
 
@@ -312,11 +417,18 @@ class SafeEloquentCastAction
     /**
      * Metodo di convenienza per ottenere attributi con cast sicuro.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+     * @param  string  $type  Il tipo di cast desiderato
+     * @param  mixed  $default  Valore di default
+=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      * @param string $type      Il tipo di cast desiderato
      * @param mixed  $default   Valore di default
      *
+>>>>>>> laraxot/dev
      * @return mixed Il valore dell'attributo convertito
      */
     public static function get(Model $model, string $attribute, string $type, mixed $default = null): mixed
@@ -327,9 +439,14 @@ class SafeEloquentCastAction
     /**
      * Metodo di convenienza per verificare l'esistenza di attributi.
      *
+<<<<<<< HEAD
+     * @param  Model  $model  Il modello Eloquent
+     * @param  string  $attribute  Il nome dell'attributo
+=======
      * @param Model  $model     Il modello Eloquent
      * @param string $attribute Il nome dell'attributo
      *
+>>>>>>> laraxot/dev
      * @return bool True se l'attributo esiste
      */
     public static function has(Model $model, string $attribute): bool

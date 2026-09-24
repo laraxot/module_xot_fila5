@@ -2,19 +2,27 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/caches.php
 return [
     'fields' => [
-        'id' => [
-            'label' => 'id',
+        'id' => ['label' => 'id'],
+        'created_at' => ['label' => 'created_at'],
+        'updated_at' => ['label' => 'updated_at'],
+        'key' => ['label' => 'key'],
+        'expiration' => ['label' => 'expiration'],
+    ],
+    'actions' => [
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
         ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
+        'edit' => [
+            'label' => 'edit',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
         ],
     ],
 ];

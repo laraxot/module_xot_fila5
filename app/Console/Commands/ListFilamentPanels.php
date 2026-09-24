@@ -27,9 +27,17 @@ class ListFilamentPanels extends Command
                 continue;
             }
 
+<<<<<<< HEAD
+            /** @var list<string> $entries */
+            $entries = scandir($providersPath);
+            $providers = collect($entries)
+                ->filter(static function (string $file): bool {
+                    return str_ends_with($file, 'ServiceProvider.php');
+=======
             $providers = collect(scandir($providersPath))
-                ->filter(function ($file): bool {
+                ->filter(static function (mixed $file): bool {
                     return is_string($file) && str_ends_with($file, 'ServiceProvider.php');
+>>>>>>> laraxot/dev
                 });
 
             foreach ($providers as $provider) {

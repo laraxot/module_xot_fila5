@@ -14,20 +14,59 @@ uses(TestCase::class)->group('no-xot-db');
 test('DateTimeRule accepts the documented day month year format', function (): void {
     $validator = Validator::make(
         ['published_at' => '10/10/2019 13:43'],
+<<<<<<< .merge_file_KnreQa
         ['published_at' => [new DateTimeRule]],
+=======
+<<<<<<< HEAD
+        ['published_at' => [new DateTimeRule]],
+=======
+<<<<<<< .merge_file_IKZqnU
+        ['published_at' => [new DateTimeRule]],
+=======
+        ['published_at' => [new DateTimeRule()]],
+>>>>>>> .merge_file_zDvQAN
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_sU922O
     );
 
     Assert::assertFalse($validator->fails());
 });
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_KnreQa
+=======
+$rejectsInvalidDateTime = function (int|string $value): void {
+    $validator = Validator::make(
+        ['published_at' => $value],
+        ['published_at' => [new DateTimeRule]],
+=======
+<<<<<<< .merge_file_IKZqnU
+<<<<<<< HEAD
+$rejectsInvalidDateTime = function (mixed $value): void {
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_sU922O
 $rejectsInvalidDateTime = function (mixed $value): void {
 =======
 $rejectsInvalidDateTime = function (int|string $value): void {
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KnreQa
     $validator = Validator::make(
         ['published_at' => $value],
         ['published_at' => [new DateTimeRule]],
+=======
+>>>>>>> laraxot/dev
+    $validator = Validator::make(
+        ['published_at' => $value],
+        ['published_at' => [new DateTimeRule]],
+=======
+$rejectsInvalidDateTime = function (int|string $value): void {
+    $validator = Validator::make(
+        ['published_at' => $value],
+        ['published_at' => [new DateTimeRule()]],
+>>>>>>> .merge_file_zDvQAN
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_sU922O
     );
 
     Assert::assertTrue($validator->fails());

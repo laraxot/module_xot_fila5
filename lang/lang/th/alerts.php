@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_OCp4AI
+=======
+
+>>>>>>> .merge_file_14kpWX
 return [
     'backend' => [
         'roles' => [

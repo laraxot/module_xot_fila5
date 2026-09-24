@@ -93,6 +93,32 @@ The Xot base classes provide a centralized way to customize and extend functiona
       // Resource definition
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_Mxh2Kh
+=======
+=======
+<<<<<<< .merge_file_sCEhGN
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_Mxh2Kh
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_VQkxoF
+      public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
       public function getFormSchema(): array
 =======
       public function getFormSchema(): array
@@ -100,6 +126,13 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_sCEhGN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VQkxoF
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -169,6 +202,27 @@ The Xot base classes provide a centralized way to customize and extend functiona
       // Resource definition
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_Mxh2Kh
+=======
+=======
+<<<<<<< .merge_file_sCEhGN
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+      public function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_VQkxoF
+      public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> .merge_file_pjhnlh
       public function getFormSchema(): array
 =======
       public function getFormSchema(): array
@@ -176,6 +230,15 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
       public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_Mxh2Kh
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_sCEhGN
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VQkxoF
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -840,8 +903,32 @@ abstract class XotBaseResource extends Resource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_Mxh2Kh
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_sCEhGN
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VQkxoF
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
     {
         return [
             // Schema base automatico
@@ -4237,8 +4324,32 @@ class {ModelName}Resource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_Mxh2Kh
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_sCEhGN
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VQkxoF
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
     {
         return [
             Section::make()  // NO ->label() - gestito automaticamente
@@ -4455,8 +4566,32 @@ Questo significa che:
 <<<<<<< HEAD
 abstract public function getFormSchemaOld(): array;
 =======
+<<<<<<< .merge_file_Mxh2Kh
 abstract public function getFormSchemaOld(): array;
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+abstract public function getFormSchemaOld(): array;
+=======
+<<<<<<< .merge_file_sCEhGN
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+abstract public function getFormSchemaOld(): array;
+=======
+abstract public function getFormSchemaOld(): array;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VQkxoF
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form. `getFormSchema()` è ora `final` e ritorna `[]` — vedi [[xotbaseresource-formschema-old-pattern]].
@@ -4493,8 +4628,32 @@ class NotificationResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchemaOld(): array
 =======
+<<<<<<< .merge_file_Mxh2Kh
     public function getFormSchemaOld(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchemaOld(): array
+=======
+<<<<<<< .merge_file_sCEhGN
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchemaOld(): array
+=======
+    public function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VQkxoF
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_pjhnlh
     {
         return [
             Forms\Components\TextInput::make('title')

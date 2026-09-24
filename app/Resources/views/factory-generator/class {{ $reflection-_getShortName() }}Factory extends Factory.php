@@ -2,9 +2,26 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_UmFyBt
 
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< .merge_file_sLx40b
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_XWkrpi
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_s7dpJo
 ?>
 namespace Database\Factories;
 

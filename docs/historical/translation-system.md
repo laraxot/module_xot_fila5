@@ -221,6 +221,22 @@ php artisan view:clear
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_FBuQqY
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_RF4oTP
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Rzdqm7
+=======
+=======
+>>>>>>> .merge_file_vp5fcB
+>>>>>>> .merge_file_WbrhYC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_3DtH6m
 - [Documentazione Laravel Translations](https://laravel.com/project_docs/localization)
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
@@ -230,8 +246,29 @@ php artisan view:clear
 - [Filament Form Components](https://filamentphp.com/project_docs/forms)
 - [Best Practices Filament](../project_docs/filament-best-practices.md)
 - [Schema Conventions](../project_docs/schema-conventions.md) 
+<<<<<<< .merge_file_FBuQqY
 =
 =======
+=======
+<<<<<<< HEAD
+=
+=======
+<<<<<<< .merge_file_RF4oTP
+=
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_Rzdqm7
+=
+=======
+=======
+========
+>>>>>>> .merge_file_vp5fcB
+>>>>>>> .merge_file_WbrhYC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_3DtH6m
 >>>>>>> laraxot/dev
 - [Documentazione Laravel Translations](https://laravel.com/docs/localization)
 - [Filament Form Components](https://filamentphp.com/docs/forms)

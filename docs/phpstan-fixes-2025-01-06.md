@@ -1,5 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_LErSVP
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FNFTtK
 ---
 name: phpstan-fixes-2025-01-06
 description: " Errori Risolti"
@@ -7,10 +17,25 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_LErSVP
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FNFTtK
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_LErSVP
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FNFTtK
 # Correzioni PHPStan - 6 Gennaio 2025
 
 ## Errori Risolti

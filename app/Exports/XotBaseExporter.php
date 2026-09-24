@@ -6,17 +6,36 @@ namespace Modules\Xot\Exports;
 
 use Filament\Actions\Exports\ExportColumn;
 use Filament\Actions\Exports\Exporter;
+<<<<<<< .merge_file_fJ3tT0
 use Filament\Actions\Exports\Models\Export;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Builder;
+=======
+<<<<<<< HEAD
+use Filament\Resources\Pages\ListRecords;
+=======
+use Filament\Actions\Exports\Models\Export;
+use Filament\Resources\Pages\ListRecords;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Modules\Lang\Actions\TransArrayAction;
 use Modules\Xot\Actions\GetTransKeyAction;
+<<<<<<< .merge_file_fJ3tT0
 use OpenSpout\Common\Entity\Cell;
 use OpenSpout\Common\Entity\Row;
 use OpenSpout\Common\Entity\Style\Style;
+=======
+<<<<<<< HEAD
+=======
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Entity\Style\Style;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
 
 /**
  * Exporter Filament 5 che riusa il contratto `getXlsFields()` dei Resource.
@@ -35,16 +54,28 @@ use OpenSpout\Common\Entity\Style\Style;
  * I nomi colonna non possono contenere `.` (romperebbe il `columnMap` via
  * `data_get` in `CanExportRecords`): i punti del percorso diventano `_` e lo
  * stato viene risolto con `data_get($record, $percorso)`.
+<<<<<<< .merge_file_fJ3tT0
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_JUTgl4
  *
  * Tipo delle celle: il job nativo passa dal CSV (`ExportCsv` → `CreateXlsxFile`),
  * quindi OpenSpout riceve solo stringhe e `"57"` diventerebbe testo. `export_xls`
  * (PhpSpreadsheet, `DefaultValueBinder`) lo scrive come numero: `makeXlsxRow()`
  * applica lo stesso binder, cosi' i due file hanno gli stessi tipi di cella.
  *
+<<<<<<< .merge_file_fJ3tT0
      * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
      * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
      * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
      * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+=======
+ * Eager load: `ratings_by_id` (HasRatingsTrait) legge `ratings` + `ratingMorphs`;
+ * `xls_export_value` risolve anche `ratings.children` (padre Select → txt figlio).
+ * `modifyQuery()` li carica se il model li ha, altrimenti il job chunked farebbe
+ * N query per riga. Stessa regola in `ExportXlsAction` (che la chiama).
+>>>>>>> .merge_file_JUTgl4
  *
  * CSV intermedio: i job Filament usano League\Csv con escape `\` (default PHP):
  * un valore che finisce con `\` chiude il campo con `\"` e il reader lo legge
@@ -52,10 +83,19 @@ use OpenSpout\Common\Entity\Style\Style;
  * I job Xot (`Jobs\XotPrepareCsvExport`, `Jobs\XotExportCsv`, `Jobs\XotCreateXlsxFile`)
  * scrivono e leggono con `CSV_ESCAPE` (nessun escape, RFC 4180): round-trip
  * intatto anche per `a\` e `a\"b`.
+<<<<<<< .merge_file_fJ3tT0
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
  */
 abstract class XotBaseExporter extends Exporter
 {
     /**
+<<<<<<< .merge_file_fJ3tT0
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_JUTgl4
      * Escape del CSV intermedio (writer e reader devono coincidere).
      */
     public const string CSV_ESCAPE = '';
@@ -65,7 +105,12 @@ abstract class XotBaseExporter extends Exporter
      *
      * @template TModel of Model
      *
+<<<<<<< .merge_file_fJ3tT0
      * @param  Builder<TModel>  $query
+=======
+     * @param Builder<TModel> $query
+     *
+>>>>>>> .merge_file_JUTgl4
      * @return Builder<TModel>
      */
     #[\Override]
@@ -81,7 +126,11 @@ abstract class XotBaseExporter extends Exporter
             $with[] = 'ratingMorphs';
         }
 
+<<<<<<< .merge_file_fJ3tT0
         return $with === [] ? $query : $query->with($with);
+=======
+        return [] === $with ? $query : $query->with($with);
+>>>>>>> .merge_file_JUTgl4
     }
 
     /**
@@ -109,7 +158,11 @@ abstract class XotBaseExporter extends Exporter
      * Righe (e intestazione: `makeXlsxHeaderRow` delega qui) con le celle
      * tipizzate come PhpSpreadsheet in `export_xls`. Story Ptv/5.165.
      *
+<<<<<<< .merge_file_fJ3tT0
      * @param  array<mixed>  $values
+=======
+     * @param array<mixed> $values
+>>>>>>> .merge_file_JUTgl4
      */
     #[\Override]
     public function makeXlsxRow(array $values, ?Style $style = null): Row
@@ -131,6 +184,10 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
+<<<<<<< .merge_file_fJ3tT0
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
      * @return array<int, ExportColumn>
      */
     #[\Override]
@@ -145,7 +202,14 @@ abstract class XotBaseExporter extends Exporter
         return static::resolveColumns(
             $livewire->getResource(),
             $livewire->tableFilters ?? [],
+<<<<<<< .merge_file_fJ3tT0
             $livewire::class,
+=======
+<<<<<<< HEAD
+=======
+            $livewire::class,
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
         );
     }
 
@@ -161,11 +225,26 @@ abstract class XotBaseExporter extends Exporter
             $resource = Arr::get($this->options, 'resource');
             $resource = \is_string($resource) && class_exists($resource) ? $resource : null;
             $filters = Arr::get($this->options, 'tableFilters', []);
+<<<<<<< .merge_file_fJ3tT0
             $transClass = Arr::get($this->options, 'livewireClass');
             $transClass = \is_string($transClass) && class_exists($transClass) ? $transClass : $resource;
             /** @var array<string, mixed> $filters */
             $this->cachedColumns = [];
             foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : [], $transClass) as $column) {
+=======
+<<<<<<< HEAD
+            /** @var array<string, mixed> $filters */
+
+            $this->cachedColumns = [];
+            foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : []) as $column) {
+=======
+            $transClass = Arr::get($this->options, 'livewireClass');
+            $transClass = \is_string($transClass) && class_exists($transClass) ? $transClass : $resource;
+            /* @var array<string, mixed> $filters */
+            $this->cachedColumns = [];
+            foreach (static::resolveColumns($resource, \is_array($filters) ? $filters : [], $transClass) as $column) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
                 $this->cachedColumns[$column->getName()] = $column->exporter($this);
             }
         }
@@ -174,6 +253,7 @@ abstract class XotBaseExporter extends Exporter
     }
 
     /**
+<<<<<<< .merge_file_fJ3tT0
      * @param  class-string|null  $resource
      * @param  array<array-key, mixed>  $filters
      * @param  class-string|null  $transClass  come ExportXlsAction: classe Livewire/page, non il Resource
@@ -182,24 +262,68 @@ abstract class XotBaseExporter extends Exporter
     protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
     {
         if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
+=======
+<<<<<<< HEAD
+     * @param  class-string|null  $resource
+     * @param  array<array-key, mixed>  $filters
+     * @return array<int, ExportColumn>
+     */
+    protected static function resolveColumns(?string $resource, array $filters): array
+    {
+        if ($resource === null || ! method_exists($resource, 'getXlsFields')) {
+=======
+     * @param class-string|null       $resource
+     * @param array<array-key, mixed> $filters
+     * @param class-string|null       $transClass come ExportXlsAction: classe Livewire/page, non il Resource
+     *
+     * @return array<int, ExportColumn>
+     */
+    protected static function resolveColumns(?string $resource, array $filters, ?string $transClass = null): array
+    {
+        if (null === $resource || ! method_exists($resource, 'getXlsFields')) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
             return [];
         }
 
         /** @var array<int|string, string> $fields */
         $fields = $resource::getXlsFields($filters);
 
+<<<<<<< .merge_file_fJ3tT0
         $transKey = app(GetTransKeyAction::class)->execute($transClass ?? $resource).'.fields';
+=======
+<<<<<<< HEAD
+        $transKey = app(GetTransKeyAction::class)->execute($resource).'.fields';
+=======
+        $transKey = app(GetTransKeyAction::class)->execute($transClass ?? $resource).'.fields';
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
 
         $columns = [];
         foreach ($fields as $key => $value) {
             $path = \is_string($key) ? $key : $value;
             $label = \is_string($key)
                 ? $value
+<<<<<<< .merge_file_fJ3tT0
+=======
+<<<<<<< HEAD
+                : app(TransArrayAction::class)->execute([$path], $transKey)[0] ?? $path;
+
+            $columns[] = ExportColumn::make(static::columnName($path))
+                ->label($label)
+                ->state(static fn (Model $record): mixed => data_get($record, $path))
+                ->preventFormulaInjection();
+=======
+>>>>>>> .merge_file_JUTgl4
                 : (array_values(app(TransArrayAction::class)->execute([$path], $transKey))[0] ?? $path);
 
             $columns[] = ExportColumn::make(static::columnName($path))
                 ->label($label)
                 ->state(static fn (Model $record): string => CollectionExport::castCell(data_get($record, $path)));
+<<<<<<< .merge_file_fJ3tT0
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
         }
 
         return $columns;
@@ -217,11 +341,25 @@ abstract class XotBaseExporter extends Exporter
         $livewire = app('livewire')->current();
 
         if ($livewire instanceof ListRecords) {
+<<<<<<< .merge_file_fJ3tT0
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_JUTgl4
             /** @var class-string<Model> */
             return $livewire->getResource()::getModel();
         }
 
         /** @var class-string<Model> */
+<<<<<<< .merge_file_fJ3tT0
+=======
+=======
+            /* @var class-string<Model> */
+            return $livewire->getResource()::getModel();
+        }
+
+        /* @var class-string<Model> */
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JUTgl4
         return parent::getModel();
     }
 

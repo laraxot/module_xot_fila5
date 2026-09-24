@@ -2,6 +2,13 @@
 
 ## Collegamenti
 - [Documentazione generale progetto](/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Documentazione generale progetto](/docs/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -424,4 +431,12 @@ TextInput::make('name')
 
 ---
 
+<<<<<<< HEAD
 **Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+=======
+<<<<<<< HEAD
+**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+=======
+**Nota**: Queste regole sono fondamentali per mantenere la qualità e la consistenza del progetto. Devono essere sempre seguite e aggiornate quando necessario.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

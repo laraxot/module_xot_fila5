@@ -2,9 +2,26 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_gSKmc3
 
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< .merge_file_5yARdV
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_wHCI6O
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_cv9Wce
 use Modules\Xot\Actions\Arr\RangeIntersectAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

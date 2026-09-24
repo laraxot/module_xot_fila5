@@ -1,6 +1,13 @@
 # Log delle Correzioni Filament
 
 ## Data: 2024-12-19
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+## Data: [DATE]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### **REGOLA CRITICA IDENTIFICATA: Trait Translatable**
 
@@ -55,10 +62,23 @@
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Categorie multilingua
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 4. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
    - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseCreateRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< HEAD
+=======
+=======
+4. **`laravel/Modules/<nome progetto>/app/Filament/Resources/CategoryResource/Pages/CreateCategory.php`**
+   - **Prima**: `extends CreateRecord` + `use CreateRecord\Concerns\Translatable`
+   - **Dopo**: `extends LangBaseCreateRecord`
+   - **Impatto**: Coerenza nel modulo <nome progetto>
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 5. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/EditPageContent.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
@@ -75,10 +95,23 @@
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Modifica categorie multilingua
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 8. **`laravel/Modules/Predict/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
    - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
    - **Dopo**: `extends LangBaseEditRecord`
    - **Impatto**: Coerenza nel modulo Predict
+<<<<<<< HEAD
+=======
+=======
+8. **`laravel/Modules/<nome progetto>/app/Filament/Resources/CategoryResource/Pages/EditCategory.php`**
+   - **Prima**: `extends EditRecord` + `use EditRecord\Concerns\Translatable`
+   - **Dopo**: `extends LangBaseEditRecord`
+   - **Impatto**: Coerenza nel modulo <nome progetto>
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 9. **`laravel/Modules/Cms/app/Filament/Resources/PageContentResource/Pages/ViewPageContent.php`**
    - **Prima**: `extends ViewRecord` + `use ViewRecord\Concerns\Translatable`
@@ -254,4 +287,12 @@ grep -r "use HasTranslations" Modules/*/app/Models/
 
 ## Correzioni Implementate (Data: 2024)
 
+<<<<<<< HEAD
 // ... existing code ...
+=======
+<<<<<<< HEAD
+// ... existing code ...
+=======
+// ... existing code ...
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

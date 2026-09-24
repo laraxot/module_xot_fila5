@@ -174,7 +174,21 @@ namespace Modules\NewModule\Filament\Resources;
 
 class ProductResource extends XotBaseResource
 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Forms\Components\TextInput::make('name'),
@@ -185,7 +199,21 @@ class ProductResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getInfolistSchema(): array
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getInfolistSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             Infolists\Components\TextEntry::make('name'),
@@ -518,4 +546,13 @@ echo "5. Run quality checks"
 
 **Workflow Version**: 1.0
 **Last Updated**: 2025-11-17
+<<<<<<< HEAD
 **Maintained by**: Xot Module Development Team
+=======
+<<<<<<< HEAD
+**Maintained by**: Xot Module Development Team
+=======
+
+**Maintained by**: Xot Module Development Team
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -47,7 +47,21 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -150,12 +164,28 @@ class MyAction
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+=======
+<<<<<<< HEAD
+namespace Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+=======
+namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+<<<<<<< HEAD
 use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+=======
+<<<<<<< HEAD
+use Modules\Quaeris\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+=======
+use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -197,7 +227,15 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Quaeris\Filament\Widgets;
+=======
+<<<<<<< HEAD
+namespace Modules\Quaeris\Filament\Widgets;
+=======
+namespace Modules\healthcare_app\Filament\Widgets;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -253,16 +291,43 @@ class QuestionChartFilterWidget extends XotBaseWidget
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 namespace Modules\Quaeris\Filament\Resources;
 
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Quaeris\Models\QuestionChart;
+<<<<<<< HEAD
+=======
+=======
+namespace Modules\healthcare_app\Filament\Resources;
+
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\healthcare_app\Models\QuestionChart;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             // Form components
@@ -360,4 +425,12 @@ BadgeColumn::make('status')
 - [Translation System](./translation_system.md)
 - [Spatie Queueable Actions](https://github.com/spatie/laravel-queueable-action)
 
+<<<<<<< HEAD
 Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+=======
+<<<<<<< HEAD
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+=======
+Queste regole garantiscono coerenza con l'architettura Laraxot e compatibilità con Filament 4.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

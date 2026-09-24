@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_AJfwx8
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_63FYI7
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_xytqGE
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1BNvSc
+>>>>>>> .merge_file_2chKpA
+>>>>>>> .merge_file_1Sza0N
 ---
 name: 06-phpstan-272-reduction
 description: "Repo coordinatore: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_AJfwx8
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1Sza0N
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_AJfwx8
 =======
+=======
+<<<<<<< .merge_file_63FYI7
+=======
+<<<<<<< .merge_file_xytqGE
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_1BNvSc
+>>>>>>> .merge_file_2chKpA
+>>>>>>> .merge_file_1Sza0N
 >>>>>>> laraxot/dev
 # BMAD — 272 PHPStan errori: piano di risoluzione
 

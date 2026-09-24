@@ -1,6 +1,13 @@
 # Filament Extension Violations Report
 
 **Date**: 2025-12-18
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Date**: [DATE]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Status**: In Progress - Remediation Required
 
 ## Overview
@@ -107,4 +114,12 @@ According to the Filament Class Extension Rules:
 ---
 
 **Created**: 2025-12-18
+<<<<<<< HEAD
 **Last Updated**: 2025-12-18
+=======
+<<<<<<< HEAD
+**Last Updated**: 2025-12-18
+=======
+**Last Updated**: 2025-12-18
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

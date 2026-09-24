@@ -6,10 +6,26 @@ slug: pest
 description: 'Elenco di 1 riferimenti esterni raccolti per pest, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
 <<<<<<< HEAD
+<<<<<<< .merge_file_ILbGn9
+=======
+<<<<<<< HEAD
+=======
+converted_from: _pest.txt
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_UoUASm
 converted_from: pest.txt
 =======
 converted_from: _pest.txt
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ILbGn9
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_UoUASm
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -8,7 +8,19 @@ In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SE
 
 ```php
 // ✅ CORRETTO
+<<<<<<< .merge_file_KuPHIE
 public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_MNCtA1
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_xGPNBQ
+public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
+>>>>>>> .merge_file_pWvpF1
+>>>>>>> .merge_file_gUhqpX
 {
     return [
         'title' => Forms\Components\TextInput::make('title')
@@ -25,7 +37,19 @@ public function getFormSchema(): array
 
 ```php
 // ❌ ERRATO
+<<<<<<< .merge_file_KuPHIE
 public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_MNCtA1
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_xGPNBQ
+public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
+>>>>>>> .merge_file_pWvpF1
+>>>>>>> .merge_file_gUhqpX
 {
     return [
         Forms\Components\TextInput::make('title')
@@ -97,7 +121,19 @@ class MyResource extends XotBaseResource
         ];
     }
 
+<<<<<<< .merge_file_KuPHIE
     public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_MNCtA1
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_xGPNBQ
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
+>>>>>>> .merge_file_pWvpF1
+>>>>>>> .merge_file_gUhqpX
     {
         return [
             Forms\Components\TextInput::make('title'),
@@ -112,7 +148,19 @@ class MyResource extends XotBaseResource
 ```php
 class MyResource extends XotBaseResource
 {
+<<<<<<< .merge_file_KuPHIE
     public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_MNCtA1
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_xGPNBQ
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_QRobTs
+>>>>>>> .merge_file_pWvpF1
+>>>>>>> .merge_file_gUhqpX
     {
         return [
             'title' => Forms\Components\TextInput::make('title'),

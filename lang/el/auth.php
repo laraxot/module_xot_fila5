@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/el/auth.php
 return [
     'failed' => 'Αυτά τα διαπιστευτήρια δεν ταιριάζουν με τα αρχεία μας.',
     'general_error' => 'Δεν έχετε πρόσβαση σε αυτό.',

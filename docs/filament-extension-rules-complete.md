@@ -3,6 +3,13 @@
 **Principio Fondamentale**: Mai estendere classi Filament direttamente - sempre usare classi XotBase
 
 **Ultimo aggiornamento**: 2025-12-22
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
@@ -289,7 +296,21 @@ Per `getFormSchema()` nei **resource e pagine**, usare array indicizzati:
 /**
  * @return array<int, Component>
  */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
 public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 {
     return [
         TextInput::make('email')->email()->required(),
@@ -473,7 +494,21 @@ class UserResource extends XotBaseResource
     /**
      * @return array<int, Component>
      */
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
     public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')->required(),
@@ -578,4 +613,12 @@ Prima di creare una nuova classe Filament:
 
 ---
 
+<<<<<<< HEAD
 **Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+=======
+<<<<<<< HEAD
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+=======
+**Filosofia**: DRY + KISS - Non duplicare, non complicare, usa sempre le classi base.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

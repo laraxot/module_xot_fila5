@@ -1,6 +1,25 @@
 <<<<<<< HEAD
+<<<<<<< .merge_file_kCtjKW
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_Af4Zbn
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< .merge_file_XdN1rc
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_MzjEsf
+>>>>>>> .merge_file_F8JI0r
+>>>>>>> .merge_file_OBc0Qk
 ---
 name: 08-billing-phpstan
 description: "Repo: git@github.com:laraxot/modulexotfila5.git"
@@ -8,11 +27,29 @@ metadata:
   type: bmad
 ---
 
+<<<<<<< .merge_file_kCtjKW
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OBc0Qk
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_kCtjKW
 =======
+=======
+<<<<<<< .merge_file_Af4Zbn
+=======
+<<<<<<< .merge_file_XdN1rc
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_MzjEsf
+>>>>>>> .merge_file_F8JI0r
+>>>>>>> .merge_file_OBc0Qk
 >>>>>>> laraxot/dev
 # BMAD Story 08 — Billing: 12 errori PHPStan
 

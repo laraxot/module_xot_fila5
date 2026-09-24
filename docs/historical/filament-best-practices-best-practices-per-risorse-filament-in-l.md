@@ -19,6 +19,30 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_z8Vit3
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vLW3EU
+   public function getFormSchema(): array
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_z8Vit3
+=======
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_pJcWzN
+   public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
@@ -26,6 +50,10 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O6nLGZ
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vLW3EU
    {
        return [
            TextInput::make('nome')->required(),

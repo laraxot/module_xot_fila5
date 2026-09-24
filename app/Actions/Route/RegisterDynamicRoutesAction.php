@@ -6,11 +6,38 @@ namespace Modules\Xot\Actions\Route;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_HTnb9U
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_HTnb9U
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_HM2Wfa
+
+use function Safe\preg_replace;
+
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
+
+<<<<<<< .merge_file_4coui0
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
 /**
  * Replaces Modules\Xot\Services\RouteDynService::dynamic_route() and its
  * private helpers.
@@ -32,7 +59,23 @@ class RegisterDynamicRoutesAction
     private string $namespaceStart = '';
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<int, array<string, mixed>>  $array
+=======
+<<<<<<< HEAD
+     * @param  array<int, array<string, mixed>>  $array
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<int, array<string, mixed>>  $array
+=======
+     * @param array<int, array<string, mixed>> $array
+>>>>>>> laraxot/dev
+=======
+     * @param array<int, array<string, mixed>> $array
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     public function execute(
         array $array,
@@ -42,7 +85,23 @@ class RegisterDynamicRoutesAction
     ): void {
         Assert::notEmpty($array, 'The $array parameter cannot be empty.');
 
+<<<<<<< .merge_file_HTnb9U
         if ($namespaceStart !== null) {
+=======
+<<<<<<< HEAD
+        if ($namespaceStart !== null) {
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        if ($namespaceStart !== null) {
+=======
+        if (null !== $namespaceStart) {
+>>>>>>> laraxot/dev
+=======
+        if (null !== $namespaceStart) {
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             $this->namespaceStart = $namespaceStart;
         }
 
@@ -61,7 +120,25 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      * @return array<string, mixed>
      */
     private function getGroupOpts(array $v, ?string $namespace): array
@@ -74,7 +151,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getPrefix(array $v, ?string $namespace): string
     {
@@ -87,7 +180,23 @@ class RegisterDynamicRoutesAction
         Assert::string($name = $v['name']);
         $prefix = mb_strtolower($name);
         $paramName = $this->getParamName($v, $namespace);
+<<<<<<< .merge_file_HTnb9U
         if ($paramName !== '') {
+=======
+<<<<<<< HEAD
+        if ($paramName !== '') {
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        if ($paramName !== '') {
+=======
+        if ('' !== $paramName) {
+>>>>>>> laraxot/dev
+=======
+        if ('' !== $paramName) {
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             return $prefix.'/{'.$paramName.'}';
         }
 
@@ -95,7 +204,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getAs(array $v, ?string $_namespace): string
     {
@@ -117,7 +242,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getNamespace(array $v, ?string $namespace): ?string
     {
@@ -129,7 +270,23 @@ class RegisterDynamicRoutesAction
 
         Assert::string($namespace = $v['name']);
         $namespace = str_replace(['{', '}'], '', $namespace);
+<<<<<<< .merge_file_HTnb9U
         if ($namespace === '') {
+=======
+<<<<<<< HEAD
+        if ($namespace === '') {
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        if ($namespace === '') {
+=======
+        if ('' === $namespace) {
+>>>>>>> laraxot/dev
+=======
+        if ('' === $namespace) {
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             return null;
         }
 
@@ -137,7 +294,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getAct(array $v, ?string $_namespace): string
     {
@@ -163,7 +336,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getParamName(array $v, ?string $_namespace): string
     {
@@ -181,7 +370,25 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      * @return array<int, string>
      */
     private function getParamsName(array $v, ?string $namespace): array
@@ -192,7 +399,25 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      * @return array<string, mixed>
      */
     private function getResourceOpts(array $v, ?string $namespace): array
@@ -211,7 +436,23 @@ class RegisterDynamicRoutesAction
             $opts['only'] = $v['only'];
         }
 
+<<<<<<< .merge_file_HTnb9U
         if ($paramName === '' && ! isset($opts['only'])) {
+=======
+<<<<<<< HEAD
+        if ($paramName === '' && ! isset($opts['only'])) {
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        if ($paramName === '' && ! isset($opts['only'])) {
+=======
+        if ('' === $paramName && ! isset($opts['only'])) {
+>>>>>>> laraxot/dev
+=======
+        if ('' === $paramName && ! isset($opts['only'])) {
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             $opts['only'] = ['index'];
         }
 
@@ -221,7 +462,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getController(array $v, ?string $_namespace): string
     {
@@ -240,7 +497,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getUri(array $v, ?string $_namespace): string
     {
@@ -250,7 +523,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function getUses(array $v, ?string $namespace): string
     {
@@ -261,7 +550,25 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+     *
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      * @return array<string, mixed>
      */
     private function getCallback(array $v, ?string $namespace, ?string $curr): array
@@ -269,7 +576,23 @@ class RegisterDynamicRoutesAction
         Assert::string($name = $v['name']);
         $as = Str::slug($name);
         $uses = $this->getUses($v, $namespace);
+<<<<<<< .merge_file_HTnb9U
         $uses = $curr !== null
+=======
+<<<<<<< HEAD
+        $uses = $curr !== null
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        $uses = $curr !== null
+=======
+        $uses = null !== $curr
+>>>>>>> laraxot/dev
+=======
+        $uses = null !== $curr
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             ? '\\'.$this->namespaceStart.'\\'.$curr.'\\'.$uses
             : '\\'.$this->namespaceStart.'\\'.$uses;
 
@@ -277,11 +600,37 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      * @param  array<string, mixed>  $v
      */
     private function createRouteResource(array $v, ?string $namespace): void
     {
         if ($v['name'] === null) {
+<<<<<<< .merge_file_HTnb9U
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_HM2Wfa
+     * @param array<string, mixed> $v
+     */
+    private function createRouteResource(array $v, ?string $namespace): void
+    {
+        if (null === $v['name']) {
+<<<<<<< .merge_file_4coui0
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             return;
         }
         Assert::string($name = $v['name']);
@@ -292,7 +641,23 @@ class RegisterDynamicRoutesAction
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function createRouteSubs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -303,12 +668,44 @@ class RegisterDynamicRoutesAction
         $subNamespace = $this->getNamespace($v, $namespace);
         $curr = $curr ?? $subNamespace;
         Assert::isArray($subs = $v['subs']);
+<<<<<<< .merge_file_HTnb9U
         /** @var array<int, array<string, mixed>> $subs */
+=======
+<<<<<<< HEAD
+        /** @var array<int, array<string, mixed>> $subs */
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        /** @var array<int, array<string, mixed>> $subs */
+=======
+        /* @var array<int, array<string, mixed>> $subs */
+>>>>>>> laraxot/dev
+=======
+        /* @var array<int, array<string, mixed>> $subs */
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
         $this->execute($subs, $subNamespace, null, $curr);
     }
 
     /**
+<<<<<<< .merge_file_HTnb9U
      * @param  array<string, mixed>  $v
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $v
+=======
+     * @param array<string, mixed> $v
+>>>>>>> laraxot/dev
+=======
+     * @param array<string, mixed> $v
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
      */
     private function createRouteActs(array $v, ?string $namespace, ?string $curr): void
     {
@@ -319,7 +716,23 @@ class RegisterDynamicRoutesAction
         $controller = $this->getController($v, $namespace);
         foreach ($v['acts'] as $v1) {
             Assert::isArray($v1);
+<<<<<<< .merge_file_HTnb9U
             /** @var array<string, mixed> $v1 */
+=======
+<<<<<<< HEAD
+            /** @var array<string, mixed> $v1 */
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+            /** @var array<string, mixed> $v1 */
+=======
+            /* @var array<string, mixed> $v1 */
+>>>>>>> laraxot/dev
+=======
+            /* @var array<string, mixed> $v1 */
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             $v1['controller'] = $controller;
 
             $method = app(GetRouteMethodAction::class)->execute($v1, $namespace);
@@ -334,7 +747,23 @@ class RegisterDynamicRoutesAction
      */
     private function prefixedResourceNames(string $prefix): array
     {
+<<<<<<< .merge_file_HTnb9U
         if (mb_substr($prefix, -1) === '.') {
+=======
+<<<<<<< HEAD
+        if (mb_substr($prefix, -1) === '.') {
+=======
+<<<<<<< .merge_file_4coui0
+<<<<<<< HEAD
+        if (mb_substr($prefix, -1) === '.') {
+=======
+        if ('.' === mb_substr($prefix, -1)) {
+>>>>>>> laraxot/dev
+=======
+        if ('.' === mb_substr($prefix, -1)) {
+>>>>>>> .merge_file_HM2Wfa
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_O5DBQE
             $prefix = mb_substr($prefix, 0, -1);
         }
 

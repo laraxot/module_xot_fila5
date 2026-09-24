@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * -WIP.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
@@ -32,7 +31,12 @@ class GenerateTableColumnsByFileAction
     /**
      * Genera colonne per tabelle e form Filament basate su un file di risorsa.
      *
+     * <<<<<<< HEAD
+     *
      * @param File $file Il file della risorsa Filament
+     *                   =======
+     * @param File $file Il file della risorsa Filament
+     *                   >>>>>>> laraxot/dev
      */
     public function execute(File $file): void
     {
@@ -111,7 +115,12 @@ class GenerateTableColumnsByFileAction
     /**
      * Mostra informazioni di debug su un file.
      *
+     * <<<<<<< HEAD
+     *
      * @param File $file Il file da analizzare
+     *                   =======
+     * @param File $file Il file da analizzare
+     *                   >>>>>>> laraxot/dev
      */
     public function ddFile(File $file): void
     {

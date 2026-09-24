@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-// Xot translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// Canon: Modules/Xot/docs/wiki — domain i18n only.
-// File: lang/it/artisan_commands_manager.php
 return [
     'navigation' => [
         'name' => 'Comandi Artisan',
@@ -44,27 +41,78 @@ return [
     'actions' => [
         'queue_restart' => [
             'label' => 'queue_restart',
+            'icon' => 'queue_restart',
+            'tooltip' => 'queue_restart',
         ],
         'event_cache' => [
             'label' => 'event_cache',
+            'icon' => 'event_cache',
+            'tooltip' => 'event_cache',
         ],
         'route_cache' => [
             'label' => 'route_cache',
+            'icon' => 'route_cache',
+            'tooltip' => 'route_cache',
         ],
         'config_cache' => [
             'label' => 'config_cache',
+            'icon' => 'config_cache',
+            'tooltip' => 'config_cache',
         ],
         'view_cache' => [
             'label' => 'view_cache',
+            'icon' => 'view_cache',
+            'tooltip' => 'view_cache',
         ],
         'filament_optimize' => [
             'label' => 'filament_optimize',
+            'icon' => 'filament_optimize',
+            'tooltip' => 'filament_optimize',
         ],
         'filament_upgrade' => [
             'label' => 'filament_upgrade',
+            'icon' => 'filament_upgrade',
+            'tooltip' => 'filament_upgrade',
         ],
         'migrate' => [
             'label' => 'migrate',
+            'icon' => 'migrate',
+            'tooltip' => 'migrate',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
+        ],
+        'composer_dump_autoload' => [
+            'label' => 'composer_dump_autoload',
+            'icon' => 'composer_dump_autoload',
+            'tooltip' => 'composer_dump_autoload',
+        ],
+        'notify_migrate_themes_to_mail_templates' => [
+            'label' => 'notify_migrate_themes_to_mail_templates',
+            'icon' => 'notify_migrate_themes_to_mail_templates',
+            'tooltip' => 'notify_migrate_themes_to_mail_templates',
+        ],
+        'submit' => [
+            'label' => 'submit',
+            'icon' => 'submit',
+            'tooltip' => 'submit',
+        ],
+        'cancel' => [
+            'label' => 'cancel',
+            'icon' => 'cancel',
+            'tooltip' => 'cancel',
         ],
     ],
     'title' => 'artisan commands manager',

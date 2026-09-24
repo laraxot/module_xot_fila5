@@ -51,7 +51,26 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 
 ## Collegamenti alla documentazione correlata
 - [Qualità del codice](./CODE_QUALITY.md)
+<<<<<<< .merge_file_V7LPfO
+=======
+<<<<<<< .merge_file_Rcd0cL
+=======
+<<<<<<< .merge_file_f6kzdo
+>>>>>>> .merge_file_nLAgCO
+>>>>>>> .merge_file_wabVaY
 - [Tipi rigorosi PHP](php-strict-types.md)
 - [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
 - [Best practice per i provider di servizi](service-provider-best-practices.md)
 - [Best practice per Filament](filament-best-practices.md)
+<<<<<<< .merge_file_V7LPfO
+=======
+<<<<<<< .merge_file_Rcd0cL
+=======
+=======
+- [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
+- [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
+- [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
+- [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
+>>>>>>> .merge_file_BlwwIq
+>>>>>>> .merge_file_nLAgCO
+>>>>>>> .merge_file_wabVaY

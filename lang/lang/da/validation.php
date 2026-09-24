@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_05uwCk
+=======
+
+>>>>>>> .merge_file_cJjyvI
 return [
     'accepted' => ':attribute skal accepteres.',
     'active_url' => ':attribute er ikke en gyldig adresse.',

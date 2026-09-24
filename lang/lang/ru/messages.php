@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_6sizNA
+=======
+
+>>>>>>> .merge_file_MGT4ei
 return [
     'title' => 'Установка Laravel',
     'next' => 'Следующий шаг',

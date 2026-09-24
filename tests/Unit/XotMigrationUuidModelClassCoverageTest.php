@@ -10,17 +10,61 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
+<<<<<<< .merge_file_C85NOb
 use Mockery;
+=======
+<<<<<<< HEAD
+use Mockery;
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+use Mockery;
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_C85NOb
 use ReflectionMethod;
+=======
+<<<<<<< HEAD
+use ReflectionMethod;
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+use ReflectionMethod;
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_C85NOb
     Mockery::close();
+=======
+<<<<<<< HEAD
+    Mockery::close();
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+    Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
+=======
+    \Mockery::close();
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
 });
 
 describe('Xot migration getModelClass and uuid paths', function (): void {
@@ -41,9 +85,34 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
 
         // Force getModelClass() discovery path (model_class null until resolved)
         try {
+<<<<<<< .merge_file_C85NOb
             new class extends XotBaseMigration
             {
                 public function up(): void {}
+=======
+<<<<<<< HEAD
+            new class extends XotBaseMigration
+            {
+                public function up(): void {}
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+            new class extends XotBaseMigration
+            {
+                public function up(): void {}
+=======
+=======
+>>>>>>> .merge_file_UMkcrC
+            new class extends XotBaseMigration {
+                public function up(): void
+                {
+                }
+<<<<<<< .merge_file_aykYk5
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
             };
         } catch (\Throwable $e) {
             Assert::assertNotEmpty($e->getMessage());
@@ -63,6 +132,14 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             'value' => 'v',
         ]);
 
+<<<<<<< .merge_file_C85NOb
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = CacheModel::class;
@@ -71,11 +148,49 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         };
 
         $isUuid = new ReflectionMethod($migration, 'isUuidColumnType');
+<<<<<<< .merge_file_C85NOb
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_UMkcrC
+        $migration = new class extends XotBaseMigration {
+            protected ?string $model_class = CacheModel::class;
+
+            public function up(): void
+            {
+            }
+        };
+
+        $isUuid = new \ReflectionMethod($migration, 'isUuidColumnType');
+<<<<<<< .merge_file_aykYk5
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
         $isUuid->setAccessible(true);
         Assert::assertTrue($isUuid->invoke($migration, 'char'));
 
         // Force convert when id is uuid-like
+<<<<<<< .merge_file_C85NOb
         $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+=======
+<<<<<<< HEAD
+        $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+        $convert = new ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+=======
+        $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+>>>>>>> laraxot/dev
+=======
+        $convert = new \ReflectionMethod($migration, 'convertIdFromUuidToBigintIfNeeded');
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
         $convert->setAccessible(true);
         try {
             $convert->invoke(
@@ -90,7 +205,25 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                 [
                     'pivot_table' => 'cache_locks',
                     'pivot_fk' => 'key',
+<<<<<<< .merge_file_C85NOb
                     'pivot_post_update' => static function (): void {},
+=======
+<<<<<<< HEAD
+                    'pivot_post_update' => static function (): void {},
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+                    'pivot_post_update' => static function (): void {},
+=======
+                    'pivot_post_update' => static function (): void {
+                    },
+>>>>>>> laraxot/dev
+=======
+                    'pivot_post_update' => static function (): void {
+                    },
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
                 ],
             );
         } catch (\Throwable $e) {
@@ -107,7 +240,23 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
         DB::table('cache')->insert(['id' => 1, 'uuid' => null, 'key' => 'a', 'value' => 'b']);
         DB::table('cache')->insert(['id' => 2, 'uuid' => (string) Str::uuid(), 'key' => 'c', 'value' => 'd']);
 
+<<<<<<< .merge_file_C85NOb
         $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+=======
+<<<<<<< HEAD
+        $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+        $backfill = new ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+=======
+        $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+>>>>>>> laraxot/dev
+=======
+        $backfill = new \ReflectionMethod($migration, 'backfillUuidColumnIfNeeded');
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
         $backfill->setAccessible(true);
         try {
             $backfill->invoke($migration);
@@ -120,7 +269,23 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
             if (! method_exists($migration, $name)) {
                 continue;
             }
+<<<<<<< .merge_file_C85NOb
             $rm = new ReflectionMethod($migration, $name);
+=======
+<<<<<<< HEAD
+            $rm = new ReflectionMethod($migration, $name);
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+            $rm = new ReflectionMethod($migration, $name);
+=======
+            $rm = new \ReflectionMethod($migration, $name);
+>>>>>>> laraxot/dev
+=======
+            $rm = new \ReflectionMethod($migration, $name);
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
             $rm->setAccessible(true);
             $args = [];
             foreach ($rm->getParameters() as $param) {
@@ -132,6 +297,14 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                 $tn = $param->getType() instanceof \ReflectionNamedType ? $param->getType()->getName() : '';
                 $pn = $param->getName();
                 $args[] = match (true) {
+<<<<<<< .merge_file_C85NOb
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_aykYk5
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
                     $tn === Blueprint::class => new Blueprint(DB::connection(), 'cache'),
                     $tn === \Closure::class || $tn === 'callable' => static function (Blueprint $t): void {
                         $t->id();
@@ -144,6 +317,31 @@ describe('Xot migration getModelClass and uuid paths', function (): void {
                     $pn === 'class' => CacheModel::class,
                     $tn === 'string' => 'cache',
                     $tn === 'bool' => true,
+<<<<<<< .merge_file_C85NOb
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> .merge_file_UMkcrC
+                    Blueprint::class === $tn => new Blueprint(DB::connection(), 'cache'),
+                    \Closure::class === $tn || 'callable' === $tn => static function (Blueprint $t): void {
+                        $t->id();
+                    },
+                    'array' === $tn => ['key', 'value'],
+                    'from' === $pn || 'oldTable' === $pn || 'sourceTable' === $pn => 'cache',
+                    'to' === $pn || 'newTable' === $pn => 'cache_new',
+                    'pivotTable' === $pn => 'cache',
+                    'fkColumn' === $pn || 'column' === $pn || 'constraint' === $pn => 'key',
+                    'class' === $pn => CacheModel::class,
+                    'string' === $tn => 'cache',
+                    'bool' === $tn => true,
+<<<<<<< .merge_file_aykYk5
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_UMkcrC
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fVbPou
                     default => null,
                 };
             }

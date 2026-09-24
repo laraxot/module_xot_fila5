@@ -2,9 +2,26 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_UP4QWo
 
 =======
 >>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< .merge_file_BBiXKp
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_hYKgBf
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_H4ab4s
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 

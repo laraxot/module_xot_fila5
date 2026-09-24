@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_BAFM8M
+=======
+
+>>>>>>> .merge_file_awgdPs
 return [
     404 => [
         'title' => 'Siden findes ikke',

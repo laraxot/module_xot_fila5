@@ -26,8 +26,32 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_oiFeW3
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_2C7kJn
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+public function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_d8Pdly
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Aq0SLs
 {
     return [
         // Campi modificabili dall'utente
@@ -79,6 +103,27 @@ return [
 ### Regole di Estensione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_oiFeW3
+=======
+=======
+<<<<<<< .merge_file_2C7kJn
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+1. Implementare `public function getFormSchema(): array`
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_d8Pdly
+1. Implementare `public function getFormSchema(): array`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> .merge_file_Aq0SLs
 1. Implementare `public function getFormSchema(): array`
 =======
 1. Implementare `public function getFormSchema(): array`
@@ -86,6 +131,15 @@ return [
 =======
 1. Implementare `public function getFormSchema(): array`
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_oiFeW3
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_2C7kJn
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_d8Pdly
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Aq0SLs
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -99,8 +153,32 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_oiFeW3
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_2C7kJn
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_d8Pdly
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Aq0SLs
     {
         return [
             TextInput::make('name')->required(),

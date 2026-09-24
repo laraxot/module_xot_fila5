@@ -4,20 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< HEAD
+=======
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Components\Component;
+>>>>>>> laraxot/dev
 use Modules\Xot\Models\Session;
 
 class SessionResource extends XotBaseResource
 {
     protected static ?string $model = Session::class;
+<<<<<<< HEAD
+=======
 
     /**
      * @return array<int, Component>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             TextInput::make('id')->required()->maxLength(255),
@@ -28,4 +32,5 @@ class SessionResource extends XotBaseResource
             TextInput::make('last_activity')->required()->numeric(),
         ];
     }
+>>>>>>> laraxot/dev
 }

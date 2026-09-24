@@ -95,7 +95,32 @@ class ColumnBuilder
     /**
      * Status badge column with standard colors.
      *
+     * <<<<<<< HEAD
+     *
      * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< .merge_file_8og3Hu
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< HEAD
+     *                                            <<<<<<< .merge_file_EWEHSW
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< .merge_file_7zKQmf
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< HEAD
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            >>>>>>> laraxot/dev
+     *                                            >>>>>>> .merge_file_aPYjex
+     *                                            >>>>>>> .merge_file_Kk5VfB
+     *                                            =======
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *                                            >>>>>>> .merge_file_NLfj6K
+     *                                            >>>>>>> laraxot/dev
      */
     public static function statusBadge(array $customColors = []): TextColumn
     {
@@ -114,7 +139,32 @@ class ColumnBuilder
     /**
      * Priority badge column.
      *
+     * <<<<<<< HEAD
+     *
      * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< .merge_file_8og3Hu
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< HEAD
+     *                                            <<<<<<< .merge_file_EWEHSW
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< .merge_file_7zKQmf
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     *                                            <<<<<<< HEAD
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            =======
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            >>>>>>> laraxot/dev
+     *                                            >>>>>>> .merge_file_aPYjex
+     *                                            >>>>>>> .merge_file_Kk5VfB
+     *                                            =======
+     * @param array<string, string> $customColors Custom color mappings
+     *                                            >>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
+     *                                            >>>>>>> .merge_file_NLfj6K
+     *                                            >>>>>>> laraxot/dev
      */
     public static function priorityBadge(array $customColors = []): TextColumn
     {

@@ -1279,4 +1279,12 @@ grep -r "use " --include="*.php" Modules/ModuleName/
 
 ### ❌ Automazione Cieca
 ```bash
+<<<<<<< HEAD
 # Verifica conflitti rimanenti
+=======
+<<<<<<< HEAD
+# Verifica conflitti rimanenti
+=======
+# Verifica conflitti rimanenti
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

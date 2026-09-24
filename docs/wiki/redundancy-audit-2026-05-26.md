@@ -1,4 +1,21 @@
 ---
+<<<<<<< .merge_file_78IjtG
+title: "Redundancy Audit"
+type: concept
+status: deprecated
+module: "Xot"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated redundancy-audit"
+related:
+  - "./redundancy-audit.md"
+---
+# Redundancy Audit
+
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [redundancy-audit.md](./redundancy-audit.md)
+=======
 title: "audit ridondanza monorepo 2026-05-26"
 module: Xot
 type: audit
@@ -76,3 +93,4 @@ related:
 ## Storico audit
 
 - [2026-05-21](redundancy-audit-2026-05-21.md) — scan precedente (Fixcity tracker)
+>>>>>>> .merge_file_qWj4Pb

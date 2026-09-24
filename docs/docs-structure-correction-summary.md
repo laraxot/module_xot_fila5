@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
@@ -200,7 +204,7 @@ find laravel/Themes -name "docs" -type d
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
-- [Struttura Progetto](project-structure.md)
+- [Struttura Progetto](PROJECT-STRUCTURE.md)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---
@@ -211,3 +215,15 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
+<<<<<<< HEAD
+=======
+=======
+---
+module: theme
+topic: docs-structure-correction-summary
+canonical: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

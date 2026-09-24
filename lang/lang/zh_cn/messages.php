@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_9rSOis
+=======
+
+>>>>>>> .merge_file_40Om9b
 return [
     'title' => 'Laravel安装程序',
     'next' => '下一步',

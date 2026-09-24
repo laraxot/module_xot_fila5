@@ -48,10 +48,32 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     {
         return [
             // Form components
@@ -267,10 +289,32 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     {
         return [
             // Form components
@@ -419,10 +463,32 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     {
         return [
             // Form components
@@ -638,10 +704,32 @@ class QuestionChartResource extends XotBaseResource
     protected static ?string $model = QuestionChart::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_En4XiN
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_75A8DH
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_SdE2eb
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qRAJN9
     {
         return [
             // Form components

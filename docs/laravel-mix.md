@@ -1,3 +1,38 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_Iqy4Xz
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PZv27e
+>>>>>>> laraxot/dev
+---
+title: "Laravel mix"
+type: reference
+status: active
+created: 2026-08-27
+updated: 2026-08-27
+note: "Convertito da laravel_mix.txt (documento) da convert-docs-txt-to-md.py."
+---
+
+# laravel_mix
+
+<!-- Contenuto migrato da _docs/laravel_mix.txt -->
+
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Iqy4Xz
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_PZv27e
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 //-------------------------------------------------------------------------------------
 Use Laravel Mix without Laravel (using npm)
 https://dev.to/nickfrosty/use-laravel-mix-without-laravel-using-npm-m09
@@ -53,4 +88,18 @@ https://frostbutter.com/articles/use-laravel-mix-without-laravel-using-npm/
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 //-------------------------------------------------------------------------------------
+=======
+//-------------------------------------------------------------------------------------
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+//-------------------------------------------------------------------------------------
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

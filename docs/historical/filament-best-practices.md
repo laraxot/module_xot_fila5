@@ -19,12 +19,30 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
    ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ia8R0X
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
    public function getFormSchema(): array
 =======
    public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ia8R0X
 =======
    public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_H9Vcmd
+   public function getFormSchema(): array
+=======
+   public static function getFormSchema(): array
+>>>>>>> .merge_file_S2wXQI
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
 >>>>>>> laraxot/dev
    {
        return [
@@ -220,12 +238,30 @@ Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che re
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ia8R0X
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ia8R0X
 =======
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_H9Vcmd
+public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_S2wXQI
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
 >>>>>>> laraxot/dev
 {
     return [
@@ -391,9 +427,24 @@ class ReportResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_ia8R0X
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_H9Vcmd
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_S2wXQI
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
     {
@@ -441,12 +492,30 @@ class SocioResource extends XotBaseResource
     // Form Schema - CORRETTO ✅
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ia8R0X
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ia8R0X
 =======
     public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_H9Vcmd
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_S2wXQI
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
 >>>>>>> laraxot/dev
     {
         return [
@@ -691,12 +760,30 @@ Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logica
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_ia8R0X
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ia8R0X
 =======
 public function getFormSchema(): array
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< .merge_file_H9Vcmd
+public function getFormSchema(): array
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_S2wXQI
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
 >>>>>>> laraxot/dev
 {
     return [
@@ -955,9 +1042,24 @@ class SocioResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_ia8R0X
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
+=======
+=======
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+<<<<<<< .merge_file_H9Vcmd
+    public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_S2wXQI
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_wlrjK4
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
     {

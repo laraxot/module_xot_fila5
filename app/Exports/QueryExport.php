@@ -34,12 +34,20 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
     public ?string $transKey = null;
 
     /** @var QueryBuilder|EloquentBuilder<Model> */
+<<<<<<< HEAD
     /** @var QueryBuilder|EloquentBuilder<Model> */
+    public QueryBuilder|EloquentBuilder $query;
+
+    /**
+     * @param  QueryBuilder|EloquentBuilder<Model>  $query
+     * @param  array<int, int|string>  $fields
+=======
     public QueryBuilder|EloquentBuilder $query;
 
     /**
      * @param QueryBuilder|EloquentBuilder<Model> $query
      * @param array<int, int|string>              $fields
+>>>>>>> laraxot/dev
      */
     public function __construct(QueryBuilder|EloquentBuilder $query, ?string $transKey = null, array $fields = [])
     {
@@ -56,12 +64,16 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         if (! empty($this->fields)) {
             return collect(array_values($this->fields))
                 ->map(
-                    static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+                    static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
                 );
         }
 
         $first = $this->query->first();
+<<<<<<< HEAD
+        if ($first === null) {
+=======
         if (null === $first) {
+>>>>>>> laraxot/dev
             /** @var Collection<int, int|string> $emptyCollection */
             $emptyCollection = collect([]);
 
@@ -71,7 +83,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         /** @var Collection<int, int|string> $result */
         $result = collect(array_keys($this->normalizeRow($first)))
             ->map(
-                static fn (mixed $heading): int|string => \is_int($heading) ? $heading : (string) $heading
+                static fn (int|string $heading): int|string => \is_int($heading) ? $heading : (string) $heading
             );
 
         return $result;
@@ -131,7 +143,7 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
         }
 
         return collect($this->fields)
-            ->mapWithKeys(static function (mixed $field, int|string $_key) use ($rowArray): array {
+            ->mapWithKeys(static function (int|string $field, int|string $_key) use ($rowArray): array {
                 $keyString = \is_string($field) ? $field : (string) $field;
 
                 return [$keyString => $rowArray[$keyString] ?? null];
@@ -144,7 +156,11 @@ class QueryExport implements FromQuery, ShouldQueue, WithChunkReading, WithHeadi
      */
     private function normalizeRow(mixed $row): array
     {
+<<<<<<< HEAD
+        if ($row === null) {
+=======
         if (null === $row) {
+>>>>>>> laraxot/dev
             return [];
         }
 

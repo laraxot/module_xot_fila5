@@ -2,8 +2,13 @@
 
 declare(strict_types=1);
 <<<<<<< HEAD
+<<<<<<< .merge_file_UJbATe
 
 =======
+=======
+=======
+
+>>>>>>> .merge_file_tqEYeV
 >>>>>>> laraxot/dev
 ?>
 <div

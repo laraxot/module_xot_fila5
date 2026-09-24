@@ -35,10 +35,32 @@ use Filament\Forms\Components\DatePicker;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_mC0AVI
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_QrJa0K
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BCHzO4
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_mC0AVI
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QrJa0K
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BCHzO4
     {
         return [
             TextInput::make('nome')->required(),
@@ -121,10 +143,32 @@ class ModuleNameServiceProvider extends XotBaseServiceProvider
  * @return array<string, \Filament\Forms\Components\Component>
  */
 <<<<<<< HEAD
+<<<<<<< .merge_file_mC0AVI
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_QrJa0K
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BCHzO4
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_mC0AVI
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_VjMC8N
+=======
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QrJa0K
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BCHzO4
 {
     return [
         // Schema del form

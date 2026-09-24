@@ -131,9 +131,26 @@ This document summarizes the successful implementation of:
 - [Filament Class Extension Rules](Modules/Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Return Type Error Guide](Modules/Geo/docs/phpstan-return-type-errors.md)
 - [Filament Extension Violations Report](Modules/Xot/docs/filament_extension_violations.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Filament Class Extension Rules](modules/xot/docs/filament-class-extension-rules.md)
+- [PHPStan Return Type Error Guide](modules/geo/docs/phpstan-return-type-errors.md)
+- [Filament Extension Violations Report](modules/xot/docs/filament_extension_violations.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 
 **Implemented by**: iFlow CLI
 **Reviewed**: Automated checks passed
+<<<<<<< HEAD
 **Compliance**: 100% architecture compliance achieved
+=======
+<<<<<<< HEAD
+**Compliance**: 100% architecture compliance achieved
+=======
+**Compliance**: 100% architecture compliance achieved
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

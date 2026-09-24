@@ -921,7 +921,15 @@ class BlogPostsChartTest extends TestCase
 - [Awesome Chart.js](https://github.com/chartjs/awesome)
 
 ### Documentazione PTVX
+<<<<<<< HEAD
+- [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
+=======
+<<<<<<< HEAD
+- [Widget Implementation Rules](WIDGET_IMPLEMENTATION_RULES.md)
+=======
 - [Widget Implementation Rules](./widget_implementation_rules.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Export Chart to PNG/SVG](./chart-export-guide.md)
 - [Filament Best Practices](./filament-best-practices.md)
 

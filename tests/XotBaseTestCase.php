@@ -23,8 +23,12 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Module;
 use Modules\Xot\Providers\XotServiceProvider;
 use PHPUnit\Framework\MockObject\MockObject;
+<<<<<<< HEAD
+=======
 use PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce;
 use PHPUnit\Framework\MockObject\Rule\InvokedCount;
+>>>>>>> laraxot/dev
+use Safe\Exceptions\FilesystemException;
 
 /**
  * Class XotBaseTestCase.
@@ -33,13 +37,26 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
  * DatabaseTransactions belongs in each module TestCase when that module needs transactional isolation.
  *
  * @property object|null $action
+<<<<<<< HEAD
+ * @property Model|null $model
+=======
  * @property Model|null  $model
+>>>>>>> laraxot/dev
  * @property object|null $service
  * @property object|null $widget
  * @property string|null $tempDir
  * @property object|null $record
  * @property object|null $transition
  * @property object|null $resource
+<<<<<<< HEAD
+ * @property Model|null $testModel
+ * @property object|null $extraClass
+ * @property Model|null $baseModel
+ * @property string|null $testDir
+ * @property string|null $workDir
+ * @property mixed $saved
+ * @property mixed $extra_attributes
+=======
  * @property Model|null  $testModel
  * @property object|null $extraClass
  * @property Model|null  $baseModel
@@ -47,6 +64,7 @@ use PHPUnit\Framework\MockObject\Rule\InvokedCount;
  * @property string|null $workDir
  * @property mixed       $saved
  * @property mixed       $extra_attributes
+>>>>>>> laraxot/dev
  */
 abstract class XotBaseTestCase extends BaseTestCase
 {
@@ -83,7 +101,11 @@ abstract class XotBaseTestCase extends BaseTestCase
     public mixed $extra_attributes = null;
 
     /**
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $data
+=======
      * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
     {
@@ -91,7 +113,11 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $data
+=======
      * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
     {
@@ -106,8 +132,12 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
+<<<<<<< HEAD
+     * @param  class-string<T>  $class
+=======
      * @param class-string<T> $class
      *
+>>>>>>> laraxot/dev
      * @return MockObject&T
      */
     public function createUnitMock(string $class): MockObject
@@ -118,9 +148,14 @@ abstract class XotBaseTestCase extends BaseTestCase
     /**
      * @template T of object
      *
+<<<<<<< HEAD
+     * @param  class-string<T>  $abstract
+     * @param  (\Closure(MockInterface&T): void)|null  $callback
+=======
      * @param class-string<T>                        $abstract
      * @param (\Closure(MockInterface&T): void)|null $callback
      *
+>>>>>>> laraxot/dev
      * @return MockInterface&T
      */
     public function mockService(string $abstract, ?\Closure $callback = null): MockInterface
@@ -131,6 +166,8 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $mock;
     }
 
+<<<<<<< HEAD
+=======
     /**
      * @phpstan-ignore return.internalClass
      */
@@ -155,19 +192,28 @@ abstract class XotBaseTestCase extends BaseTestCase
         return $this->atLeastOnce();
     }
 
+>>>>>>> laraxot/dev
     public function skipTest(string $message = ''): never
     {
         $this->markTestSkipped($message);
     }
 
     /**
+<<<<<<< HEAD
+     * @param  class-string<\Throwable>  $exceptionClass
+=======
      * @param class-string<\Throwable> $exceptionClass
+>>>>>>> laraxot/dev
      */
     public function expectApplicationException(string $exceptionClass, ?string $message = null): void
     {
         $this->expectException($exceptionClass);
+<<<<<<< HEAD
+        if ($message !== null) {
+=======
         if (null !== $message) {
-            $this->expectExceptionMessage($message);
+>>>>>>> laraxot/dev
+            $this->expectExceptionMessageIsOrContains($message);
         }
     }
 
@@ -185,10 +231,18 @@ abstract class XotBaseTestCase extends BaseTestCase
     {
         parent::setUp();
 
+        // Nei test non esiste una build Vite (public_html/build/manifest.json):
+        // i blade con @vite renderizzano senza asset invece di lanciare ViewException.
+        $this->withoutVite();
+
         if (! $this->app->bound('translator')) {
-            $this->app->singleton('translator', function ($app) {
+            $this->app->singleton('translator', function (Application $app) {
                 return new Translator(
+<<<<<<< HEAD
+                    new ArrayLoader,
+=======
                     new ArrayLoader(),
+>>>>>>> laraxot/dev
                     'en'
                 );
             });
@@ -232,20 +286,32 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $attributes
+=======
      * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
      */
     protected static function createTestUser(array $attributes = []): UserContract
     {
         /** @var Factory<Model&UserContract> $factory */
         $factory = UserFactory::new();
         /** @var UserContract $user */
+<<<<<<< HEAD
+        $user = $factory->create($attributes);
+=======
         $user = $factory->createOne($attributes);
+>>>>>>> laraxot/dev
 
         return $user;
     }
 
     /**
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $attributes
+=======
      * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
      */
     protected static function createTestTenant(array $attributes = []): Tenant
     {
@@ -256,7 +322,11 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $attributes
+=======
      * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
      */
     protected static function createTestModule(array $attributes = []): Module
     {
@@ -264,7 +334,52 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
-     * Point every sqlite connection at fixcity_data.sqlite and share one PDO.
+     * Path of the shared SQLite database used by module tests.
+     *
+     * I moduli sono condivisi fra piu' progetti: il nome del file non puo' essere
+     * cablato qui, altrimenti il framework porta con se' il nome del progetto in cui e'
+     * nato. Si risolve in tre passi, dal piu' esplicito al piu' neutro:
+     *
+     * 1. `config('xot.testing.sqlite_file')` — il progetto dichiara il proprio file;
+     * 2. l'unico `*.sqlite` presente in `database/` — il caso normale, funziona senza
+     *    configurare niente e qualunque sia il nome scelto dal progetto;
+     * 3. `test_data.sqlite` — default neutro quando la cartella e' vuota o ambigua.
+     *
+     * Single source of truth per `prepareSharedSqliteForTesting()` e per
+     * `xot:build-test-sqlite`, che ha bisogno dello stesso path per costruire il file.
+     */
+    public static function sharedSqlitePath(): string
+    {
+        $configured = config('xot.testing.sqlite_file');
+
+<<<<<<< HEAD
+        if (is_string($configured) && $configured !== '') {
+=======
+        if (is_string($configured) && '' !== $configured) {
+>>>>>>> laraxot/dev
+            return database_path($configured);
+        }
+
+        try {
+            /** @var list<string> $found */
+            $found = \Safe\glob(database_path('*.sqlite'));
+        } catch (FilesystemException) {
+            $found = [];
+        }
+
+<<<<<<< HEAD
+        if (count($found) === 1) {
+=======
+        if (1 === count($found)) {
+>>>>>>> laraxot/dev
+            return $found[0];
+        }
+
+        return database_path('test_data.sqlite');
+    }
+
+    /**
+     * Punta ogni connessione sqlite al file condiviso e condivide un solo PDO.
      *
      * Multiple named connections (activity, user, gdpr, …) on the same SQLite file
      * each opening their own transaction causes "database is locked". Sharing the
@@ -272,57 +387,65 @@ abstract class XotBaseTestCase extends BaseTestCase
      *
      * Call before parent::setUp() when the test case uses DatabaseTransactions.
      */
-    protected function prepareSharedFixcitySqliteForTesting(): void
+    protected function prepareSharedSqliteForTesting(): void
     {
+<<<<<<< HEAD
+        if ($this->app === null) {
+=======
         if (null === $this->app) {
+>>>>>>> laraxot/dev
             $this->refreshApplication();
         }
 
-        $databasePath = database_path('fixcity_data.sqlite');
-        $this->assertFixcitySqliteReadyForTesting($databasePath);
+        $database = self::sharedSqlitePath();
 
-        /** @var list<string> $sqliteConnections */
-        $sqliteConnections = [];
-
-        if (property_exists($this, 'connectionsToTransact')) {
-            $toTransact = $this->connectionsToTransact;
-            if (is_array($toTransact)) {
-                foreach ($toTransact as $connection) {
-                    if (is_string($connection) && '' !== $connection) {
-                        $sqliteConnections[] = $connection;
-                    }
-                }
-            }
+        // La connessione opzionale 'user' (driver mysql) senza database configurato
+        // (DB_DATABASE_USER vuoto) ripiega su sqlite condiviso: stesso fallback di
+        // XotBaseMigration::resolveConnectionName(), altrimenti ogni insert su users
+        // fallisce con "No database selected" sulle macchine senza il DB dedicato.
+        $userDatabase = config('database.connections.user.database');
+<<<<<<< HEAD
+        if (! is_string($userDatabase) || $userDatabase === '') {
+=======
+        if (! is_string($userDatabase) || '' === $userDatabase) {
+>>>>>>> laraxot/dev
+            $this->app['config']->set('database.connections.user', [
+                'driver' => 'sqlite',
+                'database' => $database,
+                'prefix' => '',
+                'foreign_key_constraints' => true,
+            ]);
         }
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);
 
+        /** @var list<string> $sqliteConnections */
+        $sqliteConnections = [];
+
         foreach (array_keys($connections) as $connection) {
+<<<<<<< HEAD
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+=======
             if ('sqlite' !== config("database.connections.{$connection}.driver")) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
-            if (! in_array($connection, $sqliteConnections, true)) {
-                $sqliteConnections[] = $connection;
-            }
-        }
-
-        foreach ($sqliteConnections as $connection) {
-            $this->app['config']->set("database.connections.{$connection}", [
-                'driver' => 'sqlite',
-                'database' => $databasePath,
-                'prefix' => '',
-                'foreign_key_constraints' => true,
-                'busy_timeout' => 10000,
-            ]);
+            $sqliteConnections[] = $connection;
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            $this->app['config']->set("database.connections.{$connection}.busy_timeout", 10000);
         }
 
         foreach ($sqliteConnections as $connection) {
             DB::purge($connection);
         }
 
+<<<<<<< HEAD
+        if ($sqliteConnections === []) {
+=======
         if ([] === $sqliteConnections) {
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -330,53 +453,37 @@ abstract class XotBaseTestCase extends BaseTestCase
             ? 'sqlite'
             : $sqliteConnections[0];
 
-        /** @var DatabaseManager $databaseManager */
-        $databaseManager = $this->app->make('db');
-        $primaryConnection = $databaseManager->connection($primaryName);
+        /** @var DatabaseManager $database */
+        $database = $this->app->make('db');
+        $primaryConnection = $database->connection($primaryName);
 
-        $managerReflection = new \ReflectionClass($databaseManager);
+        $managerReflection = new \ReflectionClass($database);
         $connectionsProperty = $managerReflection->getProperty('connections');
         $connectionsProperty->setAccessible(true);
 
         /** @var array<string, mixed> $resolved */
-        $resolved = $connectionsProperty->getValue($databaseManager);
+        $resolved = $connectionsProperty->getValue($database);
 
         foreach ($sqliteConnections as $connection) {
             $resolved[$connection] = $primaryConnection;
         }
 
-        $connectionsProperty->setValue($databaseManager, $resolved);
+        $connectionsProperty->setValue($database, $resolved);
     }
 
+<<<<<<< HEAD
+=======
     /**
-     * Fail fast before PDO sharing — empty or invalid SQLite causes Pest to hang on busy_timeout.
+     * Legacy alias kept for module TestCases that still call the old name.
+     *
+     * @deprecated use {@see prepareSharedSqliteForTesting()}
      */
-    protected function assertFixcitySqliteReadyForTesting(string $database): void
+    protected function prepareSharedFixcitySqliteForTesting(): void
     {
-        $doc = 'laravel/Modules/Xot/docs/wiki/concepts/fixcity-data-sqlite-pest-bootstrap.md';
-
-        if (! is_file($database)) {
-            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite missing at '.$database.'. Restore from team backup or run forward-only migrate once (no migrate:fresh, no --force). See '.$doc);
-        }
-
-        $size = filesize($database);
-        if (false === $size || $size < 100) {
-            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite is empty or truncated at '.$database.' ('.(false === $size ? 'unknown' : (string) $size).' bytes). Do not use touch — copy a migrated file or run `cd laravel && php artisan migrate` (forward-only). See '.$doc);
-        }
-
-        $handle = fopen($database, 'rb');
-        if (false === $handle) {
-            throw new \RuntimeException('Pest bootstrap blocked: cannot read fixcity_data.sqlite at '.$database);
-        }
-
-        $header = fread($handle, 16);
-        fclose($handle);
-
-        if (false === $header || ! str_starts_with($header, 'SQLite format 3')) {
-            throw new \RuntimeException('Pest bootstrap blocked: fixcity_data.sqlite is not a valid SQLite database at '.$database.'. Replace with a migrated database (forward-only `php artisan migrate`). See '.$doc);
-        }
+        $this->prepareSharedSqliteForTesting();
     }
 
+>>>>>>> laraxot/dev
     public function bindInstance(string $abstract, object $instance): void
     {
         $this->instance($abstract, $instance);
@@ -393,7 +500,11 @@ abstract class XotBaseTestCase extends BaseTestCase
     }
 
     /**
+<<<<<<< HEAD
+     * @param  class-string<\Throwable>  $exception
+=======
      * @param class-string<\Throwable> $exception
+>>>>>>> laraxot/dev
      */
     public function expectThrowable(string $exception): void
     {
@@ -402,7 +513,7 @@ abstract class XotBaseTestCase extends BaseTestCase
 
     public function expectThrowableMessage(string $message): void
     {
-        $this->expectExceptionMessage($message);
+        $this->expectExceptionMessageIsOrContains($message);
     }
 
     public function expectThrowableMessageMatches(string $pattern): void

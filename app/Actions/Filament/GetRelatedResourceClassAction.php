@@ -5,9 +5,26 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Filament;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_tD4O3S
 =======
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> laraxot/dev
+=======
+use Illuminate\Database\Eloquent\Model;
+=======
+<<<<<<< .merge_file_8KDXH9
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> .merge_file_EyPVSz
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Xea9E9
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Spatie\QueueableAction\QueueableAction;
@@ -45,7 +62,19 @@ class GetRelatedResourceClassAction
         if (method_exists($page, 'getRelatedResource')) {
             /** @var class-string<XotBaseResource>|null $relatedResource */
             $relatedResource = $page::getRelatedResource();
+<<<<<<< .merge_file_tD4O3S
             if ($relatedResource !== null) {
+=======
+<<<<<<< HEAD
+            if ($relatedResource !== null) {
+=======
+<<<<<<< .merge_file_8KDXH9
+            if ($relatedResource !== null) {
+=======
+            if (null !== $relatedResource) {
+>>>>>>> .merge_file_EyPVSz
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Xea9E9
                 return $relatedResource;
             }
         }
@@ -55,9 +84,27 @@ class GetRelatedResourceClassAction
         }
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_tD4O3S
         /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
 =======
         /** @var class-string<Model> $modelClass */
+=======
+        /** @var class-string<Model> $modelClass */
+=======
+<<<<<<< .merge_file_8KDXH9
+<<<<<<< HEAD
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+=======
+<<<<<<< HEAD
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $modelClass */
+=======
+        /** @var class-string<Model> $modelClass */
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+        /** @var class-string<Model> $modelClass */
+>>>>>>> .merge_file_EyPVSz
+>>>>>>> .merge_file_Xea9E9
 >>>>>>> laraxot/dev
         $modelClass = $page->getModelClass();
         $moduleName = Str::between($modelClass, 'Modules\\', '\Models\\');
@@ -65,7 +112,19 @@ class GetRelatedResourceClassAction
         $guess = 'Modules\\'.$moduleName.'\Filament\Resources\\'.$modelName.'Resource';
 
         if (class_exists($guess) && is_subclass_of($guess, XotBaseResource::class)) {
+<<<<<<< .merge_file_tD4O3S
             /** @var class-string<XotBaseResource> $guess */
+=======
+<<<<<<< HEAD
+            /** @var class-string<XotBaseResource> $guess */
+=======
+<<<<<<< .merge_file_8KDXH9
+            /** @var class-string<XotBaseResource> $guess */
+=======
+            /* @var class-string<XotBaseResource> $guess */
+>>>>>>> .merge_file_EyPVSz
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_Xea9E9
             return $guess;
         }
 

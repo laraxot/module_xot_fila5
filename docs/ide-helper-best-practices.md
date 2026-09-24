@@ -11,6 +11,25 @@ Laravel IDE Helper genera PHPDoc automatici per migliorare l'autocomplete e il t
 ### Pacchetto Utilizzato
 - **barryvdh/laravel-ide-helper** - Genera helper per IDE con supporto PHPStan
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+### Note operative (2026-08-31)
+
+- Spatie ResponseCache v8: in `config/responsecache.php` usare `JsonSerializer::class` (non più `DefaultSerializer`).
+- **Solo** `ide-helper:models --nowrite` (scrive `_ide_helper_models.php`). **Mai** `--write` / `--write --reset` sui model app: cancella `@property` Larastan → migliaia di `property.notFound`.
+- `force_fqn => true` in `config/ide-helper.php` (se un giorno si riscrivono PHPDoc, Builder resta FQCN).
+- `config/media.php` deve essere un **file**, non una directory `media.php/` (rompe `ide-helper:meta` con EISDIR).
+- Dopo rewrite massivi: `phpstan clear-result-cache` poi `analyse Modules`.
+- Suite completa: generate + meta + models `--nowrite` (+ eloquent opzionale su vendor).
+- Evidence: `docs/chat/ide-helper-refresh.md` · `docs/chat/composer-update-phpstan-ide-helper.md`
+
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 ## Configurazione Progetto

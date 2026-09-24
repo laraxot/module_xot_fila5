@@ -1,5 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< .merge_file_urthBT
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hPuhg1
 ---
 name: phpstan-progress-report-2025-10-13
 description: " Executive Summary"
@@ -7,10 +17,25 @@ metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_urthBT
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hPuhg1
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_urthBT
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hPuhg1
 # PHPStan Progress Report - 2025-10-13
 
 ## Executive Summary

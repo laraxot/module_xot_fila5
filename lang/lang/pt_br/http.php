@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_xoTPVw
+=======
+
+>>>>>>> .merge_file_JrtxG1
 return [
     404 => [
         'title' => 'Página não encontrada',

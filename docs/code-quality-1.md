@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # Code Quality Guidelines for Laravel Modules
 
 ## Overview
@@ -88,3 +92,15 @@ $content = Safe\file_get_contents('file.txt');
 - [Quality Tools Zen](./quality-tools-zen.md)
 - [Code Quality Audit](./code-quality-audit.md)
 - [CI Quality Pipeline](./ci-quality-pipeline.md)
+<<<<<<< HEAD
+=======
+=======
+---
+module: theme
+topic: code-quality-1
+canonical: ../../../Themes/docs/shared-components/code-quality-1-1.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/code-quality-1-1.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
