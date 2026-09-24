@@ -53,7 +53,19 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
             $t->timestamps();
         });
 
+<<<<<<< HEAD
         $host = new XotCovRelationHost;
+=======
+<<<<<<< .merge_file_Y30LJe
+<<<<<<< HEAD
+        $host = new XotCovRelationHost;
+=======
+        $host = new XotCovRelationHost();
+>>>>>>> laraxot/dev
+=======
+        $host = new XotCovRelationHost();
+>>>>>>> .merge_file_n3eOFb
+>>>>>>> laraxot/dev
         $host->forceFill(['id' => 1, 'key' => 'k', 'value' => 'v']);
         $host->exists = true;
 

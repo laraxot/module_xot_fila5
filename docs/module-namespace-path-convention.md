@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -62,3 +66,17 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 - [convenzioni di codice](docs/conventions.md)
 - [struttura progetto](docs/project-structure.md)
+<<<<<<< HEAD
+=======
+=======
+- [convenzioni di codice](docs/conventions.md)
+- [struttura progetto](docs/project-structure.md)
+---
+module: theme
+topic: module-namespace-path-convention
+canonical: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -11,7 +11,11 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string|null $title
  * @property string|null $subtitle
+<<<<<<< HEAD
  * @property int|null $status
+=======
+ * @property int|null    $status
+>>>>>>> laraxot/dev
  *
  * @method bool update($params)
  *
@@ -19,4 +23,10 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 interface PivotContract {}
+=======
+interface PivotContract
+{
+}
+>>>>>>> laraxot/dev

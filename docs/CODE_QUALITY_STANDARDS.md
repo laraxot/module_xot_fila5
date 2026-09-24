@@ -484,12 +484,26 @@ public function user(): BelongsTo
 - [Testing Guidelines](./testing-guidelines.md)
 <<<<<<< HEAD
 =======
+<<<<<<< .merge_file_2SckPx
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 - [Performance Optimization](./performance-optimization.md)
 =======
 >>>>>>> 7f6cf6be (.)
 >>>>>>> laraxot/dev
 - [Performance Optimization](PERFORMANCE-OPTIMIZATION.md)
+<<<<<<< HEAD
+=======
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> laraxot/dev
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> .merge_file_MbENK9
+>>>>>>> laraxot/dev
 - [Security Guidelines](./security-guidelines.md)
 
 This document provides the foundation for maintaining high code quality standards across the Xot module and serves as a reference for other modules that extend Xot functionality.

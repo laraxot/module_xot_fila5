@@ -1,9 +1,35 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_QXN9FT
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_nwfsLv
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
 # Xot
 =======
 <<<<<<< HEAD
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_mfE3RR
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 >>>>>>> laraxot/dev
 ---
 title: "Readme"
@@ -13,6 +39,30 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_QXN9FT
+=======
+<<<<<<< .merge_file_mfE3RR
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_nwfsLv
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
+>>>>>>> laraxot/dev
 
 # Gestione delle Eccezioni
 
@@ -49,6 +99,25 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_mfE3RR
+=======
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/project_docs/readme.md)
 * [README.md](bashscripts/project_docs/it/readme.md)
@@ -129,8 +198,16 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 28b0298a (fix: phpstan issues)
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
@@ -166,6 +243,13 @@ Core module for the FixCity Platform.
 <<<<<<< HEAD
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 =======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+**Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
 
@@ -203,6 +287,28 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 ## Collegamenti
 - [Exception Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Logging Best Practices](../LOGGING-BEST-PRACTICES.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_QXN9FT
+=======
+<<<<<<< .merge_file_mfE3RR
+=======
+
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_nwfsLv
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
+>>>>>>> laraxot/dev
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/README.md)
 * [README.md](bashscripts/docs/it/README.md)
@@ -253,7 +359,33 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Dental/docs/README.md)
 * [README.md](../../../User/docs/phpstan/README.md)
 * [README.md](../../../User/docs/README.md)
+<<<<<<< HEAD
 * [README.md](../../../User/docs/README.md)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+=======
+<<<<<<< .merge_file_mfE3RR
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_nwfsLv
+* [README.md](../../../User/docs/README.md)
+=======
+<<<<<<< HEAD
+* [README.md](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
+>>>>>>> laraxot/dev
 * [README.md](../../../UI/docs/phpstan/README.md)
 * [README.md](../../../UI/docs/README.md)
 * [README.md](../../../UI/docs/standards/README.md)
@@ -280,10 +412,32 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_QXN9FT
+
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_mfE3RR
+=======
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
+>>>>>>> laraxot/dev
 
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 # Xot
 
 [![Module](https://img.shields.io/badge/Module-Xot-8B0000.svg)]()
@@ -318,6 +472,25 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Xot` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+<<<<<<< HEAD
 >>>>>>> 7f6cf6be (.)
 >>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 7f6cf6be (.)
+>>>>>>> 28b0298a (fix: phpstan issues)
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+<<<<<<< .merge_file_QXN9FT
+>>>>>>> laraxot/dev
+=======
+<<<<<<< .merge_file_mfE3RR
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_F2Om7m
+>>>>>>> .merge_file_nwfsLv
 >>>>>>> laraxot/dev

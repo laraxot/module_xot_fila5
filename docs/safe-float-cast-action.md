@@ -181,9 +181,24 @@ class SafeFloatCastActionTest extends TestCase
 
 - [SafeStringCastAction](../actions/cast/safe-string-cast-action.md)
 - [Xot Actions Documentation](../actions/README.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+- [Xot Actions Documentation](../actions/readme.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: 2025-01-06*
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

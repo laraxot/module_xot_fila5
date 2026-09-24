@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_TA86Rw
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 # _inodes
 
 <!-- Contenuto migrato da _docs/_inodes.txt -->
@@ -10,6 +15,13 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 
 --------------------------------------------------------------
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_T5cVUW
+>>>>>>> laraxot/dev
 ---
 title: 'Inodes'
 module: Xot
@@ -21,8 +33,34 @@ converted_from: _inodes.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< HEAD
 
 -----------------------------------------------------------
+>>>>>>> laraxot/dev
+=======
+=======
+# _inodes
+
+<<<<<<< .merge_file_TA86Rw
+<<<<<<< HEAD
+-----------------------------------------------------------
+>>>>>>> laraxot/dev
+=======
+=======
+<!-- Contenuto migrato da _docs/_inodes.txt -->
+>>>>>>> laraxot/dev
+
+>>>>>>> .merge_file_T5cVUW
+--------------------------------------------------------------
+$ df -i /
+Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
+/dev/xvda1      7692288 652294 7039994    9%      /
+
+--------------------------------------------------------------
+<<<<<<< .merge_file_TA86Rw
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_T5cVUW
 >>>>>>> laraxot/dev
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
@@ -55,7 +93,17 @@ $ journalctl --vacuum-size=100M
 dove 100M sono le dimensioni in cui il file di log deve stare ossia verranno scartiti tutti i log più vecchi finchè non si raggiunge uno spazio di disco usato da Jorunal di 100M (o meno).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 --------------------------------------------------------------
 =======
 --------------------------------------------------------------
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+--------------------------------------------------------------
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -1,6 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_ulHCY1
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_2ehpvv
+>>>>>>> laraxot/dev
 use Modules\Xot\Tests\TestCase;
 
 use function Safe\file_get_contents;
@@ -37,7 +52,15 @@ it('every list page declares its table columns', function (): void {
 
         $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
         foreach ($it as $file) {
+<<<<<<< HEAD
             if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
+=======
+<<<<<<< .merge_file_ulHCY1
+            if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
+=======
+            if (! $file instanceof SplFileInfo || 'php' !== $file->getExtension()) {
+>>>>>>> .merge_file_2ehpvv
+>>>>>>> laraxot/dev
                 continue;
             }
 

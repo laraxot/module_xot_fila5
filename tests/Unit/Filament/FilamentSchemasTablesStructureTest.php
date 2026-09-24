@@ -91,7 +91,11 @@ function filamentSchemaIsPopulated(string $path, string $method): bool
 
     $body = trim($m[1]);
 
+<<<<<<< HEAD
     return $body !== '' && $body !== 'return [];' && $body !== "return [\n        ];";
+=======
+    return '' !== $body && 'return [];' !== $body && "return [\n        ];" !== $body;
+>>>>>>> laraxot/dev
 }
 
 test('every concrete filament resource has populated schemas and table classes', function (): void {

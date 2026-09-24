@@ -11,12 +11,50 @@ class ConfigAction
 {
     private static ?self $instance = null;
 
+<<<<<<< HEAD
     public function __construct() {}
+=======
+<<<<<<< .merge_file_1lWDbk
+<<<<<<< HEAD
+    public function __construct()
+    {
+    }
+=======
+<<<<<<< HEAD
+    public function __construct()
+    {
+    }
+=======
+    public function __construct() {}
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+    public function __construct()
+    {
+    }
+>>>>>>> .merge_file_jPSZ5X
+>>>>>>> laraxot/dev
 
     public static function getInstance(): self
     {
         if (! self::$instance instanceof self) {
+<<<<<<< HEAD
             self::$instance = new self;
+=======
+<<<<<<< .merge_file_1lWDbk
+<<<<<<< HEAD
+            self::$instance = new self();
+=======
+<<<<<<< HEAD
+            self::$instance = new self();
+=======
+            self::$instance = new self;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+            self::$instance = new self();
+>>>>>>> .merge_file_jPSZ5X
+>>>>>>> laraxot/dev
         }
 
         return self::$instance;

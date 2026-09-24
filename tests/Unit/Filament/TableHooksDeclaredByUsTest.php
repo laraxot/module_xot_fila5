@@ -1,6 +1,21 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_sBaBTr
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+=======
+
+>>>>>>> .merge_file_BONITl
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;

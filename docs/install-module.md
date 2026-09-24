@@ -1,5 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< .merge_file_WIADpN
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kVdc4x
+>>>>>>> laraxot/dev
 ---
 title: "Install module"
 type: reference
@@ -11,6 +21,15 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
 # Install module
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_WIADpN
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_kVdc4x
+=======
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
  public function test(){
 
@@ -45,7 +64,17 @@ note: "Convertito da install_module.txt (documento) da convert-docs-txt-to-md.py
 
         rename(base_path('Modules/'.$old_dir),base_path('Modules/'.$new_dir));
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     }
 =======
     }
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+=======
+    }
+>>>>>>> laraxot/dev
 >>>>>>> laraxot/dev

@@ -164,7 +164,15 @@ find docs/ -name "*.md~*" -delete
 # consolidare tutte le cartelle archive
 mkdir -p docs/_archive_consolidated/
 find docs/ -path "*/archive/*" -name "*.md" -exec mv {} docs/_archive_consolidated/ \;
+<<<<<<< HEAD
 rmdir docs/archive/ docs/*/archive/ 2>/dev/null
+=======
+<<<<<<< HEAD
+rmdir docs/archive/ docs/*/archive/ 2>/dev/null
+=======
+rmdir docs/archived/ docs/*/archive/ 2>/dev/null
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ```
 
 ### fase 2: ristrutturazione strategica (3 giorni - alta priorità)
@@ -405,4 +413,12 @@ php artisan test --testsuite=Xot
 
 **ultimo aggiornamento**: 20 agosto 2025
 **analista**: claude code
+<<<<<<< HEAD
 **criticità**: massima - documentazione fuori controllo
+=======
+<<<<<<< HEAD
+**criticità**: massima - documentazione fuori controllo
+=======
+**criticità**: massima - documentazione fuori controllo
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

@@ -4,8 +4,18 @@ type: index
 module: Xot
 tags: [xot, wiki, index, xotbase, migrations, phpstan]
 created: 2026-04-28
+<<<<<<< HEAD
 updated: 2026-07-24
 qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
+=======
+<<<<<<< HEAD
+updated: 2026-07-24
+qmd: "xot module wiki index XotBase migrations phpstan filament actions pest domain ownership"
+=======
+updated: 2026-06-13
+qmd: "xot module wiki index XotBase migrations phpstan filament actions pest ReflectionClass global imports"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 issues:
   - "https://github.com/laraxot/module_xot_fila5/issues/28"
 discussions:
@@ -15,21 +25,42 @@ related:
   - ./concepts/module-model-artifact-parity.md
   - ./concepts/ai-harness-xot-discipline.md
   - ./concepts/second-brain-local-discipline.md
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
   - ./concepts/no-domain-actions-in-xot.md
   - ./rules/module-testcase-xotbase-hierarchy.md
   - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../../../../docs/wiki/rules/domain-actions-belong-to-domain-module.md
+<<<<<<< HEAD
+=======
+=======
+  - ./rules/module-testcase-xotbase-hierarchy.md
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ---
 
 # Xot Module LLM Wiki
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 ## Boundaries (2026-07-24)
 
 - [no-domain-actions-in-xot](./concepts/no-domain-actions-in-xot.md) — niente `Actions/AI|Geo|…`
 - Raw: [no-domain-logic-in-xot.md](../no-domain-logic-in-xot.md)
 - AI owner: [ollama-actions-ownership](../../AI/docs/wiki/concepts/ollama-actions-ownership.md)
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 Indice operativo del wiki Xot (core framework).
 
 ## Struttura canonica (sacred)
@@ -64,14 +95,42 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 ## Completamento piattaforma
 
 - [overviews/platform-completion-roadmap.md](./overviews/platform-completion-roadmap.md) — **SSoT** roadmap 16 moduli + 4 temi (2026-06-13)
+<<<<<<< HEAD
 - [phpstan-best-practices.md](./phpstan-best-practices.md)
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_qXkcuR
+- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
+=======
+- [phpstan-best-practices.md](./phpstan-best-practices.md)
+=======
+- [phpstan-best-practices.md](./phpstan-best-practices.md)
+=======
+- [PHPSTAN-BEST-PRACTICES.md](./PHPSTAN-BEST-PRACTICES.md)
+>>>>>>> .merge_file_KoGZwi
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Compiled Pages
 
 | Pagina | Tipo | Argomento | Data |
 |--------|------|-----------|------|
 | [platform-completion-roadmap](./overviews/platform-completion-roadmap.md) | Overview | Hub completamento progetto Fixcity | 2026-06-13 |
+<<<<<<< HEAD
 | [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+<<<<<<< HEAD
+<<<<<<< .merge_file_qXkcuR
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+| [phpstan-best-practices](./phpstan-best-practices.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+=======
+| [PHPSTAN-BEST-PRACTICES](./PHPSTAN-BEST-PRACTICES.md) | Guideline | Pattern test PHPStan L10 | 2026-06-13 |
+>>>>>>> .merge_file_KoGZwi
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | [ridondanze-cross-cutting-codebase](./concepts/ridondanze-cross-cutting-codebase.md) | Concept | DRY codebase + doc duplicazioni cross-moduli | 2026-05-21 |
 | [policy-inheritance-boundary](../User/docs/wiki/concepts/policy-inheritance-boundary.md) | Decision | Cross-module | 2026-04-27 |
 | [redundancy-catalog](./concepts/redundancy-catalog.md) | Concept | Indice ridondanza e link report trasversale | 2026-05-21 |
@@ -82,7 +141,14 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 | [policy-base-strategy](./concepts/policy-base-strategy.md) | Concept | Policy strategy | 2026-04-27 |
 | [policy-module-matrix](./concepts/policy-module-matrix.md) | Concept | Policy matrix | 2026-04-27 |
 | [laravel13-modular-package-compatibility-matrix](./concepts/laravel13-modular-package-compatibility-matrix.md) | Concept | Compatibilita' pacchetti modulo | 2026-04-28 |
+<<<<<<< HEAD
 | [module-config-php-religion](./concepts/module-config-php-religion.md) | Concept | `config/config.php` obbligatorio per modulo | 2026-07-27 |
+=======
+<<<<<<< HEAD
+| [module-config-php-religion](./concepts/module-config-php-religion.md) | Concept | `config/config.php` obbligatorio per modulo | 2026-07-27 |
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 | [module-model-artifact-parity](./concepts/module-model-artifact-parity.md) | Concept | N modelli owner = N migrate + factory + seeder; audit cross-modulo | 2026-06-05 |
 | [module-testcase-xotbase-hierarchy](./rules/module-testcase-xotbase-hierarchy.md) | Rule | TestCase modulo -> XotBaseTestCase -> Laravel; no nWidart dev-only base | 2026-06-10 |
 | [pest-global-class-imports](./rules/pest-global-class-imports.md) | Rule | Pest: niente import inutili di classi globali (`ReflectionClass`) nei file senza namespace | 2026-06-12 |
@@ -90,7 +156,15 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 
 ## Best Practices
 
+<<<<<<< HEAD
 - Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
+=======
+<<<<<<< HEAD
+- Ogni modulo Nwidart deve avere `config/config.php` (vedi [module-config-php-religion](./concepts/module-config-php-religion.md))
+=======
+- Estendere sempre XotBase classes (vedi [xotbase-check](../../../../docs/wiki/concepts/xotbase-check.md))
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Usare Actions non Services (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - Implementare `casts()` method non `$casts` property (vedi [model-casts-phpstan](../../../../docs/wiki/concepts/model-casts-phpstan.md))
 - PHPStan Level 10 enforcement (vedi [phpstan-level10](../../../../docs/wiki/concepts/phpstan-level10.md))
@@ -113,6 +187,10 @@ Core framework Laraxot: XotBase classes, Actions, PHPStan Level 10, Filament int
 |--------|------|-----------|
 | [xotbasefield-calculated-view-rule](./concepts/xotbasefield-calculated-view-rule.md) | Concept | XotBaseField runtime |
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 Aggiornato: 2026-07-27
 
 ## Lezioni 2026-07-27 (hub)
@@ -139,3 +217,9 @@ in fondo al file sopra — `form()`/`table()` delegano per intero alla
 Resource correlata (mai bridge per singolo hook come nella quarta), unici
 override point per-pagina `getTableColumns()`/`getTableHeaderActions()`.
 Non implementata. Story: `Modules/Xot/docs/stories/xotbasemanagerelatedrecords-convention-over-configuration.story.md`.
+<<<<<<< HEAD
+=======
+=======
+Aggiornato: 2026-04-28
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

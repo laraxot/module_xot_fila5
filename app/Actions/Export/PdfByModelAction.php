@@ -4,12 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
+=======
+// use Modules\Xot\Services\ArrayService;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
+use Modules\Xot\Actions\View\GetViewByModelClassAction;
+use Spatie\QueueableAction\QueueableAction;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
+>>>>>>> laraxot/dev
 
 class PdfByModelAction
 {
@@ -24,6 +33,7 @@ class PdfByModelAction
         /**
          * @var non-falsy-string&view-string
          */
+<<<<<<< HEAD
         $view_name = app(GetViewByModelClassAction::class)->execute($model::class,'.show.pdf');
 
         
@@ -31,6 +41,14 @@ class PdfByModelAction
             'view' => $view_name,
             'row' => $model,
             'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class,'.fields'),
+=======
+        $view_name = app(GetViewByModelClassAction::class)->execute($model::class, '.show.pdf');
+
+        $view_params = [
+            'view' => $view_name,
+            'row' => $model,
+            'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class, '.fields'),
+>>>>>>> laraxot/dev
         ];
 
         $view = view($view_name, $view_params);

@@ -154,9 +154,25 @@ abstract class XotBaseResource extends Resource
 {
     // ✅ Metodi rimangono invariati
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_A91uKJ
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_4zQpju
+>>>>>>> laraxot/dev
     public function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_A91uKJ
+=======
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_4zQpju
 >>>>>>> laraxot/dev
     public static function getPages(): array { /* ... */ }
 

@@ -242,5 +242,15 @@ Before committing a config file, verify:
 ---
 
 *Last Updated: 2025-08-27*
+<<<<<<< HEAD
 *Configuration Standards Version: 2.0*
 
+=======
+<<<<<<< HEAD
+*Configuration Standards Version: 2.0*
+
+=======
+*
+*Configuration Standards Version: 2.0*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

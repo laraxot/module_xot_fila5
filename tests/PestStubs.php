@@ -36,8 +36,14 @@ function actingAs(Authenticatable|int|string|null $user = null, ?string $driver 
 /**
  * Perform a GET request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $options
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $options
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function get(string|array $uri = '', array $options = []): TestResponse
@@ -48,9 +54,16 @@ function get(string|array $uri = '', array $options = []): TestResponse
 /**
  * Perform a POST request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $options
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $options
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function post(string|array $uri, array $data = [], array $options = []): TestResponse
@@ -61,8 +74,14 @@ function post(string|array $uri, array $data = [], array $options = []): TestRes
 /**
  * Perform a PUT request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function put(string|array $uri, array $data = []): TestResponse
@@ -73,8 +92,14 @@ function put(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a PATCH request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function patch(string|array $uri, array $data = []): TestResponse
@@ -85,7 +110,12 @@ function patch(string|array $uri, array $data = []): TestResponse
 /**
  * Perform a DELETE request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
+=======
+ * @param string|array<int|string, mixed> $uri
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function delete(string|array $uri): TestResponse
@@ -96,7 +126,12 @@ function delete(string|array $uri): TestResponse
 /**
  * Perform a HEAD request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
+=======
+ * @param string|array<int|string, mixed> $uri
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function head(string|array $uri): TestResponse
@@ -107,7 +142,12 @@ function head(string|array $uri): TestResponse
 /**
  * Perform an OPTIONS request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
+=======
+ * @param string|array<int|string, mixed> $uri
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function options(string|array $uri): TestResponse
@@ -118,8 +158,14 @@ function options(string|array $uri): TestResponse
 /**
  * Perform a JSON GET request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $headers
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $headers
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function getJson(string|array $uri, array $headers = []): TestResponse
@@ -130,9 +176,16 @@ function getJson(string|array $uri, array $headers = []): TestResponse
 /**
  * Perform a JSON POST request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function postJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -143,9 +196,16 @@ function postJson(string|array $uri, array $data = [], array $headers = []): Tes
 /**
  * Perform a JSON PUT request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function putJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -156,9 +216,16 @@ function putJson(string|array $uri, array $data = [], array $headers = []): Test
 /**
  * Perform a JSON PATCH request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function patchJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -169,9 +236,16 @@ function patchJson(string|array $uri, array $data = [], array $headers = []): Te
 /**
  * Perform a JSON DELETE request.
  *
+<<<<<<< HEAD
  * @param  string|array<int|string, mixed>  $uri
  * @param  array<string, mixed>  $data
  * @param  array<string, mixed>  $headers
+=======
+ * @param string|array<int|string, mixed> $uri
+ * @param array<string, mixed>            $data
+ * @param array<string, mixed>            $headers
+ *
+>>>>>>> laraxot/dev
  * @return TestResponse<Response>
  */
 function deleteJson(string|array $uri, array $data = [], array $headers = []): TestResponse
@@ -232,7 +306,11 @@ function afterEach(\Closure $closure): AfterEachCall
 /**
  * Define a test class.
  *
+<<<<<<< HEAD
  * @param  class-string  ...$classes
+=======
+ * @param class-string ...$classes
+>>>>>>> laraxot/dev
  */
 function uses(string ...$classes): UsesCall
 {

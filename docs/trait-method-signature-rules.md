@@ -135,5 +135,15 @@ If you encounter this error:
 ---
 
 *Last Updated: 2025-08-27*
+<<<<<<< HEAD
 *Trait Standards Version: 2.0*
 
+=======
+<<<<<<< HEAD
+*Trait Standards Version: 2.0*
+
+=======
+*
+*Trait Standards Version: 2.0*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

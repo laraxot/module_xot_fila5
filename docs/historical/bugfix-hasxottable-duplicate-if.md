@@ -1,7 +1,19 @@
 # Bug Fix: Duplicazione If Statement in HasXotTable.php
 
 > **Versione**: 1.0
+<<<<<<< HEAD
 > **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+=======
+<<<<<<< .merge_file_wH2Thh
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+=======
+<<<<<<< HEAD
+> **Ultima modifica**: Vedi [CHANGELOG.md](changelog.md)
+=======
+> **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DOxBBI
+>>>>>>> laraxot/dev
 
 **File**: `Modules/Xot/app/Filament/Traits/HasXotTable.php`
 **Linee**: 226-228, 242-243
@@ -163,4 +175,16 @@ done
 **Stato**: ✅ RISOLTO
 **Autore Fix**: AI Assistant
 **Review**: Pending
+<<<<<<< HEAD
 **Data**: Vedi [CHANGELOG.md](changelog.md)
+=======
+<<<<<<< .merge_file_wH2Thh
+**Data**: Vedi [CHANGELOG.md](changelog.md)
+=======
+<<<<<<< HEAD
+**Data**: Vedi [CHANGELOG.md](changelog.md)
+=======
+**Data**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DOxBBI
+>>>>>>> laraxot/dev
