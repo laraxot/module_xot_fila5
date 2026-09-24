@@ -1,13 +1,6 @@
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-## Data: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Problema Identificato
 
@@ -122,12 +115,4 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 - Utilizzare sempre tipizzazione completa per array nei PHPDoc
 - Verificare che i metodi di traduzione restituiscano sempre string
-<<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-<<<<<<< HEAD
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

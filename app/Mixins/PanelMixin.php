@@ -13,7 +13,6 @@ use Nwidart\Modules\Module as NwidartModule;
 use Webmozart\Assert\Assert;
 
 /**
- * <<<<<<< .merge_file_GNX6Hv
  * <<<<<<< HEAD.
  *
  * @method string               getId()
@@ -25,8 +24,6 @@ use Webmozart\Assert\Assert;
  * @method string               getNavigationIcon()
  * @method int                  getNavigationSort()
  *                                                   =======
- *                                                   =======
- *                                                   <<<<<<< HEAD.
  * @method string               getId()
  * @method string               getName()
  * @method NwidartModule        getModule()
@@ -35,21 +32,7 @@ use Webmozart\Assert\Assert;
  * @method string               getNavigationLabel()
  * @method string               getNavigationIcon()
  * @method int                  getNavigationSort()
- *                                                   =======
- *                                                   >>>>>>> .merge_file_j53J9u
- * @method string               getId()
- * @method string               getName()
- * @method NwidartModule        getModule()
- * @method array<string, mixed> getConfig()
- * @method array<string, mixed> getModuleConfig()
- * @method string               getNavigationLabel()
- * @method string               getNavigationIcon()
- * @method int                  getNavigationSort()
- *                                                   <<<<<<< .merge_file_GNX6Hv
  *                                                   >>>>>>> laraxot/dev
- *                                                   =======
- *                                                   >>>>>>> laraxot/dev
- *                                                   >>>>>>> .merge_file_j53J9u
  */
 class PanelMixin
 {

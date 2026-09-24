@@ -9,7 +9,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseAggregateFactory;
 
 /**
- * <<<<<<< .merge_file_lCPKva
  * <<<<<<< HEAD.
  *
  * @property string      $id
@@ -17,26 +16,13 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @property int         $period
  * @property string      $type
  * @property string      $key
- *                                  =======
- *                                  <<<<<<< HEAD.
- * @property string      $id
- * @property int         $bucket
- * @property int         $period
- * @property string      $type
- * @property string      $key
- *                                  >>>>>>> .merge_file_WFUp7q
  * @property string|null $key_hash
  * @property string      $aggregate
  * @property string      $value
  * @property int|null    $count
  *
  * @method static PulseAggregateFactory factory($count = null, $state = [])
- *                                                                          <<<<<<< .merge_file_lCPKva
  *                                                                          =======
- *                                                                          =======
- *                                                                          =======
- *
- * >>>>>>> .merge_file_WFUp7q
  *
  * @property string      $id
  * @property int         $bucket
@@ -49,11 +35,7 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @property int|null    $count
  *
  * @method static PulseAggregateFactory          factory($count = null, $state = [])
- *                                                                                   <<<<<<< .merge_file_lCPKva
  *                                                                                   >>>>>>> laraxot/dev
- *                                                                                   =======
- *                                                                                   >>>>>>> laraxot/dev
- *                                                                                   >>>>>>> .merge_file_WFUp7q
  * @method static Builder<static>|PulseAggregate newModelQuery()
  * @method static Builder<static>|PulseAggregate newQuery()
  * @method static Builder<static>|PulseAggregate query()

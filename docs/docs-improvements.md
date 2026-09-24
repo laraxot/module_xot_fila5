@@ -45,32 +45,13 @@ README.md
 phpstan-fixes-2025-01-06.md
 lessons-learned-2025-08-25.md
 git-conflicts-resolution-2025-01-06.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-phpstan-fixes-[DATE].md
-lessons-learned-[DATE].md
-git-conflicts-resolution-[DATE].md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 **Dopo**:
 ```
 archive/phpstan/phpstan-fixes-jan2025.md  (archiviato)
-<<<<<<< HEAD
 archive/lessons-learned-aug2025.md         (archiviato)
 phpstan-level10-success-nov2025.md         (attuale)
-=======
-<<<<<<< HEAD
-archive/lessons-learned-aug2025.md         (archiviato)
-phpstan-level10-success-nov2025.md         (attuale)
-=======
-archive/lessons-learned-aug-archive-1.md         (archiviato)
-phpstan-level10-success-nov-archive-1.md         (attuale)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### 3. Consolidamento Duplicati (12 file eliminati)
@@ -97,15 +78,7 @@ phpstan-level10-success-nov-archive-1.md         (attuale)
 **Struttura migliorata**:
 ```
 docs/
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md  (attuale)
-=======
-├── phpstan-level10-success-nov-archive-1.md  (attuale)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ├── phpstan-workflow.md                  (procedura)
 └── archive/
     └── phpstan/
@@ -134,15 +107,7 @@ docs/
 **Esempi trovati**:
 ```markdown
 [regole php](docs/standards/php-inheritance-rules.md)
-<<<<<<< HEAD
 public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-<<<<<<< HEAD
-public static string $projectBasePath = '../../docs/standards/php-inheritance-rules.md)
-=======
-public static string $projectBasePath = '../../../docs/standards/php-inheritance-rules.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 // Path configurabili tramite env, non hardcoded
 ```
 
@@ -157,15 +122,7 @@ public static string $projectBasePath = '../../../docs/standards/php-inheritance
 ```
 docs/
 ├── README.md                          (indice principale)
-<<<<<<< HEAD
 ├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-<<<<<<< HEAD
-├── phpstan-level10-success-nov2025.md (ultimo successo)
-=======
-├── phpstan-level10-success-nov-archive-1.md (ultimo successo)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ├── phpstan-workflow.md                (procedura corrente)
 ├── eloquent-magic-properties-rule.md  (regole Eloquent)
 ├── git-forward-only-rule.md           (regola Git)
@@ -193,27 +150,12 @@ docs/
 
 ### Da Modules/Xot/docs/ a root docs/
 ```markdown
-<<<<<<< HEAD
 [guida principale](../../../docs/guide.md)
-=======
-<<<<<<< HEAD
-[guida principale](../../../docs/guide.md)
-=======
-[guida principale](../../../../docs/guide.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### Tra moduli (Xot → User)
 ```markdown
 [user docs](../../User/docs/user-guide.md)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-[user docs](../../user/docs/user-guide.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### All'interno dello stesso modulo
@@ -252,15 +194,7 @@ Documentato in: `git-forward-only-rule.md`
 **Vietato**: `git checkout HEAD --`, `git reset`, `git revert` (senza discussione)
 
 ### File .lock Pattern
-<<<<<<< HEAD
 Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-<<<<<<< HEAD
-Documentato in: `phpstan-level10-success-nov2025.md`
-=======
-Documentato in: `phpstan-level10-success-nov-archive-1.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Regola**: Creare `.lock` prima di modificare file
 
@@ -314,15 +248,7 @@ find . -name "readme.md" -o -name "Readme.md"
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< HEAD
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-<<<<<<< HEAD
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Successo PHPStan
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Successo PHPStan
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Eloquent Magic Properties Rule](./eloquent-magic-properties-rule.md) - Regola property_exists
 - [Git Forward Only Rule](./git-forward-only-rule.md) - Regola Git
 - [Naming Conventions](./naming-conventions.md) - Convenzioni naming
@@ -333,12 +259,4 @@ find . -name "readme.md" -o -name "Readme.md"
 1. **Correzione link assoluti**: Eseguire script `fix-absolute-paths-in-docs.sh` (con supervisione)
 2. **Applicare a tutti i moduli**: Replicare miglioramenti in Modules/*/docs/
 3. **Verificare backlink**: Assicurare collegamenti bidirezionali
-<<<<<<< HEAD
 4. **Index centrali**: Creare README.md con indici per navigazione rapida
-=======
-<<<<<<< HEAD
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
-=======
-4. **Index centrali**: Creare README.md con indici per navigazione rapida
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

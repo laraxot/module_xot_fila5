@@ -10,38 +10,11 @@ use Filament\Tables\Columns\Column;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_6PBfnS
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use ReflectionClass;
 use ReflectionMethod;
 use SplFileInfo;
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
 
 /**
  * Helper condiviso per coverage Filament: discovery + assert su schema keyed.
@@ -58,41 +31,10 @@ final class FilamentSchemaCoverage
         }
 
         $classes = [];
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_6PBfnS
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($appRoot));
 
         foreach ($iterator as $file) {
             if (! $file instanceof SplFileInfo) {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-=======
-        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($appRoot));
-
-        foreach ($iterator as $file) {
-            if (! $file instanceof \SplFileInfo) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 continue;
             }
             if (! $file->isFile()) {
@@ -111,25 +53,7 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
             $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_6PBfnS
-            $ref = new ReflectionClass($class);
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }
@@ -143,25 +67,7 @@ final class FilamentSchemaCoverage
     }
 
     /**
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
      * @param  array<array-key, mixed>  $schema
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-     * @param  array<array-key, mixed>  $schema
-=======
-<<<<<<< .merge_file_6PBfnS
-     * @param  array<array-key, mixed>  $schema
-=======
-     * @param array<array-key, mixed> $schema
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
      */
     public static function assertKeyedSchema(array $schema, string $context): void
     {
@@ -169,28 +75,7 @@ final class FilamentSchemaCoverage
 
         $hasStringKeys = true;
         foreach (array_keys($schema) as $chiave) {
-<<<<<<< .merge_file_ukWGSw
-<<<<<<< HEAD
             if (! is_string($chiave) || $chiave === '') {
-=======
-=======
-<<<<<<< .merge_file_wLnRdO
-            if (! is_string($chiave) || $chiave === '') {
-=======
-<<<<<<< HEAD
-            if (! is_string($chiave) || $chiave === '') {
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< .merge_file_6PBfnS
-            if (! is_string($chiave) || $chiave === '') {
-=======
-            if (! is_string($chiave) || '' === $chiave) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 $hasStringKeys = false;
                 break;
             }
@@ -215,107 +100,22 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_ukWGSw
-<<<<<<< HEAD
             if (! (new ReflectionClass($class))->hasMethod('getFormSchema')) {
-=======
-<<<<<<< .merge_file_6PBfnS
-            if (! (new ReflectionClass($class))->hasMethod('getFormSchema')) {
-=======
-            if (! (new \ReflectionClass($class))->hasMethod('getFormSchema')) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_wLnRdO
-            if (! (new ReflectionClass($class))->hasMethod('getFormSchema')) {
-=======
-<<<<<<< HEAD
-            if (! (new ReflectionClass($class))->hasMethod('getFormSchema')) {
-=======
-<<<<<<< .merge_file_6PBfnS
-            if (! (new ReflectionClass($class))->hasMethod('getFormSchema')) {
-=======
-            if (! (new \ReflectionClass($class))->hasMethod('getFormSchema')) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 continue;
             }
 
             try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-                // @phpstan-ignore-next-line
-                $schema = $class::getFormSchema();
-                $executed++;
-                if ($schema === []) {
-=======
-<<<<<<< .merge_file_6PBfnS
-<<<<<<< HEAD
                 # @phpstan-ignore-next-line
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
-                # @phpstan-ignore-next-line
-=======
-                // @phpstan-ignore-next-line
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
                 $schema = $class::getFormSchema();
                 $executed++;
                 if ($schema === []) {
-=======
->>>>>>> .merge_file_nmWvIb
->>>>>>> laraxot/dev
-                $schema = $class::getFormSchema();
-                $executed++;
-                if ($schema === []) {
-=======
-                // @phpstan-ignore-next-line
-                $schema = $class::getFormSchema();
-                ++$executed;
-                if ([] === $schema) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                     continue;
                 }
 
                 self::assertKeyedSchema($schema, $class);
                 Assert::assertContainsOnlyInstancesOf(SchemaComponent::class, $schema);
             } catch (\Throwable) {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
                 $executed++;
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             }
         }
 
@@ -332,43 +132,11 @@ final class FilamentSchemaCoverage
             }
 
             try {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_6PBfnS
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 $tabella = new $class;
                 $colonne = $tabella->getTableColumns();
                 $executed++;
 
                 if ($colonne !== []) {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-=======
-                $tabella = new $class();
-                $colonne = $tabella->getTableColumns();
-                ++$executed;
-
-                if ([] !== $colonne) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                     self::assertKeyedSchema($colonne, $class);
                     Assert::assertContainsOnlyInstancesOf(Column::class, $colonne);
                 }
@@ -376,66 +144,13 @@ final class FilamentSchemaCoverage
                 $filters = $tabella->getTableFilters();
                 Assert::assertSame(array_values($filters), $filters, "{$class} filters devono essere una lista");
 
-<<<<<<< .merge_file_ukWGSw
-<<<<<<< HEAD
                 if ((new ReflectionClass($tabella))->hasMethod('getTableActions')) {
                     $actionsMethod = new ReflectionMethod($tabella, 'getTableActions');
-=======
-<<<<<<< .merge_file_6PBfnS
-                if ((new ReflectionClass($tabella))->hasMethod('getTableActions')) {
-                    $actionsMethod = new ReflectionMethod($tabella, 'getTableActions');
-=======
-=======
-<<<<<<< .merge_file_wLnRdO
-                if ((new ReflectionClass($tabella))->hasMethod('getTableActions')) {
-                    $actionsMethod = new ReflectionMethod($tabella, 'getTableActions');
-=======
-<<<<<<< HEAD
-                if ((new ReflectionClass($tabella))->hasMethod('getTableActions')) {
-                    $actionsMethod = new ReflectionMethod($tabella, 'getTableActions');
-=======
-<<<<<<< .merge_file_6PBfnS
-                if ((new ReflectionClass($tabella))->hasMethod('getTableActions')) {
-                    $actionsMethod = new ReflectionMethod($tabella, 'getTableActions');
-=======
->>>>>>> .merge_file_nmWvIb
-                if ((new \ReflectionClass($tabella))->hasMethod('getTableActions')) {
-                    $actionsMethod = new \ReflectionMethod($tabella, 'getTableActions');
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                     $actions = $actionsMethod->invoke($tabella);
                     Assert::assertNotEmpty($actions);
                 }
             } catch (\Throwable) {
-<<<<<<< .merge_file_ukWGSw
-<<<<<<< HEAD
                 $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_wLnRdO
-                $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             }
         }
 
@@ -453,37 +168,8 @@ final class FilamentSchemaCoverage
 
             try {
                 $schema = $class::getInfolistSchema();
-<<<<<<< .merge_file_ukWGSw
-<<<<<<< HEAD
                 $executed++;
                 if ($schema === []) {
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-                if ($schema === []) {
-=======
-=======
-<<<<<<< .merge_file_wLnRdO
-                $executed++;
-                if ($schema === []) {
-=======
-<<<<<<< HEAD
-                $executed++;
-                if ($schema === []) {
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-                if ($schema === []) {
-=======
->>>>>>> .merge_file_nmWvIb
-                ++$executed;
-                if ([] === $schema) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                     continue;
                 }
 
@@ -493,31 +179,7 @@ final class FilamentSchemaCoverage
                 self::assertKeyedSchema($schema, $class);
                 Assert::assertContainsOnlyInstancesOf(Entry::class, $schema);
             } catch (\Throwable) {
-<<<<<<< .merge_file_ukWGSw
-<<<<<<< HEAD
                 $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_wLnRdO
-                $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             }
         }
 
@@ -539,25 +201,7 @@ final class FilamentSchemaCoverage
 
             try {
                 $model = $class::getModel();
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
                 $executed++;
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 Assert::assertIsString($model);
                 Assert::assertNotSame('', $model);
                 Assert::assertTrue(class_exists($model));
@@ -568,25 +212,7 @@ final class FilamentSchemaCoverage
                     Assert::assertNotEmpty($pages);
                 }
             } catch (\Throwable) {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
                 $executed++;
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $executed++;
-=======
-                ++$executed;
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             }
         }
 
@@ -603,41 +229,10 @@ final class FilamentSchemaCoverage
         }
 
         $classes = [];
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_6PBfnS
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
         $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($appRoot));
 
         foreach ($iterator as $file) {
             if (! $file instanceof SplFileInfo) {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-=======
-=======
-        $iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($appRoot));
-
-        foreach ($iterator as $file) {
-            if (! $file instanceof \SplFileInfo) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 continue;
             }
             if (! $file->isFile()) {
@@ -660,25 +255,7 @@ final class FilamentSchemaCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
             $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_6PBfnS
-            $ref = new ReflectionClass($class);
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -693,25 +270,7 @@ final class FilamentSchemaCoverage
 
     public static function testAllListPages(string $appRoot, string $moduleNamespace): void
     {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
         if (config('app.date_format') === null) {
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-        if (config('app.date_format') === null) {
-=======
-<<<<<<< .merge_file_6PBfnS
-        if (config('app.date_format') === null) {
-=======
-        if (null === config('app.date_format')) {
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
             config(['app.date_format' => 'd/m/Y']);
         }
 
@@ -721,25 +280,7 @@ final class FilamentSchemaCoverage
             }
 
             try {
-<<<<<<< .merge_file_ukWGSw
-=======
-<<<<<<< .merge_file_wLnRdO
                 $page = new $class;
-=======
->>>>>>> .merge_file_nmWvIb
-<<<<<<< HEAD
-                $page = new $class;
-=======
-<<<<<<< .merge_file_6PBfnS
-                $page = new $class;
-=======
-                $page = new $class();
->>>>>>> .merge_file_fjd8YP
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_ukWGSw
-=======
->>>>>>> .merge_file_tzmPdw
->>>>>>> .merge_file_nmWvIb
                 Assert::assertNotEmpty($page->getTableColumns());
             } catch (\Throwable $e) {
                 Assert::assertNotSame('', $e->getMessage());

@@ -1,63 +1,14 @@
-<<<<<<< .merge_file_NQbeco
-=======
-<<<<<<< .merge_file_hyPNmk
-=======
->>>>>>> .merge_file_F8zAcV
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_sLH485
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_Ar6BGt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_NQbeco
-=======
->>>>>>> .merge_file_TVGy4G
->>>>>>> .merge_file_F8zAcV
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: docs/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
 # Git LFS VIETATO. Binari = blob git normali.
 
-<<<<<<< .merge_file_NQbeco
-=======
-<<<<<<< .merge_file_hyPNmk
-=======
->>>>>>> .merge_file_F8zAcV
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_sLH485
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Ar6BGt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_NQbeco
-=======
->>>>>>> .merge_file_TVGy4G
->>>>>>> .merge_file_F8zAcV
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-<<<<<<< .merge_file_NQbeco
-=======
-<<<<<<< .merge_file_hyPNmk
-=======
->>>>>>> .merge_file_F8zAcV
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_sLH485
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_Ar6BGt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_NQbeco
-=======
->>>>>>> .merge_file_TVGy4G
->>>>>>> .merge_file_F8zAcV
 # Binary files (regular git blobs — NO git-lfs)
 # `binary` + `!filter` azzera eventuali filtri LFS ereditati
 *.png binary !filter
@@ -84,20 +35,3 @@ CHANGELOG.md export-ignore
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
-<<<<<<< .merge_file_NQbeco
-=======
-<<<<<<< .merge_file_hyPNmk
-=======
->>>>>>> .merge_file_F8zAcV
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_sLH485
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Ar6BGt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_NQbeco
-=======
->>>>>>> .merge_file_TVGy4G
->>>>>>> .merge_file_F8zAcV

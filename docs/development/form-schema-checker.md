@@ -38,16 +38,5 @@ Lo script produce:
 
 ## Collegamenti Correlati
 - [Filament Best Practices](../FILAMENT_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
-=======
-<<<<<<< HEAD
-- [XotBaseResource Documentation](../architecture/xot_base_resource.md)
-- [PHPStan Configuration](../phpstan-usage.md)
-=======
-- [Filament Best Practices](../filament_best_practices.md)
-- [XotBaseResource Documentation](../architecture/xot_base_resource.md)
-- [PHPStan Configuration](../phpstan-usage.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

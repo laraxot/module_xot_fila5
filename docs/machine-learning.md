@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wGZyuy
->>>>>>> laraxot/dev
 ---
 title: 'machine_learning'
 module: Xot
@@ -26,16 +14,6 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/machine_learning.txt -->
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wGZyuy
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ----------------------------------------
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
@@ -53,22 +31,6 @@ https://pii-tools.com/detect-person-names-in-text/
 
 https://github.com/angeloskath/php-nlp-tools
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 http://php-nlp-tools.com/documentation/
 
 ----------- PER RICERCA -------
@@ -77,22 +39,6 @@ https://www.php.net/manual/en/function.metaphone.php
 
 https://www.phpclasses.org/package/10316-PHP-Detect-a-person-gender-from-the-name-in-Latin-text.html
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://www.we-rc.com/blog/2021/04/04/named-entity-recognition-in-php
 
 https://rubixml.com/
@@ -101,22 +47,6 @@ https://github.com/wamania/php-stemmer#languages
 
 https://www.youtube.com/watch?v=06-AZXmwHjo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 https://stackoverflow.com/questions/4304938/how-to-recognize-names-from-a-text-using-php +++
 http://www.complexityintelligence.com/en/knowledgebase/api/nlp_ner_v1/snippet_php
 http://www.alchemyapi.com/tools/
@@ -124,22 +54,6 @@ http://www.opencalais.com/applications/opencalais-and-php-code
 https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-=======
-=======
->>>>>>> .merge_file_wGZyuy
-
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP
@@ -173,44 +87,12 @@ https://cloudmersive.medium.com/perform-named-entity-recognition-using-nlp-in-ph
 LUCENE
 https://github.com/nqxcode/laravel-lucene-search
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 -----------------------------------------------------------------------------------------------------------------------
 
 https://www.textrazor.com/demo
 
 --------------------------------------------------------------------------------------------------------------------------
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 TIPO PERSON OF INTEREST
 https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606
 
@@ -218,22 +100,6 @@ https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f6
 CON LIBRERIA Stanford
 https://github.com/yooper/php-text-analysis  !!!!!
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 -----------------------------------------
 https://github.com/DaveChild/Text-Statistics
 
@@ -242,83 +108,20 @@ https://github.com/DaveChild/Best-websites-a-programmer-should-visit  !!
 
 https://github.com/elastic/elasticsearch-php/blob/master/src/Elasticsearch/Namespaces/IndicesNamespace.php   ????
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ------------------------------------------------
 
 https://github.com/patrickschur/language-detection
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-
-=======
->>>>>>> .merge_file_wGZyuy
-=======
-
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ----------------------------------------------------
 https://www.sitepoint.com/how-to-analyze-tweet-sentiments-with-php-machine-learning/   !!!!!!!!!!!!!!!!!!!!!
 https://github.com/php-ai/php-ml
 
 ---------------------------------------------------
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_Qtxqk9
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_wGZyuy
->>>>>>> laraxot/dev
 https://cloud.google.com/natural-language/docs/analyzing-sentiment
 
 https://cloud.google.com/natural-language/docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ----------------------------------------------------------
 
-<<<<<<< HEAD
 https://accidentalfactors.com/part-of-speech-tagging/
-=======
-https://cloud.google.com/natural-language/project_docs/analyzing-sentiment
-
-https://cloud.google.com/natural-language/project_docs/analyzing-entities  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-----------------------------------------------------------
-
-https://accidentalfactors.com/part-of-speech-tagging/
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-https://accidentalfactors.com/part-of-speech-tagging/
-<<<<<<< HEAD
-=======
-https://accidentalfactors.com/part-of-speech-tagging/
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_cG2r3w
 
-=======
-<<<<<<< .merge_file_biEcko
-=======
-
->>>>>>> .merge_file_cmFDSg
->>>>>>> .merge_file_MTDn8t
 return [
     'failed' => 'These credentials do not match our records!',
     'general_error' => 'You do not have access to do that.',

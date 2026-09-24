@@ -266,18 +266,8 @@ return new class extends XotBaseMigration {
 ```
 
 **Collegamenti:**
-<<<<<<< HEAD
 - [Regola Performance](../../Performance/docs/database_migrations.md)
 - [Regole globali root](../../../docs/database_migrations.md)
-=======
-<<<<<<< HEAD
-- [Regola Performance](../../Performance/docs/database_migrations.md)
-- [Regole globali root](../../../docs/database_migrations.md)
-=======
-- [Regola Performance](../../performance/docs/database_migrations.md)
-- [Regole globali root](../../../../docs/database_migrations.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     /**
      * Ottiene la sezione associata al socio.
@@ -492,12 +482,4 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Analizzare le query lente con EXPLAIN
 - Verificare che ci siano indici appropriati
 - Controllare che i tipi di dati siano ottimali per l'uso previsto
-<<<<<<< HEAD
 - Utilizzare query builder o raw queries per query complesse
-=======
-<<<<<<< HEAD
-- Utilizzare query builder o raw queries per query complesse
-=======
-- Utilizzare query builder o raw queries per query complesse
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

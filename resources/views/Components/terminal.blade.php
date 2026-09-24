@@ -1,20 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_MiUjYy
-=======
 
-=======
-<<<<<<< .merge_file_UJbATe
-
-=======
-=======
-=======
-
->>>>>>> .merge_file_tqEYeV
->>>>>>> .merge_file_uiYmgY
->>>>>>> laraxot/dev
 ?>
 <div
     x-data="{

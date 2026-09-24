@@ -8,34 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use Mockery;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_18NoEz
-<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
-=======
-=======
-<<<<<<< .merge_file_lHnLyC
-use ReflectionClass;
-use ReflectionMethod;
-=======
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
 
 /**
  * Coverage business: policies, models, actions — esecuzione reale, non class_exists.
@@ -70,29 +44,7 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
             $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                 continue;
             }
@@ -111,36 +63,7 @@ final class ModuleBusinessCoverage
     public static function mockUser(): UserContract
     {
         /** @var Mockery\MockInterface&UserContract $user */
-<<<<<<< .merge_file_18NoEz
-<<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-        $user = Mockery::mock(UserContract::class);
-=======
-=======
-<<<<<<< .merge_file_lHnLyC
-        $user = Mockery::mock(UserContract::class);
-=======
-<<<<<<< HEAD
-        $user = Mockery::mock(UserContract::class);
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-        $user = Mockery::mock(UserContract::class);
-=======
->>>>>>> .merge_file_a1yvnK
-        $user = \Mockery::mock(UserContract::class);
->>>>>>> laraxot/dev
-=======
-        $user = \Mockery::mock(UserContract::class);
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
         $user->shouldIgnoreMissing();
         $user->shouldReceive('can')->andReturn(true);
         $user->shouldReceive('hasRole')->andReturn(false);
@@ -156,47 +79,11 @@ final class ModuleBusinessCoverage
     {
         $executed = 0;
         $user = self::mockUser();
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
         $record = Mockery::mock(Model::class);
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-        $record = Mockery::mock(Model::class);
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-        $record = Mockery::mock(Model::class);
-=======
-        $record = \Mockery::mock(Model::class);
->>>>>>> laraxot/dev
-=======
-        $record = \Mockery::mock(Model::class);
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
         $record->shouldIgnoreMissing();
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Models/Policies') as $class) {
             try {
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                 $policy = new $class;
                 $executed++;
 
@@ -205,33 +92,6 @@ final class ModuleBusinessCoverage
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
                     $name = $method->getName();
                     if ($name === '__construct') {
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_WToxGZ
-                $policy = new $class();
-                ++$executed;
-
-                $ref = new \ReflectionClass($policy);
-
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-                    $name = $method->getName();
-                    if ('__construct' === $name) {
-<<<<<<< .merge_file_cppp08
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                         continue;
                     }
 
@@ -242,59 +102,12 @@ final class ModuleBusinessCoverage
                             $type = $param->getType();
                             if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
                                 $typeName = $type->getName();
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
                                 if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-                                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-                                if ($typeName === UserContract::class || is_subclass_of($typeName, UserContract::class)) {
-=======
-                                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
->>>>>>> laraxot/dev
-=======
-                                if (UserContract::class === $typeName || is_subclass_of($typeName, UserContract::class)) {
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                                     $args[] = $user;
 
                                     continue;
                                 }
-<<<<<<< .merge_file_18NoEz
-<<<<<<< HEAD
                                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-=======
-=======
-<<<<<<< .merge_file_lHnLyC
-                                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-=======
-<<<<<<< HEAD
-                                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-                                if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
-=======
-                                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
->>>>>>> laraxot/dev
-=======
-                                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                                     $args[] = $record;
 
                                     continue;
@@ -307,29 +120,7 @@ final class ModuleBusinessCoverage
                     }
                 }
             } catch (\Throwable) {
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
                 $executed++;
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-                $executed++;
-=======
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
             }
         }
 
@@ -350,20 +141,6 @@ final class ModuleBusinessCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
             $discovered++;
 
             try {
@@ -377,38 +154,6 @@ final class ModuleBusinessCoverage
         }
 
         if ($discovered === 0) {
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_WToxGZ
-            ++$discovered;
-
-            try {
-                $model = new $class();
-                ++$executed;
-                Assert::assertNotEmpty($model->getTable());
-                Assert::assertNotEmpty($model->getFillable());
-            } catch (\Throwable) {
-                ++$executed;
-            }
-        }
-
-        if (0 === $discovered) {
-<<<<<<< .merge_file_cppp08
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
             Assert::assertSame(0, $executed);
 
             return;
@@ -423,36 +168,7 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Actions') as $class) {
             try {
-<<<<<<< .merge_file_18NoEz
-<<<<<<< HEAD
                 $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-=======
-<<<<<<< .merge_file_lHnLyC
-                $ref = new ReflectionClass($class);
-=======
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_a1yvnK
-                $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-                $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                 if (! $ref->hasMethod('execute') && ! $ref->hasMethod('handle')) {
                     continue;
                 }
@@ -466,20 +182,6 @@ final class ModuleBusinessCoverage
                     }
                 }
 
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                 if ($instance === null) {
                     continue;
                 }
@@ -487,32 +189,6 @@ final class ModuleBusinessCoverage
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_WToxGZ
-                if (null === $instance) {
-                    continue;
-                }
-
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
-<<<<<<< .merge_file_cppp08
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
             }
         }
 
@@ -525,51 +201,12 @@ final class ModuleBusinessCoverage
 
         foreach (self::discoverPhpClasses($appRoot, $moduleNamespace, 'Datas') as $class) {
             try {
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_cppp08
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
                 $executed++;
                 if (method_exists($class, 'from')) {
                     Assert::assertTrue((new ReflectionClass($class))->hasMethod('from'));
                 }
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< .merge_file_18NoEz
-=======
-<<<<<<< .merge_file_lHnLyC
-=======
->>>>>>> .merge_file_a1yvnK
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_WToxGZ
-                ++$executed;
-                if (method_exists($class, 'from')) {
-                    Assert::assertTrue((new \ReflectionClass($class))->hasMethod('from'));
-                }
-            } catch (\Throwable) {
-                ++$executed;
-<<<<<<< .merge_file_cppp08
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_WToxGZ
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_18NoEz
-=======
->>>>>>> .merge_file_BUI6bt
->>>>>>> .merge_file_a1yvnK
             }
         }
 

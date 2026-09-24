@@ -1,8 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 title: Navigation
 description: Building a navigation menu for your site
 extends: _layouts.documentation
@@ -39,11 +35,6 @@ $page->navigation
 ### Versione HEAD
 
 ## Collegamenti tra versioni di navigation.md
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 * [navigation.md](../../../Gdpr/docs/navigation.md)
 * [navigation.md](../../../Xot/docs/navigation.md)
 * [navigation.md](../../../UI/docs/navigation.md)
@@ -54,15 +45,3 @@ $page->navigation
 ### Versione Incoming
 
 ---
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-module: theme
-topic: navigation
-canonical: ../../../Themes/docs/shared-components/navigation.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/navigation.md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

@@ -29,15 +29,7 @@ cd laravel
 ```
 
 ### Documentazione
-<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
-=======
-<<<<<<< HEAD
-- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
-=======
-- [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -180,23 +172,10 @@ php -l path/to/modified/file.php
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
-<<<<<<< HEAD
-=======
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Success story
-- [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
-- [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
-- [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 🚀 Next Steps
 
@@ -261,15 +240,7 @@ cd laravel
 ```
 
 ### Documentazione
-<<<<<<< HEAD
 - [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
-=======
-<<<<<<< HEAD
-- [phpstan-level10-success-nov2025.md](./phpstan-level10-success-nov2025.md)
-=======
-- [phpstan-level10-success-nov-archive-1.md](./phpstan-level10-success-nov-archive-1.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## ⚠️ PHPMD - NON INSTALLATO
 
@@ -412,23 +383,10 @@ php -l path/to/modified/file.php
 
 ## 📚 Documentazione Correlata
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 - [PHPStan Level 10 Success](./phpstan-level10-success-nov2025.md) - Success story
 - [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
 - [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
 - [Docs Improvements](./docs-improvements-nov2025.md) - Miglioramenti docs
-<<<<<<< HEAD
-=======
-=======
-- [PHPStan Level 10 Success](./phpstan-level10-success-nov-archive-1.md) - Success story
-- [Code Quality Standards](./code-quality-standards.md) - Standard qualità codice
-- [Quality Tools Zen](./quality-tools-zen.md) - Filosofia quality tools
-- [Docs Improvements](./docs-improvements-nov-archive-1.md) - Miglioramenti docs
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 🚀 Next Steps
 

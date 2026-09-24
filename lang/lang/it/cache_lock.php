@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_NSQQbz
 
-=======
-<<<<<<< .merge_file_AOc1Ii
-=======
-
->>>>>>> .merge_file_TQaF3U
->>>>>>> .merge_file_WOYutZ
 return [
     'navigation' => [
         'name' => 'cache lock',

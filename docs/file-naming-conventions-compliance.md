@@ -1,14 +1,6 @@
 # File Naming Conventions Compliance - 2026-01-09
 
 **Data**: 2026-01-09  
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-# File Naming Conventions Compliance - [DATE]
-
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Status**: ✅ **COMPLETATO**
 
 ---
@@ -42,13 +34,6 @@
 ### Pattern di Rinomina
 ```
 ❌ PRIMA: nome-file-2026-01-09.md
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-❌ PRIMA: nome-file-[DATE].md
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ✅ DOPO: nome-file.md
 ```
 
@@ -95,10 +80,3 @@
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

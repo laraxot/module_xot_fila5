@@ -17,45 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
    public function getFormSchema(): array
-=======
-   public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-   public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qKaykA
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_H9Vcmd
-   public function getFormSchema(): array
-=======
-   public static function getFormSchema(): array
->>>>>>> .merge_file_S2wXQI
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
->>>>>>> laraxot/dev
    {
        return [
            TextInput::make('nome')->required(),
@@ -248,45 +210,7 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qKaykA
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_H9Vcmd
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_S2wXQI
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('nome')->required(),
@@ -447,43 +371,7 @@ class ReportResource extends XotBaseResource
      *
      * @return array<int, \Filament\Forms\Components\Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_H9Vcmd
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_ia8R0X
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_H9Vcmd
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qKaykA
-    public static function getFormSchema(): array
->>>>>>> .merge_file_S2wXQI
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             // ✅ NO ->label(): Tutte le label gestite da LangServiceProvider
@@ -527,45 +415,7 @@ class SocioResource extends XotBaseResource
     protected static ?int $navigationSort = 1;
 
     // Form Schema - CORRETTO ✅
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
     public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qKaykA
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_H9Vcmd
-    public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_S2wXQI
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('cognome')
@@ -807,45 +657,7 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
 public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< .merge_file_ia8R0X
-=======
-public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qKaykA
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< .merge_file_H9Vcmd
-public function getFormSchema(): array
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_S2wXQI
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
->>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1099,43 +911,7 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_9tRR3X
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_H9Vcmd
-    public function getFormSchema(): array
-=======
-=======
-<<<<<<< .merge_file_ia8R0X
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-=======
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-<<<<<<< .merge_file_H9Vcmd
-    public function getFormSchema(): array
-=======
->>>>>>> .merge_file_qKaykA
-    public static function getFormSchema(): array
->>>>>>> .merge_file_S2wXQI
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_9tRR3X
-=======
->>>>>>> .merge_file_wlrjK4
->>>>>>> .merge_file_qKaykA
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('nome')->required(),

@@ -1,41 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_gKNcjB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-
-https://qiita.com/nunulk/items/4c491634ad843c7a138e
-
-
-https://learnku.com/articles/22571
-
-https://spatie.be/docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
-
-https://dev.to/lloople/adding-view-models-to-a-laravel-project-hod
-
-
----
-https://www.youtube.com/watch?v=xHs6jeoRRcc
-
-
-
-http://niceprogrammer.com/laravel-view-model/
-
-
-
-??
-https://github.com/robclancy/presenter
-
-
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_OaK6ae
->>>>>>> laraxot/dev
 ---
 title: 'view_models'
 module: Xot
@@ -54,36 +16,12 @@ updated: 2026-08-24
 
 https://qiita.com/nunulk/items/4c491634ad843c7a138e
 
-<<<<<<< HEAD
 https://learnku.com/articles/22571
 
-https://spatie.be/project_docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
+https://spatie.be/docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
 
 https://dev.to/lloople/adding-view-models-to-a-laravel-project-hod
 
-=======
-=======
-
-https://qiita.com/nunulk/items/4c491634ad843c7a138e
-
-
->>>>>>> laraxot/dev
-https://learnku.com/articles/22571
-
-<<<<<<< .merge_file_gKNcjB
-<<<<<<< HEAD
-https://spatie.be/project_docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
-=======
-https://spatie.be/docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
->>>>>>> laraxot/dev
-=======
-https://spatie.be/docs/laravel-blade-x/v2/advanced-usage/transforming-data-with-view-models
->>>>>>> .merge_file_OaK6ae
-
-https://dev.to/lloople/adding-view-models-to-a-laravel-project-hod
-
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 https://www.youtube.com/watch?v=xHs6jeoRRcc
 
@@ -92,79 +30,8 @@ http://niceprogrammer.com/laravel-view-model/
 ??
 https://github.com/robclancy/presenter
 
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-https://www.yuulinux.tokyo/13801/   pokemon :)
-
-view composers may function like "view models" or "presenters".
-
-<<<<<<< HEAD
-
-https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
-
-
-
-http://www.javaear.com/question/21542893.html
-
-
-
-https://gitee.com/gordensong/view-model
-=======
 https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
 
 http://www.javaear.com/question/21542893.html
 
 https://gitee.com/gordensong/view-model
-=======
-<<<<<<< .merge_file_gKNcjB
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-https://www.yuulinux.tokyo/13801/   pokemon :)
-=======
-https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
->>>>>>> .merge_file_OaK6ae
-
-http://www.javaear.com/question/21542893.html
-
-https://gitee.com/gordensong/view-model
-=======
-
----
-https://www.youtube.com/watch?v=xHs6jeoRRcc
-
-
-
-http://niceprogrammer.com/laravel-view-model/
-
-
-
-<<<<<<< .merge_file_gKNcjB
-https://gitee.com/gordensong/view-model
-=======
-=======
->>>>>>> laraxot/dev
-=======
-??
-https://github.com/robclancy/presenter
-
-
-https://www.yuulinux.tokyo/13801/   pokemon :)
-
-view composers may function like "view models" or "presenters".
-
-
->>>>>>> .merge_file_OaK6ae
-https://www.clariontech.com/blog/mvvm-in-ios-a-quick-walkthrough
-
-
-
-http://www.javaear.com/question/21542893.html
-
-
-
-https://gitee.com/gordensong/view-model
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

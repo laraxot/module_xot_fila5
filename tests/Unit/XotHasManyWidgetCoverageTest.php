@@ -12,30 +12,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Schema;
-<<<<<<< .merge_file_3uaEs3
-<<<<<<< HEAD
 use Mockery;
-=======
-=======
-<<<<<<< .merge_file_OaPdZs
-use Mockery;
-=======
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
 use Modules\Xot\Actions\Model\Update\HasManyAction;
 use Modules\Xot\Datas\RelationData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -43,72 +20,13 @@ use Modules\Xot\Models\Cache as CacheModel;
 use Modules\Xot\Tests\Fixtures\Stubs\XotWidgetFormHost;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_3uaEs3
-<<<<<<< HEAD
 use ReflectionClass;
 use ReflectionMethod;
-=======
-<<<<<<< .merge_file_uIGE5P
-=======
-<<<<<<< .merge_file_OaPdZs
-use ReflectionClass;
-use ReflectionMethod;
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
->>>>>>> .merge_file_sp3cpu
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< .merge_file_3uaEs3
-<<<<<<< HEAD
     Mockery::close();
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-    Mockery::close();
-=======
-=======
-<<<<<<< .merge_file_OaPdZs
-    Mockery::close();
-=======
-<<<<<<< HEAD
-    Mockery::close();
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-    Mockery::close();
-=======
->>>>>>> .merge_file_sp3cpu
-    \Mockery::close();
->>>>>>> laraxot/dev
-=======
-    \Mockery::close();
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
 });
 
 describe('Xot HasMany and Widget form coverage', function (): void {
@@ -138,20 +56,6 @@ describe('Xot HasMany and Widget form coverage', function (): void {
             $t->unsignedBigInteger('parent_id')->nullable();
         });
 
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
         $parent = new CacheModel;
         $parent->forceFill(['id' => 1, 'key' => 'p', 'value' => 'v']);
         $parent->exists = true;
@@ -160,33 +64,6 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         $related->forceFill(['id' => 2, 'key' => 'c', 'value' => 'v', 'parent_id' => null]);
 
         $hasMany = Mockery::mock(HasMany::class);
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_i0IExG
-        $parent = new CacheModel();
-        $parent->forceFill(['id' => 1, 'key' => 'p', 'value' => 'v']);
-        $parent->exists = true;
-
-        $related = new CacheModel();
-        $related->forceFill(['id' => 2, 'key' => 'c', 'value' => 'v', 'parent_id' => null]);
-
-        $hasMany = \Mockery::mock(HasMany::class);
-<<<<<<< .merge_file_uIGE5P
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
         $hasMany->shouldReceive('getLocalKeyName')->andReturn('id');
         $hasMany->shouldReceive('getForeignKeyName')->andReturn('parent_id');
 
@@ -197,36 +74,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
             'data' => ['to' => [2], 'from' => [3]],
         ]);
 
-<<<<<<< .merge_file_3uaEs3
-<<<<<<< HEAD
         $action = new HasManyAction;
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-        $action = new HasManyAction;
-=======
-=======
-<<<<<<< .merge_file_OaPdZs
-        $action = new HasManyAction;
-=======
-<<<<<<< HEAD
-        $action = new HasManyAction;
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-        $action = new HasManyAction;
-=======
->>>>>>> .merge_file_sp3cpu
-        $action = new HasManyAction();
->>>>>>> laraxot/dev
-=======
-        $action = new HasManyAction();
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
         try {
             $action->execute($parent, $dto);
         } catch (\Throwable $e) {
@@ -249,36 +97,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         }
 
         // invalid parent key
-<<<<<<< .merge_file_3uaEs3
-<<<<<<< HEAD
         $badParent = new CacheModel;
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-        $badParent = new CacheModel;
-=======
-=======
-<<<<<<< .merge_file_OaPdZs
-        $badParent = new CacheModel;
-=======
-<<<<<<< HEAD
-        $badParent = new CacheModel;
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-        $badParent = new CacheModel;
-=======
->>>>>>> .merge_file_sp3cpu
-        $badParent = new CacheModel();
->>>>>>> laraxot/dev
-=======
-        $badParent = new CacheModel();
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
         $badParent->forceFill(['id' => null, 'key' => 'x']);
         try {
             $action->execute($badParent, $dto);
@@ -287,39 +106,9 @@ describe('Xot HasMany and Widget form coverage', function (): void {
             Assert::assertNotEmpty($e->getMessage());
         }
 
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
         $ref = new ReflectionClass(HasManyAction::class);
         foreach ($ref->getMethods(ReflectionMethod::IS_PRIVATE | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
             if ($method->getDeclaringClass()->getName() !== HasManyAction::class || str_starts_with($method->getName(), '__')) {
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-        $ref = new ReflectionClass(HasManyAction::class);
-        foreach ($ref->getMethods(ReflectionMethod::IS_PRIVATE | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-            if ($method->getDeclaringClass()->getName() !== HasManyAction::class || str_starts_with($method->getName(), '__')) {
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-        $ref = new ReflectionClass(HasManyAction::class);
-        foreach ($ref->getMethods(ReflectionMethod::IS_PRIVATE | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-            if ($method->getDeclaringClass()->getName() !== HasManyAction::class || str_starts_with($method->getName(), '__')) {
-=======
-        $ref = new \ReflectionClass(HasManyAction::class);
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PRIVATE | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
-            if (HasManyAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
->>>>>>> laraxot/dev
-=======
-        $ref = new \ReflectionClass(HasManyAction::class);
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PRIVATE | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
-            if (HasManyAction::class !== $method->getDeclaringClass()->getName() || str_starts_with($method->getName(), '__')) {
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
                 continue;
             }
             try {
@@ -328,29 +117,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
                 foreach ($method->getParameters() as $param) {
                     if ($param->isDefaultValueAvailable()) {
                         $args[] = $param->getDefaultValue();
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
                     } elseif ($param->getName() === 'data' || ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'array')) {
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-                    } elseif ($param->getName() === 'data' || ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'array')) {
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-                    } elseif ($param->getName() === 'data' || ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'array')) {
-=======
-                    } elseif ('data' === $param->getName() || ($param->getType() instanceof \ReflectionNamedType && 'array' === $param->getType()->getName())) {
->>>>>>> laraxot/dev
-=======
-                    } elseif ('data' === $param->getName() || ($param->getType() instanceof \ReflectionNamedType && 'array' === $param->getType()->getName())) {
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
                         $args[] = ['to' => [1], 'from' => [2]];
                     } else {
                         $args[] = null;
@@ -366,51 +133,12 @@ describe('Xot HasMany and Widget form coverage', function (): void {
         Http::fake();
         Process::fake();
         try {
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
             $w = new XotWidgetFormHost;
             Assert::assertNotEmpty($w->getFormSchema());
             Assert::assertNotEmpty($w->getFormFill());
             $ref = new ReflectionClass(XotBaseWidget::class);
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
                 if ($method->getDeclaringClass()->getName() !== XotBaseWidget::class) {
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_i0IExG
-            $w = new XotWidgetFormHost();
-            Assert::assertNotEmpty($w->getFormSchema());
-            Assert::assertNotEmpty($w->getFormFill());
-            $ref = new \ReflectionClass(XotBaseWidget::class);
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
-                if (XotBaseWidget::class !== $method->getDeclaringClass()->getName()) {
-<<<<<<< .merge_file_uIGE5P
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
                     continue;
                 }
                 if (in_array($method->getName(), ['__construct', 'mount', 'render', 'boot'], true)) {
@@ -425,29 +153,7 @@ describe('Xot HasMany and Widget form coverage', function (): void {
                     foreach ($method->getParameters() as $param) {
                         if ($param->isDefaultValueAvailable()) {
                             $args[] = $param->getDefaultValue();
-<<<<<<< .merge_file_3uaEs3
-=======
-<<<<<<< .merge_file_OaPdZs
                         } elseif ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string') {
-=======
->>>>>>> .merge_file_sp3cpu
-<<<<<<< HEAD
-                        } elseif ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string') {
-=======
-<<<<<<< .merge_file_uIGE5P
-<<<<<<< HEAD
-                        } elseif ($param->getType() instanceof \ReflectionNamedType && $param->getType()->getName() === 'string') {
-=======
-                        } elseif ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName()) {
->>>>>>> laraxot/dev
-=======
-                        } elseif ($param->getType() instanceof \ReflectionNamedType && 'string' === $param->getType()->getName()) {
->>>>>>> .merge_file_i0IExG
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_3uaEs3
-=======
->>>>>>> .merge_file_Ckei13
->>>>>>> .merge_file_sp3cpu
                             $args[] = 'x';
                         } else {
                             $args[] = null;

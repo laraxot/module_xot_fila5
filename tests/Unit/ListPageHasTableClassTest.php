@@ -1,41 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_SRcI5C
-=======
-<<<<<<< .merge_file_YNlucw
-=======
->>>>>>> .merge_file_bv4kYf
-use Modules\Xot\Filament\Resources\XotBaseResource;
-=======
-<<<<<<< .merge_file_5HsDnO
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_SRcI5C
-=======
->>>>>>> .merge_file_XjPhkK
->>>>>>> .merge_file_bv4kYf
-
-=======
 use Modules\Xot\Filament\Resources\XotBaseResource;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_SRcI5C
-=======
-<<<<<<< .merge_file_YNlucw
-=======
->>>>>>> .merge_file_bv4kYf
->>>>>>> laraxot/dev
-=======
-use Modules\Xot\Filament\Resources\XotBaseResource;
->>>>>>> .merge_file_ErC8vg
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_SRcI5C
-=======
->>>>>>> .merge_file_XjPhkK
->>>>>>> .merge_file_bv4kYf
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -82,63 +49,10 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
         }
 
         try {
-<<<<<<< HEAD
-<<<<<<< .merge_file_SRcI5C
-=======
-<<<<<<< .merge_file_YNlucw
-=======
->>>>>>> .merge_file_bv4kYf
-=======
-<<<<<<< .merge_file_5HsDnO
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_SRcI5C
-=======
->>>>>>> .merge_file_XjPhkK
->>>>>>> .merge_file_bv4kYf
-            /** @var class-string<\Modules\Xot\Filament\Resources\XotBaseResource> $resourceClass */
-            $resourceClass = $page::getResource();
-            $resourceClass::getTableClass();
-        } catch (\Throwable $e) {
-<<<<<<< .merge_file_SRcI5C
-=======
-<<<<<<< .merge_file_YNlucw
-=======
-=======
->>>>>>> .merge_file_bv4kYf
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_ErC8vg
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_SRcI5C
-=======
->>>>>>> .merge_file_XjPhkK
->>>>>>> .merge_file_bv4kYf
             /** @var class-string<XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (Throwable $e) {
-<<<<<<< .merge_file_SRcI5C
-=======
-<<<<<<< .merge_file_YNlucw
-=======
->>>>>>> .merge_file_bv4kYf
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_5HsDnO
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ErC8vg
-<<<<<<< .merge_file_SRcI5C
-=======
->>>>>>> .merge_file_XjPhkK
->>>>>>> .merge_file_bv4kYf
->>>>>>> laraxot/dev
             $senzaTable[] = $page.' — '.$e->getMessage();
         }
     }

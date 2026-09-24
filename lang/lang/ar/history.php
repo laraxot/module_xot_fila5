@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_jKBgrc
 
-=======
-<<<<<<< .merge_file_zgKEeA
-=======
-
->>>>>>> .merge_file_dCAXXK
->>>>>>> .merge_file_mXqhyZ
 return [
     'backend' => [
         'none' => 'لا يوجد ماضي حديث.',

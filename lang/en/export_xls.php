@@ -3,12 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-    'actions' => [
-        'export_xls' => [
-            'label' => 'Export Excel',
-            'icon' => 'heroicon-o-arrow-down-tray',
-=======
     'label' => 'Export Xls',
     'plural_label' => 'Export Xls',
     'icon' => 'xot-files.xls',
@@ -17,7 +11,6 @@ return [
         'export_xls' => [
             'label' => 'Export Excel',
             'icon' => 'xot-files.xls',
->>>>>>> laraxot/dev
             'tooltip' => 'Export data in Excel format (.xlsx)',
             'placeholder' => 'Export to Excel',
             'help' => 'Download current data in Excel format for offline analysis',
@@ -38,23 +31,12 @@ return [
         ],
     ],
     'navigation' => [
-<<<<<<< HEAD
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
         'label' => 'Export Xls',
         'plural_label' => 'Export Xls',
         'group' => 'General',
         'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
->>>>>>> laraxot/dev
     'fields' => [
     ],
 ];

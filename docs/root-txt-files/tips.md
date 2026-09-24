@@ -5,39 +5,7 @@ type: reference
 slug: tips
 description: 'https://github.com/phpstan/phpstan/issues/1242'
 tags: [migrato-da-txt, xot]
-<<<<<<< HEAD
-<<<<<<< .merge_file_cY2Zuy
-=======
-<<<<<<< .merge_file_I7wtoE
-=======
->>>>>>> .merge_file_VoJyiK
-<<<<<<< HEAD
-=======
 converted_from: __tips.txt
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_cY2Zuy
-=======
->>>>>>> .merge_file_QhaYc4
->>>>>>> .merge_file_VoJyiK
-converted_from: tips.txt
-=======
-converted_from: __tips.txt
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_cY2Zuy
-=======
-<<<<<<< .merge_file_I7wtoE
-=======
->>>>>>> .merge_file_VoJyiK
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_cY2Zuy
-=======
->>>>>>> .merge_file_QhaYc4
->>>>>>> .merge_file_VoJyiK
 created: 2026-08-24
 updated: 2026-08-24
 ---

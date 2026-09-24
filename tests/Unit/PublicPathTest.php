@@ -1,71 +1,13 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_artepH
-=======
-<<<<<<< .merge_file_ps9WZ0
-=======
->>>>>>> .merge_file_9XwNH8
 use App\Application;
-=======
-<<<<<<< .merge_file_S4odEp
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< .merge_file_artepH
-=======
->>>>>>> .merge_file_yrCYfC
->>>>>>> .merge_file_9XwNH8
-
-=======
-use App\Application;
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_artepH
-=======
-<<<<<<< .merge_file_ps9WZ0
-=======
->>>>>>> .merge_file_9XwNH8
->>>>>>> laraxot/dev
-=======
-use App\Application;
->>>>>>> .merge_file_iyK31b
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_artepH
-=======
->>>>>>> .merge_file_yrCYfC
->>>>>>> .merge_file_9XwNH8
 use Modules\Xot\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class)->group('no-xot-db');
 
-<<<<<<< .merge_file_artepH
-<<<<<<< HEAD
 /**
-=======
-<<<<<<< .merge_file_S4odEp
-/**
-=======
-/*
->>>>>>> .merge_file_iyK31b
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_ps9WZ0
-/**
-=======
-<<<<<<< HEAD
-/**
-=======
-<<<<<<< .merge_file_S4odEp
-/**
-=======
-/*
->>>>>>> .merge_file_iyK31b
->>>>>>> laraxot/dev
->>>>>>> .merge_file_yrCYfC
->>>>>>> .merge_file_9XwNH8
  * Guardia sul document root.
  *
  * Il web server serve `public_html/`, non `laravel/public/`. `App\Application` sovrascrive
@@ -104,54 +46,9 @@ it('restituisce un percorso anche per segmenti non ancora creati', function (): 
 });
 
 it('usa la Application con publicPath sovrascritto', function (): void {
-<<<<<<< HEAD
-<<<<<<< .merge_file_artepH
-=======
-<<<<<<< .merge_file_ps9WZ0
-=======
->>>>>>> .merge_file_9XwNH8
-    expect(app())->toBeInstanceOf(Application::class)
-        ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
-        ->toBe(Application::class);
-=======
-<<<<<<< .merge_file_S4odEp
-<<<<<<< HEAD
-<<<<<<< .merge_file_artepH
-=======
->>>>>>> .merge_file_yrCYfC
->>>>>>> .merge_file_9XwNH8
     expect(app())->toBeInstanceOf(App\Application::class)
         ->and((new ReflectionMethod(App\Application::class, 'publicPath'))->getDeclaringClass()->getName())
         ->toBe(App\Application::class);
-=======
-<<<<<<< .merge_file_artepH
-=======
-<<<<<<< .merge_file_ps9WZ0
-    expect(app())->toBeInstanceOf(Application::class)
-        ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
-        ->toBe(Application::class);
-=======
->>>>>>> .merge_file_9XwNH8
-<<<<<<< HEAD
-    expect(app())->toBeInstanceOf(App\Application::class)
-        ->and((new ReflectionMethod(App\Application::class, 'publicPath'))->getDeclaringClass()->getName())
-        ->toBe(App\Application::class);
-=======
-    expect(app())->toBeInstanceOf(Application::class)
-        ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
-        ->toBe(Application::class);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-    expect(app())->toBeInstanceOf(Application::class)
-        ->and((new ReflectionMethod(Application::class, 'publicPath'))->getDeclaringClass()->getName())
-        ->toBe(Application::class);
->>>>>>> .merge_file_iyK31b
-<<<<<<< .merge_file_artepH
-=======
->>>>>>> .merge_file_yrCYfC
->>>>>>> .merge_file_9XwNH8
->>>>>>> laraxot/dev
 });
 
 it('public_html esiste ed e fuori da laravel/', function (): void {

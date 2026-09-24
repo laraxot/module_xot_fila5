@@ -14,7 +14,6 @@ class DiffAssocRecursiveAction
     use QueueableAction;
 
     /**
-     * <<<<<<< .merge_file_PMj9hK
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $data
@@ -54,7 +53,6 @@ class DiffAssocRecursiveAction
     }
 
     /**
-     * <<<<<<< .merge_file_PMj9hK
      * <<<<<<< HEAD.
      *
      * @param array<int|string, mixed> $arr_1
@@ -64,17 +62,6 @@ class DiffAssocRecursiveAction
      * @param array<int|string, mixed> $arr_2
      *
      * >>>>>>> laraxot/dev
-     * =======
-     * <<<<<<< HEAD
-     * @param array<int|string, mixed> $arr_1
-     * @param array<int|string, mixed> $arr_2
-     *                                        =======
-     * @param array<int|string, mixed> $arr_1
-     * @param array<int|string, mixed> $arr_2
-     *
-     * >>>>>>> laraxot/dev
-     *
-     * >>>>>>> .merge_file_o73oiL
      *
      * @return array<int|string, array<int|string, mixed>>
      */

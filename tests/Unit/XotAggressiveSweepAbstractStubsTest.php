@@ -6,30 +6,7 @@ namespace Modules\Xot\Tests\Unit;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
-<<<<<<< .merge_file_q9Qgmb
-<<<<<<< HEAD
 use Mockery;
-=======
-=======
-<<<<<<< .merge_file_zKwLJU
-use Mockery;
-=======
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> .merge_file_LSKqUT
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ceDRBA
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsCheckbox3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsGroup3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsRadio3;
@@ -40,64 +17,13 @@ use Modules\Xot\Tests\Fixtures\Stubs\XotAbsViewColumn3;
 use Modules\Xot\Tests\Fixtures\Stubs\XotAbsWizard3;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_q9Qgmb
-=======
-<<<<<<< .merge_file_zKwLJU
 use ReflectionClass;
 use ReflectionMethod;
-=======
->>>>>>> .merge_file_LSKqUT
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
-use ReflectionClass;
-use ReflectionMethod;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ceDRBA
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< .merge_file_q9Qgmb
-<<<<<<< HEAD
     Mockery::close();
-=======
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
-    Mockery::close();
-=======
-=======
-<<<<<<< .merge_file_zKwLJU
-    Mockery::close();
-=======
-<<<<<<< HEAD
-    Mockery::close();
-=======
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
-    Mockery::close();
-=======
->>>>>>> .merge_file_LSKqUT
-    \Mockery::close();
->>>>>>> laraxot/dev
-=======
-    \Mockery::close();
->>>>>>> .merge_file_ceDRBA
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
 });
 
 describe('Xot abstract Filament stubs', function (): void {
@@ -118,51 +44,12 @@ describe('Xot abstract Filament stubs', function (): void {
             try {
                 $inst = method_exists($class, 'make')
                     ? $class::make('field')
-<<<<<<< .merge_file_q9Qgmb
-=======
-<<<<<<< .merge_file_zKwLJU
-=======
->>>>>>> .merge_file_LSKqUT
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
                     : (new ReflectionClass($class))->newInstanceWithoutConstructor();
                 Assert::assertIsObject($inst);
                 $n++;
                 $parent = (new ReflectionClass($class))->getParentClass();
                 if ($parent) {
                     foreach ($parent->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_q9Qgmb
-=======
-<<<<<<< .merge_file_zKwLJU
-=======
->>>>>>> .merge_file_LSKqUT
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_ceDRBA
-                    : (new \ReflectionClass($class))->newInstanceWithoutConstructor();
-                Assert::assertIsObject($inst);
-                ++$n;
-                $parent = (new \ReflectionClass($class))->getParentClass();
-                if ($parent) {
-                    foreach ($parent->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_4bNXUU
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_ceDRBA
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
                         if ($method->getDeclaringClass()->getName() !== $parent->getName()) {
                             continue;
                         }
@@ -183,71 +70,15 @@ describe('Xot abstract Filament stubs', function (): void {
                             } else {
                                 $method->invoke($inst, ...$args);
                             }
-<<<<<<< .merge_file_q9Qgmb
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_zKwLJU
->>>>>>> .merge_file_LSKqUT
                             $n++;
                         } catch (\Throwable) {
                             $n++;
-=======
-<<<<<<< .merge_file_q9Qgmb
-=======
-<<<<<<< HEAD
-                            $n++;
-                        } catch (\Throwable) {
-                            $n++;
-=======
->>>>>>> .merge_file_LSKqUT
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
-                            $n++;
-                        } catch (\Throwable) {
-                            $n++;
-=======
-                            ++$n;
-                        } catch (\Throwable) {
-                            ++$n;
->>>>>>> laraxot/dev
-=======
-                            ++$n;
-                        } catch (\Throwable) {
-                            ++$n;
->>>>>>> .merge_file_ceDRBA
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
                         }
                     }
                 }
             } catch (\Throwable $e) {
                 Assert::assertNotEmpty($e->getMessage());
-<<<<<<< .merge_file_q9Qgmb
-=======
-<<<<<<< .merge_file_zKwLJU
                 $n++;
-=======
->>>>>>> .merge_file_LSKqUT
-<<<<<<< HEAD
-                $n++;
-=======
-<<<<<<< .merge_file_4bNXUU
-<<<<<<< HEAD
-                $n++;
-=======
-                ++$n;
->>>>>>> laraxot/dev
-=======
-                ++$n;
->>>>>>> .merge_file_ceDRBA
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_q9Qgmb
-=======
->>>>>>> .merge_file_6cGdlw
->>>>>>> .merge_file_LSKqUT
             }
         }
         Assert::assertGreaterThan(5, $n);

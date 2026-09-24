@@ -9,7 +9,6 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseValueFactory;
 
 /**
- * <<<<<<< .merge_file_tLvRk4
  * <<<<<<< HEAD.
  *
  * @property string               $id
@@ -18,25 +17,11 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property string               $key
  * @property string|null          $key_hash
  * @property string               $value
- *                                           =======
- *                                           <<<<<<< HEAD.
- * @property string               $id
- * @property int                  $timestamp
- * @property string               $type
- * @property string               $key
- * @property string|null          $key_hash
- * @property string               $value
- *                                           >>>>>>> .merge_file_onPDMJ
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static PulseValueFactory factory($count = null, $state = [])
- *                                                                      <<<<<<< .merge_file_tLvRk4
  *                                                                      =======
- *                                                                      =======
- *                                                                      =======
- *
- * >>>>>>> .merge_file_onPDMJ
  *
  * @property string               $id
  * @property int                  $timestamp
@@ -48,11 +33,7 @@ use Modules\Xot\Database\Factories\PulseValueFactory;
  * @property ProfileContract|null $updater
  *
  * @method static PulseValueFactory          factory($count = null, $state = [])
- *                                                                               <<<<<<< .merge_file_tLvRk4
  *                                                                               >>>>>>> laraxot/dev
- *                                                                               =======
- *                                                                               >>>>>>> laraxot/dev
- *                                                                               >>>>>>> .merge_file_onPDMJ
  * @method static Builder<static>|PulseValue newModelQuery()
  * @method static Builder<static>|PulseValue newQuery()
  * @method static Builder<static>|PulseValue query()

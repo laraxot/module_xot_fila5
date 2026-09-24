@@ -9,13 +9,6 @@ use Illuminate\Contracts\Filesystem\Filesystem;
 use League\Csv\Bom;
 use League\Csv\Writer;
 use Modules\Xot\Exports\XotBaseExporter;
-<<<<<<< .merge_file_4SoIzq
-=======
-<<<<<<< .merge_file_kzbvIx
-use SplTempFileObject;
-=======
->>>>>>> .merge_file_PNfsQ7
->>>>>>> .merge_file_GvBGiW
 
 /**
  * `PrepareCsvExport` con il CSV intermedio in escape `XotBaseExporter::CSV_ESCAPE`.
@@ -33,15 +26,7 @@ class XotPrepareCsvExport extends PrepareCsvExport
     {
         parent::handle();
 
-<<<<<<< .merge_file_4SoIzq
         $csv = Writer::from(new \SplTempFileObject());
-=======
-<<<<<<< .merge_file_kzbvIx
-        $csv = Writer::from(new SplTempFileObject);
-=======
-        $csv = Writer::from(new \SplTempFileObject());
->>>>>>> .merge_file_PNfsQ7
->>>>>>> .merge_file_GvBGiW
         $csv->setOutputBOM(Bom::Utf8);
         $csv->setDelimiter($this->exporter::getCsvDelimiter());
         $csv->setEscape(XotBaseExporter::CSV_ESCAPE);

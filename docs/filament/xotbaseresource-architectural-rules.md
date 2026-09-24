@@ -97,21 +97,7 @@ final class TeamUserResource extends XotBaseResource
     // protected static \UnitEnum|string|null $navigationGroup = 'Teams';
 
     // ✅ SOLO getFormSchema() e metodi table* se necessario
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             // Schema del form
@@ -191,12 +177,4 @@ grep -r "public static function table(Table" laravel/Modules/*/app/Filament/Reso
 
 **Data Decisione**: Gennaio 2026  
 **Vincitore Dibattito**: Posizione B - Centralizzazione Totale  
-<<<<<<< HEAD
 **Conforme a**: DRY, KISS, Filosofia Laraxot
-=======
-<<<<<<< HEAD
-**Conforme a**: DRY, KISS, Filosofia Laraxot
-=======
-**Conforme a**: DRY, KISS, Filosofia Laraxot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

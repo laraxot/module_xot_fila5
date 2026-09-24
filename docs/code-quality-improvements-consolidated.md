@@ -1,13 +1,7 @@
 # Code Quality Improvements - Documento Consolidato
 
 **Data creazione**: 2025-01-22
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 **Data creazione**: [DATE]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Filosofia**: Super Mucca + DRY + KISS + Type Safety
 **Obiettivo**: Miglioramento continuo qualità codice basato su best practices 2024-2025
 
@@ -17,15 +11,7 @@
 
 ### File con Nomi Non Conformi
 Trovati **30+ file .md** con nomi che violano le regole:
-<<<<<<< HEAD
-- Date nei nomi: `phpstan-fixes-january-2025.md`, `roadmap-2025.md`
-=======
-<<<<<<< HEAD
-- Date nei nomi: `phpstan-fixes-january-2025.md`, `roadmap-2025.md`
-=======
 - Date nei nomi: `phpstan-fixes-archive-2.md`, `roadmap-archive-1.md`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Maiuscole: `ROADMAP_2026.md`, `FILAMENT_4_LARAXOT_RULES.md`
 - Underscore maiuscole: `TRAIT_METHOD_SIGNATURE_RULES.md`
 
@@ -159,21 +145,7 @@ describe('Event Management', function () {
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         'details' => Section::make('Details')
@@ -376,16 +348,6 @@ $content = file_get_contents($path); // Lancia eccezione se fallisce
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
-<<<<<<< HEAD
-**Versione**: 1.0.0
-**Status**: In progress
-=======
-<<<<<<< HEAD
-**Versione**: 1.0.0
-**Status**: In progress
-=======
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: In progress
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

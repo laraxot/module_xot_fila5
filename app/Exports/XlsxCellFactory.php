@@ -40,15 +40,7 @@ class XlsxCellFactory
 
         $value = StringHelper::sanitizeUTF8($value);
 
-<<<<<<< .merge_file_0AYO2Z
         if ('' === $value) {
-=======
-<<<<<<< .merge_file_jBs77N
-        if ($value === '') {
-=======
-        if ('' === $value) {
->>>>>>> .merge_file_EZWznU
->>>>>>> .merge_file_4WzUEG
             return new EmptyCell($value, $style);
         }
 

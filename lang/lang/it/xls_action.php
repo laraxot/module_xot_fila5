@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_LJTaqu
 
-=======
-<<<<<<< .merge_file_knq5dm
-=======
-
->>>>>>> .merge_file_PgxKjJ
->>>>>>> .merge_file_MIzptf
 return [
     'id' => 'id',
     'tipo' => 'tipo',

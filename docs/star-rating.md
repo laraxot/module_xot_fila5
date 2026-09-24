@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
-=======
-=======
-<<<<<<< .merge_file_GXcGKC
-<<<<<<< HEAD
-https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_1H7KiC
->>>>>>> laraxot/dev
 ---
 title: 'star_rating'
 module: Xot
@@ -29,15 +15,3 @@ updated: 2026-08-24
 <!-- Contenuto migrato da _docs/star_rating.txt -->
 
 https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GXcGKC
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
-=======
-https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
->>>>>>> .merge_file_1H7KiC
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

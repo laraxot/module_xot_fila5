@@ -17,7 +17,6 @@ class ExportXlsByLazyCollection
     /**
      * Esporta una lazy collection in Excel.
      *
-     * <<<<<<< .merge_file_yL2aOF
      * <<<<<<< HEAD
      *
      * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
@@ -28,17 +27,6 @@ class ExportXlsByLazyCollection
      * @param string                     $filename   Nome del file Excel
      * @param array<int, string>         $fields     Campi da includere nell'export
      *                                               >>>>>>> laraxot/dev
-     *                                               =======
-     *                                               <<<<<<< HEAD
-     * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
-     * @param string                     $filename   Nome del file Excel
-     * @param array<int, string>         $fields     Campi da includere nell'export
-     *                                               =======
-     * @param LazyCollection<int, mixed> $collection La lazy collection da esportare
-     * @param string                     $filename   Nome del file Excel
-     * @param array<int, string>         $fields     Campi da includere nell'export
-     *                                               >>>>>>> laraxot/dev
-     *                                               >>>>>>> .merge_file_hGBCs7
      */
     public function execute(
         LazyCollection $collection,

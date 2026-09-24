@@ -176,45 +176,7 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
 {
     return [
         TextInput::make('first_name'),
@@ -223,45 +185,7 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
 {
     return [
         TextInput::make('name')->required(),
@@ -357,45 +281,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
     {
         return [
             TextInput::make('first_name'),
@@ -528,38 +414,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_eR1TPo
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_T2gRyH
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-=======
-<<<<<<< .merge_file_IuXhoR
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_T2gRyH
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
->>>>>>> .merge_file_s0JLDo
 - [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)
@@ -762,45 +617,7 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
 {
     return [
         TextInput::make('first_name'),
@@ -809,45 +626,7 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
 {
     return [
         TextInput::make('name')->required(),
@@ -943,45 +722,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
-<<<<<<< .merge_file_IuXhoR
-=======
->>>>>>> .merge_file_s0JLDo
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_T2gRyH
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
     {
         return [
             TextInput::make('first_name'),
@@ -1114,38 +855,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
-<<<<<<< .merge_file_eR1TPo
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_T2gRyH
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-=======
-<<<<<<< .merge_file_IuXhoR
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< .merge_file_T2gRyH
-- [Architettura Moduli](architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura Moduli](architecture.md)
-=======
->>>>>>> .merge_file_s0JLDo
 - [Architettura Moduli](./ARCHITECTURE.md)
->>>>>>> laraxot/dev
->>>>>>> .merge_file_K6UbcB
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_eR1TPo
-=======
->>>>>>> .merge_file_bDMc1k
->>>>>>> .merge_file_s0JLDo
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

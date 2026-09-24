@@ -74,21 +74,7 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 // ✅ DICHIARARE SOLO QUESTE PROPRIETÀ/METODI
 protected static ?string $model = YourModel::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -139,32 +125,6 @@ public static function getRelations(): array
 // Non dichiarare il metodo se restituisce un array vuoto
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-## Pagine
-
-Se il metodo `getPages()` contiene solo le route standard (index, create, edit), **NON** dichiararlo:
-
-```php
-// ❌ ERRATO
-public static function getPages(): array
-{
-    return [
-        'index' => Pages\ListRecords::route('/'),
-        'create' => Pages\CreateRecord::route('/create'),
-        'edit' => Pages\EditRecord::route('/{record}/edit'),
-    ];
-}
-
-// ✅ CORRETTO
-// Non dichiarare il metodo se contiene solo le route standard
-```
-
-<<<<<<< HEAD
-=======
-=======
 ## Pagine (`getPages()`)
 
 **Non dichiarare** `getPages()` quando:
@@ -193,8 +153,6 @@ public static function getPages(): array
 
 Documentazione: [filament/getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md) · Script: `bashscripts/filament/analyze-redundant-getpages.php`
 
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## Motivazioni
 
 1. **Centralizzazione della Configurazione**: Le configurazioni comuni sono centralizzate nella classe base
@@ -220,21 +178,7 @@ class DoctorResource extends XotBaseResource
 {
     protected static ?string $model = Doctor::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')
@@ -256,22 +200,7 @@ class DoctorResource extends XotBaseResource
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-- [Filament Form Builder](/docs/filament-form-builder.md)
-- [Gestione delle Traduzioni](/docs/translation-management.md)
-- [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
-- [Filament Form Builder](/docs/filament-form-builder.md)
-- [Gestione delle Traduzioni](/docs/translation-management.md)
-- [Estensione delle Classi Filament](/docs/filament-extension-pattern.md)
-<<<<<<< HEAD
-=======
-=======
 - [getpages-redundancy-rule.md](./filament/getpages-redundancy-rule.md)
 - [xotbaseresource.md](./filament/xotbaseresource.md)
 - [forbidden-methods.md](./filament/resources/architecture/forbidden-methods.md)
 - [consolidated/filament/resources/xot-base-resource.md](./consolidated/filament/resources/xot-base-resource.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

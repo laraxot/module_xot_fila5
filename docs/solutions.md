@@ -257,12 +257,4 @@ class CacheTest extends TestCase {
 
 5. Mantenere compatibilità con le versioni precedenti
 
-<<<<<<< HEAD
 ---
-=======
-<<<<<<< HEAD
----
-=======
----
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

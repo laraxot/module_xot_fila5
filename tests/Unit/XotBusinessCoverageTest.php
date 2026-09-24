@@ -4,59 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit;
 
-<<<<<<< .merge_file_qSnlvl
-<<<<<<< HEAD
 use Mockery;
-=======
-=======
-<<<<<<< .merge_file_hDYesD
-use Mockery;
-=======
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> .merge_file_AHouiI
-<<<<<<< .merge_file_hANHCq
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_EPx84w
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_qSnlvl
-=======
->>>>>>> .merge_file_YA3Lsz
->>>>>>> .merge_file_AHouiI
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class)->group('no-xot-db');
 
 afterEach(function (): void {
-<<<<<<< .merge_file_qSnlvl
-=======
-<<<<<<< .merge_file_hDYesD
-    Mockery::close();
-=======
->>>>>>> .merge_file_AHouiI
-<<<<<<< HEAD
-    Mockery::close();
-=======
-<<<<<<< .merge_file_hANHCq
-<<<<<<< HEAD
-    Mockery::close();
-=======
     \Mockery::close();
->>>>>>> laraxot/dev
-=======
-    \Mockery::close();
->>>>>>> .merge_file_EPx84w
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_qSnlvl
-=======
->>>>>>> .merge_file_YA3Lsz
->>>>>>> .merge_file_AHouiI
 });
 
 /** @return array{string, string} */

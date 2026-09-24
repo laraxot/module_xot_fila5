@@ -78,15 +78,7 @@ $json = dddx(['key' => 'value']);
 
 **Note**:
 - Usa `Safe\json_encode()` per type safety
-<<<<<<< HEAD
 - Logga sempre via `Log::debug()`
-=======
-<<<<<<< HEAD
-- Logga sempre via `Log::debug()`
-=======
-- **NON usare Log::debug()** (policy no-log-debug). Usare Log::info() per eventi significativi.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Ritorna sempre string (non void)
 
 ---
@@ -258,15 +250,7 @@ function isRunningTestBench(): bool
 
 1. **Sempre type hints**: Parametri e return types espliciti
 2. **Usa Safe functions**: `Safe\json_encode()`, `Safe\realpath()`, ecc.
-<<<<<<< HEAD
 3. **Logging appropriato**: Usa `Log::debug()` per debug, non `dd()` in produzione
-=======
-<<<<<<< HEAD
-3. **Logging appropriato**: Usa `Log::debug()` per debug, non `dd()` in produzione
-=======
-3. **Logging appropriato**: NON usare Log::debug(). Usa Log::info/warning/error per eventi significativi. Per debug temporaneo usa dd() e rimuovi prima del commit.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 4. **Null safety**: Usa nullsafe operator `?->` quando appropriato
 5. **Documentazione PHPDoc**: Ogni funzione ha docblock completo
 
@@ -322,16 +306,5 @@ function authId(): string|int|null {
 ---
 
 **Last Updated**: 2025-01-02
-<<<<<<< HEAD
 **PHPStan Level**: 10 compliant
 **Status**: ✅ Production Ready
-=======
-<<<<<<< HEAD
-**PHPStan Level**: 10 compliant
-**Status**: ✅ Production Ready
-=======
-
-**PHPStan Level**: 10 compliant
-**Status**: ✅ Production Ready
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

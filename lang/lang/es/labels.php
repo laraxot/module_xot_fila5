@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_h9gDs7
 
-=======
-<<<<<<< .merge_file_4QfKcE
-=======
-
->>>>>>> .merge_file_R6ldXc
->>>>>>> .merge_file_9cc9j7
 return [
     'general' => [
         'all' => 'Todos',

@@ -1,33 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_VDqpMl
-=======
-<<<<<<< .merge_file_nPKIie
 
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_AF4Tpr
-=======
-<<<<<<< .merge_file_MnkXWd
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-
->>>>>>> .merge_file_WFDxm0
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_VDqpMl
-=======
->>>>>>> .merge_file_vYN5tD
->>>>>>> .merge_file_AF4Tpr
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;

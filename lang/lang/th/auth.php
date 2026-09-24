@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_81tyIT
 
-=======
-<<<<<<< .merge_file_buXgkJ
-=======
-
->>>>>>> .merge_file_coOPcm
->>>>>>> .merge_file_YIdobS
 return [
     'failed' => 'ข้อมูลที่ใช้ในการยืนยันตัวตนไม่ถูกต้อง',
     'general_error' => 'คุณไม่มีสิทธิ์ในการเข้าถึงหรือกระทำการ',

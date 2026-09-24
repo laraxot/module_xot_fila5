@@ -7,30 +7,7 @@ namespace Modules\Xot\Tests;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
 use Mockery;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-use Mockery;
-=======
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-use Mockery;
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 use Modules\Xot\Actions\File\FileAction;
 use Modules\Xot\Actions\RouteDynAction;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -41,40 +18,10 @@ use Modules\Xot\Filament\Builders\FilterBuilder;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 use Modules\Xot\Models\Cache;
 use PHPUnit\Framework\Assert;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionNamedType;
 use Symfony\Component\HttpFoundation\Response;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 
 use function Safe\file;
 use function Safe\file_get_contents;
@@ -82,28 +29,6 @@ use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-=======
-use Symfony\Component\HttpFoundation\Response;
-
->>>>>>> laraxot/dev
-=======
-use Symfony\Component\HttpFoundation\Response;
-
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 /**
  * Sweep esecutivo per floor coverage 50%: Filament, policy, action, enum, model methods.
  */
@@ -151,43 +76,11 @@ final class ModuleExecuteCoverage
      */
     public static function runFloor100(string $appRoot, string $moduleNamespace): void
     {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
         throw new \RuntimeException(
             'ModuleExecuteCoverage::runFloor100 is banned (story 5.26 / quality gate). '
             .'Write behavioral Pest tests with real assertions — coverage without intent is not poetry. '
             .'See Modules/Xot/docs/coverage.md § anti-pattern ModuleExecuteCoverage.'
         );
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-        throw new \RuntimeException('ModuleExecuteCoverage::runFloor100 is banned (story 5.26 / quality gate). Write behavioral Pest tests with real assertions — coverage without intent is not poetry. See Modules/Xot/docs/coverage.md § anti-pattern ModuleExecuteCoverage.');
->>>>>>> laraxot/dev
-=======
-        throw new \RuntimeException('ModuleExecuteCoverage::runFloor100 is banned (story 5.26 / quality gate). Write behavioral Pest tests with real assertions — coverage without intent is not poetry. See Modules/Xot/docs/coverage.md § anti-pattern ModuleExecuteCoverage.');
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
     }
 
     public static function testInvokeNonPublicMethods(string $appRoot, string $moduleNamespace, string $relativeDir): void
@@ -199,36 +92,7 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-            $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                 continue;
             }
@@ -239,29 +103,7 @@ final class ModuleExecuteCoverage
                 $instance = self::instantiate($class);
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             if ($instance === null) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            if ($instance === null) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($instance === null) {
-=======
-            if (null === $instance) {
->>>>>>> laraxot/dev
-=======
-            if (null === $instance) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 continue;
             }
 
@@ -269,36 +111,7 @@ final class ModuleExecuteCoverage
                 $instance->setRawAttributes(self::defaultModelAttributes());
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-=======
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PRIVATE) as $method) {
-=======
->>>>>>> .merge_file_VPfS2E
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
->>>>>>> laraxot/dev
-=======
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PRIVATE) as $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if ($method->getDeclaringClass()->getName() !== $class) {
                     continue;
                 }
@@ -322,39 +135,9 @@ final class ModuleExecuteCoverage
                     } else {
                         $method->invoke($instance, ...self::defaultArgsForMethod($method));
                     }
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -373,60 +156,13 @@ final class ModuleExecuteCoverage
 
             try {
                 $schema = $class::getFormSchemaOld();
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                 $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-=======
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 Assert::assertNotEmpty($schema);
                 if (method_exists($class, 'getPages')) {
                     Assert::assertNotEmpty($class::getPages());
                 }
             } catch (\Throwable) {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $executed++;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-=======
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -445,29 +181,7 @@ final class ModuleExecuteCoverage
         ];
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Filament') as $class) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                 continue;
             }
@@ -478,36 +192,7 @@ final class ModuleExecuteCoverage
                 }
 
                 try {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                     $refMethod = new ReflectionMethod($class, $method);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $refMethod = new ReflectionMethod($class, $method);
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                    $refMethod = new ReflectionMethod($class, $method);
-=======
-<<<<<<< HEAD
-                    $refMethod = new ReflectionMethod($class, $method);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $refMethod = new ReflectionMethod($class, $method);
-=======
->>>>>>> .merge_file_VPfS2E
-                    $refMethod = new \ReflectionMethod($class, $method);
->>>>>>> laraxot/dev
-=======
-                    $refMethod = new \ReflectionMethod($class, $method);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     if ($refMethod->isStatic()) {
                         if ($refMethod->getNumberOfRequiredParameters() > 0) {
                             continue;
@@ -517,118 +202,21 @@ final class ModuleExecuteCoverage
                         try {
                             $instance = $ref->newInstanceWithoutConstructor();
                         } catch (\Throwable) {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                             $instance = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                            $instance = new $class;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                            $instance = new $class;
-=======
-<<<<<<< HEAD
-                            $instance = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                            $instance = new $class;
-=======
->>>>>>> .merge_file_VPfS2E
-                            $instance = new $class();
->>>>>>> laraxot/dev
-=======
-                            $instance = new $class();
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                         }
                         if ($refMethod->getNumberOfRequiredParameters() > 0) {
                             continue;
                         }
                         $refMethod->invoke($instance);
                     }
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-=======
->>>>>>> .merge_file_VPfS2E
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
 
             try {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                $ref = new ReflectionClass($class);
-=======
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-                $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-                $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if ($ref->isAbstract()) {
                     continue;
                 }
@@ -636,64 +224,13 @@ final class ModuleExecuteCoverage
                 try {
                     $instance = $ref->newInstanceWithoutConstructor();
                 } catch (\Throwable) {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                     $instance = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $instance = new $class;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                    $instance = new $class;
-=======
-<<<<<<< HEAD
-                    $instance = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $instance = new $class;
-=======
->>>>>>> .merge_file_VPfS2E
-                    $instance = new $class();
->>>>>>> laraxot/dev
-=======
-                    $instance = new $class();
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             } catch (\Throwable) {
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
->>>>>>> laraxot/dev
-=======
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if ($method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -712,39 +249,9 @@ final class ModuleExecuteCoverage
 
                 try {
                     $method->invoke($instance, ...self::defaultArgsForMethod($method));
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -760,77 +267,17 @@ final class ModuleExecuteCoverage
             ColumnBuilder::class,
             FilterBuilder::class,
         ] as $class) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             $ref = new ReflectionClass($class);
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
-            $ref = new \ReflectionClass($class);
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_STATIC) as $method) {
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_STATIC) as $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if (! $method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
 
                 try {
                     $method->invoke(null, ...self::defaultArgsForMethod($method));
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -861,85 +308,17 @@ final class ModuleExecuteCoverage
                 }
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             $sourceFile = (new ReflectionClass($class))->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-<<<<<<< HEAD
-            $sourceFile = (new ReflectionClass($class))->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-<<<<<<< .merge_file_QJjIcy
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            $sourceFile = (new ReflectionClass($class))->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $sourceFile = (new ReflectionClass($class))->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-=======
->>>>>>> .merge_file_VPfS2E
-            $sourceFile = (new \ReflectionClass($class))->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && 1 === preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile))) {
->>>>>>> laraxot/dev
-=======
-            $sourceFile = (new \ReflectionClass($class))->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && 1 === preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile))) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 continue;
             }
 
             try {
                 $name = $class::getDefaultName();
                 $class::make($name);
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -972,49 +351,9 @@ final class ModuleExecuteCoverage
         ] as $callback) {
             try {
                 $callback();
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -1056,48 +395,9 @@ final class ModuleExecuteCoverage
                         true
                     ),
                 };
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-=======
->>>>>>> .merge_file_VPfS2E
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -1106,20 +406,6 @@ final class ModuleExecuteCoverage
 
     public static function testXotBaseMigrationHelpers(): void
     {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
         $migration = new class extends XotBaseMigration
         {
             protected ?string $model_class = Cache::class;
@@ -1131,109 +417,19 @@ final class ModuleExecuteCoverage
         $ref = new ReflectionClass($migration);
 
         foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-        $migration = new class extends XotBaseMigration {
-            protected ?string $model_class = Cache::class;
-
-            public function up(): void
-            {
-            }
-        };
-
-        $executed = 0;
-        $ref = new \ReflectionClass($migration);
-
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($method->isStatic() || str_starts_with($method->getName(), '__')) {
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
-=======
-<<<<<<< HEAD
-            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($method->getDeclaringClass()->getName() !== XotBaseMigration::class) {
-=======
-            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
->>>>>>> laraxot/dev
-=======
-            if (XotBaseMigration::class !== $method->getDeclaringClass()->getName()) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 continue;
             }
 
             try {
                 $method->invoke($migration, ...self::defaultArgsForMethod($method));
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -1251,36 +447,7 @@ final class ModuleExecuteCoverage
             }
 
             try {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $middleware = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $middleware = new $class;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                $middleware = new $class;
-=======
-<<<<<<< HEAD
-                $middleware = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $middleware = new $class;
-=======
->>>>>>> .merge_file_VPfS2E
-                $middleware = new $class();
->>>>>>> laraxot/dev
-=======
-                $middleware = new $class();
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 $request = Request::create('/test-'.uniqid('', true), 'GET', [], [], [], [
                     'HTTP_USER_AGENT' => 'PHPUnit',
                     'REMOTE_ADDR' => '127.0.0.'.random_int(1, 254),
@@ -1290,49 +457,9 @@ final class ModuleExecuteCoverage
                     Assert::fail("{$class}::handle() deve restituire una response HTTP");
                 }
                 Assert::assertSame(200, $response->getStatusCode());
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -1349,51 +476,12 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             $ref = new ReflectionClass($class);
             $sourceFile = $ref->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile)) {
                 $source = file_get_contents($sourceFile);
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
                     $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-            $ref = new \ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile)) {
-                $source = file_get_contents($sourceFile);
-                if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
-                    ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 
                     continue;
                 }
@@ -1406,49 +494,13 @@ final class ModuleExecuteCoverage
 
                 if (str_contains($class, 'OptimizeFilamentMemory')) {
                     // Covered by dedicated unit test with File facade mock (avoid full Modules scan).
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-=======
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 
                     continue;
                 }
 
                 if ($ref->hasMethod('handle')) {
                     $handle = $ref->getMethod('handle');
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     if ($handle->getNumberOfRequiredParameters() === 0) {
                         $handle->invoke($command);
                     }
@@ -1456,32 +508,6 @@ final class ModuleExecuteCoverage
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-                    if (0 === $handle->getNumberOfRequiredParameters()) {
-                        $handle->invoke($command);
-                    }
-                }
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -1500,83 +526,16 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             $ref = new ReflectionClass($class);
             $sourceFile = $ref->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile)) {
                 $source = file_get_contents($sourceFile);
                 if (preg_match('/^\s*dddx\s*\(/m', $source) === 1) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-            $ref = new \ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile)) {
-                $source = file_get_contents($sourceFile);
-                if (1 === preg_match('/^\s*dddx\s*\(/m', $source)) {
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     continue;
                 }
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_STATIC) as $method) {
-=======
->>>>>>> .merge_file_VPfS2E
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_STATIC) as $method) {
->>>>>>> laraxot/dev
-=======
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC | \ReflectionMethod::IS_STATIC) as $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if (! $method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -1587,47 +546,9 @@ final class ModuleExecuteCoverage
 
                 try {
                     $method->invoke(null, ...self::defaultArgsForMethod($method));
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -1650,36 +571,7 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $executed++;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            $executed++;
-=======
-<<<<<<< HEAD
-            $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-            ++$executed;
->>>>>>> laraxot/dev
-=======
-            ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             Assert::assertNotEmpty($class::cases());
 
             foreach ($class::cases() as $case) {
@@ -1705,36 +597,7 @@ final class ModuleExecuteCoverage
 
             foreach (['getSearchable', 'getFormSchema', 'toArray', 'getColumnNames', 'getColumnDefinitions'] as $staticMethod) {
                 if (method_exists($class, $staticMethod)) {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                     (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                    (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
-<<<<<<< HEAD
-                    (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
->>>>>>> .merge_file_VPfS2E
-                    (new \ReflectionMethod($class, $staticMethod))->invoke(null);
->>>>>>> laraxot/dev
-=======
-                    (new \ReflectionMethod($class, $staticMethod))->invoke(null);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -1750,36 +613,7 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $executed++;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            $executed++;
-=======
-<<<<<<< HEAD
-            $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-            ++$executed;
->>>>>>> laraxot/dev
-=======
-            ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             Assert::assertNotEmpty($class::cases());
 
             foreach ($class::cases() as $case) {
@@ -1799,29 +633,7 @@ final class ModuleExecuteCoverage
 
             foreach (['getSearchable', 'getFormSchema', 'toArray', 'getColumnNames', 'getColumnDefinitions'] as $staticMethod) {
                 if (method_exists($class, $staticMethod)) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    (new ReflectionMethod($class, $staticMethod))->invoke(null);
-=======
-                    (new \ReflectionMethod($class, $staticMethod))->invoke(null);
->>>>>>> laraxot/dev
-=======
-                    (new \ReflectionMethod($class, $staticMethod))->invoke(null);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -1842,20 +654,6 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             $ref = new ReflectionClass($class);
             if ($ref->isAbstract()) {
                 try {
@@ -1863,81 +661,17 @@ final class ModuleExecuteCoverage
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-            $ref = new \ReflectionClass($class);
-            if ($ref->isAbstract()) {
-                try {
-                    $class::query();
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
 
                 continue;
             }
 
             try {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 $model = new $class;
                 $model->setRawAttributes(self::defaultModelAttributes());
                 $executed++;
 
                 foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-                $model = new $class();
-                $model->setRawAttributes(self::defaultModelAttributes());
-                ++$executed;
-
-                foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     if ($method->isStatic()) {
                         continue;
                     }
@@ -1967,64 +701,13 @@ final class ModuleExecuteCoverage
 
                 try {
                     $query = $model::query();
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                     foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                    foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
-=======
-<<<<<<< HEAD
-                    foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
-=======
->>>>>>> .merge_file_VPfS2E
-                    foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
->>>>>>> laraxot/dev
-=======
-                    foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $scopeMethod) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                         if (! $scopeMethod->isStatic()) {
                             continue;
                         }
 
                         $scope = $scopeMethod->getName();
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                         if ($scope === 'query') {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                        if ($scope === 'query') {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                        if ($scope === 'query') {
-=======
-                        if ('query' === $scope) {
->>>>>>> laraxot/dev
-=======
-                        if ('query' === $scope) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                             continue;
                         }
 
@@ -2054,36 +737,7 @@ final class ModuleExecuteCoverage
                 } catch (\Throwable) {
                 }
             } catch (\Throwable) {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                $executed++;
-=======
-<<<<<<< HEAD
-                $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -2102,36 +756,7 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-            $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
                 continue;
             }
@@ -2142,49 +767,11 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($instance === null) {
                 continue;
             }
 
             $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-            if (null === $instance) {
-                continue;
-            }
-
-            ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
 
             foreach (['toArray', 'toArrayClean', 'toJson', 'toJsonClean', 'fromArray'] as $method) {
                 if (! method_exists($instance, $method)) {
@@ -2192,34 +779,8 @@ final class ModuleExecuteCoverage
                 }
 
                 try {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     $rm = new ReflectionMethod($instance, $method);
                     if ($method === 'fromArray') {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $rm = new ReflectionMethod($instance, $method);
-                    if ($method === 'fromArray') {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $rm = new ReflectionMethod($instance, $method);
-                    if ($method === 'fromArray') {
-=======
-                    $rm = new \ReflectionMethod($instance, $method);
-                    if ('fromArray' === $method) {
->>>>>>> laraxot/dev
-=======
-                    $rm = new \ReflectionMethod($instance, $method);
-                    if ('fromArray' === $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                         if ($rm->isStatic()) {
                             $class::fromArray([]);
                         }
@@ -2227,58 +788,14 @@ final class ModuleExecuteCoverage
                         continue;
                     }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                     if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
-                    if (0 === $rm->getNumberOfRequiredParameters()) {
->>>>>>> laraxot/dev
-=======
-                    if (0 === $rm->getNumberOfRequiredParameters()) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                         $rm->invoke($instance);
                     }
                 } catch (\Throwable) {
                 }
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
->>>>>>> laraxot/dev
-=======
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if ($method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -2306,48 +823,9 @@ final class ModuleExecuteCoverage
         $executed = 0;
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, $relativeDir) as $class) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             $ref = new ReflectionClass($class);
             $sourceFile = $ref->getFileName();
             if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-<<<<<<< .merge_file_QJjIcy
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile)) === 1) {
-=======
-=======
->>>>>>> .merge_file_VPfS2E
-            $ref = new \ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && 1 === preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile))) {
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
-            $sourceFile = $ref->getFileName();
-            if (is_string($sourceFile) && is_file($sourceFile) && 1 === preg_match('/^\s*dddx\s*\(/m', file_get_contents($sourceFile))) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 continue;
             }
 
@@ -2357,49 +835,11 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($instance === null) {
                 continue;
             }
 
             foreach ($ref->getMethods(ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-            if (null === $instance) {
-                continue;
-            }
-
-            foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if ($method->isStatic() || str_starts_with($method->getName(), '__')) {
                     continue;
                 }
@@ -2414,47 +854,9 @@ final class ModuleExecuteCoverage
 
                 try {
                     $method->invoke($instance, ...self::defaultArgsForMethod($method));
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
                     $executed++;
                 } catch (\Throwable) {
                     $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
             }
         }
@@ -2469,36 +871,7 @@ final class ModuleExecuteCoverage
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Transformers') as $class) {
             try {
                 $instance = self::instantiate($class);
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 if ($instance === null) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                if ($instance === null) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                if ($instance === null) {
-=======
-<<<<<<< HEAD
-                if ($instance === null) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                if ($instance === null) {
-=======
->>>>>>> .merge_file_VPfS2E
-                if (null === $instance) {
->>>>>>> laraxot/dev
-=======
-                if (null === $instance) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     continue;
                 }
 
@@ -2508,20 +881,6 @@ final class ModuleExecuteCoverage
                     }
 
                     try {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                         $ref = new ReflectionMethod($instance, $method);
                         if ($ref->getNumberOfRequiredParameters() === 0) {
                             $ref->invoke($instance);
@@ -2533,36 +892,6 @@ final class ModuleExecuteCoverage
                 }
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-                        $ref = new \ReflectionMethod($instance, $method);
-                        if (0 === $ref->getNumberOfRequiredParameters()) {
-                            $ref->invoke($instance);
-                        }
-                        ++$executed;
-                    } catch (\Throwable) {
-                        ++$executed;
-                    }
-                }
-            } catch (\Throwable) {
-                ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -2575,106 +904,21 @@ final class ModuleExecuteCoverage
 
         foreach (ModuleBusinessCoverage::discoverPhpClasses($appRoot, $moduleNamespace, 'Filament') as $class) {
             try {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                 $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $ref = new ReflectionClass($class);
-=======
-                $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-                $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait()) {
                     continue;
                 }
 
                 if (str_ends_with($class, 'Resource') && method_exists($class, 'getModel')) {
                     $class::getModel();
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                     $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                    $executed++;
-=======
-<<<<<<< HEAD
-                    $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                    $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                    ++$executed;
->>>>>>> laraxot/dev
-=======
-                    ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     foreach (['getFormSchema', 'getFormSchemaOld', 'getInfolistSchema', 'getPages', 'getRelations', 'getNavigationBadge', 'getModuleName', 'getFormColumns', 'extendTableCallback', 'extendFormCallback', 'getAttachmentsSchema'] as $staticMethod) {
                         if (! method_exists($class, $staticMethod)) {
                             continue;
                         }
                         try {
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
                             $rm = new ReflectionMethod($class, $staticMethod);
                             if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
-<<<<<<< HEAD
-                            $rm = new ReflectionMethod($class, $staticMethod);
-                            if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
-<<<<<<< .merge_file_QJjIcy
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-                            $rm = new ReflectionMethod($class, $staticMethod);
-                            if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                            $rm = new ReflectionMethod($class, $staticMethod);
-                            if ($rm->getNumberOfRequiredParameters() === 0) {
-=======
-=======
->>>>>>> .merge_file_VPfS2E
-                            $rm = new \ReflectionMethod($class, $staticMethod);
-                            if (0 === $rm->getNumberOfRequiredParameters()) {
->>>>>>> laraxot/dev
-=======
-                            $rm = new \ReflectionMethod($class, $staticMethod);
-                            if (0 === $rm->getNumberOfRequiredParameters()) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                                 $rm->invoke(null);
                             }
                         } catch (\Throwable) {
@@ -2684,20 +928,6 @@ final class ModuleExecuteCoverage
 
                 if (str_contains($class, '\\Schemas\\') && method_exists($class, 'getFormSchema')) {
                     $class::getFormSchema();
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     $executed++;
                 }
 
@@ -2706,52 +936,11 @@ final class ModuleExecuteCoverage
                     $table->getTableColumns();
                     $table->getTableFilters();
                     $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-                    ++$executed;
-                }
-
-                if (str_contains($class, '\\Tables\\') && is_subclass_of($class, XotBaseResourceTable::class)) {
-                    $table = new $class();
-                    $table->getTableColumns();
-                    $table->getTableFilters();
-                    ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 }
 
                 if (str_contains($class, '\\RelationManagers\\')) {
                     try {
                         $ref->newInstanceWithoutConstructor();
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                         $executed++;
                     } catch (\Throwable) {
                         $executed++;
@@ -2759,32 +948,6 @@ final class ModuleExecuteCoverage
                 }
             } catch (\Throwable) {
                 $executed++;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-                        ++$executed;
-                    } catch (\Throwable) {
-                        ++$executed;
-                    }
-                }
-            } catch (\Throwable) {
-                ++$executed;
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -2800,64 +963,13 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            $ref = new ReflectionClass($class);
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-            $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             if ($ref->isAbstract()) {
                 continue;
             }
 
             try {
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $model = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $model = new $class;
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-                $model = new $class;
-=======
-<<<<<<< HEAD
-                $model = new $class;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $model = new $class;
-=======
->>>>>>> .merge_file_VPfS2E
-                $model = new $class();
->>>>>>> laraxot/dev
-=======
-                $model = new $class();
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 $model->setRawAttributes(self::defaultModelAttributes());
                 $model->toArray();
                 $model->getFillable();
@@ -2865,49 +977,9 @@ final class ModuleExecuteCoverage
                 $model->getCasts();
                 $model->getTable();
                 $model->getKeyName();
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
                 $executed++;
             } catch (\Throwable) {
                 $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_GxJaVZ
->>>>>>> .merge_file_VPfS2E
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-                $executed++;
-            } catch (\Throwable) {
-                $executed++;
-=======
->>>>>>> .merge_file_VPfS2E
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> laraxot/dev
-=======
-                ++$executed;
-            } catch (\Throwable) {
-                ++$executed;
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             }
         }
 
@@ -2976,36 +1048,7 @@ final class ModuleExecuteCoverage
      */
     private static array $dddxMethodCache = [];
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
     private static function methodCallsDddx(ReflectionMethod $method): bool
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-    private static function methodCallsDddx(ReflectionMethod $method): bool
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-    private static function methodCallsDddx(ReflectionMethod $method): bool
-=======
-<<<<<<< HEAD
-    private static function methodCallsDddx(ReflectionMethod $method): bool
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-    private static function methodCallsDddx(ReflectionMethod $method): bool
-=======
->>>>>>> .merge_file_VPfS2E
-    private static function methodCallsDddx(\ReflectionMethod $method): bool
->>>>>>> laraxot/dev
-=======
-    private static function methodCallsDddx(\ReflectionMethod $method): bool
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
     {
         $cacheKey = $method->getDeclaringClass()->getName().'::'.$method->getName();
         if (isset(self::$dddxMethodCache[$cacheKey])) {
@@ -3013,29 +1056,7 @@ final class ModuleExecuteCoverage
         }
 
         $file = $method->getFileName();
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
         if ($file === false || ! is_readable($file)) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-        if ($file === false || ! is_readable($file)) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-        if ($file === false || ! is_readable($file)) {
-=======
-        if (false === $file || ! is_readable($file)) {
->>>>>>> laraxot/dev
-=======
-        if (false === $file || ! is_readable($file)) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             return self::$dddxMethodCache[$cacheKey] = false;
         }
 
@@ -3059,88 +1080,15 @@ final class ModuleExecuteCoverage
     }
 
     /**
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-     * @param  ReflectionClass<Model>  $ref
-<<<<<<< HEAD
-     * @return array<string, list<mixed>>
-=======
-     * @return array<string, list<int>>
->>>>>>> laraxot/dev
-     */
-    private static function discoverLocalScopes(ReflectionClass $ref): array
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
      * @param  ReflectionClass<Model>  $ref
      * @return array<string, list<int>>
      */
     private static function discoverLocalScopes(ReflectionClass $ref): array
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-     * @param  ReflectionClass<Model>  $ref
-     * @return array<string, list<mixed>>
-     */
-    private static function discoverLocalScopes(ReflectionClass $ref): array
-=======
-     * @param \ReflectionClass<Model> $ref
-     *                                     <<<<<<< HEAD
-     *
-     * @return array<string, list<mixed>>
-     *                                    =======
-     * @return array<string, list<int>>
-     *                                    >>>>>>> laraxot/dev
-     */
-    private static function discoverLocalScopes(\ReflectionClass $ref): array
->>>>>>> laraxot/dev
-=======
-     * @param \ReflectionClass<Model> $ref
-     *
-     * @return array<string, list<int>>
-     */
-    private static function discoverLocalScopes(\ReflectionClass $ref): array
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
     {
         $scopes = [];
 
         // Laravel scopes can be protected *or* public (module conventions vary).
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
         foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-        foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-        foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-<<<<<<< HEAD
-        foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-        foreach ($ref->getMethods(ReflectionMethod::IS_PROTECTED | ReflectionMethod::IS_PUBLIC) as $method) {
-=======
->>>>>>> .merge_file_VPfS2E
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
->>>>>>> laraxot/dev
-=======
-        foreach ($ref->getMethods(\ReflectionMethod::IS_PROTECTED | \ReflectionMethod::IS_PUBLIC) as $method) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             $name = $method->getName();
             if (! str_starts_with($name, 'scope') || $method->getDeclaringClass()->getName() !== $ref->getName()) {
                 continue;
@@ -3166,36 +1114,7 @@ final class ModuleExecuteCoverage
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-     * @return array<string, mixed>
-=======
      * @return array<string, int|string>
-=======
->>>>>>> .merge_file_VPfS2E
-     * @return array<string, int|string>
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-     * @return array<string, mixed>
-=======
-     * <<<<<<< HEAD.
-     *
-     * @return array<string, mixed>
-     *                                   =======
-     * @return array<string, int|string>
-     *                                   >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-     * @return array<string, int|string>
->>>>>>> .merge_file_Hd3RR5
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
->>>>>>> laraxot/dev
      */
     private static function defaultModelAttributes(): array
     {
@@ -3218,36 +1137,7 @@ final class ModuleExecuteCoverage
     /**
      * @return list<mixed>
      */
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
     private static function defaultArgsForMethod(ReflectionMethod $method): array
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-    private static function defaultArgsForMethod(ReflectionMethod $method): array
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-    private static function defaultArgsForMethod(ReflectionMethod $method): array
-=======
-<<<<<<< HEAD
-    private static function defaultArgsForMethod(ReflectionMethod $method): array
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-    private static function defaultArgsForMethod(ReflectionMethod $method): array
-=======
->>>>>>> .merge_file_VPfS2E
-    private static function defaultArgsForMethod(\ReflectionMethod $method): array
->>>>>>> laraxot/dev
-=======
-    private static function defaultArgsForMethod(\ReflectionMethod $method): array
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
     {
         $args = [];
 
@@ -3261,36 +1151,7 @@ final class ModuleExecuteCoverage
             $type = $param->getType();
             $name = $param->getName();
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
->>>>>>> .merge_file_VPfS2E
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
->>>>>>> laraxot/dev
-=======
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 $typeName = $type->getName();
                 if (enum_exists($typeName)) {
                     $cases = $typeName::cases();
@@ -3298,20 +1159,6 @@ final class ModuleExecuteCoverage
 
                     continue;
                 }
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 if (is_subclass_of($typeName, Model::class) || $typeName === Model::class) {
                     $modelRef = new ReflectionClass($typeName);
                     if ($modelRef->isAbstract()) {
@@ -3320,33 +1167,6 @@ final class ModuleExecuteCoverage
                         continue;
                     }
                     $model = new $typeName;
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> .merge_file_Hd3RR5
-                if (is_subclass_of($typeName, Model::class) || Model::class === $typeName) {
-                    $modelRef = new \ReflectionClass($typeName);
-                    if ($modelRef->isAbstract()) {
-                        $args[] = \Mockery::mock($typeName);
-
-                        continue;
-                    }
-                    $model = new $typeName();
-<<<<<<< .merge_file_QJjIcy
->>>>>>> laraxot/dev
-=======
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                     $model->setRawAttributes(self::defaultModelAttributes());
                     $args[] = $model;
 
@@ -3363,36 +1183,7 @@ final class ModuleExecuteCoverage
                 continue;
             }
 
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
             if ($type instanceof ReflectionNamedType) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-            if ($type instanceof ReflectionNamedType) {
-=======
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType) {
-=======
->>>>>>> .merge_file_VPfS2E
-            if ($type instanceof \ReflectionNamedType) {
->>>>>>> laraxot/dev
-=======
-            if ($type instanceof \ReflectionNamedType) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 $args[] = match ($type->getName()) {
                     'array' => [],
                     'string' => 'test',
@@ -3412,36 +1203,7 @@ final class ModuleExecuteCoverage
     }
 
     /**
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
      * @param  class-string  $class
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-     * @param  class-string  $class
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-     * @param  class-string  $class
-=======
-<<<<<<< HEAD
-     * @param  class-string  $class
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-     * @param  class-string  $class
-=======
->>>>>>> .merge_file_VPfS2E
-     * @param class-string $class
->>>>>>> laraxot/dev
-=======
-     * @param class-string $class
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
      */
     private static function instantiate(string $class, int $depth = 0): ?object
     {
@@ -3449,60 +1211,13 @@ final class ModuleExecuteCoverage
             return null;
         }
 
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
         $ref = new ReflectionClass($class);
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-        $ref = new ReflectionClass($class);
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-        $ref = new ReflectionClass($class);
-=======
-        $ref = new \ReflectionClass($class);
->>>>>>> laraxot/dev
-=======
-        $ref = new \ReflectionClass($class);
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
         if ($ref->isAbstract() || $ref->isInterface() || $ref->isTrait() || $ref->isEnum()) {
             return null;
         }
 
         $ctor = $ref->getConstructor();
-<<<<<<< .merge_file_LNnnYn
-<<<<<<< HEAD
         if ($ctor === null) {
-=======
-=======
-<<<<<<< .merge_file_GxJaVZ
-        if ($ctor === null) {
-=======
-<<<<<<< HEAD
-        if ($ctor === null) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-        if ($ctor === null) {
-=======
-        if (null === $ctor) {
->>>>>>> laraxot/dev
-=======
-        if (null === $ctor) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
             try {
                 return $ref->newInstance();
             } catch (\Throwable) {
@@ -3519,29 +1234,7 @@ final class ModuleExecuteCoverage
             }
 
             $type = $param->getType();
-<<<<<<< .merge_file_LNnnYn
-=======
-<<<<<<< .merge_file_GxJaVZ
             if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
->>>>>>> .merge_file_VPfS2E
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
-<<<<<<< .merge_file_QJjIcy
-<<<<<<< HEAD
-            if ($type instanceof ReflectionNamedType && ! $type->isBuiltin()) {
-=======
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
->>>>>>> laraxot/dev
-=======
-            if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
->>>>>>> .merge_file_Hd3RR5
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_LNnnYn
-=======
->>>>>>> .merge_file_tHlKSw
->>>>>>> .merge_file_VPfS2E
                 $dependencyClass = $type->getName();
                 $args[] = class_exists($dependencyClass) ? self::instantiate($dependencyClass, $depth + 1) : null;
 

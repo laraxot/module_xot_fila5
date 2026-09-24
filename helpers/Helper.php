@@ -13,19 +13,12 @@ use Illuminate\Testing\TestResponse;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Actions\File\FixPathAction;
-<<<<<<< HEAD
-use Webmozart\Assert\Assert;
-=======
->>>>>>> laraxot/dev
 
 use function Safe\define;
 use function Safe\preg_match;
 
-<<<<<<< HEAD
-=======
 use Webmozart\Assert\Assert;
 
->>>>>>> laraxot/dev
 if (! function_exists('isRunningTestBench')) {
     function isRunningTestBench(): bool
     {
@@ -78,41 +71,25 @@ if (! function_exists('inAdmin')) {
             return (bool) $params['in_admin'];
         }
 
-<<<<<<< HEAD
-        if (Request::segment(2) === 'admin') {
-=======
         if ('admin' === Request::segment(2)) {
->>>>>>> laraxot/dev
             return true;
         }
 
         $segments = Request::segments();
 
-<<<<<<< HEAD
-        return (is_countable($segments) ? count($segments) : 0) > 0 && $segments[0] === 'livewire' && session('in_admin') === true;
-=======
         return (is_countable($segments) ? count($segments) : 0) > 0 && 'livewire' === $segments[0] && true === session('in_admin');
->>>>>>> laraxot/dev
     }
 }
 
 if (! function_exists('params2ContainerItem')) {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>|null  $params
-=======
      * @param array<string, mixed>|null $params
      *
->>>>>>> laraxot/dev
      * @return array{0: array<string, mixed>, 1: array<string, mixed>}
      */
     function params2ContainerItem(?array $params = null): array
     {
-<<<<<<< HEAD
-        if ($params === null) {
-=======
         if (null === $params) {
->>>>>>> laraxot/dev
             $params = [];
             $route_current = Route::current();
             if ($route_current instanceof Illuminate\Routing\Route) {
@@ -156,11 +133,7 @@ if (! function_exists('authId')) {
         try {
             $id = Filament::auth()->id() ?? auth()->guard()->id();
 
-<<<<<<< HEAD
-            return $id === null ? null : (string) $id;
-=======
             return null === $id ? null : (string) $id;
->>>>>>> laraxot/dev
         } catch (Throwable $e) {
             return null;
         }
@@ -177,11 +150,7 @@ if (! function_exists('trans_string')) {
                 continue;
             }
 
-<<<<<<< HEAD
-            $safeReplace[$k] = (is_scalar($v) || $v === null) ? $v : SafeStringCastAction::cast($v);
-=======
             $safeReplace[$k] = (is_scalar($v) || null === $v) ? $v : SafeStringCastAction::cast($v);
->>>>>>> laraxot/dev
         }
 
         $result = __($key, $safeReplace, $locale);
@@ -219,12 +188,8 @@ if (! function_exists('actingAs')) {
 
 if (! function_exists('get')) {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $options
-=======
      * @param array<string, mixed> $options
      *
->>>>>>> laraxot/dev
      * @return TestResponse<Response>
      */
     function get(string $uri = '', array $options = []): TestResponse
@@ -235,14 +200,9 @@ if (! function_exists('get')) {
 
 if (! function_exists('post')) {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-     * @param  array<string, mixed>  $options
-=======
      * @param array<string, mixed> $data
      * @param array<string, mixed> $options
      *
->>>>>>> laraxot/dev
      * @return TestResponse<Response>
      */
     function post(string $uri, array $data = [], array $options = []): TestResponse
@@ -253,12 +213,8 @@ if (! function_exists('post')) {
 
 if (! function_exists('put')) {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
      * @param array<string, mixed> $data
      *
->>>>>>> laraxot/dev
      * @return TestResponse<Response>
      */
     function put(string $uri, array $data = []): TestResponse
@@ -269,12 +225,8 @@ if (! function_exists('put')) {
 
 if (! function_exists('patch')) {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
      * @param array<string, mixed> $data
      *
->>>>>>> laraxot/dev
      * @return TestResponse<Response>
      */
     function patch(string $uri, array $data = []): TestResponse
@@ -323,8 +275,6 @@ if (! function_exists('followingRedirects')) {
     }
 }
 
-<<<<<<< HEAD
-=======
 if (! function_exists('test')) {
     /** @param  string  $title  @param  \Closure  $callback  @return void */
     function test(string $title, Closure $callback): void
@@ -341,30 +291,19 @@ if (! function_exists('describe')) {
     }
 }
 
->>>>>>> laraxot/dev
 if (! function_exists('xotSeedModelOnce')) {
     /**
      * Idempotent entity seeder — PHPStan-safe factory chain via GetFactoryAction.
      *
-<<<<<<< HEAD
-     * @param  class-string<Model>  $modelClass
-     */
-    function xotSeedModelOnce(string $modelClass): void
-    {
-        (new GetFactoryAction)
-=======
      * @param class-string<Model> $modelClass
      */
     function xotSeedModelOnce(string $modelClass): void
     {
         (new GetFactoryAction())
->>>>>>> laraxot/dev
             ->execute($modelClass)
             ->createOne();
     }
 }
-<<<<<<< HEAD
-=======
 
 if (! function_exists('merge_translation_files')) {
     /**
@@ -387,4 +326,3 @@ if (! function_exists('merge_translation_files')) {
         return $result;
     }
 }
->>>>>>> laraxot/dev

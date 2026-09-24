@@ -1,14 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_1pLcVP
 
-=======
-<<<<<<< .merge_file_EyyFPQ
-=======
-
->>>>>>> .merge_file_tHI91n
->>>>>>> .merge_file_pTU85c
 return [
     'title' => 'تنصيب Laravel',
     'next' => 'متابعة',

@@ -15,9 +15,6 @@ use Filament\Infolists\Components\TextEntry;
  */
 class XotBasePlaceholder extends TextEntry
 {
-<<<<<<< HEAD
-    // Logica comune futura per i placeholder Xot
-=======
     /**
      * Compatibilità con l'API di `Filament\Forms\Components\Placeholder`:
      * le sottoclassi esistenti usano `->content()`, che ora imposta lo `state()`.
@@ -33,5 +30,4 @@ class XotBasePlaceholder extends TextEntry
     {
         return $this->getState();
     }
->>>>>>> laraxot/dev
 }

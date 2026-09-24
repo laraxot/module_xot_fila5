@@ -10,11 +10,6 @@ use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
-use Illuminate\Support\Arr;
-use Modules\Xot\Datas\EnvData;
-
-=======
 use Filament\Schemas\Schema;
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
@@ -22,7 +17,6 @@ use Modules\Xot\Datas\EnvData;
 /**
  * @property Schema $form
  */
->>>>>>> laraxot/dev
 class EnvWidget extends XotBaseSchemaWidget
 {
     /** @var array<string, mixed>|null */
@@ -57,14 +51,11 @@ class EnvWidget extends XotBaseSchemaWidget
         $this->form->fill($this->data);
     }
 
-<<<<<<< HEAD
-=======
     public function schema(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema())->columns(1)->statePath('data');
     }
 
->>>>>>> laraxot/dev
     public function submit(): void
     {
         if (! is_array($this->data)) {
@@ -135,11 +126,7 @@ class EnvWidget extends XotBaseSchemaWidget
             'mail_from_name' => TextInput::make('mail_from_name'),
         ];
         /** @var array<string, Component> $selected */
-<<<<<<< HEAD
-        $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
-=======
         $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
->>>>>>> laraxot/dev
 
         $grouped = [];
         $components = [];
@@ -152,11 +139,7 @@ class EnvWidget extends XotBaseSchemaWidget
                     $grouped[$key] = true;
                 }
             }
-<<<<<<< HEAD
-            if ($fields === []) {
-=======
             if ([] === $fields) {
->>>>>>> laraxot/dev
                 continue;
             }
             $components[] = Section::make($label)->schema($fields);
