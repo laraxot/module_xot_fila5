@@ -11,7 +11,6 @@ namespace Modules\Xot\Tests\Unit\Exports;
 class ResourceWithXlsFieldsStub
 {
     /**
-<<<<<<< HEAD
      * <<<<<<< .merge_file_JCJjsQ.
      *
      * @param array<array-key, mixed> $data
@@ -30,9 +29,6 @@ class ResourceWithXlsFieldsStub
      *
      * >>>>>>> .merge_file_kG4HSa
      *
-=======
-     * @param  array<array-key, mixed>  $data
->>>>>>> 9e11d472 (Fix merge conflicts in PHPDoc comments across multiple action classes and contracts, ensuring consistent parameter annotations and removing redundant lines.)
      * @return array<int|string, string>
      */
     public static function getXlsFields(array $data): array
