@@ -16,6 +16,7 @@ class GuessPivotFullClassAction
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
+<<<<<<< .merge_file_Mj0ptI
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string|class-string<Model>  $related  The related model class name
@@ -38,6 +39,10 @@ class GuessPivotFullClassAction
      * @param string|class-string<Model> $related The related model class name
      * @param string|class-string<Model> $class   The class
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string|class-string<Model>  $related  The related model class name
+     * @param  string|class-string<Model>  $class  The class
+>>>>>>> .merge_file_WUEfCw
      */
     public function execute(string $pivot_name, string $related, string $class): string
     {
@@ -68,6 +73,7 @@ class GuessPivotFullClassAction
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
+<<<<<<< .merge_file_Mj0ptI
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($parent_class === false) {
@@ -85,6 +91,9 @@ class GuessPivotFullClassAction
 =======
         if (false === $parent_class) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($parent_class === false) {
+>>>>>>> .merge_file_WUEfCw
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

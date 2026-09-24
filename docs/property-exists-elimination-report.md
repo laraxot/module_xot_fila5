@@ -52,6 +52,7 @@ $user->hasAttribute('name');  // true
 | **Tenant** | 1 | 9 | ~3 min |
 | **Lang** | 1 | 2 | ~1 min |
 | **DbForge** | 1 | 1 | ~1 min |
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 | **Quaeris** | 1 | 1 | ~2 min |
@@ -66,6 +67,9 @@ $user->hasAttribute('name');  // true
 =======
 | **Quaeris** | 1 | 1 | ~2 min |
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+| **Quaeris** | 1 | 1 | ~2 min |
+>>>>>>> .merge_file_HWecC2
 | **Xot** | 0 | 0 (solo in commenti) | ~1 min |
 | **TOTALE** | **28** | **72** | **~36 min** |
 
@@ -80,6 +84,7 @@ $user->hasAttribute('name');  // true
 ✅ Tenant:  0 errori (già perfetto)
 ✅ Lang:    0 errori
 ✅ DbForge: 0 errori
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 ✅ Quaeris: 0 errori su file modificato
@@ -94,6 +99,9 @@ $user->hasAttribute('name');  // true
 =======
 ✅ Quaeris: 0 errori su file modificato
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+✅ Quaeris: 0 errori su file modificato
+>>>>>>> .merge_file_HWecC2
 ⚠️  Xot:     4 errori pre-esistenti (non property_exists)
 ```
 
@@ -260,6 +268,7 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 ### DbForge (1 file)
 1. `Console/Commands/SearchTextInDbCommand.php` - dynamic table property ✅
 
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Quaeris (1 file)
@@ -274,6 +283,9 @@ if (isset($graph->yaxis) && is_object($graph->yaxis)) {
 =======
 ### Quaeris (1 file)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+### Quaeris (1 file)
+>>>>>>> .merge_file_HWecC2
 1. `Filament/Resources/.../ViewQuestionChartVisualizationWidget.php` - livewire property ✅
 
 ---
@@ -341,6 +353,7 @@ if (isset($media->file_name)) {
 | **Tenant** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **Lang** | ✅ 0 errori | ⚠️ OK | ✅ OK |
 | **DbForge** | ✅ 0 errori | ⚠️ OK | ✅ OK |
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 | **Quaeris** | ⚠️ 64 errori* | - | - |
@@ -355,6 +368,9 @@ if (isset($media->file_name)) {
 =======
 | **Quaeris** | ⚠️ 64 errori* | - | - |
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+| **Quaeris** | ⚠️ 64 errori* | - | - |
+>>>>>>> .merge_file_HWecC2
 | **Xot** | ⚠️ 4 errori* | - | - |
 
 \* Errori pre-esistenti non correlati a property_exists
@@ -606,6 +622,7 @@ Ogni modulo ha ora:
 
 ### 1. Moduli Rimanenti con Errori
 
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Quaeris** (64 errori):
@@ -620,6 +637,9 @@ Ogni modulo ha ora:
 =======
 **Quaeris** (64 errori):
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Quaeris** (64 errori):
+>>>>>>> .merge_file_HWecC2
 - Errori pre-esistenti non correlati a property_exists
 - Richiedono intervento separato per type hints
 - Priorità media
@@ -649,6 +669,7 @@ Implementare:
 ## 🔗 Collegamenti
 
 **Documentazione Root**:
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -656,6 +677,8 @@ Implementare:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HWecC2
 - [../../../docs/code-quality/eloquent-magic-properties.md](../../../docs/code-quality/eloquent-magic-properties.md)
 - [../../../docs/phpstan/level-10-guide.md](../../../docs/phpstan/level-10-guide.md)
 
@@ -663,6 +686,7 @@ Implementare:
 - [User/docs/phpstan-level10-fixes.md](../../User/docs/phpstan-level10-fixes.md)
 - [Tenant/docs/phpstan-level10-fixes.md](../../Tenant/docs/phpstan-level10-fixes.md)
 - [Notify/docs/eloquent-properties-best-practices.md](../../Notify/docs/eloquent-properties-best-practices.md)
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -681,6 +705,8 @@ Implementare:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_HWecC2
 
 **References Esterne**:
 - [Laravel Eloquent Properties](https://laravel.com/docs/11.x/eloquent#accessing-attributes)
@@ -698,6 +724,7 @@ Implementare:
 ---
 
 > "L'attributo che non esiste, esiste. Usa isset() per vedere l'essenza, non il corpo."
+<<<<<<< .merge_file_nNIoGS
 <<<<<<< HEAD
 <<<<<<< HEAD
 > — Zen degli Attributi Magici Eloquent 🙏
@@ -711,3 +738,6 @@ Implementare:
 =======
 > — Zen degli Attributi Magici Eloquent 🙏
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+> — Zen degli Attributi Magici Eloquent 🙏
+>>>>>>> .merge_file_HWecC2

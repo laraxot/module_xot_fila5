@@ -47,6 +47,7 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
+<<<<<<< .merge_file_iCO1rQ
 <<<<<<< HEAD
 <<<<<<< .merge_file_kmFoKq
     public function getFormSchema(): array
@@ -60,6 +61,9 @@ class MyResource extends XotBaseResource
 =======
     public function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_FPEuX7
     {
         return [
             // Form components
@@ -264,6 +268,7 @@ class QuestionChartResource extends XotBaseResource
 {
     protected static ?string $model = QuestionChart::class;
 
+<<<<<<< .merge_file_iCO1rQ
 <<<<<<< HEAD
 <<<<<<< .merge_file_kmFoKq
     public function getFormSchema(): array
@@ -277,6 +282,9 @@ class QuestionChartResource extends XotBaseResource
 =======
     public function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_FPEuX7
     {
         return [
             // Form components

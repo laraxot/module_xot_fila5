@@ -436,6 +436,7 @@ public function processData(): void
 
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
+<<<<<<< .merge_file_VlCXqw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -447,6 +448,8 @@ public function processData(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_quyEYq
 - [Testing Guidelines](./testing-guidelines.md)
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
@@ -888,6 +891,7 @@ public function processData(): void
 
 - [Code Quality Standards](./CODE_QUALITY_STANDARDS.md)
 - [Common Anti-Patterns](./COMMON_ANTI_PATTERNS.md)
+<<<<<<< .merge_file_VlCXqw
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Testing Guidelines](./testing-guidelines.md)
@@ -911,3 +915,8 @@ This document provides comprehensive performance guidelines for maintaining opti
 
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Testing Guidelines](./testing-guidelines.md)
+
+This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
+>>>>>>> .merge_file_quyEYq

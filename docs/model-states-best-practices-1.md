@@ -10,6 +10,7 @@
   - [ ] La documentazione delle transizioni specifica i parametri richiesti
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
+<<<<<<< .merge_file_x1YRvs
 <<<<<<< HEAD
 <<<<<<< HEAD
   - [README.md centrale](../../../docs/readme.md)
@@ -23,3 +24,6 @@
 =======
   - [README.md centrale](../../../docs/README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+  - [README.md centrale](../../../docs/readme.md)
+>>>>>>> .merge_file_wxc9Fe

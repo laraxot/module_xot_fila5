@@ -81,6 +81,7 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
   direttamente (vanno a capo su più righe, non esce nulla dallo schermo).
 - AC5: PHPStan pulito sui file toccati.
 
+<<<<<<< .merge_file_aLvb26
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -104,6 +105,8 @@ questo pannello, un `.fi-ac` di Filament non va a capo di default.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_1h7YmC
 ## Ripristino 2026-09-17
 
 Scoperto lo stesso giorno del ripristino del bottone Passport "Nuove
@@ -126,6 +129,7 @@ traduzione mancanti. Verificato via reflection su `getHeaderActions()`:
 raggiungibile via `asset()`. PHPStan pulito. Committato questa volta
 nel repository reale del modulo.
 
+<<<<<<< .merge_file_aLvb26
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -148,11 +152,14 @@ nel repository reale del modulo.
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1h7YmC
 ## Tasks/Subtasks
 
 - [x] Task 1: nuova `ExecuteComposerDumpAutoloadAction` (comando fisso,
       nessun input utente, stesso pattern di `ExecuteArtisanCommandAction`)
 - [x] Task 2: nuovo pulsante header "Composer Dump Autoload" su
+<<<<<<< .merge_file_aLvb26
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -193,6 +200,8 @@ nel repository reale del modulo.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_1h7YmC
       `ArtisanCommandsManager.php`, con `requiresConfirmation()` —
       **ripristinato 2026-09-17**, vedi sopra
 - [x] Task 3: CSS statico (`public_html/assets/xot/header-actions-wrap.css`)
@@ -225,6 +234,7 @@ svuotata `mail_templates` (40→0 righe, dati sorgente intatti in
 (`survey-pdf-48-invito`) e Vivaservizi (`survey-pdf-44-invito`) tornano
 completi con lo stesso contenuto reale di prima. PHPStan pulito.
 
+<<<<<<< .merge_file_aLvb26
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -247,6 +257,8 @@ completi con lo stesso contenuto reale di prima. PHPStan pulito.
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_1h7YmC
 ## Dev Notes
 
 - Scoperto in questa story: l'account admin non aveva il ruolo

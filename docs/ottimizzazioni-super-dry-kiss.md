@@ -58,6 +58,7 @@ Documento completo di ottimizzazioni per il modulo Xot seguendo i principi **SUP
 - `test.txt` (0 bytes, inutile)
 - `CHANGELOG.md.backup` (backup non necessario)
 - `phpstan-baseline.neon` (0 bytes, inutile)
+<<<<<<< .merge_file_enNdVk
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
@@ -71,6 +72,9 @@ Documento completo di ottimizzazioni per il modulo Xot seguendo i principi **SUP
 =======
 - `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `_xot.code-workspace` e `_activity.code-workspace` (workspace specifici)
+>>>>>>> .merge_file_piBdgY
 
 **Soluzione SUPER DRY + KISS:**
 1. **Eliminare** file vuoti e backup
@@ -303,6 +307,7 @@ class ExampleService implements ServiceInterface
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_enNdVk
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -310,10 +315,13 @@ class ExampleService implements ServiceInterface
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_piBdgY
 - [Documentazione Core](../../../docs/core/)
 - [Best Practices Filament](../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
+<<<<<<< .merge_file_enNdVk
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -326,12 +334,15 @@ class ExampleService implements ServiceInterface
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_piBdgY
 
 ---
 
 **Responsabile:** Team Core
 **Data:** 2025-01-XX
 **Stato:** In Analisi
+<<<<<<< .merge_file_enNdVk
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Priorità:** ALTA
@@ -345,3 +356,6 @@ class ExampleService implements ServiceInterface
 =======
 **Priorità:** ALTA
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Priorità:** ALTA
+>>>>>>> .merge_file_piBdgY

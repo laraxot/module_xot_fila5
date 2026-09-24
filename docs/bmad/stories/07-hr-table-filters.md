@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_qYwixu
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Y2v6yo
 # BMAD Story 07 — HR: compatibilità getTableFilters()
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

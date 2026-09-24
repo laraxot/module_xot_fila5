@@ -412,6 +412,7 @@ php artisan xot:test-framework
 
 ## Collegamenti
 
+<<<<<<< .merge_file_G2t4Vr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -419,11 +420,14 @@ php artisan xot:test-framework
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zXXruq
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< .merge_file_G2t4Vr
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -437,3 +441,5 @@ php artisan xot:test-framework
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zXXruq

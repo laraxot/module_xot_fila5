@@ -256,6 +256,7 @@ php artisan test --filter=[NomeModulo]
 
 ## Changelog
 
+<<<<<<< .merge_file_usRfox
 <<<<<<< HEAD
 <<<<<<< HEAD
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
@@ -273,6 +274,9 @@ Consultare il [CHANGELOG](CHANGELOG.md) per informazioni sulle modifiche recenti
 =======
 Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Consultare il [CHANGELOG](changelog.md) per informazioni sulle modifiche recenti.
+>>>>>>> .merge_file_OnUEYc
 
 ## Licenza
 

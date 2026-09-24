@@ -18,6 +18,7 @@ class CountAction
     /**
      * Execute the count action for the given model class.
      *
+<<<<<<< .merge_file_kOPN9n
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -68,6 +69,12 @@ class CountAction
      *
      * @return int The total count of records
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  class-string<Model>  $modelClass  The fully qualified model class name
+     * @return int The total count of records
+     *
+     * @throws \InvalidArgumentException If model class is invalid or not found
+>>>>>>> .merge_file_i1jstz
      */
     public function execute(string $modelClass): int
     {

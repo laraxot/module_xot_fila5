@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_sTRNpe
 # Performance Guidelines - Xot Module
 
 ## 🎯 Purpose
@@ -466,3 +467,5 @@ public function processData(): void
 This document provides comprehensive performance guidelines for maintaining optimal performance across the Xot module and modules that extend it.
 
 
+=======
+>>>>>>> .merge_file_I7dUnD

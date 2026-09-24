@@ -1,6 +1,7 @@
 # Provider Common Mistakes - Comprehensive Guide
 
 **Last Updated**: 2025-12-16
+<<<<<<< .merge_file_MKqyGf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dbtnXG
 **Purpose**: Document all common mistakes when creating ServiceProviders in Laraxot modules
 
 ## 🚨 Critical Mistakes (Fix Immediately)
@@ -338,6 +341,7 @@ Before committing ANY ServiceProvider:
 
 - [ServiceProvider Minimal Structure](./serviceprovider-minimal-structure.md) - Official guide
 - [Provider Errors - Lessons Learned](../../Meetup/docs/provider-errors-lessons-learned.md) - Real-world examples
+<<<<<<< .merge_file_MKqyGf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -348,6 +352,8 @@ Before committing ANY ServiceProvider:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dbtnXG
 - [XotBaseServiceProvider Source](../../Xot/app/Providers/XotBaseServiceProvider.php) - See what parent does
 - [XotBase Extension Rules](./xotbase-extension-rules.md) - General XotBase patterns
 
@@ -372,6 +378,7 @@ grep -r "module_dir\|module_ns" Modules/YourModule/app/Providers/
 
 **Remember**: The best ServiceProvider is the one with the least code that still works perfectly.
 
+<<<<<<< .merge_file_MKqyGf
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
@@ -385,3 +392,6 @@ grep -r "module_dir\|module_ns" Modules/YourModule/app/Providers/
 =======
 **Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Philosophy**: "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
+>>>>>>> .merge_file_dbtnXG

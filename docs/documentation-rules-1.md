@@ -6,15 +6,19 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_LF4p2l
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./NAMING_CONVENTIONS.md) - Regole di naming per campi, classi e directory
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 =======
 =======
@@ -30,6 +34,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 
 ## Validazione dei Collegamenti
 
@@ -38,6 +44,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
@@ -55,12 +62,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> .merge_file_LF4p2l
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -68,6 +80,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -83,6 +97,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,6 +121,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 ```
 
 ### Checklist di Validazione
@@ -115,6 +132,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativi
 
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
@@ -128,6 +146,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> .merge_file_LF4p2l
 
 ## Validazione dei Collegamenti
 
@@ -136,6 +157,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
@@ -153,12 +175,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> .merge_file_LF4p2l
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -166,6 +193,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -181,6 +210,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -204,6 +234,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 ```
 
 ### Checklist di Validazione
@@ -213,6 +245,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - [ ] Usa la notazione corretta per i percorsi relativi
 - [ ] I percorsi sono compatibili con diversi sistemi operativib6f667c (.)
 
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
@@ -226,6 +259,9 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - [Prompt di Documentazione](./prompts/DOCUMENTATION_PROMPTS.md) - Regole e best practices per i prompt
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Prompt di Documentazione](documentation_prompts.md) - Regole e best practices per i prompt
+>>>>>>> .merge_file_LF4p2l
 
 ## Validazione dei Collegamenti
 
@@ -234,6 +270,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - MAI includere il nome del progetto nei percorsi
 - MAI usare percorsi che iniziano con `documento.md)
 [Documento in Sottodirectory](./sottodirectory/documento.md)
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
@@ -251,12 +288,17 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
 [Documento in Root](../../../docs/documento.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+[Documento in Modulo Altro](../../AltroModulo/docs/documento.md)
+[Documento in Root](../../../docs/documento.md)
+>>>>>>> .merge_file_LF4p2l
 ```
 
 ### Formato Non Corretto
 ```markdown
 
 # Collegamenti Non Corretti
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -264,6 +306,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 [Documento Correlato](../Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
@@ -279,6 +323,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 [Documento Correlato](Modules/Xot/docs/documento.md)
 [Documento in Sottodirectory](https://github.com/<nome progetto>/progetto/blob/main/docs/documento.md)
 [Documento in Modulo Altro](C:\progetti\<nome progetto>\laravel\Modules\Xot\docs\documento.md)
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -302,6 +347,8 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LF4p2l
 ```
 
 ### Checklist di Validazione
@@ -395,6 +442,7 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 - La documentazione è una parte fondamentale del progetto
 - Una buona documentazione riduce il tempo di onboarding
 - La documentazione deve evolversi insieme al codice
+<<<<<<< .merge_file_48RDjm
 <<<<<<< HEAD
 <<<<<<< HEAD
 - I collegamenti bidirezionali sono essenziali per la navigabilità
@@ -408,3 +456,6 @@ Questo documento descrive le regole fondamentali per la creazione e la manutenzi
 =======
 - I collegamenti bidirezionali sono essenziali per la navigabilità
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- I collegamenti bidirezionali sono essenziali per la navigabilità
+>>>>>>> .merge_file_LF4p2l

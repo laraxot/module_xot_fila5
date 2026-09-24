@@ -34,6 +34,7 @@ abstract class XotBaseInfolistWidget extends XotBaseWidget implements HasSchemas
     use InteractsWithSchemas;
 
     /** @var view-string */
+<<<<<<< .merge_file_75OTA4
 =======
  */
 abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchemas
@@ -43,6 +44,10 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
 
 >>>>>>> 8d801bbe (Check & fix styling)
     protected string $view = 'xot::filament.widgets.infolist';
+=======
+    /** @var view-string */
+    protected string $view;
+>>>>>>> .merge_file_d7pGUd
 
     protected int|string|array $columnSpan = 'full';
 
@@ -65,6 +70,7 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
     public function infolist(Schema $schema): Schema
     {
         $record = $this->getInfolistRecord();
+<<<<<<< .merge_file_75OTA4
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($record !== null) {
@@ -74,6 +80,9 @@ abstract class XotBaseInfolistWidget extends FilamentWidget implements HasSchema
 =======
         if (null !== $record) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($record !== null) {
+>>>>>>> .merge_file_d7pGUd
             $schema->record($record);
         }
 

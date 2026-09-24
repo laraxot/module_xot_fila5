@@ -156,6 +156,7 @@ describe('Module Business Logic', function (): void {
 
         Assert::assertTrue((bool) $enabledModule->enabled);
         Assert::assertFalse((bool) $disabledModule->enabled);
+<<<<<<< .merge_file_Zmkx5v
 <<<<<<< HEAD
 <<<<<<< HEAD
         Assert::assertTrue($enabledModule->enabled === true);
@@ -168,6 +169,10 @@ describe('Module Business Logic', function (): void {
         Assert::assertTrue(true === $enabledModule->enabled);
         Assert::assertTrue(false === $disabledModule->enabled);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        Assert::assertTrue($enabledModule->enabled === true);
+        Assert::assertTrue($disabledModule->enabled === false);
+>>>>>>> .merge_file_xc7WSQ
     });
 
     test('can manage module metadata', function (): void {

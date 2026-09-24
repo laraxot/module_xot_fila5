@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_UYaun4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,8 @@
 =======
 >>>>>>> .merge_file_1S7iHZ
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_rszXHK
 # Analisi Completa del Codice - Sistema Laraxot
 
 ## Panoramica
@@ -193,25 +196,7 @@ try {
 
 ```php
 // ContactResource.php
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_j17dva
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_1S7iHZ
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('first_name'),
@@ -220,25 +205,7 @@ public static function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_j17dva
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-public function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-=======
 public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> .merge_file_1S7iHZ
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),
@@ -334,24 +301,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_j17dva
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
-<<<<<<< HEAD
-=======
-=======
     public static function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> .merge_file_1S7iHZ
->>>>>>> laraxot/dev
     {
         return [
             TextInput::make('first_name'),
@@ -484,6 +434,7 @@ return [
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_UYaun4
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
 =======
@@ -1423,6 +1374,8 @@ return [
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_rszXHK
 - [Architettura Moduli](./ARCHITECTURE.md)
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
@@ -1444,18 +1397,11 @@ return [
 
 ---
 
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
-=======
-<<<<<<< HEAD
->>>>>>> f7400a95 (Story 3.1: Add explicit @var type hints to array variables in HasXotTable.php)
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 **Data Analisi**: 2025-01-06  
 **Analista**: AI Code Review System  
 **Priorità**: CRITICA - Richiede intervento immediato  
 **Stima Effort**: 40-60 ore di refactoring
+<<<<<<< .merge_file_UYaun4
 <<<<<<< HEAD
 =======
 >>>>>>> 7f6cf6be (.)
@@ -1474,3 +1420,5 @@ return [
 
 See canonical documentation: ../../../Themes/docs/shared-components/COMPREHENSIVE_CODE_ANALYSIS.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rszXHK

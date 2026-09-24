@@ -14,6 +14,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 /**
  * Model Extra.
  *
+<<<<<<< .merge_file_nwwpPd
 <<<<<<< HEAD
  * <<<<<<< HEAD
  *
@@ -37,18 +38,27 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @property int                                               $id
  * @property int|null                                          $model_id
  * @property string|null                                       $model_type
+=======
+ * @property int $id
+ * @property int|null $model_id
+ * @property string|null $model_type
+>>>>>>> .merge_file_o2Am4J
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  *
  * @method static Builder|BaseModel disableCache()
- * @method static ExtraFactory      factory($count = null, $state = [])
- * @method static Builder|Extra     newModelQuery()
- * @method static Builder|Extra     newQuery()
- * @method static Builder|Extra     query()
+ * @method static ExtraFactory factory($count = null, $state = [])
+ * @method static Builder|Extra newModelQuery()
+ * @method static Builder|Extra newQuery()
+ * @method static Builder|Extra query()
  * @method static Builder|BaseModel withCacheCooldownSeconds(?int $seconds = null)
+<<<<<<< .merge_file_nwwpPd
  * @method static Builder|Extra     withExtraAttributes()
  *                                                                                 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+ * @method static Builder|Extra withExtraAttributes()
+>>>>>>> .merge_file_o2Am4J
  *
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

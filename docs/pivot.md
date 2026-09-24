@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_nCFwvE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@
 =======
 >>>>>>> .merge_file_OpyDQV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zj15e3
 ---
 title: 'Pivot'
 module: Xot
@@ -31,6 +34,7 @@ updated: 2026-08-24
 https://github.com/larastan/larastan/issues/515
 
 **
+<<<<<<< .merge_file_nCFwvE
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_LmHx8n
@@ -50,6 +54,8 @@ https://github.com/larastan/larastan/issues/515
 
 /**
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zj15e3
  * @extends JsonResource<\App\User>
 */
 class UserResource extends JsonResource
@@ -67,6 +73,7 @@ class UserResource extends JsonResource
       }
 }
 
+<<<<<<< .merge_file_nCFwvE
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -103,6 +110,8 @@ paginate - Builder
 =======
 >>>>>>> .merge_file_OpyDQV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_zj15e3
 ## Appendice — contenuto migrato
 
 ---
@@ -139,14 +148,6 @@ class UserResource extends JsonResource
          ];
       }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_LmHx8n
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
-=======
->>>>>>> .merge_file_OpyDQV
 
 ### Note raw residue (dump originale)
 
@@ -158,32 +159,15 @@ getRelationValue("pivot")
 $dpia = request()->route('dpias');
 $dpia = app('request')->route('dpias');
 
-<<<<<<< .merge_file_LmHx8n
-=======
-=======
- //return $this->pivot->time_to_live;  // This is the line 45
-
-getRelationValue("pivot")
-
-
-
-$dpia = request()->route('dpias');
-$dpia = app('request')->route('dpias');
-///////////////////////
->>>>>>> laraxot/dev
->>>>>>> .merge_file_OpyDQV
 /**
  * @property int $id
  */
 class MyCustomModel extends Model {}
-<<<<<<< .merge_file_LmHx8n
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_OpyDQV
 ```
 
 - `getModel` - Builder
 - `paginate` - Builder
+<<<<<<< .merge_file_nCFwvE
 <<<<<<< .merge_file_LmHx8n
 =======
 =======
@@ -197,3 +181,5 @@ paginate - Builder
 =======
 paginate - Builder
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zj15e3

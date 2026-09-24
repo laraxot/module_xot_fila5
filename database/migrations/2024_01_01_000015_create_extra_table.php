@@ -12,6 +12,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateExtraTable.
  */
+<<<<<<< .merge_file_9lSJfi
 <<<<<<< HEAD
 <<<<<<< HEAD
 return new class extends XotBaseMigration
@@ -22,6 +23,10 @@ return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_hB2DMy
     /**
      * Run the migrations.
      */
@@ -48,6 +53,7 @@ return new class extends XotBaseMigration {
             //    $table->unique(['model_id', 'model_type'], 'morph_unique');
             // }
 
+<<<<<<< .merge_file_9lSJfi
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
@@ -57,6 +63,9 @@ return new class extends XotBaseMigration {
 =======
             if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
+>>>>>>> .merge_file_hB2DMy
                 $table->string('model_id', 36)->index()->change();
             }
         });

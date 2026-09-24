@@ -286,6 +286,7 @@ trait HasXotOptimizations
 * [bottlenecks_detailed.md](../../../Xot/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](../../../Job/docs/bottlenecks_detailed.md)
 * [bottlenecks_detailed.md](../../../Media/docs/bottlenecks_detailed.md)
+<<<<<<< .merge_file_8HLyom
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -298,11 +299,14 @@ trait HasXotOptimizations
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Ydm1EU
 
 ### Versione Incoming
 
 ```
 
+<<<<<<< .merge_file_8HLyom
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -316,3 +320,6 @@ trait HasXotOptimizations
 =======
 ---
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_Ydm1EU

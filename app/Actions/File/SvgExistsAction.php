@@ -22,8 +22,8 @@ class SvgExistsAction
     /**
      * Verifica se l'SVG esiste nei set di icone registrati.
      *
-<<<<<<< HEAD
      * @param  string  $svgName  Il nome dell'SVG da verificare (es: 'heroicon-o-user')
+<<<<<<< .merge_file_eYyUbR
 =======
      * @param string $svgName Il nome dell'SVG da verificare (es: 'heroicon-o-user')
      *
@@ -37,6 +37,8 @@ class SvgExistsAction
      * @param string $svgName Il nome dell'SVG da verificare (es: 'heroicon-o-user')
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Jpclmm
      * @return bool true se l'SVG esiste, false altrimenti
      */
     public function execute(string $svgName): bool
@@ -45,6 +47,7 @@ class SvgExistsAction
             return false;
         }
 
+<<<<<<< .merge_file_eYyUbR
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,6 +67,8 @@ class SvgExistsAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Jpclmm
         /** @var IconFactory $iconsFactory */
         $iconsFactory = App::make(IconFactory::class);
         try {

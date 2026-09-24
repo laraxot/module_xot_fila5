@@ -1,8 +1,11 @@
+<<<<<<< .merge_file_66QKL0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_4QUkSJ
 ---
 title: "Q4 Roadmap"
 type: concept
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [q4-roadmap.md](./q4-roadmap.md)
+<<<<<<< .merge_file_66QKL0
 <<<<<<< HEAD
 =======
 =======
@@ -45,3 +49,5 @@ Vedi il file canonico: [q4-roadmap.md](./q4-roadmap.md)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_4QUkSJ

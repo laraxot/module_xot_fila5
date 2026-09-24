@@ -1,9 +1,12 @@
 ---
+<<<<<<< .merge_file_Qk6pfB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_fzGBKl
 title: "Git Conflicts Resolution"
 type: concept
 status: deprecated
@@ -19,6 +22,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [git-conflicts-resolution.md](./git-conflicts-resolution.md)
+<<<<<<< .merge_file_Qk6pfB
 <<<<<<< HEAD
 =======
 =======
@@ -35,3 +39,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/git_conflict
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_fzGBKl

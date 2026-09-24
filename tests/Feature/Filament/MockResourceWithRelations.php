@@ -10,6 +10,7 @@ use Modules\Xot\Models\Cache;
 class MockResourceWithRelations extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
+<<<<<<< .merge_file_nJvtuI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -26,4 +27,6 @@ class MockResourceWithRelations extends XotBaseResource
         return [];
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OT1STQ
 }

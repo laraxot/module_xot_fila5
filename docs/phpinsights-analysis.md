@@ -124,6 +124,7 @@
 - ✅ **PHPStan**: 0 errori (livello max) - da verificare ancora
 - ✅ **PHPMD**: Warning critici corretti
 - ✅ **PHPInsights**: Score complessivi eccellenti (97.9% Code, 93.5% Complexity, 82.4% Architecture, 98.8% Style)
+<<<<<<< .merge_file_mAiGmf
 <<<<<<< HEAD
 <<<<<<< HEAD
 - ✅ **Pint**: Stile corretto
@@ -137,3 +138,6 @@
 =======
 - ✅ **Pint**: Stile corretto
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- ✅ **Pint**: Stile corretto
+>>>>>>> .merge_file_xiIgeW

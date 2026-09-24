@@ -47,15 +47,19 @@ protected $fillable = ['id', 'categoria', 'lista_propro', 'lista_propro_sup', 'p
 
 // RISORSA SBAGLIATA (PRIMA):
 <<<<<<< HEAD
+<<<<<<< .merge_file_FE9yso
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_k7mpZE
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_FE9yso
 <<<<<<< HEAD
 =======
 =======
@@ -65,6 +69,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_k7mpZE
 {
     return [
         TextInput::make('id')->disabled(),
@@ -80,15 +86,19 @@ public static function getFormSchema(): array
 ```php
 // RISORSA CORRETTA (DOPO):
 <<<<<<< HEAD
+<<<<<<< .merge_file_FE9yso
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_k7mpZE
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_FE9yso
 <<<<<<< HEAD
 =======
 =======
@@ -98,6 +108,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_k7mpZE
 {
     return [
         TextInput::make('id')->disabled(),

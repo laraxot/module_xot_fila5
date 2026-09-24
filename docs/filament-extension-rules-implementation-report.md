@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_H36QwL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MwNDLW
 # Filament Extension Rules Implementation Report
 
 **Date**: 18 Dicembre 2025
@@ -94,6 +97,7 @@ Created comprehensive documentation file:
 ---
 
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< .merge_file_H36QwL
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -109,3 +113,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/filament-ext
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MwNDLW

@@ -89,6 +89,7 @@ Dopo la modifica, verifica con:
 ---
 
 *Risolto: 2025-01-10*
+<<<<<<< .merge_file_V4ANYY
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Architecture Version: XotBase 2.1*
@@ -103,3 +104,6 @@ Dopo la modifica, verifica con:
 =======
 *Architecture Version: XotBase 2.1*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Architecture Version: XotBase 2.1*
+>>>>>>> .merge_file_ywLZ66

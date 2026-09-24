@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources;
 
+<<<<<<< .merge_file_4zMxN1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -14,6 +15,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\TextInput;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wZq50b
 use Modules\Xot\Filament\Resources\CacheResource\Pages\CreateCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\EditCache;
 use Modules\Xot\Filament\Resources\CacheResource\Pages\ListCaches;
@@ -23,6 +26,7 @@ class CacheResource extends XotBaseResource
 {
     protected static ?string $model = Cache::class;
 
+<<<<<<< .merge_file_4zMxN1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +47,8 @@ class CacheResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wZq50b
     #[\Override]
     public static function getRelations(): array
     {

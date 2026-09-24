@@ -93,8 +93,8 @@ class MetatagPage extends XotBasePage
 
         Notification::make()
             ->success()
-<<<<<<< HEAD
             ->title('Salvato con Successo !')
+<<<<<<< .merge_file_LqsiBP
 =======
             ->title(__('filament-panels::resources/edit-record.notifications.saved.title'))
 >>>>>>> laraxot/dev
@@ -106,6 +106,8 @@ class MetatagPage extends XotBasePage
             ->success()
             ->title(__('filament-panels::resources/edit-record.notifications.saved.title'))
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cqZV8Z
             ->send();
     }
 

@@ -1,5 +1,6 @@
 # Troubleshooting Guide
 
+<<<<<<< .merge_file_3rhhdM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,10 +44,15 @@
 ## Common Issues
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+## Common Issues
+
+>>>>>>> .merge_file_zDgmzX
 ### PHPStan Errors
 - **Issue**: Method not found errors
 - **Solution**: Check namespace imports and method signatures
 - **Prevention**: Always run PHPStan level 9+ before commits
+<<<<<<< .merge_file_3rhhdM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -107,6 +113,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zDgmzX
 
 ### Translation Problems
 - **Issue**: Missing translations or hardcoded strings
@@ -132,6 +140,7 @@
 
 ## Getting Help
 
+<<<<<<< .merge_file_3rhhdM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -179,10 +188,13 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zDgmzX
 - Check module-specific documentation
 - Review Laraxot framework guidelines
 - Consult best practices documentation
 - Use project memory system for context
+<<<<<<< .merge_file_3rhhdM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -236,3 +248,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zDgmzX

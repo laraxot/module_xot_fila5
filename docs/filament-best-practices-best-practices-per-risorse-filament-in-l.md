@@ -17,6 +17,7 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 
 2. **SEMPRE** implementare `getFormSchema()`:
    ```php
+<<<<<<< .merge_file_DnD2LJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -51,6 +52,9 @@ Questo documento riassume le migliori pratiche per la creazione e gestione delle
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   public function getFormSchema(): array
+>>>>>>> .merge_file_xU7bIH
    {
        return [
            TextInput::make('nome')->required(),

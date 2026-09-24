@@ -5,6 +5,7 @@ type: reference
 slug: pest
 description: 'Elenco di 1 riferimenti esterni raccolti per pest, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
+<<<<<<< .merge_file_kWxud4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,6 +27,9 @@ converted_from: _pest.txt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+converted_from: _pest.txt
+>>>>>>> .merge_file_AvJLji
 created: 2026-08-24
 updated: 2026-08-24
 ---

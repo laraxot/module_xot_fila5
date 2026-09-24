@@ -18,6 +18,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< .merge_file_eTahjm
 <<<<<<< HEAD
 <<<<<<< .merge_file_F7MdSc
       public function getFormSchema(): array
@@ -31,6 +32,9 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
       public function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+      public static function getFormSchema(): array
+>>>>>>> .merge_file_c0XApe
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),

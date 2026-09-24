@@ -11,8 +11,11 @@ use Modules\Xot\Tests\Fixtures\Models\ExtraModelTest;
 use Modules\Xot\Tests\Fixtures\Models\TestModelHasExtra;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_HMYTl5
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_U7jrOB
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 use function Safe\class_uses;
@@ -25,6 +28,7 @@ uses(TestCase::class);
 function makeExtraWithValues(array $values): ExtraModelTest
 {
     $extra = new ExtraModelTest;
+<<<<<<< .merge_file_HMYTl5
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -54,6 +58,8 @@ function makeExtraWithValues(array $values): ExtraModelTest
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_U7jrOB
     $attributes = SchemalessAttributes::createForModel($extra, 'extra_attributes');
 
     foreach ($values as $key => $value) {
@@ -66,6 +72,7 @@ function makeExtraWithValues(array $values): ExtraModelTest
 }
 
 describe('HasExtraTrait', function (): void {
+<<<<<<< .merge_file_HMYTl5
 <<<<<<< HEAD
 <<<<<<< HEAD
     $testModel = new TestModelHasExtra;
@@ -78,6 +85,10 @@ describe('HasExtraTrait', function (): void {
     $testModel = new TestModelHasExtra();
     $extraClass = new ExtraModelTest();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $testModel = new TestModelHasExtra;
+    $extraClass = new ExtraModelTest;
+>>>>>>> .merge_file_U7jrOB
 
     it('uses the trait correctly', function () use ($testModel): void {
         $traits = class_uses($testModel);
@@ -136,11 +147,7 @@ describe('HasExtraTrait', function (): void {
     it('returns null for unsupported stored types', function () use ($testModel): void {
 <<<<<<< HEAD
         $testModel->setRelation('extra', makeExtraWithValues([
-<<<<<<< HEAD
             'invalid_value' => new \stdClass,
-=======
-            'invalid_value' => new \stdClass(),
->>>>>>> laraxot/dev
         ]));
 =======
         $testModel->extra = makeExtraWithValues([

@@ -9,17 +9,20 @@ use Illuminate\Support\Facades\Log;
 <<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
+<<<<<<< .merge_file_745qzD
 =======
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CDqb06
 
 use function Safe\json_encode;
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -32,6 +35,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CDqb06
 /**
  * Middleware di sicurezza avanzato.
  *
@@ -75,6 +80,7 @@ class SecurityMiddleware
     }
 
     /**
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -100,6 +106,8 @@ class SecurityMiddleware
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CDqb06
      * Applica rate limiting avanzato.
      */
     private function applyAdvancedRateLimiting(Request $request): void
@@ -343,6 +351,7 @@ class SecurityMiddleware
         }
 
         // Log tentativi di accesso falliti
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
@@ -352,6 +361,9 @@ class SecurityMiddleware
 =======
         if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
+>>>>>>> .merge_file_CDqb06
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -404,6 +416,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
@@ -413,6 +426,9 @@ class SecurityMiddleware
 =======
             if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
+>>>>>>> .merge_file_CDqb06
                 return true;
             }
         }
@@ -428,6 +444,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($value !== null && is_string($value)) {
@@ -437,6 +454,9 @@ class SecurityMiddleware
 =======
             if (null !== $value && is_string($value)) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($value !== null && is_string($value)) {
+>>>>>>> .merge_file_CDqb06
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -477,6 +497,7 @@ class SecurityMiddleware
     /**
      * Valida input array.
      *
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $value
@@ -486,6 +507,9 @@ class SecurityMiddleware
 =======
      * @param array<mixed> $value
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $value
+>>>>>>> .merge_file_CDqb06
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -511,6 +535,7 @@ class SecurityMiddleware
     /**
      * Ottieni profondità array.
      *
+<<<<<<< .merge_file_745qzD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<array-key, mixed>  $array
@@ -520,6 +545,9 @@ class SecurityMiddleware
 =======
      * @param array<mixed> $array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<array-key, mixed>  $array
+>>>>>>> .merge_file_CDqb06
      */
     private function getArrayDepth(array $array): int
     {

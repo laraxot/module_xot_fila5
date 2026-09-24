@@ -4,6 +4,7 @@
 
 ## Collegamenti
 
+<<<<<<< .merge_file_b03x0X
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -208,6 +209,8 @@ $submit = function() {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yBN5Sm
 - [Documentazione completa sull'architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [README](../README.md) - Panoramica del modulo Xot
 - [Struttura dei moduli](./MODULE_STRUCTURE.md) - Convenzioni di struttura dei moduli
@@ -323,6 +326,7 @@ $submit = function() {
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< .merge_file_b03x0X
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -397,6 +401,8 @@ $submit = function() {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yBN5Sm
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -461,6 +467,7 @@ $submit = function() {
 ### Modulo Chart
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
+<<<<<<< .merge_file_b03x0X
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
@@ -474,3 +481,6 @@ $submit = function() {
 =======
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> .merge_file_yBN5Sm

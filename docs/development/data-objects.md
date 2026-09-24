@@ -104,15 +104,19 @@ use Filament\Forms;
 class PerformanceResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_njquow
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bx5ppX
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_njquow
 <<<<<<< HEAD
 =======
 =======
@@ -122,6 +126,8 @@ class PerformanceResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bx5ppX
     {
         return [
             Forms\Components\TextInput::make('nome')

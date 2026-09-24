@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
+<<<<<<< .merge_file_caya42
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -19,23 +20,34 @@ use Modules\Xot\Actions\File\AssetPathAction;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Modules\Xot\Actions\File\AssetAction;
+use Modules\Xot\Actions\File\AssetPathAction;
+>>>>>>> .merge_file_zIfhzo
 use Modules\Xot\Actions\File\GetModulePathAction;
 use Modules\Xot\Tests\TestCase;
 use Nwidart\Modules\Facades\Module;
 use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
+<<<<<<< .merge_file_caya42
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_zIfhzo
 use function Safe\chmod;
 use function Safe\file_get_contents;
 use function Safe\file_put_contents;
 use function Safe\mkdir;
 use function Safe\unlink;
 
+<<<<<<< .merge_file_caya42
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zIfhzo
 uses(TestCase::class);
 
 it('handles absolute urls in AssetAction', function (): void {
@@ -45,6 +57,7 @@ it('handles absolute urls in AssetAction', function (): void {
 });
 
 it('returns path if asset already exists in public folder', function (): void {
+<<<<<<< .merge_file_caya42
 <<<<<<< HEAD
 <<<<<<< HEAD
     $path = 'css/app.css';
@@ -74,6 +87,8 @@ it('resolves module assets correctly in AssetAction', function (): void {
     {
         public function __construct(private string $modulePath) {}
 =======
+=======
+>>>>>>> .merge_file_zIfhzo
     $relative = 'assets/xot-test-exists-'.uniqid('', true).'.txt';
     $absolute = public_path($relative);
     if (! is_dir(\dirname($absolute))) {
@@ -102,16 +117,15 @@ it('publishes module asset to public assets path', function (): void {
         unlink($dest);
     }
 
-    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction {
-        public function __construct(private string $modulePath)
-        {
-        }
->>>>>>> laraxot/dev
+    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction
+    {
+        public function __construct(private string $modulePath) {}
 
         public function execute(string $module): string
         {
             return $this->modulePath;
         }
+<<<<<<< .merge_file_caya42
 <<<<<<< HEAD
     };
 
@@ -173,6 +187,8 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         },
     ]);
 =======
+=======
+>>>>>>> .merge_file_zIfhzo
     });
 
     try {
@@ -198,7 +214,7 @@ it('keeps published dest when force-copy fails (best-effort via copyAsset)', fun
 
     try {
         $action = app(AssetAction::class);
-        $method = new \ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
         $method->invoke($action, $from, $to, 'assets/demo/icon.png', true);
 
         Assert::assertFileExists($to);
@@ -223,7 +239,7 @@ it('skips force-copy when destination exists but is not writable', function (): 
 
     try {
         $action = app(AssetAction::class);
-        $method = new \ReflectionMethod(AssetAction::class, 'copyAsset');
+        $method = new ReflectionMethod(AssetAction::class, 'copyAsset');
         $method->invoke($action, $from, $to, 'assets/demo/icon.png', true);
 
         Assert::assertSame('keep-me', file_get_contents($to));
@@ -243,6 +259,7 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         ->shouldReceive('getModulePath')
         ->with('User')
         ->andReturn('/path/to/User/');
+<<<<<<< .merge_file_caya42
 >>>>>>> laraxot/dev
 =======
     Module::shouldReceive('getModulePath')
@@ -250,6 +267,8 @@ it('calculates asset path correctly in AssetPathAction', function (): void {
         ->with('User')
         ->andReturn('/path/to/User/');
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zIfhzo
 
     $action = app(AssetPathAction::class);
     $result = $action->execute('User::js/app.js');

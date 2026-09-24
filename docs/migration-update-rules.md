@@ -3,6 +3,7 @@
 ## Collegamento bidirezionale
 - Questo file è collegato a casi specifici documentati nei moduli, ad esempio:
   [Modules/Performance/docs/organizzativa-migration-errors.md](../../Performance/docs/organizzativa-migration-errors.md)
+<<<<<<< .merge_file_37DQwa
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bhlMAD
 
 ## Caso pratico: Performance
 - Per l’errore su `valutatore_id` in `performance_organizzativa`, vedere la documentazione dettagliata nel modulo Performance.
@@ -30,6 +33,7 @@
 - Aggiornare la documentazione di ogni intervento strutturale.
 
 ## Note
+<<<<<<< .merge_file_37DQwa
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
@@ -43,3 +47,6 @@
 =======
 - Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- Per casi specifici e casistiche di errore consultare la documentazione dei singoli moduli (es. Performance).
+>>>>>>> .merge_file_bhlMAD

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_1zokoV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 {"folders":[{"path":"."}],"settings":{}}
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rb2trv
 {
 	"folders": [
 		{
@@ -51,6 +54,7 @@
 		"git.autofetch": "all"
 	}
 }
+<<<<<<< .merge_file_1zokoV
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -59,3 +63,5 @@
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_rb2trv

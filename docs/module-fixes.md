@@ -88,15 +88,19 @@ protected function generateFormSchema(string $file, string $content, string $cla
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_ArrpwB
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_iO2whb
 public function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_ArrpwB
 <<<<<<< HEAD
 =======
 =======
@@ -106,6 +110,8 @@ public static function getFormSchema(): array
 =======
 public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iO2whb
 {
     return [
         'field_name' => [
@@ -166,6 +172,7 @@ public static function getFormSchema(): array
 ### Composer.json
 ```json
 {
+<<<<<<< .merge_file_ArrpwB
 <<<<<<< HEAD
 <<<<<<< HEAD
     "name": "laraxot/module_xot_fila3",
@@ -179,6 +186,9 @@ public static function getFormSchema(): array
 =======
     "name": "laraxot/module_xot_fila3",
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    "name": "laraxot/module_xot_fila3",
+>>>>>>> .merge_file_iO2whb
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",
@@ -823,6 +833,7 @@ $count = CountAction::execute(User::class);
 - [ ] Implementare cache opzionale
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
+<<<<<<< .merge_file_ArrpwB
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [ ] Aggiungere test di performance
@@ -836,3 +847,6 @@ $count = CountAction::execute(User::class);
 =======
 - [ ] Aggiungere test di performance
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [ ] Aggiungere test di performance
+>>>>>>> .merge_file_iO2whb

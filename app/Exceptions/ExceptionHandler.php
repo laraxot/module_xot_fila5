@@ -25,6 +25,7 @@ class ExceptionHandler
     /**
      * Configura la gestione delle eccezioni.
      *
+<<<<<<< .merge_file_Z2JepI
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -35,6 +36,9 @@ class ExceptionHandler
 =======
      * @param Exceptions $exceptions Configuratore eccezioni Laravel
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  Exceptions  $exceptions  Configuratore eccezioni Laravel
+>>>>>>> .merge_file_6QNV1k
      */
     public static function handles(Exceptions $exceptions): void
     {

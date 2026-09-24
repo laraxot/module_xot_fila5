@@ -1,5 +1,6 @@
 # Gestione delle Eccezioni
 
+<<<<<<< .merge_file_mYFcqI
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_3yEX7J
 Questo documento fornisce una panoramica del sistema di gestione delle eccezioni nel modulo Xot.
 
 ## HandlerDecorator
@@ -43,6 +46,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 4. Supporto per PHPStan livello 9
 5. Conforme alle convenzioni Laraxot/<nome progetto>
 
+<<<<<<< .merge_file_mYFcqI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -97,13 +101,15 @@ Core module for the FixCity Platform.
 =======
 =======
 >>>>>>> .merge_file_ytmLNH
+=======
+>>>>>>> .merge_file_3yEX7J
 ## Collegamenti
 - [Exception Handling Guidelines](../exception-handling-guide.md)
 - [Logging Best Practices](../logging-best-practices.md)
-<<<<<<< HEAD
 ## Collegamenti tra versioni di README.md
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
+<<<<<<< .merge_file_mYFcqI
 =======
 >>>>>>> laraxot/dev
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
@@ -132,6 +138,8 @@ Core module for the FixCity Platform.
 * [README.md](bashscripts/docs/readme.md)
 * [README.md](bashscripts/docs/it/readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_3yEX7J
 * [README.md](docs/laravel-app/phpstan/readme.md)
 * [README.md](docs/laravel-app/readme.md)
 * [README.md](docs/moduli/struttura/readme.md)
@@ -162,6 +170,7 @@ Core module for the FixCity Platform.
 * [README.md](docs/implementazione/reporting/readme.md)
 * [README.md](docs/implementazione/isee/readme.md)
 * [README.md](docs/it/readme.md)
+<<<<<<< .merge_file_mYFcqI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -342,6 +351,8 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_3yEX7J
 * [README.md](laravel/vendor/mockery/mockery/docs/readme.md)
 * [README.md](../../../chart/docs/readme.md)
 * [README.md](../../../reporting/docs/readme.md)
@@ -386,6 +397,7 @@ Questo documento fornisce una panoramica del sistema di gestione delle eccezioni
 * [README.md](../../../cms/docs/components/readme.md)
 * [README.md](../../../../themes/two/docs/readme.md)
 * [README.md](../../../../themes/one/docs/readme.md)
+<<<<<<< .merge_file_mYFcqI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -608,3 +620,5 @@ Core module for the FixCity Platform.
 =======
 * [README.md](../../../../Themes/One/docs/README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_3yEX7J

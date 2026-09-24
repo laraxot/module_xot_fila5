@@ -26,6 +26,7 @@ Questa scelta garantisce:
 
 ## Collegamenti
 - [Struttura moduli Xot](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< .merge_file_4ginp8
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Best Practices Provider](best-practices.md)
@@ -43,11 +44,15 @@ Questa scelta garantisce:
 =======
 - [Best Practices Provider](best-practices.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Best Practices Provider](best-practices.md)
+>>>>>>> .merge_file_5nJlaB
 - [docs/links.md globale](../../../../docs/links.md)
 
 ## Backlink
 - [docs/links.md](../../../../docs/links.md)
 - [docs/MODULE_NAMESPACE_RULES.md](./MODULE_NAMESPACE_RULES.md)
+<<<<<<< .merge_file_4ginp8
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [docs/BEST-PRACTICES.md](best-practices.md)
@@ -65,3 +70,6 @@ Questa scelta garantisce:
 =======
 - [docs/BEST-PRACTICES.md](best-practices.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [docs/BEST-PRACTICES.md](best-practices.md)
+>>>>>>> .merge_file_5nJlaB

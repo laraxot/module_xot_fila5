@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_nozb0n
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -24,6 +25,9 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> .merge_file_tbcbge
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -70,6 +74,7 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
         }
 
         try {
+<<<<<<< .merge_file_nozb0n
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -94,10 +99,13 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tbcbge
             /** @var class-string<XotBaseResource> $resourceClass */
             $resourceClass = $page::getResource();
             $resourceClass::getTableClass();
         } catch (Throwable $e) {
+<<<<<<< .merge_file_nozb0n
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -109,6 +117,8 @@ test('ogni list page concreta risolve la sua Table class', function (): void {
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_tbcbge
             $senzaTable[] = $page.' — '.$e->getMessage();
         }
     }

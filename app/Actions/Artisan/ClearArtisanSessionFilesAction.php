@@ -19,6 +19,7 @@ class ClearArtisanSessionFilesAction
         $files = File::files(storage_path('framework/sessions'));
 
         foreach ($files as $file) {
+<<<<<<< .merge_file_Nw2a1G
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($file->getExtension() === '' && $file->getRealPath() !== false) {
@@ -36,6 +37,9 @@ class ClearArtisanSessionFilesAction
 =======
             if ('' === $file->getExtension() && false !== $file->getRealPath()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($file->getExtension() === '' && $file->getRealPath() !== false) {
+>>>>>>> .merge_file_j213yx
                 File::delete($file->getRealPath());
             }
         }

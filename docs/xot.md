@@ -5,6 +5,7 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 
 ## Struttura
 - [Documentazione Completa](../../Modules/Xot/docs/module_xot.md)
+<<<<<<< .merge_file_0NUaai
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -15,10 +16,13 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kbLCnX
 
 ## Componenti Principali
 
 ### Datas
+<<<<<<< .merge_file_0NUaai
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -46,6 +50,8 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_kbLCnX
 - [MetatagData](../../Modules/Xot/docs/datas/MetatagData.md) - Gestione meta tag e configurazione Filament
 
 ### Actions
@@ -63,6 +69,7 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 ## Collegamenti
 - [Roadmap](../../Modules/Xot/docs/roadmap.md)
 - [Implementazione](../../Modules/Xot/docs/implementation.md)
+<<<<<<< .merge_file_0NUaai
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Integrazione](../../Modules/Xot/docs/integration.md)
@@ -76,3 +83,6 @@ Modulo core che fornisce funzionalità di base e utility per l'intero sistema.
 =======
 - [Integrazione](../../Modules/Xot/docs/integration.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Integrazione](../../Modules/Xot/docs/integration.md)
+>>>>>>> .merge_file_kbLCnX

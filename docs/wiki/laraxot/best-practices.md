@@ -26,6 +26,7 @@ updated: 2026-08-24
 <<<<<<< HEAD
 public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_UlDo8o
 <<<<<<< HEAD
 <<<<<<< HEAD
 public function getFormSchema(): array
@@ -40,13 +41,9 @@ public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-public function getFormSchema(): array
 =======
+>>>>>>> .merge_file_QEHY9n
 public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_d8Pdly
 >>>>>>> laraxot/dev
 =======
 public function getFormSchema(): array
@@ -101,6 +98,7 @@ return [
 ## XotBaseResource
 
 ### Regole di Estensione
+<<<<<<< .merge_file_UlDo8o
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -140,6 +138,9 @@ return [
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+1. Implementare `public function getFormSchema(): array`
+>>>>>>> .merge_file_QEHY9n
 2. NON implementare il metodo `form(Form $form): Form`
 3. NON definire `protected static ?string $navigationIcon`
 4. La navigazione è gestita interamente da XotBaseResource
@@ -153,6 +154,7 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_UlDo8o
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
@@ -179,6 +181,10 @@ class MyResource extends XotBaseResource
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QEHY9n
     {
         return [
             TextInput::make('name')->required(),

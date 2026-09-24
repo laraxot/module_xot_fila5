@@ -216,6 +216,7 @@ Before committing any SVG icon, verify:
 ---
 
 *Last Updated: 2025-08-27*
+<<<<<<< .merge_file_IUv4Xj
 <<<<<<< HEAD
 <<<<<<< HEAD
 *SVG Standards Version: 2.0*
@@ -237,3 +238,8 @@ Before committing any SVG icon, verify:
 *Based on Heroicons Outline Style*
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*SVG Standards Version: 2.0*
+*Based on Heroicons Outline Style*
+
+>>>>>>> .merge_file_vtYPUY

@@ -10,6 +10,7 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 
 ## Note
 
+<<<<<<< .merge_file_YouJ1R
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +25,8 @@ Questa cartella contiene gli standard di codice e le convenzioni utilizzate nel 
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aEiCkc
 Questi standard si applicano a tutti i moduli del progetto e devono essere seguiti per mantenere la coerenza del codice. 
 
 ## Collegamenti tra versioni di README.md
@@ -101,6 +104,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 * [README.md](../../../Cms/docs/components/README.md)
 * [README.md](../../../../Themes/Two/docs/README.md)
 * [README.md](../../../../Themes/One/docs/README.md)
+<<<<<<< .merge_file_YouJ1R
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -197,6 +201,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aEiCkc
 
 # Standard Xot: Ereditarietà dei Modelli
 
@@ -208,6 +214,7 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 > Esempio di errore tipico: `Unknown column 'certifications' in 'field list'`.
 
 ## Collegamenti
+<<<<<<< .merge_file_YouJ1R
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -222,11 +229,14 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aEiCkc
 - [Modello Doctor (Patient)](../../../Patient/docs/Models/Doctor.md)
 - [Gestione campi e migrazioni con STI (README Patient)](../../../Patient/docs/README.md)
 - [DoctorResource: Step Informazioni Personali (Patient)](../../../Patient/docs/filament/resources/doctor-resource.md)
 - [Struttura progetto e STI (Patient)](../../../Patient/docs/architecture/struttura-progetto.md)
 - [Migrazioni e database (Patient)](../../../Patient/docs/database/migrations.md)
+<<<<<<< .merge_file_YouJ1R
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -249,6 +259,8 @@ Questi standard si applicano a tutti i moduli del progetto e devono essere segui
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aEiCkc
 
 ## Regola generale
 
@@ -270,6 +282,7 @@ class Doctor extends User
 ```
 
 ## Moduli che applicano questa regola
+<<<<<<< .merge_file_YouJ1R
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -296,3 +309,6 @@ class Doctor extends User
 // Aggiungere qui altri moduli se necessario
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+// Aggiungere qui altri moduli se necessario
+>>>>>>> .merge_file_aEiCkc

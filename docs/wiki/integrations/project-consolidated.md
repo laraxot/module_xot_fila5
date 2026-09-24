@@ -296,27 +296,16 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_iotgzc
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_VgoIP9
+>>>>>>> .merge_file_0M70YY
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_VOgs3T
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array
@@ -733,27 +722,16 @@ class MyResource extends XotBaseResource
 <<<<<<< HEAD
     public function getFormSchema(): array
 =======
+<<<<<<< .merge_file_iotgzc
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
 =======
 <<<<<<< HEAD
-    public function getFormSchema(): array
 =======
-<<<<<<< .merge_file_VgoIP9
+>>>>>>> .merge_file_0M70YY
     public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
-=======
-<<<<<<< HEAD
-    public function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
->>>>>>> .merge_file_VOgs3T
 >>>>>>> laraxot/dev
 =======
     public function getFormSchema(): array

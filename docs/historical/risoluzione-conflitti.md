@@ -6,6 +6,7 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 ## Casi Risolti Recentemente
 
 ### 1. Namespace e Convenzioni
+<<<<<<< .merge_file_T0WUb3
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Convenzioni Namespace](namespace-conventions.md)
@@ -23,6 +24,9 @@ Per le best practices complete, consultare il file [best_practices.md](conflicts
 =======
 - [Convenzioni Namespace](namespace-conventions.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Convenzioni Namespace](namespace-conventions.md)
+>>>>>>> .merge_file_yGk7gx
 - Risoluzione conflitti nelle convenzioni di namespace
 - Mantenimento della compatibilità con PHPStan
 

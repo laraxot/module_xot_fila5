@@ -3,6 +3,7 @@
 ## Critical Architectural Rules
 
 1. **Laraxot Migration Philosophy**: In a module, for each table there must be only ONE migration responsible for its creation. Multiple migrations for the same table in the same module is a violation of Laraxot philosophy. Subsequent migrations should extend existing tables using tableUpdate() rather than recreating them with tableCreate(). Always use hasColumn(), hasTable(), hasIndex() for safe checks.
+<<<<<<< .merge_file_wwY2xf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -16,6 +17,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MdVnOp
 
 2. **NO property_exists() on Eloquent models**: Use hasAttribute(), isFillable() or Schema::hasColumn() instead, because model attributes are magical properties.
 
@@ -59,6 +62,7 @@
 1. **Pest PHP**: All tests must be written in Pest PHP, not PHPUnit
 2. **Code Quality Tools**: Run PHPStan, PHPMD, and PHPInsights after every change
 3. **Documentation Updates**: Always update docs folders when making changes to the codebase
+<<<<<<< .merge_file_wwY2xf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,3 +75,5 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_MdVnOp

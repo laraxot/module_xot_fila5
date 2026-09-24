@@ -12,6 +12,7 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 - [Flusso di Registrazione](../../../docs/flusso-registrazione.md) - Implementazione del wizard multi-step
 
 ### Moduli Collegati
+<<<<<<< .merge_file_dLzXiG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -31,6 +32,8 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_9s5Zuf
 - [UI](../../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/docs/README.md) - Traduzioni
@@ -237,6 +240,7 @@ new class extends Component {
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< .merge_file_dLzXiG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -311,6 +315,8 @@ new class extends Component {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_9s5Zuf
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -375,6 +381,7 @@ new class extends Component {
 ### Modulo Chart
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
+<<<<<<< .merge_file_dLzXiG
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
@@ -388,3 +395,6 @@ new class extends Component {
 =======
 - [Visualizzazione](../Chart/docs/visualization.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Visualizzazione](../Chart/docs/visualization.md)
+>>>>>>> .merge_file_9s5Zuf

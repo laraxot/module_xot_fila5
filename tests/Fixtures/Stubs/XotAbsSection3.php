@@ -6,6 +6,7 @@ namespace Modules\Xot\Tests\Fixtures\Stubs;
 
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
+<<<<<<< .merge_file_Sbv1iw
 <<<<<<< HEAD
 <<<<<<< HEAD
 final class XotAbsSection3 extends XotBaseSection {}
@@ -29,3 +30,6 @@ final class XotAbsSection3 extends XotBaseSection
 {
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+final class XotAbsSection3 extends XotBaseSection {}
+>>>>>>> .merge_file_fj18Kg

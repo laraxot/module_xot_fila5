@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_wWBRk5
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,6 +29,8 @@ https://github.com/livewire/sortable
 =======
 >>>>>>> .merge_file_x68V4d
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_OzBrhr
 ---
 title: "Sortable livewire"
 type: reference
@@ -45,6 +48,7 @@ Elenco di collegamenti migrato da un file `.txt`; URL deduplicati.
 - <https://github.com/asantibanez/laravel-blade-sortable>
 - <https://opensourcelibs.com/lib/livewire-sortablejs>
 - <https://github.com/livewire/sortable>
+<<<<<<< .merge_file_wWBRk5
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_pCnhQt
@@ -71,3 +75,5 @@ https://github.com/livewire/sortable
 =======
 https://github.com/livewire/sortable
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OzBrhr

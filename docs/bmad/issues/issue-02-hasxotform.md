@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_yXZcTq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_8frzVo
 # Issue GH #02 — HasXotForm: istanza + colonne dinamiche
 
 **Repo:** `git@github.com:laraxot/module_xot_fila5.git`

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Database Analysis Commands and Tools for quaeris_survey
@@ -11,6 +12,9 @@
 =======
 # Database Analysis Commands and Tools for quaeris_survey
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# Database Analysis Commands and Tools for quaeris_survey
+>>>>>>> .merge_file_ca6Uet
 
 ## Essential Database Queries
 
@@ -49,6 +53,7 @@ SELECT
     COUNT(*) as daily_responses
 FROM lime_survey_[SURVEY_ID]
 WHERE submitdate BETWEEN '2023-01-01' AND '2023-12-31'
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -59,6 +64,8 @@ WHERE submitdate BETWEEN '[DATE]' AND '[DATE]'
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
 GROUP BY DATE(submitdate)
 ORDER BY response_date;
 
@@ -91,6 +98,7 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 ### 1. MySQL MCP Commands
 ```bash
 # Connect to specific database
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -98,10 +106,13 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
 mcp mysql --database=txaesfry_quaeris_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_quaeris_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -114,6 +125,8 @@ mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -131,6 +144,7 @@ $responses = DB::connection('limesurvey')
     ->table($tableName)
     ->whereNotNull('submitdate')
     ->whereBetween('submitdate', ['2023-01-01', '2023-12-31'])
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -141,6 +155,8 @@ $responses = DB::connection('limesurvey')
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
     ->count();
 
 // Get unique participants
@@ -160,6 +176,7 @@ php artisan tinker --execute="DB::connection('limesurvey')->select('SELECT 1')"
 php artisan tinker --execute="
 [
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
@@ -173,6 +190,9 @@ php artisan tinker --execute="
 =======
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> .merge_file_ca6Uet
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -195,6 +215,7 @@ SHOW INDEX FROM lime_survey_[SURVEY_ID];
 ```sql
 -- Use EXPLAIN to analyze slow queries
 EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '2023-01-01';
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -205,6 +226,8 @@ EXPLAIN SELECT COUNT(*) FROM lime_survey_[SURVEY_ID] WHERE submitdate > '[DATE]'
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
 
 -- Optimize large table queries
 SELECT SQL_CALC_FOUND_ROWS * FROM lime_survey_[SURVEY_ID] LIMIT 0, 1000;
@@ -242,6 +265,7 @@ WHERE q.qid IS NULL;
 ### 1. Survey Data Backup
 ```bash
 # Backup specific survey data
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -249,10 +273,13 @@ WHERE q.qid IS NULL;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_quaeris_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -265,6 +292,8 @@ mysqldump -u[user] -p[pass] txaesfry_healthcare_app_survey lime_questions lime_q
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ca6Uet
 ```
 
 ### 2. Data Validation Script
@@ -308,6 +337,7 @@ LEFT JOIN (
         COUNT(*) as responses
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_survey_%'
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
@@ -321,6 +351,9 @@ LEFT JOIN (
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> .merge_file_ca6Uet
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -328,6 +361,7 @@ LEFT JOIN (
         COUNT(*) as total_tokens
     FROM information_schema.tables 
     WHERE table_name LIKE 'lime_tokens_%'
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
     AND table_schema = 'txaesfry_quaeris_survey'
@@ -341,10 +375,14 @@ LEFT JOIN (
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    AND table_schema = 'txaesfry_quaeris_survey'
+>>>>>>> .merge_file_ca6Uet
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
+<<<<<<< .merge_file_4RTgVK
 <<<<<<< HEAD
 <<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
@@ -358,3 +396,6 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 =======
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
+>>>>>>> .merge_file_ca6Uet

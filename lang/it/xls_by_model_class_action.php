@@ -30,6 +30,7 @@ return [
         ],
         'label' => 'Xls By Model Class Action',
         'sort' => 1,
+<<<<<<< .merge_file_8bNgyS
 <<<<<<< HEAD
 <<<<<<< HEAD
         'icon' => 'heroicon-o-collection',
@@ -39,6 +40,9 @@ return [
 =======
         'icon' => 'heroicon-o-collection',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        'icon' => 'xot-files.xls',
+>>>>>>> .merge_file_p2OpnT
     ],
     'fields' => [
         'id' => [

@@ -609,6 +609,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< .merge_file_BclKfT
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
@@ -622,6 +623,9 @@ class AlertWidget extends BaseTableWidget
 =======
 - [Architettura Moduli](./ARCHITECTURE.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_mg50ov
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

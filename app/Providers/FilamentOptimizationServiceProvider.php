@@ -8,18 +8,17 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+<<<<<<< .merge_file_aib5im
 <<<<<<< HEAD
 <<<<<<< HEAD
-use Nwidart\Modules\Module;
 =======
-<<<<<<< .merge_file_GNpg2u
+>>>>>>> .merge_file_wuYpI6
 use Nwidart\Modules\Module;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
 
+<<<<<<< .merge_file_aib5im
 <<<<<<< HEAD
 =======
 =======
@@ -43,6 +42,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wuYpI6
 /**
  * Service Provider per ottimizzazioni Filament.
  * SuperMucca Optimization Provider 🐄.
@@ -76,6 +77,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
             $this->configureQueryLogging();
         }
 
+<<<<<<< .merge_file_aib5im
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -90,6 +92,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wuYpI6
         // Ottimizzazioni per l'ambiente di produzione
         if (app()->environment('production')) {
             $this->applyProductionOptimizations();
@@ -160,6 +164,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
     }
 
     /**
+<<<<<<< .merge_file_aib5im
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -178,6 +183,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_wuYpI6
      * Applica ottimizzazioni per l'ambiente di produzione.
      */
     private function applyProductionOptimizations(): void

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_wJ8km1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -16,6 +17,8 @@
 =======
 >>>>>>> .merge_file_4xkjsU
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_bidxHt
 ---
 title: 'Uuid'
 module: Xot
@@ -27,6 +30,7 @@ converted_from: UUID.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---
+<<<<<<< .merge_file_wJ8km1
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_DeqDdU
@@ -46,10 +50,13 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/uuid.txt -->
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bidxHt
 
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 Universally Unique Identifiers
+<<<<<<< .merge_file_wJ8km1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,6 +71,8 @@ Universally Unique Identifiers
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bidxHt
 # _uuid
 
 <!-- Contenuto migrato da _docs/_uuid.txt -->
@@ -71,6 +80,7 @@ Universally Unique Identifiers
 Using UUIDs in Laravel Models
 https://www.larashout.com/using-uuids-in-laravel-models
 //--------------------------------------------------------
+<<<<<<< .merge_file_wJ8km1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -87,3 +97,5 @@ https://www.larashout.com/using-uuids-in-laravel-models
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bidxHt

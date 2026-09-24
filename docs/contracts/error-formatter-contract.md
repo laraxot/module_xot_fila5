@@ -38,6 +38,7 @@ interface ErrorFormatterContract
 - [Error Handling Guidelines](../EXCEPTION-HANDLING-GUIDE.md)
 - [Error Formatters](../exceptions/formatters/README.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< .merge_file_a6RX3V
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -53,3 +54,5 @@ interface ErrorFormatterContract
 - [Error Formatters](../exceptions/formatters/readme.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_usctZ5

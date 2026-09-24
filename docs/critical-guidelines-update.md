@@ -32,6 +32,7 @@ find translations.md)
 ```markdown
 - [Traduzioni](../../Xot/docs/translations.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+<<<<<<< .merge_file_CkbPib
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -43,6 +44,8 @@ find translations.md)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tgPdns
 ```
 
 #### C. Struttura Documentazione Corretta
@@ -174,6 +177,7 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 ---
 
 **DATA EFFETTIVA**: 2025-08-20
+<<<<<<< .merge_file_CkbPib
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -181,10 +185,13 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tgPdns
 **PRIORITÀ**: CRITICA
 **RESPONSABILE**: Tutto il team sviluppo
 
 *Questo documento sostituisce tutte le linee guida precedenti in conflitto.*
+<<<<<<< .merge_file_CkbPib
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -198,3 +205,5 @@ find  --include="*.php" | grep -v "static" | grep -v "::"
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_tgPdns

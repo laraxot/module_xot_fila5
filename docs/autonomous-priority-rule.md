@@ -1,6 +1,7 @@
 # Autonomous Priority Rule
 
 **Date**: 2025-12-18
+<<<<<<< .merge_file_yTea01
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -11,6 +12,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_QLZTDP
 **Context**: "Super Mucca" Mode
 
 ## The Rule
@@ -40,6 +43,7 @@ This rule connects directly with the project's core principles:
 ## Commandment
 "Ordine e priorita le scegli sempre te." (Order and priority are always chosen by you.)
 
+<<<<<<< .merge_file_yTea01
 <<<<<<< HEAD
 <<<<<<< HEAD
 This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
@@ -53,3 +57,6 @@ This rule ensures the AI operates with the autonomy needed to maintain project q
 =======
 This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+This rule ensures the AI operates with the autonomy needed to maintain project quality while following the Super Mucca methodology of deep analysis and maximum confidence.
+>>>>>>> .merge_file_QLZTDP

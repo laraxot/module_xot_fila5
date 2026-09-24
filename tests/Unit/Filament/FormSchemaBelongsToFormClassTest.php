@@ -8,6 +8,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
 use ReflectionClass;
@@ -34,12 +35,17 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use ReflectionClass;
+use Webmozart\Assert\Assert as WebmozartAssert;
+>>>>>>> .merge_file_JcHx0y
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -51,6 +57,8 @@ use Webmozart\Assert\Assert as WebmozartAssert;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JcHx0y
 uses(TestCase::class);
 
 /**
@@ -93,6 +101,7 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
     foreach (resourceFiles() as $file) {
         $src = file_get_contents($file);
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -100,10 +109,13 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JcHx0y
         if (preg_match('/extends\s+XotBaseResource\b/', $src) !== 1) {
             continue;
         }
         if (preg_match('/function\s+getFormSchema\s*\(/', $src) === 1) {
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -116,6 +128,8 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JcHx0y
             $offenders[] = str_replace(base_path(), '', $file);
         }
     }
@@ -124,6 +138,7 @@ test('nessuna Resource dichiara getFormSchema()', function (): void {
 });
 
 test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void {
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
     $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
@@ -137,6 +152,9 @@ test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void 
 =======
     $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $method = (new ReflectionClass(XotBaseResourceForm::class))->getMethod('getFormSchema');
+>>>>>>> .merge_file_JcHx0y
 
     expect($method->isAbstract())->toBeTrue();
     expect($method->isPublic())->toBeTrue();
@@ -145,6 +163,7 @@ test('getFormSchema() e obbligatorio su XotBaseResourceForm', function (): void 
 test('getFormSchema() e final su XotBaseResource', function (): void {
     // Il final e' cio' che impedisce a una Resource di riprendersi lo schema:
     // senza, la regola tornerebbe affidata alla buona volonta'.
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
     $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
@@ -158,6 +177,9 @@ test('getFormSchema() e final su XotBaseResource', function (): void {
 =======
     $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $method = (new ReflectionClass(XotBaseResource::class))->getMethod('getFormSchema');
+>>>>>>> .merge_file_JcHx0y
 
     expect($method->isFinal())->toBeTrue();
 });
@@ -190,6 +212,7 @@ function xotClassGraph(): array
     /** @var array<string, array{parent: string, file: string}>|null $graph */
     static $graph = null;
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
     if ($graph !== null) {
@@ -203,6 +226,9 @@ function xotClassGraph(): array
 =======
     if ($graph !== null) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    if ($graph !== null) {
+>>>>>>> .merge_file_JcHx0y
         return $graph;
     }
 
@@ -212,6 +238,7 @@ function xotClassGraph(): array
     );
 
     foreach ($iterator as $fileInfo) {
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
@@ -225,6 +252,9 @@ function xotClassGraph(): array
 =======
         if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (! $fileInfo instanceof \SplFileInfo || $fileInfo->getExtension() !== 'php') {
+>>>>>>> .merge_file_JcHx0y
             continue;
         }
 
@@ -237,6 +267,7 @@ function xotClassGraph(): array
         $source = file_get_contents($path);
 
         $ns = [];
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
@@ -250,10 +281,14 @@ function xotClassGraph(): array
 =======
         if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/^\s*namespace\s+([^;]+);/m', $source, $ns) !== 1) {
+>>>>>>> .merge_file_JcHx0y
             continue;
         }
 
         $cls = [];
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls) !== 1) {
@@ -267,6 +302,9 @@ function xotClassGraph(): array
 =======
         if (preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls) !== 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/^\s*(?:final\s+|abstract\s+|readonly\s+)*class\s+(\w+)\s+extends\s+([\\\\\w]+)/m', $source, $cls) !== 1) {
+>>>>>>> .merge_file_JcHx0y
             continue;
         }
 
@@ -274,6 +312,7 @@ function xotClassGraph(): array
         $className = (string) ($cls[1] ?? '');
         $parent = (string) ($cls[2] ?? '');
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($namespace === '' || $className === '' || $parent === '') {
@@ -287,6 +326,9 @@ function xotClassGraph(): array
 =======
         if ($namespace === '' || $className === '' || $parent === '') {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($namespace === '' || $className === '' || $parent === '') {
+>>>>>>> .merge_file_JcHx0y
             continue;
         }
 
@@ -295,6 +337,7 @@ function xotClassGraph(): array
         if (! str_contains($parent, '\\')) {
             $use = [];
             $usePattern = '/^\s*use\s+([\\\\\w]*\\\\'.preg_quote($parent, '/').');/m';
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
             $parent = preg_match($usePattern, $source, $use) === 1
@@ -308,6 +351,9 @@ function xotClassGraph(): array
 =======
             $parent = preg_match($usePattern, $source, $use) === 1
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            $parent = preg_match($usePattern, $source, $use) === 1
+>>>>>>> .merge_file_JcHx0y
                 ? (string) ($use[1] ?? '')
                 : $namespace.'\\'.$parent;
         }
@@ -359,6 +405,7 @@ test('nessun discendente di XotBaseResource dichiara getFormSchema', function ()
     $violations = [];
 
     foreach (xotDescendantsOf(XotBaseResource::class) as $file) {
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
@@ -372,6 +419,9 @@ test('nessun discendente di XotBaseResource dichiara getFormSchema', function ()
 =======
         if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/function\s+getFormSchema\s*\(/', file_get_contents($file)) === 1) {
+>>>>>>> .merge_file_JcHx0y
             $violations[] = str_replace(base_path().'/', '', $file);
         }
     }
@@ -400,6 +450,7 @@ function xotEffectiveFormSchemaBody(string $class): ?string
         $seen[$cursor] = true;
         $match = [];
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
@@ -413,6 +464,9 @@ function xotEffectiveFormSchemaBody(string $class): ?string
 =======
         if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/function\s+getFormSchema\s*\([^)]*\)[^{]*\{(.*?)\n    \}/s', file_get_contents($graph[$cursor]['file']), $match) === 1) {
+>>>>>>> .merge_file_JcHx0y
             return trim((string) ($match[1] ?? ''));
         }
 
@@ -438,6 +492,7 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         $body = xotEffectiveFormSchemaBody($class);
         $relative = str_replace(base_path().'/', '', $file);
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($body === null) {
@@ -459,6 +514,11 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
             // Solo una classe astratta puo' lasciare l'obbligo al figlio concreto.
             if (preg_match('/^\s*abstract\s+class\s/m', file_get_contents($file)) !== 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($body === null) {
+            // Solo una classe astratta puo' lasciare l'obbligo al figlio concreto.
+            if (preg_match('/^\s*abstract\s+class\s/m', file_get_contents($file)) !== 1) {
+>>>>>>> .merge_file_JcHx0y
                 $missing[] = $relative;
             }
 
@@ -469,6 +529,7 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
         // e' vuoto quanto `return [];`, e senza questo passaggio passa inosservato.
         $body = trim(preg_replace(['#/\*.*?\*/#s', '#//[^\n]*#'], '', $body));
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($body === '' || preg_match('/^return\s*\[\s*\]\s*;$/', $body) === 1) {
@@ -482,6 +543,9 @@ test('ogni discendente di XotBaseResourceForm dichiara getFormSchema non vuoto',
 =======
         if ($body === '' || preg_match('/^return\s*\[\s*\]\s*;$/', $body) === 1) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($body === '' || preg_match('/^return\s*\[\s*\]\s*;$/', $body) === 1) {
+>>>>>>> .merge_file_JcHx0y
             $stubs[] = $relative;
         }
     }
@@ -513,6 +577,7 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
 
         Assert::assertTrue(class_exists($formClass), "Form non caricabile: {$formClass}");
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ((new ReflectionClass($formClass))->isAbstract()) {
@@ -526,6 +591,9 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
 =======
         if ((new ReflectionClass($formClass))->isAbstract()) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ((new ReflectionClass($formClass))->isAbstract()) {
+>>>>>>> .merge_file_JcHx0y
             continue;
         }
 
@@ -539,6 +607,7 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
             continue;
         }
 
+<<<<<<< .merge_file_L0gFgO
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($schema === []) {
@@ -552,6 +621,9 @@ test('ogni Resource si carica e ogni Form costruisce il proprio schema', functio
 =======
         if ($schema === []) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($schema === []) {
+>>>>>>> .merge_file_JcHx0y
             $failures[] = $formClass.' :: schema vuoto';
         }
     }

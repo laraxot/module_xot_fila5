@@ -267,6 +267,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class MyResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< .merge_file_tLnkMw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -279,10 +280,13 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZKDelv
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_tLnkMw
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -295,6 +299,8 @@ class MyResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_ZKDelv
     {
         return [
             TextInput::make('name'),  // No ->label()!

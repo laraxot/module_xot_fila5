@@ -8,23 +8,11 @@ This document outlines best practices for writing and maintaining Pest tests und
 When using Mockery to mock dependencies in Pest tests, PHPStan might fail to resolve methods like `with()`, `andReturn()`, `andThrow()`, or `andReturnUsing()` called on `shouldReceive()`. This happens because Mockery returns a union type `ExpectationInterface|HigherOrderMessage` where these methods are not defined on all union members.
 
 ### Recommended Solution
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 
 Assign the result of `shouldReceive()` to a variable annotated with `/** @var \Mockery\Expectation $expectation */`.
 
 #### Example
 
-<<<<<<< HEAD
-=======
-=======
-Assign the result of `shouldReceive()` to a variable annotated with `/** @var \Mockery\Expectation $expectation */`.
-
-#### Example
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```php
 /** @var \Mockery\MockInterface&MyAction $mock */
 $mock = \Mockery::mock(MyAction::class);
@@ -33,10 +21,6 @@ $mock = \Mockery::mock(MyAction::class);
 $expectation = $mock->shouldReceive('execute');
 $expectation->with($param)->andReturn($result);
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 
 This pattern ensures PHPStan successfully validates the chain at Level 10.
 =======
@@ -80,6 +64,7 @@ $expectation = $mock->shouldReceive('execute');
 $expectation->with($param)->andReturn($result);
 ```
 This pattern ensures PHPStan successfully validates the chain at Level 10.
+<<<<<<< .merge_file_WOIyat
 <<<<<<< HEAD
 =======
 =======
@@ -342,3 +327,5 @@ it('uses external service', function () {
 - Usa `DatabaseMigrations` invece di `RefreshDatabase` per test più veloci
 - Evita chiamate di rete nei test (mocka i servizi esterni)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_INDCC9

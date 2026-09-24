@@ -34,6 +34,7 @@ class GetModelByModelTypeAction
         Assert::isAOf($model_class, Model::class);
 
         /** @var class-string<Model> $model_class */
+<<<<<<< .merge_file_LDydMT
 <<<<<<< HEAD
 <<<<<<< HEAD
         $model = $model_id !== null
@@ -49,6 +50,11 @@ class GetModelByModelTypeAction
             ? $model_class::query()->find($model_id)
             : new $model_class();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $model = $model_id !== null
+            ? $model_class::query()->find($model_id)
+            : new $model_class;
+>>>>>>> .merge_file_C6Dm8R
 
         if (! $model instanceof Model) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');

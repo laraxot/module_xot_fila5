@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_4sFAcb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -8,6 +9,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Nrojw6
 ---
 title: "Phpstan Level10 Success Nov"
 type: concept
@@ -24,6 +27,7 @@ related:
 > Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 Vedi il file canonico: [phpstan-level10-success-nov.md](./phpstan-level10-success-nov.md)
+<<<<<<< .merge_file_4sFAcb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -187,3 +191,5 @@ Risultato ottenuto seguendo rigorosamente:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Nrojw6

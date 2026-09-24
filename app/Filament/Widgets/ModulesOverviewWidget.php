@@ -20,11 +20,16 @@ use Modules\Xot\Actions\Filament\GetModulesNavigationItems;
 class ModulesOverviewWidget extends XotBaseWidget
 {
     /** @var view-string */
+<<<<<<< .merge_file_O3ZOsP
 =======
 class ModulesOverviewWidget extends Widget
 {
 >>>>>>> 8d801bbe (Check & fix styling)
     protected string $view = 'xot::filament.widgets.modules-overview';
+=======
+    /** @var view-string */
+    protected string $view;
+>>>>>>> .merge_file_hrRvx6
 
     protected int|string|array $columnSpan = 'full';
 
@@ -126,6 +131,7 @@ class ModulesOverviewWidget extends Widget
     /**
      * Ottiene la descrizione per un modulo.
      *
+<<<<<<< .merge_file_O3ZOsP
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -138,6 +144,9 @@ class ModulesOverviewWidget extends Widget
      * @param string $module Nome del modulo
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  string  $module  Nome del modulo
+>>>>>>> .merge_file_hrRvx6
      * @return string Descrizione del modulo
      */
     private function getModuleDescription(string $module): string

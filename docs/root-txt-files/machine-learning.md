@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_ATwKAO
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,6 +29,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_eVHBxD
 title: "Machine learning"
 type: reference
 status: active
@@ -42,6 +45,7 @@ note: "Convertito da machine_learning.txt (documento) da convert-docs-txt-to-md.
 https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!!!!
 
 ----------------------------------------
+<<<<<<< .merge_file_ATwKAO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -52,6 +56,8 @@ https://laravel-news.com/google-natural-language-api-for-laravel   !!!!!!!!!!!!!
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_eVHBxD
 rephrasing
 https://cloudmersive.com/nlp-api  !!!!!!!!!!!!!!!
 
@@ -92,6 +98,7 @@ https://nocodeapi.net/
 https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 
+<<<<<<< .merge_file_ATwKAO
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -109,6 +116,8 @@ https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics
 
 >>>>>>> laraxot/dev
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_eVHBxD
 //--------------------------------------------------------------------------------------------------------
 PHP extension wrapping the MITIE data extraction C++ library. For named entity extraction in PHP.
 https://github.com/rjjakes/MITIE-PHP

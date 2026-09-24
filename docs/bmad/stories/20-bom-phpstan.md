@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_nsJ4Ha
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Zf1c5R
 # BMAD Story 20 — Bom: 7 errori PHPStan
 
 **Modulo:** `Bom`

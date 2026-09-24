@@ -1,5 +1,6 @@
 # Laraxot Migration Architecture Philosophy
 
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -22,6 +23,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xelx2t
 ## Core Migration Principles
 
 ### The Single Source of Truth Principle
@@ -30,6 +33,7 @@
 
 ### Why This Architecture Matters
 
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 1. **Predictable Schema Evolution**: Clear, linear progression of database changes
@@ -43,6 +47,9 @@
 =======
 1. **Predictable Schema Evolution**: Clear, linear progression of database changes
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+1. **Predictable Schema Evolution**: Clear, linear progression of database changes
+>>>>>>> .merge_file_Xelx2t
 2. **Environment Consistency**: Same migration order across all environments
 3. **Maintainability**: Single file to modify for each table's base schema
 4. **DRY Compliance**: Eliminates redundant schema definitions
@@ -83,6 +90,7 @@ $this->tableUpdate(function (Blueprint $table) {
 ### Migration Types and Their Purpose
 
 #### 1. Table Creation Migrations
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,11 +101,14 @@ $this->tableUpdate(function (Blueprint $table) {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xelx2t
 - **Pattern**: `{timestamp}_create_{table}_table.php`
 - **Purpose**: Define the base table schema
 - **Rule**: Exactly ONE per table per module
 - **Example**: `2024_01_01_000011_create_roles_table.php`
 
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -116,6 +127,8 @@ $this->tableUpdate(function (Blueprint $table) {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xelx2t
 #### 2. Schema Evolution Migrations
 - **Pattern**: `{timestamp}_{action}_{table}.php`
 - **Purpose**: Modify existing table schema
@@ -159,6 +172,7 @@ Modules/User/database/migrations/
 ├── 2024_01_01_000001_create_users_table.php
 ├── 2024_01_01_000011_create_roles_table.php      # Single authoritative
 ├── 2024_01_01_000021_create_permissions_table.php
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -173,6 +187,8 @@ Modules/User/database/migrations/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xelx2t
 └── 2024_06_15_143000_add_team_id_to_roles.php    # Schema evolution
 ```
 
@@ -181,6 +197,7 @@ Modules/User/database/migrations/
 When you need to modify a table:
 
 1. **NEVER** create a new `create_table` migration
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -194,6 +211,8 @@ When you need to modify a table:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xelx2t
 2. **ALWAYS** create a schema evolution migration
 3. **USE** `XotBaseMigration::tableUpdate()` for safe modifications
 
@@ -259,6 +278,7 @@ Each module should:
 3. Document migration dependencies in module README
 4. Follow consistent naming conventions
 
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -488,6 +508,8 @@ protected function registerLivewireAuthWidgets(): void
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Xelx2t
 ### Exception Cases
 
 **The ONLY exception** to the one-migration-per-table rule:
@@ -498,6 +520,7 @@ protected function registerLivewireAuthWidgets(): void
 
 ---
 
+<<<<<<< .merge_file_LIzjyy
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
@@ -511,3 +534,6 @@ protected function registerLivewireAuthWidgets(): void
 =======
 **Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Philosophy Summary**: In Laraxot, migrations are the definitive history of your database schema. Keep that history clean, linear, and unambiguous. One table, one creation story.
+>>>>>>> .merge_file_Xelx2t

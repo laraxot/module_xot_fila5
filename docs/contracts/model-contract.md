@@ -43,15 +43,19 @@ interface ModelContract
 5. Integrazione con Laravel Eloquent
 
 ## Collegamenti
+<<<<<<< .merge_file_hfcm9e
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_jTB2xu
 - [Model Guidelines](../models/README.md)
 - [Database Guidelines](../DATABASE-GUIDELINES.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+<<<<<<< .merge_file_hfcm9e
 <<<<<<< HEAD
 =======
 =======
@@ -71,3 +75,5 @@ interface ModelContract
 =======
 - [Contracts Overview](./README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_jTB2xu

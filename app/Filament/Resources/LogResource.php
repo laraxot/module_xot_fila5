@@ -6,8 +6,8 @@ namespace Modules\Xot\Filament\Resources;
 
 <<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
-<<<<<<< HEAD
 use Filament\Support\Components\Component;
+<<<<<<< .merge_file_wVAdSb
 =======
 use Filament\Schemas\Components\Component;
 >>>>>>> laraxot/dev
@@ -17,6 +17,8 @@ use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Support\Components\Component;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PHJENY
 use Modules\Xot\Filament\Infolists\Components\FileContentEntry;
 use Modules\Xot\Filament\Resources\LogResource\Pages\CreateLog;
 use Modules\Xot\Filament\Resources\LogResource\Pages\ListLogs;
@@ -69,6 +71,7 @@ class LogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< .merge_file_wVAdSb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -77,11 +80,14 @@ class LogResource extends XotBaseResource
 =======
     #[\Override]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PHJENY
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< .merge_file_wVAdSb
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -90,6 +96,8 @@ class LogResource extends XotBaseResource
 =======
     #[\Override]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PHJENY
     public static function getPages(): array
     {
         return [

@@ -116,6 +116,7 @@ public function createUser(array $data): User
 - Document permission and role systems
 - Include social login integration guides
 
+<<<<<<< .merge_file_7qmO0I
 <<<<<<< HEAD
 <<<<<<< HEAD
 ### Quaeris Module
@@ -129,6 +130,9 @@ public function createUser(array $data): User
 =======
 ### Quaeris Module
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+### Quaeris Module
+>>>>>>> .merge_file_OoGwKg
 
 - Document survey management workflows
 - Document reporting and analytics features
@@ -163,6 +167,7 @@ public function createUser(array $data): User
 ---
 
 **Last Updated**: 2025-11-11
+<<<<<<< .merge_file_7qmO0I
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Standard Version**: 1.0
@@ -177,3 +182,6 @@ public function createUser(array $data): User
 =======
 **Standard Version**: 1.0
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Standard Version**: 1.0
+>>>>>>> .merge_file_OoGwKg

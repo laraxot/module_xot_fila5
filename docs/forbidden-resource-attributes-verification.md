@@ -82,6 +82,7 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 **Status**: ✅ **VERIFICA COMPLETATA**
 
 **Ultimo aggiornamento**: 2026-01-09
+<<<<<<< .merge_file_vNTPpQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -92,3 +93,5 @@ Le uniche proprietà vietate trovate sono commentate, quindi non attive. Il sist
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_WRPVHo

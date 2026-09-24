@@ -7,6 +7,7 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 ## Collegamenti
 
 - [Documentazione Completa del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)
+<<<<<<< .merge_file_rV0RVR
 <<<<<<< HEAD
 <<<<<<< .merge_file_mhFKA3
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
@@ -20,6 +21,9 @@ Questo documento descrive l'integrazione tra il sistema di documentazione di Xot
 =======
 - [Linee Guida Generali per la Documentazione](documentation-guidelines.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Linee Guida Generali per la Documentazione](./DOCUMENTATION-GUIDELINES.md)
+>>>>>>> .merge_file_ZztFMb
 
 ## Cos'è il Sistema di Prompt
 
@@ -41,6 +45,7 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 
 ### Come Utilizzare Entrambi i Sistemi
 
+<<<<<<< .merge_file_rV0RVR
 <<<<<<< HEAD
 <<<<<<< .merge_file_mhFKA3
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
@@ -54,6 +59,9 @@ Il sistema di documentazione di Xot e il sistema di prompt di bashscripts si com
 =======
 1. Consultare le [Linee Guida per la Documentazione](documentation-guidelines.md) di Xot per comprendere la struttura generale
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+1. Consultare le [Linee Guida per la Documentazione](./DOCUMENTATION-GUIDELINES.md) di Xot per comprendere la struttura generale
+>>>>>>> .merge_file_ZztFMb
 2. Utilizzare il [Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md) per istruzioni dettagliate
 
 ## Miglioramenti Recenti
@@ -75,6 +83,7 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 ## Collegamenti Correlati
 
 - [Sistema di Collegamenti della Documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< .merge_file_rV0RVR
 <<<<<<< HEAD
 <<<<<<< .merge_file_mhFKA3
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
@@ -88,5 +97,8 @@ Qualsiasi aggiornamento al sistema di prompt deve essere:
 =======
 - [Linee Guida per la Documentazione in Xot](documentation-guidelines.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Linee Guida per la Documentazione in Xot](./DOCUMENTATION-GUIDELINES.md)
+>>>>>>> .merge_file_ZztFMb
 - [Percorsi Relativi nella Documentazione](../../../../bashscripts/docs/PERCORSI_RELATIVI_DOCUMENTAZIONE.md)
 - [Documentazione del Sistema di Prompt](../../../../bashscripts/docs/PROMPTS_DOCUMENTATION_SYSTEM.md)

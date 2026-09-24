@@ -5,6 +5,7 @@
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
+<<<<<<< .merge_file_NLMezY
 <<<<<<< HEAD
 <<<<<<< HEAD
 base_predict_fila3_mono/
@@ -18,6 +19,9 @@ base_<nome progetto>_fila5_mono/
 =======
 base_predict_fila3_mono/
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+base_predict_fila3_mono/
+>>>>>>> .merge_file_T9sc4V
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli
@@ -155,6 +159,7 @@ Quando si identifica una nuova regola o pattern importante:
 4. **Windsurf**
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
+<<<<<<< .merge_file_NLMezY
 <<<<<<< HEAD
 <<<<<<< HEAD
    - [ ] Testare applicabilità
@@ -168,3 +173,6 @@ Quando si identifica una nuova regola o pattern importante:
 =======
    - [ ] Testare applicabilità
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+   - [ ] Testare applicabilità
+>>>>>>> .merge_file_T9sc4V

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_4KMORn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LyquGr
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali
@@ -221,6 +224,7 @@
 **Completato**: 2025-08-07
 **Durata refactor**: 15 minuti
 **Impatto**: TRASFORMATIVO
+<<<<<<< .merge_file_4KMORn
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -236,3 +240,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LyquGr

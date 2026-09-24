@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_GL0XJj
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rgZCRI
 # BMAD Story 14 — User: 12 errori PHPStan (test)
 
 **Modulo:** `User`

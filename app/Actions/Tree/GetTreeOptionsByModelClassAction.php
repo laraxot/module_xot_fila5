@@ -19,6 +19,7 @@ class GetTreeOptionsByModelClassAction
     public array $options = [];
 
     /**
+<<<<<<< .merge_file_hupkeo
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  class-string<HasRecursiveRelationshipsContract>  $class
@@ -30,11 +31,15 @@ class GetTreeOptionsByModelClassAction
      * @param class-string<HasRecursiveRelationshipsContract> $class
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  class-string<HasRecursiveRelationshipsContract>  $class
+>>>>>>> .merge_file_gg1rRn
      * @return array<int|string, string>
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
         /** @var HasRecursiveRelationshipsContract $model */
+<<<<<<< .merge_file_hupkeo
 <<<<<<< HEAD
 <<<<<<< HEAD
         $model = new $class;
@@ -44,6 +49,9 @@ class GetTreeOptionsByModelClassAction
 =======
         $model = new $class();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $model = new $class;
+>>>>>>> .merge_file_gg1rRn
 
         /** @var TreeCollection<int, Model&HasRecursiveRelationshipsContract> $collection */
         $collection = $model->newQuery()->get();

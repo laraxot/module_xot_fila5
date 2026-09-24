@@ -1,5 +1,6 @@
 # Best Practices
 
+<<<<<<< .merge_file_Zo4pwS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -14,6 +15,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zHYXXQ
 ## Laraxot Framework Standards
 
 ### Models
@@ -42,6 +45,7 @@
 
 ## Code Quality
 - PHPStan level 9+ for all new code
+<<<<<<< .merge_file_Zo4pwS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -87,10 +91,13 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zHYXXQ
 - Complete PHPDoc annotations
 - Use Safe library for unsafe functions
 - Follow PSR-12 coding standards
 
+<<<<<<< .merge_file_Zo4pwS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -147,11 +154,14 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zHYXXQ
 ## Documentation
 - All files in docs/ must be lowercase (except README.md)
 - Create bidirectional links between related documents
 - Update both module and root documentation
 - Include practical examples in all guides
+<<<<<<< .merge_file_Zo4pwS
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -220,3 +230,5 @@ Core module for the FixCity Platform.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_zHYXXQ

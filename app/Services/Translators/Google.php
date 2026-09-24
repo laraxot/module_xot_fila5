@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Services\Translators;
 
+<<<<<<< .merge_file_9degOI
 <<<<<<< HEAD
 <<<<<<< HEAD
 class Google extends BaseTranslator {}
@@ -27,3 +28,6 @@ class Google extends BaseTranslator
 {
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+class Google extends BaseTranslator {}
+>>>>>>> .merge_file_aN7g09

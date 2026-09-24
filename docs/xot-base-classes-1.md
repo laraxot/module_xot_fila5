@@ -18,6 +18,7 @@ The Xot base classes provide a centralized way to customize and extend functiona
   class DoctorResource extends XotBaseResource
   {
       // Resource definition
+<<<<<<< .merge_file_lH0ZAJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -37,6 +38,9 @@ The Xot base classes provide a centralized way to customize and extend functiona
 =======
       public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+      public function getFormSchema(): array
+>>>>>>> .merge_file_qbyupN
       {
           return [
               'full_name' => Forms\Components\TextInput::make('full_name'),
@@ -73,16 +77,20 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - Update this document if new Xot base classes are introduced.
 
 ## Links to Related Documentation
+<<<<<<< .merge_file_lH0ZAJ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_qbyupN
 - [Code Quality](../Xot/docs/CODE_QUALITY.md)
 - [Filament Extension Pattern](filament_extension_pattern.md)
 - [Filament Extension Pattern Analysis](filament_extension_pattern_analysis.md)
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
+<<<<<<< .merge_file_lH0ZAJ
 <<<<<<< HEAD
 =======
 =======
@@ -100,3 +108,5 @@ The Xot base classes provide a centralized way to customize and extend functiona
 - [Patient Module - Filament Customization](../../Patient/docs/FILAMENT_CUSTOMIZATION.md)
 - [Patient Module - Namespace Conventions](../../Patient/docs/NAMESPACE_CONVENTIONS.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_qbyupN

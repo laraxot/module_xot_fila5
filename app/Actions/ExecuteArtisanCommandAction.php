@@ -46,6 +46,7 @@ class ExecuteArtisanCommandAction
     /**
      * Esegue un comando Artisan e restituisce i risultati.
      *
+<<<<<<< .merge_file_aLorsq
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -63,12 +64,16 @@ class ExecuteArtisanCommandAction
      *                           =======
      *                           >>>>>>> laraxot/dev
      *
+=======
+     * @param  string  $command  Il comando Artisan da eseguire (senza "php artisan")
+>>>>>>> .merge_file_UEcqLe
      * @return array{
      *     command: string,
      *     output: list<string>,
      *     status: 'completed'|'failed',
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
+<<<<<<< .merge_file_aLorsq
      * <<<<<<< HEAD
 =======
      * @return array{
@@ -78,6 +83,10 @@ class ExecuteArtisanCommandAction
      *     exitCode: int
      * } Array con informazioni sull'esecuzione del comando
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     *
+     * @throws \RuntimeException Se il comando non è consentito o si verifica un errore
+>>>>>>> .merge_file_UEcqLe
      */
     public function execute(string $command): array
     {
@@ -185,6 +194,7 @@ class ExecuteArtisanCommandAction
 <<<<<<< HEAD
      * Verifica se un comando è presente nella lista dei comandi consentiti.
      *
+<<<<<<< .merge_file_aLorsq
      * <<<<<<< HEAD
      *
      * @param string $command Il comando da verificare
@@ -217,6 +227,9 @@ class ExecuteArtisanCommandAction
      * @param string $command Il comando da verificare
 >>>>>>> 8d801bbe (Check & fix styling)
      *
+=======
+     * @param  string  $command  Il comando da verificare
+>>>>>>> .merge_file_UEcqLe
      * @return bool True se il comando è consentito, false altrimenti
      */
     private function isCommandAllowed(string $command): bool

@@ -162,6 +162,7 @@ try {
 
 ```php
 // ContactResource.php
+<<<<<<< .merge_file_wlJ0in
 <<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
 public function getFormSchema(): array
@@ -175,6 +176,9 @@ public static function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_nX55OJ
 {
     return [
         TextInput::make('first_name'),
@@ -183,6 +187,7 @@ public function getFormSchema(): array
 }
 
 // CustomerResource.php - PATTERN SIMILE
+<<<<<<< .merge_file_wlJ0in
 <<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
 public function getFormSchema(): array
@@ -196,6 +201,9 @@ public static function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+public static function getFormSchema(): array
+>>>>>>> .merge_file_nX55OJ
 {
     return [
         TextInput::make('name')->required(),
@@ -288,6 +296,7 @@ protected function casts(): array
 ```php
 class ContactResource extends XotBaseResource
 {
+<<<<<<< .merge_file_wlJ0in
 <<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
     public function getFormSchema(): array
@@ -301,6 +310,9 @@ class ContactResource extends XotBaseResource
 =======
     public function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public static function getFormSchema(): array
+>>>>>>> .merge_file_nX55OJ
     {
         return [
             TextInput::make('first_name'),
@@ -427,6 +439,7 @@ try {
 
 ## 🔗 Collegamenti Correlati
 
+<<<<<<< .merge_file_wlJ0in
 <<<<<<< HEAD
 <<<<<<< .merge_file_9r4qzP
 - [Architettura Moduli](architecture.md)
@@ -440,6 +453,9 @@ try {
 =======
 - [Architettura Moduli](architecture.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Architettura Moduli](./ARCHITECTURE.md)
+>>>>>>> .merge_file_nX55OJ
 - [Best Practices Laravel 12](./LARAVEL_12_GUIDE.md)
 - [Pattern Filament](./FILAMENT_PATTERNS.md)
 - [Performance Optimization](./PERFORMANCE_GUIDE.md)

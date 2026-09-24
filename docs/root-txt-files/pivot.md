@@ -5,6 +5,7 @@ type: reference
 slug: pivot
 description: 'https://github.com/larastan/larastan/issues/515'
 tags: [migrato-da-txt, xot]
+<<<<<<< .merge_file_cO6rFw
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,6 +27,9 @@ converted_from: _pivot.txt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+converted_from: pivot.txt
+>>>>>>> .merge_file_rAVXA0
 created: 2026-08-24
 updated: 2026-08-24
 ---

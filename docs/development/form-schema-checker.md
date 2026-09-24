@@ -38,6 +38,7 @@ Lo script produce:
 
 ## Collegamenti Correlati
 - [Filament Best Practices](../FILAMENT_BEST_PRACTICES.md)
+<<<<<<< .merge_file_zJ8HJD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
@@ -57,3 +58,7 @@ Lo script produce:
 - [XotBaseResource Documentation](../architecture/xot_base_resource.md)
 - [PHPStan Configuration](../phpstan-usage.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [XotBaseResource Documentation](../architecture/xot_base_resource.md)
+- [PHPStan Configuration](../phpstan-usage.md)
+>>>>>>> .merge_file_ummUER

@@ -21,6 +21,7 @@ class PdfByHtmlAction
     /**
      * Genera un PDF dall'HTML fornito.
      *
+<<<<<<< .merge_file_5XlIcc
 <<<<<<< HEAD
      * <<<<<<< HEAD
      *
@@ -85,6 +86,14 @@ class PdfByHtmlAction
      *                                   >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string  $html  Contenuto HTML da convertire
+     * @param  string  $filename  Nome del file PDF
+     * @param  string  $disk  Disco di storage
+     * @param  string  $out  Tipo di output (download, path, etc.)
+     * @param  string  $orientation  Orientamento (P=Portrait, L=Landscape)
+     * @param  PdfEngineEnum  $engine  Engine da utilizzare
+>>>>>>> .merge_file_PPxlNf
      */
     public function execute(
         string $html,

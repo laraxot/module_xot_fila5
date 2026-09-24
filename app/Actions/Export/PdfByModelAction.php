@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Export;
 
+<<<<<<< .merge_file_xXZ3b0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -18,14 +19,19 @@ use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
 =======
 // use Modules\Xot\Services\ArrayService;
+=======
+>>>>>>> .merge_file_72QBVb
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Trans\GetTransKeyByModelClassAction;
 use Modules\Xot\Actions\View\GetViewByModelClassAction;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+<<<<<<< .merge_file_xXZ3b0
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_72QBVb
 
 class PdfByModelAction
 {
@@ -41,15 +47,6 @@ class PdfByModelAction
         /**
          * @var non-falsy-string&view-string
          */
-<<<<<<< HEAD
-        $view_name = app(GetViewByModelClassAction::class)->execute($model::class,'.show.pdf');
-
-        
-        $view_params = [
-            'view' => $view_name,
-            'row' => $model,
-            'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class,'.fields'),
-=======
         $view_name = app(GetViewByModelClassAction::class)->execute($model::class, '.show.pdf');
 =======
         $model_class = $model::class;
@@ -68,10 +65,13 @@ class PdfByModelAction
             'row' => $model,
 <<<<<<< HEAD
             'transKey' => app(GetTransKeyByModelClassAction::class)->execute($model::class, '.fields'),
+<<<<<<< .merge_file_xXZ3b0
 >>>>>>> laraxot/dev
 =======
             'transKey' => $module_low.'::'.Str::plural($model_name_low).'.fields',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_72QBVb
         ];
 
         $view = view($view_name, $view_params);

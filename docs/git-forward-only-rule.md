@@ -25,6 +25,7 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 - Storia preservata SEMPRE
 - Tracciabilità totale
 - Documentare correzioni con commit message chiari
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -36,6 +37,8 @@ Questa non è una raccomandazione, è una **legge del progetto**.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DGvpVM
 
 ## Il Perché
 
@@ -62,6 +65,7 @@ Gli errori sono maestri. Non si nascondono, si documentano e si correggono andan
 
 ## Workflow Corretto
 
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -84,6 +88,8 @@ git show HEAD~3:Modules/Foo/app/Bar.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DGvpVM
 ### Scenario 1: Ho committato un bug
 
 ```bash
@@ -125,6 +131,7 @@ git push
 git reset --hard HEAD~1
 
 # ✅ CORRETTO
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -132,6 +139,8 @@ git reset --hard HEAD~1
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DGvpVM
 # Sposta il commit sul branch giusto
 git checkout correct-branch
 git cherry-pick wrong-branch
@@ -141,6 +150,7 @@ git push
 git checkout wrong-branch
 git revert HEAD
 git push
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -156,6 +166,8 @@ git push
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DGvpVM
 ```
 
 ### Scenario 4: Voglio "annullare" modifiche
@@ -165,6 +177,7 @@ git push
 git reset --hard abc123
 
 # ✅ CORRETTO
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -172,11 +185,14 @@ git reset --hard abc123
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DGvpVM
 # Usa revert per creare un nuovo commit che annulla
 git revert HEAD~2..HEAD
 git push
 ```
 
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -200,6 +216,8 @@ git show <old-sha>:Modules/Xot/app/Datas/XotData.php
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DGvpVM
 ## Eccezioni Rarissime
 
 Le UNICHE 3 eccezioni accettabili:
@@ -226,6 +244,7 @@ Le UNICHE 3 eccezioni accettabili:
 3. **Team Trust**: Tutti si fidano della storia condivisa
 4. **Compliance**: Soddisfa audit e requisiti legali
 5. **Learning Culture**: Gli errori diventano lezioni documentate
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
@@ -239,6 +258,9 @@ Le UNICHE 3 eccezioni accettabili:
 =======
 6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+6. **Rollback Sicuro**: Posso sempre tornare indietro con `git revert`
+>>>>>>> .merge_file_DGvpVM
 
 ## Commit Message Format
 
@@ -281,6 +303,7 @@ Non è una best practice, è **l'unica pratica**.
 ---
 
 **Ultima revisione**: Novembre 2025
+<<<<<<< .merge_file_cURj7v
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Status**: Regola Assoluta e Immutabile
@@ -294,3 +317,6 @@ Non è una best practice, è **l'unica pratica**.
 =======
 **Status**: Regola Assoluta e Immutabile
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Status**: Regola Assoluta e Immutabile
+>>>>>>> .merge_file_DGvpVM

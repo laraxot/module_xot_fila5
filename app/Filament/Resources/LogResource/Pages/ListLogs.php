@@ -10,6 +10,7 @@ use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ViewAction;
+<<<<<<< .merge_file_jGgOaq
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -18,6 +19,8 @@ use Filament\Tables\Columns\TextColumn;
 =======
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JDcb34
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Xot\Filament\Resources\LogResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -31,6 +34,7 @@ class ListLogs extends XotBaseListRecords
 
 <<<<<<< HEAD
     #[\Override]
+<<<<<<< .merge_file_jGgOaq
 <<<<<<< HEAD
 =======
 =======
@@ -75,6 +79,8 @@ class ListLogs extends XotBaseListRecords
      */
     #[\Override]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JDcb34
     public function getTableFilters(): array
     {
         return [

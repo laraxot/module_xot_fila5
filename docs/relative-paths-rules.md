@@ -5,6 +5,7 @@
 > - [Struttura dei Prompt](./prompts.md)
 > - [Regole per i Prompt](./PROMPT_RULES.md)
 > - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -18,6 +19,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
 
 ## Regola Fondamentale
 
@@ -31,6 +34,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 
 ```markdown
 [Modulo Xot](./laravel/Modules/Xot/docs/README.md)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -41,12 +45,15 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
 ```
 
 ### Da un file in un modulo verso un altro modulo
 
 ```markdown
 [Altro Modulo](../../../AltroModulo/docs/README.md)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -57,12 +64,15 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
 ```
 
 ### Da un file in un modulo verso la root
 
 ```markdown
 [Documentazione Root](../../../../docs/README.md)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +83,8 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
 ```
 
 ## Errori Comuni da Evitare
@@ -80,6 +92,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 1. **MAI utilizzare percorsi assoluti** come:
    ```markdown
    [ERRATO](../Xot/docs/README.md)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -90,12 +103,15 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
    ```
 
 2. **MAI utilizzare percorsi che iniziano con /**:
    ```markdown
    [ERRATO](/docs/README.md)
    [ERRATO](/laravel/Modules/Xot/docs/README.md)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -107,12 +123,15 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
    ```
 
 3. **MAI utilizzare percorsi che non tengono conto della posizione relativa del file sorgente**:
    ```markdown
    [ERRATO](Modules/Xot/docs/README.md) <!-- Da un file nella root -->
    [ERRATO](../Xot/docs/README.md) <!-- Da un file in un modulo, senza contare correttamente i livelli -->
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -124,6 +143,8 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_W5lO03
    ```
 
 ## Come Calcolare Correttamente i Percorsi Relativi
@@ -139,6 +160,7 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 | Posizione File Sorgente | Posizione File Destinazione | Percorso Relativo Corretto |
 |-------------------------|------------------------------|----------------------------|
 | `/docs/README.md` | `/laravel/Modules/Xot/docs/README.md` | `./laravel/Modules/Xot/docs/README.md` |
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
@@ -152,6 +174,9 @@ Questa regola è fondamentale per garantire la portabilità della documentazione
 =======
 | `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+| `/laravel/Modules/Xot/docs/README.md` | `/docs/README.md` | `../../../../docs/README.md` |
+>>>>>>> .merge_file_W5lO03
 | `/laravel/Modules/Xot/docs/README.md` | `/laravel/Modules/User/docs/README.md` | `../../../User/docs/README.md` |
 | `/laravel/Modules/Xot/docs/structure.md` | `/laravel/Modules/Xot/docs/README.md` | `./README.md` |
 
@@ -174,6 +199,7 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 ## Riferimenti
 
 - [Markdown Link Syntax](https://www.markdownguide.org/basic-syntax/#links)
+<<<<<<< .merge_file_Aw4na1
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
@@ -187,3 +213,6 @@ L'uso di percorsi relativi garantisce che la documentazione funzioni correttamen
 =======
 - [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Relative vs Absolute URLs](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2)
+>>>>>>> .merge_file_W5lO03

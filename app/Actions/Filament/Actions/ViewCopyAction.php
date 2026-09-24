@@ -39,6 +39,7 @@ class ViewCopyAction extends XotBaseAction
     }
 
     /**
+<<<<<<< .merge_file_08sAyW
 <<<<<<< HEAD
      * <<<<<<< HEAD.
      *
@@ -52,6 +53,10 @@ class ViewCopyAction extends XotBaseAction
      * @param array<string, mixed> $arguments
      * @param array<string, mixed> $data
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  array<string, mixed>  $arguments
+     * @param  array<string, mixed>  $data
+>>>>>>> .merge_file_IB51Th
      */
     public function execute(array $arguments, array $data): void
     {

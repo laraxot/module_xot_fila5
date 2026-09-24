@@ -144,15 +144,19 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JixU7T
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 =======
 =======
@@ -162,6 +166,8 @@ abstract public static function getFormSchema(): array;
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JixU7T
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -603,15 +609,19 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JixU7T
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 =======
 =======
@@ -621,6 +631,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JixU7T
     {
         return [
             TextInput::make('field1')->required(),
@@ -698,15 +710,19 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_JixU7T
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 =======
 =======
@@ -716,6 +732,8 @@ class ArticleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_JixU7T
     {
         return [
             TextInput::make('title')
@@ -924,6 +942,7 @@ The Xot module is a comprehensive foundation providing:
 
 **Document Version:** 1.0
 **Generated:** 2025-11-19
+<<<<<<< .merge_file_7j51fX
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Author:** Claude Code Analysis
@@ -937,3 +956,6 @@ The Xot module is a comprehensive foundation providing:
 =======
 **Author:** Claude Code Analysis
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Author:** Claude Code Analysis
+>>>>>>> .merge_file_JixU7T

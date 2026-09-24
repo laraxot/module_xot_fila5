@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_eNXqPX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -5,6 +6,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_O8nF1m
 # Regola PSR-4 Namespace per Moduli Laravel
 
 ## Quando
@@ -34,6 +37,7 @@ namespace Modules\Patient\app\States;
 - [ ] Nessun namespace contiene `app` dopo il nome del modulo
 - [ ] Tutti gli use statement sono coerenti con la struttura delle cartelle
 - [ ] Dopo ogni modifica, esegui `composer dump-autoload`
+<<<<<<< .merge_file_eNXqPX
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,3 +53,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/psr4-namespa
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_O8nF1m

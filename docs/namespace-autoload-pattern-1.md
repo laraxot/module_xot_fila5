@@ -84,8 +84,8 @@ namespace Modules\ModuleName\App\Console\Commands;
 
 <<<<<<< HEAD
 - [Convenzioni di Namespace](../xot/docs/namespace_conventions.md)
-<<<<<<< HEAD
 - [Struttura Moduli](../xot/docs/module_structure.md)
+<<<<<<< .merge_file_pW95rV
 =======
 <<<<<<< HEAD
 - [Struttura Moduli](../xot/docs/module_structure.md)
@@ -97,3 +97,5 @@ namespace Modules\ModuleName\App\Console\Commands;
 - [Convenzioni di Namespace](../Xot/docs/namespace_conventions.md)
 - [Struttura Moduli](../Xot/docs/module_structure.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_qAlGSx

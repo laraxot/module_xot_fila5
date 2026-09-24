@@ -56,6 +56,7 @@ return [
 - [Filament Best Practices](../filament-best-practices.md)
 - [Form Components](../COMPONENTI_PERSONALIZZATI.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
+<<<<<<< .merge_file_pDtLNf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -69,3 +70,5 @@ return [
 - [Form Components](../componenti_personalizzati.md)
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_EvBcdU

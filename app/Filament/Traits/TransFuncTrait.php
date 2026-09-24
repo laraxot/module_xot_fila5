@@ -93,6 +93,7 @@ trait TransFuncTrait
     }
 
     /**
+<<<<<<< .merge_file_99ZJFJ
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string|array<int|string, mixed>|Translator|null  $trans
@@ -102,6 +103,9 @@ trait TransFuncTrait
 =======
      * @param string|array<int|string, mixed>|Translator|null $trans
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  string|array<int|string, mixed>|Translator|null  $trans
+>>>>>>> .merge_file_iwWIz9
      */
     protected static function formatTransFuncResult(string $key, string|array|Translator|null $trans): string
     {
@@ -124,6 +128,7 @@ trait TransFuncTrait
             return $trans;
         }
 
+<<<<<<< .merge_file_99ZJFJ
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($trans === null) {
@@ -133,6 +138,9 @@ trait TransFuncTrait
 =======
         if (null === $trans) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($trans === null) {
+>>>>>>> .merge_file_iwWIz9
             return static::persistGeneratedTransFuncLabel($key);
         }
 

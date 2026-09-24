@@ -17,12 +17,16 @@ use function Safe\preg_match;
  * Centralizes common Pivot configurations and behaviors.
  * The $connection is automatically set based on the child class namespace.
  *
+<<<<<<< .merge_file_pgLGxx
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_sfb8g5
  * @property string|int $id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property Carbon|null $deleted_at
+<<<<<<< .merge_file_pgLGxx
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -34,12 +38,15 @@ use function Safe\preg_match;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_sfb8g5
  * @property string|int|null $created_by
  * @property string|int|null $updated_by
  * @property string|int|null $deleted_by
  */
 abstract class XotBasePivot extends EloquentPivot
 {
+<<<<<<< .merge_file_pgLGxx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,6 +55,8 @@ abstract class XotBasePivot extends EloquentPivot
 =======
     /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_sfb8g5
     use HasXotFactory;
     use Updater;
 
@@ -90,6 +99,7 @@ abstract class XotBasePivot extends EloquentPivot
         // Extract module name from namespace: Modules\User\... → user
         $namespace = static::class;
         $matches = [];
+<<<<<<< .merge_file_pgLGxx
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
@@ -99,6 +109,9 @@ abstract class XotBasePivot extends EloquentPivot
 =======
         if (1 === preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) && isset($matches[1])) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (preg_match('/Modules\\\\(\w+)\\\\/', $namespace, $matches) === 1 && isset($matches[1])) {
+>>>>>>> .merge_file_sfb8g5
             return strtolower($matches[1]);
         }
 

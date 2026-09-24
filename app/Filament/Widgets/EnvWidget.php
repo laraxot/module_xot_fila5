@@ -11,10 +11,10 @@ use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Modules\Xot\Datas\EnvData;
 
+<<<<<<< .merge_file_5JSdlQ
 =======
 use Filament\Schemas\Schema;
 =======
@@ -37,6 +37,8 @@ use Modules\Xot\Datas\EnvData;
  * @property Schema $form
  */
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KvqCiW
 class EnvWidget extends XotBaseSchemaWidget
 {
     /** @var array<string, mixed>|null */
@@ -56,7 +58,8 @@ class EnvWidget extends Widget implements HasActions, HasForms
 
 <<<<<<< HEAD
     /** @var view-string */
-    protected string $view = 'xot::filament.widgets.env';
+    /** @var view-string */
+    protected string $view;
 
     /**
      * Raggruppamento visivo dei campi per Section, stile Laravel — un
@@ -93,6 +96,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
         $this->form->fill($this->data);
     }
 
+<<<<<<< .merge_file_5JSdlQ
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -105,6 +109,8 @@ class EnvWidget extends Widget implements HasActions, HasForms
 
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_KvqCiW
     public function submit(): void
     {
         if (! is_array($this->data)) {
@@ -183,11 +189,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
             'mail_from_name' => TextInput::make('mail_from_name'),
         ];
         /** @var array<string, Component> $selected */
-<<<<<<< HEAD
         $selected = $this->only === [] ? $all : Arr::only($all, $this->only);
-=======
-        $selected = [] === $this->only ? $all : Arr::only($all, $this->only);
->>>>>>> laraxot/dev
 
         $grouped = [];
         $components = [];
@@ -200,11 +202,7 @@ class EnvWidget extends Widget implements HasActions, HasForms
                     $grouped[$key] = true;
                 }
             }
-<<<<<<< HEAD
             if ($fields === []) {
-=======
-            if ([] === $fields) {
->>>>>>> laraxot/dev
                 continue;
             }
             $components[] = Section::make($label)->schema($fields);

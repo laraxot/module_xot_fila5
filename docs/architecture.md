@@ -98,15 +98,19 @@ abstract class XotBaseResource extends Resource
     use HasXotTable;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_YY6eBI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_v3bRBx
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_YY6eBI
 <<<<<<< HEAD
 =======
 =======
@@ -116,6 +120,8 @@ abstract class XotBaseResource extends Resource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v3bRBx
     {
         return static::getFormSchemaImplementation();
     }
@@ -153,6 +159,7 @@ abstract class XotBaseServiceProvider extends ServiceProvider
 - Registrazione automatica di componenti
 - Gestione centralizzata degli asset
 
+<<<<<<< .merge_file_YY6eBI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -181,6 +188,8 @@ Il file `composer.json` del modulo Xot è fondamentale per definire le sue dipen
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v3bRBx
 ## 🔄 **Flusso di Esecuzione**
 
 ### **1. Bootstrap Applicazione**
@@ -434,6 +443,7 @@ test('all models extend base model', function () {
 ## 🔗 **Collegamenti e Riferimenti**
 
 - [**README.md**](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_YY6eBI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -444,11 +454,14 @@ test('all models extend base model', function () {
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v3bRBx
 - [**Best Practices**](../project_docs/best-practices.md) - Best practices globali
 - [**Troubleshooting**](../project_docs/troubleshooting.md) - Risoluzione problemi
 
 ---
 
+<<<<<<< .merge_file_YY6eBI
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
@@ -462,3 +475,6 @@ test('all models extend base model', function () {
 =======
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
+>>>>>>> .merge_file_v3bRBx

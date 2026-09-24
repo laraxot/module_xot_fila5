@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_18xock
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,6 +24,8 @@ https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
 =======
 >>>>>>> .merge_file_qH3PjR
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_7zoW8i
 ---
 title: 'Soketi — risorse esterne'
 module: Xot
@@ -44,6 +47,7 @@ updated: 2026-08-24
 
 - <https://kbouzidi.com/real-time-events-with-laravel-and-soketi>
 - <https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2>
+<<<<<<< .merge_file_18xock
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_8r6bFP
@@ -65,3 +69,5 @@ https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
 =======
 https://blog.laravel.com/deploying-soketi-to-laravel-forge-part-2
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_7zoW8i

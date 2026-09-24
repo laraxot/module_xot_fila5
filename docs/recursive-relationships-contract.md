@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -24,6 +25,8 @@ related:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 # HasRecursiveRelationshipsContract - Documentazione Completa
 
 ## 📋 Panoramica
@@ -32,6 +35,7 @@ Il contratto `HasRecursiveRelationshipsContract` definisce l'interfaccia per mod
 
 ## 🏛️ Filosofia Laraxot
 
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +43,8 @@ Il contratto `HasRecursiveRelationshipsContract` definisce l'interfaccia per mod
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 ### Principio: Wrapper Type-Safe per Vendor Packages
 
 Laraxot non estende direttamente i trait vendor, ma crea:
@@ -51,6 +57,7 @@ Laraxot non estende direttamente i trait vendor, ma crea:
 - **Type Safety**: PHPStan livello 10 garantisce che tutti i tipi siano corretti
 - **Manutenibilità**: Se il vendor cambia, aggiorniamo solo il wrapper
 - **Testabilità**: Possiamo mockare il contratto invece del trait vendor
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +80,8 @@ Vedi anche [recursive-relationships-vendor-direct.md](recursive-relationships-ve
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 
 ## 📚 Struttura del Pacchetto Vendor
 
@@ -106,6 +115,7 @@ trait HasRecursiveRelationships
 
 Definisce tutti i metodi pubblici esposti dal trait vendor con tipi espliciti.
 
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -113,6 +123,8 @@ Definisce tutti i metodi pubblici esposti dal trait vendor con tipi espliciti.
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 ### 2. Trait Wrapper (`TypedHasRecursiveRelationships`)
 
 **File**: `Modules/Xot/app/Models/Traits/TypedHasRecursiveRelationships.php`
@@ -121,6 +133,7 @@ Wrapper che:
 - Usa il trait vendor con alias `protected`
 - Re-espone i metodi come `public` con tipi espliciti
 - Garantisce type safety per PHPStan
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -136,6 +149,8 @@ Regola STORY-346:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 
 ### 3. Uso nei Modelli
 
@@ -145,6 +160,7 @@ Regola STORY-346:
 namespace Modules\Limesurvey\Models;
 
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
@@ -158,6 +174,9 @@ use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 =======
 use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
+>>>>>>> .merge_file_foVBTp
 
 class LimeQuestion extends BaseModel implements HasRecursiveRelationshipsContract
 {
@@ -425,6 +444,7 @@ $hasParent = $question->hasParent();
 $hasChildren = $question->hasChildren();
 ```
 
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -432,6 +452,8 @@ $hasChildren = $question->hasChildren();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 ## 🧘 Filosofia Laraxot: Wrapper Pattern
 
 ### Perché Non Usare Direttamente il Trait Vendor?
@@ -440,6 +462,7 @@ $hasChildren = $question->hasChildren();
 2. **Manutenibilità**: Se il vendor cambia, aggiorniamo solo il wrapper
 3. **Testabilità**: Possiamo mockare il contratto invece del trait
 4. **Documentazione**: Il contratto documenta esplicitamente cosa è disponibile
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -456,10 +479,13 @@ $hasChildren = $question->hasChildren();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 
 ### Pattern di Implementazione
 
 ```php
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -467,6 +493,8 @@ $hasChildren = $question->hasChildren();
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 // ❌ SBAGLIATO - Usare direttamente il trait vendor
 use Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;
 
@@ -482,6 +510,7 @@ use Modules\Xot\Models\Traits\TypedHasRecursiveRelationships;
 class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 {
     use \Staudenmeir\LaravelAdjacencyList\Eloquent\HasRecursiveRelationships;  // Type safe
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -496,12 +525,15 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 }
 ```
 
 ## 📚 Riferimenti
 
 - [Vendor Package](https://github.com/staudenmeir/laravel-adjacency-list)
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [TypedHasRecursiveRelationships Trait](../app/Models/Traits/TypedHasRecursiveRelationships.php)
@@ -515,12 +547,16 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 =======
 - [TypedHasRecursiveRelationships Trait](../app/Models/Traits/TypedHasRecursiveRelationships.php)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [TypedHasRecursiveRelationships Trait](../app/Models/Traits/TypedHasRecursiveRelationships.php)
+>>>>>>> .merge_file_foVBTp
 - [Contracts and Interfaces](contracts-and-interfaces.md)
 - [PHPStan Contract Conflicts Resolution](phpstan-contract-conflicts-resolution.md)
 
 ## 🔄 Changelog
 
 ### 2025-01-18 - Aggiornamento Completo del Contratto
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -531,6 +567,8 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_foVBTp
 
 - ✅ Aggiunti metodi mancanti al contratto:
   - `getQualifiedParentKeyName(): string` - Nome qualificato della colonna parent
@@ -540,6 +578,7 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 - ✅ Corretto tipo di ritorno di `getParentKeyName()`: da `mixed` a `string`
 - ✅ Corretto tipo di ritorno di `getCustomPaths()`: da `array<string>` a `array<int|string, string>`
 - ✅ Allineato contratto con trait vendor `HasAdjacencyList` da `staudenmeir/laravel-adjacency-list`
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 - ✅ Aggiornato `BaseTreeModel` in Limesurvey per usare `TypedHasRecursiveRelationships` invece del trait vendor diretto
@@ -553,12 +592,16 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 =======
 - ✅ Aggiornato `BaseTreeModel` in Limesurvey per usare `TypedHasRecursiveRelationships` invece del trait vendor diretto
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- ✅ Aggiornato `BaseTreeModel` in Limesurvey per usare `TypedHasRecursiveRelationships` invece del trait vendor diretto
+>>>>>>> .merge_file_foVBTp
 - ✅ Corretto `getLocalKeyName()` in `LimeQuestion` con return type `string`
 - ✅ Documentazione completa aggiunta con esempi e best practices
 - ✅ Verificato PHPStan livello 10: nessun errore
 
 ---
 
+<<<<<<< .merge_file_29LHcH
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
@@ -572,3 +615,6 @@ class MyModel extends BaseModel implements HasRecursiveRelationshipsContract
 =======
 **Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Filosofia**: In Laraxot, rispettiamo i vendor packages ma creiamo wrapper type-safe per garantire qualità del codice e manutenibilità.
+>>>>>>> .merge_file_foVBTp

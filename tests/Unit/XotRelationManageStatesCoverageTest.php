@@ -53,6 +53,7 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
             $t->timestamps();
         });
 
+<<<<<<< .merge_file_CfaFO2
 <<<<<<< HEAD
 <<<<<<< HEAD
         $host = new XotCovRelationHost;
@@ -70,6 +71,9 @@ describe('Xot RelationX ManageRelated StatesChart', function (): void {
 =======
         $host = new XotCovRelationHost();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        $host = new XotCovRelationHost;
+>>>>>>> .merge_file_3HOMZ3
         $host->forceFill(['id' => 1, 'key' => 'k', 'value' => 'v']);
         $host->exists = true;
 

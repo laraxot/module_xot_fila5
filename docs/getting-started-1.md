@@ -78,6 +78,7 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
+<<<<<<< .merge_file_L2sfMs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -85,6 +86,8 @@ npm run dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aZs5fJ
 * [getting-started.md](../../../Gdpr/docs/getting-started.md)
 * [getting-started.md](../../../Xot/docs/getting-started.md)
 * [getting-started.md](../../../UI/docs/getting-started.md)
@@ -94,6 +97,7 @@ npm run dev
 ### Versione Incoming
 
 ---
+<<<<<<< .merge_file_L2sfMs
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -111,3 +115,5 @@ npm run dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aZs5fJ

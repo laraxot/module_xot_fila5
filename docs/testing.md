@@ -692,6 +692,7 @@ test('no memory leaks in repeated operations', function (): void {
 **Ultimo aggiornamento**: Dicembre 2024
 **Framework**: Pest v2.x
 **Coverage Target**: 90%+ per core framework
+<<<<<<< .merge_file_5PVUiU
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -708,3 +709,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/testing-guid
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_o5V0K9

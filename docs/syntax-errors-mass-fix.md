@@ -2,6 +2,7 @@
 
 > **Versione**: 1.0
 > **Ultima modifica**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< .merge_file_mnjbXM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -12,6 +13,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2jTNtf
 
 **Stato**: ✅ COMPLETATO
 **Causa Radice**: Conflitti Git risolti automaticamente con duplicazioni non rilevate
@@ -279,6 +282,7 @@ done < /tmp/broken_files.txt
 **Status**: ✅ COMPLETATO
 **Filosofia**: "Ogni bug è un maestro. Ogni fix è una lezione."
 **Cronologia**: Vedi [CHANGELOG.md](./CHANGELOG.md)
+<<<<<<< .merge_file_mnjbXM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -289,3 +293,5 @@ done < /tmp/broken_files.txt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2jTNtf

@@ -53,6 +53,7 @@ class ThemeAction
         return resource_path('themes/'.self::$currentTheme);
     }
 
+<<<<<<< .merge_file_Vwb4tN
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -82,4 +83,7 @@ class ThemeAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_YrMrtw
 }

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Xot Module - Complete Architecture Guide (2025)
@@ -11,6 +12,10 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# Xot Module - Complete Architecture Guide (2025)
+
+>>>>>>> .merge_file_yxskhh
 > **Last Updated:** 2025-11-19
 > **PHPStan Level:** 10
 > **Status:** Core Foundation Module
@@ -154,15 +159,19 @@ All Filament resources extend this base class:
 **Required Methods:**
 ```php
 <<<<<<< HEAD
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yxskhh
 abstract public function getFormSchema(): array;
 =======
 abstract public function getFormSchema(): array;
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 =======
 =======
@@ -172,6 +181,8 @@ abstract public static function getFormSchema(): array;
 =======
 abstract public static function getFormSchema(): array;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yxskhh
 abstract public static function getTableColumns(): array;
 // Optional: getInfolistSchema(), getRelations(), getPages()
 ```
@@ -609,15 +620,19 @@ class MyResource extends XotBaseResource
     protected static ?string $model = MyModel::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yxskhh
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 =======
 =======
@@ -627,6 +642,8 @@ class MyResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yxskhh
     {
         return [
             TextInput::make('field1')->required(),
@@ -704,15 +721,19 @@ class ArticleResource extends XotBaseResource
     protected static ?string $model = Article::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_yxskhh
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 =======
 =======
@@ -722,6 +743,8 @@ class ArticleResource extends XotBaseResource
 =======
     public static function getFormSchema(): array
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yxskhh
     {
         return [
             TextInput::make('title')
@@ -927,6 +950,7 @@ The Xot module is a comprehensive foundation providing:
 **Document Version:** 1.0
 **Generated:** 2025-11-19
 **Author:** Claude Code Analysis
+<<<<<<< .merge_file_djeowY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -947,3 +971,5 @@ See canonical documentation: ../../../../Themes/docs/shared-components/architect
 =======
 See canonical documentation: ../../../../Themes/docs/shared-components/architecture-complete.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yxskhh

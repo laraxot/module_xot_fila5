@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6STrI8
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -11,6 +12,8 @@
 =======
 >>>>>>> .merge_file_NNqFnH
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_cu7LO2
 ---
 title: 'video_player'
 module: Xot
@@ -27,6 +30,7 @@ updated: 2026-08-24
 
 <!-- Contenuto migrato da _docs/video_player.txt -->
 
+<<<<<<< .merge_file_6STrI8
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_5ACPjK
@@ -39,6 +43,8 @@ updated: 2026-08-24
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_cu7LO2
 1. Plyr.io:
 Plyr is quite simple, customizable and highly accessible HTML5 video player that also extends its support to Video and YouTube media players. It is popular enough among professionals and beginners due to its lightweight design that allows smooth processing even for larger video files. Plyr can make things simple with collection of effective elements to get jobs done correctly.
 
@@ -128,6 +134,7 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 ---------------------------------------------------------------------------------------------------------------
 https://www.codester.com/items/11695/vdrive-unlimited-video-convertor-tools-php
 ---------------------------------------------------------------------------------------------------------------
+<<<<<<< .merge_file_6STrI8
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -151,6 +158,9 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Addi
 =======
 https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video
+>>>>>>> .merge_file_cu7LO2
 ---------------------------------------------------------------------------------------------------------------
 https://spark.adobe.com/it-IT/sp/design/video/urn:aaid:sc:EU:d543a756-deaf-4b23-b79b-940d30c06ade
 ---------------------------------------------------------------------------------------------------------------
@@ -159,6 +169,7 @@ https://gist.github.com/jcamp/24d9d4882d81a83db598dac281056960
 https://shotstack.io/product/sdk/php/
 ---------------------------------------------------------------------------------------------------------------
 https://github.com/shotstack/php-demos  a pagamento ..
+<<<<<<< .merge_file_6STrI8
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -178,3 +189,6 @@ https://github.com/shotstack/php-demos  a pagamento ..
 =======
 ---------------------------------------------------------------------------------------------------------------
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+---------------------------------------------------------------------------------------------------------------
+>>>>>>> .merge_file_cu7LO2

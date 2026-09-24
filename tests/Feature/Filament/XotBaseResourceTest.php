@@ -11,8 +11,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('xot base resource extends filament resource', function (): void {
-<<<<<<< HEAD
     Assert::assertInstanceOf(Resource::class, new NavigationProbeResource);
+<<<<<<< .merge_file_1MOArW
 =======
     Assert::assertInstanceOf(Resource::class, new NavigationProbeResource());
 >>>>>>> laraxot/dev
@@ -27,6 +27,8 @@ use PHPUnit\Framework\Assert;
 test('xot base resource extends filament resource', function (): void {
     Assert::assertInstanceOf(Resource::class, new NavigationProbeResource());
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_TKc4g2
 });
 
 test('xot base resource has navigation icon', function (): void {
@@ -42,6 +44,7 @@ test('xot base resource has navigation sort', function (): void {
 });
 
 test('xot base resource can be instantiated', function (): void {
+<<<<<<< .merge_file_1MOArW
 <<<<<<< HEAD
 <<<<<<< HEAD
     Assert::assertInstanceOf(XotBaseResource::class, new NavigationProbeResource);
@@ -51,4 +54,7 @@ test('xot base resource can be instantiated', function (): void {
 =======
     Assert::assertInstanceOf(XotBaseResource::class, new NavigationProbeResource());
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    Assert::assertInstanceOf(XotBaseResource::class, new NavigationProbeResource);
+>>>>>>> .merge_file_TKc4g2
 });

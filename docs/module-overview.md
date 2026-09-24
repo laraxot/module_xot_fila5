@@ -83,6 +83,7 @@ Esempi chiave (non esaustivi):
 
 - `README.md` (indice ad alto livello)
 - `FILOSOFIA_MODULO_XOT.md` (filosofia/politica/dogmi, generato 2025-12-24)
+<<<<<<< .merge_file_AJoDJG
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,6 +94,8 @@ Esempi chiave (non esaustivi):
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_p76OfQ
 - `filament/` e `consolidated/` (guide dettagliate)
 
 ## Da migliorare (DRY + KISS)
@@ -101,6 +104,7 @@ Esempi chiave (non esaustivi):
 - **Ridurre dipendenze cross-module in classi base**: `XotBaseResource` importa `Modules\\Media\\Actions\\GetAttachmentsSchemaAction` (coupling). Valutare inversione di dipendenza o fallback opzionale.
 - **Normalizzare naming e link**: garantire link relativi e file docs in lowercase (tranne `README.md`).
 - **Testing**: migrazione sistematica dei test legacy a Pest (e evitare mega-classi con troppi metodi pubblici).
+<<<<<<< .merge_file_AJoDJG
 <<<<<<< HEAD
 <<<<<<< HEAD
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
@@ -114,3 +118,6 @@ Esempi chiave (non esaustivi):
 =======
 - **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- **Regole Filament v4**: verificare che le classi base e i macro/commenti “temporarily disabled” siano allineati con la versione Filament corrente.
+>>>>>>> .merge_file_p76OfQ

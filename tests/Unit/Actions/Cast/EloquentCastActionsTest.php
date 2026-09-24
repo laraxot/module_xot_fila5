@@ -11,9 +11,9 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('safe array by model cast action works', function () {
-<<<<<<< HEAD
     $model = new class extends XotBaseModel
     {
+<<<<<<< .merge_file_TSWiss
 =======
     $model = new class extends XotBaseModel {
 >>>>>>> laraxot/dev
@@ -28,6 +28,8 @@ use PHPUnit\Framework\Assert;
 test('safe array by model cast action works', function () {
     $model = new class extends XotBaseModel {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5Nm799
         protected $attributes = [
             'id' => 1,
             'name' => 'Test',
@@ -43,6 +45,7 @@ test('safe array by model cast action works', function () {
 });
 
 test('safe attribute cast action works', function () {
+<<<<<<< .merge_file_TSWiss
 <<<<<<< HEAD
 <<<<<<< HEAD
     $model = new class extends XotBaseModel
@@ -53,6 +56,10 @@ test('safe attribute cast action works', function () {
 =======
     $model = new class extends XotBaseModel {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $model = new class extends XotBaseModel
+    {
+>>>>>>> .merge_file_5Nm799
         protected $attributes = [
             'str' => 'test',
             'int' => 123,

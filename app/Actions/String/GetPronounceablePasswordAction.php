@@ -13,6 +13,7 @@ class GetPronounceablePasswordAction
     /**
      * Genera una password pronunciabile con caratteri speciali e numeri.
      *
+<<<<<<< .merge_file_DbkA0J
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  int  $length  Lunghezza minima della password (default: 12)
@@ -24,6 +25,9 @@ class GetPronounceablePasswordAction
      * @param int $length Lunghezza minima della password (default: 12)
      *
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+     * @param  int  $length  Lunghezza minima della password (default: 12)
+>>>>>>> .merge_file_8CSl8B
      * @return string Password generata
      */
     public function execute(int $length = 12): string
@@ -63,6 +67,7 @@ class GetPronounceablePasswordAction
         }
 
         // Verifica che la password non sia vuota prima di accedere agli offset
+<<<<<<< .merge_file_DbkA0J
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (strlen($password) === 0) {
@@ -72,6 +77,9 @@ class GetPronounceablePasswordAction
 =======
         if (0 === strlen($password)) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (strlen($password) === 0) {
+>>>>>>> .merge_file_8CSl8B
             // Fallback: genera almeno una consonante e una vocale
             $password = $consonants[array_rand($consonants)].$vowels[array_rand($vowels)];
         }

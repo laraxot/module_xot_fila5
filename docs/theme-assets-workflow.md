@@ -1,5 +1,6 @@
 # 🎨 Theme Assets Workflow - CSS/JS Frontend
 
+<<<<<<< .merge_file_bI6RmE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -15,6 +16,8 @@ Related documents:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NQaanY
 **⚠️ REGOLA CRITICA**: Per modifiche CSS/JS del frontend, lavorare SEMPRE nella cartella del tema, NON nella root Laravel.
 
 ## 📁 Struttura Corretta
@@ -52,6 +55,7 @@ npm run copy
 
 ## ✅ Processo Corretto
 1. **Modifica sorgenti** in `/Themes/[Theme]/resources/`
+<<<<<<< .merge_file_bI6RmE
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -62,6 +66,8 @@ npm run copy
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_NQaanY
 2. **Build assets** con `npm run build` dalla cartella tema
 3. **Copy assets** con `npm run copy` dalla cartella tema
 4. **Verifica risultato** nel browser
@@ -121,6 +127,7 @@ export default defineConfig({
 
 ---
 
+<<<<<<< .merge_file_bI6RmE
 <<<<<<< HEAD
 <<<<<<< HEAD
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
@@ -134,3 +141,6 @@ export default defineConfig({
 =======
 **⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
+>>>>>>> .merge_file_NQaanY

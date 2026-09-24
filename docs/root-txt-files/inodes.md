@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_6RCJIs
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9,6 +10,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LE6yf6
 title: 'Inodes'
 module: Xot
 type: reference
@@ -20,6 +23,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_6RCJIs
 -----------------------------------------------------------
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -38,6 +42,8 @@ updated: 2026-08-27
 note: "Convertito da _inodes.txt (documento) da convert-docs-txt-to-md.py."
 ---
 
+=======
+>>>>>>> .merge_file_LE6yf6
 # Inodes
 
 --------------------------------------------------------------
@@ -46,6 +52,7 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 /dev/xvda1      7692288 652294 7039994    9%      /
 
 --------------------------------------------------------------
+<<<<<<< .merge_file_6RCJIs
 >>>>>>> laraxot/dev
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -54,6 +61,8 @@ Filesystem      Inodes  IUsed   IFree    IUse% Mounted on
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_LE6yf6
 $ sudo find / -xdev -printf '%h\0' | sort -z | uniq -cz | sort -nrzk 1 | tr '\0' '\n' | head -n 50
 
 -------------------------------------------------------------------

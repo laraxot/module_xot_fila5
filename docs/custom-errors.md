@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -20,6 +21,8 @@ https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 =======
 >>>>>>> .merge_file_ZZJKsV
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_v9Nbeu
 ---
 title: "Custom errors"
 type: reference
@@ -35,6 +38,7 @@ note: "Convertito da custom_errors.txt (documento) da convert-docs-txt-to-md.py.
 
 https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_DAzZsy
@@ -52,6 +56,8 @@ https://tutsforweb.com/how-to-create-custom-404-page-laravel/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v9Nbeu
 public function render($request, Exception $exception)
 {
     if ($this->isHttpException($exception)) {
@@ -59,6 +65,7 @@ public function render($request, Exception $exception)
             return response()->view('errors.' . $exception->getStatusCode(), [], $exception->getStatusCode());
         }
     }
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -73,11 +80,14 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v9Nbeu
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -99,12 +109,15 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v9Nbeu
 public function render($request, Exception $exception)
 {
     if ($this->isHttpException($exception)) {
         if ($exception->getStatusCode() == 404) {
             return response()->view('errors.' . '404', [], 404);
         }
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -126,10 +139,13 @@ public function render($request, Exception $exception)
 =======
          
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v9Nbeu
         if ($exception->getStatusCode() == 500) {
             return response()->view('errors.' . '500', [], 500);
         }
     }
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -144,11 +160,14 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v9Nbeu
  
     return parent::render($request, $exception);
 }
 
 
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -170,12 +189,15 @@ public function render($request, Exception $exception)
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_v9Nbeu
 public function render($request, Exception $exception)
 {
     if ($exception instanceof TestingHttpException) {
         return response()->view('errors.testing');
     }
     return parent::render($request, $exception);
+<<<<<<< .merge_file_ioF917
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -195,3 +217,6 @@ public function render($request, Exception $exception)
 =======
 }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+}
+>>>>>>> .merge_file_v9Nbeu

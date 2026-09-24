@@ -70,6 +70,7 @@ class RouteServiceProvider extends ServiceProvider
         $lang = app()->getLocale();
         if ($user instanceof Model) {
             $userLang = $user->getAttribute('lang');
+<<<<<<< .merge_file_VcSkYj
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (is_string($userLang) && $userLang !== '') {
@@ -79,6 +80,9 @@ class RouteServiceProvider extends ServiceProvider
 =======
             if (is_string($userLang) && '' !== $userLang) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if (is_string($userLang) && $userLang !== '') {
+>>>>>>> .merge_file_XIxznn
                 $lang = $userLang;
             }
         }
@@ -94,6 +98,7 @@ class RouteServiceProvider extends ServiceProvider
 
         if (in_array(request()->segment(1), $langs, false)) {
             $lang = request()->segment(1);
+<<<<<<< .merge_file_VcSkYj
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($lang !== null) {
@@ -103,6 +108,9 @@ class RouteServiceProvider extends ServiceProvider
 =======
             if (null !== $lang) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            if ($lang !== null) {
+>>>>>>> .merge_file_XIxznn
                 app()->setLocale($lang);
             }
         }

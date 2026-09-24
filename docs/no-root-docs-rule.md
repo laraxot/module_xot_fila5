@@ -40,6 +40,7 @@ find var/www/html/_bases/base_<nome progetto>/docs$|^docs$)"
 
 ## DATA IMPLEMENTAZIONE:
 2025-08-08 - Regola implementata e verificata
+<<<<<<< .merge_file_AfvNQ6
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -62,3 +63,8 @@ Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
 ## RESPONSABILITÀ:
 Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+## RESPONSABILITÀ:
+Tutti gli sviluppatori e AI devono rispettare questa regola senza eccezioni.
+>>>>>>> .merge_file_eCXUGR

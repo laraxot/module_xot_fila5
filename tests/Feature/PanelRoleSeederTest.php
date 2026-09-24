@@ -8,6 +8,7 @@ use Modules\Xot\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_okPc9q
 <<<<<<< HEAD
 <<<<<<< HEAD
 /**
@@ -17,6 +18,9 @@ uses(TestCase::class);
 =======
 /*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+/**
+>>>>>>> .merge_file_qqwGYg
  * `BaseUser::canAccessPanel()` apre un pannello a chi ha il ruolo omonimo al suo
  * id. Finche' nessuno creava quei ruoli, ogni pannello verticale rispondeva 403
  * su un database appena migrato: 23 test lo dimostravano e nessuno leggeva il
@@ -31,6 +35,7 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 
     Role::query()->whereIn('name', $panelIds)->delete();
 
+<<<<<<< .merge_file_okPc9q
 <<<<<<< HEAD
 <<<<<<< HEAD
     (new PanelRoleSeeder)->run();
@@ -40,6 +45,9 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 =======
     (new PanelRoleSeeder())->run();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    (new PanelRoleSeeder)->run();
+>>>>>>> .merge_file_qqwGYg
 
     foreach ($panelIds as $panelId) {
         expect(Role::query()->where('name', $panelId)->exists())
@@ -50,6 +58,7 @@ it('crea un ruolo per ogni pannello registrato', function (): void {
 it('non duplica i ruoli se gira due volte', function (): void {
     $this->prepareSharedSqliteForTesting();
 
+<<<<<<< .merge_file_okPc9q
 <<<<<<< HEAD
 <<<<<<< HEAD
     $seeder = new PanelRoleSeeder;
@@ -59,6 +68,9 @@ it('non duplica i ruoli se gira due volte', function (): void {
 =======
     $seeder = new PanelRoleSeeder();
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    $seeder = new PanelRoleSeeder;
+>>>>>>> .merge_file_qqwGYg
     $seeder->run();
     $seeder->run();
 

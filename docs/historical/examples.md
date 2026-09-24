@@ -239,6 +239,7 @@ class ExampleResource extends XotBaseResource
      * @return array<int, \Filament\Forms\Components\Component>
      */
 <<<<<<< HEAD
+<<<<<<< .merge_file_KRR5Qf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -249,10 +250,13 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rlNBOx
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRR5Qf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -265,6 +269,8 @@ class ExampleResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rlNBOx
     {
         return [
             Forms\Components\Section::make('Informazioni Base')
@@ -540,6 +546,7 @@ class ExampleWithCustomActionsResource extends XotBaseResource
     protected static ?string $model = \Modules\Example\app\Models\Example::class;
 
 <<<<<<< HEAD
+<<<<<<< .merge_file_KRR5Qf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -550,10 +557,13 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rlNBOx
     public function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> laraxot/dev
+<<<<<<< .merge_file_KRR5Qf
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -566,6 +576,8 @@ class ExampleWithCustomActionsResource extends XotBaseResource
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_rlNBOx
     {
         return [
             Forms\Components\TextInput::make('nome')

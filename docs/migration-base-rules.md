@@ -23,6 +23,7 @@
 ## Cross-reference
 - [Update migrazioni Performance](../../Performance/project_docs/migration_update_rules.md)
 - [Root MODULE_NAMESPACE_RULES.md](../../../project_docs/MODULE_NAMESPACE_RULES.md)
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -34,6 +35,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 ---
 
@@ -42,6 +45,7 @@
 - [Ripresa lavoro migrazioni in root](../../../project_docs/MODULE_NAMESPACE_RULES.md)
 
 Ultimo aggiornamento: 2025-05-13
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -54,6 +58,8 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 ---
 
@@ -61,6 +67,7 @@ Ultimo aggiornamento: 2025-05-13
 
 - Ogni Action custom Filament deve avere un nome univoco passato a `make()` o impostato come default.
 - Vedi esempio e motivazione in [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md#2025-05-14-regola-nome-univoco-per-headeraction-filament)
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -71,11 +78,14 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 ---
 
 **Backlink modulo Performance:**
 - [Modules/Performance/project_docs/azioni_organizzativa.md](../../Performance/project_docs/azioni_organizzativa.md)
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,12 +96,15 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 ---
 
 ## Pattern definitivo HeaderAction custom Filament 3
 
 - Segui SEMPRE il pattern documentato in [Modules/Performance/project_docs/azioni_organizzativa.md#2025-05-14-pattern-definitivo-headeraction-custom-filament-3]
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -102,11 +115,14 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 - Il pattern Filament 2 (override statico di make) è obsoleto e genera errori: non usarlo mai nei nuovi moduli o refactoring.
 
 ---
 
 ## Regola colonne tabellari Filament (2025-05-14)
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -117,6 +133,8 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 - Le colonne delle tabelle Filament devono essere derivate solo dal modello e dalla migrazione.
 - La UI può mostrare solo un sottoinsieme delle colonne, secondo le regole documentate in Performance.
@@ -125,6 +143,7 @@ Ultimo aggiornamento: 2025-05-13
 ---
 
 ## Regola estensione modelli aggregati (2025-05-15)
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -135,6 +154,8 @@ Ultimo aggiornamento: 2025-05-13
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 - I modelli aggregati e di totali del modulo Performance (es. OrganizzativaTotValutatoreId) devono estendere il `BaseModel` locale (`Modules\Performance\Models\BaseModel`), **NON** `Modules\Xot\Models\BaseModel`.
 - **Motivazione**: isolamento, override locale, necessità di personalizzazione e compatibilità con logiche specifiche del modulo Performance.
@@ -144,6 +165,7 @@ Ultimo aggiornamento: 2025-05-13
 - Ogni violazione va documentata e corretta anche nella root docs.
 - Vedi dettaglio e memoria storica in [Modules/Performance/project_docs/organizzativa-models.md](../../Performance/project_docs/organizzativa-models.md#organizzativatotvalutatoreid-regola-di-estensione)
 - [docs/links.md root](../../../project_docs/links.md)
+<<<<<<< .merge_file_4i0A2C
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -163,11 +185,16 @@ Ultimo aggiornamento: 2025-05-13
 - Ogni violazione va documentata e corretta anche nella root docs.
 - Vedi dettaglio e memoria storica in [Modules/Performance/project_docs/organizzativa-models.md](../../Performance/project_docs/organizzativa-models.md#organizzativatotvalutatoreid-regola-di-estensione)
 - [docs/links.md root](../../../../docs/project/links.md)
+=======
+>>>>>>> .merge_file_DOYpc0
 
 > ⚠️ **Warning**: Estendere Xot\BaseModel può causare override indesiderati, perdita di flessibilità e problemi di compatibilità con logiche locali. Seguire sempre la regola sopra per tutti i modelli di totali/aggregati in Performance.
 
 ---
+<<<<<<< .merge_file_4i0A2C
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_DOYpc0

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_gtwIYm
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,6 +95,8 @@ See canonical documentation: ../../../../Themes/docs/shared-components/README-Mo
 =======
 >>>>>>> laraxot/dev
 =======
+=======
+>>>>>>> .merge_file_IFvmo3
 ---
 module: Xot
 topic: readme
@@ -101,7 +104,10 @@ canonical: ./README.md
 ---
 
 See canonical documentation: [README.md](./README.md)
+<<<<<<< .merge_file_gtwIYm
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_IFvmo3

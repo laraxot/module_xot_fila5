@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_cMh2mO
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -50,6 +51,8 @@ metadata:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_C00KC7
 # BMAD Story 15 — Catalog: 12 errori PHPStan
 
 **Modulo:** `Catalog`

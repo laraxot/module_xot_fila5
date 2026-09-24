@@ -35,6 +35,7 @@ abstract class XotBaseFormComponent extends Field
     {
         $label = parent::getLabel();
 
+<<<<<<< .merge_file_YfVORJ
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($label === null) {
@@ -44,6 +45,9 @@ abstract class XotBaseFormComponent extends Field
 =======
         if (null === $label) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if ($label === null) {
+>>>>>>> .merge_file_TGU5pz
             return Str::title($this->getName());
         }
 

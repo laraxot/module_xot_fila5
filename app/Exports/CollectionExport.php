@@ -56,9 +56,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     public ?array $fields = null;
 
     /**
-<<<<<<< HEAD
      * @param  SupportCollection<int|string, mixed>|EloquentCollection<int, Model>  $collection
      * @param  array<int|string, string>  $fields
+<<<<<<< .merge_file_FG1ssz
 =======
      * @param SupportCollection<int|string, mixed>|EloquentCollection<int, Model> $collection
      * @param array<int|string, string>                                           $fields
@@ -71,6 +71,8 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
      * @param SupportCollection<int, mixed>|EloquentCollection<int, Model> $collection
      * @param array<int, string>                                           $fields
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CE0jGE
      */
     public function __construct(SupportCollection|EloquentCollection $collection, ?string $transKey = null, array $fields = [])
     {
@@ -106,11 +108,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     {
 <<<<<<< HEAD
         $fields = $this->fields;
-<<<<<<< HEAD
         if ($fields === null || $fields === []) {
-=======
-        if (null === $fields || [] === $fields) {
->>>>>>> laraxot/dev
             return app(TransArrayAction::class)->execute($this->getHead(), $this->transKey);
         }
 
@@ -155,10 +153,13 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
     }
 
     /**
+<<<<<<< .merge_file_FG1ssz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CE0jGE
      * @return array<int|string, mixed>
      */
     public function map(mixed $row): array
@@ -168,6 +169,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
             Assert::isInstanceOf($row, Model::class);
             $res = app(SafeArrayByModelCastAction::class)->execute($row);
 
+<<<<<<< .merge_file_FG1ssz
             return array_values(Arr::map($res, function (mixed $value, string $_key): string {
                 if ($value instanceof \BackedEnum) {
                     if (method_exists($value, 'getLabel')) {
@@ -186,6 +188,9 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
             return array_values(Arr::map($res, fn (mixed $value, mixed $_key): string => self::stringifyExportValue($value)));
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+            return array_values(Arr::map($res, fn (mixed $value): string => self::castCell($value)));
+>>>>>>> .merge_file_CE0jGE
         }
 
         $data = [];
@@ -193,42 +198,26 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 <<<<<<< HEAD
         foreach ($this->fields as $key => $field) {
             $path = \is_string($key) ? $key : $field;
-            $value = data_get($row, $path);
-            if (\is_object($value)) {
-                if (enum_exists($value::class) && method_exists($value, 'getLabel')) {
-                    $value = $value->getLabel();
-                }
-            }
-            $data[] = SafeStringCastAction::cast($value);
-=======
-     * @return list<string>
-     */
-    public function map(mixed $row): array
-    {
-        if (null === $this->fields || [] === $this->fields) {
-            Assert::isInstanceOf($row, Model::class);
-            $res = app(SafeArrayByModelCastAction::class)->execute($row);
-
-            return array_values(Arr::map($res, fn (mixed $value): string => self::castCell($value)));
-        }
-
-        $data = [];
-        foreach ($this->fields as $key => $value) {
-            $path = \is_string($key) ? $key : $value;
             $data[] = self::castCell(data_get($row, $path));
+<<<<<<< .merge_file_FG1ssz
 >>>>>>> laraxot/dev
 =======
         foreach ($this->fields as $field) {
             $value = data_get($row, $field);
             $data[] = SafeStringCastAction::cast(self::normalizeExportFieldValue($value));
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CE0jGE
         }
 
         return $data;
     }
+<<<<<<< .merge_file_FG1ssz
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> .merge_file_CE0jGE
 
     /**
      * Stessa cella per CollectionExport e XotBaseExporter (export_xls = export_xlsx).
@@ -254,6 +243,7 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
 
         return SafeStringCastAction::cast($value);
     }
+<<<<<<< .merge_file_FG1ssz
 >>>>>>> laraxot/dev
 =======
         return SafeStringCastAction::cast($value);
@@ -272,4 +262,6 @@ class CollectionExport implements FromCollection, ShouldQueue, WithHeadings, Wit
         return $value;
     }
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_CE0jGE
 }

@@ -161,6 +161,7 @@ Before committing any model:
 **CRITICAL**: Always use `protected function casts(): array` in new code and migrate old code when touching files.
 
 **Last Updated**: 2026-01-13  
+<<<<<<< .merge_file_pi6l6b
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Laravel Version**: 11+  
@@ -179,3 +180,7 @@ Before committing any model:
 **Laravel Version**: 11+  
 **Status**: MANDATORY for all new code
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Laravel Version**: 11+  
+**Status**: MANDATORY for all new code
+>>>>>>> .merge_file_ddJQDT

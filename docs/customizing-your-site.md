@@ -86,6 +86,7 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
+<<<<<<< .merge_file_rU0DFY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -105,6 +106,8 @@ class Foo extends bar
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yJsdsl
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -197,6 +200,7 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
+<<<<<<< .merge_file_rU0DFY
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -211,6 +215,8 @@ class Foo extends bar
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_yJsdsl
 * [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
@@ -219,6 +225,7 @@ class Foo extends bar
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_rU0DFY
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -232,3 +239,6 @@ class Foo extends bar
 =======
 ---
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_yJsdsl

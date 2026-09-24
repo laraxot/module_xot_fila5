@@ -17,6 +17,7 @@ class BuildNestedRouteNameAction
         $action = is_string($params['act'] ?? null) ? $params['act'] : 'show';
         $parts = inAdmin($params) ? ['admin'] : [];
 
+<<<<<<< .merge_file_mYUvP4
 <<<<<<< HEAD
 <<<<<<< HEAD
         for ($i = 0; $i <= $depth; $i++) {
@@ -34,6 +35,9 @@ class BuildNestedRouteNameAction
 =======
         for ($i = 0; $i <= $depth; ++$i) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        for ($i = 0; $i <= $depth; $i++) {
+>>>>>>> .merge_file_Vsnu3N
             $parts[] = 'container'.$i;
         }
 

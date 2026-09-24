@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_kkWJnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
@@ -13,6 +14,10 @@
 # Analisi Qualità Codice - Tutti i Moduli (PHPMD)
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+# Analisi Qualità Codice - Tutti i Moduli (PHPMD)
+
+>>>>>>> .merge_file_2HUyLI
 **Data**: 2025-12-23
 **Obiettivo**: Analisi sistematica completa della qualità del codice di tutti i moduli
 **Strumento**: PHPMD (PHP Mess Detector)
@@ -104,6 +109,7 @@
 - **PHPInsights**: Strumento non installato nel progetto. Analisi limitata a PHPMD.
 - **Focus**: Qualità codice mantenuta, codice morto rimosso
 - **PHPStan**: Sempre priorità massima (0 errori mantenuto)
+<<<<<<< .merge_file_kkWJnx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -120,3 +126,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-all-
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_2HUyLI

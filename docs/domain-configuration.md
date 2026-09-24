@@ -78,6 +78,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 ## Collegamenti
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
+<<<<<<< .merge_file_kSzy0o
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -108,6 +109,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 =======
 - [Configurazione Generale](CONFIGURATION.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iE60le
 - [Risoluzione dei Loghi](LOGO_RESOLUTION.md) - **IMPORTANTE**: Processo dettagliato di risoluzione dei loghi
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
@@ -120,6 +123,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 
 ## Collegamenti Correlati
 - [Configurazione Moduli](MODULE_CONFIGURATION.md)
+<<<<<<< .merge_file_kSzy0o
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Gestione Risorse](assets.md)
@@ -141,6 +145,11 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
 - [Troubleshooting](TROUBLESHOOTING.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Gestione Risorse](assets.md)
+- [Linee Guida Sviluppo](DEVELOPMENT_GUIDELINES.md)
+- [Troubleshooting](troubleshooting.md)
+>>>>>>> .merge_file_iE60le
 
 ## Vedi Anche
 - [Documentazione UI](../../UI/docs/configuration.md)
@@ -148,6 +157,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Documentazione Temi](../../Cms/docs/theming.md)
 - [Standard Interfaccia](../../../docs/standards/interface_guidelines.md)
 - [Best Practices](../../../docs/standards/best_practices.md)
+<<<<<<< .merge_file_kSzy0o
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -159,6 +169,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_iE60le
 
 # Configurazione Basata sul Dominio
 
@@ -229,6 +241,7 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
    - Assicurarsi che tutte le versioni necessarie del logo siano presenti
 
 ## Collegamenti
+<<<<<<< .merge_file_kSzy0o
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Configurazione Generale](configuration.md)
@@ -251,3 +264,8 @@ patient::images/logo-horizontal.svg -> /Modules/Patient/resources/images/logo-ho
 - [Gestione Asset](assets.md)
 - [Struttura Temi](themes.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Configurazione Generale](configuration.md)
+- [Gestione Asset](assets.md)
+- [Struttura Temi](themes.md)
+>>>>>>> .merge_file_iE60le

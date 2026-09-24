@@ -5,6 +5,7 @@ module: Xot
 epic: null
 story_id: null
 slug: modules-git-synchronization
+<<<<<<< .merge_file_reXEG0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -49,11 +50,14 @@ status_note: "Story creata per continuare domani la sincronizzazione git dei mod
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_VxFG7F
 status: done
 cold_gate: null
 created: '2026-09-11'
 updated: '2026-09-21'
 status_note: "2026-09-21: sync di tutti i path in gitmodules.ini con git -C (mai cd/working_directory). Merge forward-only, no rebase. Issue #115."
+<<<<<<< .merge_file_reXEG0
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -72,6 +76,8 @@ status_note: "2026-09-21: sync di tutti i path in gitmodules.ini con git -C (mai
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_VxFG7F
 repository: "https://github.com/laraxot/module_xot_fila5.git"
 github_issue: "https://github.com/laraxot/module_xot_fila5/issues/115"
 github_discussion: "https://github.com/laraxot/module_xot_fila5/discussions/117"

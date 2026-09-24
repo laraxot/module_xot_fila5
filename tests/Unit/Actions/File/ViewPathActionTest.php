@@ -4,26 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Tests\Unit\Actions\File;
 
+<<<<<<< .merge_file_8l8AY9
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_0MD0qd
 use Mockery;
 use Mockery\MockInterface;
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
+<<<<<<< .merge_file_8l8AY9
 =======
 >>>>>>> laraxot/dev
 =======
 use Modules\Xot\Actions\File\FixPathAction;
 use Modules\Xot\Actions\File\GetViewNameSpacePathAction;
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_0MD0qd
 use Modules\Xot\Actions\File\ViewPathAction;
 use Modules\Xot\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< .merge_file_8l8AY9
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_0MD0qd
 it('calculates view path correctly', function (): void {
     /** @var GetViewNameSpacePathAction&MockInterface $nsMock */
     $nsMock = Mockery::mock(GetViewNameSpacePathAction::class);
@@ -39,9 +48,6 @@ it('calculates view path correctly', function (): void {
         ->andReturnUsing(fn (string $path): string => $path);
 
     app()->instance(FixPathAction::class, $fixMock);
-=======
-it('resolves view path correctly', function (): void {
->>>>>>> laraxot/dev
     $action = app(ViewPathAction::class);
 
     $result = $action->execute('Xot::dashboard.index');

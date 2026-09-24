@@ -119,6 +119,7 @@ protected function casts(): array
 ```
 
 ## Audit Risultati (2025-08-01)
+<<<<<<< .merge_file_rRx6ju
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -129,6 +130,8 @@ protected function casts(): array
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_dwxj3A
 
 ### File con Errori Trovati: 20
 
@@ -253,6 +256,7 @@ class User extends BaseModel
 
 ## Ultimo aggiornamento
 
+<<<<<<< .merge_file_rRx6ju
 <<<<<<< HEAD
 <<<<<<< HEAD
 agosto 2025
@@ -266,3 +270,6 @@ agosto 2025
 =======
 agosto 2025
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+agosto 2025
+>>>>>>> .merge_file_dwxj3A

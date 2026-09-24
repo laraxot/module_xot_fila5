@@ -108,6 +108,7 @@ function dddx(mixed $params): string
 ### Documenti Aggiornati
 - `Xot/docs/code-quality-audit-2025-01.md` - Audit generale
 - `Xot/docs/module-quality-status.md` - Status moduli
+<<<<<<< .merge_file_oRA6y7
 <<<<<<< HEAD
 <<<<<<< HEAD
 - `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
@@ -121,6 +122,9 @@ function dddx(mixed $params): string
 =======
 - `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- `Xot/docs/code-quality-audit-2025-01-22.md` - Questo documento
+>>>>>>> .merge_file_OXU6ih
 - `Rating/docs/code-quality-analysis.md` - Analisi Rating
 
 ## 🎯 Prossimi Passi

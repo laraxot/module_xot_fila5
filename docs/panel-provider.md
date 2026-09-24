@@ -87,6 +87,7 @@ public function panel(Panel $panel): Panel
 
 ### Collegamenti
 
+<<<<<<< .merge_file_QizJ7h
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
@@ -99,10 +100,14 @@ public function panel(Panel $panel): Panel
 =======
 - [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Documentazione Root](../../../docs/filament_panel_provider_rules.md)
+>>>>>>> .merge_file_5lH3Tf
 - [Architettura Filament](../../../docs/FILAMENT_BEST_PRACTICES.md)
 - [Configurazione Moduli](../../../docs/MODULE_ARCHITECTURE.md)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< .merge_file_QizJ7h
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -115,3 +120,5 @@ public function panel(Panel $panel): Panel
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_5lH3Tf

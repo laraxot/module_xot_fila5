@@ -6,6 +6,7 @@
 - se un test fallisce per "manca qualcosa", è il test sbagliato (non si modifica app code)
 - phpstan: usare solo la config `phpstan.neon` (non modificare il file, non passare `--level`)
 
+<<<<<<< .merge_file_SxuYcP
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -29,6 +30,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_746jCO
 ## configurazione ambiente test
 - file: `../../.env.testing`
 - il bootstrap carica `.env.testing` tramite `Modules/Xot/tests/CreatesApplication.php` (usa `$app->loadEnvironmentFrom('.env.testing')` se presente)
@@ -53,6 +56,7 @@
 - rilanciare:
   - `./vendor/bin/phpstan analyse Modules --configuration=phpstan.neon --memory-limit=2G`
 
+<<<<<<< .merge_file_SxuYcP
 <<<<<<< HEAD
 <<<<<<< HEAD
 ## note importanti per chi riprende
@@ -81,3 +85,7 @@
 ## note importanti per chi riprende
 - evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+## note importanti per chi riprende
+- evitare file in `Modules/*/tests/**` che contengono **sia** classi namespaced autoloadabili **sia** chiamate pest a livello top (`uses()`, `it()`, `beforeEach()`): spaccare in helper + file `*Test.php`
+>>>>>>> .merge_file_746jCO

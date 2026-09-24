@@ -270,6 +270,7 @@ Per migrare le rotte esistenti:
 
 ## Collegamenti Bidirezionali
 
+<<<<<<< .merge_file_Ui2OKy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -285,6 +286,8 @@ Per migrare le rotte esistenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_qL3Zhd
 - [Architettura Folio + Volt + Filament](./FOLIO_VOLT_ARCHITECTURE.md)
 - [Struttura dei Moduli](./MODULE_STRUCTURE.md)
 - [Documentazione Generale](./documentation.md)
@@ -295,6 +298,7 @@ Per migrare le rotte esistenti:
 ## Collegamenti tra versioni di routing.md
 * [routing.md](../../../../docs/routing.md)
 * [routing.md](../../Cms/docs/frontoffice/routing.md)
+<<<<<<< .merge_file_Ui2OKy
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -308,3 +312,5 @@ Per migrare le rotte esistenti:
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_qL3Zhd

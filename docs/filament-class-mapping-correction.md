@@ -1,31 +1,17 @@
+<<<<<<< .merge_file_Rfm47q
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 # Correzione Mapping Classi Filament - [DATE]
 
 =======
+=======
+>>>>>>> .merge_file_KLtcm7
 # Correzione Mapping Classi Filament - 2025-12-23
 
 **Data**: 2025-12-23
->>>>>>> laraxot/dev
-=======
-<<<<<<< .merge_file_c0dBjM
-<<<<<<< HEAD
-# Correzione Mapping Classi Filament - [DATE]
 
-=======
-=======
->>>>>>> .merge_file_Xcfpj8
-# Correzione Mapping Classi Filament - 2025-12-23
-
-**Data**: 2025-12-23
-=======
-# Correzione Mapping Classi Filament - [DATE]
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_c0dBjM
-=======
-# Correzione Mapping Classi Filament - 2025-12-23
-
+<<<<<<< .merge_file_Rfm47q
 **Data**: 2025-12-23
 
 >>>>>>> laraxot/dev
@@ -37,6 +23,8 @@
 # Correzione Mapping Classi Filament - [DATE]
 
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_KLtcm7
 **Obiettivo**: Correggere mapping classi inesistenti nel file `filament_class.txt`
 
 ## ⚠️ Problema Identificato
@@ -150,6 +138,7 @@ Se in futuro si volesse creare queste classi base:
 ---
 
 **Stato**: ✅ Mapping corretto per riflettere codice esistente
+<<<<<<< .merge_file_Rfm47q
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -173,3 +162,6 @@ Se in futuro si volesse creare queste classi base:
 =======
 **Data Correzione**: [DATE]
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Data Correzione**: 2025-12-23
+>>>>>>> .merge_file_KLtcm7

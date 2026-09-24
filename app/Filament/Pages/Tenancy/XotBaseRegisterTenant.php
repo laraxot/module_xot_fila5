@@ -12,6 +12,7 @@ use Filament\Pages\Tenancy\RegisterTenant as FilamentRegisterTenant;
  * Following Laraxot architectural pattern: never extend Filament classes directly.
  * This class wraps Filament's RegisterTenant to provide a XotBase layer.
  */
+<<<<<<< .merge_file_iSHuo6
 <<<<<<< HEAD
 <<<<<<< HEAD
 abstract class XotBaseRegisterTenant extends FilamentRegisterTenant {}
@@ -41,3 +42,6 @@ abstract class XotBaseRegisterTenant extends FilamentRegisterTenant
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+abstract class XotBaseRegisterTenant extends FilamentRegisterTenant {}
+>>>>>>> .merge_file_159sAf

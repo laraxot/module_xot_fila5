@@ -5,6 +5,7 @@ type: reference
 slug: macro
 description: 'Elenco di 1 riferimenti esterni raccolti per macro, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
+<<<<<<< .merge_file_LtF5YS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,6 +27,9 @@ converted_from: _macro.txt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+converted_from: macro.txt
+>>>>>>> .merge_file_DGkmjA
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -16,8 +16,8 @@ use Filament\Infolists\Components\TextEntry;
  */
 class XotBasePlaceholder extends TextEntry
 {
-<<<<<<< HEAD
     // Logica comune futura per i placeholder Xot
+<<<<<<< .merge_file_NM45gF
 =======
     /**
      * Compatibilità con l'API di `Filament\Forms\Components\Placeholder`:
@@ -50,4 +50,6 @@ class XotBasePlaceholder extends Placeholder
 {
     // Logica comune futura per i placeholder Xot
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_bkSUDZ
 }

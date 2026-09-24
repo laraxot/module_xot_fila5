@@ -5,6 +5,7 @@ type: reference
 slug: slug
 description: 'Elenco di 2 riferimenti esterni raccolti per slug, deduplicati e convertiti da un dump di link.'
 tags: [migrato-da-txt, xot]
+<<<<<<< .merge_file_y4tJib
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -26,6 +27,9 @@ converted_from: _slug.txt
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+converted_from: slug.txt
+>>>>>>> .merge_file_A926Ur
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -71,6 +71,7 @@ Modules/<NomeModulo>/
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../Xot/docs/translations.md) - Regole base
+<<<<<<< .merge_file_GLwDvM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -82,6 +83,8 @@ Modules/<NomeModulo>/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OBbpFQ
 
 ## Struttura
 
@@ -378,6 +381,7 @@ Action::make('delete')
 - Test di performance
 
 ## Collegamenti tra versioni di translations.md
+<<<<<<< .merge_file_GLwDvM
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -404,6 +408,8 @@ Action::make('delete')
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_OBbpFQ
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -426,6 +432,7 @@ Action::make('delete')
 
 ```
 
+<<<<<<< .merge_file_GLwDvM
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---
@@ -439,3 +446,6 @@ Action::make('delete')
 =======
 ---
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+---
+>>>>>>> .merge_file_OBbpFQ

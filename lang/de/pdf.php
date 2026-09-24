@@ -21,6 +21,7 @@ return [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
+<<<<<<< .merge_file_Rzz4cG
 <<<<<<< HEAD
 <<<<<<< HEAD
         'icon' => 'heroicon-o-puzzle-piece',
@@ -30,6 +31,9 @@ return [
 =======
         'icon' => 'heroicon-o-puzzle-piece',
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        'icon' => 'xot-files.pdf',
+>>>>>>> .merge_file_aKdLSs
         'sort' => 100,
     ],
     'label' => 'Missing Label',

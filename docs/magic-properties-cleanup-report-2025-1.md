@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ynf9lx
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,13 +11,16 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_lBC1Hq
 ---
 name: magic-properties-cleanup-report-2025-1
-description: " Summary"
+description: "Report 2025-11-17: sostituzione di property_exists() con isset() sulle proprietà magiche dei modelli Eloquent"
 metadata:
   type: documentation
 ---
 
+<<<<<<< .merge_file_ynf9lx
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -105,6 +109,8 @@ Files generally have good scores with minor style issues:
 ---
 ## Variant 2
 
+=======
+>>>>>>> .merge_file_lBC1Hq
 # Magic Properties Cleanup Report - 2025-11-17
 
 ## Summary

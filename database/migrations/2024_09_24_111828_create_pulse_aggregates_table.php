@@ -5,9 +5,9 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+<<<<<<< .merge_file_DieVgO
 =======
 return new class extends XotBaseMigration {
 >>>>>>> laraxot/dev
@@ -18,6 +18,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_Qg1nWh
     /**
      * Run the migrations.
      */

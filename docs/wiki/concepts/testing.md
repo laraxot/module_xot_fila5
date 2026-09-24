@@ -11,6 +11,7 @@ discussions:
   - "https://github.com/laraxot/module_xot_fila5/discussions/29"
 related:
   - phpstan-pest-bridge-discipline.md
+<<<<<<< .merge_file_0V5Gnf
 <<<<<<< HEAD
 <<<<<<< HEAD
   - ../phpstan-best-practices.md
@@ -30,6 +31,9 @@ related:
 =======
   - ../PHPSTAN-BEST-PRACTICES.md
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+  - ../phpstan-best-practices.md
+>>>>>>> .merge_file_CWoLCi
   - ../overviews/platform-completion-roadmap.md
   - module-testcase-xotbase-hierarchy.md
 ---
@@ -58,6 +62,7 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules
 
 - PHPStan piattaforma: ✅ (hub owner documentazione)
 - [platform-completion-roadmap](../overviews/platform-completion-roadmap.md)
+<<<<<<< .merge_file_0V5Gnf
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [phpstan-best-practices](../phpstan-best-practices.md)
@@ -77,3 +82,6 @@ php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules
 =======
 - [PHPSTAN-BEST-PRACTICES](../PHPSTAN-BEST-PRACTICES.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [phpstan-best-practices](../phpstan-best-practices.md)
+>>>>>>> .merge_file_CWoLCi

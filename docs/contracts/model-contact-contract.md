@@ -45,15 +45,19 @@ interface ModelContactContract extends ModelContract
 5. Gestione null-safety
 
 ## Collegamenti
+<<<<<<< .merge_file_N3EecI
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_gwevJR
 - [Model Guidelines](../models/README.md)
 - [Contact Management](../features/CONTACT-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+<<<<<<< .merge_file_N3EecI
 <<<<<<< HEAD
 =======
 =======
@@ -73,3 +77,5 @@ interface ModelContactContract extends ModelContract
 =======
 - [Contracts Overview](./README.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_gwevJR

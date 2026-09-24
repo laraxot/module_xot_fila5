@@ -181,6 +181,7 @@ class SafeFloatCastActionTest extends TestCase
 
 - [SafeStringCastAction](../actions/cast/safe-string-cast-action.md)
 - [Xot Actions Documentation](../actions/README.md)
+<<<<<<< .merge_file_8kjKI3
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -191,11 +192,14 @@ class SafeFloatCastActionTest extends TestCase
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_PioWr4
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
 
 ---
 
+<<<<<<< .merge_file_8kjKI3
 <<<<<<< HEAD
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
@@ -209,3 +213,6 @@ class SafeFloatCastActionTest extends TestCase
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> .merge_file_PioWr4

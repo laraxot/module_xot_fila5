@@ -9,6 +9,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseEntryFactory;
 
 /**
+<<<<<<< .merge_file_GEuBng
 <<<<<<< HEAD
  * <<<<<<< HEAD.
  *
@@ -18,10 +19,19 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @property string               $key
  * @property string|null          $key_hash
  * @property int|null             $value
+=======
+ * @property string $id
+ * @property int $timestamp
+ * @property string $type
+ * @property string $key
+ * @property string|null $key_hash
+ * @property int|null $value
+>>>>>>> .merge_file_N4e2Ol
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory factory($count = null, $state = [])
+<<<<<<< .merge_file_GEuBng
  *                                                                      =======
  *
 =======
@@ -40,6 +50,8 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  *                                                                               >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_N4e2Ol
  * @method static Builder<static>|PulseEntry newModelQuery()
  * @method static Builder<static>|PulseEntry newQuery()
  * @method static Builder<static>|PulseEntry query()

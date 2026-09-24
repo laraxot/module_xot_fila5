@@ -88,6 +88,7 @@ return [
 
 - [Regole Traduzioni Xot](translation_rules.md)
 - [Best Practices Traduzioni](translations-best-practices.md)
+<<<<<<< .merge_file_bGeebz
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Documentazione Principale Traduzioni](../../../docs/translation_rules.md)
@@ -109,3 +110,8 @@ return [
 
 *Ultimo aggiornamento: 27 Gennaio 2025*
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Documentazione Principale Traduzioni](../../../docs/translation_rules.md)
+
+*Ultimo aggiornamento: 27 Gennaio 2025*
+>>>>>>> .merge_file_0JIl35

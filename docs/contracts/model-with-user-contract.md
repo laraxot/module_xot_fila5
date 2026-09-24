@@ -71,6 +71,7 @@ class Article extends Model implements ModelWithUserContract
 - [User Management](../features/USER-MANAGEMENT.md)
 - [PHPStan Level 9 Guide](../PHPSTAN-LEVEL9-GUIDE.md)
 - [Contracts Overview](./README.md)
+<<<<<<< .merge_file_rEwU1o
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,3 +87,5 @@ class Article extends Model implements ModelWithUserContract
 - [PHPStan Level 9 Guide](../phpstan-level9-guide.md)
 - [Contracts Overview](./readme.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_GNK5Cs

@@ -6,6 +6,7 @@ L’installazione di JpGraph e l’uso dei namespace sono gestiti dal **modulo C
 
 Per installazione Composer e utilizzo dei namespace:
 
+<<<<<<< .merge_file_XoqTVO
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Chart: JpGraph Composer e namespace](../Chart/docs/jpgraph-composer-and-namespaces.md)
@@ -28,6 +29,10 @@ Per installazione Composer e utilizzo dei namespace:
 - [Chart: JpGraph Composer e namespace](../Chart/docs/jpgraph-composer-and-namespaces.md)
 - [Chart: JpGraph Installation](../Chart/docs/jpgraph-installation.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Chart: JpGraph Composer e namespace](../Chart/docs/jpgraph-composer-and-namespaces.md)
+- [Chart: JpGraph Installation](../Chart/docs/jpgraph-installation.md)
+>>>>>>> .merge_file_RL4F4M
 
 ## Sintesi
 
@@ -38,6 +43,7 @@ Per installazione Composer e utilizzo dei namespace:
 | Installazione | Dalla root Laravel: `cd laravel && composer require amenadiel/jpgraph` oppure `composer update` |
 | Autoload | Fornito dal pacchetto; non aggiungere mapping in `composer.json` |
 
+<<<<<<< .merge_file_XoqTVO
 <<<<<<< HEAD
 <<<<<<< HEAD
 Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (Quaeris, Limesurvey, ecc.) usano le Actions del modulo Chart.
@@ -55,3 +61,6 @@ Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (healthcare_ap
 =======
 Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (Quaeris, Limesurvey, ecc.) usano le Actions del modulo Chart.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Il modulo Xot non dichiara JpGraph; i moduli che generano grafici (Quaeris, Limesurvey, ecc.) usano le Actions del modulo Chart.
+>>>>>>> .merge_file_RL4F4M

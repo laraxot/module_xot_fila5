@@ -34,11 +34,14 @@ ModuleName/
 ## Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< .merge_file_DXrjts
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_aVDg3W
 - [README](../README.md) - Panoramica del modulo Xot
 - [Convenzioni di Naming](./naming-conventions.md) - Regole di naming
 - [Case Sensitivity](directory-case-sensitivity.md) - Regole per la case sensitivity
@@ -55,6 +58,7 @@ ModuleName/
 - [Cms](../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../Lang/docs/README.md) - Traduzioni
 - [User](../User/docs/README.md) - Gestione utenti
+<<<<<<< .merge_file_DXrjts
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +77,8 @@ ModuleName/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aVDg3W
 
 ## Struttura Dettagliata
 
@@ -230,6 +236,7 @@ User/
 ## Collegamenti Moduli
 
 ### Modulo UI
+<<<<<<< .merge_file_DXrjts
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -237,6 +244,8 @@ User/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aVDg3W
 - [Componenti Volt](../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
@@ -302,6 +311,7 @@ User/
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
 - [Visualizzazione](../Chart/docs/visualization.md)
+<<<<<<< .merge_file_DXrjts
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -375,6 +385,8 @@ User/
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_aVDg3W
 
 # Struttura dei Moduli Laravel
 
@@ -517,6 +529,7 @@ Se trovi una directory con case errato:
 6. Committa le modifiche
 
 ## Collegamenti tra versioni di module_structure.md
+<<<<<<< .merge_file_DXrjts
 <<<<<<< HEAD
 <<<<<<< HEAD
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
@@ -530,3 +543,6 @@ Se trovi una directory con case errato:
 =======
 * [module_structure.md](../../../../docs/error_analysis/module_structure.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+* [module_structure.md](../../../../docs/error_analysis/module_structure.md)
+>>>>>>> .merge_file_aVDg3W

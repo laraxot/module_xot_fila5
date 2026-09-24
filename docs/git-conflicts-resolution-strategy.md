@@ -3,6 +3,7 @@
 ## Contesto
 
 **Data analisi:** 2025-01-27
+<<<<<<< .merge_file_Yl4bJH
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -13,6 +14,8 @@
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_TegqET
 **File con conflitti identificati:** 586 file PHP
 **Approccio:** Risoluzione manuale focalizzata su business logic
 
@@ -266,6 +269,7 @@ I conflitti sono stati causati da:
 
 ---
 
+<<<<<<< .merge_file_Yl4bJH
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
@@ -279,3 +283,6 @@ I conflitti sono stati causati da:
 =======
 **Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+**Nota:** Questa documentazione è VIVA. Aggiungo pattern, lezioni, esempi man mano che risolvo conflitti.
+>>>>>>> .merge_file_TegqET

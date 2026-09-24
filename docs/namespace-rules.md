@@ -27,6 +27,7 @@
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
+<<<<<<< .merge_file_Do98Ca
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -52,3 +53,7 @@
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+
+**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
+>>>>>>> .merge_file_0bUuuv

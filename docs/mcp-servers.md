@@ -518,6 +518,7 @@ iflow
 ## Changelog
 
 - **2025-01-06**: Documentazione iniziale creata
+<<<<<<< .merge_file_SznqTt
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -528,6 +529,8 @@ iflow
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_KuhpIh
   - Cursor, Windsurf, Cline, iFlow
   - Server MCP essenziali configurati
   - Best practices e troubleshooting
@@ -536,6 +539,7 @@ iflow
 
 ## Licenza
 
+<<<<<<< .merge_file_SznqTt
 <<<<<<< HEAD
 <<<<<<< HEAD
 Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
@@ -549,3 +553,6 @@ Questa documentazione è parte del progetto **base_healthcare_app_fila5_mono** e
 =======
 Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+Questa documentazione è parte del progetto **base_quaeris_fila4_mono** ed è soggetta alla stessa licenza del progetto principale.
+>>>>>>> .merge_file_KuhpIh

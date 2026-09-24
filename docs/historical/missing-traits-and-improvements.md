@@ -613,6 +613,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< .merge_file_Ux7hoP
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
@@ -630,6 +631,9 @@ class AlertWidget extends BaseTableWidget
 =======
 - [Architettura Moduli](architecture.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_r8zvFS
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---
@@ -1253,6 +1257,7 @@ class AlertWidget extends BaseTableWidget
 ## 🔗 Collegamenti Correlati
 
 - [Analisi Completa Codice](./COMPREHENSIVE_CODE_ANALYSIS.md)
+<<<<<<< .merge_file_Ux7hoP
 <<<<<<< HEAD
 <<<<<<< HEAD
 - [Architettura Moduli](architecture.md)
@@ -1270,6 +1275,9 @@ class AlertWidget extends BaseTableWidget
 =======
 - [Architettura Moduli](architecture.md)
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+- [Architettura Moduli](architecture.md)
+>>>>>>> .merge_file_r8zvFS
 - [Performance Guide](./PERFORMANCE_GUIDE.md)
 
 ---

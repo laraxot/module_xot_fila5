@@ -43,6 +43,7 @@ class MainDashboard extends XotBaseDashboard
         // Usa roles() come metodo invece della magic property per type safety
         $modules = $user->getModules();
 
+<<<<<<< .merge_file_rDgT16
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (count($modules) === 0) {
@@ -52,12 +53,16 @@ class MainDashboard extends XotBaseDashboard
 =======
         if (0 === count($modules)) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (count($modules) === 0) {
+>>>>>>> .merge_file_Dfeqfu
             $url = '/'.app()->getLocale();
             redirect($url);
 
             return;
         }
 
+<<<<<<< .merge_file_rDgT16
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (count($modules) === 1) {
@@ -67,6 +72,9 @@ class MainDashboard extends XotBaseDashboard
 =======
         if (1 === count($modules)) {
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        if (count($modules) === 1) {
+>>>>>>> .merge_file_Dfeqfu
             $module_first = Arr::first($modules);
             Assert::isInstanceOf($module_first, Module::class);
             $module_name = $module_first->getLowerName();

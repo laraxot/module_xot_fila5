@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_bEvYRg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 >>>>>>> .merge_file_G2oLlP
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_j2aUOu
 ---
 title: 'To study — risorse esterne'
 module: Xot
@@ -41,6 +44,7 @@ updated: 2026-08-24
 ## Riferimenti
 
 - <https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs>
+<<<<<<< .merge_file_bEvYRg
 <<<<<<< HEAD
 =======
 <<<<<<< .merge_file_gLotr8
@@ -60,3 +64,5 @@ https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 =======
 https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_j2aUOu

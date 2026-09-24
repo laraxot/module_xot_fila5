@@ -13,13 +13,17 @@ readonly class PhoneValueObject
 {
     private function __construct(
         private string $phone,
+<<<<<<< .merge_file_Q7adxw
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> .merge_file_AsQy8P
     ) {}
 
     public static function fromString(string $phone): self
     {
         if (preg_match('/^\+1\d{10}$/', $phone) === 0) {
+<<<<<<< .merge_file_Q7adxw
 =======
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
@@ -33,6 +37,8 @@ readonly class PhoneValueObject
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+>>>>>>> .merge_file_AsQy8P
             throw new \InvalidArgumentException('It is not valid phone value');
         }
 

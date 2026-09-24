@@ -15,6 +15,7 @@ class IsValidUrlAction
 
     public function execute(string $url): bool
     {
+<<<<<<< .merge_file_epRIZY
 <<<<<<< HEAD
 <<<<<<< HEAD
         return filter_var($url, FILTER_VALIDATE_URL) !== false;
@@ -24,5 +25,8 @@ class IsValidUrlAction
 =======
         return false !== filter_var($url, FILTER_VALIDATE_URL);
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+        return filter_var($url, FILTER_VALIDATE_URL) !== false;
+>>>>>>> .merge_file_3ZOWe4
     }
 }

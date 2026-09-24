@@ -20,6 +20,7 @@ class XotAction
         return Tenant::class;
     }
 
+<<<<<<< .merge_file_cwM2se
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(): void {}
@@ -49,4 +50,7 @@ class XotAction
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 8d801bbe (Check & fix styling)
+=======
+    public function execute(): void {}
+>>>>>>> .merge_file_xMy2HJ
 }
